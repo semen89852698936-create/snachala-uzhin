@@ -1,0 +1,39 @@
+name: Browser QA and screenshots
+on:
+  push:
+    branches:
+      - fix/our-evening-progress-20261031
+    paths:
+      - nashe-vecher.html
+      - browser-tests/**
+      - .github/workflows/browser-qa.yml
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  browser-qa:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Install Playwright and Chromium
+        run: |
+          npm install --no-save playwright
+          npx playwright install --with-deps chromium
+      - name: Start site
+        run: |
+          python3 -m http.server 8765 > /tmp/site-server.log 2>&1 &
+          for i in $(seq 1 30); do curl -fsS http://127.0.0.1:8765/nashe-vecher.html >/dev/null && exit 0; sleep 1; done
+          exit 1
+      - name: Browser tests and screenshots
+        run: node browser-tests/smoke.cjs
+      - name: Upload screenshots and QA report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: our-evening-browser-qa
+          path: browser-tests/results/
+          if-no-files-found: warn
