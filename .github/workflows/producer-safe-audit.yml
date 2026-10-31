@@ -1,0 +1,24 @@
+name: Producer 24x7 Safe Audit
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '17 */2 * * *'
+permissions:
+  contents: read
+concurrency:
+  group: producer-safe-audit
+  cancel-in-progress: false
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - name: Prepare report
+        run: python3 producer/inspect.py
+      - name: Archive report
+        uses: actions/upload-artifact@v4
+        with:
+          name: producer-audit
+          path: producer/report.json
+          retention-days: 14
