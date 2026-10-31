@@ -1,6 +1,12 @@
 name: Producer OpenAI API Smoke Test
 on:
   workflow_dispatch:
+  push:
+    branches:
+      - fix/our-evening-progress-20261031
+    paths:
+      - 'producer/api_smoke_test.py'
+      - '.github/workflows/producer-openai-smoke.yml'
 permissions:
   contents: read
 concurrency:
