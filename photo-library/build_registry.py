@@ -13,7 +13,7 @@ from urllib.parse import quote
 SOURCE = Path(sys.argv[1]) if len(sys.argv) > 1 else Path("index.html")
 OUT = Path(sys.argv[2]) if len(sys.argv) > 2 else Path("photo-library")
 html = SOURCE.read_text(encoding="utf-8")
-m = re.search(r'<script\\b[^>]*\\bid=["\\\']recipeData["\\\'][^>]*>([\\s\\S]*?)</script>', html, re.I)
+m = re.search('<script id="recipeData" type="application/json">(.*?)</script>', html, re.S)
 if not m:
     raise SystemExit("ERROR: recipeData block not found")
 recipes = json.loads(m.group(1))
@@ -67,5 +67,5 @@ summary = {
     "status": "photo_research_queue_not_approved",
     "warning": "Search URLs are not actual photos; verify visual match and rights before publishing."
 }
-(OUT / "summary.json").write_text(json.dumps(summary, ensure_ascii=False, indent=2)+"\\n", encoding="utf-8")
+(OUT / "summary.json").write_text(json.dumps(summary, ensure_ascii=False, indent=2)+"\n", encoding="utf-8")
 print(json.dumps(summary, ensure_ascii=False, indent=2))
