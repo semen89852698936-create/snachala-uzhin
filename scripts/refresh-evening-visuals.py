@@ -86,7 +86,7 @@ CSS=r"""
 .du-evening-mode #evening .du-evening-together{min-height:720px}
 .du-evening-mode #evening .du-evening-invitation-content h3{font-size:39px}
 .du-recipe-evening-copy h2{font-size:clamp(38px,10vw,49px)}
-.du-evening-landing-photo>img{object-position:52% 36%}
+.du-evening-landing-photo>img{object-position:52% 13%}
 }
 """
 
@@ -98,7 +98,14 @@ def replace_once(s, old, new, label):
 def main():
     s=HTML.read_text(encoding="utf-8")
     if MARKER in s:
-        print("Already patched, no changes")
+        old_crop=".du-evening-landing-photo>img{object-position:52% 36%}"
+        new_crop=".du-evening-landing-photo>img{object-position:52% 13%}"
+        if old_crop in s:
+            s=s.replace(old_crop,new_crop,1)
+            HTML.write_text(s,encoding="utf-8")
+            print("Mobile hero framing adjusted to preserve faces")
+        else:
+            print("Already patched, no changes")
         return 0
     # Header: premium editorial portrait of couple serving their dinner.
     s=replace_once(s,
