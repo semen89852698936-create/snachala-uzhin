@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "updatedAt": "2026-10-31",
+  "purpose": "Единый технический реестр проектов для двух ежедневных проверок. Не содержит исходники других брендов.",
+  "projects": [
+    {
+      "id": "snachala-uzhin",
+      "name": "СНАЧАЛА УЖИН",
+      "status": "active",
+      "repo": "semen89852698936-create/snachala-uzhin",
+      "vercelProject": "snachala-uzhin-preview",
+      "productionUrl": "https://snachala-uzhin-preview.vercel.app",
+      "sourceOfTruth": "GitHub repository",
+      "brandRule": "Отдельный кулинарный бренд, не использовать имя автора Семёна Чайки",
+      "nextActions": [
+        "Проверить и протестировать восстановленный каталог из 1001 записей",
+        "Проверить страницу nashe-vecher.html и связи с главной",
+        "Аудировать содержание рецептов и изображения, не подменяя их случайными",
+        "Выпускать обновления сначала в тестовое окружение"
+      ],
+      "publicationPolicy": "No production deploy without explicit approval"
+    },
+    {
+      "id": "moi-granitsy",
+      "name": "Интерактивный курс по личным границам от Семёна Чайки",
+      "status": "active",
+      "repo": "semen89852698936-create/granitsy-semen-chayka-",
+      "vercelProject": "granitsy-semen-chayka",
+      "desiredDomain": "moigranitsy.ru",
+      "brandRule": "Обязательно сохранять авторство Семёна Чайки",
+      "nextActions": [
+        "Проверять публикации, работоспособность, актуальные задачи"
+      ],
+      "publicationPolicy": "No production deploy without explicit approval"
+    }
+  ],
+  "onboarding": "Для нового проекта: отдельный репозиторий и README/PROJECT_STATUS.md; добавить запись сюда после подтверждения пользователя, хранить только ссылки, статусы и приоритеты.",
+  "reporting": "В каждом отчёте: подтверждённые изменения, ошибки, незавершённое, следующее самостоятельное действие. Не утверждать, что задача сделана, если изменения только в GitHub.",
+  "safety": "Не публиковать и не менять production без проверки и явного разрешения."
+}
