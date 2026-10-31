@@ -153,8 +153,18 @@ def run(args):
     images_dir = output / "generated"
     stats = summarize(manifest, output)
     remaining_budget = max(0, args.max_total - stats["generated"])
+    allowlist = load_json(args.ai_allowlist)
+    approved_ids = allowlist.get("recipe_ids", [])
+    if not isinstance(approved_ids, list) or not all(isinstance(x, str) for x in approved_ids):
+        raise ValueError("AI allowlist must contain recipe_ids list")
+    approved_ids = set(approved_ids)
+    if not approved_ids.issubset(set(ids)):
+        raise ValueError("AI allowlist has unknown recipe identifiers")
     candidates = []
     for recipe in manifest:
+        # Stock-first rule: no paid AI call without explicit editorial approval.
+        if recipe["id"] not in approved_ids:
+            continue
         rid = recipe["id"]
         fp = records_dir / (rid + ".json")
         if fp.exists():
@@ -228,6 +238,7 @@ def main():
     p = argparse.ArgumentParser(description=__doc__)
     p.add_argument("--manifest", default="photo-library/recipes.json")
     p.add_argument("--output", default="photo-library")
+    p.add_argument("--ai-allowlist", default="photo-library/ai-allowlist.json")
     p.add_argument("--max-per-run", type=int, default=10)
     p.add_argument("--max-total", type=int, default=50)
     p.add_argument("--execute", action="store_true",
