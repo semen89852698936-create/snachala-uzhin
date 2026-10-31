@@ -385,12 +385,60 @@ body{font-family:var(--sans);font-size:16px}
 .step-photo img{width:100%;height:100%;object-fit:cover;position:absolute;inset:0}
 .step-photo span{position:absolute;bottom:3px;right:3px;background:rgba(247,238,231,.94);color:#5F4B48;border-radius:6px;font:700 11px Manrope,Arial,sans-serif;padding:3px 5px}
 @media(max-width:550px){.step-no.step-photo{width:54px;height:54px}}
+
+/* Integrated Our Evening experience */
+.du-evening-experience{display:grid;grid-template-columns:1.05fr .95fr;gap:18px;margin-top:30px;align-items:stretch}
+.du-evening-together{position:relative;isolation:isolate;overflow:hidden;min-height:600px;background:#2b1b22;color:#fff4e9}
+.du-evening-together>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2}
+.du-evening-together-shade{position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,#21151a08 0%,#21151a30 30%,#21151ae8 100%)}
+.du-evening-together-content{position:absolute;inset:auto 0 0;padding:28px 27px 22px}
+.du-evening-together-content .du-mini-eyebrow{color:#e0b69d}
+.du-evening-together-content h3,.du-evening-invitation-content h3{font:500 clamp(29px,3vw,39px)/1.02 'Cormorant Garamond',Georgia,serif;letter-spacing:-.035em;margin:12px 0}
+.du-evening-together-content h3 em,.du-evening-invitation-content h3 em{color:#e2aa91;font-weight:400}
+.du-evening-together-content>p,.du-evening-invitation-content>p{font-size:11px;line-height:1.75;margin:0 0 16px;max-width:460px}
+.du-evening-together-content>p{color:#f0ded2}
+.du-evening-role-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:7px;margin-top:18px}
+.du-evening-role-card{min-width:0;background:#fff9f0ed;color:#39282c;padding:12px 11px;min-height:106px}
+.du-evening-role-card>span{display:block;color:#a46c60;font-size:8px;font-weight:800;letter-spacing:.14em;margin-bottom:7px}
+.du-evening-role-card strong{display:block;font:500 20px 'Cormorant Garamond',Georgia,serif}
+.du-evening-role-card small{display:block;color:#816e68;font-size:9px;line-height:1.45;margin-top:5px}
+.du-evening-role-actions{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-top:13px}
+.du-evening-role-actions button{background:transparent;border:1px solid #d6ad99;color:#fff0e4;padding:9px 12px;font-size:10px;cursor:pointer}
+.du-evening-role-actions button[aria-pressed="true"]{background:#fff0e4;color:#4b3035}
+.du-evening-role-actions span{font-size:9px;color:#e8cbbb}
+.du-evening-photo-credit{display:block;color:#ead3c6;font-size:8px;margin-top:13px}
+.du-evening-photo-credit a,.du-evening-invitation-photo a{color:inherit;text-decoration:underline;text-underline-offset:2px}
+.du-evening-invitation{background:#fff9f2;border:1px solid #e8d9ce;display:flex;flex-direction:column;min-width:0}
+.du-evening-invitation-photo{height:218px;position:relative;overflow:hidden;background:#35232a}
+.du-evening-invitation-photo:after{content:"";position:absolute;inset:35% 0 0;background:linear-gradient(transparent,#21151a8c)}
+.du-evening-invitation-photo img{width:100%;height:100%;object-fit:cover;display:block}
+.du-evening-invitation-photo>span{position:absolute;z-index:1;left:18px;bottom:25px;color:#fff5e9;font:italic 21px 'Cormorant Garamond',Georgia,serif}
+.du-evening-invitation-photo>small{position:absolute;z-index:1;right:12px;bottom:9px;color:#f5e5d8;font-size:8px}
+.du-evening-invitation-content{padding:23px 25px 20px;display:flex;flex-direction:column;flex:1}
+.du-evening-invitation-content .du-mini-eyebrow{color:#a06c62}
+.du-evening-invitation-content h3{color:#35272b;margin:9px 0}
+.du-evening-invitation-content h3 em{color:#a65f57}
+.du-evening-invitation-content>p{color:#806e68;margin-bottom:14px}
+.du-evening-invite-fields{display:grid;gap:10px}
+.du-evening-invite-fields label{display:grid;gap:6px;color:#967365;font-size:9px;font-weight:800;letter-spacing:.1em;text-transform:uppercase}
+.du-evening-invite-fields input{width:100%;min-width:0;background:#fff;border:1px solid #e5d6cc;color:#3c2d30;padding:11px 12px;font:12px 'Manrope',Arial,sans-serif;outline:none}
+.du-evening-invite-fields input:focus{border-color:#a65f57;box-shadow:0 0 0 2px #a65f5718}
+.du-evening-invite-date{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.du-evening-invite-preview{margin-top:14px;background:#f1e6dc;border-left:3px solid #a65f57;padding:13px 14px;color:#684b49;font:italic 17px/1.35 'Cormorant Garamond',Georgia,serif;overflow-wrap:anywhere}
+.du-evening-invite-actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:13px}
+.du-evening-invite-actions .du-btn{padding:11px 13px;font-size:9px}
+.du-evening-privacy{font-size:8px;line-height:1.5;color:#98847b;margin-top:11px}
+.du-evening-next{display:flex;justify-content:space-between;align-items:center;gap:15px;padding:17px 0 0;color:#8a7168;font-size:11px}
+.du-evening-next a{color:#965b54;text-decoration:none;font-weight:800}
+.du-evening-next a:hover{text-decoration:underline;text-underline-offset:4px}
+@media(max-width:900px){.du-evening-experience{grid-template-columns:1fr}.du-evening-together{min-height:560px}.du-evening-invitation-photo{height:260px}}
+@media(max-width:560px){.du-evening-together{min-height:630px}.du-evening-together-content{padding:22px 17px 18px}.du-evening-role-grid{gap:5px}.du-evening-role-card{padding:10px 8px;min-height:116px}.du-evening-role-card strong{font-size:17px}.du-evening-role-card small{font-size:8px}.du-evening-role-actions{gap:8px}.du-evening-role-actions span{font-size:8px}.du-evening-invitation-content{padding:20px 17px}.du-evening-invite-date{grid-template-columns:1fr}.du-evening-next{align-items:flex-start;flex-direction:column}}
 </style>
 </head><body>
 <div class="demo-strip"><span class="demo-dot"></span> ОТКРЫТАЯ КОЛЛЕКЦИЯ · 1000 РЕЦЕПТОВ + 1 СЕКРЕТНЫЙ · ГОТОВЬТЕ ВМЕСТЕ</div>
 <header class="header" id="top"><div class="container header-inner">
  <a class="brand du-brand" href="#home" aria-label="Сначала ужин, на главную"><span class="du-brand-mark" aria-hidden="true"><svg class="du-wine-icon" viewBox="0 0 48 48" width="37" height="37" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"><path d="M12 9h24c-.35 12.7-3.5 20.5-12 20.5S12.35 21.7 12 9Z" fill="#FFF8F6" fill-opacity=".47" stroke="#755263" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/><path d="M14.2 18.3c3.2.1 5.1.05 9.7-1.1 4.1-1 7.8-.6 9.9.35-.9 7.3-4 10.9-9.8 10.9-6.1 0-8.9-4.1-9.8-10.15Z" fill="#AD647B"/><path d="M24 29.5v11M16 41h16" stroke="#755263" stroke-width="2.4" stroke-linecap="round"/><path d="M18 12.5c-.4 2.1-.5 3.7-.2 5.3" stroke="#FFFDFB" stroke-width="1.8" stroke-linecap="round" opacity=".95"/></svg></span><span class="du-brand-words">СНАЧАЛА <em>УЖИН</em><small>1001 повод остаться</small></span></a>
- <nav class="main-nav" aria-label="Навигация"><a href="nashe-vecher.html" data-nav="evening">Наш вечер</a><a href="#music" data-nav="music">Музыка</a><a href="#catalog" data-nav="catalog">Рецепты</a><a href="#categories" data-nav="categories">Разделы</a><a href="#about" data-nav="about">Как это работает</a></nav>
+ <nav class="main-nav" aria-label="Навигация"><a href="#evening" data-nav="evening">Наш вечер</a><a href="#music" data-nav="music">Музыка</a><a href="#catalog" data-nav="catalog">Рецепты</a><a href="#categories" data-nav="categories">Разделы</a><a href="#about" data-nav="about">Как это работает</a></nav>
  <div class="header-actions"><button class="icon-button" id="favHeader" type="button" title="Избранное" aria-label="Избранное"><span aria-hidden="true">♡</span><span class="header-count" id="favBadge">0</span></button><button class="icon-button shopping-open" type="button" title="Список покупок" aria-label="Список покупок"><span aria-hidden="true">▤</span><span class="header-count" id="shopBadge">0</span></button></div>
 </div></header>
 <main id="homeView">
@@ -399,7 +447,7 @@ body{font-family:var(--sans);font-size:16px}
  <h1 id="du-hero-title">Сначала<br><i>ужин.</i><span class="du-h1-dot">♡</span></h1>
  <p class="du-hero-slogan">1001 повод <em>остаться.</em></p>
  <p class="du-hero-description">Красивые блюда. Два места за столом. И чуть больше времени друг для друга. Выберите настроение, а мы подскажем, что приготовить и как сделать это вместе.</p>
- <div class="du-hero-actions"><a href="nashe-vecher.html" class="du-btn du-btn-primary">Создать наш вечер <span>↗</span></a><button id="tryCooking" class="du-btn du-btn-outline" type="button">Попробовать готовку <span>▶</span></button></div>
+ <div class="du-hero-actions"><a href="#evening" class="du-btn du-btn-primary">Придумать наш вечер <span>↗</span></a><button id="tryCooking" class="du-btn du-btn-outline" type="button">Попробовать готовку <span>▶</span></button></div>
  <div class="du-hero-bottom"><span>10 разделов</span><b>✳</b><span>1000 рецептов + 1 секретный</span><b>✳</b><span>Для двоих</span></div>
  </div>
  <div class="du-hero-art"><img class="du-hero-image" src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=1300&fit=crop&q=85" onerror="this.style.display='none'" alt="Тёплый свет и сервированный стол для двоих"><div class="du-hero-image-tint"></div><div class="du-hero-vertical">НЕ СПЕШИТЕ. ЭТО ВАШ ВЕЧЕР.</div><div class="du-hero-handwritten">для особенных мгновений ♡</div><div class="du-hero-stamp"><span>01 / 1001</span><strong>Всё хорошее<br>начинается<br>за столом.</strong></div><button class="du-hero-recipe" id="heroRecipe" type="button"><span><small>РЕЦЕПТ НЕДЕЛИ</small><b>Паста с лимоном<br>и шпинатом</b></span><span class="du-circle-arrow">↗</span></button></div>
@@ -415,7 +463,51 @@ body{font-family:var(--sans);font-size:16px}
  </div>
  <div class="du-builder"><div class="du-builder-left"><div class="du-mini-eyebrow">ЕЩЁ ОДИН ВОПРОС</div><h3>Сколько времени<br>есть <i>на удовольствие?</i></h3><div class="du-time-choices" role="group" aria-label="Продолжительность приготовления"><button type="button" data-time="quick" aria-pressed="false">До 45 минут</button><button type="button" data-time="relaxed" aria-pressed="true" class="is-selected">До 75 минут</button><button type="button" data-time="long" aria-pressed="false">Не торопимся</button></div><p class="du-small-note">Время указано суммарно, при последовательном приготовлении. У двух поваров может получиться быстрее.</p></div>
  <div class="du-builder-right"><div class="du-mini-eyebrow">ВАШ ПЛАН НА ВЕЧЕР</div><div class="du-menu-intro" id="menuIntro">Мягкий свет, музыка и три блюда, которыми приятно поделиться.</div><div id="menuPreview" class="du-menu-preview" aria-live="polite"></div><div class="du-menu-meta" id="menuMeta"></div><div class="du-menu-actions"><button class="du-btn du-btn-primary" id="beginEvening" type="button">Начать наш вечер <span>↗</span></button><button class="du-btn du-btn-muted" id="addMenuShopping" type="button">Список покупок <span>▤</span></button></div></div></div>
- <div class="du-chosen-note"><span>✳</span> Это ваше меню на вечер. Можно выбрать настроение, добавить продукты в общий список и готовить вместе.</div>
+ <div class="du-evening-experience" aria-label="Совместный вечер">
+  <article class="du-evening-together">
+   <img src="https://images.pexels.com/photos/27176133/pexels-photo-27176133.jpeg?cs=srgb&dl=pexels-helenalopes-27176133.jpg&fm=jpg" alt="Пара вместе готовит ужин на домашней кухне" loading="lazy" decoding="async">
+   <div class="du-evening-together-shade"></div>
+   <div class="du-evening-together-content">
+    <div class="du-mini-eyebrow">04 / ДВА ЧЕЛОВЕКА. ОДНА КОМАНДА.</div>
+    <h3>Готовить вместе -<br><em>значит быть рядом.</em></h3>
+    <p>Не нужно делить кухню на обязанности. Просто выберите, кто берёт следующий шаг. А кое-что лучше делать вместе.</p>
+    <div class="du-evening-role-grid">
+     <div class="du-evening-role-card"><span id="eveningRoleYouLabel">ТЫ</span><strong>Подготовить</strong><small>Продукты, нарезка, первые пробы.</small></div>
+     <div class="du-evening-role-card"><span id="eveningRoleMeLabel">Я</span><strong>Смешать</strong><small>Плита, соус, таймер и внимание.</small></div>
+     <div class="du-evening-role-card"><span>МЫ</span><strong>Подать</strong><small>Последние штрихи и две тарелки.</small></div>
+    </div>
+    <div class="du-evening-role-actions"><button type="button" id="swapEveningRoles" aria-pressed="false">↔ Поменять роли</button><span id="eveningRoleStatus" aria-live="polite">Сейчас: Ты → Я → Вместе</span></div>
+    <small class="du-evening-photo-credit">Фото: <a href="https://www.pexels.com/photo/couple-enjoys-cooking-together-in-kitchen-27176133/" target="_blank" rel="noopener noreferrer">Helena Lopes / Pexels</a></small>
+   </div>
+  </article>
+  <article class="du-evening-invitation">
+   <div class="du-evening-invitation-photo">
+    <img src="https://images.pexels.com/photos/36305242/pexels-photo-36305242.jpeg?cs=srgb&dl=pexels-marina-grechko-701637593-36305242.jpg&fm=jpg" alt="Пара разделяет пиццу за романтическим ужином при свечах" loading="lazy" decoding="async">
+    <span>ДВЕ ВИЛКИ. ОДНО НАСТРОЕНИЕ.</span>
+    <small>Фото: <a href="https://www.pexels.com/photo/romantic-candlelit-pizza-dinner-at-home-36305242/" target="_blank" rel="noopener noreferrer">Marina Grechko / Pexels</a></small>
+   </div>
+   <div class="du-evening-invitation-content">
+    <div class="du-mini-eyebrow">05 / ПРИГЛАШЕНИЕ</div>
+    <h3>Иногда достаточно<br><em>одного сообщения.</em></h3>
+    <p>Назначьте время и отправьте приглашение. Меню уже выбрано, осталось позвать того, с кем хочется разделить этот вечер.</p>
+    <div class="du-evening-invite-fields">
+     <label for="eveningInviteName">Кого приглашаем?<input id="eveningInviteName" type="text" maxlength="60" placeholder="Имя или ласковое обращение" autocomplete="off"></label>
+     <div class="du-evening-invite-date">
+      <label for="eveningInviteDate">Когда?<input id="eveningInviteDate" type="date"></label>
+      <label for="eveningInviteTime">Во сколько?<input id="eveningInviteTime" type="time" value="19:30"></label>
+     </div>
+    </div>
+    <div class="du-evening-invite-preview" id="eveningInvitePreview" aria-live="polite">Сегодня я хочу украсть у дел один вечер. Для нас двоих. Сначала приготовим ужин, а потом... посмотрим. ♡</div>
+    <div class="du-evening-invite-actions">
+     <button type="button" class="du-btn du-btn-primary" id="copyEveningInvite">Скопировать приглашение ↗</button>
+     <button type="button" class="du-btn du-btn-muted" id="shareEveningInvite">Поделиться</button>
+    </div>
+    <small class="du-evening-privacy">Имя, дата и текст приглашения остаются в этом браузере и не отправляются на сервер.</small>
+   </div>
+  </article>
+ </div>
+ <div class="du-evening-next"><span>А дальше - музыка.</span><a href="#music">Выбрать саундтрек ↗</a></div>
+ <div class="du-chosen-note"><span>✳</span> Это ваш вечер. Меню, продукты, шаги приготовления и музыка уже собраны в одном месте.</div>
 </section>
 
 <section class="du-music container" id="music" aria-labelledby="du-music-title">
@@ -508,7 +600,7 @@ body{font-family:var(--sans);font-size:16px}
  <div id="categoryFilters" class="category-filters" aria-label="Фильтр категорий"></div><div class="result-line"><span id="resultCount">1001 рецепт</span><span>✦ Все рецепты доступны</span></div><div id="recipeGrid" class="recipe-grid"></div><div class="du-more-wrap"><button type="button" class="du-btn du-btn-outline" id="loadMoreRecipes" hidden>Показать ещё 24 рецепта ↓</button></div><div class="empty-state" id="emptyState" hidden><span>🍽️</span><h3>Ничего не нашлось</h3><p>Попробуй изменить запрос или снять фильтры.</p><button type="button" class="button button-primary" id="clearFilters">Сбросить фильтры</button></div>
  </div></section>
 <section class="about-section du-how" id="about"><div class="container about-inner"><div><div class="eyebrow on-dark"><span></span> РЕЦЕПТЫ, КОТОРЫЕ ПОМОГАЮТ</div><h2><em>Больше быть вместе.</em></h2><p>Выбираете меню, получаете общий список покупок, меняете порции и готовите шаг за шагом. Если нужно, таймер прямо на экране напомнит, когда пора продолжать.</p><button type="button" class="du-btn du-btn-primary" id="aboutTry">Попробовать режим готовки ↗</button></div><div class="feature-list"><div><b>01</b><span><strong>Меню под настроение</strong><small>Ужин начинается с желания, а не со списка ингредиентов.</small></span></div><div><b>02</b><span><strong>Покупки одним списком</strong><small>Продукты из разных рецептов суммируются автоматически.</small></span></div><div><b>03</b><span><strong>Готовим вдвоём</strong><small>Один экран последовательно ведёт через всё меню.</small></span></div><div><b>04</b><span><strong>Шаги и таймеры</strong><small>Большой текст, минимум суеты и прогресс под рукой.</small></span></div></div></div></section>
-<section class="section container" id="music" aria-labelledby="musicTitle" style="padding:60px 0"><div class="du-eyebrow">МУЗЫКАЛЬНЫЕ СЦЕНАРИИ</div><h2 id="musicTitle" style="font-family:'Cormorant Garamond',serif;font-size:clamp(36px,5vw,62px);font-weight:500;color:#624352">Музыка для вашего вечера</h2><p>Три настроения для вечера вдвоём.</p><div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,280px),1fr));gap:22px"><article style="background:#fffaf8;border:1px solid #eadce2;border-radius:18px;padding:16px"><h3>Под что готовить</h3><iframe title="Spotify: Под что готовить" src="https://open.spotify.com/embed/playlist/7lvXSaWbmTnJaaTRvBXUB4" width="100%" height="352" style="border:0;border-radius:12px" loading="lazy" allow="autoplay;clipboard-write;encrypted-media;fullscreen;picture-in-picture"></iframe></article><article style="background:#fffaf8;border:1px solid #eadce2;border-radius:18px;padding:16px"><h3>Под что ужинать</h3><iframe title="Spotify: Под что ужинать" src="https://open.spotify.com/embed/playlist/6dEbxo2xovdfIQLBeAAO37" width="100%" height="352" style="border:0;border-radius:12px" loading="lazy" allow="autoplay;clipboard-write;encrypted-media;fullscreen;picture-in-picture"></iframe></article><article style="background:#fffaf8;border:1px solid #eadce2;border-radius:18px;padding:16px"><h3>Под что продолжить</h3><iframe title="Spotify: Под что продолжить" src="https://open.spotify.com/embed/playlist/2BlyxFmZbKN3HAVk2TZFT6" width="100%" height="352" style="border:0;border-radius:12px" loading="lazy" allow="autoplay;clipboard-write;encrypted-media;fullscreen;picture-in-picture"></iframe></article></div><p style="font-size:13px">Воспроизведение зависит от условий Spotify.</p></section><section class="pricing-section container du-pricing" id="pricing"><div class="pricing-card"><div><div class="du-eyebrow">ПОЛНАЯ КОЛЛЕКЦИЯ / ДОСТУПНА</div><h2>1001 повод<br><em>остаться.</em></h2><p>1000 рецептов и авторских вариаций, отдельный бонус №1001, тематические ужины на двоих, пересчёт порций, общий список покупок и интерактивное приготовление.</p><div class="price-note">Каталог уже открыт. В него включены авторские вариации с пошаговыми инструкциями и измеряемыми ингредиентами. Время приготовления ориентировочное; проверяй готовность продуктов и учитывай аллергию.</div></div><div class="price-side"><span>Рецепты уже доступны</span><strong>1001 <small>идея</small></strong><button class="du-btn du-btn-primary" id="priceDemo" type="button">Открыть каталог <span>↗</span></button><small>Открыть каталог можно без регистрации и оплаты.</small></div></div></section>
+<section class="pricing-section container du-pricing" id="pricing"><div class="pricing-card"><div><div class="du-eyebrow">ПОЛНАЯ КОЛЛЕКЦИЯ / ДОСТУПНА</div><h2>1001 повод<br><em>остаться.</em></h2><p>1000 рецептов и авторских вариаций, отдельный бонус №1001, тематические ужины на двоих, пересчёт порций, общий список покупок и интерактивное приготовление.</p><div class="price-note">Каталог уже открыт. В него включены авторские вариации с пошаговыми инструкциями и измеряемыми ингредиентами. Время приготовления ориентировочное; проверяй готовность продуктов и учитывай аллергию.</div></div><div class="price-side"><span>Рецепты уже доступны</span><strong>1001 <small>идея</small></strong><button class="du-btn du-btn-primary" id="priceDemo" type="button">Открыть каталог <span>↗</span></button><small>Открыть каталог можно без регистрации и оплаты.</small></div></div></section>
 </main>
   <main id="recipeView" hidden class="recipe-page container"><button type="button" class="back-link" id="backCatalog">← К каталогу рецептов</button><div id="recipeDetail"></div></main>
   <footer class="footer"><div class="container footer-inner"><div><span class="footer-name">Сначала <em>ужин.</em></span><p>Готовьте вместе. Остальное... без рецепта.</p></div><div><span>Коллекция «Сначала ужин» · 2026</span><span>1000 рецептов и авторских вариаций + бонус №1001. Данные избранного и покупок сохраняются только в этом браузере.</span></div></div></footer>
@@ -568,10 +660,10 @@ function toggleFav(id){state.favorites=state.favorites.includes(id)?state.favori
 function updateBadges(){ $('favBadge').textContent=state.favorites.length;$('shopBadge').textContent=Object.keys(state.shopping).length }
 function renderCategories(){ $('categoryGrid').innerHTML=CATEGORIES.map(c=>`<button type="button" class="category-card" style="--photo:url('${photo(c.photo)}');--fallback:url('${asset(c.id)}')" data-category="${c.id}"><img class="food-photo" loading="lazy" alt="" src="${photo(c.photo)}" onerror="this.remove()"><span class="category-tag">100 рецептов</span><span class="category-bottom"><strong>${safe(c.name)}</strong><i aria-hidden="true">↗</i></span></button>`).join('');$('categoryGrid').querySelectorAll('[data-category]').forEach(b=>b.addEventListener('click',()=>{state.category=b.dataset.category;visibleLimit=PAGE_SIZE;renderFilters();renderRecipes();location.hash='catalog'}));}
 function renderFilters(){const entries=[{id:'all',name:'Все рецепты'},...CATEGORIES,{id:'bonus',name:'✳ Бонус №1001'}];$('categoryFilters').innerHTML=entries.map(c=>`<button class="chip" type="button" data-filter="${c.id}" aria-pressed="${state.category===c.id}">${safe(c.name)}</button>`).join('');$('categoryFilters').querySelectorAll('[data-filter]').forEach(b=>b.addEventListener('click',()=>{state.category=b.dataset.filter;visibleLimit=PAGE_SIZE;renderFilters();renderRecipes()}));}
-function renderCuisines(){const list=[...new Set(RECIPES.map(r=>r.cuisine).filter(x=>x&&x!=='Домашняя'))].sort((a,b)=>a.localeCompare(b,'ru'));$('cuisineFilter').innerHTML='<option value="all">Все кухни мира</option>'+list.map(x=>`<option value="${safe(x)}">${safe(x)}</option>`).join('');}
+function renderCuisines(){const list=[...new Set(RECIPES.map(r=>r.cuisine))].sort((a,b)=>a.localeCompare(b,'ru'));$('cuisineFilter').innerHTML='<option value="all">Все кухни мира</option>'+list.map(x=>`<option value="${safe(x)}">${safe(x)}</option>`).join('');}
 function renderRecipes(){const query=norm(state.search.trim());const items=RECIPES.filter(r=>(state.category==='all'||r.category===state.category)&&(state.cuisine==='all'||r.cuisine===state.cuisine)&&(!state.quick||r.minutes<=30)&&(!state.favsOnly||state.favorites.includes(r.id))&&(!query||norm([r.title,r.description,r.cuisine,catName(r.category),...r.ingredients.map(x=>x.name)].join(' ')).includes(query)));
  $('resultCount').textContent=countLabel(items.length,['рецепт','рецепта','рецептов']);const more=$('loadMoreRecipes');more.hidden=items.length<=visibleLimit;more.textContent='Показать ещё '+Math.min(PAGE_SIZE,Math.max(0,items.length-visibleLimit))+' рецептов ↓';$('emptyState').hidden=items.length>0;
- $('recipeGrid').innerHTML=items.slice(0,visibleLimit).map(r=>`<article tabindex="0" role="button" aria-label="Открыть рецепт ${safe(r.title)}" data-recipe="${r.id}" class="recipe-card"><div class="card-image photo" style="${labelPhoto(r)}"><img class="food-photo" loading="lazy" alt="" src="${photo(r.photo)}" onerror="this.remove()"><button type="button" class="fav-floating ${state.favorites.includes(r.id)?'is-fav':''}" data-fav="${r.id}" aria-label="${state.favorites.includes(r.id)?'Убрать из избранного':'В избранное'}">${state.favorites.includes(r.id)?'♥':'♡'}</button><span class="card-time">◷ ${r.minutes} мин</span></div><div class="card-body"><div class="card-meta">${r.cuisine==='Домашняя'?'':`<span>${safe(r.cuisine)}</span><span>·</span>`}<span>${safe(catName(r.category))}</span></div><h3>${safe(r.title)}</h3><p>${safe(r.description)}</p><div class="card-footer"><b>${safe(r.level)} · ${r.base} порц.</b><span>↗</span></div></div></article>`).join('');
+ $('recipeGrid').innerHTML=items.slice(0,visibleLimit).map(r=>`<article tabindex="0" role="button" aria-label="Открыть рецепт ${safe(r.title)}" data-recipe="${r.id}" class="recipe-card"><div class="card-image photo" style="${labelPhoto(r)}"><img class="food-photo" loading="lazy" alt="" src="${photo(r.photo)}" onerror="this.remove()"><button type="button" class="fav-floating ${state.favorites.includes(r.id)?'is-fav':''}" data-fav="${r.id}" aria-label="${state.favorites.includes(r.id)?'Убрать из избранного':'В избранное'}">${state.favorites.includes(r.id)?'♥':'♡'}</button><span class="card-time">◷ ${r.minutes} мин</span>${r.id.startsWith('collection-')?'<span class="du-photo-note">Иллюстрация раздела</span>':''}</div><div class="card-body"><div class="card-meta"><span>${safe(r.cuisine)}</span><span>·</span><span>${safe(catName(r.category))}</span></div><h3>${safe(r.title)}</h3><p>${safe(r.description)}</p><div class="card-footer"><b>${safe(r.level)} · ${r.base} порц.</b><span>↗</span></div></div></article>`).join('');
  $('recipeGrid').querySelectorAll('[data-recipe]').forEach(card=>{card.addEventListener('click',e=>{if(e.target.closest('[data-fav]'))return;location.hash='recipe='+card.dataset.recipe});card.addEventListener('keydown',e=>{if(e.target===card&&(e.key==='Enter'||e.key===' ')){e.preventDefault();location.hash='recipe='+card.dataset.recipe}})});$('recipeGrid').querySelectorAll('[data-fav]').forEach(b=>b.addEventListener('click',e=>{e.stopPropagation();toggleFav(b.dataset.fav)}));}
 function changePortions(id,delta){const r=byId(id);state.servings[id]=Math.max(1,Math.min(8,servings(r)+delta));persist();renderRecipe(id);}
 function renderRecipe(id){const r=byId(id);if(!r)return;state.recipe=id;const p=servings(r);const check=state.ingredientChecked[id]||[];const fav=state.favorites.includes(id);const inShop=!!state.shopping[id];
@@ -616,20 +708,38 @@ const EVENING_MOODS={
  quick:['greek-salad','chickpeas'],relaxed:['greek-salad','chickpeas','baked-apples'],long:['tomato-soup','chicken-lemon','chocolate-cake']}}
 };
 const EVENING_ROLES={salads:'Начнём легко',soup:'Для разогрева',pasta:'Главное блюдо',fish:'Главное блюдо',meat:'Главное блюдо',poultry:'Главное блюдо',vegetables:'Главное блюдо',dessert:'На сладкое'};
-const evening={mood:'tender',time:'relaxed',courseStep:0,selectedMenu:[],timerEnd:0,timerRemaining:0,timerHandle:null,activeSteps:[],saveKey:'su_evening_position'};
+const evening={mood:'tender',time:'relaxed',roleSwap:false,courseStep:0,selectedMenu:[],timerEnd:0,timerRemaining:0,timerHandle:null,activeSteps:[],saveKey:'su_evening_position'};
 const e$=id=>document.getElementById(id);
 function menuIds(){return EVENING_MOODS[evening.mood].menus[evening.time]}
 function menuRecipes(){return menuIds().map(byId).filter(Boolean)}
 function eSafe(s){return safe(s)}
+function eveningInviteText(){
+ const name=e$('eveningInviteName').value.trim();
+ const date=e$('eveningInviteDate').value;
+ const time=e$('eveningInviteTime').value||'19:30';
+ const moodPhrase=evening.mood==='spark'?'вечер с искрой':evening.mood==='play'?'игривый вечер':evening.mood==='cozy'?'уютный вечер':'нежный вечер';
+ let when='сегодня в '+time;
+ if(date){const d=new Date(date+'T12:00:00');if(!Number.isNaN(d.valueOf()))when=d.toLocaleDateString('ru-RU',{day:'numeric',month:'long'})+(time?' в '+time:'');}
+ const dishes=menuRecipes().map(r=>r.title).join(', ');
+ return (name?name+', ':'')+'приглашаю тебя '+when+' на наш '+moodPhrase+'. Давай приготовим ужин вместе, включим музыку и побудем вдвоём. В меню: '+dishes+'. Готовьте вместе. Остальное... без рецепта. ♡';
+}
+function renderEveningInvite(){const preview=e$('eveningInvitePreview');if(preview)preview.textContent=eveningInviteText();}
+
 function renderEvening(){
  const mood=EVENING_MOODS[evening.mood];
  document.querySelectorAll('[data-mood]').forEach(b=>{const active=b.dataset.mood===evening.mood;b.classList.toggle('is-selected',active);b.setAttribute('aria-pressed',String(active))});
  document.querySelectorAll('[data-time]').forEach(b=>{const active=b.dataset.time===evening.time;b.classList.toggle('is-selected',active);b.setAttribute('aria-pressed',String(active))});
  e$('menuIntro').textContent=mood.description;
  const recipes=menuRecipes();
- e$('menuPreview').innerHTML=recipes.map((r,i)=>`<div class="du-menu-dish"><span class="du-menu-dish-emoji">${r.emoji}</span><div><span>${eSafe(i===0?'Начало':i===recipes.length-1&&r.category==='dessert'?'Десерт':EVENING_ROLES[r.category]||'Блюдо')}</span><strong>${eSafe(r.title)}</strong><small>${r.minutes} мин${r.cuisine==='Домашняя'?'':' · '+eSafe(r.cuisine)}</small></div><button type="button" aria-label="Открыть рецепт ${eSafe(r.title)}" data-open-menu-recipe="${eSafe(r.id)}">↗</button></div>`).join('');
+ e$('menuPreview').innerHTML=recipes.map((r,i)=>`<div class="du-menu-dish"><span class="du-menu-dish-emoji">${r.emoji}</span><div><span>${eSafe(i===0?'Начало':i===recipes.length-1&&r.category==='dessert'?'Десерт':EVENING_ROLES[r.category]||'Блюдо')}</span><strong>${eSafe(r.title)}</strong><small>${r.minutes} мин · ${eSafe(r.cuisine)}</small></div><button type="button" aria-label="Открыть рецепт ${eSafe(r.title)}" data-open-menu-recipe="${eSafe(r.id)}">↗</button></div>`).join('');
  const total=recipes.reduce((a,r)=>a+r.minutes,0);
  e$('menuMeta').textContent=`${recipes.length} блюда · ${total} минут последовательно · 2 порции каждого блюда`;
+ const youLabel=e$('eveningRoleYouLabel'),meLabel=e$('eveningRoleMeLabel'),roleButton=e$('swapEveningRoles'),roleStatus=e$('eveningRoleStatus');
+ if(youLabel)youLabel.textContent=evening.roleSwap?'Я':'ТЫ';
+ if(meLabel)meLabel.textContent=evening.roleSwap?'ТЫ':'Я';
+ if(roleButton)roleButton.setAttribute('aria-pressed',String(evening.roleSwap));
+ if(roleStatus)roleStatus.textContent=evening.roleSwap?'Сейчас: Я → Ты → Вместе':'Сейчас: Ты → Я → Вместе';
+ renderEveningInvite();
  e$('menuPreview').querySelectorAll('[data-open-menu-recipe]').forEach(button=>button.addEventListener('click',()=>{location.hash='recipe='+button.dataset.openMenuRecipe}));
 }
 function addEveningShopping(){
@@ -651,8 +761,8 @@ function renderEveningStep(){
  const box=e$('eveningSteps');const idx=evening.courseStep;const total=evening.activeSteps.length;
  const recipes=menuRecipes();e$('eveningRecipeName').textContent=EVENING_MOODS[evening.mood].name+' вечер · '+recipes.length+' блюда';
  if(idx>=total){box.innerHTML=`<div class="du-evening-content du-evening-completion"><div class="du-emoji-big">🥂</div><h2 id="eveningStepTitle">Ужин готов.</h2><p>Сегодня вы приготовили ${recipes.length} блюда и подарили друг другу немного времени.<br><strong>А дальше - как пойдёт.</strong></p><button type="button" class="du-btn du-btn-primary" id="finishEvening">Вернуться к выбору меню ↗</button></div>`;e$('finishEvening').addEventListener('click',()=>{evening.courseStep=0;eSave();closeEvening();e$('evening').scrollIntoView({behavior:'smooth'});});return;}
- const {recipe:r,step,stepNo,recipeNo}=evening.activeSteps[idx];const progress=Math.round(idx/total*100);const role=stepNo%2===0?'Повар №1':'Повар №2';
- box.innerHTML=`<div class="du-evening-content"><div class="du-evening-progress-label"><span>Шаг ${idx+1} из ${total}</span><span>${progress}% готово</span></div><div class="du-evening-progress-track"><div style="width:${progress}%"></div></div><span class="du-evening-course">БЛЮДО ${recipeNo+1} ИЗ ${recipes.length} · ${eSafe(r.title)}</span><h2 class="du-evening-step-title" id="eveningStepTitle">${eSafe(step.title)}</h2><div class="du-evening-two">♡ ${role} ведёт этот шаг · Готовьте в своём ритме</div><p class="du-evening-step-desc">${eSafe(step.detail)}</p>${step.timer?`<div class="du-evening-timer"><div><span>ТАЙМЕР ЭТОГО ШАГА</span><strong id="eveningTimerTime">${timerText(step.timer*60)}</strong></div><button type="button" id="eveningTimerStart">Старт ▶</button><button type="button" id="eveningTimerReset" aria-label="Сбросить таймер">↺</button></div>`:''}<div class="du-evening-nav"><button type="button" class="du-btn du-btn-muted" id="eveningPrev" ${idx===0?'disabled':''}>← Назад</button><button type="button" class="du-btn du-btn-primary" id="eveningNext">${idx===total-1?'Ужин готов ✓':'Сделано, дальше →'}</button></div></div>`;
+ const {recipe:r,step,stepNo,recipeNo}=evening.activeSteps[idx];const progress=Math.round(idx/total*100);const baseRole=idx%3===2?'Вместе':idx%3===0?'Ты':'Я';const role=evening.roleSwap&&baseRole!=='Вместе'?(baseRole==='Ты'?'Я':'Ты'):baseRole;const roleText=role==='Вместе'?'♡ Этот шаг вы делаете вместе':'♡ '+role+' ведёт этот шаг';
+ box.innerHTML=`<div class="du-evening-content"><div class="du-evening-progress-label"><span>Шаг ${idx+1} из ${total}</span><span>${progress}% готово</span></div><div class="du-evening-progress-track"><div style="width:${progress}%"></div></div><span class="du-evening-course">БЛЮДО ${recipeNo+1} ИЗ ${recipes.length} · ${eSafe(r.title)}</span><h2 class="du-evening-step-title" id="eveningStepTitle">${eSafe(step.title)}</h2><div class="du-evening-two">${roleText} · Готовьте в своём ритме</div><p class="du-evening-step-desc">${eSafe(step.detail)}</p>${step.timer?`<div class="du-evening-timer"><div><span>ТАЙМЕР ЭТОГО ШАГА</span><strong id="eveningTimerTime">${timerText(step.timer*60)}</strong></div><button type="button" id="eveningTimerStart">Старт ▶</button><button type="button" id="eveningTimerReset" aria-label="Сбросить таймер">↺</button></div>`:''}<div class="du-evening-nav"><button type="button" class="du-btn du-btn-muted" id="eveningPrev" ${idx===0?'disabled':''}>← Назад</button><button type="button" class="du-btn du-btn-primary" id="eveningNext">${idx===total-1?'Ужин готов ✓':'Сделано, дальше →'}</button></div></div>`;
  e$('eveningPrev').addEventListener('click',()=>advanceEvening(-1));e$('eveningNext').addEventListener('click',()=>advanceEvening(1));
  if(step.timer){e$('eveningTimerStart').addEventListener('click',()=>toggleEveningTimer(step.timer));e$('eveningTimerReset').addEventListener('click',()=>{clearEveningTimer();e$('eveningTimerTime').textContent=timerText(step.timer*60);e$('eveningTimerStart').textContent='Старт ▶';});}
 }
@@ -660,6 +770,12 @@ function initEvening(){
  document.querySelectorAll('[data-mood]').forEach(b=>b.addEventListener('click',()=>{evening.mood=b.dataset.mood;renderEvening()}));
  document.querySelectorAll('[data-time]').forEach(b=>b.addEventListener('click',()=>{evening.time=b.dataset.time;renderEvening()}));
  e$('addMenuShopping').addEventListener('click',addEveningShopping);
+ e$('swapEveningRoles').addEventListener('click',()=>{evening.roleSwap=!evening.roleSwap;renderEvening();if(!e$('eveningOverlay').hidden)renderEveningStep();toast(evening.roleSwap?'Роли поменялись местами':'Вернули исходное распределение ролей')});
+ ['eveningInviteName','eveningInviteDate','eveningInviteTime'].forEach(id=>e$(id).addEventListener('input',renderEveningInvite));
+ const localToday=new Date();e$('eveningInviteDate').min=[localToday.getFullYear(),String(localToday.getMonth()+1).padStart(2,'0'),String(localToday.getDate()).padStart(2,'0')].join('-');
+ e$('copyEveningInvite').addEventListener('click',()=>{const text=eveningInviteText();if(navigator.clipboard?.writeText)navigator.clipboard.writeText(text).then(()=>toast('Приглашение скопировано')).catch(()=>fallbackCopy(text));else fallbackCopy(text)});
+ e$('shareEveningInvite').addEventListener('click',async()=>{const text=eveningInviteText();if(navigator.share){try{await navigator.share({title:'Наш вечер · СНАЧАЛА УЖИН',text})}catch(e){}}else if(navigator.clipboard?.writeText){navigator.clipboard.writeText(text).then(()=>toast('Приглашение скопировано')).catch(()=>fallbackCopy(text))}else fallbackCopy(text)});
+
  e$('beginEvening').addEventListener('click',startEvening);
  e$('closeEvening').addEventListener('click',closeEvening);
  e$('eveningOverlay').addEventListener('click',e=>{if(e.target===e$('eveningOverlay'))closeEvening()});
