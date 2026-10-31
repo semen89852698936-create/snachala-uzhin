@@ -487,6 +487,85 @@ body.du-evening-mode .main-nav [data-nav="evening"]{color:#8a4354;font-weight:80
 @media(max-width:1000px){.du-evening-landing{gap:22px}.du-evening-landing-photo{min-height:640px}.du-evening-landing-content{padding-top:25px}.du-evening-inspiration-head small{display:none}.du-evening-landing-benefits{gap:12px}}
 @media(max-width:760px){.du-evening-landing{grid-template-columns:1fr;padding:18px 0 12px;gap:10px}.du-evening-landing-photo{min-height:320px;max-height:380px}.du-evening-landing-content{padding:14px 2px 6px}.du-evening-landing-content h1{font-size:clamp(58px,15vw,85px)}.du-evening-landing-content h1 span{font-size:27px}.du-evening-landing-text{font-size:14px}.du-evening-inspiration-card img{height:100px}.du-recipe-evening-invite{grid-template-columns:1fr;margin:25px 0 40px}.du-recipe-evening-photo{height:185px;min-height:0}.du-recipe-evening-copy{padding:25px 23px}}
 @media(max-width:430px){.du-evening-landing-photo{min-height:270px}.du-evening-landing-benefits{gap:10px}.du-evening-landing-benefits b{font-size:11px}.du-evening-inspiration-grid{gap:6px}.du-evening-inspiration-card img{height:78px}.du-evening-inspiration-card span{padding:7px;font-size:10px}.du-evening-inspiration-credit{font-size:9px}}
+
+/* Our Evening: matching site typography and distinct editorial photographs */
+.du-evening-mode #eveningLanding,.du-evening-mode #evening,.du-evening-mode #music,
+.du-recipe-evening-invite{--evening-serif:var(--serif,'Cormorant Garamond',Georgia,serif);--evening-sans:var(--sans,'Manrope',Arial,sans-serif);--evening-type:#59404f;--evening-accent:#a46b80}
+.du-evening-landing-content h1{font-family:var(--serif);font-size:clamp(78px,8.3vw,126px);font-weight:500;line-height:.86;letter-spacing:-.052em;color:#59404f;margin:23px 0 20px}
+.du-evening-landing-content h1 em{color:#a46b80;font-weight:400}
+.du-evening-landing-lead{font-family:var(--serif);font-size:clamp(29px,2.8vw,43px);line-height:1.1;letter-spacing:-.02em;color:#604852;max-width:590px}
+.du-evening-landing-text{font:500 17px/1.7 var(--sans);color:#715e69;max-width:570px}
+.du-evening-landing-kicker,.du-recipe-evening-kicker{font:800 13px/1.45 var(--sans);letter-spacing:.075em}
+.du-evening-landing-benefits{gap:15px 24px}
+.du-evening-landing-benefits b{font:700 15px/1.45 var(--sans)}
+.du-evening-pinned{font:650 15px/1.55 var(--sans)}
+.du-evening-landing-cta,.du-recipe-evening-copy .du-btn{font:800 15px/1.25 var(--sans);min-height:52px}
+.du-evening-inspiration-head strong{font:750 18px/1.3 var(--sans)}
+.du-evening-inspiration-head small{font:500 13px/1.3 var(--sans)}
+.du-evening-inspiration-card span{font:700 15px/1.35 var(--sans)}
+.du-evening-inspiration-card small{font:500 13px/1.45 var(--sans)}
+.du-evening-inspiration-credit,.du-evening-landing-credit{font-size:11px;line-height:1.45}
+.du-evening-mode #evening .du-section-heading h2,.du-evening-mode #music .du-section-heading h2{font-family:var(--serif);font-weight:500;letter-spacing:-.038em}
+.du-evening-mode #evening .du-section-heading p,.du-evening-mode #music .du-section-heading p{font:500 17px/1.68 var(--sans);max-width:570px}
+.du-evening-mode #evening .du-eyebrow,.du-evening-mode #music .du-eyebrow,
+.du-evening-mode #evening .du-mini-eyebrow{font:800 12px/1.5 var(--sans);letter-spacing:.1em}
+.du-evening-mode #evening .du-mood strong{font-family:var(--serif);font-size:clamp(34px,3vw,44px);font-weight:500;line-height:1.03}
+.du-evening-mode #evening .du-mood small{font:600 14px/1.5 var(--sans);max-width:230px}
+.du-evening-mode #evening .du-mood-num{font:800 12px var(--sans)}
+.du-evening-mode #evening .du-builder h3{font-family:var(--serif);font-weight:500;font-size:clamp(40px,4vw,59px)}
+.du-evening-mode #evening .du-time-choices button{font:700 15px/1.5 var(--sans);min-height:46px}
+.du-evening-mode #evening .du-small-note{font:500 14px/1.6 var(--sans)}
+.du-evening-mode #evening .du-menu-intro{font:500 17px/1.65 var(--sans)}
+.du-evening-mode #evening .du-menu-dish strong{font-family:var(--serif);font-size:25px;line-height:1.15}
+.du-evening-mode #evening .du-menu-dish small,.du-evening-mode #evening .du-menu-meta{font:550 14px/1.45 var(--sans)}
+.du-evening-mode #evening .du-evening-together-content h3,.du-evening-mode #evening .du-evening-invitation-content h3{font-family:var(--serif);font-weight:500;font-size:clamp(35px,3.25vw,48px);line-height:1.04}
+.du-evening-mode #evening .du-evening-together-content>p,.du-evening-mode #evening .du-evening-invitation-content>p{font:500 15px/1.65 var(--sans)}
+.du-evening-mode #evening .du-evening-role-card>span{font:800 11px/1.5 var(--sans)}
+.du-evening-mode #evening .du-evening-role-card strong{font:600 24px/1.1 var(--serif)}
+.du-evening-mode #evening .du-evening-role-card small{font:550 13px/1.4 var(--sans)}
+.du-evening-mode #evening .du-evening-role-actions button,.du-evening-mode #evening .du-evening-role-actions span{font:700 13px/1.45 var(--sans)}
+.du-evening-mode #evening .du-evening-invite-fields label{font:750 12px/1.5 var(--sans);letter-spacing:.06em}
+.du-evening-mode #evening .du-evening-invite-fields input{font:500 15px/1.5 var(--sans);min-height:46px}
+.du-evening-mode #evening .du-evening-invite-preview{font:500 23px/1.32 var(--serif)}
+.du-evening-mode #evening .du-evening-invite-actions .du-btn{font:800 14px/1.4 var(--sans)}
+.du-evening-mode #evening .du-evening-privacy,.du-evening-mode #evening .du-evening-photo-credit{font:500 12px/1.55 var(--sans)}
+.du-evening-mode #evening .du-evening-next{font:600 16px/1.5 var(--sans)}
+.du-recipe-evening-copy h2{font:500 clamp(38px,4vw,60px)/1.02 var(--serif);letter-spacing:-.035em;color:#59404f}
+.du-recipe-evening-copy h2 em{color:#a46b80}
+.du-recipe-evening-copy p{font:500 17px/1.65 var(--sans)}
+.du-recipe-evening-copy small{font:500 12px/1.45 var(--sans)}
+.du-evening-landing-photo>img{object-position:52% 47%}
+.du-evening-together>img{object-position:52% 38%}
+.du-evening-invitation-photo img{object-position:center 47%}
+.du-recipe-evening-photo img{object-position:53% 55%}
+@media(max-width:900px){
+.du-evening-landing-content h1{font-size:clamp(68px,10vw,105px)}
+.du-evening-landing-lead{font-size:clamp(26px,3.7vw,36px)}
+.du-evening-landing-text,.du-recipe-evening-copy p{font-size:16px}
+.du-evening-mode #evening .du-evening-role-card strong{font-size:22px}
+}
+@media(max-width:560px){
+.du-evening-landing-content h1{font-size:clamp(66px,17vw,92px);margin:13px 0 15px}
+.du-evening-landing-lead{font-size:clamp(28px,8vw,36px)}
+.du-evening-landing-kicker{font-size:12px}
+.du-evening-inspiration-head strong{font-size:16px}
+.du-evening-inspiration-head small{display:none}
+.du-evening-inspiration-card span{font-size:12px}
+.du-evening-inspiration-card small{font-size:11px}
+.du-evening-mode #evening .du-section-heading h2{font-size:clamp(46px,12vw,64px)}
+.du-evening-mode #evening .du-section-heading p{font-size:16px}
+.du-evening-mode #evening .du-mood small{font-size:13px}
+.du-evening-mode #evening .du-mood strong{font-size:36px}
+.du-evening-mode #evening .du-builder h3{font-size:46px}
+.du-evening-mode #evening .du-evening-role-card strong{font-size:18px}
+.du-evening-mode #evening .du-evening-role-card small{font-size:11px}
+.du-evening-mode #evening .du-evening-together-content h3{font-size:37px}
+.du-evening-mode #evening .du-evening-together{min-height:720px}
+.du-evening-mode #evening .du-evening-invitation-content h3{font-size:39px}
+.du-recipe-evening-copy h2{font-size:clamp(38px,10vw,49px)}
+.du-evening-landing-photo>img{object-position:52% 36%}
+}
+
 </style>
 </head><body>
 <div class="demo-strip"><span class="demo-dot"></span> ОТКРЫТАЯ КОЛЛЕКЦИЯ · 1000 РЕЦЕПТОВ + 1 СЕКРЕТНЫЙ · ГОТОВЬТЕ ВМЕСТЕ</div>
@@ -509,9 +588,9 @@ body.du-evening-mode .main-nav [data-nav="evening"]{color:#8a4354;font-weight:80
 <section class="du-quote-strip"><div class="container"><span>«</span> Некоторые ужины заканчиваются завтраком. <span>»</span></div></section>
 <section id="eveningLanding" class="du-evening-landing container" aria-labelledby="eveningLandingTitle">
   <div class="du-evening-landing-photo">
-    <img src="https://images.pexels.com/photos/36305242/pexels-photo-36305242.jpeg?cs=srgb&amp;dl=pexels-marina-grechko-701637593-36305242.jpg&amp;fm=jpg" alt="Романтический ужин вдвоём при свечах" decoding="async">
+    <img src="https://images.pexels.com/photos/11368688/pexels-photo-11368688.jpeg?cs=srgb&amp;dl=pexels-shvetsa-11368688.jpg&amp;fm=jpg" alt="Пара накрывает домашний ужин при свечах" decoding="async">
     <div class="du-evening-landing-caption">✳ Только для вас двоих</div>
-    <small class="du-evening-landing-credit">Фото: <a href="https://www.pexels.com/photo/romantic-candlelit-pizza-dinner-at-home-36305242/" target="_blank" rel="noopener noreferrer">Marina Grechko / Pexels</a></small>
+    <small class="du-evening-landing-credit">Фото: <a href="https://www.pexels.com/photo/two-people-at-a-table-11368688/" target="_blank" rel="noopener noreferrer">Anna Shvets / Pexels</a></small>
   </div>
   <div class="du-evening-landing-content">
     <div class="du-evening-landing-kicker">СНАЧАЛА УЖИН / ОСОБЕННЫЙ РЕЖИМ</div>
@@ -544,7 +623,7 @@ body.du-evening-mode .main-nav [data-nav="evening"]{color:#8a4354;font-weight:80
  <div class="du-builder-right"><div class="du-mini-eyebrow">ВАШ ПЛАН НА ВЕЧЕР</div><div class="du-menu-intro" id="menuIntro">Мягкий свет, музыка и три блюда, которыми приятно поделиться.</div><div id="menuPreview" class="du-menu-preview" aria-live="polite"></div><div class="du-menu-meta" id="menuMeta"></div><div class="du-menu-actions"><button class="du-btn du-btn-primary" id="beginEvening" type="button">Начать наш вечер <span>↗</span></button><button class="du-btn du-btn-muted" id="addMenuShopping" type="button">Список покупок <span>▤</span></button></div></div></div>
  <div class="du-evening-experience" aria-label="Совместный вечер">
   <article class="du-evening-together">
-   <img src="https://images.pexels.com/photos/27176133/pexels-photo-27176133.jpeg?cs=srgb&dl=pexels-helenalopes-27176133.jpg&fm=jpg" alt="Пара вместе готовит ужин на домашней кухне" loading="lazy" decoding="async">
+   <img src="https://images.pexels.com/photos/5424608/pexels-photo-5424608.jpeg?cs=srgb&amp;dl=pexels-amina-filkins-5424608.jpg&amp;fm=jpg" alt="Пара вместе готовит ужин и обнимается на кухне" loading="lazy" decoding="async">
    <div class="du-evening-together-shade"></div>
    <div class="du-evening-together-content">
     <div class="du-mini-eyebrow">04 / ДВА ЧЕЛОВЕКА. ОДНА КОМАНДА.</div>
@@ -556,7 +635,7 @@ body.du-evening-mode .main-nav [data-nav="evening"]{color:#8a4354;font-weight:80
      <div class="du-evening-role-card"><span>МЫ</span><strong>Подать</strong><small>Последние штрихи и две тарелки.</small></div>
     </div>
     <div class="du-evening-role-actions"><button type="button" id="swapEveningRoles" aria-pressed="false">↔ Поменять роли</button><span id="eveningRoleStatus" aria-live="polite">Сейчас: Ты → Я → Вместе</span></div>
-    <small class="du-evening-photo-credit">Фото: <a href="https://www.pexels.com/photo/couple-enjoys-cooking-together-in-kitchen-27176133/" target="_blank" rel="noopener noreferrer">Helena Lopes / Pexels</a></small>
+    <small class="du-evening-photo-credit">Фото: <a href="https://www.pexels.com/photo/cheerful-couple-cooking-together-at-home-5424608/" target="_blank" rel="noopener noreferrer">Amina Filkins / Pexels</a></small>
    </div>
   </article>
   <article class="du-evening-invitation">
@@ -683,13 +762,13 @@ body.du-evening-mode .main-nav [data-nav="evening"]{color:#8a4354;font-weight:80
 </main>
   <main id="recipeView" hidden class="recipe-page container"><button type="button" class="back-link" id="backCatalog">← К каталогу рецептов</button><div id="recipeDetail"></div>
 <aside class="du-recipe-evening-invite" id="recipeEveningInvite" aria-label="Продолжение вечера">
-  <div class="du-recipe-evening-photo"><img src="https://images.pexels.com/photos/36305242/pexels-photo-36305242.jpeg?cs=srgb&amp;dl=pexels-marina-grechko-701637593-36305242.jpg&amp;fm=jpg" alt="Романтический ужин при свечах" loading="lazy"></div>
+  <div class="du-recipe-evening-photo"><img src="https://images.pexels.com/photos/29110845/pexels-photo-29110845.jpeg?cs=srgb&amp;dl=pexels-furkan-ozavci-384727158-29110845.jpg&amp;fm=jpg" alt="Сервировка романтического ужина со свечами и цветами" loading="lazy"></div>
   <div class="du-recipe-evening-copy">
     <span class="du-recipe-evening-kicker">ПРОДОЛЖЕНИЕ ВЕЧЕРА</span>
     <h2>Ужин готов. <em>А вечер только начинается.</em></h2>
     <p>Добавьте музыку, немного романтики и время только для вас двоих. <span id="eveningFromRecipeTitle"></span> уже выбран.</p>
     <button type="button" id="continueEveningBtn" class="du-btn du-btn-primary">Сделать вечер особенным <span>↗</span></button>
-    <small>Фото: <a href="https://www.pexels.com/photo/romantic-candlelit-pizza-dinner-at-home-36305242/" target="_blank" rel="noopener noreferrer">Marina Grechko / Pexels</a></small>
+    <small>Фото: <a href="https://www.pexels.com/photo/romantic-dinner-setup-with-candles-and-flowers-29110845/" target="_blank" rel="noopener noreferrer">Furkan Özavcı / Pexels</a></small>
   </div>
 </aside></main>
   <footer class="footer"><div class="container footer-inner"><div><span class="footer-name">Сначала <em>ужин.</em></span><p>Готовьте вместе. Остальное... без рецепта.</p></div><div><span>Коллекция «Сначала ужин» · 2026</span><span>1000 рецептов и авторских вариаций + бонус №1001. Данные избранного и покупок сохраняются только в этом браузере.</span></div></div></footer>
