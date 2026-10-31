@@ -1,0 +1,26 @@
+{
+  "version": 1,
+  "tasks": [
+    {
+      "id": "photo-catalog-integrity",
+      "project": "snachala-uzhin",
+      "type": "audit",
+      "enabled": true,
+      "priority": 1
+    },
+    {
+      "id": "photo-library-progress",
+      "project": "snachala-uzhin",
+      "type": "audit",
+      "enabled": true,
+      "priority": 2
+    },
+    {
+      "id": "our-evening-present",
+      "project": "snachala-uzhin",
+      "type": "audit",
+      "enabled": true,
+      "priority": 3
+    }
+  ]
+}
