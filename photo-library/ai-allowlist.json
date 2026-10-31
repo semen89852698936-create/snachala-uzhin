@@ -1,0 +1,6 @@
+{
+  "schema_version": 1,
+  "recipe_ids": [],
+  "approved_for_ai_generation": false,
+  "notes": "Default is empty. Add recipe IDs only after free stock sources have been checked and rejected."
+}
