@@ -106,8 +106,8 @@ def main():
         f'src="{HERO}" alt="Пара накрывает домашний ужин при свечах"',
         "evening hero photo")
     s=replace_once(s,
-        'Фото: <a href="https://www.pexels.com/photo/romantic-candlelit-pizza-dinner-at-home-36305242/" target="_blank" rel="noopener noreferrer">Marina Grechko / Pexels</a></small>',
-        'Фото: <a href="https://www.pexels.com/photo/two-people-at-a-table-11368688/" target="_blank" rel="noopener noreferrer">Anna Shvets / Pexels</a></small>',
+        '<small class="du-evening-landing-credit">Фото: <a href="https://www.pexels.com/photo/romantic-candlelit-pizza-dinner-at-home-36305242/" target="_blank" rel="noopener noreferrer">Marina Grechko / Pexels</a></small>',
+        '<small class="du-evening-landing-credit">Фото: <a href="https://www.pexels.com/photo/two-people-at-a-table-11368688/" target="_blank" rel="noopener noreferrer">Anna Shvets / Pexels</a></small>',
         "evening hero credit")
     # Cooking photo: a different warm, genuine moment with two people.
     s=replace_once(s,
