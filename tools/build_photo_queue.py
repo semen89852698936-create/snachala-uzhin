@@ -14,7 +14,7 @@ from urllib.parse import quote
 SOURCE = Path(sys.argv[1] if len(sys.argv)>1 else "index.html")
 DEST = Path(sys.argv[2] if len(sys.argv)>2 else "audit/photo-research-queue.csv")
 page = SOURCE.read_text(encoding="utf-8")
-match = re.search(r'<script\\s+id=["\\\']recipeData["\\\']\\s+type=["\\\']application/json["\\\']>(.*?)</script>', page, re.S)
+match = re.search(r'<script[^>]*id=["\\\']recipeData["\\\'][^>]*>(.*?)</script>', page, re.S)
 if not match:
     raise SystemExit("recipeData JSON block not found; check source HTML")
 items = json.loads(match.group(1))
