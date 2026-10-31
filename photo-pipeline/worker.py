@@ -158,6 +158,8 @@ def run(args):
     if not isinstance(approved_ids, list) or not all(isinstance(x, str) for x in approved_ids):
         raise ValueError("AI allowlist must contain recipe_ids list")
     approved_ids = set(approved_ids)
+    if allowlist.get("approved_for_ai_generation") is not True:
+        approved_ids = set()  # editorial approval gate, independent of workflow flags
     if not approved_ids.issubset(set(ids)):
         raise ValueError("AI allowlist has unknown recipe identifiers")
     candidates = []
