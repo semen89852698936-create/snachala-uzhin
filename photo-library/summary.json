@@ -1,0 +1,21 @@
+{
+  "total_recipes": 1001,
+  "unique_ids": 1001,
+  "categories": {
+    "bonus": 1,
+    "breakfast": 100,
+    "dessert": 100,
+    "fish": 100,
+    "meat": 100,
+    "pasta": 100,
+    "pastry": 100,
+    "poultry": 100,
+    "salads": 100,
+    "soup": 100,
+    "vegetables": 100
+  },
+  "unique_current_photo_ids": 17,
+  "approved_new_images": 0,
+  "status": "photo_research_queue_not_approved",
+  "warning": "Search URLs are not actual photos; verify visual match and rights before publishing."
+}
