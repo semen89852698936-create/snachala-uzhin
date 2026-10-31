@@ -118,15 +118,17 @@
       ],
       "currentPhotoId": "photo-1473093295043-cdd812d0e601",
       "photo": {
-        "status": "not_started",
-        "kind": null,
-        "sourcePage": null,
-        "creator": null,
-        "license": null,
+        "status": "candidate_needs_review",
+        "kind": "real",
+        "sourcePage": "https://www.pexels.com/photo/food-on-white-plate-10350292/",
+        "creator": "David Waschbüsch",
+        "license": "Pexels License (free use; attribution not required)",
         "assetPath": null,
-        "visualReview": false,
-        "rightsReview": false,
-        "connected": false
+        "visualReview": true,
+        "rightsReview": true,
+        "connected": false,
+        "candidateImageUrl": "https://images.pexels.com/photos/10350292/pexels-photo-10350292.jpeg?cs=srgb&dl=pexels-david-waschbusch-959602-10350292.jpg&fm=jpg",
+        "reviewNote": "Видны паста, шпинат и пармезан; лимон не виден, соус выглядит сливочным. Кандидат, нужна редакционная проверка соответствия рецепту."
       },
       "editorialFlags": []
     },
@@ -177,15 +179,17 @@
       ],
       "currentPhotoId": "photo-1597131628347-c769fc631754",
       "photo": {
-        "status": "not_started",
-        "kind": null,
-        "sourcePage": null,
-        "creator": null,
-        "license": null,
+        "status": "candidate_needs_review",
+        "kind": "real",
+        "sourcePage": "https://www.pexels.com/photo/delicious-penne-pasta-with-tomato-sauce-and-basil-34890732/",
+        "creator": "one click",
+        "license": "Pexels License (free use; attribution not required)",
         "assetPath": null,
-        "visualReview": false,
-        "rightsReview": false,
-        "connected": false
+        "visualReview": true,
+        "rightsReview": true,
+        "connected": false,
+        "candidateImageUrl": "https://images.pexels.com/photos/34890732/pexels-photo-34890732.jpeg?cs=srgb&dl=pexels-rafaellenss-34890732.jpg&fm=jpg",
+        "reviewNote": "Томатный соус и базилик соответствуют; на фото пенне вместо спагетти. Кандидат."
       },
       "editorialFlags": []
     },
@@ -236,15 +240,17 @@
       ],
       "currentPhotoId": "photo-1544025162-d76694265947",
       "photo": {
-        "status": "not_started",
-        "kind": null,
-        "sourcePage": null,
-        "creator": null,
-        "license": null,
+        "status": "candidate",
+        "kind": "real",
+        "sourcePage": "https://www.pexels.com/photo/grilled-steak-with-rosemary-and-butter-sauce-36617211/",
+        "creator": "Mohamed Olwy",
+        "license": "Pexels License (free use; attribution not required)",
         "assetPath": null,
-        "visualReview": false,
-        "rightsReview": false,
-        "connected": false
+        "visualReview": true,
+        "rightsReview": true,
+        "connected": false,
+        "candidateImageUrl": "https://images.pexels.com/photos/36617211/pexels-photo-36617211.jpeg?cs=srgb&dl=pexels-mohamed9380-36617211.jpg&fm=jpg",
+        "reviewNote": "Стейк, розмарин, чеснок и масляный соус визуально соответствуют."
       },
       "editorialFlags": []
     },
@@ -300,15 +306,17 @@
       ],
       "currentPhotoId": "photo-1558030006-450675393462",
       "photo": {
-        "status": "not_started",
-        "kind": null,
-        "sourcePage": null,
-        "creator": null,
-        "license": null,
+        "status": "candidate",
+        "kind": "real",
+        "sourcePage": "https://www.pexels.com/photo/delicious-meatballs-on-rice-with-tomato-sauce-38934831/",
+        "creator": "FOX",
+        "license": "Pexels License (free use; attribution not required)",
         "assetPath": null,
-        "visualReview": false,
-        "rightsReview": false,
-        "connected": false
+        "visualReview": true,
+        "rightsReview": true,
+        "connected": false,
+        "candidateImageUrl": "https://images.pexels.com/photos/38934831/pexels-photo-38934831.jpeg?cs=srgb&dl=pexels-fox-58267-38934831.jpg&fm=jpg",
+        "reviewNote": "Тефтели в томатном соусе; подача с рисом допустима по описанию рецепта."
       },
       "editorialFlags": []
     },
@@ -354,15 +362,17 @@
       ],
       "currentPhotoId": "photo-1578004969074-01bff101f85e",
       "photo": {
-        "status": "not_started",
-        "kind": null,
-        "sourcePage": null,
-        "creator": null,
-        "license": null,
+        "status": "candidate",
+        "kind": "real",
+        "sourcePage": "https://www.pexels.com/photo/gourmet-salmon-fillet-with-herbs-and-lemon-31909815/",
+        "creator": "Rodrigo Ortega",
+        "license": "Pexels License (free use; attribution not required)",
         "assetPath": null,
-        "visualReview": false,
-        "rightsReview": false,
-        "connected": false
+        "visualReview": true,
+        "rightsReview": true,
+        "connected": false,
+        "candidateImageUrl": "https://images.pexels.com/photos/31909815/pexels-photo-31909815.jpeg?cs=srgb&dl=pexels-rodrigo-ortega-2044210904-31909815.jpg&fm=jpg",
+        "reviewNote": "Готовый лосось с зеленью и лимоном; хорошее совпадение по блюду."
       },
       "editorialFlags": []
     },
@@ -477,15 +487,17 @@
       ],
       "currentPhotoId": "photo-1547592180-85f173990554",
       "photo": {
-        "status": "not_started",
-        "kind": null,
-        "sourcePage": null,
-        "creator": null,
-        "license": null,
+        "status": "candidate",
+        "kind": "real",
+        "sourcePage": "https://www.pexels.com/photo/colorful-ratatouille-in-rustic-baking-dish-36863876/",
+        "creator": "Merve Gülhan",
+        "license": "Pexels License (free use; attribution not required)",
         "assetPath": null,
-        "visualReview": false,
-        "rightsReview": false,
-        "connected": false
+        "visualReview": true,
+        "rightsReview": true,
+        "connected": false,
+        "candidateImageUrl": "https://images.pexels.com/photos/36863876/pexels-photo-36863876.jpeg?cs=srgb&dl=pexels-merve-gulhan-2150623335-36863876.jpg&fm=jpg",
+        "reviewNote": "Слои баклажана, кабачка и томатов в запечённом виде; точное соответствие."
       },
       "editorialFlags": []
     },
@@ -585,15 +597,17 @@
       ],
       "currentPhotoId": "photo-1509440159596-0249088772ff",
       "photo": {
-        "status": "not_started",
-        "kind": null,
-        "sourcePage": null,
-        "creator": null,
-        "license": null,
+        "status": "candidate_needs_review",
+        "kind": "real",
+        "sourcePage": "https://www.pexels.com/photo/close-up-of-freshly-baked-rosemary-focaccia-bread-30666813/",
+        "creator": "Natalia Olivera",
+        "license": "Pexels License (free use; attribution not required)",
         "assetPath": null,
-        "visualReview": false,
-        "rightsReview": false,
-        "connected": false
+        "visualReview": true,
+        "rightsReview": true,
+        "connected": false,
+        "candidateImageUrl": "https://images.pexels.com/photos/30666813/pexels-photo-30666813.jpeg?cs=srgb&dl=pexels-nataliaolivera-30666813.jpg&fm=jpg",
+        "reviewNote": "Фокачча с розмарином, хорошо видна структура хлеба; вертикальный исходник, проверить кадрирование карточки."
       },
       "editorialFlags": []
     },
@@ -639,15 +653,17 @@
       ],
       "currentPhotoId": "photo-1528207776546-365bb710ee93",
       "photo": {
-        "status": "not_started",
-        "kind": null,
-        "sourcePage": null,
-        "creator": null,
-        "license": null,
+        "status": "candidate_needs_review",
+        "kind": "real",
+        "sourcePage": "https://www.pexels.com/photo/mini-pancakes-on-a-plate-7855285/",
+        "creator": "Anna Pyshniuk",
+        "license": "Pexels License (free use; attribution not required)",
         "assetPath": null,
-        "visualReview": false,
-        "rightsReview": false,
-        "connected": false
+        "visualReview": true,
+        "rightsReview": true,
+        "connected": false,
+        "candidateImageUrl": "https://images.pexels.com/photos/7855285/pexels-photo-7855285.jpeg?cs=srgb&dl=pexels-anna-pyshniuk-2453945-7855285.jpg&fm=jpg",
+        "reviewNote": "Мини-оладьи с ягодным соусом и сметаной; близкая подача, но кефир в кадре не определяется."
       },
       "editorialFlags": []
     },
@@ -698,15 +714,17 @@
       ],
       "currentPhotoId": "photo-1608949621308-c54d112c808a",
       "photo": {
-        "status": "not_started",
-        "kind": null,
-        "sourcePage": null,
-        "creator": null,
-        "license": null,
+        "status": "candidate",
+        "kind": "real",
+        "sourcePage": "https://www.pexels.com/photo/tomato-soup-on-a-table-27098511/",
+        "creator": "Valeria Boltneva",
+        "license": "Pexels License (free use; attribution not required)",
         "assetPath": null,
-        "visualReview": false,
-        "rightsReview": false,
-        "connected": false
+        "visualReview": true,
+        "rightsReview": true,
+        "connected": false,
+        "candidateImageUrl": "https://images.pexels.com/photos/27098511/pexels-photo-27098511.jpeg?cs=srgb&dl=pexels-valeriya-27098511.jpg&fm=jpg",
+        "reviewNote": "Томатный суп с видимым базиликом; хорошее совпадение."
       },
       "editorialFlags": []
     },
@@ -757,15 +775,17 @@
       ],
       "currentPhotoId": "photo-1569718212165-3a8278d5f624",
       "photo": {
-        "status": "not_started",
-        "kind": null,
-        "sourcePage": null,
-        "creator": null,
-        "license": null,
+        "status": "candidate",
+        "kind": "real",
+        "sourcePage": "https://www.pexels.com/photo/delicious-ramen-bowl-with-toppings-36104807/",
+        "creator": "Sebastian Lang",
+        "license": "Pexels License (free use; attribution not required)",
         "assetPath": null,
-        "visualReview": false,
-        "rightsReview": false,
-        "connected": false
+        "visualReview": true,
+        "rightsReview": true,
+        "connected": false,
+        "candidateImageUrl": "https://images.pexels.com/photos/36104807/pexels-photo-36104807.jpeg?cs=srgb&dl=pexels-sebastian-lang-2159451845-36104807.jpg&fm=jpg",
+        "reviewNote": "Рамен с яйцом, грибами и зеленью; точное совпадение по основным компонентам."
       },
       "editorialFlags": []
     },
@@ -816,15 +836,17 @@
       ],
       "currentPhotoId": "photo-1578985545062-69928b1d9587",
       "photo": {
-        "status": "not_started",
-        "kind": null,
-        "sourcePage": null,
-        "creator": null,
-        "license": null,
+        "status": "candidate",
+        "kind": "real",
+        "sourcePage": "https://www.pexels.com/photo/delicious-chocolate-brownies-on-white-plate-30353753/",
+        "creator": "Giovanna Kamimura",
+        "license": "Pexels License (free use; attribution not required)",
         "assetPath": null,
-        "visualReview": false,
-        "rightsReview": false,
-        "connected": false
+        "visualReview": true,
+        "rightsReview": true,
+        "connected": false,
+        "candidateImageUrl": "https://images.pexels.com/photos/30353753/pexels-photo-30353753.jpeg?cs=srgb&dl=pexels-giovanna-kamimura-399616174-30353753.jpg&fm=jpg",
+        "reviewNote": "Шоколадные брауни на тарелке; хорошее совпадение."
       },
       "editorialFlags": []
     },
@@ -865,15 +887,17 @@
       ],
       "currentPhotoId": "photo-1528207776546-365bb710ee93",
       "photo": {
-        "status": "not_started",
-        "kind": null,
-        "sourcePage": null,
-        "creator": null,
-        "license": null,
+        "status": "candidate",
+        "kind": "real",
+        "sourcePage": "https://www.pexels.com/photo/faceless-woman-with-delicious-baked-apples-in-house-6210973/",
+        "creator": "Tim Douglas",
+        "license": "Pexels License (free use; attribution not required)",
         "assetPath": null,
-        "visualReview": false,
-        "rightsReview": false,
-        "connected": false
+        "visualReview": true,
+        "rightsReview": true,
+        "connected": false,
+        "candidateImageUrl": "https://images.pexels.com/photos/6210973/pexels-photo-6210973.jpeg?cs=srgb&dl=pexels-tim-douglas-6210973.jpg&fm=jpg",
+        "reviewNote": "Запечённые яблоки с орехами и сухофруктами; очень близко к рецепту. В кадре только руки и корпус человека."
       },
       "editorialFlags": []
     },
@@ -919,15 +943,17 @@
       ],
       "currentPhotoId": "photo-1532550907401-a500c9a57435",
       "photo": {
-        "status": "not_started",
-        "kind": null,
-        "sourcePage": null,
-        "creator": null,
-        "license": null,
+        "status": "candidate_needs_review",
+        "kind": "real",
+        "sourcePage": "https://www.pexels.com/photo/a-delicious-roasted-chicken-with-lemon-slices-6896080/",
+        "creator": "Eiliv Aceron",
+        "license": "Pexels License (free use; attribution not required)",
         "assetPath": null,
-        "visualReview": false,
-        "rightsReview": false,
-        "connected": false
+        "visualReview": true,
+        "rightsReview": true,
+        "connected": false,
+        "candidateImageUrl": "https://images.pexels.com/photos/6896080/pexels-photo-6896080.jpeg?cs=srgb&dl=pexels-eiliv-aceron-29416110-6896080.jpg&fm=jpg",
+        "reviewNote": "Запечённая курица с лимоном и зеленью; на фото грудка, а в рецепте бёдра. Кандидат."
       },
       "editorialFlags": []
     },
@@ -1052,15 +1078,17 @@
       ],
       "currentPhotoId": "photo-1512621776951-a57141f2eefd",
       "photo": {
-        "status": "not_started",
-        "kind": null,
-        "sourcePage": null,
-        "creator": null,
-        "license": null,
+        "status": "candidate",
+        "kind": "real",
+        "sourcePage": "https://www.pexels.com/photo/top-view-of-a-salad-on-white-plate-14016727/",
+        "creator": "Christina Petsos",
+        "license": "Pexels License (free use; attribution not required)",
         "assetPath": null,
-        "visualReview": false,
-        "rightsReview": false,
-        "connected": false
+        "visualReview": true,
+        "rightsReview": true,
+        "connected": false,
+        "candidateImageUrl": "https://images.pexels.com/photos/14016727/pexels-photo-14016727.jpeg?cs=srgb&dl=pexels-christina-petsos-200616875-14016727.jpg&fm=jpg",
+        "reviewNote": "Фета, томаты, огурец, оливки; точное совпадение."
       },
       "editorialFlags": []
     },
@@ -1126,15 +1154,17 @@
       ],
       "currentPhotoId": "photo-1512621776951-a57141f2eefd",
       "photo": {
-        "status": "not_started",
-        "kind": null,
-        "sourcePage": null,
-        "creator": null,
-        "license": null,
+        "status": "candidate",
+        "kind": "real",
+        "sourcePage": "https://www.pexels.com/photo/food-love-tea-meat-7624858/",
+        "creator": "Daniel Dan",
+        "license": "Pexels License (free use; attribution not required)",
         "assetPath": null,
-        "visualReview": false,
-        "rightsReview": false,
-        "connected": false
+        "visualReview": true,
+        "rightsReview": true,
+        "connected": false,
+        "candidateImageUrl": "https://images.pexels.com/photos/7624858/pexels-photo-7624858.jpeg?cs=srgb&dl=pexels-daniel-dan-47825192-7624858.jpg&fm=jpg",
+        "reviewNote": "Булгур, томаты и зелень; хорошее совпадение с табуле."
       },
       "editorialFlags": []
     },
@@ -1264,15 +1294,17 @@
       ],
       "currentPhotoId": "photo-1528207776546-365bb710ee93",
       "photo": {
-        "status": "not_started",
-        "kind": null,
-        "sourcePage": null,
-        "creator": null,
-        "license": null,
+        "status": "candidate",
+        "kind": "real",
+        "sourcePage": "https://www.pexels.com/photo/close-up-shot-of-syrniki-10254478/",
+        "creator": "Yulia Ilina",
+        "license": "Pexels License (free use; attribution not required)",
         "assetPath": null,
-        "visualReview": false,
-        "rightsReview": false,
-        "connected": false
+        "visualReview": true,
+        "rightsReview": true,
+        "connected": false,
+        "candidateImageUrl": "https://images.pexels.com/photos/10254478/pexels-photo-10254478.jpeg?cs=srgb&dl=pexels-yuuilina-10254478.jpg&fm=jpg",
+        "reviewNote": "Сырники со сметаной и ягодами; лимонная цедра не видна, но блюдо совпадает."
       },
       "editorialFlags": []
     },
@@ -2946,5 +2978,18 @@
       ],
       "variationGroup": "braised-beef"
     }
-  ]
+  ],
+  "candidateSummary": {
+    "candidatesFound": 16,
+    "visuallyInspected": 16,
+    "licensePolicyReviewed": true,
+    "notYetConnected": 16,
+    "unresolvedFirst20Positions": [
+      6,
+      8,
+      16,
+      19
+    ],
+    "note": "Candidates are not approved production assets until crop/visual fit and page integration are checked."
+  }
 }
