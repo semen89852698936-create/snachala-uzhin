@@ -1,0 +1,33 @@
+name: Build photo research library
+on:
+  push:
+    branches:
+      - fix/our-evening-progress-20261031
+    paths:
+      - photo-library/build_registry.py
+      - .github/workflows/photo-library.yml
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: fix/our-evening-progress-20261031
+          persist-credentials: true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Validate and generate 1001-row photo registry
+        run: python3 photo-library/build_registry.py
+      - name: Commit generated registry to review branch only
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add photo-library/recipes-photo-registry.csv photo-library/summary.json
+          if ! git diff --cached --quiet; then
+            git commit -m "Generate structured photo library from 1001 recipes"
+            git push
+          fi
