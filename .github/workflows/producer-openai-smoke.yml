@@ -1,0 +1,25 @@
+name: Producer OpenAI API Smoke Test
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - fix/our-evening-progress-20261031
+    paths:
+      - 'producer/api_smoke_test.py'
+      - '.github/workflows/producer-openai-smoke.yml'
+permissions:
+  contents: read
+concurrency:
+  group: producer-openai-smoke
+  cancel-in-progress: false
+jobs:
+  api-smoke:
+    runs-on: ubuntu-latest
+    timeout-minutes: 3
+    steps:
+      - uses: actions/checkout@v4
+      - name: Verify OpenAI Responses API connection
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          OPENAI_MODEL: gpt-6.1-sol
+        run: python3 producer/api_smoke_test.py

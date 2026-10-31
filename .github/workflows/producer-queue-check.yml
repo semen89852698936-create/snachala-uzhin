@@ -1,0 +1,29 @@
+name: Producer Queue Test
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'producer/**'
+      - '.github/workflows/producer-queue-check.yml'
+  pull_request:
+    paths:
+      - 'producer/**'
+      - 'photo-library/summary.json'
+      - 'photo-library/curated-images.json'
+permissions:
+  contents: read
+jobs:
+  inspect:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - name: Verify task queue and execute safe audits
+        run: python3 -m unittest discover -s producer -p 'test_*.py' -v
+      - name: Upload execution report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: producer-queue-report
+          path: producer/runner-report.json
+          if-no-files-found: ignore
