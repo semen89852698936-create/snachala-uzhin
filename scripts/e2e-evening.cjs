@@ -7,6 +7,8 @@ const assert = require('node:assert/strict');
     for(const viewport of [{width:1440,height:900},{width:390,height:844}]) {
       const page=await browser.newPage({viewport,deviceScaleFactor:1});
       const errors=[];
+      // Spotify iframe is a third-party React app. Check our page without its hydration noise.
+      await page.route('**/open.spotify.com/**', route=>route.abort());
       page.on('pageerror',e=>errors.push(e.message));
       await page.goto('http://127.0.0.1:8765/',{waitUntil:'domcontentloaded'});
       await page.waitForTimeout(500);
@@ -39,8 +41,8 @@ const assert = require('node:assert/strict');
         const overflow = await page.evaluate(()=>document.documentElement.scrollWidth-document.documentElement.clientWidth);
         assert.ok(overflow <= 2,'Mobile horizontal overflow: '+overflow);
       }
-      assert.deepEqual(errors,[],'No browser JavaScript runtime exceptions: '+errors.join(', '));
       await page.screenshot({path:'/tmp/evening-'+viewport.width+'.png',fullPage:false});
+      assert.deepEqual(errors,[],'No browser JavaScript runtime exceptions: '+errors.join(', '));
       await page.close();
       console.log('PASS layout + navigation + recipe selection',viewport.width);
     }
