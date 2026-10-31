@@ -137,7 +137,11 @@ $('swapRoles').addEventListener('click',function(){swapped=!swapped;renderStep()
 $('nextStep').addEventListener('click',function(){step=(step+1)%steps.length;renderStep()});
 $('resetSteps').addEventListener('click',function(){step=0;renderStep()});
 $('startPlan').addEventListener('click',function(){$('together').scrollIntoView({behavior:'smooth'});showToast('Ваш сценарий готов. Начинаем с первого шага.')});
-$('copyShopping').addEventListener('click',function(){var list=menus[mood][time].map(function(d){return '• '+d[1]+' — ингредиенты по рецепту'}).join('\n');var text='Список покупок для нашего вечера:\n'+list+'\n\nСначала ужин. Остальное — без рецепта.';if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(text).then(function(){showToast('Список покупок скопирован.')}).catch(function(){showToast('Не удалось скопировать список.')})}else{showToast('Список покупок подготовлен.') }});
+$('copyShopping').addEventListener('click',function(){var ingredients={'Греческий салат':['Помидоры','Огурцы','Фета','Маслины','Красный лук','Оливковое масло'],'Лосось с лимоном':['Филе лосося','Лимон','Чеснок','Оливковое масло','Зелень'],'Запечённые яблоки':['Яблоки','Мёд','Корица','Орехи'],'Табуле с зеленью':['Булгур','Петрушка','Мята','Помидоры','Лимон'],'Шоколадный торт':['Тёмный шоколад','Сливочное масло','Яйца','Сахар','Мука'],'Томатный суп':['Томаты','Лук','Чеснок','Овощной бульон','Сливки'],'Стейк с перцем':['Говяжий стейк','Чёрный перец','Сливочное масло','Чеснок','Тимьян'],'Паста с томатами':['Паста','Томаты','Чеснок','Базилик','Пармезан'],'Нут с травами':['Нут','Лимон','Чеснок','Петрушка','Оливковое масло'],'Курица с лимоном':['Курица','Лимон','Чеснок','Розмарин','Оливковое масло']};
+var items=[];
+menus[mood][time].forEach(function(d){(ingredients[d[1]]||[]).forEach(function(x){if(items.indexOf(x)<0)items.push(x)})});
+var text='Список продуктов для нашего вечера:\n'+items.map(function(x){return '• '+x}).join('\n')+'\n\nСначала ужин. Остальное - без рецепта.';
+if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(text).then(function(){showToast('Список продуктов скопирован.')}).catch(function(){showToast('Не удалось скопировать список.')})}else{showToast('Список продуктов подготовлен.')}});
 function inviteText(){
  var who=$('partner').value.trim()||'любимый человек',date=$('date').value,timeValue=$('time').value||'19:30';
  var dateText=date?new Date(date+'T12:00:00').toLocaleDateString('ru-RU',{day:'numeric',month:'long'}):'сегодня';
