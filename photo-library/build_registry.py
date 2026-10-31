@@ -36,6 +36,12 @@ for i, recipe in enumerate(recipes, 1):
     # Plan only: neither source is an approved image.
     # Query is traceable to the real recipe title and its primary ingredients.
     q = quote(title)
+    visible = ingredient_names or "ингредиенты согласно рецепту"
+    ai_brief = (f"Фотореалистичная предметная фуд-фотография блюда «{title}». "
+                f"Проверить соответствие ингредиентам: {visible}. "
+                "Тёплый естественный боковой свет, натуральная сервировка, ракурс 3/4, "
+                "без текста, упаковок, водяных знаков и дополнительных ингредиентов. "
+                "Перед генерацией проверить способ приготовления и вид блюда по шагам рецепта.")
     rows.append({
         "recipe_id": rid, "title": title, "category": cat,
         "minutes": recipe.get("minutes", ""),
@@ -45,7 +51,7 @@ for i, recipe in enumerate(recipes, 1):
         "source_type": "pending",
         "candidate_image_url": "",
         "photo_author": "", "license": "", "license_evidence_url": "",
-        "ai_prompt": "",
+        "ai_prompt": ai_brief,
         "visual_verified": "no",
         "rights_verified": "no",
         "publication_status": "not_approved",
@@ -64,7 +70,7 @@ summary = {
     "categories": dict(sorted(counts.items())),
     "unique_current_photo_ids": len(set(str(r["current_photo_id"]) for r in rows)),
     "approved_new_images": 0,
-    "status": "photo_research_queue_not_approved",
+    "status": "research_queue_and_ai_briefs_ready_not_approved",
     "warning": "Search URLs are not actual photos; verify visual match and rights before publishing."
 }
 (OUT / "summary.json").write_text(json.dumps(summary, ensure_ascii=False, indent=2)+"\n", encoding="utf-8")
