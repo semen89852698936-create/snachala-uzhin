@@ -25,7 +25,7 @@ class PhotoWorkerTests(unittest.TestCase):
         self.manifest.write_text(json.dumps({"recipes": recipes()}, ensure_ascii=False), encoding="utf-8")
         self.output = self.base / "photo-library"
         self.allowlist = self.base / "ai-allowlist.json"
-        self.allowlist.write_text(json.dumps({"recipe_ids": ["recipe-0001", "recipe-0002", "recipe-0003"]}))
+        self.allowlist.write_text(json.dumps({"recipe_ids": ["recipe-0001", "recipe-0002", "recipe-0003"], "approved_for_ai_generation": True}))
 
     def args(self, **kwargs):
         args = dict(manifest=str(self.manifest), output=str(self.output),
