@@ -1,0 +1,11 @@
+{
+  "schema_version": 1,
+  "total": 1001,
+  "generated": 0,
+  "approved": 0,
+  "pending": 1001,
+  "review_needed": 0,
+  "last_run": null,
+  "status": "awaiting_setup",
+  "notes": "Candidate URLs do not count as generated files. Generated images are always pending human review."
+}

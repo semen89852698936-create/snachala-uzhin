@@ -1,0 +1,66 @@
+name: СНАЧАЛА УЖИН - photo pipeline
+
+on:
+  schedule:
+    - cron: '17 * * * *'  # UTC, hourly; GitHub may delay or skip some runs
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: snachala-uzhin-photo-pipeline
+  cancel-in-progress: false
+
+jobs:
+  generate:
+    # Two explicit safeguards. This workflow never deploys to Vercel.
+    if: ${{ vars.PHOTO_PIPELINE_ENABLED == 'true' && vars.PHOTO_COST_APPROVED == 'true' }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 55
+    steps:
+      - name: Checkout reviewed source
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+        with:
+          fetch-depth: 0
+          persist-credentials: true # required only for committing generated media branch
+
+      - name: Test the worker without an API key
+        run: python3 -m unittest discover -s photo-pipeline -p 'test_*.py' -v
+
+      - name: Prepare the trusted worker and 1001-recipe manifest
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p /tmp/snachala-photo-job
+          cp photo-pipeline/worker.py /tmp/snachala-photo-job/worker.py
+          cp photo-library/recipes.json /tmp/snachala-photo-job/recipes.json
+
+      - name: Generate capped batch, checkpoint to separate branch
+        shell: bash
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          MAX_PER_RUN: ${{ vars.PHOTO_MAX_PER_RUN || '10' }}
+          MAX_TOTAL: ${{ vars.PHOTO_MAX_TOTAL || '50' }}
+        run: |
+          set -euo pipefail
+          test -n "$OPENAI_API_KEY" || { echo 'Missing OPENAI_API_KEY secret'; exit 1; }
+          if git ls-remote --exit-code --heads origin photo-library/generated >/dev/null; then
+            git fetch origin photo-library/generated:refs/remotes/origin/photo-library/generated
+            git switch -c photo-library/generated origin/photo-library/generated
+          else
+            git switch -c photo-library/generated
+          fi
+          python3 /tmp/snachala-photo-job/worker.py \
+            --manifest /tmp/snachala-photo-job/recipes.json \
+            --output photo-library --max-per-run "$MAX_PER_RUN" --max-total "$MAX_TOTAL" --execute
+          git add -A photo-library/generated photo-library/records photo-library/summary.json
+          if git diff --cached --quiet; then
+            echo 'No changes to commit'
+          else
+            git -c user.name='photo-pipeline[bot]' \
+                -c user.email='41898282+github-actions[bot]@users.noreply.github.com' \
+                commit -m 'Checkpoint generated photos pending human review'
+            git push origin HEAD:refs/heads/photo-library/generated
+          fi
+          echo 'Generated images require visual review; never publish automatically.'

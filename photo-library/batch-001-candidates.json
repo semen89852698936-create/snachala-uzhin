@@ -1,0 +1,173 @@
+{
+  "batchId": "batch-001",
+  "licensePolicy": {
+    "name": "Pexels License",
+    "url": "https://www.pexels.com/license/",
+    "checked": true,
+    "notes": "Free website/app use; attribution not required. Do not imply endorsement, sell unaltered copies, or redistribute as a stock library."
+  },
+  "candidates": [
+    {
+      "n": 1,
+      "id": "lemon-spinach-pasta",
+      "title": "Паста с лимоном и шпинатом",
+      "creator": "David Waschbüsch",
+      "page": "https://www.pexels.com/photo/food-on-white-plate-10350292/",
+      "image": "https://images.pexels.com/photos/10350292/pexels-photo-10350292.jpeg?cs=srgb&dl=pexels-david-waschbusch-959602-10350292.jpg&fm=jpg",
+      "note": "Видны паста, шпинат и пармезан; лимон не виден, соус выглядит сливочным. Кандидат, нужна редакционная проверка соответствия рецепту.",
+      "status": "candidate_needs_review"
+    },
+    {
+      "n": 2,
+      "id": "tomato-basil-pasta",
+      "title": "Паста с томатами и базиликом",
+      "creator": "one click",
+      "page": "https://www.pexels.com/photo/delicious-penne-pasta-with-tomato-sauce-and-basil-34890732/",
+      "image": "https://images.pexels.com/photos/34890732/pexels-photo-34890732.jpeg?cs=srgb&dl=pexels-rafaellenss-34890732.jpg&fm=jpg",
+      "note": "Томатный соус и базилик соответствуют; на фото пенне вместо спагетти. Кандидат.",
+      "status": "candidate_needs_review"
+    },
+    {
+      "n": 3,
+      "id": "pepper-steak",
+      "title": "Стейк с чесночным маслом",
+      "creator": "Mohamed Olwy",
+      "page": "https://www.pexels.com/photo/grilled-steak-with-rosemary-and-butter-sauce-36617211/",
+      "image": "https://images.pexels.com/photos/36617211/pexels-photo-36617211.jpeg?cs=srgb&dl=pexels-mohamed9380-36617211.jpg&fm=jpg",
+      "note": "Стейк, розмарин, чеснок и масляный соус визуально соответствуют.",
+      "status": "candidate"
+    },
+    {
+      "n": 4,
+      "id": "meatballs",
+      "title": "Тефтели в томатном соусе",
+      "creator": "FOX",
+      "page": "https://www.pexels.com/photo/delicious-meatballs-on-rice-with-tomato-sauce-38934831/",
+      "image": "https://images.pexels.com/photos/38934831/pexels-photo-38934831.jpeg?cs=srgb&dl=pexels-fox-58267-38934831.jpg&fm=jpg",
+      "note": "Тефтели в томатном соусе; подача с рисом допустима по описанию рецепта.",
+      "status": "candidate"
+    },
+    {
+      "n": 5,
+      "id": "salmon-lemon",
+      "title": "Лосось с лимоном и зеленью",
+      "creator": "Rodrigo Ortega",
+      "page": "https://www.pexels.com/photo/gourmet-salmon-fillet-with-herbs-and-lemon-31909815/",
+      "image": "https://images.pexels.com/photos/31909815/pexels-photo-31909815.jpeg?cs=srgb&dl=pexels-rodrigo-ortega-2044210904-31909815.jpg&fm=jpg",
+      "note": "Готовый лосось с зеленью и лимоном; хорошее совпадение по блюду.",
+      "status": "candidate"
+    },
+    {
+      "n": 7,
+      "id": "ratatouille",
+      "title": "Рататуй из сезонных овощей",
+      "creator": "Merve Gülhan",
+      "page": "https://www.pexels.com/photo/colorful-ratatouille-in-rustic-baking-dish-36863876/",
+      "image": "https://images.pexels.com/photos/36863876/pexels-photo-36863876.jpeg?cs=srgb&dl=pexels-merve-gulhan-2150623335-36863876.jpg&fm=jpg",
+      "note": "Слои баклажана, кабачка и томатов в запечённом виде; точное соответствие.",
+      "status": "candidate"
+    },
+    {
+      "n": 9,
+      "id": "focaccia",
+      "title": "Фокачча с розмарином",
+      "creator": "Natalia Olivera",
+      "page": "https://www.pexels.com/photo/close-up-of-freshly-baked-rosemary-focaccia-bread-30666813/",
+      "image": "https://images.pexels.com/photos/30666813/pexels-photo-30666813.jpeg?cs=srgb&dl=pexels-nataliaolivera-30666813.jpg&fm=jpg",
+      "note": "Фокачча с розмарином, хорошо видна структура хлеба; вертикальный исходник, проверить кадрирование карточки.",
+      "status": "candidate_needs_review"
+    },
+    {
+      "n": 10,
+      "id": "pancakes",
+      "title": "Пышные оладьи на кефире",
+      "creator": "Anna Pyshniuk",
+      "page": "https://www.pexels.com/photo/mini-pancakes-on-a-plate-7855285/",
+      "image": "https://images.pexels.com/photos/7855285/pexels-photo-7855285.jpeg?cs=srgb&dl=pexels-anna-pyshniuk-2453945-7855285.jpg&fm=jpg",
+      "note": "Мини-оладьи с ягодным соусом и сметаной; близкая подача, но кефир в кадре не определяется.",
+      "status": "candidate_needs_review"
+    },
+    {
+      "n": 11,
+      "id": "tomato-soup",
+      "title": "Томатный суп с базиликом",
+      "creator": "Valeria Boltneva",
+      "page": "https://www.pexels.com/photo/tomato-soup-on-a-table-27098511/",
+      "image": "https://images.pexels.com/photos/27098511/pexels-photo-27098511.jpeg?cs=srgb&dl=pexels-valeriya-27098511.jpg&fm=jpg",
+      "note": "Томатный суп с видимым базиликом; хорошее совпадение.",
+      "status": "candidate"
+    },
+    {
+      "n": 12,
+      "id": "ramen",
+      "title": "Быстрый рамен с яйцом",
+      "creator": "Sebastian Lang",
+      "page": "https://www.pexels.com/photo/delicious-ramen-bowl-with-toppings-36104807/",
+      "image": "https://images.pexels.com/photos/36104807/pexels-photo-36104807.jpeg?cs=srgb&dl=pexels-sebastian-lang-2159451845-36104807.jpg&fm=jpg",
+      "note": "Рамен с яйцом, грибами и зеленью; точное совпадение по основным компонентам.",
+      "status": "candidate"
+    },
+    {
+      "n": 13,
+      "id": "chocolate-cake",
+      "title": "Шоколадный брауни",
+      "creator": "Giovanna Kamimura",
+      "page": "https://www.pexels.com/photo/delicious-chocolate-brownies-on-white-plate-30353753/",
+      "image": "https://images.pexels.com/photos/30353753/pexels-photo-30353753.jpeg?cs=srgb&dl=pexels-giovanna-kamimura-399616174-30353753.jpg&fm=jpg",
+      "note": "Шоколадные брауни на тарелке; хорошее совпадение.",
+      "status": "candidate"
+    },
+    {
+      "n": 14,
+      "id": "baked-apples",
+      "title": "Запечённые яблоки с корицей",
+      "creator": "Tim Douglas",
+      "page": "https://www.pexels.com/photo/faceless-woman-with-delicious-baked-apples-in-house-6210973/",
+      "image": "https://images.pexels.com/photos/6210973/pexels-photo-6210973.jpeg?cs=srgb&dl=pexels-tim-douglas-6210973.jpg&fm=jpg",
+      "note": "Запечённые яблоки с орехами и сухофруктами; очень близко к рецепту. В кадре только руки и корпус человека.",
+      "status": "candidate"
+    },
+    {
+      "n": 15,
+      "id": "chicken-lemon",
+      "title": "Курица с лимоном и травами",
+      "creator": "Eiliv Aceron",
+      "page": "https://www.pexels.com/photo/a-delicious-roasted-chicken-with-lemon-slices-6896080/",
+      "image": "https://images.pexels.com/photos/6896080/pexels-photo-6896080.jpeg?cs=srgb&dl=pexels-eiliv-aceron-29416110-6896080.jpg&fm=jpg",
+      "note": "Запечённая курица с лимоном и зеленью; на фото грудка, а в рецепте бёдра. Кандидат.",
+      "status": "candidate_needs_review"
+    },
+    {
+      "n": 17,
+      "id": "greek-salad",
+      "title": "Греческий салат",
+      "creator": "Christina Petsos",
+      "page": "https://www.pexels.com/photo/top-view-of-a-salad-on-white-plate-14016727/",
+      "image": "https://images.pexels.com/photos/14016727/pexels-photo-14016727.jpeg?cs=srgb&dl=pexels-christina-petsos-200616875-14016727.jpg&fm=jpg",
+      "note": "Фета, томаты, огурец, оливки; точное совпадение.",
+      "status": "candidate"
+    },
+    {
+      "n": 18,
+      "id": "tabbouleh",
+      "title": "Табуле с петрушкой и булгуром",
+      "creator": "Daniel Dan",
+      "page": "https://www.pexels.com/photo/food-love-tea-meat-7624858/",
+      "image": "https://images.pexels.com/photos/7624858/pexels-photo-7624858.jpeg?cs=srgb&dl=pexels-daniel-dan-47825192-7624858.jpg&fm=jpg",
+      "note": "Булгур, томаты и зелень; хорошее совпадение с табуле.",
+      "status": "candidate"
+    },
+    {
+      "n": 20,
+      "id": "syrniki",
+      "title": "Домашние сырники с лимонной цедрой",
+      "creator": "Yulia Ilina",
+      "page": "https://www.pexels.com/photo/close-up-shot-of-syrniki-10254478/",
+      "image": "https://images.pexels.com/photos/10254478/pexels-photo-10254478.jpeg?cs=srgb&dl=pexels-yuuilina-10254478.jpg&fm=jpg",
+      "note": "Сырники со сметаной и ягодами; лимонная цедра не видна, но блюдо совпадает.",
+      "status": "candidate"
+    }
+  ],
+  "nextStep": "Resolve the four missing standalone dishes, then source or generate distinct images for the 30 meat variations. Test card crops before approval.",
+  "productionStatus": "No images have been connected to the live site. No production deployment made."
+}

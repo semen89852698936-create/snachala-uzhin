@@ -1,0 +1,2995 @@
+{
+  "project": "СНАЧАЛА УЖИН",
+  "batchId": "batch-001",
+  "createdAt": "2026-10-31",
+  "source": "https://snachala-uzhin-preview.vercel.app/#catalog",
+  "sourceRecipeCount": 1001,
+  "batchSize": 50,
+  "selection": "First 50 recipes in the published catalogue order",
+  "standards": {
+    "oneDistinctImagePerRecipe": true,
+    "preferredSources": [
+      "Pexels",
+      "Unsplash",
+      "Wikimedia Commons"
+    ],
+    "useAiWhen": "No suitable real image is available or exact variant-specific plating is needed",
+    "requireSourcePageAndCreator": true,
+    "requireLicenseReview": true,
+    "requireVisualReview": true,
+    "noProductionDeploymentWithoutExplicitApproval": true
+  },
+  "summary": {
+    "first20": "20 initial standalone recipes across pasta, meat, fish, vegetables, pastry, soup, dessert, poultry, salads and breakfast",
+    "remaining30": "30 related meat variations in four recipe families; each recipe still receives its own distinct visual",
+    "editorialReviewNeeded": [
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50
+    ]
+  },
+  "recipes": [
+    {
+      "batchPosition": 1,
+      "recipeId": "lemon-spinach-pasta",
+      "title": "Паста с лимоном и шпинатом",
+      "category": "pasta",
+      "cuisine": "Италия",
+      "minutes": 20,
+      "description": "Сливочно-лимонный соус без сливок, нежный шпинат и пармезан. Ужин, который хочется повторять.",
+      "ingredients": [
+        {
+          "name": "Спагетти",
+          "amount": 200,
+          "unit": "г"
+        },
+        {
+          "name": "Шпинат свежий",
+          "amount": 120,
+          "unit": "г"
+        },
+        {
+          "name": "Чеснок",
+          "amount": 2,
+          "unit": "зубчика"
+        },
+        {
+          "name": "Лимон",
+          "amount": 0.5,
+          "unit": "шт."
+        },
+        {
+          "name": "Пармезан",
+          "amount": 40,
+          "unit": "г"
+        },
+        {
+          "name": "Масло сливочное",
+          "amount": 25,
+          "unit": "г"
+        },
+        {
+          "name": "Масло оливковое",
+          "amount": 1,
+          "unit": "ст. л."
+        },
+        {
+          "name": "Вода от варки пасты",
+          "amount": 100,
+          "unit": "мл"
+        },
+        {
+          "name": "Соль",
+          "amount": 0,
+          "unit": "по вкусу"
+        },
+        {
+          "name": "Перец чёрный",
+          "amount": 0,
+          "unit": "по вкусу"
+        }
+      ],
+      "currentPhotoId": "photo-1473093295043-cdd812d0e601",
+      "photo": {
+        "status": "candidate_needs_review",
+        "kind": "real",
+        "sourcePage": "https://www.pexels.com/photo/food-on-white-plate-10350292/",
+        "creator": "David Waschbüsch",
+        "license": "Pexels License (free use; attribution not required)",
+        "assetPath": null,
+        "visualReview": true,
+        "rightsReview": true,
+        "connected": false,
+        "candidateImageUrl": "https://images.pexels.com/photos/10350292/pexels-photo-10350292.jpeg?cs=srgb&dl=pexels-david-waschbusch-959602-10350292.jpg&fm=jpg",
+        "reviewNote": "Видны паста, шпинат и пармезан; лимон не виден, соус выглядит сливочным. Кандидат, нужна редакционная проверка соответствия рецепту."
+      },
+      "editorialFlags": []
+    },
+    {
+      "batchPosition": 2,
+      "recipeId": "tomato-basil-pasta",
+      "title": "Паста с томатами и базиликом",
+      "category": "pasta",
+      "cuisine": "Италия",
+      "minutes": 25,
+      "description": "Свежие помидоры, ароматный чеснок и базилик. Вкус лета за полчаса.",
+      "ingredients": [
+        {
+          "name": "Спагетти",
+          "amount": 200,
+          "unit": "г"
+        },
+        {
+          "name": "Помидоры черри",
+          "amount": 300,
+          "unit": "г"
+        },
+        {
+          "name": "Чеснок",
+          "amount": 2,
+          "unit": "зубчика"
+        },
+        {
+          "name": "Базилик",
+          "amount": 15,
+          "unit": "г"
+        },
+        {
+          "name": "Масло оливковое",
+          "amount": 2,
+          "unit": "ст. л."
+        },
+        {
+          "name": "Пармезан",
+          "amount": 30,
+          "unit": "г"
+        },
+        {
+          "name": "Соль",
+          "amount": 0,
+          "unit": "по вкусу"
+        }
+      ],
+      "currentPhotoId": "photo-1597131628347-c769fc631754",
+      "photo": {
+        "status": "candidate_needs_review",
+        "kind": "real",
+        "sourcePage": "https://www.pexels.com/photo/delicious-penne-pasta-with-tomato-sauce-and-basil-34890732/",
+        "creator": "one click",
+        "license": "Pexels License (free use; attribution not required)",
+        "assetPath": null,
+        "visualReview": true,
+        "rightsReview": true,
+        "connected": false,
+        "candidateImageUrl": "https://images.pexels.com/photos/34890732/pexels-photo-34890732.jpeg?cs=srgb&dl=pexels-rafaellenss-34890732.jpg&fm=jpg",
+        "reviewNote": "Томатный соус и базилик соответствуют; на фото пенне вместо спагетти. Кандидат."
+      },
+      "editorialFlags": []
+    },
+    {
+      "batchPosition": 3,
+      "recipeId": "pepper-steak",
+      "title": "Стейк с чесночным маслом",
+      "category": "meat",
+      "cuisine": "США",
+      "minutes": 25,
+      "description": "Хрустящая корочка, нежная середина и ароматное масло с травами.",
+      "ingredients": [
+        {
+          "name": "Стейк говяжий",
+          "amount": 400,
+          "unit": "г"
+        },
+        {
+          "name": "Масло сливочное",
+          "amount": 35,
+          "unit": "г"
+        },
+        {
+          "name": "Чеснок",
+          "amount": 2,
+          "unit": "зубчика"
+        },
+        {
+          "name": "Розмарин",
+          "amount": 2,
+          "unit": "веточки"
+        },
+        {
+          "name": "Масло растительное",
+          "amount": 1,
+          "unit": "ст. л."
+        },
+        {
+          "name": "Соль",
+          "amount": 0,
+          "unit": "по вкусу"
+        },
+        {
+          "name": "Перец чёрный",
+          "amount": 0,
+          "unit": "по вкусу"
+        }
+      ],
+      "currentPhotoId": "photo-1544025162-d76694265947",
+      "photo": {
+        "status": "candidate",
+        "kind": "real",
+        "sourcePage": "https://www.pexels.com/photo/grilled-steak-with-rosemary-and-butter-sauce-36617211/",
+        "creator": "Mohamed Olwy",
+        "license": "Pexels License (free use; attribution not required)",
+        "assetPath": null,
+        "visualReview": true,
+        "rightsReview": true,
+        "connected": false,
+        "candidateImageUrl": "https://images.pexels.com/photos/36617211/pexels-photo-36617211.jpeg?cs=srgb&dl=pexels-mohamed9380-36617211.jpg&fm=jpg",
+        "reviewNote": "Стейк, розмарин, чеснок и масляный соус визуально соответствуют."
+      },
+      "editorialFlags": []
+    },
+    {
+      "batchPosition": 4,
+      "recipeId": "meatballs",
+      "title": "Тефтели в томатном соусе",
+      "category": "meat",
+      "cuisine": "Средиземноморье",
+      "minutes": 40,
+      "description": "Сочные тефтели в густом соусе. Подойдут к рису или картофельному пюре.",
+      "ingredients": [
+        {
+          "name": "Фарш говяжий",
+          "amount": 500,
+          "unit": "г"
+        },
+        {
+          "name": "Лук",
+          "amount": 1,
+          "unit": "шт."
+        },
+        {
+          "name": "Яйцо",
+          "amount": 1,
+          "unit": "шт."
+        },
+        {
+          "name": "Сухари панировочные",
+          "amount": 50,
+          "unit": "г"
+        },
+        {
+          "name": "Томаты протёртые",
+          "amount": 500,
+          "unit": "г"
+        },
+        {
+          "name": "Чеснок",
+          "amount": 2,
+          "unit": "зубчика"
+        },
+        {
+          "name": "Масло оливковое",
+          "amount": 2,
+          "unit": "ст. л."
+        },
+        {
+          "name": "Соль",
+          "amount": 0,
+          "unit": "по вкусу"
+        }
+      ],
+      "currentPhotoId": "photo-1558030006-450675393462",
+      "photo": {
+        "status": "candidate",
+        "kind": "real",
+        "sourcePage": "https://www.pexels.com/photo/delicious-meatballs-on-rice-with-tomato-sauce-38934831/",
+        "creator": "FOX",
+        "license": "Pexels License (free use; attribution not required)",
+        "assetPath": null,
+        "visualReview": true,
+        "rightsReview": true,
+        "connected": false,
+        "candidateImageUrl": "https://images.pexels.com/photos/38934831/pexels-photo-38934831.jpeg?cs=srgb&dl=pexels-fox-58267-38934831.jpg&fm=jpg",
+        "reviewNote": "Тефтели в томатном соусе; подача с рисом допустима по описанию рецепта."
+      },
+      "editorialFlags": []
+    },
+    {
+      "batchPosition": 5,
+      "recipeId": "salmon-lemon",
+      "title": "Лосось с лимоном и зеленью",
+      "category": "fish",
+      "cuisine": "Скандинавия",
+      "minutes": 25,
+      "description": "Сочная рыба с хрустящими краями. Для ужина после рабочего дня.",
+      "ingredients": [
+        {
+          "name": "Филе лосося",
+          "amount": 350,
+          "unit": "г"
+        },
+        {
+          "name": "Лимон",
+          "amount": 0.5,
+          "unit": "шт."
+        },
+        {
+          "name": "Масло оливковое",
+          "amount": 1,
+          "unit": "ст. л."
+        },
+        {
+          "name": "Укроп",
+          "amount": 15,
+          "unit": "г"
+        },
+        {
+          "name": "Чеснок",
+          "amount": 1,
+          "unit": "зубчик"
+        },
+        {
+          "name": "Соль",
+          "amount": 0,
+          "unit": "по вкусу"
+        }
+      ],
+      "currentPhotoId": "photo-1578004969074-01bff101f85e",
+      "photo": {
+        "status": "candidate",
+        "kind": "real",
+        "sourcePage": "https://www.pexels.com/photo/gourmet-salmon-fillet-with-herbs-and-lemon-31909815/",
+        "creator": "Rodrigo Ortega",
+        "license": "Pexels License (free use; attribution not required)",
+        "assetPath": null,
+        "visualReview": true,
+        "rightsReview": true,
+        "connected": false,
+        "candidateImageUrl": "https://images.pexels.com/photos/31909815/pexels-photo-31909815.jpeg?cs=srgb&dl=pexels-rodrigo-ortega-2044210904-31909815.jpg&fm=jpg",
+        "reviewNote": "Готовый лосось с зеленью и лимоном; хорошее совпадение по блюду."
+      },
+      "editorialFlags": []
+    },
+    {
+      "batchPosition": 6,
+      "recipeId": "med-fish",
+      "title": "Белая рыба с томатами",
+      "category": "fish",
+      "cuisine": "Греция",
+      "minutes": 30,
+      "description": "Филе в ароматном соусе из томатов, оливок и орегано.",
+      "ingredients": [
+        {
+          "name": "Филе трески",
+          "amount": 350,
+          "unit": "г"
+        },
+        {
+          "name": "Помидоры",
+          "amount": 250,
+          "unit": "г"
+        },
+        {
+          "name": "Маслины без косточек",
+          "amount": 60,
+          "unit": "г"
+        },
+        {
+          "name": "Чеснок",
+          "amount": 2,
+          "unit": "зубчика"
+        },
+        {
+          "name": "Масло оливковое",
+          "amount": 2,
+          "unit": "ст. л."
+        },
+        {
+          "name": "Орегано сушёный",
+          "amount": 1,
+          "unit": "ч. л."
+        },
+        {
+          "name": "Соль",
+          "amount": 0,
+          "unit": "по вкусу"
+        }
+      ],
+      "currentPhotoId": "photo-1519708227418-c8fd9a32b7a2",
+      "photo": {
+        "status": "not_started",
+        "kind": null,
+        "sourcePage": null,
+        "creator": null,
+        "license": null,
+        "assetPath": null,
+        "visualReview": false,
+        "rightsReview": false,
+        "connected": false
+      },
+      "editorialFlags": []
+    },
+    {
+      "batchPosition": 7,
+      "recipeId": "ratatouille",
+      "title": "Рататуй из сезонных овощей",
+      "category": "vegetables",
+      "cuisine": "Франция",
+      "minutes": 45,
+      "description": "Баклажаны, кабачки и помидоры становятся ароматным овощным ужином.",
+      "ingredients": [
+        {
+          "name": "Баклажан",
+          "amount": 1,
+          "unit": "шт."
+        },
+        {
+          "name": "Кабачок",
+          "amount": 1,
+          "unit": "шт."
+        },
+        {
+          "name": "Помидоры",
+          "amount": 400,
+          "unit": "г"
+        },
+        {
+          "name": "Лук",
+          "amount": 1,
+          "unit": "шт."
+        },
+        {
+          "name": "Перец сладкий",
+          "amount": 1,
+          "unit": "шт."
+        },
+        {
+          "name": "Чеснок",
+          "amount": 2,
+          "unit": "зубчика"
+        },
+        {
+          "name": "Масло оливковое",
+          "amount": 3,
+          "unit": "ст. л."
+        },
+        {
+          "name": "Тимьян",
+          "amount": 1,
+          "unit": "ч. л."
+        }
+      ],
+      "currentPhotoId": "photo-1547592180-85f173990554",
+      "photo": {
+        "status": "candidate",
+        "kind": "real",
+        "sourcePage": "https://www.pexels.com/photo/colorful-ratatouille-in-rustic-baking-dish-36863876/",
+        "creator": "Merve Gülhan",
+        "license": "Pexels License (free use; attribution not required)",
+        "assetPath": null,
+        "visualReview": true,
+        "rightsReview": true,
+        "connected": false,
+        "candidateImageUrl": "https://images.pexels.com/photos/36863876/pexels-photo-36863876.jpeg?cs=srgb&dl=pexels-merve-gulhan-2150623335-36863876.jpg&fm=jpg",
+        "reviewNote": "Слои баклажана, кабачка и томатов в запечённом виде; точное соответствие."
+      },
+      "editorialFlags": []
+    },
+    {
+      "batchPosition": 8,
+      "recipeId": "chickpeas",
+      "title": "Нут со шпинатом и паприкой",
+      "category": "vegetables",
+      "cuisine": "Испания",
+      "minutes": 25,
+      "description": "Сытное растительное блюдо из доступных продуктов.",
+      "ingredients": [
+        {
+          "name": "Нут консервированный, без жидкости",
+          "amount": 300,
+          "unit": "г"
+        },
+        {
+          "name": "Шпинат",
+          "amount": 120,
+          "unit": "г"
+        },
+        {
+          "name": "Томаты протёртые",
+          "amount": 200,
+          "unit": "г"
+        },
+        {
+          "name": "Чеснок",
+          "amount": 2,
+          "unit": "зубчика"
+        },
+        {
+          "name": "Паприка копчёная",
+          "amount": 1,
+          "unit": "ч. л."
+        },
+        {
+          "name": "Масло оливковое",
+          "amount": 1,
+          "unit": "ст. л."
+        }
+      ],
+      "currentPhotoId": "photo-1490645935967-10de6ba17061",
+      "photo": {
+        "status": "not_started",
+        "kind": null,
+        "sourcePage": null,
+        "creator": null,
+        "license": null,
+        "assetPath": null,
+        "visualReview": false,
+        "rightsReview": false,
+        "connected": false
+      },
+      "editorialFlags": []
+    },
+    {
+      "batchPosition": 9,
+      "recipeId": "focaccia",
+      "title": "Фокачча с розмарином",
+      "category": "pastry",
+      "cuisine": "Италия",
+      "minutes": 100,
+      "description": "Воздушный хлеб с хрустящей корочкой и оливковым маслом.",
+      "ingredients": [
+        {
+          "name": "Мука пшеничная",
+          "amount": 400,
+          "unit": "г"
+        },
+        {
+          "name": "Вода тёплая",
+          "amount": 300,
+          "unit": "мл"
+        },
+        {
+          "name": "Дрожжи сухие",
+          "amount": 5,
+          "unit": "г"
+        },
+        {
+          "name": "Соль",
+          "amount": 8,
+          "unit": "г"
+        },
+        {
+          "name": "Масло оливковое",
+          "amount": 35,
+          "unit": "мл"
+        },
+        {
+          "name": "Розмарин",
+          "amount": 2,
+          "unit": "веточки"
+        }
+      ],
+      "currentPhotoId": "photo-1509440159596-0249088772ff",
+      "photo": {
+        "status": "candidate_needs_review",
+        "kind": "real",
+        "sourcePage": "https://www.pexels.com/photo/close-up-of-freshly-baked-rosemary-focaccia-bread-30666813/",
+        "creator": "Natalia Olivera",
+        "license": "Pexels License (free use; attribution not required)",
+        "assetPath": null,
+        "visualReview": true,
+        "rightsReview": true,
+        "connected": false,
+        "candidateImageUrl": "https://images.pexels.com/photos/30666813/pexels-photo-30666813.jpeg?cs=srgb&dl=pexels-nataliaolivera-30666813.jpg&fm=jpg",
+        "reviewNote": "Фокачча с розмарином, хорошо видна структура хлеба; вертикальный исходник, проверить кадрирование карточки."
+      },
+      "editorialFlags": []
+    },
+    {
+      "batchPosition": 10,
+      "recipeId": "pancakes",
+      "title": "Пышные оладьи на кефире",
+      "category": "pastry",
+      "cuisine": "Восточная Европа",
+      "minutes": 25,
+      "description": "Золотистые, мягкие оладьи к завтраку, которые не требуют миксера.",
+      "ingredients": [
+        {
+          "name": "Кефир",
+          "amount": 300,
+          "unit": "мл"
+        },
+        {
+          "name": "Мука пшеничная",
+          "amount": 250,
+          "unit": "г"
+        },
+        {
+          "name": "Яйцо",
+          "amount": 1,
+          "unit": "шт."
+        },
+        {
+          "name": "Сахар",
+          "amount": 25,
+          "unit": "г"
+        },
+        {
+          "name": "Сода",
+          "amount": 0.5,
+          "unit": "ч. л."
+        },
+        {
+          "name": "Масло растительное",
+          "amount": 2,
+          "unit": "ст. л."
+        }
+      ],
+      "currentPhotoId": "photo-1528207776546-365bb710ee93",
+      "photo": {
+        "status": "candidate_needs_review",
+        "kind": "real",
+        "sourcePage": "https://www.pexels.com/photo/mini-pancakes-on-a-plate-7855285/",
+        "creator": "Anna Pyshniuk",
+        "license": "Pexels License (free use; attribution not required)",
+        "assetPath": null,
+        "visualReview": true,
+        "rightsReview": true,
+        "connected": false,
+        "candidateImageUrl": "https://images.pexels.com/photos/7855285/pexels-photo-7855285.jpeg?cs=srgb&dl=pexels-anna-pyshniuk-2453945-7855285.jpg&fm=jpg",
+        "reviewNote": "Мини-оладьи с ягодным соусом и сметаной; близкая подача, но кефир в кадре не определяется."
+      },
+      "editorialFlags": []
+    },
+    {
+      "batchPosition": 11,
+      "recipeId": "tomato-soup",
+      "title": "Томатный суп с базиликом",
+      "category": "soup",
+      "cuisine": "Италия",
+      "minutes": 30,
+      "description": "Густой ароматный суп из томатов, хорошо сочетается с тостами.",
+      "ingredients": [
+        {
+          "name": "Томаты протёртые",
+          "amount": 700,
+          "unit": "г"
+        },
+        {
+          "name": "Лук",
+          "amount": 1,
+          "unit": "шт."
+        },
+        {
+          "name": "Морковь",
+          "amount": 1,
+          "unit": "шт."
+        },
+        {
+          "name": "Чеснок",
+          "amount": 2,
+          "unit": "зубчика"
+        },
+        {
+          "name": "Овощной бульон",
+          "amount": 450,
+          "unit": "мл"
+        },
+        {
+          "name": "Масло оливковое",
+          "amount": 2,
+          "unit": "ст. л."
+        },
+        {
+          "name": "Базилик",
+          "amount": 12,
+          "unit": "г"
+        }
+      ],
+      "currentPhotoId": "photo-1608949621308-c54d112c808a",
+      "photo": {
+        "status": "candidate",
+        "kind": "real",
+        "sourcePage": "https://www.pexels.com/photo/tomato-soup-on-a-table-27098511/",
+        "creator": "Valeria Boltneva",
+        "license": "Pexels License (free use; attribution not required)",
+        "assetPath": null,
+        "visualReview": true,
+        "rightsReview": true,
+        "connected": false,
+        "candidateImageUrl": "https://images.pexels.com/photos/27098511/pexels-photo-27098511.jpeg?cs=srgb&dl=pexels-valeriya-27098511.jpg&fm=jpg",
+        "reviewNote": "Томатный суп с видимым базиликом; хорошее совпадение."
+      },
+      "editorialFlags": []
+    },
+    {
+      "batchPosition": 12,
+      "recipeId": "ramen",
+      "title": "Быстрый рамен с яйцом",
+      "category": "soup",
+      "cuisine": "Япония",
+      "minutes": 30,
+      "description": "Домашняя версия ароматного супа с лапшой, грибами и яйцом.",
+      "ingredients": [
+        {
+          "name": "Лапша пшеничная",
+          "amount": 180,
+          "unit": "г"
+        },
+        {
+          "name": "Овощной бульон",
+          "amount": 700,
+          "unit": "мл"
+        },
+        {
+          "name": "Шампиньоны",
+          "amount": 150,
+          "unit": "г"
+        },
+        {
+          "name": "Яйцо",
+          "amount": 2,
+          "unit": "шт."
+        },
+        {
+          "name": "Соевый соус",
+          "amount": 2,
+          "unit": "ст. л."
+        },
+        {
+          "name": "Имбирь свежий",
+          "amount": 10,
+          "unit": "г"
+        },
+        {
+          "name": "Зелёный лук",
+          "amount": 20,
+          "unit": "г"
+        }
+      ],
+      "currentPhotoId": "photo-1569718212165-3a8278d5f624",
+      "photo": {
+        "status": "candidate",
+        "kind": "real",
+        "sourcePage": "https://www.pexels.com/photo/delicious-ramen-bowl-with-toppings-36104807/",
+        "creator": "Sebastian Lang",
+        "license": "Pexels License (free use; attribution not required)",
+        "assetPath": null,
+        "visualReview": true,
+        "rightsReview": true,
+        "connected": false,
+        "candidateImageUrl": "https://images.pexels.com/photos/36104807/pexels-photo-36104807.jpeg?cs=srgb&dl=pexels-sebastian-lang-2159451845-36104807.jpg&fm=jpg",
+        "reviewNote": "Рамен с яйцом, грибами и зеленью; точное совпадение по основным компонентам."
+      },
+      "editorialFlags": []
+    },
+    {
+      "batchPosition": 13,
+      "recipeId": "chocolate-cake",
+      "title": "Шоколадный брауни",
+      "category": "dessert",
+      "cuisine": "США",
+      "minutes": 45,
+      "description": "Влажный центр, насыщенный шоколад и минимум возни.",
+      "ingredients": [
+        {
+          "name": "Шоколад тёмный",
+          "amount": 150,
+          "unit": "г"
+        },
+        {
+          "name": "Масло сливочное",
+          "amount": 120,
+          "unit": "г"
+        },
+        {
+          "name": "Сахар",
+          "amount": 140,
+          "unit": "г"
+        },
+        {
+          "name": "Яйцо",
+          "amount": 2,
+          "unit": "шт."
+        },
+        {
+          "name": "Мука пшеничная",
+          "amount": 80,
+          "unit": "г"
+        },
+        {
+          "name": "Какао",
+          "amount": 20,
+          "unit": "г"
+        },
+        {
+          "name": "Соль",
+          "amount": 1,
+          "unit": "г"
+        }
+      ],
+      "currentPhotoId": "photo-1578985545062-69928b1d9587",
+      "photo": {
+        "status": "candidate",
+        "kind": "real",
+        "sourcePage": "https://www.pexels.com/photo/delicious-chocolate-brownies-on-white-plate-30353753/",
+        "creator": "Giovanna Kamimura",
+        "license": "Pexels License (free use; attribution not required)",
+        "assetPath": null,
+        "visualReview": true,
+        "rightsReview": true,
+        "connected": false,
+        "candidateImageUrl": "https://images.pexels.com/photos/30353753/pexels-photo-30353753.jpeg?cs=srgb&dl=pexels-giovanna-kamimura-399616174-30353753.jpg&fm=jpg",
+        "reviewNote": "Шоколадные брауни на тарелке; хорошее совпадение."
+      },
+      "editorialFlags": []
+    },
+    {
+      "batchPosition": 14,
+      "recipeId": "baked-apples",
+      "title": "Запечённые яблоки с корицей",
+      "category": "dessert",
+      "cuisine": "Европа",
+      "minutes": 35,
+      "description": "Тёплый десерт с ароматом корицы и орехов, без сложного теста.",
+      "ingredients": [
+        {
+          "name": "Яблоки",
+          "amount": 4,
+          "unit": "шт."
+        },
+        {
+          "name": "Мёд",
+          "amount": 3,
+          "unit": "ст. л."
+        },
+        {
+          "name": "Грецкие орехи",
+          "amount": 60,
+          "unit": "г"
+        },
+        {
+          "name": "Корица",
+          "amount": 1,
+          "unit": "ч. л."
+        },
+        {
+          "name": "Масло сливочное",
+          "amount": 20,
+          "unit": "г"
+        }
+      ],
+      "currentPhotoId": "photo-1528207776546-365bb710ee93",
+      "photo": {
+        "status": "candidate",
+        "kind": "real",
+        "sourcePage": "https://www.pexels.com/photo/faceless-woman-with-delicious-baked-apples-in-house-6210973/",
+        "creator": "Tim Douglas",
+        "license": "Pexels License (free use; attribution not required)",
+        "assetPath": null,
+        "visualReview": true,
+        "rightsReview": true,
+        "connected": false,
+        "candidateImageUrl": "https://images.pexels.com/photos/6210973/pexels-photo-6210973.jpeg?cs=srgb&dl=pexels-tim-douglas-6210973.jpg&fm=jpg",
+        "reviewNote": "Запечённые яблоки с орехами и сухофруктами; очень близко к рецепту. В кадре только руки и корпус человека."
+      },
+      "editorialFlags": []
+    },
+    {
+      "batchPosition": 15,
+      "recipeId": "chicken-lemon",
+      "title": "Курица с лимоном и травами",
+      "category": "poultry",
+      "cuisine": "Средиземноморье",
+      "minutes": 40,
+      "description": "Румяные кусочки курицы с чесноком, орегано и лимоном.",
+      "ingredients": [
+        {
+          "name": "Куриные бёдра без кости",
+          "amount": 700,
+          "unit": "г"
+        },
+        {
+          "name": "Лимон",
+          "amount": 1,
+          "unit": "шт."
+        },
+        {
+          "name": "Чеснок",
+          "amount": 3,
+          "unit": "зубчика"
+        },
+        {
+          "name": "Оливковое масло",
+          "amount": 2,
+          "unit": "ст. л."
+        },
+        {
+          "name": "Орегано",
+          "amount": 1,
+          "unit": "ч. л."
+        },
+        {
+          "name": "Соль",
+          "amount": 0,
+          "unit": "по вкусу"
+        }
+      ],
+      "currentPhotoId": "photo-1532550907401-a500c9a57435",
+      "photo": {
+        "status": "candidate_needs_review",
+        "kind": "real",
+        "sourcePage": "https://www.pexels.com/photo/a-delicious-roasted-chicken-with-lemon-slices-6896080/",
+        "creator": "Eiliv Aceron",
+        "license": "Pexels License (free use; attribution not required)",
+        "assetPath": null,
+        "visualReview": true,
+        "rightsReview": true,
+        "connected": false,
+        "candidateImageUrl": "https://images.pexels.com/photos/6896080/pexels-photo-6896080.jpeg?cs=srgb&dl=pexels-eiliv-aceron-29416110-6896080.jpg&fm=jpg",
+        "reviewNote": "Запечённая курица с лимоном и зеленью; на фото грудка, а в рецепте бёдра. Кандидат."
+      },
+      "editorialFlags": []
+    },
+    {
+      "batchPosition": 16,
+      "recipeId": "turkey-cutlets",
+      "title": "Индейка в йогуртовом соусе",
+      "category": "poultry",
+      "cuisine": "Ближний Восток",
+      "minutes": 30,
+      "description": "Нежные ломтики индейки с чесночным йогуртовым соусом.",
+      "ingredients": [
+        {
+          "name": "Филе индейки",
+          "amount": 350,
+          "unit": "г"
+        },
+        {
+          "name": "Йогурт натуральный",
+          "amount": 150,
+          "unit": "г"
+        },
+        {
+          "name": "Чеснок",
+          "amount": 1,
+          "unit": "зубчик"
+        },
+        {
+          "name": "Лимон",
+          "amount": 0.5,
+          "unit": "шт."
+        },
+        {
+          "name": "Паприка",
+          "amount": 1,
+          "unit": "ч. л."
+        },
+        {
+          "name": "Масло оливковое",
+          "amount": 1,
+          "unit": "ст. л."
+        },
+        {
+          "name": "Соль",
+          "amount": 0,
+          "unit": "по вкусу"
+        }
+      ],
+      "currentPhotoId": "photo-1562967914-608f82629710",
+      "photo": {
+        "status": "not_started",
+        "kind": null,
+        "sourcePage": null,
+        "creator": null,
+        "license": null,
+        "assetPath": null,
+        "visualReview": false,
+        "rightsReview": false,
+        "connected": false
+      },
+      "editorialFlags": []
+    },
+    {
+      "batchPosition": 17,
+      "recipeId": "greek-salad",
+      "title": "Греческий салат",
+      "category": "salads",
+      "cuisine": "Греция",
+      "minutes": 15,
+      "description": "Хрустящие овощи, оливки, фета и душистый орегано. Солнце Средиземноморья в тарелке.",
+      "ingredients": [
+        {
+          "name": "Помидоры",
+          "amount": 300,
+          "unit": "г"
+        },
+        {
+          "name": "Огурец",
+          "amount": 200,
+          "unit": "г"
+        },
+        {
+          "name": "Перец сладкий",
+          "amount": 1,
+          "unit": "шт."
+        },
+        {
+          "name": "Лук красный",
+          "amount": 0.5,
+          "unit": "шт."
+        },
+        {
+          "name": "Фета",
+          "amount": 120,
+          "unit": "г"
+        },
+        {
+          "name": "Оливки без косточек",
+          "amount": 70,
+          "unit": "г"
+        },
+        {
+          "name": "Масло оливковое",
+          "amount": 2,
+          "unit": "ст. л."
+        },
+        {
+          "name": "Орегано сушёный",
+          "amount": 0.5,
+          "unit": "ч. л."
+        },
+        {
+          "name": "Лимон",
+          "amount": 0.25,
+          "unit": "шт."
+        },
+        {
+          "name": "Соль",
+          "amount": 0,
+          "unit": "по вкусу"
+        }
+      ],
+      "currentPhotoId": "photo-1512621776951-a57141f2eefd",
+      "photo": {
+        "status": "candidate",
+        "kind": "real",
+        "sourcePage": "https://www.pexels.com/photo/top-view-of-a-salad-on-white-plate-14016727/",
+        "creator": "Christina Petsos",
+        "license": "Pexels License (free use; attribution not required)",
+        "assetPath": null,
+        "visualReview": true,
+        "rightsReview": true,
+        "connected": false,
+        "candidateImageUrl": "https://images.pexels.com/photos/14016727/pexels-photo-14016727.jpeg?cs=srgb&dl=pexels-christina-petsos-200616875-14016727.jpg&fm=jpg",
+        "reviewNote": "Фета, томаты, огурец, оливки; точное совпадение."
+      },
+      "editorialFlags": []
+    },
+    {
+      "batchPosition": 18,
+      "recipeId": "tabbouleh",
+      "title": "Табуле с петрушкой и булгуром",
+      "category": "salads",
+      "cuisine": "Левант",
+      "minutes": 30,
+      "description": "Много свежей зелени, помидоры, лимон и немного булгура. Лёгкий салат с ярким вкусом.",
+      "ingredients": [
+        {
+          "name": "Булгур мелкий",
+          "amount": 70,
+          "unit": "г"
+        },
+        {
+          "name": "Вода кипящая",
+          "amount": 130,
+          "unit": "мл"
+        },
+        {
+          "name": "Петрушка",
+          "amount": 100,
+          "unit": "г"
+        },
+        {
+          "name": "Мята свежая",
+          "amount": 15,
+          "unit": "г"
+        },
+        {
+          "name": "Помидоры",
+          "amount": 180,
+          "unit": "г"
+        },
+        {
+          "name": "Лук зелёный",
+          "amount": 30,
+          "unit": "г"
+        },
+        {
+          "name": "Лимон",
+          "amount": 1,
+          "unit": "шт."
+        },
+        {
+          "name": "Масло оливковое",
+          "amount": 2,
+          "unit": "ст. л."
+        },
+        {
+          "name": "Соль",
+          "amount": 0,
+          "unit": "по вкусу"
+        },
+        {
+          "name": "Перец чёрный",
+          "amount": 0,
+          "unit": "по вкусу"
+        }
+      ],
+      "currentPhotoId": "photo-1512621776951-a57141f2eefd",
+      "photo": {
+        "status": "candidate",
+        "kind": "real",
+        "sourcePage": "https://www.pexels.com/photo/food-love-tea-meat-7624858/",
+        "creator": "Daniel Dan",
+        "license": "Pexels License (free use; attribution not required)",
+        "assetPath": null,
+        "visualReview": true,
+        "rightsReview": true,
+        "connected": false,
+        "candidateImageUrl": "https://images.pexels.com/photos/7624858/pexels-photo-7624858.jpeg?cs=srgb&dl=pexels-daniel-dan-47825192-7624858.jpg&fm=jpg",
+        "reviewNote": "Булгур, томаты и зелень; хорошее совпадение с табуле."
+      },
+      "editorialFlags": []
+    },
+    {
+      "batchPosition": 19,
+      "recipeId": "shakshuka",
+      "title": "Шакшука с томатами и перцем",
+      "category": "breakfast",
+      "cuisine": "Северная Африка",
+      "minutes": 30,
+      "description": "Яйца в пряном томатном соусе. Яркий завтрак, который можно приготовить в одной сковороде.",
+      "ingredients": [
+        {
+          "name": "Яйца",
+          "amount": 4,
+          "unit": "шт."
+        },
+        {
+          "name": "Помидоры в собственном соку",
+          "amount": 400,
+          "unit": "г"
+        },
+        {
+          "name": "Перец сладкий",
+          "amount": 1,
+          "unit": "шт."
+        },
+        {
+          "name": "Лук репчатый",
+          "amount": 1,
+          "unit": "шт."
+        },
+        {
+          "name": "Чеснок",
+          "amount": 2,
+          "unit": "зубчика"
+        },
+        {
+          "name": "Масло оливковое",
+          "amount": 1,
+          "unit": "ст. л."
+        },
+        {
+          "name": "Паприка молотая",
+          "amount": 1,
+          "unit": "ч. л."
+        },
+        {
+          "name": "Зира молотая",
+          "amount": 0.5,
+          "unit": "ч. л."
+        },
+        {
+          "name": "Петрушка",
+          "amount": 15,
+          "unit": "г"
+        },
+        {
+          "name": "Соль",
+          "amount": 0,
+          "unit": "по вкусу"
+        }
+      ],
+      "currentPhotoId": "photo-1525351484163-7529414344d8",
+      "photo": {
+        "status": "not_started",
+        "kind": null,
+        "sourcePage": null,
+        "creator": null,
+        "license": null,
+        "assetPath": null,
+        "visualReview": false,
+        "rightsReview": false,
+        "connected": false
+      },
+      "editorialFlags": []
+    },
+    {
+      "batchPosition": 20,
+      "recipeId": "syrniki",
+      "title": "Домашние сырники с лимонной цедрой",
+      "category": "breakfast",
+      "cuisine": "Россия",
+      "minutes": 25,
+      "description": "Румяные снаружи и нежные внутри. Подавай со сметаной, ягодами или мёдом.",
+      "ingredients": [
+        {
+          "name": "Творог 5–9 %",
+          "amount": 350,
+          "unit": "г"
+        },
+        {
+          "name": "Яйцо",
+          "amount": 1,
+          "unit": "шт."
+        },
+        {
+          "name": "Мука пшеничная",
+          "amount": 50,
+          "unit": "г"
+        },
+        {
+          "name": "Сахар",
+          "amount": 25,
+          "unit": "г"
+        },
+        {
+          "name": "Лимон",
+          "amount": 0.5,
+          "unit": "шт."
+        },
+        {
+          "name": "Масло растительное",
+          "amount": 1,
+          "unit": "ст. л."
+        },
+        {
+          "name": "Сметана",
+          "amount": 80,
+          "unit": "г"
+        },
+        {
+          "name": "Соль",
+          "amount": 0,
+          "unit": "по вкусу"
+        }
+      ],
+      "currentPhotoId": "photo-1528207776546-365bb710ee93",
+      "photo": {
+        "status": "candidate",
+        "kind": "real",
+        "sourcePage": "https://www.pexels.com/photo/close-up-shot-of-syrniki-10254478/",
+        "creator": "Yulia Ilina",
+        "license": "Pexels License (free use; attribution not required)",
+        "assetPath": null,
+        "visualReview": true,
+        "rightsReview": true,
+        "connected": false,
+        "candidateImageUrl": "https://images.pexels.com/photos/10254478/pexels-photo-10254478.jpeg?cs=srgb&dl=pexels-yuuilina-10254478.jpg&fm=jpg",
+        "reviewNote": "Сырники со сметаной и ягодами; лимонная цедра не видна, но блюдо совпадает."
+      },
+      "editorialFlags": []
+    },
+    {
+      "batchPosition": 21,
+      "recipeId": "collection-meat-01-03",
+      "title": "Говяжьи медальоны с горчицей и мёдом",
+      "category": "meat",
+      "cuisine": "Европейская",
+      "minutes": 25,
+      "description": "Говяжьи медальоны. Горчицей и мёдом дают блюду свой характер. Количество рассчитано на двоих.",
+      "ingredients": [
+        {
+          "name": "Говяжья вырезка",
+          "amount": 360,
+          "unit": "г"
+        },
+        {
+          "name": "Масло оливковое",
+          "amount": 1,
+          "unit": "ст. л."
+        },
+        {
+          "name": "Горчица зерновая",
+          "amount": 15,
+          "unit": "г"
+        },
+        {
+          "name": "Мёд",
+          "amount": 1,
+          "unit": "ч. л."
+        },
+        {
+          "name": "Соль",
+          "amount": 0,
+          "unit": "по вкусу"
+        }
+      ],
+      "currentPhotoId": "photo-1544025162-d76694265947",
+      "photo": {
+        "status": "not_started",
+        "kind": null,
+        "sourcePage": null,
+        "creator": null,
+        "license": null,
+        "assetPath": null,
+        "visualReview": false,
+        "rightsReview": false,
+        "connected": false
+      },
+      "editorialFlags": [
+        "needs_copy_review"
+      ],
+      "variationGroup": "beef-medallions"
+    },
+    {
+      "batchPosition": 22,
+      "recipeId": "collection-meat-01-04",
+      "title": "Говяжьи медальоны с паприкой и чесноком",
+      "category": "meat",
+      "cuisine": "Европейская",
+      "minutes": 25,
+      "description": "Говяжьи медальоны. Паприкой и чесноком дают блюду свой характер. Количество рассчитано на двоих.",
+      "ingredients": [
+        {
+          "name": "Говяжья вырезка",
+          "amount": 360,
+          "unit": "г"
+        },
+        {
+          "name": "Масло оливковое",
+          "amount": 1,
+          "unit": "ст. л."
+        },
+        {
+          "name": "Паприка копчёная",
+          "amount": 1,
+          "unit": "ч. л."
+        },
+        {
+          "name": "Чеснок",
+          "amount": 2,
+          "unit": "зубчика"
+        },
+        {
+          "name": "Соль",
+          "amount": 0,
+          "unit": "по вкусу"
+        }
+      ],
+      "currentPhotoId": "photo-1544025162-d76694265947",
+      "photo": {
+        "status": "not_started",
+        "kind": null,
+        "sourcePage": null,
+        "creator": null,
+        "license": null,
+        "assetPath": null,
+        "visualReview": false,
+        "rightsReview": false,
+        "connected": false
+      },
+      "editorialFlags": [
+        "needs_copy_review"
+      ],
+      "variationGroup": "beef-medallions"
+    },
+    {
+      "batchPosition": 23,
+      "recipeId": "collection-meat-01-05",
+      "title": "Говяжьи медальоны с томатами и базиликом",
+      "category": "meat",
+      "cuisine": "Европейская",
+      "minutes": 25,
+      "description": "Говяжьи медальоны. Томатами и базиликом дают блюду свой характер. Количество рассчитано на двоих.",
+      "ingredients": [
+        {
+          "name": "Говяжья вырезка",
+          "amount": 360,
+          "unit": "г"
+        },
+        {
+          "name": "Масло оливковое",
+          "amount": 1,
+          "unit": "ст. л."
+        },
+        {
+          "name": "Томаты рубленые",
+          "amount": 160,
+          "unit": "г"
+        },
+        {
+          "name": "Базилик",
+          "amount": 5,
+          "unit": "веточки"
+        },
+        {
+          "name": "Соль",
+          "amount": 0,
+          "unit": "по вкусу"
+        }
+      ],
+      "currentPhotoId": "photo-1544025162-d76694265947",
+      "photo": {
+        "status": "not_started",
+        "kind": null,
+        "sourcePage": null,
+        "creator": null,
+        "license": null,
+        "assetPath": null,
+        "visualReview": false,
+        "rightsReview": false,
+        "connected": false
+      },
+      "editorialFlags": [
+        "needs_copy_review"
+      ],
+      "variationGroup": "beef-medallions"
+    },
+    {
+      "batchPosition": 24,
+      "recipeId": "collection-meat-01-06",
+      "title": "Говяжьи медальоны с имбирём и соевым соусом",
+      "category": "meat",
+      "cuisine": "Европейская",
+      "minutes": 25,
+      "description": "Говяжьи медальоны. Имбирём и соевым соусом дают блюду свой характер. Количество рассчитано на двоих.",
+      "ingredients": [
+        {
+          "name": "Говяжья вырезка",
+          "amount": 360,
+          "unit": "г"
+        },
+        {
+          "name": "Масло оливковое",
+          "amount": 1,
+          "unit": "ст. л."
+        },
+        {
+          "name": "Имбирь свежий",
+          "amount": 15,
+          "unit": "г"
+        },
+        {
+          "name": "Соевый соус",
+          "amount": 1.5,
+          "unit": "ст. л."
+        },
+        {
+          "name": "Соль",
+          "amount": 0,
+          "unit": "по вкусу"
+        }
+      ],
+      "currentPhotoId": "photo-1544025162-d76694265947",
+      "photo": {
+        "status": "not_started",
+        "kind": null,
+        "sourcePage": null,
+        "creator": null,
+        "license": null,
+        "assetPath": null,
+        "visualReview": false,
+        "rightsReview": false,
+        "connected": false
+      },
+      "editorialFlags": [
+        "needs_copy_review"
+      ],
+      "variationGroup": "beef-medallions"
+    },
+    {
+      "batchPosition": 25,
+      "recipeId": "collection-meat-01-07",
+      "title": "Говяжьи медальоны с луком и бальзамиком",
+      "category": "meat",
+      "cuisine": "Европейская",
+      "minutes": 25,
+      "description": "Говяжьи медальоны. Луком и бальзамиком дают блюду свой характер. Количество рассчитано на двоих.",
+      "ingredients": [
+        {
+          "name": "Говяжья вырезка",
+          "amount": 360,
+          "unit": "г"
+        },
+        {
+          "name": "Масло оливковое",
+          "amount": 1,
+          "unit": "ст. л."
+        },
+        {
+          "name": "Лук красный",
+          "amount": 1,
+          "unit": "шт."
+        },
+        {
+          "name": "Уксус бальзамический",
+          "amount": 1,
+          "unit": "ст. л."
+        },
+        {
+          "name": "Соль",
+          "amount": 0,
+          "unit": "по вкусу"
+        }
+      ],
+      "currentPhotoId": "photo-1544025162-d76694265947",
+      "photo": {
+        "status": "not_started",
+        "kind": null,
+        "sourcePage": null,
+        "creator": null,
+        "license": null,
+        "assetPath": null,
+        "visualReview": false,
+        "rightsReview": false,
+        "connected": false
+      },
+      "editorialFlags": [
+        "needs_copy_review"
+      ],
+      "variationGroup": "beef-medallions"
+    },
+    {
+      "batchPosition": 26,
+      "recipeId": "collection-meat-01-08",
+      "title": "Говяжьи медальоны с сливками и зелёным перцем",
+      "category": "meat",
+      "cuisine": "Европейская",
+      "minutes": 25,
+      "description": "Говяжьи медальоны. Сливками и зелёным перцем дают блюду свой характер. Количество рассчитано на двоих.",
+      "ingredients": [
+        {
+          "name": "Говяжья вырезка",
+          "amount": 360,
+          "unit": "г"
+        },
+        {
+          "name": "Масло оливковое",
+          "amount": 1,
+          "unit": "ст. л."
+        },
+        {
+          "name": "Сливки 20%",
+          "amount": 100,
+          "unit": "мл"
+        },
+        {
+          "name": "Перец зелёный горошком",
+          "amount": 1,
+          "unit": "ч. л."
+        },
+        {
+          "name": "Соль",
+          "amount": 0,
+          "unit": "по вкусу"
+        }
+      ],
+      "currentPhotoId": "photo-1544025162-d76694265947",
+      "photo": {
+        "status": "not_started",
+        "kind": null,
+        "sourcePage": null,
+        "creator": null,
+        "license": null,
+        "assetPath": null,
+        "visualReview": false,
+        "rightsReview": false,
+        "connected": false
+      },
+      "editorialFlags": [
+        "needs_copy_review"
+      ],
+      "variationGroup": "beef-medallions"
+    },
+    {
+      "batchPosition": 27,
+      "recipeId": "collection-meat-01-09",
+      "title": "Говяжьи медальоны с яблоком и шалфеем",
+      "category": "meat",
+      "cuisine": "Европейская",
+      "minutes": 25,
+      "description": "Говяжьи медальоны. Яблоком и шалфеем дают блюду свой характер. Количество рассчитано на двоих.",
+      "ingredients": [
+        {
+          "name": "Говяжья вырезка",
+          "amount": 360,
+          "unit": "г"
+        },
+        {
+          "name": "Масло оливковое",
+          "amount": 1,
+          "unit": "ст. л."
+        },
+        {
+          "name": "Яблоко",
+          "amount": 1,
+          "unit": "шт."
+        },
+        {
+          "name": "Шалфей",
+          "amount": 3,
+          "unit": "листочка"
+        },
+        {
+          "name": "Соль",
+          "amount": 0,
+          "unit": "по вкусу"
+        }
+      ],
+      "currentPhotoId": "photo-1544025162-d76694265947",
+      "photo": {
+        "status": "not_started",
+        "kind": null,
+        "sourcePage": null,
+        "creator": null,
+        "license": null,
+        "assetPath": null,
+        "visualReview": false,
+        "rightsReview": false,
+        "connected": false
+      },
+      "editorialFlags": [
+        "needs_copy_review"
+      ],
+      "variationGroup": "beef-medallions"
+    },
+    {
+      "batchPosition": 28,
+      "recipeId": "collection-meat-01-10",
+      "title": "Говяжьи медальоны с черносливом и тмином",
+      "category": "meat",
+      "cuisine": "Европейская",
+      "minutes": 25,
+      "description": "Говяжьи медальоны. Черносливом и тмином дают блюду свой характер. Количество рассчитано на двоих.",
+      "ingredients": [
+        {
+          "name": "Говяжья вырезка",
+          "amount": 360,
+          "unit": "г"
+        },
+        {
+          "name": "Масло оливковое",
+          "amount": 1,
+          "unit": "ст. л."
+        },
+        {
+          "name": "Чернослив без косточек",
+          "amount": 80,
+          "unit": "г"
+        },
+        {
+          "name": "Тмин",
+          "amount": 0.5,
+          "unit": "ч. л."
+        },
+        {
+          "name": "Соль",
+          "amount": 0,
+          "unit": "по вкусу"
+        }
+      ],
+      "currentPhotoId": "photo-1544025162-d76694265947",
+      "photo": {
+        "status": "not_started",
+        "kind": null,
+        "sourcePage": null,
+        "creator": null,
+        "license": null,
+        "assetPath": null,
+        "visualReview": false,
+        "rightsReview": false,
+        "connected": false
+      },
+      "editorialFlags": [
+        "needs_copy_review"
+      ],
+      "variationGroup": "beef-medallions"
+    },
+    {
+      "batchPosition": 29,
+      "recipeId": "collection-meat-02-01",
+      "title": "Свиная вырезка в духовке с лимоном и тимьяном",
+      "category": "meat",
+      "cuisine": "Европейская",
+      "minutes": 40,
+      "description": "Свиная вырезка в духовке. Лимоном и тимьяном дают блюду свой характер. Количество рассчитано на двоих.",
+      "ingredients": [
+        {
+          "name": "Вырезка свиная",
+          "amount": 400,
+          "unit": "г"
+        },
+        {
+          "name": "Масло оливковое",
+          "amount": 1,
+          "unit": "ст. л."
+        },
+        {
+          "name": "Лимон",
+          "amount": 0.5,
+          "unit": "шт."
+        },
+        {
+          "name": "Тимьян",
+          "amount": 2,
+          "unit": "веточки"
+        },
+        {
+          "name": "Соль",
+          "amount": 0,
+          "unit": "по вкусу"
+        }
+      ],
+      "currentPhotoId": "photo-1544025162-d76694265947",
+      "photo": {
+        "status": "not_started",
+        "kind": null,
+        "sourcePage": null,
+        "creator": null,
+        "license": null,
+        "assetPath": null,
+        "visualReview": false,
+        "rightsReview": false,
+        "connected": false
+      },
+      "editorialFlags": [
+        "needs_copy_review"
+      ],
+      "variationGroup": "pork-tenderloin"
+    },
+    {
+      "batchPosition": 30,
+      "recipeId": "collection-meat-02-02",
+      "title": "Свиная вырезка в духовке с грибами и розмарином",
+      "category": "meat",
+      "cuisine": "Европейская",
+      "minutes": 40,
+      "description": "Свиная вырезка в духовке. Грибами и розмарином дают блюду свой характер. Количество рассчитано на двоих.",
+      "ingredients": [
+        {
+          "name": "Вырезка свиная",
+          "amount": 400,
+          "unit": "г"
+        },
+        {
+          "name": "Масло оливковое",
+          "amount": 1,
+          "unit": "ст. л."
+        },
+        {
+          "name": "Шампиньоны",
+          "amount": 120,
+          "unit": "г"
+        },
+        {
+          "name": "Розмарин",
+          "amount": 1,
+          "unit": "веточка"
+        },
+        {
+          "name": "Соль",
+          "amount": 0,
+          "unit": "по вкусу"
+        }
+      ],
+      "currentPhotoId": "photo-1544025162-d76694265947",
+      "photo": {
+        "status": "not_started",
+        "kind": null,
+        "sourcePage": null,
+        "creator": null,
+        "license": null,
+        "assetPath": null,
+        "visualReview": false,
+        "rightsReview": false,
+        "connected": false
+      },
+      "editorialFlags": [
+        "needs_copy_review"
+      ],
+      "variationGroup": "pork-tenderloin"
+    },
+    {
+      "batchPosition": 31,
+      "recipeId": "collection-meat-02-03",
+      "title": "Свиная вырезка в духовке с горчицей и мёдом",
+      "category": "meat",
+      "cuisine": "Европейская",
+      "minutes": 40,
+      "description": "Свиная вырезка в духовке. Горчицей и мёдом дают блюду свой характер. Количество рассчитано на двоих.",
+      "ingredients": [
+        {
+          "name": "Вырезка свиная",
+          "amount": 400,
+          "unit": "г"
+        },
+        {
+          "name": "Масло оливковое",
+          "amount": 1,
+          "unit": "ст. л."
+        },
+        {
+          "name": "Горчица зерновая",
+          "amount": 15,
+          "unit": "г"
+        },
+        {
+          "name": "Мёд",
+          "amount": 1,
+          "unit": "ч. л."
+        },
+        {
+          "name": "Соль",
+          "amount": 0,
+          "unit": "по вкусу"
+        }
+      ],
+      "currentPhotoId": "photo-1544025162-d76694265947",
+      "photo": {
+        "status": "not_started",
+        "kind": null,
+        "sourcePage": null,
+        "creator": null,
+        "license": null,
+        "assetPath": null,
+        "visualReview": false,
+        "rightsReview": false,
+        "connected": false
+      },
+      "editorialFlags": [
+        "needs_copy_review"
+      ],
+      "variationGroup": "pork-tenderloin"
+    },
+    {
+      "batchPosition": 32,
+      "recipeId": "collection-meat-02-04",
+      "title": "Свиная вырезка в духовке с паприкой и чесноком",
+      "category": "meat",
+      "cuisine": "Европейская",
+      "minutes": 40,
+      "description": "Свиная вырезка в духовке. Паприкой и чесноком дают блюду свой характер. Количество рассчитано на двоих.",
+      "ingredients": [
+        {
+          "name": "Вырезка свиная",
+          "amount": 400,
+          "unit": "г"
+        },
+        {
+          "name": "Масло оливковое",
+          "amount": 1,
+          "unit": "ст. л."
+        },
+        {
+          "name": "Паприка копчёная",
+          "amount": 1,
+          "unit": "ч. л."
+        },
+        {
+          "name": "Чеснок",
+          "amount": 2,
+          "unit": "зубчика"
+        },
+        {
+          "name": "Соль",
+          "amount": 0,
+          "unit": "по вкусу"
+        }
+      ],
+      "currentPhotoId": "photo-1544025162-d76694265947",
+      "photo": {
+        "status": "not_started",
+        "kind": null,
+        "sourcePage": null,
+        "creator": null,
+        "license": null,
+        "assetPath": null,
+        "visualReview": false,
+        "rightsReview": false,
+        "connected": false
+      },
+      "editorialFlags": [
+        "needs_copy_review"
+      ],
+      "variationGroup": "pork-tenderloin"
+    },
+    {
+      "batchPosition": 33,
+      "recipeId": "collection-meat-02-05",
+      "title": "Свиная вырезка в духовке с томатами и базиликом",
+      "category": "meat",
+      "cuisine": "Европейская",
+      "minutes": 40,
+      "description": "Свиная вырезка в духовке. Томатами и базиликом дают блюду свой характер. Количество рассчитано на двоих.",
+      "ingredients": [
+        {
+          "name": "Вырезка свиная",
+          "amount": 400,
+          "unit": "г"
+        },
+        {
+          "name": "Масло оливковое",
+          "amount": 1,
+          "unit": "ст. л."
+        },
+        {
+          "name": "Томаты рубленые",
+          "amount": 160,
+          "unit": "г"
+        },
+        {
+          "name": "Базилик",
+          "amount": 5,
+          "unit": "веточки"
+        },
+        {
+          "name": "Соль",
+          "amount": 0,
+          "unit": "по вкусу"
+        }
+      ],
+      "currentPhotoId": "photo-1544025162-d76694265947",
+      "photo": {
+        "status": "not_started",
+        "kind": null,
+        "sourcePage": null,
+        "creator": null,
+        "license": null,
+        "assetPath": null,
+        "visualReview": false,
+        "rightsReview": false,
+        "connected": false
+      },
+      "editorialFlags": [
+        "needs_copy_review"
+      ],
+      "variationGroup": "pork-tenderloin"
+    },
+    {
+      "batchPosition": 34,
+      "recipeId": "collection-meat-02-06",
+      "title": "Свиная вырезка в духовке с имбирём и соевым соусом",
+      "category": "meat",
+      "cuisine": "Европейская",
+      "minutes": 40,
+      "description": "Свиная вырезка в духовке. Имбирём и соевым соусом дают блюду свой характер. Количество рассчитано на двоих.",
+      "ingredients": [
+        {
+          "name": "Вырезка свиная",
+          "amount": 400,
+          "unit": "г"
+        },
+        {
+          "name": "Масло оливковое",
+          "amount": 1,
+          "unit": "ст. л."
+        },
+        {
+          "name": "Имбирь свежий",
+          "amount": 15,
+          "unit": "г"
+        },
+        {
+          "name": "Соевый соус",
+          "amount": 1.5,
+          "unit": "ст. л."
+        },
+        {
+          "name": "Соль",
+          "amount": 0,
+          "unit": "по вкусу"
+        }
+      ],
+      "currentPhotoId": "photo-1544025162-d76694265947",
+      "photo": {
+        "status": "not_started",
+        "kind": null,
+        "sourcePage": null,
+        "creator": null,
+        "license": null,
+        "assetPath": null,
+        "visualReview": false,
+        "rightsReview": false,
+        "connected": false
+      },
+      "editorialFlags": [
+        "needs_copy_review"
+      ],
+      "variationGroup": "pork-tenderloin"
+    },
+    {
+      "batchPosition": 35,
+      "recipeId": "collection-meat-02-07",
+      "title": "Свиная вырезка в духовке с луком и бальзамиком",
+      "category": "meat",
+      "cuisine": "Европейская",
+      "minutes": 40,
+      "description": "Свиная вырезка в духовке. Луком и бальзамиком дают блюду свой характер. Количество рассчитано на двоих.",
+      "ingredients": [
+        {
+          "name": "Вырезка свиная",
+          "amount": 400,
+          "unit": "г"
+        },
+        {
+          "name": "Масло оливковое",
+          "amount": 1,
+          "unit": "ст. л."
+        },
+        {
+          "name": "Лук красный",
+          "amount": 1,
+          "unit": "шт."
+        },
+        {
+          "name": "Уксус бальзамический",
+          "amount": 1,
+          "unit": "ст. л."
+        },
+        {
+          "name": "Соль",
+          "amount": 0,
+          "unit": "по вкусу"
+        }
+      ],
+      "currentPhotoId": "photo-1544025162-d76694265947",
+      "photo": {
+        "status": "not_started",
+        "kind": null,
+        "sourcePage": null,
+        "creator": null,
+        "license": null,
+        "assetPath": null,
+        "visualReview": false,
+        "rightsReview": false,
+        "connected": false
+      },
+      "editorialFlags": [
+        "needs_copy_review"
+      ],
+      "variationGroup": "pork-tenderloin"
+    },
+    {
+      "batchPosition": 36,
+      "recipeId": "collection-meat-02-08",
+      "title": "Свиная вырезка в духовке с сливками и зелёным перцем",
+      "category": "meat",
+      "cuisine": "Европейская",
+      "minutes": 40,
+      "description": "Свиная вырезка в духовке. Сливками и зелёным перцем дают блюду свой характер. Количество рассчитано на двоих.",
+      "ingredients": [
+        {
+          "name": "Вырезка свиная",
+          "amount": 400,
+          "unit": "г"
+        },
+        {
+          "name": "Масло оливковое",
+          "amount": 1,
+          "unit": "ст. л."
+        },
+        {
+          "name": "Сливки 20%",
+          "amount": 100,
+          "unit": "мл"
+        },
+        {
+          "name": "Перец зелёный горошком",
+          "amount": 1,
+          "unit": "ч. л."
+        },
+        {
+          "name": "Соль",
+          "amount": 0,
+          "unit": "по вкусу"
+        }
+      ],
+      "currentPhotoId": "photo-1544025162-d76694265947",
+      "photo": {
+        "status": "not_started",
+        "kind": null,
+        "sourcePage": null,
+        "creator": null,
+        "license": null,
+        "assetPath": null,
+        "visualReview": false,
+        "rightsReview": false,
+        "connected": false
+      },
+      "editorialFlags": [
+        "needs_copy_review"
+      ],
+      "variationGroup": "pork-tenderloin"
+    },
+    {
+      "batchPosition": 37,
+      "recipeId": "collection-meat-02-09",
+      "title": "Свиная вырезка в духовке с яблоком и шалфеем",
+      "category": "meat",
+      "cuisine": "Европейская",
+      "minutes": 40,
+      "description": "Свиная вырезка в духовке. Яблоком и шалфеем дают блюду свой характер. Количество рассчитано на двоих.",
+      "ingredients": [
+        {
+          "name": "Вырезка свиная",
+          "amount": 400,
+          "unit": "г"
+        },
+        {
+          "name": "Масло оливковое",
+          "amount": 1,
+          "unit": "ст. л."
+        },
+        {
+          "name": "Яблоко",
+          "amount": 1,
+          "unit": "шт."
+        },
+        {
+          "name": "Шалфей",
+          "amount": 3,
+          "unit": "листочка"
+        },
+        {
+          "name": "Соль",
+          "amount": 0,
+          "unit": "по вкусу"
+        }
+      ],
+      "currentPhotoId": "photo-1544025162-d76694265947",
+      "photo": {
+        "status": "not_started",
+        "kind": null,
+        "sourcePage": null,
+        "creator": null,
+        "license": null,
+        "assetPath": null,
+        "visualReview": false,
+        "rightsReview": false,
+        "connected": false
+      },
+      "editorialFlags": [
+        "needs_copy_review"
+      ],
+      "variationGroup": "pork-tenderloin"
+    },
+    {
+      "batchPosition": 38,
+      "recipeId": "collection-meat-02-10",
+      "title": "Свиная вырезка в духовке с черносливом и тмином",
+      "category": "meat",
+      "cuisine": "Европейская",
+      "minutes": 40,
+      "description": "Свиная вырезка в духовке. Черносливом и тмином дают блюду свой характер. Количество рассчитано на двоих.",
+      "ingredients": [
+        {
+          "name": "Вырезка свиная",
+          "amount": 400,
+          "unit": "г"
+        },
+        {
+          "name": "Масло оливковое",
+          "amount": 1,
+          "unit": "ст. л."
+        },
+        {
+          "name": "Чернослив без косточек",
+          "amount": 80,
+          "unit": "г"
+        },
+        {
+          "name": "Тмин",
+          "amount": 0.5,
+          "unit": "ч. л."
+        },
+        {
+          "name": "Соль",
+          "amount": 0,
+          "unit": "по вкусу"
+        }
+      ],
+      "currentPhotoId": "photo-1544025162-d76694265947",
+      "photo": {
+        "status": "not_started",
+        "kind": null,
+        "sourcePage": null,
+        "creator": null,
+        "license": null,
+        "assetPath": null,
+        "visualReview": false,
+        "rightsReview": false,
+        "connected": false
+      },
+      "editorialFlags": [
+        "needs_copy_review"
+      ],
+      "variationGroup": "pork-tenderloin"
+    },
+    {
+      "batchPosition": 39,
+      "recipeId": "collection-meat-03-01",
+      "title": "Сочные тефтели из говядины с лимоном и тимьяном",
+      "category": "meat",
+      "cuisine": "Домашняя",
+      "minutes": 38,
+      "description": "Сочные тефтели из говядины. Лимоном и тимьяном дают блюду свой характер. Количество рассчитано на двоих.",
+      "ingredients": [
+        {
+          "name": "Фарш говяжий",
+          "amount": 400,
+          "unit": "г"
+        },
+        {
+          "name": "Яйцо",
+          "amount": 1,
+          "unit": "шт."
+        },
+        {
+          "name": "Панировочные сухари",
+          "amount": 30,
+          "unit": "г"
+        },
+        {
+          "name": "Лимон",
+          "amount": 0.5,
+          "unit": "шт."
+        },
+        {
+          "name": "Тимьян",
+          "amount": 2,
+          "unit": "веточки"
+        },
+        {
+          "name": "Масло оливковое",
+          "amount": 1,
+          "unit": "ст. л."
+        },
+        {
+          "name": "Соль",
+          "amount": 0,
+          "unit": "по вкусу"
+        }
+      ],
+      "currentPhotoId": "photo-1544025162-d76694265947",
+      "photo": {
+        "status": "not_started",
+        "kind": null,
+        "sourcePage": null,
+        "creator": null,
+        "license": null,
+        "assetPath": null,
+        "visualReview": false,
+        "rightsReview": false,
+        "connected": false
+      },
+      "editorialFlags": [
+        "needs_copy_review"
+      ],
+      "variationGroup": "beef-meatballs"
+    },
+    {
+      "batchPosition": 40,
+      "recipeId": "collection-meat-03-02",
+      "title": "Сочные тефтели из говядины с грибами и розмарином",
+      "category": "meat",
+      "cuisine": "Домашняя",
+      "minutes": 38,
+      "description": "Сочные тефтели из говядины. Грибами и розмарином дают блюду свой характер. Количество рассчитано на двоих.",
+      "ingredients": [
+        {
+          "name": "Фарш говяжий",
+          "amount": 400,
+          "unit": "г"
+        },
+        {
+          "name": "Яйцо",
+          "amount": 1,
+          "unit": "шт."
+        },
+        {
+          "name": "Панировочные сухари",
+          "amount": 30,
+          "unit": "г"
+        },
+        {
+          "name": "Шампиньоны",
+          "amount": 120,
+          "unit": "г"
+        },
+        {
+          "name": "Розмарин",
+          "amount": 1,
+          "unit": "веточка"
+        },
+        {
+          "name": "Масло оливковое",
+          "amount": 1,
+          "unit": "ст. л."
+        },
+        {
+          "name": "Соль",
+          "amount": 0,
+          "unit": "по вкусу"
+        }
+      ],
+      "currentPhotoId": "photo-1544025162-d76694265947",
+      "photo": {
+        "status": "not_started",
+        "kind": null,
+        "sourcePage": null,
+        "creator": null,
+        "license": null,
+        "assetPath": null,
+        "visualReview": false,
+        "rightsReview": false,
+        "connected": false
+      },
+      "editorialFlags": [
+        "needs_copy_review"
+      ],
+      "variationGroup": "beef-meatballs"
+    },
+    {
+      "batchPosition": 41,
+      "recipeId": "collection-meat-03-03",
+      "title": "Сочные тефтели из говядины с горчицей и мёдом",
+      "category": "meat",
+      "cuisine": "Домашняя",
+      "minutes": 38,
+      "description": "Сочные тефтели из говядины. Горчицей и мёдом дают блюду свой характер. Количество рассчитано на двоих.",
+      "ingredients": [
+        {
+          "name": "Фарш говяжий",
+          "amount": 400,
+          "unit": "г"
+        },
+        {
+          "name": "Яйцо",
+          "amount": 1,
+          "unit": "шт."
+        },
+        {
+          "name": "Панировочные сухари",
+          "amount": 30,
+          "unit": "г"
+        },
+        {
+          "name": "Горчица зерновая",
+          "amount": 15,
+          "unit": "г"
+        },
+        {
+          "name": "Мёд",
+          "amount": 1,
+          "unit": "ч. л."
+        },
+        {
+          "name": "Масло оливковое",
+          "amount": 1,
+          "unit": "ст. л."
+        },
+        {
+          "name": "Соль",
+          "amount": 0,
+          "unit": "по вкусу"
+        }
+      ],
+      "currentPhotoId": "photo-1544025162-d76694265947",
+      "photo": {
+        "status": "not_started",
+        "kind": null,
+        "sourcePage": null,
+        "creator": null,
+        "license": null,
+        "assetPath": null,
+        "visualReview": false,
+        "rightsReview": false,
+        "connected": false
+      },
+      "editorialFlags": [
+        "needs_copy_review"
+      ],
+      "variationGroup": "beef-meatballs"
+    },
+    {
+      "batchPosition": 42,
+      "recipeId": "collection-meat-03-04",
+      "title": "Сочные тефтели из говядины с паприкой и чесноком",
+      "category": "meat",
+      "cuisine": "Домашняя",
+      "minutes": 38,
+      "description": "Сочные тефтели из говядины. Паприкой и чесноком дают блюду свой характер. Количество рассчитано на двоих.",
+      "ingredients": [
+        {
+          "name": "Фарш говяжий",
+          "amount": 400,
+          "unit": "г"
+        },
+        {
+          "name": "Яйцо",
+          "amount": 1,
+          "unit": "шт."
+        },
+        {
+          "name": "Панировочные сухари",
+          "amount": 30,
+          "unit": "г"
+        },
+        {
+          "name": "Паприка копчёная",
+          "amount": 1,
+          "unit": "ч. л."
+        },
+        {
+          "name": "Чеснок",
+          "amount": 2,
+          "unit": "зубчика"
+        },
+        {
+          "name": "Масло оливковое",
+          "amount": 1,
+          "unit": "ст. л."
+        },
+        {
+          "name": "Соль",
+          "amount": 0,
+          "unit": "по вкусу"
+        }
+      ],
+      "currentPhotoId": "photo-1544025162-d76694265947",
+      "photo": {
+        "status": "not_started",
+        "kind": null,
+        "sourcePage": null,
+        "creator": null,
+        "license": null,
+        "assetPath": null,
+        "visualReview": false,
+        "rightsReview": false,
+        "connected": false
+      },
+      "editorialFlags": [
+        "needs_copy_review"
+      ],
+      "variationGroup": "beef-meatballs"
+    },
+    {
+      "batchPosition": 43,
+      "recipeId": "collection-meat-03-05",
+      "title": "Сочные тефтели из говядины с томатами и базиликом",
+      "category": "meat",
+      "cuisine": "Домашняя",
+      "minutes": 38,
+      "description": "Сочные тефтели из говядины. Томатами и базиликом дают блюду свой характер. Количество рассчитано на двоих.",
+      "ingredients": [
+        {
+          "name": "Фарш говяжий",
+          "amount": 400,
+          "unit": "г"
+        },
+        {
+          "name": "Яйцо",
+          "amount": 1,
+          "unit": "шт."
+        },
+        {
+          "name": "Панировочные сухари",
+          "amount": 30,
+          "unit": "г"
+        },
+        {
+          "name": "Томаты рубленые",
+          "amount": 160,
+          "unit": "г"
+        },
+        {
+          "name": "Базилик",
+          "amount": 5,
+          "unit": "веточки"
+        },
+        {
+          "name": "Масло оливковое",
+          "amount": 1,
+          "unit": "ст. л."
+        },
+        {
+          "name": "Соль",
+          "amount": 0,
+          "unit": "по вкусу"
+        }
+      ],
+      "currentPhotoId": "photo-1544025162-d76694265947",
+      "photo": {
+        "status": "not_started",
+        "kind": null,
+        "sourcePage": null,
+        "creator": null,
+        "license": null,
+        "assetPath": null,
+        "visualReview": false,
+        "rightsReview": false,
+        "connected": false
+      },
+      "editorialFlags": [
+        "needs_copy_review"
+      ],
+      "variationGroup": "beef-meatballs"
+    },
+    {
+      "batchPosition": 44,
+      "recipeId": "collection-meat-03-06",
+      "title": "Сочные тефтели из говядины с имбирём и соевым соусом",
+      "category": "meat",
+      "cuisine": "Домашняя",
+      "minutes": 38,
+      "description": "Сочные тефтели из говядины. Имбирём и соевым соусом дают блюду свой характер. Количество рассчитано на двоих.",
+      "ingredients": [
+        {
+          "name": "Фарш говяжий",
+          "amount": 400,
+          "unit": "г"
+        },
+        {
+          "name": "Яйцо",
+          "amount": 1,
+          "unit": "шт."
+        },
+        {
+          "name": "Панировочные сухари",
+          "amount": 30,
+          "unit": "г"
+        },
+        {
+          "name": "Имбирь свежий",
+          "amount": 15,
+          "unit": "г"
+        },
+        {
+          "name": "Соевый соус",
+          "amount": 1.5,
+          "unit": "ст. л."
+        },
+        {
+          "name": "Масло оливковое",
+          "amount": 1,
+          "unit": "ст. л."
+        },
+        {
+          "name": "Соль",
+          "amount": 0,
+          "unit": "по вкусу"
+        }
+      ],
+      "currentPhotoId": "photo-1544025162-d76694265947",
+      "photo": {
+        "status": "not_started",
+        "kind": null,
+        "sourcePage": null,
+        "creator": null,
+        "license": null,
+        "assetPath": null,
+        "visualReview": false,
+        "rightsReview": false,
+        "connected": false
+      },
+      "editorialFlags": [
+        "needs_copy_review"
+      ],
+      "variationGroup": "beef-meatballs"
+    },
+    {
+      "batchPosition": 45,
+      "recipeId": "collection-meat-03-07",
+      "title": "Сочные тефтели из говядины с луком и бальзамиком",
+      "category": "meat",
+      "cuisine": "Домашняя",
+      "minutes": 38,
+      "description": "Сочные тефтели из говядины. Луком и бальзамиком дают блюду свой характер. Количество рассчитано на двоих.",
+      "ingredients": [
+        {
+          "name": "Фарш говяжий",
+          "amount": 400,
+          "unit": "г"
+        },
+        {
+          "name": "Яйцо",
+          "amount": 1,
+          "unit": "шт."
+        },
+        {
+          "name": "Панировочные сухари",
+          "amount": 30,
+          "unit": "г"
+        },
+        {
+          "name": "Лук красный",
+          "amount": 1,
+          "unit": "шт."
+        },
+        {
+          "name": "Уксус бальзамический",
+          "amount": 1,
+          "unit": "ст. л."
+        },
+        {
+          "name": "Масло оливковое",
+          "amount": 1,
+          "unit": "ст. л."
+        },
+        {
+          "name": "Соль",
+          "amount": 0,
+          "unit": "по вкусу"
+        }
+      ],
+      "currentPhotoId": "photo-1544025162-d76694265947",
+      "photo": {
+        "status": "not_started",
+        "kind": null,
+        "sourcePage": null,
+        "creator": null,
+        "license": null,
+        "assetPath": null,
+        "visualReview": false,
+        "rightsReview": false,
+        "connected": false
+      },
+      "editorialFlags": [
+        "needs_copy_review"
+      ],
+      "variationGroup": "beef-meatballs"
+    },
+    {
+      "batchPosition": 46,
+      "recipeId": "collection-meat-03-08",
+      "title": "Сочные тефтели из говядины с сливками и зелёным перцем",
+      "category": "meat",
+      "cuisine": "Домашняя",
+      "minutes": 38,
+      "description": "Сочные тефтели из говядины. Сливками и зелёным перцем дают блюду свой характер. Количество рассчитано на двоих.",
+      "ingredients": [
+        {
+          "name": "Фарш говяжий",
+          "amount": 400,
+          "unit": "г"
+        },
+        {
+          "name": "Яйцо",
+          "amount": 1,
+          "unit": "шт."
+        },
+        {
+          "name": "Панировочные сухари",
+          "amount": 30,
+          "unit": "г"
+        },
+        {
+          "name": "Сливки 20%",
+          "amount": 100,
+          "unit": "мл"
+        },
+        {
+          "name": "Перец зелёный горошком",
+          "amount": 1,
+          "unit": "ч. л."
+        },
+        {
+          "name": "Масло оливковое",
+          "amount": 1,
+          "unit": "ст. л."
+        },
+        {
+          "name": "Соль",
+          "amount": 0,
+          "unit": "по вкусу"
+        }
+      ],
+      "currentPhotoId": "photo-1544025162-d76694265947",
+      "photo": {
+        "status": "not_started",
+        "kind": null,
+        "sourcePage": null,
+        "creator": null,
+        "license": null,
+        "assetPath": null,
+        "visualReview": false,
+        "rightsReview": false,
+        "connected": false
+      },
+      "editorialFlags": [
+        "needs_copy_review"
+      ],
+      "variationGroup": "beef-meatballs"
+    },
+    {
+      "batchPosition": 47,
+      "recipeId": "collection-meat-03-09",
+      "title": "Сочные тефтели из говядины с яблоком и шалфеем",
+      "category": "meat",
+      "cuisine": "Домашняя",
+      "minutes": 38,
+      "description": "Сочные тефтели из говядины. Яблоком и шалфеем дают блюду свой характер. Количество рассчитано на двоих.",
+      "ingredients": [
+        {
+          "name": "Фарш говяжий",
+          "amount": 400,
+          "unit": "г"
+        },
+        {
+          "name": "Яйцо",
+          "amount": 1,
+          "unit": "шт."
+        },
+        {
+          "name": "Панировочные сухари",
+          "amount": 30,
+          "unit": "г"
+        },
+        {
+          "name": "Яблоко",
+          "amount": 1,
+          "unit": "шт."
+        },
+        {
+          "name": "Шалфей",
+          "amount": 3,
+          "unit": "листочка"
+        },
+        {
+          "name": "Масло оливковое",
+          "amount": 1,
+          "unit": "ст. л."
+        },
+        {
+          "name": "Соль",
+          "amount": 0,
+          "unit": "по вкусу"
+        }
+      ],
+      "currentPhotoId": "photo-1544025162-d76694265947",
+      "photo": {
+        "status": "not_started",
+        "kind": null,
+        "sourcePage": null,
+        "creator": null,
+        "license": null,
+        "assetPath": null,
+        "visualReview": false,
+        "rightsReview": false,
+        "connected": false
+      },
+      "editorialFlags": [
+        "needs_copy_review"
+      ],
+      "variationGroup": "beef-meatballs"
+    },
+    {
+      "batchPosition": 48,
+      "recipeId": "collection-meat-03-10",
+      "title": "Сочные тефтели из говядины с черносливом и тмином",
+      "category": "meat",
+      "cuisine": "Домашняя",
+      "minutes": 38,
+      "description": "Сочные тефтели из говядины. Черносливом и тмином дают блюду свой характер. Количество рассчитано на двоих.",
+      "ingredients": [
+        {
+          "name": "Фарш говяжий",
+          "amount": 400,
+          "unit": "г"
+        },
+        {
+          "name": "Яйцо",
+          "amount": 1,
+          "unit": "шт."
+        },
+        {
+          "name": "Панировочные сухари",
+          "amount": 30,
+          "unit": "г"
+        },
+        {
+          "name": "Чернослив без косточек",
+          "amount": 80,
+          "unit": "г"
+        },
+        {
+          "name": "Тмин",
+          "amount": 0.5,
+          "unit": "ч. л."
+        },
+        {
+          "name": "Масло оливковое",
+          "amount": 1,
+          "unit": "ст. л."
+        },
+        {
+          "name": "Соль",
+          "amount": 0,
+          "unit": "по вкусу"
+        }
+      ],
+      "currentPhotoId": "photo-1544025162-d76694265947",
+      "photo": {
+        "status": "not_started",
+        "kind": null,
+        "sourcePage": null,
+        "creator": null,
+        "license": null,
+        "assetPath": null,
+        "visualReview": false,
+        "rightsReview": false,
+        "connected": false
+      },
+      "editorialFlags": [
+        "needs_copy_review"
+      ],
+      "variationGroup": "beef-meatballs"
+    },
+    {
+      "batchPosition": 49,
+      "recipeId": "collection-meat-04-01",
+      "title": "Говядина, тушённая кусочками с лимоном и тимьяном",
+      "category": "meat",
+      "cuisine": "Домашняя",
+      "minutes": 95,
+      "description": "Говядина, тушённая кусочками. Лимоном и тимьяном дают блюду свой характер. Количество рассчитано на двоих.",
+      "ingredients": [
+        {
+          "name": "Говядина для тушения",
+          "amount": 400,
+          "unit": "г"
+        },
+        {
+          "name": "Бульон овощной",
+          "amount": 250,
+          "unit": "мл"
+        },
+        {
+          "name": "Лимон",
+          "amount": 0.5,
+          "unit": "шт."
+        },
+        {
+          "name": "Тимьян",
+          "amount": 2,
+          "unit": "веточки"
+        },
+        {
+          "name": "Масло оливковое",
+          "amount": 1,
+          "unit": "ст. л."
+        },
+        {
+          "name": "Соль",
+          "amount": 0,
+          "unit": "по вкусу"
+        }
+      ],
+      "currentPhotoId": "photo-1544025162-d76694265947",
+      "photo": {
+        "status": "not_started",
+        "kind": null,
+        "sourcePage": null,
+        "creator": null,
+        "license": null,
+        "assetPath": null,
+        "visualReview": false,
+        "rightsReview": false,
+        "connected": false
+      },
+      "editorialFlags": [
+        "needs_copy_review"
+      ],
+      "variationGroup": "braised-beef"
+    },
+    {
+      "batchPosition": 50,
+      "recipeId": "collection-meat-04-02",
+      "title": "Говядина, тушённая кусочками с грибами и розмарином",
+      "category": "meat",
+      "cuisine": "Домашняя",
+      "minutes": 95,
+      "description": "Говядина, тушённая кусочками. Грибами и розмарином дают блюду свой характер. Количество рассчитано на двоих.",
+      "ingredients": [
+        {
+          "name": "Говядина для тушения",
+          "amount": 400,
+          "unit": "г"
+        },
+        {
+          "name": "Бульон овощной",
+          "amount": 250,
+          "unit": "мл"
+        },
+        {
+          "name": "Шампиньоны",
+          "amount": 120,
+          "unit": "г"
+        },
+        {
+          "name": "Розмарин",
+          "amount": 1,
+          "unit": "веточка"
+        },
+        {
+          "name": "Масло оливковое",
+          "amount": 1,
+          "unit": "ст. л."
+        },
+        {
+          "name": "Соль",
+          "amount": 0,
+          "unit": "по вкусу"
+        }
+      ],
+      "currentPhotoId": "photo-1544025162-d76694265947",
+      "photo": {
+        "status": "not_started",
+        "kind": null,
+        "sourcePage": null,
+        "creator": null,
+        "license": null,
+        "assetPath": null,
+        "visualReview": false,
+        "rightsReview": false,
+        "connected": false
+      },
+      "editorialFlags": [
+        "needs_copy_review"
+      ],
+      "variationGroup": "braised-beef"
+    }
+  ],
+  "candidateSummary": {
+    "candidatesFound": 16,
+    "visuallyInspected": 16,
+    "licensePolicyReviewed": true,
+    "notYetConnected": 16,
+    "unresolvedFirst20Positions": [
+      6,
+      8,
+      16,
+      19
+    ],
+    "note": "Candidates are not approved production assets until crop/visual fit and page integration are checked."
+  }
+}

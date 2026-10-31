@@ -1,0 +1,59 @@
+name: Find real dish photos (Pexels-first)
+
+on:
+  schedule:
+    - cron: '23 * * * *' # Hourly UTC, may be delayed by GitHub
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: snachala-uzhin-stock-discovery
+  cancel-in-progress: false
+
+jobs:
+  search:
+    if: ${{ vars.PHOTO_STOCK_SEARCH_ENABLED == 'true' }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - name: Checkout reviewed source
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+        with:
+          fetch-depth: 0
+          persist-credentials: true
+      - name: Test indexer without external requests
+        run: python3 photo-pipeline/pexels_search.py --batch-size 40
+      - name: Preserve reviewed script and manifest outside the results branch
+        run: |
+          set -euo pipefail
+          mkdir -p /tmp/snachala-stock
+          cp photo-pipeline/pexels_search.py /tmp/snachala-stock/pexels_search.py
+          cp photo-library/recipes.json /tmp/snachala-stock/recipes.json
+      - name: Search Pexels and checkpoint candidate metadata (no automatic approval)
+        shell: bash
+        env:
+          PEXELS_API_KEY: ${{ secrets.PEXELS_API_KEY }}
+        run: |
+          set -euo pipefail
+          test -n "$PEXELS_API_KEY" || { echo 'Missing PEXELS_API_KEY secret'; exit 1; }
+          if git ls-remote --exit-code --heads origin photo-library/stock-discovery >/dev/null; then
+            git fetch origin photo-library/stock-discovery:refs/remotes/origin/photo-library/stock-discovery
+            git switch -c photo-library/stock-discovery origin/photo-library/stock-discovery
+          else
+            git switch -c photo-library/stock-discovery
+          fi
+          python3 /tmp/snachala-stock/pexels_search.py \
+            --manifest /tmp/snachala-stock/recipes.json \
+            --output photo-library/stock-discovery --batch-size 40 --execute
+          git add -A photo-library/stock-discovery
+          if git diff --cached --quiet; then
+            echo 'All recipes already indexed or no change'
+          else
+            git -c user.name='photo-pipeline[bot]' \
+                -c user.email='41898282+github-actions[bot]@users.noreply.github.com' \
+                commit -m 'Index Pexels candidates for next recipe batch'
+            git push origin HEAD:refs/heads/photo-library/stock-discovery
+          fi
+          echo 'No photographs approved or connected to production.'

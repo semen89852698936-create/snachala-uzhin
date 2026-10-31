@@ -1,0 +1,6 @@
+{
+  "schema_version": 1,
+  "recipe_ids": [],
+  "approved_for_ai_generation": false,
+  "notes": "No AI generation unless editorial approval flag is true, individual recipe ID allowlisted, workflow flags enabled, and an API key is present."
+}
