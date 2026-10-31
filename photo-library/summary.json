@@ -16,6 +16,6 @@
   },
   "unique_current_photo_ids": 17,
   "approved_new_images": 0,
-  "status": "photo_research_queue_not_approved",
+  "status": "research_queue_and_ai_briefs_ready_not_approved",
   "warning": "Search URLs are not actual photos; verify visual match and rights before publishing."
 }
