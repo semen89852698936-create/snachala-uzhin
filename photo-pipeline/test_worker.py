@@ -24,10 +24,12 @@ class PhotoWorkerTests(unittest.TestCase):
         self.manifest = self.base / "recipes.json"
         self.manifest.write_text(json.dumps({"recipes": recipes()}, ensure_ascii=False), encoding="utf-8")
         self.output = self.base / "photo-library"
+        self.allowlist = self.base / "ai-allowlist.json"
+        self.allowlist.write_text(json.dumps({"recipe_ids": ["recipe-0001", "recipe-0002", "recipe-0003"]}))
 
     def args(self, **kwargs):
         args = dict(manifest=str(self.manifest), output=str(self.output),
-                    max_per_run=3, max_total=2, execute=False)
+                    ai_allowlist=str(self.allowlist), max_per_run=3, max_total=2, execute=False)
         args.update(kwargs)
         return argparse.Namespace(**args)
 
@@ -56,6 +58,13 @@ class PhotoWorkerTests(unittest.TestCase):
             self.assertEqual(api.call_count, 2, "resuming must not duplicate paid calls")
             record = json.loads((self.output / "records/recipe-0001.json").read_text())
             self.assertEqual(record["status"], "generated_pending_review")
+
+    def test_never_generate_without_ai_allowlist(self):
+        self.allowlist.write_text(json.dumps({"recipe_ids": []}))
+        with patch.dict(os.environ, {"OPENAI_API_KEY": "test-only"}), \
+             patch.object(worker, "request_image") as api:
+            self.assertEqual(worker.run(self.args(execute=True)), 0)
+            api.assert_not_called()
 
     def test_rejects_duplicate_recipe_ids(self):
         invalid = recipes()
