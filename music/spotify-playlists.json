@@ -1,0 +1,17 @@
+{
+  "spotify": {
+    "cooking": {
+      "title": "Под что готовить",
+      "playlistUrl": null
+    },
+    "dinner": {
+      "title": "Под что ужинать",
+      "playlistUrl": null
+    },
+    "continue": {
+      "title": "Под что продолжить",
+      "playlistUrl": null
+    }
+  },
+  "note": "Добавить реальные ссылки Spotify после создания плейлистов в аккаунте; не подставлять вымышленные ID"
+}
