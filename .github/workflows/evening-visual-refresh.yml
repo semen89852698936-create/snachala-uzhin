@@ -1,0 +1,72 @@
+name: Apply evening visual refresh and test
+on:
+  push:
+    branches:
+      - feature/evening-typography-photo-refresh
+    paths:
+      - scripts/refresh-evening-visuals.py
+      - scripts/e2e-evening-visuals.cjs
+      - .github/workflows/evening-visual-refresh.yml
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: evening-visual-refresh
+  cancel-in-progress: false
+jobs:
+  patch-and-test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 24
+    steps:
+      - name: Checkout exact feature branch
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+        with:
+          ref: feature/evening-typography-photo-refresh
+          fetch-depth: 0
+          persist-credentials: true
+      - name: Apply typography and photo edits to actual site
+        run: python3 scripts/refresh-evening-visuals.py
+      - name: Regression tests for 1001 recipes and navigation
+        run: python3 -m unittest discover -s scripts -p 'test_evening_layout.py' -v
+      - name: Check JavaScript syntax
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 - <<'PY'
+          import re
+          from pathlib import Path
+          html=Path("index.html").read_text(encoding="utf-8")
+          i=0
+          for attrs,js in re.findall(r'<script([^>]*)>(.*?)</script>',html,flags=re.S):
+              if "application/json" in attrs or "src=" in attrs or not js.strip():continue
+              i+=1
+              Path(f"/tmp/evening-refresh-{i}.js").write_text(js)
+          PY
+          for f in /tmp/evening-refresh-*.js; do node --check "$f"; done
+      - name: Install Playwright
+        run: npm install --no-package-lock --no-save playwright@1.56.1
+      - name: Install Chromium
+        run: npx playwright install --with-deps chromium
+      - name: Verify desktop and mobile layout and recipes
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 -m http.server 8765 --bind 127.0.0.1 >/tmp/refresh-http.log 2>&1 &
+          node scripts/e2e-evening.cjs
+          node scripts/e2e-evening-visuals.cjs
+      - name: Save screenshot evidence
+        if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
+        with:
+          name: evening-refreshed-desktop-mobile
+          path: /tmp/evening-*.png
+          if-no-files-found: ignore
+      - name: Save HTML in feature branch, do not publish automatically
+        shell: bash
+        run: |
+          set -euo pipefail
+          git add index.html
+          if ! git diff --cached --quiet; then
+            git -c user.name='evening-layout[bot]' -c user.email='41898282+github-actions[bot]@users.noreply.github.com' commit -m 'Unify Our Evening typography and replace duplicated photography'
+            git push origin HEAD:refs/heads/feature/evening-typography-photo-refresh
+          fi
