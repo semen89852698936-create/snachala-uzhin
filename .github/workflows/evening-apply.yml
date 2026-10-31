@@ -1,0 +1,58 @@
+name: Apply Our Evening layout safely
+on:
+  push:
+    branches:
+      - feature/nash-vecher-separate-screen
+    paths:
+      - scripts/apply-evening-layout.py
+      - scripts/test_evening_layout.py
+      - .github/workflows/evening-apply.yml
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: evening-layout-apply
+  cancel-in-progress: false
+jobs:
+  apply:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Checkout work branch
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+        with:
+          ref: feature/nash-vecher-separate-screen
+          fetch-depth: 0
+          persist-credentials: true
+      - name: Apply small, reviewed patch to the large original HTML
+        run: python3 scripts/apply-evening-layout.py
+      - name: Verify layout and recipe catalog invariants
+        run: python3 -m unittest discover -s scripts -p 'test_evening_layout.py' -v
+      - name: Validate inline JavaScript syntax
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 - <<'PY'
+          import re
+          from pathlib import Path
+          s=Path("index.html").read_text(encoding="utf-8")
+          count=0
+          for attrs,js in re.findall(r'<script([^>]*)>(.*?)</script>',s,flags=re.S):
+              if "application/json" in attrs or "src=" in attrs or not js.strip():
+                  continue
+              count+=1
+              Path("/tmp/evening-script-%d.js"%count).write_text(js,encoding="utf-8")
+          print("Inline JS scripts:",count)
+          PY
+          for f in /tmp/evening-script-*.js; do node --check "$f"; done
+      - name: Checkpoint reviewed change, never publish production here
+        shell: bash
+        run: |
+          set -euo pipefail
+          git add index.html
+          if git diff --cached --quiet; then
+            echo "No change necessary"
+          else
+            git -c user.name='layout-check[bot]' -c user.email='41898282+github-actions[bot]@users.noreply.github.com' commit -m "Apply standalone Our Evening mode to the real site"
+            git push origin HEAD:refs/heads/feature/nash-vecher-separate-screen
+          fi
