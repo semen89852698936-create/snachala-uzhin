@@ -42,6 +42,7 @@ const assert=require('node:assert/strict');
    await page.waitForTimeout(350);
    await page.locator('#recipeEveningInvite').screenshot({path:'/tmp/evening-recipe-visual-'+width+'.png'});
    await page.locator('#continueEveningBtn').click();
+   await page.waitForFunction(()=>location.hash==='#evening'&&!document.getElementById('eveningPinned').hidden,null,{timeout:5000});
    assert.equal(await page.locator('#eveningPinned').isVisible(),true,'Recipe should carry into evening');
    console.log('PASS responsive photos and type:',width,JSON.stringify(style));
    await page.close();
