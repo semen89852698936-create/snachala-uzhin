@@ -1,0 +1,24 @@
+name: Verify photo pipeline
+on:
+  pull_request:
+    paths:
+      - 'photo-pipeline/**'
+      - 'photo-library/**'
+      - '.github/workflows/photo-pipeline.yml'
+      - '.github/workflows/photo-pipeline-tests.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  tests:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Checkout
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+      - name: Python syntax check
+        run: python3 -m py_compile photo-pipeline/worker.py photo-pipeline/test_worker.py
+      - name: Mocked unit tests (no API calls)
+        run: python3 -m unittest discover -s photo-pipeline -p 'test_*.py' -v
+      - name: Verify complete manifest and dry-run queue
+        run: python3 photo-pipeline/worker.py --manifest photo-library/recipes.json --max-per-run 10 --max-total 50
