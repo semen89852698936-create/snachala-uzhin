@@ -1,0 +1,51 @@
+name: Approved homepage demo build and browser QA
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - fix/our-evening-progress-20261031
+    paths:
+      - demo-tools/**
+      - .github/workflows/approved-demo.yml
+permissions:
+  contents: write
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: fix/our-evening-progress-20261031
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Build separate demo from approved live URL
+        run: python3 demo-tools/build_demo.py
+      - name: Browser dependencies
+        run: |
+          npm install --no-save playwright
+          npx playwright install --with-deps chromium
+      - name: Start local demo
+        run: |
+          python3 -m http.server 8765 >/tmp/demo-http.log 2>&1 &
+          for i in $(seq 1 30); do curl -fsS http://127.0.0.1:8765/demo/ >/dev/null && exit 0; sleep 1; done
+          exit 1
+      - name: Test and screenshot desktop and mobile
+        run: node demo-tools/test_demo.cjs
+      - name: Upload QA screenshots
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: approved-demo-qa
+          path: demo-tools/results/
+          if-no-files-found: warn
+      - name: Commit verified demo only to review branch
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add demo/index.html demo/nashe-vecher.html
+          if ! git diff --cached --quiet; then
+            git commit -m "Build tested demo from owner-approved preview homepage"
+            git push
+          fi
