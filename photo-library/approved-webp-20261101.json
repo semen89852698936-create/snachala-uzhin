@@ -1,6 +1,6 @@
 {
   "approved_date": "2026-11-01",
-  "status": "approved_local_ready_for_test",
+  "status": "published_production_verified",
   "images": [
     {
       "recipe_id": "med-fish",
@@ -23,7 +23,9 @@
       "owner_approved": true,
       "source_page_checked": true,
       "webp_verified": true,
-      "published": false
+      "published": true,
+      "published_at": "2026-11-01",
+      "production_url": "https://snachala-uzhin-preview.vercel.app"
     },
     {
       "recipe_id": "pancakes",
@@ -46,7 +48,9 @@
       "owner_approved": true,
       "source_page_checked": true,
       "webp_verified": true,
-      "published": false
+      "published": true,
+      "published_at": "2026-11-01",
+      "production_url": "https://snachala-uzhin-preview.vercel.app"
     },
     {
       "recipe_id": "syrniki",
@@ -69,7 +73,10 @@
       "owner_approved": true,
       "source_page_checked": true,
       "webp_verified": true,
-      "published": false
+      "published": true,
+      "published_at": "2026-11-01",
+      "production_url": "https://snachala-uzhin-preview.vercel.app"
     }
-  ]
+  ],
+  "production_deployment_id": "dpl_CQPyvmcuSYyTE7ouBbtAU6mqniqK"
 }
