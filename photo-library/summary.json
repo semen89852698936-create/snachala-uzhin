@@ -8,10 +8,10 @@
   "first20LocallyStoredFiles": 3,
   "first20VisuallyLikedByOwner": 20,
   "first20FinalImageApproved": 3,
-  "newCandidateSourcesFound": 10,
+  "newCandidateSourcesFound": 12,
   "newCandidateLocalFiles": 0,
   "newCandidateVisualApprovals": 0,
-  "recipesWithoutSourcePage": 971,
+  "recipesWithoutSourcePage": 969,
   "distinctImageFilesLocallyConfirmed": 3,
   "notFinal": "A source page does not count as a downloaded or approved photo. Status records preserve this distinction.",
   "recommendedNextBatch": "Review 21-50 candidates; continue source search for missing in 21-50; only then assemble preview assets",
@@ -67,5 +67,9 @@
     "recipeCount": 1001,
     "localWebp200": 3,
     "nasheVecherHttpStatus": 200
-  }
+  },
+  "photoRegistryPath": "photo-library/recipes-photo-registry.csv",
+  "photoRegistryPublishedRows": 3,
+  "photoRegistryRows": 1001,
+  "nextBatchPendingSourcePages": 18
 }
