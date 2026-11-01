@@ -740,6 +740,9 @@ body.du-evening-mode #music .du-music-track-play{
   body.du-evening-mode #evening .du-evening-role-card{min-height:0}
 }
 
+
+/* New HD evening photo crop without affecting other images */
+.du-evening-together>img{object-position:78% center}
 </style>
 </head><body>
 <div class="demo-strip"><span class="demo-dot"></span> ОТКРЫТАЯ КОЛЛЕКЦИЯ · 1000 РЕЦЕПТОВ + 1 СЕКРЕТНЫЙ · ГОТОВЬТЕ ВМЕСТЕ</div>
@@ -809,7 +812,7 @@ body.du-evening-mode #music .du-music-track-play{
  <div class="du-builder-right"><div class="du-mini-eyebrow">ВАШ ПЛАН НА ВЕЧЕР</div><div class="du-menu-intro" id="menuIntro">Мягкий свет, музыка и три блюда, которыми приятно поделиться.</div><div id="menuPreview" class="du-menu-preview" aria-live="polite"></div><div class="du-menu-meta" id="menuMeta"></div><div class="du-menu-actions"><button class="du-btn du-btn-primary" id="beginEvening" type="button">Начать наш вечер <span>↗</span></button><button class="du-btn du-btn-muted" id="addMenuShopping" type="button">Список покупок <span>▤</span></button></div></div></div>
  <div class="du-evening-experience" aria-label="Совместный вечер">
   <article class="du-evening-together">
-   <img src="assets/cooking-together-romantic.avif" alt="Пара вместе замешивает тесто на уютной домашней кухне" loading="lazy" decoding="async">
+   <img src="assets/cooking-together-romantic-hd.webp" alt="Пара готовит ужин вместе в уютной кухне при тёплом вечернем свете" loading="lazy" decoding="async" onerror="this.onerror=null;this.src=\'assets/cooking-together-romantic.avif\'">
    <div class="du-evening-together-shade"></div>
    <div class="du-evening-together-content">
     <div class="du-mini-eyebrow">04 / ДВА ЧЕЛОВЕКА. ОДНА КОМАНДА.</div>
