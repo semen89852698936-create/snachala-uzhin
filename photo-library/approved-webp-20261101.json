@@ -1,0 +1,75 @@
+{
+  "approved_date": "2026-11-01",
+  "status": "approved_local_ready_for_test",
+  "images": [
+    {
+      "recipe_id": "med-fish",
+      "num": 6,
+      "pexels_id": 12653398,
+      "file": "white-fish-tomatoes.webp",
+      "title": "Белая рыба с томатами",
+      "author": "Sylwester Ficek",
+      "url": "https://www.pexels.com/photo/close-up-of-gourmet-meal-12653398/",
+      "file_path": "assets/white-fish-tomatoes.webp",
+      "previous_photo": "photo-1764150673466-da28d5d5ad5d",
+      "sha256": "10df83fb5cd631c65ce35fc9a375639f9c7789e567d560ff68897f1dcc60e63d",
+      "bytes": 145616,
+      "dimensions": [
+        1200,
+        900
+      ],
+      "license": "Pexels License",
+      "license_url": "https://www.pexels.com/license/",
+      "owner_approved": true,
+      "source_page_checked": true,
+      "webp_verified": true,
+      "published": false
+    },
+    {
+      "recipe_id": "pancakes",
+      "num": 10,
+      "pexels_id": 7855285,
+      "file": "kefir-oladki.webp",
+      "title": "Пышные оладьи на кефире",
+      "author": "Anna Pyshniuk",
+      "url": "https://www.pexels.com/photo/mini-pancakes-on-a-plate-7855285/",
+      "file_path": "assets/kefir-oladki.webp",
+      "previous_photo": "photo-1567620905732-2d1ec7ab7445",
+      "sha256": "f428cb9a807d44c9d9933c2374cb3498948aa52eaf418f82e51098747f29562f",
+      "bytes": 224682,
+      "dimensions": [
+        1200,
+        900
+      ],
+      "license": "Pexels License",
+      "license_url": "https://www.pexels.com/license/",
+      "owner_approved": true,
+      "source_page_checked": true,
+      "webp_verified": true,
+      "published": false
+    },
+    {
+      "recipe_id": "syrniki",
+      "num": 20,
+      "pexels_id": 10254478,
+      "file": "syrniki-lemon-zest.webp",
+      "title": "Домашние сырники с лимонной цедрой",
+      "author": "Yulia Ilina",
+      "url": "https://www.pexels.com/photo/close-up-shot-of-syrniki-10254478/",
+      "file_path": "assets/syrniki-lemon-zest.webp",
+      "previous_photo": "photo-1682219179121-36821753748d",
+      "sha256": "736fc922bce8d5f6247e18e92eca2b589f8a45eb1f897e9125b68d2848875c79",
+      "bytes": 93894,
+      "dimensions": [
+        1200,
+        900
+      ],
+      "license": "Pexels License",
+      "license_url": "https://www.pexels.com/license/",
+      "owner_approved": true,
+      "source_page_checked": true,
+      "webp_verified": true,
+      "published": false
+    }
+  ]
+}
