@@ -1,0 +1,62 @@
+name: Install owner-approved image into Our Evening
+on:
+  push:
+    branches: [feature/approved-evening-photo-20261101]
+    paths: ['.github/workflows/approved-user-evening-photo.yml']
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: our-evening-approved-photo
+  cancel-in-progress: false
+jobs:
+  verify-then-apply:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+        with:
+          ref: feature/approved-evening-photo-20261101
+          fetch-depth: 0
+          persist-credentials: true
+      - name: Install image decoder
+        run: python3 -m pip install --quiet Pillow==11.3.0
+      - name: Apply only the approved image
+        run: python3 scripts/apply-user-approved-evening-photo.py
+      - name: Verify images and all recipes
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          from PIL import Image
+          import json,re,hashlib
+          h=Path('index.html').read_text(encoding='utf-8')
+          p=Path('assets/our-evening-together-approved.webp')
+          with Image.open(p) as im:
+              assert im.format=='WEBP' and im.size==(1080,1350)
+          assert h.count('src="assets/our-evening-together-approved.webp"')==1
+          assert 'src="assets/cooking-together-romantic.avif"' not in h
+          assert 'Иллюстрация проекта «СНАЧАЛА УЖИН»' in h
+          assert 'Готовить вместе -<br><em>значит быть рядом.</em>' in h
+          m=re.search(r'<script id="recipeData" type="application/json">(.*?)</script>',h,re.S)
+          assert m
+          recipes=json.loads(m.group(1))
+          assert len(recipes)==1001 and len({r['id'] for r in recipes})==1001
+          print('Verified approved image and 1001 recipes.')
+          PY
+      - name: Check embedded JavaScript syntax
+        run: |
+          python3 - <<'PY'
+          import re
+          from pathlib import Path
+          h=Path('index.html').read_text(encoding='utf-8')
+          for n,(attrs,js) in enumerate(re.findall(r'<script([^>]*)>(.*?)</script>',h,re.S)):
+              if 'application/json' in attrs or 'src=' in attrs or not js.strip():continue
+              Path(f'/tmp/evening-{n}.js').write_text(js,encoding='utf-8')
+          PY
+          for p in /tmp/evening-*.js; do node --check "$p"; done
+      - name: Commit tested page patch to feature branch
+        run: |
+          set -euo pipefail
+          git add index.html photo-library/our-evening-user-approved-image.json
+          git -c user.name='approved-photo[bot]' -c user.email='41898282+github-actions[bot]@users.noreply.github.com' commit -m 'Display owner-selected photo in Our Evening card; keep original layout'
+          git push origin HEAD:refs/heads/feature/approved-evening-photo-20261101
