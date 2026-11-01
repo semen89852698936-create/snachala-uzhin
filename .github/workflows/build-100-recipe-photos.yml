@@ -1,0 +1,59 @@
+name: Deliver 100 actual recipe photos by midnight Moscow
+on:
+  push:
+    branches: [photo-library/100-photos-delivery-20261101]
+    paths:
+      - .github/workflows/build-100-recipe-photos.yml
+      - scripts/build-100-photo-delivery.py
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: deliver-100-real-photos
+  cancel-in-progress: false
+jobs:
+  build-photos:
+    runs-on: ubuntu-latest
+    timeout-minutes: 55
+    steps:
+      - name: Checkout exact photo-delivery branch
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          ref: photo-library/100-photos-delivery-20261101
+          fetch-depth: 0
+          persist-credentials: true
+      - name: Set up dependencies
+        run: python3 -m pip install --quiet pillow==11.3.0
+      - name: Download and verify 100 distinct photos
+        run: python3 -u scripts/build-100-photo-delivery.py
+      - name: Independent delivery validation
+        run: |
+          python3 - <<'PY'
+          import csv,hashlib,json,zipfile
+          from pathlib import Path
+          from PIL import Image
+          p=Path("photo-library/batch-100-20261101")
+          o=json.loads((p/"manifest.json").read_text(encoding="utf-8"))
+          files=list((p/"photos").glob("*.webp"))
+          assert len(files)==100,(len(files),o.get('missing'))
+          assert len(o['sources'])==100
+          assert len({x['source_page'] for x in o['sources']})==100,'Repeated original source'
+          assert len({x['sha256'] for x in o['sources']})==100,'Repeated binary files'
+          assert all(x['source_page'] and x['license'] for x in o['sources'])
+          for x in o['sources']:
+            f=p/x['file'];assert f.exists()
+            with Image.open(f) as im:
+              im.load()
+              assert im.format=='WEBP' and im.size==(1200,900)
+            assert hashlib.sha256(f.read_bytes()).hexdigest()==x['sha256']
+          with zipfile.ZipFile(p/"100-photos-20261101.zip") as z:
+            assert len(z.namelist())==102
+            assert not z.testzip()
+          print("VALIDATED: 100 individual usable files; ZIP, metadata, gallery")
+          PY
+      - name: Commit photographs, credits and ZIP
+        run: |
+          set -euo pipefail
+          git add photo-library/batch-100-20261101/
+          git -c user.name='photo-delivery[bot]' -c user.email='41898282+github-actions[bot]@users.noreply.github.com' commit -m 'Deliver 100 unique photographed food images, 1200x900 WebP with credits and ZIP'
+          git push origin HEAD:refs/heads/photo-library/100-photos-delivery-20261101
