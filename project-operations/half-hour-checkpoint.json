@@ -1,0 +1,53 @@
+{
+  "manual_editorial_approved": 0,
+  "note": "Physical file integrity is not ingredient correctness, license clearance or publication approval.",
+  "publication": "review_only_not_production",
+  "remaining_for_technical_check": 95,
+  "results": {
+    "lemon-spinach-pasta": {
+      "bytes": 64308,
+      "checked_utc": "2026-11-01T23:52:32.032260+00:00",
+      "height": 900,
+      "sha256": "341a270bd5ce1a0fc8d883cc19b2aeee7f24c37fd4c591cf071d1fbe7680d84c",
+      "status": "technical_pass",
+      "width": 1200
+    },
+    "meatballs": {
+      "bytes": 98318,
+      "checked_utc": "2026-11-01T23:52:33.426237+00:00",
+      "height": 900,
+      "sha256": "b360a756abab4d14c7da19a64632af0ec98b680dffcb649a77fd55771fa638d9",
+      "status": "technical_pass",
+      "width": 1200
+    },
+    "pepper-steak": {
+      "bytes": 38490,
+      "checked_utc": "2026-11-01T23:52:32.979769+00:00",
+      "height": 900,
+      "sha256": "3f4c1e71b53ac75d1e6c57ee26c9fa57b55aae350b9a9ded6d612e164d5695b0",
+      "status": "technical_pass",
+      "width": 1200
+    },
+    "salmon-lemon": {
+      "bytes": 178162,
+      "checked_utc": "2026-11-01T23:52:33.889137+00:00",
+      "height": 900,
+      "sha256": "1aed6254a571a8805e5f3d42ff5976a5101fb73882fe18da854073021f76938e",
+      "status": "technical_pass",
+      "width": 1200
+    },
+    "tomato-basil-pasta": {
+      "bytes": 125676,
+      "checked_utc": "2026-11-01T23:52:32.551451+00:00",
+      "height": 900,
+      "sha256": "84f32f6ae5fd804c5308cdfef5067f3de7314ac772620e40ca10f00a1d1443b4",
+      "status": "technical_pass",
+      "width": 1200
+    }
+  },
+  "schema_version": 1,
+  "source_manifest_sha256": "211002d83c93f8f6227679cb3179f6189984c45eb195c3dca3090ef31827711d",
+  "source_ref": "photo-library/restore-100-review-20261102",
+  "technically_verified": 5,
+  "total_archive_candidates": 100
+}
