@@ -7,8 +7,8 @@
     "to": 50
   },
   "status": "source_page_candidates_only",
-  "candidateCount": 10,
-  "needsSourcePages": 20,
+  "candidateCount": 12,
+  "needsSourcePages": 18,
   "licensePolicy": "Pexels photo pages show 'License Free'; commercial use generally permitted subject to rules. Verify page and actual image prior to publication.",
   "sources": [
     {
@@ -55,6 +55,25 @@
       "photo_downloaded": false,
       "visually_approved": false,
       "license_source_page_checked": true,
+      "publication_approved": false,
+      "site_published": false,
+      "status": "candidate_needs_image_review"
+    },
+    {
+      "n": 25,
+      "recipe_id": "collection-meat-01-07",
+      "recipe_title": "Говяжьи медальоны с луком и бальзамиком",
+      "source_page": "https://www.pexels.com/photo/slices-of-beef-with-red-onion-on-plate-18852569/",
+      "source_author": "Valeria Boltneva",
+      "source_description": "Grilled beef steak with red onion and spices",
+      "license": "Pexels License",
+      "license_page": "https://www.pexels.com/license/",
+      "license_source_page_checked": true,
+      "license_policy_checked": true,
+      "visual_match_note": "Говядина и красный лук подтверждаются описанием; бальзамик не подтверждён; медальоны не подтверждены",
+      "fit": "low",
+      "photo_downloaded": false,
+      "visually_approved": false,
       "publication_approved": false,
       "site_published": false,
       "status": "candidate_needs_image_review"
@@ -140,6 +159,25 @@
       "status": "candidate_needs_image_review"
     },
     {
+      "n": 46,
+      "recipe_id": "collection-meat-03-08",
+      "recipe_title": "Сочные тефтели из говядины с сливками и зелёным перцем",
+      "source_page": "https://www.pexels.com/photo/meatballs-and-potatoes-on-pan-25315519/",
+      "source_author": "Nadin Sh",
+      "source_description": "Meatballs on mashed potatoes with cream sauce and herbs",
+      "license": "Pexels License",
+      "license_page": "https://www.pexels.com/license/",
+      "license_source_page_checked": true,
+      "license_policy_checked": true,
+      "visual_match_note": "Тефтели и сливочный соус подтверждаются описанием; говядина и зелёный перец не подтверждены",
+      "fit": "low",
+      "photo_downloaded": false,
+      "visually_approved": false,
+      "publication_approved": false,
+      "site_published": false,
+      "status": "candidate_needs_image_review"
+    },
+    {
       "n": 49,
       "recipe_id": "collection-meat-04-01",
       "recipe_title": "Говядина, тушённая кусочками с лимоном и тимьяном",
@@ -171,5 +209,6 @@
       "site_published": false,
       "status": "candidate_needs_image_review"
     }
-  ]
+  ],
+  "legalReviewNote": "License policy and individual Pexels page labels checked for new candidates; not a guarantee of rights clearance. No files downloaded or approved."
 }
