@@ -1,0 +1,64 @@
+name: Assemble approved recipe WebP assets and validate
+on:
+  push:
+    branches: [photo-library-1001-registry-20261101-1323]
+    paths:
+      - '.github/workflows/approved-photo-webp.yml'
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: approved-photo-webp
+  cancel-in-progress: false
+jobs:
+  create-and-check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 18
+    steps:
+      - name: Checkout prepared photo branch
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+        with:
+          ref: photo-library-1001-registry-20261101-1323
+          persist-credentials: true
+          fetch-depth: 0
+      - name: Set up Python and Pillow
+        run: python3 -m pip install --quiet Pillow==11.3.0
+      - name: Generate the three approved real WebP files
+        run: python3 scripts/assemble-approved-webp.py
+      - name: Check image dimensions and recipe count
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          from PIL import Image
+          import json,re
+          s=Path('index.html').read_text(encoding='utf-8')
+          m=re.search(r'<script id="recipeData" type="application/json">(.*?)</script>',s,re.S)
+          assert m
+          r=json.loads(m[1])
+          assert len(r)==1001 and len(set(x['id'] for x in r))==1001
+          names={'med-fish':'white-fish-tomatoes.webp','pancakes':'kefir-oladki.webp','syrniki':'syrniki-lemon-zest.webp'}
+          for key,name in names.items():
+              p=Path('assets')/name
+              with Image.open(p) as image:
+                  assert image.format=='WEBP' and image.size==(1200,900)
+              assert next(x for x in r if x['id']==key)['photo']==str(p)
+          assert all(x['photo'] not in (None,'') for x in r)
+          print('All 1001 recipes preserved, three local WebP photos valid.')
+          PY
+      - name: Check JavaScript syntax
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          import re
+          html=Path('index.html').read_text(encoding='utf-8')
+          for n,(attrs,js) in enumerate(re.findall(r'<script([^>]*)>(.*?)</script>',html,re.S)):
+              if 'application/json' in attrs or 'src=' in attrs or not js.strip():continue
+              Path(f'/tmp/photo-gallery-{n}.js').write_text(js,encoding='utf-8')
+          PY
+          for js in /tmp/photo-gallery-*.js; do node --check "$js"; done
+      - name: Preserve verified WebP and site patch in prepared branch
+        run: |
+          set -euo pipefail
+          git add index.html assets/*.webp photo-library/approved-webp-20261101.json photo-library/summary.json photo-library/first20-licensed-preview-20261101.json photo-library/recipe-photo-registry.csv
+          git -c user.name='photo-asset[bot]' -c user.email='41898282+github-actions[bot]@users.noreply.github.com' commit -m 'Store three approved recipe WebP images and update the 1001-recipe catalog'
+          git push origin HEAD:refs/heads/photo-library-1001-registry-20261101-1323
