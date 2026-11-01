@@ -99,12 +99,13 @@
       "exact_prior_gallery_match": false,
       "final_asset_approved": true,
       "previous_photo": "photo-1519708227418-c8fd9a32b7a2",
-      "site_photo_published": false,
+      "site_photo_published": true,
       "visually_approved_by_owner": true,
       "local_file": "assets/white-fish-tomatoes.webp",
       "local_webp_sha256": "10df83fb5cd631c65ce35fc9a375639f9c7789e567d560ff68897f1dcc60e63d",
       "webp_size_bytes": 145616,
-      "publication_pending_deploy": true
+      "publication_pending_deploy": false,
+      "published_at": "2026-11-01"
     },
     {
       "n": 7,
@@ -167,12 +168,13 @@
       "exact_prior_gallery_match": false,
       "final_asset_approved": true,
       "previous_photo": "photo-1528207776546-365bb710ee93",
-      "site_photo_published": false,
+      "site_photo_published": true,
       "visually_approved_by_owner": true,
       "local_file": "assets/kefir-oladki.webp",
       "local_webp_sha256": "f428cb9a807d44c9d9933c2374cb3498948aa52eaf418f82e51098747f29562f",
       "webp_size_bytes": 224682,
-      "publication_pending_deploy": true
+      "publication_pending_deploy": false,
+      "published_at": "2026-11-01"
     },
     {
       "n": 11,
@@ -331,16 +333,19 @@
       "exact_prior_gallery_match": false,
       "final_asset_approved": true,
       "previous_photo": "photo-1528207776546-365bb710ee93",
-      "site_photo_published": false,
+      "site_photo_published": true,
       "visually_approved_by_owner": true,
       "local_file": "assets/syrniki-lemon-zest.webp",
       "local_webp_sha256": "736fc922bce8d5f6247e18e92eca2b589f8a45eb1f897e9125b68d2848875c79",
       "webp_size_bytes": 93894,
-      "publication_pending_deploy": true
+      "publication_pending_deploy": false,
+      "published_at": "2026-11-01"
     }
   ],
   "published_at": "2026-11-01",
   "production_url": "https://snachala-uzhin-preview.vercel.app/#catalog",
   "github_commit": "affc44d52545b7ef1bf84e32eaba8468e9a3ca9b",
-  "approval_scope": "Owner accepted visual look of all 20 cards; exact recipe consistency and long-term original file ownership not certified"
+  "approval_scope": "Owner accepted visual look of all 20 cards; exact recipe consistency and long-term original file ownership not certified",
+  "publication_status": "Three additional first-20 WebP photo replacements published to production November 1 2026; others remain external-source illustrations",
+  "last_deployment_id": "dpl_CQPyvmcuSYyTE7ouBbtAU6mqniqK"
 }
