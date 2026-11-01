@@ -1,0 +1,37 @@
+name: Apply approved evening design without browser dependencies
+on:
+  push:
+    branches: [feature/evening-approved-story-2026-11]
+    paths: ['.github/workflows/approved-evening-apply.yml']
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  apply:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+        with:
+          ref: feature/evening-approved-story-2026-11
+          fetch-depth: 0
+      - run: python3 scripts/apply-approved-evening-story.py
+      - run: python3 -m unittest discover -s scripts -p test_evening_layout.py -v
+      - name: Check script syntax
+        run: |
+          python3 - <<'PY'
+          import re
+          from pathlib import Path
+          s=Path('index.html').read_text()
+          for i,(a,j) in enumerate(re.findall(r'<script([^>]*)>(.*?)</script>',s,re.S)):
+              if 'application/json' in a or not j.strip():continue
+              Path(f'/tmp/s{i}.js').write_text(j)
+          PY
+          for f in /tmp/s*.js; do node --check "$f"; done
+      - name: Save verified HTML
+        run: |
+          git add index.html
+          if ! git diff --cached --quiet; then
+            git -c user.name='approved-layout[bot]' -c user.email='41898282+github-actions[bot]@users.noreply.github.com' commit -m 'Integrate approved Our Evening website design'
+            git push origin HEAD:refs/heads/feature/evening-approved-story-2026-11
+          fi
