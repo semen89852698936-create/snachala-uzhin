@@ -236,7 +236,7 @@ def execute(repo: str, token: str, live: bool) -> dict:
         results[item["recipe_id"]] = result
         checked.append({"recipe_id": item["recipe_id"], "number": item["number"],
                         "status": result["status"], "detail": result.get("error")})
-    passing = sum(x.get("status") == "technical_pass" and
+    passing = sum(results.get(x["recipe_id"], {}).get("status") == "technical_pass" and
                   results.get(x["recipe_id"], {}).get("sha256") == x["sha256"]
                   for x in items)
     queue = queue_entries(items, results)
