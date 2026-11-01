@@ -1,0 +1,64 @@
+name: Fix approved Our Evening cooking photo
+on:
+  push:
+    branches: [fix-our-evening-together-photo-20261101]
+    paths: ['.github/workflows/fix-our-evening-together-photo.yml']
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: our-evening-cooking-photo
+  cancel-in-progress: false
+jobs:
+  build-and-check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+        with:
+          ref: fix-our-evening-together-photo-20261101
+          fetch-depth: 0
+          persist-credentials: true
+      - name: Convert original Pexels image to high quality WebP and update site
+        run: |
+          python3 -m pip install --quiet Pillow==11.3.0
+          python3 scripts/replace-our-evening-together-photo.py
+      - name: Check image, Russian heading, attribution and 1001 recipes
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          from PIL import Image
+          import re,json
+          image=Path('assets/our-evening-together-helena-lopes-hq.webp')
+          with Image.open(image) as im:
+              assert im.format=='WEBP' and im.size==(1800,1800)
+          html=Path('index.html').read_text(encoding='utf-8')
+          assert '<img src="assets/our-evening-together-helena-lopes-hq.webp"' in html
+          assert 'Готовить вместе -<br><em>значит быть рядом.</em>' in html
+          assert 'Helena Lopes / Pexels</a>' in html
+          assert 'src="assets/cooking-together-romantic.avif"' not in html
+          dataset=re.search(r'<script id="recipeData" type="application/json">(.*?)</script>',html,re.S)
+          assert dataset
+          recipes=json.loads(dataset.group(1))
+          assert len(recipes)==1001 and len({r['id'] for r in recipes})==1001
+          for node in ['du-evening-role-grid','swapEveningRoles','eveningRoleStatus','eveningInviteName']:
+              assert node in html, node
+          print('PASS 1001 recipes, the cooking card, credit and role interactions.')
+          PY
+      - name: Validate JavaScript
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          import re
+          html=Path('index.html').read_text(encoding='utf-8')
+          for n,(attrs,js) in enumerate(re.findall(r'<script([^>]*)>(.*?)</script>',html,re.S)):
+              if 'application/json' in attrs or 'src=' in attrs or not js.strip():continue
+              Path(f'/tmp/our-evening-js-{n}.js').write_text(js,encoding='utf-8')
+          PY
+          for file in /tmp/our-evening-js-*.js; do node --check "$file"; done
+      - name: Commit checked asset to the dedicated branch
+        run: |
+          set -euo pipefail
+          git add index.html assets/our-evening-together-helena-lopes-hq.webp photo-library/our-evening-together-photo-20261101.json
+          git -c user.name='photo-asset[bot]' -c user.email='41898282+github-actions[bot]@users.noreply.github.com' commit -m 'Replace low quality Our Evening cooking photo with licensed 1800px WebP'
+          git push origin HEAD:refs/heads/fix-our-evening-together-photo-20261101
