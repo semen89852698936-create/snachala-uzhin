@@ -2,7 +2,7 @@ name: Apply approved Our Evening photo to invitation preview
 on:
   push:
     branches: [feature/evening-invitation-table-photo-20261101]
-    paths: ['.github/workflows/apply-invitation-preview-photo.yml']
+    paths: ['.github/workflows/apply-invitation-preview-photo.yml', 'scripts/apply-user-approved-evening-photo.py']
   workflow_dispatch:
 permissions:
   contents: write
