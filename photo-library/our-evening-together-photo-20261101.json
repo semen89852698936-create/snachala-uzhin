@@ -1,0 +1,19 @@
+{
+  "asset": "assets/our-evening-together-helena-lopes-hq.webp",
+  "source_page": "https://www.pexels.com/photo/couple-enjoys-cooking-together-in-kitchen-27176133/",
+  "photographer": "Helena Lopes",
+  "license": "Pexels License",
+  "license_url": "https://www.pexels.com/license/",
+  "resolution": [
+    1800,
+    1800
+  ],
+  "format": "WebP",
+  "bytes": 270528,
+  "sha256": "5dc1a33697bd89dda12a1eafb394a951fbf25a0367fd5897ef50b73328791c3b",
+  "old_asset": "assets/cooking-together-romantic.avif",
+  "replaces_card": "Готовить вместе - значит быть рядом",
+  "license_notes": "Pexels free-license photo; no implied endorsement of the website by subjects",
+  "verified": "image format, dimensions, recipe dataset unchanged and credit updated",
+  "status": "prepared_for_preview"
+}
