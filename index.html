@@ -589,15 +589,31 @@ body.du-evening-mode .main-nav [data-nav="evening"]{color:#8a4354;font-weight:80
 }
 
 
-/* User-approved Our Evening reference artwork, cropped faithfully from the supplied visual
-   mockup. Do not replace without explicit approval. */
-.du-evening-landing-photo{aspect-ratio:340/587;min-height:0;max-height:none;}
-.du-evening-landing-photo>img{object-fit:cover;object-position:center;filter:none;}
-.du-evening-landing-photo:after{display:none;}
-.du-evening-landing-caption{display:none;} /* Caption already in approved reference pixels. */
-.du-story-dinner-photo img{object-fit:cover;object-position:center;filter:none;}
-.du-story-dinner-photo:after{display:none;}
-@media(max-width:760px){.du-evening-landing-photo{aspect-ratio:340/587;min-height:0;max-height:none;}}
+/* Approved Our Evening high-resolution hero.
+   Recreated clean photo; caption is real responsive HTML text, not raster artwork. */
+.du-evening-landing-photo{aspect-ratio:740/1234;min-height:0;max-height:none;isolation:isolate}
+.du-evening-landing-photo>img{object-fit:cover;object-position:center;filter:none}
+.du-evening-landing-photo:after{
+  display:block;inset:auto 0 0;height:36%;z-index:0;
+  background:linear-gradient(180deg,transparent 0%,rgba(24,18,17,.16) 38%,rgba(24,18,17,.67) 100%);
+  pointer-events:none;
+}
+.du-evening-landing-caption{
+  display:block;z-index:2;left:clamp(18px,3vw,30px);bottom:clamp(23px,3.5vw,44px);
+  max-width:calc(100% - 40px);
+  font:italic 28px/1.16 var(--serif,'Cormorant Garamond',Georgia,serif);
+  color:#fffaf5;text-shadow:0 2px 9px rgba(0,0,0,.55);
+  letter-spacing:.005em;pointer-events:none;
+}
+.du-story-dinner-photo img{object-fit:cover;object-position:center;filter:none}
+.du-story-dinner-photo:after{display:none}
+@media(max-width:760px){
+  .du-evening-landing-photo{aspect-ratio:740/1234;min-height:0;max-height:none}
+  .du-evening-landing-caption{font-size:clamp(23px,6.5vw,28px);left:20px;bottom:24px}
+}
+@media(prefers-reduced-motion:reduce){
+  .du-evening-landing-photo>img{transition:none}
+}
 </style>
 </head><body>
 <div class="demo-strip"><span class="demo-dot"></span> ОТКРЫТАЯ КОЛЛЕКЦИЯ · 1000 РЕЦЕПТОВ + 1 СЕКРЕТНЫЙ · ГОТОВЬТЕ ВМЕСТЕ</div>
@@ -620,7 +636,7 @@ body.du-evening-mode .main-nav [data-nav="evening"]{color:#8a4354;font-weight:80
 <section class="du-quote-strip"><div class="container"><span>«</span> Некоторые ужины заканчиваются завтраком. <span>»</span></div></section>
 <section id="eveningLanding" class="du-evening-landing container" aria-labelledby="eveningLandingTitle">
   <div class="du-evening-landing-photo">
-    <img src="assets/our-evening-approved-hero.avif" alt="Утверждённый кадр: мужчина готовит ужин на кухне, женщина с улыбкой смотрит на него" decoding="async">
+    <img src="assets/our-evening-hero-hq.avif" width="740" height="1234" loading="eager" fetchpriority="high" alt="Утверждённый кадр: мужчина готовит ужин на кухне, женщина с улыбкой смотрит на него" decoding="async">
     <div class="du-evening-landing-caption">✳ Совместная готовка<br>для особенного вечера</div>
     
   </div>
