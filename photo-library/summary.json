@@ -58,5 +58,14 @@
     }
   ],
   "projectRepo": "semen89852698936-create/snachala-uzhin",
-  "lastApprovedWebpBatch": "photo-library/approved-webp-20261101.json"
+  "lastApprovedWebpBatch": "photo-library/approved-webp-20261101.json",
+  "first20ProductionWebpCount": 3,
+  "lastProductionRelease": "2026-11-01",
+  "lastProductionDeploymentId": "dpl_CQPyvmcuSYyTE7ouBbtAU6mqniqK",
+  "productionVerification": {
+    "site": "https://snachala-uzhin-preview.vercel.app",
+    "recipeCount": 1001,
+    "localWebp200": 3,
+    "nasheVecherHttpStatus": 200
+  }
 }
