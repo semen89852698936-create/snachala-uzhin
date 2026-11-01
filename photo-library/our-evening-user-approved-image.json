@@ -8,5 +8,10 @@
   "size_bytes": 180846,
   "sha256": "c9aab4e957ff38ccd28b6ff69d1f065fc1d36fd028031dc5fa4235a1c91f805b",
   "recipes_preserved": 1001,
-  "status": "prepared_and_verified_not_yet_live"
+  "status": "production_verified",
+  "deployment_id": "dpl_iagTwJR9UxruQsCWYvUxN7gPv2Bj",
+  "published_date": "2026-11-01",
+  "production_url": "https://snachala-uzhin-preview.vercel.app/#evening",
+  "live_photo_http_status": 200,
+  "live_recipe_count": 1001
 }
