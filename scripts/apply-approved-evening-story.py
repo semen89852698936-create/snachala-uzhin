@@ -143,8 +143,9 @@ def main():
     if MARKER in s:
         print("Already integrated")
         return 0
-    recipe=s[s.indexOf('<script id="recipeData"'):s.indexOf('</script>',s.indexOf('<script id="recipeData"'))]
-    items=json.loads(re.search(r'>(\[.*\])$',recipe,re.S).group(1))
+    match=re.search(r'<script id="recipeData" type="application/json">([\s\S]*?)</script>',s)
+    if not match:raise ValueError("Recipe data script missing")
+    items=json.loads(match.group(1))
     assert len(items)==1001
     ids={x["id"] for x in items}
     assert all(x in ids for x in ("salmon-lemon","collection-pasta-01-03","chocolate-cake"))
