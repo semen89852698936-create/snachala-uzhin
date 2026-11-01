@@ -86,6 +86,21 @@
       "действия с личными данными, секретами и изменением прав доступа"
     ],
     "collisionPrevention": "Проверять свежий HEAD и существующие PR непосредственно перед каждой записью; не дублировать задачи утреннего/вечернего контроля.",
-    "status": "Policy recorded. Actual schedule and successful automation creation must be verified independently."
+    "status": "Hourly automation created and enabled, checked on 2026-11-02. This is an hourly series of finite runs, not a permanently running process.",
+    "scheduleAutomationId": "6ae7ce56612c8191974f637ce197c946",
+    "actualCadence": "BEGIN:VEVENT\\nDTSTART:20261101T234214Z\\nRRULE:FREQ=HOURLY\\nEND:VEVENT",
+    "defaultTimezone": "Asia/Jerusalem",
+    "existingDailyControls": [
+      {
+        "title": "Продюсер проектов · утро",
+        "id": "6ae5e14c77548191a795ec992830fa6e",
+        "localTime": "10:00"
+      },
+      {
+        "title": "Продюсер проектов · вечер",
+        "id": "6ae5e14ebe9c8191a21ed0aa0cda71f3",
+        "localTime": "18:00"
+      }
+    ]
   }
 }
