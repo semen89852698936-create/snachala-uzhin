@@ -1,0 +1,48 @@
+{
+  "schemaVersion": 1,
+  "updatedAt": "2026-11-01",
+  "purpose": "Точечные кандидатуры для исправления несовпадений в уже опубликованной первой двадцатке; ничего не заменено",
+  "photo_downloaded": false,
+  "visually_approved": false,
+  "published": false,
+  "license_page": "https://www.pexels.com/legal-pages/license/",
+  "assets": [
+    {
+      "n": 6,
+      "title": "Белая рыба с томатами",
+      "current_issue": "На сайте целая запечённая рыба вместо филе",
+      "source_page": "https://www.pexels.com/photo/close-up-of-gourmet-meal-12653398/",
+      "license": "Pexels License",
+      "assessment": "Филе с томатом и зеленью, но есть чечевица; предварительно ближе по типу рыбы",
+      "review_status": "candidate_not_approved"
+    },
+    {
+      "n": 10,
+      "title": "Пышные оладьи на кефире",
+      "current_issue": "На сайте толстые панкейки вместо оладий",
+      "source_page": "https://www.pexels.com/photo/mini-pancakes-on-a-plate-7855285/",
+      "license": "Pexels License",
+      "assessment": "Мини-оладьи с вареньем и сметаной; кефир по фотографии установить нельзя",
+      "review_status": "candidate_not_approved"
+    },
+    {
+      "n": 20,
+      "title": "Домашние сырники с лимонной цедрой",
+      "current_issue": "На текущей фотографии изделие похоже на панкейки",
+      "source_page": "https://www.pexels.com/photo/close-up-shot-of-syrniki-10254478/",
+      "license": "Pexels License",
+      "assessment": "Источник прямо определяет блюдо как сырники; лимонная цедра не видна",
+      "review_status": "candidate_not_approved"
+    }
+  ],
+  "unresolved": [
+    {
+      "n": 8,
+      "reason": "Нужен горячий нут со шпинатом и паприкой, а не салат"
+    },
+    {
+      "n": 16,
+      "reason": "Нужна индейка с йогуртовым соусом без CC BY attribution burden; текущая фотография грибного сливочного соуса"
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "updatedAt": "2026-11-01",
+  "source": "https://snachala-uzhin-preview.vercel.app",
+  "totalRecipes": 1001,
+  "uniqueCurrentPhotoIdentifiers": 29,
+  "first20ExternalUrlsPublished": 20,
+  "first20LocallyStoredFiles": 3,
+  "first20VisuallyLikedByOwner": 20,
+  "first20FinalImageApproved": 3,
+  "newCandidateSourcesFound": 10,
+  "newCandidateLocalFiles": 0,
+  "newCandidateVisualApprovals": 0,
+  "recipesWithoutSourcePage": 971,
+  "distinctImageFilesLocallyConfirmed": 3,
+  "notFinal": "A source page does not count as a downloaded or approved photo. Status records preserve this distinction.",
+  "recommendedNextBatch": "Review 21-50 candidates; continue source search for missing in 21-50; only then assemble preview assets",
+  "repeatedCurrentPhotoIds": [
+    {
+      "id": "photo-1532550907401-a500c9a57435",
+      "count": 99
+    },
+    {
+      "id": "photo-1547592180-85f173990554",
+      "count": 99
+    },
+    {
+      "id": "photo-1544025162-d76694265947",
+      "count": 98
+    },
+    {
+      "id": "photo-1578004969074-01bff101f85e",
+      "count": 98
+    },
+    {
+      "id": "photo-1473093295043-cdd812d0e601",
+      "count": 98
+    },
+    {
+      "id": "photo-1608949621308-c54d112c808a",
+      "count": 98
+    },
+    {
+      "id": "photo-1512621776951-a57141f2eefd",
+      "count": 98
+    },
+    {
+      "id": "photo-1509440159596-0249088772ff",
+      "count": 98
+    },
+    {
+      "id": "photo-1578985545062-69928b1d9587",
+      "count": 98
+    },
+    {
+      "id": "photo-1525351484163-7529414344d8",
+      "count": 98
+    }
+  ],
+  "projectRepo": "semen89852698936-create/snachala-uzhin",
+  "lastApprovedWebpBatch": "photo-library/approved-webp-20261101.json"
+}
