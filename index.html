@@ -618,6 +618,56 @@ body.du-evening-mode .main-nav [data-nav="evening"]{color:#8a4354;font-weight:80
 /* Updated three-scene photography. Preserve approved high-resolution cooking hero. */
 .du-story-dinner-photo img{object-position:50% 47%;filter:none;}
 .du-story-after-photo img{object-position:center 48%;filter:none;}
+
+/* Invitation photo: show the full portrait instead of cropping out the couple.
+   Original photograph is 2:3 while the invitation card is landscape. */
+.du-evening-invitation-photo{
+  height:clamp(420px,43vw,530px);
+  isolation:isolate;
+  background:#302126;
+}
+.du-evening-invitation-photo::before{
+  content:"";
+  position:absolute;
+  inset:-30px;
+  z-index:-1;
+  background-image:url("https://images.pexels.com/photos/5018980/pexels-photo-5018980.jpeg?auto=compress&cs=tinysrgb&w=1500");
+  background-size:cover;
+  background-position:center 35%;
+  filter:blur(25px) brightness(.55) saturate(.85);
+  pointer-events:none;
+}
+.du-evening-invitation-photo>img{
+  position:relative;
+  z-index:0;
+  width:100%;
+  height:100%;
+  object-fit:contain;
+  object-position:center;
+  filter:none;
+}
+.du-evening-invitation-photo::after{
+  inset:auto 0 0;
+  height:29%;
+  z-index:1;
+  background:linear-gradient(transparent,rgba(24,12,20,.78));
+  pointer-events:none;
+}
+.du-evening-invitation-photo>span{
+  z-index:2;
+  left:20px;
+  bottom:33px;
+  font:italic clamp(23px,2.7vw,31px)/1.1 var(--serif,'Cormorant Garamond',Georgia,serif);
+  text-shadow:0 2px 9px rgba(0,0,0,.65);
+}
+.du-evening-invitation-photo>small{z-index:2;bottom:11px;right:15px;font-size:10px}
+@media(max-width:900px){.du-evening-invitation-photo{height:480px}}
+@media(max-width:560px){
+  .du-evening-invitation-photo{height:440px}
+  .du-evening-invitation-photo>span{left:15px;bottom:34px;font-size:25px;max-width:calc(100% - 30px)}
+  .du-evening-invitation-photo>small{font-size:9px;right:12px}
+}
+
 </style>
 </head><body>
 <div class="demo-strip"><span class="demo-dot"></span> ОТКРЫТАЯ КОЛЛЕКЦИЯ · 1000 РЕЦЕПТОВ + 1 СЕКРЕТНЫЙ · ГОТОВЬТЕ ВМЕСТЕ</div>
