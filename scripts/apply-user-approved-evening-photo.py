@@ -31,5 +31,6 @@ for key in ["du-evening-role-grid","swapEveningRoles","eveningRoleStatus","eveni
     assert key in html,key
 path.write_text(html,encoding="utf-8")
 manifest={"approved_image":"assets/our-evening-together-approved.webp","source":"Owner-selected image generated within this ChatGPT conversation","size":[1080,1350],"size_bytes":image.stat().st_size,"sha256":hashlib.sha256(image.read_bytes()).hexdigest(),"recipes_preserved":len(recipes),"status":"prepared_and_verified_not_yet_live"}
+Path("photo-library").mkdir(parents=True,exist_ok=True)
 Path("photo-library/our-evening-user-approved-image.json").write_text(json.dumps(manifest,indent=2,ensure_ascii=False)+"\n",encoding="utf-8")
 print("OK: 1001 recipes preserved, owner-selected WebP linked",image.stat().st_size)
