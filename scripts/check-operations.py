@@ -9,6 +9,14 @@ assert registry["schemaVersion"] == 1
 assert registry["workingStateFile"] == "project-operations/CURRENT_STATE.md"
 assert registry["recipeDataPlan"] == "project-operations/RECIPE_DATA_PLAN.md"
 assert registry.get("handoffPolicy")
+assert registry.get("autonomousWorkPolicy"), "Missing owner-authorized autonomous work rule"
+policy = registry["autonomousWorkPolicy"]
+assert policy["authorizedByOwnerOn"] == "2026-11-02"
+assert policy["plannedCadence"] == "HOURLY"
+assert policy["scheduleAutomationId"] == "6ae7ce56612c8191974f637ce197c946"
+assert "FREQ=HOURLY" in policy["actualCadence"]
+assert "24" not in policy["betweenConversations"], "Never promise literal 24/7 execution"
+assert len(policy["requireOwnerApprovalFor"]) >= 4
 assert registry.get("safety") == "Не публиковать и не менять production без проверки и явного разрешения."
 assert len(registry["projects"]) >= 2
 ids = [entry["id"] for entry in registry["projects"]]
