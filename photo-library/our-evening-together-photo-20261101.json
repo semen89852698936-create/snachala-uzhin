@@ -15,5 +15,10 @@
   "replaces_card": "Готовить вместе - значит быть рядом",
   "license_notes": "Pexels free-license photo; no implied endorsement of the website by subjects",
   "verified": "image format, dimensions, recipe dataset unchanged and credit updated",
-  "status": "prepared_for_preview"
+  "status": "asset_committed_ci_verified_waiting_for_deployment",
+  "ci_verification": "success",
+  "production_deployment_status": "blocked",
+  "production_blocker": "Vercel reports HTTP 402 api-deployments-free-per-day, retryAfter 86400; API deployment quota exceeded",
+  "user_approval": "User explicitly requested replacing this photograph and publishing on the main website on 2026-11-01",
+  "required_next_action": "When Vercel quota clears, create preview deployment, verify WebP and block layout, then deploy production; never mark published before live HTTP 200 verification."
 }
