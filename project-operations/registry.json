@@ -101,6 +101,19 @@
         "id": "6ae5e14ebe9c8191a21ed0aa0cda71f3",
         "localTime": "18:00"
       }
-    ]
+    ],
+    "githubHalfHour": {
+      "frequencyMinutes": 30,
+      "utcCron": "7,37 * * * *",
+      "workflowFile": ".github/workflows/half-hour-photo-production.yml",
+      "scope": "Incremental real WebP integrity review; no AI generation or general-purpose code agent",
+      "verifiedActionRun": "https://github.com/semen89852698936-create/snachala-uzhin/actions/runs/41364190889",
+      "lastVerifiedPhotos": 5,
+      "totalArchivePhotos": 100,
+      "checkpointBranch": "automation/half-hour-photo-audit",
+      "activationStatus": "tested_on_feature_push_not_scheduled_until_merged_to_main",
+      "productionPolicy": "Never deploy site, merge pull requests, enable paid services or spend money automatically",
+      "keepChatHourlyAutomationUntilScheduleConfirmed": true
+    }
   }
 }
