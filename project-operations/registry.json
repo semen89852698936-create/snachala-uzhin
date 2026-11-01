@@ -13,7 +13,7 @@
       "sourceOfTruth": "GitHub repository",
       "brandRule": "Отдельный кулинарный бренд, не использовать имя автора Семёна Чайки",
       "nextActions": [
-        "СРОЧНО: опубликовать уже утверждённую замену фотографии «Готовить вместе - значит быть рядом» на сайте /#evening: assets/our-evening-together-helena-lopes-hq.webp, commit 588af829169c6a4042bec2fa42b422b0c2f192b1. GitHub CI успешен; production пока использует старый AVIF. Vercel отклонил API-развёртывание HTTP 402 api-deployments-free-per-day; при доступности публикации сначала проверить preview (картинка/кредит, 1001 рецепт и «Наш вечер»), затем выпустить production. Пользователь разрешил замену и публикацию 2026-11-01.",
+        "Для блока «Готовить вместе - значит быть рядом» в «Наш вечер» подобрать ДРУГИЕ фотографии, показать варианты пользователю и не публиковать замену без его нового выбора. Кадр Pexels №27176133 / Helena Lopes категорически отклонён 2026-11-01.",
         "Проверить и протестировать восстановленный каталог из 1001 записей",
         "Проверить страницу nashe-vecher.html и связи с главной",
         "Аудировать содержание рецептов и изображения, не подменяя их случайными",
@@ -22,18 +22,14 @@
         "Отчитываться о числе рецептов, реальных файлов фото, визуально проверенных, проверенных по правам, одобренных и оставшихся; поисковые ссылки и промпты не считать готовыми фотографиями"
       ],
       "publicationPolicy": "No production deploy without explicit approval",
-      "pendingRelease": {
-        "id": "our-evening-together-hq-20261101",
-        "status": "blocked_by_vercel_api_quota",
-        "severity": "high",
-        "approvedByUser": true,
-        "sourceCommit": "588af829169c6a4042bec2fa42b422b0c2f192b1",
-        "imagePath": "assets/our-evening-together-helena-lopes-hq.webp",
-        "target": "https://snachala-uzhin-preview.vercel.app/#evening",
-        "blocker": "Vercel 402 api-deployments-free-per-day",
-        "testEvidence": "GitHub Actions 41300166172 completed success",
-        "doNotMarkPublishedUntilLiveVerification": true
-      }
+      "rejectedPhotoCandidates": [
+        {
+          "pexelsId": 27176133,
+          "sourcePage": "https://www.pexels.com/photo/couple-enjoys-cooking-together-in-kitchen-27176133/",
+          "reason": "Rejected by site owner on 2026-11-01; do not propose or publish again for this block",
+          "targetBlock": "Наш вечер / Готовить вместе - значит быть рядом"
+        }
+      ]
     },
     {
       "id": "moi-granitsy",
