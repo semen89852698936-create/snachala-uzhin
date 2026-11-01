@@ -1,0 +1,24 @@
+{
+  "asset": "assets/our-evening-together-helena-lopes-hq.webp",
+  "source_page": "https://www.pexels.com/photo/couple-enjoys-cooking-together-in-kitchen-27176133/",
+  "photographer": "Helena Lopes",
+  "license": "Pexels License",
+  "license_url": "https://www.pexels.com/license/",
+  "resolution": [
+    1800,
+    1800
+  ],
+  "format": "WebP",
+  "bytes": 270528,
+  "sha256": "5dc1a33697bd89dda12a1eafb394a951fbf25a0367fd5897ef50b73328791c3b",
+  "old_asset": "assets/cooking-together-romantic.avif",
+  "replaces_card": "Готовить вместе - значит быть рядом",
+  "license_notes": "Pexels free-license photo; no implied endorsement of the website by subjects",
+  "verified": "image format, dimensions, recipe dataset unchanged and credit updated",
+  "status": "asset_committed_ci_verified_waiting_for_deployment",
+  "ci_verification": "success",
+  "production_deployment_status": "blocked",
+  "production_blocker": "Vercel reports HTTP 402 api-deployments-free-per-day, retryAfter 86400; API deployment quota exceeded",
+  "user_approval": "User explicitly requested replacing this photograph and publishing on the main website on 2026-11-01",
+  "required_next_action": "When Vercel quota clears, create preview deployment, verify WebP and block layout, then deploy production; never mark published before live HTTP 200 verification."
+}
