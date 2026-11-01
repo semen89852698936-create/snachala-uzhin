@@ -24,7 +24,7 @@ GROUPS={
 'meatballs':(39,48,['meatballs tomato sauce','meatballs cooked plate','meatballs with gravy','beef meatballs']),
 'beef_stew':(49,58,['beef stew meat vegetables','beef goulash plate','beef bourguignon','beef casserole']),
 'pork_meda':(59,68,['pork medallions plated','roast pork slices','pork filet dinner','pork tenderloin dish','pork loin plated','roasted pork medallions','pork schnitzel']),
-'veal':(69,78,['veal cutlet dinner','veal schnitzel plate','wiener schnitzel plated','schnitzel with potatoes','wienerschnitzel','veal escalope cooked','veal chop plate']),
+'veal':(69,78,['veal cutlet dinner','veal schnitzel plate','wiener schnitzel plated','schnitzel with potatoes','wienerschnitzel','wiener schnitzel Austria','schnitzel with lemon restaurant','veal scallopini','escalope milanese','veal escalope cooked','veal chop plate']),
 'lamb':(79,88,['lamb stew plated','lamb dinner herbs','braised lamb','lamb casserole']),
 'roast_beef':(89,98,['roast beef plate','roast beef dinner','roast beef sliced','prime rib roast beef','roast beef with vegetables','Sunday roast beef dinner','beef roast meat plate']),
 'stir_fry':(99,100,['stir fry beef strips','beef stir fry plate','beef strips pan']),
@@ -40,7 +40,7 @@ GROUP_OF={}
 for g,(lo,hi,_) in GROUPS.items():
  for n in range(lo,hi+1): GROUP_OF[n]=g
 ALLOWED=('CC BY ','CC BY-SA ','CC0','Public domain','Public Domain')
-EXCLUDE=('raw meat','uncooked','cartoon','diagram','logo','map','building','restaurant interior','wallpaper','calendar','butcher','butchering','black and white','poster','advertisement','food packaging','storefront','vegetarian','vegan meat','plastic','signage','menu','taco','po-boy','po boy','sandwich','sub sandwich','profiterole','restaurant storefront','sculpture')
+EXCLUDE=('raw meat','uncooked','cartoon','diagram','logo','map','building','restaurant interior','wallpaper','calendar','happy family','partially eaten','butcher','butchering','black and white','poster','advertisement','food packaging','storefront','vegetarian','vegan meat','plastic','signage','menu','taco','po-boy','po boy','poboy','sandwich','sub sandwich','profiterole','restaurant storefront','sculpture','beef tongue','rib of beef roasting joint')
 def get(url,timeout=25,limit=8000000):
  err=None
  for i in range(3):
@@ -157,7 +157,7 @@ for row in ROWS:
   pool=POOLS.get(g,[])
   must={'beef_meda':['beef','steak','filet','tenderloin','medallion'], 'pork_tend':['pork','loin'], 'meatballs':['meatball','köttbullar'], 'beef_stew':['beef','bourguignon','goulash'], 'pork_meda':['pork'], 'veal':['veal','schnitzel','wiener','escalope','schnitzel'], 'lamb':['lamb','mutton'], 'roast_beef':['roast beef','beef roast','prime rib','rib roast'], 'stir_fry':['beef','stir fry','stir-fry']}[g]
   pool=[c for c in pool if any(x in c['title'].lower() for x in must)]
-  pool.sort(key=lambda c:(fav(c,g,(n-21)%10),c['width']),reverse=True)
+  pool.sort(key=lambda c:(fav(c,g,(n-21)%10),min(c['width'],5000)),reverse=True)
  else:
   pool=POOLS.get('first'+str(n),[])
   pool.sort(key=lambda c:score(c,title.lower().split()),reverse=True)
