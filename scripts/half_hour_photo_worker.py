@@ -97,8 +97,7 @@ def validate_manifest(manifest: dict) -> list[dict]:
 
 def pending_photos(items: list[dict], results: dict, max_count: int = MAX_PER_RUN) -> list[dict]:
     fresh = [x for x in items if
-             results.get(x["recipe_id"], {}).get("status") != "technical_pass"
-             and results.get(x["recipe_id"], {}).get("sha256") != x["sha256"]]
+             results.get(x["recipe_id"], {}).get("sha256") != x["sha256"]]
     retry = [x for x in items if
              results.get(x["recipe_id"], {}).get("status") != "technical_pass"
              and x not in fresh]
