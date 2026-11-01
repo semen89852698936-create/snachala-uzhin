@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-31",
+  "updatedAt": "2026-11-01",
   "purpose": "Единый технический реестр проектов для двух ежедневных проверок. Не содержит исходники других брендов.",
   "projects": [
     {
@@ -13,6 +13,7 @@
       "sourceOfTruth": "GitHub repository",
       "brandRule": "Отдельный кулинарный бренд, не использовать имя автора Семёна Чайки",
       "nextActions": [
+        "СРОЧНО: опубликовать уже утверждённую замену фотографии «Готовить вместе - значит быть рядом» на сайте /#evening: assets/our-evening-together-helena-lopes-hq.webp, commit 588af829169c6a4042bec2fa42b422b0c2f192b1. GitHub CI успешен; production пока использует старый AVIF. Vercel отклонил API-развёртывание HTTP 402 api-deployments-free-per-day; при доступности публикации сначала проверить preview (картинка/кредит, 1001 рецепт и «Наш вечер»), затем выпустить production. Пользователь разрешил замену и публикацию 2026-11-01.",
         "Проверить и протестировать восстановленный каталог из 1001 записей",
         "Проверить страницу nashe-vecher.html и связи с главной",
         "Аудировать содержание рецептов и изображения, не подменяя их случайными",
@@ -20,7 +21,19 @@
         "При каждом утреннем и вечернем запуске продвигать фотобиблиотеку 1001 рецепта: сверять photo-library/summary.json, CSV-реестр и curated-images.json; брать следующую непроверенную партию; находить подходящие реальные изображения с подтверждёнными правами или создавать AI-изображения при наличии доступного инструмента; сохранять результат в рабочей ветке и проверять, не публикуя в production",
         "Отчитываться о числе рецептов, реальных файлов фото, визуально проверенных, проверенных по правам, одобренных и оставшихся; поисковые ссылки и промпты не считать готовыми фотографиями"
       ],
-      "publicationPolicy": "No production deploy without explicit approval"
+      "publicationPolicy": "No production deploy without explicit approval",
+      "pendingRelease": {
+        "id": "our-evening-together-hq-20261101",
+        "status": "blocked_by_vercel_api_quota",
+        "severity": "high",
+        "approvedByUser": true,
+        "sourceCommit": "588af829169c6a4042bec2fa42b422b0c2f192b1",
+        "imagePath": "assets/our-evening-together-helena-lopes-hq.webp",
+        "target": "https://snachala-uzhin-preview.vercel.app/#evening",
+        "blocker": "Vercel 402 api-deployments-free-per-day",
+        "testEvidence": "GitHub Actions 41300166172 completed success",
+        "doNotMarkPublishedUntilLiveVerification": true
+      }
     },
     {
       "id": "moi-granitsy",
