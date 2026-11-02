@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "run_date": "2026-11-02",
+  "project": "snachala-uzhin",
+  "branch": "photo-library/direct-triage-33-36-20261102",
+  "stacked_on_pr": 18,
+  "upstream_head_sha": "fa597cca1750428510b6f3e90097551ce9c0cae3",
+  "source_archive_commit_sha": "13c3ad45758b9e92ed0df906bd4667c84932aa69",
+  "source_manifest_blob_sha": "324964784f50844e239ae97e770117ea4b3adc53",
+  "canonical_review_blob_sha": "3bfca9a29c8059e2f056b8e0a4a7d5a540248d9a",
+  "code_head_before_checkpoint": "1ebeeb4effc964614304b1510a251ec32ab6f722",
+  "changed_files": [
+    "review/visual-triage-addendum-20261102-1543.json",
+    "tests/visual-triage-33-36.test.mjs",
+    ".github/workflows/editorial-release-gate.yml",
+    "project-operations/visual-triage-33-36-checkpoint-20261102.json"
+  ],
+  "visual_directly_reviewed_new": [
+    33,
+    34,
+    36
+  ],
+  "already_reviewed_skipped": [
+    35
+  ],
+  "new_rejected": [
+    33,
+    34,
+    36
+  ],
+  "counts": {
+    "physical_archive_webp": 100,
+    "canonical_reviewed": 29,
+    "addendum_new": 3,
+    "combined_unique_reviewed": 32,
+    "combined_rejected": 28,
+    "combined_unreviewed": 68,
+    "confirmed_license_for_archive": 0,
+    "release_cleared": 0,
+    "replacement_briefs_existing": 25,
+    "replacement_briefs_pending_new": 3,
+    "technical_audit_separate": 20
+  },
+  "checks": {
+    "manifest_consistency": "3/3 verified in connector data before write",
+    "new_test_file": "tests/visual-triage-33-36.test.mjs",
+    "ci_status": "pending_pull_request_run",
+    "image_sha256_recomputed": false,
+    "webp_bytes_directly_rendered": true,
+    "source_provenance_verified": false
+  },
+  "blockers": [
+    "New rejected 33, 34, 36 need exact recipe replacement briefs before canonical triage integration",
+    "All 100 archive images still lack complete rights/editorial release clearance",
+    "PR #16 safety fix for scheduled Yandex AI ART remains unmerged"
+  ],
+  "next_safe_action": "Integrate these three reviews into canonical triage, extract exact catalog ingredients and add three replacement briefs, run release-gate tests; then inspect next unreviewed physical WebP. No production changes."
+}
