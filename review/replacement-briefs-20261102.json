@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "date": "2026-11-02",
-  "purpose": "Exact catalog ingredient and preparation briefs for 22 visually rejected archived WebP copies. Specifications only: NOT photos, rights clearances or approvals.",
+  "purpose": "Exact catalog ingredients and preparation briefs for 25 rejected archive WebP copies; specifications only, not new photos, license clearance or publication approval.",
   "recipe_source": {
     "branch": "main",
     "commit_sha": "819894450686ce5d5c5a0b1a7058218debd441e3",
@@ -13,7 +13,7 @@
     "blob_sha": "324964784f50844e239ae97e770117ea4b3adc53",
     "file": "photo-library/batch-100-20261101/manifest.json"
   },
-  "rejected_count": 22,
+  "rejected_count": 25,
   "briefs": [
     {
       "number": 21,
@@ -264,6 +264,159 @@
         "reason": "Куски розовой говядины на лапше соба, приправленные перцем. Сливочного соуса и зелёного перца не видно; подача не соответствует медальонам в сливках.",
         "source_page": "https://commons.wikimedia.org/wiki/File:Beef_filet_on_soba_noodles,_with_soy_sauce,_salt,_and_black_pepper_-_Arlington,_MA.jpg",
         "license_claim_unverified": "CC0"
+      },
+      "replacement_status": "not_found",
+      "license_status": "not_verified",
+      "editorial_status": "requires_independent_visual_review",
+      "owner_publication_approval": false
+    },
+    {
+      "number": 27,
+      "recipe_id": "collection-meat-01-09",
+      "recipe_title": "Говяжьи медальоны с яблоком и шалфеем",
+      "recipe_ingredients_exact": [
+        {
+          "name": "Говяжья вырезка",
+          "amount": 360,
+          "unit": "г"
+        },
+        {
+          "name": "Масло оливковое",
+          "amount": 1,
+          "unit": "ст. л."
+        },
+        {
+          "name": "Яблоко",
+          "amount": 1,
+          "unit": "шт."
+        },
+        {
+          "name": "Шалфей",
+          "amount": 3,
+          "unit": "листочка"
+        },
+        {
+          "name": "Соль",
+          "amount": 0,
+          "unit": "по вкусу"
+        }
+      ],
+      "preparation_reference": [
+        "Обсуши кусочки, посоли и поперчи. Если есть время, оставь при комнатной температуре на 15 минут.",
+        "Разогрей сковороду, добавь масло и обжарь мясо с обеих сторон до корочки. Не перегружай сковороду.",
+        "Снизь нагрев и доведи до безопасной степени прожарки по термометру. Для цельных кусков говядины и свинины ориентир — не ниже 63 °C с отдыхом 3 минуты.",
+        "Яблоко нарежь дольками, обжарь с шалфеем отдельно и подай рядом с мясом.",
+        "Переложи мясо на тёплую тарелку на 3–5 минут перед нарезкой."
+      ],
+      "replacement_visual_requirements": "Beef medallions with separately sauteed apple wedges and visible sage leaves; no fried-onion topping or unrelated dominant sides.",
+      "rejected_archive_photo": {
+        "relative_file": "photos/027-collection-meat-01-09.webp",
+        "sha256": "f35d03fb655a93f0c22d033137e9b31a506a4709ce379c9bbacfcf7445016ccd",
+        "reason": "Говяжий медальон с жареным луком, картофелем и овощами. Яблоки и шалфей не показаны.",
+        "source_page": "https://commons.wikimedia.org/wiki/File:Beef_medallion_topped_with_fried_onions.jpg",
+        "license_claim_unverified": "CC BY-SA 4.0"
+      },
+      "replacement_status": "not_found",
+      "license_status": "not_verified",
+      "editorial_status": "requires_independent_visual_review",
+      "owner_publication_approval": false
+    },
+    {
+      "number": 28,
+      "recipe_id": "collection-meat-01-10",
+      "recipe_title": "Говяжьи медальоны с черносливом и тмином",
+      "recipe_ingredients_exact": [
+        {
+          "name": "Говяжья вырезка",
+          "amount": 360,
+          "unit": "г"
+        },
+        {
+          "name": "Масло оливковое",
+          "amount": 1,
+          "unit": "ст. л."
+        },
+        {
+          "name": "Чернослив без косточек",
+          "amount": 80,
+          "unit": "г"
+        },
+        {
+          "name": "Тмин",
+          "amount": 0.5,
+          "unit": "ч. л."
+        },
+        {
+          "name": "Соль",
+          "amount": 0,
+          "unit": "по вкусу"
+        }
+      ],
+      "preparation_reference": [
+        "Обсуши кусочки, посоли и поперчи. Если есть время, оставь при комнатной температуре на 15 минут.",
+        "Разогрей сковороду, добавь масло и обжарь мясо с обеих сторон до корочки. Не перегружай сковороду.",
+        "Снизь нагрев и доведи до безопасной степени прожарки по термометру. Для цельных кусков говядины и свинины ориентир — не ниже 63 °C с отдыхом 3 минуты.",
+        "Чернослив нарежь и добавь с тмином в последние 7 минут, при необходимости подлей немного воды.",
+        "Переложи мясо на тёплую тарелку на 3–5 минут перед нарезкой."
+      ],
+      "replacement_visual_requirements": "Beef medallions with chopped pitted prunes and caraway; no unrelated steak platter. Spices cannot be certified visually.",
+      "rejected_archive_photo": {
+        "relative_file": "photos/028-collection-meat-01-10.webp",
+        "sha256": "526a473eb8d61923da18871c44144db544299408fdc182dcda88c079d9b6eb70",
+        "reason": "Мясо на горячей тарелке с картофелем и овощами. Чернослив и тмин не видны; вид не соответствует говяжьим медальонам.",
+        "source_page": "https://commons.wikimedia.org/wiki/File:Tenderloin_hot_plate,_Steak_Moen-Moen,_Lt_2,_BG_Junction,_2025_(01).jpg",
+        "license_claim_unverified": "CC BY-SA 4.0"
+      },
+      "replacement_status": "not_found",
+      "license_status": "not_verified",
+      "editorial_status": "requires_independent_visual_review",
+      "owner_publication_approval": false
+    },
+    {
+      "number": 30,
+      "recipe_id": "collection-meat-02-02",
+      "recipe_title": "Свиная вырезка в духовке с грибами и розмарином",
+      "recipe_ingredients_exact": [
+        {
+          "name": "Вырезка свиная",
+          "amount": 400,
+          "unit": "г"
+        },
+        {
+          "name": "Масло оливковое",
+          "amount": 1,
+          "unit": "ст. л."
+        },
+        {
+          "name": "Шампиньоны",
+          "amount": 120,
+          "unit": "г"
+        },
+        {
+          "name": "Розмарин",
+          "amount": 1,
+          "unit": "веточка"
+        },
+        {
+          "name": "Соль",
+          "amount": 0,
+          "unit": "по вкусу"
+        }
+      ],
+      "preparation_reference": [
+        "Разогрей духовку до 190 °C. Промокни мясо бумажным полотенцем, приправь.",
+        "Смажь мясо маслом, положи в небольшую форму. При желании добавь немного воды на дно.",
+        "Готовь до нужной внутренней температуры: цельные куски свинины и говядины — от 63 °C с отдыхом 3 минуты. Время зависит от толщины куска.",
+        "Грибы обжарь отдельно до румяности, добавь розмарин и соедини с мясом перед подачей.",
+        "Накрой фольгой неплотно, выдержи 5–10 минут, затем нарежь поперёк волокон."
+      ],
+      "replacement_visual_requirements": "Oven-roasted sliced pork tenderloin with sauteed mushrooms and rosemary; avoid pan-pressed pork in dark sauce.",
+      "rejected_archive_photo": {
+        "relative_file": "photos/030-collection-meat-02-02.webp",
+        "sha256": "4cb124da5553d5dc9464e3ba3ef00a52652cf1649de8f986e8e8d943bb5fa118",
+        "reason": "Свинина в густом коричневом соусе, напоминающая китайское блюдо. Грибы и розмарин не видны, запечённая вырезка не подтверждается.",
+        "source_page": "https://commons.wikimedia.org/wiki/File:Guo_ta_liji_%E9%94%85%E5%A1%8C%E9%87%8C%E8%84%8A_(Pan-Pressed_Pork_Tenderloin).jpg",
+        "license_claim_unverified": "CC BY-SA 4.0"
       },
       "replacement_status": "not_found",
       "license_status": "not_verified",
@@ -1182,16 +1335,16 @@
   ],
   "last_extended_from_triage": {
     "numbers": [
-      22,
-      23,
-      24
+      27,
+      28,
+      30
     ],
     "partial_not_rejected": [
-      25
+      29
     ],
     "source_index_blob_sha": "7b612a81830a2b253fc7184df9a8cfe501d82bb2",
     "source_manifest_blob_sha": "324964784f50844e239ae97e770117ea4b3adc53",
-    "extraction": "Parsed exact recipe objects from immutable main/index.html; compared to archived WebP actually rendered via GitHub connector",
-    "note": "No physical replacements or legal approvals created."
+    "extraction": "Exact recipes parsed from main/index.html GitHub blob; existing direct-WebP observations from addendum",
+    "note": "No new physical replacements, rights or approvals."
   }
 }

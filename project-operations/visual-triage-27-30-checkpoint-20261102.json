@@ -1,0 +1,133 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-02",
+  "project": "snachala-uzhin",
+  "branch": "photo-library/visual-triage-27-30-20261102",
+  "pr_url": "https://github.com/semen89852698936-create/snachala-uzhin/pull/18",
+  "base_pr_url": "https://github.com/semen89852698936-create/snachala-uzhin/pull/17",
+  "code_commit_sha": "0f17a2c4ecf6c4f568fac4d5cc3ce3a6078420a8",
+  "source_archive_commit_sha": "13c3ad45758b9e92ed0df906bd4667c84932aa69",
+  "source_manifest_blob_sha": "324964784f50844e239ae97e770117ea4b3adc53",
+  "changed_files": [
+    "review/visual-triage-20261102.json",
+    "review/replacement-briefs-20261102.json",
+    "tests/replacement-briefs.test.mjs",
+    "tests/visual-triage-27-30.test.mjs",
+    "review/VISUAL_TRIAGE_20261102.md",
+    "project-operations/visual-triage-27-30-checkpoint-20261102.json"
+  ],
+  "new_direct_webp_inspections": [
+    27,
+    28,
+    29,
+    30
+  ],
+  "new_rejected": [
+    27,
+    28,
+    30
+  ],
+  "new_partial": [
+    29
+  ],
+  "counts": {
+    "archive_physical_webp": 100,
+    "visual_reviewed_combined": 29,
+    "visual_rejected_combined": 25,
+    "visual_partial_combined": 3,
+    "visual_possible_combined": 1,
+    "visual_unreviewed": 71,
+    "editorial_and_license_cleared": 0,
+    "new_physical_photos": 0,
+    "technical_audit_verified_separately": 20,
+    "replacement_briefs_exact": 25
+  },
+  "checks": {
+    "source_manifest_readback_assertions_passed": 24,
+    "failed": 0,
+    "method": "GitHub Actions on commit eb755e3ac45d3b6a6a832b3bf27f44dc9e68d2b2, with 26 passing Node tests and release gate 100 blocked; no technical rehash",
+    "github_actions": "success",
+    "image_sha256_rehashed": false,
+    "github_actions_run_url": "https://github.com/semen89852698936-create/snachala-uzhin/actions/runs/41447115903",
+    "github_actions_commit_sha": "eb755e3ac45d3b6a6a832b3bf27f44dc9e68d2b2",
+    "tests": {
+      "photo_release_gate": {
+        "passed": 17,
+        "failed": 0
+      },
+      "replacement_briefs": {
+        "passed": 7,
+        "failed": 0
+      },
+      "visual_triage": {
+        "passed": 2,
+        "failed": 0
+      },
+      "total_passed": 26,
+      "total_failed": 0
+    },
+    "release_gate": {
+      "release_candidates": 0,
+      "cleared_for_editorial_release": 0,
+      "blocked_from_release": 100,
+      "errors": []
+    },
+    "extraction_unbriefed_rejects": 0
+  },
+  "production": {
+    "project": "snachala-uzhin-preview",
+    "state": "READY",
+    "deployed_sha": "819894450686ce5d5c5a0b1a7058218debd441e3",
+    "changed": false
+  },
+  "safety": {
+    "main_head": "0e7b6b6988c2c8307d76032ed35b2035381124e3",
+    "main_yandex_paid_schedule": "7,17,27,37,47,57 * * * *",
+    "safety_draft_pr": "https://github.com/semen89852698936-create/snachala-uzhin/pull/16",
+    "safety_pr_head": "b28ecfd41c67dc9e822c2280faf8366cc5d0fd9c",
+    "safety_not_merged": true,
+    "no_paid_calls_this_run": true
+  },
+  "blockers": [
+    "25 rejected images need physical replacements and independent rights checks",
+    "71 archived WebP still unreviewed",
+    "Main Yandex paid schedule exists; protective PR #16 remains draft"
+  ],
+  "next_safe_action": "Continue direct review of 71 remaining archive WebP and verify provenance/licensing for actual bytes; replace 25 rejected photos, do not publish or run paid generation.",
+  "integration": {
+    "previous_head_sha": "ae27857557bb5fabcbc007e1713c10a442aa8bef",
+    "change_commits": [
+      {
+        "path": "review/visual-triage-20261102.json",
+        "commit_sha": "1be93d2df50e4c20fc229c4920f50c85971f599d"
+      },
+      {
+        "path": "review/replacement-briefs-20261102.json",
+        "commit_sha": "e093f9569e2bd2a45026572dc5bdb47b8dccc838"
+      },
+      {
+        "path": "tests/replacement-briefs.test.mjs",
+        "commit_sha": "94e9f3fb22e4db70e8125b4e33bc98856a412f54"
+      },
+      {
+        "path": "tests/visual-triage-27-30.test.mjs",
+        "commit_sha": "e21304bbd8607cd4f0290d78d51f52d5a1faf763"
+      },
+      {
+        "path": "review/VISUAL_TRIAGE_20261102.md",
+        "commit_sha": "0f17a2c4ecf6c4f568fac4d5cc3ce3a6078420a8"
+      }
+    ],
+    "archive_manifest_blob_sha": "324964784f50844e239ae97e770117ea4b3adc53",
+    "catalog_blob_sha": "7b612a81830a2b253fc7184df9a8cfe501d82bb2",
+    "historical_addendum": "review/visual-triage-addendum-20261102-1140.json",
+    "new_briefs": [
+      27,
+      28,
+      30
+    ],
+    "partial_not_rejected": [
+      29
+    ]
+  }
+}
