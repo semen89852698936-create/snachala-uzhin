@@ -15,7 +15,7 @@ on:
         default: 'no'
         type: choice
         options: ['no', 'yes']
-  # No schedule: paid image generation requires explicit manual opt-in.
+  # No scheduled paid generation. Manual approval only.
 
 concurrency:
   group: yandex-art-1001-recipe-production
@@ -38,12 +38,13 @@ jobs:
           python-version: '3.11'
       - run: python -m pip install 'Pillow>=10,<13'
       - run: python -m unittest discover -s photo-pipeline -p 'test_yandexart.py' -v
+      - name: Verify generated WebP files, metadata and hashes without any API calls
+        run: python photo-pipeline/verify_yandex_photo_library.py
       - name: Preview first 10 prompts without API calls
         run: python photo-pipeline/generate_yandexart.py --start 1 --end 10 --limit 10
 
   produce:
     needs: check
-    # Two independent approvals: explicit manual input and repository variable.
     if: ${{ github.event_name == 'workflow_dispatch' && inputs.paid_generation == 'yes' && vars.PHOTO_COST_APPROVED == 'true' }}
     runs-on: ubuntu-latest
     timeout-minutes: 59
@@ -57,7 +58,14 @@ jobs:
         with:
           python-version: '3.11'
       - run: python -m pip install 'Pillow>=10,<13'
-      - name: Generate up to 10, committing each successful WebP before the next paid request
+      - name: Record start count for safe self-continuation
+        shell: bash
+        run: |
+          set -euo pipefail
+          count=$(find photo-library/alice-ai-art/photos -maxdepth 1 -type f -name '*.webp' 2>/dev/null | wc -l || true)
+          echo "PHOTO_BATCH_START_COUNT=${count//[[:space:]]/}" >> "$GITHUB_ENV"
+          echo "Starting with ${count} physical WebP files"
+      - name: Generate up to 25, checkpoint each successful WebP before the next paid request
         shell: bash
         env:
           YANDEX_API_KEY: ${{ secrets.YANDEX_API_KEY }}
@@ -71,7 +79,7 @@ jobs:
           fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          for run_number in $(seq 1 10); do
+          for run_number in $(seq 1 25); do
             set +e
             python3 photo-pipeline/generate_yandexart.py --start 1 --end 1001 --limit 1 --execute
             result=$?
@@ -85,8 +93,15 @@ jobs:
               break
             fi
             if [[ "${result}" -ne 0 ]]; then
-              echo "::warning::Generation stopped after an error. The pending record was checkpointed."
-              break
+              echo "::error::Generation failed after a paid request or API error. Checkpoint saved; job must be marked failed."
+              exit "${result}"
             fi
           done
+          # Generate a checkpoint from actual files, not from number of API calls.
+          python3 photo-pipeline/verify_yandex_photo_library.py --write
+          git add photo-library/alice-ai-art/progress.json
+          if ! git diff --cached --quiet; then
+            git commit -m "Yandex AI ART: verify progress by WebP and SHA-256"
+            git push origin HEAD:refs/heads/photo-production/yandex-ai-art-1001
+          fi
           echo "Generated images remain unpublished until owner inspects the complete set."
