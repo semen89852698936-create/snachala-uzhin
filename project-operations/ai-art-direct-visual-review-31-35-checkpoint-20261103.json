@@ -66,8 +66,10 @@
     }
   ],
   "tests": {
-    "local": "Metadata and status assertions defined; GitHub Actions pending after push",
-    "ci": "pending"
+    "connector_metadata_validation": "PASS: 30 assertions against main photo map, 5 paths, IDs and Git blob SHA matched; 3 rejected have non-executing replacement briefs",
+    "github_actions": "No workflow runs returned for latest checkpoint commit at time of check; not claiming CI success",
+    "vercel": "Combined commit status reports Vercel failure due to build-rate-limit/upgradeToPro; no evidence of code failure",
+    "verified_commit": "9d0463556b49a65f9496aa048468f9c3b229e1f4"
   },
   "blockers": [
     "No individual rights clearance or final owner approval",
@@ -75,5 +77,6 @@
     "Current main HTML cooking steps not fully extracted; source ingredients pinned to generator recipe JSON"
   ],
   "next_task": "Review physical AI WebP 36-40 and current main recipe steps; do not repeat archived technical audit or overlap PR #49 metadata scan.",
-  "safety": "No merge, production change, paid API, secrets or schedule change."
+  "safety": "No merge, production change, paid API, secrets or schedule change.",
+  "pr_url": "https://github.com/semen89852698936-create/snachala-uzhin/pull/50"
 }
