@@ -2,7 +2,7 @@
   "schema_version": 1,
   "date": "2026-11-02",
   "project": "snachala-uzhin",
-  "stage": "Seven archived images visually triaged; five rejected for recipe mismatch; release gate tested; not merged",
+  "stage": "Release gate strengthened against license-source conflation, unknown licenses, and duplicate archive identities; 11 tests passed; no publication",
   "source_pr_11": {
     "url": "https://github.com/semen89852698936-create/snachala-uzhin/pull/11",
     "head_sha": "13c3ad45758b9e92ed0df906bd4667c84932aa69"
@@ -16,7 +16,10 @@
     "branch": "photo-library/editorial-release-gate-20261102",
     "base_branch": "photo-library/restore-100-review-20261102",
     "code_commit_sha": "ee2f7bd1071ae012687ab270903475615bf07c13",
-    "visual_triage_commit_sha": "63e869186f3eda97cee07520f2f24dc9b9aed6bf"
+    "visual_triage_commit_sha": "63e869186f3eda97cee07520f2f24dc9b9aed6bf",
+    "latest_code_commit_sha": "f0c3dcec48b9640473166b7b8b62c90496b744b4",
+    "latest_test_commit_sha": "dca4272484bd25702bf2db923a1b94613cf61392",
+    "head_before_checkpoint": "dca4272484bd25702bf2db923a1b94613cf61392"
   },
   "source_manifest_blob_sha": "324964784f50844e239ae97e770117ea4b3adc53",
   "changed_files": [
@@ -30,19 +33,20 @@
     "review/VISUAL_TRIAGE_20261102.md"
   ],
   "checks": {
-    "local_node_tests": "8/8 PASS",
+    "local_node_tests": "Not run locally in this turn; 11/11 passed in GitHub Actions",
     "github_actions": {
-      "run_id": 41369234288,
+      "run_id": 41374037600,
       "conclusion": "success",
-      "commit_sha": "63e869186f3eda97cee07520f2f24dc9b9aed6bf",
-      "url": "https://github.com/semen89852698936-create/snachala-uzhin/actions/runs/41369234288",
+      "commit_sha": "dca4272484bd25702bf2db923a1b94613cf61392",
+      "url": "https://github.com/semen89852698936-create/snachala-uzhin/actions/runs/41374037600",
       "job": "release-gate",
       "steps": [
-        "offline editorial gate tests: success",
-        "release ledger audit: success"
+        "11/11 offline release-gate tests passed",
+        "release ledger audit passed: 0 approved, 100 blocked"
       ]
     },
-    "rehashed_existing_webp_in_this_run": 0
+    "rehashed_existing_webp_in_this_run": 0,
+    "release_gate_review": "Code review + GitHub Actions; no browser or source-license verification"
   },
   "evidence_counters": {
     "archive_candidate_files": 100,
@@ -80,8 +84,8 @@
     "901 other recipes still lack a physical archived image",
     "GitHub half-hour cron in PR #12 is not active until workflow reaches main"
   ],
-  "next_safe_action": "Continue pixel-level inspection of high-risk candidates (#37, #61, #63, #64, #65, #67), compare with full recipe ingredients, and separately verify original-source rights and attribution. Keep mismatches blocked; do not merge or publish.",
-  "publication": "no merge, no production deployment, no payments, no secret changes",
+  "next_safe_action": "For high-risk candidate photos (#37, #61, #63, #64, #65, #67), inspect actual archived pixels against the full recipe and verify original author and licensing; add SHA-bound evidence only, not unverified approval. Keep PR #11/#12/#13 draft; do not publish.",
+  "publication": "No merge, no production changes, no payments or secret changes; GitHub cron 7,37 * * * * still inactive while PR #12 is unmerged.",
   "visual_triage": {
     "path": "review/visual-triage-20261102.json",
     "rejected_numbers": [
@@ -94,5 +98,21 @@
     "partial_number": 4,
     "possible_number": 5,
     "evidence": "Rendered physical WebP from immutable PR #11 GitHub commit; not an original source license check."
+  },
+  "release_gate_hardening": {
+    "files": [
+      "scripts/photo-release-gate.mjs",
+      "tests/photo-release-gate.test.mjs"
+    ],
+    "changes": [
+      "Reject license evidence URLs that merely repeat the source image page",
+      "Reject license labels outside known manifest license vocabulary",
+      "Reject duplicate archive image numbers and SHA-256",
+      "Add three regression tests"
+    ],
+    "code_commit_sha": "f0c3dcec48b9640473166b7b8b62c90496b744b4",
+    "tests_commit_sha": "dca4272484bd25702bf2db923a1b94613cf61392",
+    "tests_passed": 11,
+    "tests_failed": 0
   }
 }
