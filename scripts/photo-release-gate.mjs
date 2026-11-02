@@ -5,6 +5,7 @@ import { fileURLToPath } from 'node:url';
 
 const isUrl = (s) => typeof s === 'string' && /^https:\/\/[^\s]+$/.test(s);
 const hasText = (s) => typeof s === 'string' && s.trim().length >= 3;
+const KNOWN_LICENSES = new Set(['Unsplash License', 'Pexels License', 'CC0', 'CC BY 2.0', 'CC BY 3.0', 'CC BY 4.0', 'CC BY-SA 2.0', 'CC BY-SA 4.0']);
 
 export function auditRelease(manifest, ledger, triage = {records: []}) {
   const sources = manifest?.sources;
@@ -13,6 +14,8 @@ export function auditRelease(manifest, ledger, triage = {records: []}) {
     throw new Error('Invalid release ledger schema');
   const byId = new Map(sources.map((x) => [x.recipe_id, x]));
   if (byId.size !== 100) throw new Error('Duplicate recipe IDs in manifest');
+  if (new Set(sources.map(x => x.number)).size !== 100) throw new Error('Duplicate image numbers in manifest');
+  if (new Set(sources.map(x => x.sha256)).size !== 100) throw new Error('Duplicate image SHA-256 in manifest');
   const rejected = new Set((triage.records || []).filter(x => x.visual_status === 'reject_for_recipe').map(x => x.recipe_id + ':' + x.image_sha256));
   const seen = new Set();
   const errors = [];
@@ -34,7 +37,9 @@ export function auditRelease(manifest, ledger, triage = {records: []}) {
     if (!hasText(record.reviewer)) missing.push('reviewer');
     if (!/^\d{4}-\d{2}-\d{2}$/.test(record.reviewed_date ?? '')) missing.push('reviewed_date');
     if (record.license_terms_reviewed !== true) missing.push('license_terms_reviewed');
+    if (!KNOWN_LICENSES.has(item.license)) missing.push('unrecognized_archive_license');
     if (!isUrl(record.license_evidence_url)) missing.push('license_evidence_url');
+    else if (record.license_evidence_url === item.source_page) missing.push('license_evidence_url must link to independent license terms, not just the image source page');
     if (record.verified_license !== item.license) missing.push('verified_license does not match manifest');
     if (record.modifications_disclosed !== true) missing.push('modifications_disclosed');
     if (/^CC BY/.test(item.license ?? '')) {
