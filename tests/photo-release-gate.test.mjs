@@ -165,6 +165,11 @@ test('visual evidence must be a local, existing image with matching file signatu
     assert.equal(spoof.size, 0, 'a renamed text file is not image evidence');
     const pngHeader = Buffer.from([137,80,78,71,13,10,26,10,0,0,0,13]);
     await writeFile(image, pngHeader);
+    assert.equal((await collectExistingEvidenceFiles(ledger.release_candidates, root)).size, 0,
+      'a PNG signature without pixel data must never count as evidence');
+    // A genuine tiny PNG fixture, not merely a forged file extension or header.
+    const png = Buffer.from('iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8/x8AAwMCAO+jR1sAAAAASUVORK5CYII=', 'base64');
+    await writeFile(image, png);
     const available = await collectExistingEvidenceFiles(ledger.release_candidates, root);
     assert.ok(available.has(candidate.visual_evidence_ref));
     assert.equal(auditRelease(manifest, ledger, {records: []}, available).cleared_for_editorial_release, 1);
@@ -205,4 +210,32 @@ test('license terms URLs cannot disguise unrelated paths or domains', () => {
   assert.match(auditWithEvidence(manifest, ledger).errors[0], /official license terms page/);
   candidate.license_evidence_url = 'https://creativecommons.org.evil.test/licenses/by-sa/4.0';
   assert.match(auditWithEvidence(manifest, ledger).errors[0], /official license terms page/);
+});
+
+test('truncated or inconsistent image structures are not accepted as editorial evidence', async () => {
+  const {manifest, ledger} = fixtures();
+  const candidate = valid(manifest.sources[0]);
+  ledger.release_candidates.push(candidate);
+  const root = await mkdtemp(join(tmpdir(), 'photo-evidence-structure-'));
+  try {
+    await mkdir(join(root, 'review/evidence'), {recursive: true});
+    const path = join(root, 'review/evidence/001.png');
+    const png = Buffer.from('iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8/x8AAwMCAO+jR1sAAAAASUVORK5CYII=', 'base64');
+    await writeFile(path, png.subarray(0, 33));
+    assert.equal((await collectExistingEvidenceFiles(ledger.release_candidates, root)).size, 0);
+    candidate.visual_evidence_ref = 'review/evidence/001.jpg';
+    const jpeg = Buffer.alloc(256);
+    jpeg[0] = 0xff; jpeg[1] = 0xd8; jpeg[254] = 0xff; jpeg[255] = 0xd9;
+    await writeFile(join(root, candidate.visual_evidence_ref), jpeg);
+    assert.equal((await collectExistingEvidenceFiles(ledger.release_candidates, root)).size, 0,
+      'JPEG with SOI and EOI but no scan/frame cannot pass');
+    candidate.visual_evidence_ref = 'review/evidence/001.webp';
+    const webp = Buffer.alloc(64);
+    webp.write('RIFF', 0); webp.writeUInt32LE(10, 4); webp.write('WEBP', 8);
+    await writeFile(join(root, candidate.visual_evidence_ref), webp);
+    assert.equal((await collectExistingEvidenceFiles(ledger.release_candidates, root)).size, 0,
+      'RIFF length must match the actual file');
+  } finally {
+    await rm(root, {recursive: true, force: true});
+  }
 });
