@@ -29,11 +29,13 @@ function catalogRecipe(id) {
   throw new Error('Unclosed recipe: ' + id);
 }
 
-test('All 11 rejected images have distinct replacement briefs', () => {
-  assert.equal(briefs.rejected_count, 11);
-  assert.equal(briefs.briefs.length, 11);
-  assert.equal(new Set(briefs.briefs.map(x => x.number)).size, 11);
-  assert.deepEqual(briefs.briefs.map(x => x.number), [32,35,37,38,41,44,61,63,64,65,67]);
+test('Every rejected archived image has a distinct, exact replacement brief', () => {
+  const rejected = triage.records.filter(x => x.visual_status === 'reject_for_recipe');
+  const expectedNumbers = rejected.map(x => x.number).sort((a,b) => a - b);
+  assert.equal(briefs.rejected_count, expectedNumbers.length);
+  assert.equal(briefs.briefs.length, expectedNumbers.length);
+  assert.equal(new Set(briefs.briefs.map(x => x.number)).size, expectedNumbers.length);
+  assert.deepEqual(briefs.briefs.map(x => x.number).sort((a,b) => a - b), expectedNumbers);
 });
 
 test('Ingredient quantities and preparation text match actual index.html recipes', () => {
