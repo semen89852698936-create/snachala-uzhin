@@ -115,7 +115,7 @@ def perform(item):
         "n": item["n"], "recipe_id": item["id"], "title": item["title"],
         "prompt": item["prompt_ru"], "original_live_path": item["existing_live_path"],
         "original_git_blob_sha": item["original_blob_sha"],
-        "path": str(photo.relative_to(ROOT)),
+        "path": str(photo.relative_to(ROOT)) if photo.is_relative_to(ROOT) else str(photo),
         "sha256": hashlib.sha256(image).hexdigest(),
         "bytes": len(image), "size": list(art.TARGET_SIZE),
         "model": art.MODEL, "created_at": art.utc_now(),
