@@ -14,6 +14,13 @@ import recover_missing_yandexart as recovery
 
 class RecoveryTests(TestCase):
     def setUp(self):
+        self._safe_mock_env = mock.patch.dict(os.environ, {
+            "YANDEX_API_KEY": "offline-unit-test",
+            "YANDEX_FOLDER_ID": "offline-test-folder",
+            "PHOTO_COST_APPROVED": "true",
+        })
+        self._safe_mock_env.start()
+        self.addCleanup(self._safe_mock_env.stop)
         self.recipes = {int(r["n"]): r for r in recovery.worker.load_recipes()}
 
     def sample_png(self):
