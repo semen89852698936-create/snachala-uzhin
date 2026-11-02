@@ -1,0 +1,85 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-02",
+  "source_commit": "a1c30f0be8745b8996577da7e7a4a3c2b3f2f028",
+  "source_photo_tree_sha": "aa9d2a0790dd9dbe3a86e21ec632823d5692ddc3",
+  "evidence_method": "Direct read of GitHub immutable Git tree for photo-library/alice-ai-art/photos; blob identity only, no repeat hashing, visual or rights clearance.",
+  "photos": [
+    {
+      "number": 1,
+      "path": "photo-library/alice-ai-art/photos/0001-lemon-spinach-pasta.webp",
+      "git_blob_sha": "103665365eca7a993311de4075230c0bc235d615"
+    },
+    {
+      "number": 2,
+      "path": "photo-library/alice-ai-art/photos/0002-tomato-basil-pasta.webp",
+      "git_blob_sha": "1e5e15965f1095319f18c4bb825b1bec54c69db9"
+    },
+    {
+      "number": 3,
+      "path": "photo-library/alice-ai-art/photos/0003-pepper-steak.webp",
+      "git_blob_sha": "2b1046454194310fdf3b2f6ea749923c4c3c9a3b"
+    },
+    {
+      "number": 4,
+      "path": "photo-library/alice-ai-art/photos/0004-meatballs.webp",
+      "git_blob_sha": "8d14cd408e25ddfd049a9240cc8c3641265b163d"
+    },
+    {
+      "number": 5,
+      "path": "photo-library/alice-ai-art/photos/0005-salmon-lemon.webp",
+      "git_blob_sha": "317f20642d4278ad500ff288051961dfd3427fe2"
+    },
+    {
+      "number": 6,
+      "path": "photo-library/alice-ai-art/photos/0006-med-fish.webp",
+      "git_blob_sha": "3f81081c840ef0aa42cb48c0181aab1b0cd47c34"
+    },
+    {
+      "number": 7,
+      "path": "photo-library/alice-ai-art/photos/0007-ratatouille.webp",
+      "git_blob_sha": "f64c6458d4657c97755710931726c5df1f06b790"
+    },
+    {
+      "number": 8,
+      "path": "photo-library/alice-ai-art/photos/0008-chickpeas.webp",
+      "git_blob_sha": "2d15db7385aec85e17cf13329863239d26e41da3"
+    },
+    {
+      "number": 9,
+      "path": "photo-library/alice-ai-art/photos/0009-focaccia.webp",
+      "git_blob_sha": "80a5c290e5e12163a757e746e4c6bbe8d17b86a7"
+    },
+    {
+      "number": 10,
+      "path": "photo-library/alice-ai-art/photos/0010-pancakes.webp",
+      "git_blob_sha": "367bd80873ecb2d261af0d35936f225d086ad04a"
+    },
+    {
+      "number": 11,
+      "path": "photo-library/alice-ai-art/photos/0011-tomato-soup.webp",
+      "git_blob_sha": "a91473a9e29b9afe5aef18b2cc47127d104f7275"
+    },
+    {
+      "number": 12,
+      "path": "photo-library/alice-ai-art/photos/0012-ramen.webp",
+      "git_blob_sha": "3ba84d1e422b1596fbda44d430455f100075fd61"
+    },
+    {
+      "number": 13,
+      "path": "photo-library/alice-ai-art/photos/0013-chocolate-cake.webp",
+      "git_blob_sha": "ab06cdae7fed38cc3843c659ba6babbdc18c137a"
+    },
+    {
+      "number": 14,
+      "path": "photo-library/alice-ai-art/photos/0014-baked-apples.webp",
+      "git_blob_sha": "149e2b8a0ceb70227bdcd7e8936ed1fdabdf2eb7"
+    },
+    {
+      "number": 15,
+      "path": "photo-library/alice-ai-art/photos/0015-chicken-lemon.webp",
+      "git_blob_sha": "a2d408f471edaa06e31dac663d3a0475fe6fea7c"
+    }
+  ],
+  "note": "The previous visual review of #15 contained a 39-character truncated Git blob SHA; corrected from immutable source tree."
+}

@@ -1,0 +1,68 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-02",
+  "project": "snachala-uzhin",
+  "draft_pr": "https://github.com/semen89852698936-create/snachala-uzhin/pull/31",
+  "branch": "photo-library/ai-art-provenance-rights-gate-20261102",
+  "base_pr": 30,
+  "base_sha": "12cae64ba6d0a98470b6310ea361931cbe7cb9a7",
+  "main_sha_checked_before_checkpoint": "0928f54897b11a29ea58d6edb0b99a783ddc7db9",
+  "initial_code_sha": "9688766603592d161bd66258a61e94075412d546",
+  "corrected_code_sha": "3209c2c0f03b0fc4a2282fedf18b73ee13279282",
+  "changed_files": [
+    "photo-library/ai-art-rights-provenance-review-20261102.json",
+    "photo-library/ai-art-source-blob-evidence-1-15.json",
+    "tests/ai-art-provenance-rights.test.mjs",
+    "review/ai-art-eleven-to-fifteen-visual-triage-20261102.json",
+    "tests/ai-art-eleven-to-fifteen-review.test.mjs",
+    ".github/workflows/ai-art-first-five-review.yml",
+    "project-operations/ai-art-rights-provenance-checkpoint-20261102.json"
+  ],
+  "verified_actions": [
+    "Confirmed generator uses Yandex Cloud AI Studio API model aliceai-image-art-3.0; official provider FAQ states commercial use generally permitted subject to applicable law.",
+    "Added offline provenance/rights metadata tests for 1001 records and existing 15 reviews, without claiming individual legal clearance.",
+    "Detected a recovery prompt rewrite for recipe #615; tests now require an explicit recovered_after marker and a matching recipe ingredient instead of falsely requiring an identical title.",
+    "Read immutable GitHub source photo tree (1001 entries) and discovered truncated 39-character Git blob SHA in review #15; corrected it to a2d408f471edaa06e31dac663d3a0475fe6fea7c, updated earlier review regression and added 1-15 source blob evidence."
+  ],
+  "checks": {
+    "editorial": {
+      "status": "success",
+      "url": "https://github.com/semen89852698936-create/snachala-uzhin/actions/runs/41512430057",
+      "head_sha": "3209c2c0f03b0fc4a2282fedf18b73ee13279282"
+    },
+    "photo_pipeline": {
+      "status": "success",
+      "url": "https://github.com/semen89852698936-create/snachala-uzhin/actions/runs/41512430588",
+      "head_sha": "3209c2c0f03b0fc4a2282fedf18b73ee13279282"
+    },
+    "first_attempt": {
+      "status": "failure_corrected",
+      "url": "https://github.com/semen89852698936-create/snachala-uzhin/actions/runs/41512145976",
+      "note": "Found recovery prompt exception #615 and truncated Git blob SHA #15; both fixed and retested."
+    }
+  },
+  "counts": {
+    "physical_ai_webp_prior_verified": 1001,
+    "visual_reviews_existing": 15,
+    "visual_reviews_added": 0,
+    "individual_rights_cleared": 0,
+    "publication_approved": 0,
+    "photos_added": 0,
+    "technical_rehash_repeated": false
+  },
+  "vercel": {
+    "registry_project": "snachala-uzhin-preview",
+    "latest_explicit_production_deployment": "dpl_5GCmpxjRSPWpAYYaP89kNai1eFkC",
+    "status": "READY",
+    "production_sha": "819894450686ce5d5c5a0b1a7058218debd441e3",
+    "note": "Read-only verification; READY is not editorial or browser E2E approval."
+  },
+  "blockers": [
+    "Provider FAQ is a general statement, not individual commercial clearance; account-specific Yandex Cloud AI Studio contract and applicable service terms remain unverified.",
+    "986 AI photos still lack direct visual review; #5, #8, #9 rejected and require physical replacement.",
+    "Safety PR #16 is still draft, while main .github/workflows/yandex-ai-1001.yml retains automatic potentially paid schedule; no permission to merge.",
+    "Archive half-hour PR #12 cron is not active in main. Existing 20 archived technical checks were not repeated."
+  ],
+  "next_safe_task": "Directly review immutable physical AI WebP #16-20 against recipes, pin actual Git blob SHAs from source tree, and keep publication rights blocked; separately review Yandex AI Studio contract terms without claiming individual clearance.",
+  "constraints": "No PR merges, production changes, paid API calls, secret changes, access changes, workflow dispatch, or schedule changes."
+}
