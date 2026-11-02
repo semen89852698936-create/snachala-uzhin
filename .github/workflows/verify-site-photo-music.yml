@@ -1,0 +1,61 @@
+name: Verify 1001 recipe photos and embedded Spotify playlists
+on:
+  push:
+    branches: [feature/attach-1001-yandex-photos]
+    paths:
+      - index.html
+      - full-catalog/index.html
+      - 'assets/recipes-ai/**'
+      - music/spotify-playlists.json
+      - scripts/verify-1001-photo-links.py
+      - scripts/e2e-1001-photos-music.cjs
+      - .github/workflows/verify-site-photo-music.yml
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - name: Check out the proposed website, without publishing
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+        with:
+          persist-credentials: false
+      - name: Verify all WebP blobs and all recipe/Spotify links
+        run: python3 scripts/verify-1001-photo-links.py
+      - name: Validate embedded JavaScript in both HTML pages
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 - <<'PY'
+          import re
+          from pathlib import Path
+          i = 0
+          for html in (Path('index.html'),Path('full-catalog/index.html')):
+              for attrs,js in re.findall(r'<script([^>]*)>(.*?)</script>',html.read_text(encoding='utf-8'),re.S):
+                  if 'application/json' in attrs or 'src=' in attrs or not js.strip(): continue
+                  i+=1
+                  Path('/tmp/site-js-'+str(i)+'.js').write_text(js,encoding='utf-8')
+          print('JavaScript blocks to verify:',i)
+          PY
+          for js in /tmp/site-js-*.js; do node --check "$js"; done
+          node --check scripts/e2e-1001-photos-music.cjs
+      - name: Install headless Chromium for desktop and mobile
+        run: |
+          npm install --no-save --no-package-lock playwright@1.56.1
+          npx playwright install --with-deps chromium
+      - name: Test responsive layout, navigation, and photo serving
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 -m http.server 8765 --bind 127.0.0.1 >/tmp/1001-site-http.log 2>&1 &
+          sleep 2
+          node scripts/e2e-1001-photos-music.cjs
+      - name: Retain screenshots for visual inspection
+        if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
+        with:
+          name: approved-1001-photos-music-responsive-views
+          path: /tmp/snachala-uzhin-1001-*.png
+          if-no-files-found: ignore
