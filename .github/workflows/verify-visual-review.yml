@@ -5,11 +5,13 @@ on:
       - audit/visual-photo-release-20261102-evening
     paths:
       - photo-library/visual-review-20261102-evening.json
+      - photo-library/current-release-status.json
       - scripts/test_visual_review_records.py
       - .github/workflows/verify-visual-review.yml
   pull_request:
     paths:
       - photo-library/visual-review-20261102-evening.json
+      - photo-library/current-release-status.json
       - scripts/test_visual_review_records.py
       - .github/workflows/verify-visual-review.yml
 permissions:
