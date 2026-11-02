@@ -1,17 +1,330 @@
 {
+  "updated_for_site": "Curated 20-track suggestion lists are prepared for the 3 official Spotify playlists. Changes to the user's Spotify account playlists are NOT made by GitHub and must be synchronized in Spotify.",
+  "source": "Original website 10 tracks per section + 10 suggested additions",
   "spotify": {
     "cooking": {
-      "title": "Под что готовить",
-      "playlistUrl": "https://open.spotify.com/playlist/7lvXSaWbmTnJaaTRvBXUB4"
+      "title": "Под чтоготовить",
+      "playlistUrl": "https://open.spotify.com/playlist/7lvXSaWbmTnJaaTRvBXUB4",
+      "intendedTrackCount": 20,
+      "spotifyPlaylistCountVerified": false,
+      "proposedTracks": [
+        {
+          "position": 1,
+          "title": "Chan Chan",
+          "artist": "Buena Vista Social Club"
+        },
+        {
+          "position": 2,
+          "title": "Put Your Records On",
+          "artist": "Corinne Bailey Rae"
+        },
+        {
+          "position": 3,
+          "title": "Sway",
+          "artist": "Michael Bublé"
+        },
+        {
+          "position": 4,
+          "title": "Mas Que Nada",
+          "artist": "Sérgio Mendes & Brasil '66"
+        },
+        {
+          "position": 5,
+          "title": "Lovely Day",
+          "artist": "Bill Withers"
+        },
+        {
+          "position": 6,
+          "title": "Sunday Morning",
+          "artist": "Maroon 5"
+        },
+        {
+          "position": 7,
+          "title": "Beyond the Sea",
+          "artist": "Bobby Darin"
+        },
+        {
+          "position": 8,
+          "title": "Je veux",
+          "artist": "Zaz"
+        },
+        {
+          "position": 9,
+          "title": "Treasure",
+          "artist": "Bruno Mars"
+        },
+        {
+          "position": 10,
+          "title": "Can't Take My Eyes Off You",
+          "artist": "Frankie Valli"
+        },
+        {
+          "position": 11,
+          "title": "Better Together",
+          "artist": "Jack Johnson"
+        },
+        {
+          "position": 12,
+          "title": "I'm Yours",
+          "artist": "Jason Mraz"
+        },
+        {
+          "position": 13,
+          "title": "Budapest",
+          "artist": "George Ezra"
+        },
+        {
+          "position": 14,
+          "title": "New Light",
+          "artist": "John Mayer"
+        },
+        {
+          "position": 15,
+          "title": "Riptide",
+          "artist": "Vance Joy"
+        },
+        {
+          "position": 16,
+          "title": "September",
+          "artist": "Earth, Wind & Fire"
+        },
+        {
+          "position": 17,
+          "title": "Virtual Insanity",
+          "artist": "Jamiroquai"
+        },
+        {
+          "position": 18,
+          "title": "Signed, Sealed, Delivered (I'm Yours)",
+          "artist": "Stevie Wonder"
+        },
+        {
+          "position": 19,
+          "title": "Smooth",
+          "artist": "Santana feat. Rob Thomas"
+        },
+        {
+          "position": 20,
+          "title": "Quelqu'un m'a dit",
+          "artist": "Carla Bruni"
+        }
+      ]
     },
     "dinner": {
-      "title": "Под что ужинать",
-      "playlistUrl": "https://open.spotify.com/playlist/6dEbxo2xovdfIQLBeAAO37"
+      "title": "Под чтоужинать",
+      "playlistUrl": "https://open.spotify.com/playlist/6dEbxo2xovdfIQLBeAAO37",
+      "intendedTrackCount": 20,
+      "spotifyPlaylistCountVerified": false,
+      "proposedTracks": [
+        {
+          "position": 1,
+          "title": "Don't Know Why",
+          "artist": "Norah Jones"
+        },
+        {
+          "position": 2,
+          "title": "By Your Side",
+          "artist": "Sade"
+        },
+        {
+          "position": 3,
+          "title": "My Funny Valentine",
+          "artist": "Chet Baker"
+        },
+        {
+          "position": 4,
+          "title": "Come Away With Me",
+          "artist": "Norah Jones"
+        },
+        {
+          "position": 5,
+          "title": "At Last",
+          "artist": "Etta James"
+        },
+        {
+          "position": 6,
+          "title": "The Look of Love",
+          "artist": "Diana Krall"
+        },
+        {
+          "position": 7,
+          "title": "Let's Stay Together",
+          "artist": "Al Green"
+        },
+        {
+          "position": 8,
+          "title": "Dream a Little Dream of Me",
+          "artist": "Ella Fitzgerald & Louis Armstrong"
+        },
+        {
+          "position": 9,
+          "title": "Smooth Operator",
+          "artist": "Sade"
+        },
+        {
+          "position": 10,
+          "title": "The Girl from Ipanema",
+          "artist": "Stan Getz, João Gilberto & Astrud Gilberto"
+        },
+        {
+          "position": 11,
+          "title": "The Way You Look Tonight",
+          "artist": "Frank Sinatra"
+        },
+        {
+          "position": 12,
+          "title": "My Baby Just Cares for Me",
+          "artist": "Nina Simone"
+        },
+        {
+          "position": 13,
+          "title": "La Vie en Rose",
+          "artist": "Louis Armstrong"
+        },
+        {
+          "position": 14,
+          "title": "L-O-V-E",
+          "artist": "Nat King Cole"
+        },
+        {
+          "position": 15,
+          "title": "Baby I'm a Fool",
+          "artist": "Melody Gardot"
+        },
+        {
+          "position": 16,
+          "title": "Hey Laura",
+          "artist": "Gregory Porter"
+        },
+        {
+          "position": 17,
+          "title": "Everlasting Love",
+          "artist": "Jamie Cullum"
+        },
+        {
+          "position": 18,
+          "title": "Misty",
+          "artist": "Sarah Vaughan"
+        },
+        {
+          "position": 19,
+          "title": "Waltz for Debby",
+          "artist": "Bill Evans"
+        },
+        {
+          "position": 20,
+          "title": "So Nice",
+          "artist": "Stacey Kent"
+        }
+      ]
     },
     "continue": {
-      "title": "Под что продолжить",
-      "playlistUrl": "https://open.spotify.com/playlist/2BlyxFmZbKN3HAVk2TZFT6"
+      "title": "Под чтопродолжить",
+      "playlistUrl": "https://open.spotify.com/playlist/2BlyxFmZbKN3HAVk2TZFT6",
+      "intendedTrackCount": 20,
+      "spotifyPlaylistCountVerified": false,
+      "proposedTracks": [
+        {
+          "position": 1,
+          "title": "Open",
+          "artist": "Rhye"
+        },
+        {
+          "position": 2,
+          "title": "Apocalypse",
+          "artist": "Cigarettes After Sex"
+        },
+        {
+          "position": 3,
+          "title": "Intro",
+          "artist": "The xx"
+        },
+        {
+          "position": 4,
+          "title": "Wicked Game",
+          "artist": "Chris Isaak"
+        },
+        {
+          "position": 5,
+          "title": "Tadow",
+          "artist": "Masego & FKJ"
+        },
+        {
+          "position": 6,
+          "title": "Retrograde",
+          "artist": "James Blake"
+        },
+        {
+          "position": 7,
+          "title": "Fade Into You",
+          "artist": "Mazzy Star"
+        },
+        {
+          "position": 8,
+          "title": "Nothing's Gonna Hurt You Baby",
+          "artist": "Cigarettes After Sex"
+        },
+        {
+          "position": 9,
+          "title": "Show Me How",
+          "artist": "Men I Trust"
+        },
+        {
+          "position": 10,
+          "title": "No Ordinary Love",
+          "artist": "Sade"
+        },
+        {
+          "position": 11,
+          "title": "Angels",
+          "artist": "The xx"
+        },
+        {
+          "position": 12,
+          "title": "Teardrop",
+          "artist": "Massive Attack"
+        },
+        {
+          "position": 13,
+          "title": "Strong",
+          "artist": "London Grammar"
+        },
+        {
+          "position": 14,
+          "title": "Video Games",
+          "artist": "Lana Del Rey"
+        },
+        {
+          "position": 15,
+          "title": "Glory Box",
+          "artist": "Portishead"
+        },
+        {
+          "position": 16,
+          "title": "Riverside",
+          "artist": "Agnes Obel"
+        },
+        {
+          "position": 17,
+          "title": "Heartbeats",
+          "artist": "José González"
+        },
+        {
+          "position": 18,
+          "title": "K.",
+          "artist": "Cigarettes After Sex"
+        },
+        {
+          "position": 19,
+          "title": "Into Dust",
+          "artist": "Mazzy Star"
+        },
+        {
+          "position": 20,
+          "title": "All I Need",
+          "artist": "Air"
+        }
+      ]
     }
-  },
-  "note": "Добавить реальные ссылки Spotify после создания плейлистов в аккаунте; не подставлять вымышленные ID"
+  }
 }

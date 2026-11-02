@@ -31,4 +31,36 @@ for url in ("index.html","full-catalog/index.html"):
     for cat in ("meat","poultry","fish","pasta","vegetables","pastry","soup","salads","dessert","breakfast"):
         assert re.search(r"\{id:'"+cat+r"',[^\n]*photo:'/assets/recipes-ai/[^']+\.webp'",html),(url,cat)
     print("PASS",url,"1001 image mappings, 10 category images, prominent Our Evening CTA")
-print("PASS 1001 unique WebP, exact file sizes, Git blob hashes")
+
+from html.parser import HTMLParser
+class MusicEmbedParser(HTMLParser):
+    def __init__(self):
+        super().__init__()
+        self.players=[]
+    def handle_starttag(self,tag,attrs):
+        attrs=dict(attrs)
+        if tag=="iframe" and "/embed/playlist/" in attrs.get("src",""):
+            self.players.append(attrs)
+playlists=json.loads((root/"music/spotify-playlists.json").read_text(encoding="utf-8"))["spotify"]
+assert len(playlists)==3
+for key in ("cooking","dinner","continue"):
+    playlist=playlists[key]
+    assert len(playlist["proposedTracks"])==20,(key,len(playlist["proposedTracks"]))
+    assert len({(r["title"],r["artist"]) for r in playlist["proposedTracks"]})==20,key
+    assert playlist["spotifyPlaylistCountVerified"] is False,"Do not claim official playlist is 20 until Spotify verified"
+for url in ("index.html","full-catalog/index.html"):
+    html=(root/url).read_text(encoding="utf-8")
+    reader=MusicEmbedParser()
+    reader.feed(html)
+    assert len(reader.players)==3,(url,"embedded Spotify players",len(reader.players))
+    for key,player in zip(("cooking","dinner","continue"),reader.players):
+        pid=playlists[key]["playlistUrl"].rsplit("/",1)[-1]
+        assert "/embed/playlist/"+pid in player["src"],(url,key)
+        assert "autoplay" in player.get("allow",""),(url,key)
+    assert 'id="du-music-player"' not in html,(url,"bottom player must be removed")
+    assert 'id="du-music-iframe"' not in html,(url,"single floating player must be removed")
+    assert 'data-music-track="' not in html,(url,"faux inline play buttons must be removed")
+    assert html.count("Подборка на 20 песен")==3,(url,"20 songs per curated list")
+    print("PASS",url,"3 embedded playlist players, no bottom player, 20 curated suggestions per list")
+print("PASS 1001 unique WebP, exact file sizes, Git blob hashes, Spotify playlist metadata")
+

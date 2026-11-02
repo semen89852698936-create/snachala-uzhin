@@ -423,6 +423,24 @@ a.du-evening-nav-mobile{display:none}
 @media(prefers-reduced-motion:reduce){
  .main-nav a[data-nav="evening"]{transition:none}
 }
+
+/* Native in-card Spotify playlists: no detached player or misleading track play buttons. */
+.du-music-native-player{margin-top:0;width:100%;min-width:0}
+.du-music-native-player iframe{display:block;width:100%;height:420px;border:0;border-radius:16px;background:#eadfe5}
+.du-music-open-spotify{align-self:flex-start;display:inline-flex;gap:6px;padding:11px 2px;color:#824e68;font:800 13px/1.3 var(--sans);text-decoration:underline;text-underline-offset:3px}
+.du-music-open-spotify:hover{color:#573044}
+.du-music-open-spotify:focus-visible,.du-music-suggestions summary:focus-visible{outline:3px solid #b77996;outline-offset:3px;border-radius:8px}
+.du-music-suggestions{border-top:1px solid #d8c0ca;margin-top:9px;padding-top:12px}
+.du-music-suggestions summary{cursor:pointer;color:#7f4d65;font:750 13px/1.5 var(--sans);list-style:none;display:flex;justify-content:space-between;align-items:center;gap:9px;padding:7px 0}
+.du-music-suggestions summary::-webkit-details-marker{display:none}
+.du-music-suggestions[open] summary span{transform:rotate(180deg)}
+.du-music-suggestions>p{font:500 12px/1.6 var(--sans);color:#896d7a;margin:10px 0}
+.du-music-suggestions ol{list-style:decimal inside;margin:0;padding:0 0 5px;max-height:325px;overflow-y:auto;scrollbar-width:thin}
+.du-music-suggestions li{display:flex;flex-wrap:wrap;gap:4px 10px;padding:8px 0;border-bottom:1px solid #dbc6cd;font:500 12px/1.4 var(--sans);color:#947583}
+.du-music-suggestions li strong{color:#684e5d;font-size:13px;font-weight:750}
+.du-music-suggestions li span{color:#806d77}
+.du-music-card-end{margin-top:auto}
+@media(max-width:480px){.du-music-native-player iframe{height:430px}}
 </style>
 </head><body>
 <div class="demo-strip"><span class="demo-dot"></span> ОТКРЫТАЯ КОЛЛЕКЦИЯ · 1000 РЕЦЕПТОВ + 1 СЕКРЕТНЫЙ · ГОТОВЬТЕ ВМЕСТЕ</div>
@@ -462,82 +480,57 @@ a.du-evening-nav-mobile{display:none}
     <div class="du-eyebrow">МУЗЫКАЛЬНЫЙ СЦЕНАРИЙ / ТРИ ГЛАВЫ</div>
     <div class="du-section-heading">
       <h2 id="du-music-title">У каждого вечера<br><em>свой саундтрек.</em></h2>
-      <p>Сначала музыка для кухни. Потом для ужина. А дальше… пусть музыка скажет за вас. В каждой главе 10 песен. Выбирай настроение, затем трек, и наслаждайся моментом.</p>
+      <p>Готовить, ужинать и продолжать вечер под музыку. Нажми Play прямо в нужном плейлисте Spotify. Песни могут переходить одна в другую в рамках воспроизведения Spotify.</p>
     </div>
   </div>
   <div class="du-music-grid" aria-label="Три музыкальные главы вечера">
-    <article class="du-music-card is-active" data-music-phase="kitchen">
+    <article class="du-music-card" data-music-phase="kitchen">
       <div class="du-music-card-head"><span class="du-music-phase">01 / РАЗОГРЕВАЕМ ВЕЧЕР</span><span class="du-music-illustration" aria-hidden="true">♬</span></div>
       <h3>Под что<br><em>готовить.</em></h3>
       <p class="du-music-card-desc">Танцуйте между плитой и холодильником. Даже если соус немного подождёт.</p>
-      <div class="du-music-total"><span>10 композиций</span><span aria-hidden="true">♫</span></div>
-      <div class="du-music-tracks" role="group" aria-label="Треки для приготовления еды">
-        <button type="button" class="du-music-track is-active" data-music-track="chan" aria-pressed="true"><span class="du-music-track-num">01</span><span class="du-music-track-info"><strong>Chan Chan</strong><small>Buena Vista Social Club</small></span><span class="du-music-track-play" aria-hidden="true">▶</span></button>
-        <button type="button" class="du-music-track" data-music-track="put" aria-pressed="false"><span class="du-music-track-num">02</span><span class="du-music-track-info"><strong>Put Your Records On</strong><small>Corinne Bailey Rae</small></span><span class="du-music-track-play" aria-hidden="true">▶</span></button>
-        <button type="button" class="du-music-track" data-music-track="sway" aria-pressed="false"><span class="du-music-track-num">03</span><span class="du-music-track-info"><strong>Sway</strong><small>Michael Bublé</small></span><span class="du-music-track-play" aria-hidden="true">▶</span></button>
-        <button type="button" class="du-music-track" data-music-track="mais" aria-pressed="false"><span class="du-music-track-num">04</span><span class="du-music-track-info"><strong>Mais Que Nada</strong><small>Sergio Mendes &amp; Brasil ’66</small></span><span class="du-music-track-play" aria-hidden="true">▶</span></button>
-        <button type="button" class="du-music-track" data-music-track="lovely" aria-pressed="false"><span class="du-music-track-num">05</span><span class="du-music-track-info"><strong>Lovely Day</strong><small>Bill Withers</small></span><span class="du-music-track-play" aria-hidden="true">▶</span></button>
-        <button type="button" class="du-music-track" data-music-track="sunday" aria-pressed="false"><span class="du-music-track-num">06</span><span class="du-music-track-info"><strong>Sunday Morning</strong><small>Maroon 5</small></span><span class="du-music-track-play" aria-hidden="true">▶</span></button>
-        <button type="button" class="du-music-track" data-music-track="beyond" aria-pressed="false"><span class="du-music-track-num">07</span><span class="du-music-track-info"><strong>Beyond the Sea</strong><small>Bobby Darin</small></span><span class="du-music-track-play" aria-hidden="true">▶</span></button>
-        <button type="button" class="du-music-track" data-music-track="jeveux" aria-pressed="false"><span class="du-music-track-num">08</span><span class="du-music-track-info"><strong>Je veux</strong><small>Zaz</small></span><span class="du-music-track-play" aria-hidden="true">▶</span></button>
-        <button type="button" class="du-music-track" data-music-track="treasure" aria-pressed="false"><span class="du-music-track-num">09</span><span class="du-music-track-info"><strong>Treasure</strong><small>Bruno Mars</small></span><span class="du-music-track-play" aria-hidden="true">▶</span></button>
-        <button type="button" class="du-music-track" data-music-track="eyes" aria-pressed="false"><span class="du-music-track-num">10</span><span class="du-music-track-info"><strong>Can’t Take My Eyes Off You</strong><small>Frankie Valli</small></span><span class="du-music-track-play" aria-hidden="true">▶</span></button>
+      <div class="du-music-total"><span>Слушай прямо здесь</span><span aria-hidden="true">♫</span></div>
+      <div class="du-music-native-player">
+        <iframe title="Spotify: Под чтоготовить" src="https://open.spotify.com/embed/playlist/7lvXSaWbmTnJaaTRvBXUB4?utm_source=generator&theme=0" width="100%" height="420" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
       </div>
+      <a class="du-music-open-spotify" href="https://open.spotify.com/playlist/7lvXSaWbmTnJaaTRvBXUB4" target="_blank" rel="noopener noreferrer">Открыть плейлист в Spotify ↗</a>
+      <details class="du-music-suggestions"><summary>Подборка на 20 песен <span aria-hidden="true">⌄</span></summary>
+        <p>Наши 20 музыкальных рекомендаций для этого настроения. Они подготовлены для пополнения Spotify-плейлиста. Фактически доступные треки определяются его содержимым в Spotify.</p>
+        <ol><li><strong>Chan Chan</strong><span>Buena Vista Social Club</span></li><li><strong>Put Your Records On</strong><span>Corinne Bailey Rae</span></li><li><strong>Sway</strong><span>Michael Bublé</span></li><li><strong>Mas Que Nada</strong><span>Sérgio Mendes &amp; Brasil '66</span></li><li><strong>Lovely Day</strong><span>Bill Withers</span></li><li><strong>Sunday Morning</strong><span>Maroon 5</span></li><li><strong>Beyond the Sea</strong><span>Bobby Darin</span></li><li><strong>Je veux</strong><span>Zaz</span></li><li><strong>Treasure</strong><span>Bruno Mars</span></li><li><strong>Can't Take My Eyes Off You</strong><span>Frankie Valli</span></li><li><strong>Better Together</strong><span>Jack Johnson</span></li><li><strong>I'm Yours</strong><span>Jason Mraz</span></li><li><strong>Budapest</strong><span>George Ezra</span></li><li><strong>New Light</strong><span>John Mayer</span></li><li><strong>Riptide</strong><span>Vance Joy</span></li><li><strong>September</strong><span>Earth, Wind &amp; Fire</span></li><li><strong>Virtual Insanity</strong><span>Jamiroquai</span></li><li><strong>Signed, Sealed, Delivered (I'm Yours)</strong><span>Stevie Wonder</span></li><li><strong>Smooth</strong><span>Santana feat. Rob Thomas</span></li><li><strong>Quelqu'un m'a dit</strong><span>Carla Bruni</span></li></ol>
+      </details>
       <span class="du-music-card-end">Тут можно и подпевать. ♡</span>
     </article>
     <article class="du-music-card" data-music-phase="dinner">
       <div class="du-music-card-head"><span class="du-music-phase">02 / ВРЕМЯ ДЛЯ ДВОИХ</span><span class="du-music-illustration" aria-hidden="true">✧</span></div>
       <h3>Под что<br><em>ужинать.</em></h3>
       <p class="du-music-card-desc">Свечи горят, телефоны молчат. Слышно только музыку и друг друга.</p>
-      <div class="du-music-total"><span>10 композиций</span><span aria-hidden="true">♫</span></div>
-      <div class="du-music-tracks" role="group" aria-label="Треки для романтического ужина">
-        <button type="button" class="du-music-track" data-music-track="norah" aria-pressed="false"><span class="du-music-track-num">01</span><span class="du-music-track-info"><strong>Don't Know Why</strong><small>Norah Jones</small></span><span class="du-music-track-play" aria-hidden="true">▶</span></button>
-        <button type="button" class="du-music-track" data-music-track="sade" aria-pressed="false"><span class="du-music-track-num">02</span><span class="du-music-track-info"><strong>By Your Side</strong><small>Sade</small></span><span class="du-music-track-play" aria-hidden="true">▶</span></button>
-        <button type="button" class="du-music-track" data-music-track="chet" aria-pressed="false"><span class="du-music-track-num">03</span><span class="du-music-track-info"><strong>My Funny Valentine</strong><small>Chet Baker</small></span><span class="du-music-track-play" aria-hidden="true">▶</span></button>
-        <button type="button" class="du-music-track" data-music-track="comeaway" aria-pressed="false"><span class="du-music-track-num">04</span><span class="du-music-track-info"><strong>Come Away With Me</strong><small>Norah Jones</small></span><span class="du-music-track-play" aria-hidden="true">▶</span></button>
-        <button type="button" class="du-music-track" data-music-track="atlast" aria-pressed="false"><span class="du-music-track-num">05</span><span class="du-music-track-info"><strong>At Last</strong><small>Etta James</small></span><span class="du-music-track-play" aria-hidden="true">▶</span></button>
-        <button type="button" class="du-music-track" data-music-track="looklove" aria-pressed="false"><span class="du-music-track-num">06</span><span class="du-music-track-info"><strong>The Look of Love</strong><small>Diana Krall</small></span><span class="du-music-track-play" aria-hidden="true">▶</span></button>
-        <button type="button" class="du-music-track" data-music-track="stay" aria-pressed="false"><span class="du-music-track-num">07</span><span class="du-music-track-info"><strong>Let’s Stay Together</strong><small>Al Green</small></span><span class="du-music-track-play" aria-hidden="true">▶</span></button>
-        <button type="button" class="du-music-track" data-music-track="dream" aria-pressed="false"><span class="du-music-track-num">08</span><span class="du-music-track-info"><strong>Dream a Little Dream of Me</strong><small>Ella Fitzgerald &amp; Louis Armstrong</small></span><span class="du-music-track-play" aria-hidden="true">▶</span></button>
-        <button type="button" class="du-music-track" data-music-track="smooth" aria-pressed="false"><span class="du-music-track-num">09</span><span class="du-music-track-info"><strong>Smooth Operator</strong><small>Sade</small></span><span class="du-music-track-play" aria-hidden="true">▶</span></button>
-        <button type="button" class="du-music-track" data-music-track="ipanema" aria-pressed="false"><span class="du-music-track-num">10</span><span class="du-music-track-info"><strong>The Girl from Ipanema</strong><small>Stan Getz, João Gilberto, Astrud Gilberto</small></span><span class="du-music-track-play" aria-hidden="true">▶</span></button>
+      <div class="du-music-total"><span>Слушай прямо здесь</span><span aria-hidden="true">♫</span></div>
+      <div class="du-music-native-player">
+        <iframe title="Spotify: Под чтоужинать" src="https://open.spotify.com/embed/playlist/6dEbxo2xovdfIQLBeAAO37?utm_source=generator&theme=0" width="100%" height="420" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
       </div>
+      <a class="du-music-open-spotify" href="https://open.spotify.com/playlist/6dEbxo2xovdfIQLBeAAO37" target="_blank" rel="noopener noreferrer">Открыть плейлист в Spotify ↗</a>
+      <details class="du-music-suggestions"><summary>Подборка на 20 песен <span aria-hidden="true">⌄</span></summary>
+        <p>Наши 20 музыкальных рекомендаций для этого настроения. Они подготовлены для пополнения Spotify-плейлиста. Фактически доступные треки определяются его содержимым в Spotify.</p>
+        <ol><li><strong>Don't Know Why</strong><span>Norah Jones</span></li><li><strong>By Your Side</strong><span>Sade</span></li><li><strong>My Funny Valentine</strong><span>Chet Baker</span></li><li><strong>Come Away With Me</strong><span>Norah Jones</span></li><li><strong>At Last</strong><span>Etta James</span></li><li><strong>The Look of Love</strong><span>Diana Krall</span></li><li><strong>Let's Stay Together</strong><span>Al Green</span></li><li><strong>Dream a Little Dream of Me</strong><span>Ella Fitzgerald &amp; Louis Armstrong</span></li><li><strong>Smooth Operator</strong><span>Sade</span></li><li><strong>The Girl from Ipanema</strong><span>Stan Getz, João Gilberto &amp; Astrud Gilberto</span></li><li><strong>The Way You Look Tonight</strong><span>Frank Sinatra</span></li><li><strong>My Baby Just Cares for Me</strong><span>Nina Simone</span></li><li><strong>La Vie en Rose</strong><span>Louis Armstrong</span></li><li><strong>L-O-V-E</strong><span>Nat King Cole</span></li><li><strong>Baby I'm a Fool</strong><span>Melody Gardot</span></li><li><strong>Hey Laura</strong><span>Gregory Porter</span></li><li><strong>Everlasting Love</strong><span>Jamie Cullum</span></li><li><strong>Misty</strong><span>Sarah Vaughan</span></li><li><strong>Waltz for Debby</strong><span>Bill Evans</span></li><li><strong>So Nice</strong><span>Stacey Kent</span></li></ol>
+      </details>
       <span class="du-music-card-end">Паузы тоже часть мелодии.</span>
     </article>
     <article class="du-music-card" data-music-phase="after">
       <div class="du-music-card-head"><span class="du-music-phase">03 / ПРОДОЛЖЕНИЕ СЛЕДУЕТ</span><span class="du-music-illustration" aria-hidden="true">☾</span></div>
       <h3>Под что<br><em>продолжить.</em></h3>
       <p class="du-music-card-desc">Свет становится тише. Разговоры короче. И уже совершенно некуда спешить.</p>
-      <div class="du-music-total"><span>10 композиций</span><span aria-hidden="true">♫</span></div>
-      <div class="du-music-tracks" role="group" aria-label="Треки для продолжения вечера">
-        <button type="button" class="du-music-track" data-music-track="rhye" aria-pressed="false"><span class="du-music-track-num">01</span><span class="du-music-track-info"><strong>Open</strong><small>Rhye</small></span><span class="du-music-track-play" aria-hidden="true">▶</span></button>
-        <button type="button" class="du-music-track" data-music-track="apocalypse" aria-pressed="false"><span class="du-music-track-num">02</span><span class="du-music-track-info"><strong>Apocalypse</strong><small>Cigarettes After Sex</small></span><span class="du-music-track-play" aria-hidden="true">▶</span></button>
-        <button type="button" class="du-music-track" data-music-track="xx" aria-pressed="false"><span class="du-music-track-num">03</span><span class="du-music-track-info"><strong>Intro</strong><small>The xx</small></span><span class="du-music-track-play" aria-hidden="true">▶</span></button>
-        <button type="button" class="du-music-track" data-music-track="wicked" aria-pressed="false"><span class="du-music-track-num">04</span><span class="du-music-track-info"><strong>Wicked Game</strong><small>Chris Isaak</small></span><span class="du-music-track-play" aria-hidden="true">▶</span></button>
-        <button type="button" class="du-music-track" data-music-track="tadow" aria-pressed="false"><span class="du-music-track-num">05</span><span class="du-music-track-info"><strong>Tadow</strong><small>Masego &amp; FKJ</small></span><span class="du-music-track-play" aria-hidden="true">▶</span></button>
-        <button type="button" class="du-music-track" data-music-track="retrograde" aria-pressed="false"><span class="du-music-track-num">06</span><span class="du-music-track-info"><strong>Retrograde</strong><small>James Blake</small></span><span class="du-music-track-play" aria-hidden="true">▶</span></button>
-        <button type="button" class="du-music-track" data-music-track="fade" aria-pressed="false"><span class="du-music-track-num">07</span><span class="du-music-track-info"><strong>Fade Into You</strong><small>Mazzy Star</small></span><span class="du-music-track-play" aria-hidden="true">▶</span></button>
-        <button type="button" class="du-music-track" data-music-track="nothing" aria-pressed="false"><span class="du-music-track-num">08</span><span class="du-music-track-info"><strong>Nothing’s Gonna Hurt You Baby</strong><small>Cigarettes After Sex</small></span><span class="du-music-track-play" aria-hidden="true">▶</span></button>
-        <button type="button" class="du-music-track" data-music-track="showme" aria-pressed="false"><span class="du-music-track-num">09</span><span class="du-music-track-info"><strong>Show Me How</strong><small>Men I Trust</small></span><span class="du-music-track-play" aria-hidden="true">▶</span></button>
-        <button type="button" class="du-music-track" data-music-track="ordinary" aria-pressed="false"><span class="du-music-track-num">10</span><span class="du-music-track-info"><strong>No Ordinary Love</strong><small>Sade</small></span><span class="du-music-track-play" aria-hidden="true">▶</span></button>
+      <div class="du-music-total"><span>Слушай прямо здесь</span><span aria-hidden="true">♫</span></div>
+      <div class="du-music-native-player">
+        <iframe title="Spotify: Под чтопродолжить" src="https://open.spotify.com/embed/playlist/2BlyxFmZbKN3HAVk2TZFT6?utm_source=generator&theme=0" width="100%" height="420" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
       </div>
+      <a class="du-music-open-spotify" href="https://open.spotify.com/playlist/2BlyxFmZbKN3HAVk2TZFT6" target="_blank" rel="noopener noreferrer">Открыть плейлист в Spotify ↗</a>
+      <details class="du-music-suggestions"><summary>Подборка на 20 песен <span aria-hidden="true">⌄</span></summary>
+        <p>Наши 20 музыкальных рекомендаций для этого настроения. Они подготовлены для пополнения Spotify-плейлиста. Фактически доступные треки определяются его содержимым в Spotify.</p>
+        <ol><li><strong>Open</strong><span>Rhye</span></li><li><strong>Apocalypse</strong><span>Cigarettes After Sex</span></li><li><strong>Intro</strong><span>The xx</span></li><li><strong>Wicked Game</strong><span>Chris Isaak</span></li><li><strong>Tadow</strong><span>Masego &amp; FKJ</span></li><li><strong>Retrograde</strong><span>James Blake</span></li><li><strong>Fade Into You</strong><span>Mazzy Star</span></li><li><strong>Nothing's Gonna Hurt You Baby</strong><span>Cigarettes After Sex</span></li><li><strong>Show Me How</strong><span>Men I Trust</span></li><li><strong>No Ordinary Love</strong><span>Sade</span></li><li><strong>Angels</strong><span>The xx</span></li><li><strong>Teardrop</strong><span>Massive Attack</span></li><li><strong>Strong</strong><span>London Grammar</span></li><li><strong>Video Games</strong><span>Lana Del Rey</span></li><li><strong>Glory Box</strong><span>Portishead</span></li><li><strong>Riverside</strong><span>Agnes Obel</span></li><li><strong>Heartbeats</strong><span>José González</span></li><li><strong>K.</strong><span>Cigarettes After Sex</span></li><li><strong>Into Dust</strong><span>Mazzy Star</span></li><li><strong>All I Need</strong><span>Air</span></li></ol>
+      </details>
       <span class="du-music-card-end">Остальное… без рецепта. ♡</span>
     </article>
   </div>
-  <div class="du-music-player" id="du-music-player" aria-label="Музыкальный плеер">
-    <div class="du-music-player-copy" aria-live="polite">
-      <span class="du-music-now-label"><span class="du-music-live-dot" aria-hidden="true"></span> ВЫБРАННЫЙ ТРЕК</span>
-      <h3 id="du-music-now-title">Chan Chan</h3>
-      <p id="du-music-now-artist">Buena Vista Social Club</p>
-      <span id="du-music-now-story">Для танцев между плитой и холодильником.</span>
-      <a href="https://open.spotify.com/track/5sbw5zIz9ck2pOEDXUR0QU" id="du-music-external" target="_blank" rel="noopener noreferrer">Открыть в Spotify ↗</a>
-    </div>
-    <div class="du-music-spotify">
-      <iframe id="du-music-iframe" title="Spotify: Chan Chan — Buena Vista Social Club" src="https://open.spotify.com/embed/track/5sbw5zIz9ck2pOEDXUR0QU?utm_source=generator" width="100%" height="152" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-      <p>Для прослушивания нажми ▶ в плеере Spotify. Доступность полного трека зависит от сервиса и региона.</p>
-    </div>
-  </div>
-  <p class="du-music-legal">Музыка звучит через официальный плеер Spotify. Сайт не хранит и не распространяет записи. Автовоспроизведение отключено.</p>
+  <p class="du-music-legal">Встроенные плейлисты воспроизводит Spotify: сайт не хранит аудиозаписи. Полное прослушивание и непрерывный переход между треками зависят от аккаунта, региона и браузера. Для начала нажми Play в выбранном плеере.</p>
 </section>
 <section class="du-photo-break"><div class="du-photo-overlay"><span>НЕ ИЩИТЕ ОСОБЫЙ ПОВОД.</span><h2>Просто накройте<br>на <em>двоих.</em></h2><p>Иногда этого вполне достаточно.</p></div></section>
 <section class="section container du-categories" id="categories"><div class="du-section-top"><div class="du-eyebrow">02 / ВЫБЕРИ, ЧТО ПРИГОТОВИТЬ</div><div class="du-section-heading"><h2>Тысяча историй.<br><em>Одна на сегодня.</em></h2><p>10 разделов по 100 рецептов и вариаций в каждом. От лёгких салатов до ужинов, которые стоит запомнить.</p></div></div><div class="category-grid" id="categoryGrid"></div></section>
@@ -706,73 +699,5 @@ function initEvening(){
  renderEvening();
 }
 initEvening();
-</script><script>(() => {
-  "use strict";
-  const tracks = Object.freeze({
-    chan: {id:'5sbw5zIz9ck2pOEDXUR0QU',title:'Chan Chan',artist:'Buena Vista Social Club',story:'Для танцев между плитой и холодильником.'},
-    put: {id:'2nGFzvICaeEWjIrBrL2RAx',title:'Put Your Records On',artist:'Corinne Bailey Rae',story:'Солнце, улыбки и легкость на кухне.'},
-    sway: {id:'2w2aExDFzP5nUntJGNHvQS',title:'Sway',artist:'Michael Bublé',story:'Когда даже нарезка овощей становится танцем.'},
-    norah: {id:'0cbRwMzoglehdsUyaGChOl',title:"Don't Know Why",artist:'Norah Jones',story:'Для ужина, который хочется растянуть.'},
-    sade: {id:'7H3ojI1BsVy0dEJENqMt1k',title:'By Your Side',artist:'Sade',story:'Тёплый соул и разговор вполголоса.'},
-    chet: {id:'6YfPY2QwAhlUQRhnsHVYWW',title:'My Funny Valentine',artist:'Chet Baker',story:'Немного джаза, немного тишины.'},
-    rhye: {id:'01HF1RmcdhTOGafATNxYbg',title:'Open',artist:'Rhye',story:'Для той части вечера, где слова уже не обязательны.'},
-    apocalypse: {id:'0yc6Gst2xkRu0eMLeRMGCX',title:'Apocalypse',artist:'Cigarettes After Sex',story:'Ночь, тёплый свет и медленный ритм.'},
-    xx: {id:'0DAsxISzun85PbsqAfIzeC',title:'Intro',artist:'The xx',story:'Красивое многоточие вместо финальной точки.'},
-
-    mais: {id:'7IdImuc0c87w4tOzNDf3Sj',title:"Mais Que Nada",artist:"Sergio Mendes & Brasil ’66",story:"Бразильский ритм, пока готовится ужин."},
-    lovely: {id:'0doNn6y2w5XEowLcIsGaFJ',title:"Lovely Day",artist:"Bill Withers",story:"Пусть кухня наполняется солнцем."},
-    sunday: {id:'2xsjSOWA0QgfOHGHcU6kX5',title:"Sunday Morning",artist:"Maroon 5",story:"Время пританцовывать с ложкой в руке."},
-    beyond: {id:'645GjMgtd43JOZoHeofkV1',title:"Beyond the Sea",artist:"Bobby Darin",story:"Немного свинга для хорошего аппетита."},
-    jeveux: {id:'64CJxMqtNchKI8xuTMHBxw',title:"Je veux",artist:"Zaz",story:"Лёгкость, характер и французское настроение."},
-    treasure: {id:'0mXLBDXhwB0McwWpBVALVy',title:"Treasure",artist:"Bruno Mars",story:"Вечер только начинается и обещает быть ярким."},
-    eyes: {id:'0qDLgY0B1c0WAWTP5x2sQl',title:"Can’t Take My Eyes Off You",artist:"Frankie Valli",story:"Танец на двоих ещё до первого блюда."},
-    comeaway: {id:'5cwTinW7c8UZQZURCXnAw1',title:"Come Away With Me",artist:"Norah Jones",story:"Рядом друг с другом, без лишней спешки."},
-    atlast: {id:'0IK5CF6N1Hc3r8v5cjpuod',title:"At Last",artist:"Etta James",story:"Когда вечер становится особенным."},
-    looklove: {id:'1ANjD7bqe8qR54Aj4b8i8g',title:"The Look of Love",artist:"Diana Krall",story:"Мягкий джаз между двумя взглядами."},
-    stay: {id:'2d9iaI0jwC7x1Ufdy38cFy',title:"Let’s Stay Together",artist:"Al Green",story:"Для тёплого вечера, который хочется продлить."},
-    dream: {id:'0yenu9ZTkooqjddLSbH3qG',title:"Dream a Little Dream of Me",artist:"Ella Fitzgerald & Louis Armstrong",story:"Немного старого джазового волшебства."},
-    smooth: {id:'002dcNTbYNed2wEmFMm3kI',title:"Smooth Operator",artist:"Sade",story:"Роскошный соул, свечи и вино."},
-    ipanema: {id:'2IesH4nbYeJw16prFWIc3e',title:"The Girl from Ipanema",artist:"Stan Getz, João Gilberto, Astrud Gilberto",story:"Босса-нова, которой не нужно ничего доказывать."},
-    wicked: {id:'57MbOuT7s2ES3IW9KuZQzI',title:"Wicked Game",artist:"Chris Isaak",story:"Когда слова уже заканчиваются."},
-    tadow: {id:'3tsyvCHCbKdQMrJvgvGLq0',title:"Tadow",artist:"Masego & FKJ",story:"Мягкий грув и никаких лишних движений."},
-    retrograde: {id:'55PwHc8x90oFMPGKuB8Tlv',title:"Retrograde",artist:"James Blake",story:"Глубокий звук и приглушённый свет."},
-    fade: {id:'6JTLVOEuXPnOxGo8KSa94M',title:"Fade Into You",artist:"Mazzy Star",story:"Музыка, которая становится почти шёпотом."},
-    nothing: {id:'5RROFztQ7ua0p9ttJ0U8nv',title:"Nothing’s Gonna Hurt You Baby",artist:"Cigarettes After Sex",story:"Для красивой тишины на двоих."},
-    showme: {id:'75IQVo8hqI1iwVZyvkN2VT',title:"Show Me How",artist:"Men I Trust",story:"Нежная мелодия и уютный полумрак."},
-    ordinary: {id:'1oaaSrDJimABpOdCEbw2DJ',title:"No Ordinary Love",artist:"Sade",story:"Медленное, почти кинематографическое продолжение."},
-  });
-  const buttons = [...document.querySelectorAll('[data-music-track]')];
-  const iframe = document.getElementById('du-music-iframe');
-  const player = document.getElementById('du-music-player');
-  if (!buttons.length || !iframe || !player) return;
-  const title = document.getElementById('du-music-now-title');
-  const artist = document.getElementById('du-music-now-artist');
-  const story = document.getElementById('du-music-now-story');
-  const external = document.getElementById('du-music-external');
-  function selectTrack(key, shouldScroll) {
-    const track = tracks[key];
-    if (!track) return;
-    buttons.forEach(button => {
-      const selected = button.dataset.musicTrack === key;
-      button.classList.toggle('is-active', selected);
-      button.setAttribute('aria-pressed', String(selected));
-    });
-    document.querySelectorAll('[data-music-phase]').forEach(card => {
-      card.classList.toggle('is-active', !!card.querySelector('.du-music-track.is-active'));
-    });
-    title.textContent = track.title;
-    artist.textContent = track.artist;
-    story.textContent = track.story;
-    external.href = `https://open.spotify.com/track/${track.id}`;
-    iframe.title = `Spotify: ${track.title} — ${track.artist}`;
-    const next = `https://open.spotify.com/embed/track/${track.id}?utm_source=generator`;
-    if (iframe.src !== next) iframe.src = next; // replaces old player, stopping prior track
-    if (shouldScroll && window.matchMedia('(max-width: 850px)').matches) {
-      player.scrollIntoView({behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'instant' : 'smooth',block:'start'});
-    }
-  }
-  buttons.forEach(button => button.addEventListener('click', () => selectTrack(button.dataset.musicTrack, true)));
-})();
-function stepImage(step,i){const t=(step.title+' '+step.detail).toLowerCase();let p=0;if(/нареж|нарежь|нарез|подготов|измельч|очист|пореж|нашинку|натри/.test(t))p=1;else if(/жар|обжар|сковород|подрумян|пассери|подсуш|тостер/.test(t))p=2;else if(/смеш|добав|соус|заправ|специ|приправ|аромат|посол/.test(t))p=3;else if(/пода|тарел|собер|укрась|разлож|сервир/.test(t))p=4;else if(/овощ|салат|зелень/.test(t))p=5;return 'https://images.unsplash.com/'+['photo-1556911220-bff31c812dba','photo-1556910103-1c02745aae4d','photo-1556910633-5099dc3971e8','photo-1547592180-85f173990554','photo-1512621776951-a57141f2eefd','photo-1498837167922-ddd27525d352'][p]+'?w=160&h=160&fit=crop&auto=format&q=75';}
 </script>
 </body></html>
