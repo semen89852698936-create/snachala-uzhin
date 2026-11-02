@@ -1,0 +1,20 @@
+{
+  "n": 26,
+  "recipe_id": "collection-meat-01-08",
+  "title": "Говяжьи медальоны с сливками и зелёным перцем",
+  "prompt": "Фотореалистичная фотография ГОТОВОГО блюда: Говяжьи медальоны с сливками и зелёным перцем. Ингредиенты: Говяжья вырезка, Сливки 20%, Перец зелёный горошком. Медальоны в сливочном соусе с горошинами зелёного перца, без лапши. Аккуратная ресторанная подача на светлой керамике; мягкий тёплый свет, крупный план 3/4. Без сырого мяса, текста и логотипов.",
+  "original_live_path": "/assets/recipes-ai/0026-collection-meat-01-08.webp",
+  "original_git_blob_sha": "80efbf488cda7af4a4594223799308333203695d",
+  "path": "photo-library/meat-regeneration-20261102/photos/0026-collection-meat-01-08-regen.webp",
+  "sha256": "396af797e9709b815dfc4ed546c9780bba62cb155eb61799dff0d658d2cdcd7b",
+  "bytes": 75086,
+  "size": [
+    1200,
+    900
+  ],
+  "model": "aliceai-image-art-3.0",
+  "created_at": "2026-11-02T20:58:58+00:00",
+  "status": "generated_candidate_unpublished",
+  "approved_for_publication": false,
+  "site_updated": false
+}
