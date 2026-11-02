@@ -1,0 +1,48 @@
+name: Assemble 12 no-egg poultry photos and corrected recipes
+on:
+  push:
+    branches:
+      - release/poultry-no-eggs-12-20261103
+    paths:
+      - 'scripts/apply_poultry_no_eggs_12_site_release.py'
+      - '.github/workflows/apply-poultry-no-eggs-12.yml'
+permissions:
+  contents: write
+concurrency:
+  group: assemble-poultry-no-eggs-12
+  cancel-in-progress: false
+jobs:
+  assemble:
+    runs-on: ubuntu-latest
+    timeout-minutes: 22
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+        with:
+          ref: release/poultry-no-eggs-12-20261103
+          fetch-depth: 0
+          persist-credentials: true
+      - name: Apply 12 source-pinned WebP and egg-free ingredients and steps
+        run: python3 scripts/apply_poultry_no_eggs_12_site_release.py
+      - name: Check 1001 recipes, SHA1 image hashes and category links
+        run: python3 scripts/verify-1001-photo-links.py
+      - name: Confirm no existing images deleted or overwritten
+        run: |
+          python3 - <<'PY'
+          import json
+          from pathlib import Path
+          data=json.loads(Path("photo-library/poultry-no-eggs-12-site-release-20261103.json").read_text())
+          assert data['photo_count']==len(data['replacements'])==12
+          for r in data['replacements']:
+            assert Path(r['original_path'].lstrip('/')).is_file()
+            assert Path(r['new_path'].lstrip('/')).is_file()
+          print("PASS all original files kept; 12 egg-free replacement WebP present")
+          PY
+      - name: Commit tested site update to release branch (no Vercel deploy)
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -- index.html full-catalog/index.html photo-library/ai-recipe-photo-map.json photo-library/poultry-no-eggs-12-site-release-20261103.json assets/recipes-ai/*-no-eggs-regen.webp
+          git diff --cached --check
+          git commit -m "Attach 12 egg-free poultry photos and correct affected recipes"
+          git push origin HEAD:refs/heads/release/poultry-no-eggs-12-20261103
