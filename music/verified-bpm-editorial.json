@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
   "updated": "2026-11-02",
-  "sourceNote": "Editorial shortlist with per-track publicly checkable BPM references. Tempo can differ for different recordings, remasters and meter/half-time choices; verify exact audio release when syncing a streaming playlist.",
-  "targetPerPlaylist": 20,
+  "sourceNote": "Editorial shortlist with per-track publicly checkable BPM references. Tempo can differ for different recordings, remasters and meter/half-time choices; verify exact audio release when syncing a streaming playlist. Selection is 10 editorial tracks per phase, not a live streaming playlist; album versions and measured meter may differ.",
+  "targetPerPlaylist": 10,
   "verificationStatus": "partial",
   "streamingStatus": "Spotify embeds refer to existing user playlists; they have not been edited or BPM-audited and may not match these editorial cards.",
   "bands": {
@@ -86,6 +86,33 @@
         "source": "https://songbpm.com/%40the-weeknd/blinding-lights",
         "verifiedAs": "public tempo estimate",
         "streamingLink": null
+      },
+      {
+        "position": 8,
+        "title": "One More Time",
+        "artist": "Daft Punk",
+        "bpm": 123,
+        "source": "https://songbpm.com/%40daft-punk/one-more-time-j82rc",
+        "verifiedAs": "public tempo estimate",
+        "streamingLink": null
+      },
+      {
+        "position": 9,
+        "title": "Hung Up",
+        "artist": "Madonna",
+        "bpm": 125,
+        "source": "https://songbpm.com/%40madonna/hung-up-wv1qh",
+        "verifiedAs": "public tempo estimate",
+        "streamingLink": null
+      },
+      {
+        "position": 10,
+        "title": "Rain On Me",
+        "artist": "Lady Gaga",
+        "bpm": 123,
+        "source": "https://songbpm.com/%40lady-gaga/rain-on-me-MIsgrl26GW",
+        "verifiedAs": "public tempo estimate",
+        "streamingLink": null
       }
     ],
     "dinner": [
@@ -160,6 +187,24 @@
         "source": "https://songbpm.com/%40cigarettes-after-sex/k",
         "verifiedAs": "public tempo estimate",
         "streamingLink": null
+      },
+      {
+        "position": 9,
+        "title": "Put Your Records On",
+        "artist": "Corinne Bailey Rae",
+        "bpm": 96,
+        "source": "https://songbpm.com/%40corinne-bailey-rae/put-your-records-on",
+        "verifiedAs": "public tempo estimate",
+        "streamingLink": null
+      },
+      {
+        "position": 10,
+        "title": "Fallin'",
+        "artist": "Alicia Keys",
+        "bpm": 96,
+        "source": "https://songbpm.com/%40alicia-keys/fallin",
+        "verifiedAs": "public tempo estimate",
+        "streamingLink": null
       }
     ],
     "continue": [
@@ -216,7 +261,44 @@
         "source": "https://songbpm.com/%40portishead/numb",
         "verifiedAs": "public tempo estimate",
         "streamingLink": null
+      },
+      {
+        "position": 7,
+        "title": "Dream A Little Dream Of Me",
+        "artist": "Ella Fitzgerald",
+        "bpm": 79,
+        "source": "https://songbpm.com/%40ella-fitzgerald/dream-a-little-dream-of-me",
+        "verifiedAs": "public tempo estimate",
+        "streamingLink": null
+      },
+      {
+        "position": 8,
+        "title": "Fade Into You",
+        "artist": "Mazzy Star",
+        "bpm": 52,
+        "source": "https://songbpm.com/%40mazzy-star/fade-into-you-d35ke",
+        "verifiedAs": "public tempo estimate",
+        "streamingLink": null
+      },
+      {
+        "position": 9,
+        "title": "Moon River",
+        "artist": "Audrey Hepburn",
+        "bpm": 71,
+        "source": "https://songbpm.com/%40audrey-hepburn/moon-river-wRdo0lPCtS",
+        "verifiedAs": "public tempo estimate",
+        "streamingLink": null
+      },
+      {
+        "position": 10,
+        "title": "My Funny Valentine - Instrumental",
+        "artist": "Chet Baker",
+        "bpm": 78,
+        "source": "https://songbpm.com/%40chet-baker/my-funny-valentine---instrumental",
+        "verifiedAs": "public tempo estimate",
+        "streamingLink": null
       }
     ]
-  }
+  },
+  "editorialSelectionStatus": "complete"
 }

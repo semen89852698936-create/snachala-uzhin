@@ -14,7 +14,7 @@ class MusicBpmEditorialTests(unittest.TestCase):
         self.assertEqual(set(DATA["lists"]), set(BANDS))
         for phase, records in DATA["lists"].items():
             low, high = BANDS[phase]
-            self.assertGreater(len(records), 0)
+            self.assertEqual(len(records), DATA["targetPerPlaylist"], "У каждого раздела должно быть ровно 10 треков")
             seen = set()
             for record in records:
                 with self.subTest(phase=phase, track=record["title"]):
