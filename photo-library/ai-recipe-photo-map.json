@@ -4948,37 +4948,37 @@
     {
       "n": 707,
       "recipe_id": "collection-pastry-01-03",
-      "path": "/assets/recipes-ai/0707-collection-pastry-01-03.webp",
-      "sha": "7e27770ceef9a01734f5a3b84c1ea4d080c1540f",
-      "bytes": 112838
+      "path": "/assets/recipes-ai/0707-collection-pastry-01-03-no-eggs.webp",
+      "sha": "faaab6a40e13317f21fe38f4bdaee6dff7db7f7b",
+      "bytes": 237068
     },
     {
       "n": 708,
       "recipe_id": "collection-pastry-01-04",
-      "path": "/assets/recipes-ai/0708-collection-pastry-01-04.webp",
-      "sha": "79c363e21739bad995763c4b3494804d2efc4e84",
-      "bytes": 87426
+      "path": "/assets/recipes-ai/0708-collection-pastry-01-04-no-eggs.webp",
+      "sha": "d83d2800d7bae67162b3d020f1d8304c5f86d3df",
+      "bytes": 270384
     },
     {
       "n": 709,
       "recipe_id": "collection-pastry-01-05",
-      "path": "/assets/recipes-ai/0709-collection-pastry-01-05.webp",
-      "sha": "cbdd9a3061d202bbc731f42f11a56814675dad0a",
-      "bytes": 99054
+      "path": "/assets/recipes-ai/0709-collection-pastry-01-05-no-eggs.webp",
+      "sha": "3685417f377faaa6de748a9bef4be3664bb40e6d",
+      "bytes": 236684
     },
     {
       "n": 710,
       "recipe_id": "collection-pastry-01-06",
-      "path": "/assets/recipes-ai/0710-collection-pastry-01-06.webp",
-      "sha": "5c084bd1be64100adfe41b6cd39b78e49607f631",
-      "bytes": 96360
+      "path": "/assets/recipes-ai/0710-collection-pastry-01-06-no-eggs.webp",
+      "sha": "fa005ef8518f4d7560ee9aee426fa6166ccb951f",
+      "bytes": 220628
     },
     {
       "n": 711,
       "recipe_id": "collection-pastry-01-07",
-      "path": "/assets/recipes-ai/0711-collection-pastry-01-07.webp",
-      "sha": "74ef5ce73ffc95b642abc6b1111bd33fdeff9669",
-      "bytes": 75914
+      "path": "/assets/recipes-ai/0711-collection-pastry-01-07-no-eggs.webp",
+      "sha": "7cd51a139787a43a48a11d342204072e74b62961",
+      "bytes": 256152
     },
     {
       "n": 712,
@@ -4990,30 +4990,30 @@
     {
       "n": 713,
       "recipe_id": "collection-pastry-01-09",
-      "path": "/assets/recipes-ai/0713-collection-pastry-01-09.webp",
-      "sha": "9d1d5859267f4b06dd5a393a0e4413bbc222fa17",
-      "bytes": 81784
+      "path": "/assets/recipes-ai/0713-collection-pastry-01-09-no-eggs.webp",
+      "sha": "8dd1b9a883a4a687f5558b13631870c39fb7f3c1",
+      "bytes": 236022
     },
     {
       "n": 714,
       "recipe_id": "collection-pastry-01-10",
-      "path": "/assets/recipes-ai/0714-collection-pastry-01-10.webp",
-      "sha": "63c7116433ad5dc655c768519361575668d035db",
-      "bytes": 120472
+      "path": "/assets/recipes-ai/0714-collection-pastry-01-10-no-eggs.webp",
+      "sha": "ca37d8627206ac69fd35a479801c495d902e06e1",
+      "bytes": 237276
     },
     {
       "n": 715,
       "recipe_id": "collection-pastry-02-01",
-      "path": "/assets/recipes-ai/0715-collection-pastry-02-01.webp",
-      "sha": "9a53ae9aac77f18ad45fc5e300bee88effea046e",
-      "bytes": 76370
+      "path": "/assets/recipes-ai/0715-collection-pastry-02-01-no-eggs.webp",
+      "sha": "235bfba64e7ba7030f8f3087a88fffc55f9fdb25",
+      "bytes": 239158
     },
     {
       "n": 716,
       "recipe_id": "collection-pastry-02-02",
-      "path": "/assets/recipes-ai/0716-collection-pastry-02-02.webp",
-      "sha": "175f684f298816b4660088f3d576458afddc7923",
-      "bytes": 78834
+      "path": "/assets/recipes-ai/0716-collection-pastry-02-02-no-eggs.webp",
+      "sha": "a2173ae7f43e9714ed0979988539e7eda5b021e2",
+      "bytes": 236124
     },
     {
       "n": 717,
@@ -5025,16 +5025,16 @@
     {
       "n": 718,
       "recipe_id": "collection-pastry-02-04",
-      "path": "/assets/recipes-ai/0718-collection-pastry-02-04.webp",
-      "sha": "ad50b125fb59e274a254cacb7990e95aa50b9308",
-      "bytes": 61148
+      "path": "/assets/recipes-ai/0718-collection-pastry-02-04-no-eggs.webp",
+      "sha": "9ab96fc384edb1ea1831a3c334ad6e8f49f05ec3",
+      "bytes": 243036
     },
     {
       "n": 719,
       "recipe_id": "collection-pastry-02-05",
-      "path": "/assets/recipes-ai/0719-collection-pastry-02-05.webp",
-      "sha": "4928bd99eefeb2ba86edf42fdfbc1792908ae8ef",
-      "bytes": 93494
+      "path": "/assets/recipes-ai/0719-collection-pastry-02-05-no-eggs.webp",
+      "sha": "fc3d89cd756fe8ad7bac0087f087745acb02e686",
+      "bytes": 271786
     },
     {
       "n": 720,
@@ -5046,9 +5046,9 @@
     {
       "n": 721,
       "recipe_id": "collection-pastry-02-07",
-      "path": "/assets/recipes-ai/0721-collection-pastry-02-07.webp",
-      "sha": "b2b805013ef6ef5533536d5ecb8ff386c61cd8c4",
-      "bytes": 114472
+      "path": "/assets/recipes-ai/0721-collection-pastry-02-07-no-eggs.webp",
+      "sha": "08d2318a6da4c5927544f0fffb2809da221627b7",
+      "bytes": 232934
     },
     {
       "n": 722,
@@ -5067,16 +5067,16 @@
     {
       "n": 724,
       "recipe_id": "collection-pastry-02-10",
-      "path": "/assets/recipes-ai/0724-collection-pastry-02-10.webp",
-      "sha": "57b98ab3b757a58f400657ed2746f1756120c2b5",
-      "bytes": 85454
+      "path": "/assets/recipes-ai/0724-collection-pastry-02-10-no-eggs.webp",
+      "sha": "b6a4cc0d67d4f0a85fdb03da74542334941a22f5",
+      "bytes": 252824
     },
     {
       "n": 725,
       "recipe_id": "collection-pastry-03-01",
-      "path": "/assets/recipes-ai/0725-collection-pastry-03-01.webp",
-      "sha": "05719d7473b66cc091a4bd5c4cb363d65e07c2d0",
-      "bytes": 99282
+      "path": "/assets/recipes-ai/0725-collection-pastry-03-01-no-eggs.webp",
+      "sha": "ca4e4c26e2c46a42b718bd8170fd939446f3360f",
+      "bytes": 242706
     },
     {
       "n": 726,
@@ -5088,23 +5088,23 @@
     {
       "n": 727,
       "recipe_id": "collection-pastry-03-03",
-      "path": "/assets/recipes-ai/0727-collection-pastry-03-03.webp",
-      "sha": "ae93ac105a8ac3a96c5801d73c0a5f21deac277b",
-      "bytes": 77516
+      "path": "/assets/recipes-ai/0727-collection-pastry-03-03-no-eggs.webp",
+      "sha": "b9843d20fcf1cfbfc6ee7cfadf394fdcc70f9747",
+      "bytes": 195912
     },
     {
       "n": 728,
       "recipe_id": "collection-pastry-03-04",
-      "path": "/assets/recipes-ai/0728-collection-pastry-03-04.webp",
-      "sha": "a88d46f332713bccd0117dd86ff300b8d2bc34e6",
-      "bytes": 76378
+      "path": "/assets/recipes-ai/0728-collection-pastry-03-04-no-eggs.webp",
+      "sha": "c375444cf3d18b17015f420068de9105b4d068bf",
+      "bytes": 247740
     },
     {
       "n": 729,
       "recipe_id": "collection-pastry-03-05",
-      "path": "/assets/recipes-ai/0729-collection-pastry-03-05.webp",
-      "sha": "ea04964d47548a1f81016eebd98b1fa5fe7bb55f",
-      "bytes": 57622
+      "path": "/assets/recipes-ai/0729-collection-pastry-03-05-no-eggs.webp",
+      "sha": "7c38330762a5941033ad7673734aebea30d92d59",
+      "bytes": 195180
     },
     {
       "n": 730,
@@ -5137,44 +5137,44 @@
     {
       "n": 734,
       "recipe_id": "collection-pastry-03-10",
-      "path": "/assets/recipes-ai/0734-collection-pastry-03-10.webp",
-      "sha": "295686095c8f07768ab5efbcba6c5c88b2b89811",
-      "bytes": 89464
+      "path": "/assets/recipes-ai/0734-collection-pastry-03-10-no-eggs.webp",
+      "sha": "12d73465f54bc535c9301a9e9a56cfbe17dff6f9",
+      "bytes": 195256
     },
     {
       "n": 735,
       "recipe_id": "collection-pastry-04-01",
-      "path": "/assets/recipes-ai/0735-collection-pastry-04-01.webp",
-      "sha": "43762e1dd9379303ff11877a81e9f513fdf2b5d7",
-      "bytes": 87332
+      "path": "/assets/recipes-ai/0735-collection-pastry-04-01-no-eggs.webp",
+      "sha": "d10275bd3dd5918a6287b88ef180cecebcd4337a",
+      "bytes": 264058
     },
     {
       "n": 736,
       "recipe_id": "collection-pastry-04-02",
-      "path": "/assets/recipes-ai/0736-collection-pastry-04-02.webp",
-      "sha": "dac9dd4e39db9ca234bafdb246a3e487571fb77d",
-      "bytes": 81422
+      "path": "/assets/recipes-ai/0736-collection-pastry-04-02-no-eggs.webp",
+      "sha": "ea18371c4b6f7ea9e2cb363c8aef0d5d231d44f0",
+      "bytes": 234422
     },
     {
       "n": 737,
       "recipe_id": "collection-pastry-04-03",
-      "path": "/assets/recipes-ai/0737-collection-pastry-04-03.webp",
-      "sha": "99e68297b291109efcb41b599d201d1d1985ae48",
-      "bytes": 104814
+      "path": "/assets/recipes-ai/0737-collection-pastry-04-03-no-eggs.webp",
+      "sha": "591233bfc9c740daad6244eced6969b795b2fc45",
+      "bytes": 235932
     },
     {
       "n": 738,
       "recipe_id": "collection-pastry-04-04",
-      "path": "/assets/recipes-ai/0738-collection-pastry-04-04.webp",
-      "sha": "142c012940e28b8facedfcb5d6789c67a4ed1a92",
-      "bytes": 89598
+      "path": "/assets/recipes-ai/0738-collection-pastry-04-04-no-eggs.webp",
+      "sha": "181a630e6f2ba0cad219f2497411828e0fc12ee8",
+      "bytes": 268342
     },
     {
       "n": 739,
       "recipe_id": "collection-pastry-04-05",
-      "path": "/assets/recipes-ai/0739-collection-pastry-04-05.webp",
-      "sha": "4089f3f3d0ee36d9e6d74df37bc527f7a84d4799",
-      "bytes": 105724
+      "path": "/assets/recipes-ai/0739-collection-pastry-04-05-no-eggs.webp",
+      "sha": "cfd98c4e3c4f786e4faf664182fc190186fd4cd0",
+      "bytes": 251052
     },
     {
       "n": 740,
@@ -5186,9 +5186,9 @@
     {
       "n": 741,
       "recipe_id": "collection-pastry-04-07",
-      "path": "/assets/recipes-ai/0741-collection-pastry-04-07.webp",
-      "sha": "fcfbda868f5d88d0d796c2a46f1c919a58376092",
-      "bytes": 108806
+      "path": "/assets/recipes-ai/0741-collection-pastry-04-07-no-eggs.webp",
+      "sha": "30d10583f10ea2e5745ba15d90642eb97aef2a27",
+      "bytes": 212698
     },
     {
       "n": 742,
@@ -5207,16 +5207,16 @@
     {
       "n": 744,
       "recipe_id": "collection-pastry-04-10",
-      "path": "/assets/recipes-ai/0744-collection-pastry-04-10.webp",
-      "sha": "6af5e562a590d26e4411a5bee40fafd02b676ff8",
-      "bytes": 95236
+      "path": "/assets/recipes-ai/0744-collection-pastry-04-10-no-eggs.webp",
+      "sha": "141671c6ca4931e29e1295e1e4a1a5f453153b86",
+      "bytes": 227698
     },
     {
       "n": 745,
       "recipe_id": "collection-pastry-05-01",
-      "path": "/assets/recipes-ai/0745-collection-pastry-05-01.webp",
-      "sha": "f2d429c34dddeee2b201c7ee8334db9769834ecb",
-      "bytes": 100764
+      "path": "/assets/recipes-ai/0745-collection-pastry-05-01-no-eggs.webp",
+      "sha": "35d50bc80ef9c18a2441dc409fe3f7212a71c9e5",
+      "bytes": 254722
     },
     {
       "n": 746,
@@ -5228,9 +5228,9 @@
     {
       "n": 747,
       "recipe_id": "collection-pastry-05-03",
-      "path": "/assets/recipes-ai/0747-collection-pastry-05-03.webp",
-      "sha": "67f08727c61a7b7182b493a3b076bc36497ff07c",
-      "bytes": 89040
+      "path": "/assets/recipes-ai/0747-collection-pastry-05-03-no-eggs.webp",
+      "sha": "564e85045408aeacd511dc1cbf7da80ad0643ec7",
+      "bytes": 284322
     },
     {
       "n": 748,
@@ -5242,9 +5242,9 @@
     {
       "n": 749,
       "recipe_id": "collection-pastry-05-05",
-      "path": "/assets/recipes-ai/0749-collection-pastry-05-05.webp",
-      "sha": "ddc61e8bd9b5dfd23d06edc9ee2814e37cfe26b7",
-      "bytes": 93492
+      "path": "/assets/recipes-ai/0749-collection-pastry-05-05-no-eggs.webp",
+      "sha": "81a39eb37afd7c5a330adde8a4a210c3e75b503f",
+      "bytes": 240446
     },
     {
       "n": 750,
@@ -5256,9 +5256,9 @@
     {
       "n": 751,
       "recipe_id": "collection-pastry-05-07",
-      "path": "/assets/recipes-ai/0751-collection-pastry-05-07.webp",
-      "sha": "55e5816ab4c18942c59dcd8a8068631682d99ad4",
-      "bytes": 70980
+      "path": "/assets/recipes-ai/0751-collection-pastry-05-07-no-eggs.webp",
+      "sha": "984986d54efa5758d5e1f017cadd9a47c41d093d",
+      "bytes": 273570
     },
     {
       "n": 752,
@@ -5277,9 +5277,9 @@
     {
       "n": 754,
       "recipe_id": "collection-pastry-05-10",
-      "path": "/assets/recipes-ai/0754-collection-pastry-05-10.webp",
-      "sha": "07eedf4aaa4f2b40e58ab00d3ee4eab0a27f7668",
-      "bytes": 102814
+      "path": "/assets/recipes-ai/0754-collection-pastry-05-10-no-eggs.webp",
+      "sha": "2e0560c1d2ce2f41de295d021797de28dc6b9891",
+      "bytes": 264988
     },
     {
       "n": 755,
@@ -5354,9 +5354,9 @@
     {
       "n": 765,
       "recipe_id": "collection-pastry-07-01",
-      "path": "/assets/recipes-ai/0765-collection-pastry-07-01.webp",
-      "sha": "32f959415dd9719d61e921221fc9b774a0264092",
-      "bytes": 111584
+      "path": "/assets/recipes-ai/0765-collection-pastry-07-01-no-eggs.webp",
+      "sha": "c2e0631be96b70ad67c8f9eb6b8b010b22a558ca",
+      "bytes": 233756
     },
     {
       "n": 766,
@@ -5368,9 +5368,9 @@
     {
       "n": 767,
       "recipe_id": "collection-pastry-07-03",
-      "path": "/assets/recipes-ai/0767-collection-pastry-07-03.webp",
-      "sha": "53453291ce6b35b7921aa3d88c735228d280e5c4",
-      "bytes": 107170
+      "path": "/assets/recipes-ai/0767-collection-pastry-07-03-no-eggs.webp",
+      "sha": "5de542fece6b3a4d1b8c7d3dfc4828996956f998",
+      "bytes": 253402
     },
     {
       "n": 768,
@@ -5403,9 +5403,9 @@
     {
       "n": 772,
       "recipe_id": "collection-pastry-07-08",
-      "path": "/assets/recipes-ai/0772-collection-pastry-07-08.webp",
-      "sha": "c715d3559368718d01e38789dfeeead06a95b5a0",
-      "bytes": 113650
+      "path": "/assets/recipes-ai/0772-collection-pastry-07-08-no-eggs.webp",
+      "sha": "28601b2fe110c89f1662287bd5f8580309e03c65",
+      "bytes": 290578
     },
     {
       "n": 773,
@@ -5473,9 +5473,9 @@
     {
       "n": 782,
       "recipe_id": "collection-pastry-08-08",
-      "path": "/assets/recipes-ai/0782-collection-pastry-08-08.webp",
-      "sha": "855dfac807a0be34f1801194fc0bb49269451c38",
-      "bytes": 109242
+      "path": "/assets/recipes-ai/0782-collection-pastry-08-08-no-eggs.webp",
+      "sha": "56ef6110ba56f1a74b149022f8d8cef3fcb56986",
+      "bytes": 275376
     },
     {
       "n": 783,
@@ -5494,16 +5494,16 @@
     {
       "n": 785,
       "recipe_id": "collection-pastry-09-01",
-      "path": "/assets/recipes-ai/0785-collection-pastry-09-01.webp",
-      "sha": "b6744906f9a4e25d1d0a00197422354c9b2543a3",
-      "bytes": 113860
+      "path": "/assets/recipes-ai/0785-collection-pastry-09-01-no-eggs.webp",
+      "sha": "f7bc717cbdd35ac7ee4268422fd6a6760dfac136",
+      "bytes": 268200
     },
     {
       "n": 786,
       "recipe_id": "collection-pastry-09-02",
-      "path": "/assets/recipes-ai/0786-collection-pastry-09-02.webp",
-      "sha": "4716d4160062c50ffbb88850c5d0f8a808d41504",
-      "bytes": 96804
+      "path": "/assets/recipes-ai/0786-collection-pastry-09-02-no-eggs.webp",
+      "sha": "4248dc8d2e0f7be3973e3f8ab805191a21693698",
+      "bytes": 233302
     },
     {
       "n": 787,
@@ -5515,9 +5515,9 @@
     {
       "n": 788,
       "recipe_id": "collection-pastry-09-04",
-      "path": "/assets/recipes-ai/0788-collection-pastry-09-04.webp",
-      "sha": "55bdc5abda604df25daf48abc50a55e00f7048e3",
-      "bytes": 98310
+      "path": "/assets/recipes-ai/0788-collection-pastry-09-04-no-eggs.webp",
+      "sha": "9c01726522f857d1bb1f9da314117f6df32ab74f",
+      "bytes": 262384
     },
     {
       "n": 789,
@@ -5543,9 +5543,9 @@
     {
       "n": 792,
       "recipe_id": "collection-pastry-09-08",
-      "path": "/assets/recipes-ai/0792-collection-pastry-09-08.webp",
-      "sha": "af3dac0c2a698e0df66e2dbc25ff62ff8942e168",
-      "bytes": 80928
+      "path": "/assets/recipes-ai/0792-collection-pastry-09-08-no-eggs.webp",
+      "sha": "07d6f2336c9568f2f463a6533bbc116502962c59",
+      "bytes": 293068
     },
     {
       "n": 793,
@@ -5557,9 +5557,9 @@
     {
       "n": 794,
       "recipe_id": "collection-pastry-09-10",
-      "path": "/assets/recipes-ai/0794-collection-pastry-09-10.webp",
-      "sha": "2d6ca074745fffa0112c316795e430fb7b8152f4",
-      "bytes": 107428
+      "path": "/assets/recipes-ai/0794-collection-pastry-09-10-no-eggs.webp",
+      "sha": "d83fdf31fb890503d3616ae55ddba9511875774d",
+      "bytes": 215088
     },
     {
       "n": 795,
@@ -5571,9 +5571,9 @@
     {
       "n": 796,
       "recipe_id": "collection-pastry-10-02",
-      "path": "/assets/recipes-ai/0796-collection-pastry-10-02.webp",
-      "sha": "999fd3b710131eafeb3cc1c1a20c9ee364ef2d47",
-      "bytes": 107536
+      "path": "/assets/recipes-ai/0796-collection-pastry-10-02-no-eggs.webp",
+      "sha": "f07b4817841da82525a75124d08889d338f8a2c9",
+      "bytes": 245014
     },
     {
       "n": 797,
@@ -5585,9 +5585,9 @@
     {
       "n": 798,
       "recipe_id": "collection-pastry-10-04",
-      "path": "/assets/recipes-ai/0798-collection-pastry-10-04.webp",
-      "sha": "f7ad17c369060f061944b846224e19d8410d2745",
-      "bytes": 88872
+      "path": "/assets/recipes-ai/0798-collection-pastry-10-04-no-eggs.webp",
+      "sha": "40dfdc80fefad34718158619cde96e473c711127",
+      "bytes": 236968
     },
     {
       "n": 799,
@@ -5613,9 +5613,9 @@
     {
       "n": 802,
       "recipe_id": "collection-pastry-10-08",
-      "path": "/assets/recipes-ai/0802-collection-pastry-10-08.webp",
-      "sha": "03cf20d254993f8c422489e6b5d27ba1f8708948",
-      "bytes": 103368
+      "path": "/assets/recipes-ai/0802-collection-pastry-10-08-no-eggs.webp",
+      "sha": "74ae0fea7dd201079457f0f018dfe63edcbf466d",
+      "bytes": 275340
     },
     {
       "n": 803,
