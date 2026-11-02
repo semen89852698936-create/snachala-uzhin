@@ -86,8 +86,8 @@ jobs:
               break
             fi
             if [[ "${result}" -ne 0 ]]; then
-              echo "::warning::Generation stopped after an error. The pending record was checkpointed."
-              break
+              echo "::error::Generation failed after a paid request or API error. Checkpoint saved; job must be marked failed."
+              exit "${result}"
             fi
           done
           echo "Generated images remain unpublished until owner inspects the complete set."
