@@ -92,7 +92,8 @@ test('duplicate and unknown IDs fail', () => {
   ledger.release_candidates.push(valid(manifest.sources[0]), valid(manifest.sources[0]));
   ledger.release_candidates.push({...valid(manifest.sources[0]), recipe_id:'unknown'});
   const r = auditWithEvidence(manifest, ledger);
-  assert.equal(r.errors.length, 2);
+  assert.equal(r.errors.length, 3); // First record also fails: evidence was reused.
+  assert.match(r.errors.join(' '), /visual_evidence_ref reused/);
   assert.match(r.errors.join(' '), /duplicate/);
   assert.match(r.errors.join(' '), /unknown/);
 });
