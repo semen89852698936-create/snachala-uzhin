@@ -1,0 +1,27 @@
+name: Verify visual review records
+on:
+  push:
+    branches:
+      - audit/visual-photo-release-20261102-evening
+    paths:
+      - photo-library/visual-review-20261102-evening.json
+      - scripts/test_visual_review_records.py
+      - .github/workflows/verify-visual-review.yml
+  pull_request:
+    paths:
+      - photo-library/visual-review-20261102-evening.json
+      - scripts/test_visual_review_records.py
+      - .github/workflows/verify-visual-review.yml
+permissions:
+  contents: read
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Checkout
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+        with:
+          persist-credentials: false
+      - name: Run review integrity tests
+        run: python3 -m unittest scripts/test_visual_review_records.py -v
