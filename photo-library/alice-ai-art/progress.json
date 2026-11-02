@@ -1,0 +1,18 @@
+{
+  "updated_at": "2026-11-02T14:28:47+00:00",
+  "total_recipes": 1001,
+  "verified_webp": 1001,
+  "physical_webp_files": 1001,
+  "metadata_records": 1001,
+  "missing_count": 0,
+  "first_missing_recipe_number": null,
+  "uncertain_paid_requests": 0,
+  "refused_by_model_count": 0,
+  "refused_recipe_numbers": [],
+  "unprocessed_raw_checkpoints": 0,
+  "problem_count": 0,
+  "problems": [],
+  "complete_and_verified": true,
+  "production_site_updated": false,
+  "all_images_pending_visual_review": true
+}
