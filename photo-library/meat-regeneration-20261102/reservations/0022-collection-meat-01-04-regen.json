@@ -1,0 +1,10 @@
+{
+  "n": 22,
+  "recipe_id": "collection-meat-01-04",
+  "prompt_sha256": "b52847b4a402c0c2d08ba5f4e1f22600809e66bbab098e2f4378f449bce0947b",
+  "status": "reserved_before_paid_call",
+  "attempt_number": 1,
+  "reserved_at": "2026-11-02T20:58:33+00:00",
+  "no_auto_retry": true,
+  "publication_approved": false
+}
