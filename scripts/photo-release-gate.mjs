@@ -30,7 +30,7 @@ function hasPlausibleImageStructure(ref, bytes) {
     }
     return hasData && ended;
   }
-  if (/\\.jpe?g$/.test(lower)) {
+  if (/\.jpe?g$/.test(lower)) {
     if (bytes.length < 128 || bytes[0] !== 0xff || bytes[1] !== 0xd8 ||
         bytes[bytes.length - 2] !== 0xff || bytes[bytes.length - 1] !== 0xd9) return false;
     const sos = bytes.indexOf(Buffer.from([0xff, 0xda]));
