@@ -30,6 +30,24 @@ export async function collectExistingEvidenceFiles(records, root = '.') {
   }
   return existing;
 }
+// A different URL is not automatically a license: only official terms pages count
+// as terms evidence. This still does NOT prove rights to the individual photo.
+function isOfficialLicenseTermsUrl(value, license) {
+  if (!isUrl(value)) return false;
+  let url;
+  try { url = new URL(value); } catch { return false; }
+  const host = url.hostname.toLowerCase().replace(/^www\./, '');
+  const path = url.pathname.replace(/\/+$/, '');
+  if (license === 'Unsplash License') return host === 'unsplash.com' && path === '/license';
+  if (license === 'Pexels License') return host === 'pexels.com' && path === '/license';
+  if (license === 'CC0') return host === 'creativecommons.org' &&
+    (path === '/publicdomain/zero/1.0' || path.startsWith('/publicdomain/zero/1.0/'));
+  const match = /^CC (BY(?:-SA)?) (\d\.\d)$/.exec(license ?? '');
+  if (!match || host !== 'creativecommons.org') return false;
+  const prefix = '/licenses/' + match[1].toLowerCase() + '/' + match[2];
+  return path === prefix || path.startsWith(prefix + '/');
+}
+
 const KNOWN_LICENSES = new Set(['Unsplash License', 'Pexels License', 'CC0', 'CC BY 2.0', 'CC BY 3.0', 'CC BY 4.0', 'CC BY-SA 2.0', 'CC BY-SA 4.0']);
 
 export function auditRelease(manifest, ledger, triage = {records: []}, evidenceFiles = new Set()) {
@@ -43,6 +61,12 @@ export function auditRelease(manifest, ledger, triage = {records: []}, evidenceF
   if (new Set(sources.map(x => x.sha256)).size !== 100) throw new Error('Duplicate image SHA-256 in manifest');
   const rejected = new Set((triage.records || []).filter(x => x.visual_status === 'reject_for_recipe').map(x => x.recipe_id + ':' + x.image_sha256));
   const seen = new Set();
+  // A screenshot of one dish cannot serve as proof for multiple distinct files.
+  const evidenceUsage = new Map();
+  for (const candidate of ledger.release_candidates) {
+    const ref = candidate?.visual_evidence_ref;
+    if (isEvidenceRef(ref)) evidenceUsage.set(ref, (evidenceUsage.get(ref) ?? 0) + 1);
+  }
   const errors = [];
   const cleared = [];
   for (const record of ledger.release_candidates) {
@@ -59,6 +83,8 @@ export function auditRelease(manifest, ledger, triage = {records: []}, evidenceF
     if (record.visual_match_confirmed !== true) missing.push('visual_match_confirmed');
     if (!isEvidenceRef(record.visual_evidence_ref)) missing.push('visual_evidence_ref must be a local review/evidence image');
     else if (!evidenceFiles.has(record.visual_evidence_ref)) missing.push('visual_evidence_file_missing_or_empty');
+    if (isEvidenceRef(record.visual_evidence_ref) && evidenceUsage.get(record.visual_evidence_ref) > 1)
+      missing.push('visual_evidence_ref reused across distinct candidates');
     if (!hasText(record.ingredient_review_notes)) missing.push('ingredient_review_notes');
     if (!hasText(record.reviewer)) missing.push('reviewer');
     if (!/^\d{4}-\d{2}-\d{2}$/.test(record.reviewed_date ?? '')) missing.push('reviewed_date');
@@ -66,6 +92,8 @@ export function auditRelease(manifest, ledger, triage = {records: []}, evidenceF
     if (!KNOWN_LICENSES.has(item.license)) missing.push('unrecognized_archive_license');
     if (!isUrl(record.license_evidence_url)) missing.push('license_evidence_url');
     else if (record.license_evidence_url === item.source_page) missing.push('license_evidence_url must link to independent license terms, not just the image source page');
+    else if (!isOfficialLicenseTermsUrl(record.license_evidence_url, item.license))
+      missing.push('license_evidence_url must be an official license terms page');
     if (record.verified_license !== item.license) missing.push('verified_license does not match manifest');
     if (record.modifications_disclosed !== true) missing.push('modifications_disclosed');
     if (/^CC BY/.test(item.license ?? '')) {
