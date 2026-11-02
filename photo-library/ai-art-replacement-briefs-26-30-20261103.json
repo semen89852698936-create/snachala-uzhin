@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-03",
+  "source_review": "review/ai-art-twentysix-to-thirty-visual-triage-20261103.json",
+  "cost_approval_required": true,
+  "publication_allowed": false,
+  "items": [
+    {
+      "number": 26,
+      "recipe_id": "collection-meat-01-08",
+      "recipe_title": "Говяжьи медальоны с сливками и зелёным перцем",
+      "rejected_photo_blob_sha": "b8256c63e03376c0c455f7778a1efeb09e0350c9",
+      "rejection": "Large pea-like green spheres dominate the cream sauce; likely confused green peppercorns with green peas.",
+      "must_show": [
+        "Приготовленные говяжьи медальоны с подрумяненной корочкой",
+        "Сливочный соус, обволакивающий мясо",
+        "Небольшие горошины зелёного перца как приправа, без овощного гарнира"
+      ],
+      "must_avoid": [
+        "Крупный зелёный горошек и любые бобовые",
+        "Сырые куски мяса, картофель и лишние гарниры",
+        "Текст, водяные знаки и логотипы"
+      ],
+      "rights_status": "unverified",
+      "status": "brief_only_no_physical_replacement"
+    },
+    {
+      "number": 30,
+      "recipe_id": "collection-meat-02-02",
+      "recipe_title": "Свиная вырезка в духовке с грибами и розмарином",
+      "rejected_photo_blob_sha": "d5cfeb4da729269591139b7770b7396e4afad396",
+      "rejection": "Image depicts an apparently bone-in pork cut rather than boneless tenderloin; mushrooms appear barely cooked.",
+      "must_show": [
+        "Запечённая бескостная свиная вырезка, не отбивная на кости",
+        "Приготовленные грибы как часть блюда",
+        "Розмарин и аккуратная ресторанная подача"
+      ],
+      "must_avoid": [
+        "Рёбра, выступающие кости и корейка на кости",
+        "Сырые целые шампиньоны как основной гарнир",
+        "Текст, водяные знаки и логотипы"
+      ],
+      "rights_status": "unverified",
+      "status": "brief_only_no_physical_replacement"
+    }
+  ]
+}
