@@ -93,7 +93,7 @@ def request_image(prompt_text, key, folder):
 def encode_webp(image_data):
     with Image.open(io.BytesIO(image_data)) as im:
         im.load()
-        if min(im.width, im.height) < 900:
+        if im.width < 900 or im.height < 700:
             raise RuntimeError(f"Generated image too small: {im.size}")
         im = ImageOps.exif_transpose(im).convert("RGB")
         output = ImageOps.fit(im, TARGET_SIZE, method=Image.Resampling.LANCZOS)
@@ -150,14 +150,26 @@ def main(argv=None):
             continue
         # Exactly one API request per attempted recipe. Failure stops the batch.
         pending = args.output / "uncertain" / f"{n:04d}-{recipe_id}.json"
-        if pending.exists():
-            print(f"SKIP_UNCERTAIN {n} {recipe_id}", flush=True)
-            continue
-        atomic_write(pending, json.dumps({
-            "n": n, "recipe_id": recipe_id, "status": "request_pending_or_sent",
-            "created_at": utc_now()
-        }, ensure_ascii=False, indent=2).encode())
-        raw = request_image(p, os.environ["YANDEX_API_KEY"], os.environ["YANDEX_FOLDER_ID"])
+        raw_path = args.output / "raw-checkpoint" / f"{n:04d}-{recipe_id}.png"
+        if raw_path.exists():
+            # A previous run already paid for the result; finish encoding without a new request.
+            raw = raw_path.read_bytes()
+            print(f"RECOVER_RAW {n} {recipe_id}", flush=True)
+        else:
+            if pending.exists():
+                marker = json.loads(pending.read_text(encoding="utf-8"))
+                if marker.get("status") != "known_response_discarded_by_old_size_gate":
+                    print(f"SKIP_UNCERTAIN {n} {recipe_id}", flush=True)
+                    continue
+                print(f"REGENERATE_KNOWN_LOST_IMAGE {n} {recipe_id}", flush=True)
+            atomic_write(pending, json.dumps({
+                "n": n, "recipe_id": recipe_id, "status": "request_pending_or_sent",
+                "created_at": utc_now(),
+                "note": "If output is missing after failure, do not automatically re-request."
+            }, ensure_ascii=False, indent=2).encode())
+            raw = request_image(p, os.environ["YANDEX_API_KEY"], os.environ["YANDEX_FOLDER_ID"])
+            # Save the actual paid result before image decoding/cropping can fail.
+            atomic_write(raw_path, raw)
         webp = encode_webp(raw)
         sha = hashlib.sha256(webp).hexdigest()
         # Save photo before writing metadata, preserving original photo in case metadata write fails.
@@ -172,6 +184,7 @@ def main(argv=None):
         }
         atomic_write(record_path, json.dumps(record, ensure_ascii=False, indent=2).encode())
         pending.unlink(missing_ok=True)
+        raw_path.unlink(missing_ok=True)
         made += 1
         print(f"GENERATED {n} {recipe_id} sha256={sha} bytes={len(webp)}", flush=True)
     print(json.dumps({"mode": "execute" if args.execute else "dry-run",
