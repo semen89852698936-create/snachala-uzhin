@@ -1,0 +1,29 @@
+{
+  "n": 151,
+  "recipe_id": "collection-poultry-04-05",
+  "title": "Рубленые котлеты из индейки с томатами и орегано",
+  "ingredients_without_egg": [
+    "Фарш индейки",
+    "Панировочные сухари",
+    "Томаты рубленые",
+    "Орегано",
+    "Масло оливковое",
+    "Соль"
+  ],
+  "removed_ingredient": "Яйцо",
+  "prompt": "Фотореалистичная фотография ГОТОВОГО блюда: Рубленые котлеты из индейки с томатами и орегано. Ингредиенты: Фарш индейки, Панировочные сухари, Томаты рубленые, Орегано. Румяные отдельные рубленые котлеты из индейки, поджаренные с обеих сторон. СТРОГО БЕЗ ЯИЦ, ГЛАЗУНЬИ, БЕЛКА, ЯИЧНЫХ ЖЕЛТКОВ, сырых ингредиентов. Ресторанная тарелка, мягкий тёплый свет, вид 3/4, без текста.",
+  "original_live_path": "/assets/recipes-ai/0151-collection-poultry-04-05.webp",
+  "original_git_blob_sha": "442a881193d4fba45c092740b51c63d64a852411",
+  "path": "photo-library/poultry-no-eggs-regeneration-20261103/photos/0151-collection-poultry-04-05-no-eggs-regen.webp",
+  "sha256": "0197779e5a095a41bcc3c03fffb6bfb85bfb766b76b78189e050e193c0db3bcf",
+  "bytes": 117976,
+  "size": [
+    1200,
+    900
+  ],
+  "model": "aliceai-image-art-3.0",
+  "created_at": "2026-11-02T21:17:46+00:00",
+  "status": "generated_candidate_unpublished",
+  "approved_for_publication": false,
+  "site_updated": false
+}

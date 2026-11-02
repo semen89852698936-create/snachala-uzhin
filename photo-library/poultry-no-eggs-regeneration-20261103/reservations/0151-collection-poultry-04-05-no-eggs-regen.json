@@ -2,9 +2,10 @@
   "n": 151,
   "recipe_id": "collection-poultry-04-05",
   "prompt_sha256": "71290c0303245eb26b73e9e3f1c84da104d4c1eb4064826aeed68fb6318980d4",
-  "status": "reserved_before_paid_call",
+  "status": "generated_candidate_unpublished",
   "attempt_number": 1,
   "reserved_at": "2026-11-02T21:17:40+00:00",
   "no_auto_retry": true,
-  "publication_approved": false
+  "publication_approved": false,
+  "finished_at": "2026-11-02T21:17:46+00:00"
 }
