@@ -59,8 +59,15 @@
     "new_physical_photos": 0
   },
   "checks": {
-    "method": "Static cross-check of each archived manifest record and exact recipe JSON from immutable main/index.html; GitHub Actions pending until PR opens",
-    "status": "pending_CI",
+    "method": "GitHub Actions offline editorial release-gate tests and read-back static consistency assertions; no image SHA rehash",
+    "status": "passed",
+    "github_actions_run_id": 41431520640,
+    "github_actions_conclusion": "success",
+    "tested_code_head": "0fa635adbfb48111f5a8caaaab4c634d13ee59aa",
+    "readback_static_assertions": {
+      "passed": 9,
+      "failed": 0
+    },
     "technical_sha_rehash_performed": false
   },
   "legal_status": "No license provenance or rights clearance established; no owner publication approval",
@@ -78,5 +85,6 @@
     "PR #13 is still draft; this work is stacked and cannot be published directly",
     "The unrelated Yandex workflow in main still contains an automatic schedule; safety PR #16 is not merged"
   ],
-  "next_safe_action": "Wait for CI on stacked photo PR; fix if necessary. Continue direct inspection of next unreviewed WebP, preserve exact ingredient mapping and legal evidence, do not publish or spend."
+  "next_safe_action": "Continue reviewing 75 remaining archived WebP and source/license provenance, while retaining draft PRs. No production or paid generation. Yandex safety draft PR #16 still needs separate owner review before main schedule can be removed.",
+  "pr_url": "https://github.com/semen89852698936-create/snachala-uzhin/pull/17"
 }
