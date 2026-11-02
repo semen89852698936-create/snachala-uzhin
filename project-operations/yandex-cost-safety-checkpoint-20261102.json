@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-02",
+  "project": "snachala-uzhin",
+  "issue": "Main contains a separate Yandex AI workflow with a live schedule and automatic paid-job eligibility, despite explicit no-spend constraint. This is NOT the still-unmerged half-hour archive audit workflow in PR #12.",
+  "main_head_at_review": "dbcbbd4606ea21e3050a0fd0538662264fdbfd74",
+  "main_workflow": ".github/workflows/yandex-ai-1001.yml",
+  "main_workflow_original_blob_sha": "9a962314eac36b87ddd70423c0c670423d8cabad",
+  "working_branch": "safety/manual-only-yandex-photo-cost-20261102",
+  "changed_file": ".github/workflows/yandex-ai-1001.yml",
+  "safety_patch_commit_sha": "a8df8e447f774714cf6cb40522a2e9a8de88b9fd",
+  "patched_workflow_blob_sha": "dbbfbaf666e6ba650c82da737443c9ad7d68323d",
+  "changes": [
+    "Remove schedule trigger from Yandex workflow",
+    "Remove automatic paid production on main push",
+    "Require explicit workflow_dispatch paid_generation=yes and vars.PHOTO_COST_APPROVED=true",
+    "Pass repository variable instead of hardcoding PHOTO_COST_APPROVED=true"
+  ],
+  "checks": {
+    "method": "Read-back and seven deterministic static assertions against GitHub connector file content; not a full YAML parser or Actions execution",
+    "passed": 7,
+    "failed": 0,
+    "main_head_unchanged": true
+  },
+  "costs": "No API calls, secret changes or paid image generation performed in this run",
+  "production": {
+    "project": "snachala-uzhin-preview",
+    "status": "READY",
+    "deployed_sha": "819894450686ce5d5c5a0b1a7058218debd441e3",
+    "unchanged": true
+  },
+  "photo_library": {
+    "archive_webp": 100,
+    "visual_reviewed_previous_checkpoint": 21,
+    "visual_rejected_previous_checkpoint": 19,
+    "approved_previous_checkpoint": 0,
+    "new_photos_this_run": 0,
+    "license_cleared_this_run": 0,
+    "technical_sha_audit_repeated": false
+  },
+  "blockers": [
+    "Main workflow is still unchanged and its Yandex schedule remains present until separately approved integration; draft PR cannot stop main schedule",
+    "No Actions CI has executed for this new safety branch; static checks are not runtime proof",
+    "Previous Yandex run reported missing API key; current secret state not independently inspected",
+    "79 archived WebP still await direct visual review; 19 rejected need replacements and individual legal provenance"
+  ],
+  "next_safe_action": "Review and explicitly authorize a separate merge of the safety patch before any Yandex API secret is configured; independently continue photo editorial review on existing draft branches without spending or production changes."
+}
