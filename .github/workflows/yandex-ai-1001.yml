@@ -2,7 +2,7 @@ name: Yandex AI ART 1001 recipe photographs
 
 on:
   push:
-    branches: [photo-production/yandex-ai-art-1001]
+    branches: [main, photo-production/yandex-ai-art-1001]
     paths:
       - 'photo-pipeline/generate_yandexart.py'
       - 'photo-pipeline/test_yandexart.py'
@@ -45,7 +45,7 @@ jobs:
 
   produce:
     needs: check
-    if: ${{ github.event_name == 'schedule' || (github.event_name == 'workflow_dispatch' && inputs.paid_generation == 'yes') }}
+    if: ${{ github.event_name == 'schedule' || (github.event_name == 'push' && github.ref == 'refs/heads/main') || (github.event_name == 'workflow_dispatch' && inputs.paid_generation == 'yes') }}
     runs-on: ubuntu-latest
     timeout-minutes: 59
     steps:
