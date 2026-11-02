@@ -477,6 +477,15 @@ a.du-evening-nav-mobile{display:none}
 .du-music-spotify-extra .du-music-native-player iframe{max-width:100%}
 @media(max-width:560px){.du-bpm-track-list>li.du-bpm-track{grid-template-columns:46px minmax(0,1fr) auto;gap:8px;padding:6px!important}.du-bpm-art{width:46px;height:46px}.du-bpm-pill{font-size:10px}.du-bpm-track-details strong{font-size:12px}}
 
+/* Share shopping list with a phone or messenger, no third-party SDK. */
+.du-shop-share{margin-top:10px;display:flex;flex-direction:column;gap:9px}
+.du-shop-share .du-shop-send{width:100%;min-height:48px;font-weight:800}
+.du-shop-share-choices{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}
+.du-shop-share-choices a{display:flex;align-items:center;justify-content:center;min-height:40px;padding:7px;border:1px solid #d7bdc5;background:#fffaf8;border-radius:12px;color:#734759;text-decoration:none;font:750 12px/1.3 Manrope,Arial,sans-serif;text-align:center}
+.du-shop-share-choices a:hover{background:#f6e6ec;border-color:#b989a0}
+.du-shop-share-caption{font:500 12px/1.45 Manrope,Arial,sans-serif;color:#806a78;margin:0}
+@media(max-width:390px){.du-shop-share-choices{grid-template-columns:repeat(2,minmax(0,1fr))}}
+
 </style>
 </head><body>
 <div class="demo-strip"><span class="demo-dot"></span> ОТКРЫТАЯ КОЛЛЕКЦИЯ · 1000 РЕЦЕПТОВ + 1 СЕКРЕТНЫЙ · ГОТОВЬТЕ ВМЕСТЕ</div>
@@ -588,7 +597,15 @@ a.du-evening-nav-mobile{display:none}
   <aside class="shopping-drawer" id="shoppingDrawer" role="dialog" aria-modal="true" aria-labelledby="shopTitle" hidden>
     <div class="drawer-top"><div><span class="eyebrow dark"><span></span> ВСЁ ДЛЯ КРАСИВОГО ВЕЧЕРА</span><h2 id="shopTitle">Список <em>покупок</em></h2></div><button class="close-button dark-close" id="closeShopping" type="button" aria-label="Закрыть">✕</button></div>
     <div id="shoppingContents"></div>
-    <div class="drawer-bottom"><button type="button" id="copyShopping" class="button button-primary">↗ Скопировать список</button><button type="button" id="clearShopping" class="text-button">Очистить список</button></div>
+    <div class="drawer-bottom"><div class="du-shop-share" aria-label="Отправить список покупок">
+      <button type="button" id="shareShopping" class="button button-primary du-shop-send">↗ Отправить список</button>
+      <div class="du-shop-share-choices" id="shoppingShareOptions" aria-label="Куда отправить список">
+        <a href="#" data-shopping-share="telegram" target="_blank" rel="noopener noreferrer">Telegram</a>
+        <a href="#" data-shopping-share="whatsapp" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+        <a href="#" data-shopping-share="sms">SMS</a>
+      </div>
+      <p class="du-shop-share-caption">Откроем выбранное приложение с текстом. Отправку подтверждаешь ты. SMS может быть разбито на несколько сообщений.</p>
+    </div><button type="button" id="copyShopping" class="button button-soft">▤ Скопировать текст</button><button type="button" id="clearShopping" class="text-button">Очистить список</button></div>
   </aside>
   <div id="toast" role="status" aria-live="polite"></div>
 
@@ -647,9 +664,31 @@ function addShopping(id){const r=byId(id);if(!r)return;state.shopping[id]=servin
 function aggregates(){const groups=new Map();Object.entries(state.shopping).forEach(([id,p])=>{const r=byId(id);if(!r)return;r.ingredients.filter(i=>!['вода от варки пасты','вода теплая'].includes(norm(i.name))).forEach(i=>{const key=shoppingKey(i);const cur=groups.get(key)||{name:i.name,unit:i.unit,amount:0,taste:false};if(i.amount===0)cur.taste=true;else cur.amount+=i.amount*Number(p)/r.base;groups.set(key,cur)})});return [...groups.values()].sort((a,b)=>a.name.localeCompare(b.name,'ru'))}
 function renderShopping(){const ids=Object.keys(state.shopping);const agg=aggregates();const box=$('shoppingContents');if(!ids.length){box.innerHTML='<div class="cart-empty"><span>🧺</span><b>Пока пусто</b><p>Открой рецепт и нажми «В список покупок». Продукты из разных рецептов соберутся здесь.</p></div>';return;}box.innerHTML=`<div class="eyebrow dark"><span></span> РЕЦЕПТЫ В СПИСКЕ</div>${ids.map(id=>`<div class="shop-recipe-line"><span>${safe(byId(id)?.title||id)} · ${state.shopping[id]} порц.</span><button type="button" data-remove="${id}">Убрать ✕</button></div>`).join('')}<h3 class="shop-group-title">Купить (${agg.length})</h3>${agg.map((x,i)=>{const key=shoppingKey(x);return `<label class="shop-item"><input type="checkbox" data-shopitem="${i}" ${state.shopChecked[key]?'checked':''}><span>${safe(x.name)}</span><strong>${x.taste?'по вкусу':`${fmt(x.amount)} ${safe(x.unit)}`}</strong></label>`}).join('')}`;
  box.querySelectorAll('[data-remove]').forEach(b=>b.addEventListener('click',()=>{delete state.shopping[b.dataset.remove];persist();updateBadges();renderShopping();if(state.recipe)renderRecipe(state.recipe)}));box.querySelectorAll('[data-shopitem]').forEach(c=>c.addEventListener('change',()=>{const x=agg[Number(c.dataset.shopitem)];state.shopChecked[shoppingKey(x)]=c.checked;persist()}));}
-function openShopping(){renderShopping();$('shoppingDrawer').hidden=false;$('drawerScrim').hidden=false;document.body.style.overflow='hidden';$('closeShopping').focus();}
+function openShopping(){renderShopping();updateShoppingShareLinks();$('shoppingDrawer').hidden=false;$('drawerScrim').hidden=false;document.body.style.overflow='hidden';$('closeShopping').focus();}
 function closeShopping(){$('shoppingDrawer').hidden=true;$('drawerScrim').hidden=true;document.body.style.overflow='';}
-function copyShopping(){const items=aggregates();if(!items.length){toast('Сначала добавь хотя бы один рецепт');return;}const text='СНАЧАЛА УЖИН · СПИСОК ПОКУПОК\n\n'+items.map(i=>`☐ ${i.name} — ${i.taste?'по вкусу':`${fmt(i.amount)} ${i.unit}`}`).join('\n');if(navigator.clipboard?.writeText){navigator.clipboard.writeText(text).then(()=>toast('Список скопирован в буфер обмена')).catch(()=>fallbackCopy(text));}else fallbackCopy(text)}
+function shoppingShareText(){
+ const items=aggregates();
+ if(!items.length)return '';
+ const recipes=Object.entries(state.shopping).filter(([id])=>byId(id)).map(([id,p])=>byId(id).title+' ('+p+' порц.)');
+ return 'СНАЧАЛА УЖИН · СПИСОК ПОКУПОК\n\n'+(recipes.length?'Для блюд: '+recipes.join(', ')+'\n\n':'')+
+ items.map(i=>`${state.shopChecked[shoppingKey(i)]?'☑':'☐'} ${i.name} — ${i.taste?'по вкусу':`${fmt(i.amount)} ${i.unit}`}`).join('\n');
+}
+function copyShopping(){const text=shoppingShareText();if(!text){toast('Сначала добавь хотя бы один рецепт');return;}if(navigator.clipboard?.writeText){navigator.clipboard.writeText(text).then(()=>toast('Список скопирован в буфер обмена')).catch(()=>fallbackCopy(text));}else fallbackCopy(text)}
+async function shareShopping(){
+ const text=shoppingShareText();if(!text){toast('Сначала добавь хотя бы один рецепт');return;}
+ if(navigator.share){try{await navigator.share({title:'СНАЧАЛА УЖИН · список покупок',text});return;}catch(e){if(e.name==='AbortError')return;}}
+ copyShopping();toast('Текст скопирован. Можно вставить в любой мессенджер.');
+}
+function updateShoppingShareLinks(){
+ const text=shoppingShareText();
+ document.querySelectorAll('[data-shopping-share]').forEach(link=>{
+  const type=link.dataset.shoppingShare, val=encodeURIComponent(text);
+  link.href=type==='telegram'?'https://t.me/share/url?text='+val:
+    type==='whatsapp'?'https://api.whatsapp.com/send?text='+val:'sms:?&body='+val;
+  link.setAttribute('aria-disabled',String(!text));
+ });
+}
+
 function fallbackCopy(s){const ta=document.createElement('textarea');ta.value=s;document.body.append(ta);ta.select();try{document.execCommand('copy');toast('Список скопирован')}catch{toast('Не удалось скопировать автоматически')}ta.remove()}
 function startTimer(duration){if(!duration)return;state.timerDuration=duration;state.timerRemaining=duration;state.timerEnd=Date.now()+duration*1000;clearInterval(state.timerHandle);state.timerHandle=setInterval(tickTimer,350);tickTimer();}
 function tickTimer(){if(!state.timerEnd)return;state.timerRemaining=Math.max(0,Math.ceil((state.timerEnd-Date.now())/1000));const el=$('timeValue');if(el)el.textContent=timerText(state.timerRemaining);if(state.timerRemaining<=0){clearInterval(state.timerHandle);state.timerHandle=null;state.timerEnd=0;toast('⏰ Время вышло! Можно переходить к следующему шагу.');const btn=$('timerStart');if(btn)btn.textContent='Повторить';}}
@@ -666,7 +705,8 @@ function showHome(){state.recipe=null;$('homeView').hidden=false;$('recipeView')
 function showRecipe(id){const r=byId(id);if(!r){location.hash='catalog';return;}$('homeView').hidden=true;$('recipeView').hidden=false;renderRecipe(id);window.scrollTo({top:0,behavior:'instant'})}
 function route(){const hash=decodeURIComponent(location.hash.slice(1));if(hash.startsWith('recipe=')){showRecipe(hash.slice(7));return;}showHome();if(hash==='catalog'||hash==='categories'||hash==='evening'||hash==='about'||hash==='pricing'||hash==='music'){requestAnimationFrame(() => document.getElementById(hash)?.scrollIntoView({behavior:'smooth',block:'start'}));}else if(hash==='home'){requestAnimationFrame(()=>window.scrollTo({top:0,behavior:'smooth'}))}}
 function showFeatured(){location.hash='recipe=lemon-spinach-pasta';}
-function init(){renderCategories();renderFilters();renderCuisines();renderRecipes();updateBadges();$('recipeSearch').addEventListener('input',e=>{state.search=e.target.value;visibleLimit=PAGE_SIZE;renderRecipes()});$('cuisineFilter').addEventListener('change',e=>{state.cuisine=e.target.value;visibleLimit=PAGE_SIZE;renderRecipes()});$('quickFilter').addEventListener('click',()=>{state.quick=!state.quick;visibleLimit=PAGE_SIZE;$('quickFilter').setAttribute('aria-pressed',state.quick);renderRecipes()});$('favoritesFilter').addEventListener('click',()=>{state.favsOnly=!state.favsOnly;visibleLimit=PAGE_SIZE;$('favoritesFilter').setAttribute('aria-pressed',state.favsOnly);renderRecipes()});$('loadMoreRecipes').addEventListener('click',()=>{visibleLimit+=PAGE_SIZE;renderRecipes()});$('favHeader').addEventListener('click',()=>{state.favsOnly=true;visibleLimit=PAGE_SIZE;$('favoritesFilter').setAttribute('aria-pressed','true');renderRecipes();location.hash='catalog'});$('clearFilters').addEventListener('click',()=>{visibleLimit=PAGE_SIZE;state.search='';state.category='all';state.cuisine='all';state.quick=false;state.favsOnly=false;$('recipeSearch').value='';$('cuisineFilter').value='all';$('quickFilter').setAttribute('aria-pressed','false');$('favoritesFilter').setAttribute('aria-pressed','false');renderFilters();renderRecipes()});$('heroRecipe').addEventListener('click',showFeatured);$('tryCooking').addEventListener('click',()=>{showFeatured();openCook('lemon-spinach-pasta')});$('aboutTry').addEventListener('click',()=>{showFeatured();openCook('lemon-spinach-pasta')});$('priceDemo').addEventListener('click',()=>{location.hash='catalog'});$('bonusRecipe').addEventListener('click',()=>{location.hash='recipe=midnight-mushroom-toasts'});$('backCatalog').addEventListener('click',()=>{location.hash='catalog'});$('closeCook').addEventListener('click',closeCook);$('closeShopping').addEventListener('click',closeShopping);$('drawerScrim').addEventListener('click',closeShopping);document.querySelectorAll('.shopping-open').forEach(x=>x.addEventListener('click',openShopping));$('copyShopping').addEventListener('click',copyShopping);$('clearShopping').addEventListener('click',()=>{if(!Object.keys(state.shopping).length)return;if(!window.confirm('Удалить все рецепты из списка покупок?'))return;state.shopping={};state.shopChecked={};persist();updateBadges();renderShopping();if(state.recipe)renderRecipe(state.recipe)});document.addEventListener('keydown',e=>{if(e.key==='Escape'){if(!$('cookOverlay').hidden)closeCook();else if(!$('shoppingDrawer').hidden)closeShopping()}if((e.metaKey||e.ctrlKey)&&e.key.toLowerCase()==='k'){e.preventDefault();location.hash='catalog';setTimeout(()=>$('recipeSearch').focus(),25)}});window.addEventListener('hashchange',route);route();}
+function init(){renderCategories();renderFilters();renderCuisines();renderRecipes();updateBadges();$('recipeSearch').addEventListener('input',e=>{state.search=e.target.value;visibleLimit=PAGE_SIZE;renderRecipes()});$('cuisineFilter').addEventListener('change',e=>{state.cuisine=e.target.value;visibleLimit=PAGE_SIZE;renderRecipes()});$('quickFilter').addEventListener('click',()=>{state.quick=!state.quick;visibleLimit=PAGE_SIZE;$('quickFilter').setAttribute('aria-pressed',state.quick);renderRecipes()});$('favoritesFilter').addEventListener('click',()=>{state.favsOnly=!state.favsOnly;visibleLimit=PAGE_SIZE;$('favoritesFilter').setAttribute('aria-pressed',state.favsOnly);renderRecipes()});$('loadMoreRecipes').addEventListener('click',()=>{visibleLimit+=PAGE_SIZE;renderRecipes()});$('favHeader').addEventListener('click',()=>{state.favsOnly=true;visibleLimit=PAGE_SIZE;$('favoritesFilter').setAttribute('aria-pressed','true');renderRecipes();location.hash='catalog'});$('clearFilters').addEventListener('click',()=>{visibleLimit=PAGE_SIZE;state.search='';state.category='all';state.cuisine='all';state.quick=false;state.favsOnly=false;$('recipeSearch').value='';$('cuisineFilter').value='all';$('quickFilter').setAttribute('aria-pressed','false');$('favoritesFilter').setAttribute('aria-pressed','false');renderFilters();renderRecipes()});$('heroRecipe').addEventListener('click',showFeatured);$('tryCooking').addEventListener('click',()=>{showFeatured();openCook('lemon-spinach-pasta')});$('aboutTry').addEventListener('click',()=>{showFeatured();openCook('lemon-spinach-pasta')});$('priceDemo').addEventListener('click',()=>{location.hash='catalog'});$('bonusRecipe').addEventListener('click',()=>{location.hash='recipe=midnight-mushroom-toasts'});$('backCatalog').addEventListener('click',()=>{location.hash='catalog'});$('closeCook').addEventListener('click',closeCook);$('closeShopping').addEventListener('click',closeShopping);$('drawerScrim').addEventListener('click',closeShopping);document.querySelectorAll('.shopping-open').forEach(x=>x.addEventListener('click',openShopping));$('copyShopping').addEventListener('click',copyShopping);$('shareShopping').addEventListener('click',shareShopping);
+ document.querySelectorAll('[data-shopping-share]').forEach(link=>link.addEventListener('click',e=>{if(!shoppingShareText()){e.preventDefault();toast('Сначала добавь хотя бы один рецепт');return;}updateShoppingShareLinks();}));$('clearShopping').addEventListener('click',()=>{if(!Object.keys(state.shopping).length)return;if(!window.confirm('Удалить все рецепты из списка покупок?'))return;state.shopping={};state.shopChecked={};persist();updateBadges();renderShopping();if(state.recipe)renderRecipe(state.recipe)});document.addEventListener('keydown',e=>{if(e.key==='Escape'){if(!$('cookOverlay').hidden)closeCook();else if(!$('shoppingDrawer').hidden)closeShopping()}if((e.metaKey||e.ctrlKey)&&e.key.toLowerCase()==='k'){e.preventDefault();location.hash='catalog';setTimeout(()=>$('recipeSearch').focus(),25)}});window.addEventListener('hashchange',route);route();}
 init();
 </script><script>'use strict';
 /* Actual demo menus assembled exclusively from published recipe data. */
