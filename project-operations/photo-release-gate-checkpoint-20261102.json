@@ -2,7 +2,7 @@
   "schema_version": 1,
   "date": "2026-11-02",
   "project": "snachala-uzhin",
-  "stage": "Release gate strengthened against license-source conflation, unknown licenses, and duplicate archive identities; 11 tests passed; no publication",
+  "stage": "Release gate hardened (11/11 CI pass) and five ingredient-accurate replacement briefs prepared from main recipe source; archive images remain unapproved",
   "source_pr_11": {
     "url": "https://github.com/semen89852698936-create/snachala-uzhin/pull/11",
     "head_sha": "13c3ad45758b9e92ed0df906bd4667c84932aa69"
@@ -19,7 +19,8 @@
     "visual_triage_commit_sha": "63e869186f3eda97cee07520f2f24dc9b9aed6bf",
     "latest_code_commit_sha": "f0c3dcec48b9640473166b7b8b62c90496b744b4",
     "latest_test_commit_sha": "dca4272484bd25702bf2db923a1b94613cf61392",
-    "head_before_checkpoint": "dca4272484bd25702bf2db923a1b94613cf61392"
+    "head_before_checkpoint": "6613fc37ab95ba2dc63c422cf7718111dfc0921b",
+    "latest_artifact_commit_sha": "6613fc37ab95ba2dc63c422cf7718111dfc0921b"
   },
   "source_manifest_blob_sha": "324964784f50844e239ae97e770117ea4b3adc53",
   "changed_files": [
@@ -30,7 +31,8 @@
     "review/LICENSE_PREFLIGHT_20261102.md",
     "project-operations/photo-release-gate-checkpoint-20261102.json",
     "review/visual-triage-20261102.json",
-    "review/VISUAL_TRIAGE_20261102.md"
+    "review/VISUAL_TRIAGE_20261102.md",
+    "review/replacement-briefs-20261102.json"
   ],
   "checks": {
     "local_node_tests": "Not run locally in this turn; 11/11 passed in GitHub Actions",
@@ -82,10 +84,12 @@
     "No per-image legal rights clearance and attribution evidence",
     "Approved production copies 6,10,20 differ from archive and require explicit reapproval",
     "901 other recipes still lack a physical archived image",
-    "GitHub half-hour cron in PR #12 is not active until workflow reaches main"
+    "GitHub half-hour cron in PR #12 is not active until workflow reaches main",
+    "Replacement briefs are specifications, not physical replacement images or license clearances",
+    "Several source recipe step titles have grammatical errors and require editorial cleanup in a separate safe PR"
   ],
-  "next_safe_action": "For high-risk candidate photos (#37, #61, #63, #64, #65, #67), inspect actual archived pixels against the full recipe and verify original author and licensing; add SHA-bound evidence only, not unverified approval. Keep PR #11/#12/#13 draft; do not publish.",
-  "publication": "No merge, no production changes, no payments or secret changes; GitHub cron 7,37 * * * * still inactive while PR #12 is unmerged.",
+  "next_safe_action": "Use five exact-ingredient briefs to find or create genuinely matching replacement photos with documented rights, without publication; visually inspect high-risk archived candidates #37,61,63,64,65,67 and record evidence by SHA. Check recipe wording separately (e.g. malformed 'Добавь паприкой и чесноком').",
+  "publication": "No merges or production changes; PR #11, #12, #13 remain draft; GitHub half-hour cron not active until workflow is in main.",
   "visual_triage": {
     "path": "review/visual-triage-20261102.json",
     "rejected_numbers": [
@@ -114,5 +118,29 @@
     "tests_commit_sha": "dca4272484bd25702bf2db923a1b94613cf61392",
     "tests_passed": 11,
     "tests_failed": 0
+  },
+  "replacement_briefs": {
+    "path": "review/replacement-briefs-20261102.json",
+    "commit_sha": "6613fc37ab95ba2dc63c422cf7718111dfc0921b",
+    "blob_sha": "052c3d690abe6832b5079d6476850e6a4a7eeed4",
+    "source_index_blob_sha": "7b612a81830a2b253fc7184df9a8cfe501d82bb2",
+    "source_main_sha": "819894450686ce5d5c5a0b1a7058218debd441e3",
+    "rejected_archive_numbers": [
+      32,
+      35,
+      38,
+      41,
+      44
+    ],
+    "ingredients_counts": [
+      5,
+      5,
+      5,
+      7,
+      7
+    ],
+    "checks": "Six structural checks passed in connector-side review; not a separate GitHub Actions test",
+    "new_photos_added": 0,
+    "licenses_cleared": 0
   }
 }
