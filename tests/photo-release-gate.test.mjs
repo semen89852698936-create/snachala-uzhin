@@ -23,7 +23,7 @@ function valid(source) {
     reviewer: 'Editorial reviewer',
     reviewed_date: '2026-11-02',
     license_terms_reviewed: true,
-    license_evidence_url: source.source_page,
+    license_evidence_url: source.license_url,
     verified_license: source.license,
     modifications_disclosed: true,
     author_verified: true,
@@ -108,4 +108,34 @@ test('visual rejection of exact archive bytes blocks release even with completed
   const r = auditRelease(manifest, ledger, triage);
   assert.equal(r.cleared_for_editorial_release, 0);
   assert.match(r.errors[0], /visual_triage_rejected_archive_copy/);
+});
+
+
+test('image source page alone is not proof of license terms', () => {
+  const {manifest, ledger} = fixtures();
+  const c = valid(manifest.sources[0]);
+  c.license_evidence_url = manifest.sources[0].source_page;
+  ledger.release_candidates.push(c);
+  const r = auditRelease(manifest, ledger);
+  assert.equal(r.cleared_for_editorial_release, 0);
+  assert.match(r.errors[0], /independent license terms/);
+});
+
+test('unrecognized license is blocked even with completed reviewer fields', () => {
+  const {manifest, ledger} = fixtures();
+  manifest.sources[1].license = 'Custom License - terms unknown';
+  const c = valid(manifest.sources[1]);
+  ledger.release_candidates.push(c);
+  const r = auditRelease(manifest, ledger);
+  assert.equal(r.cleared_for_editorial_release, 0);
+  assert.match(r.errors[0], /unrecognized_archive_license/);
+});
+
+test('duplicate image numbers and hashes invalidate archive identity', () => {
+  const {manifest, ledger} = fixtures();
+  manifest.sources[1].number = manifest.sources[0].number;
+  assert.throws(() => auditRelease(manifest, ledger), /Duplicate image numbers/);
+  manifest.sources[1].number = 2;
+  manifest.sources[1].sha256 = manifest.sources[0].sha256;
+  assert.throws(() => auditRelease(manifest, ledger), /Duplicate image SHA-256/);
 });
