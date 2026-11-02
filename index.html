@@ -1326,9 +1326,7 @@ initEvening();
 <div id="recipePhotoAttribution" style="max-width:1100px;margin:20px auto;padding:14px 20px;font:13px/1.6 Manrope,Arial,sans-serif;color:#806c70">Фото «Индейка в соусе»: <a style="text-decoration:underline" href="https://commons.wikimedia.org/wiki/File:Turkey_escalopes_and_Spaetzle_(92665442).jpg" target="_blank" rel="noopener">Andrew Fogg</a>, <a style="text-decoration:underline" href="https://creativecommons.org/licenses/by/2.0/" target="_blank" rel="noopener">CC BY 2.0</a>. Кадрирование для иллюстрации рецепта.</div>
 <script>
 /* A curated recipe-only photo sheet. Never substitute unrelated stock images. */
-const STEP_PHOTO_SHEETS={
- 'pepper-steak':{url:'/assets/recipe-steps/pepper-steak-five-actions.webp',steps:5}
-};
+const STEP_PHOTO_SHEETS={}; // Activate a recipe only after its locally hosted action photos pass review.
 function stepVisualHtml(recipe,index,mode){
  const curated=STEP_PHOTO_SHEETS[recipe.id];
  const usePhoto=!!(curated&&curated.steps===recipe.steps.length);
