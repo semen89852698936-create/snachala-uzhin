@@ -3,46 +3,58 @@
   "date": "2026-11-02",
   "project": "snachala-uzhin",
   "issue": "Main contains a separate Yandex AI workflow with a live schedule and automatic paid-job eligibility, despite explicit no-spend constraint. This is NOT the still-unmerged half-hour archive audit workflow in PR #12.",
-  "main_head_at_review": "dbcbbd4606ea21e3050a0fd0538662264fdbfd74",
+  "main_head_at_review": "0e7b6b6988c2c8307d76032ed35b2035381124e3",
   "main_workflow": ".github/workflows/yandex-ai-1001.yml",
-  "main_workflow_original_blob_sha": "9a962314eac36b87ddd70423c0c670423d8cabad",
+  "main_workflow_original_blob_sha": "a24c2be032f5ea5b9562847fa082dd2e8ccc6a62",
   "working_branch": "safety/manual-only-yandex-photo-cost-20261102",
   "changed_file": ".github/workflows/yandex-ai-1001.yml",
-  "safety_patch_commit_sha": "a8df8e447f774714cf6cb40522a2e9a8de88b9fd",
-  "patched_workflow_blob_sha": "dbbfbaf666e6ba650c82da737443c9ad7d68323d",
+  "safety_patch_commit_sha": "d54762e249e493e3fcded09100b638a6a37a302e",
+  "patched_workflow_blob_sha": "9a105f99b4a4e3f5391107f376ddf55c2a1134d7",
   "changes": [
-    "Remove schedule trigger from Yandex workflow",
-    "Remove automatic paid production on main push",
-    "Require explicit workflow_dispatch paid_generation=yes and vars.PHOTO_COST_APPROVED=true",
-    "Pass repository variable instead of hardcoding PHOTO_COST_APPROVED=true"
+    "Rebased safety content onto 2026-11-02 11:25:32Z main changes using a two-parent merge commit on the draft PR branch only",
+    "Removed the now every-10-minutes scheduled Yandex AI paid generation trigger",
+    "Removed automatic paid generation on main push",
+    "Removed self-dispatch of additional paid batches after successful progress",
+    "Removed actions: write permission needed by self-dispatch",
+    "Require explicit workflow_dispatch paid_generation=yes and vars.PHOTO_COST_APPROVED=true for produce",
+    "Preserved existing offline WebP verification, 25-item cap, progress.json checkpoint, and API-key missing error"
   ],
   "checks": {
-    "method": "Read-back and seven deterministic static assertions against GitHub connector file content; not a full YAML parser or Actions execution",
-    "passed": 7,
+    "method": "GitHub connector read-back and deterministic static string assertions; no workflow execution or API calls",
+    "passed": 10,
     "failed": 0,
-    "main_head_unchanged": true
+    "pr_mergeable": true,
+    "pr_mergeable_state": "unstable",
+    "ci_for_new_commit": "not confirmed",
+    "workflow_sha": "9a105f99b4a4e3f5391107f376ddf55c2a1134d7"
   },
-  "costs": "No API calls, secret changes or paid image generation performed in this run",
+  "costs": "No paid calls, secret or access changes, workflow dispatches, production changes or merges to main in this run.",
   "production": {
     "project": "snachala-uzhin-preview",
     "status": "READY",
     "deployed_sha": "819894450686ce5d5c5a0b1a7058218debd441e3",
-    "unchanged": true
+    "deployment_id": "dpl_5GCmpxjRSPWpAYYaP89kNai1eFkC",
+    "changed": false
   },
   "photo_library": {
     "archive_webp": 100,
-    "visual_reviewed_previous_checkpoint": 21,
-    "visual_rejected_previous_checkpoint": 19,
+    "visual_reviewed_previous_checkpoint": 25,
+    "visual_rejected_previous_checkpoint": 22,
+    "unreviewed_previous_checkpoint": 75,
     "approved_previous_checkpoint": 0,
+    "technical_verified_half_hour": 20,
     "new_photos_this_run": 0,
     "license_cleared_this_run": 0,
     "technical_sha_audit_repeated": false
   },
   "blockers": [
-    "Main workflow is still unchanged and its Yandex schedule remains present until separately approved integration; draft PR cannot stop main schedule",
-    "No Actions CI has executed for this new safety branch; static checks are not runtime proof",
-    "Previous Yandex run reported missing API key; current secret state not independently inspected",
-    "79 archived WebP still await direct visual review; 19 rejected need replacements and individual legal provenance"
+    "CRITICAL: main currently contains Yandex AI ART cron '7,17,27,37,47,57 * * * *' and paid produce eligibility on schedule/push; new safety patch is only draft PR #16 and cannot disable the live main workflow",
+    "GitHub Actions CI has not been confirmed for the new safety PR commit; 10 static assertions are not a runtime test",
+    "Current Yandex API key/variable state not inspected; do not infer absence of charges",
+    "75 archived WebP await visual review; 22 rejected copies need actual replacement images and individual rights evidence"
   ],
-  "next_safe_action": "Review and explicitly authorize a separate merge of the safety patch before any Yandex API secret is configured; independently continue photo editorial review on existing draft branches without spending or production changes."
+  "next_safe_action": "Owner to explicitly authorize integration of PR #16 to remove paid Yandex schedule; until then continue independent non-paid visual/legal review of archive photos in PR #17 without touching main or production.",
+  "updated_at": "2026-11-02T11:40:00Z",
+  "main_sync_commit_sha": "f0fdbe4fd954793c99053d6ac44201be7058ad14",
+  "pr_url": "https://github.com/semen89852698936-create/snachala-uzhin/pull/16"
 }
