@@ -60,7 +60,7 @@ for url in ("index.html","full-catalog/index.html"):
     assert 'id="du-music-player"' not in html,(url,"bottom player must be removed")
     assert 'id="du-music-iframe"' not in html,(url,"single floating player must be removed")
     assert 'data-music-track="' not in html,(url,"faux inline play buttons must be removed")
-    assert html.count("Подборка на 20 песен")==3,(url,"20 songs per curated list")
+    assert html.count("Песни с указанным темпом · 10")==3,(url,"3 published BPM 10-song editorial card groups")
     print("PASS",url,"3 embedded playlist players, no bottom player, 20 curated suggestions per list")
 print("PASS 1001 unique WebP, exact file sizes, Git blob hashes, Spotify playlist metadata")
 
