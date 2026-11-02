@@ -1,0 +1,41 @@
+name: Fix evening heading ellipsis
+on:
+  push:
+    branches: [fix/evening-heading-ellipsis-20261103]
+    paths: ['.github/workflows/fix-evening-heading-ellipsis.yml']
+permissions:
+  contents: write
+jobs:
+  fix-and-check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: fix/evening-heading-ellipsis-20261103
+          persist-credentials: true
+      - name: Replace only the terminal period in the evening heading
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          for name in ("index.html", "full-catalog/index.html"):
+              path = Path(name)
+              s = path.read_text(encoding="utf-8")
+              before = "только начинается."
+              after = "только начинается..."
+              count = s.count(before)
+              if count != 1:
+                  raise SystemExit(f"{name}: expected one instance of {before!r}, found {count}")
+              path.write_text(s.replace(before, after, 1), encoding="utf-8")
+              print(f"{name}: replaced one terminal period with ellipsis")
+          PY
+      - name: Ensure only approved HTML files changed
+        run: |
+          git diff --check
+          test "$(git diff --name-only | sort)" = "$(printf '%s\n' 'full-catalog/index.html' 'index.html')"
+      - name: Commit updated site files
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add index.html full-catalog/index.html
+          git commit -m "Use ellipsis after А вечер только начинается"
+          git push origin HEAD:refs/heads/fix/evening-heading-ellipsis-20261103
