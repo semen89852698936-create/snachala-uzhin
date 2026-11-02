@@ -1,0 +1,29 @@
+{
+  "n": 155,
+  "recipe_id": "collection-poultry-04-09",
+  "title": "Рубленые котлеты из индейки с шпинатом и чесноком",
+  "ingredients_without_egg": [
+    "Фарш индейки",
+    "Панировочные сухари",
+    "Шпинат свежий",
+    "Чеснок",
+    "Масло оливковое",
+    "Соль"
+  ],
+  "removed_ingredient": "Яйцо",
+  "prompt": "Фотореалистичная фотография ГОТОВОГО блюда: Рубленые котлеты из индейки с шпинатом и чесноком. Ингредиенты: Фарш индейки, Панировочные сухари, Шпинат свежий, Чеснок. Румяные отдельные рубленые котлеты из индейки, поджаренные с обеих сторон. СТРОГО БЕЗ ЯИЦ, ГЛАЗУНЬИ, БЕЛКА, ЯИЧНЫХ ЖЕЛТКОВ, сырых ингредиентов. Ресторанная тарелка, мягкий тёплый свет, вид 3/4, без текста.",
+  "original_live_path": "/assets/recipes-ai/0155-collection-poultry-04-09.webp",
+  "original_git_blob_sha": "722f7efd8a988234e29f07e2e434c028786f4827",
+  "path": "photo-library/poultry-no-eggs-regeneration-20261103/photos/0155-collection-poultry-04-09-no-eggs-regen.webp",
+  "sha256": "0a9ed55a772614cc97f26347641d8b711943d36713cc44ee6d8b40dcb52a8d7b",
+  "bytes": 142114,
+  "size": [
+    1200,
+    900
+  ],
+  "model": "aliceai-image-art-3.0",
+  "created_at": "2026-11-02T21:17:59+00:00",
+  "status": "generated_candidate_unpublished",
+  "approved_for_publication": false,
+  "site_updated": false
+}
