@@ -2,13 +2,37 @@
   "manual_editorial_approved": 0,
   "note": "Physical file integrity is not ingredient correctness, license clearance or publication approval.",
   "publication": "review_only_not_production",
-  "remaining_for_technical_check": 90,
+  "remaining_for_technical_check": 85,
   "results": {
+    "baked-apples": {
+      "bytes": 191920,
+      "checked_utc": "2026-11-02T00:08:53.421180+00:00",
+      "height": 900,
+      "sha256": "8cef2d66f81136eb21286d6e6a9b9a967c460d265d7c2e7d051ab0efba6452f4",
+      "status": "technical_pass",
+      "width": 1200
+    },
+    "chicken-lemon": {
+      "bytes": 136684,
+      "checked_utc": "2026-11-02T00:08:53.725720+00:00",
+      "height": 900,
+      "sha256": "0973039292f5e689c79d5c61ef9596736c341d474708a21b27eb458278c228fa",
+      "status": "technical_pass",
+      "width": 1200
+    },
     "chickpeas": {
       "bytes": 88630,
       "checked_utc": "2026-11-02T00:06:47.335979+00:00",
       "height": 900,
       "sha256": "b403b3cfeaa22915ebb4734429188a49b742c7eacd52d07af73b64cb4e011b30",
+      "status": "technical_pass",
+      "width": 1200
+    },
+    "chocolate-cake": {
+      "bytes": 76714,
+      "checked_utc": "2026-11-02T00:08:53.085685+00:00",
+      "height": 900,
+      "sha256": "e3763722a737d9df1775d8e1814a5c53aa36a8f6164dc29b0d7b6c23d20d7656",
       "status": "technical_pass",
       "width": 1200
     },
@@ -60,6 +84,14 @@
       "status": "technical_pass",
       "width": 1200
     },
+    "ramen": {
+      "bytes": 63070,
+      "checked_utc": "2026-11-02T00:08:52.836344+00:00",
+      "height": 900,
+      "sha256": "c6460cb2bc365fb3e19cbd3837b66b515eda20f9fe41fcec2ab76556258d30cf",
+      "status": "technical_pass",
+      "width": 1200
+    },
     "ratatouille": {
       "bytes": 159124,
       "checked_utc": "2026-11-02T00:06:46.985274+00:00",
@@ -83,11 +115,19 @@
       "sha256": "84f32f6ae5fd804c5308cdfef5067f3de7314ac772620e40ca10f00a1d1443b4",
       "status": "technical_pass",
       "width": 1200
+    },
+    "tomato-soup": {
+      "bytes": 74374,
+      "checked_utc": "2026-11-02T00:08:52.552801+00:00",
+      "height": 900,
+      "sha256": "5ac867c69788e097af8b1682a53396c037425f08a4d5060545da501f5cd37ebb",
+      "status": "technical_pass",
+      "width": 1200
     }
   },
   "schema_version": 1,
   "source_manifest_sha256": "211002d83c93f8f6227679cb3179f6189984c45eb195c3dca3090ef31827711d",
   "source_ref": "photo-library/restore-100-review-20261102",
-  "technically_verified": 10,
+  "technically_verified": 15,
   "total_archive_candidates": 100
 }
