@@ -1,0 +1,29 @@
+{
+  "n": 150,
+  "recipe_id": "collection-poultry-04-04",
+  "title": "Рубленые котлеты из индейки с паприкой и сладким перцем",
+  "ingredients_without_egg": [
+    "Фарш индейки",
+    "Панировочные сухари",
+    "Паприка сладкая",
+    "Перец болгарский",
+    "Масло оливковое",
+    "Соль"
+  ],
+  "removed_ingredient": "Яйцо",
+  "prompt": "Фотореалистичная фотография ГОТОВОГО блюда: Рубленые котлеты из индейки с паприкой и сладким перцем. Ингредиенты: Фарш индейки, Панировочные сухари, Паприка сладкая, Перец болгарский. Румяные отдельные рубленые котлеты из индейки, поджаренные с обеих сторон. СТРОГО БЕЗ ЯИЦ, ГЛАЗУНЬИ, БЕЛКА, ЯИЧНЫХ ЖЕЛТКОВ, сырых ингредиентов. Ресторанная тарелка, мягкий тёплый свет, вид 3/4, без текста.",
+  "original_live_path": "/assets/recipes-ai/0150-collection-poultry-04-04.webp",
+  "original_git_blob_sha": "b9939ba1df45216524795a903729e827a88dbc59",
+  "path": "photo-library/poultry-no-eggs-regeneration-20261103/photos/0150-collection-poultry-04-04-no-eggs-regen.webp",
+  "sha256": "5dc59172144922a6712c49093d6d926fda6c4505440415453698d7295c145afe",
+  "bytes": 118086,
+  "size": [
+    1200,
+    900
+  ],
+  "model": "aliceai-image-art-3.0",
+  "created_at": "2026-11-02T21:17:39+00:00",
+  "status": "generated_candidate_unpublished",
+  "approved_for_publication": false,
+  "site_updated": false
+}
