@@ -66,6 +66,9 @@ assert "/assets/our-evening-together-approved.webp" in paths, "Only approved her
 assert "1000 РЕЦЕПТОВ + 1 СЕКРЕТНЫЙ" in page_text
 assert "10" in page_text and "1001" in page_text
 assert "Готовьте вместе." in page_text and "Остальное... без рецепта." in page_text
+assert page_text.count("1 900 ₽") >= 2, "Owner-approved opening price must be visible in offer and FAQ"
+assert 'id="price"' in page_text and 'Стоимость на старте' in page_text
+assert "Оплата будет доступна после запуска продаж." in page_text
 assert "120 BPM И ВЫШЕ" in page_text and "80 BPM И НИЖЕ" in page_text
 assert "80–100 BPM" in page_text
 
