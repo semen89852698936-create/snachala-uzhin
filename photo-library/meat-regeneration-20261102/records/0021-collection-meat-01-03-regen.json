@@ -1,0 +1,20 @@
+{
+  "n": 21,
+  "recipe_id": "collection-meat-01-03",
+  "title": "Говяжьи медальоны с горчицей и мёдом",
+  "prompt": "Фотореалистичная фотография ГОТОВОГО блюда: Говяжьи медальоны с горчицей и мёдом. Ингредиенты: Говяжья вырезка, Горчица зерновая, Мёд. Только медальоны с густой горчично-медовой глазурью, без картофеля фри, сосисок, комбо. Аккуратная ресторанная подача на светлой керамике; мягкий тёплый свет, крупный план 3/4. Без сырого мяса, текста и логотипов.",
+  "original_live_path": "/assets/recipes-ai/0021-collection-meat-01-03.webp",
+  "original_git_blob_sha": "68120e358811672ffa7bc2ba955d57ef0145c1cb",
+  "path": "photo-library/meat-regeneration-20261102/photos/0021-collection-meat-01-03-regen.webp",
+  "sha256": "1c80b7bc841c11c74a1a141efb4b2edfb78080a5296d4e99268b3aaeb6be64da",
+  "bytes": 72728,
+  "size": [
+    1200,
+    900
+  ],
+  "model": "aliceai-image-art-3.0",
+  "created_at": "2026-11-02T20:58:31+00:00",
+  "status": "generated_candidate_unpublished",
+  "approved_for_publication": false,
+  "site_updated": false
+}
