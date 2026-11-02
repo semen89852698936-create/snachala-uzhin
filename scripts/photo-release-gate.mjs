@@ -102,7 +102,12 @@ export function auditRelease(manifest, ledger, triage = {records: []}, evidenceF
   if (new Set(sources.map(x => x.number)).size !== 100) throw new Error('Duplicate image numbers in manifest');
   if (new Set(sources.map(x => x.sha256)).size !== 100) throw new Error('Duplicate image SHA-256 in manifest');
   const rejected = new Set((triage.records || []).filter(x => x.visual_status === 'reject_for_recipe').map(x => x.recipe_id + ':' + x.image_sha256));
-  const seen = new Set();
+  // Count every occurrence before evaluating records: the first duplicate must not be cleared.
+  const candidateIdCounts = new Map();
+  for (const candidate of ledger.release_candidates) {
+    const id = candidate?.recipe_id;
+    if (hasText(id)) candidateIdCounts.set(id, (candidateIdCounts.get(id) ?? 0) + 1);
+  }
   // A screenshot of one dish cannot serve as proof for multiple distinct files.
   const evidenceUsage = new Map();
   for (const candidate of ledger.release_candidates) {
@@ -114,11 +119,10 @@ export function auditRelease(manifest, ledger, triage = {records: []}, evidenceF
   for (const record of ledger.release_candidates) {
     const id = record?.recipe_id;
     if (!hasText(id)) { errors.push('Missing recipe_id in release candidate'); continue; }
-    if (seen.has(id)) { errors.push(id + ': duplicate release candidate'); continue; }
-    seen.add(id);
     const item = byId.get(id);
     if (!item) { errors.push(id + ': unknown recipe_id'); continue; }
     const missing = [];
+    if (candidateIdCounts.get(id) > 1) missing.push('duplicate release candidate');
     if (rejected.has(id + ':' + item.sha256)) missing.push('visual_triage_rejected_archive_copy');
     if (record.reviewed_image_sha256 !== item.sha256) missing.push('reviewed_image_sha256 does not match archive');
     if (record.reviewed_source_page !== item.source_page) missing.push('reviewed_source_page does not match manifest');
