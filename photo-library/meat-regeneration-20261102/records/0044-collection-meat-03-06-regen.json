@@ -1,0 +1,20 @@
+{
+  "n": 44,
+  "recipe_id": "collection-meat-03-06",
+  "title": "Сочные тефтели из говядины с имбирём и соевым соусом",
+  "prompt": "Фотореалистичная фотография ГОТОВОГО блюда: Сочные тефтели из говядины с имбирём и соевым соусом. Ингредиенты: Фарш говяжий, Яйцо, Панировочные сухари, Имбирь свежий, Соевый соус. Тефтели из говядины с соево-имбирным соусом, без упаковки и спагетти. Аккуратная ресторанная подача на светлой керамике; мягкий тёплый свет, крупный план 3/4. Без сырого мяса, текста и логотипов.",
+  "original_live_path": "/assets/recipes-ai/0044-collection-meat-03-06.webp",
+  "original_git_blob_sha": "58e4fe8a90b5d9fd711c1994945cfc6edf43d09c",
+  "path": "photo-library/meat-regeneration-20261102/photos/0044-collection-meat-03-06-regen.webp",
+  "sha256": "65cab49597dbf8fb1fe2844661a6b340b3121cfd4eb688b042afcf84e73a60af",
+  "bytes": 96792,
+  "size": [
+    1200,
+    900
+  ],
+  "model": "aliceai-image-art-3.0",
+  "created_at": "2026-11-02T20:59:59+00:00",
+  "status": "generated_candidate_unpublished",
+  "approved_for_publication": false,
+  "site_updated": false
+}

@@ -1,0 +1,20 @@
+{
+  "n": 28,
+  "recipe_id": "collection-meat-01-10",
+  "title": "Говяжьи медальоны с черносливом и тмином",
+  "prompt": "Фотореалистичная фотография ГОТОВОГО блюда: Говяжьи медальоны с черносливом и тмином. Ингредиенты: Говяжья вырезка, Чернослив без косточек, Тмин. Медальоны с черносливом, мясным соусом и тмином, без гарнирного ассорти. Аккуратная ресторанная подача на светлой керамике; мягкий тёплый свет, крупный план 3/4. Без сырого мяса, текста и логотипов.",
+  "original_live_path": "/assets/recipes-ai/0028-collection-meat-01-10.webp",
+  "original_git_blob_sha": "9b9594f69dd99280a4a6462393ede8c63d244001",
+  "path": "photo-library/meat-regeneration-20261102/photos/0028-collection-meat-01-10-regen.webp",
+  "sha256": "b279056e53ca1d71d543eb4ebc5ea8667bb08c15ab68d7cbdb6392e04e4f25bc",
+  "bytes": 89516,
+  "size": [
+    1200,
+    900
+  ],
+  "model": "aliceai-image-art-3.0",
+  "created_at": "2026-11-02T20:59:11+00:00",
+  "status": "generated_candidate_unpublished",
+  "approved_for_publication": false,
+  "site_updated": false
+}

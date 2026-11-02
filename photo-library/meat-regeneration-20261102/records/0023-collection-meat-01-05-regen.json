@@ -1,0 +1,20 @@
+{
+  "n": 23,
+  "recipe_id": "collection-meat-01-05",
+  "title": "Говяжьи медальоны с томатами и базиликом",
+  "prompt": "Фотореалистичная фотография ГОТОВОГО блюда: Говяжьи медальоны с томатами и базиликом. Ингредиенты: Говяжья вырезка, Томаты рубленые, Базилик. Медальоны с заметными томатами и свежим базиликом, без спагетти и кукурузы. Аккуратная ресторанная подача на светлой керамике; мягкий тёплый свет, крупный план 3/4. Без сырого мяса, текста и логотипов.",
+  "original_live_path": "/assets/recipes-ai/0023-collection-meat-01-05.webp",
+  "original_git_blob_sha": "e26db2da52f0bc6c04badf00a80483d116bf4872",
+  "path": "photo-library/meat-regeneration-20261102/photos/0023-collection-meat-01-05-regen.webp",
+  "sha256": "afc77b97f4156d1e1e6c976688c1eaf93f390b14bdcd61ee51008fc37096fff2",
+  "bytes": 126888,
+  "size": [
+    1200,
+    900
+  ],
+  "model": "aliceai-image-art-3.0",
+  "created_at": "2026-11-02T20:58:45+00:00",
+  "status": "generated_candidate_unpublished",
+  "approved_for_publication": false,
+  "site_updated": false
+}

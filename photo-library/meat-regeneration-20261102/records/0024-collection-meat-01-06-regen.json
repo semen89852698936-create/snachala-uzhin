@@ -1,0 +1,20 @@
+{
+  "n": 24,
+  "recipe_id": "collection-meat-01-06",
+  "title": "Говяжьи медальоны с имбирём и соевым соусом",
+  "prompt": "Фотореалистичная фотография ГОТОВОГО блюда: Говяжьи медальоны с имбирём и соевым соусом. Ингредиенты: Говяжья вырезка, Имбирь свежий, Соевый соус. Медальоны в соево-имбирной глазури, без картофеля, фасоли и травяного масла. Аккуратная ресторанная подача на светлой керамике; мягкий тёплый свет, крупный план 3/4. Без сырого мяса, текста и логотипов.",
+  "original_live_path": "/assets/recipes-ai/0024-collection-meat-01-06.webp",
+  "original_git_blob_sha": "4bd73cf4e9c137c4fd0ac70abc92664baa5dbc21",
+  "path": "photo-library/meat-regeneration-20261102/photos/0024-collection-meat-01-06-regen.webp",
+  "sha256": "dd11c242eb914548f49816592d76ae64627bd96633d2fd25bb5c31cd995c8097",
+  "bytes": 88880,
+  "size": [
+    1200,
+    900
+  ],
+  "model": "aliceai-image-art-3.0",
+  "created_at": "2026-11-02T20:58:51+00:00",
+  "status": "generated_candidate_unpublished",
+  "approved_for_publication": false,
+  "site_updated": false
+}

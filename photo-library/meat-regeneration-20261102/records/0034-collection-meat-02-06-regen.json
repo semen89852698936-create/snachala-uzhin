@@ -1,0 +1,20 @@
+{
+  "n": 34,
+  "recipe_id": "collection-meat-02-06",
+  "title": "Свиная вырезка в духовке с имбирём и соевым соусом",
+  "prompt": "Фотореалистичная фотография ГОТОВОГО блюда: Свиная вырезка в духовке с имбирём и соевым соусом. Ингредиенты: Вырезка свиная, Имбирь свежий, Соевый соус. Запечённая свиная вырезка с имбирём и соевым соусом, без овощного ассорти. Аккуратная ресторанная подача на светлой керамике; мягкий тёплый свет, крупный план 3/4. Без сырого мяса, текста и логотипов.",
+  "original_live_path": "/assets/recipes-ai/0034-collection-meat-02-06.webp",
+  "original_git_blob_sha": "581b6ef31ad92594e1ad9bb28296f35595cd31c4",
+  "path": "photo-library/meat-regeneration-20261102/photos/0034-collection-meat-02-06-regen.webp",
+  "sha256": "4e75bc574f465f68b92c30cbd3c7568b8b27da2630b12c83130e9e96607e81f6",
+  "bytes": 75574,
+  "size": [
+    1200,
+    900
+  ],
+  "model": "aliceai-image-art-3.0",
+  "created_at": "2026-11-02T20:59:39+00:00",
+  "status": "generated_candidate_unpublished",
+  "approved_for_publication": false,
+  "site_updated": false
+}
