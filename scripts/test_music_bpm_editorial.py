@@ -36,7 +36,7 @@ class MusicBpmEditorialTests(unittest.TestCase):
                     match = re.search(
                         r'<article class="du-music-card" data-music-phase="'
                         + PHASES[phase]
-                        + r'">([\\s\\S]*?)</article>', html)
+                        + r'">(.*?)</article>', html, re.S)
                     self.assertIsNotNone(match)
                     card = match.group(1)
                     self.assertEqual(card.count('class="du-bpm-track"'), len(records))
