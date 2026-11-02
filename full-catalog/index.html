@@ -441,6 +441,17 @@ a.du-evening-nav-mobile{display:none}
 .du-music-suggestions li span{color:#806d77}
 .du-music-card-end{margin-top:auto}
 @media(max-width:480px){.du-music-native-player iframe{height:430px}}
+
+/* Keep the new Our Evening call-to-action inside narrow mobile headers. */
+@media(max-width:680px){
+ .header-inner{gap:6px}
+ .header-inner>.brand{gap:6px;min-width:0;flex-shrink:1}
+ .header-inner .du-brand-words{font-size:11px;letter-spacing:.015em}
+ .header-inner .du-brand-words em{font-size:17px}
+ .header-inner .du-brand-words small{font-size:7px;letter-spacing:.025em}
+ .header-actions{gap:3px;flex-shrink:0}
+ .header-actions .icon-button{width:34px;height:34px}
+}
 </style>
 </head><body>
 <div class="demo-strip"><span class="demo-dot"></span> ОТКРЫТАЯ КОЛЛЕКЦИЯ · 1000 РЕЦЕПТОВ + 1 СЕКРЕТНЫЙ · ГОТОВЬТЕ ВМЕСТЕ</div>

@@ -37,6 +37,10 @@ const { chromium } = require('playwright');
       assert.equal(audio.oldButtons,0);
       assert.equal(audio.suggestedCount,60);
       assert.equal(audio.suggestedGroups,3);
+      if(audio.overflow>2){
+        const offenders=await page.evaluate(()=>[...document.querySelectorAll('body *')].map(el=>({tag:el.tagName,cls:el.className?.toString().slice(0,65),right:Math.round(el.getBoundingClientRect().right),left:Math.round(el.getBoundingClientRect().left)})).filter(el=>el.right>innerWidth+2||el.left<-2).slice(0,16));
+        console.log('Mobile overflow diagnosis',viewport.width,JSON.stringify(offenders));
+      }
       assert.ok(audio.overflow<=2,viewport.width+': horizontal overflow '+audio.overflow+'px');
       if(viewport.width>680)assert.ok(audio.headerDesktopVisible);else assert.ok(audio.mobileNavVisible);
       for(const name of ['0001-lemon-spinach-pasta.webp','1001-midnight-mushroom-toasts.webp']){
