@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "date": "2026-11-02",
-  "purpose": "Source-of-truth ingredient and preparation briefs for 15 visually rejected archive WebP copies. These are NOT photos, licenses, or approvals.",
+  "purpose": "Exact catalog ingredient and preparation briefs for 19 visually rejected archived WebP copies. Specifications only: NOT photos, rights clearances or approvals.",
   "recipe_source": {
     "branch": "main",
     "commit_sha": "819894450686ce5d5c5a0b1a7058218debd441e3",
@@ -13,8 +13,161 @@
     "blob_sha": "324964784f50844e239ae97e770117ea4b3adc53",
     "file": "photo-library/batch-100-20261101/manifest.json"
   },
-  "rejected_count": 15,
+  "rejected_count": 19,
   "briefs": [
+    {
+      "number": 21,
+      "recipe_id": "collection-meat-01-03",
+      "recipe_title": "Говяжьи медальоны с горчицей и мёдом",
+      "recipe_ingredients_exact": [
+        {
+          "name": "Говяжья вырезка",
+          "amount": 360,
+          "unit": "г"
+        },
+        {
+          "name": "Масло оливковое",
+          "amount": 1,
+          "unit": "ст. л."
+        },
+        {
+          "name": "Горчица зерновая",
+          "amount": 15,
+          "unit": "г"
+        },
+        {
+          "name": "Мёд",
+          "amount": 1,
+          "unit": "ч. л."
+        },
+        {
+          "name": "Соль",
+          "amount": 0,
+          "unit": "по вкусу"
+        }
+      ],
+      "preparation_reference": [
+        "Обсуши кусочки, посоли и поперчи. Если есть время, оставь при комнатной температуре на 15 минут.",
+        "Разогрей сковороду, добавь масло и обжарь мясо с обеих сторон до корочки. Не перегружай сковороду.",
+        "Снизь нагрев и доведи до безопасной степени прожарки по термометру. Для цельных кусков говядины и свинины ориентир — не ниже 63 °C с отдыхом 3 минуты.",
+        "Смешай горчицу с мёдом и смажь готовящееся мясо в последние 3 минуты, чтобы глазурь не подгорела.",
+        "Переложи мясо на тёплую тарелку на 3–5 минут перед нарезкой."
+      ],
+      "replacement_visual_requirements": "Photograph the prepared dish with the specified main protein and signature ingredients; avoid unrelated dominant sides. Invisible spices, sauce composition and rights cannot be certified from appearance alone.",
+      "rejected_archive_photo": {
+        "relative_file": "photos/021-collection-meat-01-03.webp",
+        "sha256": "4517d654cd3fbc24b6cd2b38a1b6d5ec7a4410c05233ae9d787a14f46d0e2ae0",
+        "reason": "На подносе ресторанный набор: стейк, кукуруза, сосиска, картофель фри, соус и напиток. Это не говяжьи медальоны с горчицей и мёдом.",
+        "source_page": "https://commons.wikimedia.org/wiki/File:A_New_Zealand_beef_steak_with_corn_and_sausage_with_potatoes_with_dinner_set_in_caf%C3%A9_de_coral.jpg",
+        "license_claim_unverified": "CC BY-SA 4.0"
+      },
+      "replacement_status": "not_found",
+      "license_status": "not_verified",
+      "editorial_status": "requires_independent_visual_review",
+      "owner_publication_approval": false
+    },
+    {
+      "number": 26,
+      "recipe_id": "collection-meat-01-08",
+      "recipe_title": "Говяжьи медальоны с сливками и зелёным перцем",
+      "recipe_ingredients_exact": [
+        {
+          "name": "Говяжья вырезка",
+          "amount": 360,
+          "unit": "г"
+        },
+        {
+          "name": "Масло оливковое",
+          "amount": 1,
+          "unit": "ст. л."
+        },
+        {
+          "name": "Сливки 20%",
+          "amount": 100,
+          "unit": "мл"
+        },
+        {
+          "name": "Перец зелёный горошком",
+          "amount": 1,
+          "unit": "ч. л."
+        },
+        {
+          "name": "Соль",
+          "amount": 0,
+          "unit": "по вкусу"
+        }
+      ],
+      "preparation_reference": [
+        "Обсуши кусочки, посоли и поперчи. Если есть время, оставь при комнатной температуре на 15 минут.",
+        "Разогрей сковороду, добавь масло и обжарь мясо с обеих сторон до корочки. Не перегружай сковороду.",
+        "Снизь нагрев и доведи до безопасной степени прожарки по термометру. Для цельных кусков говядины и свинины ориентир — не ниже 63 °C с отдыхом 3 минуты.",
+        "Убавь огонь, добавь сливки и раздавленный зелёный перец, прогрей до лёгкого загустения.",
+        "Переложи мясо на тёплую тарелку на 3–5 минут перед нарезкой."
+      ],
+      "replacement_visual_requirements": "Photograph the prepared dish with the specified main protein and signature ingredients; avoid unrelated dominant sides. Invisible spices, sauce composition and rights cannot be certified from appearance alone.",
+      "rejected_archive_photo": {
+        "relative_file": "photos/026-collection-meat-01-08.webp",
+        "sha256": "41ffb96cdd9c25357f9f2c6022c18a27349fe62ffa7a7e041a5eb9cd60f979dd",
+        "reason": "Куски розовой говядины на лапше соба, приправленные перцем. Сливочного соуса и зелёного перца не видно; подача не соответствует медальонам в сливках.",
+        "source_page": "https://commons.wikimedia.org/wiki/File:Beef_filet_on_soba_noodles,_with_soy_sauce,_salt,_and_black_pepper_-_Arlington,_MA.jpg",
+        "license_claim_unverified": "CC0"
+      },
+      "replacement_status": "not_found",
+      "license_status": "not_verified",
+      "editorial_status": "requires_independent_visual_review",
+      "owner_publication_approval": false
+    },
+    {
+      "number": 31,
+      "recipe_id": "collection-meat-02-03",
+      "recipe_title": "Свиная вырезка в духовке с горчицей и мёдом",
+      "recipe_ingredients_exact": [
+        {
+          "name": "Вырезка свиная",
+          "amount": 400,
+          "unit": "г"
+        },
+        {
+          "name": "Масло оливковое",
+          "amount": 1,
+          "unit": "ст. л."
+        },
+        {
+          "name": "Горчица зерновая",
+          "amount": 15,
+          "unit": "г"
+        },
+        {
+          "name": "Мёд",
+          "amount": 1,
+          "unit": "ч. л."
+        },
+        {
+          "name": "Соль",
+          "amount": 0,
+          "unit": "по вкусу"
+        }
+      ],
+      "preparation_reference": [
+        "Разогрей духовку до 190 °C. Промокни мясо бумажным полотенцем, приправь.",
+        "Смажь мясо маслом, положи в небольшую форму. При желании добавь немного воды на дно.",
+        "Готовь до нужной внутренней температуры: цельные куски свинины и говядины — от 63 °C с отдыхом 3 минуты. Время зависит от толщины куска.",
+        "Смешай горчицу с мёдом и смажь готовящееся мясо в последние 3 минуты, чтобы глазурь не подгорела.",
+        "Накрой фольгой неплотно, выдержи 5–10 минут, затем нарежь поперёк волокон."
+      ],
+      "replacement_visual_requirements": "Photograph the prepared dish with the specified main protein and signature ingredients; avoid unrelated dominant sides. Invisible spices, sauce composition and rights cannot be certified from appearance alone.",
+      "rejected_archive_photo": {
+        "relative_file": "photos/031-collection-meat-02-03.webp",
+        "sha256": "13b46ed67530ae1427b8fa2019b969fc7d2cb1a570c1ec8c14e0b2f43403628a",
+        "reason": "Ломтики свинины с горошком, брокколи, цветной капустой и отдельным тёмным соусом. Признаков запечённой вырезки с горчично-медовой глазурью не видно; для рецепта снимок непригоден.",
+        "source_page": "https://commons.wikimedia.org/wiki/File:Milano%27s_Caf%C3%A9_pork_loin_and_veg_Russell_Street_Stroud_Gloucestershire_England_01.jpg",
+        "license_claim_unverified": "CC BY-SA 4.0"
+      },
+      "replacement_status": "not_found",
+      "license_status": "not_verified",
+      "editorial_status": "requires_independent_visual_review",
+      "owner_publication_approval": false
+    },
     {
       "number": 32,
       "recipe_id": "collection-meat-02-04",
@@ -212,6 +365,67 @@
         "sha256": "719bffc9167b4bd1e338552eb11c641f4f75bc1d1d48614183c726035db01012",
         "reason": "Bone-in pork and rice with brown sauce; prunes absent",
         "source_page": "https://commons.wikimedia.org/wiki/File:Pork_Rack_Rice_in_Black_Pepper_Sauce.jpg",
+        "license_claim_unverified": "CC BY-SA 4.0"
+      },
+      "replacement_status": "not_found",
+      "license_status": "not_verified",
+      "editorial_status": "requires_independent_visual_review",
+      "owner_publication_approval": false
+    },
+    {
+      "number": 40,
+      "recipe_id": "collection-meat-03-02",
+      "recipe_title": "Сочные тефтели из говядины с грибами и розмарином",
+      "recipe_ingredients_exact": [
+        {
+          "name": "Фарш говяжий",
+          "amount": 400,
+          "unit": "г"
+        },
+        {
+          "name": "Яйцо",
+          "amount": 1,
+          "unit": "шт."
+        },
+        {
+          "name": "Панировочные сухари",
+          "amount": 30,
+          "unit": "г"
+        },
+        {
+          "name": "Шампиньоны",
+          "amount": 120,
+          "unit": "г"
+        },
+        {
+          "name": "Розмарин",
+          "amount": 1,
+          "unit": "веточка"
+        },
+        {
+          "name": "Масло оливковое",
+          "amount": 1,
+          "unit": "ст. л."
+        },
+        {
+          "name": "Соль",
+          "amount": 0,
+          "unit": "по вкусу"
+        }
+      ],
+      "preparation_reference": [
+        "Смешай фарш с яйцом и сухарями, слегка посоли и поперчи. Не вымешивай слишком долго.",
+        "Скатай небольшие шарики или котлеты одинакового размера.",
+        "Обжарь партиями с небольшим количеством масла до золотистой поверхности.",
+        "Грибы обжарь отдельно до румяности, добавь розмарин и соедини с мясом перед подачей.",
+        "Убавь огонь, накрой крышкой, при необходимости добавь пару ложек воды. Для фарша ориентир по термометру — не ниже 71 °C."
+      ],
+      "replacement_visual_requirements": "Photograph the prepared dish with the specified main protein and signature ingredients; avoid unrelated dominant sides. Invisible spices, sauce composition and rights cannot be certified from appearance alone.",
+      "rejected_archive_photo": {
+        "relative_file": "photos/040-collection-meat-03-02.webp",
+        "sha256": "7e6d21413c5b2a26b433dce311017c0a6f6894d08035beea4254d977e63fe6e1",
+        "reason": "Тефтели в красном томатном соусе на спагетти в кафе; грибы и розмарин не видны, композиция относится к другому блюду.",
+        "source_page": "https://commons.wikimedia.org/wiki/File:A_Pasta_dish_with_meatballs_and_tomato_sauce.jpg",
         "license_claim_unverified": "CC BY-SA 4.0"
       },
       "replacement_status": "not_found",
@@ -815,15 +1029,15 @@
   ],
   "last_extended_from_triage": {
     "numbers": [
-      68,
-      86,
-      87,
-      99
+      21,
+      26,
+      31,
+      40
     ],
-    "triage_file": "review/visual-triage-20261102.json",
-    "archive_manifest_sha": "324964784f50844e239ae97e770117ea4b3adc53",
+    "triage_file": "review/visual-triage-addendum-20261102-1042.json",
     "source_index_blob_sha": "7b612a81830a2b253fc7184df9a8cfe501d82bb2",
-    "extraction": "Exact ingredient and step fields parsed from immutable catalog index.html by scripts/extract-rejected-recipe-data.mjs in successful GitHub Actions run 41401935581",
-    "source_ci_run": "https://github.com/semen89852698936-create/snachala-uzhin/actions/runs/41401935581"
+    "source_manifest_blob_sha": "324964784f50844e239ae97e770117ea4b3adc53",
+    "extraction": "Exact recipe objects parsed from immutable main/index.html and cross-checked against PR #11 manifest and reviewed-image addendum",
+    "note": "The canonical triage integration follows this brief update; release checks may be temporarily inconsistent until both files land."
   }
 }
