@@ -33,12 +33,9 @@ class MusicBpmEditorialTests(unittest.TestCase):
                 self.assertEqual(html.count('class="du-bpm-track-list"'), 3)
                 self.assertEqual(html.count('class="du-music-spotify-extra"'), 3)
                 for phase, records in DATA["lists"].items():
-                    match = re.search(
-                        r'<article class="du-music-card" data-music-phase="'
-                        + PHASES[phase]
-                        + r'">(.*?)</article>', html, re.S)
-                    self.assertIsNotNone(match)
-                    card = match.group(1)
+                    marker = '<article class="du-music-card" data-music-phase="' + PHASES[phase] + '">'
+                    self.assertIn(marker, html)
+                    card = html.split(marker, 1)[1].split("</article>", 1)[0]
                     self.assertEqual(card.count('class="du-bpm-track"'), len(records))
                     for record in records:
                         self.assertIn(f'>{record["bpm"]} BPM</span>', card)
