@@ -98,7 +98,13 @@ def main():
         temporary = target.with_suffix(".json.tmp")
         temporary.write_text(json.dumps(result, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
         temporary.replace(target)
-    if result["problem_count"] or result["uncertain_paid_requests"] or result["unprocessed_raw_checkpoints"]:
+    # An interrupted response can leave a paid request of unknown billing status.
+    # Keep its marker for explicit later recovery, but do not block unrelated recipes.
+    # Raw checkpoints are also recoverable without paying again. True image/record
+    # integrity errors must still halt production.
+    if result["uncertain_paid_requests"] or result["unprocessed_raw_checkpoints"]:
+        print("NOTICE: unresolved requests/checkpoints kept for later recovery; other recipes may proceed", flush=True)
+    if result["problem_count"]:
         raise SystemExit(2)
 
 
