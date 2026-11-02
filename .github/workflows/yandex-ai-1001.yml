@@ -15,7 +15,7 @@ on:
         default: 'no'
         type: choice
         options: ['no', 'yes']
-  # Production recovery: resume after Yandex 400 model refusal at recipe 615.
+  # Final 1001-image audit: reserved single-shot recovery for 10 refused fruit salads and interrupted soup #546.
   # Scheduled triggers are active only after this workflow is added to main.
   schedule:
     - cron: '7,17,27,37,47,57 * * * *'
