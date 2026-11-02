@@ -86,6 +86,38 @@ class PhotoWorkerTests(unittest.TestCase):
         self.assertIn("share_alike_terms_require_review", queue[0]["flags"])
         self.assertEqual(queue[1]["flags"], ["ingredient_match_unverified"])
 
+    def test_risk_signal_cannot_approve_image(self):
+        rows = worker.validate_manifest(make_manifest(make_webp()))
+        hint = {"recipe-1": {
+            "severity": "high",
+            "reason": "Описание страницы не подтверждает рецепт"
+        }}
+        queue = worker.queue_entries(rows, {}, hint)
+        self.assertEqual(queue[0]["source_caption_risk"], "high")
+        self.assertEqual(queue[0]["editorial_status"], "requires_visual_review")
+        self.assertEqual(queue[0]["license_status"], "requires_individual_verification")
+        self.assertIn("source_caption_requires_priority_review", queue[0]["flags"])
+        self.assertEqual(queue[1]["source_caption_risk"], "not_flagged")
+
+    def test_stale_photo_hash_does_not_read_as_technically_passed(self):
+        rows = worker.validate_manifest(make_manifest(make_webp()))
+        checked = {"recipe-1": {"status": "technical_pass", "sha256": "0" * 64}}
+        queue = worker.queue_entries(rows, checked)
+        self.assertEqual(queue[0]["technical_status"], "stale_sha_needs_recheck")
+
+    def test_risk_manifest_matches_actual_photo_data(self):
+        from pathlib import Path
+        path = Path(__file__).resolve().parents[1] / "photo-library/editorial-risk-signals.json"
+        report = json.loads(path.read_text(encoding="utf-8"))
+        self.assertEqual(report["schema_version"], 1)
+        self.assertEqual(report["total_archive_candidates"], 100)
+        self.assertEqual(report["flagged_by_source_title"], len(report["records"]))
+        self.assertEqual(report["severe"] + report["moderate"], len(report["records"]))
+        self.assertEqual(len(set(r["number"] for r in report["records"])), len(report["records"]))
+        self.assertTrue(all(r["evidence_level"] == "source_title_only"
+                            and r["status"] == "editorial_review_required_not_approved"
+                            for r in report["records"]))
+
     def test_full_incremental_cycle_saves_only_in_review_branch(self):
         b = make_webp()
         manifest = make_manifest(b)
@@ -101,7 +133,8 @@ class PhotoWorkerTests(unittest.TestCase):
         with mock.patch.object(worker, "file_at", side_effect=fetch_any), \
              mock.patch.object(worker, "try_file_at", side_effect=find_optional), \
              mock.patch.object(worker, "ensure_checkpoint_branch") as ensure, \
-             mock.patch.object(worker, "save_if_changed", return_value=True) as save:
+             mock.patch.object(worker, "save_if_changed", return_value=True) as save, \
+             mock.patch.object(worker, "load_editorial_signals", return_value={}):
             result = worker.execute("example/repo", "ephemeral-test-token", live=True)
         self.assertEqual(len(result["tested_this_run"]), 5)
         self.assertEqual(result["verified"], 1)  # only record 1 has the test photo's SHA
