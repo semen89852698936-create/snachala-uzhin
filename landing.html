@@ -101,9 +101,17 @@
     .benefit p { color:#705961; font-size:1rem; margin:0 }
     .mood { background:#F2E7E0 }
     .mood-grid { display:grid; grid-template-columns:1fr .95fr; gap:80px; align-items:center }
-    .mood-gallery { display:grid; grid-template-columns:1fr 1fr; gap:13px }
-    .mood-gallery img { height:390px; width:100%; object-fit:cover; border-radius:165px 165px 14px 14px }
-    .mood-gallery img:last-child { margin-top:32px; height:358px }
+    .playlist-showcase { display:grid; gap:14px; max-width:470px; width:100%; margin-left:auto }
+    .vinyl-card { border:1px solid var(--hair); display:grid; grid-template-columns:90px 1fr; align-items:center; gap:18px; border-radius:17px; padding:18px; text-decoration:none; color:var(--plum); background:#FFF8F3; box-shadow:0 12px 35px rgba(93,58,69,.06); transition:transform .18s }
+    .vinyl-card:hover { transform:translateX(-4px) }
+    .vinyl { display:grid; place-items:center; position:relative; height:90px; width:90px; border-radius:50%; background:repeating-radial-gradient(circle at center,#211D22 0 3px,#393139 4px 5px,#231E24 6px 9px); box-shadow:4px 6px 12px #30202B45; }
+    .vinyl:before { content:""; width:37px; height:37px; border-radius:50%; background:#A86E7B; border:3px solid #EBC6CC; }
+    .vinyl:after { content:""; position:absolute; left:calc(50% - 4px); top:calc(50% - 4px); width:8px; height:8px; background:#EEE4D9; border-radius:50%; }
+    .vinyl-card:nth-child(2) .vinyl:before { background:#BE8B70 }
+    .vinyl-card:nth-child(3) .vinyl:before { background:#655B83 }
+    .vinyl-copy strong { font-size:1.18rem; display:block; line-height:1.3; margin-bottom:5px }
+    .vinyl-copy span { display:block; color:#715C67; font-size:.92rem }
+    .vinyl-copy small { display:block; margin-top:5px; font-weight:700; font-size:.79rem; color:#986176; letter-spacing:.055em }
     .mood-lines { font-size:1.11rem; color:#66515C; margin:22px 0 30px; line-height:1.75 }
     .mood-lines strong { color:var(--plum) }
     .quote { background:var(--plum); color:#FFF5F1; padding:76px 0; text-align:center }
@@ -158,8 +166,8 @@
       .scene .body { padding:22px }
       .demo-photo { min-height:350px; margin:0 }
       .mood-grid { display:flex; flex-direction:column-reverse; align-items:stretch }
-      .mood-gallery img { height:300px }
-      .mood-gallery img:last-child { height:280px; margin-top:15px }
+      .playlist-showcase { max-width:100%; }
+      .head-inner > .button { width:auto; padding:11px 13px; font-size:.84rem }
       .quote { padding:62px 0 }
       .closing { padding:72px 0 80px }
     }
@@ -171,8 +179,10 @@
       .benefits { grid-template-columns:1fr }
       .scene figure { height:250px }
       .button { width:100% }
-      .mood-gallery img { height:260px }
-      .mood-gallery img:last-child { height:245px }
+      .head-inner > .button { display:none }
+      .vinyl-card { grid-template-columns:72px 1fr; gap:15px; padding:14px }
+      .vinyl { width:72px; height:72px }
+      .vinyl-copy strong { font-size:1.04rem }
     }
     @media(prefers-reduced-motion:reduce) {
       html { scroll-behavior:auto }
@@ -294,9 +304,10 @@
           <p class="mood-lines"><strong>Под что готовить</strong> - энергично.<br><strong>Под что ужинать</strong> - неспешно.<br><strong>Под что продолжить</strong> - только для вас.</p>
           <a class="button primary" href="/#evening">Создать наш вечер <span aria-hidden="true">↗</span></a>
         </div>
-        <div class="mood-gallery" aria-hidden="true">
-          <img src="/assets/our-evening-dinner-hq.avif" width="1212" height="970" loading="lazy" alt="">
-          <img src="/assets/our-evening-after-hq.avif" width="740" height="1234" loading="lazy" alt="">
+        <div class="playlist-showcase" aria-label="Музыкальные подборки для трёх моментов вечера">
+          <a class="vinyl-card" href="/#music"><span class="vinyl" aria-hidden="true"></span><span class="vinyl-copy"><strong>Под что готовить</strong><span>Двигаться, смеяться, пробовать.</span><small>120 BPM И ВЫШЕ</small></span></a>
+          <a class="vinyl-card" href="/#music"><span class="vinyl" aria-hidden="true"></span><span class="vinyl-copy"><strong>Под что ужинать</strong><span>Убавить темп и остаться за столом.</span><small>80–100 BPM</small></span></a>
+          <a class="vinyl-card" href="/#music"><span class="vinyl" aria-hidden="true"></span><span class="vinyl-copy"><strong>Под что продолжить</strong><span>Дальше разговоров почти не нужно.</span><small>80 BPM И НИЖЕ</small></span></a>
         </div>
       </div>
     </section>
