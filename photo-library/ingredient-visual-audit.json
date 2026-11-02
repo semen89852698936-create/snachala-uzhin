@@ -1,0 +1,1259 @@
+{
+  "scope": "1001 recipes",
+  "caution": "Keyword screening of recipe metadata, NOT visual verification of image contents.",
+  "auto_generation": false,
+  "queue": [
+    {
+      "n": 2,
+      "id": "tomato-basil-pasta",
+      "title": "Паста с томатами и базиликом",
+      "image": "photo-library/alice-ai-art/photos/0002-tomato-basil-pasta.webp",
+      "status": "visual_review_required",
+      "inspection_note": "Если чеснок измельчается или входит в маринад, не изображать целые зубчики сверху.",
+      "instructions": "Добавь пасту, пару ложек воды от варки и базилик. Перемешай и посыпь сыром.",
+      "auto_regenerate": false
+    },
+    {
+      "n": 4,
+      "id": "meatballs",
+      "title": "Тефтели в томатном соусе",
+      "image": "photo-library/alice-ai-art/photos/0004-meatballs.webp",
+      "status": "visual_review_required",
+      "inspection_note": "Если чеснок измельчается или входит в маринад, не изображать целые зубчики сверху.",
+      "instructions": "Добавь чеснок и томаты, накрой крышкой, туши 18–20 минут до полной готовности фарша.",
+      "auto_regenerate": false
+    },
+    {
+      "n": 14,
+      "id": "baked-apples",
+      "title": "Запечённые яблоки с корицей",
+      "image": "photo-library/alice-ai-art/photos/0014-baked-apples.webp",
+      "status": "visual_review_required",
+      "inspection_note": "Сверить способ нарезки и точное положение яблока: дольки, мелкие кусочки или смесь; не класть поверх мяса без указания.",
+      "instructions": "Готовь 20–25 минут до мягкости яблок.",
+      "auto_regenerate": false
+    },
+    {
+      "n": 15,
+      "id": "chicken-lemon",
+      "title": "Курица с лимоном и травами",
+      "image": "photo-library/alice-ai-art/photos/0015-chicken-lemon.webp",
+      "status": "visual_review_required",
+      "inspection_note": "Если чеснок измельчается или входит в маринад, не изображать целые зубчики сверху.",
+      "instructions": "Оставь на 5 минут, подай с дольками оставшегося лимона.",
+      "auto_regenerate": false
+    },
+    {
+      "n": 22,
+      "id": "collection-meat-01-04",
+      "title": "Говяжьи медальоны с паприкой и чесноком",
+      "image": "photo-library/alice-ai-art/photos/0022-collection-meat-01-04.webp",
+      "status": "visual_review_required",
+      "inspection_note": "Если чеснок измельчается или входит в маринад, не изображать целые зубчики сверху.",
+      "instructions": "Переложи мясо на тёплую тарелку на 3–5 минут перед нарезкой.",
+      "auto_regenerate": false
+    },
+    {
+      "n": 27,
+      "id": "collection-meat-01-09",
+      "title": "Говяжьи медальоны с яблоком и шалфеем",
+      "image": "photo-library/alice-ai-art/photos/0027-collection-meat-01-09.webp",
+      "status": "owner_reported_error",
+      "inspection_note": "Нет долек яблока поверх мяса. Горка измельчённого обжаренного яблока с шалфеем рядом.",
+      "instructions": "Переложи мясо на тёплую тарелку на 3–5 минут перед нарезкой.",
+      "auto_regenerate": false
+    },
+    {
+      "n": 28,
+      "id": "collection-meat-01-10",
+      "title": "Говяжьи медальоны с черносливом и тмином",
+      "image": "photo-library/alice-ai-art/photos/0028-collection-meat-01-10.webp",
+      "status": "owner_reported_error",
+      "inspection_note": "Нет цельного чернослива сверху. Нарезанный чернослив в соусе.",
+      "instructions": "Переложи мясо на тёплую тарелку на 3–5 минут перед нарезкой.",
+      "auto_regenerate": false
+    },
+    {
+      "n": 32,
+      "id": "collection-meat-02-04",
+      "title": "Свиная вырезка в духовке с паприкой и чесноком",
+      "image": "photo-library/alice-ai-art/photos/0032-collection-meat-02-04.webp",
+      "status": "owner_reported_error",
+      "inspection_note": "Нет целых зубчиков чеснока сверху; чеснок в маринаде.",
+      "instructions": "Накрой фольгой неплотно, выдержи 5–10 минут, затем нарежь поперёк волокон.",
+      "auto_regenerate": false
+    },
+    {
+      "n": 37,
+      "id": "collection-meat-02-09",
+      "title": "Свиная вырезка в духовке с яблоком и шалфеем",
+      "image": "photo-library/alice-ai-art/photos/0037-collection-meat-02-09.webp",
+      "status": "owner_reported_error",
+      "inspection_note": "Дольки яблока с шалфеем рядом, не сверху мяса.",
+      "instructions": "Накрой фольгой неплотно, выдержи 5–10 минут, затем нарежь поперёк волокон.",
+      "auto_regenerate": false
+    },
+    {
+      "n": 38,
+      "id": "collection-meat-02-10",
+      "title": "Свиная вырезка в духовке с черносливом и тмином",
+      "image": "photo-library/alice-ai-art/photos/0038-collection-meat-02-10.webp",
+      "status": "visual_review_required",
+      "inspection_note": "Если чернослив по рецепту нарезается или тушится, не изображать цельным поверх мяса.",
+      "instructions": "Накрой фольгой неплотно, выдержи 5–10 минут, затем нарежь поперёк волокон.",
+      "auto_regenerate": false
+    },
+    {
+      "n": 42,
+      "id": "collection-meat-03-04",
+      "title": "Сочные тефтели из говядины с паприкой и чесноком",
+      "image": "photo-library/alice-ai-art/photos/0042-collection-meat-03-04.webp",
+      "status": "visual_review_required",
+      "inspection_note": "Если чеснок измельчается или входит в маринад, не изображать целые зубчики сверху.",
+      "instructions": "Убавь огонь, накрой крышкой, при необходимости добавь пару ложек воды. Для фарша ориентир по термометру — не ниже 71 °C.",
+      "auto_regenerate": false
+    },
+    {
+      "n": 47,
+      "id": "collection-meat-03-09",
+      "title": "Сочные тефтели из говядины с яблоком и шалфеем",
+      "image": "photo-library/alice-ai-art/photos/0047-collection-meat-03-09.webp",
+      "status": "visual_review_required",
+      "inspection_note": "Сверить способ нарезки и точное положение яблока: дольки, мелкие кусочки или смесь; не класть поверх мяса без указания.",
+      "instructions": "Убавь огонь, накрой крышкой, при необходимости добавь пару ложек воды. Для фарша ориентир по термометру — не ниже 71 °C.",
+      "auto_regenerate": false
+    },
+    {
+      "n": 48,
+      "id": "collection-meat-03-10",
+      "title": "Сочные тефтели из говядины с черносливом и тмином",
+      "image": "photo-library/alice-ai-art/photos/0048-collection-meat-03-10.webp",
+      "status": "visual_review_required",
+      "inspection_note": "Если чернослив по рецепту нарезается или тушится, не изображать цельным поверх мяса.",
+      "instructions": "Убавь огонь, накрой крышкой, при необходимости добавь пару ложек воды. Для фарша ориентир по термометру — не ниже 71 °C.",
+      "auto_regenerate": false
+    },
+    {
+      "n": 52,
+      "id": "collection-meat-04-04",
+      "title": "Говядина, тушённая кусочками с паприкой и чесноком",
+      "image": "photo-library/alice-ai-art/photos/0052-collection-meat-04-04.webp",
+      "status": "visual_review_required",
+      "inspection_note": "Если чеснок измельчается или входит в маринад, не изображать целые зубчики сверху.",
+      "instructions": "Мясо должно легко разделяться вилкой. При необходимости потуши ещё 10–15 минут.",
+      "auto_regenerate": false
+    },
+    {
+      "n": 57,
+      "id": "collection-meat-04-09",
+      "title": "Говядина, тушённая кусочками с яблоком и шалфеем",
+      "image": "photo-library/alice-ai-art/photos/0057-collection-meat-04-09.webp",
+      "status": "visual_review_required",
+      "inspection_note": "Сверить способ нарезки и точное положение яблока: дольки, мелкие кусочки или смесь; не класть поверх мяса без указания.",
+      "instructions": "Мясо должно легко разделяться вилкой. При необходимости потуши ещё 10–15 минут.",
+      "auto_regenerate": false
+    },
+    {
+      "n": 58,
+      "id": "collection-meat-04-10",
+      "title": "Говядина, тушённая кусочками с черносливом и тмином",
+      "image": "photo-library/alice-ai-art/photos/0058-collection-meat-04-10.webp",
+      "status": "visual_review_required",
+      "inspection_note": "Если чернослив по рецепту нарезается или тушится, не изображать цельным поверх мяса.",
+      "instructions": "Мясо должно легко разделяться вилкой. При необходимости потуши ещё 10–15 минут.",
+      "auto_regenerate": false
+    },
+    {
+      "n": 62,
+      "id": "collection-meat-05-04",
+      "title": "Медальоны из свинины с паприкой и чесноком",
+      "image": "photo-library/alice-ai-art/photos/0062-collection-meat-05-04.webp",
+      "status": "visual_review_required",
+      "inspection_note": "Если чеснок измельчается или входит в маринад, не изображать целые зубчики сверху.",
+      "instructions": "Переложи мясо на тёплую тарелку на 3–5 минут перед нарезкой.",
+      "auto_regenerate": false
+    },
+    {
+      "n": 67,
+      "id": "collection-meat-05-09",
+      "title": "Медальоны из свинины с яблоком и шалфеем",
+      "image": "photo-library/alice-ai-art/photos/0067-collection-meat-05-09.webp",
+      "status": "visual_review_required",
+      "inspection_note": "Сверить способ нарезки и точное положение яблока: дольки, мелкие кусочки или смесь; не класть поверх мяса без указания.",
+      "instructions": "Переложи мясо на тёплую тарелку на 3–5 минут перед нарезкой.",
+      "auto_regenerate": false
+    },
+    {
+      "n": 68,
+      "id": "collection-meat-05-10",
+      "title": "Медальоны из свинины с черносливом и тмином",
+      "image": "photo-library/alice-ai-art/photos/0068-collection-meat-05-10.webp",
+      "status": "visual_review_required",
+      "inspection_note": "Если чернослив по рецепту нарезается или тушится, не изображать цельным поверх мяса.",
+      "instructions": "Переложи мясо на тёплую тарелку на 3–5 минут перед нарезкой.",
+      "auto_regenerate": false
+    },
+    {
+      "n": 72,
+      "id": "collection-meat-06-04",
+      "title": "Котлеты из телятины с паприкой и чесноком",
+      "image": "photo-library/alice-ai-art/photos/0072-collection-meat-06-04.webp",
+      "status": "visual_review_required",
+      "inspection_note": "Если чеснок измельчается или входит в маринад, не изображать целые зубчики сверху.",
+      "instructions": "Убавь огонь, накрой крышкой, при необходимости добавь пару ложек воды. Для фарша ориентир по термометру — не ниже 71 °C.",
+      "auto_regenerate": false
+    },
+    {
+      "n": 77,
+      "id": "collection-meat-06-09",
+      "title": "Котлеты из телятины с яблоком и шалфеем",
+      "image": "photo-library/alice-ai-art/photos/0077-collection-meat-06-09.webp",
+      "status": "visual_review_required",
+      "inspection_note": "Сверить способ нарезки и точное положение яблока: дольки, мелкие кусочки или смесь; не класть поверх мяса без указания.",
+      "instructions": "Убавь огонь, накрой крышкой, при необходимости добавь пару ложек воды. Для фарша ориентир по термометру — не ниже 71 °C.",
+      "auto_regenerate": false
+    },
+    {
+      "n": 78,
+      "id": "collection-meat-06-10",
+      "title": "Котлеты из телятины с черносливом и тмином",
+      "image": "photo-library/alice-ai-art/photos/0078-collection-meat-06-10.webp",
+      "status": "visual_review_required",
+      "inspection_note": "Если чернослив по рецепту нарезается или тушится, не изображать цельным поверх мяса.",
+      "instructions": "Убавь огонь, накрой крышкой, при необходимости добавь пару ложек воды. Для фарша ориентир по термометру — не ниже 71 °C.",
+      "auto_regenerate": false
+    },
+    {
+      "n": 82,
+      "id": "collection-meat-07-04",
+      "title": "Нежная баранина в сотейнике с паприкой и чесноком",
+      "image": "photo-library/alice-ai-art/photos/0082-collection-meat-07-04.webp",
+      "status": "visual_review_required",
+      "inspection_note": "Если чеснок измельчается или входит в маринад, не изображать целые зубчики сверху.",
+      "instructions": "Мясо должно легко разделяться вилкой. При необходимости потуши ещё 10–15 минут.",
+      "auto_regenerate": false
+    },
+    {
+      "n": 87,
+      "id": "collection-meat-07-09",
+      "title": "Нежная баранина в сотейнике с яблоком и шалфеем",
+      "image": "photo-library/alice-ai-art/photos/0087-collection-meat-07-09.webp",
+      "status": "visual_review_required",
+      "inspection_note": "Сверить способ нарезки и точное положение яблока: дольки, мелкие кусочки или смесь; не класть поверх мяса без указания.",
+      "instructions": "Мясо должно легко разделяться вилкой. При необходимости потуши ещё 10–15 минут.",
+      "auto_regenerate": false
+    },
+    {
+      "n": 88,
+      "id": "collection-meat-07-10",
+      "title": "Нежная баранина в сотейнике с черносливом и тмином",
+      "image": "photo-library/alice-ai-art/photos/0088-collection-meat-07-10.webp",
+      "status": "visual_review_required",
+      "inspection_note": "Если чернослив по рецепту нарезается или тушится, не изображать цельным поверх мяса.",
+      "instructions": "Мясо должно легко разделяться вилкой. При необходимости потуши ещё 10–15 минут.",
+      "auto_regenerate": false
+    },
+    {
+      "n": 92,
+      "id": "collection-meat-08-04",
+      "title": "Ростбиф небольшим куском с паприкой и чесноком",
+      "image": "photo-library/alice-ai-art/photos/0092-collection-meat-08-04.webp",
+      "status": "visual_review_required",
+      "inspection_note": "Если чеснок измельчается или входит в маринад, не изображать целые зубчики сверху.",
+      "instructions": "Накрой фольгой неплотно, выдержи 5–10 минут, затем нарежь поперёк волокон.",
+      "auto_regenerate": false
+    },
+    {
+      "n": 97,
+      "id": "collection-meat-08-09",
+      "title": "Ростбиф небольшим куском с яблоком и шалфеем",
+      "image": "photo-library/alice-ai-art/photos/0097-collection-meat-08-09.webp",
+      "status": "visual_review_required",
+      "inspection_note": "Сверить способ нарезки и точное положение яблока: дольки, мелкие кусочки или смесь; не класть поверх мяса без указания.",
+      "instructions": "Накрой фольгой неплотно, выдержи 5–10 минут, затем нарежь поперёк волокон.",
+      "auto_regenerate": false
+    },
+    {
+      "n": 98,
+      "id": "collection-meat-08-10",
+      "title": "Ростбиф небольшим куском с черносливом и тмином",
+      "image": "photo-library/alice-ai-art/photos/0098-collection-meat-08-10.webp",
+      "status": "visual_review_required",
+      "inspection_note": "Если чернослив по рецепту нарезается или тушится, не изображать цельным поверх мяса.",
+      "instructions": "Накрой фольгой неплотно, выдержи 5–10 минут, затем нарежь поперёк волокон.",
+      "auto_regenerate": false
+    },
+    {
+      "n": 102,
+      "id": "collection-meat-09-04",
+      "title": "Мясные полоски на сковороде с паприкой и чесноком",
+      "image": "photo-library/alice-ai-art/photos/0102-collection-meat-09-04.webp",
+      "status": "visual_review_required",
+      "inspection_note": "Если чеснок измельчается или входит в маринад, не изображать целые зубчики сверху.",
+      "instructions": "Доведи до безопасной температуры с учётом вида мяса и толщины кусочков.",
+      "auto_regenerate": false
+    },
+    {
+      "n": 107,
+      "id": "collection-meat-09-09",
+      "title": "Мясные полоски на сковороде с яблоком и шалфеем",
+      "image": "photo-library/alice-ai-art/photos/0107-collection-meat-09-09.webp",
+      "status": "visual_review_required",
+      "inspection_note": "Сверить способ нарезки и точное положение яблока: дольки, мелкие кусочки или смесь; не класть поверх мяса без указания.",
+      "instructions": "Доведи до безопасной температуры с учётом вида мяса и толщины кусочков.",
+      "auto_regenerate": false
+    },
+    {
+      "n": 108,
+      "id": "collection-meat-09-10",
+      "title": "Мясные полоски на сковороде с черносливом и тмином",
+      "image": "photo-library/alice-ai-art/photos/0108-collection-meat-09-10.webp",
+      "status": "visual_review_required",
+      "inspection_note": "Если чернослив по рецепту нарезается или тушится, не изображать цельным поверх мяса.",
+      "instructions": "Доведи до безопасной температуры с учётом вида мяса и толщины кусочков.",
+      "auto_regenerate": false
+    },
+    {
+      "n": 112,
+      "id": "collection-meat-10-04",
+      "title": "Свиные отбивные с паприкой и чесноком",
+      "image": "photo-library/alice-ai-art/photos/0112-collection-meat-10-04.webp",
+      "status": "visual_review_required",
+      "inspection_note": "Если чеснок измельчается или входит в маринад, не изображать целые зубчики сверху.",
+      "instructions": "Переложи мясо на тёплую тарелку на 3–5 минут перед нарезкой.",
+      "auto_regenerate": false
+    },
+    {
+      "n": 117,
+      "id": "collection-meat-10-09",
+      "title": "Свиные отбивные с яблоком и шалфеем",
+      "image": "photo-library/alice-ai-art/photos/0117-collection-meat-10-09.webp",
+      "status": "owner_reported_error",
+      "inspection_note": "Нет яблочных долек. Мелко нарезанное обжаренное яблоко с шалфеем отдельно рядом.",
+      "instructions": "Переложи мясо на тёплую тарелку на 3–5 минут перед нарезкой.",
+      "auto_regenerate": false
+    },
+    {
+      "n": 118,
+      "id": "collection-meat-10-10",
+      "title": "Свиные отбивные с черносливом и тмином",
+      "image": "photo-library/alice-ai-art/photos/0118-collection-meat-10-10.webp",
+      "status": "owner_reported_error",
+      "inspection_note": "Нет чернослива поверх мяса. Нарезанный тушёный чернослив с тмином в соусе рядом.",
+      "instructions": "Переложи мясо на тёплую тарелку на 3–5 минут перед нарезкой.",
+      "auto_regenerate": false
+    },
+    {
+      "n": 125,
+      "id": "collection-poultry-01-09",
+      "title": "Куриное филе на сковороде с шпинатом и чесноком",
+      "image": "photo-library/alice-ai-art/photos/0125-collection-poultry-01-09.webp",
+      "status": "visual_review_required",
+      "inspection_note": "Если чеснок измельчается или входит в маринад, не изображать целые зубчики сверху.",
+      "instructions": "Дай птице полежать 3 минуты перед нарезкой.",
+      "auto_regenerate": false
+    },
+    {
+      "n": 135,
+      "id": "collection-poultry-02-09",
+      "title": "Индейка, запечённая кусочками с шпинатом и чесноком",
+      "image": "photo-library/alice-ai-art/photos/0135-collection-poultry-02-09.webp",
+      "status": "visual_review_required",
+      "inspection_note": "Если чеснок измельчается или входит в маринад, не изображать целые зубчики сверху.",
+      "instructions": "Выдержи птицу 3–5 минут и подай.",
+      "auto_regenerate": false
+    },
+    {
+      "n": 145,
+      "id": "collection-poultry-03-09",
+      "title": "Куриные бёдра в духовке с шпинатом и чесноком",
+      "image": "photo-library/alice-ai-art/photos/0145-collection-poultry-03-09.webp",
+      "status": "visual_review_required",
+      "inspection_note": "Если чеснок измельчается или входит в маринад, не изображать целые зубчики сверху.",
+      "instructions": "Выдержи птицу 3–5 минут и подай.",
+      "auto_regenerate": false
+    },
+    {
+      "n": 155,
+      "id": "collection-poultry-04-09",
+      "title": "Рубленые котлеты из индейки с шпинатом и чесноком",
+      "image": "photo-library/alice-ai-art/photos/0155-collection-poultry-04-09.webp",
+      "status": "visual_review_required",
+      "inspection_note": "Если чеснок измельчается или входит в маринад, не изображать целые зубчики сверху.",
+      "instructions": "Добавь немного воды, накрой крышкой и готовь до 74 °C в середине.",
+      "auto_regenerate": false
+    },
+    {
+      "n": 165,
+      "id": "collection-poultry-05-09",
+      "title": "Куриное рагу с шпинатом и чесноком",
+      "image": "photo-library/alice-ai-art/photos/0165-collection-poultry-05-09.webp",
+      "status": "visual_review_required",
+      "inspection_note": "Если чеснок измельчается или входит в маринад, не изображать целые зубчики сверху.",
+      "instructions": "Самый крупный кусочек должен достичь 74 °C внутри.",
+      "auto_regenerate": false
+    },
+    {
+      "n": 175,
+      "id": "collection-poultry-06-09",
+      "title": "Нежные фрикадельки из курицы с шпинатом и чесноком",
+      "image": "photo-library/alice-ai-art/photos/0175-collection-poultry-06-09.webp",
+      "status": "visual_review_required",
+      "inspection_note": "Если чеснок измельчается или входит в маринад, не изображать целые зубчики сверху.",
+      "instructions": "Добавь немного воды, накрой крышкой и готовь до 74 °C в середине.",
+      "auto_regenerate": false
+    },
+    {
+      "n": 185,
+      "id": "collection-poultry-07-09",
+      "title": "Стейки из индейки с шпинатом и чесноком",
+      "image": "photo-library/alice-ai-art/photos/0185-collection-poultry-07-09.webp",
+      "status": "visual_review_required",
+      "inspection_note": "Если чеснок измельчается или входит в маринад, не изображать целые зубчики сверху.",
+      "instructions": "Дай птице полежать 3 минуты перед нарезкой.",
+      "auto_regenerate": false
+    },
+    {
+      "n": 195,
+      "id": "collection-poultry-08-09",
+      "title": "Куриные полоски на сковороде с шпинатом и чесноком",
+      "image": "photo-library/alice-ai-art/photos/0195-collection-poultry-08-09.webp",
+      "status": "visual_review_required",
+      "inspection_note": "Если чеснок измельчается или входит в маринад, не изображать целые зубчики сверху.",
+      "instructions": "Убедись, что птица достигла 74 °C внутри.",
+      "auto_regenerate": false
+    },
+    {
+      "n": 205,
+      "id": "collection-poultry-09-09",
+      "title": "Куриные голени в духовке с шпинатом и чесноком",
+      "image": "photo-library/alice-ai-art/photos/0205-collection-poultry-09-09.webp",
+      "status": "visual_review_required",
+      "inspection_note": "Если чеснок измельчается или входит в маринад, не изображать целые зубчики сверху.",
+      "instructions": "Выдержи птицу 3–5 минут и подай.",
+      "auto_regenerate": false
+    },
+    {
+      "n": 215,
+      "id": "collection-poultry-10-09",
+      "title": "Индейка в сотейнике с шпинатом и чесноком",
+      "image": "photo-library/alice-ai-art/photos/0215-collection-poultry-10-09.webp",
+      "status": "visual_review_required",
+      "inspection_note": "Если чеснок измельчается или входит в маринад, не изображать целые зубчики сверху.",
+      "instructions": "Самый крупный кусочек должен достичь 74 °C внутри.",
+      "auto_regenerate": false
+    },
+    {
+      "n": 226,
+      "id": "collection-fish-02-02",
+      "title": "Треска в духовке с чесноком и петрушкой",
+      "image": "photo-library/alice-ai-art/photos/0226-collection-fish-02-02.webp",
+      "status": "visual_review_required",
+      "inspection_note": "Если чеснок измельчается или входит в маринад, не изображать целые зубчики сверху.",
+      "instructions": "Рыба должна быть непрозрачной и легко разделяться вилкой; ориентир — 63 °C внутри.",
+      "auto_regenerate": false
+    },
+    {
+      "n": 236,
+      "id": "collection-fish-03-02",
+      "title": "Форель, запечённая с кожей с чесноком и петрушкой",
+      "image": "photo-library/alice-ai-art/photos/0236-collection-fish-03-02.webp",
+      "status": "visual_review_required",
+      "inspection_note": "Если чеснок измельчается или входит в маринад, не изображать целые зубчики сверху.",
+      "instructions": "Рыба должна быть непрозрачной и легко разделяться вилкой; ориентир — 63 °C внутри.",
+      "auto_regenerate": false
+    },
+    {
+      "n": 246,
+      "id": "collection-fish-04-02",
+      "title": "Минтай в сковороде с чесноком и петрушкой",
+      "image": "photo-library/alice-ai-art/photos/0246-collection-fish-04-02.webp",
+      "status": "visual_review_required",
+      "inspection_note": "Если чеснок измельчается или входит в маринад, не изображать целые зубчики сверху.",
+      "instructions": "Для приготовленной рыбы ориентир — 63 °C внутри или легко расслаивающаяся непрозрачная мякоть.",
+      "auto_regenerate": false
+    },
+    {
+      "n": 256,
+      "id": "collection-fish-05-02",
+      "title": "Сибас в духовке с чесноком и петрушкой",
+      "image": "photo-library/alice-ai-art/photos/0256-collection-fish-05-02.webp",
+      "status": "visual_review_required",
+      "inspection_note": "Если чеснок измельчается или входит в маринад, не изображать целые зубчики сверху.",
+      "instructions": "Рыба должна быть непрозрачной и легко разделяться вилкой; ориентир — 63 °C внутри.",
+      "auto_regenerate": false
+    },
+    {
+      "n": 266,
+      "id": "collection-fish-06-02",
+      "title": "Пикша на сковороде с чесноком и петрушкой",
+      "image": "photo-library/alice-ai-art/photos/0266-collection-fish-06-02.webp",
+      "status": "visual_review_required",
+      "inspection_note": "Если чеснок измельчается или входит в маринад, не изображать целые зубчики сверху.",
+      "instructions": "Для приготовленной рыбы ориентир — 63 °C внутри или легко расслаивающаяся непрозрачная мякоть.",
+      "auto_regenerate": false
+    },
+    {
+      "n": 276,
+      "id": "collection-fish-07-02",
+      "title": "Креветки в сотейнике с чесноком и петрушкой",
+      "image": "photo-library/alice-ai-art/photos/0276-collection-fish-07-02.webp",
+      "status": "visual_review_required",
+      "inspection_note": "Если чеснок измельчается или входит в маринад, не изображать целые зубчики сверху.",
+      "instructions": "Сразу переложи на тарелки, чтобы не пересушить.",
+      "auto_regenerate": false
+    },
+    {
+      "n": 286,
+      "id": "collection-fish-08-02",
+      "title": "Кальмары на сковороде с чесноком и петрушкой",
+      "image": "photo-library/alice-ai-art/photos/0286-collection-fish-08-02.webp",
+      "status": "visual_review_required",
+      "inspection_note": "Если чеснок измельчается или входит в маринад, не изображать целые зубчики сверху.",
+      "instructions": "Не держи кальмара долго на огне, иначе он станет жёстким.",
+      "auto_regenerate": false
+    },
+    {
+      "n": 296,
+      "id": "collection-fish-09-02",
+      "title": "Морские гребешки с чесноком и петрушкой",
+      "image": "photo-library/alice-ai-art/photos/0296-collection-fish-09-02.webp",
+      "status": "visual_review_required",
+      "inspection_note": "Если чеснок измельчается или входит в маринад, не изображать целые зубчики сверху.",
+      "instructions": "Гребешки быстро остывают, подавай сразу.",
+      "auto_regenerate": false
+    },
+    {
+      "n": 306,
+      "id": "collection-fish-10-02",
+      "title": "Мидии в ароматном бульоне с чесноком и петрушкой",
+      "image": "photo-library/alice-ai-art/photos/0306-collection-fish-10-02.webp",
+      "status": "visual_review_required",
+      "inspection_note": "Если чеснок измельчается или входит в маринад, не изображать целые зубчики сверху.",
+      "instructions": "Выброси мидии, которые так и не раскрылись после готовки. Подавай горячими.",
+      "auto_regenerate": false
+    },
+    {
+      "n": 421,
+      "id": "collection-vegetables-02-01",
+      "title": "Цуккини на сковороде с чесноком и тимьяном",
+      "image": "photo-library/alice-ai-art/photos/0421-collection-vegetables-02-01.webp",
+      "status": "visual_review_required",
+      "inspection_note": "Если чеснок измельчается или входит в маринад, не изображать целые зубчики сверху.",
+      "instructions": "Попробуй, добавь соль и перец по вкусу.",
+      "auto_regenerate": false
+    },
+    {
+      "n": 431,
+      "id": "collection-vegetables-03-01",
+      "title": "Брокколи в духовке с чесноком и тимьяном",
+      "image": "photo-library/alice-ai-art/photos/0431-collection-vegetables-03-01.webp",
+      "status": "visual_review_required",
+      "inspection_note": "Если чеснок измельчается или входит в маринад, не изображать целые зубчики сверху.",
+      "instructions": "Проткни самые крупные кусочки вилкой, они должны быть мягкими.",
+      "auto_regenerate": false
+    },
+    {
+      "n": 441,
+      "id": "collection-vegetables-04-01",
+      "title": "Цветная капуста на противне с чесноком и тимьяном",
+      "image": "photo-library/alice-ai-art/photos/0441-collection-vegetables-04-01.webp",
+      "status": "visual_review_required",
+      "inspection_note": "Если чеснок измельчается или входит в маринад, не изображать целые зубчики сверху.",
+      "instructions": "Проткни самые крупные кусочки вилкой, они должны быть мягкими.",
+      "auto_regenerate": false
+    },
+    {
+      "n": 451,
+      "id": "collection-vegetables-05-01",
+      "title": "Баклажан запечённый с чесноком и тимьяном",
+      "image": "photo-library/alice-ai-art/photos/0451-collection-vegetables-05-01.webp",
+      "status": "visual_review_required",
+      "inspection_note": "Если чеснок измельчается или входит в маринад, не изображать целые зубчики сверху.",
+      "instructions": "Проткни самые крупные кусочки вилкой, они должны быть мягкими.",
+      "auto_regenerate": false
+    },
+    {
+      "n": 461,
+      "id": "collection-vegetables-06-01",
+      "title": "Тыква в духовке с чесноком и тимьяном",
+      "image": "photo-library/alice-ai-art/photos/0461-collection-vegetables-06-01.webp",
+      "status": "visual_review_required",
+      "inspection_note": "Если чеснок измельчается или входит в маринад, не изображать целые зубчики сверху.",
+      "instructions": "Проткни самые крупные кусочки вилкой, они должны быть мягкими.",
+      "auto_regenerate": false
+    },
+    {
+      "n": 471,
+      "id": "collection-vegetables-07-01",
+      "title": "Шампиньоны на сковороде с чесноком и тимьяном",
+      "image": "photo-library/alice-ai-art/photos/0471-collection-vegetables-07-01.webp",
+      "status": "visual_review_required",
+      "inspection_note": "Если чеснок измельчается или входит в маринад, не изображать целые зубчики сверху.",
+      "instructions": "Попробуй, добавь соль и перец по вкусу.",
+      "auto_regenerate": false
+    },
+    {
+      "n": 481,
+      "id": "collection-vegetables-08-01",
+      "title": "Стручковая фасоль с чесноком и тимьяном",
+      "image": "photo-library/alice-ai-art/photos/0481-collection-vegetables-08-01.webp",
+      "status": "visual_review_required",
+      "inspection_note": "Если чеснок измельчается или входит в маринад, не изображать целые зубчики сверху.",
+      "instructions": "Попробуй, добавь соль и перец по вкусу.",
+      "auto_regenerate": false
+    },
+    {
+      "n": 491,
+      "id": "collection-vegetables-09-01",
+      "title": "Морковь в медленном запекании с чесноком и тимьяном",
+      "image": "photo-library/alice-ai-art/photos/0491-collection-vegetables-09-01.webp",
+      "status": "visual_review_required",
+      "inspection_note": "Если чеснок измельчается или входит в маринад, не изображать целые зубчики сверху.",
+      "instructions": "Проткни самые крупные кусочки вилкой, они должны быть мягкими.",
+      "auto_regenerate": false
+    },
+    {
+      "n": 501,
+      "id": "collection-vegetables-10-01",
+      "title": "Сладкий перец запечённый с чесноком и тимьяном",
+      "image": "photo-library/alice-ai-art/photos/0501-collection-vegetables-10-01.webp",
+      "status": "visual_review_required",
+      "inspection_note": "Если чеснок измельчается или входит в маринад, не изображать целые зубчики сверху.",
+      "instructions": "Проткни самые крупные кусочки вилкой, они должны быть мягкими.",
+      "auto_regenerate": false
+    },
+    {
+      "n": 517,
+      "id": "collection-soup-01-09",
+      "title": "Томатный суп с шпинатом и чесноком",
+      "image": "photo-library/alice-ai-art/photos/0517-collection-soup-01-09.webp",
+      "status": "visual_review_required",
+      "inspection_note": "Если чеснок измельчается или входит в маринад, не изображать целые зубчики сверху.",
+      "instructions": "Посоли и поперчи по вкусу, при необходимости добавь немного горячей воды.",
+      "auto_regenerate": false
+    },
+    {
+      "n": 520,
+      "id": "collection-soup-02-02",
+      "title": "Картофельный крем-суп с чесноком и тимьяном",
+      "image": "photo-library/alice-ai-art/photos/0520-collection-soup-02-02.webp",
+      "status": "visual_review_required",
+      "inspection_note": "Если чеснок измельчается или входит в маринад, не изображать целые зубчики сверху.",
+      "instructions": "Посоли и поперчи по вкусу, при необходимости добавь немного горячей воды.",
+      "auto_regenerate": false
+    },
+    {
+      "n": 527,
+      "id": "collection-soup-02-09",
+      "title": "Картофельный крем-суп с шпинатом и чесноком",
+      "image": "photo-library/alice-ai-art/photos/0527-collection-soup-02-09.webp",
+      "status": "visual_review_required",
+      "inspection_note": "Если чеснок измельчается или входит в маринад, не изображать целые зубчики сверху.",
+      "instructions": "Посоли и поперчи по вкусу, при необходимости добавь немного горячей воды.",
+      "auto_regenerate": false
+    },
+    {
+      "n": 530,
+      "id": "collection-soup-03-02",
+      "title": "Морковный суп-пюре с чесноком и тимьяном",
+      "image": "photo-library/alice-ai-art/photos/0530-collection-soup-03-02.webp",
+      "status": "visual_review_required",
+      "inspection_note": "Если чеснок измельчается или входит в маринад, не изображать целые зубчики сверху.",
+      "instructions": "Посоли и поперчи по вкусу, при необходимости добавь немного горячей воды.",
+      "auto_regenerate": false
+    },
+    {
+      "n": 537,
+      "id": "collection-soup-03-09",
+      "title": "Морковный суп-пюре с шпинатом и чесноком",
+      "image": "photo-library/alice-ai-art/photos/0537-collection-soup-03-09.webp",
+      "status": "visual_review_required",
+      "inspection_note": "Если чеснок измельчается или входит в маринад, не изображать целые зубчики сверху.",
+      "instructions": "Посоли и поперчи по вкусу, при необходимости добавь немного горячей воды.",
+      "auto_regenerate": false
+    },
+    {
+      "n": 540,
+      "id": "collection-soup-04-02",
+      "title": "Суп из красной чечевицы с чесноком и тимьяном",
+      "image": "photo-library/alice-ai-art/photos/0540-collection-soup-04-02.webp",
+      "status": "visual_review_required",
+      "inspection_note": "Если чеснок измельчается или входит в маринад, не изображать целые зубчики сверху.",
+      "instructions": "Попробуй на соль и кислоту, перед подачей дай супу настояться 5 минут.",
+      "auto_regenerate": false
+    },
+    {
+      "n": 547,
+      "id": "collection-soup-04-09",
+      "title": "Суп из красной чечевицы с шпинатом и чесноком",
+      "image": "photo-library/alice-ai-art/photos/0547-collection-soup-04-09.webp",
+      "status": "visual_review_required",
+      "inspection_note": "Если чеснок измельчается или входит в маринад, не изображать целые зубчики сверху.",
+      "instructions": "Попробуй на соль и кислоту, перед подачей дай супу настояться 5 минут.",
+      "auto_regenerate": false
+    },
+    {
+      "n": 550,
+      "id": "collection-soup-05-02",
+      "title": "Тыквенный суп-пюре с чесноком и тимьяном",
+      "image": "photo-library/alice-ai-art/photos/0550-collection-soup-05-02.webp",
+      "status": "visual_review_required",
+      "inspection_note": "Если чеснок измельчается или входит в маринад, не изображать целые зубчики сверху.",
+      "instructions": "Посоли и поперчи по вкусу, при необходимости добавь немного горячей воды.",
+      "auto_regenerate": false
+    },
+    {
+      "n": 557,
+      "id": "collection-soup-05-09",
+      "title": "Тыквенный суп-пюре с шпинатом и чесноком",
+      "image": "photo-library/alice-ai-art/photos/0557-collection-soup-05-09.webp",
+      "status": "visual_review_required",
+      "inspection_note": "Если чеснок измельчается или входит в маринад, не изображать целые зубчики сверху.",
+      "instructions": "Посоли и поперчи по вкусу, при необходимости добавь немного горячей воды.",
+      "auto_regenerate": false
+    },
+    {
+      "n": 560,
+      "id": "collection-soup-06-02",
+      "title": "Суп с белой фасолью с чесноком и тимьяном",
+      "image": "photo-library/alice-ai-art/photos/0560-collection-soup-06-02.webp",
+      "status": "visual_review_required",
+      "inspection_note": "Если чеснок измельчается или входит в маринад, не изображать целые зубчики сверху.",
+      "instructions": "Попробуй на соль и кислоту, перед подачей дай супу настояться 5 минут.",
+      "auto_regenerate": false
+    },
+    {
+      "n": 567,
+      "id": "collection-soup-06-09",
+      "title": "Суп с белой фасолью с шпинатом и чесноком",
+      "image": "photo-library/alice-ai-art/photos/0567-collection-soup-06-09.webp",
+      "status": "visual_review_required",
+      "inspection_note": "Если чеснок измельчается или входит в маринад, не изображать целые зубчики сверху.",
+      "instructions": "Попробуй на соль и кислоту, перед подачей дай супу настояться 5 минут.",
+      "auto_regenerate": false
+    },
+    {
+      "n": 570,
+      "id": "collection-soup-07-02",
+      "title": "Крем-суп из цветной капусты с чесноком и тимьяном",
+      "image": "photo-library/alice-ai-art/photos/0570-collection-soup-07-02.webp",
+      "status": "visual_review_required",
+      "inspection_note": "Если чеснок измельчается или входит в маринад, не изображать целые зубчики сверху.",
+      "instructions": "Посоли и поперчи по вкусу, при необходимости добавь немного горячей воды.",
+      "auto_regenerate": false
+    },
+    {
+      "n": 577,
+      "id": "collection-soup-07-09",
+      "title": "Крем-суп из цветной капусты с шпинатом и чесноком",
+      "image": "photo-library/alice-ai-art/photos/0577-collection-soup-07-09.webp",
+      "status": "visual_review_required",
+      "inspection_note": "Если чеснок измельчается или входит в маринад, не изображать целые зубчики сверху.",
+      "instructions": "Посоли и поперчи по вкусу, при необходимости добавь немного горячей воды.",
+      "auto_regenerate": false
+    },
+    {
+      "n": 580,
+      "id": "collection-soup-08-02",
+      "title": "Грибной суп с чесноком и тимьяном",
+      "image": "photo-library/alice-ai-art/photos/0580-collection-soup-08-02.webp",
+      "status": "visual_review_required",
+      "inspection_note": "Если чеснок измельчается или входит в маринад, не изображать целые зубчики сверху.",
+      "instructions": "Попробуй на соль и кислоту, перед подачей дай супу настояться 5 минут.",
+      "auto_regenerate": false
+    },
+    {
+      "n": 587,
+      "id": "collection-soup-08-09",
+      "title": "Грибной суп с шпинатом и чесноком",
+      "image": "photo-library/alice-ai-art/photos/0587-collection-soup-08-09.webp",
+      "status": "visual_review_required",
+      "inspection_note": "Если чеснок измельчается или входит в маринад, не изображать целые зубчики сверху.",
+      "instructions": "Попробуй на соль и кислоту, перед подачей дай супу настояться 5 минут.",
+      "auto_regenerate": false
+    },
+    {
+      "n": 590,
+      "id": "collection-soup-09-02",
+      "title": "Овощной суп с цуккини с чесноком и тимьяном",
+      "image": "photo-library/alice-ai-art/photos/0590-collection-soup-09-02.webp",
+      "status": "visual_review_required",
+      "inspection_note": "Если чеснок измельчается или входит в маринад, не изображать целые зубчики сверху.",
+      "instructions": "Попробуй на соль и кислоту, перед подачей дай супу настояться 5 минут.",
+      "auto_regenerate": false
+    },
+    {
+      "n": 597,
+      "id": "collection-soup-09-09",
+      "title": "Овощной суп с цуккини с шпинатом и чесноком",
+      "image": "photo-library/alice-ai-art/photos/0597-collection-soup-09-09.webp",
+      "status": "visual_review_required",
+      "inspection_note": "Если чеснок измельчается или входит в маринад, не изображать целые зубчики сверху.",
+      "instructions": "Попробуй на соль и кислоту, перед подачей дай супу настояться 5 минут.",
+      "auto_regenerate": false
+    },
+    {
+      "n": 600,
+      "id": "collection-soup-10-02",
+      "title": "Чечевичный суп с овощами с чесноком и тимьяном",
+      "image": "photo-library/alice-ai-art/photos/0600-collection-soup-10-02.webp",
+      "status": "visual_review_required",
+      "inspection_note": "Если чеснок измельчается или входит в маринад, не изображать целые зубчики сверху.",
+      "instructions": "Попробуй на соль и кислоту, перед подачей дай супу настояться 5 минут.",
+      "auto_regenerate": false
+    },
+    {
+      "n": 607,
+      "id": "collection-soup-10-09",
+      "title": "Чечевичный суп с овощами с шпинатом и чесноком",
+      "image": "photo-library/alice-ai-art/photos/0607-collection-soup-10-09.webp",
+      "status": "visual_review_required",
+      "inspection_note": "Если чеснок измельчается или входит в маринад, не изображать целые зубчики сверху.",
+      "instructions": "Попробуй на соль и кислоту, перед подачей дай супу настояться 5 минут.",
+      "auto_regenerate": false
+    },
+    {
+      "n": 616,
+      "id": "collection-salads-01-10",
+      "title": "Салат из молодой зелени с йогуртом и чесноком",
+      "image": "photo-library/alice-ai-art/photos/0616-collection-salads-01-10.webp",
+      "status": "visual_review_required",
+      "inspection_note": "Если чеснок измельчается или входит в маринад, не изображать целые зубчики сверху.",
+      "instructions": "Перемешай, попробуй на соль и подай, пока зелень свежая.",
+      "auto_regenerate": false
+    },
+    {
+      "n": 626,
+      "id": "collection-salads-02-10",
+      "title": "Салат с киноа с йогуртом и чесноком",
+      "image": "photo-library/alice-ai-art/photos/0626-collection-salads-02-10.webp",
+      "status": "visual_review_required",
+      "inspection_note": "Если чеснок измельчается или входит в маринад, не изображать целые зубчики сверху.",
+      "instructions": "Посоли по вкусу, аккуратно перемешай и подай.",
+      "auto_regenerate": false
+    },
+    {
+      "n": 636,
+      "id": "collection-salads-03-10",
+      "title": "Салат с нутом с йогуртом и чесноком",
+      "image": "photo-library/alice-ai-art/photos/0636-collection-salads-03-10.webp",
+      "status": "visual_review_required",
+      "inspection_note": "Если чеснок измельчается или входит в маринад, не изображать целые зубчики сверху.",
+      "instructions": "Перемешай, попробуй на соль и подай, пока зелень свежая.",
+      "auto_regenerate": false
+    },
+    {
+      "n": 646,
+      "id": "collection-salads-04-10",
+      "title": "Салат с булгуром с йогуртом и чесноком",
+      "image": "photo-library/alice-ai-art/photos/0646-collection-salads-04-10.webp",
+      "status": "visual_review_required",
+      "inspection_note": "Если чеснок измельчается или входит в маринад, не изображать целые зубчики сверху.",
+      "instructions": "Посоли по вкусу, аккуратно перемешай и подай.",
+      "auto_regenerate": false
+    },
+    {
+      "n": 656,
+      "id": "collection-salads-05-10",
+      "title": "Салат из молодой капусты с йогуртом и чесноком",
+      "image": "photo-library/alice-ai-art/photos/0656-collection-salads-05-10.webp",
+      "status": "visual_review_required",
+      "inspection_note": "Если чеснок измельчается или входит в маринад, не изображать целые зубчики сверху.",
+      "instructions": "Перемешай, попробуй на соль и подай, пока зелень свежая.",
+      "auto_regenerate": false
+    },
+    {
+      "n": 666,
+      "id": "collection-salads-06-10",
+      "title": "Салат из огурцов и томатов с йогуртом и чесноком",
+      "image": "photo-library/alice-ai-art/photos/0666-collection-salads-06-10.webp",
+      "status": "visual_review_required",
+      "inspection_note": "Если чеснок измельчается или входит в маринад, не изображать целые зубчики сверху.",
+      "instructions": "Перемешай, попробуй на соль и подай, пока зелень свежая.",
+      "auto_regenerate": false
+    },
+    {
+      "n": 676,
+      "id": "collection-salads-07-10",
+      "title": "Салат с печёными овощами с йогуртом и чесноком",
+      "image": "photo-library/alice-ai-art/photos/0676-collection-salads-07-10.webp",
+      "status": "visual_review_required",
+      "inspection_note": "Если чеснок измельчается или входит в маринад, не изображать целые зубчики сверху.",
+      "instructions": "Попробуй на соль и подай чуть тёплым.",
+      "auto_regenerate": false
+    },
+    {
+      "n": 686,
+      "id": "collection-salads-08-10",
+      "title": "Салат из чечевицы с йогуртом и чесноком",
+      "image": "photo-library/alice-ai-art/photos/0686-collection-salads-08-10.webp",
+      "status": "visual_review_required",
+      "inspection_note": "Если чеснок измельчается или входит в маринад, не изображать целые зубчики сверху.",
+      "instructions": "Перемешай, попробуй на соль и подай, пока зелень свежая.",
+      "auto_regenerate": false
+    },
+    {
+      "n": 696,
+      "id": "collection-salads-09-10",
+      "title": "Салат с рукколой с йогуртом и чесноком",
+      "image": "photo-library/alice-ai-art/photos/0696-collection-salads-09-10.webp",
+      "status": "visual_review_required",
+      "inspection_note": "Если чеснок измельчается или входит в маринад, не изображать целые зубчики сверху.",
+      "instructions": "Перемешай, попробуй на соль и подай, пока зелень свежая.",
+      "auto_regenerate": false
+    },
+    {
+      "n": 706,
+      "id": "collection-salads-10-10",
+      "title": "Салат из свёклы с йогуртом и чесноком",
+      "image": "photo-library/alice-ai-art/photos/0706-collection-salads-10-10.webp",
+      "status": "visual_review_required",
+      "inspection_note": "Если чеснок измельчается или входит в маринад, не изображать целые зубчики сверху.",
+      "instructions": "Перемешай, попробуй на соль и подай, пока зелень свежая.",
+      "auto_regenerate": false
+    },
+    {
+      "n": 715,
+      "id": "collection-pastry-02-01",
+      "title": "Мини-галеты с яблоком и корицей",
+      "image": "photo-library/alice-ai-art/photos/0715-collection-pastry-02-01.webp",
+      "status": "visual_review_required",
+      "inspection_note": "Сверить способ нарезки и точное положение яблока: дольки, мелкие кусочки или смесь; не класть поверх мяса без указания.",
+      "instructions": "Выпекай 18–25 минут до золотистого цвета и пропечённой основы. Дай немного остыть.",
+      "auto_regenerate": false
+    },
+    {
+      "n": 725,
+      "id": "collection-pastry-03-01",
+      "title": "Корзиночки с яблоком и корицей",
+      "image": "photo-library/alice-ai-art/photos/0725-collection-pastry-03-01.webp",
+      "status": "visual_review_required",
+      "inspection_note": "Сверить способ нарезки и точное положение яблока: дольки, мелкие кусочки или смесь; не класть поверх мяса без указания.",
+      "instructions": "Выпекай 18–25 минут до золотистого цвета и пропечённой основы. Дай немного остыть.",
+      "auto_regenerate": false
+    },
+    {
+      "n": 735,
+      "id": "collection-pastry-04-01",
+      "title": "Конвертики с яблоком и корицей",
+      "image": "photo-library/alice-ai-art/photos/0735-collection-pastry-04-01.webp",
+      "status": "visual_review_required",
+      "inspection_note": "Сверить способ нарезки и точное положение яблока: дольки, мелкие кусочки или смесь; не класть поверх мяса без указания.",
+      "instructions": "Выпекай 18–25 минут до золотистого цвета и пропечённой основы. Дай немного остыть.",
+      "auto_regenerate": false
+    },
+    {
+      "n": 745,
+      "id": "collection-pastry-05-01",
+      "title": "Открытые тарты с яблоком и корицей",
+      "image": "photo-library/alice-ai-art/photos/0745-collection-pastry-05-01.webp",
+      "status": "visual_review_required",
+      "inspection_note": "Сверить способ нарезки и точное положение яблока: дольки, мелкие кусочки или смесь; не класть поверх мяса без указания.",
+      "instructions": "Выпекай 18–25 минут до золотистого цвета и пропечённой основы. Дай немного остыть.",
+      "auto_regenerate": false
+    },
+    {
+      "n": 755,
+      "id": "collection-pastry-06-01",
+      "title": "Маффины с яблоком и корицей",
+      "image": "photo-library/alice-ai-art/photos/0755-collection-pastry-06-01.webp",
+      "status": "visual_review_required",
+      "inspection_note": "Сверить способ нарезки и точное положение яблока: дольки, мелкие кусочки или смесь; не класть поверх мяса без указания.",
+      "instructions": "Оставь изделия в формах на 5 минут, затем переложи на решётку.",
+      "auto_regenerate": false
+    },
+    {
+      "n": 765,
+      "id": "collection-pastry-07-01",
+      "title": "Кексы с яблоком и корицей",
+      "image": "photo-library/alice-ai-art/photos/0765-collection-pastry-07-01.webp",
+      "status": "visual_review_required",
+      "inspection_note": "Сверить способ нарезки и точное положение яблока: дольки, мелкие кусочки или смесь; не класть поверх мяса без указания.",
+      "instructions": "Оставь изделия в формах на 5 минут, затем переложи на решётку.",
+      "auto_regenerate": false
+    },
+    {
+      "n": 775,
+      "id": "collection-pastry-08-01",
+      "title": "Бисквитные мини-пироги с яблоком и корицей",
+      "image": "photo-library/alice-ai-art/photos/0775-collection-pastry-08-01.webp",
+      "status": "visual_review_required",
+      "inspection_note": "Сверить способ нарезки и точное положение яблока: дольки, мелкие кусочки или смесь; не класть поверх мяса без указания.",
+      "instructions": "Оставь изделия в формах на 5 минут, затем переложи на решётку.",
+      "auto_regenerate": false
+    },
+    {
+      "n": 785,
+      "id": "collection-pastry-09-01",
+      "title": "Домашние капкейки с яблоком и корицей",
+      "image": "photo-library/alice-ai-art/photos/0785-collection-pastry-09-01.webp",
+      "status": "visual_review_required",
+      "inspection_note": "Сверить способ нарезки и точное положение яблока: дольки, мелкие кусочки или смесь; не класть поверх мяса без указания.",
+      "instructions": "Оставь изделия в формах на 5 минут, затем переложи на решётку.",
+      "auto_regenerate": false
+    },
+    {
+      "n": 795,
+      "id": "collection-pastry-10-01",
+      "title": "Нежные пирожные в формочках с яблоком и корицей",
+      "image": "photo-library/alice-ai-art/photos/0795-collection-pastry-10-01.webp",
+      "status": "visual_review_required",
+      "inspection_note": "Сверить способ нарезки и точное положение яблока: дольки, мелкие кусочки или смесь; не класть поверх мяса без указания.",
+      "instructions": "Оставь изделия в формах на 5 минут, затем переложи на решётку.",
+      "auto_regenerate": false
+    },
+    {
+      "n": 883,
+      "id": "collection-dessert-09-01",
+      "title": "Запечённые яблоки с клубникой и ванилью",
+      "image": "photo-library/alice-ai-art/photos/0883-collection-dessert-09-01.webp",
+      "status": "visual_review_required",
+      "inspection_note": "Сверить способ нарезки и точное положение яблока: дольки, мелкие кусочки или смесь; не класть поверх мяса без указания.",
+      "instructions": "Остуди несколько минут, затем подай тёплым.",
+      "auto_regenerate": false
+    },
+    {
+      "n": 884,
+      "id": "collection-dessert-09-02",
+      "title": "Запечённые яблоки с малиной и шоколадом",
+      "image": "photo-library/alice-ai-art/photos/0884-collection-dessert-09-02.webp",
+      "status": "visual_review_required",
+      "inspection_note": "Сверить способ нарезки и точное положение яблока: дольки, мелкие кусочки или смесь; не класть поверх мяса без указания.",
+      "instructions": "Остуди несколько минут, затем подай тёплым.",
+      "auto_regenerate": false
+    },
+    {
+      "n": 885,
+      "id": "collection-dessert-09-03",
+      "title": "Запечённые яблоки с манго и лаймом",
+      "image": "photo-library/alice-ai-art/photos/0885-collection-dessert-09-03.webp",
+      "status": "visual_review_required",
+      "inspection_note": "Сверить способ нарезки и точное положение яблока: дольки, мелкие кусочки или смесь; не класть поверх мяса без указания.",
+      "instructions": "Остуди несколько минут, затем подай тёплым.",
+      "auto_regenerate": false
+    },
+    {
+      "n": 886,
+      "id": "collection-dessert-09-04",
+      "title": "Запечённые яблоки с вишней и миндалём",
+      "image": "photo-library/alice-ai-art/photos/0886-collection-dessert-09-04.webp",
+      "status": "visual_review_required",
+      "inspection_note": "Сверить способ нарезки и точное положение яблока: дольки, мелкие кусочки или смесь; не класть поверх мяса без указания.",
+      "instructions": "Остуди несколько минут, затем подай тёплым.",
+      "auto_regenerate": false
+    },
+    {
+      "n": 887,
+      "id": "collection-dessert-09-05",
+      "title": "Запечённые яблоки с грушей и мёдом",
+      "image": "photo-library/alice-ai-art/photos/0887-collection-dessert-09-05.webp",
+      "status": "visual_review_required",
+      "inspection_note": "Сверить способ нарезки и точное положение яблока: дольки, мелкие кусочки или смесь; не класть поверх мяса без указания.",
+      "instructions": "Остуди несколько минут, затем подай тёплым.",
+      "auto_regenerate": false
+    },
+    {
+      "n": 888,
+      "id": "collection-dessert-09-06",
+      "title": "Запечённые яблоки с апельсином и корицей",
+      "image": "photo-library/alice-ai-art/photos/0888-collection-dessert-09-06.webp",
+      "status": "visual_review_required",
+      "inspection_note": "Сверить способ нарезки и точное положение яблока: дольки, мелкие кусочки или смесь; не класть поверх мяса без указания.",
+      "instructions": "Остуди несколько минут, затем подай тёплым.",
+      "auto_regenerate": false
+    },
+    {
+      "n": 889,
+      "id": "collection-dessert-09-07",
+      "title": "Запечённые яблоки с черникой и лимоном",
+      "image": "photo-library/alice-ai-art/photos/0889-collection-dessert-09-07.webp",
+      "status": "visual_review_required",
+      "inspection_note": "Сверить способ нарезки и точное положение яблока: дольки, мелкие кусочки или смесь; не класть поверх мяса без указания.",
+      "instructions": "Остуди несколько минут, затем подай тёплым.",
+      "auto_regenerate": false
+    },
+    {
+      "n": 890,
+      "id": "collection-dessert-09-08",
+      "title": "Запечённые яблоки с бананом и карамелью",
+      "image": "photo-library/alice-ai-art/photos/0890-collection-dessert-09-08.webp",
+      "status": "visual_review_required",
+      "inspection_note": "Сверить способ нарезки и точное положение яблока: дольки, мелкие кусочки или смесь; не класть поверх мяса без указания.",
+      "instructions": "Остуди несколько минут, затем подай тёплым.",
+      "auto_regenerate": false
+    },
+    {
+      "n": 891,
+      "id": "collection-dessert-09-09",
+      "title": "Запечённые яблоки с кокосом и ананасом",
+      "image": "photo-library/alice-ai-art/photos/0891-collection-dessert-09-09.webp",
+      "status": "visual_review_required",
+      "inspection_note": "Сверить способ нарезки и точное положение яблока: дольки, мелкие кусочки или смесь; не класть поверх мяса без указания.",
+      "instructions": "Остуди несколько минут, затем подай тёплым.",
+      "auto_regenerate": false
+    },
+    {
+      "n": 892,
+      "id": "collection-dessert-09-10",
+      "title": "Запечённые яблоки с фисташками и малиной",
+      "image": "photo-library/alice-ai-art/photos/0892-collection-dessert-09-10.webp",
+      "status": "visual_review_required",
+      "inspection_note": "Сверить способ нарезки и точное положение яблока: дольки, мелкие кусочки или смесь; не класть поверх мяса без указания.",
+      "instructions": "Остуди несколько минут, затем подай тёплым.",
+      "auto_regenerate": false
+    },
+    {
+      "n": 921,
+      "id": "collection-breakfast-03-01",
+      "title": "Фриттата в духовке с шпинатом и фетой",
+      "image": "photo-library/alice-ai-art/photos/0921-collection-breakfast-03-01.webp",
+      "status": "visual_review_required",
+      "inspection_note": "Фриттата представляет собой цельный запечённый омлет, не добавлять глазунью и отдельные желтки сверху.",
+      "instructions": "Залей смесью и запекай 12–16 минут до схватывания центра.",
+      "auto_regenerate": false
+    },
+    {
+      "n": 922,
+      "id": "collection-breakfast-03-02",
+      "title": "Фриттата в духовке с томатами и базиликом",
+      "image": "photo-library/alice-ai-art/photos/0922-collection-breakfast-03-02.webp",
+      "status": "visual_review_required",
+      "inspection_note": "Фриттата представляет собой цельный запечённый омлет, не добавлять глазунью и отдельные желтки сверху.",
+      "instructions": "Залей смесью и запекай 12–16 минут до схватывания центра.",
+      "auto_regenerate": false
+    },
+    {
+      "n": 923,
+      "id": "collection-breakfast-03-03",
+      "title": "Фриттата в духовке с грибами и сыром",
+      "image": "photo-library/alice-ai-art/photos/0923-collection-breakfast-03-03.webp",
+      "status": "visual_review_required",
+      "inspection_note": "Фриттата представляет собой цельный запечённый омлет, не добавлять глазунью и отдельные желтки сверху.",
+      "instructions": "Залей смесью и запекай 12–16 минут до схватывания центра.",
+      "auto_regenerate": false
+    },
+    {
+      "n": 924,
+      "id": "collection-breakfast-03-04",
+      "title": "Фриттата в духовке с перцем и зелёным луком",
+      "image": "photo-library/alice-ai-art/photos/0924-collection-breakfast-03-04.webp",
+      "status": "visual_review_required",
+      "inspection_note": "Фриттата представляет собой цельный запечённый омлет, не добавлять глазунью и отдельные желтки сверху.",
+      "instructions": "Залей смесью и запекай 12–16 минут до схватывания центра.",
+      "auto_regenerate": false
+    },
+    {
+      "n": 925,
+      "id": "collection-breakfast-03-05",
+      "title": "Фриттата в духовке с лососем и укропом",
+      "image": "photo-library/alice-ai-art/photos/0925-collection-breakfast-03-05.webp",
+      "status": "visual_review_required",
+      "inspection_note": "Фриттата представляет собой цельный запечённый омлет, не добавлять глазунью и отдельные желтки сверху.",
+      "instructions": "Залей смесью и запекай 12–16 минут до схватывания центра.",
+      "auto_regenerate": false
+    },
+    {
+      "n": 926,
+      "id": "collection-breakfast-03-06",
+      "title": "Фриттата в духовке с песто и вялеными томатами",
+      "image": "photo-library/alice-ai-art/photos/0926-collection-breakfast-03-06.webp",
+      "status": "visual_review_required",
+      "inspection_note": "Фриттата представляет собой цельный запечённый омлет, не добавлять глазунью и отдельные желтки сверху.",
+      "instructions": "Залей смесью и запекай 12–16 минут до схватывания центра.",
+      "auto_regenerate": false
+    },
+    {
+      "n": 927,
+      "id": "collection-breakfast-03-07",
+      "title": "Фриттата в духовке с кукурузой и авокадо",
+      "image": "photo-library/alice-ai-art/photos/0927-collection-breakfast-03-07.webp",
+      "status": "visual_review_required",
+      "inspection_note": "Фриттата представляет собой цельный запечённый омлет, не добавлять глазунью и отдельные желтки сверху.",
+      "instructions": "Залей смесью и запекай 12–16 минут до схватывания центра.",
+      "auto_regenerate": false
+    },
+    {
+      "n": 928,
+      "id": "collection-breakfast-03-08",
+      "title": "Фриттата в духовке с цуккини и петрушкой",
+      "image": "photo-library/alice-ai-art/photos/0928-collection-breakfast-03-08.webp",
+      "status": "visual_review_required",
+      "inspection_note": "Фриттата представляет собой цельный запечённый омлет, не добавлять глазунью и отдельные желтки сверху.",
+      "instructions": "Залей смесью и запекай 12–16 минут до схватывания центра.",
+      "auto_regenerate": false
+    },
+    {
+      "n": 929,
+      "id": "collection-breakfast-03-09",
+      "title": "Фриттата в духовке с оливками и фетой",
+      "image": "photo-library/alice-ai-art/photos/0929-collection-breakfast-03-09.webp",
+      "status": "visual_review_required",
+      "inspection_note": "Фриттата представляет собой цельный запечённый омлет, не добавлять глазунью и отдельные желтки сверху.",
+      "instructions": "Залей смесью и запекай 12–16 минут до схватывания центра.",
+      "auto_regenerate": false
+    },
+    {
+      "n": 930,
+      "id": "collection-breakfast-03-10",
+      "title": "Фриттата в духовке с авокадо и лаймом",
+      "image": "photo-library/alice-ai-art/photos/0930-collection-breakfast-03-10.webp",
+      "status": "visual_review_required",
+      "inspection_note": "Фриттата представляет собой цельный запечённый омлет, не добавлять глазунью и отдельные желтки сверху.",
+      "instructions": "Залей смесью и запекай 12–16 минут до схватывания центра.",
+      "auto_regenerate": false
+    },
+    {
+      "n": 953,
+      "id": "collection-breakfast-06-03",
+      "title": "Панкейки с яблоком и мёдом",
+      "image": "photo-library/alice-ai-art/photos/0953-collection-breakfast-06-03.webp",
+      "status": "visual_review_required",
+      "inspection_note": "Сверить способ нарезки и точное положение яблока: дольки, мелкие кусочки или смесь; не класть поверх мяса без указания.",
+      "instructions": "Сложи стопкой и добавь выбранный топпинг.",
+      "auto_regenerate": false
+    },
+    {
+      "n": 963,
+      "id": "collection-breakfast-07-03",
+      "title": "Овсяная каша с яблоком и мёдом",
+      "image": "photo-library/alice-ai-art/photos/0963-collection-breakfast-07-03.webp",
+      "status": "visual_review_required",
+      "inspection_note": "Сверить способ нарезки и точное положение яблока: дольки, мелкие кусочки или смесь; не класть поверх мяса без указания.",
+      "instructions": "Разложи по тарелкам и добавь выбранный топпинг.",
+      "auto_regenerate": false
+    },
+    {
+      "n": 973,
+      "id": "collection-breakfast-08-03",
+      "title": "Творожная запеканка с яблоком и мёдом",
+      "image": "photo-library/alice-ai-art/photos/0973-collection-breakfast-08-03.webp",
+      "status": "visual_review_required",
+      "inspection_note": "Сверить способ нарезки и точное положение яблока: дольки, мелкие кусочки или смесь; не класть поверх мяса без указания.",
+      "instructions": "Дай запеканке постоять 10 минут перед нарезкой и подачей.",
+      "auto_regenerate": false
+    },
+    {
+      "n": 983,
+      "id": "collection-breakfast-09-03",
+      "title": "Йогурт с гранолой с яблоком и мёдом",
+      "image": "photo-library/alice-ai-art/photos/0983-collection-breakfast-09-03.webp",
+      "status": "visual_review_required",
+      "inspection_note": "Сверить способ нарезки и точное положение яблока: дольки, мелкие кусочки или смесь; не класть поверх мяса без указания.",
+      "instructions": "Добавь топпинг непосредственно перед подачей.",
+      "auto_regenerate": false
+    },
+    {
+      "n": 993,
+      "id": "collection-breakfast-10-03",
+      "title": "Французские тосты с яблоком и мёдом",
+      "image": "photo-library/alice-ai-art/photos/0993-collection-breakfast-10-03.webp",
+      "status": "visual_review_required",
+      "inspection_note": "Сверить способ нарезки и точное положение яблока: дольки, мелкие кусочки или смесь; не класть поверх мяса без указания.",
+      "instructions": "Сразу добавь выбранный топпинг.",
+      "auto_regenerate": false
+    }
+  ],
+  "flagged_count": 125,
+  "owner_reported_matches": 6
+}
