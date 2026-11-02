@@ -7,7 +7,7 @@ import unittest
 ROOT = Path(__file__).resolve().parents[1]
 DATA = json.loads((ROOT / "music/verified-bpm-editorial.json").read_text(encoding="utf-8"))
 BANDS = {"cooking": (120, float("inf")), "dinner": (80, 100), "continue": (0, 80)}
-PHASES = {"cooking": "kitchen", "dinner": "dinner", "continue": "continue"}
+PHASES = {"cooking": "kitchen", "dinner": "dinner", "continue": "after"}
 
 class MusicBpmEditorialTests(unittest.TestCase):
     def test_every_sourced_track_meets_required_band(self):
