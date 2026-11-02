@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /** Editorial and rights release preflight. No image download or hash computation. */
-import { readFile, stat } from 'node:fs/promises';
+import { open, readFile, stat } from 'node:fs/promises';
 import { join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
@@ -16,7 +16,16 @@ export async function collectExistingEvidenceFiles(records, root = '.') {
     if (!isEvidenceRef(ref)) continue;
     try {
       const info = await stat(join(root, ref));
-      if (info.isFile() && info.size > 0) existing.add(ref);
+      if (!info.isFile() || info.size < 12) continue;
+      const handle = await open(join(root, ref), 'r');
+      try {
+        const header = Buffer.alloc(12);
+        const {bytesRead} = await handle.read(header, 0, 12, 0);
+        const png = ref.toLowerCase().endsWith('.png') && header.subarray(0, 8).equals(Buffer.from([137,80,78,71,13,10,26,10]));
+        const jpeg = /\.jpe?g$/i.test(ref) && header[0] === 0xff && header[1] === 0xd8 && header[2] === 0xff;
+        const webp = /\.webp$/i.test(ref) && header.toString('ascii', 0, 4) === 'RIFF' && header.toString('ascii', 8, 12) === 'WEBP';
+        if (bytesRead === 12 && (png || jpeg || webp)) existing.add(ref);
+      } finally { await handle.close(); }
     } catch { /* A missing or unreadable file is never evidence. */ }
   }
   return existing;
