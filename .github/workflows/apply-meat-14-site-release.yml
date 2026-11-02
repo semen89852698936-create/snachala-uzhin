@@ -5,6 +5,7 @@ on:
       - release/meat-14-photos-20261103
     paths:
       - 'scripts/apply_meat_14_site_release.py'
+      - 'scripts/verify-1001-photo-links.py'
       - '.github/workflows/apply-meat-14-site-release.yml'
 permissions:
   contents: write
