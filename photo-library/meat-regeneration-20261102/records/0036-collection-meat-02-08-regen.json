@@ -1,0 +1,20 @@
+{
+  "n": 36,
+  "recipe_id": "collection-meat-02-08",
+  "title": "Свиная вырезка в духовке с сливками и зелёным перцем",
+  "prompt": "Фотореалистичная фотография ГОТОВОГО блюда: Свиная вырезка в духовке с сливками и зелёным перцем. Ингредиенты: Вырезка свиная, Сливки 20%, Перец зелёный горошком. Запечённая свиная вырезка со сливочным соусом и зелёным перцем, без посторонних предметов. Аккуратная ресторанная подача на светлой керамике; мягкий тёплый свет, крупный план 3/4. Без сырого мяса, текста и логотипов.",
+  "original_live_path": "/assets/recipes-ai/0036-collection-meat-02-08.webp",
+  "original_git_blob_sha": "c89f94b1f32ab1bbe0d2071d09d310982de4b02b",
+  "path": "photo-library/meat-regeneration-20261102/photos/0036-collection-meat-02-08-regen.webp",
+  "sha256": "7d455b365f4ba630c198e02cc3f7db84fdc6ec103c4f23eb994e986d6a44f4b1",
+  "bytes": 69388,
+  "size": [
+    1200,
+    900
+  ],
+  "model": "aliceai-image-art-3.0",
+  "created_at": "2026-11-02T20:59:45+00:00",
+  "status": "generated_candidate_unpublished",
+  "approved_for_publication": false,
+  "site_updated": false
+}
