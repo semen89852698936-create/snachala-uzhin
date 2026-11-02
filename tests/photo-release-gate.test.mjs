@@ -175,3 +175,33 @@ test('visual evidence must be a local, existing image with matching file signatu
     await rm(root, {recursive: true, force: true});
   }
 });
+
+
+test('license terms must come from the official licensor, not an unrelated HTTPS page', () => {
+  const {manifest, ledger} = fixtures();
+  const candidate = valid(manifest.sources[0]);
+  candidate.license_evidence_url = 'https://example.org/license/by-sa/4.0';
+  ledger.release_candidates.push(candidate);
+  const result = auditWithEvidence(manifest, ledger);
+  assert.equal(result.cleared_for_editorial_release, 0);
+  assert.match(result.errors[0], /official license terms page/);
+});
+
+test('the same visual evidence image cannot clear two distinct recipe photos', () => {
+  const {manifest, ledger} = fixtures();
+  ledger.release_candidates.push(valid(manifest.sources[0]), valid(manifest.sources[1]));
+  const result = auditWithEvidence(manifest, ledger);
+  assert.equal(result.cleared_for_editorial_release, 0);
+  assert.equal(result.errors.length, 2);
+  assert.ok(result.errors.every(error => error.includes('visual_evidence_ref reused')));
+});
+
+test('license terms URLs cannot disguise unrelated paths or domains', () => {
+  const {manifest, ledger} = fixtures();
+  const candidate = valid(manifest.sources[0]);
+  candidate.license_evidence_url = 'https://creativecommons.org/licenses/by-sa/4.0-fake';
+  ledger.release_candidates.push(candidate);
+  assert.match(auditWithEvidence(manifest, ledger).errors[0], /official license terms page/);
+  candidate.license_evidence_url = 'https://creativecommons.org.evil.test/licenses/by-sa/4.0';
+  assert.match(auditWithEvidence(manifest, ledger).errors[0], /official license terms page/);
+});
