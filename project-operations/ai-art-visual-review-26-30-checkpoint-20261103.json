@@ -1,0 +1,71 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-03",
+  "project": "snachala-uzhin",
+  "draft_pr": "https://github.com/semen89852698936-create/snachala-uzhin/pull/40",
+  "branch": "photo-library/ai-visual-review-26-30-20261103",
+  "base_main_sha": "1ad94f46a2ebe7524bb957c5a5f21754a94e9604",
+  "review_and_test_commit_sha": "dd229720037c149acc7642a76f590231fbdcd9cb",
+  "changed_files": [
+    "review/ai-art-twentysix-to-thirty-visual-triage-20261103.json",
+    "photo-library/ai-art-replacement-briefs-26-30-20261103.json",
+    "tests/ai-art-twentysix-to-thirty-review.test.cjs",
+    ".github/workflows/verify-ai-visual-review-26-30.yml",
+    "project-operations/ai-art-visual-review-26-30-checkpoint-20261103.json"
+  ],
+  "verified_work": [
+    "Read current main project-operations/registry.json and draft PR #12 CURRENT_STATE.md, plus half-hour archive checkpoint and review queue.",
+    "Read current AI photo map and recipe-photo-registry.csv; physically inspected current main AI WebP #26-30 via base64 GitHub file retrieval, not search illustrations.",
+    "Source-pinned 5 physical Git blob SHAs, titles, image paths, and editorial observations; avoided repeat SHA-256 and dimension audit.",
+    "Classified #26 and #30 rejected visual mismatches; #28 needs culinary review; #27 and #29 are preliminary candidates only.",
+    "Prepared replacement briefs for #26 and #30 without creating images or authorizing spending.",
+    "Added three offline Node tests and GitHub Actions workflow; both push and pull_request checks succeeded."
+  ],
+  "tests": [
+    {
+      "url": "https://github.com/semen89852698936-create/snachala-uzhin/actions/runs/41539222205",
+      "event": "push",
+      "status": "success",
+      "tested_sha": "dd229720037c149acc7642a76f590231fbdcd9cb"
+    },
+    {
+      "url": "https://github.com/semen89852698936-create/snachala-uzhin/actions/runs/41539242223",
+      "event": "pull_request",
+      "status": "success",
+      "tested_sha": "dd229720037c149acc7642a76f590231fbdcd9cb"
+    }
+  ],
+  "counts": {
+    "current_ai_photo_map_total": 1001,
+    "visually_checked_this_run": 5,
+    "rejected_this_run": 2,
+    "needs_culinary_review_this_run": 1,
+    "preliminary_candidates_this_run": 2,
+    "new_physical_photos": 0,
+    "individual_rights_cleared_this_run": 0,
+    "publication_approvals_this_run": 0
+  },
+  "scope_limits": [
+    "Recipe IDs and titles cross-checked against CSV, but full ingredients and cooking steps in 2.7MB HTML catalog were not independently parsed.",
+    "Visible food items cannot conclusively establish ingredient identity, food safety or internal cooking temperature.",
+    "Prior review reports #1-25 reside in separate draft PRs and are not automatically merged into this branch.",
+    "Physical WebP exists in main but production delivery for #26-30 was not independently browser-verified."
+  ],
+  "vercel_read_only": {
+    "project": "snachala-uzhin-preview",
+    "latest_listed_ready_deployment": "dpl_AvrmjKZugamk7q9zmfzdzHLBJ6e4",
+    "latest_listed_sha": "1d00dec46f65a84f13c6bf37d89fab366522e05e",
+    "latest_listed_target": null,
+    "explicit_production_ready_deployment": "dpl_5GCmpxjRSPWpAYYaP89kNai1eFkC",
+    "explicit_production_sha": "819894450686ce5d5c5a0b1a7058218debd441e3",
+    "note": "READY does not prove production domain routing, visual correctness or owner approval."
+  },
+  "blockers": [
+    "Two rejected photos need replacement assets and full ingredient cross-check; no paid regeneration authorized.",
+    "Individual commercial rights and owner approval remain unverified.",
+    "Main .github/workflows/yandex-ai-1001.yml has active cron '7,17,27,37,47,57 * * * *' and schedule-conditioned produce job with PHOTO_COST_APPROVED=true; PR #16 safety change not merged.",
+    "PR #12 half-hour archive cron '7,37 * * * *' not active until merge; no merge authorized."
+  ],
+  "next_safe_task": "Review actual current AI WebP #31-35 and full recipe ingredient details where obtainable; source-pin Git blobs, classify mismatches, prepare replacement briefs, add offline tests in an independent draft PR; do not merge or publish.",
+  "constraints": "No PR merges, production changes, paid API calls, secret/access changes, workflow dispatch, or schedule changes."
+}
