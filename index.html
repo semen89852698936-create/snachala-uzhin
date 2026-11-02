@@ -1135,10 +1135,51 @@ const EVENING_MOODS={
  cozy:{name:'Уютный',description:'Пледы подождут. Сначала накроем стол и сделаем этот вечер тёплым.',menus:{
  quick:['greek-salad','chickpeas'],relaxed:['greek-salad','chickpeas','baked-apples'],long:['tomato-soup','chicken-lemon','chocolate-cake']}}
 };
+// Moscow calendar day is shared by all visitors, regardless of VPN/device timezone.
+// Menus change once at 00:00 MSK, not randomly whenever the page refreshes.
+const EVENING_DAILY_CATEGORIES={
+ tender:['fish','pasta'], spark:['meat','poultry'], play:['pasta','vegetables'], cozy:['poultry','vegetables']
+};
+const EVENING_MOODS_ORDER=['tender','spark','play','cozy'];
+const EVENING_TIME_ORDER=['quick','relaxed','long'];
+let eveningDailyCache=null;
+function eveningMoscowDay(){return Math.floor((Date.now()+3*3600*1000)/86400000)}
+function dailyEveningMenus(){
+ const day=eveningMoscowDay();
+ if(eveningDailyCache&&eveningDailyCache.day===day)return eveningDailyCache.plans;
+ const plans={};
+ EVENING_TIME_ORDER.forEach((time,ti)=>{
+  const used=new Set();
+  EVENING_MOODS_ORDER.forEach((mood,mi)=>{
+   const definitions=[
+    {categories:time==='long'&&mood==='cozy'?['soup','salads']:['salads'],max:time==='long'?40:18},
+    {categories:EVENING_DAILY_CATEGORIES[mood],max:time==='quick'?27:time==='relaxed'?35:50}
+   ];
+   if(time!=='quick')definitions.push({categories:['dessert'],max:time==='relaxed'?20:50});
+   const ids=definitions.map((slot,si)=>{
+    let chosen=null;
+    for(let ci=0;ci<slot.categories.length&&!chosen;ci++){
+     const cat=slot.categories[(ci+day+mi+ti)%slot.categories.length];
+     const options=RECIPES.filter(r=>r.category===cat&&r.minutes<=slot.max&&typeof r.photo==='string'&&r.photo.startsWith('/assets/')&&!used.has(r.id));
+     if(options.length){
+      chosen=options[(day*7+mi*13+ti*17+si*29)%options.length];
+     }
+    }
+    if(!chosen)throw new Error('No eligible daily recipe: '+mood+'/'+time+'/'+si);
+    used.add(chosen.id);
+    return chosen.id;
+   });
+   plans[mood]??={};
+   plans[mood][time]=ids;
+  });
+ });
+ eveningDailyCache={day,plans};
+ return plans;
+}
 const EVENING_ROLES={salads:'Начнём легко',soup:'Для разогрева',pasta:'Главное блюдо',fish:'Главное блюдо',meat:'Главное блюдо',poultry:'Главное блюдо',vegetables:'Главное блюдо',dessert:'На сладкое'};
-const evening={mood:'tender',time:'relaxed',roleSwap:false,courseStep:0,selectedMenu:[],selectedRecipeId:(()=>{try{return sessionStorage.getItem('su_evening_recipe')}catch{return null}})(),timerEnd:0,timerRemaining:0,timerHandle:null,activeSteps:[],saveKey:'su_evening_position'};
+const evening={mood:'tender',time:'relaxed',roleSwap:false,courseStep:0,selectedMenu:[],activeMenuIds:null,activeMenuDay:null,selectedRecipeId:(()=>{try{return sessionStorage.getItem('su_evening_recipe')}catch{return null}})(),timerEnd:0,timerRemaining:0,timerHandle:null,activeSteps:[],saveKey:'su_evening_position'};
 const e$=id=>document.getElementById(id);
-function menuIds(){const ids=[...EVENING_MOODS[evening.mood].menus[evening.time]];const r=byId(evening.selectedRecipeId);if(!r||ids.includes(r.id))return ids;let n=r.category==='dessert'?ids.length-1:r.category==='salads'||r.category==='soup'?0:ids.findIndex(id=>{const entry=byId(id);return entry&&!['salads','soup','dessert'].includes(entry.category)});if(n<0)n=Math.max(0,ids.length-1);ids[n]=r.id;return [...new Set(ids)];}
+function menuIds(){const ids=evening.activeMenuIds?[...evening.activeMenuIds]:[...dailyEveningMenus()[evening.mood][evening.time]];const r=byId(evening.selectedRecipeId);if(!r||ids.includes(r.id))return ids;let n=r.category==='dessert'?ids.length-1:r.category==='salads'||r.category==='soup'?0:ids.findIndex(id=>{const entry=byId(id);return entry&&!['salads','soup','dessert'].includes(entry.category)});if(n<0)n=Math.max(0,ids.length-1);ids[n]=r.id;return [...new Set(ids)];}
 window.duEveningChooseRecipe=function(id){const r=id?byId(id):null;evening.selectedRecipeId=r?r.id:null;try{if(r)sessionStorage.setItem('su_evening_recipe',r.id);else sessionStorage.removeItem('su_evening_recipe')}catch{}renderEvening()};
 function menuRecipes(){return menuIds().map(byId).filter(Boolean)}
 function eSafe(s){return safe(s)}
@@ -1163,7 +1204,7 @@ function renderEvening(){
  const recipes=menuRecipes();
  e$('menuPreview').innerHTML=recipes.map((r,i)=>`<div class="du-menu-dish"><span class="du-menu-dish-emoji">${r.emoji}</span><div><span>${eSafe(i===0?'Начало':i===recipes.length-1&&r.category==='dessert'?'Десерт':EVENING_ROLES[r.category]||'Блюдо')}</span><strong>${eSafe(r.title)}</strong><small>${r.minutes} мин · ${eSafe(r.cuisine)}</small></div><button type="button" aria-label="Открыть рецепт ${eSafe(r.title)}" data-open-menu-recipe="${eSafe(r.id)}">↗</button></div>`).join('');
  const total=recipes.reduce((a,r)=>a+r.minutes,0);
- e$('menuMeta').textContent=`${recipes.length} блюда · ${total} минут последовательно · 2 порции каждого блюда`;
+ e$('menuMeta').textContent=`${recipes.length} блюда · ${total} минут последовательно · 2 порции каждого блюда · Меню дня (Москва)`;
  const youLabel=e$('eveningRoleYouLabel'),meLabel=e$('eveningRoleMeLabel'),roleButton=e$('swapEveningRoles'),roleStatus=e$('eveningRoleStatus');
  if(youLabel)youLabel.textContent=evening.roleSwap?'Я':'ТЫ';
  if(meLabel)meLabel.textContent=evening.roleSwap?'ТЫ':'Я';
@@ -1176,11 +1217,12 @@ function addEveningShopping(){
  menuRecipes().forEach(r=>{state.shopping[r.id]=2});persist();updateBadges();openShopping();toast('Все блюда вашего вечера добавлены в покупки');
 }
 function eveningSteps(){return menuRecipes().flatMap((r,i)=>r.steps.map((step,j)=>({recipe:r,recipeNo:i,step,stepNo:j})));}
-function eSave(){try{localStorage.setItem(evening.saveKey,JSON.stringify({mood:evening.mood,time:evening.time,index:evening.courseStep}))}catch{}}
-function loadEvening(){try{const s=JSON.parse(localStorage.getItem(evening.saveKey)||'null');if(s&&s.mood===evening.mood&&s.time===evening.time)return Math.min(evening.activeSteps.length,Math.max(0,Number(s.index)||0))}catch{}return 0}
+function eSave(){try{localStorage.setItem(evening.saveKey,JSON.stringify({mood:evening.mood,time:evening.time,day:evening.activeMenuDay??eveningMoscowDay(),index:evening.courseStep}))}catch{}}
+function loadEvening(){try{const s=JSON.parse(localStorage.getItem(evening.saveKey)||'null');if(s&&s.mood===evening.mood&&s.time===evening.time&&s.day===eveningMoscowDay())return Math.min(evening.activeSteps.length,Math.max(0,Number(s.index)||0))}catch{}return 0}
 function clearEveningTimer(){if(evening.timerHandle)clearInterval(evening.timerHandle);evening.timerHandle=null;evening.timerEnd=0;evening.timerRemaining=0;}
-function closeEvening(){clearEveningTimer();e$('eveningOverlay').hidden=true;document.body.style.overflow='';}
+function closeEvening(){clearEveningTimer();e$('eveningOverlay').hidden=true;document.body.style.overflow='';evening.activeMenuIds=null;evening.activeMenuDay=null;}
 function startEvening(){
+ evening.activeMenuIds=menuIds();evening.activeMenuDay=eveningMoscowDay();
  closeCook();closeShopping();evening.activeSteps=eveningSteps();evening.courseStep=loadEvening();
  e$('eveningOverlay').hidden=false;document.body.style.overflow='hidden';renderEveningStep();e$('closeEvening').focus();
 }
@@ -1211,6 +1253,8 @@ function initEvening(){
  e$('eveningOverlay').addEventListener('click',e=>{if(e.target===e$('eveningOverlay'))closeEvening()});
  document.addEventListener('keydown',e=>{if(e.key==='Escape'&&!e$('eveningOverlay').hidden)closeEvening()});
  renderEvening();
+ let displayedMoscowDay=eveningMoscowDay();
+ setInterval(()=>{const next=eveningMoscowDay();if(next!==displayedMoscowDay&&!evening.activeMenuIds){displayedMoscowDay=next;renderEvening()}},60000);
 }
 initEvening();
 </script>
