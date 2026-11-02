@@ -1,0 +1,7 @@
+{
+  "n": 615,
+  "recipe_id": "collection-salads-01-09",
+  "status": "request_pending_or_sent",
+  "created_at": "2026-11-02T12:59:49+00:00",
+  "note": "If output is missing after failure, do not automatically re-request."
+}
