@@ -130,6 +130,44 @@ class YandexProductionTests(TestCase):
                 paid.assert_called_once()
             self.assertFalse(marker.exists())
 
+    def test_yandex_400_model_refusal_is_not_retried(self):
+        """Explicit refusal is archived, leaving subsequent dishes to be generated."""
+        import urllib.error
+        err = urllib.error.HTTPError(worker.API_URL, 400, "Bad Request", {}, io.BytesIO(
+            b'{"error":{"message":"\\u042f \\u043d\\u0435 \\u043c\\u043e\\u0433\\u0443 \\u0441\\u0433\\u0435\\u043d\\u0435\\u0440\\u0438\\u0440\\u043e\\u0432\\u0430\\u0442\\u044c \\u044d\\u0442\\u043e \\u0438\\u0437\\u043e\\u0431\\u0440\\u0430\\u0436\\u0435\\u043d\\u0438\\u0435."}}'))
+        with mock.patch.object(worker.urllib.request, "urlopen", side_effect=err):
+            with self.assertRaises(worker.ModelImageRefusal):
+                worker.request_image("dish", "fake-key", "folder")
+
+        item = worker.load_recipes()[0]
+        args = ["--start", "1", "--end", "1", "--limit", "1", "--execute"]
+        env = {"YANDEX_API_KEY": "fake", "YANDEX_FOLDER_ID": "folder", "PHOTO_COST_APPROVED": "true"}
+        with TemporaryDirectory() as temp, mock.patch.dict(os.environ, env):
+            refusal = worker.ModelImageRefusal("Yandex refused the photo prompt")
+            with mock.patch.object(worker, "request_image", side_effect=refusal) as paid:
+                with contextlib.redirect_stdout(io.StringIO()):
+                    worker.main(args + ["--output", temp])
+                paid.assert_called_once()
+            rejected = Path(temp) / "rejected" / f'0001-{item["id"]}.json'
+            self.assertEqual(json.loads(rejected.read_text())["status"], "refused_by_model")
+            self.assertFalse(list((Path(temp) / "uncertain").glob("*.json")))
+            with mock.patch.object(worker, "request_image", side_effect=AssertionError("Duplicate charge!")):
+                with contextlib.redirect_stdout(io.StringIO()):
+                    worker.main(args + ["--output", temp])
+
+    def test_known_model_refusal_pending_is_archived_without_new_request(self):
+        item = worker.load_recipes()[0]
+        env = {"YANDEX_API_KEY": "fake", "YANDEX_FOLDER_ID": "folder", "PHOTO_COST_APPROVED": "true"}
+        with TemporaryDirectory() as temp, mock.patch.dict(os.environ, env):
+            pending = Path(temp) / "uncertain" / f'0001-{item["id"]}.json'
+            pending.parent.mkdir(parents=True)
+            pending.write_text(json.dumps({"status": "model_refusal_400_no_image"}))
+            with mock.patch.object(worker, "request_image", side_effect=AssertionError("Must not call API")):
+                with contextlib.redirect_stdout(io.StringIO()):
+                    worker.main(["--start", "1", "--end", "1", "--limit", "1", "--execute", "--output", temp])
+            self.assertFalse(pending.exists())
+            self.assertTrue((Path(temp) / "rejected" / f'0001-{item["id"]}.json').exists())
+
     def test_missing_secrets_reject_paid_calls(self):
         with mock.patch.dict(os.environ, {"PHOTO_COST_APPROVED": "true"}, clear=True):
             with self.assertRaises(SystemExit):
