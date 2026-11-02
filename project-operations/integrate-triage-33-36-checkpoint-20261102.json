@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-02",
+  "work": "Integrate previously directly inspected WebP 33, 34, 36 into canonical editorial triage and exact replacement briefs",
+  "base_pr": 19,
+  "base_head_sha": "f465d2b93fd98dd0f17c6ff06a9b4585837d3ae3",
+  "archive_commit": "13c3ad45758b9e92ed0df906bd4667c84932aa69",
+  "archive_manifest_blob_sha": "324964784f50844e239ae97e770117ea4b3adc53",
+  "recipe_index_blob_sha": "7b612a81830a2b253fc7184df9a8cfe501d82bb2",
+  "changes": [
+    "review/visual-triage-20261102.json",
+    "review/replacement-briefs-20261102.json",
+    "tests/visual-triage-27-30.test.mjs",
+    "tests/visual-triage-33-36.test.mjs",
+    "tests/replacement-briefs.test.mjs",
+    "review/VISUAL_TRIAGE_20261102.md",
+    "project-operations/integrate-triage-33-36-checkpoint-20261102.json"
+  ],
+  "validation": {
+    "local_data_crosschecks": "passed",
+    "checked_review_numbers": [
+      33,
+      34,
+      36
+    ],
+    "catalog_exact_ingredient_and_steps": "matched immutable index.html",
+    "manifest_sha_reuse_only": true,
+    "unique_reviewed": 32,
+    "rejected": 28,
+    "partial": 3,
+    "possible": 1,
+    "remaining_visual": 68,
+    "technical_verified_from_separate_checkpoint": 20,
+    "license_verified": 0,
+    "release_approved": 0,
+    "github_actions": "pending_after_pr_creation"
+  },
+  "blocked": [
+    "68 archive WebP not visually reviewed",
+    "28 rejected copies need physical replacements",
+    "archive file provenance and per-file licensing unverified",
+    "GitHub half-hour cron PR12 not in main",
+    "Yandex scheduled potentially paid workflow in main; PR16 protective change remains draft"
+  ],
+  "next_task": "Continue direct visual review of unreviewed archived WebP and source-page provenance; do not rehash unchanged technical checkpoint files.",
+  "safety": "No production changes, no PR merge, no paid API call"
+}

@@ -16,7 +16,7 @@ test('Three new direct WebP reviews refer to unique immutable archive entries', 
   for (const x of a.records) {
     const source = m.sources.find(y => y.number === x.number);
     assert.ok(source, 'Missing manifest entry '+x.number);
-    assert.equal(c.records.filter(y => y.number === x.number).length, 0, 'Previously reviewed '+x.number);
+    assert.equal(c.records.filter(y => y.number === x.number).length, 1, 'Integrated exactly once '+x.number);
     assert.equal(x.recipe_id, source.recipe_id);
     assert.equal(x.recipe_title, source.title);
     assert.equal(x.archive_path, 'photo-library/batch-100-20261101/'+source.file);
@@ -34,9 +34,9 @@ test('Three new direct WebP reviews refer to unique immutable archive entries', 
 test('Existing review 35 is not counted twice; addendum cannot clear images', () => {
   assert.equal(c.records.filter(x => x.number === 35).length, 1);
   assert.equal(a.records.some(x => x.number === 35), false);
-  assert.equal(a.base_canonical_reviewed, c.reviewed_images);
-  assert.equal(a.combined_unique_reviewed, c.reviewed_images + a.addendum_reviewed);
-  assert.equal(a.combined_rejected, c.clear_mismatch_count + a.addendum_rejected);
+  assert.equal(a.base_canonical_reviewed, 29);
+  assert.equal(a.combined_unique_reviewed, c.reviewed_images);
+  assert.equal(a.combined_rejected, c.clear_mismatch_count);
   assert.equal(a.combined_unreviewed, m.photo_files - a.combined_unique_reviewed);
   assert.equal(a.license_verified_count, 0);
   assert.equal(a.combined_unique_reviewed, 32);
