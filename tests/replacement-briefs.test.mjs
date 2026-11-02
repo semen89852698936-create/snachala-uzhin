@@ -101,9 +101,9 @@ test('The four addendum reviews are integrated exactly once and have source-matc
   assert.equal(addendum.records.length, 4);
   assert.equal(new Set(addendum.records.map(x => x.number)).size, 4);
   assert.equal(triage.reviewed_images, triage.records.length);
-  assert.equal(triage.reviewed_images, addendum.combined_unique_reviewed);
-  assert.equal(triage.clear_mismatch_count, addendum.combined_rejected);
-  assert.equal(100 - triage.reviewed_images, addendum.remaining_unreviewed);
+  assert.ok(triage.reviewed_images >= addendum.combined_unique_reviewed, 'Historical addendum must remain integrated');
+  assert.ok(triage.clear_mismatch_count >= addendum.combined_rejected, 'New reviews may increase rejected total');
+  assert.ok(100 - triage.reviewed_images <= addendum.remaining_unreviewed, 'New reviews may reduce unreviewed total');
   assert.equal(briefs.rejected_count, triage.clear_mismatch_count);
   for (const row of addendum.records) {
     const matches = triage.records.filter(x => x.number === row.number);
@@ -120,4 +120,37 @@ test('The four addendum reviews are integrated exactly once and have source-matc
     assert.equal(matchedBriefs[0].license_status, 'not_verified');
     assert.equal(matchedBriefs[0].owner_publication_approval, false);
   }
+});
+
+
+test('Four new direct-WebP reviews 22-25 match immutable archive and do not imply clearance', () => {
+  const statuses = new Map([[22, 'reject_for_recipe'], [23, 'reject_for_recipe'],
+    [24, 'reject_for_recipe'], [25, 'partial_match_needs_recipe_review']]);
+  assert.equal(triage.reviewed_images, triage.records.length);
+  assert.equal(new Set(triage.records.map(x => x.number)).size, triage.records.length);
+  for (const [number, status] of statuses) {
+    const source = manifest.sources.find(x => x.number === number);
+    const reviews = triage.records.filter(x => x.number === number);
+    assert.equal(reviews.length, 1, 'One review per archive number ' + number);
+    const row = reviews[0];
+    assert.equal(row.visual_status, status);
+    assert.equal(row.recipe_id, source.recipe_id);
+    assert.equal(row.image_sha256, source.sha256);
+    assert.equal(row.archive_path, 'photo-library/batch-100-20261101/' + source.file);
+    assert.ok(row.git_blob_sha.length >= 40);
+    assert.equal(row.source_license_status, 'not_verified');
+    assert.equal(row.publication_approved, false);
+    const matchedBriefs = briefs.briefs.filter(x => x.number === number);
+    assert.equal(matchedBriefs.length, status === 'reject_for_recipe' ? 1 : 0);
+    if (matchedBriefs.length) {
+      assert.equal(matchedBriefs[0].rejected_archive_photo.sha256, source.sha256);
+      assert.deepEqual(matchedBriefs[0].recipe_ingredients_exact,
+        catalogRecipe(source.recipe_id).ingredients.map(({name, amount, unit}) => ({name, amount, unit})));
+    }
+  }
+  assert.equal(triage.reviewed_images, 25);
+  assert.equal(triage.clear_mismatch_count, 22);
+  assert.equal(triage.partial_match_count, 2);
+  assert.equal(triage.possible_match_count, 1);
+  assert.equal(briefs.rejected_count, 22);
 });
