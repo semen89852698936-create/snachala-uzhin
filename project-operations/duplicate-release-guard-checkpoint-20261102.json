@@ -1,0 +1,74 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-02",
+  "project": "snachala-uzhin",
+  "stage": "Prevent duplicate release ledger records from clearing the first occurrence",
+  "branch": "photo-library/duplicate-release-guard-20261102",
+  "pr": "https://github.com/semen89852698936-create/snachala-uzhin/pull/14",
+  "draft": true,
+  "base_pr": "https://github.com/semen89852698936-create/snachala-uzhin/pull/13",
+  "base_head_at_branch_creation": "9254dc979472ee9901829dd377a9810a21022ed6",
+  "head_before_checkpoint": "eac2bc3b20ccc58d7eaa8c4951bf29f10bce4338",
+  "changed_files": [
+    "scripts/photo-release-gate.mjs",
+    "tests/photo-release-gate.test.mjs",
+    "project-operations/duplicate-release-guard-checkpoint-20261102.json"
+  ],
+  "commits": {
+    "code": "6132afc20d7e202a54e22ff3e3bd9d47ae0d6820",
+    "regression_test": "eac2bc3b20ccc58d7eaa8c4951bf29f10bce4338"
+  },
+  "verified_result": "Every duplicate recipe_id in the approval ledger is blocked, including first occurrence even when evidence refs differ. No archive WebP rehashed or modified.",
+  "tests": {
+    "github_actions_run_id": 41410179445,
+    "run_url": "https://github.com/semen89852698936-create/snachala-uzhin/actions/runs/41410179445",
+    "tested_commit": "eac2bc3b20ccc58d7eaa8c4951bf29f10bce4338",
+    "conclusion": "success",
+    "release_gate_tests": {
+      "passed": 18,
+      "failed": 0
+    },
+    "replacement_brief_tests": {
+      "passed": 5,
+      "failed": 0
+    },
+    "extractor_step": "success",
+    "release_ledger": {
+      "cleared": 0,
+      "blocked": 100
+    }
+  },
+  "independent_audit": {
+    "branch": "automation/half-hour-photo-audit",
+    "technical_verified": 20,
+    "technical_remaining": 80,
+    "checkpoint_blob_sha": "dd3097592c54062dc08a162cdfd6b129fbbfc7c3",
+    "rehashed_in_this_run": 0
+  },
+  "editorial_snapshot": {
+    "archive_physical_webp": 100,
+    "visually_inspected": 17,
+    "visually_rejected": 15,
+    "replacement_briefs": 15,
+    "legally_cleared": 0,
+    "release_cleared": 0,
+    "other_recipes_without_archived_files": 901
+  },
+  "deployment_snapshot": {
+    "project": "snachala-uzhin-preview",
+    "production_state": "READY",
+    "production_sha": "819894450686ce5d5c5a0b1a7058218debd441e3",
+    "note": "Vercel read-only metadata, not a browser test"
+  },
+  "constraints": [
+    "Do not merge PRs or deploy production",
+    "GitHub cron 7,37 * * * * is not active in main",
+    "Archive copies #6, #10, #20 differ from owner-approved production copies"
+  ],
+  "blockers": [
+    "83 archive WebP still require direct visual review",
+    "15 rejected archive copies have no approved physical replacement",
+    "Image-by-image rights and author attribution remain unverified"
+  ],
+  "next_safe_action": "Review new, not-yet-inspected physical archive images directly; verify recipe ingredient match and exact rights evidence, prepare licensed physical replacements. Keep PR #14 stacked on #13 until review; avoid duplicate technical checks."
+}
