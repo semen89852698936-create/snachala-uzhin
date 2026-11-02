@@ -1,0 +1,146 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-02",
+  "project": "snachala-uzhin",
+  "stage": "Release gate hardened (11/11 CI pass) and five ingredient-accurate replacement briefs prepared from main recipe source; archive images remain unapproved",
+  "source_pr_11": {
+    "url": "https://github.com/semen89852698936-create/snachala-uzhin/pull/11",
+    "head_sha": "13c3ad45758b9e92ed0df906bd4667c84932aa69"
+  },
+  "operations_pr_12": {
+    "url": "https://github.com/semen89852698936-create/snachala-uzhin/pull/12",
+    "head_sha": "638408800f899feec0c6eb5e320a1babf987edc2"
+  },
+  "this_pr_13": {
+    "url": "https://github.com/semen89852698936-create/snachala-uzhin/pull/13",
+    "branch": "photo-library/editorial-release-gate-20261102",
+    "base_branch": "photo-library/restore-100-review-20261102",
+    "code_commit_sha": "ee2f7bd1071ae012687ab270903475615bf07c13",
+    "visual_triage_commit_sha": "63e869186f3eda97cee07520f2f24dc9b9aed6bf",
+    "latest_code_commit_sha": "f0c3dcec48b9640473166b7b8b62c90496b744b4",
+    "latest_test_commit_sha": "dca4272484bd25702bf2db923a1b94613cf61392",
+    "head_before_checkpoint": "6613fc37ab95ba2dc63c422cf7718111dfc0921b",
+    "latest_artifact_commit_sha": "6613fc37ab95ba2dc63c422cf7718111dfc0921b"
+  },
+  "source_manifest_blob_sha": "324964784f50844e239ae97e770117ea4b3adc53",
+  "changed_files": [
+    "scripts/photo-release-gate.mjs",
+    "tests/photo-release-gate.test.mjs",
+    "review/photo-release-decisions.json",
+    ".github/workflows/editorial-release-gate.yml",
+    "review/LICENSE_PREFLIGHT_20261102.md",
+    "project-operations/photo-release-gate-checkpoint-20261102.json",
+    "review/visual-triage-20261102.json",
+    "review/VISUAL_TRIAGE_20261102.md",
+    "review/replacement-briefs-20261102.json"
+  ],
+  "checks": {
+    "local_node_tests": "Not run locally in this turn; 11/11 passed in GitHub Actions",
+    "github_actions": {
+      "run_id": 41374037600,
+      "conclusion": "success",
+      "commit_sha": "dca4272484bd25702bf2db923a1b94613cf61392",
+      "url": "https://github.com/semen89852698936-create/snachala-uzhin/actions/runs/41374037600",
+      "job": "release-gate",
+      "steps": [
+        "11/11 offline release-gate tests passed",
+        "release ledger audit passed: 0 approved, 100 blocked"
+      ]
+    },
+    "rehashed_existing_webp_in_this_run": 0,
+    "release_gate_review": "Code review + GitHub Actions; no browser or source-license verification"
+  },
+  "evidence_counters": {
+    "archive_candidate_files": 100,
+    "release_ledger_approved": 0,
+    "unverified_ingredient_matches": 100,
+    "metadata_author_missing_or_placeholder": 17,
+    "metadata_license_url_missing": 17,
+    "attribution_license_entries": 72,
+    "archive_without_files_for_remaining_recipes": 901,
+    "visually_inspected_archive_copies": 7,
+    "visually_rejected_for_recipe": 5,
+    "visually_partial_match": 1,
+    "visually_possible_match_not_approved": 1,
+    "legally_verified": 0
+  },
+  "separate_technical_audit_snapshot": {
+    "branch": "automation/half-hour-photo-audit",
+    "verified": 20,
+    "remaining": 80,
+    "checkpoint_blob_sha": "dd3097592c54062dc08a162cdfd6b129fbbfc7c3",
+    "note": "Not rerun here; may change independently"
+  },
+  "deployment_snapshot": {
+    "project": "snachala-uzhin-preview",
+    "target": "production",
+    "state": "READY",
+    "sha": "819894450686ce5d5c5a0b1a7058218debd441e3",
+    "note": "Read-only status, not a browser acceptance test"
+  },
+  "blockers": [
+    "Five archived candidates #32,35,38,41,44 visibly mismatch their recipe titles and need replacement before release",
+    "No independently evidenced image-by-image visual ingredient review for 100 archive copies",
+    "No per-image legal rights clearance and attribution evidence",
+    "Approved production copies 6,10,20 differ from archive and require explicit reapproval",
+    "901 other recipes still lack a physical archived image",
+    "GitHub half-hour cron in PR #12 is not active until workflow reaches main",
+    "Replacement briefs are specifications, not physical replacement images or license clearances",
+    "Several source recipe step titles have grammatical errors and require editorial cleanup in a separate safe PR"
+  ],
+  "next_safe_action": "Use five exact-ingredient briefs to find or create genuinely matching replacement photos with documented rights, without publication; visually inspect high-risk archived candidates #37,61,63,64,65,67 and record evidence by SHA. Check recipe wording separately (e.g. malformed 'Добавь паприкой и чесноком').",
+  "publication": "No merges or production changes; PR #11, #12, #13 remain draft; GitHub half-hour cron not active until workflow is in main.",
+  "visual_triage": {
+    "path": "review/visual-triage-20261102.json",
+    "rejected_numbers": [
+      32,
+      35,
+      38,
+      41,
+      44
+    ],
+    "partial_number": 4,
+    "possible_number": 5,
+    "evidence": "Rendered physical WebP from immutable PR #11 GitHub commit; not an original source license check."
+  },
+  "release_gate_hardening": {
+    "files": [
+      "scripts/photo-release-gate.mjs",
+      "tests/photo-release-gate.test.mjs"
+    ],
+    "changes": [
+      "Reject license evidence URLs that merely repeat the source image page",
+      "Reject license labels outside known manifest license vocabulary",
+      "Reject duplicate archive image numbers and SHA-256",
+      "Add three regression tests"
+    ],
+    "code_commit_sha": "f0c3dcec48b9640473166b7b8b62c90496b744b4",
+    "tests_commit_sha": "dca4272484bd25702bf2db923a1b94613cf61392",
+    "tests_passed": 11,
+    "tests_failed": 0
+  },
+  "replacement_briefs": {
+    "path": "review/replacement-briefs-20261102.json",
+    "commit_sha": "6613fc37ab95ba2dc63c422cf7718111dfc0921b",
+    "blob_sha": "052c3d690abe6832b5079d6476850e6a4a7eeed4",
+    "source_index_blob_sha": "7b612a81830a2b253fc7184df9a8cfe501d82bb2",
+    "source_main_sha": "819894450686ce5d5c5a0b1a7058218debd441e3",
+    "rejected_archive_numbers": [
+      32,
+      35,
+      38,
+      41,
+      44
+    ],
+    "ingredients_counts": [
+      5,
+      5,
+      5,
+      7,
+      7
+    ],
+    "checks": "Six structural checks passed in connector-side review; not a separate GitHub Actions test",
+    "new_photos_added": 0,
+    "licenses_cleared": 0
+  }
+}

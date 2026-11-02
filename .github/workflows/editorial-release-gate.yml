@@ -1,0 +1,25 @@
+name: Editorial and license release gate (no image rehash)
+on:
+  pull_request:
+    paths:
+      - 'scripts/photo-release-gate.mjs'
+      - 'tests/photo-release-gate.test.mjs'
+      - 'review/photo-release-decisions.json'
+      - 'review/visual-triage-20261102.json'
+      - 'photo-library/batch-100-20261101/manifest.json'
+      - '.github/workflows/editorial-release-gate.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  release-gate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+        with:
+          persist-credentials: false
+      - name: Run offline editorial gate tests
+        run: node --test tests/photo-release-gate.test.mjs
+      - name: Audit release ledger without reading image bytes
+        run: node scripts/photo-release-gate.mjs
