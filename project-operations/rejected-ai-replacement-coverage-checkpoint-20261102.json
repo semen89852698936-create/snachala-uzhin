@@ -1,0 +1,60 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-02",
+  "project": "snachala-uzhin",
+  "work_branch": "photo-library/rejected-ai-replacement-coverage-20261102",
+  "draft_pr": "https://github.com/semen89852698936-create/snachala-uzhin/pull/28",
+  "stacked_on_pr": 26,
+  "main_head_verified_before_write": "d8000f591989a6424b92513967a764745e620b04",
+  "base_pr26_head_verified": "dd5a9cdf1aeeefc5c31a5a70d374aff6887ed45d",
+  "source_ai_commit": "a1c30f0be8745b8996577da7e7a4a3c2b3f2f028",
+  "code_commits": [
+    "a6b97863074d94e74658b48468f6d7d3d0038423",
+    "0fa719eb97b4f98675a38098c43c39f290ae1530",
+    "912935e6a0d990778b75391ccaf253602f1feade"
+  ],
+  "files_changed": [
+    "photo-library/ai-art-replacement-brief-5-20261102.json",
+    "tests/ai-art-rejected-replacement-coverage.test.mjs",
+    ".github/workflows/ai-art-first-five-review.yml",
+    "project-operations/rejected-ai-replacement-coverage-checkpoint-20261102.json"
+  ],
+  "actual_changes": [
+    "Added source-Git-blob-pinned replacement specification for rejected AI salmon WebP #5 based on recipe #5 ingredients and baking step.",
+    "Added offline Node tests ensuring every rejected image among visually reviewed #1-10 (#5,#8,#9) has exactly one replacement brief with matching recipe ID/title and source blob SHA, and fail-closed rights/cost/publication flags.",
+    "Wired new tests and paths into editorial GitHub Actions workflow."
+  ],
+  "verification": {
+    "source_reviewed_webp_count": 10,
+    "rejected_in_reviewed": 3,
+    "replacement_briefs_covered": 3,
+    "new_visual_reviews_this_run": 0,
+    "new_physical_photos_this_run": 0,
+    "new_rights_clearances_this_run": 0,
+    "publication_approvals": 0,
+    "technical_sha_rehash_repeated": false,
+    "node_tests": "Awaiting GitHub Actions result; do not claim pass until completed",
+    "editorial_ci_run": "https://github.com/semen89852698936-create/snachala-uzhin/actions/runs/41494354095",
+    "pipeline_ci_run": "https://github.com/semen89852698936-create/snachala-uzhin/actions/runs/41494353980",
+    "ci_state_at_checkpoint": "in_progress",
+    "vercel_latest_ready_preview": {
+      "id": "dpl_ANW4a2eDb1vQewTZzdkXhauGJ59y",
+      "target": null,
+      "branch": "fix/approved-invitation-photo-20261102",
+      "sha": "cc750cd42ebb6da54af19fa831567aade7560d65"
+    },
+    "vercel_latest_explicit_production": {
+      "id": "dpl_5GCmpxjRSPWpAYYaP89kNai1eFkC",
+      "target": "production",
+      "sha": "819894450686ce5d5c5a0b1a7058218debd441e3"
+    }
+  },
+  "blockers": [
+    "991 AI WebP still lack direct visual review; individual commercial rights and final owner approval unverified.",
+    "Replacement briefs #5/#8/#9 do not create replacement image binaries.",
+    "Paid Yandex workflow remains scheduled every 10 minutes in main; safety PR #16 is draft and cannot be merged without separate authorization.",
+    "Editorial and pipeline CI results were still in progress at checkpoint."
+  ],
+  "next_safe_task": "Confirm CI for PR #28; then directly inspect physical AI WebP #11-15 and compare each to recipes, recording immutable blob evidence. Do not infer visual approval from metadata or source links.",
+  "constraints": "No merges, production changes, workflow dispatch, paid API calls, secrets, permissions or payment changes. PR #12 half-hour cron remains inactive."
+}
