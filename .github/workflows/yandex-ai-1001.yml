@@ -41,7 +41,7 @@ jobs:
         with:
           python-version: '3.11'
       - run: python -m pip install 'Pillow>=10,<13'
-      - run: python -m unittest discover -s photo-pipeline -p 'test_yandexart.py' -v
+      - run: python -m unittest discover -s photo-pipeline -p 'test_*.py' -v
       - name: Verify generated WebP files, metadata and hashes without any API calls
         run: python photo-pipeline/verify_yandex_photo_library.py
       - name: Preview first 10 prompts without API calls
@@ -101,6 +101,37 @@ jobs:
               exit "${result}"
             fi
           done
+          # One-shot recovery of rejected recipe photos, using a distinct fruit-
+          # specific prompt. Reserve and PUSH each paid request intent first.
+          # If a process/network crashes, the reservation blocks future retries.
+          for recover_kind in refused uncertain; do
+            recover_limit=10
+            if [[ "${recover_kind}" == "uncertain" ]]; then
+              recover_limit=1
+            fi
+            for recovery_slot in $(seq 1 "${recover_limit}"); do
+              python3 photo-pipeline/recover_missing_yandexart.py --kind "${recover_kind}" --prepare --reservation /tmp/recovery-photo-id.txt
+              if [[ "$(cat /tmp/recovery-photo-id.txt)" == "NONE" ]]; then
+                break
+              fi
+              git add -A photo-library/alice-ai-art
+              git commit -m "Yandex AI ART: reserve one-time ${recover_kind} recovery before paid request"
+              git push origin HEAD:refs/heads/photo-production/yandex-ai-art-1001
+              set +e
+              python3 photo-pipeline/recover_missing_yandexart.py --kind "${recover_kind}" --perform --reservation /tmp/recovery-photo-id.txt
+              recovery_result=$?
+              set -e
+              git add -A photo-library/alice-ai-art
+              if ! git diff --cached --quiet; then
+                git commit -m "Yandex AI ART: checkpoint one-time ${recover_kind} recovery result"
+                git push origin HEAD:refs/heads/photo-production/yandex-ai-art-1001
+              fi
+              if [[ "${recovery_result}" -ne 0 ]]; then
+                echo "::error::Recovery request result is uncertain; reservation preserved, and auto retry prohibited."
+                exit "${recovery_result}"
+              fi
+            done
+          done
           # Generate a checkpoint from actual files, not from number of API calls.
           python3 photo-pipeline/verify_yandex_photo_library.py --write
           git add photo-library/alice-ai-art/progress.json
@@ -133,7 +164,8 @@ jobs:
               print(f"Verified progress {start} -> {complete}; dispatching next batch")
               Path("/tmp/yandex_continue").write_text("yes")
           else:
-              raise SystemExit(f"No progress: {start} -> {complete}; refusing repeated paid calls")
+              print(f"NO_NEW_PHOTOS: {start} -> {complete}; no auto-dispatch, preserved all recovery markers")
+              Path("/tmp/yandex_continue").write_text("no")
           PY
           if [[ "$(cat /tmp/yandex_continue)" == "yes" ]]; then
             curl --fail-with-body --silent --show-error --retry 3 \
