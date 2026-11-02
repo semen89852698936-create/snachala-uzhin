@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-02",
+  "work": "Direct editorial inspection of first five Yandex AI ART generated WebP after technical completion",
+  "source_branch": "photo-production/yandex-ai-art-1001",
+  "source_head_sha": "a1c30f0be8745b8996577da7e7a4a3c2b3f2f028",
+  "photo_library_progress": "photo-library/alice-ai-art/progress.json",
+  "physical_webp_verified": 1001,
+  "visually_inspected_this_run": 5,
+  "visual_review_results": {
+    "candidate_unapproved": 2,
+    "needs_culinary_review": 2,
+    "rejected": 1
+  },
+  "rejected_recipe_number": 5,
+  "source_file": "review/ai-art-first-five-visual-triage-20261102.json",
+  "tests": "offline structural metadata consistency assertions passed in this run; GitHub Actions pending",
+  "no_paid_api_calls": true,
+  "publication_approved": 0,
+  "production_unchanged": true,
+  "blockers": [
+    "Remaining 996 AI WebP not directly inspected",
+    "Cooked salmon image #5 must be replaced or corrected without automatically paying for regeneration",
+    "Editorial and rights policy not yet approved for generated files"
+  ],
+  "next_task": "Continue visual review of generated WebP #6 onward; group by recipe category and check exact plated cooked dish. Prepare replacement brief for #5 without paid generation."
+}
