@@ -619,10 +619,9 @@ body.du-evening-mode .main-nav [data-nav="evening"]{color:#8a4354;font-weight:80
 .du-story-dinner-photo img{object-position:50% 47%;filter:none;}
 .du-story-after-photo img{object-position:center 48%;filter:none;}
 
-/* Invitation photo: show the full portrait instead of cropping out the couple.
-   Original photograph is 2:3 while the invitation card is landscape. */
+/* Owner-approved horizontal candlelit table photograph, bundled locally for Russian visitors. */
 .du-evening-invitation-photo{
-  height:clamp(420px,43vw,530px);
+  height:clamp(285px,34vw,360px);
   isolation:isolate;
   background:#302126;
 }
@@ -631,7 +630,7 @@ body.du-evening-mode .main-nav [data-nav="evening"]{color:#8a4354;font-weight:80
   position:absolute;
   inset:-30px;
   z-index:-1;
-  background-image:url("https://images.pexels.com/photos/5018980/pexels-photo-5018980.jpeg?auto=compress&cs=tinysrgb&w=1500");
+  background-image:url("/assets/our-evening-invitation-approved-20261102.webp");
   background-size:cover;
   background-position:center 35%;
   filter:blur(25px) brightness(.55) saturate(.85);
@@ -642,8 +641,8 @@ body.du-evening-mode .main-nav [data-nav="evening"]{color:#8a4354;font-weight:80
   z-index:0;
   width:100%;
   height:100%;
-  object-fit:contain;
-  object-position:center;
+  object-fit:cover;
+  object-position:center 52%;
   filter:none;
 }
 .du-evening-invitation-photo::after{
@@ -894,9 +893,9 @@ a.du-evening-nav-mobile{display:none}
   </article>
   <article class="du-evening-invitation">
    <div class="du-evening-invitation-photo">
-    <img src="https://images.pexels.com/photos/5018980/pexels-photo-5018980.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1500" alt="Пара сидит за романтическим ужином при свечах и бокалах вина" loading="lazy" decoding="async">
+    <img src="/assets/our-evening-invitation-approved-20261102.webp" width="420" height="315" alt="Тёплый интерьер и сервированный стол со свечами и бокалами" loading="lazy" decoding="async">
     <span>ДВЕ ВИЛКИ. ОДНО НАСТРОЕНИЕ.</span>
-    <small>Фото: <a href="https://www.pexels.com/photo/man-and-woman-sitting-at-table-with-bottles-and-glasses-5018980/" target="_blank" rel="noopener noreferrer">cottonbro studio / Pexels</a></small>
+    
    </div>
    <div class="du-evening-invitation-content">
     <div class="du-mini-eyebrow">05 / ПРИГЛАШЕНИЕ</div>
