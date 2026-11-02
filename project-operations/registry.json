@@ -108,12 +108,20 @@
       "workflowFile": ".github/workflows/half-hour-photo-production.yml",
       "scope": "Incremental real WebP integrity review; no AI generation or general-purpose code agent",
       "verifiedActionRun": "https://github.com/semen89852698936-create/snachala-uzhin/actions/runs/41364190889",
-      "lastVerifiedPhotos": 5,
+      "lastVerifiedPhotos": 10,
       "totalArchivePhotos": 100,
       "checkpointBranch": "automation/half-hour-photo-audit",
-      "activationStatus": "tested_on_feature_push_not_scheduled_until_merged_to_main",
+      "activationStatus": "tested_and_written_to_separate_review_branch;scheduled_trigger_waits_for_main",
       "productionPolicy": "Never deploy site, merge pull requests, enable paid services or spend money automatically",
-      "keepChatHourlyAutomationUntilScheduleConfirmed": true
+      "keepChatHourlyAutomationUntilScheduleConfirmed": true,
+      "lastVerifiedRun": "https://github.com/semen89852698936-create/snachala-uzhin/actions/runs/41365355313",
+      "sourceCaptionWarningCounts": {
+        "high": 15,
+        "medium": 13,
+        "total": 28
+      },
+      "editorialWarningFile": "photo-library/editorial-risk-signals.json",
+      "editorialReviewNotes": "photo-library/EDITORIAL_REVIEW_20261102.md"
     }
   }
 }
