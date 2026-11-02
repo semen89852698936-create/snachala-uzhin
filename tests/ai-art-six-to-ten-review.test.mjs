@@ -48,3 +48,22 @@ test('Editorial decisions 6-10 are fail-closed and tally correctly',()=>{
  assert.equal(review.records.find(x=>x.number===8).visual_status,'reject_ingredient_mismatch');
  assert.equal(review.records.find(x=>x.number===9).visual_status,'reject_wrong_dish_type');
 });
+
+test('Rejected images 8 and 9 have exact-recipe replacement briefs without release permission',()=>{
+ const briefs=read('photo-library/ai-art-replacement-briefs-8-9-20261102.json');
+ assert.equal(briefs.source_review,'review/ai-art-six-to-ten-visual-triage-20261102.json');
+ assert.equal(briefs.cost_approval_required,true);
+ assert.equal(briefs.publication_allowed,false);
+ assert.deepEqual(briefs.items.map(x=>x.number),[8,9]);
+ for(const brief of briefs.items){
+  const reviewed=review.records.find(x=>x.number===brief.number);
+  assert.ok(reviewed.visual_status.startsWith('reject_'));
+  assert.equal(brief.recipe_id,reviewed.recipe_id);
+  assert.equal(brief.recipe_title,reviewed.recipe_title);
+  assert.equal(brief.rejected_photo_blob_sha,reviewed.photo_git_blob_sha);
+  assert.equal(brief.status,'brief_only_no_physical_replacement');
+  assert.equal(brief.rights_status,'unverified');
+  assert.ok(brief.must_show.length>=3);
+  assert.ok(brief.must_avoid.length>=2);
+ }
+});
