@@ -3,5 +3,10 @@
   "recipe_id": "collection-soup-04-08",
   "status": "request_pending_or_sent",
   "created_at": "2026-11-02T12:34:31+00:00",
-  "note": "If output is missing after failure, do not automatically re-request."
+  "note": "If output is missing after failure, do not automatically re-request.",
+  "recovery_possible_duplicate_charge": true,
+  "recovery_reason": "Previous Yandex response truncated after 373217 bytes; no image checkpoint exists.",
+  "recovery_attempt_reserved_at": "2026-11-02T14:28:39+00:00",
+  "recovery_prompt": "Фотореалистичная премиальная фуд-фотография готового блюда. ТОЧНОЕ блюдо: Суп из красной чечевицы с имбирём и кунжутом. Видимые ингредиенты: Чечевица красная сухая, Лук репчатый, Бульон овощной, Имбирь свежий, Кунжут, Масло оливковое, Соль. Аппетитная ресторанная подача на одну-две персоны, светлая керамика, нежная пастельная сервировка, тёплый мягкий вечерний свет, крупный план. Блюдо строго в центре кадра; без рук, людей, букв, логотипов, коллажей",
+  "recovery_one_attempt_only": true
 }
