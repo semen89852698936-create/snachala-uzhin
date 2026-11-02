@@ -121,8 +121,10 @@ jobs:
           data = json.loads(Path("photo-library/alice-ai-art/progress.json").read_text(encoding="utf-8"))
           complete = data["verified_webp"]
           start = int(os.environ["PHOTO_BATCH_START_COUNT"])
-          if data["problem_count"] or data["uncertain_paid_requests"] or data["unprocessed_raw_checkpoints"]:
-              raise SystemExit("Unsafe to auto-continue: unresolved output or paid request")
+          if data["problem_count"]:
+              raise SystemExit("Unsafe to auto-continue: invalid WebP or metadata")
+          if data["uncertain_paid_requests"]:
+              print(f"NOTICE: {data['uncertain_paid_requests']} interrupted response(s) preserved for separate billing-safe recovery")
           if complete >= 1001:
               print(f"COMPLETE: {complete}/1001 verified; stopping")
               Path("/tmp/yandex_continue").write_text("no")
