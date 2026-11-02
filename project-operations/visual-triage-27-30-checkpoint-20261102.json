@@ -45,9 +45,34 @@
   "checks": {
     "source_manifest_readback_assertions_passed": 24,
     "failed": 0,
-    "method": "GitHub catalog blob parsing and manifest/addendum/triage checks; final GitHub Actions pending",
-    "github_actions": "pending final head",
-    "image_sha256_rehashed": false
+    "method": "GitHub Actions on commit eb755e3ac45d3b6a6a832b3bf27f44dc9e68d2b2, with 26 passing Node tests and release gate 100 blocked; no technical rehash",
+    "github_actions": "success",
+    "image_sha256_rehashed": false,
+    "github_actions_run_url": "https://github.com/semen89852698936-create/snachala-uzhin/actions/runs/41447115903",
+    "github_actions_commit_sha": "eb755e3ac45d3b6a6a832b3bf27f44dc9e68d2b2",
+    "tests": {
+      "photo_release_gate": {
+        "passed": 17,
+        "failed": 0
+      },
+      "replacement_briefs": {
+        "passed": 7,
+        "failed": 0
+      },
+      "visual_triage": {
+        "passed": 2,
+        "failed": 0
+      },
+      "total_passed": 26,
+      "total_failed": 0
+    },
+    "release_gate": {
+      "release_candidates": 0,
+      "cleared_for_editorial_release": 0,
+      "blocked_from_release": 100,
+      "errors": []
+    },
+    "extraction_unbriefed_rejects": 0
   },
   "production": {
     "project": "snachala-uzhin-preview",
@@ -66,10 +91,9 @@
   "blockers": [
     "25 rejected images need physical replacements and independent rights checks",
     "71 archived WebP still unreviewed",
-    "Main Yandex paid schedule exists; protective PR #16 remains draft",
-    "New integrated data CI not yet confirmed"
+    "Main Yandex paid schedule exists; protective PR #16 remains draft"
   ],
-  "next_safe_action": "Confirm GitHub Actions on latest commit; continue independent image and source rights review, no paid calls, merges or production changes.",
+  "next_safe_action": "Continue direct review of 71 remaining archive WebP and verify provenance/licensing for actual bytes; replace 25 rejected photos, do not publish or run paid generation.",
   "integration": {
     "previous_head_sha": "ae27857557bb5fabcbc007e1713c10a442aa8bef",
     "change_commits": [
