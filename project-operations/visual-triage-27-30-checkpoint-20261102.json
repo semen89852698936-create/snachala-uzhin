@@ -1,0 +1,70 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-02",
+  "project": "snachala-uzhin",
+  "branch": "photo-library/visual-triage-27-30-20261102",
+  "pr_url": "https://github.com/semen89852698936-create/snachala-uzhin/pull/18",
+  "base_pr_url": "https://github.com/semen89852698936-create/snachala-uzhin/pull/17",
+  "code_commit_sha": "06b097ab8ec7ed278536ddbf3faaeed485cc414b",
+  "source_archive_commit_sha": "13c3ad45758b9e92ed0df906bd4667c84932aa69",
+  "source_manifest_blob_sha": "324964784f50844e239ae97e770117ea4b3adc53",
+  "changed_files": [
+    "review/visual-triage-addendum-20261102-1140.json",
+    "tests/visual-triage-27-30.test.mjs",
+    ".github/workflows/editorial-release-gate.yml",
+    "project-operations/visual-triage-27-30-checkpoint-20261102.json"
+  ],
+  "new_direct_webp_inspections": [
+    27,
+    28,
+    29,
+    30
+  ],
+  "new_rejected": [
+    27,
+    28,
+    30
+  ],
+  "new_partial": [
+    29
+  ],
+  "counts": {
+    "archive_physical_webp": 100,
+    "visual_reviewed_combined": 29,
+    "visual_rejected_combined": 25,
+    "visual_partial_combined": 3,
+    "visual_possible_combined": 1,
+    "visual_unreviewed": 71,
+    "editorial_and_license_cleared": 0,
+    "new_physical_photos": 0,
+    "technical_audit_verified_separately": 20
+  },
+  "checks": {
+    "source_manifest_readback_assertions_passed": 12,
+    "failed": 0,
+    "method": "GitHub connector read-back plus deterministic assertions on the actual JSON and workflow; not local Node execution",
+    "github_actions": "not confirmed for this new PR head",
+    "image_sha256_rehashed": false
+  },
+  "production": {
+    "project": "snachala-uzhin-preview",
+    "state": "READY",
+    "deployed_sha": "819894450686ce5d5c5a0b1a7058218debd441e3",
+    "changed": false
+  },
+  "safety": {
+    "main_head": "0e7b6b6988c2c8307d76032ed35b2035381124e3",
+    "main_yandex_paid_schedule": "7,17,27,37,47,57 * * * *",
+    "safety_draft_pr": "https://github.com/semen89852698936-create/snachala-uzhin/pull/16",
+    "safety_pr_head": "b28ecfd41c67dc9e822c2280faf8366cc5d0fd9c",
+    "safety_not_merged": true,
+    "no_paid_calls_this_run": true
+  },
+  "blockers": [
+    "Main Yandex workflow has a scheduled paid path; separate draft PR #16 is ready for owner-approved integration but has not changed main",
+    "Three new visual rejects require exact catalog ingredient replacement briefs before canonical triage integration",
+    "Archive image source-page claims do not establish provenance or rights for specific WebP bytes",
+    "CI execution not yet confirmed for PR #18"
+  ],
+  "next_safe_action": "Extract exact ingredients and preparation for #27, #28, #30; add 3 replacement briefs and merge the addendum into the canonical visual triage in a draft branch, then continue visual inspection of 71 remaining WebP without paid generation or production changes."
+}
