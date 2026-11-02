@@ -1,0 +1,294 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-02",
+  "purpose": "Source-of-truth ingredient briefs for replacing five visually rejected archive WebP copies. These are NOT photos, licenses, or approvals.",
+  "recipe_source": {
+    "branch": "main",
+    "commit_sha": "819894450686ce5d5c5a0b1a7058218debd441e3",
+    "file": "index.html",
+    "git_blob_sha": "7b612a81830a2b253fc7184df9a8cfe501d82bb2"
+  },
+  "archive_manifest": {
+    "branch": "photo-library/restore-100-review-20261102",
+    "blob_sha": "324964784f50844e239ae97e770117ea4b3adc53",
+    "file": "photo-library/batch-100-20261101/manifest.json"
+  },
+  "rejected_count": 5,
+  "briefs": [
+    {
+      "number": 32,
+      "recipe_id": "collection-meat-02-04",
+      "recipe_title": "Свиная вырезка в духовке с паприкой и чесноком",
+      "recipe_ingredients_exact": [
+        {
+          "name": "Вырезка свиная",
+          "amount": 400,
+          "unit": "г"
+        },
+        {
+          "name": "Масло оливковое",
+          "amount": 1,
+          "unit": "ст. л."
+        },
+        {
+          "name": "Паприка копчёная",
+          "amount": 1,
+          "unit": "ч. л."
+        },
+        {
+          "name": "Чеснок",
+          "amount": 2,
+          "unit": "зубчика"
+        },
+        {
+          "name": "Соль",
+          "amount": 0,
+          "unit": "по вкусу"
+        }
+      ],
+      "preparation_reference": [
+        "Разогрей духовку до 190 °C. Промокни мясо бумажным полотенцем, приправь.",
+        "Смажь мясо маслом, положи в небольшую форму. При желании добавь немного воды на дно.",
+        "Готовь до нужной внутренней температуры: цельные куски свинины и говядины — от 63 °C с отдыхом 3 минуты. Время зависит от толщины куска.",
+        "Чеснок и паприку добавь ближе к концу готовки, прогрей 30 секунд без сильного огня.",
+        "Накрой фольгой неплотно, выдержи 5–10 минут, затем нарежь поперёк волокон."
+      ],
+      "replacement_visual_requirements": "Depict the prepared dish with visually plausible main protein and signature ingredients. Ingredient presence must be evaluated against the full recipe; invisible spices or sauces cannot be certified from pixels alone.",
+      "rejected_archive_photo": {
+        "relative_file": "photos/032-collection-meat-02-04.webp",
+        "sha256": "9987c31c6a21fae88cf292f5d8d4fbfdf216ca5239b79bb23e66bec8b4134afc",
+        "reason": "Bone-in pork chop, mushrooms and mash; not pork tenderloin with smoked paprika and garlic",
+        "source_page": "https://commons.wikimedia.org/wiki/File:Pork_Chop_with_sweet_potato_mash_and_mushrooms_in_a_demerara_sauce._(36249946845).jpg",
+        "license_claim_unverified": "CC BY 2.0"
+      },
+      "replacement_status": "not_found",
+      "license_status": "not_verified",
+      "editorial_status": "requires_independent_visual_review",
+      "owner_publication_approval": false
+    },
+    {
+      "number": 35,
+      "recipe_id": "collection-meat-02-07",
+      "recipe_title": "Свиная вырезка в духовке с луком и бальзамиком",
+      "recipe_ingredients_exact": [
+        {
+          "name": "Вырезка свиная",
+          "amount": 400,
+          "unit": "г"
+        },
+        {
+          "name": "Масло оливковое",
+          "amount": 1,
+          "unit": "ст. л."
+        },
+        {
+          "name": "Лук красный",
+          "amount": 1,
+          "unit": "шт."
+        },
+        {
+          "name": "Уксус бальзамический",
+          "amount": 1,
+          "unit": "ст. л."
+        },
+        {
+          "name": "Соль",
+          "amount": 0,
+          "unit": "по вкусу"
+        }
+      ],
+      "preparation_reference": [
+        "Разогрей духовку до 190 °C. Промокни мясо бумажным полотенцем, приправь.",
+        "Смажь мясо маслом, положи в небольшую форму. При желании добавь немного воды на дно.",
+        "Готовь до нужной внутренней температуры: цельные куски свинины и говядины — от 63 °C с отдыхом 3 минуты. Время зависит от толщины куска.",
+        "Тонко нарезанный лук томи до мягкости, добавь бальзамик и перемешай с мясом.",
+        "Накрой фольгой неплотно, выдержи 5–10 минут, затем нарежь поперёк волокон."
+      ],
+      "replacement_visual_requirements": "Depict the prepared dish with visually plausible main protein and signature ingredients. Ingredient presence must be evaluated against the full recipe; invisible spices or sauces cannot be certified from pixels alone.",
+      "rejected_archive_photo": {
+        "relative_file": "photos/035-collection-meat-02-07.webp",
+        "sha256": "4844a030e519b624312a64a290db99119707baa158a2bfb45b24981c67b7d81b",
+        "reason": "Cheesy pork-and-rice dish in tomato sauce; not tenderloin with onion and balsamic",
+        "source_page": "https://commons.wikimedia.org/wiki/File:Baked_Pork_Chop_rice_with_cheese_and_tomato_sauce.jpg",
+        "license_claim_unverified": "CC BY-SA 4.0"
+      },
+      "replacement_status": "not_found",
+      "license_status": "not_verified",
+      "editorial_status": "requires_independent_visual_review",
+      "owner_publication_approval": false
+    },
+    {
+      "number": 38,
+      "recipe_id": "collection-meat-02-10",
+      "recipe_title": "Свиная вырезка в духовке с черносливом и тмином",
+      "recipe_ingredients_exact": [
+        {
+          "name": "Вырезка свиная",
+          "amount": 400,
+          "unit": "г"
+        },
+        {
+          "name": "Масло оливковое",
+          "amount": 1,
+          "unit": "ст. л."
+        },
+        {
+          "name": "Чернослив без косточек",
+          "amount": 80,
+          "unit": "г"
+        },
+        {
+          "name": "Тмин",
+          "amount": 0.5,
+          "unit": "ч. л."
+        },
+        {
+          "name": "Соль",
+          "amount": 0,
+          "unit": "по вкусу"
+        }
+      ],
+      "preparation_reference": [
+        "Разогрей духовку до 190 °C. Промокни мясо бумажным полотенцем, приправь.",
+        "Смажь мясо маслом, положи в небольшую форму. При желании добавь немного воды на дно.",
+        "Готовь до нужной внутренней температуры: цельные куски свинины и говядины — от 63 °C с отдыхом 3 минуты. Время зависит от толщины куска.",
+        "Чернослив нарежь и добавь с тмином в последние 7 минут, при необходимости подлей немного воды.",
+        "Накрой фольгой неплотно, выдержи 5–10 минут, затем нарежь поперёк волокон."
+      ],
+      "replacement_visual_requirements": "Depict the prepared dish with visually plausible main protein and signature ingredients. Ingredient presence must be evaluated against the full recipe; invisible spices or sauces cannot be certified from pixels alone.",
+      "rejected_archive_photo": {
+        "relative_file": "photos/038-collection-meat-02-10.webp",
+        "sha256": "719bffc9167b4bd1e338552eb11c641f4f75bc1d1d48614183c726035db01012",
+        "reason": "Bone-in pork and rice with brown sauce; prunes absent",
+        "source_page": "https://commons.wikimedia.org/wiki/File:Pork_Rack_Rice_in_Black_Pepper_Sauce.jpg",
+        "license_claim_unverified": "CC BY-SA 4.0"
+      },
+      "replacement_status": "not_found",
+      "license_status": "not_verified",
+      "editorial_status": "requires_independent_visual_review",
+      "owner_publication_approval": false
+    },
+    {
+      "number": 41,
+      "recipe_id": "collection-meat-03-03",
+      "recipe_title": "Сочные тефтели из говядины с горчицей и мёдом",
+      "recipe_ingredients_exact": [
+        {
+          "name": "Фарш говяжий",
+          "amount": 400,
+          "unit": "г"
+        },
+        {
+          "name": "Яйцо",
+          "amount": 1,
+          "unit": "шт."
+        },
+        {
+          "name": "Панировочные сухари",
+          "amount": 30,
+          "unit": "г"
+        },
+        {
+          "name": "Горчица зерновая",
+          "amount": 15,
+          "unit": "г"
+        },
+        {
+          "name": "Мёд",
+          "amount": 1,
+          "unit": "ч. л."
+        },
+        {
+          "name": "Масло оливковое",
+          "amount": 1,
+          "unit": "ст. л."
+        },
+        {
+          "name": "Соль",
+          "amount": 0,
+          "unit": "по вкусу"
+        }
+      ],
+      "preparation_reference": [
+        "Смешай фарш с яйцом и сухарями, слегка посоли и поперчи. Не вымешивай слишком долго.",
+        "Скатай небольшие шарики или котлеты одинакового размера.",
+        "Обжарь партиями с небольшим количеством масла до золотистой поверхности.",
+        "Смешай горчицу с мёдом и смажь готовящееся мясо в последние 3 минуты, чтобы глазурь не подгорела.",
+        "Убавь огонь, накрой крышкой, при необходимости добавь пару ложек воды. Для фарша ориентир по термометру — не ниже 71 °C."
+      ],
+      "replacement_visual_requirements": "Depict the prepared dish with visually plausible main protein and signature ingredients. Ingredient presence must be evaluated against the full recipe; invisible spices or sauces cannot be certified from pixels alone.",
+      "rejected_archive_photo": {
+        "relative_file": "photos/041-collection-meat-03-03.webp",
+        "sha256": "bd0a2dac8349ae452ad18d470d7d386773f212c7713caf361db773fcc666a893",
+        "reason": "Baked potato with meatballs in red tomato sauce; not mustard-and-honey glazed meatballs",
+        "source_page": "https://commons.wikimedia.org/wiki/File:Jacket_potato_with_meatballs_tomato_sauce_and_cheese_and_butter_-_Potatoast_2026-05-02.jpg",
+        "license_claim_unverified": "CC0"
+      },
+      "replacement_status": "not_found",
+      "license_status": "not_verified",
+      "editorial_status": "requires_independent_visual_review",
+      "owner_publication_approval": false
+    },
+    {
+      "number": 44,
+      "recipe_id": "collection-meat-03-06",
+      "recipe_title": "Сочные тефтели из говядины с имбирём и соевым соусом",
+      "recipe_ingredients_exact": [
+        {
+          "name": "Фарш говяжий",
+          "amount": 400,
+          "unit": "г"
+        },
+        {
+          "name": "Яйцо",
+          "amount": 1,
+          "unit": "шт."
+        },
+        {
+          "name": "Панировочные сухари",
+          "amount": 30,
+          "unit": "г"
+        },
+        {
+          "name": "Имбирь свежий",
+          "amount": 15,
+          "unit": "г"
+        },
+        {
+          "name": "Соевый соус",
+          "amount": 1.5,
+          "unit": "ст. л."
+        },
+        {
+          "name": "Масло оливковое",
+          "amount": 1,
+          "unit": "ст. л."
+        },
+        {
+          "name": "Соль",
+          "amount": 0,
+          "unit": "по вкусу"
+        }
+      ],
+      "preparation_reference": [
+        "Смешай фарш с яйцом и сухарями, слегка посоли и поперчи. Не вымешивай слишком долго.",
+        "Скатай небольшие шарики или котлеты одинакового размера.",
+        "Обжарь партиями с небольшим количеством масла до золотистой поверхности.",
+        "Натри имбирь; в конце добавь его с соевым соусом, быстро выпари жидкость до блеска.",
+        "Убавь огонь, накрой крышкой, при необходимости добавь пару ложек воды. Для фарша ориентир по термометру — не ниже 71 °C."
+      ],
+      "replacement_visual_requirements": "Depict the prepared dish with visually plausible main protein and signature ingredients. Ingredient presence must be evaluated against the full recipe; invisible spices or sauces cannot be certified from pixels alone.",
+      "rejected_archive_photo": {
+        "relative_file": "photos/044-collection-meat-03-06.webp",
+        "sha256": "fd000bae9a35c252d7406c2f6a099aea7f79646db04d54563c643807918df902",
+        "reason": "Packaged 7-Eleven spaghetti; not ginger-soy beef meatballs",
+        "source_page": "https://commons.wikimedia.org/wiki/File:Spaghetti_with_Meatballs_in_Marinara_Sauce_found_in_the_cold_case_at_7-Eleven.jpg",
+        "license_claim_unverified": "CC BY-SA 4.0"
+      },
+      "replacement_status": "not_found",
+      "license_status": "not_verified",
+      "editorial_status": "requires_independent_visual_review",
+      "owner_publication_approval": false
+    }
+  ]
+}
