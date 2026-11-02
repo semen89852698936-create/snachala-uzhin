@@ -145,6 +145,10 @@ def queue_entries(items: list[dict], results: dict,
             flags.append("photographer_name_not_resolved")
         if not item.get("exact_ingredient_match_verified"):
             flags.append("ingredient_match_unverified")
+        # The "source photo title" may merely repeat the recipe title.
+        # It does not independently verify what the real photo depicts.
+        if item.get("source_photo_title") and item["source_photo_title"] == item.get("title"):
+            flags.append("source_title_repeats_recipe_title_not_independent")
         triage = editorial_signals.get(item["recipe_id"])
         if triage:
             flags.append("source_caption_requires_priority_review")
