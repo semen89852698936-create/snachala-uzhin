@@ -1,0 +1,54 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-02",
+  "project": "snachala-uzhin",
+  "work_branch": "photo-library/ai-art-visual-review-11-15-20261102",
+  "draft_pr": "https://github.com/semen89852698936-create/snachala-uzhin/pull/30",
+  "stacked_on_pr": 28,
+  "base_head_before_write": "9d01b3e1f566609610442962f73120f02d48fa58",
+  "main_head_verified_before_checkpoint": "d8000f591989a6424b92513967a764745e620b04",
+  "code_commit_sha": "0c10a83c0ffb23056b75df067c3187fc84caa8e3",
+  "source_ai_commit": "a1c30f0be8745b8996577da7e7a4a3c2b3f2f028",
+  "changed_files": [
+    "review/ai-art-eleven-to-fifteen-visual-triage-20261102.json",
+    "tests/ai-art-eleven-to-fifteen-review.test.mjs",
+    ".github/workflows/ai-art-first-five-review.yml",
+    "project-operations/ai-art-visual-review-11-15-checkpoint-20261102.json"
+  ],
+  "actual_changes": [
+    "Directly decoded five physical AI WebP #11-15 from immutable source and compared to exact recipe ingredients and plating, recording source Git blob SHAs and generation metadata references.",
+    "Two visual-match candidates (#12 ramen and #13 brownie), three culinary-review cases (#11 tomato soup, #14 baked apples, #15 chicken lemon); none approved for publication.",
+    "Added offline Node tests checking immutable file identity, recipe matching, unique coverage #1-15, exact classification counts, and fail-closed commercial-rights/publication status.",
+    "Extended editorial GitHub Actions workflow to run the new tests."
+  ],
+  "verification": {
+    "physical_ai_webp_total_from_prior_source_audit": 1001,
+    "visually_reviewed_cumulative": 15,
+    "visually_reviewed_this_run": 5,
+    "new_candidate_visual_match_unapproved": 2,
+    "new_needs_culinary_review": 3,
+    "new_rejected": 0,
+    "rejected_cumulative_from_existing_reviews": 3,
+    "new_physical_photos": 0,
+    "new_individual_rights_clearances": 0,
+    "publication_approvals": 0,
+    "technical_sha256_rehash_repeated": false,
+    "git_blob_sha_pinned_for_each_new_photo": true,
+    "editorial_ci": {
+      "status": "success",
+      "run": "https://github.com/semen89852698936-create/snachala-uzhin/actions/runs/41503752182",
+      "head_sha": "0c10a83c0ffb23056b75df067c3187fc84caa8e3",
+      "job": "metadata",
+      "step": "node --test ... ai-art-eleven-to-fifteen-review.test.mjs"
+    }
+  },
+  "blockers": [
+    "986 AI photos still lack direct visual review; rights for commercial use and owner publication approvals remain unverified.",
+    "AI WebP #5/#8/#9 remain rejected with replacement briefs only; no new physical replacements.",
+    "Main .github/workflows/yandex-ai-1001.yml still contains six paid-generation schedule triggers per hour, plus push-triggered paid produce. Safety draft PR #16 cannot be merged without explicit permission.",
+    "PR #12 half-hour workflow cron 7,37 is not active because workflow is not in main; automation/half-hour-photo-audit already technically checked 20 archival WebP and was not rehashed.",
+    "A READY Vercel deployment is not proof of browser E2E or editorial/legal approval."
+  ],
+  "next_safe_task": "Directly inspect physical AI WebP #16-20 and compare exact recipes, record source blob evidence; avoid rehashing archive files and do not make paid API calls.",
+  "constraints": "No merges, production changes, workflow dispatch, paid API calls, secrets, permissions or payments. Existing hourly automation schedule unchanged."
+}
