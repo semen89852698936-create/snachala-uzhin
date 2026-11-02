@@ -60,14 +60,19 @@
   "checks": {
     "editorial_ci_previous_success": "https://github.com/semen89852698936-create/snachala-uzhin/actions/runs/41485823243",
     "editorial_ci_latest": "https://github.com/semen89852698936-create/snachala-uzhin/actions/runs/41485957393",
-    "editorial_ci_latest_status_at_checkpoint": "queued",
+    "editorial_ci_latest_status_at_checkpoint": "success",
     "pipeline_ci_previous_failure_cause": "Pillow missing from Python environment (ModuleNotFoundError: PIL)",
     "pipeline_ci_fix": "Add setup-python 3.11 and pip install Pillow>=10,<13 to offline workflow",
     "pipeline_ci_latest": "https://github.com/semen89852698936-create/snachala-uzhin/actions/runs/41485957337",
-    "pipeline_ci_latest_status_at_checkpoint": "in_progress",
+    "pipeline_ci_latest_status_at_checkpoint": "success",
     "vercel_preview_status": "build-rate-limit (no verified new preview)",
     "production_status": "READY",
-    "production_commit": "819894450686ce5d5c5a0b1a7058218debd441e3"
+    "production_commit": "819894450686ce5d5c5a0b1a7058218debd441e3",
+    "pipeline_ci_fix_verified": true,
+    "editorial_tests_verified": true,
+    "pipeline_ci_result": "PASS after adding Pillow; no paid API calls",
+    "editorial_ci_result": "PASS offline AI metadata, reviews 1-10, replacement briefs",
+    "verified_at_utc": "2026-11-02T16:54:30Z"
   },
   "blockers": [
     "Editorial review for remaining 991 actual AI photos",
@@ -76,6 +81,6 @@
     "Yandex paid-generation schedule in main remains active; safety PR #16 is draft and requires separate authorization to merge",
     "Vercel preview build rate limit"
   ],
-  "next_safe_task": "After verifying CI for the latest branch commit, inspect actual AI WebP 11-15 against recipes and record immutable evidence in another stacked draft PR; do not regenerate or publish without approval.",
+  "next_safe_task": "Review actual AI WebP 11-15 and prepare source-pinned editorial decisions; keep all photos unpublished pending rights and owner approval.",
   "constraints": "No PR merges, production updates, secrets, permissions, paid calls or workflow dispatch. Half-hour technical cron from PR12 remains inactive."
 }
