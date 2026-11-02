@@ -1,0 +1,50 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-02",
+  "source_review": "review/ai-art-six-to-ten-visual-triage-20261102.json",
+  "purpose": "Replacement requirements only; no images generated or approved.",
+  "cost_approval_required": true,
+  "publication_allowed": false,
+  "items": [
+    {
+      "number": 8,
+      "recipe_id": "chickpeas",
+      "recipe_title": "Нут со шпинатом и паприкой",
+      "rejected_photo_blob_sha": "2d15db7385aec85e17cf13329863239d26e41da3",
+      "rejection": "Raw spinach leaves and bell pepper dominate; no evident pureed tomato sauce.",
+      "must_show": [
+        "Нут, прогретый в густом соусе из протёртых томатов",
+        "Припущенный шпинат, вмешанный в блюдо",
+        "Красноватый соус с копчёной паприкой",
+        "Готовая ресторанная подача в керамической тарелке"
+      ],
+      "must_avoid": [
+        "Свежий сладкий перец, которого нет в рецепте",
+        "Салат из сырого шпината",
+        "Сухой нут без томатной основы"
+      ],
+      "rights_status": "unverified",
+      "status": "brief_only_no_physical_replacement"
+    },
+    {
+      "number": 9,
+      "recipe_id": "focaccia",
+      "recipe_title": "Фокачча с розмарином",
+      "rejected_photo_blob_sha": "80a5c290e5e12163a757e746e4c6bbe8d17b86a7",
+      "rejection": "Photo depicts sliced toast-like bread rather than recognizably baked focaccia.",
+      "must_show": [
+        "Цельная или крупный цельный кусок выпеченной фокаччи",
+        "Золотистая поверхность с характерными углублениями от пальцев",
+        "Розмарин и оливковое масло на корочке",
+        "Аппетитная выпечка, а не тосты"
+      ],
+      "must_avoid": [
+        "Два поджаренных ломтика хлеба",
+        "Обычный тост с веточкой розмарина",
+        "Сырая или бледная заготовка"
+      ],
+      "rights_status": "unverified",
+      "status": "brief_only_no_physical_replacement"
+    }
+  ]
+}
