@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
   "date": "2026-11-02",
-  "purpose": "Independent source-page description and declared-license evidence for four high-risk archive candidates. Not a visual inspection of the actual archived WebP, not proof that the archive copy derives from the page, not rights clearance, not publication approval.",
+  "purpose": "Independent source-page description and declared-license evidence for six high-risk archive candidates. Source-page text does not establish that the archived WebP is the source file, individual rights clearance or publication approval.",
   "manifest_blob_sha": "324964784f50844e239ae97e770117ea4b3adc53",
   "archive_pr": 11,
-  "source_pages_checked": 4,
+  "source_pages_checked": 6,
   "archive_copies_visually_verified_in_this_file": 0,
   "release_approvals": 0,
   "records": [
@@ -26,6 +26,25 @@
       "license_clearance_for_archive_copy": false,
       "publication_approved": false,
       "editorial_action": "prioritize independent archive visual inspection; do not release from source-page metadata"
+    },
+    {
+      "number": 61,
+      "author": "PattayaPatrol",
+      "license": "CC BY-SA 4.0",
+      "license_terms": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source_description": "Thai Khao Moo Daeng: red barbecue pork over steamed rice with red-brown sauce, hard-boiled eggs and cucumber. The Commons page links a Flickr source and reports FlickreviewR license review on 23 October 2026.",
+      "subject_conflict": "Thai roasted pork over rice and eggs does not substantiate mustard-and-honey pork medallions.",
+      "source_line_range": "114-142",
+      "recipe_id": "collection-meat-05-03",
+      "sha256": "f672ab0de3396d31f09777483faaebc3c0efda88fbb7c40d5ce3dece2952fe24",
+      "source_page": "https://commons.wikimedia.org/wiki/File:DFC_6062_Khao_Moo_Deng_roasted_pork_over_steamed_rice_with_rich_red_sauce_served_with_sliced_hard-boiled_eggs_and_fresh_cucumber.jpg",
+      "recipe": "Медальоны из свинины с горчицей и мёдом",
+      "verification": "original_source_page_text_only",
+      "archive_copy_visual_verified": false,
+      "archive_file_provenance_verified": false,
+      "license_clearance_for_archive_copy": false,
+      "publication_approved": false,
+      "editorial_action": "Archived WebP previously rejected by separate visual triage; do not release or reuse as recipe image."
     },
     {
       "number": 63,
@@ -64,6 +83,25 @@
       "license_clearance_for_archive_copy": false,
       "publication_approved": false,
       "editorial_action": "prioritize independent archive visual inspection; do not release from source-page metadata"
+    },
+    {
+      "number": 65,
+      "author": "Gatorfan252525",
+      "license": "CC BY-SA 4.0",
+      "license_terms": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source_description": "Pork schnitzel over mashed potatoes with green beans, photographed at a restaurant in Delray Beach, Florida. Commons labels it own work.",
+      "subject_conflict": "Breaded schnitzel over mashed potatoes does not substantiate pork medallions with onion and balsamic vinegar.",
+      "source_line_range": "115-140",
+      "recipe_id": "collection-meat-05-07",
+      "sha256": "572f6b1b13e022c4dbd278aaff98eaeff2af833b3656e6573e4e3f194a4f4b59",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Pork_schnitzel_over_mashed_potatoes,_with_green_beans,_served_at_a_restaurant_in_Delray_Beach,_FL.jpg",
+      "recipe": "Медальоны из свинины с луком и бальзамиком",
+      "verification": "original_source_page_text_only",
+      "archive_copy_visual_verified": false,
+      "archive_file_provenance_verified": false,
+      "license_clearance_for_archive_copy": false,
+      "publication_approved": false,
+      "editorial_action": "Archived WebP previously rejected by separate visual triage; do not release or reuse as recipe image."
     },
     {
       "number": 67,
