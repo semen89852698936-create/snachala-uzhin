@@ -3,7 +3,7 @@
   "updated": "2026-11-02",
   "sourceNote": "BPM values from linked public tempo pages for selected releases; databases may differ by recording or half-time/double-time conventions. This list is not an automated service playlist; Spotify embeds reflect account playlists independently.",
   "targetPerPlaylist": 20,
-  "verificationStatus": "editorial tempo values cross-checked with publicly indexed song BPM pages; exact streaming recording and access remain unverified",
+  "verificationStatus": "partial",
   "streamingStatus": "Spotify embeds refer to existing user playlists; they have not been edited or BPM-audited and may not match these editorial cards.",
   "bands": {
     "cooking": {
@@ -197,11 +197,11 @@
       },
       {
         "position": 20,
-        "title": "Shape of You",
-        "artist": "Ed Sheeran",
-        "bpm": 126,
-        "source": "https://songbpm.com/%40ed-sheeran/shape-of-you-1b213a62-7a07-429d-9208-a37edcfbb1cc",
-        "verifiedAs": "public tempo database value for listed recording",
+        "title": "Don't Stop the Music",
+        "artist": "Rihanna",
+        "bpm": 123,
+        "source": "https://songbpm.com/%40rihanna/dont-stop-the-music-x0d90",
+        "verifiedAs": "public tempo estimate for named recording; exact service release not yet confirmed",
         "streamingLink": null
       }
     ],
@@ -316,11 +316,11 @@
       },
       {
         "position": 13,
-        "title": "Better Together",
-        "artist": "Jack Johnson",
-        "bpm": 94,
-        "source": "https://songbpm.com/%40jack-johnson/better-together",
-        "verifiedAs": "public tempo database value for listed recording",
+        "title": "Lucky (feat. Jason Mraz)",
+        "artist": "Colbie Caillat",
+        "bpm": 89,
+        "source": "https://songdata.io/track/2Mn7denMphSCH3wIyOEcbR/Lucky-feat-Jason-Mraz-by-Colbie-Caillat-Jason-Mraz",
+        "verifiedAs": "public tempo estimate for named recording; exact service release not yet confirmed",
         "streamingLink": null
       },
       {
@@ -336,9 +336,9 @@
         "position": 15,
         "title": "Perfect",
         "artist": "Ed Sheeran",
-        "bpm": 97,
-        "source": "https://songbpm.com/%40ed-sheeran/perfect",
-        "verifiedAs": "public tempo database value for listed recording",
+        "bpm": 95,
+        "source": "https://songbpm.com/%40ed-sheeran/perfect-usLErIci9F",
+        "verifiedAs": "public tempo estimate for named recording; exact service release not yet confirmed",
         "streamingLink": null
       },
       {
@@ -570,5 +570,5 @@
       }
     ]
   },
-  "editorialSelectionStatus": "Three complete 20-track editorial music collections; these do not alter the owner's Spotify playlists"
+  "editorialSelectionStatus": "Three 20-track editorial music collections with public BPM estimates, but not yet authenticated to exact streaming recording."
 }
