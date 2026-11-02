@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /** Editorial and rights release preflight. No image download or hash computation. */
-import { open, readFile, stat } from 'node:fs/promises';
+import { readFile, stat } from 'node:fs/promises';
 import { join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
@@ -9,23 +9,65 @@ const hasText = (s) => typeof s === 'string' && s.trim().length >= 3;
 // Evidence is a local, review-only image, never an external URL or path traversal.
 const isEvidenceRef = (s) => typeof s === 'string' && /^review\/evidence\/[A-Za-z0-9_-]+(?:\/[A-Za-z0-9_-]+)*\.(?:png|jpe?g|webp)$/i.test(s);
 
+// Structural preflight, not image decoding or proof that a screenshot depicts this recipe.
+// Rejects truncated headers, inconsistent RIFF lengths and missing image data chunks.
+function hasPlausibleImageStructure(ref, bytes) {
+  const lower = ref.toLowerCase();
+  if (lower.endsWith('.png')) {
+    const signature = Buffer.from([137, 80, 78, 71, 13, 10, 26, 10]);
+    if (bytes.length < 57 || !bytes.subarray(0, 8).equals(signature)) return false;
+    let offset = 8, first = true, hasData = false, ended = false;
+    while (offset + 12 <= bytes.length) {
+      const size = bytes.readUInt32BE(offset);
+      const kind = bytes.toString('ascii', offset + 4, offset + 8);
+      if (size > bytes.length - offset - 12) return false;
+      if (first && (kind !== 'IHDR' || size !== 13 ||
+          bytes.readUInt32BE(offset + 8) === 0 || bytes.readUInt32BE(offset + 12) === 0)) return false;
+      if (kind === 'IDAT' && size > 0) hasData = true;
+      offset += 12 + size;
+      if (kind === 'IEND') { ended = size === 0 && offset === bytes.length; break; }
+      first = false;
+    }
+    return hasData && ended;
+  }
+  if (/\\.jpe?g$/.test(lower)) {
+    if (bytes.length < 128 || bytes[0] !== 0xff || bytes[1] !== 0xd8 ||
+        bytes[bytes.length - 2] !== 0xff || bytes[bytes.length - 1] !== 0xd9) return false;
+    const sos = bytes.indexOf(Buffer.from([0xff, 0xda]));
+    const sof = [0xc0, 0xc1, 0xc2, 0xc3, 0xc5, 0xc6, 0xc7, 0xc9, 0xca, 0xcb, 0xcd, 0xce, 0xcf]
+      .some(marker => bytes.indexOf(Buffer.from([0xff, marker])) > 0);
+    return sof && sos > 0;
+  }
+  if (lower.endsWith('.webp')) {
+    if (bytes.length < 30 || bytes.toString('ascii', 0, 4) !== 'RIFF' ||
+        bytes.toString('ascii', 8, 12) !== 'WEBP' ||
+        bytes.readUInt32LE(4) + 8 !== bytes.length) return false;
+    let offset = 12, imageChunk = false;
+    while (offset + 8 <= bytes.length) {
+      const kind = bytes.toString('ascii', offset, offset + 4);
+      const size = bytes.readUInt32LE(offset + 4);
+      if (size > bytes.length - offset - 8) return false;
+      if ((kind === 'VP8 ' && size >= 10) || (kind === 'VP8L' && size >= 5) ||
+          (kind === 'ANMF' && size >= 16)) imageChunk = true;
+      offset += 8 + size + (size % 2);
+    }
+    return offset === bytes.length && imageChunk;
+  }
+  return false;
+}
+
 export async function collectExistingEvidenceFiles(records, root = '.') {
   const existing = new Set();
   for (const record of records) {
     const ref = record?.visual_evidence_ref;
     if (!isEvidenceRef(ref)) continue;
     try {
-      const info = await stat(join(root, ref));
-      if (!info.isFile() || info.size < 12) continue;
-      const handle = await open(join(root, ref), 'r');
-      try {
-        const header = Buffer.alloc(12);
-        const {bytesRead} = await handle.read(header, 0, 12, 0);
-        const png = ref.toLowerCase().endsWith('.png') && header.subarray(0, 8).equals(Buffer.from([137,80,78,71,13,10,26,10]));
-        const jpeg = /\.jpe?g$/i.test(ref) && header[0] === 0xff && header[1] === 0xd8 && header[2] === 0xff;
-        const webp = /\.webp$/i.test(ref) && header.toString('ascii', 0, 4) === 'RIFF' && header.toString('ascii', 8, 12) === 'WEBP';
-        if (bytesRead === 12 && (png || jpeg || webp)) existing.add(ref);
-      } finally { await handle.close(); }
+      const filePath = join(root, ref);
+      const info = await stat(filePath);
+      // A giant upload is not necessary for a review screenshot.
+      if (!info.isFile() || info.size < 57 || info.size > 16 * 1024 * 1024) continue;
+      const bytes = await readFile(filePath);
+      if (hasPlausibleImageStructure(ref, bytes)) existing.add(ref);
     } catch { /* A missing or unreadable file is never evidence. */ }
   }
   return existing;
