@@ -4,6 +4,8 @@ on:
     paths:
       - 'scripts/photo-release-gate.mjs'
       - 'tests/photo-release-gate.test.mjs'
+      - 'tests/replacement-briefs.test.mjs'
+      - 'review/replacement-briefs-20261102.json'
       - 'review/photo-release-decisions.json'
       - 'review/visual-triage-20261102.json'
       - 'photo-library/batch-100-20261101/manifest.json'
@@ -21,5 +23,7 @@ jobs:
           persist-credentials: false
       - name: Run offline editorial gate tests
         run: node --test tests/photo-release-gate.test.mjs
+      - name: Verify rejected-photo briefs against actual recipe ingredients
+        run: node --test tests/replacement-briefs.test.mjs
       - name: Audit release ledger without reading image bytes
         run: node scripts/photo-release-gate.mjs
