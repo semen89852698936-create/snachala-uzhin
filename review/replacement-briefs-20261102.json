@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "date": "2026-11-02",
-  "purpose": "Source-of-truth ingredient briefs for replacing five visually rejected archive WebP copies. These are NOT photos, licenses, or approvals.",
+  "purpose": "Source-of-truth ingredient and preparation briefs for 11 visually rejected archive WebP copies. These are NOT photos, licenses, or approvals.",
   "recipe_source": {
     "branch": "main",
     "commit_sha": "819894450686ce5d5c5a0b1a7058218debd441e3",
@@ -13,7 +13,7 @@
     "blob_sha": "324964784f50844e239ae97e770117ea4b3adc53",
     "file": "photo-library/batch-100-20261101/manifest.json"
   },
-  "rejected_count": 5,
+  "rejected_count": 11,
   "briefs": [
     {
       "number": 32,
@@ -111,6 +111,57 @@
         "reason": "Cheesy pork-and-rice dish in tomato sauce; not tenderloin with onion and balsamic",
         "source_page": "https://commons.wikimedia.org/wiki/File:Baked_Pork_Chop_rice_with_cheese_and_tomato_sauce.jpg",
         "license_claim_unverified": "CC BY-SA 4.0"
+      },
+      "replacement_status": "not_found",
+      "license_status": "not_verified",
+      "editorial_status": "requires_independent_visual_review",
+      "owner_publication_approval": false
+    },
+    {
+      "number": 37,
+      "recipe_id": "collection-meat-02-09",
+      "recipe_title": "Свиная вырезка в духовке с яблоком и шалфеем",
+      "recipe_ingredients_exact": [
+        {
+          "name": "Вырезка свиная",
+          "amount": 400,
+          "unit": "г"
+        },
+        {
+          "name": "Масло оливковое",
+          "amount": 1,
+          "unit": "ст. л."
+        },
+        {
+          "name": "Яблоко",
+          "amount": 1,
+          "unit": "шт."
+        },
+        {
+          "name": "Шалфей",
+          "amount": 3,
+          "unit": "листочка"
+        },
+        {
+          "name": "Соль",
+          "amount": 0,
+          "unit": "по вкусу"
+        }
+      ],
+      "preparation_reference": [
+        "Разогрей духовку до 190 °C. Промокни мясо бумажным полотенцем, приправь.",
+        "Смажь мясо маслом, положи в небольшую форму. При желании добавь немного воды на дно.",
+        "Готовь до нужной внутренней температуры: цельные куски свинины и говядины — от 63 °C с отдыхом 3 минуты. Время зависит от толщины куска.",
+        "Яблоко нарежь дольками, обжарь с шалфеем отдельно и подай рядом с мясом.",
+        "Накрой фольгой неплотно, выдержи 5–10 минут, затем нарежь поперёк волокон."
+      ],
+      "replacement_visual_requirements": "Photograph the prepared pork cut and signature ingredients indicated in the exact recipe. Show a plausible cooked presentation; invisible spices and sauce composition cannot be confirmed from pixels alone. Avoid schnitzel, bone-in chops or unrelated side dishes unless the recipe specifies them.",
+      "rejected_archive_photo": {
+        "relative_file": "photos/037-collection-meat-02-09.webp",
+        "sha256": "5484a322026e42e8b37c9ad71da7f8aa39b9e5c4ff7942dcd51852b919bfe81f",
+        "reason": "На фото нарезанная свинина с кунжутом в соусе. Яблоки и шалфей не видны; подача соответствует другому блюду с соусом из сидра.",
+        "source_page": "https://commons.wikimedia.org/wiki/File:Pork_sirloin_chop_with_cider_pan_sauce.jpg",
+        "license_claim_unverified": "CC BY-SA 2.0"
       },
       "replacement_status": "not_found",
       "license_status": "not_verified",
@@ -289,6 +340,275 @@
       "license_status": "not_verified",
       "editorial_status": "requires_independent_visual_review",
       "owner_publication_approval": false
+    },
+    {
+      "number": 61,
+      "recipe_id": "collection-meat-05-03",
+      "recipe_title": "Медальоны из свинины с горчицей и мёдом",
+      "recipe_ingredients_exact": [
+        {
+          "name": "Свинина нежирная",
+          "amount": 360,
+          "unit": "г"
+        },
+        {
+          "name": "Масло растительное",
+          "amount": 1,
+          "unit": "ст. л."
+        },
+        {
+          "name": "Горчица зерновая",
+          "amount": 15,
+          "unit": "г"
+        },
+        {
+          "name": "Мёд",
+          "amount": 1,
+          "unit": "ч. л."
+        },
+        {
+          "name": "Соль",
+          "amount": 0,
+          "unit": "по вкусу"
+        }
+      ],
+      "preparation_reference": [
+        "Обсуши кусочки, посоли и поперчи. Если есть время, оставь при комнатной температуре на 15 минут.",
+        "Разогрей сковороду, добавь масло и обжарь мясо с обеих сторон до корочки. Не перегружай сковороду.",
+        "Снизь нагрев и доведи до безопасной степени прожарки по термометру. Для цельных кусков говядины и свинины ориентир — не ниже 63 °C с отдыхом 3 минуты.",
+        "Смешай горчицу с мёдом и смажь готовящееся мясо в последние 3 минуты, чтобы глазурь не подгорела.",
+        "Переложи мясо на тёплую тарелку на 3–5 минут перед нарезкой."
+      ],
+      "replacement_visual_requirements": "Photograph the prepared pork cut and signature ingredients indicated in the exact recipe. Show a plausible cooked presentation; invisible spices and sauce composition cannot be confirmed from pixels alone. Avoid schnitzel, bone-in chops or unrelated side dishes unless the recipe specifies them.",
+      "rejected_archive_photo": {
+        "relative_file": "photos/061-collection-meat-05-03.webp",
+        "sha256": "f672ab0de3396d31f09777483faaebc3c0efda88fbb7c40d5ce3dece2952fe24",
+        "reason": "На фото нарезанная свинина в красном соусе на рисе, рядом половинки варёных яиц и огурец. Не медальоны в горчично-медовом соусе.",
+        "source_page": "https://commons.wikimedia.org/wiki/File:DFC_6062_Khao_Moo_Deng_roasted_pork_over_steamed_rice_with_rich_red_sauce_served_with_sliced_hard-boiled_eggs_and_fresh_cucumber.jpg",
+        "license_claim_unverified": "CC BY-SA 4.0"
+      },
+      "replacement_status": "not_found",
+      "license_status": "not_verified",
+      "editorial_status": "requires_independent_visual_review",
+      "owner_publication_approval": false
+    },
+    {
+      "number": 63,
+      "recipe_id": "collection-meat-05-05",
+      "recipe_title": "Медальоны из свинины с томатами и базиликом",
+      "recipe_ingredients_exact": [
+        {
+          "name": "Свинина нежирная",
+          "amount": 360,
+          "unit": "г"
+        },
+        {
+          "name": "Масло растительное",
+          "amount": 1,
+          "unit": "ст. л."
+        },
+        {
+          "name": "Томаты рубленые",
+          "amount": 160,
+          "unit": "г"
+        },
+        {
+          "name": "Базилик",
+          "amount": 5,
+          "unit": "веточки"
+        },
+        {
+          "name": "Соль",
+          "amount": 0,
+          "unit": "по вкусу"
+        }
+      ],
+      "preparation_reference": [
+        "Обсуши кусочки, посоли и поперчи. Если есть время, оставь при комнатной температуре на 15 минут.",
+        "Разогрей сковороду, добавь масло и обжарь мясо с обеих сторон до корочки. Не перегружай сковороду.",
+        "Снизь нагрев и доведи до безопасной степени прожарки по термометру. Для цельных кусков говядины и свинины ориентир — не ниже 63 °C с отдыхом 3 минуты.",
+        "Введи томаты на заключительном этапе, протуши 5 минут и посыпь свежим базиликом.",
+        "Переложи мясо на тёплую тарелку на 3–5 минут перед нарезкой."
+      ],
+      "replacement_visual_requirements": "Photograph the prepared pork cut and signature ingredients indicated in the exact recipe. Show a plausible cooked presentation; invisible spices and sauce composition cannot be confirmed from pixels alone. Avoid schnitzel, bone-in chops or unrelated side dishes unless the recipe specifies them.",
+      "rejected_archive_photo": {
+        "relative_file": "photos/063-collection-meat-05-05.webp",
+        "sha256": "a48bde0c987a62ba43b735bea1e01a8f88024553e5142d333420643d9dbd9e10",
+        "reason": "На фото панированный шницель с картофельными дольками, белым соусом и овощным гарниром. Не медальоны с томатами и базиликом.",
+        "source_page": "https://commons.wikimedia.org/wiki/File:Pork_schnitzel_with_Koskenlaskija_sauce_at_restaurant_E.T._Charlie.jpg",
+        "license_claim_unverified": "CC BY-SA 4.0"
+      },
+      "replacement_status": "not_found",
+      "license_status": "not_verified",
+      "editorial_status": "requires_independent_visual_review",
+      "owner_publication_approval": false
+    },
+    {
+      "number": 64,
+      "recipe_id": "collection-meat-05-06",
+      "recipe_title": "Медальоны из свинины с имбирём и соевым соусом",
+      "recipe_ingredients_exact": [
+        {
+          "name": "Свинина нежирная",
+          "amount": 360,
+          "unit": "г"
+        },
+        {
+          "name": "Масло растительное",
+          "amount": 1,
+          "unit": "ст. л."
+        },
+        {
+          "name": "Имбирь свежий",
+          "amount": 15,
+          "unit": "г"
+        },
+        {
+          "name": "Соевый соус",
+          "amount": 1.5,
+          "unit": "ст. л."
+        },
+        {
+          "name": "Соль",
+          "amount": 0,
+          "unit": "по вкусу"
+        }
+      ],
+      "preparation_reference": [
+        "Обсуши кусочки, посоли и поперчи. Если есть время, оставь при комнатной температуре на 15 минут.",
+        "Разогрей сковороду, добавь масло и обжарь мясо с обеих сторон до корочки. Не перегружай сковороду.",
+        "Снизь нагрев и доведи до безопасной степени прожарки по термометру. Для цельных кусков говядины и свинины ориентир — не ниже 63 °C с отдыхом 3 минуты.",
+        "Натри имбирь; в конце добавь его с соевым соусом, быстро выпари жидкость до блеска.",
+        "Переложи мясо на тёплую тарелку на 3–5 минут перед нарезкой."
+      ],
+      "replacement_visual_requirements": "Photograph the prepared pork cut and signature ingredients indicated in the exact recipe. Show a plausible cooked presentation; invisible spices and sauce composition cannot be confirmed from pixels alone. Avoid schnitzel, bone-in chops or unrelated side dishes unless the recipe specifies them.",
+      "rejected_archive_photo": {
+        "relative_file": "photos/064-collection-meat-05-06.webp",
+        "sha256": "df2a8be2f1be7890249d00f7cfbd01c962f184c1c35d03e489669f7e659e0725",
+        "reason": "На фото панированный шницель, картофель фри и густая коричневая подливка. Не свиные медальоны с имбирём и соевым соусом.",
+        "source_page": "https://commons.wikimedia.org/wiki/File:Pork_Schnitzel_With_Chips_%26_Gravy_@_Cafe_De_Vili%27s_Elizabeth_-_RV90.jpg",
+        "license_claim_unverified": "CC0"
+      },
+      "replacement_status": "not_found",
+      "license_status": "not_verified",
+      "editorial_status": "requires_independent_visual_review",
+      "owner_publication_approval": false
+    },
+    {
+      "number": 65,
+      "recipe_id": "collection-meat-05-07",
+      "recipe_title": "Медальоны из свинины с луком и бальзамиком",
+      "recipe_ingredients_exact": [
+        {
+          "name": "Свинина нежирная",
+          "amount": 360,
+          "unit": "г"
+        },
+        {
+          "name": "Масло растительное",
+          "amount": 1,
+          "unit": "ст. л."
+        },
+        {
+          "name": "Лук красный",
+          "amount": 1,
+          "unit": "шт."
+        },
+        {
+          "name": "Уксус бальзамический",
+          "amount": 1,
+          "unit": "ст. л."
+        },
+        {
+          "name": "Соль",
+          "amount": 0,
+          "unit": "по вкусу"
+        }
+      ],
+      "preparation_reference": [
+        "Обсуши кусочки, посоли и поперчи. Если есть время, оставь при комнатной температуре на 15 минут.",
+        "Разогрей сковороду, добавь масло и обжарь мясо с обеих сторон до корочки. Не перегружай сковороду.",
+        "Снизь нагрев и доведи до безопасной степени прожарки по термометру. Для цельных кусков говядины и свинины ориентир — не ниже 63 °C с отдыхом 3 минуты.",
+        "Тонко нарезанный лук томи до мягкости, добавь бальзамик и перемешай с мясом.",
+        "Переложи мясо на тёплую тарелку на 3–5 минут перед нарезкой."
+      ],
+      "replacement_visual_requirements": "Photograph the prepared pork cut and signature ingredients indicated in the exact recipe. Show a plausible cooked presentation; invisible spices and sauce composition cannot be confirmed from pixels alone. Avoid schnitzel, bone-in chops or unrelated side dishes unless the recipe specifies them.",
+      "rejected_archive_photo": {
+        "relative_file": "photos/065-collection-meat-05-07.webp",
+        "sha256": "572f6b1b13e022c4dbd278aaff98eaeff2af833b3656e6573e4e3f194a4f4b59",
+        "reason": "На фото большой панированный шницель с карамелизованным луком, зелёной фасолью и пюре. Лук есть, но основное блюдо не соответствует медальонам с бальзамиком.",
+        "source_page": "https://commons.wikimedia.org/wiki/File:Pork_schnitzel_over_mashed_potatoes,_with_green_beans,_served_at_a_restaurant_in_Delray_Beach,_FL.jpg",
+        "license_claim_unverified": "CC BY-SA 4.0"
+      },
+      "replacement_status": "not_found",
+      "license_status": "not_verified",
+      "editorial_status": "requires_independent_visual_review",
+      "owner_publication_approval": false
+    },
+    {
+      "number": 67,
+      "recipe_id": "collection-meat-05-09",
+      "recipe_title": "Медальоны из свинины с яблоком и шалфеем",
+      "recipe_ingredients_exact": [
+        {
+          "name": "Свинина нежирная",
+          "amount": 360,
+          "unit": "г"
+        },
+        {
+          "name": "Масло растительное",
+          "amount": 1,
+          "unit": "ст. л."
+        },
+        {
+          "name": "Яблоко",
+          "amount": 1,
+          "unit": "шт."
+        },
+        {
+          "name": "Шалфей",
+          "amount": 3,
+          "unit": "листочка"
+        },
+        {
+          "name": "Соль",
+          "amount": 0,
+          "unit": "по вкусу"
+        }
+      ],
+      "preparation_reference": [
+        "Обсуши кусочки, посоли и поперчи. Если есть время, оставь при комнатной температуре на 15 минут.",
+        "Разогрей сковороду, добавь масло и обжарь мясо с обеих сторон до корочки. Не перегружай сковороду.",
+        "Снизь нагрев и доведи до безопасной степени прожарки по термометру. Для цельных кусков говядины и свинины ориентир — не ниже 63 °C с отдыхом 3 минуты.",
+        "Яблоко нарежь дольками, обжарь с шалфеем отдельно и подай рядом с мясом.",
+        "Переложи мясо на тёплую тарелку на 3–5 минут перед нарезкой."
+      ],
+      "replacement_visual_requirements": "Photograph the prepared pork cut and signature ingredients indicated in the exact recipe. Show a plausible cooked presentation; invisible spices and sauce composition cannot be confirmed from pixels alone. Avoid schnitzel, bone-in chops or unrelated side dishes unless the recipe specifies them.",
+      "rejected_archive_photo": {
+        "relative_file": "photos/067-collection-meat-05-09.webp",
+        "sha256": "54a6ff4b1963251c3efd864153e6aa8cc5b74681e9def3c617cb7bf85e62a75b",
+        "reason": "На фото тонкацу: нарезанная панированная свиная котлета под тёмным соусом с капустным салатом. Не медальоны с яблоком и шалфеем.",
+        "source_page": "https://commons.wikimedia.org/wiki/File:Pork-cutlet.jpg",
+        "license_claim_unverified": "CC BY-SA 4.0"
+      },
+      "replacement_status": "not_found",
+      "license_status": "not_verified",
+      "editorial_status": "requires_independent_visual_review",
+      "owner_publication_approval": false
     }
-  ]
+  ],
+  "last_extended_from_triage": {
+    "numbers": [
+      37,
+      61,
+      63,
+      64,
+      65,
+      67
+    ],
+    "triage_file": "review/visual-triage-20261102.json",
+    "archive_manifest_sha": "324964784f50844e239ae97e770117ea4b3adc53",
+    "source_index_blob_sha": "7b612a81830a2b253fc7184df9a8cfe501d82bb2",
+    "extraction": "Parsed literal recipe objects from GitHub index.html; exact ingredient names, amounts, units and step details"
+  }
 }
