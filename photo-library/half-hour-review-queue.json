@@ -217,8 +217,8 @@
       "source_caption_risk": "not_flagged",
       "source_page": "https://unsplash.com/photos/soup-in-white-green-and-purple-floral-ceramic-bowl-bvLE5xZDj0w",
       "source_photo_title": "Томатный суп с базиликом",
-      "technical_sha256": null,
-      "technical_status": "not_checked"
+      "technical_sha256": "5ac867c69788e097af8b1682a53396c037425f08a4d5060545da501f5cd37ebb",
+      "technical_status": "technical_pass"
     },
     {
       "editorial_status": "requires_visual_review",
@@ -237,8 +237,8 @@
       "source_caption_risk": "not_flagged",
       "source_page": "https://unsplash.com/photos/a-bowl-of-ramen-with-chopsticks-and-an-egg-KRYuPwvyEys",
       "source_photo_title": "Быстрый рамен с яйцом",
-      "technical_sha256": null,
-      "technical_status": "not_checked"
+      "technical_sha256": "c6460cb2bc365fb3e19cbd3837b66b515eda20f9fe41fcec2ab76556258d30cf",
+      "technical_status": "technical_pass"
     },
     {
       "editorial_status": "requires_visual_review",
@@ -257,8 +257,8 @@
       "source_caption_risk": "not_flagged",
       "source_page": "https://unsplash.com/photos/stack-of-three-chocolate-brownies-on-a-plate-qY2aflptZMg",
       "source_photo_title": "Шоколадный брауни",
-      "technical_sha256": null,
-      "technical_status": "not_checked"
+      "technical_sha256": "e3763722a737d9df1775d8e1814a5c53aa36a8f6164dc29b0d7b6c23d20d7656",
+      "technical_status": "technical_pass"
     },
     {
       "editorial_status": "requires_visual_review",
@@ -277,8 +277,8 @@
       "source_caption_risk": "not_flagged",
       "source_page": "https://www.pexels.com/photo/baked-cinnamon-apples-in-cozy-kitchen-setting-39886178/",
       "source_photo_title": "Запечённые яблоки с корицей",
-      "technical_sha256": null,
-      "technical_status": "not_checked"
+      "technical_sha256": "8cef2d66f81136eb21286d6e6a9b9a967c460d265d7c2e7d051ab0efba6452f4",
+      "technical_status": "technical_pass"
     },
     {
       "editorial_status": "requires_visual_review",
@@ -297,8 +297,8 @@
       "source_caption_risk": "not_flagged",
       "source_page": "https://unsplash.com/photos/cooked-dish-mjcJ0FFgdWI",
       "source_photo_title": "Курица с лимоном и травами",
-      "technical_sha256": null,
-      "technical_status": "not_checked"
+      "technical_sha256": "0973039292f5e689c79d5c61ef9596736c341d474708a21b27eb458278c228fa",
+      "technical_status": "technical_pass"
     },
     {
       "editorial_status": "requires_visual_review",
