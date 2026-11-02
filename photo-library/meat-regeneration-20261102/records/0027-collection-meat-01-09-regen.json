@@ -1,0 +1,20 @@
+{
+  "n": 27,
+  "recipe_id": "collection-meat-01-09",
+  "title": "Говяжьи медальоны с яблоком и шалфеем",
+  "prompt": "Фотореалистичная фотография ГОТОВОГО блюда: Говяжьи медальоны с яблоком и шалфеем. Ингредиенты: Говяжья вырезка, Яблоко, Шалфей. Медальоны с обжаренными яблоками и листьями шалфея, без крупных гарниров. Аккуратная ресторанная подача на светлой керамике; мягкий тёплый свет, крупный план 3/4. Без сырого мяса, текста и логотипов.",
+  "original_live_path": "/assets/recipes-ai/0027-collection-meat-01-09.webp",
+  "original_git_blob_sha": "c4943dd7e99413fd0799715db18692f381acec04",
+  "path": "photo-library/meat-regeneration-20261102/photos/0027-collection-meat-01-09-regen.webp",
+  "sha256": "092a8280a5b957417f8355cff6871cb7195918757d809835a39a09703ff84ee2",
+  "bytes": 88928,
+  "size": [
+    1200,
+    900
+  ],
+  "model": "aliceai-image-art-3.0",
+  "created_at": "2026-11-02T20:59:04+00:00",
+  "status": "generated_candidate_unpublished",
+  "approved_for_publication": false,
+  "site_updated": false
+}
