@@ -13,6 +13,8 @@ on:
       - 'review/visual-triage-addendum-20261102-1042.json'
       - 'review/visual-triage-addendum-20261102-1140.json'
       - 'tests/visual-triage-27-30.test.mjs'
+      - 'tests/visual-triage-33-36.test.mjs'
+      - 'review/visual-triage-addendum-20261102-1543.json'
       - 'photo-library/batch-100-20261101/manifest.json'
       - '.github/workflows/editorial-release-gate.yml'
   workflow_dispatch:
@@ -34,5 +36,7 @@ jobs:
         run: node scripts/extract-rejected-recipe-data.mjs
       - name: Check new visual triage against immutable archive
         run: node --test tests/visual-triage-27-30.test.mjs
+      - name: Verify new direct WebP triage 33 34 36 against immutable manifest
+        run: node --test tests/visual-triage-33-36.test.mjs
       - name: Audit release ledger without reading image bytes
         run: node scripts/photo-release-gate.mjs
