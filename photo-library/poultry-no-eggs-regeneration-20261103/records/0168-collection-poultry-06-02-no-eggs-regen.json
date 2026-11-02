@@ -1,0 +1,29 @@
+{
+  "n": 168,
+  "recipe_id": "collection-poultry-06-02",
+  "title": "Нежные фрикадельки из курицы с мёдом и горчицей",
+  "ingredients_without_egg": [
+    "Фарш куриный",
+    "Сухари панировочные",
+    "Горчица дижонская",
+    "Мёд",
+    "Масло оливковое",
+    "Соль"
+  ],
+  "removed_ingredient": "Яйцо",
+  "prompt": "Фотореалистичная фотография ГОТОВОГО блюда: Нежные фрикадельки из курицы с мёдом и горчицей. Ингредиенты: Фарш куриный, Сухари панировочные, Горчица дижонская, Мёд. Несколько приготовленных куриных фрикаделек, не куски филе и не сырой фарш. СТРОГО БЕЗ ЯИЦ, ГЛАЗУНЬИ, БЕЛКА, ЯИЧНЫХ ЖЕЛТКОВ, сырых ингредиентов. Ресторанная тарелка, мягкий тёплый свет, вид 3/4, без текста.",
+  "original_live_path": "/assets/recipes-ai/0168-collection-poultry-06-02.webp",
+  "original_git_blob_sha": "970ca9072d26fcd2f99fa17a26f3f00130ac6027",
+  "path": "photo-library/poultry-no-eggs-regeneration-20261103/photos/0168-collection-poultry-06-02-no-eggs-regen.webp",
+  "sha256": "a1f7720bef12108abf40d9dd2bb2f2fc80dd3271afc568d12c2da9983093b3f7",
+  "bytes": 104394,
+  "size": [
+    1200,
+    900
+  ],
+  "model": "aliceai-image-art-3.0",
+  "created_at": "2026-11-02T21:18:13+00:00",
+  "status": "generated_candidate_unpublished",
+  "approved_for_publication": false,
+  "site_updated": false
+}
