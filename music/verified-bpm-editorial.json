@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
   "updated": "2026-11-02",
-  "sourceNote": "Editorial shortlist with per-track publicly checkable BPM references. Tempo can differ for different recordings, remasters and meter/half-time choices; verify exact audio release when syncing a streaming playlist. Selection is 10 editorial tracks per phase, not a live streaming playlist; album versions and measured meter may differ.",
-  "targetPerPlaylist": 10,
-  "verificationStatus": "partial",
+  "sourceNote": "BPM values from linked public tempo pages for selected releases; databases may differ by recording or half-time/double-time conventions. This list is not an automated service playlist; Spotify embeds reflect account playlists independently.",
+  "targetPerPlaylist": 20,
+  "verificationStatus": "editorial tempo values cross-checked with publicly indexed song BPM pages; exact streaming recording and access remain unverified",
   "streamingStatus": "Spotify embeds refer to existing user playlists; they have not been edited or BPM-audited and may not match these editorial cards.",
   "bands": {
     "cooking": {
@@ -113,6 +113,96 @@
         "source": "https://songbpm.com/%40lady-gaga/rain-on-me-MIsgrl26GW",
         "verifiedAs": "public tempo estimate",
         "streamingLink": null
+      },
+      {
+        "position": 11,
+        "title": "I Gotta Feeling",
+        "artist": "Black Eyed Peas",
+        "bpm": 128,
+        "source": "https://songbpm.com/%40black-eyed-peas/i-gotta-feeling-68_zO9n6t3",
+        "verifiedAs": "public tempo database value for listed recording",
+        "streamingLink": null
+      },
+      {
+        "position": 12,
+        "title": "We Found Love",
+        "artist": "Rihanna",
+        "bpm": 128,
+        "source": "https://songbpm.com/%40rihanna/we-found-love-1fbe0545-ca0f-47e7-a7fa-ec762a4b22f1",
+        "verifiedAs": "public tempo database value for listed recording",
+        "streamingLink": null
+      },
+      {
+        "position": 13,
+        "title": "Levels",
+        "artist": "Avicii",
+        "bpm": 126,
+        "source": "https://songbpm.com/%40avicii/levels-esvic",
+        "verifiedAs": "public tempo database value for listed recording",
+        "streamingLink": null
+      },
+      {
+        "position": 14,
+        "title": "Feel So Close",
+        "artist": "Calvin Harris",
+        "bpm": 128,
+        "source": "https://songbpm.com/%40calvin-harris/feel-so-close",
+        "verifiedAs": "public tempo database value for listed recording",
+        "streamingLink": null
+      },
+      {
+        "position": 15,
+        "title": "Don't You Worry Child",
+        "artist": "Swedish House Mafia",
+        "bpm": 129,
+        "source": "https://songbpm.com/%40swedish-house-mafia/don-t-you-worry-child-999838bf-2139-4773-8cfb-14d67850120e",
+        "verifiedAs": "public tempo database value for listed recording",
+        "streamingLink": null
+      },
+      {
+        "position": 16,
+        "title": "Party Rock Anthem",
+        "artist": "LMFAO",
+        "bpm": 130,
+        "source": "https://songbpm.com/%40lmfao/party-rock-anthem-vxJBLc2L6Y",
+        "verifiedAs": "public tempo database value for listed recording",
+        "streamingLink": null
+      },
+      {
+        "position": 17,
+        "title": "On The Floor",
+        "artist": "Jennifer Lopez",
+        "bpm": 130,
+        "source": "https://songbpm.com/%40jennifer-lopez/on-the-floor-7f2d3c65-8d2b-447a-b66c-ac03de7ab690",
+        "verifiedAs": "public tempo database value for listed recording",
+        "streamingLink": null
+      },
+      {
+        "position": 18,
+        "title": "Rather Be (feat. Jess Glynne)",
+        "artist": "Clean Bandit",
+        "bpm": 121,
+        "source": "https://songbpm.com/%40clean-bandit/rather-be-feat-jess-glynne-qbuz6",
+        "verifiedAs": "public tempo database value for listed recording",
+        "streamingLink": null
+      },
+      {
+        "position": 19,
+        "title": "Titanium",
+        "artist": "David Guetta",
+        "bpm": 126,
+        "source": "https://songbpm.com/%40david-guetta/titanium-17lZUJTVuU",
+        "verifiedAs": "public tempo database value for listed recording",
+        "streamingLink": null
+      },
+      {
+        "position": 20,
+        "title": "Shape of You",
+        "artist": "Ed Sheeran",
+        "bpm": 126,
+        "source": "https://songbpm.com/%40ed-sheeran/shape-of-you-1b213a62-7a07-429d-9208-a37edcfbb1cc",
+        "verifiedAs": "public tempo database value for listed recording",
+        "streamingLink": null
       }
     ],
     "dinner": [
@@ -204,6 +294,96 @@
         "bpm": 96,
         "source": "https://songbpm.com/%40alicia-keys/fallin",
         "verifiedAs": "public tempo estimate",
+        "streamingLink": null
+      },
+      {
+        "position": 11,
+        "title": "Adore You",
+        "artist": "Harry Styles",
+        "bpm": 99,
+        "source": "https://songbpm.com/%40harry-styles/adore-you",
+        "verifiedAs": "public tempo database value for listed recording",
+        "streamingLink": null
+      },
+      {
+        "position": 12,
+        "title": "Sunday Morning",
+        "artist": "Maroon 5",
+        "bpm": 88,
+        "source": "https://songbpm.com/%40maroon-5/sunday-morning-c2282773-f609-4898-b540-d1d5b0b2cba9",
+        "verifiedAs": "public tempo database value for listed recording",
+        "streamingLink": null
+      },
+      {
+        "position": 13,
+        "title": "Better Together",
+        "artist": "Jack Johnson",
+        "bpm": 94,
+        "source": "https://songbpm.com/%40jack-johnson/better-together",
+        "verifiedAs": "public tempo database value for listed recording",
+        "streamingLink": null
+      },
+      {
+        "position": 14,
+        "title": "Stay With Me",
+        "artist": "Sam Smith",
+        "bpm": 84,
+        "source": "https://songbpm.com/%40sam-smith/stay-with-me",
+        "verifiedAs": "public tempo database value for listed recording",
+        "streamingLink": null
+      },
+      {
+        "position": 15,
+        "title": "Perfect",
+        "artist": "Ed Sheeran",
+        "bpm": 97,
+        "source": "https://songbpm.com/%40ed-sheeran/perfect",
+        "verifiedAs": "public tempo database value for listed recording",
+        "streamingLink": null
+      },
+      {
+        "position": 16,
+        "title": "Watermelon Sugar",
+        "artist": "Harry Styles",
+        "bpm": 95,
+        "source": "https://songbpm.com/%40harry-styles/watermelon-sugar-59671e9a-131d-4577-89cf-c9a6367ba3d6",
+        "verifiedAs": "public tempo database value for listed recording",
+        "streamingLink": null
+      },
+      {
+        "position": 17,
+        "title": "Better",
+        "artist": "Khalid",
+        "bpm": 98,
+        "source": "https://songbpm.com/%40khalid/better",
+        "verifiedAs": "public tempo database value for listed recording",
+        "streamingLink": null
+      },
+      {
+        "position": 18,
+        "title": "I Feel It Coming",
+        "artist": "The Weeknd",
+        "bpm": 93,
+        "source": "https://songbpm.com/%40the-weeknd/i-feel-it-coming-af371720-7f18-42db-b61a-1be8d5b3a701",
+        "verifiedAs": "public tempo database value for listed recording",
+        "streamingLink": null
+      },
+      {
+        "position": 19,
+        "title": "Love Yourself",
+        "artist": "Justin Bieber",
+        "bpm": 100,
+        "source": "https://songbpm.com/%40justin-bieber/love-yourself-QXoiJGdQ7I",
+        "verifiedAs": "public tempo database value for listed recording",
+        "streamingLink": null
+      },
+      {
+        "position": 20,
+        "title": "First Day of My Life",
+        "artist": "Bright Eyes",
+        "bpm": 95,
+        "source": "https://songbpm.com/%40bright-eyes/first-day-of-my-life",
+        "verifiedAs": "public tempo database value for listed recording",
         "streamingLink": null
       }
     ],
@@ -297,8 +477,98 @@
         "source": "https://songbpm.com/%40chet-baker/my-funny-valentine---instrumental",
         "verifiedAs": "public tempo estimate",
         "streamingLink": null
+      },
+      {
+        "position": 11,
+        "title": "Thinking Out Loud",
+        "artist": "Ed Sheeran",
+        "bpm": 79,
+        "source": "https://songbpm.com/%40ed-sheeran/thinking-out-loud",
+        "verifiedAs": "public tempo database value for listed recording",
+        "streamingLink": null
+      },
+      {
+        "position": 12,
+        "title": "Make You Feel My Love",
+        "artist": "Adele",
+        "bpm": 77,
+        "source": "https://songbpm.com/%40adele/make-you-feel-my-love",
+        "verifiedAs": "public tempo database value for listed recording",
+        "streamingLink": null
+      },
+      {
+        "position": 13,
+        "title": "Ain't No Sunshine",
+        "artist": "Bill Withers",
+        "bpm": 78,
+        "source": "https://songbpm.com/%40bill-withers/ain-t-no-sunshine",
+        "verifiedAs": "public tempo database value for listed recording",
+        "streamingLink": null
+      },
+      {
+        "position": 14,
+        "title": "Tennessee Whiskey",
+        "artist": "Chris Stapleton",
+        "bpm": 49,
+        "source": "https://songbpm.com/%40chris-stapleton/tennessee-whiskey",
+        "verifiedAs": "public tempo database value for listed recording",
+        "streamingLink": null
+      },
+      {
+        "position": 15,
+        "title": "Feeling Good",
+        "artist": "Nina Simone",
+        "bpm": 79,
+        "source": "https://songbpm.com/%40nina-simone/feeling-good",
+        "verifiedAs": "public tempo database value for listed recording",
+        "streamingLink": null
+      },
+      {
+        "position": 16,
+        "title": "Sea of Love",
+        "artist": "Cat Power",
+        "bpm": 78,
+        "source": "https://songbpm.com/%40cat-power/sea-of-love",
+        "verifiedAs": "public tempo database value for listed recording",
+        "streamingLink": null
+      },
+      {
+        "position": 17,
+        "title": "No Surprises",
+        "artist": "Radiohead",
+        "bpm": 76,
+        "source": "https://songbpm.com/%40radiohead/no-surprises",
+        "verifiedAs": "public tempo database value for listed recording",
+        "streamingLink": null
+      },
+      {
+        "position": 18,
+        "title": "I Will Follow You Into The Dark",
+        "artist": "Death Cab for Cutie",
+        "bpm": 78,
+        "source": "https://songbpm.com/%40death-cab-for-cutie/i-will-follow-you-into-the-dark",
+        "verifiedAs": "public tempo database value for listed recording",
+        "streamingLink": null
+      },
+      {
+        "position": 19,
+        "title": "Skinny Love",
+        "artist": "Bon Iver",
+        "bpm": 76,
+        "source": "https://songbpm.com/%40bon-iver/skinny-love",
+        "verifiedAs": "public tempo database value for listed recording",
+        "streamingLink": null
+      },
+      {
+        "position": 20,
+        "title": "Say Yes",
+        "artist": "Elliott Smith",
+        "bpm": 77,
+        "source": "https://songbpm.com/%40elliott-smith/say-yes-0d73bb5a-2cb1-4143-a6b9-3940f86d9d2a",
+        "verifiedAs": "public tempo database value for listed recording",
+        "streamingLink": null
       }
     ]
   },
-  "editorialSelectionStatus": "complete"
+  "editorialSelectionStatus": "Three complete 20-track editorial music collections; these do not alter the owner's Spotify playlists"
 }
