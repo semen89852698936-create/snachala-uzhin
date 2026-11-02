@@ -1,0 +1,26 @@
+name: Verify 42 pastry photos without eggs
+on:
+  push:
+    branches: [feature/music-20-and-pastry-check-20261102]
+    paths:
+      - 'index.html'
+      - 'full-catalog/index.html'
+      - 'photo-library/pastry-no-eggs-review.json'
+      - 'scripts/test_pastry_replacements.py'
+  pull_request:
+    paths:
+      - 'index.html'
+      - 'full-catalog/index.html'
+      - 'photo-library/pastry-no-eggs-review.json'
+      - 'scripts/test_pastry_replacements.py'
+permissions:
+  contents: read
+jobs:
+  pastry:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+        with:
+          persist-credentials: false
+      - name: Check photo filenames, recipe mappings and real WebP sizes
+        run: python3 -m unittest discover -s scripts -p 'test_pastry_replacements.py' -v
