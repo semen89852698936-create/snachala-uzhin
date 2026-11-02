@@ -1,13 +1,13 @@
 {
-  "updated_at": "2026-11-02T13:24:44+00:00",
+  "updated_at": "2026-11-02T13:27:59+00:00",
   "total_recipes": 1001,
-  "verified_webp": 680,
-  "physical_webp_files": 680,
-  "metadata_records": 680,
-  "missing_count": 321,
+  "verified_webp": 703,
+  "physical_webp_files": 703,
+  "metadata_records": 703,
+  "missing_count": 298,
   "first_missing_recipe_number": 546,
   "uncertain_paid_requests": 1,
-  "refused_by_model_count": 8,
+  "refused_by_model_count": 10,
   "refused_recipe_numbers": [
     615,
     625,
@@ -16,7 +16,9 @@
     655,
     665,
     675,
-    685
+    685,
+    695,
+    705
   ],
   "unprocessed_raw_checkpoints": 0,
   "problem_count": 0,
