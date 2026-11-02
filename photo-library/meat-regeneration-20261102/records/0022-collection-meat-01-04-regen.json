@@ -1,0 +1,20 @@
+{
+  "n": 22,
+  "recipe_id": "collection-meat-01-04",
+  "title": "Говяжьи медальоны с паприкой и чесноком",
+  "prompt": "Фотореалистичная фотография ГОТОВОГО блюда: Говяжьи медальоны с паприкой и чесноком. Ингредиенты: Говяжья вырезка, Паприка копчёная, Чеснок. Медальоны с красной паприкой и чесноком, без овощного ассорти и картофеля фри. Аккуратная ресторанная подача на светлой керамике; мягкий тёплый свет, крупный план 3/4. Без сырого мяса, текста и логотипов.",
+  "original_live_path": "/assets/recipes-ai/0022-collection-meat-01-04.webp",
+  "original_git_blob_sha": "96b2d554470ae11b38a4eebe3225ca65dfd46d23",
+  "path": "photo-library/meat-regeneration-20261102/photos/0022-collection-meat-01-04-regen.webp",
+  "sha256": "fc7e4092ae5d3ce9bc6f22eda0ac8b762bd7cfc869c6ab1d5284a1ac9614fb01",
+  "bytes": 75686,
+  "size": [
+    1200,
+    900
+  ],
+  "model": "aliceai-image-art-3.0",
+  "created_at": "2026-11-02T20:58:38+00:00",
+  "status": "generated_candidate_unpublished",
+  "approved_for_publication": false,
+  "site_updated": false
+}
