@@ -61,6 +61,7 @@ def report_status(manifest=MANIFEST, photo_base=PHOTO_BASE):
     actual_photos = list((directory / "photos").glob("*.webp")) if (directory / "photos").exists() else []
     actual_records = list((directory / "records").glob("*.json")) if (directory / "records").exists() else []
     uncertainty = list((directory / "uncertain").glob("*.json")) if (directory / "uncertain").exists() else []
+    rejected = list((directory / "rejected").glob("*.json")) if (directory / "rejected").exists() else []
     raw_checkpoints = list((directory / "raw-checkpoint").glob("*")) if (directory / "raw-checkpoint").exists() else []
     return {
         "updated_at": datetime.now(timezone.utc).isoformat(timespec="seconds"),
@@ -71,6 +72,8 @@ def report_status(manifest=MANIFEST, photo_base=PHOTO_BASE):
         "missing_count": len(missing),
         "first_missing_recipe_number": missing[0] if missing else None,
         "uncertain_paid_requests": len(uncertainty),
+        "refused_by_model_count": len(rejected),
+        "refused_recipe_numbers": sorted(int(p.name[:4]) for p in rejected),
         "unprocessed_raw_checkpoints": len(raw_checkpoints),
         "problem_count": len(problems),
         "problems": problems[:100],
