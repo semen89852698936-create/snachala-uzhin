@@ -6,13 +6,14 @@ import { fileURLToPath } from 'node:url';
 const isUrl = (s) => typeof s === 'string' && /^https:\/\/[^\s]+$/.test(s);
 const hasText = (s) => typeof s === 'string' && s.trim().length >= 3;
 
-export function auditRelease(manifest, ledger) {
+export function auditRelease(manifest, ledger, triage = {records: []}) {
   const sources = manifest?.sources;
   if (!Array.isArray(sources) || sources.length !== 100) throw new Error('Expected 100 source records');
   if (ledger?.schema_version !== 1 || !Array.isArray(ledger?.release_candidates))
     throw new Error('Invalid release ledger schema');
   const byId = new Map(sources.map((x) => [x.recipe_id, x]));
   if (byId.size !== 100) throw new Error('Duplicate recipe IDs in manifest');
+  const rejected = new Set((triage.records || []).filter(x => x.visual_status === 'reject_for_recipe').map(x => x.recipe_id + ':' + x.image_sha256));
   const seen = new Set();
   const errors = [];
   const cleared = [];
@@ -24,6 +25,7 @@ export function auditRelease(manifest, ledger) {
     const item = byId.get(id);
     if (!item) { errors.push(id + ': unknown recipe_id'); continue; }
     const missing = [];
+    if (rejected.has(id + ':' + item.sha256)) missing.push('visual_triage_rejected_archive_copy');
     if (record.reviewed_image_sha256 !== item.sha256) missing.push('reviewed_image_sha256 does not match archive');
     if (record.reviewed_source_page !== item.source_page) missing.push('reviewed_source_page does not match manifest');
     if (record.visual_match_confirmed !== true) missing.push('visual_match_confirmed');
@@ -63,7 +65,8 @@ export function auditRelease(manifest, ledger) {
 async function main() {
   const manifest = JSON.parse(await readFile('photo-library/batch-100-20261101/manifest.json', 'utf8'));
   const ledger = JSON.parse(await readFile('review/photo-release-decisions.json', 'utf8'));
-  const result = auditRelease(manifest, ledger);
+  const triage = JSON.parse(await readFile('review/visual-triage-20261102.json', 'utf8'));
+  const result = auditRelease(manifest, ledger, triage);
   console.log(JSON.stringify(result, null, 2));
   if (result.errors.length || (process.argv.includes('--require-ready') && result.blocked_from_release > 0))
     process.exitCode = 1;

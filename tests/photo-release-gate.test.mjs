@@ -99,3 +99,13 @@ test('license and URL must match source manifest', () => {
   assert.match(r.errors[0], /verified_license/);
   assert.match(r.errors[0], /license URL mismatch/);
 });
+
+test('visual rejection of exact archive bytes blocks release even with completed ledger', () => {
+  const {manifest, ledger} = fixtures();
+  const c = valid(manifest.sources[0]);
+  ledger.release_candidates.push(c);
+  const triage = {records:[{recipe_id:c.recipe_id,image_sha256:c.reviewed_image_sha256,visual_status:'reject_for_recipe'}]};
+  const r = auditRelease(manifest, ledger, triage);
+  assert.equal(r.cleared_for_editorial_release, 0);
+  assert.match(r.errors[0], /visual_triage_rejected_archive_copy/);
+});

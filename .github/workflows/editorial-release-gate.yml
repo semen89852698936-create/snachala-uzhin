@@ -5,6 +5,7 @@ on:
       - 'scripts/photo-release-gate.mjs'
       - 'tests/photo-release-gate.test.mjs'
       - 'review/photo-release-decisions.json'
+      - 'review/visual-triage-20261102.json'
       - 'photo-library/batch-100-20261101/manifest.json'
       - '.github/workflows/editorial-release-gate.yml'
   workflow_dispatch:
