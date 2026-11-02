@@ -2,7 +2,7 @@
   "schema_version": 1,
   "date": "2026-11-02",
   "project": "snachala-uzhin",
-  "stage": "17 archived WebP visually inspected, 15 rejected, 2 unresolved; exact replacement briefs 15/15; 17/17 release-gate tests and 5/5 brief tests PASS; 0/100 cleared",
+  "stage": "21 archived WebP visually reviewed, 19 rejected, 2 unresolved; exact replacement briefs 19/19; 17/17 release-gate tests + 6/6 brief tests PASS in CI; 0/100 cleared",
   "source_pr_11": {
     "url": "https://github.com/semen89852698936-create/snachala-uzhin/pull/11",
     "head_sha": "13c3ad45758b9e92ed0df906bd4667c84932aa69"
@@ -19,9 +19,9 @@
     "visual_triage_commit_sha": "63e869186f3eda97cee07520f2f24dc9b9aed6bf",
     "latest_code_commit_sha": "1f0274b2f3ee9fcc3aa400851be6fa1b091952c9",
     "latest_test_commit_sha": "047137c4e61461f4ceee4a4ffa77910b05bd82c3",
-    "head_before_checkpoint": "047137c4e61461f4ceee4a4ffa77910b05bd82c3",
-    "latest_artifact_commit_sha": "047137c4e61461f4ceee4a4ffa77910b05bd82c3",
-    "latest_visual_triage_commit_sha": "4e55de6602c16667fbe2610ad18d6274ec6be57e"
+    "head_before_checkpoint": "776f41c9fedab2faef962af75f5593f4e3b69090",
+    "latest_artifact_commit_sha": "776f41c9fedab2faef962af75f5593f4e3b69090",
+    "latest_visual_triage_commit_sha": "1b83e0818a292f083a284c402e364222c0ef06a5"
   },
   "source_manifest_blob_sha": "324964784f50844e239ae97e770117ea4b3adc53",
   "changed_files": [
@@ -38,17 +38,17 @@
     "tests/replacement-briefs.test.mjs"
   ],
   "checks": {
-    "local_node_tests": "No local tests; GitHub Actions run 41402029863 confirms 17/17 release-gate and 5/5 replacement-brief tests. Recipe extraction script found 0 missing briefs.",
+    "local_node_tests": "No local Node execution; independent connector-side manifest/brief/triage reconciliation: 48 comparisons, 0 errors. GitHub Actions 41423395989: 17/17 gate tests + 6/6 brief tests passed; 0 unbriefed rejects; 0 cleared, 100 blocked.",
     "github_actions": {
-      "run_id": 41402029863,
+      "run_id": 41423395989,
       "conclusion": "success",
-      "commit_sha": "047137c4e61461f4ceee4a4ffa77910b05bd82c3",
-      "url": "https://github.com/semen89852698936-create/snachala-uzhin/actions/runs/41402029863",
+      "commit_sha": "22bd2f196b004f7f6ca4ec5eeeb7e823891510e4",
+      "url": "https://github.com/semen89852698936-create/snachala-uzhin/actions/runs/41423395989",
       "job": "release-gate",
       "steps": [
         "17/17 release-gate tests passed",
-        "5/5 replacement-brief tests passed",
-        "Catalog extractor found 0 unbriefed visual rejects",
+        "6/6 replacement-brief tests passed (including addendum reconciliation)",
+        "Catalog extractor found 0 unbriefed rejects",
         "release ledger: 0 cleared, 100 blocked"
       ]
     },
@@ -64,8 +64,8 @@
     "metadata_license_url_missing": 17,
     "attribution_license_entries": 72,
     "archive_without_files_for_remaining_recipes": 901,
-    "visually_inspected_archive_copies": 17,
-    "visually_rejected_for_recipe": 15,
+    "visually_inspected_archive_copies": 21,
+    "visually_rejected_for_recipe": 19,
     "visually_partial_match": 1,
     "visually_possible_match_not_approved": 1,
     "legally_verified": 0
@@ -85,7 +85,6 @@
     "note": "Read-only status, not a browser acceptance test"
   },
   "blockers": [
-    "No independently evidenced image-by-image visual ingredient review for 100 archive copies",
     "No per-image legal rights clearance and attribution evidence",
     "Approved production copies 6,10,20 differ from archive and require explicit reapproval",
     "901 other recipes still lack a physical archived image",
@@ -94,17 +93,21 @@
     "Several source recipe step titles have grammatical errors and require editorial cleanup in a separate safe PR",
     "Source-page subjects for archive candidates #37,63,64,67 conflict with recipe descriptions; physical WebP-to-source identity not independently verified",
     "Visual evidence file signature preflight does not establish content authenticity or rights",
-    "15 of 17 visually inspected archive copies are rejected; all 15 have exact replacement briefs but none has a new physical licensed replacement"
+    "79 archive WebP still need direct visual review; 19 rejected copies have exact briefs but no physically verified replacement images"
   ],
-  "next_safe_action": "Continue direct visual review of 83 remaining archived WebP (no technical rehash), then source physically available matching replacements for the 15 rejected photos with image-specific license and author evidence; do not publish until owner approval.",
-  "publication": "PR #11, #12, #13 remain draft. No main or production changes; GitHub half-hour cron still inactive.",
+  "next_safe_action": "Directly inspect next unreviewed archive WebP against exact recipe; record image-specific evidence. In parallel source physical matching replacements for 19 rejects with author/license provenance. Do not rehash unchanged files or publish without owner approval.",
+  "publication": "PR #11, #12, #13, #14 remain draft; main and production not changed by this run; half-hour GitHub cron still inactive.",
   "visual_triage": {
     "path": "review/visual-triage-20261102.json",
     "rejected_numbers": [
+      21,
+      26,
+      31,
       32,
       35,
       37,
       38,
+      40,
       41,
       44,
       61,
@@ -120,22 +123,22 @@
     "partial_number": 4,
     "possible_number": 5,
     "evidence": "Rendered actual archived WebP bytes fetched via GitHub connector at immutable PR #11 commit 13c3ad45758b9e92ed0df906bd4667c84932aa69, plus source-page textual cross-check; archive file SHA from manifest not rehashed.",
-    "reviewed_total": 13,
-    "rejected_total": 11,
+    "reviewed_total": 21,
+    "rejected_total": 19,
     "latest_commit_sha": "5daca3e9188b503e0713d7c957ff486546653038",
-    "reviewed": 17,
-    "rejected": 15,
+    "reviewed": 21,
+    "rejected": 19,
     "partial": 1,
     "possible": 1,
     "source_path": "review/visual-triage-20261102.json",
-    "source_blob_sha": "f1255bb63df3e1898de843a1ebbb9e5868911eb8",
+    "source_blob_sha": "7345a368b2acba6eea69aa36613172c04bea057d",
     "last_added": [
-      68,
-      86,
-      87,
-      99
+      21,
+      26,
+      31,
+      40
     ],
-    "newly_rejected_commit": "4e55de6602c16667fbe2610ad18d6274ec6be57e"
+    "newly_rejected_commit": "1b83e0818a292f083a284c402e364222c0ef06a5"
   },
   "release_gate_hardening": {
     "files": [
@@ -155,15 +158,19 @@
   },
   "replacement_briefs": {
     "path": "review/replacement-briefs-20261102.json",
-    "commit_sha": "047137c4e61461f4ceee4a4ffa77910b05bd82c3",
-    "blob_sha": "b3e5a40384b3e85c1a244ad4175057d4ec85df6f",
+    "commit_sha": "36fbf217432d14ceb49e5c69cf940223b3b48871",
+    "blob_sha": "86a6b692a684c55f99e0bf55315972961b175c5a",
     "source_index_blob_sha": "7b612a81830a2b253fc7184df9a8cfe501d82bb2",
     "source_main_sha": "819894450686ce5d5c5a0b1a7058218debd441e3",
     "rejected_archive_numbers": [
+      21,
+      26,
+      31,
       32,
       35,
       37,
       38,
+      40,
       41,
       44,
       61,
@@ -181,6 +188,10 @@
       5,
       5,
       5,
+      5,
+      5,
+      5,
+      7,
       7,
       7,
       5,
@@ -193,7 +204,7 @@
       6,
       5
     ],
-    "checks": "All 15 rejected images have exact catalog ingredients and steps, validated against immutable main index.html and PR #11 manifest by GitHub Actions run 41402029863 (5/5 tests).",
+    "checks": "All 19 rejected images have exact ingredients and steps; GitHub Actions 41423395989 passed 6/6 replacement tests, 17/17 release-gate tests, 0 missing briefs.",
     "new_photos_added": 0,
     "licenses_cleared": 0
   },
@@ -422,5 +433,56 @@
       "901 other recipes have no physical archive photo"
     ],
     "next_task": "Inspect next unreviewed archive WebP and record visual evidence with exact recipe ingredients; continue search for licensed physical replacements"
+  },
+  "latest_run_20261102_0946_utc": {
+    "verified_utc": "2026-11-02T09:46:52Z",
+    "pr13_head_before_checkpoint": "776f41c9fedab2faef962af75f5593f4e3b69090",
+    "source_pr11_head": "13c3ad45758b9e92ed0df906bd4667c84932aa69",
+    "source_main_catalog_blob": "7b612a81830a2b253fc7184df9a8cfe501d82bb2",
+    "files_changed": [
+      "review/replacement-briefs-20261102.json",
+      "review/visual-triage-20261102.json",
+      "tests/replacement-briefs.test.mjs",
+      ".github/workflows/editorial-release-gate.yml",
+      "review/VISUAL_TRIAGE_20261102.md",
+      "project-operations/photo-release-gate-checkpoint-20261102.json"
+    ],
+    "content_commits": [
+      "36fbf217432d14ceb49e5c69cf940223b3b48871",
+      "1b83e0818a292f083a284c402e364222c0ef06a5",
+      "94b17fece12d1da6fda3d1d3447bf7746f7cb5bd",
+      "22bd2f196b004f7f6ca4ec5eeeb7e823891510e4",
+      "776f41c9fedab2faef962af75f5593f4e3b69090"
+    ],
+    "reviewed_total": 21,
+    "rejected_total": 19,
+    "unresolved_total": 2,
+    "remaining_unreviewed": 79,
+    "briefs_total": 19,
+    "legal_clearances": 0,
+    "release_clearances": 0,
+    "new_physical_images": 0,
+    "validation": {
+      "connector_reconciliation": "48 checks, 0 errors",
+      "github_actions_run_id": 41423395989,
+      "github_actions_conclusion": "success",
+      "release_gate_tests": "17/17",
+      "replacement_tests": "6/6",
+      "missing_replacement_briefs": 0,
+      "release_ledger": "0 cleared, 100 blocked"
+    },
+    "technical_audit": {
+      "branch": "automation/half-hour-photo-audit",
+      "verified": 20,
+      "remaining": 80,
+      "technical_rehash_in_this_run": 0
+    },
+    "production": {
+      "deployment_id": "dpl_5GCmpxjRSPWpAYYaP89kNai1eFkC",
+      "status": "READY",
+      "commit_sha": "819894450686ce5d5c5a0b1a7058218debd441e3",
+      "note": "Read-only deployment metadata, not a browser test"
+    },
+    "next_task": "Inspect remaining 79 WebP visually, find 19 physical replacements and verify rights individually."
   }
 }
