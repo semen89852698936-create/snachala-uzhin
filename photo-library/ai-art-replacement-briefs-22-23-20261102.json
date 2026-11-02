@@ -1,0 +1,51 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-02",
+  "source_review": "review/ai-art-twentyone-to-twentyfive-visual-triage-20261102.json",
+  "source_recipe_commit": "a1c30f0be8745b8996577da7e7a4a3c2b3f2f028",
+  "purpose": "Editorial replacement briefs only for mismatched regenerated photos; no new images generated or authorized by this review.",
+  "cost_approval_required": true,
+  "publication_allowed": false,
+  "items": [
+    {
+      "number": 22,
+      "recipe_id": "collection-meat-01-04",
+      "recipe_title": "Говяжьи медальоны с паприкой и чесноком",
+      "rejected_photo_blob_sha": "e394beb9fe367635b124c9e7a6d58e5430d1e040",
+      "rejection": "Large strips of fresh red bell pepper, which is absent from the recipe; smoked paprika powder is not fresh pepper.",
+      "must_show": [
+        "Готовые говяжьи медальоны с аккуратной корочкой",
+        "Копчёная паприка в виде приправы на мясе, не свежий болгарский перец",
+        "Чеснок как ароматическая добавка, без крупных дополнительных гарниров",
+        "Светлая керамика и тёплая ресторанная подача"
+      ],
+      "must_avoid": [
+        "Полоски свежего сладкого перца и овощное ассорти",
+        "Сырое мясо, картофель фри, дополнительные крупные гарниры",
+        "Текст, логотипы, чужие предметы"
+      ],
+      "rights_status": "unverified",
+      "status": "brief_only_no_physical_replacement"
+    },
+    {
+      "number": 23,
+      "recipe_id": "collection-meat-01-05",
+      "recipe_title": "Говяжьи медальоны с томатами и базиликом",
+      "rejected_photo_blob_sha": "7a3d3a76d7cfea8841e6b2f9ca3d18aab826ac74",
+      "rejection": "Yellow corn kernels are clearly visible but absent from the recipe and expressly forbidden in previous regeneration brief.",
+      "must_show": [
+        "Готовые говяжьи медальоны",
+        "Рубленые томаты, соединённые с мясом как часть блюда",
+        "Свежий базилик как узнаваемая зелень",
+        "Ресторанная подача без посторонних гарниров"
+      ],
+      "must_avoid": [
+        "Кукуруза и другие незаявленные ингредиенты",
+        "Спагетти, картофель и отдельный гарнир",
+        "Сырое мясо, текст и логотипы"
+      ],
+      "rights_status": "unverified",
+      "status": "brief_only_no_physical_replacement"
+    }
+  ]
+}
