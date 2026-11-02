@@ -2,7 +2,7 @@
   "schema_version": 1,
   "date": "2026-11-02",
   "project": "snachala-uzhin",
-  "stage": "11 source-verified ingredient replacement briefs; 6 Commons source pages reviewed; 20/20 editorial CI tests PASS; 13 archived images visually inspected (11 rejected); 0 approved",
+  "stage": "Structural evidence validation strengthened; 17/17 release-gate tests and 5/5 ingredient/Commons tests PASS; 13 archive WebP visually reviewed (11 rejected); 0/100 cleared",
   "source_pr_11": {
     "url": "https://github.com/semen89852698936-create/snachala-uzhin/pull/11",
     "head_sha": "13c3ad45758b9e92ed0df906bd4667c84932aa69"
@@ -17,9 +17,9 @@
     "base_branch": "photo-library/restore-100-review-20261102",
     "code_commit_sha": "ee2f7bd1071ae012687ab270903475615bf07c13",
     "visual_triage_commit_sha": "63e869186f3eda97cee07520f2f24dc9b9aed6bf",
-    "latest_code_commit_sha": "61df94730d1673698590a4f8506f8f7bfafea171",
-    "latest_test_commit_sha": "1dc94e87d76739a083a218504525f1cd42f185dd",
-    "head_before_checkpoint": "1dc94e87d76739a083a218504525f1cd42f185dd",
+    "latest_code_commit_sha": "05e9f06232c44d72c892a2fb6bbdf002468cd7c6",
+    "latest_test_commit_sha": "380bf0bdf3d20aeacb3dc7a257248167aae52b93",
+    "head_before_checkpoint": "380bf0bdf3d20aeacb3dc7a257248167aae52b93",
     "latest_artifact_commit_sha": "d50098026ee62ec5df28a2e063582ab0037d0cce",
     "latest_visual_triage_commit_sha": "5daca3e9188b503e0713d7c957ff486546653038"
   },
@@ -38,21 +38,21 @@
     "tests/replacement-briefs.test.mjs"
   ],
   "checks": {
-    "local_node_tests": "Not run locally; verified 15/15 in GitHub Actions job logs",
+    "local_node_tests": "Not run locally; GitHub Actions run 41395535079 confirms 17/17 release-gate tests and 5/5 replacement tests",
     "github_actions": {
-      "run_id": 41390428410,
+      "run_id": 41395535079,
       "conclusion": "success",
-      "commit_sha": "13f349e1994ba2191a5a0bc264aadea798937b56",
-      "url": "https://github.com/semen89852698936-create/snachala-uzhin/actions/runs/41390428410",
+      "commit_sha": "380bf0bdf3d20aeacb3dc7a257248167aae52b93",
+      "url": "https://github.com/semen89852698936-create/snachala-uzhin/actions/runs/41395535079",
       "job": "release-gate",
       "steps": [
-        "15/15 offline release-gate tests passed",
-        "5/5 exact-ingredient, manifest, triage and Commons metadata tests passed",
+        "17/17 offline release-gate tests passed",
+        "5/5 ingredient/manifest/triage/Commons tests passed",
         "release ledger audit: 0 cleared, 100 blocked"
       ]
     },
     "rehashed_existing_webp_in_this_run": 0,
-    "release_gate_review": "Source-code audit, GitHub Actions and source-page metadata research; no new visual inspection of archive WebP, no full legal clearance",
+    "release_gate_review": "Code and CI structural evidence validation; no new archived WebP visually inspected, no new license clearance or replacement image",
     "source_page_review": "Read Wikimedia Commons original pages #61 and #65 for author, license declaration and subject; no WebP identity/provenance verification"
   },
   "evidence_counters": {
@@ -182,10 +182,10 @@
     "test_commit": "ceb05261228d5dd0180924092604fb4ca1316d1a",
     "requirements": [
       "Only local review/evidence PNG, JPEG or WebP paths without traversal",
-      "File must physically exist and be nonempty",
-      "First 12 bytes must match expected image format signature"
+      "File must exist, be 57 bytes to 16 MiB, and have a structurally plausible image container",
+      "PNG requires IHDR dimensions, nonempty IDAT and terminal IEND; JPEG requires SOI, SOF, SOS and EOI; WebP requires consistent RIFF length and image chunk"
     ],
-    "limitation": "Image header is not proof of image content authenticity, correct dish, licensing, or actual reviewer approval"
+    "limitation": "Structural plausibility is not a full decoder, image authenticity check, dish match, legal rights review or owner approval"
   },
   "commons_source_page_research": {
     "path": "review/commons-source-page-evidence-20261102.json",
@@ -283,5 +283,45 @@
       "Half-hour GitHub schedule in draft PR #12 is not active"
     ],
     "next_safe_action": "Inspect next unreviewed high-risk archive WebP directly, then search/source matching physical replacement candidates with documented author and rights; do not conflate source pages with image files."
+  },
+  "latest_run_20261102_0542_utc": {
+    "task": "Harden structural validation of reviewer evidence screenshots without rehashing archived photos",
+    "code_files": [
+      "scripts/photo-release-gate.mjs",
+      "tests/photo-release-gate.test.mjs"
+    ],
+    "code_commits": [
+      "e71e8f1628c55b4274497708367b4717d01712c2",
+      "ed9b98093317ad79413d3a795d7cf094dc65ce6a",
+      "05e9f06232c44d72c892a2fb6bbdf002468cd7c6",
+      "380bf0bdf3d20aeacb3dc7a257248167aae52b93"
+    ],
+    "pr": 13,
+    "head_before_checkpoint": "380bf0bdf3d20aeacb3dc7a257248167aae52b93",
+    "github_actions": {
+      "url": "https://github.com/semen89852698936-create/snachala-uzhin/actions/runs/41395535079",
+      "conclusion": "success",
+      "release_gate_tests": 17,
+      "replacement_brief_tests": 5,
+      "release_cleared": 0,
+      "release_blocked": 100
+    },
+    "archive_webp_rehashed": 0,
+    "new_physical_images": 0,
+    "new_visual_reviews": 0,
+    "new_legal_clearances": 0,
+    "half_hour_audit_unchanged": {
+      "verified": 20,
+      "total": 100,
+      "ref": "automation/half-hour-photo-audit"
+    },
+    "production_unchanged": true,
+    "blockers": [
+      "87 archive copies remain without visual triage",
+      "11 rejected photos still lack physical replacements",
+      "100 archive candidates lack complete provenance and rights clearance",
+      "Github cron in PR #12 is not scheduled while outside main"
+    ],
+    "next_safe_task": "Inspect additional unreviewed high-risk archived WebP and search for exact-match replacement images with documented rights; do not count source URLs as files."
   }
 }
