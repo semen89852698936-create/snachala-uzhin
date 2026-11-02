@@ -1,0 +1,11 @@
+{
+  "n": 173,
+  "recipe_id": "collection-poultry-06-07",
+  "prompt_sha256": "71e73dc630cb058ef5da50e97b48320021cd1420723eb06721ac746a361417c1",
+  "status": "generated_candidate_unpublished",
+  "attempt_number": 1,
+  "reserved_at": "2026-11-02T21:18:22+00:00",
+  "no_auto_retry": true,
+  "publication_approved": false,
+  "finished_at": "2026-11-02T21:18:27+00:00"
+}

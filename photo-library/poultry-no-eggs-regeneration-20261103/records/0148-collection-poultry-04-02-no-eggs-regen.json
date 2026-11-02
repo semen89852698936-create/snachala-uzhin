@@ -1,0 +1,29 @@
+{
+  "n": 148,
+  "recipe_id": "collection-poultry-04-02",
+  "title": "Рубленые котлеты из индейки с мёдом и горчицей",
+  "ingredients_without_egg": [
+    "Фарш индейки",
+    "Панировочные сухари",
+    "Горчица дижонская",
+    "Мёд",
+    "Масло оливковое",
+    "Соль"
+  ],
+  "removed_ingredient": "Яйцо",
+  "prompt": "Фотореалистичная фотография ГОТОВОГО блюда: Рубленые котлеты из индейки с мёдом и горчицей. Ингредиенты: Фарш индейки, Панировочные сухари, Горчица дижонская, Мёд. Румяные отдельные рубленые котлеты из индейки, поджаренные с обеих сторон. СТРОГО БЕЗ ЯИЦ, ГЛАЗУНЬИ, БЕЛКА, ЯИЧНЫХ ЖЕЛТКОВ, сырых ингредиентов. Ресторанная тарелка, мягкий тёплый свет, вид 3/4, без текста.",
+  "original_live_path": "/assets/recipes-ai/0148-collection-poultry-04-02.webp",
+  "original_git_blob_sha": "5c2314420d71bf04113ea9649bcf2cd77a833e6e",
+  "path": "photo-library/poultry-no-eggs-regeneration-20261103/photos/0148-collection-poultry-04-02-no-eggs-regen.webp",
+  "sha256": "ce40106401f040edba9838a32a22a36b2883ef6e859e0b14ca802ffea74c7929",
+  "bytes": 106088,
+  "size": [
+    1200,
+    900
+  ],
+  "model": "aliceai-image-art-3.0",
+  "created_at": "2026-11-02T21:17:26+00:00",
+  "status": "generated_candidate_unpublished",
+  "approved_for_publication": false,
+  "site_updated": false
+}

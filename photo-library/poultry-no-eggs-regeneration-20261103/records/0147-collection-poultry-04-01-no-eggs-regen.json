@@ -1,0 +1,29 @@
+{
+  "n": 147,
+  "recipe_id": "collection-poultry-04-01",
+  "title": "Рубленые котлеты из индейки с лимоном и розмарином",
+  "ingredients_without_egg": [
+    "Фарш индейки",
+    "Панировочные сухари",
+    "Лимон",
+    "Розмарин",
+    "Масло оливковое",
+    "Соль"
+  ],
+  "removed_ingredient": "Яйцо",
+  "prompt": "Фотореалистичная фотография ГОТОВОГО блюда: Рубленые котлеты из индейки с лимоном и розмарином. Ингредиенты: Фарш индейки, Панировочные сухари, Лимон, Розмарин. Румяные отдельные рубленые котлеты из индейки, поджаренные с обеих сторон. СТРОГО БЕЗ ЯИЦ, ГЛАЗУНЬИ, БЕЛКА, ЯИЧНЫХ ЖЕЛТКОВ, сырых ингредиентов. Ресторанная тарелка, мягкий тёплый свет, вид 3/4, без текста.",
+  "original_live_path": "/assets/recipes-ai/0147-collection-poultry-04-01.webp",
+  "original_git_blob_sha": "761ec5e23344f2fbdf3663e24e288c292eb8cb6d",
+  "path": "photo-library/poultry-no-eggs-regeneration-20261103/photos/0147-collection-poultry-04-01-no-eggs-regen.webp",
+  "sha256": "ddeb220b3c2be7bd723b3d4ac989446897294626a1fb6549ff3fd9dddf8bf880",
+  "bytes": 108618,
+  "size": [
+    1200,
+    900
+  ],
+  "model": "aliceai-image-art-3.0",
+  "created_at": "2026-11-02T21:17:18+00:00",
+  "status": "generated_candidate_unpublished",
+  "approved_for_publication": false,
+  "site_updated": false
+}
