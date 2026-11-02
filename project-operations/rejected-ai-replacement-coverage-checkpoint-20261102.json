@@ -33,10 +33,10 @@
     "new_rights_clearances_this_run": 0,
     "publication_approvals": 0,
     "technical_sha_rehash_repeated": false,
-    "node_tests": "Awaiting GitHub Actions result; do not claim pass until completed",
+    "node_tests": "GitHub Actions offline editorial release gate completed successfully for code commit 912935e6a0d990778b75391ccaf253602f1feade",
     "editorial_ci_run": "https://github.com/semen89852698936-create/snachala-uzhin/actions/runs/41494354095",
     "pipeline_ci_run": "https://github.com/semen89852698936-create/snachala-uzhin/actions/runs/41494353980",
-    "ci_state_at_checkpoint": "in_progress",
+    "ci_state_at_checkpoint": "success (both workflows on code commit 912935e6a0d990778b75391ccaf253602f1feade)",
     "vercel_latest_ready_preview": {
       "id": "dpl_ANW4a2eDb1vQewTZzdkXhauGJ59y",
       "target": null,
@@ -47,14 +47,14 @@
       "id": "dpl_5GCmpxjRSPWpAYYaP89kNai1eFkC",
       "target": "production",
       "sha": "819894450686ce5d5c5a0b1a7058218debd441e3"
-    }
+    },
+    "pipeline_tests": "GitHub Actions Verify photo pipeline completed successfully for code commit 912935e6a0d990778b75391ccaf253602f1feade"
   },
   "blockers": [
     "991 AI WebP still lack direct visual review; individual commercial rights and final owner approval unverified.",
     "Replacement briefs #5/#8/#9 do not create replacement image binaries.",
-    "Paid Yandex workflow remains scheduled every 10 minutes in main; safety PR #16 is draft and cannot be merged without separate authorization.",
-    "Editorial and pipeline CI results were still in progress at checkpoint."
+    "Paid Yandex workflow remains scheduled every 10 minutes in main; safety PR #16 is draft and cannot be merged without separate authorization."
   ],
-  "next_safe_task": "Confirm CI for PR #28; then directly inspect physical AI WebP #11-15 and compare each to recipes, recording immutable blob evidence. Do not infer visual approval from metadata or source links.",
+  "next_safe_task": "Directly inspect physical AI WebP #11-15 and compare each to recipes, recording immutable blob evidence; no rehash of previously checked archive files.",
   "constraints": "No merges, production changes, workflow dispatch, paid API calls, secrets, permissions or payment changes. PR #12 half-hour cron remains inactive."
 }
