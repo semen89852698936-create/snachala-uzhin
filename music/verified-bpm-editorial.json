@@ -1,0 +1,222 @@
+{
+  "schemaVersion": 1,
+  "updated": "2026-11-02",
+  "sourceNote": "Editorial shortlist with per-track publicly checkable BPM references. Tempo can differ for different recordings, remasters and meter/half-time choices; verify exact audio release when syncing a streaming playlist.",
+  "targetPerPlaylist": 20,
+  "verificationStatus": "partial",
+  "streamingStatus": "Spotify embeds refer to existing user playlists; they have not been edited or BPM-audited and may not match these editorial cards.",
+  "bands": {
+    "cooking": {
+      "min": 120,
+      "max": null,
+      "label": "120 BPM и выше"
+    },
+    "dinner": {
+      "min": 80,
+      "max": 100,
+      "label": "80–100 BPM"
+    },
+    "continue": {
+      "min": null,
+      "max": 80,
+      "label": "80 BPM и ниже"
+    }
+  },
+  "lists": {
+    "cooking": [
+      {
+        "position": 1,
+        "title": "September",
+        "artist": "Earth, Wind & Fire",
+        "bpm": 126,
+        "source": "https://songbpm.com/%40earth-wind-fire/september-emq5y",
+        "verifiedAs": "public tempo estimate",
+        "streamingLink": null
+      },
+      {
+        "position": 2,
+        "title": "Canned Heat",
+        "artist": "Jamiroquai",
+        "bpm": 128,
+        "source": "https://songbpm.com/%40jamiroquai/canned-heat",
+        "verifiedAs": "public tempo estimate",
+        "streamingLink": null
+      },
+      {
+        "position": 3,
+        "title": "Don't Start Now",
+        "artist": "Dua Lipa",
+        "bpm": 124,
+        "source": "https://songbpm.com/%40dua-lipa/don-t-start-now",
+        "verifiedAs": "public tempo estimate",
+        "streamingLink": null
+      },
+      {
+        "position": 4,
+        "title": "Physical",
+        "artist": "Dua Lipa",
+        "bpm": 147,
+        "source": "https://songbpm.com/%40dua-lipa/physical",
+        "verifiedAs": "public tempo estimate",
+        "streamingLink": null
+      },
+      {
+        "position": 5,
+        "title": "Shut Up and Dance",
+        "artist": "WALK THE MOON",
+        "bpm": 128,
+        "source": "https://songbpm.com/%40walk-the-moon/shut-up-and-dance",
+        "verifiedAs": "public tempo estimate",
+        "streamingLink": null
+      },
+      {
+        "position": 6,
+        "title": "Wake Me Up",
+        "artist": "Avicii",
+        "bpm": 124,
+        "source": "https://songbpm.com/%40avicii/wake-me-up",
+        "verifiedAs": "public tempo estimate",
+        "streamingLink": null
+      },
+      {
+        "position": 7,
+        "title": "Blinding Lights",
+        "artist": "The Weeknd",
+        "bpm": 171,
+        "source": "https://songbpm.com/%40the-weeknd/blinding-lights",
+        "verifiedAs": "public tempo estimate",
+        "streamingLink": null
+      }
+    ],
+    "dinner": [
+      {
+        "position": 1,
+        "title": "Don't Know Why",
+        "artist": "Norah Jones",
+        "bpm": 88,
+        "source": "https://songbpm.com/%40norah-jones/don-t-know-why-KsAG76HsEn",
+        "verifiedAs": "public tempo estimate",
+        "streamingLink": null
+      },
+      {
+        "position": 2,
+        "title": "At Last",
+        "artist": "Etta James",
+        "bpm": 87,
+        "source": "https://songbpm.com/%40etta-james/at-last",
+        "verifiedAs": "public tempo estimate",
+        "streamingLink": null
+      },
+      {
+        "position": 3,
+        "title": "The Look of Love",
+        "artist": "Diana Krall",
+        "bpm": 93,
+        "source": "https://getsongbpm.com/album/the-look-of-love/rng6",
+        "verifiedAs": "public tempo estimate",
+        "streamingLink": null
+      },
+      {
+        "position": 4,
+        "title": "Open",
+        "artist": "Rhye",
+        "bpm": 91,
+        "source": "https://songbpm.com/%40rhye/open",
+        "verifiedAs": "public tempo estimate",
+        "streamingLink": null
+      },
+      {
+        "position": 5,
+        "title": "Apocalypse",
+        "artist": "Cigarettes After Sex",
+        "bpm": 94,
+        "source": "https://www.snaplyrics.com/song/apocalypse-cigarettes-after-sex-bpm-key",
+        "verifiedAs": "public tempo estimate",
+        "streamingLink": null
+      },
+      {
+        "position": 6,
+        "title": "Nothing's Gonna Hurt You Baby",
+        "artist": "Cigarettes After Sex",
+        "bpm": 97,
+        "source": "https://songbpm.com/%40cigarettes-after-sex/nothing-s-gonna-hurt-you-baby-yy-FeIWho8",
+        "verifiedAs": "public tempo estimate",
+        "streamingLink": null
+      },
+      {
+        "position": 7,
+        "title": "No Ordinary Love",
+        "artist": "Sade",
+        "bpm": 83,
+        "source": "https://supersimpledrum.com/songs/no-ordinary-love-sade",
+        "verifiedAs": "public tempo estimate",
+        "streamingLink": null
+      },
+      {
+        "position": 8,
+        "title": "K.",
+        "artist": "Cigarettes After Sex",
+        "bpm": 94,
+        "source": "https://songbpm.com/%40cigarettes-after-sex/k",
+        "verifiedAs": "public tempo estimate",
+        "streamingLink": null
+      }
+    ],
+    "continue": [
+      {
+        "position": 1,
+        "title": "Come Away With Me",
+        "artist": "Norah Jones",
+        "bpm": 77,
+        "source": "https://songbpm.com/%40norah-jones/come-away-with-me-jmMFuAIKAa",
+        "verifiedAs": "public tempo estimate",
+        "streamingLink": null
+      },
+      {
+        "position": 2,
+        "title": "Teardrop",
+        "artist": "Massive Attack",
+        "bpm": 77,
+        "source": "https://www.snaplyrics.com/song/teardrop-massive-attack-bpm-key",
+        "verifiedAs": "public tempo estimate",
+        "streamingLink": null
+      },
+      {
+        "position": 3,
+        "title": "In the Waiting Line",
+        "artist": "Zero 7",
+        "bpm": 79,
+        "source": "https://www.beatport.com/track/in-the-waiting-line/26928285",
+        "verifiedAs": "public tempo estimate",
+        "streamingLink": null
+      },
+      {
+        "position": 4,
+        "title": "Roads",
+        "artist": "Portishead",
+        "bpm": 76,
+        "source": "https://songdata.io/track/6EOJjwcPgGWe98IDyCsBmY/In-The-Waiting-Line-by-Zero-7-Sophie-Barker",
+        "verifiedAs": "public tempo estimate",
+        "streamingLink": null
+      },
+      {
+        "position": 5,
+        "title": "The Rip",
+        "artist": "Portishead",
+        "bpm": 75,
+        "source": "https://www.bpmdatabase.com/music/by/portishead/",
+        "verifiedAs": "public tempo estimate",
+        "streamingLink": null
+      },
+      {
+        "position": 6,
+        "title": "Numb",
+        "artist": "Portishead",
+        "bpm": 78,
+        "source": "https://songdata.io/track/1t9Tyv557BlvHXova5FL3b/Glory-Box-by-Portishead",
+        "verifiedAs": "public tempo estimate",
+        "streamingLink": null
+      }
+    ]
+  }
+}
