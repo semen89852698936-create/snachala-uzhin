@@ -50,5 +50,26 @@
     "A READY Vercel deployment is not proof of browser E2E or editorial/legal approval."
   ],
   "next_safe_task": "Directly inspect physical AI WebP #16-20 and compare exact recipes, record source blob evidence; avoid rehashing archive files and do not make paid API calls.",
-  "constraints": "No merges, production changes, workflow dispatch, paid API calls, secrets, permissions or payments. Existing hourly automation schedule unchanged."
+  "constraints": "No merges, production changes, workflow dispatch, paid API calls, secrets, permissions or payments. Existing hourly automation schedule unchanged.",
+  "vercel_verified": {
+    "project_registry_target": "snachala-uzhin-preview",
+    "registry_target_latest_explicit_production": {
+      "id": "dpl_5GCmpxjRSPWpAYYaP89kNai1eFkC",
+      "status": "READY",
+      "sha": "819894450686ce5d5c5a0b1a7058218debd441e3"
+    },
+    "registry_target_latest_preview": {
+      "id": "dpl_ANW4a2eDb1vQewTZzdkXhauGJ59y",
+      "status": "READY",
+      "branch": "fix/approved-invitation-photo-20261102",
+      "sha": "cc750cd42ebb6da54af19fa831567aade7560d65"
+    },
+    "separate_vercel_project": "snachala-uzhin-git",
+    "separate_project_latest_explicit_production": {
+      "id": "dpl_2adLDkaaXdW4Gdr7RH56GwpcNSP3",
+      "status": "READY",
+      "sha": "d8000f591989a6424b92513967a764745e620b04"
+    },
+    "note": "These are two different Vercel projects. Do not confuse registry productionUrl with separate snachala-uzhin-git project. No deployments were initiated by this review."
+  }
 }
