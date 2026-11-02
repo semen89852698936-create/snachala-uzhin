@@ -104,8 +104,35 @@ def pending_photos(items: list[dict], results: dict, max_count: int = MAX_PER_RU
     return (fresh + retry)[:max_count]
 
 
-def queue_entries(items: list[dict], results: dict) -> list[dict]:
+def load_editorial_signals(items: list[dict]) -> dict[str, dict]:
+    """Review hints from source captions only, never approval or visual detection."""
+    path = Path(__file__).resolve().parents[1] / "photo-library/editorial-risk-signals.json"
+    if not path.is_file():
+        return {}
+    report = json.loads(path.read_text(encoding="utf-8"))
+    if report.get("schema_version") != 1:
+        raise ValueError("Unsupported editorial triage schema")
+    by_number = {row["number"]: row for row in items}
+    hints = {}
+    for record in report.get("records", []):
+        n = record.get("number")
+        item = by_number.get(n)
+        if item is None or record.get("recipe_id") != item["recipe_id"]:
+            raise ValueError(f"Editorial triage does not match manifest: {n}")
+        if record.get("source_url") != item["source_page"]:
+            raise ValueError(f"Source changed since editorial triage: {n}")
+        if record.get("severity") not in {"high", "medium"}:
+            raise ValueError(f"Invalid triage severity: {n}")
+        if item["recipe_id"] in hints:
+            raise ValueError(f"Repeated triage entry: {n}")
+        hints[item["recipe_id"]] = record
+    return hints
+
+
+def queue_entries(items: list[dict], results: dict,
+                  editorial_signals: dict[str, dict] | None = None) -> list[dict]:
     queue = []
+    editorial_signals = editorial_signals or {}
     for item in items:
         checked = results.get(item["recipe_id"], {})
         license_name = item.get("license", "")
@@ -118,16 +145,25 @@ def queue_entries(items: list[dict], results: dict) -> list[dict]:
             flags.append("photographer_name_not_resolved")
         if not item.get("exact_ingredient_match_verified"):
             flags.append("ingredient_match_unverified")
+        triage = editorial_signals.get(item["recipe_id"])
+        if triage:
+            flags.append("source_caption_requires_priority_review")
+        technical_status = checked.get("status", "not_checked")
+        if technical_status == "technical_pass" and checked.get("sha256") != item["sha256"]:
+            technical_status = "stale_sha_needs_recheck"
         queue.append({
             "number": item["number"], "recipe_id": item["recipe_id"],
             "recipe_title": item.get("title"),
             "source_photo_title": item.get("source_photo_title"),
             "source_page": item["source_page"], "license": license_name,
             "license_url": item.get("license_url"),
-            "technical_status": checked.get("status", "not_checked"),
+            "technical_status": technical_status,
             "technical_sha256": checked.get("sha256"),
             "editorial_status": "requires_visual_review",
             "license_status": "requires_individual_verification",
+            "source_caption_risk": triage.get("severity") if triage else "not_flagged",
+            "source_caption_review_note": triage.get("reason") if triage else None,
+            "source_caption_evidence": "metadata_only_not_visual" if triage else None,
             "flags": flags
         })
     return queue
@@ -239,7 +275,8 @@ def execute(repo: str, token: str, live: bool) -> dict:
     passing = sum(results.get(x["recipe_id"], {}).get("status") == "technical_pass" and
                   results.get(x["recipe_id"], {}).get("sha256") == x["sha256"]
                   for x in items)
-    queue = queue_entries(items, results)
+    editorial_signals = load_editorial_signals(items)
+    queue = queue_entries(items, results, editorial_signals)
     state_out = {
         "schema_version": 1, "source_ref": ref_used,
         "source_manifest_sha256": sha256(manifest_bytes).hexdigest(),
@@ -253,6 +290,9 @@ def execute(repo: str, token: str, live: bool) -> dict:
     queue_out = {
         "schema_version": 1, "source_ref": ref_used,
         "total_candidates": len(queue),
+        "source_caption_flagged": len(editorial_signals),
+        "source_caption_high_priority": sum(v["severity"] == "high" for v in editorial_signals.values()),
+        "source_caption_risks_are_visual_approval": False,
         "first_50": queue[:50],
         "second_50": queue[50:],
         "note": "All images remain pending individual visual and rights review."
