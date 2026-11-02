@@ -81,10 +81,30 @@
     "other_hourly_schedule_unchanged": true
   },
   "blockers": [
-    "Yandex AI ART main workflow currently has schedule 7,17,27,37,47,57 * * * * and paid produce job gated only by event; the protective PR #16 is draft. No secret state or actual spend verified. Do not merge without explicit approval.",
+    "Verified: separate Yandex AI ART workflow in main is scheduled six times/hour, scheduled produce job executed successfully with an API key environment value and PHOTO_COST_APPROVED=true. Sampled run 41516145166 made no new image requests (1001 already saved). PR #16 protection remains draft; no merge authorized.",
     "Individual commercial rights/account contract not verified; candidate visual matches do not imply release.",
     "Visual reviews 1-15 are in a separate stacked draft PR chain; consolidate only after conflict-safe review.",
     "Main photo map has AI photos, while older photo-library/summary.json describes a legacy stock-photo stage and should not be mistaken for live counts."
   ],
-  "next_task": "Directly inspect current AI WebP #21-25 against immutable recipes, record exact blob IDs, reject only visible mismatches, and create source-pinned briefs for rejects in a separate safe branch. Alternatively reconcile legacy summary without overwriting evidence. Do not pay, merge or deploy."
+  "next_task": "Directly inspect current AI WebP #21-25 against immutable recipes, record exact blob IDs, reject only visible mismatches, and create source-pinned briefs for rejects in a separate safe branch. Alternatively reconcile legacy summary without overwriting evidence. Do not pay, merge or deploy.",
+  "verified_schedule_evidence": {
+    "main_workflow_path": ".github/workflows/yandex-ai-1001.yml",
+    "main_cron": "7,17,27,37,47,57 * * * *",
+    "scheduled_run_id": 41516145166,
+    "scheduled_run_url": "https://github.com/semen89852698936-create/snachala-uzhin/actions/runs/41516145166",
+    "produce_job_id": 125520301600,
+    "produce_job_conclusion": "success",
+    "api_key_environment_present": true,
+    "api_key_value_not_inspected": true,
+    "photo_start_count": 1001,
+    "photo_end_count": 1001,
+    "paid_image_requests_observed_in_this_run": 0,
+    "log_evidence": [
+      "prepared_or_created=0; already_saved=1001",
+      "NO_RECOVERY_CANDIDATES kind=refused",
+      "NO_RECOVERY_CANDIDATES kind=uncertain",
+      "COMPLETE: 1001/1001 verified; stopping"
+    ],
+    "warning": "Scheduled produce job is currently eligible to run with a configured key and hardcoded PHOTO_COST_APPROVED=true. No paid requests observed in this sampled run, but schedule and future cost risk remain until explicitly authorized protection is integrated."
+  }
 }
