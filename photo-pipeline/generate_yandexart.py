@@ -74,8 +74,8 @@ def request_image(prompt_text, key, folder):
     }, ensure_ascii=False).encode("utf-8")
     req = urllib.request.Request(API_URL, data=data, method="POST", headers={
         "Content-Type": "application/json",
-        "Authorization": f"Bearer {key}",
-        "x-project": folder,
+        "Authorization": f"Api-Key {key}",
+        "OpenAI-Project": folder,
         "User-Agent": "SnachalaUzhinPhotoGenerator/1.0",
     })
     # No automatic retries, to prevent duplicate paid generations.
@@ -110,7 +110,7 @@ def atomic_write(path, content):
 
 def main(argv=None):
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--start", type=int, default=101)
+    parser.add_argument("--start", type=int, default=1)
     parser.add_argument("--end", type=int, default=1001)
     parser.add_argument("--limit", type=int, default=10, help="Max paid calls per run (1-100)")
     parser.add_argument("--execute", action="store_true", help="Enables paid API calls")
@@ -132,8 +132,15 @@ def main(argv=None):
         output = args.output / "photos" / f"{n:04d}-{recipe_id}.webp"
         record_path = args.output / "records" / f"{n:04d}-{recipe_id}.json"
         if output.is_file() and record_path.is_file():
+            record = json.loads(record_path.read_text(encoding="utf-8"))
+            with Image.open(output) as existing_image:
+                existing_image.verify()
+            if hashlib.sha256(output.read_bytes()).hexdigest() != record.get("sha256"):
+                raise RuntimeError(f"Existing photo hash mismatch: {output}")
             skipped += 1
             continue
+        if output.exists() != record_path.exists():
+            raise RuntimeError(f"Partially saved image, recovery needed: {output}")
         if made >= args.limit:
             break
         p = prompt(r)
@@ -142,6 +149,14 @@ def main(argv=None):
             made += 1
             continue
         # Exactly one API request per attempted recipe. Failure stops the batch.
+        pending = args.output / "uncertain" / f"{n:04d}-{recipe_id}.json"
+        if pending.exists():
+            print(f"SKIP_UNCERTAIN {n} {recipe_id}", flush=True)
+            continue
+        atomic_write(pending, json.dumps({
+            "n": n, "recipe_id": recipe_id, "status": "request_pending_or_sent",
+            "created_at": utc_now()
+        }, ensure_ascii=False, indent=2).encode())
         raw = request_image(p, os.environ["YANDEX_API_KEY"], os.environ["YANDEX_FOLDER_ID"])
         webp = encode_webp(raw)
         sha = hashlib.sha256(webp).hexdigest()
@@ -156,6 +171,7 @@ def main(argv=None):
             "approved_for_publication": False,
         }
         atomic_write(record_path, json.dumps(record, ensure_ascii=False, indent=2).encode())
+        pending.unlink(missing_ok=True)
         made += 1
         print(f"GENERATED {n} {recipe_id} sha256={sha} bytes={len(webp)}", flush=True)
     print(json.dumps({"mode": "execute" if args.execute else "dry-run",
