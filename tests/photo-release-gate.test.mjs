@@ -257,3 +257,18 @@ test('real JPEG and WebP evidence fixtures pass structural preflight', async () 
     await rm(root, {recursive: true, force: true});
   }
 });
+
+
+test('all records sharing a recipe ID are blocked even with distinct valid evidence', () => {
+  const {manifest, ledger} = fixtures();
+  const first = valid(manifest.sources[0]);
+  const second = {...valid(manifest.sources[0]), visual_evidence_ref: 'review/evidence/002.png'};
+  ledger.release_candidates.push(first, second);
+  const result = auditWithEvidence(manifest, ledger, {records: []},
+    new Set(['review/evidence/001.png', 'review/evidence/002.png']));
+  assert.equal(result.cleared_for_editorial_release, 0,
+    'the first of two duplicate approvals must not be counted as cleared');
+  assert.equal(result.blocked_from_release, 100);
+  assert.equal(result.errors.length, 2);
+  assert.ok(result.errors.every(error => error.includes('duplicate release candidate')));
+});
