@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-11-01",
+  "updatedAt": "2026-11-02",
   "purpose": "Единый технический реестр проектов для двух ежедневных проверок. Не содержит исходники других брендов.",
   "projects": [
     {
@@ -57,6 +57,73 @@
     }
   ],
   "onboarding": "Для нового проекта: отдельный репозиторий и README/PROJECT_STATUS.md; добавить запись сюда после подтверждения пользователя, хранить только ссылки, статусы и приоритеты.",
-  "reporting": "В каждом отчёте: подтверждённые изменения, ошибки, незавершённое, следующее самостоятельное действие. Не утверждать, что задача сделана, если изменения только в GitHub.",
-  "safety": "Не публиковать и не менять production без проверки и явного разрешения."
+  "reporting": "В каждом отчёте: подтверждённые изменения, PR и SHA, тесты, реально опубликованное, ошибки, незавершённое, следующее самостоятельное действие. Сведения в CURRENT_STATE.md перепроверять по GitHub/Vercel. Не утверждать, что задача сделана, если изменения только в GitHub.",
+  "safety": "Не публиковать и не менять production без проверки и явного разрешения.",
+  "workingStateFile": "project-operations/CURRENT_STATE.md",
+  "recipeDataPlan": "project-operations/RECIPE_DATA_PLAN.md",
+  "handoffPolicy": "Каждая рабочая сессия: прочитать CURRENT_STATE.md, сверить GitHub PR/commit и Vercel; продолжить следующую задачу; после проверенного этапа обновить checkpoint с SHA, тестами и следующей задачей. Не принимать снимок за текущую проверку. Включён принцип самостоятельного продолжения без дополнительных команд; детали в autonomousWorkPolicy.",
+  "autonomousWorkPolicy": {
+    "authorizedByOwnerOn": "2026-11-02",
+    "scope": "Все active проекты из этого реестра и подтверждённые в CURRENT_STATE.md",
+    "workingRule": "Не дожидаться новых команд между доступными этапами. На каждом запуске самостоятельно проверять GitHub/Vercel, выбирать следующую задачу, выполнять проверяемые обратимые изменения в рабочей ветке, запускать тесты, фиксировать коммиты, PR и обновлять checkpoint; затем переходить к следующей доступной задаче.",
+    "betweenConversations": "Регулярные запуски через автоматизацию, не реальный постоянный процесс ChatGPT; максимум один запуск в час. Не обещать непрерывное выполнение между срабатываниями.",
+    "plannedCadence": "HOURLY",
+    "startFrom": "project-operations/CURRENT_STATE.md",
+    "noCommandRequiredFor": [
+      "проверки GitHub и Vercel",
+      "поиск и сверка фотографий",
+      "подготовка материалов и документов",
+      "исправления в отдельных рабочих ветках",
+      "создание черновых pull request",
+      "технические и браузерные тесты",
+      "сохранение контрольных точек"
+    ],
+    "requireOwnerApprovalFor": [
+      "публикация в production",
+      "слияние в main",
+      "активация платежей и заказов",
+      "платные API, покупки и расходы",
+      "действия с личными данными, секретами и изменением прав доступа"
+    ],
+    "collisionPrevention": "Проверять свежий HEAD и существующие PR непосредственно перед каждой записью; не дублировать задачи утреннего/вечернего контроля.",
+    "status": "Hourly automation created and enabled, checked on 2026-11-02. This is an hourly series of finite runs, not a permanently running process.",
+    "scheduleAutomationId": "6ae7ce56612c8191974f637ce197c946",
+    "actualCadence": "BEGIN:VEVENT\\nDTSTART:20261101T234214Z\\nRRULE:FREQ=HOURLY\\nEND:VEVENT",
+    "defaultTimezone": "Asia/Jerusalem",
+    "existingDailyControls": [
+      {
+        "title": "Продюсер проектов · утро",
+        "id": "6ae5e14c77548191a795ec992830fa6e",
+        "localTime": "10:00"
+      },
+      {
+        "title": "Продюсер проектов · вечер",
+        "id": "6ae5e14ebe9c8191a21ed0aa0cda71f3",
+        "localTime": "18:00"
+      }
+    ],
+    "githubHalfHour": {
+      "frequencyMinutes": 30,
+      "utcCron": "7,37 * * * *",
+      "workflowFile": ".github/workflows/half-hour-photo-production.yml",
+      "scope": "Incremental real WebP integrity review; no AI generation or general-purpose code agent",
+      "verifiedActionRun": "https://github.com/semen89852698936-create/snachala-uzhin/actions/runs/41364190889",
+      "lastVerifiedPhotos": 20,
+      "totalArchivePhotos": 100,
+      "checkpointBranch": "automation/half-hour-photo-audit",
+      "activationStatus": "Github push/PR verified; cron not active until workflow is in main",
+      "productionPolicy": "Never deploy site, merge pull requests, enable paid services or spend money automatically",
+      "keepChatHourlyAutomationUntilScheduleConfirmed": true,
+      "lastVerifiedRun": "https://github.com/semen89852698936-create/snachala-uzhin/actions/runs/41365741163",
+      "sourceCaptionWarningCounts": {
+        "high": 15,
+        "medium": 13,
+        "total": 28
+      },
+      "editorialWarningFile": "photo-library/editorial-risk-signals.json",
+      "editorialReviewNotes": "photo-library/EDITORIAL_REVIEW_20261102.md",
+      "nonIndependentSourcePhotoTitles": 17,
+      "testVercelBuildSkipForCheckpointBranch": "Configured for snachala-uzhin-git; not applicable to production Vercel"
+    }
+  }
 }
