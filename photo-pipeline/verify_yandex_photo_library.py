@@ -60,9 +60,8 @@ def report_status(manifest=MANIFEST, photo_base=PHOTO_BASE):
             problems.append(f"{ident}: {type(error).__name__}: {error}")
     actual_photos = list((directory / "photos").glob("*.webp")) if (directory / "photos").exists() else []
     actual_records = list((directory / "records").glob("*.json")) if (directory / "records").exists() else []
-    if len(actual_photos) != len(completed) + sum("photo/record mismatch" in p for p in problems):
-        # A malformed file might have a record, so report the complete physical count separately.
-        pass
+    uncertainty = list((directory / "uncertain").glob("*.json")) if (directory / "uncertain").exists() else []
+    raw_checkpoints = list((directory / "raw-checkpoint").glob("*")) if (directory / "raw-checkpoint").exists() else []
     return {
         "updated_at": datetime.now(timezone.utc).isoformat(timespec="seconds"),
         "total_recipes": len(recipes),
@@ -71,9 +70,11 @@ def report_status(manifest=MANIFEST, photo_base=PHOTO_BASE):
         "metadata_records": len(actual_records),
         "missing_count": len(missing),
         "first_missing_recipe_number": missing[0] if missing else None,
+        "uncertain_paid_requests": len(uncertainty),
+        "unprocessed_raw_checkpoints": len(raw_checkpoints),
         "problem_count": len(problems),
         "problems": problems[:100],
-        "complete_and_verified": len(completed) == len(recipes) and not problems,
+        "complete_and_verified": len(completed) == len(recipes) and not problems and not uncertainty and not raw_checkpoints,
         "production_site_updated": False,
         "all_images_pending_visual_review": True,
     }
@@ -90,10 +91,14 @@ def main():
     if args.write:
         target = args.photo_base / "progress.json"
         target.parent.mkdir(parents=True, exist_ok=True)
+        if target.exists():
+            old = json.loads(target.read_text(encoding="utf-8"))
+            if {key: val for key, val in result.items() if key != "updated_at"} == {key: val for key, val in old.items() if key != "updated_at"}:
+                result["updated_at"] = old.get("updated_at", result["updated_at"])
         temporary = target.with_suffix(".json.tmp")
         temporary.write_text(json.dumps(result, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
         temporary.replace(target)
-    if result["problem_count"]:
+    if result["problem_count"] or result["uncertain_paid_requests"] or result["unprocessed_raw_checkpoints"]:
         raise SystemExit(2)
 
 
