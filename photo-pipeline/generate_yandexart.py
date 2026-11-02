@@ -30,6 +30,10 @@ API_URL = "https://ai.api.cloud.yandex.net/v1/images/generations"
 TARGET_SIZE = (1200, 900)
 MAX_PROMPT = 500
 
+class ModelImageRefusal(RuntimeError):
+    """Yandex explicitly rejected the prompt; no image is available to download."""
+
+
 def utc_now():
     return datetime.now(timezone.utc).isoformat(timespec="seconds")
 
@@ -84,6 +88,8 @@ def request_image(prompt_text, key, folder):
             result = json.loads(response.read())
     except urllib.error.HTTPError as error:
         detail = error.read(1600).decode("utf-8", errors="replace")
+        if error.code == 400 and "Я не могу сгенерировать это изображение" in detail:
+            raise ModelImageRefusal(f"Yandex model refused the prompt: {detail}") from error
         raise RuntimeError(f"Yandex API HTTP {error.code}: {detail}") from error
     encoded = result["data"][0].get("b64_json")
     if not encoded:
@@ -150,6 +156,10 @@ def main(argv=None):
             continue
         # Exactly one API request per attempted recipe. Failure stops the batch.
         pending = args.output / "uncertain" / f"{n:04d}-{recipe_id}.json"
+        rejected = args.output / "rejected" / f"{n:04d}-{recipe_id}.json"
+        if rejected.exists():
+            print(f"SKIP_REFUSED {n} {recipe_id}", flush=True)
+            continue
         raw_path = args.output / "raw-checkpoint" / f"{n:04d}-{recipe_id}.png"
         if raw_path.exists():
             # A previous run already paid for the result; finish encoding without a new request.
@@ -158,6 +168,17 @@ def main(argv=None):
         else:
             if pending.exists():
                 marker = json.loads(pending.read_text(encoding="utf-8"))
+                if marker.get("status") == "model_refusal_400_no_image":
+                    atomic_write(rejected, json.dumps({
+                        "n": n, "recipe_id": recipe_id, "title": r["title"],
+                        "prompt": p, "status": "refused_by_model",
+                        "created_at": utc_now(), "owner_review_required": True,
+                        "reason": "Yandex HTTP 400: Я не могу сгенерировать это изображение"
+                    }, ensure_ascii=False, indent=2).encode())
+                    pending.unlink(missing_ok=True)
+                    made += 1
+                    print(f"MODEL_REFUSAL_ARCHIVED {n} {recipe_id}", flush=True)
+                    continue
                 if marker.get("status") != "known_response_discarded_by_old_size_gate":
                     print(f"SKIP_UNCERTAIN {n} {recipe_id}", flush=True)
                     continue
@@ -167,7 +188,19 @@ def main(argv=None):
                 "created_at": utc_now(),
                 "note": "If output is missing after failure, do not automatically re-request."
             }, ensure_ascii=False, indent=2).encode())
-            raw = request_image(p, os.environ["YANDEX_API_KEY"], os.environ["YANDEX_FOLDER_ID"])
+            try:
+                raw = request_image(p, os.environ["YANDEX_API_KEY"], os.environ["YANDEX_FOLDER_ID"])
+            except ModelImageRefusal as error:
+                atomic_write(rejected, json.dumps({
+                    "n": n, "recipe_id": recipe_id, "title": r["title"],
+                    "prompt": p, "status": "refused_by_model",
+                    "created_at": utc_now(), "owner_review_required": True,
+                    "reason": str(error)
+                }, ensure_ascii=False, indent=2).encode())
+                pending.unlink(missing_ok=True)
+                made += 1
+                print(f"MODEL_REFUSAL_ARCHIVED {n} {recipe_id}", flush=True)
+                continue
             # Save the actual paid result before image decoding/cropping can fail.
             atomic_write(raw_path, raw)
         webp = encode_webp(raw)
