@@ -1,0 +1,82 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-02",
+  "branch": "photo-library/visual-triage-22-25-20261102",
+  "base_branch": "photo-library/editorial-release-gate-20261102",
+  "base_sha_at_branch_creation": "6d9e5a3f3bd52638139296f531f82becbaf40e4a",
+  "source_manifest": {
+    "path": "photo-library/batch-100-20261101/manifest.json",
+    "blob_sha": "324964784f50844e239ae97e770117ea4b3adc53",
+    "immutable_archive_commit": "13c3ad45758b9e92ed0df906bd4667c84932aa69"
+  },
+  "source_catalog": {
+    "path": "index.html",
+    "blob_sha": "7b612a81830a2b253fc7184df9a8cfe501d82bb2",
+    "main_sha": "819894450686ce5d5c5a0b1a7058218debd441e3"
+  },
+  "files_changed": [
+    "review/visual-triage-20261102.json",
+    "review/replacement-briefs-20261102.json",
+    "tests/replacement-briefs.test.mjs",
+    "project-operations/visual-triage-22-25-checkpoint-20261102.json"
+  ],
+  "code_commits": [
+    "cc179272fbfb4ee35d33ea11805d624c5d2f7194",
+    "ff930fe76838279f0da458f10b0e244e2380d257",
+    "cf1ec3001ac25a081649a95cedb87df5afe26c3a"
+  ],
+  "directly_rendered_archived_webp": [
+    {
+      "number": 22,
+      "git_blob_sha": "e500a752c9630431a24c036a6e286e0b78d758c6",
+      "status": "reject_for_recipe"
+    },
+    {
+      "number": 23,
+      "git_blob_sha": "82d1b52d97c356e41fa56ef236633b5082f2ce92",
+      "status": "reject_for_recipe"
+    },
+    {
+      "number": 24,
+      "git_blob_sha": "eb69f8630b61d52d7697b3b9b1e8b30b5be9f27b",
+      "status": "reject_for_recipe"
+    },
+    {
+      "number": 25,
+      "git_blob_sha": "7fab8c60295936c45c577def6ecc011fdd07eb44",
+      "status": "partial_match_needs_recipe_review"
+    }
+  ],
+  "counts_after_change": {
+    "archived_webp": 100,
+    "visually_reviewed": 25,
+    "visually_rejected": 22,
+    "partial": 2,
+    "possible": 1,
+    "unreviewed": 75,
+    "exact_replacement_briefs": 22,
+    "editorially_and_legally_cleared": 0,
+    "new_physical_photos": 0
+  },
+  "checks": {
+    "method": "Static cross-check of each archived manifest record and exact recipe JSON from immutable main/index.html; GitHub Actions pending until PR opens",
+    "status": "pending_CI",
+    "technical_sha_rehash_performed": false
+  },
+  "legal_status": "No license provenance or rights clearance established; no owner publication approval",
+  "production": {
+    "url": "https://snachala-uzhin-preview.vercel.app",
+    "status": "READY",
+    "sha": "819894450686ce5d5c5a0b1a7058218debd441e3",
+    "changed": false
+  },
+  "other_safety_work": "Separate draft PR #16 prepared to disable automatic Yandex paid workflow, but main still contains its schedule; not merged",
+  "blockers": [
+    "No confirmed rights or visual release approval for archived images",
+    "22 rejected archived copies require actual replacement photographs",
+    "75 archived WebP remain to inspect",
+    "PR #13 is still draft; this work is stacked and cannot be published directly",
+    "The unrelated Yandex workflow in main still contains an automatic schedule; safety PR #16 is not merged"
+  ],
+  "next_safe_action": "Wait for CI on stacked photo PR; fix if necessary. Continue direct inspection of next unreviewed WebP, preserve exact ingredient mapping and legal evidence, do not publish or spend."
+}
