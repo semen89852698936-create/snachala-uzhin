@@ -1,0 +1,50 @@
+name: Assemble 14 approved meat images into both site catalogs
+on:
+  push:
+    branches:
+      - release/meat-14-photos-20261103
+    paths:
+      - 'scripts/apply_meat_14_site_release.py'
+      - '.github/workflows/apply-meat-14-site-release.yml'
+permissions:
+  contents: write
+concurrency:
+  group: assemble-meat-14-site-release
+  cancel-in-progress: false
+jobs:
+  apply-and-verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - name: Checkout release branch and all generation history
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+        with:
+          ref: release/meat-14-photos-20261103
+          fetch-depth: 0
+          persist-credentials: true
+      - name: Prepare source-pinned release
+        run: python3 scripts/apply_meat_14_site_release.py
+      - name: Check exact 1001 photo mappings, binary SHAs, and both catalogs
+        run: python3 scripts/verify-1001-photo-links.py
+      - name: Verify 14 generated candidates and leave original images untouched
+        run: |
+          python3 - <<'PY'
+          import json
+          from pathlib import Path
+          base = Path('.')
+          release=json.loads((base/'photo-library/meat-14-site-release-20261103.json').read_text())
+          assert len(release['photos']) == release['candidate_count'] == 14
+          for x in release['photos']:
+              assert (base/x['original_path'].lstrip('/')).is_file()
+              assert (base/x['new_path'].lstrip('/')).is_file()
+          print('PASS 14 originals preserved, 14 candidate images present')
+          PY
+      - name: Commit release candidate without publishing Vercel
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -- index.html full-catalog/index.html photo-library/ai-recipe-photo-map.json photo-library/meat-14-site-release-20261103.json assets/recipes-ai/*-regen.webp
+          git diff --cached --check
+          git commit -m "Attach 14 regenerated meat photos to catalog and full-catalog"
+          git push origin HEAD:refs/heads/release/meat-14-photos-20261103
