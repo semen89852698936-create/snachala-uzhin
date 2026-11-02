@@ -1,0 +1,29 @@
+{
+  "n": 149,
+  "recipe_id": "collection-poultry-04-03",
+  "title": "Рубленые котлеты из индейки с лаймом и кокосом",
+  "ingredients_without_egg": [
+    "Фарш индейки",
+    "Панировочные сухари",
+    "Лайм",
+    "Молоко кокосовое",
+    "Масло оливковое",
+    "Соль"
+  ],
+  "removed_ingredient": "Яйцо",
+  "prompt": "Фотореалистичная фотография ГОТОВОГО блюда: Рубленые котлеты из индейки с лаймом и кокосом. Ингредиенты: Фарш индейки, Панировочные сухари, Лайм, Молоко кокосовое. Румяные отдельные рубленые котлеты из индейки, поджаренные с обеих сторон. СТРОГО БЕЗ ЯИЦ, ГЛАЗУНЬИ, БЕЛКА, ЯИЧНЫХ ЖЕЛТКОВ, сырых ингредиентов. Ресторанная тарелка, мягкий тёплый свет, вид 3/4, без текста.",
+  "original_live_path": "/assets/recipes-ai/0149-collection-poultry-04-03.webp",
+  "original_git_blob_sha": "1715214176e3b9159171224fcf4b1d4e0b778e2c",
+  "path": "photo-library/poultry-no-eggs-regeneration-20261103/photos/0149-collection-poultry-04-03-no-eggs-regen.webp",
+  "sha256": "4a9697de770b5879bc16789d21d2a88db305c0be5486c2be7216fe5941b6e8d7",
+  "bytes": 112034,
+  "size": [
+    1200,
+    900
+  ],
+  "model": "aliceai-image-art-3.0",
+  "created_at": "2026-11-02T21:17:32+00:00",
+  "status": "generated_candidate_unpublished",
+  "approved_for_publication": false,
+  "site_updated": false
+}
