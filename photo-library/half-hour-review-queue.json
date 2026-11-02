@@ -4,7 +4,8 @@
       "editorial_status": "requires_visual_review",
       "flags": [
         "photographer_name_not_resolved",
-        "ingredient_match_unverified"
+        "ingredient_match_unverified",
+        "source_title_repeats_recipe_title_not_independent"
       ],
       "license": "Unsplash License",
       "license_status": "requires_individual_verification",
@@ -24,7 +25,8 @@
       "editorial_status": "requires_visual_review",
       "flags": [
         "photographer_name_not_resolved",
-        "ingredient_match_unverified"
+        "ingredient_match_unverified",
+        "source_title_repeats_recipe_title_not_independent"
       ],
       "license": "Unsplash License",
       "license_status": "requires_individual_verification",
@@ -44,7 +46,8 @@
       "editorial_status": "requires_visual_review",
       "flags": [
         "photographer_name_not_resolved",
-        "ingredient_match_unverified"
+        "ingredient_match_unverified",
+        "source_title_repeats_recipe_title_not_independent"
       ],
       "license": "Unsplash License",
       "license_status": "requires_individual_verification",
@@ -65,6 +68,7 @@
       "flags": [
         "photographer_name_not_resolved",
         "ingredient_match_unverified",
+        "source_title_repeats_recipe_title_not_independent",
         "source_caption_requires_priority_review"
       ],
       "license": "Unsplash License",
@@ -86,6 +90,7 @@
       "flags": [
         "photographer_name_not_resolved",
         "ingredient_match_unverified",
+        "source_title_repeats_recipe_title_not_independent",
         "source_caption_requires_priority_review"
       ],
       "license": "Unsplash License",
@@ -125,7 +130,8 @@
       "editorial_status": "requires_visual_review",
       "flags": [
         "photographer_name_not_resolved",
-        "ingredient_match_unverified"
+        "ingredient_match_unverified",
+        "source_title_repeats_recipe_title_not_independent"
       ],
       "license": "Unsplash License",
       "license_status": "requires_individual_verification",
@@ -145,7 +151,8 @@
       "editorial_status": "requires_visual_review",
       "flags": [
         "photographer_name_not_resolved",
-        "ingredient_match_unverified"
+        "ingredient_match_unverified",
+        "source_title_repeats_recipe_title_not_independent"
       ],
       "license": "Pexels License",
       "license_status": "requires_individual_verification",
@@ -165,7 +172,8 @@
       "editorial_status": "requires_visual_review",
       "flags": [
         "photographer_name_not_resolved",
-        "ingredient_match_unverified"
+        "ingredient_match_unverified",
+        "source_title_repeats_recipe_title_not_independent"
       ],
       "license": "Unsplash License",
       "license_status": "requires_individual_verification",
@@ -204,7 +212,8 @@
       "editorial_status": "requires_visual_review",
       "flags": [
         "photographer_name_not_resolved",
-        "ingredient_match_unverified"
+        "ingredient_match_unverified",
+        "source_title_repeats_recipe_title_not_independent"
       ],
       "license": "Unsplash License",
       "license_status": "requires_individual_verification",
@@ -224,7 +233,8 @@
       "editorial_status": "requires_visual_review",
       "flags": [
         "photographer_name_not_resolved",
-        "ingredient_match_unverified"
+        "ingredient_match_unverified",
+        "source_title_repeats_recipe_title_not_independent"
       ],
       "license": "Unsplash License",
       "license_status": "requires_individual_verification",
@@ -244,7 +254,8 @@
       "editorial_status": "requires_visual_review",
       "flags": [
         "photographer_name_not_resolved",
-        "ingredient_match_unverified"
+        "ingredient_match_unverified",
+        "source_title_repeats_recipe_title_not_independent"
       ],
       "license": "Unsplash License",
       "license_status": "requires_individual_verification",
@@ -264,7 +275,8 @@
       "editorial_status": "requires_visual_review",
       "flags": [
         "photographer_name_not_resolved",
-        "ingredient_match_unverified"
+        "ingredient_match_unverified",
+        "source_title_repeats_recipe_title_not_independent"
       ],
       "license": "Pexels License",
       "license_status": "requires_individual_verification",
@@ -284,7 +296,8 @@
       "editorial_status": "requires_visual_review",
       "flags": [
         "photographer_name_not_resolved",
-        "ingredient_match_unverified"
+        "ingredient_match_unverified",
+        "source_title_repeats_recipe_title_not_independent"
       ],
       "license": "Unsplash License",
       "license_status": "requires_individual_verification",
@@ -305,7 +318,8 @@
       "flags": [
         "attribution_required",
         "photographer_name_not_resolved",
-        "ingredient_match_unverified"
+        "ingredient_match_unverified",
+        "source_title_repeats_recipe_title_not_independent"
       ],
       "license": "CC BY 2.0",
       "license_status": "requires_individual_verification",
@@ -318,14 +332,15 @@
       "source_caption_risk": "not_flagged",
       "source_page": "https://commons.wikimedia.org/wiki/File:Turkey_escalopes_and_Spaetzle_(92665442).jpg",
       "source_photo_title": "Индейка в йогуртовом соусе",
-      "technical_sha256": null,
-      "technical_status": "not_checked"
+      "technical_sha256": "47063a729728ad01161a2f0983b550506e6a9b0c57a8d5cb2675644b6cec8992",
+      "technical_status": "technical_pass"
     },
     {
       "editorial_status": "requires_visual_review",
       "flags": [
         "photographer_name_not_resolved",
-        "ingredient_match_unverified"
+        "ingredient_match_unverified",
+        "source_title_repeats_recipe_title_not_independent"
       ],
       "license": "Unsplash License",
       "license_status": "requires_individual_verification",
@@ -338,14 +353,15 @@
       "source_caption_risk": "not_flagged",
       "source_page": "https://unsplash.com/photos/a-greek-salad-with-feta-cheese-olives-and-cucumbers-25SHQMgsWEQ",
       "source_photo_title": "Греческий салат",
-      "technical_sha256": null,
-      "technical_status": "not_checked"
+      "technical_sha256": "b4a52e7a2cc691ccae37d8b019828dd3d1aeeab32c784604b2e7941cb9508d59",
+      "technical_status": "technical_pass"
     },
     {
       "editorial_status": "requires_visual_review",
       "flags": [
         "photographer_name_not_resolved",
-        "ingredient_match_unverified"
+        "ingredient_match_unverified",
+        "source_title_repeats_recipe_title_not_independent"
       ],
       "license": "Pexels License",
       "license_status": "requires_individual_verification",
@@ -358,14 +374,15 @@
       "source_caption_risk": "not_flagged",
       "source_page": "https://www.pexels.com/photo/view-of-tabouleh-salad-from-above-10311638/",
       "source_photo_title": "Табуле с петрушкой и булгуром",
-      "technical_sha256": null,
-      "technical_status": "not_checked"
+      "technical_sha256": "e810c8927d7885e72aa218f74ad375131188b6d2633c112ff364ff7ae610222f",
+      "technical_status": "technical_pass"
     },
     {
       "editorial_status": "requires_visual_review",
       "flags": [
         "photographer_name_not_resolved",
-        "ingredient_match_unverified"
+        "ingredient_match_unverified",
+        "source_title_repeats_recipe_title_not_independent"
       ],
       "license": "Unsplash License",
       "license_status": "requires_individual_verification",
@@ -378,8 +395,8 @@
       "source_caption_risk": "not_flagged",
       "source_page": "https://unsplash.com/photos/a-skillet-with-eggs-and-tomatoes-on-a-table-aDccXHMCH2c",
       "source_photo_title": "Шакшука с томатами и перцем",
-      "technical_sha256": null,
-      "technical_status": "not_checked"
+      "technical_sha256": "c73a6708de927a304211f3237500377a1e6fbfcbbed6386b770456b3e1df9054",
+      "technical_status": "technical_pass"
     },
     {
       "editorial_status": "requires_visual_review",
@@ -397,8 +414,8 @@
       "source_caption_risk": "not_flagged",
       "source_page": "https://www.pexels.com/photo/close-up-shot-of-syrniki-10254478/",
       "source_photo_title": null,
-      "technical_sha256": null,
-      "technical_status": "not_checked"
+      "technical_sha256": "692db21e1715d23dc603348f0590e9307e5233950252739ab15126e64da9cfb5",
+      "technical_status": "technical_pass"
     },
     {
       "editorial_status": "requires_visual_review",
