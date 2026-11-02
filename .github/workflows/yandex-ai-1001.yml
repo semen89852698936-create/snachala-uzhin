@@ -15,9 +15,7 @@ on:
         default: 'no'
         type: choice
         options: ['no', 'yes']
-  # Scheduled triggers are active only after this workflow is added to main.
-  schedule:
-    - cron: '7,37 * * * *'
+  # No schedule: paid image generation requires explicit manual opt-in.
 
 concurrency:
   group: yandex-art-1001-recipe-production
@@ -45,7 +43,8 @@ jobs:
 
   produce:
     needs: check
-    if: ${{ github.event_name == 'schedule' || (github.event_name == 'push' && github.ref == 'refs/heads/main') || (github.event_name == 'workflow_dispatch' && inputs.paid_generation == 'yes') }}
+    # Two independent approvals: explicit manual input and repository variable.
+    if: ${{ github.event_name == 'workflow_dispatch' && inputs.paid_generation == 'yes' && vars.PHOTO_COST_APPROVED == 'true' }}
     runs-on: ubuntu-latest
     timeout-minutes: 59
     steps:
@@ -63,7 +62,7 @@ jobs:
         env:
           YANDEX_API_KEY: ${{ secrets.YANDEX_API_KEY }}
           YANDEX_FOLDER_ID: ${{ secrets.YANDEX_FOLDER_ID || 'b1g00u8p0k5nl98v8nre' }}
-          PHOTO_COST_APPROVED: 'true'
+          PHOTO_COST_APPROVED: ${{ vars.PHOTO_COST_APPROVED }}
         run: |
           set -euo pipefail
           if [[ -z "${YANDEX_API_KEY}" ]]; then
