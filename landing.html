@@ -125,6 +125,15 @@
     .faq-list summary:after { content:"+"; font-weight:400; position:absolute; right:1px; top:21px; font-size:1.5rem }
     .faq-list details[open] summary:after { content:"−" }
     .faq-list details p { color:#6C555F; font-size:1.05rem; margin:0 20px 22px 0 }
+    .offer { background:#EEDFD7; padding:88px 0; }
+    .offer-content { display:flex; align-items:center; justify-content:space-between; gap:44px; }
+    .offer-copy { max-width:690px; }
+    .offer h2 { margin-bottom:14px }
+    .offer-price { flex:0 0 auto; min-width:290px; text-align:center; border-left:1px solid var(--hair); padding:6px 0 6px 42px; }
+    .offer-price span { display:block; color:#876477; font-size:.91rem; font-weight:750; text-transform:uppercase; letter-spacing:.09em; }
+    .offer-price strong { font-family:Georgia,serif; display:block; font-weight:400; color:var(--plum); font-size:clamp(3.4rem,5vw,4.8rem); line-height:1.2; margin:7px 0 14px; white-space:nowrap }
+    .offer-price small { display:block; font-size:.9rem; color:#705761; margin-top:14px; }
+    @media(max-width:720px) { .offer { padding:72px 0; } .offer-content { display:block; } .offer-price { margin-top:28px; border:1px solid var(--hair); border-radius:17px; padding:25px; min-width:0; background:rgba(255,249,244,.45); } }
     .closing { padding:103px 0 108px; text-align:center; background:radial-gradient(circle at 50% 16%,#FFF9F4,var(--cream)) }
     .closing h2 { max-width:800px; margin:17px auto 19px }
     .closing .lead { margin:0 auto 30px }
@@ -316,6 +325,21 @@
       <div class="wrap"><p>Готовьте вместе.<br><em>Остальное... без рецепта.</em></p></div>
     </section>
 
+    <section class="offer" id="price" aria-labelledby="offer-heading">
+      <div class="wrap offer-content">
+        <div class="offer-copy">
+          <span class="eyebrow">Стартовая стоимость</span>
+          <h2 id="offer-heading" class="serif">Вечера, которые хочется <em>повторять.</em></h2>
+          <p class="lead">1001 рецепт, интерактивные шаги, списки покупок, таймеры и «Наш вечер» с музыкальными подборками. Всё в одном цифровом продукте.</p>
+        </div>
+        <div class="offer-price" aria-label="Цена продукта">
+          <span>Стоимость на старте</span><strong>1 900 ₽</strong>
+          <a class="button primary" href="/#catalog">Посмотреть продукт <span aria-hidden="true">↗</span></a>
+          <small>Оплата будет доступна после запуска продаж.</small>
+        </div>
+      </div>
+    </section>
+
     <section class="block faq" id="questions" aria-labelledby="faq-heading">
       <div class="wrap">
         <div class="section-intro centered">
@@ -326,7 +350,7 @@
           <details><summary>Это книга рецептов в PDF?</summary><p>Нет. Это интерактивный сайт с карточками блюд, пошаговыми действиями, списком покупок и таймерами. Можно пользоваться прямо с телефона или компьютера.</p></details>
           <details><summary>Нужно ли хорошо уметь готовить?</summary><p>Нет. Рецепты сопровождаются инструкциями, а в карточках указаны сложность и время приготовления. Можно начинать с простых блюд.</p></details>
           <details><summary>Обязательно ли готовить вдвоём?</summary><p>Нет. Коллекция создана с акцентом на ужины для двоих, но рецепты подходят и для самостоятельной готовки.</p></details>
-          <details><summary>Можно посмотреть продукт до покупки?</summary><p>Сейчас коллекция открыта для просмотра. Переходите к рецептам и знакомьтесь с интерактивным форматом. Условия покупки будут указаны отдельно после утверждения коммерческого предложения.</p></details>
+          <details><summary>Сколько стоит доступ к продукту?</summary><p>Стартовая стоимость продукта - 1 900 ₽. Сейчас можно познакомиться с открытой коллекцией. Порядок покупки и условия доступа будут опубликованы при запуске продаж.</p></details>
         </div>
       </div>
     </section>
@@ -346,7 +370,7 @@
       <div><strong>СНАЧАЛА УЖИН</strong><p>Готовьте вместе. Остальное... без рецепта.</p></div>
       <div><a href="/">Основной сайт</a> &nbsp; · &nbsp; <a href="/#catalog">Рецепты</a> &nbsp; · &nbsp; <a href="/#evening">Наш вечер</a></div>
     </div>
-    <div class="wrap draft-label">Предпросмотр концепции лендинга. Оплата не подключена; условия покупки ещё не утверждены.</div>
+    <div class="wrap draft-label">Предпросмотр концепции лендинга. Стартовая цена - 1 900 ₽. Оплата не подключена; условия доступа будут уточнены до запуска.</div>
   </footer>
 </body>
 </html>
