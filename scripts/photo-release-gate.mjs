@@ -1,13 +1,29 @@
 #!/usr/bin/env node
 /** Editorial and rights release preflight. No image download or hash computation. */
-import { readFile } from 'node:fs/promises';
+import { readFile, stat } from 'node:fs/promises';
+import { join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 const isUrl = (s) => typeof s === 'string' && /^https:\/\/[^\s]+$/.test(s);
 const hasText = (s) => typeof s === 'string' && s.trim().length >= 3;
+// Evidence is a local, review-only image, never an external URL or path traversal.
+const isEvidenceRef = (s) => typeof s === 'string' && /^review\/evidence\/[A-Za-z0-9_-]+(?:\/[A-Za-z0-9_-]+)*\.(?:png|jpe?g|webp)$/i.test(s);
+
+export async function collectExistingEvidenceFiles(records, root = '.') {
+  const existing = new Set();
+  for (const record of records) {
+    const ref = record?.visual_evidence_ref;
+    if (!isEvidenceRef(ref)) continue;
+    try {
+      const info = await stat(join(root, ref));
+      if (info.isFile() && info.size > 0) existing.add(ref);
+    } catch { /* A missing or unreadable file is never evidence. */ }
+  }
+  return existing;
+}
 const KNOWN_LICENSES = new Set(['Unsplash License', 'Pexels License', 'CC0', 'CC BY 2.0', 'CC BY 3.0', 'CC BY 4.0', 'CC BY-SA 2.0', 'CC BY-SA 4.0']);
 
-export function auditRelease(manifest, ledger, triage = {records: []}) {
+export function auditRelease(manifest, ledger, triage = {records: []}, evidenceFiles = new Set()) {
   const sources = manifest?.sources;
   if (!Array.isArray(sources) || sources.length !== 100) throw new Error('Expected 100 source records');
   if (ledger?.schema_version !== 1 || !Array.isArray(ledger?.release_candidates))
@@ -32,7 +48,8 @@ export function auditRelease(manifest, ledger, triage = {records: []}) {
     if (record.reviewed_image_sha256 !== item.sha256) missing.push('reviewed_image_sha256 does not match archive');
     if (record.reviewed_source_page !== item.source_page) missing.push('reviewed_source_page does not match manifest');
     if (record.visual_match_confirmed !== true) missing.push('visual_match_confirmed');
-    if (!hasText(record.visual_evidence_ref)) missing.push('visual_evidence_ref');
+    if (!isEvidenceRef(record.visual_evidence_ref)) missing.push('visual_evidence_ref must be a local review/evidence image');
+    else if (!evidenceFiles.has(record.visual_evidence_ref)) missing.push('visual_evidence_file_missing_or_empty');
     if (!hasText(record.ingredient_review_notes)) missing.push('ingredient_review_notes');
     if (!hasText(record.reviewer)) missing.push('reviewer');
     if (!/^\d{4}-\d{2}-\d{2}$/.test(record.reviewed_date ?? '')) missing.push('reviewed_date');
@@ -71,7 +88,8 @@ async function main() {
   const manifest = JSON.parse(await readFile('photo-library/batch-100-20261101/manifest.json', 'utf8'));
   const ledger = JSON.parse(await readFile('review/photo-release-decisions.json', 'utf8'));
   const triage = JSON.parse(await readFile('review/visual-triage-20261102.json', 'utf8'));
-  const result = auditRelease(manifest, ledger, triage);
+  const evidenceFiles = await collectExistingEvidenceFiles(ledger.release_candidates);
+  const result = auditRelease(manifest, ledger, triage, evidenceFiles);
   console.log(JSON.stringify(result, null, 2));
   if (result.errors.length || (process.argv.includes('--require-ready') && result.blocked_from_release > 0))
     process.exitCode = 1;
