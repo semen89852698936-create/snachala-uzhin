@@ -74,6 +74,62 @@ class YandexProductionTests(TestCase):
             self.assertFalse(json.loads(record.read_text())["approved_for_publication"])
             self.assertFalse(list((Path(tmp) / "uncertain").glob("*.json")))
 
+
+    def test_real_yandex_1216_by_832_is_valid(self):
+        """Actual paid Yandex output from run 41431048307 must not be discarded."""
+        source = io.BytesIO()
+        Image.new("RGB", (1216, 832), "#d3ac84").save(source, "PNG")
+        saved = worker.encode_webp(source.getvalue())
+        with Image.open(io.BytesIO(saved)) as img:
+            self.assertEqual(img.size, (1200, 900))
+            self.assertEqual(img.format, "WEBP")
+
+    def test_paid_raw_checkpoint_survives_postprocessing_error(self):
+        """Do not pay a second time just because WebP conversion fails."""
+        source = io.BytesIO()
+        Image.new("RGB", (1216, 832), "#d3ac84").save(source, "PNG")
+        recipe = worker.load_recipes()[0]
+        args = ["--start", "1", "--end", "1", "--limit", "1", "--execute"]
+        env = {
+            "YANDEX_API_KEY": "fake-test-key",
+            "YANDEX_FOLDER_ID": "test-folder",
+            "PHOTO_COST_APPROVED": "true",
+        }
+        with TemporaryDirectory() as directory, mock.patch.dict(os.environ, env):
+            target = args + ["--output", directory]
+            with mock.patch.object(worker, "request_image", return_value=source.getvalue()) as paid, mock.patch.object(worker, "encode_webp", side_effect=RuntimeError("simulated converter error")):
+                with self.assertRaisesRegex(RuntimeError, "simulated converter error"):
+                    worker.main(target)
+                paid.assert_called_once()
+            raw = Path(directory) / "raw-checkpoint" / f'0001-{recipe["id"]}.png'
+            self.assertTrue(raw.exists())
+            with mock.patch.object(worker, "request_image", side_effect=AssertionError("Duplicate charge!")):
+                with contextlib.redirect_stdout(io.StringIO()):
+                    worker.main(target)
+            output = Path(directory) / "photos" / f'0001-{recipe["id"]}.webp'
+            self.assertTrue(output.exists())
+            self.assertFalse(raw.exists())
+
+    def test_known_failed_old_size_gate_can_be_recovered_once(self):
+        source = io.BytesIO()
+        Image.new("RGB", (1216, 832), "#d3ac84").save(source, "PNG")
+        recipe = worker.load_recipes()[0]
+        with TemporaryDirectory() as directory:
+            parent = Path(directory)
+            marker = parent / "uncertain" / f'0001-{recipe["id"]}.json'
+            marker.parent.mkdir(parents=True)
+            marker.write_text(json.dumps({"status": "known_response_discarded_by_old_size_gate"}))
+            env = {
+                "YANDEX_API_KEY": "fake-test-key",
+                "YANDEX_FOLDER_ID": "test-folder",
+                "PHOTO_COST_APPROVED": "true",
+            }
+            with mock.patch.dict(os.environ, env), mock.patch.object(worker, "request_image", return_value=source.getvalue()) as paid:
+                with contextlib.redirect_stdout(io.StringIO()):
+                    worker.main(["--start", "1", "--end", "1", "--limit", "1", "--execute", "--output", directory])
+                paid.assert_called_once()
+            self.assertFalse(marker.exists())
+
     def test_missing_secrets_reject_paid_calls(self):
         with mock.patch.dict(os.environ, {"PHOTO_COST_APPROVED": "true"}, clear=True):
             with self.assertRaises(SystemExit):
