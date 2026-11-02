@@ -2,7 +2,7 @@
   "schema_version": 1,
   "date": "2026-11-02",
   "project": "snachala-uzhin",
-  "stage": "12/12 release-gate tests passed; six additional immutable archive WebP visually inspected and rejected; four Commons source pages independently reviewed; no photos approved",
+  "stage": "15/15 release-gate tests passed; official license terms and unique per-image visual evidence required; 13 archive WebP previously visually inspected, 11 rejected; 0 approved",
   "source_pr_11": {
     "url": "https://github.com/semen89852698936-create/snachala-uzhin/pull/11",
     "head_sha": "13c3ad45758b9e92ed0df906bd4667c84932aa69"
@@ -17,9 +17,9 @@
     "base_branch": "photo-library/restore-100-review-20261102",
     "code_commit_sha": "ee2f7bd1071ae012687ab270903475615bf07c13",
     "visual_triage_commit_sha": "63e869186f3eda97cee07520f2f24dc9b9aed6bf",
-    "latest_code_commit_sha": "e9332165024c2f63c32e05136830f9fe594fd4cc",
-    "latest_test_commit_sha": "ceb05261228d5dd0180924092604fb4ca1316d1a",
-    "head_before_checkpoint": "5daca3e9188b503e0713d7c957ff486546653038",
+    "latest_code_commit_sha": "61df94730d1673698590a4f8506f8f7bfafea171",
+    "latest_test_commit_sha": "1dc94e87d76739a083a218504525f1cd42f185dd",
+    "head_before_checkpoint": "1dc94e87d76739a083a218504525f1cd42f185dd",
     "latest_artifact_commit_sha": "d50098026ee62ec5df28a2e063582ab0037d0cce",
     "latest_visual_triage_commit_sha": "5daca3e9188b503e0713d7c957ff486546653038"
   },
@@ -37,15 +37,15 @@
     "review/commons-source-page-evidence-20261102.json"
   ],
   "checks": {
-    "local_node_tests": "Not run locally (no GitHub network access in container); verified 12/12 in GitHub Actions job logs",
+    "local_node_tests": "Not run locally; verified 15/15 in GitHub Actions job logs",
     "github_actions": {
-      "run_id": 41378969192,
+      "run_id": 41384431206,
       "conclusion": "success",
-      "commit_sha": "ceb05261228d5dd0180924092604fb4ca1316d1a",
-      "url": "https://github.com/semen89852698936-create/snachala-uzhin/actions/runs/41378969192",
+      "commit_sha": "1dc94e87d76739a083a218504525f1cd42f185dd",
+      "url": "https://github.com/semen89852698936-create/snachala-uzhin/actions/runs/41384431206",
       "job": "release-gate",
       "steps": [
-        "12/12 offline release-gate tests passed",
+        "15/15 offline release-gate tests passed",
         "release ledger audit: 0 cleared, 100 blocked"
       ]
     },
@@ -94,7 +94,7 @@
     "Six additional archive WebP #37,61,63,64,65,67 visibly mismatch their recipe and require replacement; total 11 rejected of 13 inspected"
   ],
   "next_safe_action": "Prepare exact-ingredient replacement briefs for newly rejected #37,61,63,64,65,67 from main index.html, then source or create six matching physical images with independent rights evidence. Continue visual inspection of remaining 87 archived WebP; do not rehash technically audited files.",
-  "publication": "PR #11, #12, #13 remain draft; main and production unchanged; GitHub 30-minute cron not active.",
+  "publication": "PR #11, #12, #13 draft, main and production unchanged by this run; half-hour cron not active.",
   "visual_triage": {
     "path": "review/visual-triage-20261102.json",
     "rejected_numbers": [
@@ -187,5 +187,30 @@
     "archive_copy_visual_inspected_in_this_stage": 0,
     "archive_copy_provenance_verified": 0,
     "archive_copy_legal_cleared": 0
+  },
+  "license_terms_and_unique_visual_evidence": {
+    "code_file": "scripts/photo-release-gate.mjs",
+    "tests_file": "tests/photo-release-gate.test.mjs",
+    "code_commit_sha": "61df94730d1673698590a4f8506f8f7bfafea171",
+    "test_commits": [
+      "89cac38625eb7d657ec0937d1cec435a685b8738",
+      "1dc94e87d76739a083a218504525f1cd42f185dd"
+    ],
+    "run_id": 41384431206,
+    "tests_passed": 15,
+    "tests_failed": 0,
+    "changes": [
+      "License evidence URL must be official terms page for claimed license (CC, CC0, Unsplash, Pexels)",
+      "One local visual evidence image cannot clear two distinct release candidates",
+      "Three new regression tests and corrected existing duplicate-ID test"
+    ],
+    "limitations": "Official terms URL and file signature do not prove archived image identity, rights, correct dish or human approval",
+    "previous_failed_runs": "Two intermediate runs failed because existing duplicate-ID test expected two errors instead of three after duplicate-evidence rejection; fixed and rerun successfully",
+    "source_main_sha": "819894450686ce5d5c5a0b1a7058218debd441e3",
+    "verified_pr_11_sha": "13c3ad45758b9e92ed0df906bd4667c84932aa69",
+    "verified_pr_12_sha": "638408800f899feec0c6eb5e320a1babf987edc2",
+    "verified_pr_13_precheckpoint_sha": "1dc94e87d76739a083a218504525f1cd42f185dd",
+    "production_deployment": "dpl_5GCmpxjRSPWpAYYaP89kNai1eFkC",
+    "production_sha": "819894450686ce5d5c5a0b1a7058218debd441e3"
   }
 }
