@@ -91,3 +91,33 @@ test('Commons source-page records remain metadata only, never archive rights cle
     assert.ok(row.author.length > 2);
   }
 });
+
+test('The four addendum reviews are integrated exactly once and have source-matched briefs', () => {
+  const addendum = load('review/visual-triage-addendum-20261102-1042.json');
+  assert.equal(addendum.source_commit, triage.archive_commit_sha);
+  assert.equal(addendum.source_manifest_blob_sha, triage.archive_manifest_blob_sha);
+  assert.equal(addendum.addendum_reviewed, 4);
+  assert.equal(addendum.addendum_rejected, 4);
+  assert.equal(addendum.records.length, 4);
+  assert.equal(new Set(addendum.records.map(x => x.number)).size, 4);
+  assert.equal(triage.reviewed_images, triage.records.length);
+  assert.equal(triage.reviewed_images, addendum.combined_unique_reviewed);
+  assert.equal(triage.clear_mismatch_count, addendum.combined_rejected);
+  assert.equal(100 - triage.reviewed_images, addendum.remaining_unreviewed);
+  assert.equal(briefs.rejected_count, triage.clear_mismatch_count);
+  for (const row of addendum.records) {
+    const matches = triage.records.filter(x => x.number === row.number);
+    assert.equal(matches.length, 1, 'Unique canonical review ' + row.number);
+    assert.equal(matches[0].visual_status, 'reject_for_recipe');
+    assert.equal(matches[0].image_sha256, row.archive_sha256_from_manifest);
+    assert.equal(matches[0].git_blob_sha, row.git_blob_sha);
+    assert.equal(matches[0].observed_visual_evidence, row.observed_visual_evidence);
+    const matchedBriefs = briefs.briefs.filter(x => x.number === row.number);
+    assert.equal(matchedBriefs.length, 1, 'Unique replacement brief ' + row.number);
+    assert.equal(matchedBriefs[0].recipe_id, row.recipe_id);
+    assert.equal(matchedBriefs[0].rejected_archive_photo.sha256, row.archive_sha256_from_manifest);
+    assert.equal(matchedBriefs[0].replacement_status, 'not_found');
+    assert.equal(matchedBriefs[0].license_status, 'not_verified');
+    assert.equal(matchedBriefs[0].owner_publication_approval, false);
+  }
+});
