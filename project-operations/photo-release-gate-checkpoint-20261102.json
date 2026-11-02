@@ -1,0 +1,488 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-02",
+  "project": "snachala-uzhin",
+  "stage": "21 archived WebP visually reviewed, 19 rejected, 2 unresolved; exact replacement briefs 19/19; 17/17 release-gate tests + 6/6 brief tests PASS in CI; 0/100 cleared",
+  "source_pr_11": {
+    "url": "https://github.com/semen89852698936-create/snachala-uzhin/pull/11",
+    "head_sha": "13c3ad45758b9e92ed0df906bd4667c84932aa69"
+  },
+  "operations_pr_12": {
+    "url": "https://github.com/semen89852698936-create/snachala-uzhin/pull/12",
+    "head_sha": "638408800f899feec0c6eb5e320a1babf987edc2"
+  },
+  "this_pr_13": {
+    "url": "https://github.com/semen89852698936-create/snachala-uzhin/pull/13",
+    "branch": "photo-library/editorial-release-gate-20261102",
+    "base_branch": "photo-library/restore-100-review-20261102",
+    "code_commit_sha": "ee2f7bd1071ae012687ab270903475615bf07c13",
+    "visual_triage_commit_sha": "63e869186f3eda97cee07520f2f24dc9b9aed6bf",
+    "latest_code_commit_sha": "1f0274b2f3ee9fcc3aa400851be6fa1b091952c9",
+    "latest_test_commit_sha": "047137c4e61461f4ceee4a4ffa77910b05bd82c3",
+    "head_before_checkpoint": "776f41c9fedab2faef962af75f5593f4e3b69090",
+    "latest_artifact_commit_sha": "776f41c9fedab2faef962af75f5593f4e3b69090",
+    "latest_visual_triage_commit_sha": "1b83e0818a292f083a284c402e364222c0ef06a5"
+  },
+  "source_manifest_blob_sha": "324964784f50844e239ae97e770117ea4b3adc53",
+  "changed_files": [
+    "scripts/photo-release-gate.mjs",
+    "tests/photo-release-gate.test.mjs",
+    "review/photo-release-decisions.json",
+    ".github/workflows/editorial-release-gate.yml",
+    "review/LICENSE_PREFLIGHT_20261102.md",
+    "project-operations/photo-release-gate-checkpoint-20261102.json",
+    "review/visual-triage-20261102.json",
+    "review/VISUAL_TRIAGE_20261102.md",
+    "review/replacement-briefs-20261102.json",
+    "review/commons-source-page-evidence-20261102.json",
+    "tests/replacement-briefs.test.mjs"
+  ],
+  "checks": {
+    "local_node_tests": "No local Node execution; independent connector-side manifest/brief/triage reconciliation: 48 comparisons, 0 errors. GitHub Actions 41423395989: 17/17 gate tests + 6/6 brief tests passed; 0 unbriefed rejects; 0 cleared, 100 blocked.",
+    "github_actions": {
+      "run_id": 41423395989,
+      "conclusion": "success",
+      "commit_sha": "22bd2f196b004f7f6ca4ec5eeeb7e823891510e4",
+      "url": "https://github.com/semen89852698936-create/snachala-uzhin/actions/runs/41423395989",
+      "job": "release-gate",
+      "steps": [
+        "17/17 release-gate tests passed",
+        "6/6 replacement-brief tests passed (including addendum reconciliation)",
+        "Catalog extractor found 0 unbriefed rejects",
+        "release ledger: 0 cleared, 100 blocked"
+      ]
+    },
+    "rehashed_existing_webp_in_this_run": 0,
+    "release_gate_review": "Extracted exact ingredients and preparation steps from immutable catalog via GitHub Actions for 4 previously rejected WebP #68,86,87,99; no new visual inspection, legal clearance, physical images or SHA rehash",
+    "source_page_review": "Read Wikimedia Commons original pages #61 and #65 for author, license declaration and subject; no WebP identity/provenance verification"
+  },
+  "evidence_counters": {
+    "archive_candidate_files": 100,
+    "release_ledger_approved": 0,
+    "unverified_ingredient_matches": 100,
+    "metadata_author_missing_or_placeholder": 17,
+    "metadata_license_url_missing": 17,
+    "attribution_license_entries": 72,
+    "archive_without_files_for_remaining_recipes": 901,
+    "visually_inspected_archive_copies": 21,
+    "visually_rejected_for_recipe": 19,
+    "visually_partial_match": 1,
+    "visually_possible_match_not_approved": 1,
+    "legally_verified": 0
+  },
+  "separate_technical_audit_snapshot": {
+    "branch": "automation/half-hour-photo-audit",
+    "verified": 20,
+    "remaining": 80,
+    "checkpoint_blob_sha": "dd3097592c54062dc08a162cdfd6b129fbbfc7c3",
+    "note": "Read before editorial work; no rehash or technical duplication"
+  },
+  "deployment_snapshot": {
+    "project": "snachala-uzhin-preview",
+    "target": "production",
+    "state": "READY",
+    "sha": "819894450686ce5d5c5a0b1a7058218debd441e3",
+    "note": "Read-only status, not a browser acceptance test"
+  },
+  "blockers": [
+    "No per-image legal rights clearance and attribution evidence",
+    "Approved production copies 6,10,20 differ from archive and require explicit reapproval",
+    "901 other recipes still lack a physical archived image",
+    "GitHub half-hour cron in PR #12 is not active until workflow reaches main",
+    "Replacement briefs are specifications, not physical replacement images or license clearances",
+    "Several source recipe step titles have grammatical errors and require editorial cleanup in a separate safe PR",
+    "Source-page subjects for archive candidates #37,63,64,67 conflict with recipe descriptions; physical WebP-to-source identity not independently verified",
+    "Visual evidence file signature preflight does not establish content authenticity or rights",
+    "79 archive WebP still need direct visual review; 19 rejected copies have exact briefs but no physically verified replacement images"
+  ],
+  "next_safe_action": "Directly inspect next unreviewed archive WebP against exact recipe; record image-specific evidence. In parallel source physical matching replacements for 19 rejects with author/license provenance. Do not rehash unchanged files or publish without owner approval.",
+  "publication": "PR #11, #12, #13, #14 remain draft; main and production not changed by this run; half-hour GitHub cron still inactive.",
+  "visual_triage": {
+    "path": "review/visual-triage-20261102.json",
+    "rejected_numbers": [
+      21,
+      26,
+      31,
+      32,
+      35,
+      37,
+      38,
+      40,
+      41,
+      44,
+      61,
+      63,
+      64,
+      65,
+      67,
+      68,
+      86,
+      87,
+      99
+    ],
+    "partial_number": 4,
+    "possible_number": 5,
+    "evidence": "Rendered actual archived WebP bytes fetched via GitHub connector at immutable PR #11 commit 13c3ad45758b9e92ed0df906bd4667c84932aa69, plus source-page textual cross-check; archive file SHA from manifest not rehashed.",
+    "reviewed_total": 21,
+    "rejected_total": 19,
+    "latest_commit_sha": "5daca3e9188b503e0713d7c957ff486546653038",
+    "reviewed": 21,
+    "rejected": 19,
+    "partial": 1,
+    "possible": 1,
+    "source_path": "review/visual-triage-20261102.json",
+    "source_blob_sha": "7345a368b2acba6eea69aa36613172c04bea057d",
+    "last_added": [
+      21,
+      26,
+      31,
+      40
+    ],
+    "newly_rejected_commit": "1b83e0818a292f083a284c402e364222c0ef06a5"
+  },
+  "release_gate_hardening": {
+    "files": [
+      "scripts/photo-release-gate.mjs",
+      "tests/photo-release-gate.test.mjs"
+    ],
+    "changes": [
+      "Reject license evidence URLs that merely repeat the source image page",
+      "Reject license labels outside known manifest license vocabulary",
+      "Reject duplicate archive image numbers and SHA-256",
+      "Add three regression tests"
+    ],
+    "code_commit_sha": "f0c3dcec48b9640473166b7b8b62c90496b744b4",
+    "tests_commit_sha": "dca4272484bd25702bf2db923a1b94613cf61392",
+    "tests_passed": 11,
+    "tests_failed": 0
+  },
+  "replacement_briefs": {
+    "path": "review/replacement-briefs-20261102.json",
+    "commit_sha": "36fbf217432d14ceb49e5c69cf940223b3b48871",
+    "blob_sha": "86a6b692a684c55f99e0bf55315972961b175c5a",
+    "source_index_blob_sha": "7b612a81830a2b253fc7184df9a8cfe501d82bb2",
+    "source_main_sha": "819894450686ce5d5c5a0b1a7058218debd441e3",
+    "rejected_archive_numbers": [
+      21,
+      26,
+      31,
+      32,
+      35,
+      37,
+      38,
+      40,
+      41,
+      44,
+      61,
+      63,
+      64,
+      65,
+      67,
+      68,
+      86,
+      87,
+      99
+    ],
+    "ingredients_counts": [
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      7,
+      7,
+      7,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      6,
+      6,
+      5
+    ],
+    "checks": "All 19 rejected images have exact ingredients and steps; GitHub Actions 41423395989 passed 6/6 replacement tests, 17/17 release-gate tests, 0 missing briefs.",
+    "new_photos_added": 0,
+    "licenses_cleared": 0
+  },
+  "evidence_file_gate": {
+    "code_path": "scripts/photo-release-gate.mjs",
+    "test_path": "tests/photo-release-gate.test.mjs",
+    "code_commits": [
+      "3e6f0c7ca7e5f220fab9d0ae999fd3eba9df566e",
+      "e9332165024c2f63c32e05136830f9fe594fd4cc"
+    ],
+    "test_commit": "ceb05261228d5dd0180924092604fb4ca1316d1a",
+    "requirements": [
+      "Only local review/evidence PNG, JPEG or WebP paths without traversal",
+      "File must exist, be 57 bytes to 16 MiB, and have a structurally plausible image container",
+      "PNG requires IHDR dimensions, nonempty IDAT and terminal IEND; JPEG requires SOI, SOF, SOS and EOI; WebP requires consistent RIFF length and image chunk"
+    ],
+    "limitation": "Structural plausibility is not a full decoder, image authenticity check, dish match, legal rights review or owner approval"
+  },
+  "commons_source_page_research": {
+    "path": "review/commons-source-page-evidence-20261102.json",
+    "blob_sha": "f2ce18f945e1b0100da4f8780054ded6a86d5e6d",
+    "commit_sha": "d50098026ee62ec5df28a2e063582ab0037d0cce",
+    "records": 6,
+    "numbers": [
+      37,
+      61,
+      63,
+      64,
+      65,
+      67
+    ],
+    "finding": "Two more Commons pages explicitly describe Thai red pork over rice (#61) and breaded schnitzel over mashed potatoes (#65); both declare CC BY-SA 4.0, but archive copy provenance and rights remain unverified",
+    "archive_copy_visual_inspected_in_this_stage": 0,
+    "archive_copy_provenance_verified": 0,
+    "archive_copy_legal_cleared": 0,
+    "additional_pages": [
+      61,
+      65
+    ],
+    "latest_commit_sha": "5fe8c724f9fe729e45635a0fb254ca776689a218"
+  },
+  "license_terms_and_unique_visual_evidence": {
+    "code_file": "scripts/photo-release-gate.mjs",
+    "tests_file": "tests/photo-release-gate.test.mjs",
+    "code_commit_sha": "61df94730d1673698590a4f8506f8f7bfafea171",
+    "test_commits": [
+      "89cac38625eb7d657ec0937d1cec435a685b8738",
+      "1dc94e87d76739a083a218504525f1cd42f185dd"
+    ],
+    "run_id": 41384431206,
+    "tests_passed": 15,
+    "tests_failed": 0,
+    "changes": [
+      "License evidence URL must be official terms page for claimed license (CC, CC0, Unsplash, Pexels)",
+      "One local visual evidence image cannot clear two distinct release candidates",
+      "Three new regression tests and corrected existing duplicate-ID test"
+    ],
+    "limitations": "Official terms URL and file signature do not prove archived image identity, rights, correct dish or human approval",
+    "previous_failed_runs": "Two intermediate runs failed because existing duplicate-ID test expected two errors instead of three after duplicate-evidence rejection; fixed and rerun successfully",
+    "source_main_sha": "819894450686ce5d5c5a0b1a7058218debd441e3",
+    "verified_pr_11_sha": "13c3ad45758b9e92ed0df906bd4667c84932aa69",
+    "verified_pr_12_sha": "638408800f899feec0c6eb5e320a1babf987edc2",
+    "verified_pr_13_precheckpoint_sha": "1dc94e87d76739a083a218504525f1cd42f185dd",
+    "production_deployment": "dpl_5GCmpxjRSPWpAYYaP89kNai1eFkC",
+    "production_sha": "819894450686ce5d5c5a0b1a7058218debd441e3"
+  },
+  "latest_run_20261102_0448_utc": {
+    "verified_utc": "2026-11-02T04:48:00Z",
+    "pr_11_sha": "13c3ad45758b9e92ed0df906bd4667c84932aa69",
+    "pr_12_sha": "638408800f899feec0c6eb5e320a1babf987edc2",
+    "pr_13_head_before_checkpoint": "13f349e1994ba2191a5a0bc264aadea798937b56",
+    "main_sha": "819894450686ce5d5c5a0b1a7058218debd441e3",
+    "technical_checkpoint_blob_sha": "dd3097592c54062dc08a162cdfd6b129fbbfc7c3",
+    "technical_verified": 20,
+    "technical_remaining": 80,
+    "commits": {
+      "replacement_briefs": "d923813c369a2ece73d5baf31af3618a9f7dccd9",
+      "new_tests": "e86610c04396f048267f661a602470ed20d67b41",
+      "workflow_test_step": "95628e68779da7a18b1c47cd517a57b9feafb157",
+      "commons_metadata": "5fe8c724f9fe729e45635a0fb254ca776689a218",
+      "commons_test": "970350b4441a0ef4d4f01c99229e8207e41d40d7",
+      "workflow_metadata_trigger": "13f349e1994ba2191a5a0bc264aadea798937b56"
+    },
+    "changed_files": [
+      "review/replacement-briefs-20261102.json",
+      "review/commons-source-page-evidence-20261102.json",
+      "tests/replacement-briefs.test.mjs",
+      ".github/workflows/editorial-release-gate.yml"
+    ],
+    "tests": {
+      "run_id": 41390428410,
+      "conclusion": "success",
+      "gate_tests_passed": 15,
+      "brief_and_commons_tests_passed": 5,
+      "failures": 0
+    },
+    "counts": {
+      "recipes": 1001,
+      "archived_webp": 100,
+      "visual_reviewed": 13,
+      "visual_rejected": 11,
+      "source_pages_checked": 6,
+      "full_legal_clearance": 0,
+      "release_approved": 0,
+      "physical_replacements_added": 0
+    },
+    "blockers": [
+      "No 11 physical replacement photos or per-photo provenance/rights clearance",
+      "87 archive WebP still lack visual review",
+      "901 recipes lack physical archived WebP",
+      "Approved production copies #6, #10, #20 differ from archived copies",
+      "Half-hour GitHub schedule in draft PR #12 is not active"
+    ],
+    "next_safe_action": "Inspect next unreviewed high-risk archive WebP directly, then search/source matching physical replacement candidates with documented author and rights; do not conflate source pages with image files."
+  },
+  "latest_run_20261102_0542_utc": {
+    "task": "Harden structural validation of reviewer evidence screenshots without rehashing archived photos",
+    "code_files": [
+      "scripts/photo-release-gate.mjs",
+      "tests/photo-release-gate.test.mjs"
+    ],
+    "code_commits": [
+      "e71e8f1628c55b4274497708367b4717d01712c2",
+      "ed9b98093317ad79413d3a795d7cf094dc65ce6a",
+      "05e9f06232c44d72c892a2fb6bbdf002468cd7c6",
+      "380bf0bdf3d20aeacb3dc7a257248167aae52b93"
+    ],
+    "pr": 13,
+    "head_before_checkpoint": "380bf0bdf3d20aeacb3dc7a257248167aae52b93",
+    "github_actions": {
+      "url": "https://github.com/semen89852698936-create/snachala-uzhin/actions/runs/41395535079",
+      "conclusion": "success",
+      "release_gate_tests": 17,
+      "replacement_brief_tests": 5,
+      "release_cleared": 0,
+      "release_blocked": 100
+    },
+    "archive_webp_rehashed": 0,
+    "new_physical_images": 0,
+    "new_visual_reviews": 0,
+    "new_legal_clearances": 0,
+    "half_hour_audit_unchanged": {
+      "verified": 20,
+      "total": 100,
+      "ref": "automation/half-hour-photo-audit"
+    },
+    "production_unchanged": true,
+    "blockers": [
+      "87 archive copies remain without visual triage",
+      "11 rejected photos still lack physical replacements",
+      "100 archive candidates lack complete provenance and rights clearance",
+      "Github cron in PR #12 is not scheduled while outside main"
+    ],
+    "next_safe_task": "Inspect additional unreviewed high-risk archived WebP and search for exact-match replacement images with documented rights; do not count source URLs as files."
+  },
+  "latest_run_20261102_0543_utc": {
+    "task": "Directly inspect four next high-risk archive WebP and record image-specific visual rejection evidence",
+    "image_numbers": [
+      68,
+      86,
+      87,
+      99
+    ],
+    "archive_branch": "photo-library/restore-100-review-20261102",
+    "archive_commit_sha": "13c3ad45758b9e92ed0df906bd4667c84932aa69",
+    "triage_file": "review/visual-triage-20261102.json",
+    "triage_blob_sha": "f1255bb63df3e1898de843a1ebbb9e5868911eb8",
+    "triage_commit_sha": "4e55de6602c16667fbe2610ad18d6274ec6be57e",
+    "visually_inspected_total": 17,
+    "visually_rejected_total": 15,
+    "visually_unresolved": 2,
+    "github_actions": {
+      "url": "https://github.com/semen89852698936-create/snachala-uzhin/actions/runs/41395668793",
+      "conclusion": "success",
+      "release_gate_tests": 17,
+      "ingredient_brief_tests": 5,
+      "release_cleared": 0,
+      "release_blocked": 100
+    },
+    "new_physical_images": 0,
+    "new_license_clearances": 0,
+    "archive_technical_rehashes": 0,
+    "separate_half_hour_technical_audit": {
+      "verified": 20,
+      "total": 100,
+      "checkpoint_blob_sha": "dd3097592c54062dc08a162cdfd6b129fbbfc7c3"
+    },
+    "main_unchanged": true,
+    "production_unchanged": true,
+    "next_safe_task": "Extract exact ingredients and cooking steps from 1001-recipe catalog for new rejected photos #68,86,87,99; prepare physical licensed replacements and continue direct visual inspection of 83 remaining archive WebP."
+  },
+  "latest_run_20261102_0646_utc": {
+    "verified_utc": "2026-11-02T06:46:31Z",
+    "pr_11_head": "13c3ad45758b9e92ed0df906bd4667c84932aa69",
+    "pr_12_head": "638408800f899feec0c6eb5e320a1babf987edc2",
+    "pr_13_code_and_briefs_head": "047137c4e61461f4ceee4a4ffa77910b05bd82c3",
+    "changed_files": [
+      "scripts/extract-rejected-recipe-data.mjs",
+      ".github/workflows/editorial-release-gate.yml",
+      "review/replacement-briefs-20261102.json",
+      "tests/replacement-briefs.test.mjs",
+      "project-operations/photo-release-gate-checkpoint-20261102.json"
+    ],
+    "results": [
+      "CI extracted exact ingredients and steps for archive #68,#86,#87,#99",
+      "All 15 visual rejects now have exact recipe-based replacement briefs",
+      "Dynamic CI test enforces full replacement brief coverage as visual triage grows",
+      "GitHub Actions run 41402029863 passed 17 release-gate and 5 brief tests; 0 unbriefed rejects",
+      "No new physical images, license clearances, owner approvals, technical SHA reruns, merges or production changes"
+    ],
+    "technical_audit": "20/100 verified in separate branch; no duplicate hash checks",
+    "vercel_production": {
+      "state": "READY",
+      "sha": "819894450686ce5d5c5a0b1a7058218debd441e3",
+      "deployment_id": "dpl_5GCmpxjRSPWpAYYaP89kNai1eFkC"
+    },
+    "vercel_preview": {
+      "state": "READY",
+      "sha": "1f0274b2f3ee9fcc3aa400851be6fa1b091952c9",
+      "deployment_id": "dpl_HYiuqX72sAuhUEnj1C5avid9w6bo"
+    },
+    "blockers": [
+      "83 archive WebP await direct visual review",
+      "15 rejected archive WebP await real replacement files",
+      "Per-photo provenance, license and owner approval not cleared",
+      "901 other recipes have no physical archive photo"
+    ],
+    "next_task": "Inspect next unreviewed archive WebP and record visual evidence with exact recipe ingredients; continue search for licensed physical replacements"
+  },
+  "latest_run_20261102_0946_utc": {
+    "verified_utc": "2026-11-02T09:46:52Z",
+    "pr13_head_before_checkpoint": "776f41c9fedab2faef962af75f5593f4e3b69090",
+    "source_pr11_head": "13c3ad45758b9e92ed0df906bd4667c84932aa69",
+    "source_main_catalog_blob": "7b612a81830a2b253fc7184df9a8cfe501d82bb2",
+    "files_changed": [
+      "review/replacement-briefs-20261102.json",
+      "review/visual-triage-20261102.json",
+      "tests/replacement-briefs.test.mjs",
+      ".github/workflows/editorial-release-gate.yml",
+      "review/VISUAL_TRIAGE_20261102.md",
+      "project-operations/photo-release-gate-checkpoint-20261102.json"
+    ],
+    "content_commits": [
+      "36fbf217432d14ceb49e5c69cf940223b3b48871",
+      "1b83e0818a292f083a284c402e364222c0ef06a5",
+      "94b17fece12d1da6fda3d1d3447bf7746f7cb5bd",
+      "22bd2f196b004f7f6ca4ec5eeeb7e823891510e4",
+      "776f41c9fedab2faef962af75f5593f4e3b69090"
+    ],
+    "reviewed_total": 21,
+    "rejected_total": 19,
+    "unresolved_total": 2,
+    "remaining_unreviewed": 79,
+    "briefs_total": 19,
+    "legal_clearances": 0,
+    "release_clearances": 0,
+    "new_physical_images": 0,
+    "validation": {
+      "connector_reconciliation": "48 checks, 0 errors",
+      "github_actions_run_id": 41423395989,
+      "github_actions_conclusion": "success",
+      "release_gate_tests": "17/17",
+      "replacement_tests": "6/6",
+      "missing_replacement_briefs": 0,
+      "release_ledger": "0 cleared, 100 blocked"
+    },
+    "technical_audit": {
+      "branch": "automation/half-hour-photo-audit",
+      "verified": 20,
+      "remaining": 80,
+      "technical_rehash_in_this_run": 0
+    },
+    "production": {
+      "deployment_id": "dpl_5GCmpxjRSPWpAYYaP89kNai1eFkC",
+      "status": "READY",
+      "commit_sha": "819894450686ce5d5c5a0b1a7058218debd441e3",
+      "note": "Read-only deployment metadata, not a browser test"
+    },
+    "next_task": "Inspect remaining 79 WebP visually, find 19 physical replacements and verify rights individually."
+  }
+}

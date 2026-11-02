@@ -1,0 +1,83 @@
+{
+  "schema_version": 1,
+  "recorded_date": "2026-11-02",
+  "project": "snachala-uzhin",
+  "branch": "photo-library/editorial-release-gate-20261102",
+  "pr": 13,
+  "source_pr": 11,
+  "source_commit": "13c3ad45758b9e92ed0df906bd4667c84932aa69",
+  "main_sha": "819894450686ce5d5c5a0b1a7058218debd441e3",
+  "source_manifest_blob_sha": "324964784f50844e239ae97e770117ea4b3adc53",
+  "prior_canonical_triage": {
+    "path": "review/visual-triage-20261102.json",
+    "blob_sha": "f1255bb63df3e1898de843a1ebbb9e5868911eb8",
+    "reviewed": 17,
+    "rejected": 15
+  },
+  "new_addendum": {
+    "path": "review/visual-triage-addendum-20261102-1042.json",
+    "blob_sha": "70bed3fcaf3243eea65fd10c01544016950b75cf",
+    "commit_sha": "9133be1babb6543f620155c89175d8b9eb5bd04b",
+    "visual_inspected_archived_webp": 4,
+    "rejected_numbers": [
+      21,
+      26,
+      31,
+      40
+    ],
+    "reviewed_total_combined": 21,
+    "rejected_total_combined": 19,
+    "unresolved_total": 2,
+    "unreviewed_total": 79
+  },
+  "validation": {
+    "method": "Read-back of GitHub file and cross-check against immutable PR #11 manifest and canonical triage",
+    "checks": [
+      {
+        "name": "distinct from canonical",
+        "pass": true
+      },
+      {
+        "name": "manifest identity and SHA",
+        "pass": true
+      },
+      {
+        "name": "unique archive numbers",
+        "pass": true
+      },
+      {
+        "name": "counts and clearance",
+        "pass": true
+      }
+    ],
+    "passed": 4,
+    "total": 4,
+    "technical_rehash_performed": false,
+    "license_clearances": 0,
+    "new_physical_images": 0,
+    "latest_prior_verified_ci": {
+      "pr13_commit": "9254dc979472ee9901829dd377a9810a21022ed6",
+      "run_id": 41402103189,
+      "conclusion": "success"
+    },
+    "new_commit_ci": "not yet confirmed"
+  },
+  "coordination": {
+    "half_hour_branch": "automation/half-hour-photo-audit",
+    "technical_verified": 20,
+    "remaining_technical": 80,
+    "cron_active": false,
+    "production_changed": false,
+    "pr_merged": false,
+    "pr14_head_at_write": "550e7ad8917f95bfefc4bbfb3c88f97da31f82d0"
+  },
+  "blockers": [
+    "New four visual rejects need exact ingredient/step replacement briefs from main/index.html before canonical triage integration, otherwise existing release-gate completeness test will fail",
+    "None of 100 archived WebP have complete visual-and-license clearance",
+    "Archive images #6, #10, #20 are not the previously owner-approved production copies",
+    "79 archive WebP remain without direct visual review",
+    "No new physical licensed replacement images; 901 recipes lack archived physical images"
+  ],
+  "next_safe_action": "Extract exact recipe ingredient/step briefs for #21,26,31,40 using verified main catalog parser, integrate addendum into canonical triage with updated 19/19 replacement briefs and run release-gate CI; continue visual review of other 79 without SHA rehash.",
+  "note": "Visual review of actual archived bytes, not source page only; no proof of rights or identity with original uploaded Commons image. No production publication."
+}
