@@ -1,0 +1,60 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-02",
+  "project": "snachala-uzhin",
+  "work_branch": "photo-library/ai-art-editorial-gate-20261102",
+  "pr_url": "https://github.com/semen89852698936-create/snachala-uzhin/pull/24",
+  "stacked_on_pr": 21,
+  "main_head_at_write": "1dc5b6e828224344e1c50e64b24ac091cc2e670d",
+  "source_ai_branch": "photo-production/yandex-ai-art-1001",
+  "source_ai_head": "a1c30f0be8745b8996577da7e7a4a3c2b3f2f028",
+  "files_changed": [
+    "tests/ai-art-library-release-gate.test.mjs",
+    ".github/workflows/ai-art-first-five-review.yml",
+    "project-operations/ai-art-editorial-gate-checkpoint-20261102.json"
+  ],
+  "code_commit_sha": "b76521edb09a25a01f5962a147cdaea0a85d8124",
+  "workflow_commit_sha": "253786423bd936fa2dd0152a51e424e855674aa2",
+  "checks": {
+    "github_actions_run": "https://github.com/semen89852698936-create/snachala-uzhin/actions/runs/41475497724",
+    "job": "metadata",
+    "job_result": "success",
+    "scope": "offline Node tests on 1001 metadata records and first five review entries; not a fresh visual or legal check",
+    "technical_sha_rehash_performed": false
+  },
+  "ai_library": {
+    "physical_webp_source_checkpoint": 1001,
+    "metadata_records_tested": 1001,
+    "reviewed_visually_previous_pr": 5,
+    "visual_candidates_not_approved": 2,
+    "culinary_questions": 2,
+    "rejected": 1,
+    "approved_for_publication": 0,
+    "remaining_visual_review": 996,
+    "new_photos_generated_this_run": 0,
+    "new_licenses_verified_this_run": 0
+  },
+  "deployment": {
+    "project": "snachala-uzhin-preview",
+    "production_status": "READY",
+    "production_sha": "819894450686ce5d5c5a0b1a7058218debd441e3",
+    "changed_this_run": false,
+    "preview_build_limit": "Vercel build-rate-limit status observed on new PR check; not a Node test failure"
+  },
+  "risk": {
+    "main_yandex_workflow": ".github/workflows/yandex-ai-1001.yml",
+    "main_schedule": "7,17,27,37,47,57 * * * *",
+    "automatic_paid_job_eligible": true,
+    "safety_pr": "https://github.com/semen89852698936-create/snachala-uzhin/pull/16",
+    "safety_pr_status": "draft_not_merged",
+    "half_hour_technical_cron_pr12": "not_active_in_main"
+  },
+  "blockers": [
+    "AI images 6-1001 need direct decoded-image review and recipe comparison; metadata-only checks do not qualify",
+    "Image rights and owner approval not established",
+    "Yandex scheduled paid workflow remains in main until separately authorized safety integration",
+    "Vercel preview build-rate-limit prevents treating a fresh preview as verified"
+  ],
+  "next_safe_task": "Directly inspect immutable AI WebP 6-10 and recipe steps, add evidence-backed triage in a new stacked draft PR; do not infer visual match from filenames or prompts.",
+  "constraints": "No merges, production updates, secrets, permissions, paid calls or workflow dispatches."
+}
