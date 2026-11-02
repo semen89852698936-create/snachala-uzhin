@@ -2,7 +2,7 @@
   "manual_editorial_approved": 0,
   "note": "Physical file integrity is not ingredient correctness, license clearance or publication approval.",
   "publication": "review_only_not_production",
-  "remaining_for_technical_check": 85,
+  "remaining_for_technical_check": 80,
   "results": {
     "baked-apples": {
       "bytes": 191920,
@@ -41,6 +41,14 @@
       "checked_utc": "2026-11-02T00:06:47.623155+00:00",
       "height": 900,
       "sha256": "0b2f9a476715852979ecaa6487e971f4d32fc5e81156f321b1df986d82c1c693",
+      "status": "technical_pass",
+      "width": 1200
+    },
+    "greek-salad": {
+      "bytes": 117158,
+      "checked_utc": "2026-11-02T00:11:00.825982+00:00",
+      "height": 900,
+      "sha256": "b4a52e7a2cc691ccae37d8b019828dd3d1aeeab32c784604b2e7941cb9508d59",
       "status": "technical_pass",
       "width": 1200
     },
@@ -108,6 +116,30 @@
       "status": "technical_pass",
       "width": 1200
     },
+    "shakshuka": {
+      "bytes": 149356,
+      "checked_utc": "2026-11-02T00:11:01.574684+00:00",
+      "height": 900,
+      "sha256": "c73a6708de927a304211f3237500377a1e6fbfcbbed6386b770456b3e1df9054",
+      "status": "technical_pass",
+      "width": 1200
+    },
+    "syrniki": {
+      "bytes": 95766,
+      "checked_utc": "2026-11-02T00:11:01.916968+00:00",
+      "height": 900,
+      "sha256": "692db21e1715d23dc603348f0590e9307e5233950252739ab15126e64da9cfb5",
+      "status": "technical_pass",
+      "width": 1200
+    },
+    "tabbouleh": {
+      "bytes": 202316,
+      "checked_utc": "2026-11-02T00:11:01.170183+00:00",
+      "height": 900,
+      "sha256": "e810c8927d7885e72aa218f74ad375131188b6d2633c112ff364ff7ae610222f",
+      "status": "technical_pass",
+      "width": 1200
+    },
     "tomato-basil-pasta": {
       "bytes": 125676,
       "checked_utc": "2026-11-01T23:52:32.551451+00:00",
@@ -123,11 +155,19 @@
       "sha256": "5ac867c69788e097af8b1682a53396c037425f08a4d5060545da501f5cd37ebb",
       "status": "technical_pass",
       "width": 1200
+    },
+    "turkey-cutlets": {
+      "bytes": 142956,
+      "checked_utc": "2026-11-02T00:11:00.498399+00:00",
+      "height": 900,
+      "sha256": "47063a729728ad01161a2f0983b550506e6a9b0c57a8d5cb2675644b6cec8992",
+      "status": "technical_pass",
+      "width": 1200
     }
   },
   "schema_version": 1,
   "source_manifest_sha256": "211002d83c93f8f6227679cb3179f6189984c45eb195c3dca3090ef31827711d",
   "source_ref": "photo-library/restore-100-review-20261102",
-  "technically_verified": 15,
+  "technically_verified": 20,
   "total_archive_candidates": 100
 }
