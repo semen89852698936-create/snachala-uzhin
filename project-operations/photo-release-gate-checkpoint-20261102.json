@@ -2,7 +2,7 @@
   "schema_version": 1,
   "date": "2026-11-02",
   "project": "snachala-uzhin",
-  "stage": "15/15 release-gate tests passed; official license terms and unique per-image visual evidence required; 13 archive WebP previously visually inspected, 11 rejected; 0 approved",
+  "stage": "11 source-verified ingredient replacement briefs; 6 Commons source pages reviewed; 20/20 editorial CI tests PASS; 13 archived images visually inspected (11 rejected); 0 approved",
   "source_pr_11": {
     "url": "https://github.com/semen89852698936-create/snachala-uzhin/pull/11",
     "head_sha": "13c3ad45758b9e92ed0df906bd4667c84932aa69"
@@ -34,23 +34,26 @@
     "review/visual-triage-20261102.json",
     "review/VISUAL_TRIAGE_20261102.md",
     "review/replacement-briefs-20261102.json",
-    "review/commons-source-page-evidence-20261102.json"
+    "review/commons-source-page-evidence-20261102.json",
+    "tests/replacement-briefs.test.mjs"
   ],
   "checks": {
     "local_node_tests": "Not run locally; verified 15/15 in GitHub Actions job logs",
     "github_actions": {
-      "run_id": 41384431206,
+      "run_id": 41390428410,
       "conclusion": "success",
-      "commit_sha": "1dc94e87d76739a083a218504525f1cd42f185dd",
-      "url": "https://github.com/semen89852698936-create/snachala-uzhin/actions/runs/41384431206",
+      "commit_sha": "13f349e1994ba2191a5a0bc264aadea798937b56",
+      "url": "https://github.com/semen89852698936-create/snachala-uzhin/actions/runs/41390428410",
       "job": "release-gate",
       "steps": [
         "15/15 offline release-gate tests passed",
+        "5/5 exact-ingredient, manifest, triage and Commons metadata tests passed",
         "release ledger audit: 0 cleared, 100 blocked"
       ]
     },
     "rehashed_existing_webp_in_this_run": 0,
-    "release_gate_review": "Source-code audit, GitHub Actions and source-page metadata research; no new visual inspection of archive WebP, no full legal clearance"
+    "release_gate_review": "Source-code audit, GitHub Actions and source-page metadata research; no new visual inspection of archive WebP, no full legal clearance",
+    "source_page_review": "Read Wikimedia Commons original pages #61 and #65 for author, license declaration and subject; no WebP identity/provenance verification"
   },
   "evidence_counters": {
     "archive_candidate_files": 100,
@@ -93,8 +96,8 @@
     "Visual evidence file signature preflight does not establish content authenticity or rights",
     "Six additional archive WebP #37,61,63,64,65,67 visibly mismatch their recipe and require replacement; total 11 rejected of 13 inspected"
   ],
-  "next_safe_action": "Prepare exact-ingredient replacement briefs for newly rejected #37,61,63,64,65,67 from main index.html, then source or create six matching physical images with independent rights evidence. Continue visual inspection of remaining 87 archived WebP; do not rehash technically audited files.",
-  "publication": "PR #11, #12, #13 draft, main and production unchanged by this run; half-hour cron not active.",
+  "next_safe_action": "Inspect next unreviewed high-risk archive WebP directly, then search/source matching physical replacement candidates with documented author and rights; do not conflate source pages with image files.",
+  "publication": "PR #11, #12, #13 remain draft. No main or production changes; GitHub half-hour cron still inactive.",
   "visual_triage": {
     "path": "review/visual-triage-20261102.json",
     "rejected_numbers": [
@@ -135,25 +138,37 @@
   },
   "replacement_briefs": {
     "path": "review/replacement-briefs-20261102.json",
-    "commit_sha": "6613fc37ab95ba2dc63c422cf7718111dfc0921b",
-    "blob_sha": "052c3d690abe6832b5079d6476850e6a4a7eeed4",
+    "commit_sha": "d923813c369a2ece73d5baf31af3618a9f7dccd9",
+    "blob_sha": "36555e0636158059a961fd733590d9327a306cd7",
     "source_index_blob_sha": "7b612a81830a2b253fc7184df9a8cfe501d82bb2",
     "source_main_sha": "819894450686ce5d5c5a0b1a7058218debd441e3",
     "rejected_archive_numbers": [
       32,
       35,
+      37,
       38,
       41,
-      44
+      44,
+      61,
+      63,
+      64,
+      65,
+      67
     ],
     "ingredients_counts": [
       5,
       5,
       5,
+      5,
       7,
-      7
+      7,
+      5,
+      5,
+      5,
+      5,
+      5
     ],
-    "checks": "Six structural checks passed in connector-side review; not a separate GitHub Actions test",
+    "checks": "Exact ingredients and preparation steps for all 11 cross-checked against immutable main index.html; 5/5 new CI brief tests passed",
     "new_photos_added": 0,
     "licenses_cleared": 0
   },
@@ -176,17 +191,24 @@
     "path": "review/commons-source-page-evidence-20261102.json",
     "blob_sha": "f2ce18f945e1b0100da4f8780054ded6a86d5e6d",
     "commit_sha": "d50098026ee62ec5df28a2e063582ab0037d0cce",
-    "records": 4,
+    "records": 6,
     "numbers": [
       37,
+      61,
       63,
       64,
+      65,
       67
     ],
-    "finding": "Original Commons descriptions indicate different pork dishes; declared licenses and authors recorded with source URLs",
+    "finding": "Two more Commons pages explicitly describe Thai red pork over rice (#61) and breaded schnitzel over mashed potatoes (#65); both declare CC BY-SA 4.0, but archive copy provenance and rights remain unverified",
     "archive_copy_visual_inspected_in_this_stage": 0,
     "archive_copy_provenance_verified": 0,
-    "archive_copy_legal_cleared": 0
+    "archive_copy_legal_cleared": 0,
+    "additional_pages": [
+      61,
+      65
+    ],
+    "latest_commit_sha": "5fe8c724f9fe729e45635a0fb254ca776689a218"
   },
   "license_terms_and_unique_visual_evidence": {
     "code_file": "scripts/photo-release-gate.mjs",
@@ -212,5 +234,54 @@
     "verified_pr_13_precheckpoint_sha": "1dc94e87d76739a083a218504525f1cd42f185dd",
     "production_deployment": "dpl_5GCmpxjRSPWpAYYaP89kNai1eFkC",
     "production_sha": "819894450686ce5d5c5a0b1a7058218debd441e3"
+  },
+  "latest_run_20261102_0448_utc": {
+    "verified_utc": "2026-11-02T04:48:00Z",
+    "pr_11_sha": "13c3ad45758b9e92ed0df906bd4667c84932aa69",
+    "pr_12_sha": "638408800f899feec0c6eb5e320a1babf987edc2",
+    "pr_13_head_before_checkpoint": "13f349e1994ba2191a5a0bc264aadea798937b56",
+    "main_sha": "819894450686ce5d5c5a0b1a7058218debd441e3",
+    "technical_checkpoint_blob_sha": "dd3097592c54062dc08a162cdfd6b129fbbfc7c3",
+    "technical_verified": 20,
+    "technical_remaining": 80,
+    "commits": {
+      "replacement_briefs": "d923813c369a2ece73d5baf31af3618a9f7dccd9",
+      "new_tests": "e86610c04396f048267f661a602470ed20d67b41",
+      "workflow_test_step": "95628e68779da7a18b1c47cd517a57b9feafb157",
+      "commons_metadata": "5fe8c724f9fe729e45635a0fb254ca776689a218",
+      "commons_test": "970350b4441a0ef4d4f01c99229e8207e41d40d7",
+      "workflow_metadata_trigger": "13f349e1994ba2191a5a0bc264aadea798937b56"
+    },
+    "changed_files": [
+      "review/replacement-briefs-20261102.json",
+      "review/commons-source-page-evidence-20261102.json",
+      "tests/replacement-briefs.test.mjs",
+      ".github/workflows/editorial-release-gate.yml"
+    ],
+    "tests": {
+      "run_id": 41390428410,
+      "conclusion": "success",
+      "gate_tests_passed": 15,
+      "brief_and_commons_tests_passed": 5,
+      "failures": 0
+    },
+    "counts": {
+      "recipes": 1001,
+      "archived_webp": 100,
+      "visual_reviewed": 13,
+      "visual_rejected": 11,
+      "source_pages_checked": 6,
+      "full_legal_clearance": 0,
+      "release_approved": 0,
+      "physical_replacements_added": 0
+    },
+    "blockers": [
+      "No 11 physical replacement photos or per-photo provenance/rights clearance",
+      "87 archive WebP still lack visual review",
+      "901 recipes lack physical archived WebP",
+      "Approved production copies #6, #10, #20 differ from archived copies",
+      "Half-hour GitHub schedule in draft PR #12 is not active"
+    ],
+    "next_safe_action": "Inspect next unreviewed high-risk archive WebP directly, then search/source matching physical replacement candidates with documented author and rights; do not conflate source pages with image files."
   }
 }
