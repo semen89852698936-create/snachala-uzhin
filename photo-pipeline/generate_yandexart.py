@@ -88,8 +88,12 @@ def request_image(prompt_text, key, folder):
             result = json.loads(response.read())
     except urllib.error.HTTPError as error:
         detail = error.read(1600).decode("utf-8", errors="replace")
-        if error.code == 400 and "Я не могу сгенерировать это изображение" in detail:
-            raise ModelImageRefusal(f"Yandex model refused the prompt: {detail}") from error
+        try:
+            message = json.loads(detail).get("error", {}).get("message", "")
+        except (ValueError, AttributeError, TypeError):
+            message = detail
+        if error.code == 400 and "Я не могу сгенерировать это изображение" in str(message):
+            raise ModelImageRefusal(f"Yandex model refused the prompt: {message}") from error
         raise RuntimeError(f"Yandex API HTTP {error.code}: {detail}") from error
     encoded = result["data"][0].get("b64_json")
     if not encoded:
