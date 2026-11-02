@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "date": "2026-11-02",
-  "purpose": "Exact catalog ingredient and preparation briefs for 19 visually rejected archived WebP copies. Specifications only: NOT photos, rights clearances or approvals.",
+  "purpose": "Exact catalog ingredient and preparation briefs for 22 visually rejected archived WebP copies. Specifications only: NOT photos, rights clearances or approvals.",
   "recipe_source": {
     "branch": "main",
     "commit_sha": "819894450686ce5d5c5a0b1a7058218debd441e3",
@@ -13,7 +13,7 @@
     "blob_sha": "324964784f50844e239ae97e770117ea4b3adc53",
     "file": "photo-library/batch-100-20261101/manifest.json"
   },
-  "rejected_count": 19,
+  "rejected_count": 22,
   "briefs": [
     {
       "number": 21,
@@ -59,6 +59,159 @@
         "sha256": "4517d654cd3fbc24b6cd2b38a1b6d5ec7a4410c05233ae9d787a14f46d0e2ae0",
         "reason": "На подносе ресторанный набор: стейк, кукуруза, сосиска, картофель фри, соус и напиток. Это не говяжьи медальоны с горчицей и мёдом.",
         "source_page": "https://commons.wikimedia.org/wiki/File:A_New_Zealand_beef_steak_with_corn_and_sausage_with_potatoes_with_dinner_set_in_caf%C3%A9_de_coral.jpg",
+        "license_claim_unverified": "CC BY-SA 4.0"
+      },
+      "replacement_status": "not_found",
+      "license_status": "not_verified",
+      "editorial_status": "requires_independent_visual_review",
+      "owner_publication_approval": false
+    },
+    {
+      "number": 22,
+      "recipe_id": "collection-meat-01-04",
+      "recipe_title": "Говяжьи медальоны с паприкой и чесноком",
+      "recipe_ingredients_exact": [
+        {
+          "name": "Говяжья вырезка",
+          "amount": 360,
+          "unit": "г"
+        },
+        {
+          "name": "Масло оливковое",
+          "amount": 1,
+          "unit": "ст. л."
+        },
+        {
+          "name": "Паприка копчёная",
+          "amount": 1,
+          "unit": "ч. л."
+        },
+        {
+          "name": "Чеснок",
+          "amount": 2,
+          "unit": "зубчика"
+        },
+        {
+          "name": "Соль",
+          "amount": 0,
+          "unit": "по вкусу"
+        }
+      ],
+      "preparation_reference": [
+        "Обсуши кусочки, посоли и поперчи. Если есть время, оставь при комнатной температуре на 15 минут.",
+        "Разогрей сковороду, добавь масло и обжарь мясо с обеих сторон до корочки. Не перегружай сковороду.",
+        "Снизь нагрев и доведи до безопасной степени прожарки по термометру. Для цельных кусков говядины и свинины ориентир — не ниже 63 °C с отдыхом 3 минуты.",
+        "Чеснок и паприку добавь ближе к концу готовки, прогрей 30 секунд без сильного огня.",
+        "Переложи мясо на тёплую тарелку на 3–5 минут перед нарезкой."
+      ],
+      "replacement_visual_requirements": "Photograph the prepared dish with the specified main protein and signature ingredients; avoid unrelated dominant sides. Invisible spices, sauce composition and rights cannot be certified from appearance alone.",
+      "rejected_archive_photo": {
+        "relative_file": "photos/022-collection-meat-01-04.webp",
+        "sha256": "9d9426aaf81cb306c3157598bbe7b66b073df098a74eb1e4d3eb8948a01d413b",
+        "reason": "На горячей сковороде крупные жареные стейки, картофель фри и брокколи. Это не характерная подача говяжьих медальонов с паприкой и чесноком; специи по одному изображению установить невозможно.",
+        "source_page": "https://commons.wikimedia.org/wiki/File:Beef_Steak_on_Sizzling_Plate.jpg",
+        "license_claim_unverified": "CC BY-SA 4.0"
+      },
+      "replacement_status": "not_found",
+      "license_status": "not_verified",
+      "editorial_status": "requires_independent_visual_review",
+      "owner_publication_approval": false
+    },
+    {
+      "number": 23,
+      "recipe_id": "collection-meat-01-05",
+      "recipe_title": "Говяжьи медальоны с томатами и базиликом",
+      "recipe_ingredients_exact": [
+        {
+          "name": "Говяжья вырезка",
+          "amount": 360,
+          "unit": "г"
+        },
+        {
+          "name": "Масло оливковое",
+          "amount": 1,
+          "unit": "ст. л."
+        },
+        {
+          "name": "Томаты рубленые",
+          "amount": 160,
+          "unit": "г"
+        },
+        {
+          "name": "Базилик",
+          "amount": 5,
+          "unit": "веточки"
+        },
+        {
+          "name": "Соль",
+          "amount": 0,
+          "unit": "по вкусу"
+        }
+      ],
+      "preparation_reference": [
+        "Обсуши кусочки, посоли и поперчи. Если есть время, оставь при комнатной температуре на 15 минут.",
+        "Разогрей сковороду, добавь масло и обжарь мясо с обеих сторон до корочки. Не перегружай сковороду.",
+        "Снизь нагрев и доведи до безопасной степени прожарки по термометру. Для цельных кусков говядины и свинины ориентир — не ниже 63 °C с отдыхом 3 минуты.",
+        "Введи томаты на заключительном этапе, протуши 5 минут и посыпь свежим базиликом.",
+        "Переложи мясо на тёплую тарелку на 3–5 минут перед нарезкой."
+      ],
+      "replacement_visual_requirements": "Photograph the prepared dish with the specified main protein and signature ingredients; avoid unrelated dominant sides. Invisible spices, sauce composition and rights cannot be certified from appearance alone.",
+      "rejected_archive_photo": {
+        "relative_file": "photos/023-collection-meat-01-05.webp",
+        "sha256": "47018722cc597533ec706d8b10991019e329a08f4149bafb8684a2d19d77b7f3",
+        "reason": "Крупный стейк с порцией спагетти, брокколи, кукурузой и морковью. Томаты и базилик в заявленном блюде не просматриваются; доминирует другое ресторанное сочетание.",
+        "source_page": "https://commons.wikimedia.org/wiki/File:NZ_beef_steak_with_pasta_and_vegetables.jpg",
+        "license_claim_unverified": "CC BY-SA 4.0"
+      },
+      "replacement_status": "not_found",
+      "license_status": "not_verified",
+      "editorial_status": "requires_independent_visual_review",
+      "owner_publication_approval": false
+    },
+    {
+      "number": 24,
+      "recipe_id": "collection-meat-01-06",
+      "recipe_title": "Говяжьи медальоны с имбирём и соевым соусом",
+      "recipe_ingredients_exact": [
+        {
+          "name": "Говяжья вырезка",
+          "amount": 360,
+          "unit": "г"
+        },
+        {
+          "name": "Масло оливковое",
+          "amount": 1,
+          "unit": "ст. л."
+        },
+        {
+          "name": "Имбирь свежий",
+          "amount": 15,
+          "unit": "г"
+        },
+        {
+          "name": "Соевый соус",
+          "amount": 1.5,
+          "unit": "ст. л."
+        },
+        {
+          "name": "Соль",
+          "amount": 0,
+          "unit": "по вкусу"
+        }
+      ],
+      "preparation_reference": [
+        "Обсуши кусочки, посоли и поперчи. Если есть время, оставь при комнатной температуре на 15 минут.",
+        "Разогрей сковороду, добавь масло и обжарь мясо с обеих сторон до корочки. Не перегружай сковороду.",
+        "Снизь нагрев и доведи до безопасной степени прожарки по термометру. Для цельных кусков говядины и свинины ориентир — не ниже 63 °C с отдыхом 3 минуты.",
+        "Натри имбирь; в конце добавь его с соевым соусом, быстро выпари жидкость до блеска.",
+        "Переложи мясо на тёплую тарелку на 3–5 минут перед нарезкой."
+      ],
+      "replacement_visual_requirements": "Photograph the prepared dish with the specified main protein and signature ingredients; avoid unrelated dominant sides. Invisible spices, sauce composition and rights cannot be certified from appearance alone.",
+      "rejected_archive_photo": {
+        "relative_file": "photos/024-collection-meat-01-06.webp",
+        "sha256": "679d1fb0f5235447b6d5029df6555a2402bdff92f37d51de3180762bed7275ce",
+        "reason": "Филе миньон с зелёной фасолью, картофелем и травяным маслом в коричневом соусе. Снимок не подтверждает характерные имбирь и соевый соус рецепта; источник описывает иную подачу.",
+        "source_page": "https://commons.wikimedia.org/wiki/File:DFC_1676_Seared_filet_mignon_atop_a_rich_jus_served_with_green_beans_herb_butter-tossed_potatoes_and_a_smear_of_whipped_herb_butter_-_a_classic_steakhouse_plate.jpg",
         "license_claim_unverified": "CC BY-SA 4.0"
       },
       "replacement_status": "not_found",
@@ -1029,15 +1182,16 @@
   ],
   "last_extended_from_triage": {
     "numbers": [
-      21,
-      26,
-      31,
-      40
+      22,
+      23,
+      24
     ],
-    "triage_file": "review/visual-triage-addendum-20261102-1042.json",
+    "partial_not_rejected": [
+      25
+    ],
     "source_index_blob_sha": "7b612a81830a2b253fc7184df9a8cfe501d82bb2",
     "source_manifest_blob_sha": "324964784f50844e239ae97e770117ea4b3adc53",
-    "extraction": "Exact recipe objects parsed from immutable main/index.html and cross-checked against PR #11 manifest and reviewed-image addendum",
-    "note": "The canonical triage integration follows this brief update; release checks may be temporarily inconsistent until both files land."
+    "extraction": "Parsed exact recipe objects from immutable main/index.html; compared to archived WebP actually rendered via GitHub connector",
+    "note": "No physical replacements or legal approvals created."
   }
 }
