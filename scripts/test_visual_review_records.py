@@ -11,6 +11,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 REVIEW = ROOT / "photo-library/visual-review-20261102-evening.json"
 PHOTO_MAP = ROOT / "photo-library/ai-recipe-photo-map.json"
+RELEASE = ROOT / "photo-library/current-release-status.json"
 
 
 class VisualReviewIntegrity(unittest.TestCase):
@@ -18,6 +19,7 @@ class VisualReviewIntegrity(unittest.TestCase):
     def setUpClass(cls):
         cls.review = json.loads(REVIEW.read_text(encoding="utf-8"))
         cls.manifest = json.loads(PHOTO_MAP.read_text(encoding="utf-8"))
+        cls.release = json.loads(RELEASE.read_text(encoding="utf-8"))
         cls.by_id = {p["recipe_id"]: p for p in cls.manifest["photos"]}
 
     def test_manifest_contains_1001_distinct_recipes(self):
@@ -40,6 +42,21 @@ class VisualReviewIntegrity(unittest.TestCase):
             sum(r["visual_status"] == "visual_mismatch_needs_replacement" for r in rows),
             self.review["visualMismatches"],
         )
+
+    def test_live_release_status_matches_review_scope(self):
+        release = self.release
+        self.assertEqual(release["photoMapEntries"], len(self.manifest["photos"]))
+        self.assertEqual(release["totalRecipesInLiveHtml"], 1001)
+        self.assertEqual(release["uniqueRecipeIdsInLiveHtml"], 1001)
+        self.assertEqual(release["uniqueLocalPhotoPathsInLiveHtml"], 1001)
+        self.assertEqual(release["visualReviewedThisRun"], len(self.review["records"]))
+        self.assertEqual(release["preliminaryMatchesThisRun"], self.review["preliminaryVisualMatches"])
+        self.assertEqual(release["visualMismatchThisRun"], self.review["visualMismatches"])
+        self.assertEqual(release["remainingNotVisuallyReviewedInThisAudit"], self.review["notYetVisuallyReviewed"])
+        self.assertEqual(release["commercialUseRightsIndividuallyVerifiedThisRun"], 0)
+        self.assertEqual(release["ownerFinalApprovalsThisRun"], 0)
+        self.assertIsNone(release["globalLegalApprovals"])
+        self.assertIsNone(release["globalOwnerFinalApprovals"])
 
     def test_binary_and_metadata_match(self):
         for row in self.review["records"]:
