@@ -1,380 +1,278 @@
 <!doctype html>
 <html lang="ru">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>СНАЧАЛА УЖИН - готовьте вместе, остальное... без рецепта</title>
-  <meta name="description" content="1000 рецептов и один секретный, пошаговая готовка, список покупок и идеи для вечера вдвоём. Готовьте вместе. Остальное... без рецепта.">
-  <meta name="theme-color" content="#F7EEE7">
-  <meta name="robots" content="noindex, nofollow">
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="СНАЧАЛА УЖИН - 1001 повод остаться">
-  <meta property="og:description" content="Не просто рецепты. Ваш сценарий вечера вдвоём: выбрать, приготовить, остаться.">
-  <meta property="og:image" content="/assets/our-evening-together-approved.webp">
-  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
-  <style>
-    :root {
-      --cream:#F7EEE7; --cream-light:#FFF9F4; --plum:#583547; --plum-dark:#38232F;
-      --rose:#A85F74; --blush:#EAD8D2; --sand:#EBDDCB; --muted:#775D65;
-      --hair:rgba(88,53,71,.18); --white:#FFFFFF;
-      font-family: -apple-system, BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;
-      color:var(--plum-dark); background:var(--cream); font-synthesis:none;
-    }
-    * { box-sizing:border-box }
-    html { scroll-behavior:smooth; scroll-padding-top:100px }
-    body { margin:0; min-width:320px; line-height:1.55; overflow-x:hidden }
-    a { color:inherit }
-    img { max-width:100%; display:block; }
-    button,a { -webkit-tap-highlight-color:transparent }
-    :focus-visible { outline:3px solid #9A3E60; outline-offset:4px; }
-    .wrap { width:min(1160px,calc(100% - 52px)); margin-inline:auto }
-    .serif { font-family:Georgia,"Times New Roman",serif; font-weight:400; letter-spacing:-.035em }
-    .eyebrow { display:inline-flex; gap:9px; align-items:center; color:#875166; font-size:.85rem; font-weight:750; text-transform:uppercase; letter-spacing:.105em }
-    .eyebrow:before { content:"✳"; color:#B46D80; font-size:1.18rem }
-    .topbar { background:#523242; color:#FFF8F5; text-align:center; padding:10px 15px; font-size:.88rem; letter-spacing:.09em; font-weight:650 }
-    .site-header { position:sticky; top:0; z-index:25; background:rgba(247,238,231,.97); border-bottom:1px solid var(--hair); backdrop-filter:blur(12px) }
-    .head-inner { display:flex; align-items:center; justify-content:space-between; gap:16px; min-height:82px }
-    .brand { display:inline-flex; align-items:center; gap:10px; text-decoration:none; min-width:0; color:var(--plum) }
-    .brand-icon { width:45px; height:45px; flex-shrink:0 }
-    .brand span { display:block; font-size:1.07rem; font-weight:850; letter-spacing:.09em; line-height:1.15 }
-    .brand em { font-family:Georgia,serif; font-weight:400; letter-spacing:0 }
-    .brand small { display:block; font-size:.72rem; font-weight:500; letter-spacing:.07em; margin-top:4px; color:var(--muted) }
-    nav { display:flex; align-items:center; flex-wrap:wrap; gap:23px }
-    nav a { text-decoration:none; font-size:.93rem; font-weight:600 }
-    nav a:hover,.quiet-link:hover { color:var(--rose) }
-    .button { text-decoration:none; display:inline-flex; align-items:center; justify-content:center; gap:13px; border-radius:60px;
-      font-weight:750; padding:17px 26px; line-height:1.2; font-size:1rem; border:1px solid transparent; text-align:center; transition:transform .18s,background .18s,box-shadow .18s; }
-    .button:hover { transform:translateY(-2px) }
-    .button.primary { background:var(--plum); color:white; box-shadow:0 9px 24px rgba(69,33,50,.13) }
-    .button.primary:hover { background:#703D55 }
-    .button.secondary { border-color:#A27989; color:var(--plum); background:rgba(255,255,255,.39) }
-    .button.secondary:hover { background:#FFF8F3 }
-    .button.small { font-size:.91rem; padding:13px 20px }
-    .hero { position:relative; padding:76px 0 80px; background:radial-gradient(ellipse at 42% 35%,#FFF9F4 0,transparent 58%),var(--cream) }
-    .hero-grid { display:grid; grid-template-columns:1.04fr .96fr; align-items:center; gap:clamp(32px,6vw,100px) }
-    .hero-text { position:relative; z-index:2 }
-    .hero h1 { font-size:clamp(3.15rem,5.65vw,5.85rem); line-height:1.025; margin:24px 0 26px; max-width:660px; color:var(--plum) }
-    .hero h1 em { color:#AE6B7D; font-weight:400 }
-    .hero-copy { font-size:clamp(1.14rem,1.35vw,1.33rem); color:#664F59; max-width:550px; line-height:1.62; margin:0 0 30px }
-    .hero-actions { display:flex; flex-wrap:wrap; gap:13px; margin:0 0 32px }
-    .hero-micro { color:#80656C; font-size:.94rem; margin:0; max-width:540px }
-    .hero-photo { height:min(635px,58vw); min-height:480px; position:relative; border-radius:230px 230px 16px 16px; overflow:hidden; background:#9A796E; box-shadow:0 26px 70px rgba(70,44,55,.18) }
-    .hero-photo img { width:100%; height:100%; object-fit:cover; object-position:center 34% }
-    .hero-note { position:absolute; bottom:22px; right:17px; left:17px; background:rgba(247,238,231,.94); backdrop-filter:blur(12px); border-radius:13px; padding:17px 21px; text-align:center; color:var(--plum) }
-    .hero-note strong { display:block; font-family:Georgia,serif; font-size:clamp(1.12rem,1.8vw,1.45rem); font-weight:400 }
-    .hero-note span { display:block; margin-top:3px; font-size:.85rem; color:#745962; }
-    .metrics { display:grid; grid-template-columns:repeat(3,1fr); background:#F0E1D8; border-top:1px solid var(--hair); border-bottom:1px solid var(--hair); }
-    .metric { padding:32px 18px; text-align:center }
-    .metric:not(:last-child) { border-right:1px solid var(--hair) }
-    .metric strong { display:block; font-family:Georgia,serif; font-weight:400; color:var(--plum); line-height:1.05; font-size:clamp(2rem,3.7vw,3.4rem) }
-    .metric span { display:block; margin-top:7px; color:#75606A; font-size:.96rem }
-    section.block { padding:102px 0; }
-    .section-intro { max-width:750px; margin-bottom:38px }
-    .section-intro.centered { text-align:center; margin:0 auto 45px }
-    h2 { margin:16px 0 16px; color:var(--plum); font-size:clamp(2.4rem,4.2vw,4.4rem); line-height:1.12 }
-    h2 em { color:#AD6B7D; font-weight:400 }
-    .lead { margin:0; font-size:clamp(1.09rem,1.65vw,1.3rem); color:#725964; max-width:740px; line-height:1.58 }
-    .scenes { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:24px }
-    .scene { border-radius:20px; background:var(--cream-light); overflow:hidden; border:1px solid var(--hair) }
-    .scene figure { margin:0; height:290px; background:#D6BDB2; overflow:hidden }
-    .scene img { width:100%; height:100%; object-fit:cover; object-position:center 35%; transition:transform .4s ease }
-    .scene:hover img { transform:scale(1.035) }
-    .scene .body { padding:24px 24px 28px }
-    .scene .number { font-weight:800; color:#A15D72; font-size:.86rem; letter-spacing:.13em; text-transform:uppercase }
-    .scene h3 { font-family:Georgia,serif; color:var(--plum); font-weight:400; font-size:1.72rem; line-height:1.18; margin:11px 0 10px }
-    .scene p { font-size:1.04rem; color:#715B62; margin:0 }
-    .demo-section { background:#EEDFD5; }
-    .demo-layout { display:grid; grid-template-columns:minmax(0,1fr) minmax(0,1fr); align-items:center; gap:65px }
-    .demo-photo { position:relative; background:#C7A594; border-radius:22px; overflow:hidden; min-height:490px }
-    .demo-photo img { width:100%; height:100%; position:absolute; inset:0; object-fit:cover }
-    .demo-photo figcaption { position:absolute; bottom:20px; left:20px; right:20px; color:var(--plum); background:rgba(255,249,244,.95); border-radius:12px; padding:15px 18px; font-size:.93rem; font-weight:650 }
-    .feature-list { display:grid; gap:20px; padding:0; margin:26px 0 33px; list-style:none }
-    .feature-list li { display:grid; grid-template-columns:44px 1fr; gap:14px; align-items:start; font-size:1.08rem; color:#664D58 }
-    .feature-list span { width:44px; height:44px; border-radius:50%; display:grid; place-items:center; background:#FFF8F3; color:#8C4D63; border:1px solid rgba(88,53,71,.15); font-size:1.27rem }
-    .feature-list strong { display:block; color:var(--plum); font-size:1.11rem; margin-bottom:3px }
-    .feature-list p { margin:0 }
-    .inside { background:#FFF9F4 }
-    .benefits { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:14px }
-    .benefit { padding:27px 22px; background:var(--cream); border:1px solid var(--hair); border-radius:16px }
-    .benefit-icon { font-size:1.8rem; display:block; line-height:1.2; margin-bottom:13px }
-    .benefit h3 { color:var(--plum); margin:0 0 8px; font-size:1.15rem; line-height:1.25 }
-    .benefit p { color:#705961; font-size:1rem; margin:0 }
-    .mood { background:#F2E7E0 }
-    .mood-grid { display:grid; grid-template-columns:1fr .95fr; gap:80px; align-items:center }
-    .playlist-showcase { display:grid; gap:14px; max-width:470px; width:100%; margin-left:auto }
-    .vinyl-card { border:1px solid var(--hair); display:grid; grid-template-columns:90px 1fr; align-items:center; gap:18px; border-radius:17px; padding:18px; text-decoration:none; color:var(--plum); background:#FFF8F3; box-shadow:0 12px 35px rgba(93,58,69,.06); transition:transform .18s }
-    .vinyl-card:hover { transform:translateX(-4px) }
-    .vinyl { display:grid; place-items:center; position:relative; height:90px; width:90px; border-radius:50%; background:repeating-radial-gradient(circle at center,#211D22 0 3px,#393139 4px 5px,#231E24 6px 9px); box-shadow:4px 6px 12px #30202B45; }
-    .vinyl:before { content:""; width:37px; height:37px; border-radius:50%; background:#A86E7B; border:3px solid #EBC6CC; }
-    .vinyl:after { content:""; position:absolute; left:calc(50% - 4px); top:calc(50% - 4px); width:8px; height:8px; background:#EEE4D9; border-radius:50%; }
-    .vinyl-card:nth-child(2) .vinyl:before { background:#BE8B70 }
-    .vinyl-card:nth-child(3) .vinyl:before { background:#655B83 }
-    .vinyl-copy strong { font-size:1.18rem; display:block; line-height:1.3; margin-bottom:5px }
-    .vinyl-copy span { display:block; color:#715C67; font-size:.92rem }
-    .vinyl-copy small { display:block; margin-top:5px; font-weight:700; font-size:.79rem; color:#986176; letter-spacing:.055em }
-    .mood-lines { font-size:1.11rem; color:#66515C; margin:22px 0 30px; line-height:1.75 }
-    .mood-lines strong { color:var(--plum) }
-    .quote { background:var(--plum); color:#FFF5F1; padding:76px 0; text-align:center }
-    .quote p { font-family:Georgia,serif; font-size:clamp(2.1rem,3.7vw,3.9rem); line-height:1.22; max-width:940px; margin:auto; letter-spacing:-.03em }
-    .quote em { color:#F4C4CF }
-    .faq { background:#FFF9F4 }
-    .faq-list { max-width:780px; margin:auto; border-top:1px solid var(--hair) }
-    .faq-list details { border-bottom:1px solid var(--hair); padding:0 5px }
-    .faq-list summary { list-style:none; cursor:pointer; padding:22px 32px 22px 0; font-weight:740; color:var(--plum); font-size:1.1rem; position:relative }
-    .faq-list summary::-webkit-details-marker { display:none }
-    .faq-list summary:after { content:"+"; font-weight:400; position:absolute; right:1px; top:21px; font-size:1.5rem }
-    .faq-list details[open] summary:after { content:"−" }
-    .faq-list details p { color:#6C555F; font-size:1.05rem; margin:0 20px 22px 0 }
-    .offer { background:#EEDFD7; padding:88px 0; }
-    .offer-content { display:flex; align-items:center; justify-content:space-between; gap:44px; }
-    .offer-copy { max-width:690px; }
-    .offer h2 { margin-bottom:14px }
-    .offer-price { flex:0 0 auto; min-width:290px; text-align:center; border-left:1px solid var(--hair); padding:6px 0 6px 42px; }
-    .offer-price span { display:block; color:#876477; font-size:.91rem; font-weight:750; text-transform:uppercase; letter-spacing:.09em; }
-    .offer-price strong { font-family:Georgia,serif; display:block; font-weight:400; color:var(--plum); font-size:clamp(3.4rem,5vw,4.8rem); line-height:1.2; margin:7px 0 14px; white-space:nowrap }
-    .offer-price small { display:block; font-size:.9rem; color:#705761; margin-top:11px; line-height:1.4; }
-    .offer-price small strong { color:var(--plum); font-size:.96rem; }
-    @media(max-width:720px) { .offer { padding:72px 0; } .offer-content { display:block; } .offer-price { margin-top:28px; border:1px solid var(--hair); border-radius:17px; padding:25px; min-width:0; background:rgba(255,249,244,.45); } }
-    .closing { padding:103px 0 108px; text-align:center; background:radial-gradient(circle at 50% 16%,#FFF9F4,var(--cream)) }
-    .closing h2 { max-width:800px; margin:17px auto 19px }
-    .closing .lead { margin:0 auto 30px }
-    footer { background:#4E3040; color:#FFF8F5; padding:35px 0 31px }
-    .footer-inner { display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:20px }
-    footer a { text-decoration:underline; text-underline-offset:4px; color:#FFF0EF }
-    footer p { color:#E4CCD4; margin:8px 0 0; font-size:.91rem }
-    .draft-label { padding-top:18px; color:#DFC5CE; font-size:.86rem; line-height:1.5 }
-    @media(max-width:980px) {
-      .hero-grid,.demo-layout,.mood-grid { gap:30px }
-      .hero h1 { font-size:clamp(2.75rem,6vw,4.45rem) }
-      .benefits { grid-template-columns:repeat(2,minmax(0,1fr)) }
-      .scene figure { height:240px }
-      .scene .body { padding:20px }
-    }
-    @media(max-width:720px) {
-      .wrap { width:min(100% - 32px,580px) }
-      .head-inner { min-height:71px }
-      .brand-icon { width:38px; height:38px }
-      .brand span { font-size:.88rem }
-      nav { display:none }
-      .topbar { font-size:.75rem; line-height:1.3 }
-      .hero { padding:40px 0 52px }
-      .hero-grid,.demo-layout,.mood-grid { grid-template-columns:1fr; gap:30px }
-      .hero h1 { font-size:clamp(2.85rem,10.2vw,4.6rem); margin:16px 0 22px }
-      .hero-photo { width:min(100%,490px); height:490px; min-height:0; margin:auto; border-radius:170px 170px 13px 13px }
-      .hero-actions { gap:10px }
-      .hero-actions .button { flex:1 1 195px }
-      .hero-micro { font-size:.88rem }
-      .metrics { grid-template-columns:repeat(3,minmax(0,1fr)) }
-      .metric { padding:23px 10px }
-      .metric strong { font-size:clamp(1.55rem,7vw,2.4rem) }
-      .metric span { font-size:.83rem }
-      section.block { padding:72px 0 }
-      .section-intro { margin-bottom:30px }
-      h2 { font-size:clamp(2.2rem,8vw,3.4rem) }
-      .scenes { grid-template-columns:1fr }
-      .scene figure { height:300px }
-      .scene .body { padding:22px }
-      .demo-photo { min-height:350px; margin:0 }
-      .mood-grid { display:flex; flex-direction:column-reverse; align-items:stretch }
-      .playlist-showcase { max-width:100%; }
-      .head-inner > .button { width:auto; padding:11px 13px; font-size:.84rem }
-      .quote { padding:62px 0 }
-      .closing { padding:72px 0 80px }
-    }
-    @media(max-width:420px) {
-      .hero-photo { height:430px }
-      .brand small { font-size:.65rem }
-      .metrics .metric { padding:19px 7px }
-      .metric strong { font-size:1.65rem }
-      .benefits { grid-template-columns:1fr }
-      .scene figure { height:250px }
-      .button { width:100% }
-      .head-inner > .button { display:none }
-      .vinyl-card { grid-template-columns:72px 1fr; gap:15px; padding:14px }
-      .vinyl { width:72px; height:72px }
-      .vinyl-copy strong { font-size:1.04rem }
-    }
-    @media(prefers-reduced-motion:reduce) {
-      html { scroll-behavior:auto }
-      .button,.scene img { transition:none }
-    }
-  </style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#F7EEE7">
+<meta name="robots" content="noindex, nofollow">
+<title>СНАЧАЛА УЖИН - готовьте вместе, остальное... без рецепта</title>
+<meta name="description" content="1000 рецептов и один секретный, пошаговая готовка, список покупок и идеи для вечера вдвоём. Разовая покупка, бессрочный доступ. Стартовая цена 1 900 ₽.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="СНАЧАЛА УЖИН - 1001 повод остаться">
+<meta property="og:description" content="Готовьте вместе. Остальное... без рецепта. Рецепты, музыка и ваш особенный вечер.">
+<meta property="og:image" content="/assets/our-evening-together-approved.webp">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<style>
+:root{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;background:#F7EEE7;color:#3C252A;--wine:#6D1430;--wine2:#4E1027;--wine3:#8E3854;--cream:#F7EEE7;--pale:#FFFAF6;--text:#3C252A;--muted:#765D62;--line:rgba(108,54,63,.16)}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:86px}
+body{margin:0;min-width:320px;overflow-x:hidden}
+img{display:block;max-width:100%}
+a{color:inherit}
+a:focus-visible,button:focus-visible,summary:focus-visible{outline:3px solid #A85877;outline-offset:4px}
+.wrap{width:min(1200px,calc(100% - 84px));margin-inline:auto}
+.serif{font-family:Georgia,"Times New Roman",serif;font-weight:400;letter-spacing:-.04em}
+.eyebrow{font:italic 1rem Georgia,serif;color:var(--wine3)}
+.eyebrow:after{content:"";display:inline-block;width:40px;height:1px;background:#AB6475;vertical-align:middle;margin-left:12px}
+header{position:sticky;z-index:20;top:0;background:rgba(247,238,231,.95);backdrop-filter:blur(16px);border-bottom:1px solid var(--line)}
+.header{display:flex;align-items:center;justify-content:space-between;gap:20px;min-height:82px}
+.brand{text-decoration:none;font:400 1.57rem Georgia,serif;color:var(--wine);white-space:nowrap;letter-spacing:-.045em}
+.brand span{font-size:1.5rem;display:inline-block;transform:rotate(-8deg);margin-left:8px}
+nav{display:flex;align-items:center;gap:29px}
+nav a{font-size:.95rem;text-decoration:none;font-weight:570}
+nav a:hover{color:var(--wine3)}
+.btn{display:inline-flex;justify-content:center;align-items:center;gap:14px;border-radius:100px;padding:16px 27px;text-decoration:none;font-weight:700;font-size:1rem;line-height:1.2;text-align:center;background:var(--wine);color:#FFF8F4;border:1px solid var(--wine);transition:transform .2s,background .2s}
+.btn:hover{transform:translateY(-2px);background:#852344}
+.btn.light{background:#F9E9DC;color:var(--wine);border-color:#F9E9DC}
+.btn.light:hover{background:white}
+.btn.small{padding:12px 24px;font-size:.92rem}
+.hero{min-height:610px;position:relative;overflow:hidden;display:grid;align-items:center;background:#EAD9CF}
+.hero-image{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:76% 40%}
+.hero-tint{position:absolute;inset:0;background:linear-gradient(90deg,#F8ECE5 0%,#F8ECE5 18%,rgba(248,236,229,.94) 32%,rgba(248,236,229,.57) 50%,rgba(248,236,229,.04) 77%)}
+.hero-inner{position:relative;z-index:1;padding-block:76px 88px}
+.hero h1{font-size:clamp(4.6rem,8.8vw,8.7rem);line-height:.86;color:var(--wine2);margin:0 0 25px;max-width:590px}
+.hero h1 span{display:block}
+.hero h1 em{font-weight:400;font-style:italic;font-size:.5em;vertical-align:top}
+.hero-tagline{font:400 clamp(1.55rem,2.75vw,2.65rem)/1.15 Georgia,serif;max-width:540px;margin:0 0 19px}
+.hero p{font-size:1.16rem;line-height:1.54;max-width:445px;color:#55424A;margin:0 0 26px}
+.hero .notice{display:block;margin-top:17px;color:#735C61;font-size:.9rem;line-height:1.45;max-width:430px}
+.icons{display:grid;grid-template-columns:repeat(4,1fr);padding-block:33px 31px;gap:0}
+.icon-feature{text-align:center;padding:6px 20px;position:relative}
+.icon-feature:not(:last-child):after{content:"";position:absolute;right:0;top:16%;height:68%;width:1px;background:var(--line)}
+.icon-feature svg{width:39px;height:39px;stroke:var(--wine);fill:none;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round;margin:auto auto 9px}
+.icon-feature h2{font:400 1.45rem Georgia,serif;color:var(--wine2);margin:0 0 5px}
+.icon-feature p{font-size:.95rem;line-height:1.45;max-width:220px;margin:0 auto;color:#674F56}
+.story{padding:55px 0 100px;background:var(--pale)}
+.story-row{display:grid;grid-template-columns:47% 1fr;align-items:center;gap:6%;margin:0 auto}
+.story-main-image{width:100%;height:500px;object-fit:cover;border-radius:6px 170px 7px 7px}
+.story-content h2,.music h2{font-size:clamp(2.6rem,4.2vw,4.45rem);line-height:1.04;margin:17px 0 18px;color:var(--wine2)}
+.story-content .intro{font-size:1.26rem;line-height:1.56;color:#624B52;max-width:545px;margin:0}
+.story-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:26px}
+.story-card{min-width:0}
+.story-card img{width:100%;height:170px;object-fit:cover;border-radius:12px;object-position:center 37%}
+.story-card h3{font:400 1.28rem Georgia,serif;color:var(--wine2);margin:11px 0 5px}
+.story-card p{color:var(--muted);font-size:.88rem;line-height:1.45;margin:0}
+.story-actions{margin-top:27px}
+.story-actions a{display:inline-block;color:var(--wine);font-weight:700;text-underline-offset:5px}
+.music{position:relative;overflow:hidden;background:linear-gradient(125deg,#F6E6DF,#EACDBF);padding:75px 0 76px}
+.music:before{content:"";position:absolute;bottom:-142px;left:-160px;width:360px;height:360px;border:5px solid #262126;border-radius:50%;background:repeating-radial-gradient(circle,#201B20 0px,#201B20 6px,#342B33 7px,#251E25 10px);box-shadow:8px 12px 38px #0002}
+.music .wrap{position:relative;z-index:1}
+.music-header{max-width:710px;margin:0 0 29px 14%}
+.music-header h2{margin-bottom:11px}
+.music-header p{font-size:1.13rem;color:#644D55;margin:0;line-height:1.5}
+.music-cards{margin-left:14%;display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.vinyl-card{display:block;text-decoration:none;border-left:1px solid #A9667F;padding:9px 16px;min-width:0}
+.vinyl-card strong{display:block;font:400 1.26rem Georgia,serif;color:var(--wine2)}
+.vinyl-card small{display:block;margin-top:6px;color:#805D6A;font-size:.89rem}
+.vinyl-card:hover strong{color:#9F4A63}
+.offer{background:var(--wine2);color:#FFF2ED;padding:51px 0 53px}
+.offer-grid{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(200px,.75fr) minmax(220px,.85fr);gap:48px;align-items:center}
+.offer h2{font:400 clamp(2.2rem,3.3vw,3.65rem)/1.04 Georgia,serif;letter-spacing:-.04em;margin:0 0 18px}
+.offer ul{list-style:none;padding:0;margin:0;display:grid;gap:9px}
+.offer li{font-size:1rem;line-height:1.45;color:#F5DFE3}
+.offer li:before{content:"✓";font-weight:800;margin-right:11px;color:#F8CDDA}
+.offer-price{border-left:1px solid #A97685;padding-left:42px}
+.offer-price span{display:block;font-size:.95rem;color:#F2D6DC}
+.offer-price strong{display:block;font:400 clamp(3.4rem,4.8vw,5.3rem)/1.04 Georgia,serif;white-space:nowrap;margin:5px 0 9px}
+.offer-price small{display:block;font-size:.88rem;line-height:1.5;color:#EFCFD7}
+.offer-cta{text-align:center}
+.offer-cta .btn{width:100%}
+.offer-cta small{display:block;margin-top:13px;font-size:.85rem;color:#F0D6DF;line-height:1.4}
+.closing-icons{display:grid;grid-template-columns:repeat(3,1fr);gap:25px;align-items:center;justify-items:center;padding:29px 0}
+.closing-icons div{display:flex;gap:12px;align-items:center;font:400 1.17rem Georgia,serif;color:var(--wine2)}
+.closing-icons svg{width:30px;height:30px;stroke:var(--wine);stroke-width:1.6;fill:none;flex:none}
+footer{background:#F2E3DD;padding:25px 0 28px;border-top:1px solid var(--line)}
+.footer-row{display:flex;align-items:center;justify-content:space-between;gap:25px}
+footer .brand{font-size:1.28rem}
+footer .footer-links{display:flex;gap:19px;flex-wrap:wrap}
+footer a{font-size:.9rem}
+footer p{color:#715D64;font-size:.83rem;margin:11px auto 0}
+@media(max-width:1000px){
+ .wrap{width:min(100% - 44px,920px)}
+ nav{gap:17px}
+ .hero-image{object-position:67% 40%}
+ .hero-tint{background:linear-gradient(90deg,#F8ECE5 0%,rgba(248,236,229,.97) 28%,rgba(248,236,229,.57) 56%,rgba(248,236,229,.08) 90%)}
+ .story-row{grid-template-columns:41% 1fr;gap:4%}
+ .story-main-image{height:440px}
+ .story-cards{gap:10px}
+ .story-card img{height:130px}
+ .offer-grid{gap:27px}
+ .offer-price{padding-left:23px}
+}
+@media(max-width:740px){
+ .wrap{width:calc(100% - 32px)}
+ .header{min-height:67px}
+ .brand{font-size:1.18rem}
+ nav{display:none}
+ .btn.small{padding:11px 13px;font-size:.82rem}
+ .hero{min-height:700px;align-items:start}
+ .hero-inner{padding:34px 0 340px}
+ .hero h1{font-size:clamp(4.7rem,15vw,6.4rem);line-height:.9;max-width:540px}
+ .hero-tagline{font-size:clamp(1.55rem,6vw,2.25rem);max-width:410px}
+ .hero p{font-size:1.05rem;max-width:360px}
+ .hero-image{object-position:65% bottom}
+ .hero-tint{background:linear-gradient(180deg,#F8ECE5 0%,rgba(248,236,229,.98) 38%,rgba(248,236,229,.57) 58%,rgba(248,236,229,0) 86%)}
+ .icons{grid-template-columns:repeat(2,1fr);row-gap:26px;padding-block:30px}
+ .icon-feature:nth-child(2):after{display:none}
+ .icon-feature h2{font-size:1.3rem}
+ .story{padding:60px 0 73px}
+ .story-row{grid-template-columns:1fr;gap:27px}
+ .story-main-image{height:345px;border-radius:7px 110px 7px 7px}
+ .story-content h2,.music h2{font-size:clamp(2.45rem,8vw,3.2rem)}
+ .story-content .intro{font-size:1.1rem}
+ .story-card img{height:145px}
+ .music:before{width:210px;height:210px;bottom:-110px;left:-95px}
+ .music-header,.music-cards{margin-left:10%}
+ .music-cards{grid-template-columns:1fr;gap:9px}
+ .vinyl-card{padding:7px 15px}
+ .offer-grid{grid-template-columns:1fr;gap:25px}
+ .offer-price{border-left:0;border-top:1px solid #A97685;padding:21px 0 0}
+ .offer-price strong{font-size:4.3rem}
+ .offer-cta{text-align:left}
+ .offer-cta .btn{width:auto}
+ .closing-icons{grid-template-columns:1fr;justify-items:start;gap:15px}
+ .footer-row{flex-direction:column;align-items:start}
+}
+@media(max-width:430px){
+ .brand{font-size:1.1rem}
+ .header>.btn{font-size:.78rem}
+ .hero h1{font-size:4.45rem}
+ .hero{min-height:690px}
+ .hero-inner{padding-bottom:310px}
+ .icons{gap:15px}
+ .icon-feature{padding:0 8px}
+ .icon-feature p{font-size:.84rem}
+ .story-cards{grid-template-columns:1fr;gap:21px}
+ .story-card{display:grid;grid-template-columns:120px 1fr;column-gap:12px;align-content:start}
+ .story-card img{width:120px;height:100px;grid-row:span 2}
+ .story-card h3{margin:0 0 5px}
+ .story-card p{font-size:.87rem}
+ .music-header,.music-cards{margin-left:0}
+ .offer-cta .btn{width:100%}
+}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.btn{transition:none}}
+</style>
 </head>
 <body>
-  <div class="topbar">СНАЧАЛА УЖИН &nbsp; ✳ &nbsp; 1000 РЕЦЕПТОВ + 1 СЕКРЕТНЫЙ &nbsp; ✳ &nbsp; ДЛЯ ДВОИХ</div>
-  <header class="site-header">
-    <div class="wrap head-inner">
-      <a class="brand" href="/" aria-label="СНАЧАЛА УЖИН, открыть основной сайт">
-        <svg class="brand-icon" viewBox="0 0 48 48" fill="none" aria-hidden="true">
-          <path d="M12 9h24c-.35 12.7-3.5 20.5-12 20.5S12.35 21.7 12 9Z" fill="#FFF8F6" fill-opacity=".55" stroke="#755263" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/>
-          <path d="M14.2 18.3c3.2.1 5.1.05 9.7-1.1 4.1-1 7.8-.6 9.9.35-.9 7.3-4 10.9-9.8 10.9-6.1 0-8.9-4.1-9.8-10.15Z" fill="#AD647B"/>
-          <path d="M24 29.5v11M16 41h16" stroke="#755263" stroke-width="2.4" stroke-linecap="round"/>
-        </svg>
-        <span>СНАЧАЛА <em>УЖИН</em><small>1001 повод остаться</small></span>
-      </a>
-      <nav aria-label="Разделы лендинга">
-        <a href="#how">Как это работает</a><a href="#inside">Что внутри</a><a href="#evening">Наш вечер</a>
-      </nav>
-      <a class="button primary small" href="/#catalog">Выбрать рецепт <span aria-hidden="true">↗</span></a>
+<header>
+ <div class="wrap header">
+  <a href="/" class="brand" aria-label="СНАЧАЛА УЖИН, основной сайт">СНАЧАЛА УЖИН <span aria-hidden="true">♡</span></a>
+  <nav aria-label="Навигация">
+   <a href="#inside">Что внутри</a><a href="#demo">Рецепты</a><a href="#evening">Наш вечер</a><a href="#price">Стоимость</a>
+  </nav>
+  <a class="btn small" href="#price">Доступ навсегда</a>
+ </div>
+</header>
+<main>
+<section class="hero" aria-labelledby="hero-title">
+  <img class="hero-image" src="/assets/our-evening-together-approved.webp" alt="Пара готовит вместе на уютной кухне" fetchpriority="high" width="1080" height="1350">
+  <div class="hero-tint" aria-hidden="true"></div>
+  <div class="wrap hero-inner">
+    <h1 id="hero-title" class="serif">СНАЧАЛА <span>УЖИН <em>♡</em></span></h1>
+    <div class="hero-tagline">Готовьте вместе.<br>Остальное... без рецепта.</div>
+    <p>Интерактивный кулинарный гид для красивых и романтичных вечеров вдвоём. Выбирайте блюдо, готовьте шаг за шагом, включайте музыку.</p>
+    <a class="btn" href="#price">Получить доступ навсегда <span aria-hidden="true">→</span></a>
+    <span class="notice">Стартовая цена 1 900 ₽. Один платёж, без подписки. Покупка будет доступна после запуска продаж.</span>
+  </div>
+</section>
+<section id="inside" aria-label="Возможности продукта">
+ <div class="wrap icons">
+  <article class="icon-feature">
+   <svg aria-hidden="true" viewBox="0 0 40 40"><path d="M9 30h22M10 28c0-12 3-18 10-18s10 6 10 18M15 11c-3-7 2-10 5-6 3-4 8-1 5 6"/></svg>
+   <h2>1001 рецепт</h2><p>На каждый вкус и настроение</p>
+  </article>
+  <article class="icon-feature">
+   <svg aria-hidden="true" viewBox="0 0 40 40"><rect x="8" y="8" width="24" height="26" rx="3"/><path d="M15 8V4M25 8V4M13 19l4 4 9-10M13 28h13"/></svg>
+   <h2>Удобная готовка</h2><p>Пошаговые инструкции, списки покупок и таймеры</p>
+  </article>
+  <article class="icon-feature">
+   <svg aria-hidden="true" viewBox="0 0 40 40"><path d="M17 10v20a6 6 0 1 1-5-6V8l18-4v23a6 6 0 1 1-5-6V8"/></svg>
+   <h2>Музыка для двоих</h2><p>Подборки с нужным настроением</p>
+  </article>
+  <article class="icon-feature">
+   <svg aria-hidden="true" viewBox="0 0 40 40"><path d="M20 34C8 25 4 20 5 13c1-8 11-10 15-3 4-7 14-5 15 3 1 7-3 12-15 21Z"/></svg>
+   <h2>Наш вечер</h2><p>Идеи, сценарии и вдохновение</p>
+  </article>
+ </div>
+</section>
+<section class="story" id="demo" aria-labelledby="story-heading">
+ <div class="wrap">
+  <div class="story-row">
+   <img class="story-main-image" src="/assets/recipes-ai/0001-lemon-spinach-pasta.webp" alt="Паста с лимоном и шпинатом из настоящего каталога рецептов" loading="lazy" width="1200" height="900">
+   <div class="story-content">
+    <span class="eyebrow">Не просто сборник рецептов</span>
+    <h2 id="story-heading" class="serif">Больше, чем рецепты</h2>
+    <p class="intro">Это идеи для совместной готовки, атмосфера и готовые сценарии вечера. От выбора блюда до особенных моментов вдвоём.</p>
+    <div class="story-cards">
+     <article class="story-card"><img src="/assets/our-evening-hero-hq.avif" loading="lazy" width="740" height="1234" alt="Пара вместе готовит ужин"><h3>Шаг за шагом</h3><p>Готовьте с удовольствием по понятным шагам.</p></article>
+     <article class="story-card"><img src="/assets/our-evening-dinner-hq.avif" loading="lazy" width="1212" height="970" alt="Красиво сервированный стол для романтичного ужина"><h3>Всё под рукой</h3><p>Список покупок и таймеры в одном месте.</p></article>
+     <article class="story-card"><img src="/assets/our-evening-after-hq.avif" loading="lazy" width="740" height="1234" alt="Камерный романтический вечер"><h3>Идеи для вечера</h3><p>Настроение для ужина и его продолжения.</p></article>
     </div>
-  </header>
-
-  <main>
-    <section class="hero" aria-labelledby="hero-heading">
-      <div class="wrap hero-grid">
-        <div class="hero-text">
-          <span class="eyebrow">Не просто сборник рецептов</span>
-          <h1 id="hero-heading" class="serif">Всё хорошее <em>начинается</em> за столом.</h1>
-          <p class="hero-copy">1001 идея для красивого ужина вдвоём. Выбирайте блюдо, готовьте шаг за шагом, включайте музыку. А главное - находите время друг для друга.</p>
-          <div class="hero-actions">
-            <a class="button primary" href="/#catalog">Посмотреть рецепты <span aria-hidden="true">↗</span></a>
-            <a class="button secondary" href="#how">Как устроен продукт <span aria-hidden="true">↓</span></a>
-          </div>
-          <p class="hero-micro">Интерактивные рецепты, а не PDF. Откройте коллекцию и попробуйте готовить прямо с экрана.</p>
-        </div>
-        <div class="hero-photo">
-          <img src="/assets/our-evening-together-approved.webp" width="1080" height="1350" fetchpriority="high" alt="Пара вместе готовит ужин на тёплой домашней кухне">
-          <div class="hero-note"><strong>Готовьте вместе.</strong><span>Остальное... без рецепта.</span></div>
-        </div>
-      </div>
-    </section>
-
-    <div class="metrics" aria-label="Что включает коллекция">
-      <div class="metric"><strong>1001</strong><span>повод приготовить</span></div>
-      <div class="metric"><strong>10</strong><span>разделов рецептов</span></div>
-      <div class="metric"><strong>2</strong><span>места за столом</span></div>
-    </div>
-
-    <section class="block" id="how" aria-labelledby="how-heading">
-      <div class="wrap">
-        <div class="section-intro centered">
-          <span class="eyebrow">Три сцены одного вечера</span>
-          <h2 id="how-heading" class="serif">Не нужно особого повода. <em>Придумайте свой.</em></h2>
-          <p class="lead" style="margin-inline:auto">Здесь начинается не только ужин. Здесь появляется маленький совместный план, в котором приятно участвовать обоим.</p>
-        </div>
-        <div class="scenes">
-          <article class="scene">
-            <figure><img src="/assets/our-evening-hero-hq.avif" width="740" height="1234" loading="lazy" alt="Совместная готовка вдвоём"></figure>
-            <div class="body"><span class="number">01 / Выбрать</span><h3>Что приготовим сегодня?</h3><p>Выберите рецепт под настроение, время и желание. В коллекции найдётся идея и для буднего дня, и для особенного случая.</p></div>
-          </article>
-          <article class="scene">
-            <figure><img src="/assets/our-evening-dinner-hq.avif" width="1212" height="970" loading="lazy" alt="Ужин вдвоём при свечах за красиво сервированным столом"></figure>
-            <div class="body"><span class="number">02 / Приготовить</span><h3>На одной кухне, в одной команде.</h3><p>Следуйте шагам на экране, сверяйтесь со списком покупок, пользуйтесь таймерами. Больше внимания друг другу, меньше суеты.</p></div>
-          </article>
-          <article class="scene">
-            <figure><img src="/assets/our-evening-after-hq.avif" width="740" height="1234" loading="lazy" alt="Тёплая камерная атмосфера продолжения вечера"></figure>
-            <div class="body"><span class="number">03 / Продолжить</span><h3>Ужин готов. Вечер - нет.</h3><p>Включите музыку для ужина или продолжения вечера. А дальше уже не нужен сценарий.</p></div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="block demo-section" id="demo" aria-labelledby="demo-heading">
-      <div class="wrap demo-layout">
-        <figure class="demo-photo">
-          <img src="/assets/recipes-ai/0001-lemon-spinach-pasta.webp" width="1200" height="900" loading="lazy" alt="Паста с лимоном и шпинатом - рецепт из реального каталога">
-          <figcaption>Из настоящего каталога: паста с лимоном и шпинатом · 20 минут</figcaption>
-        </figure>
-        <div>
-          <span class="eyebrow">Не читать. Готовить.</span>
-          <h2 id="demo-heading" class="serif">Рецепт живёт <em>на экране.</em></h2>
-          <p class="lead">Это не цифровая поваренная книга, которую нужно листать в поисках нужной строки. Здесь удобно идти от решения «что приготовить» прямо к ужину.</p>
-          <ul class="feature-list">
-            <li><span aria-hidden="true">✓</span><div><strong>Пошаговый режим</strong><p>Открывайте действия по порядку, без длинных простыней текста.</p></div></li>
-            <li><span aria-hidden="true">▤</span><div><strong>Список покупок</strong><p>Ингредиенты выбранных блюд можно собрать в отдельный список.</p></div></li>
-            <li><span aria-hidden="true">◷</span><div><strong>Таймеры там, где нужны</strong><p>Меньше переключений между кухней и телефоном.</p></div></li>
-          </ul>
-          <a class="button primary" href="/#recipe=lemon-spinach-pasta">Открыть этот рецепт <span aria-hidden="true">↗</span></a>
-        </div>
-      </div>
-    </section>
-
-    <section class="block inside" id="inside" aria-labelledby="inside-heading">
-      <div class="wrap">
-        <div class="section-intro centered">
-          <span class="eyebrow">Одна коллекция - много вечеров</span>
-          <h2 id="inside-heading" class="serif">Что внутри <em>«СНАЧАЛА УЖИН»?</em></h2>
-          <p class="lead" style="margin-inline:auto">Всё, что помогает перейти от «что бы нам сегодня приготовить» к «как здорово, что мы остались дома».</p>
-        </div>
-        <div class="benefits">
-          <article class="benefit"><span class="benefit-icon" aria-hidden="true">🍽️</span><h3>1000 + 1 рецепт</h3><p>Большая коллекция блюд на двоих и один секретный рецепт.</p></article>
-          <article class="benefit"><span class="benefit-icon" aria-hidden="true">✳</span><h3>10 разделов</h3><p>От мяса и рыбы до пасты, овощей, выпечки и десертов.</p></article>
-          <article class="benefit"><span class="benefit-icon" aria-hidden="true">✓</span><h3>Удобная готовка</h3><p>Шаги, ингредиенты, список покупок и встроенные таймеры.</p></article>
-          <article class="benefit"><span class="benefit-icon" aria-hidden="true">♫</span><h3>«Наш вечер»</h3><p>Идеи романтического ужина и музыкальное настроение в три этапа.</p></article>
-        </div>
-      </div>
-    </section>
-
-    <section class="block mood" id="evening" aria-labelledby="mood-heading">
-      <div class="wrap mood-grid">
-        <div>
-          <span class="eyebrow">Специальный режим</span>
-          <h2 id="mood-heading" class="serif">Вечер не заканчивается <em>последним блюдом.</em></h2>
-          <p class="lead">В разделе «Наш вечер» можно выбрать настроение, вдохновиться идеями для двоих и перейти к музыкальным подборкам.</p>
-          <p class="mood-lines"><strong>Под что готовить</strong> - энергично.<br><strong>Под что ужинать</strong> - неспешно.<br><strong>Под что продолжить</strong> - только для вас.</p>
-          <a class="button primary" href="/#evening">Создать наш вечер <span aria-hidden="true">↗</span></a>
-        </div>
-        <div class="playlist-showcase" aria-label="Музыкальные подборки для трёх моментов вечера">
-          <a class="vinyl-card" href="/#music"><span class="vinyl" aria-hidden="true"></span><span class="vinyl-copy"><strong>Под что готовить</strong><span>Двигаться, смеяться, пробовать.</span><small>120 BPM И ВЫШЕ</small></span></a>
-          <a class="vinyl-card" href="/#music"><span class="vinyl" aria-hidden="true"></span><span class="vinyl-copy"><strong>Под что ужинать</strong><span>Убавить темп и остаться за столом.</span><small>80–100 BPM</small></span></a>
-          <a class="vinyl-card" href="/#music"><span class="vinyl" aria-hidden="true"></span><span class="vinyl-copy"><strong>Под что продолжить</strong><span>Дальше разговоров почти не нужно.</span><small>80 BPM И НИЖЕ</small></span></a>
-        </div>
-      </div>
-    </section>
-
-    <section class="quote" aria-label="Слоган">
-      <div class="wrap"><p>Готовьте вместе.<br><em>Остальное... без рецепта.</em></p></div>
-    </section>
-
-    <section class="offer" id="price" aria-labelledby="offer-heading">
-      <div class="wrap offer-content">
-        <div class="offer-copy">
-          <span class="eyebrow">Стартовая стоимость</span>
-          <h2 id="offer-heading" class="serif">Вечера, которые хочется <em>повторять.</em></h2>
-          <p class="lead">1001 рецепт, интерактивные шаги, списки покупок, таймеры и «Наш вечер» с музыкальными подборками. Всё в одном цифровом продукте.</p>
-        </div>
-        <div class="offer-price" aria-label="Цена продукта">
-          <span>Стартовая цена</span><strong>1 900 ₽</strong>
-          <a class="button primary" href="/#catalog">Посмотреть продукт <span aria-hidden="true">↗</span></a>
-          <small><strong>Один платёж. Бессрочный доступ. Без подписки.</strong></small>
-          <small>Позже цена повысится. Дата и новая стоимость будут объявлены отдельно.</small>
-          <small>Оплата будет доступна после запуска продаж.</small>
-        </div>
-      </div>
-    </section>
-
-    <section class="block faq" id="questions" aria-labelledby="faq-heading">
-      <div class="wrap">
-        <div class="section-intro centered">
-          <span class="eyebrow">Просто и понятно</span>
-          <h2 id="faq-heading" class="serif">Без лишних <em>вопросов.</em></h2>
-        </div>
-        <div class="faq-list">
-          <details><summary>Это книга рецептов в PDF?</summary><p>Нет. Это интерактивный сайт с карточками блюд, пошаговыми действиями, списком покупок и таймерами. Можно пользоваться прямо с телефона или компьютера.</p></details>
-          <details><summary>Нужно ли хорошо уметь готовить?</summary><p>Нет. Рецепты сопровождаются инструкциями, а в карточках указаны сложность и время приготовления. Можно начинать с простых блюд.</p></details>
-          <details><summary>Обязательно ли готовить вдвоём?</summary><p>Нет. Коллекция создана с акцентом на ужины для двоих, но рецепты подходят и для самостоятельной готовки.</p></details>
-          <details><summary>Сколько стоит доступ к продукту?</summary><p>На старте - 1 900 ₽ за бессрочный доступ. Это разовая покупка без подписки. В дальнейшем цена повысится, но новая стоимость и дата повышения пока не определены. Оплата появится после запуска продаж.</p></details>
-          <details><summary>Как долго сохраняется доступ после покупки?</summary><p>Бессрочно. Покупатель один раз оплачивает доступ к приобретённой коллекции и продолжает пользоваться ею без регулярных платежей.</p></details>
-        </div>
-      </div>
-    </section>
-
-    <section class="closing" aria-labelledby="closing-heading">
-      <div class="wrap">
-        <span class="eyebrow">Всё хорошее начинается за столом</span>
-        <h2 id="closing-heading" class="serif">Пусть сегодняшний вечер <em>запомнится.</em></h2>
-        <p class="lead">Выберите блюдо. Позовите того, кто вам дорог. А мы поможем с остальным.</p>
-        <a class="button primary" href="/#catalog">Выбрать наш ужин <span aria-hidden="true">↗</span></a>
-      </div>
-    </section>
-  </main>
-
-  <footer>
-    <div class="wrap footer-inner">
-      <div><strong>СНАЧАЛА УЖИН</strong><p>Готовьте вместе. Остальное... без рецепта.</p></div>
-      <div><a href="/">Основной сайт</a> &nbsp; · &nbsp; <a href="/#catalog">Рецепты</a> &nbsp; · &nbsp; <a href="/#evening">Наш вечер</a></div>
-    </div>
-    <div class="wrap draft-label">Предпросмотр концепции лендинга. Разовая покупка - 1 900 ₽ на старте, бессрочный доступ без подписки. Позже цена повысится; оплата пока не подключена.</div>
-  </footer>
+    <div class="story-actions"><a href="/#recipe=lemon-spinach-pasta">Попробовать готовку на примере рецепта →</a></div>
+   </div>
+  </div>
+ </div>
+</section>
+<section id="evening" class="music" aria-labelledby="music-heading">
+ <div class="wrap">
+  <div class="music-header">
+    <span class="eyebrow">У каждого вечера свой ритм</span>
+    <h2 id="music-heading" class="serif">Музыка, которая создаёт настроение</h2>
+    <p>Подборки для готовки, ужина и продолжения вечера. С нужным ритмом и атмосферой.</p>
+  </div>
+  <div class="music-cards">
+   <a href="/#music" class="vinyl-card"><strong>Под что готовить</strong><small>120 BPM И ВЫШЕ</small></a>
+   <a href="/#music" class="vinyl-card"><strong>Под что ужинать</strong><small>80–100 BPM</small></a>
+   <a href="/#music" class="vinyl-card"><strong>Под что продолжить</strong><small>80 BPM И НИЖЕ</small></a>
+  </div>
+ </div>
+</section>
+<section id="price" class="offer" aria-labelledby="price-heading">
+ <div class="wrap offer-grid">
+  <div>
+   <h2 id="price-heading">Доступ навсегда</h2>
+   <ul>
+    <li>Вся коллекция: 1001 рецепт</li>
+    <li>Интерактивные шаги, списки и таймеры</li>
+    <li>Без подписки и регулярных платежей</li>
+   </ul>
+  </div>
+  <div class="offer-price">
+    <span>Стартовая цена</span><strong>1 900 ₽</strong>
+    <small>Позже цена повысится. Дата и новая стоимость пока не определены.</small>
+  </div>
+  <div class="offer-cta">
+    <a class="btn light" href="/#catalog">Посмотреть продукт <span aria-hidden="true">→</span></a>
+    <small>Один платёж. Бессрочный доступ.<br>Оплата будет доступна после запуска продаж.</small>
+  </div>
+ </div>
+</section>
+<section aria-label="Ключевые преимущества">
+ <div class="wrap closing-icons">
+   <div><svg aria-hidden="true" viewBox="0 0 32 32"><rect x="7" y="11" width="18" height="16" rx="1"/><path d="M16 11v16M7 16h18M16 11c-10-3-6-11-1-6l1 6c3-10 12-6 5-2l-5 2"/></svg><span>Один раз - и навсегда</span></div>
+   <div><svg aria-hidden="true" viewBox="0 0 32 32"><path d="M7 3l18 13-10 2-3 11-5-26Z"/></svg><span>Удобно на любом устройстве</span></div>
+   <div><svg aria-hidden="true" viewBox="0 0 32 32"><path d="M16 28C6 21 3 16 5 10c3-8 9-5 11-1 2-4 8-7 11 1 2 6-1 11-11 18Z"/></svg><span>Для двоих, в любое время</span></div>
+ </div>
+</section>
+</main>
+<footer>
+ <div class="wrap">
+  <div class="footer-row">
+   <a href="/" class="brand">СНАЧАЛА УЖИН ♡</a>
+   <div class="footer-links"><a href="/#catalog">Рецепты</a><a href="/#evening">Наш вечер</a><a href="/">Основной сайт</a></div>
+  </div>
+  <p>Предпросмотр утверждённой визуальной концепции. Цена на старте 1 900 ₽. Платёжная интеграция ещё не подключена.</p>
+ </div>
+</footer>
 </body>
 </html>
