@@ -67,8 +67,8 @@ jobs:
         run: |
           set -euo pipefail
           if [[ -z "${YANDEX_API_KEY}" ]]; then
-            echo "::warning::YANDEX_API_KEY is not configured; no paid calls made."
-            exit 0
+            echo "::error::YANDEX_API_KEY is not configured; no paid calls made."
+            exit 1
           fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
