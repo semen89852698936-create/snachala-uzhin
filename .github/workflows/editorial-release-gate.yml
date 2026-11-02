@@ -10,6 +10,7 @@ on:
       - 'review/commons-source-page-evidence-20261102.json'
       - 'review/photo-release-decisions.json'
       - 'review/visual-triage-20261102.json'
+      - 'review/visual-triage-addendum-20261102-1042.json'
       - 'photo-library/batch-100-20261101/manifest.json'
       - '.github/workflows/editorial-release-gate.yml'
   workflow_dispatch:
