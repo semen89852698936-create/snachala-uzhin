@@ -48,7 +48,7 @@ def read_queue():
         prompt = item.get("prompt_ru")
         if not isinstance(prompt, str) or not (90 <= len(prompt) <= art.MAX_PROMPT):
             raise RuntimeError(f"Invalid prompt length for {n}")
-        expected_name = f'{n:04d}-{item["id"]}-regen.webp'
+        expected_name = f'{n:04d}-{item["id"]}-no-eggs-regen.webp'
         if item["output_file"] != expected_name:
             raise RuntimeError(f"Wrong output file for {n}")
         original = ROOT / "photo-library/alice-ai-art/photos" / f'{n:04d}-{item["id"]}.webp'
