@@ -5,12 +5,19 @@ on:
     # Twice per hour, away from the overloaded 00/30-minute boundary.
     - cron: '7,37 * * * *'
   workflow_dispatch:
+  pull_request:
+    paths:
+      - 'scripts/half_hour_photo_worker.py'
+      - 'tests/test_half_hour_photo_worker.py'
+      - 'photo-library/editorial-risk-signals.json'
+      - '.github/workflows/half-hour-photo-production.yml'
   push:
     branches:
       - 'operations/persistent-state-and-data-plan-20261102'
     paths:
       - 'scripts/half_hour_photo_worker.py'
       - 'tests/test_half_hour_photo_worker.py'
+      - 'photo-library/editorial-risk-signals.json'
       - '.github/workflows/half-hour-photo-production.yml'
 
 concurrency:
