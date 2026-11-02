@@ -2,8 +2,24 @@
   "manual_editorial_approved": 0,
   "note": "Physical file integrity is not ingredient correctness, license clearance or publication approval.",
   "publication": "review_only_not_production",
-  "remaining_for_technical_check": 95,
+  "remaining_for_technical_check": 90,
   "results": {
+    "chickpeas": {
+      "bytes": 88630,
+      "checked_utc": "2026-11-02T00:06:47.335979+00:00",
+      "height": 900,
+      "sha256": "b403b3cfeaa22915ebb4734429188a49b742c7eacd52d07af73b64cb4e011b30",
+      "status": "technical_pass",
+      "width": 1200
+    },
+    "focaccia": {
+      "bytes": 113718,
+      "checked_utc": "2026-11-02T00:06:47.623155+00:00",
+      "height": 900,
+      "sha256": "0b2f9a476715852979ecaa6487e971f4d32fc5e81156f321b1df986d82c1c693",
+      "status": "technical_pass",
+      "width": 1200
+    },
     "lemon-spinach-pasta": {
       "bytes": 64308,
       "checked_utc": "2026-11-01T23:52:32.032260+00:00",
@@ -20,11 +36,35 @@
       "status": "technical_pass",
       "width": 1200
     },
+    "med-fish": {
+      "bytes": 148926,
+      "checked_utc": "2026-11-02T00:06:46.627353+00:00",
+      "height": 900,
+      "sha256": "5b296e65212b87a0179532adfce1ef43a110a417dbf472dcab332bd82226af61",
+      "status": "technical_pass",
+      "width": 1200
+    },
+    "pancakes": {
+      "bytes": 231184,
+      "checked_utc": "2026-11-02T00:06:47.991155+00:00",
+      "height": 900,
+      "sha256": "3a80d54da4e977b87b62ca0251610e40b84a72aaf7f5d055f2f9f9ef91f8bc83",
+      "status": "technical_pass",
+      "width": 1200
+    },
     "pepper-steak": {
       "bytes": 38490,
       "checked_utc": "2026-11-01T23:52:32.979769+00:00",
       "height": 900,
       "sha256": "3f4c1e71b53ac75d1e6c57ee26c9fa57b55aae350b9a9ded6d612e164d5695b0",
+      "status": "technical_pass",
+      "width": 1200
+    },
+    "ratatouille": {
+      "bytes": 159124,
+      "checked_utc": "2026-11-02T00:06:46.985274+00:00",
+      "height": 900,
+      "sha256": "e4bab325b1240e1c63ca81e30b4d96df8b59b65b01da8901795630805df998b1",
       "status": "technical_pass",
       "width": 1200
     },
@@ -48,6 +88,6 @@
   "schema_version": 1,
   "source_manifest_sha256": "211002d83c93f8f6227679cb3179f6189984c45eb195c3dca3090ef31827711d",
   "source_ref": "photo-library/restore-100-review-20261102",
-  "technically_verified": 5,
+  "technically_verified": 10,
   "total_archive_candidates": 100
 }
