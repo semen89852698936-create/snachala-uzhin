@@ -2,9 +2,10 @@
   "n": 30,
   "recipe_id": "collection-meat-02-02",
   "prompt_sha256": "90d2b8b2595a361a296dbcbc6de0f0924a740ec1c4c27754cc1b96688e36b168",
-  "status": "reserved_before_paid_call",
+  "status": "generated_candidate_unpublished",
   "attempt_number": 1,
   "reserved_at": "2026-11-02T20:59:13+00:00",
   "no_auto_retry": true,
-  "publication_approved": false
+  "publication_approved": false,
+  "finished_at": "2026-11-02T20:59:18+00:00"
 }
