@@ -1,9 +1,0 @@
-{
-  "n": 615,
-  "recipe_id": "collection-salads-01-09",
-  "status": "model_refusal_400_no_image",
-  "created_at": "2026-11-02T12:59:49+00:00",
-  "note": "If output is missing after failure, do not automatically re-request.",
-  "details": "GitHub Actions run 41448877977: Yandex HTTP 400 content refusal; no image was returned, do not retry same prompt",
-  "api_response": "Я не могу сгенерировать это изображение. Давайте попробуем другую тему."
-}
