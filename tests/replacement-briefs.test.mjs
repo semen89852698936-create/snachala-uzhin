@@ -148,9 +148,9 @@ test('Four new direct-WebP reviews 22-25 match immutable archive and do not impl
         catalogRecipe(source.recipe_id).ingredients.map(({name, amount, unit}) => ({name, amount, unit})));
     }
   }
-  assert.equal(triage.reviewed_images, 25);
-  assert.equal(triage.clear_mismatch_count, 22);
-  assert.equal(triage.partial_match_count, 2);
+  assert.equal(triage.reviewed_images, 29);
+  assert.equal(triage.clear_mismatch_count, 25);
+  assert.equal(triage.partial_match_count, 3);
   assert.equal(triage.possible_match_count, 1);
-  assert.equal(briefs.rejected_count, 22);
+  assert.equal(briefs.rejected_count, 25);
 });
