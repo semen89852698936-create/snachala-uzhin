@@ -99,6 +99,16 @@ class PhotoWorkerTests(unittest.TestCase):
         self.assertIn("source_caption_requires_priority_review", queue[0]["flags"])
         self.assertEqual(queue[1]["source_caption_risk"], "not_flagged")
 
+    def test_copied_recipe_title_does_not_prove_original_caption(self):
+        rows = worker.validate_manifest(make_manifest(make_webp()))
+        rows[0]["source_photo_title"] = rows[0]["title"]
+        queue = worker.queue_entries(rows, {})
+        self.assertIn("source_title_repeats_recipe_title_not_independent",
+                      queue[0]["flags"])
+        self.assertEqual(queue[0]["editorial_status"], "requires_visual_review")
+        self.assertNotIn("source_title_repeats_recipe_title_not_independent",
+                         queue[1]["flags"])
+
     def test_stale_photo_hash_does_not_read_as_technically_passed(self):
         rows = worker.validate_manifest(make_manifest(make_webp()))
         checked = {"recipe-1": {"status": "technical_pass", "sha256": "0" * 64}}
