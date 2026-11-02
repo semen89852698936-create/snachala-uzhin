@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-02",
+  "source_review": "review/ai-art-first-five-visual-triage-20261102.json",
+  "purpose": "Exact-recipe replacement brief for rejected AI salmon photo #5. No image generated, rights cleared or publication approved.",
+  "cost_approval_required": true,
+  "publication_allowed": false,
+  "items": [
+    {
+      "number": 5,
+      "recipe_id": "salmon-lemon",
+      "recipe_title": "Лосось с лимоном и зеленью",
+      "rejected_photo_path": "photo-library/alice-ai-art/photos/0005-salmon-lemon.webp",
+      "rejected_photo_blob_sha": "317f20642d4278ad500ff288051961dfd3427fe2",
+      "rejection": "Existing WebP visually resembles raw salmon, but the recipe describes oven-baked salmon served as a finished dish.",
+      "recipe_ingredients": [
+        "Филе лосося",
+        "Лимон",
+        "Масло оливковое",
+        "Укроп",
+        "Чеснок",
+        "Соль"
+      ],
+      "cooking_evidence": "Рецепт предписывает запекать лосось при 200 °C 12–15 минут до расслоения мякоти; готовое блюдо украшается укропом и лимонным соком.",
+      "must_show": [
+        "Готовое запечённое филе лосося с непрозрачной приготовленной мякотью и лёгким расслоением",
+        "Лимон и свежий укроп как компоненты подачи",
+        "Натуральная ресторанная подача готовой рыбы, не сырая заготовка"
+      ],
+      "must_avoid": [
+        "Сырое или полупрозрачное филе",
+        "Сашими, тартар и другие блюда из сырого лосося",
+        "Непредусмотренные ингредиенты, которые меняют узнаваемость рецепта"
+      ],
+      "visual_review_required": true,
+      "rights_status": "unverified",
+      "owner_approved": false,
+      "status": "brief_only_no_physical_replacement"
+    }
+  ]
+}
