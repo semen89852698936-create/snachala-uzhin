@@ -1,0 +1,26 @@
+name: Verify tempo-banded music card selections
+on:
+  push:
+    branches: [feature/music-bpm-editorial-cards-20261102]
+    paths:
+      - 'music/verified-bpm-editorial.json'
+      - 'index.html'
+      - 'full-catalog/index.html'
+      - 'scripts/test_music_bpm_editorial.py'
+      - '.github/workflows/verify-bpm-editorial.yml'
+  pull_request:
+    paths:
+      - 'music/verified-bpm-editorial.json'
+      - 'index.html'
+      - 'full-catalog/index.html'
+      - 'scripts/test_music_bpm_editorial.py'
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+        with:
+          persist-credentials: false
+      - run: python3 -m unittest discover -s scripts -p 'test_music_bpm_editorial.py' -v
