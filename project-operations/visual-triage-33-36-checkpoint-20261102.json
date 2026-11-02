@@ -44,10 +44,14 @@
   "checks": {
     "manifest_consistency": "3/3 verified in connector data before write",
     "new_test_file": "tests/visual-triage-33-36.test.mjs",
-    "ci_status": "pending_pull_request_run",
+    "ci_status": "success",
     "image_sha256_recomputed": false,
     "webp_bytes_directly_rendered": true,
-    "source_provenance_verified": false
+    "source_provenance_verified": false,
+    "github_actions_run_id": 41455924023,
+    "github_actions_url": "https://github.com/semen89852698936-create/snachala-uzhin/actions/runs/41455924023",
+    "github_actions_tested_commit_sha": "91f095f47f73ecdd13d5feb551c744a33ab0a98d",
+    "manual_manifest_cross_checks": "3/3 passed, counts consistent"
   },
   "blockers": [
     "New rejected 33, 34, 36 need exact recipe replacement briefs before canonical triage integration",
