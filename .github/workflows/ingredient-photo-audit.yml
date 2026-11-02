@@ -1,0 +1,21 @@
+name: Build recipe-aware visual photo audit queue
+on:
+  push:
+    branches: [audit/ingredient-photo-consistency-20261103]
+    paths: ['scripts/build-ingredient-photo-audit.py', '.github/workflows/ingredient-photo-audit.yml']
+permissions:
+  contents: write
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: python3 scripts/build-ingredient-photo-audit.py
+      - name: Commit queued candidates without changing recipe photos
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add photo-library/ingredient-visual-audit.json
+          git diff --cached --quiet && exit 0
+          git commit -m "Audit recipe ingredient and photo consistency candidates"
+          git push
