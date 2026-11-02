@@ -1,0 +1,60 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-02",
+  "project": "snachala-uzhin",
+  "issue": "Main contains a separate Yandex AI workflow with a live schedule and automatic paid-job eligibility, despite explicit no-spend constraint. This is NOT the still-unmerged half-hour archive audit workflow in PR #12.",
+  "main_head_at_review": "0e7b6b6988c2c8307d76032ed35b2035381124e3",
+  "main_workflow": ".github/workflows/yandex-ai-1001.yml",
+  "main_workflow_original_blob_sha": "a24c2be032f5ea5b9562847fa082dd2e8ccc6a62",
+  "working_branch": "safety/manual-only-yandex-photo-cost-20261102",
+  "changed_file": ".github/workflows/yandex-ai-1001.yml",
+  "safety_patch_commit_sha": "d54762e249e493e3fcded09100b638a6a37a302e",
+  "patched_workflow_blob_sha": "9a105f99b4a4e3f5391107f376ddf55c2a1134d7",
+  "changes": [
+    "Rebased safety content onto 2026-11-02 11:25:32Z main changes using a two-parent merge commit on the draft PR branch only",
+    "Removed the now every-10-minutes scheduled Yandex AI paid generation trigger",
+    "Removed automatic paid generation on main push",
+    "Removed self-dispatch of additional paid batches after successful progress",
+    "Removed actions: write permission needed by self-dispatch",
+    "Require explicit workflow_dispatch paid_generation=yes and vars.PHOTO_COST_APPROVED=true for produce",
+    "Preserved existing offline WebP verification, 25-item cap, progress.json checkpoint, and API-key missing error"
+  ],
+  "checks": {
+    "method": "GitHub connector read-back and deterministic static string assertions; no workflow execution or API calls",
+    "passed": 10,
+    "failed": 0,
+    "pr_mergeable": true,
+    "pr_mergeable_state": "unstable",
+    "ci_for_new_commit": "not confirmed",
+    "workflow_sha": "9a105f99b4a4e3f5391107f376ddf55c2a1134d7"
+  },
+  "costs": "No paid calls, secret or access changes, workflow dispatches, production changes or merges to main in this run.",
+  "production": {
+    "project": "snachala-uzhin-preview",
+    "status": "READY",
+    "deployed_sha": "819894450686ce5d5c5a0b1a7058218debd441e3",
+    "deployment_id": "dpl_5GCmpxjRSPWpAYYaP89kNai1eFkC",
+    "changed": false
+  },
+  "photo_library": {
+    "archive_webp": 100,
+    "visual_reviewed_previous_checkpoint": 25,
+    "visual_rejected_previous_checkpoint": 22,
+    "unreviewed_previous_checkpoint": 75,
+    "approved_previous_checkpoint": 0,
+    "technical_verified_half_hour": 20,
+    "new_photos_this_run": 0,
+    "license_cleared_this_run": 0,
+    "technical_sha_audit_repeated": false
+  },
+  "blockers": [
+    "CRITICAL: main currently contains Yandex AI ART cron '7,17,27,37,47,57 * * * *' and paid produce eligibility on schedule/push; new safety patch is only draft PR #16 and cannot disable the live main workflow",
+    "GitHub Actions CI has not been confirmed for the new safety PR commit; 10 static assertions are not a runtime test",
+    "Current Yandex API key/variable state not inspected; do not infer absence of charges",
+    "75 archived WebP await visual review; 22 rejected copies need actual replacement images and individual rights evidence"
+  ],
+  "next_safe_action": "Owner to explicitly authorize integration of PR #16 to remove paid Yandex schedule; until then continue independent non-paid visual/legal review of archive photos in PR #17 without touching main or production.",
+  "updated_at": "2026-11-02T11:40:00Z",
+  "main_sync_commit_sha": "f0fdbe4fd954793c99053d6ac44201be7058ad14",
+  "pr_url": "https://github.com/semen89852698936-create/snachala-uzhin/pull/16"
+}
