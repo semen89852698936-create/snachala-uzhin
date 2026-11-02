@@ -2,7 +2,7 @@
   "schema_version": 1,
   "date": "2026-11-02",
   "project": "snachala-uzhin",
-  "stage": "evidence-bound editorial release gate prepared, tested, not merged",
+  "stage": "Seven archived images visually triaged; five rejected for recipe mismatch; release gate tested; not merged",
   "source_pr_11": {
     "url": "https://github.com/semen89852698936-create/snachala-uzhin/pull/11",
     "head_sha": "13c3ad45758b9e92ed0df906bd4667c84932aa69"
@@ -15,7 +15,8 @@
     "url": "https://github.com/semen89852698936-create/snachala-uzhin/pull/13",
     "branch": "photo-library/editorial-release-gate-20261102",
     "base_branch": "photo-library/restore-100-review-20261102",
-    "code_commit_sha": "ee2f7bd1071ae012687ab270903475615bf07c13"
+    "code_commit_sha": "ee2f7bd1071ae012687ab270903475615bf07c13",
+    "visual_triage_commit_sha": "63e869186f3eda97cee07520f2f24dc9b9aed6bf"
   },
   "source_manifest_blob_sha": "324964784f50844e239ae97e770117ea4b3adc53",
   "changed_files": [
@@ -24,15 +25,22 @@
     "review/photo-release-decisions.json",
     ".github/workflows/editorial-release-gate.yml",
     "review/LICENSE_PREFLIGHT_20261102.md",
-    "project-operations/photo-release-gate-checkpoint-20261102.json"
+    "project-operations/photo-release-gate-checkpoint-20261102.json",
+    "review/visual-triage-20261102.json",
+    "review/VISUAL_TRIAGE_20261102.md"
   ],
   "checks": {
-    "local_node_tests": "7/7 PASS",
+    "local_node_tests": "8/8 PASS",
     "github_actions": {
-      "run_id": 41368996872,
+      "run_id": 41369234288,
       "conclusion": "success",
-      "commit_sha": "ee2f7bd1071ae012687ab270903475615bf07c13",
-      "url": "https://github.com/semen89852698936-create/snachala-uzhin/actions/runs/41368996872"
+      "commit_sha": "63e869186f3eda97cee07520f2f24dc9b9aed6bf",
+      "url": "https://github.com/semen89852698936-create/snachala-uzhin/actions/runs/41369234288",
+      "job": "release-gate",
+      "steps": [
+        "offline editorial gate tests: success",
+        "release ledger audit: success"
+      ]
     },
     "rehashed_existing_webp_in_this_run": 0
   },
@@ -43,7 +51,12 @@
     "metadata_author_missing_or_placeholder": 17,
     "metadata_license_url_missing": 17,
     "attribution_license_entries": 72,
-    "archive_without_files_for_remaining_recipes": 901
+    "archive_without_files_for_remaining_recipes": 901,
+    "visually_inspected_archive_copies": 7,
+    "visually_rejected_for_recipe": 5,
+    "visually_partial_match": 1,
+    "visually_possible_match_not_approved": 1,
+    "legally_verified": 0
   },
   "separate_technical_audit_snapshot": {
     "branch": "automation/half-hour-photo-audit",
@@ -60,12 +73,26 @@
     "note": "Read-only status, not a browser acceptance test"
   },
   "blockers": [
+    "Five archived candidates #32,35,38,41,44 visibly mismatch their recipe titles and need replacement before release",
     "No independently evidenced image-by-image visual ingredient review for 100 archive copies",
     "No per-image legal rights clearance and attribution evidence",
     "Approved production copies 6,10,20 differ from archive and require explicit reapproval",
     "901 other recipes still lack a physical archived image",
     "GitHub half-hour cron in PR #12 is not active until workflow reaches main"
   ],
-  "next_safe_action": "Review actual pixels and original source/licensing for high-risk archive candidates; document exact SHA-bound evidence and update review ledger only when substantiated. Keep all PRs draft/unmerged and production untouched.",
-  "publication": "no merge, no production deployment, no payments, no secret changes"
+  "next_safe_action": "Continue pixel-level inspection of high-risk candidates (#37, #61, #63, #64, #65, #67), compare with full recipe ingredients, and separately verify original-source rights and attribution. Keep mismatches blocked; do not merge or publish.",
+  "publication": "no merge, no production deployment, no payments, no secret changes",
+  "visual_triage": {
+    "path": "review/visual-triage-20261102.json",
+    "rejected_numbers": [
+      32,
+      35,
+      38,
+      41,
+      44
+    ],
+    "partial_number": 4,
+    "possible_number": 5,
+    "evidence": "Rendered physical WebP from immutable PR #11 GitHub commit; not an original source license check."
+  }
 }
