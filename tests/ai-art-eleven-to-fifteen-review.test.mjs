@@ -14,7 +14,7 @@ const pinned = new Map([
   [12, '3ba84d1e422b1596fbda44d430455f100075fd61'],
   [13, 'ab06cdae7fed38cc3843c659ba6babbdc18c137a'],
   [14, '149e2b8a0ceb70227bdcd7e8936ed1fdabdf2eb7'],
-  [15, 'a2d408f471edaa06e31dac663d3a0475fe6fea7']
+  [15, 'a2d408f471edaa06e31dac663d3a0475fe6fea7c']
 ]);
 test('11-15 direct review matches source-pinned physical WebP, metadata and exact recipes', () => {
   assert.equal(review.source_commit, 'a1c30f0be8745b8996577da7e7a4a3c2b3f2f028');

@@ -27,5 +27,8 @@
   ],
   "no_new_paid_requests": true,
   "no_physical_images_added": true,
-  "notes": "Metadata-only cross-check and official FAQ review; no direct visual review of photos 16-20 and no rights grant claimed."
+  "notes": "Metadata-only cross-check and official FAQ review; no direct visual review of photos 16-20 and no rights grant claimed.",
+  "source_photo_tree_sha": "aa9d2a0790dd9dbe3a86e21ec632823d5692ddc3",
+  "provenance_note": "Source tree verification found a truncated blob SHA in previous visual review #15, corrected in this draft. Recovery prompts can legitimately differ after model refusal; these are not automatic visual approvals.",
+  "known_recovered_prompt_exception": 615
 }

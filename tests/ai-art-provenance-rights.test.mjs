@@ -38,7 +38,15 @@ test('1001 physical AI image records have traceable model, prompt, date and bloc
     assert.equal(m.recipe_id, recipe.id, filenames[i]);
     assert.equal(m.title, recipe.title, filenames[i]);
     assert.equal(m.model, audit.model, filenames[i]);
-    assert.ok(m.prompt.includes('ТОЧНОЕ блюдо: ' + recipe.title), filenames[i]);
+    const exactTitle = m.prompt.includes('ТОЧНОЕ блюдо: ' + recipe.title);
+    if (!exactTitle) {
+      // Explicitly recovered model refusals may use a rewritten safe prompt.
+      assert.ok(['refused', 'uncertain'].includes(m.recovered_after),
+        'unexplained prompt rewrite: ' + filenames[i]);
+      assert.ok(m.prompt.includes(recipe.ingredients[0]),
+        'recovered prompt missing recipe ingredient: ' + filenames[i]);
+      assert.equal(m.approved_for_publication, false);
+    }
     assert.ok(Number.isFinite(Date.parse(m.generated_at)), filenames[i]);
     assert.match(m.sha256, /^[a-f0-9]{64}$/, filenames[i]);
     assert.equal(m.path, root + '/photos/' + filenames[i].replace(/\.json$/, '.webp'));
@@ -46,6 +54,25 @@ test('1001 physical AI image records have traceable model, prompt, date and bloc
     paths.add(m.path);
     assert.equal(m.status, 'generated_unpublished', filenames[i]);
     assert.equal(m.approved_for_publication, false, filenames[i]);
+  }
+});
+
+test('all 15 Git blob IDs match the immutable source tree (including corrected #15)', () => {
+  const evidence = read('photo-library/ai-art-source-blob-evidence-1-15.json');
+  assert.equal(evidence.source_commit, audit.source_commit);
+  assert.equal(evidence.source_photo_tree_sha, 'aa9d2a0790dd9dbe3a86e21ec632823d5692ddc3');
+  assert.equal(evidence.photos.length, 15);
+  const reviews = [
+    'review/ai-art-first-five-visual-triage-20261102.json',
+    'review/ai-art-six-to-ten-visual-triage-20261102.json',
+    'review/ai-art-eleven-to-fifteen-visual-triage-20261102.json'
+  ].flatMap(path => read(path).records);
+  for (const photo of evidence.photos) {
+    const entry = reviews.find(r => r.number === photo.number);
+    assert.ok(entry);
+    assert.equal(entry.photo_path, photo.path);
+    assert.equal(entry.photo_git_blob_sha, photo.git_blob_sha);
+    assert.match(photo.git_blob_sha, /^[a-f0-9]{40}$/);
   }
 });
 
