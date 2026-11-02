@@ -1,0 +1,71 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-02",
+  "project": "snachala-uzhin",
+  "stage": "evidence-bound editorial release gate prepared, tested, not merged",
+  "source_pr_11": {
+    "url": "https://github.com/semen89852698936-create/snachala-uzhin/pull/11",
+    "head_sha": "13c3ad45758b9e92ed0df906bd4667c84932aa69"
+  },
+  "operations_pr_12": {
+    "url": "https://github.com/semen89852698936-create/snachala-uzhin/pull/12",
+    "head_sha": "638408800f899feec0c6eb5e320a1babf987edc2"
+  },
+  "this_pr_13": {
+    "url": "https://github.com/semen89852698936-create/snachala-uzhin/pull/13",
+    "branch": "photo-library/editorial-release-gate-20261102",
+    "base_branch": "photo-library/restore-100-review-20261102",
+    "code_commit_sha": "ee2f7bd1071ae012687ab270903475615bf07c13"
+  },
+  "source_manifest_blob_sha": "324964784f50844e239ae97e770117ea4b3adc53",
+  "changed_files": [
+    "scripts/photo-release-gate.mjs",
+    "tests/photo-release-gate.test.mjs",
+    "review/photo-release-decisions.json",
+    ".github/workflows/editorial-release-gate.yml",
+    "review/LICENSE_PREFLIGHT_20261102.md",
+    "project-operations/photo-release-gate-checkpoint-20261102.json"
+  ],
+  "checks": {
+    "local_node_tests": "7/7 PASS",
+    "github_actions": {
+      "run_id": 41368996872,
+      "conclusion": "success",
+      "commit_sha": "ee2f7bd1071ae012687ab270903475615bf07c13",
+      "url": "https://github.com/semen89852698936-create/snachala-uzhin/actions/runs/41368996872"
+    },
+    "rehashed_existing_webp_in_this_run": 0
+  },
+  "evidence_counters": {
+    "archive_candidate_files": 100,
+    "release_ledger_approved": 0,
+    "unverified_ingredient_matches": 100,
+    "metadata_author_missing_or_placeholder": 17,
+    "metadata_license_url_missing": 17,
+    "attribution_license_entries": 72,
+    "archive_without_files_for_remaining_recipes": 901
+  },
+  "separate_technical_audit_snapshot": {
+    "branch": "automation/half-hour-photo-audit",
+    "verified": 20,
+    "remaining": 80,
+    "checkpoint_blob_sha": "dd3097592c54062dc08a162cdfd6b129fbbfc7c3",
+    "note": "Not rerun here; may change independently"
+  },
+  "deployment_snapshot": {
+    "project": "snachala-uzhin-preview",
+    "target": "production",
+    "state": "READY",
+    "sha": "819894450686ce5d5c5a0b1a7058218debd441e3",
+    "note": "Read-only status, not a browser acceptance test"
+  },
+  "blockers": [
+    "No independently evidenced image-by-image visual ingredient review for 100 archive copies",
+    "No per-image legal rights clearance and attribution evidence",
+    "Approved production copies 6,10,20 differ from archive and require explicit reapproval",
+    "901 other recipes still lack a physical archived image",
+    "GitHub half-hour cron in PR #12 is not active until workflow reaches main"
+  ],
+  "next_safe_action": "Review actual pixels and original source/licensing for high-risk archive candidates; document exact SHA-bound evidence and update review ledger only when substantiated. Keep all PRs draft/unmerged and production untouched.",
+  "publication": "no merge, no production deployment, no payments, no secret changes"
+}
