@@ -844,9 +844,7 @@ initEvening();
 </script>
 <script>
 /* A curated recipe-only photo sheet. Never substitute unrelated stock images. */
-const STEP_PHOTO_SHEETS={
- 'pepper-steak':{url:'/assets/recipe-steps/pepper-steak-five-actions.webp',steps:5}
-};
+const STEP_PHOTO_SHEETS={}; // Activate a recipe only after its locally hosted action photos pass review.
 function stepVisualHtml(recipe,index,mode){
  const curated=STEP_PHOTO_SHEETS[recipe.id];
  const usePhoto=!!(curated&&curated.steps===recipe.steps.length);
