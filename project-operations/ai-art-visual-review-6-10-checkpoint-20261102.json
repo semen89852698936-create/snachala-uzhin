@@ -1,0 +1,81 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-02",
+  "project": "snachala-uzhin",
+  "branch": "photo-library/ai-art-visual-review-6-10-20261102",
+  "pr_number": 26,
+  "pr_url": "https://github.com/semen89852698936-create/snachala-uzhin/pull/26",
+  "stacked_on_pr": 24,
+  "source_ai_branch": "photo-production/yandex-ai-art-1001",
+  "source_ai_commit": "a1c30f0be8745b8996577da7e7a4a3c2b3f2f028",
+  "main_head_at_check": "1dc5b6e828224344e1c50e64b24ac091cc2e670d",
+  "last_code_commit_sha": "1992621d9b6ed46a20cfd84d8644f69af57195da",
+  "files_changed": [
+    "review/ai-art-six-to-ten-visual-triage-20261102.json",
+    "tests/ai-art-six-to-ten-review.test.mjs",
+    "photo-library/ai-art-replacement-briefs-8-9-20261102.json",
+    ".github/workflows/ai-art-first-five-review.yml",
+    ".github/workflows/photo-pipeline-tests.yml"
+  ],
+  "commits": {
+    "visual_review": "6f96e03a97fe63a75d646bf09ee1ed7b1117fc0d",
+    "initial_test": "16d11d2d3e71757c1e57485e9d98f26e21713826",
+    "editorial_ci": "18e3e1637a8e8c8c96971400991a6dfb4a9390ee",
+    "replacement_briefs": "3288b11c7754a6ce10a68bd4f72e357d8d1511f5",
+    "replacement_tests": "27772f7f67280b6724bd2e5d8ff10414fd181148",
+    "replacement_ci": "8b1968e4b2bbd1dda9d1a3adbb3df31ae822ae48",
+    "pillow_ci_fix": "1992621d9b6ed46a20cfd84d8644f69af57195da"
+  },
+  "review": {
+    "physical_ai_webp_total_source_verified": 1001,
+    "previous_visually_checked": 5,
+    "new_directly_inspected": [
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "new_candidate_unapproved": [
+      10
+    ],
+    "new_needs_culinary_review": [
+      6,
+      7
+    ],
+    "new_rejected": [
+      8,
+      9
+    ],
+    "total_visually_checked": 10,
+    "total_visual_candidates_unapproved": 3,
+    "total_culinary_questions": 4,
+    "total_rejected": 3,
+    "remaining_unreviewed": 991,
+    "approved_for_publication": 0,
+    "new_physical_photos": 0,
+    "new_licenses_verified": 0,
+    "source_sha_rehash_repeated": false
+  },
+  "checks": {
+    "editorial_ci_previous_success": "https://github.com/semen89852698936-create/snachala-uzhin/actions/runs/41485823243",
+    "editorial_ci_latest": "https://github.com/semen89852698936-create/snachala-uzhin/actions/runs/41485957393",
+    "editorial_ci_latest_status_at_checkpoint": "queued",
+    "pipeline_ci_previous_failure_cause": "Pillow missing from Python environment (ModuleNotFoundError: PIL)",
+    "pipeline_ci_fix": "Add setup-python 3.11 and pip install Pillow>=10,<13 to offline workflow",
+    "pipeline_ci_latest": "https://github.com/semen89852698936-create/snachala-uzhin/actions/runs/41485957337",
+    "pipeline_ci_latest_status_at_checkpoint": "in_progress",
+    "vercel_preview_status": "build-rate-limit (no verified new preview)",
+    "production_status": "READY",
+    "production_commit": "819894450686ce5d5c5a0b1a7058218debd441e3"
+  },
+  "blockers": [
+    "Editorial review for remaining 991 actual AI photos",
+    "No confirmed per-image commercial rights or owner final approval",
+    "Two new rejected photos require physical replacement, briefs only",
+    "Yandex paid-generation schedule in main remains active; safety PR #16 is draft and requires separate authorization to merge",
+    "Vercel preview build rate limit"
+  ],
+  "next_safe_task": "After verifying CI for the latest branch commit, inspect actual AI WebP 11-15 against recipes and record immutable evidence in another stacked draft PR; do not regenerate or publish without approval.",
+  "constraints": "No PR merges, production updates, secrets, permissions, paid calls or workflow dispatch. Half-hour technical cron from PR12 remains inactive."
+}
