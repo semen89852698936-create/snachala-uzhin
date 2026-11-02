@@ -70,3 +70,22 @@ test('Specifications cannot accidentally claim image delivery, rights or release
     assert.equal(brief.editorial_status, 'requires_independent_visual_review');
   }
 });
+
+test('Commons source-page records remain metadata only, never archive rights clearance', () => {
+  const evidence = load('review/commons-source-page-evidence-20261102.json');
+  assert.equal(evidence.source_pages_checked, 6);
+  assert.equal(evidence.records.length, 6);
+  assert.equal(new Set(evidence.records.map(x => x.number)).size, 6);
+  for (const row of evidence.records) {
+    const archive = manifest.sources.find(x => x.number === row.number);
+    assert.ok(archive, 'Unknown Commons record ' + row.number);
+    assert.equal(row.recipe_id, archive.recipe_id);
+    assert.equal(row.sha256, archive.sha256);
+    assert.equal(row.source_page, archive.source_page);
+    assert.equal(row.verification, 'original_source_page_text_only');
+    assert.equal(row.archive_file_provenance_verified, false);
+    assert.equal(row.license_clearance_for_archive_copy, false);
+    assert.equal(row.publication_approved, false);
+    assert.ok(row.author.length > 2);
+  }
+});
