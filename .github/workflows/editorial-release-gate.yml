@@ -11,6 +11,8 @@ on:
       - 'review/photo-release-decisions.json'
       - 'review/visual-triage-20261102.json'
       - 'review/visual-triage-addendum-20261102-1042.json'
+      - 'review/visual-triage-addendum-20261102-1140.json'
+      - 'tests/visual-triage-27-30.test.mjs'
       - 'photo-library/batch-100-20261101/manifest.json'
       - '.github/workflows/editorial-release-gate.yml'
   workflow_dispatch:
@@ -30,5 +32,7 @@ jobs:
         run: node --test tests/replacement-briefs.test.mjs
       - name: Extract exact catalog ingredients for unbriefed visual rejects
         run: node scripts/extract-rejected-recipe-data.mjs
+      - name: Check new visual triage against immutable archive
+        run: node --test tests/visual-triage-27-30.test.mjs
       - name: Audit release ledger without reading image bytes
         run: node scripts/photo-release-gate.mjs
