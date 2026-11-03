@@ -35,11 +35,13 @@ def validate(path):
                 errors.append(f"{where}: missing {key}")
         if not str(record.get("source_page", "")).startswith("https://"):
             errors.append(f"{where}: source must use HTTPS")
-        if record.get("evidence_scope") == "source_filename_and_queue_metadata_only":
-            if record.get("editorial_status") in ("approved", "visually_approved"):
-                errors.append(f"{where}: metadata cannot establish visual approval")
-            if record.get("rights_status") in ("cleared", "approved"):
-                errors.append(f"{where}: metadata cannot establish license clearance")
+        # An unknown/missing evidence scope is not evidence of a completed review.
+        # The archive gate intentionally accepts no approval from these metadata-only
+        # triage files, regardless of the spelling of evidence_scope.
+        if record.get("editorial_status") in ("approved", "visually_approved"):
+            errors.append(f"{where}: archive triage cannot establish visual approval")
+        if record.get("rights_status") in ("cleared", "approved"):
+            errors.append(f"{where}: archive triage cannot establish license clearance")
         if n in (6, 10, 20) and record.get("editorial_status") in ("approved", "visually_approved"):
             errors.append(f"{where}: archived #{n} differs from approved replacement")
     if data.get("manual_visual_approved") == 0 and any(
