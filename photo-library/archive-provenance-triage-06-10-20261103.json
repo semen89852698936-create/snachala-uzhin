@@ -1,0 +1,66 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-03",
+  "scope": "Archive candidate metadata triage #6-10; not the current approved production copies",
+  "source_queue": "automation/half-hour-photo-audit/photo-library/half-hour-review-queue.json",
+  "source_checkpoint": "automation/half-hour-photo-audit/project-operations/half-hour-checkpoint.json",
+  "technical_checks_repeated": 0,
+  "visual_checks_performed": 0,
+  "license_clearances": 0,
+  "publication_approvals": 0,
+  "records": [
+    {
+      "number": 6,
+      "recipe": "Белая рыба с томатами",
+      "source_page": "https://www.pexels.com/photo/close-up-of-gourmet-meal-12653398/",
+      "risk": "high",
+      "reason": "Generic source caption does not establish white fish or tomatoes; archived file must not overwrite separately approved #6.",
+      "action": "Compare physical archived image to recipe only for historical audit; independently verify author and specific license; retain approved selected production copy."
+    },
+    {
+      "number": 7,
+      "recipe": "Рататуй из сезонных овощей",
+      "source_page": "https://unsplash.com/photos/a-pan-filled-with-sliced-up-vegetables-on-top-of-a-wooden-table-3vDJ--i7w88",
+      "risk": "medium",
+      "reason": "URL suggests sliced vegetables but not full ingredient composition or rights.",
+      "action": "Direct image and recipe comparison; verify photographer and license."
+    },
+    {
+      "number": 8,
+      "recipe": "Нут со шпинатом и паприкой",
+      "source_page": "https://www.pexels.com/photo/close-up-of-tasty-healthy-salad-in-plate-9218611/",
+      "risk": "high",
+      "reason": "Generic salad caption does not establish chickpeas, spinach or paprika.",
+      "action": "Direct image comparison, source attribution and image-specific license verification."
+    },
+    {
+      "number": 9,
+      "recipe": "Фокачча с розмарином",
+      "source_page": "https://unsplash.com/photos/freshly-baked-focaccia-bread-with-rosemary-and-sea-salt-vS-rNm0dhwg",
+      "risk": "medium",
+      "reason": "Source slug appears compatible, but visual match and photographer rights remain unverified.",
+      "action": "Inspect actual WebP and verify source/license."
+    },
+    {
+      "number": 10,
+      "recipe": "Пышные оладьи на кефире",
+      "source_page": "https://www.pexels.com/photo/mini-pancakes-on-a-plate-7855285/",
+      "risk": "high",
+      "reason": "Caption does not establish kefir; archived image is not the separately approved #10 production copy.",
+      "action": "Keep approved selected production copy pinned; do not use archive as fallback; verify archive only as candidate."
+    }
+  ],
+  "checkpoint": {
+    "stage": "metadata_triage_6_10_complete",
+    "files_changed": [
+      "photo-library/archive-provenance-triage-06-10-20261103.json"
+    ],
+    "validation": "Queue source fields cross-checked against technical worker; no independent web page, visual or legal verification",
+    "blockers": [
+      "No image-specific license and author proof",
+      "No direct image comparison",
+      "Production-selected approved #6/#10 differ from archived candidates"
+    ],
+    "next": "Inspect physical archive #4 first and #8 next; compare with recipe and image-specific provenance; do not replace approved #6/#10/#20."
+  }
+}
