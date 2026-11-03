@@ -14,17 +14,27 @@
   ],
   "commits": [
     "26a13f0d5dd9f20d506d3166737e961a51c07e81",
-    "ba33435e9f7fbb6abdf85979ffc045c699382ffb"
+    "ba33435e9f7fbb6abdf85979ffc045c699382ffb",
+    "c9edba21cbf7846dc87e5a4f1ba2a649f762af3a",
+    "6da976b7707c7c06222c293e66259b8fb29188cf"
   ],
   "checks": {
     "github_file_creation": "confirmed",
-    "python_unittest": "not_executed_container_unavailable",
-    "real_queue_validation": "not_executed"
+    "python_unittest": "not_executed_container_redis_ResponseError",
+    "real_queue_validation": "not_executed",
+    "github_file_updates": "confirmed"
   },
   "blockers": [
-    "Runtime container returned redis ResponseError; no Python execution verified",
+    "Container execution failed with redis ResponseError during this run; new tests not executed",
     "Individual rights and visual recipe matching remain unverified"
   ],
-  "next": "Run python3 -m unittest discover -s tests -p test_half_hour_queue.py; run python3 scripts/check_half_hour_queue.py on downloaded queue/checkpoint; visually review physical WebP separately",
-  "safety": "No merge, no production, no paid APIs"
+  "next": "Run 8 regression methods with python3 -m unittest discover -s tests -p test_half_hour_queue.py; validate live queue/checkpoint; then inspect actual WebP and rights independently",
+  "safety": "No merge, no production, no paid APIs",
+  "changes": [
+    "Reject non-object JSON roots without AttributeError",
+    "Reject unsupported technical statuses and unchecked records carrying technical SHA",
+    "Reject malformed or non-passing checkpoint result entries",
+    "Add four regression test methods covering those cases"
+  ],
+  "current_head_before_checkpoint": "6da976b7707c7c06222c293e66259b8fb29188cf"
 }
