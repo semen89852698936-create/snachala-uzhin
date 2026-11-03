@@ -1,0 +1,65 @@
+name: Half-hour photo production audit
+
+on:
+  schedule:
+    # Twice per hour, away from the overloaded 00/30-minute boundary.
+    - cron: '7,37 * * * *'
+  workflow_dispatch:
+  pull_request:
+    paths:
+      - 'scripts/half_hour_photo_worker.py'
+      - 'tests/test_half_hour_photo_worker.py'
+      - 'photo-library/editorial-risk-signals.json'
+      - '.github/workflows/half-hour-photo-production.yml'
+  push:
+    branches:
+      - 'operations/persistent-state-and-data-plan-20261102'
+    paths:
+      - 'scripts/half_hour_photo_worker.py'
+      - 'tests/test_half_hour_photo_worker.py'
+      - 'photo-library/editorial-risk-signals.json'
+      - '.github/workflows/half-hour-photo-production.yml'
+
+concurrency:
+  group: snachala-uzhin-half-hour-photo-audit
+  cancel-in-progress: false
+
+permissions:
+  contents: read
+
+jobs:
+  tests:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Check out reviewed source
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+        with:
+          persist-credentials: false
+      - name: Run offline unit tests
+        run: python3 -m unittest discover -s tests -p 'test_half_hour_photo_worker.py' -v
+
+  work:
+    needs: tests
+    if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch' || github.event_name == 'push'
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    permissions:
+      contents: write
+    steps:
+      - name: Check out source without persisted credentials
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+        with:
+          persist-credentials: false
+      - name: Audit five unverified real WebP files and save a separate checkpoint
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: python3 scripts/half_hour_photo_worker.py
+      - name: Attach the factual run report
+        if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
+        with:
+          name: half-hour-photo-report-${{ github.run_id }}
+          path: half-hour-run-report.json
+          if-no-files-found: ignore
+          retention-days: 7
