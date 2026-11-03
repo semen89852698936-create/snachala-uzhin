@@ -25,9 +25,10 @@ def validate(queue, checkpoint):
         number, recipe_id = row.get("number"), row.get("recipe_id")
         if type(number) is not int or not 1 <= number <= 100:
             errors.append(f"Invalid number {number!r}")
-        if number in numbers:
-            errors.append(f"Duplicate number {number}")
-        numbers.add(number)
+        if type(number) is int:
+            if number in numbers:
+                errors.append(f"Duplicate number {number}")
+            numbers.add(number)
         if not isinstance(recipe_id, str) or not recipe_id:
             errors.append(f"Missing recipe ID at {number}")
             continue
@@ -40,6 +41,9 @@ def validate(queue, checkpoint):
         if status == "not_checked" and row.get("technical_sha256"):
             errors.append(f"Unchecked row carries technical SHA for {recipe_id}")
         if status == "technical_pass":
+            sha = row.get("technical_sha256")
+            if not isinstance(sha, str) or len(sha) != 64 or any(c not in "0123456789abcdef" for c in sha):
+                errors.append(f"Invalid technical SHA for {recipe_id}")
             evidence = results.get(recipe_id)
             if not isinstance(evidence, dict) or evidence.get("status") != "technical_pass":
                 errors.append(f"Unsupported technical_pass for {recipe_id}")
