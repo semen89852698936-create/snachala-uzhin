@@ -1,0 +1,41 @@
+name: Fix apple and sage step grammar
+on:
+  push:
+    branches: [fix/apple-sage-grammar-20261103]
+    paths: ['.github/workflows/fix-apple-sage-grammar.yml']
+permissions:
+  contents: write
+jobs:
+  correct:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - name: Correct recipe step phrasing in both site variants
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          old = 'Добавь яблоком и шалфеем'
+          new = 'Добавь яблоко и шалфей'
+          total = 0
+          for name in ('index.html', 'full-catalog/index.html'):
+              p = Path(name)
+              data = p.read_text(encoding='utf-8')
+              count = data.count(old)
+              print(f'{name}: {count} occurrences')
+              total += count
+              if count:
+                  p.write_text(data.replace(old, new), encoding='utf-8')
+          if total == 0:
+              raise SystemExit('Phrase not found; do not commit unchecked change')
+          PY
+      - name: Check and commit
+        run: |
+          git diff --check
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add index.html full-catalog/index.html
+          git diff --cached --quiet && exit 1
+          git commit -m "Fix imperative grammar: Добавь яблоко и шалфей"
+          git push
