@@ -31,5 +31,24 @@ class ArchiveQueueTests(unittest.TestCase):
         self.assertTrue(any("editorial approval" in e for e in guard.validate({"first_50": [row]}, self.checkpoint)))
 
 
+    def test_non_object_roots_are_rejected_without_crash(self):
+        for bad in (None, [], "text", 7):
+            with self.subTest(root=bad):
+                self.assertTrue(guard.validate(bad, self.checkpoint))
+                self.assertTrue(guard.validate({"first_50": [self.row]}, bad))
+
+    def test_unknown_technical_status_is_rejected(self):
+        row = dict(self.row, technical_status="approved")
+        self.assertTrue(any("Unknown technical status" in e for e in guard.validate({"first_50": [row]}, self.checkpoint)))
+
+    def test_unchecked_row_with_sha_is_rejected(self):
+        row = dict(self.row, technical_status="not_checked")
+        self.assertTrue(any("Unchecked row carries" in e for e in guard.validate({"first_50": [row]}, self.checkpoint)))
+
+    def test_checkpoint_nonpassing_result_is_rejected(self):
+        checkpoint = {"results": {"dish": {"status": "not_checked", "sha256": self.sha}}, "technically_verified": 1}
+        self.assertTrue(any("non-passing" in e for e in guard.validate({"first_50": [self.row]}, checkpoint)))
+
+
 if __name__ == "__main__":
     unittest.main()
