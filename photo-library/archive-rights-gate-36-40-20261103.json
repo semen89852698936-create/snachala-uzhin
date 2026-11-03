@@ -1,0 +1,96 @@
+{
+  "schema_version": 1,
+  "checked_date": "2026-11-03",
+  "audit_type": "source_title_metadata_only",
+  "source_queue_ref": "automation/half-hour-photo-audit/photo-library/half-hour-review-queue.json",
+  "technical_checkpoint_ref": "automation/half-hour-photo-audit/project-operations/half-hour-checkpoint.json",
+  "technical_verified_archive_count_at_read": 20,
+  "scope": "archive candidates 36-40; not approved replacements",
+  "entries": [
+    {
+      "number": 36,
+      "recipe_id": "collection-meat-02-08",
+      "recipe_title": "Свиная вырезка в духовке со сливками и зелёным перцем",
+      "source_title": "Milano's Café pork loin and veg",
+      "risk": "medium",
+      "reason": "Source describes pork loin with vegetables, but cream and green pepper are not evidenced by title.",
+      "technical_status_at_read": "not_checked",
+      "physical_webp_examined": false,
+      "visual_match": "unverified",
+      "license_claim": "CC BY-SA 4.0",
+      "individual_author_license_verified": false,
+      "publication_gate": "blocked_pending_visual_and_rights_evidence"
+    },
+    {
+      "number": 37,
+      "recipe_id": "collection-meat-02-09",
+      "recipe_title": "Свиная вырезка в духовке с яблоком и шалфеем",
+      "source_title": "Pork sirloin chop with cider pan sauce",
+      "risk": "high",
+      "reason": "Different cut and pan sauce; apple wedges, sage, and oven method not evidenced.",
+      "technical_status_at_read": "not_checked",
+      "physical_webp_examined": false,
+      "visual_match": "unverified",
+      "license_claim": "CC BY-SA 2.0",
+      "individual_author_license_verified": false,
+      "publication_gate": "blocked_pending_visual_and_rights_evidence"
+    },
+    {
+      "number": 38,
+      "recipe_id": "collection-meat-02-10",
+      "recipe_title": "Свиная вырезка в духовке с черносливом и тмином",
+      "source_title": "Pork Rack Rice in Black Pepper Sauce",
+      "risk": "high",
+      "reason": "Rack with rice and black pepper sauce is not tenderloin with prunes and caraway.",
+      "technical_status_at_read": "not_checked",
+      "physical_webp_examined": false,
+      "visual_match": "unverified",
+      "license_claim": "CC BY-SA 4.0",
+      "individual_author_license_verified": false,
+      "publication_gate": "blocked_pending_visual_and_rights_evidence"
+    },
+    {
+      "number": 39,
+      "recipe_id": "collection-meat-03-01",
+      "recipe_title": "Сочные тефтели из говядины с лимоном и тимьяном",
+      "source_title": "meatballs with tomato sauce",
+      "risk": "medium",
+      "reason": "Meatballs match broadly; lemon, thyme and beef content not evidenced.",
+      "technical_status_at_read": "not_checked",
+      "physical_webp_examined": false,
+      "visual_match": "unverified",
+      "license_claim": "CC BY-SA 4.0",
+      "individual_author_license_verified": false,
+      "publication_gate": "blocked_pending_visual_and_rights_evidence"
+    },
+    {
+      "number": 40,
+      "recipe_id": "collection-meat-03-02",
+      "recipe_title": "Сочные тефтели из говядины с грибами и розмарином",
+      "source_title": "A Pasta dish with meatballs and tomato sauce",
+      "risk": "high",
+      "reason": "Source explicitly includes pasta and tomato sauce, not mushrooms and rosemary.",
+      "technical_status_at_read": "not_checked",
+      "physical_webp_examined": false,
+      "visual_match": "unverified",
+      "license_claim": "CC BY-SA 4.0",
+      "individual_author_license_verified": false,
+      "publication_gate": "blocked_pending_visual_and_rights_evidence"
+    }
+  ],
+  "quality_note": "Recipe #36 title in queue says 'с сливками'; normative Russian is 'со сливками'. This is a metadata finding, not a correction to production recipe.",
+  "approved_variant_guard": "Never replace previously approved copies 6, 10, 20 with archive versions.",
+  "checks": {
+    "entry_count": 5,
+    "unique_numbers": true,
+    "number_range": "36-40",
+    "visual_approved": 0,
+    "rights_approved": 0
+  },
+  "blockers": [
+    "Physical archive WebP files 36-40 not visually inspected in this run",
+    "Full current recipe ingredients and preparation not cross-checked",
+    "Individual Commons file author, license history and attribution requirements not independently verified"
+  ],
+  "next_task": "Inspect physical WebP #38 and #40 against complete recipes; check Commons individual file pages, author attribution, exact license and any derivatives; avoid duplicate technical hashing."
+}
