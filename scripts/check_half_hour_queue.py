@@ -11,6 +11,8 @@ from pathlib import Path
 
 def validate(queue, checkpoint):
     errors = []
+    if not isinstance(queue, dict) or not isinstance(checkpoint, dict):
+        return ["Queue and checkpoint roots must be JSON objects"]
     records = queue.get("first_50")
     results = checkpoint.get("results")
     if not isinstance(records, list) or not isinstance(results, dict):
@@ -32,7 +34,12 @@ def validate(queue, checkpoint):
         if recipe_id in ids:
             errors.append(f"Duplicate recipe ID {recipe_id}")
         ids.add(recipe_id)
-        if row.get("technical_status") == "technical_pass":
+        status = row.get("technical_status")
+        if status not in ("technical_pass", "not_checked"):
+            errors.append(f"Unknown technical status for {recipe_id}: {status!r}")
+        if status == "not_checked" and row.get("technical_sha256"):
+            errors.append(f"Unchecked row carries technical SHA for {recipe_id}")
+        if status == "technical_pass":
             evidence = results.get(recipe_id)
             if not isinstance(evidence, dict) or evidence.get("status") != "technical_pass":
                 errors.append(f"Unsupported technical_pass for {recipe_id}")
@@ -42,6 +49,8 @@ def validate(queue, checkpoint):
             errors.append(f"Archive editorial approval not established: {recipe_id}")
         if row.get("license_status") in ("approved", "verified"):
             errors.append(f"Archive license clearance not established: {recipe_id}")
+    if any(not isinstance(v, dict) or v.get("status") != "technical_pass" for v in results.values()):
+        errors.append("Checkpoint contains non-passing or malformed result")
     if checkpoint.get("technically_verified") != len(results):
         errors.append("Checkpoint count does not match results")
     return errors
