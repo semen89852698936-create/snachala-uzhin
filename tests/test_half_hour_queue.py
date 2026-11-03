@@ -49,6 +49,18 @@ class ArchiveQueueTests(unittest.TestCase):
         checkpoint = {"results": {"dish": {"status": "not_checked", "sha256": self.sha}}, "technically_verified": 1}
         self.assertTrue(any("non-passing" in e for e in guard.validate({"first_50": [self.row]}, checkpoint)))
 
+    def test_unhashable_number_is_rejected_without_exception(self):
+        for bad in ([], {}, [6]):
+            with self.subTest(number=bad):
+                row = dict(self.row, number=bad)
+                self.assertTrue(any("Invalid number" in e for e in guard.validate({"first_50": [row]}, self.checkpoint)))
+
+    def test_malformed_sha_is_rejected(self):
+        for bad in (None, [], "a" * 63, "g" * 64):
+            with self.subTest(sha=bad):
+                row = dict(self.row, technical_sha256=bad)
+                self.assertTrue(any("Invalid technical SHA" in e for e in guard.validate({"first_50": [row]}, self.checkpoint)))
+
 
 if __name__ == "__main__":
     unittest.main()
