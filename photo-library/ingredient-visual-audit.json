@@ -1,0 +1,280 @@
+{
+  "schemaVersion": 1,
+  "updatedAt": "2026-11-03",
+  "description": "Known owner-reported image mismatches. Not a claim that other images have passed visual audit.",
+  "totalRecipes": 1001,
+  "visualAuditComplete": false,
+  "confirmedCandidates": 30,
+  "issues": [
+    {
+      "n": 27,
+      "id": "collection-meat-01-09",
+      "title": "Говяжьи медальоны с яблоком и шалфеем",
+      "asset": "assets/recipes-ai/0027-collection-meat-01-09.webp",
+      "issue": "Мясо: неверная форма или расположение яблока, чернослива либо чеснока",
+      "status": "queued_in_regenerate-plating-16",
+      "visually_verified": false
+    },
+    {
+      "n": 28,
+      "id": "collection-meat-01-10",
+      "title": "Говяжьи медальоны с черносливом и тмином",
+      "asset": "assets/recipes-ai/0028-collection-meat-01-10.webp",
+      "issue": "Мясо: неверная форма или расположение яблока, чернослива либо чеснока",
+      "status": "queued_in_regenerate-plating-16",
+      "visually_verified": false
+    },
+    {
+      "n": 32,
+      "id": "collection-meat-02-04",
+      "title": "Свиная вырезка в духовке с паприкой и чесноком",
+      "asset": "assets/recipes-ai/0032-collection-meat-02-04.webp",
+      "issue": "Мясо: неверная форма или расположение яблока, чернослива либо чеснока",
+      "status": "queued_in_regenerate-plating-16",
+      "visually_verified": false
+    },
+    {
+      "n": 37,
+      "id": "collection-meat-02-09",
+      "title": "Свиная вырезка в духовке с яблоком и шалфеем",
+      "asset": "assets/recipes-ai/0037-collection-meat-02-09.webp",
+      "issue": "Мясо: неверная форма или расположение яблока, чернослива либо чеснока",
+      "status": "queued_in_regenerate-plating-16",
+      "visually_verified": false
+    },
+    {
+      "n": 117,
+      "id": "collection-meat-10-09",
+      "title": "Свиные отбивные с яблоком и шалфеем",
+      "asset": "assets/recipes-ai/0117-collection-meat-10-09.webp",
+      "issue": "Мясо: неверная форма или расположение яблока, чернослива либо чеснока",
+      "status": "queued_in_regenerate-plating-16",
+      "visually_verified": false
+    },
+    {
+      "n": 118,
+      "id": "collection-meat-10-10",
+      "title": "Свиные отбивные с черносливом и тмином",
+      "asset": "assets/recipes-ai/0118-collection-meat-10-10.webp",
+      "issue": "Мясо: неверная форма или расположение яблока, чернослива либо чеснока",
+      "status": "queued_in_regenerate-plating-16",
+      "visually_verified": false
+    },
+    {
+      "n": 147,
+      "id": "collection-poultry-04-01",
+      "title": "Рубленые котлеты из индейки с лимоном и розмарином",
+      "asset": "assets/recipes-ai/0147-collection-poultry-04-01.webp",
+      "issue": "Котлеты/фрикадельки: отдельное жареное яйцо или желток сверху не соответствует рецепту",
+      "status": "requires_check_existing_poultry-workflow",
+      "visually_verified": false
+    },
+    {
+      "n": 148,
+      "id": "collection-poultry-04-02",
+      "title": "Рубленые котлеты из индейки с мёдом и горчицей",
+      "asset": "assets/recipes-ai/0148-collection-poultry-04-02.webp",
+      "issue": "Котлеты/фрикадельки: отдельное жареное яйцо или желток сверху не соответствует рецепту",
+      "status": "requires_check_existing_poultry-workflow",
+      "visually_verified": false
+    },
+    {
+      "n": 149,
+      "id": "collection-poultry-04-03",
+      "title": "Рубленые котлеты из индейки с лаймом и кокосом",
+      "asset": "assets/recipes-ai/0149-collection-poultry-04-03.webp",
+      "issue": "Котлеты/фрикадельки: отдельное жареное яйцо или желток сверху не соответствует рецепту",
+      "status": "requires_check_existing_poultry-workflow",
+      "visually_verified": false
+    },
+    {
+      "n": 150,
+      "id": "collection-poultry-04-04",
+      "title": "Рубленые котлеты из индейки с паприкой и сладким перцем",
+      "asset": "assets/recipes-ai/0150-collection-poultry-04-04.webp",
+      "issue": "Котлеты/фрикадельки: отдельное жареное яйцо или желток сверху не соответствует рецепту",
+      "status": "requires_check_existing_poultry-workflow",
+      "visually_verified": false
+    },
+    {
+      "n": 151,
+      "id": "collection-poultry-04-05",
+      "title": "Рубленые котлеты из индейки с томатами и орегано",
+      "asset": "assets/recipes-ai/0151-collection-poultry-04-05.webp",
+      "issue": "Котлеты/фрикадельки: отдельное жареное яйцо или желток сверху не соответствует рецепту",
+      "status": "requires_check_existing_poultry-workflow",
+      "visually_verified": false
+    },
+    {
+      "n": 152,
+      "id": "collection-poultry-04-06",
+      "title": "Рубленые котлеты из индейки с соевым соусом и имбирём",
+      "asset": "assets/recipes-ai/0152-collection-poultry-04-06.webp",
+      "issue": "Котлеты/фрикадельки: отдельное жареное яйцо или желток сверху не соответствует рецепту",
+      "status": "requires_check_existing_poultry-workflow",
+      "visually_verified": false
+    },
+    {
+      "n": 153,
+      "id": "collection-poultry-04-07",
+      "title": "Рубленые котлеты из индейки с шампиньонами и сливками",
+      "asset": "assets/recipes-ai/0153-collection-poultry-04-07.webp",
+      "issue": "Котлеты/фрикадельки: отдельное жареное яйцо или желток сверху не соответствует рецепту",
+      "status": "requires_check_existing_poultry-workflow",
+      "visually_verified": false
+    },
+    {
+      "n": 154,
+      "id": "collection-poultry-04-08",
+      "title": "Рубленые котлеты из индейки с песто и вялеными томатами",
+      "asset": "assets/recipes-ai/0154-collection-poultry-04-08.webp",
+      "issue": "Котлеты/фрикадельки: отдельное жареное яйцо или желток сверху не соответствует рецепту",
+      "status": "requires_check_existing_poultry-workflow",
+      "visually_verified": false
+    },
+    {
+      "n": 155,
+      "id": "collection-poultry-04-09",
+      "title": "Рубленые котлеты из индейки с шпинатом и чесноком",
+      "asset": "assets/recipes-ai/0155-collection-poultry-04-09.webp",
+      "issue": "Котлеты/фрикадельки: отдельное жареное яйцо или желток сверху не соответствует рецепту",
+      "status": "requires_check_existing_poultry-workflow",
+      "visually_verified": false
+    },
+    {
+      "n": 156,
+      "id": "collection-poultry-04-10",
+      "title": "Рубленые котлеты из индейки с апельсином и тимьяном",
+      "asset": "assets/recipes-ai/0156-collection-poultry-04-10.webp",
+      "issue": "Котлеты/фрикадельки: отдельное жареное яйцо или желток сверху не соответствует рецепту",
+      "status": "requires_check_existing_poultry-workflow",
+      "visually_verified": false
+    },
+    {
+      "n": 168,
+      "id": "collection-poultry-06-02",
+      "title": "Нежные фрикадельки из курицы с мёдом и горчицей",
+      "asset": "assets/recipes-ai/0168-collection-poultry-06-02.webp",
+      "issue": "Котлеты/фрикадельки: отдельное жареное яйцо или желток сверху не соответствует рецепту",
+      "status": "requires_check_existing_poultry-workflow",
+      "visually_verified": false
+    },
+    {
+      "n": 169,
+      "id": "collection-poultry-06-03",
+      "title": "Нежные фрикадельки из курицы с лаймом и кокосом",
+      "asset": "assets/recipes-ai/0169-collection-poultry-06-03.webp",
+      "issue": "Котлеты/фрикадельки: отдельное жареное яйцо или желток сверху не соответствует рецепту",
+      "status": "requires_check_existing_poultry-workflow",
+      "visually_verified": false
+    },
+    {
+      "n": 173,
+      "id": "collection-poultry-06-07",
+      "title": "Нежные фрикадельки из курицы с шампиньонами и сливками",
+      "asset": "assets/recipes-ai/0173-collection-poultry-06-07.webp",
+      "issue": "Котлеты/фрикадельки: отдельное жареное яйцо или желток сверху не соответствует рецепту",
+      "status": "requires_check_existing_poultry-workflow",
+      "visually_verified": false
+    },
+    {
+      "n": 176,
+      "id": "collection-poultry-06-10",
+      "title": "Нежные фрикадельки из курицы с апельсином и тимьяном",
+      "asset": "assets/recipes-ai/0176-collection-poultry-06-10.webp",
+      "issue": "Котлеты/фрикадельки: отдельное жареное яйцо или желток сверху не соответствует рецепту",
+      "status": "requires_check_existing_poultry-workflow",
+      "visually_verified": false
+    },
+    {
+      "n": 921,
+      "id": "collection-breakfast-03-01",
+      "title": "Фриттата в духовке с шпинатом и фетой",
+      "asset": "assets/recipes-ai/0921-collection-breakfast-03-01.webp",
+      "issue": "Фриттата: не допускать отдельной глазуньи или желтка сверху",
+      "status": "queued_in_regenerate-plating-16",
+      "visually_verified": false
+    },
+    {
+      "n": 922,
+      "id": "collection-breakfast-03-02",
+      "title": "Фриттата в духовке с томатами и базиликом",
+      "asset": "assets/recipes-ai/0922-collection-breakfast-03-02.webp",
+      "issue": "Фриттата: не допускать отдельной глазуньи или желтка сверху",
+      "status": "queued_in_regenerate-plating-16",
+      "visually_verified": false
+    },
+    {
+      "n": 923,
+      "id": "collection-breakfast-03-03",
+      "title": "Фриттата в духовке с грибами и сыром",
+      "asset": "assets/recipes-ai/0923-collection-breakfast-03-03.webp",
+      "issue": "Фриттата: не допускать отдельной глазуньи или желтка сверху",
+      "status": "queued_in_regenerate-plating-16",
+      "visually_verified": false
+    },
+    {
+      "n": 924,
+      "id": "collection-breakfast-03-04",
+      "title": "Фриттата в духовке с перцем и зелёным луком",
+      "asset": "assets/recipes-ai/0924-collection-breakfast-03-04.webp",
+      "issue": "Фриттата: не допускать отдельной глазуньи или желтка сверху",
+      "status": "queued_in_regenerate-plating-16",
+      "visually_verified": false
+    },
+    {
+      "n": 925,
+      "id": "collection-breakfast-03-05",
+      "title": "Фриттата в духовке с лососем и укропом",
+      "asset": "assets/recipes-ai/0925-collection-breakfast-03-05.webp",
+      "issue": "Фриттата: не допускать отдельной глазуньи или желтка сверху",
+      "status": "queued_in_regenerate-plating-16",
+      "visually_verified": false
+    },
+    {
+      "n": 926,
+      "id": "collection-breakfast-03-06",
+      "title": "Фриттата в духовке с песто и вялеными томатами",
+      "asset": "assets/recipes-ai/0926-collection-breakfast-03-06.webp",
+      "issue": "Фриттата: не допускать отдельной глазуньи или желтка сверху",
+      "status": "queued_in_regenerate-plating-16",
+      "visually_verified": false
+    },
+    {
+      "n": 927,
+      "id": "collection-breakfast-03-07",
+      "title": "Фриттата в духовке с кукурузой и авокадо",
+      "asset": "assets/recipes-ai/0927-collection-breakfast-03-07.webp",
+      "issue": "Фриттата: не допускать отдельной глазуньи или желтка сверху",
+      "status": "queued_in_regenerate-plating-16",
+      "visually_verified": false
+    },
+    {
+      "n": 928,
+      "id": "collection-breakfast-03-08",
+      "title": "Фриттата в духовке с цуккини и петрушкой",
+      "asset": "assets/recipes-ai/0928-collection-breakfast-03-08.webp",
+      "issue": "Фриттата: не допускать отдельной глазуньи или желтка сверху",
+      "status": "queued_in_regenerate-plating-16",
+      "visually_verified": false
+    },
+    {
+      "n": 929,
+      "id": "collection-breakfast-03-09",
+      "title": "Фриттата в духовке с оливками и фетой",
+      "asset": "assets/recipes-ai/0929-collection-breakfast-03-09.webp",
+      "issue": "Фриттата: не допускать отдельной глазуньи или желтка сверху",
+      "status": "queued_in_regenerate-plating-16",
+      "visually_verified": false
+    },
+    {
+      "n": 930,
+      "id": "collection-breakfast-03-10",
+      "title": "Фриттата в духовке с авокадо и лаймом",
+      "asset": "assets/recipes-ai/0930-collection-breakfast-03-10.webp",
+      "issue": "Фриттата: не допускать отдельной глазуньи или желтка сверху",
+      "status": "queued_in_regenerate-plating-16",
+      "visually_verified": false
+    }
+  ]
+}
