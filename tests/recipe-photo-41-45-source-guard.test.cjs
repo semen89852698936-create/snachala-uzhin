@@ -20,6 +20,12 @@ test('photo map has 1001 unique numbered recipe paths', () => {
   assert.equal(new Set(map.photos.map(p => p.n)).size, 1001);
   assert.equal(new Set(map.photos.map(p => p.path)).size, 1001);
   assert.equal(new Set(map.photos.map(p => p.recipe_id)).size, 1001);
+  const numbers = map.photos.map(p => p.n).sort((a, b) => a - b);
+  assert.deepEqual(numbers, Array.from({length: 1001}, (_, i) => i + 1), 'numbering must cover 1..1001 without gaps');
+  for (const photo of map.photos) {
+    assert.match(photo.path, /^\/assets\/recipes-ai\/[0-9]{4}-[a-z0-9-]+\.webp$/, 'noncanonical photo path');
+    assert.equal(Number(photo.path.split('/').pop().slice(0, 4)), photo.n, 'filename number differs from map number');
+  }
 });
 
 test('41-45 retain their exact selected versions, including regenerated 41 and 44', () => {
