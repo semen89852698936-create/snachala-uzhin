@@ -37,6 +37,15 @@ class GateTests(unittest.TestCase):
     def test_metadata_cannot_approve_visual(self):
         self.assertTrue(self.check(dict(self.record, editorial_status="approved"), manual_visual_approved=0))
 
+    def test_forged_evidence_scope_cannot_approve(self):
+        for scope in ("", "manual_visual_check", "rights_verified", None):
+            with self.subTest(scope=scope):
+                forged = dict(self.record, evidence_scope=scope,
+                              editorial_status="approved", rights_status="cleared")
+                errors = self.check(forged)
+                self.assertTrue(any("visual approval" in e for e in errors))
+                self.assertTrue(any("license clearance" in e for e in errors))
+
     def test_archived_owner_replacement_is_not_approved(self):
         self.assertTrue(self.check(dict(self.record, number=20, editorial_status="approved")))
 
