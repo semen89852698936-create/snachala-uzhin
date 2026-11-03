@@ -12,7 +12,7 @@
       "title": "Говяжьи медальоны с яблоком и шалфеем",
       "asset": "assets/recipes-ai/0027-collection-meat-01-09.webp",
       "issue": "Мясо: неверная форма или расположение яблока, чернослива либо чеснока",
-      "status": "generated_asset_replaced_pending_visual_review",
+      "status": "generated_and_published_without_visual_signoff",
       "visually_verified": false,
       "generationRecord": "photo-library/regeneration-20261103/0027.json"
     },
@@ -22,7 +22,7 @@
       "title": "Говяжьи медальоны с черносливом и тмином",
       "asset": "assets/recipes-ai/0028-collection-meat-01-10.webp",
       "issue": "Мясо: неверная форма или расположение яблока, чернослива либо чеснока",
-      "status": "generated_asset_replaced_pending_visual_review",
+      "status": "generated_and_published_without_visual_signoff",
       "visually_verified": false,
       "generationRecord": "photo-library/regeneration-20261103/0028.json"
     },
@@ -32,7 +32,7 @@
       "title": "Свиная вырезка в духовке с паприкой и чесноком",
       "asset": "assets/recipes-ai/0032-collection-meat-02-04.webp",
       "issue": "Мясо: неверная форма или расположение яблока, чернослива либо чеснока",
-      "status": "generated_asset_replaced_pending_visual_review",
+      "status": "generated_and_published_without_visual_signoff",
       "visually_verified": false,
       "generationRecord": "photo-library/regeneration-20261103/0032.json"
     },
@@ -42,7 +42,7 @@
       "title": "Свиная вырезка в духовке с яблоком и шалфеем",
       "asset": "assets/recipes-ai/0037-collection-meat-02-09.webp",
       "issue": "Мясо: неверная форма или расположение яблока, чернослива либо чеснока",
-      "status": "generated_asset_replaced_pending_visual_review",
+      "status": "generated_and_published_without_visual_signoff",
       "visually_verified": false,
       "generationRecord": "photo-library/regeneration-20261103/0037.json"
     },
@@ -52,7 +52,7 @@
       "title": "Свиные отбивные с яблоком и шалфеем",
       "asset": "assets/recipes-ai/0117-collection-meat-10-09.webp",
       "issue": "Мясо: неверная форма или расположение яблока, чернослива либо чеснока",
-      "status": "generated_asset_replaced_pending_visual_review",
+      "status": "generated_and_published_without_visual_signoff",
       "visually_verified": false,
       "generationRecord": "photo-library/regeneration-20261103/0117.json"
     },
@@ -62,7 +62,7 @@
       "title": "Свиные отбивные с черносливом и тмином",
       "asset": "assets/recipes-ai/0118-collection-meat-10-10.webp",
       "issue": "Мясо: неверная форма или расположение яблока, чернослива либо чеснока",
-      "status": "generated_asset_replaced_pending_visual_review",
+      "status": "generated_and_published_without_visual_signoff",
       "visually_verified": false,
       "generationRecord": "photo-library/regeneration-20261103/0118.json"
     },
@@ -72,7 +72,7 @@
       "title": "Рубленые котлеты из индейки с лимоном и розмарином",
       "asset": "assets/recipes-ai/0147-collection-poultry-04-01.webp",
       "issue": "Котлеты/фрикадельки: отдельное жареное яйцо или желток сверху не соответствует рецепту",
-      "status": "replacement_asset_staged_pending_visual_review",
+      "status": "replacement_published_without_visual_signoff",
       "visually_verified": false,
       "replacementAsset": "assets/recipes-ai/0147-collection-poultry-04-01-no-eggs-regen.webp"
     },
@@ -82,7 +82,7 @@
       "title": "Рубленые котлеты из индейки с мёдом и горчицей",
       "asset": "assets/recipes-ai/0148-collection-poultry-04-02.webp",
       "issue": "Котлеты/фрикадельки: отдельное жареное яйцо или желток сверху не соответствует рецепту",
-      "status": "replacement_asset_staged_pending_visual_review",
+      "status": "replacement_published_without_visual_signoff",
       "visually_verified": false,
       "replacementAsset": "assets/recipes-ai/0148-collection-poultry-04-02-no-eggs-regen.webp"
     },
@@ -92,7 +92,7 @@
       "title": "Рубленые котлеты из индейки с лаймом и кокосом",
       "asset": "assets/recipes-ai/0149-collection-poultry-04-03.webp",
       "issue": "Котлеты/фрикадельки: отдельное жареное яйцо или желток сверху не соответствует рецепту",
-      "status": "replacement_asset_staged_pending_visual_review",
+      "status": "replacement_published_without_visual_signoff",
       "visually_verified": false,
       "replacementAsset": "assets/recipes-ai/0149-collection-poultry-04-03-no-eggs-regen.webp"
     },
@@ -102,7 +102,7 @@
       "title": "Рубленые котлеты из индейки с паприкой и сладким перцем",
       "asset": "assets/recipes-ai/0150-collection-poultry-04-04.webp",
       "issue": "Котлеты/фрикадельки: отдельное жареное яйцо или желток сверху не соответствует рецепту",
-      "status": "replacement_asset_staged_pending_visual_review",
+      "status": "replacement_published_without_visual_signoff",
       "visually_verified": false,
       "replacementAsset": "assets/recipes-ai/0150-collection-poultry-04-04-no-eggs-regen.webp"
     },
@@ -112,7 +112,7 @@
       "title": "Рубленые котлеты из индейки с томатами и орегано",
       "asset": "assets/recipes-ai/0151-collection-poultry-04-05.webp",
       "issue": "Котлеты/фрикадельки: отдельное жареное яйцо или желток сверху не соответствует рецепту",
-      "status": "replacement_asset_staged_pending_visual_review",
+      "status": "replacement_published_without_visual_signoff",
       "visually_verified": false,
       "replacementAsset": "assets/recipes-ai/0151-collection-poultry-04-05-no-eggs-regen.webp"
     },
@@ -122,8 +122,9 @@
       "title": "Рубленые котлеты из индейки с соевым соусом и имбирём",
       "asset": "assets/recipes-ai/0152-collection-poultry-04-06.webp",
       "issue": "Котлеты/фрикадельки: отдельное жареное яйцо или желток сверху не соответствует рецепту",
-      "status": "requires_visual_review_and_possible_regeneration",
-      "visually_verified": false
+      "status": "replacement_published_without_visual_signoff",
+      "visually_verified": false,
+      "replacementAsset": "assets/recipes-ai/0152-collection-poultry-04-06-no-eggs-regen.webp"
     },
     {
       "n": 153,
@@ -131,7 +132,7 @@
       "title": "Рубленые котлеты из индейки с шампиньонами и сливками",
       "asset": "assets/recipes-ai/0153-collection-poultry-04-07.webp",
       "issue": "Котлеты/фрикадельки: отдельное жареное яйцо или желток сверху не соответствует рецепту",
-      "status": "replacement_asset_staged_pending_visual_review",
+      "status": "replacement_published_without_visual_signoff",
       "visually_verified": false,
       "replacementAsset": "assets/recipes-ai/0153-collection-poultry-04-07-no-eggs-regen.webp"
     },
@@ -141,8 +142,9 @@
       "title": "Рубленые котлеты из индейки с песто и вялеными томатами",
       "asset": "assets/recipes-ai/0154-collection-poultry-04-08.webp",
       "issue": "Котлеты/фрикадельки: отдельное жареное яйцо или желток сверху не соответствует рецепту",
-      "status": "requires_visual_review_and_possible_regeneration",
-      "visually_verified": false
+      "status": "replacement_published_without_visual_signoff",
+      "visually_verified": false,
+      "replacementAsset": "assets/recipes-ai/0154-collection-poultry-04-08-no-eggs-regen.webp"
     },
     {
       "n": 155,
@@ -150,7 +152,7 @@
       "title": "Рубленые котлеты из индейки с шпинатом и чесноком",
       "asset": "assets/recipes-ai/0155-collection-poultry-04-09.webp",
       "issue": "Котлеты/фрикадельки: отдельное жареное яйцо или желток сверху не соответствует рецепту",
-      "status": "replacement_asset_staged_pending_visual_review",
+      "status": "replacement_published_without_visual_signoff",
       "visually_verified": false,
       "replacementAsset": "assets/recipes-ai/0155-collection-poultry-04-09-no-eggs-regen.webp"
     },
@@ -160,7 +162,7 @@
       "title": "Рубленые котлеты из индейки с апельсином и тимьяном",
       "asset": "assets/recipes-ai/0156-collection-poultry-04-10.webp",
       "issue": "Котлеты/фрикадельки: отдельное жареное яйцо или желток сверху не соответствует рецепту",
-      "status": "replacement_asset_staged_pending_visual_review",
+      "status": "replacement_published_without_visual_signoff",
       "visually_verified": false,
       "replacementAsset": "assets/recipes-ai/0156-collection-poultry-04-10-no-eggs-regen.webp"
     },
@@ -170,7 +172,7 @@
       "title": "Нежные фрикадельки из курицы с мёдом и горчицей",
       "asset": "assets/recipes-ai/0168-collection-poultry-06-02.webp",
       "issue": "Котлеты/фрикадельки: отдельное жареное яйцо или желток сверху не соответствует рецепту",
-      "status": "replacement_asset_staged_pending_visual_review",
+      "status": "replacement_published_without_visual_signoff",
       "visually_verified": false,
       "replacementAsset": "assets/recipes-ai/0168-collection-poultry-06-02-no-eggs-regen.webp"
     },
@@ -180,7 +182,7 @@
       "title": "Нежные фрикадельки из курицы с лаймом и кокосом",
       "asset": "assets/recipes-ai/0169-collection-poultry-06-03.webp",
       "issue": "Котлеты/фрикадельки: отдельное жареное яйцо или желток сверху не соответствует рецепту",
-      "status": "replacement_asset_staged_pending_visual_review",
+      "status": "replacement_published_without_visual_signoff",
       "visually_verified": false,
       "replacementAsset": "assets/recipes-ai/0169-collection-poultry-06-03-no-eggs-regen.webp"
     },
@@ -190,7 +192,7 @@
       "title": "Нежные фрикадельки из курицы с шампиньонами и сливками",
       "asset": "assets/recipes-ai/0173-collection-poultry-06-07.webp",
       "issue": "Котлеты/фрикадельки: отдельное жареное яйцо или желток сверху не соответствует рецепту",
-      "status": "replacement_asset_staged_pending_visual_review",
+      "status": "replacement_published_without_visual_signoff",
       "visually_verified": false,
       "replacementAsset": "assets/recipes-ai/0173-collection-poultry-06-07-no-eggs-regen.webp"
     },
@@ -200,7 +202,7 @@
       "title": "Нежные фрикадельки из курицы с апельсином и тимьяном",
       "asset": "assets/recipes-ai/0176-collection-poultry-06-10.webp",
       "issue": "Котлеты/фрикадельки: отдельное жареное яйцо или желток сверху не соответствует рецепту",
-      "status": "replacement_asset_staged_pending_visual_review",
+      "status": "replacement_published_without_visual_signoff",
       "visually_verified": false,
       "replacementAsset": "assets/recipes-ai/0176-collection-poultry-06-10-no-eggs-regen.webp"
     },
@@ -210,7 +212,7 @@
       "title": "Фриттата в духовке с шпинатом и фетой",
       "asset": "assets/recipes-ai/0921-collection-breakfast-03-01.webp",
       "issue": "Фриттата: не допускать отдельной глазуньи или желтка сверху",
-      "status": "generated_asset_replaced_pending_visual_review",
+      "status": "generated_and_published_without_visual_signoff",
       "visually_verified": false,
       "generationRecord": "photo-library/regeneration-20261103/0921.json"
     },
@@ -220,7 +222,7 @@
       "title": "Фриттата в духовке с томатами и базиликом",
       "asset": "assets/recipes-ai/0922-collection-breakfast-03-02.webp",
       "issue": "Фриттата: не допускать отдельной глазуньи или желтка сверху",
-      "status": "generated_asset_replaced_pending_visual_review",
+      "status": "generated_and_published_without_visual_signoff",
       "visually_verified": false,
       "generationRecord": "photo-library/regeneration-20261103/0922.json"
     },
@@ -230,7 +232,7 @@
       "title": "Фриттата в духовке с грибами и сыром",
       "asset": "assets/recipes-ai/0923-collection-breakfast-03-03.webp",
       "issue": "Фриттата: не допускать отдельной глазуньи или желтка сверху",
-      "status": "generated_asset_replaced_pending_visual_review",
+      "status": "generated_and_published_without_visual_signoff",
       "visually_verified": false,
       "generationRecord": "photo-library/regeneration-20261103/0923.json"
     },
@@ -240,7 +242,7 @@
       "title": "Фриттата в духовке с перцем и зелёным луком",
       "asset": "assets/recipes-ai/0924-collection-breakfast-03-04.webp",
       "issue": "Фриттата: не допускать отдельной глазуньи или желтка сверху",
-      "status": "generated_asset_replaced_pending_visual_review",
+      "status": "generated_and_published_without_visual_signoff",
       "visually_verified": false,
       "generationRecord": "photo-library/regeneration-20261103/0924.json"
     },
@@ -250,7 +252,7 @@
       "title": "Фриттата в духовке с лососем и укропом",
       "asset": "assets/recipes-ai/0925-collection-breakfast-03-05.webp",
       "issue": "Фриттата: не допускать отдельной глазуньи или желтка сверху",
-      "status": "generated_asset_replaced_pending_visual_review",
+      "status": "generated_and_published_without_visual_signoff",
       "visually_verified": false,
       "generationRecord": "photo-library/regeneration-20261103/0925.json"
     },
@@ -260,7 +262,7 @@
       "title": "Фриттата в духовке с песто и вялеными томатами",
       "asset": "assets/recipes-ai/0926-collection-breakfast-03-06.webp",
       "issue": "Фриттата: не допускать отдельной глазуньи или желтка сверху",
-      "status": "generated_asset_replaced_pending_visual_review",
+      "status": "generated_and_published_without_visual_signoff",
       "visually_verified": false,
       "generationRecord": "photo-library/regeneration-20261103/0926.json"
     },
@@ -270,7 +272,7 @@
       "title": "Фриттата в духовке с кукурузой и авокадо",
       "asset": "assets/recipes-ai/0927-collection-breakfast-03-07.webp",
       "issue": "Фриттата: не допускать отдельной глазуньи или желтка сверху",
-      "status": "generated_asset_replaced_pending_visual_review",
+      "status": "generated_and_published_without_visual_signoff",
       "visually_verified": false,
       "generationRecord": "photo-library/regeneration-20261103/0927.json"
     },
@@ -280,7 +282,7 @@
       "title": "Фриттата в духовке с цуккини и петрушкой",
       "asset": "assets/recipes-ai/0928-collection-breakfast-03-08.webp",
       "issue": "Фриттата: не допускать отдельной глазуньи или желтка сверху",
-      "status": "generated_asset_replaced_pending_visual_review",
+      "status": "generated_and_published_without_visual_signoff",
       "visually_verified": false,
       "generationRecord": "photo-library/regeneration-20261103/0928.json"
     },
@@ -290,7 +292,7 @@
       "title": "Фриттата в духовке с оливками и фетой",
       "asset": "assets/recipes-ai/0929-collection-breakfast-03-09.webp",
       "issue": "Фриттата: не допускать отдельной глазуньи или желтка сверху",
-      "status": "generated_asset_replaced_pending_visual_review",
+      "status": "generated_and_published_without_visual_signoff",
       "visually_verified": false,
       "generationRecord": "photo-library/regeneration-20261103/0929.json"
     },
@@ -300,12 +302,14 @@
       "title": "Фриттата в духовке с авокадо и лаймом",
       "asset": "assets/recipes-ai/0930-collection-breakfast-03-10.webp",
       "issue": "Фриттата: не допускать отдельной глазуньи или желтка сверху",
-      "status": "generated_asset_replaced_pending_visual_review",
+      "status": "generated_and_published_without_visual_signoff",
       "visually_verified": false,
       "generationRecord": "photo-library/regeneration-20261103/0930.json"
     }
   ],
   "generatedAndReplaced": 16,
   "stagedPoultryReplacements": 12,
-  "unresolvedWithoutReplacement": 2
+  "unresolvedWithoutReplacement": 2,
+  "owner_authorized_direct_publication": true,
+  "release_requires_visual_approval": false
 }
