@@ -1,0 +1,83 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-03",
+  "scope": "Archive candidate records 21-25, metadata-only publication gate",
+  "source_queue_ref": "automation/half-hour-photo-audit/photo-library/half-hour-review-queue.json",
+  "main_sha_at_start": "2a877e16a03aaf31bf6d8f842093a0a3a2490851",
+  "physical_files_confirmed": 0,
+  "technical_checks_repeated": 0,
+  "visual_checks": 0,
+  "license_cleared": 0,
+  "publication_approved": 0,
+  "license_claim": "CC BY-SA 4.0 (worker metadata only, not independently verified)",
+  "license_obligations_to_verify": [
+    "Exact Commons file page and author",
+    "File-specific license and attribution requirements",
+    "Whether modified/redistributed derivative triggers share-alike conditions",
+    "Attribution and license link placement in product"
+  ],
+  "records": [
+    {
+      "number": 21,
+      "recipe_id": "collection-meat-01-03",
+      "source_only": true,
+      "technical_status": "not_checked",
+      "editorial_status": "hold_for_review",
+      "license_status": "hold_for_individual_verification",
+      "risk": "critical",
+      "reason": "Source depicts steak with sausage, corn and potatoes; not evidenced as mustard-honey beef medallions."
+    },
+    {
+      "number": 22,
+      "recipe_id": "collection-meat-01-04",
+      "source_only": true,
+      "technical_status": "not_checked",
+      "editorial_status": "hold_for_review",
+      "license_status": "hold_for_individual_verification",
+      "risk": "high",
+      "reason": "Generic sizzling steak; paprika and garlic not established."
+    },
+    {
+      "number": 23,
+      "recipe_id": "collection-meat-01-05",
+      "source_only": true,
+      "technical_status": "not_checked",
+      "editorial_status": "hold_for_review",
+      "license_status": "hold_for_individual_verification",
+      "risk": "high",
+      "reason": "Steak with pasta and vegetables; tomato and basil not established."
+    },
+    {
+      "number": 24,
+      "recipe_id": "collection-meat-01-06",
+      "source_only": true,
+      "technical_status": "not_checked",
+      "editorial_status": "hold_for_review",
+      "license_status": "hold_for_individual_verification",
+      "risk": "critical",
+      "reason": "Source describes filet mignon with herb butter, potatoes and beans; ginger and soy sauce not evidenced."
+    },
+    {
+      "number": 25,
+      "recipe_id": "collection-meat-01-07",
+      "source_only": true,
+      "technical_status": "not_checked",
+      "editorial_status": "hold_for_review",
+      "license_status": "hold_for_individual_verification",
+      "risk": "high",
+      "reason": "Source describes beef medallions with rice and vegetables; onion and balsamic not evidenced."
+    }
+  ],
+  "checkpoint": {
+    "files_changed": [
+      "photo-library/archive-rights-gate-21-25-20261103.json"
+    ],
+    "validation": "Five unique queue records 21-25 compared with source title metadata; no byte-level checks or image inspection",
+    "blockers": [
+      "No physical WebP evidence for these five records in technical queue",
+      "All five require image-specific CC BY-SA 4.0 author/license verification",
+      "Metadata is insufficient to confirm ingredients"
+    ],
+    "next": "Obtain selected physical WebP for 21-25 and recipe ingredient lists, visually compare, then independently verify Commons author/license; do not publish before clearance"
+  }
+}
