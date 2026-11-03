@@ -65,5 +65,20 @@
     "production_modified": false,
     "merged": false,
     "paid_calls": false
+  },
+  "followup_approved_copies_guard_20261103": {
+    "code_commit": "b4020597739cb5331f5b03a8e85d0b88772cd944",
+    "changed_file": "tests/recipe-photo-41-45-source-guard.test.cjs",
+    "scope": "Pinned current main map selected recipe IDs, paths, Git blob SHAs and physical file presence for owner-approved copies 6, 10 and 20, distinct from archival candidates; no archive integrity recheck",
+    "verification": "Committed; CI result not yet verified",
+    "remaining_blockers": [
+      "Confirm CI on new commit",
+      "Visually compare selected WebP 41-45 with full recipes",
+      "Verify commercial rights for each proposed publication"
+    ],
+    "next_task": "Verify GitHub Actions on commit b4020597 and visually review selected 41-45; do not publish or merge",
+    "production_modified": false,
+    "merged": false,
+    "paid_calls": false
   }
 }
