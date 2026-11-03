@@ -1,0 +1,22 @@
+{
+  "date_utc": "2026-11-03",
+  "scope": "archive gate regression hardening, no image approval",
+  "branch": "qa/archive-gate-validation-20261103",
+  "pr": 63,
+  "files_changed": [
+    "scripts/validate_archive_gate.py",
+    "tests/test_validate_archive_gate.py"
+  ],
+  "commits": [
+    "40dc0fefac84ca50878c6b92593c2371bf4fe38d",
+    "e3692948dd952c0f43e6c77afe93a85dcd8cc6a7"
+  ],
+  "verified": "GitHub returned updated file blobs; four non-object JSON root regression cases added; workflow runs query returned zero for latest SHA",
+  "tests": "Not yet executed in GitHub Actions; do not report as passed",
+  "technical_worker": "Checkpoint reports 20/100, no SHA repeat",
+  "blockers": [
+    "CI run not confirmed",
+    "Physical visual comparison and individual license clearance outstanding"
+  ],
+  "next": "Run GitHub CI for PR63 and inspect physical archived WebP #46/#47 against complete recipes; keep production untouched"
+}
