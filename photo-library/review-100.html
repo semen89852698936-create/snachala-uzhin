@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="ru"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>100 фотографий | Проверка • СНАЧАЛА УЖИН</title>
+<style>
+:root{color-scheme:light;--ink:#482b2f;--soft:#f7eee7;--wine:#873d51;--white:#fff;--line:#ead7ce}
+*{box-sizing:border-box}body{margin:0;background:var(--soft);color:var(--ink);font:17px/1.5 system-ui,-apple-system,sans-serif}
+header{padding:38px max(22px,5vw) 25px;background:#fff6f1;border-bottom:1px solid var(--line)}
+h1{font:600 clamp(30px,4vw,52px)/1.1 Georgia,serif;margin:0 0 14px}p{max-width:880px;margin:0 0 12px}
+strong{font-weight:650}.note{color:#825a55}.controls{padding:20px max(22px,5vw);display:flex;flex-wrap:wrap;gap:12px;align-items:center}
+select,input{background:white;border:1px solid #cbaca1;border-radius:9px;padding:12px;font:inherit;color:var(--ink)}
+input{min-width:240px;flex:1}.count{font-variant-numeric:tabular-nums;margin-left:auto}
+main{padding:0 max(22px,5vw) 50px}.cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(245px,1fr));gap:20px}
+.card{background:white;border-radius:16px;overflow:hidden;box-shadow:0 4px 15px #4c291712}.card img{width:100%;aspect-ratio:4/3;object-fit:cover;background:#e7d5c7;display:block}
+.content{padding:16px}h2{font-size:18px;line-height:1.25;margin:0 0 12px}.meta{font-size:14px;color:#765b5b}
+.status{background:#f5e9e6;display:inline-block;font-size:13px;padding:4px 9px;border-radius:7px;margin-bottom:9px}
+a{color:#7a2d48}.card a{font-size:15px}footer{padding:18px 5vw 32px;color:#775f5c}#problem{color:#902c38}
+@media(max-width:600px){.controls{display:grid;grid-template-columns:1fr}.count{margin-left:0}}
+</style></head>
+<body>
+<header>
+<h1>Фотоархив · 100 рецептов</h1>
+<p>Рабочая галерея проекта <strong>«СНАЧАЛА УЖИН»</strong>. Реальные файлы WebP, а не ссылки и не промпты. Фильтруй по партиям и лицензиям, открывай первоисточники.</p>
+<p class="note"><strong>Важно:</strong> это кандидаты, а не 100 утверждённых снимков. Совпадение всех ингредиентов и правомерность конкретного коммерческого использования ещё требуют проверки. Три фотографии, ранее утверждённые на сайте, отличаются от их архивных копий.</p>
+</header>
+<div class="controls">
+<label><select id="range"><option value="all">Все 100</option><option value="first">1–50</option><option value="second">51–100</option><option value="linked">12 связанных с карточками</option></select></label>
+<label><select id="license"><option value="all">Все лицензии</option><option value="Unsplash License">Unsplash</option><option value="Pexels License">Pexels</option><option value="CC0">CC0</option><option value="CC BY">CC BY / CC BY-SA</option></select></label>
+<input id="query" type="search" aria-label="Поиск блюда" placeholder="Поиск по названию блюда">
+<strong class="count" id="count">Загрузка…</strong>
+</div>
+<main><p id="problem"></p><div class="cards" id="cards"></div></main>
+<footer>Отдельная рабочая галерея. Она не заменяет опубликованный каталог и не утверждает использование изображений.</footer>
+<script>
+"use strict";
+const curated = new Set([2,4,5,7,8,9,11,12,13,15,17,19]);
+const $ = (id) => document.getElementById(id);
+const cardGrid = $("cards");
+let entries = [];
+function node(tag, attrs = {}, text = null) {
+  const el = document.createElement(tag);
+  for (const [key,value] of Object.entries(attrs)) el.setAttribute(key,String(value));
+  if(text !== null) el.textContent = String(text);
+  return el;
+}
+function redraw(){
+  const range=$("range").value, license=$("license").value, query=$("query").value.trim().toLowerCase();
+  const filtered=entries.filter(img=>{
+    if(range==="first" && img.number>50)return false;
+    if(range==="second" && img.number<=50)return false;
+    if(range==="linked" && !curated.has(img.number))return false;
+    if(license!=="all" && !(license==="CC BY" ? (img.license||"").startsWith("CC BY") : img.license===license))return false;
+    return (img.title||"").toLowerCase().includes(query);
+  });
+  $("count").textContent=filtered.length+" из 100";
+  const fragment=document.createDocumentFragment();
+  for(const img of filtered){
+    const article=node("article",{class:"card"});
+    const image=node("img",{src:"batch-100-20261101/"+img.file,loading:"lazy",alt:img.title||"Блюдо"});
+    image.addEventListener("error",()=>{image.alt="Изображение не загрузилось";});
+    article.appendChild(image);
+    const content=node("div",{class:"content"});
+    content.appendChild(node("span",{class:"status"},curated.has(img.number)?"Файл связан с карточкой · требуется проверка":"Кандидат · не утверждён"));
+    content.appendChild(node("h2",{},String(img.number).padStart(3,"0")+". "+img.title));
+    content.appendChild(node("p",{class:"meta"},img.license||"Лицензия не указана"));
+    const link=node("a",{href:img.source_page,target:"_blank",rel:"noopener noreferrer"},"Первоисточник изображения");
+    content.appendChild(link);
+    article.appendChild(content);
+    fragment.appendChild(article);
+  }
+  cardGrid.replaceChildren(fragment);
+}
+async function run(){
+  try{
+    const response=await fetch("./batch-100-20261101/manifest.json",{cache:"no-store"});
+    if(!response.ok)throw Error("HTTP "+response.status);
+    const manifest=await response.json();
+    if(!Array.isArray(manifest.sources)||manifest.sources.length!==100)throw Error("Неверное число изображений");
+    entries=manifest.sources;
+    for(const id of ["range","license","query"])$(id).addEventListener("input",redraw);
+    redraw();
+  }catch(error){$("problem").textContent="Галерея не загрузилась: "+error.message+". Открой её через HTTP-сервер или тестовый деплой, не через file://.";}
+}
+run();
+</script></body></html>

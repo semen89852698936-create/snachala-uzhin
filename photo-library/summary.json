@@ -67,5 +67,25 @@
     "recipeCount": 1001,
     "localWebp200": 3,
     "nasheVecherHttpStatus": 200
+  },
+  "historicCountersObservedAt": "2026-11-01",
+  "stagingReview": {
+    "date": "2026-11-02",
+    "branch": "photo-library/restore-100-review-20261102",
+    "pullRequest": "https://github.com/semen89852698936-create/snachala-uzhin/pull/11",
+    "archiveWebpFiles": 100,
+    "archiveWebpBytes": 16778546,
+    "archiveUniqueHashEntries": 100,
+    "curatedAssetsInMain": 12,
+    "curatedByteIdenticalToArchive": 12,
+    "productionApprovedDifferentCopies": 3,
+    "archivalIngredientMatchConfirmed": 0,
+    "archiveFinalApprovals": 0,
+    "licenseAttributionRequiredFiles": 72,
+    "remainingRecipesWithoutArchivedFiles": 901,
+    "preview": "https://snachala-uzhin-6k2oijk4l-chaika2.vercel.app/review-100.html",
+    "technicalCheck": "GitHub Actions PASS, Vercel gallery HTTP 200, WebP #050 HTTP 200",
+    "status": "staging review, NOT published to main",
+    "warning": "Top-level counters above are historical 2026-11-01 values"
   }
 }
