@@ -12,7 +12,7 @@
     "photo-library/ai-recipe-photo-map.json (main)"
   ],
   "confirmed": "Main map records regenerated selections for 41 and 44 and original filenames for 42,43,45; regression test committed in draft PR #52.",
-  "test_status": "Not yet executed or confirmed by GitHub Actions; test must be run with node --test tests/recipe-photo-41-45-source-guard.test.cjs",
+  "test_status": "Confirmed successful GitHub Actions runs 41567593605 and 41567605931 on commits 097b5885 and 3c1d212a",
   "visual_review": "not performed",
   "rights_review": "not performed",
   "remaining_blockers": [
@@ -38,5 +38,32 @@
     "production_modified": false,
     "paid_calls": false,
     "merged": false
+  },
+  "followup_ci_verified_20261103": {
+    "verified_commits": [
+      "097b588513d9bc6fd228b5230afb0fd1b9d70f4b",
+      "3c1d212a642e2bebb2739cce8bb63357d8d78fc1"
+    ],
+    "runs": [
+      {
+        "id": 41567593605,
+        "conclusion": "success",
+        "commit": "097b588513d9bc6fd228b5230afb0fd1b9d70f4b"
+      },
+      {
+        "id": 41567605931,
+        "conclusion": "success",
+        "commit": "3c1d212a642e2bebb2739cce8bb63357d8d78fc1"
+      }
+    ],
+    "verified_scope": "Node source-selection regression test for map entries 41-45; does not establish visual accuracy, recipe ingredient correctness or rights",
+    "remaining": [
+      "Review selected actual WebP pixels 41-45 against full ingredient lists",
+      "Verify individual commercial rights before final approval"
+    ],
+    "next_task": "Perform evidence-backed visual editorial review 41-45; record individual file SHA and recipe comparison without redoing archived 100-file technical audit",
+    "production_modified": false,
+    "merged": false,
+    "paid_calls": false
   }
 }
