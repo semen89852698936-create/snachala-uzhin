@@ -1,0 +1,54 @@
+name: Recreate 16 owner-flagged recipe photos with Yandex
+on:
+  push:
+    branches: [main]
+    paths: ['scripts/regenerate-plating-16.py', '.github/workflows/regenerate-plating-16.yml']
+  workflow_dispatch:
+  schedule:
+    - cron: '15,45 * * * *'
+permissions:
+  contents: write
+concurrency:
+  group: yandex-plating-16
+  cancel-in-progress: false
+jobs:
+  regenerate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 58
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          persist-credentials: true
+      - uses: actions/checkout@v4
+        with:
+          repository: semen89852698936-create/snachala-uzhin
+          ref: photo-production/yandex-ai-art-1001
+          path: _photo_source
+          sparse-checkout: |
+            photo-pipeline
+            photo-library/recipes.json
+          sparse-checkout-cone-mode: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: python -m pip install 'Pillow>=10,<13'
+      - name: Generate, save verified WebP format and commit progress even if API fails midbatch
+        env:
+          YANDEX_API_KEY: \${{ secrets.YANDEX_API_KEY }}
+          YANDEX_FOLDER_ID: \${{ secrets.YANDEX_FOLDER_ID || 'b1g00u8p0k5nl98v8nre' }}
+          PHOTO_COST_APPROVED: 'true'
+        run: |
+          set +e
+          python3 scripts/regenerate-plating-16.py
+          status=$?
+          set -e
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -- assets/recipes-ai photo-library/regeneration-20261103
+          if ! git diff --cached --quiet; then
+            git diff --cached --check
+            git commit -m "Regenerate 16 recipe-accurate photographs via Yandex"
+            git push origin HEAD:refs/heads/main
+          fi
+          exit "$status"
