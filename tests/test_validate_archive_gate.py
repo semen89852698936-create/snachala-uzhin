@@ -22,6 +22,12 @@ class GateTests(unittest.TestCase):
         self.path.write_text(json.dumps(dict(records=[record], **extra)), encoding="utf-8")
         return validate(self.path)
 
+    def test_non_object_json_root_rejected_without_crash(self):
+        for payload in ("null", "[]", "\"text\"", "42"):
+            with self.subTest(payload=payload):
+                self.path.write_text(payload, encoding="utf-8")
+                self.assertIn("top-level JSON object required", " ".join(validate(self.path)))
+
     def test_pending_record_passes(self):
         self.assertEqual([], self.check(self.record, manual_visual_approved=0, rights_cleared=0))
 
