@@ -11,6 +11,8 @@ def validate(path):
         data = json.loads(Path(path).read_text(encoding="utf-8"))
     except (OSError, ValueError) as exc:
         return [f"{path}: invalid JSON: {exc}"]
+    if not isinstance(data, dict):
+        return [f"{path}: top-level JSON object required"]
     records = data.get("records")
     if not isinstance(records, list) or not records:
         return [f"{path}: nonempty records list required"]
