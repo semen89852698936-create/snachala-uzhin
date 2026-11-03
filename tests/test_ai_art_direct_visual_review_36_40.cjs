@@ -31,7 +31,7 @@ for (const r of report.reviews) {
   const original = map.photos.find(p => p.n === r.n);
   assert(original, 'Missing map entry ' + r.n);
   assert.equal(r.recipe_id, original.recipe_id);
-  assert.equal(r.path, original.path.replace(/^\\//, ''));
+  assert.equal(r.path, (original.path.startsWith('/') ? original.path.slice(1) : original.path));
   assert.equal(r.blob_sha, original.sha);
   assert.equal(r.blob_sha, expected.get(r.n));
   assert(fs.existsSync(path.join(root, r.path)), 'Physical WebP missing: ' + r.path);
