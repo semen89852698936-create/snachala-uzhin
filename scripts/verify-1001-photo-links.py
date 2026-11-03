@@ -60,7 +60,20 @@ for url in ("index.html","full-catalog/index.html"):
     assert 'id="du-music-player"' not in html,(url,"bottom player must be removed")
     assert 'id="du-music-iframe"' not in html,(url,"single floating player must be removed")
     assert 'data-music-track="' not in html,(url,"faux inline play buttons must be removed")
-    assert html.count("Песни с указанным темпом · 10")==3,(url,"3 published BPM 10-song editorial card groups")
-    print("PASS",url,"3 embedded playlist players, no bottom player, 20 curated suggestions per list")
+    cards=re.findall(r'<details class="du-music-suggestions" open>(.*?)</details>',html,re.S)
+    assert len(cards)==3,(url,"3 music sections",len(cards))
+    from html import unescape
+    for key,card in zip(("cooking","dinner","continue"),cards):
+        assert "<summary>20 песен" in card,(url,key,"visible track count")
+        assert "du-bpm-explainer" not in card,(url,key,"technical explanation remains")
+        assert "Песни с указанным темпом" not in card,(url,key,"technical caption remains")
+        rows=re.findall(r'<li class="du-bpm-track">.*?<strong>(.*?)</strong><span>(.*?)</span>.*?<span class="du-bpm-pill">(\\d+) BPM</span></li>',card,re.S)
+        expected=playlists[key]["proposedTracks"]
+        assert len(rows)==len(expected)==20,(url,key,"exact 20 tracks")
+        assert [(unescape(t),unescape(a),int(b)) for t,a,b in rows]==[(x["title"],x["artist"],x["bpm"]) for x in expected],(url,key,"playlist metadata mismatch")
+        values=[int(b) for _,_,b in rows]
+        low,high={"cooking":(120,999),"dinner":(80,100),"continue":(0,80)}[key]
+        assert all(low<=v<=high for v in values),(url,key,"BPM outside phase",values)
+    print("PASS",url,"3 embedded playlist players, 20 curated and tempo-checked tracks per section")
 print("PASS 1001 unique WebP, exact file sizes, Git blob hashes, Spotify playlist metadata")
 
