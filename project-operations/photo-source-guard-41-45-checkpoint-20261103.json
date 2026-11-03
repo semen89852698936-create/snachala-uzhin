@@ -80,5 +80,23 @@
     "production_modified": false,
     "merged": false,
     "paid_calls": false
+  },
+  "followup_numbering_guard_20261103": {
+    "code_commit": "abb3d06d6aad31d6cc198fcef28a2333cee93172",
+    "changed_file": "tests/recipe-photo-41-45-source-guard.test.cjs",
+    "change": "Assert complete numbered range 1..1001, canonical asset path and matching four-digit filename prefix; prevent unique-but-gapped numbering and path drift",
+    "previous_ci": {
+      "commit": "e3b82908a85fe088f65cc03515a8f2439a44a0b7",
+      "run": 41579712279,
+      "conclusion": "success"
+    },
+    "new_commit_ci": "not yet verified",
+    "technical_archive": "20/100; no repeated SHA or dimension checks",
+    "visual_review": "not performed",
+    "rights_review": "not performed",
+    "next_task": "Verify CI on numbering guard, then compare actual selected WebP 41-45 against full recipes and record evidence",
+    "production_modified": false,
+    "merged": false,
+    "paid_calls": false
   }
 }
