@@ -538,6 +538,26 @@ a.du-evening-nav-mobile{display:none}
 @media(max-width:1080px){.du-my-recipes .recipe-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.main-nav{gap:12px}.main-nav a{font-size:12px}}
 @media(max-width:680px){.du-my-recipes{padding:62px 0 75px}.du-my-recipes .recipe-grid{grid-template-columns:1fr}.du-my-summary{display:block}.du-my-sync-note{display:block;margin-top:8px}}
 
+
+/* Visible escape route from the immersive «Наш вечер» mode. */
+.du-evening-back{
+  position:fixed;z-index:32;top:96px;left:14px;display:inline-flex;
+  align-items:center;gap:10px;min-height:44px;
+  padding:10px 17px 10px 13px;border:1px solid #d8b8bd;
+  border-radius:999px;background:rgba(255,249,246,.96);
+  backdrop-filter:blur(10px);box-shadow:0 5px 20px rgba(64,32,44,.15);
+  font:750 14px/1.3 Manrope,Arial,sans-serif;color:#703d4d;
+  text-decoration:none;transition:background .18s,transform .18s;
+}
+.du-evening-back:hover{background:#fff;transform:translateX(-2px)}
+.du-evening-back:focus-visible{outline:3px solid #a75d72;outline-offset:3px}
+.du-evening-back-arrow{font:normal 26px/1 Arial,sans-serif}
+body:not(.du-evening-mode) .du-evening-back{display:none!important}
+@media(max-width:680px){
+ .du-evening-back{top:77px;left:10px;gap:7px;padding:9px 14px 9px 12px;font-size:13px;min-height:44px}
+ .du-evening-back-arrow{font-size:24px}
+}
+
 </style>
 </head><body>
 <div class="demo-strip"><span class="demo-dot"></span> ОТКРЫТАЯ КОЛЛЕКЦИЯ · 1000 РЕЦЕПТОВ + 1 СЕКРЕТНЫЙ · ГОТОВЬТЕ ВМЕСТЕ</div>
@@ -547,6 +567,7 @@ a.du-evening-nav-mobile{display:none}
  <a class="du-evening-nav-mobile" href="#evening">Наш вечер</a>
  <div class="header-actions"><button class="icon-button" id="favHeader" type="button" title="Мои рецепты" aria-label="Мои рецепты"><span aria-hidden="true">♡</span><span class="header-count" id="favBadge">0</span></button><button class="icon-button shopping-open" type="button" title="Список покупок" aria-label="Список покупок"><span aria-hidden="true">▤</span><span class="header-count" id="shopBadge">0</span></button></div>
 </div></header>
+<a class="du-evening-back" href="#home" aria-label="Вернуться из раздела Наш вечер на главную страницу"><span class="du-evening-back-arrow" aria-hidden="true">←</span><span>На главную</span></a>
 <main id="homeView">
 <section class="du-hero" aria-labelledby="du-hero-title"><div class="du-hero-layout container">
  <div class="du-hero-copy"><div class="du-kicker"><span class="du-kicker-line"></span> УЖИН ДЛЯ ДВОИХ МОЖЕТ БЫТЬ СОБЫТИЕМ</div>
@@ -784,7 +805,7 @@ function renderCook(){const r=byId(state.recipe);if(!r)return;const idx=state.co
 }
 function showHome(){state.recipe=null;$('homeView').hidden=false;$('recipeView').hidden=true;}
 function showRecipe(id){const r=byId(id);if(!r){location.hash='catalog';return;}$('homeView').hidden=true;$('recipeView').hidden=false;renderRecipe(id);window.scrollTo({top:0,behavior:'instant'})}
-function route(){const hash=decodeURIComponent(location.hash.slice(1));if(hash.startsWith('recipe=')){showRecipe(hash.slice(7));return;}showHome();if(hash==='catalog'||hash==='categories'||hash==='evening'||hash==='about'||hash==='pricing'||hash==='music'||hash==='my-recipes'){requestAnimationFrame(() => document.getElementById(hash)?.scrollIntoView({behavior:'smooth',block:'start'}));}else if(hash==='home'){requestAnimationFrame(()=>window.scrollTo({top:0,behavior:'smooth'}))}}
+function route(){const hash=decodeURIComponent(location.hash.slice(1));document.body.classList.toggle('du-evening-mode',hash==='evening');if(hash.startsWith('recipe=')){showRecipe(hash.slice(7));return;}showHome();if(hash==='catalog'||hash==='categories'||hash==='evening'||hash==='about'||hash==='pricing'||hash==='music'||hash==='my-recipes'){requestAnimationFrame(() => document.getElementById(hash)?.scrollIntoView({behavior:'smooth',block:'start'}));}else if(hash==='home'){requestAnimationFrame(()=>window.scrollTo({top:0,behavior:'smooth'}))}}
 function showFeatured(){location.hash='recipe=lemon-spinach-pasta';}
 function init(){renderCategories();renderFilters();renderCuisines();renderRecipes();updateBadges();renderMyRecipes();$('recipeSearch').addEventListener('input',e=>{state.search=e.target.value;visibleLimit=PAGE_SIZE;renderRecipes()});$('cuisineFilter').addEventListener('change',e=>{state.cuisine=e.target.value;visibleLimit=PAGE_SIZE;renderRecipes()});$('quickFilter').addEventListener('click',()=>{state.quick=!state.quick;visibleLimit=PAGE_SIZE;$('quickFilter').setAttribute('aria-pressed',state.quick);renderRecipes()});$('favoritesFilter').addEventListener('click',()=>{state.favsOnly=!state.favsOnly;visibleLimit=PAGE_SIZE;$('favoritesFilter').setAttribute('aria-pressed',state.favsOnly);renderRecipes()});$('loadMoreRecipes').addEventListener('click',()=>{visibleLimit+=PAGE_SIZE;renderRecipes()});$('favHeader').addEventListener('click',()=>{renderMyRecipes();location.hash='my-recipes'});$('clearFilters').addEventListener('click',()=>{visibleLimit=PAGE_SIZE;state.search='';state.category='all';state.cuisine='all';state.quick=false;state.favsOnly=false;$('recipeSearch').value='';$('cuisineFilter').value='all';$('quickFilter').setAttribute('aria-pressed','false');$('favoritesFilter').setAttribute('aria-pressed','false');renderFilters();renderRecipes()});$('heroRecipe').addEventListener('click',showFeatured);$('tryCooking').addEventListener('click',()=>{showFeatured();openCook('lemon-spinach-pasta')});$('aboutTry').addEventListener('click',()=>{showFeatured();openCook('lemon-spinach-pasta')});$('priceDemo').addEventListener('click',()=>{location.hash='catalog'});$('bonusRecipe').addEventListener('click',()=>{location.hash='recipe=midnight-mushroom-toasts'});$('backCatalog').addEventListener('click',()=>{location.hash='catalog'});$('closeCook').addEventListener('click',closeCook);$('closeShopping').addEventListener('click',closeShopping);$('drawerScrim').addEventListener('click',closeShopping);document.querySelectorAll('.shopping-open').forEach(x=>x.addEventListener('click',openShopping));$('copyShopping').addEventListener('click',copyShopping);$('shareShopping').addEventListener('click',shareShopping);
  document.querySelectorAll('[data-shopping-share]').forEach(link=>link.addEventListener('click',e=>{if(!shoppingShareText()){e.preventDefault();toast('Сначала добавь хотя бы один рецепт');return;}updateShoppingShareLinks();}));$('clearShopping').addEventListener('click',()=>{if(!Object.keys(state.shopping).length)return;if(!window.confirm('Удалить все рецепты из списка покупок?'))return;state.shopping={};state.shopChecked={};persist();updateBadges();renderShopping();if(state.recipe)renderRecipe(state.recipe)});document.addEventListener('keydown',e=>{if(e.key==='Escape'){if(!$('cookOverlay').hidden)closeCook();else if(!$('shoppingDrawer').hidden)closeShopping()}if((e.metaKey||e.ctrlKey)&&e.key.toLowerCase()==='k'){e.preventDefault();location.hash='catalog';setTimeout(()=>$('recipeSearch').focus(),25)}});window.addEventListener('hashchange',route);route();}
