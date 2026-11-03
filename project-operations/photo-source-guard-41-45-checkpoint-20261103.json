@@ -1,0 +1,27 @@
+{
+  "date_utc": "2026-11-03T01:46:56Z",
+  "base_main_sha": "98082e1a43b085a2a61cf1f679901010cceda2c8",
+  "pr": 52,
+  "code_commit": "9ac7f386477450cbb3cb603f301aa31b5ae23390",
+  "changed_file": "tests/recipe-photo-41-45-source-guard.test.cjs",
+  "read_before_work": [
+    "project-operations/registry.json (main)",
+    "project-operations/CURRENT_STATE.md (operations/persistent-state-and-data-plan-20261102; draft)",
+    "project-operations/half-hour-checkpoint.json (automation/half-hour-photo-audit)",
+    "photo-library/half-hour-review-queue.json (automation/half-hour-photo-audit)",
+    "photo-library/ai-recipe-photo-map.json (main)"
+  ],
+  "confirmed": "Main map records regenerated selections for 41 and 44 and original filenames for 42,43,45; regression test committed in draft PR #52.",
+  "test_status": "Not yet executed or confirmed by GitHub Actions; test must be run with node --test tests/recipe-photo-41-45-source-guard.test.cjs",
+  "visual_review": "not performed",
+  "rights_review": "not performed",
+  "remaining_blockers": [
+    "Editorial comparison with full recipes and actual pixels for 41-45",
+    "Commercial rights/approval not established",
+    "Existing test CI may not discover new standalone test"
+  ],
+  "next_task": "Run the Node test in CI, then visually inspect exact selected WebP 41-45 against recipe ingredients; document rejects without replacing or publishing.",
+  "production_modified": false,
+  "merged": false,
+  "paid_calls": false
+}
