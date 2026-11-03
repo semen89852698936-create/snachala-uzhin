@@ -1,0 +1,117 @@
+{
+  "schema_version": 1,
+  "checked_date": "2026-11-03",
+  "scope": "archive candidates 31-35, metadata-only triage",
+  "source_queue": "automation/half-hour-photo-audit/photo-library/half-hour-review-queue.json",
+  "source_checkpoint": "automation/half-hour-photo-audit/project-operations/half-hour-checkpoint.json",
+  "archive_source_pr": 11,
+  "technical_checkpoint_verified": 20,
+  "technical_checkpoint_total": 100,
+  "editorial_approved": 0,
+  "rights_cleared": 0,
+  "method": "Compare recipe titles with source file names and queue licensing labels only. No physical WebP viewed or hashed; no source-page authorship or license verification.",
+  "records": [
+    {
+      "number": 31,
+      "recipe_id": "collection-meat-02-03",
+      "recipe_title": "Свиная вырезка в духовке с горчицей и мёдом",
+      "source_photo_title": "Milano's Café pork loin and veg Russell Street Stroud Gloucestershire England 01.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Milano%27s_Caf%C3%A9_pork_loin_and_veg_Russell_Street_Stroud_Gloucestershire_England_01.jpg",
+      "license_claim": "CC BY-SA 4.0",
+      "risk_note": "Название источника указывает свинину с овощами в кафе, но не подтверждает горчицу, мёд и запекание.",
+      "priority": "medium",
+      "technical_status": "not_checked",
+      "visual_status": "not_reviewed",
+      "rights_status": "not_cleared",
+      "required_actions": [
+        "Inspect physical selected WebP against full recipe and preparation method",
+        "Verify Commons file page author, exact license version, attribution and modification requirements",
+        "Reject or replace image if dish is materially different"
+      ]
+    },
+    {
+      "number": 32,
+      "recipe_id": "collection-meat-02-04",
+      "recipe_title": "Свиная вырезка в духовке с паприкой и чесноком",
+      "source_photo_title": "Pork Chop with sweet potato mash and mushrooms in a demerara sauce. (36249946845).jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Pork_Chop_with_sweet_potato_mash_and_mushrooms_in_a_demerara_sauce._(36249946845).jpg",
+      "license_claim": "CC BY 2.0",
+      "risk_note": "Высокий риск: источник прямо описывает свиную отбивную с пюре из батата, грибами и соусом демерара, а не вырезку с паприкой и чесноком.",
+      "priority": "high",
+      "technical_status": "not_checked",
+      "visual_status": "not_reviewed",
+      "rights_status": "not_cleared",
+      "required_actions": [
+        "Inspect physical selected WebP against full recipe and preparation method",
+        "Verify Commons file page author, exact license version, attribution and modification requirements",
+        "Reject or replace image if dish is materially different"
+      ]
+    },
+    {
+      "number": 33,
+      "recipe_id": "collection-meat-02-05",
+      "recipe_title": "Свиная вырезка в духовке с томатами и базиликом",
+      "source_photo_title": "Milano's Café pork loin and veg Russell Street Stroud Gloucestershire England 02.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Milano%27s_Caf%C3%A9_pork_loin_and_veg_Russell_Street_Stroud_Gloucestershire_England_02.jpg",
+      "license_claim": "CC BY-SA 4.0",
+      "risk_note": "Источник указывает свинину с овощами, но томаты, базилик и способ приготовления не подтверждены.",
+      "priority": "medium",
+      "technical_status": "not_checked",
+      "visual_status": "not_reviewed",
+      "rights_status": "not_cleared",
+      "required_actions": [
+        "Inspect physical selected WebP against full recipe and preparation method",
+        "Verify Commons file page author, exact license version, attribution and modification requirements",
+        "Reject or replace image if dish is materially different"
+      ]
+    },
+    {
+      "number": 34,
+      "recipe_id": "collection-meat-02-06",
+      "recipe_title": "Свиная вырезка в духовке с имбирём и соевым соусом",
+      "source_photo_title": "Milano's Café pork loin and veg Russell Street Stroud Gloucestershire England 03.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Milano%27s_Caf%C3%A9_pork_loin_and_veg_Russell_Street_Stroud_Gloucestershire_England_03.jpg",
+      "license_claim": "CC BY-SA 4.0",
+      "risk_note": "Источник указывает свинину с овощами, но имбирь и соевый соус не подтверждены.",
+      "priority": "medium",
+      "technical_status": "not_checked",
+      "visual_status": "not_reviewed",
+      "rights_status": "not_cleared",
+      "required_actions": [
+        "Inspect physical selected WebP against full recipe and preparation method",
+        "Verify Commons file page author, exact license version, attribution and modification requirements",
+        "Reject or replace image if dish is materially different"
+      ]
+    },
+    {
+      "number": 35,
+      "recipe_id": "collection-meat-02-07",
+      "recipe_title": "Свиная вырезка в духовке с луком и бальзамиком",
+      "source_photo_title": "Baked Pork Chop rice with cheese and tomato sauce.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Baked_Pork_Chop_rice_with_cheese_and_tomato_sauce.jpg",
+      "license_claim": "CC BY-SA 4.0",
+      "risk_note": "Высокий риск: название источника описывает отбивную с рисом, сыром и томатным соусом, а не вырезку с луком и бальзамиком.",
+      "priority": "high",
+      "technical_status": "not_checked",
+      "visual_status": "not_reviewed",
+      "rights_status": "not_cleared",
+      "required_actions": [
+        "Inspect physical selected WebP against full recipe and preparation method",
+        "Verify Commons file page author, exact license version, attribution and modification requirements",
+        "Reject or replace image if dish is materially different"
+      ]
+    }
+  ],
+  "checkpoint": {
+    "files_changed": [
+      "photo-library/archive-rights-gate-31-35-20261103.json"
+    ],
+    "verification": "5 unique records numbered 31-35; all remain blocked pending visual and legal review",
+    "blockers": [
+      "No physical WebP inspection in this stage",
+      "No individual Commons license/author verification",
+      "No full ingredient-list comparison"
+    ],
+    "next_task": "Inspect physical WebP 32 and 35 first, then verify author and exact file-page license; preserve approved copies 6,10,20."
+  }
+}
