@@ -16,7 +16,7 @@ function validatePhotoMap(map) {
     numbers.add(n);
     if (!photo.recipe_id || ids.has(photo.recipe_id)) errors.push('missing/duplicate recipe_id at n=' + n);
     ids.add(photo.recipe_id);
-    if (!photo.path || !/^\\/assets\\/recipes-ai\\/\\d{4}-[a-z0-9-]+\\.webp$/.test(photo.path)) errors.push('invalid asset path at n=' + n);
+    if (!photo.path || !/^\/assets\/recipes-ai\/\d{4}-[a-z0-9-]+\.webp$/.test(photo.path)) errors.push('invalid asset path at n=' + n);
     if (paths.has(photo.path)) errors.push('duplicate asset path: ' + photo.path);
     paths.add(photo.path);
     if (typeof photo.sha !== 'string' || !/^[a-f0-9]{40}$/.test(photo.sha)) errors.push('invalid Git blob SHA at n=' + n);
@@ -30,7 +30,7 @@ if (require.main === module) {
   const file = process.argv[2] || path.join(__dirname, '..', 'photo-library', 'ai-recipe-photo-map.json');
   try {
     const errors = validatePhotoMap(JSON.parse(fs.readFileSync(file, 'utf8')));
-    if (errors.length) { console.error(errors.join('\\n')); process.exitCode=1; }
+    if (errors.length) { console.error(errors.join('\n')); process.exitCode=1; }
     else console.log('PASS: 1001 unique photo mappings, paths, IDs and metadata structurally valid. NOT a file/visual/license check.');
   } catch (err) { console.error(err.message); process.exitCode=1; }
 }
