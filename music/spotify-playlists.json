@@ -10,103 +10,143 @@
       "proposedTracks": [
         {
           "position": 1,
-          "title": "Chan Chan",
-          "artist": "Buena Vista Social Club"
+          "title": "September",
+          "artist": "Earth, Wind & Fire",
+          "bpm": 126,
+          "bpmSourceUrl": "https://songbpm.com/%40earth-wind-fire/september-emq5y"
         },
         {
           "position": 2,
-          "title": "Put Your Records On",
-          "artist": "Corinne Bailey Rae"
+          "title": "Canned Heat",
+          "artist": "Jamiroquai",
+          "bpm": 128,
+          "bpmSourceUrl": "https://songbpm.com/%40jamiroquai/canned-heat"
         },
         {
           "position": 3,
-          "title": "Sway",
-          "artist": "Michael Bublé"
+          "title": "Don't Start Now",
+          "artist": "Dua Lipa",
+          "bpm": 124,
+          "bpmSourceUrl": "https://songbpm.com/%40dua-lipa/don-t-start-now"
         },
         {
           "position": 4,
-          "title": "Mas Que Nada",
-          "artist": "Sérgio Mendes & Brasil '66"
+          "title": "Physical",
+          "artist": "Dua Lipa",
+          "bpm": 147,
+          "bpmSourceUrl": "https://songbpm.com/%40dua-lipa/physical"
         },
         {
           "position": 5,
-          "title": "Lovely Day",
-          "artist": "Bill Withers"
+          "title": "Shut Up and Dance",
+          "artist": "WALK THE MOON",
+          "bpm": 128,
+          "bpmSourceUrl": "https://songbpm.com/%40walk-the-moon/shut-up-and-dance"
         },
         {
           "position": 6,
-          "title": "Sunday Morning",
-          "artist": "Maroon 5"
+          "title": "Wake Me Up",
+          "artist": "Avicii",
+          "bpm": 124,
+          "bpmSourceUrl": "https://songbpm.com/%40avicii/wake-me-up"
         },
         {
           "position": 7,
-          "title": "Beyond the Sea",
-          "artist": "Bobby Darin"
+          "title": "Blinding Lights",
+          "artist": "The Weeknd",
+          "bpm": 171,
+          "bpmSourceUrl": "https://songbpm.com/%40the-weeknd/blinding-lights"
         },
         {
           "position": 8,
-          "title": "Je veux",
-          "artist": "Zaz"
+          "title": "One More Time",
+          "artist": "Daft Punk",
+          "bpm": 123,
+          "bpmSourceUrl": "https://songbpm.com/%40daft-punk/one-more-time-j82rc"
         },
         {
           "position": 9,
-          "title": "Treasure",
-          "artist": "Bruno Mars"
+          "title": "Hung Up",
+          "artist": "Madonna",
+          "bpm": 125,
+          "bpmSourceUrl": "https://songbpm.com/%40madonna/hung-up-wv1qh"
         },
         {
           "position": 10,
-          "title": "Can't Take My Eyes Off You",
-          "artist": "Frankie Valli"
+          "title": "Rain On Me",
+          "artist": "Lady Gaga",
+          "bpm": 123,
+          "bpmSourceUrl": "https://songbpm.com/%40lady-gaga/rain-on-me-MIsgrl26GW"
         },
         {
           "position": 11,
-          "title": "Better Together",
-          "artist": "Jack Johnson"
+          "title": "Around the World",
+          "artist": "Daft Punk",
+          "bpm": 121,
+          "bpmSourceUrl": "https://metronome.enyotechnologies.com/songs/"
         },
         {
           "position": 12,
-          "title": "I'm Yours",
-          "artist": "Jason Mraz"
+          "title": "Rather Be",
+          "artist": "Clean Bandit feat. Jess Glynne",
+          "bpm": 121,
+          "bpmSourceUrl": "https://metronome.enyotechnologies.com/songs/tempo/120-150-bpm/"
         },
         {
           "position": 13,
-          "title": "Budapest",
-          "artist": "George Ezra"
+          "title": "One Kiss",
+          "artist": "Calvin Harris & Dua Lipa",
+          "bpm": 124,
+          "bpmSourceUrl": "https://metronome.enyotechnologies.com/songs/"
         },
         {
           "position": 14,
-          "title": "New Light",
-          "artist": "John Mayer"
+          "title": "Call Me Maybe",
+          "artist": "Carly Rae Jepsen",
+          "bpm": 120,
+          "bpmSourceUrl": "https://metronome.enyotechnologies.com/songs/"
         },
         {
           "position": 15,
-          "title": "Riptide",
-          "artist": "Vance Joy"
+          "title": "Can't Get You Out of My Head",
+          "artist": "Kylie Minogue",
+          "bpm": 126,
+          "bpmSourceUrl": "https://metronome.enyotechnologies.com/songs/"
         },
         {
           "position": 16,
-          "title": "September",
-          "artist": "Earth, Wind & Fire"
+          "title": "Let's Groove",
+          "artist": "Earth, Wind & Fire",
+          "bpm": 125,
+          "bpmSourceUrl": "https://metronome.enyotechnologies.com/songs/"
         },
         {
           "position": 17,
-          "title": "Virtual Insanity",
-          "artist": "Jamiroquai"
+          "title": "Levels",
+          "artist": "Avicii",
+          "bpm": 126,
+          "bpmSourceUrl": "https://metronome.enyotechnologies.com/songs/"
         },
         {
           "position": 18,
-          "title": "Signed, Sealed, Delivered (I'm Yours)",
-          "artist": "Stevie Wonder"
+          "title": "Celebration",
+          "artist": "Kool & The Gang",
+          "bpm": 123,
+          "bpmSourceUrl": "https://metronome.enyotechnologies.com/songs/"
         },
         {
           "position": 19,
-          "title": "Smooth",
-          "artist": "Santana feat. Rob Thomas"
+          "title": "Latch",
+          "artist": "Disclosure feat. Sam Smith",
+          "bpm": 122,
+          "bpmSourceUrl": "https://metronome.enyotechnologies.com/songs/"
         },
         {
           "position": 20,
-          "title": "Quelqu'un m'a dit",
-          "artist": "Carla Bruni"
+          "title": "Uptown Girl",
+          "artist": "Billy Joel",
+          "bpm": 129,
+          "bpmSourceUrl": "https://metronome.enyotechnologies.com/songs/"
         }
       ]
     },
@@ -119,102 +159,142 @@
         {
           "position": 1,
           "title": "Don't Know Why",
-          "artist": "Norah Jones"
+          "artist": "Norah Jones",
+          "bpm": 88,
+          "bpmSourceUrl": "https://songbpm.com/%40norah-jones/don-t-know-why-KsAG76HsEn"
         },
         {
           "position": 2,
-          "title": "By Your Side",
-          "artist": "Sade"
+          "title": "At Last",
+          "artist": "Etta James",
+          "bpm": 87,
+          "bpmSourceUrl": "https://songbpm.com/%40etta-james/at-last"
         },
         {
           "position": 3,
-          "title": "My Funny Valentine",
-          "artist": "Chet Baker"
+          "title": "The Look of Love",
+          "artist": "Diana Krall",
+          "bpm": 93,
+          "bpmSourceUrl": "https://getsongbpm.com/album/the-look-of-love/rng6"
         },
         {
           "position": 4,
-          "title": "Come Away With Me",
-          "artist": "Norah Jones"
+          "title": "Open",
+          "artist": "Rhye",
+          "bpm": 91,
+          "bpmSourceUrl": "https://songbpm.com/%40rhye/open"
         },
         {
           "position": 5,
-          "title": "At Last",
-          "artist": "Etta James"
+          "title": "Apocalypse",
+          "artist": "Cigarettes After Sex",
+          "bpm": 94,
+          "bpmSourceUrl": "https://www.snaplyrics.com/song/apocalypse-cigarettes-after-sex-bpm-key"
         },
         {
           "position": 6,
-          "title": "The Look of Love",
-          "artist": "Diana Krall"
+          "title": "Nothing's Gonna Hurt You Baby",
+          "artist": "Cigarettes After Sex",
+          "bpm": 97,
+          "bpmSourceUrl": "https://songbpm.com/%40cigarettes-after-sex/nothing-s-gonna-hurt-you-baby-yy-FeIWho8"
         },
         {
           "position": 7,
-          "title": "Let's Stay Together",
-          "artist": "Al Green"
+          "title": "No Ordinary Love",
+          "artist": "Sade",
+          "bpm": 83,
+          "bpmSourceUrl": "https://supersimpledrum.com/songs/no-ordinary-love-sade"
         },
         {
           "position": 8,
-          "title": "Dream a Little Dream of Me",
-          "artist": "Ella Fitzgerald & Louis Armstrong"
+          "title": "K.",
+          "artist": "Cigarettes After Sex",
+          "bpm": 94,
+          "bpmSourceUrl": "https://songbpm.com/%40cigarettes-after-sex/k"
         },
         {
           "position": 9,
-          "title": "Smooth Operator",
-          "artist": "Sade"
+          "title": "Put Your Records On",
+          "artist": "Corinne Bailey Rae",
+          "bpm": 96,
+          "bpmSourceUrl": "https://songbpm.com/%40corinne-bailey-rae/put-your-records-on"
         },
         {
           "position": 10,
-          "title": "The Girl from Ipanema",
-          "artist": "Stan Getz, João Gilberto & Astrud Gilberto"
+          "title": "Fallin'",
+          "artist": "Alicia Keys",
+          "bpm": 96,
+          "bpmSourceUrl": "https://songbpm.com/%40alicia-keys/fallin"
         },
         {
           "position": 11,
-          "title": "The Way You Look Tonight",
-          "artist": "Frank Sinatra"
+          "title": "Kiss Me",
+          "artist": "Sixpence None The Richer",
+          "bpm": 100,
+          "bpmSourceUrl": "https://songbpm.com/%40sixpence-none-the-richer/kiss-me"
         },
         {
           "position": 12,
-          "title": "My Baby Just Cares for Me",
-          "artist": "Nina Simone"
+          "title": "Lovely Day",
+          "artist": "Bill Withers",
+          "bpm": 98,
+          "bpmSourceUrl": "https://songbpm.com/%40bill-withers/lovely-day"
         },
         {
           "position": 13,
-          "title": "La Vie en Rose",
-          "artist": "Louis Armstrong"
+          "title": "Landslide",
+          "artist": "Fleetwood Mac",
+          "bpm": 90,
+          "bpmSourceUrl": "https://metronome.enyotechnologies.com/songs/"
         },
         {
           "position": 14,
-          "title": "L-O-V-E",
-          "artist": "Nat King Cole"
+          "title": "Use Me",
+          "artist": "Bill Withers",
+          "bpm": 88,
+          "bpmSourceUrl": "https://metronome.enyotechnologies.com/songs/"
         },
         {
           "position": 15,
-          "title": "Baby I'm a Fool",
-          "artist": "Melody Gardot"
+          "title": "Virtual Insanity",
+          "artist": "Jamiroquai",
+          "bpm": 92,
+          "bpmSourceUrl": "https://metronome.enyotechnologies.com/songs/"
         },
         {
           "position": 16,
-          "title": "Hey Laura",
-          "artist": "Gregory Porter"
+          "title": "Killing Me Softly with His Song",
+          "artist": "Fugees",
+          "bpm": 92,
+          "bpmSourceUrl": "https://songbpm.com/%40fugees/killing-me-softly-with-his-song"
         },
         {
           "position": 17,
-          "title": "Everlasting Love",
-          "artist": "Jamie Cullum"
+          "title": "Adore You",
+          "artist": "Harry Styles",
+          "bpm": 99,
+          "bpmSourceUrl": "https://songbpm.com/%40harry-styles/adore-you"
         },
         {
           "position": 18,
-          "title": "Misty",
-          "artist": "Sarah Vaughan"
+          "title": "Fragile",
+          "artist": "Sting",
+          "bpm": 82,
+          "bpmSourceUrl": "https://songbpm.com/%40sting/fragile"
         },
         {
           "position": 19,
-          "title": "Waltz for Debby",
-          "artist": "Bill Evans"
+          "title": "Cantaloupe Island",
+          "artist": "Herbie Hancock",
+          "bpm": 100,
+          "bpmSourceUrl": "https://metronome.enyotechnologies.com/songs/"
         },
         {
           "position": 20,
-          "title": "So Nice",
-          "artist": "Stacey Kent"
+          "title": "Sunflower",
+          "artist": "Post Malone & Swae Lee",
+          "bpm": 90,
+          "bpmSourceUrl": "https://songbpm.com/%40post-malone/sunflower---spider-man-into-the-spider-verse"
         }
       ]
     },
@@ -226,103 +306,143 @@
       "proposedTracks": [
         {
           "position": 1,
-          "title": "Open",
-          "artist": "Rhye"
+          "title": "Come Away With Me",
+          "artist": "Norah Jones",
+          "bpm": 77,
+          "bpmSourceUrl": "https://songbpm.com/%40norah-jones/come-away-with-me-jmMFuAIKAa"
         },
         {
           "position": 2,
-          "title": "Apocalypse",
-          "artist": "Cigarettes After Sex"
+          "title": "Teardrop",
+          "artist": "Massive Attack",
+          "bpm": 77,
+          "bpmSourceUrl": "https://www.snaplyrics.com/song/teardrop-massive-attack-bpm-key"
         },
         {
           "position": 3,
-          "title": "Intro",
-          "artist": "The xx"
+          "title": "In the Waiting Line",
+          "artist": "Zero 7",
+          "bpm": 79,
+          "bpmSourceUrl": "https://www.beatport.com/track/in-the-waiting-line/26928285"
         },
         {
           "position": 4,
-          "title": "Wicked Game",
-          "artist": "Chris Isaak"
+          "title": "Roads",
+          "artist": "Portishead",
+          "bpm": 76,
+          "bpmSourceUrl": "https://songbpm.com/%40portishead/roads"
         },
         {
           "position": 5,
-          "title": "Tadow",
-          "artist": "Masego & FKJ"
+          "title": "The Rip",
+          "artist": "Portishead",
+          "bpm": 75,
+          "bpmSourceUrl": "https://songbpm.com/%40portishead/the-rip"
         },
         {
           "position": 6,
-          "title": "Retrograde",
-          "artist": "James Blake"
+          "title": "Numb",
+          "artist": "Portishead",
+          "bpm": 78,
+          "bpmSourceUrl": "https://songbpm.com/%40portishead/numb"
         },
         {
           "position": 7,
-          "title": "Fade Into You",
-          "artist": "Mazzy Star"
+          "title": "Dream A Little Dream Of Me",
+          "artist": "Ella Fitzgerald",
+          "bpm": 79,
+          "bpmSourceUrl": "https://songbpm.com/%40ella-fitzgerald/dream-a-little-dream-of-me"
         },
         {
           "position": 8,
-          "title": "Nothing's Gonna Hurt You Baby",
-          "artist": "Cigarettes After Sex"
+          "title": "Fade Into You",
+          "artist": "Mazzy Star",
+          "bpm": 52,
+          "bpmSourceUrl": "https://songbpm.com/%40mazzy-star/fade-into-you-d35ke"
         },
         {
           "position": 9,
-          "title": "Show Me How",
-          "artist": "Men I Trust"
+          "title": "Moon River",
+          "artist": "Audrey Hepburn",
+          "bpm": 71,
+          "bpmSourceUrl": "https://songbpm.com/%40audrey-hepburn/moon-river-wRdo0lPCtS"
         },
         {
           "position": 10,
-          "title": "No Ordinary Love",
-          "artist": "Sade"
+          "title": "My Funny Valentine - Instrumental",
+          "artist": "Chet Baker",
+          "bpm": 78,
+          "bpmSourceUrl": "https://songbpm.com/%40chet-baker/my-funny-valentine---instrumental"
         },
         {
           "position": 11,
-          "title": "Angels",
-          "artist": "The xx"
+          "title": "Sea of Love",
+          "artist": "Cat Power",
+          "bpm": 78,
+          "bpmSourceUrl": "https://songbpm.com/%40cat-power/sea-of-love"
         },
         {
           "position": 12,
-          "title": "Teardrop",
-          "artist": "Massive Attack"
+          "title": "Thinking Out Loud",
+          "artist": "Ed Sheeran",
+          "bpm": 79,
+          "bpmSourceUrl": "https://songbpm.com/%40ed-sheeran/thinking-out-loud"
         },
         {
           "position": 13,
-          "title": "Strong",
-          "artist": "London Grammar"
+          "title": "Feeling Good",
+          "artist": "Nina Simone",
+          "bpm": 79,
+          "bpmSourceUrl": "https://songbpm.com/%40nina-simone/feeling-good"
         },
         {
           "position": 14,
-          "title": "Video Games",
-          "artist": "Lana Del Rey"
+          "title": "Careless Whisper",
+          "artist": "George Michael",
+          "bpm": 76,
+          "bpmSourceUrl": "https://songbpm.com/%40george-michael/careless-whisper-070279f9-c0db-4144-ba58-72f1d19181c6"
         },
         {
           "position": 15,
-          "title": "Glory Box",
-          "artist": "Portishead"
+          "title": "Lean on Me",
+          "artist": "Bill Withers",
+          "bpm": 75,
+          "bpmSourceUrl": "https://metronome.enyotechnologies.com/songs/"
         },
         {
           "position": 16,
-          "title": "Riverside",
-          "artist": "Agnes Obel"
+          "title": "Let Her Go",
+          "artist": "Passenger",
+          "bpm": 76,
+          "bpmSourceUrl": "https://metronome.enyotechnologies.com/songs/"
         },
         {
           "position": 17,
-          "title": "Heartbeats",
-          "artist": "José González"
+          "title": "No Surprises",
+          "artist": "Radiohead",
+          "bpm": 76,
+          "bpmSourceUrl": "https://songbpm.com/%40radiohead/no-surprises"
         },
         {
           "position": 18,
-          "title": "K.",
-          "artist": "Cigarettes After Sex"
+          "title": "Make You Feel My Love",
+          "artist": "Adele",
+          "bpm": 77,
+          "bpmSourceUrl": "https://songbpm.com/%40adele/make-you-feel-my-love"
         },
         {
           "position": 19,
-          "title": "Into Dust",
-          "artist": "Mazzy Star"
+          "title": "Skinny Love",
+          "artist": "Bon Iver",
+          "bpm": 76,
+          "bpmSourceUrl": "https://songbpm.com/%40bon-iver/skinny-love"
         },
         {
           "position": 20,
-          "title": "All I Need",
-          "artist": "Air"
+          "title": "I Will Follow You into the Dark",
+          "artist": "Death Cab for Cutie",
+          "bpm": 78,
+          "bpmSourceUrl": "https://songbpm.com/%40death-cab-for-cutie/i-will-follow-you-into-the-dark"
         }
       ]
     }

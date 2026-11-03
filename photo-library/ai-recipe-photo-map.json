@@ -224,8 +224,8 @@
       "n": 32,
       "recipe_id": "collection-meat-02-04",
       "path": "/assets/recipes-ai/0032-collection-meat-02-04.webp",
-      "sha": "d0c8a8fe75917dbc778081e86479e14c451c6d4f",
-      "bytes": 112712
+      "sha": "b440073a7c0008b4cc700bfd515d89d4d4f13e49",
+      "bytes": 160692
     },
     {
       "n": 33,
@@ -259,8 +259,8 @@
       "n": 37,
       "recipe_id": "collection-meat-02-09",
       "path": "/assets/recipes-ai/0037-collection-meat-02-09.webp",
-      "sha": "30859788d43631efce13e0d9f81fef93a52e6022",
-      "bytes": 121142
+      "sha": "a2c0bcdab7d6e5735e2f5a8224e11d0be79f8240",
+      "bytes": 175586
     },
     {
       "n": 38,
@@ -819,15 +819,15 @@
       "n": 117,
       "recipe_id": "collection-meat-10-09",
       "path": "/assets/recipes-ai/0117-collection-meat-10-09.webp",
-      "sha": "5a709ee6c2f54ab944f08c43e869d7693d4171c1",
-      "bytes": 104678
+      "sha": "66f24a03a8ed0d9daf5863bb638de4c3c8272e78",
+      "bytes": 116978
     },
     {
       "n": 118,
       "recipe_id": "collection-meat-10-10",
       "path": "/assets/recipes-ai/0118-collection-meat-10-10.webp",
-      "sha": "882a58d0b667ae81a3112b39ad9f376d16de5e1f",
-      "bytes": 107212
+      "sha": "138ae60b95d3bae714fd1d55445383c269cd78af",
+      "bytes": 117738
     },
     {
       "n": 119,
@@ -6447,71 +6447,71 @@
       "n": 921,
       "recipe_id": "collection-breakfast-03-01",
       "path": "/assets/recipes-ai/0921-collection-breakfast-03-01.webp",
-      "sha": "b609d14bf05bf30243474a02b33cff50cc5cd5d6",
-      "bytes": 109572
+      "sha": "662ff6bdace6d458d6c1090d6904c56e88ef31b9",
+      "bytes": 150856
     },
     {
       "n": 922,
       "recipe_id": "collection-breakfast-03-02",
       "path": "/assets/recipes-ai/0922-collection-breakfast-03-02.webp",
-      "sha": "953a677847e82b49e349dc6c6b2081af842bbf39",
-      "bytes": 107636
+      "sha": "020177f7c163d07bc2610104e442b61d5b14a558",
+      "bytes": 113208
     },
     {
       "n": 923,
       "recipe_id": "collection-breakfast-03-03",
       "path": "/assets/recipes-ai/0923-collection-breakfast-03-03.webp",
-      "sha": "14fc3a190756ee97487db8ef940c9b2ba4fd4fbe",
-      "bytes": 101342
+      "sha": "672ebd04122b7d48275dc1aee88652f59b388a30",
+      "bytes": 158472
     },
     {
       "n": 924,
       "recipe_id": "collection-breakfast-03-04",
       "path": "/assets/recipes-ai/0924-collection-breakfast-03-04.webp",
-      "sha": "5367f990d8cf2bf67ad95f7e31a7b350c350a84b",
-      "bytes": 119640
+      "sha": "eadefe19d7f2ae023a905ef738c08213b7a08e9a",
+      "bytes": 108394
     },
     {
       "n": 925,
       "recipe_id": "collection-breakfast-03-05",
       "path": "/assets/recipes-ai/0925-collection-breakfast-03-05.webp",
-      "sha": "fb33b691f58e6f1958a9c3ac097eebe5869b2c32",
-      "bytes": 113730
+      "sha": "ee0e35beab4153b0eb343a20ff95a1b99c859b85",
+      "bytes": 165368
     },
     {
       "n": 926,
       "recipe_id": "collection-breakfast-03-06",
       "path": "/assets/recipes-ai/0926-collection-breakfast-03-06.webp",
-      "sha": "cacaad6a14c4d778d0ee5f603391fe1a8740e827",
-      "bytes": 114852
+      "sha": "7ddc3535540cb59354fb539acd7c9ae28f4a5326",
+      "bytes": 135948
     },
     {
       "n": 927,
       "recipe_id": "collection-breakfast-03-07",
       "path": "/assets/recipes-ai/0927-collection-breakfast-03-07.webp",
-      "sha": "ec7568d75adadce1344a4a94214abd1ed25df9a2",
-      "bytes": 112718
+      "sha": "3f4e2f1c5d3b565e8c0b7e8c26c83429c1aa49cc",
+      "bytes": 96534
     },
     {
       "n": 928,
       "recipe_id": "collection-breakfast-03-08",
       "path": "/assets/recipes-ai/0928-collection-breakfast-03-08.webp",
-      "sha": "e80c09214e16c01438f7cf0a8961835c04b24ec1",
-      "bytes": 115944
+      "sha": "9008c7cff3971ee21cbd812bc0f948acd877283c",
+      "bytes": 139202
     },
     {
       "n": 929,
       "recipe_id": "collection-breakfast-03-09",
       "path": "/assets/recipes-ai/0929-collection-breakfast-03-09.webp",
-      "sha": "8713555517ceb621d5c95ded4a3630f9eb0b906b",
-      "bytes": 102770
+      "sha": "ea1f42a59ea97287ab28cad4d4c9bc7c45feab2a",
+      "bytes": 133378
     },
     {
       "n": 930,
       "recipe_id": "collection-breakfast-03-10",
       "path": "/assets/recipes-ai/0930-collection-breakfast-03-10.webp",
-      "sha": "f88d6ef0605d2bf69d1c94f2dfae782e9df5a6e1",
-      "bytes": 134742
+      "sha": "737ff523c728781415fa861a4091d3d70d20316d",
+      "bytes": 115772
     },
     {
       "n": 931,
