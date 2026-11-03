@@ -23,5 +23,20 @@
   "next_task": "Run the Node test in CI, then visually inspect exact selected WebP 41-45 against recipe ingredients; document rejects without replacing or publishing.",
   "production_modified": false,
   "merged": false,
-  "paid_calls": false
+  "paid_calls": false,
+  "followup_20261103": {
+    "changed_file": ".github/workflows/verify-recipe-photo-41-45.yml",
+    "code_commit": "097b588513d9bc6fd228b5230afb0fd1b9d70f4b",
+    "action": "Added read-only GitHub Actions CI to execute the previously unexecuted Node source-selection guard",
+    "checks": "Workflow commit created; run result not yet confirmed",
+    "blockers": [
+      "CI result pending",
+      "Pixel-to-ingredient editorial review 41-45 pending",
+      "Rights clearance pending"
+    ],
+    "next_task": "Verify CI run result, then visually compare physical WebP 41-45 with recipes without paid generation",
+    "production_modified": false,
+    "paid_calls": false,
+    "merged": false
+  }
 }
