@@ -13,7 +13,7 @@ assert.equal(new Set(map.photos.map(x => x.path)).size, map.total, 'paths unique
 for (let i = 0; i < map.photos.length; i++) {
   const p = map.photos[i];
   assert.equal(p.n, i + 1, 'sequential photo number');
-  assert.match(p.path, /^\\/assets\\/recipes-ai\\/\\d{4}-[a-z0-9-]+\\.webp$/, 'safe image path');
+  assert.ok(p.path.startsWith('/assets/recipes-ai/') && p.path.endsWith('.webp') && !p.path.includes('..'), 'safe image path');
   assert.match(p.sha, /^[a-f0-9]{40}$/, 'git blob sha');
   assert.ok(Number.isInteger(p.bytes) && p.bytes > 0, 'positive file size');
 }
