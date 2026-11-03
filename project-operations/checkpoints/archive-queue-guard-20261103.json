@@ -1,5 +1,5 @@
 {
-  "date": "2026-11-03",
+  "date": "2026-11-04",
   "scope": "archive half-hour queue consistency; no image approval",
   "branch": "automation/archive-queue-consistency-20261103",
   "source_ref": "automation/half-hour-photo-audit",
@@ -16,25 +16,29 @@
     "26a13f0d5dd9f20d506d3166737e961a51c07e81",
     "ba33435e9f7fbb6abdf85979ffc045c699382ffb",
     "c9edba21cbf7846dc87e5a4f1ba2a649f762af3a",
-    "6da976b7707c7c06222c293e66259b8fb29188cf"
+    "6da976b7707c7c06222c293e66259b8fb29188cf",
+    "31b71b61fc7d61268a63e5b6698326b8a1570bd5",
+    "e42622ef25411d4a4717d48ccf348518010ab8e7"
   ],
   "checks": {
     "github_file_creation": "confirmed",
-    "python_unittest": "not_executed_container_redis_ResponseError",
+    "python_unittest": "not_executed_in_this_run",
     "real_queue_validation": "not_executed",
     "github_file_updates": "confirmed"
   },
   "blockers": [
-    "Container execution failed with redis ResponseError during this run; new tests not executed",
+    "10 Python regression methods not executed in this run",
     "Individual rights and visual recipe matching remain unverified"
   ],
-  "next": "Run 8 regression methods with python3 -m unittest discover -s tests -p test_half_hour_queue.py; validate live queue/checkpoint; then inspect actual WebP and rights independently",
+  "next": "Run 10 unittest methods, validate the live queue and checkpoint, then review actual WebP plus rights independently",
   "safety": "No merge, no production, no paid APIs",
   "changes": [
     "Reject non-object JSON roots without AttributeError",
     "Reject unsupported technical statuses and unchecked records carrying technical SHA",
     "Reject malformed or non-passing checkpoint result entries",
-    "Add four regression test methods covering those cases"
+    "Add four regression test methods covering those cases",
+    "Prevent TypeError on array/object queue number; reject invalid SHA length/type/alphabet",
+    "Add two regression methods with malformed number and SHA cases"
   ],
-  "current_head_before_checkpoint": "6da976b7707c7c06222c293e66259b8fb29188cf"
+  "current_head_before_checkpoint": "e42622ef25411d4a4717d48ccf348518010ab8e7"
 }
