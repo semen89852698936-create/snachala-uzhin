@@ -33,3 +33,19 @@ test('41-45 retain their exact selected versions, including regenerated 41 and 4
     assert.ok(fs.existsSync(path.join(root, photo.path.slice(1))), 'physical WebP missing: ' + filename);
   }
 });
+
+test('approved site selections 6, 10 and 20 remain pinned independently of archive copies', () => {
+  const approved = [
+    [6, 'med-fish', '0006-med-fish.webp', '3f81081c840ef0aa42cb48c0181aab1b0cd47c34'],
+    [10, 'pancakes', '0010-pancakes.webp', '367bd80873ecb2d261af0d35936f225d086ad04a'],
+    [20, 'syrniki', '0020-syrniki.webp', '67107fb663d9ab49fdf0e3a50b20053dc1bf5018'],
+  ];
+  for (const [n, recipeId, filename, blobSha] of approved) {
+    const photo = map.photos.find(p => p.n === n);
+    assert.ok(photo, 'missing approved selection ' + n);
+    assert.equal(photo.recipe_id, recipeId);
+    assert.equal(photo.path, '/assets/recipes-ai/' + filename);
+    assert.equal(photo.sha, blobSha);
+    assert.ok(fs.existsSync(path.join(root, photo.path.slice(1))), 'missing selected WebP: ' + filename);
+  }
+});
