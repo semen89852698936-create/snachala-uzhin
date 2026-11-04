@@ -51,6 +51,11 @@ const assert=require('node:assert/strict');
       if(overflow>2){
         const offenders=await page.evaluate(()=>[...document.querySelectorAll('body *')].map(el=>({element:el,rect:el.getBoundingClientRect()})).filter(x=>x.rect.width>0&&x.rect.right>innerWidth+2).sort((a,b)=>b.rect.right-a.rect.right).slice(0,12).map(x=>({tag:x.element.tagName,id:x.element.id,class:String(x.element.className).slice(0,85),right:Math.round(x.rect.right),left:Math.round(x.rect.left),width:Math.round(x.rect.width)})));
         console.log('MOBILE OVERFLOW DIAGNOSTIC',JSON.stringify(offenders));
+        const header=await page.evaluate(()=>{
+          const sels=['.container','.header','.header-inner','.header-inner>.brand','.du-brand-words','.du-brand-mark','.header-actions','.shopping-open','.shop-button-label','#categoryFilters','.category-filters'];
+          return sels.map(sel=>{const el=document.querySelector(sel);if(!el)return {sel,missing:true};const r=el.getBoundingClientRect(),c=getComputedStyle(el);return {sel,left:Math.round(r.left),right:Math.round(r.right),width:Math.round(r.width),display:c.display,grid:c.gridTemplateColumns,minWidth:c.minWidth,flex:c.flex,overflow:c.overflow};});
+        });
+        console.log('MOBILE HEADER BOXES',JSON.stringify(header));
       }
       assert.ok(overflow<=2,'Mobile horizontal overflow: '+overflow);
     }
