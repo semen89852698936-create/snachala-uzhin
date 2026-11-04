@@ -20,16 +20,20 @@ def sign(data,secret):
 def verify(data,secret,signature):
     return isinstance(signature,str) and len(signature)==64 and hmac.compare_digest(sign(data,secret),signature.lower())
 
-def payment_url(order,*,merchant_url,sys_code,secret,return_url):
+def payment_url(order,*,merchant_url,sys_code,secret,return_url,notification_url):
     url=urlparse(merchant_url)
     if url.scheme!='https' or not url.hostname or not url.hostname.endswith('.payform.ru') or url.username or url.password or url.query: raise ValueError('invalid merchant URL')
     if not sys_code: raise ValueError('missing sys code')
-    if not return_url.startswith('https://'): raise ValueError('HTTPS return URL needed')
+    returning=urlparse(return_url)
+    callback=urlparse(notification_url)
+    if returning.scheme!='https' or not returning.netloc or returning.username or returning.password: raise ValueError('HTTPS return URL needed')
+    if callback.scheme!='https' or callback.netloc!=returning.netloc or callback.path!='/webhooks/prodamus' or callback.query or callback.fragment: raise ValueError('trusted webhook URL required')
     if order.get('product')!=PRODUCT or order.get('amount_kopeks')!=PRICE_KOPEKS: raise ValueError('wrong product/price')
     data={'do':'pay','sys':sys_code,'order_id':order['order_num'],
           'customer_email':email_key(order['email']),
           'products':[{'name':'СНАЧАЛА УЖИН. Бессрочный доступ к 1001 рецепту','price':'1900.00','quantity':'1','sku':PRODUCT}],
-          'urlReturn':return_url,'urlSuccess':return_url}
+          'urlReturn':return_url,'urlSuccess':return_url, 'urlNotification':notification_url,
+          'currency':'rub','payments_limit':'1'}
     flat={k:v for k,v in data.items() if k!='products'}
     for i,p in enumerate(data['products']):
         for k,v in p.items():flat[f'products[{i}][{k}]']=v
