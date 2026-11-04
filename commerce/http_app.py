@@ -60,6 +60,7 @@ class CommerceApp:
         self.store=Store(db_path)
         self.auth=EmailAuth(self.store)
         self.private_html=Path(private_html).resolve()
+        if not isinstance(session_key,bytes) or len(session_key)<32:raise ValueError('session secret must be 32+ bytes')
         self.session_key=session_key
         self.base_url=base_url.rstrip('/')
         parsed=urlparse(self.base_url)
@@ -109,7 +110,7 @@ class CommerceApp:
             if method=='GET' and path in ('/','/index.html'):
                 public=ROOT/'commerce'/'public'/'index.html'
                 return self.respond(start,'200 OK',public.read_bytes(),'text/html; charset=utf-8')
-            if method=='GET' and path=='/app':
+            if method=='GET' and path in ('/app','/full-catalog/index.html'):
                 email=self.current_email(environ)
                 if not email or not self.store.has_access(email):return self.respond(start,'403 Forbidden',{'error':'purchase_required'})
                 return self.respond(start,'200 OK',self.private_html.read_bytes(),'text/html; charset=utf-8')
