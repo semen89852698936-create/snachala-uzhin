@@ -17,7 +17,7 @@ def extract(source,destination):
     photos=[r.get('photo') for r in recipes]
     if len(set(photos))!=1001 or any(
         not isinstance(photo,str) or not re.fullmatch(
-            r'/assets/recipes-ai/[A-Za-z0-9_.-]+\\.webp',photo)
+            r'/assets/recipes-ai/[A-Za-z0-9_.-]+\.webp',photo)
         for photo in photos):
         raise ValueError('all 1001 recipe photos must use unique protected WebP paths')
     out=Path(destination)
