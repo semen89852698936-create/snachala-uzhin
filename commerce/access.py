@@ -32,6 +32,8 @@ class Store:
             email TEXT NOT NULL, product TEXT NOT NULL,
             granted_at INTEGER NOT NULL, revoked_at INTEGER,
             PRIMARY KEY(email,product));
+          CREATE TABLE IF NOT EXISTS revoked_sessions (
+            token_hash TEXT PRIMARY KEY, expires_at INTEGER NOT NULL);
         """)
     def create_order(self,email):
         email=email_key(email)
@@ -63,6 +65,19 @@ class Store:
     def revoke(self,email):
         with self.db: self.db.execute('UPDATE entitlements SET revoked_at=? WHERE email=? AND product=?',
             (int(time.time()),email_key(email),PRODUCT))
+    def revoke_session(self,token):
+        # Remember revocation for the maximum session lifetime; raw cookies are not stored.
+        digest=hashlib.sha256(token.encode()).hexdigest()
+        now=int(time.time())
+        with self.db:
+            self.db.execute('DELETE FROM revoked_sessions WHERE expires_at<?',(now,))
+            self.db.execute('INSERT OR REPLACE INTO revoked_sessions(token_hash,expires_at) VALUES (?,?)',
+                            (digest,now+604800))
+    def session_revoked(self,token):
+        digest=hashlib.sha256(token.encode()).hexdigest()
+        row=self.db.execute('SELECT 1 FROM revoked_sessions WHERE token_hash=? AND expires_at>?',
+                            (digest,int(time.time()))).fetchone()
+        return row is not None
 
 def _b64(data): return base64.urlsafe_b64encode(data).rstrip(b'=').decode()
 def _unb64(s): return base64.urlsafe_b64decode(s+'='*(-len(s)%4))
@@ -71,7 +86,8 @@ def issue_session(email,key,ttl=86400):
     # A session is not proof of a paid order, check Store.has_access for every request.
     if not isinstance(key,bytes) or len(key)<32: raise ValueError('weak key')
     if not isinstance(ttl,int) or not 60<=ttl<=604800: raise ValueError('bad TTL')
-    body=_b64(json.dumps({'email':email_key(email),'exp':int(time.time())+ttl},separators=(',',':')).encode())
+    body=_b64(json.dumps({'email':email_key(email),'exp':int(time.time())+ttl,
+                          'nonce':secrets.token_hex(16)},separators=(',',':')).encode())
     return body+'.'+_b64(hmac.new(key,body.encode(),hashlib.sha256).digest())
 
 def session_email(token,key):
