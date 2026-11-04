@@ -18,3 +18,7 @@ jobs:
         with:
           python-version: '3.11'
       - run: python -m unittest discover -s commerce -p 'test_*.py' -v
+
+      - run: python -m compileall -q commerce
+      - run: python commerce/private_catalog.py index.html /tmp/commerce-test-private/app.html
+      - run: test -s /tmp/commerce-test-private/app.html
