@@ -5,6 +5,8 @@ on:
     paths:
       - '.github/workflows/render-exact-landing.yml'
       - 'scripts/render-exact-landing.cjs'
+  pull_request:
+    branches: [feature/snachala-uzhin-sales-landing-20261103]
   workflow_dispatch:
 permissions:
   contents: write
