@@ -89,12 +89,13 @@ class IntegrationTests(unittest.TestCase):
             self.assertNotIn(b'PRIVATE_CATALOG_1001',get('/index.html')[1])
         finally:app.store.db.close()
     def test_multipart_payload_is_nested(self):
+        import email
         boundary='testBOUNDARY'
+        crlf=chr(13)+chr(10)
         parts=[]
         for key,value in [('order_num','SU-example'),('products[0][sku]',PRODUCT),('products[0][price]','1900.00')]:
-            parts.append(('--'+boundary+'\\r\\nContent-Disposition: form-data; name="'+key+'"\\r\\n\\r\\n'+value+'\\r\\n').encode().replace(b'\\\\r',b'\\r').replace(b'\\\\n',b'\\n'))
-        payload=b''.join(parts)+('--'+boundary+'--\\r\\n').encode()
-        payload=payload.replace(b'\\\\r',b'\\r').replace(b'\\\\n',b'\\n')
+            parts.append(('--'+boundary+crlf+'Content-Disposition: form-data; name="'+key+'"'+crlf+crlf+value+crlf).encode())
+        payload=b''.join(parts)+('--'+boundary+'--'+crlf).encode()
         result=read_multipart({'CONTENT_TYPE':'multipart/form-data; boundary='+boundary,
                 'CONTENT_LENGTH':str(len(payload)),'wsgi.input':io.BytesIO(payload)})
         self.assertEqual(result['products'][0]['sku'],PRODUCT)
