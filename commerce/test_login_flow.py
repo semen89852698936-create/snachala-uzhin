@@ -4,6 +4,7 @@ from pathlib import Path
 from urllib.parse import urlencode
 from unittest.mock import patch
 from commerce.http_app import CommerceApp
+from commerce.access import issue_session
 
 KEY=b'0123456789abcdef0123456789abcdef'
 class LoginFlowTests(unittest.TestCase):
@@ -69,6 +70,28 @@ class LoginFlowTests(unittest.TestCase):
         self.assertEqual(first['status'],'200 OK')
         self.assertEqual(first['body'],second['body'])
         self.assertEqual(len(self.sent),1)
+    def test_logout_revokes_valid_session_not_only_browser_cookie(self):
+        self.pay()
+        token=issue_session('buyer@example.ru',KEY)
+        self.assertEqual(self.request('GET','/app',cookie=token)['status'],'200 OK')
+        logout=self.request('POST','/api/logout',{},cookie=token)
+        self.assertEqual(logout['status'],'200 OK')
+        self.assertIn('Max-Age=0',logout['headers']['Set-Cookie'])
+        self.assertTrue(self.app.store.session_revoked(token))
+        # Even reusing a stolen old cookie must not restore access.
+        self.assertEqual(self.request('GET','/app',cookie=token)['status'],'403 Forbidden')
+        state=json.loads(self.request('GET','/api/me',cookie=token)['body'])
+        self.assertFalse(state['authenticated'])
+        self.assertFalse(state['has_access'])
+        # The purchase right survives signing out, and a fresh login can still work.
+        self.assertTrue(self.app.store.has_access('buyer@example.ru'))
+        newer=issue_session('buyer@example.ru',KEY)
+        self.assertNotEqual(token,newer)
+        self.assertEqual(self.request('GET','/app',cookie=newer)['status'],'200 OK')
+    def test_sessions_have_unique_random_nonce(self):
+        first=issue_session('buyer@example.ru',KEY)
+        second=issue_session('buyer@example.ru',KEY)
+        self.assertNotEqual(first,second)
     def test_checkout_still_disabled_and_no_order_created(self):
         response=self.request('POST','/api/orders',{'email':'buyer@example.ru'})
         self.assertEqual(response['status'],'503 Service Unavailable')
