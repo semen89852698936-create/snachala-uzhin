@@ -237,6 +237,13 @@ footer p{color:#715D64;font-size:.83rem;margin:11px auto 0}
  .music{padding:70px 0}.editorial-epilogue{padding:63px 0}
 }
 @media(max-width:430px){.editorial-hero h1{font-size:clamp(3.3rem,13.5vw,4.7rem)}.editorial-hero .btn{width:100%;font-size:.93rem;padding-inline:12px}.editorial-hero-figure img{height:405px}.editorial-features-lead h2{font-size:clamp(6.3rem,27vw,9rem)}.editorial-recipe img{height:310px}}
+
+/* Browser review: bring copy to the top of the composition, keep an intentional portrait crop. */
+@media(min-width:741px){
+ .editorial-hero-grid{align-items:start}
+ .editorial-hero-content{padding-top:68px}
+ .editorial-hero-figure img{height:640px;aspect-ratio:auto;object-fit:cover;object-position:center 48%}
+}
 </style>
 </head>
 <body>
