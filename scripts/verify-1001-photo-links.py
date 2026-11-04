@@ -67,7 +67,7 @@ for url in ("index.html","full-catalog/index.html"):
         assert "<summary>20 песен" in card,(url,key,"visible track count")
         assert "du-bpm-explainer" not in card,(url,key,"technical explanation remains")
         assert "Песни с указанным темпом" not in card,(url,key,"technical caption remains")
-        rows=re.findall(r'<li class="du-bpm-track">.*?<strong>(.*?)</strong><span>(.*?)</span>.*?<span class="du-bpm-pill">(\\d+) BPM</span></li>',card,re.S)
+        rows=re.findall(r'<li class="du-bpm-track">.*?<strong>(.*?)</strong><span>(.*?)</span>.*?<span class="du-bpm-pill">(\d+) BPM</span></li>',card,re.S)
         expected=playlists[key]["proposedTracks"]
         assert len(rows)==len(expected)==20,(url,key,"exact 20 tracks")
         assert [(unescape(t),unescape(a),int(b)) for t,a,b in rows]==[(x["title"],x["artist"],x["bpm"]) for x in expected],(url,key,"playlist metadata mismatch")
