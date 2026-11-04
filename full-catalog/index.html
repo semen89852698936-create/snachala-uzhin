@@ -637,6 +637,29 @@ body:not(.du-evening-mode) .du-evening-back{display:none!important}
 @media(max-width:1080px){.du-my-recipes .recipe-grid{gap:18px}}
 @media(max-width:680px){.du-my-recipes .du-personal-photo{height:225px}.du-my-recipes .du-personal-main{padding:18px}.du-my-recipes .du-personal-note{padding:16px 18px 18px}.du-my-recipes .du-personal-controls button{flex:1 1 130px}}
 .du-ingredient-search-tip{font:600 14px/1.5 Manrope,Inter,Arial,sans-serif;color:#704c5d;margin:10px 0 18px}
+
+/* MY_RECIPES_TABS_V1: favorites, notes and locally saved menus */
+.du-my-tabs{display:flex;flex-wrap:wrap;gap:11px;margin:0 0 23px}
+.du-my-tab{border:1px solid #dec7cc;background:#fff9f7;color:#754455;border-radius:999px;padding:12px 20px;font:700 15px/1.2 Manrope,Inter,Arial,sans-serif;min-height:45px}
+.du-my-tab[aria-pressed="true"]{background:#783d54;color:#fff;border-color:#783d54}
+.du-my-tab:focus-visible{outline:3px solid #bc6e89;outline-offset:3px}
+.du-my-menu-panel{display:grid;gap:20px}
+.du-my-menu-panel[hidden]{display:none}
+.du-my-menu-form{border:1px solid #dec7cc;border-radius:19px;background:#fffaf6;padding:22px}
+.du-my-menu-form label{font-size:15px;color:#684958;display:block;margin-bottom:12px}
+.du-my-menu-form-row{display:flex;flex-wrap:wrap;gap:12px}
+.du-my-menu-form-row input{flex:1 1 220px;min-width:0;border:1px solid #d6c0c4;border-radius:12px;padding:11px 14px;min-height:48px;font-size:16px}
+.du-my-menu-form-row button{flex:0 0 auto;min-height:48px}
+.du-my-menu-form p{color:#75666a;font-size:14px;line-height:1.6;margin:12px 0 0}
+.du-my-menu-list{display:grid;gap:13px}
+.du-saved-menu{display:flex;justify-content:space-between;gap:16px;align-items:center;background:#fffaf6;border:1px solid #e4d0cd;border-radius:18px;padding:18px 20px}
+.du-saved-menu-title{min-width:0}
+.du-saved-menu-title strong{display:block;font-size:21px;line-height:1.25;overflow-wrap:anywhere;color:#65354a}
+.du-saved-menu-title small{display:block;font-size:13px;line-height:1.5;margin-top:6px;color:#77666b}
+.du-saved-menu-actions{display:flex;flex-wrap:wrap;gap:9px}
+.du-saved-menu-actions button{border:1px solid #dec7cc;border-radius:11px;padding:11px 15px;background:#f9f0eb;color:#663b4d;font:700 14px/1.2 Manrope,Inter,Arial,sans-serif;min-height:44px}
+.du-saved-menu-actions button:first-child{background:#783d54;color:white;border-color:#783d54}
+@media(max-width:680px){.du-my-tab{font-size:14px;flex:1 1 auto;padding:10px 12px}.du-saved-menu{display:block}.du-saved-menu-actions{margin-top:16px}.du-saved-menu-actions button{flex:1 1 125px}.du-my-menu-form{padding:17px}.du-my-menu-form-row button{width:100%}}
 </style>
 </head><body>
 <div class="demo-strip"><span class="demo-dot"></span> ОТКРЫТАЯ КОЛЛЕКЦИЯ · 1000 РЕЦЕПТОВ + 1 СЕКРЕТНЫЙ · ГОТОВЬТЕ ВМЕСТЕ</div>
@@ -735,9 +758,25 @@ body:not(.du-evening-mode) .du-evening-back{display:none!important}
 <section class="section du-my-recipes" id="my-recipes" aria-labelledby="myRecipesTitle"><div class="container">
   <div class="du-section-top"><div class="du-eyebrow">МОЯ КОЛЛЕКЦИЯ / ВСЁ ПОД РУКОЙ</div><div class="du-section-heading"><h2 id="myRecipesTitle">Мои <em>рецепты</em></h2><p>Любимые блюда и заметки к ним. Чтобы в следующий раз готовить именно так, как понравилось вам.</p></div></div>
   <div class="du-my-summary"><strong id="myRecipesCount" aria-live="polite">0 сохранённых рецептов</strong><span class="du-my-sync-note">Пока избранное и заметки сохраняются только в этом браузере. Синхронизация между устройствами появится с личным кабинетом.</span></div>
+  <div class="du-my-tabs" role="group" aria-label="Разделы моих рецептов">
+    <button type="button" class="du-my-tab" data-my-tab="favorites" aria-pressed="true">♡ Любимые</button>
+    <button type="button" class="du-my-tab" data-my-tab="notes" aria-pressed="false">✎ Мои заметки</button>
+    <button type="button" class="du-my-tab" data-my-tab="menus" aria-pressed="false">▤ Мои меню</button>
+  </div>
   <div class="recipe-grid" id="myRecipesGrid" aria-label="Сохранённые рецепты"></div>
   <div class="empty-state du-my-empty" id="myRecipesEmpty" hidden><span aria-hidden="true">♡</span><h3>Здесь появится ваша коллекция</h3><p>Нажмите на сердечко у понравившегося блюда. Оно сразу сохранится в разделе «Мои рецепты».</p><a class="du-btn du-btn-outline" href="#catalog">Выбрать рецепты ↗</a></div>
-</div></section>
+
+  <div class="du-my-menu-panel" id="myRecipesMenusPanel" hidden>
+    <div class="du-my-menu-form">
+      <label for="myMenuName"><strong>Сохранить меню</strong> · из блюд, добавленных в список продуктов</label>
+      <div class="du-my-menu-form-row">
+        <input type="text" id="myMenuName" maxlength="60" placeholder="Например, ужин в пятницу" autocomplete="off">
+        <button class="du-btn du-btn-primary" type="button" id="mySaveMenu">Сохранить меню</button>
+      </div>
+      <p>Состав блюд и количество порций сохраняются в этом браузере. Готовое меню можно снова добавить в список продуктов.</p>
+    </div>
+    <div id="mySavedMenusList" class="du-my-menu-list" aria-live="polite"></div>
+  </div></div></section>
 <section class="about-section du-how" id="about"><div class="container about-inner"><div><div class="eyebrow on-dark"><span></span> РЕЦЕПТЫ, КОТОРЫЕ ПОМОГАЮТ</div><h2><em>Больше быть вместе</em></h2><p>Выбираете меню, получаете общий список покупок, меняете порции и готовите шаг за шагом. Если нужно, таймер прямо на экране напомнит, когда пора продолжать.</p><button type="button" class="du-btn du-btn-primary" id="aboutTry">Попробовать режим готовки ↗</button></div><div class="feature-list"><div><b>01</b><span><strong>Меню под настроение</strong><small>Ужин начинается с желания, а не со списка ингредиентов.</small></span></div><div><b>02</b><span><strong>Покупки одним списком</strong><small>Продукты из разных рецептов суммируются автоматически.</small></span></div><div><b>03</b><span><strong>Готовим вдвоём</strong><small>Один экран последовательно ведёт через всё меню.</small></span></div><div><b>04</b><span><strong>Шаги и таймеры</strong><small>Большой текст, минимум суеты и прогресс под рукой.</small></span></div></div></div></section>
 <section class="du-airfryer-section" id="airfryer" aria-labelledby="airfryerTitle">
  <div class="container du-airfryer-layout">
@@ -852,7 +891,7 @@ const photo=id=>(id.startsWith('/assets/')||id.startsWith('assets/'))?id:(/^http
 const catName=id=>id==='bonus'?'Бонус №1001':(CATEGORIES.find(x=>x.id===id)?.name||id);
 const byId=id=>RECIPES.find(x=>x.id===id);
 const PAGE_SIZE=24;let visibleLimit=PAGE_SIZE;
-const state={category:'all',cuisine:'all',search:'',quick:false,favsOnly:false,recipe:null,servings:get('servings',{}),favorites:get('favorites',[]),recipeNotes:get('recipeNotes',{}),shopping:get('shopping',{}),shopChecked:get('shopChecked',{}),ingredientChecked:get('ingredientChecked',{}),cookSteps:get('cookSteps',{}),cookIndex:0,timerEnd:0,timerDuration:0,timerRemaining:0,timerHandle:null,timerForStep:-1,toastTimer:null};
+const state={category:'all',cuisine:'all',search:'',quick:false,favsOnly:false,recipe:null,servings:get('servings',{}),favorites:get('favorites',[]),recipeNotes:get('recipeNotes',{}),myRecipesTab:'favorites',shopping:get('shopping',{}),shopChecked:get('shopChecked',{}),ingredientChecked:get('ingredientChecked',{}),cookSteps:get('cookSteps',{}),cookIndex:0,timerEnd:0,timerDuration:0,timerRemaining:0,timerHandle:null,timerForStep:-1,toastTimer:null};
 function toast(message){const el=$('toast');el.textContent=message;el.classList.add('show');clearTimeout(state.toastTimer);state.toastTimer=setTimeout(()=>el.classList.remove('show'),3600)}
 function countLabel(num,words){const m=num%100;const n=num%10;return num+' '+(m>10&&m<20?words[2]:n===1?words[0]:n>=2&&n<=4?words[1]:words[2])}
 function servings(recipe){return Math.min(8,Math.max(1,Number(state.servings[recipe.id]||recipe.base)))}
@@ -860,12 +899,71 @@ function quantity(item,r,portions){if(item.amount===0)return 'по вкусу';l
 function labelPhoto(r){return `--photo:url('${photo(r.photo)}');--fallback:url('${asset(r.category)}')`}
 function persist(){put('favorites',state.favorites);put('shopping',state.shopping);put('shopChecked',state.shopChecked);put('servings',state.servings);put('ingredientChecked',state.ingredientChecked);put('cookSteps',state.cookSteps)}
 function toggleFav(id){state.favorites=state.favorites.includes(id)?state.favorites.filter(x=>x!==id):[...state.favorites,id];persist();updateBadges();renderRecipes();renderMyRecipes();if(state.recipe===id)renderRecipe(id);toast(state.favorites.includes(id)?'Добавлено в избранное ♡':'Убрано из избранного')}
+
+/* MY_RECIPES_MENUS_V1 */
+function readSavedMenus(){
+  const raw=get('savedMenus',[]);
+  if(!Array.isArray(raw))return [];
+  return raw.filter(m=>m&&typeof m.name==='string'&&Array.isArray(m.items))
+    .map(m=>({id:String(m.id).slice(0,100),name:m.name.slice(0,60),
+      createdAt:String(m.createdAt||''),items:m.items.filter(x=>Array.isArray(x)&&byId(x[0])&&Number.isFinite(Number(x[1]))&&Number(x[1])>0).map(x=>[x[0],Math.min(8,Math.max(1,Number(x[1])))])}))
+    .filter(m=>m.items.length>0).slice(0,30);
+}
+function renderSavedMenus(){
+  const list=$('mySavedMenusList');
+  if(!list)return;
+  const menus=readSavedMenus();
+  if(!menus.length){list.innerHTML='<div class="empty-state du-my-empty"><span aria-hidden="true">▤</span><h3>Пока нет сохранённых меню</h3><p>Добавьте блюда в список продуктов, придумайте название и сохраните готовое сочетание.</p></div>';return;}
+  list.innerHTML=menus.map(m=>'<article class="du-saved-menu"><div class="du-saved-menu-title"><strong>'+safe(m.name)+'</strong><small>'+m.items.length+' блюд · '+m.items.map(([id])=>safe(byId(id)?.title||'')).join(', ')+'</small></div><div class="du-saved-menu-actions"><button type="button" data-menu-load="'+safe(m.id)+'">В список продуктов</button><button type="button" data-menu-delete="'+safe(m.id)+'">Удалить</button></div></article>').join('');
+  list.querySelectorAll('[data-menu-load]').forEach(button=>button.addEventListener('click',()=>{
+    const menu=readSavedMenus().find(x=>x.id===button.dataset.menuLoad);
+    if(!menu)return;
+    menu.items.forEach(([id,p])=>{if(byId(id))state.shopping[id]=p});
+    persist();updateBadges();renderShopping();
+    toast('Блюда меню добавлены в список продуктов');
+    openShopping();
+  }));
+  list.querySelectorAll('[data-menu-delete]').forEach(button=>button.addEventListener('click',()=>{
+    const menu=readSavedMenus().find(x=>x.id===button.dataset.menuDelete);
+    if(!menu)return;
+    if(!confirm('Удалить меню «'+menu.name+'»?'))return;
+    put('savedMenus',readSavedMenus().filter(x=>x.id!==menu.id));
+    renderSavedMenus();
+    toast('Меню удалено');
+  }));
+}
+function saveMyMenu(){
+  const name=$('myMenuName').value.trim().replace(/\s+/g,' ').slice(0,60);
+  if(!name){toast('Введите название меню');$('myMenuName').focus();return;}
+  const items=Object.entries(state.shopping).filter(([id,p])=>byId(id)&&Number.isFinite(Number(p))&&Number(p)>0).map(([id,p])=>[id,Math.max(1,Math.min(8,Number(p)))]);
+  if(!items.length){toast('Сначала добавьте блюда в список продуктов');return;}
+  const menus=readSavedMenus();
+  const id='menu-'+Date.now()+'-'+Math.random().toString(36).slice(2,8);
+  menus.unshift({id,name,createdAt:new Date().toISOString(),items});
+  put('savedMenus',menus.slice(0,30));
+  $('myMenuName').value='';
+  renderSavedMenus();
+  toast('Меню сохранено в этом браузере');
+}
+function selectMyRecipesTab(tab){
+  if(!['favorites','notes','menus'].includes(tab))return;
+  state.myRecipesTab=tab;
+  renderMyRecipes();
+}
 function renderMyRecipes(){
   const grid=$('myRecipesGrid');
   if(!grid)return;
-  const selected=[...new Set(state.favorites)].map(byId).filter(Boolean);
-  $('myRecipesCount').textContent=countLabel(selected.length,['сохранённый рецепт','сохранённых рецепта','сохранённых рецептов']);
-  $('myRecipesEmpty').hidden=selected.length>0;
+  const tab=state.myRecipesTab||'favorites';
+  document.querySelectorAll('[data-my-tab]').forEach(btn=>btn.setAttribute('aria-pressed',String(btn.dataset.myTab===tab)));
+  const selected=tab==='notes'?Object.keys(state.recipeNotes||{}).filter(id=>String(state.recipeNotes[id]||'').trim()).map(byId).filter(Boolean):[...new Set(state.favorites)].map(byId).filter(Boolean);
+  const isMenus=tab==='menus';
+  $('myRecipesCount').textContent=isMenus?countLabel(readSavedMenus().length,['сохранённое меню','сохранённых меню','сохранённых меню']):tab==='notes'?countLabel(selected.length,['заметка','заметки','заметок']):countLabel(selected.length,['сохранённый рецепт','сохранённых рецепта','сохранённых рецептов']);
+  $('myRecipesMenusPanel').hidden=!isMenus;
+  grid.hidden=isMenus;
+  $('myRecipesEmpty').hidden=isMenus||selected.length>0;
+  $('myRecipesEmpty').querySelector('h3').textContent=tab==='notes'?'Заметок пока нет':'Здесь появится ваша коллекция';
+  $('myRecipesEmpty').querySelector('p').textContent=tab==='notes'?'Откройте вкладку «Любимые» и сохраните заметку к любому блюду.':'Нажмите на сердечко у понравившегося блюда. Оно сразу сохранится в разделе «Мои рецепты».';
+  if(isMenus){grid.innerHTML='';renderSavedMenus();return;}
   grid.innerHTML=selected.map(r=>`<article class="recipe-card du-personal-card">
     <button type="button" class="du-personal-open" data-my-open="${safe(r.id)}" aria-label="Открыть рецепт ${safe(r.title)}">
       <span class="du-personal-photo photo" style="${labelPhoto(r)}"><img loading="lazy" alt="" src="${photo(r.photo)}" onerror="this.remove()"></span>
@@ -883,6 +981,7 @@ function renderMyRecipes(){
     state.recipeNotes[id]=note.value.trim().slice(0,600);
     put('recipeNotes',state.recipeNotes);
     toast('Заметка сохранена');
+    if(state.myRecipesTab==='notes')renderMyRecipes();
   }));
   grid.querySelectorAll('[data-my-remove]').forEach(b=>b.addEventListener('click',()=>toggleFav(b.dataset.myRemove)));
 }
@@ -944,7 +1043,7 @@ function showHome(){state.recipe=null;$('homeView').hidden=false;$('recipeView')
 function showRecipe(id){const r=byId(id);if(!r){location.hash='catalog';return;}$('homeView').hidden=true;$('recipeView').hidden=false;renderRecipe(id);window.scrollTo({top:0,behavior:'instant'})}
 function route(){const hash=decodeURIComponent(location.hash.slice(1));document.querySelectorAll('[data-nav="airfryer"],[data-quick-airfryer],[data-quick-evening]').forEach(a=>{const on=a.hasAttribute('data-quick-evening')?(hash==='evening'||hash==='evening-music'||hash==='eveningBuilder'):hash==='airfryer';if(on)a.setAttribute('aria-current','page');else a.removeAttribute('aria-current');});document.body.classList.toggle('du-evening-mode',hash==='evening');if(hash.startsWith('recipe=')){showRecipe(hash.slice(7));return;}showHome();if(hash==='catalog'||hash==='categories'||hash==='evening'||hash==='about'||hash==='pricing'||hash==='music'||hash==='my-recipes'||hash==='airfryer'){requestAnimationFrame(() => document.getElementById(hash)?.scrollIntoView({behavior:'smooth',block:'start'}));}else if(hash==='home'){requestAnimationFrame(()=>window.scrollTo({top:0,behavior:'smooth'}))}}
 function showFeatured(){location.hash='recipe=lemon-spinach-pasta';}
-function init(){renderCategories();renderFilters();renderCuisines();renderRecipes();updateBadges();renderMyRecipes();$('recipeSearch').addEventListener('input',e=>{state.search=e.target.value;visibleLimit=PAGE_SIZE;renderRecipes()});$('cuisineFilter').addEventListener('change',e=>{state.cuisine=e.target.value;visibleLimit=PAGE_SIZE;renderRecipes()});$('quickFilter').addEventListener('click',()=>{state.quick=!state.quick;visibleLimit=PAGE_SIZE;$('quickFilter').setAttribute('aria-pressed',state.quick);renderRecipes()});$('favoritesFilter').addEventListener('click',()=>{state.favsOnly=!state.favsOnly;visibleLimit=PAGE_SIZE;$('favoritesFilter').setAttribute('aria-pressed',state.favsOnly);renderRecipes()});$('loadMoreRecipes').addEventListener('click',()=>{visibleLimit+=PAGE_SIZE;renderRecipes()});$('clearFilters').addEventListener('click',()=>{visibleLimit=PAGE_SIZE;state.search='';state.category='all';state.cuisine='all';state.quick=false;state.favsOnly=false;$('recipeSearch').value='';$('cuisineFilter').value='all';$('quickFilter').setAttribute('aria-pressed','false');$('favoritesFilter').setAttribute('aria-pressed','false');renderFilters();renderRecipes()});$('heroRecipe').addEventListener('click',showFeatured);$('tryCooking').addEventListener('click',()=>{showFeatured();openCook('lemon-spinach-pasta')});$('aboutTry').addEventListener('click',()=>{showFeatured();openCook('lemon-spinach-pasta')});$('priceDemo').addEventListener('click',()=>{location.hash='catalog'});$('bonusRecipe').addEventListener('click',()=>{location.hash='recipe=midnight-mushroom-toasts'});$('backCatalog').addEventListener('click',()=>{location.hash='catalog'});$('closeCook').addEventListener('click',closeCook);$('closeShopping').addEventListener('click',closeShopping);$('drawerScrim').addEventListener('click',closeShopping);document.querySelectorAll('.shopping-open').forEach(x=>x.addEventListener('click',openShopping));$('copyShopping').addEventListener('click',copyShopping);$('shareShopping').addEventListener('click',shareShopping);
+function init(){renderCategories();renderFilters();renderCuisines();renderRecipes();updateBadges();renderMyRecipes();document.querySelectorAll('[data-my-tab]').forEach(button=>button.addEventListener('click',()=>selectMyRecipesTab(button.dataset.myTab)));$('mySaveMenu').addEventListener('click',saveMyMenu);$('recipeSearch').addEventListener('input',e=>{state.search=e.target.value;visibleLimit=PAGE_SIZE;renderRecipes()});$('cuisineFilter').addEventListener('change',e=>{state.cuisine=e.target.value;visibleLimit=PAGE_SIZE;renderRecipes()});$('quickFilter').addEventListener('click',()=>{state.quick=!state.quick;visibleLimit=PAGE_SIZE;$('quickFilter').setAttribute('aria-pressed',state.quick);renderRecipes()});$('favoritesFilter').addEventListener('click',()=>{state.favsOnly=!state.favsOnly;visibleLimit=PAGE_SIZE;$('favoritesFilter').setAttribute('aria-pressed',state.favsOnly);renderRecipes()});$('loadMoreRecipes').addEventListener('click',()=>{visibleLimit+=PAGE_SIZE;renderRecipes()});$('clearFilters').addEventListener('click',()=>{visibleLimit=PAGE_SIZE;state.search='';state.category='all';state.cuisine='all';state.quick=false;state.favsOnly=false;$('recipeSearch').value='';$('cuisineFilter').value='all';$('quickFilter').setAttribute('aria-pressed','false');$('favoritesFilter').setAttribute('aria-pressed','false');renderFilters();renderRecipes()});$('heroRecipe').addEventListener('click',showFeatured);$('tryCooking').addEventListener('click',()=>{showFeatured();openCook('lemon-spinach-pasta')});$('aboutTry').addEventListener('click',()=>{showFeatured();openCook('lemon-spinach-pasta')});$('priceDemo').addEventListener('click',()=>{location.hash='catalog'});$('bonusRecipe').addEventListener('click',()=>{location.hash='recipe=midnight-mushroom-toasts'});$('backCatalog').addEventListener('click',()=>{location.hash='catalog'});$('closeCook').addEventListener('click',closeCook);$('closeShopping').addEventListener('click',closeShopping);$('drawerScrim').addEventListener('click',closeShopping);document.querySelectorAll('.shopping-open').forEach(x=>x.addEventListener('click',openShopping));$('copyShopping').addEventListener('click',copyShopping);$('shareShopping').addEventListener('click',shareShopping);
  document.querySelectorAll('[data-shopping-share]').forEach(link=>link.addEventListener('click',e=>{if(!shoppingShareText()){e.preventDefault();toast('Сначала добавь хотя бы один рецепт');return;}updateShoppingShareLinks();}));$('clearShopping').addEventListener('click',()=>{if(!Object.keys(state.shopping).length)return;if(!window.confirm('Удалить все рецепты из списка покупок?'))return;state.shopping={};state.shopChecked={};persist();updateBadges();renderShopping();if(state.recipe)renderRecipe(state.recipe)});document.addEventListener('keydown',e=>{if(e.key==='Escape'){if(!$('cookOverlay').hidden)closeCook();else if(!$('shoppingDrawer').hidden)closeShopping()}if((e.metaKey||e.ctrlKey)&&e.key.toLowerCase()==='k'){e.preventDefault();location.hash='catalog';setTimeout(()=>$('recipeSearch').focus(),25)}});window.addEventListener('hashchange',route);route();}
 init();
 </script><script>'use strict';
