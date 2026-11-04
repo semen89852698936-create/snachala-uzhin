@@ -4,7 +4,7 @@ Never put the output inside the served document root or commit it to GitHub.
 """
 import argparse,json,re
 from pathlib import Path
-SCRIPT_RE=re.compile(r'<script\\s+id="recipeData"\\s+type="application/json">(.*?)</script>',re.S)
+SCRIPT_RE=re.compile(r'<script\s+id="recipeData"\s+type="application/json">(.*?)</script>',re.S)
 def extract(source,destination):
     html=Path(source).read_text(encoding='utf-8')
     matches=list(SCRIPT_RE.finditer(html))
