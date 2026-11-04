@@ -70,5 +70,20 @@ for(const path of ['index.html','full-catalog/index.html']){
   shopState.shopping[ragout.id]=ragout.base;
   const full=vm.runInContext('aggregates()',shopEnv);
   assert.equal(full.length,ragout.ingredients.length,path+': full recipe must not double-count missing-only item');
+  // Meat + potato queries must recognize grammatical forms of proteins, and
+  // provide honest separate-dish suggestions when no combined recipe exists.
+  for(const [protein,potato] of [['говядина','картофель'],['курица','картофель'],['индейка','картофель']]){
+    const input=parts(protein+', '+potato);
+    const proteinRecipes=recipes.filter(r=>hasAll(r,[protein]));
+    const potatoRecipes=recipes.filter(r=>hasAll(r,[potato]));
+    assert.ok(proteinRecipes.length>=20,path+': missing protein alias '+protein);
+    assert.ok(potatoRecipes.length>=20,path+': missing potato alias');
+    const candidates=rank(recipes,input,true);
+    assert.ok(candidates.some(e=>hasAll(e.recipe,[protein])),path+': no protein suggestions '+protein);
+    assert.ok(candidates.some(e=>hasAll(e.recipe,[potato])),path+': no potato suggestions '+protein);
+    assert.ok(html.includes('Блюда с продуктом «'),path+': pairing UI missing');
+    assert.ok(html.includes('В коллекции пока нет одного рецепта'),path+': honest pairing label missing');
+    assert.ok(html.includes("state.category='all';state.cuisine='all'"),path+': existing search filters not reset');
+  }
   console.log('PASS',path,recipes.length,'recipes; all terms:',totalAll.length,'pantry ready:',matches.filter(x=>!x.missing.length).length,'near matches:',matches.filter(x=>x.missing.length).length);
 }
