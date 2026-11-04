@@ -35,6 +35,8 @@ const fs=require('fs');
     if(overview.steps!==5||overview.ordinal!==5||overview.placeholders!==0)
       throw Error('Focaccia overview still contains fake step photos '+JSON.stringify(overview));
     if(overview.width>viewport.width+1)throw Error('Overview overflow '+route+' '+viewport.name+' '+overview.width);
+    const overviewImage='exports/recipe-editorial-overview-'+(route==='index.html'?'main':'full')+'-'+viewport.name+'.png';
+    await page.locator('#recipeDetail .recipe-panel-grid').screenshot({path:overviewImage,animations:'disabled',timeout:10000});
     await page.locator('#startCookingBottom').click();
     await page.locator('#cookContent .er-cook-grid').waitFor({timeout:8000});
     const first=await page.evaluate(()=>({
