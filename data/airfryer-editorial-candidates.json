@@ -1,0 +1,156 @@
+{
+  "schema": "airfryer-editorial-draft-v1",
+  "status": "editorial candidates only; NOT published, photos not yet approved, not experimentally verified by our team",
+  "servings": 2,
+  "quality_rules": [
+    "Only recipes formulated for forced-air cooking, not oven-temperature conversion.",
+    "Single layer; split batches when basket is too small.",
+    "Times are starting ranges: appliance, thickness and preheat change cooking time.",
+    "Food safety target: poultry 74 C, fish 63 C (FoodSafety.gov); check with a probe.",
+    "Each recipe requires a matching original or appropriately licensed WebP photo before publication."
+  ],
+  "sources": [
+    "https://www.bbcgoodfood.com/recipes/air-fryer-salmon",
+    "https://www.bbcgoodfood.com/recipes/air-fryer-potato-wedges",
+    "https://tollbit.bbcgoodfood.com/premium/air-fryer-chicken-breasts-2",
+    "https://www.foodsafety.gov/food-safety-charts/safe-minimum-internal-temperatures"
+  ],
+  "recipes": [
+    {
+      "id": "af-salmon-lemon-herbs-2",
+      "category": "Рыба и морепродукты",
+      "title": "Лосось с лимоном и травами в аэрогриле",
+      "ingredients": [
+        [
+          "филе лосося",
+          "2 × 130 г"
+        ],
+        [
+          "оливковое масло",
+          "1 ч. л."
+        ],
+        [
+          "сушёный укроп",
+          "1/2 ч. л."
+        ],
+        [
+          "лимон",
+          "1/2 шт."
+        ],
+        [
+          "соль, чёрный перец",
+          "по вкусу"
+        ]
+      ],
+      "prep_minutes": 5,
+      "temperature_c": 180,
+      "cook_minutes": [
+        8,
+        12
+      ],
+      "preheat": "По инструкции к модели; при холодном старте время может увеличиться",
+      "basket": "Два филе в один слой с зазором; не накрывать воздуховоды",
+      "turn": "Необязательно; проверить готовность после 8 минут",
+      "steps": [
+        "Обсушить оба филе, тонко смазать маслом и приправить солью, перцем и укропом.",
+        "Уложить в корзину одним слоем, оставить промежуток для потока воздуха.",
+        "Готовить при 180 °C около 8-10 минут; для толстого филе проверять и добавлять время небольшими интервалами.",
+        "Проверить термометром середину наиболее толстого участка: безопасный ориентир для рыбы 63 °C. Подать с долькой лимона."
+      ],
+      "photo_webp": null,
+      "photo_status": "required",
+      "reference": "https://www.bbcgoodfood.com/recipes/air-fryer-salmon"
+    },
+    {
+      "id": "af-chicken-paprika-2",
+      "category": "Птица",
+      "title": "Куриная грудка с паприкой в аэрогриле",
+      "ingredients": [
+        [
+          "куриное филе",
+          "2 шт. по 150-180 г"
+        ],
+        [
+          "растительное масло",
+          "2 ч. л."
+        ],
+        [
+          "сладкая паприка",
+          "1 ч. л."
+        ],
+        [
+          "сушёный чеснок",
+          "1/2 ч. л."
+        ],
+        [
+          "соль, перец",
+          "по вкусу"
+        ]
+      ],
+      "prep_minutes": 7,
+      "temperature_c": 180,
+      "cook_minutes": [
+        18,
+        23
+      ],
+      "preheat": "При необходимости разогреть по инструкции производителя",
+      "basket": "Два филе примерно равной толщины одним слоем; не укладывать друг на друга",
+      "turn": "Перевернуть примерно через 10 минут",
+      "steps": [
+        "Выровнять толщину филе без превращения его в тонкие отбивные, обсушить.",
+        "Смешать масло и приправы, распределить по филе со всех сторон.",
+        "Готовить при 180 °C, перевернуть через 10 минут; начиная с 18-й минуты измерять температуру.",
+        "Снимать с нагрева только после достижения 74 °C в самой толстой части; дать мясу отдохнуть несколько минут."
+      ],
+      "photo_webp": null,
+      "photo_status": "required",
+      "reference": "https://tollbit.bbcgoodfood.com/premium/air-fryer-chicken-breasts-2"
+    },
+    {
+      "id": "af-potato-wedges-2",
+      "category": "Овощи",
+      "title": "Картофельные дольки с копчёной паприкой",
+      "ingredients": [
+        [
+          "картофель",
+          "425 г"
+        ],
+        [
+          "растительное масло",
+          "1 ст. л."
+        ],
+        [
+          "копчёная паприка",
+          "1/2 ч. л."
+        ],
+        [
+          "сушёный орегано",
+          "1/2 ч. л."
+        ],
+        [
+          "соль, перец",
+          "по вкусу"
+        ]
+      ],
+      "prep_minutes": 10,
+      "additional_prep": "Для описанной технологии: замачивание в холодной воде 30 минут, затем в горячей 15 минут, обсушить",
+      "temperature_c": 200,
+      "cook_minutes": [
+        30,
+        40
+      ],
+      "preheat": "Разогреть аэрогриль до 200 °C",
+      "basket": "Один неплотный слой; если дольки лежат кучей, готовить двумя партиями",
+      "turn": "Встряхивать каждые 10 минут",
+      "steps": [
+        "Нарезать картофель дольками одинаковой толщины; замочить на 30 минут, затем на 15 минут залить горячей водой, тщательно обсушить.",
+        "Перемешать с растительным маслом, паприкой, орегано, солью и перцем.",
+        "Готовить при 200 °C, встряхивая корзину каждые 10 минут; если объём велик, разделить на партии.",
+        "Через 30 минут проверить мягкость середины и корочку, при необходимости продолжить до 40 минут."
+      ],
+      "photo_webp": null,
+      "photo_status": "required",
+      "reference": "https://www.bbcgoodfood.com/recipes/air-fryer-potato-wedges"
+    }
+  ]
+}
