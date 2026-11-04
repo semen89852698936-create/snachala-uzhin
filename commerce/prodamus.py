@@ -51,5 +51,8 @@ def confirm_notification(payload,signature,*,merchant_domain,sys_code,secret,sto
     products=payload.get('products')
     if not isinstance(products,list) or len(products)!=1 or not isinstance(products[0],dict):raise PaymentRejected('bad items')
     p=products[0]
-    if p.get('sku')!=PRODUCT or p.get('quantity')!='1' or to_kopeks(p.get('price'))!=PRICE_KOPEKS:raise PaymentRejected('item mismatch')
+    # Official sample callback omits SKU even if checkout contains one.
+    # Rely on the signed product name, count and price; validate SKU when present.
+    expected_name='СНАЧАЛА УЖИН. Бессрочный доступ к 1001 рецепту'
+    if p.get('sku') not in (None, '', PRODUCT) or p.get('name')!=expected_name or p.get('quantity')!='1' or to_kopeks(p.get('price'))!=PRICE_KOPEKS:raise PaymentRejected('item mismatch')
     return store.grant_verified_payment(order_num=order_num,payment_id=payment_id,amount=payload['sum'],verified=True)
