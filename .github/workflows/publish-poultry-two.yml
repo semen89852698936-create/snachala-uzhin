@@ -6,8 +6,6 @@ on:
       - 'scripts/publish-poultry-two-20261103.py'
       - '.github/workflows/publish-poultry-two.yml'
   workflow_dispatch:
-  schedule:
-    - cron: '10,40 * * * *'
 permissions:
   contents: write
 concurrency:
