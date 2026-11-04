@@ -145,12 +145,21 @@ class CommerceApp:
                     data=self.json_request(environ)
                     email=email_key(data.get('email'))
                     if not self.smtp:return self.respond(start,'503 Service Unavailable',{'error':'mail_not_configured'})
-                    token=self.auth.request(email)
+                    # Do not turn a publicly accessible endpoint into an unsolicited-email relay.
+                    # Unknown or unpaid addresses receive the same generic response as paid ones.
+                    message={'message':'Если доступ оформлен на этот адрес, письмо будет отправлено'}
+                    if not self.store.has_access(email):
+                        return self.respond(start,'200 OK',message)
+                    try:
+                        token=self.auth.request(email)
+                    except PermissionError:
+                        # Keep the response identical during email cooldown.
+                        return self.respond(start,'200 OK',message)
                     try:self.send_email(email,token)
                     except Exception:
                         self.auth.invalidate_email(email)
                         raise
-                    return self.respond(start,'200 OK',{'message':'Если адрес существует, письмо отправлено'})
+                    return self.respond(start,'200 OK',message)
                 if path=='/api/logout':
                     return self.respond(start,'200 OK',{'ok':True},headers=[('Set-Cookie','su_session=; Secure; HttpOnly; SameSite=Lax; Path=/; Max-Age=0')])
             if method=='POST' and path=='/webhooks/prodamus':
