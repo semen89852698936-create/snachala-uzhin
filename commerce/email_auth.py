@@ -7,7 +7,7 @@ class EmailAuth:
         self.store.db.executescript("""
         CREATE TABLE IF NOT EXISTS email_tokens(
           token_hash TEXT PRIMARY KEY,email TEXT NOT NULL,
-          expires_at INTEGER NOT NULL,created_at INTEGER NOT NULL);
+          expires_at BIGINT NOT NULL,created_at BIGINT NOT NULL);
         CREATE INDEX IF NOT EXISTS idx_email_tokens_email ON email_tokens(email);
         """)
     def request(self,email):
@@ -27,9 +27,10 @@ class EmailAuth:
         digest=hashlib.sha256(raw.encode()).hexdigest()
         now=int(time.time())
         with self.store.db:
-            record=self.store.db.execute('SELECT email,expires_at FROM email_tokens WHERE token_hash=?',(digest,)).fetchone()
-            if not record or record[1]<=now:raise PermissionError('invalid or expired login token')
-            self.store.db.execute('DELETE FROM email_tokens WHERE token_hash=?',(digest,))
+            record=self.store.db.execute(
+                'DELETE FROM email_tokens WHERE token_hash=? AND expires_at>? RETURNING email',
+                (digest,now)).fetchone()
+            if not record:raise PermissionError('invalid or expired login token')
         return record[0]
     def invalidate_email(self,email):
         with self.store.db:
