@@ -1,0 +1,142 @@
+/* "СНАЧАЛА УЖИН" · editorial recipe, zero new step photographs. */
+/* Limited to the recipe page and the cooking dialog. Main/Evening styling untouched. */
+:root{--er-ink:#402a30;--er-wine:#781631;--er-wine2:#64142e;--er-line:#dfc7c0;--er-pink:#f4e6df;--er-cream:#fffaf6;--er-muted:#84666e}
+#recipeView{color:var(--er-ink)}
+#recipeView .recipe-intro h1{color:#5b2137;letter-spacing:-.022em}
+#recipeView .recipe-intro-meta .pill{background:#fff8f3;color:#7b4053;border-color:#e6d3ce}
+#recipeView .recipe-panel-grid{grid-template-columns:minmax(275px,.74fr) minmax(0,1.5fr);gap:0;align-items:stretch;overflow:hidden;margin-top:34px;background:linear-gradient(130deg,#fff9f4,#faf1ed);border:1px solid #e5cfc7;border-radius:24px;box-shadow:0 13px 38px #6c30440e}
+#recipeView .recipe-panel-grid>div:first-child{border-right:1px solid #e2cfc6;padding:30px 27px}
+#recipeView .recipe-panel-grid>div:last-child{padding:30px 31px;min-width:0}
+#recipeView .recipe-panel-grid .panel{background:transparent;border:0;box-shadow:none;border-radius:0;padding:0}
+#recipeView .recipe-panel-grid .panel h2{font-size:clamp(34px,3.1vw,48px);line-height:1.05;letter-spacing:-.035em;color:#601c38}
+#recipeView .recipe-panel-grid .panel-head{border-bottom:1px solid var(--er-line);padding-bottom:17px;margin-bottom:20px}
+#recipeView .recipe-panel-grid .recipe-kicker{color:#a05f75;font-size:11px;letter-spacing:.13em}
+#recipeView .recipe-panel-grid .ingredient-check{gap:12px;padding:12px 0;border-color:#e9d9d0;font-size:14px;line-height:1.45;color:#4d363b}
+#recipeView .recipe-panel-grid .ingredient-check strong{font-size:13px;color:#741e39}
+#recipeView .recipe-panel-grid .ingredient-check input{accent-color:#7c2643;width:18px;height:18px}
+#recipeView .recipe-panel-grid .portion-picker{border-color:#d9bfb8;background:#fffaf7}
+#recipeView .recipe-panel-grid .portion-picker button{background:#f4e7df;color:#68263b}
+#recipeView .recipe-panel-grid .allergen-text{font-size:12px;line-height:1.6;color:#8d6970;margin-top:25px;font-style:italic}
+#recipeView .step-list.du-filmstrip{display:flex;flex-direction:column;grid-auto-flow:unset;grid-auto-columns:unset;gap:0;overflow:visible;scroll-snap-type:none;padding:0;margin:0;list-style:none}
+#recipeView .du-filmstrip>li.du-film-card{display:grid;grid-template-columns:48px minmax(0,1fr);gap:15px;align-items:start;scroll-snap-align:unset;border:0;border-bottom:1px solid #e7d5cc;border-radius:0;box-shadow:none;background:transparent;padding:17px 0 20px;overflow:visible;min-width:0}
+#recipeView .du-filmstrip>li.du-film-card:first-child{padding-top:4px}
+#recipeView .du-filmstrip>li.du-film-card:last-child{border-bottom:0}
+#recipeView .er-overview-number{display:grid;place-items:center;align-self:start;width:45px;height:45px;border-radius:50%;background:#f4e0d8;border:1px solid #dfc0b9;color:#83223c;font:italic 26px/1 'Cormorant Garamond',Georgia,serif;position:relative}
+#recipeView .du-filmstrip>li.du-film-card:not(:last-child) .er-overview-number:after{content:'';position:absolute;left:50%;top:47px;height:calc(100% + 46px);width:1px;background:#d7bbb6;pointer-events:none}
+#recipeView .du-film-card .du-film-copy{min-width:0;padding:0}
+#recipeView .du-film-marker{font-size:10px;letter-spacing:.16em;color:#a36c7a;margin-bottom:5px}
+#recipeView .du-film-card .du-film-copy strong{font:600 clamp(25px,2.7vw,35px)/1.1 'Cormorant Garamond',Georgia,serif;color:#682039;letter-spacing:-.02em}
+#recipeView .du-film-card .du-film-copy p{font:500 14px/1.62 Manrope,Arial,sans-serif;color:#5e5354;margin:5px 0 0;max-width:720px}
+#recipeView .du-film-card .du-film-copy .step-timer{background:#f4e9dc;color:#7a5c50;border:1px solid #e8d7c5;padding:6px 11px;margin-top:9px;font-size:11px}
+#recipeView .du-film-hint{font-size:12px;color:#926775;padding:9px 0 3px;margin:0;line-height:1.45}
+#recipeView .cook-all-btn{width:auto;min-width:260px;max-width:100%;border-radius:40px;margin-top:15px;padding:14px 36px;background:#7a1837;box-shadow:none}
+#recipeView .cook-all-btn:hover{background:#962a4d}
+#recipeView .tip-card{background:#f7e7df;border:1px solid #ecd0c7;border-radius:16px;padding:21px 24px;margin-top:18px;display:grid;grid-template-columns:minmax(160px,.55fr) 1fr;gap:24px;align-items:start}
+#recipeView .tip-card strong{color:#7f2843;font:italic 26px/1.1 'Cormorant Garamond',Georgia,serif}
+#recipeView .tip-card p{font-size:13px;line-height:1.7;color:#644b52;margin:0}
+
+#cookOverlay[hidden]{display:none!important}
+#cookOverlay.er-cook-mode{background:rgba(48,26,33,.76);padding:16px;z-index:40;backdrop-filter:blur(6px)}
+#cookOverlay.er-cook-mode .cook-sheet{width:min(1320px,100%);max-height:calc(100dvh - 32px);overflow-y:auto;border-radius:21px;background:#fff8f4;padding:0;box-shadow:0 28px 100px #16060d60}
+#cookOverlay.er-cook-mode .cook-top{display:flex;align-items:center;gap:24px;border-bottom:1px solid #ecd9d3;padding:19px 32px;background:#fff9f5;position:sticky;top:0;z-index:4}
+#cookOverlay.er-cook-mode .cook-label{font:700 12px/1.4 Manrope,Arial,sans-serif;color:#7c3450;letter-spacing:.08em;margin-right:auto}
+#cookOverlay .er-return{border:0;background:transparent;color:#67213b;cursor:pointer;padding:10px 0;font:700 13px Manrope,Arial,sans-serif;white-space:nowrap}
+#cookOverlay .er-return:hover,#cookOverlay .er-open-recipe:hover{color:#a03c5b}
+#cookOverlay.er-cook-mode .close-button{background:#f3e4df;color:#6a233b;flex:none}
+#cookOverlay.er-cook-mode #cookContent{padding:24px 28px 23px}
+#cookOverlay .er-cook-progress{border:1px solid #f0ded7;border-radius:19px;background:#fffdfb;padding:17px 20px 14px;margin-bottom:15px}
+#cookOverlay .er-cook-progress-head{display:flex;justify-content:space-between;align-items:center;gap:15px;margin-bottom:14px}
+#cookOverlay .er-progress-eyebrow{font:800 11px/1.4 Manrope,Arial,sans-serif;letter-spacing:.12em;color:#9a6673}
+#cookOverlay .er-total-time{font:600 13px Manrope,Arial,sans-serif;color:#8d586a}
+#cookOverlay .er-progress-steps{margin:0;padding:0;list-style:none;display:flex;gap:8px;justify-content:space-between;overflow-x:auto;scrollbar-width:thin}
+#cookOverlay .er-progress-item{min-width:85px;flex:1;position:relative;display:flex;align-items:center;flex-direction:column;gap:7px}
+#cookOverlay .er-progress-item:not(:last-child):before{content:'';height:2px;background:#edd7d1;position:absolute;top:17px;left:calc(50% + 19px);width:calc(100% - 26px)}
+#cookOverlay .er-progress-button{display:grid;place-items:center;background:#f3dfd5;border:1px solid #f0d3ca;border-radius:50%;color:#6d3146;width:36px;height:36px;font:600 20px/1 'Cormorant Garamond',Georgia,serif;cursor:pointer;position:relative;z-index:1;transition:background .15s}
+#cookOverlay .er-progress-button.is-active{background:#7a1737;color:#fff;border-color:#7a1737}
+#cookOverlay .er-progress-button.is-done{background:#e8c7c9;color:#5d263d}
+#cookOverlay .er-progress-button:focus-visible,#cookOverlay .er-return:focus-visible{outline:3px solid #c77790;outline-offset:3px}
+#cookOverlay .er-progress-title{font:600 12px/1.3 Manrope,Arial,sans-serif;color:#664951;text-align:center}
+#cookOverlay .er-progress-item:has(.is-active) .er-progress-title{font-weight:800;color:#792641}
+#cookOverlay .er-cook-grid{display:grid;grid-template-columns:minmax(0,.99fr) minmax(0,1.01fr);gap:18px;align-items:stretch;min-width:0}
+#cookOverlay .er-cook-photo{margin:0;min-width:0;position:relative;border-radius:18px;overflow:hidden;background:#e4d7d0;min-height:465px}
+#cookOverlay .er-cook-photo img{display:block;width:100%;height:100%;min-height:465px;object-fit:cover;object-position:center;position:absolute;inset:0}
+#cookOverlay .er-photo-caption{position:absolute;left:18px;bottom:18px;right:18px;background:#fffaf2ed;color:#6f354b;backdrop-filter:blur(4px);border-radius:9px;padding:10px 13px;font:700 11px/1.5 Manrope,Arial,sans-serif;letter-spacing:.065em}
+#cookOverlay .er-cook-step{display:flex;flex-direction:column;align-items:stretch;gap:15px;border:1px solid #efddd6;border-radius:18px;background:#fffdfb;padding:27px 30px;min-width:0;min-height:465px}
+#cookOverlay .er-cook-step-meta{display:flex;gap:15px;justify-content:space-between;align-items:center;flex-wrap:wrap}
+#cookOverlay .er-step-index{display:inline-block;background:#f6e6dd;border-radius:24px;padding:7px 14px;color:#913d54;letter-spacing:.08em;font:800 12px Manrope,Arial,sans-serif}
+#cookOverlay .er-step-timer{font:700 16px 'Cormorant Garamond',Georgia,serif;border:1px solid #edd8cf;background:#fff3eb;color:#822442;border-radius:20px;padding:7px 15px;white-space:nowrap}
+#cookOverlay .er-cook-step .cook-step{flex:1;min-width:0}
+#cookOverlay .er-cook-step .du-cook-master-stage{display:none!important}
+#cookOverlay .er-cook-step .cook-step h2{color:#751b39;text-align:left;font:600 clamp(38px,4vw,62px)/1.05 'Cormorant Garamond',Georgia,serif;max-width:none;letter-spacing:-.025em;margin:10px 0 17px}
+#cookOverlay .er-cook-step .cook-step p{font:500 clamp(15px,1.45vw,18px)/1.64 Manrope,Arial,sans-serif;color:#40363a;text-align:left;margin:0;max-width:none}
+#cookOverlay .er-cook-tip{display:grid;grid-template-columns:minmax(115px,.55fr) 1fr;gap:20px;align-items:start;background:#f9eee8;border-radius:15px;padding:17px 19px}
+#cookOverlay .er-cook-tip strong{color:#822444;font:italic 23px/1.1 'Cormorant Garamond',Georgia,serif}
+#cookOverlay .er-cook-tip p{color:#654850;font:500 13px/1.5 Manrope,Arial,sans-serif;margin:0}
+#cookOverlay .er-cook-step .timer-panel{background:#f5e9e0;border:1px solid #e8d3c8;border-radius:14px;margin:0;gap:14px;padding:13px 17px}
+#cookOverlay .er-cook-step .timer-panel span{color:#805c61}
+#cookOverlay .er-cook-step .timer-panel strong{color:#73253f}
+#cookOverlay .er-cook-step .timer-controls button{background:#fff9f5;border:1px solid #dbc3bb;border-radius:10px;color:#693347}
+#cookOverlay .er-cook-step .cook-nav{margin-top:auto;gap:12px}
+#cookOverlay .er-cook-step .cook-nav button{min-height:54px;border-radius:34px;font-size:14px;font-weight:700;box-shadow:none}
+#cookOverlay .er-cook-step .cook-nav .button-primary{background:#7b1737;border-color:#7b1737;color:#fff}
+#cookOverlay .er-cook-step .cook-nav .button-soft{background:#f6e8e1;color:#783a49;border:1px solid #e5c9c1}
+#cookOverlay .er-cook-step .cook-nav button:disabled{opacity:.42;cursor:not-allowed}
+#cookOverlay .er-cook-footer{display:flex;justify-content:space-between;align-items:start;gap:20px;padding:20px 8px 0;color:#71364b;border-top:1px solid #ead8d0;margin-top:18px}
+#cookOverlay .er-cook-facts{display:flex;gap:20px;align-items:center;flex-wrap:wrap;color:#654552;font:600 13px Manrope,Arial,sans-serif}
+#cookOverlay .er-cook-tools{display:flex;gap:18px;align-items:center;flex-wrap:wrap}
+#cookOverlay .er-cook-ingredients{position:relative;font:700 13px Manrope,Arial,sans-serif}
+#cookOverlay .er-cook-ingredients summary{cursor:pointer;padding:5px 8px}
+#cookOverlay .er-cook-ingredients ul{position:absolute;right:0;top:100%;width:min(370px,80vw);max-height:240px;overflow:auto;background:#fffdf9;border:1px solid #e1c4bb;border-radius:13px;box-shadow:0 15px 45px #5c2b3b22;z-index:5;list-style:none;margin:0;padding:14px 18px}
+#cookOverlay .er-cook-ingredients li{font:500 13px/1.55 Manrope,Arial,sans-serif;color:#544047;padding:7px 0;border-bottom:1px solid #f1e4df}
+#cookOverlay .er-open-recipe{border:0;background:transparent;color:#6e2a41;cursor:pointer;font:700 13px Manrope,Arial,sans-serif;padding:5px 8px}
+#cookOverlay .er-cook-is-done{text-align:center;padding:40px 28px 60px!important}
+#cookOverlay .er-finish-note{font:800 12px Manrope,Arial,sans-serif;letter-spacing:.12em;color:#a36a7e}
+
+@media(max-width:1000px){
+ #recipeView .recipe-panel-grid{grid-template-columns:minmax(230px,.7fr) minmax(0,1.3fr)}
+ #recipeView .recipe-panel-grid>div:first-child{padding:25px 22px}
+ #recipeView .recipe-panel-grid>div:last-child{padding:25px 24px}
+ #cookOverlay.er-cook-mode #cookContent{padding:17px}
+ #cookOverlay .er-cook-step{padding:22px}
+ #cookOverlay .er-cook-tip{grid-template-columns:1fr;gap:6px}
+}
+@media(max-width:760px){
+ #recipeView .recipe-panel-grid{grid-template-columns:1fr}
+ #recipeView .recipe-panel-grid>div:first-child{border-right:0;border-bottom:1px solid #e2cfc6}
+ #recipeView .recipe-panel-grid>div:last-child{padding:25px 22px}
+ #recipeView .tip-card{grid-template-columns:1fr;gap:8px}
+ #recipeView .cook-all-btn{width:100%}
+ #cookOverlay.er-cook-mode{padding:0}
+ #cookOverlay.er-cook-mode .cook-sheet{border-radius:0;width:100%;height:100dvh;max-height:100dvh;overflow-y:auto}
+ #cookOverlay.er-cook-mode .cook-top{padding:11px 16px;gap:13px}
+ #cookOverlay.er-cook-mode .cook-label{font-size:10px;letter-spacing:.03em}
+ #cookOverlay .er-return{font-size:12px}
+ #cookOverlay.er-cook-mode #cookContent{padding:15px 15px 34px}
+ #cookOverlay .er-cook-progress{padding:13px 12px}
+ #cookOverlay .er-cook-progress-head{align-items:start;gap:10px}
+ #cookOverlay .er-progress-eyebrow{font-size:10px}
+ #cookOverlay .er-total-time{font-size:11px}
+ #cookOverlay .er-progress-steps{gap:5px}
+ #cookOverlay .er-progress-item{min-width:65px}
+ #cookOverlay .er-progress-title{font-size:10px}
+ #cookOverlay .er-cook-grid{grid-template-columns:1fr;gap:12px}
+ #cookOverlay .er-cook-photo{min-height:255px;height:280px}
+ #cookOverlay .er-cook-photo img{min-height:0;height:100%}
+ #cookOverlay .er-cook-step{min-height:0;padding:21px 20px}
+ #cookOverlay .er-cook-step .cook-step h2{font-size:45px}
+ #cookOverlay .er-cook-step .cook-step p{font-size:16px}
+ #cookOverlay .er-cook-footer{flex-direction:column;gap:13px}
+ #cookOverlay .er-cook-facts{gap:14px}
+ #cookOverlay .er-cook-tools{width:100%;justify-content:space-between}
+}
+@media(max-width:390px){
+ #cookOverlay .er-progress-item{min-width:56px}
+ #cookOverlay .er-progress-title{font-size:9px}
+ #cookOverlay .er-cook-photo{height:240px;min-height:240px}
+ #cookOverlay .er-cook-step .cook-step h2{font-size:39px}
+ #cookOverlay .er-cook-step .cook-nav{flex-wrap:wrap}
+ #cookOverlay .er-cook-step .timer-panel{align-items:start;flex-direction:column}
+}
+@media(prefers-reduced-motion:reduce){
+ #cookOverlay .er-progress-button{transition:none}
+}
