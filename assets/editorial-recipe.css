@@ -32,3 +32,10 @@
 #cookOverlay .progress-track>div{background:#885665;border-radius:0}
 @media(max-width:750px){#recipeDetail .recipe-intro,#recipeDetail .recipe-panel-grid{grid-template-columns:minmax(0,1fr)}#recipeDetail .recipe-intro-photo{height:clamp(245px,62vw,365px);order:-1}#recipeDetail .recipe-intro h1{font-size:clamp(46px,11vw,72px)}#recipeDetail .recipe-panel-grid{gap:20px}#recipeDetail .du-editorial-step{grid-template-columns:44px minmax(0,1fr);gap:12px}#recipeDetail .du-editorial-step-number{font-size:36px}#recipeDetail .du-editorial-step-copy p{font-size:16px}#cookOverlay .du-editorial-cook-index{font-size:76px}}
 @media(prefers-reduced-motion:reduce){#recipeDetail *,#cookOverlay *{scroll-behavior:auto}}
+
+/* COOKING_TIMER_V2: persistent alarm status within the existing cooking sheet */
+#cookOverlay .timer-panel{flex-wrap:wrap}
+#cookOverlay .du-timer-status{flex-basis:100%;margin:0;padding:7px 0 0;border-top:1px solid #dbc8c4;color:#71515a;font:500 13px/1.5 Manrope,Arial,sans-serif}
+#cookOverlay .du-timer-status.du-timer-done{font-weight:800;color:#842a40}
+#cookOverlay #timerStart{min-width:100px}
+@media(max-width:650px){#cookOverlay .timer-panel{align-items:flex-start}#cookOverlay .timer-controls{width:100%;flex-wrap:wrap}#cookOverlay .timer-controls button{min-height:42px;flex:1}}

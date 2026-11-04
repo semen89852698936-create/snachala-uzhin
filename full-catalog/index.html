@@ -914,7 +914,7 @@ const photo=id=>(id.startsWith('/assets/')||id.startsWith('assets/'))?id:(/^http
 const catName=id=>id==='bonus'?'Бонус №1001':(CATEGORIES.find(x=>x.id===id)?.name||id);
 const byId=id=>RECIPES.find(x=>x.id===id);
 const PAGE_SIZE=24;let visibleLimit=PAGE_SIZE;
-const state={category:'all',cuisine:'all',search:'',quick:false,favsOnly:false,recipe:null,servings:get('servings',{}),favorites:get('favorites',[]),recipeNotes:get('recipeNotes',{}),shopping:get('shopping',{}),shoppingExtras:get('shoppingExtras',{}),pantryMode:false,pantryBasics:true,shopChecked:get('shopChecked',{}),ingredientChecked:get('ingredientChecked',{}),cookSteps:get('cookSteps',{}),cookIndex:0,timerEnd:0,timerDuration:0,timerRemaining:0,timerHandle:null,timerForStep:-1,toastTimer:null};
+const state={category:'all',cuisine:'all',search:'',quick:false,favsOnly:false,recipe:null,servings:get('servings',{}),favorites:get('favorites',[]),recipeNotes:get('recipeNotes',{}),shopping:get('shopping',{}),shoppingExtras:get('shoppingExtras',{}),pantryMode:false,pantryBasics:true,shopChecked:get('shopChecked',{}),ingredientChecked:get('ingredientChecked',{}),cookSteps:get('cookSteps',{}),cookIndex:0,timerEnd:0,timerDuration:0,timerRemaining:0,timerHandle:null,timerForStep:-1,timerStatus:'idle',timerRecipe:null,timerStep:-1,timerAlerted:false,timerAudio:null,toastTimer:null};
 function toast(message){const el=$('toast');el.textContent=message;el.classList.add('show');clearTimeout(state.toastTimer);state.toastTimer=setTimeout(()=>el.classList.remove('show'),3600)}
 function countLabel(num,words){const m=num%100;const n=num%10;return num+' '+(m>10&&m<20?words[2]:n===1?words[0]:n>=2&&n<=4?words[1]:words[2])}
 function servings(recipe){return Math.min(8,Math.max(1,Number(state.servings[recipe.id]||recipe.base)))}
@@ -1031,22 +1031,177 @@ function updateShoppingShareLinks(){
 }
 
 function fallbackCopy(s){const ta=document.createElement('textarea');ta.value=s;document.body.append(ta);ta.select();try{document.execCommand('copy');toast('Список скопирован')}catch{toast('Не удалось скопировать автоматически')}ta.remove()}
-function startTimer(duration){if(!duration)return;state.timerDuration=duration;state.timerRemaining=duration;state.timerEnd=Date.now()+duration*1000;clearInterval(state.timerHandle);state.timerHandle=setInterval(tickTimer,350);tickTimer();}
-function tickTimer(){if(!state.timerEnd)return;state.timerRemaining=Math.max(0,Math.ceil((state.timerEnd-Date.now())/1000));const el=$('timeValue');if(el)el.textContent=timerText(state.timerRemaining);if(state.timerRemaining<=0){clearInterval(state.timerHandle);state.timerHandle=null;state.timerEnd=0;toast('⏰ Время вышло! Можно переходить к следующему шагу.');const btn=$('timerStart');if(btn)btn.textContent='Повторить';}}
-function timerText(s){return String(Math.floor(s/60)).padStart(2,'0')+':'+String(s%60).padStart(2,'0')}
-function clearTimer(){clearInterval(state.timerHandle);state.timerHandle=null;state.timerEnd=0;state.timerRemaining=0;state.timerForStep=-1;}
-function openCook(id){const r=byId(id);if(!r)return;closeShopping();state.recipe=id;state.cookIndex=Math.min(r.steps.length,Math.max(0,Number(state.cookSteps[id]||0)));clearTimer();$('cookOverlay').hidden=false;document.body.style.overflow='hidden';renderCook();$('closeCook').focus();}
-function closeCook(){clearTimer();$('cookOverlay').hidden=true;document.body.style.overflow='';}
+
+const COOK_TIMER_STORAGE='su-active-cooking-timer-v1';
+const timerNotificationTitle='СНАЧАЛА УЖИН · Время вышло!';
+function saveCookingTimer(){
+ try{
+  if(state.timerStatus==='idle'){localStorage.removeItem(COOK_TIMER_STORAGE);return;}
+  localStorage.setItem(COOK_TIMER_STORAGE,JSON.stringify({
+   recipeId:state.timerRecipe,stepIndex:state.timerStep,
+   status:state.timerStatus,endAt:state.timerEnd,
+   remaining:state.timerRemaining,duration:state.timerDuration,
+   notified:state.timerAlerted
+  }));
+ }catch(e){/* Browsing in private mode may disable storage. */}
+}
+function isCurrentCookingTimer(){
+ return state.timerRecipe===state.recipe&&state.timerStep===state.cookIndex;
+}
+function updateCookingTimerView(){
+ if(!isCurrentCookingTimer())return;
+ const value=$('timeValue');
+ if(value)value.textContent=timerText(state.timerRemaining);
+ const button=$('timerStart');
+ if(button)button.textContent=state.timerStatus==='running'?'Ⅱ Пауза':state.timerStatus==='paused'?'▶ Продолжить':state.timerStatus==='finished'?'↺ Повторить':'▶ Старт';
+ const status=$('timerStatusNote');
+ if(status){
+  status.textContent=state.timerStatus==='finished'?'🔔 Время вышло! Пора переходить к следующему шагу.':
+   state.timerStatus==='paused'?'Таймер на паузе. Нажми «Продолжить».':
+   state.timerStatus==='running'?'Таймер идёт. При возвращении из спящего режима время будет пересчитано.':
+   'Звук включается после нажатия «Старт». Уведомления зависят от разрешений браузера.';
+  status.classList.toggle('du-timer-done',state.timerStatus==='finished');
+ }
+}
+function unlockTimerSound(){
+ try{
+  const Context=window.AudioContext||window.webkitAudioContext;
+  if(!Context)return;
+  if(!state.timerAudio)state.timerAudio=new Context();
+  if(state.timerAudio.state==='suspended')state.timerAudio.resume().catch(()=>{});
+ }catch(e){/* Audio can be denied by browser settings. */}
+}
+function playTimerSound(){
+ const audio=state.timerAudio;
+ if(!audio)return;
+ const sound=()=>{
+  try{
+   const now=audio.currentTime+0.04;
+   for(let k=0;k<3;k++){
+    const start=now+k*0.43;
+    const osc=audio.createOscillator(),gain=audio.createGain();
+    osc.type='sine';osc.frequency.value=k===2?1046:784;
+    gain.gain.setValueAtTime(0.001,start);
+    gain.gain.exponentialRampToValueAtTime(0.18,start+0.02);
+    gain.gain.exponentialRampToValueAtTime(0.001,start+0.30);
+    osc.connect(gain);gain.connect(audio.destination);osc.start(start);osc.stop(start+0.32);
+   }
+  }catch(e){/* Sound is best effort. */}
+ };
+ if(audio.state==='running')sound();
+ else audio.resume().then(sound).catch(()=>{});
+}
+function requestCookingNotificationPermission(){
+ if(!window.isSecureContext||!('Notification' in window))return;
+ try{
+  if(Notification.permission==='default')Notification.requestPermission().catch(()=>{});
+  if('serviceWorker' in navigator)navigator.serviceWorker.register('/cooking-timer-sw.js').catch(()=>{});
+ }catch(e){/* Unsupported on some mobile browser tabs. */}
+}
+async function showCookingTimerNotification(){
+ if(!('Notification' in window)||Notification.permission!=='granted'||!window.isSecureContext)return;
+ const r=byId(state.timerRecipe);
+ const title=timerNotificationTitle;
+ const options={body:(r?r.title+': ':'')+'таймер завершён. Вернись к приготовлению.',tag:'su-cooking-timer',icon:'/favicon.svg'};
+ try{
+  if('serviceWorker' in navigator){
+   const worker=await Promise.race([navigator.serviceWorker.ready,new Promise((_,reject)=>setTimeout(()=>reject(new Error('worker timeout')),2000))]);
+   await worker.showNotification(title,options);
+   return;
+  }
+ }catch(e){/* Fall back to desktop page notifications. */}
+ try{const n=new Notification(title,options);n.onclick=()=>{window.focus();n.close();};}catch(e){}
+}
+function notifyCookingTimerFinished(){
+ if(state.timerAlerted)return;
+ state.timerAlerted=true;
+ saveCookingTimer();
+ toast('⏰ Время вышло! Можно переходить к следующему шагу.');
+ playTimerSound();
+ showCookingTimerNotification().catch(()=>{});
+}
+function finishCookingTimer(){
+ if(state.timerStatus==='finished')return;
+ clearInterval(state.timerHandle);state.timerHandle=null;
+ state.timerRemaining=0;state.timerEnd=0;state.timerStatus='finished';
+ saveCookingTimer();
+ updateCookingTimerView();
+ notifyCookingTimerFinished();
+}
+function timerText(s){const n=Math.max(0,Math.floor(Number(s)||0));return String(Math.floor(n/60)).padStart(2,'0')+':'+String(n%60).padStart(2,'0')}
+function tickTimer(){
+ if(state.timerStatus!=='running'||!state.timerEnd)return;
+ state.timerRemaining=Math.max(0,Math.ceil((state.timerEnd-Date.now())/1000));
+ if(state.timerRemaining===0){finishCookingTimer();return;}
+ updateCookingTimerView();
+}
+function startTimer(duration){
+ if(!duration)return;
+ clearInterval(state.timerHandle);
+ state.timerRecipe=state.recipe;state.timerStep=state.cookIndex;
+ state.timerDuration=Math.max(1,Number(duration)||1);
+ state.timerRemaining=state.timerDuration;
+ state.timerEnd=Date.now()+state.timerRemaining*1000;
+ state.timerStatus='running';state.timerAlerted=false;
+ saveCookingTimer();
+ state.timerHandle=setInterval(tickTimer,350);
+ updateCookingTimerView();
+}
+function pauseCookingTimer(){
+ if(state.timerStatus!=='running')return;
+ tickTimer();
+ if(state.timerStatus!=='running')return;
+ state.timerRemaining=Math.max(0,Math.ceil((state.timerEnd-Date.now())/1000));
+ clearInterval(state.timerHandle);state.timerHandle=null;
+ state.timerEnd=0;state.timerStatus='paused';
+ saveCookingTimer();updateCookingTimerView();
+}
+function clearTimer(){
+ clearInterval(state.timerHandle);
+ state.timerHandle=null;state.timerEnd=0;state.timerRemaining=0;state.timerDuration=0;
+ state.timerStatus='idle';state.timerRecipe=null;state.timerStep=-1;state.timerAlerted=false;
+ saveCookingTimer();
+}
+function restoreCookingTimer(){
+ let record=null;
+ try{record=JSON.parse(localStorage.getItem(COOK_TIMER_STORAGE)||'null');}catch(e){}
+ if(!record||!byId(record.recipeId)||!Number.isInteger(record.stepIndex)){clearTimer();return;}
+ const recipe=byId(record.recipeId);
+ if(record.stepIndex<0||record.stepIndex>=recipe.steps.length||!recipe.steps[record.stepIndex].timer){clearTimer();return;}
+ if(!['running','paused','finished'].includes(record.status)){clearTimer();return;}
+ state.timerRecipe=record.recipeId;state.timerStep=record.stepIndex;
+ state.timerDuration=Math.max(1,Number(record.duration)||recipe.steps[record.stepIndex].timer*60);
+ state.timerRemaining=Math.max(0,Number(record.remaining)||0);
+ state.timerAlerted=!!record.notified;state.timerStatus=record.status;
+ state.timerEnd=record.status==='running'?Math.max(0,Number(record.endAt)||0):0;
+ if(state.timerStatus==='running'){
+  if(!state.timerEnd){clearTimer();return;}
+  if(state.timerEnd<=Date.now())finishCookingTimer();
+  else{tickTimer();state.timerHandle=setInterval(tickTimer,350);}
+ }
+}
+function syncCookingTimer(){tickTimer();updateCookingTimerView();}
+document.addEventListener('visibilitychange',syncCookingTimer);
+window.addEventListener('focus',syncCookingTimer);
+window.addEventListener('pageshow',syncCookingTimer);
+window.addEventListener('storage',event=>{
+ if(event.key!==COOK_TIMER_STORAGE)return;
+ clearInterval(state.timerHandle);state.timerHandle=null;
+ restoreCookingTimer();syncCookingTimer();
+});
+
+function openCook(id){const r=byId(id);if(!r)return;closeShopping();state.recipe=id;state.cookIndex=Math.min(r.steps.length,Math.max(0,Number(state.cookSteps[id]||0)));if(state.timerRecipe===id&&state.timerStatus!=='idle')state.cookIndex=state.timerStep;$('cookOverlay').hidden=false;document.body.style.overflow='hidden';renderCook();$('closeCook').focus();}
+function closeCook(){$('cookOverlay').hidden=true;document.body.style.overflow='';if(state.timerStatus==='running')toast('Таймер продолжает отсчёт');}
 function stepTo(idx){const r=byId(state.recipe);if(!r)return;state.cookIndex=Math.max(0,Math.min(r.steps.length,idx));state.cookSteps[r.id]=state.cookIndex;persist();clearTimer();renderCook();}
 function renderCook(){const r=byId(state.recipe);if(!r)return;const idx=state.cookIndex;const done=idx>=r.steps.length;const prog=done?100:Math.round((idx/r.steps.length)*100);const box=$('cookContent');if(done){box.innerHTML=`<div class="done-icon">🍽️</div><h2 class="done-title">Бон аппетит!</h2><p class="done-desc">${safe(r.title)} готово. Ты прошёл ${countLabel(r.steps.length,['шаг','шага','шагов'])}.<br>Сохрани рецепт в избранное, чтобы приготовить снова.</p><div class="done-actions"><button type="button" class="button button-primary" id="finishCook">Завершить готовку</button><button type="button" class="button button-soft" id="restartCook">Повторить шаги</button></div>`;$('finishCook').addEventListener('click',()=>{state.cookSteps[r.id]=0;persist();closeCook();toast('Приятного аппетита! ✨')});$('restartCook').addEventListener('click',()=>stepTo(0));return;}
- const step=r.steps[idx];box.innerHTML=`<div class="cook-progress-label"><span>Шаг ${idx+1} из ${r.steps.length}</span><span>${prog}% готово</span></div><div class="progress-track"><div style="width:${prog}%"></div></div><div class="cook-step du-editorial-cook-step"><div class="du-editorial-cook-index" aria-hidden="true">${String(idx+1).padStart(2,'0')}</div><h2>${safe(step.title)}</h2><p>${safe(step.detail)}</p></div>${step.timer?`<div class="timer-panel"><div><span>Таймер на этот шаг</span><strong id="timeValue">${timerText(step.timer*60)}</strong></div><div class="timer-controls"><button type="button" id="timerStart">▶ Старт</button><button type="button" id="timerReset">↺ Сброс</button></div></div>`:''}<div class="cook-nav"><button type="button" class="button button-soft" id="prevStep" ${idx===0?'disabled':''}>← Назад</button><button type="button" class="button button-primary" id="nextStep">${idx===r.steps.length-1?'Готово ✓':'Сделано, дальше →'}</button></div><span class="cook-recipe">${safe(r.title)} · ${servings(r)} порц.</span>`;
- $('prevStep').addEventListener('click',()=>stepTo(idx-1));$('nextStep').addEventListener('click',()=>stepTo(idx+1));if(step.timer){$('timerStart').addEventListener('click',()=>{if(state.timerEnd){state.timerRemaining=Math.max(0,Math.ceil((state.timerEnd-Date.now())/1000));clearInterval(state.timerHandle);state.timerEnd=0;$('timerStart').textContent='▶ Продолжить';}else{const seconds=state.timerRemaining||step.timer*60;startTimer(seconds);$('timerStart').textContent='Пауза';}});$('timerReset').addEventListener('click',()=>{clearTimer();state.timerRemaining=step.timer*60;$('timeValue').textContent=timerText(state.timerRemaining);$('timerStart').textContent='▶ Старт';});}
+ const step=r.steps[idx];box.innerHTML=`<div class="cook-progress-label"><span>Шаг ${idx+1} из ${r.steps.length}</span><span>${prog}% готово</span></div><div class="progress-track"><div style="width:${prog}%"></div></div><div class="cook-step du-editorial-cook-step"><div class="du-editorial-cook-index" aria-hidden="true">${String(idx+1).padStart(2,'0')}</div><h2>${safe(step.title)}</h2><p>${safe(step.detail)}</p></div>${step.timer?`<div class="timer-panel"><div><span>Таймер на этот шаг</span><strong id="timeValue">${timerText(isCurrentCookingTimer()?state.timerRemaining:step.timer*60)}</strong></div><div class="timer-controls"><button type="button" id="timerStart">▶ Старт</button><button type="button" id="timerReset">↺ Сброс</button></div><p id="timerStatusNote" role="status" aria-live="polite" class="du-timer-status"></p></div>`:''}<div class="cook-nav"><button type="button" class="button button-soft" id="prevStep" ${idx===0?'disabled':''}>← Назад</button><button type="button" class="button button-primary" id="nextStep">${idx===r.steps.length-1?'Готово ✓':'Сделано, дальше →'}</button></div><span class="cook-recipe">${safe(r.title)} · ${servings(r)} порц.</span>`;
+ $('prevStep').addEventListener('click',()=>stepTo(idx-1));$('nextStep').addEventListener('click',()=>stepTo(idx+1));if(step.timer){$('timerStart').addEventListener('click',()=>{unlockTimerSound();requestCookingNotificationPermission();if(isCurrentCookingTimer()&&state.timerStatus==='running')pauseCookingTimer();else startTimer(isCurrentCookingTimer()&&state.timerStatus==='paused'?state.timerRemaining:step.timer*60);});$('timerReset').addEventListener('click',()=>{clearTimer();$('timeValue').textContent=timerText(step.timer*60);updateCookingTimerView();const b=$('timerStart');if(b)b.textContent='▶ Старт';const n=$('timerStatusNote');if(n)n.textContent='Таймер сброшен';});updateCookingTimerView();}
 }
 function showHome(){state.recipe=null;$('homeView').hidden=false;$('recipeView').hidden=true;}
 function showRecipe(id){const r=byId(id);if(!r){location.hash='catalog';return;}$('homeView').hidden=true;$('recipeView').hidden=false;renderRecipe(id);window.scrollTo({top:0,behavior:'instant'})}
 function route(){const hash=decodeURIComponent(location.hash.slice(1));document.querySelectorAll('[data-nav="airfryer"],[data-quick-airfryer],[data-quick-evening]').forEach(a=>{const on=a.hasAttribute('data-quick-evening')?(hash==='evening'||hash==='evening-music'||hash==='eveningBuilder'):hash==='airfryer';if(on)a.setAttribute('aria-current','page');else a.removeAttribute('aria-current');});document.body.classList.toggle('du-evening-mode',hash==='evening');if(hash.startsWith('recipe=')){showRecipe(hash.slice(7));return;}showHome();if(hash==='catalog'||hash==='categories'||hash==='evening'||hash==='about'||hash==='pricing'||hash==='music'||hash==='my-recipes'||hash==='airfryer'){requestAnimationFrame(() => document.getElementById(hash)?.scrollIntoView({behavior:'smooth',block:'start'}));}else if(hash==='home'){requestAnimationFrame(()=>window.scrollTo({top:0,behavior:'smooth'}))}}
 function showFeatured(){location.hash='recipe=lemon-spinach-pasta';}
-function init(){renderCategories();renderFilters();renderCuisines();renderRecipes();updateBadges();renderMyRecipes();$('recipeSearch').addEventListener('input',e=>{state.search=e.target.value;if(/[,;]/.test(state.search))state.pantryMode=true;visibleLimit=PAGE_SIZE;renderRecipes()});$('pantryMode').addEventListener('click',()=>{state.pantryMode=!state.pantryMode;visibleLimit=PAGE_SIZE;renderRecipes()});$('pantryBasics').addEventListener('change',e=>{state.pantryBasics=e.target.checked;visibleLimit=PAGE_SIZE;renderRecipes()});$('cuisineFilter').addEventListener('change',e=>{state.cuisine=e.target.value;visibleLimit=PAGE_SIZE;renderRecipes()});$('quickFilter').addEventListener('click',()=>{state.quick=!state.quick;visibleLimit=PAGE_SIZE;$('quickFilter').setAttribute('aria-pressed',state.quick);renderRecipes()});$('favoritesFilter').addEventListener('click',()=>{state.favsOnly=!state.favsOnly;visibleLimit=PAGE_SIZE;$('favoritesFilter').setAttribute('aria-pressed',state.favsOnly);renderRecipes()});$('loadMoreRecipes').addEventListener('click',()=>{visibleLimit+=PAGE_SIZE;renderRecipes()});$('clearFilters').addEventListener('click',()=>{visibleLimit=PAGE_SIZE;state.search='';state.pantryMode=false;state.category='all';state.cuisine='all';state.quick=false;state.favsOnly=false;$('recipeSearch').value='';$('cuisineFilter').value='all';$('quickFilter').setAttribute('aria-pressed','false');$('favoritesFilter').setAttribute('aria-pressed','false');renderFilters();renderRecipes()});$('heroRecipe').addEventListener('click',showFeatured);$('tryCooking').addEventListener('click',()=>{showFeatured();openCook('lemon-spinach-pasta')});$('aboutTry').addEventListener('click',()=>{showFeatured();openCook('lemon-spinach-pasta')});$('priceDemo').addEventListener('click',()=>{location.hash='catalog'});$('bonusRecipe').addEventListener('click',()=>{location.hash='recipe=midnight-mushroom-toasts'});$('backCatalog').addEventListener('click',()=>{location.hash='catalog'});$('closeCook').addEventListener('click',closeCook);$('closeShopping').addEventListener('click',closeShopping);$('drawerScrim').addEventListener('click',closeShopping);document.querySelectorAll('.shopping-open').forEach(x=>x.addEventListener('click',openShopping));$('copyShopping').addEventListener('click',copyShopping);$('shareShopping').addEventListener('click',shareShopping);
+function init(){restoreCookingTimer();renderCategories();renderFilters();renderCuisines();renderRecipes();updateBadges();renderMyRecipes();$('recipeSearch').addEventListener('input',e=>{state.search=e.target.value;if(/[,;]/.test(state.search))state.pantryMode=true;visibleLimit=PAGE_SIZE;renderRecipes()});$('pantryMode').addEventListener('click',()=>{state.pantryMode=!state.pantryMode;visibleLimit=PAGE_SIZE;renderRecipes()});$('pantryBasics').addEventListener('change',e=>{state.pantryBasics=e.target.checked;visibleLimit=PAGE_SIZE;renderRecipes()});$('cuisineFilter').addEventListener('change',e=>{state.cuisine=e.target.value;visibleLimit=PAGE_SIZE;renderRecipes()});$('quickFilter').addEventListener('click',()=>{state.quick=!state.quick;visibleLimit=PAGE_SIZE;$('quickFilter').setAttribute('aria-pressed',state.quick);renderRecipes()});$('favoritesFilter').addEventListener('click',()=>{state.favsOnly=!state.favsOnly;visibleLimit=PAGE_SIZE;$('favoritesFilter').setAttribute('aria-pressed',state.favsOnly);renderRecipes()});$('loadMoreRecipes').addEventListener('click',()=>{visibleLimit+=PAGE_SIZE;renderRecipes()});$('clearFilters').addEventListener('click',()=>{visibleLimit=PAGE_SIZE;state.search='';state.pantryMode=false;state.category='all';state.cuisine='all';state.quick=false;state.favsOnly=false;$('recipeSearch').value='';$('cuisineFilter').value='all';$('quickFilter').setAttribute('aria-pressed','false');$('favoritesFilter').setAttribute('aria-pressed','false');renderFilters();renderRecipes()});$('heroRecipe').addEventListener('click',showFeatured);$('tryCooking').addEventListener('click',()=>{showFeatured();openCook('lemon-spinach-pasta')});$('aboutTry').addEventListener('click',()=>{showFeatured();openCook('lemon-spinach-pasta')});$('priceDemo').addEventListener('click',()=>{location.hash='catalog'});$('bonusRecipe').addEventListener('click',()=>{location.hash='recipe=midnight-mushroom-toasts'});$('backCatalog').addEventListener('click',()=>{location.hash='catalog'});$('closeCook').addEventListener('click',closeCook);$('closeShopping').addEventListener('click',closeShopping);$('drawerScrim').addEventListener('click',closeShopping);document.querySelectorAll('.shopping-open').forEach(x=>x.addEventListener('click',openShopping));$('copyShopping').addEventListener('click',copyShopping);$('shareShopping').addEventListener('click',shareShopping);
  document.querySelectorAll('[data-shopping-share]').forEach(link=>link.addEventListener('click',e=>{if(!shoppingShareText()){e.preventDefault();toast('Сначала добавь хотя бы один рецепт');return;}updateShoppingShareLinks();}));$('clearShopping').addEventListener('click',()=>{if(!Object.keys(state.shopping).length&&!Object.keys(state.shoppingExtras||{}).length)return;if(!window.confirm('Очистить список покупок целиком?'))return;state.shopping={};state.shoppingExtras={};state.shopChecked={};persist();updateBadges();renderShopping();if(state.recipe)renderRecipe(state.recipe)});document.addEventListener('keydown',e=>{if(e.key==='Escape'){if(!$('cookOverlay').hidden)closeCook();else if(!$('shoppingDrawer').hidden)closeShopping()}if((e.metaKey||e.ctrlKey)&&e.key.toLowerCase()==='k'){e.preventDefault();location.hash='catalog';setTimeout(()=>$('recipeSearch').focus(),25)}});window.addEventListener('hashchange',route);route();}
 init();
 </script><script>'use strict';
