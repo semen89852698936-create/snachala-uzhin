@@ -48,7 +48,7 @@ const assert=require('node:assert/strict');
     assert.ok(await page.locator('article[data-recipe]').count()>0,'Ordinary search should remain functional');
     // Real-browser regression: three common pantry combinations previously
     // appeared empty or misleading because of missing morphology and recipes.
-    for(const protein of ['говядина','курица','индейка']){
+    for(const protein of ['говядина','курица','индейка','свинина']){
       await page.locator('#recipeSearch').fill(protein+', картофель');
       await page.waitForFunction(()=>document.getElementById('pantrySummary').textContent.includes('В коллекции пока нет одного рецепта'));
       assert.equal(await page.locator('#pantryMode').getAttribute('aria-pressed'),'true','Comma input activates pantry mode');
