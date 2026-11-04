@@ -21,19 +21,24 @@ def to_kopeks(value):
 
 class Store:
     def __init__(self,path):
-        self.db=sqlite3.connect(str(Path(path)))
-        self.db.execute('PRAGMA busy_timeout=5000')
+        self._postgres=str(path).startswith(('postgres://','postgresql://'))
+        if self._postgres:
+            from .postgres_db import PostgresDb
+            self.db=PostgresDb(str(path))
+        else:
+            self.db=sqlite3.connect(str(Path(path)))
+            self.db.execute('PRAGMA busy_timeout=5000')
         self.db.executescript("""
           CREATE TABLE IF NOT EXISTS orders (
             order_num TEXT PRIMARY KEY, email TEXT NOT NULL, product TEXT NOT NULL,
-            amount_kopeks INTEGER NOT NULL, status TEXT NOT NULL DEFAULT 'pending',
-            provider_payment_id TEXT UNIQUE, created_at INTEGER NOT NULL);
+            amount_kopeks BIGINT NOT NULL, status TEXT NOT NULL DEFAULT 'pending',
+            provider_payment_id TEXT UNIQUE, created_at BIGINT NOT NULL);
           CREATE TABLE IF NOT EXISTS entitlements (
             email TEXT NOT NULL, product TEXT NOT NULL,
-            granted_at INTEGER NOT NULL, revoked_at INTEGER,
+            granted_at BIGINT NOT NULL, revoked_at BIGINT,
             PRIMARY KEY(email,product));
           CREATE TABLE IF NOT EXISTS revoked_sessions (
-            token_hash TEXT PRIMARY KEY, expires_at INTEGER NOT NULL);
+            token_hash TEXT PRIMARY KEY, expires_at BIGINT NOT NULL);
         """)
     def create_order(self,email):
         email=email_key(email)
@@ -48,7 +53,10 @@ class Store:
         if not payment_id or not isinstance(payment_id,str): raise ValueError('missing payment id')
         if to_kopeks(amount)!=PRICE_KOPEKS: raise ValueError('incorrect sum')
         with self.db:
-            row=self.db.execute('SELECT email,product,amount_kopeks,status,provider_payment_id FROM orders WHERE order_num=?',(order_num,)).fetchone()
+            sql='SELECT email,product,amount_kopeks,status,provider_payment_id FROM orders WHERE order_num=?'
+            if self._postgres:
+                sql+=' FOR UPDATE'
+            row=self.db.execute(sql,(order_num,)).fetchone()
             if not row or row[1]!=PRODUCT or row[2]!=PRICE_KOPEKS: raise ValueError('unknown or mismatched order')
             if row[3]=='paid':
                 if row[4]!=payment_id: raise ValueError('conflicting payment')
@@ -71,7 +79,7 @@ class Store:
         now=int(time.time())
         with self.db:
             self.db.execute('DELETE FROM revoked_sessions WHERE expires_at<?',(now,))
-            self.db.execute('INSERT OR REPLACE INTO revoked_sessions(token_hash,expires_at) VALUES (?,?)',
+            self.db.execute('INSERT INTO revoked_sessions(token_hash,expires_at) VALUES (?,?) ON CONFLICT(token_hash) DO UPDATE SET expires_at=excluded.expires_at',
                             (digest,now+604800))
     def session_revoked(self,token):
         digest=hashlib.sha256(token.encode()).hexdigest()
