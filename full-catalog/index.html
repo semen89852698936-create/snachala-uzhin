@@ -619,6 +619,23 @@ body:not(.du-evening-mode) .du-evening-back{display:none!important}
 @media(max-width:380px){.du-quick-nav-mobile a{font-size:12px;padding:8px 7px}.du-quick-nav-mobile{gap:7px;padding:9px 10px}}
 @media(prefers-reduced-motion:reduce){.main-nav a[data-nav="airfryer"]{transition:none}}
 
+
+/* Saved recipes: readable, consistently framed cards across desktop and mobile */
+.du-my-recipes .recipe-grid{align-items:start;gap:22px}
+.du-my-recipes .du-personal-card{display:flex;flex-direction:column;min-width:0;border-radius:20px;box-shadow:0 10px 32px rgba(74,38,46,.07);background:#fffaf6}
+.du-my-recipes .du-personal-open{min-width:0}
+.du-my-recipes .du-personal-photo{display:block;width:100%;height:220px;overflow:hidden;position:relative}
+.du-my-recipes .du-personal-photo img{display:block;width:100%;height:100%;object-fit:cover;object-position:center}
+.du-my-recipes .du-personal-main{padding:20px;min-width:0}
+.du-my-recipes .du-personal-main strong{font-size:clamp(25px,2vw,30px);line-height:1.18;overflow-wrap:anywhere}
+.du-my-recipes .du-personal-meta{font-size:13px;line-height:1.45}
+.du-my-recipes .du-personal-open-text{font-size:14px;font-weight:700}
+.du-my-recipes .du-personal-note{margin-top:auto;min-width:0;border-top:1px solid #eadad5;padding:17px 20px 20px;background:#fff9f5}
+.du-my-recipes .du-personal-note label{font-size:14px}
+.du-my-recipes .du-personal-note textarea{width:100%;max-width:100%;min-width:0;border-radius:10px}
+.du-my-recipes .du-personal-controls button{min-height:42px;border-radius:9px}
+@media(max-width:1080px){.du-my-recipes .recipe-grid{gap:18px}}
+@media(max-width:680px){.du-my-recipes .du-personal-photo{height:225px}.du-my-recipes .du-personal-main{padding:18px}.du-my-recipes .du-personal-note{padding:16px 18px 18px}.du-my-recipes .du-personal-controls button{flex:1 1 130px}}
 </style>
 </head><body>
 <div class="demo-strip"><span class="demo-dot"></span> ОТКРЫТАЯ КОЛЛЕКЦИЯ · 1000 РЕЦЕПТОВ + 1 СЕКРЕТНЫЙ · ГОТОВЬТЕ ВМЕСТЕ</div>
