@@ -5,6 +5,9 @@ on:
       - 'index.html'
       - 'full-catalog/index.html'
       - 'scripts/test_pantry_search.cjs'
+      - 'scripts/test_editorial_recipe.cjs'
+      - 'scripts/e2e-editorial-recipe.cjs'
+      - 'assets/editorial-recipe.css'
       - 'scripts/e2e-pantry-search.cjs'
       - '.github/workflows/pantry-search.yml'
   workflow_dispatch:
@@ -20,6 +23,7 @@ jobs:
           persist-credentials: false
       - run: node scripts/test_pantry_search.cjs
       - run: node scripts/test_ingredient_search.cjs
+      - run: node scripts/test_editorial_recipe.cjs
   browser:
     runs-on: ubuntu-latest
     timeout-minutes: 15
@@ -39,3 +43,4 @@ jobs:
             sleep 1
           done
           node scripts/e2e-pantry-search.cjs
+          node scripts/e2e-editorial-recipe.cjs
