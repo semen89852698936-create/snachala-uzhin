@@ -1434,7 +1434,7 @@ function renderRecipes(){
  const more=$('loadMoreRecipes');more.hidden=items.length<=visibleLimit;more.textContent='Показать ещё '+Math.min(PAGE_SIZE,Math.max(0,items.length-visibleLimit))+' рецептов ↓';
  $('emptyState').hidden=items.length>0;
  $('recipeGrid').innerHTML=items.slice(0,visibleLimit).map((r,index)=>{
-   const missing=missingById.get(r.id),isPantry=Boolean(matches);
+   const missing=missingById.get(r.id)||[],isPantry=Boolean(matches);
    const coverage=coveredById.get(r.id)||0;
    const partialOnly=isPantry&&coverage<parts.length;
    const previous=index?missingById.get(items[index-1].id):null;
