@@ -27,6 +27,3 @@ project-operations
 README.md
 server.py
 docs
-*.zip
-*.png
-*.mp4
