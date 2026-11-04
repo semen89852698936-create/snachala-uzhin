@@ -33,7 +33,7 @@ def read_multipart(environ):
         value=part.get_payload(decode=True)
         if value is None or len(value)>8192:raise ValueError('invalid field length')
         value=value.decode('utf-8')
-        match=re.fullmatch(r'products\[(\\d+)\]\[([a-z_]+)\]',key)
+        match=re.fullmatch(r'products\[(\d+)\]\[([a-z_]+)\]',key)
         if match:
             n=int(match.group(1))
             if n>10:raise ValueError('too many products')
