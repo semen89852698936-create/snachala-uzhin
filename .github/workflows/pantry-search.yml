@@ -1,0 +1,41 @@
+name: Pantry search and missing groceries QA
+on:
+  pull_request:
+    paths:
+      - 'index.html'
+      - 'full-catalog/index.html'
+      - 'scripts/test_pantry_search.cjs'
+      - 'scripts/e2e-pantry-search.cjs'
+      - '.github/workflows/pantry-search.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  static:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          persist-credentials: false
+      - run: node scripts/test_pantry_search.cjs
+      - run: node scripts/test_ingredient_search.cjs
+  browser:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          persist-credentials: false
+      - name: Install pinned Playwright and Chromium
+        run: |
+          npm install --no-save playwright@1.56.1
+          npx playwright install chromium --with-deps
+      - name: Start local static preview and test mobile and desktop
+        run: |
+          python3 -m http.server 8765 --bind 127.0.0.1 > /tmp/pantry-http.log 2>&1 &
+          for i in $(seq 1 30); do
+            if curl -fsS http://127.0.0.1:8765/ >/dev/null; then break; fi
+            sleep 1
+          done
+          node scripts/e2e-pantry-search.cjs
