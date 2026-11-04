@@ -12,6 +12,14 @@ def extract(source,destination):
     recipes=json.loads(matches[0].group(1))
     if not isinstance(recipes,list) or len(recipes)!=1001 or len({r['id'] for r in recipes})!=1001:
         raise ValueError('expected 1001 unique recipe IDs')
+    # Fail the commercial build if any recipe photo falls outside the paid-image
+    # namespace. Otherwise a future catalog edit could bypass the photo gate.
+    photos=[r.get('photo') for r in recipes]
+    if len(set(photos))!=1001 or any(
+        not isinstance(photo,str) or not re.fullmatch(
+            r'/assets/recipes-ai/[A-Za-z0-9_.-]+\\.webp',photo)
+        for photo in photos):
+        raise ValueError('all 1001 recipe photos must use unique protected WebP paths')
     out=Path(destination)
     out.parent.mkdir(parents=True,exist_ok=True)
     out.write_text(html,encoding='utf-8')
