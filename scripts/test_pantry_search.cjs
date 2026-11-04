@@ -33,6 +33,24 @@ for(const path of ['index.html','full-catalog/index.html']){
   assert.ok(matches.some(x=>x.recipe.title.includes('Куриное рагу')&&x.missing.length===1&&x.missing[0].name==='Бульон овощной'),path+': missing broth detection');
   assert.ok(matches.some(x=>x.recipe.title.includes('Нежные фрикадельки')&&x.missing.length===1&&x.missing[0].name==='Сухари панировочные'),path+': missing breadcrumbs detection');
   assert.ok(matches.some(x=>x.missing.length===0),path+': complete pantry dishes missing');
+  // Regression: common Russian pantry queries must never disappear because of grammatical forms.
+  // Existing catalog does not contain a recipe combining either protein with potato;
+  // show genuine partial matches, not invented complete matches.
+  for(const protein of ['говядина','курица','индейка']){
+    const request=parts(protein+', картофель');
+    const ranked=rank(recipes,request,true);
+    assert.ok(ranked.length>0,path+': no suggestions for '+protein+' + картофель');
+    assert.ok(ranked.some(x=>x.available>0),path+': query terms not understood for '+protein);
+    assert.ok(!recipes.some(x=>hasAll(x,request)),path+': catalog changed, update expected full-match coverage for '+protein);
+    assert.ok(ranked.every(x=>x.available<request.length),path+': partial match must not be labeled a complete ingredient match');
+  }
+  const beefQuery=parts('говядина');
+  const turkeyQuery=parts('индейка');
+  assert.ok(recipes.some(x=>hasAll(x,beefQuery)),path+': beef grammatical form must be recognized');
+  assert.ok(recipes.some(x=>hasAll(x,turkeyQuery)),path+': turkey grammatical form must be recognized');
+  assert.ok(html.includes('Используется '),path+': partial matches require a clear explanation');
+  assert.ok(html.includes('Рецептов со всеми введёнными продуктами пока нет.'),path+': catalog limitation must be disclosed');
+
   const withoutBasics=rank(recipes,allParts,false);
   assert.ok(withoutBasics.filter(x=>x.missing.length===0).length<=matches.filter(x=>x.missing.length===0).length,path+': basics toggle ineffective');
   assert.equal(missing({ingredients:[{name:'Перец зелёный горошком',unit:'г',amount:10}]},[],true).length,1,path+': specialty pepper must not be assumed stocked');

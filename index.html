@@ -1296,6 +1296,12 @@ const norm=s=>String(s??'').toLocaleLowerCase('ru-RU').replace(/ё/g,'е').norma
    Comma-separated products use AND across ingredient names only.
    A plain phrase still searches recipe titles, descriptions and products as before. */
 const INGREDIENT_SEARCH_SYNONYMS = Object.freeze({
+  'говядина':['говядин','говяж'],
+  'говядину':['говядин','говяж'],
+  'говядины':['говядин','говяж'],
+  'индейка':['индей','индюш'],
+  'индейки':['индей','индюш'],
+  'индейку':['индей','индюш'],
   'курица':['курин','куриц','цыплен'],
   'курицу':['курин','куриц','цыплен'],
   'курицы':['курин','куриц','цыплен'],
@@ -1410,7 +1416,7 @@ function renderRecipes(){
  const missingById=new Map(matches?matches.map(entry=>[entry.recipe.id,entry.missing]):[]);
  const modeButton=$('pantryMode');modeButton.setAttribute('aria-pressed',String(state.pantryMode));
  $('pantryControls').hidden=!state.pantryMode;
- $('pantrySummary').textContent=matches?('Можно приготовить: '+matches.filter(entry=>!entry.missing.length).length+' · Не хватает 1–2 продуктов: '+matches.filter(entry=>entry.missing.length>0).length):'Введи продукты через запятую. Мы покажем, что можно приготовить и что докупить.';
+ $('pantrySummary').textContent=matches?((matches.length&&!matches.some(entry=>entry.available===parts.length)?'Рецептов со всеми введёнными продуктами пока нет. Ниже варианты с частью продуктов. · ':'')+'Можно приготовить: '+matches.filter(entry=>!entry.missing.length&&entry.available===parts.length).length+' · Не хватает 1–2 продуктов: '+matches.filter(entry=>entry.missing.length>0).length):'Введи продукты через запятую. Мы покажем, что можно приготовить и что докупить.';
  $('resultCount').textContent=countLabel(items.length,['рецепт','рецепта','рецептов']);
  const more=$('loadMoreRecipes');more.hidden=items.length<=visibleLimit;more.textContent='Показать ещё '+Math.min(PAGE_SIZE,Math.max(0,items.length-visibleLimit))+' рецептов ↓';
  $('emptyState').hidden=items.length>0;
@@ -1418,7 +1424,9 @@ function renderRecipes(){
    const missing=missingById.get(r.id),isPantry=Boolean(matches);
    const previous=index?missingById.get(items[index-1].id):null;
    const group=isPantry&&(!index||Boolean(previous?.length)!==Boolean(missing?.length))?'<h3 class="du-pantry-group-title">'+(missing.length?'Не хватает 1–2 продуктов':'Можно приготовить из имеющегося')+'</h3>':'';
-   const notes=isPantry?'<div class="du-pantry-result-note '+(missing.length?'':'is-ready')+'">'+(missing.length?'<span>Докупить: '+missing.map(i=>safe(i.name)).join(', ')+'</span><button type="button" data-shop-missing="'+safe(r.id)+'">+ В список продуктов</button>':'<span>✓ Все необходимые ингредиенты есть'+(state.pantryBasics?' (с учётом базовых продуктов)':'')+'</span>')+'</div>':'';
+   const availableCount=matches?matches.find(entry=>entry.recipe.id===r.id)?.available||0:0;
+   const partialNote=isPantry&&availableCount<parts.length?'<span>Используется '+availableCount+' из '+parts.length+' введённых продуктов. </span>':'';
+   const notes=isPantry?'<div class="du-pantry-result-note '+(missing.length?'':'is-ready')+'">'+partialNote+(missing.length?'<span>Докупить: '+missing.map(i=>safe(i.name)).join(', ')+'</span><button type="button" data-shop-missing="'+safe(r.id)+'">+ В список продуктов</button>':'<span>✓ Все необходимые ингредиенты есть'+(state.pantryBasics?' (с учётом базовых продуктов)':'')+'</span>')+'</div>':'';
    return group+`<article tabindex="0" role="button" aria-label="Открыть рецепт ${safe(r.title)}" data-recipe="${r.id}" class="recipe-card"><div class="card-image photo" style="${labelPhoto(r)}"><img class="food-photo" loading="lazy" alt="" src="${photo(r.photo)}" onerror="this.remove()"><button type="button" class="fav-floating ${state.favorites.includes(r.id)?'is-fav':''}" data-fav="${r.id}" aria-label="${state.favorites.includes(r.id)?'Убрать из избранного':'В избранное'}">${state.favorites.includes(r.id)?'♥':'♡'}</button><span class="card-time">◷ ${r.minutes} мин</span>${r.id.startsWith('collection-')?'<span class="du-photo-note">Иллюстрация раздела</span>':''}</div><div class="card-body"><div class="card-meta"><span>${safe(r.cuisine)}</span><span>·</span><span>${safe(catName(r.category))}</span></div><h3>${safe(r.title)}</h3><p>${safe(r.description)}</p>${notes}<div class="card-footer"><b>${safe(r.level)} · ${r.base} порц.</b><span>↗</span></div></div></article>`;
  }).join('');
  $('recipeGrid').querySelectorAll('[data-recipe]').forEach(card=>{card.addEventListener('click',e=>{if(e.target.closest('[data-fav],[data-shop-missing]'))return;location.hash='recipe='+card.dataset.recipe});card.addEventListener('keydown',e=>{if(e.target===card&&(e.key==='Enter'||e.key===' ')){e.preventDefault();location.hash='recipe='+card.dataset.recipe}})});
