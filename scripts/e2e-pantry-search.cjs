@@ -46,6 +46,18 @@ const assert=require('node:assert/strict');
     assert.equal(await page.locator('#pantryMode').getAttribute('aria-pressed'),'false','User can return to ordinary search');
     await page.locator('#recipeSearch').fill('паста');
     assert.ok(await page.locator('article[data-recipe]').count()>0,'Ordinary search should remain functional');
+    // Real-browser regression: three common pantry combinations previously
+    // appeared empty or misleading because of missing morphology and recipes.
+    for(const protein of ['говядина','курица','индейка']){
+      await page.locator('#recipeSearch').fill(protein+', картофель');
+      await page.waitForFunction(()=>document.getElementById('pantrySummary').textContent.includes('В коллекции пока нет одного рецепта'));
+      assert.equal(await page.locator('#pantryMode').getAttribute('aria-pressed'),'true','Comma input activates pantry mode');
+      const groups=await page.locator('#recipeGrid .du-pantry-group-title').allInnerTexts();
+      assert.deepEqual(groups,['Блюда с продуктом «'+protein+'»','Блюда с продуктом «картофель»'],protein+': main + garnish groups');
+      const cards=page.locator('#recipeGrid article[data-recipe]');
+      assert.ok(await cards.count()>=8,protein+': suggestions from real recipes must be visible');
+      assert.match(await page.locator('#pantrySummary').innerText(),/Ниже блюда с каждым продуктом отдельно/,protein+': no false combined-recipe promise');
+    }
     if(viewport.width<500){
       const overflow=await page.evaluate(()=>document.documentElement.scrollWidth-document.documentElement.clientWidth);
       if(overflow>2){
