@@ -59,7 +59,7 @@ class IntegrationTests(unittest.TestCase):
     def test_actual_merchant_url(self):
         url=payment_url(self.order,merchant_url='https://snachala-uzhin.payform.ru/',
                         sys_code='agreed-integration-code',secret=self.key,
-                        return_url='https://site.example/checkout')
+                        return_url='https://site.example/checkout', notification_url='https://site.example/webhooks/prodamus')
         self.assertEqual(urlparse(url).hostname,'snachala-uzhin.payform.ru')
         self.assertEqual(parse_qs(urlparse(url).query)['products[0][price]'],['1900.00'])
 
@@ -68,15 +68,22 @@ class IntegrationTests(unittest.TestCase):
         self.assertFalse(self.store.has_access('buyer@example.ru'))
     def test_fixed_price_url_and_signature(self):
         url=payment_url(self.order,merchant_url='https://merchant.payform.ru/',
-                        sys_code='configured-sys',secret=self.key,return_url='https://site.example/checkout')
+                        sys_code='configured-sys',secret=self.key,return_url='https://site.example/checkout', notification_url='https://site.example/webhooks/prodamus')
         qs=parse_qs(urlparse(url).query)
         self.assertEqual(qs['products[0][price]'],['1900.00'])
         self.assertEqual(qs['order_id'],[self.order['order_num']])
         self.assertNotIn('subscription',qs)
         self.assertIn('signature',qs)
+        self.assertEqual(qs['urlNotification'],['https://site.example/webhooks/prodamus'])
+        self.assertEqual(qs['currency'],['rub'])
+        self.assertEqual(qs['payments_limit'],['1'])
+        with self.assertRaises(ValueError):
+            payment_url(self.order,merchant_url='https://merchant.payform.ru/',sys_code='configured-sys',
+                        secret=self.key,return_url='https://site.example/checkout',
+                        notification_url='https://attacker.example/webhooks/prodamus')
         with self.assertRaises(ValueError):
             payment_url(self.order,merchant_url='http://fake.example/',
-                        sys_code='configured-sys',secret=self.key,return_url='https://site.example/')
+                        sys_code='configured-sys',secret=self.key,return_url='https://site.example/', notification_url='https://site.example/webhooks/prodamus')
     def test_deep_sort(self):
         data={'z':'1','a':[{'z':'2','a':'3'}]}
         perm={'a':[{'a':'3','z':'2'}],'z':'1'}
