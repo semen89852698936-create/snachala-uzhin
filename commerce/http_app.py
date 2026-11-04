@@ -23,7 +23,7 @@ def read_multipart(environ):
     ctype=environ.get('CONTENT_TYPE','')
     if not ctype.startswith('multipart/form-data;'):raise ValueError('multipart expected')
     raw=environ['wsgi.input'].read(length)
-    msg=BytesParser(policy=default).parsebytes(('Content-Type: '+ctype+'\\r\\nMIME-Version: 1.0\\r\\n\\r\\n').encode()+raw)
+    msg=BytesParser(policy=default).parsebytes(('Content-Type: '+ctype+'\r\nMIME-Version: 1.0\r\n\r\n').encode()+raw)
     if not msg.is_multipart():raise ValueError('multipart expected')
     result={};products={}
     for part in msg.iter_parts():
@@ -33,7 +33,7 @@ def read_multipart(environ):
         value=part.get_payload(decode=True)
         if value is None or len(value)>8192:raise ValueError('invalid field length')
         value=value.decode('utf-8')
-        match=re.fullmatch(r'products\\[(\\d+)\\]\\[([a-z_]+)\\]',key)
+        match=re.fullmatch(r'products\[(\\d+)\]\[([a-z_]+)\]',key)
         if match:
             n=int(match.group(1))
             if n>10:raise ValueError('too many products')
@@ -86,7 +86,7 @@ class CommerceApp:
         message['From']=self.smtp['sender']
         message['To']=email
         message['Subject']='СНАЧАЛА УЖИН - вход в мой каталог'
-        message.set_content('Для входа открой ссылку (действует 10 минут):\\n'+self.base_url+'/login?token='+token)
+        message.set_content('Для входа открой ссылку (действует 10 минут):\n'+self.base_url+'/login?token='+token)
         with smtplib.SMTP_SSL(self.smtp['host'],int(self.smtp['port']),context=ssl.create_default_context(),timeout=10) as client:
             client.login(self.smtp['user'],self.smtp['password'])
             client.send_message(message)
