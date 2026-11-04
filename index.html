@@ -1438,7 +1438,7 @@ function renderRecipes(){
    const coverage=coveredById.get(r.id)||0;
    const partialOnly=isPantry&&coverage<parts.length;
    const previous=index?missingById.get(items[index-1].id):null;
-   const previousPartial=index?((coveredById.get(items[index-1].id)||0)<parts.length):null;
+   const previousPartial=isPantry&&index?((coveredById.get(items[index-1].id)||0)<parts.length):null;
    const ingredientGroup=pairSuggestions?parts.find(part=>recipeMatchesIngredientParts(r,[part])):null;
    const previousGroup=pairSuggestions&&index?parts.find(part=>recipeMatchesIngredientParts(items[index-1],[part])):null;
    const group=pairSuggestions
