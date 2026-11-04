@@ -10,10 +10,21 @@ const fs=require('fs');
    for(const viewport of [{name:'desktop',width:1440,height:900},{name:'phone',width:390,height:844}]){
     const page=await browser.newPage({viewport:{width:viewport.width,height:viewport.height},locale:'ru-RU',reducedMotion:'reduce'});
     const problems=[];
-    page.on('pageerror',err=>problems.push(String(err)));
+    page.on('pageerror',err=>{problems.push(String(err));console.error('PAGEERROR',route,viewport.name,String(err));});
+    page.on('response',res=>{if(res.url().includes('editorial-recipe'))console.log('ASSET RESPONSE',res.status(),res.url());});
     const response=await page.goto('http://127.0.0.1:8769/'+route+'#recipe=focaccia',{waitUntil:'domcontentloaded',timeout:35000});
     if(!response||response.status()!==200)throw Error(route+' not served');
-    await page.waitForSelector('#recipeDetail .er-overview-number',{timeout:20000});
+    await page.waitForTimeout(1800);
+    console.log('BOOT DIAGNOSTIC',route,viewport.name,await page.evaluate(()=>({
+      hash:location.hash,recipeViewHidden:document.getElementById('recipeView')?.hidden,
+      detailLength:document.getElementById('recipeDetail')?.innerHTML.length,
+      existing:document.querySelectorAll('#recipeDetail .du-film-card').length,
+      editorial:document.querySelectorAll('#recipeDetail .er-overview-number').length,
+      renderRecipe:typeof window.renderRecipe,renderCook:typeof window.renderCook,
+      link:!!document.querySelector('link[href*="editorial-recipe"]'),
+      script:!!document.querySelector('script[src*="editorial-recipe"]')
+    })));
+    await page.waitForSelector('#recipeDetail .er-overview-number',{timeout:3000});
     const overview=await page.evaluate(()=>({
       steps:document.querySelectorAll('#recipeDetail .du-film-card').length,
       ordinal:document.querySelectorAll('#recipeDetail .er-overview-number').length,
