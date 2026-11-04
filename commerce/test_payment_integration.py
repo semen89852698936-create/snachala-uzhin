@@ -91,13 +91,16 @@ class IntegrationTests(unittest.TestCase):
         self.assertTrue(verify(data,self.key,sign(data,self.key)))
     def test_1001_catalog_export(self):
         source=self.root/'source.html'
-        recipes=[{'id':str(i),'title':'recipe'} for i in range(1001)]
+        recipes=[{'id':str(i),'title':'recipe','photo':'/assets/recipes-ai/%04d-test.webp'%i} for i in range(1001)]
         html='<script id="recipeData" type="application/json">'+json.dumps(recipes)+'</script>'
         source.write_text(html,encoding='utf-8')
         destination=self.root/'private'/'app.html'
         self.assertEqual(extract(source,destination)['recipes'],1001)
         self.assertEqual(destination.read_text(),html)
         source.write_text('<script id="recipeData" type="application/json">[]</script>')
+        with self.assertRaises(ValueError):extract(source,destination)
+        recipes[0]['photo']='/assets/public/fake.webp'
+        source.write_text('<script id="recipeData" type="application/json">'+json.dumps(recipes)+'</script>')
         with self.assertRaises(ValueError):extract(source,destination)
     def test_public_server_never_serves_full_catalog(self):
         private=self.root/'app.html'
