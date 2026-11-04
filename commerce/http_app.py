@@ -100,7 +100,9 @@ class CommerceApp:
         return data
     def current_email(self,environ):
         token=_cookie(environ)
-        return session_email(token,self.session_key) if token else None
+        if not token: return None
+        try: return session_email(token,self.session_key)
+        except (PermissionError,ValueError): return None
     def __call__(self,environ,start):
         method=environ.get('REQUEST_METHOD','GET')
         path=environ.get('PATH_INFO','/')
@@ -110,19 +112,24 @@ class CommerceApp:
             if method=='GET' and path in ('/','/index.html'):
                 public=ROOT/'commerce'/'public'/'index.html'
                 return self.respond(start,'200 OK',public.read_bytes(),'text/html; charset=utf-8')
+            if method=='GET' and path in ('/account','/account/'):
+                account=ROOT/'commerce'/'public'/'account.html'
+                return self.respond(start,'200 OK',account.read_bytes(),'text/html; charset=utf-8')
             if method=='GET' and path in ('/app','/full-catalog/index.html'):
                 email=self.current_email(environ)
                 if not email or not self.store.has_access(email):return self.respond(start,'403 Forbidden',{'error':'purchase_required'})
                 return self.respond(start,'200 OK',self.private_html.read_bytes(),'text/html; charset=utf-8')
             if method=='GET' and path=='/api/me':
                 email=self.current_email(environ)
-                return self.respond(start,'200 OK',{'authenticated':bool(email),'has_access':bool(email and self.store.has_access(email))})
+                has_access=bool(email and self.store.has_access(email))
+                return self.respond(start,'200 OK',{'authenticated':bool(email),'has_access':has_access,
+                    'email':email if email else None,'access_type':'lifetime' if has_access else None})
             if method=='GET' and path=='/login':
                 token=parse_qs(environ.get('QUERY_STRING','')).get('token',[''])[0]
                 email=self.auth.consume(token)
                 session=issue_session(email,self.session_key)
                 return self.respond(start,'303 See Other',b'',headers=[
-                    ('Location','/app' if self.store.has_access(email) else '/'),
+                    ('Location','/account'),
                     ('Set-Cookie','su_session='+session+'; Secure; HttpOnly; SameSite=Lax; Path=/; Max-Age=86400')])
             if method=='GET' and (path.startswith('/assets/') or path=='/favicon.svg'):
                 # Assets remain public. Never serve HTML, JSON, Python or source trees.
@@ -131,6 +138,13 @@ class CommerceApp:
                 target=(base/rel).resolve()
                 if not target.is_relative_to(base) or not target.is_file() or target.suffix.lower() not in ('.webp','.avif','.svg','.png','.jpg','.jpeg'):
                     return self.respond(start,'404 Not Found',{'error':'not_found'})
+                # Recipe photographs are part of the paid product.
+                # Check the RESOLVED path, not just the URL prefix; otherwise
+                # /assets/other/../recipes-ai/photo.webp could bypass the gate.
+                if path.startswith('/assets/') and target.is_relative_to((base/'recipes-ai').resolve()):
+                    buyer=self.current_email(environ)
+                    if not buyer or not self.store.has_access(buyer):
+                        return self.respond(start,'403 Forbidden',{'error':'purchase_required'})
                 media={'.webp':'image/webp','.avif':'image/avif','.svg':'image/svg+xml','.png':'image/png','.jpg':'image/jpeg','.jpeg':'image/jpeg'}[target.suffix.lower()]
                 return self.respond(start,'200 OK',target.read_bytes(),media)
             if method=='POST' and path.startswith('/api/'):
