@@ -101,7 +101,9 @@ class CommerceApp:
     def current_email(self,environ):
         token=_cookie(environ)
         if not token: return None
-        try: return session_email(token,self.session_key)
+        try:
+            email=session_email(token,self.session_key)
+            return None if self.store.session_revoked(token) else email
         except (PermissionError,ValueError): return None
     def __call__(self,environ,start):
         method=environ.get('REQUEST_METHOD','GET')
@@ -175,6 +177,13 @@ class CommerceApp:
                         raise
                     return self.respond(start,'200 OK',message)
                 if path=='/api/logout':
+                    token=_cookie(environ)
+                    if token:
+                        try:
+                            session_email(token,self.session_key)
+                            self.store.revoke_session(token)
+                        except (PermissionError,ValueError):
+                            pass
                     return self.respond(start,'200 OK',{'ok':True},headers=[('Set-Cookie','su_session=; Secure; HttpOnly; SameSite=Lax; Path=/; Max-Age=0')])
             if method=='POST' and path=='/webhooks/prodamus':
                 # Prodamus does not set a browser Origin. Signature alone authenticates it.
