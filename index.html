@@ -1357,7 +1357,7 @@ function pantryRankedCandidates(recipes,parts,assumeBasics) {
     available:parts.filter(part=>recipe.ingredients.some(i=>pantryHasIngredient(i.name,[part]))).length,
     missing:pantryMissingIngredients(recipe,parts,assumeBasics)
   })).filter(entry=>entry.available>0&&entry.missing.length<=2)
-    .sort((a,b)=>b.available-a.available||a.missing.length-b.missing.length||a.recipe.minutes-b.recipe.minutes||a.recipe.title.localeCompare(b.recipe.title,'ru'));
+    .sort((a,b)=>a.missing.length-b.missing.length||b.available-a.available||a.recipe.minutes-b.recipe.minutes||a.recipe.title.localeCompare(b.recipe.title,'ru'));
 }
 /* PANTRY_SEARCH_V2_END */
 
