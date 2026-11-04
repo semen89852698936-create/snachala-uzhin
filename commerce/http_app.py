@@ -208,9 +208,22 @@ def from_environment():
     if os.environ.get('SMTP_HOST'):
         settings={'host':req('SMTP_HOST'),'port':req('SMTP_PORT'),'user':req('SMTP_USER'),
                   'password':req('SMTP_PASSWORD'),'sender':req('SMTP_SENDER')}
-    return CommerceApp(db_path=os.getenv('COMMERCE_DATABASE_URL') or req('COMMERCE_DB_PATH'),
+    checkout=os.getenv('ENABLE_CHECKOUT')=='1'
+    postgres_url=os.getenv('COMMERCE_DATABASE_URL','')
+    # Payment processing must fail closed if a temporary SQLite DB, inactive mail
+    # or an unverified Prodamus merchant is accidentally configured.
+    if checkout:
+        if not postgres_url.startswith(('postgresql://','postgres://')):
+            raise RuntimeError('Live checkout requires persistent PostgreSQL')
+        if not settings:
+            raise RuntimeError('Live checkout requires working SMTP settings')
+        if not all(os.getenv(key) for key in ('PRODAMUS_URL','PRODAMUS_SYS','PRODAMUS_SECRET')):
+            raise RuntimeError('Live checkout requires configured merchant')
+        if os.getenv('COMMERCE_PAYMENT_QA_APPROVED')!='1':
+            raise RuntimeError('Live checkout blocked until signed payment and refund QA')
+    return CommerceApp(db_path=postgres_url or req('COMMERCE_DB_PATH'),
                        private_html=req('PRIVATE_CATALOG_HTML'),
                        session_key=bytes.fromhex(req('SESSION_KEY_HEX')),base_url=req('COMMERCE_BASE_URL'),
                        merchant_url=os.getenv('PRODAMUS_URL',''),sys_code=os.getenv('PRODAMUS_SYS',''),
                        merchant_secret=os.getenv('PRODAMUS_SECRET',''),smtp=settings,
-                       checkout_enabled=os.getenv('ENABLE_CHECKOUT')=='1')
+                       checkout_enabled=checkout)
