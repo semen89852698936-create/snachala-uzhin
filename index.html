@@ -1418,7 +1418,8 @@ function renderRecipes(){
  const partial=ranked?ranked.filter(entry=>entry.available<parts.length):[];
  // If no single recipe uses both groceries, suggest separate main dishes and sides.
  // Never claim those recipes contain both searched ingredients.
- const pairSuggestions=Boolean(ranked&&parts.length===2&&!complete.length&&partial.length);
+ const anyCombined=Boolean(parts&&parts.length===2&&filtered.some(recipe=>recipeMatchesIngredientParts(recipe,parts)));
+ const pairSuggestions=Boolean(ranked&&parts.length===2&&!anyCombined&&partial.length);
  const matches=pairSuggestions?parts.flatMap(part=>partial.filter(entry=>recipeMatchesIngredientParts(entry.recipe,[part])).slice(0,8)):ranked;
  const items=matches?matches.map(entry=>entry.recipe):filtered.filter(r=>!query||norm([r.title,r.description,r.cuisine,catName(r.category),...r.ingredients.map(x=>x.name)].join(' ')).includes(query));
  const missingById=new Map(matches?matches.map(entry=>[entry.recipe.id,entry.missing]):[]);
