@@ -83,7 +83,7 @@ class IntegrationTests(unittest.TestCase):
                          'QUERY_STRING':'','HTTP_COOKIE':cookie},start))
                 return state['status'],response
             self.assertEqual(get('/app')[0],'403 Forbidden')
-            self.assertEqual(get('/full-catalog/index.html')[0],'404 Not Found')
+            self.assertEqual(get('/full-catalog/index.html')[0],'403 Forbidden')
             self.assertEqual(get('/commerce/access.py')[0],'404 Not Found')
             self.assertEqual(get('/index.html')[0],'200 OK')
             self.assertNotIn(b'PRIVATE_CATALOG_1001',get('/index.html')[1])
