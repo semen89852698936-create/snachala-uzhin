@@ -1,0 +1,19 @@
+name: Search regression (1001 recipes)
+on:
+  pull_request:
+    paths:
+      - 'index.html'
+      - 'full-catalog/index.html'
+      - 'scripts/test_ingredient_search.cjs'
+      - '.github/workflows/ingredient-search.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  search-regression:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check ingredient matching, source data and both JavaScript entry points
+        run: node scripts/test_ingredient_search.cjs
