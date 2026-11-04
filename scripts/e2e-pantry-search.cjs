@@ -48,6 +48,10 @@ const assert=require('node:assert/strict');
     assert.ok(await page.locator('article[data-recipe]').count()>0,'Ordinary search should remain functional');
     if(viewport.width<500){
       const overflow=await page.evaluate(()=>document.documentElement.scrollWidth-document.documentElement.clientWidth);
+      if(overflow>2){
+        const offenders=await page.evaluate(()=>[...document.querySelectorAll('body *')].map(el=>({element:el,rect:el.getBoundingClientRect()})).filter(x=>x.rect.width>0&&x.rect.right>innerWidth+2).sort((a,b)=>b.rect.right-a.rect.right).slice(0,12).map(x=>({tag:x.element.tagName,id:x.element.id,class:String(x.element.className).slice(0,85),right:Math.round(x.rect.right),left:Math.round(x.rect.left),width:Math.round(x.rect.width)})));
+        console.log('MOBILE OVERFLOW DIAGNOSTIC',JSON.stringify(offenders));
+      }
       assert.ok(overflow<=2,'Mobile horizontal overflow: '+overflow);
     }
     assert.deepEqual(errors,[],'No browser JavaScript exceptions: '+errors.join(', '));
