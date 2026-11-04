@@ -30,3 +30,11 @@ Confirm the merchant's actual `*.payform.ru` URL and the integration-specific `s
 - Each login issues a unique signed cookie; `POST /api/logout` persists the cookie hash as revoked and clears the Secure, HttpOnly, SameSite=Lax cookie. Previously signed-out cookies must not work even if replayed. Lifetime refers to the entitlement, not the cookie duration.
 - Only recipe photographs under `/assets/recipes-ai` are protected; their WebP paths are checked for **all 1001 recipes** in `commerce/private_catalog.py` at build time. Other marketing images are intentionally public.
 - `python -m unittest discover -s commerce -p 'test_*.py' -v` checks catalog, private photo paths, revocation, email login and rate limiting. `scripts/e2e-commerce-account.cjs` checks UI on desktop and mobile with mocked API responses. This is not a live buyer/payment test.
+
+## Verified no-cost CI staging (not live hosting)
+
+- Job commerce-docker-http builds the actual production Dockerfile and starts Gunicorn with a disposable database and ENABLE_CHECKOUT=0.
+- Script scripts/smoke-commerce-http.py sends 27 HTTP requests. It confirms protected 1001-recipe HTML and paid WebP, anonymous/legacy route denials, a synthetic test purchase, account status, server-side sign-out revocation, and disabled checkout.
+- Successful run: https://github.com/semen89852698936-create/snachala-uzhin/actions/runs/41899815848
+- This is NOT a merchant payment, email delivery, real HTTPS, persistent production database, or a cloud-hosted website. The test database and container are destroyed after CI.
+- Keep the commercial Docker image in a private registry: the private catalog is embedded in its internal filesystem, and URL access checks do not encrypt the image. .dockerignore excludes local .env files, Git and irrelevant temporary data from build context.
