@@ -139,7 +139,7 @@ class CommerceApp:
                     if not self.checkout_enabled: return self.respond(start,'503 Service Unavailable',{'error':'checkout_not_enabled'})
                     data=self.json_request(environ)
                     order=self.store.create_order(data.get('email'))
-                    link=payment_url(order,merchant_url=self.merchant_url,sys_code=self.sys_code,secret=self.merchant_secret,return_url=self.base_url+'/')
+                    link=payment_url(order,merchant_url=self.merchant_url,sys_code=self.sys_code,secret=self.merchant_secret,return_url=self.base_url+'/',notification_url=self.base_url+'/webhooks/prodamus')
                     return self.respond(start,'201 Created',{'checkout_url':link,'order_num':order['order_num']})
                 if path=='/api/auth/request-link':
                     data=self.json_request(environ)
