@@ -208,7 +208,8 @@ def from_environment():
     if os.environ.get('SMTP_HOST'):
         settings={'host':req('SMTP_HOST'),'port':req('SMTP_PORT'),'user':req('SMTP_USER'),
                   'password':req('SMTP_PASSWORD'),'sender':req('SMTP_SENDER')}
-    return CommerceApp(db_path=req('COMMERCE_DB_PATH'),private_html=req('PRIVATE_CATALOG_HTML'),
+    return CommerceApp(db_path=os.getenv('COMMERCE_DATABASE_URL') or req('COMMERCE_DB_PATH'),
+                       private_html=req('PRIVATE_CATALOG_HTML'),
                        session_key=bytes.fromhex(req('SESSION_KEY_HEX')),base_url=req('COMMERCE_BASE_URL'),
                        merchant_url=os.getenv('PRODAMUS_URL',''),sys_code=os.getenv('PRODAMUS_SYS',''),
                        merchant_secret=os.getenv('PRODAMUS_SECRET',''),smtp=settings,
