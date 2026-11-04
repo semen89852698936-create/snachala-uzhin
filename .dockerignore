@@ -1,0 +1,32 @@
+# Keep runtime build contexts small and avoid accidentally sending local secrets
+# to the container build engine.
+.git
+.github
+.vercel
+.env
+.env.*
+**/.env
+**/.env.*
+!.env.example
+!**/.env.example
+node_modules
+**/node_modules
+__pycache__
+**/__pycache__
+*.pyc
+exports
+tmp
+logs
+*.sqlite
+*.sqlite3
+*.db
+*.log
+full-catalog
+scripts
+project-operations
+README.md
+server.py
+docs
+*.zip
+*.png
+*.mp4
