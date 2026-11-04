@@ -36,9 +36,13 @@ for (const path of paths) {
     path+': AND search must not silently return partial ingredient matches');
   assert.equal(matches({title:'Курица с грибами',description:'сливки',ingredients:[]},parts('курица, сливки')),false,
     path+': compound ingredient query must inspect ingredients, not marketing description');
-  assert.ok(html.includes('ingredientParts?recipeMatchesIngredientParts(r,ingredientParts)'),
-    path+': matcher not connected to catalog rendering');
-  assert.ok(html.includes('!query||(ingredientParts?'), path+': plain-text search fallback missing');
+  if (html.includes('PANTRY_SEARCH_V2_START')) {
+    assert.ok(html.includes('pantryRankedCandidates(filtered,parts,state.pantryBasics)'),path+': pantry matcher not wired to catalog');
+    assert.ok(html.includes('filtered.filter(r=>!query||norm('),path+': legacy text search fallback missing');
+  } else {
+    assert.ok(html.includes('ingredientParts?recipeMatchesIngredientParts(r,ingredientParts)'),path+': matcher not connected to catalog rendering');
+    assert.ok(html.includes('!query||(ingredientParts?'),path+': plain-text search fallback missing');
+  }
 
   console.log('PASS',path,'recipes:',recipes.length,'multi-ingredient example matches:',allThree.length);
 }
