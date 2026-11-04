@@ -72,7 +72,7 @@ for(const path of ['index.html','full-catalog/index.html']){
   assert.equal(full.length,ragout.ingredients.length,path+': full recipe must not double-count missing-only item');
   // Meat + potato queries must recognize grammatical forms of proteins, and
   // provide honest separate-dish suggestions when no combined recipe exists.
-  for(const [protein,potato] of [['говядина','картофель'],['курица','картофель'],['индейка','картофель']]){
+  for(const [protein,potato] of [['говядина','картофель'],['курица','картофель'],['индейка','картофель'],['свинина','картофель']]){
     const input=parts(protein+', '+potato);
     const proteinRecipes=recipes.filter(r=>hasAll(r,[protein]));
     const potatoRecipes=recipes.filter(r=>hasAll(r,[potato]));
