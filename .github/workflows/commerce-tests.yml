@@ -4,6 +4,9 @@ on:
     paths:
       - 'commerce/**'
       - 'scripts/e2e-commerce-account.cjs'
+      - 'scripts/smoke-commerce-http.py'
+      - 'Dockerfile.commerce'
+      - '.dockerignore'
       - '.github/workflows/commerce-tests.yml'
   workflow_dispatch:
 permissions:
@@ -46,3 +49,37 @@ jobs:
           name: commerce-account-desktop-mobile
           path: exports/commerce-account-*.png
           if-no-files-found: ignore
+
+  commerce-docker-http:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+        with:
+          persist-credentials: false
+      - name: Build isolated protected commerce container
+        run: docker build --file Dockerfile.commerce --tag snachala-commerce-ci .
+      - name: Run container with disposable payments database and checkout disabled
+        run: |
+          set -euo pipefail
+          mkdir -p "$RUNNER_TEMP/su-commerce-db"
+          sudo chown 10001:10001 "$RUNNER_TEMP/su-commerce-db"
+          docker run --detach --name su-commerce-ci \
+            --publish 127.0.0.1:8788:8080 \
+            --volume "$RUNNER_TEMP/su-commerce-db:/srv/data" \
+            --env COMMERCE_BASE_URL=https://staging.example \
+            --env COMMERCE_DB_PATH=/srv/data/orders.sqlite \
+            --env SESSION_KEY_HEX=0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef \
+            --env ENABLE_CHECKOUT=0 \
+            snachala-commerce-ci
+          docker cp scripts/smoke-commerce-http.py su-commerce-ci:/tmp/smoke-commerce-http.py
+          docker exec \
+            --env PYTHONPATH=/srv/site \
+            --env COMMERCE_TEST_MODE=1 \
+            su-commerce-ci python /tmp/smoke-commerce-http.py
+      - name: Diagnose failed staging container
+        if: failure()
+        run: docker logs su-commerce-ci --tail 80 || true
+      - name: Remove disposable staging resources
+        if: always()
+        run: docker rm -f su-commerce-ci >/dev/null 2>&1 || true
