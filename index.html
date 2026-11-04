@@ -1015,6 +1015,13 @@ body:not(.du-evening-mode) .du-evening-back{display:none!important}
 .du-saved-menu-actions button{border:1px solid #dec7cc;border-radius:11px;padding:11px 15px;background:#f9f0eb;color:#663b4d;font:700 14px/1.2 Manrope,Inter,Arial,sans-serif;min-height:44px}
 .du-saved-menu-actions button:first-child{background:#783d54;color:white;border-color:#783d54}
 @media(max-width:680px){.du-my-tab{font-size:14px;flex:1 1 auto;padding:10px 12px}.du-saved-menu{display:block}.du-saved-menu-actions{margin-top:16px}.du-saved-menu-actions button{flex:1 1 125px}.du-my-menu-form{padding:17px}.du-my-menu-form-row button{width:100%}}
+
+/* Keep the requested textual shopping-list button legible without mobile header overflow. */
+@media(max-width:680px){
+ .header-actions .shopping-open{padding:0 9px;gap:4px;min-width:0;white-space:normal}
+ .header-actions .shopping-open .shop-button-label{display:block;max-width:75px;white-space:normal;text-align:center;font-size:12px;line-height:1.12}
+ .header-actions .shopping-open .shop-button-icon{font-size:16px}
+}
 </style>
 </head><body>
 <div class="demo-strip"><span class="demo-dot"></span> ОТКРЫТАЯ КОЛЛЕКЦИЯ · 1000 РЕЦЕПТОВ + 1 СЕКРЕТНЫЙ · ГОТОВЬТЕ ВМЕСТЕ</div>
