@@ -40,6 +40,29 @@ class IntegrationTests(unittest.TestCase):
             with self.subTest(name=name),self.assertRaises((PaymentRejected,ValueError)):
                 self.approve(dict(self.payload,**{name:value}))
         self.assertFalse(self.store.has_access('buyer@example.ru'))
+    def test_official_webhook_without_sku_grants_correct_product(self):
+        # Prodamus official notification sample has product name/price/quantity but no sku.
+        from copy import deepcopy
+        payload=deepcopy(self.payload)
+        payload['products'][0].pop('sku')
+        self.assertTrue(self.approve(payload))
+        self.assertTrue(self.store.has_access('buyer@example.ru'))
+
+    def test_forged_product_name_is_rejected_even_with_valid_hmac(self):
+        from copy import deepcopy
+        payload=deepcopy(self.payload)
+        payload['products'][0].pop('sku')
+        payload['products'][0]['name']='Другая услуга'
+        with self.assertRaises(PaymentRejected):self.approve(payload)
+        self.assertFalse(self.store.has_access('buyer@example.ru'))
+
+    def test_actual_merchant_url(self):
+        url=payment_url(self.order,merchant_url='https://snachala-uzhin.payform.ru/',
+                        sys_code='agreed-integration-code',secret=self.key,
+                        return_url='https://site.example/checkout')
+        self.assertEqual(urlparse(url).hostname,'snachala-uzhin.payform.ru')
+        self.assertEqual(parse_qs(urlparse(url).query)['products[0][price]'],['1900.00'])
+
     def test_failed_payment_never_grants(self):
         self.assertFalse(self.approve(dict(self.payload,payment_status='order_canceled')))
         self.assertFalse(self.store.has_access('buyer@example.ru'))
