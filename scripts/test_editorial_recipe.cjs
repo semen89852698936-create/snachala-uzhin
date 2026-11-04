@@ -1,0 +1,36 @@
+'use strict';
+const assert = require('node:assert/strict');
+const fs = require('node:fs');
+const vm = require('node:vm');
+for (const path of ['index.html', 'full-catalog/index.html']) {
+  const html=fs.readFileSync(path,'utf8');
+  const start=html.indexOf('id="recipeData"');
+  assert.ok(start>0, path+': embedded catalog not found');
+  const begin=html.indexOf('>',start)+1;
+  const data=JSON.parse(html.slice(begin,html.indexOf('</script>',begin)));
+  assert.equal(data.length,1001,path+': recipe count changed');
+  assert.equal(new Set(data.map(x=>x.id)).size,1001,path+': duplicated recipe id');
+  assert.ok(data.every(x=>Array.isArray(x.steps)&&x.steps.length>0),path+': recipe steps missing');
+  assert.ok(html.includes('assets/editorial-recipe.css'),path+': editorial stylesheet not referenced');
+  assert.ok(html.includes('<ol class="du-editorial-steps">'),path+': text-first recipe steps missing');
+  assert.ok(html.includes('du-editorial-step-number'),path+': numbered steps missing');
+  assert.ok(html.includes('du-editorial-cook-index'),path+': guided cooking view not updated');
+  assert.ok(html.includes('id="portionMinus"')&&html.includes('id="portionPlus"'),path+': portion controls removed');
+  assert.ok(html.includes('id="addShopping"')&&html.includes('id="recipeFav"'),path+': shopping/favorite controls removed');
+  assert.ok(html.includes('id="timerStart"')&&html.includes('id="timerReset"'),path+': timer controls removed');
+  assert.ok(html.includes('id="prevStep"')&&html.includes('id="nextStep"'),path+': step navigation removed');
+  const renderStart=html.indexOf('function renderRecipe(id)');
+  const renderEnd=html.indexOf('function addShopping(',renderStart);
+  const cookStart=html.indexOf('function renderCook()');
+  const cookEnd=html.indexOf('function showHome()',cookStart);
+  assert.ok(renderEnd>renderStart&&cookEnd>cookStart,path+': render function boundaries');
+  const recipeRender=html.slice(renderStart,renderEnd);
+  const cookRender=html.slice(cookStart,cookEnd);
+  assert.ok(!recipeRender.includes("stepVisualHtml(r,i,'film')"),path+': still generating step images');
+  assert.ok(!cookRender.includes("stepVisualHtml(r,idx,'master')"),path+': cooking still showing placeholder/step images');
+  assert.ok(!recipeRender.includes('Листай кадры'),path+': obsolete horizontal filmstrip hint');
+  const sourceStart=html.lastIndexOf('<script>',renderStart)+8;
+  const sourceEnd=html.indexOf('</script>',sourceStart);
+  new vm.Script(html.slice(sourceStart,sourceEnd),{filename:path});
+  console.log('PASS editorial',path,data.length,'recipes and intact cooking, shopping and favorites');
+}
