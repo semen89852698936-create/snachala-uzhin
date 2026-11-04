@@ -44,6 +44,10 @@ const assert = require('node:assert/strict');
    assert.equal(await page.locator('#myRecipesGrid .du-personal-card').count(),1,'Notes survive reload');
    if(width===390){
     const overflow=await page.evaluate(()=>document.documentElement.scrollWidth-document.documentElement.clientWidth);
+    if(overflow>2){
+     const offenders=await page.evaluate(()=>Array.from(document.querySelectorAll('body *')).map(el=>({el,box:el.getBoundingClientRect()})).filter(x=>x.box.width>0&&x.box.right>document.documentElement.clientWidth+2).slice(0,25).map(x=>({tag:x.el.tagName,id:x.el.id,cls:String(x.el.className).slice(0,90),left:Math.round(x.box.left),right:Math.round(x.box.right),width:Math.round(x.box.width),scrollWidth:x.el.scrollWidth})));
+     console.error('Mobile overflow diagnostics:',JSON.stringify(offenders));
+    }
     assert.ok(overflow<=2,'Mobile overflow: '+overflow);
    }
    assert.deepEqual(errors,[],'No JavaScript runtime errors');
