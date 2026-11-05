@@ -6,6 +6,13 @@ on:
       - 'full-catalog/index.html'
       - 'scripts/test_catalog_parity.cjs'
       - '.github/workflows/catalog-parity.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'index.html'
+      - 'full-catalog/index.html'
+      - 'scripts/test_catalog_parity.cjs'
+      - '.github/workflows/catalog-parity.yml'
   workflow_dispatch:
 jobs:
   parity:
