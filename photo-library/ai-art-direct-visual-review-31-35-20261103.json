@@ -1,0 +1,173 @@
+{
+  "schema_version": 1,
+  "review_date": "2026-11-03",
+  "scope": "Direct visual inspection of five physical current AI WebP, not archived 100-photo candidates",
+  "source_main_commit": "98082e1a43b085a2a61cf1f679901010cceda2c8",
+  "photo_map_blob_sha": "68c9c4c964c6afb7df5a164fbed3763434402290",
+  "recipe_source": {
+    "ref": "photo-production/yandex-ai-art-1001",
+    "path": "photo-library/recipes.json",
+    "blob_sha": "acb94b3fd125bd3dfd06f5d79bece0b3c3257c4e",
+    "note": "Recipe ingredient names from generator's pinned structured source; current HTML steps were not re-extracted in this pass."
+  },
+  "previous_review": "https://github.com/semen89852698936-create/snachala-uzhin/pull/40",
+  "reviewed_count": 5,
+  "rejected_count": 3,
+  "approved_count": 0,
+  "limitations": [
+    "Visual observations only, not proof of exact ingredients, preparation method or food safety.",
+    "No individual legal clearance, owner approval or production URL verification.",
+    "No technical SHA-256/dimension re-audit of archived files; Git blob IDs are GitHub-provided identifiers.",
+    "Replacement briefs are non-executing and do not authorize paid generation."
+  ],
+  "reviews": [
+    {
+      "n": 31,
+      "recipe_id": "collection-meat-02-03",
+      "title": "Свиная вырезка в духовке с горчицей и мёдом",
+      "path": "assets/recipes-ai/0031-collection-meat-02-03-regen.webp",
+      "blob_sha": "d7d0b30ec8adc9d1af1f3af11c43819e03b6e391",
+      "ingredients": [
+        "Вырезка свиная",
+        "Масло оливковое",
+        "Горчица зерновая",
+        "Мёд",
+        "Соль"
+      ],
+      "status": "needs_culinary_review",
+      "observations": [
+        "На мясе очень плотный сплошной слой крупных жёлтых горчичных зёрен; мёд визуально неотличим от глазури.",
+        "Видимый кусок мяса толстый, нарезка поперёк волокон, указанная в рецепте, не показана."
+      ],
+      "reason": "Неоднозначна пропорция горчицы и соответствие финальной подаче; не утверждать до оценки."
+    },
+    {
+      "n": 32,
+      "recipe_id": "collection-meat-02-04",
+      "title": "Свиная вырезка в духовке с паприкой и чесноком",
+      "path": "assets/recipes-ai/0032-collection-meat-02-04.webp",
+      "blob_sha": "d0c8a8fe75917dbc778081e86479e14c451c6d4f",
+      "ingredients": [
+        "Вырезка свиная",
+        "Масло оливковое",
+        "Паприка копчёная",
+        "Чеснок",
+        "Соль"
+      ],
+      "status": "rejected",
+      "observations": [
+        "Вокруг мяса крупные целые зелёные стручки перца и красные ломтики перца, которых нет в ингредиентах.",
+        "На мясе лежат несколько целых зубчиков чеснока; копчёная паприка как специя визуально не считывается."
+      ],
+      "reason": "Посторонние крупные овощи подменяют паприку как приправу; крупные цельные зубчики противоречат требованию не класть ингредиенты кусками.",
+      "replacement_brief": {
+        "target": "Запечённая свиная вырезка с копчёной паприкой и чесноком, ресторанная подача на двоих",
+        "must_show": [
+          "цельный бескостный кусок свиной вырезки либо аккуратные нарезанные ломтики",
+          "ровная аппетитная корочка с мелкой красно-коричневой паприкой",
+          "чеснок измельчён и интегрирован в масло/соус"
+        ],
+        "must_not_show": [
+          "целые стручки зелёного перца",
+          "ломтики сладкого перца",
+          "целые зубчики чеснока поверх мяса",
+          "кость",
+          "яйца"
+        ],
+        "generation_authorized": false
+      }
+    },
+    {
+      "n": 33,
+      "recipe_id": "collection-meat-02-05",
+      "title": "Свиная вырезка в духовке с томатами и базиликом",
+      "path": "assets/recipes-ai/0033-collection-meat-02-05-regen.webp",
+      "blob_sha": "3fa491dce74dbe09ff6f2c5887cd54e55173a0af",
+      "ingredients": [
+        "Вырезка свиная",
+        "Масло оливковое",
+        "Томаты рубленые",
+        "Базилик",
+        "Соль"
+      ],
+      "status": "rejected",
+      "observations": [
+        "Вокруг мяса заметно много зелёного горошка и соцветий цветной капусты, которых нет в рецепте.",
+        "Томаты и базилик присутствуют, но подача превращена в блюдо с посторонним овощным гарниром."
+      ],
+      "reason": "Непредусмотренные крупные гарнирные ингредиенты доминируют.",
+      "replacement_brief": {
+        "target": "Запечённая свиная вырезка с рублеными томатами и базиликом, без дополнительных гарниров",
+        "must_show": [
+          "бескостная свиная вырезка после запекания",
+          "томатный соус из рубленых приготовленных помидоров",
+          "базилик как аккуратный акцент"
+        ],
+        "must_not_show": [
+          "зелёный горошек",
+          "цветная капуста",
+          "кукуруза",
+          "бобовые гарниры",
+          "кость",
+          "яйца"
+        ],
+        "generation_authorized": false
+      }
+    },
+    {
+      "n": 34,
+      "recipe_id": "collection-meat-02-06",
+      "title": "Свиная вырезка в духовке с имбирём и соевым соусом",
+      "path": "assets/recipes-ai/0034-collection-meat-02-06-regen.webp",
+      "blob_sha": "afd3c0bdf0e0bb0a6c4ffe9cdd3deff635d408a6",
+      "ingredients": [
+        "Вырезка свиная",
+        "Масло оливковое",
+        "Имбирь свежий",
+        "Соевый соус",
+        "Соль"
+      ],
+      "status": "rejected",
+      "observations": [
+        "Поверх мяса уложены крупные светлые палочки имбиря, выглядящие как сырой нарезанный корень.",
+        "Середина мяса розовая; по изображению нельзя достоверно определить степень готовности, поэтому это не основание для вывода о пищевой безопасности."
+      ],
+      "reason": "Крупные куски имбиря на поверхности нарушают требование к интеграции ингредиента в готовое блюдо.",
+      "replacement_brief": {
+        "target": "Запечённая бескостная свиная вырезка в глазури из соевого соуса и мелко натёртого имбиря",
+        "must_show": [
+          "готовая свиная вырезка с аккуратной глазурью",
+          "имбирь мелко натёрт или растворён в соусе",
+          "сдержанная ресторанная подача"
+        ],
+        "must_not_show": [
+          "крупные сырые палочки имбиря поверх мяса",
+          "кость",
+          "посторонние овощи",
+          "яйца"
+        ],
+        "generation_authorized": false
+      }
+    },
+    {
+      "n": 35,
+      "recipe_id": "collection-meat-02-07",
+      "title": "Свиная вырезка в духовке с луком и бальзамиком",
+      "path": "assets/recipes-ai/0035-collection-meat-02-07.webp",
+      "blob_sha": "974c27c4e02dddb4f16c69007e3b0f4bfea1ee56",
+      "ingredients": [
+        "Вырезка свиная",
+        "Масло оливковое",
+        "Лук красный",
+        "Уксус бальзамический",
+        "Соль"
+      ],
+      "status": "candidate_pending",
+      "observations": [
+        "На тарелке видны куски мяса, луковые сегменты и тёмные капли, визуально совместимые с бальзамическим соусом.",
+        "По фото нельзя установить, действительно ли мясо запекалось и достигло требуемой температуры; видна розовая середина."
+      ],
+      "reason": "Видимые компоненты в целом соответствуют названию; окончательный допуск и проверка безопасности не выполнялись."
+    }
+  ]
+}
