@@ -34,6 +34,7 @@ const { chromium }=require('playwright');
    assert.equal(await page.locator('#cookOverlay').isVisible(),true,route+': cooking dialog hidden');
    assert.equal(await page.locator('#cookContent .du-editorial-cook-step').count(),1,route+': cooking step missing');
    assert.equal(await page.locator('#cookContent .du-cook-master-stage').count(),0,route+': step photo still required');
+   assert.equal(await page.locator('#cookContent .du-editorial-cook-illustration svg').count(),1,route+': guided step illustration missing');
    await page.locator('#nextStep').click();
    assert.ok((await page.locator('#cookContent .cook-progress-label').textContent()).includes('Шаг 2'),route+': step next broken');
    await page.locator('#prevStep').click();
