@@ -48,6 +48,7 @@ const assert=require('node:assert/strict');
     assert.ok(await page.locator('article[data-recipe]').count()>0,'Ordinary search should remain functional');
     // V3: a real recipe needs 200g spaghetti; 100g at home means buy 100g.
     await page.locator('#recipeSearch').fill('100 г спагетти, помидоры черри, чеснок, базилик, масло оливковое, пармезан');
+    await page.locator('#pantryBasics').check(); // Earlier regression intentionally switched basics off.
     assert.equal(await page.locator('#pantryMode').getAttribute('aria-pressed'),'true','Measured input auto-enables pantry search');
     const pasta=page.locator('article[data-recipe="tomato-basil-pasta"]');
     assert.equal(await pasta.count(),1,'Tomato-basil pasta should be visible in quantity matches');
