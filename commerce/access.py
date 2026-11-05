@@ -5,6 +5,8 @@ from pathlib import Path
 
 PRODUCT = 'snachala-uzhin-lifetime-1001'
 PRICE_KOPEKS = 190000
+# Exact product title configured in the Prodamus catalog; must match signed callback.
+PRODUCT_TITLE = 'СНАЧАЛА УЖИН - бессрочный доступ к 1001 рецепту'
 
 def email_key(email):
     if not isinstance(email, str): raise ValueError('email required')
