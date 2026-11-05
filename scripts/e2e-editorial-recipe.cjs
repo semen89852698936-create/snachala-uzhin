@@ -25,6 +25,7 @@ const { chromium }=require('playwright');
    await page.locator('#recipeDetail .du-editorial-step').first().waitFor();
    assert.equal(await page.locator('#recipeDetail .du-editorial-step').count(),recipe.steps.length,route+': wrong step count');
    assert.equal(await page.locator('#recipeDetail .du-film-card').count(),0,route+': old image filmstrip remains');
+   assert.equal(await page.locator('#recipeDetail .du-editorial-illustration svg').count(),recipe.steps.length,route+': hand-drawn recipe action illustrations missing');
    assert.equal(await page.locator('#recipeDetail .recipe-intro-photo img').count(),1,route+': main recipe photo missing');
    const original=Number(await page.locator('#recipeDetail .portion-picker strong').textContent());
    await page.locator('#portionPlus').click();
