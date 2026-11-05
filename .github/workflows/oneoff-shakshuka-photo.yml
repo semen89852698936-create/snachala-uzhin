@@ -5,6 +5,10 @@ on:
     paths:
       - 'scripts/oneoff_shakshuka_photo.py'
       - '.github/workflows/oneoff-shakshuka-photo.yml'
+  pull_request:
+    paths:
+      - 'scripts/oneoff_shakshuka_photo.py'
+      - '.github/workflows/oneoff-shakshuka-photo.yml'
   workflow_dispatch:
 permissions:
   contents: write
@@ -13,7 +17,7 @@ concurrency:
   cancel-in-progress: false
 jobs:
   generate-one-photo:
-    if: github.ref == 'refs/heads/main'
+    if: github.event_name == 'pull_request' || github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
     timeout-minutes: 18
     steps:
@@ -37,6 +41,7 @@ jobs:
       - name: Validate exact shakshuka recipe without paid calls
         run: python3 scripts/oneoff_shakshuka_photo.py
       - name: Produce only one new image and preserve original
+        if: github.event_name != 'pull_request'
         env:
           YANDEX_API_KEY: ${{ secrets.YANDEX_API_KEY }}
           YANDEX_FOLDER_ID: ${{ secrets.YANDEX_FOLDER_ID || 'b1g00u8p0k5nl98v8nre' }}
