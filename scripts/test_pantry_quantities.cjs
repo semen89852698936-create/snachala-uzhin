@@ -3,12 +3,19 @@ const assert=require('node:assert/strict');
 const fs=require('node:fs');
 const vm=require('node:vm');
 
+let referenceCatalog=null;
 for(const path of ['index.html','full-catalog/index.html']){
  const html=fs.readFileSync(path,'utf8');
  const data=html.match(/<script id="recipeData" type="application\/json">([\s\S]*?)<\/script>/);
  assert.ok(data,path+': recipe data');
  const recipes=JSON.parse(data[1]);
  assert.equal(recipes.length,1001,path+': 1001 recipes unchanged');
+ const ids=recipes.map(r=>String(r.id));
+ assert.equal(new Set(ids).size,1001,path+': recipe IDs must be unique');
+ // The two public entry points must never silently ship different recipes or quantities.
+ // Compare full embedded objects, not just IDs, to catch changes to ingredients and steps.
+ if(referenceCatalog===null)referenceCatalog=recipes;
+ else assert.deepEqual(recipes,referenceCatalog,path+': catalog content diverged from index.html');
  const a=html.indexOf('/* INGREDIENT_SEARCH_V1_START');
  const end='/* PANTRY_QUANTITY_V3_END */',b=html.indexOf(end,a);
  assert.ok(a>0&&b>a,path+': V3 engine embedded');
