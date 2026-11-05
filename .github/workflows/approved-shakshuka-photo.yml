@@ -1,0 +1,29 @@
+name: Guard approved shakshuka photo
+
+on:
+  pull_request:
+    paths:
+      - 'assets/recipes-ai/0019-shakshuka-regen-20261105.webp'
+      - 'photo-library/ai-recipe-photo-map.json'
+      - 'index.html'
+      - 'full-catalog/index.html'
+      - 'scripts/test_approved_shakshuka_photo.py'
+      - '.github/workflows/approved-shakshuka-photo.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'assets/recipes-ai/0019-shakshuka-regen-20261105.webp'
+      - 'photo-library/ai-recipe-photo-map.json'
+      - 'index.html'
+      - 'full-catalog/index.html'
+      - 'scripts/test_approved_shakshuka_photo.py'
+      - '.github/workflows/approved-shakshuka-photo.yml'
+  workflow_dispatch:
+
+jobs:
+  photo-regression:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check approved photo and both recipe catalogs
+        run: python3 scripts/test_approved_shakshuka_photo.py
