@@ -42,6 +42,10 @@ for(const path of ['index.html','full-catalog/index.html']){
  assert.equal(mismatch.length,1);
  assert.equal(mismatch[0].uncertain,true,path+': cannot infer grams from 1 chicken');
  assert.equal(missing(synthetic,parse('курица, сливки, чеснок, лук'),false,2).length,0,path+': unspecified stock means enough');
+ // Boundary regression: exact stock or surplus must not create phantom groceries.
+ assert.equal(missing(synthetic,parse('300 г курицы, 300 мл сливок, чеснок, лук'),false,2).length,0,path+': exact quantities have no deficit');
+ assert.equal(missing(synthetic,parse('1 кг курицы, 1 л сливок, чеснок, лук'),false,2).length,0,path+': surplus after unit conversion has no deficit');
+ assert.equal(missing(synthetic,parse('0,3 кг курицы, 0,3 л сливок, чеснок, лук'),false,2).length,0,path+': equivalent metric units match exactly');
  assert.equal(rank([synthetic],stock,false,r=>2)[0].missing.length,2,path+': partial deficits ranked as missing');
 
  const salt={base:2,ingredients:[{name:'Соль',amount:4,unit:'г'}]};
