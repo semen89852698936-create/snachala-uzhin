@@ -4,7 +4,8 @@ const {chromium}=require('playwright');
 (async()=>{
  const browser=await chromium.launch({headless:true});
  try{
-  for(const [route,viewport] of [['/',{width:1280,height:820}],['/full-catalog/',{width:390,height:844}]]){
+  // Exercise both catalogs at desktop and mobile widths, not just one route per viewport.
+  for(const route of ['/','/full-catalog/']) for(const viewport of [{width:1280,height:820},{width:390,height:844}]){
    const page=await browser.newPage({viewport});
    const errors=[];page.on('pageerror',e=>errors.push(e.message));
    const url='http://127.0.0.1:8765'+route;
