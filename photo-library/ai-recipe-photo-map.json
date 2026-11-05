@@ -188,16 +188,16 @@
     {
       "n": 27,
       "recipe_id": "collection-meat-01-09",
-      "path": "/assets/recipes-ai/0027-collection-meat-01-09-regen.webp",
-      "sha": "4ab8c219eb25dbe5b993f932c15d63389d877310",
-      "bytes": 88928
+      "path": "/assets/recipes-ai/0027-collection-meat-01-09-plating-20261103.webp",
+      "sha": "ff7fd5b442570bb9170415329ba4d33f5a783426",
+      "bytes": 158560
     },
     {
       "n": 28,
       "recipe_id": "collection-meat-01-10",
-      "path": "/assets/recipes-ai/0028-collection-meat-01-10-regen.webp",
-      "sha": "b160df1b870932e59e02fc73e9dca0d17864e2cc",
-      "bytes": 89516
+      "path": "/assets/recipes-ai/0028-collection-meat-01-10-plating-20261103.webp",
+      "sha": "b76517712c434f799db7ff6dfc0f6a2ed73969af",
+      "bytes": 108558
     },
     {
       "n": 29,
@@ -223,7 +223,7 @@
     {
       "n": 32,
       "recipe_id": "collection-meat-02-04",
-      "path": "/assets/recipes-ai/0032-collection-meat-02-04.webp",
+      "path": "/assets/recipes-ai/0032-collection-meat-02-04-plating-20261103.webp",
       "sha": "b440073a7c0008b4cc700bfd515d89d4d4f13e49",
       "bytes": 160692
     },
@@ -258,7 +258,7 @@
     {
       "n": 37,
       "recipe_id": "collection-meat-02-09",
-      "path": "/assets/recipes-ai/0037-collection-meat-02-09.webp",
+      "path": "/assets/recipes-ai/0037-collection-meat-02-09-plating-20261103.webp",
       "sha": "a2c0bcdab7d6e5735e2f5a8224e11d0be79f8240",
       "bytes": 175586
     },
@@ -818,14 +818,14 @@
     {
       "n": 117,
       "recipe_id": "collection-meat-10-09",
-      "path": "/assets/recipes-ai/0117-collection-meat-10-09.webp",
+      "path": "/assets/recipes-ai/0117-collection-meat-10-09-plating-20261103.webp",
       "sha": "66f24a03a8ed0d9daf5863bb638de4c3c8272e78",
       "bytes": 116978
     },
     {
       "n": 118,
       "recipe_id": "collection-meat-10-10",
-      "path": "/assets/recipes-ai/0118-collection-meat-10-10.webp",
+      "path": "/assets/recipes-ai/0118-collection-meat-10-10-plating-20261103.webp",
       "sha": "138ae60b95d3bae714fd1d55445383c269cd78af",
       "bytes": 117738
     },
@@ -6446,70 +6446,70 @@
     {
       "n": 921,
       "recipe_id": "collection-breakfast-03-01",
-      "path": "/assets/recipes-ai/0921-collection-breakfast-03-01.webp",
+      "path": "/assets/recipes-ai/0921-collection-breakfast-03-01-plating-20261103.webp",
       "sha": "662ff6bdace6d458d6c1090d6904c56e88ef31b9",
       "bytes": 150856
     },
     {
       "n": 922,
       "recipe_id": "collection-breakfast-03-02",
-      "path": "/assets/recipes-ai/0922-collection-breakfast-03-02.webp",
+      "path": "/assets/recipes-ai/0922-collection-breakfast-03-02-plating-20261103.webp",
       "sha": "020177f7c163d07bc2610104e442b61d5b14a558",
       "bytes": 113208
     },
     {
       "n": 923,
       "recipe_id": "collection-breakfast-03-03",
-      "path": "/assets/recipes-ai/0923-collection-breakfast-03-03.webp",
+      "path": "/assets/recipes-ai/0923-collection-breakfast-03-03-plating-20261103.webp",
       "sha": "672ebd04122b7d48275dc1aee88652f59b388a30",
       "bytes": 158472
     },
     {
       "n": 924,
       "recipe_id": "collection-breakfast-03-04",
-      "path": "/assets/recipes-ai/0924-collection-breakfast-03-04.webp",
+      "path": "/assets/recipes-ai/0924-collection-breakfast-03-04-plating-20261103.webp",
       "sha": "eadefe19d7f2ae023a905ef738c08213b7a08e9a",
       "bytes": 108394
     },
     {
       "n": 925,
       "recipe_id": "collection-breakfast-03-05",
-      "path": "/assets/recipes-ai/0925-collection-breakfast-03-05.webp",
+      "path": "/assets/recipes-ai/0925-collection-breakfast-03-05-plating-20261103.webp",
       "sha": "ee0e35beab4153b0eb343a20ff95a1b99c859b85",
       "bytes": 165368
     },
     {
       "n": 926,
       "recipe_id": "collection-breakfast-03-06",
-      "path": "/assets/recipes-ai/0926-collection-breakfast-03-06.webp",
+      "path": "/assets/recipes-ai/0926-collection-breakfast-03-06-plating-20261103.webp",
       "sha": "7ddc3535540cb59354fb539acd7c9ae28f4a5326",
       "bytes": 135948
     },
     {
       "n": 927,
       "recipe_id": "collection-breakfast-03-07",
-      "path": "/assets/recipes-ai/0927-collection-breakfast-03-07.webp",
+      "path": "/assets/recipes-ai/0927-collection-breakfast-03-07-plating-20261103.webp",
       "sha": "3f4e2f1c5d3b565e8c0b7e8c26c83429c1aa49cc",
       "bytes": 96534
     },
     {
       "n": 928,
       "recipe_id": "collection-breakfast-03-08",
-      "path": "/assets/recipes-ai/0928-collection-breakfast-03-08.webp",
+      "path": "/assets/recipes-ai/0928-collection-breakfast-03-08-plating-20261103.webp",
       "sha": "9008c7cff3971ee21cbd812bc0f948acd877283c",
       "bytes": 139202
     },
     {
       "n": 929,
       "recipe_id": "collection-breakfast-03-09",
-      "path": "/assets/recipes-ai/0929-collection-breakfast-03-09.webp",
+      "path": "/assets/recipes-ai/0929-collection-breakfast-03-09-plating-20261103.webp",
       "sha": "ea1f42a59ea97287ab28cad4d4c9bc7c45feab2a",
       "bytes": 133378
     },
     {
       "n": 930,
       "recipe_id": "collection-breakfast-03-10",
-      "path": "/assets/recipes-ai/0930-collection-breakfast-03-10.webp",
+      "path": "/assets/recipes-ai/0930-collection-breakfast-03-10-plating-20261103.webp",
       "sha": "737ff523c728781415fa861a4091d3d70d20316d",
       "bytes": 115772
     },
