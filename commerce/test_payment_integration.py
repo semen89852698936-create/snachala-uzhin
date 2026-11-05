@@ -1,7 +1,7 @@
 import io,json,tempfile,unittest
 from pathlib import Path
 from urllib.parse import urlparse,parse_qs
-from commerce.access import Store,PRODUCT
+from commerce.access import Store,PRODUCT,PRODUCT_TITLE
 from commerce.prodamus import sign,verify,payment_url,confirm_notification,PaymentRejected
 from commerce.private_catalog import extract
 from commerce.http_app import CommerceApp,read_multipart
@@ -17,7 +17,7 @@ class IntegrationTests(unittest.TestCase):
          'domain':'merchant.payform.ru','sys':'configured-sys',
          'order_num':self.order['order_num'],'order_id':'payment-provider-123',
          'customer_email':'buyer@example.ru','sum':'1900.00','payment_status':'success',
-         'products':[{'name':'СНАЧАЛА УЖИН. Бессрочный доступ к 1001 рецепту',
+         'products':[{'name':PRODUCT_TITLE,
                       'price':'1900.00','quantity':'1','sku':PRODUCT}]}
     def tearDown(self):
         self.store.db.close()
@@ -56,12 +56,18 @@ class IntegrationTests(unittest.TestCase):
         with self.assertRaises(PaymentRejected):self.approve(payload)
         self.assertFalse(self.store.has_access('buyer@example.ru'))
 
+    def test_old_receipt_title_cannot_unlock_catalog(self):
+        payload=dict(self.payload,products=[dict(self.payload['products'][0],name='СНАЧАЛА УЖИН. Бессрочный доступ к 1001 рецепту')])
+        with self.assertRaises(PaymentRejected):self.approve(payload)
+        self.assertFalse(self.store.has_access('buyer@example.ru'))
+
     def test_actual_merchant_url(self):
         url=payment_url(self.order,merchant_url='https://snachala-uzhin.payform.ru/',
                         sys_code='agreed-integration-code',secret=self.key,
                         return_url='https://site.example/checkout', notification_url='https://site.example/webhooks/prodamus')
         self.assertEqual(urlparse(url).hostname,'snachala-uzhin.payform.ru')
         self.assertEqual(parse_qs(urlparse(url).query)['products[0][price]'],['1900.00'])
+        self.assertEqual(parse_qs(urlparse(url).query)['products[0][name]'],[PRODUCT_TITLE])
 
     def test_failed_payment_never_grants(self):
         self.assertFalse(self.approve(dict(self.payload,payment_status='order_canceled')))
