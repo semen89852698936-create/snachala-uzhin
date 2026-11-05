@@ -1201,7 +1201,7 @@ body:not(.du-evening-mode) .du-evening-back{display:none!important}
 <section class="bonus-section container du-bonus" aria-label="Бонусный рецепт 1001"><div class="bonus-inner"><div class="bonus-ornament">1001<span>✳</span></div><div class="bonus-text"><div class="du-eyebrow">БОНУС / ПОСЛЕ ТЫСЯЧИ</div><h2>И ещё один <em>повод остаться</em></h2><p>Особенный рецепт №1001 - сюрприз сверх десяти основных разделов. Он уже ждёт в каталоге. Открой его, когда захочется задержаться за столом.</p><button type="button" class="du-btn du-btn-primary" id="bonusRecipe">Посмотреть бонус <span>↗</span></button></div></div></section>
 <section class="section catalog-section du-catalog" id="catalog"><div class="container"><div class="du-section-top"><div class="du-eyebrow">03 / КОЛЛЕКЦИЯ</div><div class="du-section-heading"><h2>Сначала выбери.<br><em>Потом наслаждайся</em></h2><p>1000 рецептов и 1 секретный: ингредиенты, пошаговая готовка, таймеры и меню для двоих. Все карточки кликабельны.</p></div></div>
  <div class="search-panel"><label class="search-wrap" for="recipeSearch"><span class="search-icon">⌕</span><input id="recipeSearch" placeholder="Найти блюдо или продукты: курица, сливки, грибы" autocomplete="off"><span class="shortcut">⌘ K</span></label><select id="cuisineFilter" aria-label="Кухня мира"><option value="all">Все кухни мира</option></select><button type="button" class="filter-button" id="quickFilter" aria-pressed="false">◷ До 30 минут</button><button type="button" class="filter-button" id="favoritesFilter" aria-pressed="false">♡ Избранное</button></div>
- <p class="du-ingredient-search-tip">Есть продукты дома? Перечисли их через запятую, например: курица, сливки, грибы.</p>
+ <p class="du-ingredient-search-tip">Есть продукты дома? Например: 100 г курицы, 200 мл сливок, грибы. Если количество не указано, считаем, что продукта достаточно.</p>
  <div class="du-pantry-toolbar"><button type="button" id="pantryMode" class="filter-button du-pantry-mode" aria-pressed="false" aria-controls="pantryControls">🥕 Подобрать из моих продуктов</button><div id="pantryControls" class="du-pantry-controls" hidden><label for="pantryBasics"><input type="checkbox" id="pantryBasics" checked> Считать, что дома есть соль, чёрный перец, вода и растительное масло</label><p id="pantrySummary" role="status" aria-live="polite"></p></div></div>
  <div id="categoryFilters" class="category-filters" aria-label="Фильтр категорий"></div><div class="result-line"><span id="resultCount">1001 рецепт</span><span>✦ Все рецепты доступны</span></div><div id="recipeGrid" class="recipe-grid"></div><div class="du-more-wrap"><button type="button" class="du-btn du-btn-outline" id="loadMoreRecipes" hidden>Показать ещё 24 рецепта ↓</button></div><div class="empty-state" id="emptyState" hidden><span>🍽️</span><h3>Ничего не нашлось</h3><p>Попробуй изменить запрос или снять фильтры.</p><button type="button" class="button button-primary" id="clearFilters">Сбросить фильтры</button></div>
  </div></section>
@@ -1315,6 +1315,10 @@ const INGREDIENT_SEARCH_SYNONYMS = Object.freeze({
   'сливок':['сливк'],
   'картошка':['картоф','картош'],
   'картофель':['картоф','картош'],
+  'картофеля':['картоф','картош'],
+  'картофелем':['картоф','картош'],
+  'куриные':['курин','куриц','цыплен'],
+  'грибами':['гриб','шампиньон','вешенк','лисичк','опят'],
   'помидор':['помидор','томат'],
   'помидоры':['помидор','томат'],
   'помидоров':['помидор','томат'],
@@ -1361,6 +1365,75 @@ function pantryRankedCandidates(recipes,parts,assumeBasics) {
     .sort((a,b)=>a.missing.length-b.missing.length||b.available-a.available||a.recipe.minutes-b.recipe.minutes||a.recipe.title.localeCompare(b.recipe.title,'ru'));
 }
 /* PANTRY_SEARCH_V2_END */
+
+/* PANTRY_QUANTITY_V3_START
+   Never guess weights from pieces or densities; respect selected servings.
+   Plain unquantified pantry queries retain V2 behavior. */
+function pantryUnitInfo(value) {
+ const u=norm(value||'').trim().replace(/\s+/g,' ');
+ if(['г','гр','грамм','грамма','граммов'].includes(u))return {dimension:'mass',factor:1};
+ if(['кг','килограмм','килограмма','килограммов'].includes(u))return {dimension:'mass',factor:1000};
+ if(['мл','миллилитр','миллилитра','миллилитров'].includes(u))return {dimension:'volume',factor:1};
+ if(['л','литр','литра','литров'].includes(u))return {dimension:'volume',factor:1000};
+ if(['шт','шт.','штука','штуки','штук'].includes(u))return {dimension:'pieces',factor:1};
+ if(/^зубч|^зубк/.test(u))return {dimension:'cloves',factor:1};
+ if(/^веточ/.test(u))return {dimension:'sprigs',factor:1};
+ if(/^ломтик/.test(u))return {dimension:'slices',factor:1};
+ if(/^листоч/.test(u))return {dimension:'leaves',factor:1};
+ if(/^стебел/.test(u))return {dimension:'stems',factor:1};
+ if(['ст. л.','ст.л.','ст. л','ст.л'].includes(u))return {dimension:'tablespoons',factor:1};
+ if(['ч. л.','ч.л.','ч. л','ч.л'].includes(u))return {dimension:'teaspoons',factor:1};
+ return null;
+}
+function pantryParseStock(search) {
+ const units='(?:кг|килограмм(?:а|ов)?|г|гр|грамм(?:а|ов)?|мл|миллилитр(?:а|ов)?|л|литр(?:а|ов)?|шт\\.?|штук(?:а|и)?|зубчик(?:а|ов)?|зубков|веточк(?:а|и|у|ек)|ст\\.?\\s*л\\.?|ч\\.?\\s*л\\.?)';
+ const number='(\\d+(?:\\.\\d+)?)';
+ const leading=new RegExp('^'+number+'\\s*('+units+')\\s+(.+)$','u');
+ const trailing=new RegExp('^(.+?)\\s+'+number+'\\s*('+units+')$','u');
+ return String(search||'').replace(/(\d),(\d)/g,'$1.$2').split(/[,;\n]+/).map(raw=>{
+   const value=norm(raw).trim().replace(/\s+/g,' ');
+   if(!value)return null;
+   const start=leading.exec(value),end=start?null:trailing.exec(value);
+   if(!start&&!end)return {name:value,amount:null,unit:null,original:value};
+   const name=(start?start[3]:end[1]).trim();
+   const amount=Number(start?start[1]:end[2]);
+   const unit=start?start[2]:end[3];
+   const info=pantryUnitInfo(unit);
+   if(!name||!info||!Number.isFinite(amount)||amount<=0)return {name:value,amount:null,unit:null,original:value};
+   return {name,amount,unit,dimension:info.dimension,factor:info.factor,original:value};
+ }).filter(Boolean);
+}
+function pantryRound(value){return Math.round((value+Number.EPSILON)*1000)/1000}
+function pantryQuantityMissing(recipe,stock,assumeBasics,portions) {
+ const base=Number(recipe.base)||2,ratio=(Number(portions)||base)/base;
+ return recipe.ingredients.flatMap(item=>{
+   if(!item||!item.name)return [];
+   if(assumeBasics&&PANTRY_BASIC_NAMES.has(norm(item.name)))return [];
+   const listed=stock.filter(entry=>pantryHasIngredient(item.name,[entry.name]));
+   const needed=pantryRound(Number(item.amount)*ratio);
+   if(!listed.length)return [{...item,amount:needed}];
+   // Unspecified quantity means "I have enough", for backwards compatibility.
+   if(listed.some(entry=>entry.amount===null)||item.amount===0)return [];
+   const unit=pantryUnitInfo(item.unit);
+   if(!unit)return [{...item,amount:needed,uncertain:true,provided:listed.map(x=>x.original).join(', ')}];
+   const compatible=listed.filter(entry=>entry.dimension===unit.dimension);
+   if(!compatible.length)return [{...item,amount:needed,uncertain:true,provided:listed.map(x=>x.original).join(', ')}];
+   const supplied=compatible.reduce((sum,entry)=>sum+entry.amount*entry.factor,0)/unit.factor;
+   const shortage=pantryRound(Math.max(0,needed-supplied));
+   return shortage>0?[{...item,amount:shortage,partial:supplied>0}]:[];
+ });
+}
+function pantryQuantityRankedCandidates(recipes,stock,assumeBasics,getServings) {
+ if(!stock.length)return [];
+ return recipes.map(recipe=>({
+   recipe,
+   available:stock.filter(entry=>recipe.ingredients.some(item=>pantryHasIngredient(item.name,[entry.name]))).length,
+   missing:pantryQuantityMissing(recipe,stock,assumeBasics,getServings(recipe))
+ })).filter(entry=>entry.available>0&&entry.missing.length<=2)
+   .sort((a,b)=>a.missing.length-b.missing.length||b.available-a.available||a.recipe.minutes-b.recipe.minutes||a.recipe.title.localeCompare(b.recipe.title,'ru'));
+}
+/* PANTRY_QUANTITY_V3_END */
+
 
 const canonicalName=s=>({ 'оливковое масло':'масло оливковое', 'шпинат свежий':'шпинат', 'орегано сушеный':'орегано' }[norm(s)]||norm(s));
 const shoppingKey=i=>canonicalName(i.name)+'|'+i.unit;
@@ -1410,9 +1483,11 @@ function renderFilters(){const entries=[{id:'all',name:'Все рецепты'},
 function renderCuisines(){const list=[...new Set(RECIPES.map(r=>r.cuisine))].sort((a,b)=>a.localeCompare(b,'ru'));$('cuisineFilter').innerHTML='<option value="all">Все кухни мира</option>'+list.map(x=>`<option value="${safe(x)}">${safe(x)}</option>`).join('');}
 function renderRecipes(){
  const query=norm(state.search.trim());
- const parts=state.pantryMode?ingredientSearchParts(state.search):null;
+ const stock=state.pantryMode?pantryParseStock(state.search):null;
+ const quantityMode=stock&&stock.some(entry=>entry.amount!==null);
+ const parts=state.pantryMode?(quantityMode?stock.map(entry=>entry.name):ingredientSearchParts(state.search)):null;
  const filtered=RECIPES.filter(r=>(state.category==='all'||r.category===state.category)&&(state.cuisine==='all'||r.cuisine===state.cuisine)&&(!state.quick||r.minutes<=30)&&(!state.favsOnly||state.favorites.includes(r.id)));
- const matches=parts&&parts.length?pantryRankedCandidates(filtered,parts,state.pantryBasics):null;
+ const matches=parts&&parts.length?(quantityMode?pantryQuantityRankedCandidates(filtered,stock,state.pantryBasics,servings):pantryRankedCandidates(filtered,parts,state.pantryBasics)):null;
  const items=matches?matches.map(entry=>entry.recipe):filtered.filter(r=>!query||norm([r.title,r.description,r.cuisine,catName(r.category),...r.ingredients.map(x=>x.name)].join(' ')).includes(query));
  const missingById=new Map(matches?matches.map(entry=>[entry.recipe.id,entry.missing]):[]);
  const modeButton=$('pantryMode');modeButton.setAttribute('aria-pressed',String(state.pantryMode));
@@ -1427,7 +1502,9 @@ function renderRecipes(){
    const group=isPantry&&(!index||Boolean(previous?.length)!==Boolean(missing?.length))?'<h3 class="du-pantry-group-title">'+(missing.length?'Не хватает 1–2 продуктов':'Можно приготовить из имеющегося')+'</h3>':'';
    const availableCount=matches?matches.find(entry=>entry.recipe.id===r.id)?.available||0:0;
    const partialNote=isPantry&&availableCount<parts.length?'<span>Используется '+availableCount+' из '+parts.length+' введённых продуктов. </span>':'';
-   const notes=isPantry?'<div class="du-pantry-result-note '+(missing.length?'':'is-ready')+'">'+partialNote+(missing.length?'<span>Докупить: '+missing.map(i=>safe(i.name)).join(', ')+'</span><button type="button" data-shop-missing="'+safe(r.id)+'">+ В список продуктов</button>':'<span>✓ Все необходимые ингредиенты есть'+(state.pantryBasics?' (с учётом базовых продуктов)':'')+'</span>')+'</div>':'';
+   const neededText=missing&&missing.length?missing.map(i=>safe(i.name)+' - '+(i.uncertain?'уточни единицы (введено '+safe(i.provided)+', требуется '+fmt(i.amount)+' '+safe(i.unit)+')':i.amount===0?'по вкусу':fmt(i.amount)+' '+safe(i.unit))).join(', '):'';
+   const canShop=missing&&missing.some(i=>!i.uncertain);
+   const notes=isPantry?'<div class="du-pantry-result-note '+(missing.length?'':'is-ready')+'">'+partialNote+(missing.length?'<span>Докупить: '+neededText+'</span>'+(canShop?'<button type="button" data-shop-missing="'+safe(r.id)+'">+ В список продуктов</button>':''):'<span>✓ Все необходимые ингредиенты есть'+(state.pantryBasics?' (с учётом базовых продуктов)':'')+'</span>')+'</div>':'';
    return group+`<article tabindex="0" role="button" aria-label="Открыть рецепт ${safe(r.title)}" data-recipe="${r.id}" class="recipe-card"><div class="card-image photo" style="${labelPhoto(r)}"><img class="food-photo" loading="lazy" alt="" src="${photo(r.photo)}" onerror="this.remove()"><button type="button" class="fav-floating ${state.favorites.includes(r.id)?'is-fav':''}" data-fav="${r.id}" aria-label="${state.favorites.includes(r.id)?'Убрать из избранного':'В избранное'}">${state.favorites.includes(r.id)?'♥':'♡'}</button><span class="card-time">◷ ${r.minutes} мин</span>${r.id.startsWith('collection-')?'<span class="du-photo-note">Иллюстрация раздела</span>':''}</div><div class="card-body"><div class="card-meta"><span>${safe(r.cuisine)}</span><span>·</span><span>${safe(catName(r.category))}</span></div><h3>${safe(r.title)}</h3><p>${safe(r.description)}</p>${notes}<div class="card-footer"><b>${safe(r.level)} · ${r.base} порц.</b><span>↗</span></div></div></article>`;
  }).join('');
  $('recipeGrid').querySelectorAll('[data-recipe]').forEach(card=>{card.addEventListener('click',e=>{if(e.target.closest('[data-fav],[data-shop-missing]'))return;location.hash='recipe='+card.dataset.recipe});card.addEventListener('keydown',e=>{if(e.target===card&&(e.key==='Enter'||e.key===' ')){e.preventDefault();location.hash='recipe='+card.dataset.recipe}})});
@@ -1477,19 +1554,30 @@ function addPantryMissing(id) {
  const recipe=byId(id);
  if(!recipe)return;
  if(state.shopping[id]){toast('Все продукты рецепта уже в списке покупок');return;}
- const parts=ingredientSearchParts(state.search);
- const missing=pantryMissingIngredients(recipe,parts,state.pantryBasics);
- if(!parts.length||missing.length<1||missing.length>2)return;
+ const stock=pantryParseStock(state.search),qtyMode=stock.some(entry=>entry.amount!==null);
+ const missing=qtyMode?pantryQuantityMissing(recipe,stock,state.pantryBasics,servings(recipe)):pantryMissingIngredients(recipe,ingredientSearchParts(state.search),state.pantryBasics);
+ const payable=missing.filter(item=>!item.uncertain);
+ if(!stock.length||!payable.length||missing.length>2)return;
  if(!state.shoppingExtras||typeof state.shoppingExtras!=='object')state.shoppingExtras={};
- state.shoppingExtras[id]=missing.map(i=>shoppingKey(i));
- persist();updateBadges();renderRecipes();toast('Недостающие продукты добавлены в список');
+ state.shoppingExtras[id]=qtyMode?payable.map(item=>({key:shoppingKey(item),query:state.search,basics:state.pantryBasics})):payable.map(item=>shoppingKey(item));
+ persist();updateBadges();renderRecipes();toast(missing.some(item=>item.uncertain)?'Добавлены рассчитанные продукты. Несопоставимые единицы нужно уточнить.':'Недостающие продукты добавлены в список');
 }
 
 function aggregates(){
  const groups=new Map();
  const add=(i,multiplier)=>{const key=shoppingKey(i);const cur=groups.get(key)||{name:i.name,unit:i.unit,amount:0,taste:false};if(i.amount===0)cur.taste=true;else cur.amount+=i.amount*multiplier;groups.set(key,cur)};
  Object.entries(state.shopping).forEach(([id,p])=>{const r=byId(id);if(!r)return;r.ingredients.filter(i=>!['вода от варки пасты','вода теплая'].includes(norm(i.name))).forEach(i=>add(i,Number(p)/r.base))});
- Object.entries(state.shoppingExtras||{}).forEach(([id,keys])=>{if(state.shopping[id]||!Array.isArray(keys))return;const r=byId(id);if(!r)return;r.ingredients.filter(i=>keys.includes(shoppingKey(i))).forEach(i=>add(i,servings(r)/r.base))});
+ Object.entries(state.shoppingExtras||{}).forEach(([id,keys])=>{
+  if(state.shopping[id]||!Array.isArray(keys)||!keys.length)return;
+  const r=byId(id);if(!r)return;
+  const rows=keys.filter(row=>row&&typeof row==='object'&&typeof row.query==='string');
+  if(rows.length){
+    const first=rows[0],saved=new Set(rows.map(row=>row.key));
+    pantryQuantityMissing(r,pantryParseStock(first.query),first.basics,servings(r)).filter(item=>!item.uncertain&&saved.has(shoppingKey(item))).forEach(item=>add(item,1));
+  }else{
+    r.ingredients.filter(i=>keys.includes(shoppingKey(i))).forEach(i=>add(i,servings(r)/r.base));
+  }
+ });
  return [...groups.values()].sort((a,b)=>a.name.localeCompare(b.name,'ru'));
 }
 function renderShopping(){const ids=Object.keys(state.shopping);const extras=Object.entries(state.shoppingExtras||{}).filter(([id,keys])=>!state.shopping[id]&&byId(id)&&Array.isArray(keys)&&keys.length);const agg=aggregates();const box=$('shoppingContents');if(!ids.length&&!extras.length){box.innerHTML='<div class="cart-empty"><span>🧺</span><b>Пока пусто</b><p>Открой рецепт и нажми «В список покупок». Продукты из разных рецептов соберутся здесь.</p></div>';return;}box.innerHTML=`${ids.length?'<div class="eyebrow dark"><span></span> РЕЦЕПТЫ В СПИСКЕ</div>':''}${ids.map(id=>`<div class="shop-recipe-line"><span>${safe(byId(id)?.title||id)} · ${state.shopping[id]} порц.</span><button type="button" data-remove="${id}">Убрать ✕</button></div>`).join('')}${extras.length?'<div class="eyebrow dark"><span></span> ДОКУПИТЬ ДЛЯ БЛЮД</div>':''}${extras.map(([id])=>`<div class="shop-recipe-line"><span>${safe(byId(id)?.title||id)}</span><button type="button" data-remove-extra="${safe(id)}">Убрать ✕</button></div>`).join('')}<h3 class="shop-group-title">Купить (${agg.length})</h3>${agg.map((x,i)=>{const key=shoppingKey(x);return `<label class="shop-item"><input type="checkbox" data-shopitem="${i}" ${state.shopChecked[key]?'checked':''}><span>${safe(x.name)}</span><strong>${x.taste?'по вкусу':`${fmt(x.amount)} ${safe(x.unit)}`}</strong></label>`}).join('')}`;
@@ -1690,7 +1778,7 @@ function showHome(){state.recipe=null;$('homeView').hidden=false;$('recipeView')
 function showRecipe(id){const r=byId(id);if(!r){location.hash='catalog';return;}$('eveningFromRecipeTitle').textContent=r.title;$('homeView').hidden=true;$('recipeView').hidden=false;renderRecipe(id);window.scrollTo({top:0,behavior:'instant'})}
 function route(){const hash=decodeURIComponent(location.hash.slice(1));document.querySelectorAll('[data-nav="airfryer"],[data-quick-airfryer],[data-quick-evening]').forEach(a=>{const on=a.hasAttribute('data-quick-evening')?(hash==='evening'||hash==='evening-music'||hash==='eveningBuilder'):hash==='airfryer';if(on)a.setAttribute('aria-current','page');else a.removeAttribute('aria-current');});const isEvening=hash==='evening'||hash==='evening-music'||hash==='eveningBuilder';document.body.classList.toggle('du-evening-mode',isEvening);const nav=document.querySelector('[data-nav="evening"]');if(nav){if(isEvening)nav.setAttribute('aria-current','page');else nav.removeAttribute('aria-current');}if(hash.startsWith('recipe=')){showRecipe(hash.slice(7));return;}showHome();if(isEvening){requestAnimationFrame(()=>document.getElementById(hash==='evening-music'?'music':hash==='eveningBuilder'?'eveningBuilder':'eveningLanding')?.scrollIntoView({behavior:'instant',block:'start'}));return;}if(['catalog','categories','about','pricing','music','my-recipes','airfryer'].includes(hash)){requestAnimationFrame(()=>document.getElementById(hash)?.scrollIntoView({behavior:'smooth',block:'start'}));}else if(hash==='home'){requestAnimationFrame(()=>window.scrollTo({top:0,behavior:'smooth'}))}}
 function showFeatured(){location.hash='recipe=lemon-spinach-pasta';}
-function init(){restoreCookingTimer();renderCategories();renderFilters();renderCuisines();renderRecipes();updateBadges();renderMyRecipes();$('recipeSearch').addEventListener('input',e=>{state.search=e.target.value;if(/[,;]/.test(state.search))state.pantryMode=true;visibleLimit=PAGE_SIZE;renderRecipes()});$('pantryMode').addEventListener('click',()=>{state.pantryMode=!state.pantryMode;visibleLimit=PAGE_SIZE;renderRecipes()});$('pantryBasics').addEventListener('change',e=>{state.pantryBasics=e.target.checked;visibleLimit=PAGE_SIZE;renderRecipes()});$('cuisineFilter').addEventListener('change',e=>{state.cuisine=e.target.value;visibleLimit=PAGE_SIZE;renderRecipes()});$('quickFilter').addEventListener('click',()=>{state.quick=!state.quick;visibleLimit=PAGE_SIZE;$('quickFilter').setAttribute('aria-pressed',state.quick);renderRecipes()});$('favoritesFilter').addEventListener('click',()=>{state.favsOnly=!state.favsOnly;visibleLimit=PAGE_SIZE;$('favoritesFilter').setAttribute('aria-pressed',state.favsOnly);renderRecipes()});$('loadMoreRecipes').addEventListener('click',()=>{visibleLimit+=PAGE_SIZE;renderRecipes()});$('clearFilters').addEventListener('click',()=>{visibleLimit=PAGE_SIZE;state.search='';state.pantryMode=false;state.category='all';state.cuisine='all';state.quick=false;state.favsOnly=false;$('recipeSearch').value='';$('cuisineFilter').value='all';$('quickFilter').setAttribute('aria-pressed','false');$('favoritesFilter').setAttribute('aria-pressed','false');renderFilters();renderRecipes()});$('heroRecipe').addEventListener('click',showFeatured);$('tryCooking').addEventListener('click',()=>{showFeatured();openCook('lemon-spinach-pasta')});$('aboutTry').addEventListener('click',()=>{showFeatured();openCook('lemon-spinach-pasta')});$('priceDemo').addEventListener('click',()=>{location.hash='catalog'});$('bonusRecipe').addEventListener('click',()=>{location.hash='recipe=midnight-mushroom-toasts'});$('backCatalog').addEventListener('click',()=>{location.hash='catalog'});$('continueEveningBtn').addEventListener('click',()=>{if(state.recipe&&byId(state.recipe)){window.duEveningChooseRecipe?.(state.recipe);location.hash='evening';}});$('closeCook').addEventListener('click',closeCook);$('closeShopping').addEventListener('click',closeShopping);$('drawerScrim').addEventListener('click',closeShopping);document.querySelectorAll('.shopping-open').forEach(x=>x.addEventListener('click',openShopping));$('copyShopping').addEventListener('click',copyShopping);$('shareShopping').addEventListener('click',shareShopping);
+function init(){restoreCookingTimer();renderCategories();renderFilters();renderCuisines();renderRecipes();updateBadges();renderMyRecipes();$('recipeSearch').addEventListener('input',e=>{state.search=e.target.value;if(/[,;]/.test(state.search)||pantryParseStock(state.search).some(item=>item.amount!==null))state.pantryMode=true;visibleLimit=PAGE_SIZE;renderRecipes()});$('pantryMode').addEventListener('click',()=>{state.pantryMode=!state.pantryMode;visibleLimit=PAGE_SIZE;renderRecipes()});$('pantryBasics').addEventListener('change',e=>{state.pantryBasics=e.target.checked;visibleLimit=PAGE_SIZE;renderRecipes()});$('cuisineFilter').addEventListener('change',e=>{state.cuisine=e.target.value;visibleLimit=PAGE_SIZE;renderRecipes()});$('quickFilter').addEventListener('click',()=>{state.quick=!state.quick;visibleLimit=PAGE_SIZE;$('quickFilter').setAttribute('aria-pressed',state.quick);renderRecipes()});$('favoritesFilter').addEventListener('click',()=>{state.favsOnly=!state.favsOnly;visibleLimit=PAGE_SIZE;$('favoritesFilter').setAttribute('aria-pressed',state.favsOnly);renderRecipes()});$('loadMoreRecipes').addEventListener('click',()=>{visibleLimit+=PAGE_SIZE;renderRecipes()});$('clearFilters').addEventListener('click',()=>{visibleLimit=PAGE_SIZE;state.search='';state.pantryMode=false;state.category='all';state.cuisine='all';state.quick=false;state.favsOnly=false;$('recipeSearch').value='';$('cuisineFilter').value='all';$('quickFilter').setAttribute('aria-pressed','false');$('favoritesFilter').setAttribute('aria-pressed','false');renderFilters();renderRecipes()});$('heroRecipe').addEventListener('click',showFeatured);$('tryCooking').addEventListener('click',()=>{showFeatured();openCook('lemon-spinach-pasta')});$('aboutTry').addEventListener('click',()=>{showFeatured();openCook('lemon-spinach-pasta')});$('priceDemo').addEventListener('click',()=>{location.hash='catalog'});$('bonusRecipe').addEventListener('click',()=>{location.hash='recipe=midnight-mushroom-toasts'});$('backCatalog').addEventListener('click',()=>{location.hash='catalog'});$('continueEveningBtn').addEventListener('click',()=>{if(state.recipe&&byId(state.recipe)){window.duEveningChooseRecipe?.(state.recipe);location.hash='evening';}});$('closeCook').addEventListener('click',closeCook);$('closeShopping').addEventListener('click',closeShopping);$('drawerScrim').addEventListener('click',closeShopping);document.querySelectorAll('.shopping-open').forEach(x=>x.addEventListener('click',openShopping));$('copyShopping').addEventListener('click',copyShopping);$('shareShopping').addEventListener('click',shareShopping);
  document.querySelectorAll('[data-shopping-share]').forEach(link=>link.addEventListener('click',e=>{if(!shoppingShareText()){e.preventDefault();toast('Сначала добавь хотя бы один рецепт');return;}updateShoppingShareLinks();}));$('clearShopping').addEventListener('click',()=>{if(!Object.keys(state.shopping).length&&!Object.keys(state.shoppingExtras||{}).length)return;if(!window.confirm('Очистить список покупок целиком?'))return;state.shopping={};state.shoppingExtras={};state.shopChecked={};persist();updateBadges();renderShopping();if(state.recipe)renderRecipe(state.recipe)});document.addEventListener('keydown',e=>{if(e.key==='Escape'){if(!$('cookOverlay').hidden)closeCook();else if(!$('shoppingDrawer').hidden)closeShopping()}if((e.metaKey||e.ctrlKey)&&e.key.toLowerCase()==='k'){e.preventDefault();location.hash='catalog';setTimeout(()=>$('recipeSearch').focus(),25)}});window.addEventListener('hashchange',route);route();}
 init();
 </script><script>'use strict';

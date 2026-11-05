@@ -46,6 +46,21 @@ const assert=require('node:assert/strict');
     assert.equal(await page.locator('#pantryMode').getAttribute('aria-pressed'),'false','User can return to ordinary search');
     await page.locator('#recipeSearch').fill('паста');
     assert.ok(await page.locator('article[data-recipe]').count()>0,'Ordinary search should remain functional');
+    // V3: a real recipe needs 200g spaghetti; 100g at home means buy 100g.
+    await page.locator('#recipeSearch').fill('100 г спагетти, помидоры черри, чеснок, базилик, масло оливковое, пармезан');
+    await page.locator('#pantryBasics').check(); // Earlier regression intentionally switched basics off.
+    assert.equal(await page.locator('#pantryMode').getAttribute('aria-pressed'),'true','Measured input auto-enables pantry search');
+    const pasta=page.locator('article[data-recipe="tomato-basil-pasta"]');
+    assert.equal(await pasta.count(),1,'Tomato-basil pasta should be visible in quantity matches');
+    assert.match(await pasta.innerText(),/Спагетти - 100 г/,'Only the missing half of spaghetti must be shown');
+    await pasta.locator('[data-shop-missing]').click();
+    await page.locator('.shopping-open').first().click();
+    const buyNames=await page.locator('#shoppingContents .shop-item span').allInnerTexts();
+    const buyAmounts=await page.locator('#shoppingContents .shop-item strong').allInnerTexts();
+    assert.deepEqual(buyNames,['Спагетти'],'Only partially missing spaghetti is put in cart');
+    assert.deepEqual(buyAmounts,['100 г'],'Cart stores 100g shortage, not full 200g');
+    await page.locator('#closeShopping').click();
+
     if(viewport.width<500){
       const overflow=await page.evaluate(()=>document.documentElement.scrollWidth-document.documentElement.clientWidth);
       if(overflow>2){
