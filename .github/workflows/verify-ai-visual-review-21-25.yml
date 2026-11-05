@@ -1,0 +1,29 @@
+name: Verify source-pinned AI photo reviews 21-25
+on:
+  push:
+    branches: [photo-library/ai-visual-review-21-25-20261102]
+    paths:
+      - 'review/ai-art-twentyone-to-twentyfive-visual-triage-20261102.json'
+      - 'photo-library/ai-art-replacement-briefs-22-23-20261102.json'
+      - 'tests/ai-art-twentyone-to-twentyfive-review.test.cjs'
+      - '.github/workflows/verify-ai-visual-review-21-25.yml'
+  pull_request:
+    paths:
+      - 'review/ai-art-twentyone-to-twentyfive-visual-triage-20261102.json'
+      - 'photo-library/ai-art-replacement-briefs-22-23-20261102.json'
+      - 'tests/ai-art-twentyone-to-twentyfive-review.test.cjs'
+      - '.github/workflows/verify-ai-visual-review-21-25.yml'
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4.4.0
+        with:
+          node-version: '22'
+      - run: node --test tests/ai-art-twentyone-to-twentyfive-review.test.cjs

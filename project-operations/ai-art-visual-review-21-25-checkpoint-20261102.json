@@ -1,0 +1,83 @@
+{
+  "schema_version": 1,
+  "project": "snachala-uzhin",
+  "date": "2026-11-02",
+  "source_main_head": "1ad94f46a2ebe7524bb957c5a5f21754a94e9604",
+  "branch": "photo-library/ai-visual-review-21-25-20261102",
+  "pr_number": 38,
+  "pr_url": "https://github.com/semen89852698936-create/snachala-uzhin/pull/38",
+  "pr_draft": true,
+  "files_created": [
+    "review/ai-art-twentyone-to-twentyfive-visual-triage-20261102.json",
+    "photo-library/ai-art-replacement-briefs-22-23-20261102.json",
+    "tests/ai-art-twentyone-to-twentyfive-review.test.cjs",
+    ".github/workflows/verify-ai-visual-review-21-25.yml",
+    "project-operations/ai-art-visual-review-21-25-checkpoint-20261102.json"
+  ],
+  "content_commits": [
+    "8984092c3c0e44f9b7c564023701a06b0b7743d6",
+    "d13cea9bc46b075d8059fa6fbd74cc145fbfbc9a",
+    "6de26dc00a5b956269beb0f63d6ff4789a399475",
+    "f48242e0f90cf65a207dcd9bb60bfb8fe0b09b79"
+  ],
+  "ci": {
+    "run_id": 41531085217,
+    "url": "https://github.com/semen89852698936-create/snachala-uzhin/actions/runs/41531085217",
+    "tested_head_sha": "f48242e0f90cf65a207dcd9bb60bfb8fe0b09b79",
+    "conclusion": "success",
+    "job": "verify",
+    "node_test_step": "success",
+    "tests": "three Node built-in test cases; source SHA, statuses, replacement briefs, original preservation, release-manifest consistency"
+  },
+  "results": {
+    "physical_current_main_webp_directly_viewed": 5,
+    "reviewed_numbers": [
+      21,
+      22,
+      23,
+      24,
+      25
+    ],
+    "candidate_unapproved": [
+      25
+    ],
+    "needs_culinary_review": [
+      21,
+      24
+    ],
+    "rejected_visual_mismatch": [
+      22,
+      23
+    ],
+    "replacement_briefs_created": [
+      22,
+      23
+    ],
+    "new_physical_images": 0,
+    "paid_generation_calls": 0,
+    "rights_individually_verified": 0,
+    "publication_approvals_from_review": 0
+  },
+  "verified_context": {
+    "half_hour_technical_checkpoint_branch": "automation/half-hour-photo-audit",
+    "half_hour_technical_checked_previous_checkpoint": 20,
+    "half_hour_technical_not_repeated": true,
+    "half_hour_cron_in_pr12_not_active": true,
+    "yandex_workflow_main_schedule": "7,17,27,37,47,57 * * * *",
+    "yandex_scheduled_paid_risk": true,
+    "protective_pr16_unmerged": true,
+    "vercel_latest_preview_deployment_ready": true,
+    "vercel_production_deployment_last_seen_sha": "819894450686ce5d5c5a0b1a7058218debd441e3",
+    "vercel_preview_target_null_not_production": true
+  },
+  "blockers": [
+    "Commercial rights and owner editorial approval for these exact AI WebP are not established by this review.",
+    "Photos #22 and #23 visibly contradict ingredient lists, but replacements require separate decision and paid-generation approval.",
+    "Current main contains scheduled Yandex workflow with potential paid requests; protective PR #16 remains draft. No merges authorized.",
+    "Vercel reports build-rate-limit status on PR branch; CI test passed but no Vercel preview verification for this PR."
+  ],
+  "next_safe_task": "Review actual current main WebP #26-30, recognizing #26-28 and #30 are regenerated while #29 is original; source-pin Git blobs, compare recipe ingredients, record limitations, prepare briefs only for clear mismatches. Before writing recheck main HEAD and open PRs. No production, merges, secrets or paid calls.",
+  "no_production_change": true,
+  "no_merge": true,
+  "no_schedule_change": true
+}
