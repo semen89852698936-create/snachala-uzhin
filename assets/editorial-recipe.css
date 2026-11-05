@@ -62,3 +62,13 @@
 #cookOverlay .du-editorial-cook-step p{grid-area:description;font-size:clamp(16px,2vw,19px);line-height:1.6;margin:0 0 5px}
 #cookOverlay .cook-nav .button-primary{background:#853b51;border-radius:13px}
 @media(max-width:750px){#recipeDetail .du-editorial-step{grid-template-columns:34px 51px minmax(0,1fr);gap:9px;padding:18px 0}#recipeDetail .du-editorial-step-number{width:31px;height:31px;font-size:12px}#recipeDetail .du-editorial-step:not(:last-child)::before{left:15px;top:49px;bottom:-12px}#recipeDetail .du-editorial-illustration{width:49px;height:49px;border-radius:12px}#recipeDetail .du-editorial-illustration svg{width:41px;height:41px}#recipeDetail .du-editorial-step-copy strong{font-size:clamp(20px,5.2vw,25px)}#recipeDetail .du-editorial-step-copy p{font-size:15px;line-height:1.55}#cookOverlay .du-editorial-cook-step{grid-template-columns:68px minmax(0,1fr);gap:10px 15px}#cookOverlay .du-editorial-cook-index{width:48px;height:48px;font-size:20px}#cookOverlay .du-editorial-cook-illustration{width:66px;height:66px;border-radius:16px}#cookOverlay .du-editorial-cook-illustration svg{width:53px;height:53px}}
+
+/* COOKING_PROGRESS_POLISH_20261105: clearer progress and finished-timer feedback. */
+#recipeDetail #startCooking{background:linear-gradient(110deg,#78364c,#a35a69);border-color:#78364c;border-radius:14px;box-shadow:0 9px 23px rgba(104,45,62,.18);font-weight:750}
+#recipeDetail #startCooking:hover{background:linear-gradient(110deg,#682c41,#924c5e)}
+#cookOverlay .cook-progress-label{font:700 14px/1.4 Manrope,Arial,sans-serif;letter-spacing:.01em;color:#78394b;margin:20px 0 12px}
+#cookOverlay .progress-track{height:9px;border-radius:99px;background:#ecd9d6;box-shadow:inset 0 1px 2px rgba(111,61,73,.08)}
+#cookOverlay .progress-track>div{border-radius:99px;background:linear-gradient(90deg,#7c3a50,#b36d7a)}
+#cookOverlay .du-timer-status.du-timer-done{display:block;margin:4px 0 0;padding:14px 16px;border:1px solid #dfaeb4;border-radius:12px;background:#fff0ed;color:#74283e;font:800 16px/1.5 Manrope,Arial,sans-serif}
+#cookOverlay .du-timer-status.du-timer-done::before{content:"●";display:inline-block;margin-right:9px;color:#ad5267}
+@media(max-width:650px){#cookOverlay .cook-progress-label{font-size:14px}#cookOverlay .du-timer-status.du-timer-done{font-size:15px;padding:13px 14px}}
