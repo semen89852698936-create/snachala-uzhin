@@ -1,0 +1,52 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-02",
+  "source_review": "review/ai-art-sixteen-to-twenty-visual-triage-20261102.json",
+  "source_recipe_commit": "a1c30f0be8745b8996577da7e7a4a3c2b3f2f028",
+  "source_recipe_catalog_blob_sha": "acb94b3fd125bd3dfd06f5d79bece0b3c3257c4e",
+  "purpose": "Precise editorial replacement briefs for rejected current AI images; not physical replacement images.",
+  "cost_approval_required": true,
+  "publication_allowed": false,
+  "items": [
+    {
+      "number": 18,
+      "recipe_id": "tabbouleh",
+      "recipe_title": "Табуле с петрушкой и булгуром",
+      "rejected_photo_blob_sha": "e81c1ccf104192b367b7159e4b412aa095ec2446",
+      "rejection": "Image is grain-dominant; recipe specifies abundant parsley and mint with a small amount of bulgur.",
+      "must_show": [
+        "Много мелко нарезанной свежей петрушки и немного мяты как основа салата",
+        "Небольшая доля мелкого булгура, смешанного с зеленью",
+        "Мелко нарезанные томаты и зелёный лук",
+        "Лимонно-оливковая заправка, готовая ресторанная подача"
+      ],
+      "must_avoid": [
+        "Горка булгура с редкими декоративными листьями петрушки",
+        "Крупные цельные веточки вместо мелко нарезанной зелени",
+        "Кускус или рис вместо булгура"
+      ],
+      "rights_status": "unverified",
+      "status": "brief_only_no_physical_replacement"
+    },
+    {
+      "number": 19,
+      "recipe_id": "shakshuka",
+      "recipe_title": "Шакшука с томатами и перцем",
+      "rejected_photo_blob_sha": "a3909398b6665f16f8dd637edcb1823737569f80",
+      "rejection": "Photo resembles a fried egg plated over separate vegetables rather than eggs set inside a cooked tomato-pepper sauce.",
+      "must_show": [
+        "Яйца, приготовленные прямо в густом томатном соусе в сковороде",
+        "Размягчённые сладкий перец, лук и томаты, соединённые в единый соус",
+        "Паприка, зира и петрушка в готовом блюде",
+        "Ресторанная подача шакшуки в сковороде"
+      ],
+      "must_avoid": [
+        "Отдельная глазунья поверх сырых овощей на тарелке",
+        "Целые зубчики чеснока и крупные сырые кольца лука",
+        "Отсутствие густой томатной основы"
+      ],
+      "rights_status": "unverified",
+      "status": "brief_only_no_physical_replacement"
+    }
+  ]
+}

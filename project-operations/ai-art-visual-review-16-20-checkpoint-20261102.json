@@ -1,0 +1,110 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-02",
+  "project": "snachala-uzhin",
+  "scope": "direct_visual_review_of_current_AI_WebP_16_20",
+  "base_main_sha": "1d00dec46f65a84f13c6bf37d89fab366522e05e",
+  "code_and_data_commit_sha": "d6f7cb43fedd75443ec5614941b2fe325f264041",
+  "draft_pr": 33,
+  "branch": "photo-library/ai-visual-review-16-20-20261102",
+  "files_changed": [
+    "review/ai-art-sixteen-to-twenty-visual-triage-20261102.json",
+    "photo-library/ai-art-replacement-briefs-18-19-20261102.json",
+    "tests/ai-art-sixteen-to-twenty-review.test.cjs",
+    ".github/workflows/verify-ai-visual-review-16-20.yml",
+    "project-operations/ai-art-visual-review-16-20-checkpoint-20261102.json"
+  ],
+  "source_recipe_ref": "a1c30f0be8745b8996577da7e7a4a3c2b3f2f028",
+  "source_recipe_catalog_blob_sha": "acb94b3fd125bd3dfd06f5d79bece0b3c3257c4e",
+  "source_current_photo_map_blob_sha": "77e0428e8bb97546dbac2e093a585433d20da607",
+  "new_visual_reviews": 5,
+  "review_numbers": [
+    16,
+    17,
+    18,
+    19,
+    20
+  ],
+  "new_candidate_unapproved": [
+    16,
+    17,
+    20
+  ],
+  "new_rejected": [
+    18,
+    19
+  ],
+  "new_replacement_briefs": [
+    18,
+    19
+  ],
+  "previously_reviewed_in_separate_drafts": 15,
+  "combined_unique_review_count_if_drafts_integrated": 20,
+  "publication_approved": 0,
+  "individual_rights_verified": 0,
+  "technical_sha_recheck_performed": false,
+  "paid_generation_calls": 0,
+  "tests": [
+    {
+      "workflow": "Verify AI visual reviews 16-20",
+      "run_id": 41521244354,
+      "run_url": "https://github.com/semen89852698936-create/snachala-uzhin/actions/runs/41521244354",
+      "code_commit_sha": "d6f7cb43fedd75443ec5614941b2fe325f264041",
+      "conclusion": "success",
+      "note": "Offline data consistency checks; not visual or legal clearance"
+    }
+  ],
+  "vercel": {
+    "project": "snachala-uzhin-preview",
+    "latest_main_preview": {
+      "deployment_id": "dpl_AvrmjKZugamk7q9zmfzdzHLBJ6e4",
+      "commit_sha": "1d00dec46f65a84f13c6bf37d89fab366522e05e",
+      "state": "READY",
+      "target": null
+    },
+    "latest_explicit_production_seen": {
+      "deployment_id": "dpl_5GCmpxjRSPWpAYYaP89kNai1eFkC",
+      "commit_sha": "819894450686ce5d5c5a0b1a7058218debd441e3",
+      "state": "READY",
+      "target": "production"
+    },
+    "production_changed_by_this_run": false
+  },
+  "coordination": {
+    "half_hour_archive_checkpoint_read": true,
+    "archive_technical_verified": 20,
+    "archive_technical_remaining": 80,
+    "archive_queue_read": true,
+    "archive_technical_checks_not_repeated": true,
+    "pr12_half_hour_cron_in_main": false,
+    "pr32_pastry_queue_left_untouched": true,
+    "other_hourly_schedule_unchanged": true
+  },
+  "blockers": [
+    "Verified: separate Yandex AI ART workflow in main is scheduled six times/hour, scheduled produce job executed successfully with an API key environment value and PHOTO_COST_APPROVED=true. Sampled run 41516145166 made no new image requests (1001 already saved). PR #16 protection remains draft; no merge authorized.",
+    "Individual commercial rights/account contract not verified; candidate visual matches do not imply release.",
+    "Visual reviews 1-15 are in a separate stacked draft PR chain; consolidate only after conflict-safe review.",
+    "Main photo map has AI photos, while older photo-library/summary.json describes a legacy stock-photo stage and should not be mistaken for live counts."
+  ],
+  "next_task": "Directly inspect current AI WebP #21-25 against immutable recipes, record exact blob IDs, reject only visible mismatches, and create source-pinned briefs for rejects in a separate safe branch. Alternatively reconcile legacy summary without overwriting evidence. Do not pay, merge or deploy.",
+  "verified_schedule_evidence": {
+    "main_workflow_path": ".github/workflows/yandex-ai-1001.yml",
+    "main_cron": "7,17,27,37,47,57 * * * *",
+    "scheduled_run_id": 41516145166,
+    "scheduled_run_url": "https://github.com/semen89852698936-create/snachala-uzhin/actions/runs/41516145166",
+    "produce_job_id": 125520301600,
+    "produce_job_conclusion": "success",
+    "api_key_environment_present": true,
+    "api_key_value_not_inspected": true,
+    "photo_start_count": 1001,
+    "photo_end_count": 1001,
+    "paid_image_requests_observed_in_this_run": 0,
+    "log_evidence": [
+      "prepared_or_created=0; already_saved=1001",
+      "NO_RECOVERY_CANDIDATES kind=refused",
+      "NO_RECOVERY_CANDIDATES kind=uncertain",
+      "COMPLETE: 1001/1001 verified; stopping"
+    ],
+    "warning": "Scheduled produce job is currently eligible to run with a configured key and hardcoded PHOTO_COST_APPROVED=true. No paid requests observed in this sampled run, but schedule and future cost risk remain until explicitly authorized protection is integrated."
+  }
+}
