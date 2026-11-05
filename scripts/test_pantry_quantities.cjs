@@ -69,6 +69,16 @@ for(const path of ['index.html','full-catalog/index.html']){
  assert.equal(basket.length,1,path+': only one missing grocery');
  assert.equal(basket[0].name,'Курица');
  assert.equal(basket[0].amount,200,path+': shopping has deficit rather than 300g whole recipe');
+ // Both partial deficits must survive in the same shopping list, without full-recipe amounts.
+ const originalQuery=saved.shoppingExtras.fixture[0].query;
+ saved.shoppingExtras.fixture[0].query='100 г курицы, 200 мл сливок, чеснок, лук';
+ saved.shoppingExtras.fixture.push({key:'сливки|мл',query:'100 г курицы, 200 мл сливок, чеснок, лук',basics:false});
+ basket=aggregate();
+ assert.equal(basket.length,2,path+': both missing ingredients retained in shopping');
+ assert.equal(basket.find(x=>x.name==='Курица').amount,200,path+': chicken partial deficit retained');
+ assert.equal(basket.find(x=>x.name==='Сливки').amount,100,path+': cream partial deficit retained');
+ saved.shoppingExtras.fixture.pop();
+ saved.shoppingExtras.fixture[0].query=originalQuery;
  saved.servings.fixture=4;
  basket=aggregate();
  assert.equal(basket[0].amount,500,path+': shortage recalculated when servings change');
