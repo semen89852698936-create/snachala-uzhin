@@ -5,6 +5,7 @@ on:
       - 'index.html'
       - 'full-catalog/index.html'
       - 'scripts/test_catalog_parity.cjs'
+      - 'scripts/test_catalog_parity_negative.cjs'
       - '.github/workflows/catalog-parity.yml'
   push:
     branches: [main]
@@ -12,6 +13,7 @@ on:
       - 'index.html'
       - 'full-catalog/index.html'
       - 'scripts/test_catalog_parity.cjs'
+      - 'scripts/test_catalog_parity_negative.cjs'
       - '.github/workflows/catalog-parity.yml'
   workflow_dispatch:
 jobs:
@@ -25,4 +27,6 @@ jobs:
         with:
           node-version: '22'
       - name: Verify 1001 recipes in both catalogs
-        run: node scripts/test_catalog_parity.cjs
+        run: |
+          node scripts/test_catalog_parity.cjs
+          node scripts/test_catalog_parity_negative.cjs
