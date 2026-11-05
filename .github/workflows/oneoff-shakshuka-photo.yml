@@ -1,0 +1,51 @@
+name: One-time shakshuka #19 photo generation (owner requested)
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/oneoff_shakshuka_photo.py'
+      - '.github/workflows/oneoff-shakshuka-photo.yml'
+  pull_request:
+    paths:
+      - 'scripts/oneoff_shakshuka_photo.py'
+      - '.github/workflows/oneoff-shakshuka-photo.yml'
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: oneoff-shakshuka-20261105
+  cancel-in-progress: false
+jobs:
+  generate-one-photo:
+    if: github.event_name == 'pull_request' || github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 18
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - uses: actions/checkout@v4
+        with:
+          repository: semen89852698936-create/snachala-uzhin
+          ref: photo-production/yandex-ai-art-1001
+          path: _photo_source
+          sparse-checkout: |
+            photo-pipeline
+            photo-library/recipes.json
+          sparse-checkout-cone-mode: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: python -m pip install 'Pillow>=10,<13'
+      - name: Validate exact shakshuka recipe without paid calls
+        run: python3 scripts/oneoff_shakshuka_photo.py
+      - name: Produce only one new image and preserve original
+        if: github.event_name != 'pull_request'
+        env:
+          YANDEX_API_KEY: ${{ secrets.YANDEX_API_KEY }}
+          YANDEX_FOLDER_ID: ${{ secrets.YANDEX_FOLDER_ID || 'b1g00u8p0k5nl98v8nre' }}
+          PHOTO_COST_APPROVED: 'true'
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          python3 scripts/oneoff_shakshuka_photo.py --execute
