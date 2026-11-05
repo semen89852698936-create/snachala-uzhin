@@ -11,11 +11,14 @@ function load(path) {
   const data = JSON.parse(tag[1]);
   assert.ok(Array.isArray(data), path + ': recipeData is not an array');
   assert.equal(data.length, 1001, path + ': recipe count changed');
-  const ids = data.map(r => r.id);
-  assert.equal(new Set(ids).size, 1001, path + ': duplicate recipe IDs');
+  // Normalize IDs exactly as the cross-catalog lookup does: 1 and "1" are the same recipe.
+  const ids = data.map(r => String(r.id));
+  assert.equal(new Set(ids).size, 1001, path + ': duplicate recipe IDs after normalization');
   for (const r of data) {
     assert.ok(r.id != null && r.title && Array.isArray(r.ingredients) && Array.isArray(r.steps),
       path + ': incomplete recipe ' + String(r.id));
+    assert.ok(String(r.id).trim() && String(r.id) !== 'undefined', path + ': blank recipe ID');
+    assert.ok(typeof r.title === 'string' && r.title.trim(), path + ': blank recipe title ' + r.id);
     assert.ok(r.ingredients.length && r.steps.length, path + ': empty recipe ' + r.id);
   }
   return data;
