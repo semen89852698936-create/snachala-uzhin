@@ -14,6 +14,9 @@ for (const path of ['index.html', 'full-catalog/index.html']) {
   assert.ok(html.includes('assets/editorial-recipe.css'),path+': editorial stylesheet not referenced');
   assert.ok(html.includes('<ol class="du-editorial-steps">'),path+': text-first recipe steps missing');
   assert.ok(html.includes('du-editorial-step-number'),path+': numbered steps missing');
+  assert.ok(html.includes('du-editorial-illustration'),path+': illustrated steps missing');
+  assert.ok(html.includes('du-editorial-cook-illustration'),path+': guided step illustration missing');
+  assert.ok(html.includes('function duStepIllustration(step)'),path+': context-specific action icon renderer missing');
   assert.ok(html.includes('du-editorial-cook-index'),path+': guided cooking view not updated');
   assert.ok(html.includes('id="portionMinus"')&&html.includes('id="portionPlus"'),path+': portion controls removed');
   assert.ok(html.includes('id="addShopping"')&&html.includes('id="recipeFav"'),path+': shopping/favorite controls removed');
