@@ -1,0 +1,21 @@
+name: Catalog parity
+on:
+  pull_request:
+    paths:
+      - 'index.html'
+      - 'full-catalog/index.html'
+      - 'scripts/test_catalog_parity.cjs'
+      - '.github/workflows/catalog-parity.yml'
+  workflow_dispatch:
+jobs:
+  parity:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Verify 1001 recipes in both catalogs
+        run: node scripts/test_catalog_parity.cjs
