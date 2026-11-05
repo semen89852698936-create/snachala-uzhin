@@ -1,7 +1,7 @@
 """Prodamus adapter. Validate official merchant fixture before enabling live checkout."""
 import hashlib,hmac,json
 from urllib.parse import urlencode,urlparse
-from .access import PRODUCT,PRICE_KOPEKS,email_key,to_kopeks
+from .access import PRODUCT,PRODUCT_TITLE,PRICE_KOPEKS,email_key,to_kopeks
 
 class PaymentRejected(ValueError): pass
 
@@ -31,7 +31,7 @@ def payment_url(order,*,merchant_url,sys_code,secret,return_url,notification_url
     if order.get('product')!=PRODUCT or order.get('amount_kopeks')!=PRICE_KOPEKS: raise ValueError('wrong product/price')
     data={'do':'pay','sys':sys_code,'order_id':order['order_num'],
           'customer_email':email_key(order['email']),
-          'products':[{'name':'СНАЧАЛА УЖИН. Бессрочный доступ к 1001 рецепту','price':'1900.00','quantity':'1','sku':PRODUCT}],
+          'products':[{'name':PRODUCT_TITLE,'price':'1900.00','quantity':'1','sku':PRODUCT}],
           'urlReturn':return_url,'urlSuccess':return_url, 'urlNotification':notification_url,
           'currency':'rub','payments_limit':'1'}
     flat={k:v for k,v in data.items() if k!='products'}
@@ -57,6 +57,6 @@ def confirm_notification(payload,signature,*,merchant_domain,sys_code,secret,sto
     p=products[0]
     # Official sample callback omits SKU even if checkout contains one.
     # Rely on the signed product name, count and price; validate SKU when present.
-    expected_name='СНАЧАЛА УЖИН. Бессрочный доступ к 1001 рецепту'
+    expected_name=PRODUCT_TITLE
     if p.get('sku') not in (None, '', PRODUCT) or p.get('name')!=expected_name or p.get('quantity')!='1' or to_kopeks(p.get('price'))!=PRICE_KOPEKS:raise PaymentRejected('item mismatch')
     return store.grant_verified_payment(order_num=order_num,payment_id=payment_id,amount=payload['sum'],verified=True)
