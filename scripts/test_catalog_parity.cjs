@@ -12,7 +12,13 @@ function load(path) {
   assert.ok(Array.isArray(data), path + ': recipeData is not an array');
   assert.equal(data.length, 1001, path + ': recipe count changed');
   // Normalize IDs exactly as the cross-catalog lookup does: 1 and "1" are the same recipe.
-  const ids = data.map(r => String(r.id));
+  const ids = data.map(r => {
+    assert.ok(typeof r.id === 'string' || (typeof r.id === 'number' && Number.isSafeInteger(r.id)),
+      path + ': invalid recipe ID type ' + String(r.id));
+    const id = String(r.id);
+    assert.equal(id, id.trim(), path + ': recipe ID contains surrounding whitespace ' + JSON.stringify(id));
+    return id;
+  });
   assert.equal(new Set(ids).size, 1001, path + ': duplicate recipe IDs after normalization');
   for (const r of data) {
     assert.ok(r.id != null && r.title && Array.isArray(r.ingredients) && Array.isArray(r.steps),
