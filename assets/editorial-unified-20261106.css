@@ -1,0 +1,174 @@
+/* "СНАЧАЛА УЖИН" · unified editorial pass 01 (2026-11-06).
+   Scoped to the existing recipe, cooking, and Our Evening modes.
+   This stylesheet contains NO image URLs, content replacement or layout scripts.
+   Existing recipe, photo, music and payment behavior is unchanged. */
+:root {
+  --du-magazine-paper: #fffaf4;
+  --du-magazine-cream: #f7eee7;
+  --du-magazine-wine: #713449;
+  --du-magazine-wine-dark: #512b38;
+  --du-magazine-copy: #59474a;
+  --du-magazine-rule: #e9d7ce;
+  --du-magazine-serif: 'Cormorant Garamond', Georgia, 'Times New Roman', serif;
+  --du-magazine-sans: Manrope, Arial, sans-serif;
+}
+
+/* A single editorial hierarchy for the recipe spread and guided cooking. */
+#recipeView.recipe-page {
+  background: var(--du-magazine-cream);
+  color: var(--du-magazine-copy);
+}
+#recipeDetail .recipe-kicker,
+#cookOverlay .cook-label {
+  color: var(--du-magazine-wine);
+  letter-spacing: .13em;
+}
+#recipeDetail .recipe-intro h1,
+#recipeDetail .recipe-panel-grid .panel h2,
+#cookOverlay .du-editorial-cook-step h2 {
+  font-family: var(--du-magazine-serif);
+  color: var(--du-magazine-wine-dark);
+}
+#recipeDetail .recipe-intro h1 {
+  max-width: 14ch;
+  text-wrap: balance;
+  line-height: .99;
+}
+#recipeDetail .recipe-intro-copy > p {
+  color: var(--du-magazine-copy);
+  max-width: 60ch;
+}
+#recipeDetail .recipe-intro-photo {
+  border-radius: 10px;
+  box-shadow: 0 18px 45px rgba(69, 36, 44, .10);
+}
+#recipeDetail .recipe-panel-grid .panel {
+  background: var(--du-magazine-paper);
+  border: 1px solid var(--du-magazine-rule);
+  border-radius: 12px;
+  box-shadow: 0 10px 36px rgba(65, 39, 44, .055);
+}
+#recipeDetail .du-editorial-step-copy p {
+  color: var(--du-magazine-copy);
+  line-height: 1.65;
+}
+#recipeDetail .du-editorial-step-copy strong {
+  color: var(--du-magazine-wine-dark);
+}
+#recipeDetail .tip-card {
+  border-left: 3px solid #9b596b;
+  background: #f6e8e0;
+}
+#recipeDetail .cook-all-btn,
+#recipeDetail #startCooking {
+  background: var(--du-magazine-wine);
+  border-color: var(--du-magazine-wine);
+}
+#recipeDetail #startCooking:hover {
+  background: var(--du-magazine-wine-dark);
+}
+#cookOverlay .cook-sheet {
+  background: var(--du-magazine-paper);
+  border: 1px solid var(--du-magazine-rule);
+}
+#cookOverlay .du-editorial-cook-step p {
+  color: var(--du-magazine-copy);
+}
+
+/* Our Evening is the romantic editorial feature, not a separate visual product.
+   Keep all previously approved photos and preserve every interactive control. */
+body.du-evening-mode #eveningLanding,
+body.du-evening-mode #evening,
+body.du-evening-mode #music {
+  --story-ink: var(--du-magazine-wine-dark);
+  --story-surface: var(--du-magazine-cream);
+}
+body.du-evening-mode #eveningLanding .du-evening-landing-kicker,
+body.du-evening-mode #eveningLanding .du-story-eyebrow,
+body.du-evening-mode #evening .du-mini-eyebrow,
+body.du-evening-mode #music .du-eyebrow {
+  color: #95576b;
+  letter-spacing: .12em;
+}
+body.du-evening-mode #eveningLanding .du-evening-landing-content h1,
+body.du-evening-mode #eveningLanding .du-story-dinner-copy h2,
+body.du-evening-mode #evening .du-section-heading h2,
+body.du-evening-mode #music .du-section-heading h2 {
+  font-family: var(--du-magazine-serif);
+  letter-spacing: -.04em;
+  color: var(--du-magazine-wine-dark);
+  text-wrap: balance;
+}
+body.du-evening-mode #eveningLanding .du-evening-landing-lead,
+body.du-evening-mode #evening .du-section-heading p,
+body.du-evening-mode #music .du-section-heading p {
+  color: var(--du-magazine-copy);
+}
+body.du-evening-mode #eveningLanding .du-evening-landing-photo,
+body.du-evening-mode #eveningLanding .du-story-dinner,
+body.du-evening-mode #evening .du-story-after {
+  border-radius: 12px;
+}
+body.du-evening-mode #eveningLanding .du-evening-inspiration-card {
+  border: 1px solid var(--du-magazine-rule);
+  border-radius: 10px;
+  background: var(--du-magazine-paper);
+}
+body.du-evening-mode #eveningLanding .du-evening-inspiration-card span {
+  color: var(--du-magazine-wine-dark);
+}
+body.du-evening-mode #eveningLanding .du-evening-inspiration-head strong {
+  color: var(--du-magazine-wine-dark);
+  font-family: var(--du-magazine-serif);
+  font-size: clamp(20px, 2.1vw, 26px);
+  font-weight: 600;
+}
+body.du-evening-mode #eveningLanding .du-evening-landing-cta,
+body.du-evening-mode #evening .du-menu-actions .du-btn-primary,
+body.du-evening-mode #evening .du-evening-invite-actions .du-btn-primary {
+  background: var(--du-magazine-wine);
+  border-color: var(--du-magazine-wine);
+}
+body.du-evening-mode #music .du-music-card {
+  border-radius: 12px;
+}
+
+/* A magazine must remain readable on narrow screens and in modal mode. */
+@media (max-width: 760px) {
+  #recipeDetail .recipe-intro h1 { max-width: none; }
+  #recipeDetail .recipe-panel-grid .panel { padding: 22px 18px; }
+  #recipeDetail .du-editorial-step-copy p { font-size: 16px; }
+  #cookOverlay .cook-sheet { padding: 22px 17px; }
+  #cookOverlay .du-editorial-cook-step h2 { font-size: clamp(32px, 7vw, 46px); }
+  body.du-evening-mode #eveningLanding .du-evening-landing-content {
+    padding-inline: 4px;
+  }
+  body.du-evening-mode #eveningLanding .du-evening-landing-text,
+  body.du-evening-mode #eveningLanding .du-story-dinner-copy p {
+    font-size: 16px;
+    line-height: 1.7;
+  }
+  body.du-evening-mode #evening .du-evening-together-content > p,
+  body.du-evening-mode #evening .du-evening-invitation-content > p {
+    font-size: 16px;
+    line-height: 1.65;
+  }
+}
+@media (max-width: 430px) {
+  #recipeDetail .du-editorial-step { gap: 8px; }
+  #recipeDetail .du-editorial-step-copy strong { font-size: 22px; }
+  #cookOverlay .du-editorial-cook-step p { font-size: 17px; }
+  body.du-evening-mode #eveningLanding .du-evening-inspiration-grid { gap: 8px; }
+  body.du-evening-mode #eveningLanding .du-evening-inspiration-card span {
+    font-size: 12px;
+    line-height: 1.35;
+  }
+  body.du-evening-mode #eveningLanding .du-evening-inspiration-card small {
+    font-size: 11px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  body.du-evening-mode #eveningLanding .du-evening-inspiration-card {
+    transition: none;
+  }
+}
