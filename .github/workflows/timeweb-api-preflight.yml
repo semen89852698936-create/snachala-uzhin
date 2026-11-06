@@ -16,7 +16,7 @@ jobs:
     steps:
       - name: Verify Timeweb App Platform token without creating resources
         env:
-          TIMEWEB_API_TOKEN: \${{ secrets.TIMEWEB_API_TOKEN }}
+          TIMEWEB_API_TOKEN: ${{ secrets.TIMEWEB_API_TOKEN }}
         run: |
           set -euo pipefail
           python3 - <<'PY'
