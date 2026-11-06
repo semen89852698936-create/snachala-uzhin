@@ -40,6 +40,14 @@ const missing=data.recipes.filter(r=>r.photo_status!=='ready'||!r.photo_webp);
 if(process.argv.includes('--release')){
   assert.doesNotMatch(data.status,/NOT published|NOT experimentally verified|editorial candidates/i,'draft cannot ship');
   assert.equal(missing.length,0,'matching WebP photos required');
-  for(const r of data.recipes)assert.ok(fs.existsSync(path.join(root,r.photo_webp)),r.id+' photo missing');
+  for(const r of data.recipes){
+    assert.ok(fs.existsSync(path.join(root,r.photo_webp)),r.id+' photo missing');
+    // Editorial sources and a matching photograph do not establish real-appliance verification.
+    // Require recorded independent cooking QA before any candidate is eligible for release.
+    assert.equal(r.appliance_test?.status,'passed',r.id+' real-appliance QA missing');
+    assert.ok(typeof r.appliance_test?.model==='string'&&r.appliance_test.model.trim(),r.id+' tested appliance model missing');
+    assert.ok(typeof r.appliance_test?.date==='string'&&/^\d{4}-\d{2}-\d{2}$/.test(r.appliance_test.date),r.id+' test date missing');
+    assert.ok(typeof r.appliance_test?.notes==='string'&&r.appliance_test.notes.trim(),r.id+' cooking observations missing');
+  }
 }
 console.log('PASS '+data.recipes.length+' editorial candidates; '+missing.length+' photos pending. No publication claimed.');
