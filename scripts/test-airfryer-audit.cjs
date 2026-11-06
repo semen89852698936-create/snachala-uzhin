@@ -1,0 +1,11 @@
+'use strict';
+const assert=require('node:assert/strict');
+const {audit}=require('./audit-airfryer-technology.cjs');
+const good=audit([{id:1,title:'Курица в аэрогриле',steps:['180°С 20 минут до готовности']}]);
+assert.equal(good.length,1);
+assert.equal(good[0].needsReview,false);
+const incomplete=audit([{id:2,section:'Аэрогриль',steps:['Готовить до готовности']}]);
+assert.equal(incomplete.length,1);
+assert.equal(incomplete[0].needsReview,true);
+assert.equal(audit([{id:3,title:'Суп',steps:['Кипятить 20 минут']}]).length,0);
+console.log('PASS: airfryer audit synthetic fixtures');
