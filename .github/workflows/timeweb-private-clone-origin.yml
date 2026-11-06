@@ -1,8 +1,6 @@
 name: Bind new Timeweb VPC clone to its HTTPS origin (one-shot)
 on:
-  pull_request:
-    branches: [feature/commerce-secure-foundation-20261104]
-    paths: ['.github/workflows/timeweb-private-clone-origin.yml']
+  workflow_dispatch:
 permissions:
   contents: read
 concurrency:
