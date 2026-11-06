@@ -31,7 +31,10 @@ const {chromium}=require('playwright');
      const heading=document.querySelector('#catalog .du-section-heading h2');
      return {bg:getComputedStyle(document.querySelector('#catalog')).backgroundColor,
        columns:getComputedStyle(grid).gridTemplateColumns.split(' ').length,
-       firstColumn:getComputedStyle(first).gridColumnEnd,
+       firstColumnStart:getComputedStyle(first).gridColumnStart,
+       firstColumnEnd:getComputedStyle(first).gridColumnEnd,
+       firstWidth:first.getBoundingClientRect().width,
+       secondWidth:grid.querySelector('.recipe-card:nth-child(2)').getBoundingClientRect().width,
        firstDisplay:getComputedStyle(first).display,
        headingSize:parseFloat(getComputedStyle(heading).fontSize),
        cardImageHeight:first.querySelector('.card-image').getBoundingClientRect().height};
@@ -40,7 +43,8 @@ const {chromium}=require('playwright');
    if(viewport.width>1000){
      assert.equal(catalog.columns,3,'desktop magazine grid should have 3 tracks');
      assert.equal(catalog.firstDisplay,'grid','desktop first recipe not featured');
-     assert.equal(catalog.firstColumn,'span 2','desktop lead recipe not double width');
+     assert.equal(catalog.firstColumnStart,'span 2','desktop feature should start with a two-track span');
+     assert(catalog.firstWidth>catalog.secondWidth*1.6,'desktop lead recipe should be visibly wider: '+JSON.stringify(catalog));
      assert(catalog.headingSize>70,'magazine masthead too small');
    }else{
      assert.equal(catalog.columns,1,'mobile catalog must be single column');
