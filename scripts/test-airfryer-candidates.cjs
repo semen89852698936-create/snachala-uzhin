@@ -42,12 +42,14 @@ assert.ok(audit({...r,ingredients:[['курица',''],['масло','1 ч. л.'
 assert.ok(audit({...r,steps:['Подготовить',' ', 'Готовить']}).includes('steps'),'empty cooking step cannot pass');
 assert.ok(audit({...r,photo_status:'ready',photo_webp:null}).includes('photo marked ready without WebP'));
 assert.ok(audit({...r,steps:['Приготовить на глаз']}).length);
+assert.ok(/^assets\/[\w./-]+\.webp$/.test('assets/airfryer-salmon.webp'),'valid WebP path must pass release regex');
+assert.ok(!/^assets\/[\w./-]+\.webp$/.test('assets/airfryer-salmon.png'),'non-WebP must fail release regex');
 const missing=data.recipes.filter(r=>r.photo_status!=='ready'||!r.photo_webp);
 if(process.argv.includes('--release')){
   assert.doesNotMatch(data.status,/NOT published|NOT experimentally verified|editorial candidates/i,'draft cannot ship');
   assert.equal(missing.length,0,'matching WebP photos required');
   for(const r of data.recipes){
-    assert.ok(typeof r.photo_webp==='string'&&/^assets\\/[\\w./-]+\\.webp$/.test(r.photo_webp)&&!r.photo_webp.includes('..'),r.id+' invalid photo path');
+    assert.ok(typeof r.photo_webp==='string'&&/^assets\/[\w./-]+\.webp$/.test(r.photo_webp)&&!r.photo_webp.includes('..'),r.id+' invalid photo path');
     const photoPath=path.resolve(root,r.photo_webp);
     assert.ok(photoPath.startsWith(path.resolve(root,'assets')+path.sep),r.id+' photo outside assets');
     assert.ok(fs.existsSync(photoPath),r.id+' photo missing');
