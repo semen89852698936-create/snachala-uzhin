@@ -37,7 +37,7 @@ jobs:
                   break
               app=data.get('app',{})
               print('SAFE APP FIELDS',json.dumps({k:app.get(k) for k in ('id','name','preset_id','branch_name','status','location','project_id','framework')},ensure_ascii=False))
-              if app.get('id')!=284041 or app.get('name')!='snachala-uzhin-commerce-staging' or app.get('preset_id')!=2731 or app.get('branch_name')!='deploy/commerce-timeweb-staging-20261106':
+              if app.get('id')!=284041 or app.get('name')!='snachala-uzhin-commerce-staging' or app.get('preset_id')!=2731 or app.get('project_id')!=3145267 or app.get('location')!='ru-3' or app.get('branch_name') not in (None,'deploy/commerce-timeweb-staging-20261106'):
                   raise SystemExit('BLOCK: app identity/preset/branch mismatch')
               print('TARGET APP',app.get('id'),'STATUS',app.get('status'),'LOCATION',app.get('location'),'FRAMEWORK',app.get('framework'),'PRESET',app.get('preset_id'))
               env=app.get('envs') if isinstance(app.get('envs'),dict) else {}
