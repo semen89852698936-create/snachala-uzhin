@@ -21,6 +21,29 @@ for i,p in enumerate(photos,1):
     binary=file.read_bytes()
     assert len(binary)==p["bytes"],(i,"size")
     assert binary.startswith(b"RIFF") and binary[8:12]==b"WEBP",(i,"format")
+    # A RIFF/WEBP signature alone is not enough: truncated or padded files can
+    # otherwise pass the photo map size/hash checks if the map was regenerated.
+    assert len(binary)>=20,(i,"truncated WebP header")
+    riff_size=int.from_bytes(binary[4:8],"little")
+    assert riff_size+8==len(binary),(i,"RIFF declared length differs from file size")
+    offset=12
+    image_chunk=False
+    while offset<len(binary):
+        assert offset+8<=len(binary),(i,"truncated WebP chunk header")
+        kind=binary[offset:offset+4]
+        size=int.from_bytes(binary[offset+4:offset+8],"little")
+        end=offset+8+size
+        assert end<=len(binary),(i,"truncated WebP chunk payload",kind)
+        if kind in (b"VP8 ",b"VP8L"):
+            assert size>0,(i,"empty image payload",kind)
+            image_chunk=True
+        elif kind==b"VP8X":
+            assert size==10,(i,"invalid extended WebP header")
+        if size&1:
+            assert end<len(binary) and binary[end]==0,(i,"invalid WebP padding",kind)
+        offset=end+(size&1)
+    assert offset==len(binary),(i,"invalid WebP chunk padding")
+    assert image_chunk,(i,"no VP8/VP8L image payload; VP8X alone is metadata")
     gitsha=hashlib.sha1(b"blob "+str(len(binary)).encode()+b"\0"+binary).hexdigest()
     assert gitsha==p["sha"],(i,"gitsha")
 for url in ("index.html","full-catalog/index.html"):
