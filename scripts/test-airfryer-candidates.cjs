@@ -47,7 +47,12 @@ if(process.argv.includes('--release')){
   assert.doesNotMatch(data.status,/NOT published|NOT experimentally verified|editorial candidates/i,'draft cannot ship');
   assert.equal(missing.length,0,'matching WebP photos required');
   for(const r of data.recipes){
-    assert.ok(fs.existsSync(path.join(root,r.photo_webp)),r.id+' photo missing');
+    assert.ok(typeof r.photo_webp==='string'&&/^assets\\/[\\w./-]+\\.webp$/.test(r.photo_webp)&&!r.photo_webp.includes('..'),r.id+' invalid photo path');
+    const photoPath=path.resolve(root,r.photo_webp);
+    assert.ok(photoPath.startsWith(path.resolve(root,'assets')+path.sep),r.id+' photo outside assets');
+    assert.ok(fs.existsSync(photoPath),r.id+' photo missing');
+    const photo=fs.readFileSync(photoPath);
+    assert.ok(photo.length>=12&&photo.toString('ascii',0,4)==='RIFF'&&photo.toString('ascii',8,12)==='WEBP',r.id+' invalid WebP signature');
     // Editorial sources and a matching photograph do not establish real-appliance verification.
     // Require recorded independent cooking QA before any candidate is eligible for release.
     assert.equal(r.appliance_test?.status,'passed',r.id+' real-appliance QA missing');
