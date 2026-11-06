@@ -1,0 +1,10 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import {audit} from './validate-photo-summary.mjs';
+const summary={totalRecipes:2,distinctImageFilesLocallyConfirmed:0,updatedAt:'2026-11-01'};
+const csv='n,id,title\n1,a,first\n2,b,second\n';
+const candidate={recipe_id:'a',recipe_title:'Свиная вырезка',source_page:'https://www.pexels.com/photo/chicken-meat-dish-792027/',photo_downloaded:false,visually_approved:false,publication_approved:false,site_published:false};
+test('source-only candidate not approved',()=>{const r=audit(summary,{candidateCount:1,sources:[candidate]},csv);assert.equal(r.errors.length,0);assert.equal(r.downloadedCandidates,0);assert.equal(r.approvedCandidates,0);assert.ok(r.warnings.some(w=>w.includes('poultry')))});
+test('false publication approval rejected',()=>{const r=audit(summary,{candidateCount:1,sources:[{...candidate,publication_approved:true}]},csv);assert.ok(r.errors.some(e=>e.includes('Unsubstantiated')))});
+test('duplicates and count mismatch rejected',()=>{const r=audit(summary,{candidateCount:1,sources:[candidate,candidate]},csv);assert.ok(r.errors.some(e=>e.includes('Duplicate')));assert.ok(r.errors.some(e=>e.includes('candidateCount')))});
+test('CSV mismatch rejected',()=>{const r=audit(summary,{candidateCount:0,sources:[]},'n,id,title\n1,a,first\n');assert.ok(r.errors.some(e=>e.includes('CSV')))});
