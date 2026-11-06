@@ -11,6 +11,29 @@ Copy the **variable names** from `commerce/.env.example` into the Timeweb Cloud 
 ## Provider requirements
 Confirm the merchant's actual `*.payform.ru` URL and the integration-specific `sys` code with Prodamus. The backend signs checkout parameters and validates incoming multipart notifications with HMAC; verify canonical serialization against an **official live signed fixture** before enabling `ENABLE_CHECKOUT=1`. Webhook URL: `POST https://<configured-base-domain>/webhooks/prodamus`. Prodamus sends header `Sign`, `order_num` (merchant order), `order_id` (provider transaction), `domain`, `sum`, `sys`, `payment_status`, `products`. Demo signatures deliberately differ from production signatures. Redirect from payment page is not proof of payment.
 
+## Prodamus merchant notifications (06.11.2026)
+
+The seller's Prodamus interface may automatically enable **"All events"** when
+"Order paid" is selected. That is acceptable **only with a fail-closed backend**:
+every callback must pass the provider signature check, merchant/domain check,
+merchant-generated order ID, email, amount and product checks. A signed event
+with `payment_status=order_canceled` or `order_denied` (or an unknown status)
+must never grant access; only `success` may do so. Duplicate paid callbacks
+must be idempotent. The new regression test checks these cases without external
+API calls or money.
+
+The official provider documents `multipart/form-data`, header `Sign`,
+`payment_status=success`, `order_canceled`, `order_denied`, and retries after
+non-200 responses:
+https://help.prodamus.ru/payform/uvedomleniya/kak-ustroena-otpravka-uvedomlenii-ob-oplate
+
+**Do not paste the current reusable payment URL into the buy button as a
+substitute for per-buyer orders.** The checkout must originate from
+`POST /api/orders` and carry our unique order identifier. Do not configure
+the merchant webhook URL until a tested live HTTPS backend exists. The signed
+fixture and refund semantics still require merchant QA before enabling
+`ENABLE_CHECKOUT=1`.
+
 ## Gating tests
 1. No session: `/app` -> 403; old catalogue routes must not leak full recipes.
 2. Signed but unpaid session: `/app` -> 403.
