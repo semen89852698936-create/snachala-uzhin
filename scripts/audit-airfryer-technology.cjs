@@ -13,8 +13,8 @@ function audit(recipes) {
   const rows = [];
   for (const recipe of recipes) {
     const metadata = [recipe.title, recipe.category, recipe.section, recipe.tags].flat().filter(Boolean).join(' ');
-    if (!/аэрогрил/i.test(metadata + ' ' + steps)) continue;
     const steps = Array.isArray(recipe.steps) ? recipe.steps.map(s => typeof s === 'string' ? s : Object.values(s || {}).join(' ')).join(' ') : String(recipe.steps || '');
+    if (!/аэрогрил/i.test(metadata + ' ' + steps)) continue;
     const description = [recipe.description, recipe.instructions, steps].filter(Boolean).join(' ');
     const hasTemperature = /(?:1[0-9]{2}|2[0-3][0-9])\s*(?:°\s*[CcСс]?|градус)/i.test(description);
     const hasTime = /\b\d+\s*(?:[-–]\s*\d+\s*)?(?:минут|мин\.?|час)/i.test(description);
