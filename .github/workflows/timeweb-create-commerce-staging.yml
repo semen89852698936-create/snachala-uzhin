@@ -101,7 +101,7 @@ jobs:
             'is_auto_deploy':False,
             'commit_sha':head,
             'name':name,
-            'comment':'SNAChALA UZHIN: isolated Docker test only; no real payments',
+            'comment':'SNAChALA UZHIN Docker staging no payments',
             'preset_id':2731,
             'framework':'docker',
             'run_cmd':'gunicorn commerce.wsgi:application --bind 0.0.0.0:8080 --workers 1 --threads 1 --timeout 60',
