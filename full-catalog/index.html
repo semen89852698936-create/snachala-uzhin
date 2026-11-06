@@ -943,7 +943,7 @@ function pantryParseStock(search) {
    if(!value)return null;
    // Natural Russian piece counts: '2 яйца' and '1 луковица'.
    // Do not assume a weight for a piece or match green onions to bulb onions.
-   const counted=/^([1-9]\\d*)\\s*(яйцо|яйца|яиц|луковица|луковицы|луковиц)$/u.exec(value);
+   const counted=/^([1-9]\d*)\s*(яйцо|яйца|яиц|луковица|луковицы|луковиц)$/u.exec(value);
    if(counted){
      const amount=Number(counted[1]);
      if(Number.isSafeInteger(amount))return {
