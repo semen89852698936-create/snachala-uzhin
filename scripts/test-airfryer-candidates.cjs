@@ -12,7 +12,7 @@ function audit(r){
   if(!Array.isArray(r.ingredients)||r.ingredients.length<3||r.ingredients.some(a=>!Array.isArray(a)||a.length!==2))issues.push('ingredients');
   if(!Number.isInteger(r.temperature_c)||r.temperature_c<120||r.temperature_c>230)issues.push('temperature');
   if(!Array.isArray(r.cook_minutes)||r.cook_minutes.length!==2||r.cook_minutes[0]<1||
-     r.cook_minutes[0]>r.cook_minutes[1]||r.cook_minutes[1]>120)issues.push('time');
+     !r.cook_minutes.every(Number.isInteger)||r.cook_minutes[0]>r.cook_minutes[1]||r.cook_minutes[1]>120)issues.push('time');
   if(!Array.isArray(r.steps)||r.steps.length<3)issues.push('steps');
   const s=Array.isArray(r.steps)?r.steps.join(' '):'';
   if(!/(?:1[2-9]\d|2[0-3]\d)\s*°\s*[CcСс]?/.test(s)||!/\d+\s*(?:[-–]\s*\d+\s*)?минут/.test(s))issues.push('method must state temperature and time');
@@ -34,6 +34,8 @@ for(const r of data.recipes)assert.deepEqual(audit(r),[],r.id+' invalid metadata
 const r=data.recipes[1];
 assert.ok(audit({...r,temperature_c:300}).includes('temperature'));
 assert.ok(audit({...r,cook_minutes:[30,10]}).includes('time'));
+assert.ok(audit({...r,cook_minutes:['10','20']}).includes('time'),'string minutes must not pass numeric QA');
+assert.ok(audit({...r,cook_minutes:[10.5,20]}).includes('time'),'fractional minutes require explicit editorial normalization');
 assert.ok(audit({...r,photo_status:'ready',photo_webp:null}).includes('photo marked ready without WebP'));
 assert.ok(audit({...r,steps:['Приготовить на глаз']}).length);
 const missing=data.recipes.filter(r=>r.photo_status!=='ready'||!r.photo_webp);
