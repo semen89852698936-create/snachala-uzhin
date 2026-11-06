@@ -45,6 +45,10 @@ for(const path of ['index.html','full-catalog/index.html']){
  assert.equal(missing(synthetic,parse('100 г курицы, 150 г курицы, сливки, чеснок, лук'),false,2)[0].amount,50,path+': multiple stock entries add');
  assert.equal(missing(synthetic,stock,false,4)[0].amount,500,path+': selected servings 4 instead of 2');
  assert.equal(missing(synthetic,stock,false,4)[1].amount,400,path+': cream with 4 portions');
+ // Extra boundary cases: decimal quantities and mixed metric units must remain exact.
+ assert.equal(missing(synthetic,parse('0,25 кг курицы, 0,3 л сливок, чеснок, лук'),false,2)[0].amount,50,path+': fractional kilograms leave 50g');
+ assert.equal(missing(synthetic,parse('250 г курицы, 0,25 л сливок, чеснок, лук'),false,2)[1].amount,50,path+': fractional liters leave 50ml');
+ assert.equal(missing(synthetic,parse('100 г курицы, 0,1 кг курицы, 100 г курицы, 300 мл сливок, чеснок, лук'),false,2).length,0,path+': repeated entries in mixed units sum to exact stock');
  const mismatch=missing(synthetic,parse('1 шт. курицы, сливки, чеснок, лук'),false,2);
  assert.equal(mismatch.length,1);
  assert.equal(mismatch[0].uncertain,true,path+': cannot infer grams from 1 chicken');
