@@ -59,6 +59,26 @@ for(const path of ['index.html','full-catalog/index.html']){
  assert.equal(missing(synthetic,parse('0,3 кг курицы, 0,3 л сливок, чеснок, лук'),false,2).length,0,path+': equivalent metric units match exactly');
  assert.equal(rank([synthetic],stock,false,r=>2)[0].missing.length,2,path+': partial deficits ranked as missing');
 
+ const eggRecipe={id:'eggs-test',base:2,ingredients:[{name:'Яйцо',amount:4,unit:'шт.'}]};
+ const onions={id:'onion-test',base:2,ingredients:[{name:'Лук репчатый',amount:4,unit:'шт.'}]};
+ const greenOnions={id:'green-onion-test',base:2,ingredients:[{name:'Лук зелёный',amount:30,unit:'г'}]};
+ // Natural piece counts are as useful as grams on a Russian shopping list.
+ assert.equal(parse('2 яйца')[0].amount,2,path+': two eggs in plain Russian');
+ assert.equal(parse('1 яйцо')[0].dimension,'pieces',path+': singular egg count');
+ assert.equal(parse('5 яиц')[0].amount,5,path+': genitive egg count');
+ assert.equal(parse('3 луковицы')[0].name,'лук репчатый',path+': onion noun maps to bulb onion');
+ assert.equal(missing(eggRecipe,parse('2 яйца'),false,2)[0].amount,2,path+': two more eggs are needed');
+ assert.equal(missing(eggRecipe,parse('1 яйцо, 2 яйца'),false,2)[0].amount,1,path+': natural counts sum');
+ assert.equal(missing(eggRecipe,parse('4 яйца'),false,2).length,0,path+': enough eggs');
+ assert.equal(missing(eggRecipe,parse('2 яйца'),false,4)[0].amount,6,path+': egg deficit scales with portions');
+ assert.equal(missing(onions,parse('3 луковицы'),false,2)[0].amount,1,path+': 4 onions minus 3');
+ assert.equal(missing(greenOnions,parse('3 луковицы'),false,2)[0].amount,30,path+': bulb onion must never stand for green onion');
+ assert.equal(rank([eggRecipe],parse('2 яйца'),false,r=>2)[0].missing[0].amount,2,path+': natural count enters ranked search');
+ // The original data contains hundreds of recipes with eggs measured in pieces.
+ const ramen=recipes.find(r=>r.id==='ramen');
+ assert.ok(ramen,path+': ramen fixture missing');
+ assert.equal(missing(ramen,parse('1 яйцо'),false,2).find(x=>x.name==='Яйцо').amount,1,path+': real ramen needs one more egg');
+
  const salt={base:2,ingredients:[{name:'Соль',amount:4,unit:'г'}]};
  assert.equal(missing(salt,parse('курица'),true,2).length,0,path+': basics assumed available');
  assert.equal(missing(salt,parse('курица'),false,2).length,1,path+': basics switch off');

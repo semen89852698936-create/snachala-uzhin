@@ -61,6 +61,18 @@ const assert=require('node:assert/strict');
     assert.deepEqual(buyAmounts,['100 г'],'Cart stores 100g shortage, not full 200g');
     await page.locator('#closeShopping').click();
 
+    // Real-world count query: one egg at home, ramen needs two.
+    await page.locator('#recipeSearch').fill('1 яйцо, лапша пшеничная, овощной бульон, шампиньоны, соевый соус, имбирь свежий, зелёный лук');
+    const ramen=page.locator('article[data-recipe="ramen"]');
+    assert.equal(await ramen.count(),1,'A natural egg count must find the ramen recipe');
+    assert.match(await ramen.innerText(),/Яйцо\s*[-–]\s*1 шт\.?/,'Show the one missing egg, not two');
+    await ramen.locator('[data-shop-missing]').click();
+    await page.locator('.shopping-open').first().click();
+    const eggCart=await page.locator('#shoppingContents .shop-item').allInnerTexts();
+    assert(eggCart.some(row=>/Яйцо/.test(row)&&/1 шт/.test(row)),
+      'Only one egg should be added to the shared grocery list');
+    await page.locator('#closeShopping').click();
+
     if(viewport.width<500){
       const overflow=await page.evaluate(()=>document.documentElement.scrollWidth-document.documentElement.clientWidth);
       if(overflow>2){
