@@ -23,6 +23,7 @@ on:
       - 'full-catalog/index.html'
       - 'scripts/test_pantry_search.cjs'
       - 'scripts/test_pantry_quantities.cjs'
+      - 'scripts/test_ingredient_search.cjs'
       - 'scripts/test_editorial_recipe.cjs'
       - 'scripts/test_cooking_timer.cjs'
       - 'scripts/e2e-cooking-timer.cjs'
