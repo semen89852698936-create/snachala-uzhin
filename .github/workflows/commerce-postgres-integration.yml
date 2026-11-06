@@ -1,0 +1,45 @@
+name: Commercial PostgreSQL integration (isolated, no real buyers)
+on:
+  pull_request:
+    branches: [feature/commerce-secure-foundation-20261104]
+    paths:
+      - '.github/workflows/commerce-postgres-integration.yml'
+      - 'scripts/smoke-commerce-postgres.py'
+      - 'commerce/access.py'
+      - 'commerce/postgres_db.py'
+      - 'commerce/email_auth.py'
+permissions:
+  contents: read
+jobs:
+  postgres-integration:
+    if: github.event.pull_request.number == 135 && github.event.pull_request.head.ref == 'deploy/commerce-timeweb-staging-20261106' && github.event.pull_request.head.repo.full_name == github.repository
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    services:
+      postgres:
+        image: postgres:16
+        env:
+          POSTGRES_DB: commerce_qa
+          POSTGRES_USER: postgres
+          POSTGRES_PASSWORD: ci-only-never-production
+        ports: ['5432:5432']
+        options: >-
+          --health-cmd "pg_isready -U postgres -d commerce_qa"
+          --health-interval 5s
+          --health-timeout 5s
+          --health-retries 10
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+      - name: Install only psycopg driver into isolated virtualenv
+        run: |
+          python3 -m venv /tmp/commerce-pg-venv
+          /tmp/commerce-pg-venv/bin/python -m pip install --disable-pip-version-check 'psycopg[binary]==3.3.6'
+      - name: Run real local PostgreSQL integration tests
+        env:
+          COMMERCE_TEST_POSTGRES: '1'
+          COMMERCE_PG_SSLMODE: disable
+          COMMERCE_DATABASE_URL: postgresql://postgres:ci-only-never-production@127.0.0.1:5432/commerce_qa
+        run: |
+          /tmp/commerce-pg-venv/bin/python scripts/smoke-commerce-postgres.py
+      - name: Never connect production PostgreSQL during CI
+        run: echo "Only ephemeral PostgreSQL 16 service. No Timeweb DB or live orders were touched."
