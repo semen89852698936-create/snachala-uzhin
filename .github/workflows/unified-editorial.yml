@@ -8,6 +8,7 @@ on:
       - 'scripts/test_unified_editorial.cjs'
       - 'scripts/e2e-unified-editorial.cjs'
       - 'scripts/e2e-editorial-home.cjs'
+      - 'scripts/e2e-pepper-steak-editorial.cjs'
       - '.github/workflows/unified-editorial.yml'
 permissions:
   contents: read
@@ -33,6 +34,7 @@ jobs:
           python3 -m http.server 8765 --bind 127.0.0.1 >/tmp/unified-editorial-http.log 2>&1 &
           node scripts/e2e-unified-editorial.cjs
           node scripts/e2e-editorial-home.cjs
+          node scripts/e2e-pepper-steak-editorial.cjs
       - name: Upload screenshots
         if: always()
         uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
@@ -42,4 +44,5 @@ jobs:
             /tmp/unified-*.png
             /tmp/editorial-home-*.png
             /tmp/editorial-catalog-*.png
+            /tmp/editorial-pepper-*.png
           if-no-files-found: ignore
