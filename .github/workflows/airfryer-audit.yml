@@ -1,0 +1,31 @@
+name: Airfryer technology inventory
+on:
+  pull_request:
+    paths:
+      - 'index.html'
+      - 'full-catalog/index.html'
+      - 'scripts/audit-airfryer-technology.cjs'
+      - 'scripts/test-airfryer-audit.cjs'
+      - '.github/workflows/airfryer-audit.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          persist-credentials: false
+      - name: Validate audit fixtures
+        run: node scripts/test-airfryer-audit.cjs
+      - name: Audit all recipes in both catalog variants
+        run: node scripts/audit-airfryer-technology.cjs > airfryer-audit-report.json
+      - name: Print counts without claiming culinary certification
+        run: node -e "const r=require('./airfryer-audit-report.json');console.log(JSON.stringify({totalRecipes:r.totalRecipes,airfryerTagged:r.airfryerTagged,flaggedForEditorialReview:r.flaggedForEditorialReview}))"
+      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: airfryer-technology-audit
+          path: airfryer-audit-report.json
+          retention-days: 14
