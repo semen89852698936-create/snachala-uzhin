@@ -1,0 +1,26 @@
+name: Verify direct AI food-photo review 36-40
+on:
+  pull_request:
+    paths:
+      - 'photo-library/ai-art-direct-visual-review-36-40-20261103.json'
+      - 'photo-library/ai-recipe-photo-map.json'
+      - 'assets/recipes-ai/003[6-9]-*.webp'
+      - 'assets/recipes-ai/0040-*.webp'
+      - 'tests/test_ai_art_direct_visual_review_36_40.cjs'
+      - '.github/workflows/ai-art-direct-visual-review-36-40.yml'
+  push:
+    branches:
+      - 'photo-library/ai-visual-review-36-40-20261103'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  offline-review-validation:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Verify source-pinned photo decisions (no paid APIs)
+        run: node tests/test_ai_art_direct_visual_review_36_40.cjs
