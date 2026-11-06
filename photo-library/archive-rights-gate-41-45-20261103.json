@@ -1,0 +1,103 @@
+{
+  "schema_version": 1,
+  "checked_date": "2026-11-03",
+  "audit_type": "archive_source_title_metadata_only",
+  "source_ref": "automation/half-hour-photo-audit/photo-library/half-hour-review-queue.json",
+  "technical_checkpoint_ref": "automation/half-hour-photo-audit/project-operations/half-hour-checkpoint.json",
+  "technical_verified_at_read": 20,
+  "scope": "archive candidates 41-45 in PR #11; distinct from current AI recipe images and PR #52",
+  "entries": [
+    {
+      "number": 41,
+      "recipe_id": "collection-meat-03-03",
+      "recipe_title": "Сочные тефтели из говядины с горчицей и мёдом",
+      "source_title": "Jacket potato with meatballs tomato sauce and cheese and butter - Potatoast 2026-05-02.jpg",
+      "license_claim": "CC0",
+      "risk": "high",
+      "reason": "Source title identifies jacket potato, tomato sauce and cheese, not mustard and honey beef meatballs.",
+      "technical_status_at_read": "not_checked",
+      "physical_webp_examined": false,
+      "individual_author_license_verified": false,
+      "visual_match": "unverified",
+      "publication_gate": "blocked_pending_physical_visual_and_rights_review"
+    },
+    {
+      "number": 42,
+      "recipe_id": "collection-meat-03-04",
+      "recipe_title": "Сочные тефтели из говядины с паприкой и чесноком",
+      "source_title": "Meatballs with mushrooms in a tomato sauce with fusilli pasta - 03 01 2020 (49335211836).png",
+      "license_claim": "CC BY 2.0",
+      "risk": "high",
+      "reason": "Source title describes mushrooms, tomato sauce and fusilli, not paprika and garlic.",
+      "technical_status_at_read": "not_checked",
+      "physical_webp_examined": false,
+      "individual_author_license_verified": false,
+      "visual_match": "unverified",
+      "publication_gate": "blocked_pending_physical_visual_and_rights_review"
+    },
+    {
+      "number": 43,
+      "recipe_id": "collection-meat-03-05",
+      "recipe_title": "Сочные тефтели из говядины с томатами и базиликом",
+      "source_title": "Meatballs with tomato sauce (Spain).jpg",
+      "license_claim": "CC BY 4.0",
+      "risk": "medium",
+      "reason": "Tomato sauce aligns partially; basil and beef remain unconfirmed.",
+      "technical_status_at_read": "not_checked",
+      "physical_webp_examined": false,
+      "individual_author_license_verified": false,
+      "visual_match": "unverified",
+      "publication_gate": "blocked_pending_physical_visual_and_rights_review"
+    },
+    {
+      "number": 44,
+      "recipe_id": "collection-meat-03-06",
+      "recipe_title": "Сочные тефтели из говядины с имбирём и соевым соусом",
+      "source_title": "Spaghetti with Meatballs in Marinara Sauce found in the cold case at 7-Eleven.jpg",
+      "license_claim": "CC BY-SA 4.0",
+      "risk": "high",
+      "reason": "Marinara spaghetti is inconsistent with ginger and soy sauce.",
+      "technical_status_at_read": "not_checked",
+      "physical_webp_examined": false,
+      "individual_author_license_verified": false,
+      "visual_match": "unverified",
+      "publication_gate": "blocked_pending_physical_visual_and_rights_review"
+    },
+    {
+      "number": 45,
+      "recipe_id": "collection-meat-03-07",
+      "recipe_title": "Сочные тефтели из говядины с луком и бальзамиком",
+      "source_title": "-2020-08-25 Meatballs with Linguine with Courgette, Tomato, Onion, Garlic, Mascarpone sauce, Trimingham, Norfolk.JPG",
+      "license_claim": "CC BY-SA 4.0",
+      "risk": "high",
+      "reason": "Onion is plausible, but pasta, courgette and mascarpone are specified, balsamic is not.",
+      "technical_status_at_read": "not_checked",
+      "physical_webp_examined": false,
+      "individual_author_license_verified": false,
+      "visual_match": "unverified",
+      "publication_gate": "blocked_pending_physical_visual_and_rights_review"
+    }
+  ],
+  "summary": {
+    "metadata_screened": 5,
+    "high_risk": 4,
+    "medium_risk": 1,
+    "visual_approved": 0,
+    "legal_approved": 0
+  },
+  "blockers": [
+    "Physical archive WebP 41-45 not opened or visually compared against full recipe ingredients.",
+    "Individual Commons source author, license, attribution and any share-alike obligations not independently checked.",
+    "Archive candidates are not approved replacements for current AI recipe images."
+  ],
+  "next_task": "Directly inspect archive WebP 41 and 44 and their full recipes; check individual Commons source pages and license metadata before selecting replacements.",
+  "checkpoint": {
+    "branch": "audit/archive-source-gate-41-45-20261103",
+    "source_branch": "main",
+    "no_sha256_or_size_recheck": true,
+    "no_production_change": true,
+    "no_merge": true,
+    "no_paid_calls": true,
+    "commit_sha": "See GitHub commit containing this file; cannot embed own commit SHA in same commit."
+  }
+}
