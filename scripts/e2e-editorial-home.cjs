@@ -1,0 +1,33 @@
+'use strict';
+const assert=require('node:assert/strict');
+const {chromium}=require('playwright');
+(async()=>{
+ const browser=await chromium.launch({headless:true});
+ try {
+  for(const viewport of [{width:1366,height:900},{width:390,height:844}]){
+   const page=await browser.newPage({viewport});
+   const errors=[];
+   page.on('pageerror',e=>errors.push(e.message));
+   await page.route('**/open.spotify.com/**',route=>route.abort());
+   await page.goto('http://127.0.0.1:8765/',{waitUntil:'domcontentloaded'});
+   await page.locator('#homeView .du-hero h1').waitFor({state:'visible'});
+   assert.equal(await page.locator('#eveningLanding').isVisible(),false,'evening must stay a separate mode');
+   const colors=await page.evaluate(()=>{
+     const hero=document.querySelector('#homeView .du-hero');
+     const css=getComputedStyle(hero);
+     return {bg:css.backgroundColor,wordmark:getComputedStyle(document.querySelector('#homeView .du-hero h1')).color};
+   });
+   assert.equal(colors.bg,'rgb(72, 42, 55)','storefront and recipe palette drifted');
+   assert.equal(colors.wordmark,'rgb(255, 248, 243)','hero title contrast regressed');
+   assert.equal(await page.locator('#tryCooking').count(),1,'cooking demo CTA missing');
+   assert.equal(await page.locator('.du-categories').count(),1,'category navigation missing');
+   assert.equal(await page.locator('.du-catalog').count(),1,'catalog missing');
+   const width=await page.evaluate(()=>document.documentElement.scrollWidth-innerWidth);
+   assert(width<=4,viewport.width+': horizontal overflow '+width);
+   await page.screenshot({path:'/tmp/editorial-home-'+viewport.width+'.png',fullPage:false});
+   assert.deepEqual(errors,[],'JS runtime error');
+   console.log('PASS editorial storefront',viewport.width);
+   await page.close();
+  }
+ } finally { await browser.close(); }
+})().catch(e=>{console.error(e);process.exitCode=1});
