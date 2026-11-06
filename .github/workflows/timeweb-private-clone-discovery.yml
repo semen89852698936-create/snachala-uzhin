@@ -1,0 +1,82 @@
+name: Discover only cloned Timeweb private commerce app (READ ONLY)
+on:
+  pull_request:
+    branches: [feature/commerce-secure-foundation-20261104]
+    paths: ['.github/workflows/timeweb-private-clone-discovery.yml']
+permissions:
+  contents: read
+jobs:
+  inspect:
+    if: github.event.pull_request.number == 135 && github.event.pull_request.head.ref == 'deploy/commerce-timeweb-staging-20261106' && github.event.pull_request.head.repo.full_name == github.repository
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Identify isolated private clone and test its public HTTPS without changing resources
+        env:
+          TIMEWEB_API_TOKEN: ${{ secrets.TIMEWEB_API_TOKEN }}
+        run: |
+          python3 - <<'PY'
+          import os,json,urllib.request,urllib.error,re
+          token=os.environ.get('TIMEWEB_API_TOKEN','').strip()
+          if token.lower().startswith('bearer '):token=token[7:].strip()
+          if len(token)>2 and token[0]==token[-1] and token[0] in ("'",'"'):token=token[1:-1].strip()
+          if not token:raise SystemExit('Token missing')
+          hdr={'Authorization':'Bearer '+token,'Accept':'application/json'}
+          def api(path):
+              req=urllib.request.Request('https://api.timeweb.cloud'+path,headers=hdr,method='GET')
+              try:
+                  with urllib.request.urlopen(req,timeout=20) as r:return r.status,json.load(r)
+              except urllib.error.HTTPError as e:return e.code,{}
+              except Exception as e:
+                  print('API error',type(e).__name__)
+                  return 0,{}
+          status,obj=api('/api/v1/apps')
+          print('APP LIST HTTP',status)
+          if status!=200 or not isinstance(obj.get('apps'),list):raise SystemExit('Unable to verify account list safely')
+          found=[]
+          for app in obj['apps']:
+              if not isinstance(app,dict):continue
+              name=str(app.get('name') or '')
+              if app.get('id')==284041 or (app.get('project_id')==3145267 and ('commerce' in name.lower() or 'ужин' in name.lower())):
+                  found.append(app)
+          print('MATCH COUNT',len(found))
+          for row in found:
+              id=row.get('id')
+              if not isinstance(id,int):continue
+              st,data=api('/api/v1/apps/'+str(id))
+              print('APP DETAIL HTTP',id,st)
+              if st!=200 or not isinstance(data.get('app'),dict):continue
+              a=data['app']
+              if a.get('project_id')!=3145267:raise SystemExit('BLOCK: unexpected project')
+              name=str(a.get('name') or '')
+              known={'snachala-uzhin-commerce-private','snachala-uzhin-commerce-staging'}
+              # Do not print environment values, sensitive fields or details about other projects.
+              print('APP',json.dumps({k:a.get(k) for k in ('id','name','status','preset_id','project_id','location','branch_name','framework','is_auto_deploy')},ensure_ascii=False))
+              print('NONSECRET FIELD NAMES',sorted(k for k in a.keys() if k not in ('envs','repository','provider','ip')))
+              for k in ('network','network_id','vpc','vpc_id','private_ip','local_ip','ip_private'):
+                  if k in a:
+                      value=a[k]
+                      if isinstance(value,(str,int,bool)) and len(str(value))<150:print('NETWORK',k,str(value))
+                      elif isinstance(value,dict):print('NETWORK',k,'KEYS',sorted(value.keys()))
+              ds=a.get('domains',[])
+              hosts=[]
+              for d in ds:
+                  fqdn=d.get('fqdn') if isinstance(d,dict) else d if isinstance(d,str) else ''
+                  if fqdn and re.fullmatch(r'[a-zA-Z0-9-]{1,130}(?:\.[a-zA-Z0-9-]{1,63})+',fqdn):
+                      hosts.append(fqdn)
+              if hosts:print('DOMAIN',id,hosts)
+              if a.get('preset_id')!=2731 or a.get('location')!='ru-3':
+                  print('WARNING: unexpected plan or location; do not continue migration')
+              if a.get('id')==284041 or not (name in known):continue
+              if a.get('status')!='active':print('INFO: new app not active; HTTP check deferred');continue
+              for host in hosts[:2]:
+                  for path in ('/healthz','/account','/app','/full-catalog/index.html','/assets/recipes-ai/0001-lemon-spinach-pasta.webp'):
+                      try:
+                          url='https://'+host+path
+                          with urllib.request.urlopen(urllib.request.Request(url,method='GET'),timeout=15) as response:
+                              code=response.status
+                      except urllib.error.HTTPError as e:code=e.code
+                      except Exception as e:code=type(e).__name__
+                      print('LIVE',host,path,code)
+          print('GET ONLY: no app modification, server creation, network changes or payments.')
+          PY
