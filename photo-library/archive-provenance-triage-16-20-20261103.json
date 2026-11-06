@@ -1,0 +1,83 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-03",
+  "scope": "Archive candidates 16-20, source-slug metadata triage only",
+  "base_main_sha": "2a877e16a03aaf31bf6d8f842093a0a3a2490851",
+  "technical_worker_ref": "automation/half-hour-photo-audit",
+  "technical_checks_repeated": 0,
+  "visual_inspections": 0,
+  "individual_license_clearances": 0,
+  "editorial_approvals": 0,
+  "records": [
+    {
+      "number": 16,
+      "recipe_title": "Индейка в йогуртовом соусе",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Turkey_escalopes_and_Spaetzle_(92665442).jpg",
+      "license_claim": "CC BY 2.0",
+      "risk": "high",
+      "evidence_type": "source_url_slug_and_worker_queue_only",
+      "evidence": "Source filename mentions turkey escalopes and Spaetzle, not yogurt sauce; attribution unresolved.",
+      "required": "Inspect physical selected WebP against complete recipe, independently verify original photographer and exact image license before approval.",
+      "status": "hold_for_review"
+    },
+    {
+      "number": 17,
+      "recipe_title": "Греческий салат",
+      "source_page": "https://unsplash.com/photos/a-greek-salad-with-feta-cheese-olives-and-cucumbers-25SHQMgsWEQ",
+      "license_claim": "Unsplash License",
+      "risk": "medium",
+      "evidence_type": "source_url_slug_and_worker_queue_only",
+      "evidence": "Source slug names feta, olives and cucumbers; other recipe components and photographer remain unverified.",
+      "required": "Inspect physical selected WebP against complete recipe, independently verify original photographer and exact image license before approval.",
+      "status": "hold_for_review"
+    },
+    {
+      "number": 18,
+      "recipe_title": "Табуле с петрушкой и булгуром",
+      "source_page": "https://www.pexels.com/photo/view-of-tabouleh-salad-from-above-10311638/",
+      "license_claim": "Pexels License",
+      "risk": "medium",
+      "evidence_type": "source_url_slug_and_worker_queue_only",
+      "evidence": "Source slug says tabouleh salad but does not establish parsley/bulgur ingredients.",
+      "required": "Inspect physical selected WebP against complete recipe, independently verify original photographer and exact image license before approval.",
+      "status": "hold_for_review"
+    },
+    {
+      "number": 19,
+      "recipe_title": "Шакшука с томатами и перцем",
+      "source_page": "https://unsplash.com/photos/a-skillet-with-eggs-and-tomatoes-on-a-table-aDccXHMCH2c",
+      "license_claim": "Unsplash License",
+      "risk": "medium",
+      "evidence_type": "source_url_slug_and_worker_queue_only",
+      "evidence": "Source slug mentions eggs and tomatoes, not peppers.",
+      "required": "Inspect physical selected WebP against complete recipe, independently verify original photographer and exact image license before approval.",
+      "status": "hold_for_review"
+    },
+    {
+      "number": 20,
+      "recipe_title": "Домашние сырники с лимонной цедрой",
+      "source_page": "https://www.pexels.com/photo/close-up-shot-of-syrniki-10254478/",
+      "license_claim": "Pexels License",
+      "risk": "high",
+      "evidence_type": "source_url_slug_and_worker_queue_only",
+      "evidence": "Source slug confirms generic syrniki only, not lemon zest; archived #20 must not replace approved alternate #20.",
+      "required": "Inspect physical selected WebP against complete recipe, independently verify original photographer and exact image license before approval.",
+      "status": "hold_for_review"
+    }
+  ],
+  "checkpoint": {
+    "files_changed": [
+      "photo-library/archive-provenance-triage-16-20-20261103.json"
+    ],
+    "tests": "Source queue records 16-20 parsed; 5 distinct numbered entries; no image-byte or SHA reruns",
+    "blockers": [
+      "No direct physical WebP visual review in this stage",
+      "Image-specific author/license not independently established",
+      "Approved alternate #20 differs from archived #20"
+    ],
+    "next": "Direct physical-image comparison of #16 and #20 against full recipes; investigate exact Commons photographer/license for #16; preserve approved alternate #20.",
+    "publication": "none",
+    "merge": "none",
+    "paid_api": "none"
+  }
+}
