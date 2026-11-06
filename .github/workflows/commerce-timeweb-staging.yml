@@ -1,0 +1,71 @@
+name: Timeweb commercial staging container QA
+on:
+  pull_request:
+    paths:
+      - 'Dockerfile'
+      - 'Dockerfile.commerce'
+      - 'commerce/**'
+      - 'scripts/smoke-commerce-http.py'
+      - '.github/workflows/commerce-timeweb-staging.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  timeweb-staging:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          persist-credentials: false
+      - name: Verify Timeweb uses exactly the tested protected image
+        run: |
+          set -euo pipefail
+          cmp Dockerfile Dockerfile.commerce
+          grep -q '^EXPOSE 8080$' Dockerfile
+          grep -q 'private_catalog.py' Dockerfile
+          grep -q 'USER app' Dockerfile
+      - name: Build the exact root Dockerfile used by Timeweb
+        run: docker build -f Dockerfile -t snachala-timeweb-staging-ci .
+      - name: Block checkout if merchant and durable database are not configured
+        run: |
+          set -euo pipefail
+          if docker run --rm \
+            -e COMMERCE_BASE_URL=https://staging.example \
+            -e COMMERCE_DB_PATH=/srv/data/orders.sqlite \
+            -e SESSION_KEY_HEX=0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef \
+            -e ENABLE_CHECKOUT=1 \
+            snachala-timeweb-staging-ci \
+            python -c 'from commerce.wsgi import application' > /tmp/checkout-attempt.log 2>&1; then
+            echo 'FAIL: checkout accepted incomplete payment configuration'
+            exit 1
+          fi
+          echo 'PASS: checkout fails closed without real merchant, SMTP, and PostgreSQL'
+      - name: Start checkout-disabled commercial preview
+        run: |
+          set -euo pipefail
+          mkdir -p "$RUNNER_TEMP/timeweb-staging-db"
+          sudo chown 10001:10001 "$RUNNER_TEMP/timeweb-staging-db"
+          docker run --detach --name su-timeweb-staging \
+            --publish 127.0.0.1:8788:8080 \
+            --volume "$RUNNER_TEMP/timeweb-staging-db:/srv/data" \
+            --env COMMERCE_BASE_URL=https://staging.example \
+            --env COMMERCE_DB_PATH=/srv/data/orders.sqlite \
+            --env SESSION_KEY_HEX=0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef \
+            --env ENABLE_CHECKOUT=0 \
+            --env COMMERCE_PAYMENT_QA_APPROVED=0 \
+            snachala-timeweb-staging-ci
+          docker cp scripts/smoke-commerce-http.py su-timeweb-staging:/tmp/smoke-commerce-http.py
+          docker exec \
+            --env PYTHONPATH=/srv/site \
+            --env COMMERCE_TEST_MODE=1 \
+            su-timeweb-staging python /tmp/smoke-commerce-http.py
+      - name: Check that raw catalog is not in public webroot
+        run: |
+          docker exec su-timeweb-staging sh -c 'test -s /srv/private/app.html && test ! -e /srv/site/index.html && test ! -e /srv/site/full-catalog/index.html'
+      - name: Show diagnostic logs on failure
+        if: failure()
+        run: docker logs su-timeweb-staging --tail 100 || true
+      - name: Remove disposable container
+        if: always()
+        run: docker rm -f su-timeweb-staging > /dev/null 2>&1 || true
