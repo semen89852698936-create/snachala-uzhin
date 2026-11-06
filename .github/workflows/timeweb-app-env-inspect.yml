@@ -1,0 +1,38 @@
+name: Timeweb staging environment shape (read only)
+on:
+  pull_request:
+    branches: [feature/commerce-secure-foundation-20261104]
+    paths: ['.github/workflows/timeweb-app-env-inspect.yml']
+permissions:
+  contents: read
+jobs:
+  inspect:
+    if: github.event.pull_request.number == 135 && github.event.pull_request.head.ref == 'deploy/commerce-timeweb-staging-20261106' && github.event.pull_request.head.repo.full_name == github.repository
+    runs-on: ubuntu-latest
+    timeout-minutes: 3
+    steps:
+      - name: Inspect nonsecret settings and verify stored session key format without logging secrets
+        env:
+          TIMEWEB_API_TOKEN: ${{ secrets.TIMEWEB_API_TOKEN }}
+        run: |
+          python3 - <<'PY'
+          import os,json,re,urllib.request
+          token=os.environ['TIMEWEB_API_TOKEN'].strip()
+          if token.lower().startswith('bearer '):token=token[7:].strip()
+          if len(token)>2 and token[0]==token[-1] and token[0] in ("'",'"'):token=token[1:-1].strip()
+          req=urllib.request.Request('https://api.timeweb.cloud/api/v1/apps/284041',headers={'Authorization':'Bearer '+token,'Accept':'application/json'},method='GET')
+          with urllib.request.urlopen(req,timeout=20) as r:app=json.load(r)['app']
+          assert app['name']=='snachala-uzhin-commerce-staging' and app['project_id']==3145267 and app['preset_id']==2731
+          env=app.get('envs',{})
+          print('ENV OBJECT',type(env).__name__)
+          if not isinstance(env,dict):raise SystemExit('Unexpected env format')
+          for key in ('COMMERCE_BASE_URL','COMMERCE_DB_PATH','ENABLE_CHECKOUT','COMMERCE_PAYMENT_QA_APPROVED','SESSION_KEY_HEX'):
+              v=env.get(key)
+              if key=='SESSION_KEY_HEX':
+                  print(key,'TYPE',type(v).__name__,'VALID_64_HEX',isinstance(v,str) and bool(re.fullmatch('[0-9a-fA-F]{64}',v)),'OBJECT_KEYS',sorted(v.keys()) if isinstance(v,dict) else [])
+              elif key=='COMMERCE_BASE_URL':
+                  print(key,'TYPE',type(v).__name__,'IS_TEMPORARY_PLACEHOLDER',v=='https://initial-setup.snachala-uzhin.invalid','OBJECT_KEYS',sorted(v.keys()) if isinstance(v,dict) else [])
+              else:
+                  print(key,'TYPE',type(v).__name__,'ZERO_CONFIGURED',v=='0','OBJECT_KEYS',sorted(v.keys()) if isinstance(v,dict) else [])
+          print('READ ONLY.')
+          PY
