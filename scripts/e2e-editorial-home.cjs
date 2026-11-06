@@ -22,6 +22,38 @@ const {chromium}=require('playwright');
    assert.equal(await page.locator('#tryCooking').count(),1,'cooking demo CTA missing');
    assert.equal(await page.locator('.du-categories').count(),1,'category navigation missing');
    assert.equal(await page.locator('.du-catalog').count(),1,'catalog missing');
+   // The catalog must be a real editorial spread, not just recolored pills.
+   await page.goto('http://127.0.0.1:8765/#catalog',{waitUntil:'domcontentloaded'});
+   await page.locator('#recipeGrid .recipe-card').first().waitFor({state:'visible'});
+   const catalog=await page.evaluate(()=>{
+     const grid=document.querySelector('#recipeGrid');
+     const first=grid.querySelector('.recipe-card');
+     const heading=document.querySelector('#catalog .du-section-heading h2');
+     return {bg:getComputedStyle(document.querySelector('#catalog')).backgroundColor,
+       columns:getComputedStyle(grid).gridTemplateColumns.split(' ').length,
+       firstColumn:getComputedStyle(first).gridColumnEnd,
+       firstDisplay:getComputedStyle(first).display,
+       headingSize:parseFloat(getComputedStyle(heading).fontSize),
+       cardImageHeight:first.querySelector('.card-image').getBoundingClientRect().height};
+   });
+   assert.equal(catalog.bg,'rgb(245, 236, 229)','catalog paper palette missing');
+   if(viewport.width>1000){
+     assert.equal(catalog.columns,3,'desktop magazine grid should have 3 tracks');
+     assert.equal(catalog.firstDisplay,'grid','desktop first recipe not featured');
+     assert.equal(catalog.firstColumn,'span 2','desktop lead recipe not double width');
+     assert(catalog.headingSize>70,'magazine masthead too small');
+   }else{
+     assert.equal(catalog.columns,1,'mobile catalog must be single column');
+     assert(catalog.cardImageHeight>230,'mobile cards lack large photographs');
+   }
+   await page.screenshot({path:'/tmp/editorial-catalog-'+viewport.width+'.png',fullPage:false});
+   const input=page.locator('#recipeSearch');
+   await input.fill('стейк');
+   await page.locator('#recipeGrid .recipe-card').first().waitFor();
+   assert((await page.locator('#recipeGrid .recipe-card').count())>0,'catalog search broken');
+   await input.fill('');
+   assert.equal(await page.locator('#recipeGrid .recipe-card').count()>0,true,'catalog clear search broken');
+
    const width=await page.evaluate(()=>document.documentElement.scrollWidth-innerWidth);
    assert(width<=4,viewport.width+': horizontal overflow '+width);
    await page.screenshot({path:'/tmp/editorial-home-'+viewport.width+'.png',fullPage:false});
