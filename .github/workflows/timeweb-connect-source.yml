@@ -1,8 +1,6 @@
 name: Connect only public SNAChALA UZHIN repository to Timeweb
 on:
-  pull_request:
-    branches: [feature/commerce-secure-foundation-20261104]
-    paths: ['.github/workflows/timeweb-connect-source.yml']
+  workflow_dispatch:
 permissions:
   contents: read
 concurrency:
