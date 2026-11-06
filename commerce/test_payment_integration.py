@@ -72,6 +72,19 @@ class IntegrationTests(unittest.TestCase):
     def test_failed_payment_never_grants(self):
         self.assertFalse(self.approve(dict(self.payload,payment_status='order_canceled')))
         self.assertFalse(self.store.has_access('buyer@example.ru'))
+    def test_prodamus_all_events_only_grants_on_valid_success(self):
+        # Merchant UI may select "All events" together with "Order paid".
+        # Provider documents order_canceled and order_denied as unpaid states.
+        for status in ('order_canceled','order_denied','pending',''):
+            with self.subTest(status=status):
+                self.assertFalse(self.approve(dict(self.payload,payment_status=status)))
+                self.assertFalse(self.store.has_access('buyer@example.ru'))
+        # The same pending order must still work when a signed success arrives.
+        self.assertTrue(self.approve())
+        self.assertTrue(self.store.has_access('buyer@example.ru'))
+        # Repeated delivery is normal and must not create another entitlement.
+        self.assertFalse(self.approve())
+
     def test_fixed_price_url_and_signature(self):
         url=payment_url(self.order,merchant_url='https://merchant.payform.ru/',
                         sys_code='configured-sys',secret=self.key,return_url='https://site.example/checkout', notification_url='https://site.example/webhooks/prodamus')
