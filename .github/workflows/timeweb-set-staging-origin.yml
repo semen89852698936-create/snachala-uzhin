@@ -1,8 +1,6 @@
 name: Bind Timeweb staging to its HTTPS domain (payments OFF)
 on:
-  pull_request:
-    branches: [feature/commerce-secure-foundation-20261104]
-    paths: ['.github/workflows/timeweb-set-staging-origin.yml']
+  workflow_dispatch:
 permissions:
   contents: read
 concurrency:
