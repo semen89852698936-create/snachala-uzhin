@@ -172,3 +172,120 @@ body.du-evening-mode #music .du-music-card {
     transition: none;
   }
 }
+
+
+/* EDITORIAL_HOME_PHASE2_20261106: connect the storefront to the recipe magazine.
+   Preserve the approved photographic composition, text and all UI behaviours. */
+#homeView .du-hero {
+  background:#482a37;
+  color:#fff7f2;
+  border-bottom:1px solid #60404c;
+}
+#homeView .du-hero-copy {
+  padding-block:clamp(54px,6vw,91px);
+}
+#homeView .du-kicker {
+  color:#f1c5d1;
+  font:700 12px/1.5 var(--du-magazine-sans);
+  letter-spacing:.14em;
+}
+#homeView .du-kicker-line { background:#e5bac6; }
+#homeView .du-hero h1 {
+  color:#fff8f3;
+  font-family:var(--du-magazine-serif);
+  font-weight:500;
+  letter-spacing:-.06em;
+}
+#homeView .du-hero h1 i { color:#e6aeba; }
+#homeView .du-hero-slogan {
+  color:#f2d6da;
+  font-family:var(--du-magazine-serif);
+}
+#homeView .du-hero-description {
+  color:#f5e4e5;
+  font:500 clamp(16px,1.3vw,18px)/1.72 var(--du-magazine-sans);
+  max-width:53ch;
+}
+#homeView .du-hero-actions .du-btn-primary {
+  background:#a95a73;
+  border-color:#a95a73;
+  color:#fff;
+}
+#homeView .du-hero-actions .du-btn-primary:hover {
+  background:#95445f;
+  border-color:#95445f;
+}
+#homeView .du-hero-actions .du-btn-outline {
+  border-color:#e7bfc9;
+  color:#fff7f2;
+}
+#homeView .du-hero-bottom {
+  color:#e8c9d1;
+  font-size:11px;
+  letter-spacing:.09em;
+}
+#homeView .du-hero-bottom b { color:#f0aabf; }
+#homeView .du-hero-art { border-left-color:#70505a; }
+
+#homeView .du-categories .du-section-heading h2,
+#homeView .du-catalog .du-section-heading h2,
+#homeView .du-pricing h2,
+#homeView .du-bonus .bonus-text h2 {
+  color:var(--du-magazine-wine-dark);
+  font-family:var(--du-magazine-serif);
+  font-weight:500;
+  letter-spacing:-.04em;
+}
+#homeView .du-categories .du-section-heading h2 em,
+#homeView .du-pricing h2 em,
+#homeView .du-bonus .bonus-text h2 em {
+  color:#a85e78;
+}
+#homeView .du-categories .du-section-heading p,
+#homeView .du-catalog .du-section-heading p,
+#homeView .du-bonus .bonus-text p {
+  color:var(--du-magazine-copy);
+  font-size:clamp(15px,1.3vw,17px);
+  line-height:1.7;
+}
+#homeView .du-categories .category-card,
+#homeView .du-bonus .bonus-inner,
+#homeView .du-catalog .recipe-card,
+#homeView .du-catalog .search-panel {
+  border-radius:12px;
+}
+#homeView .du-catalog { background:var(--du-magazine-cream); }
+#homeView .du-catalog .search-panel {
+  background:var(--du-magazine-paper);
+  border-color:var(--du-magazine-rule);
+}
+#homeView .du-catalog .chip[aria-pressed=true],
+#homeView .du-catalog .filter-button[aria-pressed=true] {
+  background:var(--du-magazine-wine);
+  border-color:var(--du-magazine-wine);
+  color:#fff;
+}
+#homeView .du-pricing .price-side {
+  background:var(--du-magazine-wine-dark);
+  color:#fff8f5;
+  border-radius:12px;
+}
+#homeView .du-pricing .pricing-card {
+  background:#f2e8e2;
+  border-radius:12px;
+}
+
+/* Mobile reading size is part of the approved art direction. */
+@media (max-width:760px) {
+  .brand-text small { font-size:10px; line-height:1.2; }
+  #homeView .du-kicker { font-size:11px; letter-spacing:.105em; }
+  #homeView .du-hero-copy { padding:36px 14px 37px; }
+  #homeView .du-hero h1 { letter-spacing:-.05em; }
+  #homeView .du-hero-description { font-size:16px; line-height:1.7; }
+  #homeView .du-hero-bottom { font-size:11px; line-height:1.45; margin-top:30px; }
+  #homeView .du-categories .du-section-heading p,
+  #homeView .du-catalog .du-section-heading p { font-size:16px; }
+}
+@media (prefers-reduced-motion:reduce) {
+  #homeView .du-hero-actions .du-btn { transition:none; }
+}
