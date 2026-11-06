@@ -40,6 +40,6 @@ jobs:
           COMMERCE_PG_SSLMODE: disable
           COMMERCE_DATABASE_URL: postgresql://postgres:ci-only-never-production@127.0.0.1:5432/commerce_qa
         run: |
-          /tmp/commerce-pg-venv/bin/python scripts/smoke-commerce-postgres.py
+          PYTHONPATH=. /tmp/commerce-pg-venv/bin/python scripts/smoke-commerce-postgres.py
       - name: Never connect production PostgreSQL during CI
         run: echo "Only ephemeral PostgreSQL 16 service. No Timeweb DB or live orders were touched."
