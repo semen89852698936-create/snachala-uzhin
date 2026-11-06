@@ -40,7 +40,10 @@ jobs:
                   try:err=json.loads(e.read(16384))
                   except (ValueError,UnicodeDecodeError):err={}
                   # Never log request bodies or responses containing credentials.
-                  return e.code,{'error_code':str(err.get('error_code','unknown'))[:100]}
+                  validation_text=str(err.get('message',''))[:3000]
+                  names=('provider_id','repository_id','branch_name','commit_sha','preset_id','framework','run_cmd','build_cmd','project_id','envs','type','name','comment','is_auto_deploy','env_version')
+                  flagged=[name for name in names if name in validation_text.lower()]
+                  return e.code,{'error_code':str(err.get('error_code','unknown'))[:100], 'validation_fields':flagged, 'response_keys':sorted(str(k) for k in err)[:20]}
           pid=3145267
           code,p=api('/api/v1/projects')
           if code!=200 or len([x for x in p.get('projects',[]) if x.get('id')==pid and x.get('name')=='СНАЧАЛА УЖИН'])!=1:
@@ -107,7 +110,7 @@ jobs:
           }
           status,result=api('/api/v1/apps',request)
           if status not in (200,201):
-              print('BLOCK: Timeweb app creation failed HTTP',status,'CODE',result.get('error_code'))
+              print('BLOCK: Timeweb app creation failed HTTP',status,'CODE',result.get('error_code'),'VALIDATION_FIELDS',result.get('validation_fields'),'RESPONSE_KEYS',result.get('response_keys'))
               raise SystemExit(1)
           app=result.get('app',{})
           if not app.get('id'):raise SystemExit('BLOCK: request returned no app ID; inspect account before any retry')
