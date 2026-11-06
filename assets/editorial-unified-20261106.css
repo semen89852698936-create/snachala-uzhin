@@ -531,3 +531,187 @@ body.du-evening-mode #music .du-music-card {
   #catalog #recipeGrid > .recipe-card .card-footer::before { font-size:10px; }
   #catalog .result-line { gap:12px; flex-wrap:wrap; }
 }
+
+
+/* EDITORIAL_PEPPER_STEAK_SPREAD_20261106
+   First real-recipe art-direction pass. The photo stays the existing local WebP,
+   while the recipe, step illustrations, timers, portions and handlers stay intact.
+   Other recipes continue to use the shared editorial design above. */
+@supports selector(:has(*)) {
+  #recipeDetail:has(.recipe-intro-photo[style*="0003-pepper-steak"]) {
+    --du-steak-wine:#622d40;
+    --du-steak-ink:#3f3032;
+    --du-steak-edge:#d9bcb3;
+  }
+  #recipeDetail:has(.recipe-intro-photo[style*="0003-pepper-steak"]) .recipe-intro {
+    grid-template-columns:minmax(0,.86fr) minmax(0,1.14fr);
+    gap:clamp(30px,5.5vw,86px);
+    border-top:2px solid var(--du-steak-wine);
+    padding-top:clamp(23px,3.2vw,42px);
+    align-items:center;
+  }
+  #recipeDetail:has(.recipe-intro-photo[style*="0003-pepper-steak"]) .recipe-intro-copy {
+    padding:clamp(14px,3vw,40px) 0;
+  }
+  #recipeDetail:has(.recipe-intro-photo[style*="0003-pepper-steak"]) .recipe-kicker {
+    font-size:12px;letter-spacing:.19em;color:#955c6c;
+  }
+  #recipeDetail:has(.recipe-intro-photo[style*="0003-pepper-steak"]) .recipe-intro h1 {
+    font-size:clamp(67px,7.5vw,112px);
+    line-height:.87;letter-spacing:-.068em;
+    max-width:10ch;margin:34px 0 31px;
+    color:var(--du-steak-wine);
+  }
+  #recipeDetail:has(.recipe-intro-photo[style*="0003-pepper-steak"]) .recipe-intro-copy>p {
+    max-width:33ch;font:400 clamp(19px,1.7vw,24px)/1.55 Georgia,serif;
+    color:var(--du-steak-ink);
+  }
+  #recipeDetail:has(.recipe-intro-photo[style*="0003-pepper-steak"]) .recipe-intro-meta {
+    border-top:1px solid var(--du-steak-edge);
+    padding-top:20px;margin:32px 0 27px;
+  }
+  #recipeDetail:has(.recipe-intro-photo[style*="0003-pepper-steak"]) .recipe-intro-meta .pill {
+    border:0;border-radius:0;padding:7px 13px 7px 0;
+    background:none;color:var(--du-steak-wine);
+    font-size:13px;
+  }
+  #recipeDetail:has(.recipe-intro-photo[style*="0003-pepper-steak"]) .recipe-intro-photo {
+    height:clamp(520px,48vw,670px);
+    border-radius:3px;
+    box-shadow:17px 17px 0 #e3cfc5,0 18px 40px #49283122;
+  }
+  #recipeDetail:has(.recipe-intro-photo[style*="0003-pepper-steak"]) .recipe-intro-photo::after {
+    content:"03  /  ГОТОВИМ НА ДВОИХ";
+    position:absolute;bottom:23px;left:23px;z-index:2;
+    padding:11px 16px;background:rgba(255,249,244,.94);
+    color:var(--du-steak-wine);
+    font:800 11px/1.3 Manrope,Arial,sans-serif;
+    letter-spacing:.16em;
+  }
+  #recipeDetail:has(.recipe-intro-photo[style*="0003-pepper-steak"]) .recipe-panel-grid {
+    grid-template-columns:minmax(0,.78fr) minmax(0,1.22fr);
+    gap:clamp(18px,3vw,43px);
+    margin-top:clamp(55px,6vw,90px);
+  }
+  #recipeDetail:has(.recipe-intro-photo[style*="0003-pepper-steak"]) .recipe-panel-grid .panel {
+    border-radius:3px;
+    background:#fff9f3;
+    border-color:#e2cfc5;
+    box-shadow:0 16px 45px #4b28300b;
+  }
+  #recipeDetail:has(.recipe-intro-photo[style*="0003-pepper-steak"]) .recipe-panel-grid .panel h2 {
+    font-size:clamp(38px,4vw,56px);
+    letter-spacing:-.045em;
+    color:var(--du-steak-wine);
+  }
+  #recipeDetail:has(.recipe-intro-photo[style*="0003-pepper-steak"]) .ingredient-check {
+    gap:12px;padding:15px 0;
+    border-bottom:1px solid #eadbd2;
+    font-size:15px;line-height:1.45;
+  }
+  #recipeDetail:has(.recipe-intro-photo[style*="0003-pepper-steak"]) .ingredient-check strong {
+    font-size:14px;color:var(--du-steak-wine);
+  }
+  #recipeDetail:has(.recipe-intro-photo[style*="0003-pepper-steak"]) .du-editorial-step {
+    grid-template-columns:52px 66px minmax(0,1fr);
+    gap:clamp(10px,1.5vw,23px);
+    padding:29px 0;border-color:var(--du-steak-edge);
+  }
+  #recipeDetail:has(.recipe-intro-photo[style*="0003-pepper-steak"]) .du-editorial-step-number {
+    display:block;width:auto;height:auto;background:transparent;
+    border-radius:0;text-align:left;
+    font:italic 49px/1 'Cormorant Garamond',Georgia,serif;
+    color:#ad7b86;
+  }
+  #recipeDetail:has(.recipe-intro-photo[style*="0003-pepper-steak"]) .du-editorial-step::before {
+    display:none;
+  }
+  #recipeDetail:has(.recipe-intro-photo[style*="0003-pepper-steak"]) .du-editorial-step-copy strong {
+    font-size:clamp(25px,2.5vw,34px);
+    line-height:1.05;
+  }
+  #recipeDetail:has(.recipe-intro-photo[style*="0003-pepper-steak"]) .du-editorial-step-copy p {
+    font-size:16px;line-height:1.75;color:var(--du-steak-ink);
+  }
+  body:has(#recipeDetail .recipe-intro-photo[style*="0003-pepper-steak"]) #cookOverlay .cook-sheet {
+    width:min(960px,100%);
+    border-radius:4px;padding:clamp(23px,3.5vw,45px);
+    background:#fff9f3;
+  }
+  body:has(#recipeDetail .recipe-intro-photo[style*="0003-pepper-steak"]) #cookOverlay .cook-top {
+    border-bottom:1px solid #dbc6bd;padding-bottom:21px;
+  }
+  body:has(#recipeDetail .recipe-intro-photo[style*="0003-pepper-steak"]) #cookOverlay .du-editorial-cook-step {
+    grid-template-columns:100px minmax(0,1fr);
+    gap:19px 33px;
+    margin:30px 0 35px;
+  }
+  body:has(#recipeDetail .recipe-intro-photo[style*="0003-pepper-steak"]) #cookOverlay .du-editorial-cook-index {
+    width:auto;height:auto;background:none;border-radius:0;
+    color:#b38791;font:italic 95px/.83 'Cormorant Garamond',Georgia,serif;
+    justify-content:flex-start;
+  }
+  body:has(#recipeDetail .recipe-intro-photo[style*="0003-pepper-steak"]) #cookOverlay .du-editorial-cook-step h2 {
+    font-size:clamp(44px,5vw,67px);letter-spacing:-.05em;
+    line-height:.96;margin:0;
+  }
+  body:has(#recipeDetail .recipe-intro-photo[style*="0003-pepper-steak"]) #cookOverlay .du-editorial-cook-step p {
+    max-width:55ch;font-size:clamp(18px,2vw,21px);
+    line-height:1.7;
+  }
+  body:has(#recipeDetail .recipe-intro-photo[style*="0003-pepper-steak"]) #cookOverlay .du-editorial-cook-illustration {
+    width:88px;height:88px;border-radius:3px;background:#f3e4db;
+  }
+  @media(max-width:760px) {
+    #recipeDetail:has(.recipe-intro-photo[style*="0003-pepper-steak"]) .recipe-intro,
+    #recipeDetail:has(.recipe-intro-photo[style*="0003-pepper-steak"]) .recipe-panel-grid {
+      grid-template-columns:minmax(0,1fr);
+    }
+    #recipeDetail:has(.recipe-intro-photo[style*="0003-pepper-steak"]) .recipe-intro {gap:18px;}
+    #recipeDetail:has(.recipe-intro-photo[style*="0003-pepper-steak"]) .recipe-intro-photo {
+      order:-1;height:clamp(320px,85vw,480px);
+      box-shadow:8px 8px 0 #e3cfc5;
+    }
+    #recipeDetail:has(.recipe-intro-photo[style*="0003-pepper-steak"]) .recipe-intro-copy {padding:16px 0;}
+    #recipeDetail:has(.recipe-intro-photo[style*="0003-pepper-steak"]) .recipe-intro h1 {
+      max-width:unset;font-size:clamp(52px,12.2vw,80px);
+      margin:18px 0 20px;line-height:.95;
+    }
+    #recipeDetail:has(.recipe-intro-photo[style*="0003-pepper-steak"]) .recipe-intro-copy>p {
+      font-size:19px;
+    }
+    #recipeDetail:has(.recipe-intro-photo[style*="0003-pepper-steak"]) .recipe-panel-grid {
+      margin-top:35px;gap:18px;
+    }
+    #recipeDetail:has(.recipe-intro-photo[style*="0003-pepper-steak"]) .du-editorial-step {
+      grid-template-columns:39px 50px minmax(0,1fr);
+      gap:9px;
+      padding:23px 0;
+    }
+    #recipeDetail:has(.recipe-intro-photo[style*="0003-pepper-steak"]) .du-editorial-step-number {
+      font-size:39px;
+    }
+    #recipeDetail:has(.recipe-intro-photo[style*="0003-pepper-steak"]) .du-editorial-step-copy strong {
+      font-size:23px;
+    }
+    body:has(#recipeDetail .recipe-intro-photo[style*="0003-pepper-steak"]) #cookOverlay .cook-sheet {
+      padding:22px 17px;
+    }
+    body:has(#recipeDetail .recipe-intro-photo[style*="0003-pepper-steak"]) #cookOverlay .du-editorial-cook-step {
+      grid-template-columns:67px minmax(0,1fr);
+      gap:12px 17px;
+    }
+    body:has(#recipeDetail .recipe-intro-photo[style*="0003-pepper-steak"]) #cookOverlay .du-editorial-cook-index {
+      font-size:70px;
+    }
+    body:has(#recipeDetail .recipe-intro-photo[style*="0003-pepper-steak"]) #cookOverlay .du-editorial-cook-step h2 {
+      font-size:clamp(37px,9vw,52px);
+    }
+    body:has(#recipeDetail .recipe-intro-photo[style*="0003-pepper-steak"]) #cookOverlay .du-editorial-cook-step p {
+      font-size:17px;
+    }
+    body:has(#recipeDetail .recipe-intro-photo[style*="0003-pepper-steak"]) #cookOverlay .du-editorial-cook-illustration {
+      width:62px;height:62px;
+    }
+  }
+}
