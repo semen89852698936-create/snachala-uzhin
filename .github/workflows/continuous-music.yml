@@ -1,0 +1,21 @@
+name: Continuous licensed music validation
+on:
+  pull_request:
+    paths:
+      - 'music/continuous-player.js'
+      - 'music/licensed-tracks.json'
+      - 'music/licensed/**'
+      - 'scripts/test_continuous_music.cjs'
+      - 'index.html'
+      - 'full-catalog/index.html'
+  workflow_dispatch:
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: node --check music/continuous-player.js
+      - run: node scripts/test_continuous_music.cjs
