@@ -22,6 +22,9 @@ for(const [page, link] of pages) {
   assert(text.indexOf(existingLink)>0 && text.indexOf(existingLink)<text.indexOf(stylesheet),'Existing recipe style must load before override');
   const found=text.match(/<script id="recipeData" type="application\/json">([\s\S]*?)<\/script>/);
   assert(found, page+': recipeData missing');
+  assert(text.includes('1000 рецептов + 1 полуночный'),page+': hero label must say midnight');
+  assert(text.includes('1000 рецептов и 1 полуночный'),page+': catalog label must say midnight');
+  assert(!/1000 рецептов (?:\+|и) 1 секретный/i.test(text),page+': outdated secret bonus label');
   const recipes=JSON.parse(found[1]);
   assert.equal(recipes.length,1001,page+': exactly 1001 recipes');
   assert.equal(new Set(recipes.map(r=>r.id)).size,1001,page+': unique IDs');
