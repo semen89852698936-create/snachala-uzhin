@@ -25,6 +25,9 @@ const {chromium}=require('playwright');
    // The catalog must be a real editorial spread, not just recolored pills.
    await page.goto('http://127.0.0.1:8765/#catalog',{waitUntil:'domcontentloaded'});
    await page.locator('#recipeGrid .recipe-card').first().waitFor({state:'visible'});
+   // Hash routing scrolls smoothly; wait until the actual catalog is onscreen before screenshots.
+   await page.waitForFunction(()=>Math.abs(document.querySelector('#catalog').getBoundingClientRect().top)<220,null,{timeout:9000});
+   assert((await page.locator('#catalog').boundingBox()).y<220,'catalog deep link must visibly scroll to the catalog');
    const catalog=await page.evaluate(()=>{
      const grid=document.querySelector('#recipeGrid');
      const first=grid.querySelector('.recipe-card');
