@@ -1,0 +1,75 @@
+name: Timeweb app launch readiness (read only)
+on:
+  pull_request:
+    branches: [feature/commerce-secure-foundation-20261104]
+    paths:
+      - '.github/workflows/timeweb-app-discovery.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  inspect:
+    if: github.event_name == 'workflow_dispatch' || (github.event.pull_request.number == 135 && github.event.pull_request.head.ref == 'deploy/commerce-timeweb-staging-20261106' && github.event.pull_request.head.repo.full_name == github.repository)
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Inspect only approved Timeweb project, VCS connection and pricing
+        env:
+          TIMEWEB_API_TOKEN: ${{ secrets.TIMEWEB_API_TOKEN }}
+        run: |
+          python3 - <<'PY'
+          import json,os,sys,urllib.request,urllib.error
+          token=os.getenv("TIMEWEB_API_TOKEN","").strip()
+          if token.lower().startswith("bearer "):token=token[7:].strip()
+          if len(token)>2 and token[0]==token[-1] and token[0] in ('"',"'"):token=token[1:-1].strip()
+          if not token:raise SystemExit("FAIL: API token missing")
+          base="https://api.timeweb.cloud"
+          def api(path):
+              req=urllib.request.Request(base+path,headers={"Authorization":"Bearer "+token,"Accept":"application/json"},method="GET")
+              try:
+                  with urllib.request.urlopen(req,timeout=20) as resp:return resp.status,json.loads(resp.read(1000000))
+              except urllib.error.HTTPError as e:return e.code,{}
+              except Exception as e:
+                  print("FAIL",path,type(e).__name__)
+                  return 0,{}
+          target="СНАЧАЛА УЖИН"
+          status,p=api("/api/v1/projects")
+          print("PROJECTS HTTP",status)
+          if status==200 and isinstance(p.get("projects"),list):
+              matches=[x for x in p["projects"] if isinstance(x,dict) and x.get("name","").casefold()==target.casefold()]
+              for x in matches:print("APPROVED PROJECT ID",x.get("id"))
+              if len(matches)!=1:print("BLOCKER: project not unique or not visible")
+          elif status!=200:print("NOTE: project verification blocked by scoped token; project ID must be verified independently")
+          status,p=api("/api/v1/vcs-provider")
+          print("VCS HTTP",status)
+          matched=[]
+          if status==200 and isinstance(p.get("providers"),list):
+              matched=[x for x in p["providers"] if isinstance(x,dict) and str(x.get("provider_type","")).lower()=="github"]
+              print("GITHUB CONNECTED",bool(matched))
+              for provider in matched:
+                  pid=provider.get("provider_id")
+                  if not isinstance(pid,str) or not pid:continue
+                  s,r=api("/api/v1/vcs-provider/"+pid)
+                  print("REPO LIST HTTP",s)
+                  if s!=200 or not isinstance(r.get("repositories"),list):continue
+                  matches=[x for x in r["repositories"] if isinstance(x,dict) and x.get("full_name")=="semen89852698936-create/snachala-uzhin"]
+                  for item in matches:
+                      rid=item.get("id")
+                      print("TARGET GITHUB REPO FOUND",True,"PROVIDER ID",pid,"REPO ID",rid)
+                      if rid is not None:
+                          q,b=api("/api/v1/vcs-provider/"+pid+"/repository/"+str(rid))
+                          print("BRANCHES HTTP",q)
+                          if q==200 and isinstance(b.get("branches"),list):
+                              print("TARGET DEPLOY BRANCH FOUND",any(x.get("name")=="deploy/commerce-timeweb-staging-20261106" for x in b["branches"] if isinstance(x,dict)))
+                  if not matches:print("TARGET REPO NOT ACCESSIBLE THROUGH THIS GITHUB PROVIDER")
+          else:print("BLOCKER: unable to inspect connected GitHub provider")
+          s,p=api("/api/v1/presets/apps")
+          match=[x for x in p.get("backend_presets",[]) if x.get("id")==2731 and x.get("location")=="ru-3" and x.get("price")==510]
+          print("Moscow 510 RUB/month backend preset",s==200 and len(match)==1)
+          s,f=api("/api/v1/frameworks/apps")
+          print("FRAMEWORK CATALOG HTTP",s)
+          if s==200:
+              names=[x.get("name") for x in f.get("backend_frameworks",[]) if isinstance(x,dict)]
+              print("DOCKER FRAMEWORK",("docker" in names),"FRAMEWORK NAME FIELDS",len(names))
+          print("READ ONLY completed. Nothing ordered, deployed, or charged.")
+          PY
