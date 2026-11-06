@@ -65,7 +65,7 @@ const assert=require('node:assert/strict');
     await page.locator('#recipeSearch').fill('1 яйцо, лапша пшеничная, овощной бульон, шампиньоны, соевый соус, имбирь свежий, зелёный лук');
     const ramen=page.locator('article[data-recipe="ramen"]');
     assert.equal(await ramen.count(),1,'A natural egg count must find the ramen recipe');
-    assert.match(await ramen.innerText(),/Яйцо\\s*[-–]\\s*1 шт\\.?/,'Show the one missing egg, not two');
+    assert.match(await ramen.innerText(),/Яйцо\s*[-–]\s*1 шт\.?/,'Show the one missing egg, not two');
     await ramen.locator('[data-shop-missing]').click();
     await page.locator('.shopping-open').first().click();
     const eggCart=await page.locator('#shoppingContents .shop-item').allInnerTexts();
