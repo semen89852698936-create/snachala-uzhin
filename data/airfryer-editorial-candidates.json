@@ -1,6 +1,6 @@
 {
   "schema": "airfryer-editorial-draft-v1",
-  "status": "editorial candidates only; NOT published, photos not yet approved, not experimentally verified by our team",
+  "status": "six editorial candidates only; NOT published; photos missing; cooking not experimentally verified by our team",
   "servings": 2,
   "quality_rules": [
     "Only recipes formulated for forced-air cooking, not oven-temperature conversion.",
@@ -13,7 +13,10 @@
     "https://www.bbcgoodfood.com/recipes/air-fryer-salmon",
     "https://www.bbcgoodfood.com/recipes/air-fryer-potato-wedges",
     "https://tollbit.bbcgoodfood.com/premium/air-fryer-chicken-breasts-2",
-    "https://www.foodsafety.gov/food-safety-charts/safe-minimum-internal-temperatures"
+    "https://www.foodsafety.gov/food-safety-charts/safe-minimum-internal-temperatures",
+    "https://www.bbcgoodfood.com/recipes/air-fryer-brussels-sprouts",
+    "https://www.bbcgoodfood.com/recipes/air-fryer-mushrooms-on-toast",
+    "https://www.bbcgoodfood.com/recipes/maple-thyme-carrots"
   ],
   "recipes": [
     {
@@ -151,6 +154,149 @@
       "photo_webp": null,
       "photo_status": "required",
       "reference": "https://www.bbcgoodfood.com/recipes/air-fryer-potato-wedges"
+    },
+    {
+      "id": "af-brussels-lemon-2",
+      "category": "Овощи",
+      "title": "Брюссельская капуста с лимонной цедрой в аэрогриле",
+      "ingredients": [
+        [
+          "брюссельская капуста",
+          "200 г"
+        ],
+        [
+          "растительное масло",
+          "1 ч. л."
+        ],
+        [
+          "лимонная цедра",
+          "1 ч. л."
+        ],
+        [
+          "соль и чёрный перец",
+          "по вкусу"
+        ]
+      ],
+      "prep_minutes": 5,
+      "temperature_c": 180,
+      "cook_minutes": [
+        10,
+        15
+      ],
+      "preheat": "Разогреть аэрогриль до 180 °C по инструкции модели.",
+      "basket": "Разложить кочанчики одним слоем в корзине, не перекрывая циркуляцию воздуха; при небольшой корзине разделить на партии.",
+      "turn": "Встряхнуть или перемешать в середине приготовления, примерно через 6-7 минут.",
+      "steps": [
+        "Срезать сухие основания кочанчиков, крупные разрезать пополам и тщательно обсушить; перемешать с маслом, солью и перцем.",
+        "Разогреть аэрогриль до 180 °C. Разложить капусту одним слоем, оставляя зазоры между крупными половинками.",
+        "Готовить 10-15 минут, встряхнуть через 6-7 минут; проверить, что внутри капуста мягкая, а края подрумянились.",
+        "Сразу после приготовления добавить свежую лимонную цедру, аккуратно перемешать и подать тёплой."
+      ],
+      "photo_webp": null,
+      "photo_status": "required",
+      "reference": "https://www.bbcgoodfood.com/recipes/air-fryer-brussels-sprouts"
+    },
+    {
+      "id": "af-mushrooms-thyme-toast-2",
+      "category": "Овощи",
+      "title": "Грибы с тимьяном на тостах из аэрогриля",
+      "ingredients": [
+        [
+          "коричневые шампиньоны",
+          "300 г"
+        ],
+        [
+          "свежий тимьян",
+          "2 веточки"
+        ],
+        [
+          "сушёный чеснок",
+          "1/2 ч. л."
+        ],
+        [
+          "растительное масло",
+          "1 ст. л."
+        ],
+        [
+          "хлеб на закваске",
+          "2 ломтика"
+        ],
+        [
+          "свежая петрушка",
+          "по желанию"
+        ],
+        [
+          "соль и чёрный перец",
+          "по вкусу"
+        ]
+      ],
+      "prep_minutes": 5,
+      "temperature_c": 200,
+      "cook_minutes": [
+        12,
+        15
+      ],
+      "preheat": "Разогреть аэрогриль до 200 °C, если это указано в инструкции к модели.",
+      "basket": "Грибы разложить одним слоем в корзине; возможна влага от грибов, не переполнять корзину. Хлеб поджарить отдельно в тостере или на сухой сковороде.",
+      "turn": "Встряхнуть корзину с грибами в середине приготовления, через 6-7 минут.",
+      "steps": [
+        "Очистить грибы, крупные нарезать на четвертинки. Перемешать с тимьяном, сушёным чесноком, растительным маслом и перцем.",
+        "Разогреть аэрогриль до 200 °C. Выложить грибы одним слоем, чтобы горячий воздух проходил между кусочками.",
+        "Готовить 12-15 минут, перемешать примерно через 7 минут; дождаться золотистых краёв и испарения основной влаги.",
+        "Отдельно подрумянить хлеб, разложить сверху горячие грибы, посыпать петрушкой и сразу подать."
+      ],
+      "photo_webp": null,
+      "photo_status": "required",
+      "reference": "https://www.bbcgoodfood.com/recipes/air-fryer-mushrooms-on-toast"
+    },
+    {
+      "id": "af-carrots-maple-thyme-2",
+      "category": "Овощи",
+      "title": "Морковь в кленовой глазури с тимьяном",
+      "ingredients": [
+        [
+          "морковь",
+          "375 г"
+        ],
+        [
+          "подсолнечное масло",
+          "1 ст. л."
+        ],
+        [
+          "кленовый сироп",
+          "1 ст. л."
+        ],
+        [
+          "листья тимьяна",
+          "1/2 ст. л."
+        ],
+        [
+          "хересный уксус",
+          "1 ч. л."
+        ],
+        [
+          "соль и чёрный перец",
+          "по вкусу"
+        ]
+      ],
+      "prep_minutes": 10,
+      "temperature_c": 180,
+      "cook_minutes": [
+        30,
+        40
+      ],
+      "preheat": "Разогреть аэрогриль до 180 °C; время зависит от толщины моркови и устройства.",
+      "basket": "Морковь разложить одним слоем, не уплотнять, при маленькой корзине готовить партиями.",
+      "turn": "Через 15 минут осторожно перевернуть, а после добавления глазури перемешать и готовить ещё 5-10 минут.",
+      "steps": [
+        "Вымыть морковь, толстую разрезать вдоль, обсушить, смазать маслом и приправить солью и перцем.",
+        "Разогреть аэрогриль до 180 °C, выложить морковь одним слоем. Готовить 25-30 минут, через 15 минут перевернуть; проверить мягкость ножом.",
+        "Смешать кленовый сироп, тимьян и хересный уксус. Обмазать почти мягкую морковь глазурью.",
+        "Вернуть в аэрогриль при 180 °C ещё на 5-10 минут, пока глазурь не станет блестящей и липкой, но не подгорит; подать тёплой."
+      ],
+      "photo_webp": null,
+      "photo_status": "required",
+      "reference": "https://www.bbcgoodfood.com/recipes/maple-thyme-carrots"
     }
   ]
 }
