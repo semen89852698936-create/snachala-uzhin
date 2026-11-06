@@ -1,5 +1,22 @@
 name: Pantry search and missing groceries QA
 on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'index.html'
+      - 'full-catalog/index.html'
+      - 'scripts/test_pantry_search.cjs'
+      - 'scripts/test_pantry_quantities.cjs'
+      - 'scripts/test_ingredient_search.cjs'
+      - 'scripts/test_editorial_recipe.cjs'
+      - 'scripts/test_cooking_timer.cjs'
+      - 'scripts/e2e-cooking-timer.cjs'
+      - 'cooking-timer-sw.js'
+      - 'scripts/e2e-editorial-recipe.cjs'
+      - 'assets/editorial-recipe.css'
+      - 'scripts/e2e-pantry-search.cjs'
+      - '.github/workflows/pantry-search.yml'
   pull_request:
     paths:
       - 'index.html'
