@@ -172,3 +172,362 @@ body.du-evening-mode #music .du-music-card {
     transition: none;
   }
 }
+
+
+/* EDITORIAL_HOME_PHASE2_20261106: connect the storefront to the recipe magazine.
+   Preserve the approved photographic composition, text and all UI behaviours. */
+#homeView .du-hero {
+  background:#482a37;
+  color:#fff7f2;
+  border-bottom:1px solid #60404c;
+}
+#homeView .du-hero-copy {
+  padding-block:clamp(54px,6vw,91px);
+}
+#homeView .du-kicker {
+  color:#f1c5d1;
+  font:700 12px/1.5 var(--du-magazine-sans);
+  letter-spacing:.14em;
+}
+#homeView .du-kicker-line { background:#e5bac6; }
+#homeView .du-hero h1 {
+  color:#fff8f3;
+  font-family:var(--du-magazine-serif);
+  font-weight:500;
+  letter-spacing:-.06em;
+}
+#homeView .du-hero h1 i { color:#e6aeba; }
+#homeView .du-hero-slogan {
+  color:#f2d6da;
+  font-family:var(--du-magazine-serif);
+}
+#homeView .du-hero-description {
+  color:#f5e4e5;
+  font:500 clamp(16px,1.3vw,18px)/1.72 var(--du-magazine-sans);
+  max-width:53ch;
+}
+#homeView .du-hero-actions .du-btn-primary {
+  background:#a95a73;
+  border-color:#a95a73;
+  color:#fff;
+}
+#homeView .du-hero-actions .du-btn-primary:hover {
+  background:#95445f;
+  border-color:#95445f;
+}
+#homeView .du-hero-actions .du-btn-outline {
+  border-color:#e7bfc9;
+  color:#fff7f2;
+}
+#homeView .du-hero-bottom {
+  color:#e8c9d1;
+  font-size:11px;
+  letter-spacing:.09em;
+}
+#homeView .du-hero-bottom b { color:#f0aabf; }
+#homeView .du-hero-art { border-left-color:#70505a; }
+
+#homeView .du-categories .du-section-heading h2,
+#homeView .du-catalog .du-section-heading h2,
+#homeView .du-pricing h2,
+#homeView .du-bonus .bonus-text h2 {
+  color:var(--du-magazine-wine-dark);
+  font-family:var(--du-magazine-serif);
+  font-weight:500;
+  letter-spacing:-.04em;
+}
+#homeView .du-categories .du-section-heading h2 em,
+#homeView .du-pricing h2 em,
+#homeView .du-bonus .bonus-text h2 em {
+  color:#a85e78;
+}
+#homeView .du-categories .du-section-heading p,
+#homeView .du-catalog .du-section-heading p,
+#homeView .du-bonus .bonus-text p {
+  color:var(--du-magazine-copy);
+  font-size:clamp(15px,1.3vw,17px);
+  line-height:1.7;
+}
+#homeView .du-categories .category-card,
+#homeView .du-bonus .bonus-inner,
+#homeView .du-catalog .recipe-card,
+#homeView .du-catalog .search-panel {
+  border-radius:12px;
+}
+#homeView .du-catalog { background:var(--du-magazine-cream); }
+#homeView .du-catalog .search-panel {
+  background:var(--du-magazine-paper);
+  border-color:var(--du-magazine-rule);
+}
+#homeView .du-catalog .chip[aria-pressed=true],
+#homeView .du-catalog .filter-button[aria-pressed=true] {
+  background:var(--du-magazine-wine);
+  border-color:var(--du-magazine-wine);
+  color:#fff;
+}
+#homeView .du-pricing .price-side {
+  background:var(--du-magazine-wine-dark);
+  color:#fff8f5;
+  border-radius:12px;
+}
+#homeView .du-pricing .pricing-card {
+  background:#f2e8e2;
+  border-radius:12px;
+}
+
+/* Mobile reading size is part of the approved art direction. */
+@media (max-width:760px) {
+  .brand-text small { font-size:10px; line-height:1.2; }
+  #homeView .du-kicker { font-size:11px; letter-spacing:.105em; }
+  #homeView .du-hero-copy { padding:36px 14px 37px; }
+  #homeView .du-hero h1 { letter-spacing:-.05em; }
+  #homeView .du-hero-description { font-size:16px; line-height:1.7; }
+  #homeView .du-hero-bottom { font-size:11px; line-height:1.45; margin-top:30px; }
+  #homeView .du-categories .du-section-heading p,
+  #homeView .du-catalog .du-section-heading p { font-size:16px; }
+}
+@media (prefers-reduced-motion:reduce) {
+  #homeView .du-hero-actions .du-btn { transition:none; }
+}
+
+
+/* EDITORIAL_CATALOG_SPREAD_20261106: the catalog is a magazine index, not
+   a uniform product shelf. Feature the first recipe only when four or more
+   are visible and no pantry group headings alter the grid ordering. */
+#catalog.du-catalog {
+  background: #f5ece5;
+  padding-block: clamp(68px, 7vw, 112px);
+}
+#catalog .du-section-top {
+  border-top: 2px solid var(--du-magazine-wine);
+  border-bottom: 1px solid var(--du-magazine-rule);
+  padding: 26px 0 35px;
+  margin-bottom: 36px;
+}
+#catalog .du-section-top .du-eyebrow {
+  font: 700 12px/1.5 var(--du-magazine-sans);
+  letter-spacing: .2em;
+  color: #8d475d;
+  margin-bottom: 18px;
+}
+#catalog .du-section-heading {
+  align-items: end;
+  gap: clamp(25px,5vw,74px);
+}
+#catalog .du-section-heading h2 {
+  font: 500 clamp(57px, 6.4vw, 99px)/.93 var(--du-magazine-serif);
+  letter-spacing: -.055em;
+  color: var(--du-magazine-wine-dark);
+  max-width: 13ch;
+  text-wrap: balance;
+}
+#catalog .du-section-heading h2 em {
+  font-weight: 400;
+  color:#a55e74;
+}
+#catalog .du-section-heading p {
+  max-width: 37ch;
+  margin: 0 0 5px;
+  border-left: 2px solid #b9919c;
+  padding-left: 22px;
+  font: 500 clamp(16px,1.4vw,19px)/1.63 var(--du-magazine-sans);
+  color:var(--du-magazine-copy);
+}
+#catalog .search-panel {
+  border: 1px solid #e4d5cb;
+  background: #fffaf5;
+  padding: 22px;
+  border-radius: 10px;
+  box-shadow: 0 15px 44px rgba(79,46,50,.07);
+  gap: 12px;
+}
+#catalog .search-wrap {
+  background: #fff;
+  border:1px solid #d8c8c1;
+  border-radius: 6px;
+  min-height: 58px;
+}
+#catalog #recipeSearch {
+  font: 500 16px/1.5 var(--du-magazine-sans);
+  color:var(--du-magazine-wine-dark);
+}
+#catalog #recipeSearch::placeholder {
+  color:#88787b;
+  opacity:1;
+}
+#catalog #cuisineFilter,
+#catalog .filter-button {
+  min-height: 52px;
+  border-radius: 6px;
+  font-size: 14px;
+}
+#catalog .du-ingredient-search-tip {
+  color:#755d65;
+  font: 500 14px/1.6 var(--du-magazine-sans);
+  margin: 16px 0 19px;
+}
+#catalog .category-filters {
+  border-bottom: 1px solid var(--du-magazine-rule);
+  padding-bottom: 18px;
+  margin-top: 14px;
+  gap: 11px;
+}
+#catalog .chip {
+  border-radius: 5px;
+  font: 700 12px/1.3 var(--du-magazine-sans);
+  letter-spacing:.035em;
+  background: #fff8f2;
+  border-color: #e4d3cb;
+  color: #6f4d58;
+  min-height: 43px;
+}
+#catalog .result-line {
+  margin: 27px 0 22px;
+  color:#856f74;
+  font: 600 12px/1.45 var(--du-magazine-sans);
+  letter-spacing:.06em;
+}
+#catalog .result-line span:first-child {
+  font: italic 500 clamp(23px,2.3vw,30px)/1.2 var(--du-magazine-serif);
+  letter-spacing:0;
+  color:var(--du-magazine-wine-dark);
+}
+#catalog #recipeGrid {
+  grid-template-columns: repeat(3, minmax(0,1fr));
+  gap: 23px 19px;
+  align-items: stretch;
+}
+#catalog #recipeGrid > .recipe-card {
+  background: #fffbf7;
+  border:1px solid #e6d9d1;
+  border-radius: 8px;
+  box-shadow: none;
+  min-width:0;
+  display:flex;
+  flex-direction:column;
+  overflow:hidden;
+}
+#catalog #recipeGrid > .recipe-card:hover {
+  box-shadow:0 18px 32px rgba(79,46,50,.10);
+}
+#catalog #recipeGrid > .recipe-card:focus-visible {
+  outline: 3px solid #994e68;
+  outline-offset:3px;
+}
+#catalog #recipeGrid > .recipe-card .card-image {
+  height: clamp(225px, 23vw, 285px);
+  background: #e7ddd6;
+  flex:none;
+}
+#catalog #recipeGrid > .recipe-card .card-body {
+  flex:1;
+  display:flex;
+  flex-direction:column;
+  padding: 25px 23px 23px;
+  min-width:0;
+}
+#catalog #recipeGrid > .recipe-card .card-body h3 {
+  color:var(--du-magazine-wine-dark);
+  font: 500 clamp(28px,2.55vw,37px)/1.05 var(--du-magazine-serif);
+  letter-spacing:-.025em;
+  min-height:0;
+  margin:11px 0 14px;
+  text-wrap:balance;
+}
+#catalog #recipeGrid > .recipe-card .card-meta {
+  color:#996c78;
+  font:700 11px/1.4 var(--du-magazine-sans);
+  letter-spacing:.07em;
+}
+#catalog #recipeGrid > .recipe-card .card-body p {
+  font: 400 14px/1.66 var(--du-magazine-sans);
+  color:#685b5c;
+  min-height:0;
+  margin:0 0 19px;
+  overflow-wrap:anywhere;
+}
+#catalog #recipeGrid > .recipe-card .card-footer {
+  border-top: 1px solid #ebdcd6;
+  margin-top:auto;
+  padding-top:18px;
+  color:#7b6269;
+  font:600 12px/1.4 var(--du-magazine-sans);
+}
+#catalog #recipeGrid > .recipe-card .card-footer::before {
+  content:"ОТКРЫТЬ РЕЦЕПТ";
+  margin-left:auto;
+  color:#8f3f57;
+  letter-spacing:.08em;
+  font-size:10px;
+}
+#catalog #recipeGrid > .recipe-card .card-footer span:last-child {
+  color:#8f3f57;
+}
+#catalog #recipeGrid > .recipe-card .fav-floating {
+  width:44px;
+  height:44px;
+  color:#773c4b;
+}
+#catalog #recipeGrid > .recipe-card .card-time {
+  background:rgba(255,251,247,.92);
+  color:#6f354a;
+  border-radius:4px;
+}
+/* Desktop editorial lead story. Under active pantry grouping it is disabled,
+   retaining the "ready"/"missing" section headings and their ordering. */
+@media (min-width:1080px) {
+  #catalog #recipeGrid:not(:has(> .du-pantry-group-title)):has(> .recipe-card:nth-child(4)) > .recipe-card:first-child {
+    grid-column:span 2;
+    display:grid;
+    grid-template-columns:minmax(0,1.07fr) minmax(0,.93fr);
+    min-height:385px;
+  }
+  #catalog #recipeGrid:not(:has(> .du-pantry-group-title)):has(> .recipe-card:nth-child(4)) > .recipe-card:first-child .card-image {
+    height:100%;
+    min-height:385px;
+  }
+  #catalog #recipeGrid:not(:has(> .du-pantry-group-title)):has(> .recipe-card:nth-child(4)) > .recipe-card:first-child .card-body {
+    padding:clamp(26px,3vw,43px);
+  }
+  #catalog #recipeGrid:not(:has(> .du-pantry-group-title)):has(> .recipe-card:nth-child(4)) > .recipe-card:first-child h3 {
+    font-size:clamp(35px,3.5vw,57px);
+    line-height:1;
+    margin-block:16px 24px;
+  }
+  #catalog #recipeGrid:not(:has(> .du-pantry-group-title)):has(> .recipe-card:nth-child(4)) > .recipe-card:first-child p {
+    font-size:15px;
+  }
+}
+@media (max-width:1079px) {
+  #catalog #recipeGrid { grid-template-columns:repeat(2,minmax(0,1fr)); }
+  #catalog .du-section-heading h2 { font-size:clamp(55px,7.5vw,78px); }
+}
+@media (max-width:680px) {
+  #catalog.du-catalog { padding-block:56px; }
+  #catalog .du-section-top { padding:20px 0 27px; margin-bottom:23px; }
+  #catalog .du-section-heading { display:block; }
+  #catalog .du-section-heading h2 {
+    font-size:clamp(47px,12.1vw,71px);
+    max-width:none;
+    line-height:.99;
+  }
+  #catalog .du-section-heading p {
+    margin-top:18px;
+    padding-left:15px;
+    font-size:16px;
+    max-width:none;
+  }
+  #catalog .search-panel { padding:13px; gap:10px; }
+  #catalog .search-wrap { min-height:56px; }
+  #catalog #recipeSearch { font-size:16px; }
+  #catalog .category-filters { padding-top:17px; }
+  #catalog #recipeGrid { grid-template-columns:1fr; gap:23px; }
+  #catalog #recipeGrid > .recipe-card .card-image {
+    height:clamp(235px,65vw,350px);
+  }
+  #catalog #recipeGrid > .recipe-card .card-body { padding:22px 20px 21px; }
+  #catalog #recipeGrid > .recipe-card .card-body h3 { font-size:34px; }
+  #catalog #recipeGrid > .recipe-card .card-body p { font-size:15px; }
+  #catalog #recipeGrid > .recipe-card .card-footer::before { font-size:10px; }
+  #catalog .result-line { gap:12px; flex-wrap:wrap; }
+}
