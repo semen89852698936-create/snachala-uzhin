@@ -6,6 +6,15 @@ root=Path(__file__).resolve().parents[1]
 photos=json.loads((root/"photo-library/ai-recipe-photo-map.json").read_text(encoding="utf-8"))["photos"]
 assert len(photos)==1001
 assert len({p["recipe_id"] for p in photos})==1001
+# Distinct filenames are insufficient: catch one generic image reused for multiple dishes.
+# The map records Git blob hashes, independently verified against file bytes below.
+by_sha={}
+for p in photos:
+    by_sha.setdefault(p["sha"],[]).append(p["recipe_id"])
+duplicates={sha:ids for sha,ids in by_sha.items() if len(ids)>1}
+assert not duplicates,("duplicate photo bytes across recipes",duplicates)
+assert len({p["path"] for p in photos})==1001,"duplicate photo paths"
+print("PASS 1001 distinct recipe photo paths and verified image blob hashes")
 for i,p in enumerate(photos,1):
     assert p["n"]==i
     file=root/p["path"].lstrip("/")
