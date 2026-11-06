@@ -1,8 +1,6 @@
 name: Retire only old Timeweb commerce staging 284041 after VPC migration
 on:
-  pull_request:
-    branches: [feature/commerce-secure-foundation-20261104]
-    paths: ['.github/workflows/timeweb-retire-old-staging.yml']
+  workflow_dispatch:
 permissions:
   contents: read
 concurrency:
