@@ -1,0 +1,67 @@
+name: Connect only public SNAChALA UZHIN repository to Timeweb
+on:
+  pull_request:
+    branches: [feature/commerce-secure-foundation-20261104]
+    paths: ['.github/workflows/timeweb-connect-source.yml']
+permissions:
+  contents: read
+concurrency:
+  group: timeweb-source-snachala-uzhin
+  cancel-in-progress: false
+jobs:
+  connect-repository:
+    if: github.event.pull_request.number == 135 && github.event.pull_request.head.ref == 'deploy/commerce-timeweb-staging-20261106' && github.event.pull_request.head.repo.full_name == github.repository
+    runs-on: ubuntu-latest
+    timeout-minutes: 6
+    steps:
+      - name: Connect single public repository, without app or billing actions
+        env:
+          TIMEWEB_API_TOKEN: ${{ secrets.TIMEWEB_API_TOKEN }}
+        run: |
+          set -euo pipefail
+          python3 - <<'PY'
+          import json,os,urllib.request,urllib.error
+          token=os.getenv('TIMEWEB_API_TOKEN','').strip()
+          if token.lower().startswith('bearer '):token=token[7:].strip()
+          if len(token)>2 and token[0]==token[-1] and token[0] in ('"',"'"):token=token[1:-1].strip()
+          if not token:raise SystemExit("FAIL: token is missing")
+          base='https://api.timeweb.cloud'
+          headers={'Authorization':'Bearer '+token,'Accept':'application/json','Content-Type':'application/json'}
+          def req(path,body=None):
+              b=json.dumps(body).encode() if body is not None else None
+              q=urllib.request.Request(base+path,data=b,headers=headers,method='POST' if b is not None else 'GET')
+              try:
+                  with urllib.request.urlopen(q,timeout=30) as r:
+                      return r.status,json.loads(r.read(1000000))
+              except urllib.error.HTTPError as e:
+                  try:d=json.loads(e.read(20000))
+                  except (ValueError,UnicodeDecodeError):d={}
+                  return e.code,{'error_code':d.get('error_code','unknown')}
+          code,projects=req('/api/v1/projects')
+          matches=[x for x in projects.get('projects',[]) if x.get('name')=='СНАЧАЛА УЖИН' and x.get('id')==3145267]
+          if code!=200 or len(matches)!=1:raise SystemExit("BLOCK: wrong Timeweb project or scope")
+          def installed():
+              code,p=req('/api/v1/vcs-provider')
+              if code!=200:raise SystemExit("BLOCK: VCS providers unreadable")
+              for row in p.get('providers',[]):
+                  pid=row.get('provider_id')
+                  if not pid:continue
+                  status,resp=req('/api/v1/vcs-provider/'+pid)
+                  if status==200 and any(r.get('full_name')=='semen89852698936-create/snachala-uzhin' for r in resp.get('repositories',[])):
+                      return pid
+              return None
+          existing=installed()
+          if existing:
+              print("PASS: requested single repository already connected to Timeweb. No duplicate source added.")
+          else:
+              url='https://github.com/semen89852698936-create/snachala-uzhin.git'
+              status,data=req('/api/v1/vcs-provider',{'provider_type':'git','url':url})
+              if status not in (200,201):
+                  print("BLOCK: Timeweb rejected adding the read-only Git URL; HTTP",status,'error',data.get('error_code'))
+                  raise SystemExit(1)
+              print("Timeweb accepted Git URL connection. Rechecking visibility.")
+              existing=installed()
+              if not existing:raise SystemExit("BLOCK: git source created but not discoverable")
+              print("PASS: isolated public Git URL now available to App Platform.")
+          print("Verified project 3145267. No app, database, billing or merchant changes.")
+          PY
