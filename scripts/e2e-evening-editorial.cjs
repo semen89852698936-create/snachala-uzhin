@@ -6,7 +6,10 @@ const {chromium}=require('playwright');
  const browser=await chromium.launch({headless:true});
  try{
   for(const scenario of [
-    {route:'/',viewport:{width:1366,height:900},name:'desktop'},
+    {route:'/',viewport:{width:1536,height:960},name:'desktop-1536'},
+    {route:'/',viewport:{width:1366,height:900},name:'desktop-1366'},
+    {route:'/',viewport:{width:1024,height:850},name:'tablet-1024'},
+    {route:'/',viewport:{width:820,height:860},name:'tablet-820'},
     {route:'/',viewport:{width:390,height:844},name:'mobile'}
   ]){
    const page=await browser.newPage({viewport:scenario.viewport});
@@ -16,6 +19,7 @@ const {chromium}=require('playwright');
    // HTML has recipe-only routing and no eveningLanding section.
    await page.goto('http://127.0.0.1:8765'+scenario.route+'#evening',{waitUntil:'domcontentloaded'});
    await page.locator('#eveningLanding').waitFor({state:'visible'});
+   await page.evaluate(()=>document.fonts.ready);
    assert(await page.locator('#evening').isVisible(),'builder must remain visible');
    assert(await page.locator('#music').isVisible(),'music must remain visible');
    const story=await page.evaluate(()=>{
@@ -39,9 +43,47 @@ const {chromium}=require('playwright');
    assert(story.after.includes('our-evening-after-hq.avif'),'approved after-dinner photo changed');
    assert(story.together.includes('our-evening-together-approved.webp'),'approved together photo changed');
    assert(story.invitation.includes('our-evening-invitation-approved-20261102.webp'),'approved invitation changed');
-   assert(story.titleSize>(scenario.name==='desktop'?80:65),'magazine headline too small');
-   assert.equal(story.dinnerColumns,scenario.name==='desktop'?2:1,'dinner spread layout');
-   assert.equal(story.afterColumns,scenario.name==='desktop'?2:1,'after-dinner layout');
+   assert(story.titleSize>(scenario.viewport.width>820?60:65),'magazine headline too small');
+   assert.equal(story.dinnerColumns,scenario.viewport.width>820?2:1,'dinner spread layout');
+   assert.equal(story.afterColumns,scenario.viewport.width>820?2:1,'after-dinner layout');
+
+   // A screenshot with 1536px Chrome showed the hero image hiding the entire
+   // left side of the title and body copy. Test actual pixel geometry, not
+   // merely column counts or font sizes.
+   const geometry=await page.evaluate(()=>{
+     const bounds=sel=>{
+       const el=document.querySelector(sel), r=el.getBoundingClientRect();
+       return {left:r.left,right:r.right,top:r.top,bottom:r.bottom,width:r.width,height:r.height};
+     };
+     return {
+       photo:bounds('#eveningLanding > .du-evening-landing-photo'),
+       image:bounds('#eveningLanding > .du-evening-landing-photo > img'),
+       copy:bounds('#eveningLanding > .du-evening-landing-content'),
+       heading:bounds('#eveningLandingTitle'),
+       italicWord:bounds('#eveningLandingTitle em'),
+       lead:bounds('#eveningLanding .du-evening-landing-lead'),
+       text:bounds('#eveningLanding .du-evening-landing-text'),
+       cta:bounds('#eveningLanding .du-evening-landing-cta'),
+       inspiration:bounds('#eveningLanding .du-evening-inspiration'),
+       viewportWidth:innerWidth
+     };
+   });
+   assert(geometry.image.right<=geometry.photo.right+2,
+     scenario.name+': photo exceeds its column: '+JSON.stringify(geometry));
+   if(scenario.viewport.width>820){
+     const minGap=10;
+     for(const name of ['copy','heading','italicWord','lead','text','cta','inspiration']){
+       assert(geometry[name].left>=geometry.photo.right+minGap,
+         scenario.name+': photo overlaps '+name+': '+JSON.stringify(geometry));
+     }
+   }else{
+     assert(geometry.photo.bottom<=geometry.copy.top+2,
+       scenario.name+': photo should stack above heading: '+JSON.stringify(geometry));
+   }
+   for(const name of ['heading','italicWord','lead','text','cta','inspiration']){
+     assert(geometry[name].right<=geometry.viewportWidth+2,
+       scenario.name+': '+name+' spills out of viewport: '+JSON.stringify(geometry));
+   }
    assert.equal(story.musicCards,3,'three music chapters required');
    assert.equal(story.musicTracks,60,'20+20+20 curated tracks required');
    assert.equal(await page.locator('#eveningLanding .du-evening-inspiration-card').count(),3,'real-recipe suggestions missing');
