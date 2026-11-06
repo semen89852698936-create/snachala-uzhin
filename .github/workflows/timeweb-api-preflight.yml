@@ -28,6 +28,11 @@ jobs:
 
           # Only read-only requests. No token printed, no HTTP response body logged.
           token = os.environ.get("TIMEWEB_API_TOKEN", "").strip()
+          # Accept only harmless copy/paste wrappers; never echo or print credentials.
+          if token.lower().startswith("bearer "):
+              token = token[7:].strip()
+          if len(token) > 2 and token[0] == token[-1] and token[0] in ("\'", "\""):
+              token = token[1:-1].strip()
           if not token:
               print("FAIL: TIMEWEB_API_TOKEN not available to this GitHub Actions run.")
               sys.exit(1)
