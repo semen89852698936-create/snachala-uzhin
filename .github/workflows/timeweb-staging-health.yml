@@ -42,12 +42,13 @@ jobs:
               print('TARGET APP',app.get('id'),'STATUS',app.get('status'),'LOCATION',app.get('location'),'FRAMEWORK',app.get('framework'),'PRESET',app.get('preset_id'))
               env=app.get('envs') if isinstance(app.get('envs'),dict) else {}
               if env:
+                  print('ENV KEY NAMES',sorted(env.keys()))
                   print('CHECKOUT OFF',str(env.get('ENABLE_CHECKOUT'))=='0','PAYMENT QA OFF',str(env.get('COMMERCE_PAYMENT_QA_APPROVED'))=='0')
               domains=app.get('domains',[])
               hosts=[]
               for d in domains:
                   if isinstance(d,str):host=d
-                  elif isinstance(d,dict):host=d.get('domain') or d.get('name') or d.get('value') or ''
+                  elif isinstance(d,dict):host=d.get('fqdn') or d.get('domain') or d.get('name') or d.get('value') or ''
                   else:continue
                   host=str(host).strip().lower().removeprefix('https://').split('/')[0]
                   if host and host not in hosts:hosts.append(host)
