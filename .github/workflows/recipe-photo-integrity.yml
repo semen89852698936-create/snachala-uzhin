@@ -1,0 +1,23 @@
+name: Recipe photo integrity QA
+on:
+  pull_request:
+    paths:
+      - 'scripts/verify-1001-photo-links.py'
+      - 'photo-library/ai-recipe-photo-map.json'
+      - 'assets/recipes-ai/**'
+      - 'index.html'
+      - 'full-catalog/index.html'
+      - '.github/workflows/recipe-photo-integrity.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          persist-credentials: false
+      - name: Check all 1001 WebP files and both catalog mappings
+        run: python3 scripts/verify-1001-photo-links.py
