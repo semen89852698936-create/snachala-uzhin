@@ -1,0 +1,7 @@
+# Checkpoint 2026-11-06 21:07 Asia/Jerusalem
+
+Read CURRENT_STATE.md and PROJECT_DECISIONS_20261104.md from main. Newer approved PR #133 merged as e92d7b2292abe24784f53ba0180d9fa4021c2e2a. Vercel latest production READY remains dpl_nBRmWxD4mz2iH1GdBo6zyLN98Fkg at 8e4f4b6effb2bef9a1e02858986404d991a9ff47. Vercel create-deployment previously returned 402 quota/retryAfter 86400; no new deployment attempted.
+
+PR #127 head 314fbe6f had workflow run 42273351033 FAILURE. Actual job logs show fixture tests PASS and catalog audit exited 2: `AIRFRYER AUDIT COVERAGE FAILURE: zero tagged recipes detected`. This is a real inventory gap, not a successful recipe audit. Full 1001-recipe parity was reached before the coverage check, but no airfryer-tagged recipes were identified. No claim about culinary validity.
+
+Updated `.github/workflows/airfryer-audit.yml` to print counts and upload `airfryer-audit-report.json` even when coverage gate fails. Previous workflow skipped both diagnostics on failure. New code commit a2a082aca04a5f10c7ac72b3793b51473a3932c5. Keep PR draft; next inspect the new run and report, determine whether airfryer recipes are absent or stored outside recipeData, and only then revise inventory. Do not weaken the zero-coverage gate or fabricate tagged recipes. No public site, payment, images or catalog changed. Rollback: discard draft PR #127.
