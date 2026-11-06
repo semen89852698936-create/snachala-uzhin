@@ -1,5 +1,15 @@
 name: Recipe photo integrity QA
 on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'scripts/verify-1001-photo-links.py'
+      - 'photo-library/ai-recipe-photo-map.json'
+      - 'assets/recipes-ai/**'
+      - 'index.html'
+      - 'full-catalog/index.html'
+      - '.github/workflows/recipe-photo-integrity.yml'
   pull_request:
     paths:
       - 'scripts/verify-1001-photo-links.py'
