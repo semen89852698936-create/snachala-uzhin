@@ -7,11 +7,13 @@ const {chromium}=require('playwright');
  try{
   for(const scenario of [
     {route:'/',viewport:{width:1366,height:900},name:'desktop'},
-    {route:'/full-catalog/',viewport:{width:390,height:844},name:'mobile'}
+    {route:'/',viewport:{width:390,height:844},name:'mobile'}
   ]){
    const page=await browser.newPage({viewport:scenario.viewport});
    const errors=[];
    page.on('pageerror',error=>errors.push(error.message));
+   // The Our Evening experience belongs to the main site; the legacy full-catalog
+   // HTML has recipe-only routing and no eveningLanding section.
    await page.goto('http://127.0.0.1:8765'+scenario.route+'#evening',{waitUntil:'domcontentloaded'});
    await page.locator('#eveningLanding').waitFor({state:'visible'});
    assert(await page.locator('#evening').isVisible(),'builder must remain visible');
