@@ -1,0 +1,55 @@
+name: Live Timeweb staging acceptance (HTTP only, checkout disabled)
+on:
+  pull_request:
+    branches: [feature/commerce-secure-foundation-20261104]
+    paths: ['.github/workflows/timeweb-staging-acceptance.yml']
+permissions:
+  contents: read
+jobs:
+  acceptance:
+    if: github.event.pull_request.number == 135 && github.event.pull_request.head.ref == 'deploy/commerce-timeweb-staging-20261106' && github.event.pull_request.head.repo.full_name == github.repository
+    runs-on: ubuntu-latest
+    timeout-minutes: 4
+    steps:
+      - name: Test real HTTPS protections and disabled checkout only
+        run: |
+          python3 - <<'PY'
+          import json,time,urllib.request,urllib.error
+          base='https://semen89852698936-create-snachala-uzhin-bbef.twc1.net'
+          def request(path,method='GET',body=None):
+              data=None
+              headers={}
+              if method=='POST':
+                  data=json.dumps(body).encode()
+                  headers={'Content-Type':'application/json','Origin':base}
+              q=urllib.request.Request(base+path,data=data,headers=headers,method=method)
+              try:
+                  with urllib.request.urlopen(q,timeout=20) as resp:return resp.status,resp.read(128000)
+              except urllib.error.HTTPError as e:return e.code,e.read(128000)
+          want={'/healthz':200,'/':200,'/account':200,'/api/me':200,'/app':403,'/full-catalog/index.html':403,'/assets/recipes-ai/0001-lemon-spinach-pasta.webp':403}
+          for attempt in range(8):
+              bad=[]
+              for path,expected in want.items():
+                  try:status,payload=request(path)
+                  except Exception as e:
+                      print('NETWORK',path,type(e).__name__)
+                      bad.append(path);continue
+                  print('HTTP',path,status)
+                  if status!=expected:bad.append(path)
+                  if path=='/api/me' and status==200:
+                      data=json.loads(payload)
+                      if data.get('has_access') is not False:bad.append('anonymous-access')
+              try:
+                  status,payload=request('/api/orders','POST',{'email':'nonbuyer-smoke@example.invalid'})
+                  print('HTTP /api/orders with valid Origin',status)
+                  if status!=503 or b'checkout_not_enabled' not in payload:bad.append('checkout-not-locked')
+              except Exception as e:
+                  print('NETWORK /api/orders',type(e).__name__)
+                  bad.append('checkout-network')
+              if not bad:
+                  print('PASS: live origin works, no public catalog/photos, buyer APIs deny checkout.')
+                  break
+              if attempt==7:
+                  raise SystemExit('FAIL: expected HTTP responses were not obtained: '+','.join(bad))
+              time.sleep(8)
+          PY
