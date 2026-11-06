@@ -858,6 +858,9 @@ const INGREDIENT_SEARCH_SYNONYMS = Object.freeze({
   'грибов':['гриб','шампиньон','вешенк','лисичк','опят'],
   'сливки':['сливк'],
   'сливок':['сливк'],
+  'яйцо':['яйц','яиц'],
+  'яйца':['яйц','яиц'],
+  'яиц':['яйц','яиц'],
   'картошка':['картоф','картош'],
   'картофель':['картоф','картош'],
   'картофеля':['картоф','картош'],
@@ -938,6 +941,16 @@ function pantryParseStock(search) {
  return String(search||'').replace(/(\d),(\d)/g,'$1.$2').split(/[,;\n]+/).map(raw=>{
    const value=norm(raw).trim().replace(/\s+/g,' ');
    if(!value)return null;
+   // Natural Russian piece counts: '2 яйца' and '1 луковица'.
+   // Do not assume a weight for a piece or match green onions to bulb onions.
+   const counted=/^([1-9]\\d*)\\s*(яйцо|яйца|яиц|луковица|луковицы|луковиц)$/u.exec(value);
+   if(counted){
+     const amount=Number(counted[1]);
+     if(Number.isSafeInteger(amount))return {
+       name:/^яй|^яиц/u.test(counted[2])?'яйца':'лук репчатый',
+       amount,unit:'шт.',dimension:'pieces',factor:1,original:value
+     };
+   }
    const start=leading.exec(value),end=start?null:trailing.exec(value);
    if(!start&&!end)return {name:value,amount:null,unit:null,original:value};
    const name=(start?start[3]:end[1]).trim();
