@@ -72,6 +72,8 @@ jobs:
         run: |
           set -euo pipefail
           git fetch origin main
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           if git ls-remote --exit-code --heads origin photo-production/airfryer-batch-01-20261107 >/dev/null 2>&1; then
             git fetch origin photo-production/airfryer-batch-01-20261107
             git checkout -B photo-production/airfryer-batch-01-20261107 origin/photo-production/airfryer-batch-01-20261107
@@ -79,8 +81,6 @@ jobs:
           else
             git checkout -b photo-production/airfryer-batch-01-20261107 origin/main
           fi
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
       - run: python -m pip install 'Pillow>=10,<13'
       - name: Generate the first incomplete batch, at most ten paid images per run
         shell: bash
