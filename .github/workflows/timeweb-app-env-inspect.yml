@@ -47,5 +47,18 @@ jobs:
                   print(key,'TYPE',type(v).__name__,'CHECKOUT_OFF',v=='0')
               else:
                   print(key,'PRESENT',key in env,'TYPE',type(v).__name__)
-          print('READ ONLY.')
+          print('ENV_VERSION',app.get('env_version'),'APP_START_TIME',app.get('start_time'))
+          print('APP_DEPLOY_COMMIT',app.get('commit_sha'))
+          from urllib.error import HTTPError
+          from urllib.parse import urlsplit
+          base='https://semen89852698936-create-snachala-uzhin-9f50.twc1.net'
+          checks=[('/healthz',200),('/api/me',200),('/app',403)]
+          for path,expect in checks:
+              try:
+                  with urllib.request.urlopen(base+path,timeout=18) as resp:code=resp.status
+              except HTTPError as exc:code=exc.code
+              except Exception as exc:code=type(exc).__name__
+              print('LIVE_HTTP',path,'STATUS',code,'EXPECTED',expect)
+              if code!=expect:raise SystemExit('BLOCK: live app health or protection unexpected')
+          print('READ ONLY. No secrets or configuration updated.')
           PY
