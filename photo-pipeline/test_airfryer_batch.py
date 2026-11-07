@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import importlib.util
+import argparse
 import json
 import subprocess
 import sys
@@ -10,12 +11,15 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 SCRIPT = ROOT / "photo-pipeline" / "generate_airfryer_batch.py"
+parser = argparse.ArgumentParser()
+parser.add_argument('--manifest', type=Path, default=ROOT / 'data' / 'airfryer-recipes-batch-01.json')
+args = parser.parse_args()
 spec = importlib.util.spec_from_file_location("airfryer_photo_generator", SCRIPT)
 module = importlib.util.module_from_spec(spec)
 assert spec and spec.loader
 spec.loader.exec_module(module)
 
-recipes = module.load_manifest()
+recipes = module.load_manifest(args.manifest)
 assert len(recipes) == 10
 prompts = [module.make_prompt(recipe) for recipe in recipes]
 assert all(0 < len(prompt) <= module.MAX_PROMPT for prompt in prompts)
@@ -25,7 +29,7 @@ assert all(recipe["photo_status"] == "not_started" for recipe in recipes)
 assert all(recipe["publication_status"] == "not_published" for recipe in recipes)
 
 result = subprocess.run(
-    [sys.executable, str(SCRIPT), "--start", "1", "--end", "10", "--limit", "10"],
+    [sys.executable, str(SCRIPT), "--manifest", str(args.manifest), "--limit", "10"],
     cwd=ROOT,
     text=True,
     capture_output=True,
