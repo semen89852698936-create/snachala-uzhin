@@ -11,6 +11,17 @@ const {chromium}=require('playwright');
    await page.route('**/open.spotify.com/**',route=>route.abort());
    await page.goto('http://127.0.0.1:8765/',{waitUntil:'domcontentloaded'});
    await page.locator('#homeView .du-hero h1').waitFor({state:'visible'});
+   const timingGuidance=page.locator('.du-airfryer-guidance');
+   assert.equal(await timingGuidance.count(),1,'airfryer timing guidance must appear once');
+   assert(await timingGuidance.isVisible(),'airfryer timing guidance must be visible on desktop/mobile');
+   const timingText=await timingGuidance.innerText();
+   assert(timingText.includes('Время приготовления указано ориентировочно'),'approximate time wording missing');
+   assert(timingText.includes('инструкцией производителя именно к вашей модели'),'model-specific manual guidance missing');
+   await timingGuidance.scrollIntoViewIfNeeded();
+   await page.screenshot({path:'/tmp/airfryer-timing-'+viewport.width+'.png',fullPage:false});
+   await page.locator('#homeView .du-hero h1').scrollIntoViewIfNeeded();
+
+
    assert.equal(await page.locator('#eveningLanding').isVisible(),false,'evening must stay a separate mode');
    const colors=await page.evaluate(()=>{
      const hero=document.querySelector('#homeView .du-hero');

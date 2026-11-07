@@ -13,6 +13,8 @@ assert(css.includes('#recipeDetail') && css.includes('#cookOverlay'));
 assert(css.includes('body.du-evening-mode #eveningLanding'));
 assert(css.includes('@media (max-width: 430px)'));
 assert(!/url\s*\(/i.test(css), 'No new unapproved images or fonts');
+const timingNotice='Время приготовления указано ориентировочно.';
+const timingModelText='Сверяйтесь с инструкцией производителя именно к вашей модели';
 const payloads = [];
 for(const [page, link] of pages) {
   const text = fs.readFileSync(path.join(root,page),'utf8');
@@ -20,6 +22,9 @@ for(const [page, link] of pages) {
   assert.equal(text.split(stylesheet).length-1, 1, page+' must load override exactly once');
   const existingLink = page==='index.html' ? 'assets/editorial-recipe.css' : '../assets/editorial-recipe.css';
   assert(text.indexOf(existingLink)>0 && text.indexOf(existingLink)<text.indexOf(stylesheet),'Existing recipe style must load before override');
+  assert(text.includes(timingNotice),page+': approximate airfryer timing notice missing');
+  assert(text.includes(timingModelText),page+': model-specific manual guidance missing');
+  assert(!text.includes('Точные температура и время для указанной модели'),page+': universal exact-time claim must not return');
   const found=text.match(/<script id="recipeData" type="application\/json">([\s\S]*?)<\/script>/);
   assert(found, page+': recipeData missing');
   assert(text.includes('1000 рецептов + 1 полуночный'),page+': hero label must say midnight');
