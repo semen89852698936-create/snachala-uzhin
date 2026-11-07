@@ -1,6 +1,6 @@
 {
   "schema": "airfryer-100-editorial-plan-v1",
-  "status": "planning register only; no recipe in this file is published or represented as physically tested",
+  "status": "100 source-reviewed recipe drafts; 100 WebP files technically verified; visual review complete with a targeted 13-image regeneration queue; not published and not physically tested on the owner's exact appliance.",
   "target_count": 100,
   "default_servings": 2,
   "categories": {
@@ -23,13 +23,14 @@
       "recipe_status": "full_draft_source_reviewed",
       "source_status": "source_cross_checked",
       "tefal_book_status": "no_direct_equivalent_or_accessory_reference_only",
-      "photo_status": "not_started",
+      "photo_status": "generated_verified_unpublished",
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
       "source_urls": [
         "https://www.bbcgoodfood.com/premium/air-fryer-chicken-breasts-2"
       ],
-      "batch_number": 1
+      "batch_number": 1,
+      "visual_review_status": "visually_accepted"
     },
     {
       "number": 2,
@@ -41,13 +42,14 @@
       "recipe_status": "full_draft_source_reviewed",
       "source_status": "adapted_source_cross_checked",
       "tefal_book_status": "no_direct_equivalent_or_accessory_reference_only",
-      "photo_status": "not_started",
+      "photo_status": "generated_verified_unpublished",
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
       "source_urls": [
         "https://www.coles.com.au/recipes-inspiration/recipes/air-fryer-chicken-breast"
       ],
-      "batch_number": 1
+      "batch_number": 1,
+      "visual_review_status": "visually_accepted"
     },
     {
       "number": 3,
@@ -59,13 +61,14 @@
       "recipe_status": "full_draft_source_reviewed",
       "source_status": "manufacturer_recipe_direct",
       "tefal_book_status": "direct_recipe_in_supplied_book",
-      "photo_status": "not_started",
+      "photo_status": "generated_verified_unpublished",
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
       "source_urls": [
         "https://www.compatibility.groupeseb.com/documents/recipebook/EasyFry-and-Grill-EY50.pdf"
       ],
-      "batch_number": 1
+      "batch_number": 1,
+      "visual_review_status": "needs_regeneration"
     },
     {
       "number": 4,
@@ -77,13 +80,14 @@
       "recipe_status": "full_draft_source_reviewed",
       "source_status": "manufacturer_recipe_direct",
       "tefal_book_status": "direct_recipe_in_supplied_book",
-      "photo_status": "not_started",
+      "photo_status": "generated_verified_unpublished",
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
       "source_urls": [
         "https://www.compatibility.groupeseb.com/documents/recipebook/EasyFry-and-Grill-EY50.pdf"
       ],
-      "batch_number": 1
+      "batch_number": 1,
+      "visual_review_status": "visually_accepted"
     },
     {
       "number": 5,
@@ -95,13 +99,14 @@
       "recipe_status": "full_draft_source_reviewed",
       "source_status": "adapted_source_cross_checked",
       "tefal_book_status": "no_direct_equivalent_or_accessory_reference_only",
-      "photo_status": "not_started",
+      "photo_status": "generated_verified_unpublished",
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
       "source_urls": [
         "https://www.bbcgoodfoodme.com/recipes/air-fryer-chicken-drumsticks/"
       ],
-      "batch_number": 1
+      "batch_number": 1,
+      "visual_review_status": "visually_accepted"
     },
     {
       "number": 6,
@@ -113,13 +118,14 @@
       "recipe_status": "full_draft_source_reviewed",
       "source_status": "source_cross_checked",
       "tefal_book_status": "no_direct_equivalent_or_accessory_reference_only",
-      "photo_status": "not_started",
+      "photo_status": "generated_verified_unpublished",
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
       "source_urls": [
         "https://www.walmart.com/i/recipes/Air-Fryer-Turkey-Cutlets/2615420"
       ],
-      "batch_number": 1
+      "batch_number": 1,
+      "visual_review_status": "visually_accepted"
     },
     {
       "number": 7,
@@ -131,13 +137,14 @@
       "recipe_status": "full_draft_source_reviewed",
       "source_status": "source_cross_checked",
       "tefal_book_status": "no_direct_equivalent_or_accessory_reference_only",
-      "photo_status": "not_started",
+      "photo_status": "generated_verified_unpublished",
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
       "source_urls": [
         "https://www.marialuceydietitian.com/air-fryer-turkey-meatballs/"
       ],
-      "batch_number": 1
+      "batch_number": 1,
+      "visual_review_status": "visually_accepted"
     },
     {
       "number": 8,
@@ -149,13 +156,14 @@
       "recipe_status": "full_draft_source_reviewed",
       "source_status": "adapted_source_cross_checked",
       "tefal_book_status": "no_direct_equivalent_or_accessory_reference_only",
-      "photo_status": "not_started",
+      "photo_status": "generated_verified_unpublished",
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
       "source_urls": [
         "https://www.gzrecipes.com/en/amicincucina/chicken-and-zucchini-meatballs-in-the-air-fryer/"
       ],
-      "batch_number": 1
+      "batch_number": 1,
+      "visual_review_status": "visually_accepted"
     },
     {
       "number": 9,
@@ -167,14 +175,15 @@
       "recipe_status": "full_draft_source_reviewed",
       "source_status": "source_cross_checked",
       "tefal_book_status": "no_direct_equivalent_or_accessory_reference_only",
-      "photo_status": "not_started",
+      "photo_status": "generated_verified_unpublished",
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
       "source_urls": [
         "https://nwdistrict.ifas.ufl.edu/fcs/files/2020/11/Air-Fryer-Chicken-Kebab-Recipe.pdf",
         "https://www.bbcgoodfood.com/recipes/air-fryer-chicken-tikka-kebabs"
       ],
-      "batch_number": 1
+      "batch_number": 1,
+      "visual_review_status": "visually_accepted"
     },
     {
       "number": 10,
@@ -185,14 +194,15 @@
       "editorial_concept": "Сладкую глазурь наносить ближе к концу, чтобы сахар не подгорел.",
       "recipe_status": "full_draft_source_reviewed",
       "tefal_book_status": "no_direct_equivalent_or_accessory_reference_only",
-      "photo_status": "not_started",
+      "photo_status": "generated_verified_unpublished",
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
       "batch_number": 1,
       "source_status": "source_cross_checked",
       "source_urls": [
         "https://www.tropicanabrandsgroup.com/health/recipes/air-fryer-orange-chicken"
-      ]
+      ],
+      "visual_review_status": "visually_accepted"
     },
     {
       "number": 11,
@@ -204,13 +214,14 @@
       "recipe_status": "full_draft_source_reviewed",
       "source_status": "source_cross_checked",
       "tefal_book_status": "no_direct_equivalent_or_accessory_reference_only",
-      "photo_status": "not_started",
+      "photo_status": "generated_verified_unpublished",
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
       "source_urls": [
         "https://theoregondietitian.com/air-fryer-stuffed-chicken-breast/"
       ],
-      "batch_number": 2
+      "batch_number": 2,
+      "visual_review_status": "visually_accepted"
     },
     {
       "number": 12,
@@ -222,14 +233,15 @@
       "recipe_status": "full_draft_source_reviewed",
       "source_status": "adapted_source_cross_checked",
       "tefal_book_status": "no_direct_equivalent_or_accessory_reference_only",
-      "photo_status": "not_started",
+      "photo_status": "generated_verified_unpublished",
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
       "source_urls": [
         "https://recipesairfryer.net/crispy-medallions-in-air-fryer/",
         "https://www.muscleandfitness.com/nutrition/healthy-eating/low-fat-cajun-turkey-medallions-recipe/"
       ],
-      "batch_number": 2
+      "batch_number": 2,
+      "visual_review_status": "needs_regeneration"
     },
     {
       "number": 13,
@@ -241,13 +253,14 @@
       "recipe_status": "full_draft_source_reviewed",
       "source_status": "source_cross_checked",
       "tefal_book_status": "no_direct_equivalent_or_accessory_reference_only",
-      "photo_status": "not_started",
+      "photo_status": "generated_verified_unpublished",
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
       "source_urls": [
         "https://lovefoodnotcooking.com/recipes/air-fryer-duck-breast/"
       ],
-      "batch_number": 2
+      "batch_number": 2,
+      "visual_review_status": "visually_accepted"
     },
     {
       "number": 14,
@@ -259,13 +272,14 @@
       "recipe_status": "full_draft_source_reviewed",
       "source_status": "source_cross_checked",
       "tefal_book_status": "no_direct_equivalent_or_accessory_reference_only",
-      "photo_status": "not_started",
+      "photo_status": "generated_verified_unpublished",
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
       "source_urls": [
         "https://www.ahealthiermichigan.org/stories/food-and-recipes/air-fried-breaded-chicken-parmesan"
       ],
-      "batch_number": 2
+      "batch_number": 2,
+      "visual_review_status": "visually_accepted"
     },
     {
       "number": 15,
@@ -277,13 +291,14 @@
       "recipe_status": "full_draft_source_reviewed",
       "source_status": "adapted_source_cross_checked",
       "tefal_book_status": "no_direct_equivalent_or_accessory_reference_only",
-      "photo_status": "not_started",
+      "photo_status": "generated_verified_unpublished",
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
       "source_urls": [
         "https://app.samsungfood.com/recipes/10701950022d47178c3ae17ac8d7e794da6"
       ],
-      "batch_number": 2
+      "batch_number": 2,
+      "visual_review_status": "visually_accepted"
     },
     {
       "number": 16,
@@ -295,13 +310,14 @@
       "recipe_status": "full_draft_source_reviewed",
       "source_status": "adapted_source_cross_checked",
       "tefal_book_status": "no_direct_equivalent_or_accessory_reference_only",
-      "photo_status": "not_started",
+      "photo_status": "generated_verified_unpublished",
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
       "source_urls": [
         "https://www.schwartz.co.uk/blogs/recipes/air-fryer-chicken-curry"
       ],
-      "batch_number": 2
+      "batch_number": 2,
+      "visual_review_status": "visually_accepted"
     },
     {
       "number": 17,
@@ -313,14 +329,15 @@
       "recipe_status": "full_draft_source_reviewed",
       "source_status": "source_cross_checked",
       "tefal_book_status": "no_direct_equivalent_or_accessory_reference_only",
-      "photo_status": "not_started",
+      "photo_status": "generated_verified_unpublished",
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
       "source_urls": [
         "https://www.tastefrance.com/us/recipes/french-classics/air-fryer-chicken-cordon-bleu",
         "https://www.rte.ie/lifestyle/recipes/2023/1214/1420266-kevin-dundons-chicken-cordon-bleu-in-an-air-fryer/"
       ],
-      "batch_number": 2
+      "batch_number": 2,
+      "visual_review_status": "visually_accepted"
     },
     {
       "number": 18,
@@ -332,14 +349,15 @@
       "recipe_status": "full_draft_source_reviewed",
       "source_status": "adapted_source_cross_checked",
       "tefal_book_status": "no_direct_equivalent_or_accessory_reference_only",
-      "photo_status": "not_started",
+      "photo_status": "generated_verified_unpublished",
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
       "source_urls": [
         "https://www.delish.com/cooking/recipe-ideas/a39666473/air-fryer-turkey-breakfast-sausage-recipe/",
         "https://therealfooddietitians.com/turkey-apple-sausage-patties/"
       ],
-      "batch_number": 2
+      "batch_number": 2,
+      "visual_review_status": "needs_regeneration"
     },
     {
       "number": 19,
@@ -351,13 +369,14 @@
       "recipe_status": "full_draft_source_reviewed",
       "source_status": "adapted_source_cross_checked",
       "tefal_book_status": "no_direct_equivalent_or_accessory_reference_only",
-      "photo_status": "not_started",
+      "photo_status": "generated_verified_unpublished",
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
       "source_urls": [
         "https://app.samsungfood.com/recipes/1073bdce8d90066416a980863019881d254"
       ],
-      "batch_number": 2
+      "batch_number": 2,
+      "visual_review_status": "visually_accepted"
     },
     {
       "number": 20,
@@ -369,13 +388,14 @@
       "recipe_status": "full_draft_source_reviewed",
       "source_status": "source_cross_checked",
       "tefal_book_status": "no_direct_equivalent_or_accessory_reference_only",
-      "photo_status": "not_started",
+      "photo_status": "generated_verified_unpublished",
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
       "source_urls": [
         "https://airfryersrecipe.com/air-fryer-chicken-fajitas/"
       ],
-      "batch_number": 2
+      "batch_number": 2,
+      "visual_review_status": "visually_accepted"
     },
     {
       "number": 21,
@@ -387,14 +407,15 @@
       "recipe_status": "full_draft_source_reviewed",
       "source_status": "source_cross_checked",
       "tefal_book_status": "no_direct_equivalent_or_accessory_reference_only",
-      "photo_status": "not_started",
+      "photo_status": "generated_verified_unpublished",
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
       "batch_number": 3,
       "source_urls": [
         "https://www.bbcgoodfood.com/recipes/air-fryer-steak",
         "https://www.betterthanbouillon.com/recipes/air-fryer-peppercorn-steak/"
-      ]
+      ],
+      "visual_review_status": "visually_accepted"
     },
     {
       "number": 22,
@@ -406,14 +427,15 @@
       "recipe_status": "full_draft_source_reviewed",
       "source_status": "adapted_source_cross_checked",
       "tefal_book_status": "no_direct_equivalent_or_accessory_reference_only",
-      "photo_status": "not_started",
+      "photo_status": "generated_verified_unpublished",
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
       "source_urls": [
         "https://www.bbcgoodfood.com/recipes/air-fryer-steak",
         "https://extension.msstate.edu/publications/nutrition-and-wellness-all-about-air-fryers"
       ],
-      "batch_number": 3
+      "batch_number": 3,
+      "visual_review_status": "visually_accepted"
     },
     {
       "number": 23,
@@ -425,14 +447,15 @@
       "recipe_status": "full_draft_source_reviewed",
       "source_status": "source_cross_checked",
       "tefal_book_status": "no_direct_equivalent_or_accessory_reference_only",
-      "photo_status": "not_started",
+      "photo_status": "generated_verified_unpublished",
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
       "batch_number": 3,
       "source_urls": [
         "https://www.arlafoods.co.uk/recipes/air-fryer-meatballs/",
         "https://www.gramcups.com/air-fryer/air-fryer-italian-meatballs"
-      ]
+      ],
+      "visual_review_status": "needs_regeneration"
     },
     {
       "number": 24,
@@ -444,13 +467,14 @@
       "recipe_status": "full_draft_source_reviewed",
       "source_status": "source_cross_checked",
       "tefal_book_status": "no_direct_equivalent_or_accessory_reference_only",
-      "photo_status": "not_started",
+      "photo_status": "generated_verified_unpublished",
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
       "batch_number": 3,
       "source_urls": [
         "https://www.bbc.co.uk/food/recipes/air_fryer_classic_burger_33956"
-      ]
+      ],
+      "visual_review_status": "needs_regeneration"
     },
     {
       "number": 25,
@@ -462,14 +486,15 @@
       "recipe_status": "full_draft_source_reviewed",
       "source_status": "source_cross_checked",
       "tefal_book_status": "no_direct_equivalent_or_accessory_reference_only",
-      "photo_status": "not_started",
+      "photo_status": "generated_verified_unpublished",
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
       "batch_number": 3,
       "source_urls": [
         "https://www.extension.msstate.edu/publications/air-fryer-recipes",
         "https://extension.wvu.edu/files/d/1d1171a8-5f4d-4b06-95af-f3a7357af66e/air-fryer-steak-kebab-recipe.pdf"
-      ]
+      ],
+      "visual_review_status": "visually_accepted"
     },
     {
       "number": 26,
@@ -481,14 +506,15 @@
       "recipe_status": "full_draft_source_reviewed",
       "source_status": "source_cross_checked",
       "tefal_book_status": "no_direct_equivalent_or_accessory_reference_only",
-      "photo_status": "not_started",
+      "photo_status": "generated_verified_unpublished",
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
       "batch_number": 3,
       "source_urls": [
         "https://www.airfrycookbook.com/recipes/sticky-air-fryer-honey-mustard-pork-tenderloin",
         "https://justrecipes.net/en/recipes/air-fryer-pork-tenderloin-mustard-glaze/"
-      ]
+      ],
+      "visual_review_status": "visually_accepted"
     },
     {
       "number": 27,
@@ -500,14 +526,15 @@
       "recipe_status": "full_draft_source_reviewed",
       "source_status": "source_cross_checked",
       "tefal_book_status": "no_direct_equivalent_or_accessory_reference_only",
-      "photo_status": "not_started",
+      "photo_status": "generated_verified_unpublished",
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
       "batch_number": 3,
       "source_urls": [
         "https://instantpot.com/blogs/recipes/air-fried-pork-chop-with-roasted-apples",
         "https://www.williams-sonoma.com/recipe/pork-chops-with-apples-and-sage.html"
-      ]
+      ],
+      "visual_review_status": "visually_accepted"
     },
     {
       "number": 28,
@@ -519,13 +546,14 @@
       "recipe_status": "full_draft_source_reviewed",
       "source_status": "adapted_source_cross_checked",
       "tefal_book_status": "accessory_or_foil_compatibility_requires_exact_model",
-      "photo_status": "not_started",
+      "photo_status": "generated_verified_unpublished",
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
       "source_urls": [
         "https://cazolita.com/en/recipe/af-costillas-bbq-af/"
       ],
-      "batch_number": 3
+      "batch_number": 3,
+      "visual_review_status": "visually_accepted"
     },
     {
       "number": 29,
@@ -537,13 +565,14 @@
       "recipe_status": "full_draft_source_reviewed",
       "source_status": "source_cross_checked",
       "tefal_book_status": "no_direct_equivalent_or_accessory_reference_only",
-      "photo_status": "not_started",
+      "photo_status": "generated_verified_unpublished",
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
       "batch_number": 3,
       "source_urls": [
         "https://instantpot.co.uk/air-fryer-honey-dijon-pork-schnitzel/"
-      ]
+      ],
+      "visual_review_status": "visually_accepted"
     },
     {
       "number": 30,
@@ -555,13 +584,14 @@
       "recipe_status": "full_draft_source_reviewed",
       "source_status": "source_cross_checked",
       "tefal_book_status": "no_direct_equivalent_or_accessory_reference_only",
-      "photo_status": "not_started",
+      "photo_status": "generated_verified_unpublished",
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
       "batch_number": 3,
       "source_urls": [
         "https://app.samsungfood.com/recipes/10701952c7715ab7bf0a746013c4cf90442"
-      ]
+      ],
+      "visual_review_status": "visually_accepted"
     },
     {
       "number": 31,
@@ -573,10 +603,11 @@
       "recipe_status": "full_draft_source_reviewed",
       "source_status": "cross_checked",
       "tefal_book_status": "direct_or_method_reference_compared",
-      "photo_status": "not_started",
+      "photo_status": "generated_verified_unpublished",
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
-      "batch_number": 4
+      "batch_number": 4,
+      "visual_review_status": "visually_accepted"
     },
     {
       "number": 32,
@@ -588,10 +619,11 @@
       "recipe_status": "full_draft_source_reviewed",
       "source_status": "cross_checked",
       "tefal_book_status": "reference_compared_not_equivalent",
-      "photo_status": "not_started",
+      "photo_status": "generated_verified_unpublished",
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
-      "batch_number": 4
+      "batch_number": 4,
+      "visual_review_status": "visually_accepted"
     },
     {
       "number": 33,
@@ -603,10 +635,11 @@
       "recipe_status": "full_draft_source_reviewed",
       "source_status": "cross_checked",
       "tefal_book_status": "reference_compared_not_equivalent",
-      "photo_status": "not_started",
+      "photo_status": "generated_verified_unpublished",
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
-      "batch_number": 4
+      "batch_number": 4,
+      "visual_review_status": "visually_accepted"
     },
     {
       "number": 34,
@@ -618,10 +651,11 @@
       "recipe_status": "full_draft_source_reviewed",
       "source_status": "cross_checked",
       "tefal_book_status": "reference_compared_not_equivalent",
-      "photo_status": "not_started",
+      "photo_status": "generated_verified_unpublished",
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
-      "batch_number": 4
+      "batch_number": 4,
+      "visual_review_status": "visually_accepted"
     },
     {
       "number": 35,
@@ -633,10 +667,11 @@
       "recipe_status": "full_draft_source_reviewed",
       "source_status": "cross_checked",
       "tefal_book_status": "reference_compared_not_equivalent",
-      "photo_status": "not_started",
+      "photo_status": "generated_verified_unpublished",
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
-      "batch_number": 4
+      "batch_number": 4,
+      "visual_review_status": "visually_accepted"
     },
     {
       "number": 36,
@@ -648,10 +683,11 @@
       "recipe_status": "full_draft_source_reviewed",
       "source_status": "cross_checked",
       "tefal_book_status": "reference_compared_not_equivalent",
-      "photo_status": "not_started",
+      "photo_status": "generated_verified_unpublished",
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
-      "batch_number": 4
+      "batch_number": 4,
+      "visual_review_status": "visually_accepted"
     },
     {
       "number": 37,
@@ -663,10 +699,11 @@
       "recipe_status": "full_draft_source_reviewed",
       "source_status": "cross_checked",
       "tefal_book_status": "reference_compared_not_equivalent",
-      "photo_status": "not_started",
+      "photo_status": "generated_verified_unpublished",
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
-      "batch_number": 4
+      "batch_number": 4,
+      "visual_review_status": "visually_accepted"
     },
     {
       "number": 38,
@@ -678,10 +715,11 @@
       "recipe_status": "full_draft_source_reviewed",
       "source_status": "cross_checked",
       "tefal_book_status": "reference_compared_not_equivalent",
-      "photo_status": "not_started",
+      "photo_status": "generated_verified_unpublished",
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
-      "batch_number": 4
+      "batch_number": 4,
+      "visual_review_status": "visually_accepted"
     },
     {
       "number": 39,
@@ -693,10 +731,11 @@
       "recipe_status": "full_draft_source_reviewed",
       "source_status": "cross_checked",
       "tefal_book_status": "reference_compared_not_equivalent",
-      "photo_status": "not_started",
+      "photo_status": "generated_verified_unpublished",
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
-      "batch_number": 4
+      "batch_number": 4,
+      "visual_review_status": "visually_accepted"
     },
     {
       "number": 40,
@@ -708,10 +747,11 @@
       "recipe_status": "full_draft_source_reviewed",
       "source_status": "cross_checked",
       "tefal_book_status": "direct_or_method_reference_compared",
-      "photo_status": "not_started",
+      "photo_status": "generated_verified_unpublished",
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
-      "batch_number": 4
+      "batch_number": 4,
+      "visual_review_status": "visually_accepted"
     },
     {
       "number": 41,
@@ -723,10 +763,11 @@
       "recipe_status": "full_draft_source_reviewed",
       "source_status": "cross_checked",
       "tefal_book_status": "reference_compared_not_equivalent",
-      "photo_status": "not_started",
+      "photo_status": "generated_verified_unpublished",
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
-      "batch_number": 5
+      "batch_number": 5,
+      "visual_review_status": "visually_accepted"
     },
     {
       "number": 42,
@@ -738,10 +779,11 @@
       "recipe_status": "full_draft_source_reviewed",
       "source_status": "cross_checked",
       "tefal_book_status": "no_direct_equivalent",
-      "photo_status": "not_started",
+      "photo_status": "generated_verified_unpublished",
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
-      "batch_number": 5
+      "batch_number": 5,
+      "visual_review_status": "needs_regeneration"
     },
     {
       "number": 43,
@@ -753,10 +795,11 @@
       "recipe_status": "full_draft_source_reviewed",
       "source_status": "cross_checked",
       "tefal_book_status": "direct_or_method_reference_compared",
-      "photo_status": "not_started",
+      "photo_status": "generated_verified_unpublished",
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
-      "batch_number": 5
+      "batch_number": 5,
+      "visual_review_status": "visually_accepted"
     },
     {
       "number": 44,
@@ -768,10 +811,11 @@
       "recipe_status": "full_draft_source_reviewed",
       "source_status": "cross_checked",
       "tefal_book_status": "reference_compared_not_equivalent",
-      "photo_status": "not_started",
+      "photo_status": "generated_verified_unpublished",
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
-      "batch_number": 5
+      "batch_number": 5,
+      "visual_review_status": "visually_accepted"
     },
     {
       "number": 45,
@@ -783,10 +827,11 @@
       "recipe_status": "full_draft_source_reviewed",
       "source_status": "cross_checked",
       "tefal_book_status": "reference_compared_not_equivalent",
-      "photo_status": "not_started",
+      "photo_status": "generated_verified_unpublished",
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
-      "batch_number": 5
+      "batch_number": 5,
+      "visual_review_status": "needs_regeneration"
     },
     {
       "number": 46,
@@ -798,10 +843,11 @@
       "recipe_status": "full_draft_source_reviewed",
       "source_status": "cross_checked",
       "tefal_book_status": "no_direct_equivalent",
-      "photo_status": "not_started",
+      "photo_status": "generated_verified_unpublished",
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
-      "batch_number": 5
+      "batch_number": 5,
+      "visual_review_status": "visually_accepted"
     },
     {
       "number": 47,
@@ -813,10 +859,11 @@
       "recipe_status": "full_draft_source_reviewed",
       "source_status": "cross_checked",
       "tefal_book_status": "no_direct_equivalent",
-      "photo_status": "not_started",
+      "photo_status": "generated_verified_unpublished",
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
-      "batch_number": 5
+      "batch_number": 5,
+      "visual_review_status": "visually_accepted"
     },
     {
       "number": 48,
@@ -828,10 +875,11 @@
       "recipe_status": "full_draft_source_reviewed",
       "source_status": "cross_checked",
       "tefal_book_status": "no_direct_equivalent",
-      "photo_status": "not_started",
+      "photo_status": "generated_verified_unpublished",
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
-      "batch_number": 5
+      "batch_number": 5,
+      "visual_review_status": "visually_accepted"
     },
     {
       "number": 49,
@@ -843,10 +891,11 @@
       "recipe_status": "full_draft_source_reviewed",
       "source_status": "cross_checked",
       "tefal_book_status": "no_direct_equivalent",
-      "photo_status": "not_started",
+      "photo_status": "generated_verified_unpublished",
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
-      "batch_number": 5
+      "batch_number": 5,
+      "visual_review_status": "needs_regeneration"
     },
     {
       "number": 50,
@@ -858,10 +907,11 @@
       "recipe_status": "full_draft_source_reviewed",
       "source_status": "cross_checked",
       "tefal_book_status": "no_direct_equivalent",
-      "photo_status": "not_started",
+      "photo_status": "generated_verified_unpublished",
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
-      "batch_number": 5
+      "batch_number": 5,
+      "visual_review_status": "needs_regeneration"
     },
     {
       "number": 51,
@@ -873,10 +923,11 @@
       "recipe_status": "full_draft_source_reviewed",
       "source_status": "cross_checked",
       "tefal_book_status": "no_direct_equivalent",
-      "photo_status": "not_started",
+      "photo_status": "generated_verified_unpublished",
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
-      "batch_number": 6
+      "batch_number": 6,
+      "visual_review_status": "visually_accepted"
     },
     {
       "number": 52,
@@ -888,10 +939,11 @@
       "recipe_status": "full_draft_source_reviewed",
       "source_status": "cross_checked",
       "tefal_book_status": "no_direct_equivalent",
-      "photo_status": "not_started",
+      "photo_status": "generated_verified_unpublished",
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
-      "batch_number": 6
+      "batch_number": 6,
+      "visual_review_status": "visually_accepted"
     },
     {
       "number": 53,
@@ -903,10 +955,11 @@
       "recipe_status": "full_draft_source_reviewed",
       "source_status": "cross_checked",
       "tefal_book_status": "direct_or_method_reference_compared",
-      "photo_status": "not_started",
+      "photo_status": "generated_verified_unpublished",
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
-      "batch_number": 6
+      "batch_number": 6,
+      "visual_review_status": "visually_accepted"
     },
     {
       "number": 54,
@@ -918,10 +971,11 @@
       "recipe_status": "full_draft_source_reviewed",
       "source_status": "cross_checked",
       "tefal_book_status": "no_direct_equivalent",
-      "photo_status": "not_started",
+      "photo_status": "generated_verified_unpublished",
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
-      "batch_number": 6
+      "batch_number": 6,
+      "visual_review_status": "visually_accepted"
     },
     {
       "number": 55,
@@ -933,10 +987,11 @@
       "recipe_status": "full_draft_source_reviewed",
       "source_status": "cross_checked",
       "tefal_book_status": "reference_compared_not_equivalent",
-      "photo_status": "not_started",
+      "photo_status": "generated_verified_unpublished",
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
-      "batch_number": 6
+      "batch_number": 6,
+      "visual_review_status": "visually_accepted"
     },
     {
       "number": 56,
@@ -948,10 +1003,11 @@
       "recipe_status": "full_draft_source_reviewed",
       "source_status": "cross_checked",
       "tefal_book_status": "reference_compared_not_equivalent",
-      "photo_status": "not_started",
+      "photo_status": "generated_verified_unpublished",
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
-      "batch_number": 6
+      "batch_number": 6,
+      "visual_review_status": "needs_regeneration"
     },
     {
       "number": 57,
@@ -963,10 +1019,11 @@
       "recipe_status": "full_draft_source_reviewed",
       "source_status": "cross_checked",
       "tefal_book_status": "reference_compared_not_equivalent",
-      "photo_status": "not_started",
+      "photo_status": "generated_verified_unpublished",
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
-      "batch_number": 6
+      "batch_number": 6,
+      "visual_review_status": "visually_accepted"
     },
     {
       "number": 58,
@@ -978,10 +1035,11 @@
       "recipe_status": "full_draft_source_reviewed",
       "source_status": "cross_checked",
       "tefal_book_status": "reference_compared_not_equivalent",
-      "photo_status": "not_started",
+      "photo_status": "generated_verified_unpublished",
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
-      "batch_number": 6
+      "batch_number": 6,
+      "visual_review_status": "visually_accepted"
     },
     {
       "number": 59,
@@ -993,10 +1051,11 @@
       "recipe_status": "full_draft_source_reviewed",
       "source_status": "cross_checked",
       "tefal_book_status": "reference_compared_not_equivalent",
-      "photo_status": "not_started",
+      "photo_status": "generated_verified_unpublished",
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
-      "batch_number": 6
+      "batch_number": 6,
+      "visual_review_status": "needs_regeneration"
     },
     {
       "number": 60,
@@ -1008,10 +1067,11 @@
       "recipe_status": "full_draft_source_reviewed",
       "source_status": "cross_checked",
       "tefal_book_status": "direct_recipe_compared",
-      "photo_status": "not_started",
+      "photo_status": "generated_verified_unpublished",
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
-      "batch_number": 6
+      "batch_number": 6,
+      "visual_review_status": "visually_accepted"
     },
     {
       "number": 61,
@@ -1023,10 +1083,11 @@
       "recipe_status": "full_draft_source_reviewed",
       "source_status": "cross_checked",
       "tefal_book_status": "direct_or_method_reference_compared",
-      "photo_status": "not_started",
+      "photo_status": "generated_verified_unpublished",
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
-      "batch_number": 7
+      "batch_number": 7,
+      "visual_review_status": "visually_accepted"
     },
     {
       "number": 62,
@@ -1038,10 +1099,11 @@
       "recipe_status": "full_draft_source_reviewed",
       "source_status": "cross_checked",
       "tefal_book_status": "reference_compared_not_equivalent",
-      "photo_status": "not_started",
+      "photo_status": "generated_verified_unpublished",
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
-      "batch_number": 7
+      "batch_number": 7,
+      "visual_review_status": "visually_accepted"
     },
     {
       "number": 63,
@@ -1053,10 +1115,11 @@
       "recipe_status": "full_draft_source_reviewed",
       "source_status": "cross_checked",
       "tefal_book_status": "no_direct_equivalent",
-      "photo_status": "not_started",
+      "photo_status": "generated_verified_unpublished",
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
-      "batch_number": 7
+      "batch_number": 7,
+      "visual_review_status": "visually_accepted"
     },
     {
       "number": 64,
@@ -1068,10 +1131,11 @@
       "recipe_status": "full_draft_source_reviewed",
       "source_status": "cross_checked",
       "tefal_book_status": "reference_compared_not_equivalent",
-      "photo_status": "not_started",
+      "photo_status": "generated_verified_unpublished",
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
-      "batch_number": 7
+      "batch_number": 7,
+      "visual_review_status": "visually_accepted"
     },
     {
       "number": 65,
@@ -1083,10 +1147,11 @@
       "recipe_status": "full_draft_source_reviewed",
       "source_status": "cross_checked",
       "tefal_book_status": "no_direct_equivalent",
-      "photo_status": "not_started",
+      "photo_status": "generated_verified_unpublished",
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
-      "batch_number": 7
+      "batch_number": 7,
+      "visual_review_status": "visually_accepted"
     },
     {
       "number": 66,
@@ -1098,10 +1163,11 @@
       "recipe_status": "full_draft_source_reviewed",
       "source_status": "cross_checked",
       "tefal_book_status": "reference_compared_not_equivalent",
-      "photo_status": "not_started",
+      "photo_status": "generated_verified_unpublished",
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
-      "batch_number": 7
+      "batch_number": 7,
+      "visual_review_status": "visually_accepted"
     },
     {
       "number": 67,
@@ -1113,10 +1179,11 @@
       "recipe_status": "full_draft_source_reviewed",
       "source_status": "cross_checked",
       "tefal_book_status": "no_direct_equivalent",
-      "photo_status": "not_started",
+      "photo_status": "generated_verified_unpublished",
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
-      "batch_number": 7
+      "batch_number": 7,
+      "visual_review_status": "visually_accepted"
     },
     {
       "number": 68,
@@ -1128,10 +1195,11 @@
       "recipe_status": "full_draft_source_reviewed",
       "source_status": "cross_checked",
       "tefal_book_status": "no_direct_equivalent",
-      "photo_status": "not_started",
+      "photo_status": "generated_verified_unpublished",
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
-      "batch_number": 7
+      "batch_number": 7,
+      "visual_review_status": "visually_accepted"
     },
     {
       "number": 69,
@@ -1143,10 +1211,11 @@
       "recipe_status": "full_draft_source_reviewed",
       "source_status": "cross_checked",
       "tefal_book_status": "no_direct_equivalent",
-      "photo_status": "not_started",
+      "photo_status": "generated_verified_unpublished",
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
-      "batch_number": 7
+      "batch_number": 7,
+      "visual_review_status": "visually_accepted"
     },
     {
       "number": 70,
@@ -1158,10 +1227,11 @@
       "recipe_status": "full_draft_source_reviewed",
       "source_status": "cross_checked",
       "tefal_book_status": "reference_compared_not_equivalent",
-      "photo_status": "not_started",
+      "photo_status": "generated_verified_unpublished",
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
-      "batch_number": 7
+      "batch_number": 7,
+      "visual_review_status": "visually_accepted"
     },
     {
       "number": 71,
@@ -1173,10 +1243,11 @@
       "recipe_status": "full_draft_source_reviewed",
       "source_status": "cross_checked",
       "tefal_book_status": "no_direct_equivalent",
-      "photo_status": "not_started",
+      "photo_status": "generated_verified_unpublished",
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
-      "batch_number": 8
+      "batch_number": 8,
+      "visual_review_status": "visually_accepted"
     },
     {
       "number": 72,
@@ -1188,10 +1259,11 @@
       "recipe_status": "full_draft_source_reviewed",
       "source_status": "cross_checked",
       "tefal_book_status": "reference_compared_not_equivalent",
-      "photo_status": "not_started",
+      "photo_status": "generated_verified_unpublished",
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
-      "batch_number": 8
+      "batch_number": 8,
+      "visual_review_status": "visually_accepted"
     },
     {
       "number": 73,
@@ -1203,10 +1275,11 @@
       "recipe_status": "full_draft_source_reviewed",
       "source_status": "cross_checked",
       "tefal_book_status": "no_direct_equivalent",
-      "photo_status": "not_started",
+      "photo_status": "generated_verified_unpublished",
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
-      "batch_number": 8
+      "batch_number": 8,
+      "visual_review_status": "visually_accepted"
     },
     {
       "number": 74,
@@ -1218,10 +1291,11 @@
       "recipe_status": "full_draft_source_reviewed",
       "source_status": "cross_checked",
       "tefal_book_status": "no_direct_equivalent",
-      "photo_status": "not_started",
+      "photo_status": "generated_verified_unpublished",
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
-      "batch_number": 8
+      "batch_number": 8,
+      "visual_review_status": "visually_accepted"
     },
     {
       "number": 75,
@@ -1233,10 +1307,11 @@
       "recipe_status": "full_draft_source_reviewed",
       "source_status": "cross_checked",
       "tefal_book_status": "no_direct_equivalent",
-      "photo_status": "not_started",
+      "photo_status": "generated_verified_unpublished",
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
-      "batch_number": 8
+      "batch_number": 8,
+      "visual_review_status": "visually_accepted"
     },
     {
       "number": 76,
@@ -1248,10 +1323,11 @@
       "recipe_status": "full_draft_source_reviewed",
       "source_status": "cross_checked",
       "tefal_book_status": "reference_compared_not_equivalent",
-      "photo_status": "not_started",
+      "photo_status": "generated_verified_unpublished",
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
-      "batch_number": 8
+      "batch_number": 8,
+      "visual_review_status": "visually_accepted"
     },
     {
       "number": 77,
@@ -1263,10 +1339,11 @@
       "recipe_status": "full_draft_source_reviewed",
       "source_status": "cross_checked",
       "tefal_book_status": "no_direct_equivalent",
-      "photo_status": "not_started",
+      "photo_status": "generated_verified_unpublished",
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
-      "batch_number": 8
+      "batch_number": 8,
+      "visual_review_status": "visually_accepted"
     },
     {
       "number": 78,
@@ -1278,10 +1355,11 @@
       "recipe_status": "full_draft_source_reviewed",
       "source_status": "cross_checked",
       "tefal_book_status": "no_direct_equivalent",
-      "photo_status": "not_started",
+      "photo_status": "generated_verified_unpublished",
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
-      "batch_number": 8
+      "batch_number": 8,
+      "visual_review_status": "visually_accepted"
     },
     {
       "number": 79,
@@ -1293,10 +1371,11 @@
       "recipe_status": "full_draft_source_reviewed",
       "source_status": "cross_checked",
       "tefal_book_status": "no_direct_equivalent",
-      "photo_status": "not_started",
+      "photo_status": "generated_verified_unpublished",
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
-      "batch_number": 8
+      "batch_number": 8,
+      "visual_review_status": "visually_accepted"
     },
     {
       "number": 80,
@@ -1308,10 +1387,11 @@
       "recipe_status": "full_draft_source_reviewed",
       "source_status": "cross_checked",
       "tefal_book_status": "no_direct_equivalent",
-      "photo_status": "not_started",
+      "photo_status": "generated_verified_unpublished",
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
-      "batch_number": 8
+      "batch_number": 8,
+      "visual_review_status": "visually_accepted"
     },
     {
       "number": 81,
@@ -1323,10 +1403,11 @@
       "recipe_status": "full_draft_source_reviewed",
       "source_status": "cross_checked",
       "tefal_book_status": "no_direct_equivalent",
-      "photo_status": "not_started",
+      "photo_status": "generated_verified_unpublished",
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
-      "batch_number": 9
+      "batch_number": 9,
+      "visual_review_status": "visually_accepted"
     },
     {
       "number": 82,
@@ -1338,10 +1419,11 @@
       "recipe_status": "full_draft_source_reviewed",
       "source_status": "cross_checked",
       "tefal_book_status": "no_direct_equivalent",
-      "photo_status": "not_started",
+      "photo_status": "generated_verified_unpublished",
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
-      "batch_number": 9
+      "batch_number": 9,
+      "visual_review_status": "visually_accepted"
     },
     {
       "number": 83,
@@ -1353,10 +1435,11 @@
       "recipe_status": "full_draft_source_reviewed",
       "source_status": "cross_checked",
       "tefal_book_status": "no_direct_equivalent",
-      "photo_status": "not_started",
+      "photo_status": "generated_verified_unpublished",
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
-      "batch_number": 9
+      "batch_number": 9,
+      "visual_review_status": "needs_regeneration"
     },
     {
       "number": 84,
@@ -1368,10 +1451,11 @@
       "recipe_status": "full_draft_source_reviewed",
       "source_status": "cross_checked",
       "tefal_book_status": "no_direct_equivalent",
-      "photo_status": "not_started",
+      "photo_status": "generated_verified_unpublished",
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
-      "batch_number": 9
+      "batch_number": 9,
+      "visual_review_status": "visually_accepted"
     },
     {
       "number": 85,
@@ -1383,10 +1467,11 @@
       "recipe_status": "full_draft_source_reviewed",
       "source_status": "cross_checked",
       "tefal_book_status": "no_direct_equivalent",
-      "photo_status": "not_started",
+      "photo_status": "generated_verified_unpublished",
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
-      "batch_number": 9
+      "batch_number": 9,
+      "visual_review_status": "visually_accepted"
     },
     {
       "number": 86,
@@ -1398,10 +1483,11 @@
       "recipe_status": "full_draft_source_reviewed",
       "source_status": "cross_checked",
       "tefal_book_status": "no_direct_equivalent",
-      "photo_status": "not_started",
+      "photo_status": "generated_verified_unpublished",
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
-      "batch_number": 9
+      "batch_number": 9,
+      "visual_review_status": "visually_accepted"
     },
     {
       "number": 87,
@@ -1413,10 +1499,11 @@
       "recipe_status": "full_draft_source_reviewed",
       "source_status": "cross_checked",
       "tefal_book_status": "no_direct_equivalent",
-      "photo_status": "not_started",
+      "photo_status": "generated_verified_unpublished",
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
-      "batch_number": 9
+      "batch_number": 9,
+      "visual_review_status": "visually_accepted"
     },
     {
       "number": 88,
@@ -1428,10 +1515,11 @@
       "recipe_status": "full_draft_source_reviewed",
       "source_status": "cross_checked",
       "tefal_book_status": "no_direct_equivalent",
-      "photo_status": "not_started",
+      "photo_status": "generated_verified_unpublished",
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
-      "batch_number": 9
+      "batch_number": 9,
+      "visual_review_status": "needs_regeneration"
     },
     {
       "number": 89,
@@ -1443,10 +1531,11 @@
       "recipe_status": "full_draft_source_reviewed",
       "source_status": "cross_checked",
       "tefal_book_status": "no_direct_equivalent",
-      "photo_status": "not_started",
+      "photo_status": "generated_verified_unpublished",
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
-      "batch_number": 9
+      "batch_number": 9,
+      "visual_review_status": "visually_accepted"
     },
     {
       "number": 90,
@@ -1458,10 +1547,11 @@
       "recipe_status": "full_draft_source_reviewed",
       "source_status": "cross_checked",
       "tefal_book_status": "no_direct_equivalent",
-      "photo_status": "not_started",
+      "photo_status": "generated_verified_unpublished",
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
-      "batch_number": 9
+      "batch_number": 9,
+      "visual_review_status": "visually_accepted"
     },
     {
       "number": 91,
@@ -1473,10 +1563,11 @@
       "recipe_status": "full_draft_source_reviewed",
       "source_status": "cross_checked",
       "tefal_book_status": "no_direct_equivalent",
-      "photo_status": "not_started",
+      "photo_status": "generated_verified_unpublished",
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
-      "batch_number": 10
+      "batch_number": 10,
+      "visual_review_status": "visually_accepted"
     },
     {
       "number": 92,
@@ -1488,10 +1579,11 @@
       "recipe_status": "full_draft_source_reviewed",
       "source_status": "cross_checked",
       "tefal_book_status": "no_direct_equivalent",
-      "photo_status": "not_started",
+      "photo_status": "generated_verified_unpublished",
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
-      "batch_number": 10
+      "batch_number": 10,
+      "visual_review_status": "visually_accepted"
     },
     {
       "number": 93,
@@ -1503,10 +1595,11 @@
       "recipe_status": "full_draft_source_reviewed",
       "source_status": "cross_checked",
       "tefal_book_status": "no_direct_equivalent",
-      "photo_status": "not_started",
+      "photo_status": "generated_verified_unpublished",
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
-      "batch_number": 10
+      "batch_number": 10,
+      "visual_review_status": "visually_accepted"
     },
     {
       "number": 94,
@@ -1518,10 +1611,11 @@
       "recipe_status": "full_draft_source_reviewed",
       "source_status": "cross_checked",
       "tefal_book_status": "no_direct_equivalent",
-      "photo_status": "not_started",
+      "photo_status": "generated_verified_unpublished",
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
-      "batch_number": 10
+      "batch_number": 10,
+      "visual_review_status": "visually_accepted"
     },
     {
       "number": 95,
@@ -1533,10 +1627,11 @@
       "recipe_status": "full_draft_source_reviewed",
       "source_status": "cross_checked",
       "tefal_book_status": "no_direct_equivalent",
-      "photo_status": "not_started",
+      "photo_status": "generated_verified_unpublished",
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
-      "batch_number": 10
+      "batch_number": 10,
+      "visual_review_status": "visually_accepted"
     },
     {
       "number": 96,
@@ -1548,10 +1643,11 @@
       "recipe_status": "full_draft_source_reviewed",
       "source_status": "cross_checked",
       "tefal_book_status": "no_direct_equivalent",
-      "photo_status": "not_started",
+      "photo_status": "generated_verified_unpublished",
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
-      "batch_number": 10
+      "batch_number": 10,
+      "visual_review_status": "visually_accepted"
     },
     {
       "number": 97,
@@ -1563,10 +1659,11 @@
       "recipe_status": "full_draft_source_reviewed",
       "source_status": "cross_checked",
       "tefal_book_status": "no_direct_equivalent",
-      "photo_status": "not_started",
+      "photo_status": "generated_verified_unpublished",
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
-      "batch_number": 10
+      "batch_number": 10,
+      "visual_review_status": "visually_accepted"
     },
     {
       "number": 98,
@@ -1578,10 +1675,11 @@
       "recipe_status": "full_draft_source_reviewed",
       "source_status": "cross_checked",
       "tefal_book_status": "no_direct_equivalent",
-      "photo_status": "not_started",
+      "photo_status": "generated_verified_unpublished",
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
-      "batch_number": 10
+      "batch_number": 10,
+      "visual_review_status": "visually_accepted"
     },
     {
       "number": 99,
@@ -1593,10 +1691,11 @@
       "recipe_status": "full_draft_source_reviewed",
       "source_status": "cross_checked",
       "tefal_book_status": "no_direct_equivalent",
-      "photo_status": "not_started",
+      "photo_status": "generated_verified_unpublished",
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
-      "batch_number": 10
+      "batch_number": 10,
+      "visual_review_status": "visually_accepted"
     },
     {
       "number": 100,
@@ -1608,10 +1707,11 @@
       "recipe_status": "full_draft_source_reviewed",
       "source_status": "cross_checked",
       "tefal_book_status": "no_direct_equivalent",
-      "photo_status": "not_started",
+      "photo_status": "generated_verified_unpublished",
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
-      "batch_number": 10
+      "batch_number": 10,
+      "visual_review_status": "visually_accepted"
     }
   ],
   "release_gates": [
