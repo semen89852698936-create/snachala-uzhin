@@ -1020,12 +1020,13 @@
       "title": "Цветная капуста с кумином",
       "servings": 2,
       "editorial_concept": "Соцветия одного размера; перемешать в середине, не пересушить мелкие части.",
-      "recipe_status": "idea_not_yet_source_checked",
-      "source_status": "not_checked",
-      "tefal_book_status": "pending",
+      "recipe_status": "full_draft_source_reviewed",
+      "source_status": "cross_checked",
+      "tefal_book_status": "direct_or_method_reference_compared",
       "photo_status": "not_started",
       "appliance_test_status": "not_tested",
-      "publication_status": "not_published"
+      "publication_status": "not_published",
+      "batch_number": 7
     },
     {
       "number": 62,
@@ -1034,12 +1035,13 @@
       "title": "Брокколи с чесноком и лимоном",
       "servings": 2,
       "editorial_concept": "Крупные соцветия и короткий режим; чеснок добавлять так, чтобы он не сгорел.",
-      "recipe_status": "idea_not_yet_source_checked",
-      "source_status": "not_checked",
-      "tefal_book_status": "pending",
+      "recipe_status": "full_draft_source_reviewed",
+      "source_status": "cross_checked",
+      "tefal_book_status": "reference_compared_not_equivalent",
       "photo_status": "not_started",
       "appliance_test_status": "not_tested",
-      "publication_status": "not_published"
+      "publication_status": "not_published",
+      "batch_number": 7
     },
     {
       "number": 63,
@@ -1048,12 +1050,13 @@
       "title": "Кабачки с пармезаном и орегано",
       "servings": 2,
       "editorial_concept": "Нарезать толстыми ровными ломтиками, обсушить; сыр добавить с контролем подрумянивания.",
-      "recipe_status": "idea_not_yet_source_checked",
-      "source_status": "not_checked",
-      "tefal_book_status": "pending",
+      "recipe_status": "full_draft_source_reviewed",
+      "source_status": "cross_checked",
+      "tefal_book_status": "no_direct_equivalent",
       "photo_status": "not_started",
       "appliance_test_status": "not_tested",
-      "publication_status": "not_published"
+      "publication_status": "not_published",
+      "batch_number": 7
     },
     {
       "number": 64,
@@ -1062,12 +1065,13 @@
       "title": "Баклажан с мисо и кунжутом",
       "servings": 2,
       "editorial_concept": "Кусочки одинакового размера; глазурь контролировать от подгорания.",
-      "recipe_status": "idea_not_yet_source_checked",
-      "source_status": "not_checked",
-      "tefal_book_status": "pending",
+      "recipe_status": "full_draft_source_reviewed",
+      "source_status": "cross_checked",
+      "tefal_book_status": "reference_compared_not_equivalent",
       "photo_status": "not_started",
       "appliance_test_status": "not_tested",
-      "publication_status": "not_published"
+      "publication_status": "not_published",
+      "batch_number": 7
     },
     {
       "number": 65,
@@ -1076,12 +1080,13 @@
       "title": "Перцы, фаршированные фетой и травами",
       "servings": 2,
       "editorial_concept": "Перцы устойчиво установить; начинка не должна вытекать при циркуляции воздуха.",
-      "recipe_status": "idea_not_yet_source_checked",
-      "source_status": "not_checked",
-      "tefal_book_status": "pending",
+      "recipe_status": "full_draft_source_reviewed",
+      "source_status": "cross_checked",
+      "tefal_book_status": "no_direct_equivalent",
       "photo_status": "not_started",
       "appliance_test_status": "not_tested",
-      "publication_status": "not_published"
+      "publication_status": "not_published",
+      "batch_number": 7
     },
     {
       "number": 66,
@@ -1090,12 +1095,13 @@
       "title": "Шампиньоны, фаршированные травами",
       "servings": 2,
       "editorial_concept": "Подобрать одинаковые крупные шляпки; начинка удерживается, лишняя влага удаляется.",
-      "recipe_status": "idea_not_yet_source_checked",
-      "source_status": "not_checked",
-      "tefal_book_status": "pending",
+      "recipe_status": "full_draft_source_reviewed",
+      "source_status": "cross_checked",
+      "tefal_book_status": "reference_compared_not_equivalent",
       "photo_status": "not_started",
       "appliance_test_status": "not_tested",
-      "publication_status": "not_published"
+      "publication_status": "not_published",
+      "batch_number": 7
     },
     {
       "number": 67,
@@ -1104,12 +1110,13 @@
       "title": "Кукуруза с копчёной паприкой",
       "servings": 2,
       "editorial_concept": "Початки подходящей длины; проверить, помещаются ли в корзину и нужен ли переворот.",
-      "recipe_status": "idea_not_yet_source_checked",
-      "source_status": "not_checked",
-      "tefal_book_status": "pending",
+      "recipe_status": "full_draft_source_reviewed",
+      "source_status": "cross_checked",
+      "tefal_book_status": "no_direct_equivalent",
       "photo_status": "not_started",
       "appliance_test_status": "not_tested",
-      "publication_status": "not_published"
+      "publication_status": "not_published",
+      "batch_number": 7
     },
     {
       "number": 68,
@@ -1118,12 +1125,13 @@
       "title": "Спаржа с пармезаном",
       "servings": 2,
       "editorial_concept": "Стебли близкой толщины; короткий режим, сыр добавлять ближе к финалу.",
-      "recipe_status": "idea_not_yet_source_checked",
-      "source_status": "not_checked",
-      "tefal_book_status": "pending",
+      "recipe_status": "full_draft_source_reviewed",
+      "source_status": "cross_checked",
+      "tefal_book_status": "no_direct_equivalent",
       "photo_status": "not_started",
       "appliance_test_status": "not_tested",
-      "publication_status": "not_published"
+      "publication_status": "not_published",
+      "batch_number": 7
     },
     {
       "number": 69,
@@ -1132,12 +1140,13 @@
       "title": "Стручковая фасоль с кунжутом",
       "servings": 2,
       "editorial_concept": "Фасоль обсушить; встряхнуть корзину, кунжут добавить в конце.",
-      "recipe_status": "idea_not_yet_source_checked",
-      "source_status": "not_checked",
-      "tefal_book_status": "pending",
+      "recipe_status": "full_draft_source_reviewed",
+      "source_status": "cross_checked",
+      "tefal_book_status": "no_direct_equivalent",
       "photo_status": "not_started",
       "appliance_test_status": "not_tested",
-      "publication_status": "not_published"
+      "publication_status": "not_published",
+      "batch_number": 7
     },
     {
       "number": 70,
@@ -1146,12 +1155,13 @@
       "title": "Свёкла с бальзамическим уксусом",
       "servings": 2,
       "editorial_concept": "Тонкие одинаковые дольки; проверить время размягчения и добавлять уксус после основного нагрева.",
-      "recipe_status": "idea_not_yet_source_checked",
-      "source_status": "not_checked",
-      "tefal_book_status": "pending",
+      "recipe_status": "full_draft_source_reviewed",
+      "source_status": "cross_checked",
+      "tefal_book_status": "reference_compared_not_equivalent",
       "photo_status": "not_started",
       "appliance_test_status": "not_tested",
-      "publication_status": "not_published"
+      "publication_status": "not_published",
+      "batch_number": 7
     },
     {
       "number": 71,
