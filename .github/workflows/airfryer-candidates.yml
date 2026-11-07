@@ -1,0 +1,20 @@
+name: Airfryer editorial candidates
+on:
+  pull_request:
+    paths:
+      - 'data/airfryer-editorial-candidates.json'
+      - 'scripts/test-airfryer-candidates.cjs'
+      - '.github/workflows/airfryer-candidates.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  qa:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          persist-credentials: false
+      - name: Validate candidates, safety metadata, and negative fixtures
+        run: node scripts/test-airfryer-candidates.cjs
