@@ -1,0 +1,64 @@
+name: Inspect private Timeweb app PostgreSQL env state (read only)
+on:
+  pull_request:
+    branches: [feature/commerce-secure-foundation-20261104]
+    paths: ['.github/workflows/timeweb-app-env-inspect.yml']
+permissions:
+  contents: read
+jobs:
+  inspect:
+    if: github.event.pull_request.number == 135 && github.event.pull_request.head.ref == 'deploy/commerce-timeweb-staging-20261106' && github.event.pull_request.head.repo.full_name == github.repository
+    runs-on: ubuntu-latest
+    timeout-minutes: 3
+    steps:
+      - name: Inspect live private app stored env keys, never log their secret values
+        env:
+          TIMEWEB_API_TOKEN: ${{ secrets.TIMEWEB_API_TOKEN }}
+        run: |
+          python3 - <<'PY'
+          import os,json,re,urllib.request
+          token=os.environ['TIMEWEB_API_TOKEN'].strip()
+          if token.lower().startswith('bearer '):token=token[7:].strip()
+          if len(token)>2 and token[0]==token[-1] and token[0] in ("'",'"'):token=token[1:-1].strip()
+          req=urllib.request.Request('https://api.timeweb.cloud/api/v1/apps/284043',headers={'Authorization':'Bearer '+token,'Accept':'application/json'},method='GET')
+          with urllib.request.urlopen(req,timeout=20) as r:app=json.load(r)['app']
+          assert app['name']=='snachala-uzhin-commerce-private' and app['project_id']==3145267 and app['preset_id']==2731
+          print('APP_STATUS',app.get('status'))
+          print('APP_TOPLEVEL_KEYS',sorted(app.keys()))
+          print('SOURCE_META_KEYS', {k:app.get(k) for k in ('repository','branch','provider_id','repository_id','commit','commit_sha','auto_deploy','deploy_branch','vcs_provider_id') if isinstance(app.get(k),(str,int,bool))})
+          for key in ('deploy','deployment','deploy_settings','repository','vcs','source'):
+              obj=app.get(key)
+              if isinstance(obj,dict):
+                  print('SOURCE_SECTION',key,'FIELDS',sorted(obj.keys()))
+                  for field in ('branch','repository_name','repository_id','provider_id','sha','commit_sha','autodeploy'):
+                      if isinstance(obj.get(field),(str,int,bool)):print('SOURCE_FIELD',key,field,obj[field])
+          env=app.get('envs',{})
+          print('ENV OBJECT',type(env).__name__)
+          if not isinstance(env,dict):raise SystemExit('Unexpected env format')
+          for key in ('COMMERCE_BASE_URL','COMMERCE_DB_PATH','ENABLE_CHECKOUT','COMMERCE_PAYMENT_QA_APPROVED','SESSION_KEY_HEX','COMMERCE_DATABASE_URL'):
+              v=env.get(key)
+              if key=='SESSION_KEY_HEX':
+                  print(key,'TYPE',type(v).__name__,'VALID_64_HEX',isinstance(v,str) and bool(re.fullmatch('[0-9a-fA-F]{64}',v)),'OBJECT_KEYS',sorted(v.keys()) if isinstance(v,dict) else [])
+              elif key=='COMMERCE_BASE_URL':
+                  print(key,'TYPE',type(v).__name__,'IS_TEMPORARY_PLACEHOLDER',v=='https://initial-setup.snachala-uzhin.invalid','OBJECT_KEYS',sorted(v.keys()) if isinstance(v,dict) else [])
+              elif key=='COMMERCE_DATABASE_URL':
+                  print(key,'PRESENT',key in env,'NONEMPTY_STRING',isinstance(v,str) and bool(v),'IS_POSTGRES_URI',isinstance(v,str) and v.startswith(('postgresql://','postgres://')))
+              elif key in ('ENABLE_CHECKOUT','COMMERCE_PAYMENT_QA_APPROVED'):
+                  print(key,'TYPE',type(v).__name__,'CHECKOUT_OFF',v=='0')
+              else:
+                  print(key,'PRESENT',key in env,'TYPE',type(v).__name__)
+          print('ENV_VERSION',app.get('env_version'),'APP_START_TIME',app.get('start_time'))
+          print('APP_DEPLOY_COMMIT',app.get('commit_sha'))
+          from urllib.error import HTTPError
+          from urllib.parse import urlsplit
+          base='https://semen89852698936-create-snachala-uzhin-9f50.twc1.net'
+          checks=[('/healthz',200),('/api/me',200),('/app',403)]
+          for path,expect in checks:
+              try:
+                  with urllib.request.urlopen(base+path,timeout=18) as resp:code=resp.status
+              except HTTPError as exc:code=exc.code
+              except Exception as exc:code=type(exc).__name__
+              print('LIVE_HTTP',path,'STATUS',code,'EXPECTED',expect)
+              if code!=expect:raise SystemExit('BLOCK: live app health or protection unexpected')
+          print('READ ONLY. No secrets or configuration updated.')
+          PY

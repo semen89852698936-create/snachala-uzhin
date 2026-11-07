@@ -1,0 +1,86 @@
+name: Verify private clone 284043, VPC and live HTTPS (READ ONLY)
+on:
+  pull_request:
+    branches: [feature/commerce-secure-foundation-20261104]
+    paths: ['.github/workflows/timeweb-private-clone-readiness.yml']
+permissions:
+  contents: read
+jobs:
+  verify:
+    if: github.event.pull_request.number == 135 && github.event.pull_request.head.ref == 'deploy/commerce-timeweb-staging-20261106' && github.event.pull_request.head.repo.full_name == github.repository
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Verify clone status and private network membership via GET only
+        env:
+          TIMEWEB_API_TOKEN: ${{ secrets.TIMEWEB_API_TOKEN }}
+        run: |
+          python3 - <<'PY'
+          import json,os,re,time,urllib.request,urllib.error
+          token=os.environ.get('TIMEWEB_API_TOKEN','').strip()
+          if token.lower().startswith('bearer '):token=token[7:].strip()
+          if len(token)>2 and token[0]==token[-1] and token[0] in ("'",'"'):token=token[1:-1].strip()
+          if not token:raise SystemExit('NO TOKEN')
+          def get(path):
+              q=urllib.request.Request('https://api.timeweb.cloud'+path,headers={'Authorization':'Bearer '+token,'Accept':'application/json'},method='GET')
+              try:
+                  with urllib.request.urlopen(q,timeout=20) as r:return r.status,json.load(r)
+              except urllib.error.HTTPError as e:return e.code,{}
+              except Exception as e:print('REQUEST ERROR',type(e).__name__);return 0,{}
+          new_id=284043
+          for attempt in range(6):
+              s,d=get('/api/v1/apps/'+str(new_id))
+              if s!=200:raise SystemExit('BLOCK: app API returned '+str(s))
+              a=d.get('app',{})
+              if any([a.get('id')!=new_id,a.get('name')!='snachala-uzhin-commerce-private',
+                      a.get('project_id')!=3145267,a.get('preset_id')!=2731,a.get('location')!='ru-3']):
+                  raise SystemExit('BLOCK: wrong app, project, region or tariff')
+              print('NEW APP',new_id,'STATUS',a.get('status'),'PRESET',a.get('preset_id'))
+              if a.get('status')=='active':break
+              if attempt<5:time.sleep(10)
+          vstatus,vdata=get('/api/v2/vpcs')
+          print('VPC LIST HTTP',vstatus)
+          matched=[]
+          if vstatus==200:
+              for v in vdata.get('vpcs',[]):
+                  if isinstance(v,dict) and v.get('name')=='snachala-uzhin-private':
+                      matched.append(v)
+              print('TARGET VPC MATCHES',len(matched))
+              if len(matched)==1:
+                  vpc=matched[0]
+                  print('VPC SAFE PROPERTIES',{k:vpc.get(k) for k in ('id','name','location','subnet','type') if k in vpc})
+                  vid=vpc.get('id')
+                  if vid:
+                      status,sv=get('/api/v2/vpcs/'+str(vid)+'/services')
+                      print('VPC SERVICES HTTP',status)
+                      if status==200:
+                          print('VPC SERVICES TOP LEVEL KEYS',sorted(sv.keys()))
+                          vals=sv.get('services',[])
+                          print('NUMBER OF VPC SERVICES',len(vals))
+                          for item in vals:
+                              if isinstance(item,dict):
+                                  # Only log target app ID, service type and IP for matched item.
+                                  serialized=json.dumps(item,ensure_ascii=False)
+                                  if '284043' in serialized:
+                                      print('TARGET APP VPC MEMBERSHIP FOUND',True)
+                                      print('MATCHED SERVICE NONSECRET KEYS',sorted(item.keys()))
+                                      for key in ('ip','ip_address','local_ip','private_ip','service_id','service_type','type'):
+                                          if key in item and isinstance(item[key],(int,float,str)):
+                                              print('TARGET SERVICE',key,item[key])
+          ds=a.get('domains',[])
+          hosts=[]
+          for d in ds:
+              fqdn=d.get('fqdn') if isinstance(d,dict) else d if isinstance(d,str) else None
+              if fqdn and re.fullmatch(r'[a-zA-Z0-9-]{1,150}(?:\.[a-zA-Z0-9-]{1,63})+',fqdn):hosts.append(fqdn)
+          print('APP HOSTS',hosts)
+          if a.get('status')=='active':
+              for host in hosts:
+                  for path,expect in (('/healthz',200),('/',200),('/account',200),('/app',403),('/full-catalog/index.html',403),('/assets/recipes-ai/0001-lemon-spinach-pasta.webp',403)):
+                      try:
+                          with urllib.request.urlopen('https://'+host+path,timeout=12) as resp:code=resp.status
+                      except urllib.error.HTTPError as e:code=e.code
+                      except Exception as e:code=type(e).__name__
+                      print('LIVE',host,path,code,'EXPECTED',expect,'PASS',code==expect)
+          else:print('DEFER: new app still deploying')
+          print('READ ONLY: no changes to apps, VPC, or billing.')
+          PY

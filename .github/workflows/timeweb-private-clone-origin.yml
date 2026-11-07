@@ -1,0 +1,63 @@
+name: Bind new Timeweb VPC clone to its HTTPS origin (one-shot)
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: timeweb-new-private-clone-origin-284043
+  cancel-in-progress: false
+jobs:
+  configure:
+    if: github.event.pull_request.number == 135 && github.event.pull_request.head.ref == 'deploy/commerce-timeweb-staging-20261106' && github.event.pull_request.head.repo.full_name == github.repository
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Correct only clone 284043 HTTPS origin; leave commerce checkout blocked
+        env:
+          TIMEWEB_API_TOKEN: ${{ secrets.TIMEWEB_API_TOKEN }}
+        run: |
+          set -euo pipefail
+          python3 - <<'PY'
+          import json,os,secrets,urllib.request,urllib.error
+          token=os.environ.get('TIMEWEB_API_TOKEN','').strip()
+          if token.lower().startswith('bearer '):token=token[7:].strip()
+          if len(token)>2 and token[0]==token[-1] and token[0] in ("'",'"'):token=token[1:-1].strip()
+          if not token:raise SystemExit('BLOCK: missing token')
+          api='https://api.timeweb.cloud/api/v1/apps/284043'
+          headers={'Authorization':'Bearer '+token,'Content-Type':'application/json','Accept':'application/json'}
+          def query(method,body=None):
+              req=urllib.request.Request(api,headers=headers,data=json.dumps(body).encode() if body is not None else None,method=method)
+              try:
+                  with urllib.request.urlopen(req,timeout=25) as r:return r.status,json.load(r)
+              except urllib.error.HTTPError as e:return e.code,{}
+          code,result=query('GET')
+          if code!=200:raise SystemExit('BLOCK: clone unavailable')
+          a=result.get('app',{})
+          if any([a.get('id')!=284043,a.get('name')!='snachala-uzhin-commerce-private',
+                  a.get('project_id')!=3145267,a.get('preset_id')!=2731,
+                  a.get('location')!='ru-3',a.get('status')!='active',
+                  a.get('is_auto_deploy') is not False]):
+              raise SystemExit('BLOCK: target not the approved 510 RUB private clone')
+          host='semen89852698936-create-snachala-uzhin-9f50.twc1.net'
+          if sum(1 for v in a.get('domains',[]) if isinstance(v,dict) and v.get('fqdn')==host)!=1:
+              raise SystemExit('BLOCK: clone technical HTTPS domain does not match')
+          keys={'COMMERCE_BASE_URL','COMMERCE_DB_PATH','SESSION_KEY_HEX',
+                'ENABLE_CHECKOUT','COMMERCE_PAYMENT_QA_APPROVED'}
+          env=a.get('envs',{})
+          if not isinstance(env,dict) or set(env)!=keys:
+              raise SystemExit('BLOCK: unexpected environment; do not modify')
+          replacement={
+            'COMMERCE_BASE_URL':'https://'+host,
+            'COMMERCE_DB_PATH':'/srv/data/orders.sqlite',
+            'SESSION_KEY_HEX':secrets.token_hex(32),
+            'ENABLE_CHECKOUT':'0',
+            'COMMERCE_PAYMENT_QA_APPROVED':'0'
+          }
+          status,r=query('PATCH',{'envs':replacement})
+          if status not in (200,202):
+              print('BLOCK: env PATCH rejected HTTP',status)
+              raise SystemExit(1)
+          print('SUCCESS: private clone ID 284043 origin updated to its own HTTPS domain.')
+          print('SUCCESS: 32-byte fresh session key held only by Timeweb secret environment.')
+          print('CHECKOUT DISABLED. No DB, SMTP, merchant or second application created.')
+          PY

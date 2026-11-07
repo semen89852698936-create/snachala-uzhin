@@ -1,0 +1,63 @@
+name: Timeweb prerequisites read-only
+on:
+  pull_request:
+    branches: [feature/commerce-secure-foundation-20261104]
+    paths: ['.github/workflows/timeweb-provider-inventory.yml']
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  inspect:
+    if: github.event_name == 'workflow_dispatch' || (github.event.pull_request.number == 135 && github.event.pull_request.head.ref == 'deploy/commerce-timeweb-staging-20261106' && github.event.pull_request.head.repo.full_name == github.repository)
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Check project and GitHub provider attachment without writes
+        env:
+          TIMEWEB_API_TOKEN: ${{ secrets.TIMEWEB_API_TOKEN }}
+        run: |
+          python3 - <<'PY'
+          import json,os,urllib.request,urllib.error
+          token=os.environ.get('TIMEWEB_API_TOKEN','').strip()
+          if token.lower().startswith('bearer '):token=token[7:].strip()
+          if len(token)>2 and token[0]==token[-1] and token[0] in ("'",'"'):token=token[1:-1].strip()
+          if not token:raise SystemExit('Missing token')
+          def get(path):
+              request=urllib.request.Request('https://api.timeweb.cloud'+path,headers={'Authorization':'Bearer '+token,'Accept':'application/json'},method='GET')
+              try:
+                  with urllib.request.urlopen(request,timeout=20) as resp:return resp.status,json.loads(resp.read(1024*1024))
+              except urllib.error.HTTPError as e:return e.code,{}
+              except Exception as e:print('NETWORK',type(e).__name__);return 0,{}
+          def brief(obj):
+              return {k:obj[k] for k in ('id','name','type','url','repository_id','provider_id','project_id','framework','location','status','preset_id','price','branch_name') if k in obj and isinstance(obj[k],(str,int,float,bool))}
+          status,body=get('/api/v1/projects')
+          print('PROJECTS HTTP',status)
+          for proj in body.get('projects',[]):
+              if isinstance(proj,dict) and ('УЖИН' in str(proj.get('name','')).upper() or str(proj.get('id'))=='3145267'):
+                  print('TARGET PROJECT',json.dumps(brief(proj),ensure_ascii=False))
+          status,body=get('/api/v1/vcs-provider')
+          print('VCS HTTP',status,'COUNT',len(body.get('providers',[])))
+          for provider in body.get('providers',[]):
+              if not isinstance(provider,dict):continue
+              print('PROVIDER',json.dumps(brief(provider),ensure_ascii=False))
+              pid=provider.get('id')
+              if not pid:continue
+              rs,repos=get('/api/v1/vcs-provider/'+str(pid))
+              print('REPOSITORIES HTTP',rs,'PROVIDER',pid,'COUNT',len(repos.get('repositories',[])))
+              for rp in repos.get('repositories',[]):
+                  if isinstance(rp,dict) and 'snachala-uzhin' in json.dumps(rp,ensure_ascii=False).lower():
+                      print('MATCH REPOSITORY',json.dumps(brief(rp),ensure_ascii=False))
+          for endpoint,title in (('/api/v1/frameworks/apps','FRAMEWORKS'),('/api/v1/deploy-settings/apps','DEPLOY SETTINGS')):
+              s,d=get(endpoint);print(title,'HTTP',s,'KEYS',sorted(d.keys())[:12])
+              for key,val in d.items():
+                  if not isinstance(val,list):continue
+                  for e in val:
+                      if isinstance(e,dict) and (title!='FRAMEWORKS' or 'docker' in json.dumps(e,ensure_ascii=False).lower()):
+                          print(title,key,json.dumps(brief(e),ensure_ascii=False))
+          s,d=get('/api/v1/apps')
+          print('APPS HTTP',s,'COUNT',len(d.get('apps',[])))
+          for a in d.get('apps',[]):
+              if isinstance(a,dict) and ('snachala' in str(a.get('name','')).lower() or 'ужин' in str(a.get('name','')).lower()):
+                  print('TARGET APP',json.dumps(brief(a),ensure_ascii=False))
+          print('GET ONLY: No changes or billing.')
+          PY
