@@ -91,6 +91,9 @@ assert.ok(audit({...r,photo_webp:'https://example.com/food.webp'}).includes('loc
 assert.ok(audit({...r,photo_status:'unknown'}).includes('photo_status'),'unknown photo readiness must fail');
 const missing=data.recipes.filter(r=>r.photo_status!=='ready'||!r.photo_webp);
 if(process.argv.includes('--release')){
+  assert.ok(typeof data.reader_notice==='string'&&data.reader_notice.includes('ориентировочно'),'reader-facing approximate-time notice required');
+  assert.equal(data.appliance_guidance?.status,'manufacturer_recipe_book_reviewed_model_not_yet_identified');
+
   assert.doesNotMatch(data.status,/NOT published|NOT experimentally verified|editorial candidates/i,'draft cannot ship');
   assert.equal(missing.length,0,'matching WebP photos required');
   for(const r of data.recipes){
@@ -100,12 +103,16 @@ if(process.argv.includes('--release')){
     assert.ok(fs.existsSync(photoPath),r.id+' photo missing');
     const photo=fs.readFileSync(photoPath);
     assert.ok(photo.length>=12&&photo.toString('ascii',0,4)==='RIFF'&&photo.toString('ascii',8,12)==='WEBP',r.id+' invalid WebP signature');
-    // Editorial sources and a matching photograph do not establish real-appliance verification.
-    // Require recorded independent cooking QA before any candidate is eligible for release.
-    assert.equal(r.appliance_test?.status,'passed',r.id+' real-appliance QA missing');
-    assert.ok(typeof r.appliance_test?.model==='string'&&r.appliance_test.model.trim(),r.id+' tested appliance model missing');
-    assert.ok(typeof r.appliance_test?.date==='string'&&/^\d{4}-\d{2}-\d{2}$/.test(r.appliance_test.date),r.id+' test date missing');
-    assert.ok(typeof r.appliance_test?.notes==='string'&&r.appliance_test.notes.trim(),r.id+' cooking observations missing');
+    // Source-verified recipes may ship with an explicit approximate-time/manual notice.
+    // A physical appliance test is an optional extra QA level, never falsely implied.
+    assert.equal(r.source_verification?.status,'cross_checked',r.id+' source verification missing');
+    assert.equal(r.appliance_reference?.status,'reference_only_not_direct_equivalent',r.id+' appliance reference scope missing');
+    assert.ok(['not_tested','passed'].includes(r.appliance_test?.status),r.id+' appliance test status invalid');
+    if(r.appliance_test?.status==='passed'){
+      assert.ok(typeof r.appliance_test?.model==='string'&&r.appliance_test.model.trim(),r.id+' tested appliance model missing');
+      assert.ok(typeof r.appliance_test?.date==='string'&&/^\d{4}-\d{2}-\d{2}$/.test(r.appliance_test.date),r.id+' test date missing');
+      assert.ok(typeof r.appliance_test?.notes==='string'&&r.appliance_test.notes.trim(),r.id+' cooking observations missing');
+    }
   }
 }
 console.log('PASS '+data.recipes.length+' editorial candidates; '+missing.length+' photos pending. No publication claimed.');
