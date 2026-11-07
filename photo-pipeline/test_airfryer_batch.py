@@ -23,7 +23,7 @@ recipes = module.load_manifest(args.manifest)
 assert len(recipes) == 10
 prompts = [module.make_prompt(recipe) for recipe in recipes]
 assert all(0 < len(prompt) <= module.MAX_PROMPT for prompt in prompts)
-assert all('Блюдо:' in prompt and 'без коллажей' in prompt and 'логотипов' in prompt for prompt in prompts)
+assert all('Блюдо:' in prompt and 'Single full-frame photograph' in prompt and 'No split-screen' in prompt and 'логотипов' in prompt for prompt in prompts)
 assert len({recipe["id"] for recipe in recipes}) == 10
 assert all(recipe["photo_status"] in {"not_started", "generated_verified_unpublished"} for recipe in recipes)
 assert all(recipe.get("visual_review_status") in {"visually_accepted", "needs_regeneration", "pending_recheck"} for recipe in recipes)
