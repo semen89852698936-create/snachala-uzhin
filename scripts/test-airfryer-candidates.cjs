@@ -6,6 +6,7 @@ const fs=require('node:fs');
 const path=require('node:path');
 const root=path.join(__dirname,'..');
 const data=JSON.parse(fs.readFileSync(path.join(root,'data/airfryer-editorial-candidates.json'),'utf8'));
+const manualUrlForTest='https://ru.scribd.com/document/875246352/Книга-рецептов-аэрогриль-Тефаль';
 function audit(r){
   const issues=[];
   for(const k of ['id','title','category','preheat','basket','turn','reference'])if(!r[k])issues.push('missing '+k);
@@ -31,6 +32,13 @@ assert.equal(data.servings,2);
 assert.ok(Array.isArray(data.recipes)&&data.recipes.length===6,'exactly six pilot recipes required');
 assert.equal(data.source_review?.status,'cross_checked','source review metadata required');
 assert.equal(data.source_review?.checked_on,'2026-11-07');
+assert.ok(typeof data.reader_notice==='string'&&data.reader_notice.includes('ориентировочно'),'reader timing disclaimer required');
+assert.equal(data.appliance_guidance?.appliance_family,'Tefal Easy Fry & Grill');
+assert.equal(data.appliance_guidance?.owner_exact_model,'not_confirmed');
+assert.ok(data.appliance_guidance?.variants_listed?.includes('Easy Fry & Grill Precision+'));
+assert.equal(data.appliance_guidance?.control_variants?.length,2);
+assert.match(data.appliance_guidance?.scope||'',/multiple Easy Fry & Grill variants/i);
+
 assert.equal(new Set(data.recipes.map(r=>r.id)).size,data.recipes.length,'duplicate IDs');
 for(const r of data.recipes){
   assert.deepEqual(audit(r),[],r.id+' invalid metadata');
@@ -38,6 +46,8 @@ for(const r of data.recipes){
   assert.equal(r.source_verification?.checked_on,'2026-11-07',r.id+' source review date missing');
   assert.ok(r.source_verification?.source_title&&r.source_verification?.notes,r.id+' source review details missing');
   assert.equal(r.appliance_test?.status,'not_tested',r.id+' must not be represented as physically tested');
+  assert.equal(r.appliance_reference?.status,'reference_only_not_direct_equivalent',r.id+' Tefal comparison must not be represented as a matching exact recipe');
+  assert.equal(r.appliance_reference?.document_url,manualUrlForTest);
 }
 const potato=data.recipes.find(r=>r.id==='af-potato-wedges-2');
 assert.ok(potato,'potato wedges candidate must exist');
