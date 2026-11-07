@@ -202,13 +202,13 @@
         "notes": "В книге нет медальонов из индейки. Не копировать режимы куриных бёдер."
       },
       "safety": "Индейка должна достичь 74 °C внутри. Соус готовится отдельно; использовать чистую посуду для готового мяса.",
-      "photo_brief": "Три небольших медальона из индейки, каждый с ровной золотисто-коричневой корочкой. Вокруг только густой яркий рубиновый соус из клюквы и апельсина, несколько целых красных ягод клюквы и тонкая апельсиновая цедра. Чистая ресторанная подача без гарнира.",
+      "photo_brief": "Три золотисто обжаренных медальона из индейки с тонкой хрустящей панировкой из измельчённых кукурузных хлопьев, не целых зёрен. Рядом густой ярко-рубиновый клюквенно-апельсиновый соус с видимыми целыми красными ягодами клюквы и апельсиновой цедрой. В кадре только медальоны и красный ягодный соус.",
       "photo_status": "generated_verified_unpublished",
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
       "photo_record_path": "photo-library/airfryer/records/af-turkey-medallions-cranberry-2.json",
-      "visual_review_status": "pending_recheck",
-      "visual_review_note": "Повторная генерация снова добавила жёлтые зёрна и не дала узнаваемого клюквенного соуса. Нужна чистая подача с красными ягодами и без гарниров.",
+      "visual_review_status": "needs_regeneration",
+      "visual_review_note": "Повторный снимок снова показывает целые жёлтые зёрна и не даёт читаемого рубинового клюквенного соуса. В рецепте есть измельчённые кукурузные хлопья для тонкой панировки, но не целые зёрна.",
       "photo_sha256": "1421be9ec887608dbfb054f19ab0a77cca2ab1b7cf52af9bc86932521091e85a"
     },
     {
@@ -764,8 +764,7 @@
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
       "photo_record_path": "photo-library/airfryer/records/af-turkey-sausages-apple-2.json",
-      "visual_review_status": "pending_recheck",
-      "visual_review_note": "Повторный снимок по-прежнему слишком бледный и розовый, без убедительной обжаренной поверхности готовых колбасок.",
+      "visual_review_status": "visually_accepted",
       "photo_sha256": "de5421e71fa7b1be072cbf892ae443dff44a6381f4d7a8ea4626ee2c07cfc5f3"
     },
     {
