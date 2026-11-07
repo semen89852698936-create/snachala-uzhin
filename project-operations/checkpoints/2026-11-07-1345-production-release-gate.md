@@ -26,3 +26,8 @@ This checkpoint is a documented release blocker, not a deployment, recipe accept
 - Do not infer quota availability from elapsed time or READY status. The next production attempt must be coordinated with other automations and made only once when justified by the known retry window and fresh checks.
 - Existing issue #73 remains the airfryer acceptance target. Draft recipe and photo work must not be represented as physical testing.
 - No new CI execution or production release claimed in this revalidation.
+
+## 2026-11-07 16:49 Asia/Jerusalem: separate Vercel project trap
+- Fresh `get_deployment` for the actual public alias still resolves to `snachala-uzhin-preview`, project `prj_VitUSLk8EC9CCYpgwRptAoQmih3y`, deployment `dpl_nBRmWxD4mz2iH1GdBo6zyLN98Fkg`, READY, `githubCommitSha=8e4f4b6effb2bef9a1e02858986404d991a9ff47`. Latest production listing for THIS project shows no newer release.
+- GitHub's Vercel bot comment on PR #138 advertises a READY preview from DIFFERENT project `snachala-uzhin-git` (`prj_6K1cIjW8emhX1lcTc3dh0gDPTKEd`, rootDirectory `photo-library`). That green preview does NOT prove the primary public site is updated. Never promote, redeploy or inspect that other project as a substitute for `snachala-uzhin-preview`.
+- Fresh GitHub commit search: main remains `5ce4752a2d14253d8dad640cc3330cb0917615d2`. This is a read-only check; quota availability still unknown. No production POST, payment, API generation or new CI run was made.
