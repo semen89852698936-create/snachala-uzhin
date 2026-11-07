@@ -75,7 +75,7 @@ def make_prompt(recipe: dict) -> str:
     ingredient_part = f"Ингредиенты: {ingredient_text}. " if ingredient_text else ""
     suffix = "Подача на двоих, натуральная текстура, мягкий тёплый свет. Без людей, рук, букв, логотипов и коллажей."
     fixed = prefix + title_part + ingredient_part + "Детали: ." + suffix
-    brief_limit = max(0, MAX_PROMPT - len(fixed))
+    brief_limit = max(0, MAX_PROMPT - len(fixed) - 2)
     brief = brief[:brief_limit].rstrip(" ,.;")
     prompt = prefix + title_part + ingredient_part + f"Детали: {brief}. " + suffix
     if len(prompt) > MAX_PROMPT:
