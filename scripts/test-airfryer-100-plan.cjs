@@ -14,7 +14,7 @@ assert.ok(plan.items.every((item) => item.editorial_concept && item.editorial_co
 assert.ok(plan.items.every((item) => item.publication_status === 'not_published'), 'Planning records must not claim publication.');
 assert.ok(plan.items.every((item) => item.photo_status === 'generated_verified_unpublished'), 'All 100 photo files must be technically verified but unpublished.');
 assert.ok(plan.items.every((item) => ['visually_accepted', 'needs_regeneration', 'pending_recheck'].includes(item.visual_review_status)), 'Every recipe needs an explicit visual QA status.');
-assert.ok(plan.items.every((item) => item.appliance_test_status === 'not_tested'), 'Do not imply physical tests on the owner's exact appliance.');
+assert.ok(plan.items.every((item) => item.appliance_test_status === 'not_tested'), "Do not imply physical appliance testing.");
 
 const actualCounts = Object.fromEntries(
   [...new Set(plan.items.map((item) => item.category))].map((category) => [
