@@ -570,12 +570,13 @@
       "title": "Бараньи котлеты на косточке с розмарином",
       "servings": 2,
       "editorial_concept": "Учитывать толщину и кость; размещать с зазорами, дать отдохнуть после приготовления.",
-      "recipe_status": "idea_not_yet_source_checked",
-      "source_status": "not_checked",
-      "tefal_book_status": "pending",
+      "recipe_status": "full_draft_source_reviewed",
+      "source_status": "cross_checked",
+      "tefal_book_status": "direct_or_method_reference_compared",
       "photo_status": "not_started",
       "appliance_test_status": "not_tested",
-      "publication_status": "not_published"
+      "publication_status": "not_published",
+      "batch_number": 4
     },
     {
       "number": 32,
@@ -584,12 +585,13 @@
       "title": "Баранья кёфта с кумином",
       "servings": 2,
       "editorial_concept": "Формовать одинаковое сечение; перевернуть в середине, проверить готовность фарша.",
-      "recipe_status": "idea_not_yet_source_checked",
-      "source_status": "not_checked",
-      "tefal_book_status": "pending",
+      "recipe_status": "full_draft_source_reviewed",
+      "source_status": "cross_checked",
+      "tefal_book_status": "reference_compared_not_equivalent",
       "photo_status": "not_started",
       "appliance_test_status": "not_tested",
-      "publication_status": "not_published"
+      "publication_status": "not_published",
+      "batch_number": 4
     },
     {
       "number": 33,
@@ -598,12 +600,13 @@
       "title": "Фрикадельки из баранины с мятой",
       "servings": 2,
       "editorial_concept": "Небольшие одинаковые шарики; контролировать вытопленный жир и готовность центра.",
-      "recipe_status": "idea_not_yet_source_checked",
-      "source_status": "not_checked",
-      "tefal_book_status": "pending",
+      "recipe_status": "full_draft_source_reviewed",
+      "source_status": "cross_checked",
+      "tefal_book_status": "reference_compared_not_equivalent",
       "photo_status": "not_started",
       "appliance_test_status": "not_tested",
-      "publication_status": "not_published"
+      "publication_status": "not_published",
+      "batch_number": 4
     },
     {
       "number": 34,
@@ -612,12 +615,13 @@
       "title": "Два мини-рулета из мясного фарша",
       "servings": 2,
       "editorial_concept": "Небольшая форма и проверка центра термометром; не использовать глубокую форму без проверки циркуляции.",
-      "recipe_status": "idea_not_yet_source_checked",
-      "source_status": "not_checked",
-      "tefal_book_status": "pending",
+      "recipe_status": "full_draft_source_reviewed",
+      "source_status": "cross_checked",
+      "tefal_book_status": "reference_compared_not_equivalent",
       "photo_status": "not_started",
       "appliance_test_status": "not_tested",
-      "publication_status": "not_published"
+      "publication_status": "not_published",
+      "batch_number": 4
     },
     {
       "number": 35,
@@ -626,12 +630,13 @@
       "title": "Хрустящие кусочки свиной грудинки",
       "servings": 2,
       "editorial_concept": "Небольшая равномерная нарезка; контролировать дым/жир и своевременно удалять избыток жира.",
-      "recipe_status": "idea_not_yet_source_checked",
-      "source_status": "not_checked",
-      "tefal_book_status": "pending",
+      "recipe_status": "full_draft_source_reviewed",
+      "source_status": "cross_checked",
+      "tefal_book_status": "reference_compared_not_equivalent",
       "photo_status": "not_started",
       "appliance_test_status": "not_tested",
-      "publication_status": "not_published"
+      "publication_status": "not_published",
+      "batch_number": 4
     },
     {
       "number": 36,
@@ -640,12 +645,13 @@
       "title": "Колбаски с перцем и красным луком",
       "servings": 2,
       "editorial_concept": "Колбаски и овощи разложить без скучивания; проверять готовность колбасок отдельно.",
-      "recipe_status": "idea_not_yet_source_checked",
-      "source_status": "not_checked",
-      "tefal_book_status": "pending",
+      "recipe_status": "full_draft_source_reviewed",
+      "source_status": "cross_checked",
+      "tefal_book_status": "reference_compared_not_equivalent",
       "photo_status": "not_started",
       "appliance_test_status": "not_tested",
-      "publication_status": "not_published"
+      "publication_status": "not_published",
+      "batch_number": 4
     },
     {
       "number": 37,
@@ -654,12 +660,13 @@
       "title": "Лосось с лимоном и травами",
       "servings": 2,
       "editorial_concept": "Два филе в один слой; проверка самой толстой части термометром, не ориентироваться только на минуты.",
-      "recipe_status": "draft_source_cross_checked",
+      "recipe_status": "full_draft_source_reviewed",
       "source_status": "cross_checked",
       "tefal_book_status": "reference_compared_not_equivalent",
       "photo_status": "not_started",
       "appliance_test_status": "not_tested",
-      "publication_status": "not_published"
+      "publication_status": "not_published",
+      "batch_number": 4
     },
     {
       "number": 38,
@@ -668,12 +675,13 @@
       "title": "Лосось в мисо-глазури с кунжутом",
       "servings": 2,
       "editorial_concept": "Глазурь наносить тонко; сахаристые компоненты контролировать от подгорания.",
-      "recipe_status": "idea_not_yet_source_checked",
-      "source_status": "not_checked",
-      "tefal_book_status": "pending",
+      "recipe_status": "full_draft_source_reviewed",
+      "source_status": "cross_checked",
+      "tefal_book_status": "reference_compared_not_equivalent",
       "photo_status": "not_started",
       "appliance_test_status": "not_tested",
-      "publication_status": "not_published"
+      "publication_status": "not_published",
+      "batch_number": 4
     },
     {
       "number": 39,
@@ -682,12 +690,13 @@
       "title": "Форель с укропом и лимоном",
       "servings": 2,
       "editorial_concept": "Филе одинаковой толщины или целая небольшая рыба; режимы для этих форм не смешивать.",
-      "recipe_status": "idea_not_yet_source_checked",
-      "source_status": "not_checked",
-      "tefal_book_status": "pending",
+      "recipe_status": "full_draft_source_reviewed",
+      "source_status": "cross_checked",
+      "tefal_book_status": "reference_compared_not_equivalent",
       "photo_status": "not_started",
       "appliance_test_status": "not_tested",
-      "publication_status": "not_published"
+      "publication_status": "not_published",
+      "batch_number": 4
     },
     {
       "number": 40,
@@ -696,12 +705,13 @@
       "title": "Треска под травяной корочкой",
       "servings": 2,
       "editorial_concept": "Филе обсушить; корочка должна держаться, а рыба не пересыхать.",
-      "recipe_status": "idea_not_yet_source_checked",
-      "source_status": "not_checked",
-      "tefal_book_status": "pending",
+      "recipe_status": "full_draft_source_reviewed",
+      "source_status": "cross_checked",
+      "tefal_book_status": "direct_or_method_reference_compared",
       "photo_status": "not_started",
       "appliance_test_status": "not_tested",
-      "publication_status": "not_published"
+      "publication_status": "not_published",
+      "batch_number": 4
     },
     {
       "number": 41,
