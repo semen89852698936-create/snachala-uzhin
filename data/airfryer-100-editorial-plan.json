@@ -23,13 +23,15 @@
       "recipe_status": "full_draft_source_reviewed",
       "source_status": "source_cross_checked",
       "tefal_book_status": "no_direct_equivalent_or_accessory_reference_only",
-      "photo_status": "not_started",
+      "photo_status": "present_pending_visual_review",
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
       "source_urls": [
         "https://www.bbcgoodfood.com/premium/air-fryer-chicken-breasts-2"
       ],
-      "batch_number": 1
+      "batch_number": 1,
+      "photo_path": "assets/airfryer/af-chicken-paprika-2.webp",
+      "photo_editorial_status": "not_yet_reviewed"
     },
     {
       "number": 2,
@@ -41,13 +43,15 @@
       "recipe_status": "full_draft_source_reviewed",
       "source_status": "adapted_source_cross_checked",
       "tefal_book_status": "no_direct_equivalent_or_accessory_reference_only",
-      "photo_status": "not_started",
+      "photo_status": "present_pending_visual_review",
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
       "source_urls": [
         "https://www.coles.com.au/recipes-inspiration/recipes/air-fryer-chicken-breast"
       ],
-      "batch_number": 1
+      "batch_number": 1,
+      "photo_path": "assets/airfryer/af-chicken-lemon-thyme-2.webp",
+      "photo_editorial_status": "not_yet_reviewed"
     },
     {
       "number": 3,
@@ -59,13 +63,15 @@
       "recipe_status": "full_draft_source_reviewed",
       "source_status": "manufacturer_recipe_direct",
       "tefal_book_status": "direct_recipe_in_supplied_book",
-      "photo_status": "not_started",
+      "photo_status": "needs_replacement",
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
       "source_urls": [
         "https://www.compatibility.groupeseb.com/documents/recipebook/EasyFry-and-Grill-EY50.pdf"
       ],
-      "batch_number": 1
+      "batch_number": 1,
+      "photo_path": "assets/airfryer/af-chicken-thighs-yogurt-rosemary-2.webp",
+      "photo_editorial_status": "owner_flagged_not_approved"
     },
     {
       "number": 4,
@@ -77,13 +83,15 @@
       "recipe_status": "full_draft_source_reviewed",
       "source_status": "manufacturer_recipe_direct",
       "tefal_book_status": "direct_recipe_in_supplied_book",
-      "photo_status": "not_started",
+      "photo_status": "present_pending_visual_review",
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
       "source_urls": [
         "https://www.compatibility.groupeseb.com/documents/recipebook/EasyFry-and-Grill-EY50.pdf"
       ],
-      "batch_number": 1
+      "batch_number": 1,
+      "photo_path": "assets/airfryer/af-chicken-wings-smoked-paprika-2.webp",
+      "photo_editorial_status": "not_yet_reviewed"
     },
     {
       "number": 5,
@@ -95,13 +103,15 @@
       "recipe_status": "full_draft_source_reviewed",
       "source_status": "adapted_source_cross_checked",
       "tefal_book_status": "no_direct_equivalent_or_accessory_reference_only",
-      "photo_status": "not_started",
+      "photo_status": "present_pending_visual_review",
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
       "source_urls": [
         "https://www.bbcgoodfoodme.com/recipes/air-fryer-chicken-drumsticks/"
       ],
-      "batch_number": 1
+      "batch_number": 1,
+      "photo_path": "assets/airfryer/af-chicken-drumsticks-mustard-herbs-2.webp",
+      "photo_editorial_status": "not_yet_reviewed"
     },
     {
       "number": 6,
@@ -113,13 +123,15 @@
       "recipe_status": "full_draft_source_reviewed",
       "source_status": "source_cross_checked",
       "tefal_book_status": "no_direct_equivalent_or_accessory_reference_only",
-      "photo_status": "not_started",
+      "photo_status": "present_pending_visual_review",
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
       "source_urls": [
         "https://www.walmart.com/i/recipes/Air-Fryer-Turkey-Cutlets/2615420"
       ],
-      "batch_number": 1
+      "batch_number": 1,
+      "photo_path": "assets/airfryer/af-turkey-cutlets-herb-crust-2.webp",
+      "photo_editorial_status": "not_yet_reviewed"
     },
     {
       "number": 7,
@@ -131,13 +143,15 @@
       "recipe_status": "full_draft_source_reviewed",
       "source_status": "source_cross_checked",
       "tefal_book_status": "no_direct_equivalent_or_accessory_reference_only",
-      "photo_status": "not_started",
+      "photo_status": "present_pending_visual_review",
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
       "source_urls": [
         "https://www.marialuceydietitian.com/air-fryer-turkey-meatballs/"
       ],
-      "batch_number": 1
+      "batch_number": 1,
+      "photo_path": "assets/airfryer/af-turkey-meatballs-oregano-2.webp",
+      "photo_editorial_status": "not_yet_reviewed"
     },
     {
       "number": 8,
@@ -149,13 +163,15 @@
       "recipe_status": "full_draft_source_reviewed",
       "source_status": "adapted_source_cross_checked",
       "tefal_book_status": "no_direct_equivalent_or_accessory_reference_only",
-      "photo_status": "not_started",
+      "photo_status": "present_pending_visual_review",
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
       "source_urls": [
         "https://www.gzrecipes.com/en/amicincucina/chicken-and-zucchini-meatballs-in-the-air-fryer/"
       ],
-      "batch_number": 1
+      "batch_number": 1,
+      "photo_path": "assets/airfryer/af-chicken-meatballs-zucchini-2.webp",
+      "photo_editorial_status": "not_yet_reviewed"
     },
     {
       "number": 9,
@@ -167,14 +183,16 @@
       "recipe_status": "full_draft_source_reviewed",
       "source_status": "source_cross_checked",
       "tefal_book_status": "no_direct_equivalent_or_accessory_reference_only",
-      "photo_status": "not_started",
+      "photo_status": "present_pending_visual_review",
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
       "source_urls": [
         "https://nwdistrict.ifas.ufl.edu/fcs/files/2020/11/Air-Fryer-Chicken-Kebab-Recipe.pdf",
         "https://www.bbcgoodfood.com/recipes/air-fryer-chicken-tikka-kebabs"
       ],
-      "batch_number": 1
+      "batch_number": 1,
+      "photo_path": "assets/airfryer/af-chicken-skewers-pepper-2.webp",
+      "photo_editorial_status": "not_yet_reviewed"
     },
     {
       "number": 10,
@@ -185,14 +203,16 @@
       "editorial_concept": "Сладкую глазурь наносить ближе к концу, чтобы сахар не подгорел.",
       "recipe_status": "full_draft_source_reviewed",
       "tefal_book_status": "no_direct_equivalent_or_accessory_reference_only",
-      "photo_status": "not_started",
+      "photo_status": "present_pending_visual_review",
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
       "batch_number": 1,
       "source_status": "source_cross_checked",
       "source_urls": [
         "https://www.tropicanabrandsgroup.com/health/recipes/air-fryer-orange-chicken"
-      ]
+      ],
+      "photo_path": "assets/airfryer/af-chicken-thighs-orange-ginger-2.webp",
+      "photo_editorial_status": "not_yet_reviewed"
     },
     {
       "number": 11,
@@ -204,13 +224,15 @@
       "recipe_status": "full_draft_source_reviewed",
       "source_status": "source_cross_checked",
       "tefal_book_status": "no_direct_equivalent_or_accessory_reference_only",
-      "photo_status": "not_started",
+      "photo_status": "present_pending_visual_review",
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
       "source_urls": [
         "https://theoregondietitian.com/air-fryer-stuffed-chicken-breast/"
       ],
-      "batch_number": 2
+      "batch_number": 2,
+      "photo_path": "assets/airfryer/af-chicken-spinach-mozzarella-2.webp",
+      "photo_editorial_status": "not_yet_reviewed"
     },
     {
       "number": 12,
@@ -222,14 +244,16 @@
       "recipe_status": "full_draft_source_reviewed",
       "source_status": "adapted_source_cross_checked",
       "tefal_book_status": "no_direct_equivalent_or_accessory_reference_only",
-      "photo_status": "not_started",
+      "photo_status": "needs_replacement",
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
       "source_urls": [
         "https://recipesairfryer.net/crispy-medallions-in-air-fryer/",
         "https://www.muscleandfitness.com/nutrition/healthy-eating/low-fat-cajun-turkey-medallions-recipe/"
       ],
-      "batch_number": 2
+      "batch_number": 2,
+      "photo_path": "assets/airfryer/af-turkey-medallions-cranberry-2.webp",
+      "photo_editorial_status": "owner_flagged_not_approved"
     },
     {
       "number": 13,
@@ -241,13 +265,15 @@
       "recipe_status": "full_draft_source_reviewed",
       "source_status": "source_cross_checked",
       "tefal_book_status": "no_direct_equivalent_or_accessory_reference_only",
-      "photo_status": "not_started",
+      "photo_status": "present_pending_visual_review",
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
       "source_urls": [
         "https://lovefoodnotcooking.com/recipes/air-fryer-duck-breast/"
       ],
-      "batch_number": 2
+      "batch_number": 2,
+      "photo_path": "assets/airfryer/af-duck-breast-orange-2.webp",
+      "photo_editorial_status": "not_yet_reviewed"
     },
     {
       "number": 14,
@@ -259,13 +285,15 @@
       "recipe_status": "full_draft_source_reviewed",
       "source_status": "source_cross_checked",
       "tefal_book_status": "no_direct_equivalent_or_accessory_reference_only",
-      "photo_status": "not_started",
+      "photo_status": "present_pending_visual_review",
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
       "source_urls": [
         "https://www.ahealthiermichigan.org/stories/food-and-recipes/air-fried-breaded-chicken-parmesan"
       ],
-      "batch_number": 2
+      "batch_number": 2,
+      "photo_path": "assets/airfryer/af-chicken-parmesan-crust-2.webp",
+      "photo_editorial_status": "not_yet_reviewed"
     },
     {
       "number": 15,
@@ -277,13 +305,15 @@
       "recipe_status": "full_draft_source_reviewed",
       "source_status": "adapted_source_cross_checked",
       "tefal_book_status": "no_direct_equivalent_or_accessory_reference_only",
-      "photo_status": "not_started",
+      "photo_status": "present_pending_visual_review",
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
       "source_urls": [
         "https://app.samsungfood.com/recipes/10701950022d47178c3ae17ac8d7e794da6"
       ],
-      "batch_number": 2
+      "batch_number": 2,
+      "photo_path": "assets/airfryer/af-turkey-kofta-cumin-2.webp",
+      "photo_editorial_status": "not_yet_reviewed"
     },
     {
       "number": 16,
@@ -295,13 +325,15 @@
       "recipe_status": "full_draft_source_reviewed",
       "source_status": "adapted_source_cross_checked",
       "tefal_book_status": "no_direct_equivalent_or_accessory_reference_only",
-      "photo_status": "not_started",
+      "photo_status": "present_pending_visual_review",
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
       "source_urls": [
         "https://www.schwartz.co.uk/blogs/recipes/air-fryer-chicken-curry"
       ],
-      "batch_number": 2
+      "batch_number": 2,
+      "photo_path": "assets/airfryer/af-chicken-thighs-curry-2.webp",
+      "photo_editorial_status": "not_yet_reviewed"
     },
     {
       "number": 17,
@@ -313,14 +345,16 @@
       "recipe_status": "full_draft_source_reviewed",
       "source_status": "source_cross_checked",
       "tefal_book_status": "no_direct_equivalent_or_accessory_reference_only",
-      "photo_status": "not_started",
+      "photo_status": "present_pending_visual_review",
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
       "source_urls": [
         "https://www.tastefrance.com/us/recipes/french-classics/air-fryer-chicken-cordon-bleu",
         "https://www.rte.ie/lifestyle/recipes/2023/1214/1420266-kevin-dundons-chicken-cordon-bleu-in-an-air-fryer/"
       ],
-      "batch_number": 2
+      "batch_number": 2,
+      "photo_path": "assets/airfryer/af-chicken-cordon-bleu-2.webp",
+      "photo_editorial_status": "not_yet_reviewed"
     },
     {
       "number": 18,
@@ -332,14 +366,16 @@
       "recipe_status": "full_draft_source_reviewed",
       "source_status": "adapted_source_cross_checked",
       "tefal_book_status": "no_direct_equivalent_or_accessory_reference_only",
-      "photo_status": "not_started",
+      "photo_status": "needs_replacement",
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
       "source_urls": [
         "https://www.delish.com/cooking/recipe-ideas/a39666473/air-fryer-turkey-breakfast-sausage-recipe/",
         "https://therealfooddietitians.com/turkey-apple-sausage-patties/"
       ],
-      "batch_number": 2
+      "batch_number": 2,
+      "photo_path": "assets/airfryer/af-turkey-sausages-apple-2.webp",
+      "photo_editorial_status": "owner_flagged_not_approved"
     },
     {
       "number": 19,
@@ -351,13 +387,15 @@
       "recipe_status": "full_draft_source_reviewed",
       "source_status": "adapted_source_cross_checked",
       "tefal_book_status": "no_direct_equivalent_or_accessory_reference_only",
-      "photo_status": "not_started",
+      "photo_status": "present_pending_visual_review",
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
       "source_urls": [
         "https://app.samsungfood.com/recipes/1073bdce8d90066416a980863019881d254"
       ],
-      "batch_number": 2
+      "batch_number": 2,
+      "photo_path": "assets/airfryer/af-chicken-quarters-lemon-garlic-2.webp",
+      "photo_editorial_status": "not_yet_reviewed"
     },
     {
       "number": 20,
@@ -369,13 +407,15 @@
       "recipe_status": "full_draft_source_reviewed",
       "source_status": "source_cross_checked",
       "tefal_book_status": "no_direct_equivalent_or_accessory_reference_only",
-      "photo_status": "not_started",
+      "photo_status": "present_pending_visual_review",
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
       "source_urls": [
         "https://airfryersrecipe.com/air-fryer-chicken-fajitas/"
       ],
-      "batch_number": 2
+      "batch_number": 2,
+      "photo_path": "assets/airfryer/af-chicken-fajita-strips-2.webp",
+      "photo_editorial_status": "not_yet_reviewed"
     },
     {
       "number": 21,
@@ -387,14 +427,16 @@
       "recipe_status": "full_draft_source_reviewed",
       "source_status": "source_cross_checked",
       "tefal_book_status": "no_direct_equivalent_or_accessory_reference_only",
-      "photo_status": "not_started",
+      "photo_status": "present_pending_visual_review",
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
       "batch_number": 3,
       "source_urls": [
         "https://www.bbcgoodfood.com/recipes/air-fryer-steak",
         "https://www.betterthanbouillon.com/recipes/air-fryer-peppercorn-steak/"
-      ]
+      ],
+      "photo_path": "assets/airfryer/af-pepper-steak-airfryer-2.webp",
+      "photo_editorial_status": "not_yet_reviewed"
     },
     {
       "number": 22,
@@ -406,14 +448,16 @@
       "recipe_status": "full_draft_source_reviewed",
       "source_status": "adapted_source_cross_checked",
       "tefal_book_status": "no_direct_equivalent_or_accessory_reference_only",
-      "photo_status": "not_started",
+      "photo_status": "present_pending_visual_review",
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
       "source_urls": [
         "https://www.bbcgoodfood.com/recipes/air-fryer-steak",
         "https://extension.msstate.edu/publications/nutrition-and-wellness-all-about-air-fryers"
       ],
-      "batch_number": 3
+      "batch_number": 3,
+      "photo_path": "assets/airfryer/af-beef-medallions-rosemary-2.webp",
+      "photo_editorial_status": "not_yet_reviewed"
     },
     {
       "number": 23,
@@ -425,14 +469,16 @@
       "recipe_status": "full_draft_source_reviewed",
       "source_status": "source_cross_checked",
       "tefal_book_status": "no_direct_equivalent_or_accessory_reference_only",
-      "photo_status": "not_started",
+      "photo_status": "present_pending_visual_review",
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
       "batch_number": 3,
       "source_urls": [
         "https://www.arlafoods.co.uk/recipes/air-fryer-meatballs/",
         "https://www.gramcups.com/air-fryer/air-fryer-italian-meatballs"
-      ]
+      ],
+      "photo_path": "assets/airfryer/af-beef-meatballs-oregano-2.webp",
+      "photo_editorial_status": "not_yet_reviewed"
     },
     {
       "number": 24,
@@ -444,13 +490,15 @@
       "recipe_status": "full_draft_source_reviewed",
       "source_status": "source_cross_checked",
       "tefal_book_status": "no_direct_equivalent_or_accessory_reference_only",
-      "photo_status": "not_started",
+      "photo_status": "present_pending_visual_review",
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
       "batch_number": 3,
       "source_urls": [
         "https://www.bbc.co.uk/food/recipes/air_fryer_classic_burger_33956"
-      ]
+      ],
+      "photo_path": "assets/airfryer/af-beef-burgers-2.webp",
+      "photo_editorial_status": "not_yet_reviewed"
     },
     {
       "number": 25,
@@ -462,14 +510,16 @@
       "recipe_status": "full_draft_source_reviewed",
       "source_status": "source_cross_checked",
       "tefal_book_status": "no_direct_equivalent_or_accessory_reference_only",
-      "photo_status": "not_started",
+      "photo_status": "present_pending_visual_review",
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
       "batch_number": 3,
       "source_urls": [
         "https://www.extension.msstate.edu/publications/air-fryer-recipes",
         "https://extension.wvu.edu/files/d/1d1171a8-5f4d-4b06-95af-f3a7357af66e/air-fryer-steak-kebab-recipe.pdf"
-      ]
+      ],
+      "photo_path": "assets/airfryer/af-beef-kebabs-pepper-2.webp",
+      "photo_editorial_status": "not_yet_reviewed"
     },
     {
       "number": 26,
@@ -481,14 +531,16 @@
       "recipe_status": "full_draft_source_reviewed",
       "source_status": "source_cross_checked",
       "tefal_book_status": "no_direct_equivalent_or_accessory_reference_only",
-      "photo_status": "not_started",
+      "photo_status": "present_pending_visual_review",
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
       "batch_number": 3,
       "source_urls": [
         "https://www.airfrycookbook.com/recipes/sticky-air-fryer-honey-mustard-pork-tenderloin",
         "https://justrecipes.net/en/recipes/air-fryer-pork-tenderloin-mustard-glaze/"
-      ]
+      ],
+      "photo_path": "assets/airfryer/af-pork-tenderloin-mustard-thyme-2.webp",
+      "photo_editorial_status": "not_yet_reviewed"
     },
     {
       "number": 27,
@@ -500,14 +552,16 @@
       "recipe_status": "full_draft_source_reviewed",
       "source_status": "source_cross_checked",
       "tefal_book_status": "no_direct_equivalent_or_accessory_reference_only",
-      "photo_status": "not_started",
+      "photo_status": "present_pending_visual_review",
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
       "batch_number": 3,
       "source_urls": [
         "https://instantpot.com/blogs/recipes/air-fried-pork-chop-with-roasted-apples",
         "https://www.williams-sonoma.com/recipe/pork-chops-with-apples-and-sage.html"
-      ]
+      ],
+      "photo_path": "assets/airfryer/af-pork-chops-apple-sage-2.webp",
+      "photo_editorial_status": "not_yet_reviewed"
     },
     {
       "number": 28,
@@ -519,13 +573,15 @@
       "recipe_status": "full_draft_source_reviewed",
       "source_status": "adapted_source_cross_checked",
       "tefal_book_status": "accessory_or_foil_compatibility_requires_exact_model",
-      "photo_status": "not_started",
+      "photo_status": "present_pending_visual_review",
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
       "source_urls": [
         "https://cazolita.com/en/recipe/af-costillas-bbq-af/"
       ],
-      "batch_number": 3
+      "batch_number": 3,
+      "photo_path": "assets/airfryer/af-pork-ribs-bbq-2.webp",
+      "photo_editorial_status": "not_yet_reviewed"
     },
     {
       "number": 29,
@@ -537,13 +593,15 @@
       "recipe_status": "full_draft_source_reviewed",
       "source_status": "source_cross_checked",
       "tefal_book_status": "no_direct_equivalent_or_accessory_reference_only",
-      "photo_status": "not_started",
+      "photo_status": "present_pending_visual_review",
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
       "batch_number": 3,
       "source_urls": [
         "https://instantpot.co.uk/air-fryer-honey-dijon-pork-schnitzel/"
-      ]
+      ],
+      "photo_path": "assets/airfryer/af-pork-schnitzel-2.webp",
+      "photo_editorial_status": "not_yet_reviewed"
     },
     {
       "number": 30,
@@ -555,13 +613,15 @@
       "recipe_status": "full_draft_source_reviewed",
       "source_status": "source_cross_checked",
       "tefal_book_status": "no_direct_equivalent_or_accessory_reference_only",
-      "photo_status": "not_started",
+      "photo_status": "present_pending_visual_review",
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
       "batch_number": 3,
       "source_urls": [
         "https://app.samsungfood.com/recipes/10701952c7715ab7bf0a746013c4cf90442"
-      ]
+      ],
+      "photo_path": "assets/airfryer/af-pork-meatballs-paprika-2.webp",
+      "photo_editorial_status": "not_yet_reviewed"
     },
     {
       "number": 31,
@@ -573,10 +633,12 @@
       "recipe_status": "full_draft_source_reviewed",
       "source_status": "cross_checked",
       "tefal_book_status": "direct_or_method_reference_compared",
-      "photo_status": "not_started",
+      "photo_status": "present_pending_visual_review",
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
-      "batch_number": 4
+      "batch_number": 4,
+      "photo_path": "assets/airfryer/af-lamb-chops-rosemary-2.webp",
+      "photo_editorial_status": "not_yet_reviewed"
     },
     {
       "number": 32,
@@ -588,10 +650,12 @@
       "recipe_status": "full_draft_source_reviewed",
       "source_status": "cross_checked",
       "tefal_book_status": "reference_compared_not_equivalent",
-      "photo_status": "not_started",
+      "photo_status": "present_pending_visual_review",
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
-      "batch_number": 4
+      "batch_number": 4,
+      "photo_path": "assets/airfryer/af-lamb-kofta-cumin-2.webp",
+      "photo_editorial_status": "not_yet_reviewed"
     },
     {
       "number": 33,
@@ -603,10 +667,12 @@
       "recipe_status": "full_draft_source_reviewed",
       "source_status": "cross_checked",
       "tefal_book_status": "reference_compared_not_equivalent",
-      "photo_status": "not_started",
+      "photo_status": "present_pending_visual_review",
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
-      "batch_number": 4
+      "batch_number": 4,
+      "photo_path": "assets/airfryer/af-lamb-meatballs-mint-2.webp",
+      "photo_editorial_status": "not_yet_reviewed"
     },
     {
       "number": 34,
@@ -618,10 +684,12 @@
       "recipe_status": "full_draft_source_reviewed",
       "source_status": "cross_checked",
       "tefal_book_status": "reference_compared_not_equivalent",
-      "photo_status": "not_started",
+      "photo_status": "present_pending_visual_review",
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
-      "batch_number": 4
+      "batch_number": 4,
+      "photo_path": "assets/airfryer/af-mini-meatloaf-2.webp",
+      "photo_editorial_status": "not_yet_reviewed"
     },
     {
       "number": 35,
@@ -633,10 +701,12 @@
       "recipe_status": "full_draft_source_reviewed",
       "source_status": "cross_checked",
       "tefal_book_status": "reference_compared_not_equivalent",
-      "photo_status": "not_started",
+      "photo_status": "present_pending_visual_review",
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
-      "batch_number": 4
+      "batch_number": 4,
+      "photo_path": "assets/airfryer/af-pork-belly-bites-2.webp",
+      "photo_editorial_status": "not_yet_reviewed"
     },
     {
       "number": 36,
@@ -648,10 +718,12 @@
       "recipe_status": "full_draft_source_reviewed",
       "source_status": "cross_checked",
       "tefal_book_status": "reference_compared_not_equivalent",
-      "photo_status": "not_started",
+      "photo_status": "present_pending_visual_review",
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
-      "batch_number": 4
+      "batch_number": 4,
+      "photo_path": "assets/airfryer/af-sausages-peppers-onions-2.webp",
+      "photo_editorial_status": "not_yet_reviewed"
     },
     {
       "number": 37,
@@ -663,10 +735,12 @@
       "recipe_status": "full_draft_source_reviewed",
       "source_status": "cross_checked",
       "tefal_book_status": "reference_compared_not_equivalent",
-      "photo_status": "not_started",
+      "photo_status": "present_pending_visual_review",
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
-      "batch_number": 4
+      "batch_number": 4,
+      "photo_path": "assets/airfryer/af-salmon-lemon-herbs-2.webp",
+      "photo_editorial_status": "not_yet_reviewed"
     },
     {
       "number": 38,
@@ -678,10 +752,12 @@
       "recipe_status": "full_draft_source_reviewed",
       "source_status": "cross_checked",
       "tefal_book_status": "reference_compared_not_equivalent",
-      "photo_status": "not_started",
+      "photo_status": "present_pending_visual_review",
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
-      "batch_number": 4
+      "batch_number": 4,
+      "photo_path": "assets/airfryer/af-salmon-miso-sesame-2.webp",
+      "photo_editorial_status": "not_yet_reviewed"
     },
     {
       "number": 39,
@@ -693,10 +769,12 @@
       "recipe_status": "full_draft_source_reviewed",
       "source_status": "cross_checked",
       "tefal_book_status": "reference_compared_not_equivalent",
-      "photo_status": "not_started",
+      "photo_status": "present_pending_visual_review",
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
-      "batch_number": 4
+      "batch_number": 4,
+      "photo_path": "assets/airfryer/af-trout-dill-lemon-2.webp",
+      "photo_editorial_status": "not_yet_reviewed"
     },
     {
       "number": 40,
@@ -708,10 +786,12 @@
       "recipe_status": "full_draft_source_reviewed",
       "source_status": "cross_checked",
       "tefal_book_status": "direct_or_method_reference_compared",
-      "photo_status": "not_started",
+      "photo_status": "present_pending_visual_review",
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
-      "batch_number": 4
+      "batch_number": 4,
+      "photo_path": "assets/airfryer/af-cod-herb-crust-2.webp",
+      "photo_editorial_status": "not_yet_reviewed"
     },
     {
       "number": 41,
@@ -723,10 +803,12 @@
       "recipe_status": "full_draft_source_reviewed",
       "source_status": "cross_checked",
       "tefal_book_status": "reference_compared_not_equivalent",
-      "photo_status": "not_started",
+      "photo_status": "present_pending_visual_review",
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
-      "batch_number": 5
+      "batch_number": 5,
+      "photo_path": "assets/airfryer/af-haddock-paprika-2.webp",
+      "photo_editorial_status": "not_yet_reviewed"
     },
     {
       "number": 42,
@@ -738,10 +820,12 @@
       "recipe_status": "full_draft_source_reviewed",
       "source_status": "cross_checked",
       "tefal_book_status": "no_direct_equivalent",
-      "photo_status": "not_started",
+      "photo_status": "present_pending_visual_review",
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
-      "batch_number": 5
+      "batch_number": 5,
+      "photo_path": "assets/airfryer/af-sea-bass-whole-lemon-2.webp",
+      "photo_editorial_status": "not_yet_reviewed"
     },
     {
       "number": 43,
@@ -753,10 +837,12 @@
       "recipe_status": "full_draft_source_reviewed",
       "source_status": "cross_checked",
       "tefal_book_status": "direct_or_method_reference_compared",
-      "photo_status": "not_started",
+      "photo_status": "present_pending_visual_review",
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
-      "batch_number": 5
+      "batch_number": 5,
+      "photo_path": "assets/airfryer/af-dorada-fillets-herbs-2.webp",
+      "photo_editorial_status": "not_yet_reviewed"
     },
     {
       "number": 44,
@@ -768,10 +854,12 @@
       "recipe_status": "full_draft_source_reviewed",
       "source_status": "cross_checked",
       "tefal_book_status": "reference_compared_not_equivalent",
-      "photo_status": "not_started",
+      "photo_status": "present_pending_visual_review",
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
-      "batch_number": 5
+      "batch_number": 5,
+      "photo_path": "assets/airfryer/af-shrimp-garlic-lemon-2.webp",
+      "photo_editorial_status": "not_yet_reviewed"
     },
     {
       "number": 45,
@@ -783,10 +871,12 @@
       "recipe_status": "full_draft_source_reviewed",
       "source_status": "cross_checked",
       "tefal_book_status": "reference_compared_not_equivalent",
-      "photo_status": "not_started",
+      "photo_status": "present_pending_visual_review",
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
-      "batch_number": 5
+      "batch_number": 5,
+      "photo_path": "assets/airfryer/af-shrimp-coconut-crust-2.webp",
+      "photo_editorial_status": "not_yet_reviewed"
     },
     {
       "number": 46,
@@ -798,10 +888,12 @@
       "recipe_status": "full_draft_source_reviewed",
       "source_status": "cross_checked",
       "tefal_book_status": "no_direct_equivalent",
-      "photo_status": "not_started",
+      "photo_status": "present_pending_visual_review",
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
-      "batch_number": 5
+      "batch_number": 5,
+      "photo_path": "assets/airfryer/af-calamari-rings-2.webp",
+      "photo_editorial_status": "not_yet_reviewed"
     },
     {
       "number": 47,
@@ -813,10 +905,12 @@
       "recipe_status": "full_draft_source_reviewed",
       "source_status": "cross_checked",
       "tefal_book_status": "no_direct_equivalent",
-      "photo_status": "not_started",
+      "photo_status": "present_pending_visual_review",
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
-      "batch_number": 5
+      "batch_number": 5,
+      "photo_path": "assets/airfryer/af-scallops-parsley-butter-2.webp",
+      "photo_editorial_status": "not_yet_reviewed"
     },
     {
       "number": 48,
@@ -828,10 +922,12 @@
       "recipe_status": "full_draft_source_reviewed",
       "source_status": "cross_checked",
       "tefal_book_status": "no_direct_equivalent",
-      "photo_status": "not_started",
+      "photo_status": "present_pending_visual_review",
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
-      "batch_number": 5
+      "batch_number": 5,
+      "photo_path": "assets/airfryer/af-tuna-sesame-steak-2.webp",
+      "photo_editorial_status": "not_yet_reviewed"
     },
     {
       "number": 49,
@@ -843,10 +939,12 @@
       "recipe_status": "full_draft_source_reviewed",
       "source_status": "cross_checked",
       "tefal_book_status": "no_direct_equivalent",
-      "photo_status": "not_started",
+      "photo_status": "present_pending_visual_review",
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
-      "batch_number": 5
+      "batch_number": 5,
+      "photo_path": "assets/airfryer/af-mackerel-lemon-herbs-2.webp",
+      "photo_editorial_status": "not_yet_reviewed"
     },
     {
       "number": 50,
@@ -858,10 +956,12 @@
       "recipe_status": "full_draft_source_reviewed",
       "source_status": "cross_checked",
       "tefal_book_status": "no_direct_equivalent",
-      "photo_status": "not_started",
+      "photo_status": "present_pending_visual_review",
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
-      "batch_number": 5
+      "batch_number": 5,
+      "photo_path": "assets/airfryer/af-salmon-potato-fishcakes-2.webp",
+      "photo_editorial_status": "not_yet_reviewed"
     },
     {
       "number": 51,
@@ -873,10 +973,12 @@
       "recipe_status": "full_draft_source_reviewed",
       "source_status": "cross_checked",
       "tefal_book_status": "no_direct_equivalent",
-      "photo_status": "not_started",
+      "photo_status": "present_pending_visual_review",
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
-      "batch_number": 6
+      "batch_number": 6,
+      "photo_path": "assets/airfryer/af-crab-cakes-herbs-2.webp",
+      "photo_editorial_status": "not_yet_reviewed"
     },
     {
       "number": 52,
@@ -888,10 +990,12 @@
       "recipe_status": "full_draft_source_reviewed",
       "source_status": "cross_checked",
       "tefal_book_status": "no_direct_equivalent",
-      "photo_status": "not_started",
+      "photo_status": "present_pending_visual_review",
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
-      "batch_number": 6
+      "batch_number": 6,
+      "photo_path": "assets/airfryer/af-sardines-lemon-2.webp",
+      "photo_editorial_status": "not_yet_reviewed"
     },
     {
       "number": 53,
@@ -903,10 +1007,12 @@
       "recipe_status": "full_draft_source_reviewed",
       "source_status": "cross_checked",
       "tefal_book_status": "direct_or_method_reference_compared",
-      "photo_status": "not_started",
+      "photo_status": "present_pending_visual_review",
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
-      "batch_number": 6
+      "batch_number": 6,
+      "photo_path": "assets/airfryer/af-cod-fingers-homemade-2.webp",
+      "photo_editorial_status": "not_yet_reviewed"
     },
     {
       "number": 54,
@@ -918,10 +1024,12 @@
       "recipe_status": "full_draft_source_reviewed",
       "source_status": "cross_checked",
       "tefal_book_status": "no_direct_equivalent",
-      "photo_status": "not_started",
+      "photo_status": "present_pending_visual_review",
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
-      "batch_number": 6
+      "batch_number": 6,
+      "photo_path": "assets/airfryer/af-stuffed-squid-rice-herbs-2.webp",
+      "photo_editorial_status": "not_yet_reviewed"
     },
     {
       "number": 55,
@@ -933,10 +1041,12 @@
       "recipe_status": "full_draft_source_reviewed",
       "source_status": "cross_checked",
       "tefal_book_status": "reference_compared_not_equivalent",
-      "photo_status": "not_started",
+      "photo_status": "present_pending_visual_review",
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
-      "batch_number": 6
+      "batch_number": 6,
+      "photo_path": "assets/airfryer/af-potato-wedges-2.webp",
+      "photo_editorial_status": "not_yet_reviewed"
     },
     {
       "number": 56,
@@ -948,10 +1058,12 @@
       "recipe_status": "full_draft_source_reviewed",
       "source_status": "cross_checked",
       "tefal_book_status": "reference_compared_not_equivalent",
-      "photo_status": "not_started",
+      "photo_status": "present_pending_visual_review",
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
-      "batch_number": 6
+      "batch_number": 6,
+      "photo_path": "assets/airfryer/af-brussels-lemon-2.webp",
+      "photo_editorial_status": "not_yet_reviewed"
     },
     {
       "number": 57,
@@ -963,10 +1075,12 @@
       "recipe_status": "full_draft_source_reviewed",
       "source_status": "cross_checked",
       "tefal_book_status": "reference_compared_not_equivalent",
-      "photo_status": "not_started",
+      "photo_status": "present_pending_visual_review",
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
-      "batch_number": 6
+      "batch_number": 6,
+      "photo_path": "assets/airfryer/af-mushrooms-thyme-toast-2.webp",
+      "photo_editorial_status": "not_yet_reviewed"
     },
     {
       "number": 58,
@@ -978,10 +1092,12 @@
       "recipe_status": "full_draft_source_reviewed",
       "source_status": "cross_checked",
       "tefal_book_status": "reference_compared_not_equivalent",
-      "photo_status": "not_started",
+      "photo_status": "present_pending_visual_review",
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
-      "batch_number": 6
+      "batch_number": 6,
+      "photo_path": "assets/airfryer/af-carrots-maple-thyme-2.webp",
+      "photo_editorial_status": "not_yet_reviewed"
     },
     {
       "number": 59,
@@ -993,10 +1109,12 @@
       "recipe_status": "full_draft_source_reviewed",
       "source_status": "cross_checked",
       "tefal_book_status": "reference_compared_not_equivalent",
-      "photo_status": "not_started",
+      "photo_status": "present_pending_visual_review",
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
-      "batch_number": 6
+      "batch_number": 6,
+      "photo_path": "assets/airfryer/af-baby-potatoes-rosemary-2.webp",
+      "photo_editorial_status": "not_yet_reviewed"
     },
     {
       "number": 60,
@@ -1008,10 +1126,12 @@
       "recipe_status": "full_draft_source_reviewed",
       "source_status": "cross_checked",
       "tefal_book_status": "direct_recipe_compared",
-      "photo_status": "not_started",
+      "photo_status": "present_pending_visual_review",
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
-      "batch_number": 6
+      "batch_number": 6,
+      "photo_path": "assets/airfryer/af-sweet-potato-fries-2.webp",
+      "photo_editorial_status": "not_yet_reviewed"
     },
     {
       "number": 61,
@@ -1023,10 +1143,12 @@
       "recipe_status": "full_draft_source_reviewed",
       "source_status": "cross_checked",
       "tefal_book_status": "direct_or_method_reference_compared",
-      "photo_status": "not_started",
+      "photo_status": "present_pending_visual_review",
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
-      "batch_number": 7
+      "batch_number": 7,
+      "photo_path": "assets/airfryer/af-cauliflower-cumin-2.webp",
+      "photo_editorial_status": "not_yet_reviewed"
     },
     {
       "number": 62,
@@ -1038,10 +1160,12 @@
       "recipe_status": "full_draft_source_reviewed",
       "source_status": "cross_checked",
       "tefal_book_status": "reference_compared_not_equivalent",
-      "photo_status": "not_started",
+      "photo_status": "present_pending_visual_review",
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
-      "batch_number": 7
+      "batch_number": 7,
+      "photo_path": "assets/airfryer/af-broccoli-garlic-lemon-2.webp",
+      "photo_editorial_status": "not_yet_reviewed"
     },
     {
       "number": 63,
@@ -1053,10 +1177,12 @@
       "recipe_status": "full_draft_source_reviewed",
       "source_status": "cross_checked",
       "tefal_book_status": "no_direct_equivalent",
-      "photo_status": "not_started",
+      "photo_status": "present_pending_visual_review",
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
-      "batch_number": 7
+      "batch_number": 7,
+      "photo_path": "assets/airfryer/af-zucchini-parmesan-2.webp",
+      "photo_editorial_status": "not_yet_reviewed"
     },
     {
       "number": 64,
@@ -1068,10 +1194,12 @@
       "recipe_status": "full_draft_source_reviewed",
       "source_status": "cross_checked",
       "tefal_book_status": "reference_compared_not_equivalent",
-      "photo_status": "not_started",
+      "photo_status": "present_pending_visual_review",
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
-      "batch_number": 7
+      "batch_number": 7,
+      "photo_path": "assets/airfryer/af-eggplant-miso-2.webp",
+      "photo_editorial_status": "not_yet_reviewed"
     },
     {
       "number": 65,
@@ -1083,10 +1211,12 @@
       "recipe_status": "full_draft_source_reviewed",
       "source_status": "cross_checked",
       "tefal_book_status": "no_direct_equivalent",
-      "photo_status": "not_started",
+      "photo_status": "present_pending_visual_review",
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
-      "batch_number": 7
+      "batch_number": 7,
+      "photo_path": "assets/airfryer/af-peppers-feta-stuffed-2.webp",
+      "photo_editorial_status": "not_yet_reviewed"
     },
     {
       "number": 66,
@@ -1098,10 +1228,12 @@
       "recipe_status": "full_draft_source_reviewed",
       "source_status": "cross_checked",
       "tefal_book_status": "reference_compared_not_equivalent",
-      "photo_status": "not_started",
+      "photo_status": "present_pending_visual_review",
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
-      "batch_number": 7
+      "batch_number": 7,
+      "photo_path": "assets/airfryer/af-mushrooms-herb-stuffed-2.webp",
+      "photo_editorial_status": "not_yet_reviewed"
     },
     {
       "number": 67,
@@ -1113,10 +1245,12 @@
       "recipe_status": "full_draft_source_reviewed",
       "source_status": "cross_checked",
       "tefal_book_status": "no_direct_equivalent",
-      "photo_status": "not_started",
+      "photo_status": "present_pending_visual_review",
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
-      "batch_number": 7
+      "batch_number": 7,
+      "photo_path": "assets/airfryer/af-corn-paprika-2.webp",
+      "photo_editorial_status": "not_yet_reviewed"
     },
     {
       "number": 68,
@@ -1128,10 +1262,12 @@
       "recipe_status": "full_draft_source_reviewed",
       "source_status": "cross_checked",
       "tefal_book_status": "no_direct_equivalent",
-      "photo_status": "not_started",
+      "photo_status": "present_pending_visual_review",
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
-      "batch_number": 7
+      "batch_number": 7,
+      "photo_path": "assets/airfryer/af-asparagus-parmesan-2.webp",
+      "photo_editorial_status": "not_yet_reviewed"
     },
     {
       "number": 69,
@@ -1143,10 +1279,12 @@
       "recipe_status": "full_draft_source_reviewed",
       "source_status": "cross_checked",
       "tefal_book_status": "no_direct_equivalent",
-      "photo_status": "not_started",
+      "photo_status": "present_pending_visual_review",
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
-      "batch_number": 7
+      "batch_number": 7,
+      "photo_path": "assets/airfryer/af-green-beans-sesame-2.webp",
+      "photo_editorial_status": "not_yet_reviewed"
     },
     {
       "number": 70,
@@ -1158,10 +1296,12 @@
       "recipe_status": "full_draft_source_reviewed",
       "source_status": "cross_checked",
       "tefal_book_status": "reference_compared_not_equivalent",
-      "photo_status": "not_started",
+      "photo_status": "present_pending_visual_review",
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
-      "batch_number": 7
+      "batch_number": 7,
+      "photo_path": "assets/airfryer/af-beetroot-balsamic-2.webp",
+      "photo_editorial_status": "not_yet_reviewed"
     },
     {
       "number": 71,
@@ -1173,10 +1313,12 @@
       "recipe_status": "full_draft_source_reviewed",
       "source_status": "cross_checked",
       "tefal_book_status": "no_direct_equivalent",
-      "photo_status": "not_started",
+      "photo_status": "present_pending_visual_review",
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
-      "batch_number": 8
+      "batch_number": 8,
+      "photo_path": "assets/airfryer/af-cherry-tomatoes-garlic-2.webp",
+      "photo_editorial_status": "not_yet_reviewed"
     },
     {
       "number": 72,
@@ -1188,10 +1330,12 @@
       "recipe_status": "full_draft_source_reviewed",
       "source_status": "cross_checked",
       "tefal_book_status": "reference_compared_not_equivalent",
-      "photo_status": "not_started",
+      "photo_status": "present_pending_visual_review",
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
-      "batch_number": 8
+      "batch_number": 8,
+      "photo_path": "assets/airfryer/af-butternut-squash-sage-2.webp",
+      "photo_editorial_status": "not_yet_reviewed"
     },
     {
       "number": 73,
@@ -1203,10 +1347,12 @@
       "recipe_status": "full_draft_source_reviewed",
       "source_status": "cross_checked",
       "tefal_book_status": "no_direct_equivalent",
-      "photo_status": "not_started",
+      "photo_status": "present_pending_visual_review",
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
-      "batch_number": 8
+      "batch_number": 8,
+      "photo_path": "assets/airfryer/af-frittata-spinach-feta-2.webp",
+      "photo_editorial_status": "not_yet_reviewed"
     },
     {
       "number": 74,
@@ -1218,10 +1364,12 @@
       "recipe_status": "full_draft_source_reviewed",
       "source_status": "cross_checked",
       "tefal_book_status": "no_direct_equivalent",
-      "photo_status": "not_started",
+      "photo_status": "present_pending_visual_review",
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
-      "batch_number": 8
+      "batch_number": 8,
+      "photo_path": "assets/airfryer/af-baked-eggs-tomato-pepper-2.webp",
+      "photo_editorial_status": "not_yet_reviewed"
     },
     {
       "number": 75,
@@ -1233,10 +1381,12 @@
       "recipe_status": "full_draft_source_reviewed",
       "source_status": "cross_checked",
       "tefal_book_status": "no_direct_equivalent",
-      "photo_status": "not_started",
+      "photo_status": "present_pending_visual_review",
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
-      "batch_number": 8
+      "batch_number": 8,
+      "photo_path": "assets/airfryer/af-syrniki-airfryer-2.webp",
+      "photo_editorial_status": "not_yet_reviewed"
     },
     {
       "number": 76,
@@ -1248,10 +1398,12 @@
       "recipe_status": "full_draft_source_reviewed",
       "source_status": "cross_checked",
       "tefal_book_status": "reference_compared_not_equivalent",
-      "photo_status": "not_started",
+      "photo_status": "present_pending_visual_review",
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
-      "batch_number": 8
+      "batch_number": 8,
+      "photo_path": "assets/airfryer/af-breakfast-potato-hash-2.webp",
+      "photo_editorial_status": "not_yet_reviewed"
     },
     {
       "number": 77,
@@ -1263,10 +1415,12 @@
       "recipe_status": "full_draft_source_reviewed",
       "source_status": "cross_checked",
       "tefal_book_status": "no_direct_equivalent",
-      "photo_status": "not_started",
+      "photo_status": "present_pending_visual_review",
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
-      "batch_number": 8
+      "batch_number": 8,
+      "photo_path": "assets/airfryer/af-oatmeal-apple-cups-2.webp",
+      "photo_editorial_status": "not_yet_reviewed"
     },
     {
       "number": 78,
@@ -1278,10 +1432,12 @@
       "recipe_status": "full_draft_source_reviewed",
       "source_status": "cross_checked",
       "tefal_book_status": "no_direct_equivalent",
-      "photo_status": "not_started",
+      "photo_status": "present_pending_visual_review",
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
-      "batch_number": 8
+      "batch_number": 8,
+      "photo_path": "assets/airfryer/af-puff-pastry-spinach-feta-2.webp",
+      "photo_editorial_status": "not_yet_reviewed"
     },
     {
       "number": 79,
@@ -1293,10 +1449,12 @@
       "recipe_status": "full_draft_source_reviewed",
       "source_status": "cross_checked",
       "tefal_book_status": "no_direct_equivalent",
-      "photo_status": "not_started",
+      "photo_status": "present_pending_visual_review",
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
-      "batch_number": 8
+      "batch_number": 8,
+      "photo_path": "assets/airfryer/af-mini-focaccia-tomato-2.webp",
+      "photo_editorial_status": "not_yet_reviewed"
     },
     {
       "number": 80,
@@ -1308,10 +1466,12 @@
       "recipe_status": "full_draft_source_reviewed",
       "source_status": "cross_checked",
       "tefal_book_status": "no_direct_equivalent",
-      "photo_status": "not_started",
+      "photo_status": "present_pending_visual_review",
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
-      "batch_number": 8
+      "batch_number": 8,
+      "photo_path": "assets/airfryer/af-pita-pizza-mozzarella-basil-2.webp",
+      "photo_editorial_status": "not_yet_reviewed"
     },
     {
       "number": 81,
@@ -1323,10 +1483,12 @@
       "recipe_status": "full_draft_source_reviewed",
       "source_status": "cross_checked",
       "tefal_book_status": "no_direct_equivalent",
-      "photo_status": "not_started",
+      "photo_status": "present_pending_visual_review",
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
-      "batch_number": 9
+      "batch_number": 9,
+      "photo_path": "assets/airfryer/af-croissant-ham-cheese-2.webp",
+      "photo_editorial_status": "not_yet_reviewed"
     },
     {
       "number": 82,
@@ -1338,10 +1500,12 @@
       "recipe_status": "full_draft_source_reviewed",
       "source_status": "cross_checked",
       "tefal_book_status": "no_direct_equivalent",
-      "photo_status": "not_started",
+      "photo_status": "present_pending_visual_review",
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
-      "batch_number": 9
+      "batch_number": 9,
+      "photo_path": "assets/airfryer/af-cottage-cheese-berry-muffins-2.webp",
+      "photo_editorial_status": "not_yet_reviewed"
     },
     {
       "number": 83,
@@ -1353,10 +1517,12 @@
       "recipe_status": "full_draft_source_reviewed",
       "source_status": "cross_checked",
       "tefal_book_status": "no_direct_equivalent",
-      "photo_status": "not_started",
+      "photo_status": "present_pending_visual_review",
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
-      "batch_number": 9
+      "batch_number": 9,
+      "photo_path": "assets/airfryer/af-chickpeas-paprika-2.webp",
+      "photo_editorial_status": "not_yet_reviewed"
     },
     {
       "number": 84,
@@ -1368,10 +1534,12 @@
       "recipe_status": "full_draft_source_reviewed",
       "source_status": "cross_checked",
       "tefal_book_status": "no_direct_equivalent",
-      "photo_status": "not_started",
+      "photo_status": "present_pending_visual_review",
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
-      "batch_number": 9
+      "batch_number": 9,
+      "photo_path": "assets/airfryer/af-pita-chips-rosemary-2.webp",
+      "photo_editorial_status": "not_yet_reviewed"
     },
     {
       "number": 85,
@@ -1383,10 +1551,12 @@
       "recipe_status": "full_draft_source_reviewed",
       "source_status": "cross_checked",
       "tefal_book_status": "no_direct_equivalent",
-      "photo_status": "not_started",
+      "photo_status": "present_pending_visual_review",
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
-      "batch_number": 9
+      "batch_number": 9,
+      "photo_path": "assets/airfryer/af-zucchini-fritters-2.webp",
+      "photo_editorial_status": "not_yet_reviewed"
     },
     {
       "number": 86,
@@ -1398,10 +1568,12 @@
       "recipe_status": "full_draft_source_reviewed",
       "source_status": "cross_checked",
       "tefal_book_status": "no_direct_equivalent",
-      "photo_status": "not_started",
+      "photo_status": "present_pending_visual_review",
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
-      "batch_number": 9
+      "batch_number": 9,
+      "photo_path": "assets/airfryer/af-halloumi-fries-sesame-2.webp",
+      "photo_editorial_status": "not_yet_reviewed"
     },
     {
       "number": 87,
@@ -1413,10 +1585,12 @@
       "recipe_status": "full_draft_source_reviewed",
       "source_status": "cross_checked",
       "tefal_book_status": "no_direct_equivalent",
-      "photo_status": "not_started",
+      "photo_status": "present_pending_visual_review",
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
-      "batch_number": 9
+      "batch_number": 9,
+      "photo_path": "assets/airfryer/af-crispy-tofu-sesame-2.webp",
+      "photo_editorial_status": "not_yet_reviewed"
     },
     {
       "number": 88,
@@ -1428,10 +1602,12 @@
       "recipe_status": "full_draft_source_reviewed",
       "source_status": "cross_checked",
       "tefal_book_status": "no_direct_equivalent",
-      "photo_status": "not_started",
+      "photo_status": "present_pending_visual_review",
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
-      "batch_number": 9
+      "batch_number": 9,
+      "photo_path": "assets/airfryer/af-polenta-fries-parmesan-2.webp",
+      "photo_editorial_status": "not_yet_reviewed"
     },
     {
       "number": 89,
@@ -1443,10 +1619,12 @@
       "recipe_status": "full_draft_source_reviewed",
       "source_status": "cross_checked",
       "tefal_book_status": "no_direct_equivalent",
-      "photo_status": "not_started",
+      "photo_status": "present_pending_visual_review",
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
-      "batch_number": 9
+      "batch_number": 9,
+      "photo_path": "assets/airfryer/af-dates-walnut-goat-cheese-2.webp",
+      "photo_editorial_status": "not_yet_reviewed"
     },
     {
       "number": 90,
@@ -1458,10 +1636,12 @@
       "recipe_status": "full_draft_source_reviewed",
       "source_status": "cross_checked",
       "tefal_book_status": "no_direct_equivalent",
-      "photo_status": "not_started",
+      "photo_status": "present_pending_visual_review",
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
-      "batch_number": 9
+      "batch_number": 9,
+      "photo_path": "assets/airfryer/af-rice-paper-rolls-vegetables-2.webp",
+      "photo_editorial_status": "not_yet_reviewed"
     },
     {
       "number": 91,
@@ -1473,10 +1653,12 @@
       "recipe_status": "full_draft_source_reviewed",
       "source_status": "cross_checked",
       "tefal_book_status": "no_direct_equivalent",
-      "photo_status": "not_started",
+      "photo_status": "present_pending_visual_review",
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
-      "batch_number": 10
+      "batch_number": 10,
+      "photo_path": "assets/airfryer/af-baked-apples-cinnamon-2.webp",
+      "photo_editorial_status": "not_yet_reviewed"
     },
     {
       "number": 92,
@@ -1488,10 +1670,12 @@
       "recipe_status": "full_draft_source_reviewed",
       "source_status": "cross_checked",
       "tefal_book_status": "no_direct_equivalent",
-      "photo_status": "not_started",
+      "photo_status": "present_pending_visual_review",
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
-      "batch_number": 10
+      "batch_number": 10,
+      "photo_path": "assets/airfryer/af-pears-honey-walnuts-2.webp",
+      "photo_editorial_status": "not_yet_reviewed"
     },
     {
       "number": 93,
@@ -1503,10 +1687,12 @@
       "recipe_status": "full_draft_source_reviewed",
       "source_status": "cross_checked",
       "tefal_book_status": "no_direct_equivalent",
-      "photo_status": "not_started",
+      "photo_status": "present_pending_visual_review",
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
-      "batch_number": 10
+      "batch_number": 10,
+      "photo_path": "assets/airfryer/af-banana-chocolate-parcels-2.webp",
+      "photo_editorial_status": "not_yet_reviewed"
     },
     {
       "number": 94,
@@ -1518,10 +1704,12 @@
       "recipe_status": "full_draft_source_reviewed",
       "source_status": "cross_checked",
       "tefal_book_status": "no_direct_equivalent",
-      "photo_status": "not_started",
+      "photo_status": "present_pending_visual_review",
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
-      "batch_number": 10
+      "batch_number": 10,
+      "photo_path": "assets/airfryer/af-peaches-mascarpone-2.webp",
+      "photo_editorial_status": "not_yet_reviewed"
     },
     {
       "number": 95,
@@ -1533,10 +1721,12 @@
       "recipe_status": "full_draft_source_reviewed",
       "source_status": "cross_checked",
       "tefal_book_status": "no_direct_equivalent",
-      "photo_status": "not_started",
+      "photo_status": "present_pending_visual_review",
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
-      "batch_number": 10
+      "batch_number": 10,
+      "photo_path": "assets/airfryer/af-pineapple-cinnamon-2.webp",
+      "photo_editorial_status": "not_yet_reviewed"
     },
     {
       "number": 96,
@@ -1548,10 +1738,12 @@
       "recipe_status": "full_draft_source_reviewed",
       "source_status": "cross_checked",
       "tefal_book_status": "no_direct_equivalent",
-      "photo_status": "not_started",
+      "photo_status": "present_pending_visual_review",
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
-      "batch_number": 10
+      "batch_number": 10,
+      "photo_path": "assets/airfryer/af-mini-cheesecakes-2.webp",
+      "photo_editorial_status": "not_yet_reviewed"
     },
     {
       "number": 97,
@@ -1563,10 +1755,12 @@
       "recipe_status": "full_draft_source_reviewed",
       "source_status": "cross_checked",
       "tefal_book_status": "no_direct_equivalent",
-      "photo_status": "not_started",
+      "photo_status": "present_pending_visual_review",
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
-      "batch_number": 10
+      "batch_number": 10,
+      "photo_path": "assets/airfryer/af-chocolate-fondants-2.webp",
+      "photo_editorial_status": "not_yet_reviewed"
     },
     {
       "number": 98,
@@ -1578,10 +1772,12 @@
       "recipe_status": "full_draft_source_reviewed",
       "source_status": "cross_checked",
       "tefal_book_status": "no_direct_equivalent",
-      "photo_status": "not_started",
+      "photo_status": "present_pending_visual_review",
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
-      "batch_number": 10
+      "batch_number": 10,
+      "photo_path": "assets/airfryer/af-berry-crumble-2.webp",
+      "photo_editorial_status": "not_yet_reviewed"
     },
     {
       "number": 99,
@@ -1593,10 +1789,12 @@
       "recipe_status": "full_draft_source_reviewed",
       "source_status": "cross_checked",
       "tefal_book_status": "no_direct_equivalent",
-      "photo_status": "not_started",
+      "photo_status": "present_pending_visual_review",
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
-      "batch_number": 10
+      "batch_number": 10,
+      "photo_path": "assets/airfryer/af-apple-puff-pastry-roses-2.webp",
+      "photo_editorial_status": "not_yet_reviewed"
     },
     {
       "number": 100,
@@ -1608,10 +1806,12 @@
       "recipe_status": "full_draft_source_reviewed",
       "source_status": "cross_checked",
       "tefal_book_status": "no_direct_equivalent",
-      "photo_status": "not_started",
+      "photo_status": "present_pending_visual_review",
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
-      "batch_number": 10
+      "batch_number": 10,
+      "photo_path": "assets/airfryer/af-coconut-macaroons-2.webp",
+      "photo_editorial_status": "not_yet_reviewed"
     }
   ],
   "release_gates": [
@@ -1623,5 +1823,7 @@
     "Do not mark a recipe as physically tested unless a dated real-cooking protocol exists. Physical testing is a separate status and must not be fabricated.",
     "Before release, both index.html and full-catalog/index.html must show the same recipe set; search, favourites, shopping list, cooking mode and desktop/mobile behaviour must pass."
   ],
-  "tefal_model_note": "The supplied Tefal Easy Fry & Grill cookbook covers several variants (Classic, Classic+, Precision, Precision+; digital and non-digital controls). The owner's exact model is not yet confirmed. Use the book as a model-family reference, not as a universal temperature/time table."
+  "tefal_model_note": "The supplied Tefal Easy Fry & Grill cookbook covers several variants (Classic, Classic+, Precision, Precision+; digital and non-digital controls). The owner's exact model is not yet confirmed. Use the book as a model-family reference, not as a universal temperature/time table.",
+  "photo_linkage_status": "100_of_100_files_matched_by_recipe_id",
+  "photo_editorial_acceptance": "pending_visual_review; owner-flagged images are excluded from approval"
 }
