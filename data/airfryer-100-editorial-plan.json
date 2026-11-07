@@ -201,12 +201,16 @@
       "title": "Куриное филе со шпинатом и моцареллой",
       "servings": 2,
       "editorial_concept": "Начинка удерживается внутри; шов вниз, проверить температуру в центре мяса.",
-      "recipe_status": "idea_not_yet_source_checked",
-      "source_status": "not_checked",
-      "tefal_book_status": "pending",
+      "recipe_status": "full_draft_source_reviewed",
+      "source_status": "source_cross_checked",
+      "tefal_book_status": "no_direct_equivalent_or_accessory_reference_only",
       "photo_status": "not_started",
       "appliance_test_status": "not_tested",
-      "publication_status": "not_published"
+      "publication_status": "not_published",
+      "source_urls": [
+        "https://theoregondietitian.com/air-fryer-stuffed-chicken-breast/"
+      ],
+      "batch_number": 2
     },
     {
       "number": 12,
@@ -215,12 +219,17 @@
       "title": "Медальоны из индейки с клюквенным соусом",
       "servings": 2,
       "editorial_concept": "Медальоны равной толщины; соус подавать отдельно или добавлять после приготовления.",
-      "recipe_status": "idea_not_yet_source_checked",
-      "source_status": "not_checked",
-      "tefal_book_status": "pending",
+      "recipe_status": "full_draft_source_reviewed",
+      "source_status": "adapted_source_cross_checked",
+      "tefal_book_status": "no_direct_equivalent_or_accessory_reference_only",
       "photo_status": "not_started",
       "appliance_test_status": "not_tested",
-      "publication_status": "not_published"
+      "publication_status": "not_published",
+      "source_urls": [
+        "https://recipesairfryer.net/crispy-medallions-in-air-fryer/",
+        "https://www.muscleandfitness.com/nutrition/healthy-eating/low-fat-cajun-turkey-medallions-recipe/"
+      ],
+      "batch_number": 2
     },
     {
       "number": 13,
@@ -229,12 +238,16 @@
       "title": "Утиная грудка с апельсиновой цедрой",
       "servings": 2,
       "editorial_concept": "Надрезать кожу, начать с кожей вверх/вниз по проверенной технологии; контролировать вытопленный жир.",
-      "recipe_status": "idea_not_yet_source_checked",
-      "source_status": "not_checked",
-      "tefal_book_status": "pending",
+      "recipe_status": "full_draft_source_reviewed",
+      "source_status": "source_cross_checked",
+      "tefal_book_status": "no_direct_equivalent_or_accessory_reference_only",
       "photo_status": "not_started",
       "appliance_test_status": "not_tested",
-      "publication_status": "not_published"
+      "publication_status": "not_published",
+      "source_urls": [
+        "https://lovefoodnotcooking.com/recipes/air-fryer-duck-breast/"
+      ],
+      "batch_number": 2
     },
     {
       "number": 14,
@@ -243,12 +256,16 @@
       "title": "Курица в пармезановой корочке",
       "servings": 2,
       "editorial_concept": "Тонкий слой панировки; не перегружать корзину, контролировать сыр от чрезмерного потемнения.",
-      "recipe_status": "idea_not_yet_source_checked",
-      "source_status": "not_checked",
-      "tefal_book_status": "pending",
+      "recipe_status": "full_draft_source_reviewed",
+      "source_status": "source_cross_checked",
+      "tefal_book_status": "no_direct_equivalent_or_accessory_reference_only",
       "photo_status": "not_started",
       "appliance_test_status": "not_tested",
-      "publication_status": "not_published"
+      "publication_status": "not_published",
+      "source_urls": [
+        "https://www.ahealthiermichigan.org/stories/food-and-recipes/air-fried-breaded-chicken-parmesan"
+      ],
+      "batch_number": 2
     },
     {
       "number": 15,
@@ -257,12 +274,16 @@
       "title": "Кёфта из индейки с кумином",
       "servings": 2,
       "editorial_concept": "Продолговатые изделия одинакового сечения; перевернуть и измерить температуру в центре.",
-      "recipe_status": "idea_not_yet_source_checked",
-      "source_status": "not_checked",
-      "tefal_book_status": "pending",
+      "recipe_status": "full_draft_source_reviewed",
+      "source_status": "adapted_source_cross_checked",
+      "tefal_book_status": "no_direct_equivalent_or_accessory_reference_only",
       "photo_status": "not_started",
       "appliance_test_status": "not_tested",
-      "publication_status": "not_published"
+      "publication_status": "not_published",
+      "source_urls": [
+        "https://app.samsungfood.com/recipes/10701950022d47178c3ae17ac8d7e794da6"
+      ],
+      "batch_number": 2
     },
     {
       "number": 16,
@@ -271,12 +292,16 @@
       "title": "Куриные бёдра с мягким карри",
       "servings": 2,
       "editorial_concept": "Сухая смесь специй с небольшим количеством масла; единый размер кусков.",
-      "recipe_status": "idea_not_yet_source_checked",
-      "source_status": "not_checked",
-      "tefal_book_status": "pending",
+      "recipe_status": "full_draft_source_reviewed",
+      "source_status": "adapted_source_cross_checked",
+      "tefal_book_status": "no_direct_equivalent_or_accessory_reference_only",
       "photo_status": "not_started",
       "appliance_test_status": "not_tested",
-      "publication_status": "not_published"
+      "publication_status": "not_published",
+      "source_urls": [
+        "https://www.schwartz.co.uk/blogs/recipes/air-fryer-chicken-curry"
+      ],
+      "batch_number": 2
     },
     {
       "number": 17,
@@ -285,12 +310,17 @@
       "title": "Курица кордон-блю",
       "servings": 2,
       "editorial_concept": "Плотно закрыть начинку; использовать подходящий способ фиксации без пластика, проверить центр.",
-      "recipe_status": "idea_not_yet_source_checked",
-      "source_status": "not_checked",
-      "tefal_book_status": "pending",
+      "recipe_status": "full_draft_source_reviewed",
+      "source_status": "source_cross_checked",
+      "tefal_book_status": "no_direct_equivalent_or_accessory_reference_only",
       "photo_status": "not_started",
       "appliance_test_status": "not_tested",
-      "publication_status": "not_published"
+      "publication_status": "not_published",
+      "source_urls": [
+        "https://www.tastefrance.com/us/recipes/french-classics/air-fryer-chicken-cordon-bleu",
+        "https://www.rte.ie/lifestyle/recipes/2023/1214/1420266-kevin-dundons-chicken-cordon-bleu-in-an-air-fryer/"
+      ],
+      "batch_number": 2
     },
     {
       "number": 18,
@@ -299,12 +329,17 @@
       "title": "Домашние колбаски из индейки с яблоком",
       "servings": 2,
       "editorial_concept": "Колбаски одинакового диаметра; яблоко готовить рядом, не подменять им контроль температуры птицы.",
-      "recipe_status": "idea_not_yet_source_checked",
-      "source_status": "not_checked",
-      "tefal_book_status": "pending",
+      "recipe_status": "full_draft_source_reviewed",
+      "source_status": "adapted_source_cross_checked",
+      "tefal_book_status": "no_direct_equivalent_or_accessory_reference_only",
       "photo_status": "not_started",
       "appliance_test_status": "not_tested",
-      "publication_status": "not_published"
+      "publication_status": "not_published",
+      "source_urls": [
+        "https://www.delish.com/cooking/recipe-ideas/a39666473/air-fryer-turkey-breakfast-sausage-recipe/",
+        "https://therealfooddietitians.com/turkey-apple-sausage-patties/"
+      ],
+      "batch_number": 2
     },
     {
       "number": 19,
@@ -313,12 +348,16 @@
       "title": "Куриные окорочка с лимоном и чесноком",
       "servings": 2,
       "editorial_concept": "Крупные части требуют отдельного режима и проверки у кости; не переносить время с филе.",
-      "recipe_status": "idea_not_yet_source_checked",
-      "source_status": "not_checked",
-      "tefal_book_status": "pending",
+      "recipe_status": "full_draft_source_reviewed",
+      "source_status": "adapted_source_cross_checked",
+      "tefal_book_status": "no_direct_equivalent_or_accessory_reference_only",
       "photo_status": "not_started",
       "appliance_test_status": "not_tested",
-      "publication_status": "not_published"
+      "publication_status": "not_published",
+      "source_urls": [
+        "https://app.samsungfood.com/recipes/1073bdce8d90066416a980863019881d254"
+      ],
+      "batch_number": 2
     },
     {
       "number": 20,
@@ -327,12 +366,16 @@
       "title": "Курица фахитас с перцем и луком",
       "servings": 2,
       "editorial_concept": "Полоски одинаковой толщины; готовить партиями, если овощи закрывают поток воздуха.",
-      "recipe_status": "idea_not_yet_source_checked",
-      "source_status": "not_checked",
-      "tefal_book_status": "pending",
+      "recipe_status": "full_draft_source_reviewed",
+      "source_status": "source_cross_checked",
+      "tefal_book_status": "no_direct_equivalent_or_accessory_reference_only",
       "photo_status": "not_started",
       "appliance_test_status": "not_tested",
-      "publication_status": "not_published"
+      "publication_status": "not_published",
+      "source_urls": [
+        "https://airfryersrecipe.com/air-fryer-chicken-fajitas/"
+      ],
+      "batch_number": 2
     },
     {
       "number": 21,
@@ -341,12 +384,17 @@
       "title": "Стейк с перечной корочкой",
       "servings": 2,
       "editorial_concept": "Толщина и желаемая прожарка задают режим; обязательный отдых мяса и проверка температуры.",
-      "recipe_status": "idea_not_yet_source_checked",
-      "source_status": "not_checked",
-      "tefal_book_status": "pending",
+      "recipe_status": "full_draft_source_reviewed",
+      "source_status": "source_cross_checked",
+      "tefal_book_status": "no_direct_equivalent_or_accessory_reference_only",
       "photo_status": "not_started",
       "appliance_test_status": "not_tested",
-      "publication_status": "not_published"
+      "publication_status": "not_published",
+      "batch_number": 3,
+      "source_urls": [
+        "https://www.bbcgoodfood.com/recipes/air-fryer-steak",
+        "https://www.betterthanbouillon.com/recipes/air-fryer-peppercorn-steak/"
+      ]
     },
     {
       "number": 22,
@@ -355,12 +403,17 @@
       "title": "Говяжьи медальоны с розмарином",
       "servings": 2,
       "editorial_concept": "Одинаковая толщина; быстрое приготовление небольшими партиями, отдых после нагрева.",
-      "recipe_status": "idea_not_yet_source_checked",
-      "source_status": "not_checked",
-      "tefal_book_status": "pending",
+      "recipe_status": "full_draft_source_reviewed",
+      "source_status": "adapted_source_cross_checked",
+      "tefal_book_status": "no_direct_equivalent_or_accessory_reference_only",
       "photo_status": "not_started",
       "appliance_test_status": "not_tested",
-      "publication_status": "not_published"
+      "publication_status": "not_published",
+      "source_urls": [
+        "https://www.bbcgoodfood.com/recipes/air-fryer-steak",
+        "https://extension.msstate.edu/publications/nutrition-and-wellness-all-about-air-fryers"
+      ],
+      "batch_number": 3
     },
     {
       "number": 23,
@@ -369,12 +422,17 @@
       "title": "Говяжьи фрикадельки с орегано",
       "servings": 2,
       "editorial_concept": "Шарики одинакового размера; один слой, переворот, контроль центра.",
-      "recipe_status": "idea_not_yet_source_checked",
-      "source_status": "not_checked",
-      "tefal_book_status": "pending",
+      "recipe_status": "full_draft_source_reviewed",
+      "source_status": "source_cross_checked",
+      "tefal_book_status": "no_direct_equivalent_or_accessory_reference_only",
       "photo_status": "not_started",
       "appliance_test_status": "not_tested",
-      "publication_status": "not_published"
+      "publication_status": "not_published",
+      "batch_number": 3,
+      "source_urls": [
+        "https://www.arlafoods.co.uk/recipes/air-fryer-meatballs/",
+        "https://www.gramcups.com/air-fryer/air-fryer-italian-meatballs"
+      ]
     },
     {
       "number": 24,
@@ -383,12 +441,16 @@
       "title": "Домашние бургеры из говядины",
       "servings": 2,
       "editorial_concept": "Котлеты одинаковой толщины; отдельно проверить безопасную внутреннюю температуру фарша.",
-      "recipe_status": "idea_not_yet_source_checked",
-      "source_status": "not_checked",
-      "tefal_book_status": "pending",
+      "recipe_status": "full_draft_source_reviewed",
+      "source_status": "source_cross_checked",
+      "tefal_book_status": "no_direct_equivalent_or_accessory_reference_only",
       "photo_status": "not_started",
       "appliance_test_status": "not_tested",
-      "publication_status": "not_published"
+      "publication_status": "not_published",
+      "batch_number": 3,
+      "source_urls": [
+        "https://www.bbc.co.uk/food/recipes/air_fryer_classic_burger_33956"
+      ]
     },
     {
       "number": 25,
@@ -397,12 +459,17 @@
       "title": "Говядина с болгарским перцем на шпажках",
       "servings": 2,
       "editorial_concept": "Кусочки одного размера; проверить допустимость шпажек и высоту корзины.",
-      "recipe_status": "idea_not_yet_source_checked",
-      "source_status": "not_checked",
-      "tefal_book_status": "pending",
+      "recipe_status": "full_draft_source_reviewed",
+      "source_status": "source_cross_checked",
+      "tefal_book_status": "no_direct_equivalent_or_accessory_reference_only",
       "photo_status": "not_started",
       "appliance_test_status": "not_tested",
-      "publication_status": "not_published"
+      "publication_status": "not_published",
+      "batch_number": 3,
+      "source_urls": [
+        "https://www.extension.msstate.edu/publications/air-fryer-recipes",
+        "https://extension.wvu.edu/files/d/1d1171a8-5f4d-4b06-95af-f3a7357af66e/air-fryer-steak-kebab-recipe.pdf"
+      ]
     },
     {
       "number": 26,
@@ -411,12 +478,17 @@
       "title": "Свиная вырезка с горчицей и тимьяном",
       "servings": 2,
       "editorial_concept": "Цельный кусок подходящего диаметра; переворачивать, дать отдохнуть, проверять термометром.",
-      "recipe_status": "idea_not_yet_source_checked",
-      "source_status": "not_checked",
-      "tefal_book_status": "pending",
+      "recipe_status": "full_draft_source_reviewed",
+      "source_status": "source_cross_checked",
+      "tefal_book_status": "no_direct_equivalent_or_accessory_reference_only",
       "photo_status": "not_started",
       "appliance_test_status": "not_tested",
-      "publication_status": "not_published"
+      "publication_status": "not_published",
+      "batch_number": 3,
+      "source_urls": [
+        "https://www.airfrycookbook.com/recipes/sticky-air-fryer-honey-mustard-pork-tenderloin",
+        "https://justrecipes.net/en/recipes/air-fryer-pork-tenderloin-mustard-glaze/"
+      ]
     },
     {
       "number": 27,
@@ -425,12 +497,17 @@
       "title": "Свиные отбивные с яблоком и шалфеем",
       "servings": 2,
       "editorial_concept": "Отбивные одинаковой толщины; яблоко добавлять с учётом скорости размягчения.",
-      "recipe_status": "idea_not_yet_source_checked",
-      "source_status": "not_checked",
-      "tefal_book_status": "pending",
+      "recipe_status": "full_draft_source_reviewed",
+      "source_status": "source_cross_checked",
+      "tefal_book_status": "no_direct_equivalent_or_accessory_reference_only",
       "photo_status": "not_started",
       "appliance_test_status": "not_tested",
-      "publication_status": "not_published"
+      "publication_status": "not_published",
+      "batch_number": 3,
+      "source_urls": [
+        "https://instantpot.com/blogs/recipes/air-fried-pork-chop-with-roasted-apples",
+        "https://www.williams-sonoma.com/recipe/pork-chops-with-apples-and-sage.html"
+      ]
     },
     {
       "number": 28,
@@ -439,12 +516,16 @@
       "title": "Свиные рёбрышки с сухой BBQ-обсыпкой",
       "servings": 2,
       "editorial_concept": "Порционные рёбра; проверять размер корзины, готовить в один слой или партиями.",
-      "recipe_status": "idea_not_yet_source_checked",
-      "source_status": "not_checked",
-      "tefal_book_status": "pending",
+      "recipe_status": "full_draft_source_reviewed",
+      "source_status": "adapted_source_cross_checked",
+      "tefal_book_status": "accessory_or_foil_compatibility_requires_exact_model",
       "photo_status": "not_started",
       "appliance_test_status": "not_tested",
-      "publication_status": "not_published"
+      "publication_status": "not_published",
+      "source_urls": [
+        "https://cazolita.com/en/recipe/af-costillas-bbq-af/"
+      ],
+      "batch_number": 3
     },
     {
       "number": 29,
@@ -453,12 +534,16 @@
       "title": "Свиная шницельная котлета в хрустящей панировке",
       "servings": 2,
       "editorial_concept": "Тонкая равномерная панировка с масляным распылением; переворот без срыва корочки.",
-      "recipe_status": "idea_not_yet_source_checked",
-      "source_status": "not_checked",
-      "tefal_book_status": "pending",
+      "recipe_status": "full_draft_source_reviewed",
+      "source_status": "source_cross_checked",
+      "tefal_book_status": "no_direct_equivalent_or_accessory_reference_only",
       "photo_status": "not_started",
       "appliance_test_status": "not_tested",
-      "publication_status": "not_published"
+      "publication_status": "not_published",
+      "batch_number": 3,
+      "source_urls": [
+        "https://instantpot.co.uk/air-fryer-honey-dijon-pork-schnitzel/"
+      ]
     },
     {
       "number": 30,
@@ -467,12 +552,16 @@
       "title": "Свиные фрикадельки с копчёной паприкой",
       "servings": 2,
       "editorial_concept": "Одинаковый размер и свободное пространство между изделиями; проверка центра.",
-      "recipe_status": "idea_not_yet_source_checked",
-      "source_status": "not_checked",
-      "tefal_book_status": "pending",
+      "recipe_status": "full_draft_source_reviewed",
+      "source_status": "source_cross_checked",
+      "tefal_book_status": "no_direct_equivalent_or_accessory_reference_only",
       "photo_status": "not_started",
       "appliance_test_status": "not_tested",
-      "publication_status": "not_published"
+      "publication_status": "not_published",
+      "batch_number": 3,
+      "source_urls": [
+        "https://app.samsungfood.com/recipes/10701952c7715ab7bf0a746013c4cf90442"
+      ]
     },
     {
       "number": 31,

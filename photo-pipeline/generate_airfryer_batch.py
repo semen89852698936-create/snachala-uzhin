@@ -44,8 +44,8 @@ def clean(value: object) -> str:
     return re.sub(r"\s+", " ", str(value or "")).strip()
 
 
-def load_manifest() -> list[dict]:
-    data = json.loads(MANIFEST.read_text(encoding="utf-8"))
+def load_manifest(manifest_path: Path = MANIFEST) -> list[dict]:
+    data = json.loads(manifest_path.read_text(encoding="utf-8"))
     recipes = data.get("recipes", [])
     if data.get("recipe_count") != 10 or len(recipes) != 10:
         raise RuntimeError("Expected exactly 10 air-fryer poultry recipes")
@@ -153,13 +153,14 @@ def verify_existing(image_path: Path, record_path: Path) -> None:
 
 def main(argv: list[str] | None = None) -> int:
     parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--manifest", type=Path, default=MANIFEST)
     parser.add_argument("--start", type=int, default=1)
-    parser.add_argument("--end", type=int, default=10)
+    parser.add_argument("--end", type=int, default=100)
     parser.add_argument("--limit", type=int, default=10)
     parser.add_argument("--execute", action="store_true")
     args = parser.parse_args(argv)
-    if not (1 <= args.start <= args.end <= 10):
-        parser.error("start/end must be between 1 and 10")
+    if not (1 <= args.start <= args.end <= 100):
+        parser.error("start/end must be between 1 and 100")
     if not (1 <= args.limit <= 10):
         parser.error("limit must be 1..10")
     if args.execute:
@@ -168,7 +169,7 @@ def main(argv: list[str] | None = None) -> int:
         if not os.getenv("YANDEX_API_KEY") or not os.getenv("YANDEX_FOLDER_ID"):
             parser.error("Set YANDEX_API_KEY and YANDEX_FOLDER_ID via GitHub Secrets")
 
-    recipes = [r for r in load_manifest() if args.start <= int(r["number"]) <= args.end]
+    recipes = [r for r in load_manifest(args.manifest) if args.start <= int(r["number"]) <= args.end]
     made = skipped = refused = 0
     for recipe in recipes:
         recipe_id = recipe["id"]
