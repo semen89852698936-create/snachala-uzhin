@@ -1,0 +1,27 @@
+'use strict';
+const assert=require('node:assert/strict');
+const batch=require('../data/airfryer-recipes-batch-10.json');
+const plan=require('../data/airfryer-100-editorial-plan.json');
+assert.equal(batch.schema,'airfryer-recipe-batch-v1');
+assert.equal(batch.batch_number,10);
+assert.equal(batch.category,'Десерты');
+assert.equal(batch.recipes.length,10);
+const ids=batch.recipes.map(r=>r.id);
+assert.equal(new Set(ids).size,10);
+assert.deepEqual(batch.recipes.map(r=>r.number),[91,92,93,94,95,96,97,98,99,100]);
+assert.ok(batch.recipes.every(r=>r.servings===2));
+assert.ok(batch.recipes.every(r=>r.ingredients.length>=5));
+assert.ok(batch.recipes.every(r=>r.steps.length>=5));
+assert.ok(batch.recipes.every(r=>r.temperature_c>=140&&r.temperature_c<=210));
+assert.ok(batch.recipes.every(r=>Array.isArray(r.cook_minutes)&&r.cook_minutes.length===2));
+assert.ok(batch.recipes.every(r=>r.source_verification?.source_url));
+assert.ok(batch.recipes.every(r=>r.tefal_reference?.status));
+assert.ok(batch.recipes.every(r=>r.photo_brief&&r.photo_brief.length>=60));
+assert.ok(batch.recipes.every(r=>r.doneness&&r.safety));
+assert.ok(batch.recipes.every(r=>r.photo_status==='not_started'&&r.appliance_test_status==='not_tested'&&r.publication_status==='not_published'));
+assert.ok(batch.recipes[5].safety.includes('пастеризованное яйцо'));
+assert.ok(batch.recipes[6].safety.includes('пастеризованные яйца'));
+assert.ok(batch.recipes[8].safety.includes('силиконовые формы'));
+for(const r of batch.recipes){const p=plan.items.find(x=>x.id===r.id);assert.ok(p);assert.equal(p.batch_number,10);assert.equal(p.recipe_status,'full_draft_source_reviewed');assert.equal(p.source_status,'cross_checked');assert.equal(p.publication_status,'not_published');}
+assert.equal(plan.items.filter(x=>x.batch_number===10).length,10);
+console.log(JSON.stringify({ok:true,batch:10,recipes:10,range:[91,100],twoServings:true,sourceAndTefalStatuses:true,dessertSafety:true,photos:'not_started',physicalTests:'not_tested',publication:'not_published'},null,2));
