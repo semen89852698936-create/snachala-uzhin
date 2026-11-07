@@ -1,0 +1,29 @@
+name: Air fryer catalogue integration QA
+on:
+  pull_request:
+    paths:
+      - 'assets/airfryer/**'
+      - 'assets/airfryer-recipes.js'
+      - 'assets/airfryer-catalog.js'
+      - 'assets/airfryer-catalog.css'
+      - 'index.html'
+      - 'full-catalog/index.html'
+      - 'scripts/test-airfryer-catalog-integration.cjs'
+      - '.github/workflows/airfryer-catalog-integration.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          persist-credentials: false
+      - name: Validate 100 recipes, unique photos, honest appliance status and both site editions
+        run: node scripts/test-airfryer-catalog-integration.cjs
+      - name: Parse standalone catalogue scripts
+        run: |
+          node --check assets/airfryer-recipes.js
+          node --check assets/airfryer-catalog.js
