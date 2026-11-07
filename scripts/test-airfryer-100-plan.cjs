@@ -14,8 +14,8 @@ assert.ok(plan.items.every((item) => item.editorial_concept && item.editorial_co
 assert.ok(plan.items.every((item) => item.publication_status === 'not_published'), 'Planning records must not claim publication.');
 assert.ok(plan.items.every((item) => typeof item.photo_path === 'string' && item.photo_path.startsWith('assets/airfryer/')), 'Every planned recipe must link to a local air-fryer WebP.');
 assert.ok(plan.items.every((item) => ['present_pending_visual_review','needs_replacement','replacement_generated_pending_visual_review'].includes(item.photo_status)), 'Photo presence must remain separate from editorial approval.');
-assert.equal(plan.items.filter((item) => item.photo_status === 'needs_replacement').length, 2, 'Only the two not-yet-generated owner-flagged photos should remain queued for replacement.');
-assert.equal(plan.items.filter((item) => item.photo_status === 'replacement_generated_pending_visual_review').length, 1, 'The first replacement must remain pending visual acceptance.');
+assert.equal(plan.items.filter((item) => item.photo_status === 'needs_replacement').length, 0, 'All owner-flagged photos have been regenerated and await visual review.');
+assert.equal(plan.items.filter((item) => item.photo_status === 'replacement_generated_pending_visual_review').length, 3, 'All three replacement images must remain pending visual acceptance.');
 
 const actualCounts = Object.fromEntries(
   [...new Set(plan.items.map((item) => item.category))].map((category) => [
