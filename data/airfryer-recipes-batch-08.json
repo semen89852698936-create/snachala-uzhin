@@ -86,7 +86,8 @@
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
       "photo_record_path": "photo-library/airfryer/records/af-cherry-tomatoes-garlic-2.json",
-      "visual_review_status": "visually_accepted"
+      "visual_review_status": "visually_accepted",
+      "photo_sha256": "15e6dd7c4424c4abf61cce6df0e85e6fb90d3e9101187978a7637f52beb05654"
     },
     {
       "number": 72,
@@ -166,7 +167,8 @@
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
       "photo_record_path": "photo-library/airfryer/records/af-butternut-squash-sage-2.json",
-      "visual_review_status": "visually_accepted"
+      "visual_review_status": "visually_accepted",
+      "photo_sha256": "aa9dc2a444a6ddc111e98807a36051295f4044672bb0fbd2dd242c4334ac9137"
     },
     {
       "number": 73,
@@ -254,7 +256,8 @@
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
       "photo_record_path": "photo-library/airfryer/records/af-frittata-spinach-feta-2.json",
-      "visual_review_status": "visually_accepted"
+      "visual_review_status": "visually_accepted",
+      "photo_sha256": "e781462ffaefab4e6f3f1554b83a2bdfc37a213aef066fe5dbe8ef2173759e8f"
     },
     {
       "number": 74,
@@ -342,7 +345,8 @@
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
       "photo_record_path": "photo-library/airfryer/records/af-baked-eggs-tomato-pepper-2.json",
-      "visual_review_status": "visually_accepted"
+      "visual_review_status": "visually_accepted",
+      "photo_sha256": "19e154f584343acb24248ff547f102b72e13d41e0c3cb871ff73527897773bbd"
     },
     {
       "number": 75,
@@ -426,7 +430,8 @@
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
       "photo_record_path": "photo-library/airfryer/records/af-syrniki-airfryer-2.json",
-      "visual_review_status": "visually_accepted"
+      "visual_review_status": "visually_accepted",
+      "photo_sha256": "edc16f8e2724e8fa0dece122e961775dc4857780b1fcc18916cb0b5270b3854e"
     },
     {
       "number": 76,
@@ -514,7 +519,8 @@
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
       "photo_record_path": "photo-library/airfryer/records/af-breakfast-potato-hash-2.json",
-      "visual_review_status": "visually_accepted"
+      "visual_review_status": "visually_accepted",
+      "photo_sha256": "f1a19c78c2f96430a3fb87411d77d52717bc6fca8ea9b42e491ce4fa5d6111b6"
     },
     {
       "number": 77,
@@ -602,7 +608,8 @@
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
       "photo_record_path": "photo-library/airfryer/records/af-oatmeal-apple-cups-2.json",
-      "visual_review_status": "visually_accepted"
+      "visual_review_status": "visually_accepted",
+      "photo_sha256": "aeaf7df91ffe73c3ea67d2d8ec614cf6564c86016d781c5f4fb6f34563c3c8fd"
     },
     {
       "number": 78,
@@ -686,7 +693,8 @@
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
       "photo_record_path": "photo-library/airfryer/records/af-puff-pastry-spinach-feta-2.json",
-      "visual_review_status": "visually_accepted"
+      "visual_review_status": "visually_accepted",
+      "photo_sha256": "1e7f16c0d756d6a4cfff67ae6b8c042062678a52081128ff8d07eaf452331596"
     },
     {
       "number": 79,
@@ -774,7 +782,8 @@
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
       "photo_record_path": "photo-library/airfryer/records/af-mini-focaccia-tomato-2.json",
-      "visual_review_status": "visually_accepted"
+      "visual_review_status": "visually_accepted",
+      "photo_sha256": "8d67f911aad04e6604adb9ce0f6d1019932c9512f61790e617295cbcfb5a0b39"
     },
     {
       "number": 80,
@@ -855,7 +864,8 @@
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
       "photo_record_path": "photo-library/airfryer/records/af-pita-pizza-mozzarella-basil-2.json",
-      "visual_review_status": "visually_accepted"
+      "visual_review_status": "visually_accepted",
+      "photo_sha256": "e1d9fa047661ef9880b1860a4c2077af1bccab0204e639b17fd84350df742697"
     }
   ]
 }

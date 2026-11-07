@@ -89,7 +89,8 @@
       "safety": "Использовать плотные яблоки и устойчивую форму, если они не стоят самостоятельно. Начинка и сироп очень горячие после приготовления.",
       "photo_brief": "Два целых печёных яблока с аккуратной открытой сердцевиной, внутри овсяная крошка с изюмом и грецким орехом, корица и тонкий мёд; кожица блестящая, яблоки сохраняют форму.",
       "photo_record_path": "photo-library/airfryer/records/af-baked-apples-cinnamon-2.json",
-      "visual_review_status": "visually_accepted"
+      "visual_review_status": "visually_accepted",
+      "photo_sha256": "1f79886d71970b687f9c6768c271a971b8b8290a4a3a92d803a4a0b70f679b33"
     },
     {
       "number": 92,
@@ -168,7 +169,8 @@
       "safety": "Не использовать перезрелые груши; горячий мёд и сок могут обжечь. Форму брать жаропрочную.",
       "photo_brief": "Четыре половинки груши с мягкой золотистой мякотью, в углублениях рубленые грецкие орехи, тонкая струйка мёда и немного корицы; рядом ложка холодного йогурта.",
       "photo_record_path": "photo-library/airfryer/records/af-pears-honey-walnuts-2.json",
-      "visual_review_status": "visually_accepted"
+      "visual_review_status": "visually_accepted",
+      "photo_sha256": "2df36ed56b85ed9df2af7c0f258d98c782c1864a380b98d48db694029dcabc1f"
     },
     {
       "number": 93,
@@ -243,7 +245,8 @@
       "safety": "Использовать холодное тесто, не переполнять начинкой. Дать постоять 5 минут: расплавленный шоколад очень горячий.",
       "photo_brief": "Четыре небольших золотистых слоёных конвертика, один разрезан и показывает мягкий банан и расплавленный тёмный шоколад; видны пышные слои теста, без глазури.",
       "photo_record_path": "photo-library/airfryer/records/af-banana-chocolate-parcels-2.json",
-      "visual_review_status": "visually_accepted"
+      "visual_review_status": "visually_accepted",
+      "photo_sha256": "84953ad892a1336a2910aac74bc2a4a3bc1bbc2544c331ca9080a48afa4d5f1e"
     },
     {
       "number": 94,
@@ -317,7 +320,8 @@
       "safety": "Использовать только плотные персики; горячий фруктовый сок и мёд могут обжечь.",
       "photo_brief": "Четыре половинки персика с мягкой золотистой мякотью, в центре каждой холодная белая шапочка маскарпоне, рубленые фисташки, тимьян и тонкая струйка мёда; без мороженого.",
       "photo_record_path": "photo-library/airfryer/records/af-peaches-mascarpone-2.json",
-      "visual_review_status": "visually_accepted"
+      "visual_review_status": "visually_accepted",
+      "photo_sha256": "7d22603666e9463e2fc2dcbf31acda7a83ee67e8187be2cca34476ddb975c7b6"
     },
     {
       "number": 95,
@@ -392,7 +396,8 @@
       "safety": "Сахарная карамель очень горячая. Использовать щипцы, не трогать поверхность до остывания.",
       "photo_brief": "Четыре кольца ананаса с золотистыми карамельными краями, видны тонкие следы корицы и блеск сливочного масла; рядом лайм, без мороженого и сиропа.",
       "photo_record_path": "photo-library/airfryer/records/af-pineapple-cinnamon-2.json",
-      "visual_review_status": "visually_accepted"
+      "visual_review_status": "visually_accepted",
+      "photo_sha256": "4dad3d83c5436e5bf899007a065d41305f500863d5fa91d25635cdaa9b4f9715"
     },
     {
       "number": 96,
@@ -475,7 +480,8 @@
       "safety": "Для начинки использовать пастеризованное яйцо; формы должны быть термостойкими и устойчивыми. После охлаждения хранить чизкейки в холодильнике.",
       "photo_brief": "Четыре мини-чизкейка с ровной светло-золотистой основой из печенья и нежной кремовой серединой, сверху несколько свежих ягод; один разрезан, чтобы показать плотную охлаждённую текстуру.",
       "photo_record_path": "photo-library/airfryer/records/af-mini-cheesecakes-2.json",
-      "visual_review_status": "visually_accepted"
+      "visual_review_status": "visually_accepted",
+      "photo_sha256": "67bb8c3e09a10cb8980195bf390ab39dbc87dc8793325b9511078f53984b4b43"
     },
     {
       "number": 97,
@@ -559,7 +565,8 @@
       "safety": "Для десерта с жидкой серединой использовать пастеризованные яйца. Не подавать непастеризованный недоготовленный яичный десерт людям из групп повышенного риска.",
       "photo_brief": "Два небольших шоколадных фонданта с матовой тонкой корочкой, один раскрыт ложкой и показывает густую текучую тёмно-шоколадную середину; немного какао сверху, без мороженого.",
       "photo_record_path": "photo-library/airfryer/records/af-chocolate-fondants-2.json",
-      "visual_review_status": "visually_accepted"
+      "visual_review_status": "visually_accepted",
+      "photo_sha256": "d03942730ab0ad8996709d03522d8f5b9614ac2968a74ead60af90fead7a55ca"
     },
     {
       "number": 98,
@@ -642,7 +649,8 @@
       "safety": "Использовать только жаропрочные формы, не переполнять: ягодный сок может закипеть и перелиться. Давать остыть 5 минут перед подачей.",
       "photo_brief": "Две небольшие формы ягодного крамбла, под золотистой овсяно-миндальной крошкой видны горячие рубиновые ягоды и густой сок; одна форма с ложкой, без мороженого.",
       "photo_record_path": "photo-library/airfryer/records/af-berry-crumble-2.json",
-      "visual_review_status": "visually_accepted"
+      "visual_review_status": "visually_accepted",
+      "photo_sha256": "b98ea837d758d2acbf78b77d863244e38af73e6fb57876083020788340de5066"
     },
     {
       "number": 99,
@@ -722,7 +730,8 @@
       "safety": "Использовать только жаропрочные силиконовые формы, разрешённые для аэрогриля; не применять свободную фольгу. Горячий джем может обжечь.",
       "photo_brief": "Две аккуратные яблочные розочки из тонких красно-розовых лепестков, обёрнутых в золотистое слоёное тесто; видны слои и мягкие яблочные края, без сахарной пудры и соуса.",
       "photo_record_path": "photo-library/airfryer/records/af-apple-puff-pastry-roses-2.json",
-      "visual_review_status": "visually_accepted"
+      "visual_review_status": "visually_accepted",
+      "photo_sha256": "71c4f983417fd651265ad36bc16380bfab1e37307aa49349750f52c42b4eebdb"
     },
     {
       "number": 100,
@@ -794,7 +803,8 @@
       "safety": "Использовать только пергамент/силикон, разрешённый производителем, и не оставлять его свободным в пустой корзине. Яичный белок должен полностью схватиться.",
       "photo_brief": "Шесть небольших кокосовых макарунов с белоснежной мякотью и тонкими золотистыми краями, несколько с тонким тёмным шоколадом на основании; без кокосовой стружки россыпью.",
       "photo_record_path": "photo-library/airfryer/records/af-coconut-macaroons-2.json",
-      "visual_review_status": "visually_accepted"
+      "visual_review_status": "visually_accepted",
+      "photo_sha256": "207d8804a4487db81fd51d0b1f28ddef8ba563333a7305dcfea0c9cbf9476676"
     }
   ]
 }

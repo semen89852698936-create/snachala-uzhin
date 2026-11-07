@@ -94,7 +94,8 @@
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
       "photo_record_path": "photo-library/airfryer/records/af-pepper-steak-airfryer-2.json",
-      "visual_review_status": "visually_accepted"
+      "visual_review_status": "visually_accepted",
+      "photo_sha256": "021aecbf0dded1e7fda81b55d0a1a013cda791e09bf69cb73b707983cde31604"
     },
     {
       "number": 22,
@@ -170,7 +171,8 @@
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
       "photo_record_path": "photo-library/airfryer/records/af-beef-medallions-rosemary-2.json",
-      "visual_review_status": "visually_accepted"
+      "visual_review_status": "visually_accepted",
+      "photo_sha256": "a94b79e5052531166bd1c9b626222f44ac23d56568c777d0dea789de50bd5d7c"
     },
     {
       "number": 23,
@@ -254,8 +256,9 @@
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
       "photo_record_path": "photo-library/airfryer/records/af-beef-meatballs-oregano-2.json",
-      "visual_review_status": "needs_regeneration",
-      "visual_review_note": "На разрезе фрикадельки виден розовый центр. Для блюда из говяжьего фарша изображение должно показывать полностью приготовленную середину."
+      "visual_review_status": "pending_recheck",
+      "visual_review_note": "На разрезе фрикадельки виден розовый центр. Для блюда из говяжьего фарша изображение должно показывать полностью приготовленную середину.",
+      "photo_sha256": "8de62166b3d5dc100cbc8b86dca9c5ad865b4c76b3c66525dda3d8dd47692ae0"
     },
     {
       "number": 24,
@@ -338,8 +341,9 @@
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
       "photo_record_path": "photo-library/airfryer/records/af-beef-burgers-2.json",
-      "visual_review_status": "needs_regeneration",
-      "visual_review_note": "Разрез котлеты показывает розовую середину. Для бургера из говяжьего фарша нужна визуально полностью приготовленная котлета."
+      "visual_review_status": "pending_recheck",
+      "visual_review_note": "Разрез котлеты показывает розовую середину. Для бургера из говяжьего фарша нужна визуально полностью приготовленная котлета.",
+      "photo_sha256": "6918d506f415fee90979c02ded21bed4dcfe0f76590240a4b222e6f296181755"
     },
     {
       "number": 25,
@@ -423,7 +427,8 @@
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
       "photo_record_path": "photo-library/airfryer/records/af-beef-kebabs-pepper-2.json",
-      "visual_review_status": "visually_accepted"
+      "visual_review_status": "visually_accepted",
+      "photo_sha256": "f4494d515986e91600327f9abfe60408ad033785d5e2616571eda9764add7fc7"
     },
     {
       "number": 26,
@@ -516,7 +521,8 @@
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
       "photo_record_path": "photo-library/airfryer/records/af-pork-tenderloin-mustard-thyme-2.json",
-      "visual_review_status": "visually_accepted"
+      "visual_review_status": "visually_accepted",
+      "photo_sha256": "8e2e4f50d3d786b08b138f8741a5309a8e6ff80bae0ce516eed6ecb97cce2fbd"
     },
     {
       "number": 27,
@@ -604,7 +610,8 @@
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
       "photo_record_path": "photo-library/airfryer/records/af-pork-chops-apple-sage-2.json",
-      "visual_review_status": "visually_accepted"
+      "visual_review_status": "visually_accepted",
+      "photo_sha256": "9d8e841aed2eb997409a74db66d7fc83d117617387f4c43a15bc9b7019af3692"
     },
     {
       "number": 28,
@@ -683,7 +690,8 @@
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
       "photo_record_path": "photo-library/airfryer/records/af-pork-ribs-bbq-2.json",
-      "visual_review_status": "visually_accepted"
+      "visual_review_status": "visually_accepted",
+      "photo_sha256": "ad843478445db4c5cf8eb4578d420c93fdc73e39584a7a68effd7f626395895c"
     },
     {
       "number": 29,
@@ -766,7 +774,8 @@
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
       "photo_record_path": "photo-library/airfryer/records/af-pork-schnitzel-2.json",
-      "visual_review_status": "visually_accepted"
+      "visual_review_status": "visually_accepted",
+      "photo_sha256": "905a7789f400048cb8b1e50c813d6fae65999f6ef378fce0d10fac6559eb5ec7"
     },
     {
       "number": 30,
@@ -849,7 +858,8 @@
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
       "photo_record_path": "photo-library/airfryer/records/af-pork-meatballs-paprika-2.json",
-      "visual_review_status": "visually_accepted"
+      "visual_review_status": "visually_accepted",
+      "photo_sha256": "2ee645d3f20ac68f5e9576a2defdd76de29ee48693fbf14d5891195b00feef11"
     }
   ]
 }

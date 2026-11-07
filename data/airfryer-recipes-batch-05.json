@@ -90,7 +90,8 @@
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
       "photo_record_path": "photo-library/airfryer/records/af-haddock-paprika-2.json",
-      "visual_review_status": "visually_accepted"
+      "visual_review_status": "visually_accepted",
+      "photo_sha256": "c3c86540da630cacd687ea77485537e70a7971906dac882b927468eb593d5d59"
     },
     {
       "number": 42,
@@ -170,8 +171,9 @@
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
       "photo_record_path": "photo-library/airfryer/records/af-sea-bass-whole-lemon-2.json",
-      "visual_review_status": "needs_regeneration",
-      "visual_review_note": "Рыба выглядит сырой: блестящая кожа и сырая мякоть. Нужен готовый целый сибас с непрозрачной мякотью и запечённой кожей."
+      "visual_review_status": "pending_recheck",
+      "visual_review_note": "Рыба выглядит сырой: блестящая кожа и сырая мякоть. Нужен готовый целый сибас с непрозрачной мякотью и запечённой кожей.",
+      "photo_sha256": "232f7c1e006cf199b80148947b8a58e20205029ee0f2068f789729cd1bbc280c"
     },
     {
       "number": 43,
@@ -255,7 +257,8 @@
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
       "photo_record_path": "photo-library/airfryer/records/af-dorada-fillets-herbs-2.json",
-      "visual_review_status": "visually_accepted"
+      "visual_review_status": "visually_accepted",
+      "photo_sha256": "21c6fe41db905038f69b8d4c30e1eaf5730dd437c34092302f2bb9c2e44d0358"
     },
     {
       "number": 44,
@@ -339,7 +342,8 @@
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
       "photo_record_path": "photo-library/airfryer/records/af-shrimp-garlic-lemon-2.json",
-      "visual_review_status": "visually_accepted"
+      "visual_review_status": "visually_accepted",
+      "photo_sha256": "b6a48f2238d2065bfb8f99300b8be2befd2589cd36c041af4966de854cb99590"
     },
     {
       "number": 45,
@@ -427,8 +431,9 @@
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
       "photo_record_path": "photo-library/airfryer/records/af-shrimp-coconut-crust-2.json",
-      "visual_review_status": "needs_regeneration",
-      "visual_review_note": "На фото обычные креветки без заявленной кокосовой корочки. Главный ингредиент и техника рецепта визуально отсутствуют."
+      "visual_review_status": "pending_recheck",
+      "visual_review_note": "На фото обычные креветки без заявленной кокосовой корочки. Главный ингредиент и техника рецепта визуально отсутствуют.",
+      "photo_sha256": "9c8809e8cd6f61345df4bdfb87ee940ecc26e5517e3fc8595f0abba347871911"
     },
     {
       "number": 46,
@@ -507,7 +512,8 @@
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
       "photo_record_path": "photo-library/airfryer/records/af-calamari-rings-2.json",
-      "visual_review_status": "visually_accepted"
+      "visual_review_status": "visually_accepted",
+      "photo_sha256": "27ea22dd56d4b941857a13dcc900171908c4471ee9c1d0fb116a0ca2fa1d0d89"
     },
     {
       "number": 47,
@@ -587,7 +593,8 @@
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
       "photo_record_path": "photo-library/airfryer/records/af-scallops-parsley-butter-2.json",
-      "visual_review_status": "visually_accepted"
+      "visual_review_status": "visually_accepted",
+      "photo_sha256": "291d8fa4c81184f0c19949f1eb28cfd03e53e75039ab7479b2a8e32348049e89"
     },
     {
       "number": 48,
@@ -663,7 +670,8 @@
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
       "photo_record_path": "photo-library/airfryer/records/af-tuna-sesame-steak-2.json",
-      "visual_review_status": "visually_accepted"
+      "visual_review_status": "visually_accepted",
+      "photo_sha256": "f51283c7a589b437e41d1e779be05a0bbf56d459a06c4cbb522433f54ec83cde"
     },
     {
       "number": 49,
@@ -743,8 +751,9 @@
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
       "photo_record_path": "photo-library/airfryer/records/af-mackerel-lemon-herbs-2.json",
-      "visual_review_status": "needs_regeneration",
-      "visual_review_note": "Изображена рыба, похожая на лосося, а не скумбрия. Нужна узнаваемая скумбрия с характерной полосатой спинкой."
+      "visual_review_status": "pending_recheck",
+      "visual_review_note": "Изображена рыба, похожая на лосося, а не скумбрия. Нужна узнаваемая скумбрия с характерной полосатой спинкой.",
+      "photo_sha256": "7c3f935f0fdae3a16e7230cd31589f904753f79f8fba27499cb5e75e9beb56d3"
     },
     {
       "number": 50,
@@ -831,8 +840,9 @@
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
       "photo_record_path": "photo-library/airfryer/records/af-salmon-potato-fishcakes-2.json",
-      "visual_review_status": "needs_regeneration",
-      "visual_review_note": "На фото картофельные половинки с начинкой, а не отдельные рыбные котлетки из лосося и картофеля."
+      "visual_review_status": "pending_recheck",
+      "visual_review_note": "На фото картофельные половинки с начинкой, а не отдельные рыбные котлетки из лосося и картофеля.",
+      "photo_sha256": "b18538eba0c0734cd8c7d6e94f2a79e15907dfa39eda4de1869184f1c48d1bed"
     }
   ]
 }

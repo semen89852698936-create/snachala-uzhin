@@ -81,7 +81,8 @@
       "safety": "Ветчина должна быть свежей и правильно охлаждённой; осторожно с очень горячим расплавленным сыром.",
       "photo_brief": "Два золотистых круассана, один разрезан и показывает тонкий слой ветчины и расплавленный сыр грюйер; хрустящие слои хорошо видны, немного петрушки, без салата и соуса.",
       "photo_record_path": "photo-library/airfryer/records/af-croissant-ham-cheese-2.json",
-      "visual_review_status": "visually_accepted"
+      "visual_review_status": "visually_accepted",
+      "photo_sha256": "ccbf017bc47c6622d8e06297463802af80c7a5439b517ae01c69ea1a5d03721d"
     },
     {
       "number": 82,
@@ -173,7 +174,8 @@
       "safety": "Творог хранить охлаждённым; использовать только формы, разрешённые для аэрогриля. Не ставить пустые лёгкие формочки в разогретую корзину.",
       "photo_brief": "Четыре небольших творожных маффина с золотистыми верхушками, в разломе нежная светлая мякоть и сочные голубые и красные ягоды; без глазури и пудры.",
       "photo_record_path": "photo-library/airfryer/records/af-cottage-cheese-berry-muffins-2.json",
-      "visual_review_status": "visually_accepted"
+      "visual_review_status": "visually_accepted",
+      "photo_sha256": "4862315a27d5066bd9bb7bb4af86e5d07ad49dde293b67e76853bbabc732f87c"
     },
     {
       "number": 83,
@@ -252,8 +254,9 @@
       "safety": "Нут тщательно обсушить; хранить только полностью остывшим. Не использовать жидкость из банки.",
       "photo_brief": "Одна керамическая миска с хрустящим запечённым нутом, отдельные золотистые сухие шарики с паприкой и лёгкими пряностями, один цельный кадр и одна композиция. Без диптиха, разделённых панелей, повторов, коллажей и второго изображения.",
       "photo_record_path": "photo-library/airfryer/records/af-chickpeas-paprika-2.json",
-      "visual_review_status": "needs_regeneration",
-      "visual_review_note": "Изображение выполнено как разделённый диптих с двумя почти одинаковыми половинами. Требуется один цельный кадр."
+      "visual_review_status": "pending_recheck",
+      "visual_review_note": "Изображение выполнено как разделённый диптих с двумя почти одинаковыми половинами. Требуется один цельный кадр.",
+      "photo_sha256": "ff6184ee57f72f502ab2b2a9f08ed212ccc4a1ea56cacdda2534b1f986882c91"
     },
     {
       "number": 84,
@@ -327,7 +330,8 @@
       "safety": "Не оставлять свободную бумагу в корзине; охлаждать чипсы полностью перед герметичным хранением.",
       "photo_brief": "Стопка тонких треугольных пита-чипсов с сухой золотистой корочкой, видны иголочки розмарина и точки чесночной приправы; без дипа.",
       "photo_record_path": "photo-library/airfryer/records/af-pita-chips-rosemary-2.json",
-      "visual_review_status": "visually_accepted"
+      "visual_review_status": "visually_accepted",
+      "photo_sha256": "afeae03bc01da5dc68daa321f1fc476b9cdb74b07152232ee61223e0a4d74290"
     },
     {
       "number": 85,
@@ -415,7 +419,8 @@
       "safety": "Сырую яичную массу держать охлаждённой; не пробовать тесто и вымыть инвентарь после контакта с яйцом.",
       "photo_brief": "Шесть небольших кабачковых оладий с золотистыми хрустящими краями, зелёные точки петрушки и мелкие частицы пармезана; один разломлен, внутри мягкая светлая середина.",
       "photo_record_path": "photo-library/airfryer/records/af-zucchini-fritters-2.json",
-      "visual_review_status": "visually_accepted"
+      "visual_review_status": "visually_accepted",
+      "photo_sha256": "9d2f6f5701bac49c8a4aa38809c4e8ac45ee7d25d3e8b8ccda52f20b3a8caf34"
     },
     {
       "number": 86,
@@ -493,7 +498,8 @@
       "safety": "Работать с горячим сыром осторожно; подавать сразу и не оставлять в горячей корзине.",
       "photo_brief": "Палочки халуми с золотистыми пятнами, тонкая кунжутно-соевая глазурь, белый кунжут и зелёный лук; без соуса и гарнира.",
       "photo_record_path": "photo-library/airfryer/records/af-halloumi-fries-sesame-2.json",
-      "visual_review_status": "visually_accepted"
+      "visual_review_status": "visually_accepted",
+      "photo_sha256": "dcc222738121a482f6313e232bbbae5e19b96fd19b14dd6149cebd617f27fe16"
     },
     {
       "number": 87,
@@ -577,7 +583,8 @@
       "safety": "Использовать чистую доску и инвентарь; снять тофу с корзины сразу после готовности.",
       "photo_brief": "Кубики тофу одинакового размера с хрустящими золотистыми гранями, кунжутная посыпка и зелёный лук; без риса и соуса.",
       "photo_record_path": "photo-library/airfryer/records/af-crispy-tofu-sesame-2.json",
-      "visual_review_status": "visually_accepted"
+      "visual_review_status": "visually_accepted",
+      "photo_sha256": "587137309b62f8f2e75168a7636bcd1340e4034c455b4cdbdad8878a9febae82"
     },
     {
       "number": 88,
@@ -653,8 +660,9 @@
       "safety": "Поленту охлаждать в холодильнике; не оставлять готовую кашу надолго при комнатной температуре. Переворачивать широкой лопаткой.",
       "photo_brief": "Золотистые прямоугольные палочки поленты фри из кукурузной крупы, плотная зернистая кукурузная текстура, хрустящие подрумяненные грани, сверху тонкая стружка пармезана. Не макароны, не ригатони, не полые трубки и не паста.",
       "photo_record_path": "photo-library/airfryer/records/af-polenta-fries-parmesan-2.json",
-      "visual_review_status": "needs_regeneration",
-      "visual_review_note": "Вместо палочек поленты изображены полые трубчатые макароны, похожие на ригатони. Это другой продукт."
+      "visual_review_status": "pending_recheck",
+      "visual_review_note": "Вместо палочек поленты изображены полые трубчатые макароны, похожие на ригатони. Это другой продукт.",
+      "photo_sha256": "dab9dfa25f5e74a180fb6039dd4adfdde4af9ca93d7e42723932713e94848973"
     },
     {
       "number": 89,
@@ -729,7 +737,8 @@
       "safety": "Начинка очень горячая; дать постоять 5 минут. Учитывать аллергены молока и орехов.",
       "photo_brief": "Восемь крупных фиников Medjool с мягким белым козьим сыром и половинкой грецкого ореха, тимьян и тонкая нить мёда; без бекона.",
       "photo_record_path": "photo-library/airfryer/records/af-dates-walnut-goat-cheese-2.json",
-      "visual_review_status": "visually_accepted"
+      "visual_review_status": "visually_accepted",
+      "photo_sha256": "7fc39f522a9794633d56151d987295c2f6bb362761036c99e6f9c95fe597c53e"
     },
     {
       "number": 90,
@@ -829,7 +838,8 @@
       "safety": "Начинку полностью приготовить до заворачивания, затем остудить не менее 10 минут. Не переполнять роллы; держать начинку сухой.",
       "photo_brief": "Восемь золотистых овощных роллов в хрустящей рисовой оболочке, один разрезан и показывает капусту, морковь, красный перец, грибы и вермишель; без соуса и мяса.",
       "photo_record_path": "photo-library/airfryer/records/af-rice-paper-rolls-vegetables-2.json",
-      "visual_review_status": "visually_accepted"
+      "visual_review_status": "visually_accepted",
+      "photo_sha256": "1f20711f7596f874feb93b932cb8f16a044c61644824a142786c60aee9fef3ac"
     }
   ]
 }

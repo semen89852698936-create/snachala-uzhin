@@ -82,7 +82,8 @@
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
       "photo_record_path": "photo-library/airfryer/records/af-lamb-chops-rosemary-2.json",
-      "visual_review_status": "visually_accepted"
+      "visual_review_status": "visually_accepted",
+      "photo_sha256": "43012a1f4ab5062c86728f5f9b7a428f9802f5516826086e6941639b50214324"
     },
     {
       "number": 32,
@@ -178,7 +179,8 @@
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
       "photo_record_path": "photo-library/airfryer/records/af-lamb-kofta-cumin-2.json",
-      "visual_review_status": "visually_accepted"
+      "visual_review_status": "visually_accepted",
+      "photo_sha256": "5d8085bc1e0d6dbdf48a15da548ce3575a3a64799b5c48982dca864805afa294"
     },
     {
       "number": 33,
@@ -274,7 +276,8 @@
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
       "photo_record_path": "photo-library/airfryer/records/af-lamb-meatballs-mint-2.json",
-      "visual_review_status": "visually_accepted"
+      "visual_review_status": "visually_accepted",
+      "photo_sha256": "14e153b5708daf9f76f83a91831bff9431fef099d806d87ab083c54d0fb9ac6a"
     },
     {
       "number": 34,
@@ -377,7 +380,8 @@
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
       "photo_record_path": "photo-library/airfryer/records/af-mini-meatloaf-2.json",
-      "visual_review_status": "visually_accepted"
+      "visual_review_status": "visually_accepted",
+      "photo_sha256": "ba0c3dd14a4db017b1f88436101ce199f51ad2870fd8ba2529d9851803819aee"
     },
     {
       "number": 35,
@@ -465,7 +469,8 @@
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
       "photo_record_path": "photo-library/airfryer/records/af-pork-belly-bites-2.json",
-      "visual_review_status": "visually_accepted"
+      "visual_review_status": "visually_accepted",
+      "photo_sha256": "1540b9e8b0b1ba52b83c9d7c83ce5f842ac77cba5274cb4843068716712f2192"
     },
     {
       "number": 36,
@@ -549,7 +554,8 @@
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
       "photo_record_path": "photo-library/airfryer/records/af-sausages-peppers-onions-2.json",
-      "visual_review_status": "visually_accepted"
+      "visual_review_status": "visually_accepted",
+      "photo_sha256": "afeb3322cdbe0f6a4de66d1a9c28d1a56e1eabc24e684f71bde7c3304fc1b457"
     },
     {
       "number": 37,
@@ -629,7 +635,8 @@
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
       "photo_record_path": "photo-library/airfryer/records/af-salmon-lemon-herbs-2.json",
-      "visual_review_status": "visually_accepted"
+      "visual_review_status": "visually_accepted",
+      "photo_sha256": "3439d32cfaef48342d088e2cf477082ed1b3899f8cf13a946576af1f3f4711ab"
     },
     {
       "number": 38,
@@ -713,7 +720,8 @@
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
       "photo_record_path": "photo-library/airfryer/records/af-salmon-miso-sesame-2.json",
-      "visual_review_status": "visually_accepted"
+      "visual_review_status": "visually_accepted",
+      "photo_sha256": "9560dc4549fc25d40306d39db8031df19673de6ea8d347ec479c95517adccc8e"
     },
     {
       "number": 39,
@@ -792,7 +800,8 @@
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
       "photo_record_path": "photo-library/airfryer/records/af-trout-dill-lemon-2.json",
-      "visual_review_status": "visually_accepted"
+      "visual_review_status": "visually_accepted",
+      "photo_sha256": "6e4a9850f2bd7546c0ab8a56a9d7218748f141a566f32e34cdfe02c818e145c8"
     },
     {
       "number": 40,
@@ -876,7 +885,8 @@
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
       "photo_record_path": "photo-library/airfryer/records/af-cod-herb-crust-2.json",
-      "visual_review_status": "visually_accepted"
+      "visual_review_status": "visually_accepted",
+      "photo_sha256": "a72fb6fe4ee6e9551bf49b98a5ad54325c23798729bf85daeaed01213b529e13"
     }
   ]
 }

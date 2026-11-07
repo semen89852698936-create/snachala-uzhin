@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-08",
+  "updated_at": "2026-11-07T21:29:27+00:00",
   "total_recipes": 100,
   "verified_webp": 100,
   "missing_count": 0,
@@ -10,8 +10,8 @@
   "complete_and_verified": true,
   "visual_reviewed_count": 100,
   "visual_accepted_count": 87,
-  "needs_regeneration_count": 13,
-  "pending_recheck_count": 0,
+  "needs_regeneration_count": 0,
+  "pending_recheck_count": 13,
   "publication_status": "all_generated_images_unpublished",
   "appliance_test_status": "not_tested_on_owner_exact_model"
 }

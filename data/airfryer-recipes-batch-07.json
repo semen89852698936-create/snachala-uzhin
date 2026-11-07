@@ -90,7 +90,8 @@
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
       "photo_record_path": "photo-library/airfryer/records/af-cauliflower-cumin-2.json",
-      "visual_review_status": "visually_accepted"
+      "visual_review_status": "visually_accepted",
+      "photo_sha256": "ebb7cced104eaec43930f69b1fc2e9c112ad1aabcb792a12eee72976e671d911"
     },
     {
       "number": 62,
@@ -170,7 +171,8 @@
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
       "photo_record_path": "photo-library/airfryer/records/af-broccoli-garlic-lemon-2.json",
-      "visual_review_status": "visually_accepted"
+      "visual_review_status": "visually_accepted",
+      "photo_sha256": "532109dd6c0fbb253ef9ceff8f2114a730e448f821f8af7b61302e1b9f702a55"
     },
     {
       "number": 63,
@@ -253,7 +255,8 @@
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
       "photo_record_path": "photo-library/airfryer/records/af-zucchini-parmesan-2.json",
-      "visual_review_status": "visually_accepted"
+      "visual_review_status": "visually_accepted",
+      "photo_sha256": "9ae0be88528f3048076e16262f6e32394a94301e113b24489f9bad4d95a09117"
     },
     {
       "number": 64,
@@ -342,7 +345,8 @@
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
       "photo_record_path": "photo-library/airfryer/records/af-eggplant-miso-2.json",
-      "visual_review_status": "visually_accepted"
+      "visual_review_status": "visually_accepted",
+      "photo_sha256": "f8eead17619f1a063877773bd5e0625a01e0d8486443f8246d3999144f4c080c"
     },
     {
       "number": 65,
@@ -426,7 +430,8 @@
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
       "photo_record_path": "photo-library/airfryer/records/af-peppers-feta-stuffed-2.json",
-      "visual_review_status": "visually_accepted"
+      "visual_review_status": "visually_accepted",
+      "photo_sha256": "101adecdf1f5f13d75c2f0974928a86c5e36f322a1296181dbda6c719eccc8d8"
     },
     {
       "number": 66,
@@ -510,7 +515,8 @@
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
       "photo_record_path": "photo-library/airfryer/records/af-mushrooms-herb-stuffed-2.json",
-      "visual_review_status": "visually_accepted"
+      "visual_review_status": "visually_accepted",
+      "photo_sha256": "a03adc17b7614b2939024971315bb74ab72dd7e565de61149c0b5090b718f288"
     },
     {
       "number": 67,
@@ -590,7 +596,8 @@
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
       "photo_record_path": "photo-library/airfryer/records/af-corn-paprika-2.json",
-      "visual_review_status": "visually_accepted"
+      "visual_review_status": "visually_accepted",
+      "photo_sha256": "28e2d010b3ce6ae7897c4fd1a3bfd439392b788d1e73e212aad7d883d7f3270c"
     },
     {
       "number": 68,
@@ -666,7 +673,8 @@
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
       "photo_record_path": "photo-library/airfryer/records/af-asparagus-parmesan-2.json",
-      "visual_review_status": "visually_accepted"
+      "visual_review_status": "visually_accepted",
+      "photo_sha256": "106f928bb5edef2bf0bb051fdc0ef99c3bc03d7082a3feaaa8db7b0c6f8fc71a"
     },
     {
       "number": 69,
@@ -741,7 +749,8 @@
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
       "photo_record_path": "photo-library/airfryer/records/af-green-beans-sesame-2.json",
-      "visual_review_status": "visually_accepted"
+      "visual_review_status": "visually_accepted",
+      "photo_sha256": "7c24c4e2285c423fc66d5f564a3175d2e2a5a8772b961954e7e4e1e4b78e739d"
     },
     {
       "number": 70,
@@ -821,7 +830,8 @@
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
       "photo_record_path": "photo-library/airfryer/records/af-beetroot-balsamic-2.json",
-      "visual_review_status": "visually_accepted"
+      "visual_review_status": "visually_accepted",
+      "photo_sha256": "1128ab5a685fd762de0cc6369ce7b27c1958dc9377b6079ef6658cff252c9df8"
     }
   ]
 }

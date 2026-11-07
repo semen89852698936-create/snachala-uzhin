@@ -1,6 +1,6 @@
 {
   "schema": "airfryer-100-editorial-plan-v1",
-  "status": "100 source-reviewed recipe drafts; 100 WebP files technically verified; visual review complete with a targeted 13-image regeneration queue; not published and not physically tested on the owner's exact appliance.",
+  "status": "100 source-reviewed recipe drafts; photo integrity checked; visual review statuses tracked; not published and not physically tested on the owner's exact appliance.",
   "target_count": 100,
   "default_servings": 2,
   "categories": {
@@ -68,7 +68,7 @@
         "https://www.compatibility.groupeseb.com/documents/recipebook/EasyFry-and-Grill-EY50.pdf"
       ],
       "batch_number": 1,
-      "visual_review_status": "needs_regeneration"
+      "visual_review_status": "pending_recheck"
     },
     {
       "number": 4,
@@ -241,7 +241,7 @@
         "https://www.muscleandfitness.com/nutrition/healthy-eating/low-fat-cajun-turkey-medallions-recipe/"
       ],
       "batch_number": 2,
-      "visual_review_status": "needs_regeneration"
+      "visual_review_status": "pending_recheck"
     },
     {
       "number": 13,
@@ -357,7 +357,7 @@
         "https://therealfooddietitians.com/turkey-apple-sausage-patties/"
       ],
       "batch_number": 2,
-      "visual_review_status": "needs_regeneration"
+      "visual_review_status": "pending_recheck"
     },
     {
       "number": 19,
@@ -455,7 +455,7 @@
         "https://www.arlafoods.co.uk/recipes/air-fryer-meatballs/",
         "https://www.gramcups.com/air-fryer/air-fryer-italian-meatballs"
       ],
-      "visual_review_status": "needs_regeneration"
+      "visual_review_status": "pending_recheck"
     },
     {
       "number": 24,
@@ -474,7 +474,7 @@
       "source_urls": [
         "https://www.bbc.co.uk/food/recipes/air_fryer_classic_burger_33956"
       ],
-      "visual_review_status": "needs_regeneration"
+      "visual_review_status": "pending_recheck"
     },
     {
       "number": 25,
@@ -783,7 +783,7 @@
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
       "batch_number": 5,
-      "visual_review_status": "needs_regeneration"
+      "visual_review_status": "pending_recheck"
     },
     {
       "number": 43,
@@ -831,7 +831,7 @@
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
       "batch_number": 5,
-      "visual_review_status": "needs_regeneration"
+      "visual_review_status": "pending_recheck"
     },
     {
       "number": 46,
@@ -895,7 +895,7 @@
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
       "batch_number": 5,
-      "visual_review_status": "needs_regeneration"
+      "visual_review_status": "pending_recheck"
     },
     {
       "number": 50,
@@ -911,7 +911,7 @@
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
       "batch_number": 5,
-      "visual_review_status": "needs_regeneration"
+      "visual_review_status": "pending_recheck"
     },
     {
       "number": 51,
@@ -1007,7 +1007,7 @@
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
       "batch_number": 6,
-      "visual_review_status": "needs_regeneration"
+      "visual_review_status": "pending_recheck"
     },
     {
       "number": 57,
@@ -1055,7 +1055,7 @@
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
       "batch_number": 6,
-      "visual_review_status": "needs_regeneration"
+      "visual_review_status": "pending_recheck"
     },
     {
       "number": 60,
@@ -1439,7 +1439,7 @@
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
       "batch_number": 9,
-      "visual_review_status": "needs_regeneration"
+      "visual_review_status": "pending_recheck"
     },
     {
       "number": 84,
@@ -1519,7 +1519,7 @@
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
       "batch_number": 9,
-      "visual_review_status": "needs_regeneration"
+      "visual_review_status": "pending_recheck"
     },
     {
       "number": 89,

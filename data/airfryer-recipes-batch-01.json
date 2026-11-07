@@ -84,7 +84,8 @@
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
       "photo_record_path": "photo-library/airfryer/records/af-chicken-paprika-2.json",
-      "visual_review_status": "visually_accepted"
+      "visual_review_status": "visually_accepted",
+      "photo_sha256": "67f61f7a50635fbf5265ce5bae32f0727600a8dbfd2d89f49ab9afe65b521fd8"
     },
     {
       "number": 2,
@@ -162,7 +163,8 @@
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
       "photo_record_path": "photo-library/airfryer/records/af-chicken-lemon-thyme-2.json",
-      "visual_review_status": "visually_accepted"
+      "visual_review_status": "visually_accepted",
+      "photo_sha256": "b8828f0b62f82a10cc51845ab29c5936efea47437242f740ad073a21892d8077"
     },
     {
       "number": 3,
@@ -237,8 +239,9 @@
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
       "photo_record_path": "photo-library/airfryer/records/af-chicken-thighs-yogurt-rosemary-2.json",
-      "visual_review_status": "needs_regeneration",
-      "visual_review_note": "На снимке мясо выглядит сырым и покрытым толстым белым маринадом. Нужен готовый продукт с непрозрачной мякотью и заметной золотистой корочкой."
+      "visual_review_status": "pending_recheck",
+      "visual_review_note": "На снимке мясо выглядит сырым и покрытым толстым белым маринадом. Нужен готовый продукт с непрозрачной мякотью и заметной золотистой корочкой.",
+      "photo_sha256": "40bdd9d70388523f3b40d05f2738a416cfd96fdac86c865927786ac0e9f3d591"
     },
     {
       "number": 4,
@@ -318,7 +321,8 @@
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
       "photo_record_path": "photo-library/airfryer/records/af-chicken-wings-smoked-paprika-2.json",
-      "visual_review_status": "visually_accepted"
+      "visual_review_status": "visually_accepted",
+      "photo_sha256": "d2b8bdefb4794f2af1216f1b12e4927ddca853a09539d75105cfef93d68eaaf8"
     },
     {
       "number": 5,
@@ -392,7 +396,8 @@
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
       "photo_record_path": "photo-library/airfryer/records/af-chicken-drumsticks-mustard-herbs-2.json",
-      "visual_review_status": "visually_accepted"
+      "visual_review_status": "visually_accepted",
+      "photo_sha256": "691bc7732fc470adf9418673094da18b34a4cbf82bf403bcd11f2521940027a2"
     },
     {
       "number": 6,
@@ -482,7 +487,8 @@
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
       "photo_record_path": "photo-library/airfryer/records/af-turkey-cutlets-herb-crust-2.json",
-      "visual_review_status": "visually_accepted"
+      "visual_review_status": "visually_accepted",
+      "photo_sha256": "557367117f6eaeb15dda69dbdd1491e9bb4007759ac39b09e19a17b9f20ecf7d"
     },
     {
       "number": 7,
@@ -568,7 +574,8 @@
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
       "photo_record_path": "photo-library/airfryer/records/af-turkey-meatballs-oregano-2.json",
-      "visual_review_status": "visually_accepted"
+      "visual_review_status": "visually_accepted",
+      "photo_sha256": "280fbb9ed38830f3102dd5e85bd20f7653f3eb27064dd316701c7185d8a345cb"
     },
     {
       "number": 8,
@@ -646,7 +653,8 @@
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
       "photo_record_path": "photo-library/airfryer/records/af-chicken-meatballs-zucchini-2.json",
-      "visual_review_status": "visually_accepted"
+      "visual_review_status": "visually_accepted",
+      "photo_sha256": "6f72b2994c849a12f5567f9c76c8970a2b4ee8346096bc4ebf17a9706bf89a0f"
     },
     {
       "number": 9,
@@ -733,7 +741,8 @@
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
       "photo_record_path": "photo-library/airfryer/records/af-chicken-skewers-pepper-2.json",
-      "visual_review_status": "visually_accepted"
+      "visual_review_status": "visually_accepted",
+      "photo_sha256": "a4ca2fb87dee039426148b39508cfbe2402e659dc38be9ae79e2b9fe3b1d8acc"
     },
     {
       "number": 10,
@@ -824,7 +833,8 @@
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
       "photo_record_path": "photo-library/airfryer/records/af-chicken-thighs-orange-ginger-2.json",
-      "visual_review_status": "visually_accepted"
+      "visual_review_status": "visually_accepted",
+      "photo_sha256": "21bd03e9e023bfae8720415d8023156379145e1d3a95e41d72c471e98faec1e2"
     }
   ]
 }

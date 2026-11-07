@@ -102,7 +102,8 @@
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
       "photo_record_path": "photo-library/airfryer/records/af-crab-cakes-herbs-2.json",
-      "visual_review_status": "visually_accepted"
+      "visual_review_status": "visually_accepted",
+      "photo_sha256": "72967552f3254d28672089964225f2793027adc87c22367eb572d4be781ebaba"
     },
     {
       "number": 52,
@@ -182,7 +183,8 @@
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
       "photo_record_path": "photo-library/airfryer/records/af-sardines-lemon-2.json",
-      "visual_review_status": "visually_accepted"
+      "visual_review_status": "visually_accepted",
+      "photo_sha256": "5a1e98735f8b67b06cf7485164000a816a25852c3255f695b2f04eea455e1cf0"
     },
     {
       "number": 53,
@@ -274,7 +276,8 @@
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
       "photo_record_path": "photo-library/airfryer/records/af-cod-fingers-homemade-2.json",
-      "visual_review_status": "visually_accepted"
+      "visual_review_status": "visually_accepted",
+      "photo_sha256": "2efba06d56dfb0c1fd438cdc8d498adfbbe880f1b1c2fec4c753970406b50437"
     },
     {
       "number": 54,
@@ -374,7 +377,8 @@
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
       "photo_record_path": "photo-library/airfryer/records/af-stuffed-squid-rice-herbs-2.json",
-      "visual_review_status": "visually_accepted"
+      "visual_review_status": "visually_accepted",
+      "photo_sha256": "068ddbd7b4ef379afeb0bf4d8ba3aee67debc12da67f1a3a3901d76b06d59505"
     },
     {
       "number": 55,
@@ -449,7 +453,8 @@
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
       "photo_record_path": "photo-library/airfryer/records/af-potato-wedges-2.json",
-      "visual_review_status": "visually_accepted"
+      "visual_review_status": "visually_accepted",
+      "photo_sha256": "d8b7f048c7739cc6b63ee2787d012308718206af75c3b9c9bd6214f720341f9d"
     },
     {
       "number": 56,
@@ -519,8 +524,9 @@
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
       "photo_record_path": "photo-library/airfryer/records/af-brussels-lemon-2.json",
-      "visual_review_status": "needs_regeneration",
-      "visual_review_note": "Вместо порции небольших кочанчиков брюссельской капусты изображены два огромных поперечных среза, похожих на обычную капусту."
+      "visual_review_status": "pending_recheck",
+      "visual_review_note": "Вместо порции небольших кочанчиков брюссельской капусты изображены два огромных поперечных среза, похожих на обычную капусту.",
+      "photo_sha256": "b9cf2432b8bd9814bb55416648747481449ecd02ffabf0f92a77277cda08fa5d"
     },
     {
       "number": 57,
@@ -602,7 +608,8 @@
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
       "photo_record_path": "photo-library/airfryer/records/af-mushrooms-thyme-toast-2.json",
-      "visual_review_status": "visually_accepted"
+      "visual_review_status": "visually_accepted",
+      "photo_sha256": "4bba9e0226e46cb7bd02e3aba3b29a4a030077173d1000dbea8661856063c6d3"
     },
     {
       "number": 58,
@@ -680,7 +687,8 @@
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
       "photo_record_path": "photo-library/airfryer/records/af-carrots-maple-thyme-2.json",
-      "visual_review_status": "visually_accepted"
+      "visual_review_status": "visually_accepted",
+      "photo_sha256": "3be87c0d5bede1e3c9949f04c61b849177a58ec1d06c17ad491990a0f9c1533d"
     },
     {
       "number": 59,
@@ -756,8 +764,9 @@
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
       "photo_record_path": "photo-library/airfryer/records/af-baby-potatoes-rosemary-2.json",
-      "visual_review_status": "needs_regeneration",
-      "visual_review_note": "Картофель выглядит скорее отварным, чем приготовленным в аэрогриле: почти нет золотистой корочки и поджаренных срезов."
+      "visual_review_status": "pending_recheck",
+      "visual_review_note": "Картофель выглядит скорее отварным, чем приготовленным в аэрогриле: почти нет золотистой корочки и поджаренных срезов.",
+      "photo_sha256": "01a5a3b648dc60e44a810018c7ab1c666db3c62868366bb44bda4f66c11cd939"
     },
     {
       "number": 60,
@@ -828,7 +837,8 @@
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
       "photo_record_path": "photo-library/airfryer/records/af-sweet-potato-fries-2.json",
-      "visual_review_status": "visually_accepted"
+      "visual_review_status": "visually_accepted",
+      "photo_sha256": "807cb47d99f81489ec7f8dd66b5e4197b182739eff7007f3237b406e440a8b1b"
     }
   ]
 }
