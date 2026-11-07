@@ -1,5 +1,10 @@
 name: Yandex AI ART - air fryer photo batch 01
 on:
+  pull_request:
+    paths:
+      - 'data/airfryer-recipes-batch-01.json'
+      - 'photo-pipeline/**'
+      - '.github/workflows/yandex-ai-airfryer-batch-01.yml'
   schedule:
     - cron: '17 * * * *'
   workflow_dispatch:
