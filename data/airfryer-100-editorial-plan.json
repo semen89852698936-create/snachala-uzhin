@@ -1170,12 +1170,13 @@
       "title": "Черри с чесноком и травами",
       "servings": 2,
       "editorial_concept": "Использовать подходящую жаропрочную ёмкость, если нужно удержать сок; не закрывать поток воздуха.",
-      "recipe_status": "idea_not_yet_source_checked",
-      "source_status": "not_checked",
-      "tefal_book_status": "pending",
+      "recipe_status": "full_draft_source_reviewed",
+      "source_status": "cross_checked",
+      "tefal_book_status": "no_direct_equivalent",
       "photo_status": "not_started",
       "appliance_test_status": "not_tested",
-      "publication_status": "not_published"
+      "publication_status": "not_published",
+      "batch_number": 8
     },
     {
       "number": 72,
@@ -1184,12 +1185,13 @@
       "title": "Тыква баттернат с шалфеем",
       "servings": 2,
       "editorial_concept": "Кубики одинакового размера; шалфей и сахаристые добавки контролировать от пересушивания.",
-      "recipe_status": "idea_not_yet_source_checked",
-      "source_status": "not_checked",
-      "tefal_book_status": "pending",
+      "recipe_status": "full_draft_source_reviewed",
+      "source_status": "cross_checked",
+      "tefal_book_status": "reference_compared_not_equivalent",
       "photo_status": "not_started",
       "appliance_test_status": "not_tested",
-      "publication_status": "not_published"
+      "publication_status": "not_published",
+      "batch_number": 8
     },
     {
       "number": 73,
@@ -1198,12 +1200,13 @@
       "title": "Мини-фриттаты со шпинатом и фетой",
       "servings": 2,
       "editorial_concept": "Только подходящие жаропрочные формочки; глубина массы определяет время схватывания.",
-      "recipe_status": "idea_not_yet_source_checked",
-      "source_status": "not_checked",
-      "tefal_book_status": "pending",
+      "recipe_status": "full_draft_source_reviewed",
+      "source_status": "cross_checked",
+      "tefal_book_status": "no_direct_equivalent",
       "photo_status": "not_started",
       "appliance_test_status": "not_tested",
-      "publication_status": "not_published"
+      "publication_status": "not_published",
+      "batch_number": 8
     },
     {
       "number": 74,
@@ -1212,12 +1215,13 @@
       "title": "Яйца, запечённые с томатами и перцем",
       "servings": 2,
       "editorial_concept": "Готовить в устойчивых жаропрочных порционных формах; контролировать степень схватывания.",
-      "recipe_status": "idea_not_yet_source_checked",
-      "source_status": "not_checked",
-      "tefal_book_status": "pending",
+      "recipe_status": "full_draft_source_reviewed",
+      "source_status": "cross_checked",
+      "tefal_book_status": "no_direct_equivalent",
       "photo_status": "not_started",
       "appliance_test_status": "not_tested",
-      "publication_status": "not_published"
+      "publication_status": "not_published",
+      "batch_number": 8
     },
     {
       "number": 75,
@@ -1226,12 +1230,13 @@
       "title": "Сырники с ванилью в аэрогриле",
       "servings": 2,
       "editorial_concept": "Стабильное тесто и пергамент/подходящий вкладыш; переворачивать без разрушения.",
-      "recipe_status": "idea_not_yet_source_checked",
-      "source_status": "not_checked",
-      "tefal_book_status": "pending",
+      "recipe_status": "full_draft_source_reviewed",
+      "source_status": "cross_checked",
+      "tefal_book_status": "no_direct_equivalent",
       "photo_status": "not_started",
       "appliance_test_status": "not_tested",
-      "publication_status": "not_published"
+      "publication_status": "not_published",
+      "batch_number": 8
     },
     {
       "number": 76,
@@ -1240,12 +1245,13 @@
       "title": "Картофельный хаш с луком и перцем",
       "servings": 2,
       "editorial_concept": "Картофель нарезать мелко и одинаково; перемешивать в несколько этапов.",
-      "recipe_status": "idea_not_yet_source_checked",
-      "source_status": "not_checked",
-      "tefal_book_status": "pending",
+      "recipe_status": "full_draft_source_reviewed",
+      "source_status": "cross_checked",
+      "tefal_book_status": "reference_compared_not_equivalent",
       "photo_status": "not_started",
       "appliance_test_status": "not_tested",
-      "publication_status": "not_published"
+      "publication_status": "not_published",
+      "batch_number": 8
     },
     {
       "number": 77,
@@ -1254,12 +1260,13 @@
       "title": "Овсяные кексы с яблоком",
       "servings": 2,
       "editorial_concept": "Порционные формы, правильное заполнение и проверка пропекания центра.",
-      "recipe_status": "idea_not_yet_source_checked",
-      "source_status": "not_checked",
-      "tefal_book_status": "pending",
+      "recipe_status": "full_draft_source_reviewed",
+      "source_status": "cross_checked",
+      "tefal_book_status": "no_direct_equivalent",
       "photo_status": "not_started",
       "appliance_test_status": "not_tested",
-      "publication_status": "not_published"
+      "publication_status": "not_published",
+      "batch_number": 8
     },
     {
       "number": 78,
@@ -1268,12 +1275,13 @@
       "title": "Слойки со шпинатом и фетой",
       "servings": 2,
       "editorial_concept": "Слоёное тесто не перегружать; оставить зазоры для подъёма и потока воздуха.",
-      "recipe_status": "idea_not_yet_source_checked",
-      "source_status": "not_checked",
-      "tefal_book_status": "pending",
+      "recipe_status": "full_draft_source_reviewed",
+      "source_status": "cross_checked",
+      "tefal_book_status": "no_direct_equivalent",
       "photo_status": "not_started",
       "appliance_test_status": "not_tested",
-      "publication_status": "not_published"
+      "publication_status": "not_published",
+      "batch_number": 8
     },
     {
       "number": 79,
@@ -1282,12 +1290,13 @@
       "title": "Мини-фокачча с томатами и розмарином",
       "servings": 2,
       "editorial_concept": "Порционные заготовки в подходящей форме; контролировать подъём и цвет низа.",
-      "recipe_status": "idea_not_yet_source_checked",
-      "source_status": "not_checked",
-      "tefal_book_status": "pending",
+      "recipe_status": "full_draft_source_reviewed",
+      "source_status": "cross_checked",
+      "tefal_book_status": "no_direct_equivalent",
       "photo_status": "not_started",
       "appliance_test_status": "not_tested",
-      "publication_status": "not_published"
+      "publication_status": "not_published",
+      "batch_number": 8
     },
     {
       "number": 80,
@@ -1296,12 +1305,13 @@
       "title": "Пита-пицца с моцареллой и базиликом",
       "servings": 2,
       "editorial_concept": "Тонкая основа, умеренная начинка; сыр добавлять с учётом скорости плавления.",
-      "recipe_status": "idea_not_yet_source_checked",
-      "source_status": "not_checked",
-      "tefal_book_status": "pending",
+      "recipe_status": "full_draft_source_reviewed",
+      "source_status": "cross_checked",
+      "tefal_book_status": "no_direct_equivalent",
       "photo_status": "not_started",
       "appliance_test_status": "not_tested",
-      "publication_status": "not_published"
+      "publication_status": "not_published",
+      "batch_number": 8
     },
     {
       "number": 81,
