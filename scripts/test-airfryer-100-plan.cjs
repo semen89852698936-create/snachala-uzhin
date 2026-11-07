@@ -12,6 +12,9 @@ assert.deepEqual(plan.items.map((item) => item.number), Array.from({ length: 100
 assert.ok(plan.items.every((item) => item.servings === 2), 'All recipes are planned for two servings.');
 assert.ok(plan.items.every((item) => item.editorial_concept && item.editorial_concept.trim()), 'Every item needs a culinary/technical brief.');
 assert.ok(plan.items.every((item) => item.publication_status === 'not_published'), 'Planning records must not claim publication.');
+assert.ok(plan.items.every((item) => typeof item.photo_path === 'string' && item.photo_path.startsWith('assets/airfryer/')), 'Every planned recipe must link to a local air-fryer WebP.');
+assert.ok(plan.items.every((item) => ['present_pending_visual_review','needs_replacement'].includes(item.photo_status)), 'Photo presence must remain separate from editorial approval.');
+assert.equal(plan.items.filter((item) => item.photo_status === 'needs_replacement').length, 3, 'Only the three owner-flagged photos should be marked for replacement.');
 
 const actualCounts = Object.fromEntries(
   [...new Set(plan.items.map((item) => item.category))].map((category) => [
