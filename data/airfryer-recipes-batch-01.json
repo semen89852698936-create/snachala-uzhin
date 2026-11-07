@@ -296,7 +296,9 @@
         "source_title": "Tefal Easy Fry & Grill recipe book - Chicken Wings",
         "source_url": "https://www.compatibility.groupeseb.com/documents/recipebook/EasyFry-and-Grill-EY50.pdf",
         "source_settings": "В книге: 1,2 кг крыльев, 4 ст. л. кетчупа, 2 ст. л. горчицы, 2 ст. л. паприки, 2 ст. л. сладкого соевого соуса, 2 ст. л. масла; 170 °C и 17 минут, переворот после 12 минут.",
-        "adaptation": "Количество и маринад уменьшены вдвое до 600 г и двух порций; копчёная паприка - вкусовая редакция. 17 минут - стартовый ориентир из книги, а не обещание готовности для любой модели и размера крыльев."
+        "adaptation": "Количество и маринад уменьшены вдвое до 600 г и двух порций; копчёная паприка - вкусовая редакция. 17 минут - стартовый ориентир из книги, а не обещание готовности для любой модели и размера крыльев.",
+        "secondary_source_url": "https://www.bbcgoodfood.com/recipes/air-fried-chicken-wings",
+        "secondary_source_note": "Сопоставление, не режим для переноса: BBC Good Food указывает 35 минут для 1 кг крыльев и сообщает, что рецепт тестировался на Tefal ActiFry Genius XL 2-in-1. Это другая модельная конструкция; для Easy Fry & Grill приоритет у предоставленной книги Tefal, с обязательной проверкой 74 °C."
       },
       "tefal_reference": {
         "status": "direct_recipe_in_supplied_tefal_book",
