@@ -1,6 +1,6 @@
 {
   "schema": "airfryer-editorial-draft-v1",
-  "status": "six editorial candidates; NOT published; photos missing; all six appliance_test.status=not_tested",
+  "status": "six source-cross-checked editorial candidates; NOT published; six photos missing; all six appliance_test.status=not_tested",
   "servings": 2,
   "quality_rules": [
     "Only recipes formulated for forced-air cooking, not oven-temperature conversion.",
@@ -11,12 +11,12 @@
   ],
   "sources": [
     "https://www.bbcgoodfood.com/recipes/air-fryer-salmon",
+    "https://www.bbcgoodfood.com/recipes/air-fryer-chicken-breasts",
     "https://www.bbcgoodfood.com/recipes/air-fryer-potato-wedges",
-    "https://tollbit.bbcgoodfood.com/premium/air-fryer-chicken-breasts-2",
-    "https://www.foodsafety.gov/food-safety-charts/safe-minimum-internal-temperatures",
     "https://www.bbcgoodfood.com/recipes/air-fryer-brussels-sprouts",
     "https://www.bbcgoodfood.com/recipes/air-fryer-mushrooms-on-toast",
-    "https://www.bbcgoodfood.com/recipes/maple-thyme-carrots"
+    "https://www.bbcgoodfood.com/recipes/maple-thyme-carrots",
+    "https://www.foodsafety.gov/food-safety-charts/safe-minimum-internal-temperatures"
   ],
   "recipes": [
     {
@@ -68,6 +68,19 @@
         "model": null,
         "date": null,
         "notes": null
+      },
+      "source_verification": {
+        "status": "cross_checked",
+        "source_title": "Air fryer salmon",
+        "source_servings": "4",
+        "source_temperature_c": 180,
+        "source_cook_minutes": [
+          8,
+          10
+        ],
+        "checked_on": "2026-11-07",
+        "notes": "Two 130 g portions preserve the source fillet size; check the thickest part and use 63 °C internal temperature from FoodSafety.gov.",
+        "safety_reference": "https://www.foodsafety.gov/food-safety-charts/safe-minimum-internal-temperatures"
       }
     },
     {
@@ -113,12 +126,25 @@
       ],
       "photo_webp": null,
       "photo_status": "required",
-      "reference": "https://tollbit.bbcgoodfood.com/premium/air-fryer-chicken-breasts-2",
+      "reference": "https://www.bbcgoodfood.com/recipes/air-fryer-chicken-breasts",
       "appliance_test": {
         "status": "not_tested",
         "model": null,
         "date": null,
         "notes": null
+      },
+      "source_verification": {
+        "status": "cross_checked",
+        "source_title": "Air fryer chicken breasts",
+        "source_servings": "4",
+        "source_temperature_c": 180,
+        "source_cook_minutes": [
+          18,
+          20
+        ],
+        "checked_on": "2026-11-07",
+        "notes": "The source gives 18–20 minutes at 180 °C and a lower internal endpoint; this version uses the stricter 74 °C poultry endpoint from FoodSafety.gov, so 18–23 minutes is a starting range, not a promise.",
+        "safety_reference": "https://www.foodsafety.gov/food-safety-charts/safe-minimum-internal-temperatures"
       }
     },
     {
@@ -161,7 +187,7 @@
         "Нарезать картофель дольками одинаковой толщины; замочить на 30 минут, затем на 15 минут залить горячей водой, тщательно обсушить.",
         "Перемешать с растительным маслом, паприкой, орегано, солью и перцем.",
         "Готовить при 200 °C, встряхивая корзину каждые 10 минут; если объём велик, разделить на партии.",
-        "Через 30 минут проверить мягкость середины и корочку, при необходимости продолжить до 40 минут."
+        "Через 30 минут проверить мягкость середины и появление румяной корочки; при необходимости продолжить до 40 минут."
       ],
       "photo_webp": null,
       "photo_status": "required",
@@ -171,6 +197,19 @@
         "model": null,
         "date": null,
         "notes": null
+      },
+      "source_verification": {
+        "status": "cross_checked",
+        "source_title": "Air fryer potato wedges",
+        "source_servings": "4",
+        "source_temperature_c": 200,
+        "source_cook_minutes": [
+          30,
+          40
+        ],
+        "checked_on": "2026-11-07",
+        "notes": "Source sequence retained: 30 minutes cold soak, 15 minutes hot soak, thorough drying, single layer and shaking every 10 minutes; quantity halved for two.",
+        "safety_reference": "https://www.foodsafety.gov/food-safety-charts/safe-minimum-internal-temperatures"
       }
     },
     {
@@ -218,6 +257,19 @@
         "model": null,
         "date": null,
         "notes": null
+      },
+      "source_verification": {
+        "status": "cross_checked",
+        "source_title": "Air-fryer brussels sprouts",
+        "source_servings": "4–6",
+        "source_temperature_c": 180,
+        "source_cook_minutes": [
+          10,
+          15
+        ],
+        "checked_on": "2026-11-07",
+        "notes": "Quantity scaled to two; single layer, toss halfway, add lemon zest after cooking.",
+        "safety_reference": "https://www.foodsafety.gov/food-safety-charts/safe-minimum-internal-temperatures"
       }
     },
     {
@@ -261,13 +313,13 @@
         15
       ],
       "preheat": "Разогреть аэрогриль до 200 °C, если это указано в инструкции к модели.",
-      "basket": "Грибы разложить одним слоем в корзине; возможна влага от грибов, не переполнять корзину. Хлеб поджарить отдельно в тостере или на сухой сковороде: время и температура аэрогриля относятся только к грибам.",
+      "basket": "Грибы разложить одним слоем в корзине, не переполнять: они выделяют влагу. Если позволяет площадь, оставить свободное место для хлеба; если нет, после грибов поджарить ломтики в той же корзине 2–3 минуты.",
       "turn": "Встряхнуть корзину с грибами в середине приготовления, через 6-7 минут.",
       "steps": [
         "Очистить грибы, крупные нарезать на четвертинки. Перемешать с тимьяном, сушёным чесноком, растительным маслом и перцем.",
         "Разогреть аэрогриль до 200 °C. Выложить грибы одним слоем, чтобы горячий воздух проходил между кусочками.",
         "Готовить 12-15 минут, перемешать примерно через 7 минут; дождаться золотистых краёв и испарения основной влаги.",
-        "Отдельно подрумянить хлеб в тостере или на сухой сковороде, разложить сверху горячие грибы, посыпать петрушкой и сразу подать. Не включать обжаривание хлеба в 12–15 минут приготовления грибов."
+        "За последние 2–3 минуты положить ломтики хлеба в свободное место корзины, если они помещаются одним слоем. Если места нет, переложить готовые грибы в миску и поджарить хлеб в той же корзине ещё 2–3 минуты при 180–200 °C. Выложить грибы на тосты, посыпать петрушкой и сразу подать."
       ],
       "photo_webp": null,
       "photo_status": "required",
@@ -277,6 +329,19 @@
         "model": null,
         "date": null,
         "notes": null
+      },
+      "source_verification": {
+        "status": "cross_checked",
+        "source_title": "Air-fryer mushrooms on toast",
+        "source_servings": "2",
+        "source_temperature_c": 200,
+        "source_cook_minutes": [
+          12,
+          15
+        ],
+        "checked_on": "2026-11-07",
+        "notes": "Mushroom timing follows the source. Toast is done in the same air fryer after removing mushrooms, or concurrently only if the basket has enough free space.",
+        "safety_reference": "https://www.foodsafety.gov/food-safety-charts/safe-minimum-internal-temperatures"
       }
     },
     {
@@ -332,7 +397,26 @@
         "model": null,
         "date": null,
         "notes": null
+      },
+      "source_verification": {
+        "status": "cross_checked",
+        "source_title": "Maple thyme carrots",
+        "source_servings": "4",
+        "source_temperature_c": 180,
+        "source_cook_minutes": [
+          30,
+          40
+        ],
+        "checked_on": "2026-11-07",
+        "notes": "Source sequence retained: 25–30 minutes for tenderness, then 5–10 minutes after adding maple-thyme glaze; quantity halved for two.",
+        "safety_reference": "https://www.foodsafety.gov/food-safety-charts/safe-minimum-internal-temperatures"
       }
     }
-  ]
+  ],
+  "source_review": {
+    "status": "cross_checked",
+    "checked_on": "2026-11-07",
+    "basis": "Six dedicated air-fryer recipes from BBC Good Food, with safe internal temperatures cross-checked against FoodSafety.gov.",
+    "limitation": "Source verification is not a physical test in a specific air-fryer model."
+  }
 }
