@@ -22,7 +22,7 @@
     const cookMin = Math.min(...times), cookMax = Math.max(...times);
     const timeLabel = cookMin === cookMax ? cookMax + " мин" : cookMin + "–" + cookMax + " мин";
     return {
-      id:recipe.id,title:recipe.title,category:"airfryer",cuisine:"Аэрогриль",
+      id:recipe.id,title:recipe.title,category:"airfryer",cuisine:recipe.category,
       photo:"/"+String(recipe.photo_path || "").replace(/^\//,""),
       description:"На "+recipe.servings+" порции. "+recipe.temperature_c+" °C · "+timeLabel+". Подготовка "+(recipe.prep_minutes||0)+" мин.",
       minutes:Number(recipe.prep_minutes||0)+cookMax,level:"Домашняя кухня",base:Number(recipe.servings||2),
