@@ -1,4 +1,4 @@
-name: Timeweb staging environment shape (read only)
+name: Inspect private Timeweb app PostgreSQL env state (read only)
 on:
   pull_request:
     branches: [feature/commerce-secure-foundation-20261104]
@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 3
     steps:
-      - name: Inspect nonsecret settings and verify stored session key format without logging secrets
+      - name: Inspect live private app stored env keys, never log their secret values
         env:
           TIMEWEB_API_TOKEN: ${{ secrets.TIMEWEB_API_TOKEN }}
         run: |
@@ -20,19 +20,23 @@ jobs:
           token=os.environ['TIMEWEB_API_TOKEN'].strip()
           if token.lower().startswith('bearer '):token=token[7:].strip()
           if len(token)>2 and token[0]==token[-1] and token[0] in ("'",'"'):token=token[1:-1].strip()
-          req=urllib.request.Request('https://api.timeweb.cloud/api/v1/apps/284041',headers={'Authorization':'Bearer '+token,'Accept':'application/json'},method='GET')
+          req=urllib.request.Request('https://api.timeweb.cloud/api/v1/apps/284043',headers={'Authorization':'Bearer '+token,'Accept':'application/json'},method='GET')
           with urllib.request.urlopen(req,timeout=20) as r:app=json.load(r)['app']
-          assert app['name']=='snachala-uzhin-commerce-staging' and app['project_id']==3145267 and app['preset_id']==2731
+          assert app['name']=='snachala-uzhin-commerce-private' and app['project_id']==3145267 and app['preset_id']==2731
           env=app.get('envs',{})
           print('ENV OBJECT',type(env).__name__)
           if not isinstance(env,dict):raise SystemExit('Unexpected env format')
-          for key in ('COMMERCE_BASE_URL','COMMERCE_DB_PATH','ENABLE_CHECKOUT','COMMERCE_PAYMENT_QA_APPROVED','SESSION_KEY_HEX'):
+          for key in ('COMMERCE_BASE_URL','COMMERCE_DB_PATH','ENABLE_CHECKOUT','COMMERCE_PAYMENT_QA_APPROVED','SESSION_KEY_HEX','COMMERCE_DATABASE_URL'):
               v=env.get(key)
               if key=='SESSION_KEY_HEX':
                   print(key,'TYPE',type(v).__name__,'VALID_64_HEX',isinstance(v,str) and bool(re.fullmatch('[0-9a-fA-F]{64}',v)),'OBJECT_KEYS',sorted(v.keys()) if isinstance(v,dict) else [])
               elif key=='COMMERCE_BASE_URL':
                   print(key,'TYPE',type(v).__name__,'IS_TEMPORARY_PLACEHOLDER',v=='https://initial-setup.snachala-uzhin.invalid','OBJECT_KEYS',sorted(v.keys()) if isinstance(v,dict) else [])
+              elif key=='COMMERCE_DATABASE_URL':
+                  print(key,'PRESENT',key in env,'NONEMPTY_STRING',isinstance(v,str) and bool(v),'IS_POSTGRES_URI',isinstance(v,str) and v.startswith(('postgresql://','postgres://')))
+              elif key in ('ENABLE_CHECKOUT','COMMERCE_PAYMENT_QA_APPROVED'):
+                  print(key,'TYPE',type(v).__name__,'CHECKOUT_OFF',v=='0')
               else:
-                  print(key,'TYPE',type(v).__name__,'ZERO_CONFIGURED',v=='0','OBJECT_KEYS',sorted(v.keys()) if isinstance(v,dict) else [])
+                  print(key,'PRESENT',key in env,'TYPE',type(v).__name__)
           print('READ ONLY.')
           PY
