@@ -1,6 +1,17 @@
 # «СНАЧАЛА УЖИН»: PostgreSQL, почта и Продамус, план перехода к продажам
 Дата: 07.11.2026. **Не является распоряжением на создание платных ресурсов или включение платежей**.
 
+## 07.11.2026 11:32 МСК: API env сохранена; пароль DB отклонён; стенд безопасно восстановлен
+
+- Секрет `SNACHALA_PG_DSN_20261107` добавлен владельцем в GitHub Actions Secrets (значение НЕ доступно нам и не записано в репо).
+- [GH Actions run 42355374129](https://github.com/semen89852698936-create/snachala-uzhin/actions/runs/42355374129): `PATCH /api/v1/apps/284043` с 6 env, затем независимый API `GET` подтвердил наличие `COMMERCE_DATABASE_URL`. Секрет не раскрыт. Ключ сессии сменён при полном замещении env; покупателей нет. Платежи сохранены OFF.
+- [Проверка run 42355507481](https://github.com/semen89852698936-create/snachala-uzhin/actions/runs/42355507481): после применения PG запуск `/healthz` вернул 502. Логи от [42355589378](https://github.com/semen89852698936-create/snachala-uzhin/actions/runs/42355589378) и [42355667787](https://github.com/semen89852698936-create/snachala-uzhin/actions/runs/42355667787) показывают **свежие ошибки PostgreSQL `password authentication failed`**, worker failed to boot. Логи рассматривались через классификацию, сырые записи/секреты не выводились.
+- Для восстановления availability стенда [run 42355759255](https://github.com/semen89852698936-create/snachala-uzhin/actions/runs/42355759255) вернул прежние 5 env через API, `COMMERCE_DATABASE_URL` удалена из App, checkout/payments OFF, `/healthz` вернул 200. Важно: **это временное восстановление на SQLite, не успешное подключение PostgreSQL**.
+- [HTTP acceptance 42355897651](https://github.com/semen89852698936-create/snachala-uzhin/actions/runs/42355897651) PASS: `/healthz` 200, `/app` 403, `/api/orders` 503 (checkout OFF), каталог и изображения закрыты.
+- **Следующий шаг по одному действию владельца:** через консоль работающего App `284043` проверить текущий пароль из локального документа на реальном PostgreSQL: `psycopg.connect(host='192.168.0.5',port=5432,dbname='default_db',user='gen_user',password=getpass.getpass(...),sslmode='require',connect_timeout=10)`. Пароль не вводить в чат, не записывать в workflow. Если TLS True, заменить ошибочное значение `SNACHALA_PG_DSN_20261107` в GitHub Secrets через тот же getpass->encoded DSN; если auth fail, выполнить контролируемую смену пароля PostgreSQL в Timeweb и снова проверить TLS до повторного PATCH.
+- **Блокирующее правило:** не повторять автоматическое применение `SNACHALA_PG_DSN_20261107` до доказанного TLS-подключения тем же текущим паролем. Не включать Prodamus, не создавать платных ресурсов, не менять main/Vercel.
+
+
 ## 07.11.2026: блокер PostgreSQL env (приоритетный)
 
 - Подтверждено: живое подключение из App к managed PostgreSQL с TLS True (пароль остаётся только у владельца).
