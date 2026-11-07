@@ -23,6 +23,15 @@ jobs:
           req=urllib.request.Request('https://api.timeweb.cloud/api/v1/apps/284043',headers={'Authorization':'Bearer '+token,'Accept':'application/json'},method='GET')
           with urllib.request.urlopen(req,timeout=20) as r:app=json.load(r)['app']
           assert app['name']=='snachala-uzhin-commerce-private' and app['project_id']==3145267 and app['preset_id']==2731
+          print('APP_STATUS',app.get('status'))
+          print('APP_TOPLEVEL_KEYS',sorted(app.keys()))
+          print('SOURCE_META_KEYS', {k:app.get(k) for k in ('repository','branch','provider_id','repository_id','commit','commit_sha','auto_deploy','deploy_branch','vcs_provider_id') if isinstance(app.get(k),(str,int,bool))})
+          for key in ('deploy','deployment','deploy_settings','repository','vcs','source'):
+              obj=app.get(key)
+              if isinstance(obj,dict):
+                  print('SOURCE_SECTION',key,'FIELDS',sorted(obj.keys()))
+                  for field in ('branch','repository_name','repository_id','provider_id','sha','commit_sha','autodeploy'):
+                      if isinstance(obj.get(field),(str,int,bool)):print('SOURCE_FIELD',key,field,obj[field])
           env=app.get('envs',{})
           print('ENV OBJECT',type(env).__name__)
           if not isinstance(env,dict):raise SystemExit('Unexpected env format')
