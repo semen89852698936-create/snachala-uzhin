@@ -53,3 +53,12 @@
 17. [Nutricook - Crispy Rice Paper Rolls](https://nutricookworld.com/blogs/recipes/crispy-rice-paper-rolls)
 18. [Make Healthy Recipes - Crispy Rice Paper Dumplings](https://makehealthyrecipes.com/rice-paper-dumplings/)
 19. [Tefal Easy Fry & Grill - предоставленная книга рецептов](https://ru.scribd.com/document/875246352/Книга-рецептов-аэрогриль-Тефаль)
+
+
+## Фото-приёмка 08.11.2026
+
+- Файлы всех партий: 100/100 WebP технически проверены, размер 1200 × 900, SHA-256 сверены с записями фотобазы.
+- В этой партии визуально принято: 8/10. На точечную перегенерацию: 2/10.
+- Очередь замены: af-chickpeas-paprika-2; af-polenta-fries-parmesan-2.
+- Все изображения остаются неопубликованными. Физические испытания на точной модели аэрогриля владельца не заявлены.
+- Ежечасный и push-триггеры платной генерации отключаются изменением workflow; платный запуск останется только ручным или через отдельную QA-ветку с явным именем.
