@@ -18,6 +18,7 @@ jobs:
         env:
           TIMEWEB_API_TOKEN: ${{ secrets.TIMEWEB_API_TOKEN }}
           SNACHALA_PG_DSN_20261107: ${{ secrets.SNACHALA_PG_DSN_20261107 }}
+        # Re-run after owner saved the GitHub Actions repository secret. Secret remains masked.
         run: |
           python3 - <<'PY'
           import json,os,secrets,urllib.parse,urllib.request,urllib.error,time
