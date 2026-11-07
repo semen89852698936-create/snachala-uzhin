@@ -35,4 +35,7 @@ jobs:
       - name: Compile and dry-run Yandex photo generator without paid API calls
         run: |
           python -m py_compile photo-pipeline/generate_airfryer_batch.py photo-pipeline/test_airfryer_batch.py photo-pipeline/verify_airfryer_batch.py
-          python photo-pipeline/test_airfryer_batch.py
+          for manifest in data/airfryer-recipes-batch-*.json; do
+            [ -f "$manifest" ] || continue
+            python photo-pipeline/test_airfryer_batch.py --manifest "$manifest"
+          done
