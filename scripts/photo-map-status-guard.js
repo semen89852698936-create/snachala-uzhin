@@ -6,11 +6,12 @@ const path = require('node:path');
 function audit(map, legacy) {
   assert.equal(map.total, 1001, 'AI map total must be 1001');
   assert.equal(map.photos.length, map.total, 'AI map length mismatch');
-  const ids = new Set(), paths = new Set();
+  const ids = new Set(), recipeIds = new Set(), paths = new Set();
   for (const p of map.photos) {
     assert(Number.isInteger(p.n) && p.n >= 1 && p.n <= map.total, 'invalid index');
     assert(!ids.has(p.n), 'duplicate index: ' + p.n); ids.add(p.n);
-    assert(typeof p.recipe_id === 'string' && p.recipe_id, 'missing recipe id');
+    assert(typeof p.recipe_id === 'string' && p.recipe_id.trim(), 'missing recipe id');
+    assert(!recipeIds.has(p.recipe_id), 'duplicate recipe id: ' + p.recipe_id); recipeIds.add(p.recipe_id);
     assert(typeof p.path === 'string' && /^\/assets\/recipes-ai\/[^/]+\.webp$/.test(p.path), 'invalid path');
     assert(!paths.has(p.path), 'duplicate path'); paths.add(p.path);
     assert(Number.isInteger(p.bytes) && p.bytes > 0, 'invalid byte size');
