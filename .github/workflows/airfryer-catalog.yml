@@ -29,3 +29,21 @@ jobs:
           node-version: 20
       - name: Validate airfryer recipes, photos and both site variants
         run: node scripts/test-airfryer-catalog.cjs
+
+  browser:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install Playwright and Chromium
+        run: |
+          npm install --no-save playwright@1.56.1
+          npx playwright install chromium --with-deps
+      - name: Test both catalog pages on desktop and mobile
+        run: |
+          python3 -m http.server 8765 --bind 127.0.0.1 > /tmp/airfryer-http.log 2>&1 &
+          for i in $(seq 1 30); do
+            if curl -fsS http://127.0.0.1:8765/ >/dev/null; then break; fi
+            sleep 1
+          done
+          node scripts/e2e-airfryer-catalog.cjs
