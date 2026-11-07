@@ -171,9 +171,9 @@
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
       "photo_record_path": "photo-library/airfryer/records/af-sea-bass-whole-lemon-2.json",
-      "visual_review_status": "needs_regeneration",
+      "visual_review_status": "pending_recheck",
       "visual_review_note": "Рыба теперь показана целиком, но всё ещё выглядит сырой и незапечённой. Нужны золотистая кожа и визуально готовая непрозрачная мякоть.",
-      "photo_sha256": "5b8afc00bd8541a0fd71f3e012043c71158530d5c5de9bb6743f532b40152df5"
+      "photo_sha256": "797bb644cc0ef30fa0fc0cc434993dbccc2103a8608020712e73c7b2c5022982"
     },
     {
       "number": 43,

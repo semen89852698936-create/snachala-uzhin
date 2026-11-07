@@ -241,7 +241,7 @@
         "https://www.muscleandfitness.com/nutrition/healthy-eating/low-fat-cajun-turkey-medallions-recipe/"
       ],
       "batch_number": 2,
-      "visual_review_status": "needs_regeneration"
+      "visual_review_status": "pending_recheck"
     },
     {
       "number": 13,
@@ -455,7 +455,7 @@
         "https://www.arlafoods.co.uk/recipes/air-fryer-meatballs/",
         "https://www.gramcups.com/air-fryer/air-fryer-italian-meatballs"
       ],
-      "visual_review_status": "needs_regeneration"
+      "visual_review_status": "pending_recheck"
     },
     {
       "number": 24,
@@ -783,7 +783,7 @@
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
       "batch_number": 5,
-      "visual_review_status": "needs_regeneration"
+      "visual_review_status": "pending_recheck"
     },
     {
       "number": 43,
@@ -1519,7 +1519,7 @@
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
       "batch_number": 9,
-      "visual_review_status": "needs_regeneration"
+      "visual_review_status": "pending_recheck"
     },
     {
       "number": 89,
