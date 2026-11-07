@@ -207,8 +207,7 @@
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
       "photo_record_path": "photo-library/airfryer/records/af-turkey-medallions-cranberry-2.json",
-      "visual_review_status": "pending_recheck",
-      "visual_review_note": "Повторный снимок снова показывает целые жёлтые зёрна и не даёт читаемого рубинового клюквенного соуса. В рецепте есть измельчённые кукурузные хлопья для тонкой панировки, но не целые зёрна.",
+      "visual_review_status": "visually_accepted",
       "photo_sha256": "0ad3306af6cc52d546461e2e799ed18eaae3782e8ba5850765e59a55844db53b"
     },
     {
