@@ -68,14 +68,14 @@ def make_prompt(recipe: dict) -> str:
     title = clean(recipe["title"])
     brief = clean(recipe["photo_brief"])
     ingredients = []
-    for item in recipe.get("ingredients", [])[:4]:
+    for item in recipe.get("ingredients", [])[:2]:
         if isinstance(item, (list, tuple)) and len(item) >= 1:
             ingredients.append(clean(item[0]))
     ingredient_text = ", ".join(ingredients)
-    prefix = "Ресторанная фотореалистичная фотография готового блюда. "
+    prefix = "Фотореалистичная ресторанная фотография готового блюда. "
     title_part = f"Блюдо: {title}. "
-    ingredient_part = f"Ключевые ингредиенты: {ingredient_text}. " if ingredient_text else ""
-    suffix = "Один кадр, одна композиция, без коллажей, людей, рук, текста и логотипов. Подача на двоих, мягкий тёплый свет."
+    ingredient_part = f"Главное: {ingredient_text}. " if ingredient_text else ""
+    suffix = "Один кадр, без коллажей, текста, людей и логотипов. Подача на двоих, мягкий тёплый свет."
     fixed = prefix + title_part + ingredient_part + "Детали: ." + suffix
     brief_limit = max(0, MAX_PROMPT - len(fixed) - 2)
     brief = brief[:brief_limit].rstrip(" ,.;")
