@@ -28,21 +28,29 @@ function audit(r){
 }
 assert.equal(data.schema,'airfryer-editorial-draft-v1');
 assert.equal(data.servings,2);
-assert.ok(Array.isArray(data.recipes)&&data.recipes.length>=3);
+assert.ok(Array.isArray(data.recipes)&&data.recipes.length===6,'exactly six pilot recipes required');
+assert.equal(data.source_review?.status,'cross_checked','source review metadata required');
+assert.equal(data.source_review?.checked_on,'2026-11-07');
 assert.equal(new Set(data.recipes.map(r=>r.id)).size,data.recipes.length,'duplicate IDs');
-for(const r of data.recipes)assert.deepEqual(audit(r),[],r.id+' invalid metadata');
+for(const r of data.recipes){
+  assert.deepEqual(audit(r),[],r.id+' invalid metadata');
+  assert.equal(r.source_verification?.status,'cross_checked',r.id+' source verification missing');
+  assert.equal(r.source_verification?.checked_on,'2026-11-07',r.id+' source review date missing');
+  assert.ok(r.source_verification?.source_title&&r.source_verification?.notes,r.id+' source review details missing');
+  assert.equal(r.appliance_test?.status,'not_tested',r.id+' must not be represented as physically tested');
+}
 const potato=data.recipes.find(r=>r.id==='af-potato-wedges-2');
 assert.ok(potato,'potato wedges candidate must exist');
 assert.ok(potato.prep_minutes>=55,'potato prep must include 30+15 minutes soaking plus 10 minutes active prep');
 assert.match(potato.additional_prep||'',/30 минут/,'cold soak must remain explicit');
 assert.match(potato.additional_prep||'',/15 минут/,'hot soak must remain explicit');
-// Prevent misleading airfryer claims: the bread is toasted outside the appliance.
+// Keep mushroom preparation appliance-specific: toast in the same air fryer, without overloading the basket.
 const mushrooms=data.recipes.find(r=>r.id==='af-mushrooms-thyme-toast-2');
 assert.ok(mushrooms,'mushroom toast candidate must exist');
 assert.doesNotMatch(mushrooms.title,/тостах из аэрогриля/i,'title must not claim airfried bread');
-assert.match(mushrooms.basket,/хлеб поджарить отдельно/i,'bread preparation must remain separate');
-assert.match(mushrooms.steps.join(' '),/тостере или на сухой сковороде/i,'bread method must be explicit');
-assert.match(mushrooms.steps.join(' '),/не включать обжаривание хлеба в 12–15 минут/i,'cook time must apply only to mushrooms');
+assert.match(mushrooms.basket,/той же корзине/i,'bread should be toasted in the air fryer');
+assert.match(mushrooms.steps.join(' '),/той же корзине ещё 2–3 минуты/i,'sequential toast timing must be explicit');
+assert.match(mushrooms.steps.join(' '),/свободное место корзины/i,'concurrent toast is allowed only when the basket has room');
 // Poultry instructions must explicitly prevent cross-contamination; internal temperature alone is insufficient.
 const chicken=data.recipes.find(r=>r.id==='af-chicken-paprika-2');
 assert.ok(chicken,'chicken candidate must exist');
