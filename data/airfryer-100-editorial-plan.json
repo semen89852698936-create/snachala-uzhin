@@ -1320,12 +1320,13 @@
       "title": "Круассаны с ветчиной и сыром",
       "servings": 2,
       "editorial_concept": "Собранные изделия размещать швом вниз; проверять прогрев начинки и цвет теста.",
-      "recipe_status": "idea_not_yet_source_checked",
-      "source_status": "not_checked",
-      "tefal_book_status": "pending",
+      "recipe_status": "full_draft_source_reviewed",
+      "source_status": "cross_checked",
+      "tefal_book_status": "no_direct_equivalent",
       "photo_status": "not_started",
       "appliance_test_status": "not_tested",
-      "publication_status": "not_published"
+      "publication_status": "not_published",
+      "batch_number": 9
     },
     {
       "number": 82,
@@ -1334,12 +1335,13 @@
       "title": "Творожные маффины с ягодами",
       "servings": 2,
       "editorial_concept": "Порционные формы; не переполнять, проверять центр деревянной шпажкой.",
-      "recipe_status": "idea_not_yet_source_checked",
-      "source_status": "not_checked",
-      "tefal_book_status": "pending",
+      "recipe_status": "full_draft_source_reviewed",
+      "source_status": "cross_checked",
+      "tefal_book_status": "no_direct_equivalent",
       "photo_status": "not_started",
       "appliance_test_status": "not_tested",
-      "publication_status": "not_published"
+      "publication_status": "not_published",
+      "batch_number": 9
     },
     {
       "number": 83,
@@ -1348,12 +1350,13 @@
       "title": "Хрустящий нут с паприкой",
       "servings": 2,
       "editorial_concept": "Нут тщательно обсушить; встряхивать, специи добавлять с учётом риска подгорания.",
-      "recipe_status": "idea_not_yet_source_checked",
-      "source_status": "not_checked",
-      "tefal_book_status": "pending",
+      "recipe_status": "full_draft_source_reviewed",
+      "source_status": "cross_checked",
+      "tefal_book_status": "no_direct_equivalent",
       "photo_status": "not_started",
       "appliance_test_status": "not_tested",
-      "publication_status": "not_published"
+      "publication_status": "not_published",
+      "batch_number": 9
     },
     {
       "number": 84,
@@ -1362,12 +1365,13 @@
       "title": "Хрустящие чипсы из питы с розмарином",
       "servings": 2,
       "editorial_concept": "Нарезать равномерно, слегка смазать маслом; короткий режим и частый контроль.",
-      "recipe_status": "idea_not_yet_source_checked",
-      "source_status": "not_checked",
-      "tefal_book_status": "pending",
+      "recipe_status": "full_draft_source_reviewed",
+      "source_status": "cross_checked",
+      "tefal_book_status": "no_direct_equivalent",
       "photo_status": "not_started",
       "appliance_test_status": "not_tested",
-      "publication_status": "not_published"
+      "publication_status": "not_published",
+      "batch_number": 9
     },
     {
       "number": 85,
@@ -1376,12 +1380,13 @@
       "title": "Кабачковые оладьи",
       "servings": 2,
       "editorial_concept": "Кабачок отжать, формовать небольшие одинаковые порции; переворачивать аккуратно.",
-      "recipe_status": "idea_not_yet_source_checked",
-      "source_status": "not_checked",
-      "tefal_book_status": "pending",
+      "recipe_status": "full_draft_source_reviewed",
+      "source_status": "cross_checked",
+      "tefal_book_status": "no_direct_equivalent",
       "photo_status": "not_started",
       "appliance_test_status": "not_tested",
-      "publication_status": "not_published"
+      "publication_status": "not_published",
+      "batch_number": 9
     },
     {
       "number": 86,
@@ -1390,12 +1395,13 @@
       "title": "Палочки халуми с кунжутом",
       "servings": 2,
       "editorial_concept": "Палочки одинаковой толщины; короткое приготовление, подавать сразу.",
-      "recipe_status": "idea_not_yet_source_checked",
-      "source_status": "not_checked",
-      "tefal_book_status": "pending",
+      "recipe_status": "full_draft_source_reviewed",
+      "source_status": "cross_checked",
+      "tefal_book_status": "no_direct_equivalent",
       "photo_status": "not_started",
       "appliance_test_status": "not_tested",
-      "publication_status": "not_published"
+      "publication_status": "not_published",
+      "batch_number": 9
     },
     {
       "number": 87,
@@ -1404,12 +1410,13 @@
       "title": "Хрустящий тофу с кунжутом",
       "servings": 2,
       "editorial_concept": "Тофу прессовать и обсушить; покрыть тонким слоем крахмала и масла.",
-      "recipe_status": "idea_not_yet_source_checked",
-      "source_status": "not_checked",
-      "tefal_book_status": "pending",
+      "recipe_status": "full_draft_source_reviewed",
+      "source_status": "cross_checked",
+      "tefal_book_status": "no_direct_equivalent",
       "photo_status": "not_started",
       "appliance_test_status": "not_tested",
-      "publication_status": "not_published"
+      "publication_status": "not_published",
+      "batch_number": 9
     },
     {
       "number": 88,
@@ -1418,12 +1425,13 @@
       "title": "Полента фри с пармезаном",
       "servings": 2,
       "editorial_concept": "Поленту охладить и нарезать ровно; сыр наносить ближе к концу.",
-      "recipe_status": "idea_not_yet_source_checked",
-      "source_status": "not_checked",
-      "tefal_book_status": "pending",
+      "recipe_status": "full_draft_source_reviewed",
+      "source_status": "cross_checked",
+      "tefal_book_status": "no_direct_equivalent",
       "photo_status": "not_started",
       "appliance_test_status": "not_tested",
-      "publication_status": "not_published"
+      "publication_status": "not_published",
+      "batch_number": 9
     },
     {
       "number": 89,
@@ -1432,12 +1440,13 @@
       "title": "Финики с грецким орехом и козьим сыром",
       "servings": 2,
       "editorial_concept": "Начинку закрепить; следить за карамелизацией сахаров и вытеканием сыра.",
-      "recipe_status": "idea_not_yet_source_checked",
-      "source_status": "not_checked",
-      "tefal_book_status": "pending",
+      "recipe_status": "full_draft_source_reviewed",
+      "source_status": "cross_checked",
+      "tefal_book_status": "no_direct_equivalent",
       "photo_status": "not_started",
       "appliance_test_status": "not_tested",
-      "publication_status": "not_published"
+      "publication_status": "not_published",
+      "batch_number": 9
     },
     {
       "number": 90,
@@ -1446,12 +1455,13 @@
       "title": "Хрустящие роллы из рисовой бумаги с овощами",
       "servings": 2,
       "editorial_concept": "Рисовую бумагу не пересушить до ломкости; рулеты слегка смазать, размещать швом вниз.",
-      "recipe_status": "idea_not_yet_source_checked",
-      "source_status": "not_checked",
-      "tefal_book_status": "pending",
+      "recipe_status": "full_draft_source_reviewed",
+      "source_status": "cross_checked",
+      "tefal_book_status": "no_direct_equivalent",
       "photo_status": "not_started",
       "appliance_test_status": "not_tested",
-      "publication_status": "not_published"
+      "publication_status": "not_published",
+      "batch_number": 9
     },
     {
       "number": 91,

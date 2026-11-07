@@ -1,0 +1,25 @@
+'use strict';
+const assert = require('node:assert/strict');
+const batch = require('../data/airfryer-recipes-batch-09.json');
+const plan = require('../data/airfryer-100-editorial-plan.json');
+assert.equal(batch.schema,'airfryer-recipe-batch-v1');
+assert.equal(batch.batch_number,9);
+assert.equal(batch.recipes.length,10);
+const ids=batch.recipes.map(r=>r.id);
+assert.equal(new Set(ids).size,10);
+assert.deepEqual(batch.recipes.map(r=>r.number),[81,82,83,84,85,86,87,88,89,90]);
+assert.ok(batch.recipes.every(r=>r.servings===2));
+assert.ok(batch.recipes.every(r=>r.ingredients.length>=5));
+assert.ok(batch.recipes.every(r=>r.steps.length>=5));
+assert.ok(batch.recipes.every(r=>r.temperature_c>=140&&r.temperature_c<=210));
+assert.ok(batch.recipes.every(r=>Array.isArray(r.cook_minutes)&&r.cook_minutes.length===2));
+assert.ok(batch.recipes.every(r=>r.source_verification?.source_url));
+assert.ok(batch.recipes.every(r=>r.tefal_reference?.status));
+assert.ok(batch.recipes.every(r=>r.photo_brief&&r.photo_brief.length>=60));
+assert.ok(batch.recipes.every(r=>r.doneness&&r.safety));
+assert.ok(batch.recipes.every(r=>r.photo_status==='not_started'&&r.appliance_test_status==='not_tested'&&r.publication_status==='not_published'));
+assert.ok(batch.recipes[7].preheat.includes('5 часов'));
+assert.ok(batch.recipes[9].safety.includes('10 минут'));
+for(const r of batch.recipes){const p=plan.items.find(x=>x.id===r.id);assert.ok(p);assert.equal(p.batch_number,9);assert.equal(p.recipe_status,'full_draft_source_reviewed');assert.equal(p.source_status,'cross_checked');assert.equal(p.publication_status,'not_published');}
+assert.equal(plan.items.filter(x=>x.batch_number===9).length,10);
+console.log(JSON.stringify({ok:true,batch:9,recipes:10,range:[81,90],twoServings:true,sourceAndTefalStatuses:true,snackHandlingChecks:true,photos:'not_started',physicalTests:'not_tested',publication:'not_published'},null,2));
