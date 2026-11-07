@@ -49,7 +49,8 @@ assert.ok(chicken,'chicken candidate must exist');
 const chickenMethod=chicken.steps.join(' ');
 assert.match(chickenMethod,/сырую курицу не мыть/i,'do not wash raw poultry');
 assert.match(chickenMethod,/вымыть руки, нож и доску/i,'clean hands and utensils after handling raw poultry');
-assert.match(chickenMethod,/74\\s*°C/,'safe internal temperature remains explicit');
+assert.match(chickenMethod,/74\s*°C/,'safe internal temperature remains explicit');
+assert.doesNotMatch('Снимать с нагрева после 73 °C',/74\s*°C/,'unsafe 73°C must not satisfy poultry target');
 assert.match(chickenMethod,/не использовать для готового мяса посуду/i,'avoid reusing contaminated serving utensils');
 // Test that failures really are detected, not merely printed.
 const r=data.recipes[1];
