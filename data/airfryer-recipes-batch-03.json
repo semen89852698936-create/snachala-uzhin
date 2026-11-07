@@ -14,7 +14,7 @@
   "recipes": [
     {
       "number": 21,
-      "id": "af-beef-peppercorn-steak-2",
+      "id": "af-pepper-steak-airfryer-2",
       "title": "Перечный стейк с чесночным айоли",
       "category": "Мясо",
       "servings": 2,
@@ -170,7 +170,7 @@
     },
     {
       "number": 23,
-      "id": "af-beef-meatballs-oregano-parmesan-2",
+      "id": "af-beef-meatballs-oregano-2",
       "title": "Говяжьи фрикадельки с орегано и пармезаном",
       "category": "Мясо",
       "servings": 2,
@@ -252,7 +252,7 @@
     },
     {
       "number": 24,
-      "id": "af-beef-burgers-classic-2",
+      "id": "af-beef-burgers-2",
       "title": "Домашние бургеры из говядины с чеддером",
       "category": "Мясо",
       "servings": 2,
@@ -333,7 +333,7 @@
     },
     {
       "number": 25,
-      "id": "af-beef-kebabs-peppers-2",
+      "id": "af-beef-kebabs-pepper-2",
       "title": "Говяжьи шашлычки с перцем и луком",
       "category": "Мясо",
       "servings": 2,
@@ -415,7 +415,7 @@
     },
     {
       "number": 26,
-      "id": "af-pork-tenderloin-honey-mustard-thyme-2",
+      "id": "af-pork-tenderloin-mustard-thyme-2",
       "title": "Свиная вырезка в медово-горчичной глазури с тимьяном",
       "category": "Мясо",
       "servings": 2,
@@ -506,7 +506,7 @@
     },
     {
       "number": 27,
-      "id": "af-pork-chops-apples-sage-2",
+      "id": "af-pork-chops-apple-sage-2",
       "title": "Свиные отбивные с яблоками и шалфеем",
       "category": "Мясо",
       "servings": 2,
@@ -669,7 +669,7 @@
     },
     {
       "number": 29,
-      "id": "af-pork-schnitzel-honey-dijon-2",
+      "id": "af-pork-schnitzel-2",
       "title": "Свиные шницели в медово-дижонской панировке",
       "category": "Мясо",
       "servings": 2,
@@ -750,7 +750,7 @@
     },
     {
       "number": 30,
-      "id": "af-pork-meatballs-smoked-paprika-2",
+      "id": "af-pork-meatballs-paprika-2",
       "title": "Свиные фрикадельки с копчёной паприкой и пармезаном",
       "category": "Мясо",
       "servings": 2,
