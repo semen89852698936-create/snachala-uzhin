@@ -29,7 +29,7 @@
       ingredients:(recipe.ingredients||[]).map(ingredient),
       steps:(recipe.steps||[]).map((detail,index,all)=>({title:index===0?"Подготовка":index===all.length-1?"Проверка готовности и подача":"Приготовление · этап "+(index+1),detail:String(detail),timer:0})),
       tip:recipe.basket||recipe.turn||"Не перегружайте корзину: горячий воздух должен свободно циркулировать.",
-      warn:String(recipe.safety||"Проверяйте готовность блюда и учитывайте пищевые ограничения."),
+      warn:[String(recipe.safety||"Проверяйте готовность блюда и учитывайте пищевые ограничения."),"Время и температура могут отличаться в зависимости от модели аэрогриля. Ориентируйтесь на инструкцию производителя именно вашего прибора."].join(" "),
       equipment:"Аэрогриль",
       airfryer:{
         sourceCategory:recipe.category,prepMinutes:Number(recipe.prep_minutes||0),temperature:Number(recipe.temperature_c||0),
