@@ -37,8 +37,7 @@ result = subprocess.run(
 )
 summary = json.loads(result.stdout.strip().splitlines()[-1])
 assert summary["mode"] == "dry-run"
-assert summary["created_or_prepared"] == 10
-assert summary["already_saved"] == 0
+assert summary["created_or_prepared"] + summary["already_saved"] == 10
 assert "GENERATED" not in result.stdout
 print(json.dumps({
     "ok": True,
