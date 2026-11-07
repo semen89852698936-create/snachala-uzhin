@@ -870,12 +870,13 @@
       "title": "Крабовые котлетки с зеленью",
       "servings": 2,
       "editorial_concept": "Связующая масса и размер критичны; тонкая корочка, не пересушить.",
-      "recipe_status": "idea_not_yet_source_checked",
-      "source_status": "not_checked",
-      "tefal_book_status": "pending",
+      "recipe_status": "full_draft_source_reviewed",
+      "source_status": "cross_checked",
+      "tefal_book_status": "no_direct_equivalent",
       "photo_status": "not_started",
       "appliance_test_status": "not_tested",
-      "publication_status": "not_published"
+      "publication_status": "not_published",
+      "batch_number": 6
     },
     {
       "number": 52,
@@ -884,12 +885,13 @@
       "title": "Сардины с лимоном и петрушкой",
       "servings": 2,
       "editorial_concept": "Небольшие целые рыбы; готовить с вентиляцией, не перегружать корзину.",
-      "recipe_status": "idea_not_yet_source_checked",
-      "source_status": "not_checked",
-      "tefal_book_status": "pending",
+      "recipe_status": "full_draft_source_reviewed",
+      "source_status": "cross_checked",
+      "tefal_book_status": "no_direct_equivalent",
       "photo_status": "not_started",
       "appliance_test_status": "not_tested",
-      "publication_status": "not_published"
+      "publication_status": "not_published",
+      "batch_number": 6
     },
     {
       "number": 53,
@@ -898,12 +900,13 @@
       "title": "Домашние рыбные палочки из трески",
       "servings": 2,
       "editorial_concept": "Палочки одинакового сечения; панировка с маслом, переворот в середине.",
-      "recipe_status": "idea_not_yet_source_checked",
-      "source_status": "not_checked",
-      "tefal_book_status": "pending",
+      "recipe_status": "full_draft_source_reviewed",
+      "source_status": "cross_checked",
+      "tefal_book_status": "direct_or_method_reference_compared",
       "photo_status": "not_started",
       "appliance_test_status": "not_tested",
-      "publication_status": "not_published"
+      "publication_status": "not_published",
+      "batch_number": 6
     },
     {
       "number": 54,
@@ -912,12 +915,13 @@
       "title": "Кальмары, фаршированные рисом и зеленью",
       "servings": 2,
       "editorial_concept": "Небольшие тушки, умеренное заполнение; закрепление начинки и проверка готовности требуют отдельного теста.",
-      "recipe_status": "idea_not_yet_source_checked",
-      "source_status": "not_checked",
-      "tefal_book_status": "pending",
+      "recipe_status": "full_draft_source_reviewed",
+      "source_status": "cross_checked",
+      "tefal_book_status": "no_direct_equivalent",
       "photo_status": "not_started",
       "appliance_test_status": "not_tested",
-      "publication_status": "not_published"
+      "publication_status": "not_published",
+      "batch_number": 6
     },
     {
       "number": 55,
@@ -926,12 +930,13 @@
       "title": "Картофельные дольки с копчёной паприкой",
       "servings": 2,
       "editorial_concept": "Дольки одинаковой толщины; отдельная подготовка, просушка, встряхивание и партия по размеру корзины.",
-      "recipe_status": "draft_source_cross_checked",
+      "recipe_status": "full_draft_source_reviewed",
       "source_status": "cross_checked",
-      "tefal_book_status": "reference_compared_not_equivalent",
+      "tefal_book_status": "no_direct_equivalent",
       "photo_status": "not_started",
       "appliance_test_status": "not_tested",
-      "publication_status": "not_published"
+      "publication_status": "not_published",
+      "batch_number": 6
     },
     {
       "number": 56,
@@ -940,12 +945,13 @@
       "title": "Брюссельская капуста с лимонной цедрой",
       "servings": 2,
       "editorial_concept": "Кочанчики одного размера; встряхнуть в середине, добавить цедру после приготовления.",
-      "recipe_status": "draft_source_cross_checked",
+      "recipe_status": "full_draft_source_reviewed",
       "source_status": "cross_checked",
-      "tefal_book_status": "reference_compared_not_equivalent",
+      "tefal_book_status": "no_direct_equivalent",
       "photo_status": "not_started",
       "appliance_test_status": "not_tested",
-      "publication_status": "not_published"
+      "publication_status": "not_published",
+      "batch_number": 6
     },
     {
       "number": 57,
@@ -954,12 +960,13 @@
       "title": "Шампиньоны с тимьяном на хрустящих тостах",
       "servings": 2,
       "editorial_concept": "Грибы и хлеб готовить поэтапно; хлеб подрумянить после грибов или в свободной зоне.",
-      "recipe_status": "draft_source_cross_checked",
+      "recipe_status": "full_draft_source_reviewed",
       "source_status": "cross_checked",
       "tefal_book_status": "reference_compared_not_equivalent",
       "photo_status": "not_started",
       "appliance_test_status": "not_tested",
-      "publication_status": "not_published"
+      "publication_status": "not_published",
+      "batch_number": 6
     },
     {
       "number": 58,
@@ -968,12 +975,13 @@
       "title": "Морковь в кленовой глазури с тимьяном",
       "servings": 2,
       "editorial_concept": "Глазурь наносить ближе к концу; контролировать размягчение и карамелизацию.",
-      "recipe_status": "draft_source_cross_checked",
+      "recipe_status": "full_draft_source_reviewed",
       "source_status": "cross_checked",
-      "tefal_book_status": "reference_compared_not_equivalent",
+      "tefal_book_status": "no_direct_equivalent",
       "photo_status": "not_started",
       "appliance_test_status": "not_tested",
-      "publication_status": "not_published"
+      "publication_status": "not_published",
+      "batch_number": 6
     },
     {
       "number": 59,
@@ -982,12 +990,13 @@
       "title": "Молодой картофель с розмарином",
       "servings": 2,
       "editorial_concept": "Небольшие клубни одинакового размера; перемешивать, крупные разрезать.",
-      "recipe_status": "idea_not_yet_source_checked",
-      "source_status": "not_checked",
-      "tefal_book_status": "pending",
+      "recipe_status": "full_draft_source_reviewed",
+      "source_status": "cross_checked",
+      "tefal_book_status": "reference_compared_not_equivalent",
       "photo_status": "not_started",
       "appliance_test_status": "not_tested",
-      "publication_status": "not_published"
+      "publication_status": "not_published",
+      "batch_number": 6
     },
     {
       "number": 60,
@@ -996,12 +1005,13 @@
       "title": "Батат фри с паприкой",
       "servings": 2,
       "editorial_concept": "Одинаковая нарезка, тщательная просушка, свободная корзина и встряхивание.",
-      "recipe_status": "idea_not_yet_source_checked",
-      "source_status": "not_checked",
-      "tefal_book_status": "pending",
+      "recipe_status": "full_draft_source_reviewed",
+      "source_status": "cross_checked",
+      "tefal_book_status": "direct_recipe_compared",
       "photo_status": "not_started",
       "appliance_test_status": "not_tested",
-      "publication_status": "not_published"
+      "publication_status": "not_published",
+      "batch_number": 6
     },
     {
       "number": 61,
