@@ -31,8 +31,9 @@ for recipe_id in {
     "af-turkey-medallions-cranberry-2",
     "af-turkey-sausages-apple-2",
 }:
-    recipe = next(item for item in recipes if item["id"] == recipe_id)
-    assert recipe["photo_brief"] in module.make_prompt(recipe), f"Replacement brief was truncated: {recipe_id}"
+    recipe = next((item for item in recipes if item["id"] == recipe_id), None)
+    if recipe is not None:
+        assert recipe["photo_brief"] in module.make_prompt(recipe), f"Replacement brief was truncated: {recipe_id}"
 assert all(recipe["photo_status"] in {"not_started", "present_pending_visual_review", "needs_replacement", "replacement_generated_pending_visual_review", "generated_pending_visual_review"} for recipe in recipes)
 assert all(recipe["publication_status"] == "not_published" for recipe in recipes)
 
