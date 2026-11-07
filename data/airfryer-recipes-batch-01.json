@@ -80,9 +80,11 @@
       },
       "safety": "Курица и птица должны достичь 74 °C внутри. Сырые продукты и готовое блюдо разделять; после контакта с сырой птицей мыть руки, доску и нож.",
       "photo_brief": "Два готовых филе куриной грудки с сухой румяной корочкой паприки и трав, одно филе слегка надрезано, видна сочная полностью приготовленная середина; без яйца, желтка и соуса.",
-      "photo_status": "not_started",
+      "photo_status": "present_pending_visual_review",
       "appliance_test_status": "not_tested",
-      "publication_status": "not_published"
+      "publication_status": "not_published",
+      "photo_path": "assets/airfryer/af-chicken-paprika-2.webp",
+      "photo_editorial_status": "not_yet_reviewed"
     },
     {
       "number": 2,
@@ -156,9 +158,11 @@
       },
       "safety": "Курица должна достичь 74 °C внутри. Не использовать маринад, соприкасавшийся с сырой птицей, как соус без кипячения.",
       "photo_brief": "Два золотистых филе с тонкой лимонно-травяной корочкой, свежий тимьян и тонкий ломтик лимона; без сливочного соуса и несуществующего гарнира.",
-      "photo_status": "not_started",
+      "photo_status": "present_pending_visual_review",
       "appliance_test_status": "not_tested",
-      "publication_status": "not_published"
+      "publication_status": "not_published",
+      "photo_path": "assets/airfryer/af-chicken-lemon-thyme-2.webp",
+      "photo_editorial_status": "not_yet_reviewed"
     },
     {
       "number": 3,
@@ -229,9 +233,11 @@
       },
       "safety": "Курица должна достичь 74 °C внутри. Мариновать только в холодильнике; остатки маринада, контактировавшие с сырой птицей, не подавать без кипячения.",
       "photo_brief": "Два готовых куриных бедра без кожи с нежной румяной поверхностью, тонкая светлая йогуртовая корочка, веточка розмарина; не изображать сливочный соус или картофель.",
-      "photo_status": "not_started",
+      "photo_status": "needs_replacement",
       "appliance_test_status": "not_tested",
-      "publication_status": "not_published"
+      "publication_status": "not_published",
+      "photo_path": "assets/airfryer/af-chicken-thighs-yogurt-rosemary-2.webp",
+      "photo_editorial_status": "owner_flagged_not_approved"
     },
     {
       "number": 4,
@@ -307,9 +313,11 @@
       },
       "safety": "Крылья из птицы должны достичь 74 °C внутри. Не использовать сырой маринад как готовый соус без кипячения.",
       "photo_brief": "Шесть-восемь румяных крылышек с тонкой блестящей глазурью из горчицы, кетчупа и копчёной паприки; корочка карамелизирована, но не обуглена; без яиц, желтков и неуказанного гарнира.",
-      "photo_status": "not_started",
+      "photo_status": "present_pending_visual_review",
       "appliance_test_status": "not_tested",
-      "publication_status": "not_published"
+      "publication_status": "not_published",
+      "photo_path": "assets/airfryer/af-chicken-wings-smoked-paprika-2.webp",
+      "photo_editorial_status": "not_yet_reviewed"
     },
     {
       "number": 5,
@@ -379,9 +387,11 @@
       },
       "safety": "Птица должна достичь 74 °C внутри. Не мыть сырую курицу; избегать перекрёстного загрязнения.",
       "photo_brief": "Две куриные голени с румяной сухой корочкой горчицы и трав, без подгоревшей глазури и без дополнительных ингредиентов.",
-      "photo_status": "not_started",
+      "photo_status": "present_pending_visual_review",
       "appliance_test_status": "not_tested",
-      "publication_status": "not_published"
+      "publication_status": "not_published",
+      "photo_path": "assets/airfryer/af-chicken-drumsticks-mustard-herbs-2.webp",
+      "photo_editorial_status": "not_yet_reviewed"
     },
     {
       "number": 6,
@@ -467,9 +477,11 @@
       },
       "safety": "Индейка должна достичь 74 °C внутри. Сырые яйца и мясо держать отдельно от готового блюда.",
       "photo_brief": "Два тонких золотистых шницеля из индейки с отчётливой хрустящей панировкой panko и травами; один разрезан, внутри полностью приготовленное белое мясо.",
-      "photo_status": "not_started",
+      "photo_status": "present_pending_visual_review",
       "appliance_test_status": "not_tested",
-      "publication_status": "not_published"
+      "publication_status": "not_published",
+      "photo_path": "assets/airfryer/af-turkey-cutlets-herb-crust-2.webp",
+      "photo_editorial_status": "not_yet_reviewed"
     },
     {
       "number": 7,
@@ -551,9 +563,11 @@
       },
       "safety": "Фарш из птицы должен достичь 74 °C в центре. Не пробовать сырой фарш; мыть руки и инвентарь после контакта.",
       "photo_brief": "Десять небольших румяных фрикаделек из индейки с орегано и мелким пармезаном, без яйца сверху и без неуказанного соуса.",
-      "photo_status": "not_started",
+      "photo_status": "present_pending_visual_review",
       "appliance_test_status": "not_tested",
-      "publication_status": "not_published"
+      "publication_status": "not_published",
+      "photo_path": "assets/airfryer/af-turkey-meatballs-oregano-2.webp",
+      "photo_editorial_status": "minced_meat_doneness_review_required"
     },
     {
       "number": 8,
@@ -627,9 +641,11 @@
       },
       "safety": "Куриный фарш должен достичь 74 °C в центре. Не использовать одну тарелку для сырого и готового фарша.",
       "photo_brief": "Небольшие золотистые куриные фрикадельки с видимыми мелкими зелёными вкраплениями кабачка и трав; один разрезан, без соуса, яйца или глазуньи.",
-      "photo_status": "not_started",
+      "photo_status": "present_pending_visual_review",
       "appliance_test_status": "not_tested",
-      "publication_status": "not_published"
+      "publication_status": "not_published",
+      "photo_path": "assets/airfryer/af-chicken-meatballs-zucchini-2.webp",
+      "photo_editorial_status": "minced_meat_doneness_review_required"
     },
     {
       "number": 9,
@@ -712,9 +728,11 @@
       },
       "safety": "Курица должна достичь 74 °C внутри. Деревянные шампуры применять только если разрешено инструкцией и они не касаются нагревателя.",
       "photo_brief": "Два коротких шашлычка с крупными кубиками полностью приготовленной курицы, красным и жёлтым перцем и луком; ровные подрумяненные края, без сырых участков.",
-      "photo_status": "not_started",
+      "photo_status": "present_pending_visual_review",
       "appliance_test_status": "not_tested",
-      "publication_status": "not_published"
+      "publication_status": "not_published",
+      "photo_path": "assets/airfryer/af-chicken-skewers-pepper-2.webp",
+      "photo_editorial_status": "not_yet_reviewed"
     },
     {
       "number": 10,
@@ -801,9 +819,13 @@
       },
       "safety": "Курица должна достичь 74 °C внутри. Сырые яйца и курицу держать отдельно от готового блюда; глазурь готовить отдельно чистым инвентарём.",
       "photo_brief": "Небольшие золотистые кусочки куриного бедра в блестящей апельсиново-имбирной глазури; видны мелкая цедра и густой цитрусовый соус. Не добавлять рис, брокколи, кунжут или зелёный лук.",
-      "photo_status": "not_started",
+      "photo_status": "present_pending_visual_review",
       "appliance_test_status": "not_tested",
-      "publication_status": "not_published"
+      "publication_status": "not_published",
+      "photo_path": "assets/airfryer/af-chicken-thighs-orange-ginger-2.webp",
+      "photo_editorial_status": "not_yet_reviewed"
     }
-  ]
+  ],
+  "photo_linkage_status": "100_of_100_files_matched_by_recipe_id",
+  "photo_editorial_acceptance": "pending_visual_review"
 }
