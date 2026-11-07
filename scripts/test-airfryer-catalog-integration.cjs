@@ -48,7 +48,9 @@ for (const relative of ['index.html', 'full-catalog/index.html']) {
   assert.ok(html.includes('if(item.display)return item.display'), relative + ' does not preserve exact ingredient quantity text');
   assert.ok(html.includes('du-af-facts'), relative + ' is missing appliance-specific recipe facts');
   assert.ok(html.indexOf('/assets/airfryer-recipes.js') < html.indexOf('const RECIPES = JSON.parse'), relative + ' loads recipe data after the main app');
-  const appScript = [...html.matchAll(/<script\\b[^>]*>([\\s\\S]*?)<\\/script>/gi)].map((match) => match[1]).find((script) => script.includes('const RECIPES = JSON.parse'));
+  const appStart = html.indexOf("<script>'use strict';");
+  const appEnd = html.indexOf('</script>', appStart);
+  const appScript = appStart >= 0 && appEnd > appStart ? html.slice(html.indexOf('>', appStart) + 1, appEnd) : '';
   assert.ok(appScript, relative + ' main application script was not found');
   new vm.Script(appScript, { filename: relative + ':main-script' });
 }
