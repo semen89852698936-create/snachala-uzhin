@@ -1,4 +1,5 @@
 name: Private Timeweb clone live acceptance with locked checkout
+# Recheck after safe rollback from PostgreSQL authentication error.
 on:
   pull_request:
     branches: [feature/commerce-secure-foundation-20261104]
