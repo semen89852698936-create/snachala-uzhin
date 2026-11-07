@@ -20,7 +20,7 @@ assert.ok(batch.recipes.every((recipe) => recipe.source_verification?.source_url
 assert.ok(batch.recipes.every((recipe) => recipe.tefal_reference?.status));
 assert.ok(batch.recipes.every((recipe) => recipe.photo_brief && recipe.photo_brief.length >= 60));
 assert.ok(batch.recipes.every((recipe) => recipe.doneness && recipe.safety));
-assert.ok(batch.recipes.every((recipe) => recipe.photo_status === 'not_started'));
+assert.ok(batch.recipes.every((recipe) => recipe.photo_status === 'generated_verified_unpublished'));
 assert.ok(batch.recipes.every((recipe) => recipe.appliance_test_status === 'not_tested'));
 assert.ok(batch.recipes.every((recipe) => recipe.publication_status === 'not_published'));
 assert.equal(batch.recipes[0].tefal_reference.status, 'direct_cauliflower_method_reference_different_seasoning');
@@ -38,6 +38,6 @@ console.log(JSON.stringify({
   ok: true, batch: 7, recipes: batch.recipes.length,
   uniqueIds: new Set(ids).size, range: [61,70],
   twoServings: true, sourceAndTefalStatuses: true,
-  vegetableTechniqueChecks: true, photos: 'not_started',
+  vegetableTechniqueChecks: true, photos: 'generated_verified_unpublished',
   physicalTests: 'not_tested', publication: 'not_published'
 }, null, 2));
