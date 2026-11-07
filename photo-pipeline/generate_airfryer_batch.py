@@ -52,14 +52,38 @@ def load_manifest(manifest_path: Path = MANIFEST) -> list[dict]:
     ids = [r.get("id") for r in recipes]
     if len(set(ids)) != 10 or any(not x for x in ids):
         raise RuntimeError("Recipe IDs must be present and unique")
+    allowed_photo_statuses = {
+        "not_started",
+        "present_pending_visual_review",
+        "needs_replacement",
+        "replacement_generated_pending_visual_review",
+        "generated_pending_visual_review",
+    }
     for recipe in recipes:
-        if recipe.get("photo_status") != "not_started":
-            raise RuntimeError(f"Unexpected photo status for {recipe['id']}")
+        if recipe.get("photo_status") not in allowed_photo_statuses:
+            raise RuntimeError(f"Unexpected photo status for {recipe['id']}: {recipe.get('photo_status')}")
         if recipe.get("publication_status") != "not_published":
             raise RuntimeError(f"Refusing to process published recipe {recipe['id']}")
         if not recipe.get("photo_brief"):
             raise RuntimeError(f"Missing photo brief for {recipe['id']}")
     return recipes
+
+
+def update_manifest_photo_status(manifest_path: Path, recipe_id: str, status: str) -> None:
+    data = json.loads(manifest_path.read_text(encoding="utf-8"))
+    found = False
+    for recipe in data.get("recipes", []):
+        if recipe.get("id") == recipe_id:
+            recipe["photo_status"] = status
+            recipe["photo_editorial_status"] = "pending_owner_visual_review"
+            found = True
+            break
+    if not found:
+        raise RuntimeError(f"Cannot update missing recipe in manifest: {recipe_id}")
+    atomic_write(
+        manifest_path,
+        (json.dumps(data, ensure_ascii=False, indent=2) + "\\n").encode("utf-8"),
+    )
 
 
 def make_prompt(recipe: dict) -> str:
@@ -179,11 +203,22 @@ def main(argv: list[str] | None = None) -> int:
         rejected_path = LIBRARY / "rejected" / f"{recipe_id}.json"
         raw_path = LIBRARY / "raw-checkpoint" / f"{recipe_id}.png"
 
-        if image_path.exists() or record_path.exists():
-            verify_existing(image_path, record_path)
-            skipped += 1
-            continue
-        if rejected_path.exists():
+        replacing = recipe.get("photo_status") == "needs_replacement"
+        if not replacing:
+            if image_path.exists() and record_path.exists():
+                verify_existing(image_path, record_path)
+                skipped += 1
+                continue
+            if image_path.exists() and not record_path.exists():
+                # These 100 images were already merged into main before the
+                # Yandex provenance sidecar existed. Validate, preserve, skip.
+                with Image.open(image_path) as image:
+                    image.verify()
+                skipped += 1
+                continue
+            if record_path.exists() and not image_path.exists():
+                raise RuntimeError(f"Partial output needs manual recovery: {image_path.name}")
+        if rejected_path.exists() and not replacing:
             refused += 1
             continue
 
@@ -257,6 +292,11 @@ def main(argv: list[str] | None = None) -> int:
         atomic_write(record_path, json.dumps(record, ensure_ascii=False, indent=2).encode("utf-8"))
         pending_path.unlink(missing_ok=True)
         raw_path.unlink(missing_ok=True)
+        update_manifest_photo_status(
+            args.manifest,
+            recipe_id,
+            "replacement_generated_pending_visual_review" if replacing else "generated_pending_visual_review",
+        )
         made += 1
         print(f"GENERATED {recipe_id} sha256={digest} bytes={len(webp)}", flush=True)
         if made >= args.limit:
