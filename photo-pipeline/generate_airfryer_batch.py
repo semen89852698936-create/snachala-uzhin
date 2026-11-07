@@ -75,7 +75,7 @@ def make_prompt(recipe: dict) -> str:
     prefix = "Фотореалистичная ресторанная фотография готового блюда. "
     title_part = f"Блюдо: {title}. "
     ingredient_part = f"Главное: {ingredient_text}. " if ingredient_text else ""
-    suffix = "Один кадр, без коллажей, текста, людей и логотипов. Подача на двоих, мягкий тёплый свет."
+    suffix = "Один кадр, одна композиция, один ракурс. Single full-frame photograph. No split-screen, diptych or collage. Без людей, рук, текста и логотипов."
     fixed = prefix + title_part + ingredient_part + "Детали: ." + suffix
     brief_limit = max(0, MAX_PROMPT - len(fixed) - 2)
     brief = brief[:brief_limit].rstrip(" ,.;")
