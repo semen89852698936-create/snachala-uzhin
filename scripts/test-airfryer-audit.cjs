@@ -28,3 +28,8 @@ const six=audit([
 assert.equal(six.length,6,'all six candidate styles must be detected');
 assert.equal(six.filter(r=>r.needsReview).length,0,'all six candidates need temperature, time and doneness');
 console.log('PASS: six airfryer candidates pass basic technology inventory');
+
+const prepOnly=audit([{id:7,title:'Картофельные дольки',preheat:'Разогреть аэрогриль до 200 °C',steps:['Готовить 30–40 минут до румяной корочки']}]);
+assert.equal(prepOnly.length,1,'airfryer mention in preparation metadata must be detected');
+assert.equal(prepOnly[0].needsReview,false,'preheat metadata and steps together must pass');
+console.log('PASS: airfryer mention in preheat metadata');
