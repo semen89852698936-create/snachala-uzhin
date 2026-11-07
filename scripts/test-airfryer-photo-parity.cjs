@@ -31,6 +31,9 @@ if (recipes.length !== 100) errors.push('expected 100 unique recipes, found ' + 
 for (const file of assets) if (!expected.has(file.slice(0, -5))) errors.push('orphan WebP: ' + file);
 for (const file of records) if (!expected.has(file.slice(0, -5))) errors.push('orphan record: ' + file);
 for (const recipe of recipes) {
+  const expectedPath = 'assets/airfryer/' + recipe.id + '.webp';
+  if (recipe.photo_path !== expectedPath) errors.push('recipe photo_path mismatch: ' + recipe.id);
+  if (recipe.publication_status !== 'not_published') errors.push('unexpected recipe publication status: ' + recipe.id);
   const webp = path.join(assetDir, recipe.id + '.webp');
   const recordFile = path.join(recordDir, recipe.id + '.json');
   if (!fs.existsSync(webp) || !fs.existsSync(recordFile)) {
