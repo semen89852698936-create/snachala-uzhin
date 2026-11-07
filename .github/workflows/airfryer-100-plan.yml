@@ -13,6 +13,7 @@ on:
       - 'data/airfryer-recipes-batch-07.json'
       - 'data/airfryer-recipes-batch-08.json'
       - 'data/airfryer-recipes-batch-09.json'
+      - 'data/airfryer-recipes-batch-10.json'
       - 'scripts/test-airfryer-batch-03.cjs'
       - 'scripts/test-airfryer-batch-04.cjs'
       - 'scripts/test-airfryer-batch-05.cjs'
@@ -20,6 +21,7 @@ on:
       - 'scripts/test-airfryer-batch-07.cjs'
       - 'scripts/test-airfryer-batch-08.cjs'
       - 'scripts/test-airfryer-batch-09.cjs'
+      - 'scripts/test-airfryer-batch-10.cjs'
       - 'project-operations/airfryer/BATCH_03_MEAT_QA.md'
       - 'project-operations/airfryer/BATCH_04_MIXED_QA.md'
       - 'project-operations/airfryer/BATCH_05_SEAFOOD_QA.md'
@@ -27,6 +29,7 @@ on:
       - 'project-operations/airfryer/BATCH_07_VEGETABLES_QA.md'
       - 'project-operations/airfryer/BATCH_08_BREAKFAST_BAKING_QA.md'
       - 'project-operations/airfryer/BATCH_09_SNACKS_QA.md'
+      - 'project-operations/airfryer/BATCH_10_DESSERTS_QA.md'
       - 'scripts/test-airfryer-batch-02.cjs'
       - 'project-operations/airfryer/BATCH_02_POULTRY_QA.md'
       - 'photo-pipeline/**'
@@ -62,6 +65,8 @@ jobs:
         run: node scripts/test-airfryer-batch-08.cjs
       - name: Validate ninth snacks batch
         run: node scripts/test-airfryer-batch-09.cjs
+      - name: Validate tenth desserts batch
+        run: node scripts/test-airfryer-batch-10.cjs
       - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065
         with:
           python-version: '3.11'
