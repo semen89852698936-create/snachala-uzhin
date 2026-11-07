@@ -5,6 +5,9 @@ on:
       - 'data/airfryer-100-editorial-plan.json'
       - 'scripts/test-airfryer-100-plan.cjs'
       - 'data/airfryer-recipes-batch-01.json'
+      - 'data/airfryer-recipes-batch-02.json'
+      - 'scripts/test-airfryer-batch-02.cjs'
+      - 'project-operations/airfryer/BATCH_02_POULTRY_QA.md'
       - 'photo-pipeline/**'
       - 'project-operations/airfryer/BATCH_01_YANDEX_PHOTO_PIPELINE.md'
       - '.github/workflows/airfryer-100-plan.yml'
@@ -22,6 +25,8 @@ jobs:
           persist-credentials: false
       - name: Validate exact 100-recipe scope, unique IDs and category balance
         run: node scripts/test-airfryer-100-plan.cjs
+      - name: Validate second ten-recipe poultry batch
+        run: node scripts/test-airfryer-batch-02.cjs
       - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065
         with:
           python-version: '3.11'
@@ -30,4 +35,7 @@ jobs:
       - name: Compile and dry-run Yandex photo generator without paid API calls
         run: |
           python -m py_compile photo-pipeline/generate_airfryer_batch.py photo-pipeline/test_airfryer_batch.py photo-pipeline/verify_airfryer_batch.py
-          python photo-pipeline/test_airfryer_batch.py
+          for manifest in data/airfryer-recipes-batch-*.json; do
+            [ -f "$manifest" ] || continue
+            python photo-pipeline/test_airfryer_batch.py --manifest "$manifest"
+          done
