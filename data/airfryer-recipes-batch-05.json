@@ -166,13 +166,13 @@
         "notes": "В книге Tefal есть филе морского леща, но нет целой рыбы. Режимы для филе не переносить на целого сибаса; дополнительно проверить фактический размер корзины и высоту рыбы."
       },
       "safety": "Рыба должна достичь 63 °C у хребта в самой толстой части. Не готовить рыбу, если она касается нагревателя или мешает закрыть корзину.",
-      "photo_brief": "Целый готовый сибас, кожа золотистая, местами хрустящая и запечённая, мякоть у надреза белая и непрозрачная, полностью приготовленная. Лимонные дольки и петрушка, без сырого блеска.",
+      "photo_brief": "Один целый запечённый сибас на продолговатой тарелке: полностью видны голова, глаз, цельное туловище, хвост и кожа с чешуёй. Золотистая запечённая кожа, лимонные дольки внутри надрезов, петрушка. Рыба целая и не разделанная. Не филе, не стейки, не куски.",
       "photo_status": "generated_verified_unpublished",
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
       "photo_record_path": "photo-library/airfryer/records/af-sea-bass-whole-lemon-2.json",
-      "visual_review_status": "pending_recheck",
-      "visual_review_note": "Рыба выглядит сырой: блестящая кожа и сырая мякоть. Нужен готовый целый сибас с непрозрачной мякотью и запечённой кожей.",
+      "visual_review_status": "needs_regeneration",
+      "visual_review_note": "Повторная генерация снова выдала филе вместо целой рыбы. Рецепт требует целого сибаса с головой и хвостом.",
       "photo_sha256": "232f7c1e006cf199b80148947b8a58e20205029ee0f2068f789729cd1bbc280c"
     },
     {
@@ -431,8 +431,7 @@
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
       "photo_record_path": "photo-library/airfryer/records/af-shrimp-coconut-crust-2.json",
-      "visual_review_status": "pending_recheck",
-      "visual_review_note": "На фото обычные креветки без заявленной кокосовой корочки. Главный ингредиент и техника рецепта визуально отсутствуют.",
+      "visual_review_status": "visually_accepted",
       "photo_sha256": "9c8809e8cd6f61345df4bdfb87ee940ecc26e5517e3fc8595f0abba347871911"
     },
     {
@@ -751,8 +750,7 @@
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
       "photo_record_path": "photo-library/airfryer/records/af-mackerel-lemon-herbs-2.json",
-      "visual_review_status": "pending_recheck",
-      "visual_review_note": "Изображена рыба, похожая на лосося, а не скумбрия. Нужна узнаваемая скумбрия с характерной полосатой спинкой.",
+      "visual_review_status": "visually_accepted",
       "photo_sha256": "7c3f935f0fdae3a16e7230cd31589f904753f79f8fba27499cb5e75e9beb56d3"
     },
     {
@@ -835,13 +833,13 @@
         "notes": "В книге Tefal нет рыбных котлет. Используется отдельный рецепт Waitrose, где лосось и сформованные котлеты проходят два последовательных этапа в аэрогриле."
       },
       "safety": "Лосось в начинке должен быть полностью приготовлен; после формирования котлет центр финальной порции довести до 63 °C. Охлаждать массу перед формованием и не оставлять её надолго при комнатной температуре.",
-      "photo_brief": "Пять-шесть отдельных круглых или овальных рыбных котлеток из лосося и картофеля, сформованных вручную, с золотистой хрустящей корочкой; одна котлетка разломана, внутри видны кусочки лосося и картофельная масса. Не фаршированные картофельные клубни.",
+      "photo_brief": "Шесть отдельных круглых плоско-овальных рыбных котлеток из лосося и картофеля, с отчётливо золотистой хрустящей корочкой со всех сторон, как готовые fishcakes из аэрогриля. Одна котлетка слегка надломлена: внутри непрозрачные готовые хлопья лосося и картофель, без сырой влажной текстуры. Без целых картофелин.",
       "photo_status": "generated_verified_unpublished",
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
       "photo_record_path": "photo-library/airfryer/records/af-salmon-potato-fishcakes-2.json",
-      "visual_review_status": "pending_recheck",
-      "visual_review_note": "На фото картофельные половинки с начинкой, а не отдельные рыбные котлетки из лосося и картофеля.",
+      "visual_review_status": "needs_regeneration",
+      "visual_review_note": "Повторный снимок показывает рыбные шарики без убедительной золотистой корочки; они выглядят влажными и недоготовленными.",
       "photo_sha256": "b18538eba0c0734cd8c7d6e94f2a79e15907dfa39eda4de1869184f1c48d1bed"
     }
   ]
