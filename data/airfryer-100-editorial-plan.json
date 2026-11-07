@@ -390,7 +390,11 @@
       "photo_status": "not_started",
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
-      "batch_number": 3
+      "batch_number": 3,
+      "source_urls": [
+        "https://www.bbcgoodfood.com/recipes/air-fryer-steak",
+        "https://www.betterthanbouillon.com/recipes/air-fryer-peppercorn-steak/"
+      ]
     },
     {
       "number": 22,
@@ -424,7 +428,11 @@
       "photo_status": "not_started",
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
-      "batch_number": 3
+      "batch_number": 3,
+      "source_urls": [
+        "https://www.arlafoods.co.uk/recipes/air-fryer-meatballs/",
+        "https://www.gramcups.com/air-fryer/air-fryer-italian-meatballs"
+      ]
     },
     {
       "number": 24,
@@ -439,7 +447,10 @@
       "photo_status": "not_started",
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
-      "batch_number": 3
+      "batch_number": 3,
+      "source_urls": [
+        "https://www.bbc.co.uk/food/recipes/air_fryer_classic_burger_33956"
+      ]
     },
     {
       "number": 25,
@@ -454,7 +465,11 @@
       "photo_status": "not_started",
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
-      "batch_number": 3
+      "batch_number": 3,
+      "source_urls": [
+        "https://www.extension.msstate.edu/publications/air-fryer-recipes",
+        "https://extension.wvu.edu/files/d/1d1171a8-5f4d-4b06-95af-f3a7357af66e/air-fryer-steak-kebab-recipe.pdf"
+      ]
     },
     {
       "number": 26,
@@ -469,7 +484,11 @@
       "photo_status": "not_started",
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
-      "batch_number": 3
+      "batch_number": 3,
+      "source_urls": [
+        "https://www.airfrycookbook.com/recipes/sticky-air-fryer-honey-mustard-pork-tenderloin",
+        "https://justrecipes.net/en/recipes/air-fryer-pork-tenderloin-mustard-glaze/"
+      ]
     },
     {
       "number": 27,
@@ -484,7 +503,11 @@
       "photo_status": "not_started",
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
-      "batch_number": 3
+      "batch_number": 3,
+      "source_urls": [
+        "https://instantpot.com/blogs/recipes/air-fried-pork-chop-with-roasted-apples",
+        "https://www.williams-sonoma.com/recipe/pork-chops-with-apples-and-sage.html"
+      ]
     },
     {
       "number": 28,
@@ -517,7 +540,10 @@
       "photo_status": "not_started",
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
-      "batch_number": 3
+      "batch_number": 3,
+      "source_urls": [
+        "https://instantpot.co.uk/air-fryer-honey-dijon-pork-schnitzel/"
+      ]
     },
     {
       "number": 30,
@@ -532,7 +558,10 @@
       "photo_status": "not_started",
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
-      "batch_number": 3
+      "batch_number": 3,
+      "source_urls": [
+        "https://app.samsungfood.com/recipes/10701952c7715ab7bf0a746013c4cf90442"
+      ]
     },
     {
       "number": 31,
