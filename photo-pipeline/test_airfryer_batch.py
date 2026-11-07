@@ -19,6 +19,7 @@ recipes = module.load_manifest()
 assert len(recipes) == 10
 prompts = [module.make_prompt(recipe) for recipe in recipes]
 assert all(0 < len(prompt) <= module.MAX_PROMPT for prompt in prompts)
+assert all('Точное блюдо:' in prompt and 'Без людей' in prompt for prompt in prompts)
 assert len({recipe["id"] for recipe in recipes}) == 10
 assert all(recipe["photo_status"] == "not_started" for recipe in recipes)
 assert all(recipe["publication_status"] == "not_published" for recipe in recipes)
