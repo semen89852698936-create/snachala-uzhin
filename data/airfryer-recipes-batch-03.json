@@ -90,9 +90,11 @@
       },
       "safety": "Говядина цельным куском - 63 °C и минимум 3 минуты отдыха. Не путать этот ориентир с фаршем.",
       "photo_brief": "Два стейка с выраженной корочкой крупного чёрного перца, один нарезан ломтиками; рядом небольшая чашка светлого чесночного айоли и немного шнитт-лука; без картофеля.",
-      "photo_status": "not_started",
+      "photo_status": "generated_verified_unpublished",
       "appliance_test_status": "not_tested",
-      "publication_status": "not_published"
+      "publication_status": "not_published",
+      "photo_record_path": "photo-library/airfryer/records/af-pepper-steak-airfryer-2.json",
+      "visual_review_status": "visually_accepted"
     },
     {
       "number": 22,
@@ -164,9 +166,11 @@
       },
       "safety": "Для цельного куска говядины - 63 °C и минимум 3 минуты отдыха. Не класть сырое мясо на тарелку для готового.",
       "photo_brief": "Два толстых говяжьих медальона с румяной поверхностью, один разрезан поперёк и показывает полностью приготовленный сочный центр; сверху тонкий слой растопленного масла с розмарином и чесноком.",
-      "photo_status": "not_started",
+      "photo_status": "generated_verified_unpublished",
       "appliance_test_status": "not_tested",
-      "publication_status": "not_published"
+      "publication_status": "not_published",
+      "photo_record_path": "photo-library/airfryer/records/af-beef-medallions-rosemary-2.json",
+      "visual_review_status": "visually_accepted"
     },
     {
       "number": 23,
@@ -245,10 +249,13 @@
         "notes": "В книге нет говяжьих фрикаделек. Не переносить время с индюшиных фрикаделек."
       },
       "safety": "Фарш из говядины - минимум 71 °C в центре. Не пробовать сырую смесь.",
-      "photo_brief": "Десять небольших румяных говяжьих фрикаделек с видимыми частицами пармезана и орегано; одна разрезана, рядом немного тёртого пармезана, без пасты и соуса.",
-      "photo_status": "not_started",
+      "photo_brief": "Небольшие полностью приготовленные говяжьи фрикадельки с румяной корочкой, одна разломана и показывает полностью коричневую готовую середину без розового фарша. Орегано и зелень, аккуратная ресторанная подача.",
+      "photo_status": "generated_verified_unpublished",
       "appliance_test_status": "not_tested",
-      "publication_status": "not_published"
+      "publication_status": "not_published",
+      "photo_record_path": "photo-library/airfryer/records/af-beef-meatballs-oregano-2.json",
+      "visual_review_status": "needs_regeneration",
+      "visual_review_note": "На разрезе фрикадельки виден розовый центр. Для блюда из говяжьего фарша изображение должно показывать полностью приготовленную середину."
     },
     {
       "number": 24,
@@ -326,10 +333,13 @@
         "notes": "В книге нет бургеров из говядины. Размер корзины влияет на возможность подсушить булочки и приготовить две котлеты одновременно."
       },
       "safety": "Фарш из говядины - минимум 71 °C внутри. Не использовать тарелку с сырыми котлетами для готовых бургеров.",
-      "photo_brief": "Два домашних говяжьих бургера в слегка подрумяненных булочках бриошь, расплавленный чеддер, свежий помидор и лист салата; котлета видна в разрезе, без бекона и картофеля.",
-      "photo_status": "not_started",
+      "photo_brief": "Два полностью приготовленных бургера из говядины без булочек, с хорошо подрумяненной корочкой; один разрезан, внутри равномерно приготовленный коричневый фарш без розовой или сырой середины. Минимальная подача, без лишних ингредиентов.",
+      "photo_status": "generated_verified_unpublished",
       "appliance_test_status": "not_tested",
-      "publication_status": "not_published"
+      "publication_status": "not_published",
+      "photo_record_path": "photo-library/airfryer/records/af-beef-burgers-2.json",
+      "visual_review_status": "needs_regeneration",
+      "visual_review_note": "Разрез котлеты показывает розовую середину. Для бургера из говяжьего фарша нужна визуально полностью приготовленная котлета."
     },
     {
       "number": 25,
@@ -409,9 +419,11 @@
       },
       "safety": "Говядина цельным куском - 63 °C и минимум 3 минуты отдыха. Мариновать только в холодильнике.",
       "photo_brief": "Два коротких говяжьих шашлычка с крупными кубиками мяса, красным перцем и луком, заметные подрумяненные края; без шампуров, если они не указаны в финальной модели, и без гарнира.",
-      "photo_status": "not_started",
+      "photo_status": "generated_verified_unpublished",
       "appliance_test_status": "not_tested",
-      "publication_status": "not_published"
+      "publication_status": "not_published",
+      "photo_record_path": "photo-library/airfryer/records/af-beef-kebabs-pepper-2.json",
+      "visual_review_status": "visually_accepted"
     },
     {
       "number": 26,
@@ -500,9 +512,11 @@
       },
       "safety": "Свиная вырезка цельным куском - 63 °C и минимум 3 минуты отдыха. Чистую глазурь отделить до контакта кисти с сырым мясом.",
       "photo_brief": "Нарезанная свиная вырезка с тонкой блестящей медово-горчичной глазурью, видны листочки тимьяна и лёгкая папричная корочка; отдельная маленькая порция чистого соуса, без картофеля.",
-      "photo_status": "not_started",
+      "photo_status": "generated_verified_unpublished",
       "appliance_test_status": "not_tested",
-      "publication_status": "not_published"
+      "publication_status": "not_published",
+      "photo_record_path": "photo-library/airfryer/records/af-pork-tenderloin-mustard-thyme-2.json",
+      "visual_review_status": "visually_accepted"
     },
     {
       "number": 27,
@@ -586,9 +600,11 @@
       },
       "safety": "Свинина цельным куском - 63 °C и минимум 3 минуты отдыха. Проверять вдали от кости.",
       "photo_brief": "Две румяные свиные отбивные с золотистыми дольками яблок и красным луком, видны листья шалфея и тимьяна; без картофеля и зелёного салата.",
-      "photo_status": "not_started",
+      "photo_status": "generated_verified_unpublished",
       "appliance_test_status": "not_tested",
-      "publication_status": "not_published"
+      "publication_status": "not_published",
+      "photo_record_path": "photo-library/airfryer/records/af-pork-chops-apple-sage-2.json",
+      "visual_review_status": "visually_accepted"
     },
     {
       "number": 28,
@@ -663,9 +679,11 @@
       },
       "safety": "Не класть свободные листы фольги в корзину и не закрывать поток воздуха. Свинина минимум 63 °C и 3 минуты отдыха; для мягких рёбер ориентироваться также на текстуру.",
       "photo_brief": "Короткие секции свиных рёбер с блестящей тёмно-янтарной BBQ-глазурью и копчёной паприкой, видна румяная корочка; без картофеля и кукурузы.",
-      "photo_status": "not_started",
+      "photo_status": "generated_verified_unpublished",
       "appliance_test_status": "not_tested",
-      "publication_status": "not_published"
+      "publication_status": "not_published",
+      "photo_record_path": "photo-library/airfryer/records/af-pork-ribs-bbq-2.json",
+      "visual_review_status": "visually_accepted"
     },
     {
       "number": 29,
@@ -744,9 +762,11 @@
       },
       "safety": "Свинина цельным куском - 63 °C и 3 минуты отдыха. Сырые продукты не класть на тарелку с готовым шницелем.",
       "photo_brief": "Два тонких свиных шницеля с хрустящей золотистой панировкой panko и пармезаном; один разрезан, внутри полностью приготовленное мясо, без каперсов и гарнира.",
-      "photo_status": "not_started",
+      "photo_status": "generated_verified_unpublished",
       "appliance_test_status": "not_tested",
-      "publication_status": "not_published"
+      "publication_status": "not_published",
+      "photo_record_path": "photo-library/airfryer/records/af-pork-schnitzel-2.json",
+      "visual_review_status": "visually_accepted"
     },
     {
       "number": 30,
@@ -825,9 +845,11 @@
       },
       "safety": "Фарш из свинины - минимум 71 °C внутри. Не пробовать сырую смесь и не использовать повторно посуду от сырого фарша.",
       "photo_brief": "Десять-двенадцать румяных свиных фрикаделек с копчёной паприкой и мелким пармезаном, несколько крошек сыра и листики базилика; без пасты и соуса.",
-      "photo_status": "not_started",
+      "photo_status": "generated_verified_unpublished",
       "appliance_test_status": "not_tested",
-      "publication_status": "not_published"
+      "publication_status": "not_published",
+      "photo_record_path": "photo-library/airfryer/records/af-pork-meatballs-paprika-2.json",
+      "visual_review_status": "visually_accepted"
     }
   ]
 }
