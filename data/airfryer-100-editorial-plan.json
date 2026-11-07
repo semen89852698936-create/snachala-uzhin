@@ -1470,12 +1470,13 @@
       "title": "Печёные яблоки с корицей",
       "servings": 2,
       "editorial_concept": "Подобрать устойчивые яблоки и подходящую форму; проверять мягкость, не только цвет.",
-      "recipe_status": "idea_not_yet_source_checked",
-      "source_status": "not_checked",
-      "tefal_book_status": "pending",
+      "recipe_status": "full_draft_source_reviewed",
+      "source_status": "cross_checked",
+      "tefal_book_status": "no_direct_equivalent",
       "photo_status": "not_started",
       "appliance_test_status": "not_tested",
-      "publication_status": "not_published"
+      "publication_status": "not_published",
+      "batch_number": 10
     },
     {
       "number": 92,
@@ -1484,12 +1485,13 @@
       "title": "Груши с мёдом и грецкими орехами",
       "servings": 2,
       "editorial_concept": "Половинки одинакового размера; мёд наносить ближе к концу, чтобы не горел.",
-      "recipe_status": "idea_not_yet_source_checked",
-      "source_status": "not_checked",
-      "tefal_book_status": "pending",
+      "recipe_status": "full_draft_source_reviewed",
+      "source_status": "cross_checked",
+      "tefal_book_status": "no_direct_equivalent",
       "photo_status": "not_started",
       "appliance_test_status": "not_tested",
-      "publication_status": "not_published"
+      "publication_status": "not_published",
+      "batch_number": 10
     },
     {
       "number": 93,
@@ -1498,12 +1500,13 @@
       "title": "Бананы с шоколадом в хрустящих конвертиках",
       "servings": 2,
       "editorial_concept": "Использовать тесто/обёртку, выдерживающую воздушный поток; герметично закрыть начинку.",
-      "recipe_status": "idea_not_yet_source_checked",
-      "source_status": "not_checked",
-      "tefal_book_status": "pending",
+      "recipe_status": "full_draft_source_reviewed",
+      "source_status": "cross_checked",
+      "tefal_book_status": "no_direct_equivalent",
       "photo_status": "not_started",
       "appliance_test_status": "not_tested",
-      "publication_status": "not_published"
+      "publication_status": "not_published",
+      "batch_number": 10
     },
     {
       "number": 94,
@@ -1512,12 +1515,13 @@
       "title": "Персики с маскарпоне",
       "servings": 2,
       "editorial_concept": "Персики прогреть отдельно; крем добавлять после приготовления.",
-      "recipe_status": "idea_not_yet_source_checked",
-      "source_status": "not_checked",
-      "tefal_book_status": "pending",
+      "recipe_status": "full_draft_source_reviewed",
+      "source_status": "cross_checked",
+      "tefal_book_status": "no_direct_equivalent",
       "photo_status": "not_started",
       "appliance_test_status": "not_tested",
-      "publication_status": "not_published"
+      "publication_status": "not_published",
+      "batch_number": 10
     },
     {
       "number": 95,
@@ -1526,12 +1530,13 @@
       "title": "Ананас с корицей и карамельными нотами",
       "servings": 2,
       "editorial_concept": "Срезы одинаковой толщины; сахар контролировать, не допуская обугливания.",
-      "recipe_status": "idea_not_yet_source_checked",
-      "source_status": "not_checked",
-      "tefal_book_status": "pending",
+      "recipe_status": "full_draft_source_reviewed",
+      "source_status": "cross_checked",
+      "tefal_book_status": "no_direct_equivalent",
       "photo_status": "not_started",
       "appliance_test_status": "not_tested",
-      "publication_status": "not_published"
+      "publication_status": "not_published",
+      "batch_number": 10
     },
     {
       "number": 96,
@@ -1540,12 +1545,13 @@
       "title": "Мини-чизкейки в порционных формах",
       "servings": 2,
       "editorial_concept": "Формы подходящего размера; контролировать схватывание центра и охлаждение после выпечки.",
-      "recipe_status": "idea_not_yet_source_checked",
-      "source_status": "not_checked",
-      "tefal_book_status": "pending",
+      "recipe_status": "full_draft_source_reviewed",
+      "source_status": "cross_checked",
+      "tefal_book_status": "no_direct_equivalent",
       "photo_status": "not_started",
       "appliance_test_status": "not_tested",
-      "publication_status": "not_published"
+      "publication_status": "not_published",
+      "batch_number": 10
     },
     {
       "number": 97,
@@ -1554,12 +1560,13 @@
       "title": "Шоколадные фонданты",
       "servings": 2,
       "editorial_concept": "Порционные формы; точно проверить диапазон времени, чтобы сохранить жидкую середину.",
-      "recipe_status": "idea_not_yet_source_checked",
-      "source_status": "not_checked",
-      "tefal_book_status": "pending",
+      "recipe_status": "full_draft_source_reviewed",
+      "source_status": "cross_checked",
+      "tefal_book_status": "no_direct_equivalent",
       "photo_status": "not_started",
       "appliance_test_status": "not_tested",
-      "publication_status": "not_published"
+      "publication_status": "not_published",
+      "batch_number": 10
     },
     {
       "number": 98,
@@ -1568,12 +1575,13 @@
       "title": "Ягодный крамбл в двух порционных формах",
       "servings": 2,
       "editorial_concept": "Жаропрочные формы, равномерная крошка; ягоды не должны переливаться через край.",
-      "recipe_status": "idea_not_yet_source_checked",
-      "source_status": "not_checked",
-      "tefal_book_status": "pending",
+      "recipe_status": "full_draft_source_reviewed",
+      "source_status": "cross_checked",
+      "tefal_book_status": "no_direct_equivalent",
       "photo_status": "not_started",
       "appliance_test_status": "not_tested",
-      "publication_status": "not_published"
+      "publication_status": "not_published",
+      "batch_number": 10
     },
     {
       "number": 99,
@@ -1582,12 +1590,13 @@
       "title": "Яблочные розочки из слоёного теста",
       "servings": 2,
       "editorial_concept": "Тонкие ломтики яблока и свободное пространство; тесто должно пропечься снизу.",
-      "recipe_status": "idea_not_yet_source_checked",
-      "source_status": "not_checked",
-      "tefal_book_status": "pending",
+      "recipe_status": "full_draft_source_reviewed",
+      "source_status": "cross_checked",
+      "tefal_book_status": "no_direct_equivalent",
       "photo_status": "not_started",
       "appliance_test_status": "not_tested",
-      "publication_status": "not_published"
+      "publication_status": "not_published",
+      "batch_number": 10
     },
     {
       "number": 100,
@@ -1596,12 +1605,13 @@
       "title": "Кокосовое печенье",
       "servings": 2,
       "editorial_concept": "Одинаковый размер порций; контролировать быстрое подрумянивание кокоса.",
-      "recipe_status": "idea_not_yet_source_checked",
-      "source_status": "not_checked",
-      "tefal_book_status": "pending",
+      "recipe_status": "full_draft_source_reviewed",
+      "source_status": "cross_checked",
+      "tefal_book_status": "no_direct_equivalent",
       "photo_status": "not_started",
       "appliance_test_status": "not_tested",
-      "publication_status": "not_published"
+      "publication_status": "not_published",
+      "batch_number": 10
     }
   ],
   "release_gates": [
