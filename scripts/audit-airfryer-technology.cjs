@@ -12,10 +12,10 @@ function extract(html) {
 function audit(recipes) {
   const rows = [];
   for (const recipe of recipes) {
-    const metadata = [recipe.title, recipe.category, recipe.section, recipe.tags].flat().filter(Boolean).join(' ');
+    const metadata = [recipe.title, recipe.category, recipe.section, recipe.tags, recipe.preheat, recipe.basket, recipe.turn].flat().filter(Boolean).join(' ');
     const steps = Array.isArray(recipe.steps) ? recipe.steps.map(s => typeof s === 'string' ? s : Object.values(s || {}).join(' ')).join(' ') : String(recipe.steps || '');
     if (!/аэрогрил/i.test(metadata + ' ' + steps)) continue;
-    const description = [recipe.description, recipe.instructions, steps].filter(Boolean).join(' ');
+    const description = [recipe.description, recipe.instructions, recipe.preheat, recipe.basket, recipe.turn, steps].filter(Boolean).join(' ');
     const hasTemperature = /(?:1[0-9]{2}|2[0-3][0-9])\s*(?:°\s*[CcСс]?|градус)/i.test(description);
     const hasTime = /\b\d+\s*(?:[-–]\s*\d+\s*)?(?:минут|мин\.?|час)/i.test(description);
     const hasDoneness = /готовност|внутренн.{0,15}температур|термометр|прозрачн.{0,12}сок|золотист|румян|мягк|липк|хруст/i.test(description);
@@ -42,7 +42,7 @@ if (require.main === module) {
     publishedStatus:publishedRows.length?'published-airfryer-recipes-found':'no-airfryer-candidates-published-yet',
     candidates:candidateRows
   };
-  process.stdout.write(JSON.stringify(summary,null,2)+'\\n');
+  process.stdout.write(JSON.stringify(summary,null,2)+'\n');
   // Published coverage may correctly be zero while the six new candidates are still gated.
   // Fail only if the candidate set is incomplete or any candidate lacks basic cooking instructions.
   if(candidateRows.length!==6||candidateRows.some(r=>r.needsReview)){
