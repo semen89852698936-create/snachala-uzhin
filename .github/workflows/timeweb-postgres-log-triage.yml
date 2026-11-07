@@ -1,0 +1,55 @@
+name: Diagnose Timeweb PostgreSQL startup from redacted app log categories
+on:
+  pull_request:
+    branches: [feature/commerce-secure-foundation-20261104]
+    paths: ['.github/workflows/timeweb-postgres-log-triage.yml']
+permissions:
+  contents: read
+jobs:
+  inspect:
+    if: github.event.pull_request.number == 135 && github.event.pull_request.head.ref == 'deploy/commerce-timeweb-staging-20261106' && github.event.pull_request.head.repo.full_name == github.repository
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Get logs and print only classified nonsecret diagnostic flags
+        env:
+          TIMEWEB_API_TOKEN: ${{ secrets.TIMEWEB_API_TOKEN }}
+        run: |
+          python3 - <<'PY'
+          import json,os,re,urllib.request,urllib.error
+          token=os.environ.get('TIMEWEB_API_TOKEN','').strip()
+          if token.lower().startswith('bearer '):token=token[7:].strip()
+          if len(token)>2 and token[0]==token[-1] and token[0] in ("'",'"'):token=token[1:-1].strip()
+          if not token:raise SystemExit('BLOCK: token missing')
+          headers={'Authorization':'Bearer '+token,'Accept':'application/json'}
+          url='https://api.timeweb.cloud/api/v1/apps/284043'
+          req=urllib.request.Request(url,headers=headers)
+          with urllib.request.urlopen(req,timeout=20) as f:app=json.load(f)['app']
+          if (app.get('id'),app.get('name'),app.get('project_id'),app.get('preset_id'))!=(284043,'snachala-uzhin-commerce-private',3145267,2731):raise SystemExit('BLOCK: app mismatch')
+          req=urllib.request.Request(url+'/logs',headers=headers)
+          try:
+              with urllib.request.urlopen(req,timeout=25) as f:
+                  status=f.status; raw=f.read(700000)
+          except urllib.error.HTTPError as e:
+              print('LOGS_ACCESS_HTTP',e.code)
+              raise SystemExit(0)
+          print('LOGS_ACCESS_HTTP',status,'RESPONSE_BYTES',len(raw))
+          obj=json.loads(raw)
+          print('LOG_JSON_TOP_KEYS',sorted(obj.keys()) if isinstance(obj,dict) else type(obj).__name__)
+          text=json.dumps(obj,ensure_ascii=False).lower()
+          tags={
+            'pg_password_auth':('password authentication failed','invalidpassword','28p01'),
+            'pg_auth_host':('no pg_hba.conf entry','pg_hba'),
+            'pg_network':('connection refused','network is unreachable','no route to host','connection timed out'),
+            'pg_dns':('could not translate host name','name or service not known'),
+            'pg_ssl':('ssl error','ssl handshake','sslmode','tls'),
+            'pg_connect_error':('psycopg.operationalerror','psycopg.errors','postgres_db.py'),
+            'pg_schema_error':('syntax error','relation','permission denied for schema'),
+            'gunicorn_worker_failed':('worker failed to boot','worker exiting','shutting down','haltserver'),
+            'missing_env':('missing commerce_database_url','missing commerce_db_path','missing session_key_hex'),
+            'timeout':('timeout','timed out'),
+            'generic_error':('traceback','error','exception')
+          }
+          for name,needles in tags.items():print('LOG_CLASS',name,any(term in text for term in needles))
+          print('LOG_CONTENT_NEVER_PRINTED')
+          PY
