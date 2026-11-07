@@ -20,12 +20,16 @@
       "title": "Куриная грудка с паприкой",
       "servings": 2,
       "editorial_concept": "Два филе одинаковой толщины; один слой, переворот в середине, проверка 74 °C в центре.",
-      "recipe_status": "draft_source_cross_checked",
-      "source_status": "cross_checked",
-      "tefal_book_status": "reference_compared_not_equivalent",
+      "recipe_status": "full_draft_source_reviewed",
+      "source_status": "source_cross_checked",
+      "tefal_book_status": "no_direct_equivalent_or_accessory_reference_only",
       "photo_status": "not_started",
       "appliance_test_status": "not_tested",
-      "publication_status": "not_published"
+      "publication_status": "not_published",
+      "source_urls": [
+        "https://www.bbcgoodfood.com/premium/air-fryer-chicken-breasts-2"
+      ],
+      "batch_number": 1
     },
     {
       "number": 2,
@@ -34,12 +38,16 @@
       "title": "Курица с лимоном и тимьяном",
       "servings": 2,
       "editorial_concept": "Филе или небольшие кусочки; цитрусовую цедру и свежий тимьян контролировать от пересушивания.",
-      "recipe_status": "idea_not_yet_source_checked",
-      "source_status": "not_checked",
-      "tefal_book_status": "pending",
+      "recipe_status": "full_draft_source_reviewed",
+      "source_status": "adapted_source_cross_checked",
+      "tefal_book_status": "no_direct_equivalent_or_accessory_reference_only",
       "photo_status": "not_started",
       "appliance_test_status": "not_tested",
-      "publication_status": "not_published"
+      "publication_status": "not_published",
+      "source_urls": [
+        "https://www.coles.com.au/recipes-inspiration/recipes/air-fryer-chicken-breast"
+      ],
+      "batch_number": 1
     },
     {
       "number": 3,
@@ -48,12 +56,16 @@
       "title": "Куриные бёдра в йогурте и розмарине",
       "servings": 2,
       "editorial_concept": "Бёдра без кости; маринад стряхнуть тонким слоем, не допускать капель в нагреватель.",
-      "recipe_status": "idea_not_yet_source_checked",
-      "source_status": "not_checked",
-      "tefal_book_status": "pending",
+      "recipe_status": "full_draft_source_reviewed",
+      "source_status": "manufacturer_recipe_direct",
+      "tefal_book_status": "direct_recipe_in_supplied_book",
       "photo_status": "not_started",
       "appliance_test_status": "not_tested",
-      "publication_status": "not_published"
+      "publication_status": "not_published",
+      "source_urls": [
+        "https://www.compatibility.groupeseb.com/documents/recipebook/EasyFry-and-Grill-EY50.pdf"
+      ],
+      "batch_number": 1
     },
     {
       "number": 4,
@@ -62,12 +74,16 @@
       "title": "Куриные крылышки с копчёной паприкой",
       "servings": 2,
       "editorial_concept": "Разложить свободно; переворачивать/встряхивать, отдельно проверить готовность у кости.",
-      "recipe_status": "idea_not_yet_source_checked",
-      "source_status": "not_checked",
-      "tefal_book_status": "pending",
+      "recipe_status": "full_draft_source_reviewed",
+      "source_status": "manufacturer_recipe_direct",
+      "tefal_book_status": "direct_recipe_in_supplied_book",
       "photo_status": "not_started",
       "appliance_test_status": "not_tested",
-      "publication_status": "not_published"
+      "publication_status": "not_published",
+      "source_urls": [
+        "https://www.compatibility.groupeseb.com/documents/recipebook/EasyFry-and-Grill-EY50.pdf"
+      ],
+      "batch_number": 1
     },
     {
       "number": 5,
@@ -76,12 +92,16 @@
       "title": "Голени в горчично-травяном маринаде",
       "servings": 2,
       "editorial_concept": "Одинаковый размер голеней; переворот, температура в самой толстой части не ниже 74 °C.",
-      "recipe_status": "idea_not_yet_source_checked",
-      "source_status": "not_checked",
-      "tefal_book_status": "pending",
+      "recipe_status": "full_draft_source_reviewed",
+      "source_status": "adapted_source_cross_checked",
+      "tefal_book_status": "no_direct_equivalent_or_accessory_reference_only",
       "photo_status": "not_started",
       "appliance_test_status": "not_tested",
-      "publication_status": "not_published"
+      "publication_status": "not_published",
+      "source_urls": [
+        "https://www.bbcgoodfoodme.com/recipes/air-fryer-chicken-drumsticks/"
+      ],
+      "batch_number": 1
     },
     {
       "number": 6,
@@ -90,12 +110,16 @@
       "title": "Индюшиные котлеты с травяной корочкой",
       "servings": 2,
       "editorial_concept": "Котлеты одинаковой толщины; лёгкая масляная смазка, не пересушить постное мясо.",
-      "recipe_status": "idea_not_yet_source_checked",
-      "source_status": "not_checked",
-      "tefal_book_status": "pending",
+      "recipe_status": "full_draft_source_reviewed",
+      "source_status": "source_cross_checked",
+      "tefal_book_status": "no_direct_equivalent_or_accessory_reference_only",
       "photo_status": "not_started",
       "appliance_test_status": "not_tested",
-      "publication_status": "not_published"
+      "publication_status": "not_published",
+      "source_urls": [
+        "https://www.walmart.com/i/recipes/Air-Fryer-Turkey-Cutlets/2615420"
+      ],
+      "batch_number": 1
     },
     {
       "number": 7,
@@ -104,12 +128,16 @@
       "title": "Фрикадельки из индейки с орегано",
       "servings": 2,
       "editorial_concept": "Небольшие одинаковые шарики; один слой, переворот/встряхивание, контроль 74 °C.",
-      "recipe_status": "idea_not_yet_source_checked",
-      "source_status": "not_checked",
-      "tefal_book_status": "pending",
+      "recipe_status": "full_draft_source_reviewed",
+      "source_status": "source_cross_checked",
+      "tefal_book_status": "no_direct_equivalent_or_accessory_reference_only",
       "photo_status": "not_started",
       "appliance_test_status": "not_tested",
-      "publication_status": "not_published"
+      "publication_status": "not_published",
+      "source_urls": [
+        "https://www.marialuceydietitian.com/air-fryer-turkey-meatballs/"
+      ],
+      "batch_number": 1
     },
     {
       "number": 8,
@@ -118,12 +146,16 @@
       "title": "Куриные фрикадельки с кабачком",
       "servings": 2,
       "editorial_concept": "Кабачок предварительно отжать; проверить связность фарша и температуру в центре.",
-      "recipe_status": "idea_not_yet_source_checked",
-      "source_status": "not_checked",
-      "tefal_book_status": "pending",
+      "recipe_status": "full_draft_source_reviewed",
+      "source_status": "adapted_source_cross_checked",
+      "tefal_book_status": "no_direct_equivalent_or_accessory_reference_only",
       "photo_status": "not_started",
       "appliance_test_status": "not_tested",
-      "publication_status": "not_published"
+      "publication_status": "not_published",
+      "source_urls": [
+        "https://www.gzrecipes.com/en/amicincucina/chicken-and-zucchini-meatballs-in-the-air-fryer/"
+      ],
+      "batch_number": 1
     },
     {
       "number": 9,
@@ -132,12 +164,17 @@
       "title": "Куриные шашлычки с перцем",
       "servings": 2,
       "editorial_concept": "Нарезка одинаковыми кубиками; шампуры и расстояние до нагревателя сверить с инструкцией.",
-      "recipe_status": "idea_not_yet_source_checked",
-      "source_status": "not_checked",
-      "tefal_book_status": "pending",
+      "recipe_status": "full_draft_source_reviewed",
+      "source_status": "source_cross_checked",
+      "tefal_book_status": "no_direct_equivalent_or_accessory_reference_only",
       "photo_status": "not_started",
       "appliance_test_status": "not_tested",
-      "publication_status": "not_published"
+      "publication_status": "not_published",
+      "source_urls": [
+        "https://nwdistrict.ifas.ufl.edu/fcs/files/2020/11/Air-Fryer-Chicken-Kebab-Recipe.pdf",
+        "https://www.bbcgoodfood.com/recipes/air-fryer-chicken-tikka-kebabs"
+      ],
+      "batch_number": 1
     },
     {
       "number": 10,
@@ -146,12 +183,12 @@
       "title": "Куриные бёдра с апельсином и имбирём",
       "servings": 2,
       "editorial_concept": "Сладкую глазурь наносить ближе к концу, чтобы сахар не подгорел.",
-      "recipe_status": "idea_not_yet_source_checked",
-      "source_status": "not_checked",
-      "tefal_book_status": "pending",
+      "recipe_status": "full_draft_source_reviewed",
+      "tefal_book_status": "no_direct_equivalent_or_accessory_reference_only",
       "photo_status": "not_started",
       "appliance_test_status": "not_tested",
-      "publication_status": "not_published"
+      "publication_status": "not_published",
+      "batch_number": 1
     },
     {
       "number": 11,
