@@ -1,14 +1,14 @@
-name: Yandex AI ART - air fryer photo batch 01
+name: Yandex AI ART - air fryer 100-recipe photo production
 on:
   push:
     branches: [main]
     paths:
-      - 'data/airfryer-recipes-batch-01.json'
+      - 'data/airfryer-recipes-batch-*.json'
       - 'photo-pipeline/generate_airfryer_batch.py'
       - '.github/workflows/yandex-ai-airfryer-batch-01.yml'
   pull_request:
     paths:
-      - 'data/airfryer-recipes-batch-01.json'
+      - 'data/airfryer-recipes-batch-*.json'
       - 'photo-pipeline/**'
       - '.github/workflows/yandex-ai-airfryer-batch-01.yml'
   schedule:
@@ -24,12 +24,12 @@ on:
 permissions:
   contents: write
 concurrency:
-  group: yandex-ai-airfryer-batch-01
+  group: yandex-ai-airfryer-100-photo-production
   cancel-in-progress: false
 jobs:
   preflight:
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: 15
     steps:
       - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
         with:
@@ -40,16 +40,24 @@ jobs:
       - run: python -m pip install 'Pillow>=10,<13'
       - name: Compile photo pipeline scripts
         run: python -m py_compile photo-pipeline/generate_airfryer_batch.py photo-pipeline/test_airfryer_batch.py photo-pipeline/verify_airfryer_batch.py
-      - name: Validate recipe-specific prompts without paid API calls
-        run: python photo-pipeline/test_airfryer_batch.py
-      - name: Dry-run all ten prompts without paid API calls
-        run: python photo-pipeline/generate_airfryer_batch.py --start 1 --end 10 --limit 10
+      - name: Free prompt preflight and dry-run for every available ten-recipe batch
+        shell: bash
+        run: |
+          set -euo pipefail
+          found=0
+          for manifest in data/airfryer-recipes-batch-*.json; do
+            [ -f "$manifest" ] || continue
+            found=1
+            echo "Preflight: $manifest"
+            python photo-pipeline/test_airfryer_batch.py --manifest "$manifest"
+          done
+          test "$found" -eq 1
 
   generate:
     needs: preflight
     if: ${{ github.event_name == 'schedule' || (github.event_name == 'push' && github.ref == 'refs/heads/main') || (github.event_name == 'workflow_dispatch' && inputs.paid_generation == 'yes') }}
     runs-on: ubuntu-latest
-    timeout-minutes: 45
+    timeout-minutes: 60
     steps:
       - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
         with:
@@ -74,16 +82,32 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
       - run: python -m pip install 'Pillow>=10,<13'
-      - name: Validate prompts and existing checkpoints
-        run: python photo-pipeline/test_airfryer_batch.py
-      - name: Generate up to ten recipe-specific WebP files, checkpointing each paid response
+      - name: Generate the first incomplete batch, at most ten paid images per run
+        shell: bash
         env:
           YANDEX_API_KEY: ${{ secrets.YANDEX_API_KEY }}
           YANDEX_FOLDER_ID: ${{ secrets.YANDEX_FOLDER_ID || 'b1g00u8p0k5nl98v8nre' }}
           PHOTO_COST_APPROVED: 'true'
-        run: python photo-pipeline/generate_airfryer_batch.py --start 1 --end 10 --limit 10 --execute
-      - name: Verify image dimensions, WebP format, metadata and SHA-256
-        run: python photo-pipeline/verify_airfryer_batch.py
+        run: |
+          set -euo pipefail
+          found=0
+          for manifest in data/airfryer-recipes-batch-*.json; do
+            [ -f "$manifest" ] || continue
+            found=1
+            echo "Processing $manifest"
+            summary=$(python photo-pipeline/generate_airfryer_batch.py --manifest "$manifest" --limit 10 --execute)
+            echo "$summary"
+            base=$(basename "$manifest" .json)
+            python photo-pipeline/verify_airfryer_batch.py --manifest "$manifest" --progress-file "progress-$base.json"
+            summary_json=$(printf '%s\n' "$summary" | tail -n 1)
+            created=$(python -c 'import json,sys; print(json.loads(sys.argv[1])["created_or_prepared"])' "$summary_json")
+            refused=$(python -c 'import json,sys; print(json.loads(sys.argv[1])["refused"])' "$summary_json")
+            if [ "$created" -gt 0 ] || [ "$refused" -gt 0 ]; then
+              echo "Stopping after the first incomplete or blocked batch; the next scheduled run will resume here."
+              break
+            fi
+          done
+          test "$found" -eq 1
       - name: Save verified photos to the unpublished production branch
         shell: bash
         run: |
@@ -92,6 +116,6 @@ jobs:
           if git diff --cached --quiet; then
             echo "No new air-fryer photos or metadata to checkpoint."
           else
-            git commit -m "Yandex AI ART: save air-fryer poultry batch 01 photos"
+            git commit -m "Yandex AI ART: checkpoint next air-fryer photo batch"
             git push origin HEAD:refs/heads/photo-production/airfryer-batch-01-20261107
           fi
