@@ -159,8 +159,8 @@ def main(argv: list[str] | None = None) -> int:
     parser.add_argument("--limit", type=int, default=10)
     parser.add_argument("--execute", action="store_true")
     args = parser.parse_args(argv)
-    if not (1 <= args.start <= args.end <= 10):
-        parser.error("start/end must be between 1 and 10")
+    if not (1 <= args.start <= args.end <= 100):
+        parser.error("start/end must be between 1 and 100")
     if not (1 <= args.limit <= 10):
         parser.error("limit must be 1..10")
     if args.execute:
