@@ -86,9 +86,11 @@
       },
       "safety": "Не использовать свободную бумагу или фольгу; соцветия должны быть сухими и не закрывать циркуляцию воздуха.",
       "photo_brief": "Ровные соцветия цветной капусты с золотистыми поджаренными краями, заметными семенами кумина и тёплой копчёной паприкой; немного петрушки и долька лимона, без соуса и других овощей.",
-      "photo_status": "not_started",
+      "photo_status": "present_pending_visual_review",
       "appliance_test_status": "not_tested",
-      "publication_status": "not_published"
+      "publication_status": "not_published",
+      "photo_path": "assets/airfryer/af-cauliflower-cumin-2.webp",
+      "photo_editorial_status": "not_yet_reviewed"
     },
     {
       "number": 62,
@@ -164,9 +166,11 @@
       },
       "safety": "Тщательно обсушить после мытья и не перегружать корзину; свободная бумага или фольга не допускаются без прямого разрешения инструкции модели.",
       "photo_brief": "Ярко-зелёные соцветия брокколи с тёмно-золотыми кончиками, тонкими следами чеснока и свежей лимонной цедрой; естественная фактура, без сыра и сливочного соуса.",
-      "photo_status": "not_started",
+      "photo_status": "present_pending_visual_review",
       "appliance_test_status": "not_tested",
-      "publication_status": "not_published"
+      "publication_status": "not_published",
+      "photo_path": "assets/airfryer/af-broccoli-garlic-lemon-2.webp",
+      "photo_editorial_status": "not_yet_reviewed"
     },
     {
       "number": 63,
@@ -245,9 +249,11 @@
       },
       "safety": "Соль и обсушивание обязательны для удаления поверхностной влаги. Не перегружать корзину, чтобы кабачки не тушились.",
       "photo_brief": "Толстые ломтики кабачка с золотистыми пятнами и тонкой хрустящей корочкой из пармезана и panko, видны сухие листочки орегано; один ломтик разрезан и показывает мягкую светлую середину, без соуса.",
-      "photo_status": "not_started",
+      "photo_status": "present_pending_visual_review",
       "appliance_test_status": "not_tested",
-      "publication_status": "not_published"
+      "publication_status": "not_published",
+      "photo_path": "assets/airfryer/af-zucchini-parmesan-2.webp",
+      "photo_editorial_status": "not_yet_reviewed"
     },
     {
       "number": 64,
@@ -332,9 +338,11 @@
       },
       "safety": "Мисо-глазурь содержит сахар; не наносить до основного размягчения. Проверять, чтобы соус не подгорал и не капал на нагреватель.",
       "photo_brief": "Кусочки баклажана с блестящей тёмно-янтарной мисо-глазурью, поджаренные края, сверху белый кунжут и тонкие кольца зелёного лука; без риса и других гарниров.",
-      "photo_status": "not_started",
+      "photo_status": "present_pending_visual_review",
       "appliance_test_status": "not_tested",
-      "publication_status": "not_published"
+      "publication_status": "not_published",
+      "photo_path": "assets/airfryer/af-eggplant-miso-2.webp",
+      "photo_editorial_status": "not_yet_reviewed"
     },
     {
       "number": 65,
@@ -414,9 +422,11 @@
       },
       "safety": "Перцы должны устойчиво стоять срезом вверх; не переполнять начинкой, чтобы сыр не вытекал в корзину и не попадал на нагреватель.",
       "photo_brief": "Двенадцать половинок небольших красных и жёлтых сладких перцев, наполненных светлой фетой с зелёной петрушкой и мятой; сыр слегка золотистый сверху, перцы сохраняют форму, без риса и мяса.",
-      "photo_status": "not_started",
+      "photo_status": "present_pending_visual_review",
       "appliance_test_status": "not_tested",
-      "publication_status": "not_published"
+      "publication_status": "not_published",
+      "photo_path": "assets/airfryer/af-peppers-feta-stuffed-2.webp",
+      "photo_editorial_status": "not_yet_reviewed"
     },
     {
       "number": 66,
@@ -496,9 +506,11 @@
       },
       "safety": "Начинку не оставлять при комнатной температуре надолго. Не перегружать корзину; если шляпки выделяют много влаги, готовить партиями.",
       "photo_brief": "Шесть крупных шляпок шампиньонов, наполненных золотистой смесью из сливочного сыра, пармезана, сухарей и зелени; видны петрушка и мелкие травы, грибы целые и аккуратные, без салата.",
-      "photo_status": "not_started",
+      "photo_status": "present_pending_visual_review",
       "appliance_test_status": "not_tested",
-      "publication_status": "not_published"
+      "publication_status": "not_published",
+      "photo_path": "assets/airfryer/af-mushrooms-herb-stuffed-2.webp",
+      "photo_editorial_status": "not_yet_reviewed"
     },
     {
       "number": 67,
@@ -574,9 +586,11 @@
       },
       "safety": "Не разрезать початки, удерживая их в руке; использовать устойчивую доску и острый тяжёлый нож. Убедиться, что початки не блокируют корзину.",
       "photo_brief": "Четыре половинки кукурузы с золотистыми поджаренными зёрнами и тонким слоем копчёной паприки, свежая петрушка и дольки лайма; без сливочного соуса и сыра.",
-      "photo_status": "not_started",
+      "photo_status": "present_pending_visual_review",
       "appliance_test_status": "not_tested",
-      "publication_status": "not_published"
+      "publication_status": "not_published",
+      "photo_path": "assets/airfryer/af-corn-paprika-2.webp",
+      "photo_editorial_status": "not_yet_reviewed"
     },
     {
       "number": 68,
@@ -648,9 +662,11 @@
       },
       "safety": "Не перегружать корзину и не оставлять тонкие стебли на полный режим толстых; проверять через 6 минут.",
       "photo_brief": "Пучок зелёной спаржи с яркими зелёными стеблями, слегка поджаренными кончиками и тонким слоем расплавленного пармезана; лимонная цедра и долька лимона, без других овощей.",
-      "photo_status": "not_started",
+      "photo_status": "present_pending_visual_review",
       "appliance_test_status": "not_tested",
-      "publication_status": "not_published"
+      "publication_status": "not_published",
+      "photo_path": "assets/airfryer/af-asparagus-parmesan-2.webp",
+      "photo_editorial_status": "not_yet_reviewed"
     },
     {
       "number": 69,
@@ -721,9 +737,11 @@
       },
       "safety": "Свежую фасоль вымыть и обсушить; не использовать свободную бумагу или фольгу. Соевую заправку добавлять после приготовления.",
       "photo_brief": "Тонкие ярко-зелёные стручки фасоли с отдельными поджаренными пятнами, блеск кунжутного масла, белые семена кунжута и мелкие кусочки чеснока; без риса и других овощей.",
-      "photo_status": "not_started",
+      "photo_status": "present_pending_visual_review",
       "appliance_test_status": "not_tested",
-      "publication_status": "not_published"
+      "publication_status": "not_published",
+      "photo_path": "assets/airfryer/af-green-beans-sesame-2.webp",
+      "photo_editorial_status": "not_yet_reviewed"
     },
     {
       "number": 70,
@@ -799,9 +817,13 @@
       },
       "safety": "Работать со свёклой на устойчивой доске, использовать перчатки при необходимости. Не добавлять мёд и уксус до конца приготовления, чтобы не подгорали.",
       "photo_brief": "Ровные дольки свёклы насыщенного рубиново-бордового цвета с блестящей тонкой бальзамической глазурью, видны листочки тимьяна и петрушка; без козьего сыра, салата и орехов.",
-      "photo_status": "not_started",
+      "photo_status": "present_pending_visual_review",
       "appliance_test_status": "not_tested",
-      "publication_status": "not_published"
+      "publication_status": "not_published",
+      "photo_path": "assets/airfryer/af-beetroot-balsamic-2.webp",
+      "photo_editorial_status": "not_yet_reviewed"
     }
-  ]
+  ],
+  "photo_linkage_status": "100_of_100_files_matched_by_recipe_id",
+  "photo_editorial_acceptance": "pending_visual_review"
 }

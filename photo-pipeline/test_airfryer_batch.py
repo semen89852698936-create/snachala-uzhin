@@ -25,7 +25,7 @@ prompts = [module.make_prompt(recipe) for recipe in recipes]
 assert all(0 < len(prompt) <= module.MAX_PROMPT for prompt in prompts)
 assert all('Точное блюдо:' in prompt and 'Без людей' in prompt for prompt in prompts)
 assert len({recipe["id"] for recipe in recipes}) == 10
-assert all(recipe["photo_status"] == "not_started" for recipe in recipes)
+assert all(recipe["photo_status"] in {"not_started", "present_pending_visual_review", "needs_replacement", "replacement_generated_pending_visual_review", "generated_pending_visual_review"} for recipe in recipes)
 assert all(recipe["publication_status"] == "not_published" for recipe in recipes)
 
 result = subprocess.run(

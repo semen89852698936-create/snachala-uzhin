@@ -82,9 +82,11 @@
       },
       "safety": "Использовать только жаропрочную форму, подходящую по размеру и температуре. Не ставить холодную стеклянную форму в уже горячую корзину, если производитель формы не допускает резкий нагрев.",
       "photo_brief": "Целые и слегка лопнувшие помидоры черри в небольшой неглубокой белой жаропрочной форме, виден густой красный сок, тонкие ломтики чеснока, зелёный базилик и итальянские травы; без пасты и хлеба.",
-      "photo_status": "not_started",
+      "photo_status": "present_pending_visual_review",
       "appliance_test_status": "not_tested",
-      "publication_status": "not_published"
+      "publication_status": "not_published",
+      "photo_path": "assets/airfryer/af-cherry-tomatoes-garlic-2.webp",
+      "photo_editorial_status": "not_yet_reviewed"
     },
     {
       "number": 72,
@@ -160,9 +162,11 @@
       },
       "safety": "При работе с твёрдой тыквой использовать устойчивую доску и острый нож. Не добавлять кленовый сироп в начале, чтобы он не карамелизовался до готовности середины.",
       "photo_brief": "Ровные кубики тыквы баттернат с золотистыми карамелизированными краями, целые слегка хрустящие листья шалфея и тонкий блеск оливкового масла; без орехов и сыра.",
-      "photo_status": "not_started",
+      "photo_status": "present_pending_visual_review",
       "appliance_test_status": "not_tested",
-      "publication_status": "not_published"
+      "publication_status": "not_published",
+      "photo_path": "assets/airfryer/af-butternut-squash-sage-2.webp",
+      "photo_editorial_status": "not_yet_reviewed"
     },
     {
       "number": 73,
@@ -246,9 +250,11 @@
       },
       "safety": "Яичная масса должна достичь 71 °C в центре. Использовать только термостойкие формы, устойчивые к потоку воздуха; не ставить формочки, которые могут опрокинуться.",
       "photo_brief": "Четыре маленькие круглые фриттаты с золотистым верхом, в разрезе видны зелёный шпинат, белая фета и мелкие красные кубики перца; подача без хлеба и салата.",
-      "photo_status": "not_started",
+      "photo_status": "present_pending_visual_review",
       "appliance_test_status": "not_tested",
-      "publication_status": "not_published"
+      "publication_status": "not_published",
+      "photo_path": "assets/airfryer/af-frittata-spinach-feta-2.webp",
+      "photo_editorial_status": "not_yet_reviewed"
     },
     {
       "number": 74,
@@ -332,9 +338,11 @@
       },
       "safety": "Для полностью приготовленной версии яйца должны достичь 71 °C. Формы должны быть устойчивыми и термостойкими; при извлечении использовать прихватки.",
       "photo_brief": "Две небольшие белые жаропрочные формы с яркой томатно-перечной основой и полностью схватившимися яйцами, сверху немного феты, паприки и петрушки; без тостов и дополнительных гарниров.",
-      "photo_status": "not_started",
+      "photo_status": "present_pending_visual_review",
       "appliance_test_status": "not_tested",
-      "publication_status": "not_published"
+      "publication_status": "not_published",
+      "photo_path": "assets/airfryer/af-baked-eggs-tomato-pepper-2.webp",
+      "photo_editorial_status": "not_yet_reviewed"
     },
     {
       "number": 75,
@@ -414,9 +422,11 @@
       },
       "safety": "Творог держать охлаждённым до формовки. Использовать только пергамент, силикон или форму, разрешённые производителем; свободная бумага может подняться к нагревателю.",
       "photo_brief": "Восемь круглых сырников с ровной золотистой корочкой и нежной светлой творожной серединой, два разрезаны пополам; рядом небольшая ложка сметаны и несколько свежих ягод, без варенья и сиропа.",
-      "photo_status": "not_started",
+      "photo_status": "present_pending_visual_review",
       "appliance_test_status": "not_tested",
-      "publication_status": "not_published"
+      "publication_status": "not_published",
+      "photo_path": "assets/airfryer/af-syrniki-airfryer-2.webp",
+      "photo_editorial_status": "not_yet_reviewed"
     },
     {
       "number": 76,
@@ -500,9 +510,11 @@
       },
       "safety": "Не переполнять корзину и не класть овощи поверх картофеля плотной кучей. Проверять мягкость самых крупных кубиков.",
       "photo_brief": "Небольшая порция золотистых кубиков картофеля с кусочками красного перца и полупрозрачного лука, видны копчёная паприка и свежая петрушка; без бекона, колбасы и яиц.",
-      "photo_status": "not_started",
+      "photo_status": "present_pending_visual_review",
       "appliance_test_status": "not_tested",
-      "publication_status": "not_published"
+      "publication_status": "not_published",
+      "photo_path": "assets/airfryer/af-breakfast-potato-hash-2.webp",
+      "photo_editorial_status": "not_yet_reviewed"
     },
     {
       "number": 77,
@@ -586,9 +598,11 @@
       },
       "safety": "Использовать формы, рассчитанные на 160 °C и поток воздуха. Яйцо должно полностью схватиться; не ставить пустые лёгкие формочки в работающую корзину.",
       "photo_brief": "Четыре небольших овсяных кекса с золотистыми верхушками, видны кубики яблока и овсяные хлопья, лёгкая посыпка корицей; один кекс разломлен и показывает мягкую пропечённую середину, без йогурта и ягод.",
-      "photo_status": "not_started",
+      "photo_status": "present_pending_visual_review",
       "appliance_test_status": "not_tested",
-      "publication_status": "not_published"
+      "publication_status": "not_published",
+      "photo_path": "assets/airfryer/af-oatmeal-apple-cups-2.webp",
+      "photo_editorial_status": "not_yet_reviewed"
     },
     {
       "number": 78,
@@ -668,9 +682,11 @@
       },
       "safety": "Шпинат обязательно отжать, иначе тесто размокнет. Использовать только жаропрочную бумагу, разрешённую производителем, и не оставлять её свободно лежать в пустой корзине.",
       "photo_brief": "Четыре небольшие треугольные слойки с пышным золотистым слоёным тестом, одна раскрыта и показывает зелёный шпинат и белую фету; без салата и соуса.",
-      "photo_status": "not_started",
+      "photo_status": "present_pending_visual_review",
       "appliance_test_status": "not_tested",
-      "publication_status": "not_published"
+      "publication_status": "not_published",
+      "photo_path": "assets/airfryer/af-puff-pastry-spinach-feta-2.webp",
+      "photo_editorial_status": "not_yet_reviewed"
     },
     {
       "number": 79,
@@ -754,9 +770,11 @@
       },
       "safety": "Форма должна быть жаропрочной, устойчивой и свободно помещаться в корзине. Не использовать бумагу или фольгу, если они не разрешены инструкцией модели.",
       "photo_brief": "Небольшая круглая фокачча с глубокими ямками, в тесто вдавлены половинки черри и иголочки свежего розмарина, золотистые края и блестящее оливковое масло; один треугольный кусок отломлен, видна воздушная мякоть.",
-      "photo_status": "not_started",
+      "photo_status": "present_pending_visual_review",
       "appliance_test_status": "not_tested",
-      "publication_status": "not_published"
+      "publication_status": "not_published",
+      "photo_path": "assets/airfryer/af-mini-focaccia-tomato-2.webp",
+      "photo_editorial_status": "not_yet_reviewed"
     },
     {
       "number": 80,
@@ -833,9 +851,13 @@
       },
       "safety": "Не оставлять свободный лист пергамента в корзине: поток воздуха может поднять его к нагревателю. Не перегружать питу соусом, чтобы основа не размокла.",
       "photo_brief": "Две тонкие круглые питы-пиццы с расплавленной белой моцареллой, красными кружочками черри и свежими ярко-зелёными листьями базилика; края золотистые и хрустящие, без мяса и дополнительных топпингов.",
-      "photo_status": "not_started",
+      "photo_status": "present_pending_visual_review",
       "appliance_test_status": "not_tested",
-      "publication_status": "not_published"
+      "publication_status": "not_published",
+      "photo_path": "assets/airfryer/af-pita-pizza-mozzarella-basil-2.webp",
+      "photo_editorial_status": "not_yet_reviewed"
     }
-  ]
+  ],
+  "photo_linkage_status": "100_of_100_files_matched_by_recipe_id",
+  "photo_editorial_acceptance": "pending_visual_review"
 }
