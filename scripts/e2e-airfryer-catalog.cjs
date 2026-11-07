@@ -38,6 +38,8 @@ const assert=require('node:assert/strict');
     assert.match(await page.locator('#recipeDetail').innerText(),/клюквенно-апельсиновым соусом/i);
     assert.ok(await page.locator('#recipeDetail .ingredient-check').count()>=5,'Ingredients must render');
     assert.ok(await page.locator('#recipeDetail .du-editorial-step').count()>=4,'Cooking steps must render');
+    assert.equal(await page.locator('#recipeDetail .portion-picker button').count(),0,'Airfryer recipes keep the validated two-serving quantity fixed');
+    assert.equal(await page.locator('#recipeDetail .portion-picker strong').innerText(),'2 порции');
     await page.locator('#startCooking').click();
     assert.equal(await page.locator('#cookOverlay').isVisible(),true,'Step-by-step cooking overlay must open');
     assert.ok(await page.locator('#cookContent').innerText().then(t=>t.includes('Шаг 1')),'First cooking step should be visible');
