@@ -70,26 +70,19 @@ def make_prompt(recipe: dict) -> str:
         if isinstance(item, (list, tuple)) and len(item) >= 1:
             ingredients.append(clean(item[0]))
     ingredient_text = ", ".join(ingredients)
-    prompt = (
-        "Фотореалистичная премиальная журнальная фуд-фотография готового блюда. "
-        f"Точное блюдо: {title}. "
-        f"Видимые детали: {brief}. "
-        f"Ингредиенты только из рецепта: {ingredient_text}. "
-        "Аппетитная подача на двоих, натуральная текстура, мягкий тёплый свет, "
-        "сдержанная пастельная керамика. Без людей, рук, букв, логотипов, коллажей."
-    )
+    prefix = "Премиальная фотореалистичная фуд-фотография готового блюда. "
+    title_part = f"Точное блюдо: {title}. "
+    ingredient_part = f"Ингредиенты: {ingredient_text}. " if ingredient_text else ""
+    suffix = "Подача на двоих, натуральная текстура, мягкий тёплый свет. Без людей, рук, букв, логотипов и коллажей."
+    fixed = prefix + title_part + ingredient_part + "Детали: ." + suffix
+    brief_limit = max(0, MAX_PROMPT - len(fixed))
+    brief = brief[:brief_limit].rstrip(" ,.;")
+    prompt = prefix + title_part + ingredient_part + f"Детали: {brief}. " + suffix
     if len(prompt) > MAX_PROMPT:
-        prompt = (
-            "Премиальная фотореалистичная фуд-фотография. "
-            f"Точное блюдо: {title}. "
-            f"Детали: {brief}. "
-            "Подача на двоих, мягкий тёплый свет, натуральная еда. "
-            "Без людей, рук, букв, логотипов и коллажей."
-        )
+        prompt = prefix + title_part + f"Детали: {brief}. " + suffix
     if len(prompt) > MAX_PROMPT:
-        prompt = prompt[:MAX_PROMPT].rstrip(" ,.;")
+        raise RuntimeError(f"Could not fit a safe prompt for {recipe['id']} within {MAX_PROMPT} characters")
     return prompt
-
 
 def atomic_write(path: Path, content: bytes) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
