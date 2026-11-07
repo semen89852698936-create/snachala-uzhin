@@ -68,3 +68,12 @@
 15. [My Edible Food - Air Fryer Green Beans](https://myediblefood.com/air-fryer-green-beans-recipe/)
 16. [RecipeAirFryer - Air Fryer Beets](https://recipeairfryer.com/recipes/air-fryer-beets)
 17. [Cup of Yum - Air Fryer Roasted Beets](https://cupofyum.com/recipes/air-fryer-roasted-beets-158459)
+
+
+## Фото-приёмка 08.11.2026
+
+- Файлы всех партий: 100/100 WebP технически проверены, размер 1200 × 900, SHA-256 сверены с записями фотобазы.
+- В этой партии визуально принято: 10/10. На точечную перегенерацию: 0/10.
+- Очередь замены: нет.
+- Все изображения остаются неопубликованными. Физические испытания на точной модели аэрогриля владельца не заявлены.
+- Ежечасный и push-триггеры платной генерации отключаются изменением workflow; платный запуск останется только ручным или через отдельную QA-ветку с явным именем.
