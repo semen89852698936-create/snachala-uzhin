@@ -256,9 +256,9 @@
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
       "photo_record_path": "photo-library/airfryer/records/af-beef-meatballs-oregano-2.json",
-      "visual_review_status": "needs_regeneration",
+      "visual_review_status": "pending_recheck",
       "visual_review_note": "Повторный снимок снова показывает крупные плоские котлеты, а не небольшие круглые фрикадельки; разрез выглядит розовым.",
-      "photo_sha256": "8de62166b3d5dc100cbc8b86dca9c5ad865b4c76b3c66525dda3d8dd47692ae0"
+      "photo_sha256": "cba34237ae40d04d4d2cb30bb0fc7e51c4da30dd2cad77a559c064416e48885e"
     },
     {
       "number": 24,

@@ -207,9 +207,9 @@
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
       "photo_record_path": "photo-library/airfryer/records/af-turkey-medallions-cranberry-2.json",
-      "visual_review_status": "needs_regeneration",
+      "visual_review_status": "pending_recheck",
       "visual_review_note": "Повторная генерация снова добавила жёлтые зёрна и не дала узнаваемого клюквенного соуса. Нужна чистая подача с красными ягодами и без гарниров.",
-      "photo_sha256": "67074ed052b195e558c3821de35e87507c20312b2c16c2a1f7f25a89f045523e"
+      "photo_sha256": "1421be9ec887608dbfb054f19ab0a77cca2ab1b7cf52af9bc86932521091e85a"
     },
     {
       "number": 13,
@@ -764,9 +764,9 @@
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
       "photo_record_path": "photo-library/airfryer/records/af-turkey-sausages-apple-2.json",
-      "visual_review_status": "needs_regeneration",
+      "visual_review_status": "pending_recheck",
       "visual_review_note": "Повторный снимок по-прежнему слишком бледный и розовый, без убедительной обжаренной поверхности готовых колбасок.",
-      "photo_sha256": "988736b273bc7f8d65d783417063ddc93315a0ff8df5dfe80d9b03fb86689ae5"
+      "photo_sha256": "de5421e71fa7b1be072cbf892ae443dff44a6381f4d7a8ea4626ee2c07cfc5f3"
     },
     {
       "number": 19,

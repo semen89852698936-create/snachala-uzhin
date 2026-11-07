@@ -239,7 +239,7 @@
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
       "photo_record_path": "photo-library/airfryer/records/af-chicken-thighs-yogurt-rosemary-2.json",
-      "visual_review_status": "pending_recheck",
+      "visual_review_status": "visually_accepted",
       "visual_review_note": "На снимке мясо выглядит сырым и покрытым толстым белым маринадом. Нужен готовый продукт с непрозрачной мякотью и заметной золотистой корочкой.",
       "photo_sha256": "40bdd9d70388523f3b40d05f2738a416cfd96fdac86c865927786ac0e9f3d591"
     },

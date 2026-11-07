@@ -171,9 +171,9 @@
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
       "photo_record_path": "photo-library/airfryer/records/af-sea-bass-whole-lemon-2.json",
-      "visual_review_status": "needs_regeneration",
+      "visual_review_status": "pending_recheck",
       "visual_review_note": "Повторная генерация снова выдала филе вместо целой рыбы. Рецепт требует целого сибаса с головой и хвостом.",
-      "photo_sha256": "232f7c1e006cf199b80148947b8a58e20205029ee0f2068f789729cd1bbc280c"
+      "photo_sha256": "5b8afc00bd8541a0fd71f3e012043c71158530d5c5de9bb6743f532b40152df5"
     },
     {
       "number": 43,
@@ -838,9 +838,9 @@
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
       "photo_record_path": "photo-library/airfryer/records/af-salmon-potato-fishcakes-2.json",
-      "visual_review_status": "needs_regeneration",
+      "visual_review_status": "pending_recheck",
       "visual_review_note": "Повторный снимок показывает рыбные шарики без убедительной золотистой корочки; они выглядят влажными и недоготовленными.",
-      "photo_sha256": "b18538eba0c0734cd8c7d6e94f2a79e15907dfa39eda4de1869184f1c48d1bed"
+      "photo_sha256": "a9761636e5fab2eec99c75867134fd99d8eb76c4b2c74c69d82f52290a19f864"
     }
   ]
 }
