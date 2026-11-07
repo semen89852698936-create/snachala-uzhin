@@ -31,6 +31,11 @@ assert.equal(data.servings,2);
 assert.ok(Array.isArray(data.recipes)&&data.recipes.length>=3);
 assert.equal(new Set(data.recipes.map(r=>r.id)).size,data.recipes.length,'duplicate IDs');
 for(const r of data.recipes)assert.deepEqual(audit(r),[],r.id+' invalid metadata');
+const potato=data.recipes.find(r=>r.id==='af-potato-wedges-2');
+assert.ok(potato,'potato wedges candidate must exist');
+assert.ok(potato.prep_minutes>=55,'potato prep must include 30+15 minutes soaking plus 10 minutes active prep');
+assert.match(potato.additional_prep||'',/30 минут/,'cold soak must remain explicit');
+assert.match(potato.additional_prep||'',/15 минут/,'hot soak must remain explicit');
 // Test that failures really are detected, not merely printed.
 const r=data.recipes[1];
 assert.ok(audit({...r,temperature_c:300}).includes('temperature'));
