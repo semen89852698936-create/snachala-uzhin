@@ -66,5 +66,6 @@ jobs:
             /tmp/cooking-*.png
             /tmp/unified-*.png
             /tmp/editorial-*.png
+            /tmp/airfryer-timing-*.png
           if-no-files-found: ignore
           retention-days: 14
