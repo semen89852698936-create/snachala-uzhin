@@ -82,7 +82,7 @@ def update_manifest_photo_status(manifest_path: Path, recipe_id: str, status: st
         raise RuntimeError(f"Cannot update missing recipe in manifest: {recipe_id}")
     atomic_write(
         manifest_path,
-        (json.dumps(data, ensure_ascii=False, indent=2) + "\\n").encode("utf-8"),
+        (json.dumps(data, ensure_ascii=False, indent=2) + "\n").encode("utf-8"),
     )
 
 
