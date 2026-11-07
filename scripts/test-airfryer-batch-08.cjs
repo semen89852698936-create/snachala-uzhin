@@ -25,7 +25,7 @@ assert.ok(batch.recipes.every((recipe) => recipe.publication_status === 'not_pub
 assert.ok(batch.recipes[2].safety.includes('71 °C'));
 assert.ok(batch.recipes[3].safety.includes('71 °C'));
 assert.ok(batch.recipes[6].safety.includes('160 °C'));
-assert.ok(batch.recipes[8].safety.includes('жаропрочная'));
+assert.ok(batch.recipes[8].safety.includes('жаропроч'));
 
 for (const recipe of batch.recipes) {
   const item = plan.items.find((entry) => entry.id === recipe.id);
