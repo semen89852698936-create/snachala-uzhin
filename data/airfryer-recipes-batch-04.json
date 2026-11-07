@@ -78,9 +78,10 @@
       },
       "safety": "Баранина цельным куском - минимум 63 °C внутри и не менее 3 минут отдыха. Термометр вводить в мясо, не касаясь кости.",
       "photo_brief": "Шесть небольших бараньих котлет с румяной корочкой, заметными веточками розмарина и тонкой лимонной цедрой; две порции на тёплой керамической тарелке, без гарнира и соусов.",
-      "photo_status": "not_started",
+      "photo_status": "generated_file_verified",
       "appliance_test_status": "not_tested",
-      "publication_status": "not_published"
+      "publication_status": "not_published",
+      "photo_visual_review_status": "not_reviewed"
     },
     {
       "number": 32,
@@ -172,9 +173,10 @@
       },
       "safety": "Фарш из баранины - минимум 71 °C внутри. Не пробовать сырой фарш; после контакта с ним вымыть руки и инвентарь.",
       "photo_brief": "Восемь румяных продолговатых кёфт из баранины с видимыми зелёными вкраплениями мяты и петрушки, рядом дольки лимона; без шпажек, лепёшек и гарнира.",
-      "photo_status": "not_started",
+      "photo_status": "generated_file_verified",
       "appliance_test_status": "not_tested",
-      "publication_status": "not_published"
+      "publication_status": "not_published",
+      "photo_visual_review_status": "not_reviewed"
     },
     {
       "number": 33,
@@ -266,9 +268,10 @@
       },
       "safety": "Фарш из баранины - минимум 71 °C внутри. Йогуртовый соус готовить отдельно чистым инвентарём; не использовать посуду от сырого фарша.",
       "photo_brief": "Небольшие золотистые фрикадельки из баранины с заметными зелёными точками мяты, рядом отдельная маленькая чашка белого йогуртового соуса с мятой и лимоном; без гарнира.",
-      "photo_status": "not_started",
+      "photo_status": "generated_file_verified",
       "appliance_test_status": "not_tested",
-      "publication_status": "not_published"
+      "publication_status": "not_published",
+      "photo_visual_review_status": "not_reviewed"
     },
     {
       "number": 34,
@@ -367,9 +370,10 @@
       },
       "safety": "Говяжий фарш - минимум 71 °C в центре каждого рулета. Не пробовать сырую смесь; глазурь наносить чистой кистью.",
       "photo_brief": "Два небольших мясных рулета с блестящей тонкой томатно-медовой глазурью, один разрезан пополам и показывает сочную полностью приготовленную середину; без пюре и овощного гарнира.",
-      "photo_status": "not_started",
+      "photo_status": "generated_file_verified",
       "appliance_test_status": "not_tested",
-      "publication_status": "not_published"
+      "publication_status": "not_published",
+      "photo_visual_review_status": "not_reviewed"
     },
     {
       "number": 35,
@@ -453,9 +457,10 @@
       },
       "safety": "Свинина цельным куском - минимум 63 °C внутри и отдых не менее 3 минут. Маринад, соприкасавшийся с сырым мясом, не использовать как готовый соус.",
       "photo_brief": "Небольшая порция кубиков свиной грудинки с румяными хрустящими краями и тонкой блестящей азиатской глазурью, посыпанных кунжутом и зелёным луком; без риса и дополнительных гарниров.",
-      "photo_status": "not_started",
+      "photo_status": "generated_file_verified",
       "appliance_test_status": "not_tested",
-      "publication_status": "not_published"
+      "publication_status": "not_published",
+      "photo_visual_review_status": "not_reviewed"
     },
     {
       "number": 36,
@@ -535,9 +540,10 @@
       },
       "safety": "Сырая свиная колбаса - минимум 71 °C внутри. Не прокалывать оболочку до приготовления; не использовать время как единственный критерий.",
       "photo_brief": "Две целые румяные свиные колбаски среди полосок красного сладкого перца и долек красного лука с лёгкими подпалинами; без булочек, соусов и гарнира.",
-      "photo_status": "not_started",
+      "photo_status": "generated_file_verified",
       "appliance_test_status": "not_tested",
-      "publication_status": "not_published"
+      "publication_status": "not_published",
+      "photo_visual_review_status": "not_reviewed"
     },
     {
       "number": 37,
@@ -613,9 +619,10 @@
       },
       "safety": "Лосось - минимум 63 °C в самой толстой части. Проверять термометром, не ориентироваться только на цвет или время.",
       "photo_brief": "Два аккуратных филе лосося с золотистыми краями, тонкой лимонной цедрой и свежим укропом; рядом половина лимона, без овощного гарнира и соуса.",
-      "photo_status": "not_started",
+      "photo_status": "generated_file_verified",
       "appliance_test_status": "not_tested",
-      "publication_status": "not_published"
+      "publication_status": "not_published",
+      "photo_visual_review_status": "not_reviewed"
     },
     {
       "number": 38,
@@ -695,9 +702,10 @@
       },
       "safety": "Лосось - минимум 63 °C внутри. Маринад после сырой рыбы не подавать без кипячения; не оставлять рыбу при комнатной температуре.",
       "photo_brief": "Кубики лосося с янтарной мисо-глазурью и лёгкими карамелизированными краями, посыпанные белым кунжутом и тонкими кольцами зелёного лука; без риса и других гарниров.",
-      "photo_status": "not_started",
+      "photo_status": "generated_file_verified",
       "appliance_test_status": "not_tested",
-      "publication_status": "not_published"
+      "publication_status": "not_published",
+      "photo_visual_review_status": "not_reviewed"
     },
     {
       "number": 39,
@@ -772,9 +780,10 @@
       },
       "safety": "Форель - минимум 63 °C в самой толстой части. Термометр вводить горизонтально сбоку в центр филе.",
       "photo_brief": "Два филе форели с золотистыми краями, тонким слоем сливочно-чесночного масла, укропом и лимонной цедрой; кожа видна снизу, рядом долька лимона, без гарнира.",
-      "photo_status": "not_started",
+      "photo_status": "generated_file_verified",
       "appliance_test_status": "not_tested",
-      "publication_status": "not_published"
+      "publication_status": "not_published",
+      "photo_visual_review_status": "not_reviewed"
     },
     {
       "number": 40,
@@ -854,9 +863,10 @@
       },
       "safety": "Треска - не ниже 63 °C в самой толстой части; в рецепте Ninja указан ориентир 65 °C. Не подавать недоготовленную рыбу.",
       "photo_brief": "Два толстых филе трески с отчётливо золотистой корочкой из панировочных сухарей, зелёной петрушки, укропа и лимонной цедры; одно филе слегка разломлено, видна белая сочная мякоть, без гарнира.",
-      "photo_status": "not_started",
+      "photo_status": "generated_file_verified",
       "appliance_test_status": "not_tested",
-      "publication_status": "not_published"
+      "publication_status": "not_published",
+      "photo_visual_review_status": "not_reviewed"
     }
   ]
 }
