@@ -178,7 +178,7 @@
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
       "photo_path": "assets/airfryer/af-lamb-kofta-cumin-2.webp",
-      "photo_editorial_status": "minced_meat_doneness_review_required"
+      "photo_editorial_status": "not_yet_reviewed"
     },
     {
       "number": 33,
@@ -274,7 +274,7 @@
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
       "photo_path": "assets/airfryer/af-lamb-meatballs-mint-2.webp",
-      "photo_editorial_status": "minced_meat_doneness_review_required"
+      "photo_editorial_status": "not_yet_reviewed"
     },
     {
       "number": 34,
@@ -377,7 +377,7 @@
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
       "photo_path": "assets/airfryer/af-mini-meatloaf-2.webp",
-      "photo_editorial_status": "minced_meat_doneness_review_required"
+      "photo_editorial_status": "not_yet_reviewed"
     },
     {
       "number": 35,
