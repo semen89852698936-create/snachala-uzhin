@@ -2,6 +2,7 @@
 """Verify generated unpublished air-fryer WebP files and write progress."""
 from __future__ import annotations
 
+import argparse
 import hashlib
 import json
 from datetime import datetime, timezone
@@ -16,7 +17,11 @@ LIBRARY = ROOT / "photo-library" / "airfryer"
 
 
 def main() -> int:
-    data = json.loads(MANIFEST.read_text(encoding="utf-8"))
+    parser = argparse.ArgumentParser()
+    parser.add_argument('--manifest', type=Path, default=MANIFEST)
+    parser.add_argument('--progress-file', default='progress.json')
+    args = parser.parse_args()
+    data = json.loads(args.manifest.read_text(encoding="utf-8"))
     recipes = data["recipes"]
     verified = refused = uncertain = missing = 0
     problems = []
@@ -64,7 +69,7 @@ def main() -> int:
         "publication_status": "all_generated_images_unpublished",
     }
     LIBRARY.mkdir(parents=True, exist_ok=True)
-    (LIBRARY / "progress.json").write_text(
+    (LIBRARY / args.progress_file).write_text(
         json.dumps(progress, ensure_ascii=False, indent=2) + "\n",
         encoding="utf-8",
     )
