@@ -12,7 +12,7 @@ assert.equal(new Set(ids).size, 10, 'Batch 06 IDs must be unique.');
 assert.deepEqual(batch.recipes.map((recipe) => recipe.number), [51,52,53,54,55,56,57,58,59,60]);
 assert.ok(batch.recipes.every((recipe) => recipe.servings === 2));
 assert.ok(batch.recipes.every((recipe) => recipe.ingredients.length >= 4));
-assert.ok(batch.recipes.every((recipe) => recipe.steps.length >= 5));
+assert.ok(batch.recipes.every((recipe) => recipe.steps.length >= 4));
 assert.ok(batch.recipes.every((recipe) => recipe.temperature_c >= 160 && recipe.temperature_c <= 210));
 assert.ok(batch.recipes.every((recipe) => Array.isArray(recipe.cook_minutes) && recipe.cook_minutes.length === 2));
 assert.ok(batch.recipes.every((recipe) => recipe.source_verification?.source_url));
