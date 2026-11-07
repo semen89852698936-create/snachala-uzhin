@@ -43,6 +43,14 @@ assert.doesNotMatch(mushrooms.title,/тостах из аэрогриля/i,'tit
 assert.match(mushrooms.basket,/хлеб поджарить отдельно/i,'bread preparation must remain separate');
 assert.match(mushrooms.steps.join(' '),/тостере или на сухой сковороде/i,'bread method must be explicit');
 assert.match(mushrooms.steps.join(' '),/не включать обжаривание хлеба в 12–15 минут/i,'cook time must apply only to mushrooms');
+// Poultry instructions must explicitly prevent cross-contamination; internal temperature alone is insufficient.
+const chicken=data.recipes.find(r=>r.id==='af-chicken-paprika-2');
+assert.ok(chicken,'chicken candidate must exist');
+const chickenMethod=chicken.steps.join(' ');
+assert.match(chickenMethod,/сырую курицу не мыть/i,'do not wash raw poultry');
+assert.match(chickenMethod,/вымыть руки, нож и доску/i,'clean hands and utensils after handling raw poultry');
+assert.match(chickenMethod,/74\\s*°C/,'safe internal temperature remains explicit');
+assert.match(chickenMethod,/не использовать для готового мяса посуду/i,'avoid reusing contaminated serving utensils');
 // Test that failures really are detected, not merely printed.
 const r=data.recipes[1];
 assert.ok(audit({...r,temperature_c:300}).includes('temperature'));
