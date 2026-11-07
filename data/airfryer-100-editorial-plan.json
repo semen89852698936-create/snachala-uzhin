@@ -384,12 +384,13 @@
       "title": "Стейк с перечной корочкой",
       "servings": 2,
       "editorial_concept": "Толщина и желаемая прожарка задают режим; обязательный отдых мяса и проверка температуры.",
-      "recipe_status": "idea_not_yet_source_checked",
-      "source_status": "not_checked",
-      "tefal_book_status": "pending",
+      "recipe_status": "full_draft_source_reviewed",
+      "source_status": "source_cross_checked",
+      "tefal_book_status": "no_direct_equivalent_or_accessory_reference_only",
       "photo_status": "not_started",
       "appliance_test_status": "not_tested",
-      "publication_status": "not_published"
+      "publication_status": "not_published",
+      "batch_number": 3
     },
     {
       "number": 22,
@@ -398,12 +399,17 @@
       "title": "Говяжьи медальоны с розмарином",
       "servings": 2,
       "editorial_concept": "Одинаковая толщина; быстрое приготовление небольшими партиями, отдых после нагрева.",
-      "recipe_status": "idea_not_yet_source_checked",
-      "source_status": "not_checked",
-      "tefal_book_status": "pending",
+      "recipe_status": "full_draft_source_reviewed",
+      "source_status": "adapted_source_cross_checked",
+      "tefal_book_status": "no_direct_equivalent_or_accessory_reference_only",
       "photo_status": "not_started",
       "appliance_test_status": "not_tested",
-      "publication_status": "not_published"
+      "publication_status": "not_published",
+      "source_urls": [
+        "https://www.bbcgoodfood.com/recipes/air-fryer-steak",
+        "https://extension.msstate.edu/publications/nutrition-and-wellness-all-about-air-fryers"
+      ],
+      "batch_number": 3
     },
     {
       "number": 23,
@@ -412,12 +418,13 @@
       "title": "Говяжьи фрикадельки с орегано",
       "servings": 2,
       "editorial_concept": "Шарики одинакового размера; один слой, переворот, контроль центра.",
-      "recipe_status": "idea_not_yet_source_checked",
-      "source_status": "not_checked",
-      "tefal_book_status": "pending",
+      "recipe_status": "full_draft_source_reviewed",
+      "source_status": "source_cross_checked",
+      "tefal_book_status": "no_direct_equivalent_or_accessory_reference_only",
       "photo_status": "not_started",
       "appliance_test_status": "not_tested",
-      "publication_status": "not_published"
+      "publication_status": "not_published",
+      "batch_number": 3
     },
     {
       "number": 24,
@@ -426,12 +433,13 @@
       "title": "Домашние бургеры из говядины",
       "servings": 2,
       "editorial_concept": "Котлеты одинаковой толщины; отдельно проверить безопасную внутреннюю температуру фарша.",
-      "recipe_status": "idea_not_yet_source_checked",
-      "source_status": "not_checked",
-      "tefal_book_status": "pending",
+      "recipe_status": "full_draft_source_reviewed",
+      "source_status": "source_cross_checked",
+      "tefal_book_status": "no_direct_equivalent_or_accessory_reference_only",
       "photo_status": "not_started",
       "appliance_test_status": "not_tested",
-      "publication_status": "not_published"
+      "publication_status": "not_published",
+      "batch_number": 3
     },
     {
       "number": 25,
@@ -440,12 +448,13 @@
       "title": "Говядина с болгарским перцем на шпажках",
       "servings": 2,
       "editorial_concept": "Кусочки одного размера; проверить допустимость шпажек и высоту корзины.",
-      "recipe_status": "idea_not_yet_source_checked",
-      "source_status": "not_checked",
-      "tefal_book_status": "pending",
+      "recipe_status": "full_draft_source_reviewed",
+      "source_status": "source_cross_checked",
+      "tefal_book_status": "no_direct_equivalent_or_accessory_reference_only",
       "photo_status": "not_started",
       "appliance_test_status": "not_tested",
-      "publication_status": "not_published"
+      "publication_status": "not_published",
+      "batch_number": 3
     },
     {
       "number": 26,
@@ -454,12 +463,13 @@
       "title": "Свиная вырезка с горчицей и тимьяном",
       "servings": 2,
       "editorial_concept": "Цельный кусок подходящего диаметра; переворачивать, дать отдохнуть, проверять термометром.",
-      "recipe_status": "idea_not_yet_source_checked",
-      "source_status": "not_checked",
-      "tefal_book_status": "pending",
+      "recipe_status": "full_draft_source_reviewed",
+      "source_status": "source_cross_checked",
+      "tefal_book_status": "no_direct_equivalent_or_accessory_reference_only",
       "photo_status": "not_started",
       "appliance_test_status": "not_tested",
-      "publication_status": "not_published"
+      "publication_status": "not_published",
+      "batch_number": 3
     },
     {
       "number": 27,
@@ -468,12 +478,13 @@
       "title": "Свиные отбивные с яблоком и шалфеем",
       "servings": 2,
       "editorial_concept": "Отбивные одинаковой толщины; яблоко добавлять с учётом скорости размягчения.",
-      "recipe_status": "idea_not_yet_source_checked",
-      "source_status": "not_checked",
-      "tefal_book_status": "pending",
+      "recipe_status": "full_draft_source_reviewed",
+      "source_status": "source_cross_checked",
+      "tefal_book_status": "no_direct_equivalent_or_accessory_reference_only",
       "photo_status": "not_started",
       "appliance_test_status": "not_tested",
-      "publication_status": "not_published"
+      "publication_status": "not_published",
+      "batch_number": 3
     },
     {
       "number": 28,
@@ -482,12 +493,16 @@
       "title": "Свиные рёбрышки с сухой BBQ-обсыпкой",
       "servings": 2,
       "editorial_concept": "Порционные рёбра; проверять размер корзины, готовить в один слой или партиями.",
-      "recipe_status": "idea_not_yet_source_checked",
-      "source_status": "not_checked",
-      "tefal_book_status": "pending",
+      "recipe_status": "full_draft_source_reviewed",
+      "source_status": "adapted_source_cross_checked",
+      "tefal_book_status": "accessory_or_foil_compatibility_requires_exact_model",
       "photo_status": "not_started",
       "appliance_test_status": "not_tested",
-      "publication_status": "not_published"
+      "publication_status": "not_published",
+      "source_urls": [
+        "https://cazolita.com/en/recipe/af-costillas-bbq-af/"
+      ],
+      "batch_number": 3
     },
     {
       "number": 29,
@@ -496,12 +511,13 @@
       "title": "Свиная шницельная котлета в хрустящей панировке",
       "servings": 2,
       "editorial_concept": "Тонкая равномерная панировка с масляным распылением; переворот без срыва корочки.",
-      "recipe_status": "idea_not_yet_source_checked",
-      "source_status": "not_checked",
-      "tefal_book_status": "pending",
+      "recipe_status": "full_draft_source_reviewed",
+      "source_status": "source_cross_checked",
+      "tefal_book_status": "no_direct_equivalent_or_accessory_reference_only",
       "photo_status": "not_started",
       "appliance_test_status": "not_tested",
-      "publication_status": "not_published"
+      "publication_status": "not_published",
+      "batch_number": 3
     },
     {
       "number": 30,
@@ -510,12 +526,13 @@
       "title": "Свиные фрикадельки с копчёной паприкой",
       "servings": 2,
       "editorial_concept": "Одинаковый размер и свободное пространство между изделиями; проверка центра.",
-      "recipe_status": "idea_not_yet_source_checked",
-      "source_status": "not_checked",
-      "tefal_book_status": "pending",
+      "recipe_status": "full_draft_source_reviewed",
+      "source_status": "source_cross_checked",
+      "tefal_book_status": "no_direct_equivalent_or_accessory_reference_only",
       "photo_status": "not_started",
       "appliance_test_status": "not_tested",
-      "publication_status": "not_published"
+      "publication_status": "not_published",
+      "batch_number": 3
     },
     {
       "number": 31,
