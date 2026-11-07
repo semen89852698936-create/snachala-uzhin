@@ -1,0 +1,80 @@
+name: Install protected PostgreSQL DSN into existing Timeweb app (one-time)
+on:
+  pull_request:
+    branches: [feature/commerce-secure-foundation-20261104]
+    paths: ['.github/workflows/timeweb-postgres-apply-once.yml']
+permissions:
+  contents: read
+concurrency:
+  group: timeweb-pg-one-time-284043
+  cancel-in-progress: false
+jobs:
+  configure:
+    if: github.event.pull_request.number == 135 && github.event.pull_request.head.ref == 'deploy/commerce-timeweb-staging-20261106' && github.event.pull_request.head.repo.full_name == github.repository
+    runs-on: ubuntu-latest
+    timeout-minutes: 6
+    steps:
+      - name: Validate source, exact target, and secret; update only existing app env, checkout OFF
+        env:
+          TIMEWEB_API_TOKEN: ${{ secrets.TIMEWEB_API_TOKEN }}
+          SNACHALA_PG_DSN_20261107: ${{ secrets.SNACHALA_PG_DSN_20261107 }}
+        run: |
+          python3 - <<'PY'
+          import json,os,secrets,urllib.parse,urllib.request,urllib.error,time
+          dsn=os.environ.get('SNACHALA_PG_DSN_20261107','').strip()
+          if not dsn:
+              print('AWAITING ONE-TIME GITHUB ACTIONS SECRET; no Timeweb modifications.')
+              raise SystemExit(0)
+          parsed=urllib.parse.urlsplit(dsn)
+          query=urllib.parse.parse_qs(parsed.query,strict_parsing=True)
+          assert parsed.scheme=='postgresql' and parsed.hostname=='192.168.0.5' and parsed.port==5432
+          assert parsed.username=='gen_user' and parsed.path=='/default_db'
+          assert bool(parsed.password) and query.get('sslmode')==['require']
+          assert not(parsed.fragment or any(k!='sslmode' for k in query))
+          token=os.environ.get('TIMEWEB_API_TOKEN','').strip()
+          if token.lower().startswith('bearer '):token=token[7:].strip()
+          if len(token)>2 and token[0]==token[-1] and token[0] in ("'",'"'):token=token[1:-1].strip()
+          if not token:raise SystemExit('BLOCK: no authorized Timeweb management token')
+          url='https://api.timeweb.cloud/api/v1/apps/284043'
+          headers={'Authorization':'Bearer '+token,'Accept':'application/json','Content-Type':'application/json'}
+          def call(method,body=None):
+              req=urllib.request.Request(url,data=json.dumps(body).encode() if body is not None else None,headers=headers,method=method)
+              try:
+                  with urllib.request.urlopen(req,timeout=25) as res:return res.status,json.load(res)
+              except urllib.error.HTTPError as error:return error.code,{}
+          status,r=call('GET')
+          if status!=200:raise SystemExit('BLOCK: Timeweb app not readable')
+          app=r.get('app',{})
+          domain='semen89852698936-create-snachala-uzhin-9f50.twc1.net'
+          if any((app.get('id')!=284043,app.get('name')!='snachala-uzhin-commerce-private',
+                   app.get('project_id')!=3145267,app.get('preset_id')!=2731,
+                   app.get('location')!='ru-3',app.get('status')!='active',
+                   app.get('is_auto_deploy') is not False,
+                   app.get('branch')!='deploy/commerce-timeweb-staging-20261106',
+                   app.get('commit_sha')!='130c7319d27a307b1865150a7782422d95d9459c')):
+              raise SystemExit('BLOCK: target identity or source differs; refuse modification')
+          if sum(1 for entry in app.get('domains',[]) if isinstance(entry,dict) and entry.get('fqdn')==domain)!=1:
+              raise SystemExit('BLOCK: expected technical HTTPS hostname not found')
+          existing=app.get('envs')
+          expected={'COMMERCE_BASE_URL','COMMERCE_DB_PATH','SESSION_KEY_HEX','ENABLE_CHECKOUT','COMMERCE_PAYMENT_QA_APPROVED'}
+          if not isinstance(existing,dict) or set(existing)!=expected:
+              raise SystemExit('BLOCK: unexpected environment key set; no changes')
+          replacement={
+              'COMMERCE_BASE_URL':'https://'+domain,
+              'COMMERCE_DB_PATH':'/srv/data/orders.sqlite',
+              'SESSION_KEY_HEX':secrets.token_hex(32),
+              'ENABLE_CHECKOUT':'0',
+              'COMMERCE_PAYMENT_QA_APPROVED':'0',
+              'COMMERCE_DATABASE_URL':dsn
+          }
+          status,update=call('PATCH',{'envs':replacement})
+          if status not in (200,202):
+              raise SystemExit('BLOCK: Timeweb API declined env update; HTTP '+str(status))
+          print('PATCH ACCEPTED: app 284043 only, PostgreSQL stored privately, checkout and payment QA OFF.')
+          print('Session signing key safely rotated because full env-object replacement is necessary; no buyer sessions existed.')
+          time.sleep(3)
+          status,data=call('GET')
+          if status!=200 or 'COMMERCE_DATABASE_URL' not in data.get('app',{}).get('envs',{}):
+              raise SystemExit('BLOCK: not yet confirmed persisted by independent GET')
+          print('VERIFIED BY TIMEWEB API: PostgreSQL DSN key is persisted. DSN/password never printed.')
+          PY
