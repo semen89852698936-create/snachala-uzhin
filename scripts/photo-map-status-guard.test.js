@@ -9,3 +9,6 @@ test('1001 mapped paths do not imply approvals',()=>{const [map,legacy]=fixture(
 test('duplicate path is rejected',()=>{const [map,legacy]=fixture();map.photos[1].path=map.photos[0].path;assert.throws(()=>audit(map,legacy),/duplicate path/)});
 test('missing photo rejected',()=>{const [map,legacy]=fixture();map.photos.pop();assert.throws(()=>audit(map,legacy),/length mismatch/)});
 test('invalid blob SHA rejected',()=>{const [map,legacy]=fixture();map.photos[0].sha='unverified';assert.throws(()=>audit(map,legacy),/Git blob SHA/)});
+
+test('invalid WebP path rejected',()=>{const [map,legacy]=fixture();map.photos[0].path='/assets/recipes-ai/0001.jpg';assert.throws(()=>audit(map,legacy),/invalid path/)});
+test('path outside local photo directory rejected',()=>{const [map,legacy]=fixture();map.photos[0].path='https://example.org/image.webp';assert.throws(()=>audit(map,legacy),/invalid path/)});
