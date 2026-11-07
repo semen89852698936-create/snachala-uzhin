@@ -51,5 +51,19 @@ jobs:
             'generic_error':('traceback','error','exception')
           }
           for name,needles in tags.items():print('LOG_CLASS',name,any(term in text for term in needles))
+          items=obj.get('app_logs',[]) if isinstance(obj,dict) else []
+          print('LOG_ENTRY_COUNT',len(items) if isinstance(items,list) else 'not-list')
+          if isinstance(items,list):
+              for i in [0,1,-2,-1]:
+                  if len(items)<2 and abs(i)>1:continue
+                  entry=items[i]
+                  t=str(entry.get('created_at',entry.get('timestamp',''))) if isinstance(entry,dict) else ''
+                  value=json.dumps(entry,ensure_ascii=False).lower()
+                  print('ENTRY_POSITION',i,'TIME',t[:32] if re.fullmatch(r'[0-9TZ:\\+\\.\\-]*',t[:32]) else '(hidden)',
+                        'AUTH_ERROR',('password authentication failed' in value or '28p01' in value),
+                        'SSL_ERROR',('ssl error' in value or 'ssl handshake' in value),
+                        'WORKER_FAILED','worker failed to boot' in value)
+              matches=[i for i,x in enumerate(items) if 'password authentication failed' in json.dumps(x,ensure_ascii=False).lower()]
+              print('AUTH_ERROR_ENTRIES',len(matches),'FIRST_INDEX',matches[0] if matches else 'none','LAST_INDEX',matches[-1] if matches else 'none')
           print('LOG_CONTENT_NEVER_PRINTED')
           PY
