@@ -41,7 +41,7 @@ def utc_now() -> str:
 
 
 def clean(value: object) -> str:
-    return re.sub(r"\\s+", " ", str(value or "")).strip()
+    return re.sub(r"\s+", " ", str(value or "")).strip()
 
 
 def load_manifest() -> list[dict]:
