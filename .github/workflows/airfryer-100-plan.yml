@@ -5,6 +5,9 @@ on:
       - 'data/airfryer-100-editorial-plan.json'
       - 'scripts/test-airfryer-100-plan.cjs'
       - 'data/airfryer-recipes-batch-01.json'
+      - 'data/airfryer-recipes-batch-02.json'
+      - 'scripts/test-airfryer-batch-02.cjs'
+      - 'project-operations/airfryer/BATCH_02_POULTRY_QA.md'
       - 'photo-pipeline/**'
       - 'project-operations/airfryer/BATCH_01_YANDEX_PHOTO_PIPELINE.md'
       - '.github/workflows/airfryer-100-plan.yml'
@@ -22,6 +25,8 @@ jobs:
           persist-credentials: false
       - name: Validate exact 100-recipe scope, unique IDs and category balance
         run: node scripts/test-airfryer-100-plan.cjs
+      - name: Validate second ten-recipe poultry batch
+        run: node scripts/test-airfryer-batch-02.cjs
       - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065
         with:
           python-version: '3.11'
