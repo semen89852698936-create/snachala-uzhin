@@ -59,3 +59,11 @@
 14. [Instant Pot UK - Air Fryer Honey Dijon Pork Schnitzel](https://instantpot.co.uk/air-fryer-honey-dijon-pork-schnitzel/)
 15. [Samsung Food - Air Fryer Pork Meatballs](https://app.samsungfood.com/recipes/10701952c7715ab7bf0a746013c4cf90442)
 16. [FoodSafety.gov - Safe Minimum Internal Temperatures](https://www.foodsafety.gov/food-safety-charts/safe-minimum-internal-temperatures)
+
+
+## Фото-приёмка 08.11.2026
+
+- Файлы: 10/10 WebP технически проверены, размер 1200 × 900, SHA-256 сверены с записями фотобазы.
+- Визуально принято: 8/10. На точечную перегенерацию: 2/10.
+- Очередь замены: af-beef-meatballs-oregano-2; af-beef-burgers-2.
+- Все фотографии остаются неопубликованными. Физические испытания на точной модели аэрогриля владельца не заявлены.
