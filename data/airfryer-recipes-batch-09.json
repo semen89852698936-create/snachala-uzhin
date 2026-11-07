@@ -14,7 +14,7 @@
       "title": "Круассаны с ветчиной и сыром",
       "category": "Завтраки и выпечка",
       "servings": 2,
-      "photo_status": "not_started",
+      "photo_status": "generated_verified_unpublished",
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
       "tefal_reference": {
@@ -79,7 +79,9 @@
         "adaptation": "Выбран компромисс 170 °C, 8–10 минут для двух крупных готовых круассанов."
       },
       "safety": "Ветчина должна быть свежей и правильно охлаждённой; осторожно с очень горячим расплавленным сыром.",
-      "photo_brief": "Два золотистых круассана, один разрезан и показывает тонкий слой ветчины и расплавленный сыр грюйер; хрустящие слои хорошо видны, немного петрушки, без салата и соуса."
+      "photo_brief": "Два золотистых круассана, один разрезан и показывает тонкий слой ветчины и расплавленный сыр грюйер; хрустящие слои хорошо видны, немного петрушки, без салата и соуса.",
+      "photo_record_path": "photo-library/airfryer/records/af-croissant-ham-cheese-2.json",
+      "visual_review_status": "visually_accepted"
     },
     {
       "number": 82,
@@ -87,7 +89,7 @@
       "title": "Творожные маффины с ягодами",
       "category": "Завтраки и выпечка",
       "servings": 2,
-      "photo_status": "not_started",
+      "photo_status": "generated_verified_unpublished",
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
       "tefal_reference": {
@@ -169,7 +171,9 @@
         "adaptation": "Творожная основа объединена с прямым air fryer методом маффинов; 4 формы на две порции, готовность проверяется шпажкой."
       },
       "safety": "Творог хранить охлаждённым; использовать только формы, разрешённые для аэрогриля. Не ставить пустые лёгкие формочки в разогретую корзину.",
-      "photo_brief": "Четыре небольших творожных маффина с золотистыми верхушками, в разломе нежная светлая мякоть и сочные голубые и красные ягоды; без глазури и пудры."
+      "photo_brief": "Четыре небольших творожных маффина с золотистыми верхушками, в разломе нежная светлая мякоть и сочные голубые и красные ягоды; без глазури и пудры.",
+      "photo_record_path": "photo-library/airfryer/records/af-cottage-cheese-berry-muffins-2.json",
+      "visual_review_status": "visually_accepted"
     },
     {
       "number": 83,
@@ -177,7 +181,7 @@
       "title": "Хрустящий нут с паприкой",
       "category": "Закуски",
       "servings": 2,
-      "photo_status": "not_started",
+      "photo_status": "generated_verified_unpublished",
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
       "tefal_reference": {
@@ -246,7 +250,10 @@
         "adaptation": "Одна банка на две порции, добавлен кумин; сохранены обсушивание и короткий режим."
       },
       "safety": "Нут тщательно обсушить; хранить только полностью остывшим. Не использовать жидкость из банки.",
-      "photo_brief": "Небольшая миска сухого хрустящего нута, каждое зерно золотисто-коричневое с заметной копчёной паприкой и кумином; без зелени и соуса."
+      "photo_brief": "Одна керамическая миска с хрустящим запечённым нутом, отдельные золотистые сухие шарики с паприкой и лёгкими пряностями, один цельный кадр и одна композиция. Без диптиха, разделённых панелей, повторов, коллажей и второго изображения.",
+      "photo_record_path": "photo-library/airfryer/records/af-chickpeas-paprika-2.json",
+      "visual_review_status": "needs_regeneration",
+      "visual_review_note": "Изображение выполнено как разделённый диптих с двумя почти одинаковыми половинами. Требуется один цельный кадр."
     },
     {
       "number": 84,
@@ -254,7 +261,7 @@
       "title": "Хрустящие чипсы из питы с розмарином",
       "category": "Закуски",
       "servings": 2,
-      "photo_status": "not_started",
+      "photo_status": "generated_verified_unpublished",
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
       "tefal_reference": {
@@ -318,7 +325,9 @@
         "adaptation": "Добавлены розмарин и чеснок; диапазон 7–8 минут учитывает толщину питы."
       },
       "safety": "Не оставлять свободную бумагу в корзине; охлаждать чипсы полностью перед герметичным хранением.",
-      "photo_brief": "Стопка тонких треугольных пита-чипсов с сухой золотистой корочкой, видны иголочки розмарина и точки чесночной приправы; без дипа."
+      "photo_brief": "Стопка тонких треугольных пита-чипсов с сухой золотистой корочкой, видны иголочки розмарина и точки чесночной приправы; без дипа.",
+      "photo_record_path": "photo-library/airfryer/records/af-pita-chips-rosemary-2.json",
+      "visual_review_status": "visually_accepted"
     },
     {
       "number": 85,
@@ -326,7 +335,7 @@
       "title": "Кабачковые оладьи",
       "category": "Закуски",
       "servings": 2,
-      "photo_status": "not_started",
+      "photo_status": "generated_verified_unpublished",
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
       "tefal_reference": {
@@ -404,7 +413,9 @@
         "adaptation": "6 небольших оладий, 190 °C 10–12 минут, переворот на 6-й минуте."
       },
       "safety": "Сырую яичную массу держать охлаждённой; не пробовать тесто и вымыть инвентарь после контакта с яйцом.",
-      "photo_brief": "Шесть небольших кабачковых оладий с золотистыми хрустящими краями, зелёные точки петрушки и мелкие частицы пармезана; один разломлен, внутри мягкая светлая середина."
+      "photo_brief": "Шесть небольших кабачковых оладий с золотистыми хрустящими краями, зелёные точки петрушки и мелкие частицы пармезана; один разломлен, внутри мягкая светлая середина.",
+      "photo_record_path": "photo-library/airfryer/records/af-zucchini-fritters-2.json",
+      "visual_review_status": "visually_accepted"
     },
     {
       "number": 86,
@@ -412,7 +423,7 @@
       "title": "Палочки халуми с кунжутом",
       "category": "Закуски",
       "servings": 2,
-      "photo_status": "not_started",
+      "photo_status": "generated_verified_unpublished",
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
       "tefal_reference": {
@@ -480,7 +491,9 @@
         "adaptation": "На две порции 200 г; кунжутно-соевая заправка наносится после аэрогриля, чтобы мёд не сгорел."
       },
       "safety": "Работать с горячим сыром осторожно; подавать сразу и не оставлять в горячей корзине.",
-      "photo_brief": "Палочки халуми с золотистыми пятнами, тонкая кунжутно-соевая глазурь, белый кунжут и зелёный лук; без соуса и гарнира."
+      "photo_brief": "Палочки халуми с золотистыми пятнами, тонкая кунжутно-соевая глазурь, белый кунжут и зелёный лук; без соуса и гарнира.",
+      "photo_record_path": "photo-library/airfryer/records/af-halloumi-fries-sesame-2.json",
+      "visual_review_status": "visually_accepted"
     },
     {
       "number": 87,
@@ -488,7 +501,7 @@
       "title": "Хрустящий тофу с кунжутом",
       "category": "Закуски",
       "servings": 2,
-      "photo_status": "not_started",
+      "photo_status": "generated_verified_unpublished",
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
       "tefal_reference": {
@@ -562,7 +575,9 @@
         "adaptation": "На две порции 300 г; крахмал наносится после маринада для сухой корочки."
       },
       "safety": "Использовать чистую доску и инвентарь; снять тофу с корзины сразу после готовности.",
-      "photo_brief": "Кубики тофу одинакового размера с хрустящими золотистыми гранями, кунжутная посыпка и зелёный лук; без риса и соуса."
+      "photo_brief": "Кубики тофу одинакового размера с хрустящими золотистыми гранями, кунжутная посыпка и зелёный лук; без риса и соуса.",
+      "photo_record_path": "photo-library/airfryer/records/af-crispy-tofu-sesame-2.json",
+      "visual_review_status": "visually_accepted"
     },
     {
       "number": 88,
@@ -570,7 +585,7 @@
       "title": "Полента фри с пармезаном",
       "category": "Закуски",
       "servings": 2,
-      "photo_status": "not_started",
+      "photo_status": "generated_verified_unpublished",
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
       "tefal_reference": {
@@ -636,7 +651,10 @@
         "adaptation": "350 г на две порции, 200 °C 15–18 минут; обязательное охлаждение сохраняет форму."
       },
       "safety": "Поленту охлаждать в холодильнике; не оставлять готовую кашу надолго при комнатной температуре. Переворачивать широкой лопаткой.",
-      "photo_brief": "Ровные палочки поленты с золотистой корочкой, частицы пармезана и чесночной приправы, мягкая жёлтая середина; несколько палочек разломлены, петрушка сверху."
+      "photo_brief": "Золотистые прямоугольные палочки поленты фри из кукурузной крупы, плотная зернистая кукурузная текстура, хрустящие подрумяненные грани, сверху тонкая стружка пармезана. Не макароны, не ригатони, не полые трубки и не паста.",
+      "photo_record_path": "photo-library/airfryer/records/af-polenta-fries-parmesan-2.json",
+      "visual_review_status": "needs_regeneration",
+      "visual_review_note": "Вместо палочек поленты изображены полые трубчатые макароны, похожие на ригатони. Это другой продукт."
     },
     {
       "number": 89,
@@ -644,7 +662,7 @@
       "title": "Финики с грецким орехом и козьим сыром",
       "category": "Закуски",
       "servings": 2,
-      "photo_status": "not_started",
+      "photo_status": "generated_verified_unpublished",
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
       "tefal_reference": {
@@ -709,7 +727,9 @@
         "adaptation": "8 фиников на две порции; мёд добавляется после приготовления."
       },
       "safety": "Начинка очень горячая; дать постоять 5 минут. Учитывать аллергены молока и орехов.",
-      "photo_brief": "Восемь крупных фиников Medjool с мягким белым козьим сыром и половинкой грецкого ореха, тимьян и тонкая нить мёда; без бекона."
+      "photo_brief": "Восемь крупных фиников Medjool с мягким белым козьим сыром и половинкой грецкого ореха, тимьян и тонкая нить мёда; без бекона.",
+      "photo_record_path": "photo-library/airfryer/records/af-dates-walnut-goat-cheese-2.json",
+      "visual_review_status": "visually_accepted"
     },
     {
       "number": 90,
@@ -717,7 +737,7 @@
       "title": "Хрустящие роллы из рисовой бумаги с овощами",
       "category": "Закуски",
       "servings": 2,
-      "photo_status": "not_started",
+      "photo_status": "generated_verified_unpublished",
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
       "tefal_reference": {
@@ -807,7 +827,9 @@
         "adaptation": "8 небольших роллов на две порции, выбран диапазон 200 °C 12–15 минут; начинка должна быть сухой и охлаждённой."
       },
       "safety": "Начинку полностью приготовить до заворачивания, затем остудить не менее 10 минут. Не переполнять роллы; держать начинку сухой.",
-      "photo_brief": "Восемь золотистых овощных роллов в хрустящей рисовой оболочке, один разрезан и показывает капусту, морковь, красный перец, грибы и вермишель; без соуса и мяса."
+      "photo_brief": "Восемь золотистых овощных роллов в хрустящей рисовой оболочке, один разрезан и показывает капусту, морковь, красный перец, грибы и вермишель; без соуса и мяса.",
+      "photo_record_path": "photo-library/airfryer/records/af-rice-paper-rolls-vegetables-2.json",
+      "visual_review_status": "visually_accepted"
     }
   ]
 }
