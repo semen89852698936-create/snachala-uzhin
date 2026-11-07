@@ -190,7 +190,8 @@
         "source_url": "https://recipesairfryer.net/crispy-medallions-in-air-fryer/",
         "secondary_source_url": "https://www.muscleandfitness.com/nutrition/healthy-eating/low-fat-cajun-turkey-medallions-recipe/",
         "source_settings": "Airfryer source: медальоны из индейки в кукурузных хлопьях, 365 °F около 185 °C, 15 минут, переворот в середине, один слой. Cranberry-orange sauce is a separate stovetop preparation in the second source.",
-        "adaptation": "Порция уменьшена до двух; клюквенный соус приготовлен отдельно, а не переносится из духовочного/сковородного способа приготовления индейки."
+        "adaptation": "Порция уменьшена до двух; клюквенный соус приготовлен отдельно, а не переносится из духовочного/сковородного способа приготовления индейки.",
+        "secondary_source_note": "Используется только как источник вкусового сочетания индейки с клюквенно-апельсиновым соусом; способ приготовления медальонов в аэрогриле взят из Recipes Airfryer."
       },
       "tefal_reference": {
         "status": "no_direct_equivalent",
@@ -275,7 +276,9 @@
         "source_title": "Love Food Not Cooking - Crispy Air Fryer Duck Breast",
         "source_url": "https://lovefoodnotcooking.com/recipes/air-fryer-duck-breast/",
         "source_settings": "Две грудки: 195 °C 5 минут, затем 160 °C 10–12 минут; кожу надрезают, лишний жир контролируют, температуру проверяют термометром. Источник отдельно указывает 74 °C как рекомендацию USDA для птицы.",
-        "adaptation": "Добавлен отдельный апельсиновый соус. Безопасная степень прожарки зафиксирована на 74 °C; время остаётся стартовым, поскольку грудки различаются по толщине и жирности."
+        "adaptation": "Добавлен отдельный апельсиновый соус. Безопасная степень прожарки зафиксирована на 74 °C; время остаётся стартовым, поскольку грудки различаются по толщине и жирности.",
+        "secondary_source_url": "https://alwaysusebutter.com/duck-a-lorange/",
+        "secondary_source_note": "Источник подтверждает сочетание утки с апельсиновым соусом; саму утку готовим по отдельному air-fryer источнику Love Food Not Cooking."
       },
       "tefal_reference": {
         "status": "no_direct_equivalent",
@@ -725,7 +728,8 @@
         "source_url": "https://www.delish.com/cooking/recipe-ideas/a39666473/air-fryer-turkey-breakfast-sausage-recipe/",
         "secondary_source_url": "https://therealfooddietitians.com/turkey-apple-sausage-patties/",
         "source_settings": "Delish: тонкие котлетки из индейки в аэрогриле при 400 °F около 204 °C, 5–8 минут, переворот в середине. Real Food Dietitians: фарш индейки, мелко нарезанное яблоко и шалфей в котлетках.",
-        "adaptation": "Соединены вкусовая формула яблочных котлеток и воздушная технология Delish; котлетки сделаны чуть толще, диапазон 8–10 минут с обязательной проверкой 74 °C."
+        "adaptation": "Соединены вкусовая формула яблочных котлеток и воздушная технология Delish; котлетки сделаны чуть толще, диапазон 8–10 минут с обязательной проверкой 74 °C.",
+        "secondary_source_note": "Источник подтверждает состав фарша с яблоком и шалфеем; способ приготовления в аэрогриле и временной диапазон сверены с Delish."
       },
       "tefal_reference": {
         "status": "no_direct_equivalent",
