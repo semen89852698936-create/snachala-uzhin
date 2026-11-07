@@ -25,7 +25,9 @@ prompts = [module.make_prompt(recipe) for recipe in recipes]
 assert all(0 < len(prompt) <= module.MAX_PROMPT for prompt in prompts)
 assert all('Точное блюдо:' in prompt and 'Без людей' in prompt for prompt in prompts)
 assert len({recipe["id"] for recipe in recipes}) == 10
-assert all(recipe["photo_status"] == "not_started" for recipe in recipes)
+assert all(recipe["photo_status"] in {"not_started", "generated_verified_unpublished"} for recipe in recipes)
+assert all(recipe.get("visual_review_status") in {"visually_accepted", "needs_regeneration", "pending_recheck"} for recipe in recipes)
+assert all(recipe.get("visual_review_note") for recipe in recipes if recipe.get("visual_review_status") == "needs_regeneration")
 assert all(recipe["publication_status"] == "not_published" for recipe in recipes)
 
 result = subprocess.run(
@@ -45,5 +47,7 @@ print(json.dumps({
     "unique_ids": len({recipe["id"] for recipe in recipes}),
     "prompts_within_500_chars": True,
     "dry_run_prepared": summary["created_or_prepared"],
+    "already_saved": summary["already_saved"],
+    "visual_regeneration_queue": sum(recipe.get("visual_review_status") == "needs_regeneration" for recipe in recipes),
     "paid_requests": 0,
 }, ensure_ascii=False, indent=2))
