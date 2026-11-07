@@ -1,0 +1,28 @@
+name: Photo map status guard
+
+on:
+  pull_request:
+    paths:
+      - 'scripts/photo-map-status-guard.js'
+      - 'scripts/photo-map-status-guard.test.js'
+      - 'photo-library/ai-recipe-photo-map.json'
+      - 'photo-library/summary.json'
+      - '.github/workflows/photo-map-status-guard.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  photo-map-status:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - name: Run photo map regression tests
+        run: node --test scripts/photo-map-status-guard.test.js
+      - name: Audit actual 1001-record map without asserting approval
+        run: node scripts/photo-map-status-guard.js
