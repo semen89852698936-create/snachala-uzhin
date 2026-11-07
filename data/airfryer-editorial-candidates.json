@@ -1,6 +1,6 @@
 {
   "schema": "airfryer-editorial-draft-v1",
-  "status": "six editorial candidates only; NOT published; photos missing; cooking not experimentally verified by our team",
+  "status": "six editorial candidates; NOT published; photos missing; all six appliance_test.status=not_tested",
   "servings": 2,
   "quality_rules": [
     "Only recipes formulated for forced-air cooking, not oven-temperature conversion.",
@@ -49,7 +49,7 @@
       "temperature_c": 180,
       "cook_minutes": [
         8,
-        12
+        10
       ],
       "preheat": "По инструкции к модели; при холодном старте время может увеличиться",
       "basket": "Два филе в один слой с зазором; не накрывать воздуховоды",
@@ -57,12 +57,18 @@
       "steps": [
         "Обсушить оба филе, тонко смазать маслом и приправить солью, перцем и укропом.",
         "Уложить в корзину одним слоем, оставить промежуток для потока воздуха.",
-        "Готовить при 180 °C около 8-10 минут; для толстого филе проверять и добавлять время небольшими интервалами.",
-        "Проверить термометром середину наиболее толстого участка: безопасный ориентир для рыбы 63 °C. Подать с долькой лимона."
+        "Готовить при 180 °C. Начать проверку через 8 минут; если середина ещё не достигла безопасной температуры, продолжать короткими интервалами по 1–2 минуты, учитывая толщину филе.",
+        "Проверить термометром середину наиболее толстого участка: ориентир безопасной готовности рыбы 63 °C. При необходимости вернуть филе в аэрогриль ещё на 1–2 минуты и проверить повторно. Подать с долькой лимона."
       ],
       "photo_webp": null,
       "photo_status": "required",
-      "reference": "https://www.bbcgoodfood.com/recipes/air-fryer-salmon"
+      "reference": "https://www.bbcgoodfood.com/recipes/air-fryer-salmon",
+      "appliance_test": {
+        "status": "not_tested",
+        "model": null,
+        "date": null,
+        "notes": null
+      }
     },
     {
       "id": "af-chicken-paprika-2",
@@ -107,7 +113,13 @@
       ],
       "photo_webp": null,
       "photo_status": "required",
-      "reference": "https://tollbit.bbcgoodfood.com/premium/air-fryer-chicken-breasts-2"
+      "reference": "https://tollbit.bbcgoodfood.com/premium/air-fryer-chicken-breasts-2",
+      "appliance_test": {
+        "status": "not_tested",
+        "model": null,
+        "date": null,
+        "notes": null
+      }
     },
     {
       "id": "af-potato-wedges-2",
@@ -153,7 +165,13 @@
       ],
       "photo_webp": null,
       "photo_status": "required",
-      "reference": "https://www.bbcgoodfood.com/recipes/air-fryer-potato-wedges"
+      "reference": "https://www.bbcgoodfood.com/recipes/air-fryer-potato-wedges",
+      "appliance_test": {
+        "status": "not_tested",
+        "model": null,
+        "date": null,
+        "notes": null
+      }
     },
     {
       "id": "af-brussels-lemon-2",
@@ -194,7 +212,13 @@
       ],
       "photo_webp": null,
       "photo_status": "required",
-      "reference": "https://www.bbcgoodfood.com/recipes/air-fryer-brussels-sprouts"
+      "reference": "https://www.bbcgoodfood.com/recipes/air-fryer-brussels-sprouts",
+      "appliance_test": {
+        "status": "not_tested",
+        "model": null,
+        "date": null,
+        "notes": null
+      }
     },
     {
       "id": "af-mushrooms-thyme-toast-2",
@@ -247,7 +271,13 @@
       ],
       "photo_webp": null,
       "photo_status": "required",
-      "reference": "https://www.bbcgoodfood.com/recipes/air-fryer-mushrooms-on-toast"
+      "reference": "https://www.bbcgoodfood.com/recipes/air-fryer-mushrooms-on-toast",
+      "appliance_test": {
+        "status": "not_tested",
+        "model": null,
+        "date": null,
+        "notes": null
+      }
     },
     {
       "id": "af-carrots-maple-thyme-2",
@@ -296,7 +326,13 @@
       ],
       "photo_webp": null,
       "photo_status": "required",
-      "reference": "https://www.bbcgoodfood.com/recipes/maple-thyme-carrots"
+      "reference": "https://www.bbcgoodfood.com/recipes/maple-thyme-carrots",
+      "appliance_test": {
+        "status": "not_tested",
+        "model": null,
+        "date": null,
+        "notes": null
+      }
     }
   ]
 }
