@@ -36,6 +36,13 @@ assert.ok(potato,'potato wedges candidate must exist');
 assert.ok(potato.prep_minutes>=55,'potato prep must include 30+15 minutes soaking plus 10 minutes active prep');
 assert.match(potato.additional_prep||'',/30 минут/,'cold soak must remain explicit');
 assert.match(potato.additional_prep||'',/15 минут/,'hot soak must remain explicit');
+// Prevent misleading airfryer claims: the bread is toasted outside the appliance.
+const mushrooms=data.recipes.find(r=>r.id==='af-mushrooms-thyme-toast-2');
+assert.ok(mushrooms,'mushroom toast candidate must exist');
+assert.doesNotMatch(mushrooms.title,/тостах из аэрогриля/i,'title must not claim airfried bread');
+assert.match(mushrooms.basket,/хлеб поджарить отдельно/i,'bread preparation must remain separate');
+assert.match(mushrooms.steps.join(' '),/тостере или на сухой сковороде/i,'bread method must be explicit');
+assert.match(mushrooms.steps.join(' '),/не включать обжаривание хлеба в 12–15 минут/i,'cook time must apply only to mushrooms');
 // Test that failures really are detected, not merely printed.
 const r=data.recipes[1];
 assert.ok(audit({...r,temperature_c:300}).includes('temperature'));
