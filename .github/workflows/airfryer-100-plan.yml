@@ -1,0 +1,20 @@
+name: Air fryer 100-recipe editorial plan
+on:
+  pull_request:
+    paths:
+      - 'data/airfryer-100-editorial-plan.json'
+      - 'scripts/test-airfryer-100-plan.cjs'
+      - '.github/workflows/airfryer-100-plan.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  validate-plan:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          persist-credentials: false
+      - name: Validate exact 100-recipe scope, unique IDs and category balance
+        run: node scripts/test-airfryer-100-plan.cjs
