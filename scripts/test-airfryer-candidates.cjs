@@ -65,6 +65,12 @@ assert.ok(audit({...r,photo_status:'ready',photo_webp:null}).includes('photo mar
 assert.ok(audit({...r,steps:['Приготовить на глаз']}).length);
 assert.ok(/^assets\/[\w./-]+\.webp$/.test('assets/airfryer-salmon.webp'),'valid WebP path must pass release regex');
 assert.ok(!/^assets\/[\w./-]+\.webp$/.test('assets/airfryer-salmon.png'),'non-WebP must fail release regex');
+// Reject fabricated or unsafe publication metadata before a recipe reaches the release gate.
+assert.ok(audit({...r,reference:'http://example.com/recipe'}).includes('source HTTPS'),'HTTP references must fail');
+assert.ok(audit({...r,reference:'javascript:alert(1)'}).includes('source HTTPS'),'non-URL references must fail');
+assert.ok(audit({...r,photo_webp:'assets/../private.webp'}).includes('local photo path'),'photo traversal must fail');
+assert.ok(audit({...r,photo_webp:'https://example.com/food.webp'}).includes('local photo path'),'remote photos must fail');
+assert.ok(audit({...r,photo_status:'unknown'}).includes('photo_status'),'unknown photo readiness must fail');
 const missing=data.recipes.filter(r=>r.photo_status!=='ready'||!r.photo_webp);
 if(process.argv.includes('--release')){
   assert.doesNotMatch(data.status,/NOT published|NOT experimentally verified|editorial candidates/i,'draft cannot ship');
