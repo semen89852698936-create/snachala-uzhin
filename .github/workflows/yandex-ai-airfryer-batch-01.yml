@@ -32,6 +32,8 @@ jobs:
         with:
           python-version: '3.11'
       - run: python -m pip install 'Pillow>=10,<13'
+      - name: Compile photo pipeline scripts
+        run: python -m py_compile photo-pipeline/generate_airfryer_batch.py photo-pipeline/test_airfryer_batch.py photo-pipeline/verify_airfryer_batch.py
       - name: Validate recipe-specific prompts without paid API calls
         run: python photo-pipeline/test_airfryer_batch.py
       - name: Dry-run all ten prompts without paid API calls
