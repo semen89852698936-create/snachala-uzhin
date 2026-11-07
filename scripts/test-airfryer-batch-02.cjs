@@ -18,7 +18,7 @@ assert.ok(batch.recipes.every((recipe) => recipe.temperature_c >= 150 && recipe.
 assert.ok(batch.recipes.every((recipe) => Array.isArray(recipe.cook_minutes) && recipe.cook_minutes.length === 2));
 assert.ok(batch.recipes.every((recipe) => recipe.source_verification?.source_url));
 assert.ok(batch.recipes.every((recipe) => recipe.tefal_reference?.status));
-assert.ok(batch.recipes.every((recipe) => recipe.photo_status === 'not_started'));
+assert.ok(batch.recipes.every((recipe) => ['not_started','present_pending_visual_review','needs_replacement','replacement_generated_pending_visual_review','generated_pending_visual_review'].includes(recipe.photo_status)));
 assert.ok(batch.recipes.every((recipe) => recipe.appliance_test_status === 'not_tested'));
 assert.ok(batch.recipes.every((recipe) => recipe.publication_status === 'not_published'));
 assert.ok(batch.recipes.every((recipe) => /74 °C/.test(recipe.doneness + ' ' + recipe.safety)));

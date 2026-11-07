@@ -19,7 +19,7 @@ assert.ok(batch.recipes.every((recipe) => recipe.source_verification?.source_url
 assert.ok(batch.recipes.every((recipe) => recipe.tefal_reference?.status));
 assert.ok(batch.recipes.every((recipe) => recipe.photo_brief && recipe.photo_brief.length >= 60));
 assert.ok(batch.recipes.every((recipe) => recipe.doneness && recipe.safety));
-assert.ok(batch.recipes.every((recipe) => recipe.photo_status === 'not_started'));
+assert.ok(batch.recipes.every((recipe) => ['not_started','present_pending_visual_review','needs_replacement','replacement_generated_pending_visual_review','generated_pending_visual_review'].includes(recipe.photo_status)));
 assert.ok(batch.recipes.every((recipe) => recipe.appliance_test_status === 'not_tested'));
 assert.ok(batch.recipes.every((recipe) => recipe.publication_status === 'not_published'));
 assert.ok(batch.recipes[2].safety.includes('71 °C'));

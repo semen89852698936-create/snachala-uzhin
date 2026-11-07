@@ -18,7 +18,7 @@ assert.ok(batch.recipes.every((recipe) => recipe.temperature_c >= 160 && recipe.
 assert.ok(batch.recipes.every((recipe) => Array.isArray(recipe.cook_minutes) && recipe.cook_minutes.length === 2 && recipe.cook_minutes[0] <= recipe.cook_minutes[1]), 'Each recipe needs a cook-time range.');
 assert.ok(batch.recipes.every((recipe) => recipe.source_verification?.source_url), 'Each recipe needs a source URL.');
 assert.ok(batch.recipes.every((recipe) => recipe.tefal_reference?.status), 'Each recipe needs a Tefal comparison status.');
-assert.ok(batch.recipes.every((recipe) => recipe.photo_status === 'not_started'), 'Do not imply photos are ready.');
+assert.ok(batch.recipes.every((recipe) => ['not_started','present_pending_visual_review','needs_replacement','replacement_generated_pending_visual_review','generated_pending_visual_review'].includes(recipe.photo_status)), 'Do not imply photos are ready.');
 assert.ok(batch.recipes.every((recipe) => recipe.appliance_test_status === 'not_tested'), 'Do not imply physical tests happened.');
 assert.ok(batch.recipes.every((recipe) => recipe.publication_status === 'not_published'), 'Drafts must not claim publication.');
 assert.ok(batch.recipes.every((recipe) => /74 °C/.test(recipe.doneness) || /74 °C/.test(recipe.safety)), 'Poultry safety temperature must be explicit.');

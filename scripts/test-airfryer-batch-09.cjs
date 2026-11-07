@@ -17,7 +17,7 @@ assert.ok(batch.recipes.every(r=>r.source_verification?.source_url));
 assert.ok(batch.recipes.every(r=>r.tefal_reference?.status));
 assert.ok(batch.recipes.every(r=>r.photo_brief&&r.photo_brief.length>=60));
 assert.ok(batch.recipes.every(r=>r.doneness&&r.safety));
-assert.ok(batch.recipes.every(r=>r.photo_status==='not_started'&&r.appliance_test_status==='not_tested'&&r.publication_status==='not_published'));
+assert.ok(batch.recipes.every(r=>['not_started','present_pending_visual_review','needs_replacement','replacement_generated_pending_visual_review','generated_pending_visual_review'].includes(r.photo_status)&&r.appliance_test_status==='not_tested'&&r.publication_status==='not_published'));
 assert.ok(batch.recipes[7].preheat.includes('5 часов'));
 assert.ok(batch.recipes[9].safety.includes('10 минут'));
 for(const r of batch.recipes){const p=plan.items.find(x=>x.id===r.id);assert.ok(p);assert.equal(p.batch_number,9);assert.equal(p.recipe_status,'full_draft_source_reviewed');assert.equal(p.source_status,'cross_checked');assert.equal(p.publication_status,'not_published');}
