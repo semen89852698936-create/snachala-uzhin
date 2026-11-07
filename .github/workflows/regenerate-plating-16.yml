@@ -47,7 +47,7 @@ jobs:
           set -e
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add -- assets/recipes-ai
+          git add -- photo-library/regeneration-20261103/candidates
           if [ -d photo-library/regeneration-20261103 ]; then git add -- photo-library/regeneration-20261103; fi
           if ! git diff --cached --quiet; then
             git diff --cached --check
