@@ -254,7 +254,10 @@
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
       "photo_path": "assets/airfryer/af-beef-meatballs-oregano-2.webp",
-      "photo_editorial_status": "not_yet_reviewed"
+      "photo_editorial_status": "not_yet_reviewed",
+      "photo_review_tags": [
+        "minced_meat_doneness_review_required"
+      ]
     },
     {
       "number": 24,
@@ -337,7 +340,10 @@
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
       "photo_path": "assets/airfryer/af-beef-burgers-2.webp",
-      "photo_editorial_status": "not_yet_reviewed"
+      "photo_editorial_status": "not_yet_reviewed",
+      "photo_review_tags": [
+        "minced_meat_doneness_review_required"
+      ]
     },
     {
       "number": 25,
@@ -847,7 +853,10 @@
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
       "photo_path": "assets/airfryer/af-pork-meatballs-paprika-2.webp",
-      "photo_editorial_status": "not_yet_reviewed"
+      "photo_editorial_status": "not_yet_reviewed",
+      "photo_review_tags": [
+        "minced_meat_doneness_review_required"
+      ]
     }
   ],
   "photo_linkage_status": "100_of_100_files_matched_by_recipe_id",

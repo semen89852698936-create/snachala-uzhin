@@ -493,7 +493,10 @@
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
       "photo_path": "assets/airfryer/af-turkey-kofta-cumin-2.webp",
-      "photo_editorial_status": "not_yet_reviewed"
+      "photo_editorial_status": "not_yet_reviewed",
+      "photo_review_tags": [
+        "minced_meat_doneness_review_required"
+      ]
     },
     {
       "number": 16,
@@ -756,7 +759,10 @@
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
       "photo_path": "assets/airfryer/af-turkey-sausages-apple-2.webp",
-      "photo_editorial_status": "owner_flagged_not_approved"
+      "photo_editorial_status": "owner_flagged_not_approved",
+      "photo_review_tags": [
+        "minced_meat_doneness_review_required"
+      ]
     },
     {
       "number": 19,

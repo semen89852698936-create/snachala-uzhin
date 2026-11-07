@@ -63,7 +63,7 @@
       "recipe_status": "full_draft_source_reviewed",
       "source_status": "manufacturer_recipe_direct",
       "tefal_book_status": "direct_recipe_in_supplied_book",
-      "photo_status": "needs_replacement",
+      "photo_status": "replacement_generated_pending_visual_review",
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
       "source_urls": [
@@ -71,7 +71,7 @@
       ],
       "batch_number": 1,
       "photo_path": "assets/airfryer/af-chicken-thighs-yogurt-rosemary-2.webp",
-      "photo_editorial_status": "owner_flagged_not_approved"
+      "photo_editorial_status": "pending_owner_visual_review"
     },
     {
       "number": 4,
@@ -151,7 +151,10 @@
       ],
       "batch_number": 1,
       "photo_path": "assets/airfryer/af-turkey-meatballs-oregano-2.webp",
-      "photo_editorial_status": "not_yet_reviewed"
+      "photo_editorial_status": "not_yet_reviewed",
+      "photo_review_tags": [
+        "minced_meat_doneness_review_required"
+      ]
     },
     {
       "number": 8,
@@ -171,7 +174,10 @@
       ],
       "batch_number": 1,
       "photo_path": "assets/airfryer/af-chicken-meatballs-zucchini-2.webp",
-      "photo_editorial_status": "not_yet_reviewed"
+      "photo_editorial_status": "not_yet_reviewed",
+      "photo_review_tags": [
+        "minced_meat_doneness_review_required"
+      ]
     },
     {
       "number": 9,
@@ -313,7 +319,10 @@
       ],
       "batch_number": 2,
       "photo_path": "assets/airfryer/af-turkey-kofta-cumin-2.webp",
-      "photo_editorial_status": "not_yet_reviewed"
+      "photo_editorial_status": "not_yet_reviewed",
+      "photo_review_tags": [
+        "minced_meat_doneness_review_required"
+      ]
     },
     {
       "number": 16,
@@ -375,7 +384,10 @@
       ],
       "batch_number": 2,
       "photo_path": "assets/airfryer/af-turkey-sausages-apple-2.webp",
-      "photo_editorial_status": "owner_flagged_not_approved"
+      "photo_editorial_status": "owner_flagged_not_approved",
+      "photo_review_tags": [
+        "minced_meat_doneness_review_required"
+      ]
     },
     {
       "number": 19,
@@ -478,7 +490,10 @@
         "https://www.gramcups.com/air-fryer/air-fryer-italian-meatballs"
       ],
       "photo_path": "assets/airfryer/af-beef-meatballs-oregano-2.webp",
-      "photo_editorial_status": "not_yet_reviewed"
+      "photo_editorial_status": "not_yet_reviewed",
+      "photo_review_tags": [
+        "minced_meat_doneness_review_required"
+      ]
     },
     {
       "number": 24,
@@ -498,7 +513,10 @@
         "https://www.bbc.co.uk/food/recipes/air_fryer_classic_burger_33956"
       ],
       "photo_path": "assets/airfryer/af-beef-burgers-2.webp",
-      "photo_editorial_status": "not_yet_reviewed"
+      "photo_editorial_status": "not_yet_reviewed",
+      "photo_review_tags": [
+        "minced_meat_doneness_review_required"
+      ]
     },
     {
       "number": 25,
@@ -621,7 +639,10 @@
         "https://app.samsungfood.com/recipes/10701952c7715ab7bf0a746013c4cf90442"
       ],
       "photo_path": "assets/airfryer/af-pork-meatballs-paprika-2.webp",
-      "photo_editorial_status": "not_yet_reviewed"
+      "photo_editorial_status": "not_yet_reviewed",
+      "photo_review_tags": [
+        "minced_meat_doneness_review_required"
+      ]
     },
     {
       "number": 31,
@@ -655,7 +676,10 @@
       "publication_status": "not_published",
       "batch_number": 4,
       "photo_path": "assets/airfryer/af-lamb-kofta-cumin-2.webp",
-      "photo_editorial_status": "not_yet_reviewed"
+      "photo_editorial_status": "not_yet_reviewed",
+      "photo_review_tags": [
+        "minced_meat_doneness_review_required"
+      ]
     },
     {
       "number": 33,
@@ -672,7 +696,10 @@
       "publication_status": "not_published",
       "batch_number": 4,
       "photo_path": "assets/airfryer/af-lamb-meatballs-mint-2.webp",
-      "photo_editorial_status": "not_yet_reviewed"
+      "photo_editorial_status": "not_yet_reviewed",
+      "photo_review_tags": [
+        "minced_meat_doneness_review_required"
+      ]
     },
     {
       "number": 34,
@@ -689,7 +716,10 @@
       "publication_status": "not_published",
       "batch_number": 4,
       "photo_path": "assets/airfryer/af-mini-meatloaf-2.webp",
-      "photo_editorial_status": "not_yet_reviewed"
+      "photo_editorial_status": "not_yet_reviewed",
+      "photo_review_tags": [
+        "minced_meat_doneness_review_required"
+      ]
     },
     {
       "number": 35,

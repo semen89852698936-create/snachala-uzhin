@@ -567,7 +567,10 @@
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
       "photo_path": "assets/airfryer/af-turkey-meatballs-oregano-2.webp",
-      "photo_editorial_status": "minced_meat_doneness_review_required"
+      "photo_editorial_status": "minced_meat_doneness_review_required",
+      "photo_review_tags": [
+        "minced_meat_doneness_review_required"
+      ]
     },
     {
       "number": 8,
@@ -645,7 +648,10 @@
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
       "photo_path": "assets/airfryer/af-chicken-meatballs-zucchini-2.webp",
-      "photo_editorial_status": "minced_meat_doneness_review_required"
+      "photo_editorial_status": "minced_meat_doneness_review_required",
+      "photo_review_tags": [
+        "minced_meat_doneness_review_required"
+      ]
     },
     {
       "number": 9,
