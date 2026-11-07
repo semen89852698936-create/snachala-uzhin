@@ -28,9 +28,16 @@ for (const recipe of recipes) {
   assert.ok(recipe.source_verification.source_url, recipe.id + ' has no recipe source URL');
   assert.equal(recipe.appliance_test_status, 'not_tested', recipe.id + ' must not claim physical appliance testing');
   assert.equal(recipe.publication_status, 'not_published', recipe.id + ' must not claim publication before release');
+  assert.equal(recipe.photo_status, 'generated_file_verified', recipe.id + ' photo file must be technically verified');
+  assert.equal(recipe.photo_visual_review_status, 'not_reviewed', recipe.id + ' must not claim visual approval');
   const imagePath = path.join(root, 'assets', 'airfryer', recipe.id + '.webp');
   assert.ok(fs.existsSync(imagePath), recipe.id + ' is missing its local WebP image');
 }
+
+const porkChops = recipes.find((recipe) => recipe.id === 'af-pork-chops-apple-sage-2');
+assert.ok(porkChops, 'Pork chops and apples recipe must be present');
+assert.equal(porkChops.temperature_c, 200, 'Pork chops recipe must respect the Compact 200 C maximum');
+assert.deepEqual(porkChops.cook_minutes, [27, 33], 'Two sequential cooking stages must be reflected in the total cooking range');
 
 const imageFiles = fs.readdirSync(path.join(root, 'assets', 'airfryer')).filter((file) => file.endsWith('.webp'));
 assert.equal(imageFiles.length, 100, 'The air-fryer photo library must contain exactly 100 WebP files');
@@ -47,6 +54,8 @@ for (const relative of ['index.html', 'full-catalog/index.html']) {
   assert.ok(html.includes('!r.airfryer&&r.category===cat'), relative + ' may leak air-fryer recipes into the curated evening menus');
   assert.ok(html.includes('if(item.display)return item.display'), relative + ' does not preserve exact ingredient quantity text');
   assert.ok(html.includes('du-af-facts'), relative + ' is missing appliance-specific recipe facts');
+  assert.ok(html.includes('const timeMatch = detail.match('), relative + ' must derive cooking timers from individual recipe steps');
+  assert.ok(html.includes('const isCooking = /(готовить|запекать|жарить|обжаривать)/i.test(detail)'), relative + ' must detect Russian cooking verbs for step timers');
   assert.ok(html.indexOf('/assets/airfryer-recipes.js') < html.indexOf('const RECIPES = JSON.parse'), relative + ' loads recipe data after the main app');
   const appStart = html.indexOf("<script>'use strict';");
   const appEnd = html.indexOf('</script>', appStart);
