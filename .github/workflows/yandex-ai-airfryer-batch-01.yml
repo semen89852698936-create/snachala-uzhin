@@ -12,7 +12,7 @@ on:
       - 'photo-pipeline/**'
       - '.github/workflows/yandex-ai-airfryer-batch-01.yml'
   schedule:
-    - cron: '*/5 * * * *' # temporary cadence for the three owner-approved replacements
+    - cron: '17 * * * *'
   workflow_dispatch:
     inputs:
       paid_generation:
