@@ -11,7 +11,7 @@ function audit(map, legacy) {
     assert(Number.isInteger(p.n) && p.n >= 1 && p.n <= map.total, 'invalid index');
     assert(!ids.has(p.n), 'duplicate index: ' + p.n); ids.add(p.n);
     assert(typeof p.recipe_id === 'string' && p.recipe_id, 'missing recipe id');
-    assert(typeof p.path === 'string' && /^\/assets\/recipes-ai\/[^/]+\.webp$/);
+    assert(typeof p.path === 'string' && /^\/assets\/recipes-ai\/[^/]+\.webp$/.test(p.path), 'invalid path');
     assert(!paths.has(p.path), 'duplicate path'); paths.add(p.path);
     assert(Number.isInteger(p.bytes) && p.bytes > 0, 'invalid byte size');
     assert(typeof p.sha === 'string' && /^[a-f0-9]{40}$/.test(p.sha), 'invalid Git blob SHA');
