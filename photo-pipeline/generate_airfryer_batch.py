@@ -53,8 +53,10 @@ def load_manifest(manifest_path: Path = MANIFEST) -> list[dict]:
     if len(set(ids)) != 10 or any(not x for x in ids):
         raise RuntimeError("Recipe IDs must be present and unique")
     for recipe in recipes:
-        if recipe.get("photo_status") != "not_started":
+        if recipe.get("photo_status") not in {"not_started", "generated_verified_unpublished"}:
             raise RuntimeError(f"Unexpected photo status for {recipe['id']}")
+        if recipe.get("visual_review_status") not in {None, "visually_accepted", "needs_regeneration", "pending_recheck"}:
+            raise RuntimeError(f"Unexpected visual review status for {recipe['id']}")
         if recipe.get("publication_status") != "not_published":
             raise RuntimeError(f"Refusing to process published recipe {recipe['id']}")
         if not recipe.get("photo_brief"):
@@ -66,14 +68,14 @@ def make_prompt(recipe: dict) -> str:
     title = clean(recipe["title"])
     brief = clean(recipe["photo_brief"])
     ingredients = []
-    for item in recipe.get("ingredients", [])[:8]:
+    for item in recipe.get("ingredients", [])[:2]:
         if isinstance(item, (list, tuple)) and len(item) >= 1:
             ingredients.append(clean(item[0]))
     ingredient_text = ", ".join(ingredients)
-    prefix = "Премиальная фотореалистичная фуд-фотография готового блюда. "
-    title_part = f"Точное блюдо: {title}. "
-    ingredient_part = f"Ингредиенты: {ingredient_text}. " if ingredient_text else ""
-    suffix = "Подача на двоих, натуральная текстура, мягкий тёплый свет. Без людей, рук, букв, логотипов и коллажей."
+    prefix = "Фотореалистичная ресторанная фотография готового блюда. "
+    title_part = f"Блюдо: {title}. "
+    ingredient_part = f"Главное: {ingredient_text}. " if ingredient_text else ""
+    suffix = "Один кадр, одна композиция, один ракурс. Single full-frame photograph. No split-screen, diptych or collage. Без людей, рук, текста и логотипов."
     fixed = prefix + title_part + ingredient_part + "Детали: ." + suffix
     brief_limit = max(0, MAX_PROMPT - len(fixed) - 2)
     brief = brief[:brief_limit].rstrip(" ,.;")
@@ -151,6 +153,56 @@ def verify_existing(image_path: Path, record_path: Path) -> None:
         raise RuntimeError(f"Existing WebP SHA-256 mismatch: {image_path.name}")
 
 
+def archive_visual_rejection(recipe: dict, image_path: Path, record_path: Path) -> None:
+    if image_path.exists() != record_path.exists():
+        raise RuntimeError(f"Partial rejected image/record pair needs manual recovery: {recipe['id']}")
+    if not image_path.exists():
+        return
+    record = json.loads(record_path.read_text(encoding="utf-8"))
+    digest = record.get("sha256") or hashlib.sha256(image_path.read_bytes()).hexdigest()
+    archive_root = LIBRARY / "rejected-visual"
+    archive_root.mkdir(parents=True, exist_ok=True)
+    stem = f"{recipe['id']}-{digest[:12]}"
+    atomic_write(archive_root / f"{stem}.webp", image_path.read_bytes())
+    archived_record = dict(record)
+    archived_record.update({
+        "visual_review_status": "needs_regeneration",
+        "visual_rejection_note": recipe.get("visual_review_note", ""),
+        "archived_at": utc_now(),
+        "archived_image_path": str((archive_root / f"{stem}.webp").relative_to(ROOT)),
+    })
+    atomic_write(archive_root / f"{stem}.json", json.dumps(archived_record, ensure_ascii=False, indent=2).encode("utf-8"))
+    image_path.unlink()
+    record_path.unlink()
+
+
+def mark_replacement_pending(manifest_path: Path, recipe_id: str, digest: str, record_path: Path) -> None:
+    data = json.loads(manifest_path.read_text(encoding="utf-8"))
+    for recipe in data.get("recipes", []):
+        if recipe.get("id") == recipe_id:
+            recipe["photo_status"] = "generated_verified_unpublished"
+            recipe["visual_review_status"] = "pending_recheck"
+            recipe["photo_record_path"] = str(record_path.relative_to(ROOT))
+            recipe["photo_sha256"] = digest
+            break
+    atomic_write(manifest_path, (json.dumps(data, ensure_ascii=False, indent=2) + "\n").encode("utf-8"))
+
+    review_path = LIBRARY / "visual-review.json"
+    if not review_path.exists():
+        return
+    review = json.loads(review_path.read_text(encoding="utf-8"))
+    for item in review.get("items", []):
+        if item.get("id") == recipe_id:
+            item["status"] = "pending_recheck"
+            item["replacement_generated_at"] = utc_now()
+            item["replacement_sha256"] = digest
+            break
+    review["visually_accepted"] = sum(x.get("status") == "visually_accepted" for x in review.get("items", []))
+    review["needs_regeneration"] = sum(x.get("status") == "needs_regeneration" for x in review.get("items", []))
+    review["pending_recheck"] = sum(x.get("status") == "pending_recheck" for x in review.get("items", []))
+    atomic_write(review_path, (json.dumps(review, ensure_ascii=False, indent=2) + "\n").encode("utf-8"))
+
+
 def main(argv: list[str] | None = None) -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--manifest", type=Path, default=MANIFEST)
@@ -179,15 +231,29 @@ def main(argv: list[str] | None = None) -> int:
         rejected_path = LIBRARY / "rejected" / f"{recipe_id}.json"
         raw_path = LIBRARY / "raw-checkpoint" / f"{recipe_id}.png"
 
-        if image_path.exists() or record_path.exists():
+        needs_regeneration = recipe.get("visual_review_status") == "needs_regeneration"
+        prompt_text = make_prompt(recipe)
+        if needs_regeneration:
+            if not args.execute:
+                print(json.dumps({
+                    "id": recipe_id, "title": recipe["title"],
+                    "prompt": prompt_text, "would_regenerate": True,
+                }, ensure_ascii=False))
+                made += 1
+                if made >= args.limit:
+                    break
+                continue
+            archive_visual_rejection(recipe, image_path, record_path)
+        elif image_path.exists() or record_path.exists():
             verify_existing(image_path, record_path)
             skipped += 1
             continue
+        elif recipe.get("photo_status") == "generated_verified_unpublished":
+            raise RuntimeError(f"Verified photo is missing for {recipe_id}; refusing an automatic paid duplicate.")
         if rejected_path.exists():
             refused += 1
             continue
 
-        prompt_text = make_prompt(recipe)
         if not args.execute:
             print(json.dumps({
                 "id": recipe_id, "title": recipe["title"],
@@ -257,6 +323,7 @@ def main(argv: list[str] | None = None) -> int:
         atomic_write(record_path, json.dumps(record, ensure_ascii=False, indent=2).encode("utf-8"))
         pending_path.unlink(missing_ok=True)
         raw_path.unlink(missing_ok=True)
+        mark_replacement_pending(args.manifest, recipe_id, digest, record_path)
         made += 1
         print(f"GENERATED {recipe_id} sha256={digest} bytes={len(webp)}", flush=True)
         if made >= args.limit:

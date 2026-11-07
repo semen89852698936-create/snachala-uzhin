@@ -78,9 +78,12 @@
       },
       "safety": "Баранина цельным куском - минимум 63 °C внутри и не менее 3 минут отдыха. Термометр вводить в мясо, не касаясь кости.",
       "photo_brief": "Шесть небольших бараньих котлет с румяной корочкой, заметными веточками розмарина и тонкой лимонной цедрой; две порции на тёплой керамической тарелке, без гарнира и соусов.",
-      "photo_status": "not_started",
+      "photo_status": "generated_verified_unpublished",
       "appliance_test_status": "not_tested",
-      "publication_status": "not_published"
+      "publication_status": "not_published",
+      "photo_record_path": "photo-library/airfryer/records/af-lamb-chops-rosemary-2.json",
+      "visual_review_status": "visually_accepted",
+      "photo_sha256": "43012a1f4ab5062c86728f5f9b7a428f9802f5516826086e6941639b50214324"
     },
     {
       "number": 32,
@@ -172,9 +175,12 @@
       },
       "safety": "Фарш из баранины - минимум 71 °C внутри. Не пробовать сырой фарш; после контакта с ним вымыть руки и инвентарь.",
       "photo_brief": "Восемь румяных продолговатых кёфт из баранины с видимыми зелёными вкраплениями мяты и петрушки, рядом дольки лимона; без шпажек, лепёшек и гарнира.",
-      "photo_status": "not_started",
+      "photo_status": "generated_verified_unpublished",
       "appliance_test_status": "not_tested",
-      "publication_status": "not_published"
+      "publication_status": "not_published",
+      "photo_record_path": "photo-library/airfryer/records/af-lamb-kofta-cumin-2.json",
+      "visual_review_status": "visually_accepted",
+      "photo_sha256": "5d8085bc1e0d6dbdf48a15da548ce3575a3a64799b5c48982dca864805afa294"
     },
     {
       "number": 33,
@@ -266,9 +272,12 @@
       },
       "safety": "Фарш из баранины - минимум 71 °C внутри. Йогуртовый соус готовить отдельно чистым инвентарём; не использовать посуду от сырого фарша.",
       "photo_brief": "Небольшие золотистые фрикадельки из баранины с заметными зелёными точками мяты, рядом отдельная маленькая чашка белого йогуртового соуса с мятой и лимоном; без гарнира.",
-      "photo_status": "not_started",
+      "photo_status": "generated_verified_unpublished",
       "appliance_test_status": "not_tested",
-      "publication_status": "not_published"
+      "publication_status": "not_published",
+      "photo_record_path": "photo-library/airfryer/records/af-lamb-meatballs-mint-2.json",
+      "visual_review_status": "visually_accepted",
+      "photo_sha256": "14e153b5708daf9f76f83a91831bff9431fef099d806d87ab083c54d0fb9ac6a"
     },
     {
       "number": 34,
@@ -367,9 +376,12 @@
       },
       "safety": "Говяжий фарш - минимум 71 °C в центре каждого рулета. Не пробовать сырую смесь; глазурь наносить чистой кистью.",
       "photo_brief": "Два небольших мясных рулета с блестящей тонкой томатно-медовой глазурью, один разрезан пополам и показывает сочную полностью приготовленную середину; без пюре и овощного гарнира.",
-      "photo_status": "not_started",
+      "photo_status": "generated_verified_unpublished",
       "appliance_test_status": "not_tested",
-      "publication_status": "not_published"
+      "publication_status": "not_published",
+      "photo_record_path": "photo-library/airfryer/records/af-mini-meatloaf-2.json",
+      "visual_review_status": "visually_accepted",
+      "photo_sha256": "ba0c3dd14a4db017b1f88436101ce199f51ad2870fd8ba2529d9851803819aee"
     },
     {
       "number": 35,
@@ -453,9 +465,12 @@
       },
       "safety": "Свинина цельным куском - минимум 63 °C внутри и отдых не менее 3 минут. Маринад, соприкасавшийся с сырым мясом, не использовать как готовый соус.",
       "photo_brief": "Небольшая порция кубиков свиной грудинки с румяными хрустящими краями и тонкой блестящей азиатской глазурью, посыпанных кунжутом и зелёным луком; без риса и дополнительных гарниров.",
-      "photo_status": "not_started",
+      "photo_status": "generated_verified_unpublished",
       "appliance_test_status": "not_tested",
-      "publication_status": "not_published"
+      "publication_status": "not_published",
+      "photo_record_path": "photo-library/airfryer/records/af-pork-belly-bites-2.json",
+      "visual_review_status": "visually_accepted",
+      "photo_sha256": "1540b9e8b0b1ba52b83c9d7c83ce5f842ac77cba5274cb4843068716712f2192"
     },
     {
       "number": 36,
@@ -535,9 +550,12 @@
       },
       "safety": "Сырая свиная колбаса - минимум 71 °C внутри. Не прокалывать оболочку до приготовления; не использовать время как единственный критерий.",
       "photo_brief": "Две целые румяные свиные колбаски среди полосок красного сладкого перца и долек красного лука с лёгкими подпалинами; без булочек, соусов и гарнира.",
-      "photo_status": "not_started",
+      "photo_status": "generated_verified_unpublished",
       "appliance_test_status": "not_tested",
-      "publication_status": "not_published"
+      "publication_status": "not_published",
+      "photo_record_path": "photo-library/airfryer/records/af-sausages-peppers-onions-2.json",
+      "visual_review_status": "visually_accepted",
+      "photo_sha256": "afeb3322cdbe0f6a4de66d1a9c28d1a56e1eabc24e684f71bde7c3304fc1b457"
     },
     {
       "number": 37,
@@ -613,9 +631,12 @@
       },
       "safety": "Лосось - минимум 63 °C в самой толстой части. Проверять термометром, не ориентироваться только на цвет или время.",
       "photo_brief": "Два аккуратных филе лосося с золотистыми краями, тонкой лимонной цедрой и свежим укропом; рядом половина лимона, без овощного гарнира и соуса.",
-      "photo_status": "not_started",
+      "photo_status": "generated_verified_unpublished",
       "appliance_test_status": "not_tested",
-      "publication_status": "not_published"
+      "publication_status": "not_published",
+      "photo_record_path": "photo-library/airfryer/records/af-salmon-lemon-herbs-2.json",
+      "visual_review_status": "visually_accepted",
+      "photo_sha256": "3439d32cfaef48342d088e2cf477082ed1b3899f8cf13a946576af1f3f4711ab"
     },
     {
       "number": 38,
@@ -695,9 +716,12 @@
       },
       "safety": "Лосось - минимум 63 °C внутри. Маринад после сырой рыбы не подавать без кипячения; не оставлять рыбу при комнатной температуре.",
       "photo_brief": "Кубики лосося с янтарной мисо-глазурью и лёгкими карамелизированными краями, посыпанные белым кунжутом и тонкими кольцами зелёного лука; без риса и других гарниров.",
-      "photo_status": "not_started",
+      "photo_status": "generated_verified_unpublished",
       "appliance_test_status": "not_tested",
-      "publication_status": "not_published"
+      "publication_status": "not_published",
+      "photo_record_path": "photo-library/airfryer/records/af-salmon-miso-sesame-2.json",
+      "visual_review_status": "visually_accepted",
+      "photo_sha256": "9560dc4549fc25d40306d39db8031df19673de6ea8d347ec479c95517adccc8e"
     },
     {
       "number": 39,
@@ -772,9 +796,12 @@
       },
       "safety": "Форель - минимум 63 °C в самой толстой части. Термометр вводить горизонтально сбоку в центр филе.",
       "photo_brief": "Два филе форели с золотистыми краями, тонким слоем сливочно-чесночного масла, укропом и лимонной цедрой; кожа видна снизу, рядом долька лимона, без гарнира.",
-      "photo_status": "not_started",
+      "photo_status": "generated_verified_unpublished",
       "appliance_test_status": "not_tested",
-      "publication_status": "not_published"
+      "publication_status": "not_published",
+      "photo_record_path": "photo-library/airfryer/records/af-trout-dill-lemon-2.json",
+      "visual_review_status": "visually_accepted",
+      "photo_sha256": "6e4a9850f2bd7546c0ab8a56a9d7218748f141a566f32e34cdfe02c818e145c8"
     },
     {
       "number": 40,
@@ -854,9 +881,12 @@
       },
       "safety": "Треска - не ниже 63 °C в самой толстой части; в рецепте Ninja указан ориентир 65 °C. Не подавать недоготовленную рыбу.",
       "photo_brief": "Два толстых филе трески с отчётливо золотистой корочкой из панировочных сухарей, зелёной петрушки, укропа и лимонной цедры; одно филе слегка разломлено, видна белая сочная мякоть, без гарнира.",
-      "photo_status": "not_started",
+      "photo_status": "generated_verified_unpublished",
       "appliance_test_status": "not_tested",
-      "publication_status": "not_published"
+      "publication_status": "not_published",
+      "photo_record_path": "photo-library/airfryer/records/af-cod-herb-crust-2.json",
+      "visual_review_status": "visually_accepted",
+      "photo_sha256": "a72fb6fe4ee6e9551bf49b98a5ad54325c23798729bf85daeaed01213b529e13"
     }
   ]
 }

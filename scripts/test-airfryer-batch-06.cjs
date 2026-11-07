@@ -19,7 +19,7 @@ assert.ok(batch.recipes.every((recipe) => recipe.source_verification?.source_url
 assert.ok(batch.recipes.every((recipe) => recipe.tefal_reference?.status));
 assert.ok(batch.recipes.every((recipe) => recipe.photo_brief && recipe.photo_brief.length >= 60));
 assert.ok(batch.recipes.every((recipe) => recipe.doneness && recipe.safety));
-assert.ok(batch.recipes.every((recipe) => recipe.photo_status === 'not_started'));
+assert.ok(batch.recipes.every((recipe) => recipe.photo_status === 'generated_verified_unpublished'));
 assert.ok(batch.recipes.every((recipe) => recipe.appliance_test_status === 'not_tested'));
 assert.ok(batch.recipes.every((recipe) => recipe.publication_status === 'not_published'));
 assert.ok(batch.recipes.slice(0,4).every((recipe) => /63 °C|74 °C/.test(recipe.doneness + ' ' + recipe.safety)));
@@ -39,6 +39,6 @@ console.log(JSON.stringify({
   ok: true, batch: 6, recipes: batch.recipes.length,
   uniqueIds: new Set(ids).size, range: [51,60],
   twoServings: true, sourceAndTefalStatuses: true,
-  seafoodAndRiceSafety: true, photos: 'not_started',
+  seafoodAndRiceSafety: true, photos: 'generated_verified_unpublished',
   physicalTests: 'not_tested', publication: 'not_published'
 }, null, 2));

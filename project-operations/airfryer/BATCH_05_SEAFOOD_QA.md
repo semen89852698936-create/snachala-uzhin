@@ -65,3 +65,11 @@
 13. [10K Recipe - Mackerel with an air fryer](https://www.10000recipe.com/en/6984244/Making_Mackerel_Oven__How_to_grill_mackerel_with_an_air_fryer_)
 14. [Waitrose - Air fryer salmon fishcakes](https://www.waitrose.com/ecom/recipe/air-fryer-salmon-fishcakes)
 15. [FoodSafety.gov - Safe Minimum Internal Temperatures](https://www.foodsafety.gov/food-safety-charts/safe-minimum-internal-temperatures)
+
+
+## Фото-приёмка 08.11.2026
+
+- Файлы: 10/10 WebP технически проверены, размер 1200 × 900, SHA-256 сверены с записями фотобазы.
+- Визуально принято: 6/10. На точечную перегенерацию: 4/10.
+- Очередь замены: af-sea-bass-whole-lemon-2; af-shrimp-coconut-crust-2; af-mackerel-lemon-herbs-2; af-salmon-potato-fishcakes-2.
+- Все фотографии остаются неопубликованными. Физические испытания на точной модели аэрогриля владельца не заявлены.

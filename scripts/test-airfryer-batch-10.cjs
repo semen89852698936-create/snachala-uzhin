@@ -18,10 +18,10 @@ assert.ok(batch.recipes.every(r=>r.source_verification?.source_url));
 assert.ok(batch.recipes.every(r=>r.tefal_reference?.status));
 assert.ok(batch.recipes.every(r=>r.photo_brief&&r.photo_brief.length>=60));
 assert.ok(batch.recipes.every(r=>r.doneness&&r.safety));
-assert.ok(batch.recipes.every(r=>r.photo_status==='not_started'&&r.appliance_test_status==='not_tested'&&r.publication_status==='not_published'));
+assert.ok(batch.recipes.every(r=>r.photo_status === 'generated_verified_unpublished'&&r.appliance_test_status==='not_tested'&&r.publication_status==='not_published'));
 assert.ok(batch.recipes[5].safety.includes('пастеризованное яйцо'));
 assert.ok(batch.recipes[6].safety.includes('пастеризованные яйца'));
 assert.ok(batch.recipes[8].safety.includes('силиконовые формы'));
 for(const r of batch.recipes){const p=plan.items.find(x=>x.id===r.id);assert.ok(p);assert.equal(p.batch_number,10);assert.equal(p.recipe_status,'full_draft_source_reviewed');assert.equal(p.source_status,'cross_checked');assert.equal(p.publication_status,'not_published');}
 assert.equal(plan.items.filter(x=>x.batch_number===10).length,10);
-console.log(JSON.stringify({ok:true,batch:10,recipes:10,range:[91,100],twoServings:true,sourceAndTefalStatuses:true,dessertSafety:true,photos:'not_started',physicalTests:'not_tested',publication:'not_published'},null,2));
+console.log(JSON.stringify({ok:true,batch:10,recipes:10,range:[91,100],twoServings:true,sourceAndTefalStatuses:true,dessertSafety:true,photos: 'generated_verified_unpublished',physicalTests:'not_tested',publication:'not_published'},null,2));

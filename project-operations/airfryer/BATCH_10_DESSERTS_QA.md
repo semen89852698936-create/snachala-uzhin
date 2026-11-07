@@ -49,3 +49,12 @@
 10. [As Receitinhas - Air Fryer Apple Rose Tarts](https://www.asreceitinhas.com/en/receitas/cozinha-do-bom-gosto-gabriela-rossi/tortinha-de-rosas-de-maca-na-airfryer)
 11. [De Airfryer Bijbel - Coconut Macaroons](https://airfryerbijbel.nl/recepten/kokosmakronen-airfryer)
 12. [Tefal Easy Fry & Grill - предоставленная книга рецептов](https://ru.scribd.com/document/875246352/Книга-рецептов-аэрогриль-Тефаль)
+
+
+## Фото-приёмка 08.11.2026
+
+- Файлы всех партий: 100/100 WebP технически проверены, размер 1200 × 900, SHA-256 сверены с записями фотобазы.
+- В этой партии визуально принято: 10/10. На точечную перегенерацию: 0/10.
+- Очередь замены: нет.
+- Все изображения остаются неопубликованными. Физические испытания на точной модели аэрогриля владельца не заявлены.
+- Ежечасный и push-триггеры платной генерации отключаются изменением workflow; платный запуск останется только ручным или через отдельную QA-ветку с явным именем.

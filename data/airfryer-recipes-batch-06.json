@@ -98,9 +98,12 @@
       },
       "safety": "Крабовые котлетки с яйцом должны прогреться в центре до 74 °C. Проверить мясо краба на осколки панциря; не использовать сырую смесь после контакта с готовой пищей.",
       "photo_brief": "Четыре небольшие крабовые котлетки с румяной тонкой корочкой и видимыми крупными волокнами крабового мяса, зелёный лук и петрушка в разрезе; рядом лимон, без булочек и соуса.",
-      "photo_status": "not_started",
+      "photo_status": "generated_verified_unpublished",
       "appliance_test_status": "not_tested",
-      "publication_status": "not_published"
+      "publication_status": "not_published",
+      "photo_record_path": "photo-library/airfryer/records/af-crab-cakes-herbs-2.json",
+      "visual_review_status": "visually_accepted",
+      "photo_sha256": "72967552f3254d28672089964225f2793027adc87c22367eb572d4be781ebaba"
     },
     {
       "number": 52,
@@ -176,9 +179,12 @@
       },
       "safety": "Сардины должны достичь 63 °C у хребта. Очистить внутренности, тщательно обсушить, не переполнять корзину; после приготовления учитывать мелкие кости.",
       "photo_brief": "Шесть целых небольших сардин с хрустящей золотистой кожей, тонкими подпалинами, свежей петрушкой и дольками лимона; рыбы лежат свободно, без салата и картофеля.",
-      "photo_status": "not_started",
+      "photo_status": "generated_verified_unpublished",
       "appliance_test_status": "not_tested",
-      "publication_status": "not_published"
+      "publication_status": "not_published",
+      "photo_record_path": "photo-library/airfryer/records/af-sardines-lemon-2.json",
+      "visual_review_status": "visually_accepted",
+      "photo_sha256": "5a1e98735f8b67b06cf7485164000a816a25852c3255f695b2f04eea455e1cf0"
     },
     {
       "number": 53,
@@ -266,9 +272,12 @@
       },
       "safety": "Треска - минимум 63 °C в центре самой толстой палочки. Сырую рыбу и готовые палочки держать раздельно; панировку после контакта с сырой рыбой выбросить.",
       "photo_brief": "Восемь одинаковых домашних рыбных палочек с тонкой золотистой панировкой panko и мелкими зелёными точками петрушки, одна разломлена и показывает белую сочную треску; рядом лимон, без картофеля и соуса.",
-      "photo_status": "not_started",
+      "photo_status": "generated_verified_unpublished",
       "appliance_test_status": "not_tested",
-      "publication_status": "not_published"
+      "publication_status": "not_published",
+      "photo_record_path": "photo-library/airfryer/records/af-cod-fingers-homemade-2.json",
+      "visual_review_status": "visually_accepted",
+      "photo_sha256": "2efba06d56dfb0c1fd438cdc8d498adfbbe880f1b1c2fec4c753970406b50437"
     },
     {
       "number": 54,
@@ -364,9 +373,12 @@
       },
       "safety": "Готовый рис быстро охладить, если не используется сразу: желательно в течение часа, хранить в холодильнике не более 24 часов и разогревать только один раз до горячего состояния по всей массе. В центре начинки перед подачей - 74 °C. Не оставлять рис и начинку при комнатной температуре.",
       "photo_brief": "Две небольшие целые тушки кальмара с лёгкой золотистой поверхностью, аккуратно нарезанные поперёк на толстые кольца; внутри видна начинка из риса, мелких кусочков томата, зелени и кедровых орешков; рядом лимон и зелень, без гарнира.",
-      "photo_status": "not_started",
+      "photo_status": "generated_verified_unpublished",
       "appliance_test_status": "not_tested",
-      "publication_status": "not_published"
+      "publication_status": "not_published",
+      "photo_record_path": "photo-library/airfryer/records/af-stuffed-squid-rice-herbs-2.json",
+      "visual_review_status": "visually_accepted",
+      "photo_sha256": "068ddbd7b4ef379afeb0bf4d8ba3aee67debc12da67f1a3a3901d76b06d59505"
     },
     {
       "number": 55,
@@ -437,9 +449,12 @@
       },
       "safety": "Работать с горячей водой осторожно; перед аэрогрилем дольки тщательно обсушить, чтобы не было лишней влаги.",
       "photo_brief": "Картофельные дольки одинаковой толщины с румяной золотисто-коричневой корочкой, видна копчёная паприка и сухой орегано; несколько долек на светлой керамической тарелке, без кетчупа и гарнира.",
-      "photo_status": "not_started",
+      "photo_status": "generated_verified_unpublished",
       "appliance_test_status": "not_tested",
-      "publication_status": "not_published"
+      "publication_status": "not_published",
+      "photo_record_path": "photo-library/airfryer/records/af-potato-wedges-2.json",
+      "visual_review_status": "visually_accepted",
+      "photo_sha256": "d8b7f048c7739cc6b63ee2787d012308718206af75c3b9c9bd6214f720341f9d"
     },
     {
       "number": 56,
@@ -504,10 +519,13 @@
         "notes": "Сходный овощной сценарий, но другой продукт и размер кусочков. Не переносить время напрямую."
       },
       "safety": "Вымыть овощи, удалить повреждённые листья и тщательно обсушить перед приготовлением.",
-      "photo_brief": "Небольшие половинки брюссельской капусты с поджаренными тёмно-золотыми срезами и тонкой свежей лимонной цедрой; натуральная фактура овоща, без сыра и соуса.",
-      "photo_status": "not_started",
+      "photo_brief": "Небольшая порция из 10-12 отдельных маленьких кочанчиков брюссельской капусты, часть разрезана пополам, с золотистыми подрумяненными срезами и зелёными листочками. Лимонная цедра. Не показывать большой кочан.",
+      "photo_status": "generated_verified_unpublished",
       "appliance_test_status": "not_tested",
-      "publication_status": "not_published"
+      "publication_status": "not_published",
+      "photo_record_path": "photo-library/airfryer/records/af-brussels-lemon-2.json",
+      "visual_review_status": "visually_accepted",
+      "photo_sha256": "b9cf2432b8bd9814bb55416648747481449ecd02ffabf0f92a77277cda08fa5d"
     },
     {
       "number": 57,
@@ -585,9 +603,12 @@
       },
       "safety": "Не переполнять корзину; хлеб подрумянивать отдельно, если свободного места недостаточно.",
       "photo_brief": "Два ломтика поджаренного хлеба на закваске, щедро покрытые золотистыми шампиньонами с тимьяном; грибы хорошо различимы, видны листочки тимьяна и петрушка, без фасоли и сыра.",
-      "photo_status": "not_started",
+      "photo_status": "generated_verified_unpublished",
       "appliance_test_status": "not_tested",
-      "publication_status": "not_published"
+      "publication_status": "not_published",
+      "photo_record_path": "photo-library/airfryer/records/af-mushrooms-thyme-toast-2.json",
+      "visual_review_status": "visually_accepted",
+      "photo_sha256": "4bba9e0226e46cb7bd02e3aba3b29a4a030077173d1000dbea8661856063c6d3"
     },
     {
       "number": 58,
@@ -661,9 +682,12 @@
       },
       "safety": "Кленовый сироп добавлять ближе к концу, чтобы сахар не подгорел.",
       "photo_brief": "Толстые продолговатые бруски моркови с блестящей тонкой кленово-тимьяновой глазурью, слегка карамелизированные края, свежие листья тимьяна; без пастернака и батата.",
-      "photo_status": "not_started",
+      "photo_status": "generated_verified_unpublished",
       "appliance_test_status": "not_tested",
-      "publication_status": "not_published"
+      "publication_status": "not_published",
+      "photo_record_path": "photo-library/airfryer/records/af-carrots-maple-thyme-2.json",
+      "visual_review_status": "visually_accepted",
+      "photo_sha256": "3be87c0d5bede1e3c9949f04c61b849177a58ec1d06c17ad491990a0f9c1533d"
     },
     {
       "number": 59,
@@ -734,10 +758,13 @@
         "notes": "В книге Tefal есть картофель фри соломкой при 170 °C, 25 минут, партиями. Это не целые молодые клубни; используем только общий принцип загрузки и перемешивания."
       },
       "safety": "Картофель тщательно вымыть и удалить повреждённые участки. Не использовать свободную бумагу или фольгу, которая может подняться к нагревателю.",
-      "photo_brief": "Мелкий молодой картофель целиком и половинками с тонкой золотистой корочкой, видны свежие иголочки розмарина и чеснок; подача в простой светлой керамической миске, без мяса и соусов.",
-      "photo_status": "not_started",
+      "photo_brief": "Небольшие молодые картофелины и половинки, запечённые в аэрогриле до золотистой хрустящей кожицы и отчётливо подрумяненных срезов. Розмарин, чеснок и лёгкий блеск масла. Не бледный отварной или сырой картофель.",
+      "photo_status": "generated_verified_unpublished",
       "appliance_test_status": "not_tested",
-      "publication_status": "not_published"
+      "publication_status": "not_published",
+      "photo_record_path": "photo-library/airfryer/records/af-baby-potatoes-rosemary-2.json",
+      "visual_review_status": "visually_accepted",
+      "photo_sha256": "01a5a3b648dc60e44a810018c7ab1c666db3c62868366bb44bda4f66c11cd939"
     },
     {
       "number": 60,
@@ -804,9 +831,12 @@
       },
       "safety": "Не перегружать корзину; не использовать свободную бумагу или фольгу. Проверять готовность по мягкости внутри и цвету, так как батат быстро карамелизуется.",
       "photo_brief": "Аккуратная порция батата фри одинаковой соломкой, ярко-оранжевая мякоть, тонкая золотистая поверхность с лёгкими следами копчёной паприки; без соусов и картофеля.",
-      "photo_status": "not_started",
+      "photo_status": "generated_verified_unpublished",
       "appliance_test_status": "not_tested",
-      "publication_status": "not_published"
+      "publication_status": "not_published",
+      "photo_record_path": "photo-library/airfryer/records/af-sweet-potato-fries-2.json",
+      "visual_review_status": "visually_accepted",
+      "photo_sha256": "807cb47d99f81489ec7f8dd66b5e4197b182739eff7007f3237b406e440a8b1b"
     }
   ]
 }

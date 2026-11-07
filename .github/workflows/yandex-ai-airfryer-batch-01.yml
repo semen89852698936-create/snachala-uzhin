@@ -1,18 +1,13 @@
 name: Yandex AI ART - air fryer 100-recipe photo production
 on:
-  push:
+  pull_request:
     branches: [main]
     paths:
       - 'data/airfryer-recipes-batch-*.json'
-      - 'photo-pipeline/generate_airfryer_batch.py'
-      - '.github/workflows/yandex-ai-airfryer-batch-01.yml'
-  pull_request:
-    paths:
-      - 'data/airfryer-recipes-batch-*.json'
+      - 'data/airfryer-100-editorial-plan.json'
+      - 'photo-library/airfryer/visual-review.json'
       - 'photo-pipeline/**'
       - '.github/workflows/yandex-ai-airfryer-batch-01.yml'
-  schedule:
-    - cron: '17 * * * *'
   workflow_dispatch:
     inputs:
       paid_generation:
@@ -22,7 +17,7 @@ on:
         type: choice
         options: ['no', 'yes']
 permissions:
-  contents: write
+  contents: read
 concurrency:
   group: yandex-ai-airfryer-100-photo-production
   cancel-in-progress: false
@@ -30,6 +25,8 @@ jobs:
   preflight:
     runs-on: ubuntu-latest
     timeout-minutes: 15
+    permissions:
+      contents: read
     steps:
       - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
         with:
@@ -39,8 +36,8 @@ jobs:
           python-version: '3.11'
       - run: python -m pip install 'Pillow>=10,<13'
       - name: Compile photo pipeline scripts
-        run: python -m py_compile photo-pipeline/generate_airfryer_batch.py photo-pipeline/test_airfryer_batch.py photo-pipeline/verify_airfryer_batch.py
-      - name: Free prompt preflight and dry-run for every available ten-recipe batch
+        run: python -m py_compile photo-pipeline/generate_airfryer_batch.py photo-pipeline/test_airfryer_batch.py photo-pipeline/verify_airfryer_batch.py photo-pipeline/verify_airfryer_catalog.py
+      - name: Free prompt preflight for every ten-recipe batch
         shell: bash
         run: |
           set -euo pipefail
@@ -52,37 +49,27 @@ jobs:
             python photo-pipeline/test_airfryer_batch.py --manifest "$manifest"
           done
           test "$found" -eq 1
+      - name: Verify all 100 existing WebP files and review records
+        run: python photo-pipeline/verify_airfryer_catalog.py --require-all-images
 
   generate:
     needs: preflight
-    if: ${{ github.event_name == 'schedule' || (github.event_name == 'push' && github.ref == 'refs/heads/main') || (github.event_name == 'workflow_dispatch' && inputs.paid_generation == 'yes') }}
+    if: ${{ (github.event_name == 'pull_request' && github.head_ref == 'feature/airfryer-photo-regeneration-20261108' && github.event.pull_request.head.repo.full_name == github.repository) || (github.event_name == 'workflow_dispatch' && inputs.paid_generation == 'yes') }}
     runs-on: ubuntu-latest
-    timeout-minutes: 60
+    timeout-minutes: 90
+    permissions:
+      contents: write
     steps:
       - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
         with:
-          ref: main
+          ref: ${{ github.head_ref || github.ref_name }}
           fetch-depth: 0
           persist-credentials: true
       - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065
         with:
           python-version: '3.11'
-      - name: Prepare persistent unpublished photo-production branch
-        shell: bash
-        run: |
-          set -euo pipefail
-          git fetch origin main
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          if git ls-remote --exit-code --heads origin photo-production/airfryer-batch-01-20261107 >/dev/null 2>&1; then
-            git fetch origin photo-production/airfryer-batch-01-20261107
-            git checkout -B photo-production/airfryer-batch-01-20261107 origin/photo-production/airfryer-batch-01-20261107
-            git merge --no-edit origin/main
-          else
-            git checkout -b photo-production/airfryer-batch-01-20261107 origin/main
-          fi
       - run: python -m pip install 'Pillow>=10,<13'
-      - name: Generate the first incomplete batch, at most ten paid images per run
+      - name: Generate only explicitly reviewed replacements across all ten batches
         shell: bash
         env:
           YANDEX_API_KEY: ${{ secrets.YANDEX_API_KEY }}
@@ -90,32 +77,27 @@ jobs:
           PHOTO_COST_APPROVED: 'true'
         run: |
           set -euo pipefail
+          TARGET_BRANCH="${{ github.head_ref || github.ref_name }}"
+          git fetch origin "$TARGET_BRANCH"
+          git checkout -B "$TARGET_BRANCH" "origin/$TARGET_BRANCH"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           found=0
           for manifest in data/airfryer-recipes-batch-*.json; do
             [ -f "$manifest" ] || continue
             found=1
-            echo "Processing $manifest"
+            echo "Reviewing replacements in $manifest"
             summary=$(python photo-pipeline/generate_airfryer_batch.py --manifest "$manifest" --limit 10 --execute)
             echo "$summary"
             base=$(basename "$manifest" .json)
             python photo-pipeline/verify_airfryer_batch.py --manifest "$manifest" --progress-file "progress-$base.json"
-            summary_json=$(printf '%s\n' "$summary" | tail -n 1)
-            created=$(python -c 'import json,sys; print(json.loads(sys.argv[1])["created_or_prepared"])' "$summary_json")
-            refused=$(python -c 'import json,sys; print(json.loads(sys.argv[1])["refused"])' "$summary_json")
-            if [ "$created" -gt 0 ] || [ "$refused" -gt 0 ]; then
-              echo "Stopping after the first incomplete or blocked batch; the next scheduled run will resume here."
-              break
-            fi
           done
           test "$found" -eq 1
-      - name: Save verified photos to the unpublished production branch
-        shell: bash
-        run: |
-          set -euo pipefail
+          python photo-pipeline/verify_airfryer_catalog.py --require-all-images --sync-manifests --sync-plan --write-progress
           git add -A
           if git diff --cached --quiet; then
-            echo "No new air-fryer photos or metadata to checkpoint."
+            echo "No replacement images were generated."
           else
-            git commit -m "Yandex AI ART: checkpoint next air-fryer photo batch"
-            git push origin HEAD:refs/heads/photo-production/airfryer-batch-01-20261107
+            git commit -m "Yandex AI ART: regenerate visually rejected air fryer photos"
+            git push origin "HEAD:refs/heads/$TARGET_BRANCH"
           fi

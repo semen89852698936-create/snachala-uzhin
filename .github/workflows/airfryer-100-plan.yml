@@ -30,9 +30,12 @@ on:
       - 'project-operations/airfryer/BATCH_08_BREAKFAST_BAKING_QA.md'
       - 'project-operations/airfryer/BATCH_09_SNACKS_QA.md'
       - 'project-operations/airfryer/BATCH_10_DESSERTS_QA.md'
+      - 'scripts/test-airfryer-batch-01.cjs'
       - 'scripts/test-airfryer-batch-02.cjs'
       - 'project-operations/airfryer/BATCH_02_POULTRY_QA.md'
       - 'photo-pipeline/**'
+      - 'photo-library/airfryer/visual-review.json'
+      - 'photo-library/airfryer/progress.json'
       - 'project-operations/airfryer/BATCH_01_YANDEX_PHOTO_PIPELINE.md'
       - '.github/workflows/airfryer-100-plan.yml'
       - '.github/workflows/yandex-ai-airfryer-batch-01.yml'
@@ -49,6 +52,8 @@ jobs:
           persist-credentials: false
       - name: Validate exact 100-recipe scope, unique IDs and category balance
         run: node scripts/test-airfryer-100-plan.cjs
+      - name: Validate first ten-recipe poultry batch
+        run: node scripts/test-airfryer-batch-01.cjs
       - name: Validate second ten-recipe poultry batch
         run: node scripts/test-airfryer-batch-02.cjs
       - name: Validate third ten-recipe meat batch
@@ -79,3 +84,5 @@ jobs:
             [ -f "$manifest" ] || continue
             python photo-pipeline/test_airfryer_batch.py --manifest "$manifest"
           done
+      - name: Verify all 100 WebP files, hashes, recipe links and visual QA statuses
+        run: python photo-pipeline/verify_airfryer_catalog.py --require-all-images

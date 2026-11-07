@@ -65,3 +65,12 @@
 14. [Whole Lotta Yum - Air Frying for Beginners](https://wholelottayum.com/wp-content/uploads/2022/01/Air-Frying-for-Beginners-eBook-123121.pdf)
 15. [Tefal Easy Fry & Grill - supplied recipe book](https://ru.scribd.com/document/875246352/Книга-рецептов-аэрогриль-Тефаль)
 16. [FoodSafety.gov - Safe Minimum Internal Temperatures](https://www.foodsafety.gov/food-safety-charts/safe-minimum-internal-temperatures)
+
+
+## Фото-приёмка 08.11.2026
+
+- Файлы всех партий: 100/100 WebP технически проверены, размер 1200 × 900, SHA-256 сверены с записями фотобазы.
+- В этой партии визуально принято: 8/10. На точечную перегенерацию: 2/10.
+- Очередь замены: af-brussels-lemon-2; af-baby-potatoes-rosemary-2.
+- Все изображения остаются неопубликованными. Физические испытания на точной модели аэрогриля владельца не заявлены.
+- Ежечасный и push-триггеры платной генерации отключаются изменением workflow; платный запуск останется только ручным или через отдельную QA-ветку с явным именем.

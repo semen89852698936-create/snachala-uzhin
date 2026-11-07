@@ -64,3 +64,11 @@
 12. [RecipeAirFryer - Air Fryer Trout](https://recipeairfryer.com/recipes/air-fryer-trout)
 13. [Ninja Test Kitchen - Lemon & Herb Panko Crusted Cod](https://www.sharkninja.co.uk/lemon-herb-panko-crusted-cod/REC4843EU.html)
 14. [FoodSafety.gov - Safe Minimum Internal Temperatures](https://www.foodsafety.gov/food-safety-charts/safe-minimum-internal-temperatures)
+
+
+## Фото-приёмка 08.11.2026
+
+- Файлы: 10/10 WebP технически проверены, размер 1200 × 900, SHA-256 сверены с записями фотобазы.
+- Визуально принято: 10/10. На точечную перегенерацию: 0/10.
+- Очередь замены: нет.
+- Все фотографии остаются неопубликованными. Физические испытания на точной модели аэрогриля владельца не заявлены.
