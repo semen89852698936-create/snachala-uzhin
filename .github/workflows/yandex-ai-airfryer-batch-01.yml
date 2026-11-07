@@ -1,5 +1,11 @@
 name: Yandex AI ART - air fryer photo batch 01
 on:
+  push:
+    branches: [main]
+    paths:
+      - 'data/airfryer-recipes-batch-01.json'
+      - 'photo-pipeline/generate_airfryer_batch.py'
+      - '.github/workflows/yandex-ai-airfryer-batch-01.yml'
   pull_request:
     paths:
       - 'data/airfryer-recipes-batch-01.json'
@@ -41,7 +47,7 @@ jobs:
 
   generate:
     needs: preflight
-    if: ${{ github.event_name == 'schedule' || (github.event_name == 'workflow_dispatch' && inputs.paid_generation == 'yes') }}
+    if: ${{ github.event_name == 'schedule' || (github.event_name == 'push' && github.ref == 'refs/heads/main') || (github.event_name == 'workflow_dispatch' && inputs.paid_generation == 'yes') }}
     runs-on: ubuntu-latest
     timeout-minutes: 45
     steps:
