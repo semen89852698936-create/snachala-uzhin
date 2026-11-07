@@ -1,0 +1,71 @@
+/* Air-fryer editorial catalogue */
+.du-airfryer-catalog{padding:clamp(54px,7vw,92px) 0;background:linear-gradient(135deg,#fcf5f0 0%,#f2e3e6 100%)}
+.du-af-heading{display:grid;grid-template-columns:minmax(0,1.35fr) minmax(250px,.65fr);gap:clamp(24px,5vw,70px);align-items:end;margin-bottom:32px}
+.du-af-eyebrow{font:800 11px/1.5 Manrope,Arial,sans-serif;letter-spacing:.15em;color:#925a6c}
+.du-af-heading h2{font:400 clamp(42px,5.2vw,76px)/.98 'Cormorant Garamond',Georgia,serif;letter-spacing:-.05em;color:#502b39;margin:16px 0}
+.du-af-heading h2 em{font-weight:400;color:#a45e79}
+.du-af-lead{max-width:720px;font:500 15px/1.75 Manrope,Arial,sans-serif;color:#654e56;margin:0}
+.du-af-note{margin-top:18px;padding:13px 16px;border-left:3px solid #a45e79;background:#fff9;color:#704b58;font:600 12px/1.65 Manrope,Arial,sans-serif}
+.du-af-manual{display:inline-flex;align-items:center;gap:7px;margin-top:15px;color:#85475d;font:750 12px/1.5 Manrope,Arial,sans-serif;text-decoration:underline;text-underline-offset:3px}
+.du-af-summary{padding:25px 27px;border:1px solid #dfbdc6;background:#fffbf8;border-radius:22px;box-shadow:0 12px 32px rgba(95,47,65,.07)}
+.du-af-summary strong{display:block;font:400 54px/.95 'Cormorant Garamond',Georgia,serif;color:#84455d}
+.du-af-summary span{display:block;margin-top:10px;color:#755c65;font:650 12px/1.55 Manrope,Arial,sans-serif}
+.du-af-toolbar{display:grid;gap:15px;margin:28px 0 18px}
+.du-af-search{min-height:54px;display:flex;align-items:center;gap:12px;padding:0 17px;background:#fffcfa;border:1px solid #dfcbd0;border-radius:14px;color:#a45e79}
+.du-af-search-icon{font:normal 26px/1 Arial,sans-serif}
+.du-af-search input{width:100%;min-width:0;border:0;outline:0;background:transparent;color:#4b3740;font:500 14px Manrope,Arial,sans-serif}
+.du-af-search input::placeholder{color:#a18d94}
+.du-af-filters{display:flex;flex-wrap:wrap;gap:8px}
+.du-af-filter{border:1px solid #d7bac4;background:#fff9f7;border-radius:999px;padding:9px 14px;color:#704b58;font:700 11px/1.3 Manrope,Arial,sans-serif;cursor:pointer;transition:background .18s,color .18s,border-color .18s}
+.du-af-filter[aria-pressed=true]{background:#84455d;border-color:#84455d;color:#fff}
+.du-af-result-line{display:flex;justify-content:space-between;align-items:center;gap:15px;margin:22px 0 16px;color:#806c74;font:650 12px Manrope,Arial,sans-serif}
+.du-af-result-line strong{color:#603d4a}
+.du-af-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:17px}
+.du-af-card{min-width:0;background:#fffcfa;border:1px solid #ead9dd;border-radius:19px;overflow:hidden;box-shadow:0 3px 14px rgba(88,49,62,.045);transition:transform .2s,box-shadow .2s}
+.du-af-card:hover{transform:translateY(-3px);box-shadow:0 12px 26px rgba(88,49,62,.11)}
+.du-af-card-open{display:flex;width:100%;height:100%;flex-direction:column;text-align:left;border:0;background:transparent;padding:0;color:inherit;cursor:pointer}
+.du-af-card-image{position:relative;display:block;aspect-ratio:1.42;background:linear-gradient(135deg,#ead7d6,#d8c2c3);overflow:hidden}
+.du-af-card-image img{width:100%;height:100%;display:block;object-fit:cover;transition:transform .35s}
+.du-af-card:hover .du-af-card-image img{transform:scale(1.035)}
+.du-af-card-body{display:flex;flex:1;flex-direction:column;padding:17px 18px 18px}
+.du-af-card-meta{display:flex;flex-wrap:wrap;gap:7px;align-items:center;color:#a05c73;font:800 9px/1.4 Manrope,Arial,sans-serif;letter-spacing:.07em;text-transform:uppercase}
+.du-af-card-title{display:block;margin:9px 0 7px;color:#4f303c;font:500 25px/1.05 'Cormorant Garamond',Georgia,serif}
+.du-af-card-ingredients{display:block;min-height:35px;color:#8b777d;font:500 11px/1.55 Manrope,Arial,sans-serif}
+.du-af-card-facts{display:flex;flex-wrap:wrap;gap:7px;margin-top:auto;padding-top:15px}
+.du-af-card-facts span{padding:6px 8px;border-radius:7px;background:#f5e9e9;color:#75485a;font:750 10px/1.2 Manrope,Arial,sans-serif}
+.du-af-card-open:focus-visible{outline:3px solid #c7748d;outline-offset:-4px}
+.du-af-empty{padding:42px 18px;text-align:center;border:1px dashed #cbaeb8;border-radius:18px;color:#785d67;font:500 13px/1.6 Manrope,Arial,sans-serif}
+.du-af-facts{margin:28px 0 24px;padding:25px;background:#f7eeee;border:1px solid #ead8dd;border-radius:19px}
+.du-af-facts-heading{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:10px;margin-bottom:17px}
+.du-af-facts-heading h2{margin:0;color:#633b49;font:500 31px/1.1 'Cormorant Garamond',Georgia,serif}
+.du-af-unverified{padding:6px 10px;border-radius:999px;background:#f2e2c9;color:#79582f;font:800 9px/1.3 Manrope,Arial,sans-serif;letter-spacing:.04em;text-transform:uppercase}
+.du-af-facts-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+.du-af-fact{padding:13px 14px;background:#fffcfa;border:1px solid #eadde0;border-radius:12px;min-width:0}
+.du-af-fact-label{display:block;margin-bottom:6px;color:#a06b7d;font:800 9px/1.4 Manrope,Arial,sans-serif;letter-spacing:.1em;text-transform:uppercase}
+.du-af-fact-value{display:block;color:#5e4850;font:500 12px/1.65 Manrope,Arial,sans-serif;overflow-wrap:anywhere}
+.du-af-fact-wide{grid-column:1/-1}
+.du-af-source-links{display:flex;flex-wrap:wrap;gap:12px;margin-top:15px}
+.du-af-source-links a{color:#874c61;font:750 11px/1.5 Manrope,Arial,sans-serif;text-decoration:underline;text-underline-offset:3px}
+.du-af-facts-disclaimer{margin:17px 0 0;color:#826c73;font:500 10px/1.6 Manrope,Arial,sans-serif}
+@media(max-width:900px){.du-af-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.du-af-heading{grid-template-columns:1fr .55fr}}
+@media(max-width:680px){
+ .du-af-heading{grid-template-columns:1fr;gap:20px;margin-bottom:25px}
+ .du-af-summary{display:flex;align-items:center;gap:15px;padding:17px 19px}
+ .du-af-summary strong{font-size:42px}
+ .du-af-summary span{margin-top:0}
+ .du-af-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+ .du-af-card-body{padding:12px 12px 13px}
+ .du-af-card-title{font-size:21px;line-height:1.02}
+ .du-af-card-ingredients{font-size:10px;min-height:32px}
+ .du-af-card-facts{gap:5px;padding-top:11px}
+ .du-af-card-facts span{font-size:9px;padding:5px 6px}
+ .du-af-card-meta{font-size:8px}
+ .du-af-filters{flex-wrap:nowrap;overflow-x:auto;padding-bottom:4px;scrollbar-width:thin}
+ .du-af-filter{flex:0 0 auto}
+ .du-af-facts{padding:16px;margin:20px 0}
+ .du-af-facts-heading h2{font-size:27px}
+ .du-af-facts-grid{grid-template-columns:1fr}
+ .du-af-fact-wide{grid-column:auto}
+ .du-af-result-line{font-size:11px}
+}
+@media(max-width:390px){.du-af-grid{grid-template-columns:1fr}.du-af-card-image{aspect-ratio:1.6}}
