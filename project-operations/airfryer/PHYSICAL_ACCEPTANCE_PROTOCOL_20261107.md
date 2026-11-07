@@ -1,6 +1,6 @@
 # Аэрогриль: протокол независимой технологической приёмки (07.11.2026)
 
-**Статус:** блокирующий протокол, НЕ подтверждение готовности рецептов. Не включать кандидатов в 1001 JSON и публичный каталог до выполнения всех условий. Источник: draft PR #80, QA-инвентаризация draft PR #127. Этот документ не изменяет их ветки.
+**Статус:** блокирующий протокол, НЕ подтверждение готовности рецептов. Не включать кандидатов в 1001 JSON и публичный каталог до выполнения всех условий. Источник: draft PR #80; source review checked against six dedicated BBC Good Food air-fryer recipes and FoodSafety.gov on 07.11.2026. Audit and candidate QA now live together in PR #80. This document remains the physical-test gate.
 
 ## Что зафиксировано на 07.11
 - GitHub main: `5ce4752a2d14253d8dad640cc3330cb0917615d2`.
@@ -34,18 +34,20 @@
 
 ## Реестр шести кандидатов из draft PR #80 (проверено 07.11)
 
-Источник данных: `data/airfryer-editorial-candidates.json` в ветке `feature/airfryer-editorial-first-three-20261104`. Для всех шести `photo_webp=null`, `photo_status=required`; испытаний не представлено. Температуры и минуты ниже - **редакционные гипотезы**, а не результаты готовки.
+Источник данных: `data/airfryer-editorial-candidates.json` в ветке `feature/airfryer-editorial-first-three-20261104`. Для всех шести `photo_webp=null`, `photo_status=required`; `appliance_test.status=not_tested`. Режимы и последовательность теперь **сверены с профильными рецептами аэрогриля**; это источниковая проверка, но не физическое испытание конкретного прибора.
 
 | ID | Блюдо | Заданный режим | Специальный контроль при испытании | Физический тест | Фото |
 | --- | --- | --- | --- | --- | --- |
-| `af-salmon-lemon-herbs-2` | Лосось с лимоном | 180 °C, 8–12 мин | Толщина двух филе, термометр в самой толстой части, 63 °C по указанному источнику | NOT TESTED | MISSING |
-| `af-chicken-paprika-2` | Грудка с паприкой | 180 °C, 18–23 мин | 74 °C в центре, исключение перекрёстного загрязнения, время отдыха | NOT TESTED | MISSING |
+| `af-salmon-lemon-herbs-2` | Лосось с лимоном | 180 °C, 8–10 мин | Два филе по 130 г; термометр в самой толстой части, 63 °C по FoodSafety.gov | NOT TESTED | MISSING |
+| `af-chicken-paprika-2` | Грудка с паприкой | 180 °C, 18–23 мин | Профильный источник: 18–20 мин; верхняя граница расширена как стартовая проверка до достижения 74 °C в центре по FoodSafety.gov; контроль перекрёстного загрязнения | NOT TESTED | MISSING |
 | `af-potato-wedges-2` | Картофельные дольки | 200 °C, 30–40 мин | Подготовка 55 мин отдельно, просушка, встряхивание каждые 10 мин, число партий | NOT TESTED | MISSING |
 | `af-brussels-lemon-2` | Брюссельская капуста | 180 °C, 10–15 мин | Размер кочанчиков, мягкая сердцевина, края без обугливания | NOT TESTED | MISSING |
-| `af-mushrooms-thyme-toast-2` | Грибы на тостах | 200 °C, 12–15 мин | Время относится **только к грибам**; хлеб отдельно в тостере/на сковороде | NOT TESTED | MISSING |
+| `af-mushrooms-thyme-toast-2` | Грибы на тостах | 200 °C, 12–15 мин грибы + 2–3 мин хлеб | Хлеб подрумянивается в той же корзине в свободном месте; если места нет, грибы вынимают и затем тостируют хлеб в той же корзине | NOT TESTED | MISSING |
 | `af-carrots-maple-thyme-2` | Морковь в кленовой глазури | 180 °C, 30–40 мин | Глазурь лишь в конце; проверить мягкость и отсутствие подгорания сахара | NOT TESTED | MISSING |
 
-**CI:** workflow `Airfryer editorial candidates`, run [42339037965](https://github.com/semen89852698936-create/snachala-uzhin/actions/runs/42339037965), head `5bb7410e502929cd3203015e63199c486657557b`, `completed/success`. Это подтверждает только программные проверки draft PR #80, не физическую готовность. Не менять `NOT TESTED` на `PASS` без датированного протокола и измерений. Перед интеграцией повторно сверить head SHA и CI.
+**Источники:** [лосось](https://www.bbcgoodfood.com/recipes/air-fryer-salmon), [куриная грудка](https://www.bbcgoodfood.com/recipes/air-fryer-chicken-breasts), [картофель](https://www.bbcgoodfood.com/recipes/air-fryer-potato-wedges), [брюссельская капуста](https://www.bbcgoodfood.com/recipes/air-fryer-brussels-sprouts), [шампиньоны на тостах](https://www.bbcgoodfood.com/recipes/air-fryer-mushrooms-on-toast), [морковь](https://www.bbcgoodfood.com/recipes/maple-thyme-carrots), [безопасные внутренние температуры](https://www.foodsafety.gov/food-safety-charts/safe-minimum-internal-temperatures).
+
+**CI:** `Airfryer editorial candidates` run [42403724708](https://github.com/semen89852698936-create/snachala-uzhin/actions/runs/42403724708) и `Airfryer technology inventory` run [42403724707](https://github.com/semen89852698936-create/snachala-uzhin/actions/runs/42403724707) для head `e90f75072fd64a43d4dfbaa3eefa04d174e0cf7d` - оба `completed/success`. Это подтверждает только программные проверки структуры и наличия базовых параметров, не физическую готовность. Не менять `NOT TESTED` на `PASS` без датированного протокола и измерений.
 
 ## Неустранимый автоматически блокер
 Ни CI, ни редакционная проверка источников не могут подтвердить фактическую готовку в реальном приборе. Нужны реальные протоколы испытаний и соответствующие проверенные фотографии. Отсутствие этих доказательств означает `NOT TESTED`, а не `PASS`.
