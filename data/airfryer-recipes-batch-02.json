@@ -97,9 +97,10 @@
       },
       "safety": "Птица должна достичь 74 °C внутри. До подачи обязательно пересчитать и удалить все зубочистки; не использовать пластик.",
       "photo_brief": "Две куриные грудки с аккуратной золотистой корочкой, одна разрезана и показывает начинку из шпината, моцареллы, сливочного сыра и вяленых томатов; никаких яиц сверху.",
-      "photo_status": "not_started",
+      "photo_status": "generated_file_verified",
       "appliance_test_status": "not_tested",
-      "publication_status": "not_published"
+      "publication_status": "not_published",
+      "photo_visual_review_status": "not_reviewed"
     },
     {
       "number": 12,
@@ -200,9 +201,10 @@
       },
       "safety": "Индейка должна достичь 74 °C внутри. Соус готовится отдельно; использовать чистую посуду для готового мяса.",
       "photo_brief": "Четыре небольших медальона индейки с хрустящей золотистой корочкой из кукурузных хлопьев, рядом небольшая порция густого клюквенно-апельсинового соуса; без риса и гарнира.",
-      "photo_status": "not_started",
+      "photo_status": "generated_file_verified",
       "appliance_test_status": "not_tested",
-      "publication_status": "not_published"
+      "publication_status": "not_published",
+      "photo_visual_review_status": "not_reviewed"
     },
     {
       "number": 13,
@@ -287,9 +289,10 @@
       },
       "safety": "Утиная грудка относится к птице: безопасный ориентир 74 °C. Горячий жир сливать только после остановки прибора и с осторожностью.",
       "photo_brief": "Две полностью приготовленные утиные грудки с хрустящей золотистой кожей, одна нарезана ломтиками, рядом немного блестящего апельсинового соуса и тонкая цедра; без ягод и неуказанного гарнира.",
-      "photo_status": "not_started",
+      "photo_status": "generated_file_verified",
       "appliance_test_status": "not_tested",
-      "publication_status": "not_published"
+      "publication_status": "not_published",
+      "photo_visual_review_status": "not_reviewed"
     },
     {
       "number": 14,
@@ -384,9 +387,10 @@
       },
       "safety": "Курица должна достичь 74 °C внутри. Сырые яйца держать отдельно от готового блюда.",
       "photo_brief": "Два куриных шницеля в золотистой корочке пармезана, сверху тонкий слой красного томатного соуса и расплавленная моцарелла, несколько листьев базилика; без пасты и гарнира.",
-      "photo_status": "not_started",
+      "photo_status": "generated_file_verified",
       "appliance_test_status": "not_tested",
-      "publication_status": "not_published"
+      "publication_status": "not_published",
+      "photo_visual_review_status": "not_reviewed"
     },
     {
       "number": 15,
@@ -481,9 +485,10 @@
       },
       "safety": "Фарш из птицы должен достичь 74 °C внутри. Не пробовать сырую смесь.",
       "photo_brief": "Шесть продолговатых кёфта из индейки с румяной корочкой и видимыми специями, немного зелени и мяты; без лепёшек, хумуса и неуказанного гарнира.",
-      "photo_status": "not_started",
+      "photo_status": "generated_file_verified",
       "appliance_test_status": "not_tested",
-      "publication_status": "not_published"
+      "publication_status": "not_published",
+      "photo_visual_review_status": "not_reviewed"
     },
     {
       "number": 16,
@@ -574,9 +579,10 @@
       },
       "safety": "Курица должна достичь 74 °C до смешивания с соусом. Для соуса использовать чистую посуду и не возвращать в него сырой маринад.",
       "photo_brief": "Нежные кусочки полностью приготовленного куриного бедра в густом мягком золотистом карри-соусе, немного зелени кинзы; без риса, лепёшек и неуказанных овощей.",
-      "photo_status": "not_started",
+      "photo_status": "generated_file_verified",
       "appliance_test_status": "not_tested",
-      "publication_status": "not_published"
+      "publication_status": "not_published",
+      "photo_visual_review_status": "not_reviewed"
     },
     {
       "number": 17,
@@ -656,9 +662,10 @@
       },
       "safety": "Курица должна достичь 74 °C внутри. Перед подачей удалить все зубочистки.",
       "photo_brief": "Два домашних кордон-блю с золотистой панировкой; один разрезан, видны тонкий слой ветчины и расплавленный сыр внутри куриного филе; никаких гарниров.",
-      "photo_status": "not_started",
+      "photo_status": "generated_file_verified",
       "appliance_test_status": "not_tested",
-      "publication_status": "not_published"
+      "publication_status": "not_published",
+      "photo_visual_review_status": "not_reviewed"
     },
     {
       "number": 18,
@@ -738,9 +745,10 @@
       },
       "safety": "Фарш индейки должен достичь 74 °C внутри. Сырой фарш и готовые колбаски не класть на одну тарелку.",
       "photo_brief": "Шесть небольших румяных домашних колбасок-котлеток из индейки, видны мелкие кусочки яблока и травы; без яиц, тостов и неуказанного гарнира.",
-      "photo_status": "not_started",
+      "photo_status": "generated_file_verified",
       "appliance_test_status": "not_tested",
-      "publication_status": "not_published"
+      "publication_status": "not_published",
+      "photo_visual_review_status": "not_reviewed"
     },
     {
       "number": 19,
@@ -810,9 +818,10 @@
       },
       "safety": "Курица должна достичь 74 °C и в бедре, и в голени. Горячий жир в нижнем поддоне не переполнять.",
       "photo_brief": "Две полностью приготовленные куриные четверти с хрустящей золотистой кожей, видны чеснок, тимьян и лёгкая лимонная цедра; без картофеля и овощей.",
-      "photo_status": "not_started",
+      "photo_status": "generated_file_verified",
       "appliance_test_status": "not_tested",
-      "publication_status": "not_published"
+      "publication_status": "not_published",
+      "photo_visual_review_status": "not_reviewed"
     },
     {
       "number": 20,
@@ -899,9 +908,10 @@
       },
       "safety": "Курица должна достичь 74 °C внутри. Не возвращать готовую курицу в миску, где лежала сырая.",
       "photo_brief": "Готовые полоски курицы с подрумяненными краями, красный сладкий перец и красный лук, специи и свежий лайм; без тортильи, гуакамоле и сметаны.",
-      "photo_status": "not_started",
+      "photo_status": "generated_file_verified",
       "appliance_test_status": "not_tested",
-      "publication_status": "not_published"
+      "publication_status": "not_published",
+      "photo_visual_review_status": "not_reviewed"
     }
   ]
 }
