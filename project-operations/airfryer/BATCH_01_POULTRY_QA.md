@@ -55,3 +55,11 @@
 10. [BBC Good Food - Air fryer chicken tikka kebabs](https://www.bbcgoodfood.com/recipes/air-fryer-chicken-tikka-kebabs)
 11. [Tropicana Brands Group - Air Fryer Orange Chicken](https://www.tropicanabrandsgroup.com/health/recipes/air-fryer-orange-chicken)
 12. [FoodSafety.gov - Safe Minimum Internal Temperatures](https://www.foodsafety.gov/food-safety-charts/safe-minimum-internal-temperatures)
+
+
+## Фото-приёмка 08.11.2026
+
+- Файлы: 10/10 WebP технически проверены, размер 1200 × 900, SHA-256 сверены с записями фотобазы.
+- Визуально принято: 9/10. На точечную перегенерацию: 1/10.
+- Очередь замены: af-chicken-thighs-yogurt-rosemary-2.
+- Все фотографии остаются неопубликованными. Физические испытания на точной модели аэрогриля владельца не заявлены.
