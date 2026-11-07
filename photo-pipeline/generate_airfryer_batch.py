@@ -89,21 +89,14 @@ def update_manifest_photo_status(manifest_path: Path, recipe_id: str, status: st
 def make_prompt(recipe: dict) -> str:
     title = clean(recipe["title"])
     brief = clean(recipe["photo_brief"])
-    ingredients = []
-    for item in recipe.get("ingredients", [])[:8]:
-        if isinstance(item, (list, tuple)) and len(item) >= 1:
-            ingredients.append(clean(item[0]))
-    ingredient_text = ", ".join(ingredients)
     prefix = "Премиальная фотореалистичная фуд-фотография готового блюда. "
     title_part = f"Точное блюдо: {title}. "
-    ingredient_part = f"Ингредиенты: {ingredient_text}. " if ingredient_text else ""
     suffix = "Подача на двоих, натуральная текстура, мягкий тёплый свет. Без людей, рук, букв, логотипов и коллажей."
-    fixed = prefix + title_part + ingredient_part + "Детали: ." + suffix
+    fixed = prefix + title_part + "Детали: ." + suffix
     brief_limit = max(0, MAX_PROMPT - len(fixed) - 2)
-    brief = brief[:brief_limit].rstrip(" ,.;")
-    prompt = prefix + title_part + ingredient_part + f"Детали: {brief}. " + suffix
-    if len(prompt) > MAX_PROMPT:
-        prompt = prefix + title_part + f"Детали: {brief}. " + suffix
+    if len(brief) > brief_limit:
+        brief = brief[:brief_limit].rstrip(" ,.;")
+    prompt = prefix + title_part + f"Детали: {brief}. " + suffix
     if len(prompt) > MAX_PROMPT:
         raise RuntimeError(f"Could not fit a safe prompt for {recipe['id']} within {MAX_PROMPT} characters")
     return prompt
