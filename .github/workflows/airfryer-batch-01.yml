@@ -1,0 +1,21 @@
+name: Air fryer poultry batch 01 QA
+on:
+  pull_request:
+    paths:
+      - 'data/airfryer-recipes-batch-01.json'
+      - 'data/airfryer-100-editorial-plan.json'
+      - 'scripts/test-airfryer-batch-01.cjs'
+      - '.github/workflows/airfryer-batch-01.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  validate-batch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          persist-credentials: false
+      - name: Validate 10 full poultry drafts, source links, safety and honest statuses
+        run: node scripts/test-airfryer-batch-01.cjs
