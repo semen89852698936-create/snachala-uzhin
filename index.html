@@ -1281,7 +1281,7 @@ const AIRFRYER_CATEGORY_MAP = { 'Птица':'poultry', 'Мясо':'meat', 'Ры
 const AIRFRYER_APP_RECIPES = (window.AIRFRYER_RECIPE_DATA || []).map(source => {
   let timerAssigned = false;
   const steps = (source.steps || []).map((detail, index) => {
-    const isCooking = /\b(готовить|запекать|жарить|обжаривать)\b/i.test(detail);
+    const isCooking = /(готовить|запекать|жарить|обжаривать)/i.test(detail);
     const timeMatch = detail.match(/(?:готовить|запекать|жарить|обжаривать)[^.;]{0,100}?(\d{1,2})(?:[–-](\d{1,2}))?\s*(?:минут|мин)/i);
     const fallbackTimer = !timerAssigned ? Number((source.cook_minutes || [])[0] || 0) : 0;
     const timer = isCooking ? Number(timeMatch ? timeMatch[1] : fallbackTimer) : 0;
