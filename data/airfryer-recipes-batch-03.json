@@ -256,9 +256,9 @@
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
       "photo_record_path": "photo-library/airfryer/records/af-beef-meatballs-oregano-2.json",
-      "visual_review_status": "needs_regeneration",
+      "visual_review_status": "pending_recheck",
       "visual_review_note": "Повторный снимок показывает диптих с двумя панелями. Сами фрикадельки теперь выглядят приготовленными, но композиция нарушает требование одного цельного фото.",
-      "photo_sha256": "812bbbefe1c114479c413f262cc3f43d30a561f4244ff40391b5cbeb502b5e40"
+      "photo_sha256": "56df763b4436c30845aa14f1e947748a0fb3dfb76a2fcded6391f98de0b345ec"
     },
     {
       "number": 24,
