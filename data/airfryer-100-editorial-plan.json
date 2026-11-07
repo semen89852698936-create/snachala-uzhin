@@ -720,12 +720,13 @@
       "title": "Пикша с паприкой и лимонной цедрой",
       "servings": 2,
       "editorial_concept": "Порционные куски в один слой; проверять расслоение мякоти и безопасную готовность.",
-      "recipe_status": "idea_not_yet_source_checked",
-      "source_status": "not_checked",
-      "tefal_book_status": "pending",
+      "recipe_status": "full_draft_source_reviewed",
+      "source_status": "cross_checked",
+      "tefal_book_status": "reference_compared_not_equivalent",
       "photo_status": "not_started",
       "appliance_test_status": "not_tested",
-      "publication_status": "not_published"
+      "publication_status": "not_published",
+      "batch_number": 5
     },
     {
       "number": 42,
@@ -734,12 +735,13 @@
       "title": "Сибас целиком с лимоном",
       "servings": 2,
       "editorial_concept": "Размер рыбы и корзины критичны; надрезы и переворот выполнять только по проверенному методу.",
-      "recipe_status": "idea_not_yet_source_checked",
-      "source_status": "not_checked",
-      "tefal_book_status": "pending",
+      "recipe_status": "full_draft_source_reviewed",
+      "source_status": "cross_checked",
+      "tefal_book_status": "no_direct_equivalent",
       "photo_status": "not_started",
       "appliance_test_status": "not_tested",
-      "publication_status": "not_published"
+      "publication_status": "not_published",
+      "batch_number": 5
     },
     {
       "number": 43,
@@ -748,12 +750,13 @@
       "title": "Филе дорадо с прованскими травами",
       "servings": 2,
       "editorial_concept": "Филе кожей вниз, если это подтверждено тестом; следить за тонкими краями.",
-      "recipe_status": "idea_not_yet_source_checked",
-      "source_status": "not_checked",
-      "tefal_book_status": "pending",
+      "recipe_status": "full_draft_source_reviewed",
+      "source_status": "cross_checked",
+      "tefal_book_status": "direct_or_method_reference_compared",
       "photo_status": "not_started",
       "appliance_test_status": "not_tested",
-      "publication_status": "not_published"
+      "publication_status": "not_published",
+      "batch_number": 5
     },
     {
       "number": 44,
@@ -762,12 +765,13 @@
       "title": "Креветки с чесноком и лимоном",
       "servings": 2,
       "editorial_concept": "Креветки одного калибра; короткий интервал и проверка непрозрачности, не пересушить.",
-      "recipe_status": "idea_not_yet_source_checked",
-      "source_status": "not_checked",
-      "tefal_book_status": "pending",
+      "recipe_status": "full_draft_source_reviewed",
+      "source_status": "cross_checked",
+      "tefal_book_status": "reference_compared_not_equivalent",
       "photo_status": "not_started",
       "appliance_test_status": "not_tested",
-      "publication_status": "not_published"
+      "publication_status": "not_published",
+      "batch_number": 5
     },
     {
       "number": 45,
@@ -776,12 +780,13 @@
       "title": "Креветки в кокосовой корочке",
       "servings": 2,
       "editorial_concept": "Сухая панировка с тонким слоем масла; небольшая партия, переворот.",
-      "recipe_status": "idea_not_yet_source_checked",
-      "source_status": "not_checked",
-      "tefal_book_status": "pending",
+      "recipe_status": "full_draft_source_reviewed",
+      "source_status": "cross_checked",
+      "tefal_book_status": "reference_compared_not_equivalent",
       "photo_status": "not_started",
       "appliance_test_status": "not_tested",
-      "publication_status": "not_published"
+      "publication_status": "not_published",
+      "batch_number": 5
     },
     {
       "number": 46,
@@ -790,12 +795,13 @@
       "title": "Кольца кальмара с лимонным перцем",
       "servings": 2,
       "editorial_concept": "Кольца одинаковой толщины; проверить короткий режим, иначе кальмар станет жёстким.",
-      "recipe_status": "idea_not_yet_source_checked",
-      "source_status": "not_checked",
-      "tefal_book_status": "pending",
+      "recipe_status": "full_draft_source_reviewed",
+      "source_status": "cross_checked",
+      "tefal_book_status": "no_direct_equivalent",
       "photo_status": "not_started",
       "appliance_test_status": "not_tested",
-      "publication_status": "not_published"
+      "publication_status": "not_published",
+      "batch_number": 5
     },
     {
       "number": 47,
@@ -804,12 +810,13 @@
       "title": "Морские гребешки с петрушечным маслом",
       "servings": 2,
       "editorial_concept": "Крупные сухие гребешки с промежутками; масло и зелень добавлять после нагрева.",
-      "recipe_status": "idea_not_yet_source_checked",
-      "source_status": "not_checked",
-      "tefal_book_status": "pending",
+      "recipe_status": "full_draft_source_reviewed",
+      "source_status": "cross_checked",
+      "tefal_book_status": "no_direct_equivalent",
       "photo_status": "not_started",
       "appliance_test_status": "not_tested",
-      "publication_status": "not_published"
+      "publication_status": "not_published",
+      "batch_number": 5
     },
     {
       "number": 48,
@@ -818,12 +825,13 @@
       "title": "Стейк тунца в кунжуте",
       "servings": 2,
       "editorial_concept": "Отдельно определить допустимую степень прожарки и безопасность сырья; не обещать универсальный режим.",
-      "recipe_status": "idea_not_yet_source_checked",
-      "source_status": "not_checked",
-      "tefal_book_status": "pending",
+      "recipe_status": "full_draft_source_reviewed",
+      "source_status": "cross_checked",
+      "tefal_book_status": "no_direct_equivalent",
       "photo_status": "not_started",
       "appliance_test_status": "not_tested",
-      "publication_status": "not_published"
+      "publication_status": "not_published",
+      "batch_number": 5
     },
     {
       "number": 49,
@@ -832,12 +840,13 @@
       "title": "Скумбрия с лимоном и травами",
       "servings": 2,
       "editorial_concept": "Целая рыба или филе - отдельные параметры; учитывать жирность и возможный дым.",
-      "recipe_status": "idea_not_yet_source_checked",
-      "source_status": "not_checked",
-      "tefal_book_status": "pending",
+      "recipe_status": "full_draft_source_reviewed",
+      "source_status": "cross_checked",
+      "tefal_book_status": "no_direct_equivalent",
       "photo_status": "not_started",
       "appliance_test_status": "not_tested",
-      "publication_status": "not_published"
+      "publication_status": "not_published",
+      "batch_number": 5
     },
     {
       "number": 50,
@@ -846,12 +855,13 @@
       "title": "Рыбные котлеты из лосося и картофеля",
       "servings": 2,
       "editorial_concept": "Котлеты одинаковой толщины; охладить массу перед формованием, перевернуть аккуратно.",
-      "recipe_status": "idea_not_yet_source_checked",
-      "source_status": "not_checked",
-      "tefal_book_status": "pending",
+      "recipe_status": "full_draft_source_reviewed",
+      "source_status": "cross_checked",
+      "tefal_book_status": "no_direct_equivalent",
       "photo_status": "not_started",
       "appliance_test_status": "not_tested",
-      "publication_status": "not_published"
+      "publication_status": "not_published",
+      "batch_number": 5
     },
     {
       "number": 51,
