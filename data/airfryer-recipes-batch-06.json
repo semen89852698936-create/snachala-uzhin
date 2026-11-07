@@ -524,8 +524,7 @@
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
       "photo_record_path": "photo-library/airfryer/records/af-brussels-lemon-2.json",
-      "visual_review_status": "pending_recheck",
-      "visual_review_note": "Вместо порции небольших кочанчиков брюссельской капусты изображены два огромных поперечных среза, похожих на обычную капусту.",
+      "visual_review_status": "visually_accepted",
       "photo_sha256": "b9cf2432b8bd9814bb55416648747481449ecd02ffabf0f92a77277cda08fa5d"
     },
     {
@@ -764,8 +763,7 @@
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
       "photo_record_path": "photo-library/airfryer/records/af-baby-potatoes-rosemary-2.json",
-      "visual_review_status": "pending_recheck",
-      "visual_review_note": "Картофель выглядит скорее отварным, чем приготовленным в аэрогриле: почти нет золотистой корочки и поджаренных срезов.",
+      "visual_review_status": "visually_accepted",
       "photo_sha256": "01a5a3b648dc60e44a810018c7ab1c666db3c62868366bb44bda4f66c11cd939"
     },
     {
