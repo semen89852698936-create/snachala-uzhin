@@ -1,0 +1,49 @@
+name: Six airfryer Yandex photo candidates
+on:
+  push:
+    branches: ['photo-production/airfryer-six-candidates-20261107']
+    paths:
+      - 'scripts/oneoff_airfryer_photos.py'
+      - '.github/workflows/airfryer-six-photos.yml'
+  pull_request:
+    paths:
+      - 'scripts/oneoff_airfryer_photos.py'
+      - '.github/workflows/airfryer-six-photos.yml'
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: airfryer-six-photo-candidates-20261107
+  cancel-in-progress: false
+jobs:
+  generate:
+    if: github.event_name == 'push' || github.event_name == 'pull_request' || github.ref == 'refs/heads/photo-production/airfryer-six-candidates-20261107'
+    runs-on: ubuntu-latest
+    timeout-minutes: 35
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+        with:
+          persist-credentials: true
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+        with:
+          repository: semen89852698936-create/snachala-uzhin
+          ref: photo-production/yandex-ai-art-1001
+          path: _photo_source
+          persist-credentials: false
+          sparse-checkout: |
+            photo-pipeline
+          sparse-checkout-cone-mode: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install image codec
+        run: python -m pip install 'Pillow>=10,<13'
+      - name: Free prompt and recipe preflight
+        run: python3 scripts/oneoff_airfryer_photos.py
+      - name: Generate six paid Yandex AI candidates on the dedicated branch only
+        if: github.event_name == 'push'
+        env:
+          YANDEX_API_KEY: ${{ secrets.YANDEX_API_KEY }}
+          YANDEX_FOLDER_ID: ${{ secrets.YANDEX_FOLDER_ID || 'b1g00u8p0k5nl98v8nre' }}
+          PHOTO_COST_APPROVED: 'true'
+        run: python3 scripts/oneoff_airfryer_photos.py --execute
