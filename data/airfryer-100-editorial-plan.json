@@ -188,7 +188,11 @@
       "photo_status": "not_started",
       "appliance_test_status": "not_tested",
       "publication_status": "not_published",
-      "batch_number": 1
+      "batch_number": 1,
+      "source_status": "source_cross_checked",
+      "source_urls": [
+        "https://www.tropicanabrandsgroup.com/health/recipes/air-fryer-orange-chicken"
+      ]
     },
     {
       "number": 11,
