@@ -45,6 +45,8 @@ const {chromium}=require('playwright');
      assert.equal(spread.introDirection,'column','mobile recipe reading order incorrect');
      assert(spread.photoTop<spread.headingTop,'mobile food photograph must precede recipe heading');
    }
+   const stepCopy=await page.locator('#recipeDetail .du-editorial-step-copy').first().evaluate(el=>({width:el.getBoundingClientRect().width,word:el.innerText.slice(0,100)}));
+   assert(stepCopy.width>(scenario.name==='desktop'?245:190),'recipe instructions squeezed into a narrow column: '+JSON.stringify(stepCopy));
    assert(await page.locator('#recipeDetail .ingredient-check').count()>=5,'steak ingredients missing');
    const before=await page.locator('#recipeDetail .ingredient-check strong').first().innerText();
    await page.locator('#portionPlus').click();
