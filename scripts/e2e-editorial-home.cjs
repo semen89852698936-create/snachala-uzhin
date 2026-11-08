@@ -130,7 +130,18 @@ const {chromium}=require('playwright');
    }
    assert.deepEqual(photoCover.chapters.map(x=>x.href),['#catalog','#airfryer','#evening'],
      'All three added editorial magazine links must navigate to real site sections');
-   await page.screenshot({path:'/tmp/editorial-home-cover-'+viewport.width+'.png',fullPage:false});
+ 
+   const featurePhotos=await page.evaluate(async ()=>{
+     const photos=[...document.querySelectorAll('#homeView .du-cover-chapters .du-cover-chapters-photo')];
+     for(const photo of photos){photo.loading='eager';await photo.decode();}
+     return photos.map(photo=>({width:photo.naturalWidth,height:photo.naturalHeight,url:photo.currentSrc}));
+   });
+   assert.equal(featurePhotos.length,2,'magazine footer needs real visible food photographs');
+   assert(featurePhotos.every(p=>p.width>=100&&p.height>=100),'footer food photography not loaded: '+JSON.stringify(featurePhotos));
+   await page.locator('#homeView .du-cover-chapters').screenshot({
+     path:'/tmp/editorial-home-chapters-'+viewport.width+'.png',
+     animations:'disabled'
+   });   await page.screenshot({path:'/tmp/editorial-home-cover-'+viewport.width+'.png',fullPage:false});
    const masthead=await page.evaluate(()=>{
      const nav=document.querySelector('.header .main-nav');
      const evening=nav?.querySelector('a[data-nav="evening"]');
