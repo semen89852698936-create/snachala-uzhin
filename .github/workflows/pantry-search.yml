@@ -12,6 +12,7 @@ on:
       - 'scripts/test_editorial_recipe.cjs'
       - 'scripts/test_cooking_timer.cjs'
       - 'scripts/e2e-cooking-timer.cjs'
+      - 'scripts/e2e-cooking-progress.cjs'
       - 'cooking-timer-sw.js'
       - 'scripts/e2e-editorial-recipe.cjs'
       - 'assets/editorial-recipe.css'
@@ -28,6 +29,7 @@ on:
       - 'scripts/test_editorial_recipe.cjs'
       - 'scripts/test_cooking_timer.cjs'
       - 'scripts/e2e-cooking-timer.cjs'
+      - 'scripts/e2e-cooking-progress.cjs'
       - 'cooking-timer-sw.js'
       - 'scripts/e2e-editorial-recipe.cjs'
       - 'assets/editorial-recipe.css'
@@ -72,3 +74,4 @@ jobs:
           node scripts/e2e-personal-recipes-shopping.cjs
           node scripts/e2e-editorial-recipe.cjs
           node scripts/e2e-cooking-timer.cjs
+          node scripts/e2e-cooking-progress.cjs
