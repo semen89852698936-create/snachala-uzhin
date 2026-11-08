@@ -3481,3 +3481,6 @@ body:not(.du-evening-mode) .header .brand.du-brand:focus-visible{
     color:#fffaf5;
   }
 }
+
+/* ONLY_REMOVE_TOP_DRAWN_GLASS_20261108: keep logo spacing and all other UI unchanged. */
+header.header .du-brand-mark svg.du-wine-icon{visibility:hidden!important;}
