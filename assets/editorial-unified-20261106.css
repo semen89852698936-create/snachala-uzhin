@@ -3485,177 +3485,228 @@ body:not(.du-evening-mode) .header .brand.du-brand:focus-visible{
 /* ONLY_REMOVE_TOP_DRAWN_GLASS_20261108: keep logo spacing and all other UI unchanged. */
 header.header .du-brand-mark svg.du-wine-icon{visibility:hidden!important;}
 
-/* THREE_CHAPTERS_AS_TORN_RECIPE_CUTOUTS_20261108
-   Owner request: only style the 1001 recipes, Aerogrill and Our Evening
-   chapter windows as individual pasted-in editorial recipe cutouts.
-   Keep their existing links, wording, photography and vinyl illustration.
-   No changes to header, cover hero, recipe data or functional code. */
-#homeView .du-cover-chapters{
+/* REFERENCE_EXACT_THREE_CUTOUTS_20261108
+   Exactly THREE live magazine cutouts, corresponding to the approved
+   screenshot's first three modules. The fourth "Recipe of the Week"
+   cutout is deliberately absent. No hero, header, text, routes or
+   recipe data are modified. Existing two food photos and vinyl used. */
+#homeView .du-cover-chapters {
+  position:relative;
+  z-index:8;
+  isolation:isolate;
   display:grid;
-  grid-template-columns:repeat(3,minmax(0,1fr));
-  align-items:stretch;
-  gap:clamp(13px,1.8vw,29px);
-  padding:clamp(35px,3.9vw,59px) clamp(21px,4vw,66px) clamp(37px,4.4vw,65px);
-  background:var(--du-editorial-paper-grain);
+  grid-template-columns:repeat(3,minmax(0,1fr)) minmax(0,1.12fr);
+  align-items:start;
+  gap:clamp(9px,.95vw,15px);
+  width:100%;
+  margin:-clamp(28px,3vw,47px) 0 0;
+  padding:0 clamp(12px,1.5vw,24px) clamp(30px,3.3vw,50px);
+  background:transparent;
+  border:0;
   overflow:visible;
 }
-#homeView .du-cover-chapters > a{
+/* Three paper fragments, not a three-column website footer. */
+#homeView .du-cover-chapters > a {
   position:relative;
-  display:flex;
-  flex-direction:column;
-  align-items:flex-start;
-  justify-content:flex-start;
   isolation:isolate;
-  overflow:hidden;
+  display:block;
+  box-sizing:border-box;
   min-width:0;
-  min-height:clamp(248px,20.4vw,310px);
+  width:100%;
+  min-height:clamp(210px,18.7vw,287px);
   margin:0;
-  padding:clamp(36px,3.35vw,52px) clamp(25px,2.65vw,41px) clamp(80px,7vw,108px);
+  padding:clamp(27px,2.5vw,39px) clamp(20px,2.1vw,34px) clamp(67px,6vw,92px);
+  overflow:hidden;
   border:0;
   border-radius:0;
-  color:#6a1e32;
-  background-color:#f4e6d5;
-  background-image:
-    linear-gradient(125deg,rgba(255,250,241,.75),rgba(249,237,219,.45) 58%,rgba(235,217,198,.35)),
-    var(--du-paper-fibre-grain);
+  background-color:#f5e5d1;
+  background-image:linear-gradient(145deg,rgba(255,250,242,.66),rgba(244,224,202,.15)),var(--du-paper-fibre-grain);
   background-size:100% 100%,192px 192px;
   background-repeat:no-repeat,repeat;
+  color:#671f31;
   -webkit-mask-image:var(--du-ripped-paper-mask);
   mask-image:var(--du-ripped-paper-mask);
+  -webkit-mask-position:center;
+  mask-position:center;
   -webkit-mask-size:100% 100%;
   mask-size:100% 100%;
   -webkit-mask-repeat:no-repeat;
   mask-repeat:no-repeat;
-  transform:rotate(-1.35deg);
-  filter:drop-shadow(0 11px 10px rgba(67,39,35,.23));
+  filter:drop-shadow(0 9px 10px rgba(46,28,25,.29));
+  box-shadow:none;
   text-decoration:none;
-  transition:transform .2s ease,filter .2s ease;
+  transform:rotate(-.9deg);
+  transform-origin:center center;
+  transition:filter .18s ease,transform .18s ease;
 }
-#homeView .du-cover-chapters > a:nth-child(2){transform:rotate(1.1deg);}
-#homeView .du-cover-chapters > a:nth-child(3){transform:rotate(-.9deg);}
+#homeView .du-cover-chapters > a:nth-child(2){
+  transform:rotate(1deg);
+}
+#homeView .du-cover-chapters > a:nth-child(3){
+  transform:rotate(-.8deg);
+}
 #homeView .du-cover-chapters > a:is(:hover,:focus-visible){
-  transform:rotate(0deg) translateY(-4px);
-  filter:drop-shadow(0 14px 12px rgba(67,39,35,.30));
-  background-color:#f4e6d5;
-  outline:2px solid #782639;
+  transform:rotate(0deg) translateY(-3px);
+  filter:drop-shadow(0 12px 13px rgba(46,28,25,.34));
+  background-color:#f5e5d1;
+  outline:2px solid #742238;
   outline-offset:3px;
 }
 #homeView .du-cover-chapters > a strong{
   position:relative;
-  z-index:2;
+  z-index:3;
   display:block;
-  max-width:9ch;
+  width:max-content;
+  max-width:100%;
   margin:0;
-  font:italic 600 clamp(38px,3.7vw,61px)/.93 var(--du-magazine-serif);
+  color:#70203a;
+  font:italic 600 clamp(35px,3.35vw,54px)/.94 var(--du-magazine-serif);
   letter-spacing:-.035em;
-  color:#6a1e32;
-  text-shadow:0 1px 0 rgba(255,248,236,.8);
+  text-shadow:0 1px 0 rgba(255,249,240,.85);
+}
+#homeView .du-cover-chapters > a:first-child strong {
+  width:6ch;
+  max-width:6ch;
 }
 #homeView .du-cover-chapters > a span{
   position:relative;
-  z-index:2;
+  z-index:3;
   display:block;
-  max-width:18ch;
-  margin:clamp(11px,1.35vw,19px) 0 0;
-  font:500 clamp(14px,1.1vw,17px)/1.35 var(--du-magazine-serif);
-  color:#342522;
-  text-shadow:0 1px 0 rgba(255,248,236,.7);
+  max-width:15ch;
+  margin:clamp(12px,1.4vw,21px) 0 0;
+  color:#30211d;
+  font:500 clamp(15px,1.23vw,19px)/1.16 var(--du-magazine-serif);
+  text-shadow:0 1px 0 rgba(255,249,240,.82);
 }
-/* Existing kitchen photography grows into the lower portion of each cutout,
-   fading into the paper behind the legible live text. */
+/* Small wine-red single-stroke editorial underline from the reference. */
+#homeView .du-cover-chapters > a span::after{
+  content:"";
+  display:block;
+  width:clamp(45px,4.3vw,66px);
+  height:10px;
+  margin-top:11px;
+  background:transparent url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 70 12'%3E%3Cpath d='M3 10 Q34 1 67 4' fill='none' stroke='%23802b40' stroke-width='2' stroke-linecap='round'/%3E%3C/svg%3E") center / contain no-repeat;
+}
+/* Keep already-published chapter photographs, crop them into the paper
+   from below/right, with a softly dissolved LEFT edge like the cutout. */
 #homeView .du-cover-chapters .du-cover-chapters-photo{
   display:block;
   position:absolute;
-  z-index:-1;
+  z-index:1;
   pointer-events:none;
-  right:-4%;
-  bottom:-9%;
-  width:75%;
+  top:auto;
+  left:auto;
+  right:-3%;
+  bottom:-5%;
+  width:68%;
   height:83%;
   object-fit:cover;
   object-position:center;
-  opacity:.92;
-  -webkit-mask-image:linear-gradient(90deg,transparent 0%,rgba(0,0,0,.27) 24%,#000 63%);
-  mask-image:linear-gradient(90deg,transparent 0%,rgba(0,0,0,.27) 24%,#000 63%);
+  opacity:.97;
+  -webkit-mask-image:linear-gradient(to right,transparent 0%,rgba(0,0,0,.38) 19%,#000 57%);
+  mask-image:linear-gradient(to right,transparent 0%,rgba(0,0,0,.38) 19%,#000 57%);
 }
-/* Keep the pre-existing vinyl disc in Our Evening as its photographic motif. */
+/* Our Evening uses its EXISTING vinyl image motif, not a replacement photo. */
 #homeView .du-cover-chapters > a:nth-child(3)::before{
   content:"";
   position:absolute;
-  z-index:-1;
+  z-index:1;
   pointer-events:none;
-  width:76%;
+  display:block;
+  top:auto;
+  left:auto;
+  right:-20%;
+  bottom:-53%;
+  width:77%;
+  height:auto;
   aspect-ratio:1;
-  right:-21%;
-  bottom:-44%;
+  border:2px solid #241a1d;
   border-radius:50%;
-  border:2px solid #24191c;
-  background:
-    radial-gradient(circle at center,#982a4b 0 9%,#2c1d21 10% 13%,transparent 14%),
-    repeating-radial-gradient(circle at center,
-      #201b1c 0px,#342a2a 2px,#1e1a1b 5px,#2d2526 7px);
-  opacity:.84;
-  box-shadow:0 8px 22px rgba(34,18,20,.25);
+  opacity:.86;
+  background:radial-gradient(circle at center,
+      #b46d6a 0 1.5%,#77223b 2% 11%,#231b1e 11.5% 15%,transparent 15.5%),
+      repeating-radial-gradient(circle at center,
+        #211c1e 0,#352b2d 2px,#1e1b1d 4px,#342a2c 7px);
+  box-shadow:0 6px 19px rgba(32,19,22,.3);
 }
-/* Like the reference Recipe of the Week, each whole card is the link.
-   The round arrow is only a visual cue; no new button is added. */
+/* A visible round burgundy arrow at the lower-right of EACH cutout.
+   The entire original card remains the actual keyboard-accessible link. */
 #homeView .du-cover-chapters > a::after,
 #homeView .du-cover-chapters > a:nth-child(3)::after{
   content:"→";
   position:absolute;
-  z-index:3;
-  right:clamp(24px,2.45vw,38px);
-  bottom:clamp(30px,2.8vw,43px);
-  width:37px;
-  height:37px;
+  z-index:4;
+  top:auto;
+  left:auto;
+  right:clamp(16px,1.75vw,27px);
+  bottom:clamp(20px,2vw,31px);
   display:grid;
   place-items:center;
+  width:clamp(34px,3vw,43px);
+  height:clamp(34px,3vw,43px);
+  border:0;
   border-radius:50%;
-  color:#fff9f1;
-  background:#74223a;
-  font:400 23px/1 Georgia,serif;
-  box-shadow:0 4px 9px rgba(44,14,23,.18);
+  background:#77223a;
+  color:#fff8ef;
+  font:400 clamp(19px,1.9vw,28px)/1 Georgia,serif;
+  box-shadow:0 4px 7px rgba(60,21,27,.2);
   opacity:1;
 }
-@media (min-width:761px) and (max-width:1080px){
-  #homeView .du-cover-chapters{gap:11px;padding-inline:18px;}
-  #homeView .du-cover-chapters > a{
-    min-height:247px;
-    padding:37px 21px 81px;
+/* Tablet width: keep three fragments instead of clipping their titles. */
+@media(min-width:761px) and (max-width:1150px){
+  #homeView .du-cover-chapters{
+    grid-template-columns:repeat(3,minmax(0,1fr)) minmax(0,.5fr);
+    gap:9px;
+    margin-top:-30px;
+    padding-inline:12px;
   }
-  #homeView .du-cover-chapters > a strong{font-size:clamp(36px,4.1vw,47px);}
-  #homeView .du-cover-chapters > a span{font-size:14px;}
+  #homeView .du-cover-chapters > a{
+    min-height:225px;
+    padding:28px 16px 68px;
+  }
+  #homeView .du-cover-chapters > a strong{
+    font-size:clamp(31px,3.4vw,40px);
+  }
+  #homeView .du-cover-chapters > a span{
+    font-size:15px;
+    max-width:14ch;
+  }
 }
+/* Mobile: the same three cutouts stacked, still overlapping the torn
+   bottom edge of the photograph, without horizontal scrolling. */
 @media(max-width:760px){
   #homeView .du-cover-chapters{
     grid-template-columns:minmax(0,1fr);
-    gap:18px;
-    padding:27px 16px 34px;
+    width:100%;
+    gap:13px;
+    margin-top:-19px;
+    padding:0 15px 32px;
   }
   #homeView .du-cover-chapters > a{
-    min-height:226px;
-    padding:36px 27px 76px;
-    border:0;
-    transform:rotate(-.7deg);
+    min-height:210px;
+    padding:31px 26px 68px;
+    transform:rotate(-.5deg);
   }
-  #homeView .du-cover-chapters > a:nth-child(2){transform:rotate(.7deg);}
-  #homeView .du-cover-chapters > a:nth-child(3){transform:rotate(-.5deg);}
-  #homeView .du-cover-chapters > a strong{font-size:clamp(39px,9vw,50px);}
-  #homeView .du-cover-chapters > a span{font-size:16px;max-width:17ch;}
+  #homeView .du-cover-chapters > a:nth-child(2){transform:rotate(.5deg);}
+  #homeView .du-cover-chapters > a:nth-child(3){transform:rotate(-.4deg);}
+  #homeView .du-cover-chapters > a strong{
+    font-size:clamp(38px,10vw,51px);
+  }
+  #homeView .du-cover-chapters > a span{
+    max-width:15ch;
+    font-size:17px;
+    margin-top:12px;
+  }
   #homeView .du-cover-chapters .du-cover-chapters-photo{
     right:-2%;
-    bottom:-8%;
-    width:66%;
+    bottom:-6%;
+    width:63%;
     height:85%;
   }
   #homeView .du-cover-chapters > a:nth-child(3)::before{
-    width:66%;
-    right:-16%;
-    bottom:-57%;
-  }
-  #homeView .du-cover-chapters > a::after{
-    right:27px;
-    bottom:28px;
+    width:67%;
+    right:-13%;
+    bottom:-68%;
   }
 }
 @media(prefers-reduced-motion:reduce){
