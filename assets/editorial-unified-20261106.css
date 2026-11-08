@@ -1894,3 +1894,194 @@ body.du-evening-mode #music a:focus-visible{
     font-size:clamp(37px,9vw,53px);
   }
 }
+
+
+/* APPROVED_PHOTOGRAPHIC_PAPER_BLEND_20261108_V3
+   Photographs and type are ONE visual plane, not adjacent rectangular cards.
+   Fade image pixels into parchment, preserve organic torn boundaries, keep all
+   text and controls in live HTML. No existing image src or UI behavior changed. */
+body.du-evening-mode #eveningLanding{
+  background:var(--du-editorial-paper-grain);
+  isolation:isolate;
+}
+body.du-evening-mode #eveningLanding > .du-evening-landing-content{
+  background:transparent;
+  box-shadow:none;
+  z-index:3;
+}
+body.du-evening-mode #eveningLanding > .du-evening-landing-photo{
+  background:transparent;
+  border:0;
+  box-shadow:none;
+}
+body.du-evening-mode #eveningLanding .du-evening-landing-caption{
+  z-index:3;
+}
+body.du-evening-mode #eveningLanding .du-story-dinner-copy::before{
+  display:none;
+}
+body.du-evening-mode #eveningLanding .du-story-dinner-copy{
+  border:0;
+  box-shadow:none;
+}
+body.du-evening-mode #evening .du-story-after-copy{
+  position:relative;
+  z-index:2;
+  background:transparent;
+}
+
+/* Large edition: true overlap, photographic gradients and a softly torn paper seam.
+   The image physically extends UNDER the type: it is no longer a hard column cut. */
+@media(min-width:1021px){
+  body.du-evening-mode #eveningLanding > .du-evening-landing-content{
+    padding-top:clamp(32px,3.8vw,59px);
+    padding-bottom:clamp(30px,3.7vw,54px);
+  }
+  body.du-evening-mode #eveningLanding > .du-evening-landing-content::after{
+    display:none;
+  }
+  body.du-evening-mode #eveningLanding > .du-evening-landing-photo{
+    overflow:visible;
+    clip-path:none;
+    z-index:1;
+    isolation:auto;
+  }
+  body.du-evening-mode #eveningLanding > .du-evening-landing-photo > img{
+    position:absolute;
+    height:100%;
+    top:0;
+    right:0;
+    left:auto;
+    bottom:0;
+    width:calc(100% + clamp(120px,16vw,235px));
+    max-width:none;
+    object-fit:cover;
+    object-position:53% 42%;
+    -webkit-mask-image:linear-gradient(to right,transparent 0%,rgba(0,0,0,.12) 8%,rgba(0,0,0,.65) 19%,#000 34%);
+    mask-image:linear-gradient(to right,transparent 0%,rgba(0,0,0,.12) 8%,rgba(0,0,0,.65) 19%,#000 34%);
+  }
+  body.du-evening-mode #eveningLanding > .du-evening-landing-photo::after{
+    content:"";
+    position:absolute;
+    z-index:2;
+    left:0;right:0;bottom:-1px;height:33px;
+    pointer-events:none;
+    background:var(--du-editorial-paper-grain);
+    clip-path:polygon(0 94%,4% 59%,9% 74%,15% 42%,20% 65%,28% 46%,35% 78%,42% 40%,50% 69%,57% 35%,65% 76%,71% 48%,78% 73%,84% 41%,91% 72%,97% 42%,100% 59%,100% 100%,0 100%);
+  }
+  /* Text lives on parchment but its visible right margin dissolves into the image. */
+  body.du-evening-mode #eveningLanding .du-evening-landing-content h1{
+    position:relative;
+    z-index:3;
+    max-width:7.5ch;
+    line-height:.79;
+  }
+  body.du-evening-mode #eveningLanding .du-evening-landing-lead,
+  body.du-evening-mode #eveningLanding .du-evening-landing-text,
+  body.du-evening-mode #eveningLanding .du-evening-landing-cta{
+    position:relative;
+    z-index:3;
+  }
+  /* The second chapter becomes steak → transparent paper → dinner table.
+     Adjacent photos extend beneath the text before their edges fade away. */
+  body.du-evening-mode #eveningLanding > .du-story-dinner{
+    margin-top:-2px;
+    background:var(--du-editorial-paper-grain);
+    min-height:clamp(405px,38vw,545px);
+    overflow:visible;
+  }
+  body.du-evening-mode #eveningLanding > .du-story-dinner::before{
+    width:calc(100% + clamp(62px,6vw,98px));
+    align-self:stretch;
+    min-height:100%;
+    background-position:51% center;
+    -webkit-mask-image:linear-gradient(to right,#000 0%,#000 65%,rgba(0,0,0,.75) 77%,transparent 100%);
+    mask-image:linear-gradient(to right,#000 0%,#000 65%,rgba(0,0,0,.75) 77%,transparent 100%);
+  }
+  body.du-evening-mode #eveningLanding .du-story-dinner-copy{
+    align-self:stretch;
+    margin-left:-21px;
+    margin-right:-32px;
+    padding:clamp(23px,2.9vw,44px) clamp(21px,2.9vw,46px);
+    background:linear-gradient(90deg,
+      rgba(247,236,223,0) 0%,rgba(247,236,223,.79) 11%,
+      rgba(251,243,233,.97) 25%,rgba(250,241,231,.97) 67%,
+      rgba(249,238,224,.87) 84%,rgba(249,238,224,0) 100%);
+    z-index:3;
+  }
+  body.du-evening-mode #eveningLanding .du-story-dinner-photo{
+    width:calc(100% + clamp(63px,7vw,110px));
+    margin-left:calc(-1 * clamp(63px,7vw,110px));
+    overflow:visible;
+    position:relative;
+    z-index:1;
+    -webkit-mask-image:linear-gradient(to right,transparent 0%,rgba(0,0,0,.5) 17%,#000 37%);
+    mask-image:linear-gradient(to right,transparent 0%,rgba(0,0,0,.5) 17%,#000 37%);
+  }
+  body.du-evening-mode #eveningLanding .du-story-dinner-photo img{
+    display:block;
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    object-position:center;
+  }
+  body.du-evening-mode #eveningLanding > .du-story-dinner::after{
+    content:"";
+    position:absolute;
+    left:0;right:0;bottom:-1px;
+    height:34px;z-index:4;pointer-events:none;
+    background:var(--du-editorial-paper-grain);
+    clip-path:polygon(0 73%,5% 48%,10% 66%,18% 42%,24% 81%,31% 44%,39% 71%,47% 35%,54% 72%,60% 40%,67% 66%,75% 36%,83% 76%,90% 41%,95% 68%,100% 49%,100% 100%,0 100%);
+  }
+  /* Evening photo bleeds INTO the dark paper instead of sitting in a box. */
+  body.du-evening-mode #evening .du-story-after{
+    isolation:isolate;
+    background:linear-gradient(105deg,#2e1c19 0%,#48291f 63%,#43251b 100%);
+  }
+  body.du-evening-mode #evening .du-story-after-photo{
+    width:calc(100% + clamp(75px,11vw,160px));
+    margin-left:calc(-1 * clamp(75px,11vw,160px));
+    overflow:visible;
+    -webkit-mask-image:linear-gradient(to right,transparent 0%,rgba(0,0,0,.4) 17%,#000 40%);
+    mask-image:linear-gradient(to right,transparent 0%,rgba(0,0,0,.4) 17%,#000 40%);
+  }
+  body.du-evening-mode #evening .du-story-after-photo img{
+    display:block;
+    height:100%;
+    width:100%;
+    object-fit:cover;
+  }
+}
+/* Tablet and phone: keep the image/text fusion as a softly fading page transition,
+   but never send photos behind text in a narrow reading column. */
+@media(max-width:1020px){
+  body.du-evening-mode #eveningLanding > .du-evening-landing-content{
+    background:var(--du-editorial-paper-grain);
+  }
+  body.du-evening-mode #eveningLanding > .du-evening-landing-photo{
+    overflow:hidden;
+    clip-path:none;
+    position:relative;
+  }
+  body.du-evening-mode #eveningLanding > .du-evening-landing-photo > img{
+    display:block;
+    width:100%;height:100%;
+    object-fit:cover;
+    -webkit-mask-image:linear-gradient(to bottom,transparent 0%,#000 14%,#000 89%,transparent 100%);
+    mask-image:linear-gradient(to bottom,transparent 0%,#000 14%,#000 89%,transparent 100%);
+  }
+  body.du-evening-mode #eveningLanding .du-story-dinner-copy{
+    background:var(--du-editorial-paper-grain);
+    z-index:2;
+  }
+  body.du-evening-mode #eveningLanding .du-story-dinner-photo{
+    overflow:hidden;
+    -webkit-mask-image:linear-gradient(to bottom,transparent 0%,#000 13%,#000 100%);
+    mask-image:linear-gradient(to bottom,transparent 0%,#000 13%,#000 100%);
+  }
+  body.du-evening-mode #evening .du-story-after-photo{
+    overflow:hidden;
+    -webkit-mask-image:linear-gradient(to bottom,transparent 0%,#000 15%,#000 100%);
+    mask-image:linear-gradient(to bottom,transparent 0%,#000 15%,#000 100%);
+  }
+}
