@@ -17,9 +17,26 @@ const {chromium}=require('playwright');
      const css=getComputedStyle(hero);
      return {bg:css.backgroundColor,wordmark:getComputedStyle(document.querySelector('#homeView .du-hero h1')).color};
    });
-   assert.equal(colors.bg,'rgb(255, 248, 239)','approved light-paper storefront not applied');
+   assert.equal(colors.bg,'rgb(247, 236, 223)','approved reference parchment storefront not applied');
    assert.equal(colors.wordmark,'rgb(40, 27, 27)','approved ink typography not applied');
    await page.evaluate(()=>document.fonts.ready);
+   const coverBlend=await page.evaluate(()=>{
+     const art=document.querySelector('#homeView .du-hero-art');
+     const copy=document.querySelector('#homeView .du-hero-copy');
+     const paper=getComputedStyle(art,'::before');
+     const rect=el=>el.getBoundingClientRect();
+     return {artLeft:rect(art).left,copyRight:rect(copy).right,
+       seam:paper.backgroundImage,artMask:getComputedStyle(art).maskImage};
+   });
+   if(viewport.width>820){
+     assert(coverBlend.artLeft<coverBlend.copyRight-55,
+       'home photo must extend UNDER headline, not stop at a hard column edge: '+JSON.stringify(coverBlend));
+     assert(coverBlend.seam.includes('gradient'),
+       'home cover must blend image into parchment: '+JSON.stringify(coverBlend));
+   } else {
+     assert(coverBlend.artMask.includes('gradient'),
+       'mobile cover must fade into parchment: '+JSON.stringify(coverBlend));
+   }
    await page.screenshot({path:'/tmp/editorial-home-cover-'+viewport.width+'.png',fullPage:false});
    const presentation=await page.evaluate(()=>{
      const button=document.querySelector('#homeView .du-hero-actions .du-btn-outline');
@@ -54,7 +71,10 @@ const {chromium}=require('playwright');
        headingSize:parseFloat(getComputedStyle(heading).fontSize),
        cardImageHeight:first.querySelector('.card-image').getBoundingClientRect().height};
    });
-   assert.equal(catalog.bg,'rgb(249, 242, 234)','catalog paper palette missing');
+   assert.equal(catalog.bg,'rgb(247, 236, 223)','catalog paper palette missing');
+   const imageFusion=await page.locator('#recipeGrid .recipe-card .card-image').first().evaluate(
+     el=>getComputedStyle(el).maskImage||getComputedStyle(el).webkitMaskImage);
+   assert(imageFusion.includes('gradient'),'catalog photographs must blend into editorial paper');
    if(viewport.width>1000){
      assert.equal(catalog.columns,3,'desktop magazine grid should have 3 editorial tracks');
      assert.equal(catalog.firstDisplay,'grid','desktop first recipe not featured');
