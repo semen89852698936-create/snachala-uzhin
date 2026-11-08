@@ -23,7 +23,7 @@ const editorialPaperAssets=[
   '/assets/editorial-paper-panel-mask-20261108.svg',
   '/assets/editorial-paper-torn-bottom-20261108.svg'
 ];
-assert.deepEqual([...cssUrls].sort(),[...editorialPhotos,...editorialPaperAssets].sort(),
+assert.deepEqual([...new Set(cssUrls)].sort(),[...editorialPhotos,...editorialPaperAssets].sort(),
   'CSS must reference only approved local photos and torn-paper design assets');
 for (const localUrl of [...editorialPhotos,...editorialPaperAssets]) {
   assert(fs.existsSync(path.join(root,localUrl.slice(1))),
