@@ -38,6 +38,30 @@ const {chromium}=require('playwright');
       musicTracks:document.querySelectorAll('#music .du-bpm-track').length
     };
    });
+   // A matching src string is not enough: all approved photos must really
+   // decode. Catch 404s and corrupt pictures before artistic inspection.
+   const imageHealth=await page.evaluate(async()=>{
+     const selectors=[
+       '#eveningLanding .du-evening-landing-photo img',
+       '#eveningLanding .du-story-dinner-photo img',
+       '#evening .du-story-after-photo img',
+       '#evening .du-evening-together > img',
+       '#evening .du-evening-invitation-photo img'
+     ];
+     const results=[];
+     for(const sel of selectors){
+       const img=document.querySelector(sel);
+       let error='';
+       try{await img.decode()}catch(e){error=e.message||String(e)}
+       results.push({selector:sel,url:img.currentSrc||img.src,
+         width:img.naturalWidth,height:img.naturalHeight,complete:img.complete,error});
+     }
+     return results;
+   });
+   for(const photo of imageHealth){
+     assert(photo.complete && !photo.error && photo.width>=100 && photo.height>=100,
+       scenario.name+': editorial photograph did not load/decode: '+JSON.stringify(photo));
+   }
    assert(story.hero.includes('our-evening-hero-hq.avif'),'approved first scene changed');
    assert(story.dinner.includes('our-evening-dinner-hq.avif'),'approved dinner photo changed');
    assert(story.after.includes('our-evening-after-hq.avif'),'approved after-dinner photo changed');
@@ -122,6 +146,12 @@ const {chromium}=require('playwright');
    assert.equal(story.musicCards,3,'three music chapters required');
    assert.equal(story.musicTracks,60,'20+20+20 curated tracks required');
    assert.equal(await page.locator('#eveningLanding .du-evening-inspiration-card').count(),3,'real-recipe suggestions missing');
+   // Capture the WHOLE two-scene magazine spread, not only the current
+   // viewport. The approved artwork must be judged by overall proportions.
+   await page.locator('#eveningLanding').screenshot({
+     path:'/tmp/editorial-evening-spread-'+scenario.name+'.png',
+     animations:'disabled'
+   });
    await page.screenshot({path:'/tmp/editorial-evening-story-'+scenario.name+'.png'});
    await page.locator('#eveningLanding .du-story-dinner').scrollIntoViewIfNeeded();
    await page.screenshot({path:'/tmp/editorial-evening-dinner-'+scenario.name+'.png'});
@@ -130,6 +160,10 @@ const {chromium}=require('playwright');
    await page.locator('#swapEveningRoles').click();
    assert((await page.locator('#eveningRoleStatus').innerText()).length>0,'role selector broke');
    await page.locator('#evening .du-story-after').scrollIntoViewIfNeeded();
+   await page.locator('#evening .du-story-after').screenshot({
+     path:'/tmp/editorial-evening-third-chapter-'+scenario.name+'.png',
+     animations:'disabled'
+   });
    await page.screenshot({path:'/tmp/editorial-evening-after-'+scenario.name+'.png'});
    const overflow=await page.evaluate(()=>document.documentElement.scrollWidth-innerWidth);
    assert(overflow<=4,'horizontal overflow: '+overflow);
