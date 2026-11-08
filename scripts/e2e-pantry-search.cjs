@@ -73,27 +73,27 @@ const assert=require('node:assert/strict');
       'Only one egg should be added to the shared grocery list');
     await page.locator('#closeShopping').click();
 
-    // Real chicken from the catalog: 700g for four portions.
-    // With two portions, 350g is needed but the shopping suggestion must be 500g.
+    // Recipe grams remain exact; shopping guidance for chicken has no package size.
     await page.goto('http://127.0.0.1:8765/'+entry+'#recipe=chicken-lemon',{waitUntil:'domcontentloaded'});
     await page.locator('#portionMinus').click();
     await page.locator('#portionMinus').click();
-    assert.match(await page.locator('#recipeDetail').innerText(),/350 г/,'Recipe retains exact two-portion chicken mass');
+    assert.match(await page.locator('#recipeDetail').innerText(),/350 г/,
+      'The real chicken recipe still shows its exact 350g requirement');
     await page.locator('#addShopping').click();
     await page.locator('.shopping-open').first().click();
-    const chickenRow=page.locator('#shoppingContents .shop-item').filter({hasText:'Куриные бёдра без кости'});
-    assert.equal(await chickenRow.count(),1,'Chicken must appear as one shopping item');
-    assert.match(await chickenRow.innerText(),/500 г/,'350g required means one 500g package');
-    assert.match(await chickenRow.innerText(),/Нужно 350 г/,'Explain the actual recipe amount separately');
-    assert.match(await page.evaluate(()=>shoppingShareText()),/Куриные бёдра без кости — 500 г \(нужно 350 г; 1 × 500 г\)/,
-      'Copy/share must contain package quantity with exact need');
+    const chickenRow=page.locator('#shoppingContents .shop-item').filter({hasText:'ДОКУПИТЬ КУРИЦУ'});
+    assert.equal(await chickenRow.count(),1,'The shopping cart must show one chicken purchase prompt');
+    assert.equal((await chickenRow.innerText()).trim(),'ДОКУПИТЬ КУРИЦУ',
+      'Do not show 500g, required weight or packaging for chicken in the shopping list');
+    assert.match(await page.evaluate(()=>shoppingShareText()),/^[☐☑] ДОКУПИТЬ КУРИЦУ$/m,
+      'Shared shopping list must simply say buy chicken');
     await page.locator('#closeShopping').click();
     await page.locator('#portionPlus').click();
     await page.locator('#portionPlus').click();
     await page.locator('#addShopping').click();
     await page.locator('.shopping-open').first().click();
-    assert.match(await chickenRow.innerText(),/1[\s\u00a0]?000 г/,'700g required means two 500g packs');
-    assert.match(await chickenRow.innerText(),/Нужно 700 г/,'Higher serving count preserves exact recipe mass');
+    assert.equal((await chickenRow.innerText()).trim(),'ДОКУПИТЬ КУРИЦУ',
+      'Chicken purchase prompt stays independent of selected servings');
     await page.locator('#closeShopping').click();
     await page.goto('http://127.0.0.1:8765/'+entry+'#catalog',{waitUntil:'domcontentloaded'});
 
