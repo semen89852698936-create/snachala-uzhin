@@ -65,6 +65,53 @@ const {chromium}=require('playwright');
    assert(featuredCard.cardBottom>featuredCard.artBottom-130 && featuredCard.cardBottom<featuredCard.artBottom+10,
       'featured recipe CTA must stay near the photograph bottom edge: '+JSON.stringify(featuredCard));
    await page.screenshot({path:'/tmp/editorial-home-cover-'+viewport.width+'.png',fullPage:false});
+   const masthead=await page.evaluate(()=>{
+     const nav=document.querySelector('.header .main-nav');
+     const evening=nav?.querySelector('a[data-nav="evening"]');
+     const airfryer=nav?.querySelector('a[data-nav="airfryer"]');
+     const svg=document.querySelector('.header .du-brand-mark .du-wine-icon');
+     const brand=document.querySelector('.header .du-brand-words');
+     const bounds=x=>({left:x.getBoundingClientRect().left,right:x.getBoundingClientRect().right,
+       width:x.getBoundingClientRect().width,height:x.getBoundingClientRect().height});
+     return {
+       hasEvening:!!evening,hasAirfryer:!!airfryer,
+       glassPresent:!!svg && bounds(svg).width>19 && bounds(svg).height>20 &&
+         getComputedStyle(svg).visibility==='visible' && getComputedStyle(svg).opacity==='1',
+       name:brand?.innerText.trim().replace(/\\s+/g,' '),
+       navVisible:!!nav && getComputedStyle(nav).display!=='none',
+       navOrder:nav?[...nav.querySelectorAll(':scope > a')]
+         .map(a=>({name:a.dataset.nav||'',order:Number(getComputedStyle(a).order),
+           left:a.getBoundingClientRect().left,right:a.getBoundingClientRect().right,
+           visible:getComputedStyle(a).display!=='none'})):[],
+       eveningBg:evening?getComputedStyle(evening).backgroundColor:'',
+       eveningColor:evening?getComputedStyle(evening).color:'',
+       airfryerBorder:airfryer?getComputedStyle(airfryer).borderTopWidth:'',
+       airfryerColor:airfryer?getComputedStyle(airfryer).color:'',
+       eveningBox:evening?bounds(evening):null,
+       airfryerBox:airfryer?bounds(airfryer):null
+     };
+   });
+   assert(masthead.glassPresent,'original wine-glass mark must remain visible in masthead');
+   assert(masthead.name?.includes('СНАЧАЛА') && masthead.name?.includes('УЖИН'),
+     'original brand wordmark must remain visible: '+JSON.stringify(masthead));
+   assert(masthead.hasEvening && masthead.hasAirfryer,
+     'both approved special navigation buttons must exist');
+   assert.equal(masthead.eveningBg,'rgb(113, 28, 46)',
+     'Our Evening must be highlighted as a deep-wine button');
+   assert.equal(masthead.airfryerColor,'rgb(113, 28, 46)',
+     'Air Fryer must have a wine-colored outlined button');
+   assert.equal(masthead.airfryerBorder,'1px',
+     'Air Fryer must have the restored outline');
+   if(viewport.width>680){
+     const navLinks=masthead.navOrder.filter(a=>a.visible)
+       .sort((a,b)=>a.order-b.order);
+     assert.equal(navLinks[0]?.name,'evening',
+       'Our Evening must be the leftmost navigation item: '+JSON.stringify(masthead));
+     assert.equal(navLinks[navLinks.length-1]?.name,'airfryer',
+       'Air Fryer must be the rightmost navigation item: '+JSON.stringify(masthead));
+     assert(masthead.eveningBox.left<masthead.airfryerBox.left,
+       'header navigation order must be correct in real browser geometry');
+   }
    const presentation=await page.evaluate(()=>{
      const button=document.querySelector('#homeView .du-hero-actions .du-btn-outline');
      const mark=document.querySelector('.header .du-brand-mark');
