@@ -2629,3 +2629,379 @@ body.du-evening-mode #evening .du-story-after-copy{
     min-height:38px;
   }
 }
+
+
+/* EXACT_APPROVED_COVER_FULL_BLEED_20261108
+   Non-negotiable art direction from the approved reference:
+   ONE full-width steak-and-two-wine-glasses photographic spread. Real text,
+   actual logo, links, recipe button and catalog remain interactive.
+   No beige text column; no photograph isolated on the right. */
+#homeView .du-hero{
+  position:relative;
+  isolation:isolate;
+  min-height:clamp(660px,50vw,800px);
+  background:#25100f;
+  color:#fff7e8;
+  border:0;
+  overflow:visible;
+}
+#homeView .du-hero-layout.container{
+  display:block;
+  position:relative;
+  isolation:isolate;
+  width:100%;
+  max-width:none;
+  margin:0;
+  min-height:clamp(660px,50vw,800px);
+  overflow:visible;
+  padding:0;
+  background:transparent;
+}
+#homeView .du-hero-art{
+  position:absolute;
+  inset:0;
+  z-index:-1;
+  width:100%;
+  height:100%;
+  min-height:0;
+  max-height:none;
+  margin:0;
+  overflow:visible;
+  border:0;
+  background-color:#25100f;
+  background-image:url('/assets/home-hero-steak-wine-20261108.webp');
+  background-size:cover;
+  background-position:53% 48%;
+  background-repeat:no-repeat;
+  -webkit-mask-image:none;
+  mask-image:none;
+  clip-path:none;
+}
+#homeView .du-hero-art::before{
+  content:"";
+  position:absolute;
+  z-index:0;
+  pointer-events:none;
+  inset:0;
+  width:auto;
+  height:auto;
+  background:
+    linear-gradient(90deg,rgba(24,11,13,.89) 0%,rgba(29,12,15,.75) 23%,rgba(32,13,15,.42) 40%,rgba(32,13,15,0) 68%),
+    linear-gradient(0deg,rgba(28,13,12,.29) 0%,transparent 33%);
+}
+#homeView .du-hero-art::after{
+  content:"";
+  position:absolute;
+  z-index:3;
+  left:0;
+  right:0;
+  bottom:-1px;
+  width:100%;
+  height:clamp(25px,3.6vw,58px);
+  background:var(--du-editorial-paper-grain);
+  pointer-events:none;
+  clip-path:polygon(0 64%,4% 54%,9% 71%,14% 40%,20% 64%,26% 42%,31% 67%,37% 38%,44% 62%,49% 48%,54% 70%,60% 39%,66% 66%,72% 44%,77% 66%,83% 38%,90% 69%,94% 48%,100% 56%,100% 100%,0 100%);
+}
+#homeView .du-hero-art .du-hero-image,
+#homeView .du-hero-art .du-hero-image-tint,
+#homeView .du-hero-art .du-hero-handwritten,
+#homeView .du-hero-art .du-hero-vertical,
+#homeView .du-hero-art .du-hero-stamp{
+  display:none;
+}
+#homeView .du-hero-copy{
+  position:relative;
+  z-index:2;
+  width:min(58%,860px);
+  max-width:none;
+  min-height:clamp(660px,50vw,800px);
+  box-sizing:border-box;
+  margin:0;
+  padding:clamp(55px,6.4vw,102px) clamp(30px,3vw,54px) clamp(92px,8vw,145px) clamp(33px,5vw,90px);
+  background:transparent;
+  border:0;
+  box-shadow:none;
+  display:flex;
+  flex-direction:column;
+  align-items:flex-start;
+  justify-content:center;
+}
+#homeView .du-hero-copy::after{
+  display:none;
+}
+#homeView .du-kicker{
+  color:#fbecd7;
+  font:700 clamp(11px,1vw,14px)/1.35 var(--du-magazine-sans);
+  letter-spacing:.28em;
+  text-transform:uppercase;
+  text-shadow:0 2px 12px rgba(0,0,0,.28);
+}
+#homeView .du-kicker-line{display:none}
+#homeView .du-hero h1{
+  position:relative;
+  z-index:3;
+  color:#fff4e6;
+  font-family:var(--du-magazine-serif);
+  font-size:clamp(105px,12.4vw,205px);
+  font-weight:500;
+  line-height:.73;
+  letter-spacing:-.072em;
+  font-style:italic;
+  margin:clamp(26px,2.9vw,44px) 0 21px;
+  max-width:7.5ch;
+  text-shadow:0 3px 20px rgba(12,5,8,.33);
+}
+#homeView .du-hero h1 i{
+  color:#fff4e6;
+  font-style:italic;
+}
+#homeView .du-hero .du-h1-dot{
+  display:none;
+}
+#homeView .du-hero-slogan{
+  position:relative;
+  color:#fff3e3;
+  font:italic 500 clamp(27px,3vw,44px)/1.13 var(--du-magazine-serif);
+  margin:9px 0 10px;
+  text-shadow:0 2px 12px rgba(10,5,5,.34);
+}
+#homeView .du-hero-slogan em{color:inherit}
+#homeView .du-hero-slogan::after{
+  content:"";
+  display:block;
+  position:relative;
+  background:#a4203b;
+  height:clamp(3px,.33vw,5px);
+  width:60%;
+  margin:14px 0 0 26%;
+  transform:rotate(-3deg);
+  clip-path:polygon(0 40%,7% 0,35% 33%,71% 0,96% 40%,100% 100%,38% 73%,0 80%);
+}
+#homeView .du-hero-occasion{
+  color:#fff2e3;
+  font:italic 500 clamp(23px,2.55vw,36px)/1.15 var(--du-magazine-serif);
+  margin:12px 0 0;
+  text-shadow:0 2px 12px rgba(10,5,5,.32);
+}
+#homeView .du-hero-description{
+  color:#f8e9df;
+  font:500 clamp(14px,1.22vw,17px)/1.6 var(--du-magazine-sans);
+  max-width:40ch;
+  margin-top:13px;
+  text-shadow:0 2px 11px rgba(13,5,5,.5);
+}
+#homeView .du-hero-actions{
+  display:flex;
+  flex-wrap:wrap;
+  gap:12px;
+  margin-top:clamp(23px,2.5vw,35px);
+  align-items:center;
+}
+#homeView .du-hero-actions .du-btn{
+  position:relative;
+  isolation:isolate;
+  min-height:57px;
+  padding:17px clamp(21px,2.4vw,32px);
+  font:750 clamp(14px,1.15vw,17px)/1.2 var(--du-magazine-serif);
+  border:0;
+  border-radius:0;
+  color:#65192b;
+  background:#fff0dd;
+  text-shadow:none;
+  box-shadow:none;
+  filter:drop-shadow(0 8px 18px rgba(15,3,7,.26));
+  clip-path:polygon(0 12%,7% 8%,13% 1%,25% 7%,38% 1%,47% 8%,59% 3%,71% 10%,83% 3%,92% 8%,100% 4%,99% 24%,100% 43%,98% 63%,100% 85%,95% 98%,83% 94%,68% 100%,57% 94%,42% 99%,27% 93%,15% 99%,3% 95%,0 80%,2% 61%,0 40%);
+  transition:transform .2s,background .2s,color .2s;
+}
+#homeView .du-hero-actions .du-btn-primary,
+#homeView .du-hero-actions .du-btn-outline{
+  color:#65192b;
+  background:#fff0dd;
+  border:0;
+}
+#homeView .du-hero-actions .du-btn:hover,
+#homeView .du-hero-actions .du-btn:focus-visible{
+  color:#fff9f0;
+  background:#711c2e;
+  transform:translateY(-2px);
+  outline:2px solid #fff0dd;
+  outline-offset:2px;
+}
+#homeView .du-hero-actions .du-btn-outline{
+  background:#f5e1ca;
+}
+#homeView .du-hero-bottom{
+  display:flex;
+  flex-wrap:wrap;
+  gap:12px;
+  color:#f7e6d9;
+  border:0;
+  text-shadow:0 1px 9px rgba(0,0,0,.65);
+  margin-top:30px;
+  font-size:clamp(10px,.9vw,12px);
+}
+#homeView .du-hero-bottom b{color:#c94759;}
+#homeView .du-hero-recipe{
+  position:absolute;
+  z-index:5;
+  bottom:clamp(47px,5.2vw,79px);
+  right:clamp(25px,3.5vw,58px);
+  left:auto;
+  width:clamp(215px,21vw,300px);
+  max-width:33%;
+  padding:clamp(20px,2.2vw,30px);
+  min-height:0;
+  border:0;
+  border-radius:0;
+  background:#fff0dd;
+  color:#661d31;
+  box-shadow:0 12px 25px rgba(17,5,5,.19);
+  clip-path:polygon(0 8%,8% 4%,20% 7%,32% 1%,47% 7%,61% 3%,76% 6%,91% 2%,100% 7%,97% 32%,100% 57%,98% 83%,93% 99%,77% 95%,61% 100%,45% 94%,26% 100%,12% 96%,1% 100%,3% 76%,0 56%);
+}
+#homeView .du-hero-recipe small,
+#homeView .du-hero-recipe b,
+#homeView .du-hero-recipe .du-circle-arrow{color:#661d31;}
+#homeView .du-hero-recipe:hover{background:#fff8ed;}
+/* Three clickable editorial chapter teasers carry the paper beneath the image,
+   matching the lower third of the approved composition. */
+#homeView .du-cover-chapters{
+  position:relative;
+  z-index:2;
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:0;
+  width:100%;
+  margin:0;
+  padding:clamp(27px,3vw,45px) clamp(26px,4vw,68px) clamp(33px,4vw,59px);
+  background:var(--du-editorial-paper-grain);
+  border-bottom:1px solid #cdb9a4;
+}
+#homeView .du-cover-chapters a{
+  display:block;
+  min-width:0;
+  color:#691f31;
+  padding:0 clamp(18px,3vw,47px);
+  border-right:1px solid rgba(118,58,63,.24);
+  text-decoration:none;
+}
+#homeView .du-cover-chapters a:last-child{border-right:0;}
+#homeView .du-cover-chapters strong{
+  display:block;
+  font:italic 600 clamp(37px,4.3vw,68px)/.94 var(--du-magazine-serif);
+  letter-spacing:-.035em;
+}
+#homeView .du-cover-chapters span{
+  display:block;
+  margin-top:14px;
+  max-width:22ch;
+  color:#4d3831;
+  font:500 clamp(13px,1.15vw,16px)/1.5 var(--du-magazine-sans);
+}
+#homeView .du-cover-chapters a:is(:hover,:focus-visible){
+  background:rgba(113,28,46,.055);
+  outline:2px solid #711c2e;
+  outline-offset:3px;
+}
+/* Tablet: editorial photograph is still ONE canvas, with the lettering on top. */
+@media(max-width:1020px){
+  #homeView .du-hero-art{
+    background-position:55% center;
+  }
+  #homeView .du-hero-copy{width:min(69%,670px);}
+  #homeView .du-hero h1{font-size:clamp(90px,12vw,149px);}
+  #homeView .du-hero-recipe{max-width:33%;right:20px;}
+}
+@media(max-width:760px){
+  #homeView .du-hero{
+    min-height:0;
+    overflow:visible;
+  }
+  #homeView .du-hero-layout.container{
+    display:block;
+    position:relative;
+    width:100%;
+    min-height:690px;
+    overflow:visible;
+    padding:0;
+  }
+  #homeView .du-hero-art{
+    position:absolute;
+    inset:0;
+    height:100%;
+    width:100%;
+    min-height:0;
+    max-height:none;
+    margin:0;
+    -webkit-mask-image:none;
+    mask-image:none;
+    background-position:58% center;
+  }
+  #homeView .du-hero-art::before{
+    display:block;
+    width:auto;
+    background:linear-gradient(90deg,rgba(22,8,11,.9) 0%,rgba(28,11,14,.69) 58%,rgba(22,8,11,.13) 100%),
+      linear-gradient(0deg,rgba(25,7,10,.6) 0%,transparent 34%);
+  }
+  #homeView .du-hero-copy{
+    position:relative;
+    z-index:3;
+    width:100%;
+    min-height:690px;
+    margin:0;
+    padding:clamp(30px,7vw,51px) 20px 190px 22px;
+    background:transparent;
+    display:flex;
+    flex-direction:column;
+    justify-content:flex-start;
+    align-items:flex-start;
+    order:initial;
+  }
+  #homeView .du-kicker{font-size:10px;letter-spacing:.18em;}
+  #homeView .du-hero h1{
+    font-size:clamp(75px,16vw,122px);
+    max-width:95%;
+    margin:33px 0 20px;
+    line-height:.78;
+    color:#fff4e6;
+  }
+  #homeView .du-hero h1 i{color:#fff4e6;}
+  #homeView .du-hero-slogan{
+    font-size:clamp(25px,7vw,38px);
+    max-width:95%;
+  }
+  #homeView .du-hero-occasion{font-size:clamp(22px,6vw,30px);}
+  #homeView .du-hero-description{font-size:14px;max-width:35ch;}
+  #homeView .du-hero-actions{
+    flex-direction:column;
+    align-items:flex-start;
+    gap:9px;
+    margin-top:23px;
+  }
+  #homeView .du-hero-actions .du-btn{min-height:48px;font-size:15px;padding:12px 22px;}
+  #homeView .du-hero-bottom{font-size:10px;gap:7px;margin-top:18px;}
+  #homeView .du-hero-recipe{
+    bottom:32px;
+    right:17px;
+    left:auto;
+    width:min(240px,63vw);
+    max-width:63%;
+    padding:17px;
+    font-size:13px;
+  }
+  #homeView .du-cover-chapters{
+    grid-template-columns:1fr;
+    padding:21px 18px 31px;
+    gap:0;
+  }
+  #homeView .du-cover-chapters a{
+    border-right:0;
+    border-bottom:1px solid #c7a996;
+    padding:18px 10px 19px;
+  }
+  #homeView .du-cover-chapters a:last-child{border-bottom:0;}
+  #homeView .du-cover-chapters strong{font-size:47px;}
+  #homeView .du-cover-chapters span{margin-top:5px;font-size:15px;}
+}
+@media(min-width:761px) and (max-width:1020px){
+  #homeView .du-cover-chapters strong{font-size:clamp(37px,4.5vw,48px);}
+}
