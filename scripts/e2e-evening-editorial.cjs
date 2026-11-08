@@ -117,6 +117,8 @@ const {chromium}=require('playwright');
    assert.equal(story.musicTracks,60,'20+20+20 curated tracks required');
    assert.equal(await page.locator('#eveningLanding .du-evening-inspiration-card').count(),3,'real-recipe suggestions missing');
    await page.screenshot({path:'/tmp/editorial-evening-story-'+scenario.name+'.png'});
+   await page.locator('#eveningLanding .du-story-dinner').scrollIntoViewIfNeeded();
+   await page.screenshot({path:'/tmp/editorial-evening-dinner-'+scenario.name+'.png'});
    await page.locator('#evening [data-mood="spark"]').click();
    assert.equal(await page.locator('#evening [data-mood="spark"]').getAttribute('aria-pressed'),'true','mood selector broke');
    await page.locator('#swapEveningRoles').click();
