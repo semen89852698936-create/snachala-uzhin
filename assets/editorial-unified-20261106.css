@@ -1463,3 +1463,57 @@ body.du-evening-mode #music .du-music-player{min-height:54px}
   font-size:31px;
  }
 }
+
+/* SITEWIDE_EDITORIAL_TABLET_NAV_AND_MOBILE_COVER_20261108
+   Magazine cover starts with its photograph on phones, and the tablet header
+   fits on a single line without hiding any site sections or functions. */
+@media(min-width:681px) and (max-width:920px){
+ .header .header-inner{
+  height:78px;
+  min-height:78px;
+  align-items:center;
+  flex-wrap:nowrap;
+  gap:10px;
+ }
+ .header .main-nav{
+   display:flex;
+   gap:10px;
+   flex-wrap:nowrap;
+   justify-content:flex-end;
+   min-width:0;
+ }
+ .header .main-nav a{
+   white-space:nowrap;
+   font-size:12px;
+ }
+ .header .main-nav a[data-nav="music"],
+ .header .main-nav a[data-nav="my-recipes"],
+ .header .main-nav a[data-nav="categories"],
+ .header .main-nav a[data-nav="about"]{display:none}
+ .header .header-actions{flex-shrink:0}
+ .header .header-actions .shopping-open{height:42px;min-height:42px;padding:0 12px}
+ body.du-evening-mode #eveningLanding{padding-top:77px}
+ body.du-evening-mode .du-evening-back{top:100px}
+}
+@media(max-width:760px){
+ #homeView .du-hero-layout{
+   display:flex;
+   flex-direction:column;
+ }
+ #homeView .du-hero-art{
+   order:0;
+   flex:none;
+   min-height:clamp(300px,79vw,390px);
+   max-height:none;
+ }
+ #homeView .du-hero-copy{
+   order:1;
+   padding:29px 0 41px;
+ }
+ #homeView .du-hero h1{
+   font-size:clamp(74px,16vw,104px);
+ }
+ #homeView .du-hero-slogan{
+   font-size:clamp(28px,6.5vw,43px);
+ }
+}
