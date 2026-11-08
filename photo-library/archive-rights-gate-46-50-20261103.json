@@ -1,0 +1,120 @@
+{
+  "schema_version": 1,
+  "created_utc": "2026-11-03",
+  "scope": "archive_candidates_46_50",
+  "source_branch": "automation/half-hour-photo-audit",
+  "source_queue_path": "photo-library/half-hour-review-queue.json",
+  "technical_checkpoint_path": "project-operations/half-hour-checkpoint.json",
+  "source_archive_pr": 11,
+  "publication": "review_only_no_production",
+  "manual_visual_approved": 0,
+  "rights_cleared": 0,
+  "records": [
+    {
+      "number": 46,
+      "recipe_id": "collection-meat-03-08",
+      "recipe_title": "Сочные тефтели из говядины с сливками и зелёным перцем",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Spaghetti_with_meatballs,_The_Paris_Diner,_Paris_001.jpg",
+      "source_photo_title": "Spaghetti with meatballs, The Paris Diner, Paris 001.jpg",
+      "license_claim": "CC BY 2.0",
+      "technical_status": "not_checked",
+      "editorial_status": "hold_for_visual_recipe_comparison",
+      "rights_status": "individual_license_and_attribution_unverified",
+      "evidence_scope": "source_filename_and_queue_metadata_only",
+      "risk": "high",
+      "reason": "Источник указывает на спагетти с тефтелями; сливки и зелёный перец не подтверждены. Грамматика названия: «со сливками», не «с сливками».",
+      "required_next": [
+        "inspect_actual_archived_webp",
+        "compare_full_recipe_ingredients_and_presentation",
+        "verify_original_commons_file_license_author_and_attribution"
+      ]
+    },
+    {
+      "number": 47,
+      "recipe_id": "collection-meat-03-09",
+      "recipe_title": "Сочные тефтели из говядины с яблоком и шалфеем",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Spaghetti_with_meatballs,_The_Paris_Diner,_Paris_002.jpg",
+      "source_photo_title": "Spaghetti with meatballs, The Paris Diner, Paris 002.jpg",
+      "license_claim": "CC BY 2.0",
+      "technical_status": "not_checked",
+      "editorial_status": "hold_for_visual_recipe_comparison",
+      "rights_status": "individual_license_and_attribution_unverified",
+      "evidence_scope": "source_filename_and_queue_metadata_only",
+      "risk": "high",
+      "reason": "Источник описывает спагетти с тефтелями; яблоко и шалфей не подтверждены.",
+      "required_next": [
+        "inspect_actual_archived_webp",
+        "compare_full_recipe_ingredients_and_presentation",
+        "verify_original_commons_file_license_author_and_attribution"
+      ]
+    },
+    {
+      "number": 48,
+      "recipe_id": "collection-meat-03-10",
+      "recipe_title": "Сочные тефтели из говядины с черносливом и тмином",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Holiday_Swedish_Meatballs.jpg",
+      "source_photo_title": "Holiday Swedish Meatballs.jpg",
+      "license_claim": "CC BY 2.0",
+      "technical_status": "not_checked",
+      "editorial_status": "hold_for_visual_recipe_comparison",
+      "rights_status": "individual_license_and_attribution_unverified",
+      "evidence_scope": "source_filename_and_queue_metadata_only",
+      "risk": "high",
+      "reason": "Источник описывает шведские праздничные тефтели; чернослив и тмин не подтверждены.",
+      "required_next": [
+        "inspect_actual_archived_webp",
+        "compare_full_recipe_ingredients_and_presentation",
+        "verify_original_commons_file_license_author_and_attribution"
+      ]
+    },
+    {
+      "number": 49,
+      "recipe_id": "collection-meat-04-01",
+      "recipe_title": "Говядина, тушённая кусочками с лимоном и тимьяном",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Modern_cooking_pot_with_glass_cover_and_vegetable-beef_stew.jpg",
+      "source_photo_title": "Modern cooking pot with glass cover and vegetable-beef stew.jpg",
+      "license_claim": "CC BY-SA 4.0",
+      "technical_status": "not_checked",
+      "editorial_status": "hold_for_visual_recipe_comparison",
+      "rights_status": "individual_license_and_attribution_unverified",
+      "evidence_scope": "source_filename_and_queue_metadata_only",
+      "risk": "high",
+      "reason": "Источник описывает рагу из говядины и овощей под стеклянной крышкой; лимон и тимьян не подтверждены.",
+      "required_next": [
+        "inspect_actual_archived_webp",
+        "compare_full_recipe_ingredients_and_presentation",
+        "verify_original_commons_file_license_author_and_attribution"
+      ]
+    },
+    {
+      "number": 50,
+      "recipe_id": "collection-meat-04-02",
+      "recipe_title": "Говядина, тушённая кусочками с грибами и розмарином",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Braised_Beef_Cheek_Casserole_with_Seasonal_Vegetables_-_La_Terrasse,_Rouen_2026-05-10_(1).jpg",
+      "source_photo_title": "Braised Beef Cheek Casserole with Seasonal Vegetables - La Terrasse, Rouen 2026-05-10 (1).jpg",
+      "license_claim": "CC0",
+      "technical_status": "not_checked",
+      "editorial_status": "hold_for_visual_recipe_comparison",
+      "rights_status": "individual_license_and_attribution_unverified",
+      "evidence_scope": "source_filename_and_queue_metadata_only",
+      "risk": "high",
+      "reason": "Источник описывает тушёную говяжью щёку с сезонными овощами; грибы и розмарин не подтверждены.",
+      "required_next": [
+        "inspect_actual_archived_webp",
+        "compare_full_recipe_ingredients_and_presentation",
+        "verify_original_commons_file_license_author_and_attribution"
+      ]
+    }
+  ],
+  "checkpoint": {
+    "completed": "Five metadata-only source-to-recipe risk classifications; no WebP byte or SHA rechecks",
+    "blockers": [
+      "Physical WebP visual comparison not done",
+      "Full recipes not examined",
+      "Individual source licenses and authors not verified",
+      "Approved production copies 6,10,20 must remain distinct from archive"
+    ],
+    "next": "Inspect physical archived WebP 46 and 47, then full recipes and Commons file pages; fix grammatical «с сливками» in recipe source only after identifying canonical text location",
+    "ci": "not_run_for_this_metadata_file"
+  }
+}
