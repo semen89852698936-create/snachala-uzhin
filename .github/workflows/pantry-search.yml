@@ -16,6 +16,7 @@ on:
       - 'scripts/e2e-editorial-recipe.cjs'
       - 'assets/editorial-recipe.css'
       - 'scripts/e2e-pantry-search.cjs'
+      - 'scripts/e2e-personal-recipes-shopping.cjs'
       - '.github/workflows/pantry-search.yml'
   pull_request:
     paths:
@@ -31,6 +32,7 @@ on:
       - 'scripts/e2e-editorial-recipe.cjs'
       - 'assets/editorial-recipe.css'
       - 'scripts/e2e-pantry-search.cjs'
+      - 'scripts/e2e-personal-recipes-shopping.cjs'
       - '.github/workflows/pantry-search.yml'
   workflow_dispatch:
 permissions:
@@ -67,5 +69,6 @@ jobs:
             sleep 1
           done
           node scripts/e2e-pantry-search.cjs
+          node scripts/e2e-personal-recipes-shopping.cjs
           node scripts/e2e-editorial-recipe.cjs
           node scripts/e2e-cooking-timer.cjs
