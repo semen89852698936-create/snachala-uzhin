@@ -47,12 +47,11 @@ const {chromium}=require('playwright');
    assert.equal(story.dinnerColumns,scenario.viewport.width>820?2:1,'dinner spread layout');
    assert.equal(story.afterColumns,scenario.viewport.width>820?2:1,'after-dinner layout');
 
-   // A screenshot with 1536px Chrome showed the hero image hiding the entire
-   // left side of the title and body copy. Test actual pixel geometry, not
-   // merely column counts or font sizes.
+   // The approved magazine layout puts the text to the LEFT of the hero photo.
+   // On mobile it becomes text FIRST and photo SECOND. Verify real geometry.
    const geometry=await page.evaluate(()=>{
      const bounds=sel=>{
-       const el=document.querySelector(sel), r=el.getBoundingClientRect();
+       const el=document.querySelector(sel),r=el.getBoundingClientRect();
        return {left:r.left,right:r.right,top:r.top,bottom:r.bottom,width:r.width,height:r.height};
      };
      return {
@@ -71,14 +70,13 @@ const {chromium}=require('playwright');
    assert(geometry.image.right<=geometry.photo.right+2,
      scenario.name+': photo exceeds its column: '+JSON.stringify(geometry));
    if(scenario.viewport.width>820){
-     const minGap=10;
      for(const name of ['copy','heading','italicWord','lead','text','cta','inspiration']){
-       assert(geometry[name].left>=geometry.photo.right+minGap,
-         scenario.name+': photo overlaps '+name+': '+JSON.stringify(geometry));
+       assert(geometry[name].right<=geometry.photo.left+2,
+         scenario.name+': left-paper text overlaps the photo: '+name+': '+JSON.stringify(geometry));
      }
    }else{
-     assert(geometry.photo.bottom<=geometry.copy.top+2,
-       scenario.name+': photo should stack above heading: '+JSON.stringify(geometry));
+     assert(geometry.copy.bottom<=geometry.photo.top+2,
+       scenario.name+': approved mobile reading order must be copy before photo: '+JSON.stringify(geometry));
    }
    for(const name of ['heading','italicWord','lead','text','cta','inspiration']){
      assert(geometry[name].right<=geometry.viewportWidth+2,
