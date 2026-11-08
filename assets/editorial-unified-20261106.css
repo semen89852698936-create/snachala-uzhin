@@ -3570,3 +3570,62 @@ header.header .du-brand-mark svg.du-wine-icon{visibility:hidden!important;}
     height:auto;
   }
 }
+
+/* TRY_COOKING_TEXT_FULLY_VISIBLE_20261109 */
+/* Approved text: capital П, 40% larger. Keep BOTH button positions and
+   the original paper appearance. Avoid masking glyphs, only mask paper. */
+#homeView .du-hero-actions #tryCooking{
+  font-size:clamp(21px,1.55vw,23.8px);
+  line-height:1.2;
+  box-sizing:border-box;
+  height:57px;
+  min-height:57px;
+  padding-block:0;
+  padding-inline:30px 32px;
+  white-space:nowrap;
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  text-transform:none;
+  -webkit-mask-image:none;
+  mask-image:none;
+  background:transparent;
+  background-image:none;
+  filter:none;
+  isolation:isolate;
+}
+#homeView .du-hero-actions #tryCooking::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  z-index:-1;
+  pointer-events:none;
+  background-color:#f5e1ca;
+  background-image:
+    linear-gradient(158deg,rgba(255,255,255,.26),transparent 64%),
+    var(--du-paper-fibre-grain);
+  background-size:100% 100%,192px 192px;
+  background-repeat:no-repeat,repeat;
+  -webkit-mask-image:var(--du-ripped-paper-mask);
+  mask-image:var(--du-ripped-paper-mask);
+  -webkit-mask-size:100% 100%;
+  mask-size:100% 100%;
+  -webkit-mask-repeat:no-repeat;
+  mask-repeat:no-repeat;
+}
+#homeView .du-hero-actions #tryCooking:hover::before,
+#homeView .du-hero-actions #tryCooking:focus-visible::before{
+  background-color:#fff7eb;
+}
+@media(max-width:760px){
+  #homeView .du-hero-actions #tryCooking{
+    height:48px;
+    min-height:48px;
+  }
+  /* On the narrow layout, preserve the adjacent original CTA's dimensions. */
+  #homeView .du-hero-actions .du-btn-primary{
+    width:223.515625px;
+    max-width:100%;
+    align-self:flex-start;
+  }
+}
