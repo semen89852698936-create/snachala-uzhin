@@ -3064,3 +3064,83 @@ body:not(.du-evening-mode) .demo-strip{display:none;}
   #homeView .du-hero-occasion{margin-top:9px;}
   #homeView .du-hero-bottom{margin-top:13px;}
 }
+
+
+/* COVER_CHAPTER_PHOTOGRAPHY_AND_VINYL_20261108
+   Approved spread has photographic details penetrating the torn paper footer.
+   Keep chapter links live and type in the foreground. */
+#homeView .du-cover-chapters a{
+  position:relative;
+  isolation:isolate;
+  overflow:hidden;
+  min-height:155px;
+}
+#homeView .du-cover-chapters .du-cover-chapters-photo{
+  display:block;
+  position:absolute;
+  pointer-events:none;
+  z-index:-1;
+  right:-6%;
+  bottom:-43%;
+  height:154%;
+  width:63%;
+  object-fit:cover;
+  object-position:center;
+  opacity:.76;
+  -webkit-mask-image:linear-gradient(to right,transparent 0%,rgba(0,0,0,.3) 22%,#000 74%);
+  mask-image:linear-gradient(to right,transparent 0%,rgba(0,0,0,.3) 22%,#000 74%);
+}
+#homeView .du-cover-chapters a strong,
+#homeView .du-cover-chapters a span{
+  position:relative;
+  z-index:2;
+  text-shadow:0 1px 0 rgba(255,246,233,.85);
+}
+#homeView .du-cover-chapters a:nth-child(3)::before{
+  content:"";
+  position:absolute;
+  pointer-events:none;
+  z-index:-1;
+  right:-8%;
+  bottom:-85%;
+  width:74%;
+  aspect-ratio:1;
+  border-radius:50%;
+  background:repeating-radial-gradient(circle at center,
+    #281d20 0px,#342629 2px,#1d1a1b 5px,#292126 7px),
+    radial-gradient(circle,#9c2441 0 12%,#281b21 13%);
+  border:2px solid #201519;
+  box-shadow:0 15px 30px rgba(51,26,25,.31);
+  opacity:.84;
+}
+#homeView .du-cover-chapters a:nth-child(3)::after{
+  content:"";
+  position:absolute;
+  z-index:-1;
+  right:20%;
+  bottom:2%;
+  width:47px;
+  height:47px;
+  border-radius:50%;
+  background:radial-gradient(circle at 50% 50%,#f5c09f 0 6%,#6f1f38 9% 42%,#2c1d21 45% 50%,transparent 53%);
+  opacity:.84;
+}
+@media(max-width:760px){
+  #homeView .du-cover-chapters a{
+    min-height:134px;
+  }
+  #homeView .du-cover-chapters .du-cover-chapters-photo{
+    right:0;
+    bottom:-30%;
+    width:45%;
+    height:170%;
+  }
+  #homeView .du-cover-chapters a:nth-child(3)::before{
+    width:49%;
+    right:-7%;
+    bottom:-85%;
+  }
+  #homeView .du-cover-chapters a:nth-child(3)::after{
+    right:12%;
+  }
+}
