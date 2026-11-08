@@ -3359,3 +3359,125 @@ body:not(.du-evening-mode) .demo-strip{display:none;}
   -webkit-mask-size:100% 100%;
   mask-size:100% 100%;
 }
+/* FINAL_OWNER_APPROVED_HOME_COVER_20261108
+   Source: the confirmed working cover deployment at d654f7dd.
+   Preserve every photograph, route, menu position, text block, and site feature.
+   Only the five requested pixel-level cover refinements are applied. */
+
+/* Remove the upper-left goblet/wordmark on the cover while leaving
+   the existing header geometry and navigation positions unchanged. */
+body:not(.du-evening-mode) .header .brand.du-brand{
+  visibility:hidden!important;
+  pointer-events:none!important;
+}
+body:not(.du-evening-mode) .header .brand.du-brand:focus-visible{
+  visibility:visible!important;
+  pointer-events:auto!important;
+}
+
+/* All three approved pale, torn-newsprint navigation labels use the
+   same existing local paper-fibre asset, never a new artwork. */
+@media(min-width:681px){
+  .header .main-nav > a[data-nav="evening"],
+  .header .main-nav > a[data-nav="airfryer"]{
+    color:#6c2030;
+    background-color:#f2e4d5;
+    background-image:var(--du-paper-fibre-grain);
+    border:0;
+    box-shadow:none;
+    filter:drop-shadow(0 3px 3px rgba(43,15,24,.12));
+    -webkit-mask-image:var(--du-ripped-paper-mask);
+    mask-image:var(--du-ripped-paper-mask);
+    -webkit-mask-size:100% 100%;
+    mask-size:100% 100%;
+    -webkit-mask-repeat:no-repeat;
+    mask-repeat:no-repeat;
+  }
+  .header .main-nav > a[data-nav="evening"]:is(:hover,:focus-visible),
+  .header .main-nav > a[data-nav="airfryer"]:is(:hover,:focus-visible){
+    background-color:#e7d3c0;
+    color:#6c2030;
+  }
+  .header .header-actions .shopping-open{
+    position:relative;
+    isolation:isolate;
+    background:transparent;
+    border:0;
+    color:#6c2030;
+    box-shadow:none;
+    overflow:visible;
+    padding-inline:15px 18px;
+  }
+  .header .header-actions .shopping-open::before{
+    content:"";
+    position:absolute;
+    z-index:-1;
+    inset:0;
+    pointer-events:none;
+    background-color:#f2e4d5;
+    background-image:var(--du-paper-fibre-grain);
+    background-size:192px 192px;
+    -webkit-mask-image:var(--du-ripped-paper-mask);
+    mask-image:var(--du-ripped-paper-mask);
+    -webkit-mask-size:100% 100%;
+    mask-size:100% 100%;
+    -webkit-mask-repeat:no-repeat;
+    mask-repeat:no-repeat;
+    filter:drop-shadow(0 3px 3px rgba(43,15,24,.12));
+  }
+  .header .header-actions .shopping-open .header-count{
+    z-index:1;
+  }
+}
+
+/* Exactly ONE gentle quadratic bend below the slogan, no second wave
+   and no CSS zig-zag. The title and slogan lettering stay untouched. */
+#homeView .du-hero-slogan::after{
+  display:block;
+  content:"";
+  position:relative;
+  width:72%;
+  height:clamp(23px,2.45vw,35px);
+  margin:3px 0 0 18%;
+  background-color:transparent;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 380 42' preserveAspectRatio='none'%3E%3Cpath d='M4 37 Q192 -8 375 29' stroke='%23b32043' stroke-width='4.8' stroke-linecap='round' fill='none'/%3E%3C/svg%3E");
+  background-size:100% 100%;
+  background-repeat:no-repeat;
+  transform:none;
+  clip-path:none;
+}
+@media(max-width:760px){
+  #homeView .du-hero-slogan::after{
+    width:80%;
+    height:24px;
+    margin:3px 0 0 9%;
+  }
+}
+
+/* The entire CTA including its initial capital must remain legible. */
+#homeView .du-hero-actions #tryCooking{
+  white-space:nowrap;
+  min-width:max-content;
+  max-width:none;
+  padding-inline:23px 28px;
+  overflow:visible;
+}
+
+/* The existing right-hand text remains in place; only its paper
+   backing becomes almost transparent as approved. */
+#homeView .du-hero-art .du-hero-side-note{
+  color:#fff8f1;
+  background-color:rgba(66,19,30,.15);
+  background-image:none;
+  text-shadow:0 1px 5px rgba(29,10,13,.58);
+  box-shadow:none;
+  border:0;
+  -webkit-backdrop-filter:none;
+  backdrop-filter:none;
+}
+@media(max-width:760px){
+  #homeView .du-hero-art .du-hero-side-note{
+    background-color:rgba(66,19,30,.22);
+    color:#fffaf5;
+  }
+}
