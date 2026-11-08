@@ -21,7 +21,7 @@ const fs=require('node:fs');
      return {background:s.backgroundColor,links:[...document.querySelectorAll('link[rel="stylesheet"]')].map(l=>l.href)};
    });
    assert(css.links.some(link=>link.endsWith('/assets/editorial-unified-20261106.css')),'new stylesheet missing');
-   assert.equal(css.background,'rgb(247, 238, 231)','editorial paper palette not applied');
+   assert.equal(css.background,'rgb(247, 236, 223)','approved cream parchment palette not applied');
    await page.screenshot({path:'/tmp/unified-recipe-'+label+'.png'});
    await page.locator('#startCooking').click();
    await page.locator('#cookContent .du-editorial-cook-step').waitFor();

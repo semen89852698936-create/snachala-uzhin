@@ -13,10 +13,49 @@ assert(css.includes('#recipeDetail') && css.includes('#cookOverlay'));
 assert(css.includes('body.du-evening-mode #eveningLanding'));
 assert(css.includes('@media (max-width: 430px)'));
 const cssUrls=[...css.matchAll(/url\s*\(\s*['"]?([^'")]+)['"]?\s*\)/gi)].map(x=>x[1]);
-assert.deepEqual(cssUrls,['/assets/recipes-ai/0001-lemon-spinach-pasta.webp'],
-  'Only an existing local featured-recipe photo is permitted; reject remote assets and fonts');
-assert(fs.existsSync(path.join(root,'assets','recipes-ai','0001-lemon-spinach-pasta.webp')),
-  'Featured pasta photo must already exist in local approved photo library');
+const editorialPhotos=[
+  '/assets/home-hero-steak-wine-20261108.webp',
+  '/assets/recipes-ai/0003-pepper-steak.webp'
+];
+const editorialPaperAssets=[
+  '/assets/editorial-paper-fibres-20261108.svg',
+  '/assets/editorial-paper-tear-mask-20261108.svg',
+  '/assets/editorial-paper-panel-mask-20261108.svg',
+  '/assets/editorial-paper-torn-bottom-20261108.svg'
+];
+assert.deepEqual([...new Set(cssUrls)].sort(),[...editorialPhotos,...editorialPaperAssets].sort(),
+  'CSS must reference only approved local photos and torn-paper design assets');
+for (const localUrl of [...editorialPhotos,...editorialPaperAssets]) {
+  assert(fs.existsSync(path.join(root,localUrl.slice(1))),
+    'Referenced editorial asset does not exist: '+localUrl);
+}
+for (const url of editorialPaperAssets) {
+  const svg=fs.readFileSync(path.join(root,url.slice(1)),'utf8');
+  assert(svg.includes('<svg') && svg.includes('</svg>'),
+    'Torn paper SVG must contain a valid SVG root and close: '+url);
+}
+assert(css.includes('ORGANIC_FIBRE_TORN_PAPER_CONTROLS_20261108'),
+  'Approved organic paper material is not enabled');
+assert(css.includes('editorial-paper-torn-bottom-20261108.svg'),
+  'Photographic lower edge is still an outdated polygonal wave');
+assert(css.includes('APPROVED_THREE_SCENE_COMPOSITION_20261108_V2'),
+  'The approved three-scene editorial composition must remain in the shared CSS');
+assert(css.includes('grid-template-columns:minmax(0,1.08fr) minmax(0,.68fr) minmax(0,.90fr)'),
+  'The desktop dinner spread must retain three photographic/text planes');
+// Homepage photograph is a real, one-time generated WebP, not a screenshot of
+// interface text or an ephemeral external image.
+const crypto=require('node:crypto');
+const heroBytes=fs.readFileSync(path.join(root,'assets/home-hero-steak-wine-20261108.webp'));
+assert.equal(heroBytes.subarray(0,4).toString(),'RIFF','Home hero file is not WebP');
+assert.equal(heroBytes.subarray(8,12).toString(),'WEBP','Home hero lacks WebP signature');
+const heroMeta=JSON.parse(fs.readFileSync(path.join(root,'photo-library/home-hero-steak-wine-20261108.json'),'utf8'));
+assert.equal(heroMeta.image,'assets/home-hero-steak-wine-20261108.webp');
+assert.equal(heroMeta.sha256,crypto.createHash('sha256').update(heroBytes).digest('hex'),
+  'One-time generated homepage asset hash mismatch');
+assert.equal(heroMeta.width,1400);
+assert.equal(heroMeta.height,900);
+assert(!fs.existsSync(path.join(root,'photo-library/home-hero-steak-wine-20261108.pending.json')),
+  'Homepage photo generation left an unresolved paid request');
 const payloads = [];
 for(const [page, link] of pages) {
   const text = fs.readFileSync(path.join(root,page),'utf8');

@@ -36,6 +36,18 @@ const {chromium}=require('playwright');
    assert(spread.photoStyle.includes('0003-pepper-steak.webp'),'approved local recipe image not loaded');
    assert(spread.photoLabel.includes('ГОТОВИМ НА ДВОИХ'),'editorial photo label missing');
    assert(spread.photoHeight>300,'hero photo too small: '+JSON.stringify(spread));
+   const fusion=await page.evaluate(()=>{
+     const photo=document.querySelector('#recipeDetail .recipe-intro-photo');
+     const copy=document.querySelector('#recipeDetail .recipe-intro-copy');
+     return {photoLeft:photo.getBoundingClientRect().left,copyRight:copy.getBoundingClientRect().right,
+       photoMask:getComputedStyle(photo).maskImage||getComputedStyle(photo).webkitMaskImage};
+   });
+   assert(fusion.photoMask.includes('gradient'),
+      'recipe photo must merge into parchment, not end as a rectangle: '+JSON.stringify(fusion));
+   if(scenario.name==='desktop'){
+     assert(fusion.photoLeft<fusion.copyRight-40,
+       'recipe photograph must reach beneath the typography: '+JSON.stringify(fusion));
+   }
    assert(spread.titleSize>(scenario.name==='desktop'?60:45),'magazine heading did not receive editorial typography');
    if(scenario.name==='desktop'){
      assert.equal(spread.introDisplay,'grid','desktop recipe spread must use magazine grid');
