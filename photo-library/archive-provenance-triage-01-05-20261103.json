@@ -1,0 +1,70 @@
+{
+  "schema_version": 1,
+  "audit_date": "2026-11-03",
+  "scope": "archive source provenance screening, records 1-5 only",
+  "base_main_commit": "98082e1a43b085a2a61cf1f679901010cceda2c8",
+  "source_checkpoint": "automation/half-hour-photo-audit/project-operations/half-hour-checkpoint.json",
+  "source_queue": "automation/half-hour-photo-audit/photo-library/half-hour-review-queue.json",
+  "source_archive_ref": "photo-library/restore-100-review-20261102",
+  "technical_checks_reused": 5,
+  "technical_checks_repeated": 0,
+  "license_cleared": 0,
+  "editorial_approved": 0,
+  "visual_inspections_performed": 0,
+  "policy": "No publication, merge, paid API, or production changes; technical integrity is not rights or ingredient clearance.",
+  "findings": [
+    {
+      "number": 1,
+      "recipe": "Паста с лимоном и шпинатом",
+      "source": "https://unsplash.com/photos/pasta-with-sliced-lemon-on-white-ceramic-plate-pdzJbiP0LF0",
+      "risk": "medium",
+      "evidence": "Source URL describes pasta with sliced lemon; spinach is not independently established by metadata.",
+      "required": "Visually inspect selected physical WebP and recipe; verify original author and image-specific source license."
+    },
+    {
+      "number": 2,
+      "recipe": "Паста с томатами и базиликом",
+      "source": "https://unsplash.com/photos/a-plate-of-pasta-with-tomatoes-and-basil-usCnVPut-98",
+      "risk": "medium",
+      "evidence": "URL title is compatible with recipe but uploader identity and image-specific provenance remain unresolved.",
+      "required": "Verify uploader, original photo page, license and ingredient match."
+    },
+    {
+      "number": 3,
+      "recipe": "Стейк с чесночным маслом",
+      "source": "https://unsplash.com/photos/a-piece-of-steak-on-a-cutting-board-with-a-sprig-of-rosemary-Cuiu5jbtZtI",
+      "risk": "high",
+      "evidence": "Source URL mentions steak and rosemary, not garlic butter; catalog's recipe title is not independent photographic evidence.",
+      "required": "Confirm garlic butter visible and verify photographer/license; otherwise replace candidate."
+    },
+    {
+      "number": 4,
+      "recipe": "Тефтели в томатном соусе",
+      "source": "https://unsplash.com/photos/pasta-dish-in-stainless-steel-bowl-3a4gRjgdweQ",
+      "risk": "critical",
+      "evidence": "Source URL describes pasta in stainless-steel bowl, not meatballs; explicit metadata mismatch already flagged in worker queue.",
+      "required": "Block editorial approval pending direct physical-image inspection and independent source validation; replace if not meatballs."
+    },
+    {
+      "number": 5,
+      "recipe": "Лосось с лимоном и зеленью",
+      "source": "https://unsplash.com/photos/salmon-in-creamy-sauce-dinner-ND3edEmzcdQ",
+      "risk": "high",
+      "evidence": "Source URL describes salmon in creamy sauce; lemon/herbs unverified. Queue already flagged mismatch.",
+      "required": "Inspect physical WebP and full recipe, resolve author and license before any approval."
+    }
+  ],
+  "checkpoint": {
+    "stage": "completed_metadata_provenance_triage_1_5",
+    "files_changed": [
+      "photo-library/archive-provenance-triage-01-05-20261103.json"
+    ],
+    "verification": "Parsed source worker checkpoint and queue; cross-checked source URLs and flags for 1-5. No independent external license verification.",
+    "blockers": [
+      "Image-specific rights and photographer attribution not established",
+      "No direct visual inspection in this stage",
+      "Source URL slugs alone cannot establish content or legal rights"
+    ],
+    "next": "Direct visual and recipe comparison of archive #4 then #3/#5; retain approved alternate production copies #6/#10/#20 rather than archived files."
+  }
+}
