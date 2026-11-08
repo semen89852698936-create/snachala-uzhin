@@ -37,6 +37,18 @@ const {chromium}=require('playwright');
      assert(coverBlend.artMask.includes('gradient'),
        'mobile cover must fade into parchment: '+JSON.stringify(coverBlend));
    }
+   const featuredCard=await page.evaluate(()=>{
+     const el=document.querySelector('#homeView .du-hero-recipe');
+     const art=document.querySelector('#homeView .du-hero-art');
+     return {position:getComputedStyle(el).position,
+       cardBottom:el.getBoundingClientRect().bottom,
+       artBottom:art.getBoundingClientRect().bottom,
+       cardTop:el.getBoundingClientRect().top,
+       artTop:art.getBoundingClientRect().top};
+   });
+   assert.equal(featuredCard.position,'absolute','featured recipe CTA must not enter normal cover flow');
+   assert(featuredCard.cardBottom>featuredCard.artBottom-130 && featuredCard.cardBottom<featuredCard.artBottom+10,
+      'featured recipe CTA must stay near the photograph bottom edge: '+JSON.stringify(featuredCard));
    await page.screenshot({path:'/tmp/editorial-home-cover-'+viewport.width+'.png',fullPage:false});
    const presentation=await page.evaluate(()=>{
      const button=document.querySelector('#homeView .du-hero-actions .du-btn-outline');
