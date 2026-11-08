@@ -1,0 +1,110 @@
+{
+  "schema_version": 1,
+  "created_utc": "2026-11-03",
+  "scope": "archive candidates 26-30 only; not current AI photo map",
+  "source_branch": "automation/half-hour-photo-audit",
+  "source_queue_path": "photo-library/half-hour-review-queue.json",
+  "base_main_commit": "2a877e16a03aaf31bf6d8f842093a0a3a2490851",
+  "method": "Review existing source titles and declared licenses from editorial queue. No image pixels inspected and no individual Wikimedia file pages independently verified.",
+  "counts": {
+    "records": 5,
+    "technical_verified_in_this_run": 0,
+    "visually_verified": 0,
+    "rights_cleared": 0,
+    "approved": 0
+  },
+  "items": [
+    {
+      "number": 26,
+      "recipe_id": "collection-meat-01-08",
+      "recipe_title": "Говяжьи медальоны с сливками и зелёным перцем",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Beef_filet_on_soba_noodles,_with_soy_sauce,_salt,_and_black_pepper_-_Arlington,_MA.jpg",
+      "source_title": "Beef filet on soba noodles, with soy sauce, salt, and black pepper - Arlington, MA.jpg",
+      "declared_license": "CC0",
+      "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "technical_status": "not_checked",
+      "editorial_status": "blocked_pending_visual_review",
+      "rights_status": "blocked_pending_individual_file_page_verification",
+      "source_caption_evidence": "metadata_only_not_visual",
+      "specific_risk": "Source describes beef filet on soba noodles with soy sauce; cream sauce and green peppercorns unverified.",
+      "next_action": "Inspect exact physical WebP against full recipe, resolve source author and file-specific rights before any acceptance"
+    },
+    {
+      "number": 27,
+      "recipe_id": "collection-meat-01-09",
+      "recipe_title": "Говяжьи медальоны с яблоком и шалфеем",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Beef_medallion_topped_with_fried_onions.jpg",
+      "source_title": "Beef medallion topped with fried onions.jpg",
+      "declared_license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "technical_status": "not_checked",
+      "editorial_status": "blocked_pending_visual_review",
+      "rights_status": "blocked_pending_individual_file_page_verification",
+      "source_caption_evidence": "metadata_only_not_visual",
+      "specific_risk": "Source describes fried onions on beef medallion; apple and sage unverified.",
+      "next_action": "Inspect exact physical WebP against full recipe, resolve source author and file-specific rights before any acceptance"
+    },
+    {
+      "number": 28,
+      "recipe_id": "collection-meat-01-10",
+      "recipe_title": "Говяжьи медальоны с черносливом и тмином",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Tenderloin_hot_plate,_Steak_Moen-Moen,_Lt_2,_BG_Junction,_2025_(01).jpg",
+      "source_title": "Tenderloin hot plate, Steak Moen-Moen, Lt 2, BG Junction, 2025 (01).jpg",
+      "declared_license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "technical_status": "not_checked",
+      "editorial_status": "blocked_pending_visual_review",
+      "rights_status": "blocked_pending_individual_file_page_verification",
+      "source_caption_evidence": "metadata_only_not_visual",
+      "specific_risk": "Source describes a tenderloin hot plate; prunes and caraway unverified.",
+      "next_action": "Inspect exact physical WebP against full recipe, resolve source author and file-specific rights before any acceptance"
+    },
+    {
+      "number": 29,
+      "recipe_id": "collection-meat-02-01",
+      "recipe_title": "Свиная вырезка в духовке с лимоном и тимьяном",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Pork_tenderloin_dish.png",
+      "source_title": "Pork tenderloin dish.png",
+      "declared_license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "technical_status": "not_checked",
+      "editorial_status": "blocked_pending_visual_review",
+      "rights_status": "blocked_pending_individual_file_page_verification",
+      "source_caption_evidence": "metadata_only_not_visual",
+      "specific_risk": "Generic pork tenderloin photo title; lemon, thyme and oven method unverified.",
+      "next_action": "Inspect exact physical WebP against full recipe, resolve source author and file-specific rights before any acceptance"
+    },
+    {
+      "number": 30,
+      "recipe_id": "collection-meat-02-02",
+      "recipe_title": "Свиная вырезка в духовке с грибами и розмарином",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Guo_ta_liji_%E9%94%85%E5%A1%8C%E9%87%8C%E8%84%8A_(Pan-Pressed_Pork_Tenderloin).jpg",
+      "source_title": "Guo ta liji 锅塌里脊 (Pan-Pressed Pork Tenderloin).jpg",
+      "declared_license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "technical_status": "not_checked",
+      "editorial_status": "blocked_pending_visual_review",
+      "rights_status": "blocked_pending_individual_file_page_verification",
+      "source_caption_evidence": "metadata_only_not_visual",
+      "specific_risk": "Source identifies pan-pressed pork tenderloin (Guo ta liji), not oven-roasted pork with mushrooms and rosemary.",
+      "next_action": "Inspect exact physical WebP against full recipe, resolve source author and file-specific rights before any acceptance"
+    }
+  ],
+  "rights_notes": [
+    "CC0 declaration for #26 is not proof of correct file identity or rights; verify actual Commons file page and author/license history.",
+    "CC BY-SA 4.0 declarations for #27-30 require checking author attribution, license version, modification notices and share-alike obligations if adapted.",
+    "Never substitute archive candidates #6, #10 or #20 for previously approved distinct files."
+  ],
+  "checkpoint": {
+    "completed": [
+      "Reviewed source queue records #26-30",
+      "Recorded source-title/ingredient conflicts and license clearance gates"
+    ],
+    "blocked": [
+      "No direct visual inspection of archived WebP",
+      "No file-specific author/license evidence",
+      "Technical worker reports not_checked for #26-30"
+    ],
+    "next_task": "Prioritize visual comparison of #30 and #27 with full recipes, then verify Wikimedia file pages and license conditions; do not publish."
+  }
+}
