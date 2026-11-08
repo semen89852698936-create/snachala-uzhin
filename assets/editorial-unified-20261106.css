@@ -3497,7 +3497,7 @@ header.header .du-brand-mark svg.du-wine-icon{visibility:hidden!important;}
   align-items:start;
   gap:0;
   width:100%;
-  margin:0;
+  margin:-30px 0 0;
   padding:0;
   background:#fffaf5;
   border:0;
@@ -3556,7 +3556,7 @@ header.header .du-brand-mark svg.du-wine-icon{visibility:hidden!important;}
     grid-template-columns:minmax(0,1fr);
     padding:0;
     gap:0;
-    margin:0;
+    margin:-18px 0 0;
   }
   #homeView .du-cover-chapters.du-approved-image-cards > a.du-approved-card{
     width:100%;
