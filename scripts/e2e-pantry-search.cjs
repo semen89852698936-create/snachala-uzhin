@@ -73,6 +73,30 @@ const assert=require('node:assert/strict');
       'Only one egg should be added to the shared grocery list');
     await page.locator('#closeShopping').click();
 
+    // Recipe grams remain exact; shopping guidance for chicken has no package size.
+    await page.goto('http://127.0.0.1:8765/'+entry+'#recipe=chicken-lemon',{waitUntil:'domcontentloaded'});
+    await page.locator('#portionMinus').click();
+    await page.locator('#portionMinus').click();
+    assert.match(await page.locator('#recipeDetail').innerText(),/350 г/,
+      'The real chicken recipe still shows its exact 350g requirement');
+    await page.locator('#addShopping').click();
+    await page.locator('.shopping-open').first().click();
+    const chickenRow=page.locator('#shoppingContents .shop-item').filter({hasText:'ДОКУПИТЬ КУРИЦУ'});
+    assert.equal(await chickenRow.count(),1,'The shopping cart must show one chicken purchase prompt');
+    assert.equal((await chickenRow.innerText()).trim(),'ДОКУПИТЬ КУРИЦУ',
+      'Do not show 500g, required weight or packaging for chicken in the shopping list');
+    assert.match(await page.evaluate(()=>shoppingShareText()),/^[☐☑] ДОКУПИТЬ КУРИЦУ$/m,
+      'Shared shopping list must simply say buy chicken');
+    await page.locator('#closeShopping').click();
+    await page.locator('#portionPlus').click();
+    await page.locator('#portionPlus').click();
+    await page.locator('#addShopping').click();
+    await page.locator('.shopping-open').first().click();
+    assert.equal((await chickenRow.innerText()).trim(),'ДОКУПИТЬ КУРИЦУ',
+      'Chicken purchase prompt stays independent of selected servings');
+    await page.locator('#closeShopping').click();
+    await page.goto('http://127.0.0.1:8765/'+entry+'#catalog',{waitUntil:'domcontentloaded'});
+
     if(viewport.width<500){
       const overflow=await page.evaluate(()=>document.documentElement.scrollWidth-document.documentElement.clientWidth);
       if(overflow>2){
