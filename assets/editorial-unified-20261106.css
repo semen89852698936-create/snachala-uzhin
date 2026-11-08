@@ -2591,14 +2591,17 @@ body.du-evening-mode #evening .du-story-after-copy{
   display:inline-flex;
   align-items:center;
 }
-.header .du-brand-mark,
-.header .du-brand-mark .du-wine-icon{
+.header .du-brand-mark{
   display:flex;
   visibility:visible;
   opacity:1;
   flex-shrink:0;
 }
 .header .du-brand-mark .du-wine-icon{
+  display:block;
+  visibility:visible;
+  opacity:1;
+  flex-shrink:0;
   width:38px;
   height:43px;
 }
