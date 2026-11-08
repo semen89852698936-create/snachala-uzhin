@@ -1549,3 +1549,68 @@ body.du-evening-mode #music .du-music-player{min-height:54px}
  #homeView .du-hero-art{background-position:50% 52%}
  #homeView .du-hero-recipe{left:15px;right:15px;bottom:18px}
 }
+
+
+/* APPROVED_EDITORIAL_MASTHEAD_POLISH_20261108
+   The approved visual: one wine-red wordmark, fine header rules, no pink icon
+   disk and no invisible outline CTA on pale paper. No navigation removed. */
+.header .du-brand{gap:9px}
+.header .du-brand-mark{
+  min-width:42px;width:42px;height:44px;
+  display:flex;align-items:center;justify-content:center;
+  background:transparent;border-radius:0;box-shadow:none;
+}
+.header .du-brand-mark .du-wine-icon{width:38px;height:43px}
+.header .du-wine-icon path[stroke]{stroke:#711c2e}
+.header .du-wine-icon path[fill="#AD647B"]{fill:#711c2e}
+.header .du-brand-words{
+  display:flex;flex-direction:row;align-items:baseline;gap:6px;
+  white-space:nowrap;
+  font:600 clamp(17px,1.65vw,25px)/1 'Cormorant Garamond',Georgia,serif;
+  letter-spacing:.02em;color:#651d2b;
+}
+.header .du-brand-words em{
+  font:inherit;font-style:normal;
+  letter-spacing:inherit;color:inherit;margin:0;
+}
+.header .du-brand-words small{display:none}
+.header .main-nav a{
+  color:#4c3634;
+  font-weight:650;
+}
+.header .main-nav a[data-nav="evening"]{
+  padding:9px 4px 11px;
+  border:0;border-bottom:2px solid #731e2f;
+  background:transparent;box-shadow:none;
+  border-radius:0;color:#731e2f;
+}
+.header .main-nav a[data-nav="airfryer"]{
+  border:0;border-radius:0;
+  background:transparent;box-shadow:none;
+  padding:9px 4px;
+  color:#6c3440;
+}
+.header .header-actions .shopping-open{
+  background:#f8eee3;color:#662532;border:1px solid #e1ccbd;
+  border-radius:5px;box-shadow:none;
+}
+#homeView .du-hero-actions .du-btn-outline{
+  color:#552532;
+  background:rgba(255,249,240,.55);
+  border:1px solid #8b4956;
+  text-shadow:none;
+  box-shadow:none;
+}
+#homeView .du-hero-actions .du-btn-outline:hover{
+  color:#fff9f2;background:#692334;border-color:#692334;
+}
+@media(max-width:920px){
+ .header .du-brand-words{font-size:clamp(16px,2vw,21px);gap:4px}
+ .header .du-brand-mark{width:35px;min-width:35px}
+ .header .du-brand-mark .du-wine-icon{width:35px;height:38px}
+}
+@media(max-width:680px){
+ .header .du-brand-words{font-size:19px;gap:4px}
+ .header .du-brand-mark{width:34px;min-width:34px;height:37px}
+ .header .du-brand-mark .du-wine-icon{width:32px;height:36px}
+}

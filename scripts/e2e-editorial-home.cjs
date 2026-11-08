@@ -21,6 +21,16 @@ const {chromium}=require('playwright');
    assert.equal(colors.wordmark,'rgb(40, 27, 27)','approved ink typography not applied');
    await page.evaluate(()=>document.fonts.ready);
    await page.screenshot({path:'/tmp/editorial-home-cover-'+viewport.width+'.png',fullPage:false});
+   const presentation=await page.evaluate(()=>{
+     const button=document.querySelector('#homeView .du-hero-actions .du-btn-outline');
+     const mark=document.querySelector('.header .du-brand-mark');
+     const letters=document.querySelector('.header .du-brand-words');
+     return {ctaColor:getComputedStyle(button).color,markBg:getComputedStyle(mark).backgroundColor,
+       brandDirection:getComputedStyle(letters).flexDirection};
+   });
+   assert.equal(presentation.ctaColor,'rgb(85, 37, 50)','outlined CTA cannot be read on cream background');
+   assert.equal(presentation.markBg,'rgba(0, 0, 0, 0)','brand wine glass must not have the old pink disk');
+   assert.equal(presentation.brandDirection,'row','brand must read as one editorial wordmark');
    assert.equal(await page.locator('#tryCooking').count(),1,'cooking demo CTA missing');
    assert.equal(await page.locator('.du-categories').count(),1,'category navigation missing');
    assert.equal(await page.locator('.du-catalog').count(),1,'catalog missing');
