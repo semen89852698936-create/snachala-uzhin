@@ -13,10 +13,20 @@ assert(css.includes('#recipeDetail') && css.includes('#cookOverlay'));
 assert(css.includes('body.du-evening-mode #eveningLanding'));
 assert(css.includes('@media (max-width: 430px)'));
 const cssUrls=[...css.matchAll(/url\s*\(\s*['"]?([^'")]+)['"]?\s*\)/gi)].map(x=>x[1]);
-assert.deepEqual(cssUrls,['/assets/recipes-ai/0001-lemon-spinach-pasta.webp'],
-  'Only an existing local featured-recipe photo is permitted; reject remote assets and fonts');
-assert(fs.existsSync(path.join(root,'assets','recipes-ai','0001-lemon-spinach-pasta.webp')),
-  'Featured pasta photo must already exist in local approved photo library');
+const editorialPhotos=[
+  '/assets/recipes-ai/0001-lemon-spinach-pasta.webp',
+  '/assets/recipes-ai/0003-pepper-steak.webp'
+];
+assert.deepEqual([...cssUrls].sort(),[...editorialPhotos].sort(),
+  'Only the two explicitly approved local AI recipe photos are permitted; reject remote assets and fonts');
+for (const localUrl of editorialPhotos) {
+  assert(fs.existsSync(path.join(root,localUrl.slice(1))),
+    'Local editorial photo must already exist in the approved recipe photo library: '+localUrl);
+}
+assert(css.includes('APPROVED_THREE_SCENE_COMPOSITION_20261108_V2'),
+  'The approved three-scene editorial composition must remain in the shared CSS');
+assert(css.includes('grid-template-columns:minmax(0,1.08fr) minmax(0,.68fr) minmax(0,.90fr)'),
+  'The desktop dinner spread must retain three photographic/text planes');
 const payloads = [];
 for(const [page, link] of pages) {
   const text = fs.readFileSync(path.join(root,page),'utf8');
