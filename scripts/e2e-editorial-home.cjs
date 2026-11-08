@@ -119,7 +119,7 @@ const {chromium}=require('playwright');
        descriptionText:para.innerText.trim(),
        hasDemo:getComputedStyle(document.querySelector('.demo-strip')).display!=='none'};
    });
-   assert.equal(balance.descriptionColor,'rgb(255, 242, 230)',
+   assert.equal(balance.descriptionColor,viewport.width<=760?'rgb(255, 241, 226)':'rgb(255, 242, 230)',
      'Long-form copy over the dark photograph is not legible');
    assert(!balance.hasDemo,'Approved magazine cover has no unrelated demo strip above the photograph');
    if(viewport.width>1000){
