@@ -3172,3 +3172,51 @@ body:not(.du-evening-mode) .demo-strip{display:none;}
     bottom:2%;
   }
 }
+
+
+/* MOVE_COPY_TO_FEATURED_AREA_AND_DOUBLE_1001_20261108
+   Owner-approved precise cover revision, without changing the photographic
+   spread or global masthead. Keep the '1001 повод остаться' left/top anchor,
+   double its TYPE SIZE, and replace the removed Recipe of the Week CTA with
+   exactly the existing explanatory prose in the same lower-right photo area. */
+#homeView .du-hero-occasion{
+  font-size:clamp(46px,5.1vw,72px);
+  line-height:1.04;
+  letter-spacing:-.035em;
+  max-width:100%;
+  text-wrap:balance;
+}
+#homeView .du-hero-art .du-hero-side-note{
+  position:absolute;
+  z-index:5;
+  bottom:clamp(47px,5.2vw,79px);
+  right:clamp(25px,3.5vw,58px);
+  left:auto;
+  width:clamp(265px,27vw,380px);
+  max-width:39%;
+  box-sizing:border-box;
+  padding:clamp(17px,1.8vw,26px);
+  margin:0;
+  background:#fff0dd;
+  color:#661d31;
+  font:500 clamp(13px,1.07vw,16px)/1.47 var(--du-magazine-sans);
+  text-shadow:none;
+  box-shadow:0 12px 25px rgba(17,5,5,.19);
+  clip-path:polygon(0 8%,8% 4%,20% 7%,32% 1%,47% 7%,61% 3%,76% 6%,91% 2%,100% 7%,97% 32%,100% 57%,98% 83%,93% 99%,77% 95%,61% 100%,45% 94%,26% 100%,12% 96%,1% 100%,3% 76%,0 56%);
+}
+@media(max-width:760px){
+  #homeView .du-hero-occasion{
+    font-size:clamp(44px,12vw,60px);
+    line-height:1.02;
+    margin-top:9px;
+  }
+  #homeView .du-hero-art .du-hero-side-note{
+    right:17px;
+    bottom:30px;
+    width:min(258px,66vw);
+    max-width:66%;
+    padding:15px;
+    font-size:12px;
+    line-height:1.39;
+  }
+}
