@@ -19,6 +19,8 @@ const {chromium}=require('playwright');
    });
    assert.equal(colors.bg,'rgb(255, 248, 239)','approved light-paper storefront not applied');
    assert.equal(colors.wordmark,'rgb(40, 27, 27)','approved ink typography not applied');
+   await page.evaluate(()=>document.fonts.ready);
+   await page.screenshot({path:'/tmp/editorial-home-cover-'+viewport.width+'.png',fullPage:false});
    assert.equal(await page.locator('#tryCooking').count(),1,'cooking demo CTA missing');
    assert.equal(await page.locator('.du-categories').count(),1,'category navigation missing');
    assert.equal(await page.locator('.du-catalog').count(),1,'catalog missing');
