@@ -175,10 +175,12 @@ const {chromium}=require('playwright');
        bottomHeight:parseFloat(bottom.height)
      };
    });
-   for(const key of ['paperButton','paperOutline','paperNote']){
+   for(const key of ['paperButton','paperOutline']){
      assert(organicPaper[key].includes('editorial-paper-tear-mask-20261108.svg'),
        key+' must have a genuine organic torn-paper silhouette: '+JSON.stringify(organicPaper));
    }
+   assert(organicPaper.paperNote.includes('editorial-paper-panel-mask-20261108.svg'),
+     'Compact editorial note must have its own fibrous, text-safe paper edge: '+JSON.stringify(organicPaper));
    assert(organicPaper.buttonGrain.includes('editorial-paper-fibres-20261108.svg') &&
      organicPaper.noteGrain.includes('editorial-paper-fibres-20261108.svg'),
      'Approved papery fibre texture must be visible on both buttons and explanation panel');
