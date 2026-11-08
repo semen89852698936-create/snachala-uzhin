@@ -3220,3 +3220,13 @@ body:not(.du-evening-mode) .demo-strip{display:none;}
     line-height:1.39;
   }
 }
+
+
+/* SLOGAN_PARALLEL_TO_EXISTING_RED_LINE_20261108
+   Tilt the LETTERING only by the current underline's -3deg.
+   The original red underline and all surrounding cover geometry stay put. */
+#homeView .du-hero-slogan .du-hero-slogan-type{
+  display:inline-block;
+  transform:rotate(-3deg);
+  transform-origin:left center;
+}
