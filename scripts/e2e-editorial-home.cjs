@@ -52,18 +52,47 @@ const {chromium}=require('playwright');
      assert(coverBlend.artLeft===0 && coverBlend.copyRight>coverBlend.artLeft,
        'mobile steak photo must remain FULL BLEED beneath the editorial type: '+JSON.stringify(coverBlend));
    }
-   const featuredCard=await page.evaluate(()=>{
-     const el=document.querySelector('#homeView .du-hero-recipe');
+   assert.equal(await page.locator('#homeView #heroRecipe').count(),0,
+     'Recipe of the Week CTA must be removed, as requested');
+   assert.equal(await page.locator('#homeView .du-hero-side-note').count(),1,
+     'Original explanatory paragraph must replace the featured recipe card');
+   const sideNote=await page.evaluate(()=>{
+     const note=document.querySelector('#homeView .du-hero-side-note');
      const art=document.querySelector('#homeView .du-hero-art');
-     return {position:getComputedStyle(el).position,
-       cardBottom:el.getBoundingClientRect().bottom,
-       artBottom:art.getBoundingClientRect().bottom,
-       cardTop:el.getBoundingClientRect().top,
-       artTop:art.getBoundingClientRect().top};
+     const occasion=document.querySelector('#homeView .du-hero-occasion');
+     const copy=document.querySelector('#homeView .du-hero-copy');
+     const action=document.querySelector('#homeView .du-hero-actions');
+     const footer=document.querySelector('#homeView .du-hero-bottom');
+     const b=el=>{const x=el.getBoundingClientRect();
+       return {left:x.left,right:x.right,top:x.top,bottom:x.bottom,width:x.width,height:x.height}};
+     return {
+       text:note.innerText.trim(),
+       position:getComputedStyle(note).position,
+       note:b(note),art:b(art),occasion:b(occasion),actions:b(action),footer:b(footer),copy:b(copy),
+       occasionFont:parseFloat(getComputedStyle(occasion).fontSize),
+       noteColor:getComputedStyle(note).color,
+       notePaper:getComputedStyle(note).backgroundColor,
+       sideNoteIsInsideArt:art.contains(note),
+       oldFeaturedExists:!!document.querySelector('#homeView #heroRecipe')
+     };
    });
-   assert.equal(featuredCard.position,'absolute','featured recipe CTA must not enter normal cover flow');
-   assert(featuredCard.cardBottom>featuredCard.artBottom-130 && featuredCard.cardBottom<featuredCard.artBottom+10,
-      'featured recipe CTA must stay near the photograph bottom edge: '+JSON.stringify(featuredCard));
+   assert.equal(sideNote.text,
+     'Красивые блюда. Два места за столом. И чуть больше времени друг для друга. Выберите настроение, а мы подскажем, что приготовить и как сделать это вместе.');
+   assert(sideNote.sideNoteIsInsideArt && !sideNote.oldFeaturedExists,
+     'Paragraph must occupy former Recipe-of-Week area, not left copy: '+JSON.stringify(sideNote));
+   assert.equal(sideNote.position,'absolute',
+     'Right-hand paragraph must stay anchored where the recipe card was');
+   assert(sideNote.note.right<=sideNote.art.right-7 &&
+     sideNote.note.bottom<=sideNote.art.bottom-10 &&
+     sideNote.note.left>sideNote.art.left+sideNote.art.width*.48 &&
+     sideNote.note.top>sideNote.art.top+sideNote.art.height*.32,
+     'Paragraph must occupy lower-right cover area: '+JSON.stringify(sideNote));
+   assert(sideNote.occasionFont>(viewport.width>760?60:43),
+     '1001 повод остаться must be displayed at double font size: '+JSON.stringify(sideNote));
+   const overlaps=(x,y)=>Math.max(x.left,y.left)<Math.min(x.right,y.right)-4 &&
+     Math.max(x.top,y.top)<Math.min(x.bottom,y.bottom)-4;
+   assert(!overlaps(sideNote.note,sideNote.actions)&&!overlaps(sideNote.note,sideNote.footer),
+     'Right-hand editorial paragraph must not cover buttons or lower metadata: '+JSON.stringify(sideNote));
    const photoCover=await page.evaluate(()=>{
      const hero=document.querySelector('#homeView .du-hero');
      const art=document.querySelector('#homeView .du-hero-art');
@@ -119,8 +148,8 @@ const {chromium}=require('playwright');
        descriptionText:para.innerText.trim(),
        hasDemo:getComputedStyle(document.querySelector('.demo-strip')).display!=='none'};
    });
-   assert.equal(balance.descriptionColor,viewport.width<=760?'rgb(255, 241, 226)':'rgb(255, 242, 230)',
-     'Long-form copy over the dark photograph is not legible');
+   assert.equal(balance.descriptionColor,'rgb(102, 29, 49)',
+     'Right-hand editorial description must have dark wine-colored ink on cream paper');
    assert(!balance.hasDemo,'Approved magazine cover has no unrelated demo strip above the photograph');
    if(viewport.width>1000){
      assert(balance.photoHeight<=760,
