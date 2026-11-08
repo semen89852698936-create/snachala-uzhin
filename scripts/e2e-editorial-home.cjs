@@ -126,6 +126,30 @@ const {chromium}=require('playwright');
      'Live homepage title is missing from photographic spread: '+JSON.stringify(photoCover));
    assert.equal(photoCover.kicker,'КУЛИНАРНЫЙ ЖУРНАЛ');
    assert.equal(photoCover.slogan,'Рецепты, которые объединяют');
+   // Rotating the entire paragraph would rotate the red underline twice or
+   // move it. Test independent text and line rotations: same visual angle.
+   const sloganSlant=await page.evaluate(()=>{
+     const p=document.querySelector('#homeView .du-hero-slogan');
+     const lettering=p.querySelector('.du-hero-slogan-type');
+     const underline=getComputedStyle(p,'::after');
+     const matrixAngle=transform=>{
+       if(!transform || transform==='none')return 0;
+       const mat=new DOMMatrixReadOnly(transform);
+       return Math.atan2(mat.b,mat.a)*180/Math.PI;
+     };
+     return {
+       letteringAngle:matrixAngle(getComputedStyle(lettering).transform),
+       underlineAngle:matrixAngle(underline.transform),
+       paragraphAngle:matrixAngle(getComputedStyle(p).transform),
+       underlineColor:underline.backgroundColor
+     };
+   });
+   assert(Math.abs(sloganSlant.letteringAngle-(-3))<0.2,
+     'Slogan lettering should rise to the right parallel with the existing underline: '+JSON.stringify(sloganSlant));
+   assert(Math.abs(sloganSlant.underlineAngle-sloganSlant.letteringAngle)<0.2,
+     'Slogan must be parallel to the SAME red underline: '+JSON.stringify(sloganSlant));
+   assert(Math.abs(sloganSlant.paragraphAngle)<0.2,
+     'Entire paragraph must not move or tilt the original red underline: '+JSON.stringify(sloganSlant));
    assert.equal(photoCover.occasion,'1001 повод остаться');
    assert(photoCover.headerOnPhoto && Math.abs(photoCover.photoWidth-photoCover.heroWidth)<3 && photoCover.photoOverlap,
      'Approved photo must occupy WHOLE cover behind live typography, no pale left column: '+JSON.stringify(photoCover));
