@@ -3230,3 +3230,95 @@ body:not(.du-evening-mode) .demo-strip{display:none;}
   transform:rotate(-3deg);
   transform-origin:left center;
 }
+
+
+/* ORGANIC_FIBRE_TORN_PAPER_CONTROLS_20261108
+   Reference-matched hand-torn fibres. The live paper buttons, text panel
+   and photo seam receive real ragged silhouettes, not polygonal sawteeth.
+   The photo, wording, positions, typography and actions are unchanged. */
+:root{
+  --du-ripped-paper-mask:url('/assets/editorial-paper-tear-mask-20261108.svg');
+  --du-paper-fibre-grain:url('/assets/editorial-paper-fibres-20261108.svg');
+}
+#homeView .du-hero-actions .du-btn,
+#homeView .du-hero-art .du-hero-side-note {
+  clip-path:none;
+  -webkit-mask-image:var(--du-ripped-paper-mask);
+  mask-image:var(--du-ripped-paper-mask);
+  -webkit-mask-mode:alpha;
+  mask-mode:alpha;
+  -webkit-mask-size:100% 100%;
+  mask-size:100% 100%;
+  -webkit-mask-repeat:no-repeat;
+  mask-repeat:no-repeat;
+  background-color:#fff0dd;
+  background-image:
+    linear-gradient(158deg,rgba(255,255,255,.26),transparent 64%),
+    var(--du-paper-fibre-grain);
+  background-position:0 0,0 0;
+  background-size:100% 100%,192px 192px;
+  background-repeat:no-repeat,repeat;
+  filter:drop-shadow(0 7px 9px rgba(20,8,7,.28));
+}
+#homeView .du-hero-actions .du-btn-outline{
+  background-color:#f5e1ca;
+}
+#homeView .du-hero-actions .du-btn:hover,
+#homeView .du-hero-actions .du-btn:focus-visible{
+  background-color:#fff7eb;
+  color:#65192b;
+  filter:drop-shadow(0 9px 13px rgba(20,8,7,.34));
+}
+#homeView .du-hero-actions .du-btn:focus-visible{
+  outline:2px solid #8b2b40;
+  outline-offset:2px;
+}
+#homeView .du-hero-art .du-hero-side-note{
+  background-color:#fff0dd;
+  color:#661d31;
+  box-shadow:none;
+  padding:clamp(17px,1.8vw,26px);
+}
+@media(max-width:760px){
+  #homeView .du-hero-art .du-hero-side-note{
+    padding:15px;
+  }
+}
+/* Preserve both highlighted positions in the original site header, while
+   lifting their flat rectangular edges into the approved paper material. */
+@media(min-width:681px){
+  .header .main-nav > a[data-nav="evening"],
+  .header .main-nav > a[data-nav="airfryer"]{
+    clip-path:none;
+    -webkit-mask-image:var(--du-ripped-paper-mask);
+    mask-image:var(--du-ripped-paper-mask);
+    -webkit-mask-size:100% 100%;
+    mask-size:100% 100%;
+    -webkit-mask-repeat:no-repeat;
+    mask-repeat:no-repeat;
+    background-image:var(--du-paper-fibre-grain);
+    background-size:192px 192px;
+    background-blend-mode:soft-light;
+    filter:drop-shadow(0 3px 3px rgba(43,15,24,.12));
+  }
+}
+/* The bottom edge is not a polygonal wave. This is the actual fibrous
+   top silhouette of torn paper overlaying the FULL-width photograph. */
+#homeView .du-hero-art::after{
+  content:"";
+  position:absolute;
+  left:0;
+  right:0;
+  bottom:-1px;
+  width:100%;
+  height:clamp(44px,5.3vw,78px);
+  z-index:4;
+  pointer-events:none;
+  clip-path:none;
+  background:transparent url('/assets/editorial-paper-torn-bottom-20261108.svg') center bottom / 100% 100% no-repeat;
+}
+@media(max-width:760px){
+  #homeView .du-hero-art::after{
+    height:51px;
+  }
+}
