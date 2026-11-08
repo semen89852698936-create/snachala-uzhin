@@ -1,0 +1,82 @@
+{
+  "date": "2026-11-03",
+  "branch": "photo-library/ai-visual-review-31-35-20261103",
+  "base_main_commit": "98082e1a43b085a2a61cf1f679901010cceda2c8",
+  "source_photo_map_blob_sha": "68c9c4c964c6afb7df5a164fbed3763434402290",
+  "source_recipes_blob_sha": "acb94b3fd125bd3dfd06f5d79bece0b3c3257c4e",
+  "files_created": [
+    "photo-library/ai-art-direct-visual-review-31-35-20261103.json",
+    "tests/test_ai_art_direct_visual_review_31_35.cjs",
+    ".github/workflows/ai-art-direct-visual-review-31-35.yml",
+    "project-operations/ai-art-direct-visual-review-31-35-checkpoint-20261103.json"
+  ],
+  "reviewed_range": "31-35",
+  "reviewed_count": 5,
+  "new_rejections": [
+    32,
+    33,
+    34
+  ],
+  "requires_culinary_review": [
+    31
+  ],
+  "candidate_pending": [
+    35
+  ],
+  "approved_count": 0,
+  "source_photo_blobs": [
+    {
+      "n": 31,
+      "sha": "d7d0b30ec8adc9d1af1f3af11c43819e03b6e391",
+      "path": "assets/recipes-ai/0031-collection-meat-02-03-regen.webp"
+    },
+    {
+      "n": 32,
+      "sha": "d0c8a8fe75917dbc778081e86479e14c451c6d4f",
+      "path": "assets/recipes-ai/0032-collection-meat-02-04.webp"
+    },
+    {
+      "n": 33,
+      "sha": "3fa491dce74dbe09ff6f2c5887cd54e55173a0af",
+      "path": "assets/recipes-ai/0033-collection-meat-02-05-regen.webp"
+    },
+    {
+      "n": 34,
+      "sha": "afd3c0bdf0e0bb0a6c4ffe9cdd3deff635d408a6",
+      "path": "assets/recipes-ai/0034-collection-meat-02-06-regen.webp"
+    },
+    {
+      "n": 35,
+      "sha": "974c27c4e02dddb4f16c69007e3b0f4bfea1ee56",
+      "path": "assets/recipes-ai/0035-collection-meat-02-07.webp"
+    }
+  ],
+  "commits_before_checkpoint": [
+    {
+      "path": "photo-library/ai-art-direct-visual-review-31-35-20261103.json",
+      "sha": "01985b30104e7a2b1844fd53ce94b46789bee1a9"
+    },
+    {
+      "path": "tests/test_ai_art_direct_visual_review_31_35.cjs",
+      "sha": "4eb7dd99faa4431d1a469a464f817354c5ad7212"
+    },
+    {
+      "path": ".github/workflows/ai-art-direct-visual-review-31-35.yml",
+      "sha": "203bf8c40c97acf3200ac650354566d148b1d509"
+    }
+  ],
+  "tests": {
+    "connector_metadata_validation": "PASS: 30 assertions against main photo map, 5 paths, IDs and Git blob SHA matched; 3 rejected have non-executing replacement briefs",
+    "github_actions": "No workflow runs returned for latest checkpoint commit at time of check; not claiming CI success",
+    "vercel": "Combined commit status reports Vercel failure due to build-rate-limit/upgradeToPro; no evidence of code failure",
+    "verified_commit": "9d0463556b49a65f9496aa048468f9c3b229e1f4"
+  },
+  "blockers": [
+    "No individual rights clearance or final owner approval",
+    "No paid image replacement authorized in this run",
+    "Current main HTML cooking steps not fully extracted; source ingredients pinned to generator recipe JSON"
+  ],
+  "next_task": "Review physical AI WebP 36-40 and current main recipe steps; do not repeat archived technical audit or overlap PR #49 metadata scan.",
+  "safety": "No merge, production change, paid API, secrets or schedule change.",
+  "pr_url": "https://github.com/semen89852698936-create/snachala-uzhin/pull/50"
+}
