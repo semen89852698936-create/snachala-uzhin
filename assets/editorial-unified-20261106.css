@@ -3144,3 +3144,31 @@ body:not(.du-evening-mode) .demo-strip{display:none;}
     right:12%;
   }
 }
+
+
+/* COVER_CHAPTER_VINYL_TEXT_SEPARATION_20261108
+   Vinyl becomes right-side imagery, while the live chapter title sits on
+   unobstructed parchment, as in the approved magazine screenshot. */
+#homeView .du-cover-chapters a:nth-child(3)::before{
+  width:58%;
+  right:-20%;
+  bottom:-76%;
+  opacity:.68;
+}
+#homeView .du-cover-chapters a:nth-child(3)::after{
+  right:1%;
+  bottom:5%;
+  opacity:.79;
+}
+@media(max-width:760px){
+  #homeView .du-cover-chapters a:nth-child(3)::before{
+    width:45%;
+    right:-12%;
+    bottom:-86%;
+    opacity:.75;
+  }
+  #homeView .du-cover-chapters a:nth-child(3)::after{
+    right:1%;
+    bottom:2%;
+  }
+}
