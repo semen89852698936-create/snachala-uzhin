@@ -20,6 +20,21 @@ const {chromium}=require('playwright');
    assert.equal(colors.bg,'rgb(247, 236, 223)','approved reference parchment storefront not applied');
    assert.equal(colors.wordmark,'rgb(40, 27, 27)','approved ink typography not applied');
    await page.evaluate(()=>document.fonts.ready);
+   const featuredPhoto=await page.evaluate(async ()=>{
+     const art=document.querySelector('#homeView .du-hero-art');
+     const image=getComputedStyle(art).backgroundImage;
+     if(!image.includes('home-hero-steak-wine-20261108.webp')){
+       return {image,loaded:false};
+     }
+     const response=await fetch('/assets/home-hero-steak-wine-20261108.webp');
+     const blob=await response.blob();
+     const bitmap=await createImageBitmap(blob);
+     const result={image,loaded:response.ok,width:bitmap.width,height:bitmap.height,type:blob.type};
+     bitmap.close();
+     return result;
+   });
+   assert(featuredPhoto.loaded && featuredPhoto.width===1400 && featuredPhoto.height===900,
+     'Meat + two wine glasses hero is missing, undecodable or wrong sized: '+JSON.stringify(featuredPhoto));
    const coverBlend=await page.evaluate(()=>{
      const art=document.querySelector('#homeView .du-hero-art');
      const copy=document.querySelector('#homeView .du-hero-copy');
