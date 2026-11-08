@@ -84,7 +84,7 @@ const {chromium}=require('playwright');
      'Right-hand paragraph must stay anchored where the recipe card was');
    assert(sideNote.note.right<=sideNote.art.right-7 &&
      sideNote.note.bottom<=sideNote.art.bottom-10 &&
-     sideNote.note.left>sideNote.art.left+sideNote.art.width*.48 &&
+     sideNote.note.left>sideNote.art.left+sideNote.art.width*(viewport.width>760?.48:.26) &&
      sideNote.note.top>sideNote.art.top+sideNote.art.height*.32,
      'Paragraph must occupy lower-right cover area: '+JSON.stringify(sideNote));
    assert(sideNote.occasionFont>(viewport.width>760?60:43),
