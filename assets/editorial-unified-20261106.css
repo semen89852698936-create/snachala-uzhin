@@ -1517,3 +1517,35 @@ body.du-evening-mode #music .du-music-player{min-height:54px}
    font-size:clamp(28px,6.5vw,43px);
  }
 }
+
+/* HOME_COVER_LOCAL_EDITORIAL_PHOTO_20261108
+   Replace the old third-party stock hero visual with the local AI photo
+   of the actual featured pasta. The existing accessible recipe button stays. */
+#homeView .du-hero-art{
+ background-color:#4b3930;
+ background-image:url('/assets/recipes-ai/0001-lemon-spinach-pasta.webp');
+ background-repeat:no-repeat;
+ background-position:center;
+ background-size:cover;
+}
+#homeView .du-hero-art .du-hero-image{display:none}
+#homeView .du-hero-art .du-hero-handwritten,
+#homeView .du-hero-art .du-hero-stamp,
+#homeView .du-hero-art .du-hero-vertical{display:none}
+#homeView .du-hero-art .du-hero-image-tint{
+ background:linear-gradient(0deg,rgba(29,18,18,.51),transparent 52%);
+}
+#homeView .du-hero-recipe{
+ background:rgba(255,248,238,.96);
+ border:1px solid rgba(107,46,49,.4);
+ color:#54232e;
+ box-shadow:0 12px 31px rgba(32,21,21,.2);
+ text-shadow:none;
+}
+#homeView .du-hero-recipe small,
+#homeView .du-hero-recipe b,
+#homeView .du-hero-recipe .du-circle-arrow{color:#54232e}
+@media(max-width:760px){
+ #homeView .du-hero-art{background-position:50% 52%}
+ #homeView .du-hero-recipe{left:15px;right:15px;bottom:18px}
+}
