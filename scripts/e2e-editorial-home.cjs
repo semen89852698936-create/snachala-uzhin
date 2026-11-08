@@ -17,8 +17,10 @@ const {chromium}=require('playwright');
      const css=getComputedStyle(hero);
      return {bg:css.backgroundColor,wordmark:getComputedStyle(document.querySelector('#homeView .du-hero h1')).color};
    });
-   assert.equal(colors.bg,'rgb(72, 42, 55)','storefront and recipe palette drifted');
-   assert.equal(colors.wordmark,'rgb(255, 248, 243)','hero title contrast regressed');
+   assert.equal(colors.bg,'rgb(255, 248, 239)','approved light-paper storefront not applied');
+   assert.equal(colors.wordmark,'rgb(40, 27, 27)','approved ink typography not applied');
+   await page.evaluate(()=>document.fonts.ready);
+   await page.screenshot({path:'/tmp/editorial-home-cover-'+viewport.width+'.png',fullPage:false});
    assert.equal(await page.locator('#tryCooking').count(),1,'cooking demo CTA missing');
    assert.equal(await page.locator('.du-categories').count(),1,'category navigation missing');
    assert.equal(await page.locator('.du-catalog').count(),1,'catalog missing');
@@ -42,15 +44,15 @@ const {chromium}=require('playwright');
        headingSize:parseFloat(getComputedStyle(heading).fontSize),
        cardImageHeight:first.querySelector('.card-image').getBoundingClientRect().height};
    });
-   assert.equal(catalog.bg,'rgb(245, 236, 229)','catalog paper palette missing');
+   assert.equal(catalog.bg,'rgb(249, 242, 234)','catalog paper palette missing');
    if(viewport.width>1000){
-     assert.equal(catalog.columns,3,'desktop magazine grid should have 3 tracks');
+     assert.equal(catalog.columns,3,'desktop magazine grid should have 3 editorial tracks');
      assert.equal(catalog.firstDisplay,'grid','desktop first recipe not featured');
      assert.equal(catalog.firstColumnStart,'span 2','desktop feature should start with a two-track span');
      assert(catalog.firstWidth>catalog.secondWidth*1.6,'desktop lead recipe should be visibly wider: '+JSON.stringify(catalog));
      assert(catalog.headingSize>70,'magazine masthead too small');
    }else{
-     assert.equal(catalog.columns,1,'mobile catalog must be single column');
+     assert.equal(catalog.columns,1,'mobile catalog must be a legible single column');
      assert(catalog.cardImageHeight>230,'mobile cards lack large photographs');
    }
    await page.screenshot({path:'/tmp/editorial-catalog-'+viewport.width+'.png',fullPage:false});

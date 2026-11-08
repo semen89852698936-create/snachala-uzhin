@@ -1026,3 +1026,526 @@ body.du-evening-mode #music .du-bpm-track-details strong {
     white-space:nowrap;
   }
 }
+
+
+/* === SITEWIDE_APPROVED_EDITORIAL_20261108 ===
+   Owner-approved single art direction for the ENTIRE «СНАЧАЛА УЖИН».
+   Covers home, all catalog sections, Our Evening, recipe detail and guided cooking.
+   No elements removed, no JS event handlers modified, no recipe/photo data changed.
+   Do not replace existing approved photography.
+   The decorative paper edge is confined to editorial sections, not interactive controls. */
+:root {
+ --du-magazine-paper:#fff9f0;
+ --du-magazine-cream:#f6eee5;
+ --du-magazine-wine:#711c2e;
+ --du-magazine-wine-dark:#551522;
+ --du-magazine-copy:#352825;
+ --du-magazine-rule:#cbb8a5;
+ --du-editorial-ink:#291f1b;
+ --du-editorial-olive:#686748;
+ --du-editorial-parchment:#f7ecdf;
+ --du-editorial-paper-grain:repeating-linear-gradient(112deg,rgba(112,71,46,.018) 0 1px,transparent 1px 5px),linear-gradient(115deg,#fffaf2,#f6eadd 70%,#fdf6ec);
+ --du-editorial-rough-edge:polygon(0 0,100% 0,100% 95%,97% 96.1%,94% 95.4%,91% 96.9%,87% 95.7%,83% 97%,79% 95.2%,75% 96.3%,71% 95%,67% 97.1%,63% 95.8%,59% 96.7%,55% 95.4%,51% 97%,47% 95.6%,43% 96.9%,39% 95.3%,35% 96.2%,31% 95.4%,27% 97%,23% 95.6%,19% 96.5%,15% 95.3%,11% 96.9%,7% 95.7%,3% 96.6%,0 95.2%);
+}
+body{background:#f6eee5;color:var(--du-editorial-ink)}
+/* Light magazine masthead. Keep all existing navigation affordances. */
+.header{background:rgba(255,249,241,.97);border-bottom:1px solid #d9c5b3;box-shadow:0 2px 16px rgba(73,37,29,.035)}
+.header .brand,.header .main-nav a,.header .du-brand-words{color:#54232b}
+.header .main-nav a:hover{color:var(--du-magazine-wine)}
+.header .header-inner{min-height:78px}
+.header .du-wine-icon{color:var(--du-magazine-wine)}
+.demo-strip{background:#eee0d3;color:#665047;letter-spacing:.07em}
+.du-quick-nav-mobile{background:#f7ece1}
+#homeView{background:var(--du-editorial-paper-grain)}
+/* Typography: magazine rhythm without tiny print. */
+#homeView .du-section-heading h2,
+#homeView .du-story-dinner-copy h2,
+#homeView .du-story-after-copy h2,
+.du-airfryer-heading h2,
+#recipeDetail .recipe-intro h1,
+#recipeDetail .recipe-panel-grid h2,
+#cookOverlay .du-editorial-cook-step h2{
+ font-family:var(--du-magazine-serif);
+ font-weight:500;
+ letter-spacing:-.049em;
+ text-wrap:balance;
+}
+#homeView .du-section-heading h2{font-size:clamp(51px,6vw,99px);line-height:.96;color:#43252a}
+#homeView .du-section-heading h2 em{color:#7d2336}
+#homeView .du-section-heading p{font-size:clamp(15px,1.18vw,18px);line-height:1.6;color:#66564e}
+#homeView .du-eyebrow,.du-airfryer-eyebrow{color:#782c39;letter-spacing:.16em;font-size:11px}
+#homeView .du-section-top{gap:clamp(22px,4vw,60px);margin-bottom:clamp(25px,3.5vw,55px)}
+#homeView .du-btn-primary,
+#recipeDetail #startCooking,
+#cookOverlay .cook-nav .button-primary,
+#homeView .du-evening-landing-cta,
+#homeView .du-menu-actions .du-btn-primary{
+ background:#741b2f;border-color:#741b2f;color:#fff9f3;
+ box-shadow:none;border-radius:7px;
+}
+#homeView .du-btn-primary:hover,
+#recipeDetail #startCooking:hover{background:#541421;border-color:#541421}
+/* Main cover: airy left editorial plane and a full color photo on right. */
+#homeView .du-hero{background:linear-gradient(108deg,#fff8ef 0%,#f7ede1 65%,#e7d4c0 100%);color:#382420;border-bottom:0}
+#homeView .du-hero::before{display:none}
+#homeView .du-hero-layout{min-height:clamp(565px,53vw,760px);grid-template-columns:minmax(0,.95fr) minmax(0,1.05fr)}
+#homeView .du-hero-copy{padding:clamp(48px,6vw,104px) clamp(28px,4.1vw,80px) clamp(55px,5vw,84px) 0;position:relative;z-index:2}
+#homeView .du-kicker{color:#855846;letter-spacing:.16em;font-size:clamp(10px,.82vw,12px)}
+#homeView .du-kicker-line{background:#9a3c4b}
+#homeView .du-hero h1{font-family:var(--du-magazine-serif);font-size:clamp(91px,11.8vw,200px);line-height:.74;letter-spacing:-.08em;color:#281b1b;font-weight:500;margin:clamp(15px,2vw,35px) 0}
+#homeView .du-hero h1 i{color:#741b2f}
+#homeView .du-h1-dot{color:#8f4650;font-size:.22em;vertical-align:top}
+#homeView .du-hero-slogan{font:italic 500 clamp(27px,3vw,50px)/1.08 var(--du-magazine-serif);color:#5a2b34;margin:12px 0 17px}
+#homeView .du-hero-slogan em{color:#7e2638}
+#homeView .du-hero-description{font:400 clamp(16px,1.38vw,19px)/1.7 var(--du-magazine-sans);max-width:47ch;color:#584f47}
+#homeView .du-hero-bottom{color:#79584e;border-top:1px solid #cdb7a6;font-size:11px}
+#homeView .du-hero-bottom b{color:#8a3445}
+#homeView .du-hero-art{background:#4c382e;border-left:0;min-height:565px}
+#homeView .du-hero-image{filter:saturate(.97) contrast(1.02);opacity:1;object-position:center}
+#homeView .du-hero-image-tint{background:linear-gradient(90deg,rgba(254,245,233,.16),transparent 25%),linear-gradient(0deg,rgba(37,18,21,.42),transparent 40%)}
+#homeView .du-hero-art:after{
+ content:"";position:absolute;left:0;bottom:0;width:100%;height:23px;z-index:2;
+ background:var(--du-editorial-paper-grain);
+ clip-path:polygon(0 35%,6% 50%,12% 29%,18% 59%,25% 37%,31% 70%,38% 43%,44% 64%,52% 31%,61% 65%,68% 40%,75% 61%,82% 33%,88% 57%,94% 37%,100% 64%,100% 100%,0 100%);
+}
+#homeView .du-hero-vertical,#homeView .du-hero-stamp{color:#fff4e9}
+#homeView .du-hero-recipe{background:rgba(36,18,19,.73);border:1px solid rgba(255,249,240,.4);color:#fff9f1}
+#homeView .du-quote-strip{background:#e6d5c6;color:#663a34}
+#homeView .du-quote-strip .container{font-family:var(--du-magazine-serif);font-size:clamp(20px,2.3vw,32px)}
+/* Distinct visual chapters, no pasted-on uniform card strip. */
+#homeView .du-categories{padding-top:clamp(72px,7.5vw,126px);padding-bottom:clamp(65px,7vw,116px)}
+#homeView .du-categories .du-section-heading{align-items:flex-start}
+#categoryGrid.category-grid{grid-template-columns:repeat(4,minmax(0,1fr));grid-auto-rows:132px;gap:14px}
+#categoryGrid .category-card{height:auto;min-height:132px;border-radius:3px;padding:clamp(16px,2vw,28px);box-shadow:none}
+#categoryGrid .category-card:nth-child(1){grid-column:span 2;grid-row:span 2}
+#categoryGrid .category-card:nth-child(4){grid-column:span 2}
+#categoryGrid .category-card:nth-child(7){grid-column:span 2}
+#categoryGrid .category-card::before{filter:saturate(.94);transition:transform .6s}
+#categoryGrid .category-card .category-tag{border-radius:0;background:rgba(252,248,238,.94);letter-spacing:.07em}
+#categoryGrid .category-card .category-bottom strong{font:500 clamp(26px,2.7vw,46px)/1 var(--du-magazine-serif)}
+#categoryGrid .category-card:nth-child(1) .category-bottom strong{font-size:clamp(38px,4.7vw,69px)}
+/* Catalog controls kept fully accessible; the gallery itself gets editorial visual rhythm. */
+#homeView .du-catalog{background:#f9f2ea;padding-top:clamp(65px,7vw,120px);padding-bottom:clamp(70px,8vw,135px)}
+#homeView .du-catalog .du-section-heading h2{max-width:11ch}
+#homeView .du-catalog .search-panel{background:#fffaf3;border:1px solid #dcc9b9;border-radius:4px;box-shadow:none;padding:clamp(14px,2vw,27px)}
+#homeView .du-catalog .search-wrap input,#homeView .du-catalog .search-panel select{border-color:#c9b8a7}
+#homeView .du-catalog .du-ingredient-search-tip{color:#6b5850;font-size:14px;line-height:1.55}
+#recipeGrid.recipe-grid{grid-template-columns:repeat(4,minmax(0,1fr));gap:clamp(12px,1.5vw,23px);align-items:stretch}
+#recipeGrid .recipe-card{border-radius:2px;box-shadow:none;border:1px solid #e7d8c8;background:#fffaf3;overflow:hidden}
+#recipeGrid .recipe-card:nth-child(1){grid-column:span 2}
+#recipeGrid .recipe-card .card-image{height:clamp(190px,20vw,278px)}
+#recipeGrid .recipe-card:nth-child(1) .card-image{height:clamp(300px,35vw,485px)}
+#recipeGrid .recipe-card .card-body h3{font:500 clamp(23px,2.3vw,36px)/1.05 var(--du-magazine-serif);color:#4a242b;min-height:auto}
+#recipeGrid .recipe-card .card-body p{font-size:13px;line-height:1.6;min-height:0;color:#6b5850}
+#recipeGrid .recipe-card:nth-child(1) .card-body h3{font-size:clamp(35px,4vw,59px)}
+#recipeGrid .recipe-card:hover{transform:translateY(-2px);box-shadow:0 15px 40px rgba(77,38,27,.11)}
+#homeView .du-my-recipes{background:#f5eadd}
+#homeView .du-bonus{padding-block:clamp(45px,5vw,80px)}
+#homeView .du-how{background:linear-gradient(115deg,#351e22,#4e252c 55%,#211c1a)}
+#homeView .du-how .feature-list strong{font-family:var(--du-magazine-serif);font-weight:500}
+#homeView .du-pricing{padding-block:clamp(75px,8vw,130px)}
+#homeView .du-pricing .pricing-card{background:var(--du-editorial-paper-grain);border:1px solid #dfcbbb;border-radius:4px}
+/* Separate airy editorial title rhythm for each major section. */
+#homeView .du-categories .du-section-heading h2{font-size:clamp(60px,6.8vw,100px)}
+#homeView .du-my-recipes .du-section-heading h2{font-size:clamp(61px,6.4vw,94px)}
+#homeView .du-bonus h2{font-size:clamp(50px,5vw,79px)}
+/* Approved Our Evening direction: cream/light paper, warm photography, torn edge, burgundy rules.
+   Keep the exact image files already approved in the HTML. */
+body.du-evening-mode #homeView{background:var(--du-editorial-paper-grain)}
+body.du-evening-mode #eveningLanding{
+ display:grid!important;
+ grid-template-columns:minmax(0,.92fr) minmax(0,1.08fr);
+ column-gap:0;
+ padding:clamp(14px,2.2vw,34px) 0 clamp(45px,5vw,80px);
+ align-items:stretch;
+}
+body.du-evening-mode #eveningLanding > .du-evening-landing-content{
+ grid-column:1;grid-row:1;position:relative;z-index:2;
+ background:var(--du-editorial-paper-grain);
+ padding:clamp(30px,4vw,62px) clamp(21px,3vw,50px);
+ width:100%;min-width:0;max-width:none;
+ box-shadow:17px 0 30px rgba(59,37,25,.085);
+}
+body.du-evening-mode #eveningLanding > .du-evening-landing-photo{
+ grid-column:2;grid-row:1;min-height:clamp(710px,70vw,910px);
+ width:100%;min-width:0;max-width:none;border-radius:0;overflow:hidden;
+ clip-path:polygon(0 0,100% 0,100% 97%,93% 96.4%,85% 97%,78% 96.6%,70% 97.4%,61% 96.6%,53% 97%,45% 96.4%,36% 97.6%,28% 96.6%,19% 97.5%,10% 96.6%,0 97%);
+}
+body.du-evening-mode #eveningLanding .du-evening-landing-photo > img{filter:saturate(.98) contrast(1.03);object-position:center 34%}
+body.du-evening-mode #eveningLanding .du-evening-landing-content h1{
+ font:italic 400 clamp(82px,8.5vw,148px)/.77 var(--du-magazine-serif);
+ letter-spacing:-.065em;color:#2c1d1b;margin:clamp(12px,2vw,31px) 0 32px;
+}
+body.du-evening-mode #eveningLanding .du-evening-landing-content h1 em{color:#761b2c;font-weight:400}
+body.du-evening-mode #eveningLanding .du-evening-landing-content h1 span{display:none}
+body.du-evening-mode #eveningLanding .du-evening-landing-lead{
+ color:#412a27;font:italic 400 clamp(24px,2.5vw,39px)/1.13 var(--du-magazine-serif);
+ margin:16px 0 18px;max-width:27ch;
+}
+body.du-evening-mode #eveningLanding .du-evening-landing-text{
+ font-size:clamp(15px,1.2vw,17px);line-height:1.62;color:#634e43;
+}
+body.du-evening-mode #eveningLanding .du-evening-landing-kicker{letter-spacing:.2em;color:#782436}
+body.du-evening-mode #eveningLanding .du-evening-inspiration-card{border-radius:0;background:#fff9f0}
+body.du-evening-mode #eveningLanding .du-evening-inspiration-head strong{font-size:clamp(23px,2.1vw,35px)}
+body.du-evening-mode #eveningLanding .du-evening-inspiration-card img{filter:none}
+body.du-evening-mode #eveningLanding > .du-story-dinner{
+ grid-column:1/-1;grid-row:2;position:relative;border-radius:0;
+ background:var(--du-editorial-paper-grain);border:0;box-shadow:none;
+ margin-top:-5px;overflow:hidden;
+ grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);
+}
+body.du-evening-mode #eveningLanding .du-story-dinner-photo{min-height:clamp(365px,40vw,555px)}
+body.du-evening-mode #eveningLanding .du-story-dinner-photo img{filter:saturate(1.04) contrast(1.02)}
+body.du-evening-mode #eveningLanding .du-story-dinner-copy{
+ background:var(--du-editorial-paper-grain);padding:clamp(32px,5vw,70px);
+ border-bottom:1px solid rgba(113,28,46,.22);
+}
+body.du-evening-mode #eveningLanding .du-story-dinner-copy h2{font-size:clamp(48px,5vw,83px);line-height:.92;color:#55232b}
+body.du-evening-mode #eveningLanding .du-story-dinner-copy h2 em{color:#751d2d}
+body.du-evening-mode #eveningLanding .du-story-dinner-copy p{font-size:clamp(16px,1.25vw,18px)}
+body.du-evening-mode #evening .du-section-heading h2,
+body.du-evening-mode #music .du-section-heading h2{color:#55232b}
+body.du-evening-mode #evening{padding-top:clamp(38px,4vw,70px)}
+body.du-evening-mode #evening .du-mood{background:#fff8ef;border:1px solid #d9c3b4;border-radius:3px}
+body.du-evening-mode #evening .du-evening-together{border-radius:1px}
+body.du-evening-mode #evening .du-evening-invitation{border-radius:1px}
+body.du-evening-mode #evening .du-story-after{
+ grid-template-columns:minmax(0,.92fr) minmax(0,1.08fr);
+ background:#372420;border-radius:0;clip-path:var(--du-editorial-rough-edge);
+ margin-top:clamp(55px,6vw,90px);
+}
+body.du-evening-mode #evening .du-story-after-copy{padding:clamp(33px,4.6vw,70px)}
+body.du-evening-mode #evening .du-story-after-copy h2{font-size:clamp(49px,5.5vw,85px);color:#f8ebdf}
+body.du-evening-mode #music{padding-block:clamp(55px,7vw,110px)}
+body.du-evening-mode #music .du-music-card{
+ border-radius:3px;background:var(--du-editorial-paper-grain);
+ border:1px solid #dbc6b8;
+}
+body.du-evening-mode #music .du-music-card:nth-child(2){background:#f4e5d6}
+body.du-evening-mode #music .du-music-card:nth-child(3){background:#eee0d3}
+body.du-evening-mode #music .du-music-card h3{font-size:clamp(40px,3.8vw,66px)}
+body.du-evening-mode #music .du-music-card-desc{font-size:15px;line-height:1.65}
+/* Keep all text and player controls accessible instead of cropping them into a decorative strip. */
+body.du-evening-mode #music .du-music-player{min-height:54px}
+/* Recipe: heroic photo and asymmetry; only the written directions below must be efficient. */
+#recipeView.recipe-page{background:var(--du-editorial-paper-grain);color:#382622;max-width:none;width:100%;padding:clamp(20px,2.2vw,39px) max(20px,calc((100vw - 1320px)/2)) 90px}
+#recipeDetail .recipe-intro{
+ grid-template-columns:minmax(0,.82fr) minmax(0,1.18fr);
+ align-items:stretch;gap:clamp(12px,2.3vw,38px);
+ background:var(--du-editorial-paper-grain);
+}
+#recipeDetail .recipe-intro-copy{padding:clamp(30px,4.5vw,72px) clamp(8px,2.4vw,38px) clamp(25px,3vw,45px) 0;display:flex;flex-direction:column;align-items:flex-start;justify-content:center}
+#recipeDetail .recipe-intro h1{font-size:clamp(62px,6.6vw,113px);line-height:.88;color:#581b29;max-width:11ch;margin:23px 0}
+#recipeDetail .recipe-intro-copy>p{font:italic 400 clamp(19px,2vw,27px)/1.4 var(--du-magazine-serif);color:#574137;max-width:35ch}
+#recipeDetail .recipe-intro-photo{min-height:clamp(430px,49vw,660px);height:auto;border-radius:0;box-shadow:none;clip-path:var(--du-editorial-rough-edge)}
+#recipeDetail .recipe-intro-photo .food-photo{object-fit:cover}
+#recipeDetail .recipe-intro-meta .pill{border-radius:0;color:#5b332e}
+#recipeDetail .recipe-action-row .button{border-radius:5px;min-height:50px}
+#recipeDetail .recipe-panel-grid{grid-template-columns:minmax(0,.77fr) minmax(0,1.23fr);gap:clamp(20px,4vw,76px);margin-top:clamp(48px,6vw,90px)}
+#recipeDetail .recipe-panel-grid .panel{
+ border-radius:0;border:0;background:transparent;box-shadow:none;
+ border-top:2px solid #8a3a46;padding:clamp(21px,2.5vw,39px) 0;
+}
+#recipeDetail .recipe-panel-grid .panel h2{font:italic 500 clamp(41px,4.4vw,70px)/.98 var(--du-magazine-serif);color:#671d2e}
+#recipeDetail .du-editorial-step{
+ grid-template-columns:41px minmax(0,1fr);gap:clamp(12px,2vw,25px);
+ border-top:1px solid #d8c5b8;padding:19px 0 22px;align-items:start;
+}
+#recipeDetail .du-editorial-step-number{
+ width:38px;height:38px;border:0;border-radius:0;background:transparent;color:#812b3b;
+ font:italic 500 36px/1 var(--du-magazine-serif);
+}
+#recipeDetail .du-editorial-step:not(:last-child)::before{display:none}
+#recipeDetail .du-editorial-illustration{display:none}
+#recipeDetail .du-editorial-step-copy strong{font:500 clamp(24px,2.5vw,37px)/1.07 var(--du-magazine-serif);color:#53242d}
+#recipeDetail .du-editorial-step-copy p{font-size:clamp(15px,1.18vw,17px);line-height:1.65;color:#4f423d}
+#recipeDetail .du-editorial-step-copy .step-timer{border-radius:2px;background:#f0dfd2;color:#713342}
+#recipeDetail .tip-card{background:#eee0d2;border:0;border-left:3px solid #78283c;border-radius:0;padding:clamp(18px,2vw,28px)}
+/* The cooking view is deliberately calmer; the timer and primary instruction win over decoration. */
+#cookOverlay .cook-sheet{
+ background:var(--du-editorial-paper-grain);
+ border:1px solid #d9bfae;border-radius:8px;
+ width:min(820px,100%);max-height:calc(100dvh - 22px);
+}
+#cookOverlay .cook-top{border-bottom:1px solid #d8c4b5;padding-bottom:13px}
+#cookOverlay .du-editorial-cook-step{grid-template-columns:65px minmax(0,1fr);gap:10px 18px}
+#cookOverlay .du-editorial-cook-index{
+ width:auto;height:auto;display:block;
+ font:italic 500 clamp(46px,7vw,78px)/.9 var(--du-magazine-serif);
+ background:none;color:#7f3041;border-radius:0;
+}
+#cookOverlay .du-editorial-cook-illustration{display:none}
+#cookOverlay .du-editorial-cook-step h2{font:italic 500 clamp(34px,4vw,54px)/1 var(--du-magazine-serif);color:#602333}
+#cookOverlay .du-editorial-cook-step p{grid-area:description;font-size:clamp(17px,2vw,21px);line-height:1.62;color:#382924}
+#cookOverlay .timer-panel{background:#f2e5d8;border:1px solid #d9c0b1;border-radius:6px}
+#cookOverlay .timer-panel strong{color:#592332}
+#cookOverlay .progress-track{background:#dcc6b6}
+#cookOverlay .progress-track>div{background:#7b2838}
+#cookOverlay .cook-nav .button{min-height:48px}
+#cookOverlay button:focus-visible,
+#recipeDetail button:focus-visible,
+#homeView button:focus-visible{outline:3px solid #9e6c34;outline-offset:3px}
+/* Separate Aerogrill chapter visually while retaining the entire 100-item catalog. */
+#homeView #airfryer{border-top:4px solid #762236;background:linear-gradient(180deg,#f9efe4,#f2e6dc);padding-top:clamp(70px,7vw,112px)}
+#homeView #airfryer .du-airfryer-heading h2{font-size:clamp(58px,6.5vw,103px);color:#5e1d2e}
+#homeView #airfryer .du-airfryer-card{border-radius:2px;border:1px solid #decab8;background:#fff9f0;box-shadow:none}
+#homeView #airfryer .du-airfryer-card h3{font-size:clamp(26px,2.4vw,39px);color:#59242e}
+#homeView #airfryer .du-airfryer-card-photo img{filter:saturate(1.06)}
+#homeView #airfryer .du-airfryer-grid{gap:clamp(12px,1.6vw,23px)}
+#homeView #airfryer .du-airfryer-footnote{font-size:15px;color:#614d48;line-height:1.6}
+/* Medium screens: reduce editorial spans before readability suffers. */
+@media(min-width:761px) and (max-width:1120px){
+ #recipeGrid.recipe-grid{grid-template-columns:repeat(3,minmax(0,1fr))}
+ #recipeGrid .recipe-card:nth-child(1){grid-column:span 2}
+ #categoryGrid.category-grid{grid-template-columns:repeat(3,minmax(0,1fr))}
+ #categoryGrid .category-card:nth-child(4),#categoryGrid .category-card:nth-child(7){grid-column:span 1}
+ body.du-evening-mode #eveningLanding{grid-template-columns:minmax(0,.95fr) minmax(0,1.05fr)}
+ body.du-evening-mode #eveningLanding .du-evening-landing-content h1{font-size:clamp(67px,8vw,91px)}
+}
+/* Mobile edition: editorial, readable, touch-friendly, no horizontal overflow. */
+@media(max-width:760px){
+ .header .header-inner{min-height:65px}
+ #homeView .du-hero-layout{grid-template-columns:minmax(0,1fr);min-height:0}
+ #homeView .du-hero-copy{padding:48px 0 37px}
+ #homeView .du-hero h1{font-size:clamp(79px,18vw,116px);line-height:.77}
+ #homeView .du-hero-slogan{font-size:clamp(31px,7vw,48px)}
+ #homeView .du-hero-description{font-size:16px;line-height:1.65}
+ #homeView .du-hero-art{min-height:clamp(285px,70vw,430px);max-height:none}
+ #homeView .du-section-heading h2{font-size:clamp(46px,10vw,70px)}
+ #homeView .du-section-heading p{font-size:16px}
+ #categoryGrid.category-grid{grid-template-columns:repeat(2,minmax(0,1fr));grid-auto-rows:130px;gap:9px}
+ #categoryGrid .category-card:nth-child(1){grid-column:span 2;grid-row:span 2}
+ #categoryGrid .category-card:nth-child(4),#categoryGrid .category-card:nth-child(7){grid-column:span 1}
+ #categoryGrid .category-card{padding:15px}
+ #categoryGrid .category-card .category-bottom strong{font-size:clamp(23px,5vw,33px)}
+ #recipeGrid.recipe-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+ #recipeGrid .recipe-card:nth-child(1){grid-column:span 2}
+ #recipeGrid .recipe-card:nth-child(1) .card-image{height:clamp(250px,68vw,420px)}
+ #recipeGrid .recipe-card .card-image{height:clamp(140px,39vw,220px)}
+ #recipeGrid .recipe-card .card-body h3{font-size:clamp(22px,4.8vw,31px)}
+ #recipeGrid .recipe-card:nth-child(1) .card-body h3{font-size:clamp(29px,7vw,42px)}
+ body.du-evening-mode #eveningLanding{display:flex!important;flex-direction:column;gap:0;padding:12px 0 38px}
+ body.du-evening-mode #eveningLanding > .du-evening-landing-content{order:0;padding:35px 17px;box-shadow:none}
+ body.du-evening-mode #eveningLanding > .du-evening-landing-photo{order:1;min-height:clamp(355px,115vw,650px);clip-path:var(--du-editorial-rough-edge)}
+ body.du-evening-mode #eveningLanding > .du-story-dinner{order:2;display:flex;flex-direction:column;margin-top:0}
+ body.du-evening-mode #eveningLanding .du-story-dinner-photo{height:clamp(280px,75vw,430px);min-height:280px}
+ body.du-evening-mode #eveningLanding .du-story-dinner-copy{padding:31px 22px}
+ body.du-evening-mode #eveningLanding .du-evening-landing-content h1{font-size:clamp(77px,17vw,112px);line-height:.81}
+ body.du-evening-mode #eveningLanding .du-evening-landing-lead{font-size:clamp(26px,6.5vw,35px)}
+ body.du-evening-mode #evening .du-story-after{grid-template-columns:1fr;clip-path:none}
+ body.du-evening-mode #music .du-music-card h3{font-size:clamp(37px,9vw,55px)}
+ #recipeView.recipe-page{padding:22px 16px 66px}
+ #recipeDetail .recipe-intro{display:flex;flex-direction:column;gap:0}
+ #recipeDetail .recipe-intro-copy{order:1;padding:26px 2px}
+ #recipeDetail .recipe-intro-photo{order:0;min-height:clamp(290px,81vw,440px);height:clamp(290px,81vw,440px)}
+ #recipeDetail .recipe-intro h1{font-size:clamp(50px,12vw,76px);max-width:none}
+ #recipeDetail .recipe-panel-grid{grid-template-columns:1fr;gap:15px;margin-top:30px}
+ #recipeDetail .recipe-panel-grid .panel{padding:20px 0}
+ #recipeDetail .recipe-panel-grid .panel h2{font-size:clamp(39px,9vw,57px)}
+ #recipeDetail .du-editorial-step{grid-template-columns:34px minmax(0,1fr);gap:10px}
+ #recipeDetail .du-editorial-step-number{font-size:30px;width:31px}
+ #recipeDetail .du-editorial-step-copy p{font-size:16px}
+ #cookOverlay .cook-sheet{padding:18px 16px}
+ #cookOverlay .du-editorial-cook-step{grid-template-columns:44px minmax(0,1fr);gap:11px}
+ #cookOverlay .du-editorial-cook-index{font-size:48px}
+ #cookOverlay .du-editorial-cook-step h2{font-size:clamp(31px,7vw,43px)}
+ #cookOverlay .du-editorial-cook-step p{font-size:17px}
+ #homeView #airfryer .du-airfryer-heading h2{font-size:clamp(48px,11vw,67px)}
+}
+@media(max-width:390px){
+ #homeView .du-hero h1{font-size:clamp(72px,17.5vw,90px)}
+ #categoryGrid.category-grid{grid-auto-rows:120px}
+ #recipeGrid .recipe-card .card-body p{font-size:12px}
+ #recipeDetail .recipe-intro h1{font-size:49px}
+}
+/* No motion-only meaning; preserve reduced-motion settings. */
+@media(prefers-reduced-motion:reduce){
+ #recipeGrid .recipe-card,#categoryGrid .category-card::before{transition:none!important}
+}
+
+/* SITEWIDE_APPROVED_EDITORIAL_20261108_ACCESSIBILITY_FIX
+   Preserve a real paper color under the texture for high-contrast text and
+   ensure the mobile Our Evening sequence stacks in DOM reading order. */
+#homeView .du-hero{
+ background-color:#fff8ef;
+ background-image:linear-gradient(108deg,#fff8ef 0%,#f7ede1 65%,#e7d4c0 100%);
+}
+#recipeView.recipe-page{
+ background-color:#f7eee7;
+ background-image:var(--du-editorial-paper-grain);
+}
+@media(max-width:760px){
+ body.du-evening-mode #homeView > #eveningLanding{
+   display:flex!important;
+   flex-direction:column;
+ }
+ body.du-evening-mode #eveningLanding > .du-story-dinner{
+   display:grid;
+   grid-template-columns:minmax(0,1fr);
+ }
+}
+
+/* SITEWIDE_APPROVED_EDITORIAL_20261108_CATALOG_TRACKS
+   The original editorial lead card spans two of three tracks.
+   One-column cards on a phone preserve readability and photograph scale. */
+@media(min-width:1121px){
+ #catalog #recipeGrid.recipe-grid{grid-template-columns:repeat(3,minmax(0,1fr))}
+}
+@media(min-width:761px) and (max-width:1120px){
+ #catalog #recipeGrid.recipe-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media(max-width:760px){
+ #catalog #recipeGrid.recipe-grid{grid-template-columns:minmax(0,1fr)}
+ #catalog #recipeGrid > .recipe-card .card-image{height:clamp(235px,63vw,350px)}
+}
+
+/* MOBILE_GRID_SPAN_GUARD_20261108: lead feature must not create an
+   implicit extra CSS grid track once the phone layout is one column. */
+@media(max-width:760px){
+ #catalog #recipeGrid .recipe-card:nth-child(1){grid-column:span 1}
+}
+
+/* TABLET_EVENING_EDITORIAL_20261108: 761–820px is too narrow for a double
+   feature. Stack the actual text and photographs in reading order. */
+@media(min-width:761px) and (max-width:820px){
+ body.du-evening-mode #homeView > #eveningLanding{display:flex!important;flex-direction:column}
+ body.du-evening-mode #eveningLanding > .du-evening-landing-content{
+   order:0;max-width:100%;padding:36px 25px;box-shadow:none;
+ }
+ body.du-evening-mode #eveningLanding > .du-evening-landing-photo{
+   order:1;min-height:620px;width:100%;clip-path:var(--du-editorial-rough-edge);
+ }
+ body.du-evening-mode #eveningLanding > .du-story-dinner{
+   order:2;display:grid;grid-template-columns:minmax(0,1fr);
+ }
+ body.du-evening-mode #evening .du-story-after{grid-template-columns:minmax(0,1fr)}
+}
+
+/* SITEWIDE_EDITORIAL_RECIPE_STEP_READABILITY_FIX_20261108
+   Historical pepper-steak specific CSS had a hidden third grid track
+   for an illustration; the approved magazine version does not use it.
+   Place step copy explicitly in the full second column, on EVERY recipe. */
+#recipeDetail .du-editorial-step,
+#recipeDetail:has(.recipe-intro-photo[style*="0003-pepper-steak"]) .du-editorial-step {
+  display:grid;
+  grid-template-columns:43px minmax(0,1fr);
+  column-gap:clamp(12px,1.8vw,24px);
+  align-items:start;
+}
+#recipeDetail .du-editorial-step-number,
+#recipeDetail:has(.recipe-intro-photo[style*="0003-pepper-steak"]) .du-editorial-step-number {
+  grid-column:1;
+  grid-row:1;
+  font:italic 500 clamp(30px,3vw,39px)/1 var(--du-magazine-serif);
+  color:#782638;
+  width:auto;
+  height:auto;
+}
+#recipeDetail .du-editorial-step-copy,
+#recipeDetail:has(.recipe-intro-photo[style*="0003-pepper-steak"]) .du-editorial-step-copy {
+  grid-column:2;
+  grid-row:1;
+  min-width:0;
+  width:100%;
+  overflow-wrap:normal;
+}
+#recipeDetail .du-editorial-step-copy p {overflow-wrap:break-word;}
+#recipeDetail .du-editorial-illustration {display:none;}
+@media(max-width:760px){
+ #recipeDetail .du-editorial-step,
+ #recipeDetail:has(.recipe-intro-photo[style*="0003-pepper-steak"]) .du-editorial-step {
+   grid-template-columns:32px minmax(0,1fr);
+   column-gap:12px;
+ }
+ #recipeDetail .du-editorial-step-number,
+ #recipeDetail:has(.recipe-intro-photo[style*="0003-pepper-steak"]) .du-editorial-step-number {
+  font-size:31px;
+ }
+}
+
+/* SITEWIDE_EDITORIAL_TABLET_NAV_AND_MOBILE_COVER_20261108
+   Magazine cover starts with its photograph on phones, and the tablet header
+   fits on a single line without hiding any site sections or functions. */
+@media(min-width:681px) and (max-width:920px){
+ .header .header-inner{
+  height:78px;
+  min-height:78px;
+  align-items:center;
+  flex-wrap:nowrap;
+  gap:10px;
+ }
+ .header .main-nav{
+   display:flex;
+   gap:10px;
+   flex-wrap:nowrap;
+   justify-content:flex-end;
+   min-width:0;
+ }
+ .header .main-nav a{
+   white-space:nowrap;
+   font-size:12px;
+ }
+ .header .main-nav a[data-nav="music"],
+ .header .main-nav a[data-nav="my-recipes"],
+ .header .main-nav a[data-nav="categories"],
+ .header .main-nav a[data-nav="about"]{display:none}
+ .header .header-actions{flex-shrink:0}
+ .header .header-actions .shopping-open{height:42px;min-height:42px;padding:0 12px}
+ body.du-evening-mode #eveningLanding{padding-top:77px}
+ body.du-evening-mode .du-evening-back{top:100px}
+}
+@media(max-width:760px){
+ #homeView .du-hero-layout{
+   display:flex;
+   flex-direction:column;
+ }
+ #homeView .du-hero-art{
+   order:0;
+   flex:none;
+   min-height:clamp(300px,79vw,390px);
+   max-height:none;
+ }
+ #homeView .du-hero-copy{
+   order:1;
+   padding:29px 0 41px;
+ }
+ #homeView .du-hero h1{
+   font-size:clamp(74px,16vw,104px);
+ }
+ #homeView .du-hero-slogan{
+   font-size:clamp(28px,6.5vw,43px);
+ }
+}
+
+/* HOME_COVER_LOCAL_EDITORIAL_PHOTO_20261108
+   Replace the old third-party stock hero visual with the local AI photo
+   of the actual featured pasta. The existing accessible recipe button stays. */
+#homeView .du-hero-art{
+ background-color:#4b3930;
+ background-image:url('/assets/recipes-ai/0001-lemon-spinach-pasta.webp');
+ background-repeat:no-repeat;
+ background-position:center;
+ background-size:cover;
+}
+#homeView .du-hero-art .du-hero-image{display:none}
+#homeView .du-hero-art .du-hero-handwritten,
+#homeView .du-hero-art .du-hero-stamp,
+#homeView .du-hero-art .du-hero-vertical{display:none}
+#homeView .du-hero-art .du-hero-image-tint{
+ background:linear-gradient(0deg,rgba(29,18,18,.51),transparent 52%);
+}
+#homeView .du-hero-recipe{
+ background:rgba(255,248,238,.96);
+ border:1px solid rgba(107,46,49,.4);
+ color:#54232e;
+ box-shadow:0 12px 31px rgba(32,21,21,.2);
+ text-shadow:none;
+}
+#homeView .du-hero-recipe small,
+#homeView .du-hero-recipe b,
+#homeView .du-hero-recipe .du-circle-arrow{color:#54232e}
+@media(max-width:760px){
+ #homeView .du-hero-art{background-position:50% 52%}
+ #homeView .du-hero-recipe{left:15px;right:15px;bottom:18px}
+}

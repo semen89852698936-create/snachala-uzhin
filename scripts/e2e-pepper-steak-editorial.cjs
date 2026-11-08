@@ -22,6 +22,10 @@ const {chromium}=require('playwright');
     return {
      photoStyle:photo.getAttribute('style'),
      introColumns:getComputedStyle(intro).gridTemplateColumns.split(' ').length,
+     introDisplay:getComputedStyle(intro).display,
+     introDirection:getComputedStyle(intro).flexDirection,
+     photoTop:photo.getBoundingClientRect().top,
+     headingTop:h1.getBoundingClientRect().top,
      photoHeight:photo.getBoundingClientRect().height,
      titleSize:parseFloat(getComputedStyle(h1).fontSize),
      photoLabel:getComputedStyle(photo,'::after').content,
@@ -33,7 +37,16 @@ const {chromium}=require('playwright');
    assert(spread.photoLabel.includes('ГОТОВИМ НА ДВОИХ'),'editorial photo label missing');
    assert(spread.photoHeight>300,'hero photo too small: '+JSON.stringify(spread));
    assert(spread.titleSize>(scenario.name==='desktop'?60:45),'magazine heading did not receive editorial typography');
-   assert.equal(spread.introColumns,scenario.name==='desktop'?2:1,'recipe column layout did not adapt');
+   if(scenario.name==='desktop'){
+     assert.equal(spread.introDisplay,'grid','desktop recipe spread must use magazine grid');
+     assert.equal(spread.introColumns,2,'desktop recipe spread must have two columns');
+   }else{
+     assert.equal(spread.introDisplay,'flex','mobile recipe spread must stack vertically');
+     assert.equal(spread.introDirection,'column','mobile recipe reading order incorrect');
+     assert(spread.photoTop<spread.headingTop,'mobile food photograph must precede recipe heading');
+   }
+   const stepCopy=await page.locator('#recipeDetail .du-editorial-step-copy').first().evaluate(el=>({width:el.getBoundingClientRect().width,word:el.innerText.slice(0,100)}));
+   assert(stepCopy.width>(scenario.name==='desktop'?245:190),'recipe instructions squeezed into a narrow column: '+JSON.stringify(stepCopy));
    assert(await page.locator('#recipeDetail .ingredient-check').count()>=5,'steak ingredients missing');
    const before=await page.locator('#recipeDetail .ingredient-check strong').first().innerText();
    await page.locator('#portionPlus').click();
