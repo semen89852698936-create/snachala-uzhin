@@ -12,7 +12,11 @@ const css = fs.readFileSync(path.join(root, 'assets/editorial-unified-20261106.c
 assert(css.includes('#recipeDetail') && css.includes('#cookOverlay'));
 assert(css.includes('body.du-evening-mode #eveningLanding'));
 assert(css.includes('@media (max-width: 430px)'));
-assert(!/url\s*\(/i.test(css), 'No new unapproved images or fonts');
+const cssUrls=[...css.matchAll(/url\s*\(\s*['"]?([^'")]+)['"]?\s*\)/gi)].map(x=>x[1]);
+assert.deepEqual(cssUrls,['/assets/recipes-ai/0001-lemon-spinach-pasta.webp'],
+  'Only an existing local featured-recipe photo is permitted; reject remote assets and fonts');
+assert(fs.existsSync(path.join(root,'assets','recipes-ai','0001-lemon-spinach-pasta.webp')),
+  'Featured pasta photo must already exist in local approved photo library');
 const payloads = [];
 for(const [page, link] of pages) {
   const text = fs.readFileSync(path.join(root,page),'utf8');
