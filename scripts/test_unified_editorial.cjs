@@ -13,10 +13,13 @@ assert(css.includes('#recipeDetail') && css.includes('#cookOverlay'));
 assert(css.includes('body.du-evening-mode #eveningLanding'));
 assert(css.includes('@media (max-width: 430px)'));
 const cssUrls=[...css.matchAll(/url\s*\(\s*['"]?([^'")]+)['"]?\s*\)/gi)].map(x=>x[1]);
-assert.deepEqual(cssUrls,['/assets/recipes-ai/0001-lemon-spinach-pasta.webp'],
-  'Only an existing local featured-recipe photo is permitted; reject remote assets and fonts');
-assert(fs.existsSync(path.join(root,'assets','recipes-ai','0001-lemon-spinach-pasta.webp')),
-  'Featured pasta photo must already exist in local approved photo library');
+assert(cssUrls.length>=1, 'Editorial photos must be referenced');
+for(const url of new Set(cssUrls)){
+  assert(url.startsWith('/assets/recipes-ai/') && url.endsWith('.webp') && !url.includes('..'),
+    'Only local catalog WebP photos are permitted; reject remote images and fonts: '+url);
+  assert(fs.existsSync(path.join(root,url.slice(1))),
+    'Referenced recipe photograph must exist in the local library: '+url);
+}
 const payloads = [];
 for(const [page, link] of pages) {
   const text = fs.readFileSync(path.join(root,page),'utf8');
@@ -27,6 +30,12 @@ for(const [page, link] of pages) {
   const found=text.match(/<script id="recipeData" type="application\/json">([\s\S]*?)<\/script>/);
   assert(found, page+': recipeData missing');
   assert(text.includes('1000 рецептов + 1 полуночный'),page+': hero label must say midnight');
+  assert(text.includes('class="du-approved-feature-grid"'), page+': approved three editorial links missing');
+  for(const fragment of ['href="#catalog"','href="#airfryer"','href="#evening"','id="tryCooking"'])
+    assert(text.includes(fragment),page+': functional entry missing '+fragment);
+  const arch = text.includes('path d="M 3 32 Q 207 -8 407 30"');
+  assert(arch,
+    page+': approved red line must have ONE quadratic bend');
   assert(text.includes('1000 рецептов и 1 полуночный'),page+': catalog label must say midnight');
   assert(!/1000 рецептов (?:\+|и) 1 секретный/i.test(text),page+': outdated secret bonus label');
   const recipes=JSON.parse(found[1]);
