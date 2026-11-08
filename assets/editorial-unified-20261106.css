@@ -1385,3 +1385,17 @@ body.du-evening-mode #music .du-music-player{min-height:54px}
    grid-template-columns:minmax(0,1fr);
  }
 }
+
+/* SITEWIDE_APPROVED_EDITORIAL_20261108_CATALOG_TRACKS
+   The original editorial lead card spans two of three tracks.
+   One-column cards on a phone preserve readability and photograph scale. */
+@media(min-width:1121px){
+ #catalog #recipeGrid.recipe-grid{grid-template-columns:repeat(3,minmax(0,1fr))}
+}
+@media(min-width:761px) and (max-width:1120px){
+ #catalog #recipeGrid.recipe-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media(max-width:760px){
+ #catalog #recipeGrid.recipe-grid{grid-template-columns:minmax(0,1fr)}
+ #catalog #recipeGrid > .recipe-card .card-image{height:clamp(235px,63vw,350px)}
+}
