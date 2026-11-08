@@ -1421,3 +1421,45 @@ body.du-evening-mode #music .du-music-player{min-height:54px}
  }
  body.du-evening-mode #evening .du-story-after{grid-template-columns:minmax(0,1fr)}
 }
+
+/* SITEWIDE_EDITORIAL_RECIPE_STEP_READABILITY_FIX_20261108
+   Historical pepper-steak specific CSS had a hidden third grid track
+   for an illustration; the approved magazine version does not use it.
+   Place step copy explicitly in the full second column, on EVERY recipe. */
+#recipeDetail .du-editorial-step,
+#recipeDetail:has(.recipe-intro-photo[style*="0003-pepper-steak"]) .du-editorial-step {
+  display:grid;
+  grid-template-columns:43px minmax(0,1fr);
+  column-gap:clamp(12px,1.8vw,24px);
+  align-items:start;
+}
+#recipeDetail .du-editorial-step-number,
+#recipeDetail:has(.recipe-intro-photo[style*="0003-pepper-steak"]) .du-editorial-step-number {
+  grid-column:1;
+  grid-row:1;
+  font:italic 500 clamp(30px,3vw,39px)/1 var(--du-magazine-serif);
+  color:#782638;
+  width:auto;
+  height:auto;
+}
+#recipeDetail .du-editorial-step-copy,
+#recipeDetail:has(.recipe-intro-photo[style*="0003-pepper-steak"]) .du-editorial-step-copy {
+  grid-column:2;
+  grid-row:1;
+  min-width:0;
+  width:100%;
+  overflow-wrap:normal;
+}
+#recipeDetail .du-editorial-step-copy p {overflow-wrap:break-word;}
+#recipeDetail .du-editorial-illustration {display:none;}
+@media(max-width:760px){
+ #recipeDetail .du-editorial-step,
+ #recipeDetail:has(.recipe-intro-photo[style*="0003-pepper-steak"]) .du-editorial-step {
+   grid-template-columns:32px minmax(0,1fr);
+   column-gap:12px;
+ }
+ #recipeDetail .du-editorial-step-number,
+ #recipeDetail:has(.recipe-intro-photo[style*="0003-pepper-steak"]) .du-editorial-step-number {
+  font-size:31px;
+ }
+}
