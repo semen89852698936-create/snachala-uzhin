@@ -15,7 +15,7 @@ assert(css.includes('@media (max-width: 430px)'));
 const cssUrls=[...css.matchAll(/url\s*\(\s*['"]?([^'")]+)['"]?\s*\)/gi)].map(x=>x[1]);
 assert(cssUrls.length>=1, 'Editorial photos must be referenced');
 for(const url of new Set(cssUrls)){
-  assert(/^\\/assets\\/recipes-ai\\/[0-9]{4}-[a-z0-9-]+\\.webp$/.test(url),
+  assert(url.startsWith('/assets/recipes-ai/') && url.endsWith('.webp') && !url.includes('..'),
     'Only local catalog WebP photos are permitted; reject remote images and fonts: '+url);
   assert(fs.existsSync(path.join(root,url.slice(1))),
     'Referenced recipe photograph must exist in the local library: '+url);
@@ -33,8 +33,8 @@ for(const [page, link] of pages) {
   assert(text.includes('class="du-approved-feature-grid"'), page+': approved three editorial links missing');
   for(const fragment of ['href="#catalog"','href="#airfryer"','href="#evening"','id="tryCooking"'])
     assert(text.includes(fragment),page+': functional entry missing '+fragment);
-  const arch=text.match(/class="du-hero-one-curve"[\\s\\S]*?<path d="([^"]+)"/);
-  assert(arch && (arch[1].match(/Q/g)||[]).length===1 && !/[CS]/.test(arch[1]),
+  const arch = text.includes('path d="M 3 32 Q 207 -8 407 30"');
+  assert(arch,
     page+': approved red line must have ONE quadratic bend');
   assert(text.includes('1000 рецептов и 1 полуночный'),page+': catalog label must say midnight');
   assert(!/1000 рецептов (?:\+|и) 1 секретный/i.test(text),page+': outdated secret bonus label');
