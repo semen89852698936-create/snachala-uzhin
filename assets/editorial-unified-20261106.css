@@ -2539,8 +2539,10 @@ body.du-evening-mode #evening .du-story-after-copy{
    styles. The original wine-glass logo is essential and must never be replaced
    by typography or decorative photo artwork. Real anchors remain unchanged. */
 .header .main-nav {
-  display:flex;
   align-items:center;
+}
+@media(min-width:681px){
+  .header .main-nav{display:flex;}
 }
 .header .main-nav > a[data-nav="evening"] {
   order:-100;
