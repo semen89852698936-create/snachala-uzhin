@@ -96,10 +96,19 @@ for(const path of ['index.html','full-catalog/index.html']){
  const cart=vm.createContext({state:saved,byId:id=>id==='fixture'?synthetic:null,shoppingKey:i=>String(i.name).toLocaleLowerCase('ru-RU')+'|'+i.unit,norm:context.norm,servings:r=>saved.servings[r.id]||r.base,pantryParseStock:parse,pantryQuantityMissing:missing});
  new vm.Script(html.slice(a2,b2),{filename:path+':shopping'}).runInContext(cart);
  const aggregate=vm.runInContext('aggregates',cart);
+ const chickenPack=vm.runInContext('chickenPackSuggestion',cart);
+ assert.equal(chickenPack({name:'Курица',amount:200,unit:'г'}).amount,500,path+': 200g deficit means buy a 500g pack');
+ assert.equal(chickenPack({name:'Куриное филе',amount:500,unit:'г'}).amount,500,path+': exact pack not rounded up');
+ assert.equal(chickenPack({name:'Куриные бёдра без кости',amount:600,unit:'г'}).amount,1000,path+': 600g needs two 500g packs');
+ assert.equal(chickenPack({name:'Курица',amount:0,unit:'г'}),null,path+': zero chicken requires no packs');
+ assert.equal(chickenPack({name:'Куриный бульон',amount:200,unit:'г'}),null,path+': do not treat broth as meat');
+ assert.equal(chickenPack({name:'Говядина',amount:200,unit:'г'}),null,path+': no assumed 500g packs for other meat');
+ assert.equal(chickenPack({name:'Куриное филе',amount:2,unit:'шт.'}),null,path+': no mass guessed from pieces');
  let basket=aggregate();
  assert.equal(basket.length,1,path+': only one missing grocery');
  assert.equal(basket[0].name,'Курица');
  assert.equal(basket[0].amount,200,path+': shopping has deficit rather than 300g whole recipe');
+ assert.equal(chickenPack(basket[0]).amount,500,path+': show buy 500g while keeping 200g exact shortage');
  // Both partial deficits must survive in the same shopping list, without full-recipe amounts.
  const originalQuery=saved.shoppingExtras.fixture[0].query;
  saved.shoppingExtras.fixture[0].query='100 г курицы, 200 мл сливок, чеснок, лук';
@@ -116,5 +125,6 @@ for(const path of ['index.html','full-catalog/index.html']){
  saved.shopping.fixture=4;
  basket=aggregate();
  assert.equal(basket.find(x=>x.name==='Курица').amount,600,path+': full shopping replaces deficit without double counting');
+ assert.equal(chickenPack(basket.find(x=>x.name==='Курица')).amount,1000,path+': purchase two packs for aggregated 600g');
  console.log('PASS',path,'1001 recipes; 200g deficit, kg/ml/l, 4 portions, incompatible units and shopping');
 }
