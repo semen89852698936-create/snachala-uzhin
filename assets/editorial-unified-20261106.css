@@ -2296,9 +2296,8 @@ body.du-evening-mode #evening .du-story-after-copy{
       rgba(255,246,233,.54) 65%,
       transparent 100%);
   }
-  #homeView .du-hero-art .du-hero-recipe,
-  #homeView .du-hero-art .du-hero-recipe *{
-    position:relative;
+  #homeView .du-hero-art .du-hero-recipe{
+    /* Preserve existing absolute bottom-corner featured recipe placement. */
     z-index:4;
   }
   #homeView .du-hero-art:after {
