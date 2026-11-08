@@ -44,8 +44,23 @@ const {chromium}=require('playwright');
    assert(story.together.includes('our-evening-together-approved.webp'),'approved together photo changed');
    assert(story.invitation.includes('our-evening-invitation-approved-20261102.webp'),'approved invitation changed');
    assert(story.titleSize>(scenario.viewport.width>820?60:65),'magazine headline too small');
-   assert.equal(story.dinnerColumns,scenario.viewport.width>820?2:1,'dinner spread layout');
+   assert.equal(story.dinnerColumns,scenario.viewport.width>=1021?3:scenario.viewport.width>820?2:1,
+     'dinner spread must have three image/paper/image planes on desktop and readable tablet/mobile stacking');
    assert.equal(story.afterColumns,scenario.viewport.width>820?2:1,'after-dinner layout');
+   if(scenario.viewport.width>=1021){
+     const dinnerPlanes=await page.evaluate(()=>{
+       const container=document.querySelector('#eveningLanding .du-story-dinner');
+       const paper=container.querySelector('.du-story-dinner-copy').getBoundingClientRect();
+       const table=container.querySelector('.du-story-dinner-photo').getBoundingClientRect();
+       const whole=container.getBoundingClientRect();
+       const background=getComputedStyle(container,'::before').backgroundImage;
+       return {paperLeft:paper.left,paperRight:paper.right,tableLeft:table.left,containerLeft:whole.left,background};
+     });
+     assert(dinnerPlanes.background.includes('0003-pepper-steak.webp'),
+       'first photographic plane must use the approved local AI steak photo');
+     assert(dinnerPlanes.paperLeft>dinnerPlanes.containerLeft+20 && dinnerPlanes.tableLeft>=dinnerPlanes.paperRight-2,
+       'paper copy must sit between the steak photo and the existing approved dinner photo: '+JSON.stringify(dinnerPlanes));
+   }
 
    // The approved magazine layout puts the text to the LEFT of the hero photo.
    // On mobile it becomes text FIRST and photo SECOND. Verify real geometry.
