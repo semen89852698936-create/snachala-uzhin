@@ -105,9 +105,18 @@ const {chromium}=require('playwright');
        assert(geometry[name].right<=geometry.photo.left+2,
          scenario.name+': left-paper text overlaps the photo: '+name+': '+JSON.stringify(geometry));
      }
+   }else if(scenario.viewport.width<=760){
+     assert(geometry.photo.top<geometry.copy.bottom-80,
+       scenario.name+': the approved couple photo must blend behind the mobile cover copy: '+JSON.stringify(geometry));
+     const phoneMask=await page.evaluate(()=>{
+       const el=document.querySelector('#eveningLanding > .du-evening-landing-photo > img');
+       return getComputedStyle(el).maskImage||getComputedStyle(el).webkitMaskImage;
+     });
+     assert(phoneMask.includes('radial-gradient'),
+       scenario.name+': the phone photograph must have a soft radial fade into paper: '+phoneMask);
    }else{
      assert(geometry.copy.bottom<=geometry.photo.top+2,
-       scenario.name+': approved mobile reading order must be copy before photo: '+JSON.stringify(geometry));
+       scenario.name+': tablet text must appear before photo in reading order: '+JSON.stringify(geometry));
    }
    for(const name of ['heading','italicWord','lead','text','cta','inspiration']){
      assert(geometry[name].right<=geometry.viewportWidth+2,
