@@ -3495,11 +3495,11 @@ header.header .du-brand-mark svg.du-wine-icon{visibility:hidden!important;}
   z-index:8;
   isolation:isolate;
   display:grid;
-  grid-template-columns:repeat(3,minmax(0,1fr)) minmax(0,1.12fr);
+  grid-template-columns:repeat(3,minmax(0,1fr));
   align-items:start;
   gap:clamp(9px,.95vw,15px);
-  width:100%;
-  margin:-clamp(28px,3vw,47px) 0 0;
+  width:min(74%,1140px);
+  margin:calc(-1 * clamp(28px,3vw,47px)) 0 0;
   padding:0 clamp(12px,1.5vw,24px) clamp(30px,3.3vw,50px);
   background:transparent;
   border:0;
@@ -3513,7 +3513,8 @@ header.header .du-brand-mark svg.du-wine-icon{visibility:hidden!important;}
   box-sizing:border-box;
   min-width:0;
   width:100%;
-  min-height:clamp(210px,18.7vw,287px);
+  height:clamp(270px,21vw,320px);
+  min-height:0;
   margin:0;
   padding:clamp(27px,2.5vw,39px) clamp(20px,2.1vw,34px) clamp(67px,6vw,92px);
   overflow:hidden;
@@ -3655,13 +3656,15 @@ header.header .du-brand-mark svg.du-wine-icon{visibility:hidden!important;}
 /* Tablet width: keep three fragments instead of clipping their titles. */
 @media(min-width:761px) and (max-width:1150px){
   #homeView .du-cover-chapters{
-    grid-template-columns:repeat(3,minmax(0,1fr)) minmax(0,.5fr);
+    grid-template-columns:repeat(3,minmax(0,1fr));
+    width:min(85%,1000px);
     gap:9px;
     margin-top:-30px;
     padding-inline:12px;
   }
   #homeView .du-cover-chapters > a{
-    min-height:225px;
+    height:270px;
+    min-height:0;
     padding:28px 16px 68px;
   }
   #homeView .du-cover-chapters > a strong{
@@ -3683,7 +3686,8 @@ header.header .du-brand-mark svg.du-wine-icon{visibility:hidden!important;}
     padding:0 15px 32px;
   }
   #homeView .du-cover-chapters > a{
-    min-height:210px;
+    height:260px;
+    min-height:0;
     padding:31px 26px 68px;
     transform:rotate(-.5deg);
   }
