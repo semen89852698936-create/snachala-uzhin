@@ -3484,3 +3484,180 @@ body:not(.du-evening-mode) .header .brand.du-brand:focus-visible{
 
 /* ONLY_REMOVE_TOP_DRAWN_GLASS_20261108: keep logo spacing and all other UI unchanged. */
 header.header .du-brand-mark svg.du-wine-icon{visibility:hidden!important;}
+
+/* THREE_CHAPTERS_AS_TORN_RECIPE_CUTOUTS_20261108
+   Owner request: only style the 1001 recipes, Aerogrill and Our Evening
+   chapter windows as individual pasted-in editorial recipe cutouts.
+   Keep their existing links, wording, photography and vinyl illustration.
+   No changes to header, cover hero, recipe data or functional code. */
+#homeView .du-cover-chapters{
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  align-items:stretch;
+  gap:clamp(13px,1.8vw,29px);
+  padding:clamp(35px,3.9vw,59px) clamp(21px,4vw,66px) clamp(37px,4.4vw,65px);
+  background:var(--du-editorial-paper-grain);
+  overflow:visible;
+}
+#homeView .du-cover-chapters > a{
+  position:relative;
+  display:flex;
+  flex-direction:column;
+  align-items:flex-start;
+  justify-content:flex-start;
+  isolation:isolate;
+  overflow:hidden;
+  min-width:0;
+  min-height:clamp(248px,20.4vw,310px);
+  margin:0;
+  padding:clamp(36px,3.35vw,52px) clamp(25px,2.65vw,41px) clamp(80px,7vw,108px);
+  border:0;
+  border-radius:0;
+  color:#6a1e32;
+  background-color:#f4e6d5;
+  background-image:
+    linear-gradient(125deg,rgba(255,250,241,.75),rgba(249,237,219,.45) 58%,rgba(235,217,198,.35)),
+    var(--du-paper-fibre-grain);
+  background-size:100% 100%,192px 192px;
+  background-repeat:no-repeat,repeat;
+  -webkit-mask-image:var(--du-ripped-paper-mask);
+  mask-image:var(--du-ripped-paper-mask);
+  -webkit-mask-size:100% 100%;
+  mask-size:100% 100%;
+  -webkit-mask-repeat:no-repeat;
+  mask-repeat:no-repeat;
+  transform:rotate(-1.35deg);
+  filter:drop-shadow(0 11px 10px rgba(67,39,35,.23));
+  text-decoration:none;
+  transition:transform .2s ease,filter .2s ease;
+}
+#homeView .du-cover-chapters > a:nth-child(2){transform:rotate(1.1deg);}
+#homeView .du-cover-chapters > a:nth-child(3){transform:rotate(-.9deg);}
+#homeView .du-cover-chapters > a:is(:hover,:focus-visible){
+  transform:rotate(0deg) translateY(-4px);
+  filter:drop-shadow(0 14px 12px rgba(67,39,35,.30));
+  background-color:#f4e6d5;
+  outline:2px solid #782639;
+  outline-offset:3px;
+}
+#homeView .du-cover-chapters > a strong{
+  position:relative;
+  z-index:2;
+  display:block;
+  max-width:9ch;
+  margin:0;
+  font:italic 600 clamp(38px,3.7vw,61px)/.93 var(--du-magazine-serif);
+  letter-spacing:-.035em;
+  color:#6a1e32;
+  text-shadow:0 1px 0 rgba(255,248,236,.8);
+}
+#homeView .du-cover-chapters > a span{
+  position:relative;
+  z-index:2;
+  display:block;
+  max-width:18ch;
+  margin:clamp(11px,1.35vw,19px) 0 0;
+  font:500 clamp(14px,1.1vw,17px)/1.35 var(--du-magazine-serif);
+  color:#342522;
+  text-shadow:0 1px 0 rgba(255,248,236,.7);
+}
+/* Existing kitchen photography grows into the lower portion of each cutout,
+   fading into the paper behind the legible live text. */
+#homeView .du-cover-chapters .du-cover-chapters-photo{
+  display:block;
+  position:absolute;
+  z-index:-1;
+  pointer-events:none;
+  right:-4%;
+  bottom:-9%;
+  width:75%;
+  height:83%;
+  object-fit:cover;
+  object-position:center;
+  opacity:.92;
+  -webkit-mask-image:linear-gradient(90deg,transparent 0%,rgba(0,0,0,.27) 24%,#000 63%);
+  mask-image:linear-gradient(90deg,transparent 0%,rgba(0,0,0,.27) 24%,#000 63%);
+}
+/* Keep the pre-existing vinyl disc in Our Evening as its photographic motif. */
+#homeView .du-cover-chapters > a:nth-child(3)::before{
+  content:"";
+  position:absolute;
+  z-index:-1;
+  pointer-events:none;
+  width:76%;
+  aspect-ratio:1;
+  right:-21%;
+  bottom:-44%;
+  border-radius:50%;
+  border:2px solid #24191c;
+  background:
+    radial-gradient(circle at center,#982a4b 0 9%,#2c1d21 10% 13%,transparent 14%),
+    repeating-radial-gradient(circle at center,
+      #201b1c 0px,#342a2a 2px,#1e1a1b 5px,#2d2526 7px);
+  opacity:.84;
+  box-shadow:0 8px 22px rgba(34,18,20,.25);
+}
+/* Like the reference Recipe of the Week, each whole card is the link.
+   The round arrow is only a visual cue; no new button is added. */
+#homeView .du-cover-chapters > a::after,
+#homeView .du-cover-chapters > a:nth-child(3)::after{
+  content:"→";
+  position:absolute;
+  z-index:3;
+  right:clamp(24px,2.45vw,38px);
+  bottom:clamp(30px,2.8vw,43px);
+  width:37px;
+  height:37px;
+  display:grid;
+  place-items:center;
+  border-radius:50%;
+  color:#fff9f1;
+  background:#74223a;
+  font:400 23px/1 Georgia,serif;
+  box-shadow:0 4px 9px rgba(44,14,23,.18);
+  opacity:1;
+}
+@media (min-width:761px) and (max-width:1080px){
+  #homeView .du-cover-chapters{gap:11px;padding-inline:18px;}
+  #homeView .du-cover-chapters > a{
+    min-height:247px;
+    padding:37px 21px 81px;
+  }
+  #homeView .du-cover-chapters > a strong{font-size:clamp(36px,4.1vw,47px);}
+  #homeView .du-cover-chapters > a span{font-size:14px;}
+}
+@media(max-width:760px){
+  #homeView .du-cover-chapters{
+    grid-template-columns:minmax(0,1fr);
+    gap:18px;
+    padding:27px 16px 34px;
+  }
+  #homeView .du-cover-chapters > a{
+    min-height:226px;
+    padding:36px 27px 76px;
+    border:0;
+    transform:rotate(-.7deg);
+  }
+  #homeView .du-cover-chapters > a:nth-child(2){transform:rotate(.7deg);}
+  #homeView .du-cover-chapters > a:nth-child(3){transform:rotate(-.5deg);}
+  #homeView .du-cover-chapters > a strong{font-size:clamp(39px,9vw,50px);}
+  #homeView .du-cover-chapters > a span{font-size:16px;max-width:17ch;}
+  #homeView .du-cover-chapters .du-cover-chapters-photo{
+    right:-2%;
+    bottom:-8%;
+    width:66%;
+    height:85%;
+  }
+  #homeView .du-cover-chapters > a:nth-child(3)::before{
+    width:66%;
+    right:-16%;
+    bottom:-57%;
+  }
+  #homeView .du-cover-chapters > a::after{
+    right:27px;
+    bottom:28px;
+  }
+}
+@media(prefers-reduced-motion:reduce){
+  #homeView .du-cover-chapters > a{transition:none;}
+}
