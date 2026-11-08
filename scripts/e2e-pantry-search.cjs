@@ -92,7 +92,7 @@ const assert=require('node:assert/strict');
     await page.locator('#portionPlus').click();
     await page.locator('#addShopping').click();
     await page.locator('.shopping-open').first().click();
-    assert.match(await chickenRow.innerText(),/1000 г/,'700g required means two 500g packs');
+    assert.match(await chickenRow.innerText(),/1[\s\u00a0]?000 г/,'700g required means two 500g packs');
     assert.match(await chickenRow.innerText(),/Нужно 700 г/,'Higher serving count preserves exact recipe mass');
     await page.locator('#closeShopping').click();
     await page.goto('http://127.0.0.1:8765/'+entry+'#catalog',{waitUntil:'domcontentloaded'});
