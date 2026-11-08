@@ -14,11 +14,11 @@ assert(css.includes('body.du-evening-mode #eveningLanding'));
 assert(css.includes('@media (max-width: 430px)'));
 const cssUrls=[...css.matchAll(/url\s*\(\s*['"]?([^'")]+)['"]?\s*\)/gi)].map(x=>x[1]);
 const editorialPhotos=[
-  '/assets/recipes-ai/0001-lemon-spinach-pasta.webp',
+  '/assets/home-hero-steak-wine-20261108.webp',
   '/assets/recipes-ai/0003-pepper-steak.webp'
 ];
 assert.deepEqual([...cssUrls].sort(),[...editorialPhotos].sort(),
-  'Only the two explicitly approved local AI recipe photos are permitted; reject remote assets and fonts');
+  'Only two local editorial photographs are permitted; reject remote assets and fonts');
 for (const localUrl of editorialPhotos) {
   assert(fs.existsSync(path.join(root,localUrl.slice(1))),
     'Local editorial photo must already exist in the approved recipe photo library: '+localUrl);
@@ -27,6 +27,20 @@ assert(css.includes('APPROVED_THREE_SCENE_COMPOSITION_20261108_V2'),
   'The approved three-scene editorial composition must remain in the shared CSS');
 assert(css.includes('grid-template-columns:minmax(0,1.08fr) minmax(0,.68fr) minmax(0,.90fr)'),
   'The desktop dinner spread must retain three photographic/text planes');
+// Homepage photograph is a real, one-time generated WebP, not a screenshot of
+// interface text or an ephemeral external image.
+const crypto=require('node:crypto');
+const heroBytes=fs.readFileSync(path.join(root,'assets/home-hero-steak-wine-20261108.webp'));
+assert.equal(heroBytes.subarray(0,4).toString(),'RIFF','Home hero file is not WebP');
+assert.equal(heroBytes.subarray(8,12).toString(),'WEBP','Home hero lacks WebP signature');
+const heroMeta=JSON.parse(fs.readFileSync(path.join(root,'photo-library/home-hero-steak-wine-20261108.json'),'utf8'));
+assert.equal(heroMeta.image,'assets/home-hero-steak-wine-20261108.webp');
+assert.equal(heroMeta.sha256,crypto.createHash('sha256').update(heroBytes).digest('hex'),
+  'One-time generated homepage asset hash mismatch');
+assert.equal(heroMeta.width,1400);
+assert.equal(heroMeta.height,900);
+assert(!fs.existsSync(path.join(root,'photo-library/home-hero-steak-wine-20261108.pending.json')),
+  'Homepage photo generation left an unresolved paid request');
 const payloads = [];
 for(const [page, link] of pages) {
   const text = fs.readFileSync(path.join(root,page),'utf8');
