@@ -1,0 +1,85 @@
+{
+  "schema_version": 1,
+  "date_utc": "2026-11-03",
+  "project": "СНАЧАЛА УЖИН",
+  "branch": "photo-library/ai-visual-review-36-40-20261103",
+  "pr_url": "https://github.com/semen89852698936-create/snachala-uzhin/pull/51",
+  "base_main_head_at_start": "98082e1a43b085a2a61cf1f679901010cceda2c8",
+  "base_main_head_before_checkpoint": "98082e1a43b085a2a61cf1f679901010cceda2c8",
+  "source_photo_map_blob_sha": "68c9c4c964c6afb7df5a164fbed3763434402290",
+  "source_recipes_blob_sha": "acb94b3fd125bd3dfd06f5d79bece0b3c3257c4e",
+  "files_created": [
+    "photo-library/ai-art-direct-visual-review-36-40-20261103.json",
+    "tests/test_ai_art_direct_visual_review_36_40.cjs",
+    ".github/workflows/ai-art-direct-visual-review-36-40.yml",
+    "project-operations/ai-art-direct-visual-review-36-40-checkpoint-20261103.json"
+  ],
+  "commits_before_checkpoint": [
+    "3a52dfffabfc21ed714e43e666c2d2fa3f3c6f65",
+    "d10cad116ec590129bc9e3a11ce013af3335fa25",
+    "7bd7036b52ba5c6bc06566677c81d2e8680201b0",
+    "e77b12c1ff0fec1e23d5bc615d1225fb815852fc"
+  ],
+  "directly_viewed_current_ai_photos": [
+    36,
+    37,
+    38,
+    39,
+    40
+  ],
+  "rejected": [
+    36,
+    37,
+    38,
+    40
+  ],
+  "needs_culinary_review": [
+    39
+  ],
+  "new_final_approvals": 0,
+  "replacement_briefs_prepared": 4,
+  "technical_archive_worker": {
+    "source_branch": "automation/half-hour-photo-audit",
+    "verified_unchanged_archive_files": 20,
+    "archive_total": 100,
+    "archive_remaining": 80,
+    "not_rechecked": true,
+    "cron_from_pr12_active": false
+  },
+  "checks": [
+    {
+      "kind": "github_actions_push",
+      "status": "success",
+      "run": "https://github.com/semen89852698936-create/snachala-uzhin/actions/runs/41555276131",
+      "commit": "e77b12c1ff0fec1e23d5bc615d1225fb815852fc"
+    },
+    {
+      "kind": "github_actions_pr",
+      "status": "in_progress_at_checkpoint",
+      "run": "https://github.com/semen89852698936-create/snachala-uzhin/actions/runs/41555304266",
+      "commit": "e77b12c1ff0fec1e23d5bc615d1225fb815852fc"
+    },
+    {
+      "kind": "vercel_test_preview",
+      "status": "READY",
+      "project": "snachala-uzhin-git",
+      "deployment_id": "dpl_8UQDJUysyqzkpSQ6WLDZ2AijbWRr",
+      "source_commit": "e77b12c1ff0fec1e23d5bc615d1225fb815852fc",
+      "target": null,
+      "not_production": true
+    }
+  ],
+  "limitations": [
+    "No image-based proof of cooking temperatures or exact ingredient identity.",
+    "No individual license/contract clearance, owner approval, or production visual test.",
+    "No paid regeneration or publication performed.",
+    "Recipe source is structured snapshot; full HTML steps were not independently rechecked.",
+    "Existing PR #49 is a metadata-only audit and PR #50 reviewed 31-35; no overlap."
+  ],
+  "blockers": [
+    "Four rejected current photos require approved replacement generation or suitable licensed substitutes before editorial release.",
+    "No authorization to merge PR or deploy production.",
+    "Rights clearance and full site-to-recipe checks remain incomplete."
+  ],
+  "next_task": "Inspect current main and existing PRs, then directly review current physical AI WebP #41-45 against structured ingredients and the user's no-large-chunks plating rule. Record exact blob IDs and avoid overlap with PR #49 and any new visual-review PRs."
+}
