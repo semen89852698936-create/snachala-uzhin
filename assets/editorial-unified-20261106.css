@@ -3927,3 +3927,36 @@ header.header .du-brand-mark svg.du-wine-icon{visibility:hidden!important;}
   #music .du-music-card .du-bpm-track-details a{font-size:clamp(8px,2.1vw,10px)!important;}
   #music .du-music-card .du-bpm-pill{font-size:clamp(8px,2.2vw,10px)!important;}
 }
+
+
+/* FIX_APPROVED_MUSIC_SCROLLING_20261109 */
+/* The approved PNG underlay remains untouched. Chromium treats <details>
+   special internal children differently from a normal flex box: height:100%
+   on the OL expands beyond the clipped paper viewport instead of scrolling.
+   Anchor the real 20-track list to a definite scroll rectangle. */
+#music .du-music-card > details.du-music-suggestions{
+  display:block!important;
+}
+#music .du-music-card > details.du-music-suggestions[open] > ol.du-bpm-track-list{
+  position:absolute!important;
+  top:28px!important;
+  right:0!important;
+  bottom:0!important;
+  left:0!important;
+  width:auto!important;
+  height:auto!important;
+  min-height:0!important;
+  max-height:none!important;
+  display:flex!important;
+  flex-direction:column!important;
+  flex:none!important;
+  overflow-y:scroll!important;
+  overflow-x:hidden!important;
+  overscroll-behavior:contain;
+  -webkit-overflow-scrolling:touch;
+  scrollbar-width:thin;
+  scrollbar-color:#ac9590 transparent;
+}
+#music .du-music-card > details.du-music-suggestions:not([open]) > ol.du-bpm-track-list{
+  display:none!important;
+}
