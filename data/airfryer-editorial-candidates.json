@@ -1,0 +1,493 @@
+{
+  "schema": "airfryer-editorial-draft-v1",
+  "status": "six source-cross-checked editorial candidates; NOT published; six photos missing; all six appliance_test.status=not_tested",
+  "servings": 2,
+  "quality_rules": [
+    "Only recipes formulated for forced-air cooking, not oven-temperature conversion.",
+    "Single layer; split batches when basket is too small.",
+    "Times are approximate starting guidance; actual time depends on air-fryer model, basket, load, product size/thickness and preheat.",
+    "Always check the manufacturer's instructions for the exact appliance model; use its program/table when applicable and check actual doneness.",
+    "Food safety target: poultry 74 C, fish 63 C (FoodSafety.gov); check with a probe.",
+    "Each recipe requires a matching original or appropriately licensed WebP photo before publication."
+  ],
+  "sources": [
+    "https://www.bbcgoodfood.com/recipes/air-fryer-salmon",
+    "https://www.bbcgoodfood.com/recipes/air-fryer-chicken-breasts",
+    "https://www.bbcgoodfood.com/recipes/air-fryer-potato-wedges",
+    "https://www.bbcgoodfood.com/recipes/air-fryer-brussels-sprouts",
+    "https://www.bbcgoodfood.com/recipes/air-fryer-mushrooms-on-toast",
+    "https://www.bbcgoodfood.com/recipes/maple-thyme-carrots",
+    "https://www.foodsafety.gov/food-safety-charts/safe-minimum-internal-temperatures"
+  ],
+  "recipes": [
+    {
+      "id": "af-salmon-lemon-herbs-2",
+      "category": "Рыба и морепродукты",
+      "title": "Лосось с лимоном и травами в аэрогриле",
+      "ingredients": [
+        [
+          "филе лосося",
+          "2 × 130 г"
+        ],
+        [
+          "оливковое масло",
+          "1 ч. л."
+        ],
+        [
+          "сушёный укроп",
+          "1/2 ч. л."
+        ],
+        [
+          "лимон",
+          "1/2 шт."
+        ],
+        [
+          "соль, чёрный перец",
+          "по вкусу"
+        ]
+      ],
+      "prep_minutes": 5,
+      "temperature_c": 180,
+      "cook_minutes": [
+        8,
+        10
+      ],
+      "preheat": "По инструкции к модели; при холодном старте время может увеличиться",
+      "basket": "Два филе в один слой с зазором; не накрывать воздуховоды",
+      "turn": "Необязательно; проверить готовность после 8 минут",
+      "steps": [
+        "Обсушить оба филе, тонко смазать маслом и приправить солью, перцем и укропом.",
+        "Уложить в корзину одним слоем, оставить промежуток для потока воздуха.",
+        "Готовить при 180 °C. Начать проверку через 8 минут; если середина ещё не достигла безопасной температуры, продолжать короткими интервалами по 1–2 минуты, учитывая толщину филе.",
+        "Проверить термометром середину наиболее толстого участка: ориентир безопасной готовности рыбы 63 °C. При необходимости вернуть филе в аэрогриль ещё на 1–2 минуты и проверить повторно. Подать с долькой лимона."
+      ],
+      "photo_webp": null,
+      "photo_status": "required",
+      "reference": "https://www.bbcgoodfood.com/recipes/air-fryer-salmon",
+      "appliance_test": {
+        "status": "not_tested",
+        "model": null,
+        "date": null,
+        "notes": null
+      },
+      "source_verification": {
+        "status": "cross_checked",
+        "source_title": "Air fryer salmon",
+        "source_servings": "4",
+        "source_temperature_c": 180,
+        "source_cook_minutes": [
+          8,
+          10
+        ],
+        "checked_on": "2026-11-07",
+        "notes": "Two 130 g portions preserve the source fillet size; check the thickest part and use 63 °C internal temperature from FoodSafety.gov.",
+        "safety_reference": "https://www.foodsafety.gov/food-safety-charts/safe-minimum-internal-temperatures"
+      },
+      "appliance_reference": {
+        "document_title": "Книга рецептов аэрогриль Тефаль",
+        "document_url": "https://ru.scribd.com/document/875246352/Книга-рецептов-аэрогриль-Тефаль",
+        "closest_recipe": "Лосось в соусе терияки",
+        "settings": "200 °C, предварительный разогрев 15 минут в режиме ГРИЛЬ, затем 10 минут на решётке для гриля; инструкция отдельно описывает цифровую и недigitalную версии.",
+        "applicability": "Справочный ориентир для лосося, не готовый режим для этого рецепта: другая масса/маринад и способ размещения; перед переносом сверить точную модель и аксессуар.",
+        "status": "reference_only_not_direct_equivalent"
+      }
+    },
+    {
+      "id": "af-chicken-paprika-2",
+      "category": "Птица",
+      "title": "Куриная грудка с паприкой в аэрогриле",
+      "ingredients": [
+        [
+          "куриное филе",
+          "2 шт. по 150-180 г"
+        ],
+        [
+          "растительное масло",
+          "2 ч. л."
+        ],
+        [
+          "сладкая паприка",
+          "1 ч. л."
+        ],
+        [
+          "сушёный чеснок",
+          "1/2 ч. л."
+        ],
+        [
+          "соль, перец",
+          "по вкусу"
+        ]
+      ],
+      "prep_minutes": 7,
+      "temperature_c": 180,
+      "cook_minutes": [
+        18,
+        23
+      ],
+      "preheat": "При необходимости разогреть по инструкции производителя",
+      "basket": "Два филе примерно равной толщины одним слоем; не укладывать друг на друга",
+      "turn": "Перевернуть примерно через 10 минут",
+      "steps": [
+        "Выровнять толщину филе без превращения его в тонкие отбивные, обсушить одноразовым бумажным полотенцем. Сырую курицу не мыть; после контакта с ней вымыть руки, нож и доску.",
+        "Смешать масло и приправы, распределить по филе со всех сторон.",
+        "Готовить при 180 °C, перевернуть через 10 минут; начиная с 18-й минуты измерять температуру.",
+        "Снимать с нагрева только после достижения 74 °C в самой толстой части, измеряя чистым пищевым термометром; дать мясу отдохнуть несколько минут. Не использовать для готового мяса посуду, контактировавшую с сырой курицей без мытья."
+      ],
+      "photo_webp": null,
+      "photo_status": "required",
+      "reference": "https://www.bbcgoodfood.com/recipes/air-fryer-chicken-breasts",
+      "appliance_test": {
+        "status": "not_tested",
+        "model": null,
+        "date": null,
+        "notes": null
+      },
+      "source_verification": {
+        "status": "cross_checked",
+        "source_title": "Air fryer chicken breasts",
+        "source_servings": "4",
+        "source_temperature_c": 180,
+        "source_cook_minutes": [
+          18,
+          20
+        ],
+        "checked_on": "2026-11-07",
+        "notes": "The source gives 18–20 minutes at 180 °C and a lower internal endpoint; this version uses the stricter 74 °C poultry endpoint from FoodSafety.gov, so 18–23 minutes is a starting range, not a promise.",
+        "safety_reference": "https://www.foodsafety.gov/food-safety-charts/safe-minimum-internal-temperatures"
+      },
+      "appliance_reference": {
+        "document_title": "Книга рецептов аэрогриль Тефаль",
+        "document_url": "https://ru.scribd.com/document/875246352/Книга-рецептов-аэрогриль-Тефаль",
+        "closest_recipe": "Куриные бёдра в маринаде из йогурта и розмарина; также жареная курица",
+        "settings": "Для бёдер: 200 °C, предварительный разогрев 15 минут, затем 35 минут для цифровой версии или 30 минут без цифровой панели. Для целой курицы 1,2 кг указан ориентир 50 минут при 200 °C.",
+        "applicability": "В книге нет эквивалентного рецепта куриной грудки. Не переносить время от бёдер или целой тушки на филе; оставить проверку 74 °C в центре обязательной.",
+        "status": "reference_only_not_direct_equivalent"
+      }
+    },
+    {
+      "id": "af-potato-wedges-2",
+      "category": "Овощи",
+      "title": "Картофельные дольки с копчёной паприкой",
+      "ingredients": [
+        [
+          "картофель",
+          "425 г"
+        ],
+        [
+          "растительное масло",
+          "1 ст. л."
+        ],
+        [
+          "копчёная паприка",
+          "1/2 ч. л."
+        ],
+        [
+          "сушёный орегано",
+          "1/2 ч. л."
+        ],
+        [
+          "соль, перец",
+          "по вкусу"
+        ]
+      ],
+      "prep_minutes": 55,
+      "additional_prep": "Общее время подготовки 55 минут: 10 минут нарезка и приправы + 30 минут в холодной воде + 15 минут в горячей воде; обсушивание учесть дополнительно при необходимости. Время приготовления 30–40 минут указано отдельно.",
+      "temperature_c": 200,
+      "cook_minutes": [
+        30,
+        40
+      ],
+      "preheat": "Разогреть аэрогриль до 200 °C",
+      "basket": "Один неплотный слой; если дольки лежат кучей, готовить двумя партиями",
+      "turn": "Встряхивать каждые 10 минут",
+      "steps": [
+        "Нарезать картофель дольками одинаковой толщины; замочить на 30 минут, затем на 15 минут залить горячей водой, тщательно обсушить.",
+        "Перемешать с растительным маслом, паприкой, орегано, солью и перцем.",
+        "Готовить при 200 °C, встряхивая корзину каждые 10 минут; если объём велик, разделить на партии.",
+        "Через 30 минут проверить мягкость середины и появление румяной корочки; при необходимости продолжить до 40 минут."
+      ],
+      "photo_webp": null,
+      "photo_status": "required",
+      "reference": "https://www.bbcgoodfood.com/recipes/air-fryer-potato-wedges",
+      "appliance_test": {
+        "status": "not_tested",
+        "model": null,
+        "date": null,
+        "notes": null
+      },
+      "source_verification": {
+        "status": "cross_checked",
+        "source_title": "Air fryer potato wedges",
+        "source_servings": "4",
+        "source_temperature_c": 200,
+        "source_cook_minutes": [
+          30,
+          40
+        ],
+        "checked_on": "2026-11-07",
+        "notes": "Source sequence retained: 30 minutes cold soak, 15 minutes hot soak, thorough drying, single layer and shaking every 10 minutes; quantity halved for two.",
+        "safety_reference": "https://www.foodsafety.gov/food-safety-charts/safe-minimum-internal-temperatures"
+      },
+      "appliance_reference": {
+        "document_title": "Книга рецептов аэрогриль Тефаль",
+        "document_url": "https://ru.scribd.com/document/875246352/Книга-рецептов-аэрогриль-Тефаль",
+        "closest_recipe": "Картофель фри по-домашнему",
+        "settings": "1 кг картофеля соломкой, в корзину кладут половину, 170 °C на 25 минут, перемешать в середине; повторить со второй партией. Для цифровой панели указан режим КАРТОФЕЛЬ ФРИ.",
+        "applicability": "Это соломка, а не толстые дольки. Использовать как ориентир по загрузке и встряхиванию, не считать временем для долек.",
+        "status": "reference_only_not_direct_equivalent"
+      }
+    },
+    {
+      "id": "af-brussels-lemon-2",
+      "category": "Овощи",
+      "title": "Брюссельская капуста с лимонной цедрой в аэрогриле",
+      "ingredients": [
+        [
+          "брюссельская капуста",
+          "200 г"
+        ],
+        [
+          "растительное масло",
+          "1 ч. л."
+        ],
+        [
+          "лимонная цедра",
+          "1 ч. л."
+        ],
+        [
+          "соль и чёрный перец",
+          "по вкусу"
+        ]
+      ],
+      "prep_minutes": 5,
+      "temperature_c": 180,
+      "cook_minutes": [
+        10,
+        15
+      ],
+      "preheat": "Разогреть аэрогриль до 180 °C по инструкции модели.",
+      "basket": "Разложить кочанчики одним слоем в корзине, не перекрывая циркуляцию воздуха; при небольшой корзине разделить на партии.",
+      "turn": "Встряхнуть или перемешать в середине приготовления, примерно через 6-7 минут.",
+      "steps": [
+        "Срезать сухие основания кочанчиков, крупные разрезать пополам и тщательно обсушить; перемешать с маслом, солью и перцем.",
+        "Разогреть аэрогриль до 180 °C. Разложить капусту одним слоем, оставляя зазоры между крупными половинками.",
+        "Готовить 10-15 минут, встряхнуть через 6-7 минут; проверить, что внутри капуста мягкая, а края подрумянились.",
+        "Сразу после приготовления добавить свежую лимонную цедру, аккуратно перемешать и подать тёплой."
+      ],
+      "photo_webp": null,
+      "photo_status": "required",
+      "reference": "https://www.bbcgoodfood.com/recipes/air-fryer-brussels-sprouts",
+      "appliance_test": {
+        "status": "not_tested",
+        "model": null,
+        "date": null,
+        "notes": null
+      },
+      "source_verification": {
+        "status": "cross_checked",
+        "source_title": "Air-fryer brussels sprouts",
+        "source_servings": "4–6",
+        "source_temperature_c": 180,
+        "source_cook_minutes": [
+          10,
+          15
+        ],
+        "checked_on": "2026-11-07",
+        "notes": "Quantity scaled to two; single layer, toss halfway, add lemon zest after cooking.",
+        "safety_reference": "https://www.foodsafety.gov/food-safety-charts/safe-minimum-internal-temperatures"
+      },
+      "appliance_reference": {
+        "document_title": "Книга рецептов аэрогриль Тефаль",
+        "document_url": "https://ru.scribd.com/document/875246352/Книга-рецептов-аэрогриль-Тефаль",
+        "closest_recipe": "Запечённая цветная капуста с лимонным соусом",
+        "settings": "180 °C на 15 минут, перемешать в середине; при необходимости готовить в два захода.",
+        "applicability": "Сходный овощной сценарий, но другой продукт и размер кусочков. Не переносить время напрямую.",
+        "status": "reference_only_not_direct_equivalent"
+      }
+    },
+    {
+      "id": "af-mushrooms-thyme-toast-2",
+      "category": "Овощи",
+      "title": "Грибы с тимьяном на хрустящих тостах",
+      "ingredients": [
+        [
+          "коричневые шампиньоны",
+          "300 г"
+        ],
+        [
+          "свежий тимьян",
+          "2 веточки"
+        ],
+        [
+          "сушёный чеснок",
+          "1/2 ч. л."
+        ],
+        [
+          "растительное масло",
+          "1 ст. л."
+        ],
+        [
+          "хлеб на закваске",
+          "2 ломтика"
+        ],
+        [
+          "свежая петрушка",
+          "по желанию"
+        ],
+        [
+          "соль и чёрный перец",
+          "по вкусу"
+        ]
+      ],
+      "prep_minutes": 5,
+      "temperature_c": 200,
+      "cook_minutes": [
+        12,
+        15
+      ],
+      "preheat": "Разогреть аэрогриль до 200 °C, если это указано в инструкции к модели.",
+      "basket": "Грибы разложить одним слоем в корзине, не переполнять: они выделяют влагу. Если позволяет площадь, оставить свободное место для хлеба; если нет, после грибов поджарить ломтики в той же корзине 2–3 минуты.",
+      "turn": "Встряхнуть корзину с грибами в середине приготовления, через 6-7 минут.",
+      "steps": [
+        "Очистить грибы, крупные нарезать на четвертинки. Перемешать с тимьяном, сушёным чесноком, растительным маслом и перцем.",
+        "Разогреть аэрогриль до 200 °C. Выложить грибы одним слоем, чтобы горячий воздух проходил между кусочками.",
+        "Готовить 12-15 минут, перемешать примерно через 7 минут; дождаться золотистых краёв и испарения основной влаги.",
+        "За последние 2–3 минуты положить ломтики хлеба в свободное место корзины, если они помещаются одним слоем. Если места нет, переложить готовые грибы в миску и поджарить хлеб в той же корзине ещё 2–3 минуты при 180–200 °C. Выложить грибы на тосты, посыпать петрушкой и сразу подать."
+      ],
+      "photo_webp": null,
+      "photo_status": "required",
+      "reference": "https://www.bbcgoodfood.com/recipes/air-fryer-mushrooms-on-toast",
+      "appliance_test": {
+        "status": "not_tested",
+        "model": null,
+        "date": null,
+        "notes": null
+      },
+      "source_verification": {
+        "status": "cross_checked",
+        "source_title": "Air-fryer mushrooms on toast",
+        "source_servings": "2",
+        "source_temperature_c": 200,
+        "source_cook_minutes": [
+          12,
+          15
+        ],
+        "checked_on": "2026-11-07",
+        "notes": "Mushroom timing follows the source. Toast is done in the same air fryer after removing mushrooms, or concurrently only if the basket has enough free space.",
+        "safety_reference": "https://www.foodsafety.gov/food-safety-charts/safe-minimum-internal-temperatures"
+      },
+      "appliance_reference": {
+        "document_title": "Книга рецептов аэрогриль Тефаль",
+        "document_url": "https://ru.scribd.com/document/875246352/Книга-рецептов-аэрогриль-Тефаль",
+        "closest_recipe": "Вегетарианский бейгл",
+        "settings": "Перец и грибы готовятся на решётке при 200 °C около 12 минут с перемешиванием в середине; затем бейглы подрумяниваются отдельно около 5 минут.",
+        "applicability": "Полезный ориентир для грибов и отдельного подрумянивания хлеба; количество грибов и геометрия корзины отличаются.",
+        "status": "reference_only_not_direct_equivalent"
+      }
+    },
+    {
+      "id": "af-carrots-maple-thyme-2",
+      "category": "Овощи",
+      "title": "Морковь в кленовой глазури с тимьяном",
+      "ingredients": [
+        [
+          "морковь",
+          "375 г"
+        ],
+        [
+          "подсолнечное масло",
+          "1 ст. л."
+        ],
+        [
+          "кленовый сироп",
+          "1 ст. л."
+        ],
+        [
+          "листья тимьяна",
+          "1/2 ст. л."
+        ],
+        [
+          "хересный уксус",
+          "1 ч. л."
+        ],
+        [
+          "соль и чёрный перец",
+          "по вкусу"
+        ]
+      ],
+      "prep_minutes": 10,
+      "temperature_c": 180,
+      "cook_minutes": [
+        30,
+        40
+      ],
+      "preheat": "Разогреть аэрогриль до 180 °C; время зависит от толщины моркови и устройства.",
+      "basket": "Морковь разложить одним слоем, не уплотнять, при маленькой корзине готовить партиями.",
+      "turn": "Через 15 минут осторожно перевернуть, а после добавления глазури перемешать и готовить ещё 5-10 минут.",
+      "steps": [
+        "Вымыть морковь, толстую разрезать вдоль, обсушить, смазать маслом и приправить солью и перцем.",
+        "Разогреть аэрогриль до 180 °C, выложить морковь одним слоем. Готовить 25-30 минут, через 15 минут перевернуть; проверить мягкость ножом.",
+        "Смешать кленовый сироп, тимьян и хересный уксус. Обмазать почти мягкую морковь глазурью.",
+        "Вернуть в аэрогриль при 180 °C ещё на 5-10 минут, пока глазурь не станет блестящей и липкой, но не подгорит; подать тёплой."
+      ],
+      "photo_webp": null,
+      "photo_status": "required",
+      "reference": "https://www.bbcgoodfood.com/recipes/maple-thyme-carrots",
+      "appliance_test": {
+        "status": "not_tested",
+        "model": null,
+        "date": null,
+        "notes": null
+      },
+      "source_verification": {
+        "status": "cross_checked",
+        "source_title": "Maple thyme carrots",
+        "source_servings": "4",
+        "source_temperature_c": 180,
+        "source_cook_minutes": [
+          30,
+          40
+        ],
+        "checked_on": "2026-11-07",
+        "notes": "Source sequence retained: 25–30 minutes for tenderness, then 5–10 minutes after adding maple-thyme glaze; quantity halved for two.",
+        "safety_reference": "https://www.foodsafety.gov/food-safety-charts/safe-minimum-internal-temperatures"
+      },
+      "appliance_reference": {
+        "document_title": "Книга рецептов аэрогриль Тефаль",
+        "document_url": "https://ru.scribd.com/document/875246352/Книга-рецептов-аэрогриль-Тефаль",
+        "closest_recipe": "Корнеплоды, запечённые в кленовом сиропе",
+        "settings": "Морковь готовится вместе с пастернаком и бататом, кусочки разного размера; 200 °C около 12 минут, перемешать в середине. Режим описан для нескольких вариантов панели.",
+        "applicability": "Это смешанные корнеплоды небольшими кусочками, не отдельные морковные бруски. Не переносить время напрямую.",
+        "status": "reference_only_not_direct_equivalent"
+      }
+    }
+  ],
+  "source_review": {
+    "status": "cross_checked",
+    "checked_on": "2026-11-07",
+    "basis": "Six dedicated air-fryer recipes from BBC Good Food; safe internal temperatures from FoodSafety.gov; comparison against the user's supplied Tefal Easy Fry & Grill recipe book (multiple model variants, exact owner model not yet confirmed).",
+    "limitation": "Source verification is not a physical test in a specific air-fryer model.",
+    "appliance_document": "https://ru.scribd.com/document/875246352/Книга-рецептов-аэрогриль-Тефаль",
+    "appliance_scope": "Comparison only. Tefal recipes are not exact equivalents for all six candidates and do not establish the user's exact model."
+  },
+  "reader_notice": "Время приготовления указано ориентировочно. Оно зависит от модели аэрогриля, объёма и формы корзины, количества и толщины продуктов, а также предварительного разогрева. Сверяйтесь с инструкцией производителя именно к вашей модели и проверяйте готовность блюда. Для мяса и птицы используйте пищевой термометр.",
+  "appliance_guidance": {
+    "status": "manufacturer_recipe_book_reviewed_model_not_yet_identified",
+    "document_title": "Книга рецептов аэрогриль Тефаль",
+    "document_url": "https://ru.scribd.com/document/875246352/Книга-рецептов-аэрогриль-Тефаль",
+    "appliance_family": "Tefal Easy Fry & Grill",
+    "variants_listed": [
+      "Easy Fry & Grill Classic",
+      "Easy Fry & Grill Classic+",
+      "Easy Fry & Grill Precision",
+      "Easy Fry & Grill Precision+"
+    ],
+    "control_variants": [
+      "с цифровой панелью управления",
+      "без цифровой панели управления"
+    ],
+    "scope": "The document is a recipe book covering multiple Easy Fry & Grill variants, not a single-model manual or a universal timing chart for every ingredient.",
+    "owner_exact_model": "not_confirmed",
+    "rule": "Do not copy a timing or preset from one variant or recipe to all air fryers. Compare only like-for-like products and preparation methods; model-specific calibration requires the exact appliance model."
+  }
+}
