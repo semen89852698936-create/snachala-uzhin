@@ -1,0 +1,10 @@
+'use strict';
+const assert = require('node:assert/strict');
+const {check} = require('./check-photo-summary-freshness.cjs');
+const photos = Array.from({length:1001},(_,i)=>({path:`/assets/recipes-ai/${i}.webp`}));
+const map = {total:1001,photos};
+assert.deepEqual(check({totalRecipes:1001,updatedAt:'2026-11-08',distinctImageFilesLocallyConfirmed:3},map).issues,[]);
+assert.match(check({totalRecipes:1001,updatedAt:'2026-11-01',distinctImageFilesLocallyConfirmed:3},map).issues.join(' '),/stale/);
+assert.match(check({totalRecipes:1001,updatedAt:'2026-11-08',distinctImageFilesLocallyConfirmed:3},{total:1001,photos:[...photos.slice(0,-1),photos[0]]}).issues.join(' '),/duplicate/);
+assert.match(check({totalRecipes:999,updatedAt:'2026-11-08',distinctImageFilesLocallyConfirmed:3},map).issues.join(' '),/totals/);
+console.log('PASS: 4 photo summary freshness tests');
