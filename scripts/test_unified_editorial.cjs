@@ -17,12 +17,26 @@ const editorialPhotos=[
   '/assets/home-hero-steak-wine-20261108.webp',
   '/assets/recipes-ai/0003-pepper-steak.webp'
 ];
-assert.deepEqual([...cssUrls].sort(),[...editorialPhotos].sort(),
-  'Only two local editorial photographs are permitted; reject remote assets and fonts');
-for (const localUrl of editorialPhotos) {
+const editorialPaperAssets=[
+  '/assets/editorial-paper-fibres-20261108.svg',
+  '/assets/editorial-paper-tear-mask-20261108.svg',
+  '/assets/editorial-paper-torn-bottom-20261108.svg'
+];
+assert.deepEqual([...cssUrls].sort(),[...editorialPhotos,...editorialPaperAssets].sort(),
+  'CSS must reference only approved local photos and torn-paper design assets');
+for (const localUrl of [...editorialPhotos,...editorialPaperAssets]) {
   assert(fs.existsSync(path.join(root,localUrl.slice(1))),
-    'Local editorial photo must already exist in the approved recipe photo library: '+localUrl);
+    'Referenced editorial asset does not exist: '+localUrl);
 }
+for (const url of editorialPaperAssets) {
+  const svg=fs.readFileSync(path.join(root,url.slice(1)),'utf8');
+  assert(svg.includes('<svg') && svg.includes('</svg>'),
+    'Torn paper SVG must contain a valid SVG root and close: '+url);
+}
+assert(css.includes('ORGANIC_FIBRE_TORN_PAPER_CONTROLS_20261108'),
+  'Approved organic paper material is not enabled');
+assert(css.includes('editorial-paper-torn-bottom-20261108.svg'),
+  'Photographic lower edge is still an outdated polygonal wave');
 assert(css.includes('APPROVED_THREE_SCENE_COMPOSITION_20261108_V2'),
   'The approved three-scene editorial composition must remain in the shared CSS');
 assert(css.includes('grid-template-columns:minmax(0,1.08fr) minmax(0,.68fr) minmax(0,.90fr)'),
