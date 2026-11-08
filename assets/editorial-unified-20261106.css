@@ -1846,8 +1846,8 @@ body.du-evening-mode #music a:focus-visible{
     font-size:clamp(49px,5.6vw,88px);
   }
 }
-/* Tablet edition: preserve every editorial panel and the same reading order. */
-@media (min-width:761px) and (max-width:1020px){
+/* Tablet edition: two columns only when there's room; 761–820px stays stacked. */
+@media (min-width:821px) and (max-width:1020px){
   body.du-evening-mode #eveningLanding > .du-story-dinner{
     grid-template-columns:minmax(0,1fr) minmax(0,1fr);
   }
