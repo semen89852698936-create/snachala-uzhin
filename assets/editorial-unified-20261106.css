@@ -1614,3 +1614,10 @@ body.du-evening-mode #music .du-music-player{min-height:54px}
  .header .du-brand-mark{width:34px;min-width:34px;height:37px}
  .header .du-brand-mark .du-wine-icon{width:32px;height:36px}
 }
+
+/* MASTHEAD_VISIBILITY_20261108: The approved logo (goblet + name)
+   appears only in the Our Evening section. Keep navigation positions stable. */
+body:not(.du-evening-mode) .header .brand.du-brand {
+  visibility: hidden !important;
+  pointer-events: none;
+}
