@@ -108,6 +108,26 @@ const {chromium}=require('playwright');
      'Live CTA must have a torn paper edge, not a rounded rectangle: '+JSON.stringify(photoCover));
    assert.equal(photoCover.paperColor,'rgb(255, 240, 221)',
      'CTA must use real ivory parchment color');
+   const balance=await page.evaluate(()=>{
+     const rect=sel=>document.querySelector(sel).getBoundingClientRect();
+     const paper=rect('#homeView .du-cover-chapters');
+     const hero=rect('#homeView .du-hero');
+     const para=document.querySelector('#homeView .du-hero-description');
+     return {paperTop:paper.top,heroBottom:hero.bottom,
+       photoHeight:hero.height,
+       descriptionColor:getComputedStyle(para).color,
+       descriptionText:para.innerText.trim(),
+       hasDemo:getComputedStyle(document.querySelector('.demo-strip')).display!=='none'};
+   });
+   assert.equal(balance.descriptionColor,'rgb(255, 242, 230)',
+     'Long-form copy over the dark photograph is not legible');
+   assert(!balance.hasDemo,'Approved magazine cover has no unrelated demo strip above the photograph');
+   if(viewport.width>1000){
+     assert(balance.photoHeight<=760,
+       'Cover grew too tall and hides the torn-paper lower third: '+JSON.stringify(balance));
+     assert(balance.paperTop<viewport.height-50,
+       'Torn-paper chapter strip must enter the first desktop viewport: '+JSON.stringify(balance));
+   }
    assert.deepEqual(photoCover.chapters.map(x=>x.href),['#catalog','#airfryer','#evening'],
      'All three added editorial magazine links must navigate to real site sections');
    await page.screenshot({path:'/tmp/editorial-home-cover-'+viewport.width+'.png',fullPage:false});
