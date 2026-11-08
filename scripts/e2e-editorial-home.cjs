@@ -17,8 +17,8 @@ const {chromium}=require('playwright');
      const css=getComputedStyle(hero);
      return {bg:css.backgroundColor,wordmark:getComputedStyle(document.querySelector('#homeView .du-hero h1')).color};
    });
-   assert.equal(colors.bg,'rgb(247, 236, 223)','approved reference parchment storefront not applied');
-   assert.equal(colors.wordmark,'rgb(40, 27, 27)','approved ink typography not applied');
+   assert.equal(colors.bg,'rgb(37, 16, 15)','approved dark full-photograph magazine cover not applied');
+   assert.equal(colors.wordmark,'rgb(255, 244, 230)','approved ivory type must be printed over the steak photograph');
    await page.evaluate(()=>document.fonts.ready);
    const featuredPhoto=await page.evaluate(async ()=>{
      const art=document.querySelector('#homeView .du-hero-art');
@@ -49,8 +49,8 @@ const {chromium}=require('playwright');
      assert(coverBlend.seam.includes('gradient'),
        'home cover must blend image into parchment: '+JSON.stringify(coverBlend));
    } else {
-     assert(coverBlend.artMask.includes('gradient'),
-       'mobile cover must fade into parchment: '+JSON.stringify(coverBlend));
+     assert(coverBlend.artLeft===0 && coverBlend.copyRight>coverBlend.artLeft,
+       'mobile steak photo must remain FULL BLEED beneath the editorial type: '+JSON.stringify(coverBlend));
    }
    const featuredCard=await page.evaluate(()=>{
      const el=document.querySelector('#homeView .du-hero-recipe');
@@ -64,6 +64,52 @@ const {chromium}=require('playwright');
    assert.equal(featuredCard.position,'absolute','featured recipe CTA must not enter normal cover flow');
    assert(featuredCard.cardBottom>featuredCard.artBottom-130 && featuredCard.cardBottom<featuredCard.artBottom+10,
       'featured recipe CTA must stay near the photograph bottom edge: '+JSON.stringify(featuredCard));
+   const photoCover=await page.evaluate(()=>{
+     const hero=document.querySelector('#homeView .du-hero');
+     const art=document.querySelector('#homeView .du-hero-art');
+     const text=document.querySelector('#homeView .du-hero-copy');
+     const h1=document.querySelector('#du-hero-title');
+     const kicker=document.querySelector('#homeView .du-kicker');
+     const slogan=document.querySelector('#homeView .du-hero-slogan');
+     const occasion=document.querySelector('#homeView .du-hero-occasion');
+     const paperButton=document.querySelector('#homeView .du-hero-actions .du-btn-primary');
+     const chapters=document.querySelector('#homeView .du-cover-chapters');
+     const bounds=x=>({left:x.getBoundingClientRect().left,right:x.getBoundingClientRect().right,
+       top:x.getBoundingClientRect().top,bottom:x.getBoundingClientRect().bottom});
+     return {
+       mainHeading:h1.innerText.trim().replace(/\\s+/g,' '),
+       kicker:kicker.innerText.trim(),
+       slogan:slogan.innerText.trim(),
+       occasion:occasion?.innerText.trim(),
+       headerOnPhoto:bounds(art).left<=bounds(h1).left&&bounds(art).right>=bounds(h1).right&&
+         bounds(art).top<=bounds(h1).top&&bounds(art).bottom>=bounds(h1).bottom,
+       heroWidth:hero.getBoundingClientRect().width,
+       photoWidth:art.getBoundingClientRect().width,
+       contentBg:getComputedStyle(text).backgroundColor,
+       underline:getComputedStyle(slogan,'::after').backgroundColor,
+       paperClip:getComputedStyle(paperButton).clipPath,
+       paperColor:getComputedStyle(paperButton).backgroundColor,
+       chapters:chapters?[...chapters.querySelectorAll('a')].map(a=>({text:a.innerText.trim(),href:a.getAttribute('href')})):[],
+       photoOverlap:bounds(art).left<bounds(text).right
+     };
+   });
+   assert(photoCover.mainHeading.includes('СНАЧАЛА') && photoCover.mainHeading.includes('УЖИН'),
+     'Live homepage title is missing from photographic spread: '+JSON.stringify(photoCover));
+   assert.equal(photoCover.kicker,'КУЛИНАРНЫЙ ЖУРНАЛ');
+   assert.equal(photoCover.slogan,'Рецепты, которые объединяют');
+   assert.equal(photoCover.occasion,'1001 повод остаться');
+   assert(photoCover.headerOnPhoto && Math.abs(photoCover.photoWidth-photoCover.heroWidth)<3 && photoCover.photoOverlap,
+     'Approved photo must occupy WHOLE cover behind live typography, no pale left column: '+JSON.stringify(photoCover));
+   assert.equal(photoCover.contentBg,'rgba(0, 0, 0, 0)',
+     'Copy must be transparent and sit directly over the photograph');
+   assert.equal(photoCover.underline,'rgb(164, 32, 59)',
+     'Reference wine-red underline is missing');
+   assert(photoCover.paperClip.startsWith('polygon('),
+     'Live CTA must have a torn paper edge, not a rounded rectangle: '+JSON.stringify(photoCover));
+   assert.equal(photoCover.paperColor,'rgb(255, 240, 221)',
+     'CTA must use real ivory parchment color');
+   assert.deepEqual(photoCover.chapters.map(x=>x.href),['#catalog','#airfryer','#evening'],
+     'All three added editorial magazine links must navigate to real site sections');
    await page.screenshot({path:'/tmp/editorial-home-cover-'+viewport.width+'.png',fullPage:false});
    const masthead=await page.evaluate(()=>{
      const nav=document.querySelector('.header .main-nav');
@@ -119,7 +165,7 @@ const {chromium}=require('playwright');
      return {ctaColor:getComputedStyle(button).color,markBg:getComputedStyle(mark).backgroundColor,
        brandDirection:getComputedStyle(letters).flexDirection};
    });
-   assert.equal(presentation.ctaColor,'rgb(85, 37, 50)','outlined CTA cannot be read on cream background');
+   assert.equal(presentation.ctaColor,'rgb(101, 25, 43)','approved wine-colored type on torn cream paper CTA is missing');
    assert.equal(presentation.markBg,'rgba(0, 0, 0, 0)','brand wine glass must not have the old pink disk');
    assert.equal(presentation.brandDirection,'row','brand must read as one editorial wordmark');
    assert.equal(await page.locator('#tryCooking').count(),1,'cooking demo CTA missing');
