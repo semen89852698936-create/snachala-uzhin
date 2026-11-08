@@ -2085,3 +2085,78 @@ body.du-evening-mode #evening .du-story-after-copy{
     mask-image:linear-gradient(to bottom,transparent 0%,#000 15%,#000 100%);
   }
 }
+
+
+/* MOBILE_PHOTO_TEXT_FUSION_20261108
+   The phone cover is a real magazine composition: the approved couple photo
+   extends behind the first text, fading naturally into paper, instead of
+   appearing far below the long list of interactive evening ideas. */
+@media(max-width:760px){
+  body.du-evening-mode #eveningLanding{
+    position:relative;
+    isolation:isolate;
+    overflow:visible;
+    background:var(--du-editorial-paper-grain);
+  }
+  body.du-evening-mode #eveningLanding > .du-evening-landing-photo{
+    position:absolute;
+    top:0;
+    right:0;
+    left:0;
+    width:100%;
+    height:clamp(460px,125vw,590px);
+    min-height:0;
+    max-height:none;
+    z-index:1;
+    overflow:visible;
+    clip-path:none;
+    pointer-events:none;
+  }
+  body.du-evening-mode #eveningLanding > .du-evening-landing-photo > img{
+    position:absolute;
+    inset:0;
+    width:100%;
+    height:100%;
+    max-width:none;
+    object-fit:cover;
+    object-position:63% 41%;
+    -webkit-mask-image:radial-gradient(ellipse 84% 78% at 100% 32%,#000 0%,rgba(0,0,0,.84) 35%,rgba(0,0,0,.22) 70%,transparent 100%);
+    mask-image:radial-gradient(ellipse 84% 78% at 100% 32%,#000 0%,rgba(0,0,0,.84) 35%,rgba(0,0,0,.22) 70%,transparent 100%);
+  }
+  body.du-evening-mode #eveningLanding .du-evening-landing-caption{
+    display:none;
+  }
+  body.du-evening-mode #eveningLanding > .du-evening-landing-content{
+    z-index:2;
+    order:0;
+    position:relative;
+    background:
+      linear-gradient(to bottom,transparent 0px,transparent 315px,rgba(247,236,223,.65) 460px,var(--du-editorial-parchment) 640px),
+      linear-gradient(to right,rgba(247,236,223,.95) 0%,rgba(247,236,223,.79) 38%,rgba(247,236,223,.08) 100%);
+    padding-top:clamp(30px,7vw,43px);
+  }
+  body.du-evening-mode #eveningLanding > .du-evening-landing-content::after{
+    display:none;
+  }
+  body.du-evening-mode #eveningLanding .du-evening-landing-content h1,
+  body.du-evening-mode #eveningLanding .du-evening-landing-lead,
+  body.du-evening-mode #eveningLanding .du-evening-landing-text{
+    position:relative;
+    z-index:3;
+    text-shadow:0 1px 0 rgba(255,249,240,.45);
+  }
+  body.du-evening-mode #eveningLanding .du-evening-landing-content h1{
+    max-width:6.5ch;
+    font-size:clamp(64px,15.6vw,92px);
+  }
+  body.du-evening-mode #eveningLanding .du-evening-inspiration{
+    position:relative;
+    z-index:3;
+    background:var(--du-editorial-paper-grain);
+  }
+  body.du-evening-mode #eveningLanding > .du-story-dinner{
+    position:relative;
+    order:2;
+    z-index:3;
+  }
+}
