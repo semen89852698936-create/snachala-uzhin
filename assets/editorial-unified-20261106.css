@@ -3525,14 +3525,25 @@ header.header .du-brand-mark svg.du-wine-icon{visibility:hidden!important;}
   background-size:100% 100%,192px 192px;
   background-repeat:no-repeat,repeat;
   color:#671f31;
-  -webkit-mask-image:var(--du-ripped-paper-mask);
-  mask-image:var(--du-ripped-paper-mask);
-  -webkit-mask-position:center;
-  mask-position:center;
-  -webkit-mask-size:100% 100%;
-  mask-size:100% 100%;
-  -webkit-mask-repeat:no-repeat;
-  mask-repeat:no-repeat;
+  /* The former SVG filter hid title lines and cut off the bottom in Chromium.
+     Use an explicit full-height torn outline so no content can vanish. */
+  -webkit-mask-image:none;
+  mask-image:none;
+  clip-path:polygon(
+    0% 5%,3% 2.5%,6% 4%,9% 2%,12% 3.5%,15% 1.8%,18% 3.6%,
+    22% 1.7%,26% 3.3%,30% 2%,34% 3.8%,38% 1.8%,42% 3.2%,
+    46% 1.3%,50% 3.6%,54% 2%,58% 3.7%,62% 1.8%,66% 2.7%,
+    70% 1.6%,74% 3.5%,78% 2%,82% 3.7%,86% 1.6%,90% 3%,
+    94% 2.2%,97% 3.5%,99% 2%,100% 6%,
+    99% 12%,100% 20%,99% 28%,100% 35%,99% 43%,100% 51%,
+    99% 59%,100% 67%,99% 76%,100% 85%,99% 93%,100% 97%,
+    96% 98%,92% 96.5%,88% 99%,84% 97%,80% 99%,76% 96.5%,
+    72% 98.5%,68% 97%,64% 99%,60% 96.5%,56% 98.5%,52% 97%,
+    48% 99%,44% 97%,40% 99%,36% 96.5%,32% 99%,28% 97%,
+    24% 99%,20% 96.5%,16% 98.5%,12% 97%,8% 99%,4% 97%,0% 98%,
+    1% 90%,0% 81%,1% 73%,0% 65%,1% 56%,0% 48%,
+    1% 39%,0% 30%,1% 22%,0% 14%
+  );
   filter:drop-shadow(0 9px 10px rgba(46,28,25,.29));
   box-shadow:none;
   text-decoration:none;
