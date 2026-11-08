@@ -48,20 +48,36 @@ const {chromium}=require('playwright');
      'dinner spread must have three image/paper/image planes on desktop and readable tablet/mobile stacking');
    assert.equal(story.afterColumns,scenario.viewport.width>820?2:1,'after-dinner layout');
    if(scenario.viewport.width>=1021){
-     const dinnerPlanes=await page.evaluate(()=>{
+     const blend=await page.evaluate(()=>{
+       const bounds=sel=>document.querySelector(sel).getBoundingClientRect();
        const container=document.querySelector('#eveningLanding .du-story-dinner');
-       const paper=container.querySelector('.du-story-dinner-copy').getBoundingClientRect();
-       const table=container.querySelector('.du-story-dinner-photo').getBoundingClientRect();
-       const whole=container.getBoundingClientRect();
-       const background=getComputedStyle(container,'::before').backgroundImage;
-       return {paperLeft:paper.left,paperRight:paper.right,tableLeft:table.left,containerLeft:whole.left,background};
+       const photo=document.querySelector('#eveningLanding .du-story-dinner-photo');
+       const hero=document.querySelector('#eveningLanding > .du-evening-landing-photo > img');
+       const heroCopy=bounds('#eveningLanding > .du-evening-landing-content');
+       const paper=bounds('#eveningLanding .du-story-dinner-copy');
+       const table=photo.getBoundingClientRect();
+       const bg=getComputedStyle(container,'::before').backgroundImage;
+       return {
+         steakPhoto:bg,
+         heroImageLeft:hero.getBoundingClientRect().left,
+         heroCopyRight:heroCopy.right,
+         heroMask:getComputedStyle(hero).maskImage||getComputedStyle(hero).webkitMaskImage,
+         paperLeft:paper.left,
+         paperRight:paper.right,
+         tableLeft:table.left,
+         dinnerMask:getComputedStyle(photo).maskImage||getComputedStyle(photo).webkitMaskImage,
+         afterMask:getComputedStyle(document.querySelector('#evening .du-story-after-photo')).maskImage
+       };
      });
-     assert(dinnerPlanes.background.includes('0003-pepper-steak.webp'),
-       'first photographic plane must use the approved local AI steak photo');
-     assert(dinnerPlanes.paperLeft>dinnerPlanes.containerLeft+20 && dinnerPlanes.tableLeft>=dinnerPlanes.paperRight-2,
-       'paper copy must sit between the steak photo and the existing approved dinner photo: '+JSON.stringify(dinnerPlanes));
+     assert(blend.steakPhoto.includes('0003-pepper-steak.webp'),
+       'the dinner spread must use the approved local AI steak photograph');
+     assert(blend.heroImageLeft<blend.heroCopyRight-35,
+       'hero photograph should fade UNDER the text instead of starting at a hard vertical seam: '+JSON.stringify(blend));
+     assert(blend.tableLeft<blend.paperRight-20,
+       'dinner photograph should fade UNDER the editorial parchment, not sit beside it: '+JSON.stringify(blend));
+     assert(blend.heroMask.includes('gradient') && blend.dinnerMask.includes('gradient') && blend.afterMask.includes('gradient'),
+       'all three scenes must have photographic blending masks: '+JSON.stringify(blend));
    }
-
    // The approved magazine layout puts the text to the LEFT of the hero photo.
    // On mobile it becomes text FIRST and photo SECOND. Verify real geometry.
    const geometry=await page.evaluate(()=>{
