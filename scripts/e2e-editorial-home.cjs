@@ -44,13 +44,13 @@ const {chromium}=require('playwright');
    });
    assert.equal(catalog.bg,'rgb(249, 242, 234)','catalog paper palette missing');
    if(viewport.width>1000){
-     assert.equal(catalog.columns,4,'desktop magazine grid should have 4 tracks');
+     assert.equal(catalog.columns,3,'desktop magazine grid should have 3 editorial tracks');
      assert.equal(catalog.firstDisplay,'grid','desktop first recipe not featured');
      assert.equal(catalog.firstColumnStart,'span 2','desktop feature should start with a two-track span');
      assert(catalog.firstWidth>catalog.secondWidth*1.6,'desktop lead recipe should be visibly wider: '+JSON.stringify(catalog));
      assert(catalog.headingSize>70,'magazine masthead too small');
    }else{
-     assert.equal(catalog.columns,2,'mobile catalog should retain two readable columns');
+     assert.equal(catalog.columns,1,'mobile catalog must be a legible single column');
      assert(catalog.cardImageHeight>230,'mobile cards lack large photographs');
    }
    await page.screenshot({path:'/tmp/editorial-catalog-'+viewport.width+'.png',fullPage:false});
