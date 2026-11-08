@@ -3334,3 +3334,16 @@ body:not(.du-evening-mode) .demo-strip{display:none;}
 @media(max-width:760px){
   #homeView .du-hero-art .du-hero-side-note{padding-top:27px;padding-bottom:26px;}
 }
+
+
+/* MOBILE_PANEL_FIBRE_SAFE_ZONE_20261108
+   Keep the exact bottom-right note geometry but let the paper's upper ripped
+   silhouette protrude OUTSIDE the typography safe area. No text may be cut. */
+@media(max-width:760px){
+  #homeView .du-hero-art .du-hero-side-note{
+    -webkit-mask-size:100% calc(100% + 26px);
+    mask-size:100% calc(100% + 26px);
+    -webkit-mask-position:0 -16px;
+    mask-position:0 -16px;
+  }
+}
