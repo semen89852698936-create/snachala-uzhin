@@ -20,6 +20,7 @@ const editorialPhotos=[
 const editorialPaperAssets=[
   '/assets/editorial-paper-fibres-20261108.svg',
   '/assets/editorial-paper-tear-mask-20261108.svg',
+  '/assets/editorial-paper-panel-mask-20261108.svg',
   '/assets/editorial-paper-torn-bottom-20261108.svg'
 ];
 assert.deepEqual([...cssUrls].sort(),[...editorialPhotos,...editorialPaperAssets].sort(),
