@@ -40,6 +40,10 @@ const assert=require('node:assert/strict');
     assert.match(await page.locator('#recipeDetail').innerText(),/клюквенно-апельсиновым соусом/i);
     assert.ok(await page.locator('#recipeDetail .ingredient-check').count()>=5,'Ingredients must render');
     assert.ok((await page.locator('#recipeDetail .allergen-text').innerText()).includes(modelNote),'Model-specific guidance must be visible in the recipe detail.');
+    const publicRecipeText=await page.locator('#recipeDetail').innerText();
+    for(const forbidden of ['Источник:', 'Статус испытаний:', 'Открыть источник рецепта', 'На конкретной модели аэрогриля физически не тестировалось']){
+      assert.ok(!publicRecipeText.includes(forbidden),'Internal editorial text must not appear in a public recipe: '+forbidden);
+    }
     assert.ok(await page.locator('#recipeDetail .du-editorial-step').count()>=4,'Cooking steps must render');
     assert.equal(await page.locator('#recipeDetail .portion-picker button').count(),0,'Airfryer recipes keep the validated two-serving quantity fixed');
     assert.equal(await page.locator('#recipeDetail .portion-picker strong').innerText(),'2 порции');
