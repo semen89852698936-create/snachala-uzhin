@@ -2531,3 +2531,96 @@ body.du-evening-mode #evening .du-story-after-copy{
     transition:none!important;
   }
 }
+
+
+/* RESTORE_APPROVED_NAV_AND_WINE_GLASS_20261108
+   Owner's explicit correction: Our Evening is the FIRST main navigation button,
+   Air Fryer is the LAST. Restore both distinctive editorial call-to-action
+   styles. The original wine-glass logo is essential and must never be replaced
+   by typography or decorative photo artwork. Real anchors remain unchanged. */
+.header .main-nav {
+  display:flex;
+  align-items:center;
+}
+.header .main-nav > a[data-nav="evening"] {
+  order:-100;
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  flex-shrink:0;
+  min-height:42px;
+  padding:10px 17px;
+  border:1px solid #711c2e;
+  border-radius:5px;
+  background:#711c2e;
+  color:#fff9f0;
+  font-weight:750;
+  box-shadow:none;
+  text-decoration:none;
+  white-space:nowrap;
+}
+.header .main-nav > a[data-nav="airfryer"] {
+  order:100;
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  flex-shrink:0;
+  min-height:42px;
+  padding:10px 17px;
+  border:1px solid #711c2e;
+  border-radius:5px;
+  background:#fff8ef;
+  color:#711c2e;
+  font-weight:750;
+  box-shadow:none;
+  text-decoration:none;
+  white-space:nowrap;
+}
+.header .main-nav > a[data-nav="evening"]:is(:hover,:focus-visible) {
+  background:#541421;
+  border-color:#541421;
+  color:#fff9f0;
+}
+.header .main-nav > a[data-nav="airfryer"]:is(:hover,:focus-visible) {
+  background:#711c2e;
+  color:#fff9f0;
+}
+.header .du-brand{
+  display:inline-flex;
+  align-items:center;
+}
+.header .du-brand-mark,
+.header .du-brand-mark .du-wine-icon{
+  display:flex;
+  visibility:visible;
+  opacity:1;
+  flex-shrink:0;
+}
+.header .du-brand-mark .du-wine-icon{
+  width:38px;
+  height:43px;
+}
+.header .du-brand-words{
+  display:flex;
+  flex-direction:row;
+  white-space:nowrap;
+  color:#651d2b;
+}
+@media(min-width:681px) and (max-width:920px) {
+  .header .main-nav{gap:8px;}
+  .header .main-nav > a[data-nav="evening"],
+  .header .main-nav > a[data-nav="airfryer"]{
+    padding:8px 10px;
+    font-size:12px;
+    min-height:40px;
+  }
+}
+@media(max-width:680px){
+  /* Keep the actual logo mark and label, not a new graphic mockup. */
+  .header .du-brand-mark .du-wine-icon{width:32px;height:36px;}
+  .header .main-nav > a[data-nav="evening"],
+  .header .main-nav > a[data-nav="airfryer"]{
+    padding:8px 10px;
+    min-height:38px;
+  }
+}
