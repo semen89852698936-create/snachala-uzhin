@@ -1399,3 +1399,9 @@ body.du-evening-mode #music .du-music-player{min-height:54px}
  #catalog #recipeGrid.recipe-grid{grid-template-columns:minmax(0,1fr)}
  #catalog #recipeGrid > .recipe-card .card-image{height:clamp(235px,63vw,350px)}
 }
+
+/* MOBILE_GRID_SPAN_GUARD_20261108: lead feature must not create an
+   implicit extra CSS grid track once the phone layout is one column. */
+@media(max-width:760px){
+ #catalog #recipeGrid .recipe-card:nth-child(1){grid-column:span 1}
+}
