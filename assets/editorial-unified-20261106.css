@@ -1026,3 +1026,152 @@ body.du-evening-mode #music .du-bpm-track-details strong {
     white-space:nowrap;
   }
 }
+
+
+/* EDITORIAL_READABILITY_20261108
+   Improve small-copy legibility and keep editorial layouts inside narrow viewports.
+   Presentation only: no changes to photo URLs, recipes, timers, or approved stories. */
+#recipeDetail .recipe-kicker,
+#recipeDetail .du-editorial-marker,
+#cookOverlay .cook-label {
+  font-size: 13px;
+  line-height: 1.45;
+}
+#recipeDetail .du-editorial-hint,
+#recipeDetail .du-editorial-step-copy .step-timer,
+#cookOverlay .du-timer-status {
+  font-size: 15px;
+  line-height: 1.55;
+}
+#recipeDetail .du-editorial-step-copy p {
+  font-size: clamp(16px, 1.4vw, 18px);
+  line-height: 1.68;
+}
+#recipeDetail .recipe-panel-grid,
+#recipeDetail .recipe-panel-grid .panel,
+#recipeDetail .du-editorial-step-copy,
+#cookOverlay .cook-sheet,
+#cookOverlay .du-editorial-cook-step {
+  min-width: 0;
+}
+#recipeDetail .recipe-intro h1,
+#cookOverlay .du-editorial-cook-step h2 {
+  overflow-wrap: break-word;
+  hyphens: auto;
+}
+#recipeDetail .ingredient-check,
+#recipeDetail .recipe-panel-grid button,
+#cookOverlay .cook-nav button {
+  min-height: 44px;
+}
+body.du-evening-mode #eveningLanding .du-evening-landing-kicker,
+body.du-evening-mode #eveningLanding .du-evening-inspiration-head small,
+body.du-evening-mode #eveningLanding .du-evening-inspiration-credit,
+body.du-evening-mode #eveningLanding .du-evening-inspiration-card small,
+body.du-evening-mode #evening .du-evening-role-card small,
+body.du-evening-mode #evening .du-evening-role-actions span {
+  font-size: 14px;
+  line-height: 1.55;
+}
+body.du-evening-mode #eveningLanding .du-evening-landing-benefits b,
+body.du-evening-mode #evening .du-evening-together-content > p,
+body.du-evening-mode #evening .du-evening-invitation-content > p,
+body.du-evening-mode #music .du-music-card-desc {
+  font-size: 16px;
+  line-height: 1.65;
+}
+body.du-evening-mode #eveningLanding .du-evening-inspiration-card span {
+  font-size: 15px;
+  line-height: 1.5;
+}
+body.du-evening-mode #eveningLanding .du-evening-landing-content,
+body.du-evening-mode #eveningLanding .du-evening-inspiration,
+body.du-evening-mode #evening .du-section-heading,
+body.du-evening-mode #music .du-music-card {
+  min-width: 0;
+}
+body.du-evening-mode #eveningLanding .du-evening-landing-content h1,
+body.du-evening-mode #eveningLanding .du-story-dinner-copy h2,
+body.du-evening-mode #evening .du-story-after-copy h2 {
+  overflow-wrap: break-word;
+}
+@media (max-width: 760px) {
+  #recipeDetail .recipe-intro h1 {
+    font-size: clamp(40px, 10vw, 65px);
+    line-height: 1.04;
+  }
+  #recipeDetail .du-editorial-step-copy p {
+    font-size: 16px;
+    line-height: 1.7;
+  }
+  #cookOverlay .du-editorial-cook-step {
+    grid-template-columns: minmax(0, 1fr);
+    grid-template-areas: "number" "heading" "description";
+    gap: 10px;
+  }
+  #cookOverlay .du-editorial-cook-illustration {
+    display: none;
+  }
+  #cookOverlay .du-editorial-cook-step h2 {
+    font-size: clamp(30px, 7.5vw, 43px);
+    line-height: 1.13;
+  }
+  #cookOverlay .du-editorial-cook-step p {
+    font-size: 18px;
+    line-height: 1.7;
+  }
+  body.du-evening-mode #eveningLanding .du-evening-landing-content h1 {
+    font-size: clamp(54px, 12vw, 85px);
+    line-height: .98;
+    letter-spacing: -.045em;
+  }
+  body.du-evening-mode #eveningLanding .du-evening-landing-content h1 em {
+    white-space: normal;
+  }
+  body.du-evening-mode #eveningLanding .du-evening-inspiration-card span {
+    font-size: 15px;
+    padding: 12px 9px;
+  }
+  body.du-evening-mode #eveningLanding .du-evening-inspiration-grid,
+  body.du-evening-mode #eveningLanding .du-story-dinner,
+  body.du-evening-mode #evening .du-story-after {
+    min-width: 0;
+  }
+}
+@media (max-width: 430px) {
+  #recipeDetail .recipe-panel-grid .panel {
+    padding: 20px 16px;
+  }
+  #recipeDetail .du-editorial-step {
+    grid-template-columns: 31px minmax(0, 1fr);
+    gap: 12px;
+    align-items: start;
+  }
+  #recipeDetail .du-editorial-illustration {
+    display: none;
+  }
+  #recipeDetail .du-editorial-step-copy strong {
+    font-size: 23px;
+    line-height: 1.2;
+  }
+  body.du-evening-mode #eveningLanding .du-evening-landing-content h1 {
+    font-size: clamp(49px, 12.8vw, 64px);
+    line-height: 1.02;
+    margin-block: 18px;
+  }
+  body.du-evening-mode #eveningLanding .du-evening-landing-content h1 span {
+    font-size: clamp(23px, 6.5vw, 31px);
+  }
+  body.du-evening-mode #eveningLanding .du-evening-inspiration-head small,
+  body.du-evening-mode #eveningLanding .du-evening-inspiration-credit,
+  body.du-evening-mode #eveningLanding .du-evening-inspiration-card small {
+    font-size: 14px;
+  }
+  body.du-evening-mode #eveningLanding .du-evening-inspiration-card img {
+    height: clamp(110px, 30vw, 145px);
+  }
+  body.du-evening-mode #eveningLanding .du-evening-landing-cta {
+    min-height: 48px;
+    font-size: 16px;
+  }
+}
