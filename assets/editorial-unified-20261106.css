@@ -3506,6 +3506,8 @@ header.header .du-brand-mark svg.du-wine-icon{visibility:hidden!important;}
 #homeView .du-cover-chapters.du-approved-image-cards > a.du-approved-card{
   display:block;
   position:relative;
+  transition:transform 260ms cubic-bezier(.2,.7,.25,1),filter 260ms ease;
+  will-change:transform;
   box-sizing:border-box;
   min-width:0;
   width:100%;
@@ -3544,12 +3546,17 @@ header.header .du-brand-mark svg.du-wine-icon{visibility:hidden!important;}
   display:none;
 }
 #homeView .du-cover-chapters.du-approved-image-cards > a.du-approved-card:is(:hover,:focus-visible){
-  transform:none;
+  z-index:1;
+  transform:translateY(-7px) scale(1.018);
   background:transparent;
   box-shadow:none;
-  filter:none;
-  outline:3px solid #712039;
-  outline-offset:-3px;
+  filter:drop-shadow(0 13px 13px rgba(57,31,25,.18));
+  outline:none;
+}
+@media(prefers-reduced-motion:reduce){
+  #homeView .du-cover-chapters.du-approved-image-cards > a.du-approved-card:is(:hover,:focus-visible){
+    transform:none;
+  }
 }
 @media(max-width:680px){
   #homeView .du-cover-chapters.du-approved-image-cards{
