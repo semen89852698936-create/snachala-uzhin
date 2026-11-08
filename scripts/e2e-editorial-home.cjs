@@ -141,7 +141,14 @@ const {chromium}=require('playwright');
    await page.locator('#homeView .du-cover-chapters').screenshot({
      path:'/tmp/editorial-home-chapters-'+viewport.width+'.png',
      animations:'disabled'
-   });   await page.screenshot({path:'/tmp/editorial-home-cover-'+viewport.width+'.png',fullPage:false});
+   });   // The chapter screenshot scrolled the page. Capture the actual cover from
+   // its true top, never a misleading mid-page crop.
+   await page.evaluate(()=>{
+     document.documentElement.style.scrollBehavior='auto';
+     window.scrollTo(0,0);
+   });
+   await page.waitForFunction(()=>scrollY<=2,null,{timeout:5000});
+   await page.screenshot({path:'/tmp/editorial-home-cover-'+viewport.width+'.png',fullPage:false});
    const masthead=await page.evaluate(()=>{
      const nav=document.querySelector('.header .main-nav');
      const evening=nav?.querySelector('a[data-nav="evening"]');
