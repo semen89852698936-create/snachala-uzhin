@@ -2147,7 +2147,7 @@ body.du-evening-mode #evening .du-story-after-copy{
   }
   body.du-evening-mode #eveningLanding .du-evening-landing-content h1{
     max-width:6.5ch;
-    font-size:clamp(64px,15.6vw,92px);
+    font-size:clamp(69px,16.2vw,94px);
   }
   body.du-evening-mode #eveningLanding .du-evening-inspiration{
     position:relative;
