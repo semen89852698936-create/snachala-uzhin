@@ -73,6 +73,30 @@ const assert=require('node:assert/strict');
       'Only one egg should be added to the shared grocery list');
     await page.locator('#closeShopping').click();
 
+    // Real chicken from the catalog: 700g for four portions.
+    // With two portions, 350g is needed but the shopping suggestion must be 500g.
+    await page.goto('http://127.0.0.1:8765/'+entry+'#recipe=chicken-lemon',{waitUntil:'domcontentloaded'});
+    await page.locator('#portionMinus').click();
+    await page.locator('#portionMinus').click();
+    assert.match(await page.locator('#recipeDetail').innerText(),/350 г/,'Recipe retains exact two-portion chicken mass');
+    await page.locator('#addShopping').click();
+    await page.locator('.shopping-open').first().click();
+    const chickenRow=page.locator('#shoppingContents .shop-item').filter({hasText:'Куриные бёдра без кости'});
+    assert.equal(await chickenRow.count(),1,'Chicken must appear as one shopping item');
+    assert.match(await chickenRow.innerText(),/500 г/,'350g required means one 500g package');
+    assert.match(await chickenRow.innerText(),/Нужно 350 г/,'Explain the actual recipe amount separately');
+    assert.match(await page.evaluate(()=>shoppingShareText()),/Куриные бёдра без кости — 500 г \(нужно 350 г; 1 × 500 г\)/,
+      'Copy/share must contain package quantity with exact need');
+    await page.locator('#closeShopping').click();
+    await page.locator('#portionPlus').click();
+    await page.locator('#portionPlus').click();
+    await page.locator('#addShopping').click();
+    await page.locator('.shopping-open').first().click();
+    assert.match(await chickenRow.innerText(),/1000 г/,'700g required means two 500g packs');
+    assert.match(await chickenRow.innerText(),/Нужно 700 г/,'Higher serving count preserves exact recipe mass');
+    await page.locator('#closeShopping').click();
+    await page.goto('http://127.0.0.1:8765/'+entry+'#catalog',{waitUntil:'domcontentloaded'});
+
     if(viewport.width<500){
       const overflow=await page.evaluate(()=>document.documentElement.scrollWidth-document.documentElement.clientWidth);
       if(overflow>2){
