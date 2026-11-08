@@ -38,28 +38,36 @@ const {chromium}=require('playwright');
       musicTracks:document.querySelectorAll('#music .du-bpm-track').length
     };
    });
-   // A matching src string is not enough: all approved photos must really
-   // decode. Catch 404s and corrupt pictures before artistic inspection.
-   const imageHealth=await page.evaluate(async()=>{
-     const selectors=[
-       '#eveningLanding .du-evening-landing-photo img',
-       '#eveningLanding .du-story-dinner-photo img',
-       '#evening .du-story-after-photo img',
-       '#evening .du-evening-together > img',
-       '#evening .du-evening-invitation-photo img'
-     ];
-     const results=[];
+   // Force eagerly loading offscreen pictures before verifying them.
+   // img.decode() can wait forever on browser-lazy images that have not been
+   // requested. A bounded wait prevents a stuck GitHub Actions runner.
+   const selectors=[
+     '#eveningLanding .du-evening-landing-photo img',
+     '#eveningLanding .du-story-dinner-photo img',
+     '#evening .du-story-after-photo img',
+     '#evening .du-evening-together > img',
+     '#evening .du-evening-invitation-photo img'
+   ];
+   await page.evaluate(selectors=>{
      for(const sel of selectors){
        const img=document.querySelector(sel);
-       let error='';
-       try{await img.decode()}catch(e){error=e.message||String(e)}
-       results.push({selector:sel,url:img.currentSrc||img.src,
-         width:img.naturalWidth,height:img.naturalHeight,complete:img.complete,error});
+       if(!img)throw new Error('Missing approved image: '+sel);
+       img.loading='eager';
      }
-     return results;
-   });
+   },selectors);
+   await page.waitForFunction(selectors=>
+     selectors.every(sel=>{
+       const img=document.querySelector(sel);
+       return img && img.complete;
+     }),selectors,{timeout:12000});
+   const imageHealth=await page.evaluate(selectors=>
+     selectors.map(sel=>{
+       const img=document.querySelector(sel);
+       return {selector:sel,url:img.currentSrc||img.src,
+         width:img.naturalWidth,height:img.naturalHeight,complete:img.complete};
+     }),selectors);
    for(const photo of imageHealth){
-     assert(photo.complete && !photo.error && photo.width>=100 && photo.height>=100,
+     assert(photo.complete && photo.width>=100 && photo.height>=100,
        scenario.name+': editorial photograph did not load/decode: '+JSON.stringify(photo));
    }
    assert(story.hero.includes('our-evening-hero-hq.avif'),'approved first scene changed');
