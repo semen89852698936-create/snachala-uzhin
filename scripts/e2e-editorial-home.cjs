@@ -157,8 +157,34 @@ const {chromium}=require('playwright');
      'Copy must be transparent and sit directly over the photograph');
    assert.equal(photoCover.underline,'rgb(164, 32, 59)',
      'Reference wine-red underline is missing');
-   assert(photoCover.paperClip.startsWith('polygon('),
-     'Live CTA must have a torn paper edge, not a rounded rectangle: '+JSON.stringify(photoCover));
+   assert.equal(photoCover.paperClip,'none',
+     'Old polygon cutout must be replaced by irregular fibre mask: '+JSON.stringify(photoCover));
+   const organicPaper=await page.evaluate(()=>{
+     const button=document.querySelector('#homeView .du-hero-actions .du-btn-primary');
+     const outline=document.querySelector('#homeView .du-hero-actions .du-btn-outline');
+     const note=document.querySelector('#homeView .du-hero-side-note');
+     const photo=document.querySelector('#homeView .du-hero-art');
+     const mask=el=>getComputedStyle(el).maskImage||getComputedStyle(el).webkitMaskImage;
+     const grain=el=>getComputedStyle(el).backgroundImage;
+     const bottom=getComputedStyle(photo,'::after');
+     return {
+       paperButton:mask(button),paperOutline:mask(outline),
+       paperNote:mask(note),
+       buttonGrain:grain(button),noteGrain:grain(note),
+       bottomImage:bottom.backgroundImage,bottomClip:bottom.clipPath,
+       bottomHeight:parseFloat(bottom.height)
+     };
+   });
+   for(const key of ['paperButton','paperOutline','paperNote']){
+     assert(organicPaper[key].includes('editorial-paper-tear-mask-20261108.svg'),
+       key+' must have a genuine organic torn-paper silhouette: '+JSON.stringify(organicPaper));
+   }
+   assert(organicPaper.buttonGrain.includes('editorial-paper-fibres-20261108.svg') &&
+     organicPaper.noteGrain.includes('editorial-paper-fibres-20261108.svg'),
+     'Approved papery fibre texture must be visible on both buttons and explanation panel');
+   assert(organicPaper.bottomImage.includes('editorial-paper-torn-bottom-20261108.svg') &&
+      organicPaper.bottomClip==='none'&&organicPaper.bottomHeight>=40,
+     'Lower photograph must end in a fibrous torn-paper sheet, not a geometric wave: '+JSON.stringify(organicPaper));
    assert.equal(photoCover.paperColor,'rgb(255, 240, 221)',
      'CTA must use real ivory parchment color');
    const balance=await page.evaluate(()=>{
