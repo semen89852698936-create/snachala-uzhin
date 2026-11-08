@@ -1,5 +1,11 @@
 name: Airfryer 100 photo parity
 on:
+  push:
+    branches:
+      - 'qa/airfryer-photo-parity-rebased-20261108'
+    paths:
+      - '.github/workflows/airfryer-photo-parity.yml'
+      - 'scripts/test-airfryer-photo-parity.cjs'
   pull_request:
     paths:
       - 'assets/airfryer/**'
