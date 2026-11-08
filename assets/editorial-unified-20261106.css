@@ -3332,7 +3332,7 @@ body:not(.du-evening-mode) .demo-strip{display:none;}
   padding-bottom:clamp(26px,2.6vw,36px);
 }
 @media(max-width:760px){
-  #homeView .du-hero-art .du-hero-side-note{padding-top:27px;padding-bottom:42px;}
+  #homeView .du-hero-art .du-hero-side-note{padding-top:19px;padding-bottom:26px;}
 }
 
 
@@ -3346,4 +3346,16 @@ body:not(.du-evening-mode) .demo-strip{display:none;}
     -webkit-mask-position:0 -16px;
     mask-position:0 -16px;
   }
+}
+
+/* MOBILE_PANEL_INTERIOR_SAFE_TORN_MASK_20261108
+   Separate compact ripped paper silhouette for the narrow text panel:
+   edges remain irregular, but cannot crop prose or collide with controls. */
+#homeView .du-hero-art .du-hero-side-note{
+  -webkit-mask-image:url('/assets/editorial-paper-panel-mask-20261108.svg');
+  mask-image:url('/assets/editorial-paper-panel-mask-20261108.svg');
+  -webkit-mask-position:0 0;
+  mask-position:0 0;
+  -webkit-mask-size:100% 100%;
+  mask-size:100% 100%;
 }
