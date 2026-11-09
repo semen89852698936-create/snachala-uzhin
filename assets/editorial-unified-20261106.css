@@ -5003,3 +5003,576 @@ body .du-mood .du-mood-check{
     height:34px;
   }
 }
+
+
+/* CATALOG_REFERENCE_LAYOUT_20261109
+   Faithful live catalog composition based on the owner's LAST approved
+   mockup: wine feature header, cream editorial filter sheet, actual newsprint
+   scraps, asymmetrical photo grid and torn parchment caption panels.
+   Purely presentational. Original 1001 recipe dataset, category text, filter
+   event handlers, favorites, image source paths and recipe interactions intact. */
+#homeView #catalog.du-catalog{
+  position:relative;
+  isolation:isolate;
+  margin:0;
+  padding:0 0 clamp(74px,7vw,118px);
+  background:#fff6ec;
+  background-image:radial-gradient(ellipse at 50% 40%,#fffaf4 0%,#f9f1e9 78%,#f5e7db 100%);
+  scroll-margin-top:83px;
+  overflow:hidden;
+}
+#homeView #catalog.du-catalog::before{
+  content:"";
+  position:absolute;
+  z-index:-1;
+  inset:0 0 auto;
+  height:clamp(225px,20vw,277px);
+  background:
+    radial-gradient(ellipse at 76% 18%,rgba(175,96,91,.45),transparent 51%),
+    radial-gradient(ellipse at 18% 93%,rgba(77,20,32,.45),transparent 59%),
+    linear-gradient(106deg,#35131b 0%,#51202a 45%,#76323b 79%,#491922 100%);
+}
+#homeView #catalog.du-catalog>.container{
+  position:relative;
+  display:grid;
+  grid-template-columns:minmax(0,1fr);
+  gap:0;
+  width:min(1510px,calc(100% - clamp(34px,8vw,140px)));
+  max-width:none;
+}
+#homeView #catalog .du-section-top{grid-row:1}
+#homeView #catalog .search-panel{grid-row:2}
+#homeView #catalog #categoryFilters{grid-row:3}
+#homeView #catalog .du-ingredient-search-tip{grid-row:4}
+#homeView #catalog .du-pantry-toolbar{grid-row:5}
+#homeView #catalog .result-line{grid-row:6}
+#homeView #catalog #recipeGrid{grid-row:7}
+#homeView #catalog .du-more-wrap{grid-row:8}
+#homeView #catalog .empty-state{grid-row:9}
+
+/* Masthead sits ON burgundy, not below it. */
+#homeView #catalog .du-section-top{
+  position:relative;
+  z-index:1;
+  display:block;
+  min-height:clamp(216px,19vw,270px);
+  margin:0!important;
+  padding:clamp(24px,2.6vw,37px) clamp(13px,2vw,28px) 32px;
+  border:0!important;
+  background:transparent;
+}
+#homeView #catalog .du-section-top .du-eyebrow{
+  color:#fff0e9;
+  font:700 13px/1.4 var(--du-magazine-sans);
+  letter-spacing:.28em;
+  margin-bottom:12px;
+}
+#homeView #catalog .du-section-top .du-eyebrow::before{
+  content:"";
+  display:inline-block;
+  width:25px;
+  height:1px;
+  background:#fff0e9;
+  vertical-align:middle;
+  margin-right:16px;
+}
+#homeView #catalog .du-section-heading{
+  display:grid;
+  grid-template-columns:minmax(0,.96fr) minmax(0,.9fr);
+  gap:clamp(22px,3.5vw,65px);
+  align-items:center;
+}
+#homeView #catalog .du-section-heading h2{
+  max-width:none;
+  margin:0;
+  font:italic 400 clamp(47px,5.2vw,89px)/.88 var(--du-magazine-serif);
+  letter-spacing:-.047em;
+  color:#fff6ef!important;
+  text-wrap:balance;
+}
+#homeView #catalog .du-section-heading h2 em{
+  display:inline-block;
+  color:#df96a6!important;
+  font-weight:400;
+}
+#homeView #catalog .du-section-heading p{
+  position:relative;
+  display:block;
+  border-left:1px solid rgba(255,240,235,.6);
+  max-width:46ch;
+  margin:0;
+  padding:0 0 0 clamp(20px,3vw,52px);
+  font:400 clamp(15px,1.12vw,18px)/1.62 var(--du-magazine-sans);
+  letter-spacing:0;
+  color:#fff1e9!important;
+}
+
+/* The approved pale paper sheet forms one visual element across the real controls. */
+#homeView #catalog .search-panel{
+  position:relative;
+  z-index:2;
+  display:flex;
+  align-items:center;
+  flex-wrap:wrap;
+  gap:clamp(10px,1.45vw,24px);
+  margin:-20px 0 0;
+  padding:clamp(16px,1.7vw,26px) clamp(18px,2.2vw,35px) 10px;
+  border:1px solid #e1c9b9!important;
+  border-bottom:0!important;
+  border-radius:15px 15px 0 0!important;
+  box-shadow:0 -4px 14px rgba(52,23,30,.12);
+  background:#fff0e3!important;
+}
+#homeView #catalog .search-panel .search-wrap{
+  flex:1 1 310px;
+  min-width:220px;
+  min-height:49px;
+  border:1px solid #d5a999!important;
+  border-radius:13px;
+  background:#f9eae0;
+  padding:0 18px;
+}
+#homeView #catalog .search-panel .search-icon{
+  font-size:29px;
+  color:#841f3b;
+}
+#homeView #catalog #recipeSearch{
+  min-width:130px;
+  font-size:15px;
+  color:#6a2637;
+}
+#homeView #catalog .search-panel #cuisineFilter,
+#homeView #catalog .search-panel .filter-button{
+  flex:0 0 auto;
+  min-height:49px;
+  padding:0 18px;
+  background:#f9eae0;
+  border:1px solid #d9b6a7;
+  border-radius:12px;
+  color:#6e1d32;
+  font:600 clamp(12px,1.05vw,15px)/1.25 var(--du-magazine-sans);
+  white-space:nowrap;
+}
+#homeView #catalog .search-panel .filter-button[aria-pressed="true"]{
+  background:#7b2037;
+  border-color:#7b2037;
+  color:#fff6e8;
+}
+#homeView #catalog #categoryFilters{
+  position:relative;
+  display:flex;
+  justify-content:flex-start;
+  align-items:center;
+  overflow-x:auto;
+  overflow-y:hidden;
+  padding:8px clamp(16px,1.9vw,30px) 7px;
+  margin:0;
+  gap:clamp(8px,1.1vw,17px);
+  border:1px solid #e1c9b9;
+  border-top:0;
+  border-bottom:0;
+  background:#fff0e3;
+  scrollbar-width:thin;
+  scrollbar-color:#b88881 transparent;
+  scroll-padding-inline:20px;
+}
+#homeView #catalog #categoryFilters>.chip{
+  position:relative;
+  flex:0 0 auto;
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  gap:8px;
+  white-space:nowrap;
+  min-height:69px;
+  padding:15px 20px 18px;
+  border:0!important;
+  border-radius:0!important;
+  background-color:#f0d9c0;
+  background-image:
+    url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22300%22%20height%3D%2284%22%20viewBox%3D%220%200%20300%2084%22%3E%0A%3Crect%20width%3D%22300%22%20height%3D%2284%22%20fill%3D%22none%22%2F%3E%0A%3Cg%20fill%3D%22%23705745%22%20opacity%3D%22.34%22%20font-family%3D%22Georgia%2Cserif%22%20font-size%3D%227%22%20text-anchor%3D%22start%22%3E%0A%3Ctext%20x%3D%2214%22%20y%3D%2210%22%3E%D0%92%D0%95%D0%A7%D0%95%D0%A0%D0%9D%D0%AF%D0%AF%20%D0%93%D0%90%D0%97%D0%95%D0%A2%D0%90%20%20%20%E2%84%96%2042%3C%2Ftext%3E%3Ctext%20x%3D%22130%22%20y%3D%2210%22%3E%D0%9D%D0%90%D0%A8%D0%98%20%D0%98%D0%A1%D0%A2%D0%9E%D0%A0%D0%98%D0%98%20%20%2F%20%20%D0%9A%D0%A3%D0%9B%D0%AC%D0%A2%D0%A3%D0%A0%D0%90%3C%2Ftext%3E%0A%3Ctext%20x%3D%2215%22%20y%3D%2222%22%3E%D0%9A%D0%A3%D0%9B%D0%98%D0%9D%D0%90%D0%A0%D0%9D%D0%90%D0%AF%20%D0%9A%D0%9E%D0%9B%D0%9B%D0%95%D0%9A%D0%A6%D0%98%D0%AF%3C%2Ftext%3E%3Ctext%20x%3D%22130%22%20y%3D%2222%22%3E%D0%A0%D0%95%D0%A6%D0%95%D0%9F%D0%A2%D0%AB%20%D0%98%20%D0%A2%D0%A0%D0%90%D0%94%D0%98%D0%A6%D0%98%D0%98%3C%2Ftext%3E%0A%3C%2Fg%3E%0A%3Cg%20stroke%3D%22%23755a48%22%20stroke-width%3D%221%22%20opacity%3D%22.18%22%3E%0A%3Cpath%20d%3D%22M13%2029h88M13%2034h94M13%2039h76M13%2044h92M13%2049h84M13%2054h94M13%2059h75M13%2064h92M13%2069h80%22%2F%3E%0A%3Cpath%20d%3D%22M126%2029h91M126%2034h84M126%2039h88M126%2044h97M126%2049h80M126%2054h91M126%2059h91M126%2064h86M126%2069h94%22%2F%3E%0A%3Cpath%20d%3D%22M238%2029h50M238%2034h48M238%2039h48M238%2044h50M238%2049h42M238%2054h48M238%2059h48M238%2064h50M238%2069h44%22%2F%3E%0A%3C%2Fg%3E%3C%2Fsvg%3E"),
+    url('/assets/editorial-paper-fibres-20261108.svg'),
+    linear-gradient(104deg,#f0deca,#fbefdc 54%,#e6c8ac);
+  background-size:230px 64px,125px 125px,cover;
+  background-position:center,center,center;
+  background-repeat:repeat,repeat,no-repeat;
+  color:#681a31;
+  font:600 clamp(16px,1.25vw,20px)/1.1 var(--du-magazine-serif);
+  letter-spacing:-.005em;
+  -webkit-mask-image:url('/assets/editorial-paper-tear-mask-20261108.svg');
+  mask-image:url('/assets/editorial-paper-tear-mask-20261108.svg');
+  -webkit-mask-size:100% 100%;
+  mask-size:100% 100%;
+  -webkit-mask-repeat:no-repeat;
+  mask-repeat:no-repeat;
+  filter:drop-shadow(0 3px 3px rgba(82,44,34,.24));
+  transition:filter .2s ease,transform .2s ease;
+}
+#homeView #catalog #categoryFilters>.chip::before{
+  content:"✳";
+  display:block;
+  flex:none;
+  font:500 19px/1 Georgia,serif;
+  color:inherit;
+}
+#homeView #catalog #categoryFilters>.chip[data-filter="all"]::before{content:"▦"}
+#homeView #catalog #categoryFilters>.chip[data-filter="meat"]::before{content:"♨"}
+#homeView #catalog #categoryFilters>.chip[data-filter="poultry"]::before{content:"✥"}
+#homeView #catalog #categoryFilters>.chip[data-filter="fish"]::before{content:"♧"}
+#homeView #catalog #categoryFilters>.chip[data-filter="pasta"]::before{content:"✣"}
+#homeView #catalog #categoryFilters>.chip[data-filter="vegetables"]::before{content:"❧"}
+#homeView #catalog #categoryFilters>.chip[data-filter="pastry"]::before{content:"✿"}
+#homeView #catalog #categoryFilters>.chip[data-filter="soup"]::before{content:"♨"}
+#homeView #catalog #categoryFilters>.chip[data-filter="salads"]::before{content:"❦"}
+#homeView #catalog #categoryFilters>.chip[data-filter="dessert"]::before{content:"♜"}
+#homeView #catalog #categoryFilters>.chip[data-filter="breakfast"]::before{content:"☼"}
+#homeView #catalog #categoryFilters>.chip[data-filter="airfryer"]::before{content:"♨"}
+#homeView #catalog #categoryFilters>.chip[data-filter="bonus"]::before{content:"✳"}
+#homeView #catalog #categoryFilters>.chip[aria-pressed="true"]{
+  color:#fff8f0!important;
+  background-color:#701329!important;
+  background-image:
+    url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22300%22%20height%3D%2284%22%20viewBox%3D%220%200%20300%2084%22%3E%0A%3Crect%20width%3D%22300%22%20height%3D%2284%22%20fill%3D%22none%22%2F%3E%0A%3Cg%20fill%3D%22%23705745%22%20opacity%3D%22.34%22%20font-family%3D%22Georgia%2Cserif%22%20font-size%3D%227%22%20text-anchor%3D%22start%22%3E%0A%3Ctext%20x%3D%2214%22%20y%3D%2210%22%3E%D0%92%D0%95%D0%A7%D0%95%D0%A0%D0%9D%D0%AF%D0%AF%20%D0%93%D0%90%D0%97%D0%95%D0%A2%D0%90%20%20%20%E2%84%96%2042%3C%2Ftext%3E%3Ctext%20x%3D%22130%22%20y%3D%2210%22%3E%D0%9D%D0%90%D0%A8%D0%98%20%D0%98%D0%A1%D0%A2%D0%9E%D0%A0%D0%98%D0%98%20%20%2F%20%20%D0%9A%D0%A3%D0%9B%D0%AC%D0%A2%D0%A3%D0%A0%D0%90%3C%2Ftext%3E%0A%3Ctext%20x%3D%2215%22%20y%3D%2222%22%3E%D0%9A%D0%A3%D0%9B%D0%98%D0%9D%D0%90%D0%A0%D0%9D%D0%90%D0%AF%20%D0%9A%D0%9E%D0%9B%D0%9B%D0%95%D0%9A%D0%A6%D0%98%D0%AF%3C%2Ftext%3E%3Ctext%20x%3D%22130%22%20y%3D%2222%22%3E%D0%A0%D0%95%D0%A6%D0%95%D0%9F%D0%A2%D0%AB%20%D0%98%20%D0%A2%D0%A0%D0%90%D0%94%D0%98%D0%A6%D0%98%D0%98%3C%2Ftext%3E%0A%3C%2Fg%3E%0A%3Cg%20stroke%3D%22%23755a48%22%20stroke-width%3D%221%22%20opacity%3D%22.18%22%3E%0A%3Cpath%20d%3D%22M13%2029h88M13%2034h94M13%2039h76M13%2044h92M13%2049h84M13%2054h94M13%2059h75M13%2064h92M13%2069h80%22%2F%3E%0A%3Cpath%20d%3D%22M126%2029h91M126%2034h84M126%2039h88M126%2044h97M126%2049h80M126%2054h91M126%2059h91M126%2064h86M126%2069h94%22%2F%3E%0A%3Cpath%20d%3D%22M238%2029h50M238%2034h48M238%2039h48M238%2044h50M238%2049h42M238%2054h48M238%2059h48M238%2064h50M238%2069h44%22%2F%3E%0A%3C%2Fg%3E%3C%2Fsvg%3E"),
+    linear-gradient(95deg,#7b1d34,#8e233f 50%,#641122)!important;
+  border:0!important;
+  filter:drop-shadow(0 4px 4px rgba(94,25,35,.25));
+}
+#homeView #catalog #categoryFilters>.chip:hover{
+  filter:drop-shadow(0 6px 5px rgba(96,35,47,.3));
+  transform:translateY(-2px);
+}
+#homeView #catalog #categoryFilters>.chip:focus-visible{
+  outline:3px solid #7c1c33!important;
+  outline-offset:2px;
+}
+#homeView #catalog .du-ingredient-search-tip{
+  position:relative;
+  display:block;
+  margin:0;
+  padding:9px clamp(21px,2.1vw,36px) 23px;
+  border:1px solid #e1c9b9;
+  border-top:0;
+  border-radius:0 0 12px 12px;
+  box-shadow:0 9px 14px rgba(83,41,31,.09);
+  background:#fff0e3;
+  color:#8a5462;
+  font:500 clamp(12px,1.02vw,14px)/1.6 var(--du-magazine-sans);
+}
+#homeView #catalog .du-pantry-toolbar{
+  margin:14px 0 0;
+  min-width:0;
+}
+#homeView #catalog .result-line{
+  display:flex;
+  flex-wrap:wrap;
+  align-items:baseline;
+  justify-content:space-between;
+  gap:18px;
+  margin:25px 0 18px;
+  padding:0;
+  border:0;
+  background:transparent;
+  color:#804657;
+  font:500 14px/1.3 var(--du-magazine-sans);
+}
+#homeView #catalog .result-line span:first-child{
+  color:#811d39;
+  font:500 clamp(31px,3vw,42px)/1.1 var(--du-magazine-serif);
+  letter-spacing:-.025em;
+}
+#homeView #catalog .result-line span:last-child{
+  font:500 clamp(12px,1vw,15px)/1.4 var(--du-magazine-sans);
+  letter-spacing:0;
+  color:#8d6670;
+}
+#homeView #catalog #recipeGrid.recipe-grid{
+  display:grid;
+  grid-template-columns:repeat(12,minmax(0,1fr));
+  grid-template-rows:235px 235px;
+  grid-auto-rows:auto;
+  grid-auto-flow:row;
+  gap:14px;
+  align-items:stretch;
+  margin:0;
+}
+#homeView #catalog #recipeGrid>.recipe-card{
+  min-width:0;
+  min-height:0;
+  display:flex;
+  position:relative;
+  flex-direction:column;
+  padding:0;
+  background:#fff4e9;
+  border:1px solid #ead5c3;
+  border-radius:10px;
+  box-shadow:0 5px 11px rgba(85,43,39,.045);
+  overflow:hidden;
+  transform:none;
+  isolation:isolate;
+}
+#homeView #catalog #recipeGrid>.recipe-card:nth-child(1){
+  grid-area:1 / 1 / span 2 / span 5;
+}
+#homeView #catalog #recipeGrid>.recipe-card:nth-child(2){
+  grid-area:1 / 6 / span 1 / span 4;
+}
+#homeView #catalog #recipeGrid>.recipe-card:nth-child(3){
+  grid-area:1 / 10 / span 1 / span 3;
+}
+#homeView #catalog #recipeGrid>.recipe-card:nth-child(4){
+  grid-area:2 / 6 / span 1 / span 2;
+}
+#homeView #catalog #recipeGrid>.recipe-card:nth-child(5){
+  grid-area:2 / 8 / span 1 / span 2;
+}
+#homeView #catalog #recipeGrid>.recipe-card:nth-child(6){
+  grid-area:2 / 10 / span 1 / span 3;
+}
+#homeView #catalog #recipeGrid>.recipe-card:nth-child(n+7){
+  grid-column:span 4;
+}
+#homeView #catalog #recipeGrid>.recipe-card .card-image{
+  position:relative;
+  flex:none;
+  height:clamp(142px,15vw,218px);
+  overflow:hidden;
+  -webkit-mask-image:none;
+  mask-image:none;
+}
+#homeView #catalog #recipeGrid>.recipe-card:not(:first-child) .card-image{
+  height:105px;
+}
+#homeView #catalog #recipeGrid>.recipe-card:first-child .card-image{
+  height:clamp(270px,30vw,345px);
+}
+#homeView #catalog #recipeGrid>.recipe-card .card-image .food-photo{
+  object-fit:cover;
+}
+#homeView #catalog #recipeGrid>.recipe-card .card-body{
+  position:relative;
+  z-index:2;
+  min-width:0;
+  min-height:0;
+  padding:20px 18px 17px;
+  margin-top:-13px;
+  display:flex;
+  flex:1;
+  flex-direction:column;
+  gap:0;
+  color:#5c4045;
+  border:0;
+  background:
+    url('/assets/editorial-paper-fibres-20261108.svg'),
+    linear-gradient(130deg,#fff7ec,#f8e7d8);
+  background-size:145px 145px,cover;
+  border-radius:0;
+  clip-path:polygon(0 4%,5% 2.5%,11% 4%,17% 1.6%,22% 3.5%,28% 1%,34% 3%,40% 1.5%,46% 4%,52% 2%,58% 3.5%,65% 1%,72% 3%,79% 1%,86% 2.8%,94% 1.4%,100% 3%,100% 100%,0 100%);
+  -webkit-mask-image:none;
+  mask-image:none;
+}
+#homeView #catalog #recipeGrid>.recipe-card:not(:first-child) .card-body{
+  padding:15px 13px 10px;
+  margin-top:-9px;
+}
+#homeView #catalog #recipeGrid>.recipe-card .card-meta{
+  color:#955166;
+  font-size:10px;
+  letter-spacing:.02em;
+  line-height:1.1;
+  margin-bottom:2px;
+}
+#homeView #catalog #recipeGrid>.recipe-card .card-body h3{
+  min-height:0;
+  margin:2px 0 6px;
+  font:500 clamp(22px,2vw,32px)/1.04 var(--du-magazine-serif);
+  letter-spacing:-.024em;
+  color:#7c1d36;
+  text-wrap:balance;
+  overflow-wrap:anywhere;
+}
+#homeView #catalog #recipeGrid>.recipe-card:not(:first-child) .card-body h3{
+  font-size:clamp(18px,1.6vw,25px);
+  line-height:1.04;
+  display:-webkit-box;
+  -webkit-box-orient:vertical;
+  -webkit-line-clamp:2;
+  line-clamp:2;
+  overflow:hidden;
+}
+#homeView #catalog #recipeGrid>.recipe-card:first-child .card-body h3{
+  font-size:clamp(32px,3.1vw,47px);
+  margin:4px 0 9px;
+}
+#homeView #catalog #recipeGrid>.recipe-card .card-body p{
+  font:400 clamp(12px,1vw,15px)/1.42 var(--du-magazine-sans);
+  margin:0 0 8px;
+  color:#634a4b;
+  min-height:0;
+  display:-webkit-box;
+  -webkit-box-orient:vertical;
+  -webkit-line-clamp:2;
+  line-clamp:2;
+  overflow:hidden;
+}
+#homeView #catalog #recipeGrid>.recipe-card:not(:first-child) .card-body p{
+  font-size:clamp(11px,.86vw,13px);
+  -webkit-line-clamp:2;
+  line-clamp:2;
+}
+#homeView #catalog #recipeGrid>.recipe-card .card-footer{
+  margin-top:auto;
+  padding-top:8px;
+  border-top:1px solid #cda9a1;
+  color:#6d1c35;
+  font-size:11px;
+}
+#homeView #catalog #recipeGrid>.recipe-card:first-child .card-footer{
+  font-size:13px;
+}
+#homeView #catalog #recipeGrid>.recipe-card .card-footer b{
+  color:#7a1b35;
+  font-size:inherit;
+}
+#homeView #catalog #recipeGrid>.recipe-card:first-child::before{
+  content:"✳  РЕЦЕПТ НЕДЕЛИ";
+  position:absolute;
+  left:17px;
+  top:16px;
+  z-index:5;
+  padding:12px 16px;
+  background:#76182d;
+  color:#fff7ed;
+  font:800 11px/1 var(--du-magazine-sans);
+  letter-spacing:.14em;
+  box-shadow:0 6px 13px rgba(41,11,19,.12);
+  pointer-events:none;
+}
+#homeView #catalog #recipeGrid>.recipe-card .card-time{
+  background:#f7e9df;
+  color:#7d1e38;
+  border-radius:50px;
+  font-size:11px;
+  padding:6px 9px;
+}
+#homeView #catalog #recipeGrid>.recipe-card:first-child .card-time{bottom:14px}
+#homeView #catalog #recipeGrid>.recipe-card .fav-floating{
+  z-index:6;
+  width:40px;
+  height:40px;
+  border-radius:50%;
+  color:#861e3d;
+  background:rgba(255,244,235,.94);
+}
+#homeView #catalog #recipeGrid>.recipe-card:hover{
+  box-shadow:0 11px 22px rgba(96,42,49,.14);
+  transform:translateY(-2px);
+}
+#homeView #catalog #recipeGrid>.recipe-card:focus-visible{outline:3px solid #882d43;outline-offset:3px}
+
+/* Tablets keep the feature card, but return to a predictable two-track flow. */
+@media(max-width:1180px) and (min-width:761px){
+  #homeView #catalog #recipeGrid.recipe-grid{
+    grid-template-columns:repeat(2,minmax(0,1fr));
+    grid-template-rows:auto;
+  }
+  #homeView #catalog #recipeGrid>.recipe-card:nth-child(n){
+    grid-column:auto;
+    grid-row:auto;
+    grid-area:auto;
+  }
+  #homeView #catalog #recipeGrid>.recipe-card:first-child{grid-column:span 2}
+  #homeView #catalog #recipeGrid>.recipe-card:not(:first-child) .card-image{height:clamp(160px,18vw,240px)}
+  #homeView #catalog #recipeGrid>.recipe-card:not(:first-child) .card-body{padding:22px 20px 18px}
+  #homeView #catalog #recipeGrid>.recipe-card:not(:first-child) .card-body h3{font-size:clamp(24px,2.5vw,36px)}
+}
+@media(max-width:760px){
+  #homeView #catalog.du-catalog{scroll-margin-top:62px}
+  #homeView #catalog.du-catalog::before{height:290px}
+  #homeView #catalog.du-catalog>.container{width:calc(100% - 26px)}
+  #homeView #catalog .du-section-top{
+    min-height:284px;
+    padding:23px 9px 27px;
+  }
+  #homeView #catalog .du-section-heading{
+    grid-template-columns:minmax(0,1fr);
+    gap:15px;
+    align-items:start;
+  }
+  #homeView #catalog .du-section-heading h2{
+    font-size:clamp(43px,10vw,69px);
+    line-height:.89;
+  }
+  #homeView #catalog .du-section-heading p{
+    padding-left:14px;
+    font-size:14px;
+    max-width:50ch;
+  }
+  #homeView #catalog .search-panel{
+    margin-top:-9px;
+    padding:14px 13px 8px;
+    gap:9px;
+  }
+  #homeView #catalog .search-panel .search-wrap{
+    min-height:49px;
+    flex:1 1 100%;
+  }
+  #homeView #catalog .search-panel #cuisineFilter,
+  #homeView #catalog .search-panel .filter-button{
+    min-height:44px;
+    flex:1 1 auto;
+    font-size:12px;
+  }
+  #homeView #catalog #categoryFilters{
+    padding:6px 10px 8px;
+    gap:6px;
+  }
+  #homeView #catalog #categoryFilters>.chip{
+    min-height:54px;
+    padding:12px 15px 14px;
+    gap:6px;
+    font-size:16px;
+  }
+  #homeView #catalog #categoryFilters>.chip::before{font-size:16px}
+  #homeView #catalog .du-ingredient-search-tip{
+    font-size:12px;
+    padding:9px 15px 14px;
+  }
+  #homeView #catalog .result-line{
+    margin:22px 0 15px;
+    gap:8px;
+  }
+  #homeView #catalog #recipeGrid.recipe-grid{
+    grid-template-columns:minmax(0,1fr);
+    grid-template-rows:auto;
+    gap:15px;
+  }
+  #homeView #catalog #recipeGrid>.recipe-card:nth-child(n){
+    grid-column:auto;
+    grid-row:auto;
+    grid-area:auto;
+  }
+  #homeView #catalog #recipeGrid>.recipe-card .card-image,
+  #homeView #catalog #recipeGrid>.recipe-card:not(:first-child) .card-image{
+    height:clamp(195px,57vw,330px);
+  }
+  #homeView #catalog #recipeGrid>.recipe-card:first-child .card-image{
+    height:clamp(260px,70vw,420px);
+  }
+  #homeView #catalog #recipeGrid>.recipe-card .card-body,
+  #homeView #catalog #recipeGrid>.recipe-card:not(:first-child) .card-body{
+    margin-top:-15px;
+    padding:23px 18px 20px;
+  }
+  #homeView #catalog #recipeGrid>.recipe-card .card-body h3,
+  #homeView #catalog #recipeGrid>.recipe-card:not(:first-child) .card-body h3{
+    font-size:clamp(28px,6.7vw,38px);
+  }
+  #homeView #catalog #recipeGrid>.recipe-card .card-body p,
+  #homeView #catalog #recipeGrid>.recipe-card:not(:first-child) .card-body p{
+    font-size:14px;
+  }
+}
+@media(prefers-reduced-motion:reduce){
+ #homeView #catalog #categoryFilters>.chip,
+ #homeView #catalog #recipeGrid>.recipe-card{transition:none!important}
+}
