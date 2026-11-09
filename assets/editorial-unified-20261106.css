@@ -4173,3 +4173,38 @@ body.du-evening-mode #music .du-music-heading .du-section-heading > p {
     background-size:100% 100%!important;
   }
 }
+
+
+/* RAISE_APPROVED_DINNER_BED_RIGHT_MARKER_20261109
+   Only the owner's two adjustments: lift the exact approved photo
+   banner slightly and visually connect its RIGHT edge to the music
+   section above with a single bold marker-like stroke.
+   No change to the image, printed lettering or other page sections. */
+#homeView > .du-photo-break{
+  position:relative;
+  z-index:4;
+  margin-top:-22px!important;
+}
+#homeView > .du-photo-break::after{
+  content:"";
+  position:absolute;
+  right:clamp(18px,4.2vw,70px);
+  top:clamp(-162px,-11vw,-120px);
+  width:clamp(90px,9vw,140px);
+  height:clamp(180px,17vw,245px);
+  background:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20140%20245%22%3E%3Cpath%20d%3D%22M116%209%20C130%2040%20125%2058%2091%2087%20C65%20110%20109%20138%2092%20162%20C74%20190%2056%20207%2044%20238%22%20fill%3D%22none%22%20stroke%3D%22%2384253a%22%20stroke-width%3D%2217%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%20opacity%3D%22.94%22%2F%3E%3Cpath%20d%3D%22M116%2010%20C127%2042%20122%2060%2091%2087%20C68%20111%20106%20139%2091%20164%20C75%20188%2058%20210%2045%20237%22%20fill%3D%22none%22%20stroke%3D%22%23ba5960%22%20stroke-width%3D%224%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%20opacity%3D%22.34%22%2F%3E%3Cpath%20d%3D%22M115%2015%20C124%2041%20120%2058%2093%2083%22%20fill%3D%22none%22%20stroke%3D%22%234f192e%22%20stroke-width%3D%222.5%22%20stroke-linecap%3D%22round%22%20opacity%3D%22.25%22%2F%3E%3C%2Fsvg%3E") center / 100% 100% no-repeat;
+  pointer-events:none;
+  opacity:.94;
+  z-index:5;
+}
+@media(max-width:760px){
+  #homeView > .du-photo-break{
+    margin-top:-12px!important;
+  }
+  #homeView > .du-photo-break::after{
+    right:8px;
+    top:-96px;
+    width:68px;
+    height:142px;
+  }
+}
