@@ -4800,3 +4800,14 @@ body .du-mood .du-mood-check{
   outline:3px solid #fff4e6!important;
   outline-offset:2px!important;
 }
+
+/* BONUS_APPROVED_MOBILE_TAP_SIZE_20261109
+   The approved 3:1 picture stays untouched. Only the invisible hit
+   target gets a 44px touch area on smaller screens. */
+@media(max-width:760px){
+  #homeView .du-bonus #bonusRecipe{
+    top:calc(55.5% - 14px)!important;
+    height:44px!important;
+    min-height:44px!important;
+  }
+}
