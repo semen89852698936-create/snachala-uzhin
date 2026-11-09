@@ -4461,3 +4461,185 @@ body :is(
 }
 /* The two previously approved cover CTAs and ten approved printed photo
    buttons keep their original graphics, not another paper layer. */
+
+
+/* PAPER_BUTTON_LABEL_SAFETY_20261109
+   Fix real browser QA failures: labels must NEVER be alpha-masked.
+   Mask only a separate paper pseudo-element behind each action;
+   leave clickable text, SVG/icons, focus and shopping badge intact.
+   The ten approved illustrated recipe-category buttons and original
+   two hero CTAs keep their approved designs unchanged. */
+body :is(
+  button:not(.category-card):not(#tryCooking):not(.shopping-open),
+  a.du-btn:not(.du-hero-actions > a),
+  .header .main-nav > a:not([data-nav="evening"]):not([data-nav="airfryer"]),
+  .du-quick-nav-mobile > a,
+  a.du-evening-back,
+  a.du-music-open-spotify
+){
+  position:relative;
+  isolation:isolate;
+  background:transparent!important;
+  background-image:none!important;
+  border:0!important;
+  border-radius:0!important;
+  box-shadow:none!important;
+  -webkit-mask-image:none!important;
+  mask-image:none!important;
+  filter:none!important;
+  color:#6d2339!important;
+}
+body :is(
+  button:not(.category-card):not(#tryCooking):not(.shopping-open),
+  a.du-btn:not(.du-hero-actions > a),
+  .header .main-nav > a:not([data-nav="evening"]):not([data-nav="airfryer"]),
+  .du-quick-nav-mobile > a,
+  a.du-evening-back,
+  a.du-music-open-spotify
+)::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  pointer-events:none;
+  z-index:-1;
+  background-color:#f4e5d2;
+  background-image:linear-gradient(154deg,rgba(255,255,255,.24),rgba(194,149,117,.07)),var(--du-paper-fibre-grain);
+  background-size:100% 100%,192px 192px;
+  background-repeat:no-repeat,repeat;
+  -webkit-mask-image:var(--du-ripped-paper-mask);
+  mask-image:var(--du-ripped-paper-mask);
+  -webkit-mask-size:100% 100%;
+  mask-size:100% 100%;
+  -webkit-mask-repeat:no-repeat;
+  mask-repeat:no-repeat;
+  filter:drop-shadow(0 3px 4px rgba(52,26,23,.14));
+}
+body :is(
+  button:not(.category-card):not(#tryCooking):not(.shopping-open),
+  a.du-btn:not(.du-hero-actions > a),
+  .header .main-nav > a:not([data-nav="evening"]):not([data-nav="airfryer"]),
+  .du-quick-nav-mobile > a,
+  a.du-evening-back,
+  a.du-music-open-spotify
+):is(:hover,:focus-visible)::before{
+  background-color:#fff2e2;
+  filter:drop-shadow(0 4px 7px rgba(52,26,23,.21));
+}
+body :is(
+  button:not(.category-card):not(#tryCooking):not(.shopping-open)[aria-pressed="true"],
+  button:not(.category-card):not(#tryCooking):not(.shopping-open).is-selected,
+  .header .main-nav > a[aria-current="page"]
+)::before{
+  background-color:#e8cfb8;
+}
+body button:not(.category-card):not(#tryCooking):not(.shopping-open):disabled::before{
+  opacity:.5;
+  filter:none;
+}
+body :is(
+  button:not(.category-card):not(#tryCooking):not(.shopping-open),
+  a.du-btn:not(.du-hero-actions > a),
+  .header .main-nav > a:not([data-nav="evening"]):not([data-nav="airfryer"]),
+  .du-quick-nav-mobile > a,
+  a.du-evening-back,
+  a.du-music-open-spotify
+):focus-visible{
+  outline:3px solid #9c4c53!important;
+  outline-offset:3px!important;
+}
+/* Text originally had no padding under the paper mask in the main
+   menu. Add actual room for ink without cropping at 320px. */
+.header .main-nav > a:not([data-nav="evening"]):not([data-nav="airfryer"]){
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  padding:8px clamp(9px,.8vw,13px)!important;
+  min-height:35px;
+  white-space:nowrap;
+}
+a.du-music-open-spotify{
+  padding:11px 18px!important;
+  min-height:43px;
+  text-decoration:underline;
+  text-underline-offset:3px;
+}
+.du-quick-nav-mobile > a,
+a.du-evening-back{
+  padding-inline:17px!important;
+}
+/* The Shopping button already owns its torn-paper ::before.
+   Keep the live quantity badge INSIDE the paper, not above it. */
+body .header .header-actions button.shopping-open:not(#tryCooking){
+  position:relative;
+  isolation:isolate;
+  background:transparent!important;
+  background-image:none!important;
+  border:0!important;
+  border-radius:0!important;
+  -webkit-mask-image:none!important;
+  mask-image:none!important;
+  filter:none!important;
+  overflow:visible!important;
+  padding-inline:14px 36px!important;
+  color:#6d2339!important;
+}
+body .header .header-actions button.shopping-open:not(#tryCooking)::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  z-index:-1;
+  pointer-events:none;
+  background-color:#f2e4d5!important;
+  background-image:var(--du-paper-fibre-grain)!important;
+  background-size:192px 192px!important;
+  -webkit-mask-image:var(--du-ripped-paper-mask)!important;
+  mask-image:var(--du-ripped-paper-mask)!important;
+  -webkit-mask-size:100% 100%!important;
+  mask-size:100% 100%!important;
+  -webkit-mask-repeat:no-repeat!important;
+  mask-repeat:no-repeat!important;
+}
+body .header .header-actions button.shopping-open:not(#tryCooking) .header-count{
+  top:50%!important;
+  right:8px!important;
+  transform:translateY(-50%)!important;
+}
+/* Mobile "Наш вечер" tab has a heart in ::before. Never replace
+   that heart: apply paper to its unoccupied ::after instead. */
+body a.du-evening-nav-mobile:not(#tryCooking){
+  position:relative;
+  isolation:isolate;
+  -webkit-mask-image:none!important;
+  mask-image:none!important;
+  background:transparent!important;
+  border:0!important;
+  padding-inline:16px!important;
+}
+body a.du-evening-nav-mobile:not(#tryCooking)::after{
+  content:"";
+  position:absolute;
+  inset:0;
+  pointer-events:none;
+  z-index:-1;
+  background:#f4e5d2 var(--du-paper-fibre-grain) repeat;
+  -webkit-mask-image:var(--du-ripped-paper-mask);
+  mask-image:var(--du-ripped-paper-mask);
+  -webkit-mask-size:100% 100%;
+  mask-size:100% 100%;
+  -webkit-mask-repeat:no-repeat;
+  mask-repeat:no-repeat;
+}
+/* The remaining internal-screen edge cases from live browser QA:
+   "К каталогу", the four mood cards and time-choice paper labels. */
+body #backCatalog{
+  padding-inline:18px!important;
+}
+body .du-mood::before{
+  -webkit-mask-size:100% 122%!important;
+  mask-size:100% 122%!important;
+  -webkit-mask-position:center!important;
+  mask-position:center!important;
+}
+body .du-time-choices button{
+  padding-inline:20px!important;
+}
