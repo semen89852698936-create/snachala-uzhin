@@ -4846,3 +4846,73 @@ body .du-mood .du-mood-check{
     height:67px;
   }
 }
+
+
+/* BONUS_BUTTON_ACTUAL_HOVER_20261109
+   The approved 1001 artwork now has a clean (button-free) background.
+   Place the exact original 428×108 newspaper-button cutout above it,
+   preserving the existing #bonusRecipe click handler and readable
+   label in the accessibility tree. Only the paper sticker moves. */
+#homeView .du-bonus .bonus-inner{
+  background-image:url('/assets/approved-bonus/bonus-1001-clean-bg-20261109.avif')!important;
+}
+#homeView .du-bonus #bonusRecipe{
+  left:36.17%!important;
+  top:55.10%!important;
+  width:19.70%!important;
+  height:14.92%!important;
+  min-width:0!important;
+  min-height:0!important;
+  padding:0!important;
+  background:transparent!important;
+  background-image:none!important;
+  overflow:visible!important;
+  transform:none!important;
+  filter:none!important;
+}
+#homeView .du-bonus #bonusRecipe::before{
+  display:block!important;
+  content:""!important;
+  position:absolute!important;
+  left:0!important;
+  top:50%!important;
+  width:100%!important;
+  height:auto!important;
+  aspect-ratio:428 / 108;
+  background-color:transparent!important;
+  background-image:url('/assets/approved-bonus/bonus-1001-hover-button-20261109.webp')!important;
+  background-size:100% 100%!important;
+  background-position:center!important;
+  background-repeat:no-repeat!important;
+  border:0!important;
+  border-radius:0!important;
+  box-shadow:none!important;
+  -webkit-mask-image:none!important;
+  mask-image:none!important;
+  transform:translateY(-50%) translateZ(0)!important;
+  transition:transform .24s ease,filter .24s ease!important;
+  filter:drop-shadow(0 4px 5px rgba(30,12,18,.18))!important;
+  z-index:1!important;
+  pointer-events:none!important;
+}
+#homeView .du-bonus #bonusRecipe:hover::before,
+#homeView .du-bonus #bonusRecipe:focus-visible::before{
+  transform:translateY(calc(-50% - 7px)) scale(1.035)!important;
+  filter:drop-shadow(0 11px 9px rgba(30,12,18,.26))!important;
+}
+#homeView .du-bonus #bonusRecipe:active::before{
+  transform:translateY(calc(-50% + 2px)) scale(.985)!important;
+  filter:drop-shadow(0 2px 2px rgba(30,12,18,.17))!important;
+}
+@media(max-width:760px){
+  #homeView .du-bonus #bonusRecipe{
+    top:calc(55.10% - 14px)!important;
+    height:44px!important;
+    min-height:44px!important;
+  }
+}
+@media(prefers-reduced-motion:reduce){
+  #homeView .du-bonus #bonusRecipe::before{
+    transition:none!important;
+  }
+}
