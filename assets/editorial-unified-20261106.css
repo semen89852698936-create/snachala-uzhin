@@ -4110,3 +4110,30 @@ body.du-evening-mode #music .du-music-heading .du-section-heading > p {
     line-height:1.34;
   }
 }
+
+
+/* BREAKFAST_QUOTE_SCROLL_FOCUS_20261109
+   The existing quote “Некоторые ужины заканчиваются завтраком.”
+   resolves from soft blur to sharp type as it enters the viewport.
+   Keep the original quote and background and honor reduced motion. */
+@keyframes du-breakfast-quote-focus-20261109 {
+  0% { opacity:.20; filter:blur(13px); transform:translateY(10px); }
+  100% { opacity:1; filter:blur(0); transform:translateY(0); }
+}
+@supports (animation-timeline: view()) {
+  #homeView > .du-quote-strip > .container {
+    animation-name:du-breakfast-quote-focus-20261109;
+    animation-timing-function:linear;
+    animation-fill-mode:both;
+    animation-timeline:view(block);
+    animation-range:entry 0% cover 38%;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  #homeView > .du-quote-strip > .container {
+    animation:none!important;
+    opacity:1!important;
+    filter:none!important;
+    transform:none!important;
+  }
+}
