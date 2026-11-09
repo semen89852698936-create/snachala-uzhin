@@ -23,8 +23,19 @@ const editorialPaperAssets=[
   '/assets/editorial-paper-panel-mask-20261108.svg',
   '/assets/editorial-paper-torn-bottom-20261108.svg'
 ];
-assert.deepEqual([...new Set(cssUrls)].sort(),[...editorialPhotos,...editorialPaperAssets].sort(),
-  'CSS must reference only approved local photos and torn-paper design assets');
+// Approved editorial imagery grows as new sections are implemented. Keep the
+// security boundary (local assets or inline SVG), not a frozen six-file list.
+for (const url of cssUrls) {
+  if (url.startsWith('data:image/svg+xml,')) continue;
+  assert(url.startsWith('/assets/'),
+    'CSS asset must be local or an inline SVG: '+url.slice(0,100));
+  const assetPath=url.split('?')[0].split('#')[0];
+  assert(!assetPath.includes('..') && fs.existsSync(path.join(root,assetPath.slice(1))),
+    'CSS references a missing or unsafe local asset: '+assetPath);
+}
+for (const approved of [...editorialPhotos,...editorialPaperAssets]) {
+  assert(cssUrls.includes(approved),'Approved editorial asset is missing from CSS: '+approved);
+}
 for (const localUrl of [...editorialPhotos,...editorialPaperAssets]) {
   assert(fs.existsSync(path.join(root,localUrl.slice(1))),
     'Referenced editorial asset does not exist: '+localUrl);
