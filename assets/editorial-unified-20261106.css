@@ -4289,7 +4289,7 @@ body.du-evening-mode #music .du-music-heading .du-section-heading > p {
   content:"";
   position:absolute;
   top:clamp(-122px,-8.5vw,-86px);
-  left:clamp(5px,3.4vw,56px);
+  left:clamp(-132px,-9.8vw,-78px);
   width:clamp(67px,8.5vw,138px);
   height:clamp(165px,17vw,254px);
   z-index:6;
@@ -4366,8 +4366,8 @@ body.du-evening-mode #music .du-music-heading .du-section-heading > p {
   }
   #homeView > .du-categories::before{
     top:-73px;
-    left:4px;
-    width:62px;
+    left:-42px;
+    width:48px;
     height:148px;
   }
   #homeView #categoryGrid.category-grid{
@@ -4375,3 +4375,89 @@ body.du-evening-mode #music .du-music-heading .du-section-heading > p {
     gap:12px!important;
   }
 }
+
+
+/* SITEWIDE_TORN_NEWSPRINT_BUTTONS_20261109
+   Every ordinary action button and button-like navigation link uses the
+   already-approved torn-paper mask and fibre texture.
+   Existing printed category artwork is NOT re-masked; hero CTAs already
+   have their exact approved paper artwork and are intentionally retained.
+   Button handlers, focus states, disabled states, touch sizes, and
+   card/image semantics are unchanged. */
+:root{
+  --du-action-paper:#f4e5d2;
+  --du-action-paper-active:#e8cfb8;
+  --du-action-ink:#6d2339;
+}
+body :is(
+  button:not(.category-card):not(#tryCooking),
+  a.du-btn:not(.du-hero-actions > a),
+  .header .main-nav > a,
+  .du-quick-nav-mobile > a,
+  a.du-evening-nav-mobile,
+  a.du-evening-back,
+  a.du-music-open-spotify
+){
+  box-sizing:border-box;
+  background-color:var(--du-action-paper)!important;
+  background-image:
+    linear-gradient(154deg,rgba(255,255,255,.24),rgba(194,149,117,.07)),
+    var(--du-paper-fibre-grain)!important;
+  background-size:100% 100%,192px 192px!important;
+  background-repeat:no-repeat,repeat!important;
+  border:0!important;
+  border-radius:0!important;
+  color:var(--du-action-ink)!important;
+  box-shadow:none!important;
+  -webkit-mask-image:var(--du-ripped-paper-mask)!important;
+  mask-image:var(--du-ripped-paper-mask)!important;
+  -webkit-mask-size:100% 100%!important;
+  mask-size:100% 100%!important;
+  -webkit-mask-repeat:no-repeat!important;
+  mask-repeat:no-repeat!important;
+  -webkit-mask-mode:alpha;
+  mask-mode:alpha;
+  filter:drop-shadow(0 3px 4px rgba(52,26,23,.12));
+}
+body :is(
+  button:not(.category-card):not(#tryCooking),
+  a.du-btn:not(.du-hero-actions > a),
+  .header .main-nav > a,
+  .du-quick-nav-mobile > a,
+  a.du-evening-nav-mobile,
+  a.du-evening-back,
+  a.du-music-open-spotify
+):is(:hover,:focus-visible){
+  background-color:#fff2e2!important;
+  color:#541b30!important;
+  filter:drop-shadow(0 5px 7px rgba(52,26,23,.20));
+}
+body :is(
+  button:not(.category-card):not(#tryCooking)[aria-pressed="true"],
+  button:not(.category-card):not(#tryCooking).is-selected,
+  button:not(.category-card):not(#tryCooking)[aria-current="page"],
+  .header .main-nav > a[aria-current="page"]
+){
+  background-color:var(--du-action-paper-active)!important;
+  color:#521d2d!important;
+  filter:drop-shadow(0 3px 5px rgba(88,40,35,.22));
+}
+body button:not(.category-card):not(#tryCooking):disabled{
+  opacity:.55;
+  cursor:not-allowed;
+  filter:none;
+}
+body :is(
+  button:not(.category-card):not(#tryCooking),
+  a.du-btn:not(.du-hero-actions > a),
+  .header .main-nav > a,
+  .du-quick-nav-mobile > a,
+  a.du-evening-nav-mobile,
+  a.du-evening-back,
+  a.du-music-open-spotify
+):focus-visible{
+  outline:3px solid #9c4c53!important;
+  outline-offset:3px!important;
+}
+/* The two previously approved cover CTAs and ten approved printed photo
+   buttons keep their original graphics, not another paper layer. */
