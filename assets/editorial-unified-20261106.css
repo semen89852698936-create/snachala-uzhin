@@ -4208,3 +4208,13 @@ body.du-evening-mode #music .du-music-heading .du-section-heading > p {
     height:142px;
   }
 }
+
+/* BREAKFAST_MATCH_SOUPS_WIDTH_20261109
+   Only on the existing four-column desktop gallery: the tenth and
+   final category (Завтраки) spans the same two columns as Супы.
+   Tablet/mobile grid rules and other cards are left unchanged. */
+@media (min-width:1121px) {
+  #categoryGrid .category-card:nth-child(10) {
+    grid-column:span 2;
+  }
+}
