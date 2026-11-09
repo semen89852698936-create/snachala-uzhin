@@ -4010,3 +4010,44 @@ header.header .du-brand-mark svg.du-wine-icon{visibility:hidden!important;}
   outline:none!important;
   outline-offset:0!important;
 }
+
+
+/* MUSIC_APPROVED_OPTION_3_COLOR_ONLY_20261109
+   Apply caramel / ivory / dark plum to the existing approved WebP artwork.
+   All image sources, torn-paper silhouettes, tape, typography, positions,
+   song lists, Spotify controls, and interaction behavior remain unchanged. */
+#music .du-music-card:nth-child(1){
+  --music-paper-fill:#eacbaf;
+  background-image:
+    linear-gradient(rgba(234,203,175,.75),rgba(234,203,175,.75)),
+    url('/assets/approved-music/music-cooking.webp')!important;
+  background-blend-mode:multiply!important;
+}
+#music .du-music-card:nth-child(2){
+  --music-paper-fill:#f4e7dc;
+  background-image:
+    linear-gradient(rgba(244,231,220,.36),rgba(244,231,220,.36)),
+    url('/assets/approved-music/music-dinner.webp')!important;
+  background-blend-mode:multiply!important;
+}
+/* The after-dinner artwork contains printed dark lettering.
+   Recolor only its image layer, leaving interactive HTML tracks untouched. */
+#music .du-music-card:nth-child(3){
+  --music-paper-fill:#f4e7dc;
+  background-image:none!important;
+  color:#f4e7dc;
+}
+#music .du-music-card:nth-child(3)::before{
+  display:block!important;
+  content:""!important;
+  position:absolute!important;
+  inset:0!important;
+  z-index:-1!important;
+  pointer-events:none!important;
+  clip-path:none!important;
+  background-image:url('/assets/approved-music/music-after.webp')!important;
+  background-size:100% 100%!important;
+  background-position:center!important;
+  background-repeat:no-repeat!important;
+  filter:invert(.937) sepia(.463) saturate(3.746) hue-rotate(214deg) brightness(1.153) contrast(.832)!important;
+}
