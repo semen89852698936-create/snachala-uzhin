@@ -4932,3 +4932,44 @@ body .du-mood .du-mood-check{
     margin-top:0!important;
   }
 }
+
+
+/* ABOUT_WARM_WINE_READABILITY_20261109
+   Owner-approved text-only update for «Больше быть вместе».
+   Palette follows the approved «И ещё один повод остаться» wine/rose
+   banner; preserve the existing two-column layout and button behavior.
+   No photos, images, markup changes or adjustments to other sections. */
+#homeView #about.du-how{
+  background:
+    radial-gradient(ellipse 38% 47% at 100% 100%,rgba(229,151,125,.52),transparent 100%),
+    linear-gradient(109deg,#35151f 0%,#592630 45%,#77343e 72%,#914854 100%)!important;
+  color:#fff4eb!important;
+}
+#homeView #about.du-how .eyebrow.on-dark,
+#homeView #about.du-how .about-inner h2,
+#homeView #about.du-how .about-inner h2 em,
+#homeView #about.du-how .feature-list strong,
+#homeView #about.du-how .feature-list b{
+  color:#fff4eb!important;
+}
+#homeView #about.du-how .about-inner p,
+#homeView #about.du-how .feature-list small{
+  color:#fff0e6!important;
+}
+#homeView #about.du-how .about-inner p{
+  font-size:clamp(16px,1.08vw,18px);
+  line-height:1.75;
+}
+#homeView #about.du-how .feature-list small{
+  font-size:clamp(13px,.94vw,15px);
+  line-height:1.5;
+  font-weight:500;
+}
+#homeView #about.du-how .feature-list strong{font-weight:600}
+#homeView #about.du-how .feature-list b{font-weight:700}
+#homeView #about.du-how .feature-list{
+  border-top-color:rgba(255,239,226,.75)!important;
+}
+#homeView #about.du-how .feature-list>div{
+  border-bottom-color:rgba(255,239,226,.75)!important;
+}
