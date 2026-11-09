@@ -5576,3 +5576,64 @@ body .du-mood .du-mood-check{
  #homeView #catalog #categoryFilters>.chip,
  #homeView #catalog #recipeGrid>.recipe-card{transition:none!important}
 }
+
+
+/* Exact cropped floral/candle artwork from the last approved reference
+   image. No recipe photos or textual content are replaced. */
+#homeView #catalog.du-catalog::after{
+  content:"";
+  position:absolute;
+  top:0;
+  right:0;
+  z-index:0;
+  width:min(32vw,490px);
+  height:clamp(225px,20vw,277px);
+  background-image:url("data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDADIiJSwlHzIsKSw4NTI7S31RS0VFS5ltc1p9tZ++u7Kfr6zI4f/zyNT/16yv+v/9////////wfD/////////////2wBDATU4OEtCS5NRUZP/zq/O////////////////////////////////////////////////////////////////////wAARCAB4APADASIAAhEBAxEB/8QAGQAAAwEBAQAAAAAAAAAAAAAAAAECAwQF/8QALRAAAgICAgEDAwMDBQAAAAAAAAECEQMhEjFBBCJRE2FxFDKRIzOxUoGhwdH/xAAXAQEBAQEAAAAAAAAAAAAAAAAAAQID/8QAHREBAQEBAAMBAQEAAAAAAAAAAAERMQIhQRJRcf/aAAwDAQACEQMRAD8A4QG0IjbfD6d5IOTdIUsD+qoRd2dWO5emT0vsZ4pVzar7tmdb/MYZsDxJW7syN8824pWYFl1m9O2hxnKLtM6MfpE8alOVWZZ8axvTtPoGVLt+5FYss1NJdvQLIliUfnslQndxT1sh/isqrTdtGRTbcm2VjVTtDh2tYY21FS0qIk+MZRW9jzSuTqRnTdNb2RaUcc5JtLSE04umqPScueGo1dHn5ZOU7fZZdLMiWIYisnF07NFjudrrszSt0jXJKoRjF7rZKsiXUX8s7seSM8dcrkkefSj29/ARfwxizYrNJyyNsgbEVL1SCQkDAENjiimtAZANoQRUkQaSIoKcck49SYk3vb32Pg6unR0YfS88P1JOge3Mn4fQbjJF54wjOoO0KEXP2pNgehk92FbSdbODJ7n30TLlFuLtG69NOUeT9uvJMXd9MsOPnlimdGfLKEnWvBzxfBu3tdFvN9SHGXa6ZKT0xb2dGBw41XuMoY5ZOov8l44KPNye0tIXhOsp+6Tf3GpS+nx+9hFNzS+TqnFRgo8VS7Y3CTXNzcKUXVdkNtuxyjtlwg5xpfllhPG0Y4e7dPXRm1NStxv8FOlJxjvfZlycXJJ34srdkjTlapJKXQp3CMVJb7syV3Zu39VwjJOo90E22MNsrUIqV7ugcuMpRi04338kP4KxuLjOm9Wvgam27dUQ2uNUvyFq+ga3tXViZipU7KWRuWyGxtF0U5aIBgJ9gILCLYRVyS+RMQV6OeSWFRS8Voy+qo4OF1XQoeoxvEovtI5s01OVxWjOVrZhyXJ9X+DtxcPTQSvv5PPhJwkpLtHdJwzY17ldbHEntg/dl+o1as1zZlKGu6OaT3WqFcfloLqL+S+C4KSe2wlj5bg7JSqLT0y7rLvfLFigo7ryjm9RNOMaikGP1U4x4tWqpGTly0yLb6GPJwnyXZpKU8jqT1RkoSd1Fuuyu4U/LLi+Pu4XF5G0uolKfGKitNvb+wovjFtd9IjI1evjZXThTfvk4/tvRWNJxbd8mxODvik0v8ignyT6p+Qzypb9tXbu9CUmrSfY8tSytw6JSbeiudt0kmG09lpO9Bklzt/6VX+wTBr6fSsnXYrAFo8Au0xv9ovAMawyNt30UzAvG7QNWIAINGOUVVxNM2OMXUXsybUXS2yNFGEpuki8uBwlUXei/STccv5LyJpyd6YtpJrnjGnSVyY53CNXvyTGXGV/A8sozppbGJ8ZlKDasRTm+PHwVDUowetsTnJ97IGiYuuhL6ULcdyX8GMrbv8AwbP1CcEpRtryc97tCRbjr9O3+ne6TdN/Bz5FxyXZUc74cKpP/lkU09q92xG/DiXri6ISbkq7s0lG8lz/AGhajC2qclqmUvUzjKU//WLI1dR38slP3LyJdNhi3RXhFftWnsUVbHJLkUk+pjJxdjnpv77B0k6V35ZLe9hm8wUCV6SDwOqjYQmCAXgBlwqjMqPYGgAIDsnPG2nZzSrk6JAmNW6addDcm1V6JGEAIdBQUUDQ4lSXtRDGY0LyMqEwAaQDglyLlG4re29sijSc4pa3RHXw/jHNuXd1oJPapqlpIT3Pp7JrZSktWOK9rb6oOS6S15Ym6VL+Qx6Ck9Lx9kH5COnvQUvkED+wnVINIX37KzTb9oga0IJTDwHQgGVBeSC4AUAAAwAdN+ApDRSxyfgOEl2iBwjykorydH6aUY24tmOJf1FZ0vLkj1J0ZajJRXKuJ0YYQn6WUpLaZm5SfFvydHTaivajNrTnf9tpQ0vJkq8xOv8AVTSr6cWPm5TScVv7DZD25oQxP90Sp+nx1cG0/uTcnGb+BRySb2zWpjCacZUwTTi0+is7/qMhIqcpOOmkS1S2raNF7XaB70Gv1PrHVb7bG0vk0fp5vajpm7x444YRpOa7Y1GMsceNpPaMXHSOqUmo7pnM2SJUVSKir0W4cor5G8fHa2vk0MtJk9lyjsHGloqVHgRXF6G4BkQWyg8AAAAAdbwxh2JOK8DyOTezJvZl0deGpeAzxpaROCSSNMjtAcuOPLIlWzr4UpXvRz4E36hU6OufOEZbW0ZtWM80JJ41/B0cJLItkT5J4uauRs4yeRSTX4GM2msS4NUrZlxlzvy1qjoXRnGMlK3T10W+LMrixQbx5bXQ44m0pOkqs1xSk4Zaj82LHjlOMJSlroy6OHNGsrIN/UxX1XRi0anGaR0+hwLLkuXSOY7vSpx9Pzj3scRXrUoRTTrwkcDb/wCzpyZeUqnuoojI8bU2qTdJfYplZw90JGTSu/Hg03DE38vTM+Lon1aLNMcmtNEwSae0aJL5KkZZFT10yDf1EFGMXfkwLEoAAKEAAEAAFNgd8bktmc8Sb+AAy6HBcS5S0ABURlWRM6nkvHNV2gAzVVkbf0ZPfR1WgAscvIckFoANamOSE+OLPJfLM4TXCEUqaVsAOV46zrmzybyyM3IANxms3I7/AE869Et7tgAqRhk7bfwjOnJ0ACLVZk0oxvXwJbw78OgAnwRG9r4NIp2AGiH6rUI/k5gAsS9AABWQXHG3t6QAGpNVUY+Ajb2AEaf/2Q==");
+  background-position:center right;
+  background-size:cover;
+  background-repeat:no-repeat;
+  -webkit-mask-image:linear-gradient(90deg,transparent 0%,#000 23%);
+  mask-image:linear-gradient(90deg,transparent 0%,#000 23%);
+  pointer-events:none;
+}
+#homeView #catalog .du-section-top,
+#homeView #catalog .search-panel{z-index:2}
+@media(max-width:760px){
+  #homeView #catalog.du-catalog::after{
+    width:53vw;
+    height:290px;
+    opacity:.25;
+    -webkit-mask-image:linear-gradient(90deg,transparent,#000 42%);
+    mask-image:linear-gradient(90deg,transparent,#000 42%);
+  }
+}
+/* Tighten approved asymmetrical editorial recipe composition. */
+@media(min-width:1181px){
+  #homeView #catalog #recipeGrid.recipe-grid{
+    grid-template-columns:repeat(30,minmax(0,1fr));
+    grid-template-rows:245px 245px;
+    column-gap:0;
+    row-gap:0;
+  }
+  #homeView #catalog #recipeGrid>.recipe-card{margin:0 14px 14px 0}
+  #homeView #catalog #recipeGrid>.recipe-card:nth-child(1){grid-area:1 / 1 / span 2 / span 12}
+  #homeView #catalog #recipeGrid>.recipe-card:nth-child(2){grid-area:1 / 13 / span 1 / span 9}
+  #homeView #catalog #recipeGrid>.recipe-card:nth-child(3){grid-area:1 / 22 / span 1 / span 9}
+  #homeView #catalog #recipeGrid>.recipe-card:nth-child(4){grid-area:2 / 13 / span 1 / span 6}
+  #homeView #catalog #recipeGrid>.recipe-card:nth-child(5){grid-area:2 / 19 / span 1 / span 6}
+  #homeView #catalog #recipeGrid>.recipe-card:nth-child(6){grid-area:2 / 25 / span 1 / span 6}
+  #homeView #catalog #recipeGrid>.recipe-card:nth-child(n+7){grid-column:span 10}
+}
+@media(min-width:761px){
+  #homeView #catalog .du-pantry-toolbar{
+    grid-row:4;
+    justify-self:end;
+    align-self:center;
+    z-index:4;
+    margin:0 18px 0 0;
+  }
+  #homeView #catalog .du-ingredient-search-tip{
+    grid-row:4;
+    padding-right:min(31vw,390px);
+  }
+}
