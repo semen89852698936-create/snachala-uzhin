@@ -4682,3 +4682,16 @@ body a.du-evening-nav-mobile:not(#tryCooking)::after{
 body .du-mood .du-mood-check{
   top:30px!important;
 }
+
+
+/* PAPER_SCRAP_NO_OVERLAP_20261109
+   Preserve each original torn-paper button's proportions, font,
+   texture and artwork. Only add enough breathing room BETWEEN rows
+   so the lower ripped edge cannot cover the preceding paper scrap. */
+#homeView .du-time-choices{
+  row-gap:16px!important;
+}
+#homeView .du-airfryer-filters{
+  row-gap:16px!important;
+  column-gap:12px!important;
+}
