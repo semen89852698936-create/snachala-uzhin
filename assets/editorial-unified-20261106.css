@@ -4992,7 +4992,7 @@ body .du-mood .du-mood-check{
   height:clamp(42px,5vw,74px);
   z-index:4;
   pointer-events:none;
-  background-image:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%201600%2090%22%20preserveAspectRatio%3D%22none%22%3E%3Cpath%20d%3D%22M18%2054%20C170%2018%20326%2077%20484%2045%20C660%209%20824%2076%20986%2043%20C1148%2010%201308%2065%201582%2029%22%20fill%3D%22none%22%20stroke%3D%22%2385233B%22%20stroke-width%3D%2216%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%20opacity%3D%22.96%22%2F%3E%3Cpath%20d%3D%22M18%2054%20C170%2018%20326%2077%20484%2045%20C660%209%20824%2076%20986%2043%20C1148%2010%201308%2065%201582%2029%22%20fill%3D%22none%22%20stroke%3D%22%23C7636E%22%20stroke-width%3D%224.2%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%20opacity%3D%22.38%22%2F%3E%3C%2Fsvg%3E");
+  background-image:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%201600%2090%22%20preserveAspectRatio%3D%22none%22%3E%3Cpath%20d%3D%22M18%2060%20Q800%20-28%201582%2060%22%20fill%3D%22none%22%20stroke%3D%22%2385233B%22%20stroke-width%3D%2216%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%20opacity%3D%22.96%22%2F%3E%3Cpath%20d%3D%22M18%2060%20Q800%20-28%201582%2060%22%20fill%3D%22none%22%20stroke%3D%22%23C7636E%22%20stroke-width%3D%224.2%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%20opacity%3D%22.38%22%2F%3E%3C%2Fsvg%3E");
   background-position:center;
   background-repeat:no-repeat;
   background-size:100% 100%;
