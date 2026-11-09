@@ -4272,3 +4272,106 @@ body.du-evening-mode #music .du-music-heading .du-section-heading > p {
     bottom:5px;
   }
 }
+
+/* USER_APPROVED_TEN_CATEGORY_IMAGES_20261109
+   Ten exact, owner-supplied paper-card designs, with their original
+   printed typography, photos and frayed edges. All ten links remain
+   live buttons with accessible text. Unlike the previous CSS approximation,
+   this connects the actual approved image files.
+   Use a two-column paper gallery so no printed artwork is cropped. */
+#homeView > .du-categories{
+  position:relative;
+  z-index:5;
+  margin-top:-24px!important;
+  padding-top:clamp(45px,5vw,86px)!important;
+}
+#homeView > .du-categories::before{
+  content:"";
+  position:absolute;
+  top:clamp(-122px,-8.5vw,-86px);
+  left:clamp(5px,3.4vw,56px);
+  width:clamp(67px,8.5vw,138px);
+  height:clamp(165px,17vw,254px);
+  z-index:6;
+  pointer-events:none;
+  background:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20138%20254%22%3E%3Cpath%20d%3D%22M39%209%20C14%2038%2026%2064%2057%2080%20S105%20127%2080%20153%20C63%20171%2042%20170%2043%20197%20S51%20228%2079%20245%22%20fill%3D%22none%22%20stroke%3D%22%2384263b%22%20stroke-width%3D%2217%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%20opacity%3D%22.93%22%2F%3E%3Cpath%20d%3D%22M40%2010%20C21%2039%2028%2064%2058%2082%20S100%20128%2079%20153%20C61%20173%2045%20172%2045%20199%20S55%20233%2079%20243%22%20fill%3D%22none%22%20stroke%3D%22%23be5860%22%20stroke-width%3D%224%22%20stroke-linecap%3D%22round%22%20opacity%3D%22.38%22%2F%3E%3C%2Fsvg%3E") center / 100% 100% no-repeat;
+  opacity:.95;
+}
+#homeView #categoryGrid.category-grid{
+  display:grid!important;
+  grid-template-columns:repeat(2,minmax(0,1fr))!important;
+  grid-auto-rows:auto!important;
+  grid-auto-flow:row!important;
+  gap:clamp(12px,1.8vw,24px)!important;
+}
+#homeView #categoryGrid > .category-card{
+  display:block!important;
+  grid-column:auto!important;
+  grid-row:auto!important;
+  width:100%;
+  height:auto!important;
+  min-height:0!important;
+  aspect-ratio:1671 / 941;
+  padding:0!important;
+  overflow:hidden!important;
+  border:0!important;
+  border-radius:0!important;
+  background-color:transparent!important;
+  background-position:center!important;
+  background-size:100% 100%!important;
+  background-repeat:no-repeat!important;
+  -webkit-mask-image:none!important;
+  mask-image:none!important;
+  box-shadow:none!important;
+  filter:none!important;
+}
+#homeView #categoryGrid > .category-card::before,
+#homeView #categoryGrid > .category-card::after{
+  content:none!important;
+  display:none!important;
+}
+#homeView #categoryGrid > .category-card > img.food-photo{
+  display:none!important;
+}
+#homeView #categoryGrid > .category-card .category-tag,
+#homeView #categoryGrid > .category-card .category-bottom{
+  position:absolute!important;
+  width:1px!important;
+  height:1px!important;
+  margin:-1px!important;
+  padding:0!important;
+  overflow:hidden!important;
+  clip-path:inset(50%)!important;
+  white-space:nowrap!important;
+  border:0!important;
+}
+#homeView #categoryGrid > .category-card:focus-visible{
+  outline:3px solid #802a3c!important;
+  outline-offset:3px!important;
+}
+#homeView #categoryGrid > .category-card[data-category="meat"]{background-image:url('/assets/approved-category/category-meat-approved-20261109.webp')!important;}
+#homeView #categoryGrid > .category-card[data-category="poultry"]{background-image:url('/assets/approved-category/category-poultry-approved-20261109.webp')!important;}
+#homeView #categoryGrid > .category-card[data-category="fish"]{background-image:url('/assets/approved-category/category-fish-approved-20261109.webp')!important;}
+#homeView #categoryGrid > .category-card[data-category="pasta"]{background-image:url('/assets/approved-category/category-pasta-approved-20261109.webp')!important;}
+#homeView #categoryGrid > .category-card[data-category="vegetables"]{background-image:url('/assets/approved-category/category-vegetables-approved-20261109.webp')!important;}
+#homeView #categoryGrid > .category-card[data-category="pastry"]{background-image:url('/assets/approved-category/category-pastry-approved-20261109.webp')!important;}
+#homeView #categoryGrid > .category-card[data-category="soup"]{background-image:url('/assets/approved-category/category-soup-approved-20261109.webp')!important;}
+#homeView #categoryGrid > .category-card[data-category="salads"]{background-image:url('/assets/approved-category/category-salads-approved-20261109.webp')!important;}
+#homeView #categoryGrid > .category-card[data-category="dessert"]{background-image:url('/assets/approved-category/category-dessert-approved-20261109.webp')!important;}
+#homeView #categoryGrid > .category-card[data-category="breakfast"]{background-image:url('/assets/approved-category/category-breakfast-approved-20261109.webp')!important;}
+@media(max-width:760px){
+  #homeView > .du-categories{
+    margin-top:-12px!important;
+    padding-top:38px!important;
+  }
+  #homeView > .du-categories::before{
+    top:-73px;
+    left:4px;
+    width:62px;
+    height:148px;
+  }
+  #homeView #categoryGrid.category-grid{
+    grid-template-columns:minmax(0,1fr)!important;
+    gap:12px!important;
+  }
+}
