@@ -4057,11 +4057,13 @@ header.header .du-brand-mark svg.du-wine-icon{visibility:hidden!important;}
    Editorial spacing and one continuous burgundy curve between the
    preceding Evening feature and the music spread. No changes to
    the approved card art, colors, typography, tracks, or controls. */
+#music,
 body.du-evening-mode #music {
   position:relative;
   margin-top:clamp(-26px,-2.2vw,-16px);
   padding-top:clamp(38px,4.4vw,66px);
 }
+#music::before,
 body.du-evening-mode #music::before {
   content:"";
   position:absolute;
@@ -4078,10 +4080,12 @@ body.du-evening-mode #music::before {
   z-index:2;
 }
 @media(max-width:760px){
+  #music,
   body.du-evening-mode #music {
     margin-top:-16px;
     padding-top:36px;
   }
+  #music::before,
   body.du-evening-mode #music::before {
     top:-29px;
     left:26px;
