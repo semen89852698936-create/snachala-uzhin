@@ -4674,3 +4674,11 @@ body a.du-evening-nav-mobile:not(#tryCooking)::after{
   -webkit-mask-repeat:no-repeat!important;
   mask-repeat:no-repeat!important;
 }
+
+/* DU_MOOD_ARROW_PAPER_SAFE_20261109
+   The last measured overlap in the live button scan: the four mood
+   cards' northeast arrows were touching the irregular top paper edge.
+   Move only those decorative arrows 12px downward. */
+body .du-mood .du-mood-check{
+  top:30px!important;
+}
