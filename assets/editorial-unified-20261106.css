@@ -5003,3 +5003,141 @@ body .du-mood .du-mood-check{
     height:34px;
   }
 }
+
+
+/* CATALOG_APPROVED_NEWSPRINT_FILTERS_AND_CARDS_20261109
+   Implement the explicitly approved catalog mockup without replacing live
+   recipe images, wording, category names, search logic or JS event handlers.
+   Reuse the actual approved local SVG paper silhouette/fibre texture;
+   all 12 real category filters stay accessible and clickable. */
+#homeView #catalog .category-filters{
+  align-items:center;
+  gap:clamp(10px,1.25vw,18px);
+  padding:19px 0 24px;
+  margin-top:14px;
+  overflow-x:auto;
+  overflow-y:hidden;
+  scrollbar-width:thin;
+  scroll-padding-inline:7px;
+}
+#homeView #catalog #categoryFilters > .chip{
+  position:relative;
+  flex:0 0 auto;
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  gap:9px;
+  min-height:63px;
+  padding:15px 25px 17px;
+  margin:0;
+  background-color:#f1e0cb;
+  background-image:
+    url('/assets/editorial-paper-fibres-20261108.svg'),
+    linear-gradient(105deg,#f6e7d5 0%,#f2dec8 52%,#f9ecdc 100%);
+  background-size:140px 140px,100% 100%;
+  background-repeat:repeat,no-repeat;
+  border:0!important;
+  border-radius:0!important;
+  color:#651b2c;
+  font:600 clamp(18px,1.35vw,22px)/1.15 var(--du-magazine-serif);
+  letter-spacing:-.012em;
+  white-space:nowrap;
+  -webkit-mask-image:url('/assets/editorial-paper-tear-mask-20261108.svg');
+  mask-image:url('/assets/editorial-paper-tear-mask-20261108.svg');
+  -webkit-mask-size:100% 100%;
+  mask-size:100% 100%;
+  -webkit-mask-repeat:no-repeat;
+  mask-repeat:no-repeat;
+  -webkit-mask-position:center;
+  mask-position:center;
+  filter:drop-shadow(1px 3px 3px rgba(88,49,40,.15));
+  transition:filter .18s ease,background-color .18s ease,color .18s ease;
+}
+#homeView #catalog #categoryFilters > .chip::before{
+  content:"✧";
+  font:500 21px/1 var(--du-magazine-serif);
+  color:inherit;
+  flex:none;
+}
+#homeView #catalog #categoryFilters > .chip[data-filter="all"]::before{content:"▦"}
+#homeView #catalog #categoryFilters > .chip[data-filter="meat"]::before{content:"♨"}
+#homeView #catalog #categoryFilters > .chip[data-filter="poultry"]::before{content:"✥"}
+#homeView #catalog #categoryFilters > .chip[data-filter="fish"]::before{content:"♓"}
+#homeView #catalog #categoryFilters > .chip[data-filter="pasta"]::before{content:"♧"}
+#homeView #catalog #categoryFilters > .chip[data-filter="vegetables"]::before{content:"❧"}
+#homeView #catalog #categoryFilters > .chip[data-filter="pastry"]::before{content:"✿"}
+#homeView #catalog #categoryFilters > .chip[data-filter="soup"]::before{content:"♨"}
+#homeView #catalog #categoryFilters > .chip[data-filter="salads"]::before{content:"❦"}
+#homeView #catalog #categoryFilters > .chip[data-filter="dessert"]::before{content:"✧"}
+#homeView #catalog #categoryFilters > .chip[data-filter="breakfast"]::before{content:"☼"}
+#homeView #catalog #categoryFilters > .chip[data-filter="airfryer"]::before{content:"♨"}
+#homeView #catalog #categoryFilters > .chip[data-filter="bonus"]::before{content:"✳"}
+#homeView #catalog #categoryFilters > .chip[aria-pressed="true"]{
+  background-color:#78172d!important;
+  background-image:
+    url('/assets/editorial-paper-fibres-20261108.svg'),
+    linear-gradient(105deg,#681326,#851b34 55%,#661125)!important;
+  color:#fff9ee!important;
+  border:0!important;
+  filter:drop-shadow(2px 4px 5px rgba(79,20,29,.23));
+}
+#homeView #catalog #categoryFilters > .chip:hover{
+  filter:drop-shadow(1px 6px 5px rgba(88,49,40,.22));
+}
+#homeView #catalog #categoryFilters > .chip:focus-visible{
+  outline:3px solid #8b253d;
+  outline-offset:3px;
+}
+#homeView #catalog #recipeGrid > .recipe-card{
+  background:transparent;
+  border:0;
+  border-radius:0;
+  overflow:hidden;
+}
+#homeView #catalog #recipeGrid > .recipe-card .card-body{
+  background-color:#fff1e1;
+  background-image:
+    url('/assets/editorial-paper-fibres-20261108.svg'),
+    var(--du-editorial-paper-grain);
+  background-size:180px 180px,auto;
+  background-repeat:repeat,repeat;
+  border-radius:0;
+  -webkit-mask-image:url('/assets/editorial-paper-panel-mask-20261108.svg');
+  mask-image:url('/assets/editorial-paper-panel-mask-20261108.svg');
+  -webkit-mask-size:100% 100%;
+  mask-size:100% 100%;
+  -webkit-mask-repeat:no-repeat;
+  mask-repeat:no-repeat;
+  padding-top:39px;
+  padding-bottom:30px;
+  margin-top:-30px;
+}
+#homeView #catalog #recipeGrid > .recipe-card .card-body h3{
+  color:#711c2e;
+}
+#homeView #catalog #recipeGrid > .recipe-card .card-body p{
+  color:#59423f;
+}
+#homeView #catalog #recipeGrid > .recipe-card .card-footer{
+  border-top-color:#cdb7a9;
+}
+@media(max-width:760px){
+  #homeView #catalog .category-filters{
+    gap:8px;
+    padding:12px 0 20px;
+  }
+  #homeView #catalog #categoryFilters > .chip{
+    min-height:52px;
+    padding:12px 19px 14px;
+    font-size:18px;
+    gap:7px;
+  }
+  #homeView #catalog #categoryFilters > .chip::before{font-size:19px}
+  #homeView #catalog #recipeGrid > .recipe-card .card-body{
+    margin-top:-24px;
+    padding:34px 20px 27px;
+  }
+}
+@media(prefers-reduced-motion:reduce){
+  #homeView #catalog #categoryFilters > .chip{transition:none}
+}
