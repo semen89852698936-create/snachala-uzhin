@@ -4001,3 +4001,12 @@ header.header .du-brand-mark svg.du-wine-icon{visibility:hidden!important;}
     max-width:100%;
   }
 }
+
+
+/* ONLY_REMOVE_TRY_COOKING_HIGHLIGHT_FRAME_20261109 */
+/* The 'Приготовить' button retains its paper texture and hover motion;
+   remove only the rectangular outline, including keyboard focus. */
+#homeView .du-hero-actions #tryCooking:is(:hover,:focus,:focus-visible,:active){
+  outline:none!important;
+  outline-offset:0!important;
+}
