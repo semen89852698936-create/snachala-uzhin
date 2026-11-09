@@ -4110,3 +4110,66 @@ body.du-evening-mode #music .du-music-heading .du-section-heading > p {
     line-height:1.34;
   }
 }
+
+
+/* BREAKFAST_QUOTE_SCROLL_FOCUS_20261109
+   The existing quote “Некоторые ужины заканчиваются завтраком.”
+   resolves from soft blur to sharp type as it enters the viewport.
+   Keep the original quote and background and honor reduced motion. */
+@keyframes du-breakfast-quote-focus-20261109 {
+  0% { opacity:.20; filter:blur(13px); transform:translateY(10px); }
+  100% { opacity:1; filter:blur(0); transform:translateY(0); }
+}
+@supports (animation-timeline: view()) {
+  #homeView > .du-quote-strip > .container {
+    animation-name:du-breakfast-quote-focus-20261109;
+    animation-timing-function:linear;
+    animation-fill-mode:both;
+    animation-timeline:view(block);
+    animation-range:entry 0% cover 38%;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  #homeView > .du-quote-strip > .container {
+    animation:none!important;
+    opacity:1!important;
+    filter:none!important;
+    transform:none!important;
+  }
+}
+
+
+/* USER_APPROVED_DINNER_BED_BANNER_20261109
+   Replace only the wide “Просто накройте на двоих” strip with
+   the exact artwork uploaded by the user (AVIF encoding for delivery).
+   Original live text remains in the DOM for assistive technologies,
+   but is visually concealed because the approved artwork prints it. */
+#homeView > .du-photo-break {
+  display:block!important;
+  width:100%;
+  height:auto!important;
+  aspect-ratio:2048 / 682;
+  min-height:0!important;
+  padding:0!important;
+  margin:0;
+  background:#4b2927 url('/assets/editorial-dinner-bed-user-20261109.avif') center / 100% 100% no-repeat!important;
+}
+#homeView > .du-photo-break > .du-photo-overlay {
+  position:absolute!important;
+  width:1px!important;
+  height:1px!important;
+  min-width:0!important;
+  min-height:0!important;
+  padding:0!important;
+  margin:-1px!important;
+  overflow:hidden!important;
+  clip-path:inset(50%)!important;
+  white-space:nowrap!important;
+}
+/* Never crop or stretch the user-supplied banner on narrow screens. */
+@media (max-width:760px) {
+  #homeView > .du-photo-break {
+    aspect-ratio:2048 / 682;
+    background-size:100% 100%!important;
+  }
+}
