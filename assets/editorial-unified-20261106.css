@@ -3967,3 +3967,37 @@ header.header .du-brand-mark svg.du-wine-icon{visibility:hidden!important;}
 #music .du-music-card > details.du-music-suggestions:not([open]) > ol.du-bpm-track-list{
   display:none!important;
 }
+
+
+/* HERO_CTA_BALANCED_LABELS_20261109 */
+/* The two original hero buttons keep their layout and paper styling.
+   Equal readable labels, no clipped letters or arrows at any viewport. */
+#homeView .du-hero-actions > a.du-btn-primary,
+#homeView .du-hero-actions > #tryCooking{
+  font-family:var(--du-magazine-sans);
+  font-size:clamp(16px,1.5vw,18px);
+  font-weight:750;
+  line-height:1.2;
+  letter-spacing:0;
+  gap:clamp(10px,1vw,14px);
+  padding-inline:clamp(22px,2vw,28px);
+  box-sizing:border-box;
+  white-space:nowrap;
+  justify-content:space-between;
+  align-items:center;
+  min-height:57px;
+}
+#homeView .du-hero-actions > a.du-btn-primary > span,
+#homeView .du-hero-actions > #tryCooking > span{
+  flex-shrink:0;
+}
+@media(max-width:760px){
+  #homeView .du-hero-actions > a.du-btn-primary,
+  #homeView .du-hero-actions > #tryCooking{
+    font-size:16px;
+    min-height:48px;
+    height:48px;
+    padding-inline:22px;
+    max-width:100%;
+  }
+}
