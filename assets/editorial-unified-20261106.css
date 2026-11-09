@@ -5802,3 +5802,94 @@ body .du-mood .du-mood-check{
     min-width:142px;
   }
 }
+
+
+/* CATALOG_NEWSPRINT_PAPER_BEHIND_LABELS_20261110
+   The site's approved universal PAPER_BUTTON_LABEL_SAFETY masks only a
+   pseudo-element, so actual text/icons never get alpha-clipped. Apply that
+   same rule here: the real clickable filter stays unmasked/transparent,
+   its ::before is the legible category icon, its ::after is the ruffled
+   newspaper with visible printed columns. Keep the existing category
+   labels, events, selected aria-pressed state and horizontal scrolling. */
+#homeView #catalog #categoryFilters{
+  --du-catalog-newspaper-print:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22300%22%20height%3D%2284%22%20viewBox%3D%220%200%20300%2084%22%3E%0A%3Crect%20width%3D%22300%22%20height%3D%2284%22%20fill%3D%22none%22%2F%3E%0A%3Cg%20fill%3D%22%23705745%22%20opacity%3D%22.34%22%20font-family%3D%22Georgia%2Cserif%22%20font-size%3D%227%22%20text-anchor%3D%22start%22%3E%0A%3Ctext%20x%3D%2214%22%20y%3D%2210%22%3E%D0%92%D0%95%D0%A7%D0%95%D0%A0%D0%9D%D0%AF%D0%AF%20%D0%93%D0%90%D0%97%D0%95%D0%A2%D0%90%20%20%20%E2%84%96%2042%3C%2Ftext%3E%3Ctext%20x%3D%22130%22%20y%3D%2210%22%3E%D0%9D%D0%90%D0%A8%D0%98%20%D0%98%D0%A1%D0%A2%D0%9E%D0%A0%D0%98%D0%98%20%20%2F%20%20%D0%9A%D0%A3%D0%9B%D0%AC%D0%A2%D0%A3%D0%A0%D0%90%3C%2Ftext%3E%0A%3Ctext%20x%3D%2215%22%20y%3D%2222%22%3E%D0%9A%D0%A3%D0%9B%D0%98%D0%9D%D0%90%D0%A0%D0%9D%D0%90%D0%AF%20%D0%9A%D0%9E%D0%9B%D0%9B%D0%95%D0%9A%D0%A6%D0%98%D0%AF%3C%2Ftext%3E%3Ctext%20x%3D%22130%22%20y%3D%2222%22%3E%D0%A0%D0%95%D0%A6%D0%95%D0%9F%D0%A2%D0%AB%20%D0%98%20%D0%A2%D0%A0%D0%90%D0%94%D0%98%D0%A6%D0%98%D0%98%3C%2Ftext%3E%0A%3C%2Fg%3E%0A%3Cg%20stroke%3D%22%23755a48%22%20stroke-width%3D%221%22%20opacity%3D%22.18%22%3E%0A%3Cpath%20d%3D%22M13%2029h88M13%2034h94M13%2039h76M13%2044h92M13%2049h84M13%2054h94M13%2059h75M13%2064h92M13%2069h80%22%2F%3E%0A%3Cpath%20d%3D%22M126%2029h91M126%2034h84M126%2039h88M126%2044h97M126%2049h80M126%2054h91M126%2059h91M126%2064h86M126%2069h94%22%2F%3E%0A%3Cpath%20d%3D%22M238%2029h50M238%2034h48M238%2039h48M238%2044h50M238%2049h42M238%2054h48M238%2059h48M238%2064h50M238%2069h44%22%2F%3E%0A%3C%2Fg%3E%3C%2Fsvg%3E");
+}
+#homeView #catalog #categoryFilters>.chip,
+#homeView #catalog #categoryFilters>.chip[aria-pressed="true"]{
+  position:relative;
+  isolation:isolate;
+  overflow:visible;
+  background:transparent!important;
+  background-image:none!important;
+  background-color:transparent!important;
+  border:0!important;
+  border-radius:0!important;
+  box-shadow:none!important;
+  -webkit-mask-image:none!important;
+  mask-image:none!important;
+  filter:none!important;
+}
+#homeView #catalog #categoryFilters>.chip{
+  color:#671b31!important;
+}
+#homeView #catalog #categoryFilters>.chip[aria-pressed="true"]{
+  color:#fff8ee!important;
+}
+#homeView #catalog #categoryFilters>.chip::before{
+  position:relative!important;
+  top:auto!important;
+  right:auto!important;
+  bottom:auto!important;
+  left:auto!important;
+  inset:auto!important;
+  z-index:2!important;
+  display:inline-flex!important;
+  flex:0 0 23px;
+  width:23px;
+  height:26px;
+  align-items:center;
+  justify-content:center;
+  color:inherit!important;
+  background:none!important;
+  background-image:none!important;
+  -webkit-mask-image:none!important;
+  mask-image:none!important;
+  filter:none!important;
+  pointer-events:none;
+}
+#homeView #catalog #categoryFilters>.chip::after{
+  content:"";
+  position:absolute;
+  inset:0;
+  z-index:-1;
+  pointer-events:none;
+  background-color:#f2dfc9;
+  background-image:
+    var(--du-catalog-newspaper-print),
+    url('/assets/editorial-paper-fibres-20261108.svg'),
+    linear-gradient(105deg,#f5e4d0,#fbebdb 54%,#e9cfb5);
+  background-size:230px 64px,145px 145px,100% 100%;
+  background-repeat:repeat,repeat,no-repeat;
+  background-position:center;
+  -webkit-mask-image:var(--du-responsive-action-tear-mask)!important;
+  mask-image:var(--du-responsive-action-tear-mask)!important;
+  -webkit-mask-size:100% 100%!important;
+  mask-size:100% 100%!important;
+  -webkit-mask-position:center!important;
+  mask-position:center!important;
+  -webkit-mask-repeat:no-repeat!important;
+  mask-repeat:no-repeat!important;
+  filter:drop-shadow(0 4px 4px rgba(80,39,31,.21));
+}
+#homeView #catalog #categoryFilters>.chip[aria-pressed="true"]::after{
+  background-color:#75182f;
+  background-image:
+    var(--du-catalog-newspaper-print),
+    linear-gradient(103deg,#601024,#841a33 56%,#691127);
+  background-size:230px 64px,100% 100%;
+  background-repeat:repeat,no-repeat;
+}
+#homeView #catalog #categoryFilters>.chip:hover::after,
+#homeView #catalog #categoryFilters>.chip:focus-visible::after{
+  filter:drop-shadow(0 5px 6px rgba(81,35,40,.3));
+}
