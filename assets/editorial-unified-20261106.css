@@ -5637,3 +5637,40 @@ body .du-mood .du-mood-check{
     padding-right:min(31vw,390px);
   }
 }
+
+
+/* CATALOG_SPACING_AND_FULL_WIDTH_20261110 */
+/* Keep the original search, pantry and newsprint controls. Fix an implicit
+   second grid track that squeezed the approved 1001-recipe layout. */
+@media(min-width:761px){
+  #homeView #catalog.du-catalog>.container{
+    grid-template-columns:minmax(0,1fr);
+  }
+  #homeView #catalog .du-ingredient-search-tip{
+    grid-column:1;
+  }
+  #homeView #catalog .du-pantry-toolbar{
+    grid-column:1;
+    grid-row:4;
+    justify-self:end;
+    align-self:center;
+  }
+}
+/* Open up breathing room between the six editorial cards. No new assets. */
+@media(min-width:1181px){
+  #homeView #catalog #recipeGrid.recipe-grid{
+    grid-template-rows:275px 275px;
+  }
+  #homeView #catalog #recipeGrid>.recipe-card{
+    margin:0 18px 18px 0;
+  }
+}
+#homeView #catalog .result-line{
+  margin-top:32px;
+  margin-bottom:24px;
+}
+@media(max-width:760px){
+  #homeView #catalog #recipeGrid.recipe-grid{
+    row-gap:20px;
+  }
+}
