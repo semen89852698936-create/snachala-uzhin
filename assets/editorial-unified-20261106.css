@@ -1626,7 +1626,8 @@ body:not(.du-evening-mode) .header .brand.du-brand {
 /* APPROVED_TORN_PAPER_MUSIC_CARDS_20261109
    Three approved music-card portraits become torn paper, never flattened
    screenshots. Playlist text, scroll, links and player controls stay live.
-   Purely scoped to the three Our Evening music cards. */
+   Purely scoped to the three Our Evening music cards.
+   Color-only update: option 3 (caramel / ivory / dark plum), 2026-11-09. */
 body.du-evening-mode #music .du-music-card{
   position:relative;
   isolation:isolate;
@@ -1635,7 +1636,7 @@ body.du-evening-mode #music .du-music-card{
   border-radius:0!important;
   box-shadow:none!important;
   padding:clamp(21px,2.3vw,34px)!important;
-  color:#351b1b;
+  color:#281512;
 }
 body.du-evening-mode #music .du-music-card::before{
   content:"";
@@ -1643,21 +1644,24 @@ body.du-evening-mode #music .du-music-card::before{
   z-index:-1;
   inset:0;
   pointer-events:none;
-  background-color:#fff1e5;
+  --du-editorial-paper-grain:repeating-linear-gradient(112deg,rgba(112,71,46,.018) 0 1px,transparent 1px 5px),linear-gradient(115deg,#f0d5bc,#eacbaf 70%,#dfbb9c);
+  background-color:#eacbaf;
   background-image:
     var(--du-editorial-paper-grain),
-    radial-gradient(ellipse at 25% 20%,rgba(255,255,255,.46),transparent 62%),
-    linear-gradient(140deg,#fff7ed,#fae9db 78%,#f4ded0);
+    radial-gradient(ellipse at 25% 20%,rgba(255,255,255,.24),transparent 62%),
+    linear-gradient(140deg,#efd3bb,#eacbaf 78%,#dfb89a);
   clip-path:polygon(0% 2%,3% 1%,7% 2.2%,11% .4%,17% 1.4%,22% .2%,28% 1.3%,33% .3%,40% 1.8%,47% .4%,53% 1.7%,59% .4%,67% 1.4%,74% .1%,80% 1.5%,88% .5%,94% 1.3%,99% .4%,98.6% 8%,100% 14%,98.8% 21%,100% 29%,98.8% 37%,99.8% 45%,98.7% 55%,100% 64%,98.5% 73%,100% 81%,98.7% 89%,99.5% 97%,94% 98.4%,87% 99%,80% 98%,73% 99.6%,66% 98.3%,59% 99%,52% 98%,44% 99.8%,37% 98.4%,30% 99%,23% 98.2%,16% 99.5%,10% 98%,4% 99%,.6% 97%,1.6% 90%,.2% 82%,1.2% 74%,.1% 66%,1.3% 59%,.2% 51%,1.2% 44%,.1% 36%,1.3% 29%,.2% 22%,1.2% 15%);
   filter:drop-shadow(0 12px 14px rgba(70,36,25,.14));
 }
 body.du-evening-mode #music .du-music-card:nth-child(2)::before{
-  background-color:#fff2e9;
-  background-image:var(--du-editorial-paper-grain),linear-gradient(125deg,#fff7ee,#f7e9df);
+  --du-editorial-paper-grain:repeating-linear-gradient(112deg,rgba(112,71,46,.018) 0 1px,transparent 1px 5px),linear-gradient(115deg,#fbf0e6,#f4e7dc 70%,#ecdbcd);
+  background-color:#f4e7dc;
+  background-image:var(--du-editorial-paper-grain),linear-gradient(125deg,#fbf0e6,#f4e7dc);
 }
 body.du-evening-mode #music .du-music-card:nth-child(3)::before{
-  background-color:#f9e6e7;
-  background-image:var(--du-editorial-paper-grain),linear-gradient(130deg,#fff0ef,#f3dde3);
+  --du-editorial-paper-grain:repeating-linear-gradient(112deg,rgba(255,255,255,.022) 0 1px,transparent 1px 5px),linear-gradient(115deg,#563d49,#49313d 70%,#392633);
+  background-color:#49313d;
+  background-image:var(--du-editorial-paper-grain),linear-gradient(130deg,#5f4855,#49313d);
 }
 body.du-evening-mode #music .du-music-card h3{
   font-family:var(--du-magazine-serif);
@@ -1665,13 +1669,27 @@ body.du-evening-mode #music .du-music-card h3{
   line-height:.95;
 }
 body.du-evening-mode #music .du-music-card h3 em{
-  color:#a5162d;
+  color:#751d2d;
 }
 body.du-evening-mode #music .du-music-card .du-music-card-desc{
   color:#432d2c;
 }
 body.du-evening-mode #music .du-music-card .du-bpm-track-details strong{
   color:#322021;
+}
+body.du-evening-mode #music .du-music-card:nth-child(3){
+  color:#f4e7dc;
+  --story-ink:#f4e7dc;
+}
+body.du-evening-mode #music .du-music-card:nth-child(3) h3,
+body.du-evening-mode #music .du-music-card:nth-child(3) .du-music-card-desc,
+body.du-evening-mode #music .du-music-card:nth-child(3) .du-bpm-track-details,
+body.du-evening-mode #music .du-music-card:nth-child(3) .du-bpm-track-details strong,
+body.du-evening-mode #music .du-music-card:nth-child(3) .du-bpm-track-details span{
+  color:#f4e7dc;
+}
+body.du-evening-mode #music .du-music-card:nth-child(3) h3 em{
+  color:#efa8b6;
 }
 @media(max-width:760px){
   body.du-evening-mode #music .du-music-card{
