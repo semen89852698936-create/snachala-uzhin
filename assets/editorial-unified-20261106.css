@@ -5784,3 +5784,21 @@ body .du-mood .du-mood-check{
 #homeView #catalog #recipeGrid>.recipe-card .card-body p{
   flex-shrink:0;
 }
+
+
+/* CATALOG_NEWS_STRIP_SPACING_20261110
+   The approved mockup has large individual newspaper cutouts, not a tight
+   continuous row of microbuttons. Seven readable cutouts appear at desktop
+   width, while all actual categories remain available by horizontal scroll. */
+@media(min-width:1181px){
+  #homeView #catalog #categoryFilters>.chip{
+    min-width:174px;
+    padding-left:22px;
+    padding-right:22px;
+  }
+}
+@media(min-width:761px) and (max-width:1180px){
+  #homeView #catalog #categoryFilters>.chip{
+    min-width:142px;
+  }
+}
