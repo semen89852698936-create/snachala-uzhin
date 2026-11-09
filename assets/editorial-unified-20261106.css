@@ -4846,3 +4846,96 @@ body .du-mood .du-mood-check{
     height:67px;
   }
 }
+
+
+/* BONUS_ACTUAL_HOVER_20261109
+   The paper CTA is printed into the approved banner, so a transparent
+   HTML click area had no visual hover. Use the EXACT approved banner
+   cropped as a movable sprite, clipped to its actual torn-paper contour.
+   A small blended wall-colored patch covers ONLY the original printed CTA.
+   Heading, photo, layout, button text, link target and art stay unchanged. */
+#homeView .du-bonus .bonus-inner::after{
+  content:"";
+  position:absolute;
+  display:block;
+  left:35.70%;
+  top:53.75%;
+  width:20.92%;
+  height:18.10%;
+  z-index:1;
+  pointer-events:none;
+  background:
+    linear-gradient(180deg,rgba(70,26,23,.04),rgba(149,80,59,.08)),
+    linear-gradient(90deg,#5c2b25 0%,#663027 43%,#753c32 100%);
+  filter:blur(7px);
+}
+#homeView .du-bonus #bonusRecipe{
+  left:36.17%!important;
+  top:55.11%!important;
+  width:19.70%!important;
+  height:14.92%!important;
+  z-index:5!important;
+  isolation:isolate;
+  overflow:visible!important;
+  background:transparent!important;
+  background-image:none!important;
+  filter:none!important;
+  transform:none!important;
+  -webkit-mask-image:none!important;
+  mask-image:none!important;
+}
+#homeView .du-bonus #bonusRecipe::after{
+  content:""!important;
+  display:block!important;
+  position:absolute;
+  width:100%;
+  height:auto;
+  aspect-ratio:428 / 108;
+  top:50%;
+  left:0;
+  z-index:1;
+  pointer-events:none;
+  background-color:transparent;
+  background-image:url('/assets/approved-bonus/bonus-1001-approved-20261109.avif')!important;
+  background-size:507.71% 670.37%!important;
+  background-position:45.04% 64.77%!important;
+  background-repeat:no-repeat!important;
+  clip-path:polygon(
+    2.34% 20.37%,1.87% 63.89%,2.34% 84.26%,3.27% 88.89%,
+    12.62% 92.59%,15.42% 89.81%,20.33% 89.81%,22.20% 92.59%,
+    89.95% 91.67%,95.79% 88.89%,96.73% 85.19%,97.43% 33.33%,
+    96.96% 14.81%,96.03% 12.04%,80.37% 10.19%,71.96% 12.96%,
+    60.05% 10.19%,58.18% 12.96%,17.52% 10.19%,4.91% 12.96%
+  );
+  transform:translateY(-50%);
+  transform-origin:center center;
+  transition:transform .22s cubic-bezier(.2,.7,.18,1),filter .22s ease;
+  filter:drop-shadow(0 2px 3px rgba(44,20,20,.12));
+}
+#homeView .du-bonus #bonusRecipe:is(:hover,:focus-visible)::after{
+  transform:translateY(calc(-50% - 6px)) scale(1.045);
+  filter:brightness(1.045) drop-shadow(0 9px 9px rgba(38,13,16,.32));
+}
+#homeView .du-bonus #bonusRecipe:active::after{
+  transform:translateY(calc(-50% - 1px)) scale(.99);
+  transition-duration:.09s;
+}
+@media(max-width:760px){
+  #homeView .du-bonus #bonusRecipe{
+    top:calc(55.11% - 14px)!important;
+    height:44px!important;
+    min-height:44px!important;
+  }
+  #homeView .du-bonus #bonusRecipe:is(:hover,:focus-visible)::after{
+    transform:translateY(calc(-50% - 3px)) scale(1.04);
+  }
+}
+@media(prefers-reduced-motion:reduce){
+  #homeView .du-bonus #bonusRecipe::after{
+    transition:none;
+  }
+  #homeView .du-bonus #bonusRecipe:is(:hover,:focus-visible)::after{
+    transform:translateY(-50%);
+    filter:brightness(1.10) drop-shadow(0 5px 7px rgba(38,13,16,.25));
+  }
+}
