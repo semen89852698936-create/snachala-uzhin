@@ -4830,7 +4830,7 @@ body .du-mood .du-mood-check{
   right:clamp(15px,4.2vw,66px);
   top:clamp(-110px,-7vw,-70px);
   width:clamp(98px,9.2vw,140px);
-  height:clamp(150px,12.4vw,190px);
+  height:clamp(125px,11.7vw,180px);
   background-image:url("data:image/svg+xml,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%20140%20190'%3E%3Cpath%20d%3D'M24%206%20C48%2027%2077%2039%2077%2061%20C77%2082%2043%2092%2048%20115%20C54%20145%20107%20155%20112%20184'%20fill%3D'none'%20stroke%3D'%2385233B'%20stroke-width%3D'14'%20stroke-linecap%3D'round'%20stroke-linejoin%3D'round'%20opacity%3D'.93'%2F%3E%3Cpath%20d%3D'M26%206%20C50%2027%2080%2040%2079%2060%20C78%2081%2047%2094%2052%20115%20C58%20143%20109%20159%20112%20183'%20fill%3D'none'%20stroke%3D'%23C7636E'%20stroke-width%3D'3.3'%20stroke-linecap%3D'round'%20stroke-linejoin%3D'round'%20opacity%3D'.38'%2F%3E%3C%2Fsvg%3E");
   background-position:center;
   background-size:100% 100%;
@@ -4843,6 +4843,6 @@ body .du-mood .du-mood-check{
     top:-52px;
     right:4px;
     width:75px;
-    height:112px;
+    height:67px;
   }
 }
