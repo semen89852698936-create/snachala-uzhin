@@ -4987,7 +4987,7 @@ body .du-mood .du-mood-check{
   content:"";
   position:absolute;
   left:0;
-  top:-34px;
+  top:10px;
   width:100%;
   height:clamp(42px,5vw,74px);
   z-index:4;
@@ -4999,7 +4999,7 @@ body .du-mood .du-mood-check{
 }
 @media(max-width:760px){
   #homeView #airfryer.du-airfryer-section::before{
-    top:-22px;
+    top:10px;
     height:34px;
   }
 }
