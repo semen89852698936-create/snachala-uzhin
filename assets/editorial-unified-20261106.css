@@ -4218,3 +4218,57 @@ body.du-evening-mode #music .du-music-heading .du-section-heading > p {
     grid-column:span 2;
   }
 }
+
+
+/* CATEGORY_TORN_NEWSPRINT_CARDS_20261109
+   Use the EXISTING approved fibrous-paper mask and local paper grain
+   for all ten category photographs. Keep the same grid geometry,
+   image sources, live titles, counts, and click targets. */
+#homeView #categoryGrid > .category-card{
+  border:0!important;
+  border-radius:0!important;
+  background-color:#f5e9d9;
+  background-image:
+    linear-gradient(142deg,rgba(255,255,255,.48),rgba(221,194,159,.12)),
+    var(--du-paper-fibre-grain);
+  background-size:100% 100%,192px 192px;
+  background-repeat:no-repeat,repeat;
+  -webkit-mask-image:var(--du-ripped-paper-mask);
+  mask-image:var(--du-ripped-paper-mask);
+  -webkit-mask-mode:alpha;
+  mask-mode:alpha;
+  -webkit-mask-size:100% 100%;
+  mask-size:100% 100%;
+  -webkit-mask-repeat:no-repeat;
+  mask-repeat:no-repeat;
+  filter:drop-shadow(0 4px 6px rgba(47,25,19,.16));
+}
+#homeView #categoryGrid > .category-card > img.food-photo{
+  inset:7px;
+  width:calc(100% - 14px);
+  height:calc(100% - 14px);
+}
+#homeView #categoryGrid > .category-card::before{
+  inset:7px;
+  border-radius:0;
+}
+#homeView #categoryGrid > .category-card::after{
+  left:7px;
+  right:7px;
+  bottom:7px;
+}
+@media(max-width:760px){
+  #homeView #categoryGrid > .category-card > img.food-photo{
+    inset:5px;
+    width:calc(100% - 10px);
+    height:calc(100% - 10px);
+  }
+  #homeView #categoryGrid > .category-card::before{
+    inset:5px;
+  }
+  #homeView #categoryGrid > .category-card::after{
+    left:5px;
+    right:5px;
+    bottom:5px;
+  }
+}
