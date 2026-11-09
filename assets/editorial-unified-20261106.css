@@ -6044,3 +6044,131 @@ body .du-mood .du-mood-check{
     height:clamp(280px,78vw,410px)!important;
   }
 }
+
+
+/* CATALOG_NEWS_COLLAGE_DISTINCT_CUTOUTS_20261110
+   Approved newsprint filters become a restrained editorial collage:
+   four genuinely different torn-edge silhouettes, subtly different
+   paper tones and newspaper print crops, staggered baseline/angles and
+   unequal desktop widths. Keep all 13 accessible and on-screen; no
+   changes outside these category buttons and their wrapping grid.
+   The alpha mask remains on ::after ONLY, never on clickable labels. */
+#homeView #catalog #categoryFilters>.chip{
+  --collage-rotate:0deg;
+  --collage-shift:0px;
+  transform:rotate(var(--collage-rotate)) translateY(var(--collage-shift));
+  transform-origin:50% 50%;
+  transition:transform .18s ease;
+}
+#homeView #catalog #categoryFilters>.chip::after{
+  background-size:230px 64px,145px 145px,100% 100%;
+  background-position:0 35%,center,center;
+  filter:drop-shadow(1px 4px 2px rgba(65,35,28,.19));
+}
+#homeView #catalog #categoryFilters>.chip:nth-child(4n+1)::after{
+  -webkit-mask-image:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20400%20110%22%20preserveAspectRatio%3D%22none%22%3E%3Cpath%20d%3D%22M6.2%2C6.5L13.3%2C5.6L37.1%2C5L50.4%2C6.2L61.8%2C11.8L76.8%2C9.3L96.8%2C10.3L117%2C6.8L130%2C7.6L146.8%2C11.8L161.3%2C6.3L176.2%2C12.8L185.7%2C9.6L204.1%2C12.8L215.4%2C9.6L233%2C7.6L249.1%2C5.7L258.6%2C11.7L273.6%2C7.1L285.1%2C10.5L298.2%2C9.6L318.1%2C5.6L336.6%2C6.5L347.3%2C10.3L363.2%2C9.3L376.8%2C7.6L393.3%2C6.6L388.9%2C20L391.2%2C40.2L390.9%2C53L393%2C70L394.4%2C90.3L390%2C101.4L379.8%2C100.4L365.3%2C97.9L354.8%2C95.9L340.1%2C99.6L325.2%2C96.2L306.1%2C95.3L295%2C95.4L283%2C101.9L268.8%2C96.3L258.3%2C96.7L241.2%2C100.3L221.2%2C101L208.1%2C100.4L190.8%2C94.4L179.6%2C102.8L156.5%2C97.6L140.9%2C101.2L125.6%2C98.6L109.7%2C96.7L92.4%2C99.9L82.1%2C96.1L70.8%2C101.4L56%2C100L42.6%2C98.6L29.5%2C94.8L12.6%2C98.3L9.6%2C99.6L10%2C85L5.2%2C66.4L8.7%2C47.4L8.4%2C33.4Z%22%20fill%3D%22white%22%2F%3E%3C%2Fsvg%3E")!important;
+  mask-image:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20400%20110%22%20preserveAspectRatio%3D%22none%22%3E%3Cpath%20d%3D%22M6.2%2C6.5L13.3%2C5.6L37.1%2C5L50.4%2C6.2L61.8%2C11.8L76.8%2C9.3L96.8%2C10.3L117%2C6.8L130%2C7.6L146.8%2C11.8L161.3%2C6.3L176.2%2C12.8L185.7%2C9.6L204.1%2C12.8L215.4%2C9.6L233%2C7.6L249.1%2C5.7L258.6%2C11.7L273.6%2C7.1L285.1%2C10.5L298.2%2C9.6L318.1%2C5.6L336.6%2C6.5L347.3%2C10.3L363.2%2C9.3L376.8%2C7.6L393.3%2C6.6L388.9%2C20L391.2%2C40.2L390.9%2C53L393%2C70L394.4%2C90.3L390%2C101.4L379.8%2C100.4L365.3%2C97.9L354.8%2C95.9L340.1%2C99.6L325.2%2C96.2L306.1%2C95.3L295%2C95.4L283%2C101.9L268.8%2C96.3L258.3%2C96.7L241.2%2C100.3L221.2%2C101L208.1%2C100.4L190.8%2C94.4L179.6%2C102.8L156.5%2C97.6L140.9%2C101.2L125.6%2C98.6L109.7%2C96.7L92.4%2C99.9L82.1%2C96.1L70.8%2C101.4L56%2C100L42.6%2C98.6L29.5%2C94.8L12.6%2C98.3L9.6%2C99.6L10%2C85L5.2%2C66.4L8.7%2C47.4L8.4%2C33.4Z%22%20fill%3D%22white%22%2F%3E%3C%2Fsvg%3E")!important;
+  background-position:5px 12px,center,center;
+  background-size:227px 63px,145px 145px,100% 100%;
+  background-image:var(--du-catalog-newspaper-print),url('/assets/editorial-paper-fibres-20261108.svg'),linear-gradient(115deg,#f6e7d6,#f2dec9 55%,#e9cdb4);
+}
+#homeView #catalog #categoryFilters>.chip:nth-child(4n+1)[aria-pressed="true"]::after{
+  background-image:var(--du-catalog-newspaper-print),linear-gradient(108deg,#651426,#8c2340 58%,#6c1b30);
+  background-size:227px 63px,100% 100%;
+}
+#homeView #catalog #categoryFilters>.chip:nth-child(4n+2)::after{
+  -webkit-mask-image:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20400%20110%22%20preserveAspectRatio%3D%22none%22%3E%3Cpath%20d%3D%22M9.8%2C7.5L15.4%2C6.4L31.3%2C11L39%2C8.3L55.9%2C10.2L69.7%2C10.9L83.8%2C5.9L100.2%2C5.2L111.6%2C9L127.6%2C12.9L145.6%2C6.7L159.2%2C5.8L175.6%2C11.4L189.2%2C9.2L202.3%2C7.6L218.4%2C10.3L234%2C6.7L249.2%2C6.1L261.1%2C7.5L281.4%2C10.4L300.7%2C9.2L311.4%2C5.8L328.8%2C12.4L341.4%2C5.4L352.2%2C7.7L369.2%2C6.6L392.4%2C5.4L390%2C20L394.8%2C38.4L389%2C60.1L391.2%2C73.9L391.9%2C92.4L390.1%2C97.5L375.2%2C95.6L362.8%2C97.6L348%2C101.9L330.6%2C102.1L324.9%2C94.2L306.1%2C98.9L291.6%2C100.1L277.7%2C101.2L259.1%2C95.4L245.1%2C94.8L235.2%2C98.5L213.6%2C97.4L204.4%2C96.8L194.6%2C94L178.1%2C99.4L166.6%2C95.6L151.8%2C101.6L137.6%2C96.3L122.1%2C94L107.4%2C96.6L87.2%2C97.7L77.2%2C102.5L55.4%2C101.7L41.5%2C94.3L25.9%2C101.5L16.5%2C101.7L9.6%2C100.7L5.6%2C85L8.9%2C71.3L4.4%2C56.5L6.8%2C41.1L9.9%2C26.4Z%22%20fill%3D%22white%22%2F%3E%3C%2Fsvg%3E")!important;
+  mask-image:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20400%20110%22%20preserveAspectRatio%3D%22none%22%3E%3Cpath%20d%3D%22M9.8%2C7.5L15.4%2C6.4L31.3%2C11L39%2C8.3L55.9%2C10.2L69.7%2C10.9L83.8%2C5.9L100.2%2C5.2L111.6%2C9L127.6%2C12.9L145.6%2C6.7L159.2%2C5.8L175.6%2C11.4L189.2%2C9.2L202.3%2C7.6L218.4%2C10.3L234%2C6.7L249.2%2C6.1L261.1%2C7.5L281.4%2C10.4L300.7%2C9.2L311.4%2C5.8L328.8%2C12.4L341.4%2C5.4L352.2%2C7.7L369.2%2C6.6L392.4%2C5.4L390%2C20L394.8%2C38.4L389%2C60.1L391.2%2C73.9L391.9%2C92.4L390.1%2C97.5L375.2%2C95.6L362.8%2C97.6L348%2C101.9L330.6%2C102.1L324.9%2C94.2L306.1%2C98.9L291.6%2C100.1L277.7%2C101.2L259.1%2C95.4L245.1%2C94.8L235.2%2C98.5L213.6%2C97.4L204.4%2C96.8L194.6%2C94L178.1%2C99.4L166.6%2C95.6L151.8%2C101.6L137.6%2C96.3L122.1%2C94L107.4%2C96.6L87.2%2C97.7L77.2%2C102.5L55.4%2C101.7L41.5%2C94.3L25.9%2C101.5L16.5%2C101.7L9.6%2C100.7L5.6%2C85L8.9%2C71.3L4.4%2C56.5L6.8%2C41.1L9.9%2C26.4Z%22%20fill%3D%22white%22%2F%3E%3C%2Fsvg%3E")!important;
+  background-position:-31px 22px,center,center;
+  background-size:248px 73px,173px 173px,100% 100%;
+  background-image:var(--du-catalog-newspaper-print),url('/assets/editorial-paper-fibres-20261108.svg'),linear-gradient(115deg,#ebd1b8,#f6e5d1 52%,#e1bfa5);
+}
+#homeView #catalog #categoryFilters>.chip:nth-child(4n+2)[aria-pressed="true"]::after{
+  background-image:var(--du-catalog-newspaper-print),linear-gradient(108deg,#651426,#8c2340 58%,#6c1b30);
+  background-size:248px 73px,100% 100%;
+}
+#homeView #catalog #categoryFilters>.chip:nth-child(4n+3)::after{
+  -webkit-mask-image:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20400%20110%22%20preserveAspectRatio%3D%22none%22%3E%3Cpath%20d%3D%22M8.4%2C5.5L17.5%2C7.3L33.5%2C9L43.6%2C10.3L60.1%2C8.6L78.6%2C12.5L92.8%2C9.6L105.4%2C11.6L117.1%2C10.5L140.4%2C5.9L155.8%2C7.2L172.3%2C6.9L191.4%2C5.2L200.2%2C5.6L213.2%2C5.5L233.8%2C13L248.9%2C7.6L263.8%2C8.4L278.6%2C7.9L293.7%2C10.3L305.2%2C8.8L320.7%2C6L336.9%2C10.4L351.5%2C8.5L365.1%2C6.2L385.7%2C5.7L394.4%2C10.3L391%2C20L391.4%2C36.5L394.2%2C57.1L389.5%2C77.7L389.3%2C94.6L390.2%2C98.6L376.6%2C99.9L360.3%2C97.3L347.3%2C98.8L336.1%2C95.7L318.6%2C101.3L309.2%2C102.4L297.2%2C95.8L281.4%2C100.5L267.5%2C94.4L255.9%2C101.9L232.1%2C96.8L214.9%2C102.9L200.7%2C102.3L183.4%2C102.6L173.6%2C96L152.7%2C102.7L138.7%2C102L122.6%2C94.1L113.6%2C100.4L98.4%2C102.3L83.2%2C99.3L74.6%2C94.7L54.7%2C94.3L43.3%2C99.1L28.2%2C99.2L11%2C98.1L7.5%2C85L4.2%2C68L6.1%2C51.5L8.3%2C37.1L8.3%2C21.4Z%22%20fill%3D%22white%22%2F%3E%3C%2Fsvg%3E")!important;
+  mask-image:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20400%20110%22%20preserveAspectRatio%3D%22none%22%3E%3Cpath%20d%3D%22M8.4%2C5.5L17.5%2C7.3L33.5%2C9L43.6%2C10.3L60.1%2C8.6L78.6%2C12.5L92.8%2C9.6L105.4%2C11.6L117.1%2C10.5L140.4%2C5.9L155.8%2C7.2L172.3%2C6.9L191.4%2C5.2L200.2%2C5.6L213.2%2C5.5L233.8%2C13L248.9%2C7.6L263.8%2C8.4L278.6%2C7.9L293.7%2C10.3L305.2%2C8.8L320.7%2C6L336.9%2C10.4L351.5%2C8.5L365.1%2C6.2L385.7%2C5.7L394.4%2C10.3L391%2C20L391.4%2C36.5L394.2%2C57.1L389.5%2C77.7L389.3%2C94.6L390.2%2C98.6L376.6%2C99.9L360.3%2C97.3L347.3%2C98.8L336.1%2C95.7L318.6%2C101.3L309.2%2C102.4L297.2%2C95.8L281.4%2C100.5L267.5%2C94.4L255.9%2C101.9L232.1%2C96.8L214.9%2C102.9L200.7%2C102.3L183.4%2C102.6L173.6%2C96L152.7%2C102.7L138.7%2C102L122.6%2C94.1L113.6%2C100.4L98.4%2C102.3L83.2%2C99.3L74.6%2C94.7L54.7%2C94.3L43.3%2C99.1L28.2%2C99.2L11%2C98.1L7.5%2C85L4.2%2C68L6.1%2C51.5L8.3%2C37.1L8.3%2C21.4Z%22%20fill%3D%22white%22%2F%3E%3C%2Fsvg%3E")!important;
+  background-position:22px -8px,center,center;
+  background-size:209px 61px,131px 131px,100% 100%;
+  background-image:var(--du-catalog-newspaper-print),url('/assets/editorial-paper-fibres-20261108.svg'),linear-gradient(115deg,#fbeddc,#f2dfc8 57%,#ebd3bd);
+}
+#homeView #catalog #categoryFilters>.chip:nth-child(4n+3)[aria-pressed="true"]::after{
+  background-image:var(--du-catalog-newspaper-print),linear-gradient(108deg,#651426,#8c2340 58%,#6c1b30);
+  background-size:209px 61px,100% 100%;
+}
+#homeView #catalog #categoryFilters>.chip:nth-child(4n+4)::after{
+  -webkit-mask-image:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20400%20110%22%20preserveAspectRatio%3D%22none%22%3E%3Cpath%20d%3D%22M7%2C6.6L13.7%2C8.2L35.7%2C6.9L54.3%2C12.4L70.2%2C7L81.6%2C6.1L101.8%2C5.3L118.6%2C10L136.7%2C11.9L153.2%2C6.9L172.1%2C7.6L179.3%2C8L199.2%2C7L217.2%2C10L232.1%2C11.5L251.2%2C7.7L263.7%2C8.5L278.4%2C10.8L296.1%2C8.3L306%2C10.2L323.7%2C8.4L337.9%2C6.2L353.1%2C8.3L369.6%2C11.6L384%2C12.6L394.1%2C10.8L394.7%2C20L390.2%2C36.8L393.1%2C52.9L389.8%2C74.9L391.2%2C90.7L391.8%2C101.1L377.9%2C96.8L363.6%2C95.1L343.5%2C97L332.2%2C95.8L318.3%2C98.3L304%2C99.4L288.9%2C97L279.4%2C100.5L264.8%2C99.8L255.5%2C102.5L237.5%2C99.9L220.7%2C95.1L208%2C99.3L191.6%2C98.8L172.9%2C102.2L157.8%2C101.6L148.4%2C100.8L129.3%2C102.4L111.4%2C100.8L93.7%2C97.7L75%2C99L55.9%2C100.9L42.7%2C95.8L30.8%2C96L18.9%2C94.8L9.6%2C98.6L7.4%2C85L6.8%2C69.2L8.6%2C51.2L10.7%2C33.5L9.3%2C17.6Z%22%20fill%3D%22white%22%2F%3E%3C%2Fsvg%3E")!important;
+  mask-image:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20400%20110%22%20preserveAspectRatio%3D%22none%22%3E%3Cpath%20d%3D%22M7%2C6.6L13.7%2C8.2L35.7%2C6.9L54.3%2C12.4L70.2%2C7L81.6%2C6.1L101.8%2C5.3L118.6%2C10L136.7%2C11.9L153.2%2C6.9L172.1%2C7.6L179.3%2C8L199.2%2C7L217.2%2C10L232.1%2C11.5L251.2%2C7.7L263.7%2C8.5L278.4%2C10.8L296.1%2C8.3L306%2C10.2L323.7%2C8.4L337.9%2C6.2L353.1%2C8.3L369.6%2C11.6L384%2C12.6L394.1%2C10.8L394.7%2C20L390.2%2C36.8L393.1%2C52.9L389.8%2C74.9L391.2%2C90.7L391.8%2C101.1L377.9%2C96.8L363.6%2C95.1L343.5%2C97L332.2%2C95.8L318.3%2C98.3L304%2C99.4L288.9%2C97L279.4%2C100.5L264.8%2C99.8L255.5%2C102.5L237.5%2C99.9L220.7%2C95.1L208%2C99.3L191.6%2C98.8L172.9%2C102.2L157.8%2C101.6L148.4%2C100.8L129.3%2C102.4L111.4%2C100.8L93.7%2C97.7L75%2C99L55.9%2C100.9L42.7%2C95.8L30.8%2C96L18.9%2C94.8L9.6%2C98.6L7.4%2C85L6.8%2C69.2L8.6%2C51.2L10.7%2C33.5L9.3%2C17.6Z%22%20fill%3D%22white%22%2F%3E%3C%2Fsvg%3E")!important;
+  background-position:-54px 6px,center,center;
+  background-size:266px 74px,164px 164px,100% 100%;
+  background-image:var(--du-catalog-newspaper-print),url('/assets/editorial-paper-fibres-20261108.svg'),linear-gradient(115deg,#f0ddc7,#f9ebd8 54%,#ebcdb6);
+}
+#homeView #catalog #categoryFilters>.chip:nth-child(4n+4)[aria-pressed="true"]::after{
+  background-image:var(--du-catalog-newspaper-print),linear-gradient(108deg,#651426,#8c2340 58%,#6c1b30);
+  background-size:266px 74px,100% 100%;
+}
+#homeView #catalog #categoryFilters>.chip:nth-child(7n+1){--collage-rotate:-1.25deg;--collage-shift:2px}
+#homeView #catalog #categoryFilters>.chip:nth-child(7n+2){--collage-rotate:.8deg;--collage-shift:-3px}
+#homeView #catalog #categoryFilters>.chip:nth-child(7n+3){--collage-rotate:-.65deg;--collage-shift:2px}
+#homeView #catalog #categoryFilters>.chip:nth-child(7n+4){--collage-rotate:1.35deg;--collage-shift:-2px}
+#homeView #catalog #categoryFilters>.chip:nth-child(7n+5){--collage-rotate:-.9deg;--collage-shift:3px}
+#homeView #catalog #categoryFilters>.chip:nth-child(7n+6){--collage-rotate:.65deg;--collage-shift:-1px}
+#homeView #catalog #categoryFilters>.chip:nth-child(7n+7){--collage-rotate:-.5deg;--collage-shift:2px}
+#homeView #catalog #categoryFilters>.chip:hover,
+#homeView #catalog #categoryFilters>.chip:focus-visible{
+  transform:rotate(var(--collage-rotate)) translateY(calc(var(--collage-shift) - 3px));
+}
+#homeView #catalog #categoryFilters>.chip[aria-pressed="true"]{
+  transform:rotate(var(--collage-rotate)) translateY(var(--collage-shift));
+}
+/* Distinct widths: 7 cutouts in the first row, 6 in the second. */
+@media(min-width:1181px){
+ #homeView #catalog #categoryFilters{
+   grid-template-columns:repeat(30,minmax(0,1fr));
+   column-gap:11px!important;
+   row-gap:14px!important;
+   padding-top:17px!important;
+   padding-bottom:20px!important;
+ }
+ #homeView #catalog #categoryFilters>.chip:nth-child(1){grid-column:span 5}
+ #homeView #catalog #categoryFilters>.chip:nth-child(2){grid-column:span 4}
+ #homeView #catalog #categoryFilters>.chip:nth-child(3){grid-column:span 4}
+ #homeView #catalog #categoryFilters>.chip:nth-child(4){grid-column:span 6}
+ #homeView #catalog #categoryFilters>.chip:nth-child(5){grid-column:span 4}
+ #homeView #catalog #categoryFilters>.chip:nth-child(6){grid-column:span 3}
+ #homeView #catalog #categoryFilters>.chip:nth-child(7){grid-column:span 4}
+ #homeView #catalog #categoryFilters>.chip:nth-child(8){grid-column:span 5}
+ #homeView #catalog #categoryFilters>.chip:nth-child(9){grid-column:span 4}
+ #homeView #catalog #categoryFilters>.chip:nth-child(10){grid-column:span 6}
+ #homeView #catalog #categoryFilters>.chip:nth-child(11){grid-column:span 4}
+ #homeView #catalog #categoryFilters>.chip:nth-child(12){grid-column:span 5}
+ #homeView #catalog #categoryFilters>.chip:nth-child(13){grid-column:span 6}
+ #homeView #catalog #categoryFilters>.chip{
+   min-width:0!important;
+   padding:11px 5px 14px!important;
+   min-height:76px!important;
+   font-size:clamp(12px,1vw,16px);
+ }
+}
+@media(min-width:761px) and (max-width:1180px){
+ #homeView #catalog #categoryFilters{
+  row-gap:14px!important;
+  column-gap:12px!important;
+ }
+}
+@media(max-width:760px){
+ #homeView #catalog #categoryFilters{column-gap:9px!important;row-gap:12px!important}
+ #homeView #catalog #categoryFilters>.chip{
+  --collage-shift:0px;
+  --collage-rotate:0deg;
+ }
+ #homeView #catalog #categoryFilters>.chip:nth-child(4n+1){--collage-rotate:-.55deg}
+ #homeView #catalog #categoryFilters>.chip:nth-child(4n+2){--collage-rotate:.4deg}
+ #homeView #catalog #categoryFilters>.chip:nth-child(4n+3){--collage-rotate:-.3deg}
+ #homeView #catalog #categoryFilters>.chip:nth-child(4n+4){--collage-rotate:.55deg}
+}
+@media(prefers-reduced-motion:reduce){
+ #homeView #catalog #categoryFilters>.chip{transition:none}
+}
