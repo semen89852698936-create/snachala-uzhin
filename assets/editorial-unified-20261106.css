@@ -4643,3 +4643,34 @@ body .du-mood::before{
 body .du-time-choices button{
   padding-inline:20px!important;
 }
+
+/* RESPONSIVE_PAPER_BUTTON_MASK_20261109
+   Real-browser finding: the original 320x112 SVG has a default
+   preserveAspectRatio="meet". Chromium letterboxes it on tall / wide
+   buttons, leaving labels outside the apparent ripped paper.
+   This is the SAME approved SVG art and fibres, with ONLY its rendering
+   aspect ratio set to "none". Apply solely to regular action paper:
+   the approved hero CTAs, 10 illustrated category cards and the original
+   special navigation tabs retain their existing art and dimensions. */
+:root{
+  --du-responsive-action-tear-mask:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22320%22%20height%3D%22112%22%20viewBox%3D%220%200%20320%20112%22%20preserveAspectRatio%3D%22none%22%3E%0A%3Cdefs%3E%3Cfilter%20id%3D%22roughen%22%20x%3D%22-3%25%22%20y%3D%22-12%25%22%20width%3D%22106%25%22%20height%3D%22124%25%22%3E%0A%3CfeTurbulence%20type%3D%22fractalNoise%22%20baseFrequency%3D%22.055%20.19%22%20numOctaves%3D%223%22%20seed%3D%2212%22%20result%3D%22grain%22%2F%3E%0A%3CfeDisplacementMap%20in%3D%22SourceGraphic%22%20in2%3D%22grain%22%20scale%3D%222.8%22%20xChannelSelector%3D%22R%22%20yChannelSelector%3D%22G%22%2F%3E%0A%3C%2Ffilter%3E%3C%2Fdefs%3E%0A%3Cpath%20filter%3D%22url(%23roughen)%22%20fill%3D%22%23fff%22%20d%3D%22M2%2015%20L8%209%2013%2012%2021%208%2031%2011%2037%207%2042%209%2053%205%2067%208%2071%206%2083%2012%2089%206%20100%209%20104%207%20117%2011%20125%206%20130%208%20143%205%20149%2011%20157%209%20166%2012%20179%208%20186%2011%20196%205%20201%209%20211%207%20218%2012%20229%207%20239%2011%20247%208%20252%2010%20265%205%20269%208%20278%207%20286%2012%20300%208%20308%2010%20317%208%20319%2015%20317%2023%20320%2038%20316%2055%20319%2071%20317%2084%20318%2098%20312%20102%20305%2098%20297%20105%20283%20102%20273%20107%20264%20101%20256%20104%20243%2099%20232%20104%20222%20100%20217%20106%20207%20102%20196%20107%20187%20101%20180%20102%20168%20106%20156%20101%20148%20105%20139%20100%20128%20104%20115%20101%20105%20106%2096%20101%2087%20105%2079%20102%2068%20107%2057%2099%2051%20102%2042%2099%2035%20107%2026%20103%2017%20104%209%20100%203%20102%201%2094%204%2085%200%2070%202%2058%200%2049%204%2035%201%2026Z%22%2F%3E%0A%3Cg%20stroke%3D%22%23fff%22%20fill%3D%22none%22%20stroke-linecap%3D%22round%22%20opacity%3D%22.83%22%3E%0A%3Cpath%20d%3D%22M13%2011l-3-6M72%207l-1-5M118%2010l4-7M197%206l-1-4M273%207l2-5M313%2099l6%204M257%20104l-2%206M171%20103l4%206M97%20102l-1%208M33%20106l-3%204%22%20stroke-width%3D%22.9%22%2F%3E%0A%3Cpath%20d%3D%22M4%2047l-4%201M319%2054l-3%202M0%2074l5%203M319%2084l-5-1%22%20stroke-width%3D%22.65%22%2F%3E%0A%3C%2Fg%3E%0A%3C%2Fsvg%3E%0A");
+}
+body :is(
+  button:not(.category-card):not(#tryCooking):not(.shopping-open),
+  a.du-btn:not(.du-hero-actions > a),
+  .header .main-nav > a:not([data-nav="evening"]):not([data-nav="airfryer"]),
+  .du-quick-nav-mobile > a,
+  a.du-evening-back,
+  a.du-music-open-spotify
+)::before,
+body .header .header-actions button.shopping-open:not(#tryCooking)::before,
+body a.du-evening-nav-mobile:not(#tryCooking)::after{
+  -webkit-mask-image:var(--du-responsive-action-tear-mask)!important;
+  mask-image:var(--du-responsive-action-tear-mask)!important;
+  -webkit-mask-size:100% 100%!important;
+  mask-size:100% 100%!important;
+  -webkit-mask-position:center!important;
+  mask-position:center!important;
+  -webkit-mask-repeat:no-repeat!important;
+  mask-repeat:no-repeat!important;
+}
