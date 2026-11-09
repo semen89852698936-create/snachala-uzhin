@@ -4916,3 +4916,19 @@ body .du-mood .du-mood-check{
     transition:none!important;
   }
 }
+
+
+/* CATEGORY_NO_BANNER_OVERLAP_20261109
+   Owner-approved full-width «Просто накройте на двоих» image and the
+   «Тысяча историй» paper chapter must meet edge-to-edge, not overlap.
+   Previous category margin-top -24px (-12px mobile) laid its opaque
+   sheet ON TOP of the lower part of the photograph. Preserve each
+   block's size, content and the approved left marker stroke. */
+#homeView > .du-categories{
+  margin-top:0!important;
+}
+@media(max-width:760px){
+  #homeView > .du-categories{
+    margin-top:0!important;
+  }
+}
