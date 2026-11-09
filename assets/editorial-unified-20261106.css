@@ -4054,9 +4054,8 @@ header.header .du-brand-mark svg.du-wine-icon{visibility:hidden!important;}
 
 
 /* MUSIC_TO_PREVIOUS_SECTION_CONNECTOR_20261109
-   Editorial spacing and one continuous burgundy curve between the
-   preceding Evening feature and the music spread. No changes to
-   the approved card art, colors, typography, tracks, or controls. */
+   Only the requested editorial connection: slightly raised music section
+   and a single side marker stroke. Approved card artwork is untouched. */
 #music,
 body.du-evening-mode #music {
   position:relative;
@@ -4067,18 +4066,31 @@ body.du-evening-mode #music {
 body.du-evening-mode #music::before {
   content:"";
   position:absolute;
-  top:clamp(-45px,-3.5vw,-30px);
-  left:clamp(28px,17vw,270px);
-  width:clamp(112px,16vw,210px);
-  height:clamp(48px,5.5vw,78px);
-  border-top:2px solid #8b283d;
-  border-right:2px solid #8b283d;
-  border-top-right-radius:100% 100%;
-  transform:rotate(-6deg);
-  opacity:.82;
+  top:clamp(-92px,-6vw,-60px);
+  left:clamp(-62px,-3.8vw,-22px);
+  width:clamp(62px,6.4vw,88px);
+  height:clamp(235px,26vw,342px);
   pointer-events:none;
   z-index:2;
+  opacity:.96;
+  border:0;
+  border-radius:0;
+  transform:none;
+  background: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2094%20364%22%3E%3Cpath%20d%3D%22M79%209%20C64%2026%2030%2055%2025%2093%20C19%20131%2048%20160%2048%20202%20C48%20246%2022%20270%2024%20309%20C25%20329%2035%20345%2042%20357%22%20fill%3D%22none%22%20stroke%3D%22%238b283d%22%20stroke-width%3D%2216%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%20opacity%3D%22.91%22%2F%3E%3Cpath%20d%3D%22M81%208%20C65%2024%2029%2053%2027%2092%20C24%20134%2049%20160%2049%20204%20C47%20251%2025%20273%2027%20309%20C29%20329%2036%20344%2043%20355%22%20fill%3D%22none%22%20stroke%3D%22%23ba5360%22%20stroke-width%3D%224%22%20stroke-linecap%3D%22round%22%20opacity%3D%22.32%22%2F%3E%3C%2Fsvg%3E") no-repeat center/100% 100%;
 }
+
+/* REQUESTED_MUSIC_SUBHEADING_FONT_20261109
+   Only the line "Готовить, ужинать и продолжать вечер под свой ритм." */
+#music .du-music-heading .du-section-heading > p,
+body.du-evening-mode #music .du-music-heading .du-section-heading > p {
+  font-family:'Cormorant Garamond',Georgia,'Times New Roman',serif;
+  font-style:italic;
+  font-weight:600;
+  font-size:clamp(21px,1.65vw,25px);
+  line-height:1.28;
+  letter-spacing:-.012em;
+}
+
 @media(max-width:760px){
   #music,
   body.du-evening-mode #music {
@@ -4087,10 +4099,14 @@ body.du-evening-mode #music::before {
   }
   #music::before,
   body.du-evening-mode #music::before {
-    top:-29px;
-    left:26px;
-    width:112px;
-    height:50px;
-    transform:rotate(-4deg);
+    top:-48px;
+    left:-28px;
+    width:54px;
+    height:225px;
+  }
+  #music .du-music-heading .du-section-heading > p,
+  body.du-evening-mode #music .du-music-heading .du-section-heading > p {
+    font-size:clamp(20px,4.8vw,23px);
+    line-height:1.34;
   }
 }
