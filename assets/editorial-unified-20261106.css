@@ -5674,3 +5674,12 @@ body .du-mood .du-mood-check{
     row-gap:20px;
   }
 }
+
+
+/* BONUS_BEFORE_MY_RECIPES_20261110
+   The original banner is now after the recipe catalog. The old right-side
+   stroke connected it to 'Тысяча историй' at its previous position; hide
+   only that orphaned connector. Preserve the approved banner and button. */
+#homeView .du-bonus.bonus-section.container::before{
+  display:none!important;
+}
