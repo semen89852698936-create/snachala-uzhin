@@ -5683,3 +5683,28 @@ body .du-mood .du-mood-check{
 #homeView .du-bonus.bonus-section.container::before{
   display:none!important;
 }
+
+
+/* CATALOG_REFERENCE_PROPORTIONS_20261110
+   Match approved 1648x928 editorial spread: the wine masthead finishes
+   above the cream search sheet; first six recipe cards fit into two compact
+   222px editorial rows. No changes to recipe/filter data. */
+@media(min-width:1181px){
+  #homeView #catalog .du-section-top{
+    min-height:205px;
+    padding-top:20px;
+    padding-bottom:17px;
+  }
+  #homeView #catalog .du-section-heading h2{
+    font-size:clamp(48px,4.6vw,77px);
+  }
+  #homeView #catalog #recipeGrid.recipe-grid{
+    grid-template-rows:222px 222px;
+  }
+  #homeView #catalog #recipeGrid>.recipe-card:first-child .card-image{
+    height:clamp(240px,16vw,265px);
+  }
+  #homeView #catalog #recipeGrid>.recipe-card:first-child .card-body h3{
+    font-size:clamp(31px,2.55vw,42px);
+  }
+}
