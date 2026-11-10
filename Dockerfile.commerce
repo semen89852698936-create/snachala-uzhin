@@ -8,6 +8,10 @@ RUN python /build/private_catalog.py /build/index.html /build/private/app.html
 FROM python:3.12-slim
 ENV PYTHONDONTWRITEBYTECODE=1 PYTHONUNBUFFERED=1
 WORKDIR /srv/site
+# Timeweb health checks require curl to be present in the runtime image.
+RUN apt-get update \
+    && apt-get install -y --no-install-recommends curl \
+    && rm -rf /var/lib/apt/lists/*
 RUN pip install --no-cache-dir gunicorn==23.0.0 'psycopg[binary]==3.3.6' && useradd --system --uid 10001 app
 COPY --from=builder /build/private/app.html /srv/private/app.html
 COPY commerce /srv/site/commerce
