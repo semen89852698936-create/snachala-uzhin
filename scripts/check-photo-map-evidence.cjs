@@ -12,7 +12,7 @@ function check(map, curated, summary) {
   if (new Set(photos.map(p => p.path)).size !== photos.length) errors.push('duplicate image paths');
   for (const [i,p] of photos.entries()) {
     if (p.n !== i + 1) errors.push('out-of-order photo '+(i+1));
-    if (!/^\\/assets\\/recipes-ai\\/\\d{4}-[^/]+\\.webp$/.test(p.path)) errors.push('invalid path '+(i+1));
+    if (!p.path.startsWith('/assets/recipes-ai/') || !p.path.endsWith('.webp') || !/^\d{4}-[^/]+\.webp$/.test(p.path.slice('/assets/recipes-ai/'.length))) errors.push('invalid path '+(i+1));
     if (!/^[0-9a-f]{40}$/.test(p.sha || '') || !(p.bytes > 0)) errors.push('invalid metadata '+(i+1));
   }
   for (const c of curated.sources || []) {
