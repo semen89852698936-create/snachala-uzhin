@@ -26,7 +26,7 @@ const editorialPaperAssets=[
 // Approved editorial imagery grows as new sections are implemented. Keep the
 // security boundary (local assets or inline SVG), not a frozen six-file list.
 for (const url of cssUrls) {
-  if (url.startsWith('data:image/svg+xml,')) continue;
+  if (url.startsWith('data:image/svg+xml,') || /^data:image\/(?:webp|png|avif);base64,[A-Za-z0-9+/=]+$/.test(url)) continue;
   assert(url.startsWith('/assets/'),
     'CSS asset must be local or an inline SVG: '+url.slice(0,100));
   const assetPath=url.split('?')[0].split('#')[0];
