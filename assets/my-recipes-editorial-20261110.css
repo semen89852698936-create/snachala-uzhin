@@ -72,7 +72,7 @@
 #homeView #my-recipes .du-my-fig-still{
   position:absolute;z-index:0;left:clamp(-95px,-5.5vw,-28px);bottom:-38px;
   width:clamp(205px,26vw,340px);height:clamp(240px,25vw,340px);
-  background-image:url("https://images.pexels.com/photos/9911568/pexels-photo-9911568.jpeg?auto=compress&cs=tinysrgb&w=820");
+  background-image:url("https://images.pexels.com/photos/9911568/pexels-photo-9911568.jpeg?auto=compress&cs=tinysrgb&w=820"),url("/assets/recipes-ai/0017-greek-salad.webp");
   background-size:cover;background-position:center 43%;
   -webkit-mask-image:radial-gradient(ellipse 74% 76% at 40% 59%,#000 42%,transparent 100%);
   mask-image:radial-gradient(ellipse 74% 76% at 40% 59%,#000 42%,transparent 100%);
@@ -262,4 +262,9 @@
 }
 @media(prefers-reduced-motion:reduce){
  #homeView #my-recipes .du-my-photo-open img,#homeView #my-recipes .du-my-empty-cta{transition:none;}
+}
+
+/* The approved active newspaper navigation tab when the personal section is selected. */
+body:has(#my-recipes:target) .main-nav a[data-nav="my-recipes"]{
+ background:#77172b!important;color:#fff8ed!important;
 }
