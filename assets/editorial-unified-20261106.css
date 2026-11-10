@@ -5906,7 +5906,7 @@ body .du-mood .du-mood-check{
 #homeView #catalog .du-section-top{grid-row:1}
 #homeView #catalog .search-panel{grid-row:2;grid-column:1}
 #homeView #catalog .du-ingredient-search-tip{
-  grid-row:3!important;grid-column:1;
+  grid-row:4!important;grid-column:1;
   margin:0!important;
   padding:8px clamp(16px,2.1vw,32px) 16px!important;
   border:1px solid #e1c9b9;border-top:0;border-bottom:0;
@@ -5919,7 +5919,7 @@ body .du-mood .du-mood-check{
   background:#aa626b;opacity:.65;margin-top:11px;
 }
 #homeView #catalog .du-pantry-toolbar{
-  grid-row:4!important;grid-column:1!important;
+  grid-row:3!important;grid-column:1!important;
   display:flex;justify-self:stretch!important;align-self:stretch!important;
   align-items:center;justify-content:flex-start!important;
   flex-wrap:wrap;gap:12px;margin:0!important;
