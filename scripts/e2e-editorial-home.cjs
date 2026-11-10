@@ -115,7 +115,7 @@ const {chromium}=require('playwright');
        heroWidth:hero.getBoundingClientRect().width,
        photoWidth:art.getBoundingClientRect().width,
        contentBg:getComputedStyle(text).backgroundColor,
-       underline:getComputedStyle(slogan,'::after').backgroundColor,
+       underline:getComputedStyle(slogan,'::after').backgroundImage,
        paperClip:getComputedStyle(paperButton).clipPath,
        paperColor:getComputedStyle(paperButton).backgroundColor,
        chapters:chapters?[...chapters.querySelectorAll('a')].map(a=>({text:a.innerText.trim(),href:a.getAttribute('href')})):[],
@@ -126,7 +126,7 @@ const {chromium}=require('playwright');
      'Live homepage title is missing from photographic spread: '+JSON.stringify(photoCover));
    assert.equal(photoCover.kicker,'КУЛИНАРНЫЙ ЖУРНАЛ');
    assert.equal(photoCover.slogan,'Рецепты, которые объединяют');
-   // Rotating the entire paragraph would rotate the red underline twice or
+   // The approved cover uses a curved SVG line, not the old straight underline.
    // move it. Test independent text and line rotations: same visual angle.
    const sloganSlant=await page.evaluate(()=>{
      const p=document.querySelector('#homeView .du-hero-slogan');
@@ -141,13 +141,14 @@ const {chromium}=require('playwright');
        letteringAngle:matrixAngle(getComputedStyle(lettering).transform),
        underlineAngle:matrixAngle(underline.transform),
        paragraphAngle:matrixAngle(getComputedStyle(p).transform),
-       underlineColor:underline.backgroundColor
+       underlineColor:underline.backgroundColor,
+        underlineCurve:underline.backgroundImage
      };
    });
    assert(Math.abs(sloganSlant.letteringAngle-(-3))<0.2,
-     'Slogan lettering should rise to the right parallel with the existing underline: '+JSON.stringify(sloganSlant));
-   assert(Math.abs(sloganSlant.underlineAngle-sloganSlant.letteringAngle)<0.2,
-     'Slogan must be parallel to the SAME red underline: '+JSON.stringify(sloganSlant));
+     'Slogan lettering should rise to the right: '+JSON.stringify(sloganSlant));
+   assert(Math.abs(sloganSlant.underlineAngle)<0.2 && /data:image\/svg\+xml/.test(sloganSlant.underlineCurve) && sloganSlant.underlineCurve.includes('Q192'),
+     'The single curved SVG stroke must remain beneath the text: '+JSON.stringify(sloganSlant));
    assert(Math.abs(sloganSlant.paragraphAngle)<0.2,
      'Entire paragraph must not move or tilt the original red underline: '+JSON.stringify(sloganSlant));
    assert.equal(photoCover.occasion,'1001 повод остаться');
@@ -155,8 +156,8 @@ const {chromium}=require('playwright');
      'Approved photo must occupy WHOLE cover behind live typography, no pale left column: '+JSON.stringify(photoCover));
    assert.equal(photoCover.contentBg,'rgba(0, 0, 0, 0)',
      'Copy must be transparent and sit directly over the photograph');
-   assert.equal(photoCover.underline,'rgb(164, 32, 59)',
-     'Reference wine-red underline is missing');
+   assert(/data:image\/svg\+xml/.test(photoCover.underline) && photoCover.underline.includes('Q192'),
+     'Approved curved red SVG stroke is missing');
    assert.equal(photoCover.paperClip,'none',
      'Old polygon cutout must be replaced by irregular fibre mask: '+JSON.stringify(photoCover));
    const organicPaper=await page.evaluate(()=>{
