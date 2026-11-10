@@ -9,6 +9,7 @@ on:
       - 'scripts/e2e-unified-editorial.cjs'
       - 'scripts/e2e-airfryer-paper-buttons.cjs'
       - 'scripts/e2e-editorial-home.cjs'
+      - 'scripts/e2e-visual-rhythm.cjs'
       - 'scripts/e2e-pepper-steak-editorial.cjs'
       - 'scripts/e2e-evening-editorial.cjs'
       - '.github/workflows/unified-editorial.yml'
@@ -41,6 +42,7 @@ jobs:
           python3 -m http.server 8765 --bind 127.0.0.1 >/tmp/unified-editorial-http.log 2>&1 &
           timeout --signal=TERM --kill-after=10s 180s node scripts/e2e-airfryer-paper-buttons.cjs
           timeout --signal=TERM --kill-after=10s 180s node scripts/e2e-unified-editorial.cjs
+          timeout --signal=TERM --kill-after=10s 180s node scripts/e2e-visual-rhythm.cjs
           timeout --signal=TERM --kill-after=10s 180s node scripts/e2e-editorial-home.cjs
           timeout --signal=TERM --kill-after=10s 180s node scripts/e2e-pepper-steak-editorial.cjs
           timeout --signal=TERM --kill-after=10s 240s node scripts/e2e-evening-editorial.cjs
@@ -52,6 +54,7 @@ jobs:
           path: |
             /tmp/unified-*.png
             /tmp/editorial-home-*.png
+            /tmp/editorial-rhythm-home-*.png
             /tmp/editorial-catalog-*.png
             /tmp/editorial-pepper-*.png
             /tmp/editorial-evening-*.png
