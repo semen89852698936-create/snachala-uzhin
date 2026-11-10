@@ -4113,12 +4113,14 @@ body.du-evening-mode #music .du-music-heading .du-section-heading > p {
 
 
 /* BREAKFAST_QUOTE_SCROLL_FOCUS_20261109
-   The existing quote “Некоторые ужины заканчиваются завтраком.”
-   resolves from soft blur to sharp type as it enters the viewport.
-   Keep the original quote and background and honor reduced motion. */
+   The approved quote sharpens while entering the viewport, holds in focus,
+   then softly blurs again as it leaves. Scroll controls both directions.
+   Only the quote text is animated; the page and section remain unchanged. */
 @keyframes du-breakfast-quote-focus-20261109 {
-  0% { opacity:.20; filter:blur(13px); transform:translateY(10px); }
-  100% { opacity:1; filter:blur(0); transform:translateY(0); }
+  0%   { opacity:.20; filter:blur(13px); transform:translateY(10px); }
+  28%  { opacity:1;   filter:blur(0);    transform:translateY(0); }
+  72%  { opacity:1;   filter:blur(0);    transform:translateY(0); }
+  100% { opacity:.20; filter:blur(13px); transform:translateY(-10px); }
 }
 @supports (animation-timeline: view()) {
   #homeView > .du-quote-strip > .container {
@@ -4126,7 +4128,7 @@ body.du-evening-mode #music .du-music-heading .du-section-heading > p {
     animation-timing-function:linear;
     animation-fill-mode:both;
     animation-timeline:view(block);
-    animation-range:entry 0% cover 38%;
+    animation-range:entry 0% exit 100%;
   }
 }
 @media (prefers-reduced-motion: reduce) {
