@@ -7487,3 +7487,61 @@ body.du-evening-mode #evening .du-story-after{
     margin-left:-50vw;
   }
 }
+
+
+/* EVENING_STRAIGHT_EDITORIAL_LINES_20261111
+   Owner-requested correction: eliminate repeated wave/zigzag silhouettes
+   throughout the Evening experience while keeping a restrained magazine feel.
+   Scope is intentionally limited to Evening mode; homepage is untouched. */
+body.du-evening-mode #homeView > #eveningLanding,
+body.du-evening-mode #eveningLanding > .du-evening-landing-content,
+body.du-evening-mode #eveningLanding > .du-evening-landing-photo,
+body.du-evening-mode #eveningLanding > .du-story-dinner,
+body.du-evening-mode #eveningLanding .du-story-dinner-copy,
+body.du-evening-mode #eveningLanding .du-story-dinner-photo,
+body.du-evening-mode #evening .du-story-after,
+body.du-evening-mode #evening .du-story-after-copy,
+body.du-evening-mode #evening .du-story-after-photo,
+body.du-evening-mode .du-evening-wide-strip{
+  clip-path:none!important;
+  border-radius:0!important;
+}
+body.du-evening-mode .du-evening-wide-strip{
+  /* Crisp full-width editorial bands, no waves top or bottom. */
+  overflow:hidden;
+  border-block:1px solid rgba(79,38,38,.19);
+}
+body.du-evening-mode .du-evening-wide-strip::before,
+body.du-evening-mode .du-evening-wide-strip::after,
+body.du-evening-mode #eveningLanding > .du-evening-landing-content::after,
+body.du-evening-mode #eveningLanding > .du-evening-landing-photo::after,
+body.du-evening-mode #eveningLanding > .du-story-dinner::after,
+body.du-evening-mode #eveningLanding .du-story-dinner-copy::before,
+body.du-evening-mode #evening .du-story-after::after{
+  content:none!important;
+  display:none!important;
+}
+body.du-evening-mode #eveningLanding > .du-evening-landing-photo > img,
+body.du-evening-mode #eveningLanding .du-story-dinner-photo,
+body.du-evening-mode #evening .du-story-after-photo{
+  /* Preserve original photos while avoiding conspicuous wavy masks. */
+  -webkit-mask-image:none!important;
+  mask-image:none!important;
+}
+body.du-evening-mode #eveningLanding .du-evening-landing-cta,
+body.du-evening-mode #eveningLanding .du-story-dinner-copy .du-btn,
+body.du-evening-mode #evening .du-story-after-copy .du-btn{
+  clip-path:none!important;
+  -webkit-mask:none!important;
+  mask:none!important;
+  border-radius:2px!important;
+}
+body.du-evening-mode #eveningLanding .du-story-dinner-copy h2::after,
+body.du-evening-mode #evening .du-story-after-copy h2::after{
+  /* A straight accent rule replaces the oversized decorative curved stroke. */
+  background:none!important;
+  height:2px!important;
+  width:min(210px,56%)!important;
+  margin:13px 0 7px!important;
+  background-color:#9b2c45!important;
+}
