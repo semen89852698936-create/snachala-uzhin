@@ -65,6 +65,24 @@
   const isStandalone=()=>/^\/airfryer(?:\/|\/index\.html)?$/.test(location.pathname);
   const categoryURL=name=>'/airfryer/?category='+encodeURIComponent(name);
 
+  // Exact percentage rectangles already used by the approved collage's eight links.
+  // A separate CSS image crop gives each photograph its own hover movement
+  // without replacing or redrawing any part of the approved artwork.
+  const APPROVED_TILES=[
+    [6.2,11.6,41.4,33.4],[48.3,11.6,21.3,18.0],
+    [70.3,11.6,20.7,18.0],[48.3,30.8,42.7,14.5],
+    [6.2,46.2,25.2,18.5],[32.2,46.2,27.4,18.5],
+    [60.4,46.2,30.6,18.5],[21.0,65.8,53.0,19.9]
+  ];
+  function photoCropStyle(index){
+    const [left,top,width,height]=APPROVED_TILES[index];
+    const css=number=>Number(number.toFixed(5))+'%';
+    return '--du-crop-width:'+css(10000/width)+
+      ';--du-crop-height:'+css(10000/height)+
+      ';--du-crop-left:'+css(100*left/(100-width))+
+      ';--du-crop-top:'+css(100*top/(100-height));
+  }
+
   function showLanding() {
     const section=document.getElementById('airfryer');
     if(!section)return;
@@ -76,7 +94,7 @@
       '<div class="du-airfryer-approved-map" aria-label="Категории блюд для аэрогриля на газетном листе">'+
       '<img class="du-airfryer-approved-image" src="/assets/airfryer/airfryer-newspaper-approved-20261110.webp" width="1448" height="1086" loading="lazy" decoding="async" alt="Категории аэрогриля на одном листе рваной газеты">'+
       '<nav class="du-airfryer-approved-zones" aria-label="Открыть категорию аэрогриля">'+
-      GROUPS.map(group=>'<a class="du-airfryer-approved-zone" href="'+categoryURL(group.name)+'" aria-label="'+esc(group.name)+', '+plural(group.count)+'"><span class="du-airfryer-zone-label">'+esc(group.name)+'</span></a>').join('')+
+      GROUPS.map((group,index)=>'<a class="du-airfryer-approved-zone" href="'+categoryURL(group.name)+'" style="'+photoCropStyle(index)+'" aria-label="'+esc(group.name)+', '+plural(group.count)+'"><span class="du-airfryer-zone-label">'+esc(group.name)+'</span></a>').join('')+
       '</nav>'+
       '<div class="du-airfryer-approved-mobile">'+
       '<div class="du-airfryer-paper-header" aria-hidden="true">The Daily News <small>FOOD &amp; LIFESTYLE</small></div>'+
