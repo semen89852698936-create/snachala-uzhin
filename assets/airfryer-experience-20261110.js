@@ -88,7 +88,7 @@
     const section=document.getElementById('airfryer');
     if(!section)return;
     const layout=section.querySelector('.du-airfryer-catalog');
-    if(layout)layout.insertAdjacentHTML('afterbegin','<a class="du-airfryer-home-link" href="/#airfryer">← На главную</a>');
+    if(layout)layout.insertAdjacentHTML('afterbegin','<a class="du-airfryer-home-link" href="/">← На главную</a>');
     document.querySelectorAll('.header a[href^="#"],.du-quick-nav-mobile a[href^="#"]').forEach(link=>{
       link.href=link.getAttribute('href')==='#airfryer'?'/airfryer/':'/'+link.getAttribute('href');
     });
