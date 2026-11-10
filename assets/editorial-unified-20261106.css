@@ -6558,7 +6558,7 @@ body .du-back-to-top .du-back-to-top-arrow{font:700 24px/1 Georgia,serif;}
   -webkit-mask-image:radial-gradient(ellipse 72% 85%,#000 51%,transparent 100%);
   mask-image:radial-gradient(ellipse 72% 85%,#000 51%,transparent 100%);
 }
-#homeView .du-bonus .bonus-text>p{
+#homeView .du-bonus .bonus-text>p:not(#bonusRecipe){
   position:absolute!important;
   inset:auto!important;
   left:34.5%!important;
@@ -6577,7 +6577,7 @@ body .du-back-to-top .du-back-to-top-arrow{font:700 24px/1 Georgia,serif;}
   font:500 clamp(10px,1.24vw,27px)/1.75 Manrope,Arial,sans-serif!important;
   z-index:3;
 }
-#homeView .du-bonus .bonus-text>p::before{
+#homeView .du-bonus .bonus-text>p:not(#bonusRecipe)::before{
   content:"";
   position:absolute;
   inset:-11% -1.5%;
@@ -6593,7 +6593,7 @@ body .du-back-to-top .du-back-to-top-arrow{font:700 24px/1 Georgia,serif;}
  #homeView .du-bonus .bonus-inner>.du-bonus-corrected-number{
    font-size:clamp(24px,6.7vw,51px);
  }
- #homeView .du-bonus .bonus-text>p{
+ #homeView .du-bonus .bonus-text>p:not(#bonusRecipe){
    font-size:clamp(6px,1.22vw,10px)!important;
  }
 }
