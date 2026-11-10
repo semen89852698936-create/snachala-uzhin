@@ -6955,3 +6955,75 @@ body.du-airfryer-standalone .du-evening-back{display:none!important}
     }
   }
 }
+
+/* HOME_SMALL_TEXT_READABILITY_20261111
+   Readability-only adjustments for live HTML text, not text baked into approved
+   photographic artwork. Preserve layouts, card geometry, crop and decoration. */
+.demo-strip {
+  font-size:clamp(13px,1.02vw,15px);
+  line-height:1.5;
+  letter-spacing:.06em;
+}
+#homeView .du-eyebrow,
+#homeView .du-kicker,
+#homeView .du-hero-bottom,
+#homeView #catalog .du-section-top .du-eyebrow {
+  font-size:clamp(14px,1.12vw,16px)!important;
+  line-height:1.45!important;
+  letter-spacing:.09em;
+}
+#homeView .du-my-recipes small,
+#homeView .du-how small,
+#homeView .du-pricing small,
+#homeView #about.du-how .feature-list small,
+#homeView .du-my-sync-note,
+#homeView .du-my-summary span,
+#homeView .du-airfryer-footnote {
+  font-size:clamp(15px,1.12vw,17px)!important;
+  line-height:1.6!important;
+}
+#homeView #categoryGrid .category-tag,
+#homeView #airfryerCategoryGrid .category-tag {
+  font-size:clamp(14px,1.05vw,16px)!important;
+  line-height:1.35;
+  letter-spacing:.025em;
+}
+#homeView .du-ingredient-search-tip,
+#homeView .du-catalog .du-ingredient-search-tip,
+#homeView .result-line,
+#homeView .du-pantry-toolbar label,
+#homeView .du-pantry-toolbar small {
+  font-size:clamp(15px,1.12vw,17px)!important;
+  line-height:1.55!important;
+}
+#homeView .du-my-recipes p,
+#homeView #about.du-how .about-inner p {
+  line-height:1.65;
+}
+#homeView :is(.du-my-recipes,.du-how,.du-pricing) small {
+  overflow-wrap:break-word;
+}
+.footer .footer-inner,
+.footer .footer-inner p,
+.footer .footer-inner span {
+  font-size:clamp(14px,1.04vw,16px);
+  line-height:1.6;
+}
+@media(max-width:760px) {
+  .demo-strip {font-size:13px;letter-spacing:.035em;}
+  #homeView .du-eyebrow,
+  #homeView .du-kicker,
+  #homeView .du-hero-bottom,
+  #homeView #catalog .du-section-top .du-eyebrow {
+    font-size:14px!important;
+    letter-spacing:.065em;
+  }
+  #homeView #categoryGrid .category-tag,
+  #homeView #airfryerCategoryGrid .category-tag {
+    font-size:14px!important;
+  }
+  #homeView :is(.du-my-recipes,.du-how,.du-pricing) small,
+  #homeView #about.du-how .feature-list small {
+    font-size:15px!important;
+  }
+}
