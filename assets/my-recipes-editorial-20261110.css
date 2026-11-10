@@ -63,7 +63,7 @@
   border-left:1px solid #bfa499;padding-left:18px;
   color:#7b6c62;font:500 clamp(11px,.85vw,13px)/1.5 Manrope,Arial,sans-serif;
 }
-#homeView #my-recipes.du-my-is-empty .du-my-summary{margin-bottom:0;}
+#homeView #my-recipes.du-my-is-empty .du-my-summary{display:none;}
 /* Empty page: fig still life at left, central paper fragment, recipe polaroid at right. */
 #homeView #my-recipes .du-my-empty-scene{
   position:relative;min-height:clamp(320px,26vw,390px);max-width:1500px;
