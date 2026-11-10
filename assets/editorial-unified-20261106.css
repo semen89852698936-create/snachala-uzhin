@@ -7249,3 +7249,160 @@ body :is(
 #homeView > #my-recipes .du-my-heading-lead{
   text-wrap:pretty;
 }
+
+/* EVENING_HOMEPAGE_PARITY_20261111
+   Three existing couple photographs are the editorial story. 
+   No image src, recipe link or player is replaced. The full-width torn
+   strips echo the approved main-page crosswise newspaper artwork. */
+body.du-evening-mode{
+  --evening-paper:#f5e9dc;
+  --evening-wine:#751b34;
+  --evening-ink:#332421;
+}
+body.du-evening-mode #eveningLanding,
+body.du-evening-mode #evening,
+body.du-evening-mode #music{
+  color:var(--evening-ink);
+}
+body.du-evening-mode #eveningLanding{
+  row-gap:0;
+  background:#f8efe4;
+  background-image:var(--du-editorial-paper-grain);
+}
+body.du-evening-mode #eveningLanding .du-evening-landing-content h1{
+  font:400 clamp(78px,8.5vw,140px)/.84 var(--du-magazine-serif);
+  letter-spacing:-.065em;
+  color:var(--evening-wine);
+  text-wrap:balance;
+}
+body.du-evening-mode #eveningLanding .du-evening-landing-content h1 em{
+  color:#982642;
+}
+body.du-evening-mode #eveningLanding .du-evening-landing-lead{
+  color:#5d2c36;
+  font:italic 400 clamp(28px,3.2vw,43px)/1.05 var(--du-magazine-serif);
+  max-width:21ch;
+}
+body.du-evening-mode #eveningLanding .du-evening-landing-text{
+  color:#45352f;
+  line-height:1.68;
+  font-size:clamp(16px,1.15vw,19px);
+}
+body.du-evening-mode #eveningLanding .du-evening-landing-photo img,
+body.du-evening-mode #eveningLanding .du-story-dinner-photo img,
+body.du-evening-mode #evening .du-story-after-photo img{
+  filter:saturate(1.02) contrast(1.04);
+}
+body.du-evening-mode #eveningLanding .du-evening-landing-cta,
+body.du-evening-mode #eveningLanding .du-story-dinner-copy .du-btn{
+  border-radius:0;
+  background:#751b34;
+  color:#fff7eb;
+  box-shadow:none;
+  clip-path:polygon(0 7%,5% 2%,11% 7%,18% 1%,28% 5%,37% 0,47% 5%,55% 1%,64% 6%,73% 0,82% 5%,92% 1%,100% 5%,99% 95%,91% 100%,80% 94%,71% 99%,60% 95%,52% 100%,42% 95%,33% 99%,24% 95%,14% 100%,5% 95%,0 98%);
+}
+body.du-evening-mode #eveningLanding .du-story-dinner-copy h2,
+body.du-evening-mode #evening .du-story-after-copy h2{
+  font-family:var(--du-magazine-serif);
+  letter-spacing:-.055em;
+  line-height:.96;
+}
+body.du-evening-mode #eveningLanding .du-story-dinner-copy h2::after,
+body.du-evening-mode #evening .du-story-after-copy h2::after{
+  content:"";
+  display:block;
+  height:18px;
+  width:min(270px,80%);
+  margin:12px 0 6px 8%;
+  background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 275 24'%3E%3Cpath d='M3 20 Q118 -5 272 12' stroke='%23ae2346' stroke-width='4' stroke-linecap='round' fill='none'/%3E%3C/svg%3E") center / 100% 100% no-repeat;
+}
+body.du-evening-mode .du-evening-wide-strip{
+  box-sizing:border-box;
+  position:relative;
+  grid-column:1/-1;
+  width:100%;
+  min-width:0;
+  margin:0;
+  padding:clamp(33px,4.8vw,67px) clamp(27px,6vw,95px);
+  background-color:#e9c9ad;
+  background-image:
+    repeating-linear-gradient(106deg,rgba(92,54,42,.025) 0 1px,transparent 1px 6px),
+    linear-gradient(115deg,#f2dfca 0%,#f3e4d3 55%,#dfbaa3 100%);
+  color:#512333;
+  text-align:center;
+  isolation:isolate;
+  z-index:4;
+  border:0;
+  border-radius:0;
+  clip-path:polygon(0 3%,5% 1%,10% 3%,16% 0,22% 3%,28% 1%,35% 3%,41% 1%,48% 3%,54% 0,62% 3%,69% 1%,76% 3%,83% 0,90% 3%,95% 1%,100% 3%,100% 96%,94% 99%,87% 97%,80% 100%,73% 97%,66% 99%,59% 97%,52% 100%,45% 97%,38% 99%,31% 97%,24% 100%,17% 97%,10% 99%,4% 97%,0 100%);
+}
+body.du-evening-mode .du-evening-wide-strip .du-evening-strip-number{
+  display:block;
+  color:#84273f;
+  font:750 clamp(12px,1vw,15px)/1.4 var(--du-magazine-sans);
+  letter-spacing:.14em;
+  margin-bottom:clamp(12px,1.6vw,21px);
+}
+body.du-evening-mode .du-evening-wide-strip p{
+  max-width:22ch;
+  margin:0 auto;
+  color:#4d2030;
+  font:italic 500 clamp(36px,5.4vw,83px)/1.02 var(--du-magazine-serif);
+  text-wrap:balance;
+}
+body.du-evening-mode .du-evening-strip-two{
+  background-color:#682a3a;
+  background-image:
+    repeating-linear-gradient(105deg,rgba(255,255,255,.019) 0 1px,transparent 1px 6px),
+    linear-gradient(110deg,#64263b,#7b3347 60%,#562637);
+}
+body.du-evening-mode .du-evening-strip-two .du-evening-strip-number{
+  color:#f1c8b1;
+}
+body.du-evening-mode .du-evening-strip-two p{
+  color:#fff2e3;
+}
+body.du-evening-mode .du-evening-strip-three{
+  margin-top:0;
+  background-image:linear-gradient(115deg,#f5e5d3,#ecd2bd 58%,#d9b09a);
+}
+body.du-evening-mode #eveningLanding .du-story-dinner{
+  margin-top:0;
+}
+body.du-evening-mode #evening .du-story-after{
+  margin-bottom:0;
+}
+@media(min-width:1021px){
+  body.du-evening-mode #eveningLanding > .du-evening-landing-content{
+    padding-inline:clamp(33px,4.7vw,68px);
+  }
+  body.du-evening-mode #eveningLanding > .du-evening-landing-photo{
+    min-height:clamp(620px,56vw,880px);
+  }
+  body.du-evening-mode #eveningLanding > .du-story-dinner{
+    border-top:0;
+  }
+}
+@media(max-width:1020px){
+  body.du-evening-mode .du-evening-wide-strip{
+    padding:clamp(28px,6vw,44px) clamp(20px,5vw,40px);
+  }
+  body.du-evening-mode #eveningLanding .du-evening-landing-content h1{
+    font-size:clamp(70px,11vw,110px);
+  }
+}
+@media(max-width:760px){
+  body.du-evening-mode .du-evening-wide-strip{
+    padding:32px 21px 35px;
+  }
+  body.du-evening-mode .du-evening-wide-strip p{
+    font-size:clamp(35px,9.1vw,55px);
+    max-width:18ch;
+  }
+  body.du-evening-mode #eveningLanding .du-evening-landing-content h1{
+    font-size:clamp(65px,15.5vw,95px);
+  }
+  body.du-evening-mode #eveningLanding .du-evening-landing-lead{
+    font-size:clamp(27px,7vw,36px);
+  }
+}
