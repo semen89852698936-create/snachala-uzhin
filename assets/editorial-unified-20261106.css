@@ -6338,3 +6338,142 @@ body.du-airfryer-standalone #airfryerGrid .du-airfryer-card:focus-visible,
   #homeView .du-hero-bottom{font-size:12px}
   #recipeGrid .recipe-card .card-body p{font-size:15px}
 }
+
+
+/* EDITORIAL_READABILITY_AND_NAVIGATION_20261110
+   Only the requested typographic and navigation adjustments. */
+#homeView #catalog #categoryFilters>.chip{
+  font-size:clamp(16px,1.28vw,19px)!important;
+  line-height:1.12!important;
+  white-space:normal!important;
+  text-align:center;
+  overflow-wrap:break-word;
+}
+@media(min-width:1181px){
+  #homeView #catalog #categoryFilters>.chip{
+    font-size:clamp(15px,1.12vw,19px)!important;
+    padding-inline:5px!important;
+  }
+}
+@media(max-width:760px){
+  #homeView #catalog #categoryFilters>.chip{font-size:16px!important;}
+}
+#homeView #airfryer .du-airfryer-footnote,
+body.du-airfryer-standalone #airfryer .du-airfryer-footnote{
+  font-size:clamp(16px,1.15vw,18px)!important;
+  line-height:1.6!important;
+}
+/* All visible top-level menu buttons use one type size at each viewport. */
+.header .main-nav > a{
+  font-size:clamp(14px,1.04vw,16px)!important;
+  line-height:1.2!important;
+  transition:transform .23s ease,filter .23s ease!important;
+}
+@media(hover:hover) and (prefers-reduced-motion:no-preference){
+  .header .main-nav > a:is(:hover,:focus-visible){
+    transform:translateY(-4px) rotate(-1deg)!important;
+    filter:drop-shadow(0 5px 5px rgba(59,25,29,.14));
+  }
+  .header .main-nav > a:active{
+    transform:translateY(1px) scale(.985)!important;
+  }
+}
+/* Same approved paper treatment as the existing return-from-catalog button. */
+body.du-airfryer-standalone .du-airfryer-home-link{
+  position:relative;
+  isolation:isolate;
+  display:inline-flex!important;
+  align-items:center;
+  justify-content:center;
+  min-height:46px;
+  padding:11px 23px;
+  margin-bottom:clamp(22px,3vw,40px);
+  color:#6d2339!important;
+  font:700 16px/1.2 Manrope,Arial,sans-serif;
+  text-decoration:none!important;
+  background:transparent!important;
+  border:0!important;
+  transition:transform .24s ease!important;
+}
+body.du-airfryer-standalone .du-airfryer-home-link::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  z-index:-1;
+  pointer-events:none;
+  background-color:#f4e5d2;
+  background-image:linear-gradient(154deg,rgba(255,255,255,.24),rgba(194,149,117,.07)),var(--du-paper-fibre-grain);
+  background-size:100% 100%,192px 192px;
+  -webkit-mask-image:var(--du-ripped-paper-mask);
+  mask-image:var(--du-ripped-paper-mask);
+  -webkit-mask-size:100% 100%;
+  mask-size:100% 100%;
+  -webkit-mask-repeat:no-repeat;
+  mask-repeat:no-repeat;
+  filter:drop-shadow(0 3px 4px rgba(52,26,23,.14));
+}
+body.du-airfryer-standalone .du-airfryer-home-link:is(:hover,:focus-visible)::before{background-color:#fff2e2;}
+body.du-airfryer-standalone .du-airfryer-home-link:focus-visible{
+  outline:3px solid #9c4c53;
+  outline-offset:3px;
+}
+@media(hover:hover) and (prefers-reduced-motion:no-preference){
+  body.du-airfryer-standalone .du-airfryer-home-link:hover{transform:translateY(-4px) rotate(-1deg);}
+}
+/* Small, paper-cut floating return to the actual page masthead, in all 3 screens. */
+body .du-back-to-top{
+  position:fixed!important;
+  right:clamp(14px,2.8vw,38px)!important;
+  bottom:max(20px,env(safe-area-inset-bottom))!important;
+  z-index:70!important;
+  display:inline-flex!important;
+  gap:9px;
+  align-items:center;
+  justify-content:center;
+  min-width:109px;
+  min-height:52px;
+  padding:11px 19px!important;
+  background:transparent!important;
+  color:#6d2339!important;
+  font:700 15px/1.2 Manrope,Arial,sans-serif!important;
+  -webkit-mask-image:none!important;
+  mask-image:none!important;
+  cursor:pointer;
+  opacity:0;
+  visibility:hidden;
+  pointer-events:none;
+  transform:translateY(18px);
+  transition:opacity .2s ease,transform .24s ease,visibility .2s ease!important;
+}
+body .du-back-to-top::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  z-index:-1;
+  pointer-events:none;
+  background-color:#f4e5d2;
+  background-image:linear-gradient(154deg,rgba(255,255,255,.24),rgba(194,149,117,.07)),var(--du-paper-fibre-grain);
+  background-size:100% 100%,192px 192px;
+  -webkit-mask-image:var(--du-ripped-paper-mask);
+  mask-image:var(--du-ripped-paper-mask);
+  -webkit-mask-size:100% 100%;
+  mask-size:100% 100%;
+  -webkit-mask-repeat:no-repeat;
+  mask-repeat:no-repeat;
+  filter:drop-shadow(0 4px 7px rgba(52,26,23,.21));
+}
+body .du-back-to-top.is-visible{
+  opacity:1;
+  visibility:visible;
+  pointer-events:auto;
+  transform:translateY(0);
+}
+@media(hover:hover) and (prefers-reduced-motion:no-preference){
+ body .du-back-to-top.is-visible:hover{transform:translateY(-4px) rotate(-1deg);}
+}
+body .du-back-to-top .du-back-to-top-arrow{font:700 24px/1 Georgia,serif;}
+@media(prefers-reduced-motion:reduce){
+ body .du-back-to-top,
+ body.du-airfryer-standalone .du-airfryer-home-link,
+ .header .main-nav > a{transition:none!important;}
+}

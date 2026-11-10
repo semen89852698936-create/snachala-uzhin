@@ -72,7 +72,7 @@
     const note=section.querySelector('.du-airfryer-footnote')?.textContent||'Время и температура могут отличаться в зависимости от модели аэрогриля. Ориентируйтесь на инструкцию своего прибора.';
     section.innerHTML='<div class="container du-airfryer-landing">'+
       '<div class="du-section-top"><div class="du-eyebrow">100 РЕЦЕПТОВ · ГОТОВИМ ДЛЯ ДВОИХ</div>'+
-      '<div class="du-section-heading"><h2 id="airfryerTitle">Аэрогриль. <em>Вкусно и по делу.</em></h2><p class="du-airfryer-lead">'+esc(intro)+'</p></div></div>'+
+      '<div class="du-section-heading"><h2 id="airfryerTitle">Аэрогриль. <em>Вкусно и по делу</em></h2><p class="du-airfryer-lead">'+esc(intro)+'</p></div></div>'+
       '<div class="category-grid du-airfryer-category-grid" id="airfryerCategoryGrid">'+
       GROUPS.map(group=>'<a class="category-card" href="'+categoryURL(group.name)+'"'+
         ' style="--photo:url(\''+group.photo+'\');--fallback:url(\''+group.photo+'\')"'+
@@ -148,7 +148,37 @@
     // Clicking a card retains its selected category when returning from the recipe.
     drawFilters();render();
   }
-  const start=()=>isStandalone()?showCatalogue():showLanding();
+  
+  function initSitePolish() {
+    const heading=document.querySelector('#airfryerTitle em');
+    if(heading)heading.textContent=heading.textContent.replace(/\\.\\s*$/,'');
+    const bonus=document.querySelector('.du-bonus .bonus-text > p');
+    if(bonus)bonus.textContent=bonus.textContent.replace(/^Особенный рецепт(?=\\s*№)/,'Бонусный рецепт');
+    const dinner=document.querySelector('.du-photo-break .du-photo-overlay > p');
+    if(dinner)dinner.textContent='Иногда этого вполне достаточно.';
+    if(!document.getElementById('top')||document.querySelector('.du-back-to-top'))return;
+    const button=document.createElement('button');
+    button.type='button';
+    button.className='du-back-to-top';
+    button.setAttribute('aria-label','Вернуться к шапке страницы');
+    button.innerHTML='<span class="du-back-to-top-arrow" aria-hidden="true">↑</span><span>Наверх</span>';
+    document.body.appendChild(button);
+    const update=()=>{
+      const recipe=document.getElementById('recipeView');
+      const cooking=document.getElementById('cookOverlay');
+      const modalOpen=(recipe&&!recipe.hidden)||(cooking&&!cooking.hidden&&getComputedStyle(cooking).display!=='none');
+      button.classList.toggle('is-visible',window.scrollY>440&&!modalOpen);
+    };
+    button.addEventListener('click',()=>{
+      const motion=window.matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth';
+      document.getElementById('top').scrollIntoView({behavior:motion,block:'start'});
+    });
+    window.addEventListener('scroll',update,{passive:true});
+    window.addEventListener('hashchange',update);
+    window.addEventListener('resize',update,{passive:true});
+    update();
+  }
+  const start=()=>{isStandalone()?showCatalogue():showLanding();initSitePolish();};
   if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',start,{once:true});
   else start();
 })(typeof window!=='undefined'?window:globalThis);
