@@ -6217,3 +6217,15 @@ body .du-mood .du-mood-check{
 #homeView:has(> #catalog:target) > :not(#catalog){
   display:none!important;
 }
+
+
+/* CATALOG_BACK_BUTTON_MATCH_EVENING_20261110
+   Display the existing approved '← На главную' visual style on the
+   standalone catalog screen only. The original Evening button keeps its
+   own existing visibility and styling. No layout or colors modified. */
+body:has(#catalog:target) .du-evening-back.du-catalog-back{
+  display:inline-flex!important;
+}
+body:not(:has(#catalog:target)) .du-evening-back.du-catalog-back{
+  display:none!important;
+}
