@@ -1,0 +1,119 @@
+name: Provision single Timeweb commerce staging (510 RUB monthly ceiling)
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: paid-timeweb-commerce-staging-singleton
+  cancel-in-progress: false
+jobs:
+  provision:
+    if: github.event.pull_request.number == 135 && github.event.pull_request.head.ref == 'deploy/commerce-timeweb-staging-20261106' && github.event.pull_request.head.repo.full_name == github.repository
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - name: Create one isolated app at 510 RUB per month, never activate payments
+        env:
+          TIMEWEB_API_TOKEN: ${{ secrets.TIMEWEB_API_TOKEN }}
+          GITHUB_PR_HEAD: ${{ github.event.pull_request.head.sha }}
+        run: |
+          set -euo pipefail
+          python3 - <<'PY'
+          import json,os,re,secrets,urllib.request,urllib.error
+          token=os.getenv('TIMEWEB_API_TOKEN','').strip()
+          if token.lower().startswith('bearer '):token=token[7:].strip()
+          if len(token)>2 and token[0]==token[-1] and token[0] in ('"',"'"):token=token[1:-1].strip()
+          if not token:raise SystemExit('BLOCK: no Timeweb token')
+          head=os.getenv('GITHUB_PR_HEAD','')
+          if not re.fullmatch(r'[0-9a-f]{40}',head):raise SystemExit('BLOCK: invalid GitHub head SHA')
+          root='https://api.timeweb.cloud'
+          headers={'Authorization':'Bearer '+token,'Content-Type':'application/json','Accept':'application/json'}
+          def api(path,data=None):
+              post=data is not None
+              req=urllib.request.Request(root+path,headers=headers,data=json.dumps(data).encode() if post else None,method='POST' if post else 'GET')
+              try:
+                  with urllib.request.urlopen(req,timeout=45) as r:
+                      return r.status,json.loads(r.read(1048576))
+              except urllib.error.HTTPError as e:
+                  try:err=json.loads(e.read(16384))
+                  except (ValueError,UnicodeDecodeError):err={}
+                  # Never log request bodies or responses containing credentials.
+                  validation_text=str(err.get('message',''))[:3000]
+                  names=('provider_id','repository_id','branch_name','commit_sha','preset_id','framework','run_cmd','build_cmd','project_id','envs','type','name','comment','is_auto_deploy','env_version')
+                  flagged=[name for name in names if name in validation_text.lower()]
+                  return e.code,{'error_code':str(err.get('error_code','unknown'))[:100], 'validation_fields':flagged, 'response_keys':sorted(str(k) for k in err)[:20], 'safe_message':re.sub(r'[A-Za-z0-9_-]{24,}', '[REDACTED]', re.sub(r'\\S+@\\S+','[EMAIL]',re.sub(r'https?://\\S+','[URL]',str(err.get('message',''))[:240])))}
+          pid=3145267
+          code,p=api('/api/v1/projects')
+          if code!=200 or len([x for x in p.get('projects',[]) if x.get('id')==pid and x.get('name')=='СНАЧАЛА УЖИН'])!=1:
+              raise SystemExit('BLOCK: target project not verified')
+          code,p=api('/api/v1/presets/apps')
+          if code!=200 or len([x for x in p.get('backend_presets',[]) if x.get('id')==2731 and x.get('price')==510 and x.get('location')=='ru-3' and x.get('ram')==1024])!=1:
+              raise SystemExit('BLOCK: exact approved Moscow 510 RUB preset unavailable')
+          code,apps=api('/api/v1/apps')
+          if code!=200 or not isinstance(apps.get('apps'),list):
+              raise SystemExit('BLOCK: existing apps unavailable; refusing possible duplicate charge')
+          name='snachala-uzhin-commerce-staging'
+          existing=[x for x in apps['apps'] if isinstance(x,dict) and x.get('name')==name]
+          if existing:
+              if len(existing)!=1:
+                  raise SystemExit('BLOCK: multiple apps with approved staging name')
+              x=existing[0]
+              if x.get('preset_id')!=2731 or x.get('branch_name')!='deploy/commerce-timeweb-staging-20261106':
+                  raise SystemExit('BLOCK: conflicting already-named app; no changes')
+              print('PASS: application already exists, nothing else ordered. APP ID',x.get('id'),'STATUS',x.get('status'))
+              raise SystemExit(0)
+          if any(x.get('name','').startswith('snachala-uzhin-commerce') for x in apps['apps']):
+              raise SystemExit('BLOCK: another commercial instance exists; refusing a new charge')
+          code,providers=api('/api/v1/vcs-provider')
+          if code!=200:raise SystemExit('BLOCK: provider list inaccessible')
+          found=[]
+          for v in providers.get('providers',[]):
+              provider_id=v.get('provider_id')
+              if not isinstance(provider_id,str) or not provider_id:continue
+              s,repos=api('/api/v1/vcs-provider/'+provider_id)
+              if s!=200:continue
+              for item in repos.get('repositories',[]):
+                  if item.get('full_name')=='semen89852698936-create/snachala-uzhin':
+                      found.append((provider_id,item.get('id')))
+          if len(found)!=1 or not found[0][1]:
+              raise SystemExit('BLOCK: expected exactly one repository connection')
+          provider_id,repository_id=found[0]
+          s,b=api('/api/v1/vcs-provider/'+provider_id+'/repository/'+str(repository_id))
+          if s!=200 or not any(x.get('name')=='deploy/commerce-timeweb-staging-20261106' for x in b.get('branches',[])):
+              raise SystemExit('BLOCK: required protected staging branch unavailable')
+          # Generated only in GitHub Actions memory, transmitted by TLS directly to Timeweb.
+          # No fixed/test sessions accepted; secrets never printed or committed.
+          envs={
+            'COMMERCE_BASE_URL':'https://initial-setup.snachala-uzhin.invalid',
+            'COMMERCE_DB_PATH':'/srv/data/orders.sqlite',
+            'SESSION_KEY_HEX':secrets.token_hex(32),
+            'ENABLE_CHECKOUT':'0',
+            'COMMERCE_PAYMENT_QA_APPROVED':'0'
+          }
+          request={
+            'provider_id':provider_id,
+            'type':'backend',
+            'repository_id':str(repository_id),
+            'build_cmd':'',
+            'branch_name':'deploy/commerce-timeweb-staging-20261106',
+            'is_auto_deploy':False,
+            'commit_sha':head,
+            'name':name,
+            'comment':'SNAChALA UZHIN Docker staging no payments',
+            'preset_id':2731,
+            'framework':'docker',
+            'run_cmd':'gunicorn commerce.wsgi:application --bind 0.0.0.0:8080 --workers 1 --threads 1 --timeout 60',
+            'project_id':pid,
+            'envs':envs
+          }
+          status,result=api('/api/v1/apps',request)
+          if status not in (200,201):
+              print('BLOCK: Timeweb app creation failed HTTP',status,'CODE',result.get('error_code'),'VALIDATION_FIELDS',result.get('validation_fields'),'RESPONSE_KEYS',result.get('response_keys'),'REASON',result.get('safe_message'))
+              raise SystemExit(1)
+          app=result.get('app',{})
+          if not app.get('id'):raise SystemExit('BLOCK: request returned no app ID; inspect account before any retry')
+          print('CREATED: isolated Timeweb app ID',app.get('id'),'status',app.get('status'))
+          print('APP PLAN: Moscow ru-3, preset 2731, 510 RUB/month. GITHUB SOURCE:',request['branch_name'])
+          print('CHECKOUT=OFF; payment QA=OFF; database=disposable staging SQLite. No buyer purchases allowed.')
+          print('No other Timeweb projects or resources modified. Never deploy to main or existing product.')
+          PY

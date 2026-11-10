@@ -1,0 +1,115 @@
+name: Retire only old Timeweb commerce staging 284041 after VPC migration
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: timeweb-retire-approved-old-staging-284041
+  cancel-in-progress: false
+jobs:
+  retire:
+    if: github.event.pull_request.number == 135 && github.event.pull_request.head.ref == 'deploy/commerce-timeweb-staging-20261106' && github.event.pull_request.head.repo.full_name == github.repository
+    runs-on: ubuntu-latest
+    timeout-minutes: 6
+    steps:
+      - name: Reverify new commerce clone, then delete ONLY approved old staging 284041
+        env:
+          TIMEWEB_API_TOKEN: ${{ secrets.TIMEWEB_API_TOKEN }}
+        run: |
+          set -euo pipefail
+          python3 - <<'PY'
+          import json,os,urllib.request,urllib.error
+          token=os.environ.get('TIMEWEB_API_TOKEN','').strip()
+          if token.lower().startswith('bearer '):token=token[7:].strip()
+          if len(token)>2 and token[0]==token[-1] and token[0] in ("'",'"'):token=token[1:-1].strip()
+          if not token:raise SystemExit('BLOCK: missing Timeweb token')
+          prefix='https://api.timeweb.cloud/api/v1/apps/'
+          headers={'Authorization':'Bearer '+token,'Accept':'application/json','Content-Type':'application/json'}
+          def app_get(app_id):
+              assert app_id in (284041,284043)
+              req=urllib.request.Request(prefix+str(app_id),headers=headers,method='GET')
+              try:
+                  with urllib.request.urlopen(req,timeout=20) as response:
+                      return response.status,json.load(response).get('app',{})
+              except urllib.error.HTTPError as err:
+                  return err.code,{}
+          nstatus,new=app_get(284043)
+          if nstatus!=200 or not isinstance(new,dict):raise SystemExit('BLOCK: new VPC clone unavailable')
+          expected_new={
+              'id':284043,'name':'snachala-uzhin-commerce-private',
+              'project_id':3145267,'preset_id':2731,
+              'location':'ru-3','status':'active','is_auto_deploy':False
+          }
+          if any(new.get(key)!=value for key,value in expected_new.items()):
+              raise SystemExit('BLOCK: new app identity/status/tariff mismatch; no DELETE')
+          fqdn='semen89852698936-create-snachala-uzhin-9f50.twc1.net'
+          if not any(isinstance(d,dict) and d.get('fqdn')==fqdn for d in new.get('domains',[])):
+              raise SystemExit('BLOCK: new clone hostname mismatch; no DELETE')
+          base='https://'+fqdn
+          def web(path,method='GET',data=None):
+              body=None
+              hdr={}
+              if method=='POST':
+                  hdr={'Origin':base,'Content-Type':'application/json'}
+                  body=json.dumps(data).encode()
+              req=urllib.request.Request(base+path,data=body,headers=hdr,method=method)
+              try:
+                  with urllib.request.urlopen(req,timeout=20) as response:
+                      return response.status,response.read(8192)
+              except urllib.error.HTTPError as err:
+                  return err.code,err.read(8192)
+          expected={
+             '/healthz':200,'/':200,'/account':200,
+             '/app':403,'/full-catalog/index.html':403,
+             '/assets/recipes-ai/0001-lemon-spinach-pasta.webp':403
+          }
+          for path,wanted in expected.items():
+              try:status,_=web(path)
+              except Exception as err:raise SystemExit('BLOCK: new site network check failed at '+path+' '+type(err).__name__)
+              print('NEW HTTPS',path,status)
+              if status!=wanted:raise SystemExit('BLOCK: new site missing safe access requirements; no DELETE')
+          try:status,body=web('/api/orders','POST',{'email':'readiness-test-only@example.invalid'})
+          except Exception as err:raise SystemExit('BLOCK: checkout check failed '+type(err).__name__)
+          if status!=503 or b'checkout_not_enabled' not in body:
+              raise SystemExit('BLOCK: new checkout not safely disabled; no DELETE')
+          print('PASS: HTTPS new private clone works, recipes are private, checkout disabled.')
+          oldstatus,old=app_get(284041)
+          if oldstatus==404:
+              print('ALREADY REMOVED: old staging 284041 absent, no DELETE request made.')
+              raise SystemExit(0)
+          if oldstatus!=200 or not isinstance(old,dict):
+              raise SystemExit('BLOCK: cannot verify old app; no DELETE')
+          expected_old={
+              'id':284041,'name':'snachala-uzhin-commerce-staging',
+              'project_id':3145267,'preset_id':2731,'location':'ru-3',
+              'is_auto_deploy':False
+          }
+          if any(old.get(key)!=value for key,value in expected_old.items()):
+              raise SystemExit('BLOCK: old app ID/name/project/plan mismatch; no DELETE')
+          if old.get('status') not in ('active','stopped'):
+              raise SystemExit('BLOCK: old app unexpected status; no DELETE')
+          # Owner explicitly approved replacing this EMPTY, checkout-disabled staging
+          # after live HTTPS acceptance and screenshot confirmation of VPC membership.
+          print('APPROVED DELETE target only: 284041; preserving new app 284043.')
+          delete_request=urllib.request.Request(prefix+'284041',headers=headers,method='DELETE')
+          try:
+              with urllib.request.urlopen(delete_request,timeout=30) as response:
+                  status=response.status
+          except urllib.error.HTTPError as err:
+              # Never print API response bodies or secret environment.
+              raise SystemExit('BLOCK: Timeweb refused removal HTTP '+str(err.code))
+          print('OLD APP DELETE RESPONSE HTTP',status)
+          if status not in (200,202,204):
+              raise SystemExit('BLOCK: unexpected delete HTTP status; manually inspect')
+          old_after,old_data=app_get(284041)
+          new_after,new_data=app_get(284043)
+          print('POST-DELETE old HTTP',old_after,'old status',old_data.get('status') if isinstance(old_data,dict) else None)
+          print('POST-DELETE new HTTP',new_after,'new status',new_data.get('status') if isinstance(new_data,dict) else None)
+          if new_after!=200 or new_data.get('id')!=284043:
+              raise SystemExit('BLOCK: new app unexpectedly unavailable after deleting old')
+          if old_after==404:
+              print('SUCCESS: old billable app 284041 removed; only verified private clone remains.')
+          else:
+              print('PENDING: old app removal accepted but is not confirmed complete by GET. Recheck status before reporting billing stopped.')
+          print('No other apps, private networks, databases or merchant resources modified.')
+          PY

@@ -1,0 +1,100 @@
+name: Timeweb API connection preflight (READ ONLY)
+on:
+  pull_request:
+    branches:
+      - feature/commerce-secure-foundation-20261104
+    paths:
+      - '.github/workflows/timeweb-api-preflight.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  connection:
+    if: github.event_name == 'workflow_dispatch' || (github.event.pull_request.number == 135 && github.event.pull_request.head.ref == 'deploy/commerce-timeweb-staging-20261106' && github.event.pull_request.head.repo.full_name == github.repository)
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Verify Timeweb App Platform token without creating resources
+        env:
+          TIMEWEB_API_TOKEN: ${{ secrets.TIMEWEB_API_TOKEN }}
+        run: |
+          set -euo pipefail
+          python3 - <<'PY'
+          import json
+          import os
+          import sys
+          import urllib.error
+          import urllib.request
+
+          # Only read-only requests. No token printed, no HTTP response body logged.
+          token = os.environ.get("TIMEWEB_API_TOKEN", "").strip()
+          # Accept only harmless copy/paste wrappers; never echo or print credentials.
+          if token.lower().startswith("bearer "):
+              token = token[7:].strip()
+          if len(token) > 2 and token[0] == token[-1] and token[0] in ("\'", "\""):
+              token = token[1:-1].strip()
+          if not token:
+              print("FAIL: TIMEWEB_API_TOKEN not available to this GitHub Actions run.")
+              sys.exit(1)
+
+          base = "https://api.timeweb.cloud"
+          target_project = 3145267
+          headers = {"Authorization": "Bearer " + token, "Accept": "application/json"}
+
+          def read_api(path):
+              request = urllib.request.Request(base + path, headers=headers, method="GET")
+              try:
+                  with urllib.request.urlopen(request, timeout=20) as response:
+                      if response.status != 200:
+                          raise RuntimeError("Unexpected HTTP status")
+                      return 200, json.loads(response.read(1024*1024))
+              except urllib.error.HTTPError as err:
+                  return err.code, None
+              except (urllib.error.URLError, TimeoutError, ValueError) as err:
+                  # Avoid exception string, request headers, and response payload in logs.
+                  print("FAIL: HTTPS API request or JSON parsing failed (" + type(err).__name__ + ").")
+                  sys.exit(1)
+
+          # App Platform permission is the only requested service permission.
+          apps_status, payload = read_api("/api/v1/apps")
+          if apps_status != 200:
+              print("FAIL: App Platform read-only API returned HTTP " + str(apps_status) +
+                    ". Check token expiry and App Platform permissions.")
+              sys.exit(1)
+
+          if not isinstance(payload, dict):
+              print("FAIL: Unexpected Timeweb apps response shape.")
+              sys.exit(1)
+
+          apps = payload.get("apps")
+          if not isinstance(apps, list):
+              print("FAIL: Timeweb returned no expected apps list.")
+              sys.exit(1)
+
+          project_ids = []
+          for app in apps:
+              if not isinstance(app, dict):
+                  continue
+              val = app.get("project_id")
+              if val is None and isinstance(app.get("project"), dict):
+                  val = app["project"].get("id")
+              if val is not None:
+                  try:
+                      project_ids.append(int(val))
+                  except (TypeError, ValueError):
+                      print("FAIL: Invalid project ID in Timeweb response.")
+                      sys.exit(1)
+
+          unexpected = [v for v in project_ids if v != target_project]
+          if unexpected:
+              # Do not print any unrelated project IDs or account details.
+              print("FAIL: Token can list an app from another project; verify Timeweb scope.")
+              sys.exit(1)
+
+          print("PASS: GitHub Actions can authenticate to Timeweb App Platform using TIMEWEB_API_TOKEN.")
+          if apps and len(project_ids) != len(apps):
+              print("NOTE: API omitted project IDs for some apps; scope is not proven by this check.")
+          else:
+              print("PASS: No out-of-project applications exposed by this read-only API response.")
+          print("No cloud resources created, modified, or billed. No payment checkout activated.")
+          PY

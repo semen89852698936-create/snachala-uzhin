@@ -1,6 +1,24 @@
-FROM python:3.12-alpine
-WORKDIR /app
-COPY . .
-ENV PORT=8080 PYTHONUNBUFFERED=1
+# Separate commerce image. Never serve legacy index.html or /full-catalog from a static host.
+FROM python:3.12-slim AS builder
+WORKDIR /build
+COPY commerce/private_catalog.py /build/private_catalog.py
+COPY index.html /build/index.html
+RUN python /build/private_catalog.py /build/index.html /build/private/app.html
+
+FROM python:3.12-slim
+ENV PYTHONDONTWRITEBYTECODE=1 PYTHONUNBUFFERED=1
+WORKDIR /srv/site
+# Timeweb health checks require curl to be present in the runtime image.
+RUN apt-get update \
+    && apt-get install -y --no-install-recommends curl \
+    && rm -rf /var/lib/apt/lists/*
+RUN pip install --no-cache-dir gunicorn==23.0.0 'psycopg[binary]==3.3.6' && useradd --system --uid 10001 app
+COPY --from=builder /build/private/app.html /srv/private/app.html
+COPY commerce /srv/site/commerce
+COPY assets /srv/site/assets
+COPY favicon.svg /srv/site/favicon.svg
+RUN mkdir -p /srv/data && chown -R app:app /srv/data /srv/private
+USER app
+ENV PRIVATE_CATALOG_HTML=/srv/private/app.html
 EXPOSE 8080
-CMD ["python","server.py"]
+CMD ["sh","-c","exec gunicorn commerce.wsgi:application --bind 0.0.0.0:${PORT:-8080} --workers 1 --threads 1 --timeout 60"]

@@ -1,0 +1,64 @@
+name: Bind Timeweb staging to its HTTPS domain (payments OFF)
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: timeweb-staging-origin-singleton
+  cancel-in-progress: false
+jobs:
+  configure:
+    if: github.event.pull_request.number == 135 && github.event.pull_request.head.ref == 'deploy/commerce-timeweb-staging-20261106' && github.event.pull_request.head.repo.full_name == github.repository
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Configure only approved staging app with fresh private session secret
+        env:
+          TIMEWEB_API_TOKEN: ${{ secrets.TIMEWEB_API_TOKEN }}
+        run: |
+          python3 - <<'PY'
+          import json,os,secrets,urllib.request,urllib.error
+          token=os.environ.get('TIMEWEB_API_TOKEN','').strip()
+          if token.lower().startswith('bearer '):token=token[7:].strip()
+          if len(token)>2 and token[0]==token[-1] and token[0] in ("'",'"'):token=token[1:-1].strip()
+          if not token:raise SystemExit('Missing token')
+          url='https://api.timeweb.cloud/api/v1/apps/284041'
+          headers={'Authorization':'Bearer '+token,'Content-Type':'application/json','Accept':'application/json'}
+          def req(method,data=None):
+              body=None if data is None else json.dumps(data).encode()
+              r=urllib.request.Request(url,headers=headers,data=body,method=method)
+              try:
+                  with urllib.request.urlopen(r,timeout=35) as f:return f.status,json.load(f)
+              except urllib.error.HTTPError as e:return e.code,{}
+          s,data=req('GET')
+          if s!=200:raise SystemExit('BLOCK: cannot verify application identity')
+          app=data.get('app',{})
+          if any([app.get('id')!=284041,app.get('name')!='snachala-uzhin-commerce-staging',
+                  app.get('preset_id')!=2731,app.get('project_id')!=3145267,
+                  app.get('location')!='ru-3',app.get('status')!='active']):
+              raise SystemExit('BLOCK: wrong app or plan')
+          domains=app.get('domains',[])
+          hostname='semen89852698936-create-snachala-uzhin-bbef.twc1.net'
+          if sum(1 for d in domains if isinstance(d,dict) and d.get('fqdn')==hostname)!=1:
+              raise SystemExit('BLOCK: approved technical domain not present on target app')
+          current=app.get('envs')
+          expected={'COMMERCE_BASE_URL','COMMERCE_DB_PATH','SESSION_KEY_HEX','ENABLE_CHECKOUT','COMMERCE_PAYMENT_QA_APPROVED'}
+          if not isinstance(current,dict) or set(current)!=expected:
+              raise SystemExit('BLOCK: unknown env keys; refuse replacement')
+          # No buyers yet. Replace hidden initial private key with new cryptographically random
+          # key, transmitted straight over HTTPS to Timeweb; never put secret in logs or git.
+          env={
+             'COMMERCE_BASE_URL':'https://'+hostname,
+             'COMMERCE_DB_PATH':'/srv/data/orders.sqlite',
+             'SESSION_KEY_HEX':secrets.token_hex(32),
+             'ENABLE_CHECKOUT':'0',
+             'COMMERCE_PAYMENT_QA_APPROVED':'0'
+          }
+          code,result=req('PATCH',{'envs':env})
+          if code not in (200,202):
+              print('BLOCK: Timeweb env update refused HTTP',code)
+              raise SystemExit(1)
+          print('PASS: staging HTTPS origin configured for app',app['id'])
+          print('CHECKOUT=0; PAYMENT_QA_APPROVED=0. No production payments or buyers.')
+          print('Only this 510 RUB/month existing app was updated. No extra resources created.')
+          PY

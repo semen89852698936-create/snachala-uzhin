@@ -1,0 +1,76 @@
+name: Timeweb commerce staging live health and access check
+on:
+  pull_request:
+    branches: [feature/commerce-secure-foundation-20261104]
+    paths: ['.github/workflows/timeweb-staging-health.yml']
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  health:
+    if: github.event_name == 'workflow_dispatch' || (github.event.pull_request.number == 135 && github.event.pull_request.head.ref == 'deploy/commerce-timeweb-staging-20261106' && github.event.pull_request.head.repo.full_name == github.repository)
+    runs-on: ubuntu-latest
+    timeout-minutes: 6
+    steps:
+      - name: Check only newly created Timeweb application 284041 using GET
+        env:
+          TIMEWEB_API_TOKEN: ${{ secrets.TIMEWEB_API_TOKEN }}
+        run: |
+          python3 - <<'PY'
+          import json,os,time,urllib.parse,urllib.request,urllib.error
+          token=os.environ.get('TIMEWEB_API_TOKEN','').strip()
+          if token.lower().startswith('bearer '):token=token[7:].strip()
+          if len(token)>2 and token[0]==token[-1] and token[0] in ("'",'"'):token=token[1:-1].strip()
+          if not token:raise SystemExit('Missing token')
+          def api(path):
+              req=urllib.request.Request('https://api.timeweb.cloud'+path,headers={'Authorization':'Bearer '+token,'Accept':'application/json'},method='GET')
+              try:
+                  with urllib.request.urlopen(req,timeout=15) as resp:return resp.status,json.loads(resp.read(1000000))
+              except urllib.error.HTTPError as exc:return exc.code,{}
+              except Exception as exc:
+                  print('API NETWORK',type(exc).__name__)
+                  return 0,{}
+          for attempt in range(6):
+              status,data=api('/api/v1/apps/284041')
+              if status!=200:
+                  print('TARGET APP GET',status)
+                  break
+              app=data.get('app',{})
+              print('SAFE APP FIELDS',json.dumps({k:app.get(k) for k in ('id','name','preset_id','branch_name','status','location','project_id','framework')},ensure_ascii=False))
+              if app.get('id')!=284041 or app.get('name')!='snachala-uzhin-commerce-staging' or app.get('preset_id')!=2731 or app.get('project_id')!=3145267 or app.get('location')!='ru-3' or app.get('branch_name') not in (None,'deploy/commerce-timeweb-staging-20261106'):
+                  raise SystemExit('BLOCK: app identity/preset/branch mismatch')
+              print('TARGET APP',app.get('id'),'STATUS',app.get('status'),'LOCATION',app.get('location'),'FRAMEWORK',app.get('framework'),'PRESET',app.get('preset_id'))
+              env=app.get('envs') if isinstance(app.get('envs'),dict) else {}
+              if env:
+                  print('ENV KEY NAMES',sorted(env.keys()))
+                  print('CHECKOUT OFF',str(env.get('ENABLE_CHECKOUT'))=='0','PAYMENT QA OFF',str(env.get('COMMERCE_PAYMENT_QA_APPROVED'))=='0')
+              domains=app.get('domains',[])
+              hosts=[]
+              for d in domains:
+                  if isinstance(d,str):host=d
+                  elif isinstance(d,dict):host=d.get('fqdn') or d.get('domain') or d.get('name') or d.get('value') or ''
+                  else:continue
+                  host=str(host).strip().lower().removeprefix('https://').split('/')[0]
+                  if host and host not in hosts:hosts.append(host)
+              for host in hosts:
+                  if not host or len(host)>250 or '@' in host:continue
+                  print('TECHNICAL HOST',host)
+                  def probe(path):
+                      url='https://'+host+path
+                      try:
+                          with urllib.request.urlopen(urllib.request.Request(url,method='GET'),timeout=12) as response:
+                              return response.status
+                      except urllib.error.HTTPError as e:return e.code
+                      except Exception as e:return type(e).__name__
+                  for path in ['/healthz','/account','/app','/full-catalog/index.html','/assets/recipes-ai/0001-lemon-spinach-pasta.webp']:
+                      print('HTTP',path,probe(path))
+              ds,resp=api('/api/v1/apps/284041/deploys')
+              print('DEPLOYS GET',ds)
+              if ds==200:
+                  for d in resp.get('deploys',[])[:3]:
+                      if isinstance(d,dict):print('DEPLOY',d.get('id'),'STATUS',d.get('status'),'COMMIT',str(d.get('commit_sha',''))[:12])
+              if app.get('status') in ('active','started','running','ready','work'):
+                  break
+              if attempt<5:time.sleep(8)
+          print('Only GET requests; nothing charged or changed.')
+          PY

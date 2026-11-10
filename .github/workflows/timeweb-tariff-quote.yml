@@ -1,0 +1,64 @@
+name: Timeweb tariff quote (read only)
+on:
+  pull_request:
+    branches: [feature/commerce-secure-foundation-20261104]
+    paths:
+      - '.github/workflows/timeweb-tariff-quote.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  quote:
+    if: github.event_name == 'workflow_dispatch' || (github.event.pull_request.number == 135 && github.event.pull_request.head.ref == 'deploy/commerce-timeweb-staging-20261106' && github.event.pull_request.head.repo.full_name == github.repository)
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Query the official public tariff catalog, never create resources
+        env:
+          TIMEWEB_API_TOKEN: ${{ secrets.TIMEWEB_API_TOKEN }}
+        run: |
+          python3 - <<'PY'
+          import json, os, urllib.request, urllib.error
+          token = os.environ.get('TIMEWEB_API_TOKEN', '').strip()
+          if token.lower().startswith('bearer '):
+              token = token[7:].strip()
+          if len(token)>2 and token[0]==token[-1] and token[0] in ("'", '"'):
+              token=token[1:-1].strip()
+          if not token:
+              raise SystemExit('No secret available to the read-only tariffs check')
+          def read_only(path):
+              req=urllib.request.Request('https://api.timeweb.cloud'+path,
+                    headers={'Authorization':'Bearer '+token, 'Accept':'application/json'},
+                    method='GET')
+              try:
+                  with urllib.request.urlopen(req,timeout=20) as resp:
+                      data=json.loads(resp.read(1024*1024))
+                      return (resp.status, data)
+              except urllib.error.HTTPError as e:
+                  return (e.code, None)
+              except Exception as e:
+                  print('Request failed:',type(e).__name__)
+                  return (0,None)
+          keys=('id','name','price','price_month','price_per_month','cost','monthly_cost','monthly_price','cpu','cpu_count','ram','ram_mb','memory','disk','disk_size','drive','regions','location','description','tariff','tariff_id')
+          def safe(item):
+              return {k:v for k,v in item.items() if k in keys and isinstance(v,(int,float,str,bool))}
+          for path,label in [('/api/v1/presets/apps','APP'),('/api/v2/presets/dbs','DATABASE')]:
+              status, data=read_only(path)
+              print(label,'HTTP',status)
+              if isinstance(data,dict):
+                  print(label,'TOP LEVEL KEYS', sorted(data.keys())[:18])
+                  for k,v in data.items():
+                      if isinstance(v,list):
+                          print(label,k,'COUNT',len(v))
+                          for item in v[:15]:
+                              if isinstance(item,dict):
+                                  print(label,k, json.dumps(safe(item),ensure_ascii=False))
+                                  for nk,nv in item.items():
+                                      if isinstance(nv,dict) and any(x in nk.lower() for x in ('price','cost','config','resource')):
+                                          print(label,k,nk,json.dumps(safe(nv),ensure_ascii=False))
+                      elif isinstance(v,dict):
+                          print(label,k,'KEYS',list(v.keys())[:20])
+              else:
+                  print(label,'no accessible price catalog; no resources changed')
+          print('READ ONLY: no orders, deployments or billable resources were created.')
+          PY
