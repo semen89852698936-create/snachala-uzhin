@@ -73,6 +73,13 @@
     section.innerHTML='<div class="container du-airfryer-landing">'+
       '<div class="du-section-top"><div class="du-eyebrow">100 РЕЦЕПТОВ · ГОТОВИМ ДЛЯ ДВОИХ</div>'+
       '<div class="du-section-heading"><h2 id="airfryerTitle">Аэрогриль. <em>Вкусно и по делу</em></h2><p class="du-airfryer-lead">'+esc(intro)+'</p></div></div>'+
+      '<div class="du-airfryer-approved-map" aria-label="Категории блюд для аэрогриля на газетном листе">'+
+      '<img class="du-airfryer-approved-image" src="/assets/airfryer/airfryer-newspaper-approved-20261110.webp" width="1448" height="1086" loading="lazy" decoding="async" alt="Категории аэрогриля на одном листе рваной газеты">'+
+      '<nav class="du-airfryer-approved-zones" aria-label="Открыть категорию аэрогриля">'+
+      GROUPS.map(group=>'<a class="du-airfryer-approved-zone" href="'+categoryURL(group.name)+'" aria-label="'+esc(group.name)+', '+plural(group.count)+'"><span class="du-airfryer-zone-label">'+esc(group.name)+'</span></a>').join('')+
+      '</nav>'+
+      '<div class="du-airfryer-approved-mobile">'+
+      '<div class="du-airfryer-paper-header" aria-hidden="true">The Daily News <small>FOOD &amp; LIFESTYLE</small></div>'+
       '<div class="category-grid du-airfryer-category-grid" id="airfryerCategoryGrid">'+
       GROUPS.map(group=>'<a class="category-card" href="'+categoryURL(group.name)+'"'+
         ' style="--photo:url(\''+group.photo+'\');--fallback:url(\''+group.photo+'\')"'+
@@ -80,7 +87,8 @@
         '<img class="food-photo" loading="lazy" alt="" src="'+group.photo+'">'+
         '<span class="category-tag">'+plural(group.count)+'</span>'+
         '<span class="category-bottom"><strong>'+esc(group.name)+'</strong><i aria-hidden="true">↗</i></span></a>').join('')+
-      '</div><p class="du-airfryer-footnote">'+esc(note)+'</p></div>';
+      '</div></div></div>'+
+      '<p class="du-airfryer-footnote">'+esc(note)+'</p></div>';
   }
 
   function showCatalogue() {
