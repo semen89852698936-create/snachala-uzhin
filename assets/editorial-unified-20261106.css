@@ -1696,3 +1696,45 @@ body.du-evening-mode #music .du-music-card:nth-child(3) h3 em{
     padding:clamp(18px,5vw,28px)!important;
   }
 }
+
+/* Airfryer interaction polish: move the existing controls, do not paint
+   rectangular hover plates over their approved paper/pill silhouettes. */
+#homeView #airfryer .du-airfryer-filter,
+#homeView #airfryer .du-airfryer-card,
+#homeView #airfryer button,
+#homeView #airfryer a {
+  transition: transform .22s ease, box-shadow .22s ease, background-color .22s ease;
+  transform-origin: center center;
+}
+@media (hover:hover) and (pointer:fine) {
+  #homeView #airfryer .du-airfryer-filter:hover,
+  #homeView #airfryer button:hover,
+  #homeView #airfryer a:hover {
+    transform: translateY(-3px) rotate(-.35deg);
+    box-shadow: none;
+  }
+  #homeView #airfryer .du-airfryer-card:hover {
+    transform: translateY(-4px) rotate(-.2deg);
+    box-shadow: none;
+  }
+  #homeView #airfryer .du-airfryer-filter:hover {
+    background-color: #fffaf8;
+  }
+  #homeView #airfryer .du-airfryer-filter[aria-pressed="true"]:hover {
+    background-color: #84455d;
+  }
+}
+@media (prefers-reduced-motion:reduce) {
+  #homeView #airfryer .du-airfryer-filter,
+  #homeView #airfryer .du-airfryer-card,
+  #homeView #airfryer button,
+  #homeView #airfryer a {
+    transition: none;
+  }
+  #homeView #airfryer .du-airfryer-filter:hover,
+  #homeView #airfryer .du-airfryer-card:hover,
+  #homeView #airfryer button:hover,
+  #homeView #airfryer a:hover {
+    transform: none;
+  }
+}
