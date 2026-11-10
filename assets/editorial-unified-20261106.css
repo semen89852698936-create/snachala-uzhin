@@ -8106,3 +8106,240 @@ body.du-evening-mode #evening .du-story-after-photo img{
     min-height:clamp(610px,46vw,730px)!important;
   }
 }
+
+/* APPROVED_EVENING_PHOTO_OVERLAY_20261111
+   Approved owner screenshot: a full-width opening with the ORIGINAL couple
+   photograph, quiet dark left-hand text zone, big serif wordmark, and 3 live
+   recipe cards visible immediately. All controls stay semantic HTML.
+   Scope to Our Evening only; do not alter homepage or other sections. */
+@media(min-width:1021px){
+ body.du-evening-mode #homeView > #eveningLanding{
+   display:grid!important;
+   grid-template-columns:minmax(0,1fr)!important;
+   grid-template-rows:auto auto auto auto!important;
+   row-gap:0!important;
+   width:100vw!important;
+   max-width:none!important;
+   margin:0 0 0 -50vw!important;
+   left:50%!important;
+   padding:0!important;
+   background:#271913!important;
+   overflow:visible!important;
+ }
+ body.du-evening-mode #eveningLanding > .du-evening-landing-photo{
+   grid-column:1!important;
+   grid-row:1!important;
+   width:100%!important;
+   min-height:clamp(715px,50vw,805px)!important;
+   height:100%!important;
+   max-height:none!important;
+   position:relative!important;
+   z-index:1!important;
+   overflow:hidden!important;
+   background:#26150f!important;
+ }
+ body.du-evening-mode #eveningLanding > .du-evening-landing-photo > img{
+   position:absolute!important;
+   display:block!important;
+   inset:0 0 0 auto!important;
+   width:76%!important;
+   height:100%!important;
+   max-width:none!important;
+   object-fit:cover!important;
+   object-position:50% 42%!important;
+   filter:saturate(1.03) contrast(1.03);
+   mask-image:none!important;
+   -webkit-mask-image:none!important;
+ }
+ body.du-evening-mode #eveningLanding > .du-evening-landing-photo::before{
+   content:""!important;
+   display:block!important;
+   position:absolute!important;
+   z-index:2!important;
+   inset:0!important;
+   background:linear-gradient(90deg,#261711 0%,rgba(38,23,17,.96) 23%,rgba(38,23,17,.72) 39%,rgba(38,23,17,.16) 65%,rgba(38,23,17,0) 100%)!important;
+   pointer-events:none;
+ }
+ body.du-evening-mode #eveningLanding > .du-evening-landing-content{
+   grid-column:1!important;
+   grid-row:1!important;
+   z-index:5!important;
+   width:min(850px,57vw)!important;
+   max-width:none!important;
+   min-width:0!important;
+   min-height:0!important;
+   align-self:start!important;
+   justify-content:flex-start!important;
+   margin:0!important;
+   padding:clamp(67px,5.6vw,88px) 0 28px clamp(45px,5.4vw,88px)!important;
+   background:transparent!important;
+   box-shadow:none!important;
+   isolation:auto!important;
+ }
+ body.du-evening-mode #eveningLanding .du-evening-landing-kicker{
+   font-size:clamp(12px,.82vw,14px)!important;
+   letter-spacing:.16em!important;
+   color:#fff1e6!important;
+   border:0!important;
+   padding:0!important;
+   margin:0 0 13px!important;
+   text-shadow:0 1px 6px rgba(0,0,0,.3)!important;
+ }
+ body.du-evening-mode #eveningLanding .du-evening-landing-content h1{
+   font:400 clamp(104px,8.9vw,153px)/.78 var(--du-magazine-serif)!important;
+   letter-spacing:-.06em!important;
+   width:max-content!important;
+   max-width:min(830px,94vw)!important;
+   margin:0 0 clamp(13px,1.3vw,21px)!important;
+   color:#fff2e4!important;
+   text-shadow:0 2px 12px rgba(0,0,0,.22)!important;
+   white-space:nowrap!important;
+ }
+ body.du-evening-mode #eveningLanding .du-evening-landing-content h1 em{
+   color:#e39ba7!important;
+ }
+ body.du-evening-mode #eveningLanding .du-evening-landing-content h1 span{
+   display:none!important;
+ }
+ body.du-evening-mode #eveningLanding .du-evening-landing-lead{
+   color:#f8ecdd!important;
+   font-size:clamp(28px,2.6vw,42px)!important;
+   line-height:1.03!important;
+   max-width:24ch!important;
+   margin:0 0 9px!important;
+   text-shadow:0 2px 10px rgba(0,0,0,.3)!important;
+ }
+ body.du-evening-mode #eveningLanding .du-evening-landing-text{
+   color:#fff5ea!important;
+   font-size:clamp(15px,1.1vw,18px)!important;
+   line-height:1.42!important;
+   max-width:56ch!important;
+   margin:0 0 8px!important;
+   text-shadow:0 1px 8px rgba(0,0,0,.4)!important;
+ }
+ body.du-evening-mode #eveningLanding .du-evening-landing-benefits{
+   border:0!important;
+   width:auto!important;
+   margin:3px 0 11px!important;
+   padding:6px 0!important;
+   gap:8px 21px!important;
+ }
+ body.du-evening-mode #eveningLanding .du-evening-landing-benefits b,
+ body.du-evening-mode #eveningLanding .du-evening-landing-benefits span{
+   color:#fff3e8!important;
+   text-shadow:0 1px 7px rgba(0,0,0,.4)!important;
+ }
+ body.du-evening-mode #eveningLanding .du-evening-landing-cta{
+   padding:11px 23px!important;
+   min-height:45px!important;
+   border-radius:24px!important;
+   color:#77243a!important;
+   background:#fff1e3!important;
+   border:1px solid rgba(255,255,255,.6)!important;
+   margin:0!important;
+   font-size:14px!important;
+   box-shadow:none!important;
+ }
+ body.du-evening-mode #eveningLanding .du-evening-inspiration{
+   width:min(750px,calc(100vw - 145px))!important;
+   max-width:none!important;
+   margin:15px 0 0!important;
+   padding:12px 0 0!important;
+   border-top:1px solid rgba(255,242,227,.65)!important;
+ }
+ body.du-evening-mode #eveningLanding .du-evening-inspiration-head{
+   gap:12px!important;
+   margin:0 0 9px!important;
+   align-items:baseline;
+ }
+ body.du-evening-mode #eveningLanding .du-evening-inspiration-head strong{
+   color:#fff4e9!important;
+   font-size:clamp(25px,2.1vw,34px)!important;
+   line-height:1.02!important;
+ }
+ body.du-evening-mode #eveningLanding .du-evening-inspiration-head small{
+   color:#fff5e9!important;
+   font-size:12px!important;
+ }
+ body.du-evening-mode #eveningLanding .du-evening-inspiration-grid{
+   display:grid!important;
+   grid-template-columns:repeat(3,minmax(0,1fr))!important;
+   width:100%!important;
+   gap:14px!important;
+ }
+ body.du-evening-mode #eveningLanding .du-evening-inspiration-card{
+   min-width:0!important;
+   overflow:hidden!important;
+   border:1px solid rgba(255,237,218,.85)!important;
+   border-radius:7px!important;
+   background:#fff5e8!important;
+   box-shadow:0 4px 12px rgba(0,0,0,.17)!important;
+ }
+ body.du-evening-mode #eveningLanding .du-evening-inspiration-card img{
+   display:block!important;
+   width:100%!important;
+   height:clamp(90px,6.2vw,111px)!important;
+   object-fit:cover!important;
+ }
+ body.du-evening-mode #eveningLanding .du-evening-inspiration-card span{
+   display:block!important;
+   padding:5px 9px!important;
+   font-size:13px!important;
+   line-height:1.3!important;
+   color:#76293b!important;
+ }
+ body.du-evening-mode #eveningLanding .du-evening-inspiration-card small{
+   font-size:11px!important;
+   color:#776969!important;
+ }
+ body.du-evening-mode #eveningLanding .du-evening-inspiration-credit{
+   display:none!important;
+ }
+ body.du-evening-mode #eveningLanding .du-evening-landing-caption{
+   display:none!important;
+ }
+ body.du-evening-mode .du-evening-back:not(.du-catalog-back){
+   position:absolute!important;
+   top:clamp(199px,15vw,240px)!important;
+   left:clamp(40px,5.4vw,88px)!important;
+   z-index:50!important;
+   border-radius:22px!important;
+   padding:7px 14px!important;
+   min-height:34px!important;
+   font-size:13px!important;
+   background:#fff3e7!important;
+   color:#6a2434!important;
+   transform:none!important;
+ }
+}
+@media(min-width:1021px) and (max-height:900px){
+ body.du-evening-mode #eveningLanding > .du-evening-landing-content{
+   padding-top:58px!important;
+ }
+ body.du-evening-mode #eveningLanding .du-evening-landing-content h1{
+   font-size:clamp(95px,8.5vw,131px)!important;
+ }
+ body.du-evening-mode #eveningLanding .du-evening-landing-lead{
+   font-size:clamp(26px,2.35vw,36px)!important;
+ }
+ body.du-evening-mode #eveningLanding > .du-evening-landing-photo{
+   min-height:685px!important;
+ }
+ body.du-evening-mode #eveningLanding .du-evening-inspiration-card img{
+   height:85px!important;
+ }
+}
+/* On narrow layouts the three recipe cards remain in normal reading flow. */
+@media(max-width:1020px){
+ body.du-evening-mode #eveningLanding .du-evening-landing-content h1 span{
+   display:none;
+ }
+ body.du-evening-mode #eveningLanding .du-evening-inspiration-grid{
+   grid-template-columns:repeat(3,minmax(0,1fr));
+ }
+}
+@media(max-width:560px){
+ body.du-evening-mode #eveningLanding .du-evening-inspiration-grid{
+   grid-template-columns:repeat(2,minmax(0,1fr));
+ }
+}
