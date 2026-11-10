@@ -7194,3 +7194,69 @@ body :is(
   #homeView #catalog .filter-button:active,
   #homeView #catalog .fav-floating:active{transform:none!important;}
 }
+
+/* APPROVED_HOME_VISUAL_RHYTHM_20261111
+   Editorial pacing only. The user-approved 2026-11-11 baseline remains
+   authoritative. Never change photo crops, block proportions, type family,
+   button paper masks, decorative connectors or the order of chapters.
+   Use internal whitespace so the hand-drawn joins stay connected. */
+@media(min-width:921px){
+  /* Three cover stories: a measured breath after the dramatic hero. */
+  #homeView > .du-cover-chapters.du-approved-image-cards{
+    padding-top:clamp(37px,3.6vw,54px);
+    padding-bottom:clamp(46px,4.6vw,69px);
+  }
+  /* A short quiet interlude before the next photographic chapter. */
+  #homeView > .du-quote-strip > .container{
+    padding-top:clamp(25px,2.8vw,42px);
+    padding-bottom:clamp(25px,2.8vw,42px);
+  }
+  /* Magazine introduction gets room before the large photo-category spread. */
+  #homeView > #categories > .du-section-top{
+    margin-bottom:clamp(32px,3.7vw,54px);
+  }
+  /* The favourites chapter needs a distinct opening, without moving
+     the approved full-width bonus banner immediately above it. */
+  #homeView > #my-recipes .du-my-heading{
+    margin-bottom:clamp(27px,3.2vw,45px);
+  }
+  /* Separate the Agrill headline from its rich eight-photo collage. */
+  #homeView #airfryer .du-airfryer-landing .du-section-top{
+    margin-bottom:clamp(38px,4.2vw,62px);
+  }
+}
+@media(min-width:761px) and (max-width:920px){
+  #homeView > .du-cover-chapters.du-approved-image-cards{
+    padding-top:36px;padding-bottom:49px;
+  }
+  #homeView > .du-quote-strip > .container{
+    padding-top:27px;padding-bottom:27px;
+  }
+  #homeView > #categories > .du-section-top{margin-bottom:30px;}
+  #homeView > #my-recipes .du-my-heading{margin-bottom:28px;}
+  #homeView #airfryer .du-airfryer-landing .du-section-top{margin-bottom:39px;}
+}
+@media(max-width:760px){
+  /* Compact magazine cadence: modest rests, never a wall of whitespace. */
+  #homeView > .du-cover-chapters.du-approved-image-cards{
+    padding-top:27px;padding-bottom:39px;
+  }
+  #homeView > .du-quote-strip > .container{
+    padding-top:24px;padding-bottom:24px;
+  }
+  #homeView > #categories > .du-section-top{
+    margin-bottom:clamp(24px,6vw,34px);
+  }
+  #homeView > #my-recipes .du-my-heading{
+    margin-bottom:clamp(23px,5vw,31px);
+  }
+  #homeView #airfryer .du-airfryer-landing .du-section-top{
+    margin-bottom:clamp(29px,7vw,42px);
+  }
+}
+/* Strictly typographic air inside chapter introductions. Avoid modifying
+   line-height or font size of any owner-approved banner artwork. */
+#homeView > #categories .du-section-heading > p,
+#homeView > #my-recipes .du-my-heading-lead{
+  text-wrap:pretty;
+}
