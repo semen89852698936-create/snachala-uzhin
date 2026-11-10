@@ -6477,3 +6477,123 @@ body .du-back-to-top .du-back-to-top-arrow{font:700 24px/1 Georgia,serif;}
  body.du-airfryer-standalone .du-airfryer-home-link,
  .header .main-nav > a{transition:none!important;}
 }
+
+
+/* APPROVED_BANNER_PRINT_CORRECTIONS_20261110
+   The photos are kept in place. The existing live text covers only the
+   inaccurate image-embedded subtitle/caption/1001, without replacing artwork.
+   Relative positioning preserves the approved 3:1 banner proportions. */
+#homeView > .du-photo-break > .du-photo-overlay{
+  position:absolute!important;
+  inset:0!important;
+  display:block!important;
+  width:100%!important;
+  height:100%!important;
+  min-height:0!important;
+  min-width:0!important;
+  margin:0!important;
+  padding:0!important;
+  clip-path:none!important;
+  overflow:visible!important;
+  white-space:normal!important;
+  pointer-events:none!important;
+  background:none!important;
+  z-index:5;
+}
+#homeView > .du-photo-break > .du-photo-overlay > :not(p){display:none!important}
+#homeView > .du-photo-break > .du-photo-overlay > p{
+  position:absolute!important;
+  left:34.5%!important;
+  top:52.1%!important;
+  width:31.8%!important;
+  height:9.3%!important;
+  margin:0!important;
+  padding:0!important;
+  display:flex!important;
+  align-items:center;
+  justify-content:center;
+  white-space:nowrap!important;
+  overflow:visible!important;
+  z-index:2;
+  color:#f7ddd5!important;
+  text-align:center;
+  font:italic 500 clamp(11px,1.58vw,33px)/1.15 'Cormorant Garamond',Georgia,serif!important;
+  text-shadow:0 1px 2px rgba(34,12,17,.3);
+}
+#homeView > .du-photo-break > .du-photo-overlay > p::before{
+  content:"";
+  position:absolute;
+  inset:-11% -2%;
+  z-index:-1;
+  background:linear-gradient(90deg,#4e2929,#663634 32%,#7d4138 75%,#864539);
+  -webkit-mask-image:radial-gradient(ellipse 71% 83% at center,#000 55%,transparent 100%);
+  mask-image:radial-gradient(ellipse 71% 83% at center,#000 55%,transparent 100%);
+  pointer-events:none;
+}
+/* The approved bonus background contains an embedded I00I and outdated
+   introductory wording. Preserve its photo and live click target. */
+#homeView .du-bonus .bonus-inner>.du-bonus-corrected-number{
+  position:absolute!important;
+  left:14.25%;
+  top:28.1%;
+  width:16.1%;
+  height:17.7%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:0;
+  z-index:2;
+  color:#f4d4cf;
+  font:500 clamp(48px,6.7vw,150px)/1 'Cormorant Garamond',Georgia,serif;
+  letter-spacing:-.06em;
+  text-shadow:0 1px 1px rgba(50,15,21,.13);
+  pointer-events:none;
+}
+#homeView .du-bonus .bonus-inner>.du-bonus-corrected-number::before{
+  content:"";
+  position:absolute;
+  inset:-6% -8%;
+  z-index:-1;
+  background:linear-gradient(95deg,#2d1510,#371b19 45%,#471e1c 100%);
+  -webkit-mask-image:radial-gradient(ellipse 72% 85%,#000 51%,transparent 100%);
+  mask-image:radial-gradient(ellipse 72% 85%,#000 51%,transparent 100%);
+}
+#homeView .du-bonus .bonus-text>p{
+  position:absolute!important;
+  inset:auto!important;
+  left:34.5%!important;
+  top:35.7%!important;
+  width:47.8%!important;
+  height:auto!important;
+  min-width:0!important;
+  margin:0!important;
+  padding:0!important;
+  overflow:visible!important;
+  clip-path:none!important;
+  white-space:normal!important;
+  display:block!important;
+  text-align:left;
+  color:#f5e5df!important;
+  font:500 clamp(10px,1.24vw,27px)/1.75 Manrope,Arial,sans-serif!important;
+  z-index:3;
+}
+#homeView .du-bonus .bonus-text>p::before{
+  content:"";
+  position:absolute;
+  inset:-11% -1.5%;
+  z-index:-1;
+  background:linear-gradient(90deg,#492220,#5c2e2a 52%,#854b41);
+  -webkit-mask-image:radial-gradient(ellipse 76% 88%,#000 62%,transparent 100%);
+  mask-image:radial-gradient(ellipse 76% 88%,#000 62%,transparent 100%);
+}
+@media(max-width:680px){
+ #homeView > .du-photo-break > .du-photo-overlay > p{
+   font-size:clamp(7px,1.55vw,12px)!important;
+ }
+ #homeView .du-bonus .bonus-inner>.du-bonus-corrected-number{
+   font-size:clamp(24px,6.7vw,51px);
+ }
+ #homeView .du-bonus .bonus-text>p{
+   font-size:clamp(6px,1.22vw,10px)!important;
+ }
+}
