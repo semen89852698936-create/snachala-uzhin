@@ -151,9 +151,9 @@
   
   function initSitePolish() {
     const heading=document.querySelector('#airfryerTitle em');
-    if(heading)heading.textContent=heading.textContent.replace(/\\.\\s*$/,'');
+    if(heading)heading.textContent=heading.textContent.replace(/\.\s*$/,'');
     const bonus=document.querySelector('.du-bonus .bonus-text > p');
-    if(bonus)bonus.textContent=bonus.textContent.replace(/^Особенный рецепт(?=\\s*№)/,'Бонусный рецепт');
+    if(bonus)bonus.textContent=bonus.textContent.replace(/^Особенный рецепт(?=\s*№)/,'Бонусный рецепт');
     const dinner=document.querySelector('.du-photo-break .du-photo-overlay > p');
     if(dinner)dinner.textContent='Иногда этого вполне достаточно.';
     if(!document.getElementById('top')||document.querySelector('.du-back-to-top'))return;
