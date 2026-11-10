@@ -6597,3 +6597,46 @@ body .du-back-to-top .du-back-to-top-arrow{font:700 24px/1 Georgia,serif;}
    font-size:clamp(6px,1.22vw,10px)!important;
  }
 }
+
+/* SITE_NAVIGATION_AND_BANNER_TOUCHUPS_20261110 */
+/* Keep every visible desktop navigation button on the same header line.
+   Existing compact-navigation breakpoints remain intact. */
+@media (min-width:681px){
+  .header .header-inner{
+    flex-wrap:nowrap!important;
+    gap:clamp(6px,.7vw,12px)!important;
+  }
+  .header .main-nav{
+    flex:1 1 auto;
+    min-width:0;
+    flex-wrap:nowrap!important;
+    justify-content:flex-end;
+    gap:clamp(3px,.44vw,8px)!important;
+  }
+  .header .main-nav > a{
+    white-space:nowrap!important;
+    flex:0 0 auto;
+    font-size:clamp(11px,.89vw,14px)!important;
+    padding:9px clamp(5px,.5vw,10px)!important;
+  }
+  .header .main-nav > a[data-nav="airfryer"]::before{
+    font-size:clamp(15px,1.24vw,19px)!important;
+  }
+  .header .header-actions{flex:0 0 auto}
+}
+@media (min-width:921px) and (max-width:1200px){
+  .header .du-brand-words{font-size:clamp(12px,1vw,14px)}
+  .header .du-brand-words em{font-size:clamp(20px,1.8vw,24px)}
+  .header .header-actions .shopping-open{padding-inline:8px}
+  .header .main-nav > a{font-size:clamp(11px,.98vw,12px)!important;padding-inline:5px!important}
+}
+/* The approved photo has the earlier caption printed into its pixels.
+   Make the local correction opaque behind the new words so no old letters show.
+   No change to the approved photo, aspect ratio or current caption. */
+#homeView > .du-photo-break > .du-photo-overlay > p::before{
+  inset:-22% -10%!important;
+  -webkit-mask-image:radial-gradient(ellipse 86% 94% at center,#000 78%,rgba(0,0,0,.99) 84%,transparent 100%)!important;
+  mask-image:radial-gradient(ellipse 86% 94% at center,#000 78%,rgba(0,0,0,.99) 84%,transparent 100%)!important;
+}
+/* Only the dedicated newsprint link should be seen as the catalogue's back link. */
+body.du-airfryer-standalone .du-evening-back{display:none!important}
