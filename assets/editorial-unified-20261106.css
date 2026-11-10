@@ -7545,3 +7545,361 @@ body.du-evening-mode #evening .du-story-after-copy h2::after{
   margin:13px 0 7px!important;
   background-color:#9b2c45!important;
 }
+
+
+/* EVENING_COMPOSITION_RHYTHM_PARITY_20261111
+   Same editorial grammar as the approved homepage: strong photographic
+   planes, expressive serif, quieter full-bleed separators, generous
+   breathing room. Only the existing couple photography is displayed.
+   No markup, copy, controls or existing media sources changed. */
+body.du-evening-mode #homeView > #eveningLanding{
+  position:relative;
+  display:grid!important;
+  grid-template-columns:minmax(0,1fr);
+  gap:0;
+  background:#f3e8db;
+  padding:0!important;
+  align-items:stretch;
+}
+body.du-evening-mode #eveningLanding > .du-evening-landing-photo{
+  grid-column:1;
+  grid-row:1;
+  position:relative;
+  width:100%;
+  min-width:0;
+  min-height:clamp(630px,54vw,790px);
+  max-height:none;
+  overflow:hidden;
+  z-index:1;
+  background:#34211d;
+}
+body.du-evening-mode #eveningLanding > .du-evening-landing-photo > img{
+  display:block;
+  position:absolute;
+  inset:0;
+  width:100%;
+  max-width:none;
+  height:100%;
+  object-fit:cover;
+  object-position:center 38%;
+  -webkit-mask-image:none!important;
+  mask-image:none!important;
+}
+body.du-evening-mode #eveningLanding > .du-evening-landing-photo::before{
+  content:"";
+  display:block;
+  position:absolute;
+  z-index:1;
+  inset:0;
+  background:linear-gradient(90deg,rgba(25,14,15,.88) 0%,rgba(28,15,17,.67) 30%,rgba(29,16,17,.16) 72%,transparent 100%);
+  pointer-events:none;
+}
+body.du-evening-mode #eveningLanding > .du-evening-landing-content{
+  grid-column:1;
+  grid-row:1;
+  position:relative;
+  z-index:3;
+  width:min(590px,45%);
+  max-width:none;
+  align-self:stretch;
+  min-height:clamp(630px,54vw,790px);
+  padding:clamp(55px,6vw,95px) clamp(24px,4.6vw,75px)!important;
+  margin:0;
+  background:transparent!important;
+  box-shadow:none;
+  display:flex;
+  flex-direction:column;
+  align-items:flex-start;
+  justify-content:center;
+}
+body.du-evening-mode #eveningLanding .du-evening-landing-content h1{
+  font-size:clamp(79px,9vw,145px)!important;
+  line-height:.83;
+  color:#fff2e5;
+  margin:14px 0 28px;
+}
+body.du-evening-mode #eveningLanding .du-evening-landing-content h1 em{
+  color:#f6d6c9;
+}
+body.du-evening-mode #eveningLanding .du-evening-landing-kicker,
+body.du-evening-mode #eveningLanding .du-evening-landing-lead,
+body.du-evening-mode #eveningLanding .du-evening-landing-text,
+body.du-evening-mode #eveningLanding .du-evening-landing-benefits b,
+body.du-evening-mode #eveningLanding .du-evening-landing-benefits span{
+  color:#fff1e7;
+  text-shadow:0 2px 10px rgba(24,10,11,.45);
+}
+body.du-evening-mode #eveningLanding .du-evening-landing-lead{
+  font-size:clamp(26px,2.65vw,39px);
+  line-height:1.07;
+}
+body.du-evening-mode #eveningLanding .du-evening-landing-text{
+  font-size:clamp(16px,1.1vw,18px);
+  line-height:1.55;
+}
+body.du-evening-mode #eveningLanding .du-evening-landing-benefits{
+  border-color:rgba(255,242,226,.32);
+  gap:11px 19px;
+}
+body.du-evening-mode #eveningLanding .du-evening-landing-caption{
+  left:auto;
+  right:clamp(22px,4vw,65px);
+  bottom:clamp(24px,3vw,45px);
+  z-index:2;
+  font-size:clamp(19px,2vw,29px);
+  text-align:right;
+  color:#fff6ec;
+}
+body.du-evening-mode #eveningLanding .du-evening-inspiration{
+  position:relative;
+  z-index:5;
+  width:min(470px,100%);
+  margin-top:clamp(26px,2.8vw,36px);
+  border-color:rgba(255,239,223,.4);
+  padding-top:18px;
+}
+body.du-evening-mode #eveningLanding .du-evening-inspiration-head strong,
+body.du-evening-mode #eveningLanding .du-evening-inspiration-head small,
+body.du-evening-mode #eveningLanding .du-evening-inspiration-credit{
+  color:#fff2e7;
+}
+body.du-evening-mode #eveningLanding .du-evening-inspiration-card{
+  background:#fff8ec;
+  color:#542634;
+  box-shadow:0 5px 17px rgba(19,10,10,.18);
+}
+body.du-evening-mode #eveningLanding .du-evening-pinned{
+  background:#fff4e8;
+  text-shadow:none;
+}
+/* The second chapter is ONE original approved photo + ONE editorial text field.
+   Remove the extra pseudo-element steak plane that visually diluted the couple. */
+body.du-evening-mode #eveningLanding > .du-story-dinner{
+  grid-column:1;
+  grid-row:auto;
+  display:grid;
+  grid-template-columns:minmax(0,1.24fr) minmax(0,.76fr);
+  gap:0;
+  min-height:clamp(490px,42vw,650px);
+  margin:0;
+  padding:0;
+  align-items:stretch;
+  background:#f5e9db;
+  border:0;
+}
+body.du-evening-mode #eveningLanding > .du-story-dinner::before{
+  display:none!important;
+  content:none!important;
+  background-image:none!important;
+}
+body.du-evening-mode #eveningLanding .du-story-dinner-photo{
+  grid-column:1;
+  grid-row:1;
+  display:block;
+  width:100%;
+  min-width:0;
+  min-height:clamp(490px,42vw,650px);
+  margin:0;
+  overflow:hidden;
+  position:relative;
+  z-index:1;
+  -webkit-mask-image:none!important;
+  mask-image:none!important;
+}
+body.du-evening-mode #eveningLanding .du-story-dinner-photo img{
+  display:block;
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  object-position:center 44%;
+}
+body.du-evening-mode #eveningLanding .du-story-dinner-copy{
+  grid-column:2;
+  grid-row:1;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:flex-start;
+  margin:0;
+  padding:clamp(38px,4.7vw,76px) clamp(28px,4.2vw,70px);
+  background:#f5e9db!important;
+  border:0;
+  z-index:2;
+}
+body.du-evening-mode #eveningLanding .du-story-dinner-copy h2{
+  font-size:clamp(49px,5.1vw,83px);
+  line-height:.91;
+  color:#652437;
+  text-wrap:balance;
+}
+body.du-evening-mode #eveningLanding .du-story-dinner-copy p{
+  font-size:clamp(17px,1.25vw,20px);
+  line-height:1.58;
+  max-width:34ch;
+}
+body.du-evening-mode .du-evening-wide-strip{
+  padding:clamp(27px,3.3vw,47px) clamp(25px,5vw,85px)!important;
+  min-height:0;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  gap:6px;
+}
+body.du-evening-mode .du-evening-wide-strip .du-evening-strip-number{
+  margin:0 0 7px;
+  letter-spacing:.11em;
+}
+body.du-evening-mode .du-evening-wide-strip p{
+  max-width:36ch;
+  font-size:clamp(30px,3.9vw,59px);
+  line-height:1.07;
+  margin:0 auto;
+}
+body.du-evening-mode #evening .du-story-after{
+  display:grid;
+  grid-template-columns:minmax(0,.45fr) minmax(0,.55fr);
+  margin-top:clamp(40px,5vw,80px);
+  min-height:clamp(470px,42vw,600px);
+  padding:0;
+  background:#372421;
+  gap:0;
+}
+body.du-evening-mode #evening .du-story-after-copy{
+  grid-column:1;
+  grid-row:1;
+  position:relative;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  padding:clamp(32px,4.6vw,75px);
+  z-index:2;
+  background:#372421!important;
+}
+body.du-evening-mode #evening .du-story-after-copy h2{
+  font-size:clamp(48px,5.1vw,85px);
+  line-height:.93;
+}
+body.du-evening-mode #evening .du-story-after-photo{
+  grid-column:2;
+  grid-row:1;
+  min-height:clamp(470px,42vw,600px);
+  width:100%;
+  height:100%;
+  margin:0;
+  overflow:hidden;
+  position:relative;
+  z-index:1;
+  -webkit-mask-image:none!important;
+  mask-image:none!important;
+}
+body.du-evening-mode #evening .du-story-after-photo img{
+  width:100%;
+  height:100%;
+  display:block;
+  object-fit:cover;
+  object-position:center;
+}
+@media(max-width:1020px){
+  body.du-evening-mode #eveningLanding > .du-evening-landing-content{
+    width:min(610px,58%);
+  }
+  body.du-evening-mode #eveningLanding .du-evening-inspiration{
+    width:100%;
+  }
+  body.du-evening-mode #eveningLanding > .du-story-dinner{
+    grid-template-columns:minmax(0,1fr) minmax(0,1fr);
+  }
+}
+@media(max-width:760px){
+  body.du-evening-mode #homeView > #eveningLanding{
+    display:flex!important;
+    flex-direction:column!important;
+    gap:0!important;
+  }
+  body.du-evening-mode #eveningLanding > .du-evening-landing-photo{
+    position:relative;
+    order:0;
+    min-height:clamp(440px,115vw,670px);
+  }
+  body.du-evening-mode #eveningLanding > .du-evening-landing-photo > img{
+    position:absolute;
+    inset:0;
+    width:100%;
+    height:100%;
+    -webkit-mask-image:none!important;
+    mask-image:none!important;
+  }
+  body.du-evening-mode #eveningLanding > .du-evening-landing-photo::before{
+    display:none;
+  }
+  body.du-evening-mode #eveningLanding > .du-evening-landing-content{
+    order:1;
+    min-height:0;
+    width:100%;
+    padding:38px 22px 42px!important;
+    background:#f5e9db!important;
+  }
+  body.du-evening-mode #eveningLanding .du-evening-landing-content h1,
+  body.du-evening-mode #eveningLanding .du-evening-landing-lead,
+  body.du-evening-mode #eveningLanding .du-evening-landing-text,
+  body.du-evening-mode #eveningLanding .du-evening-landing-kicker,
+  body.du-evening-mode #eveningLanding .du-evening-landing-benefits b,
+  body.du-evening-mode #eveningLanding .du-evening-landing-benefits span,
+  body.du-evening-mode #eveningLanding .du-evening-inspiration-head strong,
+  body.du-evening-mode #eveningLanding .du-evening-inspiration-head small,
+  body.du-evening-mode #eveningLanding .du-evening-inspiration-credit{
+    color:#5e293a;
+    text-shadow:none;
+  }
+  body.du-evening-mode #eveningLanding .du-evening-landing-content h1{
+    font-size:clamp(73px,16vw,111px)!important;
+    line-height:.85;
+  }
+  body.du-evening-mode #eveningLanding .du-evening-landing-content h1 em{
+    color:#a02b4b;
+  }
+  body.du-evening-mode #eveningLanding .du-evening-inspiration{
+    border-color:#b58d8e;
+  }
+  body.du-evening-mode #eveningLanding > .du-story-dinner{
+    order:3;
+    display:flex;
+    flex-direction:column;
+  }
+  body.du-evening-mode #eveningLanding .du-story-dinner-photo{
+    order:0;
+    width:100%;
+    min-height:clamp(300px,72vw,480px);
+  }
+  body.du-evening-mode #eveningLanding .du-story-dinner-copy{
+    order:1;
+    width:100%;
+    padding:35px 24px 43px;
+  }
+  body.du-evening-mode #eveningLanding > .du-evening-strip-one{
+    order:2;
+  }
+  body.du-evening-mode #eveningLanding > .du-evening-strip-two{
+    order:4;
+  }
+  body.du-evening-mode #evening .du-story-after{
+    display:flex;
+    flex-direction:column;
+    min-height:0;
+  }
+  body.du-evening-mode #evening .du-story-after-photo{
+    order:0;
+    min-height:clamp(300px,75vw,500px);
+    width:100%;
+  }
+  body.du-evening-mode #evening .du-story-after-copy{
+    order:1;
+    padding:35px 24px 43px;
+  }
+  body.du-evening-mode .du-evening-wide-strip{
+    padding:27px 19px 30px!important;
+  }
+  body.du-evening-mode .du-evening-wide-strip p{
+    font-size:clamp(31px,7.9vw,49px);
+  }
+}
