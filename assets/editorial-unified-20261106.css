@@ -6513,3 +6513,23 @@ body .du-back-to-top .du-back-to-top-arrow{font:700 24px/1 Georgia,serif;}
 }
 /* Only the dedicated newsprint link should be seen as the catalogue's back link. */
 body.du-airfryer-standalone .du-evening-back{display:none!important}
+
+/* CATALOG_BUTTON_LABEL_READABILITY_20261110
+   Slightly enlarge all thirteen existing newsprint filter labels.
+   Preserve the approved paper silhouettes, widths, offsets and star icon.
+   The Bonus caption is plain text; its sole star comes from ::before. */
+#homeView #catalog #categoryFilters > .chip{
+  font-size:clamp(17px,1.3vw,20px)!important;
+  line-height:1.1!important;
+  overflow-wrap:break-word!important;
+}
+@media (min-width:761px) and (max-width:1180px){
+  #homeView #catalog #categoryFilters > .chip{
+    font-size:18px!important;
+  }
+}
+@media (max-width:760px){
+  #homeView #catalog #categoryFilters > .chip{
+    font-size:clamp(17px,4.3vw,18px)!important;
+  }
+}
