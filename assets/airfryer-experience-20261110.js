@@ -88,7 +88,19 @@
     const section=document.getElementById('airfryer');
     if(!section)return;
     const layout=section.querySelector('.du-airfryer-catalog');
-    if(layout)layout.insertAdjacentHTML('afterbegin','<a class="du-airfryer-home-link" href="/">← На главную</a>');
+    if(layout){
+      // The catalogue has exactly one return control, in the approved newsprint style.
+      const existing=[...section.querySelectorAll('a,button')].filter(node=>
+        node.classList.contains('du-airfryer-home-link') ||
+        /^\s*(?:←\s*)?На главную\s*$/i.test(node.textContent||''));
+      const link=existing.find(node=>node.classList.contains('du-airfryer-home-link')) ||
+        existing[0] || document.createElement('a');
+      for(const duplicate of existing)if(duplicate!==link)duplicate.remove();
+      link.className='du-airfryer-home-link';
+      link.href='/';
+      link.textContent='← На главную';
+      if(!link.isConnected)layout.prepend(link);
+    }
     document.querySelectorAll('.header a[href^="#"],.du-quick-nav-mobile a[href^="#"]').forEach(link=>{
       link.href=link.getAttribute('href')==='#airfryer'?'/airfryer/':'/'+link.getAttribute('href');
     });
@@ -178,8 +190,9 @@
       button.classList.toggle('is-visible',window.scrollY>440&&!modalOpen);
     };
     button.addEventListener('click',()=>{
-      const motion=window.matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth';
-      document.getElementById('top').scrollIntoView({behavior:motion,block:'start'});
+      // A sticky header is already in view: scrollIntoView(header) can do nothing.
+      // Go to the absolute beginning of the document, without animated intermediate stops.
+      window.scrollTo({top:0,left:0,behavior:'instant'});
     });
     window.addEventListener('scroll',update,{passive:true});
     window.addEventListener('hashchange',update);
