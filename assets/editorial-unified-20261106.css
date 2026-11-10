@@ -6172,3 +6172,32 @@ body .du-mood .du-mood-check{
 @media(prefers-reduced-motion:reduce){
  #homeView #catalog #categoryFilters>.chip{transition:none}
 }
+
+
+/* CATALOG_COLLAGE_NATURAL_HEIGHTS_20261110
+   Genuinely independent pieces of newsprint, not thirteen identical
+   rectangles: lightly varied cutout heights and greater baselines on wide
+   screens. All labels remain within their own torn-paper surfaces. */
+@media(min-width:1181px){
+ #homeView #catalog #categoryFilters>.chip{align-self:center}
+ #homeView #catalog #categoryFilters>.chip:nth-child(5n+1){
+   height:80px!important;min-height:80px!important;
+   --collage-rotate:-1.7deg;--collage-shift:2px;
+ }
+ #homeView #catalog #categoryFilters>.chip:nth-child(5n+2){
+   height:87px!important;min-height:87px!important;
+   --collage-rotate:1.35deg;--collage-shift:-3px;
+ }
+ #homeView #catalog #categoryFilters>.chip:nth-child(5n+3){
+   height:76px!important;min-height:76px!important;
+   --collage-rotate:-.8deg;--collage-shift:4px;
+ }
+ #homeView #catalog #categoryFilters>.chip:nth-child(5n+4){
+   height:83px!important;min-height:83px!important;
+   --collage-rotate:1.8deg;--collage-shift:-2px;
+ }
+ #homeView #catalog #categoryFilters>.chip:nth-child(5n){
+   height:78px!important;min-height:78px!important;
+   --collage-rotate:-1.35deg;--collage-shift:3px;
+ }
+}
