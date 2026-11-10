@@ -168,14 +168,6 @@
     if(bonus)bonus.textContent=bonus.textContent.replace(/^Особенный рецепт(?=\s*№)/,'Бонусный рецепт');
     const dinner=document.querySelector('.du-photo-break .du-photo-overlay > p');
     if(dinner)dinner.textContent='Иногда этого вполне достаточно.';
-    const bonusInner=document.querySelector('.du-bonus .bonus-inner');
-    if(bonusInner&&!bonusInner.querySelector('.du-bonus-corrected-number')){
-      const number=document.createElement('span');
-      number.className='du-bonus-corrected-number';
-      number.textContent='1001';
-      number.setAttribute('aria-hidden','true');
-      bonusInner.appendChild(number);
-    }
     if(!document.getElementById('top')||document.querySelector('.du-back-to-top'))return;
     const button=document.createElement('button');
     button.type='button';
