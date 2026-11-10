@@ -7,6 +7,7 @@ on:
       - 'full-catalog/index.html'
       - 'scripts/test_unified_editorial.cjs'
       - 'scripts/e2e-unified-editorial.cjs'
+      - 'scripts/e2e-airfryer-paper-buttons.cjs'
       - 'scripts/e2e-editorial-home.cjs'
       - 'scripts/e2e-pepper-steak-editorial.cjs'
       - 'scripts/e2e-evening-editorial.cjs'
@@ -38,6 +39,7 @@ jobs:
         run: |
           set -euo pipefail
           python3 -m http.server 8765 --bind 127.0.0.1 >/tmp/unified-editorial-http.log 2>&1 &
+          timeout --signal=TERM --kill-after=10s 180s node scripts/e2e-airfryer-paper-buttons.cjs
           timeout --signal=TERM --kill-after=10s 180s node scripts/e2e-unified-editorial.cjs
           timeout --signal=TERM --kill-after=10s 180s node scripts/e2e-editorial-home.cjs
           timeout --signal=TERM --kill-after=10s 180s node scripts/e2e-pepper-steak-editorial.cjs
