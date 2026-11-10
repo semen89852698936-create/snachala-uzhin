@@ -7249,3 +7249,176 @@ body :is(
 #homeView > #my-recipes .du-my-heading-lead{
   text-wrap:pretty;
 }
+
+
+/* EVENING_COUPLES_EDITORIAL_20261111
+   Editorial continuation of the approved homepage, NOT a new photo set.
+   Original couple images, text, scene order, links, shopping and music
+   remain untouched. Applies only while Our Evening mode is active. */
+body.du-evening-mode{
+  --evening-paper:#f6e9da;
+  --evening-ink:#3d2525;
+  --evening-wine:#781a32;
+  --evening-tear:polygon(0 9%,4% 2%,9% 8%,14% 1%,20% 10%,26% 3%,33% 9%,40% 2%,47% 8%,55% 1%,61% 9%,69% 2%,75% 10%,82% 3%,89% 9%,94% 2%,100% 7%,100% 93%,94% 99%,87% 92%,80% 100%,73% 93%,66% 99%,58% 92%,51% 100%,44% 94%,37% 99%,30% 92%,22% 99%,15% 93%,8% 100%,0 94%);
+}
+body.du-evening-mode #eveningLanding,
+body.du-evening-mode #evening,
+body.du-evening-mode #music{
+  color:var(--evening-ink);
+}
+body.du-evening-mode #eveningLanding{
+  background-color:var(--evening-paper);
+  background-image:var(--du-editorial-paper-grain);
+  row-gap:0;
+}
+body.du-evening-mode #eveningLanding .du-evening-landing-content h1,
+body.du-evening-mode #eveningLanding .du-story-dinner-copy h2,
+body.du-evening-mode #evening .du-story-after-copy h2,
+body.du-evening-mode #evening .du-section-heading h2,
+body.du-evening-mode #music .du-section-heading h2{
+  font-family:var(--du-magazine-serif);
+  font-weight:400;
+  letter-spacing:-.055em;
+  text-wrap:balance;
+}
+body.du-evening-mode #eveningLanding .du-evening-landing-content h1,
+body.du-evening-mode #eveningLanding .du-story-dinner-copy h2{
+  color:var(--evening-wine);
+}
+body.du-evening-mode #eveningLanding .du-evening-landing-content h1 em{
+  color:#972640;
+}
+body.du-evening-mode #eveningLanding .du-evening-landing-kicker{
+  color:#84283e;
+  letter-spacing:.16em;
+}
+body.du-evening-mode #eveningLanding .du-evening-landing-lead{
+  color:#622938;
+  font-style:italic;
+}
+body.du-evening-mode #eveningLanding .du-evening-landing-text{
+  color:#4b3532;
+  line-height:1.65;
+}
+body.du-evening-mode #eveningLanding .du-evening-landing-content{
+  background-color:var(--evening-paper);
+  background-image:var(--du-editorial-paper-grain);
+}
+body.du-evening-mode #eveningLanding .du-evening-landing-photo img,
+body.du-evening-mode #eveningLanding .du-story-dinner-photo img,
+body.du-evening-mode #evening .du-story-after-photo img{
+  filter:saturate(1.025) contrast(1.045);
+}
+body.du-evening-mode #eveningLanding .du-evening-landing-caption{
+  font-family:var(--du-magazine-serif);
+  font-style:italic;
+}
+body.du-evening-mode #eveningLanding .du-story-dinner-copy{
+  background-color:var(--evening-paper);
+}
+body.du-evening-mode #eveningLanding .du-story-dinner-copy h2::after,
+body.du-evening-mode #evening .du-story-after-copy h2::after{
+  content:"";
+  display:block;
+  width:min(200px,70%);
+  height:15px;
+  margin:13px 0 0 6%;
+  background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 240 24'%3E%3Cpath d='M4 19 Q114 -2 236 14' fill='none' stroke='%23a51e3f' stroke-width='3.5' stroke-linecap='round'/%3E%3C/svg%3E") center/100% 100% no-repeat;
+  pointer-events:none;
+}
+body.du-evening-mode #eveningLanding .du-evening-landing-cta,
+body.du-evening-mode #evening .du-evening-role-actions button{
+  transition:transform .2s ease,filter .2s ease;
+}
+body.du-evening-mode #eveningLanding .du-evening-landing-cta{
+  border-radius:0;
+  background:#7e1934;
+  color:#fff8ef;
+  border:0;
+  clip-path:var(--evening-tear);
+  padding-inline:30px;
+}
+body.du-evening-mode #eveningLanding .du-evening-landing-cta:hover{
+  filter:brightness(1.08);
+}
+body.du-evening-mode #evening .du-story-after{
+  margin-top:clamp(42px,5vw,76px);
+  border-top:clamp(18px,2.5vw,34px) solid var(--evening-paper);
+  border-bottom:clamp(18px,2.5vw,34px) solid var(--evening-paper);
+  box-sizing:border-box;
+}
+body.du-evening-mode #evening .du-story-after-copy{
+  background-image:linear-gradient(90deg,rgba(36,17,17,.52),rgba(36,17,17,.05));
+}
+body.du-evening-mode #evening .du-story-after-copy h2{
+  color:#fff2e5;
+}
+body.du-evening-mode #evening .du-section-top,
+body.du-evening-mode #music .du-section-top{
+  border-color:#8b2841;
+}
+body.du-evening-mode #music{
+  background-color:var(--evening-paper);
+}
+body.du-evening-mode #music .du-music-card{
+  transition:transform .22s ease,filter .22s ease;
+}
+@media(hover:hover) and (prefers-reduced-motion:no-preference){
+  body.du-evening-mode #music .du-music-card:hover{
+    transform:translateY(-5px);
+    filter:drop-shadow(0 9px 12px rgba(66,33,30,.15));
+  }
+}
+@media(min-width:1021px){
+  /* Paper is one uninterrupted magazine spread; the couple remains the hero. */
+  body.du-evening-mode #eveningLanding > .du-evening-landing-content{
+    padding-left:clamp(32px,5vw,78px);
+    padding-right:clamp(21px,3vw,49px);
+  }
+  body.du-evening-mode #eveningLanding > .du-evening-landing-photo{
+    min-height:clamp(600px,54vw,795px);
+  }
+  body.du-evening-mode #eveningLanding > .du-story-dinner{
+    border-top:clamp(24px,3vw,44px) solid var(--evening-paper);
+  }
+  body.du-evening-mode #eveningLanding .du-story-dinner-copy{
+    box-shadow:none;
+  }
+}
+@media(max-width:1020px){
+  body.du-evening-mode #eveningLanding > .du-evening-landing-content{
+    background-color:var(--evening-paper);
+  }
+  body.du-evening-mode #eveningLanding > .du-story-dinner{
+    border-top:20px solid var(--evening-paper);
+  }
+  body.du-evening-mode #evening .du-story-after-copy{
+    background:rgba(41,22,21,.94);
+  }
+}
+@media(max-width:760px){
+  body.du-evening-mode #eveningLanding .du-evening-landing-content h1{
+    font-size:clamp(66px,15.2vw,96px);
+    overflow-wrap:normal;
+  }
+  body.du-evening-mode #eveningLanding > .du-evening-landing-photo{
+    min-height:clamp(340px,88vw,470px);
+  }
+  body.du-evening-mode #eveningLanding > .du-story-dinner{
+    border-top-width:16px;
+  }
+  body.du-evening-mode #evening .du-story-after{
+    margin-top:34px;
+    border-top-width:16px;
+    border-bottom-width:16px;
+  }
+  body.du-evening-mode #eveningLanding .du-evening-landing-cta{
+    min-height:48px;
+  }
+}
+@media(prefers-reduced-motion:reduce){
+  body.du-evening-mode #music .du-music-card,
+  body.du-evening-mode #eveningLanding .du-evening-landing-cta{
+    transition:none;
+  }
+}
