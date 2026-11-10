@@ -6201,3 +6201,19 @@ body .du-mood .du-mood-check{
    --collage-rotate:-1.35deg;--collage-shift:3px;
  }
 }
+
+
+/* CATALOG_STANDALONE_FROM_CHAPTERS_20261110
+   Navigation-only change. Preserve every existing HTML block, visual style,
+   recipe/card/filter control and data. The ten illustrated large cards in
+   «Тысяча историй. Одна на сегодня» already set their selected category
+   and navigate to #catalog. #catalog is shown as its own screen instead
+   of interrupting the homepage; all other site sections stay on the home.
+   Existing main navigation «Рецепты» and all recipe back links continue
+   to work without redirects or duplicate recipe lists. */
+#homeView > #catalog:not(:target){
+  display:none!important;
+}
+#homeView:has(> #catalog:target) > :not(#catalog){
+  display:none!important;
+}
