@@ -7903,3 +7903,125 @@ body.du-evening-mode #evening .du-story-after-photo img{
     font-size:clamp(31px,7.9vw,49px);
   }
 }
+
+/* EVENING_FIRST_SCREEN_VISIBLE_20261111
+   Fix confirmed from owner screenshot at 1536px viewport: the full-width
+   photo hid the cover headline, and face crops overwhelmed the opening.
+   The approved site language uses an editorial 2-plane cover, not a
+   full-screen photographic zoom. Couples' photo source remains unchanged. */
+@media(min-width:761px){
+ body.du-evening-mode #homeView > #eveningLanding{
+   display:grid!important;
+   grid-template-columns:minmax(0, .43fr) minmax(0, .57fr)!important;
+   grid-template-rows:auto auto auto auto!important;
+   align-items:stretch;
+   gap:0!important;
+   width:100vw;
+   max-width:none;
+ }
+ body.du-evening-mode #eveningLanding > .du-evening-landing-content{
+   grid-column:1!important;
+   grid-row:1!important;
+   display:flex!important;
+   position:relative!important;
+   z-index:4!important;
+   width:100%!important;
+   max-width:none!important;
+   min-width:0;
+   min-height:0!important;
+   margin:0!important;
+   padding:clamp(37px,4.2vw,68px) clamp(26px,3.5vw,58px)!important;
+   background:#f3e8db!important;
+   color:#5c2535!important;
+   justify-content:flex-start!important;
+   align-items:flex-start;
+   isolation:isolate;
+ }
+ body.du-evening-mode #eveningLanding > .du-evening-landing-photo{
+   grid-column:2!important;
+   grid-row:1!important;
+   display:block!important;
+   position:relative!important;
+   z-index:1!important;
+   width:100%!important;
+   min-width:0!important;
+   min-height:clamp(620px,48vw,810px)!important;
+   height:100%!important;
+   overflow:hidden!important;
+ }
+ body.du-evening-mode #eveningLanding > .du-evening-landing-photo > img{
+   position:absolute!important;
+   inset:0!important;
+   display:block!important;
+   width:100%!important;
+   height:100%!important;
+   object-fit:cover!important;
+   object-position:center 45%!important;
+   max-width:none!important;
+   mask-image:none!important;
+   -webkit-mask-image:none!important;
+ }
+ body.du-evening-mode #eveningLanding > .du-evening-landing-photo::before{
+   display:none!important;
+   content:none!important;
+ }
+ body.du-evening-mode #eveningLanding .du-evening-landing-content h1{
+   position:relative!important;
+   z-index:5!important;
+   color:#70263b!important;
+   font-size:clamp(78px,7.6vw,119px)!important;
+   line-height:.85;
+   margin:15px 0 19px!important;
+   text-shadow:none!important;
+ }
+ body.du-evening-mode #eveningLanding .du-evening-landing-content h1 em{
+   color:#9b3650!important;
+ }
+ body.du-evening-mode #eveningLanding .du-evening-landing-kicker,
+ body.du-evening-mode #eveningLanding .du-evening-landing-lead,
+ body.du-evening-mode #eveningLanding .du-evening-landing-text,
+ body.du-evening-mode #eveningLanding .du-evening-landing-benefits b,
+ body.du-evening-mode #eveningLanding .du-evening-landing-benefits span,
+ body.du-evening-mode #eveningLanding .du-evening-inspiration-head strong,
+ body.du-evening-mode #eveningLanding .du-evening-inspiration-head small,
+ body.du-evening-mode #eveningLanding .du-evening-inspiration-credit{
+   color:#5c2d39!important;
+   text-shadow:none!important;
+ }
+ body.du-evening-mode #eveningLanding .du-evening-landing-lead{
+   font-size:clamp(27px,2.7vw,39px);
+   line-height:1.12;
+ }
+ body.du-evening-mode #eveningLanding .du-evening-landing-text{
+   font-size:clamp(16px,1.1vw,18px);
+ }
+ body.du-evening-mode #eveningLanding .du-evening-landing-caption{
+   display:block!important;
+   z-index:3!important;
+   left:auto;
+   right:clamp(24px,3vw,47px);
+   bottom:clamp(24px,3vw,45px);
+   color:#fff8ef;
+ }
+ body.du-evening-mode #eveningLanding .du-evening-inspiration{
+   width:100%;
+   border-color:rgba(114,48,60,.35);
+ }
+ body.du-evening-mode #eveningLanding > .du-evening-strip-one,
+ body.du-evening-mode #eveningLanding > .du-story-dinner,
+ body.du-evening-mode #eveningLanding > .du-evening-strip-two{
+   grid-column:1/-1!important;
+   grid-row:auto!important;
+ }
+}
+@media(min-width:761px) and (max-width:1020px){
+ body.du-evening-mode #homeView > #eveningLanding{
+   grid-template-columns:minmax(0,.47fr) minmax(0,.53fr)!important;
+ }
+ body.du-evening-mode #eveningLanding > .du-evening-landing-content{
+   padding:30px 26px!important;
+ }
+ body.du-evening-mode #eveningLanding .du-evening-landing-content h1{
+   font-size:clamp(67px,8vw,92px)!important;
+ }
+}
