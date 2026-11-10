@@ -7406,3 +7406,84 @@ body.du-evening-mode #evening .du-story-after{
     font-size:clamp(27px,7vw,36px);
   }
 }
+
+/* EVENING_FULL_BLEED_AND_CALMER_PAPER_20261111
+   Fix: the previous new strips inherited the .container max-width and their
+   decorative polygon looked like a wave. Match the homepage's long, subtle
+   horizontal torn-paper transitions instead. Keep original couple imagery. */
+body.du-evening-mode #homeView{
+  overflow-x:clip;
+}
+body.du-evening-mode #homeView > #eveningLanding{
+  position:relative;
+  left:50%;
+  width:100vw;
+  max-width:none;
+  margin-left:-50vw;
+  margin-right:0;
+  padding-left:0;
+  padding-right:0;
+}
+body.du-evening-mode #eveningLanding > .du-evening-wide-strip,
+body.du-evening-mode #evening > .du-evening-wide-strip{
+  position:relative;
+  left:50%;
+  width:100vw;
+  max-width:none;
+  margin-left:-50vw;
+  margin-right:0;
+  align-self:stretch;
+  clip-path:none;
+  -webkit-mask:none;
+  mask:none;
+  overflow:visible;
+}
+body.du-evening-mode .du-evening-wide-strip::before,
+body.du-evening-mode .du-evening-wide-strip::after{
+  content:"";
+  position:absolute;
+  z-index:1;
+  left:0;
+  right:0;
+  height:11px;
+  pointer-events:none;
+  background:inherit;
+  /* Fine irregular tear, not deep repeating wave teeth. */
+  clip-path:polygon(0 52%,8% 38%,15% 48%,24% 31%,33% 49%,42% 35%,51% 52%,61% 33%,70% 48%,80% 36%,90% 51%,100% 37%,100% 100%,0 100%);
+}
+body.du-evening-mode .du-evening-wide-strip::before{
+  top:-9px;
+}
+body.du-evening-mode .du-evening-wide-strip::after{
+  bottom:-9px;
+  transform:rotate(180deg);
+}
+body.du-evening-mode #eveningLanding .du-evening-landing-cta,
+body.du-evening-mode #eveningLanding .du-story-dinner-copy .du-btn{
+  clip-path:none;
+  border-radius:2px;
+  border:1px solid rgba(83,34,47,.3);
+}
+body.du-evening-mode #evening .du-story-after{
+  position:relative;
+  left:50%;
+  width:100vw;
+  max-width:none;
+  margin-left:-50vw;
+  margin-right:0;
+}
+@media(max-width:1020px){
+  body.du-evening-mode #homeView > #eveningLanding{
+    left:50%;
+    width:100vw;
+    margin-left:-50vw;
+    margin-right:0;
+  }
+  body.du-evening-mode #eveningLanding > .du-evening-wide-strip,
+  body.du-evening-mode #evening > .du-evening-wide-strip,
+  body.du-evening-mode #evening .du-story-after{
+    width:100vw;
+    left:50%;
+    margin-left:-50vw;
+  }
+}
