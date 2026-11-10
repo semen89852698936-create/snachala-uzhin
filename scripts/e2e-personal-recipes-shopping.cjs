@@ -23,6 +23,7 @@ const {chromium}=require('playwright');
         await goto('recipe=tomato-basil-pasta');
         await page.locator('#recipeFav').click();
         await goto('my-recipes');
+        await page.locator('[data-my-edit="tomato-basil-pasta"]').click();
         const note=page.locator('[data-my-note="tomato-basil-pasta"]');
         await note.waitFor();
         assert.equal(await page.locator('#myRecipesGrid .du-personal-card').count(),1,
