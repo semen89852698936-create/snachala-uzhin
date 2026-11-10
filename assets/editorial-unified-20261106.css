@@ -7027,3 +7027,170 @@ body.du-airfryer-standalone .du-evening-back{display:none!important}
     font-size:15px!important;
   }
 }
+
+/* CONSISTENT_INTERACTION_RULES_20261111
+   Five principles: shared motion, tactile press, decorative stillness,
+   explicit selected/saved states, and touch/keyboard access.
+   Approved artwork, torn silhouettes, photographs and layout stay unchanged. */
+:root{
+  --du-action-duration:240ms;
+  --du-action-easing:cubic-bezier(.2,.75,.25,1);
+  --du-action-lift:-4px;
+  --du-action-press:1px;
+}
+/* Only real interactive controls: the newspaper decor itself never reacts. */
+body :is(
+  .header .main-nav > a,
+  .du-quick-nav-mobile > a,
+  .du-evening-nav-mobile,
+  .du-evening-back,
+  .du-back-to-top,
+  .du-airfryer-home-link,
+  .du-airfryer-approved-zone,
+  #categoryGrid > .category-card,
+  #airfryerCategoryGrid > .category-card,
+  #categoryFilters > .chip,
+  #catalog .filter-button,
+  .du-evening-role-actions button,
+  .du-mood,
+  .fav-floating,
+  .du-personal-card button,
+  .du-music-open-spotify,
+  #bonusRecipe
+){cursor:pointer;touch-action:manipulation;}
+body :is(
+  .header .main-nav > a,
+  .du-quick-nav-mobile > a,
+  .du-evening-nav-mobile,
+  .du-evening-back,
+  .du-airfryer-home-link,
+  #categoryGrid > .category-card,
+  #airfryerCategoryGrid > .category-card,
+  #categoryFilters > .chip,
+  #catalog .filter-button,
+  .du-evening-role-actions button,
+  .du-mood,
+  .fav-floating,
+  .du-personal-card button,
+  .du-music-open-spotify
+){
+  transition-duration:var(--du-action-duration)!important;
+  transition-timing-function:var(--du-action-easing)!important;
+}
+/* A common lift, but without introducing new overlays or rectangular borders. */
+@media(hover:hover) and (pointer:fine) and (prefers-reduced-motion:no-preference){
+  #homeView #categoryGrid > .category-card:hover,
+  #homeView #airfryerCategoryGrid > .category-card:hover,
+  body.du-airfryer-standalone #airfryerCategoryGrid > .category-card:hover{
+    transform:translateY(var(--du-action-lift)) rotate(-.45deg)!important;
+  }
+  #homeView #catalog #categoryFilters > .chip:hover,
+  #homeView #catalog .filter-button:hover,
+  body.du-evening-mode .du-evening-role-actions button:hover,
+  body.du-evening-mode .du-mood:hover,
+  #homeView .du-my-recipes button:hover,
+  #homeView #catalog .fav-floating:hover,
+  .du-music-open-spotify:hover{
+    transform:translateY(var(--du-action-lift)) rotate(-.35deg)!important;
+  }
+}
+/* Press is a small physical push, not a jump. This only affects interactive items. */
+#homeView #categoryGrid > .category-card:active,
+#homeView #airfryerCategoryGrid > .category-card:active,
+body.du-airfryer-standalone #airfryerCategoryGrid > .category-card:active,
+#homeView #catalog #categoryFilters > .chip:active,
+#homeView #catalog .filter-button:active,
+body.du-evening-mode .du-evening-role-actions button:active,
+body.du-evening-mode .du-mood:active,
+#homeView .du-my-recipes button:active,
+#homeView #catalog .fav-floating:active,
+.du-music-open-spotify:active{
+  transform:translateY(var(--du-action-press)) scale(.985)!important;
+}
+@media(min-width:851px){
+  #homeView #airfryer .du-airfryer-approved-zone:active::after{
+    transform:translateY(1px) scale(.985)!important;
+  }
+}
+/* Chosen filters and saved recipes must be distinguishable without hover. */
+#homeView #catalog #categoryFilters > .chip[aria-pressed="true"],
+#homeView #catalog .filter-button[aria-pressed="true"],
+body.du-evening-mode .du-evening-role-actions button[aria-pressed="true"],
+body.du-evening-mode .du-mood[aria-pressed="true"]{
+  font-weight:750!important;
+  text-decoration-thickness:2px;
+}
+#homeView #catalog .fav-floating.is-fav,
+#homeView .du-my-recipes .is-fav{
+  color:#7e173c!important;
+  box-shadow:0 0 0 2px rgba(126,23,60,.46)!important;
+}
+body :is(
+  .header .main-nav > a,
+  .du-quick-nav-mobile > a,
+  .du-evening-nav-mobile,
+  .du-evening-back,
+  .du-back-to-top,
+  .du-airfryer-home-link,
+  .du-airfryer-approved-zone,
+  #categoryGrid > .category-card,
+  #airfryerCategoryGrid > .category-card,
+  #categoryFilters > .chip,
+  #catalog .filter-button,
+  .du-evening-role-actions button,
+  .du-mood,
+  .fav-floating,
+  .du-personal-card button,
+  .du-music-open-spotify
+):focus-visible{
+  outline:3px solid #a33450!important;
+  outline-offset:4px!important;
+}
+/* Mobile interaction targets: invisible extra area where possible, no layout shift. */
+@media(hover:none), (pointer:coarse){
+  body :is(
+    .du-quick-nav-mobile > a,
+    .du-evening-nav-mobile,
+    .du-evening-back,
+    #categoryFilters > .chip,
+    #catalog .filter-button,
+    .du-evening-role-actions button,
+    .du-mood,
+    .fav-floating,
+    .du-personal-card button,
+    .du-music-open-spotify
+  ){min-height:44px;}
+  #homeView #catalog .fav-floating,
+  #homeView .du-my-recipes .fav-floating{min-width:44px;min-height:44px;}
+  #homeView #categoryGrid > .category-card:active,
+  #homeView #airfryerCategoryGrid > .category-card:active,
+  #homeView #catalog #categoryFilters > .chip:active,
+  #homeView #catalog .filter-button:active{
+    transform:translateY(1px) scale(.992)!important;
+  }
+}
+/* Reduced-motion is a first-class state, not an unhandled exception. */
+@media(prefers-reduced-motion:reduce){
+  body :is(
+    .header .main-nav > a,
+    .du-quick-nav-mobile > a,
+    .du-evening-nav-mobile,
+    .du-evening-back,
+    .du-airfryer-approved-zone,
+    #categoryGrid > .category-card,
+    #airfryerCategoryGrid > .category-card,
+    #categoryFilters > .chip,
+    #catalog .filter-button,
+    .du-evening-role-actions button,
+    .du-mood,
+    .fav-floating,
+    .du-personal-card button,
+    .du-music-open-spotify
+  ){transition:none!important;animation:none!important;}
+  #homeView #airfryer .du-airfryer-approved-zone:active::after{transform:none!important;}
+  #homeView #categoryGrid > .category-card:active,
+  #homeView #airfryerCategoryGrid > .category-card:active,
+  #homeView #catalog #categoryFilters > .chip:active,
+  #homeView #catalog .filter-button:active,
+  #homeView #catalog .fav-floating:active{transform:none!important;}
+}
