@@ -51,7 +51,7 @@
       state.audio.pause();
       state.audio.removeAttribute('src'); state.audio.load(); state.audio=null;
     }
-    if(state.ctx && state.ctx.state==='running') state.ctx.suspend().catch(()=>{});
+    // Keep the audio engine available for immediate switching and next-track playback.
   }
   function ctxTime() { return state.ctx?.currentTime || 0; }
   function position() {
@@ -61,7 +61,7 @@
   }
   function padNote(midi,t,len,level,type='sine') {
     const ctx=state.ctx, master=state.master;
-    if(!ctx||!master || t+len<ctx.currentTime) return;
+    if(!ctx||!master || len<.055 || t+len<ctx.currentTime) return;
     const oscillator=ctx.createOscillator(), envelope=ctx.createGain();
     oscillator.type=type;
     oscillator.frequency.value=440*Math.pow(2,(midi-69)/12);
@@ -183,12 +183,12 @@
   async function next(){
     if(!tracks().length)return;
     const following=state.index+1;
-    if(following<tracks().length)await choose(state.phase,following,state.playing||state.started);
-    else { await choose(state.phase,0,state.playing||state.started); }
+    if(following<tracks().length)await choose(state.phase,following,state.playing);
+    else { await choose(state.phase,0,state.playing); }
   }
   async function previous(){
     if(!tracks().length)return;
-    await choose(state.phase,Math.max(0,state.index-1),state.playing||state.started);
+    await choose(state.phase,Math.max(0,state.index-1),state.playing);
   }
   async function seek(seconds){
     const to=Math.max(0,Math.min(duration()-.02,Number(seconds)||0));
@@ -261,6 +261,8 @@
     // Only in the new preview, remove iframe elements and hide their shells.
     $$('#music .du-music-spotify-extra iframe').forEach(node=>node.remove());
     $$('#music .du-music-spotify-extra').forEach(node=>node.hidden=true);
+    const legal=$('#music .du-music-legal');
+    if(legal) legal.textContent='Собственный плеер использует оригинальные синтезированные демозаписи. Редакционные списки известных песен остаются для вдохновения и не воспроизводятся. Для коммерческих записей потребуются права на потоковое прослушивание.';
     const dock=document.createElement('div');
     dock.innerHTML=floatingMarkup();
     document.body.appendChild(dock.firstElementChild);
