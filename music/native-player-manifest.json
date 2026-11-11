@@ -1,0 +1,78 @@
+{
+  "version": 1,
+  "stage": "demo-only",
+  "notice": "Оригинальные инструментальные демо, созданные программно для проверки работы плеера. Песни известных исполнителей из редакционных списков не воспроизводятся.",
+  "phaseOrder": [
+    "kitchen",
+    "dinner",
+    "after"
+  ],
+  "playlists": {
+    "kitchen": {
+      "label": "Под что готовить",
+      "chapter": "РАЗОГРЕВАЕМ ВЕЧЕР",
+      "tracks": [
+        {
+          "id": "kitchen-01",
+          "title": "Завязываем фартуки",
+          "bpm": 126,
+          "seed": 12,
+          "demo": true,
+          "durationSeconds": 14
+        },
+        {
+          "id": "kitchen-02",
+          "title": "Пряный ритм",
+          "bpm": 124,
+          "seed": 28,
+          "demo": true,
+          "durationSeconds": 14
+        }
+      ]
+    },
+    "dinner": {
+      "label": "Под что ужинать",
+      "chapter": "ВРЕМЯ ДЛЯ ДВОИХ",
+      "tracks": [
+        {
+          "id": "dinner-01",
+          "title": "Первые свечи",
+          "bpm": 90,
+          "seed": 42,
+          "demo": true,
+          "durationSeconds": 14
+        },
+        {
+          "id": "dinner-02",
+          "title": "Негромкий разговор",
+          "bpm": 86,
+          "seed": 60,
+          "demo": true,
+          "durationSeconds": 14
+        }
+      ]
+    },
+    "after": {
+      "label": "Под что продолжить",
+      "chapter": "ПРОДОЛЖЕНИЕ СЛЕДУЕТ",
+      "tracks": [
+        {
+          "id": "after-01",
+          "title": "Тёплый сумрак",
+          "bpm": 74,
+          "seed": 74,
+          "demo": true,
+          "durationSeconds": 14
+        },
+        {
+          "id": "after-02",
+          "title": "После десерта",
+          "bpm": 68,
+          "seed": 96,
+          "demo": true,
+          "durationSeconds": 14
+        }
+      ]
+    }
+  }
+}
