@@ -206,8 +206,8 @@
   function sheetMarkup(phase) {
     const label=state.manifest?.playlists[phase]?.label || '';
     return '<div class="du-np-shadow"><div class="du-np-sheet" data-np-sheet="'+phase+'">'+
-      '<span class="du-np-kicker">МУЗЫКАЛЬНАЯ ГАЗЕТА / ПРОБНЫЙ ЭФИР</span>'+
-      '<div class="du-np-headline">Твой <i>саундтрек</i><span>♫</span></div>'+
+      '<span class="du-np-kicker">НОТНАЯ ХРОНИКА / ВЫРЕЗКА № 0'+(PHASES.indexOf(phase)+1)+'</span>'+
+      '<div class="du-np-headline">Ритм <i>вечера</i><span>♫</span></div>'+
       '<p class="du-np-phase-name">'+label+'</p>'+
       '<p class="du-np-trackline" data-np-inline-track="'+phase+'">Две авторские демозаписи · без чужих песен</p>'+
       '<button type="button" class="du-np-start" data-np-action="phase" data-np-phase="'+phase+'">▶ Слушать демо</button>'+
@@ -219,7 +219,7 @@
       '<button class="du-np-launcher" id="duNpLauncher" type="button" aria-controls="duNpPanel" aria-expanded="false"><span>♫</span> Музыка</button>'+
       '<section class="du-np-dock-body" id="duNpPanel" aria-label="Собственный музыкальный плеер" hidden>'+
         '<div class="du-np-dock-paper">'+
-        '<header class="du-np-top"><div><small>СНАЧАЛА УЖИН / РАДИО ДЛЯ ДВОИХ</small><strong>Музыкальная <i>газета</i></strong></div>'+
+        '<header class="du-np-top"><div class="du-np-masthead"><small>СНАЧАЛА УЖИН · РАДИО ДЛЯ ДВОИХ</small><strong>МУЗЫКАЛЬНЫЙ <i>ВЕСТНИК</i></strong><span class="du-np-edition">№ 001 · ТРИ ГЛАВЫ · ОДИН ВЕЧЕР</span></div>'+
         '<button class="du-np-close" type="button" data-np-action="close" aria-label="Свернуть плеер">×</button></header>'+
         '<nav class="du-np-tabs" aria-label="Выбери настроение">'+
         '<button type="button" data-np-action="tab" data-np-phase="kitchen">Готовить</button>'+
@@ -240,8 +240,8 @@
         '<div class="du-np-bottom"><label for="duNpVolume">♫ Громкость</label>'+
         '<input type="range" id="duNpVolume" min="0" max="100" value="65" aria-label="Громкость" />'+
         '<span id="duNpCount">01 / 02</span></div>'+
-        '<p class="du-np-notice">Тестовый эфир: синтезированные оригинальные фрагменты. Права на известные песни не используются.</p>'+ '<button type="button" class="du-np-popout" data-np-action="popout">↗ Слушать при переходе между страницами</button>'+
-        '<p class="du-np-feedback" role="status" hidden></p>'+
+        '<p class="du-np-notice">Оригинальные демозаписи. Чужие песни не звучат.</p>'+ '<button type="button" class="du-np-popout" data-np-action="popout">↗ Слушать при переходе между страницами</button>'+
+        '<div class="du-np-print-colophon" aria-hidden="true"><span>СЛУШАЙ. ГОТОВЬ. БУДЬ ВДВОЁМ.</span><span>СПЕЦИАЛЬНЫЙ ВЫПУСК ДЛЯ ВАШЕГО ВЕЧЕРА</span></div>'+ '<p class="du-np-feedback" role="status" hidden></p>'+
         '</div>'+
       '</section>'+
     '</div>';
