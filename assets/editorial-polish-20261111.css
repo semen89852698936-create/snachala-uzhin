@@ -1189,3 +1189,89 @@ html body #homeView .du-bonus .bonus-inner[data-bonus-layer-ready="1"] > a#bonus
 html, body {
   overflow-x: clip !important;
 }
+
+
+/* BONUS_FULL_REBUILD_20261112
+   Owner-approved 12 November rebuilt artwork. The full banner uses only
+   the approved photograph/text and a single *separately cut* real paper
+   link. No canvas repainting, pseudo button, white rectangle or duplicate
+   printed CTA. All existing headings, routes and site layout remain intact.
+*/
+html body #homeView .du-bonus .bonus-inner {
+  position:relative!important;
+  aspect-ratio:1586/546!important;
+  background-image:url('/assets/approved-banners/bonus-rebuilt-clean-20261112.webp')!important;
+  background-size:100% 100%!important;
+  background-position:center center!important;
+  background-repeat:no-repeat!important;
+}
+html body #homeView .du-bonus .bonus-inner > a#bonusRecipe {
+  display:block!important;
+  position:absolute!important;
+  box-sizing:border-box!important;
+  left:35.76%!important;
+  top:56.08%!important;
+  width:20.21%!important;
+  height:12.29%!important;
+  min-width:0!important;
+  min-height:0!important;
+  max-width:none!important;
+  margin:0!important;
+  padding:0!important;
+  z-index:70!important;
+  opacity:1!important;
+  visibility:visible!important;
+  cursor:pointer!important;
+  pointer-events:auto!important;
+  overflow:visible!important;
+  background-color:transparent!important;
+  background-image:url('/assets/approved-banners/bonus-rebuilt-paper-20261112.webp')!important;
+  background-position:center!important;
+  background-repeat:no-repeat!important;
+  background-size:100% 100%!important;
+  border:0!important;
+  border-radius:0!important;
+  box-shadow:none!important;
+  filter:drop-shadow(0 2px 3px rgba(35,16,22,.12))!important;
+  transform:translateY(0) rotate(0)!important;
+  transform-origin:center!important;
+  transition:transform .25s cubic-bezier(.2,.75,.2,1),filter .25s ease!important;
+  -webkit-mask-image:none!important;
+  mask-image:none!important;
+  -webkit-tap-highlight-color:transparent!important;
+}
+html body #homeView .du-bonus .bonus-inner > a#bonusRecipe::before,
+html body #homeView .du-bonus .bonus-inner > a#bonusRecipe::after {
+  content:none!important;
+  display:none!important;
+}
+@media (hover:hover) and (pointer:fine) and (prefers-reduced-motion:no-preference) {
+  html body #homeView .du-bonus .bonus-inner > a#bonusRecipe:hover {
+    transform:translateY(-6px) rotate(-.6deg) scale(1.025)!important;
+    filter:drop-shadow(0 10px 7px rgba(35,16,22,.25))!important;
+  }
+}
+html body #homeView .du-bonus .bonus-inner > a#bonusRecipe:active {
+  transform:translateY(1px) scale(.99)!important;
+  filter:drop-shadow(0 1px 2px rgba(35,16,22,.1))!important;
+}
+html body #homeView .du-bonus .bonus-inner > a#bonusRecipe:focus-visible {
+  outline:3px solid #fff4e6!important;
+  outline-offset:3px!important;
+}
+@media(max-width:760px){
+  html body #homeView .du-bonus .bonus-inner > a#bonusRecipe {
+    top:calc(62.225% - 22px)!important;
+    height:44px!important;
+    min-height:44px!important;
+    background-size:100% auto!important;
+  }
+}
+@media(prefers-reduced-motion:reduce) {
+  html body #homeView .du-bonus .bonus-inner > a#bonusRecipe {
+    transition:none!important;
+  }
+  html body #homeView .du-bonus .bonus-inner > a#bonusRecipe:is(:hover,:active) {
+    transform:none!important;
+  }
+}
