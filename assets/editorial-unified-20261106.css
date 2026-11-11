@@ -8519,3 +8519,63 @@ body.du-evening-mode .du-evening-back:not(.du-catalog-back):hover{
   #homeView .du-bonus #bonusRecipe,
   #homeView .du-bonus #bonusRecipe::before {transition:none!important}
 }
+
+
+/* EVENING_PLAN_RECIPE_LEGIBILITY_20261111
+   "Ваш план на вечер": long recipe names must remain fully readable,
+   including the squid/pesto/lemon title. No layout or menu logic changes. */
+#homeView .du-builder-right {
+  background:#fffaf4!important;
+}
+#homeView .du-builder-right .du-menu-preview {
+  gap:12px!important;
+}
+#homeView .du-builder-right .du-menu-dish {
+  align-items:center!important;
+  gap:14px!important;
+  padding:12px 0 16px!important;
+  border-bottom:1px solid #dbc7bc!important;
+  background:transparent!important;
+  opacity:1!important;
+  filter:none!important;
+}
+#homeView .du-builder-right .du-menu-dish > div {
+  flex:1 1 0!important;
+  min-width:0!important;
+}
+#homeView .du-builder-right .du-menu-dish strong {
+  display:block!important;
+  font-family:var(--du-magazine-serif,'Cormorant Garamond',Georgia,serif)!important;
+  font-size:clamp(24px,2.15vw,31px)!important;
+  font-weight:600!important;
+  line-height:1.25!important;
+  letter-spacing:0!important;
+  color:#35242a!important;
+  opacity:1!important;
+  text-shadow:none!important;
+  overflow-wrap:break-word!important;
+  white-space:normal!important;
+  margin:5px 0 7px!important;
+}
+#homeView .du-builder-right .du-menu-dish > div > span {
+  display:block!important;
+  color:#713e4a!important;
+  font-size:12px!important;
+  font-weight:700!important;
+  line-height:1.4!important;
+  opacity:1!important;
+}
+#homeView .du-builder-right .du-menu-dish small,
+#homeView .du-builder-right .du-menu-meta {
+  display:block;
+  color:#604b4d!important;
+  font-size:14px!important;
+  line-height:1.5!important;
+  opacity:1!important;
+}
+@media(max-width:760px){
+  #homeView .du-builder-right .du-menu-dish strong {
+    font-size:25px!important;
+    line-height:1.25!important;
+  }
+}
