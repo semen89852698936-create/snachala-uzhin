@@ -972,29 +972,19 @@ html body #homeView #catalog .du-section-top .du-section-heading h2 em {
   margin-bottom:0!important;
 }
 
-/* Previous labels: 19.6-22.4px. Exactly 1.5x: 29.4-33.6px.
-   Make newspaper tiles taller and use fewer columns where necessary,
-   while keeping their torn edges, print, palette and click behaviour. */
-html body #homeView #catalog #categoryFilters {
-  grid-template-columns:repeat(5,minmax(0,1fr))!important;
-  align-items:stretch!important;
-}
+/* CATALOG_FILTERS_RESTORE_ORIGINAL_PAPER_SIZES_20261111
+   Restore the approved 30-track/7+6 newspaper collage and 76-87px strips.
+   Increase ONLY lettering, not height, width, grid or paper image geometry. */
 html body #homeView #catalog #categoryFilters > button.chip {
-  font-size:clamp(29.4px,2.184vw,33.6px)!important;
-  line-height:1.14!important;
-  min-height:116px!important;
-  padding:14px 11px!important;
+  font-size:clamp(19px,1.45vw,22px)!important;
+  line-height:1.12!important;
+  font-weight:600!important;
   white-space:normal!important;
-  overflow-wrap:anywhere!important;
-  hyphens:auto!important;
-  align-self:stretch!important;
-}
-@media (min-width:761px) and (max-width:1180px) {
-  html body #homeView #catalog #categoryFilters {
-    grid-template-columns:repeat(3,minmax(0,1fr))!important;
-  }
+  overflow-wrap:break-word!important;
+  hyphens:manual!important;
 }
 @media(max-width:760px) {
+  /* Keep the existing mobile catalogue masthead accommodation. */
   html body #homeView #catalog .du-section-top {
     min-height:clamp(390px,100vw,470px)!important;
     padding-bottom:42px!important;
@@ -1002,16 +992,12 @@ html body #homeView #catalog #categoryFilters > button.chip {
   html body #homeView #catalog.du-catalog::before {
     height:calc(30px + clamp(390px,100vw,470px))!important;
   }
-  html body #homeView #catalog #categoryFilters {
-    grid-template-columns:repeat(2,minmax(0,1fr))!important;
-  }
+  /* Two original columns, existing touch-target heights, bigger labels. */
   html body #homeView #catalog #categoryFilters > button.chip {
-    font-size:clamp(29.4px,7vw,33.6px)!important;
-    min-height:130px!important;
-    padding:12px 9px!important;
+    font-size:19px!important;
+    line-height:1.15!important;
   }
 }
-
 
 /* HOMEPAGE_THREE_CARDS_NO_WHITE_PRESS_RECTANGLE_20261111
    The three approved photographic paper buttons are links, not rectangular
