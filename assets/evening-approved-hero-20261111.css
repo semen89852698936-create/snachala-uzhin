@@ -284,7 +284,7 @@ body.du-evening-mode #eveningLanding .du-match11-pinned {
 body.du-evening-mode #eveningLanding .du-match11-pinned[hidden] { display: none !important; }
 /* Existing recipe suggestion links remain functional directly below the approved cover. */
 body.du-evening-mode #eveningLanding .du-match11-recipe-suggestions {
-  padding: 50px clamp(24px,5.5vw,90px) 34px !important;
+  padding: 38px clamp(24px,5.5vw,90px) 34px !important;
   position: relative !important;
   background: #f9f0e6 !important;
   color: #652c3b !important;
