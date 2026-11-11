@@ -618,3 +618,16 @@ html body #catalog .du-section-top .du-section-heading h2{
 @media(max-width:480px){
   html body #catalog .du-section-top .du-section-heading h2{font-size:67.6px!important}
 }
+
+
+/* 11 Nov 2026: +40% typography for the main recipe catalog category buttons.
+   14–16px -> 19.6–22.4px, preserving the existing horizontal scrolling filter strip. */
+html body #catalog .category-filters > button.chip{
+  font-size:clamp(19.6px,1.456vw,22.4px)!important;
+  line-height:1.4!important;
+  min-height:50px!important;
+  padding:10px 19px!important;
+  box-sizing:border-box!important;
+  flex:0 0 auto!important;
+  white-space:nowrap!important;
+}
