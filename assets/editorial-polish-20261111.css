@@ -1389,3 +1389,61 @@ html body.du-evening-mode #evening .du-moods>button.du-mood[data-mood="cozy"]::a
     min-height:285px!important;
   }
 }
+
+
+/* EVENING_ACTUAL_NEWSPRINT_CUTOUTS_20261112
+   Four genuinely visible ripped newspaper fragments, not a nearly-white
+   card with wavy bottom. Printed column marks, paper-grain, inked torn
+   contours and sepia shadow are separate decorative backgrounds.
+   Photos, labels, click targets and mood state handlers stay untouched. */
+html body.du-evening-mode #evening .du-moods > button.du-mood {
+  background-color:#e7d4b8!important;
+  background-image:
+    url('/assets/editorial-paper-fibres-20261108.svg'),
+    linear-gradient(115deg,#efdfc7,#e5d0b4 85%)!important;
+  background-size:192px 192px,100% 100%!important;
+  background-blend-mode:multiply,normal!important;
+  box-shadow:none!important;
+  filter:drop-shadow(1px 8px 5px rgba(65,41,33,.30))!important;
+  -webkit-mask-image:none!important;
+  mask-image:none!important;
+}
+html body.du-evening-mode #evening .du-moods > button.du-mood::after {
+  /* SVG has full-alpha torn perimeter, column-print and paper fibres.
+     Never use opaque gradients here: those would hide the newspaper. */
+  content:""!important;
+  inset:50% 0 0!important;
+  background-color:transparent!important;
+  background-image:url('/assets/evening-newsprint-scrap-tender-20261112.svg')!important;
+  background-position:center center!important;
+  background-repeat:no-repeat!important;
+  background-size:100% 100%!important;
+  clip-path:none!important;
+  opacity:1!important;
+  pointer-events:none!important;
+}
+html body.du-evening-mode #evening .du-moods > button.du-mood[data-mood="tender"]::after {
+  background-image:url('/assets/evening-newsprint-scrap-tender-20261112.svg')!important;
+}
+html body.du-evening-mode #evening .du-moods > button.du-mood[data-mood="spark"]::after {
+  background-image:url('/assets/evening-newsprint-scrap-spark-20261112.svg')!important;
+}
+html body.du-evening-mode #evening .du-moods > button.du-mood[data-mood="play"]::after {
+  background-image:url('/assets/evening-newsprint-scrap-play-20261112.svg')!important;
+}
+html body.du-evening-mode #evening .du-moods > button.du-mood[data-mood="cozy"]::after {
+  background-image:url('/assets/evening-newsprint-scrap-cozy-20261112.svg')!important;
+}
+html body.du-evening-mode #evening .du-moods > button.du-mood.is-selected {
+  filter:drop-shadow(0 8px 8px rgba(91,37,48,.39))!important;
+}
+@media (hover:hover) and (pointer:fine) {
+  html body.du-evening-mode #evening .du-moods > button.du-mood:hover {
+    filter:drop-shadow(0 13px 10px rgba(65,41,33,.38))!important;
+  }
+}
+@media(max-width:520px) {
+  html body.du-evening-mode #evening .du-moods > button.du-mood::after {
+    inset:32% 0 0!important;
+  }
+}
