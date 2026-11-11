@@ -431,3 +431,26 @@ html body #duNewspaperDock #duNpPanel .du-np-popout:hover {
 body.du-np-standalone #duNewspaperDock #duNpPanel .du-np-popout{
   display:none!important;
 }
+
+
+/* Vector transport symbols are independent of platform-specific font glyphs. */
+html body #duNewspaperDock #duNpPanel .du-np-transport .du-np-svg {
+  display:block!important;
+  width:27px!important;
+  height:27px!important;
+  margin:0 auto!important;
+  overflow:visible!important;
+  pointer-events:none;
+  opacity:1!important;
+  transform:none!important;
+}
+html body #duNewspaperDock #duNpPanel .du-np-transport button.du-np-main-play .du-np-svg {
+  width:29px!important;
+  height:29px!important;
+}
+html body #duNewspaperDock #duNpPanel .du-np-transport button {
+  padding:0!important;
+  display:flex!important;
+  align-items:center!important;
+  justify-content:center!important;
+}
