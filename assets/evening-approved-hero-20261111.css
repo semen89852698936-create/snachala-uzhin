@@ -886,3 +886,38 @@ html body #top.header .main-nav > a[data-nav="airfryer"]:is(:hover,:focus-visibl
     var(--du-paper-fibre-grain)!important;
   color:#fff9f0!important;
 }
+
+/* EVENING_NAV_ICON_AND_CTA_MOTION_FIX_20261111
+   Live Chromium QA identified the root causes:
+   - generic [aria-current=page] styling paints the actual icon ::before,
+     hiding the white heart/hot-springs glyph behind a light square;
+   - the two approved Evening hero CTAs explicitly disable transform.
+   Keep the original icons, ripped paper artwork, positioning and labels. */
+html body #top.header .main-nav > a[data-nav="evening"]::before,
+html body #top.header .main-nav > a[data-nav="airfryer"]::before{
+  background:transparent!important;
+  background-color:transparent!important;
+  background-image:none!important;
+  box-shadow:none!important;
+  filter:none!important;
+}
+body.du-evening-mode #eveningLanding .du-match11-actions > a.du-match11-button{
+  transform:translateY(0) rotate(0deg)!important;
+  transform-origin:center center!important;
+  transition:transform 240ms cubic-bezier(.2,.75,.25,1),filter 240ms cubic-bezier(.2,.75,.25,1)!important;
+}
+@media(hover:hover) and (pointer:fine) and (prefers-reduced-motion:no-preference){
+  body.du-evening-mode #eveningLanding .du-match11-actions > a.du-match11-button:hover{
+    transform:translateY(-4px) rotate(-.35deg)!important;
+    filter:brightness(1.06) drop-shadow(0 8px 10px rgba(37,16,17,.18))!important;
+  }
+}
+body.du-evening-mode #eveningLanding .du-match11-actions > a.du-match11-button:active{
+  transform:translateY(1px) scale(.985)!important;
+}
+@media(prefers-reduced-motion:reduce){
+  body.du-evening-mode #eveningLanding .du-match11-actions > a.du-match11-button{
+    transition:none!important;
+    transform:none!important;
+  }
+}
