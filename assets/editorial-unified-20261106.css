@@ -8690,3 +8690,15 @@ html body #homeView .du-bonus .bonus-inner > a#bonusRecipe:focus-visible {
   line-height:1.3;
   overflow-wrap:anywhere;
 }
+
+
+/* AIRFRYER_SPEC_CARD_TYPE_PARITY_20261112
+   Identical font sizes in Temperature, Basket time and Preparation tiles. */
+#recipeDetail:has(> .du-airfryer-specs) .du-airfryer-spec-grid .du-airfryer-spec small {
+  font-size:14px;
+}
+#recipeDetail:has(> .du-airfryer-specs) .du-airfryer-spec-grid .du-airfryer-spec strong {
+  font-size:23.8px;
+  line-height:1.3;
+  overflow-wrap:anywhere;
+}
