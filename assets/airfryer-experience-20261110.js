@@ -210,7 +210,8 @@
     button.addEventListener('click',()=>{
       // A sticky header is already in view: scrollIntoView(header) can do nothing.
       // Go to the absolute beginning of the document, without animated intermediate stops.
-      window.scrollTo({top:0,left:0,behavior:'instant'});
+      const reduceMotion=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      window.scrollTo({top:0,left:0,behavior:reduceMotion?'instant':'smooth'});
     });
     window.addEventListener('scroll',update,{passive:true});
     window.addEventListener('hashchange',update);
