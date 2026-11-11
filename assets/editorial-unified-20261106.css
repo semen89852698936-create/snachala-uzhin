@@ -8950,3 +8950,77 @@ body.du-evening-mode .du-evening-next > span {
     transform:none!important;
   }
 }
+
+
+/* BONUS_CTA_ONE_PRISTINE_LAYER_RESTORE_20261111
+   Restore the exact approved photographic button, remove all overlays from
+   the failed attempts and disable unverified motion. The native real button
+   remains a transparent click target with its original handler. Never draw
+   an additional paper button over the printed one. */
+html body #homeView .du-bonus .bonus-inner {
+  background-image:url('/assets/approved-banners/bonus-corrected-20261110.webp')!important;
+  background-repeat:no-repeat!important;
+  background-size:100% 100%!important;
+  background-position:center!important;
+  aspect-ratio:1586 / 546!important;
+}
+html body #homeView .du-bonus .bonus-inner::before,
+html body #homeView .du-bonus .bonus-inner::after {
+  content:none!important;
+  display:none!important;
+  background:none!important;
+  -webkit-backdrop-filter:none!important;
+  backdrop-filter:none!important;
+  filter:none!important;
+  box-shadow:none!important;
+}
+html body #homeView .du-bonus #bonusRecipe,
+html body #homeView .du-bonus #bonusRecipe:is(:hover,:focus,:active,:focus-visible) {
+  left:36.38%!important;
+  top:57.1%!important;
+  width:19.05%!important;
+  height:11.4%!important;
+  min-height:0!important;
+  padding:0!important;
+  box-sizing:border-box!important;
+  z-index:3!important;
+  opacity:1!important;
+  background:transparent!important;
+  background-image:none!important;
+  border:0!important;
+  border-radius:0!important;
+  box-shadow:none!important;
+  filter:none!important;
+  color:transparent!important;
+  font-size:0!important;
+  text-shadow:none!important;
+  transform:none!important;
+  transition:none!important;
+  -webkit-tap-highlight-color:transparent!important;
+  cursor:pointer!important;
+  pointer-events:auto!important;
+}
+html body #homeView .du-bonus #bonusRecipe::before,
+html body #homeView .du-bonus #bonusRecipe::after,
+html body #homeView .du-bonus #bonusRecipe:is(:hover,:active,:focus,:focus-visible)::before,
+html body #homeView .du-bonus #bonusRecipe:is(:hover,:active,:focus,:focus-visible)::after {
+  content:none!important;
+  display:none!important;
+  background:none!important;
+  box-shadow:none!important;
+}
+html body #homeView .du-bonus #bonusRecipe span {
+  color:transparent!important;
+  font-size:0!important;
+}
+html body #homeView .du-bonus #bonusRecipe:focus-visible {
+  outline:3px solid #fff4e6!important;
+  outline-offset:3px!important;
+}
+/* On narrow screens preserve a tappable hotspot without drawing overlays. */
+@media(max-width:760px){
+  html body #homeView .du-bonus #bonusRecipe {
+    min-height:44px!important;
+    top:calc(57.1% - 12px)!important;
+  }
+}
