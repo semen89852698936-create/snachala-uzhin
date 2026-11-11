@@ -574,3 +574,46 @@ body.du-evening-mode .header .header-inner > a.du-evening-back:not(.du-catalog-b
     font-size:11.5px!important;
   }
 }
+
+/* EVENING_MICROCOPY_MUSIC_AND_MENU_20261111
+   Smallest labels in evening's menu and music sections, without changing
+   their content or controls. Track rows expand naturally for wrapping text. */
+body.du-evening-mode #evening .du-menu-dish > div > span{
+  font-size:13px!important;
+  line-height:1.35!important;
+}
+body.du-evening-mode #music .du-bpm-track-details > strong{
+  font-size:14px!important;
+  line-height:1.3!important;
+}
+body.du-evening-mode #music .du-bpm-track-details > span{
+  font-size:12.5px!important;
+  line-height:1.35!important;
+}
+body.du-evening-mode #music .du-bpm-track-details > a{
+  font-size:11.5px!important;
+  line-height:1.4!important;
+}
+body.du-evening-mode #music .du-bpm-pill{
+  font-size:12px!important;
+  line-height:1.2!important;
+}
+@media(min-width:761px) and (max-width:900px){
+  body.du-evening-mode #eveningLanding .du-match11-bottom-nav{
+    top:90.3%!important;
+  }
+}
+@media(max-width:760px){
+  body.du-evening-mode #music .du-bpm-track-details > strong{
+    font-size:12.5px!important;
+  }
+  body.du-evening-mode #music .du-bpm-track-details > span{
+    font-size:11.5px!important;
+  }
+  body.du-evening-mode #music .du-bpm-track-details > a{
+    font-size:11px!important;
+  }
+  body.du-evening-mode #music .du-bpm-pill{
+    font-size:11.5px!important;
+  }
+}
