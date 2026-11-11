@@ -694,3 +694,59 @@ html body #recipeView #backCatalog.back-link:focus-visible{
     transform:none!important;
   }
 }
+
+
+/* Bonus card: visible physical movement on the approved 2026-11-10 flattened artwork.
+   The hit area and banner image remain unchanged. The pseudo-element samples only
+   the exact button region from that SAME artwork, so its appearance stays consistent.
+   Original panel coordinate mapping: x=36.38%, y=57.1%, w=19.05%, h=11.4%. */
+html body #homeView .du-bonus #bonusRecipe{
+  overflow:visible!important;
+  transform:none!important;
+  transition:none!important;
+  box-shadow:none!important;
+}
+html body #homeView .du-bonus #bonusRecipe::before{
+  content:""!important;
+  display:block!important;
+  position:absolute!important;
+  inset:0!important;
+  width:100%!important;
+  height:100%!important;
+  aspect-ratio:auto!important;
+  background-image:url('/assets/approved-banners/bonus-corrected-20261110.webp')!important;
+  background-color:transparent!important;
+  background-size:524.934% 877.193%!important;
+  background-position:44.94% 64.45%!important;
+  background-repeat:no-repeat!important;
+  border:0!important;
+  border-radius:0!important;
+  box-shadow:none!important;
+  filter:drop-shadow(0 2px 3px rgba(39,16,24,.12))!important;
+  z-index:1!important;
+  pointer-events:none!important;
+  transform:translateY(0) rotate(0deg)!important;
+  transform-origin:center!important;
+  transition:transform .25s cubic-bezier(.2,.7,.2,1),filter .25s ease!important;
+}
+html body #homeView .du-bonus #bonusRecipe::after{
+  content:none!important;
+  display:none!important;
+}
+@media(hover:hover) and (pointer:fine){
+  html body #homeView .du-bonus #bonusRecipe:hover::before{
+    transform:translateY(-5px) rotate(-1.1deg) scale(1.025)!important;
+    filter:drop-shadow(0 8px 7px rgba(39,16,24,.24))!important;
+  }
+}
+html body #homeView .du-bonus #bonusRecipe:focus-visible::before{
+  transform:translateY(-5px) rotate(-1.1deg) scale(1.025)!important;
+}
+html body #homeView .du-bonus #bonusRecipe:active::before{
+  transform:translateY(1px) scale(.985)!important;
+  filter:drop-shadow(0 1px 2px rgba(39,16,24,.14))!important;
+}
+@media(prefers-reduced-motion:reduce){
+  html body #homeView .du-bonus #bonusRecipe::before{transition:none!important}
+  html body #homeView .du-bonus #bonusRecipe:is(:hover,:focus-visible,:active)::before{transform:none!important}
+}
