@@ -8870,3 +8870,83 @@ body.du-evening-mode .du-evening-next > span {
     transform:none!important;
   }
 }
+
+
+/* BONUS_TRUE_SEPARATED_LAYERS_20261111
+   Definitive layer correction: assets/bonus-button-layers-20261111.js removes
+   the baked stationary button from the same approved photograph and supplies
+   its exact original paper/lettering as a transparent CSS background on the
+   existing clickable button. NO duplicate pseudo-element, blur or brown patch. */
+#homeView .du-bonus .bonus-inner::after {
+  content:none!important;
+  display:none!important;
+  background:none!important;
+  -webkit-backdrop-filter:none!important;
+  backdrop-filter:none!important;
+  box-shadow:none!important;
+}
+#homeView .du-bonus #bonusRecipe::before,
+#homeView .du-bonus #bonusRecipe::after,
+#homeView .du-bonus #bonusRecipe:is(:hover,:active,:focus,:focus-visible)::before,
+#homeView .du-bonus #bonusRecipe:is(:hover,:active,:focus,:focus-visible)::after {
+  content:none!important;
+  display:none!important;
+  background:none!important;
+  box-shadow:none!important;
+}
+#homeView .du-bonus #bonusRecipe {
+  background-color:transparent!important;
+  background-repeat:no-repeat!important;
+  background-size:100% 100%!important;
+  background-position:center!important;
+  border:none!important;
+  border-radius:0!important;
+  box-shadow:none!important;
+  filter:none!important;
+  clip-path:none!important;
+  -webkit-mask-image:none!important;
+  mask-image:none!important;
+  color:transparent!important;
+  text-shadow:none!important;
+  font-size:0!important;
+  opacity:1!important;
+  min-height:0!important;
+  max-width:none!important;
+  overflow:visible!important;
+  transform:translateY(0)!important;
+  transform-origin:center!important;
+  transition:transform .22s ease!important;
+  -webkit-tap-highlight-color:transparent!important;
+}
+#homeView .du-bonus #bonusRecipe span {
+  color:transparent!important;
+  font-size:0!important;
+}
+@media(hover:hover) and (prefers-reduced-motion:no-preference){
+  #homeView .du-bonus #bonusRecipe:hover {
+    transform:translateY(-6px) rotate(-.6deg)!important;
+  }
+}
+#homeView .du-bonus #bonusRecipe:active {
+  transform:translateY(2px)!important;
+}
+#homeView .du-bonus #bonusRecipe:focus-visible {
+  outline:3px solid #fff4e6!important;
+  outline-offset:3px!important;
+}
+@media(max-width:760px){
+  #homeView .du-bonus #bonusRecipe{
+    min-height:44px!important;
+    top:calc(55.8% - 13px)!important;
+    background-size:100% auto!important;
+    background-position:center!important;
+  }
+}
+@media(prefers-reduced-motion:reduce){
+  #homeView .du-bonus #bonusRecipe {
+    transition:none!important;
+  }
+  #homeView .du-bonus #bonusRecipe:is(:hover,:active,:focus-visible){
+    transform:none!important;
+  }
+}
