@@ -464,18 +464,34 @@ html body.du-airfryer-standalone :is(.du-airfryer-card,.du-airfryer-recipe-card)
   html body.du-catalog-standalone.du-catalog-teaser-relocated #homeView #catalog .empty-state{grid-row:10!important}
 }
 
-/* AFTER_DINNER_STRIP_REAL_WIDTH_PLUS_20_PERCENT_20261111
-   The strip already spans the viewport: extend its actual box from 100vw to
-   120vw, keeping it centered and clipped by the Evening page rather than
-   creating horizontal scrolling. The approved photo, palette and text stay. */
+/* AFTER_DINNER_STRIP_HEIGHT_PLUS_20_PERCENT_20261111
+   Keep the published full-viewport width; increase only vertical space by
+   20 percent at the original responsive min-height breakpoints.
+   The photo, palette, type, and text are unchanged. */
 html body.du-evening-mode #eveningLanding > .du-evening-strip-two{
-  width:120vw!important;
-  max-width:none!important;
-  left:50%!important;
-  margin-left:-60vw!important;
+  min-height:clamp(336px,31.2vw,468px)!important;
 }
 @media(max-width:760px){
   html body.du-evening-mode #eveningLanding > .du-evening-strip-two{
-    padding-inline:calc(10vw + 22px)!important;
+    min-height:360px!important;
   }
+}
+
+/* MOOD_PHOTO_WINDOWS_STRAIGHT_EDGES_20261111
+   Preserve the approved torn-paper silhouette on the CARD only.
+   Inset the photo inside the torn edge and use a straight photographic
+   window instead of the jagged overlay that clipped picture boundaries. */
+html body #evening .du-moods > button.du-mood::before{
+  inset:12px 12px 43%!important;
+  background-position:center center!important;
+}
+html body #evening .du-moods > button.du-mood::after{
+  inset:56% 0 0!important;
+  clip-path:none!important;
+}
+html body #evening .du-moods > button.du-mood[data-mood="tender"]::before{
+  background-image:url('/assets/our-evening-after-hq.avif')!important;
+}
+html body #evening .du-moods > button.du-mood[data-mood="spark"]::before{
+  background-image:url('/assets/evening-approved-photo-20261111.webp')!important;
 }
