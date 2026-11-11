@@ -230,9 +230,9 @@
         '<strong id="duNpTrack">Тестовая запись</strong>'+
         '<small id="duNpSub">Только оригинальная инструментальная музыка</small></div>'+
         '<div class="du-np-transport">'+
-        '<button type="button" data-np-action="previous" title="Предыдущий трек" aria-label="Предыдущий трек">⏮</button>'+
-        '<button type="button" class="du-np-main-play" data-np-action="toggle" id="duNpToggle" aria-label="Воспроизвести">▶</button>'+
-        '<button type="button" data-np-action="next" title="Следующий трек" aria-label="Следующий трек">⏭</button>'+
+        '<button type="button" data-np-action="previous" title="Предыдущий трек" aria-label="Предыдущий трек"><svg class="du-np-svg" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 5V19" stroke="#692d42" stroke-width="2" stroke-linecap="round"/><path d="M19 5L8 12L19 19Z" fill="#692d42"/></svg></button>'+
+        '<button type="button" class="du-np-main-play" data-np-action="toggle" id="duNpToggle" aria-label="Воспроизвести"><svg class="du-np-svg" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 4L20 12L8 20Z" fill="#fff8ef"/></svg></button>'+
+        '<button type="button" data-np-action="next" title="Следующий трек" aria-label="Следующий трек"><svg class="du-np-svg" viewBox="0 0 24 24" aria-hidden="true"><path d="M19 5V19" stroke="#692d42" stroke-width="2" stroke-linecap="round"/><path d="M5 5L16 12L5 19Z" fill="#692d42"/></svg></button>'+
         '</div>'+
         '<div class="du-np-timeline"><span id="duNpElapsed">0:00</span>'+
         '<input type="range" id="duNpSeek" min="0" max="14" value="0" step=".1" aria-label="Перемотка композиции">'+
@@ -272,7 +272,7 @@
   function render() {
     const item=current(),label=phaseData()?.label || '';
     const elapsed=position(),currentDuration=duration();
-    const playSymbol=state.playing?'Ⅱ':'▶';
+    const playSymbol=state.playing?'<svg class="du-np-svg" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 5H11V19H7ZM14 5H18V19H14Z" fill="#fff8ef"/></svg>':'<svg class="du-np-svg" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 4L20 12L8 20Z" fill="#fff8ef"/></svg>';
     const launcher=$('#duNpLauncher'),panel=$('#duNpPanel');
     if(!launcher || !panel)return;
     panel.hidden=!state.panelOpen;
@@ -282,7 +282,7 @@
     const trackEl=$('#duNpTrack'),sub=$('#duNpSub'),toggle=$('#duNpToggle');
     if(trackEl)trackEl.textContent=item?.title||'Музыкальная газета';
     if(sub)sub.textContent=label+(item?' · '+item.bpm+' BPM':'');
-    if(toggle){toggle.textContent=playSymbol;toggle.setAttribute('aria-label',state.playing?'Пауза':'Воспроизвести');}
+    if(toggle){toggle.innerHTML=playSymbol;toggle.setAttribute('aria-label',state.playing?'Пауза':'Воспроизвести');}
     const seek=$('#duNpSeek');if(seek){seek.max=currentDuration;seek.value=Math.min(currentDuration,elapsed);}
     if($('#duNpElapsed'))$('#duNpElapsed').textContent=timeText(elapsed);
     if($('#duNpTotal'))$('#duNpTotal').textContent=timeText(currentDuration);
