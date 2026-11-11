@@ -835,11 +835,11 @@ a.du-evening-nav-mobile{display:none}
 /* Share shopping list with a phone or messenger, no third-party SDK. */
 .du-shop-share{margin-top:10px;display:flex;flex-direction:column;gap:9px}
 .du-shop-share .du-shop-send{width:100%;min-height:48px;font-weight:800}
-.du-shop-share-choices{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}
+.du-shop-share-choices{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px}
 .du-shop-share-choices a{display:flex;align-items:center;justify-content:center;min-height:40px;padding:7px;border:1px solid #d7bdc5;background:#fffaf8;border-radius:12px;color:#734759;text-decoration:none;font:750 12px/1.3 Manrope,Arial,sans-serif;text-align:center}
 .du-shop-share-choices a:hover{background:#f6e6ec;border-color:#b989a0}
 .du-shop-share-caption{font:500 12px/1.45 Manrope,Arial,sans-serif;color:#806a78;margin:0}
-@media(max-width:390px){.du-shop-share-choices{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:600px){.du-shop-share-choices{grid-template-columns:repeat(2,minmax(0,1fr))}}
 
 
 /* Cinema filmstrip: action photographs and a clean editorial fallback while unshot. */
@@ -1290,6 +1290,7 @@ body:not(.du-evening-mode) .du-evening-back{display:none!important}
       <div class="du-shop-share-choices" id="shoppingShareOptions" aria-label="Куда отправить список">
         <a href="#" data-shopping-share="telegram" target="_blank" rel="noopener noreferrer">Telegram</a>
         <a href="#" data-shopping-share="whatsapp" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+        <a href="#" data-shopping-share="max" target="_blank" rel="noopener noreferrer">MAX</a>
         <a href="#" data-shopping-share="sms">SMS</a>
       </div>
       <p class="du-shop-share-caption">Откроем выбранное приложение с текстом. Отправку подтверждаешь ты. SMS может быть разбито на несколько сообщений.</p>
@@ -1654,7 +1655,8 @@ function updateShoppingShareLinks(){
  document.querySelectorAll('[data-shopping-share]').forEach(link=>{
   const type=link.dataset.shoppingShare, val=encodeURIComponent(text);
   link.href=type==='telegram'?'https://t.me/share/url?text='+val:
-    type==='whatsapp'?'https://api.whatsapp.com/send?text='+val:'sms:?&body='+val;
+    type==='whatsapp'?'https://api.whatsapp.com/send?text='+val:
+    type==='max'?'https://max.ru/:share?text='+val:'sms:?&body='+val;
   link.setAttribute('aria-disabled',String(!text));
  });
 }
