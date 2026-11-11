@@ -857,3 +857,32 @@ body .du-quick-nav-mobile > a[aria-current="page"]::before{
     var(--du-paper-fibre-grain)!important;
   background-blend-mode:normal!important;
 }
+
+/* NAV_PRIORITY_ROOT_CAUSE_FIX_20261111
+   The universal button styles contain :is(button:not(#tryCooking), ...),
+   so every selector in that :is() group inherits ID specificity from
+   :not(#tryCooking), overriding all previous chapter colors.
+   Target the existing #top header ID here: verified with actual Chromium
+   computed styles on desktop before deployment. Keep approved torn paper. */
+html body #top.header .main-nav > a[data-nav="evening"],
+html body #top.header .main-nav > a[data-nav="airfryer"]{
+  background-color:#b58d7c!important;
+  background-image:
+    linear-gradient(115deg,rgba(91,43,53,.32),rgba(94,42,53,.4)),
+    var(--du-paper-fibre-grain)!important;
+  background-size:100% 100%,192px 192px!important;
+  background-blend-mode:normal!important;
+  color:#fff9f0!important;
+}
+html body #top.header .main-nav > a[data-nav="evening"]::before,
+html body #top.header .main-nav > a[data-nav="airfryer"]::before{
+  color:#fff9f0!important;
+}
+html body #top.header .main-nav > a[data-nav="evening"]:is(:hover,:focus-visible,[aria-current="page"]),
+html body #top.header .main-nav > a[data-nav="airfryer"]:is(:hover,:focus-visible,[aria-current="page"]){
+  background-color:#956b61!important;
+  background-image:
+    linear-gradient(115deg,rgba(79,29,44,.5),rgba(79,31,43,.48)),
+    var(--du-paper-fibre-grain)!important;
+  color:#fff9f0!important;
+}
