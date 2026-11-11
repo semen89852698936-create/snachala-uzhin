@@ -1,0 +1,370 @@
+/* СНАЧАЛА УЖИН | editorial polish 11 Nov 2026
+   Based on approved 11-Nov checkpoint. Presentation, usability and
+   typography only. Keep all recipes, four working moods, photographs
+   outside the explicitly approved dinner-strip replacement, and JS.
+*/
+:root{--du-polish-paper:#f8efe3;--du-polish-wine:#79253e;--du-polish-deep:#4d2633;--du-polish-muted:#735662;--du-polish-line:#cfb5a5}
+html{scroll-behavior:smooth}
+#catalog{scroll-margin-top:112px}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+
+/* One useful short way through the standalone 1001 cover.
+   Do not resize or replace its approved photographic hero. */
+body.du-catalog-standalone .du-hero-actions>a.du-jump-recipes{
+  display:inline-flex!important;align-items:center;justify-content:center;
+  gap:11px;min-height:47px;padding:11px 17px!important;
+  background:#f6e7d3!important;color:#6a2338!important;
+  border:0!important;border-radius:0!important;
+  font:750 14px/1.3 Manrope,Arial,sans-serif!important;
+  -webkit-mask-image:var(--du-paper-tear-mask);mask-image:var(--du-paper-tear-mask);
+  filter:drop-shadow(0 4px 6px rgba(30,15,10,.2));
+  transition:transform 240ms cubic-bezier(.2,.75,.25,1),filter 240ms ease!important;
+}
+@media(hover:hover) and (pointer:fine){
+  body.du-catalog-standalone .du-hero-actions>a.du-jump-recipes:hover{
+    transform:translateY(-4px) rotate(-.35deg)!important;
+    filter:drop-shadow(0 9px 9px rgba(30,15,10,.24));
+  }
+}
+body.du-catalog-standalone .du-hero-actions>a.du-jump-recipes:focus-visible{
+  outline:3px solid #fff;outline-offset:3px
+}
+body.du-catalog-standalone .du-hero-actions>a.du-jump-recipes:active{transform:translateY(1px)!important}
+
+/* Editorial readability: targeted increases, not a global override. */
+#catalog .search-panel .filter-button,
+#catalog .search-panel select,
+#catalog .category-filters .chip,
+body.du-airfryer-standalone .du-airfryer-filter{
+  font-size:clamp(14px,1.04vw,16px)!important;line-height:1.4!important;
+  min-height:44px!important;
+}
+#catalog .result-line,#catalog .du-pantry-toolbar,
+#catalog .du-pantry-controls,
+#catalog .du-small-note,
+#catalog .du-section-heading p,
+#evening .du-section-heading p,
+#evening .du-small-note,
+#recipeDetail .recipe-meta,
+#recipeDetail .recipe-intro p{
+  font-size:clamp(14px,1.07vw,17px)!important;line-height:1.62!important;
+}
+#catalog .search-panel input,
+body.du-airfryer-standalone #airfryerSearch{
+  font-size:16px!important;line-height:1.45!important;color:#522b37!important
+}
+#catalog .du-eyebrow,#evening .du-eyebrow,
+body.du-airfryer-standalone .du-airfryer-kicker{
+  font-size:clamp(12px,.95vw,14px)!important;line-height:1.5!important
+}
+/* Music cards retain their approved photo/paper composition and typography.
+   Only their smallest details gain space and contrast. */
+#music :is(.du-music-phase,.du-music-card-desc,.du-music-card small,
+.du-bpm-track-details,.du-bpm-track-details strong,.du-bpm-track-details small,
+.du-music-queue,.du-music-bpm,.du-music-label){
+  font-size:clamp(13.5px,1vw,15px)!important;line-height:1.55!important;
+}
+#music .du-music-card-desc,#music .du-bpm-track-details small{color:#6a4b58!important}
+#music .du-bpm-track-details strong{color:#4d2633!important}
+#music .du-music-card{row-gap:5px!important}
+#music .du-bpm-track{min-height:53px!important}
+@media(max-width:760px){
+  #music :is(.du-music-card-desc,.du-bpm-track-details,
+  .du-bpm-track-details strong,.du-bpm-track-details small,.du-music-card small){
+    font-size:15px!important;line-height:1.53!important;
+  }
+  #music .du-music-card{padding-bottom:26px!important}
+}
+
+/* The after-dinner line is already full bleed across the viewport.
+   Expand the TEXT/PHOTO COMPOSITION by another 20%: 54ch -> 65ch.
+   Cream/burgundy palette echoes the approved 'СНАЧАЛА УЖИН' paper panels.
+   Dedicated image depicts used plates and two almost-empty wine glasses. */
+html body.du-evening-mode #eveningLanding>.du-evening-strip-two{
+  isolation:isolate;
+  background:#e7d4bf!important;
+  background-image:
+    linear-gradient(90deg,rgba(53,21,29,.77) 0%,rgba(63,28,36,.50) 43%,rgba(61,25,34,.24) 100%),
+    url('/assets/after-dinner-glasses-20261111.webp')!important;
+  background-size:cover,cover!important;
+  background-position:center,center!important;
+  background-repeat:no-repeat!important;
+  border-block:9px solid #f8eee2!important;
+  box-shadow:inset 0 0 0 1px rgba(239,211,178,.28)!important;
+}
+html body.du-evening-mode #eveningLanding>.du-evening-strip-two p{
+  width:min(100%,65ch)!important;max-width:65ch!important;margin-inline:auto!important;
+  color:#fff4e7!important;line-height:1.09!important;
+  text-shadow:0 3px 16px rgba(35,11,17,.75)!important;
+}
+html body.du-evening-mode #eveningLanding>.du-evening-strip-two .du-evening-strip-number{
+  color:#f3dbc4!important;text-shadow:0 2px 9px rgba(35,11,17,.55)!important;
+}
+@media(max-width:760px){
+  html body.du-evening-mode #eveningLanding>.du-evening-strip-two{
+    background-position:center,66% center!important;
+    min-height:300px!important;padding:42px 22px!important;
+    border-block-width:6px!important
+  }
+  html body.du-evening-mode #eveningLanding>.du-evening-strip-two p{
+    width:100%!important;max-width:100%!important;
+    font-size:clamp(32px,8.5vw,52px)!important;line-height:1.05!important
+  }
+}
+
+/* Four working moods = four photographic magazine cuts.
+   The live menu builder, time selectors, chosen states and click handlers
+   stay intact; this replaces only the generic flat-button treatment. */
+html body #evening.du-evening{
+  padding-top:clamp(58px,6vw,105px)!important
+}
+html body #evening .du-section-top{margin-bottom:34px!important;align-items:end!important}
+html body #evening .du-section-heading h2{
+  font-size:clamp(54px,6.7vw,110px)!important;line-height:.91!important;
+  letter-spacing:-.054em!important
+}
+html body #evening .du-section-heading p{
+  max-width:440px!important;color:#684a52!important
+}
+html body #evening .du-moods{
+  display:grid!important;grid-template-columns:repeat(4,minmax(0,1fr))!important;
+  gap:clamp(12px,1.7vw,26px)!important
+}
+html body #evening .du-moods>button.du-mood{
+  position:relative!important;isolation:isolate!important;display:flex!important;
+  flex-direction:column!important;justify-content:flex-end!important;
+  width:100%!important;min-width:0!important;
+  min-height:clamp(272px,26vw,362px)!important;
+  padding:clamp(18px,1.65vw,25px)!important;
+  background:#f7e8d6!important;
+  background-image:none!important;border:0!important;border-radius:0!important;
+  color:#4d2333!important;cursor:pointer!important;
+  -webkit-mask-image:none!important;mask-image:none!important;
+  clip-path:polygon(0 3%,11% 1%,21% 3%,35% 0,47% 2%,59% 1%,72% 3%,85% 1%,100% 3%,99% 96%,88% 99%,73% 97%,58% 100%,44% 98%,29% 100%,16% 97%,0 99%)!important;
+  box-shadow:0 13px 24px rgba(64,29,30,.11)!important;
+  transition:transform .24s ease,filter .24s ease!important;
+  text-align:left!important;
+}
+html body #evening .du-moods>button.du-mood::before{
+  content:""!important;position:absolute!important;inset:0 0 38%!important;z-index:-2!important;
+  background:#6b3a3d center/cover no-repeat!important;
+  background-image:url('/assets/our-evening-invitation-approved-20261102.webp')!important;
+  opacity:1!important;mask-image:none!important;-webkit-mask-image:none!important;
+  border:0!important;border-radius:0!important;filter:none!important;box-shadow:none!important;
+}
+html body #evening .du-moods>button.du-mood[data-mood="spark"]::before{
+  background-image:url('/assets/home-hero-steak-wine-20261108.webp')!important
+}
+html body #evening .du-moods>button.du-mood[data-mood="play"]::before{
+  background-image:url('/assets/cooking-together-romantic.avif')!important
+}
+html body #evening .du-moods>button.du-mood[data-mood="cozy"]::before{
+  background-image:url('/assets/our-evening-together-approved.webp')!important
+}
+html body #evening .du-moods>button.du-mood::after{
+  content:"";position:absolute;inset:48% 0 0;z-index:-1;
+  background:linear-gradient(180deg,rgba(249,237,221,.91),#faefe0 35%,#f8e6d1 100%);
+  clip-path:polygon(0 5%,13% 2%,26% 7%,39% 1%,52% 5%,66% 0,81% 6%,100% 2%,100% 100%,0 100%);
+  pointer-events:none;
+}
+html body #evening .du-mood .du-mood-num{
+  position:absolute!important;top:17px!important;left:20px!important;
+  color:#fff5ed!important;font-size:13px!important;font-weight:800!important;
+  text-shadow:0 1px 7px #2c1218!important
+}
+html body #evening .du-mood .du-mood-icon{
+  position:absolute!important;top:17px!important;right:19px!important;margin:0!important;
+  font-size:27px!important;line-height:1!important;text-shadow:0 1px 9px #311619
+}
+html body #evening .du-mood strong{
+  color:#562638!important;font:500 clamp(28px,3vw,44px)/.99 'Cormorant Garamond',Georgia,serif!important;
+  margin:0 0 6px!important;letter-spacing:-.04em!important
+}
+html body #evening .du-mood small{
+  color:#68535a!important;font:600 clamp(14px,1.04vw,16px)/1.48 Manrope,Arial,sans-serif!important;
+  margin:0!important;max-width:100%!important
+}
+html body #evening .du-mood .du-mood-check{
+  position:absolute!important;top:auto!important;bottom:19px!important;right:18px!important;
+  color:#8b3b4d!important;font-size:24px!important
+}
+html body #evening .du-moods>button.du-mood.is-selected{
+  outline:3px solid #842d48!important;outline-offset:-3px!important;
+  filter:drop-shadow(0 4px 7px rgba(74,26,37,.23))!important
+}
+@media(hover:hover) and (pointer:fine){
+  html body #evening .du-moods>button.du-mood:hover{
+    transform:translateY(-5px) rotate(-.35deg)!important;
+    filter:drop-shadow(0 9px 11px rgba(74,26,37,.19))!important
+  }
+}
+html body #evening .du-moods>button.du-mood:focus-visible{
+  outline:3px solid #842d48!important;outline-offset:3px!important
+}
+html body #evening .du-builder{
+  margin-top:clamp(24px,3vw,44px)!important;gap:0!important;
+  background:transparent!important;
+}
+html body #evening .du-builder-left{
+  background:#f3e2cf!important;
+  background-image:repeating-linear-gradient(110deg,rgba(113,67,55,.018) 0 1px,transparent 1px 5px)!important;
+  border:1px solid #d7bba9!important;
+  border-radius:0!important;
+  padding:clamp(25px,3.2vw,48px)!important
+}
+html body #evening .du-builder-right{
+  background:#612c3e!important;color:#fff0e4!important;
+  background-image:linear-gradient(145deg,#6b3445,#482633)!important;
+  border:1px solid #5f3140!important;
+  border-radius:0!important;padding:clamp(25px,3.2vw,48px)!important
+}
+html body #evening .du-builder-right :is(h3,.du-menu-intro,.du-menu-meta,.du-mini-eyebrow){color:#fff3ea!important}
+html body #evening .du-time-choices button{
+  min-height:47px!important;font-size:clamp(14px,1.08vw,16px)!important
+}
+html body #evening .du-menu-actions button{
+  min-height:46px!important;font-size:14px!important
+}
+html body #evening .du-small-note{color:#73525e!important}
+
+/* Shopping list: editorial paper instead of generic compact utility drawer.
+   Retains same grouping, checklist, sharing, copying and controls. */
+html body #shoppingDrawer.shopping-drawer{
+  background:#f8f0e6!important;
+  border-left:3px solid #8a384d!important;
+  box-shadow:-18px 0 45px rgba(38,20,22,.2)!important;
+}
+html body #shoppingDrawer .drawer-top{
+  background:linear-gradient(135deg,#f2e0cd,#f9eee1)!important;
+  border-bottom:1px solid #d8bdb0!important;
+  padding:clamp(20px,3vw,35px)!important;
+}
+html body #shoppingDrawer .drawer-top h2{
+  font:500 clamp(39px,4vw,57px)/.97 'Cormorant Garamond',Georgia,serif!important;
+  color:#572438!important
+}
+html body #shoppingDrawer .drawer-top .eyebrow{font-size:13px!important;color:#8b3d50!important}
+html body #shoppingDrawer #shoppingContents{
+  padding:clamp(17px,2.2vw,27px)!important;font-size:15px!important;line-height:1.55!important
+}
+html body #shoppingDrawer #shoppingContents :is(label,li,p,small,span){
+  font-size:clamp(14px,1.02vw,16px)!important;line-height:1.5!important
+}
+html body #shoppingDrawer #shoppingContents input[type="checkbox"]{
+  width:20px!important;height:20px!important;min-width:20px!important;accent-color:#842d48
+}
+html body #shoppingDrawer #shoppingContents :is(.shopping-group,.shop-group,.drawer-group){
+  padding-block:12px!important;border-bottom:1px solid #e0cabb!important
+}
+html body #shoppingDrawer .drawer-bottom{
+  background:#f4e6d7!important;border-top:1px solid #d8bdb0!important;
+  padding:clamp(14px,2.1vw,25px)!important;gap:9px!important
+}
+html body #shoppingDrawer .drawer-bottom :is(button,a){
+  min-height:42px!important;font-size:14px!important;line-height:1.4!important
+}
+html body #shoppingDrawer .du-shop-share-choices{
+  display:flex!important;flex-wrap:wrap!important;gap:8px!important
+}
+html body #shoppingDrawer .du-shop-share-caption{
+  font-size:13px!important;line-height:1.55!important;color:#705760!important
+}
+
+/* Airfryer catalog: tighter editorial masthead, readable functional tools,
+   light photographic rhythm. No photo/source/time/temperature changes. */
+html body.du-airfryer-standalone #airfryer{
+  padding-top:clamp(20px,3vw,48px)!important
+}
+html body.du-airfryer-standalone .du-airfryer-heading{
+  padding-block:clamp(24px,3vw,44px)!important
+}
+html body.du-airfryer-standalone .du-airfryer-heading h2{
+  font-size:clamp(60px,7vw,112px)!important;line-height:.9!important;
+  letter-spacing:-.055em!important
+}
+html body.du-airfryer-standalone .du-airfryer-heading p{
+  max-width:620px!important;font-size:clamp(16px,1.32vw,19px)!important;
+  line-height:1.59!important;color:#70515a!important
+}
+html body.du-airfryer-standalone .du-airfryer-filter{
+  min-height:44px!important;padding:11px 15px!important;
+  font-size:clamp(14px,1.02vw,16px)!important;
+}
+html body.du-airfryer-standalone #airfryerSearch{
+  min-height:51px!important;padding-inline:15px!important;
+  font-size:16px!important
+}
+html body.du-airfryer-standalone .du-airfryer-results,
+html body.du-airfryer-standalone .du-airfryer-specs{
+  font-size:clamp(14px,1vw,16px)!important;line-height:1.58!important
+}
+html body.du-airfryer-standalone .du-airfryer-grid{
+  gap:clamp(16px,2vw,30px)!important
+}
+html body.du-airfryer-standalone :is(.du-airfryer-card,.du-airfryer-recipe-card){
+  border-radius:0!important;
+  box-shadow:0 8px 20px rgba(55,33,29,.08)!important;
+  transition:transform .24s ease,box-shadow .24s ease!important
+}
+@media(hover:hover) and (pointer:fine){
+  html body.du-airfryer-standalone :is(.du-airfryer-card,.du-airfryer-recipe-card):hover{
+    transform:translateY(-4px)!important;box-shadow:0 15px 25px rgba(55,33,29,.14)!important
+  }
+}
+
+/* Each screen has a clear primary next step, without adding new blocks
+   that would disfigure the original hero. */
+#recipeDetail #startCooking,
+#evening #beginEvening{
+  font-weight:800!important;min-height:48px!important
+}
+#evening .du-evening-next a{
+  display:inline-flex!important;align-items:center;min-height:44px!important;
+  font-size:clamp(14px,1.1vw,17px)!important
+}
+
+/* Mobile editorial pass: breathing room, minimum finger targets, and
+   prose separated from photographic areas. */
+@media(max-width:760px){
+  #evening .du-section-top{gap:14px!important;margin-bottom:25px!important}
+  #evening .du-section-heading h2{font-size:clamp(51px,14vw,74px)!important}
+  html body #evening .du-moods{
+    grid-template-columns:repeat(2,minmax(0,1fr))!important;
+    gap:12px!important
+  }
+  html body #evening .du-moods>button.du-mood{
+    min-height:244px!important;padding:13px!important
+  }
+  html body #evening .du-mood strong{font-size:29px!important}
+  html body #evening .du-mood small{font-size:14px!important}
+  html body #evening .du-mood .du-mood-check{bottom:12px!important;right:13px!important}
+  html body #evening .du-builder{grid-template-columns:1fr!important}
+  #catalog .category-filters,#catalog .search-panel{scroll-padding-inline:16px}
+  #catalog .search-panel .filter-button,
+  body.du-airfryer-standalone .du-airfryer-filter{min-height:46px!important}
+  #catalog .search-panel{gap:9px!important}
+  body.du-airfryer-standalone .du-airfryer-heading{
+    padding-top:25px!important;padding-bottom:23px!important
+  }
+  body.du-airfryer-standalone .du-airfryer-heading h2{
+    font-size:clamp(56px,12vw,76px)!important
+  }
+  html body #shoppingDrawer.shopping-drawer{width:min(100vw,490px)!important}
+  html body #shoppingDrawer .drawer-top{padding:20px!important}
+  html body #shoppingDrawer #shoppingContents{padding:18px!important}
+  html body #shoppingDrawer .drawer-bottom{padding:15px!important}
+  body.du-catalog-standalone .du-hero-actions>a.du-jump-recipes{
+    width:100%!important;justify-content:center!important;min-height:48px!important
+  }
+}
+@media(max-width:390px){
+  html body #evening .du-moods{grid-template-columns:1fr 1fr!important}
+  html body #evening .du-moods>button.du-mood{min-height:240px!important}
+  html body #evening .du-mood strong{font-size:27px!important}
+}
+@media(prefers-reduced-motion:reduce){
+  html body #evening .du-moods>button.du-mood,
+  body.du-catalog-standalone .du-hero-actions>a.du-jump-recipes{
+    transition:none!important;transform:none!important
+  }
+}
