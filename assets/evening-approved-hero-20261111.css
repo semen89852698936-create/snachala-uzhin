@@ -284,7 +284,7 @@ body.du-evening-mode #eveningLanding .du-match11-pinned {
 body.du-evening-mode #eveningLanding .du-match11-pinned[hidden] { display: none !important; }
 /* Existing recipe suggestion links remain functional directly below the approved cover. */
 body.du-evening-mode #eveningLanding .du-match11-recipe-suggestions {
-  padding: 38px clamp(24px,5.5vw,90px) 34px !important;
+  padding: 70px clamp(24px,5.5vw,90px) 34px !important;
   position: relative !important;
   background: #f9f0e6 !important;
   color: #652c3b !important;
@@ -681,5 +681,15 @@ body.du-evening-mode #eveningLanding .du-match11-recipe-grid a.du-evening-paper-
 @media(prefers-reduced-motion:reduce){
   body.du-evening-mode #eveningLanding .du-match11-recipe-grid a.du-evening-paper-card{
     transition:none!important;
+  }
+}
+
+/* EVENING_REMOVE_CAPTIONS_LIFT_20PX_20261111
+   Removing the title row saves 52px desktop / ~74px mobile.
+   Rebalance top padding so the three cards end up 20px higher than before,
+   preserving the paper-edge breathing room and all artwork. */
+@media(max-width:760px){
+  body.du-evening-mode #eveningLanding .du-match11-recipe-suggestions{
+    padding-top:92px!important;
   }
 }
