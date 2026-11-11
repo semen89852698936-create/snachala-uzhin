@@ -8602,3 +8602,17 @@ body.du-evening-mode .du-chosen-note > span {
   vertical-align:middle;
   margin-right:9px!important;
 }
+
+
+/* EVENING_NEXT_MUSIC_READABILITY_20261111
+   Enlarge only the «А дальше - музыка.» lead-in while preserving
+   the adjacent soundtrack link and approved layout. */
+#homeView .du-evening-next > span,
+body.du-evening-mode .du-evening-next > span {
+  font-size:clamp(19px,1.65vw,23px)!important;
+  font-weight:600!important;
+  line-height:1.45!important;
+  color:#432831!important;
+  opacity:1!important;
+  text-shadow:none!important;
+}
