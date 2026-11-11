@@ -10,6 +10,11 @@
     const banner = document.querySelector('#homeView .du-bonus .bonus-inner');
     const button = document.querySelector('#homeView .du-bonus #bonusRecipe');
     if (!banner || !button || banner.dataset.bonusLayerReady === '1') return;
+    // The original CTA is inside .bonus-text. All poster coordinates and final
+    // button CSS are relative to .bonus-inner, so move the SAME link (with its
+    // existing click handler) to that parent. Otherwise the cropped paper
+    // appears a second time, shifted away from the printed CTA.
+    if (button.parentElement !== banner) banner.appendChild(button);
     const picture = new Image();
     picture.decoding = 'async';
     picture.onload = () => {
