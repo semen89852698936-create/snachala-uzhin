@@ -2,6 +2,7 @@
    Live headline, links, recipe actions, pinned selection. Both photo and ragged
    edge are CROPS of the user's approved 10-degree artwork, not new image generations.
    Do not change the rest of the magazine. */
+body.du-evening-mode > a.du-evening-back:not(.du-catalog-back) { display: none !important; }
 body.du-evening-mode .demo-strip { display: none !important; }
 body.du-evening-mode .header { background: #fffbf4 !important; }
 body.du-evening-mode .header-inner { min-height: 85px !important; }
