@@ -440,3 +440,26 @@ html body.du-airfryer-standalone :is(.du-airfryer-card,.du-airfryer-recipe-card)
     color:#632438!important
   }
 }
+
+
+/* MOBILE FEATURED-RECIPE GRID POSITION FIX | Chromium 390px audit
+   Main catalog has explicit grid-row numbers 1-9. An inserted extra
+   item with row:auto was placed AFTER the entire 1001-recipe grid.
+   Add a dedicated second row and shift existing rows, only while
+   the featured recipe is actually relocated by editorial-polish.js.
+   Keep the approved hero photo, recipe logic and other routes intact. */
+@media(max-width:760px){
+  html body.du-catalog-standalone.du-catalog-teaser-relocated #homeView #catalog>.container>#heroRecipe{
+    grid-row:2!important;grid-column:1!important;
+    justify-self:stretch!important;align-self:stretch!important;
+    box-sizing:border-box!important;width:100%!important;max-width:100%!important;
+  }
+  html body.du-catalog-standalone.du-catalog-teaser-relocated #homeView #catalog .search-panel{grid-row:3!important}
+  html body.du-catalog-standalone.du-catalog-teaser-relocated #homeView #catalog #categoryFilters{grid-row:4!important}
+  html body.du-catalog-standalone.du-catalog-teaser-relocated #homeView #catalog .du-ingredient-search-tip{grid-row:5!important}
+  html body.du-catalog-standalone.du-catalog-teaser-relocated #homeView #catalog .du-pantry-toolbar{grid-row:6!important}
+  html body.du-catalog-standalone.du-catalog-teaser-relocated #homeView #catalog .result-line{grid-row:7!important}
+  html body.du-catalog-standalone.du-catalog-teaser-relocated #homeView #catalog #recipeGrid{grid-row:8!important}
+  html body.du-catalog-standalone.du-catalog-teaser-relocated #homeView #catalog .du-more-wrap{grid-row:9!important}
+  html body.du-catalog-standalone.du-catalog-teaser-relocated #homeView #catalog .empty-state{grid-row:10!important}
+}
