@@ -222,3 +222,69 @@
   if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',start,{once:true});
   else start();
 })(typeof window!=='undefined'?window:globalThis);
+
+
+/* AIRFRYER_FINISH_AGREEMENT_20261112
+ * /airfryer/ keeps an older cooking-step template than the two recipe catalogues.
+ * Correct the finish screen without duplicating or replacing its recipe steps.
+ * Exactly 100 air-fryer recipes, explicitly reviewed by title/order.
+ */
+(function () {
+  'use strict';
+  const feminine = new Set([1, 2, 13, 14, 15, 26, 32, 39, 40, 41, 49, 56, 58, 61, 62, 67, 68, 69, 70, 72, 79, 80, 88]);
+  const neuter = new Set([11, 43, 100]);
+  const masculine = new Set([17, 21, 37, 38, 42, 48, 59, 60, 64, 76, 83, 87, 95, 98]);
+  function updateAirfryerFinish() {
+    const box = document.getElementById('cookContent');
+    if (!box) return;
+    const heading = box.querySelector('.done-title');
+    const description = box.querySelector('.done-desc');
+    if (!heading || !description || description.dataset.airfryerRussianFixed === '1') return;
+    const textNode = description.firstChild;
+    if (!textNode || textNode.nodeType !== 3) return;
+    const recipes = window.AIRFRYER_RECIPES;
+    if (!Array.isArray(recipes) || recipes.length !== 100) return;
+    const current = textNode.nodeValue || '';
+    const index = recipes.findIndex(recipe => current.startsWith(recipe.title + ' готово.'));
+    if (index === -1) return; // Leave the 1001-recipe catalogue untouched.
+    const number = index + 1;
+    const form = feminine.has(number) ? 'готова'
+      : neuter.has(number) ? 'готово'
+      : masculine.has(number) ? 'готов'
+      : 'готовы';
+    const oldPrefix = recipes[index].title + ' готово.';
+    textNode.nodeValue = recipes[index].title + ' ' + form + '.' + current.slice(oldPrefix.length);
+    heading.textContent = 'Приятного аппетита!';
+    description.dataset.airfryerRussianFixed = '1';
+  }
+  function install() {
+    updateAirfryerFinish();
+    // renderCook() re-creates #cookContent for each cooking step.
+    // Only added/removed nodes are monitored, not characterData or attributes,
+    // so our textual correction cannot create an observer feedback loop.
+    const observer = new MutationObserver(records => {
+      for (const record of records) {
+        const target = record.target;
+        if (target && target.nodeType === 1 &&
+          (target.id === 'cookContent' || target.closest?.('#cookContent'))) {
+          updateAirfryerFinish();
+          return;
+        }
+        for (const node of record.addedNodes) {
+          if (node.nodeType === 1 &&
+            (node.id === 'cookContent' || node.matches?.('.done-title,.done-desc')
+             || node.querySelector?.('.done-title,.done-desc'))) {
+            updateAirfryerFinish();
+            return;
+          }
+        }
+      }
+    });
+    observer.observe(document.body, {subtree:true,childList:true});
+  }
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', install, {once:true});
+  } else {
+    install();
+  }
+})();
