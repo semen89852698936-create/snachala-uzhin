@@ -1380,3 +1380,12 @@ html body.du-evening-mode #evening .du-moods>button.du-mood[data-mood="cozy"]::a
     inset:36% 0 0!important;
   }
 }
+
+
+/* At 320–360px the first caption wraps to three lines.
+   Add vertical paper, not smaller text: it now clears the photograph. */
+@media(max-width:360px) {
+  html body.du-evening-mode #evening .du-moods>button.du-mood {
+    min-height:285px!important;
+  }
+}
