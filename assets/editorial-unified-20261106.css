@@ -1815,3 +1815,27 @@ body.du-evening-mode #eveningLanding .du-evening-landing-caption {
     grid-template-columns:20px minmax(0,1fr) minmax(0,44%);
   }
 }
+
+
+/* AIRFRYER_CARD_META_PLUS_40_PERCENT_20261112
+   Targeted +40% type increase only for airfryer recipe card servings,
+   temperature/time line and detail-panel preparation duration.
+   Keep all original wording, ingredients, imagery and interactions. */
+#airfryer .du-airfryer-card .du-airfryer-card-copy > p {
+  font-size:21px;
+  line-height:1.55;
+  overflow-wrap:anywhere;
+}
+#airfryer .du-airfryer-card .du-airfryer-card-bottom {
+  font-size:19.6px;
+  line-height:1.4;
+  flex-wrap:wrap;
+}
+#recipeDetail:has(> .du-airfryer-specs) .du-airfryer-spec-grid .du-airfryer-spec:nth-child(3) small {
+  font-size:14px;
+}
+#recipeDetail:has(> .du-airfryer-specs) .du-airfryer-spec-grid .du-airfryer-spec:nth-child(3) strong {
+  font-size:23.8px;
+  line-height:1.3;
+  overflow-wrap:anywhere;
+}
