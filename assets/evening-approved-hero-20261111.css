@@ -426,3 +426,30 @@ body.du-evening-mode #eveningLanding .du-match11-red-line{
     height:12px!important;
   }
 }
+
+/* EVENING_HANDDRAWN_UNDERLINE_GAP_20261111
+   One restrained hand-drawn arc: raised gently at center, with clear
+   breathing room below the existing -10deg slogan. Do not alter text. */
+body.du-evening-mode #eveningLanding .du-match11-red-line{
+  left:5.82%!important;
+  top:65%!important;
+  width:25.5%!important;
+  height:22px!important;
+  border:0!important;
+  border-radius:0!important;
+  background-color:transparent!important;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 360 32' preserveAspectRatio='none'%3E%3Cpath d='M 4 22 Q 180 4 356 22' fill='none' stroke='%23be2144' stroke-width='4' stroke-linecap='round'/%3E%3C/svg%3E")!important;
+  background-repeat:no-repeat!important;
+  background-position:center!important;
+  background-size:100% 100%!important;
+  transform:rotate(-10deg)!important;
+  transform-origin:left bottom!important;
+}
+@media(max-width:760px){
+  body.du-evening-mode #eveningLanding .du-match11-red-line{
+    left:5.5%!important;
+    top:59%!important;
+    width:65%!important;
+    height:18px!important;
+  }
+}
