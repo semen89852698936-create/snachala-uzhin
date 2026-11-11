@@ -240,7 +240,7 @@
         '<div class="du-np-bottom"><label for="duNpVolume">♫ Громкость</label>'+
         '<input type="range" id="duNpVolume" min="0" max="100" value="65" aria-label="Громкость" />'+
         '<span id="duNpCount">01 / 02</span></div>'+
-        '<p class="du-np-notice">Оригинальные демозаписи. Чужие песни не звучат.</p>'+ '<button type="button" class="du-np-popout" data-np-action="popout">↗ Слушать при переходе между страницами</button>'+
+        '<p class="du-np-notice">Оригинальные демозаписи. Чужие песни не звучат.</p>'+ '<button type="button" class="du-np-popout" data-np-action="popout" title="Отдельное окно продолжает играть при переходах по сайту" aria-label="Открыть отдельное музыкальное окно для непрерывного прослушивания">↗ Отдельное окно</button>'+
         '<div class="du-np-print-colophon" aria-hidden="true"><span>СЛУШАЙ. ГОТОВЬ. БУДЬ ВДВОЁМ.</span><span>СПЕЦИАЛЬНЫЙ ВЫПУСК ДЛЯ ВАШЕГО ВЕЧЕРА</span></div>'+ '<p class="du-np-feedback" role="status" hidden></p>'+
         '</div>'+
       '</section>'+
