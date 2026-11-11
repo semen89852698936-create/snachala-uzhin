@@ -8409,3 +8409,35 @@ body.du-evening-mode .du-evening-back:not(.du-catalog-back):hover{
     font-size:13px!important;
   }
 }
+
+
+/* BONUS_CTA_NO_GHOST_RECTANGLE_20261111
+   The approved banner already includes the printed «Посмотреть бонус»
+   artwork. The actual #bonusRecipe is an invisible click target.
+   Remove the stale hover/focus/active overlay and tap highlight only;
+   preserve the approved artwork, click handler and keyboard focus ring. */
+#homeView .du-bonus #bonusRecipe,
+#homeView .du-bonus #bonusRecipe:hover,
+#homeView .du-bonus #bonusRecipe:active,
+#homeView .du-bonus #bonusRecipe:focus,
+#homeView .du-bonus #bonusRecipe:focus-visible {
+  background:transparent!important;
+  background-image:none!important;
+  box-shadow:none!important;
+  filter:none!important;
+  text-shadow:none!important;
+  -webkit-tap-highlight-color:transparent!important;
+}
+#homeView .du-bonus #bonusRecipe::before,
+#homeView .du-bonus #bonusRecipe::after,
+#homeView .du-bonus #bonusRecipe:is(:hover,:active,:focus,:focus-visible)::before,
+#homeView .du-bonus #bonusRecipe:is(:hover,:active,:focus,:focus-visible)::after {
+  content:none!important;
+  display:none!important;
+  background:none!important;
+  box-shadow:none!important;
+}
+#homeView .du-bonus #bonusRecipe:focus-visible {
+  outline:3px solid #fff4e6!important;
+  outline-offset:3px!important;
+}
