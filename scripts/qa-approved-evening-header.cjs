@@ -29,6 +29,8 @@ const fs=require('fs');
         const rect=e=>{const r=e?.getBoundingClientRect();return r?{x:r.x,y:r.y,w:r.width,h:r.height}:null};
         return {
           hero:rect(hero),photo:rect(photo),photoLoaded:!!(photo&&photo.complete&&photo.naturalWidth>0),
+          backLink: (()=>{const e=hero?.querySelector('.du-match11-sr-back');return e?{text:e.textContent,href:e.getAttribute('href'),rect:rect(e),display:getComputedStyle(e).display,clip:getComputedStyle(e).clipPath}:null})(),
+          titleRect:rect(hero?.querySelector('h1')),
           heading:hero?.querySelector('h1')?.textContent,
           slogan:slogan?.textContent,
           rotation:getComputedStyle(slogan).transform,
@@ -50,8 +52,18 @@ const fs=require('fs');
         m.recipeLinks===3,
         m.scrollWidth<=m.viewport+6,
         m.rotation.startsWith('matrix(0.984808, -0.173648'),
-        m.hero.y >= -2 && m.hero.y < (size.width<700 ? 200 : 120)
+        m.hero.y >= -2 && m.hero.y < (size.width<700 ? 200 : 120),
+        m.backLink?.href==='#home',
+        m.backLink?.display!=='none',
+        m.backLink?.rect?.w>=110,
+        m.backLink?.rect?.h>=38,
+        m.backLink?.rect?.y < m.titleRect.y + m.titleRect.h/2,
+        m.backLink?.rect?.x + m.backLink?.rect?.w <= m.viewport+1
       ];
+      await page.locator('#eveningLanding .du-match11-sr-back').click({timeout:5000});
+      await page.waitForTimeout(280);
+      entry.backNavigation={hash:await page.evaluate(()=>location.hash),isEvening:await page.evaluate(()=>document.body.classList.contains('du-evening-mode'))};
+      checks.push(entry.backNavigation.hash==='#home' && !entry.backNavigation.isEvening);
       entry.passed=checks.every(Boolean);
       if(!entry.passed){entry.errors.push('One or more layout/interaction assertions failed: '+JSON.stringify(checks));anyFailed=true;}
     }catch(e){entry.passed=false;entry.errors.push(String(e));if(target.name==='checkout')anyFailed=true;}
