@@ -2,7 +2,7 @@ name: 11 Nov approved Our Evening header screenshot QA
 on:
   push:
     branches:
-      - release/our-evening-approved-header-only-20261111
+      - fix/our-evening-title-bicolor-offset-20261111
   workflow_dispatch:
 permissions:
   contents: read
@@ -22,7 +22,7 @@ jobs:
       - name: Run browser capture of real page and public Vercel deployment
         shell: bash
         env:
-          EVENING_PUBLIC_PREVIEW: https://snachala-uzhin-preview-hf6nnegwr-chaika2.vercel.app/
+          EVENING_PUBLIC_PREVIEW: https://snachala-uzhin-preview-lnw7xy3j6-chaika2.vercel.app/
         run: |
           python3 -m http.server 8765 --bind 127.0.0.1 >/tmp/evening-http.log 2>&1 &
           sleep 2
