@@ -55,7 +55,7 @@ const fs=require('fs');
         m.hero.y >= -2 && m.hero.y < (size.width<700 ? 200 : 120),
         m.backLink?.href==='#home',
         m.backLink?.display!=='none',
-        m.backLink?.rect?.w>=110,
+        m.backLink?.rect?.w >= (size.width<700 ? 100 : 110),
         m.backLink?.rect?.h>=38,
         m.backLink?.rect?.y < m.titleRect.y + m.titleRect.h/2,
         m.backLink?.rect?.x + m.backLink?.rect?.w <= m.viewport+1
