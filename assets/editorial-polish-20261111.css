@@ -660,3 +660,37 @@ html body #recipeDetail .tip-card p{
 @media(max-width:480px){
   html body #recipeDetail .tip-card{padding:22px!important}
 }
+
+
+/* Recipe detail: restore the familiar tactile movement for "К каталогу рецептов".
+   Keep button styling, text, location and click/navigation unchanged. */
+html body #recipeView #backCatalog.back-link{
+  display:inline-block!important;
+  cursor:pointer!important;
+  transform:translateY(0) rotate(0deg);
+  transform-origin:left center;
+  transition:transform .24s cubic-bezier(.2,.7,.2,1),filter .24s ease!important;
+}
+@media(hover:hover) and (pointer:fine){
+  html body #recipeView #backCatalog.back-link:hover{
+    transform:translateY(-4px) rotate(-1.25deg)!important;
+    filter:drop-shadow(0 4px 4px rgba(99,41,57,.17))!important;
+  }
+}
+html body #recipeView #backCatalog.back-link:active{
+  transform:translateY(1px) rotate(0deg)!important;
+  filter:none!important;
+}
+html body #recipeView #backCatalog.back-link:focus-visible{
+  outline:2px solid #9a4559!important;
+  outline-offset:3px!important;
+}
+@media(prefers-reduced-motion:reduce){
+  html body #recipeView #backCatalog.back-link{
+    transition:none!important;
+  }
+  html body #recipeView #backCatalog.back-link:hover,
+  html body #recipeView #backCatalog.back-link:active{
+    transform:none!important;
+  }
+}
