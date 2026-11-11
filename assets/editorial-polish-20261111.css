@@ -1389,3 +1389,11 @@ html body.du-evening-mode #evening .du-moods>button.du-mood[data-mood="cozy"]::a
     min-height:285px!important;
   }
 }
+
+/* AIRFRYER_HERO_DESCRIPTION_PLUS_30_20261112
+   Only the short ingredient/cooking summary directly beneath the
+   airfryer recipe title. Existing 14–17px fluid scale x 1.3;
+   no changes to photo, heading, controls or detailed cooking specs. */
+#recipeDetail:has(> .du-airfryer-specs) .recipe-intro-copy > p {
+  font-size:clamp(18.2px,1.391vw,22.1px)!important;
+}
