@@ -8411,38 +8411,6 @@ body.du-evening-mode .du-evening-back:not(.du-catalog-back):hover{
 }
 
 
-/* BONUS_CTA_NO_GHOST_RECTANGLE_20261111
-   The approved banner already includes the printed «Посмотреть бонус»
-   artwork. The actual #bonusRecipe is an invisible click target.
-   Remove the stale hover/focus/active overlay and tap highlight only;
-   preserve the approved artwork, click handler and keyboard focus ring. */
-#homeView .du-bonus #bonusRecipe,
-#homeView .du-bonus #bonusRecipe:hover,
-#homeView .du-bonus #bonusRecipe:active,
-#homeView .du-bonus #bonusRecipe:focus,
-#homeView .du-bonus #bonusRecipe:focus-visible {
-  background:transparent!important;
-  background-image:none!important;
-  box-shadow:none!important;
-  filter:none!important;
-  text-shadow:none!important;
-  -webkit-tap-highlight-color:transparent!important;
-}
-#homeView .du-bonus #bonusRecipe::before,
-#homeView .du-bonus #bonusRecipe::after,
-#homeView .du-bonus #bonusRecipe:is(:hover,:active,:focus,:focus-visible)::before,
-#homeView .du-bonus #bonusRecipe:is(:hover,:active,:focus,:focus-visible)::after {
-  content:none!important;
-  display:none!important;
-  background:none!important;
-  box-shadow:none!important;
-}
-#homeView .du-bonus #bonusRecipe:focus-visible {
-  outline:3px solid #fff4e6!important;
-  outline-offset:3px!important;
-}
-
-
 /* AIRFRYER_FILTER_PAPER_BUTTON_MOTION_20261111
    Give every category filter («Все блюда», «Мясо», etc.) the same
    lightweight interactive lift/press as the magazine paper buttons.
@@ -8466,58 +8434,6 @@ body.du-evening-mode .du-evening-back:not(.du-catalog-back):hover{
 @media (prefers-reduced-motion:reduce) {
   #airfryer .du-airfryer-filter {transition:none!important}
   #airfryer .du-airfryer-filter:is(:hover,:active){transform:none!important}
-}
-
-
-/* BONUS_CTA_LIVE_PAPER_FEEDBACK_20261111
-   The approved 2026-11-10 banner has the button baked into its photograph.
-   Keep the original photo, avoid a second cutout/ghost and animate only
-   a single clipped highlight on the invisible real click target. */
-#homeView .du-bonus #bonusRecipe {
-  transition:transform .23s ease!important;
-  transform-origin:center center!important;
-  isolation:isolate;
-}
-#homeView .du-bonus #bonusRecipe::before {
-  content:""!important;
-  display:block!important;
-  position:absolute!important;
-  inset:-3px!important;
-  width:auto!important;
-  height:auto!important;
-  aspect-ratio:auto!important;
-  background:rgba(255,249,232,.13)!important;
-  background-image:none!important;
-  clip-path:polygon(0% 11%,8% 3%,17% 8%,28% 1%,39% 7%,52% 0%,66% 8%,78% 2%,90% 7%,100% 0%,98% 91%,89% 97%,76% 92%,63% 100%,49% 94%,35% 99%,23% 93%,10% 98%,1% 91%)!important;
-  opacity:0!important;
-  pointer-events:none!important;
-  box-shadow:none!important;
-  filter:none!important;
-  transform:translateY(3px) scale(.98)!important;
-  transition:opacity .23s ease,transform .23s ease!important;
-}
-#homeView .du-bonus #bonusRecipe::after {
-  content:none!important;
-  display:none!important;
-}
-@media(hover:hover) and (prefers-reduced-motion:no-preference) {
-  #homeView .du-bonus #bonusRecipe:hover::before {
-    opacity:1!important;
-    transform:translateY(-4px) scale(1.025)!important;
-  }
-}
-#homeView .du-bonus #bonusRecipe:active::before {
-  opacity:1!important;
-  transform:translateY(2px) scale(.965)!important;
-  background:rgba(80,36,44,.14)!important;
-}
-#homeView .du-bonus #bonusRecipe:focus-visible::before {
-  opacity:1!important;
-  transform:none!important;
-}
-@media(prefers-reduced-motion:reduce) {
-  #homeView .du-bonus #bonusRecipe,
-  #homeView .du-bonus #bonusRecipe::before {transition:none!important}
 }
 
 
@@ -8618,373 +8534,48 @@ body.du-evening-mode .du-evening-next > span {
 }
 
 
-/* BONUS_VISIBLE_BUTTON_LIFT_20261111
-   The 2026-11-10 approved banner has a non-moving printed button baked
-   into the photo. Cover only that printed area with wine-colored paper,
-   then draw ONE independently moving approved torn-paper button.
-   Keep every other pixel of the banner and the original click handler. */
-#homeView .du-bonus .bonus-inner {isolation:isolate!important}
-#homeView .du-bonus .bonus-inner::after {
-  content:""!important;
-  display:block!important;
-  position:absolute!important;
-  left:35.9%!important;
-  top:56.5%!important;
-  width:20.1%!important;
-  height:13.1%!important;
-  z-index:1!important;
-  pointer-events:none!important;
-  border:0!important;
-  box-shadow:none!important;
-  background:linear-gradient(108deg,#713a36 0%,#783d39 43%,#80433d 100%)!important;
-}
-#homeView .du-bonus .bonus-text {
-  z-index:2!important;
-}
-#homeView .du-bonus #bonusRecipe {
-  left:36.38%!important;
-  top:57.1%!important;
-  width:19.05%!important;
-  height:11.4%!important;
-  z-index:3!important;
-  overflow:visible!important;
-  transform:none!important;
-  background:transparent!important;
-  box-shadow:none!important;
-  -webkit-tap-highlight-color:transparent!important;
-}
-#homeView .du-bonus #bonusRecipe::before,
-#homeView .du-bonus #bonusRecipe:is(:hover,:active,:focus,:focus-visible)::before {
-  content:""!important;
-  display:block!important;
-  position:absolute!important;
-  inset:-1px!important;
-  width:calc(100% + 2px)!important;
-  height:calc(100% + 2px)!important;
-  aspect-ratio:auto!important;
-  opacity:1!important;
-  background:transparent url('/assets/approved-bonus/bonus-1001-hover-button-20261109.webp') center / 100% 100% no-repeat!important;
-  clip-path:polygon(0% 14%,5% 4%,13% 7%,21% 2%,30% 5%,39% 1%,49% 4%,58% 1%,67% 5%,75% 1%,84% 4%,93% 1%,100% 10%,99% 90%,93% 97%,85% 94%,76% 99%,67% 95%,57% 99%,48% 96%,38% 99%,29% 96%,20% 99%,12% 95%,5% 98%,0% 90%)!important;
-  filter:drop-shadow(0 3px 3px rgba(33,14,18,.18))!important;
-  transform:translateY(0) rotate(0)!important;
-  transform-origin:center center!important;
-  transition:transform .22s ease,filter .22s ease!important;
-  box-shadow:none!important;
-  pointer-events:none!important;
-  z-index:1!important;
-}
-@media (hover:hover) and (prefers-reduced-motion:no-preference) {
-  #homeView .du-bonus #bonusRecipe:hover::before {
-    transform:translateY(-7px) rotate(-1deg) scale(1.035)!important;
-    filter:drop-shadow(0 9px 7px rgba(33,14,18,.30))!important;
-  }
-}
-#homeView .du-bonus #bonusRecipe:active::before {
-  transform:translateY(3px) scale(.975)!important;
-  filter:drop-shadow(0 1px 1px rgba(33,14,18,.18))!important;
-}
-#homeView .du-bonus #bonusRecipe:focus-visible::before {
-  transform:translateY(-5px)!important;
-}
-#homeView .du-bonus #bonusRecipe::after {content:none!important;display:none!important}
-@media(prefers-reduced-motion:reduce){
-  #homeView .du-bonus #bonusRecipe::before {transition:none!important}
-  #homeView .du-bonus #bonusRecipe:is(:hover,:active,:focus-visible)::before {
-    transform:none!important;
-  }
-}
 
-
-/* BONUS_CTA_SAME_ARTWORK_NO_PATCH_20261111
-   Repair the previous faulty moving overlay. The text/font must come
-   from the SAME approved 2026-11-10 banner image, never an older sticker.
-   Feather the printed button underneath instead of painting a brown patch.
-   Button position and action remain unchanged. */
-#homeView .du-bonus .bonus-inner{
-  isolation:isolate!important;
-}
-#homeView .du-bonus .bonus-inner::after{
-  content:""!important;
-  display:block!important;
-  position:absolute!important;
-  left:35.65%!important;
-  top:55.45%!important;
-  width:20.45%!important;
-  height:14.8%!important;
-  z-index:1!important;
-  pointer-events:none!important;
-  background:transparent!important;
-  background-image:none!important;
-  border:0!important;
-  box-shadow:none!important;
-  -webkit-backdrop-filter:blur(32px)!important;
-  backdrop-filter:blur(32px)!important;
-  -webkit-mask-image:radial-gradient(ellipse 70% 69% at center,black 62%,transparent 100%)!important;
-  mask-image:radial-gradient(ellipse 70% 69% at center,black 62%,transparent 100%)!important;
-}
-#homeView .du-bonus .bonus-text {z-index:2!important}
-#homeView .du-bonus #bonusRecipe{
-  left:36.38%!important;
-  top:57.1%!important;
-  width:19.05%!important;
-  height:11.4%!important;
-  z-index:3!important;
-  overflow:visible!important;
-  background:transparent!important;
-  background-image:none!important;
-  box-shadow:none!important;
-  filter:none!important;
-  transform:none!important;
-}
-#homeView .du-bonus #bonusRecipe::before,
-#homeView .du-bonus #bonusRecipe:is(:hover,:active,:focus,:focus-visible)::before{
-  content:""!important;
-  display:block!important;
-  position:absolute!important;
-  inset:0!important;
-  width:100%!important;
-  height:100%!important;
-  opacity:1!important;
-  background-color:transparent!important;
-  background-image:url('/assets/approved-banners/bonus-corrected-20261110.webp')!important;
-  background-size:524.9344% 877.1930%!important;
-  background-position:44.9413% 64.4470%!important;
-  background-repeat:no-repeat!important;
-  clip-path:none!important;
-  -webkit-mask-image:none!important;
-  mask-image:none!important;
-  border:0!important;
-  box-shadow:none!important;
-  filter:drop-shadow(0 3px 3px rgba(33,14,18,.18))!important;
-  transform:translateY(0) rotate(0)!important;
-  transform-origin:center center!important;
-  transition:transform .22s ease,filter .22s ease!important;
-  pointer-events:none!important;
-  z-index:1!important;
-}
-@media(hover:hover) and (prefers-reduced-motion:no-preference){
-  #homeView .du-bonus #bonusRecipe:hover::before{
-    transform:translateY(-6px) rotate(-.7deg) scale(1.02)!important;
-    filter:drop-shadow(0 8px 6px rgba(33,14,18,.26))!important;
-  }
-}
-#homeView .du-bonus #bonusRecipe:active::before{
-  transform:translateY(2px) scale(.985)!important;
-  filter:drop-shadow(0 1px 1px rgba(33,14,18,.16))!important;
-}
-#homeView .du-bonus #bonusRecipe:focus-visible::before{
-  transform:translateY(-3px)!important;
-}
-#homeView .du-bonus #bonusRecipe::after{content:none!important;display:none!important}
-@media(prefers-reduced-motion:reduce){
-  #homeView .du-bonus #bonusRecipe::before{
-    transition:none!important;
-  }
-  #homeView .du-bonus #bonusRecipe:is(:hover,:active,:focus-visible)::before{
-    transform:none!important;
-  }
-}
-
-
-/* BONUS_CTA_REMOVE_RECTANGULAR_HALO_20261111
-   Emergency correction from the real screenshot: no backdrop blur, no brown
-   fill, no shadow rectangle and no alternate type artwork. The moving surface
-   uses ONLY the approved banner's printed paper, masked to its torn contour.
-   A translation (never scaling) preserves the lettering at all button states. */
-#homeView .du-bonus .bonus-inner::after {
-  content:none!important;
-  display:none!important;
-  width:0!important;
-  height:0!important;
-  background:none!important;
-  -webkit-backdrop-filter:none!important;
-  backdrop-filter:none!important;
-  -webkit-mask-image:none!important;
-  mask-image:none!important;
-  box-shadow:none!important;
-  filter:none!important;
-}
-#homeView .du-bonus #bonusRecipe,
-#homeView .du-bonus #bonusRecipe:is(:hover,:active,:focus,:focus-visible) {
-  background:none!important;
-  background-image:none!important;
-  color:transparent!important;
-  font-size:0!important;
-  text-shadow:none!important;
-  border:none!important;
-  box-shadow:none!important;
-  filter:none!important;
-  transform:none!important;
-}
-#homeView .du-bonus #bonusRecipe span {
-  color:transparent!important;
-  font-size:0!important;
-}
-#homeView .du-bonus #bonusRecipe::before,
-#homeView .du-bonus #bonusRecipe:is(:hover,:active,:focus,:focus-visible)::before {
-  content:""!important;
-  display:block!important;
-  position:absolute!important;
-  inset:0!important;
-  width:100%!important;
-  height:100%!important;
-  box-sizing:border-box!important;
-  aspect-ratio:auto!important;
-  opacity:1!important;
-  background-color:transparent!important;
-  background-image:url('/assets/approved-banners/bonus-corrected-20261110.webp')!important;
-  background-size:524.9344% 877.1930%!important;
-  background-position:44.9413% 64.4470%!important;
-  background-repeat:no-repeat!important;
-  clip-path:polygon(0.6% 15%,2% 6%,8% 4%,13% 8%,21% 2%,29% 5%,37% 1%,45% 4%,53% 1%,61% 5%,69% 2%,77% 5%,84% 1%,92% 5%,98% 3%,99.5% 13%,99% 88%,96% 97%,88% 94%,80% 99%,72% 95%,63% 98%,54% 95%,46% 99%,38% 95%,29% 99%,21% 95%,12% 98%,5% 96%,0.6% 89%)!important;
-  -webkit-mask-image:none!important;
-  mask-image:none!important;
-  box-shadow:none!important;
-  filter:none!important;
-  border:none!important;
-  transform:translateY(0)!important;
-  transform-origin:center center!important;
-  transition:transform .19s ease!important;
-  pointer-events:none!important;
-}
-@media (hover:hover) and (prefers-reduced-motion:no-preference) {
-  #homeView .du-bonus #bonusRecipe:hover::before {
-    transform:translateY(-4px)!important;
-  }
-}
-#homeView .du-bonus #bonusRecipe:active::before {
-  transform:translateY(2px)!important;
-}
-#homeView .du-bonus #bonusRecipe:focus-visible::before {
-  transform:translateY(-3px)!important;
-}
-#homeView .du-bonus #bonusRecipe::after {
-  content:none!important;
-  display:none!important;
-}
-@media (prefers-reduced-motion:reduce) {
-  #homeView .du-bonus #bonusRecipe::before {
-    transition:none!important;
-  }
-  #homeView .du-bonus #bonusRecipe:is(:hover,:active,:focus-visible)::before {
-    transform:none!important;
-  }
-}
-
-
-/* BONUS_TRUE_SEPARATED_LAYERS_20261111
-   Definitive layer correction: assets/bonus-button-layers-20261111.js removes
-   the baked stationary button from the same approved photograph and supplies
-   its exact original paper/lettering as a transparent CSS background on the
-   existing clickable button. NO duplicate pseudo-element, blur or brown patch. */
-#homeView .du-bonus .bonus-inner::after {
-  content:none!important;
-  display:none!important;
-  background:none!important;
-  -webkit-backdrop-filter:none!important;
-  backdrop-filter:none!important;
-  box-shadow:none!important;
-}
-#homeView .du-bonus #bonusRecipe::before,
-#homeView .du-bonus #bonusRecipe::after,
-#homeView .du-bonus #bonusRecipe:is(:hover,:active,:focus,:focus-visible)::before,
-#homeView .du-bonus #bonusRecipe:is(:hover,:active,:focus,:focus-visible)::after {
-  content:none!important;
-  display:none!important;
-  background:none!important;
-  box-shadow:none!important;
-}
-#homeView .du-bonus #bonusRecipe {
-  background-color:transparent!important;
-  background-repeat:no-repeat!important;
-  background-size:100% 100%!important;
-  background-position:center!important;
-  border:none!important;
-  border-radius:0!important;
-  box-shadow:none!important;
-  filter:none!important;
-  clip-path:none!important;
-  -webkit-mask-image:none!important;
-  mask-image:none!important;
-  color:transparent!important;
-  text-shadow:none!important;
-  font-size:0!important;
-  opacity:1!important;
-  min-height:0!important;
-  max-width:none!important;
-  overflow:visible!important;
-  transform:translateY(0)!important;
-  transform-origin:center!important;
-  transition:transform .22s ease!important;
-  -webkit-tap-highlight-color:transparent!important;
-}
-#homeView .du-bonus #bonusRecipe span {
-  color:transparent!important;
-  font-size:0!important;
-}
-@media(hover:hover) and (prefers-reduced-motion:no-preference){
-  #homeView .du-bonus #bonusRecipe:hover {
-    transform:translateY(-6px) rotate(-.6deg)!important;
-  }
-}
-#homeView .du-bonus #bonusRecipe:active {
-  transform:translateY(2px)!important;
-}
-#homeView .du-bonus #bonusRecipe:focus-visible {
-  outline:3px solid #fff4e6!important;
-  outline-offset:3px!important;
-}
-@media(max-width:760px){
-  #homeView .du-bonus #bonusRecipe{
-    min-height:44px!important;
-    top:calc(55.8% - 13px)!important;
-    background-size:100% auto!important;
-    background-position:center!important;
-  }
-}
-@media(prefers-reduced-motion:reduce){
-  #homeView .du-bonus #bonusRecipe {
-    transition:none!important;
-  }
-  #homeView .du-bonus #bonusRecipe:is(:hover,:active,:focus-visible){
-    transform:none!important;
-  }
-}
-
-
-/* BONUS_CTA_ONE_PRISTINE_LAYER_RESTORE_20261111
-   Restore the exact approved photographic button, remove all overlays from
-   the failed attempts and disable unverified motion. The native real button
-   remains a transparent click target with its original handler. Never draw
-   an additional paper button over the printed one. */
+/* BONUS_CTA_NATIVE_LINK_SINGLE_LAYER_20261111
+ * No canvas repaint, duplicate button image, backdrop or pseudo-element.
+ * The printed approved artwork stays unmodified. The clickable native anchor
+ * is a direct child of .bonus-inner, outside .bonus-text (pointer-events:none).
+ * It is transparent and aligned to the printed CTA in the approved poster.
+ */
 html body #homeView .du-bonus .bonus-inner {
+  position:relative!important;
+  aspect-ratio:1586 / 546!important;
   background-image:url('/assets/approved-banners/bonus-corrected-20261110.webp')!important;
   background-repeat:no-repeat!important;
-  background-size:100% 100%!important;
   background-position:center!important;
-  aspect-ratio:1586 / 546!important;
+  background-size:100% 100%!important;
 }
 html body #homeView .du-bonus .bonus-inner::before,
 html body #homeView .du-bonus .bonus-inner::after {
   content:none!important;
   display:none!important;
   background:none!important;
-  -webkit-backdrop-filter:none!important;
   backdrop-filter:none!important;
-  filter:none!important;
-  box-shadow:none!important;
+  -webkit-backdrop-filter:none!important;
 }
-html body #homeView .du-bonus #bonusRecipe,
-html body #homeView .du-bonus #bonusRecipe:is(:hover,:focus,:active,:focus-visible) {
-  left:36.38%!important;
-  top:57.1%!important;
-  width:19.05%!important;
-  height:11.4%!important;
+html body #homeView .du-bonus .bonus-inner > a#bonusRecipe {
+  display:block!important;
+  position:absolute!important;
+  left:36.15%!important;
+  top:55.8%!important;
+  width:19.8%!important;
+  height:14.0%!important;
+  min-width:0!important;
   min-height:0!important;
-  padding:0!important;
+  max-width:none!important;
   box-sizing:border-box!important;
-  z-index:3!important;
+  padding:0!important;
+  margin:0!important;
+  z-index:60!important;
   opacity:1!important;
+  visibility:visible!important;
+  pointer-events:auto!important;
+  cursor:pointer!important;
+  overflow:visible!important;
   background:transparent!important;
   background-image:none!important;
   border:0!important;
@@ -8992,35 +8583,41 @@ html body #homeView .du-bonus #bonusRecipe:is(:hover,:focus,:active,:focus-visib
   box-shadow:none!important;
   filter:none!important;
   color:transparent!important;
+  -webkit-text-fill-color:transparent!important;
   font-size:0!important;
+  line-height:0!important;
+  text-decoration:none!important;
   text-shadow:none!important;
   transform:none!important;
   transition:none!important;
   -webkit-tap-highlight-color:transparent!important;
-  cursor:pointer!important;
-  pointer-events:auto!important;
 }
-html body #homeView .du-bonus #bonusRecipe::before,
-html body #homeView .du-bonus #bonusRecipe::after,
-html body #homeView .du-bonus #bonusRecipe:is(:hover,:active,:focus,:focus-visible)::before,
-html body #homeView .du-bonus #bonusRecipe:is(:hover,:active,:focus,:focus-visible)::after {
-  content:none!important;
+html body #homeView .du-bonus .bonus-inner > a#bonusRecipe span {
+  color:transparent!important;
+  -webkit-text-fill-color:transparent!important;
+  font-size:0!important;
+}
+html body #homeView .du-bonus .bonus-inner > a#bonusRecipe::before,
+html body #homeView .du-bonus .bonus-inner > a#bonusRecipe::after,
+html body #homeView .du-bonus .bonus-inner > a#bonusRecipe:is(:hover,:active,:focus,:focus-visible)::before,
+html body #homeView .du-bonus .bonus-inner > a#bonusRecipe:is(:hover,:active,:focus,:focus-visible)::after {
   display:none!important;
+  content:none!important;
   background:none!important;
   box-shadow:none!important;
 }
-html body #homeView .du-bonus #bonusRecipe span {
-  color:transparent!important;
-  font-size:0!important;
+html body #homeView .du-bonus .bonus-inner > a#bonusRecipe:is(:hover,:focus,:active) {
+  background:transparent!important;
+  box-shadow:none!important;
+  transform:none!important;
 }
-html body #homeView .du-bonus #bonusRecipe:focus-visible {
+html body #homeView .du-bonus .bonus-inner > a#bonusRecipe:focus-visible {
   outline:3px solid #fff4e6!important;
   outline-offset:3px!important;
 }
-/* On narrow screens preserve a tappable hotspot without drawing overlays. */
-@media(max-width:760px){
-  html body #homeView .du-bonus #bonusRecipe {
+@media(max-width:760px) {
+  html body #homeView .du-bonus .bonus-inner > a#bonusRecipe {
     min-height:44px!important;
-    top:calc(57.1% - 12px)!important;
+    top:calc(55.8% - 9px)!important;
   }
 }
