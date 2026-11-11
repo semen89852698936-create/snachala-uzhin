@@ -368,3 +368,20 @@ html body.du-airfryer-standalone :is(.du-airfryer-card,.du-airfryer-recipe-card)
     transition:none!important;transform:none!important
   }
 }
+
+/* Standalone 1001 magazine cover and catalogue are one readable narrative
+   only when opening the clean /full-catalog/ URL. Do not alter hash-based
+   views such as #recipe=..., #catalog or #evening. */
+@supports selector(body:has(:target)){
+  html body.du-catalog-standalone:not(:has(:target)) #homeView
+    > :not(.du-hero):not(#catalog){display:none!important}
+  html body.du-catalog-standalone:not(:has(:target)) #homeView>#catalog{
+    display:block!important;visibility:visible!important;
+    content-visibility:visible!important;
+    padding-top:clamp(54px,5vw,85px)!important
+  }
+  html body.du-catalog-standalone:not(:has(:target))
+    #homeView>.du-hero{display:block!important}
+  html body.du-catalog-standalone:not(:has(:target))
+    #catalog .search-panel{scroll-margin-top:120px}
+}
