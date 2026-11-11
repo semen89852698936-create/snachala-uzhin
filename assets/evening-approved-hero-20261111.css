@@ -741,3 +741,59 @@ body .header .main-nav > a[data-nav="airfryer"]:is(:hover,:focus-visible){
   background-color:#39472d!important;
   color:#fff7ee!important;
 }
+
+/* EVENING_PAPER_TONE_AND_ROMANTIC_STRIP_20261111
+   Owner-approved: keep paper texture / torn edges; shift the SAME paper hue
+   approximately three shade steps darker, not to a new brand color.
+   The second evening strip is already 100vw, so its 36ch text area becomes
+   54ch (1.5x), and one approved local romantic photo fills that strip. */
+body .header .main-nav > a[data-nav="evening"],
+body.du-evening-mode .header .main-nav > a[data-nav="evening"],
+body .header .main-nav > a[data-nav="airfryer"]{
+  background-color:#d6bda7!important;
+  background-image:var(--du-paper-fibre-grain)!important;
+  background-blend-mode:soft-light!important;
+  color:#63283a!important;
+}
+body .header .main-nav > a[data-nav="evening"]::before,
+body .header .main-nav > a[data-nav="airfryer"]::before{
+  color:#7d3446!important;
+}
+body .header .main-nav > a[data-nav="evening"]:is(:hover,:focus-visible),
+body.du-evening-mode .header .main-nav > a[data-nav="evening"]:is(:hover,:focus-visible),
+body .header .main-nav > a[data-nav="airfryer"]:is(:hover,:focus-visible){
+  background-color:#cda98f!important;
+  color:#5c2032!important;
+}
+body.du-evening-mode #eveningLanding > .du-evening-strip-two{
+  background-color:#562635!important;
+  background-image:
+    linear-gradient(90deg,rgba(34,14,24,.78) 0%,rgba(46,20,29,.57) 48%,rgba(42,20,27,.62) 100%),
+    url('/assets/our-evening-together-approved.webp')!important;
+  background-size:cover,cover!important;
+  background-position:center,center 48%!important;
+  background-repeat:no-repeat!important;
+  min-height:clamp(280px,26vw,390px)!important;
+}
+body.du-evening-mode #eveningLanding > .du-evening-strip-two .du-evening-strip-number,
+body.du-evening-mode #eveningLanding > .du-evening-strip-two p{
+  position:relative;
+  z-index:2;
+  color:#fff1e5!important;
+  text-shadow:0 2px 12px rgba(17,8,12,.55);
+}
+body.du-evening-mode #eveningLanding > .du-evening-strip-two p{
+  width:min(100%,54ch);
+  max-width:54ch!important;
+  margin-inline:auto!important;
+}
+@media(max-width:760px){
+  body.du-evening-mode #eveningLanding > .du-evening-strip-two{
+    min-height:270px!important;
+    background-position:center,58% 50%!important;
+  }
+  body.du-evening-mode #eveningLanding > .du-evening-strip-two p{
+    width:100%;
+    max-width:100%!important;
+  }
+}
