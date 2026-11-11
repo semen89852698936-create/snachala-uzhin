@@ -353,3 +353,53 @@ html body .du-np-inline button.du-np-start:hover {
   background:#9c394b!important;
   background-image:none!important;
 }
+
+
+/* WIN_GLOBAL_IS_SPECIFICITY_20261112
+ * Legacy editorial button rules use :is(...:not(#id)) and therefore an ID-
+ * level !important specificity. Two explicit real player IDs are required,
+ * or the global transparent-paper state wins despite source ordering. */
+html body #duNewspaperDock #duNpPanel .du-np-transport button.du-np-main-play,
+html body #duNewspaperDock #duNpPanel .du-np-transport button.du-np-main-play:is(:hover,:focus,:active) {
+  background:#682e41!important;
+  background-color:#682e41!important;
+  background-image:none!important;
+  border:2px solid #622d3e!important;
+  border-radius:50%!important;
+  color:#fff8ef!important;
+  box-shadow:none!important;
+}
+html body #duNewspaperDock #duNpPanel .du-np-transport button:not(.du-np-main-play) {
+  background:transparent!important;
+  background-image:none!important;
+  border:0!important;
+  color:#692d42!important;
+}
+html body #duNewspaperDock #duNpPanel .du-np-tabs button {
+  background:rgba(255,248,235,.65)!important;
+  background-image:none!important;
+  color:#653d49!important;
+  border:1px solid #b7a28d!important;
+}
+html body #duNewspaperDock #duNpPanel .du-np-tabs button[aria-pressed="true"] {
+  background:#682e41!important;
+  background-image:none!important;
+  color:#fff8e9!important;
+  border:1px solid #682e41!important;
+}
+html body #duNewspaperDock #duNpLauncher {
+  background:#682d3f!important;
+  background-image:none!important;
+  color:#fff8ec!important;
+}
+html body #homeView #music .du-np-inline button.du-np-start {
+  background:#672d3e!important;
+  background-image:none!important;
+  color:#fff7ee!important;
+  border:1.5px solid #753141!important;
+}
+html body #homeView #music .du-np-inline button.du-np-start:is(:hover,:focus) {
+  background:#9c394b!important;
+  background-image:none!important;
+  color:#fff7ee!important;
+}
