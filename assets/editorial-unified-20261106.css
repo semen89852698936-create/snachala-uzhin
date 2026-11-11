@@ -8616,3 +8616,80 @@ body.du-evening-mode .du-evening-next > span {
   opacity:1!important;
   text-shadow:none!important;
 }
+
+
+/* BONUS_VISIBLE_BUTTON_LIFT_20261111
+   The 2026-11-10 approved banner has a non-moving printed button baked
+   into the photo. Cover only that printed area with wine-colored paper,
+   then draw ONE independently moving approved torn-paper button.
+   Keep every other pixel of the banner and the original click handler. */
+#homeView .du-bonus .bonus-inner {isolation:isolate!important}
+#homeView .du-bonus .bonus-inner::after {
+  content:""!important;
+  display:block!important;
+  position:absolute!important;
+  left:35.9%!important;
+  top:56.5%!important;
+  width:20.1%!important;
+  height:13.1%!important;
+  z-index:1!important;
+  pointer-events:none!important;
+  border:0!important;
+  box-shadow:none!important;
+  background:linear-gradient(108deg,#713a36 0%,#783d39 43%,#80433d 100%)!important;
+}
+#homeView .du-bonus .bonus-text {
+  z-index:2!important;
+}
+#homeView .du-bonus #bonusRecipe {
+  left:36.38%!important;
+  top:57.1%!important;
+  width:19.05%!important;
+  height:11.4%!important;
+  z-index:3!important;
+  overflow:visible!important;
+  transform:none!important;
+  background:transparent!important;
+  box-shadow:none!important;
+  -webkit-tap-highlight-color:transparent!important;
+}
+#homeView .du-bonus #bonusRecipe::before,
+#homeView .du-bonus #bonusRecipe:is(:hover,:active,:focus,:focus-visible)::before {
+  content:""!important;
+  display:block!important;
+  position:absolute!important;
+  inset:-1px!important;
+  width:calc(100% + 2px)!important;
+  height:calc(100% + 2px)!important;
+  aspect-ratio:auto!important;
+  opacity:1!important;
+  background:transparent url('/assets/approved-bonus/bonus-1001-hover-button-20261109.webp') center / 100% 100% no-repeat!important;
+  clip-path:polygon(0% 14%,5% 4%,13% 7%,21% 2%,30% 5%,39% 1%,49% 4%,58% 1%,67% 5%,75% 1%,84% 4%,93% 1%,100% 10%,99% 90%,93% 97%,85% 94%,76% 99%,67% 95%,57% 99%,48% 96%,38% 99%,29% 96%,20% 99%,12% 95%,5% 98%,0% 90%)!important;
+  filter:drop-shadow(0 3px 3px rgba(33,14,18,.18))!important;
+  transform:translateY(0) rotate(0)!important;
+  transform-origin:center center!important;
+  transition:transform .22s ease,filter .22s ease!important;
+  box-shadow:none!important;
+  pointer-events:none!important;
+  z-index:1!important;
+}
+@media (hover:hover) and (prefers-reduced-motion:no-preference) {
+  #homeView .du-bonus #bonusRecipe:hover::before {
+    transform:translateY(-7px) rotate(-1deg) scale(1.035)!important;
+    filter:drop-shadow(0 9px 7px rgba(33,14,18,.30))!important;
+  }
+}
+#homeView .du-bonus #bonusRecipe:active::before {
+  transform:translateY(3px) scale(.975)!important;
+  filter:drop-shadow(0 1px 1px rgba(33,14,18,.18))!important;
+}
+#homeView .du-bonus #bonusRecipe:focus-visible::before {
+  transform:translateY(-5px)!important;
+}
+#homeView .du-bonus #bonusRecipe::after {content:none!important;display:none!important}
+@media(prefers-reduced-motion:reduce){
+  #homeView .du-bonus #bonusRecipe::before {transition:none!important}
+  #homeView .du-bonus #bonusRecipe:is(:hover,:active,:focus-visible)::before {
+    transform:none!important;
+  }
+}
