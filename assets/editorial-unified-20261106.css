@@ -1839,3 +1839,25 @@ body.du-evening-mode #eveningLanding .du-evening-landing-caption {
   line-height:1.3;
   overflow-wrap:anywhere;
 }
+
+
+/* AIRFRYER_HERO_DESCRIPTION_PLUS_30_20261112
+   Exactly 1.3x the short two-line summary under the airfryer recipe heading.
+   This overrides the smaller !important size in editorial-polish when loaded
+   after this stylesheet, without changing any normal recipe summaries. */
+#recipeDetail:has(> .du-airfryer-specs) .recipe-intro-copy > p {
+  font-size:clamp(18.2px,1.391vw,22.1px)!important;
+}
+
+
+/* AIRFRYER_SPEC_CARD_TYPE_PARITY_20261112
+   All three existing specification tiles use the approved Preparation type scale.
+   Typography only; no change to tile content, layout or other recipes. */
+#recipeDetail:has(> .du-airfryer-specs) .du-airfryer-spec-grid .du-airfryer-spec small {
+  font-size:14px;
+}
+#recipeDetail:has(> .du-airfryer-specs) .du-airfryer-spec-grid .du-airfryer-spec strong {
+  font-size:23.8px;
+  line-height:1.3;
+  overflow-wrap:anywhere;
+}
