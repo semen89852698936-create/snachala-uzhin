@@ -1289,3 +1289,22 @@ html body #homeView .du-bonus .bonus-inner > a#bonusRecipe:is(:hover,:focus,:act
   background-size:100% 100%!important;
   background-repeat:no-repeat!important;
 }
+
+
+/* DOUBLE_STEP_BY_STEP_CTA_TEXT_20261112
+ * Real baseline on /, /full-catalog/, /airfryer/: 13px at 320–1536px.
+ * Exactly double the lettering: 26px. Keep the original buttons and clicks.
+ * Allow two lines on narrow screens instead of shrinking or clipping type. */
+html body button#startCookingBottom,
+html body a#startCookingBottom {
+  font-size:26px!important;
+  line-height:1.16!important;
+  font-weight:inherit;
+  white-space:normal!important;
+  text-wrap:balance;
+  height:auto!important;
+  min-height:66px!important;
+  max-width:100%!important;
+  box-sizing:border-box!important;
+  padding:12px 16px!important;
+}
