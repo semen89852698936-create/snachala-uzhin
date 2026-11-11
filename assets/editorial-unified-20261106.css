@@ -8467,3 +8467,55 @@ body.du-evening-mode .du-evening-back:not(.du-catalog-back):hover{
   #airfryer .du-airfryer-filter {transition:none!important}
   #airfryer .du-airfryer-filter:is(:hover,:active){transform:none!important}
 }
+
+
+/* BONUS_CTA_LIVE_PAPER_FEEDBACK_20261111
+   The approved 2026-11-10 banner has the button baked into its photograph.
+   Keep the original photo, avoid a second cutout/ghost and animate only
+   a single clipped highlight on the invisible real click target. */
+#homeView .du-bonus #bonusRecipe {
+  transition:transform .23s ease!important;
+  transform-origin:center center!important;
+  isolation:isolate;
+}
+#homeView .du-bonus #bonusRecipe::before {
+  content:""!important;
+  display:block!important;
+  position:absolute!important;
+  inset:-3px!important;
+  width:auto!important;
+  height:auto!important;
+  aspect-ratio:auto!important;
+  background:rgba(255,249,232,.13)!important;
+  background-image:none!important;
+  clip-path:polygon(0% 11%,8% 3%,17% 8%,28% 1%,39% 7%,52% 0%,66% 8%,78% 2%,90% 7%,100% 0%,98% 91%,89% 97%,76% 92%,63% 100%,49% 94%,35% 99%,23% 93%,10% 98%,1% 91%)!important;
+  opacity:0!important;
+  pointer-events:none!important;
+  box-shadow:none!important;
+  filter:none!important;
+  transform:translateY(3px) scale(.98)!important;
+  transition:opacity .23s ease,transform .23s ease!important;
+}
+#homeView .du-bonus #bonusRecipe::after {
+  content:none!important;
+  display:none!important;
+}
+@media(hover:hover) and (prefers-reduced-motion:no-preference) {
+  #homeView .du-bonus #bonusRecipe:hover::before {
+    opacity:1!important;
+    transform:translateY(-4px) scale(1.025)!important;
+  }
+}
+#homeView .du-bonus #bonusRecipe:active::before {
+  opacity:1!important;
+  transform:translateY(2px) scale(.965)!important;
+  background:rgba(80,36,44,.14)!important;
+}
+#homeView .du-bonus #bonusRecipe:focus-visible::before {
+  opacity:1!important;
+  transform:none!important;
+}
+@media(prefers-reduced-motion:reduce) {
+  #homeView .du-bonus #bonusRecipe,
+  #homeView .du-bonus #bonusRecipe::before {transition:none!important}
+}
