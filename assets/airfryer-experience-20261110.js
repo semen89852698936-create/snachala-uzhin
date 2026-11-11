@@ -288,3 +288,16 @@
     install();
   }
 })();
+
+
+/* NATIVE_NEWSPAPER_MUSIC_PLAYER_PREVIEW_20261112
+   A single shared prototype player is mounted on all three site routes.
+   Only the explicit prototype branch contains this loader. */
+(() => {
+  if(document.getElementById('duNativePlayerLoader')) return;
+  const script=document.createElement('script');
+  script.id='duNativePlayerLoader';
+  script.src='/assets/native-music-player-20261112.js';
+  script.defer=true;
+  document.head.appendChild(script);
+})();
