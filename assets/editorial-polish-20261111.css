@@ -1045,3 +1045,52 @@ html body #homeView .du-cover-chapters.du-approved-image-cards > a.du-approved-c
 html body #homeView .du-cover-chapters.du-approved-image-cards > a.du-approved-card:focus-visible > img {
   filter:drop-shadow(0 0 6px rgba(120,35,59,.55))!important;
 }
+
+
+/* HOME_THREE_CHAPTERS_NO_RECTANGLE_ON_CLICK_20261111
+   The previous lift/scale/drop-shadow repaints the opaque PNG canvas as a
+   white rectangular sheet on hover and click. Do not move or paint that
+   canvas while pressed. Keep exact three approved images and their routes.
+   Keyboard focus still has a visible wine-coloured dotted indicator. */
+html body #homeView .du-cover-chapters.du-approved-image-cards,
+html body #homeView .du-cover-chapters.du-approved-image-cards:is(:hover,:active,:focus-within) {
+  background:transparent!important;
+  background-image:none!important;
+  box-shadow:none!important;
+  filter:none!important;
+}
+html body #homeView .du-cover-chapters.du-approved-image-cards > a.du-approved-card,
+html body #homeView .du-cover-chapters.du-approved-image-cards > a.du-approved-card:is(:hover,:active,:focus,:focus-visible) {
+  transform:none!important;
+  transition:none!important;
+  filter:none!important;
+  background:transparent!important;
+  background-image:none!important;
+  border:0!important;
+  outline:0!important;
+  box-shadow:none!important;
+  opacity:1!important;
+  -webkit-tap-highlight-color:transparent!important;
+}
+html body #homeView .du-cover-chapters.du-approved-image-cards > a.du-approved-card > img,
+html body #homeView .du-cover-chapters.du-approved-image-cards > a.du-approved-card:is(:hover,:active,:focus,:focus-visible) > img {
+  display:block!important;
+  transform:none!important;
+  transition:none!important;
+  filter:none!important;
+  background:transparent!important;
+  box-shadow:none!important;
+  border:0!important;
+  opacity:1!important;
+  pointer-events:none!important;
+  -webkit-user-drag:none!important;
+}
+html body #homeView .du-cover-chapters.du-approved-image-cards > a.du-approved-card::before,
+html body #homeView .du-cover-chapters.du-approved-image-cards > a.du-approved-card::after {
+  content:none!important;
+  display:none!important;
+}
+html body #homeView .du-cover-chapters.du-approved-image-cards > a.du-approved-card:focus-visible {
+  outline:2px dotted #7f2443!important;
+  outline-offset:2px!important;
+}
