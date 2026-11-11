@@ -322,3 +322,12 @@ body.du-evening-mode #eveningLanding .du-match11-recipe-grid a small {display:bl
   body.du-evening-mode #eveningLanding .du-match11-recipes-head {flex-direction:column !important;}
   body.du-evening-mode #eveningLanding .du-match11-recipe-grid {grid-template-columns:1fr !important;}
 }
+/* On narrow screens the cropped desktop lower seam must not expose a thin photo strip. */
+@media(max-width:760px) {
+  body.du-evening-mode #eveningLanding .du-match11-hero::after {
+    bottom: -1px !important;
+    height: 18px !important;
+    background: #f9f0e6 !important;
+    clip-path: polygon(0 90%,5% 51%,10% 76%,17% 34%,24% 64%,31% 38%,40% 78%,48% 26%,56% 71%,64% 35%,72% 74%,81% 33%,91% 78%,97% 39%,100% 62%,100% 100%,0 100%) !important;
+  }
+}
