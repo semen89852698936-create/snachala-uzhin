@@ -147,7 +147,7 @@ body.du-evening-mode #eveningLanding .du-match11-title {
   width: 33.4% !important;
   max-width: none !important;
   overflow: visible !important;
-  font: italic 400 clamp(95px,12.25vw,205px)/.67 'Cormorant Garamond','Times New Roman',Georgia,serif !important;
+  font: italic 400 clamp(103px,13.2vw,222px)/.67 'Cormorant Garamond','Times New Roman',Georgia,serif !important;
   letter-spacing: -.07em !important;
   color: #fff8ed !important;
   white-space: nowrap !important;
@@ -162,6 +162,14 @@ body.du-evening-mode #eveningLanding .du-match11-title span {
   margin: 0 !important;
   line-height: inherit !important;
   white-space: nowrap !important;
+}
+/* Approved title-only adjustment: two colors, second word one glyph farther right. */
+body.du-evening-mode #eveningLanding .du-match11-title span:first-child {
+  color: #f3e8d8 !important;
+}
+body.du-evening-mode #eveningLanding .du-match11-title span:last-child {
+  color: #a71d32 !important;
+  margin-left: .25em !important;
 }
 body.du-evening-mode #eveningLanding .du-match11-slogan {
   position: absolute !important;
@@ -303,7 +311,7 @@ body.du-evening-mode #eveningLanding .du-match11-recipe-grid img {display:block 
 body.du-evening-mode #eveningLanding .du-match11-recipe-grid a span {display:block !important;padding:12px !important;font:750 14px Manrope,Arial,sans-serif !important;}
 body.du-evening-mode #eveningLanding .du-match11-recipe-grid a small {display:block !important;font:400 12px Manrope,Arial,sans-serif !important;color:#756665 !important;margin-top:4px !important;}
 @media(max-width:1100px) {
-  body.du-evening-mode #eveningLanding .du-match11-title {font-size:clamp(80px,10.5vw,125px) !important;}
+  body.du-evening-mode #eveningLanding .du-match11-title {font-size:clamp(87px,11.34vw,135px) !important;}
   body.du-evening-mode #eveningLanding .du-match11-button {font-size:13px !important;}
 }
 @media(max-width:760px) {
@@ -313,7 +321,7 @@ body.du-evening-mode #eveningLanding .du-match11-recipe-grid a small {display:bl
   body.du-evening-mode #eveningLanding .du-match11-photo img {object-fit:cover !important;object-position:28% 50% !important;}
   body.du-evening-mode #eveningLanding .du-match11-photo::before {inset:0 !important;width:100% !important;background:linear-gradient(0deg,#21120f 1%,rgba(33,18,15,.55) 32%,rgba(33,18,15,.3) 100%) !important;}
   body.du-evening-mode #eveningLanding .du-match11-kicker {left:5% !important;top:7% !important;}
-  body.du-evening-mode #eveningLanding .du-match11-title {left:5% !important;top:13% !important;width:90% !important;font-size:clamp(84px,17vw,130px) !important;}
+  body.du-evening-mode #eveningLanding .du-match11-title {left:5% !important;top:13% !important;width:90% !important;font-size:clamp(91px,18.35vw,140px) !important;}
   body.du-evening-mode #eveningLanding .du-match11-slogan {left:5.5% !important;top:53% !important;font-size:clamp(20px,4.2vw,28px) !important;white-space:normal !important;max-width:80% !important;}
   body.du-evening-mode #eveningLanding .du-match11-red-line {left:7% !important;top:62% !important;width:57% !important;}
   body.du-evening-mode #eveningLanding .du-match11-subtitle {left:5% !important;top:67% !important;font-size:clamp(26px,5.2vw,36px) !important;white-space:normal !important;width:90% !important;}
