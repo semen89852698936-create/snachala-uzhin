@@ -1768,3 +1768,50 @@ body.du-evening-mode #eveningLanding .du-evening-landing-caption {
   text-shadow:0 1px 2px rgba(255,248,234,.95),0 0 13px rgba(255,248,234,.9);
 }
 
+
+
+/* AIRFRYER_RECIPE_READABILITY_DOUBLE_20261112
+   Exactly 2x original 13/12/11px type for airfryer cooking instructions,
+   ingredient names/quantities and the ingredient safety warning only.
+   Ordinary recipe cards and the approved visual composition stay untouched.
+   :has() is already used in this design system. */
+#recipeDetail:has(> .du-airfryer-specs) .du-airfryer-specs p {
+  font-size:26px;
+  line-height:1.6;
+  overflow-wrap:anywhere;
+}
+#recipeDetail:has(> .du-airfryer-specs) .ingredient-check {
+  display:grid;
+  grid-template-columns:24px minmax(0,1fr) minmax(0,42%);
+  column-gap:12px;
+  align-items:start;
+  font-size:26px;
+  line-height:1.45;
+}
+#recipeDetail:has(> .du-airfryer-specs) .ingredient-check input {
+  width:20px;
+  height:20px;
+  margin-top:8px;
+}
+#recipeDetail:has(> .du-airfryer-specs) .ingredient-check span {
+  min-width:0;
+  overflow-wrap:anywhere;
+}
+#recipeDetail:has(> .du-airfryer-specs) .ingredient-check strong {
+  min-width:0;
+  font-size:24px;
+  line-height:1.45;
+  white-space:normal;
+  overflow-wrap:anywhere;
+}
+#recipeDetail:has(> .du-airfryer-specs) .allergen-text {
+  font-size:22px;
+  line-height:1.55;
+  overflow-wrap:anywhere;
+}
+@media(max-width:390px) {
+  #recipeDetail:has(> .du-airfryer-specs) .ingredient-check {
+    column-gap:8px;
+    grid-template-columns:20px minmax(0,1fr) minmax(0,44%);
+  }
+}
