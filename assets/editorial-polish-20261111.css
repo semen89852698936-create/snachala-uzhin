@@ -916,3 +916,30 @@ html body #homeView .du-cover-chapters.du-approved-image-cards > a.du-approved-c
 html body #homeView .du-cover-chapters.du-approved-image-cards > a.du-approved-card:focus-visible > img{
   filter:drop-shadow(0 0 5px rgba(114,34,59,.65))!important;
 }
+
+
+/* EVENING_PLAN_WINE_PANEL_TEXT_CONTRAST_FIX_20261111
+   The wine-colored #evening panel is deliberately preserved.
+   Earlier light-paper text declarations made dish names nearly invisible.
+   Explicit high-contrast ink for all dynamically populated menu rows. */
+html body #evening .du-builder-right .du-menu-preview .du-menu-dish strong {
+  color:#fff8ec!important;
+  opacity:1!important;
+  text-shadow:none!important;
+}
+html body #evening .du-builder-right .du-menu-preview .du-menu-dish > div > span {
+  color:#ffe0cb!important;
+  opacity:1!important;
+}
+html body #evening .du-builder-right .du-menu-preview .du-menu-dish small,
+html body #evening .du-builder-right .du-menu-meta {
+  color:#f8e6df!important;
+  opacity:1!important;
+}
+html body #evening .du-builder-right .du-menu-preview .du-menu-dish {
+  border-bottom-color:rgba(255,238,223,.36)!important;
+}
+html body #evening .du-builder-right .du-menu-preview .du-menu-dish > button {
+  color:#fff7ee!important;
+  border-color:rgba(255,240,224,.72)!important;
+}
