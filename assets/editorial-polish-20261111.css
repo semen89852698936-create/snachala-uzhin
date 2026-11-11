@@ -882,3 +882,37 @@ html body.du-evening-mode #evening .du-evening-together-content > .du-mini-eyebr
 @media(max-width:760px){
   html body.du-evening-mode #eveningLanding > .du-evening-strip-two{min-height:360px!important;}
 }
+
+
+/* Approved 3 photographic chapter buttons (1001, Air Fryer, Our Evening):
+   remove rectangular interaction paint; preserve the approved image,
+   lift animation, accessibility and navigation. */
+html body #homeView .du-cover-chapters.du-approved-image-cards > a.du-approved-card,
+html body #homeView .du-cover-chapters.du-approved-image-cards > a.du-approved-card:is(:hover,:active,:focus,:focus-visible){
+  background:transparent!important;
+  background-color:transparent!important;
+  background-image:none!important;
+  box-shadow:none!important;
+  border:0!important;
+  outline:0!important;
+  -webkit-tap-highlight-color:transparent!important;
+}
+html body #homeView .du-cover-chapters.du-approved-image-cards > a.du-approved-card::before,
+html body #homeView .du-cover-chapters.du-approved-image-cards > a.du-approved-card::after,
+html body #homeView .du-cover-chapters.du-approved-image-cards > a.du-approved-card:is(:hover,:active,:focus,:focus-visible)::before,
+html body #homeView .du-cover-chapters.du-approved-image-cards > a.du-approved-card:is(:hover,:active,:focus,:focus-visible)::after{
+  content:none!important;
+  display:none!important;
+  background:transparent!important;
+  box-shadow:none!important;
+}
+html body #homeView .du-cover-chapters.du-approved-image-cards > a.du-approved-card > img{
+  background:transparent!important;
+  box-shadow:none!important;
+  border:0!important;
+}
+/* Keyboard focus remains visible as an inset accent on the image, not
+   a rectangular surface behind the photograph. */
+html body #homeView .du-cover-chapters.du-approved-image-cards > a.du-approved-card:focus-visible > img{
+  filter:drop-shadow(0 0 5px rgba(114,34,59,.65))!important;
+}
