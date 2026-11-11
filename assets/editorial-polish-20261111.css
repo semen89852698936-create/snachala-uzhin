@@ -84,8 +84,8 @@ html body.du-evening-mode #eveningLanding>.du-evening-strip-two{
   isolation:isolate;
   background:#e7d4bf!important;
   background-image:
-    linear-gradient(90deg,rgba(53,21,29,.77) 0%,rgba(63,28,36,.50) 43%,rgba(61,25,34,.24) 100%),
-    url('/assets/after-dinner-glasses-20261111.webp')!important;
+    linear-gradient(90deg,rgba(53,21,29,.63) 0%,rgba(63,28,36,.40) 43%,rgba(61,25,34,.16) 100%),
+    url('/assets/after-dinner-glasses-sharp-20261111.webp')!important;
   background-size:cover,cover!important;
   background-position:center,center!important;
   background-repeat:no-repeat!important;
@@ -494,4 +494,20 @@ html body #evening .du-moods > button.du-mood[data-mood="tender"]::before{
 }
 html body #evening .du-moods > button.du-mood[data-mood="spark"]::before{
   background-image:url('/assets/evening-approved-photo-20261111.webp')!important;
+}
+
+/* Make the exact "two people, one team" caption legible over the
+   preserved approved couple photograph. No other text or layout changes. */
+html body.du-evening-mode #evening .du-evening-together-content > .du-mini-eyebrow{
+  display:inline-block!important;
+  width:fit-content!important;
+  max-width:100%!important;
+  color:#fff8ef!important;
+  background:rgba(48,22,34,.82)!important;
+  font-size:clamp(14px,1.14vw,17px)!important;
+  font-weight:800!important;
+  line-height:1.45!important;
+  letter-spacing:.065em!important;
+  text-shadow:0 1px 4px rgba(22,8,13,.65)!important;
+  padding:8px 12px!important;
 }
