@@ -744,26 +744,26 @@ body .header .main-nav > a[data-nav="airfryer"]:is(:hover,:focus-visible){
 
 /* EVENING_PAPER_TONE_AND_ROMANTIC_STRIP_20261111
    Owner-approved: keep paper texture / torn edges; shift the SAME paper hue
-   approximately three shade steps darker, not to a new brand color.
+   six shade steps darker than other menu paper, not to a new brand color.
    The second evening strip is already 100vw, so its 36ch text area becomes
    54ch (1.5x), and one approved local romantic photo fills that strip. */
 body .header .main-nav > a[data-nav="evening"],
 body.du-evening-mode .header .main-nav > a[data-nav="evening"],
 body .header .main-nav > a[data-nav="airfryer"]{
-  background-color:#d6bda7!important;
+  background-color:#b48d74!important;
   background-image:var(--du-paper-fibre-grain)!important;
   background-blend-mode:soft-light!important;
-  color:#63283a!important;
+  color:#3c1622!important;
 }
 body .header .main-nav > a[data-nav="evening"]::before,
 body .header .main-nav > a[data-nav="airfryer"]::before{
-  color:#7d3446!important;
+  color:#3c1622!important;
 }
 body .header .main-nav > a[data-nav="evening"]:is(:hover,:focus-visible),
 body.du-evening-mode .header .main-nav > a[data-nav="evening"]:is(:hover,:focus-visible),
 body .header .main-nav > a[data-nav="airfryer"]:is(:hover,:focus-visible){
-  background-color:#cda98f!important;
-  color:#5c2032!important;
+  background-color:#a9826c!important;
+  color:#3c1622!important;
 }
 body.du-evening-mode #eveningLanding > .du-evening-strip-two{
   background-color:#562635!important;
