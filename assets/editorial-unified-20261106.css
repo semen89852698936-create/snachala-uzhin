@@ -8693,3 +8693,94 @@ body.du-evening-mode .du-evening-next > span {
     transform:none!important;
   }
 }
+
+
+/* BONUS_CTA_SAME_ARTWORK_NO_PATCH_20261111
+   Repair the previous faulty moving overlay. The text/font must come
+   from the SAME approved 2026-11-10 banner image, never an older sticker.
+   Feather the printed button underneath instead of painting a brown patch.
+   Button position and action remain unchanged. */
+#homeView .du-bonus .bonus-inner{
+  isolation:isolate!important;
+}
+#homeView .du-bonus .bonus-inner::after{
+  content:""!important;
+  display:block!important;
+  position:absolute!important;
+  left:35.65%!important;
+  top:55.45%!important;
+  width:20.45%!important;
+  height:14.8%!important;
+  z-index:1!important;
+  pointer-events:none!important;
+  background:transparent!important;
+  background-image:none!important;
+  border:0!important;
+  box-shadow:none!important;
+  -webkit-backdrop-filter:blur(32px)!important;
+  backdrop-filter:blur(32px)!important;
+  -webkit-mask-image:radial-gradient(ellipse 70% 69% at center,black 62%,transparent 100%)!important;
+  mask-image:radial-gradient(ellipse 70% 69% at center,black 62%,transparent 100%)!important;
+}
+#homeView .du-bonus .bonus-text {z-index:2!important}
+#homeView .du-bonus #bonusRecipe{
+  left:36.38%!important;
+  top:57.1%!important;
+  width:19.05%!important;
+  height:11.4%!important;
+  z-index:3!important;
+  overflow:visible!important;
+  background:transparent!important;
+  background-image:none!important;
+  box-shadow:none!important;
+  filter:none!important;
+  transform:none!important;
+}
+#homeView .du-bonus #bonusRecipe::before,
+#homeView .du-bonus #bonusRecipe:is(:hover,:active,:focus,:focus-visible)::before{
+  content:""!important;
+  display:block!important;
+  position:absolute!important;
+  inset:0!important;
+  width:100%!important;
+  height:100%!important;
+  opacity:1!important;
+  background-color:transparent!important;
+  background-image:url('/assets/approved-banners/bonus-corrected-20261110.webp')!important;
+  background-size:524.9344% 877.1930%!important;
+  background-position:44.9413% 64.4470%!important;
+  background-repeat:no-repeat!important;
+  clip-path:none!important;
+  -webkit-mask-image:none!important;
+  mask-image:none!important;
+  border:0!important;
+  box-shadow:none!important;
+  filter:drop-shadow(0 3px 3px rgba(33,14,18,.18))!important;
+  transform:translateY(0) rotate(0)!important;
+  transform-origin:center center!important;
+  transition:transform .22s ease,filter .22s ease!important;
+  pointer-events:none!important;
+  z-index:1!important;
+}
+@media(hover:hover) and (prefers-reduced-motion:no-preference){
+  #homeView .du-bonus #bonusRecipe:hover::before{
+    transform:translateY(-6px) rotate(-.7deg) scale(1.02)!important;
+    filter:drop-shadow(0 8px 6px rgba(33,14,18,.26))!important;
+  }
+}
+#homeView .du-bonus #bonusRecipe:active::before{
+  transform:translateY(2px) scale(.985)!important;
+  filter:drop-shadow(0 1px 1px rgba(33,14,18,.16))!important;
+}
+#homeView .du-bonus #bonusRecipe:focus-visible::before{
+  transform:translateY(-3px)!important;
+}
+#homeView .du-bonus #bonusRecipe::after{content:none!important;display:none!important}
+@media(prefers-reduced-motion:reduce){
+  #homeView .du-bonus #bonusRecipe::before{
+    transition:none!important;
+  }
+  #homeView .du-bonus #bonusRecipe:is(:hover,:active,:focus-visible)::before{
+    transform:none!important;
+  }
+}
