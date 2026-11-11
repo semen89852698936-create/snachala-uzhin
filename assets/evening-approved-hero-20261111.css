@@ -797,3 +797,63 @@ body.du-evening-mode #eveningLanding > .du-evening-strip-two p{
     max-width:100%!important;
   }
 }
+
+/* TOP_NAV_PAPER_DARKEN_AND_SELECTED_CHAPTER_20261111
+   Shared header on all pages. Darken the actual opaque paper-texture layer,
+   not just its background-color. Preserve torn masks, shape and positions.
+   Selected navigation stays burgundy until another chapter is opened. */
+body .header .main-nav > a[data-nav="evening"],
+body.du-evening-mode .header .main-nav > a[data-nav="evening"],
+body .header .main-nav > a[data-nav="airfryer"]{
+  background-color:#a57e6b!important;
+  background-image:
+    linear-gradient(145deg,rgba(92,42,49,.64),rgba(104,43,58,.64)),
+    var(--du-paper-fibre-grain)!important;
+  background-blend-mode:normal!important;
+  background-size:100% 100%,192px 192px!important;
+  background-repeat:no-repeat,repeat!important;
+  color:#fff7ee!important;
+}
+body .header .main-nav > a[data-nav="evening"]::before,
+body .header .main-nav > a[data-nav="airfryer"]::before{
+  color:#fff7ee!important;
+}
+body .header .main-nav > a[data-nav="evening"]:is(:hover,:focus-visible),
+body.du-evening-mode .header .main-nav > a[data-nav="evening"],
+body .header .main-nav > a[data-nav="airfryer"]:is(:hover,:focus-visible),
+body .header .main-nav > a[data-nav="airfryer"][aria-current="page"]{
+  background-image:
+    linear-gradient(145deg,rgba(82,26,44,.78),rgba(96,30,48,.78)),
+    var(--du-paper-fibre-grain)!important;
+  color:#fffaf2!important;
+}
+body:has(#music:target) .header .main-nav > a[data-nav="music"],
+body:has(#catalog:target) .header .main-nav > a[data-nav="catalog"],
+body:has(#my-recipes:target) .header .main-nav > a[data-nav="my-recipes"],
+body:has(#categories:target) .header .main-nav > a[data-nav="categories"],
+body:has(#about:target) .header .main-nav > a[data-nav="about"]{
+  background:transparent!important;
+  color:#fff8ed!important;
+}
+body:has(#music:target) .header .main-nav > a[data-nav="music"]::before,
+body:has(#catalog:target) .header .main-nav > a[data-nav="catalog"]::before,
+body:has(#my-recipes:target) .header .main-nav > a[data-nav="my-recipes"]::before,
+body:has(#categories:target) .header .main-nav > a[data-nav="categories"]::before,
+body:has(#about:target) .header .main-nav > a[data-nav="about"]::before{
+  background-color:#77172b!important;
+  background-image:
+    linear-gradient(145deg,rgba(119,23,43,.94),rgba(108,19,39,.94)),
+    var(--du-paper-fibre-grain)!important;
+  background-blend-mode:normal!important;
+  color:#fff8ed!important;
+}
+body .du-quick-nav-mobile > a[aria-current="page"]{
+  color:#fff8ed!important;
+}
+body .du-quick-nav-mobile > a[aria-current="page"]::before{
+  background-color:#77172b!important;
+  background-image:
+    linear-gradient(145deg,rgba(119,23,43,.94),rgba(108,19,39,.94)),
+    var(--du-paper-fibre-grain)!important;
+  background-blend-mode:normal!important;
+}
