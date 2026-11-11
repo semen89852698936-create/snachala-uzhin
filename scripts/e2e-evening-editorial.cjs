@@ -43,48 +43,41 @@ const {chromium}=require('playwright');
    assert(story.after.includes('our-evening-after-hq.avif'),'approved after-dinner photo changed');
    assert(story.together.includes('our-evening-together-approved.webp'),'approved together photo changed');
    assert(story.invitation.includes('our-evening-invitation-approved-20261102.webp'),'approved invitation changed');
-   assert(story.titleSize>(scenario.viewport.width>820?60:65),'magazine headline too small');
-   assert.equal(story.dinnerColumns,scenario.viewport.width>820?2:1,'dinner spread layout');
-   assert.equal(story.afterColumns,scenario.viewport.width>820?2:1,'after-dinner layout');
-
-   // The approved magazine layout puts the text to the LEFT of the hero photo.
-   // On mobile it becomes text FIRST and photo SECOND. Verify real geometry.
-   const geometry=await page.evaluate(()=>{
-     const bounds=sel=>{
-       const el=document.querySelector(sel),r=el.getBoundingClientRect();
-       return {left:r.left,right:r.right,top:r.top,bottom:r.bottom,width:r.width,height:r.height};
+   // Approved magazine is a new real DOM spread, not the previous two-column mock.
+   const editorial=await page.evaluate(()=>{
+     const root=document.querySelector('#duApprovedEvening');
+     const rect=selector=>{
+       const el=document.querySelector(selector);const r=el.getBoundingClientRect();
+       return {w:r.width,h:r.height,top:r.top,left:r.left,right:r.right,bottom:r.bottom};
      };
+     const imgs=[...root.querySelectorAll('img')];
      return {
-       photo:bounds('#eveningLanding > .du-evening-landing-photo'),
-       image:bounds('#eveningLanding > .du-evening-landing-photo > img'),
-       copy:bounds('#eveningLanding > .du-evening-landing-content'),
-       heading:bounds('#eveningLandingTitle'),
-       italicWord:bounds('#eveningLandingTitle em'),
-       lead:bounds('#eveningLanding .du-evening-landing-lead'),
-       text:bounds('#eveningLanding .du-evening-landing-text'),
-       cta:bounds('#eveningLanding .du-evening-landing-cta'),
-       inspiration:bounds('#eveningLanding .du-evening-inspiration'),
-       viewportWidth:innerWidth
+       visible:getComputedStyle(root).display!=='none',
+       copy:root.innerText,
+       firstDisplay:getComputedStyle(root.querySelector('.du-approved-scene-one')).display,
+       firstLayout:getComputedStyle(root.querySelector('.du-approved-scene-one')).gridTemplateColumns.split(' ').length,
+       scene1:rect('.du-approved-scene-one'),
+       scene2:rect('.du-approved-scene-two'),
+       scene3:rect('.du-approved-scene-three'),
+       caption:rect('.du-approved-scene-one-caption'),
+       images:imgs.map(im=>({src:im.getAttribute('src'),ok:im.complete&&im.naturalWidth>0})),
+       musicLinks:[...root.querySelectorAll('.du-approved-music-item')].map(a=>a.href)
      };
    });
-   assert(geometry.image.right<=geometry.photo.right+2,
-     scenario.name+': photo exceeds its column: '+JSON.stringify(geometry));
-   if(scenario.viewport.width>820){
-     for(const name of ['copy','heading','italicWord','lead','text','cta','inspiration']){
-       assert(geometry[name].right<=geometry.photo.left+2,
-         scenario.name+': left-paper text overlaps the photo: '+name+': '+JSON.stringify(geometry));
-     }
-   }else{
-     assert(geometry.copy.bottom<=geometry.photo.top+2,
-       scenario.name+': approved mobile reading order must be copy before photo: '+JSON.stringify(geometry));
-   }
-   for(const name of ['heading','italicWord','lead','text','cta','inspiration']){
-     assert(geometry[name].right<=geometry.viewportWidth+2,
-       scenario.name+': '+name+' spills out of viewport: '+JSON.stringify(geometry));
-   }
+   assert(editorial.visible,scenario.name+': new approved spread not visible');
+   assert(editorial.copy.includes('Готовим вместе')&&editorial.copy.includes('Ужинаем вдвоём')&&editorial.copy.includes('Продолжаем'),'three editorial acts missing');
+   assert(editorial.scene1.h>300&&editorial.scene2.h>250&&editorial.scene3.h>250,'editorial scenes too small');
+   assert(editorial.scene2.top>=editorial.scene1.top,'editorial stage order broken');
+   assert(editorial.scene3.top>editorial.scene2.top,'editorial third stage order broken');
+   assert(editorial.firstDisplay===(scenario.viewport.width>760?'grid':'flex'),'responsive stage one layout');
+   assert.equal(editorial.images.length,4,'four photographic scenes must be present');
+   assert(editorial.images.every(img=>img.ok),scenario.name+': editorial image failed to load '+JSON.stringify(editorial.images));
+   assert.equal(editorial.musicLinks.length,3,'all three playlist links must be interactive');
+   assert(editorial.musicLinks.every(link=>link.startsWith('https://open.spotify.com/playlist/')),'playlist destinations missing');
    assert.equal(story.musicCards,3,'three music chapters required');
    assert.equal(story.musicTracks,60,'20+20+20 curated tracks required');
    assert.equal(await page.locator('#eveningLanding .du-evening-inspiration-card').count(),3,'real-recipe suggestions missing');
+   await page.screenshot({path:'/tmp/editorial-approved-spread-'+scenario.name+'.png',fullPage:true});
    await page.screenshot({path:'/tmp/editorial-evening-story-'+scenario.name+'.png'});
    await page.locator('#evening [data-mood="spark"]').click();
    assert.equal(await page.locator('#evening [data-mood="spark"]').getAttribute('aria-pressed'),'true','mood selector broke');
