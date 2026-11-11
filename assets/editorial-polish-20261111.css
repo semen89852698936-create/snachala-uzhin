@@ -463,3 +463,146 @@ html body.du-airfryer-standalone :is(.du-airfryer-card,.du-airfryer-recipe-card)
   html body.du-catalog-standalone.du-catalog-teaser-relocated #homeView #catalog .du-more-wrap{grid-row:9!important}
   html body.du-catalog-standalone.du-catalog-teaser-relocated #homeView #catalog .empty-state{grid-row:10!important}
 }
+
+
+/* 11 Nov 2026 | FOUR EVENING MOODS: magazine collage.
+   Visual-only: existing four buttons, data-mood attributes, aria-pressed,
+   image assets and menu-builder handlers remain unchanged. */
+html body #evening .du-moods{
+  align-items:center!important;
+  gap:clamp(13px,1.9vw,28px)!important;
+  padding:14px 4px 21px!important;
+}
+html body #evening .du-moods>button.du-mood{
+  --mood-ink:#61283f;
+  min-height:clamp(285px,26vw,365px)!important;
+  padding:clamp(18px,1.8vw,27px)!important;
+  overflow:hidden!important;
+  justify-content:flex-end!important;
+  background-color:#f6e9d9!important;
+  background-image:repeating-linear-gradient(118deg,rgba(94,54,51,.025) 0 1px,transparent 1px 6px)!important;
+  box-shadow:0 11px 21px rgba(63,33,29,.12)!important;
+  transform:translateY(3px) rotate(-.75deg)!important;
+  transition:transform .28s cubic-bezier(.2,.7,.2,1),filter .28s ease,box-shadow .28s ease!important;
+}
+html body #evening .du-moods>button.du-mood[data-mood="spark"]{
+  --mood-ink:#6c213d;
+  background-color:#f2dfd6!important;
+  transform:translateY(-6px) rotate(.7deg)!important;
+  clip-path:polygon(0 1%,13% 3%,28% 0,41% 2%,55% 1%,71% 3%,85% 0,100% 2%,99% 97%,82% 100%,65% 98%,48% 100%,31% 97%,13% 100%,0 98%)!important;
+}
+html body #evening .du-moods>button.du-mood[data-mood="play"]{
+  --mood-ink:#9a344d;
+  background-color:#fff0e4!important;
+  transform:translateY(9px) rotate(-.45deg)!important;
+  clip-path:polygon(0 2%,16% 0,29% 2%,44% 1%,59% 3%,76% 0,91% 2%,100% 1%,99% 99%,84% 97%,69% 100%,50% 98%,33% 100%,18% 98%,0 100%)!important;
+}
+html body #evening .du-moods>button.du-mood[data-mood="cozy"]{
+  --mood-ink:#76513a;
+  background-color:#f4e6d0!important;
+  transform:translateY(-2px) rotate(.8deg)!important;
+  clip-path:polygon(0 1%,12% 3%,26% 1%,39% 0,56% 2%,70% 0,85% 3%,100% 1%,99% 99%,83% 97%,68% 100%,51% 98%,34% 100%,16% 97%,0 99%)!important;
+}
+html body #evening .du-moods>button.du-mood::before{
+  inset:0 0 35%!important;
+  background-position:center 43%!important;
+  transition:filter .28s ease,scale .38s ease!important;
+}
+html body #evening .du-moods>button.du-mood[data-mood="spark"]::before{background-position:52% 42%!important}
+html body #evening .du-moods>button.du-mood[data-mood="play"]::before{background-position:45% 36%!important}
+html body #evening .du-moods>button.du-mood[data-mood="cozy"]::before{background-position:60% 44%!important}
+html body #evening .du-moods>button.du-mood::after{
+  inset:49% 0 0!important;
+  background:linear-gradient(180deg,rgba(250,240,226,.93) 0,#f8ead9 28%,#f4e2d0 100%)!important;
+  clip-path:polygon(0 7%,14% 2%,29% 6%,43% 1%,56% 5%,70% 0,85% 5%,100% 1%,100% 100%,0 100%)!important;
+}
+html body #evening .du-moods>button.du-mood[data-mood="spark"]::after{
+  background:linear-gradient(180deg,rgba(250,228,219,.96),#f3ddd2 27%,#eed5cb 100%)!important;
+}
+html body #evening .du-moods>button.du-mood[data-mood="play"]::after{
+  background:linear-gradient(180deg,rgba(255,241,225,.96),#fbebdd 32%,#f8e0ce 100%)!important;
+}
+html body #evening .du-moods>button.du-mood[data-mood="cozy"]::after{
+  background:linear-gradient(180deg,rgba(251,238,213,.96),#f3e5cf 27%,#ead5bc 100%)!important;
+}
+html body #evening .du-mood .du-mood-num{top:16px!important;left:20px!important;font-size:12px!important}
+html body #evening .du-mood .du-mood-icon{top:14px!important;right:17px!important;font-size:25px!important}
+html body #evening .du-mood strong{
+  position:relative!important;
+  z-index:1!important;
+  display:table!important;
+  width:max-content!important;
+  max-width:calc(100% - 10px)!important;
+  margin:0 0 13px!important;
+  color:var(--mood-ink)!important;
+  font-size:clamp(34px,3.3vw,49px)!important;
+  line-height:1.03!important;
+  white-space:normal!important;
+  text-wrap:balance!important;
+  background-image:linear-gradient(97deg,#ad4050,#b54a56)!important;
+  background-repeat:no-repeat!important;
+  background-position:left calc(100% - 1px)!important;
+  background-size:0 3px!important;
+  transition:background-size .26s ease!important;
+}
+html body #evening .du-mood small{
+  position:relative!important;
+  z-index:1!important;
+  color:#5c4650!important;
+  font-size:clamp(13px,1.08vw,15px)!important;
+  line-height:1.5!important;
+  font-weight:600!important;
+  max-width:calc(100% - 8px)!important;
+}
+html body #evening .du-mood .du-mood-check{
+  top:auto!important;right:18px!important;bottom:15px!important;
+  color:var(--mood-ink)!important;
+  font-size:22px!important;
+}
+html body #evening .du-moods>button.du-mood.is-selected{
+  outline:0!important;
+  filter:drop-shadow(0 6px 9px rgba(91,37,48,.2))!important;
+}
+html body #evening .du-moods>button.du-mood.is-selected strong{
+  background-size:100% 3px!important;
+}
+html body #evening .du-moods>button.du-mood.is-selected .du-mood-check{
+  color:#a53648!important;
+}
+html body #evening .du-moods>button.du-mood:focus-visible{
+  outline:3px solid #a43d52!important;outline-offset:4px!important;
+}
+@media(hover:hover) and (pointer:fine){
+  html body #evening .du-moods>button.du-mood:hover{
+    transform:translateY(-9px) rotate(-1.2deg) scale(1.018)!important;
+    filter:drop-shadow(0 10px 12px rgba(74,26,37,.2))!important;
+  }
+  html body #evening .du-moods>button.du-mood[data-mood="spark"]:hover,
+  html body #evening .du-moods>button.du-mood[data-mood="cozy"]:hover{
+    transform:translateY(-11px) rotate(1.1deg) scale(1.018)!important;
+  }
+  html body #evening .du-moods>button.du-mood:hover::before{scale:1.045!important}
+}
+@media(max-width:760px){
+  html body #evening .du-moods{gap:13px!important;padding:10px 2px 17px!important}
+  html body #evening .du-moods>button.du-mood{
+    min-height:clamp(246px,47vw,315px)!important;
+    padding:clamp(13px,2.7vw,21px)!important;
+  }
+  html body #evening .du-mood strong{font-size:clamp(29px,6vw,42px)!important;margin-bottom:9px!important}
+  html body #evening .du-mood small{font-size:clamp(12px,2.8vw,14px)!important;line-height:1.42!important}
+  html body #evening .du-mood .du-mood-check{right:11px!important;bottom:9px!important;font-size:18px!important}
+}
+@media(max-width:390px){
+  html body #evening .du-moods{gap:10px!important}
+  html body #evening .du-moods>button.du-mood{min-height:242px!important;padding:12px!important}
+  html body #evening .du-mood strong{font-size:clamp(26px,7.4vw,30px)!important}
+  html body #evening .du-mood small{font-size:12px!important}
+  html body #evening .du-mood .du-mood-num{top:12px!important;left:12px!important}
+  html body #evening .du-mood .du-mood-icon{top:12px!important;right:12px!important;font-size:21px!important}
+}
+@media(prefers-reduced-motion:reduce){
+  html body #evening .du-moods>button.du-mood{transition:none!important;transform:none!important}
+  html body #evening .du-moods>button.du-mood::before,
+  html body #evening .du-mood strong{transition:none!important}
+}
