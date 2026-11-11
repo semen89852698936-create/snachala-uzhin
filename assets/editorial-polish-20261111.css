@@ -1011,3 +1011,51 @@ html body #homeView #catalog #categoryFilters > button.chip {
     padding:12px 9px!important;
   }
 }
+
+
+/* HOMEPAGE_THREE_CARDS_NO_WHITE_PRESS_RECTANGLE_20261111
+   The three approved photographic paper buttons are links, not rectangular
+   UI panels. Keep the original PNGs and navigation while removing exposed
+   white hover/press backing and browser image-drag ghost surfaces. */
+html body #homeView .du-cover-chapters.du-approved-image-cards {
+  background:transparent!important;
+  background-color:transparent!important;
+  background-image:none!important;
+  box-shadow:none!important;
+}
+html body #homeView .du-cover-chapters.du-approved-image-cards > a.du-approved-card,
+html body #homeView .du-cover-chapters.du-approved-image-cards > a.du-approved-card:is(:hover,:focus,:active,:focus-visible) {
+  background:transparent!important;
+  background-image:none!important;
+  border:0!important;
+  border-radius:0!important;
+  box-shadow:none!important;
+  outline:0!important;
+  -webkit-tap-highlight-color:transparent!important;
+  user-select:none!important;
+  -webkit-user-select:none!important;
+  -webkit-user-drag:none!important;
+  filter:none!important;
+}
+html body #homeView .du-cover-chapters.du-approved-image-cards > a.du-approved-card:active {
+  transform:translateY(1px)!important;
+  filter:none!important;
+}
+html body #homeView .du-cover-chapters.du-approved-image-cards > a.du-approved-card > img,
+html body #homeView .du-cover-chapters.du-approved-image-cards > a.du-approved-card:is(:hover,:focus,:active,:focus-visible) > img {
+  background:transparent!important;
+  border:0!important;
+  box-shadow:none!important;
+  user-select:none!important;
+  -webkit-user-select:none!important;
+  -webkit-user-drag:none!important;
+  pointer-events:none!important;
+}
+html body #homeView .du-cover-chapters.du-approved-image-cards > a.du-approved-card::before,
+html body #homeView .du-cover-chapters.du-approved-image-cards > a.du-approved-card::after {
+  content:none!important;
+  display:none!important;
+}
+html body #homeView .du-cover-chapters.du-approved-image-cards > a.du-approved-card:focus-visible > img {
+  filter:drop-shadow(0 0 6px rgba(120,35,59,.55))!important;
+}
