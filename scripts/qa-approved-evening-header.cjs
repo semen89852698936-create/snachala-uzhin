@@ -30,6 +30,9 @@ const fs=require('fs');
         return {
           hero:rect(hero),photo:rect(photo),photoLoaded:!!(photo&&photo.complete&&photo.naturalWidth>0),
           heading:hero?.querySelector('h1')?.textContent,
+          titleSize:parseFloat(getComputedStyle(hero.querySelector('.du-match11-title')).fontSize),
+          titleColors:[...hero.querySelectorAll('.du-match11-title span')].map(e=>getComputedStyle(e).color),
+          secondWordOffset:parseFloat(getComputedStyle(hero.querySelector('.du-match11-title span:last-child')).marginLeft),
           slogan:slogan?.textContent,
           rotation:getComputedStyle(slogan).transform,
           buttons:anchors.map(a=>({text:a.textContent.trim(),href:a.getAttribute('href'),rect:rect(a)})),
@@ -50,6 +53,10 @@ const fs=require('fs');
         m.recipeLinks===3,
         m.scrollWidth<=m.viewport+6,
         m.rotation.startsWith('matrix(0.984808, -0.173648'),
+        m.titleColors[0]==='rgb(243, 232, 216)',
+        m.titleColors[1]==='rgb(167, 29, 50)',
+        m.secondWordOffset>=m.titleSize*.24 && m.secondWordOffset<=m.titleSize*.26,
+        m.titleSize> (size.width>=1101 ? 215 : 89),
         m.hero.y >= -2 && m.hero.y < (size.width<700 ? 200 : 120)
       ];
       entry.passed=checks.every(Boolean);
