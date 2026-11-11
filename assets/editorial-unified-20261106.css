@@ -1696,3 +1696,75 @@ body.du-evening-mode #music .du-music-card:nth-child(3) h3 em{
     padding:clamp(18px,5vw,28px)!important;
   }
 }
+
+/* OUR_EVENING_THREE_RECIPE_NEWSPAPER_CARDS_20261111
+   Existing live salmon, mushroom pasta and brownie recipe links retain their
+   original images and click handlers. Only their common paper presentation
+   and tiny caption sizes change. */
+body.du-evening-mode #eveningLanding .du-evening-inspiration-card {
+  position:relative;
+  isolation:isolate;
+  background:#f3e8da!important;
+  background-image:repeating-linear-gradient(100deg,rgba(93,66,52,.025) 0 1px,transparent 1px 5px),
+    linear-gradient(140deg,#fff9ed,#f1e4d2)!important;
+  border:0!important;
+  border-radius:0!important;
+  clip-path:polygon(0% 1.3%,7% .2%,14% 1.1%,21% 0%,28% 1.5%,35% .3%,43% 1.1%,50% 0%,57% 1%,65% .1%,72% 1.4%,79% .2%,87% 1.1%,94% .1%,100% 1%,99% 12%,100% 24%,99% 36%,100% 48%,99% 60%,100% 73%,99% 86%,100% 98%,92% 99.2%,84% 98.2%,76% 100%,68% 98.6%,60% 99.7%,52% 98.5%,44% 100%,36% 98.7%,28% 99.5%,20% 98.3%,12% 99.8%,4% 98.5%,0% 99%,1% 88%,0% 76%,1% 64%,0% 52%,1% 40%,0% 28%,1% 16%);
+  box-shadow:none!important;
+  transition:transform .2s ease,filter .2s ease!important;
+  overflow:hidden;
+}
+body.du-evening-mode #eveningLanding .du-evening-inspiration-card:hover,
+body.du-evening-mode #eveningLanding .du-evening-inspiration-card:focus-visible{
+  transform:translateY(-3px);
+  filter:drop-shadow(0 9px 9px rgba(65,40,29,.18));
+}
+body.du-evening-mode #eveningLanding .du-evening-inspiration-card img {
+  display:block;
+  width:100%;
+  object-fit:cover;
+}
+body.du-evening-mode #eveningLanding .du-evening-inspiration-card span{
+  font-size:clamp(15px,1.3vw,17px)!important;
+  color:#512c31;
+  line-height:1.4;
+}
+body.du-evening-mode #eveningLanding .du-evening-inspiration-card small,
+body.du-evening-mode #eveningLanding .du-evening-inspiration-head small,
+body.du-evening-mode #eveningLanding .du-evening-inspiration-credit {
+  font-size:clamp(13px,1.1vw,14px)!important;
+  line-height:1.5;
+}
+@media(max-width:760px){
+  body.du-evening-mode #eveningLanding .du-evening-inspiration-card span{font-size:16px!important}
+  body.du-evening-mode #eveningLanding .du-evening-inspiration-card small{font-size:13px!important}
+}
+@media(prefers-reduced-motion:reduce){
+  body.du-evening-mode #eveningLanding .du-evening-inspiration-card{transition:none!important}
+}
+
+/* OUR_EVENING_TITLE_PLUS_6_PERCENT_20261111
+   Increase only the «Наш вечер» masthead by exactly 6% at every breakpoint.
+   Keep its approved colors, font, spacing and the shifted second word. */
+body.du-evening-mode #eveningLanding .du-evening-landing-content h1{
+  font-size:clamp(86.92px,9.01vw,156.88px);
+}
+@media (min-width:761px) and (max-width:1120px){
+  body.du-evening-mode #eveningLanding .du-evening-landing-content h1{
+    font-size:clamp(71.02px,8.48vw,96.46px);
+  }
+}
+@media (max-width:760px){
+  body.du-evening-mode #eveningLanding .du-evening-landing-content h1{
+    font-size:clamp(81.62px,18.02vw,118.72px);
+  }
+}
+
+/* OUR_EVENING_CAPTION_CONTRAST_20261111
+   Only the photographic caption «04 / ДВА ЧЕЛОВЕКА. ОДНА КОМАНДА».
+   Use deep wine ink instead of near-white for contrast on the pale photo. */
+body.du-evening-mode #eveningLanding .du-evening-landing-caption {
+  color:#4b1728;
+  text-shadow:0 1px 2px rgba(255,248,234,.95),0 0 13px rgba(255,248,234,.9);
+}
+
