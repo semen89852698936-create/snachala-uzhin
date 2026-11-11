@@ -1768,3 +1768,96 @@ body.du-evening-mode #eveningLanding .du-evening-landing-caption {
   text-shadow:0 1px 2px rgba(255,248,234,.95),0 0 13px rgba(255,248,234,.9);
 }
 
+
+
+/* AIRFRYER_RECIPE_READABILITY_DOUBLE_20261112
+   Exactly 2x original 13/12/11px type for airfryer cooking instructions,
+   ingredient names/quantities and the ingredient safety warning only.
+   Ordinary recipe cards and the approved visual composition stay untouched.
+   :has() is already used in this design system. */
+#recipeDetail:has(> .du-airfryer-specs) .du-airfryer-specs p {
+  font-size:26px;
+  line-height:1.6;
+  overflow-wrap:anywhere;
+}
+#recipeDetail:has(> .du-airfryer-specs) .ingredient-check {
+  display:grid;
+  grid-template-columns:24px minmax(0,1fr) minmax(0,42%);
+  column-gap:12px;
+  align-items:start;
+  font-size:26px;
+  line-height:1.45;
+}
+#recipeDetail:has(> .du-airfryer-specs) .ingredient-check input {
+  width:20px;
+  height:20px;
+  margin-top:8px;
+}
+#recipeDetail:has(> .du-airfryer-specs) .ingredient-check span {
+  min-width:0;
+  overflow-wrap:anywhere;
+}
+#recipeDetail:has(> .du-airfryer-specs) .ingredient-check strong {
+  min-width:0;
+  font-size:24px;
+  line-height:1.45;
+  white-space:normal;
+  overflow-wrap:anywhere;
+}
+#recipeDetail:has(> .du-airfryer-specs) .allergen-text {
+  font-size:22px;
+  line-height:1.55;
+  overflow-wrap:anywhere;
+}
+@media(max-width:390px) {
+  #recipeDetail:has(> .du-airfryer-specs) .ingredient-check {
+    column-gap:8px;
+    grid-template-columns:20px minmax(0,1fr) minmax(0,44%);
+  }
+}
+
+
+/* AIRFRYER_CARD_META_PLUS_40_PERCENT_20261112
+   Targeted +40% type increase only for airfryer recipe card servings,
+   temperature/time line and detail-panel preparation duration.
+   Keep all original wording, ingredients, imagery and interactions. */
+#airfryer .du-airfryer-card .du-airfryer-card-copy > p {
+  font-size:21px;
+  line-height:1.55;
+  overflow-wrap:anywhere;
+}
+#airfryer .du-airfryer-card .du-airfryer-card-bottom {
+  font-size:19.6px;
+  line-height:1.4;
+  flex-wrap:wrap;
+}
+#recipeDetail:has(> .du-airfryer-specs) .du-airfryer-spec-grid .du-airfryer-spec:nth-child(3) small {
+  font-size:14px;
+}
+#recipeDetail:has(> .du-airfryer-specs) .du-airfryer-spec-grid .du-airfryer-spec:nth-child(3) strong {
+  font-size:23.8px;
+  line-height:1.3;
+  overflow-wrap:anywhere;
+}
+
+
+/* AIRFRYER_HERO_DESCRIPTION_PLUS_30_20261112
+   Exactly 1.3x the short two-line summary under the airfryer recipe heading.
+   This overrides the smaller !important size in editorial-polish when loaded
+   after this stylesheet, without changing any normal recipe summaries. */
+#recipeDetail:has(> .du-airfryer-specs) .recipe-intro-copy > p {
+  font-size:clamp(18.2px,1.391vw,22.1px)!important;
+}
+
+
+/* AIRFRYER_SPEC_CARD_TYPE_PARITY_20261112
+   All three existing specification tiles use the approved Preparation type scale.
+   Typography only; no change to tile content, layout or other recipes. */
+#recipeDetail:has(> .du-airfryer-specs) .du-airfryer-spec-grid .du-airfryer-spec small {
+  font-size:14px;
+}
+#recipeDetail:has(> .du-airfryer-specs) .du-airfryer-spec-grid .du-airfryer-spec strong {
+  font-size:23.8px;
+  line-height:1.3;
+  overflow-wrap:anywhere;
+}
