@@ -284,7 +284,7 @@ body.du-evening-mode #eveningLanding .du-match11-pinned {
 body.du-evening-mode #eveningLanding .du-match11-pinned[hidden] { display: none !important; }
 /* Existing recipe suggestion links remain functional directly below the approved cover. */
 body.du-evening-mode #eveningLanding .du-match11-recipe-suggestions {
-  padding: 70px clamp(24px,5.5vw,90px) 34px !important;
+  padding: calc(32px + clamp(26.25px,2.625vw,39.9px)) clamp(24px,5.5vw,90px) 34px !important;
   position: relative !important;
   background: #f9f0e6 !important;
   color: #652c3b !important;
@@ -691,5 +691,15 @@ body.du-evening-mode #eveningLanding .du-match11-recipe-grid a.du-evening-paper-
 @media(max-width:760px){
   body.du-evening-mode #eveningLanding .du-match11-recipe-suggestions{
     padding-top:92px!important;
+  }
+}
+@media(max-width:360px) and (min-width:338px){
+  body.du-evening-mode #eveningLanding .du-match11-recipe-suggestions{
+    padding-top:118px!important;
+  }
+}
+@media(max-width:337px){
+  body.du-evening-mode #eveningLanding .du-match11-recipe-suggestions{
+    padding-top:140px!important;
   }
 }
