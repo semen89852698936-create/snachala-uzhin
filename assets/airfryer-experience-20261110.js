@@ -222,3 +222,92 @@
   if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',start,{once:true});
   else start();
 })(typeof window!=='undefined'?window:globalThis);
+
+
+/* AIRFRYER_COMPLETION_RUSSIAN_AND_STEPWISE_LABEL_20261111
+ * Scope: correct only airfryer final screens, and double only the text of
+ * "Готовить пошагово" buttons. No changes to recipes, ingredients or steps.
+ */
+(function () {
+  'use strict';
+  const feminine = new Set([1,2,13,14,15,26,32,39,40,41,49,56,58,61,62,67,68,69,70,72,79,80,88]);
+  const neuter = new Set([11,43,100]);
+  const masculine = new Set([17,21,37,38,42,48,59,60,64,76,83,87,95,98]);
+  function readinessForAirfryer(name) {
+    const recipes = window.AIRFRYER_RECIPES;
+    if (!Array.isArray(recipes)) return null;
+    const index = recipes.findIndex(recipe => recipe && recipe.title === name);
+    if (index < 0) return null;
+    const number = index + 1;
+    if (feminine.has(number)) return 'готова';
+    if (neuter.has(number)) return 'готово';
+    if (masculine.has(number)) return 'готов';
+    return 'готовы';
+  }
+  function correctFinish() {
+    const box = document.getElementById('cookContent');
+    if (!box) return;
+    const heading = box.querySelector('.done-title');
+    const description = box.querySelector('.done-desc');
+    if (!heading || !description) return;
+    const first = description.firstChild;
+    const match = first && first.nodeType === Node.TEXT_NODE
+      ? String(first.nodeValue || '').match(/^(.+?)\s+готово\.(?=\s|$)/u) : null;
+    if (!match) return; // Do not touch ordinary recipes or already-correct text.
+    const ending = readinessForAirfryer(match[1]);
+    if (!ending) return;
+    heading.textContent = 'Приятного аппетита!';
+    first.nodeValue = match[1] + ' ' + ending + '.' + first.nodeValue.slice(match[0].length);
+  }
+  function enlargeStepwiseButton(button) {
+    if (!button || button.nodeType !== Node.ELEMENT_NODE || button.dataset.duStepwiseDoubled === '1') return;
+    const text = String(button.textContent || '').replace(/\s+/g, ' ').trim();
+    if (!/Готовить\s+пошагово/iu.test(text)) return;
+    // Respect explicitly styled inner lettering when present, and measure
+    // its actual computed baseline instead of assuming a global font size.
+    const candidates = [...button.querySelectorAll('span,strong,b,em')];
+    const label = candidates.find(node => /Готовить\s+пошагово/iu.test(node.textContent || '') &&
+      ![...node.children].some(child => /Готовить\s+пошагово/iu.test(child.textContent || ''))) || button;
+    const original = parseFloat(getComputedStyle(label).fontSize);
+    if (!Number.isFinite(original) || original <= 0) return;
+    label.style.setProperty('font-size', String(Math.round(original * 20) / 10) + 'px', 'important');
+    label.style.setProperty('line-height', '1.12', 'important');
+    button.style.setProperty('white-space', 'normal', 'important');
+    button.style.setProperty('height', 'auto', 'important');
+    button.style.setProperty('min-height', '52px', 'important');
+    button.style.setProperty('max-width', '100%', 'important');
+    button.style.setProperty('box-sizing', 'border-box', 'important');
+    button.dataset.duStepwiseDoubled = '1';
+  }
+  function scan(root) {
+    if (!root || root.nodeType !== Node.ELEMENT_NODE) return;
+    if (root.matches('button,a,[role="button"]')) enlargeStepwiseButton(root);
+    root.querySelectorAll('button,a,[role="button"]').forEach(enlargeStepwiseButton);
+  }
+  function init() {
+    scan(document.body);
+    correctFinish();
+    const observer = new MutationObserver(records => {
+      let mayContainFinish = false;
+      for (const record of records) {
+        if (record.target && record.target.nodeType === Node.ELEMENT_NODE &&
+            (record.target.id === 'cookContent' || record.target.closest('#cookContent'))) {
+          mayContainFinish = true;
+        }
+        for (const node of record.addedNodes) {
+          if (node.nodeType === Node.ELEMENT_NODE) {
+            scan(node);
+            if (node.id === 'cookContent' || node.querySelector('.done-desc')) mayContainFinish = true;
+          } else if (node.nodeType === Node.TEXT_NODE &&
+                     node.parentElement && node.parentElement.closest('button,a,[role="button"]')) {
+            enlargeStepwiseButton(node.parentElement.closest('button,a,[role="button"]'));
+          }
+        }
+      }
+      if (mayContainFinish) correctFinish();
+    });
+    observer.observe(document.body, {childList:true,subtree:true});
+  }
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', init, {once:true});
+  else init();
+})();
