@@ -1275,3 +1275,17 @@ html body #homeView .du-bonus .bonus-inner > a#bonusRecipe:focus-visible {
     transform:none!important;
   }
 }
+
+
+/* BONUS_HOVER_PAPER_VISIBILITY_20261112
+   A legacy :is(:hover,:focus,:active) shorthand sets background:transparent
+   with higher specificity than the rebuilt button's base image selector.
+   Restore the *same* approved paper on every interaction state. No canvas,
+   duplicate button, new typography, overlay or change to photo/layout.
+   Tested in Chromium: computed background-image remains the actual WEBP. */
+html body #homeView .du-bonus .bonus-inner > a#bonusRecipe:is(:hover,:focus,:active) {
+  background-image:url('/assets/approved-banners/bonus-rebuilt-paper-20261112.webp')!important;
+  background-position:center!important;
+  background-size:100% 100%!important;
+  background-repeat:no-repeat!important;
+}
