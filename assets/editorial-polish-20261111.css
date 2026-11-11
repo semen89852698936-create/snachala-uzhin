@@ -943,3 +943,71 @@ html body #evening .du-builder-right .du-menu-preview .du-menu-dish > button {
   color:#fff7ee!important;
   border-color:rgba(255,240,224,.72)!important;
 }
+
+
+/* CATALOG_WINE_MASTHEAD_FULL_TITLE_AND_150_PERCENT_FILTERS_20261111
+   The 30%-enlarged headline is three lines at desktop widths but the
+   wine-gradient backplate stayed at 225-277px: the last word escaped.
+   Move the top edge toward the navigation, extend the bottom edge and
+   let the search card follow beneath. Preserve approved fonts/photos. */
+html body #homeView #catalog.du-catalog {
+  margin-top:-30px!important;
+  padding-top:30px!important;
+}
+html body #homeView #catalog.du-catalog::before {
+  top:0!important;
+  height:calc(30px + clamp(300px,22vw,345px))!important;
+}
+html body #homeView #catalog .du-section-top {
+  box-sizing:border-box!important;
+  min-height:clamp(300px,22vw,345px)!important;
+  padding-bottom:38px!important;
+}
+html body #homeView #catalog .du-section-top .du-section-heading h2 {
+  line-height:.94!important;
+}
+html body #homeView #catalog .du-section-top .du-section-heading h2 em {
+  position:relative!important;
+  display:inline-block!important;
+  margin-bottom:0!important;
+}
+
+/* Previous labels: 19.6-22.4px. Exactly 1.5x: 29.4-33.6px.
+   Make newspaper tiles taller and use fewer columns where necessary,
+   while keeping their torn edges, print, palette and click behaviour. */
+html body #homeView #catalog #categoryFilters {
+  grid-template-columns:repeat(5,minmax(0,1fr))!important;
+  align-items:stretch!important;
+}
+html body #homeView #catalog #categoryFilters > button.chip {
+  font-size:clamp(29.4px,2.184vw,33.6px)!important;
+  line-height:1.14!important;
+  min-height:116px!important;
+  padding:14px 11px!important;
+  white-space:normal!important;
+  overflow-wrap:anywhere!important;
+  hyphens:auto!important;
+  align-self:stretch!important;
+}
+@media (min-width:761px) and (max-width:1180px) {
+  html body #homeView #catalog #categoryFilters {
+    grid-template-columns:repeat(3,minmax(0,1fr))!important;
+  }
+}
+@media(max-width:760px) {
+  html body #homeView #catalog .du-section-top {
+    min-height:clamp(390px,100vw,470px)!important;
+    padding-bottom:42px!important;
+  }
+  html body #homeView #catalog.du-catalog::before {
+    height:calc(30px + clamp(390px,100vw,470px))!important;
+  }
+  html body #homeView #catalog #categoryFilters {
+    grid-template-columns:repeat(2,minmax(0,1fr))!important;
+  }
+  html body #homeView #catalog #categoryFilters > button.chip {
+    font-size:clamp(24px,5.75vw,28px)!important;
+    min-height:118px!important;
+    padding:12px 9px!important;
+  }
+}
