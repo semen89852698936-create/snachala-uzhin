@@ -1180,3 +1180,12 @@ html body #homeView .du-bonus .bonus-inner[data-bonus-layer-ready="1"] > a#bonus
     transform:none!important;
   }
 }
+
+
+/* HORIZONTAL_SCROLLBAR_ON_APPROVED_CARD_HOVER_20261111
+   The far-right paper-card lift/rotate can add ~1px of document overflow.
+   Clip only document-level horizontal overflow. Card motion, photographic
+   layers, focus, internal vertical scrolling and layout remain unchanged. */
+html, body {
+  overflow-x: clip !important;
+}
