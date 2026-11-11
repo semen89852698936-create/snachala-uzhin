@@ -703,3 +703,41 @@ body.du-evening-mode #eveningLanding .du-match11-recipe-grid a.du-evening-paper-
     padding-top:130px!important;
   }
 }
+
+/* NAV_CONTRAST_AND_TWO_ACCENTS_20261111
+   Keep the approved torn-paper nav shapes and all links.
+   Repair My Recipes selected state: ink-white text must sit on burgundy
+   paper, not on the old pale ::before paper behind an opaque anchor.
+   Only the two requested chapter links receive saturated accents. */
+body:has(#my-recipes:target) .header .main-nav > a[data-nav="my-recipes"]{
+  background:transparent!important;
+  color:#fff8ed!important;
+}
+body:has(#my-recipes:target) .header .main-nav > a[data-nav="my-recipes"]::before{
+  background-color:#77172b!important;
+}
+body:has(#my-recipes:target) .header .main-nav > a[data-nav="my-recipes"]:is(:hover,:focus-visible)::before{
+  background-color:#651325!important;
+}
+body .header .main-nav > a[data-nav="evening"],
+body.du-evening-mode .header .main-nav > a[data-nav="evening"]{
+  background-color:#822a42!important;
+  color:#fff7ee!important;
+}
+body .header .main-nav > a[data-nav="airfryer"]{
+  background-color:#4b593b!important;
+  color:#fff7ee!important;
+}
+body .header .main-nav > a[data-nav="evening"]::before,
+body .header .main-nav > a[data-nav="airfryer"]::before{
+  color:#fff7ee!important;
+}
+body .header .main-nav > a[data-nav="evening"]:is(:hover,:focus-visible),
+body.du-evening-mode .header .main-nav > a[data-nav="evening"]:is(:hover,:focus-visible){
+  background-color:#6e2037!important;
+  color:#fff7ee!important;
+}
+body .header .main-nav > a[data-nav="airfryer"]:is(:hover,:focus-visible){
+  background-color:#39472d!important;
+  color:#fff7ee!important;
+}
