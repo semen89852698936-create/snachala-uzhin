@@ -8621,3 +8621,48 @@ html body #homeView .du-bonus .bonus-inner > a#bonusRecipe:focus-visible {
     top:calc(55.8% - 9px)!important;
   }
 }
+
+
+/* AIRFRYER_RECIPE_READABILITY_DOUBLE_20261112
+   The requested double-size content is limited to airfryer recipe cards.
+   Mobile-safe grid wraps long amounts without horizontal overflow. */
+#recipeDetail:has(> .du-airfryer-specs) .du-airfryer-specs p {
+  font-size:26px;
+  line-height:1.6;
+  overflow-wrap:anywhere;
+}
+#recipeDetail:has(> .du-airfryer-specs) .ingredient-check {
+  display:grid;
+  grid-template-columns:24px minmax(0,1fr) minmax(0,42%);
+  column-gap:12px;
+  align-items:start;
+  font-size:26px;
+  line-height:1.45;
+}
+#recipeDetail:has(> .du-airfryer-specs) .ingredient-check input {
+  width:20px;
+  height:20px;
+  margin-top:8px;
+}
+#recipeDetail:has(> .du-airfryer-specs) .ingredient-check span {
+  min-width:0;
+  overflow-wrap:anywhere;
+}
+#recipeDetail:has(> .du-airfryer-specs) .ingredient-check strong {
+  min-width:0;
+  font-size:24px;
+  line-height:1.45;
+  white-space:normal;
+  overflow-wrap:anywhere;
+}
+#recipeDetail:has(> .du-airfryer-specs) .allergen-text {
+  font-size:22px;
+  line-height:1.55;
+  overflow-wrap:anywhere;
+}
+@media(max-width:390px) {
+  #recipeDetail:has(> .du-airfryer-specs) .ingredient-check {
+    column-gap:8px;
+    grid-template-columns:20px minmax(0,1fr) minmax(0,44%);
+  }
+}
