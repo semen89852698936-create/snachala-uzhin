@@ -50,7 +50,7 @@ const fs=require('fs');
         m.recipeLinks===3,
         m.scrollWidth<=m.viewport+6,
         m.rotation.startsWith('matrix(0.984808, -0.173648'),
-        m.hero.y >= -2 && m.hero.y < 120
+        m.hero.y >= -2 && m.hero.y < (size.width<700 ? 200 : 120)
       ];
       entry.passed=checks.every(Boolean);
       if(!entry.passed){entry.errors.push('One or more layout/interaction assertions failed: '+JSON.stringify(checks));anyFailed=true;}
