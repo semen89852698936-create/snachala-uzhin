@@ -463,3 +463,19 @@ html body.du-airfryer-standalone :is(.du-airfryer-card,.du-airfryer-recipe-card)
   html body.du-catalog-standalone.du-catalog-teaser-relocated #homeView #catalog .du-more-wrap{grid-row:9!important}
   html body.du-catalog-standalone.du-catalog-teaser-relocated #homeView #catalog .empty-state{grid-row:10!important}
 }
+
+/* AFTER_DINNER_STRIP_REAL_WIDTH_PLUS_20_PERCENT_20261111
+   The strip already spans the viewport: extend its actual box from 100vw to
+   120vw, keeping it centered and clipped by the Evening page rather than
+   creating horizontal scrolling. The approved photo, palette and text stay. */
+html body.du-evening-mode #eveningLanding > .du-evening-strip-two{
+  width:120vw!important;
+  max-width:none!important;
+  left:50%!important;
+  margin-left:-60vw!important;
+}
+@media(max-width:760px){
+  html body.du-evening-mode #eveningLanding > .du-evening-strip-two{
+    padding-inline:calc(10vw + 22px)!important;
+  }
+}
