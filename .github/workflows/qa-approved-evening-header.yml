@@ -22,7 +22,7 @@ jobs:
       - name: Run browser capture of real page and public Vercel deployment
         shell: bash
         env:
-          EVENING_PUBLIC_PREVIEW: https://snachala-uzhin-preview-fmm76pusv-chaika2.vercel.app/
+          EVENING_PUBLIC_PREVIEW: https://snachala-uzhin-preview-i0jjswv9a-chaika2.vercel.app/
         run: |
           python3 -m http.server 8765 --bind 127.0.0.1 >/tmp/evening-http.log 2>&1 &
           sleep 2
