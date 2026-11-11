@@ -8579,3 +8579,26 @@ body.du-evening-mode .du-evening-back:not(.du-catalog-back):hover{
     line-height:1.25!important;
   }
 }
+
+
+/* EVENING_CHOSEN_NOTE_READABILITY_20261111
+   Restore the legibility of «✳ Это ваш вечер. Меню, продукты...»
+   without changing its approved wording or neighboring sections. */
+#homeView .du-chosen-note,
+body.du-evening-mode .du-chosen-note {
+  font-size:clamp(17px,1.4vw,20px)!important;
+  line-height:1.6!important;
+  font-weight:600!important;
+  letter-spacing:0!important;
+  color:#432831!important;
+  opacity:1!important;
+  text-shadow:none!important;
+  padding-top:20px!important;
+}
+#homeView .du-chosen-note > span,
+body.du-evening-mode .du-chosen-note > span {
+  font-size:1.25em!important;
+  color:#8b3044!important;
+  vertical-align:middle;
+  margin-right:9px!important;
+}
