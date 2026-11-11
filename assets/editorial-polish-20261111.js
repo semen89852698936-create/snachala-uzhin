@@ -1,20 +1,30 @@
-/* SNAChALA UZHIN: editorial polish, catalogue-only smooth action.
-   Preserve all existing hash navigation, recipes and filtering. */
+/* СНАЧАЛА УЖИН: editorial polish. Works only on the standalone 1001 catalogue.
+   Preserve original hash routing, search, featured recipe and recipes. */
 (function(){
   'use strict';
+  var mobileQuery=window.matchMedia('(max-width:760px)');
+  function placeTeaser(){
+    var teaser=document.getElementById('heroRecipe');
+    var searchPanel=document.querySelector('#catalog .search-panel');
+    var heroArt=document.querySelector('#homeView .du-hero-art');
+    if(!teaser||!searchPanel||!heroArt)return;
+    if(mobileQuery.matches){
+      if(teaser.parentElement!==searchPanel.parentElement||teaser.nextElementSibling!==searchPanel){
+        searchPanel.parentElement.insertBefore(teaser,searchPanel);
+      }
+      document.body.classList.add('du-catalog-teaser-relocated');
+      teaser.setAttribute('data-polish-teaser-relocated','true');
+    }else{
+      if(teaser.parentElement!==heroArt)heroArt.appendChild(teaser);
+      document.body.classList.remove('du-catalog-teaser-relocated');
+      teaser.removeAttribute('data-polish-teaser-relocated');
+    }
+  }
   function install(){
     if(!document.body.classList.contains('du-catalog-standalone'))return;
-    // On phones keep the working recipe-of-the-week button but place it
-    // after the cover, before search: no overlap with the large title.
-    if(window.matchMedia('(max-width:760px)').matches){
-      var teaser=document.getElementById('heroRecipe');
-      var searchPanel=document.querySelector('#catalog .search-panel');
-      if(teaser&&searchPanel&&!teaser.hasAttribute('data-polish-teaser-relocated')){
-        searchPanel.parentElement.insertBefore(teaser,searchPanel);
-        teaser.setAttribute('data-polish-teaser-relocated','true');
-      }
-    }
-
+    placeTeaser();
+    if(mobileQuery.addEventListener)mobileQuery.addEventListener('change',placeTeaser);
+    else if(mobileQuery.addListener)mobileQuery.addListener(placeTeaser);
     var link=document.querySelector('a.du-jump-recipes');
     if(!link||link.dataset.smoothInstalled==='1')return;
     link.dataset.smoothInstalled='1';
@@ -24,7 +34,7 @@
       event.preventDefault();
       var reduce=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
       search.scrollIntoView({behavior:reduce?'auto':'smooth',block:'start'});
-      try{search.classList.add('du-polish-jump-arrived');}catch(e){}
+      search.classList.add('du-polish-jump-arrived');
     });
   }
   if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',install,{once:true});
