@@ -466,3 +466,29 @@ body.du-evening-mode #eveningLanding .du-match11-red-line{
     top:57.8%!important;
   }
 }
+
+/* EVENING_VISIBLE_HOME_RETURN_20261111
+   Move the EXISTING newspaper back link to a visible top-right position,
+   clear of the title and approved hero composition. Its #home href stays intact. */
+body.du-evening-mode > a.du-evening-back:not(.du-catalog-back){
+  position:fixed!important;
+  top:clamp(103px,8vw,119px)!important;
+  right:clamp(14px,2vw,30px)!important;
+  bottom:auto!important;
+  left:auto!important;
+  display:inline-flex!important;
+  align-items:center!important;
+  z-index:101!important;
+  min-height:46px!important;
+  visibility:visible!important;
+  opacity:1!important;
+}
+@media(max-width:760px){
+  body.du-evening-mode > a.du-evening-back:not(.du-catalog-back){
+    top:clamp(160px,43vw,174px)!important;
+    right:13px!important;
+    bottom:auto!important;
+    left:auto!important;
+    min-height:44px!important;
+  }
+}
