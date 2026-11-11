@@ -1742,3 +1742,20 @@ body.du-evening-mode #eveningLanding .du-evening-inspiration-credit {
 @media(prefers-reduced-motion:reduce){
   body.du-evening-mode #eveningLanding .du-evening-inspiration-card{transition:none!important}
 }
+
+/* OUR_EVENING_TITLE_PLUS_6_PERCENT_20261111
+   Increase only the «Наш вечер» masthead by exactly 6% at every breakpoint.
+   Keep its approved colors, font, spacing and the shifted second word. */
+body.du-evening-mode #eveningLanding .du-evening-landing-content h1{
+  font-size:clamp(86.92px,9.01vw,156.88px);
+}
+@media (min-width:761px) and (max-width:1120px){
+  body.du-evening-mode #eveningLanding .du-evening-landing-content h1{
+    font-size:clamp(71.02px,8.48vw,96.46px);
+  }
+}
+@media (max-width:760px){
+  body.du-evening-mode #eveningLanding .du-evening-landing-content h1{
+    font-size:clamp(81.62px,18.02vw,118.72px);
+  }
+}
