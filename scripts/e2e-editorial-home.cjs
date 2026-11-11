@@ -340,5 +340,68 @@ const {chromium}=require('playwright');
    console.log('PASS editorial storefront',viewport.width);
    await page.close();
   }
+
+   /* Real pointer hit-testing for owner-approved home chapter links and
+      the detached bonus paper button. The PNGs and banner are not changed. */
+   for(const viewport of [{width:1366,height:900},{width:390,height:844}]){
+     const qa=await browser.newPage({viewport});
+     qa.on('pageerror',e=>{throw e});
+     await qa.route('**/open.spotify.com/**',route=>route.abort());
+     for(const target of [
+       {href:'#catalog',selector:'#homeView .du-approved-image-cards > a.du-approved-card[href="#catalog"]'},
+       {href:'#airfryer',selector:'#homeView .du-approved-image-cards > a.du-approved-card[href="#airfryer"]'},
+       {href:'#evening',selector:'#homeView .du-approved-image-cards > a.du-approved-card[href="#evening"]'}
+     ]){
+       await qa.goto('http://127.0.0.1:8765/',{waitUntil:'domcontentloaded'});
+       const link=qa.locator(target.selector);
+       assert.equal(await link.count(),1,'approved home CTA missing '+target.href);
+       await link.scrollIntoViewIfNeeded();
+       if(viewport.width>760){
+         const start=await link.evaluate(el=>el.getBoundingClientRect().top);
+         await link.hover();
+         await qa.waitForTimeout(370);
+         const hover=await link.evaluate(el=>({
+           top:el.getBoundingClientRect().top,
+           transform:getComputedStyle(el).transform,
+           blend:getComputedStyle(el.querySelector('img')).mixBlendMode
+         }));
+         assert(hover.top<start-2 && hover.transform!=='none',
+           target.href+' must physically lift on hover: '+JSON.stringify(hover));
+         assert.equal(hover.blend,'multiply','opaque PNG white rectangle must not reappear');
+       }
+       await link.click();
+       await qa.waitForFunction(expected=>location.hash===expected,target.href);
+       if(target.href==='#evening'){
+         await qa.locator('#eveningLanding').waitFor({state:'visible'});
+       }
+     }
+     await qa.goto('http://127.0.0.1:8765/',{waitUntil:'domcontentloaded'});
+     const bonus=qa.locator('#homeView .du-bonus #bonusRecipe');
+     assert.equal(await bonus.count(),1,'bonus CTA missing');
+     await bonus.scrollIntoViewIfNeeded();
+     await qa.waitForFunction(()=>
+       document.querySelector('#homeView .du-bonus .bonus-inner')?.dataset.bonusLayerReady==='1',
+       null,{timeout:15000});
+     if(viewport.width>760){
+       const start=await bonus.evaluate(el=>el.getBoundingClientRect().top);
+       await bonus.hover();
+       await qa.waitForTimeout(370);
+       const hover=await bonus.evaluate(el=>({
+         top:el.getBoundingClientRect().top,
+         image:getComputedStyle(el).backgroundImage,
+         transform:getComputedStyle(el).transform
+       }));
+       assert(hover.top<start-2 && hover.transform!=='none',
+         'paper bonus button must physically move: '+JSON.stringify(hover));
+       assert(hover.image.startsWith('url("data:image/png'),
+         'bonus uses transparent pixels from approved artwork, not second button');
+     }
+     await bonus.click();
+     await qa.waitForFunction(()=>location.hash==='#recipe=midnight-mushroom-toasts');
+     await qa.locator('#recipeView').waitFor({state:'visible'});
+     await qa.close();
+   }
+   console.log('PASS home three chapter CTAs + layered bonus hover/click desktop/mobile');
+
  } finally { await browser.close(); }
 })().catch(e=>{console.error(e);process.exitCode=1});

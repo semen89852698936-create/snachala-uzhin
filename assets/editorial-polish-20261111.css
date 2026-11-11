@@ -1094,3 +1094,89 @@ html body #homeView .du-cover-chapters.du-approved-image-cards > a.du-approved-c
   outline:2px dotted #7f2443!important;
   outline-offset:2px!important;
 }
+
+
+/* HOME_APPROVED_BUTTONS_INTERACTION_RESTORE_20261111
+   Only the three approved photographic links. The image assets, geometry
+   and click destinations are untouched. Blend away the opaque white PNG
+   matte during movement so no rectangular white press/hover layer appears. */
+html body #homeView .du-cover-chapters.du-approved-image-cards > a.du-approved-card {
+  cursor:pointer!important;
+  pointer-events:auto!important;
+  transform:none!important;
+  transition:transform .24s cubic-bezier(.22,.72,.25,1)!important;
+  transform-origin:center center!important;
+  background:transparent!important;
+  box-shadow:none!important;
+  filter:none!important;
+}
+html body #homeView .du-cover-chapters.du-approved-image-cards > a.du-approved-card:is(:hover,:focus-visible,:active) > img {
+  mix-blend-mode:multiply!important;
+  background:transparent!important;
+  box-shadow:none!important;
+}
+html body #homeView .du-cover-chapters.du-approved-image-cards > a.du-approved-card:focus-visible {
+  transform:translateY(-5px) rotate(-.3deg)!important;
+  outline:2px dotted #7f2443!important;
+  outline-offset:3px!important;
+}
+@media (hover:hover) and (pointer:fine) and (prefers-reduced-motion:no-preference) {
+  html body #homeView .du-cover-chapters.du-approved-image-cards > a.du-approved-card:hover {
+    transform:translateY(-5px) rotate(-.3deg)!important;
+    z-index:9!important;
+  }
+}
+html body #homeView .du-cover-chapters.du-approved-image-cards > a.du-approved-card:active {
+  transform:translateY(1px) scale(.996)!important;
+}
+@media (prefers-reduced-motion:reduce) {
+  html body #homeView .du-cover-chapters.du-approved-image-cards > a.du-approved-card {
+    transition:none!important;
+  }
+  html body #homeView .du-cover-chapters.du-approved-image-cards > a.du-approved-card:is(:hover,:focus-visible,:active) {
+    transform:none!important;
+  }
+}
+
+/* BONUS_BUTTON_INTERACTION_RESTORE_20261111
+   The separate paper layer uses the exact approved image pixels.
+   The script reconstructs the wall behind the original printed button
+   before enabling motion. If image processing fails, keep the original
+   intact and the actual link clickable. */
+html body #homeView .du-bonus .bonus-inner > a#bonusRecipe {
+  pointer-events:auto!important;
+  cursor:pointer!important;
+  z-index:70!important;
+  background-repeat:no-repeat!important;
+  background-position:center!important;
+  background-size:100% 100%!important;
+  transition:transform .25s cubic-bezier(.2,.7,.2,1)!important;
+  transform-origin:center center!important;
+  transform:none!important;
+}
+html body #homeView .du-bonus .bonus-inner > a#bonusRecipe::before,
+html body #homeView .du-bonus .bonus-inner > a#bonusRecipe::after {
+  display:none!important;
+  content:none!important;
+}
+html body #homeView .du-bonus .bonus-inner[data-bonus-layer-ready="1"] > a#bonusRecipe:focus-visible {
+  transform:translateY(-6px) rotate(-.8deg) scale(1.025)!important;
+  outline:3px solid #fff4e6!important;
+  outline-offset:3px!important;
+}
+@media (hover:hover) and (pointer:fine) and (prefers-reduced-motion:no-preference) {
+  html body #homeView .du-bonus .bonus-inner[data-bonus-layer-ready="1"] > a#bonusRecipe:hover {
+    transform:translateY(-6px) rotate(-.8deg) scale(1.025)!important;
+  }
+}
+html body #homeView .du-bonus .bonus-inner[data-bonus-layer-ready="1"] > a#bonusRecipe:active {
+  transform:translateY(1px) scale(.99)!important;
+}
+@media (prefers-reduced-motion:reduce) {
+  html body #homeView .du-bonus .bonus-inner > a#bonusRecipe {
+    transition:none!important;
+  }
+  html body #homeView .du-bonus .bonus-inner[data-bonus-layer-ready="1"] > a#bonusRecipe:is(:hover,:focus-visible,:active) {
+    transform:none!important;
+  }
+}
