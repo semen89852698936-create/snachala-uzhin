@@ -853,3 +853,32 @@ html body.du-evening-mode #evening .du-mood small{
     min-width:0!important;
   }
 }
+
+/* APPROVED EVENING PHOTO FOLLOW-UP 2026-11-11
+   Merged with full catalog, accessibility and editorial changes; visual assets intact. */
+html body.du-evening-mode #eveningLanding > .du-evening-strip-two{
+  background-image:linear-gradient(90deg,rgba(53,21,29,.63) 0%,rgba(63,28,36,.40) 43%,rgba(61,25,34,.16) 100%),url('/assets/after-dinner-glasses-sharp-20261111.webp')!important;
+  min-height:clamp(336px,31.2vw,468px)!important;
+}
+html body #evening .du-moods > button.du-mood::before{
+  inset:12px 12px 43%!important;background-position:center center!important;
+}
+html body #evening .du-moods > button.du-mood::after{
+  inset:56% 0 0!important;clip-path:none!important;
+}
+html body #evening .du-moods > button.du-mood[data-mood="tender"]::before{
+  background-image:url('/assets/our-evening-after-hq.avif')!important;
+}
+html body #evening .du-moods > button.du-mood[data-mood="spark"]::before{
+  background-image:url('/assets/evening-approved-photo-20261111.webp')!important;
+}
+html body.du-evening-mode #evening .du-evening-together-content > .du-mini-eyebrow{
+  display:inline-block!important;width:fit-content!important;max-width:100%!important;
+  color:#fff8ef!important;background:rgba(48,22,34,.82)!important;
+  font-size:clamp(21px,1.71vw,25.5px)!important;
+  font-weight:800!important;line-height:1.45!important;letter-spacing:.065em!important;
+  text-shadow:0 1px 4px rgba(22,8,13,.65)!important;padding:8px 12px!important;
+}
+@media(max-width:760px){
+  html body.du-evening-mode #eveningLanding > .du-evening-strip-two{min-height:360px!important;}
+}
