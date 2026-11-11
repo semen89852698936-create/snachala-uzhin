@@ -285,3 +285,71 @@
 @media(prefers-reduced-motion:reduce){
  .du-np-shadow,.du-np-start,.du-np-launcher,.du-np-main-play {transition:none!important;}
 }
+
+
+/* NEWSPRINT_PLAYER_BUTTON_LAYER_FIX_20261112
+   Sitewide legacy button::before applies an opaque paper background with
+   !important, masking transport icons. Native player controls have their own
+   actual background and must not inherit that overlay or its hover clones. */
+html body .du-np-dock button::before,
+html body .du-np-dock button::after,
+html body .du-np-inline button::before,
+html body .du-np-inline button::after {
+  content:none!important;
+  display:none!important;
+  background:none!important;
+  box-shadow:none!important;
+}
+html body .du-np-dock .du-np-transport button {
+  background:transparent!important;
+  background-image:none!important;
+  color:#692d42!important;
+  border:0!important;
+  border-radius:0!important;
+  box-shadow:none!important;
+}
+html body .du-np-dock .du-np-transport button.du-np-main-play {
+  background:#682e41!important;
+  background-color:#682e41!important;
+  background-image:none!important;
+  border:2px solid #622d3e!important;
+  color:#fff8ef!important;
+  border-radius:50%!important;
+}
+html body .du-np-dock .du-np-transport button.du-np-main-play:hover {
+  background:#983c51!important;
+}
+html body .du-np-dock .du-np-launcher,
+html body .du-np-dock .du-np-launcher:is(:hover,:focus,:active) {
+  background:#682d3f!important;
+  background-image:none!important;
+  color:#fff8ec!important;
+  box-shadow:0 6px 22px rgba(52,19,32,.3)!important;
+}
+html body .du-np-dock .du-np-tabs button {
+  background:rgba(255,248,235,.48)!important;
+  background-image:none!important;
+  color:#653d49!important;
+  border:1px solid #b7a28d!important;
+}
+html body .du-np-dock .du-np-tabs button[aria-pressed="true"] {
+  background:#682e41!important;
+  background-image:none!important;
+  color:#fff8e9!important;
+  border:1px solid #682e41!important;
+}
+html body .du-np-dock .du-np-close {
+  background:transparent!important;
+  background-image:none!important;
+  color:#633543!important;
+}
+html body .du-np-inline button.du-np-start {
+  background:#672d3e!important;
+  background-image:none!important;
+  color:#fff7ee!important;
+  border:1.5px solid #753141!important;
+}
+html body .du-np-inline button.du-np-start:hover {
+  background:#9c394b!important;
+  background-image:none!important;
+}
