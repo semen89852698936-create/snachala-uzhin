@@ -240,7 +240,7 @@
         '<div class="du-np-bottom"><label for="duNpVolume">♫ Громкость</label>'+
         '<input type="range" id="duNpVolume" min="0" max="100" value="65" aria-label="Громкость" />'+
         '<span id="duNpCount">01 / 02</span></div>'+
-        '<p class="du-np-notice">Тестовый эфир: синтезированные оригинальные фрагменты. Права на известные песни не используются.</p>'+
+        '<p class="du-np-notice">Тестовый эфир: синтезированные оригинальные фрагменты. Права на известные песни не используются.</p>'+ '<button type="button" class="du-np-popout" data-np-action="popout">↗ Слушать при переходе между страницами</button>'+
         '<p class="du-np-feedback" role="status" hidden></p>'+
         '</div>'+
       '</section>'+
@@ -266,6 +266,7 @@
     const dock=document.createElement('div');
     dock.innerHTML=floatingMarkup();
     document.body.appendChild(dock.firstElementChild);
+    if(document.body.classList.contains('du-np-standalone'))state.panelOpen=true;
     render();
   }
   function render() {
@@ -309,6 +310,13 @@
       const action=btn.dataset.npAction;
       if(btn.id==='duNpLauncher') {state.panelOpen=!state.panelOpen;render();return;}
       if(action==='close'){state.panelOpen=false;render();return;}
+      if(action==='popout') {
+        const url='/music/player.html?phase='+encodeURIComponent(state.phase)+'&index='+state.index+'&volume='+Math.round(state.volume*100);
+        const windowRef=window.open(url,'duMusicSeparatePlayer','width=480,height=740');
+        if(windowRef){pause();state.panelOpen=false;render();}
+        else announce('Разреши открытие музыкального окна в настройках браузера.');
+        return;
+      }
       if(action==='tab'){choose(btn.dataset.npPhase,0,false);state.panelOpen=true;render();return;}
       if(action==='phase'){
         if(state.phase===btn.dataset.npPhase&&state.playing){pause();return;}
@@ -345,6 +353,15 @@
       const manifest=await res.json();
       if(!manifest.playlists||!PHASES.every(k=>manifest.playlists[k]?.tracks?.length))throw new Error('В манифесте отсутствуют треки.');
       state.manifest=manifest;
+      if(document.body.classList.contains('du-np-standalone')){
+        const params=new URLSearchParams(location.search);
+        const phase=params.get('phase');
+        if(phase&&manifest.playlists[phase])state.phase=phase;
+        const idx=Number(params.get('index'))||0;
+        state.index=Math.max(0,Math.min(manifest.playlists[state.phase].tracks.length-1,idx));
+        const volume=Number(params.get('volume'));
+        if(Number.isFinite(volume)&&params.has('volume'))state.volume=Math.max(0,Math.min(1,volume/100));
+      }
       build();
       installEvents();
       window.duNewspaperPlayer={
