@@ -18,7 +18,9 @@ const fs=require('fs');
       await page.waitForSelector('#eveningLanding .du-match11-hero',{timeout:16000});
       await page.evaluate(()=>document.fonts.ready);
       await page.waitForTimeout(1400);
-      await page.evaluate(()=>window.scrollTo(0,0));
+      entry.initialHeroY=await page.locator('#eveningLanding .du-match11-hero').evaluate(e=>e.getBoundingClientRect().y);
+      await page.evaluate(()=>window.scrollTo({top:0,behavior:'instant'}));
+      await page.waitForTimeout(220);
       entry.metrics=await page.evaluate(()=>{
         const hero=document.querySelector('#eveningLanding .du-match11-hero');
         const photo=hero?.querySelector('.du-match11-photo img');
@@ -47,7 +49,8 @@ const fs=require('fs');
         m.buttons[1].href==='#catalog',
         m.recipeLinks===3,
         m.scrollWidth<=m.viewport+6,
-        m.rotation.startsWith('matrix(0.984808, -0.173648')
+        m.rotation.startsWith('matrix(0.984808, -0.173648'),
+        m.hero.y >= -2 && m.hero.y < 120
       ];
       entry.passed=checks.every(Boolean);
       if(!entry.passed){entry.errors.push('One or more layout/interaction assertions failed: '+JSON.stringify(checks));anyFailed=true;}
