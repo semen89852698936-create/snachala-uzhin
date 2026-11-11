@@ -8409,3 +8409,61 @@ body.du-evening-mode .du-evening-back:not(.du-catalog-back):hover{
     font-size:13px!important;
   }
 }
+
+
+/* BONUS_CTA_NO_GHOST_RECTANGLE_20261111
+   The approved banner already includes the printed «Посмотреть бонус»
+   artwork. The actual #bonusRecipe is an invisible click target.
+   Remove the stale hover/focus/active overlay and tap highlight only;
+   preserve the approved artwork, click handler and keyboard focus ring. */
+#homeView .du-bonus #bonusRecipe,
+#homeView .du-bonus #bonusRecipe:hover,
+#homeView .du-bonus #bonusRecipe:active,
+#homeView .du-bonus #bonusRecipe:focus,
+#homeView .du-bonus #bonusRecipe:focus-visible {
+  background:transparent!important;
+  background-image:none!important;
+  box-shadow:none!important;
+  filter:none!important;
+  text-shadow:none!important;
+  -webkit-tap-highlight-color:transparent!important;
+}
+#homeView .du-bonus #bonusRecipe::before,
+#homeView .du-bonus #bonusRecipe::after,
+#homeView .du-bonus #bonusRecipe:is(:hover,:active,:focus,:focus-visible)::before,
+#homeView .du-bonus #bonusRecipe:is(:hover,:active,:focus,:focus-visible)::after {
+  content:none!important;
+  display:none!important;
+  background:none!important;
+  box-shadow:none!important;
+}
+#homeView .du-bonus #bonusRecipe:focus-visible {
+  outline:3px solid #fff4e6!important;
+  outline-offset:3px!important;
+}
+
+
+/* AIRFRYER_FILTER_PAPER_BUTTON_MOTION_20261111
+   Give every category filter («Все блюда», «Мясо», etc.) the same
+   lightweight interactive lift/press as the magazine paper buttons.
+   Do not change selection logic, text, artwork or filter layout. */
+#airfryer .du-airfryer-filter {
+  transition:transform .22s ease,filter .22s ease!important;
+  transform-origin:center center;
+  will-change:transform;
+  cursor:pointer;
+}
+@media (hover:hover) and (prefers-reduced-motion:no-preference) {
+  #airfryer .du-airfryer-filter:hover {
+    transform:translateY(-4px) rotate(-1deg)!important;
+    filter:drop-shadow(0 6px 5px rgba(59,25,29,.16))!important;
+  }
+}
+#airfryer .du-airfryer-filter:active {
+  transform:translateY(2px) scale(.97)!important;
+  filter:drop-shadow(0 1px 2px rgba(59,25,29,.10))!important;
+}
+@media (prefers-reduced-motion:reduce) {
+  #airfryer .du-airfryer-filter {transition:none!important}
+  #airfryer .du-airfryer-filter:is(:hover,:active){transform:none!important}
+}
