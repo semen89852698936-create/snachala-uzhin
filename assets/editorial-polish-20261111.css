@@ -631,3 +631,32 @@ html body #catalog .category-filters > button.chip{
   flex:0 0 auto!important;
   white-space:nowrap!important;
 }
+
+
+/* Chef's secret: single recipe-detail callout, 40% larger original typography.
+   Existing baseline: title 23px -> 32.2px, copy 13px -> 18.2px. */
+html body #recipeDetail .tip-card{
+  background:#713b4e!important;
+  background-image:linear-gradient(135deg,#80465a 0%,#613043 100%)!important;
+  color:#fff6ed!important;
+  border:1px solid #9b6a78!important;
+  border-radius:15px!important;
+  box-shadow:0 12px 24px rgba(69,35,49,.15)!important;
+  padding:clamp(24px,3vw,34px)!important;
+}
+html body #recipeDetail .tip-card strong{
+  display:block!important;
+  color:#fff0df!important;
+  font:normal 32.2px/1.14 'Cormorant Garamond',Georgia,serif!important;
+  margin-bottom:10px!important;
+}
+html body #recipeDetail .tip-card p{
+  color:#fff5ed!important;
+  font-size:18.2px!important;
+  line-height:1.65!important;
+  margin:0!important;
+  overflow-wrap:break-word!important;
+}
+@media(max-width:480px){
+  html body #recipeDetail .tip-card{padding:22px!important}
+}
