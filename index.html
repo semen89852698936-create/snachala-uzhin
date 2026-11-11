@@ -1922,7 +1922,7 @@ function eveningInviteText(){
  let when='сегодня в '+time;
  if(date){const d=new Date(date+'T12:00:00');if(!Number.isNaN(d.valueOf()))when=d.toLocaleDateString('ru-RU',{day:'numeric',month:'long'})+(time?' в '+time:'');}
  const dishes=menuRecipes().map(r=>r.title).join(', ');
- return (name?name+', ':'')+'приглашаю тебя '+when+' на наш '+moodPhrase+'. Давай приготовим ужин вместе, включим музыку и побудем вдвоём. В меню: '+dishes+'. Готовьте вместе. Остальное... без рецепта. ♡';
+ return (name?name+', ':'')+'приглашаю тебя '+when+' на наш '+moodPhrase+'. Давай приготовим ужин вместе, включим музыку и побудем вдвоём. В меню: '+dishes+'. Готовим вместе. Остальное... без рецепта. ♡';
 }
 function renderEveningInvite(){const preview=e$('eveningInvitePreview');if(preview)preview.textContent=eveningInviteText();}
 
