@@ -385,3 +385,58 @@ html body.du-airfryer-standalone :is(.du-airfryer-card,.du-airfryer-recipe-card)
   html body.du-catalog-standalone:not(:has(:target))
     #catalog .search-panel{scroll-margin-top:120px}
 }
+
+
+/* MOBILE_NAV_AND_CATALOG_COVER_QA_FIX_20261111
+   Chromium QA caught dark selected quick-nav paper with dark lettering.
+   Preserve the heart / airfryer symbols and paper texture. */
+@media(max-width:760px){
+  html body.du-evening-mode .du-quick-nav-mobile>a[data-quick-evening],
+  html body .du-quick-nav-mobile>a[data-quick-evening][aria-current="page"],
+  html body .du-quick-nav-mobile>a[data-quick-airfryer][aria-current="page"]{
+    position:relative!important;isolation:isolate!important;
+    color:#fff9f2!important;-webkit-text-fill-color:#fff9f2!important;
+    text-shadow:0 1px 2px rgba(33,15,19,.5)!important;
+  }
+  html body.du-evening-mode .du-quick-nav-mobile>a[data-quick-evening]::before,
+  html body .du-quick-nav-mobile>a[data-quick-evening][aria-current="page"]::before,
+  html body .du-quick-nav-mobile>a[data-quick-airfryer][aria-current="page"]::before{
+    background-color:#77172b!important;z-index:-1!important;
+    pointer-events:none!important
+  }
+  html body.du-catalog-standalone #homeView .du-hero-actions{
+    position:relative!important;z-index:10!important;
+    display:grid!important;grid-template-columns:minmax(0,1fr)!important;
+    justify-items:stretch!important;
+    width:calc(100% - 44px)!important;max-width:365px!important;
+    margin:27px 22px 20px!important;padding:0!important;gap:10px!important;
+    transform:none!important;
+  }
+  html body.du-catalog-standalone #homeView .du-hero-actions>a,
+  html body.du-catalog-standalone #homeView .du-hero-actions>button{
+    box-sizing:border-box!important;
+    width:100%!important;max-width:100%!important;min-width:0!important;
+    min-height:48px!important;justify-content:center!important;
+    margin:0!important;padding:12px 15px!important;
+    white-space:normal!important;overflow:visible!important;
+    line-height:1.4!important;text-align:center!important;
+    font-size:14px!important;z-index:5!important;
+  }
+  html body.du-catalog-standalone #homeView .du-hero-actions>a.du-jump-recipes{
+    background-color:#f8e5d2!important;color:#632438!important;
+    -webkit-text-fill-color:#632438!important
+  }
+  html body.du-catalog-standalone #catalog #heroRecipe{
+    display:flex!important;position:relative!important;
+    inset:auto!important;top:auto!important;left:auto!important;right:auto!important;bottom:auto!important;
+    transform:none!important;
+    width:min(100%,420px)!important;min-height:84px!important;
+    margin:0 0 24px!important;z-index:2!important;
+    background:#f5e5d2!important;color:#632438!important;
+    border:1px solid #d8b6a0!important;border-radius:0!important;
+    padding:16px 21px!important;text-align:left!important
+  }
+  html body.du-catalog-standalone #catalog #heroRecipe :is(small,b){
+    color:#632438!important
+  }
+}
