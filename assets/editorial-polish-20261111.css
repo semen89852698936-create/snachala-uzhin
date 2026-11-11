@@ -606,3 +606,15 @@ html body #evening .du-moods>button.du-mood:focus-visible{
   html body #evening .du-moods>button.du-mood::before,
   html body #evening .du-mood strong{transition:none!important}
 }
+
+/* 11 Nov 2026: catalog headline exactly 30% larger at each breakpoint.
+   Scoped to collection heading; other page typography remains unchanged. */
+html body #catalog .du-section-top .du-section-heading h2{
+  font-size:clamp(68.9px,7.8vw,104px)!important;
+}
+@media(max-width:760px){
+  html body #catalog .du-section-top .du-section-heading h2{font-size:80.6px!important}
+}
+@media(max-width:480px){
+  html body #catalog .du-section-top .du-section-heading h2{font-size:67.6px!important}
+}
