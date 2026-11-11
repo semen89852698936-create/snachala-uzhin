@@ -8441,3 +8441,29 @@ body.du-evening-mode .du-evening-back:not(.du-catalog-back):hover{
   outline:3px solid #fff4e6!important;
   outline-offset:3px!important;
 }
+
+
+/* AIRFRYER_FILTER_PAPER_BUTTON_MOTION_20261111
+   Give every category filter («Все блюда», «Мясо», etc.) the same
+   lightweight interactive lift/press as the magazine paper buttons.
+   Do not change selection logic, text, artwork or filter layout. */
+#airfryer .du-airfryer-filter {
+  transition:transform .22s ease,filter .22s ease!important;
+  transform-origin:center center;
+  will-change:transform;
+  cursor:pointer;
+}
+@media (hover:hover) and (prefers-reduced-motion:no-preference) {
+  #airfryer .du-airfryer-filter:hover {
+    transform:translateY(-4px) rotate(-1deg)!important;
+    filter:drop-shadow(0 6px 5px rgba(59,25,29,.16))!important;
+  }
+}
+#airfryer .du-airfryer-filter:active {
+  transform:translateY(2px) scale(.97)!important;
+  filter:drop-shadow(0 1px 2px rgba(59,25,29,.10))!important;
+}
+@media (prefers-reduced-motion:reduce) {
+  #airfryer .du-airfryer-filter {transition:none!important}
+  #airfryer .du-airfryer-filter:is(:hover,:active){transform:none!important}
+}
