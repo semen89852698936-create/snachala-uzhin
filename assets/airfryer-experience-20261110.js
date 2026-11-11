@@ -208,9 +208,10 @@
       button.classList.toggle('is-visible',window.scrollY>440&&!modalOpen);
     };
     button.addEventListener('click',()=>{
-      // A sticky header is already in view: scrollIntoView(header) can do nothing.
-      // Go to the absolute beginning of the document, without animated intermediate stops.
-      window.scrollTo({top:0,left:0,behavior:'instant'});
+      // A sticky header can already be visible: scroll to the document's actual top.
+      // Keep the same smooth motion as the header links, respecting reduced motion.
+      const reduceMotion=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      window.scrollTo({top:0,left:0,behavior:reduceMotion?'instant':'smooth'});
     });
     window.addEventListener('scroll',update,{passive:true});
     window.addEventListener('hashchange',update);
