@@ -17,7 +17,7 @@ const {chromium}=require('playwright');
           return host==='127.0.0.1'?route.continue():route.abort();
         });
         const base='http://127.0.0.1:8765/'+entry;
-        const goto=hash=>page.goto(base+'#'+hash,{waitUntil:'domcontentloaded'});
+        const goto=hash=>page.goto((hash==='my-recipes' && entry ? 'http://127.0.0.1:8765/#my-recipes' : base+'#'+hash),{waitUntil:'domcontentloaded'}); // Personal collection is on the home route; assert cross-catalogue persistence.
 
         // Favorite a real recipe through the same control the reader uses.
         await goto('recipe=tomato-basil-pasta');
