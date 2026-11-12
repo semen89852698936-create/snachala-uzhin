@@ -1515,3 +1515,148 @@ html body #duNewspaperDock.du-np-free-position #duNpPanel .du-np-popout {
     display:none!important;
   }
 }
+
+/* EXACT_APPROVED_NEWSPAPER_IMAGE_20261112
+   Original image is an unscaled, lossless copy, minus issue number.
+   All decorative typography and torn edges are supplied by the IMAGE,
+   not recreated using CSS. Only live controls are layered above it. */
+html body #duNewspaperDock #duNpPanel.du-np-dock-body {
+  margin:0!important;padding:0!important;max-height:none!important;
+  overflow:visible!important;background:transparent!important;
+  filter:drop-shadow(0 9px 10px rgba(48,30,24,.18))!important;
+}
+html body #duNewspaperDock #duNpPanel .du-np-approved-stage {
+  position:relative!important;display:block!important;isolation:isolate!important;
+  width:100%!important;height:auto!important;aspect-ratio:2048/682!important;
+  padding:0!important;margin:0!important;overflow:visible!important;
+}
+html body #duNewspaperDock #duNpPanel .du-np-approved-image {
+  display:block!important;width:100%!important;height:100%!important;
+  object-fit:fill!important;user-select:none!important;pointer-events:none!important;
+}
+html body #duNewspaperDock #duNpPanel .du-np-approved-stage button {
+  cursor:pointer!important;touch-action:manipulation!important;
+  border:0!important;box-shadow:none!important;
+}
+html body #duNewspaperDock #duNpPanel .du-np-approved-stage button:focus-visible,
+html body #duNewspaperDock #duNpPanel .du-np-approved-stage input:focus-visible {
+  outline:2px solid #912542!important;outline-offset:2px!important;
+}
+html body #duNewspaperDock #duNpPanel .du-np-pixel-drag.du-np-top {
+  position:absolute!important;left:5.2%!important;top:5.2%!important;
+  width:35%!important;height:20%!important;display:block!important;
+  padding:0!important;margin:0!important;
+  background:transparent!important;border:0!important;
+  cursor:grab!important;touch-action:none!important;
+}
+html body #duNewspaperDock #duNpPanel .du-np-pixel-drag.du-np-top:active {cursor:grabbing!important;}
+html body #duNewspaperDock #duNpPanel button.du-np-pixel-tab {
+  position:absolute!important;top:27.3%!important;height:12.4%!important;
+  z-index:2!important;padding:0!important;margin:0!important;
+  color:transparent!important;background:transparent!important;
+  font:700 clamp(9px,1.65vw,30px)/1 Georgia,serif!important;
+  text-align:center!important;
+}
+html body #duNewspaperDock #duNpPanel button.du-np-pixel-tab-kitchen {left:5.35%!important;width:10.6%!important;}
+html body #duNewspaperDock #duNpPanel button.du-np-pixel-tab-dinner {left:16.15%!important;width:11.25%!important;}
+html body #duNewspaperDock #duNpPanel button.du-np-pixel-tab-after {left:27.4%!important;width:13.45%!important;}
+/* Once a different chapter is selected, update only the changed tab artwork. */
+html body #duNewspaperDock #duNpPanel .du-np-approved-stage[data-phase="kitchen"] .du-np-pixel-tab-dinner,
+html body #duNewspaperDock #duNpPanel .du-np-approved-stage[data-phase="after"] .du-np-pixel-tab-dinner {
+  background:#fff0d9!important;color:#392520!important;
+}
+html body #duNewspaperDock #duNpPanel .du-np-approved-stage[data-phase="kitchen"] .du-np-pixel-tab-kitchen,
+html body #duNewspaperDock #duNpPanel .du-np-approved-stage[data-phase="after"] .du-np-pixel-tab-after {
+  background:#8e2344!important;color:#fff7e8!important;
+}
+html body #duNewspaperDock #duNpPanel .du-np-pixel-live-title {
+  display:none!important;position:absolute!important;z-index:3!important;
+  left:5.12%!important;top:42.1%!important;width:57.3%!important;height:17%!important;
+  box-sizing:border-box!important;padding:0 .5%!important;
+  background:#f3dfc7 url('/assets/editorial-paper-fibres-20261108.svg') repeat!important;
+  background-size:180px 180px!important;
+}
+html body #duNewspaperDock #duNpPanel .du-np-approved-stage.du-np-live .du-np-pixel-live-title {
+  display:flex!important;flex-direction:column!important;justify-content:center!important;gap:4px!important;
+}
+html body #duNewspaperDock #duNpPanel .du-np-pixel-live-title strong {
+  color:#3b2420!important;font:500 clamp(12px,2.8vw,54px)/1.07 Georgia,serif!important;
+  overflow:hidden!important;text-overflow:ellipsis!important;white-space:nowrap!important;
+}
+html body #duNewspaperDock #duNpPanel .du-np-pixel-live-title small {
+  color:#3c2622!important;font:italic clamp(9px,1.42vw,28px)/1.1 Georgia,serif!important;
+}
+html body #duNewspaperDock #duNpPanel button.du-np-pixel-prev,
+html body #duNewspaperDock #duNpPanel button.du-np-pixel-play,
+html body #duNewspaperDock #duNpPanel button.du-np-pixel-next,
+html body #duNewspaperDock #duNpPanel button.du-np-pixel-popout {
+  position:absolute!important;display:block!important;
+  border:0!important;padding:0!important;margin:0!important;
+  background:transparent!important;
+}
+html body #duNewspaperDock #duNpPanel button.du-np-pixel-prev {left:74.3%!important;top:44.8%!important;width:5.1%!important;height:14.9%!important;}
+html body #duNewspaperDock #duNpPanel button.du-np-pixel-play {left:80.2%!important;top:40.7%!important;width:7.6%!important;height:21.8%!important;border-radius:50%!important;}
+html body #duNewspaperDock #duNpPanel button.du-np-pixel-next {left:88.3%!important;top:44.8%!important;width:5.4%!important;height:14.9%!important;}
+html body #duNewspaperDock #duNpPanel button.du-np-pixel-popout {left:74.5%!important;top:71%!important;width:19.5%!important;height:13.2%!important;}
+html body #duNewspaperDock #duNpPanel .du-np-playing button.du-np-pixel-play {
+  background:#912443!important;color:#fff8ed!important;
+}
+html body #duNewspaperDock #duNpPanel .du-np-playing button.du-np-pixel-play::after {
+  content:"Ⅱ";position:absolute;inset:0;display:grid;place-items:center;
+  font:bold clamp(12px,3.4vw,58px)/1 Arial,sans-serif!important;color:#fff8ed!important;
+}
+html body #duNewspaperDock #duNpPanel .du-np-pixel-seek {
+  position:absolute!important;z-index:3!important;box-sizing:border-box!important;
+  left:5.1%!important;top:62%!important;width:88.8%!important;height:9.9%!important;
+  display:grid!important;grid-template-columns:3.5% minmax(0,1fr) 3.8%!important;
+  gap:1.4%!important;align-items:center!important;
+  pointer-events:none!important;padding:0 .3%!important;
+}
+html body #duNewspaperDock #duNpPanel .du-np-pixel-seek span {
+  opacity:0!important;text-align:center!important;
+  color:#392721!important;font:500 clamp(8px,1.13vw,21px)/1 Arial,sans-serif!important;
+}
+html body #duNewspaperDock #duNpPanel .du-np-pixel-seek input {
+  opacity:0!important;display:block!important;width:100%!important;height:100%!important;
+  min-width:0!important;margin:0!important;accent-color:#942647!important;
+  pointer-events:auto!important;cursor:pointer!important;
+}
+html body #duNewspaperDock #duNpPanel .du-np-approved-stage.du-np-live .du-np-pixel-seek {
+  background:#f2e0c9 url('/assets/editorial-paper-fibres-20261108.svg') repeat!important;
+  background-size:180px 180px!important;pointer-events:auto!important;
+}
+html body #duNewspaperDock #duNpPanel .du-np-approved-stage.du-np-live .du-np-pixel-seek span,
+html body #duNewspaperDock #duNpPanel .du-np-approved-stage.du-np-live .du-np-pixel-seek input {opacity:1!important;}
+html body #duNewspaperDock #duNpPanel .du-np-pixel-volume {
+  position:absolute!important;z-index:3!important;
+  left:9.48%!important;top:73.8%!important;width:15.6%!important;height:9.3%!important;
+  display:flex!important;align-items:center!important;pointer-events:none!important;
+}
+html body #duNewspaperDock #duNpPanel .du-np-pixel-volume input {
+  width:100%!important;height:100%!important;margin:0!important;opacity:0!important;
+  accent-color:#942647!important;pointer-events:auto!important;
+}
+html body #duNewspaperDock #duNpPanel .du-np-approved-stage.du-np-live .du-np-pixel-volume,
+html body #duNewspaperDock #duNpPanel .du-np-approved-stage.du-np-volume-touched .du-np-pixel-volume {
+  background:#f2e0c9 url('/assets/editorial-paper-fibres-20261108.svg') repeat!important;
+}
+html body #duNewspaperDock #duNpPanel .du-np-approved-stage.du-np-live .du-np-pixel-volume input,
+html body #duNewspaperDock #duNpPanel .du-np-approved-stage.du-np-volume-touched .du-np-pixel-volume input {opacity:1!important;}
+html body #duNewspaperDock #duNpPanel .du-np-feedback:not([hidden]) {
+  position:absolute!important;z-index:5!important;left:15%!important;top:81%!important;
+  padding:6px!important;margin:0!important;width:70%!important;
+  background:#fff2dc!important;color:#772b48!important;
+  font:600 12px/1.2 Arial,sans-serif!important;text-align:center!important;
+}
+html body #duNewspaperDock #duNpPanel .du-np-sr-only {
+  position:absolute!important;width:1px!important;height:1px!important;overflow:hidden!important;
+  clip:rect(0,0,0,0)!important;white-space:nowrap!important;
+}
+html body #duNewspaperDock.du-np-free-position {
+  width:min(760px,calc(100vw - 16px))!important;max-width:calc(100vw - 16px)!important;z-index:16000!important;
+}
+@media(max-width:600px){
+  html body #duNewspaperDock #duNpPanel .du-np-pixel-live-title strong{font-size:clamp(10px,3vw,17px)!important;}
+  html body #duNewspaperDock #duNpPanel .du-np-pixel-live-title small{font-size:clamp(8px,1.8vw,12px)!important;}
+  html body #duNewspaperDock #duNpPanel .du-np-pixel-tab{font-size:clamp(8px,2.4vw,13px)!important;}
+}
