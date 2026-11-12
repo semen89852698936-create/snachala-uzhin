@@ -231,6 +231,8 @@
  */
 (function () {
   'use strict';
+  // This module also exports pure search helpers for Node-based regressions.
+  if (typeof document === 'undefined') return;
   const feminine = new Set([1, 2, 13, 14, 15, 26, 32, 39, 40, 41, 49, 56, 58, 61, 62, 67, 68, 69, 70, 72, 79, 80, 88]);
   const neuter = new Set([11, 43, 100]);
   const masculine = new Set([17, 21, 37, 38, 42, 48, 59, 60, 64, 76, 83, 87, 95, 98]);
@@ -294,6 +296,7 @@
    A single shared prototype player is mounted on all three site routes.
    Only the explicit prototype branch contains this loader. */
 (() => {
+  if (typeof document === 'undefined') return;
   if(document.getElementById('duNativePlayerLoader')) return;
   const script=document.createElement('script');
   script.id='duNativePlayerLoader';
