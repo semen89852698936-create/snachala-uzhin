@@ -1583,7 +1583,8 @@ html body.du-evening-mode #evening .du-moods > button.du-mood[data-mood="cozy"] 
    Original selection cue (formerly drawn behind the hidden live <strong>)
    is now drawn over each already-approved printed image.
    Scope: only selected Evening mood; no player, photos, grid or interactions. */
-html body #evening .du-moods > button.du-mood:is(.is-selected,[aria-pressed="true"])::after {
+html body #evening .du-moods > button.du-mood[data-mood]:is(.is-selected,[aria-pressed="true"])::after,
+html body.du-evening-mode #evening .du-moods > button.du-mood[data-mood]:is(.is-selected,[aria-pressed="true"])::after {
   content:""!important;
   display:block!important;
   position:absolute!important;
