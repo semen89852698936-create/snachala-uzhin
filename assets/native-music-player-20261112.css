@@ -925,3 +925,42 @@ html body #duNewspaperDock #duNpPanel .du-np-notice a {
   text-underline-offset:2px;
   font-weight:800;
 }
+
+
+/* DRAGGABLE_HALF_SIZE_EDITORIAL_PLAYER_20261112
+   The open player is half-size during playback, and its newspaper masthead is
+   a drag handle for mouse and touch. Keep the original newspaper artwork. */
+html body #music .du-music-total,
+html body #music .du-music-legal {
+  display:none!important;
+}
+html body #duNewspaperDock.du-np-dock.du-np-free-position {
+  position:fixed!important;
+  left:var(--du-player-left,16px)!important;
+  top:var(--du-player-top,16px)!important;
+  right:auto!important;
+  bottom:auto!important;
+  transform:scale(var(--du-player-scale,1))!important;
+  transform-origin:top left!important;
+}
+html body #duNewspaperDock #duNpPanel .du-np-top {
+  cursor:grab!important;
+  touch-action:none!important;
+  user-select:none!important;
+}
+html body #duNewspaperDock #duNpPanel .du-np-top:active {
+  cursor:grabbing!important;
+}
+html body #duNewspaperDock #duNpPanel .du-np-top button {
+  cursor:pointer!important;
+  touch-action:manipulation!important;
+}
+html body #duNewspaperDock #duNpPanel .du-np-dock-paper {
+  grid-template-areas:
+    "masthead masthead"
+    "tabs tabs"
+    "now transport"
+    "popout popout"
+    "colophon colophon"
+    "feedback feedback"!important;
+}
