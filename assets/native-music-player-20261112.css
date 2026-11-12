@@ -940,7 +940,7 @@ html body #duNewspaperDock.du-np-dock.du-np-free-position {
   top:var(--du-player-top,16px)!important;
   right:auto!important;
   bottom:auto!important;
-  transform:scale(var(--du-player-scale,1))!important;
+  transform:none!important;
   transform-origin:top left!important;
 }
 html body #duNewspaperDock #duNpPanel .du-np-top {
@@ -1011,10 +1011,7 @@ html body #music > #duNewspaperDock.du-np-dock:not(.du-np-free-position) #duNpPa
 html body #music > #duNewspaperDock.du-np-dock:not(.du-np-free-position) #duNpLauncher[aria-expanded="true"] {
   display:none!important;
 }
-@media(min-width:900px) {
-  html body #music > #duNewspaperDock.du-np-dock:not(.du-np-free-position).du-np-is-playing {
-    width:50%!important;
-    margin-left:auto!important;
-    margin-right:auto!important;
-  }
-}
+
+/* PLAYER_SIZE_CONSTANT_20261112
+   The shared player has the same width before, during, and after playback.
+   Dragged player likewise keeps its fixed size without scaling. */
