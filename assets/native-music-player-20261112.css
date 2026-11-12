@@ -1,0 +1,2189 @@
+/* Газетный плеер · СНАЧАЛА УЖИН · отдельная тестовая ветка.
+   Не меняет существующие фотографии, карточки, рецепты и навигацию. */
+
+/* Отказ от встроенного Spotify в тестовой версии для РФ. */
+#music .du-music-spotify-extra,
+#music .du-music-spotify-extra[hidden] { display:none!important; }
+#music .du-music-legal {font-size:clamp(14px,1.2vw,17px);line-height:1.5;}
+
+.du-np-inline {
+  margin:19px 0 21px;
+  position:relative;
+  min-width:0;
+}
+.du-np-shadow {
+  display:block;
+  filter:drop-shadow(3px 8px 7px rgba(58,34,28,.24));
+  transition:filter .2s ease,transform .2s ease;
+}
+.du-np-inline:hover .du-np-shadow {
+  filter:drop-shadow(3px 11px 9px rgba(58,34,28,.28));
+  transform:translateY(-1px) rotate(.12deg);
+}
+.du-np-sheet {
+  position:relative;
+  z-index:0;
+  overflow:hidden;
+  isolation:isolate;
+  min-height:195px;
+  padding:23px 20px 23px;
+  background-color:#f3e8d2;
+  background-image:
+    url('/assets/editorial-paper-fibres-20261108.svg'),
+    repeating-linear-gradient(105deg,rgba(81,61,55,.018) 0 1px,transparent 1px 9px),
+    linear-gradient(115deg,#fff8e8,#e9d7ba);
+  background-repeat:repeat,repeat,no-repeat;
+  background-size:192px 192px,auto,100% 100%;
+  clip-path:polygon(
+    1% 2%,8% 1%,14% 3%,22% .4%,30% 2%,38% .4%,45% 2.1%,53% .3%,
+    60% 2%,68% .8%,76% 2.4%,84% .6%,92% 2.2%,99% 1%,
+    99.5% 10%,99.2% 24%,99.6% 39%,99.2% 53%,99.8% 69%,99.1% 83%,99% 98%,
+    91% 99.3%,82% 97.8%,74% 99.4%,65% 98.4%,57% 99.5%,
+    48% 98%,40% 99.2%,31% 98.3%,23% 99.5%,15% 98.1%,7% 99.2%,
+    .7% 98%,.5% 88%,.8% 74%,.2% 61%,.8% 44%,.3% 29%,.6% 15%);
+}
+.du-np-sheet::before {
+  content:"";
+  position:absolute;
+  z-index:-1;
+  inset:10px 9px;
+  opacity:.20;
+  pointer-events:none;
+  background-image:
+    repeating-linear-gradient(0deg,transparent 0 8px,rgba(81,52,51,.3) 8px 9px,transparent 9px 14px),
+    linear-gradient(90deg,transparent 0 47%,rgba(115,71,61,.4) 47.2% 47.6%,transparent 47.8% 100%);
+  background-size:46% 170px,100% 100%;
+  background-repeat:repeat-x,no-repeat;
+  -webkit-mask-image:linear-gradient(90deg,#000 0,transparent 66%,#000 96%);
+  mask-image:linear-gradient(90deg,#000 0,transparent 66%,#000 96%);
+}
+.du-np-sheet::after {
+  content:"";
+  position:absolute;
+  z-index:-1;
+  inset:11px;
+  border-top:1px solid rgba(105,68,61,.4);
+  border-bottom:1px solid rgba(105,68,61,.3);
+  pointer-events:none;
+}
+.du-np-kicker {
+  display:block;
+  margin:0 0 9px;
+  font:800 10px/1.4 Manrope,Arial,sans-serif;
+  color:#775348;
+  letter-spacing:.11em;
+  text-transform:uppercase;
+}
+.du-np-headline {
+  font:600 clamp(29px,2.45vw,40px)/.95 "Cormorant Garamond",Georgia,serif;
+  letter-spacing:-.045em;
+  color:#45222d;
+  margin:2px 0 12px;
+  max-width:100%;
+}
+.du-np-headline i {
+  font-weight:600;
+  color:#a03048;
+  text-decoration:underline;
+  text-decoration-thickness:2px;
+  text-underline-offset:5px;
+}
+.du-np-headline span {
+  font:400 24px/1 Georgia,serif;
+  position:absolute;
+  right:23px;
+  top:43px;
+  transform:rotate(-10deg);
+  color:#aa4556;
+}
+.du-np-phase-name {
+  display:block;
+  font:800 13px/1.45 Manrope,Arial,sans-serif;
+  color:#623443;
+  letter-spacing:.035em;
+  margin:0 0 8px;
+}
+.du-np-trackline {
+  font:600 12px/1.4 Manrope,Arial,sans-serif;
+  color:#775b56;
+  margin:0 0 14px;
+  min-height:31px;
+}
+.du-np-start {
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  max-width:100%;
+  min-height:44px;
+  border:1.5px solid #753141;
+  border-radius:0;
+  background:#672d3e;
+  padding:11px 18px;
+  color:#fff7ee;
+  font:800 13px/1.15 Manrope,Arial,sans-serif;
+  letter-spacing:.015em;
+  cursor:pointer;
+  transition:background-color .2s,transform .18s,box-shadow .18s;
+}
+.du-np-start:hover {background:#9c394b;transform:translateY(-2px);box-shadow:2px 3px 0 rgba(67,34,39,.18);}
+.du-np-start:active {transform:translateY(0);}
+.du-np-corner {
+  position:absolute;right:20px;bottom:15px;
+  color:#8a6c61;
+  font:800 12px Georgia,serif;
+}
+.du-np-start:focus-visible,
+.du-np-dock button:focus-visible,
+.du-np-dock input:focus-visible {outline:3px solid #b9506b!important;outline-offset:3px!important;}
+
+.du-np-dock {
+  position:fixed;
+  bottom:20px;
+  left:clamp(12px,2vw,26px);
+  z-index:15000;
+  width:min(390px,calc(100vw - 24px));
+  font-family:Manrope,Arial,sans-serif;
+  pointer-events:none;
+}
+.du-np-dock > * {pointer-events:auto;}
+.du-np-launcher {
+  display:flex;
+  align-items:center;
+  gap:9px;
+  width:max-content;
+  max-width:100%;
+  min-height:49px;
+  padding:10px 18px;
+  border:0;
+  border-radius:2px;
+  color:#fff8ec;
+  background:#682d3f;
+  box-shadow:0 6px 22px rgba(52,19,32,.3);
+  cursor:pointer;
+  font:800 15px Manrope,Arial,sans-serif;
+  transition:transform .2s,background-color .2s;
+}
+.du-np-launcher span {font-size:22px;line-height:1;}
+.du-np-launcher:hover {transform:translateY(-3px);background:#8d344b;}
+.du-np-launcher.du-np-is-playing {background:#9f3950;}
+.du-np-dock-body {
+  margin-bottom:12px;
+  max-height:min(580px,calc(100dvh - 110px));
+  overflow:auto;
+  scrollbar-width:thin;
+  filter:drop-shadow(0 8px 16px rgba(53,21,30,.35));
+}
+.du-np-dock-body[hidden] {display:none!important;}
+.du-np-dock-paper {
+  position:relative;
+  isolation:isolate;
+  padding:25px 23px 27px;
+  background-color:#efe0c7;
+  background-image:url('/assets/editorial-paper-fibres-20261108.svg'),linear-gradient(138deg,#fff8e8 0%,#ecdac3 70%,#e5d0b2);
+  background-size:192px 192px,100% 100%;
+  clip-path:polygon(
+    .8% 2%,8% .7%,15% 2%,23% .5%,31% 1.8%,39% .8%,47% 2%,55% .4%,
+    63% 1.7%,71% .5%,80% 2%,88% .8%,99% 1.5%,
+    99.4% 11%,99.1% 24%,99.6% 38%,99.2% 52%,99.7% 66%,99.2% 80%,99% 98%,
+    92% 99%,83% 97.9%,75% 99%,67% 98%,59% 99.1%,51% 98%,
+    42% 99.3%,34% 98.1%,25% 99%,17% 98.1%,9% 99.2%,.7% 98%,
+    .4% 85%,.9% 70%,.4% 55%,.8% 41%,.4% 26%,.7% 12%);
+}
+.du-np-dock-paper::before {
+  position:absolute;content:"";z-index:-1;inset:10px;
+  opacity:.12;pointer-events:none;
+  background:repeating-linear-gradient(0deg,rgba(78,48,40,.5) 0 1px,transparent 1px 13px);
+}
+.du-np-top {
+  display:flex;justify-content:space-between;gap:8px;align-items:flex-start;
+  padding-bottom:10px;
+  border-bottom:1px solid rgba(101,57,50,.45);
+}
+.du-np-top small {
+  display:block;font:800 10px/1.35 Manrope,Arial,sans-serif;
+  letter-spacing:.11em;color:#794a4b;
+}
+.du-np-top strong {
+  display:block;
+  margin-top:5px;
+  font:600 clamp(28px,7vw,38px)/.92 "Cormorant Garamond",Georgia,serif;
+  letter-spacing:-.03em;
+  color:#472833;
+}
+.du-np-top strong i {color:#a4364a;text-decoration:underline;text-decoration-thickness:2px;text-underline-offset:5px;}
+.du-np-close {
+  border:1px solid rgba(108,61,51,.45);background:transparent;
+  color:#633543;font-size:24px;line-height:1;cursor:pointer;
+  width:34px;height:34px;flex:0 0 34px;
+}
+.du-np-tabs {
+  display:grid;grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:5px;margin:18px 0 18px;
+}
+.du-np-tabs button {
+  min-width:0;
+  padding:9px 4px;
+  border:1px solid #b7a28d;
+  border-radius:0;
+  background:rgba(255,248,235,.48);
+  color:#653d49;
+  font:800 clamp(10px,2.6vw,12px)/1.3 Manrope,Arial,sans-serif;
+  cursor:pointer;
+}
+.du-np-tabs button[aria-pressed="true"] {background:#682e41;color:#fff8e9;border-color:#682e41;}
+.du-np-now {margin-bottom:8px;text-align:center;}
+.du-np-stamp {
+  display:inline-block;border:2px solid #a43c4f;
+  padding:2px 8px;margin-bottom:10px;
+  transform:rotate(-5deg);
+  font:900 10px Manrope,Arial,sans-serif;
+  letter-spacing:.18em;color:#a43c4f;
+}
+.du-np-now strong {
+  display:block;
+  font:600 clamp(27px,6.4vw,37px)/1.05 "Cormorant Garamond",Georgia,serif;
+  letter-spacing:-.02em;
+  color:#512b3b;
+}
+.du-np-now small {display:block;font:700 12px/1.5 Manrope,Arial,sans-serif;color:#816257;margin-top:6px;}
+.du-np-transport {display:flex;justify-content:center;align-items:center;gap:25px;margin:14px 0 17px;}
+.du-np-transport button {
+  border:0;
+  width:43px;height:43px;
+  background:transparent;color:#6b2d40;
+  cursor:pointer;
+  font-size:23px;
+}
+.du-np-transport .du-np-main-play {
+  width:64px;height:64px;border:2px solid #622d3e;
+  border-radius:50%;
+  background:#682e41;
+  color:#fff6e9;
+  font-size:26px;
+  transition:transform .2s,background .2s;
+}
+.du-np-main-play:hover {transform:scale(1.06);background:#983c51;}
+.du-np-timeline {display:flex;align-items:center;gap:10px;margin:0 0 14px;}
+.du-np-timeline span {font:700 11px/1 Manrope,Arial,sans-serif;color:#765248;min-width:30px;}
+.du-np-timeline input {flex:1;min-width:0;accent-color:#973c53;cursor:pointer;}
+.du-np-bottom {display:flex;align-items:center;gap:10px;padding:12px 0;border-top:1px solid #c5af9c;border-bottom:1px solid #c5af9c;}
+.du-np-bottom label {white-space:nowrap;font:700 11px Manrope,Arial,sans-serif;color:#704d46;}
+.du-np-bottom input {min-width:35px;flex:1;accent-color:#973c53;}
+.du-np-bottom span {white-space:nowrap;font:800 11px Manrope,Arial,sans-serif;color:#704d46;}
+.du-np-notice {font:600 11px/1.48 Manrope,Arial,sans-serif;color:#795d53;margin:15px 2px 0;}
+.du-np-feedback {font:700 12px/1.4 Manrope,Arial,sans-serif;color:#9b3445;margin:10px 0 0;}
+.du-np-feedback[hidden] {display:none!important;}
+.du-np-error {margin:12px;color:#9b3445;}
+@media(max-width:760px){
+  .du-np-dock {bottom:10px;left:10px;width:min(390px,calc(100vw - 20px));}
+  .du-np-dock-body {max-height:calc(100dvh - 85px);}
+  .du-np-dock-paper {padding:19px 18px 22px;}
+  .du-np-headline {font-size:clamp(27px,8vw,35px);}
+  .du-np-kicker {font-size:10px;}
+  .du-np-sheet {padding:20px 17px;min-height:185px;}
+}
+@media(prefers-reduced-motion:reduce){
+ .du-np-shadow,.du-np-start,.du-np-launcher,.du-np-main-play {transition:none!important;}
+}
+
+
+/* NEWSPRINT_PLAYER_BUTTON_LAYER_FIX_20261112
+   Sitewide legacy button::before applies an opaque paper background with
+   !important, masking transport icons. Native player controls have their own
+   actual background and must not inherit that overlay or its hover clones. */
+html body .du-np-dock button::before,
+html body .du-np-dock button::after,
+html body .du-np-inline button::before,
+html body .du-np-inline button::after {
+  content:none!important;
+  display:none!important;
+  background:none!important;
+  box-shadow:none!important;
+}
+html body .du-np-dock .du-np-transport button {
+  background:transparent!important;
+  background-image:none!important;
+  color:#692d42!important;
+  border:0!important;
+  border-radius:0!important;
+  box-shadow:none!important;
+}
+html body .du-np-dock .du-np-transport button.du-np-main-play {
+  background:#682e41!important;
+  background-color:#682e41!important;
+  background-image:none!important;
+  border:2px solid #622d3e!important;
+  color:#fff8ef!important;
+  border-radius:50%!important;
+}
+html body .du-np-dock .du-np-transport button.du-np-main-play:hover {
+  background:#983c51!important;
+}
+html body .du-np-dock .du-np-launcher,
+html body .du-np-dock .du-np-launcher:is(:hover,:focus,:active) {
+  background:#682d3f!important;
+  background-image:none!important;
+  color:#fff8ec!important;
+  box-shadow:0 6px 22px rgba(52,19,32,.3)!important;
+}
+html body .du-np-dock .du-np-tabs button {
+  background:rgba(255,248,235,.48)!important;
+  background-image:none!important;
+  color:#653d49!important;
+  border:1px solid #b7a28d!important;
+}
+html body .du-np-dock .du-np-tabs button[aria-pressed="true"] {
+  background:#682e41!important;
+  background-image:none!important;
+  color:#fff8e9!important;
+  border:1px solid #682e41!important;
+}
+html body .du-np-dock .du-np-close {
+  background:transparent!important;
+  background-image:none!important;
+  color:#633543!important;
+}
+html body .du-np-inline button.du-np-start {
+  background:#672d3e!important;
+  background-image:none!important;
+  color:#fff7ee!important;
+  border:1.5px solid #753141!important;
+}
+html body .du-np-inline button.du-np-start:hover {
+  background:#9c394b!important;
+  background-image:none!important;
+}
+
+
+/* WIN_GLOBAL_IS_SPECIFICITY_20261112
+ * Legacy editorial button rules use :is(...:not(#id)) and therefore an ID-
+ * level !important specificity. Two explicit real player IDs are required,
+ * or the global transparent-paper state wins despite source ordering. */
+html body #duNewspaperDock #duNpPanel .du-np-transport button.du-np-main-play,
+html body #duNewspaperDock #duNpPanel .du-np-transport button.du-np-main-play:is(:hover,:focus,:active) {
+  background:#682e41!important;
+  background-color:#682e41!important;
+  background-image:none!important;
+  border:2px solid #622d3e!important;
+  border-radius:50%!important;
+  color:#fff8ef!important;
+  box-shadow:none!important;
+}
+html body #duNewspaperDock #duNpPanel .du-np-transport button:not(.du-np-main-play) {
+  background:transparent!important;
+  background-image:none!important;
+  border:0!important;
+  color:#692d42!important;
+}
+html body #duNewspaperDock #duNpPanel .du-np-tabs button {
+  background:rgba(255,248,235,.65)!important;
+  background-image:none!important;
+  color:#653d49!important;
+  border:1px solid #b7a28d!important;
+}
+html body #duNewspaperDock #duNpPanel .du-np-tabs button[aria-pressed="true"] {
+  background:#682e41!important;
+  background-image:none!important;
+  color:#fff8e9!important;
+  border:1px solid #682e41!important;
+}
+html body #duNewspaperDock #duNpLauncher {
+  background:#682d3f!important;
+  background-image:none!important;
+  color:#fff8ec!important;
+}
+html body #homeView #music .du-np-inline button.du-np-start {
+  background:#672d3e!important;
+  background-image:none!important;
+  color:#fff7ee!important;
+  border:1.5px solid #753141!important;
+}
+html body #homeView #music .du-np-inline button.du-np-start:is(:hover,:focus) {
+  background:#9c394b!important;
+  background-image:none!important;
+  color:#fff7ee!important;
+}
+
+
+/* Optional independent window. Unlike a full-page reload, its document stays
+   open while the visitor navigates the main website. */
+html body #duNewspaperDock #duNpPanel .du-np-popout {
+  display:block!important;
+  width:100%!important;
+  min-height:42px!important;
+  margin:12px 0 0!important;
+  padding:10px 7px!important;
+  border:1px dashed #9d7769!important;
+  border-radius:0!important;
+  background:rgba(255,248,235,.5)!important;
+  background-image:none!important;
+  color:#753249!important;
+  text-align:center!important;
+  cursor:pointer;
+  font:800 12px/1.38 Manrope,Arial,sans-serif!important;
+  text-decoration:underline;
+  text-underline-offset:3px;
+}
+html body #duNewspaperDock #duNpPanel .du-np-popout:hover {
+  background:rgba(240,223,204,.9)!important;
+  transform:translateY(-1px)!important;
+}
+body.du-np-standalone #duNewspaperDock #duNpPanel .du-np-popout{
+  display:none!important;
+}
+
+
+/* Vector transport symbols are independent of platform-specific font glyphs. */
+html body #duNewspaperDock #duNpPanel .du-np-transport .du-np-svg {
+  display:block!important;
+  width:27px!important;
+  height:27px!important;
+  margin:0 auto!important;
+  overflow:visible!important;
+  pointer-events:none;
+  opacity:1!important;
+  transform:none!important;
+}
+html body #duNewspaperDock #duNpPanel .du-np-transport button.du-np-main-play .du-np-svg {
+  width:29px!important;
+  height:29px!important;
+}
+html body #duNewspaperDock #duNpPanel .du-np-transport button {
+  padding:0!important;
+  display:flex!important;
+  align-items:center!important;
+  justify-content:center!important;
+}
+
+
+/* RECTANGULAR_NEWSLETTER_PLAYER_20261112
+   A narrow landscape newspaper clipping, never a large square widget.
+   720px desktop sheet ~220-240px tall; slim responsive mobile strip.
+   Uses actual masthead, double rules, justified ink text and thin columns.
+   Music controls, pointer events and licensed/demo audio logic unchanged. */
+html body #duNewspaperDock.du-np-dock {
+  width:min(720px,calc(100vw - 24px))!important;
+  left:clamp(10px,2vw,26px)!important;
+  bottom:12px!important;
+}
+html body #duNewspaperDock #duNpPanel.du-np-dock-body {
+  max-height:calc(100dvh - 92px)!important;
+  margin-bottom:8px!important;
+  overflow-y:auto!important;
+}
+html body #duNewspaperDock #duNpPanel .du-np-dock-paper {
+  display:grid!important;
+  grid-template-columns:minmax(0,1fr) minmax(165px,210px)!important;
+  grid-template-areas:
+    "masthead masthead"
+    "tabs tabs"
+    "now transport"
+    "timeline volume"
+    "notice popout"
+    "colophon colophon"
+    "feedback feedback"!important;
+  gap:0 16px!important;
+  padding:15px 25px 13px!important;
+  background-image:
+    repeating-linear-gradient(0deg,transparent 0 12px,rgba(102,76,57,.027) 12px 12.6px,transparent 12.6px 15px),
+    url('/assets/editorial-paper-fibres-20261108.svg'),
+    linear-gradient(102deg,#fcf3df 0%,#f4e7cf 50%,#ead7b9 100%)!important;
+  background-repeat:repeat,repeat,no-repeat!important;
+  background-size:100% 100%,192px 192px,100% 100%!important;
+  clip-path:polygon(
+    .4% 1.7%,5% .7%,10% 1.8%,15% .4%,21% 1.6%,27% .5%,33% 1.8%,
+    40% .5%,46% 1.7%,52% .4%,58% 1.6%,64% .5%,70% 1.8%,
+    77% .5%,83% 1.6%,89% .4%,95% 1.8%,99.4% .8%,
+    99.7% 12%,99.2% 29%,99.8% 48%,99.1% 63%,99.6% 82%,99.2% 98%,
+    94% 99.3%,87% 98.1%,80% 99.5%,73% 98.2%,65% 99.5%,
+    58% 98.1%,50% 99.6%,43% 98.2%,35% 99.4%,28% 98.1%,
+    20% 99.4%,13% 98.2%,6% 99.4%,.7% 98%,
+    .3% 85%,.8% 69%,.3% 54%,.7% 37%,.3% 20%
+  )!important;
+}
+html body #duNewspaperDock #duNpPanel .du-np-dock-paper::before {
+  /* Faint, genuinely printed editorial columns, not a glossy gradient. */
+  content:"" !important;
+  z-index:-1!important;
+  inset:11px 15px 11px!important;
+  background:
+    linear-gradient(90deg,transparent 0 46.5%,rgba(94,66,54,.22) 46.6% 46.7%,transparent 46.8% 100%),
+    repeating-linear-gradient(0deg,rgba(81,57,45,.32) 0 1px,transparent 1px 5px)!important;
+  background-size:100% 100%,36% 68px!important;
+  background-repeat:no-repeat,repeat-x!important;
+  opacity:.16!important;
+  pointer-events:none!important;
+}
+html body #duNewspaperDock #duNpPanel .du-np-top {
+  grid-area:masthead!important;
+  min-width:0!important;
+  align-items:center!important;
+  margin:0 0 7px!important;
+  padding:0 0 5px!important;
+  border-bottom:3px double rgba(74,44,37,.74)!important;
+}
+html body #duNewspaperDock #duNpPanel .du-np-masthead {
+  display:flex!important;
+  align-items:baseline!important;
+  flex-wrap:wrap!important;
+  min-width:0!important;
+  column-gap:13px!important;
+  row-gap:1px!important;
+}
+html body #duNewspaperDock #duNpPanel .du-np-top small {
+  flex:1 0 100%!important;
+  font-size:9px!important;
+  font-weight:900!important;
+  line-height:1.2!important;
+  letter-spacing:.16em!important;
+  color:#503330!important;
+}
+html body #duNewspaperDock #duNpPanel .du-np-top strong {
+  display:block!important;
+  margin:0!important;
+  font:700 clamp(25px,2.5vw,32px)/.96 "Cormorant Garamond",Georgia,serif!important;
+  text-transform:uppercase!important;
+  letter-spacing:-.037em!important;
+  white-space:normal!important;
+  color:#382729!important;
+}
+html body #duNewspaperDock #duNpPanel .du-np-top strong i {
+  text-decoration:none!important;
+  color:#963c4d!important;
+}
+html body #duNewspaperDock #duNpPanel .du-np-edition {
+  flex:1 0 auto!important;
+  font:900 9px/1.3 Manrope,Arial,sans-serif!important;
+  letter-spacing:.10em!important;
+  color:#6e4b44!important;
+  text-align:right!important;
+  white-space:nowrap!important;
+}
+html body #duNewspaperDock #duNpPanel .du-np-close {
+  flex:0 0 27px!important;
+  width:27px!important;
+  height:27px!important;
+  min-width:27px!important;
+  min-height:27px!important;
+  font-size:19px!important;
+}
+html body #duNewspaperDock #duNpPanel .du-np-tabs {
+  grid-area:tabs!important;
+  display:flex!important;
+  gap:5px!important;
+  margin:0 0 10px!important;
+  padding:0 0 7px!important;
+  border-bottom:1px solid rgba(92,65,51,.37)!important;
+}
+html body #duNewspaperDock #duNpPanel .du-np-tabs button {
+  flex:0 1 auto!important;
+  min-height:29px!important;
+  padding:6px 15px!important;
+  font-size:11px!important;
+}
+html body #duNewspaperDock #duNpPanel .du-np-now {
+  grid-area:now!important;
+  display:grid!important;
+  grid-template-columns:minmax(0,1fr) 53px!important;
+  grid-template-rows:auto auto!important;
+  text-align:left!important;
+  align-content:center!important;
+  min-width:0!important;
+  margin:0 0 8px!important;
+  gap:1px 9px!important;
+}
+html body #duNewspaperDock #duNpPanel .du-np-now .du-np-stamp {
+  grid-column:2!important;
+  grid-row:1 / span 2!important;
+  justify-self:center!important;
+  align-self:center!important;
+  margin:0!important;
+  padding:3px 5px!important;
+  transform:rotate(-7deg)!important;
+  font-size:10px!important;
+}
+html body #duNewspaperDock #duNpPanel .du-np-now strong {
+  grid-column:1!important;
+  grid-row:1!important;
+  display:block!important;
+  font:700 clamp(21px,2.2vw,30px)/1.05 "Cormorant Garamond",Georgia,serif!important;
+  text-align:left!important;
+  letter-spacing:-.026em!important;
+  overflow-wrap:anywhere!important;
+  margin:0!important;
+}
+html body #duNewspaperDock #duNpPanel .du-np-now small {
+  grid-column:1!important;
+  grid-row:2!important;
+  margin:0!important;
+  font:700 11px/1.4 Manrope,Arial,sans-serif!important;
+  text-align:left!important;
+  color:#735147!important;
+}
+html body #duNewspaperDock #duNpPanel .du-np-transport {
+  grid-area:transport!important;
+  display:flex!important;
+  justify-content:flex-end!important;
+  align-items:center!important;
+  gap:9px!important;
+  margin:0 0 6px!important;
+  min-width:0!important;
+}
+html body #duNewspaperDock #duNpPanel .du-np-transport button:not(.du-np-main-play) {
+  width:34px!important;height:36px!important;
+  min-width:34px!important;min-height:36px!important;
+}
+html body #duNewspaperDock #duNpPanel .du-np-transport button.du-np-main-play {
+  width:49px!important;height:49px!important;
+  min-width:49px!important;min-height:49px!important;
+}
+html body #duNewspaperDock #duNpPanel .du-np-timeline {
+  grid-area:timeline!important;
+  min-width:0!important;
+  margin:0 0 5px!important;
+  gap:6px!important;
+}
+html body #duNewspaperDock #duNpPanel .du-np-bottom {
+  grid-area:volume!important;
+  min-width:0!important;
+  padding:0!important;
+  margin:0 0 5px!important;
+  border:0!important;
+  gap:7px!important;
+}
+html body #duNewspaperDock #duNpPanel .du-np-bottom label {
+  font-size:10px!important;
+}
+html body #duNewspaperDock #duNpPanel .du-np-notice {
+  grid-area:notice!important;
+  min-width:0!important;
+  margin:2px 0 0!important;
+  padding:3px 0 0!important;
+  font-size:10px!important;
+  line-height:1.25!important;
+}
+html body #duNewspaperDock #duNpPanel .du-np-popout {
+  grid-area:popout!important;
+  align-self:start!important;
+  min-height:29px!important;
+  width:100%!important;
+  margin:0!important;
+  padding:6px 9px!important;
+  font-size:10px!important;
+  line-height:1.2!important;
+}
+html body #duNewspaperDock #duNpPanel .du-np-print-colophon {
+  grid-area:colophon!important;
+  min-width:0!important;
+  display:flex!important;
+  align-items:center!important;
+  justify-content:space-between!important;
+  flex-wrap:wrap!important;
+  gap:3px 12px!important;
+  margin:6px 0 0!important;
+  padding:4px 0 0!important;
+  border-top:1px solid rgba(83,54,41,.55)!important;
+  color:#77564a!important;
+  font:900 8px/1.3 Manrope,Arial,sans-serif!important;
+  letter-spacing:.08em!important;
+  text-transform:uppercase!important;
+}
+html body #duNewspaperDock #duNpPanel .du-np-feedback {
+  grid-area:feedback!important;
+  margin:4px 0 0!important;
+}
+
+/* The three newspaper clippings must not become huge sub-cards. */
+#music .du-np-inline {margin:10px 0 13px!important;}
+#music .du-np-sheet {
+  min-height:148px!important;
+  padding:16px 17px 14px!important;
+}
+#music .du-np-kicker {font-size:9px!important;margin:0 0 6px!important;}
+#music .du-np-headline {font-size:clamp(23px,2.4vw,30px)!important;margin:0 0 7px!important;}
+#music .du-np-phase-name {font-size:11px!important;margin:0 0 3px!important;}
+#music .du-np-trackline {min-height:0!important;font-size:10px!important;line-height:1.3!important;margin:0 0 9px!important;}
+#music .du-np-start {min-height:34px!important;padding:7px 12px!important;font-size:11px!important;}
+#music .du-np-corner {right:13px!important;bottom:14px!important;font-size:10px!important;}
+
+@media(max-width:620px){
+  html body #duNewspaperDock.du-np-dock {
+    width:calc(100vw - 16px)!important;
+    bottom:7px!important;left:8px!important;
+  }
+  html body #duNewspaperDock #duNpPanel.du-np-dock-body {
+    margin-bottom:5px!important;
+    max-height:calc(100dvh - 67px)!important;
+  }
+  html body #duNewspaperDock #duNpPanel .du-np-dock-paper {
+    grid-template-columns:minmax(0,1fr) 136px!important;
+    grid-template-areas:
+      "masthead masthead"
+      "tabs tabs"
+      "now transport"
+      "timeline timeline"
+      "volume popout"
+      "notice notice"
+      "colophon colophon"
+      "feedback feedback"!important;
+    gap:0 7px!important;
+    padding:11px 14px 10px!important;
+  }
+  html body #duNewspaperDock #duNpPanel .du-np-top {
+    margin:0 0 5px!important;padding:0 0 5px!important;
+  }
+  html body #duNewspaperDock #duNpPanel .du-np-top small {
+    font-size:8px!important;
+  }
+  html body #duNewspaperDock #duNpPanel .du-np-top strong {
+    font-size:clamp(20px,5.4vw,26px)!important;
+  }
+  html body #duNewspaperDock #duNpPanel .du-np-edition{
+    font-size:8px!important;
+    text-align:left!important;
+  }
+  html body #duNewspaperDock #duNpPanel .du-np-masthead {
+    row-gap:2px!important;column-gap:6px!important;
+  }
+  html body #duNewspaperDock #duNpPanel .du-np-close {
+    width:24px!important;height:24px!important;
+    min-width:24px!important;min-height:24px!important;
+  }
+  html body #duNewspaperDock #duNpPanel .du-np-tabs {
+    gap:4px!important;margin-bottom:6px!important;padding-bottom:5px!important;
+  }
+  html body #duNewspaperDock #duNpPanel .du-np-tabs button {
+    padding:5px 8px!important;
+    min-height:27px!important;font-size:10px!important;
+  }
+  html body #duNewspaperDock #duNpPanel .du-np-now {
+    grid-template-columns:minmax(0,1fr) 36px!important;
+    gap:1px 4px!important;
+    margin-bottom:4px!important;
+  }
+  html body #duNewspaperDock #duNpPanel .du-np-now strong {
+    font-size:clamp(19px,5.4vw,25px)!important;
+  }
+  html body #duNewspaperDock #duNpPanel .du-np-now small {
+    font-size:9px!important;
+  }
+  html body #duNewspaperDock #duNpPanel .du-np-now .du-np-stamp {
+    font-size:8px!important;padding:2px 3px!important;
+  }
+  html body #duNewspaperDock #duNpPanel .du-np-transport {
+    gap:3px!important;justify-content:flex-end!important;margin-bottom:4px!important;
+  }
+  html body #duNewspaperDock #duNpPanel .du-np-transport button:not(.du-np-main-play) {
+    min-width:28px!important;min-height:34px!important;width:28px!important;height:34px!important;
+  }
+  html body #duNewspaperDock #duNpPanel .du-np-transport button.du-np-main-play {
+    min-width:45px!important;min-height:45px!important;width:45px!important;height:45px!important;
+  }
+  html body #duNewspaperDock #duNpPanel .du-np-timeline {
+    margin:0 0 3px!important;gap:5px!important;
+  }
+  html body #duNewspaperDock #duNpPanel .du-np-bottom {
+    margin:0 0 3px!important;gap:4px!important;
+  }
+  html body #duNewspaperDock #duNpPanel .du-np-bottom label {font-size:9px!important;}
+  html body #duNewspaperDock #duNpPanel .du-np-popout {
+    align-self:center!important;
+    padding:5px 3px!important;
+    min-height:28px!important;
+    font-size:9px!important;
+  }
+  html body #duNewspaperDock #duNpPanel .du-np-notice{
+    margin:2px 0!important;
+    line-height:1.2!important;font-size:9px!important;
+  }
+  html body #duNewspaperDock #duNpPanel .du-np-print-colophon {
+    margin:4px 0 0!important;
+    font-size:7px!important;
+    line-height:1.2!important;
+  }
+}
+
+
+/* MOBILE_NEWSPRINT_STRIP_COMPACTION_20261112
+   At 320px no square player and no 2px document overflow. The tiny-print
+   colophon remains part of desktop edition; mobile masthead carries issue. */
+html body.du-np-standalone #duNewspaperDock.du-np-dock {
+  position:relative!important;
+  left:0!important;
+  bottom:auto!important;
+  width:min(720px,100%)!important;
+  margin:0 auto!important;
+}
+@media(max-width:620px){
+  html body #duNewspaperDock #duNpPanel .du-np-dock-paper {
+    padding-top:9px!important;
+    padding-bottom:8px!important;
+  }
+  html body #duNewspaperDock #duNpPanel .du-np-top {
+    padding-bottom:3px!important;
+    margin-bottom:3px!important;
+  }
+  html body #duNewspaperDock #duNpPanel .du-np-tabs {
+    margin-bottom:3px!important;
+    padding-bottom:3px!important;
+  }
+  html body #duNewspaperDock #duNpPanel .du-np-tabs button{
+    min-height:26px!important;
+    padding:4px 8px!important;
+  }
+  html body #duNewspaperDock #duNpPanel .du-np-now {
+    margin-bottom:1px!important;
+  }
+  html body #duNewspaperDock #duNpPanel .du-np-transport {
+    margin-bottom:1px!important;
+  }
+  html body #duNewspaperDock #duNpPanel .du-np-timeline {
+    margin-bottom:0!important;
+  }
+  html body #duNewspaperDock #duNpPanel .du-np-bottom {
+    margin-bottom:0!important;
+  }
+  html body #duNewspaperDock #duNpPanel .du-np-print-colophon {
+    display:none!important;
+  }
+  html body #duNewspaperDock #duNpPanel .du-np-notice {
+    padding-top:3px!important;
+    border-top:1px solid rgba(77,54,45,.45)!important;
+    margin:3px 0 0!important;
+  }
+}
+@media(max-width:360px) {
+  html body #duNewspaperDock #duNpPanel .du-np-top strong{
+    font-size:18px!important;
+  }
+  html body #duNewspaperDock #duNpPanel .du-np-now strong {
+    font-size:17px!important;
+    line-height:1!important;
+    letter-spacing:-.035em!important;
+  }
+  html body #duNewspaperDock #duNpPanel .du-np-now small {
+    font-size:8px!important;
+    line-height:1.2!important;
+  }
+  html body #duNewspaperDock #duNpPanel .du-np-now .du-np-stamp {
+    padding:2px!important;
+    font-size:7px!important;
+  }
+  html body #duNewspaperDock #duNpPanel .du-np-transport button.du-np-main-play {
+    width:41px!important;
+    height:41px!important;
+    min-width:41px!important;
+    min-height:41px!important;
+  }
+  html body #duNewspaperDock #duNpPanel .du-np-top small,
+  html body #duNewspaperDock #duNpPanel .du-np-edition {
+    font-size:7px!important;
+  }
+}
+
+
+/* DESKTOP_NEWS_SHEET_SIZE_LIMIT_20261112
+   The paper is a discreet horizontal strip, not a large bottom overlay. */
+@media(min-width:621px){
+  html body #duNewspaperDock.du-np-dock {
+    width:min(620px,calc(100vw - 28px))!important;
+  }
+  html body #duNewspaperDock #duNpPanel .du-np-dock-paper {
+    grid-template-columns:minmax(0,1fr) 178px!important;
+    gap:0 10px!important;
+    padding:12px 20px 11px!important;
+  }
+  html body #duNewspaperDock #duNpPanel .du-np-top strong {
+    font-size:27px!important;
+  }
+  html body #duNewspaperDock #duNpPanel .du-np-edition {
+    font-size:8px!important;
+  }
+  html body #duNewspaperDock #duNpPanel .du-np-tabs {
+    margin-bottom:6px!important;
+    padding-bottom:5px!important;
+  }
+  html body #duNewspaperDock #duNpPanel .du-np-tabs button {
+    min-height:27px!important;
+    padding:5px 11px!important;
+  }
+  html body #duNewspaperDock #duNpPanel .du-np-now strong {
+    font-size:25px!important;
+  }
+  html body #duNewspaperDock #duNpPanel .du-np-print-colophon {
+    font-size:7px!important;
+  }
+}
+html body.du-np-standalone #duNewspaperDock.du-np-dock {
+  width:min(620px,100%)!important;
+}
+
+/* Visible CC BY credits without changing the approved newspaper layout. */
+html body #duNewspaperDock #duNpPanel .du-np-notice a {
+  color:#752840!important;
+  text-decoration:underline!important;
+  text-underline-offset:2px;
+  font-weight:800;
+}
+
+
+/* DRAGGABLE_HALF_SIZE_EDITORIAL_PLAYER_20261112
+   The open player is half-size during playback, and its newspaper masthead is
+   a drag handle for mouse and touch. Keep the original newspaper artwork. */
+html body #music .du-music-total,
+html body #music .du-music-legal {
+  display:none!important;
+}
+html body #duNewspaperDock.du-np-dock.du-np-free-position {
+  position:fixed!important;
+  left:var(--du-player-left,16px)!important;
+  top:var(--du-player-top,16px)!important;
+  right:auto!important;
+  bottom:auto!important;
+  transform:none!important;
+  transform-origin:top left!important;
+}
+html body #duNewspaperDock #duNpPanel .du-np-top {
+  cursor:grab!important;
+  touch-action:none!important;
+  user-select:none!important;
+}
+html body #duNewspaperDock #duNpPanel .du-np-top:active {
+  cursor:grabbing!important;
+}
+html body #duNewspaperDock #duNpPanel .du-np-top button {
+  cursor:pointer!important;
+  touch-action:manipulation!important;
+}
+html body #duNewspaperDock #duNpPanel .du-np-dock-paper {
+  grid-template-areas:
+    "masthead masthead"
+    "tabs tabs"
+    "now transport"
+    "timeline timeline"
+    "volume popout"
+    "colophon colophon"
+    "feedback feedback"!important;
+}
+
+/* STRAIGHT_PLAYER_EDGES_20261112
+   Crisp rectangular newspaper edges; keep the paper texture and typography. */
+html body #duNewspaperDock #duNpPanel .du-np-dock-paper {
+  clip-path:none!important;
+  border-radius:0!important;
+  border:1px solid rgba(101,57,50,.45)!important;
+}
+html body #duNewspaperDock #duNpPanel.du-np-dock-body {
+  border-radius:0!important;
+}
+
+/* HIDE_BPM_FROM_ALL_MUSIC_CARDS_20261112
+   Keep numerical tempos in the source manifest for curation, not in UI. */
+#music .du-bpm-pill {display:none!important;}
+
+
+/* SHARED_PLAYER_BELOW_THREE_PLAYLISTS_20261112
+   One newspaper player follows the complete three-column music grid.
+   Playlist imagery and headings stay free of player overlays. It becomes a
+   movable small window ONLY after an intentional drag of its masthead. */
+html body #music .du-music-card .du-np-inline {
+  display:none!important;
+}
+html body #music > #duNewspaperDock.du-np-dock:not(.du-np-free-position) {
+  position:relative!important;
+  inset:auto!important;
+  top:auto!important;
+  left:auto!important;
+  right:auto!important;
+  bottom:auto!important;
+  width:100%!important;
+  max-width:none!important;
+  margin:24px 0 0!important;
+  transform:none!important;
+  pointer-events:auto!important;
+}
+html body #music > #duNewspaperDock.du-np-dock:not(.du-np-free-position) #duNpPanel.du-np-dock-body {
+  max-height:none!important;
+  height:auto!important;
+  overflow:visible!important;
+  margin:0!important;
+}
+html body #music > #duNewspaperDock.du-np-dock:not(.du-np-free-position) #duNpLauncher[aria-expanded="true"] {
+  display:none!important;
+}
+
+/* PLAYER_SIZE_CONSTANT_20261112
+   The shared player has the same width before, during, and after playback.
+   Dragged player likewise keeps its fixed size without scaling. */
+
+
+/* APPROVED_TORN_NEWSPAPER_PLAYER_20261112
+   Layout adapted from the exact user-approved torn-paper mockup.
+   Everything remains real HTML: tabs, playback, progress, volume, popout.
+   Intentionally overrides the former STRAIGHT_PLAYER_EDGES rule. */
+html body #music > #duNewspaperDock.du-np-dock:not(.du-np-free-position) {
+  width:100%!important;
+  max-width:none!important;
+  margin:24px 0 0!important;
+  transition:none!important;
+}
+html body #duNewspaperDock #duNpPanel.du-np-dock-body {
+  filter:drop-shadow(0 12px 14px rgba(65,39,29,.25))!important;
+  overflow:visible!important;
+  margin:0!important;
+}
+html body #duNewspaperDock #duNpPanel .du-np-dock-paper {
+  position:relative!important;
+  isolation:isolate!important;
+  width:100%!important;
+  max-width:none!important;
+  min-height:0!important;
+  box-sizing:border-box!important;
+  display:grid!important;
+  grid-template-columns:minmax(0,1fr) minmax(175px,25%)!important;
+  grid-template-areas:
+    "masthead masthead"
+    "tabs tabs"
+    "now transport"
+    "timeline timeline"
+    "volume popout"
+    "feedback feedback"!important;
+  gap:12px 20px!important;
+  padding:31px clamp(22px,3.2vw,50px) 37px!important;
+  border:0!important;
+  border-radius:0!important;
+  background-color:#f2e1c9!important;
+  background-image:
+    linear-gradient(0deg,rgba(124,74,42,.05),rgba(255,248,225,.14)),
+    url('/assets/editorial-paper-fibres-20261108.svg'),
+    radial-gradient(ellipse at 35% 40%,#fff1dc 8%,#f3dfc8 60%,#ddbc99 100%)!important;
+  background-size:100% 100%,192px 192px,100% 100%!important;
+  background-blend-mode:multiply,normal,normal!important;
+  color:#38221e!important;
+  clip-path:polygon(
+    .6% 3%,1.8% 1.3%,3.2% 2.1%,5% .9%,6.8% 1.8%,8.5% 1.2%,11% 2.8%,
+    13% .8%,15.5% 2.4%,18% 1.7%,20% 2.7%,22% 1.1%,25% 1.8%,28% 1.1%,
+    31% 2.2%,33.8% 1.3%,36% 2.5%,39% 1.2%,42% 2.4%,44.5% .8%,
+    47% 1.4%,49.5% 3.8%,52.5% 2.2%,56% 3%,59% 1.1%,62% 1.2%,
+    65% 1.9%,68% .9%,71% 1.6%,74% .7%,77% 1.4%,80% .8%,
+    83% 2.2%,85% 1.3%,88% 1.5%,91% .4%,94% 2%,96% 1.3%,99% 2.5%,
+    99.3% 6%,98.9% 13%,99.6% 22%,99.1% 31%,99.5% 40%,98.9% 50%,
+    99.5% 60%,98.8% 70%,99.2% 80%,98.4% 89%,97% 96%,94% 95.4%,
+    91% 97.8%,88% 95.9%,85% 98.4%,82% 96.2%,79% 98.1%,
+    76% 96.9%,73% 98.8%,70% 97.1%,67% 99%,64% 96.5%,
+    61% 98.6%,58% 96.2%,55% 97.8%,52% 95.4%,49% 96.4%,
+    46% 99.5%,43% 97.6%,40% 98.6%,37% 96.4%,34% 98.8%,
+    31% 96.7%,28% 98.9%,25% 97.3%,22% 99.2%,19% 96.8%,
+    16% 99%,13% 97.4%,10% 99.1%,7% 97.6%,5% 98.1%,3% 95.9%,
+    1.2% 94.1%,.8% 86%,1.4% 78%,.7% 70%,1.2% 62%,.6% 53%,
+    1.1% 45%,.5% 36%,1.2% 27%,.6% 19%,1% 11%
+  )!important;
+}
+html body #duNewspaperDock #duNpPanel .du-np-dock-paper::before {
+  content:""!important;
+  position:absolute!important;
+  pointer-events:none!important;
+  z-index:0!important;
+  inset:auto 3.6% auto auto!important;
+  top:1%!important;
+  width:clamp(86px,12vw,155px)!important;
+  height:clamp(86px,12vw,155px)!important;
+  border:8px solid rgba(126,25,51,.28)!important;
+  border-radius:50%!important;
+  box-shadow:0 0 0 2px rgba(152,40,56,.10),inset 0 0 5px rgba(126,25,51,.22)!important;
+  transform:rotate(-13deg)!important;
+  background:none!important;
+  opacity:.82!important;
+}
+html body #duNewspaperDock #duNpPanel .du-np-dock-paper::after {
+  content:""!important;
+  position:absolute!important;
+  z-index:0!important;
+  right:17%!important;
+  top:2%!important;
+  width:clamp(82px,13vw,168px)!important;
+  height:clamp(52px,6.8vw,92px)!important;
+  opacity:.51!important;
+  transform:rotate(-18deg)!important;
+  pointer-events:none!important;
+  background-repeat:no-repeat!important;
+  background-position:center!important;
+  background-size:contain!important;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 180 96'%3E%3Cg fill='none' stroke='%2341322b' stroke-width='3.5' stroke-linecap='round'%3E%3Cpath d='M13 8 L31 35 L106 90 M21 6 L38 31 M29 5 L44 27 M37 4 L50 23 M44 7 L50 16 M64 4 L75 28 Q80 45 66 52 L118 91'/%3E%3C/g%3E%3C/svg%3E")!important;
+}
+html body #duNewspaperDock #duNpPanel .du-np-dock-paper > * {
+  position:relative!important;
+  z-index:1!important;
+}
+html body #duNewspaperDock #duNpPanel .du-np-top {
+  display:flex!important;
+  align-items:flex-start!important;
+  grid-area:masthead!important;
+  min-height:0!important;
+  margin:0!important;
+  padding:0 0 7px!important;
+  border-bottom:1px solid rgba(100,57,46,.6)!important;
+  background:none!important;
+}
+html body #duNewspaperDock #duNpPanel .du-np-masthead {
+  display:grid!important;
+  width:100%!important;
+  grid-template-columns:max-content minmax(0,1fr)!important;
+  grid-template-areas:"kicker kicker" "brand edition"!important;
+  gap:0 20px!important;
+  align-items:end!important;
+  border:0!important;
+}
+html body #duNewspaperDock #duNpPanel .du-np-masthead small {
+  grid-area:kicker!important;
+  display:block!important;
+  color:#3c2622!important;
+  font:bold clamp(11px,1.2vw,17px)/1.1 Arial,sans-serif!important;
+  letter-spacing:.12em!important;
+}
+html body #duNewspaperDock #duNpPanel .du-np-masthead strong {
+  grid-area:brand!important;
+  display:inline-block!important;
+  position:relative!important;
+  width:max-content!important;
+  max-width:100%!important;
+  padding:0 0 5px!important;
+  margin:0!important;
+  color:#281c19!important;
+  font:500 clamp(30px,4.05vw,59px)/.98 Georgia,'Times New Roman',serif!important;
+  letter-spacing:-.035em!important;
+  text-transform:uppercase!important;
+  background:none!important;
+}
+html body #duNewspaperDock #duNpPanel .du-np-masthead strong::after {
+  content:""!important;
+  position:absolute!important;
+  bottom:0!important;
+  left:0!important;
+  height:3px!important;
+  width:76%!important;
+  transform:rotate(-.4deg)!important;
+  border-radius:50%!important;
+  background:#972942!important;
+}
+html body #duNewspaperDock #duNpPanel .du-np-edition {
+  grid-area:edition!important;
+  align-self:end!important;
+  margin:0 0 9px!important;
+  padding:0!important;
+  white-space:normal!important;
+  color:#382620!important;
+  font:700 clamp(10px,1.12vw,16px)/1.3 Arial,sans-serif!important;
+  letter-spacing:.04em!important;
+  text-align:left!important;
+}
+html body #duNewspaperDock #duNpPanel .du-np-close {
+  position:absolute!important;
+  right:-5px!important;
+  top:-5px!important;
+  width:22px!important;height:22px!important;
+  min-width:22px!important;min-height:22px!important;
+  opacity:.62!important;
+  font-size:17px!important;
+}
+html body #duNewspaperDock #duNpPanel .du-np-tabs {
+  grid-area:tabs!important;
+  display:flex!important;
+  flex-wrap:wrap!important;
+  justify-content:flex-start!important;
+  gap:8px!important;
+  padding:0 0 11px!important;
+  margin:0!important;
+  border-bottom:1px solid rgba(102,65,53,.34)!important;
+  background:none!important;
+}
+html body #duNewspaperDock #duNpPanel .du-np-tabs button {
+  min-height:42px!important;
+  border:0!important;
+  border-radius:0!important;
+  margin:0!important;
+  padding:8px clamp(11px,1.5vw,22px)!important;
+  background:#fff0d8!important;
+  color:#372221!important;
+  font:700 clamp(16px,2.1vw,26px)/1.05 Georgia,'Times New Roman',serif!important;
+  box-shadow:0 4px 6px rgba(79,50,31,.24)!important;
+  clip-path:polygon(1% 3%,11% 0,24% 4%,36% 1%,53% 4%,72% 0,88% 3%,99% 1%,100% 96%,86% 100%,69% 96%,47% 100%,25% 96%,0 100%)!important;
+  transition:background .15s ease,color .15s ease!important;
+}
+html body #duNewspaperDock #duNpPanel .du-np-tabs button[aria-pressed="true"] {
+  color:#fff9ed!important;
+  background:#8d203e!important;
+}
+html body #duNewspaperDock #duNpPanel .du-np-now {
+  grid-area:now!important;
+  display:grid!important;
+  grid-template-columns:minmax(0,1fr) max-content!important;
+  grid-template-areas:"track stamp" "mood stamp"!important;
+  align-content:center!important;
+  align-items:center!important;
+  gap:1px 12px!important;
+  padding:0!important;
+  margin:0!important;
+  border:0!important;
+  min-height:80px!important;
+  background:none!important;
+}
+html body #duNewspaperDock #duNpPanel .du-np-now strong {
+  grid-area:track!important;
+  color:#3b2420!important;
+  font:500 clamp(19px,2.7vw,37px)/1.08 Georgia,'Times New Roman',serif!important;
+  letter-spacing:-.035em!important;
+  overflow-wrap:anywhere!important;
+  max-width:100%!important;
+}
+html body #duNewspaperDock #duNpPanel .du-np-now small {
+  grid-area:mood!important;
+  color:#3e2a25!important;
+  font:italic 500 clamp(14px,1.42vw,20px)/1.2 Georgia,'Times New Roman',serif!important;
+  letter-spacing:0!important;
+}
+html body #duNewspaperDock #duNpPanel .du-np-now .du-np-stamp {
+  grid-area:stamp!important;
+  justify-self:center!important;
+  align-self:center!important;
+  display:block!important;
+  color:#982443!important;
+  background:transparent!important;
+  border:2px solid #982443!important;
+  font:bold clamp(12px,1.28vw,18px)/1 Arial,sans-serif!important;
+  padding:5px 7px!important;
+  margin:0!important;
+  border-radius:0!important;
+  transform:rotate(-13deg)!important;
+}
+html body #duNewspaperDock #duNpPanel .du-np-transport {
+  grid-area:transport!important;
+  display:flex!important;
+  gap:10px!important;
+  align-items:center!important;
+  justify-content:center!important;
+  align-self:center!important;
+  padding:0!important;
+  margin:0!important;
+  border:0!important;
+  background:transparent!important;
+}
+html body #duNewspaperDock #duNpPanel .du-np-transport button {
+  display:grid!important;
+  place-items:center!important;
+  flex-shrink:0!important;
+  width:38px!important;height:48px!important;
+  min-width:38px!important;min-height:48px!important;
+  padding:5px!important;
+  border:0!important;
+  border-radius:0!important;
+  background:transparent!important;
+  box-shadow:none!important;
+}
+html body #duNewspaperDock #duNpPanel .du-np-transport button .du-np-svg {
+  width:28px!important;height:28px!important;
+}
+html body #duNewspaperDock #duNpPanel .du-np-transport button.du-np-main-play {
+  width:70px!important;height:70px!important;
+  min-width:70px!important;min-height:70px!important;
+  border-radius:50%!important;
+  background:#8f2345!important;
+  box-shadow:0 2px 4px rgba(80,33,45,.12)!important;
+  transition:background .18s ease!important;
+}
+html body #duNewspaperDock #duNpPanel .du-np-transport button.du-np-main-play .du-np-svg {
+  width:32px!important;height:32px!important;
+}
+html body #duNewspaperDock #duNpPanel .du-np-timeline {
+  grid-area:timeline!important;
+  display:flex!important;
+  align-items:center!important;
+  gap:12px!important;
+  width:100%!important;
+  margin:0!important;
+  padding:8px 0 10px!important;
+  border:0!important;
+  min-width:0!important;
+}
+html body #duNewspaperDock #duNpPanel .du-np-timeline span {
+  min-width:36px!important;
+  text-align:center!important;
+  color:#3b2620!important;
+  font:500 clamp(12px,1.2vw,17px)/1 Arial,sans-serif!important;
+}
+html body #duNewspaperDock #duNpPanel .du-np-timeline input,
+html body #duNewspaperDock #duNpPanel .du-np-bottom input {
+  min-width:0!important;
+  accent-color:#8d2343!important;
+  cursor:pointer!important;
+}
+html body #duNewspaperDock #duNpPanel .du-np-timeline input {
+  height:22px!important;
+  flex:1!important;
+}
+html body #duNewspaperDock #duNpPanel .du-np-bottom {
+  grid-area:volume!important;
+  display:flex!important;
+  align-items:center!important;
+  gap:12px!important;
+  border:0!important;
+  min-height:46px!important;
+  padding:0!important;
+  margin:0!important;
+}
+html body #duNewspaperDock #duNpPanel .du-np-bottom label {
+  display:flex!important;
+  align-items:center!important;
+  justify-content:center!important;
+  width:34px!important;
+  height:34px!important;
+  font-size:0!important;
+  margin:0!important;
+}
+html body #duNewspaperDock #duNpPanel .du-np-volume-icon {
+  display:block!important;
+  width:31px!important;
+  height:31px!important;
+}
+html body #duNewspaperDock #duNpPanel .du-np-bottom input {
+  width:190px!important;
+  max-width:55%!important;
+  height:22px!important;
+}
+html body #duNewspaperDock #duNpPanel .du-np-popout {
+  grid-area:popout!important;
+  justify-self:end!important;
+  align-self:center!important;
+  display:inline-flex!important;
+  align-items:center!important;
+  justify-content:center!important;
+  flex-wrap:nowrap!important;
+  gap:8px!important;
+  width:auto!important;
+  min-height:41px!important;
+  margin:0!important;
+  padding:7px 12px!important;
+  border:0!important;
+  border-radius:0!important;
+  background:#fff1d8!important;
+  color:#3c2220!important;
+  text-decoration:underline!important;
+  text-underline-offset:3px!important;
+  font:700 clamp(13px,1.65vw,21px)/1.1 Georgia,'Times New Roman',serif!important;
+  white-space:nowrap!important;
+  box-shadow:0 4px 6px rgba(79,50,31,.20)!important;
+  clip-path:polygon(1% 2%,15% 0,34% 3%,57% 1%,76% 3%,99% 0,100% 96%,84% 100%,60% 97%,31% 100%,0 98%)!important;
+}
+html body #duNewspaperDock #duNpPanel .du-np-popout-icon {
+  width:22px!important;
+  height:22px!important;
+  flex:none!important;
+}
+html body #duNewspaperDock #duNpPanel .du-np-print-colophon {
+  display:none!important;
+}
+html body #duNewspaperDock #duNpPanel .du-np-feedback {
+  grid-area:feedback!important;
+  margin:0!important;
+}
+html body #duNewspaperDock #duNpPanel .du-np-sr-only {
+  position:absolute!important;
+  width:1px!important;
+  height:1px!important;
+  overflow:hidden!important;
+  clip-path:inset(50%)!important;
+  white-space:nowrap!important;
+}
+/* When the player is explicitly dragged, retain the same player controls
+   in a compact strip. No playback-triggered resizing is permitted. */
+html body #duNewspaperDock.du-np-free-position #duNpPanel .du-np-dock-paper {
+  grid-template-columns:minmax(0,1fr) minmax(110px,38%)!important;
+  gap:7px 10px!important;
+  padding:18px 19px 22px!important;
+}
+html body #duNewspaperDock.du-np-free-position #duNpPanel .du-np-masthead {
+  grid-template-columns:minmax(0,1fr)!important;
+  grid-template-areas:"kicker" "brand" "edition"!important;
+}
+html body #duNewspaperDock.du-np-free-position #duNpPanel .du-np-masthead strong {
+  font-size:25px!important;
+}
+html body #duNewspaperDock.du-np-free-position #duNpPanel .du-np-edition {
+  margin:2px 0 0!important;font-size:10px!important;
+}
+html body #duNewspaperDock.du-np-free-position #duNpPanel .du-np-tabs button {
+  min-height:29px!important;padding:5px 8px!important;font-size:12px!important;
+}
+html body #duNewspaperDock.du-np-free-position #duNpPanel .du-np-now strong {
+  font-size:18px!important;
+}
+html body #duNewspaperDock.du-np-free-position #duNpPanel .du-np-now small {
+  font-size:12px!important;
+}
+html body #duNewspaperDock.du-np-free-position #duNpPanel .du-np-now .du-np-stamp {
+  font-size:9px!important;padding:3px 4px!important;
+}
+html body #duNewspaperDock.du-np-free-position #duNpPanel .du-np-transport {gap:3px!important;}
+html body #duNewspaperDock.du-np-free-position #duNpPanel .du-np-transport button {
+  width:24px!important;min-width:24px!important;height:34px!important;min-height:34px!important;
+}
+html body #duNewspaperDock.du-np-free-position #duNpPanel .du-np-transport button.du-np-main-play {
+  width:43px!important;min-width:43px!important;height:43px!important;min-height:43px!important;
+}
+html body #duNewspaperDock.du-np-free-position #duNpPanel .du-np-transport button .du-np-svg {
+  width:20px!important;height:20px!important;
+}
+html body #duNewspaperDock.du-np-free-position #duNpPanel .du-np-popout {
+  font-size:12px!important;padding:5px 6px!important;
+}
+@media(max-width:800px){
+  html body #duNewspaperDock #duNpPanel .du-np-dock-paper {
+    grid-template-columns:minmax(0,1fr) minmax(135px,35%)!important;
+    gap:8px 8px!important;
+    padding:23px 24px 29px!important;
+  }
+  html body #duNewspaperDock #duNpPanel .du-np-masthead {
+    grid-template-columns:1fr!important;
+    grid-template-areas:"kicker" "brand" "edition"!important;
+  }
+  html body #duNewspaperDock #duNpPanel .du-np-edition {
+    margin-top:4px!important;margin-bottom:0!important;
+  }
+  html body #duNewspaperDock #duNpPanel .du-np-tabs button {
+    font-size:17px!important;
+    min-height:34px!important;
+    padding:7px 12px!important;
+  }
+  html body #duNewspaperDock #duNpPanel .du-np-now strong {
+    font-size:clamp(18px,3vw,28px)!important;
+  }
+  html body #duNewspaperDock #duNpPanel .du-np-transport button {
+    width:27px!important;min-width:27px!important;height:36px!important;min-height:36px!important;
+    padding:3px!important;
+  }
+  html body #duNewspaperDock #duNpPanel .du-np-transport button.du-np-main-play {
+    width:51px!important;height:51px!important;min-width:51px!important;min-height:51px!important;
+  }
+  html body #duNewspaperDock #duNpPanel .du-np-transport button .du-np-svg {
+    width:22px!important;height:22px!important;
+  }
+  html body #duNewspaperDock #duNpPanel .du-np-popout {
+    font-size:13px!important;min-height:35px!important;
+  }
+}
+@media(max-width:560px){
+  html body #duNewspaperDock #duNpPanel .du-np-dock-paper {
+    grid-template-columns:1fr!important;
+    grid-template-areas:"masthead" "tabs" "now" "transport" "timeline" "volume" "popout" "feedback"!important;
+    padding:20px 22px 30px!important;
+    gap:8px!important;
+  }
+  html body #duNewspaperDock #duNpPanel .du-np-masthead strong {
+    font-size:clamp(26px,7.4vw,40px)!important;
+  }
+  html body #duNewspaperDock #duNpPanel .du-np-edition {
+    font-size:10px!important;
+  }
+  html body #duNewspaperDock #duNpPanel .du-np-tabs {
+    gap:4px!important;
+  }
+  html body #duNewspaperDock #duNpPanel .du-np-tabs button {
+    padding:6px 9px!important;font-size:clamp(13px,3.5vw,17px)!important;
+  }
+  html body #duNewspaperDock #duNpPanel .du-np-now {
+    min-height:57px!important;gap:4px!important;
+  }
+  html body #duNewspaperDock #duNpPanel .du-np-now strong {
+    font-size:clamp(18px,5vw,25px)!important;
+  }
+  html body #duNewspaperDock #duNpPanel .du-np-now small {
+    font-size:14px!important;
+  }
+  html body #duNewspaperDock #duNpPanel .du-np-transport {
+    justify-content:center!important;
+  }
+  html body #duNewspaperDock #duNpPanel .du-np-transport button.du-np-main-play {
+    width:58px!important;height:58px!important;min-width:58px!important;min-height:58px!important;
+  }
+  html body #duNewspaperDock #duNpPanel .du-np-timeline {gap:6px!important;}
+  html body #duNewspaperDock #duNpPanel .du-np-timeline span {min-width:30px!important;font-size:11px!important;}
+  html body #duNewspaperDock #duNpPanel .du-np-popout {justify-self:end!important;}
+  html body #duNewspaperDock #duNpPanel .du-np-dock-paper::before {
+    width:88px!important;height:88px!important;
+  }
+  html body #duNewspaperDock #duNpPanel .du-np-dock-paper::after {
+    display:none!important;
+  }
+}
+
+/* EXACT_APPROVED_NEWSPAPER_IMAGE_20261112
+   Original image is an unscaled, lossless copy, minus issue number.
+   All decorative typography and torn edges are supplied by the IMAGE,
+   not recreated using CSS. Only live controls are layered above it. */
+html body #duNewspaperDock #duNpPanel.du-np-dock-body {
+  margin:0!important;padding:0!important;max-height:none!important;
+  overflow:visible!important;background:transparent!important;
+  filter:drop-shadow(0 9px 10px rgba(48,30,24,.18))!important;
+}
+html body #duNewspaperDock #duNpPanel .du-np-approved-stage {
+  position:relative!important;display:block!important;isolation:isolate!important;
+  width:100%!important;height:auto!important;aspect-ratio:2048/682!important;
+  padding:0!important;margin:0!important;overflow:visible!important;
+}
+html body #duNewspaperDock #duNpPanel .du-np-approved-image {
+  display:block!important;width:100%!important;height:100%!important;
+  object-fit:fill!important;user-select:none!important;pointer-events:none!important;
+}
+html body #duNewspaperDock #duNpPanel .du-np-approved-stage button {
+  cursor:pointer!important;touch-action:manipulation!important;
+  border:0!important;box-shadow:none!important;
+}
+html body #duNewspaperDock #duNpPanel .du-np-approved-stage button:focus-visible,
+html body #duNewspaperDock #duNpPanel .du-np-approved-stage input:focus-visible {
+  outline:2px solid #912542!important;outline-offset:2px!important;
+}
+html body #duNewspaperDock #duNpPanel .du-np-pixel-drag.du-np-top {
+  position:absolute!important;left:5.2%!important;top:5.2%!important;
+  width:35%!important;height:20%!important;display:block!important;
+  padding:0!important;margin:0!important;
+  background:transparent!important;border:0!important;
+  cursor:grab!important;touch-action:none!important;
+}
+html body #duNewspaperDock #duNpPanel .du-np-pixel-drag.du-np-top:active {cursor:grabbing!important;}
+html body #duNewspaperDock #duNpPanel button.du-np-pixel-tab {
+  position:absolute!important;top:27.3%!important;height:12.4%!important;
+  z-index:2!important;padding:0!important;margin:0!important;
+  color:transparent!important;background:transparent!important;
+  font:700 clamp(9px,1.65vw,30px)/1 Georgia,serif!important;
+  text-align:center!important;
+}
+html body #duNewspaperDock #duNpPanel button.du-np-pixel-tab-kitchen {left:5.35%!important;width:10.6%!important;}
+html body #duNewspaperDock #duNpPanel button.du-np-pixel-tab-dinner {left:16.15%!important;width:11.25%!important;}
+html body #duNewspaperDock #duNpPanel button.du-np-pixel-tab-after {left:27.4%!important;width:13.45%!important;}
+/* Once a different chapter is selected, update only the changed tab artwork. */
+html body #duNewspaperDock #duNpPanel .du-np-approved-stage[data-phase="kitchen"] .du-np-pixel-tab-dinner,
+html body #duNewspaperDock #duNpPanel .du-np-approved-stage[data-phase="after"] .du-np-pixel-tab-dinner {
+  background:#fff0d9!important;color:#392520!important;
+}
+html body #duNewspaperDock #duNpPanel .du-np-approved-stage[data-phase="kitchen"] .du-np-pixel-tab-kitchen,
+html body #duNewspaperDock #duNpPanel .du-np-approved-stage[data-phase="after"] .du-np-pixel-tab-after {
+  background:#8e2344!important;color:#fff7e8!important;
+}
+html body #duNewspaperDock #duNpPanel .du-np-pixel-live-title {
+  display:none!important;position:absolute!important;z-index:3!important;
+  left:5.12%!important;top:42.1%!important;width:57.3%!important;height:17%!important;
+  box-sizing:border-box!important;padding:0 .5%!important;
+  background:#f3dfc7 url('/assets/editorial-paper-fibres-20261108.svg') repeat!important;
+  background-size:180px 180px!important;
+}
+html body #duNewspaperDock #duNpPanel .du-np-approved-stage.du-np-live .du-np-pixel-live-title {
+  display:flex!important;flex-direction:column!important;justify-content:center!important;gap:4px!important;
+}
+html body #duNewspaperDock #duNpPanel .du-np-pixel-live-title strong {
+  color:#3b2420!important;font:500 clamp(12px,2.8vw,54px)/1.07 Georgia,serif!important;
+  overflow:hidden!important;text-overflow:ellipsis!important;white-space:nowrap!important;
+}
+html body #duNewspaperDock #duNpPanel .du-np-pixel-live-title small {
+  color:#3c2622!important;font:italic clamp(9px,1.42vw,28px)/1.1 Georgia,serif!important;
+}
+html body #duNewspaperDock #duNpPanel button.du-np-pixel-prev,
+html body #duNewspaperDock #duNpPanel button.du-np-pixel-play,
+html body #duNewspaperDock #duNpPanel button.du-np-pixel-next,
+html body #duNewspaperDock #duNpPanel button.du-np-pixel-popout {
+  position:absolute!important;display:block!important;
+  border:0!important;padding:0!important;margin:0!important;
+  background:transparent!important;
+}
+html body #duNewspaperDock #duNpPanel button.du-np-pixel-prev {left:74.3%!important;top:44.8%!important;width:5.1%!important;height:14.9%!important;}
+html body #duNewspaperDock #duNpPanel button.du-np-pixel-play {left:80.2%!important;top:40.7%!important;width:7.6%!important;height:21.8%!important;border-radius:50%!important;}
+html body #duNewspaperDock #duNpPanel button.du-np-pixel-next {left:88.3%!important;top:44.8%!important;width:5.4%!important;height:14.9%!important;}
+html body #duNewspaperDock #duNpPanel button.du-np-pixel-popout {left:74.5%!important;top:71%!important;width:19.5%!important;height:13.2%!important;}
+html body #duNewspaperDock #duNpPanel .du-np-playing button.du-np-pixel-play {
+  background:#912443!important;color:#fff8ed!important;
+}
+html body #duNewspaperDock #duNpPanel .du-np-playing button.du-np-pixel-play::after {
+  content:"Ⅱ";position:absolute;inset:0;display:grid;place-items:center;
+  font:bold clamp(12px,3.4vw,58px)/1 Arial,sans-serif!important;color:#fff8ed!important;
+}
+html body #duNewspaperDock #duNpPanel .du-np-pixel-seek {
+  position:absolute!important;z-index:3!important;box-sizing:border-box!important;
+  left:5.1%!important;top:62%!important;width:88.8%!important;height:9.9%!important;
+  display:grid!important;grid-template-columns:3.5% minmax(0,1fr) 3.8%!important;
+  gap:1.4%!important;align-items:center!important;
+  pointer-events:none!important;padding:0 .3%!important;
+}
+html body #duNewspaperDock #duNpPanel .du-np-pixel-seek span {
+  opacity:0!important;text-align:center!important;
+  color:#392721!important;font:500 clamp(8px,1.13vw,21px)/1 Arial,sans-serif!important;
+}
+html body #duNewspaperDock #duNpPanel .du-np-pixel-seek input {
+  opacity:0!important;display:block!important;width:100%!important;height:100%!important;
+  min-width:0!important;margin:0!important;accent-color:#942647!important;
+  pointer-events:auto!important;cursor:pointer!important;
+}
+html body #duNewspaperDock #duNpPanel .du-np-approved-stage.du-np-live .du-np-pixel-seek {
+  background:#f2e0c9 url('/assets/editorial-paper-fibres-20261108.svg') repeat!important;
+  background-size:180px 180px!important;pointer-events:auto!important;
+}
+html body #duNewspaperDock #duNpPanel .du-np-approved-stage.du-np-live .du-np-pixel-seek span,
+html body #duNewspaperDock #duNpPanel .du-np-approved-stage.du-np-live .du-np-pixel-seek input {opacity:1!important;}
+html body #duNewspaperDock #duNpPanel .du-np-pixel-volume {
+  position:absolute!important;z-index:3!important;
+  left:9.48%!important;top:73.8%!important;width:15.6%!important;height:9.3%!important;
+  display:flex!important;align-items:center!important;pointer-events:none!important;
+}
+html body #duNewspaperDock #duNpPanel .du-np-pixel-volume input {
+  width:100%!important;height:100%!important;margin:0!important;opacity:0!important;
+  accent-color:#942647!important;pointer-events:auto!important;
+}
+html body #duNewspaperDock #duNpPanel .du-np-approved-stage.du-np-live .du-np-pixel-volume,
+html body #duNewspaperDock #duNpPanel .du-np-approved-stage.du-np-volume-touched .du-np-pixel-volume {
+  background:#f2e0c9 url('/assets/editorial-paper-fibres-20261108.svg') repeat!important;
+}
+html body #duNewspaperDock #duNpPanel .du-np-approved-stage.du-np-live .du-np-pixel-volume input,
+html body #duNewspaperDock #duNpPanel .du-np-approved-stage.du-np-volume-touched .du-np-pixel-volume input {opacity:1!important;}
+html body #duNewspaperDock #duNpPanel .du-np-feedback:not([hidden]) {
+  position:absolute!important;z-index:5!important;left:15%!important;top:81%!important;
+  padding:6px!important;margin:0!important;width:70%!important;
+  background:#fff2dc!important;color:#772b48!important;
+  font:600 12px/1.2 Arial,sans-serif!important;text-align:center!important;
+}
+html body #duNewspaperDock #duNpPanel .du-np-sr-only {
+  position:absolute!important;width:1px!important;height:1px!important;overflow:hidden!important;
+  clip:rect(0,0,0,0)!important;white-space:nowrap!important;
+}
+html body #duNewspaperDock.du-np-free-position {
+  width:min(760px,calc(100vw - 16px))!important;max-width:calc(100vw - 16px)!important;z-index:16000!important;
+}
+@media(max-width:600px){
+  html body #duNewspaperDock #duNpPanel .du-np-pixel-live-title strong{font-size:clamp(10px,3vw,17px)!important;}
+  html body #duNewspaperDock #duNpPanel .du-np-pixel-live-title small{font-size:clamp(8px,1.8vw,12px)!important;}
+  html body #duNewspaperDock #duNpPanel .du-np-pixel-tab{font-size:clamp(8px,2.4vw,13px)!important;}
+}
+
+/* PIXEL_PLAYER_CLEANUP_WHITE_BACKDROP_AND_TRACK_DESCENDERS_20261112 */
+/* The approved newspaper image is the entire visual surface. Its wrapper must
+   not paint a secondary rectangular card, border or extra white strip below it.
+   Keep the image itself and its transparent interactive hit targets unchanged. */
+html body #duNewspaperDock.du-np-pixel-player {
+  background:transparent!important;
+  border:0!important;
+  box-shadow:none!important;
+  padding:0!important;
+}
+html body #duNewspaperDock #duNpPanel.du-np-dock-body {
+  background:transparent!important;
+  background-image:none!important;
+  border:0!important;
+  box-shadow:none!important;
+  padding:0!important;
+  margin:0!important;
+  line-height:0!important;
+}
+html body #duNewspaperDock #duNpPanel .du-np-approved-stage {
+  background:transparent!important;
+  background-image:none!important;
+  border:0!important;
+  box-shadow:none!important;
+  padding:0!important;
+  margin:0!important;
+  line-height:0!important;
+}
+html body #duNewspaperDock #duNpPanel .du-np-approved-image {
+  display:block!important;
+  vertical-align:top!important;
+  border:0!important;
+  margin:0!important;
+  padding:0!important;
+}
+html body #duNewspaperDock #duNpPanel::before,
+html body #duNewspaperDock #duNpPanel::after,
+html body #duNewspaperDock #duNpPanel .du-np-approved-stage::before,
+html body #duNewspaperDock #duNpPanel .du-np-approved-stage::after {
+  content:none!important;
+  display:none!important;
+}
+/* Do not leave the launcher/card visible alongside the open raster player. */
+html body #duNewspaperDock #duNpLauncher[aria-expanded="true"] {
+  display:none!important;
+}
+/* The dynamic artist + track line was too tall: allow room for descenders
+   without moving the artwork or exposing an extra rectangular background. */
+html body #duNewspaperDock #duNpPanel .du-np-pixel-live-title strong {
+  font-size:clamp(11px,2.35vw,46px)!important;
+  line-height:1.2!important;
+  padding:0 0 .12em!important;
+  box-sizing:border-box!important;
+}
+@media(max-width:600px) {
+  html body #duNewspaperDock #duNpPanel .du-np-pixel-live-title strong {
+    font-size:clamp(10px,2.6vw,15px)!important;
+  }
+}
+
+/* TINT_RECTANGLE_REMOVE_PIXEL_OUTLINE_20261112
+   The approved WebP contains an opaque pale page background outside the torn
+   sheet. Earlier background:transparent fixes did not affect these raster
+   pixels. Clip ONLY the image at the actual photographed paper silhouette,
+   traced from the original 2048x682 layout. The raster is unchanged, including
+   its original printing, controls, fibers and torn-paper edge. */
+html body #duNewspaperDock #duNpPanel .du-np-approved-stage > img.du-np-approved-image {
+  -webkit-clip-path: polygon(
+    2.344% 6.452%,
+    3.125% 6.158%,
+    4.688% 6.598%,
+    6.250% 4.985%,
+    7.813% 4.106%,
+    9.375% 4.106%,
+    10.938% 4.985%,
+    12.500% 5.425%,
+    14.063% 6.598%,
+    15.625% 6.452%,
+    17.188% 6.158%,
+    18.750% 6.158%,
+    20.313% 6.158%,
+    21.875% 7.918%,
+    23.438% 7.771%,
+    25.000% 7.038%,
+    26.563% 6.158%,
+    28.125% 6.012%,
+    29.688% 5.279%,
+    31.250% 5.572%,
+    32.813% 6.305%,
+    34.375% 7.038%,
+    35.938% 7.185%,
+    37.500% 7.918%,
+    39.063% 8.504%,
+    40.625% 8.944%,
+    42.188% 10.264%,
+    43.750% 8.944%,
+    45.313% 11.437%,
+    46.875% 11.584%,
+    48.438% 11.144%,
+    50.000% 10.411%,
+    51.563% 9.677%,
+    53.125% 9.384%,
+    54.688% 10.411%,
+    56.250% 10.557%,
+    57.813% 9.824%,
+    59.375% 8.211%,
+    60.938% 7.478%,
+    62.500% 6.158%,
+    64.063% 5.279%,
+    65.625% 5.865%,
+    67.188% 5.718%,
+    68.750% 6.891%,
+    70.313% 4.985%,
+    71.875% 4.839%,
+    73.438% 4.545%,
+    75.000% 4.545%,
+    76.563% 6.158%,
+    78.125% 6.598%,
+    79.688% 6.158%,
+    81.250% 5.718%,
+    82.813% 4.839%,
+    84.375% 5.425%,
+    85.938% 4.692%,
+    87.500% 3.959%,
+    89.063% 4.399%,
+    90.625% 3.519%,
+    92.188% 3.226%,
+    93.750% 3.666%,
+    95.313% 5.572%,
+    96.875% 7.331%,
+    97.266% 7.038%,
+    97.852% 11.730%,
+    97.998% 15.249%,
+    98.242% 18.768%,
+    98.242% 22.287%,
+    98.291% 25.806%,
+    98.291% 29.326%,
+    98.340% 32.845%,
+    98.193% 36.364%,
+    98.096% 39.883%,
+    98.145% 43.402%,
+    97.949% 46.921%,
+    97.607% 50.440%,
+    97.412% 53.959%,
+    97.412% 57.478%,
+    97.510% 60.997%,
+    97.363% 64.516%,
+    97.070% 68.035%,
+    96.826% 71.554%,
+    96.680% 75.073%,
+    96.680% 78.592%,
+    96.875% 82.111%,
+    96.924% 85.630%,
+    96.777% 89.150%,
+    97.266% 89.443%,
+    96.875% 89.443%,
+    95.313% 91.642%,
+    93.750% 93.988%,
+    92.188% 95.015%,
+    90.625% 95.308%,
+    89.063% 94.868%,
+    87.500% 94.135%,
+    85.938% 93.988%,
+    84.375% 93.842%,
+    82.813% 93.988%,
+    81.250% 94.428%,
+    79.688% 95.015%,
+    78.125% 95.601%,
+    76.563% 96.188%,
+    75.000% 95.748%,
+    73.438% 95.308%,
+    71.875% 94.282%,
+    70.313% 93.402%,
+    68.750% 92.815%,
+    67.188% 92.815%,
+    65.625% 92.522%,
+    64.063% 92.815%,
+    62.500% 93.109%,
+    60.938% 93.842%,
+    59.375% 94.721%,
+    57.813% 94.868%,
+    56.250% 94.575%,
+    54.688% 94.135%,
+    53.125% 93.255%,
+    51.563% 92.229%,
+    50.000% 91.935%,
+    48.438% 92.522%,
+    46.875% 93.109%,
+    45.313% 93.988%,
+    43.750% 94.868%,
+    42.188% 95.161%,
+    40.625% 94.575%,
+    39.063% 93.695%,
+    37.500% 92.962%,
+    35.938% 92.669%,
+    34.375% 92.669%,
+    32.813% 92.229%,
+    31.250% 91.935%,
+    29.688% 92.669%,
+    28.125% 93.842%,
+    26.563% 94.282%,
+    25.000% 94.428%,
+    23.438% 94.868%,
+    21.875% 94.868%,
+    20.313% 94.721%,
+    18.750% 95.015%,
+    17.188% 95.601%,
+    15.625% 96.334%,
+    14.063% 96.334%,
+    12.500% 95.601%,
+    10.938% 95.015%,
+    9.375% 94.575%,
+    7.813% 94.282%,
+    6.250% 93.988%,
+    4.688% 92.962%,
+    3.125% 89.296%,
+    2.344% 87.390%,
+    2.295% 89.150%,
+    1.855% 85.630%,
+    1.953% 82.111%,
+    2.002% 78.592%,
+    2.100% 75.073%,
+    2.051% 71.554%,
+    2.100% 68.035%,
+    2.100% 64.516%,
+    1.953% 60.997%,
+    1.807% 57.478%,
+    1.709% 53.959%,
+    1.709% 50.440%,
+    1.904% 46.921%,
+    1.904% 43.402%,
+    1.904% 39.883%,
+    1.904% 36.364%,
+    1.953% 32.845%,
+    1.904% 29.326%,
+    1.953% 25.806%,
+    2.002% 22.287%,
+    2.002% 18.768%,
+    2.100% 15.249%,
+    2.295% 11.730%
+  )!important;
+  clip-path: polygon(
+    2.344% 6.452%,
+    3.125% 6.158%,
+    4.688% 6.598%,
+    6.250% 4.985%,
+    7.813% 4.106%,
+    9.375% 4.106%,
+    10.938% 4.985%,
+    12.500% 5.425%,
+    14.063% 6.598%,
+    15.625% 6.452%,
+    17.188% 6.158%,
+    18.750% 6.158%,
+    20.313% 6.158%,
+    21.875% 7.918%,
+    23.438% 7.771%,
+    25.000% 7.038%,
+    26.563% 6.158%,
+    28.125% 6.012%,
+    29.688% 5.279%,
+    31.250% 5.572%,
+    32.813% 6.305%,
+    34.375% 7.038%,
+    35.938% 7.185%,
+    37.500% 7.918%,
+    39.063% 8.504%,
+    40.625% 8.944%,
+    42.188% 10.264%,
+    43.750% 8.944%,
+    45.313% 11.437%,
+    46.875% 11.584%,
+    48.438% 11.144%,
+    50.000% 10.411%,
+    51.563% 9.677%,
+    53.125% 9.384%,
+    54.688% 10.411%,
+    56.250% 10.557%,
+    57.813% 9.824%,
+    59.375% 8.211%,
+    60.938% 7.478%,
+    62.500% 6.158%,
+    64.063% 5.279%,
+    65.625% 5.865%,
+    67.188% 5.718%,
+    68.750% 6.891%,
+    70.313% 4.985%,
+    71.875% 4.839%,
+    73.438% 4.545%,
+    75.000% 4.545%,
+    76.563% 6.158%,
+    78.125% 6.598%,
+    79.688% 6.158%,
+    81.250% 5.718%,
+    82.813% 4.839%,
+    84.375% 5.425%,
+    85.938% 4.692%,
+    87.500% 3.959%,
+    89.063% 4.399%,
+    90.625% 3.519%,
+    92.188% 3.226%,
+    93.750% 3.666%,
+    95.313% 5.572%,
+    96.875% 7.331%,
+    97.266% 7.038%,
+    97.852% 11.730%,
+    97.998% 15.249%,
+    98.242% 18.768%,
+    98.242% 22.287%,
+    98.291% 25.806%,
+    98.291% 29.326%,
+    98.340% 32.845%,
+    98.193% 36.364%,
+    98.096% 39.883%,
+    98.145% 43.402%,
+    97.949% 46.921%,
+    97.607% 50.440%,
+    97.412% 53.959%,
+    97.412% 57.478%,
+    97.510% 60.997%,
+    97.363% 64.516%,
+    97.070% 68.035%,
+    96.826% 71.554%,
+    96.680% 75.073%,
+    96.680% 78.592%,
+    96.875% 82.111%,
+    96.924% 85.630%,
+    96.777% 89.150%,
+    97.266% 89.443%,
+    96.875% 89.443%,
+    95.313% 91.642%,
+    93.750% 93.988%,
+    92.188% 95.015%,
+    90.625% 95.308%,
+    89.063% 94.868%,
+    87.500% 94.135%,
+    85.938% 93.988%,
+    84.375% 93.842%,
+    82.813% 93.988%,
+    81.250% 94.428%,
+    79.688% 95.015%,
+    78.125% 95.601%,
+    76.563% 96.188%,
+    75.000% 95.748%,
+    73.438% 95.308%,
+    71.875% 94.282%,
+    70.313% 93.402%,
+    68.750% 92.815%,
+    67.188% 92.815%,
+    65.625% 92.522%,
+    64.063% 92.815%,
+    62.500% 93.109%,
+    60.938% 93.842%,
+    59.375% 94.721%,
+    57.813% 94.868%,
+    56.250% 94.575%,
+    54.688% 94.135%,
+    53.125% 93.255%,
+    51.563% 92.229%,
+    50.000% 91.935%,
+    48.438% 92.522%,
+    46.875% 93.109%,
+    45.313% 93.988%,
+    43.750% 94.868%,
+    42.188% 95.161%,
+    40.625% 94.575%,
+    39.063% 93.695%,
+    37.500% 92.962%,
+    35.938% 92.669%,
+    34.375% 92.669%,
+    32.813% 92.229%,
+    31.250% 91.935%,
+    29.688% 92.669%,
+    28.125% 93.842%,
+    26.563% 94.282%,
+    25.000% 94.428%,
+    23.438% 94.868%,
+    21.875% 94.868%,
+    20.313% 94.721%,
+    18.750% 95.015%,
+    17.188% 95.601%,
+    15.625% 96.334%,
+    14.063% 96.334%,
+    12.500% 95.601%,
+    10.938% 95.015%,
+    9.375% 94.575%,
+    7.813% 94.282%,
+    6.250% 93.988%,
+    4.688% 92.962%,
+    3.125% 89.296%,
+    2.344% 87.390%,
+    2.295% 89.150%,
+    1.855% 85.630%,
+    1.953% 82.111%,
+    2.002% 78.592%,
+    2.100% 75.073%,
+    2.051% 71.554%,
+    2.100% 68.035%,
+    2.100% 64.516%,
+    1.953% 60.997%,
+    1.807% 57.478%,
+    1.709% 53.959%,
+    1.709% 50.440%,
+    1.904% 46.921%,
+    1.904% 43.402%,
+    1.904% 39.883%,
+    1.904% 36.364%,
+    1.953% 32.845%,
+    1.904% 29.326%,
+    1.953% 25.806%,
+    2.002% 22.287%,
+    2.002% 18.768%,
+    2.100% 15.249%,
+    2.295% 11.730%
+  )!important;
+}
+/* The distance after the player now equals the 24px gap from the playlists
+   above, instead of the former 67-75px music-section bottom padding. */
+html body #music.du-music:has(> #duNewspaperDock) {
+  padding-bottom:24px!important;
+}
+html body #music > #duNewspaperDock.du-np-dock:not(.du-np-free-position) {
+  margin-top:24px!important;
+  margin-bottom:0!important;
+}
+/* Removed playlist integration does not reappear before JS hydration. */
+html body #music .du-music-spotify-extra,
+html body #music .du-music-open-spotify,
+html body #music .du-music-spotify {
+  display:none!important;
+}
+
+/* PIXEL_PAUSE_ICON_AND_BAKED_SPOTIFY_ERASURE_20261112
+   The Spotify mark is PRINTED INSIDE the three approved card WebPs, not only
+   in the old DOM. Cover just its icon, word and separator dot by reusing the
+   very same approved artwork sampled a little lower where only paper appears.
+   Important: the red underline is at y > 90%; this patch ends above it. */
+html body #music .du-music-grid > .du-music-card::after {
+  content:""!important;
+  display:block!important;
+  position:absolute!important;
+  inset:0!important;
+  width:100%!important;
+  height:100%!important;
+  padding:0!important;
+  margin:0!important;
+  border:0!important;
+  border-radius:0!important;
+  box-shadow:none!important;
+  outline:0!important;
+  pointer-events:none!important;
+  opacity:1!important;
+  z-index:3!important;
+  /* Duplicate the clean paper band at 91.4..94.6% over y=86.9..90.1%.
+     Full x=9.5..88.5% range covers the printed triangle, Spotify and
+     'открыть дополнительный плеер', but stops above the red underline. */
+  transform:translateY(-4.5%)!important;
+  clip-path:polygon(9.5% 91.4%,88.5% 91.4%,88.5% 94.6%,9.5% 94.6%)!important;
+  -webkit-clip-path:polygon(9.5% 91.4%,88.5% 91.4%,88.5% 94.6%,9.5% 94.6%)!important;
+  background-color:transparent!important;
+  background-image:inherit!important;
+  background-size:100% 100%!important;
+  background-position:center!important;
+  background-repeat:no-repeat!important;
+  background-blend-mode:inherit!important;
+  filter:none!important;
+}
+/* This third card uses a separately filtered ::before background, not the
+   parent background. Mirror that existing filter on the tiny paper patch. */
+html body #music .du-music-grid > .du-music-card:nth-child(3)::after {
+  background-image:url('/assets/approved-music/music-after.webp')!important;
+  background-blend-mode:normal!important;
+  filter:invert(.937) sepia(.463) saturate(3.746) hue-rotate(214deg) brightness(1.153) contrast(.832)!important;
+}
+/* A real SVG inside the interactive play circle, because the site's global
+   button::after suppression hides a purely CSS-generated pause symbol. */
+html body #duNewspaperDock #duNpPanel button.du-np-pixel-play {
+  display:flex!important;
+  align-items:center!important;
+  justify-content:center!important;
+}
+html body #duNewspaperDock #duNpPanel button.du-np-pixel-play > svg.du-np-pixel-pause-icon {
+  width:48%!important;
+  height:48%!important;
+  display:block!important;
+  flex:0 0 auto!important;
+  pointer-events:none!important;
+}
+html body #duNewspaperDock #duNpPanel button.du-np-pixel-play::after {
+  content:none!important;
+  display:none!important;
+}
+
+
+/* PIXEL_PLAYER_TRACK_TITLE_NO_CROP_20261112
+   Repair only live track title typography: the old 17%-high flex container
+   was shorter than the single-line Georgia title plus phase subtitle, causing
+   flex-shrink and cropping of descending letters. Image, paper silhouette,
+   buttons, timeline, overall player size and position are unchanged. */
+html body #duNewspaperDock #duNpPanel .du-np-approved-stage.du-np-live .du-np-pixel-live-title {
+  top:40.4%!important;
+  height:20.5%!important;
+  gap:2px!important;
+}
+html body #duNewspaperDock #duNpPanel .du-np-approved-stage.du-np-live .du-np-pixel-live-title strong {
+  flex:0 0 auto!important;
+  min-height:0!important;
+  font-size:clamp(11px,2.1vw,40px)!important;
+  line-height:1.14!important;
+  padding:0 0 .1em!important;
+  white-space:nowrap!important;
+  text-overflow:ellipsis!important;
+}
+html body #duNewspaperDock #duNpPanel .du-np-approved-stage.du-np-live .du-np-pixel-live-title small {
+  flex:0 0 auto!important;
+  font-size:clamp(9px,1.12vw,18px)!important;
+  line-height:1.08!important;
+}
+@media(max-width:600px) {
+  html body #duNewspaperDock #duNpPanel .du-np-approved-stage.du-np-live .du-np-pixel-live-title strong {
+    font-size:clamp(10px,2.6vw,15px)!important;
+  }
+  html body #duNewspaperDock #duNpPanel .du-np-approved-stage.du-np-live .du-np-pixel-live-title small {
+    font-size:clamp(8px,1.8vw,12px)!important;
+  }
+}

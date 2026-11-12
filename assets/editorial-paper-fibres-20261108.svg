@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="192" height="192" viewBox="0 0 192 192" aria-hidden="true">
+  <title>Subtle fibrous parchment grain, decorative texture</title>
+  <defs>
+    <filter id="f" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency=".58" numOctaves="3" seed="17" stitchTiles="stitch" result="noise"/>
+      <feColorMatrix in="noise" type="matrix" values="0 0 0 0 0.36 0 0 0 0 0.22 0 0 0 0 0.16 0 0 0 0.095 0"/>
+    </filter>
+  </defs>
+  <rect width="192" height="192" filter="url(#f)"/>
+  <g fill="none" stroke="#997660" stroke-linecap="round" opacity=".19">
+    <path d="M9 19l13 1M56 11l8-2M97 37l16 1M144 12l12 3M176 41l6-2M15 72l8 2M42 53l12-1M82 83l10 2M127 59l7-2M162 78l18 1" stroke-width=".65"/>
+    <path d="M8 115l16 2M39 140l10-2M75 111l15 2M113 151l11-2M152 132l15 1M168 167l14-3M20 173l6-1M102 185l12 2" stroke-width=".5"/>
+  </g>
+  <g fill="#b78c72" opacity=".13">
+    <circle cx="31" cy="36" r="1.3"/><circle cx="91" cy="17" r=".7"/><circle cx="149" cy="43" r="1.1"/>
+    <circle cx="21" cy="148" r=".9"/><circle cx="73" cy="162" r=".7"/><circle cx="171" cy="108" r="1.3"/>
+    <circle cx="108" cy="91" r=".9"/><circle cx="143" cy="174" r="1.1"/>
+  </g>
+</svg>
