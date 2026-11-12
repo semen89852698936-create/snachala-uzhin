@@ -1,0 +1,243 @@
+/* EDITORIAL_MUSIC_PLACEMENT_20261112
+ * One horizontal newspaper player in the music section, placed immediately
+ * before the three approved playlists. Compact strip appears only when the
+ * full player has scrolled out of view after listening starts.
+ * Full-page navigation continuity remains via the optional separate window.
+ * The immutable final site and original music-card content are unchanged. */
+
+/* Real page placement. Never cover the cards with a huge fixed overlay. */
+html body #music #duNewspaperDock.du-np-dock {
+  position:relative!important;
+  display:block!important;
+  left:auto!important;
+  right:auto!important;
+  bottom:auto!important;
+  top:auto!important;
+  width:min(620px,calc(100% - 18px))!important;
+  max-width:100%!important;
+  margin:15px auto 27px!important;
+  padding:0!important;
+  z-index:4!important;
+  pointer-events:auto!important;
+}
+html body #music #duNewspaperDock #duNpLauncher {display:none!important}
+html body #music #duNewspaperDock #duNpPanel.du-np-dock-body {
+  display:block!important;
+  position:relative!important;
+  max-height:none!important;
+  overflow:visible!important;
+  margin:0!important;
+  filter:drop-shadow(2px 7px 8px rgba(68,36,32,.18))!important;
+}
+html body #music #duNewspaperDock #duNpPanel[hidden] {display:none!important}
+html body #music #duNewspaperDock #duNpPanel .du-np-close {
+  display:none!important;
+}
+html body #music #duNewspaperDock #duNpPanel .du-np-dock-paper {
+  padding:13px 19px 12px!important;
+}
+html body #music #duNewspaperDock #duNpPanel .du-np-top {
+  margin:0 0 6px!important;
+}
+html body #music #duNewspaperDock #duNpPanel .du-np-tabs {
+  margin:0 0 7px!important;
+}
+html body #music #duNewspaperDock #duNpPanel .du-np-now,
+html body #music #duNewspaperDock #duNpPanel .du-np-transport {
+  margin-bottom:4px!important;
+}
+
+/* Only one small functional CTA in each existing musical magazine card.
+   No nested newspaper mini-card. */
+html body #homeView #music .du-music-card button.du-np-card-listen,
+html body #music .du-music-card button.du-np-card-listen {
+  display:inline-flex!important;
+  width:auto!important;
+  min-width:142px!important;
+  max-width:100%!important;
+  min-height:40px!important;
+  align-items:center!important;
+  justify-content:center!important;
+  margin:13px 0 15px!important;
+  padding:10px 17px!important;
+  border:0!important;
+  border-radius:0!important;
+  background:#f2e5d1!important;
+  background-image:url('/assets/editorial-paper-fibres-20261108.svg'),
+    linear-gradient(120deg,#fdf5e7,#e8d7bb)!important;
+  background-repeat:repeat,no-repeat!important;
+  background-size:192px 192px,100% 100%!important;
+  color:#6a3043!important;
+  clip-path:polygon(1% 2%,9% .5%,19% 2%,30% .3%,41% 2%,52% .5%,64% 2%,75% .4%,87% 2%,99% 1%,99.6% 13%,99.2% 31%,99.6% 47%,99.1% 65%,99.5% 86%,99% 98%,88% 99.2%,77% 98%,65% 99.4%,53% 98.3%,41% 99.2%,29% 98.2%,17% 99.5%,5% 98.3%,.5% 98%,.3% 82%,.8% 64%,.3% 45%,.6% 24%)!important;
+  box-shadow:none!important;
+  cursor:pointer!important;
+  font:800 13px/1.15 Manrope,Arial,sans-serif!important;
+  text-decoration:none!important;
+  transition:transform .17s ease,filter .17s ease!important;
+}
+html body #music .du-music-card button.du-np-card-listen::before,
+html body #music .du-music-card button.du-np-card-listen::after {
+  content:none!important;
+  display:none!important;
+  background:none!important;
+}
+html body #music .du-music-card button.du-np-card-listen:hover {
+  filter:brightness(.97)!important;
+  transform:translateY(-2px) rotate(-.5deg)!important;
+}
+html body #music .du-music-card button.du-np-card-listen[aria-pressed="true"] {
+  background:#e9cfbf!important;
+  background-image:url('/assets/editorial-paper-fibres-20261108.svg'),
+    linear-gradient(120deg,#f4dfce,#e7c8ba)!important;
+}
+
+/* One narrow newspaper strip that stays reachable while the music plays. */
+html body #duNpMini#duNpMini.du-np-mini {
+  position:fixed!important;
+  display:grid!important;
+  left:clamp(10px,2vw,25px)!important;
+  bottom:12px!important;
+  top:auto!important;
+  right:auto!important;
+  grid-template-columns:26px minmax(0,1fr) auto 27px 23px!important;
+  align-items:center!important;
+  gap:9px!important;
+  width:min(555px,calc(100vw - 20px))!important;
+  max-width:100%!important;
+  height:56px!important;
+  min-height:56px!important;
+  padding:6px 11px!important;
+  z-index:16000!important;
+  border:1px solid rgba(112,74,59,.35)!important;
+  border-radius:0!important;
+  clip-path:polygon(.3% 6%,6% 2%,13% 5%,21% 1%,31% 4%,42% 2%,54% 6%,66% 2%,77% 5%,89% 2%,99.6% 4%,99.5% 93%,91% 99%,80% 95%,68% 99%,55% 96%,42% 99%,29% 96%,17% 99%,6% 95%,.3% 97%)!important;
+  color:#673249!important;
+  background:#f3e7d3!important;
+  background-image:url('/assets/editorial-paper-fibres-20261108.svg'),linear-gradient(110deg,#fdf6e7,#edddc5)!important;
+  background-size:192px 192px,100% 100%!important;
+  box-shadow:0 5px 18px rgba(58,30,32,.23)!important;
+  font-family:Manrope,Arial,sans-serif!important;
+}
+html body #duNpMini#duNpMini.du-np-mini[hidden]{display:none!important}
+html body #duNpMini#duNpMini .du-np-mini-note {
+  font:600 25px/1 Georgia,serif!important;
+  color:#a14258!important;
+  text-align:center!important;
+}
+html body #duNpMini#duNpMini .du-np-mini-track {
+  min-width:0!important;
+  overflow:hidden!important;
+  display:flex!important;
+  flex-direction:column!important;
+  gap:1px!important;
+}
+html body #duNpMini#duNpMini .du-np-mini-track strong {
+  display:block!important;
+  max-width:100%!important;
+  overflow:hidden!important;
+  text-overflow:ellipsis!important;
+  white-space:nowrap!important;
+  color:#542b3b!important;
+  font:700 17px/1.02 "Cormorant Garamond",Georgia,serif!important;
+}
+html body #duNpMini#duNpMini .du-np-mini-track small {
+  display:block!important;
+  max-width:100%!important;
+  overflow:hidden!important;
+  text-overflow:ellipsis!important;
+  white-space:nowrap!important;
+  font:700 10px/1.2 Manrope,Arial,sans-serif!important;
+  color:#806259!important;
+}
+html body #duNpMini#duNpMini .du-np-mini-controls {
+  display:flex!important;
+  align-items:center!important;
+  gap:4px!important;
+}
+html body #duNpMini#duNpMini button {
+  display:flex!important;
+  justify-content:center!important;
+  align-items:center!important;
+  flex:0 0 auto!important;
+  width:27px!important;
+  height:37px!important;
+  min-width:27px!important;
+  min-height:37px!important;
+  padding:0!important;
+  margin:0!important;
+  border:0!important;
+  border-radius:0!important;
+  background:transparent!important;
+  background-image:none!important;
+  color:#692e44!important;
+  box-shadow:none!important;
+  cursor:pointer!important;
+  transform:none!important;
+}
+html body #duNpMini#duNpMini button::before,
+html body #duNpMini#duNpMini button::after {
+  display:none!important;
+  content:none!important;
+  background:none!important;
+}
+html body #duNpMini#duNpMini button:focus-visible {
+  outline:2px solid #a84560!important;
+  outline-offset:2px!important;
+}
+html body #duNpMini#duNpMini svg {
+  display:block!important;
+  width:19px!important;height:19px!important;
+  margin:auto!important;
+  pointer-events:none!important;
+}
+html body #duNpMini#duNpMini button#duNpMiniToggle {
+  width:36px!important;height:36px!important;
+  min-width:36px!important;min-height:36px!important;
+  border-radius:50%!important;
+  color:#fff8ec!important;
+  background:#743346!important;
+  background-image:none!important;
+}
+html body #duNpMini#duNpMini button#duNpMiniToggle svg {
+  width:18px!important;height:18px!important;
+}
+html body #duNpMini#duNpMini .du-np-mini-expand {
+  font:700 25px/1 Georgia,serif!important;
+  border-left:1px solid rgba(125,79,62,.22)!important;
+}
+html body #duNpMini#duNpMini .du-np-mini-close {
+  font:500 20px/1 Georgia,serif!important;
+  opacity:.65!important;
+}
+@media(max-width:620px){
+  html body #music #duNewspaperDock.du-np-dock {
+    width:calc(100% - 4px)!important;
+    margin:12px auto 20px!important;
+  }
+  html body #music #duNewspaperDock #duNpPanel .du-np-dock-paper {
+    padding:11px 14px 10px!important;
+  }
+  html body #duNpMini#duNpMini.du-np-mini {
+    left:7px!important;
+    bottom:7px!important;
+    width:calc(100vw - 14px)!important;
+    height:54px!important;min-height:54px!important;
+    gap:5px!important;
+    grid-template-columns:19px minmax(0,1fr) auto 23px 20px!important;
+    padding:5px 8px!important;
+  }
+  html body #duNpMini#duNpMini .du-np-mini-note {font-size:19px!important}
+  html body #duNpMini#duNpMini .du-np-mini-track strong {font-size:15px!important}
+  html body #duNpMini#duNpMini .du-np-mini-controls {gap:1px!important}
+  html body #duNpMini#duNpMini .du-np-mini-controls button:not(#duNpMiniToggle) {
+    width:25px!important;min-width:25px!important;
+  }
+  html body #duNpMini#duNpMini button#duNpMiniToggle{
+    width:33px!important;height:33px!important;
+    min-width:33px!important;min-height:33px!important;
+  }
+  html body #duNpMini#duNpMini .du-np-mini-expand,
+  html body #duNpMini#duNpMini .du-np-mini-close{
+    width:23px!important;min-width:23px!important;
+  }
+}
