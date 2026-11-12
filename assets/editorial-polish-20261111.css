@@ -1,0 +1,1616 @@
+/* СНАЧАЛА УЖИН | editorial polish 11 Nov 2026
+   Based on approved 11-Nov checkpoint. Presentation, usability and
+   typography only. Keep all recipes, four working moods, photographs
+   outside the explicitly approved dinner-strip replacement, and JS.
+*/
+:root{--du-polish-paper:#f8efe3;--du-polish-wine:#79253e;--du-polish-deep:#4d2633;--du-polish-muted:#735662;--du-polish-line:#cfb5a5}
+html{scroll-behavior:smooth}
+#catalog{scroll-margin-top:112px}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+
+/* One useful short way through the standalone 1001 cover.
+   Do not resize or replace its approved photographic hero. */
+body.du-catalog-standalone .du-hero-actions>a.du-jump-recipes{
+  display:inline-flex!important;align-items:center;justify-content:center;
+  gap:11px;min-height:47px;padding:11px 17px!important;
+  background:#f6e7d3!important;color:#6a2338!important;
+  border:0!important;border-radius:0!important;
+  font:750 14px/1.3 Manrope,Arial,sans-serif!important;
+  -webkit-mask-image:var(--du-paper-tear-mask);mask-image:var(--du-paper-tear-mask);
+  filter:drop-shadow(0 4px 6px rgba(30,15,10,.2));
+  transition:transform 240ms cubic-bezier(.2,.75,.25,1),filter 240ms ease!important;
+}
+@media(hover:hover) and (pointer:fine){
+  body.du-catalog-standalone .du-hero-actions>a.du-jump-recipes:hover{
+    transform:translateY(-4px) rotate(-.35deg)!important;
+    filter:drop-shadow(0 9px 9px rgba(30,15,10,.24));
+  }
+}
+body.du-catalog-standalone .du-hero-actions>a.du-jump-recipes:focus-visible{
+  outline:3px solid #fff;outline-offset:3px
+}
+body.du-catalog-standalone .du-hero-actions>a.du-jump-recipes:active{transform:translateY(1px)!important}
+
+/* Editorial readability: targeted increases, not a global override. */
+#catalog .search-panel .filter-button,
+#catalog .search-panel select,
+#catalog .category-filters .chip,
+body.du-airfryer-standalone .du-airfryer-filter{
+  font-size:clamp(14px,1.04vw,16px)!important;line-height:1.4!important;
+  min-height:44px!important;
+}
+#catalog .result-line,#catalog .du-pantry-toolbar,
+#catalog .du-pantry-controls,
+#catalog .du-small-note,
+#catalog .du-section-heading p,
+#evening .du-section-heading p,
+#evening .du-small-note,
+#recipeDetail .recipe-meta,
+#recipeDetail .recipe-intro p{
+  font-size:clamp(14px,1.07vw,17px)!important;line-height:1.62!important;
+}
+#catalog .search-panel input,
+body.du-airfryer-standalone #airfryerSearch{
+  font-size:16px!important;line-height:1.45!important;color:#522b37!important
+}
+#catalog .du-eyebrow,#evening .du-eyebrow,
+body.du-airfryer-standalone .du-airfryer-kicker{
+  font-size:clamp(12px,.95vw,14px)!important;line-height:1.5!important
+}
+/* Music cards retain their approved photo/paper composition and typography.
+   Only their smallest details gain space and contrast. */
+#music :is(.du-music-phase,.du-music-card-desc,.du-music-card small,
+.du-bpm-track-details,.du-bpm-track-details strong,.du-bpm-track-details small,
+.du-music-queue,.du-music-bpm,.du-music-label){
+  font-size:clamp(13.5px,1vw,15px)!important;line-height:1.55!important;
+}
+#music .du-music-card-desc,#music .du-bpm-track-details small{color:#6a4b58!important}
+#music .du-bpm-track-details strong{color:#4d2633!important}
+#music .du-music-card{row-gap:5px!important}
+#music .du-bpm-track{min-height:53px!important}
+@media(max-width:760px){
+  #music :is(.du-music-card-desc,.du-bpm-track-details,
+  .du-bpm-track-details strong,.du-bpm-track-details small,.du-music-card small){
+    font-size:15px!important;line-height:1.53!important;
+  }
+  #music .du-music-card{padding-bottom:26px!important}
+}
+
+/* The after-dinner line is already full bleed across the viewport.
+   Expand the TEXT/PHOTO COMPOSITION by another 20%: 54ch -> 65ch.
+   Cream/burgundy palette echoes the approved 'СНАЧАЛА УЖИН' paper panels.
+   Dedicated image depicts used plates and two almost-empty wine glasses. */
+html body.du-evening-mode #eveningLanding>.du-evening-strip-two{
+  isolation:isolate;
+  background:#e7d4bf!important;
+  background-image:
+    linear-gradient(90deg,rgba(53,21,29,.77) 0%,rgba(63,28,36,.50) 43%,rgba(61,25,34,.24) 100%),
+    url('/assets/after-dinner-glasses-20261111.webp')!important;
+  background-size:cover,cover!important;
+  background-position:center,center!important;
+  background-repeat:no-repeat!important;
+  border-block:9px solid #f8eee2!important;
+  box-shadow:inset 0 0 0 1px rgba(239,211,178,.28)!important;
+}
+html body.du-evening-mode #eveningLanding>.du-evening-strip-two p{
+  width:min(100%,65ch)!important;max-width:65ch!important;margin-inline:auto!important;
+  color:#fff4e7!important;line-height:1.09!important;
+  text-shadow:0 3px 16px rgba(35,11,17,.75)!important;
+}
+html body.du-evening-mode #eveningLanding>.du-evening-strip-two .du-evening-strip-number{
+  color:#f3dbc4!important;text-shadow:0 2px 9px rgba(35,11,17,.55)!important;
+}
+@media(max-width:760px){
+  html body.du-evening-mode #eveningLanding>.du-evening-strip-two{
+    background-position:center,66% center!important;
+    min-height:300px!important;padding:42px 22px!important;
+    border-block-width:6px!important
+  }
+  html body.du-evening-mode #eveningLanding>.du-evening-strip-two p{
+    width:100%!important;max-width:100%!important;
+    font-size:clamp(32px,8.5vw,52px)!important;line-height:1.05!important
+  }
+}
+
+/* Four working moods = four photographic magazine cuts.
+   The live menu builder, time selectors, chosen states and click handlers
+   stay intact; this replaces only the generic flat-button treatment. */
+html body #evening.du-evening{
+  padding-top:clamp(58px,6vw,105px)!important
+}
+html body #evening .du-section-top{margin-bottom:34px!important;align-items:end!important}
+html body #evening .du-section-heading h2{
+  font-size:clamp(54px,6.7vw,110px)!important;line-height:.91!important;
+  letter-spacing:-.054em!important
+}
+html body #evening .du-section-heading p{
+  max-width:440px!important;color:#684a52!important
+}
+html body #evening .du-moods{
+  display:grid!important;grid-template-columns:repeat(4,minmax(0,1fr))!important;
+  gap:clamp(12px,1.7vw,26px)!important
+}
+html body #evening .du-moods>button.du-mood{
+  position:relative!important;isolation:isolate!important;display:flex!important;
+  flex-direction:column!important;justify-content:flex-end!important;
+  width:100%!important;min-width:0!important;
+  min-height:clamp(272px,26vw,362px)!important;
+  padding:clamp(18px,1.65vw,25px)!important;
+  background:#f7e8d6!important;
+  background-image:none!important;border:0!important;border-radius:0!important;
+  color:#4d2333!important;cursor:pointer!important;
+  -webkit-mask-image:none!important;mask-image:none!important;
+  clip-path:polygon(0 3%,11% 1%,21% 3%,35% 0,47% 2%,59% 1%,72% 3%,85% 1%,100% 3%,99% 96%,88% 99%,73% 97%,58% 100%,44% 98%,29% 100%,16% 97%,0 99%)!important;
+  box-shadow:0 13px 24px rgba(64,29,30,.11)!important;
+  transition:transform .24s ease,filter .24s ease!important;
+  text-align:left!important;
+}
+html body #evening .du-moods>button.du-mood::before{
+  content:""!important;position:absolute!important;inset:0 0 38%!important;z-index:-2!important;
+  background:#6b3a3d center/cover no-repeat!important;
+  background-image:url('/assets/our-evening-invitation-approved-20261102.webp')!important;
+  opacity:1!important;mask-image:none!important;-webkit-mask-image:none!important;
+  border:0!important;border-radius:0!important;filter:none!important;box-shadow:none!important;
+}
+html body #evening .du-moods>button.du-mood[data-mood="spark"]::before{
+  background-image:url('/assets/home-hero-steak-wine-20261108.webp')!important
+}
+html body #evening .du-moods>button.du-mood[data-mood="play"]::before{
+  background-image:url('/assets/cooking-together-romantic.avif')!important
+}
+html body #evening .du-moods>button.du-mood[data-mood="cozy"]::before{
+  background-image:url('/assets/our-evening-together-approved.webp')!important
+}
+html body #evening .du-moods>button.du-mood::after{
+  content:"";position:absolute;inset:48% 0 0;z-index:-1;
+  background:linear-gradient(180deg,rgba(249,237,221,.91),#faefe0 35%,#f8e6d1 100%);
+  clip-path:polygon(0 5%,13% 2%,26% 7%,39% 1%,52% 5%,66% 0,81% 6%,100% 2%,100% 100%,0 100%);
+  pointer-events:none;
+}
+html body #evening .du-mood .du-mood-num{
+  position:absolute!important;top:17px!important;left:20px!important;
+  color:#fff5ed!important;font-size:13px!important;font-weight:800!important;
+  text-shadow:0 1px 7px #2c1218!important
+}
+html body #evening .du-mood .du-mood-icon{
+  position:absolute!important;top:17px!important;right:19px!important;margin:0!important;
+  font-size:27px!important;line-height:1!important;text-shadow:0 1px 9px #311619
+}
+html body #evening .du-mood strong{
+  color:#562638!important;font:500 clamp(28px,3vw,44px)/.99 'Cormorant Garamond',Georgia,serif!important;
+  margin:0 0 6px!important;letter-spacing:-.04em!important
+}
+html body #evening .du-mood small{
+  color:#68535a!important;font:600 clamp(14px,1.04vw,16px)/1.48 Manrope,Arial,sans-serif!important;
+  margin:0!important;max-width:100%!important
+}
+html body #evening .du-mood .du-mood-check{
+  position:absolute!important;top:auto!important;bottom:19px!important;right:18px!important;
+  color:#8b3b4d!important;font-size:24px!important
+}
+html body #evening .du-moods>button.du-mood.is-selected{
+  outline:3px solid #842d48!important;outline-offset:-3px!important;
+  filter:drop-shadow(0 4px 7px rgba(74,26,37,.23))!important
+}
+@media(hover:hover) and (pointer:fine){
+  html body #evening .du-moods>button.du-mood:hover{
+    transform:translateY(-5px) rotate(-.35deg)!important;
+    filter:drop-shadow(0 9px 11px rgba(74,26,37,.19))!important
+  }
+}
+html body #evening .du-moods>button.du-mood:focus-visible{
+  outline:3px solid #842d48!important;outline-offset:3px!important
+}
+html body #evening .du-builder{
+  margin-top:clamp(24px,3vw,44px)!important;gap:0!important;
+  background:transparent!important;
+}
+html body #evening .du-builder-left{
+  background:#f3e2cf!important;
+  background-image:repeating-linear-gradient(110deg,rgba(113,67,55,.018) 0 1px,transparent 1px 5px)!important;
+  border:1px solid #d7bba9!important;
+  border-radius:0!important;
+  padding:clamp(25px,3.2vw,48px)!important
+}
+html body #evening .du-builder-right{
+  background:#612c3e!important;color:#fff0e4!important;
+  background-image:linear-gradient(145deg,#6b3445,#482633)!important;
+  border:1px solid #5f3140!important;
+  border-radius:0!important;padding:clamp(25px,3.2vw,48px)!important
+}
+html body #evening .du-builder-right :is(h3,.du-menu-intro,.du-menu-meta,.du-mini-eyebrow){color:#fff3ea!important}
+html body #evening .du-time-choices button{
+  min-height:47px!important;font-size:clamp(14px,1.08vw,16px)!important
+}
+html body #evening .du-menu-actions button{
+  min-height:46px!important;font-size:14px!important
+}
+html body #evening .du-small-note{color:#73525e!important}
+
+/* Shopping list: editorial paper instead of generic compact utility drawer.
+   Retains same grouping, checklist, sharing, copying and controls. */
+html body #shoppingDrawer.shopping-drawer{
+  background:#f8f0e6!important;
+  border-left:3px solid #8a384d!important;
+  box-shadow:-18px 0 45px rgba(38,20,22,.2)!important;
+}
+html body #shoppingDrawer .drawer-top{
+  background:linear-gradient(135deg,#f2e0cd,#f9eee1)!important;
+  border-bottom:1px solid #d8bdb0!important;
+  padding:clamp(20px,3vw,35px)!important;
+}
+html body #shoppingDrawer .drawer-top h2{
+  font:500 clamp(39px,4vw,57px)/.97 'Cormorant Garamond',Georgia,serif!important;
+  color:#572438!important
+}
+html body #shoppingDrawer .drawer-top .eyebrow{font-size:13px!important;color:#8b3d50!important}
+html body #shoppingDrawer #shoppingContents{
+  padding:clamp(17px,2.2vw,27px)!important;font-size:15px!important;line-height:1.55!important
+}
+html body #shoppingDrawer #shoppingContents :is(label,li,p,small,span){
+  font-size:clamp(14px,1.02vw,16px)!important;line-height:1.5!important
+}
+html body #shoppingDrawer #shoppingContents input[type="checkbox"]{
+  width:20px!important;height:20px!important;min-width:20px!important;accent-color:#842d48
+}
+html body #shoppingDrawer #shoppingContents :is(.shopping-group,.shop-group,.drawer-group){
+  padding-block:12px!important;border-bottom:1px solid #e0cabb!important
+}
+html body #shoppingDrawer .drawer-bottom{
+  background:#f4e6d7!important;border-top:1px solid #d8bdb0!important;
+  padding:clamp(14px,2.1vw,25px)!important;gap:9px!important
+}
+html body #shoppingDrawer .drawer-bottom :is(button,a){
+  min-height:42px!important;font-size:14px!important;line-height:1.4!important
+}
+html body #shoppingDrawer .du-shop-share-choices{
+  display:flex!important;flex-wrap:wrap!important;gap:8px!important
+}
+html body #shoppingDrawer .du-shop-share-caption{
+  font-size:13px!important;line-height:1.55!important;color:#705760!important
+}
+
+/* Airfryer catalog: tighter editorial masthead, readable functional tools,
+   light photographic rhythm. No photo/source/time/temperature changes. */
+html body.du-airfryer-standalone #airfryer{
+  padding-top:clamp(20px,3vw,48px)!important
+}
+html body.du-airfryer-standalone .du-airfryer-heading{
+  padding-block:clamp(24px,3vw,44px)!important
+}
+html body.du-airfryer-standalone .du-airfryer-heading h2{
+  font-size:clamp(60px,7vw,112px)!important;line-height:.9!important;
+  letter-spacing:-.055em!important
+}
+html body.du-airfryer-standalone .du-airfryer-heading p{
+  max-width:620px!important;font-size:clamp(16px,1.32vw,19px)!important;
+  line-height:1.59!important;color:#70515a!important
+}
+html body.du-airfryer-standalone .du-airfryer-filter{
+  min-height:44px!important;padding:11px 15px!important;
+  font-size:clamp(14px,1.02vw,16px)!important;
+}
+html body.du-airfryer-standalone #airfryerSearch{
+  min-height:51px!important;padding-inline:15px!important;
+  font-size:16px!important
+}
+html body.du-airfryer-standalone .du-airfryer-results,
+html body.du-airfryer-standalone .du-airfryer-specs{
+  font-size:clamp(14px,1vw,16px)!important;line-height:1.58!important
+}
+html body.du-airfryer-standalone .du-airfryer-grid{
+  gap:clamp(16px,2vw,30px)!important
+}
+html body.du-airfryer-standalone :is(.du-airfryer-card,.du-airfryer-recipe-card){
+  border-radius:0!important;
+  box-shadow:0 8px 20px rgba(55,33,29,.08)!important;
+  transition:transform .24s ease,box-shadow .24s ease!important
+}
+@media(hover:hover) and (pointer:fine){
+  html body.du-airfryer-standalone :is(.du-airfryer-card,.du-airfryer-recipe-card):hover{
+    transform:translateY(-4px)!important;box-shadow:0 15px 25px rgba(55,33,29,.14)!important
+  }
+}
+
+/* Each screen has a clear primary next step, without adding new blocks
+   that would disfigure the original hero. */
+#recipeDetail #startCooking,
+#evening #beginEvening{
+  font-weight:800!important;min-height:48px!important
+}
+#evening .du-evening-next a{
+  display:inline-flex!important;align-items:center;min-height:44px!important;
+  font-size:clamp(14px,1.1vw,17px)!important
+}
+
+/* Mobile editorial pass: breathing room, minimum finger targets, and
+   prose separated from photographic areas. */
+@media(max-width:760px){
+  #evening .du-section-top{gap:14px!important;margin-bottom:25px!important}
+  #evening .du-section-heading h2{font-size:clamp(51px,14vw,74px)!important}
+  html body #evening .du-moods{
+    grid-template-columns:repeat(2,minmax(0,1fr))!important;
+    gap:12px!important
+  }
+  html body #evening .du-moods>button.du-mood{
+    min-height:244px!important;padding:13px!important
+  }
+  html body #evening .du-mood strong{font-size:29px!important}
+  html body #evening .du-mood small{font-size:14px!important}
+  html body #evening .du-mood .du-mood-check{bottom:12px!important;right:13px!important}
+  html body #evening .du-builder{grid-template-columns:1fr!important}
+  #catalog .category-filters,#catalog .search-panel{scroll-padding-inline:16px}
+  #catalog .search-panel .filter-button,
+  body.du-airfryer-standalone .du-airfryer-filter{min-height:46px!important}
+  #catalog .search-panel{gap:9px!important}
+  body.du-airfryer-standalone .du-airfryer-heading{
+    padding-top:25px!important;padding-bottom:23px!important
+  }
+  body.du-airfryer-standalone .du-airfryer-heading h2{
+    font-size:clamp(56px,12vw,76px)!important
+  }
+  html body #shoppingDrawer.shopping-drawer{width:min(100vw,490px)!important}
+  html body #shoppingDrawer .drawer-top{padding:20px!important}
+  html body #shoppingDrawer #shoppingContents{padding:18px!important}
+  html body #shoppingDrawer .drawer-bottom{padding:15px!important}
+  body.du-catalog-standalone .du-hero-actions>a.du-jump-recipes{
+    width:100%!important;justify-content:center!important;min-height:48px!important
+  }
+}
+@media(max-width:390px){
+  html body #evening .du-moods{grid-template-columns:1fr 1fr!important}
+  html body #evening .du-moods>button.du-mood{min-height:240px!important}
+  html body #evening .du-mood strong{font-size:27px!important}
+}
+@media(prefers-reduced-motion:reduce){
+  html body #evening .du-moods>button.du-mood,
+  body.du-catalog-standalone .du-hero-actions>a.du-jump-recipes{
+    transition:none!important;transform:none!important
+  }
+}
+
+/* Standalone 1001 magazine cover and catalogue are one readable narrative
+   only when opening the clean /full-catalog/ URL. Do not alter hash-based
+   views such as #recipe=..., #catalog or #evening. */
+@supports selector(body:has(:target)){
+  html body.du-catalog-standalone:not(:has(:target)) #homeView
+    > :not(.du-hero):not(#catalog){display:none!important}
+  html body.du-catalog-standalone:not(:has(:target)) #homeView>#catalog{
+    display:block!important;visibility:visible!important;
+    content-visibility:visible!important;
+    padding-top:clamp(54px,5vw,85px)!important
+  }
+  html body.du-catalog-standalone:not(:has(:target))
+    #homeView>.du-hero{display:block!important}
+  html body.du-catalog-standalone:not(:has(:target))
+    #catalog .search-panel{scroll-margin-top:120px}
+}
+
+
+/* MOBILE_NAV_AND_CATALOG_COVER_QA_FIX_20261111
+   Chromium QA caught dark selected quick-nav paper with dark lettering.
+   Preserve the heart / airfryer symbols and paper texture. */
+@media(max-width:760px){
+  html body.du-evening-mode .du-quick-nav-mobile>a[data-quick-evening],
+  html body .du-quick-nav-mobile>a[data-quick-evening][aria-current="page"],
+  html body .du-quick-nav-mobile>a[data-quick-airfryer][aria-current="page"]{
+    position:relative!important;isolation:isolate!important;
+    color:#fff9f2!important;-webkit-text-fill-color:#fff9f2!important;
+    text-shadow:0 1px 2px rgba(33,15,19,.5)!important;
+  }
+  html body.du-evening-mode .du-quick-nav-mobile>a[data-quick-evening]::before,
+  html body .du-quick-nav-mobile>a[data-quick-evening][aria-current="page"]::before,
+  html body .du-quick-nav-mobile>a[data-quick-airfryer][aria-current="page"]::before{
+    background-color:#77172b!important;z-index:-1!important;
+    pointer-events:none!important
+  }
+  html body.du-catalog-standalone #homeView .du-hero-actions{
+    position:relative!important;z-index:10!important;
+    display:grid!important;grid-template-columns:minmax(0,1fr)!important;
+    justify-items:stretch!important;
+    width:calc(100% - 44px)!important;max-width:365px!important;
+    margin:27px 22px 20px!important;padding:0!important;gap:10px!important;
+    transform:none!important;
+  }
+  html body.du-catalog-standalone #homeView .du-hero-actions>a,
+  html body.du-catalog-standalone #homeView .du-hero-actions>button{
+    box-sizing:border-box!important;
+    width:100%!important;max-width:100%!important;min-width:0!important;
+    min-height:48px!important;justify-content:center!important;
+    margin:0!important;padding:12px 15px!important;
+    white-space:normal!important;overflow:visible!important;
+    line-height:1.4!important;text-align:center!important;
+    font-size:14px!important;z-index:5!important;
+  }
+  html body.du-catalog-standalone #homeView .du-hero-actions>a.du-jump-recipes{
+    background-color:#f8e5d2!important;color:#632438!important;
+    -webkit-text-fill-color:#632438!important
+  }
+  html body.du-catalog-standalone #catalog #heroRecipe{
+    display:flex!important;position:relative!important;
+    inset:auto!important;top:auto!important;left:auto!important;right:auto!important;bottom:auto!important;
+    transform:none!important;
+    width:min(100%,420px)!important;min-height:84px!important;
+    margin:0 0 24px!important;z-index:2!important;
+    background:#f5e5d2!important;color:#632438!important;
+    border:1px solid #d8b6a0!important;border-radius:0!important;
+    padding:16px 21px!important;text-align:left!important
+  }
+  html body.du-catalog-standalone #catalog #heroRecipe :is(small,b){
+    color:#632438!important
+  }
+}
+
+
+/* MOBILE FEATURED-RECIPE GRID POSITION FIX | Chromium 390px audit
+   Main catalog has explicit grid-row numbers 1-9. An inserted extra
+   item with row:auto was placed AFTER the entire 1001-recipe grid.
+   Add a dedicated second row and shift existing rows, only while
+   the featured recipe is actually relocated by editorial-polish.js.
+   Keep the approved hero photo, recipe logic and other routes intact. */
+@media(max-width:760px){
+  html body.du-catalog-standalone.du-catalog-teaser-relocated #homeView #catalog>.container>#heroRecipe{
+    grid-row:2!important;grid-column:1!important;
+    justify-self:stretch!important;align-self:stretch!important;
+    box-sizing:border-box!important;width:100%!important;max-width:100%!important;
+  }
+  html body.du-catalog-standalone.du-catalog-teaser-relocated #homeView #catalog .search-panel{grid-row:3!important}
+  html body.du-catalog-standalone.du-catalog-teaser-relocated #homeView #catalog #categoryFilters{grid-row:4!important}
+  html body.du-catalog-standalone.du-catalog-teaser-relocated #homeView #catalog .du-ingredient-search-tip{grid-row:5!important}
+  html body.du-catalog-standalone.du-catalog-teaser-relocated #homeView #catalog .du-pantry-toolbar{grid-row:6!important}
+  html body.du-catalog-standalone.du-catalog-teaser-relocated #homeView #catalog .result-line{grid-row:7!important}
+  html body.du-catalog-standalone.du-catalog-teaser-relocated #homeView #catalog #recipeGrid{grid-row:8!important}
+  html body.du-catalog-standalone.du-catalog-teaser-relocated #homeView #catalog .du-more-wrap{grid-row:9!important}
+  html body.du-catalog-standalone.du-catalog-teaser-relocated #homeView #catalog .empty-state{grid-row:10!important}
+}
+
+
+/* 11 Nov 2026 | FOUR EVENING MOODS: magazine collage.
+   Visual-only: existing four buttons, data-mood attributes, aria-pressed,
+   image assets and menu-builder handlers remain unchanged. */
+html body #evening .du-moods{
+  align-items:center!important;
+  gap:clamp(13px,1.9vw,28px)!important;
+  padding:14px 4px 21px!important;
+}
+html body #evening .du-moods>button.du-mood{
+  --mood-ink:#61283f;
+  min-height:clamp(285px,26vw,365px)!important;
+  padding:clamp(18px,1.8vw,27px)!important;
+  overflow:hidden!important;
+  justify-content:flex-end!important;
+  background-color:#f6e9d9!important;
+  background-image:repeating-linear-gradient(118deg,rgba(94,54,51,.025) 0 1px,transparent 1px 6px)!important;
+  box-shadow:0 11px 21px rgba(63,33,29,.12)!important;
+  transform:translateY(3px) rotate(-.75deg)!important;
+  transition:transform .28s cubic-bezier(.2,.7,.2,1),filter .28s ease,box-shadow .28s ease!important;
+}
+html body #evening .du-moods>button.du-mood[data-mood="spark"]{
+  --mood-ink:#6c213d;
+  background-color:#f2dfd6!important;
+  transform:translateY(-6px) rotate(.7deg)!important;
+  clip-path:polygon(0 1%,13% 3%,28% 0,41% 2%,55% 1%,71% 3%,85% 0,100% 2%,99% 97%,82% 100%,65% 98%,48% 100%,31% 97%,13% 100%,0 98%)!important;
+}
+html body #evening .du-moods>button.du-mood[data-mood="play"]{
+  --mood-ink:#9a344d;
+  background-color:#fff0e4!important;
+  transform:translateY(9px) rotate(-.45deg)!important;
+  clip-path:polygon(0 2%,16% 0,29% 2%,44% 1%,59% 3%,76% 0,91% 2%,100% 1%,99% 99%,84% 97%,69% 100%,50% 98%,33% 100%,18% 98%,0 100%)!important;
+}
+html body #evening .du-moods>button.du-mood[data-mood="cozy"]{
+  --mood-ink:#76513a;
+  background-color:#f4e6d0!important;
+  transform:translateY(-2px) rotate(.8deg)!important;
+  clip-path:polygon(0 1%,12% 3%,26% 1%,39% 0,56% 2%,70% 0,85% 3%,100% 1%,99% 99%,83% 97%,68% 100%,51% 98%,34% 100%,16% 97%,0 99%)!important;
+}
+html body #evening .du-moods>button.du-mood::before{
+  inset:0 0 35%!important;
+  background-position:center 43%!important;
+  transition:filter .28s ease,scale .38s ease!important;
+}
+html body #evening .du-moods>button.du-mood[data-mood="spark"]::before{background-position:52% 42%!important}
+html body #evening .du-moods>button.du-mood[data-mood="play"]::before{background-position:45% 36%!important}
+html body #evening .du-moods>button.du-mood[data-mood="cozy"]::before{background-position:60% 44%!important}
+html body #evening .du-moods>button.du-mood::after{
+  inset:49% 0 0!important;
+  background:linear-gradient(180deg,rgba(250,240,226,.93) 0,#f8ead9 28%,#f4e2d0 100%)!important;
+  clip-path:polygon(0 7%,14% 2%,29% 6%,43% 1%,56% 5%,70% 0,85% 5%,100% 1%,100% 100%,0 100%)!important;
+}
+html body #evening .du-moods>button.du-mood[data-mood="spark"]::after{
+  background:linear-gradient(180deg,rgba(250,228,219,.96),#f3ddd2 27%,#eed5cb 100%)!important;
+}
+html body #evening .du-moods>button.du-mood[data-mood="play"]::after{
+  background:linear-gradient(180deg,rgba(255,241,225,.96),#fbebdd 32%,#f8e0ce 100%)!important;
+}
+html body #evening .du-moods>button.du-mood[data-mood="cozy"]::after{
+  background:linear-gradient(180deg,rgba(251,238,213,.96),#f3e5cf 27%,#ead5bc 100%)!important;
+}
+html body #evening .du-mood .du-mood-num{top:16px!important;left:20px!important;font-size:12px!important}
+html body #evening .du-mood .du-mood-icon{top:14px!important;right:17px!important;font-size:25px!important}
+html body #evening .du-mood strong{
+  position:relative!important;
+  z-index:1!important;
+  display:table!important;
+  width:max-content!important;
+  max-width:calc(100% - 10px)!important;
+  margin:0 0 13px!important;
+  color:var(--mood-ink)!important;
+  font-size:clamp(34px,3.3vw,49px)!important;
+  line-height:1.03!important;
+  white-space:normal!important;
+  text-wrap:balance!important;
+  background-image:linear-gradient(97deg,#ad4050,#b54a56)!important;
+  background-repeat:no-repeat!important;
+  background-position:left calc(100% - 1px)!important;
+  background-size:0 3px!important;
+  transition:background-size .26s ease!important;
+}
+html body #evening .du-mood small{
+  position:relative!important;
+  z-index:1!important;
+  color:#5c4650!important;
+  font-size:clamp(13px,1.08vw,15px)!important;
+  line-height:1.5!important;
+  font-weight:600!important;
+  max-width:calc(100% - 8px)!important;
+}
+html body #evening .du-mood .du-mood-check{
+  top:auto!important;right:18px!important;bottom:15px!important;
+  color:var(--mood-ink)!important;
+  font-size:22px!important;
+}
+html body #evening .du-moods>button.du-mood.is-selected{
+  outline:0!important;
+  filter:drop-shadow(0 6px 9px rgba(91,37,48,.2))!important;
+}
+html body #evening .du-moods>button.du-mood.is-selected strong{
+  background-size:100% 3px!important;
+}
+html body #evening .du-moods>button.du-mood.is-selected .du-mood-check{
+  color:#a53648!important;
+}
+html body #evening .du-moods>button.du-mood:focus-visible{
+  outline:3px solid #a43d52!important;outline-offset:4px!important;
+}
+@media(hover:hover) and (pointer:fine){
+  html body #evening .du-moods>button.du-mood:hover{
+    transform:translateY(-9px) rotate(-1.2deg) scale(1.018)!important;
+    filter:drop-shadow(0 10px 12px rgba(74,26,37,.2))!important;
+  }
+  html body #evening .du-moods>button.du-mood[data-mood="spark"]:hover,
+  html body #evening .du-moods>button.du-mood[data-mood="cozy"]:hover{
+    transform:translateY(-11px) rotate(1.1deg) scale(1.018)!important;
+  }
+  html body #evening .du-moods>button.du-mood:hover::before{scale:1.045!important}
+}
+@media(max-width:760px){
+  html body #evening .du-moods{gap:13px!important;padding:10px 2px 17px!important}
+  html body #evening .du-moods>button.du-mood{
+    min-height:clamp(246px,47vw,315px)!important;
+    padding:clamp(13px,2.7vw,21px)!important;
+  }
+  html body #evening .du-mood strong{font-size:clamp(29px,6vw,42px)!important;margin-bottom:9px!important}
+  html body #evening .du-mood small{font-size:clamp(12px,2.8vw,14px)!important;line-height:1.42!important}
+  html body #evening .du-mood .du-mood-check{right:11px!important;bottom:9px!important;font-size:18px!important}
+}
+@media(max-width:390px){
+  html body #evening .du-moods{gap:10px!important}
+  html body #evening .du-moods>button.du-mood{min-height:242px!important;padding:12px!important}
+  html body #evening .du-mood strong{font-size:clamp(26px,7.4vw,30px)!important}
+  html body #evening .du-mood small{font-size:12px!important}
+  html body #evening .du-mood .du-mood-num{top:12px!important;left:12px!important}
+  html body #evening .du-mood .du-mood-icon{top:12px!important;right:12px!important;font-size:21px!important}
+}
+@media(prefers-reduced-motion:reduce){
+  html body #evening .du-moods>button.du-mood{transition:none!important;transform:none!important}
+  html body #evening .du-moods>button.du-mood::before,
+  html body #evening .du-mood strong{transition:none!important}
+}
+
+/* 11 Nov 2026: catalog headline exactly 30% larger at each breakpoint.
+   Scoped to collection heading; other page typography remains unchanged. */
+html body #catalog .du-section-top .du-section-heading h2{
+  font-size:clamp(68.9px,7.8vw,104px)!important;
+}
+@media(max-width:760px){
+  html body #catalog .du-section-top .du-section-heading h2{font-size:80.6px!important}
+}
+@media(max-width:480px){
+  html body #catalog .du-section-top .du-section-heading h2{font-size:67.6px!important}
+}
+
+
+/* 11 Nov 2026: +40% typography for the main recipe catalog category buttons.
+   14–16px -> 19.6–22.4px, preserving the existing horizontal scrolling filter strip. */
+html body #catalog .category-filters > button.chip{
+  font-size:clamp(19.6px,1.456vw,22.4px)!important;
+  line-height:1.4!important;
+  min-height:50px!important;
+  padding:10px 19px!important;
+  box-sizing:border-box!important;
+  flex:0 0 auto!important;
+  white-space:nowrap!important;
+}
+
+
+/* Chef's secret: single recipe-detail callout, 40% larger original typography.
+   Existing baseline: title 23px -> 32.2px, copy 13px -> 18.2px. */
+html body #recipeDetail .tip-card{
+  background:#713b4e!important;
+  background-image:linear-gradient(135deg,#80465a 0%,#613043 100%)!important;
+  color:#fff6ed!important;
+  border:1px solid #9b6a78!important;
+  border-radius:15px!important;
+  box-shadow:0 12px 24px rgba(69,35,49,.15)!important;
+  padding:clamp(24px,3vw,34px)!important;
+}
+html body #recipeDetail .tip-card strong{
+  display:block!important;
+  color:#fff0df!important;
+  font:normal 32.2px/1.14 'Cormorant Garamond',Georgia,serif!important;
+  margin-bottom:10px!important;
+}
+html body #recipeDetail .tip-card p{
+  color:#fff5ed!important;
+  font-size:18.2px!important;
+  line-height:1.65!important;
+  margin:0!important;
+  overflow-wrap:break-word!important;
+}
+@media(max-width:480px){
+  html body #recipeDetail .tip-card{padding:22px!important}
+}
+
+
+/* Recipe detail: restore the familiar tactile movement for "К каталогу рецептов".
+   Keep button styling, text, location and click/navigation unchanged. */
+html body #recipeView #backCatalog.back-link{
+  display:inline-block!important;
+  cursor:pointer!important;
+  transform:translateY(0) rotate(0deg);
+  transform-origin:left center;
+  transition:transform .24s cubic-bezier(.2,.7,.2,1),filter .24s ease!important;
+}
+@media(hover:hover) and (pointer:fine){
+  html body #recipeView #backCatalog.back-link:hover{
+    transform:translateY(-4px) rotate(-1.25deg)!important;
+    filter:drop-shadow(0 4px 4px rgba(99,41,57,.17))!important;
+  }
+}
+html body #recipeView #backCatalog.back-link:active{
+  transform:translateY(1px) rotate(0deg)!important;
+  filter:none!important;
+}
+html body #recipeView #backCatalog.back-link:focus-visible{
+  outline:2px solid #9a4559!important;
+  outline-offset:3px!important;
+}
+@media(prefers-reduced-motion:reduce){
+  html body #recipeView #backCatalog.back-link{
+    transition:none!important;
+  }
+  html body #recipeView #backCatalog.back-link:hover,
+  html body #recipeView #backCatalog.back-link:active{
+    transform:none!important;
+  }
+}
+
+
+/* Bonus card: visible physical movement on the approved 2026-11-10 flattened artwork.
+   The hit area and banner image remain unchanged. The pseudo-element samples only
+   the exact button region from that SAME artwork, so its appearance stays consistent.
+   Original panel coordinate mapping: x=36.38%, y=57.1%, w=19.05%, h=11.4%. */
+html body #homeView .du-bonus #bonusRecipe{
+  overflow:visible!important;
+  transform:none!important;
+  transition:none!important;
+  box-shadow:none!important;
+}
+html body #homeView .du-bonus #bonusRecipe::before{
+  content:""!important;
+  display:block!important;
+  position:absolute!important;
+  inset:0!important;
+  width:100%!important;
+  height:100%!important;
+  aspect-ratio:auto!important;
+  background-image:url('/assets/approved-banners/bonus-corrected-20261110.webp')!important;
+  background-color:transparent!important;
+  background-size:524.934% 877.193%!important;
+  background-position:44.94% 64.45%!important;
+  background-repeat:no-repeat!important;
+  border:0!important;
+  border-radius:0!important;
+  box-shadow:none!important;
+  filter:drop-shadow(0 2px 3px rgba(39,16,24,.12))!important;
+  z-index:1!important;
+  pointer-events:none!important;
+  transform:translateY(0) rotate(0deg)!important;
+  transform-origin:center!important;
+  transition:transform .25s cubic-bezier(.2,.7,.2,1),filter .25s ease!important;
+}
+html body #homeView .du-bonus #bonusRecipe::after{
+  content:none!important;
+  display:none!important;
+}
+@media(hover:hover) and (pointer:fine){
+  html body #homeView .du-bonus #bonusRecipe:hover::before{
+    transform:translateY(-5px) rotate(-1.1deg) scale(1.025)!important;
+    filter:drop-shadow(0 8px 7px rgba(39,16,24,.24))!important;
+  }
+}
+html body #homeView .du-bonus #bonusRecipe:focus-visible::before{
+  transform:translateY(-5px) rotate(-1.1deg) scale(1.025)!important;
+}
+html body #homeView .du-bonus #bonusRecipe:active::before{
+  transform:translateY(1px) scale(.985)!important;
+  filter:drop-shadow(0 1px 2px rgba(39,16,24,.14))!important;
+}
+@media(prefers-reduced-motion:reduce){
+  html body #homeView .du-bonus #bonusRecipe::before{transition:none!important}
+  html body #homeView .du-bonus #bonusRecipe:is(:hover,:focus-visible,:active)::before{transform:none!important}
+}
+
+
+/* Our Evening: increase smallest readable captions exactly 50% from
+   their most recent editorial values. No image, layout or copy changes.
+   Scope to the Evening route only; avoid global headings and other pages. */
+html body.du-evening-mode #eveningLanding .du-match11-kicker{
+  font-size:clamp(21px,1.65vw,25.5px)!important;
+  line-height:1.25!important;
+}
+html body.du-evening-mode #eveningLanding .du-match11-recipes-head small{
+  font-size:22.5px!important;
+  line-height:1.4!important;
+}
+html body.du-evening-mode #eveningLanding .du-match11-recipe-grid a small{
+  font-size:21px!important;
+  line-height:1.4!important;
+}
+html body.du-evening-mode #eveningLanding .du-match11-recipe-grid a span{
+  font-size:22.5px!important;
+  line-height:1.3!important;
+}
+html body.du-evening-mode #eveningLanding .du-evening-inspiration-head small{
+  font-size:18px!important;
+  line-height:1.4!important;
+}
+html body.du-evening-mode #eveningLanding .du-evening-inspiration-card span{
+  font-size:19.5px!important;
+  line-height:1.35!important;
+}
+html body.du-evening-mode #eveningLanding .du-evening-inspiration-card small{
+  font-size:16.5px!important;
+  line-height:1.4!important;
+}
+html body.du-evening-mode #eveningLanding .du-evening-inspiration-credit{
+  font-size:15px!important;
+  line-height:1.45!important;
+}
+html body.du-evening-mode #eveningLanding .du-evening-landing-benefits b{
+  font-size:18px!important;
+  line-height:1.35!important;
+}
+html body.du-evening-mode #evening .du-evening-role-card small,
+html body.du-evening-mode #evening .du-evening-role-actions span{
+  font-size:18px!important;
+  line-height:1.4!important;
+}
+html body.du-evening-mode #evening .du-menu-dish > div > span{
+  font-size:19.5px!important;
+  line-height:1.4!important;
+}
+html body.du-evening-mode #evening .du-mood .du-mood-num{
+  font-size:18px!important;
+}
+html body.du-evening-mode #evening .du-mood small{
+  font-size:clamp(19.5px,1.62vw,22.5px)!important;
+  line-height:1.38!important;
+}
+html body.du-evening-mode #music .du-bpm-track-details > span{
+  font-size:18.75px!important;
+  line-height:1.4!important;
+}
+html body.du-evening-mode #music .du-bpm-track-details > a{
+  font-size:17.25px!important;
+  line-height:1.4!important;
+}
+html body.du-evening-mode #music .du-bpm-pill{
+  font-size:18px!important;
+  line-height:1.3!important;
+}
+html body.du-evening-mode #evening :is(.du-mini-eyebrow,.du-eyebrow){
+  font-size:18px!important;
+  line-height:1.4!important;
+}
+/* Allow expanded microcopy to wrap instead of spilling off cards. */
+html body.du-evening-mode #eveningLanding .du-match11-recipe-grid a :is(span,small),
+html body.du-evening-mode #eveningLanding .du-evening-inspiration-card :is(span,small),
+html body.du-evening-mode #evening .du-mood small{
+  white-space:normal!important;
+  overflow-wrap:break-word!important;
+}
+@media(max-width:760px){
+  html body.du-evening-mode #eveningLanding .du-match11-kicker{
+    font-size:21px!important;
+  }
+  html body.du-evening-mode #evening .du-mood small{
+    font-size:21px!important;
+  }
+  html body.du-evening-mode #evening .du-mood .du-mood-num{
+    font-size:18px!important;
+  }
+  html body.du-evening-mode #music .du-bpm-track-details > span{
+    font-size:17.25px!important;
+  }
+  html body.du-evening-mode #music .du-bpm-track-details > a{
+    font-size:16.5px!important;
+  }
+  html body.du-evening-mode #music .du-bpm-pill{
+    font-size:17.25px!important;
+  }
+  html body.du-evening-mode #eveningLanding .du-match11-recipe-grid{
+    min-width:0!important;
+  }
+}
+
+/* APPROVED EVENING PHOTO FOLLOW-UP 2026-11-11
+   Merged with full catalog, accessibility and editorial changes; visual assets intact. */
+html body.du-evening-mode #eveningLanding > .du-evening-strip-two{
+  background-image:linear-gradient(90deg,rgba(53,21,29,.63) 0%,rgba(63,28,36,.40) 43%,rgba(61,25,34,.16) 100%),url('/assets/after-dinner-glasses-sharp-20261111.webp')!important;
+  min-height:clamp(336px,31.2vw,468px)!important;
+}
+html body #evening .du-moods > button.du-mood::before{
+  inset:12px 12px 43%!important;background-position:center center!important;
+}
+html body #evening .du-moods > button.du-mood::after{
+  inset:56% 0 0!important;clip-path:none!important;
+}
+html body #evening .du-moods > button.du-mood[data-mood="tender"]::before{
+  background-image:url('/assets/our-evening-after-hq.avif')!important;
+}
+html body #evening .du-moods > button.du-mood[data-mood="spark"]::before{
+  background-image:url('/assets/evening-approved-photo-20261111.webp')!important;
+}
+html body.du-evening-mode #evening .du-evening-together-content > .du-mini-eyebrow{
+  display:inline-block!important;width:fit-content!important;max-width:100%!important;
+  color:#fff8ef!important;background:rgba(48,22,34,.82)!important;
+  font-size:clamp(21px,1.71vw,25.5px)!important;
+  font-weight:800!important;line-height:1.45!important;letter-spacing:.065em!important;
+  text-shadow:0 1px 4px rgba(22,8,13,.65)!important;padding:8px 12px!important;
+}
+@media(max-width:760px){
+  html body.du-evening-mode #eveningLanding > .du-evening-strip-two{min-height:360px!important;}
+}
+
+
+/* Approved 3 photographic chapter buttons (1001, Air Fryer, Our Evening):
+   remove rectangular interaction paint; preserve the approved image,
+   lift animation, accessibility and navigation. */
+html body #homeView .du-cover-chapters.du-approved-image-cards > a.du-approved-card,
+html body #homeView .du-cover-chapters.du-approved-image-cards > a.du-approved-card:is(:hover,:active,:focus,:focus-visible){
+  background:transparent!important;
+  background-color:transparent!important;
+  background-image:none!important;
+  box-shadow:none!important;
+  border:0!important;
+  outline:0!important;
+  -webkit-tap-highlight-color:transparent!important;
+}
+html body #homeView .du-cover-chapters.du-approved-image-cards > a.du-approved-card::before,
+html body #homeView .du-cover-chapters.du-approved-image-cards > a.du-approved-card::after,
+html body #homeView .du-cover-chapters.du-approved-image-cards > a.du-approved-card:is(:hover,:active,:focus,:focus-visible)::before,
+html body #homeView .du-cover-chapters.du-approved-image-cards > a.du-approved-card:is(:hover,:active,:focus,:focus-visible)::after{
+  content:none!important;
+  display:none!important;
+  background:transparent!important;
+  box-shadow:none!important;
+}
+html body #homeView .du-cover-chapters.du-approved-image-cards > a.du-approved-card > img{
+  background:transparent!important;
+  box-shadow:none!important;
+  border:0!important;
+}
+/* Keyboard focus remains visible as an inset accent on the image, not
+   a rectangular surface behind the photograph. */
+html body #homeView .du-cover-chapters.du-approved-image-cards > a.du-approved-card:focus-visible > img{
+  filter:drop-shadow(0 0 5px rgba(114,34,59,.65))!important;
+}
+
+
+/* EVENING_PLAN_WINE_PANEL_TEXT_CONTRAST_FIX_20261111
+   The wine-colored #evening panel is deliberately preserved.
+   Earlier light-paper text declarations made dish names nearly invisible.
+   Explicit high-contrast ink for all dynamically populated menu rows. */
+html body #evening .du-builder-right .du-menu-preview .du-menu-dish strong {
+  color:#fff8ec!important;
+  opacity:1!important;
+  text-shadow:none!important;
+}
+html body #evening .du-builder-right .du-menu-preview .du-menu-dish > div > span {
+  color:#ffe0cb!important;
+  opacity:1!important;
+}
+html body #evening .du-builder-right .du-menu-preview .du-menu-dish small,
+html body #evening .du-builder-right .du-menu-meta {
+  color:#f8e6df!important;
+  opacity:1!important;
+}
+html body #evening .du-builder-right .du-menu-preview .du-menu-dish {
+  border-bottom-color:rgba(255,238,223,.36)!important;
+}
+html body #evening .du-builder-right .du-menu-preview .du-menu-dish > button {
+  color:#fff7ee!important;
+  border-color:rgba(255,240,224,.72)!important;
+}
+
+
+/* CATALOG_WINE_MASTHEAD_FULL_TITLE_AND_150_PERCENT_FILTERS_20261111
+   The 30%-enlarged headline is three lines at desktop widths but the
+   wine-gradient backplate stayed at 225-277px: the last word escaped.
+   Move the top edge toward the navigation, extend the bottom edge and
+   let the search card follow beneath. Preserve approved fonts/photos. */
+html body #homeView #catalog.du-catalog {
+  margin-top:-30px!important;
+  padding-top:30px!important;
+}
+html body #homeView #catalog.du-catalog::before {
+  top:0!important;
+  height:calc(30px + clamp(300px,22vw,345px))!important;
+}
+html body #homeView #catalog .du-section-top {
+  box-sizing:border-box!important;
+  min-height:clamp(300px,22vw,345px)!important;
+  padding-bottom:38px!important;
+}
+html body #homeView #catalog .du-section-top .du-section-heading h2 {
+  line-height:.94!important;
+}
+html body #homeView #catalog .du-section-top .du-section-heading h2 em {
+  position:relative!important;
+  display:inline-block!important;
+  margin-bottom:0!important;
+}
+
+/* CATALOG_FILTERS_RESTORE_ORIGINAL_PAPER_SIZES_20261111
+   Restore the approved 30-track/7+6 newspaper collage and 76-87px strips.
+   Increase ONLY lettering, not height, width, grid or paper image geometry. */
+html body #homeView #catalog #categoryFilters > button.chip {
+  font-size:clamp(19px,1.45vw,22px)!important;
+  line-height:1.12!important;
+  font-weight:600!important;
+  white-space:normal!important;
+  overflow-wrap:break-word!important;
+  hyphens:manual!important;
+}
+@media(max-width:760px) {
+  /* Keep the existing mobile catalogue masthead accommodation. */
+  html body #homeView #catalog .du-section-top {
+    min-height:clamp(390px,100vw,470px)!important;
+    padding-bottom:42px!important;
+  }
+  html body #homeView #catalog.du-catalog::before {
+    height:calc(30px + clamp(390px,100vw,470px))!important;
+  }
+  /* Two original columns, existing touch-target heights, bigger labels. */
+  html body #homeView #catalog #categoryFilters > button.chip {
+    font-size:19px!important;
+    line-height:1.15!important;
+  }
+}
+
+/* HOMEPAGE_THREE_CARDS_NO_WHITE_PRESS_RECTANGLE_20261111
+   The three approved photographic paper buttons are links, not rectangular
+   UI panels. Keep the original PNGs and navigation while removing exposed
+   white hover/press backing and browser image-drag ghost surfaces. */
+html body #homeView .du-cover-chapters.du-approved-image-cards {
+  background:transparent!important;
+  background-color:transparent!important;
+  background-image:none!important;
+  box-shadow:none!important;
+}
+html body #homeView .du-cover-chapters.du-approved-image-cards > a.du-approved-card,
+html body #homeView .du-cover-chapters.du-approved-image-cards > a.du-approved-card:is(:hover,:focus,:active,:focus-visible) {
+  background:transparent!important;
+  background-image:none!important;
+  border:0!important;
+  border-radius:0!important;
+  box-shadow:none!important;
+  outline:0!important;
+  -webkit-tap-highlight-color:transparent!important;
+  user-select:none!important;
+  -webkit-user-select:none!important;
+  -webkit-user-drag:none!important;
+  filter:none!important;
+}
+html body #homeView .du-cover-chapters.du-approved-image-cards > a.du-approved-card:active {
+  transform:translateY(1px)!important;
+  filter:none!important;
+}
+html body #homeView .du-cover-chapters.du-approved-image-cards > a.du-approved-card > img,
+html body #homeView .du-cover-chapters.du-approved-image-cards > a.du-approved-card:is(:hover,:focus,:active,:focus-visible) > img {
+  background:transparent!important;
+  border:0!important;
+  box-shadow:none!important;
+  user-select:none!important;
+  -webkit-user-select:none!important;
+  -webkit-user-drag:none!important;
+  pointer-events:none!important;
+}
+html body #homeView .du-cover-chapters.du-approved-image-cards > a.du-approved-card::before,
+html body #homeView .du-cover-chapters.du-approved-image-cards > a.du-approved-card::after {
+  content:none!important;
+  display:none!important;
+}
+html body #homeView .du-cover-chapters.du-approved-image-cards > a.du-approved-card:focus-visible > img {
+  filter:drop-shadow(0 0 6px rgba(120,35,59,.55))!important;
+}
+
+
+/* HOME_THREE_CHAPTERS_NO_RECTANGLE_ON_CLICK_20261111
+   The previous lift/scale/drop-shadow repaints the opaque PNG canvas as a
+   white rectangular sheet on hover and click. Do not move or paint that
+   canvas while pressed. Keep exact three approved images and their routes.
+   Keyboard focus still has a visible wine-coloured dotted indicator. */
+html body #homeView .du-cover-chapters.du-approved-image-cards,
+html body #homeView .du-cover-chapters.du-approved-image-cards:is(:hover,:active,:focus-within) {
+  background:transparent!important;
+  background-image:none!important;
+  box-shadow:none!important;
+  filter:none!important;
+}
+html body #homeView .du-cover-chapters.du-approved-image-cards > a.du-approved-card,
+html body #homeView .du-cover-chapters.du-approved-image-cards > a.du-approved-card:is(:hover,:active,:focus,:focus-visible) {
+  transform:none!important;
+  transition:none!important;
+  filter:none!important;
+  background:transparent!important;
+  background-image:none!important;
+  border:0!important;
+  outline:0!important;
+  box-shadow:none!important;
+  opacity:1!important;
+  -webkit-tap-highlight-color:transparent!important;
+}
+html body #homeView .du-cover-chapters.du-approved-image-cards > a.du-approved-card > img,
+html body #homeView .du-cover-chapters.du-approved-image-cards > a.du-approved-card:is(:hover,:active,:focus,:focus-visible) > img {
+  display:block!important;
+  transform:none!important;
+  transition:none!important;
+  filter:none!important;
+  background:transparent!important;
+  box-shadow:none!important;
+  border:0!important;
+  opacity:1!important;
+  pointer-events:none!important;
+  -webkit-user-drag:none!important;
+}
+html body #homeView .du-cover-chapters.du-approved-image-cards > a.du-approved-card::before,
+html body #homeView .du-cover-chapters.du-approved-image-cards > a.du-approved-card::after {
+  content:none!important;
+  display:none!important;
+}
+html body #homeView .du-cover-chapters.du-approved-image-cards > a.du-approved-card:focus-visible {
+  outline:2px dotted #7f2443!important;
+  outline-offset:2px!important;
+}
+
+
+/* HOME_APPROVED_BUTTONS_INTERACTION_RESTORE_20261111
+   Only the three approved photographic links. The image assets, geometry
+   and click destinations are untouched. Blend away the opaque white PNG
+   matte during movement so no rectangular white press/hover layer appears. */
+html body #homeView .du-cover-chapters.du-approved-image-cards > a.du-approved-card {
+  cursor:pointer!important;
+  pointer-events:auto!important;
+  transform:none!important;
+  transition:transform .24s cubic-bezier(.22,.72,.25,1)!important;
+  transform-origin:center center!important;
+  background:transparent!important;
+  box-shadow:none!important;
+  filter:none!important;
+}
+html body #homeView .du-cover-chapters.du-approved-image-cards > a.du-approved-card:is(:hover,:focus-visible,:active) > img {
+  mix-blend-mode:multiply!important;
+  background:transparent!important;
+  box-shadow:none!important;
+}
+html body #homeView .du-cover-chapters.du-approved-image-cards > a.du-approved-card:focus-visible {
+  transform:translateY(-5px) rotate(-.3deg)!important;
+  outline:2px dotted #7f2443!important;
+  outline-offset:3px!important;
+}
+@media (hover:hover) and (pointer:fine) and (prefers-reduced-motion:no-preference) {
+  html body #homeView .du-cover-chapters.du-approved-image-cards > a.du-approved-card:hover {
+    transform:translateY(-5px) rotate(-.3deg)!important;
+    z-index:9!important;
+  }
+}
+html body #homeView .du-cover-chapters.du-approved-image-cards > a.du-approved-card:active {
+  transform:translateY(1px) scale(.996)!important;
+}
+@media (prefers-reduced-motion:reduce) {
+  html body #homeView .du-cover-chapters.du-approved-image-cards > a.du-approved-card {
+    transition:none!important;
+  }
+  html body #homeView .du-cover-chapters.du-approved-image-cards > a.du-approved-card:is(:hover,:focus-visible,:active) {
+    transform:none!important;
+  }
+}
+
+/* BONUS_BUTTON_INTERACTION_RESTORE_20261111
+   The separate paper layer uses the exact approved image pixels.
+   The script reconstructs the wall behind the original printed button
+   before enabling motion. If image processing fails, keep the original
+   intact and the actual link clickable. */
+html body #homeView .du-bonus .bonus-inner > a#bonusRecipe {
+  pointer-events:auto!important;
+  cursor:pointer!important;
+  z-index:70!important;
+  background-repeat:no-repeat!important;
+  background-position:center!important;
+  background-size:100% 100%!important;
+  transition:transform .25s cubic-bezier(.2,.7,.2,1)!important;
+  transform-origin:center center!important;
+  transform:none!important;
+}
+html body #homeView .du-bonus .bonus-inner > a#bonusRecipe::before,
+html body #homeView .du-bonus .bonus-inner > a#bonusRecipe::after {
+  display:none!important;
+  content:none!important;
+}
+html body #homeView .du-bonus .bonus-inner[data-bonus-layer-ready="1"] > a#bonusRecipe:focus-visible {
+  transform:translateY(-6px) rotate(-.8deg) scale(1.025)!important;
+  outline:3px solid #fff4e6!important;
+  outline-offset:3px!important;
+}
+@media (hover:hover) and (pointer:fine) and (prefers-reduced-motion:no-preference) {
+  html body #homeView .du-bonus .bonus-inner[data-bonus-layer-ready="1"] > a#bonusRecipe:hover {
+    transform:translateY(-6px) rotate(-.8deg) scale(1.025)!important;
+  }
+}
+html body #homeView .du-bonus .bonus-inner[data-bonus-layer-ready="1"] > a#bonusRecipe:active {
+  transform:translateY(1px) scale(.99)!important;
+}
+@media (prefers-reduced-motion:reduce) {
+  html body #homeView .du-bonus .bonus-inner > a#bonusRecipe {
+    transition:none!important;
+  }
+  html body #homeView .du-bonus .bonus-inner[data-bonus-layer-ready="1"] > a#bonusRecipe:is(:hover,:focus-visible,:active) {
+    transform:none!important;
+  }
+}
+
+
+/* HORIZONTAL_SCROLLBAR_ON_APPROVED_CARD_HOVER_20261111
+   The far-right paper-card lift/rotate can add ~1px of document overflow.
+   Clip only document-level horizontal overflow. Card motion, photographic
+   layers, focus, internal vertical scrolling and layout remain unchanged. */
+html, body {
+  overflow-x: clip !important;
+}
+
+
+/* BONUS_FULL_REBUILD_20261112
+   Owner-approved 12 November rebuilt artwork. The full banner uses only
+   the approved photograph/text and a single *separately cut* real paper
+   link. No canvas repainting, pseudo button, white rectangle or duplicate
+   printed CTA. All existing headings, routes and site layout remain intact.
+*/
+html body #homeView .du-bonus .bonus-inner {
+  position:relative!important;
+  aspect-ratio:1586/546!important;
+  background-image:url('/assets/approved-banners/bonus-rebuilt-clean-20261112.webp')!important;
+  background-size:100% 100%!important;
+  background-position:center center!important;
+  background-repeat:no-repeat!important;
+}
+html body #homeView .du-bonus .bonus-inner > a#bonusRecipe {
+  display:block!important;
+  position:absolute!important;
+  box-sizing:border-box!important;
+  left:35.76%!important;
+  top:56.08%!important;
+  width:20.21%!important;
+  height:12.29%!important;
+  min-width:0!important;
+  min-height:0!important;
+  max-width:none!important;
+  margin:0!important;
+  padding:0!important;
+  z-index:70!important;
+  opacity:1!important;
+  visibility:visible!important;
+  cursor:pointer!important;
+  pointer-events:auto!important;
+  overflow:visible!important;
+  background-color:transparent!important;
+  background-image:url('/assets/approved-banners/bonus-rebuilt-paper-20261112.webp')!important;
+  background-position:center!important;
+  background-repeat:no-repeat!important;
+  background-size:100% 100%!important;
+  border:0!important;
+  border-radius:0!important;
+  box-shadow:none!important;
+  filter:drop-shadow(0 2px 3px rgba(35,16,22,.12))!important;
+  transform:translateY(0) rotate(0)!important;
+  transform-origin:center!important;
+  transition:transform .25s cubic-bezier(.2,.75,.2,1),filter .25s ease!important;
+  -webkit-mask-image:none!important;
+  mask-image:none!important;
+  -webkit-tap-highlight-color:transparent!important;
+}
+html body #homeView .du-bonus .bonus-inner > a#bonusRecipe::before,
+html body #homeView .du-bonus .bonus-inner > a#bonusRecipe::after {
+  content:none!important;
+  display:none!important;
+}
+@media (hover:hover) and (pointer:fine) and (prefers-reduced-motion:no-preference) {
+  html body #homeView .du-bonus .bonus-inner > a#bonusRecipe:hover {
+    transform:translateY(-6px) rotate(-.6deg) scale(1.025)!important;
+    filter:drop-shadow(0 10px 7px rgba(35,16,22,.25))!important;
+  }
+}
+html body #homeView .du-bonus .bonus-inner > a#bonusRecipe:active {
+  transform:translateY(1px) scale(.99)!important;
+  filter:drop-shadow(0 1px 2px rgba(35,16,22,.1))!important;
+}
+html body #homeView .du-bonus .bonus-inner > a#bonusRecipe:focus-visible {
+  outline:3px solid #fff4e6!important;
+  outline-offset:3px!important;
+}
+@media(max-width:760px){
+  html body #homeView .du-bonus .bonus-inner > a#bonusRecipe {
+    top:calc(62.225% - 22px)!important;
+    height:44px!important;
+    min-height:44px!important;
+    background-size:100% auto!important;
+  }
+}
+@media(prefers-reduced-motion:reduce) {
+  html body #homeView .du-bonus .bonus-inner > a#bonusRecipe {
+    transition:none!important;
+  }
+  html body #homeView .du-bonus .bonus-inner > a#bonusRecipe:is(:hover,:active) {
+    transform:none!important;
+  }
+}
+
+
+/* BONUS_HOVER_PAPER_VISIBILITY_20261112
+   A legacy :is(:hover,:focus,:active) shorthand sets background:transparent
+   with higher specificity than the rebuilt button's base image selector.
+   Restore the *same* approved paper on every interaction state. No canvas,
+   duplicate button, new typography, overlay or change to photo/layout.
+   Tested in Chromium: computed background-image remains the actual WEBP. */
+html body #homeView .du-bonus .bonus-inner > a#bonusRecipe:is(:hover,:focus,:active) {
+  background-image:url('/assets/approved-banners/bonus-rebuilt-paper-20261112.webp')!important;
+  background-position:center!important;
+  background-size:100% 100%!important;
+  background-repeat:no-repeat!important;
+}
+
+
+/* DOUBLE_STEP_BY_STEP_CTA_TEXT_20261112
+ * Real baseline on /, /full-catalog/, /airfryer/: 13px at 320–1536px.
+ * Exactly double the lettering: 26px. Keep the original buttons and clicks.
+ * Allow two lines on narrow screens instead of shrinking or clipping type. */
+html body button#startCookingBottom,
+html body a#startCookingBottom {
+  font-size:26px!important;
+  line-height:1.16!important;
+  white-space:normal!important;
+  text-wrap:balance;
+  height:auto!important;
+  min-height:66px!important;
+  max-width:100%!important;
+  box-sizing:border-box!important;
+  padding:12px 16px!important;
+}
+
+
+/* EVENING_FOUR_LIGHT_NEWSPRINT_SCRAPS_20261112
+ * Four existing mood buttons are now four restrained, individually torn,
+ * pale newspaper scraps. Photos, wording, order, positions, links and
+ * selection behaviour are unchanged. Jagged edges replace broad waves. */
+html body.du-evening-mode #evening .du-moods>button.du-mood {
+  background-color:#f7f0e3!important;
+  background-image:url('/assets/editorial-paper-fibres-20261108.svg'),repeating-linear-gradient(108deg,rgba(93,71,61,.017) 0 1px,transparent 1px 7px)!important;
+  background-size:192px 192px,auto!important;
+  background-repeat:repeat!important;
+  border-radius:0!important;
+  box-shadow:0 9px 17px rgba(70,39,37,.11)!important;
+}
+html body.du-evening-mode #evening .du-moods>button.du-mood::after {
+  /* Cream, slightly ink-worn newspaper, not glossy pastel card stock. */
+  inset:52% 0 0!important;
+  background-image:
+    linear-gradient(180deg,rgba(251,246,236,.82),rgba(246,236,218,.88)),
+    url('/assets/editorial-paper-fibres-20261108.svg'),
+    repeating-linear-gradient(0deg,transparent 0 10px,rgba(103,77,61,.06) 10px 10.5px,transparent 10.5px 17px)!important;
+  background-position:center!important;
+  background-size:100% 100%,192px 192px,100% 100%!important;
+  background-repeat:no-repeat,repeat,repeat!important;
+}
+html body.du-evening-mode #evening .du-moods>button.du-mood[data-mood="spark"],
+html body.du-evening-mode #evening .du-moods>button.du-mood[data-mood="play"],
+html body.du-evening-mode #evening .du-moods>button.du-mood[data-mood="cozy"] {
+  background-color:#f7f0e3!important;
+}
+
+html body.du-evening-mode #evening .du-moods>button.du-mood[data-mood="tender"] {
+  clip-path:polygon(0.5% 2.52%,5% 1.41%,10% 3.26%,16% 1.04%,22% 2.71%,29% 1.04%,35% 2.33%,41% 0.67%,48% 2.71%,54% 1.59%,61% 3.08%,67% 1.04%,74% 2.33%,80% 0.85%,87% 2.89%,93% 1.23%,99.1% 2.33%,99.6% 9%,99.2% 18%,99.8% 29%,99.1% 41%,99.6% 54%,99.2% 67%,99.7% 79%,99.2% 91%,99% 97.25%,93% 98.27%,87% 96.57%,80% 98.78%,74% 97.59%,68% 99.12%,61% 97.25%,55% 98.61%,48% 97.08%,42% 99.29%,35% 97.59%,29% 98.78%,22% 96.74%,16% 98.44%,9% 97.25%,3% 98.78%,0.6% 97.42%,0.4% 89%,0.8% 77%,0.3% 63%,0.7% 52%,0.3% 38%,0.6% 26%,0.2% 15%)!important;
+}
+
+html body.du-evening-mode #evening .du-moods>button.du-mood[data-mood="spark"] {
+  clip-path:polygon(0.6% 1.97%,7% 3.26%,13% 1.04%,19% 2.89%,26% 1.41%,32% 3.4%,38% 1.23%,45% 2.33%,51% 0.67%,59% 3.08%,65% 1.59%,72% 2.89%,78% 0.85%,85% 2.52%,92% 1.04%,99% 2.89%,99.5% 12%,99% 23%,99.7% 35%,99.2% 47%,99.6% 62%,99.1% 75%,99.5% 88%,99% 97.93%,92% 96.91%,85% 98.78%,78% 97.25%,71% 98.95%,64% 97.08%,58% 98.44%,51% 97.42%,44% 98.78%,37% 97.25%,30% 99.12%,23% 97.25%,17% 98.61%,10% 97.25%,4% 98.78%,0.5% 97.42%,0.2% 87%,0.8% 74%,0.4% 60%,0.7% 48%,0.3% 36%,0.7% 21%,0.3% 11%)!important;
+}
+
+html body.du-evening-mode #evening .du-moods>button.du-mood[data-mood="play"] {
+  clip-path:polygon(0.9% 2.89%,6% 1.41%,12% 2.71%,18% 0.85%,25% 2.52%,32% 1.41%,39% 3.08%,46% 0.85%,53% 2.33%,60% 0.67%,67% 2.89%,74% 1.41%,80% 2.52%,87% 0.67%,93% 2.89%,99.2% 1.41%,99.4% 13%,99% 25%,99.6% 38%,99.1% 51%,99.6% 64%,99.2% 76%,99.7% 89%,99% 96.91%,94% 98.44%,88% 96.91%,81% 98.95%,74% 97.42%,67% 98.78%,60% 97.08%,54% 98.61%,46% 97.42%,39% 98.78%,33% 97.25%,26% 98.78%,19% 97.42%,13% 98.95%,6% 97.08%,0.5% 98.27%,0.6% 88%,0.2% 73%,0.7% 61%,0.4% 46%,0.9% 34%,0.3% 21%,0.7% 12%)!important;
+}
+
+html body.du-evening-mode #evening .du-moods>button.du-mood[data-mood="cozy"] {
+  clip-path:polygon(0.5% 1.41%,7% 2.89%,14% 0.85%,20% 2.52%,27% 1.23%,34% 3.08%,40% 1.59%,47% 2.71%,54% 0.85%,61% 2.89%,68% 1.04%,74% 2.33%,81% 0.85%,88% 3.08%,94% 1.41%,99.3% 2.89%,99.8% 12%,99.3% 27%,99.6% 39%,99.2% 52%,99.7% 66%,99.1% 78%,99.5% 91%,99% 97.59%,93% 98.95%,86% 97.08%,79% 98.44%,72% 97.42%,66% 98.95%,59% 97.42%,52% 98.78%,45% 96.91%,38% 98.44%,32% 97.59%,25% 98.95%,18% 97.08%,11% 98.44%,5% 97.25%,0.6% 98.44%,0.3% 86%,0.8% 73%,0.4% 59%,0.8% 46%,0.3% 32%,0.7% 19%)!important;
+}
+
+html body.du-evening-mode #evening .du-moods>button.du-mood[data-mood="tender"]::after {
+  clip-path:polygon(0 4%,7% 2%,12% 6%,18% 2%,25% 5%,32% 1%,39% 4%,46% 2%,53% 6%,60% 1%,67% 4%,74% 2%,81% 5%,88% 1%,95% 4%,100% 2%,100% 100%,0 100%)!important;
+}
+
+html body.du-evening-mode #evening .du-moods>button.du-mood[data-mood="spark"]::after {
+  clip-path:polygon(0 3%,7% 6%,14% 1%,21% 4%,28% 2%,35% 5%,43% 1%,50% 4%,57% 2%,64% 5%,71% 1%,78% 4%,85% 2%,92% 6%,100% 3%,100% 100%,0 100%)!important;
+}
+
+html body.du-evening-mode #evening .du-moods>button.du-mood[data-mood="play"]::after {
+  clip-path:polygon(0 5%,8% 2%,15% 4%,22% 1%,29% 5%,36% 2%,43% 4%,50% 1%,57% 4%,64% 2%,71% 5%,78% 1%,86% 4%,93% 2%,100% 5%,100% 100%,0 100%)!important;
+}
+
+html body.du-evening-mode #evening .du-moods>button.du-mood[data-mood="cozy"]::after {
+  clip-path:polygon(0 3%,8% 1%,16% 5%,24% 2%,31% 4%,38% 1%,45% 4%,52% 2%,59% 5%,66% 1%,73% 4%,80% 2%,87% 5%,94% 1%,100% 3%,100% 100%,0 100%)!important;
+}
+
+/* Small screens: keep titles entirely on paper instead of over the photo.
+   Adjust only the four mood clippings; no image or text asset changes. */
+@media(max-width:520px) {
+  html body.du-evening-mode #evening .du-moods>button.du-mood::before {
+    inset:12px 12px 59%!important;
+  }
+  html body.du-evening-mode #evening .du-moods>button.du-mood::after {
+    inset:36% 0 0!important;
+  }
+}
+
+
+/* At 320–360px the first caption wraps to three lines.
+   Add vertical paper, not smaller text: it now clears the photograph. */
+@media(max-width:360px) {
+  html body.du-evening-mode #evening .du-moods>button.du-mood {
+    min-height:285px!important;
+  }
+}
+
+
+/* EVENING_ACTUAL_NEWSPRINT_CUTOUTS_20261112
+   Four genuinely visible ripped newspaper fragments, not a nearly-white
+   card with wavy bottom. Printed column marks, paper-grain, inked torn
+   contours and sepia shadow are separate decorative backgrounds.
+   Photos, labels, click targets and mood state handlers stay untouched. */
+html body.du-evening-mode #evening .du-moods > button.du-mood {
+  background-color:#e7d4b8!important;
+  background-image:
+    url('/assets/editorial-paper-fibres-20261108.svg'),
+    linear-gradient(115deg,#efdfc7,#e5d0b4 85%)!important;
+  background-size:192px 192px,100% 100%!important;
+  background-blend-mode:multiply,normal!important;
+  box-shadow:none!important;
+  filter:drop-shadow(1px 8px 5px rgba(65,41,33,.30))!important;
+  -webkit-mask-image:none!important;
+  mask-image:none!important;
+}
+html body.du-evening-mode #evening .du-moods > button.du-mood::after {
+  /* SVG has full-alpha torn perimeter, column-print and paper fibres.
+     Never use opaque gradients here: those would hide the newspaper. */
+  content:""!important;
+  inset:50% 0 0!important;
+  background-color:transparent!important;
+  background-image:url('/assets/evening-newsprint-scrap-tender-20261112.svg')!important;
+  background-position:center center!important;
+  background-repeat:no-repeat!important;
+  background-size:100% 100%!important;
+  clip-path:none!important;
+  opacity:1!important;
+  pointer-events:none!important;
+}
+html body.du-evening-mode #evening .du-moods > button.du-mood[data-mood="tender"]::after {
+  background-image:url('/assets/evening-newsprint-scrap-tender-20261112.svg')!important;
+}
+html body.du-evening-mode #evening .du-moods > button.du-mood[data-mood="spark"]::after {
+  background-image:url('/assets/evening-newsprint-scrap-spark-20261112.svg')!important;
+}
+html body.du-evening-mode #evening .du-moods > button.du-mood[data-mood="play"]::after {
+  background-image:url('/assets/evening-newsprint-scrap-play-20261112.svg')!important;
+}
+html body.du-evening-mode #evening .du-moods > button.du-mood[data-mood="cozy"]::after {
+  background-image:url('/assets/evening-newsprint-scrap-cozy-20261112.svg')!important;
+}
+html body.du-evening-mode #evening .du-moods > button.du-mood.is-selected {
+  filter:drop-shadow(0 8px 8px rgba(91,37,48,.39))!important;
+}
+@media (hover:hover) and (pointer:fine) {
+  html body.du-evening-mode #evening .du-moods > button.du-mood:hover {
+    filter:drop-shadow(0 13px 10px rgba(65,41,33,.38))!important;
+  }
+}
+@media(max-width:520px) {
+  html body.du-evening-mode #evening .du-moods > button.du-mood::after {
+    inset:32% 0 0!important;
+  }
+}
+
+
+/* AIRFRYER_HERO_DESCRIPTION_PLUS_30_20261112
+   Only the concise two-line airfryer summary underneath the dish title.
+   Original fluid type scale x 1.3 (14/1.07vw/17 -> 18.2/1.391vw/22.1).
+   Leave all other descriptions, ingredients and controls as before. */
+#recipeDetail:has(> .du-airfryer-specs) .recipe-intro-copy > p {
+  font-size:clamp(18.2px,1.391vw,22.1px)!important;
+}
+
+
+/* APPROVED_TENDER_ONLY_20261112
+   Exact user-approved artwork for the FIRST mood button only.
+   Keep existing click handlers, data-mood, element size, grid and hover animation.
+   No changes to music player or the other three mood buttons. */
+html body #evening .du-moods > button.du-mood[data-mood="tender"],
+html body.du-evening-mode #evening .du-moods > button.du-mood[data-mood="tender"] {
+  background-color:transparent!important;
+  background-image:url('/assets/evening-approved-20261112/evening-mood-tender.webp')!important;
+  background-size:contain!important;
+  background-position:center center!important;
+  background-repeat:no-repeat!important;
+  background-blend-mode:normal!important;
+  clip-path:none!important;
+  -webkit-mask-image:none!important;
+  mask-image:none!important;
+  box-shadow:none!important;
+}
+html body #evening .du-moods > button.du-mood[data-mood="tender"]::before,
+html body #evening .du-moods > button.du-mood[data-mood="tender"]::after,
+html body.du-evening-mode #evening .du-moods > button.du-mood[data-mood="tender"]::before,
+html body.du-evening-mode #evening .du-moods > button.du-mood[data-mood="tender"]::after {
+  content:none!important;
+  display:none!important;
+}
+html body #evening .du-moods > button.du-mood[data-mood="tender"] :is(.du-mood-num,.du-mood-icon,.du-mood-check,strong,small),
+html body.du-evening-mode #evening .du-moods > button.du-mood[data-mood="tender"] :is(.du-mood-num,.du-mood-icon,.du-mood-check,strong,small) {
+  opacity:0!important;
+  pointer-events:none!important;
+}
+
+
+/* APPROVED_SPARK_ONLY_20261112
+   EXACT artwork supplied for the SECOND mood button.
+   The approved first mood button, other moods, layouts, click handlers and music remain unchanged. */
+html body #evening .du-moods > button.du-mood[data-mood="spark"],
+html body.du-evening-mode #evening .du-moods > button.du-mood[data-mood="spark"] {
+  background-color:transparent!important;
+  background-image:url('/assets/evening-approved-20261112/evening-mood-spark.webp')!important;
+  background-size:contain!important;
+  background-position:center center!important;
+  background-repeat:no-repeat!important;
+  background-blend-mode:normal!important;
+  clip-path:none!important;
+  -webkit-mask-image:none!important;
+  mask-image:none!important;
+  box-shadow:none!important;
+}
+html body #evening .du-moods > button.du-mood[data-mood="spark"]::before,
+html body #evening .du-moods > button.du-mood[data-mood="spark"]::after,
+html body.du-evening-mode #evening .du-moods > button.du-mood[data-mood="spark"]::before,
+html body.du-evening-mode #evening .du-moods > button.du-mood[data-mood="spark"]::after {
+  content:none!important;
+  display:none!important;
+}
+html body #evening .du-moods > button.du-mood[data-mood="spark"] :is(.du-mood-num,.du-mood-icon,.du-mood-check,strong,small),
+html body.du-evening-mode #evening .du-moods > button.du-mood[data-mood="spark"] :is(.du-mood-num,.du-mood-icon,.du-mood-check,strong,small) {
+  opacity:0!important;
+  pointer-events:none!important;
+}
+
+
+/* APPROVED_PLAY_ONLY_20261112
+   Third mood card: exact user-supplied artwork. Preserve four-button layout,
+   approved first/second cards and the native music player without modification. */
+html body #evening .du-moods > button.du-mood[data-mood="play"],
+html body.du-evening-mode #evening .du-moods > button.du-mood[data-mood="play"] {
+  background-color:transparent!important;
+  background-image:url('/assets/evening-approved-20261112/evening-mood-play.webp')!important;
+  background-size:contain!important;
+  background-position:center center!important;
+  background-repeat:no-repeat!important;
+  background-blend-mode:normal!important;
+  clip-path:none!important;
+  -webkit-mask-image:none!important;
+  mask-image:none!important;
+  box-shadow:none!important;
+}
+html body #evening .du-moods > button.du-mood[data-mood="play"]::before,
+html body #evening .du-moods > button.du-mood[data-mood="play"]::after,
+html body.du-evening-mode #evening .du-moods > button.du-mood[data-mood="play"]::before,
+html body.du-evening-mode #evening .du-moods > button.du-mood[data-mood="play"]::after {
+  content:none!important;
+  display:none!important;
+}
+html body #evening .du-moods > button.du-mood[data-mood="play"] :is(.du-mood-num,.du-mood-icon,.du-mood-check,strong,small),
+html body.du-evening-mode #evening .du-moods > button.du-mood[data-mood="play"] :is(.du-mood-num,.du-mood-icon,.du-mood-check,strong,small) {
+  opacity:0!important;
+  pointer-events:none!important;
+}
+
+
+/* APPROVED_COZY_ONLY_20261112
+   Fourth and final mood card: exact approved user artwork.
+   Leave the first three mood cards, grid, state handlers, and native player untouched. */
+html body #evening .du-moods > button.du-mood[data-mood="cozy"],
+html body.du-evening-mode #evening .du-moods > button.du-mood[data-mood="cozy"] {
+  background-color:transparent!important;
+  background-image:url('/assets/evening-approved-20261112/evening-mood-cozy.webp')!important;
+  background-size:contain!important;
+  background-position:center center!important;
+  background-repeat:no-repeat!important;
+  background-blend-mode:normal!important;
+  clip-path:none!important;
+  -webkit-mask-image:none!important;
+  mask-image:none!important;
+  box-shadow:none!important;
+}
+html body #evening .du-moods > button.du-mood[data-mood="cozy"]::before,
+html body #evening .du-moods > button.du-mood[data-mood="cozy"]::after,
+html body.du-evening-mode #evening .du-moods > button.du-mood[data-mood="cozy"]::before,
+html body.du-evening-mode #evening .du-moods > button.du-mood[data-mood="cozy"]::after {
+  content:none!important;
+  display:none!important;
+}
+html body #evening .du-moods > button.du-mood[data-mood="cozy"] :is(.du-mood-num,.du-mood-icon,.du-mood-check,strong,small),
+html body.du-evening-mode #evening .du-moods > button.du-mood[data-mood="cozy"] :is(.du-mood-num,.du-mood-icon,.du-mood-check,strong,small) {
+  opacity:0!important;
+  pointer-events:none!important;
+}
+
+
+/* RESTORE_MOOD_RED_UNDERLINE_20261112
+   Existing selected-mood red line; reveal it over .7 seconds from left to right.
+   Keep the ::after pseudo-element present in both states so its clip-path
+   transition is continuous instead of suddenly appearing on click.
+   Photos, button positioning, hover motion and music player remain untouched. */
+html body #evening .du-moods > button.du-mood[data-mood]::after,
+html body.du-evening-mode #evening .du-moods > button.du-mood[data-mood]::after {
+  content:""!important;
+  display:block!important;
+  position:absolute!important;
+  inset:74% auto auto 14%!important;
+  width:68%!important;
+  height:3px!important;
+  z-index:2!important;
+  opacity:1!important;
+  background:#ad4050!important;
+  border:0!important;
+  border-radius:3px!important;
+  box-shadow:none!important;
+  clip-path:inset(0 100% 0 0)!important;
+  transform:rotate(-.7deg)!important;
+  transform-origin:left center!important;
+  transition:clip-path .7s cubic-bezier(.2,.6,.3,1)!important;
+  pointer-events:none!important;
+}
+html body #evening .du-moods > button.du-mood[data-mood]:is(.is-selected,[aria-pressed="true"])::after,
+html body.du-evening-mode #evening .du-moods > button.du-mood[data-mood]:is(.is-selected,[aria-pressed="true"])::after {
+  clip-path:inset(0 0 0 0)!important;
+}
+@media (prefers-reduced-motion:reduce) {
+  html body #evening .du-moods > button.du-mood[data-mood]::after,
+  html body.du-evening-mode #evening .du-moods > button.du-mood[data-mood]::after {
+    transition:none!important;
+  }
+}

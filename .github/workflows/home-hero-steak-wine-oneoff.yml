@@ -1,0 +1,59 @@
+name: One-time expressive steak and wine homepage photo
+on:
+  push:
+    branches:
+      - feature/editorial-three-scene-spread-20261108
+    paths:
+      - scripts/generate_home_steak_wine.py
+      - .github/workflows/home-hero-steak-wine-oneoff.yml
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: home-steak-two-glasses-image-oneoff
+  cancel-in-progress: false
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 18
+    steps:
+      - name: Checkout editorial branch
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+        with:
+          ref: feature/editorial-three-scene-spread-20261108
+          fetch-depth: 0
+          persist-credentials: true
+      - name: Setup Python
+        uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065 # v5.6.0
+        with:
+          python-version: '3.11'
+      - name: Install image decoder
+        run: python3 -m pip install --quiet Pillow==11.3.0
+      - name: Check exact prompt and one-photo safety gate
+        run: python3 scripts/generate_home_steak_wine.py
+      - name: Produce owner-requested candidate, never retry a pending call
+        env:
+          YANDEX_API_KEY: ${{ secrets.YANDEX_API_KEY }}
+          YANDEX_FOLDER_ID: ${{ secrets.YANDEX_FOLDER_ID || 'b1g00u8p0k5nl98v8nre' }}
+          PHOTO_COST_APPROVED: 'true'
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          python3 scripts/generate_home_steak_wine.py --execute
+      - name: Verify candidate WebP and metadata
+        run: |
+          python3 - <<'PY'
+          import hashlib,json
+          from pathlib import Path
+          from PIL import Image
+          p=Path('assets/home-hero-steak-wine-20261108.webp')
+          r=json.loads(Path('photo-library/home-hero-steak-wine-20261108.json').read_text('utf-8'))
+          with Image.open(p) as image:
+              image.verify()
+              assert image.format=='WEBP' and image.size==(1400,900)
+          assert r['sha256']==hashlib.sha256(p.read_bytes()).hexdigest()
+          assert r['status']=='candidate_unpublished'
+          assert not Path('photo-library/home-hero-steak-wine-20261108.pending.json').exists()
+          print('PASS: ONE local WebP asset, image integrity, no duplicate payment')
+          PY

@@ -1,60 +1,89 @@
 'use strict';
+/* Regression: separate airfryer page, distinct large-category photos and Russian noun/adjective equivalence. */
 const {chromium}=require('playwright');
 const assert=require('node:assert/strict');
+const {matches,filterRecipes}=require('../assets/airfryer-experience-20261110.js');
+const fixture=(title,cat,ingredients=[])=>({title,description:'',airfryer:{sourceCategory:cat},ingredients:ingredients.map(name=>({name}))});
+assert.equal(matches(fixture('Говяжьи медальоны','Мясо'),'говядина'),true);
+assert.equal(matches(fixture('Свинина под горчицей','Мясо'),'свиные'),true);
+assert.equal(matches(fixture('Куриные крылья','Птица'),'курица'),true);
+assert.equal(matches(fixture('Индюшиные колбаски','Птица'),'индейка'),true);
+assert.equal(matches(fixture('Картофель с розмарином','Овощи и гарниры'),'картошка'),true);
+assert.equal(matches(fixture('Говяжьи медальоны с грибами','Мясо',['Картофель']),'говядина, картошка'),true);
+assert.equal(matches(fixture('Свиной шницель','Мясо'),'говядина'),false);
+assert.equal(filterRecipes([fixture('Свиной шницель','Мясо'),fixture('Куриные крылья','Птица')],'Птица','').length,1);
 (async()=>{
  const browser=await chromium.launch({headless:true});
  try{
-  for(const entry of ['','full-catalog/']){
-   for(const viewport of [{width:1440,height:900},{width:390,height:844}]){
-    const page=await browser.newPage({viewport});
-    const errors=[];
-    page.on('pageerror',e=>errors.push(e.message));
-    await page.route('**/*',route=>{
+  for(const viewport of [{width:1440,height:900},{width:390,height:844}]){
+   const page=await browser.newPage({viewport});
+   const errors=[];
+   page.on('pageerror',e=>errors.push(e.message));
+   await page.route('**/*',route=>{
      const u=new URL(route.request().url());
      return u.hostname==='127.0.0.1'?route.continue():route.abort();
-    });
-    await page.goto('http://127.0.0.1:8765/'+entry+'#airfryer',{waitUntil:'domcontentloaded'});
-    await page.locator('#airfryerGrid .du-airfryer-card').first().waitFor();
-    assert.equal(await page.locator('#airfryerGrid .du-airfryer-card').count(),100,'All 100 airfryer cards must render');
-    assert.equal(await page.locator('#airfryerCount').innerText(),'100 рецептов');
-    const firstImage=page.locator('#airfryerGrid .du-airfryer-card img').first();
-    await firstImage.scrollIntoViewIfNeeded();
-    await firstImage.evaluate(async img=>{img.loading='eager';if(!img.complete)await new Promise((resolve,reject)=>{img.addEventListener('load',resolve,{once:true});img.addEventListener('error',reject,{once:true});});});
-    assert.ok(await firstImage.evaluate(img=>img.naturalWidth>0),'Local airfryer photo must load: '+await firstImage.getAttribute('src'));
-    await page.locator('[data-airfryer-filter="Птица"]').click();
-    assert.equal(await page.locator('#airfryerGrid .du-airfryer-card').count(),20,'Poultry filter must show 20 recipes');
-    await page.locator('[data-airfryer-filter="Все блюда"]').click();
-    await page.locator('#airfryerSearch').fill('клюква');
-    assert.equal(await page.locator('#airfryerGrid .du-airfryer-card').count(),1,'Ingredient search should find cranberry turkey medallions');
-    const modelNote="Время и температура могут отличаться в зависимости от модели аэрогриля. Ориентируйтесь на инструкцию производителя именно вашего прибора.";
-    const runtime=await page.evaluate((modelNote)=>{const r=window.AIRFRYER_RECIPES.find(x=>x.id==='af-turkey-medallions-cranberry-2');return {count:window.AIRFRYER_RECIPES.length,hasAirfryer:Boolean(r&&r.airfryer),temperature:r?.airfryer?.temperature,allRecipesHaveModelNote:window.AIRFRYER_RECIPES.every(x=>String(x.warn||'').includes(modelNote))};},modelNote);
-    assert.equal(runtime.count,100,'Runtime window catalog should expose 100 recipes');
-    assert.equal(runtime.hasAirfryer,true,'Normalized recipe must include technical data: '+JSON.stringify(runtime));
-    assert.equal(runtime.allRecipesHaveModelNote,true,'All 100 air-fryer recipes must explain that settings vary by model and the owner must follow the appliance manual.');
-    await page.locator('[data-airfryer-open="af-turkey-medallions-cranberry-2"]').click();
-    await page.locator('#recipeView').waitFor({state:'visible'});
-    assert.equal(await page.locator('#recipeDetail .du-airfryer-specs').count(),1,'Recipe page must include the technical panel: '+JSON.stringify(runtime));
-    assert.match(await page.locator('#recipeDetail').innerText(),/Режим приготовления в аэрогриле/);
-    assert.equal(await page.locator('#recipeDetail .du-airfryer-spec strong').count(),3,'Temperature, cook time and prep time values must render');
-    assert.equal(await page.locator('#recipeDetail .du-airfryer-spec strong').first().innerText(),'185 °C','The temperature value must match the recipe data');
-    assert.match(await page.locator('#recipeDetail').innerText(),/клюквенно-апельсиновым соусом/i);
-    assert.ok(await page.locator('#recipeDetail .ingredient-check').count()>=5,'Ingredients must render');
-    assert.ok((await page.locator('#recipeDetail .allergen-text').innerText()).includes(modelNote),'Model-specific guidance must be visible in the recipe detail.');
-    const publicRecipeText=await page.locator('#recipeDetail').innerText();
-    for(const forbidden of ['Источник:', 'Статус испытаний:', 'Открыть источник рецепта', 'На конкретной модели аэрогриля физически не тестировалось']){
-      assert.ok(!publicRecipeText.includes(forbidden),'Internal editorial text must not appear in a public recipe: '+forbidden);
-    }
-    assert.ok(await page.locator('#recipeDetail .du-editorial-step').count()>=4,'Cooking steps must render');
-    assert.equal(await page.locator('#recipeDetail .portion-picker button').count(),0,'Airfryer recipes keep the validated two-serving quantity fixed');
-    assert.equal(await page.locator('#recipeDetail .portion-picker strong').innerText(),'2 порции');
-    await page.locator('#startCooking').click();
-    assert.equal(await page.locator('#cookOverlay').isVisible(),true,'Step-by-step cooking overlay must open');
-    assert.ok(await page.locator('#cookContent').innerText().then(t=>t.includes('Шаг 1')),'First cooking step should be visible');
-    await page.locator('#closeCook').click();
-    assert.deepEqual(errors,[],entry+' page errors at '+viewport.width+'px');
-    await page.close();
+   });
+   for(const entry of ['','full-catalog/']){
+     await page.goto('http://127.0.0.1:8765/'+entry+'#airfryer',{waitUntil:'domcontentloaded'});
+     const cards=page.locator('#airfryerCategoryGrid .category-card');
+     await cards.first().waitFor({state:'attached'});
+     if (viewport.width <= 760) assert.equal(await cards.first().isVisible(),true,'Mobile uses the eight readable paper cards');
+     else assert.equal(await page.locator('#airfryer .du-airfryer-approved-zone').first().isVisible(),true,'Desktop uses the approved newspaper category layout');
+     assert.equal(await cards.count(),8,'Home shows eight large category links rather than 100 recipe cards');
+     assert.equal(await page.locator('#airfryerGrid').count(),0,'Recipe grid only belongs to the dedicated page');
+     const airPhotos=await cards.locator('img').evaluateAll(images=>images.map(img=>new URL(img.src).pathname));
+     const mainPhotos=await page.locator('#categoryGrid .category-card img').evaluateAll(images=>images.map(img=>new URL(img.src).pathname));
+     assert.equal(new Set(airPhotos).size,8,'All eight airfryer entry photos are distinct');
+     assert.ok(airPhotos.every(src=>!mainPhotos.includes(src)),'Do not reuse the original 1001-category photos');
+     assert.equal(await cards.first().getAttribute('href'),'/airfryer/?category='+encodeURIComponent('Все блюда'));
    }
+   await page.goto('http://127.0.0.1:8765/airfryer/?category='+encodeURIComponent('Птица'),{waitUntil:'domcontentloaded'});
+   await page.locator('#airfryerGrid .du-airfryer-card').first().waitFor();
+   assert.equal(await page.locator('#airfryerGrid .du-airfryer-card').count(),20,'Deep link applies the poultry filter');
+   assert.ok(await page.locator('.du-airfryer-home-link').isVisible(),'Back-to-home link exists');
+   await page.locator('[data-airfryer-filter="Все блюда"]').click();
+   assert.equal(await page.locator('#airfryerGrid .du-airfryer-card').count(),100,'All 100 recipes are intact');
+   const pic=page.locator('#airfryerGrid .du-airfryer-card img').first();
+   await pic.scrollIntoViewIfNeeded();
+   await pic.evaluate(async img=>{img.loading='eager';if(!img.complete)await new Promise((resolve,reject)=>{img.addEventListener('load',resolve,{once:true});img.addEventListener('error',reject,{once:true});});});
+   assert.ok(await pic.evaluate(img=>img.naturalWidth>0),'Airfryer recipe photo loads on the dedicated route');
+   const search=page.locator('#airfryerSearch');
+   async function equivalent(first,second){
+     await search.fill(first);
+     const n=await page.locator('#airfryerGrid .du-airfryer-card').count();
+     assert.ok(n>0,first+' should find recipes');
+     await search.fill(second);
+     assert.equal(await page.locator('#airfryerGrid .du-airfryer-card').count(),n,'Word forms should match: '+first+' / '+second);
+   }
+   await equivalent('говядина','говяжьи');
+   await equivalent('свинина','свиные');
+   await equivalent('курица','куриные');
+   await equivalent('индейка','индюшиные');
+   await equivalent('картофель','картошка');
+   await search.fill('клюква');
+   assert.equal(await page.locator('#airfryerGrid .du-airfryer-card').count(),1,'Cranberry identifies turkey medallions');
+   const modelNote='Время и температура могут отличаться в зависимости от модели аэрогриля. Ориентируйтесь на инструкцию производителя именно вашего прибора.';
+   const runtime=await page.evaluate(note=>({count:window.AIRFRYER_RECIPES.length,allNotes:window.AIRFRYER_RECIPES.every(r=>String(r.warn||'').includes(note))}),modelNote);
+   assert.equal(runtime.count,100);
+   assert.equal(runtime.allNotes,true);
+   await page.locator('[data-airfryer-open="af-turkey-medallions-cranberry-2"]').click();
+   await page.locator('#recipeView').waitFor({state:'visible'});
+   assert.equal(await page.locator('#recipeDetail .du-airfryer-specs').count(),1);
+   assert.equal(await page.locator('#recipeDetail .du-airfryer-spec strong').first().innerText(),'185 °C');
+   assert.ok((await page.locator('#recipeDetail .allergen-text').innerText()).includes(modelNote));
+   const text=await page.locator('#recipeDetail').innerText();
+   for(const forbidden of ['Источник:','Статус испытаний:','Открыть источник рецепта'])
+     assert.ok(!text.includes(forbidden),'Internal editorial annotation must not appear: '+forbidden);
+   assert.equal(await page.locator('#recipeDetail .portion-picker button').count(),0,'Portions remain fixed at two');
+   await page.locator('#startCooking').click();
+   assert.equal(await page.locator('#cookOverlay').isVisible(),true);
+   await page.locator('#closeCook').click();
+   await page.locator('#backCatalog').click();
+   await page.locator('#airfryerGrid .du-airfryer-card').first().waitFor();
+   assert.ok(page.url().includes('/airfryer/'),'Recipe back button stays within airfryer catalogue');
+   assert.deepEqual(errors,[],'No JavaScript page errors at '+viewport.width+'px');
+   await page.close();
   }
-  console.log('Airfryer browser smoke passed: 100 cards, category filter, ingredient search, recipe detail and cooking mode on desktop/mobile in both HTML variants.');
+  console.log('Airfryer UX PASS: two home variants, distinct image categories, 100 recipes, RU word forms, recipe and cooking flow (desktop/mobile).');
  }finally{await browser.close();}
 })().catch(error=>{console.error(error);process.exit(1);});

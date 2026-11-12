@@ -17,12 +17,13 @@ const {chromium}=require('playwright');
           return host==='127.0.0.1'?route.continue():route.abort();
         });
         const base='http://127.0.0.1:8765/'+entry;
-        const goto=hash=>page.goto(base+'#'+hash,{waitUntil:'domcontentloaded'});
+        const goto=hash=>page.goto((hash==='my-recipes' && entry ? 'http://127.0.0.1:8765/#my-recipes' : base+'#'+hash),{waitUntil:'domcontentloaded'}); // Personal collection is on the home route; assert cross-catalogue persistence.
 
         // Favorite a real recipe through the same control the reader uses.
         await goto('recipe=tomato-basil-pasta');
         await page.locator('#recipeFav').click();
         await goto('my-recipes');
+        await page.locator('[data-my-edit="tomato-basil-pasta"]').click();
         const note=page.locator('[data-my-note="tomato-basil-pasta"]');
         await note.waitFor();
         assert.equal(await page.locator('#myRecipesGrid .du-personal-card').count(),1,
