@@ -2153,3 +2153,37 @@ html body #duNewspaperDock #duNpPanel button.du-np-pixel-play::after {
   content:none!important;
   display:none!important;
 }
+
+
+/* PIXEL_PLAYER_TRACK_TITLE_NO_CROP_20261112
+   Repair only live track title typography: the old 17%-high flex container
+   was shorter than the single-line Georgia title plus phase subtitle, causing
+   flex-shrink and cropping of descending letters. Image, paper silhouette,
+   buttons, timeline, overall player size and position are unchanged. */
+html body #duNewspaperDock #duNpPanel .du-np-approved-stage.du-np-live .du-np-pixel-live-title {
+  top:40.4%!important;
+  height:20.5%!important;
+  gap:2px!important;
+}
+html body #duNewspaperDock #duNpPanel .du-np-approved-stage.du-np-live .du-np-pixel-live-title strong {
+  flex:0 0 auto!important;
+  min-height:0!important;
+  font-size:clamp(11px,2.1vw,40px)!important;
+  line-height:1.14!important;
+  padding:0 0 .1em!important;
+  white-space:nowrap!important;
+  text-overflow:ellipsis!important;
+}
+html body #duNewspaperDock #duNpPanel .du-np-approved-stage.du-np-live .du-np-pixel-live-title small {
+  flex:0 0 auto!important;
+  font-size:clamp(9px,1.12vw,18px)!important;
+  line-height:1.08!important;
+}
+@media(max-width:600px) {
+  html body #duNewspaperDock #duNpPanel .du-np-approved-stage.du-np-live .du-np-pixel-live-title strong {
+    font-size:clamp(10px,2.6vw,15px)!important;
+  }
+  html body #duNewspaperDock #duNpPanel .du-np-approved-stage.du-np-live .du-np-pixel-live-title small {
+    font-size:clamp(8px,1.8vw,12px)!important;
+  }
+}
