@@ -880,3 +880,40 @@ html body.du-np-standalone #duNewspaperDock.du-np-dock {
     font-size:7px!important;
   }
 }
+
+
+/* DESKTOP_NEWS_SHEET_SIZE_LIMIT_20261112
+   The paper is a discreet horizontal strip, not a large bottom overlay. */
+@media(min-width:621px){
+  html body #duNewspaperDock.du-np-dock {
+    width:min(620px,calc(100vw - 28px))!important;
+  }
+  html body #duNewspaperDock #duNpPanel .du-np-dock-paper {
+    grid-template-columns:minmax(0,1fr) 178px!important;
+    gap:0 10px!important;
+    padding:12px 20px 11px!important;
+  }
+  html body #duNewspaperDock #duNpPanel .du-np-top strong {
+    font-size:27px!important;
+  }
+  html body #duNewspaperDock #duNpPanel .du-np-edition {
+    font-size:8px!important;
+  }
+  html body #duNewspaperDock #duNpPanel .du-np-tabs {
+    margin-bottom:6px!important;
+    padding-bottom:5px!important;
+  }
+  html body #duNewspaperDock #duNpPanel .du-np-tabs button {
+    min-height:27px!important;
+    padding:5px 11px!important;
+  }
+  html body #duNewspaperDock #duNpPanel .du-np-now strong {
+    font-size:25px!important;
+  }
+  html body #duNewspaperDock #duNpPanel .du-np-print-colophon {
+    font-size:7px!important;
+  }
+}
+html body.du-np-standalone #duNewspaperDock.du-np-dock {
+  width:min(620px,100%)!important;
+}
