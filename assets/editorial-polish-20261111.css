@@ -1577,3 +1577,26 @@ html body.du-evening-mode #evening .du-moods > button.du-mood[data-mood="cozy"] 
   opacity:0!important;
   pointer-events:none!important;
 }
+
+
+/* RESTORE_MOOD_RED_UNDERLINE_20261112
+   Original selection cue (formerly drawn behind the hidden live <strong>)
+   is now drawn over each already-approved printed image.
+   Scope: only selected Evening mood; no player, photos, grid or interactions. */
+html body #evening .du-moods > button.du-mood:is(.is-selected,[aria-pressed="true"])::after {
+  content:""!important;
+  display:block!important;
+  position:absolute!important;
+  inset:74% auto auto 14%!important;
+  width:68%!important;
+  height:3px!important;
+  z-index:2!important;
+  opacity:1!important;
+  background:#ad4050!important;
+  border:0!important;
+  border-radius:3px!important;
+  box-shadow:none!important;
+  clip-path:none!important;
+  transform:rotate(-.7deg)!important;
+  pointer-events:none!important;
+}
