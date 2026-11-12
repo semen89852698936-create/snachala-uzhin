@@ -324,6 +324,10 @@
     if(grid){
       grid.insertAdjacentElement('afterend',player);
       state.panelOpen=true;
+    }else if(!document.body.classList.contains('du-np-standalone') && $('#music')){
+      // The music area remains the anchor even if the cards have not hydrated.
+      $('#music').appendChild(player);
+      state.panelOpen=true;
     }else{
       document.body.appendChild(player);
       if(document.body.classList.contains('du-np-standalone'))state.panelOpen=true;
@@ -331,69 +335,8 @@
     render();
   }
 
-  // Keep the floating newspaper at a constant size while it plays.
-  // Moving the dock never recreates the audio element or changes its state.
-  let dockMovedByUser=false;
-  let lastDockLayout='';
-  function positionFloatingPlayer() {
-    if(document.body.classList.contains('du-np-standalone'))return;
-    const dock=$('#duNewspaperDock');
-    if(!dock)return;
-    // Keep the shared player directly beneath the three playlists until the
-    // visitor intentionally drags it. Other site routes retain the dock.
-    if(dock.closest('#music') && !dockMovedByUser)return;
-    const scale=1;
-    dock.style.setProperty('--du-player-scale',String(scale));
-    dock.classList.add('du-np-free-position');
-    const gutter=8;
-    const maxX=Math.max(gutter,window.innerWidth-dock.offsetWidth*scale-gutter);
-    const maxY=Math.max(gutter,window.innerHeight-dock.offsetHeight*scale-gutter);
-    const savedX=parseFloat(dock.style.getPropertyValue('--du-player-left'));
-    const savedY=parseFloat(dock.style.getPropertyValue('--du-player-top'));
-    const x=dockMovedByUser&&Number.isFinite(savedX)?savedX:16;
-    const y=dockMovedByUser&&Number.isFinite(savedY)?savedY:maxY;
-    dock.style.setProperty('--du-player-left',Math.max(gutter,Math.min(maxX,x))+'px');
-    dock.style.setProperty('--du-player-top',Math.max(gutter,Math.min(maxY,y))+'px');
-  }
-  function enablePlayerDragging() {
-    if(document.body.classList.contains('du-np-standalone'))return;
-    const dock=$('#duNewspaperDock');
-    const handle=dock?.querySelector('.du-np-top');
-    if(!dock||!handle)return;
-    let drag=null;
-    handle.addEventListener('pointerdown',event=>{
-      if(event.pointerType==='mouse'&&event.button!==0)return;
-      if(event.target.closest('button,a,input'))return;
-      const bounds=dock.getBoundingClientRect();
-      drag={id:event.pointerId,startX:event.clientX,startY:event.clientY,left:bounds.left,top:bounds.top,active:false};
-      handle.setPointerCapture(event.pointerId);
-      event.preventDefault();
-    });
-    handle.addEventListener('pointermove',event=>{
-      if(!drag||drag.id!==event.pointerId)return;
-      const dx=event.clientX-drag.startX,dy=event.clientY-drag.startY;
-      if(!drag.active&&Math.abs(dx)+Math.abs(dy)<4)return;
-      if(!drag.active){
-        drag.active=true;
-        dockMovedByUser=true;
-        dock.style.setProperty('--du-player-scale','1');
-        dock.style.setProperty('--du-player-left',drag.left+'px');
-        dock.style.setProperty('--du-player-top',drag.top+'px');
-        dock.classList.add('du-np-free-position');
-      }
-      const scale=1;
-      const gutter=8;
-      const maxX=Math.max(gutter,window.innerWidth-dock.offsetWidth*scale-gutter);
-      const maxY=Math.max(gutter,window.innerHeight-dock.offsetHeight*scale-gutter);
-      dock.style.setProperty('--du-player-left',Math.max(gutter,Math.min(maxX,drag.left+dx))+'px');
-      dock.style.setProperty('--du-player-top',Math.max(gutter,Math.min(maxY,drag.top+dy))+'px');
-    });
-    const finish=event=>{if(drag?.id===event.pointerId)drag=null;};
-    handle.addEventListener('pointerup',finish);
-    handle.addEventListener('pointercancel',finish);
-    handle.addEventListener('lostpointercapture',()=>{drag=null;});
-    window.addEventListener('resize',positionFloatingPlayer);
-  }
+  // The approved newspaper player is stationary in document flow below
+  // the playlist grid. Do not install drag or viewport positioning handlers.
   function render() {
     const item=current(),label=phaseData()?.label || '';
     const elapsed=position(),currentDuration=duration();
@@ -445,8 +388,6 @@
         'Музыка · CC BY 4.0';
     });
     if(state.error)announce(state.error);
-    const dockLayout=state.panelOpen?'open':'closed';
-    if(dockLayout!==lastDockLayout){lastDockLayout=dockLayout;positionFloatingPlayer();}
   }
   function installEvents() {
     document.addEventListener('click',event=>{
@@ -523,7 +464,6 @@
       state.shufflePosition=0;
       build();
       showShuffledPlaylistOrder(state.phase,state.shuffleQueue);
-      enablePlayerDragging();
       installEvents();
       window.duNewspaperPlayer={
         getState:()=>({phase:state.phase,index:state.index,playing:state.playing,
