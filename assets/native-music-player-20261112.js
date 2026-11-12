@@ -219,7 +219,7 @@
       '<button class="du-np-launcher" id="duNpLauncher" type="button" aria-controls="duNpPanel" aria-expanded="false"><span>♫</span> Музыка</button>'+
       '<section class="du-np-dock-body" id="duNpPanel" aria-label="Собственный музыкальный плеер" hidden>'+
         '<div class="du-np-dock-paper">'+
-        '<header class="du-np-top"><div class="du-np-masthead"><small>СНАЧАЛА УЖИН · РАДИО ДЛЯ ДВОИХ</small><strong>МУЗЫКАЛЬНЫЙ <i>ВЕСТНИК</i></strong><span class="du-np-edition">№ 001 · ТРИ ГЛАВЫ · ОДИН ВЕЧЕР</span></div>'+
+        '<header class="du-np-top"><div class="du-np-masthead"><small>МУЗЫКА ДЛЯ ДВОИХ</small><strong>СНАЧАЛА УЖИН</strong><span class="du-np-edition">№ 001 · ТРИ ГЛАВЫ · ОДИН ВЕЧЕР</span></div>'+
         '<button class="du-np-close" type="button" data-np-action="close" aria-label="Свернуть плеер">×</button></header>'+
         '<nav class="du-np-tabs" aria-label="Выбери настроение">'+
         '<button type="button" data-np-action="tab" data-np-phase="kitchen">Готовить</button>'+
