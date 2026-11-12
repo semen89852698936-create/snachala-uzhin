@@ -14,7 +14,7 @@
     manifest:null, phase:'kitchen', index:0, playing:false, started:false,
     elapsed:0, volume:.65, ctx:null, master:null, voices:[], audio:null,
     anchor:0, clock:null, pending:false, panelOpen:false,
-    error:'', demo:true
+    error:'', demo:true, miniDismissed:false
   };
   const $ = (s,root=document) => root.querySelector(s);
   const $$ = (s,root=document) => [...root.querySelectorAll(s)];
@@ -36,6 +36,13 @@
     link.id='du-newspaper-style'; link.rel='stylesheet';
     link.href=ROOT+'native-music-player-20261112.css';
     document.head.appendChild(link);
+    if(!document.getElementById('du-newspaper-placement-style')){
+      const placement=document.createElement('link');
+      placement.id='du-newspaper-placement-style';
+      placement.rel='stylesheet';
+      placement.href=ROOT+'native-music-placement-20261112.css';
+      document.head.appendChild(placement);
+    }
   }
   function trackInfo() {
     const item=current();
@@ -134,6 +141,7 @@
     const track=current();if(!track)return;
     if(state.pending) return;
     state.pending=true;announce('');
+    state.miniDismissed=false;
     try{
       state.started=true;
       const verified=!!(track.src && track.license?.streamingAllowed===true);
@@ -176,7 +184,7 @@
     if(!state.manifest?.playlists[phase])return;
     stopEngine();state.playing=false;state.phase=phase;
     state.index=Math.min(Math.max(0,index),tracks().length-1);
-    state.elapsed=0;state.demo=true;state.error='';
+    state.elapsed=0;state.demo=true;state.error='';state.miniDismissed=false;
     render();
     if(autoplay)await play();
   }
@@ -204,15 +212,7 @@
     render();
   }
   function sheetMarkup(phase) {
-    const label=state.manifest?.playlists[phase]?.label || '';
-    return '<div class="du-np-shadow"><div class="du-np-sheet" data-np-sheet="'+phase+'">'+
-      '<span class="du-np-kicker">НОТНАЯ ХРОНИКА / ВЫРЕЗКА № 0'+(PHASES.indexOf(phase)+1)+'</span>'+
-      '<div class="du-np-headline">Ритм <i>вечера</i><span>♫</span></div>'+
-      '<p class="du-np-phase-name">'+label+'</p>'+
-      '<p class="du-np-trackline" data-np-inline-track="'+phase+'">Две авторские демозаписи · без чужих песен</p>'+
-      '<button type="button" class="du-np-start" data-np-action="phase" data-np-phase="'+phase+'">▶ Слушать демо</button>'+
-      '<div class="du-np-corner">№ 0'+(PHASES.indexOf(phase)+1)+'</div>'+
-    '</div></div>';
+    return '<button type="button" class="du-np-card-listen" data-np-action="phase" data-np-phase="'+phase+'" aria-label="Слушать '+(state.manifest?.playlists[phase]?.label||'музыку')+'">♫ Слушать</button>';
   }
   function floatingMarkup() {
     return '<div class="du-np-dock" id="duNewspaperDock">'+
@@ -246,27 +246,66 @@
       '</section>'+
     '</div>';
   }
+  function miniMarkup() {
+    return '<aside class="du-np-mini" id="duNpMini" aria-label="Компактное управление музыкой" hidden>'+
+      '<span class="du-np-mini-note" aria-hidden="true">♫</span>'+
+      '<div class="du-np-mini-track"><strong id="duNpMiniTitle">Музыка</strong><small id="duNpMiniPhase">Для двоих</small></div>'+
+      '<div class="du-np-mini-controls">'+
+      '<button type="button" data-np-action="previous" aria-label="Предыдущая композиция"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 5V19" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M19 5L8 12L19 19Z" fill="currentColor"/></svg></button>'+
+      '<button type="button" data-np-action="toggle" id="duNpMiniToggle" aria-label="Воспроизвести"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 4L20 12L8 20Z" fill="currentColor"/></svg></button>'+
+      '<button type="button" data-np-action="next" aria-label="Следующая композиция"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 5L16 12L5 19Z" fill="currentColor"/><path d="M19 5V19" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></button>'+
+      '</div>'+
+      '<button type="button" class="du-np-mini-expand" data-np-action="expand" aria-label="Показать большой плеер" title="Показать плеер">⌃</button>'+
+      '<button type="button" class="du-np-mini-close" data-np-action="mini-close" aria-label="Скрыть компактный плеер" title="Скрыть">×</button>'+
+      '</aside>';
+  }
+  function updateMiniVisibility() {
+    const mini=$('#duNpMini');
+    if(!mini)return;
+    const panel=$('#duNpPanel');
+    let fullVisible=false;
+    if(panel){
+      const rect=panel.getBoundingClientRect();
+      const section=$('#music');
+      const sectionVisible=!!(section && getComputedStyle(section).display!=='none' &&
+        section.getClientRects().length && rect.width && rect.height);
+      fullVisible=sectionVisible && rect.top < window.innerHeight-45 && rect.bottom>55;
+    }
+    mini.hidden=!(state.started&&!state.miniDismissed&&!fullVisible);
+  }
   function build() {
-    $$('#music .du-music-card[data-music-phase]').forEach(card => {
-      if($('.du-np-inline',card))return;
+    $$('#music .du-music-card[data-music-phase]').forEach(card=>{
+      if($('.du-np-card-listen',card))return;
       const phase=card.getAttribute('data-music-phase');
       if(!state.manifest.playlists[phase])return;
-      const node=document.createElement('div');
-      node.className='du-np-inline';node.innerHTML=sheetMarkup(phase);
+      const holder=document.createElement('div');
+      holder.innerHTML=sheetMarkup(phase);
+      const button=holder.firstElementChild;
       const total=$('.du-music-total',card);
-      if(total)total.insertAdjacentElement('afterend',node);
-      else card.appendChild(node);
+      if(total)total.insertAdjacentElement('afterend',button);
+      else card.appendChild(button);
     });
-    // The embedded Spotify audio is not relevant to the Russian market.
-    // Only in the new preview, remove iframe elements and hide their shells.
+    // Spotify embeds are absent in this prototype: no region/login dependency.
     $$('#music .du-music-spotify-extra iframe').forEach(node=>node.remove());
     $$('#music .du-music-spotify-extra').forEach(node=>node.hidden=true);
     const legal=$('#music .du-music-legal');
-    if(legal) legal.textContent='Собственный плеер использует оригинальные синтезированные демозаписи. Редакционные списки известных песен остаются для вдохновения и не воспроизводятся. Для коммерческих записей потребуются права на потоковое прослушивание.';
-    const dock=document.createElement('div');
-    dock.innerHTML=floatingMarkup();
-    document.body.appendChild(dock.firstElementChild);
-    if(document.body.classList.contains('du-np-standalone'))state.panelOpen=true;
+    if(legal)legal.textContent='В плеере используются оригинальные синтезированные демозаписи. Редакционные подборки известных песен не воспроизводятся. Для коммерческих записей потребуются права на потоковое прослушивание.';
+    const holder=document.createElement('div');
+    holder.innerHTML=floatingMarkup();
+    const dock=holder.firstElementChild;
+    const standalone=document.body.classList.contains('du-np-standalone');
+    const music=$('#music'),grid=$('#music .du-music-grid');
+    if(!standalone&&music&&grid){
+      music.insertBefore(dock,grid);
+      dock.classList.add('du-np-embedded-dock');
+      document.body.classList.add('du-np-embedded-mode');
+      const compact=document.createElement('div');
+      compact.innerHTML=miniMarkup();
+      document.body.appendChild(compact.firstElementChild);
+    }else{
+      document.body.appendChild(dock);
+    }
+    state.panelOpen=true;
     render();
   }
   function render() {
@@ -290,9 +329,9 @@
     if($('#duNpCount'))$('#duNpCount').textContent=
       String(state.index+1).padStart(2,'0')+' / '+String(tracks().length).padStart(2,'0');
     $$('.du-np-tabs button').forEach(btn=>btn.setAttribute('aria-pressed',String(btn.dataset.npPhase===state.phase)));
-    $$('.du-np-start').forEach(btn=>{
+    $('.du-np-card-listen').forEach(btn=>{
       const selected=btn.dataset.npPhase===state.phase;
-      btn.textContent=selected&&state.playing?'Ⅱ Пауза':'▶ Слушать демо';
+      btn.textContent=selected&&state.playing?'Ⅱ Пауза':'♫ Слушать';
       btn.setAttribute('aria-pressed',String(selected&&state.playing));
     });
     $$('.du-np-trackline').forEach(el=>{
@@ -301,6 +340,16 @@
       el.textContent=phase===state.phase&&state.started?(item?.title||'')+' · '+item?.bpm+' BPM':
         list.map(t=>t.title).join(' · ');
     });
+    const miniTitle=$('#duNpMiniTitle'),miniPhase=$('#duNpMiniPhase'),miniToggle=$('#duNpMiniToggle');
+    if(miniTitle)miniTitle.textContent=item?.title||'Музыка';
+    if(miniPhase)miniPhase.textContent=label;
+    if(miniToggle){
+      miniToggle.innerHTML=state.playing?
+        '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 5H11V19H7ZM14 5H18V19H14Z" fill="currentColor"/></svg>':
+        '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 4L20 12L8 20Z" fill="currentColor"/></svg>';
+      miniToggle.setAttribute('aria-label',state.playing?'Пауза':'Воспроизвести');
+    }
+    updateMiniVisibility();
     if(state.error)announce(state.error);
   }
   function installEvents() {
@@ -310,6 +359,19 @@
       const action=btn.dataset.npAction;
       if(btn.id==='duNpLauncher') {state.panelOpen=!state.panelOpen;render();return;}
       if(action==='close'){state.panelOpen=false;render();return;}
+      if(action==='mini-close'){state.miniDismissed=true;updateMiniVisibility();return;}
+      if(action==='expand'){
+        const music=$('#music');
+        if(music && music.getClientRects().length && getComputedStyle(music).display!=='none'){
+          $('#duNpPanel')?.scrollIntoView({behavior:window.matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth',block:'center'});
+        }else{
+          const url='/music/player.html?phase='+encodeURIComponent(state.phase)+'&index='+state.index+'&volume='+Math.round(state.volume*100);
+          const windowRef=window.open(url,'duMusicSeparatePlayer','width=740,height=460');
+          if(windowRef){pause();state.miniDismissed=true;updateMiniVisibility();}
+          else announce('Браузер заблокировал отдельное музыкальное окно.');
+        }
+        return;
+      }
       if(action==='popout') {
         const url='/music/player.html?phase='+encodeURIComponent(state.phase)+'&index='+state.index+'&volume='+Math.round(state.volume*100);
         const windowRef=window.open(url,'duMusicSeparatePlayer','width=480,height=740');
@@ -336,6 +398,10 @@
       if(event.target.id==='duNpSeek')seek(event.target.value).catch(()=>{});
     });
     document.addEventListener('visibilitychange',()=>{if(!document.hidden)render();});
+    window.addEventListener('scroll',updateMiniVisibility,{passive:true});
+    window.addEventListener('resize',updateMiniVisibility,{passive:true});
+    window.addEventListener('hashchange',()=>requestAnimationFrame(updateMiniVisibility));
+    window.addEventListener('popstate',()=>requestAnimationFrame(updateMiniVisibility));
     window.addEventListener('pagehide',()=>{if(state.playing)pause();});
     state.clock=setInterval(()=>{
       if(state.playing&&position()>=duration()-.035){
