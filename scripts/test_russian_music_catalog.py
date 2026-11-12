@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Regression checks for СНАЧАЛА УЖИН multilingual music credits and playback rights."""
 import json
+import hashlib
 import re
 import unittest
 from pathlib import Path
@@ -40,7 +41,7 @@ class LicensedRussianMusic(unittest.TestCase):
                 ids.add(track["id"])
                 self.assertTrue(track["license"]["streamingAllowed"], track["id"])
                 self.assertTrue(track["license"]["creditRequired"], track["id"])
-                self.assertTrue(track["src"].startswith("https://"), track["id"])
+                self.assertTrue(track["src"].startswith("https://") or track["src"].startswith("/assets/music/dark-antey/"), track["id"])
                 self.assertTrue(track["source"].startswith("https://"), track["id"])
 
     def test_russian_rights_and_tempo_gates(self):
@@ -49,11 +50,22 @@ class LicensedRussianMusic(unittest.TestCase):
         new_tracks = [t for t in all_tracks if t["id"].startswith(("tunguska-cc-", "naumenko-impression-"))]
         self.assertEqual(9, len(new_tracks))
         self.assertEqual(43, len(self.intake["tracks"]))
+        shipped = json.loads((ROOT / "music/dark-antey-24-upload-manifest.json").read_text())
+        originals = {row["id"]: row for row in shipped["tracks"]}
+        self.assertEqual(24, len(originals))
         for rec in self.intake["tracks"]:
             if rec["collection"].startswith("dark-antey"):
-                self.assertFalse(rec["audible"])
-                self.assertNotIn(rec["id"], active_ids)
-            if rec.get("tempoSuggestedPlaylist") is None or rec["id"] == "tunguska-cc-04":
+                if rec["id"] in originals and (ROOT / originals[rec["id"]]["src"].lstrip("/")).exists():
+                    entry = originals[rec["id"]]
+                    path = ROOT / entry["src"].lstrip("/")
+                    self.assertEqual(entry["expectedBytes"], path.stat().st_size)
+                    self.assertEqual(entry["sha256"], hashlib.sha256(path.read_bytes()).hexdigest())
+                    self.assertTrue(rec["audible"])
+                    self.assertIn(rec["id"], active_ids)
+                else:
+                    self.assertFalse(rec["audible"])
+                    self.assertNotIn(rec["id"], active_ids)
+            elif rec.get("tempoSuggestedPlaylist") is None or rec["id"] == "tunguska-cc-04":
                 self.assertNotIn(rec["id"], active_ids)
         for key, phase in self.manifest["playlists"].items():
             for t in phase["tracks"]:
