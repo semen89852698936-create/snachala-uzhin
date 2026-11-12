@@ -45,7 +45,7 @@ const fs=require('node:fs');
     assert.equal(await page.locator('#evening').isVisible(),true);
     assert.equal(await page.locator('#music').isVisible(),true);
     const html=await page.locator('#eveningLanding').innerHTML();
-    assert(html.includes('our-evening-hero-hq.avif'));
+    assert(html.includes('evening-approved-photo-20261111.webp'));
     const dinner=await page.locator('.du-evening-invitation img').getAttribute('src');
     assert(dinner.includes('our-evening-invitation-approved-20261102.webp'),'approved invitation changed');
     await page.screenshot({path:'/tmp/unified-evening-'+viewport.width+'.png'});
