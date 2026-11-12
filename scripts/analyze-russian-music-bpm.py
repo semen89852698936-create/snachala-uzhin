@@ -3,13 +3,13 @@
 
 Fetches only recordings from Wikimedia Commons and Internet Archive.
 Produces measured candidates for human review, NEVER silently publishes audio.
-Requirements: ffmpeg, numpy, librosa.
+Requirements: numpy, librosa, soundfile. Audio decoded directly from OGG.
 """
 import hashlib
 import json
 import math
-import subprocess
 import tempfile
+import time
 import urllib.parse
 import urllib.request
 from pathlib import Path
@@ -51,14 +51,18 @@ def analyze_file(path):
     import librosa
     import numpy as np
 
-    with tempfile.TemporaryDirectory() as td:
-        wav = Path(td) / "audit.wav"
-        subprocess.run([
-            "ffmpeg", "-hide_banner", "-nostdin", "-loglevel", "error", "-y",
-            "-ss", "14", "-t", "105", "-i", str(path),
-            "-ac", "1", "-ar", "11025", "-c:a", "pcm_s16le", str(wav)
-        ], timeout=90, check=True)
-        y, sr = librosa.load(str(wav), sr=11025, mono=True)
+    import soundfile as sf
+    with sf.SoundFile(str(path)) as audio:
+        sample_rate = audio.samplerate
+        offset = min(int(14 * sample_rate), max(0, audio.frames - 30 * sample_rate))
+        audio.seek(offset)
+        samples = audio.read(int(105 * sample_rate), dtype="float32", always_2d=True)
+    if samples.size == 0:
+        raise RuntimeError("Audio is empty")
+    mono = np.mean(samples, axis=1)
+    sr = 11025
+    y = librosa.resample(mono, orig_sr=sample_rate, target_sr=sr)
+    if True:
         if len(y) < sr * 20:
             raise RuntimeError("Insufficient decodable audio")
         hop = 256
@@ -123,6 +127,8 @@ def run():
             except Exception as exc:
                 record["status"] = "error"
                 record["error"] = f"{type(exc).__name__}: {exc}"
+            if track["sourceMedia"] == "wikimedia-commons":
+                time.sleep(9)  # Wikimedia per-user rate limit: prevent burst traffic.
             print("TEMPO_RESULT " + json.dumps(record, ensure_ascii=False), flush=True)
             results.append(record)
     OUTPUT.write_text(json.dumps({"status": "non-publishing", "records": results},
