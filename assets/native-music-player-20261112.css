@@ -2114,10 +2114,12 @@ html body #music .du-music-grid > .du-music-card::after {
   pointer-events:none!important;
   opacity:1!important;
   z-index:3!important;
-  /* Render y=91.6..94.7% paper pixels over the label at y=87.1..90.2% */
+  /* Duplicate the clean paper band at 91.4..94.6% over y=86.9..90.1%.
+     Full x=9.5..88.5% range covers the printed triangle, Spotify and
+     'открыть дополнительный плеер', but stops above the red underline. */
   transform:translateY(-4.5%)!important;
-  clip-path:polygon(15.9% 91.6%,35.7% 91.6%,35.7% 94.7%,15.9% 94.7%)!important;
-  -webkit-clip-path:polygon(15.9% 91.6%,35.7% 91.6%,35.7% 94.7%,15.9% 94.7%)!important;
+  clip-path:polygon(9.5% 91.4%,88.5% 91.4%,88.5% 94.6%,9.5% 94.6%)!important;
+  -webkit-clip-path:polygon(9.5% 91.4%,88.5% 91.4%,88.5% 94.6%,9.5% 94.6%)!important;
   background-color:transparent!important;
   background-image:inherit!important;
   background-size:100% 100%!important;
