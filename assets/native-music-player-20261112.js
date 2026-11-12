@@ -259,7 +259,7 @@
       '<button class="du-np-launcher" id="duNpLauncher" type="button" aria-controls="duNpPanel" aria-expanded="false"><span>♫</span> Музыка</button>'+
       '<section class="du-np-dock-body" id="duNpPanel" aria-label="Собственный музыкальный плеер" hidden>'+
         '<div class="du-np-dock-paper">'+
-        '<header class="du-np-top"><div class="du-np-masthead"><small>МУЗЫКА ДЛЯ ДВОИХ</small><strong>СНАЧАЛА УЖИН</strong><span class="du-np-edition">№ 001 · ТРИ ГЛАВЫ · ОДИН ВЕЧЕР</span></div>'+
+        '<header class="du-np-top"><div class="du-np-masthead"><small>МУЗЫКА ДЛЯ ДВОИХ</small><strong>СНАЧАЛА УЖИН</strong><span class="du-np-edition">ТРИ ГЛАВЫ · ОДИН ВЕЧЕР</span></div>'+
         '<button class="du-np-close" type="button" data-np-action="close" aria-label="Свернуть плеер">×</button></header>'+
         '<nav class="du-np-tabs" aria-label="Выбери настроение">'+
         '<button type="button" data-np-action="tab" data-np-phase="kitchen">Готовить</button>'+
@@ -277,9 +277,9 @@
         '<div class="du-np-timeline"><span id="duNpElapsed">0:00</span>'+
         '<input type="range" id="duNpSeek" min="0" max="14" value="0" step=".1" aria-label="Перемотка композиции">'+
         '<span id="duNpTotal">0:14</span></div>'+
-        '<div class="du-np-bottom"><label for="duNpVolume">♫ Громкость</label>'+
+        '<div class="du-np-bottom"><label for="duNpVolume"><svg class="du-np-volume-icon" viewBox="0 0 28 28" aria-hidden="true"><path d="M3 11h5l7-6v18l-7-6H3z" fill="#3d2422"/><path d="M19 9q8 5 0 10M21 5q12 9 0 18" fill="none" stroke="#3d2422" stroke-width="2.3" stroke-linecap="round"/></svg><span class="du-np-sr-only">Громкость</span></label>'+
         '<input type="range" id="duNpVolume" min="0" max="100" value="65" aria-label="Громкость" /></div>'+
-        '<button type="button" class="du-np-popout" data-np-action="popout" title="Отдельное окно продолжает играть при переходах по сайту" aria-label="Открыть отдельное музыкальное окно для непрерывного прослушивания">↗ Отдельное окно</button>'+
+        '<button type="button" class="du-np-popout" data-np-action="popout" title="Отдельное окно продолжает играть при переходах по сайту" aria-label="Открыть отдельное музыкальное окно для непрерывного прослушивания"><svg class="du-np-popout-icon" viewBox="0 0 28 28" aria-hidden="true"><path d="M17 4h7v7M24 4 12 16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round"/><path d="M12 6H5v17h17v-7" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round"/></svg><span>Отдельное окно</span></button>'+
         '<div class="du-np-print-colophon" aria-hidden="true"><span>СЛУШАЙ. ГОТОВЬ. БУДЬ ВДВОЁМ.</span><span>СПЕЦИАЛЬНЫЙ ВЫПУСК ДЛЯ ВАШЕГО ВЕЧЕРА</span></div>'+ '<p class="du-np-feedback" role="status" hidden></p>'+
         '</div>'+
       '</section>'+
