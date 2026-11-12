@@ -1547,3 +1547,33 @@ html body.du-evening-mode #evening .du-moods > button.du-mood[data-mood="play"] 
   opacity:0!important;
   pointer-events:none!important;
 }
+
+
+/* APPROVED_COZY_ONLY_20261112
+   Fourth and final mood card: exact approved user artwork.
+   Leave the first three mood cards, grid, state handlers, and native player untouched. */
+html body #evening .du-moods > button.du-mood[data-mood="cozy"],
+html body.du-evening-mode #evening .du-moods > button.du-mood[data-mood="cozy"] {
+  background-color:transparent!important;
+  background-image:url('/assets/evening-approved-20261112/evening-mood-cozy.webp')!important;
+  background-size:contain!important;
+  background-position:center center!important;
+  background-repeat:no-repeat!important;
+  background-blend-mode:normal!important;
+  clip-path:none!important;
+  -webkit-mask-image:none!important;
+  mask-image:none!important;
+  box-shadow:none!important;
+}
+html body #evening .du-moods > button.du-mood[data-mood="cozy"]::before,
+html body #evening .du-moods > button.du-mood[data-mood="cozy"]::after,
+html body.du-evening-mode #evening .du-moods > button.du-mood[data-mood="cozy"]::before,
+html body.du-evening-mode #evening .du-moods > button.du-mood[data-mood="cozy"]::after {
+  content:none!important;
+  display:none!important;
+}
+html body #evening .du-moods > button.du-mood[data-mood="cozy"] :is(.du-mood-num,.du-mood-icon,.du-mood-check,strong,small),
+html body.du-evening-mode #evening .du-moods > button.du-mood[data-mood="cozy"] :is(.du-mood-num,.du-mood-icon,.du-mood-check,strong,small) {
+  opacity:0!important;
+  pointer-events:none!important;
+}
