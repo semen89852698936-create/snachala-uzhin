@@ -980,3 +980,41 @@ html body #duNewspaperDock #duNpPanel.du-np-dock-body {
 /* HIDE_BPM_FROM_ALL_MUSIC_CARDS_20261112
    Keep numerical tempos in the source manifest for curation, not in UI. */
 #music .du-bpm-pill {display:none!important;}
+
+
+/* SHARED_PLAYER_BELOW_THREE_PLAYLISTS_20261112
+   One newspaper player follows the complete three-column music grid.
+   Playlist imagery and headings stay free of player overlays. It becomes a
+   movable small window ONLY after an intentional drag of its masthead. */
+html body #music .du-music-card .du-np-inline {
+  display:none!important;
+}
+html body #music > #duNewspaperDock.du-np-dock:not(.du-np-free-position) {
+  position:relative!important;
+  inset:auto!important;
+  top:auto!important;
+  left:auto!important;
+  right:auto!important;
+  bottom:auto!important;
+  width:100%!important;
+  max-width:none!important;
+  margin:24px 0 0!important;
+  transform:none!important;
+  pointer-events:auto!important;
+}
+html body #music > #duNewspaperDock.du-np-dock:not(.du-np-free-position) #duNpPanel.du-np-dock-body {
+  max-height:none!important;
+  height:auto!important;
+  overflow:visible!important;
+  margin:0!important;
+}
+html body #music > #duNewspaperDock.du-np-dock:not(.du-np-free-position) #duNpLauncher[aria-expanded="true"] {
+  display:none!important;
+}
+@media(min-width:900px) {
+  html body #music > #duNewspaperDock.du-np-dock:not(.du-np-free-position).du-np-is-playing {
+    width:50%!important;
+    margin-left:auto!important;
+    margin-right:auto!important;
+  }
+}
