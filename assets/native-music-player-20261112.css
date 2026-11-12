@@ -2092,3 +2092,62 @@ html body #music .du-music-open-spotify,
 html body #music .du-music-spotify {
   display:none!important;
 }
+
+/* PIXEL_PAUSE_ICON_AND_BAKED_SPOTIFY_ERASURE_20261112
+   The Spotify mark is PRINTED INSIDE the three approved card WebPs, not only
+   in the old DOM. Cover just its icon, word and separator dot by reusing the
+   very same approved artwork sampled a little lower where only paper appears.
+   Important: the red underline is at y > 90%; this patch ends above it. */
+html body #music .du-music-grid > .du-music-card::after {
+  content:""!important;
+  display:block!important;
+  position:absolute!important;
+  inset:0!important;
+  width:100%!important;
+  height:100%!important;
+  padding:0!important;
+  margin:0!important;
+  border:0!important;
+  border-radius:0!important;
+  box-shadow:none!important;
+  outline:0!important;
+  pointer-events:none!important;
+  opacity:1!important;
+  z-index:3!important;
+  /* Render y=91.3..94.0% paper pixels over the label at y=87.1..89.8% */
+  transform:translateY(-4.2%)!important;
+  clip-path:polygon(15.9% 91.3%,35.7% 91.3%,35.7% 94.0%,15.9% 94.0%)!important;
+  -webkit-clip-path:polygon(15.9% 91.3%,35.7% 91.3%,35.7% 94.0%,15.9% 94.0%)!important;
+  background-color:transparent!important;
+  background-image:inherit!important;
+  background-size:100% 100%!important;
+  background-position:center!important;
+  background-repeat:no-repeat!important;
+  background-blend-mode:inherit!important;
+  filter:none!important;
+}
+/* This third card uses a separately filtered ::before background, not the
+   parent background. Mirror that existing filter on the tiny paper patch. */
+html body #music .du-music-grid > .du-music-card:nth-child(3)::after {
+  background-image:url('/assets/approved-music/music-after.webp')!important;
+  background-blend-mode:normal!important;
+  filter:invert(.937) sepia(.463) saturate(3.746) hue-rotate(214deg) brightness(1.153) contrast(.832)!important;
+}
+/* A real SVG inside the interactive play circle, because the site's global
+   button::after suppression hides a purely CSS-generated pause symbol. */
+html body #duNewspaperDock #duNpPanel button.du-np-pixel-play {
+  display:flex!important;
+  align-items:center!important;
+  justify-content:center!important;
+}
+html body #duNewspaperDock #duNpPanel button.du-np-pixel-play > svg.du-np-pixel-pause-icon {
+  width:48%!important;
+  height:48%!important;
+  display:block!important;
+  flex:0 0 auto!important;
+  pointer-events:none!important;
+}
+html body #duNewspaperDock #duNpPanel button.du-np-pixel-play::after {
+  content:none!important;
+  display:none!important;
+}
