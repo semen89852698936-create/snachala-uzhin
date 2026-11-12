@@ -1601,3 +1601,25 @@ html body.du-evening-mode #evening .du-moods > button.du-mood[data-mood]:is(.is-
   transform:rotate(-.7deg)!important;
   pointer-events:none!important;
 }
+
+
+/* MOOD_MARKER_DRAW_ANIMATION_20261112
+   Animate only the existing selected-card red stroke as though drawn by a felt-tip marker.
+   Do not change the four artworks, selected state, hover behavior, player or layout. */
+@keyframes du-mood-marker-draw-20261112 {
+  0%   { transform:rotate(-.7deg) scaleX(0); opacity:.8; }
+  18%  { transform:rotate(-.7deg) scaleX(.12); opacity:1; }
+  58%  { transform:rotate(-.7deg) scaleX(.63); opacity:1; }
+  100% { transform:rotate(-.7deg) scaleX(1); opacity:1; }
+}
+html body #evening .du-moods > button.du-mood[data-mood]:is(.is-selected,[aria-pressed="true"])::after,
+html body.du-evening-mode #evening .du-moods > button.du-mood[data-mood]:is(.is-selected,[aria-pressed="true"])::after {
+  transform-origin:left center!important;
+  animation:du-mood-marker-draw-20261112 .62s cubic-bezier(.26,.05,.2,1) both!important;
+}
+@media(prefers-reduced-motion:reduce) {
+  html body #evening .du-moods > button.du-mood[data-mood]:is(.is-selected,[aria-pressed="true"])::after,
+  html body.du-evening-mode #evening .du-moods > button.du-mood[data-mood]:is(.is-selected,[aria-pressed="true"])::after {
+    animation:none!important;
+  }
+}
