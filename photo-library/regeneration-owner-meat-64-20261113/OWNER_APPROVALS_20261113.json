@@ -1,0 +1,41 @@
+{
+  "project": "СНАЧАЛА УЖИН",
+  "total_required": 68,
+  "approval_date": "2026-11-13",
+  "approval_source": "User explicitly said «Утверждены» for photos №6,7,11 in chat",
+  "approved": [
+    {
+      "list_number": 6,
+      "recipe_photo_n": 26,
+      "recipe_title": "Говяжьи медальоны с сливками и зелёным перцем",
+      "file": "/photo-library/regeneration-owner-meat-64-20261113/correction-tests/0026-revision1.webp",
+      "approved_by_owner": true
+    },
+    {
+      "list_number": 7,
+      "recipe_photo_n": 28,
+      "recipe_title": "Говяжьи медальоны с черносливом и тмином",
+      "file": "/photo-library/regeneration-owner-meat-64-20261113/correction-tests/0028-revision1.webp",
+      "approved_by_owner": true
+    },
+    {
+      "list_number": 11,
+      "recipe_photo_n": 34,
+      "recipe_title": "Свиная вырезка в духовке с имбирём и соевым соусом",
+      "file": "/photo-library/regeneration-owner-meat-64-20261113/correction-tests/0034-revision1.webp",
+      "approved_by_owner": true
+    }
+  ],
+  "remaining": 65,
+  "remaining_breakdown": {
+    "qa_rejected": 54,
+    "qa_disputed": 3,
+    "qa_prelim_good": 4,
+    "first_four_needing_match": 4
+  },
+  "approval_web_pages": [
+    "/photo-review-approved.html",
+    "/photo-review-all-remaining.html"
+  ],
+  "clarification": "No new images automatically approved. Yes/No selections are saved client-side until user copies them into the chat. Approved visual baseline remains ac1651a2a0c8f03276872c907422eb2d58d1154c."
+}

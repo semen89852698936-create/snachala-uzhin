@@ -1,0 +1,71 @@
+<!doctype html><html lang="ru"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex,nofollow"><meta name="description" content="Внутренняя фотоприёмка проекта СНАЧАЛА УЖИН"><title>Уже утверждённые фотографии · СНАЧАЛА УЖИН</title><style>
+:root{color-scheme:light;--ink:#282522;--muted:#6d645e;--paper:#faf5eb;--bg:#e9e1d6;--maroon:#682e36;--line:#d8cabc;--yes:#257a51;--no:#a54840;font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink)}button,input{font:inherit}
+main{max-width:1570px;margin:0 auto;padding:28px 20px 80px}
+.heading{border-bottom:3px solid var(--maroon);margin-bottom:22px;padding-bottom:18px}
+.kicker{font-size:13px;font-weight:800;letter-spacing:.09em;text-transform:uppercase;color:var(--maroon)}
+h1{font:700 clamp(28px,4.2vw,50px)/1.04 Georgia,"Times New Roman",serif;margin:9px 0 14px}
+.summary{max-width:950px;line-height:1.55;font-size:16px}
+.nav{display:flex;gap:10px;flex-wrap:wrap;margin-top:16px}
+.nav a{color:var(--maroon);border:1px solid var(--maroon);border-radius:5px;text-decoration:none;padding:10px 15px;font-size:15px;font-weight:700;background:#fffdf8}
+.nav a[aria-current=page]{background:var(--maroon);color:white}
+.toolbar{position:sticky;top:0;z-index:10;display:flex;flex-wrap:wrap;gap:12px;align-items:center;justify-content:space-between;background:#faf7f0f4;border:1px solid var(--line);padding:12px 14px;margin-bottom:18px;box-shadow:0 3px 9px #392a2012;backdrop-filter:blur(12px)}
+.filters{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.filter{border:1px solid #cabbaf;border-radius:5px;background:#fff;padding:8px 11px;font-size:13px;cursor:pointer;white-space:nowrap}
+.filter[aria-pressed=true]{background:#51313a;color:#fff;border-color:#51313a}
+.progress{font-size:14px;font-weight:750;color:var(--maroon)}
+.search{min-width:160px;padding:9px 11px;border:1px solid #bdb2a5;border-radius:5px;background:white}
+.gallery{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px;align-items:start}
+.card{border:1px solid var(--line);border-radius:4px;background:#fffdf9;box-shadow:0 2px 8px #2b1b1012;overflow:hidden;min-width:0}
+.card.yes{outline:3px solid #7cb897;outline-offset:-3px}
+.card.no{outline:3px solid #d28a82;outline-offset:-3px}
+.photo{position:relative;aspect-ratio:4/3;background:#d6cec3;overflow:hidden}
+.photo img{width:100%;height:100%;object-fit:cover;display:block;cursor:zoom-in}
+.num{position:absolute;left:10px;top:10px;font-size:20px;font-weight:900;background:#fffef3f5;box-shadow:0 2px 5px #0004;padding:4px 10px;border-radius:3px;color:#512d35;pointer-events:none}
+.cardbody{padding:12px}
+.card h2{font-size:16px;margin:0 0 8px;line-height:1.25;min-height:40px}
+.sub{font-size:12px;color:var(--muted)}
+.status{display:inline-block;padding:4px 8px;font-size:11px;font-weight:800;line-height:1.3;border-radius:3px;border:1px solid #c4b2a7;background:#f1eae3;color:#5a473d;margin:8px 0 3px}
+.status.bad{background:#ffebe8;border-color:#e2b3a8;color:#913a30}.status.question{background:#fff1d2;border-color:#ddc58b;color:#715015}
+.status.candidate{background:#e6f3e9;border-color:#b2d1bb;color:#23623c}.status.approved{background:#e2f3e6;border-color:#a2c9ab;color:#245a39}
+.requirements{font-size:13px;line-height:1.4;margin:9px 0 7px}
+.note{font-size:12px;line-height:1.4;color:#80645d;border-top:1px solid #e9ded3;padding-top:8px;margin:8px 0}
+.choice{display:grid;grid-template-columns:1fr 1fr;gap:9px;margin-top:10px}
+.choice button{cursor:pointer;font-weight:800;border-radius:5px;padding:12px 5px;background:#fff;border:2px solid #bdb0a5;transition:background .12s ease}
+.choice button[data-choice=yes]{border-color:#6cad88;color:#206b46}.choice button[data-choice=no]{border-color:#d59a92;color:#8e3832}
+.choice button[data-choice=yes][aria-pressed=true]{background:var(--yes);color:white;border-color:var(--yes)}
+.choice button[data-choice=no][aria-pressed=true]{background:var(--no);color:white;border-color:var(--no)}
+.actions{margin:24px 0 16px;padding:20px;background:#fffdf8;border:1px solid var(--line);border-radius:5px}
+.actions h2{font-size:20px;margin:0 0 6px}.actions p{font-size:14px;line-height:1.5}
+.actionbar{display:flex;flex-wrap:wrap;gap:10px;margin:14px 0}
+.actionbar button{cursor:pointer;background:var(--maroon);border:1px solid var(--maroon);color:white;border-radius:5px;padding:13px 16px;font-weight:700}
+.actionbar button.secondary{background:white;color:var(--maroon)}
+.result{width:100%;min-height:120px;border:1px solid var(--line);background:#fcf9f4;color:var(--ink);padding:12px;border-radius:4px;font:14px/1.5 ui-monospace,Menlo,Consolas,monospace;resize:vertical}
+.tip{font-size:13px;line-height:1.4;color:var(--muted)}.hide{display:none!important}
+.viewer{border:0;border-radius:5px;background:#1a1715;max-width:97vw;max-height:97vh;padding:16px;color:white}
+.viewer::backdrop{background:#000e}.viewer figure{margin:0}.viewer img{display:block;max-width:92vw;max-height:80vh;object-fit:contain;margin:auto}
+.viewer figcaption{margin-top:7px;text-align:center;font-size:16px}.viewer .close{position:absolute;top:10px;right:10px;border:0;background:white;color:#222;border-radius:50%;width:39px;height:39px;font-size:27px;cursor:pointer}
+footer{font-size:12px;line-height:1.6;color:#736a60;margin-top:34px}
+@media(max-width:1100px){.gallery{grid-template-columns:repeat(3,1fr)}}@media(max-width:750px){main{padding:16px 10px 60px}.gallery{grid-template-columns:repeat(2,1fr);gap:10px}.cardbody{padding:10px}.card h2{font-size:14px;min-height:51px}.toolbar{position:relative;gap:8px}.status{font-size:10px}.requirements{font-size:12px}.choice button{padding:12px 3px}.note{font-size:11px}.summary{font-size:14px}}
+@media(max-width:390px){.gallery{grid-template-columns:1fr}.card h2{min-height:0}}</style></head>
+<body><main><header class="heading"><div class="kicker">Лист 1 · подтверждено пользователем</div><h1>Уже утверждённые фотографии</h1><div class="summary"><p>Три фотографии, которые ты уже посмотрел и утвердил: <strong>№ 6, 7 и 11</strong>. Здесь нет кнопок повторного выбора. Это именно твои утверждения, а не предварительная оценка.</p></div><nav class="nav"><a href="/photo-review-approved.html" aria-current=page>✓ Утверждённые (3)</a><a href="/photo-review-all-remaining.html">Выбор Да/Нет (65)</a></nav></header>
+<div class="gallery" id="gallery"><article class="card" data-number="6" data-search="№ 6. говяжьи медальоны с сливками и зелёным перцем кольца свежего перца сверху; нужен соус с раздавленным перцем." data-status="approved" id="photo-6">
+<div class="photo"><img src="/photo-library/regeneration-owner-meat-64-20261113/correction-tests/0026-revision1.webp" alt="№ 6. Говяжьи медальоны с сливками и зелёным перцем" loading="eager" data-full="/photo-library/regeneration-owner-meat-64-20261113/correction-tests/0026-revision1.webp"><span class="num">06</span></div>
+<div class="cardbody"><h2>Говяжьи медальоны с сливками и зелёным перцем</h2><div class="sub">№ 6 из 68 · фотобаза #26</div><span class="status approved">Утверждено</span>
+<p class="requirements">Говяжьи медальоны ПОЛИТЫ слегка загустевшим СВЕТЛЫМ СЛИВОЧНЫМ соусом с РАЗДАВЛЕННЫМ зелёным перцем. Без целых горошин, без зелёного горошка, без тёмной подливы.</p><p class="note">Кольца свежего перца сверху; нужен соус с раздавленным перцем.</p>
+<p style="color:#28724f;font-weight:800;font-size:13px">✓ Утверждено 13.11.2026</p>
+</div></article><article class="card" data-number="7" data-search="№ 7. говяжьи медальоны с черносливом и тмином цельный чернослив вместо нарезанного соуса." data-status="approved" id="photo-7">
+<div class="photo"><img src="/photo-library/regeneration-owner-meat-64-20261113/correction-tests/0028-revision1.webp" alt="№ 7. Говяжьи медальоны с черносливом и тмином" loading="eager" data-full="/photo-library/regeneration-owner-meat-64-20261113/correction-tests/0028-revision1.webp"><span class="num">07</span></div>
+<div class="cardbody"><h2>Говяжьи медальоны с черносливом и тмином</h2><div class="sub">№ 7 из 68 · фотобаза #28</div><span class="status approved">Утверждено</span>
+<p class="requirements">Говяжьи медальоны, политые густым соусом из мелко НАРЕЗАННОГО тушёного чернослива, в соусе семена тмина. На мясе ничего, кроме соуса.</p><p class="note">Цельный чернослив вместо нарезанного соуса.</p>
+<p style="color:#28724f;font-weight:800;font-size:13px">✓ Утверждено 13.11.2026</p>
+</div></article><article class="card" data-number="11" data-search="№ 11. свиная вырезка в духовке с имбирём и соевым соусом нарезанные полоски имбиря поверх мяса." data-status="approved" id="photo-11">
+<div class="photo"><img src="/photo-library/regeneration-owner-meat-64-20261113/correction-tests/0034-revision1.webp" alt="№ 11. Свиная вырезка в духовке с имбирём и соевым соусом" loading="lazy" data-full="/photo-library/regeneration-owner-meat-64-20261113/correction-tests/0034-revision1.webp"><span class="num">11</span></div>
+<div class="cardbody"><h2>Свиная вырезка в духовке с имбирём и соевым соусом</h2><div class="sub">№ 11 из 68 · фотобаза #34</div><span class="status approved">Утверждено</span>
+<p class="requirements">Запечённая свиная вырезка, политая выпаренным глянцевым соевым соусом с НАТЁРТЫМ имбирём. Никаких видимых кусочков имбиря сверху.</p><p class="note">Нарезанные полоски имбиря поверх мяса.</p>
+<p style="color:#28724f;font-weight:800;font-size:13px">✓ Утверждено 13.11.2026</p>
+</div></article></div>
+<footer>Фотографии показаны для редакторской приёмки и не означают публикацию изменений на основном сайте. Утверждённая визуальная версия сайта остаётся <code>ac1651a2</code>. Ошибки предварительной автоматической/ручной проверки не отменяются нажатием «Да» без итоговой сверки.</footer>
+</main><dialog class="viewer" id="viewer"><button class="close" type="button" aria-label="Закрыть" onclick="document.getElementById('viewer').close()">×</button><figure><img id="largephoto" alt=""><figcaption id="largecaption"></figcaption></figure></dialog>
+<script>document.querySelectorAll(".photo img").forEach(img=>img.addEventListener("click",()=>{const card=img.closest(".card"),dlg=document.getElementById("viewer");document.getElementById("largephoto").src=img.dataset.full;document.getElementById("largephoto").alt=img.alt;document.getElementById("largecaption").textContent="№ "+card.dataset.number+": "+card.querySelector("h2").textContent;dlg.showModal()}));document.getElementById("viewer").addEventListener("click",e=>{if(e.target.tagName==="DIALOG")e.target.close()});</script></body></html>
