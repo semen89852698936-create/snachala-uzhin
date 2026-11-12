@@ -234,13 +234,7 @@
         '<button type="button" class="du-np-main-play" data-np-action="toggle" id="duNpToggle" aria-label="Воспроизвести"><svg class="du-np-svg" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 4L20 12L8 20Z" fill="#fff8ef"/></svg></button>'+
         '<button type="button" data-np-action="next" title="Следующий трек" aria-label="Следующий трек"><svg class="du-np-svg" viewBox="0 0 24 24" aria-hidden="true"><path d="M19 5V19" stroke="#692d42" stroke-width="2" stroke-linecap="round"/><path d="M5 5L16 12L5 19Z" fill="#692d42"/></svg></button>'+
         '</div>'+
-        '<div class="du-np-timeline"><span id="duNpElapsed">0:00</span>'+
-        '<input type="range" id="duNpSeek" min="0" max="14" value="0" step=".1" aria-label="Перемотка композиции">'+
-        '<span id="duNpTotal">0:14</span></div>'+
-        '<div class="du-np-bottom"><label for="duNpVolume">♫ Громкость</label>'+
-        '<input type="range" id="duNpVolume" min="0" max="100" value="65" aria-label="Громкость" />'+
-        '<span id="duNpCount">01 / 02</span></div>'+
-        '<p class="du-np-notice">Kevin MacLeod (incompetech.com) · <a href="/music/credits.html" target="_blank" rel="noopener noreferrer">Авторство и все 40 записей</a> · <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener noreferrer">CC BY 4.0</a></p>'+ '<button type="button" class="du-np-popout" data-np-action="popout" title="Отдельное окно продолжает играть при переходах по сайту" aria-label="Открыть отдельное музыкальное окно для непрерывного прослушивания">↗ Отдельное окно</button>'+
+        '<button type="button" class="du-np-popout" data-np-action="popout" title="Отдельное окно продолжает играть при переходах по сайту" aria-label="Открыть отдельное музыкальное окно для непрерывного прослушивания">↗ Отдельное окно</button>'+
         '<div class="du-np-print-colophon" aria-hidden="true"><span>СЛУШАЙ. ГОТОВЬ. БУДЬ ВДВОЁМ.</span><span>СПЕЦИАЛЬНЫЙ ВЫПУСК ДЛЯ ВАШЕГО ВЕЧЕРА</span></div>'+ '<p class="du-np-feedback" role="status" hidden></p>'+
         '</div>'+
       '</section>'+
@@ -257,7 +251,7 @@
       if(suggestions){
         suggestions.replaceChildren();
         const summary=document.createElement('summary');
-        summary.append(document.createTextNode(licensedTracks.length+' композиций '));
+        summary.append(document.createTextNode('Список композиций '));
         const arrow=document.createElement('span');arrow.setAttribute('aria-hidden','true');arrow.textContent='⌄';summary.appendChild(arrow);
         suggestions.appendChild(summary);
         const list=document.createElement('ol');list.className='du-bpm-track-list';
@@ -277,7 +271,7 @@
       const node=document.createElement('div');
       node.className='du-np-inline';node.innerHTML=sheetMarkup(phase);
       const total=$('.du-music-total',card);
-      if(total)total.insertAdjacentElement('afterend',node);
+      if(total){total.hidden=true;total.insertAdjacentElement('afterend',node);}
       else card.appendChild(node);
     });
     // The embedded Spotify audio is not relevant to the Russian market.
@@ -285,12 +279,68 @@
     $$('#music .du-music-spotify-extra iframe').forEach(node=>node.remove());
     $$('#music .du-music-spotify-extra').forEach(node=>node.hidden=true);
     const legal=$('#music .du-music-legal');
-    if(legal) legal.textContent='В нашем плеере 40 записей Kevin MacLeod по Creative Commons Attribution 4.0, с обязательным указанием автора. Другие 20 произведений не воспроизводятся. Условия и ссылки доступны в музыкальном плеере.';
+    if(legal)legal.remove();
     const dock=document.createElement('div');
     dock.innerHTML=floatingMarkup();
     document.body.appendChild(dock.firstElementChild);
     if(document.body.classList.contains('du-np-standalone'))state.panelOpen=true;
     render();
+  }
+
+  // Keep the floating newspaper on screen while playback compacts it to 50%.
+  // Moving the dock never recreates the audio element or changes its state.
+  let dockMovedByUser=false;
+  let lastDockLayout='';
+  function positionFloatingPlayer() {
+    if(document.body.classList.contains('du-np-standalone'))return;
+    const dock=$('#duNewspaperDock');
+    if(!dock)return;
+    const scale=state.playing?.5:1;
+    dock.style.setProperty('--du-player-scale',String(scale));
+    dock.classList.add('du-np-free-position');
+    const gutter=8;
+    const maxX=Math.max(gutter,window.innerWidth-dock.offsetWidth*scale-gutter);
+    const maxY=Math.max(gutter,window.innerHeight-dock.offsetHeight*scale-gutter);
+    const savedX=parseFloat(dock.style.getPropertyValue('--du-player-left'));
+    const savedY=parseFloat(dock.style.getPropertyValue('--du-player-top'));
+    const x=dockMovedByUser&&Number.isFinite(savedX)?savedX:16;
+    const y=dockMovedByUser&&Number.isFinite(savedY)?savedY:maxY;
+    dock.style.setProperty('--du-player-left',Math.max(gutter,Math.min(maxX,x))+'px');
+    dock.style.setProperty('--du-player-top',Math.max(gutter,Math.min(maxY,y))+'px');
+  }
+  function enablePlayerDragging() {
+    if(document.body.classList.contains('du-np-standalone'))return;
+    const dock=$('#duNewspaperDock');
+    const handle=dock?.querySelector('.du-np-top');
+    if(!dock||!handle)return;
+    let drag=null;
+    handle.addEventListener('pointerdown',event=>{
+      if(event.pointerType==='mouse'&&event.button!==0)return;
+      if(event.target.closest('button,a,input'))return;
+      positionFloatingPlayer();
+      const bounds=dock.getBoundingClientRect();
+      drag={id:event.pointerId,startX:event.clientX,startY:event.clientY,left:bounds.left,top:bounds.top,active:false};
+      handle.setPointerCapture(event.pointerId);
+      event.preventDefault();
+    });
+    handle.addEventListener('pointermove',event=>{
+      if(!drag||drag.id!==event.pointerId)return;
+      const dx=event.clientX-drag.startX,dy=event.clientY-drag.startY;
+      if(!drag.active&&Math.abs(dx)+Math.abs(dy)<4)return;
+      drag.active=true;
+      dockMovedByUser=true;
+      const scale=state.playing?.5:1;
+      const gutter=8;
+      const maxX=Math.max(gutter,window.innerWidth-dock.offsetWidth*scale-gutter);
+      const maxY=Math.max(gutter,window.innerHeight-dock.offsetHeight*scale-gutter);
+      dock.style.setProperty('--du-player-left',Math.max(gutter,Math.min(maxX,drag.left+dx))+'px');
+      dock.style.setProperty('--du-player-top',Math.max(gutter,Math.min(maxY,drag.top+dy))+'px');
+    });
+    const finish=event=>{if(drag?.id===event.pointerId)drag=null;};
+    handle.addEventListener('pointerup',finish);
+    handle.addEventListener('pointercancel',finish);
+    handle.addEventListener('lostpointercapture',()=>{drag=null;});
+    window.addEventListener('resize',positionFloatingPlayer);
   }
   function render() {
     const item=current(),label=phaseData()?.label || '';
@@ -303,15 +353,13 @@
     launcher.classList.toggle('du-np-is-playing',state.playing);
     launcher.innerHTML='<span>♫</span> '+(state.playing?'Играет':'Музыка');
     const trackEl=$('#duNpTrack'),sub=$('#duNpSub'),toggle=$('#duNpToggle');
-    if(trackEl)trackEl.textContent=item?.title||'Музыкальная газета';
-    if(sub)sub.textContent=label+(item?' · '+item.bpm+' BPM · Kevin MacLeod':'');
+    if(trackEl)trackEl.textContent=item?'Kevin MacLeod - '+item.title:'Музыкальная газета';
+    if(sub)sub.textContent=label+(item?' · '+item.bpm+' BPM':'');
     if(toggle){toggle.innerHTML=playSymbol;toggle.setAttribute('aria-label',state.playing?'Пауза':'Воспроизвести');}
     const seek=$('#duNpSeek');if(seek){seek.max=currentDuration;seek.value=Math.min(currentDuration,elapsed);}
     if($('#duNpElapsed'))$('#duNpElapsed').textContent=timeText(elapsed);
     if($('#duNpTotal'))$('#duNpTotal').textContent=timeText(currentDuration);
     if($('#duNpVolume'))$('#duNpVolume').value=Math.round(state.volume*100);
-    if($('#duNpCount'))$('#duNpCount').textContent=
-      String(state.index+1).padStart(2,'0')+' / '+String(tracks().length).padStart(2,'0');
     $$('.du-np-tabs button').forEach(btn=>btn.setAttribute('aria-pressed',String(btn.dataset.npPhase===state.phase)));
     $$('.du-np-start').forEach(btn=>{
       const selected=btn.dataset.npPhase===state.phase;
@@ -320,11 +368,12 @@
     });
     $$('.du-np-trackline').forEach(el=>{
       const phase=el.dataset.npInlineTrack;
-      const list=state.manifest?.playlists[phase]?.tracks||[];
-      el.textContent=phase===state.phase&&state.started?(item?.title||'')+' · '+item?.bpm+' BPM':
-        list.length+' композиций Kevin MacLeod';
+      el.textContent=phase===state.phase&&state.started&&item?'Kevin MacLeod - '+item.title:
+        'Музыка Kevin MacLeod · CC BY 4.0';
     });
     if(state.error)announce(state.error);
+    const dockLayout=(state.panelOpen?'open':'closed')+'|'+(state.playing?'half':'full');
+    if(dockLayout!==lastDockLayout){lastDockLayout=dockLayout;positionFloatingPlayer();}
   }
   function installEvents() {
     document.addEventListener('click',event=>{
@@ -386,6 +435,7 @@
         if(Number.isFinite(volume)&&params.has('volume'))state.volume=Math.max(0,Math.min(1,volume/100));
       }
       build();
+      enablePlayerDragging();
       installEvents();
       window.duNewspaperPlayer={
         getState:()=>({phase:state.phase,index:state.index,playing:state.playing,
