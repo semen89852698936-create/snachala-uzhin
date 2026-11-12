@@ -10,7 +10,7 @@
   const PHASES = ['kitchen', 'dinner', 'after'];
   const DEMO_SECONDS = 14;
   const state = {
-    manifest:null, phase:'kitchen', index:0, playing:false, started:false,
+    manifest:null, phase:'dinner', index:6, playing:false, started:false,
     elapsed:0, volume:.65, ctx:null, master:null, voices:[], audio:null,
     anchor:0, clock:null, pending:false, panelOpen:false,
     error:'', demo:true, shuffleQueue:[], shufflePosition:0
@@ -255,35 +255,30 @@
     '</div></div>';
   }
   function floatingMarkup() {
-    return '<div class="du-np-dock" id="duNewspaperDock">'+
-      '<button class="du-np-launcher" id="duNpLauncher" type="button" aria-controls="duNpPanel" aria-expanded="false"><span>♫</span> Музыка</button>'+
-      '<section class="du-np-dock-body" id="duNpPanel" aria-label="Собственный музыкальный плеер" hidden>'+
-        '<div class="du-np-dock-paper">'+
-        '<header class="du-np-top"><div class="du-np-masthead"><small>МУЗЫКА ДЛЯ ДВОИХ</small><strong>СНАЧАЛА УЖИН</strong><span class="du-np-edition">ТРИ ГЛАВЫ · ОДИН ВЕЧЕР</span></div>'+
-        '<button class="du-np-close" type="button" data-np-action="close" aria-label="Свернуть плеер">×</button></header>'+
-        '<nav class="du-np-tabs" aria-label="Выбери настроение">'+
-        '<button type="button" data-np-action="tab" data-np-phase="kitchen">Готовить</button>'+
-        '<button type="button" data-np-action="tab" data-np-phase="dinner">Ужинать</button>'+
-        '<button type="button" data-np-action="tab" data-np-phase="after">Продолжить</button>'+
-        '</nav>'+
-        '<div class="du-np-now"><span class="du-np-stamp" id="duNpDemoStamp">CC BY</span>'+
-        '<strong id="duNpTrack">Музыкальная газета</strong>'+
-        '<small id="duNpSub">Kevin MacLeod · CC BY 4.0</small></div>'+
-        '<div class="du-np-transport">'+
-        '<button type="button" data-np-action="previous" title="Предыдущий трек" aria-label="Предыдущий трек"><svg class="du-np-svg" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 5V19" stroke="#692d42" stroke-width="2" stroke-linecap="round"/><path d="M19 5L8 12L19 19Z" fill="#692d42"/></svg></button>'+
-        '<button type="button" class="du-np-main-play" data-np-action="toggle" id="duNpToggle" aria-label="Воспроизвести"><svg class="du-np-svg" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 4L20 12L8 20Z" fill="#fff8ef"/></svg></button>'+
-        '<button type="button" data-np-action="next" title="Следующий трек" aria-label="Следующий трек"><svg class="du-np-svg" viewBox="0 0 24 24" aria-hidden="true"><path d="M19 5V19" stroke="#692d42" stroke-width="2" stroke-linecap="round"/><path d="M5 5L16 12L5 19Z" fill="#692d42"/></svg></button>'+
-        '</div>'+
-        '<div class="du-np-timeline"><span id="duNpElapsed">0:00</span>'+
-        '<input type="range" id="duNpSeek" min="0" max="14" value="0" step=".1" aria-label="Перемотка композиции">'+
-        '<span id="duNpTotal">0:14</span></div>'+
-        '<div class="du-np-bottom"><label for="duNpVolume"><svg class="du-np-volume-icon" viewBox="0 0 28 28" aria-hidden="true"><path d="M3 11h5l7-6v18l-7-6H3z" fill="#3d2422"/><path d="M19 9q8 5 0 10M21 5q12 9 0 18" fill="none" stroke="#3d2422" stroke-width="2.3" stroke-linecap="round"/></svg><span class="du-np-sr-only">Громкость</span></label>'+
-        '<input type="range" id="duNpVolume" min="0" max="100" value="65" aria-label="Громкость" /></div>'+
-        '<button type="button" class="du-np-popout" data-np-action="popout" title="Отдельное окно продолжает играть при переходах по сайту" aria-label="Открыть отдельное музыкальное окно для непрерывного прослушивания"><svg class="du-np-popout-icon" viewBox="0 0 28 28" aria-hidden="true"><path d="M17 4h7v7M24 4 12 16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round"/><path d="M12 6H5v17h17v-7" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round"/></svg><span>Отдельное окно</span></button>'+
-        '<div class="du-np-print-colophon" aria-hidden="true"><span>СЛУШАЙ. ГОТОВЬ. БУДЬ ВДВОЁМ.</span><span>СПЕЦИАЛЬНЫЙ ВЫПУСК ДЛЯ ВАШЕГО ВЕЧЕРА</span></div>'+ '<p class="du-np-feedback" role="status" hidden></p>'+
-        '</div>'+
-      '</section>'+
-    '</div>';
+    // Exact user-approved picture, with only the issue number removed.
+    // Buttons and sliders are transparent hit areas aligned with the
+    // 2048 × 682 source image, not a CSS imitation of its artwork.
+    return '<div class="du-np-dock du-np-pixel-player" id="duNewspaperDock">'+
+      '<button class="du-np-launcher" id="duNpLauncher" type="button" aria-controls="duNpPanel" aria-expanded="false">♫ Музыка</button>'+
+      '<section class="du-np-dock-body" id="duNpPanel" aria-label="Музыкальный плеер СНАЧАЛА УЖИН" hidden>'+
+      '<div class="du-np-approved-stage" id="duNpApprovedStage">'+
+      '<img class="du-np-approved-image" src="/assets/approved-newspaper-player-noissue-20261112.webp" width="2048" height="682" alt="" draggable="false" />'+
+      '<header class="du-np-top du-np-pixel-drag" title="Перетащить плеер за газету" aria-label="Переместить плеер"></header>'+
+      '<button type="button" class="du-np-pixel-tab du-np-pixel-tab-kitchen" data-np-action="tab" data-np-phase="kitchen" aria-label="Под что готовить">Готовить</button>'+
+      '<button type="button" class="du-np-pixel-tab du-np-pixel-tab-dinner" data-np-action="tab" data-np-phase="dinner" aria-label="Под что ужинать">Ужинать</button>'+
+      '<button type="button" class="du-np-pixel-tab du-np-pixel-tab-after" data-np-action="tab" data-np-phase="after" aria-label="Под что продолжить">Продолжить</button>'+
+      '<div class="du-np-pixel-live-title"><strong id="duNpTrack"></strong><small id="duNpSub"></small></div>'+
+      '<button type="button" class="du-np-pixel-prev" data-np-action="previous" aria-label="Предыдущая композиция"></button>'+
+      '<button type="button" class="du-np-pixel-play" data-np-action="toggle" id="duNpToggle" aria-label="Воспроизвести"></button>'+
+      '<button type="button" class="du-np-pixel-next" data-np-action="next" aria-label="Следующая композиция"></button>'+
+      '<div class="du-np-pixel-seek"><span id="duNpElapsed">0:00</span>'+
+      '<input type="range" id="duNpSeek" aria-label="Перемотка композиции" min="0" max="411" value="0" step=".1" />'+
+      '<span id="duNpTotal">6:51</span></div>'+
+      '<div class="du-np-pixel-volume"><label for="duNpVolume" class="du-np-sr-only">Громкость</label>'+
+      '<input type="range" id="duNpVolume" aria-label="Громкость" min="0" max="100" value="65" /></div>'+
+      '<button type="button" class="du-np-pixel-popout" data-np-action="popout" aria-label="Открыть музыкальный плеер в отдельном окне"></button>'+
+      '<p class="du-np-feedback" role="status" hidden></p>'+
+      '</div></section></div>';
   }
   function build() {
     $$('#music .du-music-card[data-music-phase]').forEach(card => {
@@ -413,7 +408,18 @@
     const trackEl=$('#duNpTrack'),sub=$('#duNpSub'),toggle=$('#duNpToggle');
     if(trackEl)trackEl.textContent=item?(item.artist||'Kevin MacLeod')+' - '+item.title:'Музыкальная газета';
     if(sub)sub.textContent=label;
-    if(toggle){toggle.innerHTML=playSymbol;toggle.setAttribute('aria-label',state.playing?'Пауза':'Воспроизвести');}
+    if(toggle){
+      toggle.setAttribute('aria-label',state.playing?'Пауза':'Воспроизвести');
+      toggle.setAttribute('aria-pressed',String(state.playing));
+    }
+    const pixelStage=$('#duNpApprovedStage');
+    if(pixelStage){
+      pixelStage.classList.toggle('du-np-live',state.started||state.phase!=='dinner'||item?.title!=='Vibing Over Venus');
+      pixelStage.classList.toggle('du-np-playing',state.playing);
+      pixelStage.classList.toggle('du-np-volume-touched',Math.abs(state.volume-.65)>.005);
+      pixelStage.dataset.phase=state.phase;
+      $$('.du-np-pixel-tab').forEach(btn=>btn.setAttribute('aria-pressed',String(btn.dataset.npPhase===state.phase)));
+    }
     const seek=$('#duNpSeek');if(seek){seek.max=currentDuration;seek.value=Math.min(currentDuration,elapsed);}
     if($('#duNpElapsed'))$('#duNpElapsed').textContent=timeText(elapsed);
     if($('#duNpTotal'))$('#duNpTotal').textContent=timeText(currentDuration);
@@ -453,7 +459,11 @@
         startRandomPlaylist(btn.dataset.npPhase,true).catch(()=>{});
         return;
       }
-      if(action==='toggle'){(state.playing?Promise.resolve(pause()):play()).catch(()=>{});return;}
+      if(action==='toggle'){
+        (state.playing ? Promise.resolve(pause()) :
+          !state.started ? startRandomPlaylist(state.phase,true) : play()).catch(()=>{});
+        return;
+      }
       if(action==='next'){next().catch(()=>{});return;}
       if(action==='previous'){previous().catch(()=>{});}
     });
@@ -495,8 +505,11 @@
         const initial=state.index;
         state.shuffleQueue=[initial,...shuffledIndices(tracks().length).filter(i=>i!==initial)];
       }else{
-        state.shuffleQueue=shuffledIndices(tracks().length);
-        state.index=state.shuffleQueue[0];
+        // The approved image shows the dinner chapter and the track
+        // "Vibing Over Venus". Keep that exact artwork on first render.
+        const approved=tracks().findIndex(track=>track.title==='Vibing Over Venus');
+        state.index=approved>=0?approved:0;
+        state.shuffleQueue=[state.index,...shuffledIndices(tracks().length).filter(i=>i!==state.index)];
       }
       state.shufflePosition=0;
       build();
