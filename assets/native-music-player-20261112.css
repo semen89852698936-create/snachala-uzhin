@@ -917,3 +917,11 @@ html body.du-np-standalone #duNewspaperDock.du-np-dock {
 html body.du-np-standalone #duNewspaperDock.du-np-dock {
   width:min(620px,100%)!important;
 }
+
+/* Visible CC BY credits without changing the approved newspaper layout. */
+html body #duNewspaperDock #duNpPanel .du-np-notice a {
+  color:#752840!important;
+  text-decoration:underline!important;
+  text-underline-offset:2px;
+  font-weight:800;
+}
