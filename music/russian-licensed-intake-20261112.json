@@ -23,7 +23,8 @@
   "rightsNotes": [
     "Tunguska: Wikimedia Commons per-file CC BY-SA 3.0 supported by official Wikimedia Russia 2014 release.",
     "Naumenko: official USC label describes CC BY-SA 4.0; Internet Archive metadata displays CC BY-SA 3.0 for same release. Reconcile attribution and license version on media source.",
-    "Dark Antey: artist credits claim CC BY 4.0 commercial permission but Bandcamp page footer reads all rights reserved. Resolve explicitly before any playback; no stable direct media files available."
+    "Dark Antey: artist credits claim CC BY 4.0 commercial permission but Bandcamp page footer reads all rights reserved. Resolve explicitly before any playback; no stable direct media files available.",
+    "2026-11-12 Dark Antey: official Bandcamp album credits explicitly permit commercial projects under CC BY 4.0 for all 15 + 11 tracks; the 'all rights reserved' license field conflicts. Keep publication blocked under user's 'бесспорно разрешены' criterion until contradiction is resolved or re-licensed files independently verified."
   ],
   "tracks": [
     {
@@ -469,8 +470,21 @@
         "commercialUseVerified": false
       },
       "tempoBpm": null,
-      "reviewStatus": "rights-conflict-no-permanent-audio-url",
-      "audible": false
+      "reviewStatus": "official-author-CCBY4-grant-exists-but-provider-license-label-conflicts-and-audio-unavailable",
+      "audible": false,
+      "licenseEvidence": {
+        "evidenceType": "explicit artist-published album credits",
+        "album": "Silent Depths",
+        "albumUrl": "https://darkantey.bandcamp.com/album/silent-depths",
+        "licenseStatement": "CC BY 4.0; use in personal, creative and commercial projects permitted with author credit",
+        "authorCredit": "Music by Dark Antey",
+        "providerMetadata": "all rights reserved",
+        "metadataConflictUnresolved": true,
+        "verifiedOn": "2026-11-12",
+        "commercialUseGrantByAuthor": true
+      },
+      "downloadStatus": "cannot retrieve original full tracks via automated Bandcamp request; browser challenge and email/download flow",
+      "publishStatus": "hold-until-verified-full-audio-assets-and-license-clarity"
     },
     {
       "id": "dark-antey-silent-depths-02",
@@ -486,8 +500,21 @@
         "commercialUseVerified": false
       },
       "tempoBpm": null,
-      "reviewStatus": "rights-conflict-no-permanent-audio-url",
-      "audible": false
+      "reviewStatus": "official-author-CCBY4-grant-exists-but-provider-license-label-conflicts-and-audio-unavailable",
+      "audible": false,
+      "licenseEvidence": {
+        "evidenceType": "explicit artist-published album credits",
+        "album": "Silent Depths",
+        "albumUrl": "https://darkantey.bandcamp.com/album/silent-depths",
+        "licenseStatement": "CC BY 4.0; use in personal, creative and commercial projects permitted with author credit",
+        "authorCredit": "Music by Dark Antey",
+        "providerMetadata": "all rights reserved",
+        "metadataConflictUnresolved": true,
+        "verifiedOn": "2026-11-12",
+        "commercialUseGrantByAuthor": true
+      },
+      "downloadStatus": "cannot retrieve original full tracks via automated Bandcamp request; browser challenge and email/download flow",
+      "publishStatus": "hold-until-verified-full-audio-assets-and-license-clarity"
     },
     {
       "id": "dark-antey-silent-depths-03",
@@ -503,8 +530,21 @@
         "commercialUseVerified": false
       },
       "tempoBpm": null,
-      "reviewStatus": "rights-conflict-no-permanent-audio-url",
-      "audible": false
+      "reviewStatus": "official-author-CCBY4-grant-exists-but-provider-license-label-conflicts-and-audio-unavailable",
+      "audible": false,
+      "licenseEvidence": {
+        "evidenceType": "explicit artist-published album credits",
+        "album": "Silent Depths",
+        "albumUrl": "https://darkantey.bandcamp.com/album/silent-depths",
+        "licenseStatement": "CC BY 4.0; use in personal, creative and commercial projects permitted with author credit",
+        "authorCredit": "Music by Dark Antey",
+        "providerMetadata": "all rights reserved",
+        "metadataConflictUnresolved": true,
+        "verifiedOn": "2026-11-12",
+        "commercialUseGrantByAuthor": true
+      },
+      "downloadStatus": "cannot retrieve original full tracks via automated Bandcamp request; browser challenge and email/download flow",
+      "publishStatus": "hold-until-verified-full-audio-assets-and-license-clarity"
     },
     {
       "id": "dark-antey-silent-depths-04",
@@ -520,8 +560,21 @@
         "commercialUseVerified": false
       },
       "tempoBpm": null,
-      "reviewStatus": "rights-conflict-no-permanent-audio-url",
-      "audible": false
+      "reviewStatus": "official-author-CCBY4-grant-exists-but-provider-license-label-conflicts-and-audio-unavailable",
+      "audible": false,
+      "licenseEvidence": {
+        "evidenceType": "explicit artist-published album credits",
+        "album": "Silent Depths",
+        "albumUrl": "https://darkantey.bandcamp.com/album/silent-depths",
+        "licenseStatement": "CC BY 4.0; use in personal, creative and commercial projects permitted with author credit",
+        "authorCredit": "Music by Dark Antey",
+        "providerMetadata": "all rights reserved",
+        "metadataConflictUnresolved": true,
+        "verifiedOn": "2026-11-12",
+        "commercialUseGrantByAuthor": true
+      },
+      "downloadStatus": "cannot retrieve original full tracks via automated Bandcamp request; browser challenge and email/download flow",
+      "publishStatus": "hold-until-verified-full-audio-assets-and-license-clarity"
     },
     {
       "id": "dark-antey-silent-depths-05",
@@ -537,8 +590,21 @@
         "commercialUseVerified": false
       },
       "tempoBpm": null,
-      "reviewStatus": "rights-conflict-no-permanent-audio-url",
-      "audible": false
+      "reviewStatus": "official-author-CCBY4-grant-exists-but-provider-license-label-conflicts-and-audio-unavailable",
+      "audible": false,
+      "licenseEvidence": {
+        "evidenceType": "explicit artist-published album credits",
+        "album": "Silent Depths",
+        "albumUrl": "https://darkantey.bandcamp.com/album/silent-depths",
+        "licenseStatement": "CC BY 4.0; use in personal, creative and commercial projects permitted with author credit",
+        "authorCredit": "Music by Dark Antey",
+        "providerMetadata": "all rights reserved",
+        "metadataConflictUnresolved": true,
+        "verifiedOn": "2026-11-12",
+        "commercialUseGrantByAuthor": true
+      },
+      "downloadStatus": "cannot retrieve original full tracks via automated Bandcamp request; browser challenge and email/download flow",
+      "publishStatus": "hold-until-verified-full-audio-assets-and-license-clarity"
     },
     {
       "id": "dark-antey-silent-depths-06",
@@ -554,8 +620,21 @@
         "commercialUseVerified": false
       },
       "tempoBpm": null,
-      "reviewStatus": "rights-conflict-no-permanent-audio-url",
-      "audible": false
+      "reviewStatus": "official-author-CCBY4-grant-exists-but-provider-license-label-conflicts-and-audio-unavailable",
+      "audible": false,
+      "licenseEvidence": {
+        "evidenceType": "explicit artist-published album credits",
+        "album": "Silent Depths",
+        "albumUrl": "https://darkantey.bandcamp.com/album/silent-depths",
+        "licenseStatement": "CC BY 4.0; use in personal, creative and commercial projects permitted with author credit",
+        "authorCredit": "Music by Dark Antey",
+        "providerMetadata": "all rights reserved",
+        "metadataConflictUnresolved": true,
+        "verifiedOn": "2026-11-12",
+        "commercialUseGrantByAuthor": true
+      },
+      "downloadStatus": "cannot retrieve original full tracks via automated Bandcamp request; browser challenge and email/download flow",
+      "publishStatus": "hold-until-verified-full-audio-assets-and-license-clarity"
     },
     {
       "id": "dark-antey-silent-depths-07",
@@ -571,8 +650,21 @@
         "commercialUseVerified": false
       },
       "tempoBpm": null,
-      "reviewStatus": "rights-conflict-no-permanent-audio-url",
-      "audible": false
+      "reviewStatus": "official-author-CCBY4-grant-exists-but-provider-license-label-conflicts-and-audio-unavailable",
+      "audible": false,
+      "licenseEvidence": {
+        "evidenceType": "explicit artist-published album credits",
+        "album": "Silent Depths",
+        "albumUrl": "https://darkantey.bandcamp.com/album/silent-depths",
+        "licenseStatement": "CC BY 4.0; use in personal, creative and commercial projects permitted with author credit",
+        "authorCredit": "Music by Dark Antey",
+        "providerMetadata": "all rights reserved",
+        "metadataConflictUnresolved": true,
+        "verifiedOn": "2026-11-12",
+        "commercialUseGrantByAuthor": true
+      },
+      "downloadStatus": "cannot retrieve original full tracks via automated Bandcamp request; browser challenge and email/download flow",
+      "publishStatus": "hold-until-verified-full-audio-assets-and-license-clarity"
     },
     {
       "id": "dark-antey-silent-depths-08",
@@ -588,8 +680,21 @@
         "commercialUseVerified": false
       },
       "tempoBpm": null,
-      "reviewStatus": "rights-conflict-no-permanent-audio-url",
-      "audible": false
+      "reviewStatus": "official-author-CCBY4-grant-exists-but-provider-license-label-conflicts-and-audio-unavailable",
+      "audible": false,
+      "licenseEvidence": {
+        "evidenceType": "explicit artist-published album credits",
+        "album": "Silent Depths",
+        "albumUrl": "https://darkantey.bandcamp.com/album/silent-depths",
+        "licenseStatement": "CC BY 4.0; use in personal, creative and commercial projects permitted with author credit",
+        "authorCredit": "Music by Dark Antey",
+        "providerMetadata": "all rights reserved",
+        "metadataConflictUnresolved": true,
+        "verifiedOn": "2026-11-12",
+        "commercialUseGrantByAuthor": true
+      },
+      "downloadStatus": "cannot retrieve original full tracks via automated Bandcamp request; browser challenge and email/download flow",
+      "publishStatus": "hold-until-verified-full-audio-assets-and-license-clarity"
     },
     {
       "id": "dark-antey-silent-depths-09",
@@ -605,8 +710,21 @@
         "commercialUseVerified": false
       },
       "tempoBpm": null,
-      "reviewStatus": "rights-conflict-no-permanent-audio-url",
-      "audible": false
+      "reviewStatus": "official-author-CCBY4-grant-exists-but-provider-license-label-conflicts-and-audio-unavailable",
+      "audible": false,
+      "licenseEvidence": {
+        "evidenceType": "explicit artist-published album credits",
+        "album": "Silent Depths",
+        "albumUrl": "https://darkantey.bandcamp.com/album/silent-depths",
+        "licenseStatement": "CC BY 4.0; use in personal, creative and commercial projects permitted with author credit",
+        "authorCredit": "Music by Dark Antey",
+        "providerMetadata": "all rights reserved",
+        "metadataConflictUnresolved": true,
+        "verifiedOn": "2026-11-12",
+        "commercialUseGrantByAuthor": true
+      },
+      "downloadStatus": "cannot retrieve original full tracks via automated Bandcamp request; browser challenge and email/download flow",
+      "publishStatus": "hold-until-verified-full-audio-assets-and-license-clarity"
     },
     {
       "id": "dark-antey-silent-depths-10",
@@ -622,8 +740,21 @@
         "commercialUseVerified": false
       },
       "tempoBpm": null,
-      "reviewStatus": "rights-conflict-no-permanent-audio-url",
-      "audible": false
+      "reviewStatus": "official-author-CCBY4-grant-exists-but-provider-license-label-conflicts-and-audio-unavailable",
+      "audible": false,
+      "licenseEvidence": {
+        "evidenceType": "explicit artist-published album credits",
+        "album": "Silent Depths",
+        "albumUrl": "https://darkantey.bandcamp.com/album/silent-depths",
+        "licenseStatement": "CC BY 4.0; use in personal, creative and commercial projects permitted with author credit",
+        "authorCredit": "Music by Dark Antey",
+        "providerMetadata": "all rights reserved",
+        "metadataConflictUnresolved": true,
+        "verifiedOn": "2026-11-12",
+        "commercialUseGrantByAuthor": true
+      },
+      "downloadStatus": "cannot retrieve original full tracks via automated Bandcamp request; browser challenge and email/download flow",
+      "publishStatus": "hold-until-verified-full-audio-assets-and-license-clarity"
     },
     {
       "id": "dark-antey-silent-depths-11",
@@ -639,8 +770,21 @@
         "commercialUseVerified": false
       },
       "tempoBpm": null,
-      "reviewStatus": "rights-conflict-no-permanent-audio-url",
-      "audible": false
+      "reviewStatus": "official-author-CCBY4-grant-exists-but-provider-license-label-conflicts-and-audio-unavailable",
+      "audible": false,
+      "licenseEvidence": {
+        "evidenceType": "explicit artist-published album credits",
+        "album": "Silent Depths",
+        "albumUrl": "https://darkantey.bandcamp.com/album/silent-depths",
+        "licenseStatement": "CC BY 4.0; use in personal, creative and commercial projects permitted with author credit",
+        "authorCredit": "Music by Dark Antey",
+        "providerMetadata": "all rights reserved",
+        "metadataConflictUnresolved": true,
+        "verifiedOn": "2026-11-12",
+        "commercialUseGrantByAuthor": true
+      },
+      "downloadStatus": "cannot retrieve original full tracks via automated Bandcamp request; browser challenge and email/download flow",
+      "publishStatus": "hold-until-verified-full-audio-assets-and-license-clarity"
     },
     {
       "id": "dark-antey-silent-depths-12",
@@ -656,8 +800,21 @@
         "commercialUseVerified": false
       },
       "tempoBpm": null,
-      "reviewStatus": "rights-conflict-no-permanent-audio-url",
-      "audible": false
+      "reviewStatus": "official-author-CCBY4-grant-exists-but-provider-license-label-conflicts-and-audio-unavailable",
+      "audible": false,
+      "licenseEvidence": {
+        "evidenceType": "explicit artist-published album credits",
+        "album": "Silent Depths",
+        "albumUrl": "https://darkantey.bandcamp.com/album/silent-depths",
+        "licenseStatement": "CC BY 4.0; use in personal, creative and commercial projects permitted with author credit",
+        "authorCredit": "Music by Dark Antey",
+        "providerMetadata": "all rights reserved",
+        "metadataConflictUnresolved": true,
+        "verifiedOn": "2026-11-12",
+        "commercialUseGrantByAuthor": true
+      },
+      "downloadStatus": "cannot retrieve original full tracks via automated Bandcamp request; browser challenge and email/download flow",
+      "publishStatus": "hold-until-verified-full-audio-assets-and-license-clarity"
     },
     {
       "id": "dark-antey-silent-depths-13",
@@ -673,8 +830,21 @@
         "commercialUseVerified": false
       },
       "tempoBpm": null,
-      "reviewStatus": "rights-conflict-no-permanent-audio-url",
-      "audible": false
+      "reviewStatus": "official-author-CCBY4-grant-exists-but-provider-license-label-conflicts-and-audio-unavailable",
+      "audible": false,
+      "licenseEvidence": {
+        "evidenceType": "explicit artist-published album credits",
+        "album": "Silent Depths",
+        "albumUrl": "https://darkantey.bandcamp.com/album/silent-depths",
+        "licenseStatement": "CC BY 4.0; use in personal, creative and commercial projects permitted with author credit",
+        "authorCredit": "Music by Dark Antey",
+        "providerMetadata": "all rights reserved",
+        "metadataConflictUnresolved": true,
+        "verifiedOn": "2026-11-12",
+        "commercialUseGrantByAuthor": true
+      },
+      "downloadStatus": "cannot retrieve original full tracks via automated Bandcamp request; browser challenge and email/download flow",
+      "publishStatus": "hold-until-verified-full-audio-assets-and-license-clarity"
     },
     {
       "id": "dark-antey-silent-depths-14",
@@ -690,8 +860,21 @@
         "commercialUseVerified": false
       },
       "tempoBpm": null,
-      "reviewStatus": "rights-conflict-no-permanent-audio-url",
-      "audible": false
+      "reviewStatus": "official-author-CCBY4-grant-exists-but-provider-license-label-conflicts-and-audio-unavailable",
+      "audible": false,
+      "licenseEvidence": {
+        "evidenceType": "explicit artist-published album credits",
+        "album": "Silent Depths",
+        "albumUrl": "https://darkantey.bandcamp.com/album/silent-depths",
+        "licenseStatement": "CC BY 4.0; use in personal, creative and commercial projects permitted with author credit",
+        "authorCredit": "Music by Dark Antey",
+        "providerMetadata": "all rights reserved",
+        "metadataConflictUnresolved": true,
+        "verifiedOn": "2026-11-12",
+        "commercialUseGrantByAuthor": true
+      },
+      "downloadStatus": "cannot retrieve original full tracks via automated Bandcamp request; browser challenge and email/download flow",
+      "publishStatus": "hold-until-verified-full-audio-assets-and-license-clarity"
     },
     {
       "id": "dark-antey-silent-depths-15",
@@ -707,8 +890,21 @@
         "commercialUseVerified": false
       },
       "tempoBpm": null,
-      "reviewStatus": "rights-conflict-no-permanent-audio-url",
-      "audible": false
+      "reviewStatus": "official-author-CCBY4-grant-exists-but-provider-license-label-conflicts-and-audio-unavailable",
+      "audible": false,
+      "licenseEvidence": {
+        "evidenceType": "explicit artist-published album credits",
+        "album": "Silent Depths",
+        "albumUrl": "https://darkantey.bandcamp.com/album/silent-depths",
+        "licenseStatement": "CC BY 4.0; use in personal, creative and commercial projects permitted with author credit",
+        "authorCredit": "Music by Dark Antey",
+        "providerMetadata": "all rights reserved",
+        "metadataConflictUnresolved": true,
+        "verifiedOn": "2026-11-12",
+        "commercialUseGrantByAuthor": true
+      },
+      "downloadStatus": "cannot retrieve original full tracks via automated Bandcamp request; browser challenge and email/download flow",
+      "publishStatus": "hold-until-verified-full-audio-assets-and-license-clarity"
     },
     {
       "id": "dark-antey-deep-russian-depression-01",
@@ -724,8 +920,21 @@
         "commercialUseVerified": false
       },
       "tempoBpm": null,
-      "reviewStatus": "rights-conflict-no-permanent-audio-url",
-      "audible": false
+      "reviewStatus": "official-author-CCBY4-grant-exists-but-provider-license-label-conflicts-and-audio-unavailable",
+      "audible": false,
+      "licenseEvidence": {
+        "evidenceType": "explicit artist-published album credits",
+        "album": "Deep Russian Depression",
+        "albumUrl": "https://darkantey.bandcamp.com/album/deep-russian-depression",
+        "licenseStatement": "CC BY 4.0; use in personal, creative and commercial projects permitted with author credit",
+        "authorCredit": "Music by Dark Antey",
+        "providerMetadata": "all rights reserved",
+        "metadataConflictUnresolved": true,
+        "verifiedOn": "2026-11-12",
+        "commercialUseGrantByAuthor": true
+      },
+      "downloadStatus": "cannot retrieve original full tracks via automated Bandcamp request; browser challenge and email/download flow",
+      "publishStatus": "hold-until-verified-full-audio-assets-and-license-clarity"
     },
     {
       "id": "dark-antey-deep-russian-depression-02",
@@ -741,8 +950,21 @@
         "commercialUseVerified": false
       },
       "tempoBpm": null,
-      "reviewStatus": "rights-conflict-no-permanent-audio-url",
-      "audible": false
+      "reviewStatus": "official-author-CCBY4-grant-exists-but-provider-license-label-conflicts-and-audio-unavailable",
+      "audible": false,
+      "licenseEvidence": {
+        "evidenceType": "explicit artist-published album credits",
+        "album": "Deep Russian Depression",
+        "albumUrl": "https://darkantey.bandcamp.com/album/deep-russian-depression",
+        "licenseStatement": "CC BY 4.0; use in personal, creative and commercial projects permitted with author credit",
+        "authorCredit": "Music by Dark Antey",
+        "providerMetadata": "all rights reserved",
+        "metadataConflictUnresolved": true,
+        "verifiedOn": "2026-11-12",
+        "commercialUseGrantByAuthor": true
+      },
+      "downloadStatus": "cannot retrieve original full tracks via automated Bandcamp request; browser challenge and email/download flow",
+      "publishStatus": "hold-until-verified-full-audio-assets-and-license-clarity"
     },
     {
       "id": "dark-antey-deep-russian-depression-03",
@@ -758,8 +980,21 @@
         "commercialUseVerified": false
       },
       "tempoBpm": null,
-      "reviewStatus": "rights-conflict-no-permanent-audio-url",
-      "audible": false
+      "reviewStatus": "official-author-CCBY4-grant-exists-but-provider-license-label-conflicts-and-audio-unavailable",
+      "audible": false,
+      "licenseEvidence": {
+        "evidenceType": "explicit artist-published album credits",
+        "album": "Deep Russian Depression",
+        "albumUrl": "https://darkantey.bandcamp.com/album/deep-russian-depression",
+        "licenseStatement": "CC BY 4.0; use in personal, creative and commercial projects permitted with author credit",
+        "authorCredit": "Music by Dark Antey",
+        "providerMetadata": "all rights reserved",
+        "metadataConflictUnresolved": true,
+        "verifiedOn": "2026-11-12",
+        "commercialUseGrantByAuthor": true
+      },
+      "downloadStatus": "cannot retrieve original full tracks via automated Bandcamp request; browser challenge and email/download flow",
+      "publishStatus": "hold-until-verified-full-audio-assets-and-license-clarity"
     },
     {
       "id": "dark-antey-deep-russian-depression-04",
@@ -775,8 +1010,21 @@
         "commercialUseVerified": false
       },
       "tempoBpm": null,
-      "reviewStatus": "rights-conflict-no-permanent-audio-url",
-      "audible": false
+      "reviewStatus": "official-author-CCBY4-grant-exists-but-provider-license-label-conflicts-and-audio-unavailable",
+      "audible": false,
+      "licenseEvidence": {
+        "evidenceType": "explicit artist-published album credits",
+        "album": "Deep Russian Depression",
+        "albumUrl": "https://darkantey.bandcamp.com/album/deep-russian-depression",
+        "licenseStatement": "CC BY 4.0; use in personal, creative and commercial projects permitted with author credit",
+        "authorCredit": "Music by Dark Antey",
+        "providerMetadata": "all rights reserved",
+        "metadataConflictUnresolved": true,
+        "verifiedOn": "2026-11-12",
+        "commercialUseGrantByAuthor": true
+      },
+      "downloadStatus": "cannot retrieve original full tracks via automated Bandcamp request; browser challenge and email/download flow",
+      "publishStatus": "hold-until-verified-full-audio-assets-and-license-clarity"
     },
     {
       "id": "dark-antey-deep-russian-depression-05",
@@ -792,8 +1040,21 @@
         "commercialUseVerified": false
       },
       "tempoBpm": null,
-      "reviewStatus": "rights-conflict-no-permanent-audio-url",
-      "audible": false
+      "reviewStatus": "official-author-CCBY4-grant-exists-but-provider-license-label-conflicts-and-audio-unavailable",
+      "audible": false,
+      "licenseEvidence": {
+        "evidenceType": "explicit artist-published album credits",
+        "album": "Deep Russian Depression",
+        "albumUrl": "https://darkantey.bandcamp.com/album/deep-russian-depression",
+        "licenseStatement": "CC BY 4.0; use in personal, creative and commercial projects permitted with author credit",
+        "authorCredit": "Music by Dark Antey",
+        "providerMetadata": "all rights reserved",
+        "metadataConflictUnresolved": true,
+        "verifiedOn": "2026-11-12",
+        "commercialUseGrantByAuthor": true
+      },
+      "downloadStatus": "cannot retrieve original full tracks via automated Bandcamp request; browser challenge and email/download flow",
+      "publishStatus": "hold-until-verified-full-audio-assets-and-license-clarity"
     },
     {
       "id": "dark-antey-deep-russian-depression-06",
@@ -809,8 +1070,21 @@
         "commercialUseVerified": false
       },
       "tempoBpm": null,
-      "reviewStatus": "rights-conflict-no-permanent-audio-url",
-      "audible": false
+      "reviewStatus": "official-author-CCBY4-grant-exists-but-provider-license-label-conflicts-and-audio-unavailable",
+      "audible": false,
+      "licenseEvidence": {
+        "evidenceType": "explicit artist-published album credits",
+        "album": "Deep Russian Depression",
+        "albumUrl": "https://darkantey.bandcamp.com/album/deep-russian-depression",
+        "licenseStatement": "CC BY 4.0; use in personal, creative and commercial projects permitted with author credit",
+        "authorCredit": "Music by Dark Antey",
+        "providerMetadata": "all rights reserved",
+        "metadataConflictUnresolved": true,
+        "verifiedOn": "2026-11-12",
+        "commercialUseGrantByAuthor": true
+      },
+      "downloadStatus": "cannot retrieve original full tracks via automated Bandcamp request; browser challenge and email/download flow",
+      "publishStatus": "hold-until-verified-full-audio-assets-and-license-clarity"
     },
     {
       "id": "dark-antey-deep-russian-depression-07",
@@ -826,8 +1100,21 @@
         "commercialUseVerified": false
       },
       "tempoBpm": null,
-      "reviewStatus": "rights-conflict-no-permanent-audio-url",
-      "audible": false
+      "reviewStatus": "official-author-CCBY4-grant-exists-but-provider-license-label-conflicts-and-audio-unavailable",
+      "audible": false,
+      "licenseEvidence": {
+        "evidenceType": "explicit artist-published album credits",
+        "album": "Deep Russian Depression",
+        "albumUrl": "https://darkantey.bandcamp.com/album/deep-russian-depression",
+        "licenseStatement": "CC BY 4.0; use in personal, creative and commercial projects permitted with author credit",
+        "authorCredit": "Music by Dark Antey",
+        "providerMetadata": "all rights reserved",
+        "metadataConflictUnresolved": true,
+        "verifiedOn": "2026-11-12",
+        "commercialUseGrantByAuthor": true
+      },
+      "downloadStatus": "cannot retrieve original full tracks via automated Bandcamp request; browser challenge and email/download flow",
+      "publishStatus": "hold-until-verified-full-audio-assets-and-license-clarity"
     },
     {
       "id": "dark-antey-deep-russian-depression-08",
@@ -843,8 +1130,21 @@
         "commercialUseVerified": false
       },
       "tempoBpm": null,
-      "reviewStatus": "rights-conflict-no-permanent-audio-url",
-      "audible": false
+      "reviewStatus": "official-author-CCBY4-grant-exists-but-provider-license-label-conflicts-and-audio-unavailable",
+      "audible": false,
+      "licenseEvidence": {
+        "evidenceType": "explicit artist-published album credits",
+        "album": "Deep Russian Depression",
+        "albumUrl": "https://darkantey.bandcamp.com/album/deep-russian-depression",
+        "licenseStatement": "CC BY 4.0; use in personal, creative and commercial projects permitted with author credit",
+        "authorCredit": "Music by Dark Antey",
+        "providerMetadata": "all rights reserved",
+        "metadataConflictUnresolved": true,
+        "verifiedOn": "2026-11-12",
+        "commercialUseGrantByAuthor": true
+      },
+      "downloadStatus": "cannot retrieve original full tracks via automated Bandcamp request; browser challenge and email/download flow",
+      "publishStatus": "hold-until-verified-full-audio-assets-and-license-clarity"
     },
     {
       "id": "dark-antey-deep-russian-depression-09",
@@ -860,8 +1160,21 @@
         "commercialUseVerified": false
       },
       "tempoBpm": null,
-      "reviewStatus": "rights-conflict-no-permanent-audio-url",
-      "audible": false
+      "reviewStatus": "official-author-CCBY4-grant-exists-but-provider-license-label-conflicts-and-audio-unavailable",
+      "audible": false,
+      "licenseEvidence": {
+        "evidenceType": "explicit artist-published album credits",
+        "album": "Deep Russian Depression",
+        "albumUrl": "https://darkantey.bandcamp.com/album/deep-russian-depression",
+        "licenseStatement": "CC BY 4.0; use in personal, creative and commercial projects permitted with author credit",
+        "authorCredit": "Music by Dark Antey",
+        "providerMetadata": "all rights reserved",
+        "metadataConflictUnresolved": true,
+        "verifiedOn": "2026-11-12",
+        "commercialUseGrantByAuthor": true
+      },
+      "downloadStatus": "cannot retrieve original full tracks via automated Bandcamp request; browser challenge and email/download flow",
+      "publishStatus": "hold-until-verified-full-audio-assets-and-license-clarity"
     },
     {
       "id": "dark-antey-deep-russian-depression-10",
@@ -877,8 +1190,21 @@
         "commercialUseVerified": false
       },
       "tempoBpm": null,
-      "reviewStatus": "rights-conflict-no-permanent-audio-url",
-      "audible": false
+      "reviewStatus": "official-author-CCBY4-grant-exists-but-provider-license-label-conflicts-and-audio-unavailable",
+      "audible": false,
+      "licenseEvidence": {
+        "evidenceType": "explicit artist-published album credits",
+        "album": "Deep Russian Depression",
+        "albumUrl": "https://darkantey.bandcamp.com/album/deep-russian-depression",
+        "licenseStatement": "CC BY 4.0; use in personal, creative and commercial projects permitted with author credit",
+        "authorCredit": "Music by Dark Antey",
+        "providerMetadata": "all rights reserved",
+        "metadataConflictUnresolved": true,
+        "verifiedOn": "2026-11-12",
+        "commercialUseGrantByAuthor": true
+      },
+      "downloadStatus": "cannot retrieve original full tracks via automated Bandcamp request; browser challenge and email/download flow",
+      "publishStatus": "hold-until-verified-full-audio-assets-and-license-clarity"
     },
     {
       "id": "dark-antey-deep-russian-depression-11",
@@ -894,8 +1220,21 @@
         "commercialUseVerified": false
       },
       "tempoBpm": null,
-      "reviewStatus": "rights-conflict-no-permanent-audio-url",
-      "audible": false
+      "reviewStatus": "official-author-CCBY4-grant-exists-but-provider-license-label-conflicts-and-audio-unavailable",
+      "audible": false,
+      "licenseEvidence": {
+        "evidenceType": "explicit artist-published album credits",
+        "album": "Deep Russian Depression",
+        "albumUrl": "https://darkantey.bandcamp.com/album/deep-russian-depression",
+        "licenseStatement": "CC BY 4.0; use in personal, creative and commercial projects permitted with author credit",
+        "authorCredit": "Music by Dark Antey",
+        "providerMetadata": "all rights reserved",
+        "metadataConflictUnresolved": true,
+        "verifiedOn": "2026-11-12",
+        "commercialUseGrantByAuthor": true
+      },
+      "downloadStatus": "cannot retrieve original full tracks via automated Bandcamp request; browser challenge and email/download flow",
+      "publishStatus": "hold-until-verified-full-audio-assets-and-license-clarity"
     }
   ],
   "auditRunUrl": "https://github.com/semen89852698936-create/snachala-uzhin/actions/runs/43191362554",
@@ -910,5 +1249,27 @@
       "dinner": 7,
       "after": 1
     }
+  },
+  "darkAnteyAudit": {
+    "recordCount": 26,
+    "albumCounts": {
+      "Silent Depths": 15,
+      "Deep Russian Depression": 11
+    },
+    "authorPermissionStatementsVerified": 2,
+    "uncontradictedLicenses": 0,
+    "fullAudioFilesObtained": 0,
+    "playableAdded": 0,
+    "explicitAttribution": "Music by Dark Antey",
+    "providerLabelConflict": true,
+    "retrievalError": "Bandcamp challenge webpage on GitHub Action audio download; full release downloads require official download flow.",
+    "sources": [
+      "https://darkantey.bandcamp.com/album/silent-depths",
+      "https://darkantey.bandcamp.com/album/deep-russian-depression"
+    ],
+    "auditRuns": [
+      "https://github.com/semen89852698936-create/snachala-uzhin/actions/runs/43193965582",
+      "https://github.com/semen89852698936-create/snachala-uzhin/actions/runs/43194065590"
+    ]
   }
 }
