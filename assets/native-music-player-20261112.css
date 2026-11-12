@@ -802,3 +802,81 @@ html body #duNewspaperDock #duNpPanel .du-np-feedback {
     line-height:1.2!important;
   }
 }
+
+
+/* MOBILE_NEWSPRINT_STRIP_COMPACTION_20261112
+   At 320px no square player and no 2px document overflow. The tiny-print
+   colophon remains part of desktop edition; mobile masthead carries issue. */
+html body.du-np-standalone #duNewspaperDock.du-np-dock {
+  position:relative!important;
+  left:0!important;
+  bottom:auto!important;
+  width:min(720px,100%)!important;
+  margin:0 auto!important;
+}
+@media(max-width:620px){
+  html body #duNewspaperDock #duNpPanel .du-np-dock-paper {
+    padding-top:9px!important;
+    padding-bottom:8px!important;
+  }
+  html body #duNewspaperDock #duNpPanel .du-np-top {
+    padding-bottom:3px!important;
+    margin-bottom:3px!important;
+  }
+  html body #duNewspaperDock #duNpPanel .du-np-tabs {
+    margin-bottom:3px!important;
+    padding-bottom:3px!important;
+  }
+  html body #duNewspaperDock #duNpPanel .du-np-tabs button{
+    min-height:26px!important;
+    padding:4px 8px!important;
+  }
+  html body #duNewspaperDock #duNpPanel .du-np-now {
+    margin-bottom:1px!important;
+  }
+  html body #duNewspaperDock #duNpPanel .du-np-transport {
+    margin-bottom:1px!important;
+  }
+  html body #duNewspaperDock #duNpPanel .du-np-timeline {
+    margin-bottom:0!important;
+  }
+  html body #duNewspaperDock #duNpPanel .du-np-bottom {
+    margin-bottom:0!important;
+  }
+  html body #duNewspaperDock #duNpPanel .du-np-print-colophon {
+    display:none!important;
+  }
+  html body #duNewspaperDock #duNpPanel .du-np-notice {
+    padding-top:3px!important;
+    border-top:1px solid rgba(77,54,45,.45)!important;
+    margin:3px 0 0!important;
+  }
+}
+@media(max-width:360px) {
+  html body #duNewspaperDock #duNpPanel .du-np-top strong{
+    font-size:18px!important;
+  }
+  html body #duNewspaperDock #duNpPanel .du-np-now strong {
+    font-size:17px!important;
+    line-height:1!important;
+    letter-spacing:-.035em!important;
+  }
+  html body #duNewspaperDock #duNpPanel .du-np-now small {
+    font-size:8px!important;
+    line-height:1.2!important;
+  }
+  html body #duNewspaperDock #duNpPanel .du-np-now .du-np-stamp {
+    padding:2px!important;
+    font-size:7px!important;
+  }
+  html body #duNewspaperDock #duNpPanel .du-np-transport button.du-np-main-play {
+    width:41px!important;
+    height:41px!important;
+    min-width:41px!important;
+    min-height:41px!important;
+  }
+  html body #duNewspaperDock #duNpPanel .du-np-top small,
+  html body #duNewspaperDock #duNpPanel .du-np-edition {
+    font-size:7px!important;
+  }
+}
