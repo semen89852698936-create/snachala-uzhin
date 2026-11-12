@@ -964,3 +964,14 @@ html body #duNewspaperDock #duNpPanel .du-np-dock-paper {
     "colophon colophon"
     "feedback feedback"!important;
 }
+
+/* STRAIGHT_PLAYER_EDGES_20261112
+   Crisp rectangular newspaper edges; keep the paper texture and typography. */
+html body #duNewspaperDock #duNpPanel .du-np-dock-paper {
+  clip-path:none!important;
+  border-radius:0!important;
+  border:1px solid rgba(101,57,50,.45)!important;
+}
+html body #duNewspaperDock #duNpPanel.du-np-dock-body {
+  border-radius:0!important;
+}
