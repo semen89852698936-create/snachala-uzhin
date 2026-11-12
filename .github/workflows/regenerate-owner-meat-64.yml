@@ -1,0 +1,104 @@
+name: Owner meat photo regeneration - 64 recipe-specific Alice AI ART images
+
+on:
+  push:
+    branches:
+      - photo-production/owner-meat-64-20261113
+    paths:
+      - .github/workflows/regenerate-owner-meat-64.yml
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: owner-meat-64-20261113
+  cancel-in-progress: false
+
+jobs:
+  generate-candidates:
+    runs-on: ubuntu-latest
+    timeout-minutes: 300
+    steps:
+      - name: Checkout isolated branch (never overwrite approved main)
+        uses: actions/checkout@v4
+        with:
+          ref: photo-production/owner-meat-64-20261113
+          persist-credentials: true
+          fetch-depth: 0
+      - name: Checkout established Yandex Alice AI ART adapter read-only
+        uses: actions/checkout@v4
+        with:
+          repository: semen89852698936-create/snachala-uzhin
+          ref: photo-production/yandex-ai-art-1001
+          path: _photo_source
+          sparse-checkout: |
+            photo-pipeline
+            photo-library/recipes.json
+          sparse-checkout-cone-mode: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: python3 -m pip install --quiet 'Pillow>=10,<13'
+      - name: Validate all 64 exact user recipe mappings without any paid requests
+        run: python3 scripts/regenerate-owner-meat-64.py --mode validate
+      - name: Check connected Yandex key exists before running paid generation
+        shell: bash
+        env:
+          YANDEX_API_KEY: ${{ secrets.YANDEX_API_KEY }}
+        run: |
+          if [[ -z "$YANDEX_API_KEY" ]]; then
+            echo "::error::YANDEX_API_KEY is missing. No paid requests made."
+            exit 1
+          fi
+      - name: Generate exactly 64 isolated candidates, committing reservation before each paid request
+        shell: bash
+        env:
+          YANDEX_API_KEY: ${{ secrets.YANDEX_API_KEY }}
+          YANDEX_FOLDER_ID: ${{ secrets.YANDEX_FOLDER_ID || 'b1g00u8p0k5nl98v8nre' }}
+          PHOTO_COST_APPROVED: 'true'
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          for n in $(python3 scripts/regenerate-owner-meat-64.py --mode list); do
+            state=$(python3 scripts/regenerate-owner-meat-64.py --mode status --n "$n")
+            if [[ "$state" == "DONE" ]]; then
+              echo "SKIP_EXISTING $n"
+              continue
+            fi
+            if [[ "$state" == "PENDING" ]]; then
+              echo "::error::Unresolved paid request for recipe $n, refusing duplicate paid charge"
+              exit 1
+            fi
+            python3 scripts/regenerate-owner-meat-64.py --mode reserve --n "$n"
+            git add -A photo-library/regeneration-owner-meat-64-20261113
+            git commit -m "Reserve meat recipe $n before paid image request"
+            git push origin HEAD:refs/heads/photo-production/owner-meat-64-20261113
+            set +e
+            python3 scripts/regenerate-owner-meat-64.py --mode execute --n "$n"
+            result=$?
+            set -e
+            git add -A photo-library/regeneration-owner-meat-64-20261113
+            if ! git diff --cached --quiet; then
+              git diff --cached --check
+              git commit -m "Checkpoint Alice AI ART candidate for recipe $n"
+              git push origin HEAD:refs/heads/photo-production/owner-meat-64-20261113
+            fi
+            if [[ "$result" -ne 0 ]]; then
+              echo "::error::Image generation did not complete for recipe $n. Reservation protects against duplicate paid request."
+              exit "$result"
+            fi
+          done
+      - name: Check 64 candidates exist and do not modify any published site files
+        run: |
+          python3 - <<'PY'
+          import json
+          from pathlib import Path
+          root=Path("photo-library/regeneration-owner-meat-64-20261113")
+          records=list((root/"records").glob("*.json"))
+          images=list((root/"candidates").glob("*.webp"))
+          assert len(records)==len(images)==64,(len(records),len(images))
+          assert not any((root/"pending").glob("*.json"))
+          print("COMPLETE 64 validated WebP files; staged only, website not changed")
+          PY
