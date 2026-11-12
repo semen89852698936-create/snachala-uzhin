@@ -1,7 +1,7 @@
 {
   "schemaVersion": 2,
   "updated": "2026-11-12",
-  "stage": "24 originals available in archive, NOT yet uploaded to GitHub",
+  "stage": "verified-24-original-mp3-in-GitHub-feature-branch; not deployed to public site",
   "received": {
     "Silent Depths": 15,
     "Deep Russian Depression": 9
@@ -52,7 +52,9 @@
       "expectedBytes": 5405456,
       "sha256": "d82d10a50f287ee35d8a3fd83514718059abafffba58f5b2769f3ce31405ebfe",
       "mediaAvailableLocally": true,
-      "mediaUploadedToGithub": false
+      "mediaUploadedToGithub": true,
+      "githubFilePath": "assets/music/dark-antey/01-main-theme.mp3",
+      "audioVerifiedSHA256": true
     },
     {
       "id": "dark-antey-silent-depths-02",
@@ -76,7 +78,9 @@
       "expectedBytes": 3507255,
       "sha256": "d2090f6b88430d2332be8613a1f1f2fe70a2d2a7a9a0d00261903683b0da3dea",
       "mediaAvailableLocally": true,
-      "mediaUploadedToGithub": false
+      "mediaUploadedToGithub": true,
+      "githubFilePath": "assets/music/dark-antey/02-fading-memories.mp3",
+      "audioVerifiedSHA256": true
     },
     {
       "id": "dark-antey-silent-depths-03",
@@ -100,7 +104,9 @@
       "expectedBytes": 3713852,
       "sha256": "95487c2a5e7324dd37171a7cd25863029d6115edefd6beffb6e0b0825113bdc0",
       "mediaAvailableLocally": true,
-      "mediaUploadedToGithub": false
+      "mediaUploadedToGithub": true,
+      "githubFilePath": "assets/music/dark-antey/03-tears-that-don-t-exist.mp3",
+      "audioVerifiedSHA256": true
     },
     {
       "id": "dark-antey-silent-depths-04",
@@ -124,7 +130,9 @@
       "expectedBytes": 1540934,
       "sha256": "8dcfc6793a6ec2903d70a40bc9aa712ec7d890f5dd8ad809ae96ffc21659bde6",
       "mediaAvailableLocally": true,
-      "mediaUploadedToGithub": false
+      "mediaUploadedToGithub": true,
+      "githubFilePath": "assets/music/dark-antey/04-echo-of-empty-rooms.mp3",
+      "audioVerifiedSHA256": true
     },
     {
       "id": "dark-antey-silent-depths-05",
@@ -148,7 +156,9 @@
       "expectedBytes": 6556352,
       "sha256": "a2e7ba9fda2c9ea3f1f75d70c1a597697bb35ca9b6642c43091156674481eaad",
       "mediaAvailableLocally": true,
-      "mediaUploadedToGithub": false
+      "mediaUploadedToGithub": true,
+      "githubFilePath": "assets/music/dark-antey/05-eternity-without-movement.mp3",
+      "audioVerifiedSHA256": true
     },
     {
       "id": "dark-antey-silent-depths-06",
@@ -172,7 +182,9 @@
       "expectedBytes": 6990798,
       "sha256": "ba70ec9abd2e7be32ffe0996b0fe95f8fb5f093d916a4d820a6c0e4f4d0748cb",
       "mediaAvailableLocally": true,
-      "mediaUploadedToGithub": false
+      "mediaUploadedToGithub": true,
+      "githubFilePath": "assets/music/dark-antey/06-stalker-is-watching.mp3",
+      "audioVerifiedSHA256": true
     },
     {
       "id": "dark-antey-silent-depths-07",
@@ -196,7 +208,9 @@
       "expectedBytes": 5303610,
       "sha256": "93dc4ef375f63eaed08414991c4b21de052b626e699b302032dd6691444bdee2",
       "mediaAvailableLocally": true,
-      "mediaUploadedToGithub": false
+      "mediaUploadedToGithub": true,
+      "githubFilePath": "assets/music/dark-antey/07-abandoned-hospital.mp3",
+      "audioVerifiedSHA256": true
     },
     {
       "id": "dark-antey-silent-depths-08",
@@ -220,7 +234,9 @@
       "expectedBytes": 5315320,
       "sha256": "644eab3d10004317b201973a04983c31d332c0f15e0b6c5d5a7573a5b11ea851",
       "mediaAvailableLocally": true,
-      "mediaUploadedToGithub": false
+      "mediaUploadedToGithub": true,
+      "githubFilePath": "assets/music/dark-antey/08-the-weight-of-nothingness.mp3",
+      "audioVerifiedSHA256": true
     },
     {
       "id": "dark-antey-silent-depths-09",
@@ -244,7 +260,9 @@
       "expectedBytes": 6085171,
       "sha256": "b8e650fcaee9de99a040d58a2577da53e439f4f17b85156fbbf29ab197230f5b",
       "mediaAvailableLocally": true,
-      "mediaUploadedToGithub": false
+      "mediaUploadedToGithub": true,
+      "githubFilePath": "assets/music/dark-antey/09-i-m-going-to-do-it.mp3",
+      "audioVerifiedSHA256": true
     },
     {
       "id": "dark-antey-silent-depths-10",
@@ -268,7 +286,9 @@
       "expectedBytes": 6263254,
       "sha256": "82614d4ff7d3bedb8f03f1d610f239f84ac514371cb106e994aea7637e78ce69",
       "mediaAvailableLocally": true,
-      "mediaUploadedToGithub": false
+      "mediaUploadedToGithub": true,
+      "githubFilePath": "assets/music/dark-antey/10-farewell-note.mp3",
+      "audioVerifiedSHA256": true
     },
     {
       "id": "dark-antey-silent-depths-11",
@@ -292,7 +312,9 @@
       "expectedBytes": 3894346,
       "sha256": "01ae826db9878df244a7658ae0fd4788fc09a32c2645e7bd5bba90dfaa55913d",
       "mediaAvailableLocally": true,
-      "mediaUploadedToGithub": false
+      "mediaUploadedToGithub": true,
+      "githubFilePath": "assets/music/dark-antey/11-dead-silence.mp3",
+      "audioVerifiedSHA256": true
     },
     {
       "id": "dark-antey-silent-depths-12",
@@ -316,7 +338,9 @@
       "expectedBytes": 3138045,
       "sha256": "5cbf6aceec7a21fe2e62e9c1757e7353501da4ee91fc1e503575d04a4d1fe0e5",
       "mediaAvailableLocally": true,
-      "mediaUploadedToGithub": false
+      "mediaUploadedToGithub": true,
+      "githubFilePath": "assets/music/dark-antey/12-fading-memories-2.mp3",
+      "audioVerifiedSHA256": true
     },
     {
       "id": "dark-antey-silent-depths-13",
@@ -340,7 +364,9 @@
       "expectedBytes": 3030964,
       "sha256": "7a9cd87d31591535370fc5be5ba99ebf524842d5fbcff1d65f9f31c9ae364096",
       "mediaAvailableLocally": true,
-      "mediaUploadedToGithub": false
+      "mediaUploadedToGithub": true,
+      "githubFilePath": "assets/music/dark-antey/13-last-breath.mp3",
+      "audioVerifiedSHA256": true
     },
     {
       "id": "dark-antey-silent-depths-14",
@@ -364,7 +390,9 @@
       "expectedBytes": 2806803,
       "sha256": "47e8c2bd9e4282d7f4fbef26c38d5551cbe0763b5b4957ca792518cc4cff42c7",
       "mediaAvailableLocally": true,
-      "mediaUploadedToGithub": false
+      "mediaUploadedToGithub": true,
+      "githubFilePath": "assets/music/dark-antey/14-there-is-still-hope.mp3",
+      "audioVerifiedSHA256": true
     },
     {
       "id": "dark-antey-silent-depths-15",
@@ -388,7 +416,9 @@
       "expectedBytes": 1971854,
       "sha256": "530ff8fd8c302ba136b25ca7573ee0f106c1d06529ef70252d311de2f658473d",
       "mediaAvailableLocally": true,
-      "mediaUploadedToGithub": false
+      "mediaUploadedToGithub": true,
+      "githubFilePath": "assets/music/dark-antey/15-we-ll-never-meet-again.mp3",
+      "audioVerifiedSHA256": true
     },
     {
       "id": "dark-antey-deep-russian-depression-02",
@@ -412,7 +442,9 @@
       "expectedBytes": 5809461,
       "sha256": "6f1172d27bd35b2454da489b1dfe808f1d74c4cece69efcd8f4e36b913d4357e",
       "mediaAvailableLocally": true,
-      "mediaUploadedToGithub": false
+      "mediaUploadedToGithub": true,
+      "githubFilePath": "assets/music/dark-antey/deep-russian-depression/02-где-я-спешил-взбираясь-к-небесам.mp3",
+      "audioVerifiedSHA256": true
     },
     {
       "id": "dark-antey-deep-russian-depression-03",
@@ -436,7 +468,9 @@
       "expectedBytes": 2553984,
       "sha256": "fc16cb1ba05bd7beec9fbaa449df3a7002d84d6a53a576a67b4ecc5feae5a194",
       "mediaAvailableLocally": true,
-      "mediaUploadedToGithub": false
+      "mediaUploadedToGithub": true,
+      "githubFilePath": "assets/music/dark-antey/deep-russian-depression/03-прогулка-по-ночному-небу.mp3",
+      "audioVerifiedSHA256": true
     },
     {
       "id": "dark-antey-deep-russian-depression-04",
@@ -460,7 +494,9 @@
       "expectedBytes": 4485459,
       "sha256": "4727df935e70a90b4db9e13ff92889d0f025a86271dc2eadd9afb923e441efd0",
       "mediaAvailableLocally": true,
-      "mediaUploadedToGithub": false
+      "mediaUploadedToGithub": true,
+      "githubFilePath": "assets/music/dark-antey/deep-russian-depression/04-один-в-пустой-комнате.mp3",
+      "audioVerifiedSHA256": true
     },
     {
       "id": "dark-antey-deep-russian-depression-05",
@@ -484,7 +520,9 @@
       "expectedBytes": 5627720,
       "sha256": "4aa85da5855ab23ff6b46a0a9630c29db8d8121e0f2884844ddfd4d46af32623",
       "mediaAvailableLocally": true,
-      "mediaUploadedToGithub": false
+      "mediaUploadedToGithub": true,
+      "githubFilePath": "assets/music/dark-antey/deep-russian-depression/05-разбитые-воспоминания.mp3",
+      "audioVerifiedSHA256": true
     },
     {
       "id": "dark-antey-deep-russian-depression-06",
@@ -508,7 +546,9 @@
       "expectedBytes": 6922343,
       "sha256": "3dd175ef53135b38a18436e8a836aa24f1609575aaf6e5fe5755ffe256d9baac",
       "mediaAvailableLocally": true,
-      "mediaUploadedToGithub": false
+      "mediaUploadedToGithub": true,
+      "githubFilePath": "assets/music/dark-antey/deep-russian-depression/06-метафизический-сон-во-тьме.mp3",
+      "audioVerifiedSHA256": true
     },
     {
       "id": "dark-antey-deep-russian-depression-07",
@@ -532,7 +572,9 @@
       "expectedBytes": 3145925,
       "sha256": "0d2705098642c07c6201f4138f72ce6ec803f5945f8338ab9ed6a7337028afdf",
       "mediaAvailableLocally": true,
-      "mediaUploadedToGithub": false
+      "mediaUploadedToGithub": true,
+      "githubFilePath": "assets/music/dark-antey/deep-russian-depression/07-и-гнев-небесного-творца.mp3",
+      "audioVerifiedSHA256": true
     },
     {
       "id": "dark-antey-deep-russian-depression-08",
@@ -556,7 +598,9 @@
       "expectedBytes": 2499888,
       "sha256": "76984166931dd6cdb6c417893d49e7b45208465a76be4480a1f2cae71b06d3ed",
       "mediaAvailableLocally": true,
-      "mediaUploadedToGithub": false
+      "mediaUploadedToGithub": true,
+      "githubFilePath": "assets/music/dark-antey/deep-russian-depression/08-беспокойные-сны-instrumental.mp3",
+      "audioVerifiedSHA256": true
     },
     {
       "id": "dark-antey-deep-russian-depression-09",
@@ -580,7 +624,9 @@
       "expectedBytes": 2594662,
       "sha256": "c7006037da6b091083d7686386ef4093e42122a753e72af107f6a189c7d5abcd",
       "mediaAvailableLocally": true,
-      "mediaUploadedToGithub": false
+      "mediaUploadedToGithub": true,
+      "githubFilePath": "assets/music/dark-antey/deep-russian-depression/09-звездный-в-небе-невод.mp3",
+      "audioVerifiedSHA256": true
     },
     {
       "id": "dark-antey-deep-russian-depression-11",
@@ -604,9 +650,13 @@
       "expectedBytes": 2602379,
       "sha256": "7d485cc535a25907ae21d42cb5e3f16b70a08609de708fa30ce09626af3414d9",
       "mediaAvailableLocally": true,
-      "mediaUploadedToGithub": false
+      "mediaUploadedToGithub": true,
+      "githubFilePath": "assets/music/dark-antey/deep-russian-depression/11-беспокойные-сны.mp3",
+      "audioVerifiedSHA256": true
     }
   ],
   "licenseCaveat": "Author album credits CC BY 4.0 with explicit commercial permission, but Bandcamp individual All rights reserved footer conflicts; seek confirmation for unambiguous legal assurance.",
-  "useOnlyOnceHosted": true
+  "useOnlyOnceHosted": true,
+  "verifiedGitCommit": "bed844964673d16bf17ef9a3316a75bf0ebc29ec",
+  "verificationWorkflow": "https://github.com/semen89852698936-create/snachala-uzhin/actions/runs/43207743036"
 }
