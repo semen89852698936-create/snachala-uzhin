@@ -120,7 +120,7 @@
     if(!item||!chapter) return;
     try{
       navigator.mediaSession.metadata=new MediaMetadata({
-        title:item.title,artist:'Kevin MacLeod (incompetech.com)',
+        title:item.title,artist:item.artist||'Kevin MacLeod',
         album:chapter.label
       });
       navigator.mediaSession.playbackState=state.playing?'playing':'paused';
@@ -249,7 +249,7 @@
       '<span class="du-np-kicker">НОТНАЯ ХРОНИКА / ВЫРЕЗКА № 0'+(PHASES.indexOf(phase)+1)+'</span>'+
       '<div class="du-np-headline">Ритм <i>вечера</i><span>♫</span></div>'+
       '<p class="du-np-phase-name">'+label+'</p>'+
-      '<p class="du-np-trackline" data-np-inline-track="'+phase+'">Музыка Kevin MacLeod · CC BY 4.0</p>'+
+      '<p class="du-np-trackline" data-np-inline-track="'+phase+'">Музыка · CC BY 4.0</p>'+
       '<button type="button" class="du-np-start" data-np-action="phase" data-np-phase="'+phase+'">▶ Слушать музыку</button>'+
       '<div class="du-np-corner">№ 0'+(PHASES.indexOf(phase)+1)+'</div>'+
     '</div></div>';
@@ -306,7 +306,7 @@
           const art=document.createElement('span');art.className='du-bpm-art';art.setAttribute('aria-hidden','true');
           const details=document.createElement('span');details.className='du-bpm-track-details';
           const title=document.createElement('strong');title.textContent=track.title;
-          const artist=document.createElement('span');artist.textContent='Kevin MacLeod';
+          const artist=document.createElement('span');artist.textContent=track.artist||'Kevin MacLeod';
           const source=document.createElement('a');source.href=track.source;source.target='_blank';source.rel='noopener noreferrer';
           source.textContent='Источник и лицензия ↗';
           details.append(title,artist,source);li.append(art,details);list.appendChild(li);
@@ -411,7 +411,7 @@
     $('#duNewspaperDock')?.classList.toggle('du-np-is-playing',state.playing);
     launcher.innerHTML='<span>♫</span> '+(state.playing?'Играет':'Музыка');
     const trackEl=$('#duNpTrack'),sub=$('#duNpSub'),toggle=$('#duNpToggle');
-    if(trackEl)trackEl.textContent=item?'Kevin MacLeod - '+item.title:'Музыкальная газета';
+    if(trackEl)trackEl.textContent=item?(item.artist||'Kevin MacLeod')+' - '+item.title:'Музыкальная газета';
     if(sub)sub.textContent=label;
     if(toggle){toggle.innerHTML=playSymbol;toggle.setAttribute('aria-label',state.playing?'Пауза':'Воспроизвести');}
     const seek=$('#duNpSeek');if(seek){seek.max=currentDuration;seek.value=Math.min(currentDuration,elapsed);}
@@ -426,8 +426,8 @@
     });
     $$('.du-np-trackline').forEach(el=>{
       const phase=el.dataset.npInlineTrack;
-      el.textContent=phase===state.phase&&state.started&&item?'Kevin MacLeod - '+item.title:
-        'Музыка Kevin MacLeod · CC BY 4.0';
+      el.textContent=phase===state.phase&&state.started&&item?(item.artist||'Kevin MacLeod')+' - '+item.title:
+        'Музыка · CC BY 4.0';
     });
     if(state.error)announce(state.error);
     const dockLayout=(state.panelOpen?'open':'closed')+'|'+(state.playing?'half':'full');
