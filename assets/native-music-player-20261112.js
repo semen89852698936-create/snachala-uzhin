@@ -311,10 +311,10 @@
       // The playlist artwork and its headline remain unobstructed. The one
       // shared player is mounted after the entire three-card grid below.
     });
-    // The embedded Spotify audio is not relevant to the Russian market.
-    // Only in the new preview, remove iframe elements and hide their shells.
-    $$('#music .du-music-spotify-extra iframe').forEach(node=>node.remove());
-    $$('#music .du-music-spotify-extra').forEach(node=>node.hidden=true);
+    // The independently licensed newspaper player replaces the obsolete
+    // Spotify embeds and promotional labels. Remove the full legacy markup,
+    // not merely its iframe: no Spotify wording remains in the three cards.
+    $('#music .du-music-spotify-extra, #music .du-music-open-spotify, #music .du-music-spotify').forEach(node=>node.remove());
     const legal=$('#music .du-music-legal');
     if(legal)legal.remove();
     const dock=document.createElement('div');
