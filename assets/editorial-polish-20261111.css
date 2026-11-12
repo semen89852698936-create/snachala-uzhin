@@ -1456,3 +1456,75 @@ html body.du-evening-mode #evening .du-moods > button.du-mood.is-selected {
 #recipeDetail:has(> .du-airfryer-specs) .recipe-intro-copy > p {
   font-size:clamp(18.2px,1.391vw,22.1px)!important;
 }
+
+
+/* EVENING_APPROVED_USER_FOUR_CARDS_20261112
+   Four user-supplied raster artworks, not a redraw.
+   Preserve existing mood button elements, data-mood values, JS click handlers,
+   aria-pressed, card width/height, movement and responsive grid breakpoints.
+   Load after assets/editorial-polish-20261111.css. */
+html body #evening .du-moods > button.du-mood {
+  -webkit-mask-image:none!important;
+  mask-image:none!important;
+  clip-path:none!important;
+  overflow:visible!important;
+  background-color:transparent!important;
+  background-repeat:no-repeat!important;
+  background-position:center!important;
+  background-size:100% 100%!important;
+  border:0!important;
+  border-radius:0!important;
+  padding:clamp(18px,1.8vw,27px)!important;
+  min-height:clamp(285px,26vw,365px)!important;
+  /* Existing width/grid/movement/selection handlers are intentionally kept. */
+}
+html body #evening .du-moods > button.du-mood[data-mood="tender"] {
+  background-image:url('/assets/evening-approved-20261112/evening-mood-tender.webp')!important;
+}
+html body #evening .du-moods > button.du-mood[data-mood="spark"] {
+  background-image:url('/assets/evening-approved-20261112/evening-mood-spark.webp')!important;
+}
+html body #evening .du-moods > button.du-mood[data-mood="play"] {
+  background-image:url('/assets/evening-approved-20261112/evening-mood-play.webp')!important;
+}
+html body #evening .du-moods > button.du-mood[data-mood="cozy"] {
+  background-image:url('/assets/evening-approved-20261112/evening-mood-cozy.webp')!important;
+}
+/* No legacy photography, faux-paper rectangle, numbers, duplicate titles or
+   arrows may obscure the supplied artworks. Text stays in the accessibility
+   tree because opacity, not display:none, is used on live label elements. */
+html body #evening .du-moods > button.du-mood::before,
+html body #evening .du-moods > button.du-mood::after {
+  content:none!important;
+  display:none!important;
+}
+html body #evening .du-moods > button.du-mood :is(
+  .du-mood-num,.du-mood-icon,.du-mood-check,strong,small
+) {
+  opacity:0!important;
+  pointer-events:none!important;
+  text-shadow:none!important;
+  background-image:none!important;
+}
+/* Selection remains visible; the card is still a button, not a static image. */
+html body #evening .du-moods > button.du-mood.is-selected {
+  outline:3px solid #842d48!important;
+  outline-offset:1px!important;
+  filter:drop-shadow(0 8px 12px rgba(91,37,48,.28))!important;
+}
+html body #evening .du-moods > button.du-mood:focus-visible {
+  outline:3px solid #a43d52!important;
+  outline-offset:4px!important;
+}
+@media(max-width:760px){
+  html body #evening .du-moods > button.du-mood {
+    min-height:clamp(246px,47vw,315px)!important;
+    padding:clamp(13px,2.7vw,21px)!important;
+  }
+}
+@media(max-width:390px){
+  html body #evening .du-moods > button.du-mood {
+    min-height:242px!important;
+    padding:12px!important;
+  }
+}
