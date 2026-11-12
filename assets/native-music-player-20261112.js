@@ -329,7 +329,7 @@
     if($('#duNpCount'))$('#duNpCount').textContent=
       String(state.index+1).padStart(2,'0')+' / '+String(tracks().length).padStart(2,'0');
     $$('.du-np-tabs button').forEach(btn=>btn.setAttribute('aria-pressed',String(btn.dataset.npPhase===state.phase)));
-    $('.du-np-card-listen').forEach(btn=>{
+    $$('.du-np-card-listen').forEach(btn=>{
       const selected=btn.dataset.npPhase===state.phase;
       btn.textContent=selected&&state.playing?'Ⅱ Пауза':'♫ Слушать';
       btn.setAttribute('aria-pressed',String(selected&&state.playing));
