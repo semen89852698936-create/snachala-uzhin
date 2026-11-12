@@ -1,33 +1,39 @@
-"""Regression check: Our Evening inspiration must show the SAME recipe asset as catalog."""
+"""Regression: the three approved newspaper recipe buttons link to real catalog recipes."""
 from pathlib import Path
 import re
 import unittest
+import json
 
 ROOT = Path(__file__).resolve().parents[1]
 HTML = (ROOT / "index.html").read_text(encoding="utf-8")
-IDS = ("salmon-lemon", "collection-pasta-01-03", "chocolate-cake")
+IDS = {
+    "salmon-lemon": "/assets/evening-card-salmon.webp",
+    "collection-pasta-01-03": "/assets/evening-card-pasta.webp",
+    "chocolate-cake": "/assets/evening-card-brownie.webp",
+}
 
 class OurEveningPhotoParity(unittest.TestCase):
-    def test_cards_use_exact_catalog_image_paths(self):
-        for recipe_id in IDS:
+    def test_approved_paper_buttons_use_approved_images_and_real_recipe_links(self):
+        source = re.search(
+            r'<script id="recipeData" type="application/json">([\s\S]*?)</script>', HTML
+        )
+        self.assertIsNotNone(source, "Main recipe catalog missing")
+        recipes = {r["id"] for r in json.loads(source.group(1))}
+        for recipe_id, approved_path in IDS.items():
             with self.subTest(recipe=recipe_id):
-                catalog = re.search(
-                    r'"id":"' + re.escape(recipe_id) + r'"[^}]*?"photo":"([^"]+)"',
-                    HTML,
+                self.assertIn(recipe_id, recipes)
+                pattern = (
+                    r'<a class="du-approved-cover-recipe du-evening-paper-card" '
+                    r'href="#recipe=' + re.escape(recipe_id)
+                    + r'"[^>]*><img src="([^"]+)"'
                 )
-                self.assertIsNotNone(catalog, f"Recipe {recipe_id} missing")
-                card = re.search(
-                    r'<a class="du-evening-inspiration-card" href="#recipe='
-                    + re.escape(recipe_id)
-                    + r'"><img src="([^"]+)"',
-                    HTML,
-                )
-                self.assertIsNotNone(card, f"Inspiration card {recipe_id} missing")
-                self.assertEqual(catalog.group(1), card.group(1))
-                self.assertTrue((ROOT / card.group(1).lstrip("/")).is_file())
+                button = re.search(pattern, HTML)
+                self.assertIsNotNone(button, f"Approved newspaper button {recipe_id} missing")
+                self.assertEqual(button.group(1), approved_path)
+                self.assertTrue((ROOT / approved_path.lstrip("/")).is_file())
 
-    def test_no_unrelated_external_image_sources_in_inspiration_cards(self):
-        grid = HTML.split('<div class="du-evening-inspiration-grid">', 1)[1].split("</div>", 1)[0]
+    def test_no_external_image_sources_in_approved_paper_buttons(self):
+        grid = HTML.split('<div class="du-match11-recipe-grid">', 1)[1].split("</div>", 1)[0]
         self.assertNotIn("images.pexels.com", grid)
         self.assertNotIn("images.unsplash.com", grid)
 
