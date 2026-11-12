@@ -1580,11 +1580,12 @@ html body.du-evening-mode #evening .du-moods > button.du-mood[data-mood="cozy"] 
 
 
 /* RESTORE_MOOD_RED_UNDERLINE_20261112
-   Original selection cue (formerly drawn behind the hidden live <strong>)
-   is now drawn over each already-approved printed image.
-   Scope: only selected Evening mood; no player, photos, grid or interactions. */
-html body #evening .du-moods > button.du-mood[data-mood]:is(.is-selected,[aria-pressed="true"])::after,
-html body.du-evening-mode #evening .du-moods > button.du-mood[data-mood]:is(.is-selected,[aria-pressed="true"])::after {
+   Keep the approved red underline exactly where it was.
+   Draw it smoothly from left to right on the selected mood, like marker ink.
+   The pseudo-element exists even when unselected, so its reveal can animate.
+   No changes to markup, click handlers, cards, images or player. */
+html body #evening .du-moods > button.du-mood[data-mood]::after,
+html body.du-evening-mode #evening .du-moods > button.du-mood[data-mood]::after {
   content:""!important;
   display:block!important;
   position:absolute!important;
@@ -1597,7 +1598,19 @@ html body.du-evening-mode #evening .du-moods > button.du-mood[data-mood]:is(.is-
   border:0!important;
   border-radius:3px!important;
   box-shadow:none!important;
-  clip-path:none!important;
+  clip-path:inset(0 100% 0 0)!important;
   transform:rotate(-.7deg)!important;
+  transform-origin:left center!important;
+  transition:clip-path .7s cubic-bezier(.2,.6,.3,1)!important;
   pointer-events:none!important;
+}
+html body #evening .du-moods > button.du-mood[data-mood]:is(.is-selected,[aria-pressed="true"])::after,
+html body.du-evening-mode #evening .du-moods > button.du-mood[data-mood]:is(.is-selected,[aria-pressed="true"])::after {
+  clip-path:inset(0 0 0 0)!important;
+}
+@media (prefers-reduced-motion:reduce) {
+  html body #evening .du-moods > button.du-mood[data-mood]::after,
+  html body.du-evening-mode #evening .du-moods > button.du-mood[data-mood]::after {
+    transition:none!important;
+  }
 }
