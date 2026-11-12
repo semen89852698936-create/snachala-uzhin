@@ -1,8 +1,7 @@
-/* СНАЧАЛА УЖИН / independent music player, demonstration edition.
-   All demo sounds are generated algorithmically in the visitor's browser:
-   no third-party recordings, samples, or playback embeds. Licensed audio may
-   be connected later only with an explicit per-track streaming-rights flag.
-   Original live site and approved editorial playlists are not modified. */
+/* СНАЧАЛА УЖИН / newspaper music player.
+   Plays only explicitly allowed CC BY 4.0 recordings listed in the manifest.
+   Credit and license information: /music/credits.html.
+   Existing site layout and editorial playlists remain unchanged. */
 (() => {
   'use strict';
   if (window.__duNewspaperPlayerInstalled) return;
@@ -21,7 +20,10 @@
   const phaseData = () => state.manifest?.playlists[state.phase];
   const tracks = () => phaseData()?.tracks || [];
   const current = () => tracks()[state.index];
-  const duration = () => Number(current()?.durationSeconds) || DEMO_SECONDS;
+  const duration = () => {
+    if (!state.demo && state.audio && Number.isFinite(state.audio.duration) && state.audio.duration > 0) return state.audio.duration;
+    return Number(current()?.durationSeconds) || (state.demo ? DEMO_SECONDS : 0);
+  };
   const timeText = sec => {
     sec=Math.max(0,Math.floor(Number(sec)||0));
     return Math.floor(sec/60)+':'+String(sec%60).padStart(2,'0');
@@ -47,17 +49,16 @@
   }
   function stopEngine() {
     stopVoices();
-    if(state.audio) {
-      state.audio.pause();
-      state.audio.removeAttribute('src'); state.audio.load(); state.audio=null;
-    }
-    // Keep the audio engine available for immediate switching and next-track playback.
+    if(state.audio) state.audio.pause();
+    // Reuse the same HTMLAudioElement for uninterrupted next-track playback.
   }
   function ctxTime() { return state.ctx?.currentTime || 0; }
   function position() {
     if(!state.playing) return state.elapsed;
     if(state.demo) return Math.min(duration(),Math.max(0,ctxTime()-state.anchor));
-    return state.audio ? Math.min(duration(),state.audio.currentTime) : state.elapsed;
+    if (!state.audio) return state.elapsed;
+    const d = duration();
+    return d > 0 ? Math.min(d,state.audio.currentTime) : state.audio.currentTime;
   }
   function padNote(midi,t,len,level,type='sine') {
     const ctx=state.ctx, master=state.master;
@@ -119,7 +120,7 @@
     if(!item||!chapter) return;
     try{
       navigator.mediaSession.metadata=new MediaMetadata({
-        title:item.title,artist:'СНАЧАЛА УЖИН · оригинальное демо',
+        title:item.title,artist:'Kevin MacLeod (incompetech.com)',
         album:chapter.label
       });
       navigator.mediaSession.playbackState=state.playing?'playing':'paused';
@@ -137,22 +138,21 @@
     try{
       state.started=true;
       const verified=!!(track.src && track.license?.streamingAllowed===true);
-      state.demo=!verified;
-      if(verified) {
-        if(!state.audio){
-          state.audio=new Audio(); state.audio.preload='auto';
-          state.audio.addEventListener('ended',()=>next().catch(()=>{}));
-          state.audio.addEventListener('error',()=>{pause();announce('Запись недоступна. Проверь источник аудио.');});
-          state.audio.src=track.src; state.audio.volume=state.volume;
-        }
-        state.audio.currentTime=state.elapsed;
-        await state.audio.play();
-      }else{
-        await ensureContext();
-        if(state.ctx.state!=='running') await state.ctx.resume();
-        stopVoices();
-        synthesizeDemo(track,state.elapsed);
+      if(!verified) throw new Error('Аудиозапись не имеет разрешённого источника.');
+      state.demo=false;
+      if(!state.audio) {
+        state.audio=new Audio();
+        state.audio.preload='auto';
+        state.audio.addEventListener('ended',()=>next().catch(()=>{}));
+        state.audio.addEventListener('loadedmetadata',render);
+        state.audio.addEventListener('error',()=>{pause();announce('Аудиофайл сейчас недоступен. Проверь интернет или попробуй другую композицию.');});
       }
+      if(state.audio.getAttribute('src')!==track.src) state.audio.src=track.src;
+      state.audio.volume=state.volume;
+      if(state.elapsed>0) {
+        try {state.audio.currentTime=state.elapsed;} catch(_) {}
+      }
+      await state.audio.play();
       state.playing=true;
       state.panelOpen=true;
       render();
@@ -209,8 +209,8 @@
       '<span class="du-np-kicker">НОТНАЯ ХРОНИКА / ВЫРЕЗКА № 0'+(PHASES.indexOf(phase)+1)+'</span>'+
       '<div class="du-np-headline">Ритм <i>вечера</i><span>♫</span></div>'+
       '<p class="du-np-phase-name">'+label+'</p>'+
-      '<p class="du-np-trackline" data-np-inline-track="'+phase+'">Две авторские демозаписи · без чужих песен</p>'+
-      '<button type="button" class="du-np-start" data-np-action="phase" data-np-phase="'+phase+'">▶ Слушать демо</button>'+
+      '<p class="du-np-trackline" data-np-inline-track="'+phase+'">Музыка Kevin MacLeod · CC BY 4.0</p>'+
+      '<button type="button" class="du-np-start" data-np-action="phase" data-np-phase="'+phase+'">▶ Слушать музыку</button>'+
       '<div class="du-np-corner">№ 0'+(PHASES.indexOf(phase)+1)+'</div>'+
     '</div></div>';
   }
@@ -226,9 +226,9 @@
         '<button type="button" data-np-action="tab" data-np-phase="dinner">Ужинать</button>'+
         '<button type="button" data-np-action="tab" data-np-phase="after">Продолжить</button>'+
         '</nav>'+
-        '<div class="du-np-now"><span class="du-np-stamp" id="duNpDemoStamp">ДЕМО</span>'+
-        '<strong id="duNpTrack">Тестовая запись</strong>'+
-        '<small id="duNpSub">Только оригинальная инструментальная музыка</small></div>'+
+        '<div class="du-np-now"><span class="du-np-stamp" id="duNpDemoStamp">CC BY</span>'+
+        '<strong id="duNpTrack">Музыкальная газета</strong>'+
+        '<small id="duNpSub">Kevin MacLeod · CC BY 4.0</small></div>'+
         '<div class="du-np-transport">'+
         '<button type="button" data-np-action="previous" title="Предыдущий трек" aria-label="Предыдущий трек"><svg class="du-np-svg" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 5V19" stroke="#692d42" stroke-width="2" stroke-linecap="round"/><path d="M19 5L8 12L19 19Z" fill="#692d42"/></svg></button>'+
         '<button type="button" class="du-np-main-play" data-np-action="toggle" id="duNpToggle" aria-label="Воспроизвести"><svg class="du-np-svg" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 4L20 12L8 20Z" fill="#fff8ef"/></svg></button>'+
@@ -240,7 +240,7 @@
         '<div class="du-np-bottom"><label for="duNpVolume">♫ Громкость</label>'+
         '<input type="range" id="duNpVolume" min="0" max="100" value="65" aria-label="Громкость" />'+
         '<span id="duNpCount">01 / 02</span></div>'+
-        '<p class="du-np-notice">Оригинальные демозаписи. Чужие песни не звучат.</p>'+ '<button type="button" class="du-np-popout" data-np-action="popout" title="Отдельное окно продолжает играть при переходах по сайту" aria-label="Открыть отдельное музыкальное окно для непрерывного прослушивания">↗ Отдельное окно</button>'+
+        '<p class="du-np-notice">Kevin MacLeod (incompetech.com) · <a href="/music/credits.html" target="_blank" rel="noopener noreferrer">Авторство и все 40 записей</a> · <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener noreferrer">CC BY 4.0</a></p>'+ '<button type="button" class="du-np-popout" data-np-action="popout" title="Отдельное окно продолжает играть при переходах по сайту" aria-label="Открыть отдельное музыкальное окно для непрерывного прослушивания">↗ Отдельное окно</button>'+
         '<div class="du-np-print-colophon" aria-hidden="true"><span>СЛУШАЙ. ГОТОВЬ. БУДЬ ВДВОЁМ.</span><span>СПЕЦИАЛЬНЫЙ ВЫПУСК ДЛЯ ВАШЕГО ВЕЧЕРА</span></div>'+ '<p class="du-np-feedback" role="status" hidden></p>'+
         '</div>'+
       '</section>'+
@@ -262,7 +262,7 @@
     $$('#music .du-music-spotify-extra iframe').forEach(node=>node.remove());
     $$('#music .du-music-spotify-extra').forEach(node=>node.hidden=true);
     const legal=$('#music .du-music-legal');
-    if(legal) legal.textContent='Собственный плеер использует оригинальные синтезированные демозаписи. Редакционные списки известных песен остаются для вдохновения и не воспроизводятся. Для коммерческих записей потребуются права на потоковое прослушивание.';
+    if(legal) legal.textContent='В нашем плеере 40 записей Kevin MacLeod по Creative Commons Attribution 4.0, с обязательным указанием автора. Другие 20 произведений не воспроизводятся. Условия и ссылки доступны в музыкальном плеере.';
     const dock=document.createElement('div');
     dock.innerHTML=floatingMarkup();
     document.body.appendChild(dock.firstElementChild);
@@ -281,7 +281,7 @@
     launcher.innerHTML='<span>♫</span> '+(state.playing?'Играет':'Музыка');
     const trackEl=$('#duNpTrack'),sub=$('#duNpSub'),toggle=$('#duNpToggle');
     if(trackEl)trackEl.textContent=item?.title||'Музыкальная газета';
-    if(sub)sub.textContent=label+(item?' · '+item.bpm+' BPM':'');
+    if(sub)sub.textContent=label+(item?' · '+item.bpm+' BPM · Kevin MacLeod':'');
     if(toggle){toggle.innerHTML=playSymbol;toggle.setAttribute('aria-label',state.playing?'Пауза':'Воспроизвести');}
     const seek=$('#duNpSeek');if(seek){seek.max=currentDuration;seek.value=Math.min(currentDuration,elapsed);}
     if($('#duNpElapsed'))$('#duNpElapsed').textContent=timeText(elapsed);
@@ -292,14 +292,14 @@
     $$('.du-np-tabs button').forEach(btn=>btn.setAttribute('aria-pressed',String(btn.dataset.npPhase===state.phase)));
     $$('.du-np-start').forEach(btn=>{
       const selected=btn.dataset.npPhase===state.phase;
-      btn.textContent=selected&&state.playing?'Ⅱ Пауза':'▶ Слушать демо';
+      btn.textContent=selected&&state.playing?'Ⅱ Пауза':'▶ Слушать музыку';
       btn.setAttribute('aria-pressed',String(selected&&state.playing));
     });
     $$('.du-np-trackline').forEach(el=>{
       const phase=el.dataset.npInlineTrack;
       const list=state.manifest?.playlists[phase]?.tracks||[];
       el.textContent=phase===state.phase&&state.started?(item?.title||'')+' · '+item?.bpm+' BPM':
-        list.map(t=>t.title).join(' · ');
+        list.length+' композиций Kevin MacLeod';
     });
     if(state.error)announce(state.error);
   }
@@ -338,7 +338,7 @@
     document.addEventListener('visibilitychange',()=>{if(!document.hidden)render();});
     window.addEventListener('pagehide',()=>{if(state.playing)pause();});
     state.clock=setInterval(()=>{
-      if(state.playing&&position()>=duration()-.035){
+      if(state.playing&&state.demo&&position()>=duration()-.035){
         next().catch(()=>{});
         return;
       }
@@ -372,7 +372,7 @@
     }catch(err){
       console.error('Газетный плеер:',err);
       const node=document.createElement('p');
-      node.className='du-np-error';node.textContent='Не удалось загрузить тестовый музыкальный плеер.';
+      node.className='du-np-error';node.textContent='Не удалось загрузить музыкальный плеер.';
       $('#music')?.appendChild(node);
     }
   }
