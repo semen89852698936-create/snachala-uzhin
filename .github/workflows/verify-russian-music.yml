@@ -1,0 +1,26 @@
+name: Verify licensed Russian music integration
+on:
+  push:
+    branches:
+      - feat/russian-licensed-playlists-20261112
+    paths:
+      - music/native-player-manifest.json
+      - music/russian-licensed-intake-20261112.json
+      - music/credits.html
+      - scripts/test_russian_music_catalog.py
+      - .github/workflows/verify-russian-music.yml
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+        with:
+          persist-credentials: false
+      - name: Validate all audio manifest gates
+        run: python3 -m unittest discover -s scripts -p 'test_russian_music_catalog.py' -v
+      - name: Check player JS syntax
+        run: node --check assets/native-music-player-20261112.js
