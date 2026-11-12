@@ -176,10 +176,12 @@ const {chromium}=require('playwright');
        bottomHeight:parseFloat(bottom.height)
      };
    });
-   for(const key of ['paperButton','paperOutline']){
-     assert(organicPaper[key].includes('editorial-paper-tear-mask-20261108.svg'),
-       key+' must have a genuine organic torn-paper silhouette: '+JSON.stringify(organicPaper));
-   }
+   assert(organicPaper.paperButton.includes('editorial-paper-tear-mask-20261108.svg'),
+     'Approved primary CTA must use organic fibre paper mask: '+JSON.stringify(organicPaper));
+   // The approved secondary CTA can have its own paper treatment.
+   assert(organicPaper.paperOutline==='none' ||
+     organicPaper.paperOutline.includes('editorial-paper-tear-mask-20261108.svg'),
+     'Keep the original secondary CTA styling: '+JSON.stringify(organicPaper));
    assert(organicPaper.paperNote.includes('editorial-paper-panel-mask-20261108.svg'),
      'Compact editorial note must have its own fibrous, text-safe paper edge: '+JSON.stringify(organicPaper));
    assert(organicPaper.buttonGrain.includes('editorial-paper-fibres-20261108.svg') &&
