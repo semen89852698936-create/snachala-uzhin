@@ -1517,3 +1517,33 @@ html body.du-evening-mode #evening .du-moods > button.du-mood[data-mood="spark"]
   opacity:0!important;
   pointer-events:none!important;
 }
+
+
+/* APPROVED_PLAY_ONLY_20261112
+   Third mood card: exact user-supplied artwork. Preserve four-button layout,
+   approved first/second cards and the native music player without modification. */
+html body #evening .du-moods > button.du-mood[data-mood="play"],
+html body.du-evening-mode #evening .du-moods > button.du-mood[data-mood="play"] {
+  background-color:transparent!important;
+  background-image:url('/assets/evening-approved-20261112/evening-mood-play.webp')!important;
+  background-size:contain!important;
+  background-position:center center!important;
+  background-repeat:no-repeat!important;
+  background-blend-mode:normal!important;
+  clip-path:none!important;
+  -webkit-mask-image:none!important;
+  mask-image:none!important;
+  box-shadow:none!important;
+}
+html body #evening .du-moods > button.du-mood[data-mood="play"]::before,
+html body #evening .du-moods > button.du-mood[data-mood="play"]::after,
+html body.du-evening-mode #evening .du-moods > button.du-mood[data-mood="play"]::before,
+html body.du-evening-mode #evening .du-moods > button.du-mood[data-mood="play"]::after {
+  content:none!important;
+  display:none!important;
+}
+html body #evening .du-moods > button.du-mood[data-mood="play"] :is(.du-mood-num,.du-mood-icon,.du-mood-check,strong,small),
+html body.du-evening-mode #evening .du-moods > button.du-mood[data-mood="play"] :is(.du-mood-num,.du-mood-icon,.du-mood-check,strong,small) {
+  opacity:0!important;
+  pointer-events:none!important;
+}
