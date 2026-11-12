@@ -28,7 +28,8 @@ const assets = fs.readdirSync(assetDir).filter(x => x.endsWith('.webp'));
 const records = fs.readdirSync(recordDir).filter(x => x.endsWith('.json'));
 const expected = new Set(recipes.map(x => x.id));
 if (recipes.length !== 100) errors.push('expected 100 unique recipes, found ' + recipes.length);
-for (const file of assets) if (!expected.has(file.slice(0, -5))) errors.push('orphan WebP: ' + file);
+const approvedEditorialImages = new Set(['airfryer-newspaper-approved-20261110.webp']);
+for (const file of assets) if (!expected.has(file.slice(0, -5)) && !approvedEditorialImages.has(file)) errors.push('orphan WebP: ' + file);
 for (const file of records) if (!expected.has(file.slice(0, -5))) errors.push('orphan record: ' + file);
 for (const recipe of recipes) {
   const expectedPath = 'assets/airfryer/' + recipe.id + '.webp';
