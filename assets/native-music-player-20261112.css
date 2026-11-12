@@ -960,7 +960,8 @@ html body #duNewspaperDock #duNpPanel .du-np-dock-paper {
     "masthead masthead"
     "tabs tabs"
     "now transport"
-    "popout popout"
+    "timeline timeline"
+    "volume popout"
     "colophon colophon"
     "feedback feedback"!important;
 }
@@ -975,3 +976,7 @@ html body #duNewspaperDock #duNpPanel .du-np-dock-paper {
 html body #duNewspaperDock #duNpPanel.du-np-dock-body {
   border-radius:0!important;
 }
+
+/* HIDE_BPM_FROM_ALL_MUSIC_CARDS_20261112
+   Keep numerical tempos in the source manifest for curation, not in UI. */
+#music .du-bpm-pill {display:none!important;}
