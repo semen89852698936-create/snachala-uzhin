@@ -296,7 +296,7 @@
     const standalone=document.body.classList.contains('du-np-standalone');
     const music=$('#music'),grid=$('#music .du-music-grid');
     if(!standalone&&music&&grid){
-      music.insertBefore(dock,grid);
+      grid.insertAdjacentElement('afterend',dock);
       dock.classList.add('du-np-embedded-dock');
       document.body.classList.add('du-np-embedded-mode');
       const compact=document.createElement('div');
