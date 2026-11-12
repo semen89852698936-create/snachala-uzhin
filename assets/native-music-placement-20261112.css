@@ -241,3 +241,29 @@ html body #duNpMini#duNpMini .du-np-mini-close {
     width:23px!important;min-width:23px!important;
   }
 }
+
+
+/* MUSIC_PLAYER_BELOW_PLAYLISTS_HALF_WIDTH_20261112
+ * The one main newspaper player now follows the three approved music cards.
+ * At full desktop grid width it occupies exactly half the card-row width.
+ * Phones keep the full usable width so transport controls stay accessible. */
+@media(min-width:960px) {
+  html body #homeView #music #duNewspaperDock.du-np-dock,
+  html body #music #duNewspaperDock.du-np-dock {
+    width:50%!important;
+    max-width:none!important;
+    margin:22px auto 12px!important;
+  }
+}
+@media(min-width:621px) and (max-width:959px) {
+  html body #music #duNewspaperDock.du-np-dock {
+    width:min(620px,calc(100% - 18px))!important;
+    margin:20px auto 10px!important;
+  }
+}
+@media(max-width:620px) {
+  html body #music #duNewspaperDock.du-np-dock {
+    width:calc(100% - 4px)!important;
+    margin:16px auto 8px!important;
+  }
+}
