@@ -2153,3 +2153,44 @@ html body #duNewspaperDock #duNpPanel button.du-np-pixel-play::after {
   content:none!important;
   display:none!important;
 }
+
+/* STATIONARY_APPROVED_NEWSPAPER_PLAYER_20261112
+   No mouse/touch dragging. Keep the approved raster newspaper at its original
+   full-width position directly below all three music cards. Playing, pausing,
+   switching chapters and scrolling may not float or resize it. */
+html body #music > #duNewspaperDock.du-np-dock {
+  position:relative!important;
+  inset:auto!important;
+  top:auto!important;
+  bottom:auto!important;
+  left:auto!important;
+  right:auto!important;
+  width:100%!important;
+  max-width:none!important;
+  margin:24px 0 0!important;
+  transform:none!important;
+  z-index:auto!important;
+  pointer-events:auto!important;
+}
+html body #duNewspaperDock #duNpPanel .du-np-top,
+html body #duNewspaperDock #duNpPanel .du-np-top:active,
+html body #duNewspaperDock #duNpPanel .du-np-pixel-drag.du-np-top,
+html body #duNewspaperDock #duNpPanel .du-np-pixel-drag.du-np-top:active {
+  cursor:default!important;
+  touch-action:auto!important;
+}
+html body #duNewspaperDock #duNpPanel .du-np-pixel-drag.du-np-top {
+  pointer-events:none!important;
+}
+/* The letter g in "Night" must not lose its descender. Reserve a touch of
+   vertical room for the live title without scaling or moving the newspaper. */
+html body #duNewspaperDock #duNpPanel .du-np-pixel-live-title {
+  top:41.6%!important;
+  height:19.6%!important;
+}
+html body #duNewspaperDock #duNpPanel .du-np-pixel-live-title strong {
+  line-height:1.28!important;
+  padding-bottom:.18em!important;
+  overflow:visible!important;
+  text-overflow:clip!important;
+}
