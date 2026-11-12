@@ -1,0 +1,129 @@
+name: Two isolated Yandex photo corrections, test before further paid retries
+
+on:
+  push:
+    branches:
+      - photo-production/owner-meat-64-20261113
+    paths:
+      - .github/workflows/test-meat-corrections-2.yml
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: meat-corrections-2-20261113
+  cancel-in-progress: false
+
+jobs:
+  candidate-tests:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: photo-production/owner-meat-64-20261113
+          persist-credentials: true
+      - uses: actions/checkout@v4
+        with:
+          repository: semen89852698936-create/snachala-uzhin
+          ref: photo-production/yandex-ai-art-1001
+          path: _photo_source
+          sparse-checkout: |
+            photo-pipeline
+            photo-library/recipes.json
+          sparse-checkout-cone-mode: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: python3 -m pip install --quiet 'Pillow>=10,<13'
+      - name: Produce two explicitly bounded paid correction tests, with safety checkpoints
+        shell: bash
+        env:
+          YANDEX_API_KEY: ${{ secrets.YANDEX_API_KEY }}
+          YANDEX_FOLDER_ID: ${{ secrets.YANDEX_FOLDER_ID || 'b1g00u8p0k5nl98v8nre' }}
+          PHOTO_COST_APPROVED: 'true'
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          for n in 26 28; do
+            n="$n" python3 - <<'PY'
+          import json,os
+          from pathlib import Path
+          n=int(os.environ['n'])
+          root=Path('photo-library/regeneration-owner-meat-64-20261113/correction-tests')
+          image=root/f'{n:04d}-revision1.webp'
+          record=root/f'{n:04d}-revision1.json'
+          pending=root/f'{n:04d}-revision1.pending.json'
+          if image.exists() and record.exists():
+              print(f'COMPLETE {n}')
+          elif pending.exists():
+              raise RuntimeError(f'Unresolved paid request {n}; do not retry')
+          elif not image.exists() and not record.exists():
+              pending.parent.mkdir(parents=True,exist_ok=True)
+              pending.write_text(json.dumps({'n':n,'status':'paid_request_reserved_once',
+                  'new_approach':'omit visual references to whole peppers/prunes',
+                  'not_published':True},ensure_ascii=False,indent=2),encoding='utf-8')
+          else: raise RuntimeError(f'Partial candidate exists: {n}')
+          PY
+            git add -A photo-library/regeneration-owner-meat-64-20261113/correction-tests
+            if ! git diff --cached --quiet; then
+              git commit -m "Reserve single Yandex correction experiment for photo $n"
+              git push origin HEAD:photo-production/owner-meat-64-20261113
+            fi
+            n="$n" python3 - <<'PY'
+          import importlib.util,os,hashlib,json
+          from pathlib import Path
+          from datetime import datetime,timezone
+          n=int(os.environ['n'])
+          root=Path('photo-library/regeneration-owner-meat-64-20261113/correction-tests')
+          photo=root/f'{n:04d}-revision1.webp'
+          record=root/f'{n:04d}-revision1.json'
+          pending=root/f'{n:04d}-revision1.pending.json'
+          raw=root/f'{n:04d}-revision1.raw.png'
+          if photo.exists() and record.exists():
+              print(f'SKIP_COMPLETE {n}')
+              raise SystemExit(0)
+          assert json.loads(pending.read_text(encoding='utf-8'))['status']=='paid_request_reserved_once'
+          spec=importlib.util.spec_from_file_location('ym','_photo_source/photo-pipeline/generate_yandexart.py')
+          ym=importlib.util.module_from_spec(spec);spec.loader.exec_module(ym)
+          prompts={
+           26:('Профессиональная фотореалистичная фотография готовой еды: '
+               'три круглых хорошо прожаренных говяжьих медальона с золотисто-коричневой корочкой. '
+               'Медальоны политы однородным СВЕТЛО-БЕЖЕВЫМ густым сливочным соусом '
+               'с едва заметными тёмными точками размолотой специи. '
+               'На тарелке ТОЛЬКО три медальона и сливочный соус. '
+               'Нет колец, стручков, ломтиков, целых горошин, листьев, зелёных овощей, '
+               'гарниров, глазуньи, текста. Тёплый свет, белая тарелка, крупный план.'),
+           28:('Профессиональная фотореалистичная фотография готовой еды: '
+               'три румяных говяжьих медальона, политых ГУСТЫМ ТЁМНО-КОРИЧНЕВЫМ '
+               'однородным фруктовым соусом с едва заметными мелкими тёмными '
+               'частицами и немного семенами тмина в соусе. '
+               'На поверхности мяса только соус. '
+               'Нет целых плодов, ягод, оливок, цельных сухофруктов, '
+               'лишних украшений, овощей, гарниров, текста. '
+               'Светлая чистая керамическая тарелка, тёплый свет, крупный план.')
+          }
+          prompt=prompts[n]
+          assert len(prompt)<=500,(n,len(prompt))
+          if not raw.exists():
+              ym.atomic_write(raw,ym.request_image(prompt,os.environ['YANDEX_API_KEY'],os.environ['YANDEX_FOLDER_ID']))
+          webp=ym.encode_webp(raw.read_bytes())
+          sha=hashlib.sha256(webp).hexdigest()
+          ym.atomic_write(photo,webp)
+          ym.atomic_write(record,json.dumps({
+             'n':n,'prompt':prompt,'sha256':sha,'status':'correction_test_not_published',
+             'manual_qa_required':True,'generated_at':datetime.now(timezone.utc).isoformat()
+          },ensure_ascii=False,indent=2).encode())
+          pending.unlink()
+          raw.unlink()
+          print(f'REVISION1 {n} SHA256={sha}')
+          PY
+            git add -A photo-library/regeneration-owner-meat-64-20261113/correction-tests
+            if ! git diff --cached --quiet; then
+              git diff --cached --check
+              git commit -m "Store one Yandex correction photo test $n, unpublished"
+              git push origin HEAD:photo-production/owner-meat-64-20261113
+            fi
+          done
