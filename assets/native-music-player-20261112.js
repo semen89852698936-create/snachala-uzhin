@@ -13,7 +13,7 @@
     manifest:null, phase:'kitchen', index:0, playing:false, started:false,
     elapsed:0, volume:.65, ctx:null, master:null, voices:[], audio:null,
     anchor:0, clock:null, pending:false, panelOpen:false,
-    error:'', demo:true
+    error:'', demo:true, shuffleQueue:[], shufflePosition:0
   };
   const $ = (s,root=document) => root.querySelector(s);
   const $$ = (s,root=document) => [...root.querySelectorAll(s)];
@@ -172,6 +172,29 @@
     render();
     applyMediaSession();
   }
+
+  // An independent randomized run for each selected mood. Shuffle each entire
+  // cycle without replacement, keep history for Previous, and avoid an
+  // immediate repeat where two shuffled cycles meet.
+  function shuffledIndices(count,avoidFirst=-1){
+    const order=Array.from({length:count},(_,i)=>i);
+    for(let i=order.length-1;i>0;i--){
+      const j=Math.floor(Math.random()*(i+1));
+      [order[i],order[j]]=[order[j],order[i]];
+    }
+    if(count>1 && order[0]===avoidFirst){
+      const j=1+Math.floor(Math.random()*(count-1));
+      [order[0],order[j]]=[order[j],order[0]];
+    }
+    return order;
+  }
+  async function startRandomPlaylist(phase,autoplay=true){
+    const group=state.manifest?.playlists[phase];
+    if(!group?.tracks?.length)return;
+    state.shuffleQueue=shuffledIndices(group.tracks.length);
+    state.shufflePosition=0;
+    await choose(phase,state.shuffleQueue[0],autoplay);
+  }
   async function choose(phase,index=0,autoplay=true) {
     if(!state.manifest?.playlists[phase])return;
     stopEngine();state.playing=false;state.phase=phase;
@@ -182,13 +205,21 @@
   }
   async function next(){
     if(!tracks().length)return;
-    const following=state.index+1;
-    if(following<tracks().length)await choose(state.phase,following,state.playing);
-    else { await choose(state.phase,0,state.playing); }
+    if(!state.shuffleQueue.length){
+      state.shuffleQueue=[state.index,...shuffledIndices(tracks().length).filter(i=>i!==state.index)];
+      state.shufflePosition=0;
+    }
+    if(state.shufflePosition+1>=state.shuffleQueue.length){
+      state.shuffleQueue.push(...shuffledIndices(tracks().length,state.index));
+    }
+    state.shufflePosition++;
+    await choose(state.phase,state.shuffleQueue[state.shufflePosition],state.playing);
   }
   async function previous(){
     if(!tracks().length)return;
-    await choose(state.phase,Math.max(0,state.index-1),state.playing);
+    if(state.shufflePosition<=0)return;
+    state.shufflePosition--;
+    await choose(state.phase,state.shuffleQueue[state.shufflePosition],state.playing);
   }
   async function seek(seconds){
     const to=Math.max(0,Math.min(duration()-.02,Number(seconds)||0));
@@ -234,6 +265,11 @@
         '<button type="button" class="du-np-main-play" data-np-action="toggle" id="duNpToggle" aria-label="Воспроизвести"><svg class="du-np-svg" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 4L20 12L8 20Z" fill="#fff8ef"/></svg></button>'+
         '<button type="button" data-np-action="next" title="Следующий трек" aria-label="Следующий трек"><svg class="du-np-svg" viewBox="0 0 24 24" aria-hidden="true"><path d="M19 5V19" stroke="#692d42" stroke-width="2" stroke-linecap="round"/><path d="M5 5L16 12L5 19Z" fill="#692d42"/></svg></button>'+
         '</div>'+
+        '<div class="du-np-timeline"><span id="duNpElapsed">0:00</span>'+
+        '<input type="range" id="duNpSeek" min="0" max="14" value="0" step=".1" aria-label="Перемотка композиции">'+
+        '<span id="duNpTotal">0:14</span></div>'+
+        '<div class="du-np-bottom"><label for="duNpVolume">♫ Громкость</label>'+
+        '<input type="range" id="duNpVolume" min="0" max="100" value="65" aria-label="Громкость" /></div>'+
         '<button type="button" class="du-np-popout" data-np-action="popout" title="Отдельное окно продолжает играть при переходах по сайту" aria-label="Открыть отдельное музыкальное окно для непрерывного прослушивания">↗ Отдельное окно</button>'+
         '<div class="du-np-print-colophon" aria-hidden="true"><span>СЛУШАЙ. ГОТОВЬ. БУДЬ ВДВОЁМ.</span><span>СПЕЦИАЛЬНЫЙ ВЫПУСК ДЛЯ ВАШЕГО ВЕЧЕРА</span></div>'+ '<p class="du-np-feedback" role="status" hidden></p>'+
         '</div>'+
@@ -263,8 +299,7 @@
           const artist=document.createElement('span');artist.textContent='Kevin MacLeod';
           const source=document.createElement('a');source.href=track.source;source.target='_blank';source.rel='noopener noreferrer';
           source.textContent='Источник и лицензия ↗';
-          const bpm=document.createElement('span');bpm.className='du-bpm-pill';bpm.textContent=track.bpm+' BPM';
-          details.append(title,artist,source);li.append(art,details,bpm);list.appendChild(li);
+          details.append(title,artist,source);li.append(art,details);list.appendChild(li);
         });
         suggestions.appendChild(list);
       }
@@ -354,7 +389,7 @@
     launcher.innerHTML='<span>♫</span> '+(state.playing?'Играет':'Музыка');
     const trackEl=$('#duNpTrack'),sub=$('#duNpSub'),toggle=$('#duNpToggle');
     if(trackEl)trackEl.textContent=item?'Kevin MacLeod - '+item.title:'Музыкальная газета';
-    if(sub)sub.textContent=label+(item?' · '+item.bpm+' BPM':'');
+    if(sub)sub.textContent=label;
     if(toggle){toggle.innerHTML=playSymbol;toggle.setAttribute('aria-label',state.playing?'Пауза':'Воспроизвести');}
     const seek=$('#duNpSeek');if(seek){seek.max=currentDuration;seek.value=Math.min(currentDuration,elapsed);}
     if($('#duNpElapsed'))$('#duNpElapsed').textContent=timeText(elapsed);
@@ -389,11 +424,10 @@
         else announce('Разреши открытие музыкального окна в настройках браузера.');
         return;
       }
-      if(action==='tab'){choose(btn.dataset.npPhase,0,false);state.panelOpen=true;render();return;}
+      if(action==='tab'){startRandomPlaylist(btn.dataset.npPhase,false).catch(()=>{});state.panelOpen=true;render();return;}
       if(action==='phase'){
         if(state.phase===btn.dataset.npPhase&&state.playing){pause();return;}
-        if(state.phase!==btn.dataset.npPhase)choose(btn.dataset.npPhase,0,true).catch(()=>{});
-        else play().catch(()=>{});
+        startRandomPlaylist(btn.dataset.npPhase,true).catch(()=>{});
         return;
       }
       if(action==='toggle'){(state.playing?Promise.resolve(pause()):play()).catch(()=>{});return;}
@@ -434,6 +468,14 @@
         const volume=Number(params.get('volume'));
         if(Number.isFinite(volume)&&params.has('volume'))state.volume=Math.max(0,Math.min(1,volume/100));
       }
+      if(document.body.classList.contains('du-np-standalone')){
+        const initial=state.index;
+        state.shuffleQueue=[initial,...shuffledIndices(tracks().length).filter(i=>i!==initial)];
+      }else{
+        state.shuffleQueue=shuffledIndices(tracks().length);
+        state.index=state.shuffleQueue[0];
+      }
+      state.shufflePosition=0;
       build();
       enablePlayerDragging();
       installEvents();
