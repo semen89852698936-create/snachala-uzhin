@@ -385,3 +385,173 @@ html body #duNpMini#duNpMini .du-np-mini-close {
     display:none!important;
   }
 }
+
+
+/* MUSIC_PLAYER_SPANS_ALL_THREE_PLAYLISTS_20261112
+ * User-requested correction: the one existing newspaper player remains
+ * immediately below the three playlist cards and spans the entire grid width.
+ * Keep torn-paper appearance, controls, and compact mini-player unchanged. */
+html body #homeView #music #duNewspaperDock.du-np-dock,
+html body #music #duNewspaperDock.du-np-dock {
+  display:block!important;
+  width:100%!important;
+  min-width:0!important;
+  max-width:100%!important;
+  margin:20px 0 12px!important;
+  box-sizing:border-box!important;
+}
+@media(min-width:960px) {
+  html body #music #duNewspaperDock #duNpPanel .du-np-dock-paper {
+    grid-template-columns:minmax(0,1fr) minmax(0,1fr) minmax(210px,.9fr)!important;
+    grid-template-areas:
+      "masthead masthead masthead"
+      "tabs now transport"
+      "timeline timeline volume"
+      "notice colophon popout"
+      "feedback feedback feedback"!important;
+    gap:5px 21px!important;
+    padding:14px 24px 15px!important;
+  }
+  html body #music #duNewspaperDock #duNpPanel .du-np-top {
+    margin-bottom:2px!important;
+    padding-bottom:7px!important;
+  }
+  html body #music #duNewspaperDock #duNpPanel .du-np-top strong {
+    font-size:30px!important;
+    line-height:1!important;
+  }
+  html body #music #duNewspaperDock #duNpPanel .du-np-top small {
+    font-size:10px!important;
+    line-height:1.2!important;
+  }
+  html body #music #duNewspaperDock #duNpPanel .du-np-edition {
+    font-size:10px!important;
+  }
+  html body #music #duNewspaperDock #duNpPanel .du-np-tabs {
+    align-self:center!important;
+    flex-wrap:wrap!important;
+    padding:0!important;
+    margin:0!important;
+    border-bottom:0!important;
+    gap:5px!important;
+  }
+  html body #music #duNewspaperDock #duNpPanel .du-np-tabs button {
+    min-height:36px!important;
+    padding:7px 12px!important;
+    font-size:12px!important;
+  }
+  html body #music #duNewspaperDock #duNpPanel .du-np-now {
+    align-self:center!important;
+    grid-template-columns:minmax(0,1fr) 47px!important;
+    margin:0!important;
+    gap:1px 7px!important;
+  }
+  html body #music #duNewspaperDock #duNpPanel .du-np-now strong {
+    font-size:28px!important;
+    line-height:1.08!important;
+  }
+  html body #music #duNewspaperDock #duNpPanel .du-np-now small{
+    font-size:11px!important;
+    line-height:1.35!important;
+  }
+  html body #music #duNewspaperDock #duNpPanel .du-np-now .du-np-stamp{
+    padding:3px 5px!important;
+    font-size:10px!important;
+  }
+  html body #music #duNewspaperDock #duNpPanel .du-np-transport {
+    align-self:center!important;
+    justify-content:flex-end!important;
+    margin:0!important;
+    gap:12px!important;
+  }
+  html body #music #duNewspaperDock #duNpPanel .du-np-transport button:not(.du-np-main-play){
+    min-width:39px!important;
+    min-height:43px!important;
+    width:39px!important;
+    height:43px!important;
+  }
+  html body #music #duNewspaperDock #duNpPanel .du-np-transport button.du-np-main-play {
+    width:53px!important;
+    height:53px!important;
+    min-width:53px!important;
+    min-height:53px!important;
+  }
+  html body #music #duNewspaperDock #duNpPanel .du-np-timeline {
+    align-self:center!important;
+    margin:0!important;
+  }
+  html body #music #duNewspaperDock #duNpPanel .du-np-bottom {
+    align-self:center!important;
+    margin:0!important;
+    gap:10px!important;
+    padding:0!important;
+  }
+  html body #music #duNewspaperDock #duNpPanel .du-np-bottom label {
+    font-size:11px!important;
+  }
+  html body #music #duNewspaperDock #duNpPanel .du-np-notice {
+    align-self:center!important;
+    margin:0!important;
+    padding:0!important;
+    border:0!important;
+    font-size:11px!important;
+  }
+  html body #music #duNewspaperDock #duNpPanel .du-np-print-colophon {
+    display:flex!important;
+    flex-direction:column!important;
+    align-items:flex-start!important;
+    justify-content:center!important;
+    align-self:center!important;
+    gap:2px!important;
+    font-size:9px!important;
+    line-height:1.3!important;
+    margin:0!important;
+    padding:0 0 0 10px!important;
+    border:0!important;
+    border-left:1px solid rgba(83,54,41,.35)!important;
+  }
+  html body #music #duNewspaperDock #duNpPanel .du-np-popout {
+    align-self:center!important;
+    margin:0!important;
+    min-height:34px!important;
+    padding:8px 12px!important;
+    font-size:11px!important;
+  }
+}
+@media(min-width:621px) and (max-width:959px) {
+  html body #music #duNewspaperDock #duNpPanel .du-np-dock-paper {
+    grid-template-columns:minmax(0,1fr) 210px!important;
+    grid-template-areas:
+      "masthead masthead"
+      "tabs tabs"
+      "now transport"
+      "timeline volume"
+      "notice popout"
+      "colophon colophon"
+      "feedback feedback"!important;
+    gap:0 14px!important;
+    padding:14px 23px 14px!important;
+  }
+  html body #music #duNewspaperDock #duNpPanel .du-np-top strong {
+    font-size:29px!important;
+  }
+  html body #music #duNewspaperDock #duNpPanel .du-np-now strong {
+    font-size:26px!important;
+  }
+  html body #music #duNewspaperDock #duNpPanel .du-np-tabs button {
+    min-height:34px!important;
+    font-size:12px!important;
+    padding:7px 13px!important;
+  }
+  html body #music #duNewspaperDock #duNpPanel .du-np-print-colophon {
+    display:flex!important;
+    font-size:9px!important;
+  }
+}
+@media(max-width:620px) {
+  html body #music #duNewspaperDock.du-np-dock {
+    width:100%!important;
+    max-width:100%!important;
+    margin:16px 0 9px!important;
+  }
+}
