@@ -287,7 +287,7 @@
   }
   function build() {
     $$('#music .du-music-card[data-music-phase]').forEach(card => {
-      if($('.du-np-inline',card))return;
+      $('.du-np-inline',card).forEach(node=>node.remove());
       const phase=card.getAttribute('data-music-phase');
       if(!state.manifest.playlists[phase])return;
       // Keep the existing editorial cards, but show only the 40 licensed tracks.
@@ -313,11 +313,8 @@
         });
         suggestions.appendChild(list);
       }
-      const node=document.createElement('div');
-      node.className='du-np-inline';node.innerHTML=sheetMarkup(phase);
-      const total=$('.du-music-total',card);
-      if(total){total.hidden=true;total.insertAdjacentElement('afterend',node);}
-      else card.appendChild(node);
+      // The playlist artwork and its headline remain unobstructed. The one
+      // shared player is mounted after the entire three-card grid below.
     });
     // The embedded Spotify audio is not relevant to the Russian market.
     // Only in the new preview, remove iframe elements and hide their shells.
@@ -327,8 +324,15 @@
     if(legal)legal.remove();
     const dock=document.createElement('div');
     dock.innerHTML=floatingMarkup();
-    document.body.appendChild(dock.firstElementChild);
-    if(document.body.classList.contains('du-np-standalone'))state.panelOpen=true;
+    const player=dock.firstElementChild;
+    const grid=$('#music .du-music-grid');
+    if(grid){
+      grid.insertAdjacentElement('afterend',player);
+      state.panelOpen=true;
+    }else{
+      document.body.appendChild(player);
+      if(document.body.classList.contains('du-np-standalone'))state.panelOpen=true;
+    }
     render();
   }
 
@@ -340,6 +344,9 @@
     if(document.body.classList.contains('du-np-standalone'))return;
     const dock=$('#duNewspaperDock');
     if(!dock)return;
+    // Keep the shared player directly beneath the three playlists until the
+    // visitor intentionally drags it. Other site routes retain the dock.
+    if(dock.closest('#music') && !dockMovedByUser)return;
     const scale=state.playing?.5:1;
     dock.style.setProperty('--du-player-scale',String(scale));
     dock.classList.add('du-np-free-position');
@@ -362,7 +369,6 @@
     handle.addEventListener('pointerdown',event=>{
       if(event.pointerType==='mouse'&&event.button!==0)return;
       if(event.target.closest('button,a,input'))return;
-      positionFloatingPlayer();
       const bounds=dock.getBoundingClientRect();
       drag={id:event.pointerId,startX:event.clientX,startY:event.clientY,left:bounds.left,top:bounds.top,active:false};
       handle.setPointerCapture(event.pointerId);
@@ -372,8 +378,14 @@
       if(!drag||drag.id!==event.pointerId)return;
       const dx=event.clientX-drag.startX,dy=event.clientY-drag.startY;
       if(!drag.active&&Math.abs(dx)+Math.abs(dy)<4)return;
-      drag.active=true;
-      dockMovedByUser=true;
+      if(!drag.active){
+        drag.active=true;
+        dockMovedByUser=true;
+        dock.style.setProperty('--du-player-scale',String(state.playing?.5:1));
+        dock.style.setProperty('--du-player-left',drag.left+'px');
+        dock.style.setProperty('--du-player-top',drag.top+'px');
+        dock.classList.add('du-np-free-position');
+      }
       const scale=state.playing?.5:1;
       const gutter=8;
       const maxX=Math.max(gutter,window.innerWidth-dock.offsetWidth*scale-gutter);
@@ -396,6 +408,7 @@
     panel.hidden=!state.panelOpen;
     launcher.setAttribute('aria-expanded',String(state.panelOpen));
     launcher.classList.toggle('du-np-is-playing',state.playing);
+    $('#duNewspaperDock')?.classList.toggle('du-np-is-playing',state.playing);
     launcher.innerHTML='<span>♫</span> '+(state.playing?'Играет':'Музыка');
     const trackEl=$('#duNpTrack'),sub=$('#duNpSub'),toggle=$('#duNpToggle');
     if(trackEl)trackEl.textContent=item?'Kevin MacLeod - '+item.title:'Музыкальная газета';
