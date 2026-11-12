@@ -1,0 +1,303 @@
+{
+  "schemaVersion": 1,
+  "stage": "awaiting-binary-upload-and-licence-resolution",
+  "receivedAlbum": "Silent Depths",
+  "receivedCount": 15,
+  "remainingAlbum": "Deep Russian Depression",
+  "remainingCount": 11,
+  "notes": "Binary MP3 files are delivered separately in a ZIP handoff; these paths are expected but do not exist on GitHub yet. Never activate with broken sources. Track BPM is approximate for ambient music and CC BY 4.0 statement conflicts with Bandcamp metadata All rights reserved.",
+  "tracks": [
+    {
+      "id": "dark-antey-silent-depths-01",
+      "title": "Main Theme",
+      "artist": "Dark Antey",
+      "bpm": 89,
+      "phase": "dinner",
+      "src": "/assets/music/dark-antey/01-main-theme.mp3",
+      "license": {
+        "id": "CC-BY-4.0",
+        "url": "https://creativecommons.org/licenses/by/4.0/",
+        "credit": "Music by Dark Antey"
+      },
+      "source": "https://darkantey.bandcamp.com/album/silent-depths",
+      "status": "prepared-not-live",
+      "tempoStatus": "approximate",
+      "expectedBytes": 5405456,
+      "sha256": "d82d10a50f287ee35d8a3fd83514718059abafffba58f5b2769f3ce31405ebfe",
+      "durationSeconds": 186.7
+    },
+    {
+      "id": "dark-antey-silent-depths-02",
+      "title": "Fading Memories",
+      "artist": "Dark Antey",
+      "bpm": 70,
+      "phase": "after",
+      "src": "/assets/music/dark-antey/02-fading-memories.mp3",
+      "license": {
+        "id": "CC-BY-4.0",
+        "url": "https://creativecommons.org/licenses/by/4.0/",
+        "credit": "Music by Dark Antey"
+      },
+      "source": "https://darkantey.bandcamp.com/album/silent-depths",
+      "status": "prepared-not-live",
+      "tempoStatus": "approximate",
+      "expectedBytes": 3507255,
+      "sha256": "d2090f6b88430d2332be8613a1f1f2fe70a2d2a7a9a0d00261903683b0da3dea",
+      "durationSeconds": 116.61
+    },
+    {
+      "id": "dark-antey-silent-depths-03",
+      "title": "Tears That Don't Exist",
+      "artist": "Dark Antey",
+      "bpm": 59,
+      "phase": "after",
+      "src": "/assets/music/dark-antey/03-tears-that-don-t-exist.mp3",
+      "license": {
+        "id": "CC-BY-4.0",
+        "url": "https://creativecommons.org/licenses/by/4.0/",
+        "credit": "Music by Dark Antey"
+      },
+      "source": "https://darkantey.bandcamp.com/album/silent-depths",
+      "status": "prepared-not-live",
+      "tempoStatus": "half-time inference 58.8 BPM from ambiguous ~117.5 BPM; additional review needed",
+      "expectedBytes": 3713852,
+      "sha256": "95487c2a5e7324dd37171a7cd25863029d6115edefd6beffb6e0b0825113bdc0",
+      "durationSeconds": 124.03
+    },
+    {
+      "id": "dark-antey-silent-depths-04",
+      "title": "Echo of Empty Rooms",
+      "artist": "Dark Antey",
+      "bpm": 81,
+      "phase": "dinner",
+      "src": "/assets/music/dark-antey/04-echo-of-empty-rooms.mp3",
+      "license": {
+        "id": "CC-BY-4.0",
+        "url": "https://creativecommons.org/licenses/by/4.0/",
+        "credit": "Music by Dark Antey"
+      },
+      "source": "https://darkantey.bandcamp.com/album/silent-depths",
+      "status": "prepared-not-live",
+      "tempoStatus": "approximate",
+      "expectedBytes": 1540934,
+      "sha256": "8dcfc6793a6ec2903d70a40bc9aa712ec7d890f5dd8ad809ae96ffc21659bde6",
+      "durationSeconds": 48.04
+    },
+    {
+      "id": "dark-antey-silent-depths-05",
+      "title": "Eternity Without Movement",
+      "artist": "Dark Antey",
+      "bpm": 89,
+      "phase": "dinner",
+      "src": "/assets/music/dark-antey/05-eternity-without-movement.mp3",
+      "license": {
+        "id": "CC-BY-4.0",
+        "url": "https://creativecommons.org/licenses/by/4.0/",
+        "credit": "Music by Dark Antey"
+      },
+      "source": "https://darkantey.bandcamp.com/album/silent-depths",
+      "status": "prepared-not-live",
+      "tempoStatus": "approximate",
+      "expectedBytes": 6556352,
+      "sha256": "a2e7ba9fda2c9ea3f1f75d70c1a597697bb35ca9b6642c43091156674481eaad",
+      "durationSeconds": 228.05
+    },
+    {
+      "id": "dark-antey-silent-depths-06",
+      "title": "Stalker is Watching",
+      "artist": "Dark Antey",
+      "bpm": 92,
+      "phase": "dinner",
+      "src": "/assets/music/dark-antey/06-stalker-is-watching.mp3",
+      "license": {
+        "id": "CC-BY-4.0",
+        "url": "https://creativecommons.org/licenses/by/4.0/",
+        "credit": "Music by Dark Antey"
+      },
+      "source": "https://darkantey.bandcamp.com/album/silent-depths",
+      "status": "prepared-not-live",
+      "tempoStatus": "approximate",
+      "expectedBytes": 6990798,
+      "sha256": "ba70ec9abd2e7be32ffe0996b0fe95f8fb5f093d916a4d820a6c0e4f4d0748cb",
+      "durationSeconds": 240.04
+    },
+    {
+      "id": "dark-antey-silent-depths-07",
+      "title": "Abandoned Hospital",
+      "artist": "Dark Antey",
+      "bpm": 92,
+      "phase": "dinner",
+      "src": "/assets/music/dark-antey/07-abandoned-hospital.mp3",
+      "license": {
+        "id": "CC-BY-4.0",
+        "url": "https://creativecommons.org/licenses/by/4.0/",
+        "credit": "Music by Dark Antey"
+      },
+      "source": "https://darkantey.bandcamp.com/album/silent-depths",
+      "status": "prepared-not-live",
+      "tempoStatus": "approximate",
+      "expectedBytes": 5303610,
+      "sha256": "93dc4ef375f63eaed08414991c4b21de052b626e699b302032dd6691444bdee2",
+      "durationSeconds": 240.04
+    },
+    {
+      "id": "dark-antey-silent-depths-08",
+      "title": "The Weight of Nothingness",
+      "artist": "Dark Antey",
+      "bpm": 85,
+      "phase": "dinner",
+      "src": "/assets/music/dark-antey/08-the-weight-of-nothingness.mp3",
+      "license": {
+        "id": "CC-BY-4.0",
+        "url": "https://creativecommons.org/licenses/by/4.0/",
+        "credit": "Music by Dark Antey"
+      },
+      "source": "https://darkantey.bandcamp.com/album/silent-depths",
+      "status": "prepared-not-live",
+      "tempoStatus": "approximate",
+      "expectedBytes": 5315320,
+      "sha256": "644eab3d10004317b201973a04983c31d332c0f15e0b6c5d5a7573a5b11ea851",
+      "durationSeconds": 236.04
+    },
+    {
+      "id": "dark-antey-silent-depths-09",
+      "title": "I'm Going to Do It",
+      "artist": "Dark Antey",
+      "bpm": 86,
+      "phase": "dinner",
+      "src": "/assets/music/dark-antey/09-i-m-going-to-do-it.mp3",
+      "license": {
+        "id": "CC-BY-4.0",
+        "url": "https://creativecommons.org/licenses/by/4.0/",
+        "credit": "Music by Dark Antey"
+      },
+      "source": "https://darkantey.bandcamp.com/album/silent-depths",
+      "status": "prepared-not-live",
+      "tempoStatus": "approximate",
+      "expectedBytes": 6085171,
+      "sha256": "b8e650fcaee9de99a040d58a2577da53e439f4f17b85156fbbf29ab197230f5b",
+      "durationSeconds": 246.05
+    },
+    {
+      "id": "dark-antey-silent-depths-10",
+      "title": "Farewell Note",
+      "artist": "Dark Antey",
+      "bpm": 86,
+      "phase": "dinner",
+      "src": "/assets/music/dark-antey/10-farewell-note.mp3",
+      "license": {
+        "id": "CC-BY-4.0",
+        "url": "https://creativecommons.org/licenses/by/4.0/",
+        "credit": "Music by Dark Antey"
+      },
+      "source": "https://darkantey.bandcamp.com/album/silent-depths",
+      "status": "prepared-not-live",
+      "tempoStatus": "approximate",
+      "expectedBytes": 6263254,
+      "sha256": "82614d4ff7d3bedb8f03f1d610f239f84ac514371cb106e994aea7637e78ce69",
+      "durationSeconds": 240.04
+    },
+    {
+      "id": "dark-antey-silent-depths-11",
+      "title": "Dead Silence",
+      "artist": "Dark Antey",
+      "bpm": 81,
+      "phase": "dinner",
+      "src": "/assets/music/dark-antey/11-dead-silence.mp3",
+      "license": {
+        "id": "CC-BY-4.0",
+        "url": "https://creativecommons.org/licenses/by/4.0/",
+        "credit": "Music by Dark Antey"
+      },
+      "source": "https://darkantey.bandcamp.com/album/silent-depths",
+      "status": "prepared-not-live",
+      "tempoStatus": "approximate",
+      "expectedBytes": 3894346,
+      "sha256": "01ae826db9878df244a7658ae0fd4788fc09a32c2645e7bd5bba90dfaa55913d",
+      "durationSeconds": 147.04
+    },
+    {
+      "id": "dark-antey-silent-depths-12",
+      "title": "Fading Memories 2",
+      "artist": "Dark Antey",
+      "bpm": 81,
+      "phase": "dinner",
+      "src": "/assets/music/dark-antey/12-fading-memories-2.mp3",
+      "license": {
+        "id": "CC-BY-4.0",
+        "url": "https://creativecommons.org/licenses/by/4.0/",
+        "credit": "Music by Dark Antey"
+      },
+      "source": "https://darkantey.bandcamp.com/album/silent-depths",
+      "status": "prepared-not-live",
+      "tempoStatus": "approximate",
+      "expectedBytes": 3138045,
+      "sha256": "5cbf6aceec7a21fe2e62e9c1757e7353501da4ee91fc1e503575d04a4d1fe0e5",
+      "durationSeconds": 102.03
+    },
+    {
+      "id": "dark-antey-silent-depths-13",
+      "title": "Last Breath",
+      "artist": "Dark Antey",
+      "bpm": 81,
+      "phase": "dinner",
+      "src": "/assets/music/dark-antey/13-last-breath.mp3",
+      "license": {
+        "id": "CC-BY-4.0",
+        "url": "https://creativecommons.org/licenses/by/4.0/",
+        "credit": "Music by Dark Antey"
+      },
+      "source": "https://darkantey.bandcamp.com/album/silent-depths",
+      "status": "prepared-not-live",
+      "tempoStatus": "approximate",
+      "expectedBytes": 3030964,
+      "sha256": "7a9cd87d31591535370fc5be5ba99ebf524842d5fbcff1d65f9f31c9ae364096",
+      "durationSeconds": 96.03
+    },
+    {
+      "id": "dark-antey-silent-depths-14",
+      "title": "There is Still Hope",
+      "artist": "Dark Antey",
+      "bpm": 89,
+      "phase": "dinner",
+      "src": "/assets/music/dark-antey/14-there-is-still-hope.mp3",
+      "license": {
+        "id": "CC-BY-4.0",
+        "url": "https://creativecommons.org/licenses/by/4.0/",
+        "credit": "Music by Dark Antey"
+      },
+      "source": "https://darkantey.bandcamp.com/album/silent-depths",
+      "status": "prepared-not-live",
+      "tempoStatus": "approximate",
+      "expectedBytes": 2806803,
+      "sha256": "47e8c2bd9e4282d7f4fbef26c38d5551cbe0763b5b4957ca792518cc4cff42c7",
+      "durationSeconds": 85.37
+    },
+    {
+      "id": "dark-antey-silent-depths-15",
+      "title": "We'll Never Meet Again",
+      "artist": "Dark Antey",
+      "bpm": 89,
+      "phase": "dinner",
+      "src": "/assets/music/dark-antey/15-we-ll-never-meet-again.mp3",
+      "license": {
+        "id": "CC-BY-4.0",
+        "url": "https://creativecommons.org/licenses/by/4.0/",
+        "credit": "Music by Dark Antey"
+      },
+      "source": "https://darkantey.bandcamp.com/album/silent-depths",
+      "status": "prepared-not-live",
+      "tempoStatus": "approximate",
+      "expectedBytes": 1971854,
+      "sha256": "530ff8fd8c302ba136b25ca7573ee0f106c1d06529ef70252d311de2f658473d",
+      "durationSeconds": 64.99
+    }
+  ],
+  "importConditions": [
+    "Require 15 local MP3 at exact src paths; byte count and SHA-256 must match",
+    "Only activate playlist metadata after valid on-disk assets",
+    "License author statements CC BY 4.0, label conflict All rights reserved remains disclosed; use Music by Dark Antey attribution",
+    "Tempo is approximate for ambient tracks and must not be shown in UI",
+    "Check live HTTP 200 and playback from Russia before production release"
+  ]
+}

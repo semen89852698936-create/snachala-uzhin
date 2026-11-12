@@ -1,0 +1,40 @@
+name: Assemble 24 original Dark Antey MP3 (checksums)
+on:
+  push:
+    branches:
+      - feat/dark-antey-26-audio-audit-20261112
+    paths:
+      - .github/workflows/assemble-dark-antey-24.yml
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  reconstruct:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - name: Check out exact feature branch (no publication)
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+        with:
+          ref: feat/dark-antey-26-audio-audit-20261112
+          persist-credentials: true
+      - name: Assemble files from staging and independently check all SHA-256 values
+        run: python3 -u scripts/assemble-dark-antey-24.py
+      - name: Run music manifest tests
+        run: |
+          python3 -m unittest discover -s scripts -p 'test_russian_music_catalog.py' -v
+          node --check assets/native-music-player-20261112.js
+      - name: Commit original media to GitHub and remove temporary transfer chunks
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config user.name "github-actions[bot]"
+          git rm -r -q --ignore-unmatch music/.import-b64
+          git add assets/music/dark-antey music/native-player-manifest.json music/credits.html music/russian-licensed-intake-20261112.json
+          test "$(find assets/music/dark-antey -name '*.mp3' | wc -l)" -eq 24
+          git diff --cached --stat | tail -12
+          git diff --cached --quiet && { echo "No file changes"; exit 1; }
+          git commit -m "audio: upload 24 original Dark Antey MP3, verify SHA-256 and integrate playlists"
+          git push origin HEAD:refs/heads/feat/dark-antey-26-audio-audit-20261112
+          echo "ORIGINALS_COMMITTED: 24 tracks; 24 SHA-256 verified; source branch updated."

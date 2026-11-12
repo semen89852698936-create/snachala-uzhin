@@ -1,0 +1,31 @@
+name: Inspect Dark Antey CC BY download media (non publishing)
+on:
+  push:
+    branches: [feat/dark-antey-26-audio-audit-20261112]
+    paths:
+      - .github/workflows/dark-antey-audio-inspection.yml
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  inspect:
+    runs-on: ubuntu-latest
+    timeout-minutes: 9
+    steps:
+      - name: Check actual author permission and available formats
+        shell: bash
+        run: |
+          set -euo pipefail
+          python -m pip install --quiet --upgrade 'yt-dlp[default,curl-cffi]' curl_cffi
+          python - <<'PY'
+          import urllib.request
+          for name,slug in [('Silent Depths','silent-depths'),('Deep Russian Depression','deep-russian-depression')]:
+              url='https://darkantey.bandcamp.com/album/'+slug
+              text=urllib.request.urlopen(urllib.request.Request(url,headers={'User-Agent':'Mozilla/5.0'}),timeout=30).read().decode('utf-8','replace')
+              explicit='Creative Commons Attribution 4.0 International' in text and 'commercial projects' in text
+              print('ALBUM_PERMISSION',name,'explicit_commercial_CC_BY4=',explicit,'all_rights_reserved_tag=',('all rights reserved' in text.lower()),flush=True)
+              if not explicit:raise SystemExit('Album lacks explicit CC BY commercial authorization')
+          PY
+          yt-dlp --no-playlist --skip-download -j 'https://darkantey.bandcamp.com/track/main-theme' | python -c 'import json,sys; x=json.load(sys.stdin); print("TEST_TRACK", json.dumps({"title":x.get("title"),"duration":x.get("duration"),"formats":[{"format_id":f.get("format_id"),"ext":f.get("ext"),"abr":f.get("abr"),"protocol":f.get("protocol")} for f in x.get("formats",[])]}))'
+          yt-dlp --no-playlist -f 'bestaudio' -o /tmp/darkantey-audio-test.%(ext)s 'https://darkantey.bandcamp.com/track/main-theme'
+          ls -lh /tmp/darkantey-audio-test.*
