@@ -1,32 +1,172 @@
 {
-  "version": 1,
-  "stage": "demo-only",
-  "notice": "Оригинальные инструментальные демо, созданные программно для проверки работы плеера. Песни известных исполнителей из редакционных списков не воспроизводятся.",
+  "version": 2,
+  "stage": "licensed-audio-preview",
+  "notice": "40 записей Kevin MacLeod по CC BY 4.0. Авторство и лицензия указаны в плеере и на странице /music/credits.html. Внешние MP3-ссылки нуждаются в проверке доступности для посетителей из России.",
   "phaseOrder": [
     "kitchen",
     "dinner",
     "after"
   ],
+  "source": "https://incompetech.com/agent-section/",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "metadataNote": "39 URL и длительности взяты из открытого каталога Incompetech/Aristaeus; запись The Britons сверена по официальной странице Incompetech, MP3-адрес требует отдельной проверки.",
   "playlists": {
     "kitchen": {
       "label": "Под что готовить",
       "chapter": "РАЗОГРЕВАЕМ ВЕЧЕР",
       "tracks": [
         {
-          "id": "kitchen-01",
-          "title": "Завязываем фартуки",
-          "bpm": 126,
-          "seed": 12,
-          "demo": true,
-          "durationSeconds": 14
+          "id": "USUAN1100237",
+          "title": "Ether Disco",
+          "artist": "Kevin MacLeod",
+          "bpm": 120,
+          "durationSeconds": 176,
+          "src": "https://incompetech.com/music/royalty-free/mp3-royaltyfree/Ether%20Disco.mp3",
+          "source": "https://incompetech.com/music/royalty-free/index.html?isrc=USUAN1100237",
+          "license": {
+            "id": "CC-BY-4.0",
+            "name": "Creative Commons Attribution 4.0",
+            "url": "https://creativecommons.org/licenses/by/4.0/",
+            "streamingAllowed": true,
+            "creditRequired": true
+          },
+          "attribution": "\"Ether Disco\" Kevin MacLeod (incompetech.com), CC BY 4.0."
         },
         {
-          "id": "kitchen-02",
-          "title": "Пряный ритм",
+          "id": "USUAN2300006",
+          "title": "Brain Dance",
+          "artist": "Kevin MacLeod",
           "bpm": 124,
-          "seed": 28,
-          "demo": true,
-          "durationSeconds": 14
+          "durationSeconds": 215,
+          "src": "https://incompetech.com/music/royalty-free/mp3-royaltyfree/Brain%20Dance.mp3",
+          "source": "https://incompetech.com/music/royalty-free/index.html?isrc=USUAN2300006",
+          "license": {
+            "id": "CC-BY-4.0",
+            "name": "Creative Commons Attribution 4.0",
+            "url": "https://creativecommons.org/licenses/by/4.0/",
+            "streamingAllowed": true,
+            "creditRequired": true
+          },
+          "attribution": "\"Brain Dance\" Kevin MacLeod (incompetech.com), CC BY 4.0."
+        },
+        {
+          "id": "USUAN2300004",
+          "title": "Southern Gothic",
+          "artist": "Kevin MacLeod",
+          "bpm": 126,
+          "durationSeconds": 147,
+          "src": "https://incompetech.com/music/royalty-free/mp3-royaltyfree/Southern%20Gothic.mp3",
+          "source": "https://incompetech.com/music/royalty-free/index.html?isrc=USUAN2300004",
+          "license": {
+            "id": "CC-BY-4.0",
+            "name": "Creative Commons Attribution 4.0",
+            "url": "https://creativecommons.org/licenses/by/4.0/",
+            "streamingAllowed": true,
+            "creditRequired": true
+          },
+          "attribution": "\"Southern Gothic\" Kevin MacLeod (incompetech.com), CC BY 4.0."
+        },
+        {
+          "id": "USUAN1100360",
+          "title": "Vibe Ace",
+          "artist": "Kevin MacLeod",
+          "bpm": 130,
+          "durationSeconds": 61,
+          "src": "https://incompetech.com/music/royalty-free/mp3-royaltyfree/Vibe%20Ace.mp3",
+          "source": "https://incompetech.com/music/royalty-free/index.html?isrc=USUAN1100360",
+          "license": {
+            "id": "CC-BY-4.0",
+            "name": "Creative Commons Attribution 4.0",
+            "url": "https://creativecommons.org/licenses/by/4.0/",
+            "streamingAllowed": true,
+            "creditRequired": true
+          },
+          "attribution": "\"Vibe Ace\" Kevin MacLeod (incompetech.com), CC BY 4.0."
+        },
+        {
+          "id": "USUAN2100029",
+          "title": "Adventures in Adventureland",
+          "artist": "Kevin MacLeod",
+          "bpm": 135,
+          "durationSeconds": 261,
+          "src": "https://incompetech.com/music/royalty-free/mp3-royaltyfree/Adventures%20in%20Adventureland.mp3",
+          "source": "https://incompetech.com/music/royalty-free/index.html?isrc=USUAN2100029",
+          "license": {
+            "id": "CC-BY-4.0",
+            "name": "Creative Commons Attribution 4.0",
+            "url": "https://creativecommons.org/licenses/by/4.0/",
+            "streamingAllowed": true,
+            "creditRequired": true
+          },
+          "attribution": "\"Adventures in Adventureland\" Kevin MacLeod (incompetech.com), CC BY 4.0."
+        },
+        {
+          "id": "USUAN2100027",
+          "title": "Grand Dark Waltz Trio Vivace",
+          "artist": "Kevin MacLeod",
+          "bpm": 140,
+          "durationSeconds": 172,
+          "src": "https://incompetech.com/music/royalty-free/mp3-royaltyfree/Grand%20Dark%20Waltz%20Trio%20Vivace.mp3",
+          "source": "https://incompetech.com/music/royalty-free/index.html?isrc=USUAN2100027",
+          "license": {
+            "id": "CC-BY-4.0",
+            "name": "Creative Commons Attribution 4.0",
+            "url": "https://creativecommons.org/licenses/by/4.0/",
+            "streamingAllowed": true,
+            "creditRequired": true
+          },
+          "attribution": "\"Grand Dark Waltz Trio Vivace\" Kevin MacLeod (incompetech.com), CC BY 4.0."
+        },
+        {
+          "id": "USUAN2200002",
+          "title": "Boogie Party",
+          "artist": "Kevin MacLeod",
+          "bpm": 178,
+          "durationSeconds": 272,
+          "src": "https://incompetech.com/music/royalty-free/mp3-royaltyfree/Boogie%20Party.mp3",
+          "source": "https://incompetech.com/music/royalty-free/index.html?isrc=USUAN2200002",
+          "license": {
+            "id": "CC-BY-4.0",
+            "name": "Creative Commons Attribution 4.0",
+            "url": "https://creativecommons.org/licenses/by/4.0/",
+            "streamingAllowed": true,
+            "creditRequired": true
+          },
+          "attribution": "\"Boogie Party\" Kevin MacLeod (incompetech.com), CC BY 4.0."
+        },
+        {
+          "id": "USUAN2600004",
+          "title": "The Britons",
+          "artist": "Kevin MacLeod",
+          "bpm": 180,
+          "durationSeconds": 307,
+          "src": "https://incompetech.com/music/royalty-free/mp3-royaltyfree/The%20Britons.mp3",
+          "source": "https://incompetech.com/music/royalty-free/index.html?isrc=USUAN2600004",
+          "license": {
+            "id": "CC-BY-4.0",
+            "name": "Creative Commons Attribution 4.0",
+            "url": "https://creativecommons.org/licenses/by/4.0/",
+            "streamingAllowed": true,
+            "creditRequired": true
+          },
+          "attribution": "\"The Britons\" Kevin MacLeod (incompetech.com), CC BY 4.0."
+        },
+        {
+          "id": "USUAN2100028",
+          "title": "Fox Tale Waltz Part 1",
+          "artist": "Kevin MacLeod",
+          "bpm": 186,
+          "durationSeconds": 429,
+          "src": "https://incompetech.com/music/royalty-free/mp3-royaltyfree/Fox%20Tale%20Waltz%20Part%201.mp3",
+          "source": "https://incompetech.com/music/royalty-free/index.html?isrc=USUAN2100028",
+          "license": {
+            "id": "CC-BY-4.0",
+            "name": "Creative Commons Attribution 4.0",
+            "url": "https://creativecommons.org/licenses/by/4.0/",
+            "streamingAllowed": true,
+            "creditRequired": true
+          },
+          "attribution": "\"Fox Tale Waltz Part 1\" Kevin MacLeod (incompetech.com), CC BY 4.0."
         }
       ]
     },
@@ -35,20 +175,259 @@
       "chapter": "ВРЕМЯ ДЛЯ ДВОИХ",
       "tracks": [
         {
-          "id": "dinner-01",
-          "title": "Первые свечи",
-          "bpm": 90,
-          "seed": 42,
-          "demo": true,
-          "durationSeconds": 14
+          "id": "USUAN1700074",
+          "title": "Jazz Brunch",
+          "artist": "Kevin MacLeod",
+          "bpm": 100,
+          "durationSeconds": 323,
+          "src": "https://incompetech.com/music/royalty-free/mp3-royaltyfree/Jazz%20Brunch.mp3",
+          "source": "https://incompetech.com/music/royalty-free/index.html?isrc=USUAN1700074",
+          "license": {
+            "id": "CC-BY-4.0",
+            "name": "Creative Commons Attribution 4.0",
+            "url": "https://creativecommons.org/licenses/by/4.0/",
+            "streamingAllowed": true,
+            "creditRequired": true
+          },
+          "attribution": "\"Jazz Brunch\" Kevin MacLeod (incompetech.com), CC BY 4.0."
         },
         {
-          "id": "dinner-02",
-          "title": "Негромкий разговор",
-          "bpm": 86,
-          "seed": 60,
-          "demo": true,
-          "durationSeconds": 14
+          "id": "USUAN1100058",
+          "title": "Style Funk",
+          "artist": "Kevin MacLeod",
+          "bpm": 100,
+          "durationSeconds": 307,
+          "src": "https://incompetech.com/music/royalty-free/mp3-royaltyfree/StyleFunk.mp3",
+          "source": "https://incompetech.com/music/royalty-free/index.html?isrc=USUAN1100058",
+          "license": {
+            "id": "CC-BY-4.0",
+            "name": "Creative Commons Attribution 4.0",
+            "url": "https://creativecommons.org/licenses/by/4.0/",
+            "streamingAllowed": true,
+            "creditRequired": true
+          },
+          "attribution": "\"Style Funk\" Kevin MacLeod (incompetech.com), CC BY 4.0."
+        },
+        {
+          "id": "USUAN1500042",
+          "title": "In Your Arms",
+          "artist": "Kevin MacLeod",
+          "bpm": 98,
+          "durationSeconds": 169,
+          "src": "https://incompetech.com/music/royalty-free/mp3-royaltyfree/In%20Your%20Arms.mp3",
+          "source": "https://incompetech.com/music/royalty-free/index.html?isrc=USUAN1500042",
+          "license": {
+            "id": "CC-BY-4.0",
+            "name": "Creative Commons Attribution 4.0",
+            "url": "https://creativecommons.org/licenses/by/4.0/",
+            "streamingAllowed": true,
+            "creditRequired": true
+          },
+          "attribution": "\"In Your Arms\" Kevin MacLeod (incompetech.com), CC BY 4.0."
+        },
+        {
+          "id": "USUAN1100174",
+          "title": "Long Stroll",
+          "artist": "Kevin MacLeod",
+          "bpm": 98,
+          "durationSeconds": 254,
+          "src": "https://incompetech.com/music/royalty-free/mp3-royaltyfree/Long%20Stroll.mp3",
+          "source": "https://incompetech.com/music/royalty-free/index.html?isrc=USUAN1100174",
+          "license": {
+            "id": "CC-BY-4.0",
+            "name": "Creative Commons Attribution 4.0",
+            "url": "https://creativecommons.org/licenses/by/4.0/",
+            "streamingAllowed": true,
+            "creditRequired": true
+          },
+          "attribution": "\"Long Stroll\" Kevin MacLeod (incompetech.com), CC BY 4.0."
+        },
+        {
+          "id": "USUAN1100492",
+          "title": "DD Groove",
+          "artist": "Kevin MacLeod",
+          "bpm": 96,
+          "durationSeconds": 221,
+          "src": "https://incompetech.com/music/royalty-free/mp3-royaltyfree/DD%20Groove.mp3",
+          "source": "https://incompetech.com/music/royalty-free/index.html?isrc=USUAN1100492",
+          "license": {
+            "id": "CC-BY-4.0",
+            "name": "Creative Commons Attribution 4.0",
+            "url": "https://creativecommons.org/licenses/by/4.0/",
+            "streamingAllowed": true,
+            "creditRequired": true
+          },
+          "attribution": "\"DD Groove\" Kevin MacLeod (incompetech.com), CC BY 4.0."
+        },
+        {
+          "id": "USUAN2100011",
+          "title": "Funky Boxstep",
+          "artist": "Kevin MacLeod",
+          "bpm": 95,
+          "durationSeconds": 316,
+          "src": "https://incompetech.com/music/royalty-free/mp3-royaltyfree/Funky%20Boxstep%20.mp3",
+          "source": "https://incompetech.com/music/royalty-free/index.html?isrc=USUAN2100011",
+          "license": {
+            "id": "CC-BY-4.0",
+            "name": "Creative Commons Attribution 4.0",
+            "url": "https://creativecommons.org/licenses/by/4.0/",
+            "streamingAllowed": true,
+            "creditRequired": true
+          },
+          "attribution": "\"Funky Boxstep\" Kevin MacLeod (incompetech.com), CC BY 4.0."
+        },
+        {
+          "id": "USUAN2300005",
+          "title": "Vibing Over Venus",
+          "artist": "Kevin MacLeod",
+          "bpm": 94,
+          "durationSeconds": 411,
+          "src": "https://incompetech.com/music/royalty-free/mp3-royaltyfree/Vibing%20Over%20Venus.mp3",
+          "source": "https://incompetech.com/music/royalty-free/index.html?isrc=USUAN2300005",
+          "license": {
+            "id": "CC-BY-4.0",
+            "name": "Creative Commons Attribution 4.0",
+            "url": "https://creativecommons.org/licenses/by/4.0/",
+            "streamingAllowed": true,
+            "creditRequired": true
+          },
+          "attribution": "\"Vibing Over Venus\" Kevin MacLeod (incompetech.com), CC BY 4.0."
+        },
+        {
+          "id": "USUAN2100016",
+          "title": "Devonshire Waltz Moderato",
+          "artist": "Kevin MacLeod",
+          "bpm": 93,
+          "durationSeconds": 350,
+          "src": "https://incompetech.com/music/royalty-free/mp3-royaltyfree/Devonshire%20Waltz%20Moderato.mp3",
+          "source": "https://incompetech.com/music/royalty-free/index.html?isrc=USUAN2100016",
+          "license": {
+            "id": "CC-BY-4.0",
+            "name": "Creative Commons Attribution 4.0",
+            "url": "https://creativecommons.org/licenses/by/4.0/",
+            "streamingAllowed": true,
+            "creditRequired": true
+          },
+          "attribution": "\"Devonshire Waltz Moderato\" Kevin MacLeod (incompetech.com), CC BY 4.0."
+        },
+        {
+          "id": "USUAN1100044",
+          "title": "There is Romance",
+          "artist": "Kevin MacLeod",
+          "bpm": 93,
+          "durationSeconds": 197,
+          "src": "https://incompetech.com/music/royalty-free/mp3-royaltyfree/There%20is%20Romance.mp3",
+          "source": "https://incompetech.com/music/royalty-free/index.html?isrc=USUAN1100044",
+          "license": {
+            "id": "CC-BY-4.0",
+            "name": "Creative Commons Attribution 4.0",
+            "url": "https://creativecommons.org/licenses/by/4.0/",
+            "streamingAllowed": true,
+            "creditRequired": true
+          },
+          "attribution": "\"There is Romance\" Kevin MacLeod (incompetech.com), CC BY 4.0."
+        },
+        {
+          "id": "USUAN1700062",
+          "title": "Zazie",
+          "artist": "Kevin MacLeod",
+          "bpm": 90,
+          "durationSeconds": 213,
+          "src": "https://incompetech.com/music/royalty-free/mp3-royaltyfree/Zazie.mp3",
+          "source": "https://incompetech.com/music/royalty-free/index.html?isrc=USUAN1700062",
+          "license": {
+            "id": "CC-BY-4.0",
+            "name": "Creative Commons Attribution 4.0",
+            "url": "https://creativecommons.org/licenses/by/4.0/",
+            "streamingAllowed": true,
+            "creditRequired": true
+          },
+          "attribution": "\"Zazie\" Kevin MacLeod (incompetech.com), CC BY 4.0."
+        },
+        {
+          "id": "USUAN2100030",
+          "title": "Space Jazz",
+          "artist": "Kevin MacLeod",
+          "bpm": 89,
+          "durationSeconds": 370,
+          "src": "https://incompetech.com/music/royalty-free/mp3-royaltyfree/Space%20Jazz.mp3",
+          "source": "https://incompetech.com/music/royalty-free/index.html?isrc=USUAN2100030",
+          "license": {
+            "id": "CC-BY-4.0",
+            "name": "Creative Commons Attribution 4.0",
+            "url": "https://creativecommons.org/licenses/by/4.0/",
+            "streamingAllowed": true,
+            "creditRequired": true
+          },
+          "attribution": "\"Space Jazz\" Kevin MacLeod (incompetech.com), CC BY 4.0."
+        },
+        {
+          "id": "USUAN1100517",
+          "title": "Sunshine",
+          "artist": "Kevin MacLeod",
+          "bpm": 88,
+          "durationSeconds": 202,
+          "src": "https://incompetech.com/music/royalty-free/mp3-royaltyfree/Sunshine%20A.mp3",
+          "source": "https://incompetech.com/music/royalty-free/index.html?isrc=USUAN1100517",
+          "license": {
+            "id": "CC-BY-4.0",
+            "name": "Creative Commons Attribution 4.0",
+            "url": "https://creativecommons.org/licenses/by/4.0/",
+            "streamingAllowed": true,
+            "creditRequired": true
+          },
+          "attribution": "\"Sunshine\" Kevin MacLeod (incompetech.com), CC BY 4.0."
+        },
+        {
+          "id": "USUAN2100015",
+          "title": "Devonshire Waltz Andante",
+          "artist": "Kevin MacLeod",
+          "bpm": 84,
+          "durationSeconds": 388,
+          "src": "https://incompetech.com/music/royalty-free/mp3-royaltyfree/Devonshire%20Waltz%20Andante.mp3",
+          "source": "https://incompetech.com/music/royalty-free/index.html?isrc=USUAN2100015",
+          "license": {
+            "id": "CC-BY-4.0",
+            "name": "Creative Commons Attribution 4.0",
+            "url": "https://creativecommons.org/licenses/by/4.0/",
+            "streamingAllowed": true,
+            "creditRequired": true
+          },
+          "attribution": "\"Devonshire Waltz Andante\" Kevin MacLeod (incompetech.com), CC BY 4.0."
+        },
+        {
+          "id": "USUAN2100014",
+          "title": "Joey's Formal Waltz - Unscented",
+          "artist": "Kevin MacLeod",
+          "bpm": 80,
+          "durationSeconds": 301,
+          "src": "https://incompetech.com/music/royalty-free/mp3-royaltyfree/Joey's%20Formal%20Waltz%20-%20Unscented.mp3",
+          "source": "https://incompetech.com/music/royalty-free/index.html?isrc=USUAN2100014",
+          "license": {
+            "id": "CC-BY-4.0",
+            "name": "Creative Commons Attribution 4.0",
+            "url": "https://creativecommons.org/licenses/by/4.0/",
+            "streamingAllowed": true,
+            "creditRequired": true
+          },
+          "attribution": "\"Joey's Formal Waltz - Unscented\" Kevin MacLeod (incompetech.com), CC BY 4.0."
+        },
+        {
+          "id": "USUAN1500030",
+          "title": "Jellyfish in Space",
+          "artist": "Kevin MacLeod",
+          "bpm": 100,
+          "durationSeconds": 391,
+          "src": "https://incompetech.com/music/royalty-free/mp3-royaltyfree/Jellyfish%20in%20Space.mp3",
+          "source": "https://incompetech.com/music/royalty-free/index.html?isrc=USUAN1500030",
+          "license": {
+            "id": "CC-BY-4.0",
+            "name": "Creative Commons Attribution 4.0",
+            "url": "https://creativecommons.org/licenses/by/4.0/",
+            "streamingAllowed": true,
+            "creditRequired": true
+          },
+          "attribution": "\"Jellyfish in Space\" Kevin MacLeod (incompetech.com), CC BY 4.0."
         }
       ]
     },
@@ -57,20 +436,276 @@
       "chapter": "ПРОДОЛЖЕНИЕ СЛЕДУЕТ",
       "tracks": [
         {
-          "id": "after-01",
-          "title": "Тёплый сумрак",
-          "bpm": 74,
-          "seed": 74,
-          "demo": true,
-          "durationSeconds": 14
+          "id": "USUAN1100301",
+          "title": "Canon in D Major",
+          "artist": "Kevin MacLeod",
+          "bpm": 80,
+          "durationSeconds": 355,
+          "src": "https://incompetech.com/music/royalty-free/mp3-royaltyfree/Canon%20in%20D%20Major.mp3",
+          "source": "https://incompetech.com/music/royalty-free/index.html?isrc=USUAN1100301",
+          "license": {
+            "id": "CC-BY-4.0",
+            "name": "Creative Commons Attribution 4.0",
+            "url": "https://creativecommons.org/licenses/by/4.0/",
+            "streamingAllowed": true,
+            "creditRequired": true
+          },
+          "attribution": "\"Canon in D Major\" Kevin MacLeod (incompetech.com), CC BY 4.0."
         },
         {
-          "id": "after-02",
-          "title": "После десерта",
+          "id": "USUAN1100031",
+          "title": "Two Together",
+          "artist": "Kevin MacLeod",
+          "bpm": 78,
+          "durationSeconds": 116,
+          "src": "https://incompetech.com/music/royalty-free/mp3-royaltyfree/Two%20Together.mp3",
+          "source": "https://incompetech.com/music/royalty-free/index.html?isrc=USUAN1100031",
+          "license": {
+            "id": "CC-BY-4.0",
+            "name": "Creative Commons Attribution 4.0",
+            "url": "https://creativecommons.org/licenses/by/4.0/",
+            "streamingAllowed": true,
+            "creditRequired": true
+          },
+          "attribution": "\"Two Together\" Kevin MacLeod (incompetech.com), CC BY 4.0."
+        },
+        {
+          "id": "USUAN1800017",
+          "title": "Northern Glade",
+          "artist": "Kevin MacLeod",
+          "bpm": 78,
+          "durationSeconds": 315,
+          "src": "https://incompetech.com/music/royalty-free/mp3-royaltyfree/Magic%20Scout%20-%20Nothern%20Glade.mp3",
+          "source": "https://incompetech.com/music/royalty-free/index.html?isrc=USUAN1800017",
+          "license": {
+            "id": "CC-BY-4.0",
+            "name": "Creative Commons Attribution 4.0",
+            "url": "https://creativecommons.org/licenses/by/4.0/",
+            "streamingAllowed": true,
+            "creditRequired": true
+          },
+          "attribution": "\"Northern Glade\" Kevin MacLeod (incompetech.com), CC BY 4.0."
+        },
+        {
+          "id": "USUAN2100012",
+          "title": "Valse Gymnopedie",
+          "artist": "Kevin MacLeod",
+          "bpm": 77,
+          "durationSeconds": 192,
+          "src": "https://incompetech.com/music/royalty-free/mp3-royaltyfree/Valse%20Gymnopedie.mp3",
+          "source": "https://incompetech.com/music/royalty-free/index.html?isrc=USUAN2100012",
+          "license": {
+            "id": "CC-BY-4.0",
+            "name": "Creative Commons Attribution 4.0",
+            "url": "https://creativecommons.org/licenses/by/4.0/",
+            "streamingAllowed": true,
+            "creditRequired": true
+          },
+          "attribution": "\"Valse Gymnopedie\" Kevin MacLeod (incompetech.com), CC BY 4.0."
+        },
+        {
+          "id": "USUAN1400033",
+          "title": "Pepper's Theme",
+          "artist": "Kevin MacLeod",
+          "bpm": 76,
+          "durationSeconds": 234,
+          "src": "https://incompetech.com/music/royalty-free/mp3-royaltyfree/Peppers%20Theme.mp3",
+          "source": "https://incompetech.com/music/royalty-free/index.html?isrc=USUAN1400033",
+          "license": {
+            "id": "CC-BY-4.0",
+            "name": "Creative Commons Attribution 4.0",
+            "url": "https://creativecommons.org/licenses/by/4.0/",
+            "streamingAllowed": true,
+            "creditRequired": true
+          },
+          "attribution": "\"Pepper's Theme\" Kevin MacLeod (incompetech.com), CC BY 4.0."
+        },
+        {
+          "id": "USUAN2100003",
+          "title": "Late Night Radio",
+          "artist": "Kevin MacLeod",
+          "bpm": 72,
+          "durationSeconds": 264,
+          "src": "https://incompetech.com/music/royalty-free/mp3-royaltyfree/Late%20Night%20Radio.mp3",
+          "source": "https://incompetech.com/music/royalty-free/index.html?isrc=USUAN2100003",
+          "license": {
+            "id": "CC-BY-4.0",
+            "name": "Creative Commons Attribution 4.0",
+            "url": "https://creativecommons.org/licenses/by/4.0/",
+            "streamingAllowed": true,
+            "creditRequired": true
+          },
+          "attribution": "\"Late Night Radio\" Kevin MacLeod (incompetech.com), CC BY 4.0."
+        },
+        {
+          "id": "USUAN1900030",
+          "title": "Study And Relax",
+          "artist": "Kevin MacLeod",
+          "bpm": 72,
+          "durationSeconds": 223,
+          "src": "https://incompetech.com/music/royalty-free/mp3-royaltyfree/Study%20And%20Relax.mp3",
+          "source": "https://incompetech.com/music/royalty-free/index.html?isrc=USUAN1900030",
+          "license": {
+            "id": "CC-BY-4.0",
+            "name": "Creative Commons Attribution 4.0",
+            "url": "https://creativecommons.org/licenses/by/4.0/",
+            "streamingAllowed": true,
+            "creditRequired": true
+          },
+          "attribution": "\"Study And Relax\" Kevin MacLeod (incompetech.com), CC BY 4.0."
+        },
+        {
+          "id": "USUAN1100637",
+          "title": "Thinking of You",
+          "artist": "Kevin MacLeod",
+          "bpm": 72,
+          "durationSeconds": 110,
+          "src": "https://incompetech.com/music/royalty-free/mp3-royaltyfree/Thinking%20of%20You.mp3",
+          "source": "https://incompetech.com/music/royalty-free/index.html?isrc=USUAN1100637",
+          "license": {
+            "id": "CC-BY-4.0",
+            "name": "Creative Commons Attribution 4.0",
+            "url": "https://creativecommons.org/licenses/by/4.0/",
+            "streamingAllowed": true,
+            "creditRequired": true
+          },
+          "attribution": "\"Thinking of You\" Kevin MacLeod (incompetech.com), CC BY 4.0."
+        },
+        {
+          "id": "USUAN1900016",
+          "title": "Sincerely",
+          "artist": "Kevin MacLeod",
+          "bpm": 72,
+          "durationSeconds": 375,
+          "src": "https://incompetech.com/music/royalty-free/mp3-royaltyfree/Sincerely.mp3",
+          "source": "https://incompetech.com/music/royalty-free/index.html?isrc=USUAN1900016",
+          "license": {
+            "id": "CC-BY-4.0",
+            "name": "Creative Commons Attribution 4.0",
+            "url": "https://creativecommons.org/licenses/by/4.0/",
+            "streamingAllowed": true,
+            "creditRequired": true
+          },
+          "attribution": "\"Sincerely\" Kevin MacLeod (incompetech.com), CC BY 4.0."
+        },
+        {
+          "id": "USUAN1300046",
+          "title": "Dream Culture",
+          "artist": "Kevin MacLeod",
+          "bpm": 70,
+          "durationSeconds": 214,
+          "src": "https://incompetech.com/music/royalty-free/mp3-royaltyfree/Dream%20Culture.mp3",
+          "source": "https://incompetech.com/music/royalty-free/index.html?isrc=USUAN1300046",
+          "license": {
+            "id": "CC-BY-4.0",
+            "name": "Creative Commons Attribution 4.0",
+            "url": "https://creativecommons.org/licenses/by/4.0/",
+            "streamingAllowed": true,
+            "creditRequired": true
+          },
+          "attribution": "\"Dream Culture\" Kevin MacLeod (incompetech.com), CC BY 4.0."
+        },
+        {
+          "id": "USUAN1100626",
+          "title": "Clear Air",
+          "artist": "Kevin MacLeod",
           "bpm": 68,
-          "seed": 96,
-          "demo": true,
-          "durationSeconds": 14
+          "durationSeconds": 183,
+          "src": "https://incompetech.com/music/royalty-free/mp3-royaltyfree/Clear%20Air.mp3",
+          "source": "https://incompetech.com/music/royalty-free/index.html?isrc=USUAN1100626",
+          "license": {
+            "id": "CC-BY-4.0",
+            "name": "Creative Commons Attribution 4.0",
+            "url": "https://creativecommons.org/licenses/by/4.0/",
+            "streamingAllowed": true,
+            "creditRequired": true
+          },
+          "attribution": "\"Clear Air\" Kevin MacLeod (incompetech.com), CC BY 4.0."
+        },
+        {
+          "id": "USUAN1100287",
+          "title": "Comfortable Mystery",
+          "artist": "Kevin MacLeod",
+          "bpm": 65,
+          "durationSeconds": 236,
+          "src": "https://incompetech.com/music/royalty-free/mp3-royaltyfree/Comfortable%20Mystery.mp3",
+          "source": "https://incompetech.com/music/royalty-free/index.html?isrc=USUAN1100287",
+          "license": {
+            "id": "CC-BY-4.0",
+            "name": "Creative Commons Attribution 4.0",
+            "url": "https://creativecommons.org/licenses/by/4.0/",
+            "streamingAllowed": true,
+            "creditRequired": true
+          },
+          "attribution": "\"Comfortable Mystery\" Kevin MacLeod (incompetech.com), CC BY 4.0."
+        },
+        {
+          "id": "USUAN1100537",
+          "title": "Comfortable Mystery 2",
+          "artist": "Kevin MacLeod",
+          "bpm": 65,
+          "durationSeconds": 54,
+          "src": "https://incompetech.com/music/royalty-free/mp3-royaltyfree/Comfortable%20Mystery%202.mp3",
+          "source": "https://incompetech.com/music/royalty-free/index.html?isrc=USUAN1100537",
+          "license": {
+            "id": "CC-BY-4.0",
+            "name": "Creative Commons Attribution 4.0",
+            "url": "https://creativecommons.org/licenses/by/4.0/",
+            "streamingAllowed": true,
+            "creditRequired": true
+          },
+          "attribution": "\"Comfortable Mystery 2\" Kevin MacLeod (incompetech.com), CC BY 4.0."
+        },
+        {
+          "id": "USUAN1100566",
+          "title": "Blue Paint",
+          "artist": "Kevin MacLeod",
+          "bpm": 64,
+          "durationSeconds": 131,
+          "src": "https://incompetech.com/music/royalty-free/mp3-royaltyfree/Blue%20Paint.mp3",
+          "source": "https://incompetech.com/music/royalty-free/index.html?isrc=USUAN1100566",
+          "license": {
+            "id": "CC-BY-4.0",
+            "name": "Creative Commons Attribution 4.0",
+            "url": "https://creativecommons.org/licenses/by/4.0/",
+            "streamingAllowed": true,
+            "creditRequired": true
+          },
+          "attribution": "\"Blue Paint\" Kevin MacLeod (incompetech.com), CC BY 4.0."
+        },
+        {
+          "id": "USUAN1100860",
+          "title": "Avec Soin",
+          "artist": "Kevin MacLeod",
+          "bpm": 64,
+          "durationSeconds": 145,
+          "src": "https://incompetech.com/music/royalty-free/mp3-royaltyfree/Avec%20Soin.mp3",
+          "source": "https://incompetech.com/music/royalty-free/index.html?isrc=USUAN1100860",
+          "license": {
+            "id": "CC-BY-4.0",
+            "name": "Creative Commons Attribution 4.0",
+            "url": "https://creativecommons.org/licenses/by/4.0/",
+            "streamingAllowed": true,
+            "creditRequired": true
+          },
+          "attribution": "\"Avec Soin\" Kevin MacLeod (incompetech.com), CC BY 4.0."
+        },
+        {
+          "id": "USUAN1200083",
+          "title": "Summer Day",
+          "artist": "Kevin MacLeod",
+          "bpm": 60,
+          "durationSeconds": 198,
+          "src": "https://incompetech.com/music/royalty-free/mp3-royaltyfree/Summer%20Day.mp3",
+          "source": "https://incompetech.com/music/royalty-free/index.html?isrc=USUAN1200083",
+          "license": {
+            "id": "CC-BY-4.0",
+            "name": "Creative Commons Attribution 4.0",
+            "url": "https://creativecommons.org/licenses/by/4.0/",
+            "streamingAllowed": true,
+            "creditRequired": true
+          },
+          "attribution": "\"Summer Day\" Kevin MacLeod (incompetech.com), CC BY 4.0."
         }
       ]
     }
