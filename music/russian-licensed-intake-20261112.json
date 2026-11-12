@@ -6,7 +6,7 @@
     "naumenko": 6,
     "darkAntey": 26
   },
-  "purpose": "Rights and tempo controlled intake for СНАЧАЛА УЖИН; these are unpublished catalog candidates, not playable tracks.",
+  "purpose": "Source verified and partially assigned to feature-branch playlist manifest only; not deployed.",
   "playbackRules": "Never expose as playable until legal status, exact full audio URL and BPM have been checked. No hard cap of 20 songs per playlist.",
   "tempoBands": {
     "kitchen": {
@@ -41,10 +41,15 @@
         "commercialUse": true
       },
       "sourceMedia": "wikimedia-commons",
-      "tempoBpm": null,
-      "tempoConfidence": null,
-      "reviewStatus": "awaiting-audio-bpm-analysis",
-      "audible": false
+      "tempoBpm": 123,
+      "tempoConfidence": 1,
+      "reviewStatus": "integrated-in-feature-branch-pending-listening-regional-playback-qa",
+      "audible": true,
+      "mediaUrl": "https://upload.wikimedia.org/wikipedia/commons/4/41/EXIT_project_-_Paint_It_Blue_Or_Say_It%60s_Sad.ogg",
+      "audioBytes": 11543194,
+      "tempoMethod": "librosa beat tracking from OGG, 105-sec sample, 2026-11-12; preliminary estimate",
+      "tempoSuggestedPlaylist": "kitchen",
+      "assignedPlaylist": "kitchen"
     },
     {
       "id": "tunguska-cc-02",
@@ -61,10 +66,15 @@
         "commercialUse": true
       },
       "sourceMedia": "wikimedia-commons",
-      "tempoBpm": null,
-      "tempoConfidence": null,
-      "reviewStatus": "awaiting-audio-bpm-analysis",
-      "audible": false
+      "tempoBpm": 89.1,
+      "tempoConfidence": 1,
+      "reviewStatus": "integrated-in-feature-branch-pending-listening-regional-playback-qa",
+      "audible": true,
+      "mediaUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b1/Oleg_Sirenko_-_Flying_By_Above_--_Tunguska_E.M.S._for_Creative_Commons_%28track_2%29.ogg",
+      "audioBytes": 13827669,
+      "tempoMethod": "librosa beat tracking from OGG, 105-sec sample, 2026-11-12; preliminary estimate",
+      "tempoSuggestedPlaylist": "dinner",
+      "assignedPlaylist": "dinner"
     },
     {
       "id": "tunguska-cc-03",
@@ -81,10 +91,15 @@
         "commercialUse": true
       },
       "sourceMedia": "wikimedia-commons",
-      "tempoBpm": null,
-      "tempoConfidence": null,
-      "reviewStatus": "awaiting-audio-bpm-analysis",
-      "audible": false
+      "tempoBpm": 99.4,
+      "tempoConfidence": 1,
+      "reviewStatus": "integrated-in-feature-branch-pending-listening-regional-playback-qa",
+      "audible": true,
+      "mediaUrl": "https://upload.wikimedia.org/wikipedia/commons/f/f6/Aquascape_-_Vacuum_Fields_--_Tunguska_E.M.S._for_Creative_Commons_%28track_3%29.ogg",
+      "audioBytes": 15173566,
+      "tempoMethod": "librosa beat tracking from OGG, 105-sec sample, 2026-11-12; preliminary estimate",
+      "tempoSuggestedPlaylist": "dinner",
+      "assignedPlaylist": "dinner"
     },
     {
       "id": "tunguska-cc-04",
@@ -101,10 +116,14 @@
         "commercialUse": true
       },
       "sourceMedia": "wikimedia-commons",
-      "tempoBpm": null,
-      "tempoConfidence": null,
-      "reviewStatus": "awaiting-audio-bpm-analysis",
-      "audible": false
+      "tempoBpm": 68,
+      "tempoConfidence": 1,
+      "reviewStatus": "tempo-disputed: audio estimate 68 vs commercially distributed Original Version 94 BPM (not necessarily same master); require manual listening",
+      "audible": false,
+      "mediaUrl": "https://upload.wikimedia.org/wikipedia/commons/a/ad/Pianochocolate_-_Cold_Days_T--unguska_E.M.S._for_Creative_Commons_%28track_4%29.ogg",
+      "audioBytes": 9327607,
+      "tempoMethod": "librosa beat tracking from OGG, 105-sec sample, 2026-11-12; preliminary estimate",
+      "tempoSuggestedPlaylist": "after"
     },
     {
       "id": "tunguska-cc-05",
@@ -121,10 +140,14 @@
         "commercialUse": true
       },
       "sourceMedia": "wikimedia-commons",
-      "tempoBpm": null,
-      "tempoConfidence": null,
-      "reviewStatus": "awaiting-audio-bpm-analysis",
-      "audible": false
+      "tempoBpm": 117.5,
+      "tempoConfidence": 1,
+      "reviewStatus": "unassigned-tempo-outside-approved-bands-101-to-119",
+      "audible": false,
+      "mediaUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e7/Vsadnik_-_I_Can_Fly_--_Tunguska_E.M.S._for_Creative_Commons_%28track_5%29.ogg",
+      "audioBytes": 8755475,
+      "tempoMethod": "librosa beat tracking from OGG, 105-sec sample, 2026-11-12; preliminary estimate",
+      "tempoSuggestedPlaylist": null
     },
     {
       "id": "tunguska-cc-06",
@@ -141,10 +164,15 @@
         "commercialUse": true
       },
       "sourceMedia": "wikimedia-commons",
-      "tempoBpm": null,
-      "tempoConfidence": null,
-      "reviewStatus": "awaiting-audio-bpm-analysis",
-      "audible": false
+      "tempoBpm": 76,
+      "tempoConfidence": 1,
+      "reviewStatus": "integrated-in-feature-branch-pending-listening-regional-playback-qa",
+      "audible": true,
+      "mediaUrl": "https://upload.wikimedia.org/wikipedia/commons/9/90/ARGONIKA_-_Flight_of_the_Spirit_--_Tunguska_E.M.S._for_Creative_Commons_%28track_6%29.ogg",
+      "audioBytes": 19339716,
+      "tempoMethod": "librosa beat tracking from OGG, 105-sec sample, 2026-11-12; preliminary estimate",
+      "tempoSuggestedPlaylist": "after",
+      "assignedPlaylist": "after"
     },
     {
       "id": "tunguska-cc-07",
@@ -161,10 +189,15 @@
         "commercialUse": true
       },
       "sourceMedia": "wikimedia-commons",
-      "tempoBpm": null,
-      "tempoConfidence": null,
-      "reviewStatus": "awaiting-audio-bpm-analysis",
-      "audible": false
+      "tempoBpm": 83.4,
+      "tempoConfidence": 1,
+      "reviewStatus": "integrated-in-feature-branch-pending-listening-regional-playback-qa",
+      "audible": true,
+      "mediaUrl": "https://upload.wikimedia.org/wikipedia/commons/7/70/Bigfoot_-_Tunguska_M_--_Tunguska_E.M.S._for_Creative_Commons_%28track_7%29.ogg",
+      "audioBytes": 17161663,
+      "tempoMethod": "librosa beat tracking from OGG, 105-sec sample, 2026-11-12; preliminary estimate",
+      "tempoSuggestedPlaylist": "dinner",
+      "assignedPlaylist": "dinner"
     },
     {
       "id": "tunguska-cc-08",
@@ -181,10 +214,14 @@
         "commercialUse": true
       },
       "sourceMedia": "wikimedia-commons",
-      "tempoBpm": null,
-      "tempoConfidence": null,
-      "reviewStatus": "awaiting-audio-bpm-analysis",
-      "audible": false
+      "tempoBpm": 103.4,
+      "tempoConfidence": 0.904,
+      "reviewStatus": "unassigned-tempo-outside-approved-bands-101-to-119",
+      "audible": false,
+      "mediaUrl": "https://upload.wikimedia.org/wikipedia/commons/1/13/CJ_Catalizer_-_The_Third_Orbit_--_Tunguska_E.M.S._for_Creative_Commons_%28track_8%29.ogg",
+      "audioBytes": 13325019,
+      "tempoMethod": "librosa beat tracking from OGG, 105-sec sample, 2026-11-12; preliminary estimate",
+      "tempoSuggestedPlaylist": null
     },
     {
       "id": "tunguska-cc-09",
@@ -201,10 +238,14 @@
         "commercialUse": true
       },
       "sourceMedia": "wikimedia-commons",
-      "tempoBpm": null,
-      "tempoConfidence": null,
-      "reviewStatus": "awaiting-audio-bpm-analysis",
-      "audible": false
+      "tempoBpm": 117.5,
+      "tempoConfidence": 0.891,
+      "reviewStatus": "unassigned-tempo-outside-approved-bands-101-to-119",
+      "audible": false,
+      "mediaUrl": "https://upload.wikimedia.org/wikipedia/commons/1/16/Olga_Scotland_-_Iron_Flowers_From_Sirius_--_Tunguska_E.M.S._for_Creative_Commons_%28track_9%29.ogg",
+      "audioBytes": 11453369,
+      "tempoMethod": "librosa beat tracking from OGG, 105-sec sample, 2026-11-12; preliminary estimate",
+      "tempoSuggestedPlaylist": null
     },
     {
       "id": "tunguska-cc-10",
@@ -221,10 +262,14 @@
         "commercialUse": true
       },
       "sourceMedia": "wikimedia-commons",
-      "tempoBpm": null,
-      "tempoConfidence": null,
-      "reviewStatus": "awaiting-audio-bpm-analysis",
-      "audible": false
+      "tempoBpm": 117.5,
+      "tempoConfidence": 1,
+      "reviewStatus": "unassigned-tempo-outside-approved-bands-101-to-119",
+      "audible": false,
+      "mediaUrl": "https://upload.wikimedia.org/wikipedia/commons/8/85/MoVoX_-_Euphoria_--_Tunguska_E.M.S._for_Creative_Commons_%28track_10%29.ogg",
+      "audioBytes": 13727840,
+      "tempoMethod": "librosa beat tracking from OGG, 105-sec sample, 2026-11-12; preliminary estimate",
+      "tempoSuggestedPlaylist": null
     },
     {
       "id": "tunguska-cc-11",
@@ -241,10 +286,15 @@
         "commercialUse": true
       },
       "sourceMedia": "wikimedia-commons",
-      "tempoBpm": null,
-      "tempoConfidence": null,
-      "reviewStatus": "awaiting-audio-bpm-analysis",
-      "audible": false
+      "tempoBpm": 80.7,
+      "tempoConfidence": 0.925,
+      "reviewStatus": "integrated-in-feature-branch-pending-listening-regional-playback-qa",
+      "audible": true,
+      "mediaUrl": "https://upload.wikimedia.org/wikipedia/commons/9/91/Electro-Nick_-_The_Dark_Side_Of_The_Third_Plane_--_Tunguska_E.M.S._for_Creative_Commons_%28track_11%29.ogg",
+      "audioBytes": 10883623,
+      "tempoMethod": "librosa beat tracking from OGG, 105-sec sample, 2026-11-12; preliminary estimate",
+      "tempoSuggestedPlaylist": "dinner",
+      "assignedPlaylist": "dinner"
     },
     {
       "id": "naumenko-impression-01",
@@ -264,10 +314,13 @@
         "archiveLicenseVersion": "CC-BY-SA-3.0"
       },
       "sourceMedia": "internet-archive",
-      "tempoBpm": null,
-      "tempoConfidence": null,
-      "reviewStatus": "awaiting-audio-bpm-analysis; archive-original-release-3.0-vs-official-label-4.0",
-      "audible": false
+      "tempoBpm": 112.3,
+      "tempoConfidence": 0.896,
+      "reviewStatus": "unassigned-tempo-outside-approved-bands-101-to-119",
+      "audible": false,
+      "audioBytes": 1675521,
+      "tempoMethod": "librosa beat tracking from OGG, 105-sec sample, 2026-11-12; preliminary estimate",
+      "tempoSuggestedPlaylist": null
     },
     {
       "id": "naumenko-impression-02",
@@ -287,10 +340,14 @@
         "archiveLicenseVersion": "CC-BY-SA-3.0"
       },
       "sourceMedia": "internet-archive",
-      "tempoBpm": null,
-      "tempoConfidence": null,
-      "reviewStatus": "awaiting-audio-bpm-analysis; archive-original-release-3.0-vs-official-label-4.0",
-      "audible": false
+      "tempoBpm": 83.4,
+      "tempoConfidence": 0.923,
+      "reviewStatus": "integrated-in-feature-branch-pending-listening-regional-playback-qa",
+      "audible": true,
+      "audioBytes": 2069016,
+      "tempoMethod": "librosa beat tracking from OGG, 105-sec sample, 2026-11-12; preliminary estimate",
+      "tempoSuggestedPlaylist": "dinner",
+      "assignedPlaylist": "dinner"
     },
     {
       "id": "naumenko-impression-03",
@@ -310,10 +367,13 @@
         "archiveLicenseVersion": "CC-BY-SA-3.0"
       },
       "sourceMedia": "internet-archive",
-      "tempoBpm": null,
-      "tempoConfidence": null,
-      "reviewStatus": "awaiting-audio-bpm-analysis; archive-original-release-3.0-vs-official-label-4.0",
-      "audible": false
+      "tempoBpm": 117.5,
+      "tempoConfidence": 0.891,
+      "reviewStatus": "unassigned-tempo-outside-approved-bands-101-to-119",
+      "audible": false,
+      "audioBytes": 1302277,
+      "tempoMethod": "librosa beat tracking from OGG, 105-sec sample, 2026-11-12; preliminary estimate",
+      "tempoSuggestedPlaylist": null
     },
     {
       "id": "naumenko-impression-04",
@@ -333,10 +393,13 @@
         "archiveLicenseVersion": "CC-BY-SA-3.0"
       },
       "sourceMedia": "internet-archive",
-      "tempoBpm": null,
-      "tempoConfidence": null,
-      "reviewStatus": "awaiting-audio-bpm-analysis; archive-original-release-3.0-vs-official-label-4.0",
-      "audible": false
+      "tempoBpm": 117.5,
+      "tempoConfidence": 1,
+      "reviewStatus": "unassigned-tempo-outside-approved-bands-101-to-119",
+      "audible": false,
+      "audioBytes": 2515922,
+      "tempoMethod": "librosa beat tracking from OGG, 105-sec sample, 2026-11-12; preliminary estimate",
+      "tempoSuggestedPlaylist": null
     },
     {
       "id": "naumenko-impression-05",
@@ -356,10 +419,14 @@
         "archiveLicenseVersion": "CC-BY-SA-3.0"
       },
       "sourceMedia": "internet-archive",
-      "tempoBpm": null,
-      "tempoConfidence": null,
-      "reviewStatus": "awaiting-audio-bpm-analysis; archive-original-release-3.0-vs-official-label-4.0",
-      "audible": false
+      "tempoBpm": 89.1,
+      "tempoConfidence": 0.917,
+      "reviewStatus": "integrated-in-feature-branch-pending-listening-regional-playback-qa",
+      "audible": true,
+      "audioBytes": 1810327,
+      "tempoMethod": "librosa beat tracking from OGG, 105-sec sample, 2026-11-12; preliminary estimate",
+      "tempoSuggestedPlaylist": "dinner",
+      "assignedPlaylist": "dinner"
     },
     {
       "id": "naumenko-impression-06",
@@ -379,10 +446,14 @@
         "archiveLicenseVersion": "CC-BY-SA-3.0"
       },
       "sourceMedia": "internet-archive",
-      "tempoBpm": null,
-      "tempoConfidence": null,
-      "reviewStatus": "awaiting-audio-bpm-analysis; archive-original-release-3.0-vs-official-label-4.0",
-      "audible": false
+      "tempoBpm": 99.4,
+      "tempoConfidence": 0.954,
+      "reviewStatus": "integrated-in-feature-branch-pending-listening-regional-playback-qa",
+      "audible": true,
+      "audioBytes": 1955005,
+      "tempoMethod": "librosa beat tracking from OGG, 105-sec sample, 2026-11-12; preliminary estimate",
+      "tempoSuggestedPlaylist": "dinner",
+      "assignedPlaylist": "dinner"
     },
     {
       "id": "dark-antey-silent-depths-01",
@@ -826,5 +897,18 @@
       "reviewStatus": "rights-conflict-no-permanent-audio-url",
       "audible": false
     }
-  ]
+  ],
+  "auditRunUrl": "https://github.com/semen89852698936-create/snachala-uzhin/actions/runs/43191362554",
+  "auditSummary": {
+    "measured": 17,
+    "integratedInFeatureBranch": 9,
+    "tempoDisputed": 1,
+    "outsideBands": 7,
+    "rightsHold": 26,
+    "appliedByPlaylist": {
+      "kitchen": 1,
+      "dinner": 7,
+      "after": 1
+    }
+  }
 }
