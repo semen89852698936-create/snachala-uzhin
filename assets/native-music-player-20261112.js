@@ -251,6 +251,29 @@
       if($('.du-np-inline',card))return;
       const phase=card.getAttribute('data-music-phase');
       if(!state.manifest.playlists[phase])return;
+      // Keep the existing editorial cards, but show only the 40 licensed tracks.
+      const licensedTracks=state.manifest.playlists[phase].tracks;
+      const suggestions=$('.du-music-suggestions',card);
+      if(suggestions){
+        suggestions.replaceChildren();
+        const summary=document.createElement('summary');
+        summary.append(document.createTextNode(licensedTracks.length+' композиций '));
+        const arrow=document.createElement('span');arrow.setAttribute('aria-hidden','true');arrow.textContent='⌄';summary.appendChild(arrow);
+        suggestions.appendChild(summary);
+        const list=document.createElement('ol');list.className='du-bpm-track-list';
+        licensedTracks.forEach(track=>{
+          const li=document.createElement('li');li.className='du-bpm-track';
+          const art=document.createElement('span');art.className='du-bpm-art';art.setAttribute('aria-hidden','true');
+          const details=document.createElement('span');details.className='du-bpm-track-details';
+          const title=document.createElement('strong');title.textContent=track.title;
+          const artist=document.createElement('span');artist.textContent='Kevin MacLeod';
+          const source=document.createElement('a');source.href=track.source;source.target='_blank';source.rel='noopener noreferrer';
+          source.textContent='Источник и лицензия ↗';
+          const bpm=document.createElement('span');bpm.className='du-bpm-pill';bpm.textContent=track.bpm+' BPM';
+          details.append(title,artist,source);li.append(art,details,bpm);list.appendChild(li);
+        });
+        suggestions.appendChild(list);
+      }
       const node=document.createElement('div');
       node.className='du-np-inline';node.innerHTML=sheetMarkup(phase);
       const total=$('.du-music-total',card);
