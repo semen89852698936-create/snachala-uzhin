@@ -287,7 +287,7 @@
   }
   function build() {
     $$('#music .du-music-card[data-music-phase]').forEach(card => {
-      $('.du-np-inline',card).forEach(node=>node.remove());
+      $$('.du-np-inline',card).forEach(node=>node.remove());
       const phase=card.getAttribute('data-music-phase');
       if(!state.manifest.playlists[phase])return;
       // Keep the existing editorial cards, but show only the 40 licensed tracks.
@@ -511,7 +511,8 @@
     }catch(err){
       console.error('Газетный плеер:',err);
       const node=document.createElement('p');
-      node.className='du-np-error';node.textContent='Не удалось загрузить музыкальный плеер.';
+      node.className='du-np-error';
+      node.textContent='Не удалось загрузить музыкальный плеер: '+String(err?.message||err||'неизвестная ошибка')+'.';
       $('#music')?.appendChild(node);
     }
   }
