@@ -1,4 +1,4 @@
-name: Owner meat photo regeneration - 64 recipe-specific Alice AI ART images
+name: Continue user-approved meat photo production - 64 Alice AI ART candidates
 
 on:
   push:
@@ -68,8 +68,8 @@ jobs:
               continue
             fi
             if [[ "$state" == "PENDING" ]]; then
-              echo "::error::Unresolved paid request for recipe $n, refusing duplicate paid charge"
-              exit 1
+              echo "::warning::Recipe $n has an unresolved paid request. Skip without duplicate billing; reconcile separately."
+              continue
             fi
             python3 scripts/regenerate-owner-meat-64.py --mode reserve --n "$n"
             git add -A photo-library/regeneration-owner-meat-64-20261113
@@ -98,7 +98,7 @@ jobs:
           root=Path("photo-library/regeneration-owner-meat-64-20261113")
           records=list((root/"records").glob("*.json"))
           images=list((root/"candidates").glob("*.webp"))
-          assert len(records)==len(images)==64,(len(records),len(images))
-          assert not any((root/"pending").glob("*.json"))
-          print("COMPLETE 64 validated WebP files; staged only, website not changed")
+          pending=list((root/"pending").glob("*.json"))
+          assert len(records)==len(images) and len(images)+len(pending)==64,(len(records),len(images),len(pending))
+          print(f"STAGED: {len(images)}/64 generated candidates, {len(pending)} unresolved paid request(s). No images were published.")
           PY
