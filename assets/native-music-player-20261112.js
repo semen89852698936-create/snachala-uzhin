@@ -188,11 +188,18 @@
     }
     return order;
   }
+  function showShuffledPlaylistOrder(phase,order){
+    const list=$('#music .du-music-card[data-music-phase="'+phase+'"] .du-bpm-track-list');
+    if(!list)return;
+    const nodes=new Map([...list.children].map(node=>[Number(node.dataset.npTrackIndex),node]));
+    order.forEach(index=>{const node=nodes.get(index);if(node)list.appendChild(node);});
+  }
   async function startRandomPlaylist(phase,autoplay=true){
     const group=state.manifest?.playlists[phase];
     if(!group?.tracks?.length)return;
     state.shuffleQueue=shuffledIndices(group.tracks.length);
     state.shufflePosition=0;
+    showShuffledPlaylistOrder(phase,state.shuffleQueue);
     await choose(phase,state.shuffleQueue[0],autoplay);
   }
   async function choose(phase,index=0,autoplay=true) {
@@ -210,7 +217,9 @@
       state.shufflePosition=0;
     }
     if(state.shufflePosition+1>=state.shuffleQueue.length){
-      state.shuffleQueue.push(...shuffledIndices(tracks().length,state.index));
+      const nextCycle=shuffledIndices(tracks().length,state.index);
+      state.shuffleQueue.push(...nextCycle);
+      showShuffledPlaylistOrder(state.phase,nextCycle);
     }
     state.shufflePosition++;
     await choose(state.phase,state.shuffleQueue[state.shufflePosition],state.playing);
@@ -291,8 +300,9 @@
         const arrow=document.createElement('span');arrow.setAttribute('aria-hidden','true');arrow.textContent='⌄';summary.appendChild(arrow);
         suggestions.appendChild(summary);
         const list=document.createElement('ol');list.className='du-bpm-track-list';
-        licensedTracks.forEach(track=>{
+        licensedTracks.forEach((track,trackIndex)=>{
           const li=document.createElement('li');li.className='du-bpm-track';
+          li.dataset.npTrackIndex=String(trackIndex);
           const art=document.createElement('span');art.className='du-bpm-art';art.setAttribute('aria-hidden','true');
           const details=document.createElement('span');details.className='du-bpm-track-details';
           const title=document.createElement('strong');title.textContent=track.title;
@@ -477,6 +487,7 @@
       }
       state.shufflePosition=0;
       build();
+      showShuffledPlaylistOrder(state.phase,state.shuffleQueue);
       enablePlayerDragging();
       installEvents();
       window.duNewspaperPlayer={
