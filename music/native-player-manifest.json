@@ -1,15 +1,15 @@
 {
   "version": 2,
   "stage": "licensed-audio-preview",
-  "notice": "40 записей Kevin MacLeod по CC BY 4.0. Авторство и лицензия указаны в плеере и на странице /music/credits.html. Внешние MP3-ссылки нуждаются в проверке доступности для посетителей из России.",
+  "notice": "42 записи с разрешением на коммерческое использование по CC BY 4.0: 40 Kevin MacLeod и 2 Sergey Cheremisinov. Авторство и ссылки на лицензии: /music/credits.html. Доступность внешних файлов в России и точный BPM двух новых записей требуют отдельной проверки.",
   "phaseOrder": [
     "kitchen",
     "dinner",
     "after"
   ],
-  "source": "https://incompetech.com/agent-section/",
+  "source": "https://incompetech.com/agent-section/; https://s-cheremisinov.com/how-to-use",
   "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
-  "metadataNote": "39 URL и длительности взяты из открытого каталога Incompetech/Aristaeus; запись The Britons сверена по официальной странице Incompetech, MP3-адрес требует отдельной проверки.",
+  "metadataNote": "40 треков Kevin MacLeod из Incompetech; 2 трека Sergey Cheremisinov из Wikimedia Commons, лицензия дополнительно подтверждена на сайте композитора. Для двух новых записей BPM ещё не измерен: группировка по спокойному звучанию предварительна.",
   "playlists": {
     "kitchen": {
       "label": "Под что готовить",
@@ -706,6 +706,44 @@
             "creditRequired": true
           },
           "attribution": "\"Summer Day\" Kevin MacLeod (incompetech.com), CC BY 4.0."
+        },
+        {
+          "id": "sergey-cheremisinov-waves-2016",
+          "title": "Waves",
+          "artist": "Sergey Cheremisinov",
+          "bpm": null,
+          "tempoStatus": "requires-audio-verification",
+          "durationSeconds": 199,
+          "src": "https://upload.wikimedia.org/wikipedia/commons/5/55/Sergey_Cheremisinov_-_03_-_Waves.ogg",
+          "source": "https://commons.wikimedia.org/wiki/File:Sergey_Cheremisinov_-_03_-_Waves.ogg",
+          "license": {
+            "id": "CC-BY-4.0",
+            "name": "Creative Commons Attribution 4.0",
+            "url": "https://creativecommons.org/licenses/by/4.0/",
+            "streamingAllowed": true,
+            "creditRequired": true
+          },
+          "authorLicenseSource": "https://s-cheremisinov.com/how-to-use",
+          "attribution": "\"Waves\" — Sergey Cheremisinov, CC BY 4.0. Source: Wikimedia Commons (OGG transcode of FMA MP3); no changes made by СНАЧАЛА УЖИН."
+        },
+        {
+          "id": "sergey-cheremisinov-when-you-leave-2016",
+          "title": "When You Leave",
+          "artist": "Sergey Cheremisinov",
+          "bpm": null,
+          "tempoStatus": "requires-audio-verification",
+          "durationSeconds": 130,
+          "src": "https://upload.wikimedia.org/wikipedia/commons/3/3a/Sergey_Cheremisinov_-_04_-_When_You_Leave.ogg",
+          "source": "https://commons.wikimedia.org/wiki/File:Sergey_Cheremisinov_-_04_-_When_You_Leave.ogg",
+          "license": {
+            "id": "CC-BY-4.0",
+            "name": "Creative Commons Attribution 4.0",
+            "url": "https://creativecommons.org/licenses/by/4.0/",
+            "streamingAllowed": true,
+            "creditRequired": true
+          },
+          "authorLicenseSource": "https://s-cheremisinov.com/how-to-use",
+          "attribution": "\"When You Leave\" — Sergey Cheremisinov, CC BY 4.0. Source: Wikimedia Commons (OGG transcode of FMA MP3); no changes made by СНАЧАЛА УЖИН."
         }
       ]
     }
