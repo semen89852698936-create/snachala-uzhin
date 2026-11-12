@@ -1,0 +1,1 @@
+PAUSE 2026-11-13: manual visual QA found off-spec results in first 4 Yandex candidates. No further paid generation should proceed. Do not publish candidates. This branch commit intentionally interrupts concurrent push-based batch safely. Rework prompts before any new paid calls.
