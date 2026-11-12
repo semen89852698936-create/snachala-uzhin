@@ -1,8 +1,7 @@
-/* СНАЧАЛА УЖИН / independent music player, demonstration edition.
-   All demo sounds are generated algorithmically in the visitor's browser:
-   no third-party recordings, samples, or playback embeds. Licensed audio may
-   be connected later only with an explicit per-track streaming-rights flag.
-   Original live site and approved editorial playlists are not modified. */
+/* СНАЧАЛА УЖИН / newspaper music player.
+   Plays only explicitly allowed CC BY 4.0 recordings listed in the manifest.
+   Credit and license information: /music/credits.html.
+   Existing site layout and editorial playlists remain unchanged. */
 (() => {
   'use strict';
   if (window.__duNewspaperPlayerInstalled) return;
@@ -11,17 +10,20 @@
   const PHASES = ['kitchen', 'dinner', 'after'];
   const DEMO_SECONDS = 14;
   const state = {
-    manifest:null, phase:'kitchen', index:0, playing:false, started:false,
+    manifest:null, phase:'dinner', index:6, playing:false, started:false,
     elapsed:0, volume:.65, ctx:null, master:null, voices:[], audio:null,
     anchor:0, clock:null, pending:false, panelOpen:false,
-    error:'', demo:true
+    error:'', demo:true, shuffleQueue:[], shufflePosition:0
   };
   const $ = (s,root=document) => root.querySelector(s);
   const $$ = (s,root=document) => [...root.querySelectorAll(s)];
   const phaseData = () => state.manifest?.playlists[state.phase];
   const tracks = () => phaseData()?.tracks || [];
   const current = () => tracks()[state.index];
-  const duration = () => Number(current()?.durationSeconds) || DEMO_SECONDS;
+  const duration = () => {
+    if (!state.demo && state.audio && Number.isFinite(state.audio.duration) && state.audio.duration > 0) return state.audio.duration;
+    return Number(current()?.durationSeconds) || (state.demo ? DEMO_SECONDS : 0);
+  };
   const timeText = sec => {
     sec=Math.max(0,Math.floor(Number(sec)||0));
     return Math.floor(sec/60)+':'+String(sec%60).padStart(2,'0');
@@ -47,17 +49,16 @@
   }
   function stopEngine() {
     stopVoices();
-    if(state.audio) {
-      state.audio.pause();
-      state.audio.removeAttribute('src'); state.audio.load(); state.audio=null;
-    }
-    // Keep the audio engine available for immediate switching and next-track playback.
+    if(state.audio) state.audio.pause();
+    // Reuse the same HTMLAudioElement for uninterrupted next-track playback.
   }
   function ctxTime() { return state.ctx?.currentTime || 0; }
   function position() {
     if(!state.playing) return state.elapsed;
     if(state.demo) return Math.min(duration(),Math.max(0,ctxTime()-state.anchor));
-    return state.audio ? Math.min(duration(),state.audio.currentTime) : state.elapsed;
+    if (!state.audio) return state.elapsed;
+    const d = duration();
+    return d > 0 ? Math.min(d,state.audio.currentTime) : state.audio.currentTime;
   }
   function padNote(midi,t,len,level,type='sine') {
     const ctx=state.ctx, master=state.master;
@@ -119,7 +120,7 @@
     if(!item||!chapter) return;
     try{
       navigator.mediaSession.metadata=new MediaMetadata({
-        title:item.title,artist:'СНАЧАЛА УЖИН · оригинальное демо',
+        title:item.title,artist:item.artist||'Kevin MacLeod',
         album:chapter.label
       });
       navigator.mediaSession.playbackState=state.playing?'playing':'paused';
@@ -137,22 +138,21 @@
     try{
       state.started=true;
       const verified=!!(track.src && track.license?.streamingAllowed===true);
-      state.demo=!verified;
-      if(verified) {
-        if(!state.audio){
-          state.audio=new Audio(); state.audio.preload='auto';
-          state.audio.addEventListener('ended',()=>next().catch(()=>{}));
-          state.audio.addEventListener('error',()=>{pause();announce('Запись недоступна. Проверь источник аудио.');});
-          state.audio.src=track.src; state.audio.volume=state.volume;
-        }
-        state.audio.currentTime=state.elapsed;
-        await state.audio.play();
-      }else{
-        await ensureContext();
-        if(state.ctx.state!=='running') await state.ctx.resume();
-        stopVoices();
-        synthesizeDemo(track,state.elapsed);
+      if(!verified) throw new Error('Аудиозапись не имеет разрешённого источника.');
+      state.demo=false;
+      if(!state.audio) {
+        state.audio=new Audio();
+        state.audio.preload='auto';
+        state.audio.addEventListener('ended',()=>next().catch(()=>{}));
+        state.audio.addEventListener('loadedmetadata',render);
+        state.audio.addEventListener('error',()=>{pause();announce('Аудиофайл сейчас недоступен. Проверь интернет или попробуй другую композицию.');});
       }
+      if(state.audio.getAttribute('src')!==track.src) state.audio.src=track.src;
+      state.audio.volume=state.volume;
+      if(state.elapsed>0) {
+        try {state.audio.currentTime=state.elapsed;} catch(_) {}
+      }
+      await state.audio.play();
       state.playing=true;
       state.panelOpen=true;
       render();
@@ -172,6 +172,36 @@
     render();
     applyMediaSession();
   }
+
+  // An independent randomized run for each selected mood. Shuffle each entire
+  // cycle without replacement, keep history for Previous, and avoid an
+  // immediate repeat where two shuffled cycles meet.
+  function shuffledIndices(count,avoidFirst=-1){
+    const order=Array.from({length:count},(_,i)=>i);
+    for(let i=order.length-1;i>0;i--){
+      const j=Math.floor(Math.random()*(i+1));
+      [order[i],order[j]]=[order[j],order[i]];
+    }
+    if(count>1 && order[0]===avoidFirst){
+      const j=1+Math.floor(Math.random()*(count-1));
+      [order[0],order[j]]=[order[j],order[0]];
+    }
+    return order;
+  }
+  function showShuffledPlaylistOrder(phase,order){
+    const list=$('#music .du-music-card[data-music-phase="'+phase+'"] .du-bpm-track-list');
+    if(!list)return;
+    const nodes=new Map([...list.children].map(node=>[Number(node.dataset.npTrackIndex),node]));
+    order.forEach(index=>{const node=nodes.get(index);if(node)list.appendChild(node);});
+  }
+  async function startRandomPlaylist(phase,autoplay=true){
+    const group=state.manifest?.playlists[phase];
+    if(!group?.tracks?.length)return;
+    state.shuffleQueue=shuffledIndices(group.tracks.length);
+    state.shufflePosition=0;
+    showShuffledPlaylistOrder(phase,state.shuffleQueue);
+    await choose(phase,state.shuffleQueue[0],autoplay);
+  }
   async function choose(phase,index=0,autoplay=true) {
     if(!state.manifest?.playlists[phase])return;
     stopEngine();state.playing=false;state.phase=phase;
@@ -182,13 +212,23 @@
   }
   async function next(){
     if(!tracks().length)return;
-    const following=state.index+1;
-    if(following<tracks().length)await choose(state.phase,following,state.playing);
-    else { await choose(state.phase,0,state.playing); }
+    if(!state.shuffleQueue.length){
+      state.shuffleQueue=[state.index,...shuffledIndices(tracks().length).filter(i=>i!==state.index)];
+      state.shufflePosition=0;
+    }
+    if(state.shufflePosition+1>=state.shuffleQueue.length){
+      const nextCycle=shuffledIndices(tracks().length,state.index);
+      state.shuffleQueue.push(...nextCycle);
+      showShuffledPlaylistOrder(state.phase,nextCycle);
+    }
+    state.shufflePosition++;
+    await choose(state.phase,state.shuffleQueue[state.shufflePosition],state.playing);
   }
   async function previous(){
     if(!tracks().length)return;
-    await choose(state.phase,Math.max(0,state.index-1),state.playing);
+    if(state.shufflePosition<=0)return;
+    state.shufflePosition--;
+    await choose(state.phase,state.shuffleQueue[state.shufflePosition],state.playing);
   }
   async function seek(seconds){
     const to=Math.max(0,Math.min(duration()-.02,Number(seconds)||0));
@@ -209,66 +249,94 @@
       '<span class="du-np-kicker">НОТНАЯ ХРОНИКА / ВЫРЕЗКА № 0'+(PHASES.indexOf(phase)+1)+'</span>'+
       '<div class="du-np-headline">Ритм <i>вечера</i><span>♫</span></div>'+
       '<p class="du-np-phase-name">'+label+'</p>'+
-      '<p class="du-np-trackline" data-np-inline-track="'+phase+'">Две авторские демозаписи · без чужих песен</p>'+
-      '<button type="button" class="du-np-start" data-np-action="phase" data-np-phase="'+phase+'">▶ Слушать демо</button>'+
+      '<p class="du-np-trackline" data-np-inline-track="'+phase+'">Музыка · CC BY 4.0</p>'+
+      '<button type="button" class="du-np-start" data-np-action="phase" data-np-phase="'+phase+'">▶ Слушать музыку</button>'+
       '<div class="du-np-corner">№ 0'+(PHASES.indexOf(phase)+1)+'</div>'+
     '</div></div>';
   }
   function floatingMarkup() {
-    return '<div class="du-np-dock" id="duNewspaperDock">'+
-      '<button class="du-np-launcher" id="duNpLauncher" type="button" aria-controls="duNpPanel" aria-expanded="false"><span>♫</span> Музыка</button>'+
-      '<section class="du-np-dock-body" id="duNpPanel" aria-label="Собственный музыкальный плеер" hidden>'+
-        '<div class="du-np-dock-paper">'+
-        '<header class="du-np-top"><div class="du-np-masthead"><small>СНАЧАЛА УЖИН · РАДИО ДЛЯ ДВОИХ</small><strong>МУЗЫКАЛЬНЫЙ <i>ВЕСТНИК</i></strong><span class="du-np-edition">№ 001 · ТРИ ГЛАВЫ · ОДИН ВЕЧЕР</span></div>'+
-        '<button class="du-np-close" type="button" data-np-action="close" aria-label="Свернуть плеер">×</button></header>'+
-        '<nav class="du-np-tabs" aria-label="Выбери настроение">'+
-        '<button type="button" data-np-action="tab" data-np-phase="kitchen">Готовить</button>'+
-        '<button type="button" data-np-action="tab" data-np-phase="dinner">Ужинать</button>'+
-        '<button type="button" data-np-action="tab" data-np-phase="after">Продолжить</button>'+
-        '</nav>'+
-        '<div class="du-np-now"><span class="du-np-stamp" id="duNpDemoStamp">ДЕМО</span>'+
-        '<strong id="duNpTrack">Тестовая запись</strong>'+
-        '<small id="duNpSub">Только оригинальная инструментальная музыка</small></div>'+
-        '<div class="du-np-transport">'+
-        '<button type="button" data-np-action="previous" title="Предыдущий трек" aria-label="Предыдущий трек"><svg class="du-np-svg" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 5V19" stroke="#692d42" stroke-width="2" stroke-linecap="round"/><path d="M19 5L8 12L19 19Z" fill="#692d42"/></svg></button>'+
-        '<button type="button" class="du-np-main-play" data-np-action="toggle" id="duNpToggle" aria-label="Воспроизвести"><svg class="du-np-svg" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 4L20 12L8 20Z" fill="#fff8ef"/></svg></button>'+
-        '<button type="button" data-np-action="next" title="Следующий трек" aria-label="Следующий трек"><svg class="du-np-svg" viewBox="0 0 24 24" aria-hidden="true"><path d="M19 5V19" stroke="#692d42" stroke-width="2" stroke-linecap="round"/><path d="M5 5L16 12L5 19Z" fill="#692d42"/></svg></button>'+
-        '</div>'+
-        '<div class="du-np-timeline"><span id="duNpElapsed">0:00</span>'+
-        '<input type="range" id="duNpSeek" min="0" max="14" value="0" step=".1" aria-label="Перемотка композиции">'+
-        '<span id="duNpTotal">0:14</span></div>'+
-        '<div class="du-np-bottom"><label for="duNpVolume">♫ Громкость</label>'+
-        '<input type="range" id="duNpVolume" min="0" max="100" value="65" aria-label="Громкость" />'+
-        '<span id="duNpCount">01 / 02</span></div>'+
-        '<p class="du-np-notice">Оригинальные демозаписи. Чужие песни не звучат.</p>'+ '<button type="button" class="du-np-popout" data-np-action="popout" title="Отдельное окно продолжает играть при переходах по сайту" aria-label="Открыть отдельное музыкальное окно для непрерывного прослушивания">↗ Отдельное окно</button>'+
-        '<div class="du-np-print-colophon" aria-hidden="true"><span>СЛУШАЙ. ГОТОВЬ. БУДЬ ВДВОЁМ.</span><span>СПЕЦИАЛЬНЫЙ ВЫПУСК ДЛЯ ВАШЕГО ВЕЧЕРА</span></div>'+ '<p class="du-np-feedback" role="status" hidden></p>'+
-        '</div>'+
-      '</section>'+
-    '</div>';
+    // Exact user-approved picture, with only the issue number removed.
+    // Buttons and sliders are transparent hit areas aligned with the
+    // 2048 × 682 source image, not a CSS imitation of its artwork.
+    return '<div class="du-np-dock du-np-pixel-player" id="duNewspaperDock">'+
+      '<button class="du-np-launcher" id="duNpLauncher" type="button" aria-controls="duNpPanel" aria-expanded="false">♫ Музыка</button>'+
+      '<section class="du-np-dock-body" id="duNpPanel" aria-label="Музыкальный плеер СНАЧАЛА УЖИН" hidden>'+
+      '<div class="du-np-approved-stage" id="duNpApprovedStage">'+
+      '<img class="du-np-approved-image" src="/assets/approved-newspaper-player-noissue-20261112.webp" width="2048" height="682" alt="" draggable="false" />'+
+      '<header class="du-np-top du-np-pixel-drag" title="Перетащить плеер за газету" aria-label="Переместить плеер"></header>'+
+      '<button type="button" class="du-np-pixel-tab du-np-pixel-tab-kitchen" data-np-action="tab" data-np-phase="kitchen" aria-label="Под что готовить">Готовить</button>'+
+      '<button type="button" class="du-np-pixel-tab du-np-pixel-tab-dinner" data-np-action="tab" data-np-phase="dinner" aria-label="Под что ужинать">Ужинать</button>'+
+      '<button type="button" class="du-np-pixel-tab du-np-pixel-tab-after" data-np-action="tab" data-np-phase="after" aria-label="Под что продолжить">Продолжить</button>'+
+      '<div class="du-np-pixel-live-title"><strong id="duNpTrack"></strong><small id="duNpSub"></small></div>'+
+      '<button type="button" class="du-np-pixel-prev" data-np-action="previous" aria-label="Предыдущая композиция"></button>'+
+      '<button type="button" class="du-np-pixel-play" data-np-action="toggle" id="duNpToggle" aria-label="Воспроизвести"></button>'+
+      '<button type="button" class="du-np-pixel-next" data-np-action="next" aria-label="Следующая композиция"></button>'+
+      '<div class="du-np-pixel-seek"><span id="duNpElapsed">0:00</span>'+
+      '<input type="range" id="duNpSeek" aria-label="Перемотка композиции" min="0" max="411" value="0" step=".1" />'+
+      '<span id="duNpTotal">6:51</span></div>'+
+      '<div class="du-np-pixel-volume"><label for="duNpVolume" class="du-np-sr-only">Громкость</label>'+
+      '<input type="range" id="duNpVolume" aria-label="Громкость" min="0" max="100" value="65" /></div>'+
+      '<button type="button" class="du-np-pixel-popout" data-np-action="popout" aria-label="Открыть музыкальный плеер в отдельном окне"></button>'+
+      '<p class="du-np-feedback" role="status" hidden></p>'+
+      '</div></section></div>';
   }
   function build() {
     $$('#music .du-music-card[data-music-phase]').forEach(card => {
-      if($('.du-np-inline',card))return;
+      $$('.du-np-inline',card).forEach(node=>node.remove());
       const phase=card.getAttribute('data-music-phase');
       if(!state.manifest.playlists[phase])return;
-      const node=document.createElement('div');
-      node.className='du-np-inline';node.innerHTML=sheetMarkup(phase);
-      const total=$('.du-music-total',card);
-      if(total)total.insertAdjacentElement('afterend',node);
-      else card.appendChild(node);
+      // Keep the existing editorial cards, but show only the 40 licensed tracks.
+      const licensedTracks=state.manifest.playlists[phase].tracks;
+      const suggestions=$('.du-music-suggestions',card);
+      if(suggestions){
+        suggestions.replaceChildren();
+        const summary=document.createElement('summary');
+        summary.append(document.createTextNode('Список композиций '));
+        const arrow=document.createElement('span');arrow.setAttribute('aria-hidden','true');arrow.textContent='⌄';summary.appendChild(arrow);
+        suggestions.appendChild(summary);
+        const list=document.createElement('ol');list.className='du-bpm-track-list';
+        licensedTracks.forEach((track,trackIndex)=>{
+          const li=document.createElement('li');li.className='du-bpm-track';
+          li.dataset.npTrackIndex=String(trackIndex);
+          const art=document.createElement('span');art.className='du-bpm-art';art.setAttribute('aria-hidden','true');
+          const details=document.createElement('span');details.className='du-bpm-track-details';
+          const title=document.createElement('strong');title.textContent=track.title;
+          const artist=document.createElement('span');artist.textContent=track.artist||'Kevin MacLeod';
+          const source=document.createElement('a');source.href=track.source;source.target='_blank';source.rel='noopener noreferrer';
+          source.textContent='Источник и лицензия ↗';
+          details.append(title,artist,source);li.append(art,details);list.appendChild(li);
+        });
+        suggestions.appendChild(list);
+      }
+      // The playlist artwork and its headline remain unobstructed. The one
+      // shared player is mounted after the entire three-card grid below.
     });
-    // The embedded Spotify audio is not relevant to the Russian market.
-    // Only in the new preview, remove iframe elements and hide their shells.
-    $$('#music .du-music-spotify-extra iframe').forEach(node=>node.remove());
-    $$('#music .du-music-spotify-extra').forEach(node=>node.hidden=true);
+    // The independently licensed newspaper player replaces the obsolete
+    // Spotify embeds and promotional labels. Remove the full legacy markup,
+    // not merely its iframe: no Spotify wording remains in the three cards.
+    $$('#music .du-music-spotify-extra, #music .du-music-open-spotify, #music .du-music-spotify').forEach(node=>node.remove());
     const legal=$('#music .du-music-legal');
-    if(legal) legal.textContent='Собственный плеер использует оригинальные синтезированные демозаписи. Редакционные списки известных песен остаются для вдохновения и не воспроизводятся. Для коммерческих записей потребуются права на потоковое прослушивание.';
+    if(legal)legal.remove();
     const dock=document.createElement('div');
     dock.innerHTML=floatingMarkup();
-    document.body.appendChild(dock.firstElementChild);
-    if(document.body.classList.contains('du-np-standalone'))state.panelOpen=true;
+    const player=dock.firstElementChild;
+    const grid=$('#music .du-music-grid');
+    if(grid){
+      grid.insertAdjacentElement('afterend',player);
+      state.panelOpen=true;
+    }else if(!document.body.classList.contains('du-np-standalone') && $('#music')){
+      // The music area remains the anchor even if the cards have not hydrated.
+      $('#music').appendChild(player);
+      state.panelOpen=true;
+    }else{
+      document.body.appendChild(player);
+      if(document.body.classList.contains('du-np-standalone'))state.panelOpen=true;
+    }
     render();
   }
+
+  // The approved newspaper player is stationary in document flow below
+  // the playlist grid. Do not install drag or viewport positioning handlers.
   function render() {
     const item=current(),label=phaseData()?.label || '';
     const elapsed=position(),currentDuration=duration();
@@ -278,28 +346,46 @@
     panel.hidden=!state.panelOpen;
     launcher.setAttribute('aria-expanded',String(state.panelOpen));
     launcher.classList.toggle('du-np-is-playing',state.playing);
+    $('#duNewspaperDock')?.classList.toggle('du-np-is-playing',state.playing);
     launcher.innerHTML='<span>♫</span> '+(state.playing?'Играет':'Музыка');
     const trackEl=$('#duNpTrack'),sub=$('#duNpSub'),toggle=$('#duNpToggle');
-    if(trackEl)trackEl.textContent=item?.title||'Музыкальная газета';
-    if(sub)sub.textContent=label+(item?' · '+item.bpm+' BPM':'');
-    if(toggle){toggle.innerHTML=playSymbol;toggle.setAttribute('aria-label',state.playing?'Пауза':'Воспроизвести');}
+    if(trackEl)trackEl.textContent=item?(item.artist||'Kevin MacLeod')+' - '+item.title:'Музыкальная газета';
+    if(sub)sub.textContent=label;
+    if(toggle){
+      toggle.setAttribute('aria-label',state.playing?'Пауза':'Воспроизвести');
+      toggle.setAttribute('aria-pressed',String(state.playing));
+      // The site disables button::after pseudo-elements. Render a real,
+      // accessible pause SVG instead of depending on a hidden CSS glyph.
+      const symbol=state.playing?'pause':'play';
+      if(toggle.dataset.symbol!==symbol){
+        toggle.dataset.symbol=symbol;
+        toggle.innerHTML=state.playing?
+          '<svg class="du-np-pixel-pause-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="5.5" y="4.5" width="4.8" height="15" rx="0.7" fill="#fff8ef"/><rect x="13.7" y="4.5" width="4.8" height="15" rx="0.7" fill="#fff8ef"/></svg>':
+          '';
+      }
+    }
+    const pixelStage=$('#duNpApprovedStage');
+    if(pixelStage){
+      pixelStage.classList.toggle('du-np-live',state.started||state.phase!=='dinner'||item?.title!=='Vibing Over Venus');
+      pixelStage.classList.toggle('du-np-playing',state.playing);
+      pixelStage.classList.toggle('du-np-volume-touched',Math.abs(state.volume-.65)>.005);
+      pixelStage.dataset.phase=state.phase;
+      $$('.du-np-pixel-tab').forEach(btn=>btn.setAttribute('aria-pressed',String(btn.dataset.npPhase===state.phase)));
+    }
     const seek=$('#duNpSeek');if(seek){seek.max=currentDuration;seek.value=Math.min(currentDuration,elapsed);}
     if($('#duNpElapsed'))$('#duNpElapsed').textContent=timeText(elapsed);
     if($('#duNpTotal'))$('#duNpTotal').textContent=timeText(currentDuration);
     if($('#duNpVolume'))$('#duNpVolume').value=Math.round(state.volume*100);
-    if($('#duNpCount'))$('#duNpCount').textContent=
-      String(state.index+1).padStart(2,'0')+' / '+String(tracks().length).padStart(2,'0');
     $$('.du-np-tabs button').forEach(btn=>btn.setAttribute('aria-pressed',String(btn.dataset.npPhase===state.phase)));
     $$('.du-np-start').forEach(btn=>{
       const selected=btn.dataset.npPhase===state.phase;
-      btn.textContent=selected&&state.playing?'Ⅱ Пауза':'▶ Слушать демо';
+      btn.textContent=selected&&state.playing?'Ⅱ Пауза':'▶ Слушать музыку';
       btn.setAttribute('aria-pressed',String(selected&&state.playing));
     });
     $$('.du-np-trackline').forEach(el=>{
       const phase=el.dataset.npInlineTrack;
-      const list=state.manifest?.playlists[phase]?.tracks||[];
-      el.textContent=phase===state.phase&&state.started?(item?.title||'')+' · '+item?.bpm+' BPM':
-        list.map(t=>t.title).join(' · ');
+      el.textContent=phase===state.phase&&state.started&&item?(item.artist||'Kevin MacLeod')+' - '+item.title:
+        'Музыка · CC BY 4.0';
     });
     if(state.error)announce(state.error);
   }
@@ -317,14 +403,17 @@
         else announce('Разреши открытие музыкального окна в настройках браузера.');
         return;
       }
-      if(action==='tab'){choose(btn.dataset.npPhase,0,false);state.panelOpen=true;render();return;}
+      if(action==='tab'){startRandomPlaylist(btn.dataset.npPhase,false).catch(()=>{});state.panelOpen=true;render();return;}
       if(action==='phase'){
         if(state.phase===btn.dataset.npPhase&&state.playing){pause();return;}
-        if(state.phase!==btn.dataset.npPhase)choose(btn.dataset.npPhase,0,true).catch(()=>{});
-        else play().catch(()=>{});
+        startRandomPlaylist(btn.dataset.npPhase,true).catch(()=>{});
         return;
       }
-      if(action==='toggle'){(state.playing?Promise.resolve(pause()):play()).catch(()=>{});return;}
+      if(action==='toggle'){
+        (state.playing ? Promise.resolve(pause()) :
+          !state.started ? startRandomPlaylist(state.phase,true) : play()).catch(()=>{});
+        return;
+      }
       if(action==='next'){next().catch(()=>{});return;}
       if(action==='previous'){previous().catch(()=>{});}
     });
@@ -338,7 +427,7 @@
     document.addEventListener('visibilitychange',()=>{if(!document.hidden)render();});
     window.addEventListener('pagehide',()=>{if(state.playing)pause();});
     state.clock=setInterval(()=>{
-      if(state.playing&&position()>=duration()-.035){
+      if(state.playing&&state.demo&&position()>=duration()-.035){
         next().catch(()=>{});
         return;
       }
@@ -362,7 +451,19 @@
         const volume=Number(params.get('volume'));
         if(Number.isFinite(volume)&&params.has('volume'))state.volume=Math.max(0,Math.min(1,volume/100));
       }
+      if(document.body.classList.contains('du-np-standalone')){
+        const initial=state.index;
+        state.shuffleQueue=[initial,...shuffledIndices(tracks().length).filter(i=>i!==initial)];
+      }else{
+        // The approved image shows the dinner chapter and the track
+        // "Vibing Over Venus". Keep that exact artwork on first render.
+        const approved=tracks().findIndex(track=>track.title==='Vibing Over Venus');
+        state.index=approved>=0?approved:0;
+        state.shuffleQueue=[state.index,...shuffledIndices(tracks().length).filter(i=>i!==state.index)];
+      }
+      state.shufflePosition=0;
       build();
+      showShuffledPlaylistOrder(state.phase,state.shuffleQueue);
       installEvents();
       window.duNewspaperPlayer={
         getState:()=>({phase:state.phase,index:state.index,playing:state.playing,
@@ -372,7 +473,8 @@
     }catch(err){
       console.error('Газетный плеер:',err);
       const node=document.createElement('p');
-      node.className='du-np-error';node.textContent='Не удалось загрузить тестовый музыкальный плеер.';
+      node.className='du-np-error';
+      node.textContent='Не удалось загрузить музыкальный плеер: '+String(err?.message||err||'неизвестная ошибка')+'.';
       $('#music')?.appendChild(node);
     }
   }
