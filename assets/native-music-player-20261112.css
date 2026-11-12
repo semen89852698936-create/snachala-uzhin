@@ -1660,3 +1660,63 @@ html body #duNewspaperDock.du-np-free-position {
   html body #duNewspaperDock #duNpPanel .du-np-pixel-live-title small{font-size:clamp(8px,1.8vw,12px)!important;}
   html body #duNewspaperDock #duNpPanel .du-np-pixel-tab{font-size:clamp(8px,2.4vw,13px)!important;}
 }
+
+/* PIXEL_PLAYER_CLEANUP_WHITE_BACKDROP_AND_TRACK_DESCENDERS_20261112 */
+/* The approved newspaper image is the entire visual surface. Its wrapper must
+   not paint a secondary rectangular card, border or extra white strip below it.
+   Keep the image itself and its transparent interactive hit targets unchanged. */
+html body #duNewspaperDock.du-np-pixel-player {
+  background:transparent!important;
+  border:0!important;
+  box-shadow:none!important;
+  padding:0!important;
+}
+html body #duNewspaperDock #duNpPanel.du-np-dock-body {
+  background:transparent!important;
+  background-image:none!important;
+  border:0!important;
+  box-shadow:none!important;
+  padding:0!important;
+  margin:0!important;
+  line-height:0!important;
+}
+html body #duNewspaperDock #duNpPanel .du-np-approved-stage {
+  background:transparent!important;
+  background-image:none!important;
+  border:0!important;
+  box-shadow:none!important;
+  padding:0!important;
+  margin:0!important;
+  line-height:0!important;
+}
+html body #duNewspaperDock #duNpPanel .du-np-approved-image {
+  display:block!important;
+  vertical-align:top!important;
+  border:0!important;
+  margin:0!important;
+  padding:0!important;
+}
+html body #duNewspaperDock #duNpPanel::before,
+html body #duNewspaperDock #duNpPanel::after,
+html body #duNewspaperDock #duNpPanel .du-np-approved-stage::before,
+html body #duNewspaperDock #duNpPanel .du-np-approved-stage::after {
+  content:none!important;
+  display:none!important;
+}
+/* Do not leave the launcher/card visible alongside the open raster player. */
+html body #duNewspaperDock #duNpLauncher[aria-expanded="true"] {
+  display:none!important;
+}
+/* The dynamic artist + track line was too tall: allow room for descenders
+   without moving the artwork or exposing an extra rectangular background. */
+html body #duNewspaperDock #duNpPanel .du-np-pixel-live-title strong {
+  font-size:clamp(11px,2.35vw,46px)!important;
+  line-height:1.2!important;
+  padding:0 0 .12em!important;
+  box-sizing:border-box!important;
+}
+@media(max-width:600px) {
+  html body #duNewspaperDock #duNpPanel .du-np-pixel-live-title strong {
+    font-size:clamp(10px,2.6vw,15px)!important;
+  }
+}
