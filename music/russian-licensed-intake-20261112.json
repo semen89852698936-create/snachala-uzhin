@@ -469,8 +469,8 @@
         "pageFooter": "all rights reserved",
         "commercialUseVerified": false
       },
-      "tempoBpm": null,
-      "reviewStatus": "official-author-CCBY4-grant-exists-but-provider-license-label-conflicts-and-audio-unavailable",
+      "tempoBpm": 89.1,
+      "reviewStatus": "full-audio-in-chat-verified; staged-for-site-upload; manual-BPM-and-license-metadata-conflict-review",
       "audible": false,
       "licenseEvidence": {
         "evidenceType": "explicit artist-published album credits",
@@ -483,8 +483,15 @@
         "verifiedOn": "2026-11-12",
         "commercialUseGrantByAuthor": true
       },
-      "downloadStatus": "cannot retrieve original full tracks via automated Bandcamp request; browser challenge and email/download flow",
-      "publishStatus": "hold-until-verified-full-audio-assets-and-license-clarity"
+      "downloadStatus": "user-uploaded-full-MP3-verified-locally, not hosted in GitHub or Vercel",
+      "publishStatus": "DO-NOT-PUBLISH until actual MP3 added at expectedSiteAudioPath and tested",
+      "tempoMethod": "Automated tempo estimate from user-uploaded complete MP3 (2026-11-12); ambient recordings may have no stable beat; manual confirmation outstanding",
+      "tempoConfidenceLabel": "approximate",
+      "tempoSuggestedPlaylist": "dinner",
+      "expectedSiteAudioPath": "/assets/music/dark-antey/01-main-theme.mp3",
+      "audioSource": "user-uploaded original MP3; decoded successfully and verified against album metadata",
+      "audioFilesUploadedToRepository": false,
+      "audioFilesReceivedInChat": true
     },
     {
       "id": "dark-antey-silent-depths-02",
@@ -499,8 +506,8 @@
         "pageFooter": "all rights reserved",
         "commercialUseVerified": false
       },
-      "tempoBpm": null,
-      "reviewStatus": "official-author-CCBY4-grant-exists-but-provider-license-label-conflicts-and-audio-unavailable",
+      "tempoBpm": 69.8,
+      "reviewStatus": "full-audio-in-chat-verified; staged-for-site-upload; manual-BPM-and-license-metadata-conflict-review",
       "audible": false,
       "licenseEvidence": {
         "evidenceType": "explicit artist-published album credits",
@@ -513,8 +520,15 @@
         "verifiedOn": "2026-11-12",
         "commercialUseGrantByAuthor": true
       },
-      "downloadStatus": "cannot retrieve original full tracks via automated Bandcamp request; browser challenge and email/download flow",
-      "publishStatus": "hold-until-verified-full-audio-assets-and-license-clarity"
+      "downloadStatus": "user-uploaded-full-MP3-verified-locally, not hosted in GitHub or Vercel",
+      "publishStatus": "DO-NOT-PUBLISH until actual MP3 added at expectedSiteAudioPath and tested",
+      "tempoMethod": "Automated tempo estimate from user-uploaded complete MP3 (2026-11-12); ambient recordings may have no stable beat; manual confirmation outstanding",
+      "tempoConfidenceLabel": "approximate",
+      "tempoSuggestedPlaylist": "after",
+      "expectedSiteAudioPath": "/assets/music/dark-antey/02-fading-memories.mp3",
+      "audioSource": "user-uploaded original MP3; decoded successfully and verified against album metadata",
+      "audioFilesUploadedToRepository": false,
+      "audioFilesReceivedInChat": true
     },
     {
       "id": "dark-antey-silent-depths-03",
@@ -529,8 +543,8 @@
         "pageFooter": "all rights reserved",
         "commercialUseVerified": false
       },
-      "tempoBpm": null,
-      "reviewStatus": "official-author-CCBY4-grant-exists-but-provider-license-label-conflicts-and-audio-unavailable",
+      "tempoBpm": 58.8,
+      "reviewStatus": "full-audio-in-chat-verified; staged-for-site-upload; manual-BPM-and-license-metadata-conflict-review",
       "audible": false,
       "licenseEvidence": {
         "evidenceType": "explicit artist-published album credits",
@@ -543,8 +557,15 @@
         "verifiedOn": "2026-11-12",
         "commercialUseGrantByAuthor": true
       },
-      "downloadStatus": "cannot retrieve original full tracks via automated Bandcamp request; browser challenge and email/download flow",
-      "publishStatus": "hold-until-verified-full-audio-assets-and-license-clarity"
+      "downloadStatus": "user-uploaded-full-MP3-verified-locally, not hosted in GitHub or Vercel",
+      "publishStatus": "DO-NOT-PUBLISH until actual MP3 added at expectedSiteAudioPath and tested",
+      "tempoMethod": "Automated tempo estimate from user-uploaded complete MP3 (2026-11-12); ambient recordings may have no stable beat; manual confirmation outstanding",
+      "tempoConfidenceLabel": "half-time inference 58.8 BPM from ambiguous ~117.5 BPM; additional review needed",
+      "tempoSuggestedPlaylist": "after",
+      "expectedSiteAudioPath": "/assets/music/dark-antey/03-tears-that-don-t-exist.mp3",
+      "audioSource": "user-uploaded original MP3; decoded successfully and verified against album metadata",
+      "audioFilesUploadedToRepository": false,
+      "audioFilesReceivedInChat": true
     },
     {
       "id": "dark-antey-silent-depths-04",
@@ -559,8 +580,8 @@
         "pageFooter": "all rights reserved",
         "commercialUseVerified": false
       },
-      "tempoBpm": null,
-      "reviewStatus": "official-author-CCBY4-grant-exists-but-provider-license-label-conflicts-and-audio-unavailable",
+      "tempoBpm": 80.7,
+      "reviewStatus": "full-audio-in-chat-verified; staged-for-site-upload; manual-BPM-and-license-metadata-conflict-review",
       "audible": false,
       "licenseEvidence": {
         "evidenceType": "explicit artist-published album credits",
@@ -573,8 +594,15 @@
         "verifiedOn": "2026-11-12",
         "commercialUseGrantByAuthor": true
       },
-      "downloadStatus": "cannot retrieve original full tracks via automated Bandcamp request; browser challenge and email/download flow",
-      "publishStatus": "hold-until-verified-full-audio-assets-and-license-clarity"
+      "downloadStatus": "user-uploaded-full-MP3-verified-locally, not hosted in GitHub or Vercel",
+      "publishStatus": "DO-NOT-PUBLISH until actual MP3 added at expectedSiteAudioPath and tested",
+      "tempoMethod": "Automated tempo estimate from user-uploaded complete MP3 (2026-11-12); ambient recordings may have no stable beat; manual confirmation outstanding",
+      "tempoConfidenceLabel": "approximate",
+      "tempoSuggestedPlaylist": "dinner",
+      "expectedSiteAudioPath": "/assets/music/dark-antey/04-echo-of-empty-rooms.mp3",
+      "audioSource": "user-uploaded original MP3; decoded successfully and verified against album metadata",
+      "audioFilesUploadedToRepository": false,
+      "audioFilesReceivedInChat": true
     },
     {
       "id": "dark-antey-silent-depths-05",
@@ -589,8 +617,8 @@
         "pageFooter": "all rights reserved",
         "commercialUseVerified": false
       },
-      "tempoBpm": null,
-      "reviewStatus": "official-author-CCBY4-grant-exists-but-provider-license-label-conflicts-and-audio-unavailable",
+      "tempoBpm": 89.1,
+      "reviewStatus": "full-audio-in-chat-verified; staged-for-site-upload; manual-BPM-and-license-metadata-conflict-review",
       "audible": false,
       "licenseEvidence": {
         "evidenceType": "explicit artist-published album credits",
@@ -603,8 +631,15 @@
         "verifiedOn": "2026-11-12",
         "commercialUseGrantByAuthor": true
       },
-      "downloadStatus": "cannot retrieve original full tracks via automated Bandcamp request; browser challenge and email/download flow",
-      "publishStatus": "hold-until-verified-full-audio-assets-and-license-clarity"
+      "downloadStatus": "user-uploaded-full-MP3-verified-locally, not hosted in GitHub or Vercel",
+      "publishStatus": "DO-NOT-PUBLISH until actual MP3 added at expectedSiteAudioPath and tested",
+      "tempoMethod": "Automated tempo estimate from user-uploaded complete MP3 (2026-11-12); ambient recordings may have no stable beat; manual confirmation outstanding",
+      "tempoConfidenceLabel": "approximate",
+      "tempoSuggestedPlaylist": "dinner",
+      "expectedSiteAudioPath": "/assets/music/dark-antey/05-eternity-without-movement.mp3",
+      "audioSource": "user-uploaded original MP3; decoded successfully and verified against album metadata",
+      "audioFilesUploadedToRepository": false,
+      "audioFilesReceivedInChat": true
     },
     {
       "id": "dark-antey-silent-depths-06",
@@ -619,8 +654,8 @@
         "pageFooter": "all rights reserved",
         "commercialUseVerified": false
       },
-      "tempoBpm": null,
-      "reviewStatus": "official-author-CCBY4-grant-exists-but-provider-license-label-conflicts-and-audio-unavailable",
+      "tempoBpm": 92.3,
+      "reviewStatus": "full-audio-in-chat-verified; staged-for-site-upload; manual-BPM-and-license-metadata-conflict-review",
       "audible": false,
       "licenseEvidence": {
         "evidenceType": "explicit artist-published album credits",
@@ -633,8 +668,15 @@
         "verifiedOn": "2026-11-12",
         "commercialUseGrantByAuthor": true
       },
-      "downloadStatus": "cannot retrieve original full tracks via automated Bandcamp request; browser challenge and email/download flow",
-      "publishStatus": "hold-until-verified-full-audio-assets-and-license-clarity"
+      "downloadStatus": "user-uploaded-full-MP3-verified-locally, not hosted in GitHub or Vercel",
+      "publishStatus": "DO-NOT-PUBLISH until actual MP3 added at expectedSiteAudioPath and tested",
+      "tempoMethod": "Automated tempo estimate from user-uploaded complete MP3 (2026-11-12); ambient recordings may have no stable beat; manual confirmation outstanding",
+      "tempoConfidenceLabel": "approximate",
+      "tempoSuggestedPlaylist": "dinner",
+      "expectedSiteAudioPath": "/assets/music/dark-antey/06-stalker-is-watching.mp3",
+      "audioSource": "user-uploaded original MP3; decoded successfully and verified against album metadata",
+      "audioFilesUploadedToRepository": false,
+      "audioFilesReceivedInChat": true
     },
     {
       "id": "dark-antey-silent-depths-07",
@@ -649,8 +691,8 @@
         "pageFooter": "all rights reserved",
         "commercialUseVerified": false
       },
-      "tempoBpm": null,
-      "reviewStatus": "official-author-CCBY4-grant-exists-but-provider-license-label-conflicts-and-audio-unavailable",
+      "tempoBpm": 92.3,
+      "reviewStatus": "full-audio-in-chat-verified; staged-for-site-upload; manual-BPM-and-license-metadata-conflict-review",
       "audible": false,
       "licenseEvidence": {
         "evidenceType": "explicit artist-published album credits",
@@ -663,8 +705,15 @@
         "verifiedOn": "2026-11-12",
         "commercialUseGrantByAuthor": true
       },
-      "downloadStatus": "cannot retrieve original full tracks via automated Bandcamp request; browser challenge and email/download flow",
-      "publishStatus": "hold-until-verified-full-audio-assets-and-license-clarity"
+      "downloadStatus": "user-uploaded-full-MP3-verified-locally, not hosted in GitHub or Vercel",
+      "publishStatus": "DO-NOT-PUBLISH until actual MP3 added at expectedSiteAudioPath and tested",
+      "tempoMethod": "Automated tempo estimate from user-uploaded complete MP3 (2026-11-12); ambient recordings may have no stable beat; manual confirmation outstanding",
+      "tempoConfidenceLabel": "approximate",
+      "tempoSuggestedPlaylist": "dinner",
+      "expectedSiteAudioPath": "/assets/music/dark-antey/07-abandoned-hospital.mp3",
+      "audioSource": "user-uploaded original MP3; decoded successfully and verified against album metadata",
+      "audioFilesUploadedToRepository": false,
+      "audioFilesReceivedInChat": true
     },
     {
       "id": "dark-antey-silent-depths-08",
@@ -679,8 +728,8 @@
         "pageFooter": "all rights reserved",
         "commercialUseVerified": false
       },
-      "tempoBpm": null,
-      "reviewStatus": "official-author-CCBY4-grant-exists-but-provider-license-label-conflicts-and-audio-unavailable",
+      "tempoBpm": 85.2,
+      "reviewStatus": "full-audio-in-chat-verified; staged-for-site-upload; manual-BPM-and-license-metadata-conflict-review",
       "audible": false,
       "licenseEvidence": {
         "evidenceType": "explicit artist-published album credits",
@@ -693,8 +742,15 @@
         "verifiedOn": "2026-11-12",
         "commercialUseGrantByAuthor": true
       },
-      "downloadStatus": "cannot retrieve original full tracks via automated Bandcamp request; browser challenge and email/download flow",
-      "publishStatus": "hold-until-verified-full-audio-assets-and-license-clarity"
+      "downloadStatus": "user-uploaded-full-MP3-verified-locally, not hosted in GitHub or Vercel",
+      "publishStatus": "DO-NOT-PUBLISH until actual MP3 added at expectedSiteAudioPath and tested",
+      "tempoMethod": "Automated tempo estimate from user-uploaded complete MP3 (2026-11-12); ambient recordings may have no stable beat; manual confirmation outstanding",
+      "tempoConfidenceLabel": "approximate",
+      "tempoSuggestedPlaylist": "dinner",
+      "expectedSiteAudioPath": "/assets/music/dark-antey/08-the-weight-of-nothingness.mp3",
+      "audioSource": "user-uploaded original MP3; decoded successfully and verified against album metadata",
+      "audioFilesUploadedToRepository": false,
+      "audioFilesReceivedInChat": true
     },
     {
       "id": "dark-antey-silent-depths-09",
@@ -709,8 +765,8 @@
         "pageFooter": "all rights reserved",
         "commercialUseVerified": false
       },
-      "tempoBpm": null,
-      "reviewStatus": "official-author-CCBY4-grant-exists-but-provider-license-label-conflicts-and-audio-unavailable",
+      "tempoBpm": 86.1,
+      "reviewStatus": "full-audio-in-chat-verified; staged-for-site-upload; manual-BPM-and-license-metadata-conflict-review",
       "audible": false,
       "licenseEvidence": {
         "evidenceType": "explicit artist-published album credits",
@@ -723,8 +779,15 @@
         "verifiedOn": "2026-11-12",
         "commercialUseGrantByAuthor": true
       },
-      "downloadStatus": "cannot retrieve original full tracks via automated Bandcamp request; browser challenge and email/download flow",
-      "publishStatus": "hold-until-verified-full-audio-assets-and-license-clarity"
+      "downloadStatus": "user-uploaded-full-MP3-verified-locally, not hosted in GitHub or Vercel",
+      "publishStatus": "DO-NOT-PUBLISH until actual MP3 added at expectedSiteAudioPath and tested",
+      "tempoMethod": "Automated tempo estimate from user-uploaded complete MP3 (2026-11-12); ambient recordings may have no stable beat; manual confirmation outstanding",
+      "tempoConfidenceLabel": "approximate",
+      "tempoSuggestedPlaylist": "dinner",
+      "expectedSiteAudioPath": "/assets/music/dark-antey/09-i-m-going-to-do-it.mp3",
+      "audioSource": "user-uploaded original MP3; decoded successfully and verified against album metadata",
+      "audioFilesUploadedToRepository": false,
+      "audioFilesReceivedInChat": true
     },
     {
       "id": "dark-antey-silent-depths-10",
@@ -739,8 +802,8 @@
         "pageFooter": "all rights reserved",
         "commercialUseVerified": false
       },
-      "tempoBpm": null,
-      "reviewStatus": "official-author-CCBY4-grant-exists-but-provider-license-label-conflicts-and-audio-unavailable",
+      "tempoBpm": 86.1,
+      "reviewStatus": "full-audio-in-chat-verified; staged-for-site-upload; manual-BPM-and-license-metadata-conflict-review",
       "audible": false,
       "licenseEvidence": {
         "evidenceType": "explicit artist-published album credits",
@@ -753,8 +816,15 @@
         "verifiedOn": "2026-11-12",
         "commercialUseGrantByAuthor": true
       },
-      "downloadStatus": "cannot retrieve original full tracks via automated Bandcamp request; browser challenge and email/download flow",
-      "publishStatus": "hold-until-verified-full-audio-assets-and-license-clarity"
+      "downloadStatus": "user-uploaded-full-MP3-verified-locally, not hosted in GitHub or Vercel",
+      "publishStatus": "DO-NOT-PUBLISH until actual MP3 added at expectedSiteAudioPath and tested",
+      "tempoMethod": "Automated tempo estimate from user-uploaded complete MP3 (2026-11-12); ambient recordings may have no stable beat; manual confirmation outstanding",
+      "tempoConfidenceLabel": "approximate",
+      "tempoSuggestedPlaylist": "dinner",
+      "expectedSiteAudioPath": "/assets/music/dark-antey/10-farewell-note.mp3",
+      "audioSource": "user-uploaded original MP3; decoded successfully and verified against album metadata",
+      "audioFilesUploadedToRepository": false,
+      "audioFilesReceivedInChat": true
     },
     {
       "id": "dark-antey-silent-depths-11",
@@ -769,8 +839,8 @@
         "pageFooter": "all rights reserved",
         "commercialUseVerified": false
       },
-      "tempoBpm": null,
-      "reviewStatus": "official-author-CCBY4-grant-exists-but-provider-license-label-conflicts-and-audio-unavailable",
+      "tempoBpm": 80.7,
+      "reviewStatus": "full-audio-in-chat-verified; staged-for-site-upload; manual-BPM-and-license-metadata-conflict-review",
       "audible": false,
       "licenseEvidence": {
         "evidenceType": "explicit artist-published album credits",
@@ -783,8 +853,15 @@
         "verifiedOn": "2026-11-12",
         "commercialUseGrantByAuthor": true
       },
-      "downloadStatus": "cannot retrieve original full tracks via automated Bandcamp request; browser challenge and email/download flow",
-      "publishStatus": "hold-until-verified-full-audio-assets-and-license-clarity"
+      "downloadStatus": "user-uploaded-full-MP3-verified-locally, not hosted in GitHub or Vercel",
+      "publishStatus": "DO-NOT-PUBLISH until actual MP3 added at expectedSiteAudioPath and tested",
+      "tempoMethod": "Automated tempo estimate from user-uploaded complete MP3 (2026-11-12); ambient recordings may have no stable beat; manual confirmation outstanding",
+      "tempoConfidenceLabel": "approximate",
+      "tempoSuggestedPlaylist": "dinner",
+      "expectedSiteAudioPath": "/assets/music/dark-antey/11-dead-silence.mp3",
+      "audioSource": "user-uploaded original MP3; decoded successfully and verified against album metadata",
+      "audioFilesUploadedToRepository": false,
+      "audioFilesReceivedInChat": true
     },
     {
       "id": "dark-antey-silent-depths-12",
@@ -799,8 +876,8 @@
         "pageFooter": "all rights reserved",
         "commercialUseVerified": false
       },
-      "tempoBpm": null,
-      "reviewStatus": "official-author-CCBY4-grant-exists-but-provider-license-label-conflicts-and-audio-unavailable",
+      "tempoBpm": 80.7,
+      "reviewStatus": "full-audio-in-chat-verified; staged-for-site-upload; manual-BPM-and-license-metadata-conflict-review",
       "audible": false,
       "licenseEvidence": {
         "evidenceType": "explicit artist-published album credits",
@@ -813,8 +890,15 @@
         "verifiedOn": "2026-11-12",
         "commercialUseGrantByAuthor": true
       },
-      "downloadStatus": "cannot retrieve original full tracks via automated Bandcamp request; browser challenge and email/download flow",
-      "publishStatus": "hold-until-verified-full-audio-assets-and-license-clarity"
+      "downloadStatus": "user-uploaded-full-MP3-verified-locally, not hosted in GitHub or Vercel",
+      "publishStatus": "DO-NOT-PUBLISH until actual MP3 added at expectedSiteAudioPath and tested",
+      "tempoMethod": "Automated tempo estimate from user-uploaded complete MP3 (2026-11-12); ambient recordings may have no stable beat; manual confirmation outstanding",
+      "tempoConfidenceLabel": "approximate",
+      "tempoSuggestedPlaylist": "dinner",
+      "expectedSiteAudioPath": "/assets/music/dark-antey/12-fading-memories-2.mp3",
+      "audioSource": "user-uploaded original MP3; decoded successfully and verified against album metadata",
+      "audioFilesUploadedToRepository": false,
+      "audioFilesReceivedInChat": true
     },
     {
       "id": "dark-antey-silent-depths-13",
@@ -829,8 +913,8 @@
         "pageFooter": "all rights reserved",
         "commercialUseVerified": false
       },
-      "tempoBpm": null,
-      "reviewStatus": "official-author-CCBY4-grant-exists-but-provider-license-label-conflicts-and-audio-unavailable",
+      "tempoBpm": 80.7,
+      "reviewStatus": "full-audio-in-chat-verified; staged-for-site-upload; manual-BPM-and-license-metadata-conflict-review",
       "audible": false,
       "licenseEvidence": {
         "evidenceType": "explicit artist-published album credits",
@@ -843,8 +927,15 @@
         "verifiedOn": "2026-11-12",
         "commercialUseGrantByAuthor": true
       },
-      "downloadStatus": "cannot retrieve original full tracks via automated Bandcamp request; browser challenge and email/download flow",
-      "publishStatus": "hold-until-verified-full-audio-assets-and-license-clarity"
+      "downloadStatus": "user-uploaded-full-MP3-verified-locally, not hosted in GitHub or Vercel",
+      "publishStatus": "DO-NOT-PUBLISH until actual MP3 added at expectedSiteAudioPath and tested",
+      "tempoMethod": "Automated tempo estimate from user-uploaded complete MP3 (2026-11-12); ambient recordings may have no stable beat; manual confirmation outstanding",
+      "tempoConfidenceLabel": "approximate",
+      "tempoSuggestedPlaylist": "dinner",
+      "expectedSiteAudioPath": "/assets/music/dark-antey/13-last-breath.mp3",
+      "audioSource": "user-uploaded original MP3; decoded successfully and verified against album metadata",
+      "audioFilesUploadedToRepository": false,
+      "audioFilesReceivedInChat": true
     },
     {
       "id": "dark-antey-silent-depths-14",
@@ -859,8 +950,8 @@
         "pageFooter": "all rights reserved",
         "commercialUseVerified": false
       },
-      "tempoBpm": null,
-      "reviewStatus": "official-author-CCBY4-grant-exists-but-provider-license-label-conflicts-and-audio-unavailable",
+      "tempoBpm": 89.3,
+      "reviewStatus": "full-audio-in-chat-verified; staged-for-site-upload; manual-BPM-and-license-metadata-conflict-review",
       "audible": false,
       "licenseEvidence": {
         "evidenceType": "explicit artist-published album credits",
@@ -873,8 +964,15 @@
         "verifiedOn": "2026-11-12",
         "commercialUseGrantByAuthor": true
       },
-      "downloadStatus": "cannot retrieve original full tracks via automated Bandcamp request; browser challenge and email/download flow",
-      "publishStatus": "hold-until-verified-full-audio-assets-and-license-clarity"
+      "downloadStatus": "user-uploaded-full-MP3-verified-locally, not hosted in GitHub or Vercel",
+      "publishStatus": "DO-NOT-PUBLISH until actual MP3 added at expectedSiteAudioPath and tested",
+      "tempoMethod": "Automated tempo estimate from user-uploaded complete MP3 (2026-11-12); ambient recordings may have no stable beat; manual confirmation outstanding",
+      "tempoConfidenceLabel": "approximate",
+      "tempoSuggestedPlaylist": "dinner",
+      "expectedSiteAudioPath": "/assets/music/dark-antey/14-there-is-still-hope.mp3",
+      "audioSource": "user-uploaded original MP3; decoded successfully and verified against album metadata",
+      "audioFilesUploadedToRepository": false,
+      "audioFilesReceivedInChat": true
     },
     {
       "id": "dark-antey-silent-depths-15",
@@ -889,8 +987,8 @@
         "pageFooter": "all rights reserved",
         "commercialUseVerified": false
       },
-      "tempoBpm": null,
-      "reviewStatus": "official-author-CCBY4-grant-exists-but-provider-license-label-conflicts-and-audio-unavailable",
+      "tempoBpm": 89.3,
+      "reviewStatus": "full-audio-in-chat-verified; staged-for-site-upload; manual-BPM-and-license-metadata-conflict-review",
       "audible": false,
       "licenseEvidence": {
         "evidenceType": "explicit artist-published album credits",
@@ -903,8 +1001,15 @@
         "verifiedOn": "2026-11-12",
         "commercialUseGrantByAuthor": true
       },
-      "downloadStatus": "cannot retrieve original full tracks via automated Bandcamp request; browser challenge and email/download flow",
-      "publishStatus": "hold-until-verified-full-audio-assets-and-license-clarity"
+      "downloadStatus": "user-uploaded-full-MP3-verified-locally, not hosted in GitHub or Vercel",
+      "publishStatus": "DO-NOT-PUBLISH until actual MP3 added at expectedSiteAudioPath and tested",
+      "tempoMethod": "Automated tempo estimate from user-uploaded complete MP3 (2026-11-12); ambient recordings may have no stable beat; manual confirmation outstanding",
+      "tempoConfidenceLabel": "approximate",
+      "tempoSuggestedPlaylist": "dinner",
+      "expectedSiteAudioPath": "/assets/music/dark-antey/15-we-ll-never-meet-again.mp3",
+      "audioSource": "user-uploaded original MP3; decoded successfully and verified against album metadata",
+      "audioFilesUploadedToRepository": false,
+      "audioFilesReceivedInChat": true
     },
     {
       "id": "dark-antey-deep-russian-depression-01",
@@ -1258,7 +1363,7 @@
     },
     "authorPermissionStatementsVerified": 2,
     "uncontradictedLicenses": 0,
-    "fullAudioFilesObtained": 0,
+    "fullAudioFilesObtained": 15,
     "playableAdded": 0,
     "explicitAttribution": "Music by Dark Antey",
     "providerLabelConflict": true,
@@ -1270,6 +1375,17 @@
     "auditRuns": [
       "https://github.com/semen89852698936-create/snachala-uzhin/actions/runs/43193965582",
       "https://github.com/semen89852698936-create/snachala-uzhin/actions/runs/43194065590"
-    ]
+    ],
+    "userSuppliedFilesReceived": 15,
+    "validatedMP3Files": 15,
+    "filesRemainingFromDeepRussianDepression": 11,
+    "siteUploadComplete": false,
+    "tempoPlaylistCandidates": {
+      "kitchen": 0,
+      "dinner": 13,
+      "after": 2
+    },
+    "reviewedAt": "2026-11-12",
+    "localHandoffFormat": "site package ZIP containing exact 15 MP3 and manifest with SHA-256 checksums"
   }
 }
