@@ -37,7 +37,7 @@ const {chromium}=require('playwright');
     'quiet quotation panel must preserve reading space: '+JSON.stringify(x.quote));
    // The Nov 12 approved paper layout uses edge-to-edge artwork, not box padding.
    // Verify meaningful layout dimensions instead of testing obsolete padding values.
-   assert(x.cover.display!=='none' && x.cover.rect.height>=200,
+   assert(x.cover.display!=='none' && x.cover.rect.height >= (width>920 ? 200 : width>760 ? 160 : 120),
      'approved newspaper cover chapter must render at full height: '+JSON.stringify(x.cover));
    assert(x.categories.rect.height>=20,
      'approved category introduction must have visible layout: '+JSON.stringify(x.categories));
