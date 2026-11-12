@@ -267,3 +267,121 @@ html body #duNpMini#duNpMini .du-np-mini-close {
     margin:16px auto 8px!important;
   }
 }
+
+
+/* MUSIC_PLAYER_ACTUALLY_HALF_OF_PREVIOUS_620PX_20261112
+ * Previous approved main player was 620px. Desktop is now exactly 310px,
+ * not 50% of the extra-wide 1320px playlist grid. Preserve readable,
+ * tall-enough transport layout and existing torn-paper appearance. */
+@media(min-width:621px){
+  html body #homeView #music #duNewspaperDock.du-np-dock,
+  html body #music #duNewspaperDock.du-np-dock {
+    width:310px!important;
+    min-width:310px!important;
+    max-width:310px!important;
+    margin:19px auto 12px!important;
+  }
+  html body #music #duNewspaperDock #duNpPanel .du-np-dock-paper {
+    display:grid!important;
+    grid-template-columns:minmax(0,1fr) 127px!important;
+    grid-template-areas:
+      "masthead masthead"
+      "tabs tabs"
+      "now transport"
+      "timeline timeline"
+      "volume popout"
+      "notice notice"
+      "feedback feedback"!important;
+    gap:0 5px!important;
+    padding:10px 13px 10px!important;
+  }
+  html body #music #duNewspaperDock #duNpPanel .du-np-top {
+    margin-bottom:3px!important;
+    padding-bottom:4px!important;
+  }
+  html body #music #duNewspaperDock #duNpPanel .du-np-top strong {
+    font-size:18px!important;
+    line-height:1!important;
+  }
+  html body #music #duNewspaperDock #duNpPanel .du-np-top small,
+  html body #music #duNewspaperDock #duNpPanel .du-np-edition{
+    font-size:7px!important;
+    line-height:1.2!important;
+  }
+  html body #music #duNewspaperDock #duNpPanel .du-np-masthead{
+    gap:2px 5px!important;
+  }
+  html body #music #duNewspaperDock #duNpPanel .du-np-tabs {
+    gap:3px!important;
+    padding-bottom:4px!important;
+    margin-bottom:4px!important;
+  }
+  html body #music #duNewspaperDock #duNpPanel .du-np-tabs button{
+    min-height:27px!important;
+    padding:5px 7px!important;
+    font-size:10px!important;
+  }
+  html body #music #duNewspaperDock #duNpPanel .du-np-now {
+    grid-template-columns:minmax(0,1fr) 35px!important;
+    grid-template-rows:auto auto!important;
+    gap:1px 3px!important;
+    margin-bottom:4px!important;
+  }
+  html body #music #duNewspaperDock #duNpPanel .du-np-now strong{
+    font-size:18px!important;
+    line-height:1!important;
+  }
+  html body #music #duNewspaperDock #duNpPanel .du-np-now small{
+    font-size:8.5px!important;
+    line-height:1.3!important;
+  }
+  html body #music #duNewspaperDock #duNpPanel .du-np-now .du-np-stamp{
+    padding:2px!important;
+    font-size:8px!important;
+  }
+  html body #music #duNewspaperDock #duNpPanel .du-np-transport {
+    justify-content:flex-end!important;
+    gap:1px!important;
+    margin-bottom:3px!important;
+  }
+  html body #music #duNewspaperDock #duNpPanel .du-np-transport button:not(.du-np-main-play){
+    width:29px!important;
+    height:37px!important;
+    min-width:29px!important;
+    min-height:37px!important;
+  }
+  html body #music #duNewspaperDock #duNpPanel .du-np-transport button.du-np-main-play{
+    width:43px!important;
+    height:43px!important;
+    min-width:43px!important;
+    min-height:43px!important;
+  }
+  html body #music #duNewspaperDock #duNpPanel .du-np-timeline {
+    gap:4px!important;
+    margin:0!important;
+  }
+  html body #music #duNewspaperDock #duNpPanel .du-np-bottom {
+    padding:0!important;
+    margin:0!important;
+    gap:4px!important;
+  }
+  html body #music #duNewspaperDock #duNpPanel .du-np-bottom label {
+    font-size:9px!important;
+  }
+  html body #music #duNewspaperDock #duNpPanel .du-np-popout{
+    min-height:28px!important;
+    padding:5px 3px!important;
+    align-self:center!important;
+    font-size:9px!important;
+  }
+  html body #music #duNewspaperDock #duNpPanel .du-np-notice {
+    margin:3px 0 0!important;
+    padding-top:4px!important;
+    border-top:1px solid rgba(93,61,52,.35)!important;
+    font-size:9px!important;
+    line-height:1.25!important;
+  }
+  html body #music #duNewspaperDock #duNpPanel .du-np-print-colophon{
+    display:none!important;
+  }
+}
