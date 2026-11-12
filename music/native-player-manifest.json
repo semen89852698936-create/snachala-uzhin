@@ -1,15 +1,15 @@
 {
   "version": 2,
   "stage": "licensed-audio-preview",
-  "notice": "42 записи с разрешением на коммерческое использование по CC BY 4.0: 40 Kevin MacLeod и 2 Sergey Cheremisinov. Авторство и ссылки на лицензии: /music/credits.html. Доступность внешних файлов в России и точный BPM двух новых записей требуют отдельной проверки.",
+  "notice": "Рабочая музыкальная подборка: 51 запись с указанием автора и лицензии. Включает 9 новых российских записей с предварительным BPM. Внешние OGG-ссылки необходимо протестировать на мобильных устройствах и из России до публикации.",
   "phaseOrder": [
     "kitchen",
     "dinner",
     "after"
   ],
-  "source": "https://incompetech.com/agent-section/; https://s-cheremisinov.com/how-to-use",
+  "source": "https://incompetech.com/agent-section/; https://commons.wikimedia.org/wiki/Category:Tunguska_E.M.S._for_Creative_Commons; https://uscu.unitedstudios.ru/2014/06/eugene-naumenko-impression.html",
   "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
-  "metadataNote": "40 треков Kevin MacLeod из Incompetech; 2 трека Sergey Cheremisinov из Wikimedia Commons, лицензия дополнительно подтверждена на сайте композитора. Для двух новых записей BPM ещё не измерен: группировка по спокойному звучанию предварительна.",
+  "metadataNote": "BPM девяти новых российских треков вычислен алгоритмом и остаётся ориентировочным до независимого прослушивания. 8 других записей ожидают дополнительной классификации, 26 Dark Antey не опубликованы из-за противоречий в условиях лицензии. Лимита треков на плейлист нет.",
   "playlists": {
     "kitchen": {
       "label": "Под что готовить",
@@ -167,6 +167,26 @@
             "creditRequired": true
           },
           "attribution": "\"Fox Tale Waltz Part 1\" Kevin MacLeod (incompetech.com), CC BY 4.0."
+        },
+        {
+          "id": "tunguska-cc-01",
+          "title": "Paint It Blue Or Say It`s Sad",
+          "artist": "EXIT project",
+          "bpm": 123,
+          "bpmPrecision": "estimated, unverified; do not display BPM in player",
+          "durationSeconds": 348,
+          "src": "https://upload.wikimedia.org/wikipedia/commons/4/41/EXIT_project_-_Paint_It_Blue_Or_Say_It%60s_Sad.ogg",
+          "source": "https://commons.wikimedia.org/wiki/File:EXIT%20project%20-%20Paint%20It%20Blue%20Or%20Say%20It%60s%20Sad.ogg",
+          "license": {
+            "id": "CC-BY-SA-3.0",
+            "name": "Creative Commons Attribution-ShareAlike 3.0",
+            "url": "https://creativecommons.org/licenses/by-sa/3.0/",
+            "streamingAllowed": true,
+            "creditRequired": true
+          },
+          "attribution": "\"Paint It Blue Or Say It`s Sad\" by EXIT project. CC-BY-SA-3.0. Original audio: https://commons.wikimedia.org/wiki/File:EXIT%20project%20-%20Paint%20It%20Blue%20Or%20Say%20It%60s%20Sad.ogg. No changes made by СНАЧАЛА УЖИН.",
+          "audioAvailability": "remote-source-verified-in-GitHub-Actions; Russian-access-and-browser-playback-unverified",
+          "tempoReviewed": "algorithmic-estimate-pending-listening"
         }
       ]
     },
@@ -428,6 +448,149 @@
             "creditRequired": true
           },
           "attribution": "\"Jellyfish in Space\" Kevin MacLeod (incompetech.com), CC BY 4.0."
+        },
+        {
+          "id": "tunguska-cc-02",
+          "title": "Flying By Above",
+          "artist": "Oleg Sirenko",
+          "bpm": 89,
+          "bpmPrecision": "estimated, unverified; do not display BPM in player",
+          "durationSeconds": 382,
+          "src": "https://upload.wikimedia.org/wikipedia/commons/b/b1/Oleg_Sirenko_-_Flying_By_Above_--_Tunguska_E.M.S._for_Creative_Commons_%28track_2%29.ogg",
+          "source": "https://commons.wikimedia.org/wiki/File:Oleg%20Sirenko%20-%20Flying%20By%20Above%20--%20Tunguska%20E.M.S.%20for%20Creative%20Commons%20(track%202).ogg",
+          "license": {
+            "id": "CC-BY-SA-3.0",
+            "name": "Creative Commons Attribution-ShareAlike 3.0",
+            "url": "https://creativecommons.org/licenses/by-sa/3.0/",
+            "streamingAllowed": true,
+            "creditRequired": true
+          },
+          "attribution": "\"Flying By Above\" by Oleg Sirenko. CC-BY-SA-3.0. Original audio: https://commons.wikimedia.org/wiki/File:Oleg%20Sirenko%20-%20Flying%20By%20Above%20--%20Tunguska%20E.M.S.%20for%20Creative%20Commons%20(track%202).ogg. No changes made by СНАЧАЛА УЖИН.",
+          "audioAvailability": "remote-source-verified-in-GitHub-Actions; Russian-access-and-browser-playback-unverified",
+          "tempoReviewed": "algorithmic-estimate-pending-listening"
+        },
+        {
+          "id": "tunguska-cc-03",
+          "title": "Vacuum Fields",
+          "artist": "Aquascape",
+          "bpm": 99,
+          "bpmPrecision": "estimated, unverified; do not display BPM in player",
+          "durationSeconds": 406,
+          "src": "https://upload.wikimedia.org/wikipedia/commons/f/f6/Aquascape_-_Vacuum_Fields_--_Tunguska_E.M.S._for_Creative_Commons_%28track_3%29.ogg",
+          "source": "https://commons.wikimedia.org/wiki/File:Aquascape%20-%20Vacuum%20Fields%20--%20Tunguska%20E.M.S.%20for%20Creative%20Commons%20(track%203).ogg",
+          "license": {
+            "id": "CC-BY-SA-3.0",
+            "name": "Creative Commons Attribution-ShareAlike 3.0",
+            "url": "https://creativecommons.org/licenses/by-sa/3.0/",
+            "streamingAllowed": true,
+            "creditRequired": true
+          },
+          "attribution": "\"Vacuum Fields\" by Aquascape. CC-BY-SA-3.0. Original audio: https://commons.wikimedia.org/wiki/File:Aquascape%20-%20Vacuum%20Fields%20--%20Tunguska%20E.M.S.%20for%20Creative%20Commons%20(track%203).ogg. No changes made by СНАЧАЛА УЖИН.",
+          "audioAvailability": "remote-source-verified-in-GitHub-Actions; Russian-access-and-browser-playback-unverified",
+          "tempoReviewed": "algorithmic-estimate-pending-listening"
+        },
+        {
+          "id": "tunguska-cc-07",
+          "title": "Tunguska M",
+          "artist": "Bigfoot",
+          "bpm": 83,
+          "bpmPrecision": "estimated, unverified; do not display BPM in player",
+          "durationSeconds": 484,
+          "src": "https://upload.wikimedia.org/wikipedia/commons/7/70/Bigfoot_-_Tunguska_M_--_Tunguska_E.M.S._for_Creative_Commons_%28track_7%29.ogg",
+          "source": "https://commons.wikimedia.org/wiki/File:Bigfoot%20-%20Tunguska%20M%20--%20Tunguska%20E.M.S.%20for%20Creative%20Commons%20(track%207).ogg",
+          "license": {
+            "id": "CC-BY-SA-3.0",
+            "name": "Creative Commons Attribution-ShareAlike 3.0",
+            "url": "https://creativecommons.org/licenses/by-sa/3.0/",
+            "streamingAllowed": true,
+            "creditRequired": true
+          },
+          "attribution": "\"Tunguska M\" by Bigfoot. CC-BY-SA-3.0. Original audio: https://commons.wikimedia.org/wiki/File:Bigfoot%20-%20Tunguska%20M%20--%20Tunguska%20E.M.S.%20for%20Creative%20Commons%20(track%207).ogg. No changes made by СНАЧАЛА УЖИН.",
+          "audioAvailability": "remote-source-verified-in-GitHub-Actions; Russian-access-and-browser-playback-unverified",
+          "tempoReviewed": "algorithmic-estimate-pending-listening"
+        },
+        {
+          "id": "tunguska-cc-11",
+          "title": "The Dark Side Of The Third Plane",
+          "artist": "Electro-Nick",
+          "bpm": 81,
+          "bpmPrecision": "estimated, unverified; do not display BPM in player",
+          "durationSeconds": 327,
+          "src": "https://upload.wikimedia.org/wikipedia/commons/9/91/Electro-Nick_-_The_Dark_Side_Of_The_Third_Plane_--_Tunguska_E.M.S._for_Creative_Commons_%28track_11%29.ogg",
+          "source": "https://commons.wikimedia.org/wiki/File:Electro-Nick%20-%20The%20Dark%20Side%20Of%20The%20Third%20Plane%20--%20Tunguska%20E.M.S.%20for%20Creative%20Commons%20(track%2011).ogg",
+          "license": {
+            "id": "CC-BY-SA-3.0",
+            "name": "Creative Commons Attribution-ShareAlike 3.0",
+            "url": "https://creativecommons.org/licenses/by-sa/3.0/",
+            "streamingAllowed": true,
+            "creditRequired": true
+          },
+          "attribution": "\"The Dark Side Of The Third Plane\" by Electro-Nick. CC-BY-SA-3.0. Original audio: https://commons.wikimedia.org/wiki/File:Electro-Nick%20-%20The%20Dark%20Side%20Of%20The%20Third%20Plane%20--%20Tunguska%20E.M.S.%20for%20Creative%20Commons%20(track%2011).ogg. No changes made by СНАЧАЛА УЖИН.",
+          "audioAvailability": "remote-source-verified-in-GitHub-Actions; Russian-access-and-browser-playback-unverified",
+          "tempoReviewed": "algorithmic-estimate-pending-listening"
+        },
+        {
+          "id": "naumenko-impression-02",
+          "title": "Путешествие",
+          "artist": "Евгений Науменко",
+          "bpm": 83,
+          "bpmPrecision": "estimated, unverified; do not display BPM in player",
+          "durationSeconds": 215,
+          "src": "https://archive.org/download/eugene-naumenko-impression/02.Journey.ogg",
+          "source": "https://archive.org/details/eugene-naumenko-impression",
+          "license": {
+            "id": "CC-BY-SA-4.0",
+            "name": "Creative Commons Attribution-ShareAlike 4.0",
+            "url": "https://creativecommons.org/licenses/by-sa/4.0/",
+            "streamingAllowed": true,
+            "creditRequired": true,
+            "archiveMetadataAlsoMentions": "CC-BY-SA-3.0"
+          },
+          "attribution": "\"Путешествие\" by Евгений Науменко. CC-BY-SA-4.0. Original audio: https://archive.org/details/eugene-naumenko-impression. No changes made by СНАЧАЛА УЖИН.",
+          "audioAvailability": "remote-source-verified-in-GitHub-Actions; Russian-access-and-browser-playback-unverified",
+          "tempoReviewed": "algorithmic-estimate-pending-listening"
+        },
+        {
+          "id": "naumenko-impression-05",
+          "title": "Легенда о пропавшем герое",
+          "artist": "Евгений Науменко",
+          "bpm": 89,
+          "bpmPrecision": "estimated, unverified; do not display BPM in player",
+          "durationSeconds": 174,
+          "src": "https://archive.org/download/eugene-naumenko-impression/05.Legend%20of%20a%20Lost%20Hero.ogg",
+          "source": "https://archive.org/details/eugene-naumenko-impression",
+          "license": {
+            "id": "CC-BY-SA-4.0",
+            "name": "Creative Commons Attribution-ShareAlike 4.0",
+            "url": "https://creativecommons.org/licenses/by-sa/4.0/",
+            "streamingAllowed": true,
+            "creditRequired": true,
+            "archiveMetadataAlsoMentions": "CC-BY-SA-3.0"
+          },
+          "attribution": "\"Легенда о пропавшем герое\" by Евгений Науменко. CC-BY-SA-4.0. Original audio: https://archive.org/details/eugene-naumenko-impression. No changes made by СНАЧАЛА УЖИН.",
+          "audioAvailability": "remote-source-verified-in-GitHub-Actions; Russian-access-and-browser-playback-unverified",
+          "tempoReviewed": "algorithmic-estimate-pending-listening"
+        },
+        {
+          "id": "naumenko-impression-06",
+          "title": "Позови меня",
+          "artist": "Евгений Науменко",
+          "bpm": 99,
+          "bpmPrecision": "estimated, unverified; do not display BPM in player",
+          "durationSeconds": 202,
+          "src": "https://archive.org/download/eugene-naumenko-impression/06.Call%20Me.ogg",
+          "source": "https://archive.org/details/eugene-naumenko-impression",
+          "license": {
+            "id": "CC-BY-SA-4.0",
+            "name": "Creative Commons Attribution-ShareAlike 4.0",
+            "url": "https://creativecommons.org/licenses/by-sa/4.0/",
+            "streamingAllowed": true,
+            "creditRequired": true,
+            "archiveMetadataAlsoMentions": "CC-BY-SA-3.0"
+          },
+          "attribution": "\"Позови меня\" by Евгений Науменко. Vocals: Anna Tarasova. CC-BY-SA-4.0. Original audio: https://archive.org/details/eugene-naumenko-impression. No changes made by СНАЧАЛА УЖИН.",
+          "audioAvailability": "remote-source-verified-in-GitHub-Actions; Russian-access-and-browser-playback-unverified",
+          "tempoReviewed": "algorithmic-estimate-pending-listening"
         }
       ]
     },
@@ -744,6 +907,26 @@
           },
           "authorLicenseSource": "https://s-cheremisinov.com/how-to-use",
           "attribution": "\"When You Leave\" — Sergey Cheremisinov, CC BY 4.0. Source: Wikimedia Commons (OGG transcode of FMA MP3); no changes made by СНАЧАЛА УЖИН."
+        },
+        {
+          "id": "tunguska-cc-06",
+          "title": "Flight of the Spirit",
+          "artist": "ARGONIKA",
+          "bpm": 76,
+          "bpmPrecision": "estimated, unverified; do not display BPM in player",
+          "durationSeconds": 456,
+          "src": "https://upload.wikimedia.org/wikipedia/commons/9/90/ARGONIKA_-_Flight_of_the_Spirit_--_Tunguska_E.M.S._for_Creative_Commons_%28track_6%29.ogg",
+          "source": "https://commons.wikimedia.org/wiki/File:ARGONIKA%20-%20Flight%20of%20the%20Spirit%20--%20Tunguska%20E.M.S.%20for%20Creative%20Commons%20(track%206).ogg",
+          "license": {
+            "id": "CC-BY-SA-3.0",
+            "name": "Creative Commons Attribution-ShareAlike 3.0",
+            "url": "https://creativecommons.org/licenses/by-sa/3.0/",
+            "streamingAllowed": true,
+            "creditRequired": true
+          },
+          "attribution": "\"Flight of the Spirit\" by ARGONIKA. CC-BY-SA-3.0. Original audio: https://commons.wikimedia.org/wiki/File:ARGONIKA%20-%20Flight%20of%20the%20Spirit%20--%20Tunguska%20E.M.S.%20for%20Creative%20Commons%20(track%206).ogg. No changes made by СНАЧАЛА УЖИН.",
+          "audioAvailability": "remote-source-verified-in-GitHub-Actions; Russian-access-and-browser-playback-unverified",
+          "tempoReviewed": "algorithmic-estimate-pending-listening"
         }
       ]
     }
