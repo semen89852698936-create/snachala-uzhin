@@ -1,9 +1,7 @@
 {
   "n": 52,
-  "position": 23,
-  "status": "paid_generation_completed_but_output_not_saved_after_protective_stop",
-  "prompt": "Фотореалистичная премиальная фуд-фотография. Блюдо: Говядина, тушённая кусочками с паприкой и чесноком. Тушёная говядина кусочками, в конце тушения смешанная с измельчённым чесноком и молотой паприкой. Нет крупных зубчиков. ТОЛЬКО указанные мясо, соус и приправы; без посторонних гарниров, яиц-глазуньи, овощных украшений, лишней зелени, целого чеснока, текста, людей, коллажей. Чистая керамическая тарелка, мягкий тёплый свет, крупный план.",
-  "created_at": "2026-11-12T21:38:54.390903+00:00",
-  "reason": "CI job generated recipe n=52 but its candidate commit was rejected as non-fast-forward after manual QA stop. Do not retry automatically; request may have been billed.",
-  "manual_review_required": true
+  "list_position": 23,
+  "status": "single_new_recovery_request_reserved",
+  "reason": "Prior generated response lost on non-fast-forward push; paying once more to complete user-ordered 64 photo set",
+  "requested_at": "2026-11-12T21:52:39.896531+00:00"
 }
