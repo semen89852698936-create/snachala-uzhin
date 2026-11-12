@@ -16,7 +16,7 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
-          python -m pip install --quiet yt-dlp==2026.10.31 || python -m pip install --quiet yt-dlp
+          python -m pip install --quiet --upgrade 'yt-dlp[default,curl-cffi]' curl_cffi
           python - <<'PY'
           import urllib.request
           for name,slug in [('Silent Depths','silent-depths'),('Deep Russian Depression','deep-russian-depression')]:
