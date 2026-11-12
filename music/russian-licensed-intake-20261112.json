@@ -1,0 +1,830 @@
+{
+  "schemaVersion": 1,
+  "updated": "2026-11-12",
+  "collectionCounts": {
+    "tunguska": 11,
+    "naumenko": 6,
+    "darkAntey": 26
+  },
+  "purpose": "Rights and tempo controlled intake for СНАЧАЛА УЖИН; these are unpublished catalog candidates, not playable tracks.",
+  "playbackRules": "Never expose as playable until legal status, exact full audio URL and BPM have been checked. No hard cap of 20 songs per playlist.",
+  "tempoBands": {
+    "kitchen": {
+      "min": 120
+    },
+    "dinner": {
+      "min": 80,
+      "max": 100
+    },
+    "after": {
+      "max": 80
+    }
+  },
+  "rightsNotes": [
+    "Tunguska: Wikimedia Commons per-file CC BY-SA 3.0 supported by official Wikimedia Russia 2014 release.",
+    "Naumenko: official USC label describes CC BY-SA 4.0; Internet Archive metadata displays CC BY-SA 3.0 for same release. Reconcile attribution and license version on media source.",
+    "Dark Antey: artist credits claim CC BY 4.0 commercial permission but Bandcamp page footer reads all rights reserved. Resolve explicitly before any playback; no stable direct media files available."
+  ],
+  "tracks": [
+    {
+      "id": "tunguska-cc-01",
+      "collection": "tunguska-ems-for-cc",
+      "artist": "EXIT project",
+      "title": "Paint It Blue Or Say It`s Sad",
+      "filename": "EXIT project - Paint It Blue Or Say It`s Sad.ogg",
+      "durationSeconds": 348,
+      "source": "https://commons.wikimedia.org/wiki/File:EXIT%20project%20-%20Paint%20It%20Blue%20Or%20Say%20It%60s%20Sad.ogg",
+      "license": {
+        "id": "CC-BY-SA-3.0",
+        "url": "https://creativecommons.org/licenses/by-sa/3.0/",
+        "creditRequired": true,
+        "commercialUse": true
+      },
+      "sourceMedia": "wikimedia-commons",
+      "tempoBpm": null,
+      "tempoConfidence": null,
+      "reviewStatus": "awaiting-audio-bpm-analysis",
+      "audible": false
+    },
+    {
+      "id": "tunguska-cc-02",
+      "collection": "tunguska-ems-for-cc",
+      "artist": "Oleg Sirenko",
+      "title": "Flying By Above",
+      "filename": "Oleg Sirenko - Flying By Above -- Tunguska E.M.S. for Creative Commons (track 2).ogg",
+      "durationSeconds": 382,
+      "source": "https://commons.wikimedia.org/wiki/File:Oleg%20Sirenko%20-%20Flying%20By%20Above%20--%20Tunguska%20E.M.S.%20for%20Creative%20Commons%20(track%202).ogg",
+      "license": {
+        "id": "CC-BY-SA-3.0",
+        "url": "https://creativecommons.org/licenses/by-sa/3.0/",
+        "creditRequired": true,
+        "commercialUse": true
+      },
+      "sourceMedia": "wikimedia-commons",
+      "tempoBpm": null,
+      "tempoConfidence": null,
+      "reviewStatus": "awaiting-audio-bpm-analysis",
+      "audible": false
+    },
+    {
+      "id": "tunguska-cc-03",
+      "collection": "tunguska-ems-for-cc",
+      "artist": "Aquascape",
+      "title": "Vacuum Fields",
+      "filename": "Aquascape - Vacuum Fields -- Tunguska E.M.S. for Creative Commons (track 3).ogg",
+      "durationSeconds": 406,
+      "source": "https://commons.wikimedia.org/wiki/File:Aquascape%20-%20Vacuum%20Fields%20--%20Tunguska%20E.M.S.%20for%20Creative%20Commons%20(track%203).ogg",
+      "license": {
+        "id": "CC-BY-SA-3.0",
+        "url": "https://creativecommons.org/licenses/by-sa/3.0/",
+        "creditRequired": true,
+        "commercialUse": true
+      },
+      "sourceMedia": "wikimedia-commons",
+      "tempoBpm": null,
+      "tempoConfidence": null,
+      "reviewStatus": "awaiting-audio-bpm-analysis",
+      "audible": false
+    },
+    {
+      "id": "tunguska-cc-04",
+      "collection": "tunguska-ems-for-cc",
+      "artist": "Pianochocolate",
+      "title": "Cold Days",
+      "filename": "Pianochocolate - Cold Days T--unguska E.M.S. for Creative Commons (track 4).ogg",
+      "durationSeconds": 249,
+      "source": "https://commons.wikimedia.org/wiki/File:Pianochocolate%20-%20Cold%20Days%20T--unguska%20E.M.S.%20for%20Creative%20Commons%20(track%204).ogg",
+      "license": {
+        "id": "CC-BY-SA-3.0",
+        "url": "https://creativecommons.org/licenses/by-sa/3.0/",
+        "creditRequired": true,
+        "commercialUse": true
+      },
+      "sourceMedia": "wikimedia-commons",
+      "tempoBpm": null,
+      "tempoConfidence": null,
+      "reviewStatus": "awaiting-audio-bpm-analysis",
+      "audible": false
+    },
+    {
+      "id": "tunguska-cc-05",
+      "collection": "tunguska-ems-for-cc",
+      "artist": "Vsadnik",
+      "title": "I Can Fly",
+      "filename": "Vsadnik - I Can Fly -- Tunguska E.M.S. for Creative Commons (track 5).ogg",
+      "durationSeconds": 203,
+      "source": "https://commons.wikimedia.org/wiki/File:Vsadnik%20-%20I%20Can%20Fly%20--%20Tunguska%20E.M.S.%20for%20Creative%20Commons%20(track%205).ogg",
+      "license": {
+        "id": "CC-BY-SA-3.0",
+        "url": "https://creativecommons.org/licenses/by-sa/3.0/",
+        "creditRequired": true,
+        "commercialUse": true
+      },
+      "sourceMedia": "wikimedia-commons",
+      "tempoBpm": null,
+      "tempoConfidence": null,
+      "reviewStatus": "awaiting-audio-bpm-analysis",
+      "audible": false
+    },
+    {
+      "id": "tunguska-cc-06",
+      "collection": "tunguska-ems-for-cc",
+      "artist": "ARGONIKA",
+      "title": "Flight of the Spirit",
+      "filename": "ARGONIKA - Flight of the Spirit -- Tunguska E.M.S. for Creative Commons (track 6).ogg",
+      "durationSeconds": 456,
+      "source": "https://commons.wikimedia.org/wiki/File:ARGONIKA%20-%20Flight%20of%20the%20Spirit%20--%20Tunguska%20E.M.S.%20for%20Creative%20Commons%20(track%206).ogg",
+      "license": {
+        "id": "CC-BY-SA-3.0",
+        "url": "https://creativecommons.org/licenses/by-sa/3.0/",
+        "creditRequired": true,
+        "commercialUse": true
+      },
+      "sourceMedia": "wikimedia-commons",
+      "tempoBpm": null,
+      "tempoConfidence": null,
+      "reviewStatus": "awaiting-audio-bpm-analysis",
+      "audible": false
+    },
+    {
+      "id": "tunguska-cc-07",
+      "collection": "tunguska-ems-for-cc",
+      "artist": "Bigfoot",
+      "title": "Tunguska M",
+      "filename": "Bigfoot - Tunguska M -- Tunguska E.M.S. for Creative Commons (track 7).ogg",
+      "durationSeconds": 484,
+      "source": "https://commons.wikimedia.org/wiki/File:Bigfoot%20-%20Tunguska%20M%20--%20Tunguska%20E.M.S.%20for%20Creative%20Commons%20(track%207).ogg",
+      "license": {
+        "id": "CC-BY-SA-3.0",
+        "url": "https://creativecommons.org/licenses/by-sa/3.0/",
+        "creditRequired": true,
+        "commercialUse": true
+      },
+      "sourceMedia": "wikimedia-commons",
+      "tempoBpm": null,
+      "tempoConfidence": null,
+      "reviewStatus": "awaiting-audio-bpm-analysis",
+      "audible": false
+    },
+    {
+      "id": "tunguska-cc-08",
+      "collection": "tunguska-ems-for-cc",
+      "artist": "CJ Catalizer",
+      "title": "The Third Orbit",
+      "filename": "CJ Catalizer - The Third Orbit -- Tunguska E.M.S. for Creative Commons (track 8).ogg",
+      "durationSeconds": 348,
+      "source": "https://commons.wikimedia.org/wiki/File:CJ%20Catalizer%20-%20The%20Third%20Orbit%20--%20Tunguska%20E.M.S.%20for%20Creative%20Commons%20(track%208).ogg",
+      "license": {
+        "id": "CC-BY-SA-3.0",
+        "url": "https://creativecommons.org/licenses/by-sa/3.0/",
+        "creditRequired": true,
+        "commercialUse": true
+      },
+      "sourceMedia": "wikimedia-commons",
+      "tempoBpm": null,
+      "tempoConfidence": null,
+      "reviewStatus": "awaiting-audio-bpm-analysis",
+      "audible": false
+    },
+    {
+      "id": "tunguska-cc-09",
+      "collection": "tunguska-ems-for-cc",
+      "artist": "Olga Scotland",
+      "title": "Iron Flowers From Sirius",
+      "filename": "Olga Scotland - Iron Flowers From Sirius -- Tunguska E.M.S. for Creative Commons (track 9).ogg",
+      "durationSeconds": 298,
+      "source": "https://commons.wikimedia.org/wiki/File:Olga%20Scotland%20-%20Iron%20Flowers%20From%20Sirius%20--%20Tunguska%20E.M.S.%20for%20Creative%20Commons%20(track%209).ogg",
+      "license": {
+        "id": "CC-BY-SA-3.0",
+        "url": "https://creativecommons.org/licenses/by-sa/3.0/",
+        "creditRequired": true,
+        "commercialUse": true
+      },
+      "sourceMedia": "wikimedia-commons",
+      "tempoBpm": null,
+      "tempoConfidence": null,
+      "reviewStatus": "awaiting-audio-bpm-analysis",
+      "audible": false
+    },
+    {
+      "id": "tunguska-cc-10",
+      "collection": "tunguska-ems-for-cc",
+      "artist": "MoVoX",
+      "title": "Euphoria",
+      "filename": "MoVoX - Euphoria -- Tunguska E.M.S. for Creative Commons (track 10).ogg",
+      "durationSeconds": 330,
+      "source": "https://commons.wikimedia.org/wiki/File:MoVoX%20-%20Euphoria%20--%20Tunguska%20E.M.S.%20for%20Creative%20Commons%20(track%2010).ogg",
+      "license": {
+        "id": "CC-BY-SA-3.0",
+        "url": "https://creativecommons.org/licenses/by-sa/3.0/",
+        "creditRequired": true,
+        "commercialUse": true
+      },
+      "sourceMedia": "wikimedia-commons",
+      "tempoBpm": null,
+      "tempoConfidence": null,
+      "reviewStatus": "awaiting-audio-bpm-analysis",
+      "audible": false
+    },
+    {
+      "id": "tunguska-cc-11",
+      "collection": "tunguska-ems-for-cc",
+      "artist": "Electro-Nick",
+      "title": "The Dark Side Of The Third Plane",
+      "filename": "Electro-Nick - The Dark Side Of The Third Plane -- Tunguska E.M.S. for Creative Commons (track 11).ogg",
+      "durationSeconds": 327,
+      "source": "https://commons.wikimedia.org/wiki/File:Electro-Nick%20-%20The%20Dark%20Side%20Of%20The%20Third%20Plane%20--%20Tunguska%20E.M.S.%20for%20Creative%20Commons%20(track%2011).ogg",
+      "license": {
+        "id": "CC-BY-SA-3.0",
+        "url": "https://creativecommons.org/licenses/by-sa/3.0/",
+        "creditRequired": true,
+        "commercialUse": true
+      },
+      "sourceMedia": "wikimedia-commons",
+      "tempoBpm": null,
+      "tempoConfidence": null,
+      "reviewStatus": "awaiting-audio-bpm-analysis",
+      "audible": false
+    },
+    {
+      "id": "naumenko-impression-01",
+      "collection": "naumenko-impression",
+      "artist": "Евгений Науменко",
+      "title": "На краю миров",
+      "filename": "01.At the Edge of Worlds.ogg",
+      "durationSeconds": 188,
+      "source": "https://archive.org/details/eugene-naumenko-impression",
+      "mediaUrl": "https://archive.org/download/eugene-naumenko-impression/01.At%20the%20Edge%20of%20Worlds.ogg",
+      "license": {
+        "id": "CC-BY-SA-4.0",
+        "url": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "creditRequired": true,
+        "commercialUse": true,
+        "officialLicense": "https://uscu.unitedstudios.ru/2014/06/eugene-naumenko-impression.html",
+        "archiveLicenseVersion": "CC-BY-SA-3.0"
+      },
+      "sourceMedia": "internet-archive",
+      "tempoBpm": null,
+      "tempoConfidence": null,
+      "reviewStatus": "awaiting-audio-bpm-analysis; archive-original-release-3.0-vs-official-label-4.0",
+      "audible": false
+    },
+    {
+      "id": "naumenko-impression-02",
+      "collection": "naumenko-impression",
+      "artist": "Евгений Науменко",
+      "title": "Путешествие",
+      "filename": "02.Journey.ogg",
+      "durationSeconds": 215,
+      "source": "https://archive.org/details/eugene-naumenko-impression",
+      "mediaUrl": "https://archive.org/download/eugene-naumenko-impression/02.Journey.ogg",
+      "license": {
+        "id": "CC-BY-SA-4.0",
+        "url": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "creditRequired": true,
+        "commercialUse": true,
+        "officialLicense": "https://uscu.unitedstudios.ru/2014/06/eugene-naumenko-impression.html",
+        "archiveLicenseVersion": "CC-BY-SA-3.0"
+      },
+      "sourceMedia": "internet-archive",
+      "tempoBpm": null,
+      "tempoConfidence": null,
+      "reviewStatus": "awaiting-audio-bpm-analysis; archive-original-release-3.0-vs-official-label-4.0",
+      "audible": false
+    },
+    {
+      "id": "naumenko-impression-03",
+      "collection": "naumenko-impression",
+      "artist": "Евгений Науменко",
+      "title": "Новая надежда",
+      "filename": "03.New Hope.ogg",
+      "durationSeconds": 133,
+      "source": "https://archive.org/details/eugene-naumenko-impression",
+      "mediaUrl": "https://archive.org/download/eugene-naumenko-impression/03.New%20Hope.ogg",
+      "license": {
+        "id": "CC-BY-SA-4.0",
+        "url": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "creditRequired": true,
+        "commercialUse": true,
+        "officialLicense": "https://uscu.unitedstudios.ru/2014/06/eugene-naumenko-impression.html",
+        "archiveLicenseVersion": "CC-BY-SA-3.0"
+      },
+      "sourceMedia": "internet-archive",
+      "tempoBpm": null,
+      "tempoConfidence": null,
+      "reviewStatus": "awaiting-audio-bpm-analysis; archive-original-release-3.0-vs-official-label-4.0",
+      "audible": false
+    },
+    {
+      "id": "naumenko-impression-04",
+      "collection": "naumenko-impression",
+      "artist": "Евгений Науменко",
+      "title": "Для Анны",
+      "filename": "04.For Anna.ogg",
+      "durationSeconds": 247,
+      "source": "https://archive.org/details/eugene-naumenko-impression",
+      "mediaUrl": "https://archive.org/download/eugene-naumenko-impression/04.For%20Anna.ogg",
+      "license": {
+        "id": "CC-BY-SA-4.0",
+        "url": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "creditRequired": true,
+        "commercialUse": true,
+        "officialLicense": "https://uscu.unitedstudios.ru/2014/06/eugene-naumenko-impression.html",
+        "archiveLicenseVersion": "CC-BY-SA-3.0"
+      },
+      "sourceMedia": "internet-archive",
+      "tempoBpm": null,
+      "tempoConfidence": null,
+      "reviewStatus": "awaiting-audio-bpm-analysis; archive-original-release-3.0-vs-official-label-4.0",
+      "audible": false
+    },
+    {
+      "id": "naumenko-impression-05",
+      "collection": "naumenko-impression",
+      "artist": "Евгений Науменко",
+      "title": "Легенда о пропавшем герое",
+      "filename": "05.Legend of a Lost Hero.ogg",
+      "durationSeconds": 174,
+      "source": "https://archive.org/details/eugene-naumenko-impression",
+      "mediaUrl": "https://archive.org/download/eugene-naumenko-impression/05.Legend%20of%20a%20Lost%20Hero.ogg",
+      "license": {
+        "id": "CC-BY-SA-4.0",
+        "url": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "creditRequired": true,
+        "commercialUse": true,
+        "officialLicense": "https://uscu.unitedstudios.ru/2014/06/eugene-naumenko-impression.html",
+        "archiveLicenseVersion": "CC-BY-SA-3.0"
+      },
+      "sourceMedia": "internet-archive",
+      "tempoBpm": null,
+      "tempoConfidence": null,
+      "reviewStatus": "awaiting-audio-bpm-analysis; archive-original-release-3.0-vs-official-label-4.0",
+      "audible": false
+    },
+    {
+      "id": "naumenko-impression-06",
+      "collection": "naumenko-impression",
+      "artist": "Евгений Науменко",
+      "title": "Позови меня",
+      "filename": "06.Call Me.ogg",
+      "durationSeconds": 202,
+      "source": "https://archive.org/details/eugene-naumenko-impression",
+      "mediaUrl": "https://archive.org/download/eugene-naumenko-impression/06.Call%20Me.ogg",
+      "license": {
+        "id": "CC-BY-SA-4.0",
+        "url": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "creditRequired": true,
+        "commercialUse": true,
+        "officialLicense": "https://uscu.unitedstudios.ru/2014/06/eugene-naumenko-impression.html",
+        "archiveLicenseVersion": "CC-BY-SA-3.0"
+      },
+      "sourceMedia": "internet-archive",
+      "tempoBpm": null,
+      "tempoConfidence": null,
+      "reviewStatus": "awaiting-audio-bpm-analysis; archive-original-release-3.0-vs-official-label-4.0",
+      "audible": false
+    },
+    {
+      "id": "dark-antey-silent-depths-01",
+      "collection": "dark-antey-silent-depths",
+      "artist": "Dark Antey",
+      "title": "Main Theme",
+      "durationSeconds": 186,
+      "source": "https://darkantey.bandcamp.com/album/silent-depths",
+      "license": {
+        "claimed": "CC-BY-4.0",
+        "claimedUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "pageFooter": "all rights reserved",
+        "commercialUseVerified": false
+      },
+      "tempoBpm": null,
+      "reviewStatus": "rights-conflict-no-permanent-audio-url",
+      "audible": false
+    },
+    {
+      "id": "dark-antey-silent-depths-02",
+      "collection": "dark-antey-silent-depths",
+      "artist": "Dark Antey",
+      "title": "Fading Memories",
+      "durationSeconds": 116,
+      "source": "https://darkantey.bandcamp.com/album/silent-depths",
+      "license": {
+        "claimed": "CC-BY-4.0",
+        "claimedUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "pageFooter": "all rights reserved",
+        "commercialUseVerified": false
+      },
+      "tempoBpm": null,
+      "reviewStatus": "rights-conflict-no-permanent-audio-url",
+      "audible": false
+    },
+    {
+      "id": "dark-antey-silent-depths-03",
+      "collection": "dark-antey-silent-depths",
+      "artist": "Dark Antey",
+      "title": "Tears That Don't Exist",
+      "durationSeconds": 124,
+      "source": "https://darkantey.bandcamp.com/album/silent-depths",
+      "license": {
+        "claimed": "CC-BY-4.0",
+        "claimedUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "pageFooter": "all rights reserved",
+        "commercialUseVerified": false
+      },
+      "tempoBpm": null,
+      "reviewStatus": "rights-conflict-no-permanent-audio-url",
+      "audible": false
+    },
+    {
+      "id": "dark-antey-silent-depths-04",
+      "collection": "dark-antey-silent-depths",
+      "artist": "Dark Antey",
+      "title": "Echo of Empty Rooms",
+      "durationSeconds": 48,
+      "source": "https://darkantey.bandcamp.com/album/silent-depths",
+      "license": {
+        "claimed": "CC-BY-4.0",
+        "claimedUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "pageFooter": "all rights reserved",
+        "commercialUseVerified": false
+      },
+      "tempoBpm": null,
+      "reviewStatus": "rights-conflict-no-permanent-audio-url",
+      "audible": false
+    },
+    {
+      "id": "dark-antey-silent-depths-05",
+      "collection": "dark-antey-silent-depths",
+      "artist": "Dark Antey",
+      "title": "Eternity Without Movement",
+      "durationSeconds": 228,
+      "source": "https://darkantey.bandcamp.com/album/silent-depths",
+      "license": {
+        "claimed": "CC-BY-4.0",
+        "claimedUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "pageFooter": "all rights reserved",
+        "commercialUseVerified": false
+      },
+      "tempoBpm": null,
+      "reviewStatus": "rights-conflict-no-permanent-audio-url",
+      "audible": false
+    },
+    {
+      "id": "dark-antey-silent-depths-06",
+      "collection": "dark-antey-silent-depths",
+      "artist": "Dark Antey",
+      "title": "Stalker is Watching",
+      "durationSeconds": 240,
+      "source": "https://darkantey.bandcamp.com/album/silent-depths",
+      "license": {
+        "claimed": "CC-BY-4.0",
+        "claimedUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "pageFooter": "all rights reserved",
+        "commercialUseVerified": false
+      },
+      "tempoBpm": null,
+      "reviewStatus": "rights-conflict-no-permanent-audio-url",
+      "audible": false
+    },
+    {
+      "id": "dark-antey-silent-depths-07",
+      "collection": "dark-antey-silent-depths",
+      "artist": "Dark Antey",
+      "title": "Abandoned Hospital",
+      "durationSeconds": 240,
+      "source": "https://darkantey.bandcamp.com/album/silent-depths",
+      "license": {
+        "claimed": "CC-BY-4.0",
+        "claimedUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "pageFooter": "all rights reserved",
+        "commercialUseVerified": false
+      },
+      "tempoBpm": null,
+      "reviewStatus": "rights-conflict-no-permanent-audio-url",
+      "audible": false
+    },
+    {
+      "id": "dark-antey-silent-depths-08",
+      "collection": "dark-antey-silent-depths",
+      "artist": "Dark Antey",
+      "title": "The Weight of Nothingness",
+      "durationSeconds": 236,
+      "source": "https://darkantey.bandcamp.com/album/silent-depths",
+      "license": {
+        "claimed": "CC-BY-4.0",
+        "claimedUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "pageFooter": "all rights reserved",
+        "commercialUseVerified": false
+      },
+      "tempoBpm": null,
+      "reviewStatus": "rights-conflict-no-permanent-audio-url",
+      "audible": false
+    },
+    {
+      "id": "dark-antey-silent-depths-09",
+      "collection": "dark-antey-silent-depths",
+      "artist": "Dark Antey",
+      "title": "I'm Going to Do It",
+      "durationSeconds": 246,
+      "source": "https://darkantey.bandcamp.com/album/silent-depths",
+      "license": {
+        "claimed": "CC-BY-4.0",
+        "claimedUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "pageFooter": "all rights reserved",
+        "commercialUseVerified": false
+      },
+      "tempoBpm": null,
+      "reviewStatus": "rights-conflict-no-permanent-audio-url",
+      "audible": false
+    },
+    {
+      "id": "dark-antey-silent-depths-10",
+      "collection": "dark-antey-silent-depths",
+      "artist": "Dark Antey",
+      "title": "Farewell Note",
+      "durationSeconds": 240,
+      "source": "https://darkantey.bandcamp.com/album/silent-depths",
+      "license": {
+        "claimed": "CC-BY-4.0",
+        "claimedUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "pageFooter": "all rights reserved",
+        "commercialUseVerified": false
+      },
+      "tempoBpm": null,
+      "reviewStatus": "rights-conflict-no-permanent-audio-url",
+      "audible": false
+    },
+    {
+      "id": "dark-antey-silent-depths-11",
+      "collection": "dark-antey-silent-depths",
+      "artist": "Dark Antey",
+      "title": "Dead Silence",
+      "durationSeconds": 147,
+      "source": "https://darkantey.bandcamp.com/album/silent-depths",
+      "license": {
+        "claimed": "CC-BY-4.0",
+        "claimedUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "pageFooter": "all rights reserved",
+        "commercialUseVerified": false
+      },
+      "tempoBpm": null,
+      "reviewStatus": "rights-conflict-no-permanent-audio-url",
+      "audible": false
+    },
+    {
+      "id": "dark-antey-silent-depths-12",
+      "collection": "dark-antey-silent-depths",
+      "artist": "Dark Antey",
+      "title": "Fading Memories 2",
+      "durationSeconds": 102,
+      "source": "https://darkantey.bandcamp.com/album/silent-depths",
+      "license": {
+        "claimed": "CC-BY-4.0",
+        "claimedUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "pageFooter": "all rights reserved",
+        "commercialUseVerified": false
+      },
+      "tempoBpm": null,
+      "reviewStatus": "rights-conflict-no-permanent-audio-url",
+      "audible": false
+    },
+    {
+      "id": "dark-antey-silent-depths-13",
+      "collection": "dark-antey-silent-depths",
+      "artist": "Dark Antey",
+      "title": "Last Breath",
+      "durationSeconds": 96,
+      "source": "https://darkantey.bandcamp.com/album/silent-depths",
+      "license": {
+        "claimed": "CC-BY-4.0",
+        "claimedUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "pageFooter": "all rights reserved",
+        "commercialUseVerified": false
+      },
+      "tempoBpm": null,
+      "reviewStatus": "rights-conflict-no-permanent-audio-url",
+      "audible": false
+    },
+    {
+      "id": "dark-antey-silent-depths-14",
+      "collection": "dark-antey-silent-depths",
+      "artist": "Dark Antey",
+      "title": "There is Still Hope",
+      "durationSeconds": 85,
+      "source": "https://darkantey.bandcamp.com/album/silent-depths",
+      "license": {
+        "claimed": "CC-BY-4.0",
+        "claimedUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "pageFooter": "all rights reserved",
+        "commercialUseVerified": false
+      },
+      "tempoBpm": null,
+      "reviewStatus": "rights-conflict-no-permanent-audio-url",
+      "audible": false
+    },
+    {
+      "id": "dark-antey-silent-depths-15",
+      "collection": "dark-antey-silent-depths",
+      "artist": "Dark Antey",
+      "title": "We'll Never Meet Again",
+      "durationSeconds": 64,
+      "source": "https://darkantey.bandcamp.com/album/silent-depths",
+      "license": {
+        "claimed": "CC-BY-4.0",
+        "claimedUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "pageFooter": "all rights reserved",
+        "commercialUseVerified": false
+      },
+      "tempoBpm": null,
+      "reviewStatus": "rights-conflict-no-permanent-audio-url",
+      "audible": false
+    },
+    {
+      "id": "dark-antey-deep-russian-depression-01",
+      "collection": "dark-antey-deep-russian-depression",
+      "artist": "Dark Antey",
+      "title": "Deep Russian Depression",
+      "durationSeconds": 177,
+      "source": "https://darkantey.bandcamp.com/album/deep-russian-depression",
+      "license": {
+        "claimed": "CC-BY-4.0",
+        "claimedUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "pageFooter": "all rights reserved",
+        "commercialUseVerified": false
+      },
+      "tempoBpm": null,
+      "reviewStatus": "rights-conflict-no-permanent-audio-url",
+      "audible": false
+    },
+    {
+      "id": "dark-antey-deep-russian-depression-02",
+      "collection": "dark-antey-deep-russian-depression",
+      "artist": "Dark Antey",
+      "title": "Где я спешил, взбираясь к небесам",
+      "durationSeconds": 196,
+      "source": "https://darkantey.bandcamp.com/album/deep-russian-depression",
+      "license": {
+        "claimed": "CC-BY-4.0",
+        "claimedUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "pageFooter": "all rights reserved",
+        "commercialUseVerified": false
+      },
+      "tempoBpm": null,
+      "reviewStatus": "rights-conflict-no-permanent-audio-url",
+      "audible": false
+    },
+    {
+      "id": "dark-antey-deep-russian-depression-03",
+      "collection": "dark-antey-deep-russian-depression",
+      "artist": "Dark Antey",
+      "title": "Прогулка по ночному небу",
+      "durationSeconds": 88,
+      "source": "https://darkantey.bandcamp.com/album/deep-russian-depression",
+      "license": {
+        "claimed": "CC-BY-4.0",
+        "claimedUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "pageFooter": "all rights reserved",
+        "commercialUseVerified": false
+      },
+      "tempoBpm": null,
+      "reviewStatus": "rights-conflict-no-permanent-audio-url",
+      "audible": false
+    },
+    {
+      "id": "dark-antey-deep-russian-depression-04",
+      "collection": "dark-antey-deep-russian-depression",
+      "artist": "Dark Antey",
+      "title": "Один в пустой комнате",
+      "durationSeconds": 147,
+      "source": "https://darkantey.bandcamp.com/album/deep-russian-depression",
+      "license": {
+        "claimed": "CC-BY-4.0",
+        "claimedUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "pageFooter": "all rights reserved",
+        "commercialUseVerified": false
+      },
+      "tempoBpm": null,
+      "reviewStatus": "rights-conflict-no-permanent-audio-url",
+      "audible": false
+    },
+    {
+      "id": "dark-antey-deep-russian-depression-05",
+      "collection": "dark-antey-deep-russian-depression",
+      "artist": "Dark Antey",
+      "title": "Разбитые воспоминания",
+      "durationSeconds": 198,
+      "source": "https://darkantey.bandcamp.com/album/deep-russian-depression",
+      "license": {
+        "claimed": "CC-BY-4.0",
+        "claimedUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "pageFooter": "all rights reserved",
+        "commercialUseVerified": false
+      },
+      "tempoBpm": null,
+      "reviewStatus": "rights-conflict-no-permanent-audio-url",
+      "audible": false
+    },
+    {
+      "id": "dark-antey-deep-russian-depression-06",
+      "collection": "dark-antey-deep-russian-depression",
+      "artist": "Dark Antey",
+      "title": "Метафизический сон во тьме",
+      "durationSeconds": 220,
+      "source": "https://darkantey.bandcamp.com/album/deep-russian-depression",
+      "license": {
+        "claimed": "CC-BY-4.0",
+        "claimedUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "pageFooter": "all rights reserved",
+        "commercialUseVerified": false
+      },
+      "tempoBpm": null,
+      "reviewStatus": "rights-conflict-no-permanent-audio-url",
+      "audible": false
+    },
+    {
+      "id": "dark-antey-deep-russian-depression-07",
+      "collection": "dark-antey-deep-russian-depression",
+      "artist": "Dark Antey",
+      "title": "И гнев небесного творца",
+      "durationSeconds": 109,
+      "source": "https://darkantey.bandcamp.com/album/deep-russian-depression",
+      "license": {
+        "claimed": "CC-BY-4.0",
+        "claimedUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "pageFooter": "all rights reserved",
+        "commercialUseVerified": false
+      },
+      "tempoBpm": null,
+      "reviewStatus": "rights-conflict-no-permanent-audio-url",
+      "audible": false
+    },
+    {
+      "id": "dark-antey-deep-russian-depression-08",
+      "collection": "dark-antey-deep-russian-depression",
+      "artist": "Dark Antey",
+      "title": "Беспокойные сны (Instrumental)",
+      "durationSeconds": 85,
+      "source": "https://darkantey.bandcamp.com/album/deep-russian-depression",
+      "license": {
+        "claimed": "CC-BY-4.0",
+        "claimedUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "pageFooter": "all rights reserved",
+        "commercialUseVerified": false
+      },
+      "tempoBpm": null,
+      "reviewStatus": "rights-conflict-no-permanent-audio-url",
+      "audible": false
+    },
+    {
+      "id": "dark-antey-deep-russian-depression-09",
+      "collection": "dark-antey-deep-russian-depression",
+      "artist": "Dark Antey",
+      "title": "Звездный в небе невод",
+      "durationSeconds": 138,
+      "source": "https://darkantey.bandcamp.com/album/deep-russian-depression",
+      "license": {
+        "claimed": "CC-BY-4.0",
+        "claimedUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "pageFooter": "all rights reserved",
+        "commercialUseVerified": false
+      },
+      "tempoBpm": null,
+      "reviewStatus": "rights-conflict-no-permanent-audio-url",
+      "audible": false
+    },
+    {
+      "id": "dark-antey-deep-russian-depression-10",
+      "collection": "dark-antey-deep-russian-depression",
+      "artist": "Dark Antey",
+      "title": "Deep Russian Depression (Instrumental)",
+      "durationSeconds": 177,
+      "source": "https://darkantey.bandcamp.com/album/deep-russian-depression",
+      "license": {
+        "claimed": "CC-BY-4.0",
+        "claimedUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "pageFooter": "all rights reserved",
+        "commercialUseVerified": false
+      },
+      "tempoBpm": null,
+      "reviewStatus": "rights-conflict-no-permanent-audio-url",
+      "audible": false
+    },
+    {
+      "id": "dark-antey-deep-russian-depression-11",
+      "collection": "dark-antey-deep-russian-depression",
+      "artist": "Dark Antey",
+      "title": "Беспокойные сны",
+      "durationSeconds": 85,
+      "source": "https://darkantey.bandcamp.com/album/deep-russian-depression",
+      "license": {
+        "claimed": "CC-BY-4.0",
+        "claimedUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "pageFooter": "all rights reserved",
+        "commercialUseVerified": false
+      },
+      "tempoBpm": null,
+      "reviewStatus": "rights-conflict-no-permanent-audio-url",
+      "audible": false
+    }
+  ]
+}
