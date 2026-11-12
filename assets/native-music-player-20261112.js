@@ -336,7 +336,7 @@
     render();
   }
 
-  // Keep the floating newspaper on screen while playback compacts it to 50%.
+  // Keep the floating newspaper at a constant size while it plays.
   // Moving the dock never recreates the audio element or changes its state.
   let dockMovedByUser=false;
   let lastDockLayout='';
@@ -347,7 +347,7 @@
     // Keep the shared player directly beneath the three playlists until the
     // visitor intentionally drags it. Other site routes retain the dock.
     if(dock.closest('#music') && !dockMovedByUser)return;
-    const scale=state.playing?.5:1;
+    const scale=1;
     dock.style.setProperty('--du-player-scale',String(scale));
     dock.classList.add('du-np-free-position');
     const gutter=8;
@@ -381,12 +381,12 @@
       if(!drag.active){
         drag.active=true;
         dockMovedByUser=true;
-        dock.style.setProperty('--du-player-scale',String(state.playing?.5:1));
+        dock.style.setProperty('--du-player-scale','1');
         dock.style.setProperty('--du-player-left',drag.left+'px');
         dock.style.setProperty('--du-player-top',drag.top+'px');
         dock.classList.add('du-np-free-position');
       }
-      const scale=state.playing?.5:1;
+      const scale=1;
       const gutter=8;
       const maxX=Math.max(gutter,window.innerWidth-dock.offsetWidth*scale-gutter);
       const maxY=Math.max(gutter,window.innerHeight-dock.offsetHeight*scale-gutter);
@@ -430,7 +430,7 @@
         'Музыка · CC BY 4.0';
     });
     if(state.error)announce(state.error);
-    const dockLayout=(state.panelOpen?'open':'closed')+'|'+(state.playing?'half':'full');
+    const dockLayout=state.panelOpen?'open':'closed';
     if(dockLayout!==lastDockLayout){lastDockLayout=dockLayout;positionFloatingPlayer();}
   }
   function installEvents() {
