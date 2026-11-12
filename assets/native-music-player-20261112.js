@@ -411,6 +411,15 @@
     if(toggle){
       toggle.setAttribute('aria-label',state.playing?'Пауза':'Воспроизвести');
       toggle.setAttribute('aria-pressed',String(state.playing));
+      // The site disables button::after pseudo-elements. Render a real,
+      // accessible pause SVG instead of depending on a hidden CSS glyph.
+      const symbol=state.playing?'pause':'play';
+      if(toggle.dataset.symbol!==symbol){
+        toggle.dataset.symbol=symbol;
+        toggle.innerHTML=state.playing?
+          '<svg class="du-np-pixel-pause-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="5.5" y="4.5" width="4.8" height="15" rx="0.7" fill="#fff8ef"/><rect x="13.7" y="4.5" width="4.8" height="15" rx="0.7" fill="#fff8ef"/></svg>':
+          '';
+      }
     }
     const pixelStage=$('#duNpApprovedStage');
     if(pixelStage){
