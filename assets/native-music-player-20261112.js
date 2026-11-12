@@ -314,7 +314,7 @@
     // The independently licensed newspaper player replaces the obsolete
     // Spotify embeds and promotional labels. Remove the full legacy markup,
     // not merely its iframe: no Spotify wording remains in the three cards.
-    $('#music .du-music-spotify-extra, #music .du-music-open-spotify, #music .du-music-spotify').forEach(node=>node.remove());
+    $$('#music .du-music-spotify-extra, #music .du-music-open-spotify, #music .du-music-spotify').forEach(node=>node.remove());
     const legal=$('#music .du-music-legal');
     if(legal)legal.remove();
     const dock=document.createElement('div');
