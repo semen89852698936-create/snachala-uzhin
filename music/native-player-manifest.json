@@ -1,7 +1,7 @@
 {
   "version": 2,
-  "stage": "licensed-audio-preview",
-  "notice": "Рабочая музыкальная подборка: 51 запись с указанием автора и лицензии. Включает 9 новых российских записей с предварительным BPM. Внешние OGG-ссылки необходимо протестировать на мобильных устройствах и из России до публикации.",
+  "stage": "licensed-audio-feature-branch-not-public",
+  "notice": "75 compositions in GitHub feature branch. 24 original Dark Antey MP3 files validated by SHA-256. Author CC BY 4.0 notice and inconsistent Bandcamp footer disclosed in credits. Live site playback and access from Russia require independent testing.",
   "phaseOrder": [
     "kitchen",
     "dinner",
@@ -9,7 +9,7 @@
   ],
   "source": "https://incompetech.com/agent-section/; https://commons.wikimedia.org/wiki/Category:Tunguska_E.M.S._for_Creative_Commons; https://uscu.unitedstudios.ru/2014/06/eugene-naumenko-impression.html",
   "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
-  "metadataNote": "BPM девяти новых российских треков вычислен алгоритмом и остаётся ориентировочным до независимого прослушивания. 8 других записей ожидают дополнительной классификации, 26 Dark Antey не опубликованы из-за противоречий в условиях лицензии. Лимита треков на плейлист нет.",
+  "metadataNote": "No 20-track cap. Dark Antey tempo estimates are tentative, particularly on ambient pieces. Two tracks from Deep Russian Depression remain missing from the user's supplied uploads.",
   "playlists": {
     "kitchen": {
       "label": "Под что готовить",
@@ -591,6 +591,330 @@
           "attribution": "\"Позови меня\" by Евгений Науменко. Vocals: Anna Tarasova. CC-BY-SA-4.0. Original audio: https://archive.org/details/eugene-naumenko-impression. No changes made by СНАЧАЛА УЖИН.",
           "audioAvailability": "remote-source-verified-in-GitHub-Actions; Russian-access-and-browser-playback-unverified",
           "tempoReviewed": "algorithmic-estimate-pending-listening"
+        },
+        {
+          "id": "dark-antey-silent-depths-01",
+          "artist": "Dark Antey",
+          "title": "Main Theme",
+          "bpm": 89,
+          "durationSeconds": 187,
+          "src": "/assets/music/dark-antey/01-main-theme.mp3",
+          "source": "https://darkantey.bandcamp.com/album/silent-depths",
+          "license": {
+            "id": "CC-BY-4.0",
+            "name": "Creative Commons Attribution 4.0",
+            "url": "https://creativecommons.org/licenses/by/4.0/",
+            "streamingAllowed": true,
+            "creditRequired": true
+          },
+          "attribution": "Music by Dark Antey. \"Main Theme\" from Silent Depths. Source: https://darkantey.bandcamp.com/album/silent-depths. CC BY 4.0. No changes made.",
+          "tempoReviewed": "approximate beat analysis of complete supplied MP3 (not independently confirmed)"
+        },
+        {
+          "id": "dark-antey-silent-depths-04",
+          "artist": "Dark Antey",
+          "title": "Echo of Empty Rooms",
+          "bpm": 81,
+          "durationSeconds": 48,
+          "src": "/assets/music/dark-antey/04-echo-of-empty-rooms.mp3",
+          "source": "https://darkantey.bandcamp.com/album/silent-depths",
+          "license": {
+            "id": "CC-BY-4.0",
+            "name": "Creative Commons Attribution 4.0",
+            "url": "https://creativecommons.org/licenses/by/4.0/",
+            "streamingAllowed": true,
+            "creditRequired": true
+          },
+          "attribution": "Music by Dark Antey. \"Echo of Empty Rooms\" from Silent Depths. Source: https://darkantey.bandcamp.com/album/silent-depths. CC BY 4.0. No changes made.",
+          "tempoReviewed": "approximate beat analysis of complete supplied MP3 (not independently confirmed)"
+        },
+        {
+          "id": "dark-antey-silent-depths-05",
+          "artist": "Dark Antey",
+          "title": "Eternity Without Movement",
+          "bpm": 89,
+          "durationSeconds": 228,
+          "src": "/assets/music/dark-antey/05-eternity-without-movement.mp3",
+          "source": "https://darkantey.bandcamp.com/album/silent-depths",
+          "license": {
+            "id": "CC-BY-4.0",
+            "name": "Creative Commons Attribution 4.0",
+            "url": "https://creativecommons.org/licenses/by/4.0/",
+            "streamingAllowed": true,
+            "creditRequired": true
+          },
+          "attribution": "Music by Dark Antey. \"Eternity Without Movement\" from Silent Depths. Source: https://darkantey.bandcamp.com/album/silent-depths. CC BY 4.0. No changes made.",
+          "tempoReviewed": "approximate beat analysis of complete supplied MP3 (not independently confirmed)"
+        },
+        {
+          "id": "dark-antey-silent-depths-06",
+          "artist": "Dark Antey",
+          "title": "Stalker is Watching",
+          "bpm": 92,
+          "durationSeconds": 240,
+          "src": "/assets/music/dark-antey/06-stalker-is-watching.mp3",
+          "source": "https://darkantey.bandcamp.com/album/silent-depths",
+          "license": {
+            "id": "CC-BY-4.0",
+            "name": "Creative Commons Attribution 4.0",
+            "url": "https://creativecommons.org/licenses/by/4.0/",
+            "streamingAllowed": true,
+            "creditRequired": true
+          },
+          "attribution": "Music by Dark Antey. \"Stalker is Watching\" from Silent Depths. Source: https://darkantey.bandcamp.com/album/silent-depths. CC BY 4.0. No changes made.",
+          "tempoReviewed": "approximate beat analysis of complete supplied MP3 (not independently confirmed)"
+        },
+        {
+          "id": "dark-antey-silent-depths-07",
+          "artist": "Dark Antey",
+          "title": "Abandoned Hospital",
+          "bpm": 92,
+          "durationSeconds": 240,
+          "src": "/assets/music/dark-antey/07-abandoned-hospital.mp3",
+          "source": "https://darkantey.bandcamp.com/album/silent-depths",
+          "license": {
+            "id": "CC-BY-4.0",
+            "name": "Creative Commons Attribution 4.0",
+            "url": "https://creativecommons.org/licenses/by/4.0/",
+            "streamingAllowed": true,
+            "creditRequired": true
+          },
+          "attribution": "Music by Dark Antey. \"Abandoned Hospital\" from Silent Depths. Source: https://darkantey.bandcamp.com/album/silent-depths. CC BY 4.0. No changes made.",
+          "tempoReviewed": "approximate beat analysis of complete supplied MP3 (not independently confirmed)"
+        },
+        {
+          "id": "dark-antey-silent-depths-08",
+          "artist": "Dark Antey",
+          "title": "The Weight of Nothingness",
+          "bpm": 85,
+          "durationSeconds": 236,
+          "src": "/assets/music/dark-antey/08-the-weight-of-nothingness.mp3",
+          "source": "https://darkantey.bandcamp.com/album/silent-depths",
+          "license": {
+            "id": "CC-BY-4.0",
+            "name": "Creative Commons Attribution 4.0",
+            "url": "https://creativecommons.org/licenses/by/4.0/",
+            "streamingAllowed": true,
+            "creditRequired": true
+          },
+          "attribution": "Music by Dark Antey. \"The Weight of Nothingness\" from Silent Depths. Source: https://darkantey.bandcamp.com/album/silent-depths. CC BY 4.0. No changes made.",
+          "tempoReviewed": "approximate beat analysis of complete supplied MP3 (not independently confirmed)"
+        },
+        {
+          "id": "dark-antey-silent-depths-09",
+          "artist": "Dark Antey",
+          "title": "I'm Going to Do It",
+          "bpm": 86,
+          "durationSeconds": 246,
+          "src": "/assets/music/dark-antey/09-i-m-going-to-do-it.mp3",
+          "source": "https://darkantey.bandcamp.com/album/silent-depths",
+          "license": {
+            "id": "CC-BY-4.0",
+            "name": "Creative Commons Attribution 4.0",
+            "url": "https://creativecommons.org/licenses/by/4.0/",
+            "streamingAllowed": true,
+            "creditRequired": true
+          },
+          "attribution": "Music by Dark Antey. \"I'm Going to Do It\" from Silent Depths. Source: https://darkantey.bandcamp.com/album/silent-depths. CC BY 4.0. No changes made.",
+          "tempoReviewed": "approximate beat analysis of complete supplied MP3 (not independently confirmed)"
+        },
+        {
+          "id": "dark-antey-silent-depths-10",
+          "artist": "Dark Antey",
+          "title": "Farewell Note",
+          "bpm": 86,
+          "durationSeconds": 240,
+          "src": "/assets/music/dark-antey/10-farewell-note.mp3",
+          "source": "https://darkantey.bandcamp.com/album/silent-depths",
+          "license": {
+            "id": "CC-BY-4.0",
+            "name": "Creative Commons Attribution 4.0",
+            "url": "https://creativecommons.org/licenses/by/4.0/",
+            "streamingAllowed": true,
+            "creditRequired": true
+          },
+          "attribution": "Music by Dark Antey. \"Farewell Note\" from Silent Depths. Source: https://darkantey.bandcamp.com/album/silent-depths. CC BY 4.0. No changes made.",
+          "tempoReviewed": "approximate beat analysis of complete supplied MP3 (not independently confirmed)"
+        },
+        {
+          "id": "dark-antey-silent-depths-11",
+          "artist": "Dark Antey",
+          "title": "Dead Silence",
+          "bpm": 81,
+          "durationSeconds": 147,
+          "src": "/assets/music/dark-antey/11-dead-silence.mp3",
+          "source": "https://darkantey.bandcamp.com/album/silent-depths",
+          "license": {
+            "id": "CC-BY-4.0",
+            "name": "Creative Commons Attribution 4.0",
+            "url": "https://creativecommons.org/licenses/by/4.0/",
+            "streamingAllowed": true,
+            "creditRequired": true
+          },
+          "attribution": "Music by Dark Antey. \"Dead Silence\" from Silent Depths. Source: https://darkantey.bandcamp.com/album/silent-depths. CC BY 4.0. No changes made.",
+          "tempoReviewed": "approximate beat analysis of complete supplied MP3 (not independently confirmed)"
+        },
+        {
+          "id": "dark-antey-silent-depths-12",
+          "artist": "Dark Antey",
+          "title": "Fading Memories 2",
+          "bpm": 81,
+          "durationSeconds": 102,
+          "src": "/assets/music/dark-antey/12-fading-memories-2.mp3",
+          "source": "https://darkantey.bandcamp.com/album/silent-depths",
+          "license": {
+            "id": "CC-BY-4.0",
+            "name": "Creative Commons Attribution 4.0",
+            "url": "https://creativecommons.org/licenses/by/4.0/",
+            "streamingAllowed": true,
+            "creditRequired": true
+          },
+          "attribution": "Music by Dark Antey. \"Fading Memories 2\" from Silent Depths. Source: https://darkantey.bandcamp.com/album/silent-depths. CC BY 4.0. No changes made.",
+          "tempoReviewed": "approximate beat analysis of complete supplied MP3 (not independently confirmed)"
+        },
+        {
+          "id": "dark-antey-silent-depths-13",
+          "artist": "Dark Antey",
+          "title": "Last Breath",
+          "bpm": 81,
+          "durationSeconds": 96,
+          "src": "/assets/music/dark-antey/13-last-breath.mp3",
+          "source": "https://darkantey.bandcamp.com/album/silent-depths",
+          "license": {
+            "id": "CC-BY-4.0",
+            "name": "Creative Commons Attribution 4.0",
+            "url": "https://creativecommons.org/licenses/by/4.0/",
+            "streamingAllowed": true,
+            "creditRequired": true
+          },
+          "attribution": "Music by Dark Antey. \"Last Breath\" from Silent Depths. Source: https://darkantey.bandcamp.com/album/silent-depths. CC BY 4.0. No changes made.",
+          "tempoReviewed": "approximate beat analysis of complete supplied MP3 (not independently confirmed)"
+        },
+        {
+          "id": "dark-antey-silent-depths-14",
+          "artist": "Dark Antey",
+          "title": "There is Still Hope",
+          "bpm": 89,
+          "durationSeconds": 85,
+          "src": "/assets/music/dark-antey/14-there-is-still-hope.mp3",
+          "source": "https://darkantey.bandcamp.com/album/silent-depths",
+          "license": {
+            "id": "CC-BY-4.0",
+            "name": "Creative Commons Attribution 4.0",
+            "url": "https://creativecommons.org/licenses/by/4.0/",
+            "streamingAllowed": true,
+            "creditRequired": true
+          },
+          "attribution": "Music by Dark Antey. \"There is Still Hope\" from Silent Depths. Source: https://darkantey.bandcamp.com/album/silent-depths. CC BY 4.0. No changes made.",
+          "tempoReviewed": "approximate beat analysis of complete supplied MP3 (not independently confirmed)"
+        },
+        {
+          "id": "dark-antey-silent-depths-15",
+          "artist": "Dark Antey",
+          "title": "We'll Never Meet Again",
+          "bpm": 89,
+          "durationSeconds": 65,
+          "src": "/assets/music/dark-antey/15-we-ll-never-meet-again.mp3",
+          "source": "https://darkantey.bandcamp.com/album/silent-depths",
+          "license": {
+            "id": "CC-BY-4.0",
+            "name": "Creative Commons Attribution 4.0",
+            "url": "https://creativecommons.org/licenses/by/4.0/",
+            "streamingAllowed": true,
+            "creditRequired": true
+          },
+          "attribution": "Music by Dark Antey. \"We'll Never Meet Again\" from Silent Depths. Source: https://darkantey.bandcamp.com/album/silent-depths. CC BY 4.0. No changes made.",
+          "tempoReviewed": "approximate beat analysis of complete supplied MP3 (not independently confirmed)"
+        },
+        {
+          "id": "dark-antey-deep-russian-depression-02",
+          "artist": "Dark Antey",
+          "title": "Где я спешил, взбираясь к небесам",
+          "bpm": 99,
+          "durationSeconds": 197,
+          "src": "/assets/music/dark-antey/deep-russian-depression/02-где-я-спешил-взбираясь-к-небесам.mp3",
+          "source": "https://darkantey.bandcamp.com/album/deep-russian-depression",
+          "license": {
+            "id": "CC-BY-4.0",
+            "name": "Creative Commons Attribution 4.0",
+            "url": "https://creativecommons.org/licenses/by/4.0/",
+            "streamingAllowed": true,
+            "creditRequired": true
+          },
+          "attribution": "Music by Dark Antey. \"Где я спешил, взбираясь к небесам\" from Deep Russian Depression. Source: https://darkantey.bandcamp.com/album/deep-russian-depression. CC BY 4.0. No changes made.",
+          "tempoReviewed": "approximate beat analysis of complete supplied MP3 (not independently confirmed)"
+        },
+        {
+          "id": "dark-antey-deep-russian-depression-04",
+          "artist": "Dark Antey",
+          "title": "Один в пустой комнате",
+          "bpm": 81,
+          "durationSeconds": 147,
+          "src": "/assets/music/dark-antey/deep-russian-depression/04-один-в-пустой-комнате.mp3",
+          "source": "https://darkantey.bandcamp.com/album/deep-russian-depression",
+          "license": {
+            "id": "CC-BY-4.0",
+            "name": "Creative Commons Attribution 4.0",
+            "url": "https://creativecommons.org/licenses/by/4.0/",
+            "streamingAllowed": true,
+            "creditRequired": true
+          },
+          "attribution": "Music by Dark Antey. \"Один в пустой комнате\" from Deep Russian Depression. Source: https://darkantey.bandcamp.com/album/deep-russian-depression. CC BY 4.0. No changes made.",
+          "tempoReviewed": "approximate beat analysis of complete supplied MP3 (not independently confirmed)"
+        },
+        {
+          "id": "dark-antey-deep-russian-depression-05",
+          "artist": "Dark Antey",
+          "title": "Разбитые воспоминания",
+          "bpm": 89,
+          "durationSeconds": 198,
+          "src": "/assets/music/dark-antey/deep-russian-depression/05-разбитые-воспоминания.mp3",
+          "source": "https://darkantey.bandcamp.com/album/deep-russian-depression",
+          "license": {
+            "id": "CC-BY-4.0",
+            "name": "Creative Commons Attribution 4.0",
+            "url": "https://creativecommons.org/licenses/by/4.0/",
+            "streamingAllowed": true,
+            "creditRequired": true
+          },
+          "attribution": "Music by Dark Antey. \"Разбитые воспоминания\" from Deep Russian Depression. Source: https://darkantey.bandcamp.com/album/deep-russian-depression. CC BY 4.0. No changes made.",
+          "tempoReviewed": "approximate beat analysis of complete supplied MP3 (not independently confirmed)"
+        },
+        {
+          "id": "dark-antey-deep-russian-depression-08",
+          "artist": "Dark Antey",
+          "title": "Беспокойные сны (Instrumental)",
+          "bpm": 89,
+          "durationSeconds": 85,
+          "src": "/assets/music/dark-antey/deep-russian-depression/08-беспокойные-сны-instrumental.mp3",
+          "source": "https://darkantey.bandcamp.com/album/deep-russian-depression",
+          "license": {
+            "id": "CC-BY-4.0",
+            "name": "Creative Commons Attribution 4.0",
+            "url": "https://creativecommons.org/licenses/by/4.0/",
+            "streamingAllowed": true,
+            "creditRequired": true
+          },
+          "attribution": "Music by Dark Antey. \"Беспокойные сны (Instrumental)\" from Deep Russian Depression. Source: https://darkantey.bandcamp.com/album/deep-russian-depression. CC BY 4.0. No changes made.",
+          "tempoReviewed": "approximate beat analysis of complete supplied MP3 (not independently confirmed)"
+        },
+        {
+          "id": "dark-antey-deep-russian-depression-11",
+          "artist": "Dark Antey",
+          "title": "Беспокойные сны",
+          "bpm": 89,
+          "durationSeconds": 85,
+          "src": "/assets/music/dark-antey/deep-russian-depression/11-беспокойные-сны.mp3",
+          "source": "https://darkantey.bandcamp.com/album/deep-russian-depression",
+          "license": {
+            "id": "CC-BY-4.0",
+            "name": "Creative Commons Attribution 4.0",
+            "url": "https://creativecommons.org/licenses/by/4.0/",
+            "streamingAllowed": true,
+            "creditRequired": true
+          },
+          "attribution": "Music by Dark Antey. \"Беспокойные сны\" from Deep Russian Depression. Source: https://darkantey.bandcamp.com/album/deep-russian-depression. CC BY 4.0. No changes made.",
+          "tempoReviewed": "approximate beat analysis of complete supplied MP3 (not independently confirmed)"
         }
       ]
     },
@@ -927,6 +1251,114 @@
           "attribution": "\"Flight of the Spirit\" by ARGONIKA. CC-BY-SA-3.0. Original audio: https://commons.wikimedia.org/wiki/File:ARGONIKA%20-%20Flight%20of%20the%20Spirit%20--%20Tunguska%20E.M.S.%20for%20Creative%20Commons%20(track%206).ogg. No changes made by СНАЧАЛА УЖИН.",
           "audioAvailability": "remote-source-verified-in-GitHub-Actions; Russian-access-and-browser-playback-unverified",
           "tempoReviewed": "algorithmic-estimate-pending-listening"
+        },
+        {
+          "id": "dark-antey-silent-depths-02",
+          "artist": "Dark Antey",
+          "title": "Fading Memories",
+          "bpm": 70,
+          "durationSeconds": 117,
+          "src": "/assets/music/dark-antey/02-fading-memories.mp3",
+          "source": "https://darkantey.bandcamp.com/album/silent-depths",
+          "license": {
+            "id": "CC-BY-4.0",
+            "name": "Creative Commons Attribution 4.0",
+            "url": "https://creativecommons.org/licenses/by/4.0/",
+            "streamingAllowed": true,
+            "creditRequired": true
+          },
+          "attribution": "Music by Dark Antey. \"Fading Memories\" from Silent Depths. Source: https://darkantey.bandcamp.com/album/silent-depths. CC BY 4.0. No changes made.",
+          "tempoReviewed": "approximate beat analysis of complete supplied MP3 (not independently confirmed)"
+        },
+        {
+          "id": "dark-antey-silent-depths-03",
+          "artist": "Dark Antey",
+          "title": "Tears That Don't Exist",
+          "bpm": 59,
+          "durationSeconds": 124,
+          "src": "/assets/music/dark-antey/03-tears-that-don-t-exist.mp3",
+          "source": "https://darkantey.bandcamp.com/album/silent-depths",
+          "license": {
+            "id": "CC-BY-4.0",
+            "name": "Creative Commons Attribution 4.0",
+            "url": "https://creativecommons.org/licenses/by/4.0/",
+            "streamingAllowed": true,
+            "creditRequired": true
+          },
+          "attribution": "Music by Dark Antey. \"Tears That Don't Exist\" from Silent Depths. Source: https://darkantey.bandcamp.com/album/silent-depths. CC BY 4.0. No changes made.",
+          "tempoReviewed": "approximate beat analysis of complete supplied MP3 (not independently confirmed)"
+        },
+        {
+          "id": "dark-antey-deep-russian-depression-03",
+          "artist": "Dark Antey",
+          "title": "Прогулка по ночному небу",
+          "bpm": 60,
+          "durationSeconds": 88,
+          "src": "/assets/music/dark-antey/deep-russian-depression/03-прогулка-по-ночному-небу.mp3",
+          "source": "https://darkantey.bandcamp.com/album/deep-russian-depression",
+          "license": {
+            "id": "CC-BY-4.0",
+            "name": "Creative Commons Attribution 4.0",
+            "url": "https://creativecommons.org/licenses/by/4.0/",
+            "streamingAllowed": true,
+            "creditRequired": true
+          },
+          "attribution": "Music by Dark Antey. \"Прогулка по ночному небу\" from Deep Russian Depression. Source: https://darkantey.bandcamp.com/album/deep-russian-depression. CC BY 4.0. No changes made.",
+          "tempoReviewed": "approximate beat analysis of complete supplied MP3 (not independently confirmed)"
+        },
+        {
+          "id": "dark-antey-deep-russian-depression-06",
+          "artist": "Dark Antey",
+          "title": "Метафизический сон во тьме",
+          "bpm": 62,
+          "durationSeconds": 221,
+          "src": "/assets/music/dark-antey/deep-russian-depression/06-метафизический-сон-во-тьме.mp3",
+          "source": "https://darkantey.bandcamp.com/album/deep-russian-depression",
+          "license": {
+            "id": "CC-BY-4.0",
+            "name": "Creative Commons Attribution 4.0",
+            "url": "https://creativecommons.org/licenses/by/4.0/",
+            "streamingAllowed": true,
+            "creditRequired": true
+          },
+          "attribution": "Music by Dark Antey. \"Метафизический сон во тьме\" from Deep Russian Depression. Source: https://darkantey.bandcamp.com/album/deep-russian-depression. CC BY 4.0. No changes made.",
+          "tempoReviewed": "approximate beat analysis of complete supplied MP3 (not independently confirmed)"
+        },
+        {
+          "id": "dark-antey-deep-russian-depression-07",
+          "artist": "Dark Antey",
+          "title": "И гнев небесного творца",
+          "bpm": 70,
+          "durationSeconds": 110,
+          "src": "/assets/music/dark-antey/deep-russian-depression/07-и-гнев-небесного-творца.mp3",
+          "source": "https://darkantey.bandcamp.com/album/deep-russian-depression",
+          "license": {
+            "id": "CC-BY-4.0",
+            "name": "Creative Commons Attribution 4.0",
+            "url": "https://creativecommons.org/licenses/by/4.0/",
+            "streamingAllowed": true,
+            "creditRequired": true
+          },
+          "attribution": "Music by Dark Antey. \"И гнев небесного творца\" from Deep Russian Depression. Source: https://darkantey.bandcamp.com/album/deep-russian-depression. CC BY 4.0. No changes made.",
+          "tempoReviewed": "approximate beat analysis of complete supplied MP3 (not independently confirmed)"
+        },
+        {
+          "id": "dark-antey-deep-russian-depression-09",
+          "artist": "Dark Antey",
+          "title": "Звездный в небе невод",
+          "bpm": 60,
+          "durationSeconds": 138,
+          "src": "/assets/music/dark-antey/deep-russian-depression/09-звездный-в-небе-невод.mp3",
+          "source": "https://darkantey.bandcamp.com/album/deep-russian-depression",
+          "license": {
+            "id": "CC-BY-4.0",
+            "name": "Creative Commons Attribution 4.0",
+            "url": "https://creativecommons.org/licenses/by/4.0/",
+            "streamingAllowed": true,
+            "creditRequired": true
+          },
+          "attribution": "Music by Dark Antey. \"Звездный в небе невод\" from Deep Russian Depression. Source: https://darkantey.bandcamp.com/album/deep-russian-depression. CC BY 4.0. No changes made.",
+          "tempoReviewed": "approximate beat analysis of complete supplied MP3 (not independently confirmed)"
         }
       ]
     }

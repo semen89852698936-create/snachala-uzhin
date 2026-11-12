@@ -470,8 +470,8 @@
         "commercialUseVerified": false
       },
       "tempoBpm": 89.1,
-      "reviewStatus": "full-audio-in-chat-verified; staged-for-site-upload; manual-BPM-and-license-metadata-conflict-review",
-      "audible": false,
+      "reviewStatus": "original-MP3-SHA256-verified-on-GitHub-feature-branch-not-public",
+      "audible": true,
       "licenseEvidence": {
         "evidenceType": "explicit artist-published album credits",
         "album": "Silent Depths",
@@ -484,14 +484,17 @@
         "commercialUseGrantByAuthor": true
       },
       "downloadStatus": "user-uploaded-full-MP3-verified-locally, not hosted in GitHub or Vercel",
-      "publishStatus": "DO-NOT-PUBLISH until actual MP3 added at expectedSiteAudioPath and tested",
+      "publishStatus": "feature-branch-source-only; live playback/regional test pending",
       "tempoMethod": "Automated tempo estimate from user-uploaded complete MP3 (2026-11-12); ambient recordings may have no stable beat; manual confirmation outstanding",
       "tempoConfidenceLabel": "approximate",
       "tempoSuggestedPlaylist": "dinner",
       "expectedSiteAudioPath": "/assets/music/dark-antey/01-main-theme.mp3",
       "audioSource": "user-uploaded original MP3; decoded successfully and verified against album metadata",
-      "audioFilesUploadedToRepository": false,
-      "audioFilesReceivedInChat": true
+      "audioFilesUploadedToRepository": true,
+      "audioFilesReceivedInChat": true,
+      "assignedPlaylist": "dinner",
+      "mediaUrl": "/assets/music/dark-antey/01-main-theme.mp3",
+      "sha256": "d82d10a50f287ee35d8a3fd83514718059abafffba58f5b2769f3ce31405ebfe"
     },
     {
       "id": "dark-antey-silent-depths-02",
@@ -507,8 +510,8 @@
         "commercialUseVerified": false
       },
       "tempoBpm": 69.8,
-      "reviewStatus": "full-audio-in-chat-verified; staged-for-site-upload; manual-BPM-and-license-metadata-conflict-review",
-      "audible": false,
+      "reviewStatus": "original-MP3-SHA256-verified-on-GitHub-feature-branch-not-public",
+      "audible": true,
       "licenseEvidence": {
         "evidenceType": "explicit artist-published album credits",
         "album": "Silent Depths",
@@ -521,14 +524,17 @@
         "commercialUseGrantByAuthor": true
       },
       "downloadStatus": "user-uploaded-full-MP3-verified-locally, not hosted in GitHub or Vercel",
-      "publishStatus": "DO-NOT-PUBLISH until actual MP3 added at expectedSiteAudioPath and tested",
+      "publishStatus": "feature-branch-source-only; live playback/regional test pending",
       "tempoMethod": "Automated tempo estimate from user-uploaded complete MP3 (2026-11-12); ambient recordings may have no stable beat; manual confirmation outstanding",
       "tempoConfidenceLabel": "approximate",
       "tempoSuggestedPlaylist": "after",
       "expectedSiteAudioPath": "/assets/music/dark-antey/02-fading-memories.mp3",
       "audioSource": "user-uploaded original MP3; decoded successfully and verified against album metadata",
-      "audioFilesUploadedToRepository": false,
-      "audioFilesReceivedInChat": true
+      "audioFilesUploadedToRepository": true,
+      "audioFilesReceivedInChat": true,
+      "assignedPlaylist": "after",
+      "mediaUrl": "/assets/music/dark-antey/02-fading-memories.mp3",
+      "sha256": "d2090f6b88430d2332be8613a1f1f2fe70a2d2a7a9a0d00261903683b0da3dea"
     },
     {
       "id": "dark-antey-silent-depths-03",
@@ -544,8 +550,8 @@
         "commercialUseVerified": false
       },
       "tempoBpm": 58.8,
-      "reviewStatus": "full-audio-in-chat-verified; staged-for-site-upload; manual-BPM-and-license-metadata-conflict-review",
-      "audible": false,
+      "reviewStatus": "original-MP3-SHA256-verified-on-GitHub-feature-branch-not-public",
+      "audible": true,
       "licenseEvidence": {
         "evidenceType": "explicit artist-published album credits",
         "album": "Silent Depths",
@@ -558,14 +564,17 @@
         "commercialUseGrantByAuthor": true
       },
       "downloadStatus": "user-uploaded-full-MP3-verified-locally, not hosted in GitHub or Vercel",
-      "publishStatus": "DO-NOT-PUBLISH until actual MP3 added at expectedSiteAudioPath and tested",
+      "publishStatus": "feature-branch-source-only; live playback/regional test pending",
       "tempoMethod": "Automated tempo estimate from user-uploaded complete MP3 (2026-11-12); ambient recordings may have no stable beat; manual confirmation outstanding",
       "tempoConfidenceLabel": "half-time inference 58.8 BPM from ambiguous ~117.5 BPM; additional review needed",
       "tempoSuggestedPlaylist": "after",
       "expectedSiteAudioPath": "/assets/music/dark-antey/03-tears-that-don-t-exist.mp3",
       "audioSource": "user-uploaded original MP3; decoded successfully and verified against album metadata",
-      "audioFilesUploadedToRepository": false,
-      "audioFilesReceivedInChat": true
+      "audioFilesUploadedToRepository": true,
+      "audioFilesReceivedInChat": true,
+      "assignedPlaylist": "after",
+      "mediaUrl": "/assets/music/dark-antey/03-tears-that-don-t-exist.mp3",
+      "sha256": "95487c2a5e7324dd37171a7cd25863029d6115edefd6beffb6e0b0825113bdc0"
     },
     {
       "id": "dark-antey-silent-depths-04",
@@ -581,8 +590,8 @@
         "commercialUseVerified": false
       },
       "tempoBpm": 80.7,
-      "reviewStatus": "full-audio-in-chat-verified; staged-for-site-upload; manual-BPM-and-license-metadata-conflict-review",
-      "audible": false,
+      "reviewStatus": "original-MP3-SHA256-verified-on-GitHub-feature-branch-not-public",
+      "audible": true,
       "licenseEvidence": {
         "evidenceType": "explicit artist-published album credits",
         "album": "Silent Depths",
@@ -595,14 +604,17 @@
         "commercialUseGrantByAuthor": true
       },
       "downloadStatus": "user-uploaded-full-MP3-verified-locally, not hosted in GitHub or Vercel",
-      "publishStatus": "DO-NOT-PUBLISH until actual MP3 added at expectedSiteAudioPath and tested",
+      "publishStatus": "feature-branch-source-only; live playback/regional test pending",
       "tempoMethod": "Automated tempo estimate from user-uploaded complete MP3 (2026-11-12); ambient recordings may have no stable beat; manual confirmation outstanding",
       "tempoConfidenceLabel": "approximate",
       "tempoSuggestedPlaylist": "dinner",
       "expectedSiteAudioPath": "/assets/music/dark-antey/04-echo-of-empty-rooms.mp3",
       "audioSource": "user-uploaded original MP3; decoded successfully and verified against album metadata",
-      "audioFilesUploadedToRepository": false,
-      "audioFilesReceivedInChat": true
+      "audioFilesUploadedToRepository": true,
+      "audioFilesReceivedInChat": true,
+      "assignedPlaylist": "dinner",
+      "mediaUrl": "/assets/music/dark-antey/04-echo-of-empty-rooms.mp3",
+      "sha256": "8dcfc6793a6ec2903d70a40bc9aa712ec7d890f5dd8ad809ae96ffc21659bde6"
     },
     {
       "id": "dark-antey-silent-depths-05",
@@ -618,8 +630,8 @@
         "commercialUseVerified": false
       },
       "tempoBpm": 89.1,
-      "reviewStatus": "full-audio-in-chat-verified; staged-for-site-upload; manual-BPM-and-license-metadata-conflict-review",
-      "audible": false,
+      "reviewStatus": "original-MP3-SHA256-verified-on-GitHub-feature-branch-not-public",
+      "audible": true,
       "licenseEvidence": {
         "evidenceType": "explicit artist-published album credits",
         "album": "Silent Depths",
@@ -632,14 +644,17 @@
         "commercialUseGrantByAuthor": true
       },
       "downloadStatus": "user-uploaded-full-MP3-verified-locally, not hosted in GitHub or Vercel",
-      "publishStatus": "DO-NOT-PUBLISH until actual MP3 added at expectedSiteAudioPath and tested",
+      "publishStatus": "feature-branch-source-only; live playback/regional test pending",
       "tempoMethod": "Automated tempo estimate from user-uploaded complete MP3 (2026-11-12); ambient recordings may have no stable beat; manual confirmation outstanding",
       "tempoConfidenceLabel": "approximate",
       "tempoSuggestedPlaylist": "dinner",
       "expectedSiteAudioPath": "/assets/music/dark-antey/05-eternity-without-movement.mp3",
       "audioSource": "user-uploaded original MP3; decoded successfully and verified against album metadata",
-      "audioFilesUploadedToRepository": false,
-      "audioFilesReceivedInChat": true
+      "audioFilesUploadedToRepository": true,
+      "audioFilesReceivedInChat": true,
+      "assignedPlaylist": "dinner",
+      "mediaUrl": "/assets/music/dark-antey/05-eternity-without-movement.mp3",
+      "sha256": "a2e7ba9fda2c9ea3f1f75d70c1a597697bb35ca9b6642c43091156674481eaad"
     },
     {
       "id": "dark-antey-silent-depths-06",
@@ -655,8 +670,8 @@
         "commercialUseVerified": false
       },
       "tempoBpm": 92.3,
-      "reviewStatus": "full-audio-in-chat-verified; staged-for-site-upload; manual-BPM-and-license-metadata-conflict-review",
-      "audible": false,
+      "reviewStatus": "original-MP3-SHA256-verified-on-GitHub-feature-branch-not-public",
+      "audible": true,
       "licenseEvidence": {
         "evidenceType": "explicit artist-published album credits",
         "album": "Silent Depths",
@@ -669,14 +684,17 @@
         "commercialUseGrantByAuthor": true
       },
       "downloadStatus": "user-uploaded-full-MP3-verified-locally, not hosted in GitHub or Vercel",
-      "publishStatus": "DO-NOT-PUBLISH until actual MP3 added at expectedSiteAudioPath and tested",
+      "publishStatus": "feature-branch-source-only; live playback/regional test pending",
       "tempoMethod": "Automated tempo estimate from user-uploaded complete MP3 (2026-11-12); ambient recordings may have no stable beat; manual confirmation outstanding",
       "tempoConfidenceLabel": "approximate",
       "tempoSuggestedPlaylist": "dinner",
       "expectedSiteAudioPath": "/assets/music/dark-antey/06-stalker-is-watching.mp3",
       "audioSource": "user-uploaded original MP3; decoded successfully and verified against album metadata",
-      "audioFilesUploadedToRepository": false,
-      "audioFilesReceivedInChat": true
+      "audioFilesUploadedToRepository": true,
+      "audioFilesReceivedInChat": true,
+      "assignedPlaylist": "dinner",
+      "mediaUrl": "/assets/music/dark-antey/06-stalker-is-watching.mp3",
+      "sha256": "ba70ec9abd2e7be32ffe0996b0fe95f8fb5f093d916a4d820a6c0e4f4d0748cb"
     },
     {
       "id": "dark-antey-silent-depths-07",
@@ -692,8 +710,8 @@
         "commercialUseVerified": false
       },
       "tempoBpm": 92.3,
-      "reviewStatus": "full-audio-in-chat-verified; staged-for-site-upload; manual-BPM-and-license-metadata-conflict-review",
-      "audible": false,
+      "reviewStatus": "original-MP3-SHA256-verified-on-GitHub-feature-branch-not-public",
+      "audible": true,
       "licenseEvidence": {
         "evidenceType": "explicit artist-published album credits",
         "album": "Silent Depths",
@@ -706,14 +724,17 @@
         "commercialUseGrantByAuthor": true
       },
       "downloadStatus": "user-uploaded-full-MP3-verified-locally, not hosted in GitHub or Vercel",
-      "publishStatus": "DO-NOT-PUBLISH until actual MP3 added at expectedSiteAudioPath and tested",
+      "publishStatus": "feature-branch-source-only; live playback/regional test pending",
       "tempoMethod": "Automated tempo estimate from user-uploaded complete MP3 (2026-11-12); ambient recordings may have no stable beat; manual confirmation outstanding",
       "tempoConfidenceLabel": "approximate",
       "tempoSuggestedPlaylist": "dinner",
       "expectedSiteAudioPath": "/assets/music/dark-antey/07-abandoned-hospital.mp3",
       "audioSource": "user-uploaded original MP3; decoded successfully and verified against album metadata",
-      "audioFilesUploadedToRepository": false,
-      "audioFilesReceivedInChat": true
+      "audioFilesUploadedToRepository": true,
+      "audioFilesReceivedInChat": true,
+      "assignedPlaylist": "dinner",
+      "mediaUrl": "/assets/music/dark-antey/07-abandoned-hospital.mp3",
+      "sha256": "93dc4ef375f63eaed08414991c4b21de052b626e699b302032dd6691444bdee2"
     },
     {
       "id": "dark-antey-silent-depths-08",
@@ -729,8 +750,8 @@
         "commercialUseVerified": false
       },
       "tempoBpm": 85.2,
-      "reviewStatus": "full-audio-in-chat-verified; staged-for-site-upload; manual-BPM-and-license-metadata-conflict-review",
-      "audible": false,
+      "reviewStatus": "original-MP3-SHA256-verified-on-GitHub-feature-branch-not-public",
+      "audible": true,
       "licenseEvidence": {
         "evidenceType": "explicit artist-published album credits",
         "album": "Silent Depths",
@@ -743,14 +764,17 @@
         "commercialUseGrantByAuthor": true
       },
       "downloadStatus": "user-uploaded-full-MP3-verified-locally, not hosted in GitHub or Vercel",
-      "publishStatus": "DO-NOT-PUBLISH until actual MP3 added at expectedSiteAudioPath and tested",
+      "publishStatus": "feature-branch-source-only; live playback/regional test pending",
       "tempoMethod": "Automated tempo estimate from user-uploaded complete MP3 (2026-11-12); ambient recordings may have no stable beat; manual confirmation outstanding",
       "tempoConfidenceLabel": "approximate",
       "tempoSuggestedPlaylist": "dinner",
       "expectedSiteAudioPath": "/assets/music/dark-antey/08-the-weight-of-nothingness.mp3",
       "audioSource": "user-uploaded original MP3; decoded successfully and verified against album metadata",
-      "audioFilesUploadedToRepository": false,
-      "audioFilesReceivedInChat": true
+      "audioFilesUploadedToRepository": true,
+      "audioFilesReceivedInChat": true,
+      "assignedPlaylist": "dinner",
+      "mediaUrl": "/assets/music/dark-antey/08-the-weight-of-nothingness.mp3",
+      "sha256": "644eab3d10004317b201973a04983c31d332c0f15e0b6c5d5a7573a5b11ea851"
     },
     {
       "id": "dark-antey-silent-depths-09",
@@ -766,8 +790,8 @@
         "commercialUseVerified": false
       },
       "tempoBpm": 86.1,
-      "reviewStatus": "full-audio-in-chat-verified; staged-for-site-upload; manual-BPM-and-license-metadata-conflict-review",
-      "audible": false,
+      "reviewStatus": "original-MP3-SHA256-verified-on-GitHub-feature-branch-not-public",
+      "audible": true,
       "licenseEvidence": {
         "evidenceType": "explicit artist-published album credits",
         "album": "Silent Depths",
@@ -780,14 +804,17 @@
         "commercialUseGrantByAuthor": true
       },
       "downloadStatus": "user-uploaded-full-MP3-verified-locally, not hosted in GitHub or Vercel",
-      "publishStatus": "DO-NOT-PUBLISH until actual MP3 added at expectedSiteAudioPath and tested",
+      "publishStatus": "feature-branch-source-only; live playback/regional test pending",
       "tempoMethod": "Automated tempo estimate from user-uploaded complete MP3 (2026-11-12); ambient recordings may have no stable beat; manual confirmation outstanding",
       "tempoConfidenceLabel": "approximate",
       "tempoSuggestedPlaylist": "dinner",
       "expectedSiteAudioPath": "/assets/music/dark-antey/09-i-m-going-to-do-it.mp3",
       "audioSource": "user-uploaded original MP3; decoded successfully and verified against album metadata",
-      "audioFilesUploadedToRepository": false,
-      "audioFilesReceivedInChat": true
+      "audioFilesUploadedToRepository": true,
+      "audioFilesReceivedInChat": true,
+      "assignedPlaylist": "dinner",
+      "mediaUrl": "/assets/music/dark-antey/09-i-m-going-to-do-it.mp3",
+      "sha256": "b8e650fcaee9de99a040d58a2577da53e439f4f17b85156fbbf29ab197230f5b"
     },
     {
       "id": "dark-antey-silent-depths-10",
@@ -803,8 +830,8 @@
         "commercialUseVerified": false
       },
       "tempoBpm": 86.1,
-      "reviewStatus": "full-audio-in-chat-verified; staged-for-site-upload; manual-BPM-and-license-metadata-conflict-review",
-      "audible": false,
+      "reviewStatus": "original-MP3-SHA256-verified-on-GitHub-feature-branch-not-public",
+      "audible": true,
       "licenseEvidence": {
         "evidenceType": "explicit artist-published album credits",
         "album": "Silent Depths",
@@ -817,14 +844,17 @@
         "commercialUseGrantByAuthor": true
       },
       "downloadStatus": "user-uploaded-full-MP3-verified-locally, not hosted in GitHub or Vercel",
-      "publishStatus": "DO-NOT-PUBLISH until actual MP3 added at expectedSiteAudioPath and tested",
+      "publishStatus": "feature-branch-source-only; live playback/regional test pending",
       "tempoMethod": "Automated tempo estimate from user-uploaded complete MP3 (2026-11-12); ambient recordings may have no stable beat; manual confirmation outstanding",
       "tempoConfidenceLabel": "approximate",
       "tempoSuggestedPlaylist": "dinner",
       "expectedSiteAudioPath": "/assets/music/dark-antey/10-farewell-note.mp3",
       "audioSource": "user-uploaded original MP3; decoded successfully and verified against album metadata",
-      "audioFilesUploadedToRepository": false,
-      "audioFilesReceivedInChat": true
+      "audioFilesUploadedToRepository": true,
+      "audioFilesReceivedInChat": true,
+      "assignedPlaylist": "dinner",
+      "mediaUrl": "/assets/music/dark-antey/10-farewell-note.mp3",
+      "sha256": "82614d4ff7d3bedb8f03f1d610f239f84ac514371cb106e994aea7637e78ce69"
     },
     {
       "id": "dark-antey-silent-depths-11",
@@ -840,8 +870,8 @@
         "commercialUseVerified": false
       },
       "tempoBpm": 80.7,
-      "reviewStatus": "full-audio-in-chat-verified; staged-for-site-upload; manual-BPM-and-license-metadata-conflict-review",
-      "audible": false,
+      "reviewStatus": "original-MP3-SHA256-verified-on-GitHub-feature-branch-not-public",
+      "audible": true,
       "licenseEvidence": {
         "evidenceType": "explicit artist-published album credits",
         "album": "Silent Depths",
@@ -854,14 +884,17 @@
         "commercialUseGrantByAuthor": true
       },
       "downloadStatus": "user-uploaded-full-MP3-verified-locally, not hosted in GitHub or Vercel",
-      "publishStatus": "DO-NOT-PUBLISH until actual MP3 added at expectedSiteAudioPath and tested",
+      "publishStatus": "feature-branch-source-only; live playback/regional test pending",
       "tempoMethod": "Automated tempo estimate from user-uploaded complete MP3 (2026-11-12); ambient recordings may have no stable beat; manual confirmation outstanding",
       "tempoConfidenceLabel": "approximate",
       "tempoSuggestedPlaylist": "dinner",
       "expectedSiteAudioPath": "/assets/music/dark-antey/11-dead-silence.mp3",
       "audioSource": "user-uploaded original MP3; decoded successfully and verified against album metadata",
-      "audioFilesUploadedToRepository": false,
-      "audioFilesReceivedInChat": true
+      "audioFilesUploadedToRepository": true,
+      "audioFilesReceivedInChat": true,
+      "assignedPlaylist": "dinner",
+      "mediaUrl": "/assets/music/dark-antey/11-dead-silence.mp3",
+      "sha256": "01ae826db9878df244a7658ae0fd4788fc09a32c2645e7bd5bba90dfaa55913d"
     },
     {
       "id": "dark-antey-silent-depths-12",
@@ -877,8 +910,8 @@
         "commercialUseVerified": false
       },
       "tempoBpm": 80.7,
-      "reviewStatus": "full-audio-in-chat-verified; staged-for-site-upload; manual-BPM-and-license-metadata-conflict-review",
-      "audible": false,
+      "reviewStatus": "original-MP3-SHA256-verified-on-GitHub-feature-branch-not-public",
+      "audible": true,
       "licenseEvidence": {
         "evidenceType": "explicit artist-published album credits",
         "album": "Silent Depths",
@@ -891,14 +924,17 @@
         "commercialUseGrantByAuthor": true
       },
       "downloadStatus": "user-uploaded-full-MP3-verified-locally, not hosted in GitHub or Vercel",
-      "publishStatus": "DO-NOT-PUBLISH until actual MP3 added at expectedSiteAudioPath and tested",
+      "publishStatus": "feature-branch-source-only; live playback/regional test pending",
       "tempoMethod": "Automated tempo estimate from user-uploaded complete MP3 (2026-11-12); ambient recordings may have no stable beat; manual confirmation outstanding",
       "tempoConfidenceLabel": "approximate",
       "tempoSuggestedPlaylist": "dinner",
       "expectedSiteAudioPath": "/assets/music/dark-antey/12-fading-memories-2.mp3",
       "audioSource": "user-uploaded original MP3; decoded successfully and verified against album metadata",
-      "audioFilesUploadedToRepository": false,
-      "audioFilesReceivedInChat": true
+      "audioFilesUploadedToRepository": true,
+      "audioFilesReceivedInChat": true,
+      "assignedPlaylist": "dinner",
+      "mediaUrl": "/assets/music/dark-antey/12-fading-memories-2.mp3",
+      "sha256": "5cbf6aceec7a21fe2e62e9c1757e7353501da4ee91fc1e503575d04a4d1fe0e5"
     },
     {
       "id": "dark-antey-silent-depths-13",
@@ -914,8 +950,8 @@
         "commercialUseVerified": false
       },
       "tempoBpm": 80.7,
-      "reviewStatus": "full-audio-in-chat-verified; staged-for-site-upload; manual-BPM-and-license-metadata-conflict-review",
-      "audible": false,
+      "reviewStatus": "original-MP3-SHA256-verified-on-GitHub-feature-branch-not-public",
+      "audible": true,
       "licenseEvidence": {
         "evidenceType": "explicit artist-published album credits",
         "album": "Silent Depths",
@@ -928,14 +964,17 @@
         "commercialUseGrantByAuthor": true
       },
       "downloadStatus": "user-uploaded-full-MP3-verified-locally, not hosted in GitHub or Vercel",
-      "publishStatus": "DO-NOT-PUBLISH until actual MP3 added at expectedSiteAudioPath and tested",
+      "publishStatus": "feature-branch-source-only; live playback/regional test pending",
       "tempoMethod": "Automated tempo estimate from user-uploaded complete MP3 (2026-11-12); ambient recordings may have no stable beat; manual confirmation outstanding",
       "tempoConfidenceLabel": "approximate",
       "tempoSuggestedPlaylist": "dinner",
       "expectedSiteAudioPath": "/assets/music/dark-antey/13-last-breath.mp3",
       "audioSource": "user-uploaded original MP3; decoded successfully and verified against album metadata",
-      "audioFilesUploadedToRepository": false,
-      "audioFilesReceivedInChat": true
+      "audioFilesUploadedToRepository": true,
+      "audioFilesReceivedInChat": true,
+      "assignedPlaylist": "dinner",
+      "mediaUrl": "/assets/music/dark-antey/13-last-breath.mp3",
+      "sha256": "7a9cd87d31591535370fc5be5ba99ebf524842d5fbcff1d65f9f31c9ae364096"
     },
     {
       "id": "dark-antey-silent-depths-14",
@@ -951,8 +990,8 @@
         "commercialUseVerified": false
       },
       "tempoBpm": 89.3,
-      "reviewStatus": "full-audio-in-chat-verified; staged-for-site-upload; manual-BPM-and-license-metadata-conflict-review",
-      "audible": false,
+      "reviewStatus": "original-MP3-SHA256-verified-on-GitHub-feature-branch-not-public",
+      "audible": true,
       "licenseEvidence": {
         "evidenceType": "explicit artist-published album credits",
         "album": "Silent Depths",
@@ -965,14 +1004,17 @@
         "commercialUseGrantByAuthor": true
       },
       "downloadStatus": "user-uploaded-full-MP3-verified-locally, not hosted in GitHub or Vercel",
-      "publishStatus": "DO-NOT-PUBLISH until actual MP3 added at expectedSiteAudioPath and tested",
+      "publishStatus": "feature-branch-source-only; live playback/regional test pending",
       "tempoMethod": "Automated tempo estimate from user-uploaded complete MP3 (2026-11-12); ambient recordings may have no stable beat; manual confirmation outstanding",
       "tempoConfidenceLabel": "approximate",
       "tempoSuggestedPlaylist": "dinner",
       "expectedSiteAudioPath": "/assets/music/dark-antey/14-there-is-still-hope.mp3",
       "audioSource": "user-uploaded original MP3; decoded successfully and verified against album metadata",
-      "audioFilesUploadedToRepository": false,
-      "audioFilesReceivedInChat": true
+      "audioFilesUploadedToRepository": true,
+      "audioFilesReceivedInChat": true,
+      "assignedPlaylist": "dinner",
+      "mediaUrl": "/assets/music/dark-antey/14-there-is-still-hope.mp3",
+      "sha256": "47e8c2bd9e4282d7f4fbef26c38d5551cbe0763b5b4957ca792518cc4cff42c7"
     },
     {
       "id": "dark-antey-silent-depths-15",
@@ -988,8 +1030,8 @@
         "commercialUseVerified": false
       },
       "tempoBpm": 89.3,
-      "reviewStatus": "full-audio-in-chat-verified; staged-for-site-upload; manual-BPM-and-license-metadata-conflict-review",
-      "audible": false,
+      "reviewStatus": "original-MP3-SHA256-verified-on-GitHub-feature-branch-not-public",
+      "audible": true,
       "licenseEvidence": {
         "evidenceType": "explicit artist-published album credits",
         "album": "Silent Depths",
@@ -1002,14 +1044,17 @@
         "commercialUseGrantByAuthor": true
       },
       "downloadStatus": "user-uploaded-full-MP3-verified-locally, not hosted in GitHub or Vercel",
-      "publishStatus": "DO-NOT-PUBLISH until actual MP3 added at expectedSiteAudioPath and tested",
+      "publishStatus": "feature-branch-source-only; live playback/regional test pending",
       "tempoMethod": "Automated tempo estimate from user-uploaded complete MP3 (2026-11-12); ambient recordings may have no stable beat; manual confirmation outstanding",
       "tempoConfidenceLabel": "approximate",
       "tempoSuggestedPlaylist": "dinner",
       "expectedSiteAudioPath": "/assets/music/dark-antey/15-we-ll-never-meet-again.mp3",
       "audioSource": "user-uploaded original MP3; decoded successfully and verified against album metadata",
-      "audioFilesUploadedToRepository": false,
-      "audioFilesReceivedInChat": true
+      "audioFilesUploadedToRepository": true,
+      "audioFilesReceivedInChat": true,
+      "assignedPlaylist": "dinner",
+      "mediaUrl": "/assets/music/dark-antey/15-we-ll-never-meet-again.mp3",
+      "sha256": "530ff8fd8c302ba136b25ca7573ee0f106c1d06529ef70252d311de2f658473d"
     },
     {
       "id": "dark-antey-deep-russian-depression-01",
@@ -1054,9 +1099,9 @@
         "pageFooter": "all rights reserved",
         "commercialUseVerified": false
       },
-      "tempoBpm": null,
-      "reviewStatus": "official-author-CCBY4-grant-exists-but-provider-license-label-conflicts-and-audio-unavailable",
-      "audible": false,
+      "tempoBpm": 99.4,
+      "reviewStatus": "original-MP3-SHA256-verified-on-GitHub-feature-branch-not-public",
+      "audible": true,
       "licenseEvidence": {
         "evidenceType": "explicit artist-published album credits",
         "album": "Deep Russian Depression",
@@ -1069,7 +1114,11 @@
         "commercialUseGrantByAuthor": true
       },
       "downloadStatus": "cannot retrieve original full tracks via automated Bandcamp request; browser challenge and email/download flow",
-      "publishStatus": "hold-until-verified-full-audio-assets-and-license-clarity"
+      "publishStatus": "feature-branch-source-only; live playback/regional test pending",
+      "assignedPlaylist": "dinner",
+      "mediaUrl": "/assets/music/dark-antey/deep-russian-depression/02-где-я-спешил-взбираясь-к-небесам.mp3",
+      "sha256": "6f1172d27bd35b2454da489b1dfe808f1d74c4cece69efcd8f4e36b913d4357e",
+      "audioFilesUploadedToRepository": true
     },
     {
       "id": "dark-antey-deep-russian-depression-03",
@@ -1084,9 +1133,9 @@
         "pageFooter": "all rights reserved",
         "commercialUseVerified": false
       },
-      "tempoBpm": null,
-      "reviewStatus": "official-author-CCBY4-grant-exists-but-provider-license-label-conflicts-and-audio-unavailable",
-      "audible": false,
+      "tempoBpm": 60.1,
+      "reviewStatus": "original-MP3-SHA256-verified-on-GitHub-feature-branch-not-public",
+      "audible": true,
       "licenseEvidence": {
         "evidenceType": "explicit artist-published album credits",
         "album": "Deep Russian Depression",
@@ -1099,7 +1148,11 @@
         "commercialUseGrantByAuthor": true
       },
       "downloadStatus": "cannot retrieve original full tracks via automated Bandcamp request; browser challenge and email/download flow",
-      "publishStatus": "hold-until-verified-full-audio-assets-and-license-clarity"
+      "publishStatus": "feature-branch-source-only; live playback/regional test pending",
+      "assignedPlaylist": "after",
+      "mediaUrl": "/assets/music/dark-antey/deep-russian-depression/03-прогулка-по-ночному-небу.mp3",
+      "sha256": "fc16cb1ba05bd7beec9fbaa449df3a7002d84d6a53a576a67b4ecc5feae5a194",
+      "audioFilesUploadedToRepository": true
     },
     {
       "id": "dark-antey-deep-russian-depression-04",
@@ -1114,9 +1167,9 @@
         "pageFooter": "all rights reserved",
         "commercialUseVerified": false
       },
-      "tempoBpm": null,
-      "reviewStatus": "official-author-CCBY4-grant-exists-but-provider-license-label-conflicts-and-audio-unavailable",
-      "audible": false,
+      "tempoBpm": 80.7,
+      "reviewStatus": "original-MP3-SHA256-verified-on-GitHub-feature-branch-not-public",
+      "audible": true,
       "licenseEvidence": {
         "evidenceType": "explicit artist-published album credits",
         "album": "Deep Russian Depression",
@@ -1129,7 +1182,11 @@
         "commercialUseGrantByAuthor": true
       },
       "downloadStatus": "cannot retrieve original full tracks via automated Bandcamp request; browser challenge and email/download flow",
-      "publishStatus": "hold-until-verified-full-audio-assets-and-license-clarity"
+      "publishStatus": "feature-branch-source-only; live playback/regional test pending",
+      "assignedPlaylist": "dinner",
+      "mediaUrl": "/assets/music/dark-antey/deep-russian-depression/04-один-в-пустой-комнате.mp3",
+      "sha256": "4727df935e70a90b4db9e13ff92889d0f025a86271dc2eadd9afb923e441efd0",
+      "audioFilesUploadedToRepository": true
     },
     {
       "id": "dark-antey-deep-russian-depression-05",
@@ -1144,9 +1201,9 @@
         "pageFooter": "all rights reserved",
         "commercialUseVerified": false
       },
-      "tempoBpm": null,
-      "reviewStatus": "official-author-CCBY4-grant-exists-but-provider-license-label-conflicts-and-audio-unavailable",
-      "audible": false,
+      "tempoBpm": 89.1,
+      "reviewStatus": "original-MP3-SHA256-verified-on-GitHub-feature-branch-not-public",
+      "audible": true,
       "licenseEvidence": {
         "evidenceType": "explicit artist-published album credits",
         "album": "Deep Russian Depression",
@@ -1159,7 +1216,11 @@
         "commercialUseGrantByAuthor": true
       },
       "downloadStatus": "cannot retrieve original full tracks via automated Bandcamp request; browser challenge and email/download flow",
-      "publishStatus": "hold-until-verified-full-audio-assets-and-license-clarity"
+      "publishStatus": "feature-branch-source-only; live playback/regional test pending",
+      "assignedPlaylist": "dinner",
+      "mediaUrl": "/assets/music/dark-antey/deep-russian-depression/05-разбитые-воспоминания.mp3",
+      "sha256": "4aa85da5855ab23ff6b46a0a9630c29db8d8121e0f2884844ddfd4d46af32623",
+      "audioFilesUploadedToRepository": true
     },
     {
       "id": "dark-antey-deep-russian-depression-06",
@@ -1174,9 +1235,9 @@
         "pageFooter": "all rights reserved",
         "commercialUseVerified": false
       },
-      "tempoBpm": null,
-      "reviewStatus": "official-author-CCBY4-grant-exists-but-provider-license-label-conflicts-and-audio-unavailable",
-      "audible": false,
+      "tempoBpm": 61.5,
+      "reviewStatus": "original-MP3-SHA256-verified-on-GitHub-feature-branch-not-public",
+      "audible": true,
       "licenseEvidence": {
         "evidenceType": "explicit artist-published album credits",
         "album": "Deep Russian Depression",
@@ -1189,7 +1250,11 @@
         "commercialUseGrantByAuthor": true
       },
       "downloadStatus": "cannot retrieve original full tracks via automated Bandcamp request; browser challenge and email/download flow",
-      "publishStatus": "hold-until-verified-full-audio-assets-and-license-clarity"
+      "publishStatus": "feature-branch-source-only; live playback/regional test pending",
+      "assignedPlaylist": "after",
+      "mediaUrl": "/assets/music/dark-antey/deep-russian-depression/06-метафизический-сон-во-тьме.mp3",
+      "sha256": "3dd175ef53135b38a18436e8a836aa24f1609575aaf6e5fe5755ffe256d9baac",
+      "audioFilesUploadedToRepository": true
     },
     {
       "id": "dark-antey-deep-russian-depression-07",
@@ -1204,9 +1269,9 @@
         "pageFooter": "all rights reserved",
         "commercialUseVerified": false
       },
-      "tempoBpm": null,
-      "reviewStatus": "official-author-CCBY4-grant-exists-but-provider-license-label-conflicts-and-audio-unavailable",
-      "audible": false,
+      "tempoBpm": 69.8,
+      "reviewStatus": "original-MP3-SHA256-verified-on-GitHub-feature-branch-not-public",
+      "audible": true,
       "licenseEvidence": {
         "evidenceType": "explicit artist-published album credits",
         "album": "Deep Russian Depression",
@@ -1219,7 +1284,11 @@
         "commercialUseGrantByAuthor": true
       },
       "downloadStatus": "cannot retrieve original full tracks via automated Bandcamp request; browser challenge and email/download flow",
-      "publishStatus": "hold-until-verified-full-audio-assets-and-license-clarity"
+      "publishStatus": "feature-branch-source-only; live playback/regional test pending",
+      "assignedPlaylist": "after",
+      "mediaUrl": "/assets/music/dark-antey/deep-russian-depression/07-и-гнев-небесного-творца.mp3",
+      "sha256": "0d2705098642c07c6201f4138f72ce6ec803f5945f8338ab9ed6a7337028afdf",
+      "audioFilesUploadedToRepository": true
     },
     {
       "id": "dark-antey-deep-russian-depression-08",
@@ -1234,9 +1303,9 @@
         "pageFooter": "all rights reserved",
         "commercialUseVerified": false
       },
-      "tempoBpm": null,
-      "reviewStatus": "official-author-CCBY4-grant-exists-but-provider-license-label-conflicts-and-audio-unavailable",
-      "audible": false,
+      "tempoBpm": 89.1,
+      "reviewStatus": "original-MP3-SHA256-verified-on-GitHub-feature-branch-not-public",
+      "audible": true,
       "licenseEvidence": {
         "evidenceType": "explicit artist-published album credits",
         "album": "Deep Russian Depression",
@@ -1249,7 +1318,11 @@
         "commercialUseGrantByAuthor": true
       },
       "downloadStatus": "cannot retrieve original full tracks via automated Bandcamp request; browser challenge and email/download flow",
-      "publishStatus": "hold-until-verified-full-audio-assets-and-license-clarity"
+      "publishStatus": "feature-branch-source-only; live playback/regional test pending",
+      "assignedPlaylist": "dinner",
+      "mediaUrl": "/assets/music/dark-antey/deep-russian-depression/08-беспокойные-сны-instrumental.mp3",
+      "sha256": "76984166931dd6cdb6c417893d49e7b45208465a76be4480a1f2cae71b06d3ed",
+      "audioFilesUploadedToRepository": true
     },
     {
       "id": "dark-antey-deep-russian-depression-09",
@@ -1264,9 +1337,9 @@
         "pageFooter": "all rights reserved",
         "commercialUseVerified": false
       },
-      "tempoBpm": null,
-      "reviewStatus": "official-author-CCBY4-grant-exists-but-provider-license-label-conflicts-and-audio-unavailable",
-      "audible": false,
+      "tempoBpm": 60.1,
+      "reviewStatus": "original-MP3-SHA256-verified-on-GitHub-feature-branch-not-public",
+      "audible": true,
       "licenseEvidence": {
         "evidenceType": "explicit artist-published album credits",
         "album": "Deep Russian Depression",
@@ -1279,7 +1352,11 @@
         "commercialUseGrantByAuthor": true
       },
       "downloadStatus": "cannot retrieve original full tracks via automated Bandcamp request; browser challenge and email/download flow",
-      "publishStatus": "hold-until-verified-full-audio-assets-and-license-clarity"
+      "publishStatus": "feature-branch-source-only; live playback/regional test pending",
+      "assignedPlaylist": "after",
+      "mediaUrl": "/assets/music/dark-antey/deep-russian-depression/09-звездный-в-небе-невод.mp3",
+      "sha256": "c7006037da6b091083d7686386ef4093e42122a753e72af107f6a189c7d5abcd",
+      "audioFilesUploadedToRepository": true
     },
     {
       "id": "dark-antey-deep-russian-depression-10",
@@ -1324,9 +1401,9 @@
         "pageFooter": "all rights reserved",
         "commercialUseVerified": false
       },
-      "tempoBpm": null,
-      "reviewStatus": "official-author-CCBY4-grant-exists-but-provider-license-label-conflicts-and-audio-unavailable",
-      "audible": false,
+      "tempoBpm": 89.1,
+      "reviewStatus": "original-MP3-SHA256-verified-on-GitHub-feature-branch-not-public",
+      "audible": true,
       "licenseEvidence": {
         "evidenceType": "explicit artist-published album credits",
         "album": "Deep Russian Depression",
@@ -1339,7 +1416,11 @@
         "commercialUseGrantByAuthor": true
       },
       "downloadStatus": "cannot retrieve original full tracks via automated Bandcamp request; browser challenge and email/download flow",
-      "publishStatus": "hold-until-verified-full-audio-assets-and-license-clarity"
+      "publishStatus": "feature-branch-source-only; live playback/regional test pending",
+      "assignedPlaylist": "dinner",
+      "mediaUrl": "/assets/music/dark-antey/deep-russian-depression/11-беспокойные-сны.mp3",
+      "sha256": "7d485cc535a25907ae21d42cb5e3f16b70a08609de708fa30ce09626af3414d9",
+      "audioFilesUploadedToRepository": true
     }
   ],
   "auditRunUrl": "https://github.com/semen89852698936-create/snachala-uzhin/actions/runs/43191362554",
@@ -1363,8 +1444,8 @@
     },
     "authorPermissionStatementsVerified": 2,
     "uncontradictedLicenses": 0,
-    "fullAudioFilesObtained": 15,
-    "playableAdded": 0,
+    "fullAudioFilesObtained": 24,
+    "playableAdded": 24,
     "explicitAttribution": "Music by Dark Antey",
     "providerLabelConflict": true,
     "retrievalError": "Bandcamp challenge webpage on GitHub Action audio download; full release downloads require official download flow.",
@@ -1386,6 +1467,11 @@
       "after": 2
     },
     "reviewedAt": "2026-11-12",
-    "localHandoffFormat": "site package ZIP containing exact 15 MP3 and manifest with SHA-256 checksums"
+    "localHandoffFormat": "site package ZIP containing exact 15 MP3 and manifest with SHA-256 checksums",
+    "filesReceivedInChatUnique": 24,
+    "twoMissingTitles": [
+      "Deep Russian Depression",
+      "Deep Russian Depression (Instrumental)"
+    ]
   }
 }
