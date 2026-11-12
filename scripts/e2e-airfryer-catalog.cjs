@@ -26,7 +26,9 @@ assert.equal(filterRecipes([fixture('Свиной шницель','Мясо'),fi
    for(const entry of ['','full-catalog/']){
      await page.goto('http://127.0.0.1:8765/'+entry+'#airfryer',{waitUntil:'domcontentloaded'});
      const cards=page.locator('#airfryerCategoryGrid .category-card');
-     await cards.first().waitFor();
+     await cards.first().waitFor({state:'attached'});
+     if (viewport.width <= 760) assert.equal(await cards.first().isVisible(),true,'Mobile uses the eight readable paper cards');
+     else assert.equal(await page.locator('#airfryer .du-airfryer-approved-zone').first().isVisible(),true,'Desktop uses the approved newspaper category layout');
      assert.equal(await cards.count(),8,'Home shows eight large category links rather than 100 recipe cards');
      assert.equal(await page.locator('#airfryerGrid').count(),0,'Recipe grid only belongs to the dedicated page');
      const airPhotos=await cards.locator('img').evaluateAll(images=>images.map(img=>new URL(img.src).pathname));
