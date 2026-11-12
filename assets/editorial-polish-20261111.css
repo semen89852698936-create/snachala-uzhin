@@ -1456,3 +1456,34 @@ html body.du-evening-mode #evening .du-moods > button.du-mood.is-selected {
 #recipeDetail:has(> .du-airfryer-specs) .recipe-intro-copy > p {
   font-size:clamp(18.2px,1.391vw,22.1px)!important;
 }
+
+
+/* APPROVED_TENDER_ONLY_20261112
+   Exact user-approved artwork for the FIRST mood button only.
+   Keep existing click handlers, data-mood, element size, grid and hover animation.
+   No changes to music player or the other three mood buttons. */
+html body #evening .du-moods > button.du-mood[data-mood="tender"],
+html body.du-evening-mode #evening .du-moods > button.du-mood[data-mood="tender"] {
+  background-color:transparent!important;
+  background-image:url('/assets/evening-approved-20261112/evening-mood-tender.webp')!important;
+  background-size:contain!important;
+  background-position:center center!important;
+  background-repeat:no-repeat!important;
+  background-blend-mode:normal!important;
+  clip-path:none!important;
+  -webkit-mask-image:none!important;
+  mask-image:none!important;
+  box-shadow:none!important;
+}
+html body #evening .du-moods > button.du-mood[data-mood="tender"]::before,
+html body #evening .du-moods > button.du-mood[data-mood="tender"]::after,
+html body.du-evening-mode #evening .du-moods > button.du-mood[data-mood="tender"]::before,
+html body.du-evening-mode #evening .du-moods > button.du-mood[data-mood="tender"]::after {
+  content:none!important;
+  display:none!important;
+}
+html body #evening .du-moods > button.du-mood[data-mood="tender"] :is(.du-mood-num,.du-mood-icon,.du-mood-check,strong,small),
+html body.du-evening-mode #evening .du-moods > button.du-mood[data-mood="tender"] :is(.du-mood-num,.du-mood-icon,.du-mood-check,strong,small) {
+  opacity:0!important;
+  pointer-events:none!important;
+}
