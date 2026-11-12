@@ -1,0 +1,134 @@
+name: Restore one missing approved meat photo after interrupted CI
+on:
+  push:
+    branches:
+      - photo-production/owner-meat-64-20261113
+    paths:
+      - .github/workflows/recover-owner-meat-photo-52.yml
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: owner-meat-one-shot-recovery-n52
+  cancel-in-progress: false
+jobs:
+  one-charged-request:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: photo-production/owner-meat-64-20261113
+          persist-credentials: true
+      - uses: actions/checkout@v4
+        with:
+          repository: semen89852698936-create/snachala-uzhin
+          ref: photo-production/yandex-ai-art-1001
+          path: _photo_source
+          sparse-checkout: |
+            photo-pipeline
+            photo-library/recipes.json
+          sparse-checkout-cone-mode: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: python -m pip install --quiet 'Pillow>=10,<13'
+      - name: Explicitly archive prior lost paid response and reserve exactly one recovery request
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          python3 - <<'PY'
+          import json
+          from pathlib import Path
+          from datetime import datetime,timezone
+          root=Path('photo-library/regeneration-owner-meat-64-20261113')
+          path=root/'pending/0052-collection-meat-04-04.json'
+          if (root/'candidates/0052-collection-meat-04-04.webp').exists():
+              print('ALREADY_COMPLETE')
+              raise SystemExit(0)
+          archive=root/'audit/0052-previous-paid-result-lost.json'
+          if archive.exists():
+              raise RuntimeError('Recovery already reserved. Never pay twice automatically.')
+          old=json.loads(path.read_text(encoding='utf-8'))
+          assert old.get('status')=='paid_generation_completed_but_output_not_saved_after_protective_stop', old
+          archive.parent.mkdir(parents=True,exist_ok=True)
+          archive.write_text(json.dumps(old,ensure_ascii=False,indent=2),encoding='utf-8')
+          path.write_text(json.dumps({
+            'n':52, 'list_position':23,
+            'status':'single_new_recovery_request_reserved',
+            'reason':'Prior generated response lost on non-fast-forward push; paying once more to complete user-ordered 64 photo set',
+            'requested_at':datetime.now(timezone.utc).isoformat()
+          },ensure_ascii=False,indent=2),encoding='utf-8')
+          PY
+          git add photo-library/regeneration-owner-meat-64-20261113
+          git commit -m "Record lost paid result for meat n52; reserve one replacement call"
+          git push origin HEAD:photo-production/owner-meat-64-20261113
+      - name: Regenerate only meat n52 and save its real WebP
+        shell: bash
+        env:
+          YANDEX_API_KEY: ${{ secrets.YANDEX_API_KEY }}
+          YANDEX_FOLDER_ID: ${{ secrets.YANDEX_FOLDER_ID || 'b1g00u8p0k5nl98v8nre' }}
+          PHOTO_COST_APPROVED: 'true'
+        run: |
+          set -euo pipefail
+          python3 - <<'PY'
+          import importlib.util, os, json, hashlib
+          from pathlib import Path
+          from datetime import datetime, timezone
+          base=Path('photo-library/regeneration-owner-meat-64-20261113')
+          spec=importlib.util.spec_from_file_location('yandex','_photo_source/photo-pipeline/generate_yandexart.py')
+          ym=importlib.util.module_from_spec(spec);spec.loader.exec_module(ym)
+          n=52
+          filename='0052-collection-meat-04-04'
+          photo=base/'candidates'/f'{filename}.webp'
+          record=base/'records'/f'{filename}.json'
+          pending=base/'pending'/f'{filename}.json'
+          raw=base/'raw'/f'{filename}.png'
+          if photo.exists() or record.exists() or raw.exists():
+              raise RuntimeError('Candidate/raw already exists: do not start duplicate paid request')
+          marker=json.loads(pending.read_text(encoding='utf-8'))
+          assert marker['status']=='single_new_recovery_request_reserved'
+          assert os.getenv('PHOTO_COST_APPROVED')=='true'
+          key=os.environ['YANDEX_API_KEY']; folder=os.environ['YANDEX_FOLDER_ID']
+          prompt=('Фотореалистичная фуд-фотография готового блюда. '
+                  'В тарелке только небольшие тушёные КУСОЧКИ ГОВЯДИНЫ в аппетитном '
+                  'густом собственном мясном соке, равномерно приправленные тонкой '
+                  'красной молотой ПАПРИКОЙ и ОЧЕНЬ МЕЛКО рубленым чесноком '
+                  'в подливе. Нет видимых целых зубчиков, ломтиков сладкого перца, '
+                  'овощей, яиц, зелени, хлеба, гарниров, декора, текста. '
+                  'Мягкий тёплый свет, одна светлая тарелка, крупный план.')
+          assert len(prompt)<=500
+          payload=ym.request_image(prompt,key,folder)
+          ym.atomic_write(raw,payload)
+          webp=ym.encode_webp(payload)
+          h=hashlib.sha256(webp).hexdigest()
+          ym.atomic_write(photo,webp)
+          ym.atomic_write(record,json.dumps({
+            'n':n,'list_number':23,'recipe_id':'collection-meat-04-04',
+            'recipe_title':'Говядина, тушённая кусочками с паприкой и чесноком',
+            'prompt':prompt,'sha256':h,'bytes':len(webp),'size':[1200,900],
+            'model':'aliceai-image-art-3.0','status':'candidate_not_published',
+            'recovery_paid_request':True,'visual_inspection_required':True,
+            'generated_at':datetime.now(timezone.utc).isoformat()
+          },ensure_ascii=False,indent=2).encode())
+          pending.unlink()
+          raw.unlink()
+          print(f'RECOVERED 52 sha256={h}')
+          PY
+          git add -A photo-library/regeneration-owner-meat-64-20261113
+          git diff --cached --check
+          git commit -m "Recover 64th Alice AI ART candidate after prior lost paid response"
+          git push origin HEAD:photo-production/owner-meat-64-20261113
+      - name: Verify 64 candidate WebP files exist, still unpublished
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          root=Path('photo-library/regeneration-owner-meat-64-20261113')
+          a=list((root/'candidates').glob('*.webp'))
+          b=list((root/'records').glob('*.json'))
+          assert len(a)==len(b)==64,(len(a),len(b))
+          assert not list((root/'pending').glob('*.json'))
+          print('64 candidate images and 64 manifests; no site files changed')
+          PY
