@@ -3,7 +3,7 @@
   "collection_title": "10 новых блюд для двоих",
   "recipe_count": 10,
   "existing_main_catalog_count_unmodified": 1001,
-  "status": "editorial_draft_10_generated_photos_pending_visual_review",
+  "status": "editorial_draft_7_photos_revised_pending_visual_review",
   "source": "Новые блюда.docx (10 numbered recipes with 10 visual references, user uploaded 2026-11-13)",
   "photos_generator": "Alice AI ART; original rights-safe generated photographs",
   "integration_policy": {
@@ -397,17 +397,18 @@
       "tip": "Добавляй паприку на умеренном огне: на слишком горячей сковороде она может горчить.",
       "warn": "В исходной инструкции выпал момент добавления говядины до тушения: этап восстановлен по смыслу. Продолжительность зависит от жёсткости выбранного отруба.",
       "equipment": "Толстодонная кастрюля или глубокая сковорода",
-      "photo_brief": "Густой гуляш из говядины: крупные мягкие кусочки говядины, узнаваемые золотистые кубики картофеля, красный сладкий перец, оранжевая морковь, красновато-коричневый соус паприки. Белая глубокая керамическая тарелка, аппетитный тёплый свет. Не показывать сыр и сметану.",
+      "photo_brief": "НЕ суп! НЕТ бульона или жидкой подливы. Белая неглубокая миска, плотная горка крупных кубиков говядины и картофеля, кружочки моркови, красный перец. Паприка и густой соус лишь покрывают продукты тонким слоем. На дне нет лужи. Ракурс 45°, мягкий тёплый свет.",
       "source_photo_page": 4,
       "editorial_issue": "В предоставленной последовательности пропущена фраза о закладке говядины после лука; реконструкция отмечена.",
       "base": 2,
       "level": "Средне",
       "emoji": "🍽",
-      "photo_status": "generated_pending_visual_review",
+      "photo_status": "revised_generated_pending_visual_review",
       "photo_editorial_status": "pending_owner_visual_review",
       "publication_status": "editorial_draft",
-      "photo": "/assets/new-dishes/nd-beef-goulash-potatoes.webp",
-      "reference_policy": "Original DOCX image is a watermarked external-photo example; never publish the screenshot."
+      "photo": "/assets/new-dishes/review-v2/nd-beef-goulash-potatoes.webp",
+      "reference_policy": "Original DOCX image is a watermarked external-photo example; never publish the screenshot.",
+      "photo_revision": "source_fidelity_v2_20261113"
     },
     {
       "id": "nd-beef-stroganoff-classic",
@@ -525,16 +526,17 @@
       "tip": "Чтобы тонкие полоски говядины остались сочными, обжаривай их коротко и небольшими партиями.",
       "warn": "Содержит пшеничную муку и сметану. Картофельное пюре показано как вариант подачи, но не включено в ингредиенты самого бефстроганова.",
       "equipment": "Широкая сковорода с крышкой",
-      "photo_brief": "Бефстроганов из тонких полосок говядины в густом тёплом сметанно-томатном соусе поверх порции светлого картофельного пюре; сдержанная ресторанная сервировка, белая или глиняная тарелка, аккуратный мягкий боковой свет, без крупных листьев петрушки, если они не указаны в рецепте.",
+      "photo_brief": "Только ДЛИННЫЕ ТОНКИЕ ПОЛОСКИ говядины, не кубики, не стейк. Поверх горки картофельного пюре, густой тёмно-рыжий сметанно-томатный соус лишь обволакивает мясо. Никакой жидкости в тарелке. Яркая синяя плоская тарелка как в оригинальном примере, ракурс 45°.",
       "source_photo_page": 6,
       "base": 2,
       "level": "Средне",
       "emoji": "🍽",
-      "photo_status": "generated_pending_visual_review",
+      "photo_status": "revised_generated_pending_visual_review",
       "photo_editorial_status": "pending_owner_visual_review",
       "publication_status": "editorial_draft",
-      "photo": "/assets/new-dishes/nd-beef-stroganoff-classic.webp",
-      "reference_policy": "Original DOCX image is a watermarked external-photo example; never publish the screenshot."
+      "photo": "/assets/new-dishes/review-v2/nd-beef-stroganoff-classic.webp",
+      "reference_policy": "Original DOCX image is a watermarked external-photo example; never publish the screenshot.",
+      "photo_revision": "source_fidelity_v2_20261113"
     },
     {
       "id": "nd-beef-stroganoff-mushrooms",
@@ -628,16 +630,17 @@
       "tip": "Грибной сок содержит много вкуса. Не выливай его, он сделает сметанный соус более насыщенным.",
       "warn": "Содержит молочные продукты, пшеницу и горчицу. Быстрая схема лучше подходит для мягких отрубов говядины; жёсткому мясу потребуется более долгое тушение.",
       "equipment": "Две сковороды или сковорода и сотейник",
-      "photo_brief": "Полоски нежной говядины и хорошо узнаваемые ломтики шампиньонов в густом сливочно-сметанном соусе рядом с гладким картофельным пюре. Белая керамическая тарелка на светлом деревянном столе, тёплый фуд-фотографический свет. Без сыра и томатов.",
+      "photo_brief": "Тонкие ДЛИННЫЕ ПОЛОСКИ говядины и очень МЕЛКО НАРЕЗАННЫЕ ломтики шампиньонов. НЕТ половинок, целых или крупных четвертинок грибов. Густой бежевый сметанный соус плотно покрывает мясо, без лужи. Белая тарелка: воздушное картофельное пюре сзади, бефстроганов спереди.",
       "source_photo_page": 8,
       "base": 2,
       "level": "Средне",
       "emoji": "🍽",
-      "photo_status": "generated_pending_visual_review",
+      "photo_status": "revised_generated_pending_visual_review",
       "photo_editorial_status": "pending_owner_visual_review",
       "publication_status": "editorial_draft",
-      "photo": "/assets/new-dishes/nd-beef-stroganoff-mushrooms.webp",
-      "reference_policy": "Original DOCX image is a watermarked external-photo example; never publish the screenshot."
+      "photo": "/assets/new-dishes/review-v2/nd-beef-stroganoff-mushrooms.webp",
+      "reference_policy": "Original DOCX image is a watermarked external-photo example; never publish the screenshot.",
+      "photo_revision": "source_fidelity_v2_20261113"
     },
     {
       "id": "nd-beef-peppers-soy",
@@ -773,16 +776,17 @@
       "tip": "Не перегружай сковороду мясом: тонкие ломтики должны именно жариться, а не тушиться в собственном соке.",
       "warn": "Содержит сою и яйцо. Половину яйца удобнее отмерить, взбив целое яйцо в миске. Не оставляй мясо сырым в центре ломтиков.",
       "equipment": "Вок или широкая сковорода",
-      "photo_brief": "Говядина по-азиатски: отчётливо видны тонкие полоски поджаренной говядины, красные длинные полоски болгарского перца и тонкий лук, блестящий тёмный соевый соус, чуть мелко порубленной зелени. Белая глубокая квадратная миска, деревянный тёмный стол, палочки можно рядом, без имбиря или целого чеснока на еде.",
+      "photo_brief": "НЕ суп и НЕ тушение. СУХАЯ азиатская обжарка: полоски говядины, длинные красные полоски сладкого перца, чуть лука. Тёмный соевый соус лишь блестящей плёнкой покрывает мясо. НЕТ лужи соуса, воды, жидкости. Белая квадратная миска, тёмный стол, палочки рядом, как в образце.",
       "source_photo_page": 9,
       "base": 2,
       "level": "Средне",
       "emoji": "🍽",
-      "photo_status": "generated_pending_visual_review",
+      "photo_status": "revised_generated_pending_visual_review",
       "photo_editorial_status": "pending_owner_visual_review",
       "publication_status": "editorial_draft",
-      "photo": "/assets/new-dishes/nd-beef-peppers-soy.webp",
-      "reference_policy": "Original DOCX image is a watermarked external-photo example; never publish the screenshot."
+      "photo": "/assets/new-dishes/review-v2/nd-beef-peppers-soy.webp",
+      "reference_policy": "Original DOCX image is a watermarked external-photo example; never publish the screenshot.",
+      "photo_revision": "source_fidelity_v2_20261113"
     },
     {
       "id": "nd-beef-slow-onion",
@@ -888,16 +892,17 @@
       "tip": "Лук практически растворяется, превращаясь в густой сладковатый соус. Сильного кипения быть не должно.",
       "warn": "Содержит сливочное масло. Выбирай мясо для долгого тушения; время зависит от отруба.",
       "equipment": "Толстодонная кастрюля с плотно закрывающейся крышкой",
-      "photo_brief": "Крупные томлёные куски тёмно-коричневой говядины с распавшимся в густую подливку луком, аппетитные мясные волокна, традиционная керамическая тарелка на тёмной льняной ткани. Можно край лаваша рядом, не в соусе. Без моркови и картофеля внутри мяса.",
+      "photo_brief": "ЛУКА НЕ ВИДНО: он полностью растворился при долгом тушении. Крупные очень мягкие волокнистые куски тёмно-коричневой говядины покрыты единой густой коричневой мясо-луковой массой. НЕТ луковых колец, полосок или кусочков. Тёмное блюдо с лавашом по краю, как в оригинале, без свободного бульона.",
       "source_photo_page": 11,
       "base": 2,
       "level": "Средне",
       "emoji": "🍽",
-      "photo_status": "generated_pending_visual_review",
+      "photo_status": "revised_generated_pending_visual_review",
       "photo_editorial_status": "pending_owner_visual_review",
       "publication_status": "editorial_draft",
-      "photo": "/assets/new-dishes/nd-beef-slow-onion.webp",
-      "reference_policy": "Original DOCX image is a watermarked external-photo example; never publish the screenshot."
+      "photo": "/assets/new-dishes/review-v2/nd-beef-slow-onion.webp",
+      "reference_policy": "Original DOCX image is a watermarked external-photo example; never publish the screenshot.",
+      "photo_revision": "source_fidelity_v2_20261113"
     },
     {
       "id": "nd-pork-mushrooms-sourcream",
@@ -980,16 +985,17 @@
       "tip": "Сметанный соус не должен бурно кипеть, иначе его текстура может расслоиться.",
       "warn": "Содержит молочные продукты. Если свинина нарезана крупно, время тушения нужно увеличить до полной готовности.",
       "equipment": "Сковорода с крышкой",
-      "photo_brief": "Крупные четвертинки королевских шампиньонов и нежные кусочки свинины в обволакивающем бело-кремовом сметанном соусе, немного зелёного лука, глиняная коричневая миска на светлом полотне, реалистичная нежная фактура. Без дополнительных овощей или сыра.",
+      "photo_brief": "НЕ суп. Очень ГУСТОЕ цельное блюдо без жидкой подливы. Свинина нарезана небольшими КУБИКАМИ, не полосками и не длинными ломтями. Кусочки тёмных шампиньонов в густой белой сметане, которая обволакивает продукты. Терракотовая глубокая миска, немного рубленого зелёного лука.",
       "source_photo_page": 13,
       "base": 2,
       "level": "Средне",
       "emoji": "🍽",
-      "photo_status": "generated_pending_visual_review",
+      "photo_status": "revised_generated_pending_visual_review",
       "photo_editorial_status": "pending_owner_visual_review",
       "publication_status": "editorial_draft",
-      "photo": "/assets/new-dishes/nd-pork-mushrooms-sourcream.webp",
-      "reference_policy": "Original DOCX image is a watermarked external-photo example; never publish the screenshot."
+      "photo": "/assets/new-dishes/review-v2/nd-pork-mushrooms-sourcream.webp",
+      "reference_policy": "Original DOCX image is a watermarked external-photo example; never publish the screenshot.",
+      "photo_revision": "source_fidelity_v2_20261113"
     },
     {
       "id": "nd-pork-oven-shashlik",
@@ -1089,17 +1095,18 @@
       "tip": "Для этого варианта главный аромат создаёт именно маринованный лук под мясом. Рукав не должен касаться нагревательных элементов.",
       "warn": "В источнике нет количеств продуктов и точной температуры духовки; они восстановлены редакционно. Не используй максимальный нагрев без проверки допустимой температуры рукава. Маринуй мясо только в холодильнике.",
       "equipment": "Духовка, противень, рукав для запекания",
-      "photo_brief": "Шашлык из свинины, запечённый в духовке, подрумяненные неровные куски сочного мяса на мягком полупрозрачном маринованном луке, фарфоровое светлое блюдо, тёплый домашний вечерний свет. Без шампуров, углей, мангала, кетчупа и картофеля.",
+      "photo_brief": "КУСОЧКИ запечённой свинины ОБЩЕЙ КУЧКОЙ на большой белой тарелке; рядом и между ними мягкие золотистые луковые полоски. Мясо лежит свободной россыпью, НЕ нанизано. Категорически БЕЗ шпажек, шампуров, палочек, мангала, решётки, углей. Подрумяненная неровная поверхность мяса.",
       "source_photo_page": 14,
       "editorial_issue": "В источнике перечислены ингредиенты без количества; температура и режим духовки восстановлены с учётом безопасности рукава.",
       "base": 2,
       "level": "Средне",
       "emoji": "🍽",
-      "photo_status": "generated_pending_visual_review",
+      "photo_status": "revised_generated_pending_visual_review",
       "photo_editorial_status": "pending_owner_visual_review",
       "publication_status": "editorial_draft",
-      "photo": "/assets/new-dishes/nd-pork-oven-shashlik.webp",
-      "reference_policy": "Original DOCX image is a watermarked external-photo example; never publish the screenshot."
+      "photo": "/assets/new-dishes/review-v2/nd-pork-oven-shashlik.webp",
+      "reference_policy": "Original DOCX image is a watermarked external-photo example; never publish the screenshot.",
+      "photo_revision": "source_fidelity_v2_20261113"
     },
     {
       "id": "nd-chicken-mushroom-julienne",
@@ -1210,5 +1217,6 @@
       "photo": "/assets/new-dishes/nd-chicken-mushroom-julienne.webp",
       "reference_policy": "Original DOCX image is a watermarked external-photo example; never publish the screenshot."
     }
-  ]
+  ],
+  "photo_correction_batch": "new-dishes-source-fidelity-v2-20261113"
 }
