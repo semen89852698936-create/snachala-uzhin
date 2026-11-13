@@ -1,0 +1,30 @@
+{
+  "correction_batch": "new-dishes-source-fidelity-v4-20261113",
+  "source": "Новые блюда.docx",
+  "status": "two_revisions_required",
+  "output_directory": "assets/new-dishes/review-v4",
+  "recipe_count": 2,
+  "notes": "Visual QA v3 rejected only stroganoff-mushrooms (mushroom halves) and beef-onion (distinct onion rings). All other selected photos retained.",
+  "recipes": [
+    {
+      "id": "nd-beef-stroganoff-mushrooms",
+      "title": "Бефстроганов с грибами",
+      "prompt_title": "Говяжья соломка под густым кремом с грибной крошкой",
+      "source_photo_page": 8,
+      "photo_brief": "На белой плоской тарелке горка ДЛИННЫХ УЗКИХ готовых полосок говядины толщиной 5 мм. Мясо покрыто ГУСТЫМ сметанным кремом. В креме лишь МЕЛКАЯ ТЁМНАЯ ГРИБНАЯ КРОШКА 1–2 мм, как мелкие вкрапления. Ни одного целого гриба, шляпки, пластинки размером более 3 мм, никаких половинок шампиньонов. Пюре небольшой горкой на заднем плане. Нет жидкого соуса.",
+      "photo": "/assets/new-dishes/review-v4/nd-beef-stroganoff-mushrooms.webp",
+      "photo_status": "not_started",
+      "owner_visual_review": "pending"
+    },
+    {
+      "id": "nd-beef-slow-onion",
+      "title": "Тушёная говядина с луком",
+      "prompt_title": "Тёмная нежная говядина с густой однородной глазурью",
+      "source_photo_page": 11,
+      "photo_brief": "Крупные, уже мягкие и распадающиеся на волокна коричневые куски мяса, соединённые плотной тёмной карамельной массой в ЕДИНОЕ ЦЕЛОЕ. Однородная поверхность густого тёмного мясного соуса, никаких отдельных овощей и полосок среди мяса. НИКАКИХ КОЛЕЦ, ломтиков или полукругов рядом. Тарелка с лавашом по краю, густая еда, без лужи жидкости. По форме очень близко к старинному тушёному мясу.",
+      "photo": "/assets/new-dishes/review-v4/nd-beef-slow-onion.webp",
+      "photo_status": "not_started",
+      "owner_visual_review": "pending"
+    }
+  ]
+}
