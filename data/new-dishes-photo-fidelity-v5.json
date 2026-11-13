@@ -1,0 +1,19 @@
+{
+  "correction_batch": "new-dishes-source-fidelity-v5-20261113",
+  "source": "Новые блюда.docx",
+  "status": "one_photo_still_rejected",
+  "output_directory": "assets/new-dishes/review-v5",
+  "recipe_count": 1,
+  "recipes": [
+    {
+      "id": "nd-beef-stroganoff-mushrooms",
+      "title": "Бефстроганов с грибами",
+      "prompt_title": "Готовая тонкая говяжья соломка под густым бежевым кремом",
+      "source_photo_page": 8,
+      "photo_brief": "Белая тарелка. МНОГО ДЛИННЫХ И ТОНКИХ ПОЛОСОК полностью готовой КОРИЧНЕВОЙ говядины, ширина 4 мм. Вся мясная соломка смешана с густым кремовым бежевым покрытием с МЕЛЬЧАЙШИМИ тёмно-коричневыми крупинками размером 1 мм. НЕТ ни одного отдельного крупного компонента между полосками, никаких шляпок, половинок или ломтиков. На заднем плане гладкое пюре. Нет жидкого соуса и розового мяса.",
+      "photo": "/assets/new-dishes/review-v5/nd-beef-stroganoff-mushrooms.webp",
+      "photo_status": "not_started",
+      "owner_visual_review": "pending"
+    }
+  ]
+}
