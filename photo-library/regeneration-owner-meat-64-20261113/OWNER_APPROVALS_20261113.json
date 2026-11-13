@@ -4,10 +4,14 @@
   "owner_decision_date": "2026-11-13",
   "user_reply_source": "In-chat exported decisions from /photo-review-all-remaining.html",
   "total": 68,
-  "approved_count": 12,
-  "rejected_count": 56,
+  "approved_count": 16,
+  "rejected_count": 52,
   "not_marked_count": 0,
   "approved_list_numbers": [
+    1,
+    2,
+    3,
+    4,
     6,
     7,
     11,
@@ -22,10 +26,6 @@
     67
   ],
   "rejected_list_numbers": [
-    1,
-    2,
-    3,
-    4,
     5,
     8,
     9,
@@ -88,56 +88,72 @@
       "recipe_photo_n": 3,
       "recipe_id": "pepper-steak",
       "title": "Стейк с чесночным маслом",
-      "owner_decision": "rejected",
+      "owner_decision": "approved",
       "image_shown": "/assets/recipes-ai/0003-pepper-steak.webp",
       "image_blob_sha": "2b1046454194310fdf3b2f6ea749923c4c3c9a3b",
       "image_bytes": 158896,
       "original_qa": "first_four_unverified",
       "original_qa_note": null,
       "correction_detail": null,
-      "source_warning": null
+      "source_warning": null,
+      "owner_approved_original_png_file_id": "file_00000000111081f4bea47a85651e9ef6",
+      "owner_approved_original_png_sha256": "e29a0e2ba89bc3620be67f6ac86af19e6457ef8851bf949bfc78dad6a7e646ac",
+      "staged_webp_target": "assets/recipes-ai/0003-pepper-steak.webp",
+      "site_published": false
     },
     {
       "list_number": 2,
       "recipe_photo_n": 4,
       "recipe_id": "meatballs",
       "title": "Стейк с чесноком",
-      "owner_decision": "rejected",
+      "owner_decision": "approved",
       "image_shown": "/assets/recipes-ai/0004-meatballs.webp",
       "image_blob_sha": "8d14cd408e25ddfd049a9240cc8c3641265b163d",
       "image_bytes": 97728,
       "original_qa": "first_four_unverified",
       "original_qa_note": null,
       "correction_detail": null,
-      "source_warning": "Number 2 'Steak with garlic' appears to refer to a different dish than mapped recipe n=4 'Meatballs in tomato sauce'; do not overwrite either without reconciling correct original."
+      "source_warning": "The approved originals remain in ChatGPT Library and have not yet been copied into GitHub. Do not report published until WebP bytes exist in Git tree and Vercel READY. #2 is Steak with Garlic, but existing recipe photo n4 is Meatballs in Tomato Sauce. Never overwrite the meatball photo with a steak.",
+      "owner_approved_original_png_file_id": "file_0000000022d08210a0c82343ad99ba0c",
+      "owner_approved_original_png_sha256": "767a0a325553c2a860d66db8bd0184a67ba394989e630d80e07ea31768a7966f",
+      "staged_webp_target": "assets/recipes-ai/owner-approved-02-steak-with-garlic.webp",
+      "site_published": false
     },
     {
       "list_number": 3,
       "recipe_photo_n": 22,
       "recipe_id": "collection-meat-01-04",
       "title": "Говяжьи медальоны с паприкой и чесноком",
-      "owner_decision": "rejected",
+      "owner_decision": "approved",
       "image_shown": "/assets/recipes-ai/0022-collection-meat-01-04-regen.webp",
       "image_blob_sha": "e394beb9fe367635b124c9e7a6d58e5430d1e040",
       "image_bytes": 75686,
       "original_qa": "first_four_unverified",
       "original_qa_note": null,
       "correction_detail": null,
-      "source_warning": null
+      "source_warning": null,
+      "owner_approved_original_png_file_id": "file_0000000057ac81f49c311ab6b130a831",
+      "owner_approved_original_png_sha256": "760c14ee00b32b0caae3ae951cb54c91d3e3cffdefeb1b4cfb1f8462347d656a",
+      "staged_webp_target": "assets/recipes-ai/0022-collection-meat-01-04-regen.webp",
+      "site_published": false
     },
     {
       "list_number": 4,
       "recipe_photo_n": 23,
       "recipe_id": "collection-meat-01-05",
       "title": "Говяжьи медальоны с томатами и базиликом",
-      "owner_decision": "rejected",
+      "owner_decision": "approved",
       "image_shown": "/assets/recipes-ai/0023-collection-meat-01-05-regen.webp",
       "image_blob_sha": "7a3d3a76d7cfea8841e6b2f9ca3d18aab826ac74",
       "image_bytes": 126888,
       "original_qa": "first_four_unverified",
       "original_qa_note": null,
       "correction_detail": null,
-      "source_warning": null
+      "source_warning": null,
+      "owner_approved_original_png_file_id": "file_0000000003fc81f4bad2eed6902aab22",
+      "owner_approved_original_png_sha256": "7b4440f9cf0c8918452b4723e6692196cfc645de2354a231ed2dc463f0da8eba",
+      "staged_webp_target": "assets/recipes-ai/0023-collection-meat-01-05-regen.webp",
+      "site_published": false
     },
     {
       "list_number": 5,
@@ -1036,5 +1052,51 @@
       "source_warning": null
     }
   ],
-  "notes": "User YES overrides earlier internal QA; user NO requires correction. Do not recreate an approved photo. All 12 user-approved image versions are represented in photo-release, including seven images already copied in previous step."
+  "notes": "User YES overrides earlier internal QA; user NO requires correction. Do not recreate an approved photo. All 12 user-approved image versions are represented in photo-release, including seven images already copied in previous step.",
+  "first_four_user_approval_source": "User explicitly approved all four original ChatGPT images after seeing file contact sheet.",
+  "first_four_upload_sources": [
+    {
+      "number": 1,
+      "n": 3,
+      "title": "Стейк с чесночным маслом",
+      "source_file_id": "file_00000000111081f4bea47a85651e9ef6",
+      "source_name": "Сочный стейк с травами и перцем.png",
+      "source_sha256": "e29a0e2ba89bc3620be67f6ac86af19e6457ef8851bf949bfc78dad6a7e646ac",
+      "target": "assets/recipes-ai/0003-pepper-steak.webp",
+      "webp_sha256": "d8afd8c0bf1d"
+    },
+    {
+      "number": 2,
+      "n": null,
+      "title": "Стейк с чесноком",
+      "source_file_id": "file_0000000022d08210a0c82343ad99ba0c",
+      "source_name": "Сочный стейк с румяной корочкой.png",
+      "source_sha256": "767a0a325553c2a860d66db8bd0184a67ba394989e630d80e07ea31768a7966f",
+      "target": "assets/recipes-ai/owner-approved-02-steak-with-garlic.webp",
+      "webp_sha256": "c5f81442e26e"
+    },
+    {
+      "number": 3,
+      "n": 22,
+      "title": "Говяжьи медальоны с паприкой и чесноком",
+      "source_file_id": "file_0000000057ac81f49c311ab6b130a831",
+      "source_name": "Пряные медальоны из говядины.png",
+      "source_sha256": "760c14ee00b32b0caae3ae951cb54c91d3e3cffdefeb1b4cfb1f8462347d656a",
+      "target": "assets/recipes-ai/0022-collection-meat-01-04-regen.webp",
+      "webp_sha256": "678c716dbf9b"
+    },
+    {
+      "number": 4,
+      "n": 23,
+      "title": "Говяжьи медальоны с томатами и базиликом",
+      "source_file_id": "file_0000000003fc81f4bad2eed6902aab22",
+      "source_name": "Стейк-медальоны с томатами и базиликом.png",
+      "source_sha256": "7b4440f9cf0c8918452b4723e6692196cfc645de2354a231ed2dc463f0da8eba",
+      "target": "assets/recipes-ai/0023-collection-meat-01-05-regen.webp",
+      "webp_sha256": "fb9b7a748754"
+    }
+  ],
+  "published_in_photo_release": 12,
+  "awaiting_binary_import": 4,
+  "warning_first_four": "The approved originals remain in ChatGPT Library and have not yet been copied into GitHub. Do not report published until WebP bytes exist in Git tree and Vercel READY. #2 is Steak with Garlic, but existing recipe photo n4 is Meatballs in Tomato Sauce. Never overwrite the meatball photo with a steak."
 }
