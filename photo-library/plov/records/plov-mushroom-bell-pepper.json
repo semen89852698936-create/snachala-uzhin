@@ -1,7 +1,10 @@
 {
   "id": "plov-mushroom-bell-pepper",
-  "status": "prepared_not_sent",
-  "created_at": "2026-11-13T18:12:03+00:00",
+  "file": "assets/plov/plov-mushroom-bell-pepper.webp",
+  "sha256": "530a994d54a0d2b4167025c84130b48c0f45e226d5d1003d57a064659c31abae",
+  "generator": "aliceai-image-art-3.0",
   "prompt": "Премиальная фотореалистичная фуд-фотография готового блюда. Точное блюдо: Плов с грибами и сладким перцем. Детали: Аппетитный грибной плов без мяса: сочные жареные шампиньоны, жёлтый и красный перец, золотой рассыпчатый рис с пряностями, чёрная глубокая тарелка, тёплый вечерний свет. Никакого целого чеснока.. Подача на двоих, натуральная текстура, мягкий тёплый свет. Без людей, рук, букв, логотипов и коллажей.",
-  "never_retry_automatically": true
+  "reference": "ПЛОВ.docx, photo 5, page 5",
+  "visual_review_status": "pending_owner_visual_review",
+  "generated_at": "2026-11-13T18:12:08+00:00"
 }
