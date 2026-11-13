@@ -66,14 +66,14 @@ jobs:
               exit 1
             fi
             python3 scripts/regenerate-owner-corrections-wave3.py --mode reserve --n "$n"
-            git add -A photo-library/regeneration-owner-meat-64-20261113/revision2/
+            git add -A photo-library/regeneration-owner-meat-64-20261113/revision3/
             git commit -m "Reserve one paid photo correction n=$n before API call"
             git push origin HEAD:refs/heads/photo-production/owner-meat-64-20261113
             set +e
             python3 scripts/regenerate-owner-corrections-wave3.py --mode execute --n "$n"
             result=$?
             set -e
-            git add -A photo-library/regeneration-owner-meat-64-20261113/revision2/
+            git add -A photo-library/regeneration-owner-meat-64-20261113/revision3/
             if ! git diff --cached --quiet; then
               git diff --cached --check
               git commit -m "Store photo correction n=$n for visual QA; not published"
