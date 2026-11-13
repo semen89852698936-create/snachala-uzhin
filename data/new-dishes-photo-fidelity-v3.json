@@ -1,0 +1,70 @@
+{
+  "correction_batch": "new-dishes-source-fidelity-v3-20261113",
+  "source": "Новые блюда.docx",
+  "notes": "v2 visual check rejected six for visible pools of sauce, thick beef cuts, mushroom halves, onion rings, pork soup. v2 shashlik retained.",
+  "status": "six_revisions_required",
+  "output_directory": "assets/new-dishes/review-v3",
+  "recipe_count": 6,
+  "recipes": [
+    {
+      "id": "nd-beef-goulash-potatoes",
+      "title": "Гуляш из говядины с картофелем",
+      "prompt_title": "Жареные кубики мяса с картофелем и морковью",
+      "source_photo_page": 4,
+      "photo_brief": "ВТОРОЕ БЛЮДО НА ПЛОСКОЙ ТАРЕЛКЕ. Сухая горка крупных плотных кубиков коричневой говядины и жёлтого картофеля, оранжевые кружочки моркови и красный сладкий перец. Тёплый оттенок паприки. Все ингредиенты обжарены и покрыты тонкой корочкой, НЕ плавают. Дно тарелки сухое, без свободного соуса, воды, бульона. Еда занимает всю тарелку.",
+      "photo": "/assets/new-dishes/review-v3/nd-beef-goulash-potatoes.webp",
+      "photo_status": "not_started",
+      "owner_visual_review": "pending"
+    },
+    {
+      "id": "nd-beef-stroganoff-classic",
+      "title": "Бефстроганов из говядины",
+      "prompt_title": "Тонкая соломка из говядины на картофельном пюре",
+      "source_photo_page": 6,
+      "photo_brief": "МНОГО ОЧЕНЬ ДЛИННЫХ УЗКИХ ПОЛОСОК говядины, соломка как толстая лапша, ширина 4–5 мм, длина 7–9 см. Десятки мясных лент уложены плотной горкой поверх картофельного пюре. Тёмная сметанно-томатная глазурь налипла на полоски, без лужи. Плоская ярко-синяя тарелка. НЕ куски, НЕ кубики, НЕ стейки.",
+      "photo": "/assets/new-dishes/review-v3/nd-beef-stroganoff-classic.webp",
+      "photo_status": "not_started",
+      "owner_visual_review": "pending"
+    },
+    {
+      "id": "nd-beef-stroganoff-mushrooms",
+      "title": "Бефстроганов с грибами",
+      "prompt_title": "Тонкие полоски мяса с грибной стружкой на пюре",
+      "source_photo_page": 8,
+      "photo_brief": "Говядина нарезана ДЛИННОЙ ТОНКОЙ СОЛОМКОЙ 5 мм, шампиньоны нашинкованы ОЧЕНЬ МЕЛКО в тонкие пластинки 2 мм. Грибы перемешаны с длинными мясными полосками в густом бежевом сливочном креме, плотно прилегающем к еде. Никаких больших грибных шляпок, половинок и четвертинок! Белая плоская тарелка, пюре позади, без жидкого соуса.",
+      "photo": "/assets/new-dishes/review-v3/nd-beef-stroganoff-mushrooms.webp",
+      "photo_status": "not_started",
+      "owner_visual_review": "pending"
+    },
+    {
+      "id": "nd-beef-peppers-soy",
+      "title": "Говядина с болгарским перцем и соевым соусом",
+      "prompt_title": "Сухая обжарка полосок говядины с красным перцем",
+      "source_photo_page": 9,
+      "photo_brief": "СУХОЙ СТИР-ФРАЙ на плоской белой квадратной тарелке. Говядина тонкими жареными полосками, ярко-красный болгарский перец длинными ломтиками, немного лука. У мяса коричневая карамелизованная корочка, чуть блестит от соевой глазури. НИКАКОЙ СВОБОДНОЙ ЖИДКОСТИ, никакого соуса на дне, никаких луж. Мясо уложено горкой, вокруг чистая сухая тарелка.",
+      "photo": "/assets/new-dishes/review-v3/nd-beef-peppers-soy.webp",
+      "photo_status": "not_started",
+      "owner_visual_review": "pending"
+    },
+    {
+      "id": "nd-beef-slow-onion",
+      "title": "Тушёная говядина с луком",
+      "prompt_title": "Долго томлёная тёмно-коричневая говядина",
+      "source_photo_page": 11,
+      "photo_brief": "Крупные невероятно мягкие темно-коричневые куски говядины с видимыми мясными волокнами, полностью покрыты однородной густой коричневой карамельной массой. НЕТ ни одного видимого кусочка овоща! Луковые волокна полностью растворились, визуально невозможно различить лук. Слепленная в единое целое горка мяса в тёмной тарелке на краю лаваша, сухая поверхность без жидкого бульона.",
+      "photo": "/assets/new-dishes/review-v3/nd-beef-slow-onion.webp",
+      "photo_status": "not_started",
+      "owner_visual_review": "pending"
+    },
+    {
+      "id": "nd-pork-mushrooms-sourcream",
+      "title": "Свинина с грибами в сметанном соусе",
+      "prompt_title": "Обжаренные кубики свинины с шампиньонами и густой сметанной глазурью",
+      "source_photo_page": 13,
+      "photo_brief": "СУХОЕ ГУСТОЕ ВТОРОЕ БЛЮДО. Много небольших ровных обжаренных КУБИКОВ свинины 2 см, между ними кусочки коричневых шампиньонов. Очень густой белый сметанный крем тонким слоем прилипает к кубикам, отчётливо видны их отдельные грани. НЕ залито сливками и не плавает! Никакой свободной жидкости. Терракотовая неглубокая миска, чуть зелёного лука.",
+      "photo": "/assets/new-dishes/review-v3/nd-pork-mushrooms-sourcream.webp",
+      "photo_status": "not_started",
+      "owner_visual_review": "pending"
+    }
+  ]
+}
