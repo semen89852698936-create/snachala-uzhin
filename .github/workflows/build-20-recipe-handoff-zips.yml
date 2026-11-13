@@ -4,6 +4,7 @@ on:
     branches: ['handoff/20-recipe-photo-pairs-20261114']
     paths:
       - '.github/workflows/build-20-recipe-handoff-zips.yml'
+      - 'scripts/build_recipe_handoff_archives.py'
 permissions:
   contents: write
 concurrency:
@@ -28,10 +29,7 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
-          sha256sum -c handoff/2026-11-14/SHA256SUMS.txt --ignore-missing --status || {
-            cd handoff/2026-11-14
-            sha256sum -c SHA256SUMS.txt
-          }
+          (cd handoff/2026-11-14 && sha256sum -c SHA256SUMS.txt)
           ls -lh handoff/2026-11-14/*.zip
       - name: Commit ZIP exports to the isolated handoff branch only
         shell: bash
