@@ -8,10 +8,15 @@ const data=JSON.parse(fs.readFileSync(path.join(root,'data/plov-ten-editorial.js
 assert.equal(data.recipe_count,10);
 assert.equal(data.existing_main_catalog_count_unmodified,1001);
 assert.equal(data.recipes.length,10);
+assert.equal(data.integration_policy.target_category,'meat');
+assert.equal(data.integration_policy.replace_existing_count,10);
+assert.equal(data.integration_policy.add_new_count,10);
+assert.equal(data.integration_policy.total_catalog_count_after,1001);
 assert.equal(new Set(data.recipes.map(r=>r.id)).size,10);
 for(let n=0;n<data.recipes.length;n++){
  const r=data.recipes[n];
  assert.equal(r.base,2,r.id+' must be for two people');
+ assert.equal(r.category,'meat',r.id+' must target Meat category');
  assert.ok(r.title&&r.description&&r.photo_brief,r.id+' needs copy and unique photo brief');
  assert.ok(Number.isInteger(r.minutes)&&r.minutes>=35&&r.minutes<=130,r.id+' invalid total duration');
  assert.ok(r.ingredients.length>=7,r.id+' incomplete ingredients');
