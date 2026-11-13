@@ -1,0 +1,29 @@
+{
+  "archive": "20-recipe-photo-pairs-2026-11-14",
+  "content_includes": "each pair contains separate photo.webp and recipe.md",
+  "catalog_modified": false,
+  "source_branch": "handoff/20-recipe-photo-pairs-20261114",
+  "archives": [
+    {
+      "file": "handoff/2026-11-14/PLOV_10_PHOTOS_10_RECIPES.zip",
+      "sha256": "2c39ec46f0e360dc0b31320ef96b66c6cef459e4b15285443e6b23959d806f1b",
+      "size": 1613157,
+      "photos": 10,
+      "recipes": 10
+    },
+    {
+      "file": "handoff/2026-11-14/NEW_DISHES_10_PHOTOS_10_RECIPES.zip",
+      "sha256": "fc45b1a6bb0e497607ec8f3adc83b2c6ef7dde1877a5c0eadddae0bde8d9bda5",
+      "size": 1091547,
+      "photos": 10,
+      "recipes": 10
+    },
+    {
+      "file": "handoff/2026-11-14/ALL_20_PAIRS.zip",
+      "sha256": "bfbfa66d0cf19797f45dbf56d8c00d8a88e4ceb73ba45717a6ed17784b3c45d6",
+      "size": 2698444,
+      "photos": 20,
+      "recipes": 20
+    }
+  ]
+}
