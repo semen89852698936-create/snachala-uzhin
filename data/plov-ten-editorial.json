@@ -3,7 +3,7 @@
   "collection_title": "10 рецептов плова для двоих",
   "recipe_count": 10,
   "existing_main_catalog_count_unmodified": 1001,
-  "status": "editorial_draft_pending_10_generated_photos_and_visual_review",
+  "status": "editorial_draft_10_generated_photos_pending_visual_review",
   "source": "ПЛОВ.docx (10 numbered recipes and reference screenshots, provided 2026-11-13)",
   "photos_generator": "Alice AI ART; generate new licensed assets, do not use source screenshots",
   "recipes": [
@@ -106,7 +106,7 @@
       "level": "Средне",
       "emoji": "🍚",
       "publication_status": "editorial_draft",
-      "photo_status": "not_started",
+      "photo_status": "generated_pending_visual_review",
       "photo_editorial_status": "pending_owner_visual_review",
       "photo": "/assets/plov/plov-shadi-bek-quince.webp",
       "reference_policy": "Source screenshot is a visual reference only. Do not publish or reproduce screenshot."
@@ -204,7 +204,7 @@
       "level": "Средне",
       "emoji": "🍚",
       "publication_status": "editorial_draft",
-      "photo_status": "not_started",
+      "photo_status": "generated_pending_visual_review",
       "photo_editorial_status": "pending_owner_visual_review",
       "photo": "/assets/plov/plov-uzbek-classic.webp",
       "reference_policy": "Source screenshot is a visual reference only. Do not publish or reproduce screenshot."
@@ -344,7 +344,7 @@
       "level": "Средне",
       "emoji": "🍚",
       "publication_status": "editorial_draft",
-      "photo_status": "not_started",
+      "photo_status": "generated_pending_visual_review",
       "photo_editorial_status": "pending_owner_visual_review",
       "photo": "/assets/plov/plov-clever-pork-mushrooms.webp",
       "reference_policy": "Source screenshot is a visual reference only. Do not publish or reproduce screenshot."
@@ -454,7 +454,7 @@
       "level": "Средне",
       "emoji": "🍚",
       "publication_status": "editorial_draft",
-      "photo_status": "not_started",
+      "photo_status": "generated_pending_visual_review",
       "photo_editorial_status": "pending_owner_visual_review",
       "photo": "/assets/plov/plov-ugro-tajik.webp",
       "reference_policy": "Source screenshot is a visual reference only. Do not publish or reproduce screenshot."
@@ -588,7 +588,7 @@
       "base": 2,
       "emoji": "🍚",
       "publication_status": "editorial_draft",
-      "photo_status": "not_started",
+      "photo_status": "generated_pending_visual_review",
       "photo_editorial_status": "pending_owner_visual_review",
       "photo": "/assets/plov/plov-mushroom-bell-pepper.webp",
       "reference_policy": "Source screenshot is a visual reference only. Do not publish or reproduce screenshot."
@@ -709,7 +709,7 @@
       "level": "Средне",
       "emoji": "🍚",
       "publication_status": "editorial_draft",
-      "photo_status": "not_started",
+      "photo_status": "generated_pending_visual_review",
       "photo_editorial_status": "pending_owner_visual_review",
       "photo": "/assets/plov/plov-pork-skillet.webp",
       "reference_policy": "Source screenshot is a visual reference only. Do not publish or reproduce screenshot."
@@ -819,7 +819,7 @@
       "level": "Средне",
       "emoji": "🍚",
       "publication_status": "editorial_draft",
-      "photo_status": "not_started",
+      "photo_status": "generated_pending_visual_review",
       "photo_editorial_status": "pending_owner_visual_review",
       "photo": "/assets/plov/plov-lamb-barberry.webp",
       "reference_policy": "Source screenshot is a visual reference only. Do not publish or reproduce screenshot."
@@ -928,7 +928,7 @@
       "level": "Средне",
       "emoji": "🍚",
       "publication_status": "editorial_draft",
-      "photo_status": "not_started",
+      "photo_status": "generated_pending_visual_review",
       "photo_editorial_status": "pending_owner_visual_review",
       "photo": "/assets/plov/plov-beef-rustic.webp",
       "reference_policy": "Source screenshot is a visual reference only. Do not publish or reproduce screenshot."
@@ -1050,7 +1050,7 @@
       "level": "Средне",
       "emoji": "🍚",
       "publication_status": "editorial_draft",
-      "photo_status": "not_started",
+      "photo_status": "generated_pending_visual_review",
       "photo_editorial_status": "pending_owner_visual_review",
       "photo": "/assets/plov/plov-cumin-barberry.webp",
       "reference_policy": "Source screenshot is a visual reference only. Do not publish or reproduce screenshot."
@@ -1195,7 +1195,7 @@
       "level": "Средне",
       "emoji": "🍚",
       "publication_status": "editorial_draft",
-      "photo_status": "not_started",
+      "photo_status": "generated_pending_visual_review",
       "photo_editorial_status": "pending_owner_visual_review",
       "photo": "/assets/plov/plov-chicken-prunes.webp",
       "reference_policy": "Source screenshot is a visual reference only. Do not publish or reproduce screenshot."
