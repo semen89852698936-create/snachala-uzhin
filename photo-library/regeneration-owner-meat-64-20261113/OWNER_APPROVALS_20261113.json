@@ -137,8 +137,8 @@
       "owner_approved_original_png_file_id": "file_0000000057ac81f49c311ab6b130a831",
       "owner_approved_original_png_sha256": "760c14ee00b32b0caae3ae951cb54c91d3e3cffdefeb1b4cfb1f8462347d656a",
       "staged_webp_target": "assets/recipes-ai/0022-collection-meat-01-04-regen.webp",
-      "site_published": false,
-      "publication_decision": "UPLOAD_TO_APPROVED_PHOTO_RELEASE"
+      "site_published": true,
+      "publication_decision": "PUBLISHED_IN_PHOTO_RELEASE"
     },
     {
       "list_number": 4,
@@ -156,8 +156,8 @@
       "owner_approved_original_png_file_id": "file_0000000003fc81f4bad2eed6902aab22",
       "owner_approved_original_png_sha256": "7b4440f9cf0c8918452b4723e6692196cfc645de2354a231ed2dc463f0da8eba",
       "staged_webp_target": "assets/recipes-ai/0023-collection-meat-01-05-regen.webp",
-      "site_published": false,
-      "publication_decision": "UPLOAD_TO_APPROVED_PHOTO_RELEASE"
+      "site_published": true,
+      "publication_decision": "PUBLISHED_IN_PHOTO_RELEASE"
     },
     {
       "list_number": 5,
@@ -1100,20 +1100,18 @@
       "webp_sha256": "fb9b7a748754"
     }
   ],
-  "published_in_photo_release": 12,
-  "awaiting_binary_import": 3,
+  "published_in_photo_release": 14,
+  "awaiting_binary_import": 0,
   "warning_first_four": "The approved originals remain in ChatGPT Library and have not yet been copied into GitHub. Do not report published until WebP bytes exist in Git tree and Vercel READY. #2 is Steak with Garlic, but existing recipe photo n4 is Meatballs in Tomato Sauce. Never overwrite the meatball photo with a steak.",
-  "owner_upload_instruction": "2026-11-13: Upload first-four photo #1, #3 and #4. Do NOT upload #2.",
+  "owner_upload_instruction": "Final owner instruction: use original ChatGPT photograph #2 as visual source to replace #1 Steak with Garlic Butter ONLY after requested precise edit (glossy butter coating and one green herb sprig; same steak and plate, no butter pat or new side dishes). Do not publish an unedited #2 photo or change n=4 Meatballs. Photos #3 and #4 are already approved and have been published.",
   "excluded_from_upload": [
     2
   ],
   "approved_awaiting_publish": [
-    1,
-    3,
-    4
+    1
   ],
   "approved_not_for_publication": [
     2
   ],
-  "note": "Do not deploy manifest-only changes as though binary photos were uploaded. Never replace recipe n=4 Meatballs with #2 Steak."
+  "note": "Owner approved #1-4 but excluded #2 from direct upload. #1 awaits precise edit of original #2. Published photo count 14. Design baseline unchanged."
 }
