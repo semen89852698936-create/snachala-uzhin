@@ -3,7 +3,7 @@
   "collection_title": "10 новых блюд для двоих",
   "recipe_count": 10,
   "existing_main_catalog_count_unmodified": 1001,
-  "status": "editorial_draft_five_candidates_pass_photo_shape_two_need_further_revision",
+  "status": "editorial_draft_photo_revision_mushrooms_still_rejected",
   "source": "Новые блюда.docx (10 numbered recipes with 10 visual references, user uploaded 2026-11-13)",
   "photos_generator": "Alice AI ART; original rights-safe generated photographs",
   "integration_policy": {
@@ -630,7 +630,7 @@
       "tip": "Грибной сок содержит много вкуса. Не выливай его, он сделает сметанный соус более насыщенным.",
       "warn": "Содержит молочные продукты, пшеницу и горчицу. Быстрая схема лучше подходит для мягких отрубов говядины; жёсткому мясу потребуется более долгое тушение.",
       "equipment": "Две сковороды или сковорода и сотейник",
-      "photo_brief": "Говядина нарезана ДЛИННОЙ ТОНКОЙ СОЛОМКОЙ 5 мм, шампиньоны нашинкованы ОЧЕНЬ МЕЛКО в тонкие пластинки 2 мм. Грибы перемешаны с длинными мясными полосками в густом бежевом сливочном креме, плотно прилегающем к еде. Никаких больших грибных шляпок, половинок и четвертинок! Белая плоская тарелка, пюре позади, без жидкого соуса.",
+      "photo_brief": "На белой плоской тарелке горка ДЛИННЫХ УЗКИХ готовых полосок говядины толщиной 5 мм. Мясо покрыто ГУСТЫМ сметанным кремом. В креме лишь МЕЛКАЯ ТЁМНАЯ ГРИБНАЯ КРОШКА 1–2 мм, как мелкие вкрапления. Ни одного целого гриба, шляпки, пластинки размером более 3 мм, никаких половинок шампиньонов. Пюре небольшой горкой на заднем плане. Нет жидкого соуса.",
       "source_photo_page": 8,
       "base": 2,
       "level": "Средне",
@@ -638,9 +638,9 @@
       "photo_status": "revised_generated_pending_visual_review",
       "photo_editorial_status": "pending_owner_visual_review",
       "publication_status": "editorial_draft",
-      "photo": "/assets/new-dishes/review-v3/nd-beef-stroganoff-mushrooms.webp",
+      "photo": "/assets/new-dishes/review-v4/nd-beef-stroganoff-mushrooms.webp",
       "reference_policy": "Original DOCX image is a watermarked external-photo example; never publish the screenshot.",
-      "photo_revision": "source_fidelity_v3_20261113"
+      "photo_revision": "source_fidelity_v4_20261113"
     },
     {
       "id": "nd-beef-peppers-soy",
@@ -892,7 +892,7 @@
       "tip": "Лук практически растворяется, превращаясь в густой сладковатый соус. Сильного кипения быть не должно.",
       "warn": "Содержит сливочное масло. Выбирай мясо для долгого тушения; время зависит от отруба.",
       "equipment": "Толстодонная кастрюля с плотно закрывающейся крышкой",
-      "photo_brief": "Крупные невероятно мягкие темно-коричневые куски говядины с видимыми мясными волокнами, полностью покрыты однородной густой коричневой карамельной массой. НЕТ ни одного видимого кусочка овоща! Луковые волокна полностью растворились, визуально невозможно различить лук. Слепленная в единое целое горка мяса в тёмной тарелке на краю лаваша, сухая поверхность без жидкого бульона.",
+      "photo_brief": "Крупные, уже мягкие и распадающиеся на волокна коричневые куски мяса, соединённые плотной тёмной карамельной массой в ЕДИНОЕ ЦЕЛОЕ. Однородная поверхность густого тёмного мясного соуса, никаких отдельных овощей и полосок среди мяса. НИКАКИХ КОЛЕЦ, ломтиков или полукругов рядом. Тарелка с лавашом по краю, густая еда, без лужи жидкости. По форме очень близко к старинному тушёному мясу.",
       "source_photo_page": 11,
       "base": 2,
       "level": "Средне",
@@ -900,9 +900,9 @@
       "photo_status": "revised_generated_pending_visual_review",
       "photo_editorial_status": "pending_owner_visual_review",
       "publication_status": "editorial_draft",
-      "photo": "/assets/new-dishes/review-v3/nd-beef-slow-onion.webp",
+      "photo": "/assets/new-dishes/review-v4/nd-beef-slow-onion.webp",
       "reference_policy": "Original DOCX image is a watermarked external-photo example; never publish the screenshot.",
-      "photo_revision": "source_fidelity_v3_20261113"
+      "photo_revision": "source_fidelity_v4_20261113"
     },
     {
       "id": "nd-pork-mushrooms-sourcream",
@@ -1218,5 +1218,5 @@
       "reference_policy": "Original DOCX image is a watermarked external-photo example; never publish the screenshot."
     }
   ],
-  "photo_correction_batch": "new-dishes-source-fidelity-v3-20261113"
+  "photo_correction_batch": "new-dishes-source-fidelity-v4-20261113"
 }
