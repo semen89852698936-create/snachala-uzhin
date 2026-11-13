@@ -3,7 +3,7 @@
   "collection_title": "10 новых блюд для двоих",
   "recipe_count": 10,
   "existing_main_catalog_count_unmodified": 1001,
-  "status": "editorial_draft_7_revisions_generated_pending_owner_visual_review",
+  "status": "editorial_draft_four_collage_photos_owner_approved_six_other_photos_unchanged",
   "source": "Новые блюда.docx (10 numbered recipes with 10 visual references, user uploaded 2026-11-13)",
   "photos_generator": "Alice AI ART; original rights-safe generated photographs",
   "integration_policy": {
@@ -635,12 +635,14 @@
       "base": 2,
       "level": "Средне",
       "emoji": "🍽",
-      "photo_status": "revised_generated_pending_visual_review",
-      "photo_editorial_status": "pending_owner_visual_review",
+      "photo_status": "owner_approved",
+      "photo_editorial_status": "approved",
       "publication_status": "editorial_draft",
-      "photo": "/assets/new-dishes/review-v5/nd-beef-stroganoff-mushrooms.webp",
+      "photo": "/assets/new-dishes/approved-collage-4/nd-beef-stroganoff-mushrooms.webp",
       "reference_policy": "Original DOCX image is a watermarked external-photo example; never publish the screenshot.",
-      "photo_revision": "source_fidelity_v5_20261113"
+      "photo_revision": "owner_approved_original_collage_crop_20261114",
+      "owner_approval_source": "ChatGPT four-photo 2x2 collage, user explicitly confirmed all four; cropped without regeneration",
+      "photo_qa_comment": "Owner approved this exact collage quadrant. Do not regenerate or substitute without direct instruction."
     },
     {
       "id": "nd-beef-peppers-soy",
@@ -897,13 +899,14 @@
       "base": 2,
       "level": "Средне",
       "emoji": "🍽",
-      "photo_status": "rejected_pending_source_faithful_replacement",
-      "photo_editorial_status": "rejected",
+      "photo_status": "owner_approved",
+      "photo_editorial_status": "approved",
       "publication_status": "editorial_draft",
-      "photo": "/assets/new-dishes/review-v4/nd-beef-slow-onion.webp",
+      "photo": "/assets/new-dishes/approved-collage-4/nd-beef-slow-onion.webp",
       "reference_policy": "Original DOCX image is a watermarked external-photo example; never publish the screenshot.",
-      "photo_revision": "source_fidelity_v4_20261113",
-      "photo_qa_comment": "Existing v4 shows large glossy meat slab; v6/v7 candidates show separate glossy cubes and visible onion. Owner requires cubes in matte homogeneous mass, onion invisible."
+      "photo_revision": "owner_approved_original_collage_crop_20261114",
+      "photo_qa_comment": "Owner approved this exact collage quadrant. Do not regenerate or substitute without direct instruction.",
+      "owner_approval_source": "ChatGPT four-photo 2x2 collage, user explicitly confirmed all four; cropped without regeneration"
     },
     {
       "id": "nd-pork-mushrooms-sourcream",
@@ -991,12 +994,14 @@
       "base": 2,
       "level": "Средне",
       "emoji": "🍽",
-      "photo_status": "revised_generated_pending_visual_review",
-      "photo_editorial_status": "pending_owner_visual_review",
+      "photo_status": "owner_approved",
+      "photo_editorial_status": "approved",
       "publication_status": "editorial_draft",
-      "photo": "/assets/new-dishes/review-v3/nd-pork-mushrooms-sourcream.webp",
+      "photo": "/assets/new-dishes/approved-collage-4/nd-pork-mushrooms-sourcream.webp",
       "reference_policy": "Original DOCX image is a watermarked external-photo example; never publish the screenshot.",
-      "photo_revision": "source_fidelity_v3_20261113"
+      "photo_revision": "owner_approved_original_collage_crop_20261114",
+      "owner_approval_source": "ChatGPT four-photo 2x2 collage, user explicitly confirmed all four; cropped without regeneration",
+      "photo_qa_comment": "Owner approved this exact collage quadrant. Do not regenerate or substitute without direct instruction."
     },
     {
       "id": "nd-pork-oven-shashlik",
@@ -1102,14 +1107,15 @@
       "base": 2,
       "level": "Средне",
       "emoji": "🍽",
-      "photo_status": "owner_approved_new_asset_not_yet_uploaded",
-      "photo_editorial_status": "owner_approved_new_chatgpt_image",
+      "photo_status": "owner_approved",
+      "photo_editorial_status": "approved",
       "publication_status": "editorial_draft",
-      "photo": "/assets/new-dishes/review-v2/nd-pork-oven-shashlik.webp",
+      "photo": "/assets/new-dishes/approved-collage-4/nd-pork-oven-shashlik.webp",
       "reference_policy": "Original DOCX image is a watermarked external-photo example; never publish the screenshot.",
-      "photo_revision": "source_fidelity_v2_20261113",
+      "photo_revision": "owner_approved_original_collage_crop_20261114",
       "approved_photo_filename": "румяный_шашлык_с_карамелизированным_луком.png",
-      "photo_qa_comment": "Owner approved generated candidate featuring golden-brown baked/caramelized onion. Existing v2 asset still shows pale onion and must not be passed off as approved."
+      "photo_qa_comment": "Owner approved this exact collage quadrant. Do not regenerate or substitute without direct instruction.",
+      "owner_approval_source": "ChatGPT four-photo 2x2 collage, user explicitly confirmed all four; cropped without regeneration"
     },
     {
       "id": "nd-chicken-mushroom-julienne",
@@ -1226,5 +1232,19 @@
     "nd-beef-slow-onion": "Correction required: matte compact beef cubes; current glossy whole chunk rejected. Generate separate candidate and do not replace image before visual check.",
     "nd-pork-oven-shashlik": "Owner approved ChatGPT-generated browned baked-onion photograph; existing asset with white raw-looking onion must not be considered approved.",
     "nd-pork-mushrooms-sourcream": "Use exact owner-specified title, including comma."
+  },
+  "owner_approved_collage": {
+    "date": "2026-11-14",
+    "source_file": "a_clean_high_resolution_food_photography_collage.png",
+    "crop_policy": "Exact quadrant crops only. Original embedded paper labels preserved; no retouching or regeneration.",
+    "approved_recipe_ids": [
+      "nd-beef-slow-onion",
+      "nd-pork-mushrooms-sourcream",
+      "nd-beef-stroganoff-mushrooms",
+      "nd-pork-oven-shashlik"
+    ],
+    "album_path": "assets/new-dishes/approved-collage-4/",
+    "do_not_regenerate": true,
+    "production_status": "working_preview_not_published_to_main"
   }
 }
