@@ -462,7 +462,7 @@
     {
       "id": "plov-mushroom-bell-pepper",
       "title": "Плов с грибами и сладким перцем",
-      "category": "vegetables",
+      "category": "meat",
       "cuisine": "Домашняя кухня",
       "minutes": 65,
       "level": "Легко",
@@ -1058,7 +1058,7 @@
     {
       "id": "plov-chicken-prunes",
       "title": "Плов с курицей и черносливом",
-      "category": "poultry",
+      "category": "meat",
       "cuisine": "Домашняя кухня",
       "minutes": 85,
       "description": "Нежная курица, бархатистый чернослив, чуть сладковатый рис и свежая зелень. Тёплый ужин с необычным акцентом.",
@@ -1200,5 +1200,14 @@
       "photo": "/assets/plov/plov-chicken-prunes.webp",
       "reference_policy": "Source screenshot is a visual reference only. Do not publish or reproduce screenshot."
     }
-  ]
+  ],
+  "integration_policy": {
+    "target_category": "meat",
+    "replace_existing_count": 10,
+    "add_new_count": 10,
+    "total_catalog_count_after": 1001,
+    "existing_replacement_ids": "awaiting_exact_selection",
+    "do_not_modify_other_recipes": true,
+    "publish_only_after_review": true
+  }
 }
