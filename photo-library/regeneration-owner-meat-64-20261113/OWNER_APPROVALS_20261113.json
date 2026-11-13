@@ -254,13 +254,16 @@
       "recipe_id": "collection-meat-02-06",
       "title": "Свиная вырезка в духовке с имбирём и соевым соусом",
       "owner_decision": "approved",
-      "image_shown": "/photo-library/regeneration-owner-meat-64-20261113/correction-tests/0034-revision1.webp",
-      "image_blob_sha": "6b0186eb720d425e78ff7d45b692df4620c41bb7",
-      "image_bytes": 96792,
+      "image_shown": "/assets/recipes-ai/0034-collection-meat-02-06-regen.webp",
+      "image_blob_sha": "fa655ce82b1e26a163f8d5491ec83bc62e8f2274",
+      "image_bytes": 165262,
       "original_qa": "Брак",
       "original_qa_note": "Нарезанные полоски имбиря поверх мяса.",
       "correction_detail": "Запечённая свиная вырезка, политая выпаренным глянцевым соевым соусом с НАТЁРТЫМ имбирём. Никаких видимых кусочков имбиря сверху.",
-      "source_warning": null
+      "source_warning": null,
+      "updated_in_photo_release": true,
+      "owner_requested_plate_visible": true,
+      "source": "Cropped and retouched food photograph from assistant's screenshot approved for composition by owner, 2026-11-13. Removed UI overprints and converted to WebP."
     },
     {
       "list_number": 12,
@@ -1125,5 +1128,15 @@
     "retouched_sha256": "e2d0a49c72d7735d1c1a63d50f4872ef72015e8f0e6d1150b55571890fd100f0",
     "list_number_2": "Excluded as a separate recipe photo; original n=4 meatballs kept unchanged",
     "list_numbers_3_4": "Already included and published in previous commit"
+  },
+  "latest_recipe_photo_replacement": {
+    "list_number": 11,
+    "recipe_id": "collection-meat-02-06",
+    "n": 34,
+    "path": "/assets/recipes-ai/0034-collection-meat-02-06-regen.webp",
+    "sha": "fa655ce82b1e26a163f8d5491ec83bc62e8f2274",
+    "source": "photo crop from screenshot mockup approved for visual size and plate visibility",
+    "alterations": "photographic asset only; no HTML/JS/layout changes",
+    "all_other_images_unchanged": true
   }
 }
