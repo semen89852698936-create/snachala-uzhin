@@ -1,8 +1,11 @@
 {
   "id": "nd-pork-mushrooms-sourcream",
-  "status": "request_pending_or_sent",
-  "created_at": "2026-11-13T20:28:55+00:00",
+  "photo": "assets/new-dishes/review-v2/nd-pork-mushrooms-sourcream.webp",
+  "sha256": "27f5f233a152061be96b3cad70031dbd4d93aa27932de96b0f8a30274f49e86a",
+  "generator": "aliceai-image-art-3.0",
   "prompt": "Фотореалистичная фуд-фотография готового блюда: Свинина с грибами в сметанном соусе. НЕ суп. Очень ГУСТОЕ цельное блюдо без жидкой подливы. Свинина нарезана небольшими КУБИКАМИ, не полосками и не длинными ломтями. Кусочки тёмных шампиньонов в густой белой сметане, которая обволакивает продукты. Терракотовая глубокая миска, немного рубленого зелёного лука. Натуральная фактура еды, тёплый мягкий свет, без людей, текста, логотипов и коллажей.",
-  "no_automatic_retry": true,
-  "marked_at": "2026-11-13T20:28:57+00:00"
+  "source_photo_page": 13,
+  "source_document": "Новые блюда.docx",
+  "status": "generated_pending_owner_visual_review",
+  "created_at": "2026-11-13T20:29:02+00:00"
 }
