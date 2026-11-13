@@ -897,12 +897,13 @@
       "base": 2,
       "level": "Средне",
       "emoji": "🍽",
-      "photo_status": "revised_generated_pending_visual_review",
-      "photo_editorial_status": "pending_owner_visual_review",
+      "photo_status": "rejected_pending_source_faithful_replacement",
+      "photo_editorial_status": "rejected",
       "publication_status": "editorial_draft",
       "photo": "/assets/new-dishes/review-v4/nd-beef-slow-onion.webp",
       "reference_policy": "Original DOCX image is a watermarked external-photo example; never publish the screenshot.",
-      "photo_revision": "source_fidelity_v4_20261113"
+      "photo_revision": "source_fidelity_v4_20261113",
+      "photo_qa_comment": "Existing v4 shows large glossy meat slab; v6/v7 candidates show separate glossy cubes and visible onion. Owner requires cubes in matte homogeneous mass, onion invisible."
     },
     {
       "id": "nd-pork-mushrooms-sourcream",
@@ -1101,12 +1102,14 @@
       "base": 2,
       "level": "Средне",
       "emoji": "🍽",
-      "photo_status": "revised_generated_pending_visual_review",
-      "photo_editorial_status": "pending_owner_visual_review",
+      "photo_status": "owner_approved_new_asset_not_yet_uploaded",
+      "photo_editorial_status": "owner_approved_new_chatgpt_image",
       "publication_status": "editorial_draft",
       "photo": "/assets/new-dishes/review-v2/nd-pork-oven-shashlik.webp",
       "reference_policy": "Original DOCX image is a watermarked external-photo example; never publish the screenshot.",
-      "photo_revision": "source_fidelity_v2_20261113"
+      "photo_revision": "source_fidelity_v2_20261113",
+      "approved_photo_filename": "румяный_шашлык_с_карамелизированным_луком.png",
+      "photo_qa_comment": "Owner approved generated candidate featuring golden-brown baked/caramelized onion. Existing v2 asset still shows pale onion and must not be passed off as approved."
     },
     {
       "id": "nd-chicken-mushroom-julienne",
