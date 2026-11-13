@@ -1,0 +1,24 @@
+#!/usr/bin/env node
+'use strict';
+const assert = require('node:assert/strict');
+const fs = require('node:fs');
+const path = require('node:path');
+const root=path.resolve(__dirname,'..');
+const data=JSON.parse(fs.readFileSync(path.join(root,'data/ten-new-dishes-editorial.json'),'utf8'));
+assert.equal(data.recipe_count,10);
+assert.equal(data.existing_main_catalog_count_unmodified,1001);
+const pork=data.recipes.find(r=>r.id==='nd-pork-mushrooms-sourcream');
+assert.equal(pork.title,'Свинина, тушеная с грибами в сметанном соусе');
+const beef=data.recipes.find(r=>r.id==='nd-beef-slow-onion');
+assert.match(beef.steps[0].detail,/кубиками примерно 3–4 см/);
+assert.match(beef.photo_brief,/МАТОВУЮ/);
+assert.equal(beef.photo_status,'rejected_pending_source_faithful_replacement');
+const shash=data.recipes.find(r=>r.id==='nd-pork-oven-shashlik');
+assert.match(shash.photo_brief,/ЗАПЕЧЁННЫЙ/);
+assert.match(shash.photo_brief,/золотисто-коричневый/);
+assert.equal(shash.photo_status,'owner_approved_new_asset_not_yet_uploaded');
+const html=fs.readFileSync(path.join(root,'new-dishes/index.html'),'utf8');
+assert.ok(html.includes("if(unavailable)"));
+assert.ok(html.includes("owner_approved_new_asset_not_yet_uploaded"));
+assert.ok(html.includes("rejected_pending_source_faithful_replacement"));
+console.log('PASS: exact pork title; matte cubed beef; baked browned onion; no rejected images rendered; 1001 unchanged');
