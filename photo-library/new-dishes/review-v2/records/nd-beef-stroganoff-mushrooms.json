@@ -1,8 +1,11 @@
 {
   "id": "nd-beef-stroganoff-mushrooms",
-  "status": "request_pending_or_sent",
-  "created_at": "2026-11-13T20:28:26+00:00",
+  "photo": "assets/new-dishes/review-v2/nd-beef-stroganoff-mushrooms.webp",
+  "sha256": "fce078319d14b0f9e2a1b9eb6a6a810767ab9abdc04c60d6a4f843196c907d62",
+  "generator": "aliceai-image-art-3.0",
   "prompt": "Фотореалистичная фуд-фотография готового блюда: Бефстроганов с грибами. Тонкие ДЛИННЫЕ ПОЛОСКИ говядины и очень МЕЛКО НАРЕЗАННЫЕ ломтики шампиньонов. НЕТ половинок, целых или крупных четвертинок грибов. Густой бежевый сметанный соус плотно покрывает мясо, без лужи. Белая тарелка: воздушное картофельное пюре сзади, бефстроганов спереди. Натуральная фактура еды, тёплый мягкий свет, без людей, текста, логотипов и коллажей.",
-  "no_automatic_retry": true,
-  "marked_at": "2026-11-13T20:28:27+00:00"
+  "source_photo_page": 8,
+  "source_document": "Новые блюда.docx",
+  "status": "generated_pending_owner_visual_review",
+  "created_at": "2026-11-13T20:28:34+00:00"
 }
