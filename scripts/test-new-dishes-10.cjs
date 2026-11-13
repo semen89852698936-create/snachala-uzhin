@@ -30,7 +30,7 @@ for(let n=0;n<data.recipes.length;n++){
  }
 }
 const page=fs.readFileSync(path.join(root,'new-dishes/index.html'),'utf8');
-assert.match(page,/plov-ten-editorial\.json/);
+assert.match(page,/ten-new-dishes-editorial\.json/);
 assert.match(page,/data-next/);
 assert.match(page,/data-prev/);
 assert.match(page,/aria-hidden/);
