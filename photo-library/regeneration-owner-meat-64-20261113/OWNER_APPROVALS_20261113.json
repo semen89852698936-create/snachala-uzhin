@@ -99,8 +99,13 @@
       "owner_approved_original_png_file_id": "file_00000000111081f4bea47a85651e9ef6",
       "owner_approved_original_png_sha256": "e29a0e2ba89bc3620be67f6ac86af19e6457ef8851bf949bfc78dad6a7e646ac",
       "staged_webp_target": "assets/recipes-ai/0003-pepper-steak.webp",
-      "site_published": false,
-      "publication_decision": "UPLOAD_TO_APPROVED_PHOTO_RELEASE"
+      "site_published": true,
+      "publication_decision": "PUBLISHED_IN_PHOTO_RELEASE",
+      "approved_edit_source_library_file_id": "file_0000000022d08210a0c82343ad99ba0c",
+      "published_webp_path": "assets/recipes-ai/0003-pepper-steak.webp",
+      "published_webp_sha": "739ebd7447f3f98f154f9c483cca0de4868c1794",
+      "published_webp_sha256": "e2d0a49c72d7735d1c1a63d50f4872ef72015e8f0e6d1150b55571890fd100f0",
+      "original_user_approved_photo_n2_used_as_source": true
     },
     {
       "list_number": 2,
@@ -1100,18 +1105,25 @@
       "webp_sha256": "fb9b7a748754"
     }
   ],
-  "published_in_photo_release": 14,
+  "published_in_photo_release": 15,
   "awaiting_binary_import": 0,
   "warning_first_four": "The approved originals remain in ChatGPT Library and have not yet been copied into GitHub. Do not report published until WebP bytes exist in Git tree and Vercel READY. #2 is Steak with Garlic, but existing recipe photo n4 is Meatballs in Tomato Sauce. Never overwrite the meatball photo with a steak.",
   "owner_upload_instruction": "Final owner instruction: use original ChatGPT photograph #2 as visual source to replace #1 Steak with Garlic Butter ONLY after requested precise edit (glossy butter coating and one green herb sprig; same steak and plate, no butter pat or new side dishes). Do not publish an unedited #2 photo or change n=4 Meatballs. Photos #3 and #4 are already approved and have been published.",
   "excluded_from_upload": [
     2
   ],
-  "approved_awaiting_publish": [
-    1
-  ],
+  "approved_awaiting_publish": [],
   "approved_not_for_publication": [
     2
   ],
-  "note": "Owner approved #1-4 but excluded #2 from direct upload. #1 awaits precise edit of original #2. Published photo count 14. Design baseline unchanged."
+  "note": "Owner approved 16 original candidates; 15 recipe photos published (all but user-excluded original #2 as a separate listing). The source image #2 was specifically edited and placed at recipe n=3 (photo list #1). Do not replace recipe n=4 (Meatballs). Protected visual baseline unchanged.",
+  "first_four_image_source_resolution": {
+    "list_number_1": "Used owner-approved source image #2 (file_0000000022d08210a0c82343ad99ba0c), with targeted butter-glaze shine and one green rosemary sprig. No separate butter chunk, extra side dishes or altered plate.",
+    "source": "Сочный стейк с румяной корочкой.png",
+    "retouched_webp_target": "assets/recipes-ai/0003-pepper-steak.webp",
+    "retouched_git_blob_sha": "739ebd7447f3f98f154f9c483cca0de4868c1794",
+    "retouched_sha256": "e2d0a49c72d7735d1c1a63d50f4872ef72015e8f0e6d1150b55571890fd100f0",
+    "list_number_2": "Excluded as a separate recipe photo; original n=4 meatballs kept unchanged",
+    "list_numbers_3_4": "Already included and published in previous commit"
+  }
 }
