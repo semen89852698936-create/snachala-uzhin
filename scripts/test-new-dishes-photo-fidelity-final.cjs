@@ -9,7 +9,7 @@ const mapping={
 'nd-pork-vegetables-tomato':'original',
 'nd-beef-goulash-potatoes':'review-v3',
 'nd-beef-stroganoff-classic':'review-v3',
-'nd-beef-stroganoff-mushrooms':'review-v4',
+'nd-beef-stroganoff-mushrooms':'review-v5',
 'nd-beef-peppers-soy':'review-v3',
 'nd-beef-slow-onion':'review-v4',
 'nd-pork-mushrooms-sourcream':'review-v3',
@@ -32,4 +32,4 @@ for(const r of d.recipes){
    assert.match(rec.sha256,/^[a-f0-9]{64}$/);
  }
 }
-console.log('PASS: 10 photos exactly = 3 untouched originals, 1 v2, 4 v3, 2 v4; 1001 catalog remains untouched');
+console.log('PASS: 10 photos exactly = 3 untouched originals, 1 v2, 4 v3, 1 v4, 1 v5; 1001 catalog remains untouched');
