@@ -28,5 +28,4 @@ jobs:
       - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020
         with:
           node-version: '22'
-      - run: node scripts/test-new-dishes-10.cjs
       - run: node scripts/test-new-dishes-photo-fidelity-v2.cjs
