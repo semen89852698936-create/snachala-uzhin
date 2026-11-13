@@ -1,0 +1,19 @@
+{
+  "correction_batch": "new-dishes-source-fidelity-v7-20261113",
+  "source": "Новые блюда.docx",
+  "status": "one_beef_photo_requires_visual_check",
+  "output_directory": "assets/new-dishes/review-v7",
+  "recipe_count": 1,
+  "recipes": [
+    {
+      "id": "nd-beef-slow-onion",
+      "title": "Тушёная говядина с луком",
+      "prompt_title": "Кубики говядины в цельной матовой тушёной массе",
+      "source_photo_page": 11,
+      "photo_brief": "Говядина КУБИКАМИ 3 см, кубики частично слившиеся и покрытые ГУСТОЙ МАТОВОЙ коричневой мясо-луковой массой. Видны грани кубиков, но они держатся КОМПАКТНОЙ ЕДИНОЙ ГОРКОЙ, а не россыпью сухих кусков. Масса плотная, слегка зернистая, без блеска и луж жидкого соуса. Лук полностью разварился: НЕ ВИДНО ни единого кусочка или кольца. Тёмно-коричневый цвет, глиняная тарелка с лавашом. Без зелени и декора.",
+      "photo": "/assets/new-dishes/review-v7/nd-beef-slow-onion.webp",
+      "photo_status": "not_started",
+      "owner_visual_review": "pending"
+    }
+  ]
+}

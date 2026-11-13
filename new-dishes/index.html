@@ -82,6 +82,10 @@ let plov=[],activeTimer=null,remaining=0,returnFocus=null,openedRecipe=null,curr
 const fmt=n=>new Intl.NumberFormat('ru-RU',{maximumFractionDigits:2}).format(n);
 const amt=i=>i.amount ? fmt(i.amount)+' '+safe(i.unit):safe(i.unit);
 function imageMarkup(recipe,n){
+ const unavailable=['rejected_pending_source_faithful_replacement','owner_approved_new_asset_not_yet_uploaded'].includes(recipe.photo_status);
+ if(unavailable){
+   return '<div class="plov-photo" aria-label="Фотография этого блюда пока не размещена"><span class="plov-photo__fallback">Фотография готовится</span><span class="plov-no">№ '+String(n).padStart(2,'0')+'</span></div>';
+ }
  return '<div class="plov-photo"><img src="'+safe(recipe.photo)+'" alt="'+safe(recipe.title)+'" loading="lazy" onerror="this.hidden=true;this.nextElementSibling.hidden=false"><span class="plov-photo__fallback" hidden>Фотография готовится</span><span class="plov-no">№ '+String(n).padStart(2,'0')+'</span></div>';
 }
 function card(r,n){

@@ -1,0 +1,100 @@
+name: Alice AI ART - generate one matte cubed beef photo from DOCX reference
+on:
+  push:
+    branches: ['fix/new-dishes-beef-cubes-titles-20261113']
+    paths:
+      - '.github/workflows/new-dishes-photo-fidelity-v7.yml'
+permissions:
+  contents: write
+concurrency:
+  group: new-dishes-fidelity-v7-one-shot-20261113
+  cancel-in-progress: false
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065
+        with:
+          python-version: '3.11'
+      - run: python -m pip install 'Pillow>=10,<13'
+      - run: python -m py_compile photo-pipeline/generate_new_dishes_fidelity_v7.py
+      - name: One photo briefs and free preflight
+        shell: bash
+        run: |
+          set -euo pipefail
+          for number in $(seq 1 1); do
+            python photo-pipeline/generate_new_dishes_fidelity_v7.py --number "$number"
+          done
+
+  produce:
+    needs: validate
+    if: ${{ github.event_name == 'push' && github.ref == 'refs/heads/fix/new-dishes-beef-cubes-titles-20261113' }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          ref: fix/new-dishes-beef-cubes-titles-20261113
+          fetch-depth: 0
+          persist-credentials: true
+      - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065
+        with:
+          python-version: '3.11'
+      - run: python -m pip install 'Pillow>=10,<13'
+      - name: Check API availability before any paid operations
+        env:
+          YANDEX_API_KEY: ${{ secrets.YANDEX_API_KEY }}
+          YANDEX_FOLDER_ID: ${{ secrets.YANDEX_FOLDER_ID || 'b1g00u8p0k5nl98v8nre' }}
+        run: |
+          test -n "$YANDEX_API_KEY" || { echo "::error::Missing YANDEX_API_KEY"; exit 1; }
+          test -n "$YANDEX_FOLDER_ID" || { echo "::error::Missing YANDEX_FOLDER_ID"; exit 1; }
+      - name: Create isolated unpublished photo production branch
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          if git ls-remote --exit-code --heads origin photo-production/new-dishes-fidelity-v7-20261113 >/dev/null 2>&1; then
+            echo "::error::Production branch already exists. Refusing to repeat paid generation."
+            exit 1
+          fi
+          git checkout -b photo-production/new-dishes-fidelity-v7-20261113
+      - name: Create one new original photos with pre-call persisted intent
+        shell: bash
+        env:
+          YANDEX_API_KEY: ${{ secrets.YANDEX_API_KEY }}
+          YANDEX_FOLDER_ID: ${{ secrets.YANDEX_FOLDER_ID || 'b1g00u8p0k5nl98v8nre' }}
+          PHOTO_COST_APPROVED: 'true'
+        run: |
+          set -euo pipefail
+          for number in $(seq 1 1); do
+            echo "Photo correction $number of 7"
+            python photo-pipeline/generate_new_dishes_fidelity_v7.py --number "$number" --reserve-only
+            git add -A photo-library/new-dishes/review-v7
+            git commit -m "Reserve image correction $number/1 before request"
+            git push origin HEAD:refs/heads/photo-production/new-dishes-fidelity-v7-20261113
+
+            python photo-pipeline/generate_new_dishes_fidelity_v7.py --number "$number" --mark-intent
+            git add -A photo-library/new-dishes/review-v7
+            git commit -m "Mark pending or sent API request for image correction $number/1"
+            git push origin HEAD:refs/heads/photo-production/new-dishes-fidelity-v7-20261113
+
+            set +e
+            python photo-pipeline/generate_new_dishes_fidelity_v7.py --number "$number" --execute
+            result=$?
+            set -e
+            git add -A photo-library/new-dishes/review-v7 assets/new-dishes/review-v7
+            if ! git diff --cached --quiet; then
+              git commit -m "Checkpoint revised photo and record $number/1"
+              git push origin HEAD:refs/heads/photo-production/new-dishes-fidelity-v7-20261113
+            fi
+            if [ "$result" -ne 0 ]; then
+              echo "::error::Photo request uncertain or failed. No automatic reattempt."
+              exit "$result"
+            fi
+          done
+          echo "Revised images staged unpublished for owner visual review. Original images untouched."

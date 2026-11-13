@@ -3,7 +3,7 @@
   "collection_title": "10 новых блюд для двоих",
   "recipe_count": 10,
   "existing_main_catalog_count_unmodified": 1001,
-  "status": "editorial_draft_7_revisions_generated_pending_owner_visual_review",
+  "status": "editorial_draft_four_collage_photos_owner_approved_six_other_photos_unchanged",
   "source": "Новые блюда.docx (10 numbered recipes with 10 visual references, user uploaded 2026-11-13)",
   "photos_generator": "Alice AI ART; original rights-safe generated photographs",
   "integration_policy": {
@@ -635,12 +635,14 @@
       "base": 2,
       "level": "Средне",
       "emoji": "🍽",
-      "photo_status": "revised_generated_pending_visual_review",
-      "photo_editorial_status": "pending_owner_visual_review",
+      "photo_status": "owner_approved",
+      "photo_editorial_status": "approved",
       "publication_status": "editorial_draft",
-      "photo": "/assets/new-dishes/review-v5/nd-beef-stroganoff-mushrooms.webp",
+      "photo": "/assets/new-dishes/approved-collage-4/nd-beef-stroganoff-mushrooms.webp",
       "reference_policy": "Original DOCX image is a watermarked external-photo example; never publish the screenshot.",
-      "photo_revision": "source_fidelity_v5_20261113"
+      "photo_revision": "owner_approved_original_collage_crop_20261114",
+      "owner_approval_source": "ChatGPT four-photo 2x2 collage, user explicitly confirmed all four; cropped without regeneration",
+      "photo_qa_comment": "Owner approved this exact collage quadrant. Do not regenerate or substitute without direct instruction."
     },
     {
       "id": "nd-beef-peppers-soy",
@@ -794,7 +796,7 @@
       "category": "meat",
       "cuisine": "Домашняя кухня",
       "minutes": 170,
-      "description": "Крупные кусочки говядины медленно томятся с большим количеством лука и сливочного масла, превращаясь в нежное мясо с густой подливкой.",
+      "description": "Мягкая говядина небольшими кубиками, томлённая с луком до однородной густой массы. Лук полностью растворяется, отдельные кусочки не видны.",
       "ingredients": [
         {
           "name": "Говядина (шейная часть или лопатка)",
@@ -860,7 +862,7 @@
       "steps": [
         {
           "title": "Подготовь мясо",
-          "detail": "Говядину обсуши и нарежь крупными кусочками поперёк волокон. Лук нарежь мелкими кубиками, чтобы он почти растворился при тушении.",
+          "detail": "Говядину обсуши и нарежь поперёк волокон кубиками примерно 3–4 см. Лук нарежь как можно мельче: за долгое тушение он должен полностью развариться и стать частью однородной массы.",
           "timer": 10
         },
         {
@@ -892,21 +894,23 @@
       "tip": "Лук практически растворяется, превращаясь в густой сладковатый соус. Сильного кипения быть не должно.",
       "warn": "Содержит сливочное масло. Выбирай мясо для долгого тушения; время зависит от отруба.",
       "equipment": "Толстодонная кастрюля с плотно закрывающейся крышкой",
-      "photo_brief": "Крупные, уже мягкие и распадающиеся на волокна коричневые куски мяса, соединённые плотной тёмной карамельной массой в ЕДИНОЕ ЦЕЛОЕ. Однородная поверхность густого тёмного мясного соуса, никаких отдельных овощей и полосок среди мяса. НИКАКИХ КОЛЕЦ, ломтиков или полукругов рядом. Тарелка с лавашом по краю, густая еда, без лужи жидкости. По форме очень близко к старинному тушёному мясу.",
+      "photo_brief": "Строго по фотографии-образцу на странице 11 документа «Новые блюда.docx»: говядина нарезана ОТДЕЛЬНЫМИ КУБИКАМИ примерно 3–4 см, ни одного большого ломтя. Кубики плотно соединены в компактную ОДНОРОДНУЮ МАТОВУЮ массу землисто-коричневого цвета благодаря полностью разварившемуся луку. Отдельные луковые кольца, частицы, полоски не различимы. Поверхность НЕ глянцевая, никакого блестящего соуса, лужи жидкости и суповой подливы. Тёмная неглубокая глиняная тарелка, края лаваша. Без зелени и дополнительных украшений.",
       "source_photo_page": 11,
       "base": 2,
       "level": "Средне",
       "emoji": "🍽",
-      "photo_status": "revised_generated_pending_visual_review",
-      "photo_editorial_status": "pending_owner_visual_review",
+      "photo_status": "owner_approved",
+      "photo_editorial_status": "approved",
       "publication_status": "editorial_draft",
-      "photo": "/assets/new-dishes/review-v4/nd-beef-slow-onion.webp",
+      "photo": "/assets/new-dishes/approved-collage-4/nd-beef-slow-onion.webp",
       "reference_policy": "Original DOCX image is a watermarked external-photo example; never publish the screenshot.",
-      "photo_revision": "source_fidelity_v4_20261113"
+      "photo_revision": "owner_approved_original_collage_crop_20261114",
+      "photo_qa_comment": "Owner approved this exact collage quadrant. Do not regenerate or substitute without direct instruction.",
+      "owner_approval_source": "ChatGPT four-photo 2x2 collage, user explicitly confirmed all four; cropped without regeneration"
     },
     {
       "id": "nd-pork-mushrooms-sourcream",
-      "title": "Свинина с грибами в сметанном соусе",
+      "title": "Свинина, тушеная с грибами в сметанном соусе",
       "category": "meat",
       "cuisine": "Домашняя кухня",
       "minutes": 45,
@@ -990,12 +994,14 @@
       "base": 2,
       "level": "Средне",
       "emoji": "🍽",
-      "photo_status": "revised_generated_pending_visual_review",
-      "photo_editorial_status": "pending_owner_visual_review",
+      "photo_status": "owner_approved",
+      "photo_editorial_status": "approved",
       "publication_status": "editorial_draft",
-      "photo": "/assets/new-dishes/review-v3/nd-pork-mushrooms-sourcream.webp",
+      "photo": "/assets/new-dishes/approved-collage-4/nd-pork-mushrooms-sourcream.webp",
       "reference_policy": "Original DOCX image is a watermarked external-photo example; never publish the screenshot.",
-      "photo_revision": "source_fidelity_v3_20261113"
+      "photo_revision": "owner_approved_original_collage_crop_20261114",
+      "owner_approval_source": "ChatGPT four-photo 2x2 collage, user explicitly confirmed all four; cropped without regeneration",
+      "photo_qa_comment": "Owner approved this exact collage quadrant. Do not regenerate or substitute without direct instruction."
     },
     {
       "id": "nd-pork-oven-shashlik",
@@ -1095,18 +1101,21 @@
       "tip": "Для этого варианта главный аромат создаёт именно маринованный лук под мясом. Рукав не должен касаться нагревательных элементов.",
       "warn": "В источнике нет количеств продуктов и точной температуры духовки; они восстановлены редакционно. Не используй максимальный нагрев без проверки допустимой температуры рукава. Маринуй мясо только в холодильнике.",
       "equipment": "Духовка, противень, рукав для запекания",
-      "photo_brief": "КУСОЧКИ запечённой свинины ОБЩЕЙ КУЧКОЙ на большой белой тарелке; рядом и между ними мягкие золотистые луковые полоски. Мясо лежит свободной россыпью, НЕ нанизано. Категорически БЕЗ шпажек, шампуров, палочек, мангала, решётки, углей. Подрумяненная неровная поверхность мяса.",
+      "photo_brief": "Точно по исходнику со страницы 14 и согласованному изображению от 13 ноября: кусочки свинины свободной ОБЩЕЙ КУЧКОЙ без шпажек и шампуров на коричневатой луковой подушке. Лук обязательно ЗАПЕЧЁННЫЙ, золотисто-коричневый, мягкий и карамелизированный, с подрумяненными краями. Ни одного сырого белого лукового кольца. Мясо румяное после духовки. Никаких овощей, зелени и гарниров, отсутствующих в исходном блюде.",
       "source_photo_page": 14,
       "editorial_issue": "В источнике перечислены ингредиенты без количества; температура и режим духовки восстановлены с учётом безопасности рукава.",
       "base": 2,
       "level": "Средне",
       "emoji": "🍽",
-      "photo_status": "revised_generated_pending_visual_review",
-      "photo_editorial_status": "pending_owner_visual_review",
+      "photo_status": "owner_approved",
+      "photo_editorial_status": "approved",
       "publication_status": "editorial_draft",
-      "photo": "/assets/new-dishes/review-v2/nd-pork-oven-shashlik.webp",
+      "photo": "/assets/new-dishes/approved-collage-4/nd-pork-oven-shashlik.webp",
       "reference_policy": "Original DOCX image is a watermarked external-photo example; never publish the screenshot.",
-      "photo_revision": "source_fidelity_v2_20261113"
+      "photo_revision": "owner_approved_original_collage_crop_20261114",
+      "approved_photo_filename": "румяный_шашлык_с_карамелизированным_луком.png",
+      "photo_qa_comment": "Owner approved this exact collage quadrant. Do not regenerate or substitute without direct instruction.",
+      "owner_approval_source": "ChatGPT four-photo 2x2 collage, user explicitly confirmed all four; cropped without regeneration"
     },
     {
       "id": "nd-chicken-mushroom-julienne",
@@ -1218,5 +1227,24 @@
       "reference_policy": "Original DOCX image is a watermarked external-photo example; never publish the screenshot."
     }
   ],
-  "photo_correction_batch": "new-dishes-source-fidelity-v5-20261113"
+  "photo_correction_batch": "new-dishes-source-fidelity-v5-20261113",
+  "photo_review_notes": {
+    "nd-beef-slow-onion": "Correction required: matte compact beef cubes; current glossy whole chunk rejected. Generate separate candidate and do not replace image before visual check.",
+    "nd-pork-oven-shashlik": "Owner approved ChatGPT-generated browned baked-onion photograph; existing asset with white raw-looking onion must not be considered approved.",
+    "nd-pork-mushrooms-sourcream": "Use exact owner-specified title, including comma."
+  },
+  "owner_approved_collage": {
+    "date": "2026-11-14",
+    "source_file": "a_clean_high_resolution_food_photography_collage.png",
+    "crop_policy": "Exact quadrant crops only. Original embedded paper labels preserved; no retouching or regeneration.",
+    "approved_recipe_ids": [
+      "nd-beef-slow-onion",
+      "nd-pork-mushrooms-sourcream",
+      "nd-beef-stroganoff-mushrooms",
+      "nd-pork-oven-shashlik"
+    ],
+    "album_path": "assets/new-dishes/approved-collage-4/",
+    "do_not_regenerate": true,
+    "production_status": "working_preview_not_published_to_main"
+  }
 }
