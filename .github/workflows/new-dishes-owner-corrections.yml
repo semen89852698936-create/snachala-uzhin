@@ -1,0 +1,21 @@
+name: New dishes owner exact title and photo-safety checks
+on:
+  push:
+    branches: ['fix/new-dishes-beef-cubes-titles-20261113']
+    paths:
+      - '.github/workflows/new-dishes-owner-corrections.yml'
+      - 'data/ten-new-dishes-editorial.json'
+      - 'new-dishes/index.html'
+      - 'scripts/test-new-dishes-owner-photo-requests.cjs'
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020
+        with:
+          node-version: '22'
+      - run: node scripts/test-new-dishes-owner-photo-requests.cjs
