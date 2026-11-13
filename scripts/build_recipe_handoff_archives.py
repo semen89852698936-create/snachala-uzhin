@@ -50,7 +50,7 @@ def verify() -> dict:
     ids = [x["id"] for x in entries]
     assert len(set(ids)) == 20, "Duplicate recipe IDs"
     counts = Counter(x["group"] for x in entries)
-    assert counts == EXPECTED_GROUPS, counts
+    assert counts == {"ПЛОВ": 10, "НОВЫЕ БЛЮДА": 10}, counts
     approved = {x["id"] for x in entries if x["user_approved_photo"]}
     assert approved == APPROVED_IDS, "Owner-approved photos mismatch"
     assert all(x["replace_recipe_id"] is None for x in entries)
