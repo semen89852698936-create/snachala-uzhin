@@ -1,8 +1,11 @@
 {
   "id": "nd-beef-stroganoff-mushrooms",
-  "status": "request_pending_or_sent",
-  "created_at": "2026-11-13T20:36:27+00:00",
+  "photo": "assets/new-dishes/review-v3/nd-beef-stroganoff-mushrooms.webp",
+  "sha256": "107e297fbf4b7387e42452b8e868b884a2bc938fd97f2767372ca2bf6d4546f9",
+  "generator": "aliceai-image-art-3.0",
   "prompt": "Фотореалистичная фотография еды: Тонкие полоски мяса с грибной стружкой на пюре. Говядина нарезана ДЛИННОЙ ТОНКОЙ СОЛОМКОЙ 5 мм, шампиньоны нашинкованы ОЧЕНЬ МЕЛКО в тонкие пластинки 2 мм. Грибы перемешаны с длинными мясными полосками в густом бежевом сливочном креме, плотно прилегающем к еде. Никаких больших грибных шляпок, половинок и четвертинок! Белая плоская тарелка, пюре позади, без жидкого соуса. Тёплый свет, без надписей.",
-  "no_automatic_retry": true,
-  "marked_at": "2026-11-13T20:36:28+00:00"
+  "source_photo_page": 8,
+  "source_document": "Новые блюда.docx",
+  "status": "generated_pending_owner_visual_review",
+  "created_at": "2026-11-13T20:36:35+00:00"
 }
