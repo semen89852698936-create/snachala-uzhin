@@ -1,8 +1,11 @@
 {
   "id": "nd-beef-stroganoff-mushrooms",
-  "status": "request_pending_or_sent",
-  "created_at": "2026-11-13T20:39:56+00:00",
+  "photo": "assets/new-dishes/review-v4/nd-beef-stroganoff-mushrooms.webp",
+  "sha256": "4620a8de90687163b71acc6f9403cf8d48e7d1521d05dd05550b19f6ab1ff16b",
+  "generator": "aliceai-image-art-3.0",
   "prompt": "Фотореалистичная фотография еды: Говяжья соломка под густым кремом с грибной крошкой. На белой плоской тарелке горка ДЛИННЫХ УЗКИХ готовых полосок говядины толщиной 5 мм. Мясо покрыто ГУСТЫМ сметанным кремом. В креме лишь МЕЛКАЯ ТЁМНАЯ ГРИБНАЯ КРОШКА 1–2 мм, как мелкие вкрапления. Ни одного целого гриба, шляпки, пластинки размером более 3 мм, никаких половинок шампиньонов. Пюре небольшой горкой на заднем плане. Нет жидкого соуса. Тёплый свет, без надписей.",
-  "no_automatic_retry": true,
-  "marked_at": "2026-11-13T20:39:57+00:00"
+  "source_photo_page": 8,
+  "source_document": "Новые блюда.docx",
+  "status": "generated_pending_owner_visual_review",
+  "created_at": "2026-11-13T20:40:03+00:00"
 }
