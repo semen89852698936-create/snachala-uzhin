@@ -1614,3 +1614,28 @@ html body.du-evening-mode #evening .du-moods > button.du-mood[data-mood]:is(.is-
     transition:none!important;
   }
 }
+
+/* RECIPE_FULL_PLATE_FLAT_EDGE_20261113
+ * Owner request: all recipe-detail photography shows the full source frame
+ * (including any plate captured by the camera); no decorative jagged lower
+ * edge. Do not affect category buttons, home hero, music or other layouts.
+ */
+#recipeDetail .recipe-intro-photo {
+  clip-path: none !important;
+  -webkit-clip-path: none !important;
+  border-radius: 0 !important;
+  background-color: #f5eee6 !important;
+}
+#recipeDetail .recipe-intro-photo > img.food-photo {
+  object-fit: contain !important;
+  object-position: center center !important;
+}
+#recipeDetail .recipe-intro-photo.photo:has(> img.food-photo)::before {
+  content: none !important;
+}
+@media (max-width: 760px) {
+  #recipeDetail .recipe-intro-photo {
+    -webkit-mask-image: none !important;
+    mask-image: none !important;
+  }
+}
