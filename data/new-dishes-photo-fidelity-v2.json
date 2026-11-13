@@ -1,0 +1,74 @@
+{
+  "correction_batch": "new-dishes-source-fidelity-v2-20261113",
+  "source": "Новые блюда.docx",
+  "status": "7_replacements_required",
+  "output_directory": "assets/new-dishes/review-v2",
+  "photo_review_status": "pending_owner_visual_review",
+  "generator": "aliceai-image-art-3.0",
+  "do_not_change": "original ten images; main site; approved visual reference; recipe texts",
+  "recipes": [
+    {
+      "id": "nd-beef-goulash-potatoes",
+      "title": "Гуляш из говядины с картофелем",
+      "source_photo_page": 4,
+      "photo_brief": "НЕ суп! НЕТ бульона или жидкой подливы. Белая неглубокая миска, плотная горка крупных кубиков говядины и картофеля, кружочки моркови, красный перец. Паприка и густой соус лишь покрывают продукты тонким слоем. На дне нет лужи. Ракурс 45°, мягкий тёплый свет.",
+      "photo": "/assets/new-dishes/review-v2/nd-beef-goulash-potatoes.webp",
+      "photo_status": "not_started",
+      "owner_visual_review": "pending"
+    },
+    {
+      "id": "nd-beef-stroganoff-classic",
+      "title": "Бефстроганов из говядины",
+      "source_photo_page": 6,
+      "photo_brief": "Только ДЛИННЫЕ ТОНКИЕ ПОЛОСКИ говядины, не кубики, не стейк. Поверх горки картофельного пюре, густой тёмно-рыжий сметанно-томатный соус лишь обволакивает мясо. Никакой жидкости в тарелке. Яркая синяя плоская тарелка как в оригинальном примере, ракурс 45°.",
+      "photo": "/assets/new-dishes/review-v2/nd-beef-stroganoff-classic.webp",
+      "photo_status": "not_started",
+      "owner_visual_review": "pending"
+    },
+    {
+      "id": "nd-beef-stroganoff-mushrooms",
+      "title": "Бефстроганов с грибами",
+      "source_photo_page": 8,
+      "photo_brief": "Тонкие ДЛИННЫЕ ПОЛОСКИ говядины и очень МЕЛКО НАРЕЗАННЫЕ ломтики шампиньонов. НЕТ половинок, целых или крупных четвертинок грибов. Густой бежевый сметанный соус плотно покрывает мясо, без лужи. Белая тарелка: воздушное картофельное пюре сзади, бефстроганов спереди.",
+      "photo": "/assets/new-dishes/review-v2/nd-beef-stroganoff-mushrooms.webp",
+      "photo_status": "not_started",
+      "owner_visual_review": "pending"
+    },
+    {
+      "id": "nd-beef-peppers-soy",
+      "title": "Говядина с болгарским перцем и соевым соусом",
+      "source_photo_page": 9,
+      "photo_brief": "НЕ суп и НЕ тушение. СУХАЯ азиатская обжарка: полоски говядины, длинные красные полоски сладкого перца, чуть лука. Тёмный соевый соус лишь блестящей плёнкой покрывает мясо. НЕТ лужи соуса, воды, жидкости. Белая квадратная миска, тёмный стол, палочки рядом, как в образце.",
+      "photo": "/assets/new-dishes/review-v2/nd-beef-peppers-soy.webp",
+      "photo_status": "not_started",
+      "owner_visual_review": "pending"
+    },
+    {
+      "id": "nd-beef-slow-onion",
+      "title": "Тушёная говядина с луком",
+      "source_photo_page": 11,
+      "photo_brief": "ЛУКА НЕ ВИДНО: он полностью растворился при долгом тушении. Крупные очень мягкие волокнистые куски тёмно-коричневой говядины покрыты единой густой коричневой мясо-луковой массой. НЕТ луковых колец, полосок или кусочков. Тёмное блюдо с лавашом по краю, как в оригинале, без свободного бульона.",
+      "photo": "/assets/new-dishes/review-v2/nd-beef-slow-onion.webp",
+      "photo_status": "not_started",
+      "owner_visual_review": "pending"
+    },
+    {
+      "id": "nd-pork-mushrooms-sourcream",
+      "title": "Свинина с грибами в сметанном соусе",
+      "source_photo_page": 13,
+      "photo_brief": "НЕ суп. Очень ГУСТОЕ цельное блюдо без жидкой подливы. Свинина нарезана небольшими КУБИКАМИ, не полосками и не длинными ломтями. Кусочки тёмных шампиньонов в густой белой сметане, которая обволакивает продукты. Терракотовая глубокая миска, немного рубленого зелёного лука.",
+      "photo": "/assets/new-dishes/review-v2/nd-pork-mushrooms-sourcream.webp",
+      "photo_status": "not_started",
+      "owner_visual_review": "pending"
+    },
+    {
+      "id": "nd-pork-oven-shashlik",
+      "title": "Шашлык в духовке на луковой подушке",
+      "source_photo_page": 14,
+      "photo_brief": "КУСОЧКИ запечённой свинины ОБЩЕЙ КУЧКОЙ на большой белой тарелке; рядом и между ними мягкие золотистые луковые полоски. Мясо лежит свободной россыпью, НЕ нанизано. Категорически БЕЗ шпажек, шампуров, палочек, мангала, решётки, углей. Подрумяненная неровная поверхность мяса.",
+      "photo": "/assets/new-dishes/review-v2/nd-pork-oven-shashlik.webp",
+      "photo_status": "not_started",
+      "owner_visual_review": "pending"
+    }
+  ]
+}
