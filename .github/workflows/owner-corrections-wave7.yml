@@ -1,0 +1,87 @@
+name: Four focused photo corrections on remaining paprika and tomato sauce
+
+on:
+  push:
+    branches:
+      - photo-production/owner-meat-64-20261113
+    paths:
+      - .github/workflows/owner-corrections-wave7.yml
+
+permissions:
+  contents: write
+
+concurrency:
+  group: owner-corrections-wave7-20261113
+  cancel-in-progress: false
+
+jobs:
+  correct-two:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - name: Checkout isolated candidate branch, never touch protected visual baseline
+        uses: actions/checkout@v4
+        with:
+          ref: photo-production/owner-meat-64-20261113
+          persist-credentials: true
+          fetch-depth: 0
+      - name: Checkout Alice AI ART adapter and 1001 recipe metadata
+        uses: actions/checkout@v4
+        with:
+          repository: semen89852698936-create/snachala-uzhin
+          ref: photo-production/yandex-ai-art-1001
+          path: _photo_source
+          sparse-checkout: |
+            photo-pipeline
+            photo-library/recipes.json
+          sparse-checkout-cone-mode: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: python3 -m pip install --quiet 'Pillow>=10,<13'
+      - name: Validate two prompts without API calls
+        run: python3 scripts/regenerate-owner-corrections-wave7.py --mode validate
+      - name: Generate exactly four corrected photos with pre-request paid-intent checkpoints
+        shell: bash
+        env:
+          YANDEX_API_KEY: ${{ secrets.YANDEX_API_KEY }}
+          YANDEX_FOLDER_ID: ${{ secrets.YANDEX_FOLDER_ID || 'b1g00u8p0k5nl98v8nre' }}
+          PHOTO_COST_APPROVED: 'true'
+        run: |
+          set -euo pipefail
+          if [[ -z "$YANDEX_API_KEY" ]]; then
+            echo '::error::Missing Yandex key. No paid requests made.'
+            exit 1
+          fi
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          for n in 32 33 42 43; do
+            state=$(python3 scripts/regenerate-owner-corrections-wave7.py --mode status --n "$n")
+            if [[ "$state" == "DONE" ]]; then
+              echo "SKIP_ALREADY_DONE $n"
+              continue
+            fi
+            if [[ "$state" != "NEW" ]]; then
+              echo "::error::Unresolved paid request for $n. Never duplicate."
+              exit 1
+            fi
+            python3 scripts/regenerate-owner-corrections-wave7.py --mode reserve --n "$n"
+            git add -A photo-library/regeneration-owner-meat-64-20261113/revision7/
+            git commit -m "Reserve one paid photo correction n=$n before API call"
+            git push origin HEAD:refs/heads/photo-production/owner-meat-64-20261113
+            set +e
+            python3 scripts/regenerate-owner-corrections-wave7.py --mode execute --n "$n"
+            result=$?
+            set -e
+            git add -A photo-library/regeneration-owner-meat-64-20261113/revision7/
+            if ! git diff --cached --quiet; then
+              git diff --cached --check
+              git commit -m "Store photo correction n=$n for visual QA; not published"
+              git push origin HEAD:refs/heads/photo-production/owner-meat-64-20261113
+            fi
+            if [[ "$result" -ne 0 ]]; then
+              echo "::error::Correction request incomplete. Reservation preserved; stop without retry."
+              exit "$result"
+            fi
+          done
+          echo 'All correction images are only candidates. Perform visual QA before publishing.'
