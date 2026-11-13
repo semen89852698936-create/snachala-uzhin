@@ -36,9 +36,12 @@ def main() -> int:
     parser.add_argument("--end", type=int, default=10)
     parser.add_argument("--limit", type=int, default=10)
     parser.add_argument("--execute", action="store_true")
+    parser.add_argument("--reserve-only", action="store_true", help="Write a durable no-cost reservation before requesting any image")
     args = parser.parse_args()
     if not 1 <= args.start <= args.end <= 10 or not 1 <= args.limit <= 10:
         parser.error("Expected start/end and limit within 1..10")
+    if args.execute and args.reserve_only:
+        parser.error("--execute and --reserve-only cannot be combined")
     if args.execute and (
         os.getenv("PHOTO_COST_APPROVED") != "true"
         or not os.getenv("YANDEX_API_KEY")
@@ -79,6 +82,19 @@ def main() -> int:
             skipped += 1
             continue
 
+        if args.reserve_only:
+            if uncertain.exists():
+                raise RuntimeError(f"Unresolved earlier reservation for {rid}; manual review required")
+            core.atomic_write(uncertain, json.dumps({
+                "id": rid, "status": "prepared_not_sent", "created_at": core.utc_now(),
+                "prompt": prompt, "never_retry_automatically": True,
+            }, ensure_ascii=False, indent=2).encode("utf-8"))
+            print(json.dumps({"number": number, "id": rid, "reserved": True}, ensure_ascii=False))
+            generated += 1
+            if generated >= args.limit:
+                break
+            continue
+
         if not args.execute:
             print(json.dumps({
                 "number": number, "id": rid, "photo_reference_page": recipe["source_photo_page"],
@@ -90,7 +106,9 @@ def main() -> int:
             continue
 
         if uncertain.exists() and not raw_path.exists():
-            raise RuntimeError(f"Uncertain paid generation for {rid}; manual recovery required")
+            record_state = json.loads(uncertain.read_text(encoding="utf-8")).get("status")
+            if record_state != "prepared_not_sent":
+                raise RuntimeError(f"Uncertain paid generation for {rid}; manual recovery required")
         if raw_path.exists():
             raw = raw_path.read_bytes()
         else:
