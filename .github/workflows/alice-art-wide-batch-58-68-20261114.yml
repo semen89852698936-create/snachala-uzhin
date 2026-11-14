@@ -1,0 +1,135 @@
+name: Alice AI ART - corrected wide plate candidates 58-68
+on:
+  push:
+    branches:
+      - photo-production/alice-art-wide-frame-58-68-20261114
+    paths:
+      - .github/workflows/alice-art-wide-batch-58-68-20261114.yml
+permissions:
+  contents: write
+concurrency:
+  group: alice-art-wide-batch-58-68-20261114
+  cancel-in-progress: false
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 59
+    steps:
+      - name: Checkout isolated correction branch
+        uses: actions/checkout@v4
+        with:
+          ref: photo-production/alice-art-wide-frame-58-68-20261114
+          fetch-depth: 0
+          persist-credentials: true
+      - name: Checkout original Alice AI ART code read-only
+        uses: actions/checkout@v4
+        with:
+          repository: semen89852698936-create/snachala-uzhin
+          ref: photo-production/yandex-ai-art-1001
+          path: _photo_source
+          sparse-checkout: |
+            photo-pipeline
+            photo-library/recipes.json
+          sparse-checkout-cone-mode: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: python -m pip install --quiet 'Pillow>=10,<13'
+      - name: Run one paid request per photo with checkpoint before calling Yandex
+        shell: bash
+        env:
+          YANDEX_API_KEY: ${{ secrets.YANDEX_API_KEY }}
+          YANDEX_FOLDER_ID: ${{ secrets.YANDEX_FOLDER_ID || 'b1g00u8p0k5nl98v8nre' }}
+          PHOTO_COST_APPROVED: 'true'
+        run: |
+          set -euo pipefail
+          test -n "${YANDEX_API_KEY:-}"
+          test -n "${YANDEX_FOLDER_ID:-}"
+          python3 - <<'PY'
+          import hashlib, importlib.util, json, os, subprocess
+          from pathlib import Path
+          from datetime import datetime, timezone
+
+          branch='photo-production/alice-art-wide-frame-58-68-20261114'
+          base=Path('photo-library/alice-art-wide-frame-58-68-20261114')
+          out=base/'final-pass'
+          plan=json.loads((base/'final-pass-plan.json').read_text(encoding='utf-8'))
+          recipes=json.loads(Path('_photo_source/photo-library/recipes.json').read_text(encoding='utf-8'))['recipes']
+          by_n={int(r['n']):r for r in recipes}
+          items=plan['items']
+          assert plan['max_paid_requests']==len(items)==11
+          assert [int(x['photo_number']) for x in items]==list(range(58,69))
+          for item in items:
+              match=by_n[int(item['recipe_n'])]
+              assert item['recipe_id']==match['id'], item
+              assert item['title']==match['title'].replace('с сливками','со сливками'), item
+              assert 1<=len(item['prompt'])<=500 and not item['publish_to_site']
+
+          adapter=importlib.util.spec_from_file_location('aliceart','_photo_source/photo-pipeline/generate_yandexart.py')
+          ym=importlib.util.module_from_spec(adapter)
+          adapter.loader.exec_module(ym)
+          def git(*args):
+              subprocess.run(['git',*args],check=True)
+
+          git('config','user.name','github-actions[bot]')
+          git('config','user.email','41898282+github-actions[bot]@users.noreply.github.com')
+
+          complete=0
+          blocked=[]
+          for x in items:
+              n=int(x['photo_number'])
+              stem=f"{n:04d}-{x['recipe_id']}"
+              photo=out/'candidates'/f'{stem}.webp'
+              record=out/'records'/f'{stem}.json'
+              pending=out/'pending'/f'{stem}.json'
+
+              if photo.exists() and record.exists():
+                  saved=json.loads(record.read_text(encoding='utf-8'))
+                  assert hashlib.sha256(photo.read_bytes()).hexdigest()==saved['sha256']
+                  print(f'EXISTING_VERIFIED {n}',flush=True)
+                  complete+=1
+                  continue
+              if photo.exists() or record.exists():
+                  raise RuntimeError(f'Partial saved photo {n}: must reconcile before new request')
+              if pending.exists():
+                  blocked.append(n)
+                  print(f'BLOCKED_UNCERTAIN_PRIOR_CHARGE {n}',flush=True)
+                  continue
+
+              marker={
+                  'photo_number':n, 'recipe_id':x['recipe_id'],
+                  'status':'one_paid_request_started_never_auto_retry',
+                  'requested_at':datetime.now(timezone.utc).isoformat(),
+                  'prompt':x['prompt']
+              }
+              ym.atomic_write(pending,json.dumps(marker,ensure_ascii=False,indent=2).encode())
+              git('add',str(pending))
+              git('commit','-m',f'Alice AI ART wide: reserve paid request {n} before API call')
+              git('push','origin','HEAD:refs/heads/'+branch)
+
+              payload=ym.request_image(x['prompt'],os.environ['YANDEX_API_KEY'],os.environ['YANDEX_FOLDER_ID'])
+              webp=ym.encode_webp(payload)
+              digest=hashlib.sha256(webp).hexdigest()
+              ym.atomic_write(photo,webp)
+              metadata={
+                  'photo_number':n, 'recipe_n':x['recipe_n'],
+                  'recipe_id':x['recipe_id'], 'title':x['title'], 'model':'aliceai-image-art-3.0',
+                  'prompt':x['prompt'], 'size':[1200,900], 'bytes':len(webp),
+                  'sha256':digest, 'status':'candidate_owner_review_required', 
+                  'site_published':False,
+                  'generated_at':datetime.now(timezone.utc).isoformat()
+              }
+              ym.atomic_write(record,json.dumps(metadata,ensure_ascii=False,indent=2).encode())
+              pending.unlink()
+              git('add','-A',str(out))
+              git('diff','--cached','--check')
+              git('commit','-m',f'Alice AI ART wide: save corrected candidate {n} not for site')
+              git('push','origin','HEAD:refs/heads/'+branch)
+              print(f'SAVED_WIDE {n} {digest} {len(webp)}',flush=True)
+              complete+=1
+
+          print(f'FINAL_WIDE_CANDIDATES {complete}/11, unresolved={blocked}',flush=True)
+          if blocked:
+              raise RuntimeError(f'Previous paid calls unresolved: {blocked}. No automatic retry.')
+          assert complete==11
+          PY
