@@ -1,0 +1,67 @@
+name: Alice AI ART 3.0 - no green pepper, cooked irregular pork 63 66 67
+on:
+  push:
+    branches:
+      - photo-production/alice-art-pepper-free-fried-chops-20261115
+    paths:
+      - .github/workflows/alice-art-pepper-free-fried-chops-20261115.yml
+permissions:
+  contents: write
+concurrency:
+  group: alice-art-pepper-free-fried-chops-20261115
+  cancel-in-progress: false
+jobs:
+  produce:
+    runs-on: ubuntu-latest
+    timeout-minutes: 59
+    steps:
+      - name: Checkout isolated photo correction branch
+        uses: actions/checkout@v4
+        with:
+          ref: photo-production/alice-art-pepper-free-fried-chops-20261115
+          persist-credentials: true
+          fetch-depth: 0
+      - name: Checkout original Alice AI ART 3.0 adapter read-only
+        uses: actions/checkout@v4
+        with:
+          repository: semen89852698936-create/snachala-uzhin
+          ref: photo-production/yandex-ai-art-1001
+          path: _photo_source
+          sparse-checkout: |
+            photo-pipeline
+            photo-library/recipes.json
+          sparse-checkout-cone-mode: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install libraries for original image preserving retouch and Alice encoding
+        run: python -m pip install --quiet 'Pillow>=10,<13' 'numpy>=1.25,<3' 'opencv-python-headless>=4.9,<5'
+      - name: Retouch green pepper #63 and generate fully fried irregular pork #66 and #67
+        shell: bash
+        env:
+          YANDEX_API_KEY: ${{ secrets.YANDEX_API_KEY }}
+          YANDEX_FOLDER_ID: ${{ secrets.YANDEX_FOLDER_ID || 'b1g00u8p0k5nl98v8nre' }}
+          PHOTO_COST_APPROVED: 'true'
+        run: |
+          set -euo pipefail
+          test -n "${YANDEX_API_KEY:-}"
+          test -n "${YANDEX_FOLDER_ID:-}"
+          python3 photo-library/alice-art-pepper-free-fried-chops-20261115/run.py
+      - name: Build fresh actual review photo sheets, preserve approvals
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 photo-library/alice-art-pepper-free-fried-chops-20261115/create_sheet.py
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add photo-library/alice-art-pepper-free-fried-chops-20261115/comparison-new-63-66-67.jpg
+          git add photo-library/alice-art-pepper-free-fried-chops-20261115/contact-sheet-current-58-68.jpg
+          git add photo-library/alice-art-pepper-free-fried-chops-20261115/review-manifest.json
+          git diff --cached --check
+          if git diff --cached --quiet; then
+            echo SHEETS_ALREADY_CURRENT
+          else
+            git commit -m 'photos: show actual new 63 66 67, preserve accepted 59 61 65'
+            git push origin HEAD:refs/heads/photo-production/alice-art-pepper-free-fried-chops-20261115
+          fi
+          echo OWNER_REVIEW_SHEETS_READY
