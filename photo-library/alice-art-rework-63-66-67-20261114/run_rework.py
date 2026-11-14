@@ -72,13 +72,11 @@ else:
     # Remove isolated camera/noise dots and retain pea bodies; each pea is a solid colored circle.
     clean=cv2.morphologyEx(color,cv2.MORPH_OPEN,
                            cv2.getStructuringElement(cv2.MORPH_ELLIPSE,(5,5)))
-    count,cc,stats,centers=cv2.connectedComponentsWithStats(clean,8)
+    count,cc,stats,centers=cv2.connectedComponentsWithStats(clean,connectivity=8)
     pea_mask=np.zeros((900,1200),np.uint8)
     accepted=[]
     for i in range(1,count):
         x,y,w,h,area=map(int,stats[i])
-        if area>=42 and w<=85 and h<=85 and 2<=w/h<=3: # overwritten below for round
-            pass
         if area>=42 and 6<=w<=85 and 6<=h<=85:
             # Peas: round blobs of color, unlike many thin herb strands.
             ratio=w/h
