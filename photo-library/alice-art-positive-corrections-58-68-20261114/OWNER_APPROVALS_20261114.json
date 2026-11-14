@@ -1,0 +1,43 @@
+{
+  "project": "СНАЧАЛА УЖИН",
+  "batch": "58-68",
+  "status": "user_approved_exact_images",
+  "source": "explicit owner approval in current chat",
+  "date": "2026-11-14",
+  "immutable_photo_sha256": true,
+  "approved": [
+    {
+      "photo_number": 59,
+      "recipe_n": 102,
+      "recipe_id": "collection-meat-09-04",
+      "sha256": "914437872a6e0724fc269768a037013f780645bc43c913846ea1c358323bfbba",
+      "path": "photo-library/alice-art-positive-corrections-58-68-20261114/candidates/0059-collection-meat-09-04.webp",
+      "model": "aliceai-image-art-3.0",
+      "approval": "approved_by_owner",
+      "approved_on": "2026-11-14",
+      "site_published": false
+    },
+    {
+      "photo_number": 61,
+      "recipe_n": 104,
+      "recipe_id": "collection-meat-09-06",
+      "sha256": "ba28cbe34633c2047e607aec464e56b4604a23cf099e85ad219b4da60a3fc6f4",
+      "path": "photo-library/alice-art-positive-corrections-58-68-20261114/candidates/0061-collection-meat-09-06.webp",
+      "model": "aliceai-image-art-3.0",
+      "approval": "approved_by_owner",
+      "approved_on": "2026-11-14",
+      "site_published": false
+    },
+    {
+      "photo_number": 65,
+      "recipe_n": 108,
+      "recipe_id": "collection-meat-09-10",
+      "sha256": "51065b9a70b9ceb5da53e6ec443ee7245cd6f38cea165c313e49eaf9887623ab",
+      "path": "photo-library/alice-art-positive-corrections-58-68-20261114/candidates/0065-collection-meat-09-10.webp",
+      "model": "aliceai-image-art-3.0",
+      "approval": "approved_by_owner",
+      "approved_on": "2026-11-14",
+      "site_published": false
+    }
+  ]
+}
