@@ -1,0 +1,96 @@
+name: Alice AI ART - subtle pullback 3/4 angle pilot 67
+on:
+  push:
+    branches:
+      - photo-production/alice-art-angled-plus-plate-20261114
+    paths:
+      - .github/workflows/alice-art-angled-plus-plate-pilot-67.yml
+permissions:
+  contents: write
+concurrency:
+  group: alice-art-angled-plus-plate-pilot-67
+  cancel-in-progress: false
+jobs:
+  generate-one:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: photo-production/alice-art-angled-plus-plate-20261114
+          persist-credentials: true
+          fetch-depth: 0
+      - name: Read-only Alice AI ART adapter
+        uses: actions/checkout@v4
+        with:
+          repository: semen89852698936-create/snachala-uzhin
+          ref: photo-production/yandex-ai-art-1001
+          path: _photo_source
+          sparse-checkout: |
+            photo-pipeline
+            photo-library/recipes.json
+          sparse-checkout-cone-mode: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: python -m pip install --quiet 'Pillow>=10,<13'
+      - name: Generate exactly one review candidate
+        shell: bash
+        env:
+          YANDEX_API_KEY: ${{ secrets.YANDEX_API_KEY }}
+          YANDEX_FOLDER_ID: ${{ secrets.YANDEX_FOLDER_ID || 'b1g00u8p0k5nl98v8nre' }}
+          PHOTO_COST_APPROVED: 'true'
+        run: |
+          set -euo pipefail
+          test -n "${YANDEX_API_KEY:-}"
+          test -n "${YANDEX_FOLDER_ID:-}"
+          python3 - <<'PY'
+          import hashlib, importlib.util, json, os, subprocess
+          from datetime import datetime, timezone
+          from pathlib import Path
+          branch='photo-production/alice-art-angled-plus-plate-20261114'
+          base=Path('photo-library/alice-art-angled-plus-plate-20261114')
+          marker=base/'pilot-67-request.json'
+          img=base/'pilot-67.webp'
+          metadata=base/'pilot-67.json'
+          task=json.loads(marker.read_text(encoding='utf8'))
+          recipes=json.loads(Path('_photo_source/photo-library/recipes.json').read_text(encoding='utf8'))['recipes']
+          assert len([r for r in recipes if r['n']==110 and r['id']==task['recipe_id'] and r['title']==task['title']])==1
+          assert task['status'] in ('reserved_not_sent','generated_not_published')
+          assert task['max_paid_requests']==1 and task['site_published'] is False and len(task['prompt'])<=500
+          spec=importlib.util.spec_from_file_location('alice','_photo_source/photo-pipeline/generate_yandexart.py')
+          alice=importlib.util.module_from_spec(spec);spec.loader.exec_module(alice)
+          def git(*args): subprocess.run(['git',*args],check=True)
+          if img.exists() and metadata.exists():
+              obj=json.loads(metadata.read_text(encoding='utf8'))
+              assert hashlib.sha256(img.read_bytes()).hexdigest()==obj['sha256']
+              print('PILOT_ALREADY_VALID: do not call paid API twice')
+              raise SystemExit(0)
+          assert not img.exists() and not metadata.exists()
+          assert task['status']=='reserved_not_sent','Prior paid intent exists; no retry'
+          git('config','user.name','github-actions[bot]')
+          git('config','user.email','41898282+github-actions[bot]@users.noreply.github.com')
+          task['status']='paid_request_started_no_auto_retry'
+          task['started_at']=datetime.now(timezone.utc).isoformat()
+          alice.atomic_write(marker,json.dumps(task,ensure_ascii=False,indent=2).encode('utf8'))
+          git('add',str(marker))
+          git('commit','-m','Alice AI ART: checkpoint three-quarter pilot before paid call')
+          git('push','origin','HEAD:refs/heads/'+branch)
+          raw=alice.request_image(task['prompt'],os.environ['YANDEX_API_KEY'],os.environ['YANDEX_FOLDER_ID'])
+          webp=alice.encode_webp(raw)
+          digest=hashlib.sha256(webp).hexdigest()
+          alice.atomic_write(img,webp)
+          info={
+             'photo_number':67,'recipe_n':110,'recipe_id':task['recipe_id'],'title':task['title'],
+             'status':'review_only','sha256':digest,'size':[1200,900],'bytes':len(webp),
+             'site_published':False,'prompt':task['prompt'],'created_at':datetime.now(timezone.utc).isoformat()
+          }
+          alice.atomic_write(metadata,json.dumps(info,ensure_ascii=False,indent=2).encode('utf8'))
+          task['status']='generated_not_published'
+          alice.atomic_write(marker,json.dumps(task,ensure_ascii=False,indent=2).encode('utf8'))
+          git('add','-A',str(base))
+          git('diff','--cached','--check')
+          git('commit','-m','Alice AI ART: save three-quarter side-view pilot 67 for review')
+          git('push','origin','HEAD:refs/heads/'+branch)
+          print('SUCCESS_SIDE_ANGLE_PILOT_67',digest)
+          PY
