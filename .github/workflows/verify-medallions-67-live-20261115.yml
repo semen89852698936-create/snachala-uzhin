@@ -1,0 +1,72 @@
+name: Verify live approved medallions photo #67 byte-for-byte
+on:
+  push:
+    branches:
+      - audit/verify-approved-medallions-67-live-20261115
+    paths:
+      - .github/workflows/verify-medallions-67-live-20261115.yml
+permissions:
+  contents: write
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: audit/verify-approved-medallions-67-live-20261115
+          persist-credentials: true
+      - name: Verify exact deployed asset matches user-approved image
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 - <<'PY'
+          import hashlib,json,time,urllib.request
+          from pathlib import Path
+          base="https://snachala-uzhin-preview-hlkusw18i-chaika2.vercel.app"
+          photo="/assets/recipes-ai/0067-collection-meat-05-09-approved-20261115.webp"
+          expected="3490f74e628c84393e962b6dfa9d3adf5b276b651ac7fd1b90e4d34806c11397"
+          output={}
+          for path in ["/", "/full-catalog/", photo]:
+              request=urllib.request.Request(base+path,headers={"User-Agent":"ApprovedPhotoVerifier/1.0","Cache-Control":"no-cache"})
+              last=None
+              for attempt in range(3):
+                  try:
+                      with urllib.request.urlopen(request,timeout=25) as response:
+                          body=response.read()
+                          status=response.status
+                          ctype=response.headers.get("Content-Type","")
+                          break
+                  except Exception as exc:
+                      last=str(exc)
+                      time.sleep(2)
+              else:raise RuntimeError(f"Cannot reach deployed {path}: {last}")
+              output[path]={"status":status,"bytes":len(body),"content_type":ctype}
+              assert status==200,(path,status)
+              if path==photo:
+                  checksum=hashlib.sha256(body).hexdigest()
+                  assert checksum==expected, f"WRONG DEPLOYED PHOTO: SHA256 {checksum}, expected {expected}"
+                  assert body[:4]==b"RIFF" and body[8:12]==b"WEBP"
+                  output[path]["sha256"]=checksum
+                  output[path]["match_approved_photo"]=True
+              else:
+                  html=body.decode("utf-8")
+                  assert "Медальоны из свинины с яблоком и шалфеем" in html, path
+                  assert html.count(photo)==1,(path,html.count(photo))
+                  output[path]["correct_photo_path_in_recipe"]=True
+          # Ensure local working tree asset is the same expected Git blob too.
+          asset=Path("assets/recipes-ai/0067-collection-meat-05-09-approved-20261115.webp")
+          assert hashlib.sha256(asset.read_bytes()).hexdigest()==expected
+          Path("audit/verify-medallions-67-live-20261115.json").write_text(json.dumps(output,ensure_ascii=False,indent=2)+"\n")
+          print("LIVE_APPROVED_PHOTO_VERIFIED",json.dumps(output,ensure_ascii=False))
+          PY
+      - name: Record externally verified results on audit branch only
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add audit/verify-medallions-67-live-20261115.json
+          git diff --cached --check
+          git commit -m 'audit: verify deployed pork medallions equal owner-approved WebP hash'
+          git push origin HEAD:refs/heads/audit/verify-approved-medallions-67-live-20261115
