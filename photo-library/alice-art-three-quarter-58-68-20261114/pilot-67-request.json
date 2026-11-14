@@ -5,8 +5,9 @@
   "title": "Свиные отбивные с грибами и розмарином",
   "prompt": "Фотореалистичная журнальная фуд-фотография. Камера СБОКУ ЧУТЬ СВЕРХУ, ракурс 35 градусов к плоскости стола, НЕ вид сверху и НЕ flat lay. Светлая керамическая тарелка полностью видна вместе с ободком, вокруг узкая полоса стола. ДВЕ румяные свиные отбивные; РЯДОМ отдельно обжаренные шампиньоны с мелко нарезанным розмарином. Никаких целых веточек, посторонних овощей, соуса, текста. Объёмная подача и мягкий тёплый свет, как в редакционной ресторанной съёмке.",
   "model": "aliceai-image-art-3.0",
-  "status": "reserved_not_sent",
+  "status": "paid_request_started_no_auto_retry",
   "site_published": false,
   "max_paid_requests": 1,
-  "goal": "test three-quarter view full-plate coherent with published meat photo series 51-57"
+  "goal": "test three-quarter view full-plate coherent with published meat photo series 51-57",
+  "started_at": "2026-11-14T19:14:17.415992+00:00"
 }
