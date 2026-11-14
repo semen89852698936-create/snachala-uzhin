@@ -1,0 +1,174 @@
+name: Publish seven owner-approved Alice AI ART 3.0 photographs only
+on:
+  push:
+    branches:
+      - release/approved-seven-photos-20261115
+    paths:
+      - .github/workflows/publish-approved-seven-photos-20261115.yml
+permissions:
+  contents: write
+concurrency:
+  group: owner-approved-seven-photo-publish-20261115
+  cancel-in-progress: false
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - name: Checkout approved editorial release without modifying design
+        uses: actions/checkout@v4
+        with:
+          ref: release/approved-seven-photos-20261115
+          fetch-depth: 0
+          persist-credentials: true
+      - name: Checkout approved photo source for 59 61 63 65 66 67
+        uses: actions/checkout@v4
+        with:
+          repository: semen89852698936-create/snachala-uzhin
+          ref: photo-production/alice-art-67-browned-no-bone-20261115
+          path: _approved_photos
+          sparse-checkout: |
+            photo-library/alice-art-positive-corrections-58-68-20261114/OWNER_APPROVALS_20261114.json
+            photo-library/alice-art-positive-corrections-58-68-20261114/candidates/0059-collection-meat-09-04.webp
+            photo-library/alice-art-positive-corrections-58-68-20261114/candidates/0061-collection-meat-09-06.webp
+            photo-library/alice-art-positive-corrections-58-68-20261114/candidates/0065-collection-meat-09-10.webp
+            photo-library/alice-art-pepper-free-fried-chops-20261115/polished/0063-collection-meat-09-08.webp
+            photo-library/alice-art-pepper-free-fried-chops-20261115/polished/0063-collection-meat-09-08.json
+            photo-library/alice-art-pepper-free-fried-chops-20261115/candidates/0066-collection-meat-10-01.webp
+            photo-library/alice-art-pepper-free-fried-chops-20261115/records/0066-collection-meat-10-01.json
+            photo-library/alice-art-pepper-free-fried-chops-20261115/new67v3/candidates/0067-collection-meat-10-02.webp
+            photo-library/alice-art-pepper-free-fried-chops-20261115/new67v3/records/0067-collection-meat-10-02.json
+          sparse-checkout-cone-mode: false
+          persist-credentials: false
+      - name: Checkout specifically approved meatballs photograph 4
+        uses: actions/checkout@v4
+        with:
+          repository: semen89852698936-create/snachala-uzhin
+          ref: photo-production/alice-art-meatballs-004-20261114
+          path: _approved_meatballs
+          sparse-checkout: |
+            photo-library/alice-art-meatballs-004-20261114/candidates/0004-meatballs.webp
+            photo-library/alice-art-meatballs-004-20261114/OWNER_APPROVAL_0004.json
+          sparse-checkout-cone-mode: false
+          persist-credentials: false
+      - name: Check exact approved source hashes and replace exactly seven mapped images
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 - <<'PY'
+          import copy, hashlib, json, shutil, subprocess
+          from pathlib import Path
+          
+          def read_json(path):
+              return json.loads(Path(path).read_text(encoding="utf-8"))
+          def hash256(data):
+              return hashlib.sha256(data).hexdigest()
+          def blob_sha(data):
+              header=b"blob "+str(len(data)).encode("ascii")+b"\x00"
+              return hashlib.sha1(header+data).hexdigest()
+          
+          src=Path("_approved_photos")
+          meat=Path("_approved_meatballs")
+          mpath=Path("photo-library/ai-recipe-photo-map.json")
+          manifest=read_json(mpath)
+          assert len(manifest["photos"])==manifest["total"]==1001
+          before=copy.deepcopy(manifest)
+          
+          selected=[
+              # Display numbers 59,61,63,65,66,67 label the 58-68 production
+              # series. Their REAL recipe positions are 102,104,106,108,109,110.
+              (4, "meatballs", "assets/recipes-ai/0004-meatballs.webp",
+               meat/"photo-library/alice-art-meatballs-004-20261114/candidates/0004-meatballs.webp",
+               "5f82eda7a396c7e79c1e4fe20631de5f2c0e9b6709e56c6b0b44359c7d734b2a"),
+              (102, "collection-meat-09-04", "assets/recipes-ai/0102-collection-meat-09-04.webp",
+               src/"photo-library/alice-art-positive-corrections-58-68-20261114/candidates/0059-collection-meat-09-04.webp",
+               "914437872a6e0724fc269768a037013f780645bc43c913846ea1c358323bfbba"),
+              (104, "collection-meat-09-06", "assets/recipes-ai/0104-collection-meat-09-06.webp",
+               src/"photo-library/alice-art-positive-corrections-58-68-20261114/candidates/0061-collection-meat-09-06.webp",
+               "ba28cbe34633c2047e607aec464e56b4604a23cf099e85ad219b4da60a3fc6f4"),
+              (106, "collection-meat-09-08", "assets/recipes-ai/0106-collection-meat-09-08.webp",
+               src/"photo-library/alice-art-pepper-free-fried-chops-20261115/polished/0063-collection-meat-09-08.webp",
+               "3d5a36651c9947a4377631647ef6917bda5163669effcec696f2568a3ef57b10"),
+              (108, "collection-meat-09-10", "assets/recipes-ai/0108-collection-meat-09-10.webp",
+               src/"photo-library/alice-art-positive-corrections-58-68-20261114/candidates/0065-collection-meat-09-10.webp",
+               "51065b9a70b9ceb5da53e6ec443ee7245cd6f38cea165c313e49eaf9887623ab"),
+              (109, "collection-meat-10-01", "assets/recipes-ai/0109-collection-meat-10-01.webp",
+               src/"photo-library/alice-art-pepper-free-fried-chops-20261115/candidates/0066-collection-meat-10-01.webp",
+               "63fe6d54e4828d016cd70f9d2441694c10bc3db21c453501ade78d7f1fe3d19b"),
+              (110, "collection-meat-10-02", "assets/recipes-ai/0110-collection-meat-10-02.webp",
+               src/"photo-library/alice-art-pepper-free-fried-chops-20261115/new67v3/candidates/0067-collection-meat-10-02.webp",
+               "02b36c05cc701f2a41695c21db1937e0a52ff00af8ee7ad4d662a7b412674b96"),
+          ]
+          approved=read_json(src/"photo-library/alice-art-positive-corrections-58-68-20261114/OWNER_APPROVALS_20261114.json")
+          approved_hash={int(x["photo_number"]):x["sha256"] for x in approved["approved"]}
+          assert approved_hash == {
+              59:selected[1][4],61:selected[2][4],65:selected[4][4]
+          }, "Confirmed owner approved photo digest mismatch"
+          meat_approval=read_json(meat/"photo-library/alice-art-meatballs-004-20261114/OWNER_APPROVAL_0004.json")
+          assert meat_approval["sha256"]==selected[0][4] and meat_approval["status"]=="approved_by_owner"
+          for n,path in [(63,"polished/0063-collection-meat-09-08.json"),
+                         (66,"records/0066-collection-meat-10-01.json"),
+                         (67,"new67v3/records/0067-collection-meat-10-02.json")]:
+              record=read_json(src/("photo-library/alice-art-pepper-free-fried-chops-20261115/"+path))
+              expected=next(x[4] for x in selected if x[0]=={63:106,66:109,67:110}[n])
+              assert record["sha256"]==expected, f"Wrong Alice photo {n}"
+              assert record.get("site_published") is False
+          
+          by_number={int(p["n"]):p for p in manifest["photos"]}
+          assert len(by_number)==1001
+          changes=[]
+          for number,recipe_id,dest,photo,expected_sha256 in selected:
+              assert photo.is_file(), f"Photo missing: {photo}"
+              data=photo.read_bytes()
+              assert data.startswith(b"RIFF") and data[8:12]==b"WEBP", f"Not WEBP {number}"
+              assert hash256(data)==expected_sha256, f"Owner approved content differs for {number}"
+              entry=by_number[number]
+              assert entry["recipe_id"]==recipe_id and entry["path"]=="/"+dest, f"Incorrect recipe mapping: {number}"
+              old_target=Path(dest)
+              assert old_target.is_file(), f"Original site asset missing: {dest}"
+              assert blob_sha(old_target.read_bytes())==entry["sha"], f"Map out of sync before edits: {number}"
+              old_target.write_bytes(data)
+              entry["sha"]=blob_sha(data)
+              entry["bytes"]=len(data)
+              changes.append(dest)
+          
+          # All unselected photo entries are untouched including other 59/61 IDs.
+          excluded={x[0] for x in selected}
+          for old,new in zip(before["photos"],manifest["photos"]):
+              if int(old["n"]) not in excluded:
+                  assert old==new, f"Unrequested recipe {old['n']} changed"
+              else:
+                  assert {k:v for k,v in old.items() if k not in ("sha","bytes")} == {k:v for k,v in new.items() if k not in ("sha","bytes")}
+          assert {k:v for k,v in before.items() if k!="photos"} == {k:v for k,v in manifest.items() if k!="photos"}
+          mpath.write_text(json.dumps(manifest,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
+          
+          # Original HTML points to precisely these paths; not changing a byte of HTML/CSS.
+          for html in ["index.html","full-catalog/index.html"]:
+              body=Path(html).read_text(encoding="utf-8")
+              for _,_,dest,_,_ in selected:
+                  assert body.count("/"+dest)==1, f"Photo path missing or duplicated in {html}: {dest}"
+          
+          tracked=subprocess.check_output(["git","diff","--name-only"],text=True).splitlines()
+          expected_changed=sorted(changes+[str(mpath)])
+          assert sorted(tracked)==expected_changed, f"Unexpected file modifications: {set(tracked)^set(expected_changed)}"
+          print(json.dumps({"status":"ALL_SEVEN_VERIFIED","recipe_numbers":[x[0] for x in selected],
+                            "new_paths":changes,"untouched_other_photos":994,"css_html_unchanged":True},ensure_ascii=False))
+          PY
+      - name: Commit only approved WebP photos and one image map
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add assets/recipes-ai/0004-meatballs.webp
+          git add assets/recipes-ai/0102-collection-meat-09-04.webp
+          git add assets/recipes-ai/0104-collection-meat-09-06.webp
+          git add assets/recipes-ai/0106-collection-meat-09-08.webp
+          git add assets/recipes-ai/0108-collection-meat-09-10.webp
+          git add assets/recipes-ai/0109-collection-meat-10-01.webp
+          git add assets/recipes-ai/0110-collection-meat-10-02.webp
+          git add photo-library/ai-recipe-photo-map.json
+          git diff --cached --check
+          git commit -m 'photos: publish seven owner-approved Alice AI ART 3.0 images only'
+          git push origin HEAD:refs/heads/release/approved-seven-photos-20261115
+          echo "SEVEN_APPROVED_PHOTOS_COMMITTED"
