@@ -1,8 +1,18 @@
 {
   "photo_number": 67,
+  "recipe_n": 110,
   "recipe_id": "collection-meat-10-02",
-  "source": "photo-library/alice-art-three-quarter-58-68-20261114/final-pass/candidates/0067-collection-meat-10-02.webp",
+  "title": "Свиные отбивные с грибами и розмарином",
+  "model": "aliceai-image-art-3.0",
   "prompt": "Фотореалистичная фуд-фотография, камера сбоку под 35° к столу, НЕ сверху. Та же светлая керамическая тарелка целиком в кадре, занимает 75% ширины, вокруг видна столешница. Мягкий тёплый свет. ДВЕ РУМЯНЫЕ СВИНЫЕ ОТБИВНЫЕ СТРОГО БЕЗ КОСТОЧКИ, без костей, рёбер и костных фрагментов. Рядом отдельно обжаренные нарезанные шампиньоны, очень мелко нарезанный розмарин, никаких веточек. Сохранить форму, размер порций и расположение грибов. Никаких иных украшений, текста или рук.",
-  "status": "paid_request_started_never_auto_retry",
-  "started_at": "2026-11-14T20:20:45.257247+00:00"
+  "source": "photo-library/alice-art-three-quarter-58-68-20261114/final-pass/candidates/0067-collection-meat-10-02.webp",
+  "sha256": "b5af7352d327807fdebc32b5eb51315766b7b3a8e3030a1851febf631ff4a3e9",
+  "bytes": 133220,
+  "size": [
+    1200,
+    900
+  ],
+  "status": "candidate_owner_review_required",
+  "site_published": false,
+  "generated_at": "2026-11-14T20:20:51.382403+00:00"
 }
