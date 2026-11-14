@@ -16,8 +16,9 @@
     1200,
     900
   ],
-  "status": "candidate_owner_review_required",
-  "owner_approved": false,
+  "status": "approved_by_owner_not_published",
+  "owner_approved": true,
   "site_published": false,
-  "generated_at": "2026-11-14T21:03:48.413722+00:00"
+  "generated_at": "2026-11-14T21:03:48.413722+00:00",
+  "owner_approved_on": "2026-11-15"
 }
