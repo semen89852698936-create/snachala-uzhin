@@ -1,0 +1,135 @@
+{
+  "model": "aliceai-image-art-3.0",
+  "sheet_sha256": "6898ff74bde63a54cc94a0bf1456e8133368259799cd6a5cf71e71ff208b3ac6",
+  "generated_at": "2026-11-14T20:59:27.240962+00:00",
+  "all_published": false,
+  "owner_approved_numbers": [
+    59,
+    61,
+    65
+  ],
+  "owner_approvals_file": "photo-library/alice-art-positive-corrections-58-68-20261114/OWNER_APPROVALS_20261114.json",
+  "items": [
+    {
+      "number": 58,
+      "title": "Мясо с горчицей и мёдом",
+      "path": "photo-library/alice-art-three-quarter-58-68-20261114/final-pass/candidates/0058-collection-meat-09-03.webp",
+      "origin": "original",
+      "status": "ОРИГИНАЛ · БЕЗ ПРАВОК",
+      "sha256": "81bfcde761f74e0ee5afcd37b8232f40256db43f8a7375b3025b790c3fd003f4",
+      "approved": null,
+      "approved_on": null,
+      "site_published_by_this_workflow": false
+    },
+    {
+      "number": 59,
+      "title": "Мясо с паприкой и чесноком",
+      "path": "photo-library/alice-art-positive-corrections-58-68-20261114/candidates/0059-collection-meat-09-04.webp",
+      "origin": "positive-only candidate",
+      "status": "УТВЕРЖДЕНО ВЛАДЕЛЬЦЕМ",
+      "sha256": "914437872a6e0724fc269768a037013f780645bc43c913846ea1c358323bfbba",
+      "approved": true,
+      "approved_on": "2026-11-14",
+      "site_published_by_this_workflow": false
+    },
+    {
+      "number": 60,
+      "title": "Мясо с томатами и базиликом",
+      "path": "photo-library/alice-art-three-quarter-58-68-20261114/final-pass/candidates/0060-collection-meat-09-05.webp",
+      "origin": "original",
+      "status": "ОРИГИНАЛ · БЕЗ ПРАВОК",
+      "sha256": "fd1d5d2be5ab386a0d7fe258aec2ef574f451bc67bfb128273f2f17bf4578c40",
+      "approved": null,
+      "approved_on": null,
+      "site_published_by_this_workflow": false
+    },
+    {
+      "number": 61,
+      "title": "Мясо с имбирём и соевым соусом",
+      "path": "photo-library/alice-art-positive-corrections-58-68-20261114/candidates/0061-collection-meat-09-06.webp",
+      "origin": "positive-only candidate",
+      "status": "УТВЕРЖДЕНО ВЛАДЕЛЬЦЕМ",
+      "sha256": "ba28cbe34633c2047e607aec464e56b4604a23cf099e85ad219b4da60a3fc6f4",
+      "approved": true,
+      "approved_on": "2026-11-14",
+      "site_published_by_this_workflow": false
+    },
+    {
+      "number": 62,
+      "title": "Мясо с луком и бальзамиком",
+      "path": "photo-library/alice-art-three-quarter-58-68-20261114/final-pass/candidates/0062-collection-meat-09-07.webp",
+      "origin": "original",
+      "status": "ОРИГИНАЛ · БЕЗ ПРАВОК",
+      "sha256": "a920326ffe6ee48c6645191956ec3becb0ed385f412152a3e05f5a9de35473f3",
+      "approved": null,
+      "approved_on": null,
+      "site_published_by_this_workflow": false
+    },
+    {
+      "number": 63,
+      "title": "Мясо со сливками и перцем",
+      "path": "photo-library/alice-art-rework-63-66-67-20261114/candidates/0063-collection-meat-09-08.webp",
+      "origin": "precise sauce retouch",
+      "status": "НОВАЯ РЕТУШЬ · НА ПРОВЕРКУ",
+      "sha256": "1d5e8599fff7d447d2ad924793ae9a3ddb6b128bf0d7649c0e833c3ceb8b2236",
+      "approved": false,
+      "approved_on": null,
+      "site_published_by_this_workflow": false
+    },
+    {
+      "number": 64,
+      "title": "Мясо с яблоком и шалфеем",
+      "path": "photo-library/alice-art-three-quarter-58-68-20261114/final-pass/candidates/0064-collection-meat-09-09.webp",
+      "origin": "original",
+      "status": "ОРИГИНАЛ · БЕЗ ПРАВОК",
+      "sha256": "51ff29638feed9ef1ff17801b026e38e788c318469fbd8e0cdab1fd5beaf359c",
+      "approved": null,
+      "approved_on": null,
+      "site_published_by_this_workflow": false
+    },
+    {
+      "number": 65,
+      "title": "Мясо с черносливом и тмином",
+      "path": "photo-library/alice-art-positive-corrections-58-68-20261114/candidates/0065-collection-meat-09-10.webp",
+      "origin": "positive-only candidate",
+      "status": "УТВЕРЖДЕНО ВЛАДЕЛЬЦЕМ",
+      "sha256": "51065b9a70b9ceb5da53e6ec443ee7245cd6f38cea165c313e49eaf9887623ab",
+      "approved": true,
+      "approved_on": "2026-11-14",
+      "site_published_by_this_workflow": false
+    },
+    {
+      "number": 66,
+      "title": "Отбивные с лимоном и тимьяном",
+      "path": "photo-library/alice-art-rework-63-66-67-20261114/candidates/0066-collection-meat-10-01.webp",
+      "origin": "Alice ART irregular chop rework",
+      "status": "НОВАЯ ГЕНЕРАЦИЯ · НА ПРОВЕРКУ",
+      "sha256": "64b23d12973363a334655b83a0130a015903f2d2fe0e4ec1d31406788aac3eb2",
+      "approved": false,
+      "approved_on": null,
+      "site_published_by_this_workflow": false
+    },
+    {
+      "number": 67,
+      "title": "Отбивные с грибами и розмарином",
+      "path": "photo-library/alice-art-rework-63-66-67-20261114/candidates/0067-collection-meat-10-02.webp",
+      "origin": "Alice ART irregular chop rework",
+      "status": "НОВАЯ ГЕНЕРАЦИЯ · НА ПРОВЕРКУ",
+      "sha256": "c02b6f3ebed3a904dfa33161fc9ca0082946be1bbd1a573a944d93a5e8aefc9c",
+      "approved": false,
+      "approved_on": null,
+      "site_published_by_this_workflow": false
+    },
+    {
+      "number": 68,
+      "title": "Отбивные с горчицей и мёдом",
+      "path": "photo-library/alice-art-three-quarter-58-68-20261114/final-pass/candidates/0068-collection-meat-10-03.webp",
+      "origin": "original",
+      "status": "ОРИГИНАЛ · БЕЗ ПРАВОК",
+      "sha256": "162b7e0adbaf97cafcc99050496bbc27d0d8bf71f0251ca3e2128f11f89d1373",
+      "approved": null,
+      "approved_on": null,
+      "site_published_by_this_workflow": false
+    }
+  ]
+}
