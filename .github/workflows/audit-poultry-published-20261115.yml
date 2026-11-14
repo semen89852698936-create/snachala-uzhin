@@ -1,0 +1,45 @@
+name: QA audit of published Ptica 100 recipes (no site changes)
+on:
+  push:
+    branches:
+      - audit/poultry-published-20261115
+    paths:
+      - .github/workflows/audit-poultry-published-20261115.yml
+permissions:
+  contents: write
+concurrency:
+  group: poultry-audit-20261115
+  cancel-in-progress: false
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - name: Checkout exact deployed release plus audit scripts
+        uses: actions/checkout@v4
+        with:
+          ref: audit/poultry-published-20261115
+          persist-credentials: true
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install screenshot and audit tools
+        run: |
+          python -m pip install --quiet 'Pillow>=10,<13' 'playwright>=1.50,<2'
+          python -m playwright install chromium
+      - name: Inspect real photos and create all five contact sheets
+        run: python3 audit/poultry-published-20261115/create_audit.py
+      - name: Open actual published Poultry filter on desktop and mobile
+        run: python3 audit/poultry-published-20261115/browse_site.py
+      - name: Save audit artifacts in isolated branch only
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add audit/poultry-published-20261115/
+          git diff --cached --check
+          git commit -m 'audit: save five poultry photo contact sheets and live browser screenshots'
+          git push origin HEAD:refs/heads/audit/poultry-published-20261115
+          echo POULTRY_AUDIT_READY
