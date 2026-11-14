@@ -1,0 +1,136 @@
+name: Alice AI ART 3.0 - positive-only pilot 63 (review only)
+on:
+  push:
+    branches:
+      - photo-production/alice-art-positive-pilot-63-20261114
+    paths:
+      - .github/workflows/alice-art-positive-pilot-63-20261114.yml
+permissions:
+  contents: write
+concurrency:
+  group: alice-art-positive-pilot-63-20261114
+  cancel-in-progress: false
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 59
+    steps:
+      - name: Checkout isolated correction branch
+        uses: actions/checkout@v4
+        with:
+          ref: photo-production/alice-art-positive-pilot-63-20261114
+          fetch-depth: 0
+          persist-credentials: true
+      - name: Read existing Alice AI ART adapter and recipe source
+        uses: actions/checkout@v4
+        with:
+          repository: semen89852698936-create/snachala-uzhin
+          ref: photo-production/yandex-ai-art-1001
+          path: _photo_source
+          sparse-checkout: |
+            photo-pipeline
+            photo-library/recipes.json
+          sparse-checkout-cone-mode: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: python -m pip install --quiet 'Pillow>=10,<13'
+      - name: Generate one positive-only review candidate with Alice AI ART 3.0
+        shell: bash
+        env:
+          YANDEX_API_KEY: ${{ secrets.YANDEX_API_KEY }}
+          YANDEX_FOLDER_ID: ${{ secrets.YANDEX_FOLDER_ID || 'b1g00u8p0k5nl98v8nre' }}
+          PHOTO_COST_APPROVED: 'true'
+        run: |
+          set -euo pipefail
+          test -n "${YANDEX_API_KEY:-}"
+          test -n "${YANDEX_FOLDER_ID:-}"
+          python3 - <<'PY'
+          import hashlib, importlib.util, json, os, subprocess
+          from datetime import datetime, timezone
+          from pathlib import Path
+          from PIL import Image
+
+          branch='photo-production/alice-art-positive-pilot-63-20261114'
+          base=Path('photo-library/alice-art-positive-pilot-63-20261114')
+          plan=json.loads((base/'plan.json').read_text(encoding='utf8'))
+          assert plan['model']=='aliceai-image-art-3.0'
+          items=plan['items']
+          assert plan['max_paid_requests']==len(items)==1
+          assert [int(x['photo_number']) for x in items]==[63]
+          assert all(x['publish_to_site'] is False for x in items)
+          recipes=json.loads(Path('_photo_source/photo-library/recipes.json').read_text(encoding='utf8'))['recipes']
+          by_n={int(r['n']):r for r in recipes}
+          for item in items:
+              recipe=by_n[int(item['recipe_n'])]
+              assert item['recipe_id']==recipe['id'], item
+              assert item['title']==recipe['title'].replace('с сливками','со сливками'), item
+              assert 1<=len(item['prompt'])<=500
+              assert Path(item['source']).is_file(), item['source']
+
+          spec=importlib.util.spec_from_file_location('alice','_photo_source/photo-pipeline/generate_yandexart.py')
+          ym=importlib.util.module_from_spec(spec);spec.loader.exec_module(ym)
+          assert ym.MODEL=='aliceai-image-art-3.0'
+          def git(*args):
+              subprocess.run(['git',*args],check=True)
+          def write(path,obj):
+              ym.atomic_write(path,json.dumps(obj,ensure_ascii=False,indent=2).encode('utf8'))
+          git('config','user.name','github-actions[bot]')
+          git('config','user.email','41898282+github-actions[bot]@users.noreply.github.com')
+
+          for item in items:
+              n=item['photo_number']
+              stem=f"{n:04d}-{item['recipe_id']}"
+              output=base/'candidates'/f'{stem}.webp'
+              record=base/'records'/f'{stem}.json'
+              pending=base/'pending'/f'{stem}.json'
+              if output.exists() and record.exists():
+                  meta=json.loads(record.read_text(encoding='utf8'))
+                  assert hashlib.sha256(output.read_bytes()).hexdigest()==meta['sha256']
+                  print(f'EXISTING_VALID {n}',flush=True)
+                  continue
+              if output.exists() or record.exists():
+                  raise RuntimeError(f'Partial candidate record {n}; manual recovery necessary')
+              if pending.exists():
+                  raise RuntimeError(f'Uncertain prior paid request for {n}; will not request twice')
+
+              checkpoint={'photo_number':n,'recipe_id':item['recipe_id'],
+                 'source':item['source'],'prompt':item['prompt'],
+                 'status':'paid_request_started_never_auto_retry',
+                 'started_at':datetime.now(timezone.utc).isoformat()}
+              write(pending,checkpoint)
+              git('add',str(pending))
+              git('commit','-m',f'Alice AI ART: reserve paid correction {n} before API')
+              git('push','origin','HEAD:refs/heads/'+branch)
+
+              raw=ym.request_image(item['prompt'],os.environ['YANDEX_API_KEY'],os.environ['YANDEX_FOLDER_ID'])
+              # Preserve the successfully returned paid image before any conversion.
+              raw_saved=base/'raw-checkpoint'/f'{stem}.bin'
+              ym.atomic_write(raw_saved,raw)
+              git('add',str(raw_saved))
+              git('commit','-m',f'Alice AI ART: checkpoint paid raw correction {n}')
+              git('push','origin','HEAD:refs/heads/'+branch)
+
+              webp=ym.encode_webp(raw)
+              with Image.open(__import__('io').BytesIO(webp)) as im:
+                  assert im.size==(1200,900)
+              ym.atomic_write(output,webp)
+              info={'photo_number':n,'recipe_n':item['recipe_n'],
+                  'recipe_id':item['recipe_id'],'title':item['title'],
+                  'model':'aliceai-image-art-3.0','prompt':item['prompt'],
+                  'source':item['source'],
+                  'sha256':hashlib.sha256(webp).hexdigest(),
+                  'bytes':len(webp),'size':[1200,900],
+                  'status':'candidate_owner_review_required',
+                  'site_published':False,
+                  'generated_at':datetime.now(timezone.utc).isoformat()}
+              write(record,info)
+              pending.unlink()
+              raw_saved.unlink()
+              git('add','-A',str(base))
+              git('diff','--cached','--check')
+              git('commit','-m',f'Alice AI ART 3.0: save review-only correction {n}')
+              git('push','origin','HEAD:refs/heads/'+branch)
+              print(f'SAVED_CORRECTION {n} {info["sha256"]} {len(webp)}',flush=True)
+          print('POSITIVE_ONLY_PILOT_63_SAVED_REVIEW_ONLY',flush=True)
+          PY
