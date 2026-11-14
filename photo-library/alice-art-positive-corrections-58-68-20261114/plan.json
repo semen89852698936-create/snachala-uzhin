@@ -1,0 +1,74 @@
+{
+  "project": "СНАЧАЛА УЖИН",
+  "model": "aliceai-image-art-3.0",
+  "purpose": "Exact user-requested corrections and new dated contact sheet",
+  "date": "2026-11-14",
+  "generation_method": "new candidate from positive-only prompts using existing Alice AI ART generator; not inpainting",
+  "max_new_paid_requests": 4,
+  "never_repeat_uncertain_charges": true,
+  "publish_to_site": false,
+  "source_branch": "photo-production/alice-art-three-quarter-58-68-20261114",
+  "items": [
+    {
+      "number": 59,
+      "recipe_n": 102,
+      "recipe_id": "collection-meat-09-04",
+      "title": "Мясные полоски на сковороде с паприкой и чесноком",
+      "prompt": "Фотореалистичная ресторанная фотография готового блюда. Камера сбоку под 35° к поверхности стола. Светлая керамическая тарелка видна почти целиком, занимает 70% ширины кадра, вокруг небольшой запас деревянного стола. Тёплый мягкий вечерний свет. Длинные румяные полоски говядины с равномерно распределённой молотой паприкой. Поверхность мяса чистая, ровная, только тонкий слой сока и специй. Сохранить натуральную нарезку и объём порции.",
+      "source_path": "photo-library/alice-art-three-quarter-58-68-20261114/final-pass/candidates/0059-collection-meat-09-04.webp",
+      "approval_required": true,
+      "site_published": false
+    },
+    {
+      "number": 61,
+      "recipe_n": 104,
+      "recipe_id": "collection-meat-09-06",
+      "title": "Мясные полоски на сковороде с имбирём и соевым соусом",
+      "prompt": "Фотореалистичная ресторанная фотография готового блюда. Камера сбоку под 35° к поверхности стола. Светлая керамическая тарелка видна почти целиком, занимает 70% ширины кадра, вокруг небольшой запас деревянного стола. Тёплый мягкий вечерний свет. Длинные полоски обжаренной говядины под тонкой, гладкой, однородной глянцевой тёмно-коричневой глазурью соевого соуса. Поверхность мяса полностью гладкая, только жидкая глазурь. Нарезка и порция прежнего размера.",
+      "source_path": "photo-library/alice-art-three-quarter-58-68-20261114/final-pass/candidates/0061-collection-meat-09-06.webp",
+      "approval_required": true,
+      "site_published": false
+    },
+    {
+      "number": 65,
+      "recipe_n": 108,
+      "recipe_id": "collection-meat-09-10",
+      "title": "Мясные полоски на сковороде с черносливом и тмином",
+      "prompt": "Фотореалистичная ресторанная фотография готового блюда. Камера сбоку под 35° к поверхности стола. Светлая керамическая тарелка видна почти целиком, занимает 70% ширины кадра, вокруг небольшой запас деревянного стола. Тёплый мягкий вечерний свет. Длинные полоски румяной говядины. Между мясными полосками немного очень мелко рубленной мягкой тёмной фруктовой массы из чернослива: фрагменты размером 2–3 мм, похожи на густой конфитюр. Сверху умеренно молотый тмин. Сохранить естественную нарезку мяса.",
+      "source_path": "photo-library/alice-art-three-quarter-58-68-20261114/final-pass/candidates/0065-collection-meat-09-10.webp",
+      "approval_required": true,
+      "site_published": false
+    },
+    {
+      "number": 66,
+      "recipe_n": 109,
+      "recipe_id": "collection-meat-10-01",
+      "title": "Свиные отбивные с лимоном и тимьяном",
+      "prompt": "Фотореалистичная ресторанная фотография готового блюда. Камера сбоку под 35° к поверхности стола. Светлая керамическая тарелка видна почти целиком, занимает 70% ширины кадра, вокруг небольшой запас деревянного стола. Тёплый мягкий вечерний свет. Две сочные свиные отбивные с ровной золотисто-коричневой корочкой. Тонкий блеск прозрачного лимонного сока, немного мелких листочков тимьяна, чистая поверхность мяса. Естественная подача двух порций, лёгкий сок на тарелке.",
+      "source_path": "photo-library/alice-art-three-quarter-58-68-20261114/final-pass/candidates/0066-collection-meat-10-01.webp",
+      "approval_required": true,
+      "site_published": false
+    }
+  ],
+  "hold": [
+    {
+      "number": 63,
+      "reason": "Previously paid positive-only pilot still has pending request without recorded output; do not duplicate it",
+      "branch": "photo-production/alice-art-positive-pilot-63-20261114"
+    }
+  ],
+  "reuse": [
+    {
+      "number": 67,
+      "source": "photo-library/alice-art-angled-plus-plate-20261114/pilot-67-v2.webp",
+      "reason": "Earlier boneless candidate to compare visually"
+    }
+  ],
+  "unchanged": [
+    58,
+    60,
+    62,
+    64,
+    68
+  ]
+}
