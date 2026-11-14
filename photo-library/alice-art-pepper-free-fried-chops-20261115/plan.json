@@ -1,0 +1,46 @@
+{
+  "project": "СНАЧАЛА УЖИН",
+  "date": "2026-11-15",
+  "model": "aliceai-image-art-3.0",
+  "owner_request": "63: remove all spherical green pepper from sauce with unchanged meat/plate. 66 and 67: irregular cooked fried pork pieces without bone.",
+  "source_branch": "photo-production/alice-art-rework-63-66-67-20261114",
+  "approved_untouched": [
+    4,
+    59,
+    61,
+    65
+  ],
+  "approved_file": "photo-library/alice-art-positive-corrections-58-68-20261114/OWNER_APPROVALS_20261114.json",
+  "photo63": {
+    "recipe_n": 106,
+    "recipe_id": "collection-meat-09-08",
+    "source": "photo-library/alice-art-three-quarter-58-68-20261114/final-pass/candidates/0063-collection-meat-09-08.webp",
+    "previous_attempt": "photo-library/alice-art-rework-63-66-67-20261114/candidates/0063-collection-meat-09-08.webp",
+    "method": "local color-mask removal of green spheres from original Alice AI ART 3.0 image",
+    "keep_outside_sauce_identical": true
+  },
+  "generation": {
+    "max_new_paid_requests": 2,
+    "items": [
+      {
+        "number": 66,
+        "recipe_n": 109,
+        "recipe_id": "collection-meat-10-01",
+        "title": "Свиные отбивные с лимоном и тимьяном",
+        "prompt": "Фотореалистичное ГОТОВОЕ блюдо. Камера сбоку под 35° к столу, светлая круглая тарелка целиком, немного стола, тёплый мягкий свет. Два хорошо прожаренных свиных эскалопа из мякоти: широкие ПЛОСКИЕ куски неправильной, асимметричной формы, волнистые неровные края и разная ширина концов. Видна только цельная мякоть, поверхность золотисто-коричневая, румяная корочка после жарки. Немного лимонного сока и измельчённого тимьяна.",
+        "source": "photo-library/alice-art-positive-corrections-58-68-20261114/candidates/0066-collection-meat-10-01.webp"
+      },
+      {
+        "number": 67,
+        "recipe_n": 110,
+        "recipe_id": "collection-meat-10-02",
+        "title": "Свиные отбивные с грибами и розмарином",
+        "prompt": "Фотореалистичное ГОТОВОЕ блюдо. Камера сбоку под 35° к столу, светлая круглая тарелка целиком, немного стола, тёплый мягкий свет. Два полностью приготовленных жареных свиных эскалопа из мякоти. Широкие ПЛОСКИЕ мясные куски неправильной асимметричной формы, неровные волнистые края. Золотисто-коричневая румяная корочка по всей поверхности после жарки. Рядом обжаренные ломтики шампиньонов, немного мелко рубленого розмарина.",
+        "source": "photo-library/alice-art-angled-plus-plate-20261114/pilot-67-v2.webp"
+      }
+    ]
+  },
+  "site_published": false,
+  "approval_required": true,
+  "do_not_modify_other_images": true
+}
