@@ -3,10 +3,11 @@
   "recipe_n": 110,
   "recipe_id": "collection-meat-10-02",
   "title": "Свиные отбивные с грибами и розмарином",
-  "status": "reserved_not_sent",
+  "status": "paid_request_started_no_auto_retry",
   "prompt": "Фотореалистичная журнальная фуд-фотография. Камера СБОКУ под углом 35–40° к столу, НЕ вид сверху. Отъехать чуть дальше, примерно на 10–12%: тарелка видна ЦЕЛИКОМ с полным ободком, со всех сторон узкая полоска стола. Блюдо остаётся крупным и объёмным. На светлой тарелке две румяные свиные отбивные БЕЗ КОСТЕЙ, рядом немного обжаренных шампиньонов с МЕЛКО рубленым розмарином. Без целых веточек и иных украшений. Тёплый мягкий свет, естественная подача.",
   "model": "aliceai-image-art-3.0",
   "max_paid_requests": 1,
   "site_published": false,
-  "goal": "angle matched previous photos, slightly more plate in frame"
+  "goal": "angle matched previous photos, slightly more plate in frame",
+  "started_at": "2026-11-14T19:19:11.782709+00:00"
 }
