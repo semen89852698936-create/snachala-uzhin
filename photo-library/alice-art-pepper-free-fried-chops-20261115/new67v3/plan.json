@@ -1,0 +1,13 @@
+{
+  "model": "aliceai-image-art-3.0",
+  "date": "2026-11-15",
+  "recipe_n": 110,
+  "recipe_id": "collection-meat-10-02",
+  "title": "Свиные отбивные с грибами и розмарином",
+  "prompt": "Фуд-фотография ГОТОВОГО УЖИНА, средний план 35° сбоку. Круглая керамическая тарелка целиком, занимает 65% изображения, вокруг стол. Две ТОНКИЕ ЖАРЕНЫЕ СВИНЫЕ ОТБИВНЫЕ ИЗ МЯКОТИ, неправильной вытянутой формы, с асимметричными волнистыми краями. Мясо полностью прожарено: поверхность обоих кусков ПО ВСЕЙ ПЛОЩАДИ покрыта тёмно-золотистой карамелизированной жареной корочкой с мелкими коричневыми поджаринами. Рядом обжаренные ломтики шампиньонов и немного рубленого розмарина. Тёплый свет.",
+  "reason": "Previous wide-frame pork candidate lacks strong fried brown surface. Owner requires fully fried irregular boneless pork.",
+  "source": "photo-library/alice-art-pepper-free-fried-chops-20261115/new67v2/candidates/0067-collection-meat-10-02.webp",
+  "max_paid_requests": 1,
+  "site_published": false,
+  "approval_required": true
+}
