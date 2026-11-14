@@ -1,0 +1,69 @@
+name: Alice AI ART 3.0 - polish sauce 63 and fried meat 67
+on:
+  push:
+    branches:
+      - photo-production/alice-art-pepper-free-fried-chops-20261115
+    paths:
+      - .github/workflows/alice-art-polish-sauce-and-67-20261115.yml
+permissions:
+  contents: write
+concurrency:
+  group: alice-art-polish-sauce-and-67-20261115
+  cancel-in-progress: false
+jobs:
+  finish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: photo-production/alice-art-pepper-free-fried-chops-20261115
+          fetch-depth: 0
+          persist-credentials: true
+      - name: Checkout original Alice AI ART 3.0 adapter read-only
+        uses: actions/checkout@v4
+        with:
+          repository: semen89852698936-create/snachala-uzhin
+          ref: photo-production/yandex-ai-art-1001
+          path: _photo_source
+          sparse-checkout: |
+            photo-pipeline
+            photo-library/recipes.json
+          sparse-checkout-cone-mode: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: python -m pip install --quiet 'Pillow>=10,<13' 'numpy>=1.25,<3' 'opencv-python-headless>=4.9,<5'
+      - name: Smooth only sauce pixels in existing Alice AI ART 3.0 photo 63
+        run: |
+          set -euo pipefail
+          python3 photo-library/alice-art-pepper-free-fried-chops-20261115/polish63.py
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add photo-library/alice-art-pepper-free-fried-chops-20261115/polished
+          git diff --cached --check
+          git commit -m 'photos: smooth sauce 63 after pepper removal, no change outside mask'
+          git push origin HEAD:refs/heads/photo-production/alice-art-pepper-free-fried-chops-20261115
+      - name: Generate one improved cooked irregular pork photo 67 in Alice AI ART 3.0
+        shell: bash
+        env:
+          YANDEX_API_KEY: ${{ secrets.YANDEX_API_KEY }}
+          YANDEX_FOLDER_ID: ${{ secrets.YANDEX_FOLDER_ID || 'b1g00u8p0k5nl98v8nre' }}
+          PHOTO_COST_APPROVED: 'true'
+        run: |
+          set -euo pipefail
+          test -n "${YANDEX_API_KEY:-}"
+          test -n "${YANDEX_FOLDER_ID:-}"
+          python3 photo-library/alice-art-pepper-free-fried-chops-20261115/generate67.py
+      - name: Rebuild review sheets with actual final candidates
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 photo-library/alice-art-pepper-free-fried-chops-20261115/make_final_sheet.py
+          git add photo-library/alice-art-pepper-free-fried-chops-20261115/comparison-final-63-66-67.jpg
+          git add photo-library/alice-art-pepper-free-fried-chops-20261115/contact-sheet-final-58-68.jpg
+          git add photo-library/alice-art-pepper-free-fried-chops-20261115/review-final-manifest.json
+          git diff --cached --check
+          git commit -m 'photos: actual final candidates 63 66 67, approvals preserved'
+          git push origin HEAD:refs/heads/photo-production/alice-art-pepper-free-fried-chops-20261115
+          echo REVIEW_READY
