@@ -1,0 +1,99 @@
+name: Alice AI ART - photo 60 full-plate distant camera pilot v3
+on:
+  push:
+    branches:
+      - photo-production/alice-art-wide-frame-58-68-20261114
+    paths:
+      - .github/workflows/alice-art-wide-plate-pilot-60-v3.yml
+permissions:
+  contents: write
+concurrency:
+  group: alice-art-wide-plate-pilot-60-v3
+  cancel-in-progress: false
+jobs:
+  generate-one-pilot:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: photo-production/alice-art-wide-frame-58-68-20261114
+          persist-credentials: true
+          fetch-depth: 0
+      - name: Read-only original Alice AI ART adapter
+        uses: actions/checkout@v4
+        with:
+          repository: semen89852698936-create/snachala-uzhin
+          ref: photo-production/yandex-ai-art-1001
+          path: _photo_source
+          sparse-checkout: |
+            photo-pipeline
+            photo-library/recipes.json
+          sparse-checkout-cone-mode: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: python3 -m pip install --quiet 'Pillow>=10,<13'
+      - name: Exactly one Yandex API call with checkpoint first
+        env:
+          YANDEX_API_KEY: ${{ secrets.YANDEX_API_KEY }}
+          YANDEX_FOLDER_ID: ${{ secrets.YANDEX_FOLDER_ID || 'b1g00u8p0k5nl98v8nre' }}
+          PHOTO_COST_APPROVED: 'true'
+        shell: bash
+        run: |
+          set -euo pipefail
+          test -n "${YANDEX_API_KEY:-}" || { echo "::error::No Yandex key"; exit 1; }
+          test -n "${YANDEX_FOLDER_ID:-}"
+          python3 - <<'PY'
+          import importlib.util, json, os, hashlib, subprocess
+          from pathlib import Path
+          from datetime import datetime, timezone
+          branch='photo-production/alice-art-wide-frame-58-68-20261114'
+          base=Path('photo-library/alice-art-wide-frame-58-68-20261114')
+          request=base/'pilot-60-v3-request.json'
+          candidate=base/'0060-collection-meat-09-05-wide-v3.webp'
+          record=base/'0060-collection-meat-09-05-wide-v3.json'
+          def git(*args): subprocess.run(['git',*args],check=True)
+          doc=json.loads(request.read_text(encoding='utf-8'))
+          assert doc['photo_number']==60 and doc['recipe_n']==103 and doc['recipe_id']=='collection-meat-09-05'
+          assert doc['site_published'] is False and doc['max_paid_requests']==1
+          assert len(doc['prompt'])<=500
+          assert os.getenv('PHOTO_COST_APPROVED')=='true'
+          recipes=json.loads(Path('_photo_source/photo-library/recipes.json').read_text(encoding='utf-8'))['recipes']
+          matches=[r for r in recipes if int(r['n'])==103 and r['id']==doc['recipe_id'] and r['title']==doc['title']]
+          assert len(matches)==1, 'Recipe mapping mismatch'
+          spec=importlib.util.spec_from_file_location('alice','_photo_source/photo-pipeline/generate_yandexart.py')
+          ym=importlib.util.module_from_spec(spec)
+          spec.loader.exec_module(ym)
+          if candidate.exists() and record.exists():
+              obj=json.loads(record.read_text(encoding='utf-8'))
+              assert hashlib.sha256(candidate.read_bytes()).hexdigest()==obj['sha256']
+              print('PILOT_ALREADY_EXISTS - no paid call')
+              raise SystemExit(0)
+          assert not candidate.exists() and not record.exists()
+          assert doc['status']=='reserved_not_sent', 'Prior charged intent - manual reconciliation required'
+          git('config','user.name','github-actions[bot]')
+          git('config','user.email','41898282+github-actions[bot]@users.noreply.github.com')
+          doc['status']='paid_request_started_never_auto_retry'
+          doc['started_at']=datetime.now(timezone.utc).isoformat()
+          ym.atomic_write(request,json.dumps(doc,ensure_ascii=False,indent=2).encode())
+          git('add',str(request))
+          git('commit','-m','photo: checkpoint one-shot Yandex pilot 60 v2 before paid call')
+          git('push','origin','HEAD:refs/heads/'+branch)
+          raw=ym.request_image(doc['prompt'],os.environ['YANDEX_API_KEY'],os.environ['YANDEX_FOLDER_ID'])
+          webp=ym.encode_webp(raw)
+          ym.atomic_write(candidate,webp)
+          meta={'photo_number':60,'recipe_n':103,'recipe_id':doc['recipe_id'],'title':doc['title'],
+                'model':doc['model'],'sha256':hashlib.sha256(webp).hexdigest(),'bytes':len(webp),
+                'size':[1200,900],'status':'candidate_review_only','site_published':False,
+                'prompt':doc['prompt'],'at':datetime.now(timezone.utc).isoformat()}
+          ym.atomic_write(record,json.dumps(meta,ensure_ascii=False,indent=2).encode())
+          doc['status']='generated_not_published'
+          doc['sha256']=meta['sha256']
+          ym.atomic_write(request,json.dumps(doc,ensure_ascii=False,indent=2).encode())
+          git('add',str(base))
+          git('diff','--cached','--check')
+          git('commit','-m','photo: save Yandex wide-frame pilot 60 v2 for review')
+          git('push','origin','HEAD:refs/heads/'+branch)
+          print('PILOT_60_SAVED',meta['sha256'])
+          PY
