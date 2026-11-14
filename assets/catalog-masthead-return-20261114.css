@@ -13,6 +13,19 @@ body:has(#catalog:target) #homeView #catalog.du-catalog::after {
 
 /* Place the existing catalog return anchor in the header, exactly where the
    approved Our Evening return anchor sits. Do not touch Our Evening. */
+/* Match the approved Evening header layout: the hidden wordmark must not
+   reserve horizontal space and push the back button towards the centre. */
+body:has(#catalog:target) .header .brand.du-brand {
+  visibility:hidden!important;
+  position:absolute!important;
+  width:1px!important;
+  height:1px!important;
+  overflow:hidden!important;
+}
+body:has(#catalog:target) .header .main-nav {
+  margin:0 auto!important;
+}
+
 body:has(#catalog:target) .header .header-inner > a.du-evening-back.du-catalog-back {
   display:inline-flex!important;
   position:relative!important;
