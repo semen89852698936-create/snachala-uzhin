@@ -1,0 +1,49 @@
+name: Alice AI ART 3.0 - tomato meatballs 0004 breadcrumb-only
+on:
+  push:
+    branches:
+      - photo-production/alice-art-meatballs-004-20261114
+    paths:
+      - .github/workflows/alice-art-meatballs-004-20261114.yml
+permissions:
+  contents: write
+concurrency:
+  group: alice-art-meatballs-004-20261114
+  cancel-in-progress: false
+jobs:
+  generate-one-review-photo:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - name: Checkout isolated photo candidate branch
+        uses: actions/checkout@v4
+        with:
+          ref: photo-production/alice-art-meatballs-004-20261114
+          fetch-depth: 0
+          persist-credentials: true
+      - name: Checkout original Alice AI ART 3.0 adapter read-only
+        uses: actions/checkout@v4
+        with:
+          repository: semen89852698936-create/snachala-uzhin
+          ref: photo-production/yandex-ai-art-1001
+          path: _photo_source
+          sparse-checkout: |
+            photo-pipeline
+            photo-library/recipes.json
+          sparse-checkout-cone-mode: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install image encoder
+        run: python -m pip install --quiet 'Pillow>=10,<13'
+      - name: Generate new single meatballs image
+        shell: bash
+        env:
+          YANDEX_API_KEY: ${{ secrets.YANDEX_API_KEY }}
+          YANDEX_FOLDER_ID: ${{ secrets.YANDEX_FOLDER_ID || 'b1g00u8p0k5nl98v8nre' }}
+          PHOTO_COST_APPROVED: 'true'
+        run: |
+          set -euo pipefail
+          test -n "${YANDEX_API_KEY:-}"
+          test -n "${YANDEX_FOLDER_ID:-}"
+          python3 photo-library/alice-art-meatballs-004-20261114/run_one.py
