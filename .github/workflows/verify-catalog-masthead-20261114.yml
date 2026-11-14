@@ -5,6 +5,9 @@ on:
       - fix/catalog-header-art-and-return-20261114
     paths:
       - .github/workflows/verify-catalog-masthead-20261114.yml
+      - assets/catalog-masthead-return-20261114.css
+      - assets/catalog-masthead-return-20261114.js
+      - index.html
 permissions:
   contents: write
 jobs:
