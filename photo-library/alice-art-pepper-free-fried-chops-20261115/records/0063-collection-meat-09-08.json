@@ -1,0 +1,16 @@
+{
+  "photo_number": 63,
+  "recipe_n": 106,
+  "recipe_id": "collection-meat-09-08",
+  "model_source": "aliceai-image-art-3.0",
+  "method": "precise local retouch, no paid image request",
+  "source": "photo-library/alice-art-three-quarter-58-68-20261114/final-pass/candidates/0063-collection-meat-09-08.webp",
+  "sha256": "2a839bffbe9cf4be94cf655a88899e712fd4727b251e19f0f9bdbce3a8cd2d88",
+  "source_sha256": "0df952a43b8ec84571dcf532849f1a4dd1992230a6ae14fcf22ad7a19feb82db",
+  "mask_pixels": 58306,
+  "detected_green_clusters": 13,
+  "outside_mask_pixels_identical": true,
+  "site_published": false,
+  "status": "candidate_owner_review_required",
+  "created_at": "2026-11-14T21:29:25.472916+00:00"
+}
