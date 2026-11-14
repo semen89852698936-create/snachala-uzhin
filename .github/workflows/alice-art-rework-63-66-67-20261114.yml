@@ -1,0 +1,67 @@
+name: Alice AI ART 3.0 - rework only 63 66 67
+on:
+  push:
+    branches:
+      - photo-production/alice-art-rework-63-66-67-20261114
+    paths:
+      - .github/workflows/alice-art-rework-63-66-67-20261114.yml
+permissions:
+  contents: write
+concurrency:
+  group: alice-art-rework-63-66-67-20261114
+  cancel-in-progress: false
+jobs:
+  rework:
+    runs-on: ubuntu-latest
+    timeout-minutes: 59
+    steps:
+      - name: Checkout strictly isolated photo branch
+        uses: actions/checkout@v4
+        with:
+          ref: photo-production/alice-art-rework-63-66-67-20261114
+          fetch-depth: 0
+          persist-credentials: true
+      - name: Checkout original Alice AI ART 3.0 adapter read-only
+        uses: actions/checkout@v4
+        with:
+          repository: semen89852698936-create/snachala-uzhin
+          ref: photo-production/yandex-ai-art-1001
+          path: _photo_source
+          sparse-checkout: |
+            photo-pipeline
+            photo-library/recipes.json
+          sparse-checkout-cone-mode: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install local photo editing packages
+        run: python -m pip install --quiet 'Pillow>=10,<13' 'numpy>=1.25,<3' 'opencv-python-headless>=4.9,<5'
+      - name: Retouch only peas on 63 and generate irregular 66 and 67
+        shell: bash
+        env:
+          YANDEX_API_KEY: ${{ secrets.YANDEX_API_KEY }}
+          YANDEX_FOLDER_ID: ${{ secrets.YANDEX_FOLDER_ID || 'b1g00u8p0k5nl98v8nre' }}
+          PHOTO_COST_APPROVED: 'true'
+        run: |
+          set -euo pipefail
+          test -n "${YANDEX_API_KEY:-}"
+          test -n "${YANDEX_FOLDER_ID:-}"
+          python3 photo-library/alice-art-rework-63-66-67-20261114/run_rework.py
+      - name: Rebuild actual review sheet without touching approved photos
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 photo-library/alice-art-rework-63-66-67-20261114/create_sheet.py
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add photo-library/alice-art-rework-63-66-67-20261114/contact-sheet-current-58-68.jpg
+          git add photo-library/alice-art-rework-63-66-67-20261114/comparison-before-current.jpg
+          git add photo-library/alice-art-rework-63-66-67-20261114/contact-sheet-manifest.json
+          git diff --cached --check
+          if git diff --cached --quiet; then
+            echo REVIEW_SHEET_ALREADY_CURRENT
+          else
+            git commit -m 'photos: review sheet shows approved 59 61 65 and new 63 66 67'
+            git push origin HEAD:refs/heads/photo-production/alice-art-rework-63-66-67-20261114
+          fi
+          echo OWNER_REVIEW_READY
