@@ -1,0 +1,78 @@
+name: Audit catalog upper banner and back button - screenshots
+on:
+  push:
+    branches:
+      - fix/catalog-banner-home-button-20261114
+    paths:
+      - .github/workflows/audit-catalog-banner-20261114.yml
+permissions:
+  contents: write
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: fix/catalog-banner-home-button-20261114
+          persist-credentials: true
+          fetch-depth: 0
+      - name: Install headless Chromium
+        run: |
+          npm install --no-save --no-package-lock playwright@1.56.1
+          npx playwright install --with-deps chromium
+      - name: Capture approved starting point at 1440 and 390
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 -m http.server 8765 --bind 127.0.0.1 > /tmp/catalog-banner-server.log 2>&1 &
+          mkdir -p audits/catalog-banner-20261114
+          node <<'JS'
+          const {chromium}=require('playwright');
+          (async()=>{
+            const browser=await chromium.launch({headless:true});
+            const base='http://127.0.0.1:8765';
+            const cases=[
+              ['catalog-standalone-before-1440', '/full-catalog/', {width:1440,height:900}],
+              ['catalog-section-before-1440', '/#catalog', {width:1440,height:900}],
+              ['evening-reference-1440', '/#evening', {width:1440,height:900}],
+              ['catalog-standalone-before-390', '/full-catalog/', {width:390,height:844}]
+            ];
+            for(const [label,path,viewport] of cases){
+              const page=await browser.newPage({viewport,deviceScaleFactor:1});
+              await page.goto(base+path,{waitUntil:'domcontentloaded',timeout:60000});
+              await page.waitForTimeout(1600);
+              const info=await page.evaluate(()=>{
+                const art=document.querySelector('#homeView .du-hero-art');
+                const back=document.querySelector('a.du-evening-back');
+                const cback=document.querySelector('a.du-catalog-back');
+                const hero=document.querySelector('#homeView .du-hero-layout');
+                const rect=el=>el?(({x,y,width,height,right,bottom})=>({x,y,width,height,right,bottom}))(el.getBoundingClientRect()):null;
+                return {title:document.title,mode:document.body.className,
+                  art:rect(art),hero:rect(hero),artStyle:art?{
+                    image:getComputedStyle(art).backgroundImage.slice(0,100),
+                    backgroundPosition:getComputedStyle(art).backgroundPosition,
+                    overflow:getComputedStyle(art).overflow,
+                    position:getComputedStyle(art).position,
+                    transform:getComputedStyle(art).transform}:null,
+                  back:rect(back),backDisplay:back?getComputedStyle(back).display:'',
+                  catalogBack:rect(cback),catalogBackDisplay:cback?getComputedStyle(cback).display:'',
+                  overflowX:document.documentElement.scrollWidth-document.documentElement.clientWidth};
+              });
+              await page.screenshot({path:'audits/catalog-banner-20261114/'+label+'.png',fullPage:false});
+              console.log(label,JSON.stringify(info));
+              await page.close();
+            }
+            await browser.close();
+          })().catch(e=>{console.error(e);process.exit(1)});
+          JS
+      - name: Preserve local reference screenshots only on audit branch
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add audits/catalog-banner-20261114/
+          if ! git diff --cached --quiet; then
+            git commit -m "audit: catalog and evening banner position before isolated patch"
+            git push origin HEAD:refs/heads/fix/catalog-banner-home-button-20261114
+          fi
