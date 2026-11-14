@@ -1,0 +1,21 @@
+{
+  "/": {
+    "status": 200,
+    "bytes": 2772554,
+    "content_type": "text/html; charset=utf-8",
+    "correct_photo_path_in_recipe": true
+  },
+  "/full-catalog/": {
+    "status": 200,
+    "bytes": 2726208,
+    "content_type": "text/html; charset=utf-8",
+    "correct_photo_path_in_recipe": true
+  },
+  "/assets/recipes-ai/0067-collection-meat-05-09-approved-20261115.webp": {
+    "status": 200,
+    "bytes": 217808,
+    "content_type": "image/webp",
+    "sha256": "3490f74e628c84393e962b6dfa9d3adf5b276b651ac7fd1b90e4d34806c11397",
+    "match_approved_photo": true
+  }
+}
