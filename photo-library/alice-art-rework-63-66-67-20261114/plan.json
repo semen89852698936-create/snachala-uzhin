@@ -1,0 +1,48 @@
+{
+  "project": "СНАЧАЛА УЖИН",
+  "model": "aliceai-image-art-3.0",
+  "date": "2026-11-14",
+  "task": "User rework 63, 66, 67 without touching approved 59,61,65",
+  "source_branch": "photo-production/alice-art-positive-corrections-58-68-20261114",
+  "owner_approved_numbers_unchanged": [
+    59,
+    61,
+    65
+  ],
+  "owner_approval_file": "photo-library/alice-art-positive-corrections-58-68-20261114/OWNER_APPROVALS_20261114.json",
+  "photo63": {
+    "number": 63,
+    "recipe_id": "collection-meat-09-08",
+    "source": "photo-library/alice-art-three-quarter-58-68-20261114/final-pass/candidates/0063-collection-meat-09-08.webp",
+    "instruction": "Remove only green peas from light creamy sauce; preserve all pixels outside precise edited sauce mask",
+    "method": "local pixel inpainting on existing Alice AI ART 3.0 result, NOT paid generation; preserves rest exactly",
+    "pending_alice_attempt": "photo-production/alice-art-positive-pilot-63-20261114/pending/0063-collection-meat-09-08.json",
+    "cost": 0
+  },
+  "generation": {
+    "max_new_paid_requests": 2,
+    "images": [
+      {
+        "number": 66,
+        "recipe_n": 109,
+        "recipe_id": "collection-meat-10-01",
+        "title": "Свиные отбивные с лимоном и тимьяном",
+        "detail": "Две разные по силуэту широкие тонко отбитые свиные отбивные из цельного бескостного мяса. Каждая плоская, асимметричная, с естественными неровными волнистыми краями, узким и широким концом, толщиной около 1 см. Румяная корочка, прозрачный лимонный сок и только мелкие листочки тимьяна.",
+        "prompt": "Фотореалистичная ресторанная фуд-фотография, камера под углом 35° сбоку, мягкий вечерний свет, светлая круглая тарелка целиком и немного стола вокруг. Две разные по силуэту широкие тонко отбитые свиные отбивные из цельного бескостного мяса. Каждая плоская, асимметричная, с естественными неровными волнистыми краями, узким и широким концом, толщиной около 1 см. Румяная корочка, прозрачный лимонный сок и только мелкие листочки тимьяна.",
+        "source": "photo-library/alice-art-positive-corrections-58-68-20261114/candidates/0066-collection-meat-10-01.webp"
+      },
+      {
+        "number": 67,
+        "recipe_n": 110,
+        "recipe_id": "collection-meat-10-02",
+        "title": "Свиные отбивные с грибами и розмарином",
+        "detail": "Две разные по силуэту тонко отбитые бескостные свиные отбивные из цельного пласта мяса. Широкие плоские формы с несимметричными неровными волнистыми краями, разной шириной концов, толщиной около 1 см. Рядом отдельно обжаренные ломтики шампиньонов, мелко нарезанный розмарин. Натуральная румяная корочка.",
+        "prompt": "Фотореалистичная ресторанная фуд-фотография, камера под углом 35° сбоку, мягкий вечерний свет, светлая круглая тарелка целиком и немного стола вокруг. Две разные по силуэту тонко отбитые бескостные свиные отбивные из цельного пласта мяса. Широкие плоские формы с несимметричными неровными волнистыми краями, разной шириной концов, толщиной около 1 см. Рядом отдельно обжаренные ломтики шампиньонов, мелко нарезанный розмарин. Натуральная румяная корочка.",
+        "source": "photo-library/alice-art-angled-plus-plate-20261114/pilot-67-v2.webp"
+      }
+    ]
+  },
+  "never_auto_retry_uncertain_paid_request": true,
+  "owner_approval_required": true,
+  "publish_to_site": false
+}
