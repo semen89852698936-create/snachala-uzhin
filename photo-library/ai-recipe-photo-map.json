@@ -28,8 +28,8 @@
       "n": 4,
       "recipe_id": "meatballs",
       "path": "/assets/recipes-ai/0004-meatballs.webp",
-      "sha": "8d14cd408e25ddfd049a9240cc8c3641265b163d",
-      "bytes": 97728
+      "sha": "b40a256478acd2cbe338a6c7d2a120304f7d3250",
+      "bytes": 108730
     },
     {
       "n": 5,
@@ -714,8 +714,8 @@
       "n": 102,
       "recipe_id": "collection-meat-09-04",
       "path": "/assets/recipes-ai/0102-collection-meat-09-04.webp",
-      "sha": "0b28aea4a447b692a476effe6bb5bbb5cd8ee986",
-      "bytes": 101870
+      "sha": "78f9774ef0798b464d42e20d3fad887991a4dd04",
+      "bytes": 153460
     },
     {
       "n": 103,
@@ -728,8 +728,8 @@
       "n": 104,
       "recipe_id": "collection-meat-09-06",
       "path": "/assets/recipes-ai/0104-collection-meat-09-06.webp",
-      "sha": "ede7a053fa09e40f6cc3b9dd00c6e7b21e3e235d",
-      "bytes": 114440
+      "sha": "8352a5f23487a43b5de4cafd41d5382c5aacb3df",
+      "bytes": 87108
     },
     {
       "n": 105,
@@ -742,8 +742,8 @@
       "n": 106,
       "recipe_id": "collection-meat-09-08",
       "path": "/assets/recipes-ai/0106-collection-meat-09-08.webp",
-      "sha": "a02543f4fe877fbd4c8bae682894f790fcb8869b",
-      "bytes": 134728
+      "sha": "f511e077c4da00426d8661fd695585fd39be0366",
+      "bytes": 642294
     },
     {
       "n": 107,
@@ -756,22 +756,22 @@
       "n": 108,
       "recipe_id": "collection-meat-09-10",
       "path": "/assets/recipes-ai/0108-collection-meat-09-10.webp",
-      "sha": "11f03e9e8f440a3ba1eba04b6f271325273d2972",
-      "bytes": 128924
+      "sha": "8be6eebbbaa656719116f54fce435b64b8ac92ee",
+      "bytes": 112226
     },
     {
       "n": 109,
       "recipe_id": "collection-meat-10-01",
       "path": "/assets/recipes-ai/0109-collection-meat-10-01.webp",
-      "sha": "54cf5ed78c9eb0ba6395d859aae186e38a8ef682",
-      "bytes": 139014
+      "sha": "90186a0fd5c1ee3d9371e0cee93cffb922b35e0d",
+      "bytes": 126934
     },
     {
       "n": 110,
       "recipe_id": "collection-meat-10-02",
       "path": "/assets/recipes-ai/0110-collection-meat-10-02.webp",
-      "sha": "d43719078ea47327a4a3bda9ba78aedc525e54e5",
-      "bytes": 96958
+      "sha": "5b6f78583b90766ca4b72100759754e212c1f5a9",
+      "bytes": 162742
     },
     {
       "n": 111,
