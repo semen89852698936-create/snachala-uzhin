@@ -1,0 +1,14 @@
+{
+  "project": "СНАЧАЛА УЖИН",
+  "recipe_number": 4,
+  "recipe_id": "meatballs",
+  "title": "Тефтели в томатном соусе",
+  "model": "aliceai-image-art-3.0",
+  "photo_path": "photo-library/alice-art-meatballs-004-20261114/candidates/0004-meatballs.webp",
+  "sha256": "5f82eda7a396c7e79c1e4fe20631de5f2c0e9b6709e56c6b0b44359c7d734b2a",
+  "status": "approved_by_owner",
+  "approved_date": "2026-11-15",
+  "site_published": false,
+  "source": "explicit user approval in current conversation",
+  "do_not_replace_without_explicit_instruction": true
+}
