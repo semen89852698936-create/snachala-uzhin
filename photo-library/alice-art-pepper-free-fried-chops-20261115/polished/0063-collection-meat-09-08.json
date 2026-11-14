@@ -1,0 +1,13 @@
+{
+  "number": 63,
+  "model_source": "aliceai-image-art-3.0",
+  "method": "smooth sauce color reconstruction inside former green-pepper edit mask",
+  "source": "photo-library/alice-art-three-quarter-58-68-20261114/final-pass/candidates/0063-collection-meat-09-08.webp",
+  "previous_retouch": "candidates/0063-collection-meat-09-08.webp",
+  "sha256": "3d5a36651c9947a4377631647ef6917bda5163669effcec696f2568a3ef57b10",
+  "outside_edited_sauce_pixels_identical_to_original": true,
+  "mask_pixels": 58306,
+  "clean_cream_samples": 22000,
+  "site_published": false,
+  "status": "candidate_owner_review_required"
+}
