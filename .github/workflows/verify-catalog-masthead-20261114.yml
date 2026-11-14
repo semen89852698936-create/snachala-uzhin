@@ -1,0 +1,98 @@
+name: Verify catalog masthead height and return button placement
+on:
+  push:
+    branches:
+      - fix/catalog-header-art-and-return-20261114
+    paths:
+      - .github/workflows/verify-catalog-masthead-20261114.yml
+permissions:
+  contents: write
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: fix/catalog-header-art-and-return-20261114
+          persist-credentials: true
+          fetch-depth: 0
+      - run: |
+          npm install --no-save --no-package-lock playwright@1.56.1
+          npx playwright install --with-deps chromium
+      - name: Assert aligned floral photo and heading, top navigation, unchanged Evening
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 -m http.server 8765 --bind 127.0.0.1 >/tmp/catalog-verification-server.log 2>&1 &
+          mkdir -p audits/catalog-banner-20261114
+          node <<'JS'
+          const {chromium}=require('playwright');
+          const assert=require('node:assert/strict');
+          (async()=>{
+            const browser=await chromium.launch({headless:true});
+            const origin='http://127.0.0.1:8765';
+            for(const viewport of [{width:1440,height:900},{width:1024,height:768},{width:390,height:844}]){
+              const page=await browser.newPage({viewport,deviceScaleFactor:1});
+              await page.goto(origin+'/#catalog',{waitUntil:'domcontentloaded',timeout:60000});
+              await page.waitForTimeout(1000);
+              const check=await page.evaluate(()=>{
+                const cat=document.querySelector('#catalog');
+                const top=cat.querySelector('.du-section-top');
+                const back=document.querySelector('.header .du-catalog-back');
+                const header=document.querySelector('.header');
+                const box=e=>{const r=e.getBoundingClientRect();return {x:r.x,y:r.y,right:r.right,bottom:r.bottom,width:r.width,height:r.height}};
+                return {before:parseFloat(getComputedStyle(cat,'::before').height),
+                  after:parseFloat(getComputedStyle(cat,'::after').height),
+                  masthead:box(top),back:box(back),header:box(header),
+                  hasOtherBack:document.querySelector('body > a.du-catalog-back')!==null,
+                  backDisplay:getComputedStyle(back).display,
+                  backPosition:getComputedStyle(back).position,
+                  imagePosition:getComputedStyle(cat,'::after').backgroundPosition,
+                  horizontalOverflow:document.documentElement.scrollWidth-document.documentElement.clientWidth};
+              });
+              console.log('CATALOG_'+viewport.width,JSON.stringify(check));
+              assert.ok(Math.abs(check.before-check.masthead.height)<=2, 'Burgundy height does not match masthead');
+              assert.ok(Math.abs(check.after-check.masthead.height)<=2, 'Floral photograph height does not match masthead');
+              assert.ok(check.back.y>=check.header.y-1 && check.back.bottom<=check.header.bottom+1,'Return button not aligned within top header');
+              assert.equal(check.backPosition,'relative');
+              assert.notEqual(check.backDisplay,'none');
+              assert.equal(check.hasOtherBack,false);
+              assert.ok(check.horizontalOverflow<=2,'Horizontal page overflow');
+              await page.screenshot({path:'audits/catalog-banner-20261114/catalog-after-'+viewport.width+'.png'});
+              if(viewport.width===1440){
+                await page.locator('.header .du-catalog-back').click();
+                assert.equal(await page.evaluate(()=>window.location.hash),'#home','Return button fails to navigate');
+                assert.equal(await page.locator('#catalog').isVisible(),false,'Catalog did not close after return');
+              }
+              await page.close();
+            }
+            const evening=await browser.newPage({viewport:{width:1440,height:900}});
+            await evening.goto(origin+'/#evening',{waitUntil:'domcontentloaded'});
+            await evening.waitForTimeout(800);
+            const even=await evening.evaluate(()=>{
+              const link=document.querySelector('.header .du-evening-back:not(.du-catalog-back)');
+              const c=document.querySelector('.header .du-catalog-back');
+              const r=link.getBoundingClientRect(),h=document.querySelector('.header').getBoundingClientRect();
+              return {backTop:r.top,backBottom:r.bottom,headerBottom:h.bottom,
+                display:getComputedStyle(link).display,catalogDisplay:getComputedStyle(c).display};
+            });
+            console.log('EVENING_UNCHANGED',JSON.stringify(even));
+            assert.ok(even.display!=='none'&&even.catalogDisplay==='none','Evening mode button regression');
+            assert.ok(even.backBottom<=even.headerBottom+2,'Evening return button moved');
+            await evening.screenshot({path:'audits/catalog-banner-20261114/evening-after-1440.png'});
+            await browser.close();
+          })().catch(err=>{console.error(err);process.exit(1)});
+          JS
+      - name: Preserve visual QA screenshots only
+        if: always()
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add audits/catalog-banner-20261114/
+          if ! git diff --cached --quiet; then
+            git commit -m "qa: screenshots of catalog photo and return button at desktop and mobile sizes"
+            git push origin HEAD:refs/heads/fix/catalog-header-art-and-return-20261114
+          fi
