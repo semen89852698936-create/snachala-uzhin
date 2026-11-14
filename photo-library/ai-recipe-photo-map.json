@@ -643,23 +643,23 @@
     {
       "n": 92,
       "recipe_id": "collection-meat-08-04",
-      "path": "/assets/recipes-ai/0092-collection-meat-08-04.webp",
-      "sha": "a92f83711c7217d98917b7b35f8a7e41426f4a46",
-      "bytes": 92410
+      "path": "/assets/recipes-ai/approved-meat-51-20261114.webp",
+      "sha": "4dd6a3517411858a6bc937462a7c5b38ef2b5767",
+      "bytes": 249652
     },
     {
       "n": 93,
       "recipe_id": "collection-meat-08-05",
-      "path": "/assets/recipes-ai/0093-collection-meat-08-05.webp",
-      "sha": "49b591e8f5ad427cc71628fb72a53e2b1312631c",
-      "bytes": 91978
+      "path": "/assets/recipes-ai/approved-meat-52-20261114.webp",
+      "sha": "4e406a336748bafdadab36c412368c94e0b3c8cc",
+      "bytes": 305200
     },
     {
       "n": 94,
       "recipe_id": "collection-meat-08-06",
-      "path": "/assets/recipes-ai/0094-collection-meat-08-06.webp",
-      "sha": "7fe534d66155c17b5be462cf7ce89e5d33d0dc5a",
-      "bytes": 68410
+      "path": "/assets/recipes-ai/approved-meat-53-20261114.webp",
+      "sha": "e81f7af385c6c70c2023c2cb45db1d6dc94626db",
+      "bytes": 261010
     },
     {
       "n": 95,
@@ -671,9 +671,9 @@
     {
       "n": 96,
       "recipe_id": "collection-meat-08-08",
-      "path": "/assets/recipes-ai/0096-collection-meat-08-08.webp",
-      "sha": "596076a538e2d943479fdbbb5fe21713514a67fd",
-      "bytes": 80308
+      "path": "/assets/recipes-ai/approved-meat-54-20261114.webp",
+      "sha": "01146085256aff2078df792a5f2a84f593bcfeb5",
+      "bytes": 275142
     },
     {
       "n": 97,
@@ -685,23 +685,23 @@
     {
       "n": 98,
       "recipe_id": "collection-meat-08-10",
-      "path": "/assets/recipes-ai/0098-collection-meat-08-10.webp",
-      "sha": "918ad9cef3135935437afbd2e226b6b8dd11b88e",
-      "bytes": 114236
+      "path": "/assets/recipes-ai/approved-meat-55-20261114.webp",
+      "sha": "bb49a3a784d789f670c1dcff6fd1df3065af9b95",
+      "bytes": 267270
     },
     {
       "n": 99,
       "recipe_id": "collection-meat-09-01",
-      "path": "/assets/recipes-ai/0099-collection-meat-09-01.webp",
-      "sha": "d6d3315abe073e146e56cb59aa7e1b8d6e0248a4",
-      "bytes": 95312
+      "path": "/assets/recipes-ai/approved-meat-56-20261114.webp",
+      "sha": "be37eeaab029c4055c6279ca0b180bf0d9b6f08d",
+      "bytes": 299228
     },
     {
       "n": 100,
       "recipe_id": "collection-meat-09-02",
-      "path": "/assets/recipes-ai/0100-collection-meat-09-02.webp",
-      "sha": "a4aea06351de7d3935f237e73b2e836257283a13",
-      "bytes": 133776
+      "path": "/assets/recipes-ai/approved-meat-57-20261114.webp",
+      "sha": "c890b14feb9b6289a72e10e209dfbd288d028ed7",
+      "bytes": 305906
     },
     {
       "n": 101,
