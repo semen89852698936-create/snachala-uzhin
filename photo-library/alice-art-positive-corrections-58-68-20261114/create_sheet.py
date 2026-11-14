@@ -13,6 +13,9 @@ SOURCE = Path("photo-library/alice-art-three-quarter-58-68-20261114/final-pass/c
 PILOT_67 = Path("photo-library/alice-art-angled-plus-plate-20261114/pilot-67-v2.webp")
 PILOT_63 = Path("_pilot63/photo-library/alice-art-positive-pilot-63-20261114")
 plan = json.loads((BASE / "plan.json").read_text(encoding="utf-8"))
+owner_approvals = json.loads((BASE / "OWNER_APPROVALS_20261114.json").read_text(encoding="utf-8"))
+approved = {int(x["photo_number"]): x for x in owner_approvals["approved"]}
+assert sorted(approved) == [59, 61, 65]
 assert plan["model"] == "aliceai-image-art-3.0"
 new = {int(r["number"]): r for r in plan["items"]}
 ids = {
@@ -56,6 +59,10 @@ for n in range(58, 69):
         assert meta["model"] == "aliceai-image-art-3.0"
         status = "НОВАЯ ПОПЫТКА · НА ПРОВЕРКУ"
         origin = "positive-only candidate"
+        if n in approved:
+            assert approved[n]["sha256"] == sha256(path), f"Changed approved photo #{n}"
+            assert approved[n]["path"] == str(path), f"Wrong approved photo path #{n}"
+            status = "УТВЕРЖДЕНО ВЛАДЕЛЬЦЕМ"
     elif n == 63:
         candidate = PILOT_63 / "candidates" / f"{n:04d}-{ids[n]}.webp"
         record = PILOT_63 / "records" / f"{n:04d}-{ids[n]}.json"
@@ -77,7 +84,8 @@ for n in range(58, 69):
         origin = "pilot67-v2"
     items.append({"number":n,"title":titles[n], "path":str(path),
                   "origin":origin,"status":status,"sha256":sha256(path),
-                  "approved":False if origin != "original" else None,
+                  "approved":True if n in approved else (None if origin == "original" else False),
+                  "approved_on":approved[n]["approved_on"] if n in approved else None,
                   "site_published_by_this_workflow":False})
 
 try:
@@ -98,7 +106,7 @@ sheet = Image.new("RGB",(columns * tile_w + (columns+1)*pad,
                          header + rows * tile_h + (rows+1)*pad), "#f1eee8")
 d = ImageDraw.Draw(sheet)
 d.text((24,20), "СНАЧАЛА УЖИН · №58–68",font=top_font,fill="#342c28")
-d.text((24,66), "Новые попытки отмечены. Все фотографии требуют визуальной приёмки.",font=body_font,fill="#54483f")
+d.text((24,66), "Утверждены №59, 61, 65. Остальные новые кадры ожидают приёмки.",font=body_font,fill="#54483f")
 for i, item in enumerate(items):
     col, row = i%columns, i//columns
     x = pad + col*(tile_w+pad)
@@ -109,7 +117,7 @@ for i, item in enumerate(items):
     offset=((tile_w-im.width)//2, (276-im.height)//2)
     sheet.paste(im,(x+offset[0],y+7+offset[1]))
     d.text((x+12,y+284),f'№{item["number"]}  {item["title"]}',font=small_font,fill="#2e2622")
-    color = "#974b30" if "НОВАЯ" in item["status"] else "#5b615f"
+    color = "#287148" if "УТВЕРЖДЕНО" in item["status"] else ("#974b30" if "НОВАЯ" in item["status"] else "#5b615f")
     d.text((x+12,y+311),item["status"],font=small_font,fill=color)
 outfile = BASE/"contact-sheet-current-58-68.jpg"
 sheet.save(outfile,"JPEG",quality=92,subsampling=0)
@@ -136,6 +144,7 @@ before_after.save(BASE/"comparison-before-current.jpg","JPEG",quality=92,subsamp
 
 manifest={"model":"aliceai-image-art-3.0","sheet_sha256":sha256(outfile),
           "generated_at":datetime.now(timezone.utc).isoformat(),
-          "all_published":False,"items":items}
+          "all_published":False,"owner_approved_numbers":sorted(approved),
+          "owner_approvals_file":str(BASE / "OWNER_APPROVALS_20261114.json"),"items":items}
 (BASE/"contact-sheet-manifest.json").write_text(json.dumps(manifest,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
 print("BUILT_CONTACT_SHEET",outfile, "new",sorted(new))
