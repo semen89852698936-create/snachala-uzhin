@@ -1,0 +1,1353 @@
+{
+  "deployment_ref": "release/approved-seven-photos-20261115",
+  "deployment_sha": "01b5d2fdab33873fc860642c7dd8b2d04c7ffc2f",
+  "total_recipes": 1001,
+  "poultry_count": 100,
+  "photos_validated": 100,
+  "photo_dimensions": {
+    "(1200, 900)": 100
+  },
+  "no_eggs_replacements": [
+    147,
+    148,
+    149,
+    150,
+    151,
+    152,
+    153,
+    154,
+    155,
+    156,
+    168,
+    169,
+    173,
+    176
+  ],
+  "errors": [],
+  "text_flags": [
+    {
+      "number": 127,
+      "title": "Индейка, запечённая кусочками с лимоном и розмарином",
+      "step_index": 4,
+      "step_title": "Добавь лимон и розмарин",
+      "issue": "Ingredient must be introduced at beginning but is instructed AFTER cooking step",
+      "text": "Добавь цедру и розмарин в начале, сок лимона — после снятия с огня."
+    },
+    {
+      "number": 137,
+      "title": "Куриные бёдра в духовке с лимоном и розмарином",
+      "step_index": 4,
+      "step_title": "Добавь лимон и розмарин",
+      "issue": "Ingredient must be introduced at beginning but is instructed AFTER cooking step",
+      "text": "Добавь цедру и розмарин в начале, сок лимона — после снятия с огня."
+    },
+    {
+      "number": 147,
+      "title": "Рубленые котлеты из индейки с лимоном и розмарином",
+      "issue": "Dish titled chopped cutlets, ingredient specifies ground meat ('фарш')"
+    },
+    {
+      "number": 147,
+      "title": "Рубленые котлеты из индейки с лимоном и розмарином",
+      "step_index": 4,
+      "step_title": "Добавь лимон и розмарин",
+      "issue": "Ingredient must be introduced at beginning but is instructed AFTER cooking step",
+      "text": "Добавь цедру и розмарин в начале, сок лимона — после снятия с огня."
+    },
+    {
+      "number": 148,
+      "title": "Рубленые котлеты из индейки с мёдом и горчицей",
+      "issue": "Dish titled chopped cutlets, ingredient specifies ground meat ('фарш')"
+    },
+    {
+      "number": 149,
+      "title": "Рубленые котлеты из индейки с лаймом и кокосом",
+      "issue": "Dish titled chopped cutlets, ingredient specifies ground meat ('фарш')"
+    },
+    {
+      "number": 150,
+      "title": "Рубленые котлеты из индейки с паприкой и сладким перцем",
+      "issue": "Dish titled chopped cutlets, ingredient specifies ground meat ('фарш')"
+    },
+    {
+      "number": 151,
+      "title": "Рубленые котлеты из индейки с томатами и орегано",
+      "issue": "Dish titled chopped cutlets, ingredient specifies ground meat ('фарш')"
+    },
+    {
+      "number": 152,
+      "title": "Рубленые котлеты из индейки с соевым соусом и имбирём",
+      "issue": "Dish titled chopped cutlets, ingredient specifies ground meat ('фарш')"
+    },
+    {
+      "number": 153,
+      "title": "Рубленые котлеты из индейки с шампиньонами и сливками",
+      "issue": "Dish titled chopped cutlets, ingredient specifies ground meat ('фарш')"
+    },
+    {
+      "number": 154,
+      "title": "Рубленые котлеты из индейки с песто и вялеными томатами",
+      "issue": "Dish titled chopped cutlets, ingredient specifies ground meat ('фарш')"
+    },
+    {
+      "number": 155,
+      "title": "Рубленые котлеты из индейки с шпинатом и чесноком",
+      "issue": "Dish titled chopped cutlets, ingredient specifies ground meat ('фарш')"
+    },
+    {
+      "number": 156,
+      "title": "Рубленые котлеты из индейки с апельсином и тимьяном",
+      "issue": "Dish titled chopped cutlets, ingredient specifies ground meat ('фарш')"
+    },
+    {
+      "number": 157,
+      "title": "Куриное рагу с лимоном и розмарином",
+      "step_index": 4,
+      "step_title": "Добавь лимон и розмарин",
+      "issue": "Ingredient must be introduced at beginning but is instructed AFTER cooking step",
+      "text": "Добавь цедру и розмарин в начале, сок лимона — после снятия с огня."
+    },
+    {
+      "number": 167,
+      "title": "Нежные фрикадельки из курицы с лимоном и розмарином",
+      "step_index": 4,
+      "step_title": "Добавь лимон и розмарин",
+      "issue": "Ingredient must be introduced at beginning but is instructed AFTER cooking step",
+      "text": "Добавь цедру и розмарин в начале, сок лимона — после снятия с огня."
+    },
+    {
+      "number": 177,
+      "title": "Стейки из индейки с лимоном и розмарином",
+      "step_index": 4,
+      "step_title": "Добавь лимон и розмарин",
+      "issue": "Ingredient must be introduced at beginning but is instructed AFTER cooking step",
+      "text": "Добавь цедру и розмарин в начале, сок лимона — после снятия с огня."
+    },
+    {
+      "number": 187,
+      "title": "Куриные полоски на сковороде с лимоном и розмарином",
+      "step_index": 4,
+      "step_title": "Добавь лимон и розмарин",
+      "issue": "Ingredient must be introduced at beginning but is instructed AFTER cooking step",
+      "text": "Добавь цедру и розмарин в начале, сок лимона — после снятия с огня."
+    },
+    {
+      "number": 197,
+      "title": "Куриные голени в духовке с лимоном и розмарином",
+      "step_index": 4,
+      "step_title": "Добавь лимон и розмарин",
+      "issue": "Ingredient must be introduced at beginning but is instructed AFTER cooking step",
+      "text": "Добавь цедру и розмарин в начале, сок лимона — после снятия с огня."
+    },
+    {
+      "number": 207,
+      "title": "Индейка в сотейнике с лимоном и розмарином",
+      "step_index": 4,
+      "step_title": "Добавь лимон и розмарин",
+      "issue": "Ingredient must be introduced at beginning but is instructed AFTER cooking step",
+      "text": "Добавь цедру и розмарин в начале, сок лимона — после снятия с огня."
+    }
+  ],
+  "photo_items": [
+    {
+      "number": 15,
+      "title": "Курица с лимоном и травами",
+      "photo": "/assets/recipes-ai/0015-chicken-lemon.webp",
+      "sha": "a2d408f471edaa06e31dac663d3a0475fe6fea7c",
+      "bytes": 137128,
+      "dimensions": [
+        1200,
+        900
+      ],
+      "special_no_eggs_regen": false
+    },
+    {
+      "number": 16,
+      "title": "Индейка в йогуртовом соусе",
+      "photo": "/assets/recipes-ai/0016-turkey-cutlets.webp",
+      "sha": "1910d0b25d4393e934ef45a9791e3ac353beb1f7",
+      "bytes": 76510,
+      "dimensions": [
+        1200,
+        900
+      ],
+      "special_no_eggs_regen": false
+    },
+    {
+      "number": 119,
+      "title": "Куриное филе на сковороде с лаймом и кокосом",
+      "photo": "/assets/recipes-ai/0119-collection-poultry-01-03.webp",
+      "sha": "b4f4523887afd0e384b3653ecea89217adb5f047",
+      "bytes": 98034,
+      "dimensions": [
+        1200,
+        900
+      ],
+      "special_no_eggs_regen": false
+    },
+    {
+      "number": 120,
+      "title": "Куриное филе на сковороде с паприкой и сладким перцем",
+      "photo": "/assets/recipes-ai/0120-collection-poultry-01-04.webp",
+      "sha": "861c0b6384eb2ade4eea5c843b117da053703b65",
+      "bytes": 134478,
+      "dimensions": [
+        1200,
+        900
+      ],
+      "special_no_eggs_regen": false
+    },
+    {
+      "number": 121,
+      "title": "Куриное филе на сковороде с томатами и орегано",
+      "photo": "/assets/recipes-ai/0121-collection-poultry-01-05.webp",
+      "sha": "736616d61cc45ed05598d017bf655fca70c8af5f",
+      "bytes": 131122,
+      "dimensions": [
+        1200,
+        900
+      ],
+      "special_no_eggs_regen": false
+    },
+    {
+      "number": 122,
+      "title": "Куриное филе на сковороде с соевым соусом и имбирём",
+      "photo": "/assets/recipes-ai/0122-collection-poultry-01-06.webp",
+      "sha": "6f687b0b65b9a42dee64cb85843c81094ee9b41f",
+      "bytes": 101682,
+      "dimensions": [
+        1200,
+        900
+      ],
+      "special_no_eggs_regen": false
+    },
+    {
+      "number": 123,
+      "title": "Куриное филе на сковороде с шампиньонами и сливками",
+      "photo": "/assets/recipes-ai/0123-collection-poultry-01-07.webp",
+      "sha": "473a6e2b9088336b77027e395aade01ca54e6e98",
+      "bytes": 105246,
+      "dimensions": [
+        1200,
+        900
+      ],
+      "special_no_eggs_regen": false
+    },
+    {
+      "number": 124,
+      "title": "Куриное филе на сковороде с песто и вялеными томатами",
+      "photo": "/assets/recipes-ai/0124-collection-poultry-01-08.webp",
+      "sha": "a2a8d5a0ca47c2b59909a1cbd89401166d4c5101",
+      "bytes": 109574,
+      "dimensions": [
+        1200,
+        900
+      ],
+      "special_no_eggs_regen": false
+    },
+    {
+      "number": 125,
+      "title": "Куриное филе на сковороде с шпинатом и чесноком",
+      "photo": "/assets/recipes-ai/0125-collection-poultry-01-09.webp",
+      "sha": "9a76339118911f95ccc60ab91ac50cb132f5863a",
+      "bytes": 142782,
+      "dimensions": [
+        1200,
+        900
+      ],
+      "special_no_eggs_regen": false
+    },
+    {
+      "number": 126,
+      "title": "Куриное филе на сковороде с апельсином и тимьяном",
+      "photo": "/assets/recipes-ai/0126-collection-poultry-01-10.webp",
+      "sha": "0b1bfabff32cb09f9efa967d7bcbbbf139ff7767",
+      "bytes": 116466,
+      "dimensions": [
+        1200,
+        900
+      ],
+      "special_no_eggs_regen": false
+    },
+    {
+      "number": 127,
+      "title": "Индейка, запечённая кусочками с лимоном и розмарином",
+      "photo": "/assets/recipes-ai/0127-collection-poultry-02-01.webp",
+      "sha": "56f0b12581d55716d6d63685e69bec325fa8b34b",
+      "bytes": 122934,
+      "dimensions": [
+        1200,
+        900
+      ],
+      "special_no_eggs_regen": false
+    },
+    {
+      "number": 128,
+      "title": "Индейка, запечённая кусочками с мёдом и горчицей",
+      "photo": "/assets/recipes-ai/0128-collection-poultry-02-02.webp",
+      "sha": "c3c989efb38192156c9718dbc33d8755d2615f1d",
+      "bytes": 128388,
+      "dimensions": [
+        1200,
+        900
+      ],
+      "special_no_eggs_regen": false
+    },
+    {
+      "number": 129,
+      "title": "Индейка, запечённая кусочками с лаймом и кокосом",
+      "photo": "/assets/recipes-ai/0129-collection-poultry-02-03.webp",
+      "sha": "e96719a4f5cb130d49625ba2272532d6bd94c80d",
+      "bytes": 146124,
+      "dimensions": [
+        1200,
+        900
+      ],
+      "special_no_eggs_regen": false
+    },
+    {
+      "number": 130,
+      "title": "Индейка, запечённая кусочками с паприкой и сладким перцем",
+      "photo": "/assets/recipes-ai/0130-collection-poultry-02-04.webp",
+      "sha": "84db0cfcd37d17844355f35483dd787cf090cdce",
+      "bytes": 149212,
+      "dimensions": [
+        1200,
+        900
+      ],
+      "special_no_eggs_regen": false
+    },
+    {
+      "number": 131,
+      "title": "Индейка, запечённая кусочками с томатами и орегано",
+      "photo": "/assets/recipes-ai/0131-collection-poultry-02-05.webp",
+      "sha": "72d30caa7c1f9c89ca56cc8025d236bda7ee5134",
+      "bytes": 101734,
+      "dimensions": [
+        1200,
+        900
+      ],
+      "special_no_eggs_regen": false
+    },
+    {
+      "number": 132,
+      "title": "Индейка, запечённая кусочками с соевым соусом и имбирём",
+      "photo": "/assets/recipes-ai/0132-collection-poultry-02-06.webp",
+      "sha": "b83f5b2a6c304cd9a33fe2b65bb64e18c6fd12c6",
+      "bytes": 106544,
+      "dimensions": [
+        1200,
+        900
+      ],
+      "special_no_eggs_regen": false
+    },
+    {
+      "number": 133,
+      "title": "Индейка, запечённая кусочками с шампиньонами и сливками",
+      "photo": "/assets/recipes-ai/0133-collection-poultry-02-07.webp",
+      "sha": "09e71eca7669d999779183d75e42b586653b9d4d",
+      "bytes": 98754,
+      "dimensions": [
+        1200,
+        900
+      ],
+      "special_no_eggs_regen": false
+    },
+    {
+      "number": 134,
+      "title": "Индейка, запечённая кусочками с песто и вялеными томатами",
+      "photo": "/assets/recipes-ai/0134-collection-poultry-02-08.webp",
+      "sha": "f25dd44b1678f71682bfe238c0e500b4f6698d10",
+      "bytes": 137478,
+      "dimensions": [
+        1200,
+        900
+      ],
+      "special_no_eggs_regen": false
+    },
+    {
+      "number": 135,
+      "title": "Индейка, запечённая кусочками с шпинатом и чесноком",
+      "photo": "/assets/recipes-ai/0135-collection-poultry-02-09.webp",
+      "sha": "9a8a41e034881f3b88bfe24a74e52396822d6ae7",
+      "bytes": 112498,
+      "dimensions": [
+        1200,
+        900
+      ],
+      "special_no_eggs_regen": false
+    },
+    {
+      "number": 136,
+      "title": "Индейка, запечённая кусочками с апельсином и тимьяном",
+      "photo": "/assets/recipes-ai/0136-collection-poultry-02-10.webp",
+      "sha": "a726cd144924068ff0b994dcf81abf048a5a1a6c",
+      "bytes": 109612,
+      "dimensions": [
+        1200,
+        900
+      ],
+      "special_no_eggs_regen": false
+    },
+    {
+      "number": 137,
+      "title": "Куриные бёдра в духовке с лимоном и розмарином",
+      "photo": "/assets/recipes-ai/0137-collection-poultry-03-01.webp",
+      "sha": "28e2e91ea58b95f716b7796275f25099e7d0dec7",
+      "bytes": 126328,
+      "dimensions": [
+        1200,
+        900
+      ],
+      "special_no_eggs_regen": false
+    },
+    {
+      "number": 138,
+      "title": "Куриные бёдра в духовке с мёдом и горчицей",
+      "photo": "/assets/recipes-ai/0138-collection-poultry-03-02.webp",
+      "sha": "ef08b3570818eb814433a9de51cdcda3fe1c7705",
+      "bytes": 90466,
+      "dimensions": [
+        1200,
+        900
+      ],
+      "special_no_eggs_regen": false
+    },
+    {
+      "number": 139,
+      "title": "Куриные бёдра в духовке с лаймом и кокосом",
+      "photo": "/assets/recipes-ai/0139-collection-poultry-03-03.webp",
+      "sha": "258aa55b5ccfae9d89fa9e026fe1c87d240c30ed",
+      "bytes": 104128,
+      "dimensions": [
+        1200,
+        900
+      ],
+      "special_no_eggs_regen": false
+    },
+    {
+      "number": 140,
+      "title": "Куриные бёдра в духовке с паприкой и сладким перцем",
+      "photo": "/assets/recipes-ai/0140-collection-poultry-03-04.webp",
+      "sha": "515bd121e2319cdad609d88d6484c2087d63d23f",
+      "bytes": 118686,
+      "dimensions": [
+        1200,
+        900
+      ],
+      "special_no_eggs_regen": false
+    },
+    {
+      "number": 141,
+      "title": "Куриные бёдра в духовке с томатами и орегано",
+      "photo": "/assets/recipes-ai/0141-collection-poultry-03-05.webp",
+      "sha": "5798389ff2c32564c1739a529357444f53bca525",
+      "bytes": 97172,
+      "dimensions": [
+        1200,
+        900
+      ],
+      "special_no_eggs_regen": false
+    },
+    {
+      "number": 142,
+      "title": "Куриные бёдра в духовке с соевым соусом и имбирём",
+      "photo": "/assets/recipes-ai/0142-collection-poultry-03-06.webp",
+      "sha": "244b1447da83e833785605d03031da549cc612fa",
+      "bytes": 96078,
+      "dimensions": [
+        1200,
+        900
+      ],
+      "special_no_eggs_regen": false
+    },
+    {
+      "number": 143,
+      "title": "Куриные бёдра в духовке с шампиньонами и сливками",
+      "photo": "/assets/recipes-ai/0143-collection-poultry-03-07.webp",
+      "sha": "59562215a362afe59aff6e096848f409ee8c83fe",
+      "bytes": 109972,
+      "dimensions": [
+        1200,
+        900
+      ],
+      "special_no_eggs_regen": false
+    },
+    {
+      "number": 144,
+      "title": "Куриные бёдра в духовке с песто и вялеными томатами",
+      "photo": "/assets/recipes-ai/0144-collection-poultry-03-08.webp",
+      "sha": "5e5c892aa19d04910288ed56b5fa26875fa0e0d9",
+      "bytes": 101228,
+      "dimensions": [
+        1200,
+        900
+      ],
+      "special_no_eggs_regen": false
+    },
+    {
+      "number": 145,
+      "title": "Куриные бёдра в духовке с шпинатом и чесноком",
+      "photo": "/assets/recipes-ai/0145-collection-poultry-03-09.webp",
+      "sha": "eac659d2e4358a66ebfec6170f2cd379c4c09274",
+      "bytes": 108974,
+      "dimensions": [
+        1200,
+        900
+      ],
+      "special_no_eggs_regen": false
+    },
+    {
+      "number": 146,
+      "title": "Куриные бёдра в духовке с апельсином и тимьяном",
+      "photo": "/assets/recipes-ai/0146-collection-poultry-03-10.webp",
+      "sha": "294a4e915018fe401ab86a74ec47445441898880",
+      "bytes": 143368,
+      "dimensions": [
+        1200,
+        900
+      ],
+      "special_no_eggs_regen": false
+    },
+    {
+      "number": 147,
+      "title": "Рубленые котлеты из индейки с лимоном и розмарином",
+      "photo": "/assets/recipes-ai/0147-collection-poultry-04-01-no-eggs-regen.webp",
+      "sha": "06dc4be7fa74df096a57e048b78e9b3e63e95d13",
+      "bytes": 108618,
+      "dimensions": [
+        1200,
+        900
+      ],
+      "special_no_eggs_regen": true
+    },
+    {
+      "number": 148,
+      "title": "Рубленые котлеты из индейки с мёдом и горчицей",
+      "photo": "/assets/recipes-ai/0148-collection-poultry-04-02-no-eggs-regen.webp",
+      "sha": "605c76d0c1dd3f1b7098551c31d5c539b8f9320b",
+      "bytes": 106088,
+      "dimensions": [
+        1200,
+        900
+      ],
+      "special_no_eggs_regen": true
+    },
+    {
+      "number": 149,
+      "title": "Рубленые котлеты из индейки с лаймом и кокосом",
+      "photo": "/assets/recipes-ai/0149-collection-poultry-04-03-no-eggs-regen.webp",
+      "sha": "f6756da4b68a112bfc8b17657f291e4b8d2ed410",
+      "bytes": 112034,
+      "dimensions": [
+        1200,
+        900
+      ],
+      "special_no_eggs_regen": true
+    },
+    {
+      "number": 150,
+      "title": "Рубленые котлеты из индейки с паприкой и сладким перцем",
+      "photo": "/assets/recipes-ai/0150-collection-poultry-04-04-no-eggs-regen.webp",
+      "sha": "f32bea1becaf7d5c96442e7edc1be7e848c3ad03",
+      "bytes": 118086,
+      "dimensions": [
+        1200,
+        900
+      ],
+      "special_no_eggs_regen": true
+    },
+    {
+      "number": 151,
+      "title": "Рубленые котлеты из индейки с томатами и орегано",
+      "photo": "/assets/recipes-ai/0151-collection-poultry-04-05-no-eggs-regen.webp",
+      "sha": "eef5b4af3148ddc80cb76f1d77f369decaa3ccad",
+      "bytes": 117976,
+      "dimensions": [
+        1200,
+        900
+      ],
+      "special_no_eggs_regen": true
+    },
+    {
+      "number": 152,
+      "title": "Рубленые котлеты из индейки с соевым соусом и имбирём",
+      "photo": "/assets/recipes-ai/0152-collection-poultry-04-06-no-eggs-regen.webp",
+      "sha": "72621c1dafc803ac5c6e7b989dfa22b00cbbb418",
+      "bytes": 136128,
+      "dimensions": [
+        1200,
+        900
+      ],
+      "special_no_eggs_regen": true
+    },
+    {
+      "number": 153,
+      "title": "Рубленые котлеты из индейки с шампиньонами и сливками",
+      "photo": "/assets/recipes-ai/0153-collection-poultry-04-07-no-eggs-regen.webp",
+      "sha": "bffe4c9d7302bfbc0097e306ff55a8d7680b099b",
+      "bytes": 129482,
+      "dimensions": [
+        1200,
+        900
+      ],
+      "special_no_eggs_regen": true
+    },
+    {
+      "number": 154,
+      "title": "Рубленые котлеты из индейки с песто и вялеными томатами",
+      "photo": "/assets/recipes-ai/0154-collection-poultry-04-08-no-eggs-regen.webp",
+      "sha": "53a8bbdf1eadb07ffcd0e79d3e5189808723e30f",
+      "bytes": 142512,
+      "dimensions": [
+        1200,
+        900
+      ],
+      "special_no_eggs_regen": true
+    },
+    {
+      "number": 155,
+      "title": "Рубленые котлеты из индейки с шпинатом и чесноком",
+      "photo": "/assets/recipes-ai/0155-collection-poultry-04-09-no-eggs-regen.webp",
+      "sha": "260eaeb39b03f13d1b31802205024feb1fc14438",
+      "bytes": 142114,
+      "dimensions": [
+        1200,
+        900
+      ],
+      "special_no_eggs_regen": true
+    },
+    {
+      "number": 156,
+      "title": "Рубленые котлеты из индейки с апельсином и тимьяном",
+      "photo": "/assets/recipes-ai/0156-collection-poultry-04-10-no-eggs-regen.webp",
+      "sha": "8d756ad57e5a4eac008521e41230bf5fdcaa83b1",
+      "bytes": 139148,
+      "dimensions": [
+        1200,
+        900
+      ],
+      "special_no_eggs_regen": true
+    },
+    {
+      "number": 157,
+      "title": "Куриное рагу с лимоном и розмарином",
+      "photo": "/assets/recipes-ai/0157-collection-poultry-05-01.webp",
+      "sha": "99cbc77b402adc34ae56564160b7e40d62846da2",
+      "bytes": 105510,
+      "dimensions": [
+        1200,
+        900
+      ],
+      "special_no_eggs_regen": false
+    },
+    {
+      "number": 158,
+      "title": "Куриное рагу с мёдом и горчицей",
+      "photo": "/assets/recipes-ai/0158-collection-poultry-05-02.webp",
+      "sha": "a68da05ad25a0415b692df17a477fecb367bf671",
+      "bytes": 94632,
+      "dimensions": [
+        1200,
+        900
+      ],
+      "special_no_eggs_regen": false
+    },
+    {
+      "number": 159,
+      "title": "Куриное рагу с лаймом и кокосом",
+      "photo": "/assets/recipes-ai/0159-collection-poultry-05-03.webp",
+      "sha": "eb09f65f4fc99e30880a68849ca0c616315d3b59",
+      "bytes": 78620,
+      "dimensions": [
+        1200,
+        900
+      ],
+      "special_no_eggs_regen": false
+    },
+    {
+      "number": 160,
+      "title": "Куриное рагу с паприкой и сладким перцем",
+      "photo": "/assets/recipes-ai/0160-collection-poultry-05-04.webp",
+      "sha": "3b7ec41262475e37dc99d984df73ffc88f895c26",
+      "bytes": 91512,
+      "dimensions": [
+        1200,
+        900
+      ],
+      "special_no_eggs_regen": false
+    },
+    {
+      "number": 161,
+      "title": "Куриное рагу с томатами и орегано",
+      "photo": "/assets/recipes-ai/0161-collection-poultry-05-05.webp",
+      "sha": "c481baf6c875d5cb63b5bc469066ed9ee23f2f4b",
+      "bytes": 119740,
+      "dimensions": [
+        1200,
+        900
+      ],
+      "special_no_eggs_regen": false
+    },
+    {
+      "number": 162,
+      "title": "Куриное рагу с соевым соусом и имбирём",
+      "photo": "/assets/recipes-ai/0162-collection-poultry-05-06.webp",
+      "sha": "bad99de1d870a647d771a1073d24e5f3da94aacb",
+      "bytes": 72786,
+      "dimensions": [
+        1200,
+        900
+      ],
+      "special_no_eggs_regen": false
+    },
+    {
+      "number": 163,
+      "title": "Куриное рагу с шампиньонами и сливками",
+      "photo": "/assets/recipes-ai/0163-collection-poultry-05-07.webp",
+      "sha": "3860ede0487fd91a957ee7eb888b170fa5150292",
+      "bytes": 79788,
+      "dimensions": [
+        1200,
+        900
+      ],
+      "special_no_eggs_regen": false
+    },
+    {
+      "number": 164,
+      "title": "Куриное рагу с песто и вялеными томатами",
+      "photo": "/assets/recipes-ai/0164-collection-poultry-05-08.webp",
+      "sha": "abf7bd3af80460f5976d4be707bd97ff5d9f52ff",
+      "bytes": 113588,
+      "dimensions": [
+        1200,
+        900
+      ],
+      "special_no_eggs_regen": false
+    },
+    {
+      "number": 165,
+      "title": "Куриное рагу с шпинатом и чесноком",
+      "photo": "/assets/recipes-ai/0165-collection-poultry-05-09.webp",
+      "sha": "8a8021fcd215b61572ab8f86828aace6cb95e57b",
+      "bytes": 89804,
+      "dimensions": [
+        1200,
+        900
+      ],
+      "special_no_eggs_regen": false
+    },
+    {
+      "number": 166,
+      "title": "Куриное рагу с апельсином и тимьяном",
+      "photo": "/assets/recipes-ai/0166-collection-poultry-05-10.webp",
+      "sha": "7d8a9618a9ab27ca88e87a86c984f9b327c12c97",
+      "bytes": 100344,
+      "dimensions": [
+        1200,
+        900
+      ],
+      "special_no_eggs_regen": false
+    },
+    {
+      "number": 167,
+      "title": "Нежные фрикадельки из курицы с лимоном и розмарином",
+      "photo": "/assets/recipes-ai/0167-collection-poultry-06-01.webp",
+      "sha": "096c33f7af758bd73374b3f205b15625130af657",
+      "bytes": 104584,
+      "dimensions": [
+        1200,
+        900
+      ],
+      "special_no_eggs_regen": false
+    },
+    {
+      "number": 168,
+      "title": "Нежные фрикадельки из курицы с мёдом и горчицей",
+      "photo": "/assets/recipes-ai/0168-collection-poultry-06-02-no-eggs-regen.webp",
+      "sha": "6da2e9382e2995131f73555805e78c7a516c98a3",
+      "bytes": 104394,
+      "dimensions": [
+        1200,
+        900
+      ],
+      "special_no_eggs_regen": true
+    },
+    {
+      "number": 169,
+      "title": "Нежные фрикадельки из курицы с лаймом и кокосом",
+      "photo": "/assets/recipes-ai/0169-collection-poultry-06-03-no-eggs-regen.webp",
+      "sha": "4e8352b565e4687355b47517722bc758af221fd2",
+      "bytes": 118416,
+      "dimensions": [
+        1200,
+        900
+      ],
+      "special_no_eggs_regen": true
+    },
+    {
+      "number": 170,
+      "title": "Нежные фрикадельки из курицы с паприкой и сладким перцем",
+      "photo": "/assets/recipes-ai/0170-collection-poultry-06-04.webp",
+      "sha": "9120c8a6f350ea9528e8b17a62abdd1d2990a962",
+      "bytes": 111496,
+      "dimensions": [
+        1200,
+        900
+      ],
+      "special_no_eggs_regen": false
+    },
+    {
+      "number": 171,
+      "title": "Нежные фрикадельки из курицы с томатами и орегано",
+      "photo": "/assets/recipes-ai/0171-collection-poultry-06-05.webp",
+      "sha": "34a57dc061ab577b0e639e35c118445774a96442",
+      "bytes": 100760,
+      "dimensions": [
+        1200,
+        900
+      ],
+      "special_no_eggs_regen": false
+    },
+    {
+      "number": 172,
+      "title": "Нежные фрикадельки из курицы с соевым соусом и имбирём",
+      "photo": "/assets/recipes-ai/0172-collection-poultry-06-06.webp",
+      "sha": "59b72db4b14451a13fe1b2f6e9017d213bbbd7b1",
+      "bytes": 120304,
+      "dimensions": [
+        1200,
+        900
+      ],
+      "special_no_eggs_regen": false
+    },
+    {
+      "number": 173,
+      "title": "Нежные фрикадельки из курицы с шампиньонами и сливками",
+      "photo": "/assets/recipes-ai/0173-collection-poultry-06-07-no-eggs-regen.webp",
+      "sha": "54846b0b4d3102a317cbfddae1bca86251172637",
+      "bytes": 88514,
+      "dimensions": [
+        1200,
+        900
+      ],
+      "special_no_eggs_regen": true
+    },
+    {
+      "number": 174,
+      "title": "Нежные фрикадельки из курицы с песто и вялеными томатами",
+      "photo": "/assets/recipes-ai/0174-collection-poultry-06-08.webp",
+      "sha": "63ab6b00c1dc05c61702a98cf362fa4797eeb195",
+      "bytes": 83336,
+      "dimensions": [
+        1200,
+        900
+      ],
+      "special_no_eggs_regen": false
+    },
+    {
+      "number": 175,
+      "title": "Нежные фрикадельки из курицы с шпинатом и чесноком",
+      "photo": "/assets/recipes-ai/0175-collection-poultry-06-09.webp",
+      "sha": "cd4b0b552ada055e4c8949ca5c1fc72a0befc05e",
+      "bytes": 132580,
+      "dimensions": [
+        1200,
+        900
+      ],
+      "special_no_eggs_regen": false
+    },
+    {
+      "number": 176,
+      "title": "Нежные фрикадельки из курицы с апельсином и тимьяном",
+      "photo": "/assets/recipes-ai/0176-collection-poultry-06-10-no-eggs-regen.webp",
+      "sha": "d4295b2881c7551d0b5dfb2fa87aa21f09289980",
+      "bytes": 77986,
+      "dimensions": [
+        1200,
+        900
+      ],
+      "special_no_eggs_regen": true
+    },
+    {
+      "number": 177,
+      "title": "Стейки из индейки с лимоном и розмарином",
+      "photo": "/assets/recipes-ai/0177-collection-poultry-07-01.webp",
+      "sha": "3935834ad657b2c511cd2af99f97a11d60584388",
+      "bytes": 124892,
+      "dimensions": [
+        1200,
+        900
+      ],
+      "special_no_eggs_regen": false
+    },
+    {
+      "number": 178,
+      "title": "Стейки из индейки с мёдом и горчицей",
+      "photo": "/assets/recipes-ai/0178-collection-poultry-07-02.webp",
+      "sha": "7e17e1e2e9297a499b092af8cbce1cebf8e8803c",
+      "bytes": 113882,
+      "dimensions": [
+        1200,
+        900
+      ],
+      "special_no_eggs_regen": false
+    },
+    {
+      "number": 179,
+      "title": "Стейки из индейки с лаймом и кокосом",
+      "photo": "/assets/recipes-ai/0179-collection-poultry-07-03.webp",
+      "sha": "453fd46c19e6acc813252242be72053721fe40d1",
+      "bytes": 114350,
+      "dimensions": [
+        1200,
+        900
+      ],
+      "special_no_eggs_regen": false
+    },
+    {
+      "number": 180,
+      "title": "Стейки из индейки с паприкой и сладким перцем",
+      "photo": "/assets/recipes-ai/0180-collection-poultry-07-04.webp",
+      "sha": "f076c405c6e3377dac57ea113024ea11d767534b",
+      "bytes": 101276,
+      "dimensions": [
+        1200,
+        900
+      ],
+      "special_no_eggs_regen": false
+    },
+    {
+      "number": 181,
+      "title": "Стейки из индейки с томатами и орегано",
+      "photo": "/assets/recipes-ai/0181-collection-poultry-07-05.webp",
+      "sha": "9cf61842d8c1ea0898579c5188669f768ef62e8c",
+      "bytes": 115760,
+      "dimensions": [
+        1200,
+        900
+      ],
+      "special_no_eggs_regen": false
+    },
+    {
+      "number": 182,
+      "title": "Стейки из индейки с соевым соусом и имбирём",
+      "photo": "/assets/recipes-ai/0182-collection-poultry-07-06.webp",
+      "sha": "a0d58d3fba525cc9fd84a722e796eed17e46ff51",
+      "bytes": 126764,
+      "dimensions": [
+        1200,
+        900
+      ],
+      "special_no_eggs_regen": false
+    },
+    {
+      "number": 183,
+      "title": "Стейки из индейки с шампиньонами и сливками",
+      "photo": "/assets/recipes-ai/0183-collection-poultry-07-07.webp",
+      "sha": "94f449f40e829b4c2bad38d07152724394d796f2",
+      "bytes": 91252,
+      "dimensions": [
+        1200,
+        900
+      ],
+      "special_no_eggs_regen": false
+    },
+    {
+      "number": 184,
+      "title": "Стейки из индейки с песто и вялеными томатами",
+      "photo": "/assets/recipes-ai/0184-collection-poultry-07-08.webp",
+      "sha": "c3931dc014be19a6f50aac7b97058f69fdf0d250",
+      "bytes": 124068,
+      "dimensions": [
+        1200,
+        900
+      ],
+      "special_no_eggs_regen": false
+    },
+    {
+      "number": 185,
+      "title": "Стейки из индейки с шпинатом и чесноком",
+      "photo": "/assets/recipes-ai/0185-collection-poultry-07-09.webp",
+      "sha": "6b5776575dd7b1f1dc42aec53cf47253bdf2b8d3",
+      "bytes": 127136,
+      "dimensions": [
+        1200,
+        900
+      ],
+      "special_no_eggs_regen": false
+    },
+    {
+      "number": 186,
+      "title": "Стейки из индейки с апельсином и тимьяном",
+      "photo": "/assets/recipes-ai/0186-collection-poultry-07-10.webp",
+      "sha": "fe79928658aae7bbcd8509205976a05876c8e62d",
+      "bytes": 105614,
+      "dimensions": [
+        1200,
+        900
+      ],
+      "special_no_eggs_regen": false
+    },
+    {
+      "number": 187,
+      "title": "Куриные полоски на сковороде с лимоном и розмарином",
+      "photo": "/assets/recipes-ai/0187-collection-poultry-08-01.webp",
+      "sha": "a6418a244dc92af9e6e8271653f95abf19d73598",
+      "bytes": 141772,
+      "dimensions": [
+        1200,
+        900
+      ],
+      "special_no_eggs_regen": false
+    },
+    {
+      "number": 188,
+      "title": "Куриные полоски на сковороде с мёдом и горчицей",
+      "photo": "/assets/recipes-ai/0188-collection-poultry-08-02.webp",
+      "sha": "96ab3f6e63f4099736d437e9601af148b2a5c6a0",
+      "bytes": 114772,
+      "dimensions": [
+        1200,
+        900
+      ],
+      "special_no_eggs_regen": false
+    },
+    {
+      "number": 189,
+      "title": "Куриные полоски на сковороде с лаймом и кокосом",
+      "photo": "/assets/recipes-ai/0189-collection-poultry-08-03.webp",
+      "sha": "e82bda46f9409bc2347bf974f4de9e6d5384d4d8",
+      "bytes": 144214,
+      "dimensions": [
+        1200,
+        900
+      ],
+      "special_no_eggs_regen": false
+    },
+    {
+      "number": 190,
+      "title": "Куриные полоски на сковороде с паприкой и сладким перцем",
+      "photo": "/assets/recipes-ai/0190-collection-poultry-08-04.webp",
+      "sha": "1b7e531bc17c7d1bc8ee3d5d67f351ee29b21432",
+      "bytes": 127314,
+      "dimensions": [
+        1200,
+        900
+      ],
+      "special_no_eggs_regen": false
+    },
+    {
+      "number": 191,
+      "title": "Куриные полоски на сковороде с томатами и орегано",
+      "photo": "/assets/recipes-ai/0191-collection-poultry-08-05.webp",
+      "sha": "bf221f125f49442562a3dcbe04ed8bf265a63c90",
+      "bytes": 165380,
+      "dimensions": [
+        1200,
+        900
+      ],
+      "special_no_eggs_regen": false
+    },
+    {
+      "number": 192,
+      "title": "Куриные полоски на сковороде с соевым соусом и имбирём",
+      "photo": "/assets/recipes-ai/0192-collection-poultry-08-06.webp",
+      "sha": "7af1faac1431be1147cf93238f33f1de0fe1de2c",
+      "bytes": 99160,
+      "dimensions": [
+        1200,
+        900
+      ],
+      "special_no_eggs_regen": false
+    },
+    {
+      "number": 193,
+      "title": "Куриные полоски на сковороде с шампиньонами и сливками",
+      "photo": "/assets/recipes-ai/0193-collection-poultry-08-07.webp",
+      "sha": "3ac7c2def9b588c2c035d1e5ec6431050b48bb00",
+      "bytes": 114094,
+      "dimensions": [
+        1200,
+        900
+      ],
+      "special_no_eggs_regen": false
+    },
+    {
+      "number": 194,
+      "title": "Куриные полоски на сковороде с песто и вялеными томатами",
+      "photo": "/assets/recipes-ai/0194-collection-poultry-08-08.webp",
+      "sha": "5272074273728d05a5983a2d05db49610cd1333c",
+      "bytes": 140020,
+      "dimensions": [
+        1200,
+        900
+      ],
+      "special_no_eggs_regen": false
+    },
+    {
+      "number": 195,
+      "title": "Куриные полоски на сковороде с шпинатом и чесноком",
+      "photo": "/assets/recipes-ai/0195-collection-poultry-08-09.webp",
+      "sha": "18a6ddd2356a920f9d6984b73cbf0a34bd78b22c",
+      "bytes": 127546,
+      "dimensions": [
+        1200,
+        900
+      ],
+      "special_no_eggs_regen": false
+    },
+    {
+      "number": 196,
+      "title": "Куриные полоски на сковороде с апельсином и тимьяном",
+      "photo": "/assets/recipes-ai/0196-collection-poultry-08-10.webp",
+      "sha": "f25e104f52826bcf1c16fb14a507793c99d34980",
+      "bytes": 180050,
+      "dimensions": [
+        1200,
+        900
+      ],
+      "special_no_eggs_regen": false
+    },
+    {
+      "number": 197,
+      "title": "Куриные голени в духовке с лимоном и розмарином",
+      "photo": "/assets/recipes-ai/0197-collection-poultry-09-01.webp",
+      "sha": "dd91aca29f959242fb8fcf9bd024dedd36028cba",
+      "bytes": 124582,
+      "dimensions": [
+        1200,
+        900
+      ],
+      "special_no_eggs_regen": false
+    },
+    {
+      "number": 198,
+      "title": "Куриные голени в духовке с мёдом и горчицей",
+      "photo": "/assets/recipes-ai/0198-collection-poultry-09-02.webp",
+      "sha": "42e9f7e67bfd64be14b168c9a26da1901d8698a4",
+      "bytes": 82156,
+      "dimensions": [
+        1200,
+        900
+      ],
+      "special_no_eggs_regen": false
+    },
+    {
+      "number": 199,
+      "title": "Куриные голени в духовке с лаймом и кокосом",
+      "photo": "/assets/recipes-ai/0199-collection-poultry-09-03.webp",
+      "sha": "5a28c7e1bef8694144d990662cb5d86d8f63a932",
+      "bytes": 87758,
+      "dimensions": [
+        1200,
+        900
+      ],
+      "special_no_eggs_regen": false
+    },
+    {
+      "number": 200,
+      "title": "Куриные голени в духовке с паприкой и сладким перцем",
+      "photo": "/assets/recipes-ai/0200-collection-poultry-09-04.webp",
+      "sha": "dfa1d1b180f902d06ef8f4c422937a2e95e4398d",
+      "bytes": 125410,
+      "dimensions": [
+        1200,
+        900
+      ],
+      "special_no_eggs_regen": false
+    },
+    {
+      "number": 201,
+      "title": "Куриные голени в духовке с томатами и орегано",
+      "photo": "/assets/recipes-ai/0201-collection-poultry-09-05.webp",
+      "sha": "8fa22099d2d49784ff09fd431b0867429bfa2501",
+      "bytes": 111500,
+      "dimensions": [
+        1200,
+        900
+      ],
+      "special_no_eggs_regen": false
+    },
+    {
+      "number": 202,
+      "title": "Куриные голени в духовке с соевым соусом и имбирём",
+      "photo": "/assets/recipes-ai/0202-collection-poultry-09-06.webp",
+      "sha": "4f35687930dcab44157ab1ca8dcfb88911dacf3a",
+      "bytes": 86496,
+      "dimensions": [
+        1200,
+        900
+      ],
+      "special_no_eggs_regen": false
+    },
+    {
+      "number": 203,
+      "title": "Куриные голени в духовке с шампиньонами и сливками",
+      "photo": "/assets/recipes-ai/0203-collection-poultry-09-07.webp",
+      "sha": "c7991c52d80cbad6b2c31617e4d07ae17f31fcdb",
+      "bytes": 120406,
+      "dimensions": [
+        1200,
+        900
+      ],
+      "special_no_eggs_regen": false
+    },
+    {
+      "number": 204,
+      "title": "Куриные голени в духовке с песто и вялеными томатами",
+      "photo": "/assets/recipes-ai/0204-collection-poultry-09-08.webp",
+      "sha": "d14244bb1fff7fddf85e6fae52b5e9adbbca0857",
+      "bytes": 70706,
+      "dimensions": [
+        1200,
+        900
+      ],
+      "special_no_eggs_regen": false
+    },
+    {
+      "number": 205,
+      "title": "Куриные голени в духовке с шпинатом и чесноком",
+      "photo": "/assets/recipes-ai/0205-collection-poultry-09-09.webp",
+      "sha": "8b33162c3c3e848dbdd1f393a5c0917790ab1254",
+      "bytes": 106720,
+      "dimensions": [
+        1200,
+        900
+      ],
+      "special_no_eggs_regen": false
+    },
+    {
+      "number": 206,
+      "title": "Куриные голени в духовке с апельсином и тимьяном",
+      "photo": "/assets/recipes-ai/0206-collection-poultry-09-10.webp",
+      "sha": "afcbc611ea01bd82e5d49bf9f9a4c2557bd02fbe",
+      "bytes": 98004,
+      "dimensions": [
+        1200,
+        900
+      ],
+      "special_no_eggs_regen": false
+    },
+    {
+      "number": 207,
+      "title": "Индейка в сотейнике с лимоном и розмарином",
+      "photo": "/assets/recipes-ai/0207-collection-poultry-10-01.webp",
+      "sha": "4279ee496fd9123062f688f1da5338c9ace09dfd",
+      "bytes": 121422,
+      "dimensions": [
+        1200,
+        900
+      ],
+      "special_no_eggs_regen": false
+    },
+    {
+      "number": 208,
+      "title": "Индейка в сотейнике с мёдом и горчицей",
+      "photo": "/assets/recipes-ai/0208-collection-poultry-10-02.webp",
+      "sha": "c58059beb917991db61856337169b08f7b0954a2",
+      "bytes": 110366,
+      "dimensions": [
+        1200,
+        900
+      ],
+      "special_no_eggs_regen": false
+    },
+    {
+      "number": 209,
+      "title": "Индейка в сотейнике с лаймом и кокосом",
+      "photo": "/assets/recipes-ai/0209-collection-poultry-10-03.webp",
+      "sha": "367ad1df3564398eda6839c337506829f02c4bfd",
+      "bytes": 147750,
+      "dimensions": [
+        1200,
+        900
+      ],
+      "special_no_eggs_regen": false
+    },
+    {
+      "number": 210,
+      "title": "Индейка в сотейнике с паприкой и сладким перцем",
+      "photo": "/assets/recipes-ai/0210-collection-poultry-10-04.webp",
+      "sha": "041a5304856ba44d77531aae87d0cc7067c7532a",
+      "bytes": 104104,
+      "dimensions": [
+        1200,
+        900
+      ],
+      "special_no_eggs_regen": false
+    },
+    {
+      "number": 211,
+      "title": "Индейка в сотейнике с томатами и орегано",
+      "photo": "/assets/recipes-ai/0211-collection-poultry-10-05.webp",
+      "sha": "fd0810f6ca8a6d1a88078351e011ab3117b872e6",
+      "bytes": 125188,
+      "dimensions": [
+        1200,
+        900
+      ],
+      "special_no_eggs_regen": false
+    },
+    {
+      "number": 212,
+      "title": "Индейка в сотейнике с соевым соусом и имбирём",
+      "photo": "/assets/recipes-ai/0212-collection-poultry-10-06.webp",
+      "sha": "7eaa3bf7776fcf40f3b85fa93bc10d788478e8e0",
+      "bytes": 119364,
+      "dimensions": [
+        1200,
+        900
+      ],
+      "special_no_eggs_regen": false
+    },
+    {
+      "number": 213,
+      "title": "Индейка в сотейнике с шампиньонами и сливками",
+      "photo": "/assets/recipes-ai/0213-collection-poultry-10-07.webp",
+      "sha": "ca47f11b6f6444fc404671258b63f18ab0a3c082",
+      "bytes": 106612,
+      "dimensions": [
+        1200,
+        900
+      ],
+      "special_no_eggs_regen": false
+    },
+    {
+      "number": 214,
+      "title": "Индейка в сотейнике с песто и вялеными томатами",
+      "photo": "/assets/recipes-ai/0214-collection-poultry-10-08.webp",
+      "sha": "0b85ae26439b8214ed082395e92bdd56d60fb694",
+      "bytes": 98242,
+      "dimensions": [
+        1200,
+        900
+      ],
+      "special_no_eggs_regen": false
+    },
+    {
+      "number": 215,
+      "title": "Индейка в сотейнике с шпинатом и чесноком",
+      "photo": "/assets/recipes-ai/0215-collection-poultry-10-09.webp",
+      "sha": "4019464a8718f3420609e40d33214621914113b3",
+      "bytes": 169508,
+      "dimensions": [
+        1200,
+        900
+      ],
+      "special_no_eggs_regen": false
+    },
+    {
+      "number": 216,
+      "title": "Индейка в сотейнике с апельсином и тимьяном",
+      "photo": "/assets/recipes-ai/0216-collection-poultry-10-10.webp",
+      "sha": "a84ca66db0caa7d70c4b54c4bb17c8d4d3b54999",
+      "bytes": 125712,
+      "dimensions": [
+        1200,
+        900
+      ],
+      "special_no_eggs_regen": false
+    }
+  ]
+}

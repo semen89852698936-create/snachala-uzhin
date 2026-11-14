@@ -1,0 +1,26 @@
+{
+  "url": "https://snachala-uzhin-preview-aauuwf5y1-chaika2.vercel.app/full-catalog/",
+  "browser": "chromium",
+  "screenshots": [
+    "audit/poultry-published-20261115/live-poultry-desktop-top.png",
+    "audit/poultry-published-20261115/live-poultry-desktop-scroll.png",
+    "audit/poultry-published-20261115/live-poultry-mobile-top.png",
+    "audit/poultry-published-20261115/live-poultry-mobile-scroll.png"
+  ],
+  "desktop": {
+    "http_status": 200,
+    "title": "Сначала ужин · 1001 повод остаться",
+    "result_count": "100 рецептов",
+    "filter_pressed": "true",
+    "visible_photo_count": 24,
+    "js_errors": []
+  },
+  "mobile": {
+    "http_status": 200,
+    "title": "Сначала ужин · 1001 повод остаться",
+    "result_count": "100 рецептов",
+    "filter_pressed": "true",
+    "visible_photo_count": 24,
+    "js_errors": []
+  }
+}
