@@ -1,0 +1,60 @@
+name: Alice AI ART 3.0 - full plate natural fried pork 67 review
+on:
+  push:
+    branches:
+      - photo-production/alice-art-67-browned-no-bone-20261115
+    paths:
+      - .github/workflows/alice-art-67-browned-no-bone-20261115.yml
+permissions:
+  contents: write
+concurrency:
+  group: alice-art-67-browned-no-bone-20261115
+  cancel-in-progress: false
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 35
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: photo-production/alice-art-67-browned-no-bone-20261115
+          fetch-depth: 0
+          persist-credentials: true
+      - name: Read original Alice AI ART adapter
+        uses: actions/checkout@v4
+        with:
+          repository: semen89852698936-create/snachala-uzhin
+          ref: photo-production/yandex-ai-art-1001
+          path: _photo_source
+          sparse-checkout: |
+            photo-pipeline
+            photo-library/recipes.json
+          sparse-checkout-cone-mode: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: python -m pip install --quiet 'Pillow>=10,<13'
+      - name: Generate final wide-frame candidate 67 through Alice AI ART 3.0
+        shell: bash
+        env:
+          YANDEX_API_KEY: ${{ secrets.YANDEX_API_KEY }}
+          YANDEX_FOLDER_ID: ${{ secrets.YANDEX_FOLDER_ID || 'b1g00u8p0k5nl98v8nre' }}
+          PHOTO_COST_APPROVED: 'true'
+        run: |
+          set -euo pipefail
+          test -n "${YANDEX_API_KEY:-}"
+          test -n "${YANDEX_FOLDER_ID:-}"
+          python3 photo-library/alice-art-pepper-free-fried-chops-20261115/generate67v3.py
+      - name: Rebuild comparison using actual approved and candidate photos
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 photo-library/alice-art-pepper-free-fried-chops-20261115/make_finalbrown_sheet.py
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add photo-library/alice-art-pepper-free-fried-chops-20261115/comparison-finalbrown-63-66-67.jpg
+          git add photo-library/alice-art-pepper-free-fried-chops-20261115/contact-sheet-finalbrown-58-68.jpg
+          git add photo-library/alice-art-pepper-free-fried-chops-20261115/review-finalbrown-manifest.json
+          git diff --cached --check
+          git commit -m 'photos: save new 67 full plate review sheets; keep approved photos untouched'
+          git push origin HEAD:refs/heads/photo-production/alice-art-67-browned-no-bone-20261115
