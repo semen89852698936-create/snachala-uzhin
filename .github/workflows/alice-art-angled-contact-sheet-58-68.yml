@@ -1,0 +1,77 @@
+name: Build angled side-view review sheet for photos 58-68
+on:
+  push:
+    branches:
+      - photo-production/alice-art-angled-plus-plate-20261114
+    paths:
+      - .github/workflows/alice-art-angled-contact-sheet-58-68.yml
+permissions:
+  contents: write
+jobs:
+  contact-sheet:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: photo-production/alice-art-angled-plus-plate-20261114
+          persist-credentials: true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: python -m pip install --quiet 'Pillow>=10,<13'
+      - name: Validate all 11 WebP files and assemble contact sheet without altering site
+        shell: bash
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          from PIL import Image,ImageDraw,ImageFont,ImageOps
+          import hashlib,json,math
+          root=Path('photo-library/alice-art-three-quarter-58-68-20261114/final-pass')
+          images=sorted((root/'candidates').glob('*.webp'))
+          assert len(images)==11, len(images)
+          try:
+              fbig=ImageFont.truetype('/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf',24)
+              fsmall=ImageFont.truetype('/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf',15)
+          except OSError:
+              fbig=ImageFont.load_default()
+              fsmall=fbig
+          cols,rows=3,math.ceil(len(images)/3)
+          cardw,cardh=486,396
+          margin,top=26,96
+          canvas=Image.new('RGB',(margin*2+cols*cardw,top+rows*cardh+margin),(239,235,226))
+          d=ImageDraw.Draw(canvas)
+          d.text((margin,20),'СНАЧАЛА УЖИН | Фотографии №58–68 | На утверждение',fill=(45,39,35),font=fbig)
+          d.text((margin,58),'Новая версия: тарелка целиком. Не опубликовано на сайте.',fill=(100,75,68),font=fsmall)
+          for i,path in enumerate(images):
+              n=int(path.name[:4])
+              assert n==58+i
+              record=root/'records'/(path.stem+'.json')
+              meta=json.loads(record.read_text(encoding='utf-8'))
+              assert meta['photo_number']==n
+              assert meta['site_published'] is False
+              assert hashlib.sha256(path.read_bytes()).hexdigest()==meta['sha256']
+              with Image.open(path) as src:
+                  src.load()
+                  assert src.size==(1200,900)
+                  small=ImageOps.fit(src.convert('RGB'),(450,338),method=Image.Resampling.LANCZOS)
+              col,row=i%cols,i//cols
+              x=margin+col*cardw
+              y=top+row*cardh
+              d.rounded_rectangle((x,y,x+466,y+378),radius=9,fill=(250,248,243))
+              canvas.paste(small,(x+8,y+36))
+              d.text((x+12,y+6),f'№{n}  {meta["title"][:30]}',fill=(44,34,32),font=fsmall)
+          output=root/'contact-sheet-angled-58-68.jpg'
+          canvas.save(output,quality=91,optimize=True)
+          print('CONTACT_SHEET_READY',output,output.stat().st_size)
+          PY
+      - name: Save review sheet in isolated branch
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add photo-library/alice-art-three-quarter-58-68-20261114/final-pass/contact-sheet-angled-58-68.jpg
+          git diff --cached --check
+          git commit -m "photos: add contact sheet for visual approval of 58-68"
+          git push origin HEAD:refs/heads/photo-production/alice-art-angled-plus-plate-20261114
