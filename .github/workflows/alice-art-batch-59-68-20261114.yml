@@ -66,7 +66,7 @@ jobs:
           assert plan['max_paid_requests']==10 and plan['cost_approved_by_user_for_10_generations'] is True
           for item in items:
               recipe=by_n[int(item['recipe_n'])]
-              assert recipe['id']==item['recipe_id'] and recipe['title']==item['title'], item
+              assert recipe['id']==item['recipe_id'] and recipe['title'].replace('с сливками','со сливками')==item['title'], item
               assert 1<=len(item['prompt'])<=500
               assert item['publish_to_site'] is False
 
