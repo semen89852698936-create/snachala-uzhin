@@ -1,0 +1,55 @@
+name: Alice AI ART 3.0 - stamp approved 59 61 65 on photo review sheets
+on:
+  push:
+    branches:
+      - photo-production/alice-art-positive-corrections-58-68-20261114
+    paths:
+      - .github/workflows/alice-art-approval-sheet-58-68-20261114.yml
+permissions:
+  contents: write
+concurrency:
+  group: alice-art-approval-only-sheet-58-68-20261114
+  cancel-in-progress: false
+jobs:
+  update-approved-review-sheet:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Checkout approval branch
+        uses: actions/checkout@v4
+        with:
+          ref: photo-production/alice-art-positive-corrections-58-68-20261114
+          persist-credentials: true
+          fetch-depth: 0
+      - name: Read-only pilot 63 reference (never generate)
+        uses: actions/checkout@v4
+        with:
+          repository: semen89852698936-create/snachala-uzhin
+          ref: photo-production/alice-art-positive-pilot-63-20261114
+          path: _pilot63
+          sparse-checkout: |
+            photo-library/alice-art-positive-pilot-63-20261114
+          sparse-checkout-cone-mode: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install local image package, no paid AI API
+        run: python -m pip install --quiet 'Pillow>=10,<13'
+      - name: Rebuild from existing photos and SHA-pinned user approvals
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 photo-library/alice-art-positive-corrections-58-68-20261114/create_sheet.py
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add photo-library/alice-art-positive-corrections-58-68-20261114/contact-sheet-current-58-68.jpg
+          git add photo-library/alice-art-positive-corrections-58-68-20261114/comparison-before-current.jpg
+          git add photo-library/alice-art-positive-corrections-58-68-20261114/contact-sheet-manifest.json
+          git diff --cached --check
+          if git diff --cached --quiet; then
+            echo 'APPROVED_SHEET_ALREADY_CURRENT'
+          else
+            git commit -m 'photos: show user-approved 59 61 65 on actual 58-68 sheet'
+            git push origin HEAD:refs/heads/photo-production/alice-art-positive-corrections-58-68-20261114
+            echo 'APPROVED_SHEET_REBUILT'
+          fi
