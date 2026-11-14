@@ -4,7 +4,7 @@ on:
     branches:
       - photo-production/alice-art-angled-plus-plate-20261114
     paths:
-      - .github/workflows/alice-art-angled-plus-plate-pilot-67-v2-v2.yml
+      - .github/workflows/alice-art-angled-plus-plate-pilot-67-v2.yml
 permissions:
   contents: write
 concurrency:
