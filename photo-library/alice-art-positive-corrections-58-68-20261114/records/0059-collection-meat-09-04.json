@@ -12,7 +12,9 @@
     1200,
     900
   ],
-  "status": "new_candidate_requires_owner_visual_review",
+  "status": "approved_by_owner_not_published",
   "site_published": false,
-  "generated_at": "2026-11-14T20:45:05.666712+00:00"
+  "generated_at": "2026-11-14T20:45:05.666712+00:00",
+  "owner_approved": true,
+  "owner_approved_on": "2026-11-14"
 }
