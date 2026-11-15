@@ -1690,3 +1690,11 @@ body.du-evening-mode #music .du-music-heading .du-section-heading > p::before {
     font-size: clamp(40px, 9.6vw, 46px) !important;
   }
 }
+
+/* EVENING_COUPLE_PHOTO_SQUARE_UPPER_CORNERS_20261116
+   Remove rounding from the couple photo in the closing evening scene only. */
+body.du-evening-mode #eveningContinuation .du-story-after,
+body.du-evening-mode #eveningContinuation .du-story-after-photo,
+body.du-evening-mode #eveningContinuation .du-story-after-photo > img {
+  border-radius: 0 !important;
+}
