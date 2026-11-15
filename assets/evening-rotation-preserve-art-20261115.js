@@ -246,3 +246,54 @@
     document.documentElement.dataset.eveningRotationCompleted = 'true';
   });
 })();
+
+
+/* EVENING_HERO_RULE_MATCH_COPY_ENDS_20261116
+   Keep the approved red curve path unchanged; fit only its horizontal span
+   to the measured editorial text (both subtitles have matched endpoints). */
+(function () {
+  'use strict';
+  const hero = document.querySelector('#eveningLanding');
+  if (!hero) return;
+  const top = hero.querySelector('.du-match11-slogan');
+  const bottom = hero.querySelector('.du-match11-subtitle');
+  const rule = hero.querySelector('.du-match11-red-line');
+  if (!top || !bottom || !rule) return;
+
+  function renderedTextRect(el) {
+    const range = document.createRange();
+    range.selectNodeContents(el);
+    const rect = range.getBoundingClientRect();
+    if (range.detach) range.detach();
+    return rect;
+  }
+
+  function syncRule() {
+    if (!document.body.classList.contains('du-evening-mode') ||
+        window.innerWidth <= 760) {
+      rule.style.removeProperty('width');
+      rule.style.removeProperty('left');
+      return;
+    }
+    const topRect = renderedTextRect(top);
+    const bottomRect = renderedTextRect(bottom);
+    const ruleParentRect = rule.offsetParent && rule.offsetParent.getBoundingClientRect();
+    if (!ruleParentRect || !topRect.width || !bottomRect.width) return;
+    const start = Math.min(topRect.left, bottomRect.left);
+    const end = Math.max(topRect.right, bottomRect.right);
+    // Original SVG path is inset 4/360 from each side. Compensate for those
+    // path-end margins without modifying its curve or 22px height.
+    const fullWidth = (end - start) * 360 / 352;
+    const inset = fullWidth * 4 / 360;
+    rule.style.setProperty('left', (start - inset - ruleParentRect.left) + 'px', 'important');
+    rule.style.setProperty('width', fullWidth + 'px', 'important');
+  }
+  function update() { requestAnimationFrame(syncRule); }
+  update();
+  window.addEventListener('load', update);
+  window.addEventListener('resize', update, { passive: true });
+  window.addEventListener('hashchange', update);
+  if (document.fonts && document.fonts.ready) {
+    document.fonts.ready.then(update).catch(() => {});
+  }
+})();
