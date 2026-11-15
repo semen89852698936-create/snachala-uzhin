@@ -959,3 +959,14 @@ body.du-evening-mode #eveningLanding .du-match11-slogan,
 body.du-evening-mode #eveningLanding .du-match11-subtitle {
   left: 5.82% !important;
 }
+
+/* EVENING_SLOGAN_MATCH_SUBTITLE_FONT_SIZE_20261116
+   Change only the size of the first editorial line. */
+body.du-evening-mode #eveningLanding .du-match11-slogan {
+  font-size: clamp(23px,2.43vw,41px) !important;
+}
+@media (max-width: 760px) {
+  body.du-evening-mode #eveningLanding .du-match11-slogan {
+    font-size: clamp(26px,5.2vw,36px) !important;
+  }
+}
