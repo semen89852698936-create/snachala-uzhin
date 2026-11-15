@@ -1712,7 +1712,7 @@ body.du-evening-mode #eveningContinuation > .du-story-dinner .du-story-dinner-ph
 @media (min-width: 1021px) {
   body.du-evening-mode #eveningContinuation > .du-evening-wide-strip.du-evening-strip-three {
     position: relative !important;
-    top: -40px !important;
+    top: 13px !important;
   }
 }
 
