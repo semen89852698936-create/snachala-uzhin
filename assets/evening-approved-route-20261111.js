@@ -17,14 +17,8 @@
       catalogBack.setAttribute('aria-label', 'Вернуться из каталога на страницу СНАЧАЛА УЖИН');
     }
 
-    const eveningBack = document.querySelector('header a.du-evening-back:not(.du-catalog-back)');
-    if (eveningBack) {
-      eveningBack.setAttribute('href', '#evening');
-      eveningBack.setAttribute('aria-label', 'Вернуться со страницы СНАЧАЛА УЖИН в Наш Вечер');
-      eveningBack.classList.add('du-journal-home-link');
-      const label = eveningBack.querySelector('span:last-child');
-      if (label) label.textContent = 'Наш вечер';
-    }
+    // Remove only the floating «← Наш вечер» return button.
+    document.querySelector('header a.du-evening-back:not(.du-catalog-back)')?.remove();
 
     const coverBack = document.querySelector('a.du-match11-sr-back');
     if (coverBack) {
@@ -105,17 +99,6 @@
     if (!document.body.classList.contains('du-evening-mode')) return;
     if (!document.querySelector('#eveningLanding .du-match11-hero')) return;
     window.scrollTo({top:0, left:0, behavior:'instant'});
-  }
-
-  // Keep the existing floating back-button styling; show it only on the old
-  // "СНАЧАЛА УЖИН" cover and make it return to the new "Наш вечер" home.
-  if (!document.querySelector('#du-journal-back-visibility')) {
-    const style = document.createElement('style');
-    style.id = 'du-journal-back-visibility';
-    style.textContent =
-      'body.du-journal-view header a.du-evening-back.du-journal-home-link{display:inline-flex!important}' +
-      'body:not(.du-journal-view) header a.du-evening-back.du-journal-home-link{display:none!important}';
-    document.head.appendChild(style);
   }
 
   installNavigation();
