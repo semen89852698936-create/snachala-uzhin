@@ -310,3 +310,68 @@
   // controlled by a dedicated CSS rule instead of the smaller intro copy.
   musicTagline.textContent = musicTagline.textContent.replace(/\.\s*$/, '');
 })();
+
+
+/* EVENING_BEIGE_STRIP_EQUAL_VERTICAL_GAPS_20261116
+   Visually center ONLY the "ТОЛЬКО ДЛЯ ДВОИХ" beige strip between
+   the prior dark two-person scene and the next visible section. Measure
+   final rendered edges, so fonts, responsive sizes and previously
+   approved positions of neighboring sections stay unchanged. */
+(function () {
+  'use strict';
+  const strip = document.querySelector('#eveningContinuation > .du-evening-wide-strip.du-evening-strip-three');
+  if (!strip) return;
+  const above = strip.previousElementSibling;
+  if (!above || !above.classList.contains('du-story-after')) return;
+
+  function followingVisibleSection() {
+    let next = strip.parentElement && strip.parentElement.nextElementSibling;
+    while (next) {
+      const box = next.getBoundingClientRect();
+      if (getComputedStyle(next).display !== 'none' && box.height > 0) return next;
+      next = next.nextElementSibling;
+    }
+    return null;
+  }
+
+  let requested = false;
+  function center() {
+    requested = false;
+    if (window.innerWidth <= 1020 || !document.body.classList.contains('du-evening-mode')) {
+      strip.style.removeProperty('top');
+      return;
+    }
+    const below = followingVisibleSection();
+    if (!below) return;
+    const upperEdge = above.getBoundingClientRect().bottom;
+    const lowerEdge = below.getBoundingClientRect().top;
+    const band = strip.getBoundingClientRect();
+    if (!band.height || !Number.isFinite(upperEdge) || !Number.isFinite(lowerEdge)) return;
+
+    // Moving the strip does not reflow the neighbors: only its relative top changes.
+    const idealTop = (upperEdge + lowerEdge - band.height) / 2;
+    const delta = idealTop - band.top;
+    if (Math.abs(delta) < 0.5) return;
+    const presentTop = parseFloat(getComputedStyle(strip).top) || 0;
+    strip.style.setProperty('top', (Math.round((presentTop + delta) * 10) / 10) + 'px', 'important');
+  }
+  function schedule() {
+    if (requested) return;
+    requested = true;
+    requestAnimationFrame(center);
+  }
+  schedule();
+  window.addEventListener('load', schedule);
+  window.addEventListener('resize', schedule, {passive: true});
+  window.addEventListener('hashchange', schedule);
+  if (document.fonts && document.fonts.ready) {
+    document.fonts.ready.then(schedule).catch(() => {});
+  }
+  if (typeof ResizeObserver !== 'undefined') {
+    const observer = new ResizeObserver(schedule);
+    observer.observe(strip);
+    observer.observe(above);
+    const below = followingVisibleSection();
+    if (below) observer.observe(below);
+  }
+})();
