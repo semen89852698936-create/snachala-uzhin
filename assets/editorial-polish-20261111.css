@@ -1650,5 +1650,5 @@ body.du-evening-mode #eveningContinuation .du-evening-experience > .du-evening-t
 /* EVENING_INVITATION_CARD_UP_40PX_20261116
    Move only the "Иногда достаточно одного сообщения" invitation card. */
 body.du-evening-mode #eveningContinuation .du-evening-experience > .du-evening-invitation {
-  transform: translateY(-40px) !important;
+  transform: translateY(-32px) !important;
 }
