@@ -33,16 +33,22 @@ for(const path of ['index.html','full-catalog/index.html']){
   assert.ok(matches.some(x=>x.recipe.title.includes('Куриное рагу')&&x.missing.length===1&&x.missing[0].name==='Бульон овощной'),path+': missing broth detection');
   assert.ok(matches.some(x=>x.recipe.title.includes('Нежные фрикадельки')&&x.missing.length===1&&x.missing[0].name==='Сухари панировочные'),path+': missing breadcrumbs detection');
   assert.ok(matches.some(x=>x.missing.length===0),path+': complete pantry dishes missing');
-  // Regression: common Russian pantry queries must never disappear because of grammatical forms.
-  // Existing catalog does not contain a recipe combining either protein with potato;
-  // show genuine partial matches, not invented complete matches.
+  // Regression: Russian ingredient inflections must still work after the approved 20-recipe swap.
+  // New beef goulash intentionally includes potatoes. Chicken/turkey potato searches
+  // still return honest partial matches instead of fabricated complete matches.
   for(const protein of ['говядина','курица','индейка']){
     const request=parts(protein+', картофель');
     const ranked=rank(recipes,request,true);
     assert.ok(ranked.length>0,path+': no suggestions for '+protein+' + картофель');
     assert.ok(ranked.some(x=>x.available>0),path+': query terms not understood for '+protein);
-    assert.ok(!recipes.some(x=>hasAll(x,request)),path+': catalog changed, update expected full-match coverage for '+protein);
-    assert.ok(ranked.every(x=>x.available<request.length),path+': partial match must not be labeled a complete ingredient match');
+    const complete=recipes.filter(x=>hasAll(x,request));
+    if(protein==='говядина'){
+      assert.ok(complete.some(x=>x.id==='nd-beef-goulash-potatoes'),path+': new goulash must match beef and potatoes');
+      assert.ok(ranked.some(x=>x.recipe.id==='nd-beef-goulash-potatoes'&&x.missing.length===0),path+': new full match must be displayed as ready');
+    } else {
+      assert.equal(complete.length,0,path+': do not invent full matches for '+protein);
+      assert.ok(ranked.every(x=>x.available<request.length),path+': partial match must not be labeled a complete match');
+    }
   }
   const beefQuery=parts('говядина');
   const turkeyQuery=parts('индейка');
