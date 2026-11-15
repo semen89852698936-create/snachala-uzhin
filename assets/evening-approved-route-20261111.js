@@ -17,8 +17,14 @@
       catalogBack.setAttribute('aria-label', 'Вернуться из каталога на страницу СНАЧАЛА УЖИН');
     }
 
-    // Remove only the floating «← Наш вечер» return button.
-    document.querySelector('header a.du-evening-back:not(.du-catalog-back)')?.remove();
+    // Show the approved floating ← На главную button on the old journal page only.
+    const journalHome = document.querySelector('header a.du-evening-back:not(.du-catalog-back)');
+    if (journalHome) {
+      journalHome.setAttribute('href', '#evening');
+      journalHome.setAttribute('aria-label', 'На главную страницу Наш Вечер');
+      const label = journalHome.querySelector('span:last-child');
+      if (label) label.textContent = 'На главную';
+    }
 
     const coverBack = document.querySelector('a.du-match11-sr-back');
     if (coverBack) {
@@ -99,6 +105,17 @@
     if (!document.body.classList.contains('du-evening-mode')) return;
     if (!document.querySelector('#eveningLanding .du-match11-hero')) return;
     window.scrollTo({top:0, left:0, behavior:'instant'});
+  }
+
+  // Original approved button styling, shown solely on the СНАЧАЛА УЖИН journal page.
+  // Do not change the catalog back button or any other header item.
+  if (!document.getElementById('du-journal-only-home-button')) {
+    const backStyle = document.createElement('style');
+    backStyle.id = 'du-journal-only-home-button';
+    backStyle.textContent =
+      'body.du-journal-view header a.du-evening-back:not(.du-catalog-back){display:inline-flex!important}' +
+      'body:not(.du-journal-view) header a.du-evening-back:not(.du-catalog-back){display:none!important}';
+    document.head.appendChild(backStyle);
   }
 
   // Keep the 1001 and Air Fryer header pills identical in width and height.
