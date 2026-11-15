@@ -1725,3 +1725,10 @@ body.du-evening-mode #eveningContinuation > .du-story-dinner .du-story-dinner-ph
     transform: translateY(-60px) !important;
   }
 }
+
+/* EVENING_MUSIC_CAPTION_EXACT_42PX_20261116
+   Only "Готовить, ужинать и продолжать вечер под свой ритм":
+   fix text size at exactly 42px; preserve font, italic, color and layout. */
+body.du-evening-mode #music .du-music-heading .du-section-heading > p {
+  font-size: 42px !important;
+}
