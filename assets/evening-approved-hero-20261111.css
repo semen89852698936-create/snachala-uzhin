@@ -975,5 +975,5 @@ body.du-evening-mode #eveningLanding .du-match11-slogan {
    Shift the existing hero copy group uniformly, preserving all internal positions
    and the approved visuals. The photograph and sections below stay untouched. */
 body.du-evening-mode #eveningLanding .du-match11-copy {
-  transform: translateY(-20px) !important;
+  transform: translateY(-40px) !important;
 }
