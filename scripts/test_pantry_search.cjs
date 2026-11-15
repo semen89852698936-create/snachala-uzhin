@@ -43,8 +43,12 @@ for(const path of ['index.html','full-catalog/index.html']){
     assert.ok(ranked.some(x=>x.available>0),path+': query terms not understood for '+protein);
     const complete=recipes.filter(x=>hasAll(x,request));
     if(protein==='говядина'){
-      assert.ok(complete.some(x=>x.id==='nd-beef-goulash-potatoes'),path+': new goulash must match beef and potatoes');
-      assert.ok(ranked.some(x=>x.recipe.id==='nd-beef-goulash-potatoes'&&x.missing.length===0),path+': new full match must be displayed as ready');
+      const goulash=complete.find(x=>x.id==='nd-beef-goulash-potatoes');
+      assert.ok(goulash,path+': new goulash must contain beef and potatoes');
+      assert.ok(missing(goulash,request,true).length>2,
+        path+': two known ingredients do not mean every other ingredient is stocked');
+      assert.ok(!ranked.some(x=>x.recipe.id===goulash.id),
+        path+': do not mark goulash ready when more than two other ingredients are missing');
     } else {
       assert.equal(complete.length,0,path+': do not invent full matches for '+protein);
       assert.ok(ranked.every(x=>x.available<request.length),path+': partial match must not be labeled a complete match');
