@@ -1652,3 +1652,25 @@ body.du-evening-mode #eveningContinuation .du-evening-experience > .du-evening-t
 body.du-evening-mode #eveningContinuation .du-evening-experience > .du-evening-invitation {
   transform: translateY(-40px) !important;
 }
+
+/* EVENING_DINNER_MUSIC_ALIGNMENT_20261116
+   Scoped adjustments: square couple photo, right edge aligned to previous card,
+   remove the redundant music transition, raise music section by 6px.
+   Typography, content and all other cards remain unchanged. */
+body.du-evening-mode #eveningContinuation .du-story-dinner-photo,
+body.du-evening-mode #eveningContinuation .du-story-dinner-photo > img {
+  border-radius: 0 !important;
+}
+@media (min-width: 761px) {
+  body.du-evening-mode #eveningContinuation .du-story-dinner-photo {
+    width: calc(100% - 14px) !important;
+    max-width: calc(100% - 14px) !important;
+  }
+}
+body.du-evening-mode #eveningContinuation > .du-evening-next {
+  display: none !important;
+}
+body.du-evening-mode #eveningContinuation > #music.du-music {
+  position: relative;
+  top: -6px;
+}
