@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#f8f2eb">
+<title>10 новых блюд для двоих | СНАЧАЛА УЖИН</title>
+<meta name="description" content="Десять домашних мясных блюд для двоих с ингредиентами, пошаговой готовкой и таймерами.">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,500;1,600&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/editorial-unified-20261106.css">
+<style>
+:root{--wine:#5d2935;--rose:#a75e6d;--cream:#f8f2eb;--ink:#352e2b;--paper:#fffaf3;--stroke:#d8c8bd}
+*{box-sizing:border-box} html{scroll-behavior:smooth}body{margin:0;background:var(--cream);color:var(--ink);font:16px/1.65 Manrope,Arial,sans-serif}
+button,input{font:inherit}button{cursor:pointer}button:focus-visible,a:focus-visible{outline:3px solid var(--rose);outline-offset:4px}
+a{color:inherit;text-decoration:none}
+.container{width:min(1200px,calc(100% - 48px));margin:auto}
+.plov-top{padding:22px 0;border-bottom:1px solid var(--stroke);background:#f5eee6}
+.plov-top .container{display:flex;align-items:center;justify-content:space-between;gap:20px}
+.brand{font:500 23px/1 'Cormorant Garamond',Georgia,serif;color:var(--wine);letter-spacing:.07em}
+.back{color:var(--wine);font-weight:700;font-size:13px}
+.plov-hero{padding:clamp(48px,7vw,100px) 0 50px;position:relative}
+.plov-kicker{font-size:12px;font-weight:800;letter-spacing:.2em;text-transform:uppercase;color:#8a5360}
+.plov-hero h1{font:400 clamp(60px,9.5vw,126px)/.88 'Cormorant Garamond',Georgia,serif;color:var(--wine);letter-spacing:-.035em;margin:17px 0 22px}
+.plov-hero p{font:400 clamp(19px,2vw,25px)/1.46 Georgia,serif;max-width:760px;color:#68564f}
+.plov-rule{width:230px;height:3px;background:#9d3e4b;transform:rotate(-3deg);margin:32px 0 6px;border-radius:30px}
+.plov-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:clamp(22px,3vw,42px);padding-bottom:90px}
+.plov-card{min-width:0;background:var(--paper);border:1px solid #e1d6cc;box-shadow:0 13px 27px #4738290a;position:relative;display:flex;flex-direction:column}
+.plov-card:nth-child(3n+1){transform:rotate(-.3deg)}.plov-card:nth-child(3n+2){transform:rotate(.25deg)}
+.plov-photo{aspect-ratio:4/3;position:relative;overflow:hidden;background:linear-gradient(130deg,#ebddd0,#f8f1e9);display:flex;align-items:center;justify-content:center}
+.plov-photo img{width:100%;height:100%;object-fit:cover;display:block}
+.plov-photo__fallback{font:italic 32px/1.1 'Cormorant Garamond',Georgia,serif;color:#846c5f;text-align:center;padding:22px;max-width:310px}
+.plov-no{position:absolute;left:20px;top:18px;padding:4px 12px;background:#fff8efd9;font:700 12px Manrope;color:var(--wine);letter-spacing:.15em}
+.plov-copy{padding:clamp(24px,3vw,36px);display:flex;flex-direction:column;flex:1}
+.plov-meta{font-size:11px;color:#956b74;font-weight:800;text-transform:uppercase;letter-spacing:.09em}
+.plov-card h2{font:500 clamp(30px,3vw,42px)/.98 'Cormorant Garamond',Georgia,serif;color:var(--wine);margin:13px 0}
+.plov-card p{font-size:14px;line-height:1.7;color:#594e49;margin:3px 0 23px;flex:1}
+.plov-actions{display:flex;flex-wrap:wrap;gap:10px}
+.plov-btn{border:1px solid #6b2d3b;background:#6b2d3b;color:#fff;padding:11px 19px;min-height:48px;font-weight:800;font-size:13px;transition:transform .2s ease,background .2s ease}
+.plov-btn:hover{background:#843b49;transform:translateY(-2px)}
+.plov-btn--outline{background:transparent;color:#6b2d3b}
+.plov-btn--outline:hover{background:#f5ebe2}
+.plov-recipe{position:fixed;inset:0;z-index:1000;background:#211a1bc4;display:none;justify-content:center;align-items:center;padding:14px}
+.plov-recipe[aria-hidden=false]{display:flex}
+.plov-sheet{position:relative;background:var(--paper);max-width:970px;width:100%;max-height:calc(100vh - 28px);overflow-y:auto;padding:clamp(25px,4vw,55px);box-shadow:0 30px 90px #100b0bb8}
+.plov-close{position:sticky;top:0;float:right;background:#f2e8de;border:1px solid #ddcfc1;font-size:22px;line-height:1;width:43px;height:43px;color:var(--wine);z-index:4}
+.plov-sheet h2{font:400 clamp(43px,6vw,75px)/.95 'Cormorant Garamond',Georgia,serif;color:var(--wine);margin:17px 0 17px}
+.plov-sheet h3{font:500 clamp(32px,4vw,44px)/1 'Cormorant Garamond',Georgia,serif;color:var(--wine);margin:25px 0}
+.plov-sheet .sheet-intro{font:19px/1.5 Georgia,serif;color:#5b504b}
+.plov-panels{display:grid;grid-template-columns:minmax(0,.82fr) minmax(0,1.18fr);gap:32px;margin-top:30px}
+.plov-ingredients{padding:22px;background:#f6ede4;border:1px solid #e8d8cb}
+.plov-row{display:flex;justify-content:space-between;gap:15px;border-bottom:1px solid #e3d4c6;padding:10px 0;font-size:13px;line-height:1.4}
+.plov-row:last-child{border:0}.plov-row strong{white-space:nowrap;color:#5e2b38}
+.plov-step{border-top:1px solid #e1d4c8;padding:20px 0;display:grid;grid-template-columns:38px 1fr;gap:14px}
+.plov-step__num{font:italic 38px/1 'Cormorant Garamond',Georgia,serif;color:#a76c7c}
+.plov-step h4{font:500 26px/1.1 'Cormorant Garamond',Georgia,serif;color:var(--wine);margin:0 0 6px}
+.plov-step p{font-size:14px;line-height:1.65;margin:8px 0 12px}
+.plov-timer{border:1px solid #a46a76;color:#7f3f4e;background:transparent;font-size:12px;font-weight:800;padding:8px 12px;min-width:140px}
+.plov-timer[aria-pressed=true]{background:#702f40;color:#fff}
+.plov-tip{margin-top:22px;border-top:2px solid #ab7580;padding-top:16px;color:#574943;font-size:14px}
+.plov-small{font-size:12px;color:#89766c}
+.plov-foot{border-top:1px solid #ddcfc4;text-align:center;padding:27px 16px;font:italic 21px 'Cormorant Garamond',Georgia,serif;color:var(--wine)}
+@media(max-width:760px){.container{width:calc(100% - 30px)}.plov-top .container{flex-wrap:wrap}.plov-grid{grid-template-columns:1fr;gap:22px}.plov-card:nth-child(n){transform:none}.plov-panels{grid-template-columns:1fr;gap:18px}.plov-sheet{padding:24px}.plov-hero{padding:55px 0 25px}.plov-hero h1{font-size:72px}}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{scroll-behavior:auto!important;transition:none!important}}
+</style>
+</head>
+<body>
+<header class="plov-top"><div class="container"><a class="brand" href="/">СНАЧАЛА УЖИН</a><a class="back" href="/full-catalog/">← К каталогу рецептов</a></div></header>
+<main>
+<section class="plov-hero container"><div class="plov-kicker">Гастрономическая коллекция / для двоих</div><h1>Ужин на двоих</h1><div class="plov-rule"></div><p>Десять рецептов из семейной кулинарной тетради, переосмысленных для ужина вдвоём. Мясо, соусы, ароматные овощи и понятная готовка по шагам.</p></section>
+<section id="plovGrid" class="plov-grid container" aria-label="Десять новых блюд"><p>Загружаем рецепты…</p></section>
+</main>
+<div id="plovRecipe" class="plov-recipe" role="dialog" aria-modal="true" aria-label="Рецепт блюда" aria-hidden="true"><article id="plovSheet" class="plov-sheet" tabindex="-1"></article></div>
+<footer class="plov-foot">СНАЧАЛА УЖИН. Готовим вместе, ужинаем красиво.</footer>
+<script>
+'use strict';
+const $=id=>document.getElementById(id);
+const safe=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+let plov=[],activeTimer=null,remaining=0,returnFocus=null,openedRecipe=null,currentStep=0;
+const fmt=n=>new Intl.NumberFormat('ru-RU',{maximumFractionDigits:2}).format(n);
+const amt=i=>i.amount ? fmt(i.amount)+' '+safe(i.unit):safe(i.unit);
+function imageMarkup(recipe,n){
+ return '<div class="plov-photo"><img src="'+safe(recipe.photo)+'" alt="'+safe(recipe.title)+'" loading="lazy" onerror="this.hidden=true;this.nextElementSibling.hidden=false"><span class="plov-photo__fallback" hidden>Фотография готовится</span><span class="plov-no">№ '+String(n).padStart(2,'0')+'</span></div>';
+}
+function card(r,n){
+ return '<article class="plov-card">'+imageMarkup(r,n)+'<div class="plov-copy"><div class="plov-meta">'+safe(r.cuisine)+' · '+safe(r.minutes)+' мин · 2 порции</div><h2>'+safe(r.title)+'</h2><p>'+safe(r.description)+'</p><div class="plov-actions"><button class="plov-btn" data-open="'+safe(r.id)+'">Посмотреть рецепт</button><button class="plov-btn plov-btn--outline" data-cook="'+safe(r.id)+'">Готовить пошагово</button></div></div></article>';
+}
+function openRecipe(id,cooking=false){
+ const r=plov.find(x=>x.id===id);if(!r)return;stopTimer();
+ if($('plovRecipe').getAttribute('aria-hidden')==='true')returnFocus=document.activeElement;
+ openedRecipe=r;
+ const ing=r.ingredients.map(i=>'<div class="plov-row"><span>'+safe(i.name)+'</span><strong>'+amt(i)+'</strong></div>').join('');
+ const steps=r.steps.map((s,i)=>'<section class="plov-step" id="step-'+(i+1)+'"><span class="plov-step__num">'+String(i+1).padStart(2,'0')+'</span><div><h4>'+safe(s.title)+'</h4><p>'+safe(s.detail)+'</p>'+(s.timer?'<button class="plov-timer" data-seconds="'+(s.timer*60)+'" aria-pressed="false">▶ Таймер '+s.timer+' мин</button>':'')+'</div></section>').join('');
+ $('plovSheet').innerHTML='<button class="plov-close" aria-label="Закрыть рецепт">×</button><div class="plov-kicker">На 2 порции · '+r.minutes+' мин · '+safe(r.cuisine)+'</div><h2>'+safe(r.title)+'</h2><p class="sheet-intro">'+safe(r.description)+'</p><div class="plov-panels"><section><div class="plov-ingredients"><h3>Ингредиенты</h3>'+ing+'</div><p class="plov-small">Количество продуктов рассчитано на двоих. Время приготовления ориентировочное.</p></section><section><h3>Готовим вместе</h3>'+steps+'<div class="plov-tip"><strong>Кулинарная подсказка.</strong> '+safe(r.tip)+'</div><p class="plov-small">'+safe(r.warn||'')+'</p></section></div>';
+ $('plovRecipe').setAttribute('aria-hidden','false');
+ document.body.style.overflow='hidden';
+ $('plovSheet').scrollTop=0;$('plovSheet').focus();
+ if(cooking){currentStep=0;renderCookStep();}
+}
+function closeRecipe(){openedRecipe=null;stopTimer();$('plovRecipe').setAttribute('aria-hidden','true');document.body.style.overflow='';if(returnFocus?.focus)returnFocus.focus();}
+function stopTimer(){if(activeTimer!==null){clearInterval(activeTimer);activeTimer=null;}document.querySelectorAll('.plov-timer').forEach(b=>{b.setAttribute('aria-pressed','false');b.textContent='▶ Таймер '+Math.round(Number(b.dataset.seconds)/60)+' мин';});}
+function renderCookStep(){
+ if(!openedRecipe)return;
+ stopTimer();
+ const s=openedRecipe.steps[currentStep],n=openedRecipe.steps.length;
+ $('plovSheet').innerHTML='<button class="plov-close" aria-label="Закрыть готовку">×</button>'+
+ '<div class="plov-kicker">Готовим вместе · Шаг '+(currentStep+1)+' из '+n+'</div>'+
+ '<h2>'+safe(openedRecipe.title)+'</h2>'+
+ '<div style="height:4px;background:#e7d6cc;margin:18px 0 35px"><span style="display:block;height:100%;width:'+Math.round(100*(currentStep+1)/n)+'%;background:#843a4b"></span></div>'+
+ '<div class="plov-step__num">'+String(currentStep+1).padStart(2,'0')+'</div>'+
+ '<h3>'+safe(s.title)+'</h3>'+
+ '<p class="sheet-intro">'+safe(s.detail)+'</p>'+
+ (s.timer?'<button class="plov-timer" data-seconds="'+(s.timer*60)+'" aria-pressed="false">▶ Таймер '+s.timer+' мин</button>':'')+
+ '<div class="plov-actions" style="margin-top:42px">'+
+ (currentStep?'<button class="plov-btn plov-btn--outline" data-prev="1">← Назад</button>':'')+
+ '<button class="plov-btn" data-next="1">'+(currentStep===n-1?'Завершить приготовление':'Следующий шаг →')+'</button>'+
+ '<button class="plov-btn plov-btn--outline" data-full="1">Весь рецепт</button></div>';
+ $('plovSheet').scrollTop=0;
+ $('plovSheet').focus();
+}
+function toggleTimer(button){
+ if(button.getAttribute('aria-pressed')==='true'){stopTimer();return;}
+ stopTimer();remaining=Number(button.dataset.seconds);
+ button.setAttribute('aria-pressed','true');
+ const render=()=>{const m=Math.floor(remaining/60),s=String(remaining%60).padStart(2,'0');button.textContent='■ '+m+':'+s;};
+ render();
+ activeTimer=setInterval(()=>{remaining--;if(remaining<=0){stopTimer();button.textContent='✓ Время вышло';return;}render();},1000);
+}
+document.addEventListener('click',e=>{
+ const open=e.target.closest('[data-open],[data-cook]');if(open){openRecipe(open.dataset.open||open.dataset.cook,!!open.dataset.cook);return;}
+ const timer=e.target.closest('.plov-timer');if(timer){toggleTimer(timer);return;}
+ if(e.target.closest('[data-next]')){if(!openedRecipe)return;if(currentStep<openedRecipe.steps.length-1){currentStep++;renderCookStep();}else openRecipe(openedRecipe.id,false);return;}
+ if(e.target.closest('[data-prev]')){if(currentStep>0){currentStep--;renderCookStep();}return;}
+ if(e.target.closest('[data-full]')){if(openedRecipe)openRecipe(openedRecipe.id,false);return;}
+ if(e.target.matches('.plov-close')||e.target.id==='plovRecipe')closeRecipe();
+});
+document.addEventListener('keydown',e=>{if(e.key==='Escape'&&$('plovRecipe').getAttribute('aria-hidden')==='false')closeRecipe();});
+fetch('/data/ten-new-dishes-editorial.json').then(x=>{if(!x.ok)throw Error(x.status);return x.json()}).then(data=>{
+ if(data.recipe_count!==10||data.recipes.length!==10)throw Error('Invalid collection');
+ plov=data.recipes;
+ $('plovGrid').innerHTML=plov.map((r,n)=>card(r,n+1)).join('');
+}).catch(()=>{$('plovGrid').innerHTML='<p>Не удалось загрузить рецепты. Попробуй обновить страницу.</p>';});
+</script>
+</body></html>
