@@ -121,21 +121,26 @@
     // large title / two-line description / original graphic CTA unchanged.
     const x=57*sx, availableWidth=372*sx;
     let titleLines=null,titleSize=0;
-    for(let size=54;size>=26;size-=2) {
+    for(let size=72;size>=30;size-=2) {
       ctx.font='600 '+Math.round(size*sx)+'px "Cormorant Garamond", Georgia, serif';
       titleLines=wrap(ctx,recipe.title,availableWidth,3);
-      if(titleLines&&titleLines.length*size<=114){titleSize=size;break;}
+      if(titleLines&&titleLines.length*size*0.98<=136){titleSize=size;break;}
     }
     if(!titleLines||!titleSize)return null;
     ctx.fillStyle='#61282c';
     ctx.textBaseline='top';
     ctx.font='600 '+Math.round(titleSize*sx)+'px "Cormorant Garamond", Georgia, serif';
-    titleLines.forEach((line,i)=>ctx.fillText(line,x,(426+i*titleSize*1.02)*sy));
+    // Match the gently rising editorial baseline of the approved cards.
+    ctx.save();
+    ctx.translate(x, 419*sy);
+    ctx.rotate(-2 * Math.PI / 180);
+    titleLines.forEach((line,i)=>ctx.fillText(line,0,i*titleSize*0.98*sy));
+    ctx.restore();
 
     let subtitle=(recipe.description||'Вечер, который хочется повторить вдвоём.')
       .replace(/\s+/g,' ').trim();
     let descLines=null,descSize=0;
-    for(let size=26;size>=17;size--) {
+    for(let size=32;size>=19;size--) {
       ctx.font='500 '+Math.round(size*sx)+'px "Cormorant Garamond", Georgia, serif';
       descLines=wrap(ctx,subtitle,availableWidth,2);
       if(descLines){descSize=size;break;}
@@ -153,7 +158,11 @@
     if(!descLines)return null;
     ctx.fillStyle='#342224';
     ctx.font='500 '+Math.round(descSize*sx)+'px "Cormorant Garamond", Georgia, serif';
-    descLines.forEach((line,i)=>ctx.fillText(line,x,(557+i*descSize*1.15)*sy));
+    ctx.save();
+    ctx.translate(x, 565*sy);
+    ctx.rotate(-2 * Math.PI / 180);
+    descLines.forEach((line,i)=>ctx.fillText(line,0,i*descSize*1.12*sy));
+    ctx.restore();
     return canvas.toDataURL('image/webp',.95);
   }
 
@@ -195,7 +204,17 @@
     }
     console.warn('Evening recipe rotation could not load any candidate for card', i+1);
   }
-  Promise.allSettled(cards.map((card, i) => rotateCard(card, i))).then(() => {
+  // Canvas needs the actual approved font loaded before measuring and painting.
+  // Otherwise the browser permanently bakes a fallback face into the image.
+  const typographyReady = document.fonts
+    ? Promise.all([
+        document.fonts.load('600 72px "Cormorant Garamond"', 'Лосось с лимоном'),
+        document.fonts.load('500 32px "Cormorant Garamond"', 'Уютная классика')
+      ])
+    : Promise.resolve();
+  typographyReady.catch(() => {}).then(() =>
+    Promise.allSettled(cards.map((card, i) => rotateCard(card, i)))
+  ).then(() => {
     document.documentElement.dataset.eveningRotationCompleted = 'true';
   });
 })();
