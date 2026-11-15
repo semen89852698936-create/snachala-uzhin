@@ -1,0 +1,36 @@
+name: Verify 20 catalog recipe swaps and preserve approved design
+on:
+  push:
+    branches: ['feat/catalog-swap-20-nov16']
+    paths:
+      - '.github/workflows/verify-catalog-20-swaps.yml'
+      - 'index.html'
+      - 'full-catalog/index.html'
+      - 'data/catalog-20-replacement-payload-20261116.json'
+      - 'project-operations/catalog-20-*'
+      - 'assets/replacement-20-20261116/**'
+      - 'scripts/test-catalog-20-swaps-20261116.cjs'
+  pull_request:
+    paths:
+      - 'index.html'
+      - 'full-catalog/index.html'
+      - 'data/catalog-20-replacement-payload-20261116.json'
+      - 'project-operations/catalog-20-*'
+      - 'assets/replacement-20-20261116/**'
+      - 'scripts/test-catalog-20-swaps-20261116.cjs'
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020
+        with:
+          node-version: '22'
+      - name: Check 20 image+recipe pairs, two catalogs and untouched design
+        run: node scripts/test-catalog-20-swaps-20261116.cjs
