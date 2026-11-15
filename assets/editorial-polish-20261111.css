@@ -1645,3 +1645,10 @@ html body.du-evening-mode :is(#evening,#eveningContinuation) .du-moods > button.
 body.du-evening-mode #eveningContinuation .du-evening-experience > .du-evening-together {
   transform: translateY(-40px) !important;
 }
+
+
+/* EVENING_INVITATION_CARD_UP_40PX_20261116
+   Move only the "Иногда достаточно одного сообщения" invitation card. */
+body.du-evening-mode #eveningContinuation .du-evening-experience > .du-evening-invitation {
+  transform: translateY(-40px) !important;
+}
