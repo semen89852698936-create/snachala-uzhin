@@ -4118,10 +4118,12 @@ body.du-evening-mode #music .du-music-heading .du-section-heading > p {
    Only the quote text is animated; the page and section remain unchanged. */
 @keyframes du-breakfast-quote-focus-20261109 {
   0%   { opacity:.20; filter:blur(13px); transform:translateY(10px) scale(1); }
-  28%  { opacity:1;   filter:blur(0);    transform:translateY(0) scale(1); }
-  40%  { opacity:1;   filter:blur(0);    transform:translateY(0) scale(2.25); }
-  72%  { opacity:1;   filter:blur(0);    transform:translateY(0) scale(2.25); }
-  84%  { opacity:1;   filter:blur(0);    transform:translateY(0) scale(1); }
+  25%  { opacity:.20; filter:blur(13px); transform:translateY(10px) scale(1); }
+  37%  { opacity:1;   filter:blur(0);    transform:translateY(0) scale(1); }
+  43%  { opacity:1;   filter:blur(0);    transform:translateY(0) scale(2.25); }
+  63%  { opacity:1;   filter:blur(0);    transform:translateY(0) scale(2.25); }
+  73%  { opacity:1;   filter:blur(0);    transform:translateY(0) scale(1); }
+  85%  { opacity:.20; filter:blur(13px); transform:translateY(-10px) scale(1); }
   100% { opacity:.20; filter:blur(13px); transform:translateY(-10px) scale(1); }
 }
 @supports (animation-timeline: view()) {
