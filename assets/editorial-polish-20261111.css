@@ -1675,22 +1675,6 @@ body.du-evening-mode #eveningContinuation > #music.du-music {
   top: -66px;
 }
 
-/* EVENING_MUSIC_TAGLINE_DOUBLE_NO_PERIOD_20261116
-   Override only the approved music heading tagline.
-   Keep its font family, italic style, weight and all surrounding typography. */
-body.du-evening-mode #music .du-music-heading .du-section-heading > p {
-  font-size: 0 !important;
-}
-body.du-evening-mode #music .du-music-heading .du-section-heading > p::before {
-  content: "Готовить, ужинать и продолжать вечер под свой ритм";
-  font-size: clamp(42px, 3.3vw, 50px) !important;
-}
-@media (max-width: 760px) {
-  body.du-evening-mode #music .du-music-heading .du-section-heading > p::before {
-    font-size: clamp(40px, 9.6vw, 46px) !important;
-  }
-}
-
 /* EVENING_COUPLE_PHOTO_SQUARE_UPPER_CORNERS_20261116
    Remove rounding from the couple photo in the closing evening scene only. */
 body.du-evening-mode #eveningContinuation .du-story-after,
