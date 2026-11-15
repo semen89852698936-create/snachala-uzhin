@@ -36,20 +36,20 @@
     const journalNav = document.querySelector('.main-nav a[data-nav="evening"]');
     if (journalNav) {
       journalNav.setAttribute('href', '#journal');
-      journalNav.setAttribute('aria-label', 'На главную страницу СНАЧАЛА УЖИН');
-      journalNav.textContent = 'На главную';
+      journalNav.setAttribute('aria-label', '1001 - перейти на страницу СНАЧАЛА УЖИН');
+      journalNav.textContent = '1001';
     }
 
     // The mobile header and quick navigation are the same destination.
     const mobileJournalNav = document.querySelector('a.du-evening-nav-mobile');
     if (mobileJournalNav) {
       mobileJournalNav.setAttribute('href', '#journal');
-      mobileJournalNav.textContent = 'На главную';
+      mobileJournalNav.textContent = '1001';
     }
     const mobileQuickNav = document.querySelector('[data-quick-evening]');
     if (mobileQuickNav) {
       mobileQuickNav.setAttribute('href', '#journal');
-      mobileQuickNav.textContent = 'На главную';
+      mobileQuickNav.textContent = '1001';
     }
 
     // Remove only the editorial kicker and the redundant "Создать наш вечер →" CTA
@@ -82,7 +82,7 @@
       if (highlighted) highlighted.textContent = isJournal ? 'УЖИН' : 'ВЕЧЕР';
     }
     // The old router considers this link to be the active "Наш вечер" tab.
-    // Do not announce the renamed "На главную" button as the current page.
+    // Do not announce the renamed "1001" button as the current page.
     const journalNav = document.querySelector('.main-nav a[data-nav="evening"]');
     if (journalNav) {
       if (hash === '#journal') journalNav.setAttribute('aria-current', 'page');
