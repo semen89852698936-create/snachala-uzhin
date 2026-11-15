@@ -1024,6 +1024,27 @@ body:not(.du-evening-mode) .du-evening-back{display:none!important}
 <link rel="stylesheet" href="assets/my-recipes-editorial-20261110.css">
 <link rel="stylesheet" href="assets/evening-approved-hero-20261111.css">
 <link rel="stylesheet" href="assets/editorial-polish-20261111.css">
+<style>
+/* Remove rectangular backing around the three approved image-based newspaper cards.
+   The original artwork, sizing, links and layout are unchanged. */
+body.du-evening-mode #eveningLanding .du-match11-recipe-grid > a.du-evening-paper-card {
+  background:transparent!important;
+  border:0!important;
+  outline-offset:4px;
+  border-radius:0!important;
+  box-shadow:none!important;
+}
+body.du-evening-mode #eveningLanding .du-match11-recipe-grid > a.du-evening-paper-card::before,
+body.du-evening-mode #eveningLanding .du-match11-recipe-grid > a.du-evening-paper-card::after {
+  content:none!important;
+  display:none!important;
+}
+body.du-evening-mode #eveningLanding .du-match11-recipe-grid > a.du-evening-paper-card > img {
+  background:transparent!important;
+  box-shadow:none!important;
+  mix-blend-mode:multiply!important;
+}
+</style>
 <script defer src="assets/evening-approved-route-20261111.js"></script>
 <script defer src="assets/bonus-button-layers-20261111.js"></script>
 
