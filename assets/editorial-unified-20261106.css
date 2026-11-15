@@ -4117,10 +4117,12 @@ body.du-evening-mode #music .du-music-heading .du-section-heading > p {
    then softly blurs again as it leaves. Scroll controls both directions.
    Only the quote text is animated; the page and section remain unchanged. */
 @keyframes du-breakfast-quote-focus-20261109 {
-  0%   { opacity:.20; filter:blur(13px); transform:translateY(10px); }
-  28%  { opacity:1;   filter:blur(0);    transform:translateY(0); }
-  72%  { opacity:1;   filter:blur(0);    transform:translateY(0); }
-  100% { opacity:.20; filter:blur(13px); transform:translateY(-10px); }
+  0%   { opacity:.20; filter:blur(13px); transform:translateY(10px) scale(1); }
+  28%  { opacity:1;   filter:blur(0);    transform:translateY(0) scale(1); }
+  40%  { opacity:1;   filter:blur(0);    transform:translateY(0) scale(1.5); }
+  72%  { opacity:1;   filter:blur(0);    transform:translateY(0) scale(1.5); }
+  84%  { opacity:1;   filter:blur(0);    transform:translateY(0) scale(1); }
+  100% { opacity:.20; filter:blur(13px); transform:translateY(-10px) scale(1); }
 }
 @supports (animation-timeline: view()) {
   #homeView > .du-quote-strip > .container {
@@ -8701,4 +8703,21 @@ html body #homeView .du-bonus .bonus-inner > a#bonusRecipe:focus-visible {
   font-size:23.8px;
   line-height:1.3;
   overflow-wrap:anywhere;
+}
+
+/* BREAKFAST_QUOTE_SNUG_MARKS_AND_FORWARD_FOCUS_20261116
+   No spaces inside the quote marks; the 1.5x scroll animation comes
+   after sharp focus. Keep the quote above neighboring content visually. */
+#homeView > .du-quote-strip {
+  position: relative;
+  z-index: 6;
+  overflow: visible;
+}
+#homeView > .du-quote-strip > .container {
+  position: relative;
+  transform-origin: center center;
+}
+#homeView > .du-quote-strip > .container > span {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
 }
