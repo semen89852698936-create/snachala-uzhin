@@ -101,6 +101,19 @@
     window.scrollTo({top:0, left:0, behavior:'instant'});
   }
 
+  // Keep the 1001 and Air Fryer header pills identical in width and height.
+  // All other navigation items and destinations remain untouched.
+  if (!document.getElementById('du-equal-header-pills')) {
+    const pillStyle = document.createElement('style');
+    pillStyle.id = 'du-equal-header-pills';
+    pillStyle.textContent =
+      '@media(min-width:681px){.main-nav a[data-nav="evening"],.main-nav a[data-nav="airfryer"]{' +
+      'box-sizing:border-box;width:136px;height:42px;flex:0 0 136px;}}' +
+      '@media(max-width:680px){.du-quick-nav-mobile a[data-quick-evening],.du-quick-nav-mobile a[data-quick-airfryer]{' +
+      'box-sizing:border-box;flex:1 1 0;min-width:0;}}';
+    document.head.appendChild(pillStyle);
+  }
+
   installNavigation();
   updateEntryRoute();
   window.addEventListener('hashchange', updateEntryRoute);
