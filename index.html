@@ -1026,6 +1026,15 @@ body:not(.du-evening-mode) .du-evening-back{display:none!important}
 <link rel="stylesheet" href="assets/editorial-polish-20261111.css">
 <script defer src="assets/evening-approved-route-20261111.js"></script>
 <script defer src="assets/bonus-button-layers-20261111.js"></script>
+<style>
+/* Rotating Our Evening recipe cards: preserve existing three-card footprint. */
+.du-match11-recipe-grid .du-evening-rotating-card{position:relative;display:block;overflow:hidden;isolation:isolate;aspect-ratio:490/825;background:#eee5da;clip-path:polygon(0 0.6%,5% 0,12% .45%,21% 0,29% .6%,40% 0,52% .45%,62% 0,73% .6%,84% 0,94% .35%,100% 0,99.5% 94%,100% 84%,99.5% 72%,100% 60%,99.5% 45%,100% 34%,99.5% 22%,100% 10%,99.5% 0,100%)}
+.du-match11-recipe-grid .du-evening-rotating-card img{display:block;width:100%;height:100%;object-fit:cover;object-position:center;aspect-ratio:490/825}
+.du-match11-recipe-grid .du-evening-rotating-card:after{content:'';position:absolute;inset:30% 0 0;pointer-events:none;background:linear-gradient(180deg,transparent 2%,rgba(22,15,16,.15) 37%,rgba(22,15,16,.88) 100%)}
+.du-match11-recipe-grid .du-evening-rotating-title{position:absolute;z-index:1;bottom:7%;left:8%;right:8%;color:#fff9ef;font:600 clamp(26px,3.15vw,46px)/.98 'Cormorant Garamond',Georgia,serif;letter-spacing:-.025em;text-shadow:0 2px 13px #150e0faa;overflow-wrap:break-word;pointer-events:none}
+.du-match11-recipe-grid .du-evening-rotating-kicker{display:block;margin-bottom:13px;color:#f8e5cd;font:700 clamp(10px,.9vw,13px)/1.4 Manrope,Arial,sans-serif;letter-spacing:.14em;text-transform:uppercase}
+@media(max-width:680px){.du-match11-recipe-grid .du-evening-rotating-title{font-size:clamp(20px,6vw,34px)}.du-match11-recipe-grid .du-evening-rotating-kicker{font-size:10px;margin-bottom:7px}}
+</style>
 </head><body>
 <div class="demo-strip"><span class="demo-dot"></span> ОТКРЫТАЯ КОЛЛЕКЦИЯ · 1000 РЕЦЕПТОВ + 1 ПОЛУНОЧНЫЙ · ГОТОВЬТЕ ВМЕСТЕ</div>
 <header class="header" id="top"><div class="container header-inner">
@@ -2015,4 +2024,47 @@ function stepVisualHtml(recipe,index,mode){
 <script src="assets/my-recipes-editorial-20261110.js"></script>
 <script src="assets/airfryer-experience-20261110.js"></script>
 <script src="/assets/native-music-player-20261112.js" defer></script>
+
+<script>
+/* One fresh, internally consistent three-course showcase per page visit. */
+(function rotateOurEveningCards(){
+ 'use strict';
+ const cards=Array.from(document.querySelectorAll('.du-match11-recipe-grid > a.du-approved-cover-recipe'));
+ if(cards.length!==3 || typeof RECIPES==='undefined') return;
+ const groups=[
+  {categories:['fish','meat','poultry'],label:'ГЛАВНОЕ БЛЮДО'},
+  {categories:['pasta','vegetables'],label:'КО ВТОРОМУ БЛЮДУ'},
+  {categories:['dessert'],label:'ДЕСЕРТ'}
+ ];
+ const key='nash-vecher-previous-three-recipes-v1';
+ let previous=[];
+ try{const saved=JSON.parse(localStorage.getItem(key)||'[]');if(Array.isArray(saved))previous=saved;}catch(e){}
+ const chosen=[];
+ groups.forEach((group,index)=>{
+  const pool=RECIPES.filter(recipe=>group.categories.includes(recipe.category)&&typeof recipe.photo==='string'&&recipe.photo.startsWith('/assets/')&&/\\.(webp|jpe?g|png)(?:\\?|$)/i.test(recipe.photo)&&recipe.id&&recipe.title);
+  if(!pool.length)return;
+  const fresh=pool.filter(recipe=>recipe.id!==previous[index]&&!chosen.some(item=>item.recipe.id===recipe.id));
+  const candidates=fresh.length?fresh:pool;
+  let n=Math.floor(Math.random()*candidates.length);
+  if(window.crypto&&crypto.getRandomValues){const bytes=new Uint32Array(1);crypto.getRandomValues(bytes);n=bytes[0]%candidates.length;}
+  chosen.push({recipe:candidates[n],label:group.label});
+ });
+ if(chosen.length!==3)return;
+ cards.forEach((card,index)=>{
+  const {recipe,label}=chosen[index];
+  const img=card.querySelector('img');
+  if(!img)return;
+  img.src=recipe.photo;
+  img.alt=recipe.title+'. Открыть рецепт';
+  img.removeAttribute('width');img.removeAttribute('height');
+  card.href='#recipe='+encodeURIComponent(recipe.id);
+  card.setAttribute('aria-label',recipe.title+'. Открыть рецепт');
+  card.classList.add('du-evening-rotating-card');
+  const caption=document.createElement('span');caption.className='du-evening-rotating-title';
+  const kicker=document.createElement('span');kicker.className='du-evening-rotating-kicker';kicker.textContent=label;
+  caption.append(kicker,document.createTextNode(recipe.title));card.appendChild(caption);
+ });
+ try{localStorage.setItem(key,JSON.stringify(chosen.map(item=>item.recipe.id)));}catch(e){}
+})();
+</script>
 </body></html>
