@@ -297,3 +297,25 @@
     document.fonts.ready.then(update).catch(() => {});
   }
 })();
+
+
+/* EVENING_MUSIC_TAGLINE_MATCH_MOOD_INTRO_20261116
+   Match only the font size of the mood-section introductory sentence.
+   Preserve the music tagline's approved typeface, weight and italic style. */
+(function () {
+  'use strict';
+  const musicTagline = document.querySelector('#music .du-music-heading .du-section-heading > p');
+  if (!musicTagline) return;
+  const introText = 'Не начинайте со списка продуктов.';
+  const introduction = Array.from(document.querySelectorAll('.du-section-heading > p'))
+    .find(el => el.textContent.trim().startsWith(introText));
+  if (!introduction) return;
+  musicTagline.textContent = musicTagline.textContent.replace(/\.\s*$/, '');
+  function matchSize() {
+    const fontSize = window.getComputedStyle(introduction).fontSize;
+    if (fontSize) musicTagline.style.setProperty('font-size', fontSize, 'important');
+  }
+  matchSize();
+  window.addEventListener('resize', matchSize, { passive: true });
+  if (document.fonts && document.fonts.ready) document.fonts.ready.then(matchSize).catch(() => {});
+})();
