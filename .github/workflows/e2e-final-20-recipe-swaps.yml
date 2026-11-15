@@ -1,0 +1,32 @@
+name: Browser smoke for 20 swaps on final approved visual baseline
+on:
+  push:
+    branches: ['feat/catalog-20-on-final-design-20261116']
+    paths:
+      - '.github/workflows/e2e-final-20-recipe-swaps.yml'
+      - 'scripts/e2e-catalog-20-swaps-final.cjs'
+      - 'index.html'
+      - 'full-catalog/index.html'
+jobs:
+  browser:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          persist-credentials: false
+      - name: Install pinned Playwright/Chromium
+        run: |
+          npm install --no-save playwright@1.56.1
+          npx playwright install chromium --with-deps
+      - name: Test four new recipes and mobile/desktop cooking flows
+        run: |
+          set -euo pipefail
+          python3 -m http.server 8765 --bind 127.0.0.1 >/tmp/catalog20-http.log 2>&1 &
+          for i in $(seq 1 40); do
+            if curl -fsS http://127.0.0.1:8765/ >/dev/null; then break; fi
+            sleep 1
+          done
+          node scripts/e2e-catalog-20-swaps-final.cjs
