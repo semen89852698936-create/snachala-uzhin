@@ -1026,70 +1026,7 @@ body:not(.du-evening-mode) .du-evening-back{display:none!important}
 <link rel="stylesheet" href="assets/editorial-polish-20261111.css">
 <script defer src="assets/evening-approved-route-20261111.js"></script>
 <script defer src="assets/bonus-button-layers-20261111.js"></script>
-<style>
-/* Approved 2026-11-15 newspaper artwork stays as the base of each rotating card.
-   Do not replace the original newspaper card image with a plain dish photograph. */
-html body.du-evening-mode #eveningLanding .du-match11-recipe-grid a.du-evening-paper-card.du-news-live{
- position:relative!important;display:block!important;width:100%!important;
- height:auto!important;aspect-ratio:490/828!important;min-height:0!important;
- overflow:visible!important;isolation:isolate!important;
- padding:0!important;margin:0!important;background:transparent!important;
- border:0!important;border-radius:0!important;box-shadow:none!important;
- text-decoration:none!important;transform-origin:center!important;
-}
-html body.du-evening-mode #eveningLanding .du-match11-recipe-grid a.du-news-live>img.du-news-original{
- display:block!important;width:100%!important;height:100%!important;position:absolute!important;
- inset:0!important;max-width:none!important;object-fit:fill!important;
- aspect-ratio:auto!important;border:0!important;box-shadow:none!important;
-}
-html body.du-evening-mode #eveningLanding .du-match11-recipe-grid a.du-news-live img.du-news-photo{
- position:absolute!important;z-index:1!important;left:9%!important;top:11%!important;
- width:82%!important;height:44.7%!important;object-fit:cover!important;object-position:center!important;
- max-width:none!important;aspect-ratio:auto!important;padding:0!important;margin:0!important;
- border:0!important;border-radius:0!important;box-shadow:none!important;
- clip-path:polygon(0 2%,13% 0,27% 1%,42% 0,55% 1%,72% 0,87% 1%,100% 0,99% 19%,100% 47%,99% 75%,100% 97%,83% 100%,67% 98%,50% 100%,31% 99%,14% 100%,0 97%,1% 78%,0 51%,1% 23%)!important;
-}
-html body.du-evening-mode #eveningLanding .du-match11-recipe-grid a.du-news-live .du-news-content{
- position:absolute!important;z-index:2!important;inset:52% 9% 6%!important;
- display:flex!important;flex-direction:column!important;justify-content:space-between!important;
- overflow:hidden!important;min-height:0!important;
- padding:5px 4px 5px!important;margin:0!important;
- background-color:#f1dfc8!important;
- background-image:repeating-linear-gradient(105deg,transparent 0 3px,#8e654108 4px 5px,transparent 6px 11px),radial-gradient(ellipse at 10% 15%,#fff9ef88,transparent 65%),radial-gradient(ellipse at 90% 95%,#cfaa9152,transparent 60%)!important;
- color:#542331!important;white-space:normal!important;
-}
-html body.du-evening-mode #eveningLanding .du-match11-recipe-grid a.du-news-live .du-news-title{
- display:-webkit-box!important;-webkit-box-orient:vertical!important;-webkit-line-clamp:2!important;
- overflow:hidden!important;flex:0 1 auto!important;padding:0!important;margin:0!important;
- color:#632b33!important;background:none!important;
- font:600 clamp(27px,3.55vw,57px)/.96 Georgia,'Times New Roman',serif!important;
- letter-spacing:-.025em!important;text-shadow:none!important;overflow-wrap:break-word!important;
-}
-html body.du-evening-mode #eveningLanding .du-match11-recipe-grid a.du-news-live .du-news-title.du-news-long{
- font-size:clamp(23px,2.55vw,40px)!important;-webkit-line-clamp:3!important;
-}
-html body.du-evening-mode #eveningLanding .du-match11-recipe-grid a.du-news-live .du-news-description{
- display:-webkit-box!important;-webkit-box-orient:vertical!important;-webkit-line-clamp:2!important;
- overflow:hidden!important;margin:4px 0!important;padding:0!important;color:#312026!important;
- background:none!important;font:500 clamp(15px,1.88vw,29px)/1.15 Georgia,'Times New Roman',serif!important;
-}
-html body.du-evening-mode #eveningLanding .du-match11-recipe-grid a.du-news-live .du-news-cta{
- display:flex!important;align-items:center!important;justify-content:center!important;
- flex:0 0 auto!important;min-height:clamp(56px,5.5vw,85px)!important;margin:5px 0 2px!important;padding:7px 5px!important;
- background:#742b31!important;color:#fff7ed!important;
- font:600 clamp(19px,2.18vw,34px)/1 Georgia,'Times New Roman',serif!important;
- letter-spacing:-.01em!important;
- clip-path:polygon(0 16%,9% 6%,21% 1%,37% 4%,55% 0,73% 3%,89% 0,100% 15%,99% 83%,90% 96%,73% 99%,53% 96%,30% 100%,10% 95%,0 87%)!important;
-}
-html body.du-evening-mode #eveningLanding .du-match11-recipe-grid a.du-news-live .du-news-cta em{
- font:inherit!important;font-style:normal!important;margin-left:8px!important;
-}
-@media(max-width:760px){
- html body.du-evening-mode #eveningLanding .du-match11-recipe-grid a.du-news-live .du-news-title{font-size:clamp(28px,7vw,43px)!important}
- html body.du-evening-mode #eveningLanding .du-match11-recipe-grid a.du-news-live .du-news-title.du-news-long{font-size:clamp(25px,6vw,36px)!important}
- html body.du-evening-mode #eveningLanding .du-match11-recipe-grid a.du-news-live .du-news-description{font-size:clamp(14px,3.8vw,19px)!important}
-}
-</style>
+
 <style>
 /* Keep the relocated music chapter full-width within the Evening section. */
 body.du-evening-mode #eveningContinuation > section#music.du-music{width:100%;max-width:none;margin-inline:0}
@@ -2085,50 +2022,5 @@ function stepVisualHtml(recipe,index,mode){
 <script src="assets/airfryer-experience-20261110.js"></script>
 <script src="/assets/native-music-player-20261112.js" defer></script>
 
-<script>
-/* The three approved newspaper-art images remain intact as the paper frames.
-   Only the dish photo, text, and linked recipe change at each new visit. */
-(function rotateApprovedNewspaperCards(){
- 'use strict';
- const cards=Array.from(document.querySelectorAll('.du-match11-recipe-grid > a.du-approved-cover-recipe'));
- if(cards.length!==3 || typeof RECIPES==='undefined')return;
- const groups=[['fish','meat','poultry'],['pasta','vegetables'],['dessert']];
- const key='nash-vecher-previous-three-recipes-v1';
- let previous=[];
- try{const saved=JSON.parse(localStorage.getItem(key)||'[]');if(Array.isArray(saved))previous=saved;}catch(e){}
- const picks=[];
- groups.forEach((categories,index)=>{
-  const pool=RECIPES.filter(r=>categories.includes(r.category)&&typeof r.photo==='string'&&r.photo.startsWith('/assets/')&&r.id&&r.title);
-  if(!pool.length)return;
-  const fresh=pool.filter(r=>r.id!==previous[index]&&!picks.some(p=>p.id===r.id));
-  const candidates=fresh.length?fresh:pool;
-  let pick=Math.floor(Math.random()*candidates.length);
-  try{if(window.crypto&&window.crypto.getRandomValues){const values=new Uint32Array(1);window.crypto.getRandomValues(values);pick=values[0]%candidates.length;}}catch(e){}
-  picks.push(candidates[pick]);
- });
- if(picks.length!==3)return;
- cards.forEach((card,index)=>{
-  const r=picks[index],original=card.querySelector('img');
-  if(!original)return;
-  original.classList.add('du-news-original');
-  card.classList.add('du-news-live');
-  card.href='#recipe='+encodeURIComponent(r.id);
-  card.setAttribute('aria-label',r.title+'. Приготовить рецепт');
-  const photo=document.createElement('img');
-  photo.className='du-news-photo';
-  photo.src=r.photo;photo.alt=r.title;photo.loading='lazy';photo.decoding='async';
-  const paper=document.createElement('div');paper.className='du-news-content';
-  const title=document.createElement('strong');
-  title.className='du-news-title'+(r.title.length>35?' du-news-long':'');
-  title.textContent=r.title;
-  const description=document.createElement('small');description.className='du-news-description';
-  description.textContent=(typeof r.description==='string'&&r.description.trim())?r.description.trim():'Вечер, который хочется повторить вдвоём.';
-  const action=document.createElement('span');action.className='du-news-cta';
-  action.append(document.createTextNode('Приготовить '));
-  const arrow=document.createElement('em');arrow.textContent='→';action.appendChild(arrow);
-  paper.append(title,description,action);card.append(photo,paper);
- });
- try{localStorage.setItem(key,JSON.stringify(picks.map(r=>r.id)));}catch(e){}
-})();
-</script>
+
 </body></html>
