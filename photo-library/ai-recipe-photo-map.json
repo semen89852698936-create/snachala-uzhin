@@ -1,6 +1,6 @@
 {
   "project": "СНАЧАЛА УЖИН",
-  "status": "user-reviewed-photo-collection; site preview pending deployment checks",
+  "status": "recipe-photo-map-synced-20-swaps-2026-11-16; 1001 unique images",
   "total": 1001,
   "photos": [
     {
@@ -509,24 +509,24 @@
     },
     {
       "n": 73,
-      "recipe_id": "collection-meat-06-05",
-      "path": "/assets/recipes-ai/0073-collection-meat-06-05.webp",
-      "sha": "d223b3f5893b61a89325d948da80778708a53ebe",
-      "bytes": 141074
+      "recipe_id": "nd-rustic-pork-potatoes",
+      "path": "/assets/replacement-20-20261116/nd-rustic-pork-potatoes.webp",
+      "sha": "8054820fdfb142ab613cad0e136fd00fd0277b46",
+      "bytes": 108198
     },
     {
       "n": 74,
-      "recipe_id": "collection-meat-06-06",
-      "path": "/assets/recipes-ai/0074-collection-meat-06-06.webp",
-      "sha": "e0ee92c9e71b06c064ec659cfa3c6e9d36a9caa0",
-      "bytes": 128400
+      "recipe_id": "nd-pork-vegetables-tomato",
+      "path": "/assets/replacement-20-20261116/nd-pork-vegetables-tomato.webp",
+      "sha": "e21423940c9528cecfef01025d84889c5ae4e326",
+      "bytes": 130220
     },
     {
       "n": 75,
-      "recipe_id": "collection-meat-06-07",
-      "path": "/assets/recipes-ai/0075-collection-meat-06-07.webp",
-      "sha": "8c456a41a4b9eae70c2df4897aba2b0c1fb73318",
-      "bytes": 116556
+      "recipe_id": "nd-beef-goulash-potatoes",
+      "path": "/assets/replacement-20-20261116/nd-beef-goulash-potatoes.webp",
+      "sha": "3e2a6b7fc5fe47cb403e3c83c160203771d05f8b",
+      "bytes": 115804
     },
     {
       "n": 76,
@@ -537,17 +537,17 @@
     },
     {
       "n": 77,
-      "recipe_id": "collection-meat-06-09",
-      "path": "/assets/recipes-ai/0077-collection-meat-06-09.webp",
-      "sha": "bfeb73cd7101ba4e4c4cd11ffcff5b1e22bad990",
-      "bytes": 135434
+      "recipe_id": "nd-beef-stroganoff-classic",
+      "path": "/assets/replacement-20-20261116/nd-beef-stroganoff-classic.webp",
+      "sha": "71b0930bb30e049fc803bfc3b9d3b47fd97fe12e",
+      "bytes": 122626
     },
     {
       "n": 78,
-      "recipe_id": "collection-meat-06-10",
-      "path": "/assets/recipes-ai/0078-collection-meat-06-10.webp",
-      "sha": "985f395b6549b2132434fe23f2251e97feb61c3e",
-      "bytes": 126854
+      "recipe_id": "nd-beef-stroganoff-mushrooms",
+      "path": "/assets/replacement-20-20261116/nd-beef-stroganoff-mushrooms.webp",
+      "sha": "f8714d78fc89393163b100b13d63fb543e01b977",
+      "bytes": 141794
     },
     {
       "n": 79,
@@ -565,10 +565,10 @@
     },
     {
       "n": 81,
-      "recipe_id": "collection-meat-07-03",
-      "path": "/assets/recipes-ai/0081-collection-meat-07-03.webp",
-      "sha": "01059dbdc2543dbeea705412764ec2cd9b5732f5",
-      "bytes": 117826
+      "recipe_id": "plov-shadi-bek-quince",
+      "path": "/assets/replacement-20-20261116/plov-shadi-bek-quince.webp",
+      "sha": "35460c3695febde980fbf2d43e32348dc6fdb204",
+      "bytes": 150296
     },
     {
       "n": 82,
@@ -586,10 +586,10 @@
     },
     {
       "n": 84,
-      "recipe_id": "collection-meat-07-06",
-      "path": "/assets/recipes-ai/0084-collection-meat-07-06.webp",
-      "sha": "b7bd3c3e91560aa9dd91d3c81d9cf5a8b8c49008",
-      "bytes": 139032
+      "recipe_id": "plov-uzbek-classic",
+      "path": "/assets/replacement-20-20261116/plov-uzbek-classic.webp",
+      "sha": "d442ffa24c40f4bfd74510ae511ce1a27ede1b88",
+      "bytes": 157412
     },
     {
       "n": 85,
@@ -600,17 +600,17 @@
     },
     {
       "n": 86,
-      "recipe_id": "collection-meat-07-08",
-      "path": "/assets/recipes-ai/0086-collection-meat-07-08.webp",
-      "sha": "ab56a76d9d1cd51d09207cabdc1ceb12204b7ee8",
-      "bytes": 131870
+      "recipe_id": "plov-ugro-tajik",
+      "path": "/assets/replacement-20-20261116/plov-ugro-tajik.webp",
+      "sha": "bdba45e6db0ab77a651a7e80791910c122e464c2",
+      "bytes": 229520
     },
     {
       "n": 87,
-      "recipe_id": "collection-meat-07-09",
-      "path": "/assets/recipes-ai/0087-collection-meat-07-09.webp",
-      "sha": "d26491bf21b798d80db112c7f7717f18640724d9",
-      "bytes": 113064
+      "recipe_id": "plov-lamb-barberry",
+      "path": "/assets/replacement-20-20261116/plov-lamb-barberry.webp",
+      "sha": "b1fe5262ed1f89f4b98dbffe30d581d2a49ed45b",
+      "bytes": 187362
     },
     {
       "n": 88,
@@ -649,17 +649,17 @@
     },
     {
       "n": 93,
-      "recipe_id": "collection-meat-08-05",
-      "path": "/assets/recipes-ai/0093-collection-meat-08-05.webp",
-      "sha": "49b591e8f5ad427cc71628fb72a53e2b1312631c",
-      "bytes": 91978
+      "recipe_id": "plov-beef-rustic",
+      "path": "/assets/replacement-20-20261116/plov-beef-rustic.webp",
+      "sha": "b3594c239413d4662417a51bfd048ebaa46ac25e",
+      "bytes": 155768
     },
     {
       "n": 94,
-      "recipe_id": "collection-meat-08-06",
-      "path": "/assets/recipes-ai/0094-collection-meat-08-06.webp",
-      "sha": "7fe534d66155c17b5be462cf7ce89e5d33d0dc5a",
-      "bytes": 68410
+      "recipe_id": "plov-cumin-barberry",
+      "path": "/assets/replacement-20-20261116/plov-cumin-barberry.webp",
+      "sha": "f4dee93c3c3725366ea5922fd7b9d0c65cd33565",
+      "bytes": 200738
     },
     {
       "n": 95,
@@ -677,17 +677,17 @@
     },
     {
       "n": 97,
-      "recipe_id": "collection-meat-08-09",
-      "path": "/assets/recipes-ai/0097-collection-meat-08-09.webp",
-      "sha": "0310e5c21fd5e4aabbf18b78011de679f23d0838",
-      "bytes": 102442
+      "recipe_id": "nd-beef-peppers-soy",
+      "path": "/assets/replacement-20-20261116/nd-beef-peppers-soy.webp",
+      "sha": "4d845ec58e0966753b305f3b140f27cedf22cbad",
+      "bytes": 129984
     },
     {
       "n": 98,
-      "recipe_id": "collection-meat-08-10",
-      "path": "/assets/recipes-ai/0098-collection-meat-08-10.webp",
-      "sha": "918ad9cef3135935437afbd2e226b6b8dd11b88e",
-      "bytes": 114236
+      "recipe_id": "nd-beef-slow-onion",
+      "path": "/assets/replacement-20-20261116/nd-beef-slow-onion.webp",
+      "sha": "ef1082bedb869fd1309dfe7bee7ac8e4f9ed7c57",
+      "bytes": 129254
     },
     {
       "n": 99,
@@ -789,24 +789,24 @@
     },
     {
       "n": 113,
-      "recipe_id": "collection-meat-10-05",
-      "path": "/assets/recipes-ai/0113-collection-meat-10-05.webp",
-      "sha": "bf7dba19785ebfa27ed960a0f671ca002666b12d",
-      "bytes": 98584
+      "recipe_id": "plov-clever-pork-mushrooms",
+      "path": "/assets/replacement-20-20261116/plov-clever-pork-mushrooms.webp",
+      "sha": "ec6c547da2fffdd8f4766c16963ce1671a00dc16",
+      "bytes": 136360
     },
     {
       "n": 114,
-      "recipe_id": "collection-meat-10-06",
-      "path": "/assets/recipes-ai/0114-collection-meat-10-06.webp",
-      "sha": "73f54d526de7f0a0b06821fa51974726574ae57d",
-      "bytes": 85110
+      "recipe_id": "plov-pork-skillet",
+      "path": "/assets/replacement-20-20261116/plov-pork-skillet.webp",
+      "sha": "353740ae2441c81ddba1dd42749f07eb838e0ef3",
+      "bytes": 155224
     },
     {
       "n": 115,
-      "recipe_id": "collection-meat-10-07",
-      "path": "/assets/recipes-ai/0115-collection-meat-10-07.webp",
-      "sha": "8d4a3345ad71496961b1851055afa80e5b323c9e",
-      "bytes": 118232
+      "recipe_id": "nd-pork-mushrooms-sourcream",
+      "path": "/assets/replacement-20-20261116/nd-pork-mushrooms-sourcream.webp",
+      "sha": "b5007538fdf83c3d59c8613c43acd83ccbfb4614",
+      "bytes": 119700
     },
     {
       "n": 116,
@@ -824,10 +824,10 @@
     },
     {
       "n": 118,
-      "recipe_id": "collection-meat-10-10",
-      "path": "/assets/recipes-ai/0118-collection-meat-10-10-plating-20261103.webp",
-      "sha": "138ae60b95d3bae714fd1d55445383c269cd78af",
-      "bytes": 117738
+      "recipe_id": "nd-pork-oven-shashlik",
+      "path": "/assets/replacement-20-20261116/nd-pork-oven-shashlik.webp",
+      "sha": "4c75ef5dd4d049a207f2d04deaba546e0be345ec",
+      "bytes": 108880
     },
     {
       "n": 119,
@@ -859,10 +859,10 @@
     },
     {
       "n": 123,
-      "recipe_id": "collection-poultry-01-07",
-      "path": "/assets/recipes-ai/0123-collection-poultry-01-07.webp",
-      "sha": "473a6e2b9088336b77027e395aade01ca54e6e98",
-      "bytes": 105246
+      "recipe_id": "nd-chicken-mushroom-julienne",
+      "path": "/assets/replacement-20-20261116/nd-chicken-mushroom-julienne.webp",
+      "sha": "0a5683b0ba41afe0739f08e23e39eb7065ba612e",
+      "bytes": 120576
     },
     {
       "n": 124,
@@ -1160,10 +1160,10 @@
     },
     {
       "n": 166,
-      "recipe_id": "collection-poultry-05-10",
-      "path": "/assets/recipes-ai/0166-collection-poultry-05-10.webp",
-      "sha": "7d8a9618a9ab27ca88e87a86c984f9b327c12c97",
-      "bytes": 100344
+      "recipe_id": "plov-chicken-prunes",
+      "path": "/assets/replacement-20-20261116/plov-chicken-prunes.webp",
+      "sha": "e957587c3b79521573b40c988565779869df83d8",
+      "bytes": 84360
     },
     {
       "n": 167,
@@ -3330,10 +3330,10 @@
     },
     {
       "n": 476,
-      "recipe_id": "collection-vegetables-07-06",
-      "path": "/assets/recipes-ai/0476-collection-vegetables-07-06.webp",
-      "sha": "134a1c7b611648da66fd496d9061430151862a96",
-      "bytes": 118558
+      "recipe_id": "plov-mushroom-bell-pepper",
+      "path": "/assets/replacement-20-20261116/plov-mushroom-bell-pepper.webp",
+      "sha": "2235262ae911af57170b7e2470b129e633e1d0bc",
+      "bytes": 128340
     },
     {
       "n": 477,
