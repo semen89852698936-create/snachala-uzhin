@@ -1691,3 +1691,27 @@ body.du-evening-mode #eveningContinuation .du-story-after-photo > img {
     margin-top: calc(clamp(40px, 5vw, 80px) - 60px) !important;
   }
 }
+
+/* EVENING_MUSIC_TAGLINE_LARGER_AND_DINNER_PHOTO_SQUARE_20261116
+   Two focused corrections only. Do not move the music block or other sections. */
+
+/* The opening photograph beside "Ужин готов" has a square top-left corner
+   at every nesting level. No layout, crop or typography changes. */
+body.du-evening-mode #eveningContinuation > .du-story-dinner,
+body.du-evening-mode #eveningContinuation > .du-story-dinner .du-story-dinner-photo,
+body.du-evening-mode #eveningContinuation > .du-story-dinner .du-story-dinner-photo > img,
+body.du-evening-mode #eveningContinuation > .du-story-dinner .du-story-dinner-photo img {
+  border-top-left-radius: 0 !important;
+  border-radius: 0 !important;
+}
+
+/* Make the existing italic music subtitle unmistakably larger, retaining
+   its Cormorant font, weight, italic styling and punctuation-free content. */
+body.du-evening-mode #music .du-music-heading .du-section-heading > p {
+  font-size: clamp(32px, 2.5vw, 38px) !important;
+}
+@media (max-width: 760px) {
+  body.du-evening-mode #music .du-music-heading .du-section-heading > p {
+    font-size: clamp(28px, 6vw, 34px) !important;
+  }
+}
