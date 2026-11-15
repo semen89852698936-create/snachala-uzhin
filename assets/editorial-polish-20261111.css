@@ -1639,3 +1639,9 @@ html body.du-evening-mode :is(#evening,#eveningContinuation) .du-moods > button.
     mask-image: none !important;
   }
 }
+
+/* EVENING_TOGETHER_CARD_UP_40PX_20261116
+   Only the card headed "ДВА ЧЕЛОВЕКА. ОДНА КОМАНДА.". */
+body.du-evening-mode #eveningContinuation .du-evening-experience > .du-evening-together {
+  transform: translateY(-40px) !important;
+}
