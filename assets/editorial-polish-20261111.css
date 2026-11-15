@@ -1682,3 +1682,12 @@ body.du-evening-mode #eveningContinuation .du-story-after-photo,
 body.du-evening-mode #eveningContinuation .du-story-after-photo > img {
   border-radius: 0 !important;
 }
+
+/* EVENING_AFTERDINNER_PLAQUE_UP_60_ONLY_20261116
+   Raise only the lower "А дальше... побудьте вместе" scene by 60px
+   in document flow. The separate music section remains unchanged. */
+@media (min-width: 1021px) {
+  body.du-evening-mode #eveningContinuation > .du-story-after {
+    margin-top: calc(clamp(40px, 5vw, 80px) - 60px) !important;
+  }
+}
