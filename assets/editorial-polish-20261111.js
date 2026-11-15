@@ -22,6 +22,14 @@
   }
   function install(){
     if(!document.body.classList.contains('du-catalog-standalone'))return;
+    // The standalone catalogue remains independent, but returns to the new main page.
+    document.querySelectorAll('a[href="#home"]').forEach(function(a){
+      a.setAttribute('href', '/#evening');
+      a.setAttribute('aria-label', 'На главную страницу Наш вечер');
+    });
+    document.querySelectorAll('a[href="#evening"],a[href="#eveningBuilder"],a[href="#evening-music"]').forEach(function(a){
+      a.setAttribute('href', '/' + a.getAttribute('href'));
+    });
     placeTeaser();
     if(mobileQuery.addEventListener)mobileQuery.addEventListener('change',placeTeaser);
     else if(mobileQuery.addListener)mobileQuery.addListener(placeTeaser);
