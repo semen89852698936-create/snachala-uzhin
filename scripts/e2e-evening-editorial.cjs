@@ -38,15 +38,78 @@ const {chromium}=require('playwright');
       musicTracks:document.querySelectorAll('#music .du-bpm-track').length
     };
    });
+   // Force eagerly loading offscreen pictures before verifying them.
+   // img.decode() can wait forever on browser-lazy images that have not been
+   // requested. A bounded wait prevents a stuck GitHub Actions runner.
+   const selectors=[
+     '#eveningLanding .du-evening-landing-photo img',
+     '#eveningLanding .du-story-dinner-photo img',
+     '#evening .du-story-after-photo img',
+     '#evening .du-evening-together > img',
+     '#evening .du-evening-invitation-photo img'
+   ];
+   await page.evaluate(selectors=>{
+     for(const sel of selectors){
+       const img=document.querySelector(sel);
+       if(!img)throw new Error('Missing approved image: '+sel);
+       img.loading='eager';
+     }
+   },selectors);
+   await page.waitForFunction(selectors=>
+     selectors.every(sel=>{
+       const img=document.querySelector(sel);
+       return img && img.complete;
+     }),selectors,{timeout:12000});
+   const imageHealth=await page.evaluate(selectors=>
+     selectors.map(sel=>{
+       const img=document.querySelector(sel);
+       return {selector:sel,url:img.currentSrc||img.src,
+         width:img.naturalWidth,height:img.naturalHeight,complete:img.complete};
+     }),selectors);
+   for(const photo of imageHealth){
+     assert(photo.complete && photo.width>=100 && photo.height>=100,
+       scenario.name+': editorial photograph did not load/decode: '+JSON.stringify(photo));
+   }
    assert(story.hero.includes('our-evening-hero-hq.avif'),'approved first scene changed');
    assert(story.dinner.includes('our-evening-dinner-hq.avif'),'approved dinner photo changed');
    assert(story.after.includes('our-evening-after-hq.avif'),'approved after-dinner photo changed');
    assert(story.together.includes('our-evening-together-approved.webp'),'approved together photo changed');
    assert(story.invitation.includes('our-evening-invitation-approved-20261102.webp'),'approved invitation changed');
    assert(story.titleSize>(scenario.viewport.width>820?60:65),'magazine headline too small');
-   assert.equal(story.dinnerColumns,scenario.viewport.width>820?2:1,'dinner spread layout');
+   assert.equal(story.dinnerColumns,scenario.viewport.width>=1021?3:scenario.viewport.width>820?2:1,
+     'dinner spread must have three image/paper/image planes on desktop and readable tablet/mobile stacking');
    assert.equal(story.afterColumns,scenario.viewport.width>820?2:1,'after-dinner layout');
-
+   if(scenario.viewport.width>=1021){
+     const blend=await page.evaluate(()=>{
+       const bounds=sel=>document.querySelector(sel).getBoundingClientRect();
+       const container=document.querySelector('#eveningLanding .du-story-dinner');
+       const photo=document.querySelector('#eveningLanding .du-story-dinner-photo');
+       const hero=document.querySelector('#eveningLanding > .du-evening-landing-photo > img');
+       const heroCopy=bounds('#eveningLanding > .du-evening-landing-content');
+       const paper=bounds('#eveningLanding .du-story-dinner-copy');
+       const table=photo.getBoundingClientRect();
+       const bg=getComputedStyle(container,'::before').backgroundImage;
+       return {
+         steakPhoto:bg,
+         heroImageLeft:hero.getBoundingClientRect().left,
+         heroCopyRight:heroCopy.right,
+         heroMask:getComputedStyle(hero).maskImage||getComputedStyle(hero).webkitMaskImage,
+         paperLeft:paper.left,
+         paperRight:paper.right,
+         tableLeft:table.left,
+         dinnerMask:getComputedStyle(photo).maskImage||getComputedStyle(photo).webkitMaskImage,
+         afterMask:getComputedStyle(document.querySelector('#evening .du-story-after-photo')).maskImage
+       };
+     });
+     assert(blend.steakPhoto.includes('0003-pepper-steak.webp'),
+       'the dinner spread must use the approved local AI steak photograph');
+     assert(blend.heroImageLeft<blend.heroCopyRight-35,
+       'hero photograph should fade UNDER the text instead of starting at a hard vertical seam: '+JSON.stringify(blend));
+     assert(blend.tableLeft<blend.paperRight-20,
+       'dinner photograph should fade UNDER the editorial parchment, not sit beside it: '+JSON.stringify(blend));
+     assert(blend.heroMask.includes('gradient') && blend.dinnerMask.includes('gradient') && blend.afterMask.includes('gradient'),
+       'all three scenes must have photographic blending masks: '+JSON.stringify(blend));
+   }
    // The approved magazine layout puts the text to the LEFT of the hero photo.
    // On mobile it becomes text FIRST and photo SECOND. Verify real geometry.
    const geometry=await page.evaluate(()=>{
@@ -75,8 +138,14 @@ const {chromium}=require('playwright');
          scenario.name+': left-paper text overlaps the photo: '+name+': '+JSON.stringify(geometry));
      }
    }else{
-     assert(geometry.copy.bottom<=geometry.photo.top+2,
-       scenario.name+': approved mobile reading order must be copy before photo: '+JSON.stringify(geometry));
+     assert(geometry.photo.top<geometry.copy.bottom-80,
+       scenario.name+': photograph must blend behind the phone/tablet headline instead of appearing after all text: '+JSON.stringify(geometry));
+     const blendedMask=await page.evaluate(()=>{
+       const el=document.querySelector('#eveningLanding > .du-evening-landing-photo > img');
+       return getComputedStyle(el).maskImage||getComputedStyle(el).webkitMaskImage;
+     });
+     assert(blendedMask.includes('radial-gradient'),
+       scenario.name+': narrow screen photograph must fade naturally into parchment: '+blendedMask);
    }
    for(const name of ['heading','italicWord','lead','text','cta','inspiration']){
      assert(geometry[name].right<=geometry.viewportWidth+2,
@@ -85,12 +154,24 @@ const {chromium}=require('playwright');
    assert.equal(story.musicCards,3,'three music chapters required');
    assert.equal(story.musicTracks,60,'20+20+20 curated tracks required');
    assert.equal(await page.locator('#eveningLanding .du-evening-inspiration-card').count(),3,'real-recipe suggestions missing');
+   // Capture the WHOLE two-scene magazine spread, not only the current
+   // viewport. The approved artwork must be judged by overall proportions.
+   await page.locator('#eveningLanding').screenshot({
+     path:'/tmp/editorial-evening-spread-'+scenario.name+'.png',
+     animations:'disabled'
+   });
    await page.screenshot({path:'/tmp/editorial-evening-story-'+scenario.name+'.png'});
+   await page.locator('#eveningLanding .du-story-dinner').scrollIntoViewIfNeeded();
+   await page.screenshot({path:'/tmp/editorial-evening-dinner-'+scenario.name+'.png'});
    await page.locator('#evening [data-mood="spark"]').click();
    assert.equal(await page.locator('#evening [data-mood="spark"]').getAttribute('aria-pressed'),'true','mood selector broke');
    await page.locator('#swapEveningRoles').click();
    assert((await page.locator('#eveningRoleStatus').innerText()).length>0,'role selector broke');
    await page.locator('#evening .du-story-after').scrollIntoViewIfNeeded();
+   await page.locator('#evening .du-story-after').screenshot({
+     path:'/tmp/editorial-evening-third-chapter-'+scenario.name+'.png',
+     animations:'disabled'
+   });
    await page.screenshot({path:'/tmp/editorial-evening-after-'+scenario.name+'.png'});
    const overflow=await page.evaluate(()=>document.documentElement.scrollWidth-innerWidth);
    assert(overflow<=4,'horizontal overflow: '+overflow);

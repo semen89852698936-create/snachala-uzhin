@@ -1,0 +1,270 @@
+
+/* MY_RECIPES_EDITORIAL_20261110 - approved empty/filled magazine spreads.
+   Only #my-recipes; the rest of the existing site is untouched. */
+#homeView #my-recipes.du-my-recipes{
+  --my-ink:#68172b;--my-paper:#fff3e8;--my-cream:#f6e9dc;
+  position:relative;isolation:isolate;overflow:hidden;
+  background:#f8ecdf;
+  background-image:var(--du-editorial-paper-grain),linear-gradient(120deg,#fff4e9,#f7e8db);
+  padding:clamp(44px,5vw,72px) 0 clamp(35px,4vw,62px);
+  scroll-margin-top:86px;color:#3b2426;
+}
+#homeView #my-recipes .du-my-editorial-shell{width:min(1410px,calc(100% - 8vw));position:relative;}
+#homeView #my-recipes .du-my-heading{
+  position:relative;display:grid;grid-template-columns:minmax(0,1.1fr) minmax(310px,.9fr);
+  align-items:center;gap:clamp(25px,5vw,85px);min-height:137px;
+}
+#homeView #my-recipes .du-my-heading-copy{min-width:0;}
+#homeView #my-recipes .du-my-heading .du-eyebrow{
+  display:block;margin:0 0 9px;color:#75182f;letter-spacing:.14em;
+  font:800 clamp(10px,.78vw,12px)/1.4 Manrope,Arial,sans-serif;
+}
+#homeView #my-recipes .du-my-heading h2{
+  position:relative;display:inline-block;z-index:1;
+  margin:0 0 14px;max-width:100%;
+  color:#71152c!important;font:italic 500 clamp(60px,6.6vw,102px)/.93 'Cormorant Garamond',Georgia,serif;
+  letter-spacing:-.053em;white-space:nowrap;
+}
+#homeView #my-recipes .du-my-heading h2 em{color:inherit!important;}
+#homeView #my-recipes .du-my-heading h2::after{
+  content:"";position:absolute;left:39%;right:-5%;bottom:-11px;height:8px;
+  background:#79152e;transform:rotate(-3deg) skewX(-13deg);
+  clip-path:polygon(0 70%,14% 40%,42% 22%,81% 5%,100% 0,99% 26%,68% 37%,29% 78%,0 100%);
+  border-radius:70% 20% 30% 60%;
+}
+#homeView #my-recipes .du-my-heading-lead{
+  position:relative;justify-self:end;width:min(100%,455px);margin:0;
+  padding:17px 39px 16px 27px;
+  color:#422d2d;font:500 clamp(15px,1.05vw,18px)/1.55 Manrope,Arial,sans-serif;
+}
+#homeView #my-recipes.du-my-has-saved .du-my-heading-lead{padding-left:24px;border-left:1px solid #aa7278;}
+#homeView #my-recipes:not(.du-my-has-saved) .du-my-heading-lead{
+  width:min(100%,445px);min-height:121px;padding:21px 75px 19px 31px;
+  background:#fff5e9;transform:rotate(-1deg);filter:drop-shadow(0 6px 5px #60292a25);
+  clip-path:polygon(0 4%,7% 1%,14% 2%,21% 0,31% 2%,42% 0,51% 2%,60% 0,71% 2%,81% 0,91% 2%,100% 0,98% 20%,100% 39%,98% 56%,100% 79%,98% 100%,88% 98%,76% 100%,66% 98%,57% 100%,45% 98%,34% 100%,23% 98%,11% 100%,0 98%,2% 79%,0 62%,1% 40%);
+}
+#homeView #my-recipes:not(.du-my-has-saved) .du-my-heading-lead::after{
+  content:"♡";position:absolute;right:22px;top:19px;color:#80152e;
+  font:italic 66px/.9 'Cormorant Garamond',Georgia,serif;
+}
+#homeView #my-recipes:not(.du-my-has-saved) .du-my-heading-lead::before{
+  content:"";position:absolute;right:43px;top:0;width:74px;height:21px;transform:rotate(4deg);
+  background:#ebc797a6;clip-path:polygon(0 0,100% 7%,98% 100%,0 89%);
+}
+#homeView #my-recipes .du-my-summary{
+  margin:15px 0 29px;display:flex;align-items:center;gap:19px;
+  color:#795e59;font:500 12px/1.5 Manrope,Arial,sans-serif;
+}
+#homeView #my-recipes .du-my-summary strong{
+  color:#79182c;font:800 clamp(14px,1.04vw,17px)/1.5 Manrope,Arial,sans-serif;
+  flex:none;
+}
+#homeView #my-recipes .du-my-summary .du-my-sync-note{
+  border-left:1px solid #bfa499;padding-left:18px;
+  color:#7b6c62;font:500 clamp(11px,.85vw,13px)/1.5 Manrope,Arial,sans-serif;
+}
+#homeView #my-recipes.du-my-is-empty .du-my-summary{display:none;}
+/* Empty page: fig still life at left, central paper fragment, recipe polaroid at right. */
+#homeView #my-recipes .du-my-empty-scene{
+  position:relative;min-height:clamp(320px,26vw,390px);max-width:1500px;
+  display:flex;align-items:center;justify-content:center;margin:0 auto;
+}
+#homeView #my-recipes .du-my-fig-still{
+  position:absolute;z-index:0;left:clamp(-95px,-5.5vw,-28px);bottom:-38px;
+  width:clamp(205px,26vw,340px);height:clamp(240px,25vw,340px);
+  background-image:url("https://images.pexels.com/photos/9911568/pexels-photo-9911568.jpeg?auto=compress&cs=tinysrgb&w=820"),url("/assets/recipes-ai/0017-greek-salad.webp");
+  background-size:cover;background-position:center 43%;
+  -webkit-mask-image:radial-gradient(ellipse 74% 76% at 40% 59%,#000 42%,transparent 100%);
+  mask-image:radial-gradient(ellipse 74% 76% at 40% 59%,#000 42%,transparent 100%);
+  opacity:.96;pointer-events:none;
+}
+#homeView #my-recipes .du-my-empty-paper{
+  width:min(66%,730px);min-height:300px;margin:0;z-index:1;
+  padding:33px clamp(25px,4vw,60px) 37px;
+  text-align:center;display:flex;flex-direction:column;align-items:center;justify-content:center;
+  background:#fff6ec;filter:drop-shadow(0 8px 14px rgba(77,33,27,.11));
+  clip-path:polygon(0 3%,5% 1%,11% 2%,17% 0,24% 1%,30% 0,38% 2%,44% 0,53% 1%,62% 0,71% 2%,78% 0,87% 2%,94% 0,100% 3%,98% 12%,100% 24%,99% 35%,100% 49%,99% 61%,100% 73%,99% 84%,100% 95%,94% 99%,86% 98%,80% 100%,72% 98%,65% 100%,58% 98%,50% 100%,43% 98%,34% 100%,27% 98%,21% 100%,13% 98%,7% 100%,0 97%,2% 86%,0 73%,1% 61%,0 47%,1% 31%,0 16%);
+}
+#homeView #my-recipes .du-my-empty-heart{
+  display:block;color:#77192e;margin:0 0 9px;font:italic 80px/.8 'Cormorant Garamond',Georgia,serif;
+}
+#homeView #my-recipes .du-my-empty-paper h3{
+  margin:8px 0 11px;color:#52192b;
+  font:600 clamp(27px,2.7vw,39px)/1.1 'Cormorant Garamond',Georgia,serif;letter-spacing:-.025em;
+}
+#homeView #my-recipes .du-my-empty-paper p{
+  margin:0 0 21px;max-width:560px;color:#5d4843;font:500 clamp(14px,1.13vw,17px)/1.55 Manrope,Arial,sans-serif;
+}
+#homeView #my-recipes .du-my-empty-cta{
+  display:inline-flex;align-items:center;justify-content:center;gap:12px;
+  padding:17px 25px;min-height:55px;background:#82172d;color:#fff7ed;
+  font:800 clamp(13px,1.05vw,17px)/1.3 Manrope,Arial,sans-serif;text-decoration:none;
+  clip-path:polygon(0 6%,8% 0,17% 3%,24% 0,34% 3%,44% 0,52% 3%,61% 0,71% 2%,80% 0,89% 3%,100% 0,99% 21%,100% 51%,99% 76%,100% 98%,90% 96%,79% 100%,69% 97%,59% 100%,49% 97%,38% 100%,29% 97%,20% 100%,10% 98%,0 100%,1% 79%,0 49%,1% 24%);
+  transition:filter .18s,transform .18s;
+}
+#homeView #my-recipes .du-my-empty-cta:hover{filter:brightness(1.12);transform:translateY(-2px);}
+#homeView #my-recipes .du-my-polaroid{
+  position:absolute;z-index:2;right:clamp(-55px,-2.5vw,-17px);bottom:clamp(1px,1.8vw,22px);
+  width:clamp(150px,17vw,225px);padding:13px 13px 25px;
+  background:#fff2e1;box-shadow:0 9px 16px #59352342;
+  transform:rotate(8deg);pointer-events:none;
+}
+#homeView #my-recipes .du-my-polaroid img{display:block;width:100%;aspect-ratio:1 / 1.05;object-fit:cover;}
+#homeView #my-recipes .du-my-polaroid::before{
+  content:"";position:absolute;width:28px;height:31px;top:-20px;left:calc(50% - 14px);
+  border:3px solid #9c742c;border-radius:13px 13px 4px 4px;transform:rotate(-7deg);
+  box-shadow:inset 0 0 0 2px #ffe3a8;
+}
+#homeView #my-recipes .du-my-polaroid::after{
+  content:"";position:absolute;width:39px;height:10px;top:-5px;left:calc(50% - 20px);
+  background:#b88e46;border-radius:2px;box-shadow:0 2px 3px #442c2430;
+}
+/* Saved-recipes page: real saved items only, with working filters and editable handwritten notes. */
+#homeView #my-recipes.du-my-has-saved{padding-bottom:clamp(45px,5vw,78px);}
+#homeView #my-recipes.du-my-has-saved .du-my-heading{min-height:100px;}
+#homeView #my-recipes.du-my-has-saved .du-my-heading h2{font-size:clamp(54px,5.5vw,84px);}
+#homeView #my-recipes .du-my-collection-tools{
+  display:flex;flex-wrap:wrap;align-items:center;gap:9px;margin:15px 0 21px;
+}
+#homeView #my-recipes .du-my-collection-search{
+  display:flex;align-items:center;gap:9px;flex:1 1 265px;min-width:215px;max-width:380px;
+  border:1px solid #e5ceb9;background:#fff5e9;padding:0 13px;border-radius:36px;box-shadow:0 2px 4px #57312612;
+}
+#homeView #my-recipes .du-my-collection-search>span{color:#771e33;font:26px/1 Georgia,serif;}
+#homeView #my-recipes .du-my-collection-search input{
+  width:100%;min-height:41px;border:0;outline:none;color:#662339;background:transparent;
+  font:500 12px Manrope,Arial,sans-serif;
+}
+#homeView #my-recipes .du-my-collection-search:focus-within{outline:2px solid #a96a74;outline-offset:1px;}
+#homeView #my-recipes .du-my-collection-filters{display:flex;gap:7px;align-items:center;flex-wrap:wrap;flex:1 1 auto;}
+#homeView #my-recipes .du-my-filter-chip{
+  padding:10px 15px;border:1px solid #e4cbb6;background:#fff4e7;color:#532a2c;
+  border-radius:32px;font:800 11px/1.2 Manrope,Arial,sans-serif;min-height:40px;
+  box-shadow:0 2px 3px #5032280f;
+}
+#homeView #my-recipes .du-my-filter-chip[aria-pressed="true"]{
+  background:#78172b;border-color:#78172b;color:#fff9ee;
+}
+#homeView #my-recipes .du-my-sort{
+  flex:0 0 auto;min-height:40px;padding:0 12px;border:1px solid #e7ceb9;
+  border-radius:28px;background:#fff4e7;color:#582a2e;
+  font:800 11px Manrope,Arial,sans-serif;
+}
+#homeView #my-recipes #myRecipesGrid.du-my-editorial-grid{
+  display:grid;grid-template-columns:repeat(3,minmax(0,1fr));
+  align-items:stretch;gap:clamp(13px,1.5vw,22px);margin:0;
+}
+#homeView #my-recipes .du-personal-card{
+  position:relative;display:grid;grid-template-columns:44% minmax(0,1fr);
+  min-width:0;min-height:215px;gap:0;
+  background:#fff5e9;border:0;border-radius:0!important;
+  box-shadow:0 6px 16px rgba(89,49,30,.1);
+  clip-path:polygon(0 1%,12% 0,25% .8%,38% 0,55% .8%,69% 0,84% .7%,100% 0,99% 15%,100% 31%,99% 48%,100% 64%,99% 79%,100% 99%,87% 99%,77% 100%,63% 99%,52% 100%,38% 99%,26% 100%,12% 99%,0 100%,1% 81%,0 65%,1% 46%,0 29%,1% 14%);
+}
+#homeView #my-recipes .du-my-card-photo{
+  min-height:215px;position:relative;background:#dfc6aa;overflow:hidden;
+}
+#homeView #my-recipes .du-my-photo-open{display:block;width:100%;height:100%;border:0;padding:0;background:transparent;cursor:pointer;}
+#homeView #my-recipes .du-my-card-photo img{display:block;width:100%;height:100%;object-fit:cover;transition:transform .25s;}
+#homeView #my-recipes .du-my-photo-open:hover img{transform:scale(1.045);}
+#homeView #my-recipes .du-my-card-photo::after{
+  content:"";position:absolute;right:-1px;top:0;bottom:0;width:6px;pointer-events:none;
+  background:#fff5e9;clip-path:polygon(100% 0,25% 9%,86% 22%,18% 37%,100% 54%,30% 67%,80% 84%,0 100%,100% 100%);
+}
+#homeView #my-recipes .du-my-heart-button{
+  position:absolute;top:10px;right:10px;z-index:3;display:flex;align-items:center;justify-content:center;
+  width:36px;height:36px;padding:0;border:0;border-radius:50%;
+  background:#fff5ea;color:#86172e;font:30px/1 Georgia,serif;box-shadow:0 3px 8px #3d1f2540;
+}
+#homeView #my-recipes .du-my-heart-button:hover{background:#86172e;color:white;}
+#homeView #my-recipes .du-my-card-body{
+  display:flex;min-width:0;flex-direction:column;align-items:flex-start;
+  padding:clamp(13px,1.4vw,21px) clamp(10px,1.45vw,22px) 12px;
+}
+#homeView #my-recipes .du-my-card-title{
+  display:block;margin:0 0 8px;padding:0;border:0;background:none;
+  color:#4f1726;font:600 clamp(22px,1.9vw,29px)/1.01 'Cormorant Garamond',Georgia,serif;
+  text-align:left;cursor:pointer;hyphens:auto;overflow-wrap:break-word;
+}
+#homeView #my-recipes .du-my-card-title:hover{text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:3px;}
+#homeView #my-recipes .du-my-card-meta{
+  display:flex;flex-wrap:wrap;gap:8px 13px;align-items:center;
+  color:#61433c;font:600 clamp(10px,.8vw,12px)/1.4 Manrope,Arial,sans-serif;margin:0 0 7px;
+}
+#homeView #my-recipes .du-my-card-meta>span{white-space:nowrap;}
+#homeView #my-recipes .du-my-card-open{
+  padding:0;border:0;background:none;color:#751c2f;margin:1px 0 8px;
+  font:800 11px/1.3 Manrope,Arial,sans-serif;
+  text-decoration:underline;text-underline-offset:3px;
+}
+#homeView #my-recipes .du-my-note-preview{
+  position:relative;display:block;width:100%;text-align:left;margin-top:auto;
+  padding:9px 27px 7px 10px;border:0;background:#f8e4ca;color:#59212b;
+  box-shadow:0 2px 6px #5c30211a;cursor:pointer;
+  clip-path:polygon(0 4%,12% 0,23% 4%,35% 0,46% 3%,59% 0,71% 3%,86% 0,100% 3%,99% 27%,100% 61%,98% 100%,84% 97%,65% 100%,48% 97%,27% 100%,11% 97%,0 100%,1% 62%);
+}
+#homeView #my-recipes .du-my-note-preview .du-my-note-label{
+  display:block;color:#68162b;font:800 11px/1.3 Manrope,Arial,sans-serif;margin-bottom:4px;
+}
+#homeView #my-recipes .du-my-note-preview .du-my-note-text{
+  display:block;font:400 clamp(13px,1.1vw,17px)/1.13 'Marck Script','Cormorant Garamond',cursive;
+  word-break:break-word;white-space:normal;
+}
+#homeView #my-recipes .du-my-note-pencil{position:absolute;top:9px;right:10px;color:#75152a;font:22px/1 Georgia,serif;}
+#homeView #my-recipes .du-my-note-editor{width:100%;margin-top:8px;}
+#homeView #my-recipes .du-my-note-editor textarea{
+  width:100%;min-height:74px;border:1px solid #c6a19b;border-radius:5px;background:#fff9f1;
+  color:#532631;padding:9px;resize:vertical;font:13px/1.5 Manrope,Arial,sans-serif;
+}
+#homeView #my-recipes .du-my-note-actions{display:flex;gap:7px;margin-top:6px;flex-wrap:wrap;}
+#homeView #my-recipes .du-my-note-actions button{
+  padding:8px 9px;border:1px solid #ad8589;border-radius:4px;color:#6d1a30;background:#fff1e5;
+  font:800 11px Manrope,Arial,sans-serif;
+}
+#homeView #my-recipes .du-my-note-actions button:first-child{color:#fff8ee;background:#75192c;border-color:#75192c;}
+#homeView #my-recipes .du-my-no-results{padding:36px 18px;text-align:center;font:600 17px Manrope,Arial,sans-serif;color:#6d4550;}
+@media(max-width:1150px){
+  #homeView #my-recipes #myRecipesGrid.du-my-editorial-grid{grid-template-columns:repeat(2,minmax(0,1fr));}
+  #homeView #my-recipes .du-my-collection-search{max-width:none;}
+}
+@media(max-width:760px){
+  #homeView #my-recipes.du-my-recipes{padding:42px 0 48px;}
+  #homeView #my-recipes .du-my-editorial-shell{width:calc(100% - 30px);}
+  #homeView #my-recipes .du-my-heading{grid-template-columns:minmax(0,1fr);gap:12px;}
+  #homeView #my-recipes .du-my-heading h2,#homeView #my-recipes.du-my-has-saved .du-my-heading h2{
+    font-size:clamp(53px,11vw,78px);white-space:normal;
+  }
+  #homeView #my-recipes .du-my-heading-lead{justify-self:stretch;max-width:none;}
+  #homeView #my-recipes:not(.du-my-has-saved) .du-my-heading-lead{min-height:0;padding:16px 55px 16px 20px;}
+  #homeView #my-recipes .du-my-summary{display:block;margin:20px 0;}
+  #homeView #my-recipes .du-my-summary .du-my-sync-note{display:block;margin-top:8px;padding:0;border:0;}
+  #homeView #my-recipes .du-my-empty-scene{min-height:345px;margin-top:10px;}
+  #homeView #my-recipes .du-my-empty-paper{width:100%;min-height:270px;padding:27px 18px 31px;}
+  #homeView #my-recipes .du-my-empty-paper h3{font-size:31px;}
+  #homeView #my-recipes .du-my-empty-heart{font-size:69px;}
+  #homeView #my-recipes .du-my-fig-still{width:145px;height:160px;left:-55px;bottom:-65px;opacity:.8;}
+  #homeView #my-recipes .du-my-polaroid{width:100px;padding:8px 8px 14px;right:-21px;bottom:-45px;opacity:.93;}
+  #homeView #my-recipes .du-my-empty-cta{font-size:12px;padding:15px 17px;}
+  #homeView #my-recipes .du-my-collection-tools{gap:8px;}
+  #homeView #my-recipes .du-my-collection-search{flex-basis:100%;min-width:0;}
+  #homeView #my-recipes .du-my-collection-filters{flex:1 1 100%;}
+  #homeView #my-recipes #myRecipesGrid.du-my-editorial-grid{grid-template-columns:1fr;gap:15px;}
+  #homeView #my-recipes .du-personal-card{grid-template-columns:41% minmax(0,1fr);min-height:235px;}
+  #homeView #my-recipes .du-my-card-photo{min-height:235px;}
+  #homeView #my-recipes .du-my-card-title{font-size:clamp(21px,5.5vw,28px);}
+}
+@media(max-width:390px){
+  #homeView #my-recipes .du-personal-card{grid-template-columns:39% minmax(0,1fr);}
+  #homeView #my-recipes .du-my-card-body{padding:10px 10px 11px;}
+  #homeView #my-recipes .du-my-card-title{font-size:21px;}
+  #homeView #my-recipes .du-my-note-preview{padding:7px 24px 8px 8px;}
+  #homeView #my-recipes .du-my-note-preview .du-my-note-text{font-size:13px;}
+}
+@media(prefers-reduced-motion:reduce){
+ #homeView #my-recipes .du-my-photo-open img,#homeView #my-recipes .du-my-empty-cta{transition:none;}
+}
+
+/* The approved active newspaper navigation tab when the personal section is selected. */
+body:has(#my-recipes:target) .main-nav a[data-nav="my-recipes"]{
+ background:#77172b!important;color:#fff8ed!important;
+}

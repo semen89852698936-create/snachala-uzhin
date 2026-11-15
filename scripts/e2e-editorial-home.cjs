@@ -17,10 +17,269 @@ const {chromium}=require('playwright');
      const css=getComputedStyle(hero);
      return {bg:css.backgroundColor,wordmark:getComputedStyle(document.querySelector('#homeView .du-hero h1')).color};
    });
-   assert.equal(colors.bg,'rgb(255, 248, 239)','approved light-paper storefront not applied');
-   assert.equal(colors.wordmark,'rgb(40, 27, 27)','approved ink typography not applied');
+   assert.equal(colors.bg,'rgb(37, 16, 15)','approved dark full-photograph magazine cover not applied');
+   assert.equal(colors.wordmark,'rgb(255, 244, 230)','approved ivory type must be printed over the steak photograph');
    await page.evaluate(()=>document.fonts.ready);
+   const featuredPhoto=await page.evaluate(async ()=>{
+     const art=document.querySelector('#homeView .du-hero-art');
+     const image=getComputedStyle(art).backgroundImage;
+     if(!image.includes('home-hero-steak-wine-20261108.webp')){
+       return {image,loaded:false};
+     }
+     const response=await fetch('/assets/home-hero-steak-wine-20261108.webp');
+     const blob=await response.blob();
+     const bitmap=await createImageBitmap(blob);
+     const result={image,loaded:response.ok,width:bitmap.width,height:bitmap.height,type:blob.type};
+     bitmap.close();
+     return result;
+   });
+   assert(featuredPhoto.loaded && featuredPhoto.width===1400 && featuredPhoto.height===900,
+     'Meat + two wine glasses hero is missing, undecodable or wrong sized: '+JSON.stringify(featuredPhoto));
+   const coverBlend=await page.evaluate(()=>{
+     const art=document.querySelector('#homeView .du-hero-art');
+     const copy=document.querySelector('#homeView .du-hero-copy');
+     const paper=getComputedStyle(art,'::before');
+     const rect=el=>el.getBoundingClientRect();
+     return {artLeft:rect(art).left,copyRight:rect(copy).right,
+       seam:paper.backgroundImage,artMask:getComputedStyle(art).maskImage};
+   });
+   if(viewport.width>820){
+     assert(coverBlend.artLeft<coverBlend.copyRight-55,
+       'home photo must extend UNDER headline, not stop at a hard column edge: '+JSON.stringify(coverBlend));
+     assert(coverBlend.seam.includes('gradient'),
+       'home cover must blend image into parchment: '+JSON.stringify(coverBlend));
+   } else {
+     assert(coverBlend.artLeft===0 && coverBlend.copyRight>coverBlend.artLeft,
+       'mobile steak photo must remain FULL BLEED beneath the editorial type: '+JSON.stringify(coverBlend));
+   }
+   assert.equal(await page.locator('#homeView #heroRecipe').count(),0,
+     'Recipe of the Week CTA must be removed, as requested');
+   assert.equal(await page.locator('#homeView .du-hero-side-note').count(),1,
+     'Original explanatory paragraph must replace the featured recipe card');
+   const sideNote=await page.evaluate(()=>{
+     const note=document.querySelector('#homeView .du-hero-side-note');
+     const art=document.querySelector('#homeView .du-hero-art');
+     const occasion=document.querySelector('#homeView .du-hero-occasion');
+     const copy=document.querySelector('#homeView .du-hero-copy');
+     const action=document.querySelector('#homeView .du-hero-actions');
+     const footer=document.querySelector('#homeView .du-hero-bottom');
+     const b=el=>{const x=el.getBoundingClientRect();
+       return {left:x.left,right:x.right,top:x.top,bottom:x.bottom,width:x.width,height:x.height}};
+     return {
+       text:note.innerText.trim(),
+       position:getComputedStyle(note).position,
+       note:b(note),art:b(art),occasion:b(occasion),actions:b(action),footer:b(footer),copy:b(copy),
+       occasionFont:parseFloat(getComputedStyle(occasion).fontSize),
+       noteColor:getComputedStyle(note).color,
+       notePaper:getComputedStyle(note).backgroundColor,
+       sideNoteIsInsideArt:art.contains(note),
+       oldFeaturedExists:!!document.querySelector('#homeView #heroRecipe')
+     };
+   });
+   assert.equal(sideNote.text,
+     'Красивые блюда. Два места за столом. И чуть больше времени друг для друга. Выберите настроение, а мы подскажем, что приготовить и как сделать это вместе.');
+   assert(sideNote.sideNoteIsInsideArt && !sideNote.oldFeaturedExists,
+     'Paragraph must occupy former Recipe-of-Week area, not left copy: '+JSON.stringify(sideNote));
+   assert.equal(sideNote.position,'absolute',
+     'Right-hand paragraph must stay anchored where the recipe card was');
+   assert(sideNote.note.right<=sideNote.art.right-7 &&
+     sideNote.note.bottom<=sideNote.art.bottom-10 &&
+     sideNote.note.left>sideNote.art.left+sideNote.art.width*(viewport.width>760?.48:.26) &&
+     sideNote.note.top>sideNote.art.top+sideNote.art.height*.32,
+     'Paragraph must occupy lower-right cover area: '+JSON.stringify(sideNote));
+   assert(sideNote.occasionFont>(viewport.width>760?60:43),
+     '1001 повод остаться must be displayed at double font size: '+JSON.stringify(sideNote));
+   const overlaps=(x,y)=>Math.max(x.left,y.left)<Math.min(x.right,y.right)-4 &&
+     Math.max(x.top,y.top)<Math.min(x.bottom,y.bottom)-4;
+   assert(!overlaps(sideNote.note,sideNote.actions)&&!overlaps(sideNote.note,sideNote.footer),
+     'Right-hand editorial paragraph must not cover buttons or lower metadata: '+JSON.stringify(sideNote));
+   const photoCover=await page.evaluate(()=>{
+     const hero=document.querySelector('#homeView .du-hero');
+     const art=document.querySelector('#homeView .du-hero-art');
+     const text=document.querySelector('#homeView .du-hero-copy');
+     const h1=document.querySelector('#du-hero-title');
+     const kicker=document.querySelector('#homeView .du-kicker');
+     const slogan=document.querySelector('#homeView .du-hero-slogan');
+     const occasion=document.querySelector('#homeView .du-hero-occasion');
+     const paperButton=document.querySelector('#homeView .du-hero-actions .du-btn-primary');
+     const chapters=document.querySelector('#homeView .du-cover-chapters');
+     const bounds=x=>({left:x.getBoundingClientRect().left,right:x.getBoundingClientRect().right,
+       top:x.getBoundingClientRect().top,bottom:x.getBoundingClientRect().bottom});
+     return {
+       mainHeading:h1.innerText.trim().replace(/\\s+/g,' '),
+       kicker:kicker.innerText.trim(),
+       slogan:slogan.innerText.trim(),
+       occasion:occasion?.innerText.trim(),
+       headerOnPhoto:bounds(art).left<=bounds(h1).left&&bounds(art).right>=bounds(h1).right&&
+         bounds(art).top<=bounds(h1).top&&bounds(art).bottom>=bounds(h1).bottom,
+       heroWidth:hero.getBoundingClientRect().width,
+       photoWidth:art.getBoundingClientRect().width,
+       contentBg:getComputedStyle(text).backgroundColor,
+       underline:getComputedStyle(slogan,'::after').backgroundImage,
+       paperClip:getComputedStyle(paperButton).clipPath,
+       paperColor:getComputedStyle(paperButton).backgroundColor,
+       chapters:chapters?[...chapters.querySelectorAll('a')].map(a=>({text:a.innerText.trim(),href:a.getAttribute('href')})):[],
+       photoOverlap:bounds(art).left<bounds(text).right
+     };
+   });
+   assert(photoCover.mainHeading.includes('СНАЧАЛА') && photoCover.mainHeading.includes('УЖИН'),
+     'Live homepage title is missing from photographic spread: '+JSON.stringify(photoCover));
+   assert.equal(photoCover.kicker,'КУЛИНАРНЫЙ ЖУРНАЛ');
+   assert.equal(photoCover.slogan,'Рецепты, которые объединяют');
+   // The approved cover uses a curved SVG line, not the old straight underline.
+   // move it. Test independent text and line rotations: same visual angle.
+   const sloganSlant=await page.evaluate(()=>{
+     const p=document.querySelector('#homeView .du-hero-slogan');
+     const lettering=p.querySelector('.du-hero-slogan-type');
+     const underline=getComputedStyle(p,'::after');
+     const matrixAngle=transform=>{
+       if(!transform || transform==='none')return 0;
+       const mat=new DOMMatrixReadOnly(transform);
+       return Math.atan2(mat.b,mat.a)*180/Math.PI;
+     };
+     return {
+       letteringAngle:matrixAngle(getComputedStyle(lettering).transform),
+       underlineAngle:matrixAngle(underline.transform),
+       paragraphAngle:matrixAngle(getComputedStyle(p).transform),
+       underlineColor:underline.backgroundColor,
+        underlineCurve:underline.backgroundImage
+     };
+   });
+   assert(Math.abs(sloganSlant.letteringAngle-(-3))<0.2,
+     'Slogan lettering should rise to the right: '+JSON.stringify(sloganSlant));
+   assert(Math.abs(sloganSlant.underlineAngle)<0.2 && /data:image\/svg\+xml/.test(sloganSlant.underlineCurve) && sloganSlant.underlineCurve.includes('Q192'),
+     'The single curved SVG stroke must remain beneath the text: '+JSON.stringify(sloganSlant));
+   assert(Math.abs(sloganSlant.paragraphAngle)<0.2,
+     'Entire paragraph must not move or tilt the original red underline: '+JSON.stringify(sloganSlant));
+   assert.equal(photoCover.occasion,'1001 повод остаться');
+   assert(photoCover.headerOnPhoto && Math.abs(photoCover.photoWidth-photoCover.heroWidth)<3 && photoCover.photoOverlap,
+     'Approved photo must occupy WHOLE cover behind live typography, no pale left column: '+JSON.stringify(photoCover));
+   assert.equal(photoCover.contentBg,'rgba(0, 0, 0, 0)',
+     'Copy must be transparent and sit directly over the photograph');
+   assert(/data:image\/svg\+xml/.test(photoCover.underline) && photoCover.underline.includes('Q192'),
+     'Approved curved red SVG stroke is missing');
+   assert.equal(photoCover.paperClip,'none',
+     'Old polygon cutout must be replaced by irregular fibre mask: '+JSON.stringify(photoCover));
+   const organicPaper=await page.evaluate(()=>{
+     const button=document.querySelector('#homeView .du-hero-actions .du-btn-primary');
+     const outline=document.querySelector('#homeView .du-hero-actions .du-btn-outline');
+     const note=document.querySelector('#homeView .du-hero-side-note');
+     const photo=document.querySelector('#homeView .du-hero-art');
+     const mask=el=>getComputedStyle(el).maskImage||getComputedStyle(el).webkitMaskImage;
+     const grain=el=>getComputedStyle(el).backgroundImage;
+     const bottom=getComputedStyle(photo,'::after');
+     return {
+       paperButton:mask(button),paperOutline:mask(outline),
+       paperNote:mask(note),
+       buttonGrain:grain(button),noteGrain:grain(note),
+       bottomImage:bottom.backgroundImage,bottomClip:bottom.clipPath,
+       bottomHeight:parseFloat(bottom.height)
+     };
+   });
+   assert(organicPaper.paperButton.includes('editorial-paper-tear-mask-20261108.svg'),
+     'Approved primary CTA must use organic fibre paper mask: '+JSON.stringify(organicPaper));
+   // The approved secondary CTA can have its own paper treatment.
+   assert(organicPaper.paperOutline==='none' ||
+     organicPaper.paperOutline.includes('editorial-paper-tear-mask-20261108.svg'),
+     'Keep the original secondary CTA styling: '+JSON.stringify(organicPaper));
+   assert(organicPaper.paperNote.includes('editorial-paper-panel-mask-20261108.svg'),
+     'Compact editorial note must have its own fibrous, text-safe paper edge: '+JSON.stringify(organicPaper));
+   assert(organicPaper.buttonGrain.includes('editorial-paper-fibres-20261108.svg') &&
+     organicPaper.noteGrain.includes('editorial-paper-fibres-20261108.svg'),
+     'Approved papery fibre texture must be visible on both buttons and explanation panel');
+   assert(organicPaper.bottomImage.includes('editorial-paper-torn-bottom-20261108.svg') &&
+      organicPaper.bottomClip==='none'&&organicPaper.bottomHeight>=40,
+     'Lower photograph must end in a fibrous torn-paper sheet, not a geometric wave: '+JSON.stringify(organicPaper));
+   assert.equal(photoCover.paperColor,'rgb(255, 240, 221)',
+     'CTA must use real ivory parchment color');
+   const balance=await page.evaluate(()=>{
+     const rect=sel=>document.querySelector(sel).getBoundingClientRect();
+     const paper=rect('#homeView .du-cover-chapters');
+     const hero=rect('#homeView .du-hero');
+     const para=document.querySelector('#homeView .du-hero-description');
+     return {paperTop:paper.top,heroBottom:hero.bottom,
+       photoHeight:hero.height,
+       descriptionColor:getComputedStyle(para).color,
+       descriptionText:para.innerText.trim(),
+       hasDemo:getComputedStyle(document.querySelector('.demo-strip')).display!=='none'};
+   });
+   assert.equal(balance.descriptionColor,'rgb(102, 29, 49)',
+     'Right-hand editorial description must have dark wine-colored ink on cream paper');
+   assert(!balance.hasDemo,'Approved magazine cover has no unrelated demo strip above the photograph');
+   if(viewport.width>1000){
+     assert(balance.photoHeight<=760,
+       'Cover grew too tall and hides the torn-paper lower third: '+JSON.stringify(balance));
+     assert(balance.paperTop<viewport.height-50,
+       'Torn-paper chapter strip must enter the first desktop viewport: '+JSON.stringify(balance));
+   }
+   assert.deepEqual(photoCover.chapters.map(x=>x.href),['#catalog','#airfryer','#evening'],
+     'All three added editorial magazine links must navigate to real site sections');
+ 
+   const featurePhotos=await page.evaluate(async ()=>{
+     const photos=[...document.querySelectorAll('#homeView .du-cover-chapters .du-cover-chapters-photo')];
+     for(const photo of photos){photo.loading='eager';await photo.decode();}
+     return photos.map(photo=>({width:photo.naturalWidth,height:photo.naturalHeight,url:photo.currentSrc}));
+   });
+   assert.equal(featurePhotos.length,2,'magazine footer needs real visible food photographs');
+   assert(featurePhotos.every(p=>p.width>=100&&p.height>=100),'footer food photography not loaded: '+JSON.stringify(featurePhotos));
+   await page.locator('#homeView .du-cover-chapters').screenshot({
+     path:'/tmp/editorial-home-chapters-'+viewport.width+'.png',
+     animations:'disabled'
+   });   // The chapter screenshot scrolled the page. Capture the actual cover from
+   // its true top, never a misleading mid-page crop.
+   await page.evaluate(()=>{
+     document.documentElement.style.scrollBehavior='auto';
+     window.scrollTo(0,0);
+   });
+   await page.waitForFunction(()=>scrollY<=2,null,{timeout:5000});
    await page.screenshot({path:'/tmp/editorial-home-cover-'+viewport.width+'.png',fullPage:false});
+   const masthead=await page.evaluate(()=>{
+     const nav=document.querySelector('.header .main-nav');
+     const evening=nav?.querySelector('a[data-nav="evening"]');
+     const airfryer=nav?.querySelector('a[data-nav="airfryer"]');
+     const svg=document.querySelector('.header .du-brand-mark .du-wine-icon');
+     const brand=document.querySelector('.header .du-brand-words');
+     const bounds=x=>({left:x.getBoundingClientRect().left,right:x.getBoundingClientRect().right,
+       width:x.getBoundingClientRect().width,height:x.getBoundingClientRect().height});
+     return {
+       hasEvening:!!evening,hasAirfryer:!!airfryer,
+       glassPresent:!!svg && bounds(svg).width>19 && bounds(svg).height>20 &&
+         getComputedStyle(svg).visibility==='visible' && getComputedStyle(svg).opacity==='1',
+       name:brand?.innerText.trim().replace(/\\s+/g,' '),
+       navVisible:!!nav && getComputedStyle(nav).display!=='none',
+       navOrder:nav?[...nav.querySelectorAll(':scope > a')]
+         .map(a=>({name:a.dataset.nav||'',order:Number(getComputedStyle(a).order),
+           left:a.getBoundingClientRect().left,right:a.getBoundingClientRect().right,
+           visible:getComputedStyle(a).display!=='none'})):[],
+       eveningBg:evening?getComputedStyle(evening).backgroundColor:'',
+       eveningColor:evening?getComputedStyle(evening).color:'',
+       airfryerBorder:airfryer?getComputedStyle(airfryer).borderTopWidth:'',
+       airfryerColor:airfryer?getComputedStyle(airfryer).color:'',
+       eveningBox:evening?bounds(evening):null,
+       airfryerBox:airfryer?bounds(airfryer):null
+     };
+   });
+   assert(masthead.glassPresent,'original wine-glass mark must remain visible in masthead');
+   assert(masthead.name?.includes('СНАЧАЛА') && masthead.name?.includes('УЖИН'),
+     'original brand wordmark must remain visible: '+JSON.stringify(masthead));
+   assert(masthead.hasEvening && masthead.hasAirfryer,
+     'both approved special navigation buttons must exist');
+   assert.equal(masthead.eveningBg,'rgb(113, 28, 46)',
+     'Our Evening must be highlighted as a deep-wine button');
+   assert.equal(masthead.airfryerColor,'rgb(113, 28, 46)',
+     'Air Fryer must have a wine-colored outlined button');
+   assert.equal(masthead.airfryerBorder,'1px',
+     'Air Fryer must have the restored outline');
+   if(viewport.width>680){
+     const navLinks=masthead.navOrder.filter(a=>a.visible)
+       .sort((a,b)=>a.order-b.order);
+     assert.equal(navLinks[0]?.name,'evening',
+       'Our Evening must be the leftmost navigation item: '+JSON.stringify(masthead));
+     assert.equal(navLinks[navLinks.length-1]?.name,'airfryer',
+       'Air Fryer must be the rightmost navigation item: '+JSON.stringify(masthead));
+     assert(masthead.eveningBox.left<masthead.airfryerBox.left,
+       'header navigation order must be correct in real browser geometry');
+   }
    const presentation=await page.evaluate(()=>{
      const button=document.querySelector('#homeView .du-hero-actions .du-btn-outline');
      const mark=document.querySelector('.header .du-brand-mark');
@@ -28,7 +287,7 @@ const {chromium}=require('playwright');
      return {ctaColor:getComputedStyle(button).color,markBg:getComputedStyle(mark).backgroundColor,
        brandDirection:getComputedStyle(letters).flexDirection};
    });
-   assert.equal(presentation.ctaColor,'rgb(85, 37, 50)','outlined CTA cannot be read on cream background');
+   assert.equal(presentation.ctaColor,'rgb(101, 25, 43)','approved wine-colored type on torn cream paper CTA is missing');
    assert.equal(presentation.markBg,'rgba(0, 0, 0, 0)','brand wine glass must not have the old pink disk');
    assert.equal(presentation.brandDirection,'row','brand must read as one editorial wordmark');
    assert.equal(await page.locator('#tryCooking').count(),1,'cooking demo CTA missing');
@@ -54,7 +313,10 @@ const {chromium}=require('playwright');
        headingSize:parseFloat(getComputedStyle(heading).fontSize),
        cardImageHeight:first.querySelector('.card-image').getBoundingClientRect().height};
    });
-   assert.equal(catalog.bg,'rgb(249, 242, 234)','catalog paper palette missing');
+   assert.equal(catalog.bg,'rgb(247, 236, 223)','catalog paper palette missing');
+   const imageFusion=await page.locator('#recipeGrid .recipe-card .card-image').first().evaluate(
+     el=>getComputedStyle(el).maskImage||getComputedStyle(el).webkitMaskImage);
+   assert(imageFusion.includes('gradient'),'catalog photographs must blend into editorial paper');
    if(viewport.width>1000){
      assert.equal(catalog.columns,3,'desktop magazine grid should have 3 editorial tracks');
      assert.equal(catalog.firstDisplay,'grid','desktop first recipe not featured');
@@ -80,5 +342,68 @@ const {chromium}=require('playwright');
    console.log('PASS editorial storefront',viewport.width);
    await page.close();
   }
+
+   /* Real pointer hit-testing for owner-approved home chapter links and
+      the detached bonus paper button. The PNGs and banner are not changed. */
+   for(const viewport of [{width:1366,height:900},{width:390,height:844}]){
+     const qa=await browser.newPage({viewport});
+     qa.on('pageerror',e=>{throw e});
+     await qa.route('**/open.spotify.com/**',route=>route.abort());
+     for(const target of [
+       {href:'#catalog',selector:'#homeView .du-approved-image-cards > a.du-approved-card[href="#catalog"]'},
+       {href:'#airfryer',selector:'#homeView .du-approved-image-cards > a.du-approved-card[href="#airfryer"]'},
+       {href:'#evening',selector:'#homeView .du-approved-image-cards > a.du-approved-card[href="#evening"]'}
+     ]){
+       await qa.goto('http://127.0.0.1:8765/',{waitUntil:'domcontentloaded'});
+       const link=qa.locator(target.selector);
+       assert.equal(await link.count(),1,'approved home CTA missing '+target.href);
+       await link.scrollIntoViewIfNeeded();
+       if(viewport.width>760){
+         const start=await link.evaluate(el=>el.getBoundingClientRect().top);
+         await link.hover();
+         await qa.waitForTimeout(370);
+         const hover=await link.evaluate(el=>({
+           top:el.getBoundingClientRect().top,
+           transform:getComputedStyle(el).transform,
+           blend:getComputedStyle(el.querySelector('img')).mixBlendMode
+         }));
+         assert(hover.top<start-2 && hover.transform!=='none',
+           target.href+' must physically lift on hover: '+JSON.stringify(hover));
+         assert.equal(hover.blend,'multiply','opaque PNG white rectangle must not reappear');
+       }
+       await link.click();
+       await qa.waitForFunction(expected=>location.hash===expected,target.href);
+       if(target.href==='#evening'){
+         await qa.locator('#eveningLanding').waitFor({state:'visible'});
+       }
+     }
+     await qa.goto('http://127.0.0.1:8765/',{waitUntil:'domcontentloaded'});
+     const bonus=qa.locator('#homeView .du-bonus #bonusRecipe');
+     assert.equal(await bonus.count(),1,'bonus CTA missing');
+     await bonus.scrollIntoViewIfNeeded();
+     await qa.waitForFunction(()=>
+       document.querySelector('#homeView .du-bonus .bonus-inner')?.dataset.bonusLayerReady==='1',
+       null,{timeout:15000});
+     if(viewport.width>760){
+       const start=await bonus.evaluate(el=>el.getBoundingClientRect().top);
+       await bonus.hover();
+       await qa.waitForTimeout(370);
+       const hover=await bonus.evaluate(el=>({
+         top:el.getBoundingClientRect().top,
+         image:getComputedStyle(el).backgroundImage,
+         transform:getComputedStyle(el).transform
+       }));
+       assert(hover.top<start-2 && hover.transform!=='none',
+         'paper bonus button must physically move: '+JSON.stringify(hover));
+       assert(hover.image.startsWith('url("data:image/png'),
+         'bonus uses transparent pixels from approved artwork, not second button');
+     }
+     await bonus.click();
+     await qa.waitForFunction(()=>location.hash==='#recipe=midnight-mushroom-toasts');
+     await qa.locator('#recipeView').waitFor({state:'visible'});
+     await qa.close();
+   }
+   console.log('PASS home three chapter CTAs + layered bonus hover/click desktop/mobile');
+
  } finally { await browser.close(); }
 })().catch(e=>{console.error(e);process.exitCode=1});

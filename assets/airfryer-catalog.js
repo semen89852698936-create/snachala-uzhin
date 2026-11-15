@@ -40,3 +40,9 @@
     };
   });
 })();
+/* AIRFRYER_EDITORIAL_UX_SCRIPT_LOADER_20261110 */
+if(typeof document!=='undefined'){
+  const airfryerUxScript=document.createElement('script');
+  airfryerUxScript.src='/assets/airfryer-experience-20261110.js';
+  document.head.appendChild(airfryerUxScript);
+}

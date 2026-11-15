@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f3e8d2">
+  <meta name="robots" content="noindex,nofollow">
+  <title>Музыкальная газета · СНАЧАЛА УЖИН</title>
+  <style>
+    *, *::before, *::after {box-sizing:border-box}
+    html {min-height:100%;background:#f5eade}
+    body {
+      margin:0;
+      min-height:100vh;
+      padding:24px 15px 35px;
+      background-image:repeating-linear-gradient(105deg,rgba(112,77,59,.024) 0 1px,transparent 1px 8px),linear-gradient(150deg,#fef8ee,#efe0d2);
+      color:#5a2d3b;
+      font-family:Manrope,Arial,sans-serif;
+    }
+    .du-np-standalone-head {
+      width:min(720px,100%);
+      margin:0 auto 18px;
+      display:flex;align-items:center;justify-content:space-between;gap:12px;
+    }
+    .du-np-standalone-head strong{
+      font:600 clamp(25px,7vw,34px)/1.1 Georgia,serif;
+      letter-spacing:-.03em;
+      color:#612c3e;
+    }
+    .du-np-standalone-head a {
+      color:#8d3d50;
+      font:800 12px/1.35 Manrope,Arial,sans-serif;
+      text-decoration:underline;
+      text-underline-offset:4px;
+    }
+    .du-np-standalone-intro{
+      width:min(720px,100%);
+      margin:0 auto 14px;
+      font:500 13px/1.5 Manrope,Arial,sans-serif;
+      color:#74505b;
+    }
+    body.du-np-standalone .du-np-dock {
+      position:relative!important;
+      left:auto!important;bottom:auto!important;
+      width:min(720px,100%)!important;
+      margin:0 auto!important;
+      z-index:2;
+    }
+    body.du-np-standalone #duNpLauncher{display:none!important}
+    body.du-np-standalone #duNpPanel {
+      display:block!important;
+      max-height:none!important;
+      overflow:visible!important;
+      margin:0!important;
+    }
+    body.du-np-standalone #duNpPanel[hidden]{display:none!important}
+    body.du-np-standalone .du-np-dock-paper{padding:17px 24px 15px}
+    body.du-np-standalone .du-np-close{display:none!important}
+    body.du-np-standalone .du-np-popout{display:none!important}
+    body.du-np-standalone .du-np-top strong{font-size:30px}
+    @media(max-width:430px){
+      body{padding:15px 10px 30px}
+      body.du-np-standalone .du-np-dock-paper{padding:11px 14px 10px}
+    }
+  </style>
+</head>
+<body class="du-np-standalone">
+  <header class="du-np-standalone-head">
+    <strong>СНАЧАЛА УЖИН ♡</strong>
+    <a href="/" target="_blank" rel="noopener">Открыть сайт ↗</a>
+  </header>
+  <p class="du-np-standalone-intro">
+    Отдельная музыкальная страница: нажми «Играть» один раз. Можно возвращаться
+    к рецептам в другой вкладке, пока этот плеер открыт. На некоторых телефонах
+    браузер может ограничивать фоновый звук.
+  </p>
+  <script src="/assets/native-music-player-20261112.js" defer></script>
+</body>
+</html>
