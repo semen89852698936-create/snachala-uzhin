@@ -2033,7 +2033,7 @@ function stepVisualHtml(recipe,index,mode){
  if(cards.length!==3 || typeof RECIPES==='undefined') return;
  const groups=[
   {categories:['fish','meat','poultry'],label:'ГЛАВНОЕ БЛЮДО'},
-  {categories:['pasta','vegetables'],label:'КО ВТОРОМУ БЛЮДУ'},
+  {categories:['pasta','vegetables'],label:'ЕЩЁ ОДНО БЛЮДО'},
   {categories:['dessert'],label:'ДЕСЕРТ'}
  ];
  const key='nash-vecher-previous-three-recipes-v1';
@@ -2041,7 +2041,7 @@ function stepVisualHtml(recipe,index,mode){
  try{const saved=JSON.parse(localStorage.getItem(key)||'[]');if(Array.isArray(saved))previous=saved;}catch(e){}
  const chosen=[];
  groups.forEach((group,index)=>{
-  const pool=RECIPES.filter(recipe=>group.categories.includes(recipe.category)&&typeof recipe.photo==='string'&&recipe.photo.startsWith('/assets/')&&/\\.(webp|jpe?g|png)(?:\\?|$)/i.test(recipe.photo)&&recipe.id&&recipe.title);
+  const pool=RECIPES.filter(recipe=>group.categories.includes(recipe.category)&&typeof recipe.photo==='string'&&recipe.photo.startsWith('/assets/')&&['.webp','.jpg','.jpeg','.png'].some(ext=>recipe.photo.toLowerCase().split('?')[0].endsWith(ext))&&recipe.id&&recipe.title);
   if(!pool.length)return;
   const fresh=pool.filter(recipe=>recipe.id!==previous[index]&&!chosen.some(item=>item.recipe.id===recipe.id));
   const candidates=fresh.length?fresh:pool;
