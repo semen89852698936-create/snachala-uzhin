@@ -124,6 +124,25 @@
         for(let k=0;k<3;k++)data[p+k]=Math.max(0,Math.min(255,Math.round(originalData[p+k]*(1-feather)+target[k]*feather)));
       }
     }
+    // The approved artwork has two small dots of its original baked-in
+    // lettering above the upper-right headline. Repair only that ink residue
+    // with the same sampled paper; the new headline is painted afterwards.
+    // Feathering avoids a rectangular patch and keeps the torn edge intact.
+    const fleckCX=413*sx, fleckCY=406*sy;
+    const fleckRX=37*sx, fleckRY=33*sy;
+    for(let y=Math.max(0,Math.floor(fleckCY-fleckRY));y<Math.min(H,Math.ceil(fleckCY+fleckRY));y++) {
+      for(let x=Math.max(0,Math.floor(fleckCX-fleckRX));x<Math.min(W,Math.ceil(fleckCX+fleckRX));x++) {
+        const distance=Math.hypot((x-fleckCX)/fleckRX,(y-fleckCY)/fleckRY);
+        if(distance>=1)continue;
+        const opacity=Math.min(1,Math.max(0,(1-distance)/.22));
+        const grain=((x*37+y*71+(x*y)%13)%23-11)*.34;
+        const v=(x-x0)/(x1-x0),t=(y-y0)/(y1-y0);
+        const light=7*(.5-v)-7*t;
+        const target=[base[0]+light+grain,base[1]+light*.82+grain,base[2]+light*.6+grain];
+        const p=at(x,y);
+        for(let k=0;k<3;k++) data[p+k]=Math.max(0,Math.min(255,Math.round(data[p+k]*(1-opacity)+target[k]*opacity)));
+      }
+    }
     ctx.putImageData(image,0,0);
 
     // Serif letterforms, original wine color, exact editorial hierarchy:
