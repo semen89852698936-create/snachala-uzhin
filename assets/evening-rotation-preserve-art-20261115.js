@@ -375,3 +375,25 @@
     if (below) observer.observe(below);
   }
 })();
+
+
+/* EVENING_MUSIC_TITLE_COPY_20261116
+   Editorial copy-only correction to the existing music section heading.
+   Preserve the heading element, the italic styling, and the rest of the page. */
+(function () {
+  'use strict';
+  const heading = document.getElementById('du-music-title') ||
+    document.querySelector('#music .du-music-heading h2');
+  if (!heading || !heading.textContent.includes('У каждого вечера') ||
+      !heading.textContent.includes('свой саундтрек')) return;
+  const walker = document.createTreeWalker(heading, NodeFilter.SHOW_TEXT);
+  let node;
+  while ((node = walker.nextNode())) {
+    if (node.nodeValue.includes('У каждого вечера')) {
+      node.nodeValue = node.nodeValue.replace('У каждого вечера', 'У всего есть');
+      break;
+    }
+  }
+  // The new title is one uninterrupted phrase; let CSS wrap it naturally.
+  heading.querySelectorAll(':scope > br').forEach(br => br.remove());
+})();
