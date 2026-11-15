@@ -82,3 +82,43 @@ body.du-evening-mode #eveningLanding .du-match11-recipe-grid > a.du-rotate-ready
     font-size:clamp(18px,5.7vw,28px)!important;
   }
 }
+
+/* Finish: no rectangular image backplates or repeated static text visible under
+   changing recipes. Use one torn-paper silhouette, not a box. */
+body.du-evening-mode #eveningLanding .du-match11-recipe-grid > a.du-evening-paper-card.du-rotate-ready::before {
+  content:""!important;display:block!important;
+  position:absolute!important;inset:0!important;z-index:0!important;
+  background:
+    radial-gradient(ellipse at 12% 5%,rgba(255,250,236,.7),transparent 63%),
+    repeating-linear-gradient(97deg,transparent 0 7px,rgba(123,76,38,.018) 8px 9px,transparent 10px 15px),
+    #efdec8!important;
+  clip-path:polygon(0 2%,12% 1%,25% 2%,39% 0,54% 1%,70% 0,86% 1%,100% 0,99% 18%,100% 34%,99% 54%,100% 75%,98% 98%,82% 100%,64% 99%,48% 100%,31% 99%,15% 100%,0 98%,1% 80%,0 58%,1% 35%)!important;
+  border:0!important;border-radius:0!important;box-shadow:none!important;
+  pointer-events:none!important;
+}
+body.du-evening-mode #eveningLanding .du-match11-recipe-grid > a.du-evening-paper-card.du-rotate-ready > img:not(.du-rot-photo) {
+  opacity:0!important;
+}
+body.du-evening-mode #eveningLanding .du-match11-recipe-grid > a.du-evening-paper-card.du-rotate-ready::after {
+  content:none!important;display:none!important;
+}
+/* Editorial tightening only on the Our Evening landing sections.
+   Do not move elements inside cards, change the ordering or affect the catalog. */
+body.du-evening-mode #eveningLanding > #evening,
+body.du-evening-mode #eveningLanding > .du-evening-wide-strip,
+body.du-evening-mode #eveningLanding > .du-match11-recipe-suggestions,
+body.du-evening-mode #eveningLanding > #eveningContinuation {
+  margin-top:-12px!important;
+}
+body.du-evening-mode #eveningContinuation > section#music {
+  margin-top:-12px!important;
+}
+@media(max-width:760px) {
+  body.du-evening-mode #eveningLanding > #evening,
+  body.du-evening-mode #eveningLanding > .du-evening-wide-strip,
+  body.du-evening-mode #eveningLanding > .du-match11-recipe-suggestions,
+  body.du-evening-mode #eveningLanding > #eveningContinuation,
+  body.du-evening-mode #eveningContinuation > section#music {
+    margin-top:-8px!important;
+  }
+}
