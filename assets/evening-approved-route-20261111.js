@@ -13,17 +13,17 @@
 
     const catalogBack = document.querySelector('a.du-catalog-back');
     if (catalogBack) {
-      catalogBack.setAttribute('href', '#evening');
-      catalogBack.setAttribute('aria-label', 'Вернуться из каталога на главную страницу Наш вечер');
+      catalogBack.setAttribute('href', '#journal');
+      catalogBack.setAttribute('aria-label', 'Вернуться из каталога на страницу СНАЧАЛА УЖИН');
     }
 
     const eveningBack = document.querySelector('header a.du-evening-back:not(.du-catalog-back)');
     if (eveningBack) {
       eveningBack.setAttribute('href', '#evening');
-      eveningBack.setAttribute('aria-label', 'Вернуться со страницы СНАЧАЛА УЖИН на главную Наш вечер');
+      eveningBack.setAttribute('aria-label', 'Вернуться со страницы СНАЧАЛА УЖИН в Наш Вечер');
       eveningBack.classList.add('du-journal-home-link');
       const label = eveningBack.querySelector('span:last-child');
-      if (label) label.textContent = 'На главную';
+      if (label) label.textContent = 'Наш вечер';
     }
 
     const coverBack = document.querySelector('a.du-match11-sr-back');
@@ -36,20 +36,20 @@
     const journalNav = document.querySelector('.main-nav a[data-nav="evening"]');
     if (journalNav) {
       journalNav.setAttribute('href', '#journal');
-      journalNav.setAttribute('aria-label', 'К журналу СНАЧАЛА УЖИН');
-      journalNav.textContent = 'К журналу';
+      journalNav.setAttribute('aria-label', 'На главную страницу СНАЧАЛА УЖИН');
+      journalNav.textContent = 'На главную';
     }
 
     // The mobile header and quick navigation are the same destination.
     const mobileJournalNav = document.querySelector('a.du-evening-nav-mobile');
     if (mobileJournalNav) {
       mobileJournalNav.setAttribute('href', '#journal');
-      mobileJournalNav.textContent = 'К журналу';
+      mobileJournalNav.textContent = 'На главную';
     }
     const mobileQuickNav = document.querySelector('[data-quick-evening]');
     if (mobileQuickNav) {
       mobileQuickNav.setAttribute('href', '#journal');
-      mobileQuickNav.textContent = 'К журналу';
+      mobileQuickNav.textContent = 'На главную';
     }
 
     // Remove only the editorial kicker and the redundant "Создать наш вечер →" CTA
@@ -67,8 +67,22 @@
   function updateEntryRoute() {
     const hash = window.location.hash;
     document.body.classList.toggle('du-journal-view', hash === '#journal');
+
+    // The site is now called «Наш Вечер». The former editorial page keeps
+    // its own title «СНАЧАЛА УЖИН», without changing its approved artwork.
+    const isJournal = hash === '#journal';
+    document.title = isJournal
+      ? 'СНАЧАЛА УЖИН · 1001 повод остаться'
+      : 'Наш Вечер · Готовим вместе, ужинаем красиво';
+    const brandWords = document.querySelector('.du-brand-words');
+    if (brandWords) {
+      const first = brandWords.firstChild;
+      if (first && first.nodeType === 3) first.nodeValue = isJournal ? 'СНАЧАЛА ' : 'НАШ ';
+      const highlighted = brandWords.querySelector('em');
+      if (highlighted) highlighted.textContent = isJournal ? 'УЖИН' : 'ВЕЧЕР';
+    }
     // The old router considers this link to be the active "Наш вечер" tab.
-    // Do not announce the renamed "К журналу" button as the current page.
+    // Do not announce the renamed "На главную" button as the current page.
     const journalNav = document.querySelector('.main-nav a[data-nav="evening"]');
     if (journalNav) {
       if (hash === '#journal') journalNav.setAttribute('aria-current', 'page');
