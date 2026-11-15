@@ -921,3 +921,19 @@ body.du-evening-mode #eveningLanding .du-match11-actions > a.du-match11-button:a
     transform:none!important;
   }
 }
+
+
+/* EVENING_HERO_COPY_VERTICAL_REBALANCE_20261115
+   Desktop only: lower the three-piece editorial subtitle as one visual
+   group, keeping its spacing, angle, red stroke, heading, nav and photo. */
+@media (min-width: 761px) {
+  body.du-evening-mode #eveningLanding .du-match11-slogan {
+    top: 64% !important; /* was 58% */
+  }
+  body.du-evening-mode #eveningLanding .du-match11-red-line {
+    top: 69.8% !important; /* was 63.8% */
+  }
+  body.du-evening-mode #eveningLanding .du-match11-subtitle {
+    top: 72.2% !important; /* was 66.2% */
+  }
+}
