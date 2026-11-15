@@ -1715,3 +1715,13 @@ body.du-evening-mode #eveningContinuation > .du-story-dinner .du-story-dinner-ph
     top: -40px !important;
   }
 }
+
+/* EVENING_ONLY_YOU_TWO_PANEL_ANOTHER_60_UP_20261116
+   Move only the dark "ТОЛЬКО ВЫ ДВОЕ" / "А дальше... побудьте вместе"
+   scene 60px further up, retaining existing margins, fonts and imagery.
+   The music section and following beige strip are unaffected. */
+@media (min-width: 1021px) {
+  body.du-evening-mode #eveningContinuation > .du-story-after {
+    transform: translateY(-60px) !important;
+  }
+}
