@@ -959,3 +959,17 @@ body.du-evening-mode #eveningLanding .du-match11-slogan,
 body.du-evening-mode #eveningLanding .du-match11-subtitle {
   left: 5.82% !important;
 }
+
+/* EVENING_TWO_EDITORIAL_LINES_EQUAL_WIDTH_20261116
+   Desktop: identical left and right edges; no change to vertical position,
+   font, red line, approved logo, or the rest of the composition. */
+@media (min-width: 761px) {
+  body.du-evening-mode #eveningLanding .du-match11-slogan,
+  body.du-evening-mode #eveningLanding .du-match11-subtitle {
+    left: 5.82% !important;
+    width: 32% !important;
+    max-width: none !important;
+    text-align-last: justify !important;
+    white-space: nowrap !important;
+  }
+}
