@@ -84,8 +84,8 @@
     // Reconstruct the paper under the *old baked-in words* using the edge
     // colors of the same original artwork, with feathered borders and fine
     // sampled grain. No solid-color rectangular UI element is introduced.
-    const x0=Math.round(52*sx), x1=Math.round(441*sx);
-    const y0=Math.round(417*sy), y1=Math.round(638*sy);
+    const x0=Math.round(24*sx), x1=Math.round(453*sx);
+    const y0=Math.round(406*sy), y1=Math.round(644*sy);
     const image=ctx.getImageData(0,0,W,H);
     const data=image.data, originalData=new Uint8ClampedArray(data);
     const at=(x,y)=>(y*W+x)*4;
@@ -96,8 +96,8 @@
       return [originalData[j],originalData[j+1],originalData[j+2]];
     }
     const reference=[];
-    for(let x=x0;x<x1;x+=Math.max(1,Math.round(7*sx))) {
-      const p=paperSample(x,Math.round(407*sy));
+    for(let x=Math.round(45*sx);x<Math.round(440*sx);x+=Math.max(1,Math.round(7*sx))) {
+      const p=paperSample(x,Math.round(404*sy));
       if(p[0]>145&&p[1]>115&&p[2]>80)reference.push(p);
     }
     if(!reference.length)reference.push([239,219,194]);
@@ -105,7 +105,7 @@
     for (let y=y0;y<y1;y++) {
       for(let x=x0;x<x1;x++) {
         const edge=Math.min(x-x0,x1-1-x,y-y0,y1-1-y);
-        const feather=Math.min(1,Math.max(0,edge/(12*Math.max(sx,sy))));
+        const feather=Math.min(1,Math.max(0,edge/(9*Math.max(sx,sy))));
         // Nearby untouched artwork defines the paper tone and shading.
         const v=(x-x0)/(x1-x0),t=(y-y0)/(y1-y0);
         const luminance=7*(.5-v)-7*t;
