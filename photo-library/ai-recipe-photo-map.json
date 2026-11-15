@@ -104,9 +104,9 @@
     {
       "n": 15,
       "recipe_id": "chicken-lemon",
-      "path": "/assets/recipes-ai/0015-chicken-lemon.webp",
-      "sha": "a2d408f471edaa06e31dac663d3a0475fe6fea7c",
-      "bytes": 137128
+      "path": "/assets/recipes-ai/0015-chicken-lemon-approved-no-wedges.webp",
+      "sha": "97b255296512b1c8522ed3e3b76638e729851f60",
+      "bytes": 447684
     },
     {
       "n": 16,
@@ -832,9 +832,9 @@
     {
       "n": 119,
       "recipe_id": "collection-poultry-01-03",
-      "path": "/assets/recipes-ai/0119-collection-poultry-01-03.webp",
-      "sha": "b4f4523887afd0e384b3653ecea89217adb5f047",
-      "bytes": 98034
+      "path": "/assets/recipes-ai/0119-collection-poultry-01-03-approved-no-citrus-wedges.webp",
+      "sha": "ecc8a406a7ce10fbfc9d44f9e01549ce75833096",
+      "bytes": 268192
     },
     {
       "n": 120,
@@ -853,9 +853,9 @@
     {
       "n": 122,
       "recipe_id": "collection-poultry-01-06",
-      "path": "/assets/recipes-ai/0122-collection-poultry-01-06.webp",
-      "sha": "6f687b0b65b9a42dee64cb85843c81094ee9b41f",
-      "bytes": 101682
+      "path": "/assets/recipes-ai/0122-collection-poultry-01-06-approved-no-ginger.webp",
+      "sha": "9c7d6cedd36fa7e7c1edd7d1c8d3dd686be749f6",
+      "bytes": 355238
     },
     {
       "n": 123,
@@ -874,9 +874,9 @@
     {
       "n": 125,
       "recipe_id": "collection-poultry-01-09",
-      "path": "/assets/recipes-ai/0125-collection-poultry-01-09.webp",
-      "sha": "9a76339118911f95ccc60ab91ac50cb132f5863a",
-      "bytes": 142782
+      "path": "/assets/recipes-ai/0125-collection-poultry-01-09-approved-no-whole-garlic.webp",
+      "sha": "0035fcce7d2c55745291c3c11fda3ec71584e212",
+      "bytes": 383984
     },
     {
       "n": 126,
@@ -888,23 +888,23 @@
     {
       "n": 127,
       "recipe_id": "collection-poultry-02-01",
-      "path": "/assets/recipes-ai/0127-collection-poultry-02-01.webp",
-      "sha": "56f0b12581d55716d6d63685e69bec325fa8b34b",
-      "bytes": 122934
+      "path": "/assets/recipes-ai/0127-collection-poultry-02-01-approved-no-lemon-wedges.webp",
+      "sha": "ffcfb15ec99ce0d90d670f9c83beeb0e6783dc34",
+      "bytes": 432016
     },
     {
       "n": 128,
       "recipe_id": "collection-poultry-02-02",
-      "path": "/assets/recipes-ai/0128-collection-poultry-02-02.webp",
-      "sha": "c3c989efb38192156c9718dbc33d8755d2615f1d",
-      "bytes": 128388
+      "path": "/assets/recipes-ai/0128-collection-poultry-02-02-approved-honey-mustard.webp",
+      "sha": "59225ad9560f91ca6811fb012f12844e8fbcb171",
+      "bytes": 284234
     },
     {
       "n": 129,
       "recipe_id": "collection-poultry-02-03",
-      "path": "/assets/recipes-ai/0129-collection-poultry-02-03.webp",
-      "sha": "e96719a4f5cb130d49625ba2272532d6bd94c80d",
-      "bytes": 146124
+      "path": "/assets/recipes-ai/0129-collection-poultry-02-03-approved-no-citrus-no-coconut.webp",
+      "sha": "763d8b1d1b93294988739cad57297493ab9494b0",
+      "bytes": 326268
     },
     {
       "n": 130,
@@ -923,9 +923,9 @@
     {
       "n": 132,
       "recipe_id": "collection-poultry-02-06",
-      "path": "/assets/recipes-ai/0132-collection-poultry-02-06.webp",
-      "sha": "b83f5b2a6c304cd9a33fe2b65bb64e18c6fd12c6",
-      "bytes": 106544
+      "path": "/assets/recipes-ai/0132-collection-poultry-02-06-approved-no-ginger.webp",
+      "sha": "b72e36905c233dd6f63566af2b65104788159da1",
+      "bytes": 311830
     },
     {
       "n": 133,
@@ -944,464 +944,464 @@
     {
       "n": 135,
       "recipe_id": "collection-poultry-02-09",
-      "path": "/assets/recipes-ai/0135-collection-poultry-02-09.webp",
-      "sha": "9a8a41e034881f3b88bfe24a74e52396822d6ae7",
-      "bytes": 112498
+      "path": "/assets/recipes-ai/0135-collection-poultry-02-09-approved-no-whole-garlic.webp",
+      "sha": "26876442942153206f003d10ea64d625aa9e50af",
+      "bytes": 373318
     },
     {
       "n": 136,
       "recipe_id": "collection-poultry-02-10",
-      "path": "/assets/recipes-ai/0136-collection-poultry-02-10.webp",
-      "sha": "a726cd144924068ff0b994dcf81abf048a5a1a6c",
-      "bytes": 109612
+      "path": "/assets/recipes-ai/0136-collection-poultry-02-10-approved-no-orange-wedges.webp",
+      "sha": "d62d0704617952f7125c9d0ff545f34c6832178c",
+      "bytes": 421944
     },
     {
       "n": 137,
       "recipe_id": "collection-poultry-03-01",
-      "path": "/assets/recipes-ai/0137-collection-poultry-03-01.webp",
-      "sha": "28e2e91ea58b95f716b7796275f25099e7d0dec7",
-      "bytes": 126328
+      "path": "/assets/recipes-ai/0137-collection-poultry-03-01-approved-no-lemon-wedges.webp",
+      "sha": "c2dcd75899bc9f59b975619a332dcd5b359605ac",
+      "bytes": 426928
     },
     {
       "n": 138,
       "recipe_id": "collection-poultry-03-02",
-      "path": "/assets/recipes-ai/0138-collection-poultry-03-02.webp",
-      "sha": "ef08b3570818eb814433a9de51cdcda3fe1c7705",
-      "bytes": 90466
+      "path": "/assets/recipes-ai/0138-collection-poultry-03-02-approved-honey-mustard.webp",
+      "sha": "44c3d369a85506cb7b5464fdeda955976bb2f0a5",
+      "bytes": 314846
     },
     {
       "n": 139,
       "recipe_id": "collection-poultry-03-03",
-      "path": "/assets/recipes-ai/0139-collection-poultry-03-03.webp",
-      "sha": "258aa55b5ccfae9d89fa9e026fe1c87d240c30ed",
-      "bytes": 104128
+      "path": "/assets/recipes-ai/0139-collection-poultry-03-03-approved-no-lime-coconut.webp",
+      "sha": "dc0507d896aa0e6db797a87c8ee6ba355097b14c",
+      "bytes": 345092
     },
     {
       "n": 140,
       "recipe_id": "collection-poultry-03-04",
-      "path": "/assets/recipes-ai/0140-collection-poultry-03-04.webp",
-      "sha": "515bd121e2319cdad609d88d6484c2087d63d23f",
-      "bytes": 118686
+      "path": "/assets/recipes-ai/0140-collection-poultry-03-04-approved-paprika-sweet-pepper.webp",
+      "sha": "fe562dfd6cba921d29cb61a63e78a5aa73c32d85",
+      "bytes": 383948
     },
     {
       "n": 141,
       "recipe_id": "collection-poultry-03-05",
-      "path": "/assets/recipes-ai/0141-collection-poultry-03-05.webp",
-      "sha": "5798389ff2c32564c1739a529357444f53bca525",
-      "bytes": 97172
+      "path": "/assets/recipes-ai/0141-collection-poultry-03-05-approved-tomatoes-oregano.webp",
+      "sha": "f3e59587b1114e3cfc98a8a18f26759dde502434",
+      "bytes": 363842
     },
     {
       "n": 142,
       "recipe_id": "collection-poultry-03-06",
-      "path": "/assets/recipes-ai/0142-collection-poultry-03-06.webp",
-      "sha": "244b1447da83e833785605d03031da549cc612fa",
-      "bytes": 96078
+      "path": "/assets/recipes-ai/0142-collection-poultry-03-06-approved-no-whole-ginger.webp",
+      "sha": "d4042878eda6d6ac902e1aedbdb36dc7fb3940a1",
+      "bytes": 346032
     },
     {
       "n": 143,
       "recipe_id": "collection-poultry-03-07",
-      "path": "/assets/recipes-ai/0143-collection-poultry-03-07.webp",
-      "sha": "59562215a362afe59aff6e096848f409ee8c83fe",
-      "bytes": 109972
+      "path": "/assets/recipes-ai/0143-collection-poultry-03-07-approved-mushrooms-cream.webp",
+      "sha": "d5655a6f307654a47a108850bbd1555700d7b10c",
+      "bytes": 365910
     },
     {
       "n": 144,
       "recipe_id": "collection-poultry-03-08",
-      "path": "/assets/recipes-ai/0144-collection-poultry-03-08.webp",
-      "sha": "5e5c892aa19d04910288ed56b5fa26875fa0e0d9",
-      "bytes": 101228
+      "path": "/assets/recipes-ai/0144-collection-poultry-03-08-approved-pesto-sundried-tomatoes.webp",
+      "sha": "a2bc32a355b580960cd3dd05e0e7d6d3266976c1",
+      "bytes": 410704
     },
     {
       "n": 145,
       "recipe_id": "collection-poultry-03-09",
-      "path": "/assets/recipes-ai/0145-collection-poultry-03-09.webp",
-      "sha": "eac659d2e4358a66ebfec6170f2cd379c4c09274",
-      "bytes": 108974
+      "path": "/assets/recipes-ai/0145-collection-poultry-03-09-approved-no-whole-garlic.webp",
+      "sha": "a19a98a5ebf908258a500227eec1f7d327241199",
+      "bytes": 453350
     },
     {
       "n": 146,
       "recipe_id": "collection-poultry-03-10",
-      "path": "/assets/recipes-ai/0146-collection-poultry-03-10.webp",
-      "sha": "294a4e915018fe401ab86a74ec47445441898880",
-      "bytes": 143368
+      "path": "/assets/recipes-ai/0146-collection-poultry-03-10-approved-orange-thyme.webp",
+      "sha": "6b646043e4de3de254a56d0ed39b7ef8f6c5313a",
+      "bytes": 1886154
     },
     {
       "n": 147,
       "recipe_id": "collection-poultry-04-01",
-      "path": "/assets/recipes-ai/0147-collection-poultry-04-01-no-eggs-regen.webp",
-      "sha": "06dc4be7fa74df096a57e048b78e9b3e63e95d13",
-      "bytes": 108618
+      "path": "/assets/recipes-ai/0147-collection-poultry-04-01-approved.webp",
+      "sha": "b4a3fb3721829ac306c688d7dc5f8dda25885626",
+      "bytes": 327434
     },
     {
       "n": 148,
       "recipe_id": "collection-poultry-04-02",
-      "path": "/assets/recipes-ai/0148-collection-poultry-04-02-no-eggs-regen.webp",
-      "sha": "605c76d0c1dd3f1b7098551c31d5c539b8f9320b",
-      "bytes": 106088
+      "path": "/assets/recipes-ai/0148-collection-poultry-04-02-approved.webp",
+      "sha": "1b4ea59e70896865fa38c4f377cb39aac68e9aa4",
+      "bytes": 357024
     },
     {
       "n": 149,
       "recipe_id": "collection-poultry-04-03",
-      "path": "/assets/recipes-ai/0149-collection-poultry-04-03-no-eggs-regen.webp",
-      "sha": "f6756da4b68a112bfc8b17657f291e4b8d2ed410",
-      "bytes": 112034
+      "path": "/assets/recipes-ai/0149-collection-poultry-04-03-approved.webp",
+      "sha": "650a82b756e41a3a67767dc2a5f86244d2902562",
+      "bytes": 351880
     },
     {
       "n": 150,
       "recipe_id": "collection-poultry-04-04",
-      "path": "/assets/recipes-ai/0150-collection-poultry-04-04-no-eggs-regen.webp",
-      "sha": "f32bea1becaf7d5c96442e7edc1be7e848c3ad03",
-      "bytes": 118086
+      "path": "/assets/recipes-ai/0150-collection-poultry-04-04-approved.webp",
+      "sha": "65da0884487c7fdd58035d6140cca08f3c8e68a4",
+      "bytes": 347072
     },
     {
       "n": 151,
       "recipe_id": "collection-poultry-04-05",
-      "path": "/assets/recipes-ai/0151-collection-poultry-04-05-no-eggs-regen.webp",
-      "sha": "eef5b4af3148ddc80cb76f1d77f369decaa3ccad",
-      "bytes": 117976
+      "path": "/assets/recipes-ai/0151-collection-poultry-04-05-approved.webp",
+      "sha": "71bd314579482c027683a30348f66836fcb457bc",
+      "bytes": 378768
     },
     {
       "n": 152,
       "recipe_id": "collection-poultry-04-06",
-      "path": "/assets/recipes-ai/0152-collection-poultry-04-06-no-eggs-regen.webp",
-      "sha": "72621c1dafc803ac5c6e7b989dfa22b00cbbb418",
-      "bytes": 136128
+      "path": "/assets/recipes-ai/0152-collection-poultry-04-06-approved.webp",
+      "sha": "e4689b823d0de285331ada9a3262c61fbe7726dd",
+      "bytes": 363356
     },
     {
       "n": 153,
       "recipe_id": "collection-poultry-04-07",
-      "path": "/assets/recipes-ai/0153-collection-poultry-04-07-no-eggs-regen.webp",
-      "sha": "bffe4c9d7302bfbc0097e306ff55a8d7680b099b",
-      "bytes": 129482
+      "path": "/assets/recipes-ai/0153-collection-poultry-04-07-approved.webp",
+      "sha": "ab8bbf6eebec70fa41c5f00d274e45930a054fd3",
+      "bytes": 389562
     },
     {
       "n": 154,
       "recipe_id": "collection-poultry-04-08",
-      "path": "/assets/recipes-ai/0154-collection-poultry-04-08-no-eggs-regen.webp",
-      "sha": "53a8bbdf1eadb07ffcd0e79d3e5189808723e30f",
-      "bytes": 142512
+      "path": "/assets/recipes-ai/0154-collection-poultry-04-08-approved.webp",
+      "sha": "bbae82257887c669ba3108ae7c0195c8a882dace",
+      "bytes": 372544
     },
     {
       "n": 155,
       "recipe_id": "collection-poultry-04-09",
-      "path": "/assets/recipes-ai/0155-collection-poultry-04-09-no-eggs-regen.webp",
-      "sha": "260eaeb39b03f13d1b31802205024feb1fc14438",
-      "bytes": 142114
+      "path": "/assets/recipes-ai/0155-collection-poultry-04-09-approved.webp",
+      "sha": "3f5c4f1774b119bde01236199a5c1bb3619e7744",
+      "bytes": 424500
     },
     {
       "n": 156,
       "recipe_id": "collection-poultry-04-10",
-      "path": "/assets/recipes-ai/0156-collection-poultry-04-10-no-eggs-regen.webp",
-      "sha": "8d756ad57e5a4eac008521e41230bf5fdcaa83b1",
-      "bytes": 139148
+      "path": "/assets/recipes-ai/0156-collection-poultry-04-10-approved.webp",
+      "sha": "dcebd3c4317dd333c2ee3f0c415762e97cb8bb35",
+      "bytes": 411178
     },
     {
       "n": 157,
       "recipe_id": "collection-poultry-05-01",
-      "path": "/assets/recipes-ai/0157-collection-poultry-05-01.webp",
-      "sha": "99cbc77b402adc34ae56564160b7e40d62846da2",
-      "bytes": 105510
+      "path": "/assets/recipes-ai/0157-collection-poultry-05-01-approved.webp",
+      "sha": "04456334a6208b927b9cd361f49695e670a4766e",
+      "bytes": 313150
     },
     {
       "n": 158,
       "recipe_id": "collection-poultry-05-02",
-      "path": "/assets/recipes-ai/0158-collection-poultry-05-02.webp",
-      "sha": "a68da05ad25a0415b692df17a477fecb367bf671",
-      "bytes": 94632
+      "path": "/assets/recipes-ai/0158-collection-poultry-05-02-approved.webp",
+      "sha": "73b326e133394dc01a1a11e3f4880c9ca9d46232",
+      "bytes": 358250
     },
     {
       "n": 159,
       "recipe_id": "collection-poultry-05-03",
-      "path": "/assets/recipes-ai/0159-collection-poultry-05-03.webp",
-      "sha": "eb09f65f4fc99e30880a68849ca0c616315d3b59",
-      "bytes": 78620
+      "path": "/assets/recipes-ai/0159-collection-poultry-05-03-approved.webp",
+      "sha": "da9e29daff8d30111d6858386e0ff43ad60eb633",
+      "bytes": 415182
     },
     {
       "n": 160,
       "recipe_id": "collection-poultry-05-04",
-      "path": "/assets/recipes-ai/0160-collection-poultry-05-04.webp",
-      "sha": "3b7ec41262475e37dc99d984df73ffc88f895c26",
-      "bytes": 91512
+      "path": "/assets/recipes-ai/0160-collection-poultry-05-04-approved.webp",
+      "sha": "8aeb27640edc7b4a64d12bcd2e89b4f1e2ef53e2",
+      "bytes": 409110
     },
     {
       "n": 161,
       "recipe_id": "collection-poultry-05-05",
-      "path": "/assets/recipes-ai/0161-collection-poultry-05-05.webp",
-      "sha": "c481baf6c875d5cb63b5bc469066ed9ee23f2f4b",
-      "bytes": 119740
+      "path": "/assets/recipes-ai/0161-collection-poultry-05-05-approved.webp",
+      "sha": "8f1713b947805edffa1a238694eab8dc37e48064",
+      "bytes": 418362
     },
     {
       "n": 162,
       "recipe_id": "collection-poultry-05-06",
-      "path": "/assets/recipes-ai/0162-collection-poultry-05-06.webp",
-      "sha": "bad99de1d870a647d771a1073d24e5f3da94aacb",
-      "bytes": 72786
+      "path": "/assets/recipes-ai/0162-collection-poultry-05-06-approved.webp",
+      "sha": "1a799fe1798c585df8ad8abfcfb9cf2f1f0be335",
+      "bytes": 363814
     },
     {
       "n": 163,
       "recipe_id": "collection-poultry-05-07",
-      "path": "/assets/recipes-ai/0163-collection-poultry-05-07.webp",
-      "sha": "3860ede0487fd91a957ee7eb888b170fa5150292",
-      "bytes": 79788
+      "path": "/assets/recipes-ai/0163-collection-poultry-05-07-approved.webp",
+      "sha": "f617ee05a2d8fa5b7bdf372d11b6d2ad72854ff4",
+      "bytes": 387052
     },
     {
       "n": 164,
       "recipe_id": "collection-poultry-05-08",
-      "path": "/assets/recipes-ai/0164-collection-poultry-05-08.webp",
-      "sha": "abf7bd3af80460f5976d4be707bd97ff5d9f52ff",
-      "bytes": 113588
+      "path": "/assets/recipes-ai/0164-collection-poultry-05-08-approved.webp",
+      "sha": "2e28625eac10a5d7f273bbbaf090f77710920959",
+      "bytes": 364982
     },
     {
       "n": 165,
       "recipe_id": "collection-poultry-05-09",
-      "path": "/assets/recipes-ai/0165-collection-poultry-05-09.webp",
-      "sha": "8a8021fcd215b61572ab8f86828aace6cb95e57b",
-      "bytes": 89804
+      "path": "/assets/recipes-ai/0165-collection-poultry-05-09-approved.webp",
+      "sha": "8fba0d84214903476e7568d557638cd3d35b7bf9",
+      "bytes": 349240
     },
     {
       "n": 166,
       "recipe_id": "collection-poultry-05-10",
-      "path": "/assets/recipes-ai/0166-collection-poultry-05-10.webp",
-      "sha": "7d8a9618a9ab27ca88e87a86c984f9b327c12c97",
-      "bytes": 100344
+      "path": "/assets/recipes-ai/0166-collection-poultry-05-10-approved.webp",
+      "sha": "bfeb71b893e23ec48a59f91c152e9d6c6e82549a",
+      "bytes": 380420
     },
     {
       "n": 167,
       "recipe_id": "collection-poultry-06-01",
-      "path": "/assets/recipes-ai/0167-collection-poultry-06-01.webp",
-      "sha": "096c33f7af758bd73374b3f205b15625130af657",
-      "bytes": 104584
+      "path": "/assets/recipes-ai/0167-collection-poultry-06-01-approved.webp",
+      "sha": "6e585d405d75e0ce14766bc5bc31ba333e66b9de",
+      "bytes": 362898
     },
     {
       "n": 168,
       "recipe_id": "collection-poultry-06-02",
-      "path": "/assets/recipes-ai/0168-collection-poultry-06-02-no-eggs-regen.webp",
-      "sha": "6da2e9382e2995131f73555805e78c7a516c98a3",
-      "bytes": 104394
+      "path": "/assets/recipes-ai/0168-collection-poultry-06-02-approved.webp",
+      "sha": "1781dfe772d982d809e5f62820509249c7c43640",
+      "bytes": 344392
     },
     {
       "n": 169,
       "recipe_id": "collection-poultry-06-03",
-      "path": "/assets/recipes-ai/0169-collection-poultry-06-03-no-eggs-regen.webp",
-      "sha": "4e8352b565e4687355b47517722bc758af221fd2",
-      "bytes": 118416
+      "path": "/assets/recipes-ai/0169-collection-poultry-06-03-approved.webp",
+      "sha": "988cbf9b523ca217382458f25f84af77ff792493",
+      "bytes": 247156
     },
     {
       "n": 170,
       "recipe_id": "collection-poultry-06-04",
-      "path": "/assets/recipes-ai/0170-collection-poultry-06-04.webp",
-      "sha": "9120c8a6f350ea9528e8b17a62abdd1d2990a962",
-      "bytes": 111496
+      "path": "/assets/recipes-ai/0170-collection-poultry-06-04-approved.webp",
+      "sha": "7be2849617ffa8bcce32c3853e8674c0cf5291ca",
+      "bytes": 301162
     },
     {
       "n": 171,
       "recipe_id": "collection-poultry-06-05",
-      "path": "/assets/recipes-ai/0171-collection-poultry-06-05.webp",
-      "sha": "34a57dc061ab577b0e639e35c118445774a96442",
-      "bytes": 100760
+      "path": "/assets/recipes-ai/0171-collection-poultry-06-05-approved.webp",
+      "sha": "07a0fad96c87e46bfeb714933ff84a7d4dfeabe4",
+      "bytes": 341772
     },
     {
       "n": 172,
       "recipe_id": "collection-poultry-06-06",
-      "path": "/assets/recipes-ai/0172-collection-poultry-06-06.webp",
-      "sha": "59b72db4b14451a13fe1b2f6e9017d213bbbd7b1",
-      "bytes": 120304
+      "path": "/assets/recipes-ai/0172-collection-poultry-06-06-approved.webp",
+      "sha": "1c82e7265a6bb44597b815368f63b20f87fe3ac8",
+      "bytes": 279670
     },
     {
       "n": 173,
       "recipe_id": "collection-poultry-06-07",
-      "path": "/assets/recipes-ai/0173-collection-poultry-06-07-no-eggs-regen.webp",
-      "sha": "54846b0b4d3102a317cbfddae1bca86251172637",
-      "bytes": 88514
+      "path": "/assets/recipes-ai/0173-collection-poultry-06-07-approved.webp",
+      "sha": "84556b2fc87b504801319971ab276a6363fe057d",
+      "bytes": 337096
     },
     {
       "n": 174,
       "recipe_id": "collection-poultry-06-08",
-      "path": "/assets/recipes-ai/0174-collection-poultry-06-08.webp",
-      "sha": "63ab6b00c1dc05c61702a98cf362fa4797eeb195",
-      "bytes": 83336
+      "path": "/assets/recipes-ai/0174-collection-poultry-06-08-approved.webp",
+      "sha": "3710bb50f233ab75e0e5d11412395fc140513ddf",
+      "bytes": 325078
     },
     {
       "n": 175,
       "recipe_id": "collection-poultry-06-09",
-      "path": "/assets/recipes-ai/0175-collection-poultry-06-09.webp",
-      "sha": "cd4b0b552ada055e4c8949ca5c1fc72a0befc05e",
-      "bytes": 132580
+      "path": "/assets/recipes-ai/0175-collection-poultry-06-09-approved.webp",
+      "sha": "f9bbae6a0a128d0513fa005ab5ca9bc14710f525",
+      "bytes": 311536
     },
     {
       "n": 176,
       "recipe_id": "collection-poultry-06-10",
-      "path": "/assets/recipes-ai/0176-collection-poultry-06-10-no-eggs-regen.webp",
-      "sha": "d4295b2881c7551d0b5dfb2fa87aa21f09289980",
-      "bytes": 77986
+      "path": "/assets/recipes-ai/0176-collection-poultry-06-10-approved.webp",
+      "sha": "9e499019e237110f468db75f7a4d77a7a7ad7dc8",
+      "bytes": 289014
     },
     {
       "n": 177,
       "recipe_id": "collection-poultry-07-01",
-      "path": "/assets/recipes-ai/0177-collection-poultry-07-01.webp",
-      "sha": "3935834ad657b2c511cd2af99f97a11d60584388",
-      "bytes": 124892
+      "path": "/assets/recipes-ai/0177-collection-poultry-07-01-approved.webp",
+      "sha": "ae10591536d8ed89d1e7b2d4ad3d9e0d9045f8de",
+      "bytes": 348016
     },
     {
       "n": 178,
       "recipe_id": "collection-poultry-07-02",
-      "path": "/assets/recipes-ai/0178-collection-poultry-07-02.webp",
-      "sha": "7e17e1e2e9297a499b092af8cbce1cebf8e8803c",
-      "bytes": 113882
+      "path": "/assets/recipes-ai/0178-collection-poultry-07-02-approved.webp",
+      "sha": "484d63decbd71ef502104ebb03260aed5fbc35e1",
+      "bytes": 288468
     },
     {
       "n": 179,
       "recipe_id": "collection-poultry-07-03",
-      "path": "/assets/recipes-ai/0179-collection-poultry-07-03.webp",
-      "sha": "453fd46c19e6acc813252242be72053721fe40d1",
-      "bytes": 114350
+      "path": "/assets/recipes-ai/0179-collection-poultry-07-03-approved.webp",
+      "sha": "468184cc0270b0edad0e445668e12b06d0a42019",
+      "bytes": 340474
     },
     {
       "n": 180,
       "recipe_id": "collection-poultry-07-04",
-      "path": "/assets/recipes-ai/0180-collection-poultry-07-04.webp",
-      "sha": "f076c405c6e3377dac57ea113024ea11d767534b",
-      "bytes": 101276
+      "path": "/assets/recipes-ai/0180-collection-poultry-07-04-approved.webp",
+      "sha": "3a4b37c79cb26d02cf8ba744bd6c037f946d8964",
+      "bytes": 362930
     },
     {
       "n": 181,
       "recipe_id": "collection-poultry-07-05",
-      "path": "/assets/recipes-ai/0181-collection-poultry-07-05.webp",
-      "sha": "9cf61842d8c1ea0898579c5188669f768ef62e8c",
-      "bytes": 115760
+      "path": "/assets/recipes-ai/0181-collection-poultry-07-05-approved.webp",
+      "sha": "29ff2a6820196f47defea1dd767150f784731bd2",
+      "bytes": 384536
     },
     {
       "n": 182,
       "recipe_id": "collection-poultry-07-06",
-      "path": "/assets/recipes-ai/0182-collection-poultry-07-06.webp",
-      "sha": "a0d58d3fba525cc9fd84a722e796eed17e46ff51",
-      "bytes": 126764
+      "path": "/assets/recipes-ai/0182-collection-poultry-07-06-approved.webp",
+      "sha": "2384cc55f7ffef847f15ae24f14437b935574637",
+      "bytes": 322108
     },
     {
       "n": 183,
       "recipe_id": "collection-poultry-07-07",
-      "path": "/assets/recipes-ai/0183-collection-poultry-07-07.webp",
-      "sha": "94f449f40e829b4c2bad38d07152724394d796f2",
-      "bytes": 91252
+      "path": "/assets/recipes-ai/0183-collection-poultry-07-07-approved.webp",
+      "sha": "47287df33fb810531f18dffbfbbbe0bac66eef15",
+      "bytes": 294530
     },
     {
       "n": 184,
       "recipe_id": "collection-poultry-07-08",
-      "path": "/assets/recipes-ai/0184-collection-poultry-07-08.webp",
-      "sha": "c3931dc014be19a6f50aac7b97058f69fdf0d250",
-      "bytes": 124068
+      "path": "/assets/recipes-ai/0184-collection-poultry-07-08-approved.webp",
+      "sha": "e813857fe70da7be3475da8d4827e6dd12f9add4",
+      "bytes": 388190
     },
     {
       "n": 185,
       "recipe_id": "collection-poultry-07-09",
-      "path": "/assets/recipes-ai/0185-collection-poultry-07-09.webp",
-      "sha": "6b5776575dd7b1f1dc42aec53cf47253bdf2b8d3",
-      "bytes": 127136
+      "path": "/assets/recipes-ai/0185-collection-poultry-07-09-approved.webp",
+      "sha": "48093999455fd60b2b86415da01281c6e8b506a7",
+      "bytes": 418732
     },
     {
       "n": 186,
       "recipe_id": "collection-poultry-07-10",
-      "path": "/assets/recipes-ai/0186-collection-poultry-07-10.webp",
-      "sha": "fe79928658aae7bbcd8509205976a05876c8e62d",
-      "bytes": 105614
+      "path": "/assets/recipes-ai/0186-collection-poultry-07-10-approved.webp",
+      "sha": "e2a17dab3afbeb776f09d19b5a4f6d04426d2a11",
+      "bytes": 370578
     },
     {
       "n": 187,
       "recipe_id": "collection-poultry-08-01",
-      "path": "/assets/recipes-ai/0187-collection-poultry-08-01.webp",
-      "sha": "a6418a244dc92af9e6e8271653f95abf19d73598",
-      "bytes": 141772
+      "path": "/assets/recipes-ai/0187-collection-poultry-08-01-approved.webp",
+      "sha": "fc0eba2b4e8c8ca1eba20f13c925f70657bd85d8",
+      "bytes": 369580
     },
     {
       "n": 188,
       "recipe_id": "collection-poultry-08-02",
-      "path": "/assets/recipes-ai/0188-collection-poultry-08-02.webp",
-      "sha": "96ab3f6e63f4099736d437e9601af148b2a5c6a0",
-      "bytes": 114772
+      "path": "/assets/recipes-ai/0188-collection-poultry-08-02-approved.webp",
+      "sha": "434bf977d415d1e0b3c0547f648320ce0fdfb359",
+      "bytes": 376684
     },
     {
       "n": 189,
       "recipe_id": "collection-poultry-08-03",
-      "path": "/assets/recipes-ai/0189-collection-poultry-08-03.webp",
-      "sha": "e82bda46f9409bc2347bf974f4de9e6d5384d4d8",
-      "bytes": 144214
+      "path": "/assets/recipes-ai/0189-collection-poultry-08-03-approved.webp",
+      "sha": "3494ff4f841145496b7b098135a19ddb19ed708e",
+      "bytes": 401162
     },
     {
       "n": 190,
       "recipe_id": "collection-poultry-08-04",
-      "path": "/assets/recipes-ai/0190-collection-poultry-08-04.webp",
-      "sha": "1b7e531bc17c7d1bc8ee3d5d67f351ee29b21432",
-      "bytes": 127314
+      "path": "/assets/recipes-ai/0190-collection-poultry-08-04-approved.webp",
+      "sha": "faa6cba3875950b1171bb8e1bb58a73f0613edd7",
+      "bytes": 489246
     },
     {
       "n": 191,
       "recipe_id": "collection-poultry-08-05",
-      "path": "/assets/recipes-ai/0191-collection-poultry-08-05.webp",
-      "sha": "bf221f125f49442562a3dcbe04ed8bf265a63c90",
-      "bytes": 165380
+      "path": "/assets/recipes-ai/0191-collection-poultry-08-05-approved.webp",
+      "sha": "b08fd439dd96f2fe5c4a183724099a8eef7e7696",
+      "bytes": 448134
     },
     {
       "n": 192,
       "recipe_id": "collection-poultry-08-06",
-      "path": "/assets/recipes-ai/0192-collection-poultry-08-06.webp",
-      "sha": "7af1faac1431be1147cf93238f33f1de0fe1de2c",
-      "bytes": 99160
+      "path": "/assets/recipes-ai/0192-collection-poultry-08-06-approved.webp",
+      "sha": "de276bc62373440290eeba74ecc687142b867ae0",
+      "bytes": 358554
     },
     {
       "n": 193,
       "recipe_id": "collection-poultry-08-07",
-      "path": "/assets/recipes-ai/0193-collection-poultry-08-07.webp",
-      "sha": "3ac7c2def9b588c2c035d1e5ec6431050b48bb00",
-      "bytes": 114094
+      "path": "/assets/recipes-ai/0193-collection-poultry-08-07-approved.webp",
+      "sha": "59b6bd36665baef18ad255ce86df3c66d78f14dd",
+      "bytes": 350064
     },
     {
       "n": 194,
       "recipe_id": "collection-poultry-08-08",
-      "path": "/assets/recipes-ai/0194-collection-poultry-08-08.webp",
-      "sha": "5272074273728d05a5983a2d05db49610cd1333c",
-      "bytes": 140020
+      "path": "/assets/recipes-ai/0194-collection-poultry-08-08-approved.webp",
+      "sha": "981d7c2237e06ddd0048bee627534c1bfcf1bc40",
+      "bytes": 307544
     },
     {
       "n": 195,
       "recipe_id": "collection-poultry-08-09",
-      "path": "/assets/recipes-ai/0195-collection-poultry-08-09.webp",
-      "sha": "18a6ddd2356a920f9d6984b73cbf0a34bd78b22c",
-      "bytes": 127546
+      "path": "/assets/recipes-ai/0195-collection-poultry-08-09-approved.webp",
+      "sha": "27a83dddeb8885ac21ba3f5aad85931929e51b40",
+      "bytes": 411016
     },
     {
       "n": 196,
       "recipe_id": "collection-poultry-08-10",
-      "path": "/assets/recipes-ai/0196-collection-poultry-08-10.webp",
-      "sha": "f25e104f52826bcf1c16fb14a507793c99d34980",
-      "bytes": 180050
+      "path": "/assets/recipes-ai/0196-collection-poultry-08-10-approved.webp",
+      "sha": "738a6713adca7225d99d222dc0148b89e885150d",
+      "bytes": 341316
     },
     {
       "n": 197,
       "recipe_id": "collection-poultry-09-01",
-      "path": "/assets/recipes-ai/0197-collection-poultry-09-01.webp",
-      "sha": "dd91aca29f959242fb8fcf9bd024dedd36028cba",
-      "bytes": 124582
+      "path": "/assets/recipes-ai/0197-collection-poultry-09-01-approved.webp",
+      "sha": "2f797a88fffecff226177e7e1d777f9553ba03b0",
+      "bytes": 350698
     },
     {
       "n": 198,
       "recipe_id": "collection-poultry-09-02",
-      "path": "/assets/recipes-ai/0198-collection-poultry-09-02.webp",
-      "sha": "42e9f7e67bfd64be14b168c9a26da1901d8698a4",
-      "bytes": 82156
+      "path": "/assets/recipes-ai/0198-collection-poultry-09-02-approved.webp",
+      "sha": "e958a64228fdeba0228269ed53ee4001eb4988fe",
+      "bytes": 311958
     },
     {
       "n": 199,
       "recipe_id": "collection-poultry-09-03",
-      "path": "/assets/recipes-ai/0199-collection-poultry-09-03.webp",
-      "sha": "5a28c7e1bef8694144d990662cb5d86d8f63a932",
-      "bytes": 87758
+      "path": "/assets/recipes-ai/0199-collection-poultry-09-03-approved.webp",
+      "sha": "85b0a7799e5729cd9fb6a7132ae58ddc6ae61fc6",
+      "bytes": 358032
     },
     {
       "n": 200,
       "recipe_id": "collection-poultry-09-04",
-      "path": "/assets/recipes-ai/0200-collection-poultry-09-04.webp",
-      "sha": "dfa1d1b180f902d06ef8f4c422937a2e95e4398d",
-      "bytes": 125410
+      "path": "/assets/recipes-ai/0200-collection-poultry-09-04-approved.webp",
+      "sha": "cd0a156c89b83aa8c7ac3a56081660c37c333f0c",
+      "bytes": 279212
     },
     {
       "n": 201,
