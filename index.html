@@ -1027,46 +1027,67 @@ body:not(.du-evening-mode) .du-evening-back{display:none!important}
 <script defer src="assets/evening-approved-route-20261111.js"></script>
 <script defer src="assets/bonus-button-layers-20261111.js"></script>
 <style>
-/* Three rotating recipes in the approved newspaper-cutout visual language.
-   Height is 2/3 of the former 825/490 card proportion. */
-html body.du-evening-mode #eveningLanding .du-match11-recipe-grid a.du-evening-paper-card.du-evening-rotating-card{
- position:relative!important;display:flex!important;flex-direction:column!important;
- width:100%!important;height:auto!important;aspect-ratio:490/550!important;
- overflow:hidden!important;isolation:isolate!important;
- background:#f7f0e5!important;color:#512b35!important;
- padding:8px 8px 0!important;margin:0!important;border:0!important;border-radius:0!important;
- box-shadow:none!important;
- clip-path:polygon(0 .7%,6% 0,13% .8%,21% .2%,30% .9%,40% .15%,53% .8%,64% 0,75% .6%,87% 0,96% .7%,100% .2%,99.5% 12%,100% 24%,99.6% 40%,100% 57%,99.5% 73%,100% 87%,99.4% 99.1%,91% 100%,80% 99.3%,69% 100%,58% 99.2%,47% 100%,35% 99.3%,23% 100%,12% 99.2%,0 100%,.5% 88%,0 74%,.4% 60%,0 45%,.5% 30%,0 15%)!important;
+/* Approved 2026-11-15 newspaper artwork stays as the base of each rotating card.
+   Do not replace the original newspaper card image with a plain dish photograph. */
+html body.du-evening-mode #eveningLanding .du-match11-recipe-grid a.du-evening-paper-card.du-news-live{
+ position:relative!important;display:block!important;width:100%!important;
+ height:auto!important;aspect-ratio:490/550!important;min-height:0!important;
+ overflow:visible!important;isolation:isolate!important;
+ padding:0!important;margin:0!important;background:transparent!important;
+ border:0!important;border-radius:0!important;box-shadow:none!important;
+ text-decoration:none!important;transform-origin:center!important;
 }
-html body.du-evening-mode #eveningLanding .du-match11-recipe-grid a.du-evening-paper-card.du-evening-rotating-card img{
- display:block!important;position:relative!important;flex:0 0 63%!important;
- width:100%!important;max-width:100%!important;height:63%!important;
- min-height:0!important;aspect-ratio:auto!important;object-fit:cover!important;
- object-position:50% 50%!important;border:0!important;border-radius:0!important;
+html body.du-evening-mode #eveningLanding .du-match11-recipe-grid a.du-news-live>img.du-news-original{
+ display:block!important;width:100%!important;height:100%!important;position:absolute!important;
+ inset:0!important;max-width:none!important;object-fit:fill!important;
+ aspect-ratio:auto!important;border:0!important;box-shadow:none!important;
 }
-html body.du-evening-mode #eveningLanding .du-match11-recipe-grid a.du-evening-rotating-card:after{
- content:none!important;display:none!important;
+html body.du-evening-mode #eveningLanding .du-match11-recipe-grid a.du-news-live img.du-news-photo{
+ position:absolute!important;z-index:1!important;left:9%!important;top:11%!important;
+ width:82%!important;height:44.7%!important;object-fit:cover!important;object-position:center!important;
+ max-width:none!important;aspect-ratio:auto!important;padding:0!important;margin:0!important;
+ border:0!important;border-radius:0!important;box-shadow:none!important;
+ clip-path:polygon(0 2%,13% 0,27% 1%,42% 0,55% 1%,72% 0,87% 1%,100% 0,99% 19%,100% 47%,99% 75%,100% 97%,83% 100%,67% 98%,50% 100%,31% 99%,14% 100%,0 97%,1% 78%,0 51%,1% 23%)!important;
 }
-html body.du-evening-mode #eveningLanding .du-match11-recipe-grid a.du-evening-rotating-card .du-evening-rotating-title{
- display:flex!important;position:relative!important;inset:auto!important;z-index:1!important;
- flex:1 1 auto!important;min-height:0!important;width:100%!important;
- flex-direction:column!important;justify-content:center!important;
- padding:10px 13px 14px!important;margin:0!important;
- color:#4c202d!important;background:#f7f0e5!important;
- font:600 clamp(23px,2.5vw,39px)/1.02 'Cormorant Garamond',Georgia,serif!important;
+html body.du-evening-mode #eveningLanding .du-match11-recipe-grid a.du-news-live .du-news-content{
+ position:absolute!important;z-index:2!important;inset:55% 6% 3.5%!important;
+ display:flex!important;flex-direction:column!important;justify-content:space-between!important;
+ overflow:hidden!important;min-height:0!important;
+ padding:5px 8px 5px!important;margin:0!important;
+ background-color:#f4e5d3!important;
+ background-image:radial-gradient(ellipse at 10% 15%,#fff9ef8f,transparent 65%),radial-gradient(ellipse at 90% 95%,#cfaa9152,transparent 60%)!important;
+ color:#542331!important;white-space:normal!important;
+}
+html body.du-evening-mode #eveningLanding .du-match11-recipe-grid a.du-news-live .du-news-title{
+ display:-webkit-box!important;-webkit-box-orient:vertical!important;-webkit-line-clamp:3!important;
+ overflow:hidden!important;flex:0 1 auto!important;padding:0!important;margin:0!important;
+ color:#632b33!important;background:none!important;
+ font:600 clamp(27px,2.9vw,46px)/.94 'Cormorant Garamond',Georgia,serif!important;
  letter-spacing:-.025em!important;text-shadow:none!important;overflow-wrap:break-word!important;
- pointer-events:none!important;white-space:normal!important;
 }
-html body.du-evening-mode #eveningLanding .du-match11-recipe-grid a.du-evening-rotating-card .du-evening-rotating-kicker{
- display:block!important;margin:0 0 5px!important;padding:0!important;
- color:#a2545e!important;background:transparent!important;
- font:700 clamp(9px,.7vw,12px)/1.25 Manrope,Arial,sans-serif!important;
- letter-spacing:.13em!important;text-transform:uppercase!important;
+html body.du-evening-mode #eveningLanding .du-match11-recipe-grid a.du-news-live .du-news-title.du-news-long{
+ font-size:clamp(23px,2.2vw,35px)!important;
+}
+html body.du-evening-mode #eveningLanding .du-match11-recipe-grid a.du-news-live .du-news-description{
+ display:-webkit-box!important;-webkit-box-orient:vertical!important;-webkit-line-clamp:2!important;
+ overflow:hidden!important;margin:4px 0!important;padding:0!important;color:#312026!important;
+ background:none!important;font:500 clamp(12px,1.18vw,17px)/1.18 Georgia,'Times New Roman',serif!important;
+}
+html body.du-evening-mode #eveningLanding .du-match11-recipe-grid a.du-news-live .du-news-cta{
+ display:flex!important;align-items:center!important;justify-content:center!important;
+ flex:0 0 auto!important;min-height:49px!important;margin:5px 1px 2px!important;padding:7px 5px!important;
+ background:#742b31!important;color:#fff7ed!important;
+ font:600 clamp(19px,1.9vw,29px)/1 'Cormorant Garamond',Georgia,serif!important;
+ letter-spacing:-.01em!important;
+ clip-path:polygon(0 16%,9% 6%,21% 1%,37% 4%,55% 0,73% 3%,89% 0,100% 15%,99% 83%,90% 96%,73% 99%,53% 96%,30% 100%,10% 95%,0 87%)!important;
+}
+html body.du-evening-mode #eveningLanding .du-match11-recipe-grid a.du-news-live .du-news-cta em{
+ font:inherit!important;font-style:normal!important;margin-left:8px!important;
 }
 @media(max-width:760px){
- html body.du-evening-mode #eveningLanding .du-match11-recipe-grid a.du-evening-rotating-card .du-evening-rotating-title{
-  font-size:clamp(25px,6.2vw,38px)!important;padding:9px 13px 12px!important;
- }
+ html body.du-evening-mode #eveningLanding .du-match11-recipe-grid a.du-news-live .du-news-title{font-size:clamp(30px,7vw,43px)!important}
+ html body.du-evening-mode #eveningLanding .du-match11-recipe-grid a.du-news-live .du-news-title.du-news-long{font-size:clamp(25px,6vw,36px)!important}
+ html body.du-evening-mode #eveningLanding .du-match11-recipe-grid a.du-news-live .du-news-description{font-size:clamp(13px,3.2vw,17px)!important}
 }
 </style>
 </head><body>
@@ -2060,45 +2081,49 @@ function stepVisualHtml(recipe,index,mode){
 <script src="/assets/native-music-player-20261112.js" defer></script>
 
 <script>
-/* One fresh, internally consistent three-course showcase per page visit. */
-(function rotateOurEveningCards(){
+/* The three approved newspaper-art images remain intact as the paper frames.
+   Only the dish photo, text, and linked recipe change at each new visit. */
+(function rotateApprovedNewspaperCards(){
  'use strict';
  const cards=Array.from(document.querySelectorAll('.du-match11-recipe-grid > a.du-approved-cover-recipe'));
- if(cards.length!==3 || typeof RECIPES==='undefined') return;
- const groups=[
-  {categories:['fish','meat','poultry'],label:'ГЛАВНОЕ БЛЮДО'},
-  {categories:['pasta','vegetables'],label:'ЕЩЁ ОДНО БЛЮДО'},
-  {categories:['dessert'],label:'ДЕСЕРТ'}
- ];
+ if(cards.length!==3 || typeof RECIPES==='undefined')return;
+ const groups=[['fish','meat','poultry'],['pasta','vegetables'],['dessert']];
  const key='nash-vecher-previous-three-recipes-v1';
  let previous=[];
  try{const saved=JSON.parse(localStorage.getItem(key)||'[]');if(Array.isArray(saved))previous=saved;}catch(e){}
- const chosen=[];
- groups.forEach((group,index)=>{
-  const pool=RECIPES.filter(recipe=>group.categories.includes(recipe.category)&&typeof recipe.photo==='string'&&recipe.photo.startsWith('/assets/')&&['.webp','.jpg','.jpeg','.png'].some(ext=>recipe.photo.toLowerCase().split('?')[0].endsWith(ext))&&recipe.id&&recipe.title);
+ const picks=[];
+ groups.forEach((categories,index)=>{
+  const pool=RECIPES.filter(r=>categories.includes(r.category)&&typeof r.photo==='string'&&r.photo.startsWith('/assets/')&&r.id&&r.title);
   if(!pool.length)return;
-  const fresh=pool.filter(recipe=>recipe.id!==previous[index]&&!chosen.some(item=>item.recipe.id===recipe.id));
+  const fresh=pool.filter(r=>r.id!==previous[index]&&!picks.some(p=>p.id===r.id));
   const candidates=fresh.length?fresh:pool;
-  let n=Math.floor(Math.random()*candidates.length);
-  if(window.crypto&&crypto.getRandomValues){const bytes=new Uint32Array(1);crypto.getRandomValues(bytes);n=bytes[0]%candidates.length;}
-  chosen.push({recipe:candidates[n],label:group.label});
+  let pick=Math.floor(Math.random()*candidates.length);
+  try{if(window.crypto&&window.crypto.getRandomValues){const values=new Uint32Array(1);window.crypto.getRandomValues(values);pick=values[0]%candidates.length;}}catch(e){}
+  picks.push(candidates[pick]);
  });
- if(chosen.length!==3)return;
+ if(picks.length!==3)return;
  cards.forEach((card,index)=>{
-  const {recipe,label}=chosen[index];
-  const img=card.querySelector('img');
-  if(!img)return;
-  img.src=recipe.photo;
-  img.alt=recipe.title+'. Открыть рецепт';
-  img.removeAttribute('width');img.removeAttribute('height');
-  card.href='#recipe='+encodeURIComponent(recipe.id);
-  card.setAttribute('aria-label',recipe.title+'. Открыть рецепт');
-  card.classList.add('du-evening-rotating-card');
-  const caption=document.createElement('span');caption.className='du-evening-rotating-title';
-  const kicker=document.createElement('span');kicker.className='du-evening-rotating-kicker';kicker.textContent=label;
-  caption.append(kicker,document.createTextNode(recipe.title));card.appendChild(caption);
+  const r=picks[index],original=card.querySelector('img');
+  if(!original)return;
+  original.classList.add('du-news-original');
+  card.classList.add('du-news-live');
+  card.href='#recipe='+encodeURIComponent(r.id);
+  card.setAttribute('aria-label',r.title+'. Приготовить рецепт');
+  const photo=document.createElement('img');
+  photo.className='du-news-photo';
+  photo.src=r.photo;photo.alt=r.title;photo.loading='lazy';photo.decoding='async';
+  const paper=document.createElement('div');paper.className='du-news-content';
+  const title=document.createElement('strong');
+  title.className='du-news-title'+(r.title.length>35?' du-news-long':'');
+  title.textContent=r.title;
+  const description=document.createElement('small');description.className='du-news-description';
+  description.textContent=(typeof r.description==='string'&&r.description.trim())?r.description.trim():'Вечер, который хочется повторить вдвоём.';
+  const action=document.createElement('span');action.className='du-news-cta';
+  action.append(document.createTextNode('Приготовить '));
+  const arrow=document.createElement('em');arrow.textContent='→';action.appendChild(arrow);
+  paper.append(title,description,action);card.append(photo,paper);
  });
- try{localStorage.setItem(key,JSON.stringify(chosen.map(item=>item.recipe.id)));}catch(e){}
+ try{localStorage.setItem(key,JSON.stringify(picks.map(r=>r.id)));}catch(e){}
 })();
 </script>
 </body></html>
