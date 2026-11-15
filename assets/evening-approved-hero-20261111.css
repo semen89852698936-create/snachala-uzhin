@@ -937,3 +937,18 @@ body.du-evening-mode #eveningLanding .du-match11-actions > a.du-match11-button:a
     top: 72.2% !important; /* was 66.2% */
   }
 }
+
+/* EVENING_HERO_HORIZONTAL_SLOGAN_AND_RULE_20261116
+   Only straighten the approved slogan and its red underline.
+   Preserve positions, typography, spacing and all other hero elements. */
+body.du-evening-mode #eveningLanding .du-match11-slogan {
+  transform: rotate(0deg) !important;
+}
+body.du-evening-mode #eveningLanding .du-match11-red-line {
+  transform: rotate(0deg) !important;
+  background-image: none !important;
+  background-color: #be2144 !important;
+  height: clamp(3px,.32vw,5px) !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+}
