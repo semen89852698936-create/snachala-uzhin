@@ -122,21 +122,21 @@
     const x=57*sx, availableWidth=372*sx;
     let titleLines=null,titleSize=0;
     for(let size=54;size>=26;size-=2) {
-      ctx.font='600 '+Math.round(size*sx)+'px Georgia, "Times New Roman", serif';
+      ctx.font='600 '+Math.round(size*sx)+'px "Cormorant Garamond", Georgia, serif';
       titleLines=wrap(ctx,recipe.title,availableWidth,3);
       if(titleLines&&titleLines.length*size<=114){titleSize=size;break;}
     }
     if(!titleLines||!titleSize)return null;
     ctx.fillStyle='#61282c';
     ctx.textBaseline='top';
-    ctx.font='600 '+Math.round(titleSize*sx)+'px Georgia, "Times New Roman", serif';
+    ctx.font='600 '+Math.round(titleSize*sx)+'px "Cormorant Garamond", Georgia, serif';
     titleLines.forEach((line,i)=>ctx.fillText(line,x,(426+i*titleSize*1.02)*sy));
 
     let subtitle=(recipe.description||'Вечер, который хочется повторить вдвоём.')
       .replace(/\s+/g,' ').trim();
     let descLines=null,descSize=0;
     for(let size=26;size>=17;size--) {
-      ctx.font='500 '+Math.round(size*sx)+'px Georgia, "Times New Roman", serif';
+      ctx.font='500 '+Math.round(size*sx)+'px "Cormorant Garamond", Georgia, serif';
       descLines=wrap(ctx,subtitle,availableWidth,2);
       if(descLines){descSize=size;break;}
     }
@@ -145,14 +145,14 @@
       while(words.length>2) {
         words.pop();
         const t=words.join(' ')+'…';
-        ctx.font='500 '+Math.round(18*sx)+'px Georgia, "Times New Roman", serif';
+        ctx.font='500 '+Math.round(18*sx)+'px "Cormorant Garamond", Georgia, serif';
         descLines=wrap(ctx,t,availableWidth,2);
         if(descLines){descSize=18;break;}
       }
     }
     if(!descLines)return null;
     ctx.fillStyle='#342224';
-    ctx.font='500 '+Math.round(descSize*sx)+'px Georgia, "Times New Roman", serif';
+    ctx.font='500 '+Math.round(descSize*sx)+'px "Cormorant Garamond", Georgia, serif';
     descLines.forEach((line,i)=>ctx.fillText(line,x,(557+i*descSize*1.15)*sy));
     return canvas.toDataURL('image/webp',.95);
   }
