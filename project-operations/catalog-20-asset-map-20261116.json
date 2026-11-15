@@ -1,7 +1,7 @@
 {
-  "status": "prepared_not_merged",
+  "status": "approved_public_design_data_swap_QA_pending",
   "date": "2026-11-16",
-  "base_sha": "b5fe110097748be7933ac0d574ebd64015f9b417",
+  "base_sha": "c19b0ba277441f445c4d8533340e39d3299cf6ab",
   "catalog_target": 1001,
   "categories": {
     "meat": 100,
@@ -196,5 +196,6 @@
       "fromSource": "handoff/2026-11-14",
       "title": "Плов с грибами и сладким перцем"
     }
-  ]
+  ],
+  "design_source": "current_public_site_c19b0ba"
 }
