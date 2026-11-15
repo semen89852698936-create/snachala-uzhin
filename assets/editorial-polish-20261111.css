@@ -1705,13 +1705,13 @@ body.du-evening-mode #eveningContinuation > .du-story-dinner .du-story-dinner-ph
   border-radius: 0 !important;
 }
 
-/* Make the existing italic music subtitle unmistakably larger, retaining
-   its Cormorant font, weight, italic styling and punctuation-free content. */
-body.du-evening-mode #music .du-music-heading .du-section-heading > p {
-  font-size: clamp(32px, 2.5vw, 38px) !important;
-}
-@media (max-width: 760px) {
-  body.du-evening-mode #music .du-music-heading .du-section-heading > p {
-    font-size: clamp(28px, 6vw, 34px) !important;
+
+/* EVENING_FINAL_BEIGE_STRIP_UP_ANOTHER_40PX_20261116
+   Only the beige strip labelled "ТОЛЬКО ДЛЯ ДВОИХ" is shifted visually;
+   the adjacent photo scene, music, fonts and document flow remain unchanged. */
+@media (min-width: 1021px) {
+  body.du-evening-mode #eveningContinuation > .du-evening-wide-strip.du-evening-strip-three {
+    position: relative !important;
+    top: -40px !important;
   }
 }
