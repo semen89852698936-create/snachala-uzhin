@@ -55,6 +55,15 @@
     if (lines.some(line => ctx.measureText(line).width > width)) return null;
     return lines;
   };
+  // Exact editorial spelling for the baked-apples title, even if a bad
+  // title variant arrives from a stale catalogue or browser cache.
+  function displayTitle(recipe) {
+    const title = recipe.title || '';
+    if (recipe.id === 'baked-apples' || /^Запеч[её]нные яблок[ий]/i.test(title)) {
+      return title.replace(/^Запеч[её]нные яблок[ий]/i, 'Запечённые яблоки');
+    }
+    return title;
+  }
   function paintNewspaper(original, dish, recipe) {
     const W = original.naturalWidth || original.width;
     const H = original.naturalHeight || original.height;
@@ -123,7 +132,7 @@
     let titleLines=null,titleSize=0;
     for(let size=72;size>=30;size-=2) {
       ctx.font='600 '+Math.round(size*sx)+'px "Cormorant Garamond", Georgia, serif';
-      titleLines=wrap(ctx,recipe.title,availableWidth,3);
+      titleLines=wrap(ctx,displayTitle(recipe),availableWidth,3);
       if(titleLines&&titleLines.length*size*0.98<=136){titleSize=size;break;}
     }
     if(!titleLines||!titleSize)return null;
@@ -191,8 +200,8 @@
         // One and only one visible image per card, no extra rectangles,
         // typography overlays or changes to the original paper outline.
         card.href = '#recipe=' + encodeURIComponent(recipe.id);
-        card.setAttribute('aria-label', recipe.title + '. Приготовить рецепт');
-        original.alt = recipe.title + '. Приготовить рецепт';
+        card.setAttribute('aria-label', displayTitle(recipe) + '. Приготовить рецепт');
+        original.alt = displayTitle(recipe) + '. Приготовить рецепт';
         original.src = picture;
         card.dataset.rotatedRecipe = recipe.id;
         successful[i] = recipe.id;
