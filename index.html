@@ -436,9 +436,9 @@ body{font-family:var(--sans);font-size:16px}
 @media(max-width:560px){.du-evening-together{min-height:630px}.du-evening-together-content{padding:22px 17px 18px}.du-evening-role-grid{gap:5px}.du-evening-role-card{padding:10px 8px;min-height:116px}.du-evening-role-card strong{font-size:17px}.du-evening-role-card small{font-size:8px}.du-evening-role-actions{gap:8px}.du-evening-role-actions span{font-size:8px}.du-evening-invitation-content{padding:20px 17px}.du-evening-invite-date{grid-template-columns:1fr}.du-evening-next{align-items:flex-start;flex-direction:column}}
 
 /* Dedicated in-site 'Наш вечер' mode; no large block on the ordinary homepage. */
-body:not(.du-evening-mode) #evening,
+body:not(.du-evening-mode) :is(#evening,#eveningContinuation),
 body:not(.du-evening-mode) #eveningLanding{display:none!important}
-body.du-evening-mode #homeView > :not(#eveningLanding):not(#evening):not(#music){display:none!important}
+body.du-evening-mode #homeView > :not(#eveningLanding):not(:is(#evening,#eveningContinuation)):not(#music){display:none!important}
 body.du-evening-mode #homeView > #eveningLanding{display:grid!important}
 body.du-evening-mode .main-nav [data-nav="evening"]{color:#8a4354;font-weight:800}
 .du-evening-landing{display:none;grid-template-columns:minmax(0,.94fr) minmax(0,1.06fr);gap:38px;align-items:stretch;padding:34px 0 20px}
@@ -474,7 +474,7 @@ body.du-evening-mode .main-nav [data-nav="evening"]{color:#8a4354;font-weight:80
 .du-evening-inspiration-card span{display:block;padding:9px 10px 11px;font:700 12px/1.3 var(--sans,Arial,sans-serif);color:#48393c}
 .du-evening-inspiration-card small{display:block;margin-top:5px;font-size:10px;font-weight:500;color:#8e7a7f}
 .du-evening-inspiration-credit{display:block;color:#8c7b7d;font-size:10px;line-height:1.5;margin-top:10px}
-.du-evening-mode #evening{padding-top:34px}
+.du-evening-mode :is(#evening,#eveningContinuation){padding-top:34px}
 #eveningBuilder{scroll-margin-top:104px}
 .du-recipe-evening-invite{display:grid;grid-template-columns:minmax(210px,34%) 1fr;overflow:hidden;border-radius:22px;background:#f5e7e3;border:1px solid #ecd8d6;margin:45px 0 60px;box-shadow:0 12px 35px #55333c10}
 .du-recipe-evening-photo{min-height:270px;overflow:hidden}
@@ -490,7 +490,7 @@ body.du-evening-mode .main-nav [data-nav="evening"]{color:#8a4354;font-weight:80
 @media(max-width:430px){.du-evening-landing-photo{min-height:270px}.du-evening-landing-benefits{gap:10px}.du-evening-landing-benefits b{font-size:11px}.du-evening-inspiration-grid{gap:6px}.du-evening-inspiration-card img{height:78px}.du-evening-inspiration-card span{padding:7px;font-size:10px}.du-evening-inspiration-credit{font-size:9px}}
 
 /* Approved three-act Our Evening visual narrative (2026-11) */
-.du-evening-mode #eveningLanding,.du-evening-mode #evening,.du-evening-mode #music,.du-recipe-evening-invite{
+.du-evening-mode #eveningLanding,.du-evening-mode :is(#evening,#eveningContinuation),.du-evening-mode #music,.du-recipe-evening-invite{
  --story-ink:#573948;--story-mauve:#aa7185;--story-surface:#f9f0ee;
  font-family:var(--sans,'Manrope','Segoe UI',sans-serif)
 }
@@ -516,22 +516,22 @@ body.du-evening-mode .main-nav [data-nav="evening"]{color:#8a4354;font-weight:80
 .du-evening-inspiration-card span{font:700 14px/1.35 var(--sans)}
 .du-evening-inspiration-card small{font:550 12px/1.4 var(--sans)}
 .du-evening-inspiration-credit,.du-evening-landing-credit{font:500 11px/1.4 var(--sans)}
-.du-evening-mode #evening .du-section-heading h2,.du-evening-mode #music .du-section-heading h2{font-family:var(--serif);font-weight:500}
-.du-evening-mode #evening .du-section-heading p,.du-evening-mode #music .du-section-heading p{font:500 17px/1.7 var(--sans)}
-.du-evening-mode #evening .du-mood strong{font:500 clamp(33px,2.75vw,41px)/1.04 var(--serif)}
-.du-evening-mode #evening .du-mood small{font:600 13px/1.5 var(--sans)}
-.du-evening-mode #evening .du-builder h3{font-family:var(--serif);font-weight:500}
-.du-evening-mode #evening .du-time-choices button{font-size:15px}
-.du-evening-mode #evening .du-menu-dish strong{font-size:23px}
-.du-evening-mode #evening .du-evening-together-content h3,.du-evening-mode #evening .du-evening-invitation-content h3{font:500 clamp(35px,3.4vw,47px)/1.03 var(--serif)}
-.du-evening-mode #evening .du-evening-together-content>p,.du-evening-mode #evening .du-evening-invitation-content>p{font:500 15px/1.65 var(--sans)}
-.du-evening-mode #evening .du-evening-role-card small{font-size:12px}
-.du-evening-mode #evening .du-evening-invite-fields label{font-size:12px}
-.du-evening-mode #evening .du-evening-invite-fields input{font-size:15px}
-.du-evening-mode #evening .du-evening-invite-preview{font-size:22px}
-.du-evening-mode #evening .du-evening-privacy{font-size:11px}
-.du-evening-mode #evening .du-evening-role-actions span,.du-evening-mode #evening .du-evening-role-actions button{font-size:12px}
-.du-evening-mode #evening{padding-top:62px}
+.du-evening-mode :is(#evening,#eveningContinuation) .du-section-heading h2,.du-evening-mode #music .du-section-heading h2{font-family:var(--serif);font-weight:500}
+.du-evening-mode :is(#evening,#eveningContinuation) .du-section-heading p,.du-evening-mode #music .du-section-heading p{font:500 17px/1.7 var(--sans)}
+.du-evening-mode :is(#evening,#eveningContinuation) .du-mood strong{font:500 clamp(33px,2.75vw,41px)/1.04 var(--serif)}
+.du-evening-mode :is(#evening,#eveningContinuation) .du-mood small{font:600 13px/1.5 var(--sans)}
+.du-evening-mode :is(#evening,#eveningContinuation) .du-builder h3{font-family:var(--serif);font-weight:500}
+.du-evening-mode :is(#evening,#eveningContinuation) .du-time-choices button{font-size:15px}
+.du-evening-mode :is(#evening,#eveningContinuation) .du-menu-dish strong{font-size:23px}
+.du-evening-mode :is(#evening,#eveningContinuation) .du-evening-together-content h3,.du-evening-mode :is(#evening,#eveningContinuation) .du-evening-invitation-content h3{font:500 clamp(35px,3.4vw,47px)/1.03 var(--serif)}
+.du-evening-mode :is(#evening,#eveningContinuation) .du-evening-together-content>p,.du-evening-mode :is(#evening,#eveningContinuation) .du-evening-invitation-content>p{font:500 15px/1.65 var(--sans)}
+.du-evening-mode :is(#evening,#eveningContinuation) .du-evening-role-card small{font-size:12px}
+.du-evening-mode :is(#evening,#eveningContinuation) .du-evening-invite-fields label{font-size:12px}
+.du-evening-mode :is(#evening,#eveningContinuation) .du-evening-invite-fields input{font-size:15px}
+.du-evening-mode :is(#evening,#eveningContinuation) .du-evening-invite-preview{font-size:22px}
+.du-evening-mode :is(#evening,#eveningContinuation) .du-evening-privacy{font-size:11px}
+.du-evening-mode :is(#evening,#eveningContinuation) .du-evening-role-actions span,.du-evening-mode :is(#evening,#eveningContinuation) .du-evening-role-actions button{font-size:12px}
+.du-evening-mode :is(#evening,#eveningContinuation){padding-top:62px}
 .du-story-dinner{grid-column:1/-1;display:grid;grid-template-columns:1.06fr .94fr;overflow:hidden;min-height:425px;border-radius:22px;background:#f6e8e6;box-shadow:0 8px 35px #6b37410c}
 .du-story-dinner-photo{position:relative;min-height:425px;overflow:hidden;background:#2c1d25}
 .du-story-dinner-photo img{position:absolute;width:100%;height:100%;inset:0;object-fit:cover;object-position:52% center;filter:saturate(.9) sepia(.07)}
@@ -574,7 +574,7 @@ body.du-evening-mode .main-nav [data-nav="evening"]{color:#8a4354;font-weight:80
  .du-story-after-photo{min-height:310px;order:-1}
  .du-story-after-copy{padding:28px 25px}
  .du-story-after-copy h2{font-size:clamp(42px,10vw,56px)}
- .du-evening-mode #evening{padding-top:45px}
+ .du-evening-mode :is(#evening,#eveningContinuation){padding-top:45px}
 }
 @media(max-width:440px){
  .du-evening-landing-photo{min-height:325px;max-height:355px}
@@ -670,7 +670,7 @@ body.du-evening-mode .main-nav [data-nav="evening"]{color:#8a4354;font-weight:80
 
 
 /* Our Evening: readable microtype. 2026-11-01. Site-wide styles stay unchanged. */
-body.du-evening-mode :is(#eveningLanding,#evening,#music) :is(
+body.du-evening-mode :is(#eveningLanding,:is(#evening,#eveningContinuation),#music) :is(
   small,.du-mini-eyebrow,.du-eyebrow,.du-mood-num,.du-evening-course,
   .du-evening-progress-label,.du-evening-two,.du-evening-photo-credit,
   .du-evening-privacy,.du-evening-next,.du-evening-role-actions span,
@@ -684,33 +684,33 @@ body.du-evening-mode :is(#eveningLanding,#evening,#music) :is(
   font-size:16px;
   line-height:1.55;
 }
-body.du-evening-mode #evening .du-mood small{font-size:16px;line-height:1.5}
+body.du-evening-mode :is(#evening,#eveningContinuation) .du-mood small{font-size:16px;line-height:1.5}
 body.du-evening-mode #eveningLanding .du-evening-inspiration-card span{
   font-size:16px;line-height:1.4;overflow-wrap:anywhere;
 }
-body.du-evening-mode #evening .du-evening-together-content>p,
-body.du-evening-mode #evening .du-evening-invitation-content>p{
+body.du-evening-mode :is(#evening,#eveningContinuation) .du-evening-together-content>p,
+body.du-evening-mode :is(#evening,#eveningContinuation) .du-evening-invitation-content>p{
   font-size:17px;line-height:1.65;
 }
-body.du-evening-mode #evening .du-evening-role-grid{gap:9px}
-body.du-evening-mode #evening .du-evening-role-card{
+body.du-evening-mode :is(#evening,#eveningContinuation) .du-evening-role-grid{gap:9px}
+body.du-evening-mode :is(#evening,#eveningContinuation) .du-evening-role-card{
   min-height:146px;padding:13px 12px;
 }
-body.du-evening-mode #evening .du-evening-role-card small{font-size:16px;line-height:1.5}
-body.du-evening-mode #evening .du-evening-role-actions :is(span,button){
+body.du-evening-mode :is(#evening,#eveningContinuation) .du-evening-role-card small{font-size:16px;line-height:1.5}
+body.du-evening-mode :is(#evening,#eveningContinuation) .du-evening-role-actions :is(span,button){
   font-size:16px;line-height:1.45;
 }
-body.du-evening-mode #evening .du-evening-role-actions button{min-height:42px}
-body.du-evening-mode #evening .du-evening-invite-fields label{font-size:16px;letter-spacing:.04em}
-body.du-evening-mode #evening .du-evening-invite-fields input{
+body.du-evening-mode :is(#evening,#eveningContinuation) .du-evening-role-actions button{min-height:42px}
+body.du-evening-mode :is(#evening,#eveningContinuation) .du-evening-invite-fields label{font-size:16px;letter-spacing:.04em}
+body.du-evening-mode :is(#evening,#eveningContinuation) .du-evening-invite-fields input{
   font-size:16px;line-height:1.5;min-height:45px;
 }
-body.du-evening-mode #evening .du-evening-invite-actions .du-btn{
+body.du-evening-mode :is(#evening,#eveningContinuation) .du-evening-invite-actions .du-btn{
   font-size:16px;line-height:1.35;min-height:44px;padding:12px 16px;
 }
-body.du-evening-mode #evening .du-evening-privacy{font-size:16px;line-height:1.55}
-body.du-evening-mode #evening .du-evening-invitation-photo>span{bottom:57px}
-body.du-evening-mode #evening .du-evening-invitation-photo>small{
+body.du-evening-mode :is(#evening,#eveningContinuation) .du-evening-privacy{font-size:16px;line-height:1.55}
+body.du-evening-mode :is(#evening,#eveningContinuation) .du-evening-invitation-photo>span{bottom:57px}
+body.du-evening-mode :is(#evening,#eveningContinuation) .du-evening-invitation-photo>small{
   font-size:16px;line-height:1.35;bottom:13px;right:14px;
   max-width:calc(100% - 28px);text-align:right;
 }
@@ -729,15 +729,15 @@ body.du-evening-mode #music .du-music-track-play{
     grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;
   }
   body.du-evening-mode #eveningLanding .du-evening-inspiration-card img{height:135px}
-  body.du-evening-mode #evening .du-evening-role-grid{gap:8px}
-  body.du-evening-mode #evening .du-evening-role-card{padding:12px 9px;min-height:165px}
-  body.du-evening-mode #evening .du-evening-role-card strong{font-size:20px}
-  body.du-evening-mode #evening .du-evening-invitation-photo>span{bottom:68px}
+  body.du-evening-mode :is(#evening,#eveningContinuation) .du-evening-role-grid{gap:8px}
+  body.du-evening-mode :is(#evening,#eveningContinuation) .du-evening-role-card{padding:12px 9px;min-height:165px}
+  body.du-evening-mode :is(#evening,#eveningContinuation) .du-evening-role-card strong{font-size:20px}
+  body.du-evening-mode :is(#evening,#eveningContinuation) .du-evening-invitation-photo>span{bottom:68px}
   body.du-evening-mode #music .du-music-track{min-height:74px}
 }
 @media(max-width:380px){
-  body.du-evening-mode #evening .du-evening-role-grid{grid-template-columns:1fr}
-  body.du-evening-mode #evening .du-evening-role-card{min-height:0}
+  body.du-evening-mode :is(#evening,#eveningContinuation) .du-evening-role-grid{grid-template-columns:1fr}
+  body.du-evening-mode :is(#evening,#eveningContinuation) .du-evening-role-card{min-height:0}
 }
 
 
@@ -1081,6 +1081,18 @@ body:not(.du-evening-mode) .du-evening-back{display:none!important}
     </div>
     <a href="#home" class="du-match11-sr-back">На главную страницу «СНАЧАЛА УЖИН»</a>
   </div>
+  <!-- ПЛАНИРОВАНИЕ ВЕЧЕРА СРАЗУ ПОД ГЛАВНОЙ ФОТОГРАФИЕЙ -->
+  <section class="du-evening container" id="evening" aria-labelledby="eveningTitle"><div id="eveningBuilder"></div>
+ <div class="du-section-top"><div class="du-eyebrow">ВЫБЕРИ НАСТРОЕНИЕ</div><div class="du-section-heading"><h2 id="eveningTitle">Каким будет <em>ваш вечер?</em></h2><p>Не начинайте со списка продуктов. Начните с того, что хочется почувствовать. А мы соберём меню из настоящих рецептов.</p></div></div>
+ <div class="du-moods" role="group" aria-label="Настроение вечера">
+ <button type="button" class="du-mood is-selected" data-mood="tender" aria-pressed="true"><span class="du-mood-num">01</span><span class="du-mood-icon">🕯️</span><strong>Нежный</strong><small>Тихие разговоры, мягкие вкусы</small><span class="du-mood-check">↗</span></button>
+ <button type="button" class="du-mood" data-mood="spark" aria-pressed="false"><span class="du-mood-num">02</span><span class="du-mood-icon">🌶️</span><strong>С искрой</strong><small>Пусть будет горячо</small><span class="du-mood-check">↗</span></button>
+ <button type="button" class="du-mood" data-mood="play" aria-pressed="false"><span class="du-mood-num">03</span><span class="du-mood-icon">🍓</span><strong>Игривый</strong><small>Шутки, музыка и две вилки</small><span class="du-mood-check">↗</span></button>
+ <button type="button" class="du-mood" data-mood="cozy" aria-pressed="false"><span class="du-mood-num">04</span><span class="du-mood-icon">🥂</span><strong>Уютный</strong><small>Никуда не торопимся</small><span class="du-mood-check">↗</span></button>
+ </div>
+ <div class="du-builder"><div class="du-builder-left"><div class="du-mini-eyebrow">ЕЩЁ ОДИН ВОПРОС</div><h3>Сколько времени<br>есть <i>на удовольствие?</i></h3><div class="du-time-choices" role="group" aria-label="Продолжительность приготовления"><button type="button" data-time="quick" aria-pressed="false">До 45 минут</button><button type="button" data-time="relaxed" aria-pressed="true" class="is-selected">До 75 минут</button><button type="button" data-time="long" aria-pressed="false">Не торопимся</button></div><p class="du-small-note">Время указано суммарно, при последовательном приготовлении. У двух поваров может получиться быстрее.</p></div>
+ <div class="du-builder-right"><div class="du-mini-eyebrow">ВАШ ПЛАН НА ВЕЧЕР</div><div class="du-menu-intro" id="menuIntro">Мягкий свет, музыка и три блюда, которыми приятно поделиться.</div><div id="menuPreview" class="du-menu-preview" aria-live="polite"></div><div class="du-menu-meta" id="menuMeta"></div><div class="du-menu-actions"><button class="du-btn du-btn-primary" id="beginEvening" type="button">Начать наш вечер <span>↗</span></button><button class="du-btn du-btn-muted" id="addMenuShopping" type="button">Список покупок <span>▤</span></button></div></div></div>
+</section>
   <div class="du-evening-pinned du-match11-pinned" id="eveningPinned" hidden role="status" aria-live="polite">
     <span>Ваш рецепт: <strong id="eveningPinnedTitle"></strong></span>
     <button id="eveningClearChoice" type="button" aria-label="Убрать выбранный рецепт">×</button>
@@ -1105,16 +1117,7 @@ body:not(.du-evening-mode) .du-evening-back{display:none!important}
 </section>
 <div class="du-evening-wide-strip du-evening-strip-two"><span class="du-evening-strip-number">УЖИНАЕМ ВДВОЁМ</span><p>Иногда самый важный разговор начинается после первого бокала</p></div>
 </section>
-<section class="du-evening container" id="evening" aria-labelledby="eveningTitle"><div id="eveningBuilder"></div>
- <div class="du-section-top"><div class="du-eyebrow">ВЫБЕРИ НАСТРОЕНИЕ</div><div class="du-section-heading"><h2 id="eveningTitle">Каким будет <em>ваш вечер?</em></h2><p>Не начинайте со списка продуктов. Начните с того, что хочется почувствовать. А мы соберём меню из настоящих рецептов.</p></div></div>
- <div class="du-moods" role="group" aria-label="Настроение вечера">
- <button type="button" class="du-mood is-selected" data-mood="tender" aria-pressed="true"><span class="du-mood-num">01</span><span class="du-mood-icon">🕯️</span><strong>Нежный</strong><small>Тихие разговоры, мягкие вкусы</small><span class="du-mood-check">↗</span></button>
- <button type="button" class="du-mood" data-mood="spark" aria-pressed="false"><span class="du-mood-num">02</span><span class="du-mood-icon">🌶️</span><strong>С искрой</strong><small>Пусть будет горячо</small><span class="du-mood-check">↗</span></button>
- <button type="button" class="du-mood" data-mood="play" aria-pressed="false"><span class="du-mood-num">03</span><span class="du-mood-icon">🍓</span><strong>Игривый</strong><small>Шутки, музыка и две вилки</small><span class="du-mood-check">↗</span></button>
- <button type="button" class="du-mood" data-mood="cozy" aria-pressed="false"><span class="du-mood-num">04</span><span class="du-mood-icon">🥂</span><strong>Уютный</strong><small>Никуда не торопимся</small><span class="du-mood-check">↗</span></button>
- </div>
- <div class="du-builder"><div class="du-builder-left"><div class="du-mini-eyebrow">ЕЩЁ ОДИН ВОПРОС</div><h3>Сколько времени<br>есть <i>на удовольствие?</i></h3><div class="du-time-choices" role="group" aria-label="Продолжительность приготовления"><button type="button" data-time="quick" aria-pressed="false">До 45 минут</button><button type="button" data-time="relaxed" aria-pressed="true" class="is-selected">До 75 минут</button><button type="button" data-time="long" aria-pressed="false">Не торопимся</button></div><p class="du-small-note">Время указано суммарно, при последовательном приготовлении. У двух поваров может получиться быстрее.</p></div>
- <div class="du-builder-right"><div class="du-mini-eyebrow">ВАШ ПЛАН НА ВЕЧЕР</div><div class="du-menu-intro" id="menuIntro">Мягкий свет, музыка и три блюда, которыми приятно поделиться.</div><div id="menuPreview" class="du-menu-preview" aria-live="polite"></div><div class="du-menu-meta" id="menuMeta"></div><div class="du-menu-actions"><button class="du-btn du-btn-primary" id="beginEvening" type="button">Начать наш вечер <span>↗</span></button><button class="du-btn du-btn-muted" id="addMenuShopping" type="button">Список покупок <span>▤</span></button></div></div></div>
+<section class="du-evening container" id="eveningContinuation" aria-label="Продолжение вечера">
  <div class="du-evening-experience" aria-label="Совместный вечер">
   <article class="du-evening-together">
    <img src="assets/our-evening-together-approved.webp" alt="Пара вместе готовит на уютной кухне в тёплом вечернем свете" loading="lazy" decoding="async">

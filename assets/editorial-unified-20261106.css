@@ -78,21 +78,21 @@
 /* Our Evening is the romantic editorial feature, not a separate visual product.
    Keep all previously approved photos and preserve every interactive control. */
 body.du-evening-mode #eveningLanding,
-body.du-evening-mode #evening,
+body.du-evening-mode :is(#evening,#eveningContinuation),
 body.du-evening-mode #music {
   --story-ink: var(--du-magazine-wine-dark);
   --story-surface: var(--du-magazine-cream);
 }
 body.du-evening-mode #eveningLanding .du-evening-landing-kicker,
 body.du-evening-mode #eveningLanding .du-story-eyebrow,
-body.du-evening-mode #evening .du-mini-eyebrow,
+body.du-evening-mode :is(#evening,#eveningContinuation) .du-mini-eyebrow,
 body.du-evening-mode #music .du-eyebrow {
   color: #95576b;
   letter-spacing: .12em;
 }
 body.du-evening-mode #eveningLanding .du-evening-landing-content h1,
 body.du-evening-mode #eveningLanding .du-story-dinner-copy h2,
-body.du-evening-mode #evening .du-section-heading h2,
+body.du-evening-mode :is(#evening,#eveningContinuation) .du-section-heading h2,
 body.du-evening-mode #music .du-section-heading h2 {
   font-family: var(--du-magazine-serif);
   letter-spacing: -.04em;
@@ -100,13 +100,13 @@ body.du-evening-mode #music .du-section-heading h2 {
   text-wrap: balance;
 }
 body.du-evening-mode #eveningLanding .du-evening-landing-lead,
-body.du-evening-mode #evening .du-section-heading p,
+body.du-evening-mode :is(#evening,#eveningContinuation) .du-section-heading p,
 body.du-evening-mode #music .du-section-heading p {
   color: var(--du-magazine-copy);
 }
 body.du-evening-mode #eveningLanding .du-evening-landing-photo,
 body.du-evening-mode #eveningLanding .du-story-dinner,
-body.du-evening-mode #evening .du-story-after {
+body.du-evening-mode :is(#evening,#eveningContinuation) .du-story-after {
   border-radius: 12px;
 }
 body.du-evening-mode #eveningLanding .du-evening-inspiration-card {
@@ -124,8 +124,8 @@ body.du-evening-mode #eveningLanding .du-evening-inspiration-head strong {
   font-weight: 600;
 }
 body.du-evening-mode #eveningLanding .du-evening-landing-cta,
-body.du-evening-mode #evening .du-menu-actions .du-btn-primary,
-body.du-evening-mode #evening .du-evening-invite-actions .du-btn-primary {
+body.du-evening-mode :is(#evening,#eveningContinuation) .du-menu-actions .du-btn-primary,
+body.du-evening-mode :is(#evening,#eveningContinuation) .du-evening-invite-actions .du-btn-primary {
   background: var(--du-magazine-wine);
   border-color: var(--du-magazine-wine);
 }
@@ -148,8 +148,8 @@ body.du-evening-mode #music .du-music-card {
     font-size: 16px;
     line-height: 1.7;
   }
-  body.du-evening-mode #evening .du-evening-together-content > p,
-  body.du-evening-mode #evening .du-evening-invitation-content > p {
+  body.du-evening-mode :is(#evening,#eveningContinuation) .du-evening-together-content > p,
+  body.du-evening-mode :is(#evening,#eveningContinuation) .du-evening-invitation-content > p {
     font-size: 16px;
     line-height: 1.65;
   }
@@ -821,46 +821,46 @@ body.du-evening-mode #eveningLanding .du-story-dinner-copy h2 {
 body.du-evening-mode #eveningLanding .du-story-dinner-copy p {
   font-size:17px;line-height:1.72;color:#674e57;
 }
-body.du-evening-mode #evening .du-section-top {
+body.du-evening-mode :is(#evening,#eveningContinuation) .du-section-top {
   border-top:2px solid #8c4a61;padding-top:22px;
 }
-body.du-evening-mode #evening .du-section-heading h2,
+body.du-evening-mode :is(#evening,#eveningContinuation) .du-section-heading h2,
 body.du-evening-mode #music .du-section-heading h2 {
   font-size:clamp(54px,6vw,90px);line-height:.95;
 }
-body.du-evening-mode #evening .du-mood,
-body.du-evening-mode #evening .du-builder,
-body.du-evening-mode #evening .du-evening-invitation {
+body.du-evening-mode :is(#evening,#eveningContinuation) .du-mood,
+body.du-evening-mode :is(#evening,#eveningContinuation) .du-builder,
+body.du-evening-mode :is(#evening,#eveningContinuation) .du-evening-invitation {
   border-radius:6px;
 }
-body.du-evening-mode #evening .du-mood:focus-visible,
-body.du-evening-mode #evening .du-evening-role-actions button:focus-visible {
+body.du-evening-mode :is(#evening,#eveningContinuation) .du-mood:focus-visible,
+body.du-evening-mode :is(#evening,#eveningContinuation) .du-evening-role-actions button:focus-visible {
   outline:3px solid #99516a;outline-offset:3px;
 }
-body.du-evening-mode #evening .du-evening-together-content > p,
-body.du-evening-mode #evening .du-evening-invitation-content > p {
+body.du-evening-mode :is(#evening,#eveningContinuation) .du-evening-together-content > p,
+body.du-evening-mode :is(#evening,#eveningContinuation) .du-evening-invitation-content > p {
   font-size:15px;line-height:1.7;
 }
-body.du-evening-mode #evening .du-evening-role-card small,
-body.du-evening-mode #evening .du-evening-role-actions span {
+body.du-evening-mode :is(#evening,#eveningContinuation) .du-evening-role-card small,
+body.du-evening-mode :is(#evening,#eveningContinuation) .du-evening-role-actions span {
   font-size:12px;line-height:1.5;
 }
-body.du-evening-mode #evening .du-story-after {
+body.du-evening-mode :is(#evening,#eveningContinuation) .du-story-after {
   min-height:490px;border-radius:4px;
   grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);
   margin-top:clamp(44px,6vw,90px);
 }
-body.du-evening-mode #evening .du-story-after-copy {
+body.du-evening-mode :is(#evening,#eveningContinuation) .du-story-after-copy {
   padding:clamp(32px,4vw,70px);
 }
-body.du-evening-mode #evening .du-story-after-copy h2 {
+body.du-evening-mode :is(#evening,#eveningContinuation) .du-story-after-copy h2 {
   font:500 clamp(54px,5vw,79px)/.95 var(--du-magazine-serif);
   letter-spacing:-.06em;
 }
-body.du-evening-mode #evening .du-story-after-copy p {
+body.du-evening-mode :is(#evening,#eveningContinuation) .du-story-after-copy p {
   font-size:17px;line-height:1.75;
 }
-body.du-evening-mode #evening .du-story-after-photo {min-height:490px;}
+body.du-evening-mode :is(#evening,#eveningContinuation) .du-story-after-photo {min-height:490px;}
 body.du-evening-mode #music .du-music-card {
   border-radius:5px;background:#f7ede8;
   box-shadow:none;border:1px solid #e5d6cf;
@@ -891,20 +891,20 @@ body.du-evening-mode #music .du-bpm-track-details strong {
     font-size:clamp(25px,5vw,33px);
   }
   body.du-evening-mode #eveningLanding .du-story-dinner,
-  body.du-evening-mode #evening .du-story-after {
+  body.du-evening-mode :is(#evening,#eveningContinuation) .du-story-after {
     grid-template-columns:minmax(0,1fr);
   }
   body.du-evening-mode #eveningLanding .du-story-dinner-photo {min-height:clamp(260px,65vw,480px);}
-  body.du-evening-mode #evening .du-story-after-photo {min-height:clamp(280px,66vw,480px);}
+  body.du-evening-mode :is(#evening,#eveningContinuation) .du-story-after-photo {min-height:clamp(280px,66vw,480px);}
   body.du-evening-mode #eveningLanding .du-story-dinner-copy,
-  body.du-evening-mode #evening .du-story-after-copy {
+  body.du-evening-mode :is(#evening,#eveningContinuation) .du-story-after-copy {
     padding:clamp(25px,5vw,44px);
   }
   body.du-evening-mode #eveningLanding .du-story-dinner-copy h2,
-  body.du-evening-mode #evening .du-story-after-copy h2 {
+  body.du-evening-mode :is(#evening,#eveningContinuation) .du-story-after-copy h2 {
     font-size:clamp(45px,8vw,68px);
   }
-  body.du-evening-mode #evening .du-section-heading h2,
+  body.du-evening-mode :is(#evening,#eveningContinuation) .du-section-heading h2,
   body.du-evening-mode #music .du-section-heading h2 {
     font-size:clamp(51px,8vw,72px);
   }
@@ -931,8 +931,8 @@ body.du-evening-mode #music .du-bpm-track-details strong {
     font-size:12px;padding:9px 7px;
   }
   body.du-evening-mode #eveningLanding .du-evening-inspiration-card small {font-size:11px;}
-  body.du-evening-mode #evening .du-evening-together-content > p,
-  body.du-evening-mode #evening .du-evening-invitation-content > p {
+  body.du-evening-mode :is(#evening,#eveningContinuation) .du-evening-together-content > p,
+  body.du-evening-mode :is(#evening,#eveningContinuation) .du-evening-invitation-content > p {
     font-size:16px;
   }
   body.du-evening-mode #music .du-music-card-desc {font-size:16px;}
@@ -1204,19 +1204,19 @@ body.du-evening-mode #eveningLanding .du-story-dinner-copy{
 body.du-evening-mode #eveningLanding .du-story-dinner-copy h2{font-size:clamp(48px,5vw,83px);line-height:.92;color:#55232b}
 body.du-evening-mode #eveningLanding .du-story-dinner-copy h2 em{color:#751d2d}
 body.du-evening-mode #eveningLanding .du-story-dinner-copy p{font-size:clamp(16px,1.25vw,18px)}
-body.du-evening-mode #evening .du-section-heading h2,
+body.du-evening-mode :is(#evening,#eveningContinuation) .du-section-heading h2,
 body.du-evening-mode #music .du-section-heading h2{color:#55232b}
-body.du-evening-mode #evening{padding-top:clamp(38px,4vw,70px)}
-body.du-evening-mode #evening .du-mood{background:#fff8ef;border:1px solid #d9c3b4;border-radius:3px}
-body.du-evening-mode #evening .du-evening-together{border-radius:1px}
-body.du-evening-mode #evening .du-evening-invitation{border-radius:1px}
-body.du-evening-mode #evening .du-story-after{
+body.du-evening-mode :is(#evening,#eveningContinuation){padding-top:clamp(38px,4vw,70px)}
+body.du-evening-mode :is(#evening,#eveningContinuation) .du-mood{background:#fff8ef;border:1px solid #d9c3b4;border-radius:3px}
+body.du-evening-mode :is(#evening,#eveningContinuation) .du-evening-together{border-radius:1px}
+body.du-evening-mode :is(#evening,#eveningContinuation) .du-evening-invitation{border-radius:1px}
+body.du-evening-mode :is(#evening,#eveningContinuation) .du-story-after{
  grid-template-columns:minmax(0,.92fr) minmax(0,1.08fr);
  background:#372420;border-radius:0;clip-path:var(--du-editorial-rough-edge);
  margin-top:clamp(55px,6vw,90px);
 }
-body.du-evening-mode #evening .du-story-after-copy{padding:clamp(33px,4.6vw,70px)}
-body.du-evening-mode #evening .du-story-after-copy h2{font-size:clamp(49px,5.5vw,85px);color:#f8ebdf}
+body.du-evening-mode :is(#evening,#eveningContinuation) .du-story-after-copy{padding:clamp(33px,4.6vw,70px)}
+body.du-evening-mode :is(#evening,#eveningContinuation) .du-story-after-copy h2{font-size:clamp(49px,5.5vw,85px);color:#f8ebdf}
 body.du-evening-mode #music{padding-block:clamp(55px,7vw,110px)}
 body.du-evening-mode #music .du-music-card{
  border-radius:3px;background:var(--du-editorial-paper-grain);
@@ -1333,7 +1333,7 @@ body.du-evening-mode #music .du-music-player{min-height:54px}
  body.du-evening-mode #eveningLanding .du-story-dinner-copy{padding:31px 22px}
  body.du-evening-mode #eveningLanding .du-evening-landing-content h1{font-size:clamp(77px,17vw,112px);line-height:.81}
  body.du-evening-mode #eveningLanding .du-evening-landing-lead{font-size:clamp(26px,6.5vw,35px)}
- body.du-evening-mode #evening .du-story-after{grid-template-columns:1fr;clip-path:none}
+ body.du-evening-mode :is(#evening,#eveningContinuation) .du-story-after{grid-template-columns:1fr;clip-path:none}
  body.du-evening-mode #music .du-music-card h3{font-size:clamp(37px,9vw,55px)}
  #recipeView.recipe-page{padding:22px 16px 66px}
  #recipeDetail .recipe-intro{display:flex;flex-direction:column;gap:0}
@@ -1419,7 +1419,7 @@ body.du-evening-mode #music .du-music-player{min-height:54px}
  body.du-evening-mode #eveningLanding > .du-story-dinner{
    order:2;display:grid;grid-template-columns:minmax(0,1fr);
  }
- body.du-evening-mode #evening .du-story-after{grid-template-columns:minmax(0,1fr)}
+ body.du-evening-mode :is(#evening,#eveningContinuation) .du-story-after{grid-template-columns:minmax(0,1fr)}
 }
 
 /* SITEWIDE_EDITORIAL_RECIPE_STEP_READABILITY_FIX_20261108
@@ -1688,7 +1688,7 @@ body.du-evening-mode #eveningLanding .du-story-dinner-copy p{
   color:#473b33;
   line-height:1.58;
 }
-body.du-evening-mode #evening .du-story-after{
+body.du-evening-mode :is(#evening,#eveningContinuation) .du-story-after{
   position:relative;
   isolation:isolate;
   overflow:visible;
@@ -1696,7 +1696,7 @@ body.du-evening-mode #evening .du-story-after{
   clip-path:none;
   border-radius:0;
 }
-body.du-evening-mode #evening .du-story-after::after{
+body.du-evening-mode :is(#evening,#eveningContinuation) .du-story-after::after{
   content:"";
   position:absolute;
   left:0;
@@ -1708,7 +1708,7 @@ body.du-evening-mode #evening .du-story-after::after{
   background:var(--du-editorial-paper-grain);
   clip-path:polygon(0 65%,5% 32%,12% 61%,18% 30%,25% 68%,31% 38%,37% 76%,44% 35%,51% 66%,58% 29%,65% 64%,72% 33%,78% 75%,85% 38%,92% 70%,100% 30%,100% 100%,0 100%);
 }
-body.du-evening-mode #evening .du-story-after-copy h2{
+body.du-evening-mode :is(#evening,#eveningContinuation) .du-story-after-copy h2{
   font-style:italic;
   font-weight:400;
   line-height:.92;
@@ -1835,14 +1835,14 @@ body.du-evening-mode #music a:focus-visible{
     grid-row:1;
     min-height:clamp(400px,38vw,545px);
   }
-  body.du-evening-mode #evening .du-story-after{
+  body.du-evening-mode :is(#evening,#eveningContinuation) .du-story-after{
     min-height:clamp(400px,40vw,560px);
     grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);
   }
-  body.du-evening-mode #evening .du-story-after-copy{
+  body.du-evening-mode :is(#evening,#eveningContinuation) .du-story-after-copy{
     padding:clamp(31px,4.6vw,70px);
   }
-  body.du-evening-mode #evening .du-story-after-copy h2{
+  body.du-evening-mode :is(#evening,#eveningContinuation) .du-story-after-copy h2{
     font-size:clamp(49px,5.6vw,88px);
   }
 }
@@ -1883,7 +1883,7 @@ body.du-evening-mode #music a:focus-visible{
   body.du-evening-mode #eveningLanding .du-story-dinner-copy h2{
     font-size:clamp(45px,10vw,64px);
   }
-  body.du-evening-mode #evening .du-story-after{
+  body.du-evening-mode :is(#evening,#eveningContinuation) .du-story-after{
     overflow:hidden;
   }
   body.du-evening-mode #music .du-music-card{
@@ -1924,7 +1924,7 @@ body.du-evening-mode #eveningLanding .du-story-dinner-copy{
   border:0;
   box-shadow:none;
 }
-body.du-evening-mode #evening .du-story-after-copy{
+body.du-evening-mode :is(#evening,#eveningContinuation) .du-story-after-copy{
   position:relative;
   z-index:2;
   background:transparent;
@@ -2034,18 +2034,18 @@ body.du-evening-mode #evening .du-story-after-copy{
     clip-path:polygon(0 73%,5% 48%,10% 66%,18% 42%,24% 81%,31% 44%,39% 71%,47% 35%,54% 72%,60% 40%,67% 66%,75% 36%,83% 76%,90% 41%,95% 68%,100% 49%,100% 100%,0 100%);
   }
   /* Evening photo bleeds INTO the dark paper instead of sitting in a box. */
-  body.du-evening-mode #evening .du-story-after{
+  body.du-evening-mode :is(#evening,#eveningContinuation) .du-story-after{
     isolation:isolate;
     background:linear-gradient(105deg,#2e1c19 0%,#48291f 63%,#43251b 100%);
   }
-  body.du-evening-mode #evening .du-story-after-photo{
+  body.du-evening-mode :is(#evening,#eveningContinuation) .du-story-after-photo{
     width:calc(100% + clamp(75px,11vw,160px));
     margin-left:calc(-1 * clamp(75px,11vw,160px));
     overflow:visible;
     -webkit-mask-image:linear-gradient(to right,transparent 0%,rgba(0,0,0,.4) 17%,#000 40%);
     mask-image:linear-gradient(to right,transparent 0%,rgba(0,0,0,.4) 17%,#000 40%);
   }
-  body.du-evening-mode #evening .du-story-after-photo img{
+  body.du-evening-mode :is(#evening,#eveningContinuation) .du-story-after-photo img{
     display:block;
     height:100%;
     width:100%;
@@ -2079,7 +2079,7 @@ body.du-evening-mode #evening .du-story-after-copy{
     -webkit-mask-image:linear-gradient(to bottom,transparent 0%,#000 13%,#000 100%);
     mask-image:linear-gradient(to bottom,transparent 0%,#000 13%,#000 100%);
   }
-  body.du-evening-mode #evening .du-story-after-photo{
+  body.du-evening-mode :is(#evening,#eveningContinuation) .du-story-after-photo{
     overflow:hidden;
     -webkit-mask-image:linear-gradient(to bottom,transparent 0%,#000 15%,#000 100%);
     mask-image:linear-gradient(to bottom,transparent 0%,#000 15%,#000 100%);
@@ -6253,8 +6253,8 @@ body:not(:has(#catalog:target)) .du-evening-back.du-catalog-back{
 body.du-evening-mode #eveningLanding .du-evening-landing-kicker{font-size:13px}
 body.du-evening-mode #eveningLanding .du-evening-inspiration-card small,
 body.du-evening-mode #eveningLanding .du-evening-inspiration-credit,
-body.du-evening-mode #evening .du-evening-role-card small,
-body.du-evening-mode #evening .du-evening-role-actions span{font-size:14px;line-height:1.5}
+body.du-evening-mode :is(#evening,#eveningContinuation) .du-evening-role-card small,
+body.du-evening-mode :is(#evening,#eveningContinuation) .du-evening-role-actions span{font-size:14px;line-height:1.5}
 body.du-evening-mode #eveningLanding .du-evening-inspiration-card span{font-size:14px}
 body.du-evening-mode #music .du-bpm-track-details span{font-size:14px}
 #airfryer .du-airfryer-card-meta,#airfryer .du-airfryer-card-bottom{font-size:14px}
@@ -7260,7 +7260,7 @@ body.du-evening-mode{
   --evening-ink:#332421;
 }
 body.du-evening-mode #eveningLanding,
-body.du-evening-mode #evening,
+body.du-evening-mode :is(#evening,#eveningContinuation),
 body.du-evening-mode #music{
   color:var(--evening-ink);
 }
@@ -7290,7 +7290,7 @@ body.du-evening-mode #eveningLanding .du-evening-landing-text{
 }
 body.du-evening-mode #eveningLanding .du-evening-landing-photo img,
 body.du-evening-mode #eveningLanding .du-story-dinner-photo img,
-body.du-evening-mode #evening .du-story-after-photo img{
+body.du-evening-mode :is(#evening,#eveningContinuation) .du-story-after-photo img{
   filter:saturate(1.02) contrast(1.04);
 }
 body.du-evening-mode #eveningLanding .du-evening-landing-cta,
@@ -7302,13 +7302,13 @@ body.du-evening-mode #eveningLanding .du-story-dinner-copy .du-btn{
   clip-path:polygon(0 7%,5% 2%,11% 7%,18% 1%,28% 5%,37% 0,47% 5%,55% 1%,64% 6%,73% 0,82% 5%,92% 1%,100% 5%,99% 95%,91% 100%,80% 94%,71% 99%,60% 95%,52% 100%,42% 95%,33% 99%,24% 95%,14% 100%,5% 95%,0 98%);
 }
 body.du-evening-mode #eveningLanding .du-story-dinner-copy h2,
-body.du-evening-mode #evening .du-story-after-copy h2{
+body.du-evening-mode :is(#evening,#eveningContinuation) .du-story-after-copy h2{
   font-family:var(--du-magazine-serif);
   letter-spacing:-.055em;
   line-height:.96;
 }
 body.du-evening-mode #eveningLanding .du-story-dinner-copy h2::after,
-body.du-evening-mode #evening .du-story-after-copy h2::after{
+body.du-evening-mode :is(#evening,#eveningContinuation) .du-story-after-copy h2::after{
   content:"";
   display:block;
   height:18px;
@@ -7369,7 +7369,7 @@ body.du-evening-mode .du-evening-strip-three{
 body.du-evening-mode #eveningLanding .du-story-dinner{
   margin-top:0;
 }
-body.du-evening-mode #evening .du-story-after{
+body.du-evening-mode :is(#evening,#eveningContinuation) .du-story-after{
   margin-bottom:0;
 }
 @media(min-width:1021px){
@@ -7425,7 +7425,7 @@ body.du-evening-mode #homeView > #eveningLanding{
   padding-right:0;
 }
 body.du-evening-mode #eveningLanding > .du-evening-wide-strip,
-body.du-evening-mode #evening > .du-evening-wide-strip{
+body.du-evening-mode :is(#evening,#eveningContinuation) > .du-evening-wide-strip{
   position:relative;
   left:50%;
   width:100vw;
@@ -7464,7 +7464,7 @@ body.du-evening-mode #eveningLanding .du-story-dinner-copy .du-btn{
   border-radius:2px;
   border:1px solid rgba(83,34,47,.3);
 }
-body.du-evening-mode #evening .du-story-after{
+body.du-evening-mode :is(#evening,#eveningContinuation) .du-story-after{
   position:relative;
   left:50%;
   width:100vw;
@@ -7480,8 +7480,8 @@ body.du-evening-mode #evening .du-story-after{
     margin-right:0;
   }
   body.du-evening-mode #eveningLanding > .du-evening-wide-strip,
-  body.du-evening-mode #evening > .du-evening-wide-strip,
-  body.du-evening-mode #evening .du-story-after{
+  body.du-evening-mode :is(#evening,#eveningContinuation) > .du-evening-wide-strip,
+  body.du-evening-mode :is(#evening,#eveningContinuation) .du-story-after{
     width:100vw;
     left:50%;
     margin-left:-50vw;
@@ -7499,9 +7499,9 @@ body.du-evening-mode #eveningLanding > .du-evening-landing-photo,
 body.du-evening-mode #eveningLanding > .du-story-dinner,
 body.du-evening-mode #eveningLanding .du-story-dinner-copy,
 body.du-evening-mode #eveningLanding .du-story-dinner-photo,
-body.du-evening-mode #evening .du-story-after,
-body.du-evening-mode #evening .du-story-after-copy,
-body.du-evening-mode #evening .du-story-after-photo,
+body.du-evening-mode :is(#evening,#eveningContinuation) .du-story-after,
+body.du-evening-mode :is(#evening,#eveningContinuation) .du-story-after-copy,
+body.du-evening-mode :is(#evening,#eveningContinuation) .du-story-after-photo,
 body.du-evening-mode .du-evening-wide-strip{
   clip-path:none!important;
   border-radius:0!important;
@@ -7517,27 +7517,27 @@ body.du-evening-mode #eveningLanding > .du-evening-landing-content::after,
 body.du-evening-mode #eveningLanding > .du-evening-landing-photo::after,
 body.du-evening-mode #eveningLanding > .du-story-dinner::after,
 body.du-evening-mode #eveningLanding .du-story-dinner-copy::before,
-body.du-evening-mode #evening .du-story-after::after{
+body.du-evening-mode :is(#evening,#eveningContinuation) .du-story-after::after{
   content:none!important;
   display:none!important;
 }
 body.du-evening-mode #eveningLanding > .du-evening-landing-photo > img,
 body.du-evening-mode #eveningLanding .du-story-dinner-photo,
-body.du-evening-mode #evening .du-story-after-photo{
+body.du-evening-mode :is(#evening,#eveningContinuation) .du-story-after-photo{
   /* Preserve original photos while avoiding conspicuous wavy masks. */
   -webkit-mask-image:none!important;
   mask-image:none!important;
 }
 body.du-evening-mode #eveningLanding .du-evening-landing-cta,
 body.du-evening-mode #eveningLanding .du-story-dinner-copy .du-btn,
-body.du-evening-mode #evening .du-story-after-copy .du-btn{
+body.du-evening-mode :is(#evening,#eveningContinuation) .du-story-after-copy .du-btn{
   clip-path:none!important;
   -webkit-mask:none!important;
   mask:none!important;
   border-radius:2px!important;
 }
 body.du-evening-mode #eveningLanding .du-story-dinner-copy h2::after,
-body.du-evening-mode #evening .du-story-after-copy h2::after{
+body.du-evening-mode :is(#evening,#eveningContinuation) .du-story-after-copy h2::after{
   /* A straight accent rule replaces the oversized decorative curved stroke. */
   background:none!important;
   height:2px!important;
@@ -7755,7 +7755,7 @@ body.du-evening-mode .du-evening-wide-strip p{
   line-height:1.07;
   margin:0 auto;
 }
-body.du-evening-mode #evening .du-story-after{
+body.du-evening-mode :is(#evening,#eveningContinuation) .du-story-after{
   display:grid;
   grid-template-columns:minmax(0,.45fr) minmax(0,.55fr);
   margin-top:clamp(40px,5vw,80px);
@@ -7764,7 +7764,7 @@ body.du-evening-mode #evening .du-story-after{
   background:#372421;
   gap:0;
 }
-body.du-evening-mode #evening .du-story-after-copy{
+body.du-evening-mode :is(#evening,#eveningContinuation) .du-story-after-copy{
   grid-column:1;
   grid-row:1;
   position:relative;
@@ -7775,11 +7775,11 @@ body.du-evening-mode #evening .du-story-after-copy{
   z-index:2;
   background:#372421!important;
 }
-body.du-evening-mode #evening .du-story-after-copy h2{
+body.du-evening-mode :is(#evening,#eveningContinuation) .du-story-after-copy h2{
   font-size:clamp(48px,5.1vw,85px);
   line-height:.93;
 }
-body.du-evening-mode #evening .du-story-after-photo{
+body.du-evening-mode :is(#evening,#eveningContinuation) .du-story-after-photo{
   grid-column:2;
   grid-row:1;
   min-height:clamp(470px,42vw,600px);
@@ -7792,7 +7792,7 @@ body.du-evening-mode #evening .du-story-after-photo{
   -webkit-mask-image:none!important;
   mask-image:none!important;
 }
-body.du-evening-mode #evening .du-story-after-photo img{
+body.du-evening-mode :is(#evening,#eveningContinuation) .du-story-after-photo img{
   width:100%;
   height:100%;
   display:block;
@@ -7882,17 +7882,17 @@ body.du-evening-mode #evening .du-story-after-photo img{
   body.du-evening-mode #eveningLanding > .du-evening-strip-two{
     order:4;
   }
-  body.du-evening-mode #evening .du-story-after{
+  body.du-evening-mode :is(#evening,#eveningContinuation) .du-story-after{
     display:flex;
     flex-direction:column;
     min-height:0;
   }
-  body.du-evening-mode #evening .du-story-after-photo{
+  body.du-evening-mode :is(#evening,#eveningContinuation) .du-story-after-photo{
     order:0;
     min-height:clamp(300px,75vw,500px);
     width:100%;
   }
-  body.du-evening-mode #evening .du-story-after-copy{
+  body.du-evening-mode :is(#evening,#eveningContinuation) .du-story-after-copy{
     order:1;
     padding:35px 24px 43px;
   }
