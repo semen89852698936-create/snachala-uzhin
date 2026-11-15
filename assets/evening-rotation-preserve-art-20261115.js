@@ -325,7 +325,7 @@
   let node;
   while ((node = walker.nextNode())) {
     if (node.nodeValue.includes('У каждого вечера')) {
-      node.nodeValue = node.nodeValue.replace('У каждого вечера', 'У всего есть');
+      node.nodeValue = node.nodeValue.replace('У каждого вечера', 'У всего есть ');
       break;
     }
   }
