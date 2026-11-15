@@ -1,0 +1,201 @@
+{
+  "status": "approved_public_design_data_swap_QA_pending",
+  "date": "2026-11-16",
+  "base_sha": "c19b0ba277441f445c4d8533340e39d3299cf6ab",
+  "catalog_target": 1001,
+  "categories": {
+    "meat": 100,
+    "poultry": 100,
+    "vegetables": 100
+  },
+  "count": 20,
+  "no_text_photo_ids": [
+    "nd-beef-slow-onion",
+    "nd-pork-mushrooms-sourcream",
+    "nd-beef-stroganoff-mushrooms",
+    "nd-pork-oven-shashlik"
+  ],
+  "entries": [
+    {
+      "old_id": "collection-meat-06-05",
+      "new_id": "nd-rustic-pork-potatoes",
+      "category": "meat",
+      "path": "assets/replacement-20-20261116/nd-rustic-pork-potatoes.webp",
+      "blobSha": "8054820fdfb142ab613cad0e136fd00fd0277b46",
+      "fromSource": "handoff/2026-11-14",
+      "title": "Жаркое по-деревенски"
+    },
+    {
+      "old_id": "collection-meat-06-06",
+      "new_id": "nd-pork-vegetables-tomato",
+      "category": "meat",
+      "path": "assets/replacement-20-20261116/nd-pork-vegetables-tomato.webp",
+      "blobSha": "e21423940c9528cecfef01025d84889c5ae4e326",
+      "fromSource": "handoff/2026-11-14",
+      "title": "Свинина с овощами в томатном соусе"
+    },
+    {
+      "old_id": "collection-meat-06-07",
+      "new_id": "nd-beef-goulash-potatoes",
+      "category": "meat",
+      "path": "assets/replacement-20-20261116/nd-beef-goulash-potatoes.webp",
+      "blobSha": "3e2a6b7fc5fe47cb403e3c83c160203771d05f8b",
+      "fromSource": "handoff/2026-11-14",
+      "title": "Гуляш из говядины с картофелем"
+    },
+    {
+      "old_id": "collection-meat-06-09",
+      "new_id": "nd-beef-stroganoff-classic",
+      "category": "meat",
+      "path": "assets/replacement-20-20261116/nd-beef-stroganoff-classic.webp",
+      "blobSha": "71b0930bb30e049fc803bfc3b9d3b47fd97fe12e",
+      "fromSource": "handoff/2026-11-14",
+      "title": "Бефстроганов из говядины"
+    },
+    {
+      "old_id": "collection-meat-06-10",
+      "new_id": "nd-beef-stroganoff-mushrooms",
+      "category": "meat",
+      "path": "assets/replacement-20-20261116/nd-beef-stroganoff-mushrooms.webp",
+      "blobSha": "f8714d78fc89393163b100b13d63fb543e01b977",
+      "fromSource": "four_no_text_photos_generation_20261116",
+      "title": "Бефстроганов с грибами"
+    },
+    {
+      "old_id": "collection-meat-07-03",
+      "new_id": "plov-shadi-bek-quince",
+      "category": "meat",
+      "path": "assets/replacement-20-20261116/plov-shadi-bek-quince.webp",
+      "blobSha": "35460c3695febde980fbf2d43e32348dc6fdb204",
+      "fromSource": "handoff/2026-11-14",
+      "title": "Плов по-шади-бекски с айвой"
+    },
+    {
+      "old_id": "collection-meat-07-06",
+      "new_id": "plov-uzbek-classic",
+      "category": "meat",
+      "path": "assets/replacement-20-20261116/plov-uzbek-classic.webp",
+      "blobSha": "d442ffa24c40f4bfd74510ae511ce1a27ede1b88",
+      "fromSource": "handoff/2026-11-14",
+      "title": "Узбекский плов с бараниной"
+    },
+    {
+      "old_id": "collection-meat-07-08",
+      "new_id": "plov-ugro-tajik",
+      "category": "meat",
+      "path": "assets/replacement-20-20261116/plov-ugro-tajik.webp",
+      "blobSha": "bdba45e6db0ab77a651a7e80791910c122e464c2",
+      "fromSource": "handoff/2026-11-14",
+      "title": "Угро-плов с бараниной"
+    },
+    {
+      "old_id": "collection-meat-07-09",
+      "new_id": "plov-lamb-barberry",
+      "category": "meat",
+      "path": "assets/replacement-20-20261116/plov-lamb-barberry.webp",
+      "blobSha": "b1fe5262ed1f89f4b98dbffe30d581d2a49ed45b",
+      "fromSource": "handoff/2026-11-14",
+      "title": "Плов из баранины с барбарисом"
+    },
+    {
+      "old_id": "collection-meat-08-05",
+      "new_id": "plov-beef-rustic",
+      "category": "meat",
+      "path": "assets/replacement-20-20261116/plov-beef-rustic.webp",
+      "blobSha": "b3594c239413d4662417a51bfd048ebaa46ac25e",
+      "fromSource": "handoff/2026-11-14",
+      "title": "Плов с говядиной"
+    },
+    {
+      "old_id": "collection-meat-08-06",
+      "new_id": "plov-cumin-barberry",
+      "category": "meat",
+      "path": "assets/replacement-20-20261116/plov-cumin-barberry.webp",
+      "blobSha": "f4dee93c3c3725366ea5922fd7b9d0c65cd33565",
+      "fromSource": "handoff/2026-11-14",
+      "title": "Плов с зирой и барбарисом"
+    },
+    {
+      "old_id": "collection-meat-08-09",
+      "new_id": "nd-beef-peppers-soy",
+      "category": "meat",
+      "path": "assets/replacement-20-20261116/nd-beef-peppers-soy.webp",
+      "blobSha": "4d845ec58e0966753b305f3b140f27cedf22cbad",
+      "fromSource": "handoff/2026-11-14",
+      "title": "Говядина с болгарским перцем и соевым соусом"
+    },
+    {
+      "old_id": "collection-meat-08-10",
+      "new_id": "nd-beef-slow-onion",
+      "category": "meat",
+      "path": "assets/replacement-20-20261116/nd-beef-slow-onion.webp",
+      "blobSha": "ef1082bedb869fd1309dfe7bee7ac8e4f9ed7c57",
+      "fromSource": "four_no_text_photos_generation_20261116",
+      "title": "Тушёная говядина с луком"
+    },
+    {
+      "old_id": "collection-meat-10-05",
+      "new_id": "plov-clever-pork-mushrooms",
+      "category": "meat",
+      "path": "assets/replacement-20-20261116/plov-clever-pork-mushrooms.webp",
+      "blobSha": "ec6c547da2fffdd8f4766c16963ce1671a00dc16",
+      "fromSource": "handoff/2026-11-14",
+      "title": "«Хитрый» плов со свининой и грибами"
+    },
+    {
+      "old_id": "collection-meat-10-06",
+      "new_id": "plov-pork-skillet",
+      "category": "meat",
+      "path": "assets/replacement-20-20261116/plov-pork-skillet.webp",
+      "blobSha": "353740ae2441c81ddba1dd42749f07eb838e0ef3",
+      "fromSource": "handoff/2026-11-14",
+      "title": "Плов со свининой на сковороде"
+    },
+    {
+      "old_id": "collection-meat-10-07",
+      "new_id": "nd-pork-mushrooms-sourcream",
+      "category": "meat",
+      "path": "assets/replacement-20-20261116/nd-pork-mushrooms-sourcream.webp",
+      "blobSha": "b5007538fdf83c3d59c8613c43acd83ccbfb4614",
+      "fromSource": "four_no_text_photos_generation_20261116",
+      "title": "Свинина, тушеная с грибами в сметанном соусе"
+    },
+    {
+      "old_id": "collection-meat-10-10",
+      "new_id": "nd-pork-oven-shashlik",
+      "category": "meat",
+      "path": "assets/replacement-20-20261116/nd-pork-oven-shashlik.webp",
+      "blobSha": "4c75ef5dd4d049a207f2d04deaba546e0be345ec",
+      "fromSource": "four_no_text_photos_generation_20261116",
+      "title": "Шашлык в духовке на луковой подушке"
+    },
+    {
+      "old_id": "collection-poultry-05-10",
+      "new_id": "plov-chicken-prunes",
+      "category": "poultry",
+      "path": "assets/replacement-20-20261116/plov-chicken-prunes.webp",
+      "blobSha": "e957587c3b79521573b40c988565779869df83d8",
+      "fromSource": "handoff/2026-11-14",
+      "title": "Плов с курицей и черносливом"
+    },
+    {
+      "old_id": "collection-poultry-01-07",
+      "new_id": "nd-chicken-mushroom-julienne",
+      "category": "poultry",
+      "path": "assets/replacement-20-20261116/nd-chicken-mushroom-julienne.webp",
+      "blobSha": "0a5683b0ba41afe0739f08e23e39eb7065ba612e",
+      "fromSource": "handoff/2026-11-14",
+      "title": "Жюльен с курицей и грибами"
+    },
+    {
+      "old_id": "collection-vegetables-07-06",
+      "new_id": "plov-mushroom-bell-pepper",
+      "category": "vegetables",
+      "path": "assets/replacement-20-20261116/plov-mushroom-bell-pepper.webp",
+      "blobSha": "2235262ae911af57170b7e2470b129e633e1d0bc",
+      "fromSource": "handoff/2026-11-14",
+      "title": "Плов с грибами и сладким перцем"
+    }
+  ],
+  "design_source": "current_public_site_c19b0ba"
+}
