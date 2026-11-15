@@ -157,24 +157,45 @@
     return canvas.toDataURL('image/webp',.95);
   }
 
-  const finished=[];
-  cards.forEach((card,i)=>{
-    const original=card.querySelector('img');
-    if(!original)return;
-    const recipe=picked[i];
-    const source=original.currentSrc || original.src;
-    Promise.all([loadImage(source),loadImage(recipe.photo)])
-      .then(([paper,dish])=>{
-        const picture=paintNewspaper(paper,dish,recipe);
-        if(!picture)return;
-        card.href='#recipe='+encodeURIComponent(recipe.id);
-        card.setAttribute('aria-label',recipe.title+'. Приготовить рецепт');
-        original.alt=recipe.title+'. Приготовить рецепт';
-        original.src=picture;
-        finished.push(recipe.id);
-        if(finished.length===3) {
-          try{localStorage.setItem(storageKey,JSON.stringify(picked.map(r=>r.id)));}catch(_){}
-        }
-      }).catch(()=>{/* Original approved image remains intact on failure. */});
+  // The approved WebP remains on screen until a replacement is fully composed.
+  // Try alternate valid catalogue entries if a photo fails to load or a title
+  // does not fit. A single broken photo must not disable all three rotations.
+  const successful = previous.slice(0,3);
+  async function rotateCard(card, i) {
+    const original = card.querySelector('img');
+    if (!original) return;
+    const source = original.getAttribute('src');
+    const candidates = [picked[i], ...RECIPES.filter(r =>
+      pools[i].includes(r.category) && r.id && r.title &&
+      typeof r.photo === 'string' && r.photo.startsWith('/assets/') &&
+      r.id !== picked[i].id && r.id !== previous[i]
+    )];
+    const paper = await loadImage(source);
+    const limit = Math.min(candidates.length, 25);
+    for (let attempt = 0; attempt < limit; attempt++) {
+      const recipe = candidates[attempt];
+      if (successful.includes(recipe.id)) continue;
+      try {
+        const dish = await loadImage(recipe.photo);
+        const picture = paintNewspaper(paper, dish, recipe);
+        if (!picture) continue;
+        // One and only one visible image per card, no extra rectangles,
+        // typography overlays or changes to the original paper outline.
+        card.href = '#recipe=' + encodeURIComponent(recipe.id);
+        card.setAttribute('aria-label', recipe.title + '. Приготовить рецепт');
+        original.alt = recipe.title + '. Приготовить рецепт';
+        original.src = picture;
+        card.dataset.rotatedRecipe = recipe.id;
+        successful[i] = recipe.id;
+        try { localStorage.setItem(storageKey, JSON.stringify(successful)); } catch (_) {}
+        return;
+      } catch (error) {
+        console.warn('Evening recipe candidate unavailable:', recipe.id, error);
+      }
+    }
+    console.warn('Evening recipe rotation could not load any candidate for card', i+1);
+  }
+  Promise.allSettled(cards.map((card, i) => rotateCard(card, i))).then(() => {
+    document.documentElement.dataset.eveningRotationCompleted = 'true';
   });
 })();
