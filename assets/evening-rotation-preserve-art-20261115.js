@@ -306,16 +306,7 @@
   'use strict';
   const musicTagline = document.querySelector('#music .du-music-heading .du-section-heading > p');
   if (!musicTagline) return;
-  const introText = 'Не начинайте со списка продуктов.';
-  const introduction = Array.from(document.querySelectorAll('.du-section-heading > p'))
-    .find(el => el.textContent.trim().startsWith(introText));
-  if (!introduction) return;
+  // Only remove the final full stop. The approved larger size is now
+  // controlled by a dedicated CSS rule instead of the smaller intro copy.
   musicTagline.textContent = musicTagline.textContent.replace(/\.\s*$/, '');
-  function matchSize() {
-    const fontSize = window.getComputedStyle(introduction).fontSize;
-    if (fontSize) musicTagline.style.setProperty('font-size', fontSize, 'important');
-  }
-  matchSize();
-  window.addEventListener('resize', matchSize, { passive: true });
-  if (document.fonts && document.fonts.ready) document.fonts.ready.then(matchSize).catch(() => {});
 })();
