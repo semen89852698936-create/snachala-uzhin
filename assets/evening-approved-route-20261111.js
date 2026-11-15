@@ -17,14 +17,9 @@
       catalogBack.setAttribute('aria-label', 'Вернуться из каталога на страницу СНАЧАЛА УЖИН');
     }
 
-    // Show the approved floating ← На главную button on the old journal page only.
-    const journalHome = document.querySelector('header a.du-evening-back:not(.du-catalog-back)');
-    if (journalHome) {
-      journalHome.setAttribute('href', '#evening');
-      journalHome.setAttribute('aria-label', 'На главную страницу Наш Вечер');
-      const label = journalHome.querySelector('span:last-child');
-      if (label) label.textContent = 'На главную';
-    }
+    // The return action now lives in the FIRST header navigation pill.
+    // Remove the old floating duplicate, preserving all other buttons.
+    document.querySelector('header a.du-evening-back:not(.du-catalog-back)')?.remove();
 
     const coverBack = document.querySelector('a.du-match11-sr-back');
     if (coverBack) {
@@ -81,12 +76,29 @@
       const highlighted = brandWords.querySelector('em');
       if (highlighted) highlighted.textContent = isJournal ? 'УЖИН' : 'ВЕЧЕР';
     }
-    // The old router considers this link to be the active "Наш вечер" tab.
-    // Do not announce the renamed "1001" button as the current page.
+    // Same FIRST header slot: «1001» on Наш Вечер and
+    // «← На главную» on СНАЧАЛА УЖИН. Never show a duplicate floating button.
+    const mainButtonText = isJournal ? '← На главную' : '1001';
+    const mainButtonTarget = isJournal ? '#evening' : '#journal';
     const journalNav = document.querySelector('.main-nav a[data-nav="evening"]');
     if (journalNav) {
-      if (hash === '#journal') journalNav.setAttribute('aria-current', 'page');
-      else journalNav.removeAttribute('aria-current');
+      journalNav.textContent = mainButtonText;
+      journalNav.setAttribute('href', mainButtonTarget);
+      journalNav.setAttribute('aria-label', isJournal
+        ? 'На главную страницу Наш Вечер'
+        : '1001 - перейти на страницу СНАЧАЛА УЖИН');
+      journalNav.removeAttribute('aria-current');
+    }
+    const mobileJournalNav = document.querySelector('a.du-evening-nav-mobile');
+    if (mobileJournalNav) {
+      mobileJournalNav.textContent = mainButtonText;
+      mobileJournalNav.setAttribute('href', mainButtonTarget);
+    }
+    const mobileQuickNav = document.querySelector('[data-quick-evening]');
+    if (mobileQuickNav) {
+      mobileQuickNav.textContent = mainButtonText;
+      mobileQuickNav.setAttribute('href', mainButtonTarget);
+      mobileQuickNav.removeAttribute('aria-current');
     }
     if (!hash || hash === '#home') {
       // Preserve query parameters and make old bookmarks land on the new home.
@@ -107,17 +119,6 @@
     window.scrollTo({top:0, left:0, behavior:'instant'});
   }
 
-  // Original approved button styling, shown solely on the СНАЧАЛА УЖИН journal page.
-  // Do not change the catalog back button or any other header item.
-  if (!document.getElementById('du-journal-only-home-button')) {
-    const backStyle = document.createElement('style');
-    backStyle.id = 'du-journal-only-home-button';
-    backStyle.textContent =
-      'body.du-journal-view header a.du-evening-back:not(.du-catalog-back){display:inline-flex!important}' +
-      'body:not(.du-journal-view) header a.du-evening-back:not(.du-catalog-back){display:none!important}';
-    document.head.appendChild(backStyle);
-  }
-
   // Keep the 1001 and Air Fryer header pills identical in width and height.
   // All other navigation items and destinations remain untouched.
   if (!document.getElementById('du-equal-header-pills')) {
@@ -127,7 +128,8 @@
       '@media(min-width:681px){.main-nav a[data-nav="evening"],.main-nav a[data-nav="airfryer"]{' +
       'box-sizing:border-box;width:136px;height:42px;flex:0 0 136px;}}' +
       '@media(max-width:680px){.du-quick-nav-mobile a[data-quick-evening],.du-quick-nav-mobile a[data-quick-airfryer]{' +
-      'box-sizing:border-box;flex:1 1 0;min-width:0;}}';
+      'box-sizing:border-box;flex:1 1 0;min-width:0;}}' +
+      'body.du-journal-view .main-nav a[data-nav="evening"]::before{display:none!important;}';
     document.head.appendChild(pillStyle);
   }
 
