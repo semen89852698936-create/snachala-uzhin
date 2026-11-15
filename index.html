@@ -2045,4 +2045,33 @@ function stepVisualHtml(recipe,index,mode){
 
 
 <script src="assets/evening-rotation-preserve-art-20261115.js"></script>
+<script>
+/* EVENING_HERO_EQUAL_VISIBLE_TEXT_ENDS_20261116
+   Match the actual glyph-line endpoints without changing font size or other elements. */
+(function () {
+  const top = document.querySelector('#eveningLanding .du-match11-slogan');
+  const bottom = document.querySelector('#eveningLanding .du-match11-subtitle');
+  if (!top || !bottom) return;
+  function textWidth(element) {
+    const range = document.createRange();
+    range.selectNodeContents(element);
+    const width = range.getBoundingClientRect().width;
+    range.detach();
+    return width;
+  }
+  function alignTwoLines() {
+    bottom.style.removeProperty('letter-spacing');
+    if (window.innerWidth <= 760) return;
+    const topWidth = textWidth(top);
+    const bottomWidth = textWidth(bottom);
+    const count = Array.from(bottom.textContent.trim()).length;
+    if (count > 1 && topWidth > 0 && bottomWidth > 0) {
+      bottom.style.letterSpacing = ((topWidth - bottomWidth) / count).toFixed(4) + 'px';
+    }
+  }
+  alignTwoLines();
+  if (document.fonts && document.fonts.ready) document.fonts.ready.then(alignTwoLines);
+  window.addEventListener('resize', alignTwoLines, {passive:true});
+})();
+</script>
 </body></html>
