@@ -1,20 +1,31 @@
 name: Pasta 25 - Alice AI ART candidate
 on:
+  push:
+    branches:
+      - photo-production/pasta-25-targeted-20261116
+    paths:
+      - .github/workflows/pasta-25-candidate.yml
   workflow_dispatch:
 permissions:
   contents: write
+concurrency:
+  group: pasta-25-alice-one-shot
+  cancel-in-progress: false
 jobs:
   generate:
     runs-on: ubuntu-latest
+    timeout-minutes: 15
     steps:
       - uses: actions/checkout@v4
         with:
           ref: photo-production/pasta-25-targeted-20261116
+          persist-credentials: true
       - uses: actions/setup-python@v5
         with:
           python-version: '3.11'
-      - run: pip install Pillow
+      - run: python -m pip install 'Pillow>=10,<13'
+      - run: git config user.name "github-actions[bot]" && git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
       - run: python photo-pipeline/regenerate_pasta25.py
         env:
           YANDEX_API_KEY: ${{ secrets.YANDEX_API_KEY }}
-          YANDEX_FOLDER_ID: ${{ secrets.YANDEX_FOLDER_ID }}
+          YANDEX_FOLDER_ID: ${{ secrets.YANDEX_FOLDER_ID || 'b1g00u8p0k5nl98v8nre' }}
