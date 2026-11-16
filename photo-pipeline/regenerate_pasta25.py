@@ -11,9 +11,9 @@ import hashlib, importlib.util, json, os, subprocess, sys
 ROOT = Path(__file__).resolve().parents[1]
 RECIPE_NUMBER = 337
 RECIPE_ID = "collection-pasta-03-05"
-OUT = ROOT / "photo-library" / "pasta-replacements" / "025"
+OUT = ROOT / "photo-library" / "pasta-replacements" / "025" / "v2"
 RESERVATION = OUT / "reserved.json"
-PHOTO = OUT / "fusilli-pumpkin-sage-candidate.webp"
+PHOTO = OUT / "fusilli-pumpkin-sage-finely-grated-parmesan.webp"
 META = OUT / "metadata.json"
 
 def git_save(message):
@@ -35,10 +35,10 @@ def main():
     prompt = (
         "Фотореалистичная фуд-фотография Фузилли с тыквой и шалфеем. "
         "Отчётливые спиральные фузилли, кусочки запечённой оранжевой тыквы, "
-        "лёгкий тыквенный соус, немного листьев шалфея, тёртый пармезан. "
+        "лёгкий тыквенный соус, несколько листиков шалфея. Пармезан только мелко натёртый, тонкой рассыпчатой стружкой по пасте, без кубиков, ломтей, пластинок и кусочков сыра. "
         "Светлая керамическая тарелка почти целиком в кадре, ракурс 3/4, "
         "естественный мягкий свет, бежевый фон. Без оливок, каперсов, "
-        "помидоров, шпината, лимонных долек, целого чеснока, людей и надписей."
+        "помидоров, шпината, лимонных долек, целого чеснока и надписей."
     )
     assert len(prompt) <= 500
     OUT.mkdir(parents=True, exist_ok=True)
