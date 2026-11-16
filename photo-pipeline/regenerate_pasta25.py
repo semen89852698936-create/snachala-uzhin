@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Generate exactly one unpublished Alice AI ART candidate for Pasta #63.
+"""Generate exactly one unpublished Alice AI ART candidate for Pasta #64.
 
 Run in GitHub Actions with the existing YANDEX_API_KEY/YANDEX_FOLDER_ID secrets.
 A persistent reservation blocks repeat paid requests after an uncertain failure.
@@ -9,11 +9,11 @@ from pathlib import Path
 import hashlib, importlib.util, json, os, subprocess, sys
 
 ROOT = Path(__file__).resolve().parents[1]
-RECIPE_NUMBER = 375
-RECIPE_ID = "collection-pasta-07-03"
-OUT = ROOT / "photo-library" / "pasta-replacements" / "063" / "v1"
+RECIPE_NUMBER = 376
+RECIPE_ID = "collection-pasta-07-04"
+OUT = ROOT / "photo-library" / "pasta-replacements" / "064" / "v1"
 RESERVATION = OUT / "reserved.json"
-PHOTO = OUT / "orecchiette-mushrooms-thyme-candidate.webp"
+PHOTO = OUT / "orecchiette-capers-visible-sliced-olives-candidate.webp"
 META = OUT / "metadata.json"
 
 def git_save(message):
@@ -31,23 +31,23 @@ def main():
         raise SystemExit("Missing Yandex secret. No image generation attempted.")
     recipes = json.loads((ROOT / "photo-library" / "recipes.json").read_text(encoding="utf-8"))["recipes"]
     recipe = next(r for r in recipes if r["n"] == RECIPE_NUMBER)
-    assert recipe["id"] == RECIPE_ID and recipe["title"] == "Орекьетте с грибами и тимьяном"
+    assert recipe["id"] == RECIPE_ID and recipe["title"] == "Орекьетте с каперсами и оливками"
     prompt = (
-        "Фото: Орекьетте с грибами и тимьяном. "
-        "ОРЕКЬЕТТЕ: маленькие круглые ВОГНУТЫЕ ушки "
-        "с утолщёнными краями, не ракушки и не трубочки. "
-        "МНОГО обжаренных золотистых ломтиков шампиньонов, "
-        "хорошо видных внутри ушек, между пастой и сверху. "
-        "Отдельные мелкие листья тимьяна по всему блюду, "
-        "без веточек и пучков сверху. Лёгкий оливковый соус. "
-        "Пармезан лишь мелко натёртой крошкой, без пластин и кубиков. "
-        "Светлая тарелка почти целиком, ракурс 3/4, мягкий свет. "
-        "Без лимона, целого чеснока и надписей."
+        "Фото: Орекьетте с каперсами и оливками. "
+        "ОРЕКЬЕТТЕ: маленькие круглые вогнутые ушки-чашечки "
+        "с утолщёнными краями, НЕ ракушки, НЕ трубочки. "
+        "ГЛАВНОЕ: МНОГО зелёных и чёрных оливок без косточек, "
+        "нарезанных КОЛЕЧКАМИ с отверстиями и ПОЛОВИНКАМИ. "
+        "Оливки видны сверху и среди пасты, их больше, чем каперсов. "
+        "Мелкие зелёные каперсы по блюду. "
+        "Лёгкий оливковый соус, пармезан только мелко натёртой "
+        "крошкой, без пластинок сыра. Светлая тарелка почти целиком, "
+        "ракурс 3/4, мягкий свет. Без лимона и чеснока."
     )
     assert len(prompt) <= 500
     OUT.mkdir(parents=True, exist_ok=True)
     RESERVATION.write_text(json.dumps({"recipe_number": RECIPE_NUMBER, "recipe_id": RECIPE_ID, "prompt": prompt, "state": "paid_request_reserved"}, ensure_ascii=False, indent=2), encoding="utf-8")
-    git_save("Reserve one paid Alice AI ART candidate for Pasta 63")
+    git_save("Reserve one paid Alice AI ART candidate for Pasta 64")
     spec = importlib.util.spec_from_file_location("alice_art", ROOT / "photo-pipeline" / "generate_yandexart.py")
     module = importlib.util.module_from_spec(spec)
     sys.modules[spec.name] = module
@@ -56,8 +56,8 @@ def main():
     webp = module.encode_webp(raw)
     PHOTO.write_bytes(webp)
     META.write_text(json.dumps({"recipe_number": RECIPE_NUMBER, "recipe_id": RECIPE_ID, "title": recipe["title"], "sha256": hashlib.sha256(webp).hexdigest(), "prompt": prompt, "approval": "pending", "published": False}, ensure_ascii=False, indent=2), encoding="utf-8")
-    git_save("Save unpublished Alice AI ART candidate for Pasta 63")
-    print("CREATED unpublished Pasta 63 candidate")
+    git_save("Save unpublished Alice AI ART candidate for Pasta 64")
+    print("CREATED unpublished Pasta 64 candidate")
 
 if __name__ == "__main__":
     main()
