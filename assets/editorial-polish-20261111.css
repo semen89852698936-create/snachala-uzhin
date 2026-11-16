@@ -958,6 +958,12 @@ html body #homeView #catalog.du-catalog::before {
   top:0!important;
   height:calc(30px + clamp(300px,22vw,345px))!important;
 }
+/* Keep the existing approved flowers and candle image attached to the
+   bottom-right of the full-height burgundy masthead, not its old 277px crop. */
+html body #homeView #catalog.du-catalog::after {
+  height:calc(30px + clamp(300px,22vw,345px))!important;
+  background-position:right bottom!important;
+}
 html body #homeView #catalog .du-section-top {
   box-sizing:border-box!important;
   min-height:clamp(300px,22vw,345px)!important;
@@ -990,6 +996,9 @@ html body #homeView #catalog #categoryFilters > button.chip {
     padding-bottom:42px!important;
   }
   html body #homeView #catalog.du-catalog::before {
+    height:calc(30px + clamp(390px,100vw,470px))!important;
+  }
+  html body #homeView #catalog.du-catalog::after {
     height:calc(30px + clamp(390px,100vw,470px))!important;
   }
   /* Two original columns, existing touch-target heights, bigger labels. */
