@@ -11,9 +11,9 @@ import hashlib, importlib.util, json, os, subprocess, sys
 ROOT = Path(__file__).resolve().parents[1]
 RECIPE_NUMBER = 339
 RECIPE_ID = "collection-pasta-03-07"
-OUT = ROOT / "photo-library" / "pasta-replacements" / "027" / "v1"
+OUT = ROOT / "photo-library" / "pasta-replacements" / "027" / "v2"
 RESERVATION = OUT / "reserved.json"
-PHOTO = OUT / "fusilli-eggplant-oregano-candidate.webp"
+PHOTO = OUT / "fusilli-eggplant-large-oregano-candidate.webp"
 META = OUT / "metadata.json"
 
 def git_save(message):
@@ -34,9 +34,9 @@ def main():
     assert recipe["id"] == RECIPE_ID and recipe["title"] == "Фузилли с баклажаном и орегано"
     prompt = (
         "Фотореалистичная ресторанная фотография: Фузилли с баклажаном и орегано. "
-        "Только короткие спиральные фузилли, много небольших кусочков хорошо "
+        "Спиральные фузилли, много кусочков хорошо "
         "обжаренного мягкого баклажана с золотисто-коричневой корочкой, "
-        "заметные мелкие листики орегано, равномерно по всей пасте. "
+        "крупные цельные свежие листья орегано, отчётливо видимые по всей пасте. "
         "Лёгкий оливковый соус, без крупных кусков сыра. "
         "Светлая керамическая тарелка почти целиком в кадре, "
         "ракурс 3/4, мягкий натуральный свет, серо-бежевый фон. "
