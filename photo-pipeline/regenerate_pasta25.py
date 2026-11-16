@@ -11,9 +11,9 @@ import hashlib, importlib.util, json, os, subprocess, sys
 ROOT = Path(__file__).resolve().parents[1]
 RECIPE_NUMBER = 357
 RECIPE_ID = "collection-pasta-05-05"
-OUT = ROOT / "photo-library" / "pasta-replacements" / "045" / "v1"
+OUT = ROOT / "photo-library" / "pasta-replacements" / "045" / "v2"
 RESERVATION = OUT / "reserved.json"
-PHOTO = OUT / "fettuccine-pumpkin-sage-candidate.webp"
+PHOTO = OUT / "fettuccine-pumpkin-sage-retry-v2.webp"
 META = OUT / "metadata.json"
 
 def git_save(message):
