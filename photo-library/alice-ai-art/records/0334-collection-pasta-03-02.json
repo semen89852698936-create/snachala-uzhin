@@ -22,5 +22,7 @@
   "model": "aliceai-image-art-3.0",
   "generated_at": "2026-11-02T12:02:46+00:00",
   "status": "generated_unpublished",
-  "approved_for_publication": false
+  "approved_for_publication": true,
+  "approval": "approved",
+  "approval_note": "Утверждено пользователем 2026-11-17 в партии пасты №22–24. Публикация сайта отдельно, пока не выполнена."
 }
