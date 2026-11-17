@@ -1,0 +1,115 @@
+name: Publish approved pasta photos to staging branch
+on:
+  push:
+    branches:
+      - automation/pasta-100-github-actions-2026-11-17
+    paths:
+      - .github/workflows/pasta-100-stage.yml
+permissions:
+  contents: write
+jobs:
+  stage-approved:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout staging branch
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - name: Download private pasta-25 release through GitHub token
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          mkdir -p /tmp/pasta-release
+          gh release download pasta-25 --repo "${{ github.repository }}" --pattern '*.zip' --dir /tmp/pasta-release
+          test "$(find /tmp/pasta-release -maxdepth 1 -name '*.zip' -type f | wc -l)" -eq 1
+          find /tmp/pasta-release -maxdepth 1 -name '*.zip' -type f -exec cp '{}' /tmp/pasta-25.zip \;
+          echo "590412cfaa2a89ca9837e7631a16b239cf2c62e0e26c0dc5e8e3d6dbb252a49e  /tmp/pasta-25.zip" | sha256sum -c -
+      - name: Validate all 100 mappings and replace only 25 approved photographs
+        run: |
+          python3 - <<'PY'
+          import csv,hashlib,io,pathlib,zipfile
+          z=zipfile.ZipFile('/tmp/pasta-25.zip')
+          assert z.testzip() is None,"Corrupted zip"
+          rows=list(csv.DictReader(io.StringIO(z.read('РЕЕСТР_100.csv').decode('utf-8-sig'))))
+          assert len(rows)==100,('Wrong recipe count',len(rows))
+          assert len({r['catalog_n'] for r in rows})==100,'Duplicate recipe number'
+          assert len({r['source_path'] for r in rows})==100,'Duplicate asset path'
+          approved=[r for r in rows if r['publish_rule']=='NEW_PHOTO_REQUIRES_PUBLISH']
+          retained=[r for r in rows if r['publish_rule']=='KEEP_EXISTING_IMAGE']
+          protected=[r for r in rows if r['publish_rule']=='DO_NOT_REPLACE']
+          assert len(approved)==23 and len(retained)==75 and len(protected)==2,(len(approved),len(retained),len(protected))
+          assert {r['new_photo_webp'] for r in protected}=={'pasta_078.webp','pasta_082.webp'}
+          allowed=set(z.namelist())
+          assert sum(n.startswith('НОВЫЕ_25_WEBP/') and n.endswith('.webp') for n in allowed)==25
+          planned=[]
+          for r in rows:
+              target=pathlib.PurePosixPath(r['source_path'])
+              assert len(target.parts)==3 and target.parts[:2]==('assets','recipes-ai') and target.suffix=='.webp',target
+              assert target.name==f"{int(r['catalog_n']):04d}-{r['recipe_id']}.webp",target
+              current=pathlib.Path(str(target))
+              assert current.is_file(),('Missing existing image',target)
+              if r in approved:
+                  expected=f"НОВЫЕ_25_WEBP/{r['new_photo_webp']}"
+                  assert expected in allowed,('Missing approved image',expected)
+                  payload=z.read(expected)
+                  assert payload[:4]==b'RIFF' and payload[8:12]==b'WEBP',('Not WebP',expected)
+                  assert len(payload)>1024,('Image unexpectedly small',expected)
+                  planned.append((current,payload))
+              elif r in protected:
+                  assert r['new_photo_webp'] in ('pasta_078.webp','pasta_082.webp')
+              else:
+                  assert not r['new_photo_webp'],('Unexpected new image',r['catalog_n'])
+          assert len(planned)==23
+          for target,data in planned:
+              target.write_bytes(data)
+          new_files=[str(p) for p,_ in planned]
+          pathlib.Path('/tmp/pasta-approved-list.txt').write_text('\n'.join(new_files)+'\n')
+          print("Validated 100 recipe IDs and paths; replaced exactly 23 WebP; retained 77 (75 existing + 2 protected)")
+          PY
+      - name: Update SHA and byte counts only for 23 approved pasta images
+        run: |
+          python3 - <<'PY'
+          import pathlib,json,hashlib
+          fp=pathlib.Path('photo-library/ai-recipe-photo-map.json')
+          raw=fp.read_text(encoding='utf-8')
+          info,end=json.JSONDecoder().raw_decode(raw)
+          assert raw[end:].strip() in ('', '\\n'), 'Unexpected trailing catalog data'
+          updated=set(pathlib.Path('/tmp/pasta-approved-list.txt').read_text().splitlines())
+          seen=set()
+          for row in info['photos']:
+              target=row['path'].lstrip('/')
+              if target not in updated: continue
+              payload=pathlib.Path(target).read_bytes()
+              row['bytes']=len(payload)
+              row['sha']=hashlib.sha1(b'blob '+str(len(payload)).encode()+b'\0'+payload).hexdigest()
+              seen.add(target)
+          assert seen==updated,(len(seen),len(updated),updated-seen)
+          assert len(info['photos'])==1001
+          fp.write_text(json.dumps(info,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+          print('Updated exactly 23 catalog entries with Git blob SHA-1 and byte sizes')
+          PY
+      - name: Verify only listed image files changed
+        run: |
+          git status --short
+          python3 - <<'PY'
+          import pathlib,subprocess
+          expected=set(pathlib.Path('/tmp/pasta-approved-list.txt').read_text().splitlines())
+          changed=set(subprocess.check_output(['git','diff','--name-only']).decode().splitlines())
+          assert changed <= expected | {'photo-library/ai-recipe-photo-map.json'},('Unexpected files modified',changed-expected)
+          print('Changed photo count:',len(changed),'of 23 approved.')
+          PY
+      - name: Verify entire 1001-image website photo registry
+        run: python3 scripts/verify-1001-photo-links.py
+      - name: Commit approved photographs to staging branch only
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          while IFS= read -r f; do git add -- "$f"; done </tmp/pasta-approved-list.txt
+          git add photo-library/ai-recipe-photo-map.json
+          git diff --cached --check
+          if ! git diff --cached --quiet; then
+            git commit -m "photos(pasta): publish 23 approved images from verified pasta-25 release"
+            git push origin HEAD:automation/pasta-100-github-actions-2026-11-17
+          else
+            echo "Photo bytes and registry already match approved release; no new commit needed"
+          fi
