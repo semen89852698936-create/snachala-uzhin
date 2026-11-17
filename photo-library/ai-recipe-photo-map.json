@@ -2947,8 +2947,8 @@
       "n": 421,
       "recipe_id": "collection-vegetables-02-01",
       "path": "/assets/recipes-ai/0421-collection-vegetables-02-01.webp",
-      "sha": "7df10979e1ddef71af9ee14dc0777514abc1086c",
-      "bytes": 151874
+      "sha": "06f9cacb6d2b8ed56a50b9cd9826d72f4acca6a7",
+      "bytes": 373160
     },
     {
       "n": 422,
@@ -2961,8 +2961,8 @@
       "n": 423,
       "recipe_id": "collection-vegetables-02-03",
       "path": "/assets/recipes-ai/0423-collection-vegetables-02-03.webp",
-      "sha": "a183a4540e1ff61b183ed11959d4389fd265116a",
-      "bytes": 133046
+      "sha": "ffa23fce27d6c855a118e68108262ee35a733f2d",
+      "bytes": 386056
     },
     {
       "n": 424,
@@ -3157,8 +3157,8 @@
       "n": 451,
       "recipe_id": "collection-vegetables-05-01",
       "path": "/assets/recipes-ai/0451-collection-vegetables-05-01.webp",
-      "sha": "df5fdafc2b0ba2ade8d562c9e109be87c554f0be",
-      "bytes": 143108
+      "sha": "952e1a768f8077995019e99dc7ffc0d27091ca26",
+      "bytes": 394306
     },
     {
       "n": 452,
@@ -3171,8 +3171,8 @@
       "n": 453,
       "recipe_id": "collection-vegetables-05-03",
       "path": "/assets/recipes-ai/0453-collection-vegetables-05-03.webp",
-      "sha": "910b61f42ac60eadf42574374d39b567418de453",
-      "bytes": 112528
+      "sha": "723ca2d69c6faaec2ad8d704a7e8b82e9857fe17",
+      "bytes": 401076
     },
     {
       "n": 454,
@@ -3227,8 +3227,8 @@
       "n": 461,
       "recipe_id": "collection-vegetables-06-01",
       "path": "/assets/recipes-ai/0461-collection-vegetables-06-01.webp",
-      "sha": "216030fbdd217f66ac05ae4ed53046567a64772d",
-      "bytes": 109330
+      "sha": "75ade1123c0f9258b987eecf16f6357a9ce9beec",
+      "bytes": 359304
     },
     {
       "n": 462,
@@ -3437,57 +3437,57 @@
       "n": 491,
       "recipe_id": "collection-vegetables-09-01",
       "path": "/assets/recipes-ai/0491-collection-vegetables-09-01.webp",
-      "sha": "402b29df613eee6be963c59918b73f019d36820e",
-      "bytes": 117940
+      "sha": "b05dcb7bb231e77da72fb5200210403db2aa7839",
+      "bytes": 366752
     },
     {
       "n": 492,
       "recipe_id": "collection-vegetables-09-02",
       "path": "/assets/recipes-ai/0492-collection-vegetables-09-02.webp",
-      "sha": "4092d91200eabb5411924722b31093847de9af13",
-      "bytes": 122984
+      "sha": "a58fb50c34261be953a6db5c972cc73ae42bb91d",
+      "bytes": 408918
     },
     {
       "n": 493,
       "recipe_id": "collection-vegetables-09-03",
       "path": "/assets/recipes-ai/0493-collection-vegetables-09-03.webp",
-      "sha": "ef66e24ec6eb784dd4bb569cdb780001c70975ff",
-      "bytes": 123758
+      "sha": "7d35f0e7b6bcf70686546002ecee11cb052fd95f",
+      "bytes": 348998
     },
     {
       "n": 494,
       "recipe_id": "collection-vegetables-09-04",
       "path": "/assets/recipes-ai/0494-collection-vegetables-09-04.webp",
-      "sha": "b1e8f82bb435d1d2cf1f337942a6f5d2306503a0",
-      "bytes": 122750
+      "sha": "615f043a82be4925c3ade7fae5d1ee3237a286c3",
+      "bytes": 330384
     },
     {
       "n": 495,
       "recipe_id": "collection-vegetables-09-05",
       "path": "/assets/recipes-ai/0495-collection-vegetables-09-05.webp",
-      "sha": "b69f7aa44333ea093c2d7d5b57a0da3bc91d6964",
-      "bytes": 113900
+      "sha": "07ffab8a9b96461c12383a2b26f6ab765265cf69",
+      "bytes": 363702
     },
     {
       "n": 496,
       "recipe_id": "collection-vegetables-09-06",
       "path": "/assets/recipes-ai/0496-collection-vegetables-09-06.webp",
-      "sha": "8a9223ff7c551299c7590111b2f8f2cc13bfd220",
-      "bytes": 114714
+      "sha": "176a82f91556949a46ce7db4da6e320c2e58603f",
+      "bytes": 338436
     },
     {
       "n": 497,
       "recipe_id": "collection-vegetables-09-07",
       "path": "/assets/recipes-ai/0497-collection-vegetables-09-07.webp",
-      "sha": "5b8b3257a5e7fce27af6703a13c2fb40aed29b3a",
-      "bytes": 82636
+      "sha": "e1ce76b99e079c72b166b5fd02a84ba4ba61b05d",
+      "bytes": 314432
     },
     {
       "n": 498,
       "recipe_id": "collection-vegetables-09-08",
       "path": "/assets/recipes-ai/0498-collection-vegetables-09-08.webp",
-      "sha": "aa0e99daf01322c34b1040b5c9b500ce414b6fc4",
-      "bytes": 139748
+      "sha": "896e1d8ac5c2b376cd0956b08a24e1839b348e4f",
+      "bytes": 347030
     },
     {
       "n": 499,
@@ -3500,15 +3500,15 @@
       "n": 500,
       "recipe_id": "collection-vegetables-09-10",
       "path": "/assets/recipes-ai/0500-collection-vegetables-09-10.webp",
-      "sha": "c32fd6509b270264bb090a74f551866f44989ac9",
-      "bytes": 132808
+      "sha": "06b3ac150486006d3b92aeeb38bdb3a5b57d652e",
+      "bytes": 286758
     },
     {
       "n": 501,
       "recipe_id": "collection-vegetables-10-01",
       "path": "/assets/recipes-ai/0501-collection-vegetables-10-01.webp",
-      "sha": "18f4a67056f4da736635f4655b2d871c7c87b307",
-      "bytes": 86996
+      "sha": "cb7855354e2bd280e285a50fd1cedce12c26e98f",
+      "bytes": 326662
     },
     {
       "n": 502,
@@ -3521,8 +3521,8 @@
       "n": 503,
       "recipe_id": "collection-vegetables-10-03",
       "path": "/assets/recipes-ai/0503-collection-vegetables-10-03.webp",
-      "sha": "28a07f55f74232b257f1fd637f98480e6ce484fb",
-      "bytes": 117982
+      "sha": "1814b539bc580d145f135a903b14116829372945",
+      "bytes": 337512
     },
     {
       "n": 504,
