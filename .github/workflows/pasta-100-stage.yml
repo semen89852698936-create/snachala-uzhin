@@ -1,0 +1,83 @@
+name: Stage 100 pasta photos (guarded)
+on:
+  push:
+    branches:
+      - automation/pasta-100-github-actions-2026-11-17
+    paths:
+      - .github/workflows/pasta-100-stage.yml
+  workflow_dispatch:
+    inputs:
+      archive_url:
+        description: 'HTTPS URL for approved PASTA_100 zip (short-lived, do not paste secrets)'
+        required: true
+        type: string
+permissions:
+  contents: write
+  pull-requests: write
+jobs:
+  stage:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - name: Validate repository and stage approved images if accessible
+        env:
+          ARCHIVE_URL: ${{ inputs.archive_url }}
+        run: |
+          python3 - <<'PY'
+          import csv, hashlib, io, os, pathlib, sys, urllib.request, zipfile
+          base=pathlib.Path("assets/recipes-ai")
+          paths=list(base.glob("*.webp"))
+          pasta=[p for p in paths if p.name.startswith(("0001-","0002-")) or (p.name[:4].isdigit() and 315 <= int(p.name[:4]) <= 412)]
+          print("Current pasta source files:",len(pasta))
+          if len(pasta)!=100: raise SystemExit("Expected exactly 100 existing pasta sources")
+          url=os.environ.get("ARCHIVE_URL","").strip()
+          if not url:
+              print("SAFE DRY RUN: No archive URL supplied. No changes will be made.")
+              print("75 pre-existing files were exported separately in run 44071629696.")
+              pathlib.Path("pasta-stage-status.txt").write_text("Blocked: no download URL for approved archive of 100 images. Repo unchanged.\n")
+              sys.exit(0)
+          if not url.startswith("https://"): raise SystemExit("Archive URL must be HTTPS")
+          with urllib.request.urlopen(urllib.request.Request(url,headers={"User-Agent":"PastaApprovedGitHubActions"}),timeout=90) as f:
+              raw=f.read(25_000_001)
+          if len(raw)>25_000_000: raise SystemExit("Archive too large")
+          with zipfile.ZipFile(io.BytesIO(raw)) as z:
+              if z.testzip(): raise SystemExit("Corrupt archive")
+              registry=list(csv.DictReader(io.StringIO(z.read("РЕЕСТР_100_ФОТО.csv").decode("utf-8-sig"))))
+              if len(registry)!=100: raise SystemExit("Expected 100 manifest rows")
+              if len(set(x["source_path"] for x in registry))!=100: raise SystemExit("Duplicate source path")
+              new=[x for x in registry if x["origin"]=="NEW_USER_APPROVED_2026-11-17"]
+              old=[x for x in registry if x["origin"]!="NEW_USER_APPROVED_2026-11-17"]
+              if len(new)!=25 or len(old)!=75: raise SystemExit(f"Bad split: {len(new)} new, {len(old)} existing")
+              changes=[]
+              for x in registry:
+                  target=pathlib.PurePosixPath(x["source_path"])
+                  if len(target.parts)!=3 or target.parts[:2]!=("assets","recipes-ai") or target.suffix!=".webp":
+                      raise SystemExit("Invalid path "+str(target))
+                  stored="ФОТО_100/"+x["file"]
+                  if target.name != x["file"]: raise SystemExit("Filename mismatch "+stored)
+                  data=z.read(stored)
+                  if hashlib.sha256(data).hexdigest()!=x["sha256"] or len(data)!=int(x["bytes"]):
+                      raise SystemExit("Checksum mismatch "+stored)
+                  if x in old:
+                      original=pathlib.Path(str(target))
+                      if not original.exists() or original.read_bytes()!=data:
+                          raise SystemExit("75-source mismatch; refusing overwrite "+str(target))
+                  else:
+                      changes.append((str(target),data))
+              if len(changes)!=25: raise SystemExit("Wrong new photo count")
+              for filename,data in changes:
+                  pathlib.Path(filename).write_bytes(data)
+              print("Validated 100; staged exactly 25 approved WebP replacements; 75 untouched")
+              pathlib.Path("pasta-stage-status.txt").write_text("Validated 100 photos; 25 replacements, 75 untouched.\n")
+          PY
+      - name: Show changes only (no automatic publication on unverified staging)
+        run: |
+          git status --short
+          echo "Only a verified, separately reviewed workflow run may update main."
+      - uses: actions/upload-artifact@v4
+        with:
+          name: pasta-stage-report
+          path: pasta-stage-status.txt
+          if-no-files-found: ignore
