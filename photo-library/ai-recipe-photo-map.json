@@ -7,15 +7,15 @@
       "n": 1,
       "recipe_id": "lemon-spinach-pasta",
       "path": "/assets/recipes-ai/0001-lemon-spinach-pasta.webp",
-      "sha": "103665365eca7a993311de4075230c0bc235d615",
-      "bytes": 126376
+      "sha": "13e71744db8f6cf9f0e7eac79d5df68bc2a2d1af",
+      "bytes": 278620
     },
     {
       "n": 2,
       "recipe_id": "tomato-basil-pasta",
       "path": "/assets/recipes-ai/0002-tomato-basil-pasta.webp",
-      "sha": "1e5e15965f1095319f18c4bb825b1bec54c69db9",
-      "bytes": 112240
+      "sha": "e712aeb6e23c6ad6ef3dfd70dfdaa9c444d3495b",
+      "bytes": 293182
     },
     {
       "n": 3,
@@ -2205,15 +2205,15 @@
       "n": 315,
       "recipe_id": "collection-pasta-01-03",
       "path": "/assets/recipes-ai/0315-collection-pasta-01-03.webp",
-      "sha": "4634e8c8b3d64cd895badae0e50b9259a33ab695",
-      "bytes": 124658
+      "sha": "1348e1eb448ea6294d2dd5606470c70baf1b96fe",
+      "bytes": 297920
     },
     {
       "n": 316,
       "recipe_id": "collection-pasta-01-04",
       "path": "/assets/recipes-ai/0316-collection-pasta-01-04.webp",
-      "sha": "486bc3637a040725540a7e1580d6fd32d774a97f",
-      "bytes": 98882
+      "sha": "a5622883de7b6d7240c250edb1622b2db1afe86d",
+      "bytes": 289358
     },
     {
       "n": 317,
@@ -2233,29 +2233,29 @@
       "n": 319,
       "recipe_id": "collection-pasta-01-07",
       "path": "/assets/recipes-ai/0319-collection-pasta-01-07.webp",
-      "sha": "54390780d17190112b9936d81cf876f609a05e6c",
-      "bytes": 107390
+      "sha": "4baf9d8552e40bff3637564097b3fdccacd04a14",
+      "bytes": 316562
     },
     {
       "n": 320,
       "recipe_id": "collection-pasta-01-08",
       "path": "/assets/recipes-ai/0320-collection-pasta-01-08.webp",
-      "sha": "c3fb4c82dfeb36b598b8849ee8c088da7f15457a",
-      "bytes": 96046
+      "sha": "456d6ffb3689a2d9af1902622a31fe8c07ea959e",
+      "bytes": 343068
     },
     {
       "n": 321,
       "recipe_id": "collection-pasta-01-09",
       "path": "/assets/recipes-ai/0321-collection-pasta-01-09.webp",
-      "sha": "738ceb82f133d2352a283f5c22920c2fcc2ee8e0",
-      "bytes": 124672
+      "sha": "40efce297ce86d50ea48e9a930aeb948dd3b76b5",
+      "bytes": 287782
     },
     {
       "n": 322,
       "recipe_id": "collection-pasta-01-10",
       "path": "/assets/recipes-ai/0322-collection-pasta-01-10.webp",
-      "sha": "307c66d4242b9d07197e36c09484fd3f99f4855c",
-      "bytes": 136706
+      "sha": "5a0b6f116757011239da27916fbfdaecc8ad3c34",
+      "bytes": 300562
     },
     {
       "n": 323,
@@ -2268,29 +2268,29 @@
       "n": 324,
       "recipe_id": "collection-pasta-02-02",
       "path": "/assets/recipes-ai/0324-collection-pasta-02-02.webp",
-      "sha": "74e81697e18d837bdac7e36457b2b5a16a5cb8c0",
-      "bytes": 120848
+      "sha": "31764da94e55c613181edf4a7e8c59f25a76dd5c",
+      "bytes": 343144
     },
     {
       "n": 325,
       "recipe_id": "collection-pasta-02-03",
       "path": "/assets/recipes-ai/0325-collection-pasta-02-03.webp",
-      "sha": "45a0371a6d7dc2d17c07b3d9217cc8a6757ecba9",
-      "bytes": 112190
+      "sha": "00623248de58c69de83387be4bedd9249cb477f2",
+      "bytes": 349760
     },
     {
       "n": 326,
       "recipe_id": "collection-pasta-02-04",
       "path": "/assets/recipes-ai/0326-collection-pasta-02-04.webp",
-      "sha": "800f42f21627f633d9c8a2620b492a22114778c7",
-      "bytes": 99300
+      "sha": "ff309354e3a9501cb02f90c1217c7de291f79b6d",
+      "bytes": 331430
     },
     {
       "n": 327,
       "recipe_id": "collection-pasta-02-05",
       "path": "/assets/recipes-ai/0327-collection-pasta-02-05.webp",
-      "sha": "04543b9f5343d1248f02752b75bb861644a4be20",
-      "bytes": 107734
+      "sha": "7920b895eafbd23b2d43f36bdbbb44518c317468",
+      "bytes": 313030
     },
     {
       "n": 328,
@@ -2303,8 +2303,8 @@
       "n": 329,
       "recipe_id": "collection-pasta-02-07",
       "path": "/assets/recipes-ai/0329-collection-pasta-02-07.webp",
-      "sha": "172772bf6e92fa449a413e865bed4ba41fe2ae30",
-      "bytes": 117896
+      "sha": "8a009023670600d4827e5e2acb4a78cd4a87cae4",
+      "bytes": 318522
     },
     {
       "n": 330,
@@ -2317,15 +2317,15 @@
       "n": 331,
       "recipe_id": "collection-pasta-02-09",
       "path": "/assets/recipes-ai/0331-collection-pasta-02-09.webp",
-      "sha": "86b138a5aadc534acb024b974e1c165eb8837287",
-      "bytes": 102112
+      "sha": "c4a1ccd6e72e52a1bf2b3279c498b7fc3188d64c",
+      "bytes": 336408
     },
     {
       "n": 332,
       "recipe_id": "collection-pasta-02-10",
       "path": "/assets/recipes-ai/0332-collection-pasta-02-10.webp",
-      "sha": "f8a22fde613eba78baa80c523d2e70ebd490f639",
-      "bytes": 124672
+      "sha": "2a1e4b88a842e2626b734aefa3166f2147433503",
+      "bytes": 331658
     },
     {
       "n": 333,
@@ -2548,8 +2548,8 @@
       "n": 364,
       "recipe_id": "collection-pasta-06-02",
       "path": "/assets/recipes-ai/0364-collection-pasta-06-02.webp",
-      "sha": "e7012ba454f665374a8d49cfc12b2792be0cb5c3",
-      "bytes": 112494
+      "sha": "6ba291a44e07f5f0bf2bb9e23ebd27a77987bf3c",
+      "bytes": 345548
     },
     {
       "n": 365,
@@ -2576,15 +2576,15 @@
       "n": 368,
       "recipe_id": "collection-pasta-06-06",
       "path": "/assets/recipes-ai/0368-collection-pasta-06-06.webp",
-      "sha": "cc4799b5b79ec4faaa9d385aa1f7ce2d583654fe",
-      "bytes": 95282
+      "sha": "4ae72993fc8b39c1b558b83c2f08bf1c6294292e",
+      "bytes": 322126
     },
     {
       "n": 369,
       "recipe_id": "collection-pasta-06-07",
       "path": "/assets/recipes-ai/0369-collection-pasta-06-07.webp",
-      "sha": "6756d06c4ef7e46170f133aaf44b2f3d9b1323d3",
-      "bytes": 121860
+      "sha": "cf489ef461049e1289882bf837027ba7dbde76f3",
+      "bytes": 357282
     },
     {
       "n": 370,
@@ -2597,15 +2597,15 @@
       "n": 371,
       "recipe_id": "collection-pasta-06-09",
       "path": "/assets/recipes-ai/0371-collection-pasta-06-09.webp",
-      "sha": "dfe2fa4313a5b13cd48eb5c37cf69bad9d6ed656",
-      "bytes": 127624
+      "sha": "afa060b3696349ba50b3d8aff3f4b54efbbdd34b",
+      "bytes": 364088
     },
     {
       "n": 372,
       "recipe_id": "collection-pasta-06-10",
       "path": "/assets/recipes-ai/0372-collection-pasta-06-10.webp",
-      "sha": "47c67de904f5a9d5632e0f041c061eac5616fda1",
-      "bytes": 126340
+      "sha": "54a84c0cdb40756dc386dbe8debf0b9ca00ed67a",
+      "bytes": 363580
     },
     {
       "n": 373,
@@ -2730,22 +2730,22 @@
       "n": 390,
       "recipe_id": "collection-pasta-08-08",
       "path": "/assets/recipes-ai/0390-collection-pasta-08-08.webp",
-      "sha": "7e293de24ddb53b4368ae7167f46a0d180d60699",
-      "bytes": 113996
+      "sha": "13973d2003175ff4f10db6088692fcd8e96c031c",
+      "bytes": 319222
     },
     {
       "n": 391,
       "recipe_id": "collection-pasta-08-09",
       "path": "/assets/recipes-ai/0391-collection-pasta-08-09.webp",
-      "sha": "d2201619e16df6d201caab642fb661304a5b1b58",
-      "bytes": 105708
+      "sha": "31250f4ed062ec6c9dc5b420d7cd377ee676dbfb",
+      "bytes": 303298
     },
     {
       "n": 392,
       "recipe_id": "collection-pasta-08-10",
       "path": "/assets/recipes-ai/0392-collection-pasta-08-10.webp",
-      "sha": "31bd3ea1b3367fcbd19c06c8c1965489ec5fb0be",
-      "bytes": 108394
+      "sha": "9ed1d7fd4bab85c283b7fe234f381c277e1017e1",
+      "bytes": 334836
     },
     {
       "n": 393,
@@ -7011,4 +7011,4 @@
       "bytes": 121952
     }
   ]
-}
+}\n
