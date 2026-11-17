@@ -36,7 +36,9 @@ jobs:
           assert len({r['source_path'] for r in rows})==100,'Duplicate asset path'
           approved=[r for r in rows if r['publish_rule']=='NEW_PHOTO_REQUIRES_PUBLISH']
           retained=[r for r in rows if r['publish_rule']=='KEEP_EXISTING_IMAGE']
-          assert len(approved)==25 and len(retained)==75,(len(approved),len(retained))
+          protected=[r for r in rows if r['publish_rule']=='DO_NOT_REPLACE']
+          assert len(approved)==23 and len(retained)==75 and len(protected)==2,(len(approved),len(retained),len(protected))
+          assert {r['new_photo_webp'] for r in protected}=={'pasta_078.webp','pasta_082.webp'}
           allowed=set(z.namelist())
           assert sum(n.startswith('НОВЫЕ_25_WEBP/') and n.endswith('.webp') for n in allowed)==25
           planned=[]
@@ -53,14 +55,16 @@ jobs:
                   assert payload[:4]==b'RIFF' and payload[8:12]==b'WEBP',('Not WebP',expected)
                   assert len(payload)>1024,('Image unexpectedly small',expected)
                   planned.append((current,payload))
+              elif r in protected:
+                  assert r['new_photo_webp'] in ('pasta_078.webp','pasta_082.webp')
               else:
                   assert not r['new_photo_webp'],('Unexpected new image',r['catalog_n'])
-          assert len(planned)==25
+          assert len(planned)==23
           for target,data in planned:
               target.write_bytes(data)
           new_files=[str(p) for p,_ in planned]
           pathlib.Path('/tmp/pasta-approved-list.txt').write_text('\n'.join(new_files)+'\n')
-          print("Validated 100 recipe IDs and paths; replaced exactly 25 WebP; retained 75")
+          print("Validated 100 recipe IDs and paths; replaced exactly 23 WebP; retained 77 (75 existing + 2 protected)")
           PY
       - name: Verify only listed image files changed
         run: |
@@ -71,7 +75,7 @@ jobs:
           changed=set(subprocess.check_output(['git','diff','--name-only']).decode().splitlines())
           assert changed <= expected,('Unexpected files modified',changed-expected)
           assert len(changed)>0,'No files modified'
-          print('Changed photo count:',len(changed),'of 25 approved.')
+          print('Changed photo count:',len(changed),'of 23 approved.')
           PY
       - name: Commit approved photographs to staging branch only
         run: |
@@ -79,5 +83,5 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           while IFS= read -r f; do git add -- "$f"; done </tmp/pasta-approved-list.txt
           git diff --cached --check
-          git commit -m "photos(pasta): publish 25 approved images from verified pasta-25 release"
+          git commit -m "photos(pasta): publish 23 approved images from verified pasta-25 release"
           git push origin HEAD:automation/pasta-100-github-actions-2026-11-17
