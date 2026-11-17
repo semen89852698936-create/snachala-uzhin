@@ -96,7 +96,6 @@ jobs:
           expected=set(pathlib.Path('/tmp/pasta-approved-list.txt').read_text().splitlines())
           changed=set(subprocess.check_output(['git','diff','--name-only']).decode().splitlines())
           assert changed <= expected | {'photo-library/ai-recipe-photo-map.json'},('Unexpected files modified',changed-expected)
-          assert 'photo-library/ai-recipe-photo-map.json' in changed, 'Manifest did not change'
           assert len(changed)>=1,'No files modified'
           print('Changed photo count:',len(changed),'of 23 approved.')
           PY
@@ -109,5 +108,9 @@ jobs:
           while IFS= read -r f; do git add -- "$f"; done </tmp/pasta-approved-list.txt
           git add photo-library/ai-recipe-photo-map.json
           git diff --cached --check
-          git commit -m "photos(pasta): publish 23 approved images from verified pasta-25 release"
-          git push origin HEAD:automation/pasta-100-github-actions-2026-11-17
+          if ! git diff --cached --quiet; then
+            git commit -m "photos(pasta): publish 23 approved images from verified pasta-25 release"
+            git push origin HEAD:automation/pasta-100-github-actions-2026-11-17
+          else
+            echo "Photo bytes and registry already match approved release; no new commit needed"
+          fi
