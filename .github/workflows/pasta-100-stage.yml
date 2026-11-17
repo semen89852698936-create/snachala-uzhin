@@ -71,7 +71,9 @@ jobs:
           python3 - <<'PY'
           import pathlib,json,hashlib
           fp=pathlib.Path('photo-library/ai-recipe-photo-map.json')
-          info=json.loads(fp.read_text(encoding='utf-8'))
+          raw=fp.read_text(encoding='utf-8')
+          info,end=json.JSONDecoder().raw_decode(raw)
+          assert raw[end:].strip() in ('', '\\n'), 'Unexpected trailing catalog data'
           updated=set(pathlib.Path('/tmp/pasta-approved-list.txt').read_text().splitlines())
           seen=set()
           for row in info['photos']:
