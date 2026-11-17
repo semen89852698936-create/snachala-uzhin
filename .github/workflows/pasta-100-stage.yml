@@ -1,83 +1,83 @@
-name: Stage 100 pasta photos (guarded)
+name: Publish approved pasta photos to staging branch
 on:
   push:
     branches:
       - automation/pasta-100-github-actions-2026-11-17
     paths:
       - .github/workflows/pasta-100-stage.yml
-  workflow_dispatch:
-    inputs:
-      archive_url:
-        description: 'HTTPS URL for approved PASTA_100 zip (short-lived, do not paste secrets)'
-        required: true
-        type: string
 permissions:
   contents: write
-  pull-requests: write
 jobs:
-  stage:
+  stage-approved:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout staging branch
+        uses: actions/checkout@v4
         with:
           persist-credentials: true
-      - name: Validate repository and stage approved images if accessible
+      - name: Download private pasta-25 release through GitHub token
         env:
-          ARCHIVE_URL: ${{ inputs.archive_url }}
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          mkdir -p /tmp/pasta-release
+          gh release download pasta-25 --repo "${{ github.repository }}" --pattern '*.zip' --dir /tmp/pasta-release
+          test "$(find /tmp/pasta-release -maxdepth 1 -name '*.zip' -type f | wc -l)" -eq 1
+          find /tmp/pasta-release -maxdepth 1 -name '*.zip' -type f -exec cp '{}' /tmp/pasta-25.zip \;
+          echo "590412cfaa2a89ca9837e7631a16b239cf2c62e0e26c0dc5e8e3d6dbb252a49e  /tmp/pasta-25.zip" | sha256sum -c -
+      - name: Validate all 100 mappings and replace only 25 approved photographs
         run: |
           python3 - <<'PY'
-          import csv, hashlib, io, os, pathlib, sys, urllib.request, zipfile
-          base=pathlib.Path("assets/recipes-ai")
-          paths=list(base.glob("*.webp"))
-          pasta=[p for p in paths if p.name.startswith(("0001-","0002-")) or (p.name[:4].isdigit() and 315 <= int(p.name[:4]) <= 412)]
-          print("Current pasta source files:",len(pasta))
-          if len(pasta)!=100: raise SystemExit("Expected exactly 100 existing pasta sources")
-          url=os.environ.get("ARCHIVE_URL","").strip()
-          if not url:
-              print("SAFE DRY RUN: No archive URL supplied. No changes will be made.")
-              print("75 pre-existing files were exported separately in run 44071629696.")
-              pathlib.Path("pasta-stage-status.txt").write_text("Blocked: no download URL for approved archive of 100 images. Repo unchanged.\n")
-              sys.exit(0)
-          if not url.startswith("https://"): raise SystemExit("Archive URL must be HTTPS")
-          with urllib.request.urlopen(urllib.request.Request(url,headers={"User-Agent":"PastaApprovedGitHubActions"}),timeout=90) as f:
-              raw=f.read(25_000_001)
-          if len(raw)>25_000_000: raise SystemExit("Archive too large")
-          with zipfile.ZipFile(io.BytesIO(raw)) as z:
-              if z.testzip(): raise SystemExit("Corrupt archive")
-              registry=list(csv.DictReader(io.StringIO(z.read("РЕЕСТР_100_ФОТО.csv").decode("utf-8-sig"))))
-              if len(registry)!=100: raise SystemExit("Expected 100 manifest rows")
-              if len(set(x["source_path"] for x in registry))!=100: raise SystemExit("Duplicate source path")
-              new=[x for x in registry if x["origin"]=="NEW_USER_APPROVED_2026-11-17"]
-              old=[x for x in registry if x["origin"]!="NEW_USER_APPROVED_2026-11-17"]
-              if len(new)!=25 or len(old)!=75: raise SystemExit(f"Bad split: {len(new)} new, {len(old)} existing")
-              changes=[]
-              for x in registry:
-                  target=pathlib.PurePosixPath(x["source_path"])
-                  if len(target.parts)!=3 or target.parts[:2]!=("assets","recipes-ai") or target.suffix!=".webp":
-                      raise SystemExit("Invalid path "+str(target))
-                  stored="ФОТО_100/"+x["file"]
-                  if target.name != x["file"]: raise SystemExit("Filename mismatch "+stored)
-                  data=z.read(stored)
-                  if hashlib.sha256(data).hexdigest()!=x["sha256"] or len(data)!=int(x["bytes"]):
-                      raise SystemExit("Checksum mismatch "+stored)
-                  if x in old:
-                      original=pathlib.Path(str(target))
-                      if not original.exists() or original.read_bytes()!=data:
-                          raise SystemExit("75-source mismatch; refusing overwrite "+str(target))
-                  else:
-                      changes.append((str(target),data))
-              if len(changes)!=25: raise SystemExit("Wrong new photo count")
-              for filename,data in changes:
-                  pathlib.Path(filename).write_bytes(data)
-              print("Validated 100; staged exactly 25 approved WebP replacements; 75 untouched")
-              pathlib.Path("pasta-stage-status.txt").write_text("Validated 100 photos; 25 replacements, 75 untouched.\n")
+          import csv,hashlib,io,pathlib,zipfile
+          z=zipfile.ZipFile('/tmp/pasta-25.zip')
+          assert z.testzip() is None,"Corrupted zip"
+          rows=list(csv.DictReader(io.StringIO(z.read('РЕЕСТР_100.csv').decode('utf-8-sig'))))
+          assert len(rows)==100,('Wrong recipe count',len(rows))
+          assert len({r['catalog_n'] for r in rows})==100,'Duplicate recipe number'
+          assert len({r['source_path'] for r in rows})==100,'Duplicate asset path'
+          approved=[r for r in rows if r['publish_rule']=='NEW_PHOTO_REQUIRES_PUBLISH']
+          retained=[r for r in rows if r['publish_rule']=='KEEP_EXISTING_IMAGE']
+          assert len(approved)==25 and len(retained)==75,(len(approved),len(retained))
+          allowed=set(z.namelist())
+          assert sum(n.startswith('НОВЫЕ_25_WEBP/') and n.endswith('.webp') for n in allowed)==25
+          planned=[]
+          for r in rows:
+              target=pathlib.PurePosixPath(r['source_path'])
+              assert len(target.parts)==3 and target.parts[:2]==('assets','recipes-ai') and target.suffix=='.webp',target
+              assert target.name==f"{int(r['catalog_n']):04d}-{r['recipe_id']}.webp",target
+              current=pathlib.Path(str(target))
+              assert current.is_file(),('Missing existing image',target)
+              if r in approved:
+                  expected=f"НОВЫЕ_25_WEBP/{r['new_photo_webp']}"
+                  assert expected in allowed,('Missing approved image',expected)
+                  payload=z.read(expected)
+                  assert payload[:4]==b'RIFF' and payload[8:12]==b'WEBP',('Not WebP',expected)
+                  assert len(payload)>1024,('Image unexpectedly small',expected)
+                  planned.append((current,payload))
+              else:
+                  assert not r['new_photo_webp'],('Unexpected new image',r['catalog_n'])
+          assert len(planned)==25
+          for target,data in planned:
+              target.write_bytes(data)
+          new_files=[str(p) for p,_ in planned]
+          pathlib.Path('/tmp/pasta-approved-list.txt').write_text('\n'.join(new_files)+'\n')
+          print("Validated 100 recipe IDs and paths; replaced exactly 25 WebP; retained 75")
           PY
-      - name: Show changes only (no automatic publication on unverified staging)
+      - name: Verify only listed image files changed
         run: |
           git status --short
-          echo "Only a verified, separately reviewed workflow run may update main."
-      - uses: actions/upload-artifact@v4
-        with:
-          name: pasta-stage-report
-          path: pasta-stage-status.txt
-          if-no-files-found: ignore
+          python3 - <<'PY'
+          import pathlib,subprocess
+          expected=set(pathlib.Path('/tmp/pasta-approved-list.txt').read_text().splitlines())
+          changed=set(subprocess.check_output(['git','diff','--name-only']).decode().splitlines())
+          assert changed <= expected,('Unexpected files modified',changed-expected)
+          assert len(changed)>0,'No files modified'
+          print('Changed photo count:',len(changed),'of 25 approved.')
+          PY
+      - name: Commit approved photographs to staging branch only
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          while IFS= read -r f; do git add -- "$f"; done </tmp/pasta-approved-list.txt
+          git diff --cached --check
+          git commit -m "photos(pasta): publish 25 approved images from verified pasta-25 release"
+          git push origin HEAD:automation/pasta-100-github-actions-2026-11-17
