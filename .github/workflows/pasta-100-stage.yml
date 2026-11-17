@@ -79,11 +79,11 @@ jobs:
               if target not in updated: continue
               payload=pathlib.Path(target).read_bytes()
               row['bytes']=len(payload)
-              row['sha']=hashlib.sha1(b'blob '+str(len(payload)).encode()+b'\\0'+payload).hexdigest()
+              row['sha']=hashlib.sha1(b'blob '+str(len(payload)).encode()+b'\0'+payload).hexdigest()
               seen.add(target)
           assert seen==updated,(len(seen),len(updated),updated-seen)
           assert len(info['photos'])==1001
-          fp.write_text(json.dumps(info,ensure_ascii=False,indent=2)+'\\n',encoding='utf-8')
+          fp.write_text(json.dumps(info,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
           print('Updated exactly 23 catalog entries with Git blob SHA-1 and byte sizes')
           PY
       - name: Verify only listed image files changed
