@@ -1,0 +1,46 @@
+{
+  "date": "2026-11-17",
+  "sourceRegistry": "project-operations/registry.json@main",
+  "activeProjects": 2,
+  "baselineMain": "489c42e0ddac80ce2473c33b9ea8dd5beec2eb7b",
+  "mainProduction": {
+    "project": "snachala-uzhin-git",
+    "sha": "489c42e0ddac80ce2473c33b9ea8dd5beec2eb7b",
+    "state": "READY",
+    "target": "production"
+  },
+  "editorialPreview": {
+    "project": "snachala-uzhin-preview",
+    "sha": "4d7cf88d470a70c49794b036fa22fe379bd21566",
+    "state": "READY",
+    "target": null,
+    "branch": "release/nash-vecher-potato-413-approved-20261117"
+  },
+  "otherPreviewBranches": [
+    "release/nash-vecher-beans-10-approved-20261117",
+    "release/nash-vecher-vegetables-9-approved-20261117"
+  ],
+  "granitsy": {
+    "main": "6c0fac72f5e894b7693092a6ba0ec6380ad8c153",
+    "productionSha": "6c0fac72f5e894b7693092a6ba0ec6380ad8c153",
+    "productionReady": true,
+    "latestPreviewSha": "09030a5c297e257c38e893006a12633d3b5e5a1b"
+  },
+  "photoLibrary": {
+    "totalRecipes": 1001,
+    "legacySummaryUpdated": "2026-11-01",
+    "legacyCuratedUpdated": "2026-11-01",
+    "csvInMain": false,
+    "newPhysicalImages": 0,
+    "newDirectVisualChecks": 0,
+    "newLicenseChecks": 0,
+    "newOwnerApprovals": 0,
+    "remainingFinalApprovals": null
+  },
+  "constraints": [
+    "No PR merges",
+    "No production publication",
+    "Do not alter locked owner-approved photographs",
+    "Do not count preview as production"
+  ]
+}
