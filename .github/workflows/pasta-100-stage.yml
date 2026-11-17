@@ -66,6 +66,26 @@ jobs:
           pathlib.Path('/tmp/pasta-approved-list.txt').write_text('\n'.join(new_files)+'\n')
           print("Validated 100 recipe IDs and paths; replaced exactly 23 WebP; retained 77 (75 existing + 2 protected)")
           PY
+      - name: Update SHA and byte counts only for 23 approved pasta images
+        run: |
+          python3 - <<'PY'
+          import pathlib,json,hashlib
+          fp=pathlib.Path('photo-library/ai-recipe-photo-map.json')
+          info=json.loads(fp.read_text(encoding='utf-8'))
+          updated=set(pathlib.Path('/tmp/pasta-approved-list.txt').read_text().splitlines())
+          seen=set()
+          for row in info['photos']:
+              target=row['path'].lstrip('/')
+              if target not in updated: continue
+              payload=pathlib.Path(target).read_bytes()
+              row['bytes']=len(payload)
+              row['sha']=hashlib.sha1(b'blob '+str(len(payload)).encode()+b'\\0'+payload).hexdigest()
+              seen.add(target)
+          assert seen==updated,(len(seen),len(updated),updated-seen)
+          assert len(info['photos'])==1001
+          fp.write_text(json.dumps(info,ensure_ascii=False,indent=2)+'\\n',encoding='utf-8')
+          print('Updated exactly 23 catalog entries with Git blob SHA-1 and byte sizes')
+          PY
       - name: Verify only listed image files changed
         run: |
           git status --short
@@ -73,8 +93,9 @@ jobs:
           import pathlib,subprocess
           expected=set(pathlib.Path('/tmp/pasta-approved-list.txt').read_text().splitlines())
           changed=set(subprocess.check_output(['git','diff','--name-only']).decode().splitlines())
-          assert changed <= expected,('Unexpected files modified',changed-expected)
-          assert len(changed)>0,'No files modified'
+          assert changed <= expected | {'photo-library/ai-recipe-photo-map.json'},('Unexpected files modified',changed-expected)
+          assert 'photo-library/ai-recipe-photo-map.json' in changed, 'Manifest did not change'
+          assert len(changed)>=1,'No files modified'
           print('Changed photo count:',len(changed),'of 23 approved.')
           PY
       - name: Commit approved photographs to staging branch only
@@ -82,6 +103,7 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           while IFS= read -r f; do git add -- "$f"; done </tmp/pasta-approved-list.txt
+          git add photo-library/ai-recipe-photo-map.json
           git diff --cached --check
           git commit -m "photos(pasta): publish 23 approved images from verified pasta-25 release"
           git push origin HEAD:automation/pasta-100-github-actions-2026-11-17
