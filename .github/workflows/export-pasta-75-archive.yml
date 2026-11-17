@@ -1,0 +1,42 @@
+name: Export 75 existing pasta photos for archival
+on:
+  push:
+    branches:
+      - archive/pasta-75-source-photos-2026-11-17
+    paths:
+      - .github/workflows/export-pasta-75-archive.yml
+permissions:
+  contents: read
+jobs:
+  export:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Copy 75 existing pasta photos
+        run: |
+          python3 - <<'PY'
+          import csv, pathlib, shutil, hashlib, json
+          excluded = {1,2,315,316,319,320,321,322,324,325,326,327,329,331,332,389,390,391,392,363,364,368,369,371,372}
+          root=pathlib.Path('.')
+          out=pathlib.Path('pasta-existing-75')
+          out.mkdir(exist_ok=True)
+          rows=[]
+          with (root/'photo-library/recipe-photo-registry.csv').open(encoding='utf-8-sig',newline='') as f:
+              for row in csv.DictReader(f):
+                  n=int(row['n'])
+                  if row['category'] != 'pasta' or n in excluded: continue
+                  filename=f"{n:04d}-{row['recipe_id']}.webp"
+                  src=root/'assets/recipes-ai'/filename
+                  if not src.is_file(): raise FileNotFoundError(src)
+                  dest=out/filename
+                  shutil.copyfile(src,dest)
+                  rows.append(dict(n=n,recipe_id=row['recipe_id'],title=row['title'],file=filename,sha256=hashlib.sha256(dest.read_bytes()).hexdigest(),bytes=dest.stat().st_size))
+          if len(rows)!=75: raise RuntimeError(f"Expected 75, got {len(rows)}")
+          (out/'manifest.json').write_text(json.dumps(rows,ensure_ascii=False,indent=2),encoding='utf-8')
+          print("Prepared 75 photos; all local files present")
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: pasta-existing-75-photos
+          path: pasta-existing-75/
+          retention-days: 7
