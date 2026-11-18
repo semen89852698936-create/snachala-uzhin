@@ -20,7 +20,7 @@
 **Три независимых источника:**
 1. https://www.recetasderechupete.com/gazpacho-andaluz-una-receta-con-la-alegria-de-la-huerta-el-tomate/5701/
 2. https://www.elcorteingles.es/supermercado/recetas/gazpacho-andaluz-tradicional/
-3. https://www.foodnetwork.com/recipes/gazpacho-andaluz-recipe-1940356
+3. https://goya.es/recetas/gazpacho-tradicional-andaluz
 
 **Сопоставление:** Гаспачо жиже сальморехо; хлеб может присутствовать, но в небольшом количестве.
 
