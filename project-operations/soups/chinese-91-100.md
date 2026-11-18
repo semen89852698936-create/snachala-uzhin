@@ -253,9 +253,9 @@
 
 **Источники для дальнейшей сверки:**
 1. https://thewoksoflife.com/chinese-watercress-soup-pork/
-2. https://www.chinasichuanfood.com/watercress-soup/
+2. https://theburningkitchen.com/watercress-pork-rib-soup-recipe/
 3. https://souperdiaries.com/watercress-with-pork-ribs-soup/
 
-**Отличия региональных вариантов и выбор редакции:** Третий URL нуждается в подтверждении. Важна долгокипящая кантонская технология и настоящий водяной кресс.
+**Отличия региональных вариантов и выбор редакции:** Второй источник заменён на рецепт водяного кресса со свиными рёбрами The Burning Kitchen. Важна долгокипящая кантонская технология и настоящий водяной кресс.
 
 **Фото:** проверка независимых фото и индивидуальный кандидат ещё не готовы.
