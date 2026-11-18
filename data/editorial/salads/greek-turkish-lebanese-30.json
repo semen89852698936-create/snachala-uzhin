@@ -93,7 +93,13 @@
       "warn": "Проверь аллергены и сроки хранения продуктов; соблюдай безопасную термообработку.",
       "photoBrief": "Изобразить только готовые компоненты блюда «Хорьятики» в соответствии с точной технологией, без постороннего декора и сырой еды, которая должна быть приготовлена.",
       "photoStatus": "pending_separate_photo",
-      "reviewStatus": "editorial_draft_requires_source_by_source_signoff"
+      "reviewStatus": "editorial_draft_requires_source_by_source_signoff",
+      "researchLeads": [
+        {
+          "url": "https://www.argiro.gr/en/recipe/horiatiki-salad/",
+          "status": "source_to_crosscheck_not_three_source_verified"
+        }
+      ]
     },
     {
       "id": "world-salad-05-02",
@@ -173,7 +179,13 @@
       "warn": "Проверь аллергены и сроки хранения продуктов; соблюдай безопасную термообработку.",
       "photoBrief": "Изобразить только готовые компоненты блюда «Критский дакос» в соответствии с точной технологией, без постороннего декора и сырой еды, которая должна быть приготовлена.",
       "photoStatus": "pending_separate_photo",
-      "reviewStatus": "editorial_draft_requires_source_by_source_signoff"
+      "reviewStatus": "editorial_draft_requires_source_by_source_signoff",
+      "researchLeads": [
+        {
+          "url": "https://www.tasteatlas.com/dakos/recipe",
+          "status": "source_to_crosscheck_not_three_source_verified"
+        }
+      ]
     },
     {
       "id": "world-salad-05-03",
@@ -247,7 +259,13 @@
       "warn": "Проверь аллергены и сроки хранения продуктов; соблюдай безопасную термообработку.",
       "photoBrief": "Изобразить только готовые компоненты блюда «Марулосалата» в соответствии с точной технологией, без постороннего декора и сырой еды, которая должна быть приготовлена.",
       "photoStatus": "pending_separate_photo",
-      "reviewStatus": "editorial_draft_requires_source_by_source_signoff"
+      "reviewStatus": "editorial_draft_requires_source_by_source_signoff",
+      "researchLeads": [
+        {
+          "url": "https://www.dianekochilas.com/greek-lettuce-salad-maroulosalata/",
+          "status": "source_to_crosscheck_not_three_source_verified"
+        }
+      ]
     },
     {
       "id": "world-salad-05-04",
@@ -261,7 +279,7 @@
       "description": "Самостоятельное блюдо греческая кухни на двоих",
       "ingredients": [
         {
-          "name": "Листовая съедобная зелень для хорта",
+          "name": "Молодые листья съедобного одуванчика или мангольда",
           "amount": 400,
           "unit": "г",
           "group": "Основное"
@@ -315,7 +333,13 @@
       "warn": "Проверь аллергены и сроки хранения продуктов; соблюдай безопасную термообработку.",
       "photoBrief": "Изобразить только готовые компоненты блюда «Хорта» в соответствии с точной технологией, без постороннего декора и сырой еды, которая должна быть приготовлена.",
       "photoStatus": "pending_separate_photo",
-      "reviewStatus": "editorial_draft_requires_source_by_source_signoff"
+      "reviewStatus": "editorial_draft_requires_source_by_source_signoff",
+      "researchLeads": [
+        {
+          "url": "https://justrecipes.net/en/recipes/horta-vrasta/",
+          "status": "source_to_crosscheck_not_three_source_verified"
+        }
+      ]
     },
     {
       "id": "world-salad-05-05",
@@ -389,7 +413,13 @@
       "warn": "Проверь аллергены и сроки хранения продуктов; соблюдай безопасную термообработку.",
       "photoBrief": "Изобразить только готовые компоненты блюда «Панцаросалата» в соответствии с точной технологией, без постороннего декора и сырой еды, которая должна быть приготовлена.",
       "photoStatus": "pending_separate_photo",
-      "reviewStatus": "editorial_draft_requires_source_by_source_signoff"
+      "reviewStatus": "editorial_draft_requires_source_by_source_signoff",
+      "researchLeads": [
+        {
+          "url": "https://www.kalliopiskitchen.com/recipes/pantzarosalata/",
+          "status": "source_to_crosscheck_not_three_source_verified"
+        }
+      ]
     },
     {
       "id": "world-salad-05-06",
@@ -469,7 +499,13 @@
       "warn": "Проверь аллергены и сроки хранения продуктов; соблюдай безопасную термообработку.",
       "photoBrief": "Изобразить только готовые компоненты блюда «Пататосалата» в соответствии с точной технологией, без постороннего декора и сырой еды, которая должна быть приготовлена.",
       "photoStatus": "pending_separate_photo",
-      "reviewStatus": "editorial_draft_requires_source_by_source_signoff"
+      "reviewStatus": "editorial_draft_requires_source_by_source_signoff",
+      "researchLeads": [
+        {
+          "url": "https://www.foodnetwork.com/recipes/cat-cora/greek-potato-salad-patatosalata-recipe-1911536",
+          "status": "source_to_crosscheck_not_three_source_verified"
+        }
+      ]
     },
     {
       "id": "world-salad-05-07",
@@ -549,7 +585,13 @@
       "warn": "Проверь аллергены и сроки хранения продуктов; соблюдай безопасную термообработку.",
       "photoBrief": "Изобразить только готовые компоненты блюда «Фасолия салата» в соответствии с точной технологией, без постороннего декора и сырой еды, которая должна быть приготовлена.",
       "photoStatus": "pending_separate_photo",
-      "reviewStatus": "editorial_draft_requires_source_by_source_signoff"
+      "reviewStatus": "editorial_draft_requires_source_by_source_signoff",
+      "researchLeads": [
+        {
+          "url": "https://www.cyprusfoodmuseum.com/en/sylloges/paradosiakes-syntages/white-beans-salad",
+          "status": "source_to_crosscheck_not_three_source_verified"
+        }
+      ]
     },
     {
       "id": "world-salad-05-08",
@@ -629,7 +671,13 @@
       "warn": "Проверь аллергены и сроки хранения продуктов; соблюдай безопасную термообработку.",
       "photoBrief": "Изобразить только готовые компоненты блюда «Политики салата» в соответствии с точной технологией, без постороннего декора и сырой еды, которая должна быть приготовлена.",
       "photoStatus": "pending_separate_photo",
-      "reviewStatus": "editorial_draft_requires_source_by_source_signoff"
+      "reviewStatus": "editorial_draft_requires_source_by_source_signoff",
+      "researchLeads": [
+        {
+          "url": "https://akispetretzikis.com/en/recipe/4600",
+          "status": "source_to_crosscheck_not_three_source_verified"
+        }
+      ]
     },
     {
       "id": "world-salad-05-09",
@@ -703,7 +751,13 @@
       "warn": "Проверь аллергены и сроки хранения продуктов; соблюдай безопасную термообработку.",
       "photoBrief": "Изобразить только готовые компоненты блюда «Ампелофасула» в соответствии с точной технологией, без постороннего декора и сырой еды, которая должна быть приготовлена.",
       "photoStatus": "pending_separate_photo",
-      "reviewStatus": "editorial_draft_requires_source_by_source_signoff"
+      "reviewStatus": "editorial_draft_requires_source_by_source_signoff",
+      "researchLeads": [
+        {
+          "url": "https://www.argiro.gr/en/recipe/ampelofasoula-salad-greek-black-eyed-pea-pods/",
+          "status": "source_to_crosscheck_not_three_source_verified"
+        }
+      ]
     },
     {
       "id": "world-salad-05-10",
@@ -783,7 +837,13 @@
       "warn": "Проверь аллергены и сроки хранения продуктов; соблюдай безопасную термообработку.",
       "photoBrief": "Изобразить только готовые компоненты блюда «Салат из черноглазой фасоли» в соответствии с точной технологией, без постороннего декора и сырой еды, которая должна быть приготовлена.",
       "photoStatus": "pending_separate_photo",
-      "reviewStatus": "editorial_draft_requires_source_by_source_signoff"
+      "reviewStatus": "editorial_draft_requires_source_by_source_signoff",
+      "researchLeads": [
+        {
+          "url": "https://theeasterncross.com/fasting-recipes/mavromatika",
+          "status": "source_to_crosscheck_not_three_source_verified"
+        }
+      ]
     },
     {
       "id": "world-salad-06-01",
@@ -869,7 +929,13 @@
       "warn": "Проверь аллергены и сроки хранения продуктов; соблюдай безопасную термообработку.",
       "photoBrief": "Изобразить только готовые компоненты блюда «Чобан салатасы» в соответствии с точной технологией, без постороннего декора и сырой еды, которая должна быть приготовлена.",
       "photoStatus": "pending_separate_photo",
-      "reviewStatus": "editorial_draft_requires_source_by_source_signoff"
+      "reviewStatus": "editorial_draft_requires_source_by_source_signoff",
+      "researchLeads": [
+        {
+          "url": "https://hazirbak.com/tarifler/salatalar-ve-mezeler",
+          "status": "source_to_crosscheck_not_three_source_verified"
+        }
+      ]
     },
     {
       "id": "world-salad-06-02",
@@ -961,7 +1027,13 @@
       "warn": "Проверь аллергены и сроки хранения продуктов; соблюдай безопасную термообработку.",
       "photoBrief": "Изобразить только готовые компоненты блюда «Гавурдагы» в соответствии с точной технологией, без постороннего декора и сырой еды, которая должна быть приготовлена.",
       "photoStatus": "pending_separate_photo",
-      "reviewStatus": "editorial_draft_requires_source_by_source_signoff"
+      "reviewStatus": "editorial_draft_requires_source_by_source_signoff",
+      "researchLeads": [
+        {
+          "url": "https://ozlemsturkishtable.com/2012/08/gavurdagi-salad-of-ripe-tomatoes-onion-parsley-and-walnuts-with-olive-oil-pomegranate-sauce-dressing-gavurdagi-salatasi/",
+          "status": "source_to_crosscheck_not_three_source_verified"
+        }
+      ]
     },
     {
       "id": "world-salad-06-03",
@@ -1053,7 +1125,13 @@
       "warn": "Проверь аллергены и сроки хранения продуктов; соблюдай безопасную термообработку.",
       "photoBrief": "Изобразить только готовые компоненты блюда «Пияз» в соответствии с точной технологией, без постороннего декора и сырой еды, которая должна быть приготовлена.",
       "photoStatus": "pending_separate_photo",
-      "reviewStatus": "editorial_draft_requires_source_by_source_signoff"
+      "reviewStatus": "editorial_draft_requires_source_by_source_signoff",
+      "researchLeads": [
+        {
+          "url": "https://www.lezzet.com.tr/yemek-tarifleri/salata-ve-meze-tarifleri/meze-tarifleri/piyaz-tarifi",
+          "status": "source_to_crosscheck_not_three_source_verified"
+        }
+      ]
     },
     {
       "id": "world-salad-06-04",
@@ -1157,7 +1235,13 @@
       "warn": "Проверь аллергены и сроки хранения продуктов; соблюдай безопасную термообработку.",
       "photoBrief": "Изобразить только готовые компоненты блюда «Кысыр» в соответствии с точной технологией, без постороннего декора и сырой еды, которая должна быть приготовлена.",
       "photoStatus": "pending_separate_photo",
-      "reviewStatus": "editorial_draft_requires_source_by_source_signoff"
+      "reviewStatus": "editorial_draft_requires_source_by_source_signoff",
+      "researchLeads": [
+        {
+          "url": "https://www.cumhuriyet.com.tr/gurme/pratik-ve-tam-olcu-kisir-tarifi-2551368",
+          "status": "source_to_crosscheck_not_three_source_verified"
+        }
+      ]
     },
     {
       "id": "world-salad-06-05",
@@ -1249,7 +1333,13 @@
       "warn": "Проверь аллергены и сроки хранения продуктов; соблюдай безопасную термообработку.",
       "photoBrief": "Изобразить только готовые компоненты блюда «Аджылы эзме» в соответствии с точной технологией, без постороннего декора и сырой еды, которая должна быть приготовлена.",
       "photoStatus": "pending_separate_photo",
-      "reviewStatus": "editorial_draft_requires_source_by_source_signoff"
+      "reviewStatus": "editorial_draft_requires_source_by_source_signoff",
+      "researchLeads": [
+        {
+          "url": "https://www.arcelik.com.tr/blog/acili-ezme-tarifi",
+          "status": "source_to_crosscheck_not_three_source_verified"
+        }
+      ]
     },
     {
       "id": "world-salad-06-06",
@@ -1335,7 +1425,13 @@
       "warn": "Проверь аллергены и сроки хранения продуктов; соблюдай безопасную термообработку.",
       "photoBrief": "Изобразить только готовые компоненты блюда «Патлыджан салатасы» в соответствии с точной технологией, без постороннего декора и сырой еды, которая должна быть приготовлена.",
       "photoStatus": "pending_separate_photo",
-      "reviewStatus": "editorial_draft_requires_source_by_source_signoff"
+      "reviewStatus": "editorial_draft_requires_source_by_source_signoff",
+      "researchLeads": [
+        {
+          "url": "https://www.lezzet.com.tr/yemek-tarifleri/salata-ve-meze-tarifleri/salata-tarifleri/kozlenmis-biber-ve-patlican-salatasi-tarifi",
+          "status": "source_to_crosscheck_not_three_source_verified"
+        }
+      ]
     },
     {
       "id": "world-salad-06-07",
@@ -1409,7 +1505,13 @@
       "warn": "Проверь аллергены и сроки хранения продуктов; соблюдай безопасную термообработку.",
       "photoBrief": "Изобразить только готовые компоненты блюда «Портулак с чесночным йогуртом» в соответствии с точной технологией, без постороннего декора и сырой еды, которая должна быть приготовлена.",
       "photoStatus": "pending_separate_photo",
-      "reviewStatus": "editorial_draft_requires_source_by_source_signoff"
+      "reviewStatus": "editorial_draft_requires_source_by_source_signoff",
+      "researchLeads": [
+        {
+          "url": "https://dadagastro.com/tarif/semizotu-salatasi-yogurtlu-sarimsakli",
+          "status": "source_to_crosscheck_not_three_source_verified"
+        }
+      ]
     },
     {
       "id": "world-salad-06-08",
@@ -1495,7 +1597,13 @@
       "warn": "Проверь аллергены и сроки хранения продуктов; соблюдай безопасную термообработку.",
       "photoBrief": "Изобразить только готовые компоненты блюда «Турецкий картофельный салат» в соответствии с точной технологией, без постороннего декора и сырой еды, которая должна быть приготовлена.",
       "photoStatus": "pending_separate_photo",
-      "reviewStatus": "editorial_draft_requires_source_by_source_signoff"
+      "reviewStatus": "editorial_draft_requires_source_by_source_signoff",
+      "researchLeads": [
+        {
+          "url": "https://www.tat.com.tr/tat-sofrasi/patates-salatasi",
+          "status": "source_to_crosscheck_not_three_source_verified"
+        }
+      ]
     },
     {
       "id": "world-salad-06-09",
@@ -1563,7 +1671,13 @@
       "warn": "Проверь аллергены и сроки хранения продуктов; соблюдай безопасную термообработку.",
       "photoBrief": "Изобразить только готовые компоненты блюда «Красная капуста с лимоном» в соответствии с точной технологией, без постороннего декора и сырой еды, которая должна быть приготовлена.",
       "photoStatus": "pending_separate_photo",
-      "reviewStatus": "editorial_draft_requires_source_by_source_signoff"
+      "reviewStatus": "editorial_draft_requires_source_by_source_signoff",
+      "researchLeads": [
+        {
+          "url": "https://www.arcelik.com.tr/blog/mor-lahana-salatasi-tarifi",
+          "status": "source_to_crosscheck_not_three_source_verified"
+        }
+      ]
     },
     {
       "id": "world-salad-06-10",
@@ -1637,7 +1751,13 @@
       "warn": "Проверь аллергены и сроки хранения продуктов; соблюдай безопасную термообработку.",
       "photoBrief": "Изобразить только готовые компоненты блюда «Морковь с чесночным йогуртом» в соответствии с точной технологией, без постороннего декора и сырой еды, которая должна быть приготовлена.",
       "photoStatus": "pending_separate_photo",
-      "reviewStatus": "editorial_draft_requires_source_by_source_signoff"
+      "reviewStatus": "editorial_draft_requires_source_by_source_signoff",
+      "researchLeads": [
+        {
+          "url": "https://hazirbak.com/yogurtlu-havuc-salatasi-tarifi",
+          "status": "source_to_crosscheck_not_three_source_verified"
+        }
+      ]
     },
     {
       "id": "world-salad-07-01",
@@ -1723,7 +1843,13 @@
       "warn": "Проверь аллергены и сроки хранения продуктов; соблюдай безопасную термообработку.",
       "photoBrief": "Изобразить только готовые компоненты блюда «Табуле с петрушкой и булгуром» в соответствии с точной технологией, без постороннего декора и сырой еды, которая должна быть приготовлена.",
       "photoStatus": "pending_separate_photo",
-      "reviewStatus": "editorial_draft_requires_source_by_source_signoff"
+      "reviewStatus": "editorial_draft_requires_source_by_source_signoff",
+      "researchLeads": [
+        {
+          "url": "https://maureenabood.com/lebanese-tabbouleh-salad-recipe/",
+          "status": "source_to_crosscheck_not_three_source_verified"
+        }
+      ]
     },
     {
       "id": "world-salad-07-02",
@@ -1821,7 +1947,13 @@
       "warn": "Проверь аллергены и сроки хранения продуктов; соблюдай безопасную термообработку.",
       "photoBrief": "Изобразить только готовые компоненты блюда «Фаттуш с хрустящей питой» в соответствии с точной технологией, без постороннего декора и сырой еды, которая должна быть приготовлена.",
       "photoStatus": "pending_separate_photo",
-      "reviewStatus": "editorial_draft_requires_source_by_source_signoff"
+      "reviewStatus": "editorial_draft_requires_source_by_source_signoff",
+      "researchLeads": [
+        {
+          "url": "https://www.bonappetit.com/recipe/fattoush-salad",
+          "status": "source_to_crosscheck_not_three_source_verified"
+        }
+      ]
     },
     {
       "id": "world-salad-07-03",
@@ -1913,7 +2045,13 @@
       "warn": "Проверь аллергены и сроки хранения продуктов; соблюдай безопасную термообработку.",
       "photoBrief": "Изобразить только готовые компоненты блюда «Рахеб из печёных баклажанов» в соответствии с точной технологией, без постороннего декора и сырой еды, которая должна быть приготовлена.",
       "photoStatus": "pending_separate_photo",
-      "reviewStatus": "editorial_draft_requires_source_by_source_signoff"
+      "reviewStatus": "editorial_draft_requires_source_by_source_signoff",
+      "researchLeads": [
+        {
+          "url": "https://zaatarandzaytoun.com/eggplant-salad/",
+          "status": "source_to_crosscheck_not_three_source_verified"
+        }
+      ]
     },
     {
       "id": "world-salad-07-04",
@@ -1993,7 +2131,13 @@
       "warn": "Проверь аллергены и сроки хранения продуктов; соблюдай безопасную термообработку.",
       "photoBrief": "Изобразить только готовые компоненты блюда «Малфуф с капустой и лимоном» в соответствии с точной технологией, без постороннего декора и сырой еды, которая должна быть приготовлена.",
       "photoStatus": "pending_separate_photo",
-      "reviewStatus": "editorial_draft_requires_source_by_source_signoff"
+      "reviewStatus": "editorial_draft_requires_source_by_source_signoff",
+      "researchLeads": [
+        {
+          "url": "https://cookpad.com/eng/recipes/4537934",
+          "status": "source_to_crosscheck_not_three_source_verified"
+        }
+      ]
     },
     {
       "id": "world-salad-07-05",
@@ -2067,7 +2211,13 @@
       "warn": "Проверь аллергены и сроки хранения продуктов; соблюдай безопасную термообработку.",
       "photoBrief": "Изобразить только готовые компоненты блюда «Огурцы с йогуртом и мятой» в соответствии с точной технологией, без постороннего декора и сырой еды, которая должна быть приготовлена.",
       "photoStatus": "pending_separate_photo",
-      "reviewStatus": "editorial_draft_requires_source_by_source_signoff"
+      "reviewStatus": "editorial_draft_requires_source_by_source_signoff",
+      "researchLeads": [
+        {
+          "url": "https://www.madeinliban.com/how-to-make-lebanese-cucumber-yogurt-sauce/",
+          "status": "source_to_crosscheck_not_three_source_verified"
+        }
+      ]
     },
     {
       "id": "world-salad-07-06",
@@ -2147,7 +2297,13 @@
       "warn": "Проверь аллергены и сроки хранения продуктов; соблюдай безопасную термообработку.",
       "photoBrief": "Изобразить только готовые компоненты блюда «Ливанский картофельный салат» в соответствии с точной технологией, без постороннего декора и сырой еды, которая должна быть приготовлена.",
       "photoStatus": "pending_separate_photo",
-      "reviewStatus": "editorial_draft_requires_source_by_source_signoff"
+      "reviewStatus": "editorial_draft_requires_source_by_source_signoff",
+      "researchLeads": [
+        {
+          "url": "https://periandsons.com/recipe.php?p=Lebanese+Potato+Salad+%28Salatet+Batata%29",
+          "status": "source_to_crosscheck_not_three_source_verified"
+        }
+      ]
     },
     {
       "id": "world-salad-07-07",
@@ -2301,7 +2457,13 @@
       "warn": "Проверь аллергены и сроки хранения продуктов; соблюдай безопасную термообработку.",
       "photoBrief": "Изобразить только готовые компоненты блюда «Салат из нута с зеленью» в соответствии с точной технологией, без постороннего декора и сырой еды, которая должна быть приготовлена.",
       "photoStatus": "pending_separate_photo",
-      "reviewStatus": "editorial_draft_requires_source_by_source_signoff"
+      "reviewStatus": "editorial_draft_requires_source_by_source_signoff",
+      "researchLeads": [
+        {
+          "url": "https://www.recipesource.com/fgv/salads/07/rec0719.html",
+          "status": "source_to_crosscheck_not_three_source_verified"
+        }
+      ]
     },
     {
       "id": "world-salad-07-09",
@@ -2381,7 +2543,13 @@
       "warn": "Проверь аллергены и сроки хранения продуктов; соблюдай безопасную термообработку.",
       "photoBrief": "Изобразить только готовые компоненты блюда «Салат из рукколы с сумахом» в соответствии с точной технологией, без постороннего декора и сырой еды, которая должна быть приготовлена.",
       "photoStatus": "pending_separate_photo",
-      "reviewStatus": "editorial_draft_requires_source_by_source_signoff"
+      "reviewStatus": "editorial_draft_requires_source_by_source_signoff",
+      "researchLeads": [
+        {
+          "url": "https://cookpad.com/eng/recipes/4577968",
+          "status": "source_to_crosscheck_not_three_source_verified"
+        }
+      ]
     },
     {
       "id": "world-salad-07-10",
@@ -2401,14 +2569,8 @@
           "group": "Основное"
         },
         {
-          "name": "Лук красный",
-          "amount": 80,
-          "unit": "г",
-          "group": "Основное"
-        },
-        {
-          "name": "Помидоры",
-          "amount": 130,
+          "name": "Зелёный лук",
+          "amount": 65,
           "unit": "г",
           "group": "Основное"
         },
@@ -2438,7 +2600,7 @@
         },
         {
           "title": "Собери салат",
-          "detail": "Лук нарежь очень тонко, помидоры мелкими кубиками",
+          "detail": "Зелёный лук нарежь тонкими кольцами, не добавляй томаты: здесь основной вкус нежной свежей зелени.",
           "timer": 0
         },
         {
@@ -2453,9 +2615,15 @@
       ],
       "equipment": "Нож, доска, салатник и необходимая посуда",
       "warn": "Проверь аллергены и сроки хранения продуктов; соблюдай безопасную термообработку.",
-      "photoBrief": "Изобразить только готовые компоненты блюда «Свежий зелёный тимьян с луком» в соответствии с точной технологией, без постороннего декора и сырой еды, которая должна быть приготовлена.",
+      "photoBrief": "Салат из молодых листьев свежего зелёного заатара с тонко нарезанным зелёным луком и лимонно-оливковой заправкой, без помидоров.",
       "photoStatus": "pending_separate_photo",
-      "reviewStatus": "editorial_draft_requires_source_by_source_signoff"
+      "reviewStatus": "editorial_draft_requires_source_by_source_signoff",
+      "researchLeads": [
+        {
+          "url": "https://lebanesegarlicsauce.com/salatit-zaatar-akhdar-fresh-thyme-salad/",
+          "status": "source_to_crosscheck_not_three_source_verified"
+        }
+      ]
     }
   ]
 }
