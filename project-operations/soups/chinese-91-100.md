@@ -97,7 +97,7 @@
 
 **Источники для дальнейшей сверки:**
 1. https://thewoksoflife.com/winter-melon-soup-pork-ribs/
-2. https://haoweirecipes.com/en/recipes/winter-melon-soup
+2. https://simplechinesefood.com/recipe/winter-melon-pork-ribs-soup-203356
 3. https://www.chinasichuanfood.com/winter-melon-soup/
 
 **Отличия региональных вариантов и выбор редакции:** Зимняя дыня это Benincasa hispida, не обычная сладкая дыня.
@@ -184,7 +184,7 @@
 
 ---
 
-## №98. Янжоу паомо с бараниной и лепёшкой
+## №98. Янроу паомо с бараниной и лепёшкой
 
 **На двоих. Время:** 4 часа.
 
@@ -201,7 +201,7 @@
 
 **Источники для дальнейшей сверки:**
 1. https://tools.jiunotes.top/cuisines/shaanxi
-2. https://woktonight.com/recipes/regional/shaanxi-yangrou-paomo/
+2. https://hongkitchen.org/recipes/yangrou-paomo
 3. https://thingsasian.com/node/1915.html
 
 **Отличия региональных вариантов и выбор редакции:** Это суп с размоченной лепёшкой, а не лапша с мясом; технология ручного крошения обязательна.
