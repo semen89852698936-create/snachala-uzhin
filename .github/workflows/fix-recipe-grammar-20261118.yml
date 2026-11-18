@@ -1,0 +1,31 @@
+name: Correct Russian grammar in all 1001 recipe cards
+on:
+  push:
+    branches: [fix/all-recipe-step-grammar-20261118]
+    paths:
+      - scripts/fix-recipe-grammar-20261118.py
+      - .github/workflows/fix-recipe-grammar-20261118.yml
+permissions:
+  contents: write
+jobs:
+  correct:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - name: Fix confirmed grammatical mistakes and verify parity
+        run: python3 scripts/fix-recipe-grammar-20261118.py
+      - name: Confirm only two recipe HTML files were modified
+        run: |
+          git diff --check
+          test "$(git diff --name-only | sort)" = "$(printf '%s\n' 'full-catalog/index.html' 'index.html')"
+      - name: Commit corrected recipe titles
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add index.html full-catalog/index.html
+          git diff --cached --quiet && { echo 'No changes to commit'; exit 1; }
+          git commit -m "fix(recipes): correct 266 case errors across 1001 recipe cards"
+          git push origin HEAD:refs/heads/fix/all-recipe-step-grammar-20261118
