@@ -176,7 +176,7 @@
 **Источники для проверки:**
 1. https://vickypham.com/blog/vietnamese-pork-seafood-noodle-soup-hu-tieu/
 2. https://www.vietworldkitchen.com/blog/2007/11/hu-tieu-nam-van.html
-3. https://www.vietnamesefood.com.vn/vietnamese-recipes/vietnamese-noodle-recipes/hu-tieu-nam-vang-recipe.html
+3. https://vietnamesecookbook.com/recipes/hu-tieu/
 
 **Различия и редакционное решение:** Второй и третий URL требуют обязательной проверки открытием; до неё нельзя отметить независимое подтверждение.
 
@@ -202,7 +202,7 @@
 **Источники для проверки:**
 1. https://www.hungryhuy.com/banh-canh-gio-heo/
 2. https://vickypham.com/blog/banh-canh-suon-heo-vietnamese-pork-rib-noodle-soup-large-batch/
-3. https://www.vietnamesefood.com.vn/vietnamese-recipes/vietnamese-noodle-recipes/banh-canh-tom-thit-recipe.html
+3. https://vnifood.com/recipe/how-to-make-banh-canh-tom-thit/
 
 **Различия и редакционное решение:** Третий URL нуждается в подтверждении; бань кань нельзя заменять тонкой вермишелью.
 
