@@ -1,0 +1,1907 @@
+{
+  "project": "НАШ ВЕЧЕР",
+  "collection": "100 супов мира",
+  "status": "100 recipe-specific photo production briefs, NOT 100 photographs",
+  "specifications": [
+    {
+      "id": 1,
+      "cuisine": "Русская",
+      "title": "Борщ с говядиной",
+      "recipe_source_urls": [
+        "https://www.gastronom.ru/recipe/26598/klassicheskij-borsch-s-govjadinoj",
+        "https://openkitchen.eda.yandex/article/dishes/recipes/borsch-po-klassicheskomu-retseptu",
+        "https://www.edimdoma.ru/retsepty/155389-borsch-klassicheskiy-s-govyadinoy"
+      ],
+      "required_appearance": "прозрачный рубиново-красный бульон, различимая свекольная соломка, мягкие небольшие кусочки говядины, капуста и картофель; умеренная ложка сметаны, немного укропа. Без целого чеснока и сырых овощей сверху. См. визуальные примеры в источниках и ссылку на фотоориентир ниже.",
+      "forbidden_unlisted_ingredients": true,
+      "visual_source_urls": [],
+      "visual_sources_verified": false,
+      "generated_image_path": null,
+      "generated_image_verified": false,
+      "approved_by_user": false,
+      "photo_direction": "Food editorial close-up of the completed cooked soup in a real ceramic bowl, believable textures from the documented recipe, no raw or absent ingredients on top. Unique composition for this dish.",
+      "status": "PRODUCTION_BRIEF_ONLY_NO_IMAGE_CREATED"
+    },
+    {
+      "id": 2,
+      "cuisine": "Русская",
+      "title": "Щи из квашеной капусты с говядиной",
+      "recipe_source_urls": [
+        "https://www.gastronom.ru/recipe/18685/shchi-iz-kvashenoj-kapusty",
+        "https://lifehacker.ru/recipe/shhi-iz-kvashenoj-kapusty-s-govyadinoj/",
+        "https://www.russianfood.com/recipes/recipe.php?rid=160150"
+      ],
+      "required_appearance": "мягкая соломка квашеной капусты, прозрачный золотисто-янтарный бульон, кусочки говядины и картофеля. Это не крем-суп и не красный борщ. В отличие от борща, цвет не должен быть свекольным.",
+      "forbidden_unlisted_ingredients": true,
+      "visual_source_urls": [],
+      "visual_sources_verified": false,
+      "generated_image_path": null,
+      "generated_image_verified": false,
+      "approved_by_user": false,
+      "photo_direction": "Food editorial close-up of the completed cooked soup in a real ceramic bowl, believable textures from the documented recipe, no raw or absent ingredients on top. Unique composition for this dish.",
+      "status": "PRODUCTION_BRIEF_ONLY_NO_IMAGE_CREATED"
+    },
+    {
+      "id": 3,
+      "cuisine": "Русская",
+      "title": "Рассольник ленинградский",
+      "recipe_source_urls": [
+        "https://xn----8sbehgcimb3cfabqj3b.xn--p1ai/recipes/selection/rassolnik_leningradskiy/",
+        "https://www.gastronom.ru/recipe/56666/rassolnik-leningradskij-s-perlovkoj",
+        "https://tekhnolog.com/2018/07/18/rassolnik-leningradskij-s-krupoj-perlovoj-ttk2808/"
+      ],
+      "required_appearance": "золотистый, слегка мутный, но не пюреобразный бульон; видимая перловка, картофель брусочками, морковь и тонкие полоски солёного огурца. Без целых огурцов или крупных декоративных кусков.",
+      "forbidden_unlisted_ingredients": true,
+      "visual_source_urls": [],
+      "visual_sources_verified": false,
+      "generated_image_path": null,
+      "generated_image_verified": false,
+      "approved_by_user": false,
+      "photo_direction": "Food editorial close-up of the completed cooked soup in a real ceramic bowl, believable textures from the documented recipe, no raw or absent ingredients on top. Unique composition for this dish.",
+      "status": "PRODUCTION_BRIEF_ONLY_NO_IMAGE_CREATED"
+    },
+    {
+      "id": 4,
+      "cuisine": "Русская",
+      "title": "Солянка мясная сборная",
+      "recipe_source_urls": [
+        "https://www.gastronom.ru/recipe/12299/solyanka-sbornaya-myasnaya",
+        "https://openkitchen.eda.yandex/article/dishes/recipes/solyanka-myasnaya-sbornaya",
+        "https://www.edimdoma.ru/retsepty/154036-klassicheskaya-solyanka-myasnaya-sbornaya"
+      ],
+      "required_appearance": "Густой красновато-коричневый бульон, кусочки говядины, ветчины и колбасы, тонкие солёные огурцы, маслины, каперсы, немного петрушки; допускаются сметана и небольшая долька лимона. Никакой картошки и моркови.",
+      "forbidden_unlisted_ingredients": true,
+      "visual_source_urls": [],
+      "visual_sources_verified": false,
+      "generated_image_path": null,
+      "generated_image_verified": false,
+      "approved_by_user": false,
+      "photo_direction": "Food editorial close-up of the completed cooked soup in a real ceramic bowl, believable textures from the documented recipe, no raw or absent ingredients on top. Unique composition for this dish.",
+      "status": "PRODUCTION_BRIEF_ONLY_NO_IMAGE_CREATED"
+    },
+    {
+      "id": 5,
+      "cuisine": "Русская",
+      "title": "Уха из судака",
+      "recipe_source_urls": [
+        "https://t-j.ru/sudak-tudak/",
+        "https://fishub.info/ru/receptu/supi-ta-bulion/uxa-iz-sudaka-na-golove-i-xvoste",
+        "https://www.gastronom.ru/recipe/21344/uha-iz-sudaka-s-pomidorami"
+      ],
+      "required_appearance": "Требуется ручная проверка визуального описания: Уха из судака. судак целиком 700–850 г (или 350 г филе + 350 г супового набора), картофель 180 г, морковь 80 г, лук 80 г, вода 1,3 л, лавровый лист 1 шт., перец горо",
+      "forbidden_unlisted_ingredients": true,
+      "visual_source_urls": [],
+      "visual_sources_verified": false,
+      "generated_image_path": null,
+      "generated_image_verified": false,
+      "approved_by_user": false,
+      "photo_direction": "Food editorial close-up of the completed cooked soup in a real ceramic bowl, believable textures from the documented recipe, no raw or absent ingredients on top. Unique composition for this dish.",
+      "status": "PRODUCTION_BRIEF_ONLY_NO_IMAGE_CREATED"
+    },
+    {
+      "id": 6,
+      "cuisine": "Русская",
+      "title": "Окрошка на квасе с говядиной",
+      "recipe_source_urls": [
+        "https://www.gastronom.ru/recipe/35504/okroshka-mjasnaja",
+        "https://www.russianfood.com/recipes/recipe.php?rid=127153",
+        "https://t-j.ru/oh-baby/"
+      ],
+      "required_appearance": "Требуется ручная проверка визуального описания: Окрошка на квасе с говядиной. квас несладкий холодный 500 мл, отварная говядина 130 г, картофель отварной 150 г, огурец 120 г, редис 80 г, яйцо варёное 2 шт., зелёный лук 25 г, укр",
+      "forbidden_unlisted_ingredients": true,
+      "visual_source_urls": [],
+      "visual_sources_verified": false,
+      "generated_image_path": null,
+      "generated_image_verified": false,
+      "approved_by_user": false,
+      "photo_direction": "Food editorial close-up of the completed cooked soup in a real ceramic bowl, believable textures from the documented recipe, no raw or absent ingredients on top. Unique composition for this dish.",
+      "status": "PRODUCTION_BRIEF_ONLY_NO_IMAGE_CREATED"
+    },
+    {
+      "id": 7,
+      "cuisine": "Русская",
+      "title": "Зелёные щи со щавелем и яйцом",
+      "recipe_source_urls": [
+        "https://www.gastronom.ru/recipe/49499/zelenye-shchi-s-shchavelem-i-yajcom",
+        "https://vkusvill.ru/media/recipes/zelenye-shchi.html",
+        "https://food.ru/recipes/145640-zelionye-shchi-iz-shchavelia-1657935052"
+      ],
+      "required_appearance": "зелёно-оливковый суп с узнаваемыми листьями щавеля, картофелем и половинками варёного яйца, маленькая порция сметаны, никаких сырых яиц.",
+      "forbidden_unlisted_ingredients": true,
+      "visual_source_urls": [],
+      "visual_sources_verified": false,
+      "generated_image_path": null,
+      "generated_image_verified": false,
+      "approved_by_user": false,
+      "photo_direction": "Food editorial close-up of the completed cooked soup in a real ceramic bowl, believable textures from the documented recipe, no raw or absent ingredients on top. Unique composition for this dish.",
+      "status": "PRODUCTION_BRIEF_ONLY_NO_IMAGE_CREATED"
+    },
+    {
+      "id": 8,
+      "cuisine": "Русская",
+      "title": "Ботвинья с рыбой и квасом",
+      "recipe_source_urls": [
+        "https://molohovetc.ru/k_supy_kholodnye/205_botvinja/",
+        "https://www.gastronom.ru/text/botvinya-kak-prigotovit-botvinyu-1004359",
+        "https://gadgetchef.ru/blog/retsepty/luchshe-okroshki-kholodnyy-sup-botvinya-russkaya-kukhnya/"
+      ],
+      "required_appearance": "холодный зелёный суп, много мелкой варёной зелени и огурца; рыба отдельно на маленькой тарелке. НЕ ярко-розовый свекольник и НЕ большое яйцо в центре.",
+      "forbidden_unlisted_ingredients": true,
+      "visual_source_urls": [],
+      "visual_sources_verified": false,
+      "generated_image_path": null,
+      "generated_image_verified": false,
+      "approved_by_user": false,
+      "photo_direction": "Food editorial close-up of the completed cooked soup in a real ceramic bowl, believable textures from the documented recipe, no raw or absent ingredients on top. Unique composition for this dish.",
+      "status": "PRODUCTION_BRIEF_ONLY_NO_IMAGE_CREATED"
+    },
+    {
+      "id": 9,
+      "cuisine": "Русская",
+      "title": "Рыбная калья с солёными огурцами",
+      "recipe_source_urls": [
+        "https://eda.show/sup-kalia/",
+        "https://openkitchen.eda.yandex/article/dishes/recipes/kalya",
+        "https://www.gastronom.ru/recipe/35241/rybnaja-kalja"
+      ],
+      "required_appearance": "не похожа на солянку с колбасой: заметные крупные куски красной рыбы, солёные огурцы, желтовато-прозрачный или чуть мутный рыбный бульон, укроп, умеренное количество лимона.",
+      "forbidden_unlisted_ingredients": true,
+      "visual_source_urls": [],
+      "visual_sources_verified": false,
+      "generated_image_path": null,
+      "generated_image_verified": false,
+      "approved_by_user": false,
+      "photo_direction": "Food editorial close-up of the completed cooked soup in a real ceramic bowl, believable textures from the documented recipe, no raw or absent ingredients on top. Unique composition for this dish.",
+      "status": "PRODUCTION_BRIEF_ONLY_NO_IMAGE_CREATED"
+    },
+    {
+      "id": 10,
+      "cuisine": "Русская",
+      "title": "Грибная похлёбка с перловкой",
+      "recipe_source_urls": [
+        "https://www.gastronom.ru/recipe/56689/sup-iz-sushenyh-belyh-gribov-s-perlovkoj",
+        "https://povar.ru/recipes/gribnoi_sup_iz_sushenyh_gribov_s_perlovkoi-54043.html",
+        "https://kashevar.com/ru/recipes/mushroom-soup-pearl-barley"
+      ],
+      "required_appearance": "прозрачный насыщенный коричнево-золотистый грибной отвар, тёмные кусочки грибов, отдельно различимые зёрна перловки и умеренное количество картофеля, без сливок и сырной шапочки.",
+      "forbidden_unlisted_ingredients": true,
+      "visual_source_urls": [],
+      "visual_sources_verified": false,
+      "generated_image_path": null,
+      "generated_image_verified": false,
+      "approved_by_user": false,
+      "photo_direction": "Food editorial close-up of the completed cooked soup in a real ceramic bowl, believable textures from the documented recipe, no raw or absent ingredients on top. Unique composition for this dish.",
+      "status": "PRODUCTION_BRIEF_ONLY_NO_IMAGE_CREATED"
+    },
+    {
+      "id": 11,
+      "cuisine": "Итальянская",
+      "title": "Минестроне",
+      "recipe_source_urls": [
+        "https://www.bbcgoodfood.com/recipes/classic-minestrone-soup",
+        "https://www.lacucinaitaliana.com/italian-food/hacks/the-best-minestrone-soup",
+        "https://www.greatbritishchefs.com/recipes/minestrone-soup-recipe"
+      ],
+      "required_appearance": "Томатно-красноватый овощной бульон, кубики овощей, фасоль и короткая паста видны отдельно; не пюре.",
+      "forbidden_unlisted_ingredients": true,
+      "visual_source_urls": [],
+      "visual_sources_verified": false,
+      "generated_image_path": null,
+      "generated_image_verified": false,
+      "approved_by_user": false,
+      "photo_direction": "Food editorial close-up of the completed cooked soup in a real ceramic bowl, believable textures from the documented recipe, no raw or absent ingredients on top. Unique composition for this dish.",
+      "status": "PRODUCTION_BRIEF_ONLY_NO_IMAGE_CREATED"
+    },
+    {
+      "id": 12,
+      "cuisine": "Итальянская",
+      "title": "Риболлита",
+      "recipe_source_urls": [
+        "https://www.giallozafferano.com/recipes/Ribollita-Tuscan-soup.html",
+        "https://www.lacucinaitaliana.it/ricetta/primi/ribollita/",
+        "https://cucinaregionaleitaliana.it/portfolio-items/ribollita/"
+      ],
+      "required_appearance": "Плотная тёмно-зелёная масса капусты с белой фасолью и размокшим хлебом, без эффектных целых овощей поверх.",
+      "forbidden_unlisted_ingredients": true,
+      "visual_source_urls": [],
+      "visual_sources_verified": false,
+      "generated_image_path": null,
+      "generated_image_verified": false,
+      "approved_by_user": false,
+      "photo_direction": "Food editorial close-up of the completed cooked soup in a real ceramic bowl, believable textures from the documented recipe, no raw or absent ingredients on top. Unique composition for this dish.",
+      "status": "PRODUCTION_BRIEF_ONLY_NO_IMAGE_CREATED"
+    },
+    {
+      "id": 13,
+      "cuisine": "Итальянская",
+      "title": "Паппа аль помодоро",
+      "recipe_source_urls": [
+        "https://www.giallozafferano.com/recipes/Pappa-al-pomodoro-Tuscan-Tomato-and-Bread-Soup.html",
+        "https://www.lacucinaitaliana.com/recipe/main-course/pappa-al-pomodoro",
+        "https://www.greatitalianchefs.com/recipes/pappa-al-pomodoro-recipe"
+      ],
+      "required_appearance": "Очень густой красный томатно-хлебный суп без целых ломтей хлеба, с несколькими листиками базилика и каплей масла.",
+      "forbidden_unlisted_ingredients": true,
+      "visual_source_urls": [],
+      "visual_sources_verified": false,
+      "generated_image_path": null,
+      "generated_image_verified": false,
+      "approved_by_user": false,
+      "photo_direction": "Food editorial close-up of the completed cooked soup in a real ceramic bowl, believable textures from the documented recipe, no raw or absent ingredients on top. Unique composition for this dish.",
+      "status": "PRODUCTION_BRIEF_ONLY_NO_IMAGE_CREATED"
+    },
+    {
+      "id": 14,
+      "cuisine": "Итальянская",
+      "title": "Страчателла по-римски",
+      "recipe_source_urls": [
+        "https://www.giallozafferano.com/recipes/Stracciatella-alla-Romana.html",
+        "https://www.lacucinaitaliana.com/italian-food/how-to-cook/homemade-stracciatella-alla-romana-italian-egg-drop-soup",
+        "https://www.turismoroma.it/en/page/roman-style-stracciatella"
+      ],
+      "required_appearance": "Прозрачный золотистый бульон с тонкими желтовато-белыми яичными хлопьями; не омлет и не крупные куски яйца.",
+      "forbidden_unlisted_ingredients": true,
+      "visual_source_urls": [],
+      "visual_sources_verified": false,
+      "generated_image_path": null,
+      "generated_image_verified": false,
+      "approved_by_user": false,
+      "photo_direction": "Food editorial close-up of the completed cooked soup in a real ceramic bowl, believable textures from the documented recipe, no raw or absent ingredients on top. Unique composition for this dish.",
+      "status": "PRODUCTION_BRIEF_ONLY_NO_IMAGE_CREATED"
+    },
+    {
+      "id": 15,
+      "cuisine": "Итальянская",
+      "title": "Паста э фаджоли",
+      "recipe_source_urls": [
+        "https://www.lacucinaitaliana.it/ricetta/primi/pasta-e-fagioli/",
+        "https://www.greatitalianchefs.com/recipes/pasta-e-fagioli-recipe-pasta-bean-soup",
+        "https://www.jamesbeard.org/recipes/pasta-e-fagioli"
+      ],
+      "required_appearance": "Густой кремовый фасолевый суп с отчётливо видимой мелкой пастой, отдельными бобами и очень мелкими овощами, без томатных долек.",
+      "forbidden_unlisted_ingredients": true,
+      "visual_source_urls": [],
+      "visual_sources_verified": false,
+      "generated_image_path": null,
+      "generated_image_verified": false,
+      "approved_by_user": false,
+      "photo_direction": "Food editorial close-up of the completed cooked soup in a real ceramic bowl, believable textures from the documented recipe, no raw or absent ingredients on top. Unique composition for this dish.",
+      "status": "PRODUCTION_BRIEF_ONLY_NO_IMAGE_CREATED"
+    },
+    {
+      "id": 16,
+      "cuisine": "Итальянская",
+      "title": "Аквакотта",
+      "recipe_source_urls": [
+        "https://www.greatitalianchefs.com/recipes/acquacotta-recipe",
+        "https://www.jamesbeard.org/recipes/acquacotta",
+        "https://blog.giallozafferano.it/sarabuonodavvero/ricetta-acquacotta-originale-maremmana/"
+      ],
+      "required_appearance": "Крестьянский томатно-луковый суп с размокшим хлебом внизу и яйцом пашот сверху; не однородный крем.",
+      "forbidden_unlisted_ingredients": true,
+      "visual_source_urls": [],
+      "visual_sources_verified": false,
+      "generated_image_path": null,
+      "generated_image_verified": false,
+      "approved_by_user": false,
+      "photo_direction": "Food editorial close-up of the completed cooked soup in a real ceramic bowl, believable textures from the documented recipe, no raw or absent ingredients on top. Unique composition for this dish.",
+      "status": "PRODUCTION_BRIEF_ONLY_NO_IMAGE_CREATED"
+    },
+    {
+      "id": 17,
+      "cuisine": "Итальянская",
+      "title": "Тортеллини в бульоне",
+      "recipe_source_urls": [
+        "https://www.giallozafferano.com/recipes/tortellini-in-broth.html",
+        "https://www.lacucinaitaliana.com/recipe/pasta/tortellini-brodo",
+        "https://www.gamberorossointernational.com/news/tortellini-in-broth-the-boxing-day-dish-of-santo-stefano/"
+      ],
+      "required_appearance": "Небольшие ровные тортеллини в почти прозрачном золотистом бульоне; без сливок и томатного соуса.",
+      "forbidden_unlisted_ingredients": true,
+      "visual_source_urls": [],
+      "visual_sources_verified": false,
+      "generated_image_path": null,
+      "generated_image_verified": false,
+      "approved_by_user": false,
+      "photo_direction": "Food editorial close-up of the completed cooked soup in a real ceramic bowl, believable textures from the documented recipe, no raw or absent ingredients on top. Unique composition for this dish.",
+      "status": "PRODUCTION_BRIEF_ONLY_NO_IMAGE_CREATED"
+    },
+    {
+      "id": 18,
+      "cuisine": "Итальянская",
+      "title": "Пассателли в бульоне",
+      "recipe_source_urls": [
+        "https://www.giallozafferano.com/recipes/Passatelli-in-broth.html",
+        "https://www.lacucinaitaliana.it/ricetta/primi/passatelli/",
+        "https://www.lospicchiodaglio.it/ricetta/passatelli"
+      ],
+      "required_appearance": "Светлый бульон с короткими неровными цилиндрическими нитями из сухарей и сыра; не обычная пшеничная лапша.",
+      "forbidden_unlisted_ingredients": true,
+      "visual_source_urls": [],
+      "visual_sources_verified": false,
+      "generated_image_path": null,
+      "generated_image_verified": false,
+      "approved_by_user": false,
+      "photo_direction": "Food editorial close-up of the completed cooked soup in a real ceramic bowl, believable textures from the documented recipe, no raw or absent ingredients on top. Unique composition for this dish.",
+      "status": "PRODUCTION_BRIEF_ONLY_NO_IMAGE_CREATED"
+    },
+    {
+      "id": 19,
+      "cuisine": "Итальянская",
+      "title": "Месчуа с бобовыми и полбой",
+      "recipe_source_urls": [
+        "https://www.lacucinaitaliana.it/ricetta/primi/mesciua/",
+        "https://blog.giallozafferano.it/ricetteinternazionali/ricette-italiane/mescciua/",
+        "https://lamialiguria.it/en/2024/09/mesciua/"
+      ],
+      "required_appearance": "Простая бледно-золотистая зерновая похлёбка с отчётливыми нутом, белой фасолью и полбой; без помидоров и ярких декоративных трав.",
+      "forbidden_unlisted_ingredients": true,
+      "visual_source_urls": [],
+      "visual_sources_verified": false,
+      "generated_image_path": null,
+      "generated_image_verified": false,
+      "approved_by_user": false,
+      "photo_direction": "Food editorial close-up of the completed cooked soup in a real ceramic bowl, believable textures from the documented recipe, no raw or absent ingredients on top. Unique composition for this dish.",
+      "status": "PRODUCTION_BRIEF_ONLY_NO_IMAGE_CREATED"
+    },
+    {
+      "id": 20,
+      "cuisine": "Итальянская",
+      "title": "Качукко по-ливорнски",
+      "recipe_source_urls": [
+        "https://www.giallozafferano.com/recipes/cacciucco-alla-livornese.html",
+        "https://www.lacucinaitaliana.it/ricetta/secondi/caciucco-la-ricetta-tradizionale/",
+        "https://cucinaregionaleitaliana.it/portfolio-items/cacciucco-alla-livornese/"
+      ],
+      "required_appearance": "Насыщенная тёмно-красная томатная рыбная похлёбка с кусками рыбы, кальмаром, мидиями, креветками и хлебом, без пасты.",
+      "forbidden_unlisted_ingredients": true,
+      "visual_source_urls": [],
+      "visual_sources_verified": false,
+      "generated_image_path": null,
+      "generated_image_verified": false,
+      "approved_by_user": false,
+      "photo_direction": "Food editorial close-up of the completed cooked soup in a real ceramic bowl, believable textures from the documented recipe, no raw or absent ingredients on top. Unique composition for this dish.",
+      "status": "PRODUCTION_BRIEF_ONLY_NO_IMAGE_CREATED"
+    },
+    {
+      "id": 21,
+      "cuisine": "Французская",
+      "title": "Французский луковый суп",
+      "recipe_source_urls": [
+        "https://www.marmiton.org/recettes/recette_soupe-a-l-oignon-gratinee_20864.aspx",
+        "https://www.750g.com/soupe-a-l-oignon-gratinee-r206098.htm",
+        "https://www.bbcgoodfood.com/recipes/french-onion-soup"
+      ],
+      "required_appearance": "В глубокой огнеупорной миске карамельно-коричневый суп под цельной пузырящейся золотистой коркой из грюйера, без целых луковиц.",
+      "forbidden_unlisted_ingredients": true,
+      "visual_source_urls": [],
+      "visual_sources_verified": false,
+      "generated_image_path": null,
+      "generated_image_verified": false,
+      "approved_by_user": false,
+      "photo_direction": "Food editorial close-up of the completed cooked soup in a real ceramic bowl, believable textures from the documented recipe, no raw or absent ingredients on top. Unique composition for this dish.",
+      "status": "PRODUCTION_BRIEF_ONLY_NO_IMAGE_CREATED"
+    },
+    {
+      "id": 22,
+      "cuisine": "Французская",
+      "title": "Буйабес по-марсельски",
+      "recipe_source_urls": [
+        "https://www.marmiton.org/recettes/recette_bouillabaisse-comme-a-marseille_23522.aspx",
+        "https://www.750g.com/bouillabaisse-r18208.htm",
+        "https://www.marseille-tourisme.com/decouvrez-marseille/gastronomie/specialitees-culinaires-marseillaises/la-bouillabaisse/"
+      ],
+      "required_appearance": "Оранжево-золотистый рыбный бульон с крупными кусками нескольких рыб и морепродуктов; руй и хлеб отдельно, а не огромная гора зелени поверх.",
+      "forbidden_unlisted_ingredients": true,
+      "visual_source_urls": [],
+      "visual_sources_verified": false,
+      "generated_image_path": null,
+      "generated_image_verified": false,
+      "approved_by_user": false,
+      "photo_direction": "Food editorial close-up of the completed cooked soup in a real ceramic bowl, believable textures from the documented recipe, no raw or absent ingredients on top. Unique composition for this dish.",
+      "status": "PRODUCTION_BRIEF_ONLY_NO_IMAGE_CREATED"
+    },
+    {
+      "id": 23,
+      "cuisine": "Французская",
+      "title": "Вишисуаз с луком-пореем",
+      "recipe_source_urls": [
+        "https://www.greatbritishchefs.com/recipes/vichyssoise-recipe",
+        "https://www.bbcgoodfood.com/recipes/leek-potato-soup",
+        "https://www.saveur.com/article/recipes/vichyssoise/"
+      ],
+      "required_appearance": "Совершенно гладкий светло-кремовый холодный суп; только немного мелкого шнитт-лука, никаких крупных кубиков и коричневой зажарки.",
+      "forbidden_unlisted_ingredients": true,
+      "visual_source_urls": [],
+      "visual_sources_verified": false,
+      "generated_image_path": null,
+      "generated_image_verified": false,
+      "approved_by_user": false,
+      "photo_direction": "Food editorial close-up of the completed cooked soup in a real ceramic bowl, believable textures from the documented recipe, no raw or absent ingredients on top. Unique composition for this dish.",
+      "status": "PRODUCTION_BRIEF_ONLY_NO_IMAGE_CREATED"
+    },
+    {
+      "id": 24,
+      "cuisine": "Французская",
+      "title": "Гарбур с фасолью и капустой",
+      "recipe_source_urls": [
+        "https://www.marmiton.org/recettes/recette_la-garbure_41669.aspx",
+        "https://www.750g.com/garbure-r90789.htm",
+        "https://www.coursesu.com/p/garbure/Recette_0129.html"
+      ],
+      "required_appearance": "Очень густая золотистая похлёбка с грубо нарезанной капустой, белой фасолью, картофелем и кусками утки; без сливочного пюре.",
+      "forbidden_unlisted_ingredients": true,
+      "visual_source_urls": [],
+      "visual_sources_verified": false,
+      "generated_image_path": null,
+      "generated_image_verified": false,
+      "approved_by_user": false,
+      "photo_direction": "Food editorial close-up of the completed cooked soup in a real ceramic bowl, believable textures from the documented recipe, no raw or absent ingredients on top. Unique composition for this dish.",
+      "status": "PRODUCTION_BRIEF_ONLY_NO_IMAGE_CREATED"
+    },
+    {
+      "id": 25,
+      "cuisine": "Французская",
+      "title": "Провансальский суп о писту",
+      "recipe_source_urls": [
+        "https://www.marmiton.org/recettes/recette_soupe-au-pistou-l-authentique_72887.aspx",
+        "https://linguanostra.org/ressources-provencales/recettes-provencales/soupe-au-pistou",
+        "https://www.aixenprovencetourism.com/gastronomie/recettes-de-cuisine-provencale/recette-de-la-soupe-au-pistou/"
+      ],
+      "required_appearance": "Пёстрый суп с отдельно видимыми овощами и пастой; зеленоватый оттенок от базиликовой заправки, а не целые листья чеснока.",
+      "forbidden_unlisted_ingredients": true,
+      "visual_source_urls": [],
+      "visual_sources_verified": false,
+      "generated_image_path": null,
+      "generated_image_verified": false,
+      "approved_by_user": false,
+      "photo_direction": "Food editorial close-up of the completed cooked soup in a real ceramic bowl, believable textures from the documented recipe, no raw or absent ingredients on top. Unique composition for this dish.",
+      "status": "PRODUCTION_BRIEF_ONLY_NO_IMAGE_CREATED"
+    },
+    {
+      "id": 26,
+      "cuisine": "Французская",
+      "title": "Турен с чесноком",
+      "recipe_source_urls": [
+        "https://cuisine.journaldesfemmes.fr/recette/342517-tourin-a-l-ail",
+        "https://www.marieclaire.fr/cuisine/tourin-a-l-ail%2C1195808.asp",
+        "https://www.marmiton.org/recettes/recette_tourin-a-l-ail_13014.aspx"
+      ],
+      "required_appearance": "Светлый чесночный бульон, слегка непрозрачный от яйца; тонкие хлопья, хлеб сбоку, не целая головка чеснока в миске.",
+      "forbidden_unlisted_ingredients": true,
+      "visual_source_urls": [],
+      "visual_sources_verified": false,
+      "generated_image_path": null,
+      "generated_image_verified": false,
+      "approved_by_user": false,
+      "photo_direction": "Food editorial close-up of the completed cooked soup in a real ceramic bowl, believable textures from the documented recipe, no raw or absent ingredients on top. Unique composition for this dish.",
+      "status": "PRODUCTION_BRIEF_ONLY_NO_IMAGE_CREATED"
+    },
+    {
+      "id": 27,
+      "cuisine": "Французская",
+      "title": "Крем-суп Дюбарри из цветной капусты",
+      "recipe_source_urls": [
+        "https://www.foodnetwork.com/recipes/cauliflower-soup-creme-du-barry-recipe-1938087",
+        "https://www.abc.net.au/news/2008-07-16/cream-of-cauliflower-soup/8929406",
+        "https://www.toquata.fr/rcp-files/recette/creme-dubarry"
+      ],
+      "required_appearance": "Белый или оттенка слоновой кости шелковистый крем-суп, несколько небольших сваренных соцветий, никакой сырой капусты.",
+      "forbidden_unlisted_ingredients": true,
+      "visual_source_urls": [],
+      "visual_sources_verified": false,
+      "generated_image_path": null,
+      "generated_image_verified": false,
+      "approved_by_user": false,
+      "photo_direction": "Food editorial close-up of the completed cooked soup in a real ceramic bowl, believable textures from the documented recipe, no raw or absent ingredients on top. Unique composition for this dish.",
+      "status": "PRODUCTION_BRIEF_ONLY_NO_IMAGE_CREATED"
+    },
+    {
+      "id": 28,
+      "cuisine": "Французская",
+      "title": "Биск из омара",
+      "recipe_source_urls": [
+        "https://www.marmiton.org/recettes/recette_bisque-de-homard-maison_65708.aspx",
+        "https://altonbrown.com/recipes/lobster-bisque/",
+        "https://www.gordonramsayrestaurants.com/recipes/lobster-and-cornish-crab-bisque/amp"
+      ],
+      "required_appearance": "Гладкий оранжево-розовый биск, немного аккуратных кусочков мяса омара внутри; без панциря и целых клешней сверху.",
+      "forbidden_unlisted_ingredients": true,
+      "visual_source_urls": [],
+      "visual_sources_verified": false,
+      "generated_image_path": null,
+      "generated_image_verified": false,
+      "approved_by_user": false,
+      "photo_direction": "Food editorial close-up of the completed cooked soup in a real ceramic bowl, believable textures from the documented recipe, no raw or absent ingredients on top. Unique composition for this dish.",
+      "status": "PRODUCTION_BRIEF_ONLY_NO_IMAGE_CREATED"
+    },
+    {
+      "id": 29,
+      "cuisine": "Французская",
+      "title": "Буррид с рыбой и айоли",
+      "recipe_source_urls": [
+        "https://linguanostra.org/en/provencal-resources/recettes-provencales/bourride",
+        "https://everydayfrenchchef.com/recipes/fish-and-shellfish/bourride/",
+        "https://ifthatsdinnerivehadit.com/bourride/"
+      ],
+      "required_appearance": "Бледно-золотистый бархатистый соус-бульон, крупные куски белой рыбы, немного припущенных овощей; не красный буйабес.",
+      "forbidden_unlisted_ingredients": true,
+      "visual_source_urls": [],
+      "visual_sources_verified": false,
+      "generated_image_path": null,
+      "generated_image_verified": false,
+      "approved_by_user": false,
+      "photo_direction": "Food editorial close-up of the completed cooked soup in a real ceramic bowl, believable textures from the documented recipe, no raw or absent ingredients on top. Unique composition for this dish.",
+      "status": "PRODUCTION_BRIEF_ONLY_NO_IMAGE_CREATED"
+    },
+    {
+      "id": 30,
+      "cuisine": "Французская",
+      "title": "Потаж Креси из моркови",
+      "recipe_source_urls": [
+        "https://www.ricardocuisine.com/en/recipes/9745-potage-crecy-french-carrot-soup",
+        "https://www.pardonyourfrench.com/classic-french-carrot-soup-potage-crecy/",
+        "https://www.tastefrance.com/recipes/revisited-french-classics/crecy-soup-carrot-soup"
+      ],
+      "required_appearance": "Ровный ярко-оранжевый шелковистый суп без крупной моркови, без сырой моркови и ложки густой сметаны.",
+      "forbidden_unlisted_ingredients": true,
+      "visual_source_urls": [],
+      "visual_sources_verified": false,
+      "generated_image_path": null,
+      "generated_image_verified": false,
+      "approved_by_user": false,
+      "photo_direction": "Food editorial close-up of the completed cooked soup in a real ceramic bowl, believable textures from the documented recipe, no raw or absent ingredients on top. Unique composition for this dish.",
+      "status": "PRODUCTION_BRIEF_ONLY_NO_IMAGE_CREATED"
+    },
+    {
+      "id": 31,
+      "cuisine": "Испанская",
+      "title": "Гаспачо андалузский",
+      "recipe_source_urls": [
+        "https://www.recetasderechupete.com/gazpacho-andaluz-una-receta-con-la-alegria-de-la-huerta-el-tomate/5701/",
+        "https://www.elcorteingles.es/supermercado/recetas/gazpacho-andaluz-tradicional/",
+        "https://www.foodnetwork.com/recipes/gazpacho-andaluz-recipe-1940356"
+      ],
+      "required_appearance": "Красная текучая томатная эмульсия, без густого хлебного крема; несколько мелких кубиков огурца и перца допустимы, не горка украшений.",
+      "forbidden_unlisted_ingredients": true,
+      "visual_source_urls": [],
+      "visual_sources_verified": false,
+      "generated_image_path": null,
+      "generated_image_verified": false,
+      "approved_by_user": false,
+      "photo_direction": "Food editorial close-up of the completed cooked soup in a real ceramic bowl, believable textures from the documented recipe, no raw or absent ingredients on top. Unique composition for this dish.",
+      "status": "PRODUCTION_BRIEF_ONLY_NO_IMAGE_CREATED"
+    },
+    {
+      "id": 32,
+      "cuisine": "Испанская",
+      "title": "Сальморехо кордобский",
+      "recipe_source_urls": [
+        "https://www.spain.info/en/recipe/salmorejo/",
+        "https://www.ice.edu/blog/salmorejo-cordobes-recipe",
+        "https://www.bonappetit.com/recipe/salmorejo-cordob-s"
+      ],
+      "required_appearance": "Насыщенно-коралловая, почти пюреобразная густая холодная масса с маленькой щепоткой яйца и хамона; не жидкий гаспачо.",
+      "forbidden_unlisted_ingredients": true,
+      "visual_source_urls": [],
+      "visual_sources_verified": false,
+      "generated_image_path": null,
+      "generated_image_verified": false,
+      "approved_by_user": false,
+      "photo_direction": "Food editorial close-up of the completed cooked soup in a real ceramic bowl, believable textures from the documented recipe, no raw or absent ingredients on top. Unique composition for this dish.",
+      "status": "PRODUCTION_BRIEF_ONLY_NO_IMAGE_CREATED"
+    },
+    {
+      "id": 33,
+      "cuisine": "Испанская",
+      "title": "Ахобланко с миндалём",
+      "recipe_source_urls": [
+        "https://www.bbcgoodfood.com/recipes/ajo-blanco",
+        "https://www.bonappetit.com/recipe/ajo-blanco",
+        "https://www.theguardian.com/food/2020/jun/10/david-athertons-recipe-for-ajo-blanco-cold-soup-andalucian-classic"
+      ],
+      "required_appearance": "Белый холодный миндальный суп, абсолютно гладкий, несколько виноградин; без помидоров и зелёного гороха.",
+      "forbidden_unlisted_ingredients": true,
+      "visual_source_urls": [],
+      "visual_sources_verified": false,
+      "generated_image_path": null,
+      "generated_image_verified": false,
+      "approved_by_user": false,
+      "photo_direction": "Food editorial close-up of the completed cooked soup in a real ceramic bowl, believable textures from the documented recipe, no raw or absent ingredients on top. Unique composition for this dish.",
+      "status": "PRODUCTION_BRIEF_ONLY_NO_IMAGE_CREATED"
+    },
+    {
+      "id": 34,
+      "cuisine": "Испанская",
+      "title": "Сопа де ахо, кастильский чесночный суп",
+      "recipe_source_urls": [
+        "https://www.turismocastillalamancha.es/es/enogastronomia/raiz-culinaria/recetas/sopa-de-ajo-o-sopa-castellana",
+        "https://www.directoalpaladar.com/recetas-de-sopas-y-cremas/como-hacer-sopa-ajo-receta-sopa-castellana-tradicional/amp",
+        "https://www.rtve.es/television/20230810/sopa-castellana-receta-origen-semana-santa/2453763.shtml"
+      ],
+      "required_appearance": "Золотисто-красноватый бульон с разварившимся хлебом и яйцом, без огромных целых чесночных головок.",
+      "forbidden_unlisted_ingredients": true,
+      "visual_source_urls": [],
+      "visual_sources_verified": false,
+      "generated_image_path": null,
+      "generated_image_verified": false,
+      "approved_by_user": false,
+      "photo_direction": "Food editorial close-up of the completed cooked soup in a real ceramic bowl, believable textures from the documented recipe, no raw or absent ingredients on top. Unique composition for this dish.",
+      "status": "PRODUCTION_BRIEF_ONLY_NO_IMAGE_CREATED"
+    },
+    {
+      "id": 35,
+      "cuisine": "Испанская",
+      "title": "Кальдо гальего",
+      "recipe_source_urls": [
+        "https://www.spain.info/es/receta/caldo-gallego/",
+        "https://www.recetasderechupete.com/caldo-gallego-receta-tradicional-gallega/4365/",
+        "https://www.directoalpaladar.com/recetas-de-legumbres-y-verduras/receta-de-caldo-gallego-cocinado-a-fuego-lento"
+      ],
+      "required_appearance": "Почти бесцветный/слегка золотистый бульон с белой фасолью, мягкой зеленью, картофелем и ломтиками чоризо; не томатный суп.",
+      "forbidden_unlisted_ingredients": true,
+      "visual_source_urls": [],
+      "visual_sources_verified": false,
+      "generated_image_path": null,
+      "generated_image_verified": false,
+      "approved_by_user": false,
+      "photo_direction": "Food editorial close-up of the completed cooked soup in a real ceramic bowl, believable textures from the documented recipe, no raw or absent ingredients on top. Unique composition for this dish.",
+      "status": "PRODUCTION_BRIEF_ONLY_NO_IMAGE_CREATED"
+    },
+    {
+      "id": 36,
+      "cuisine": "Испанская",
+      "title": "Поррусальда с луком-пореем",
+      "recipe_source_urls": [
+        "https://www.spain.info/en/recipe/porrusalda/",
+        "https://www.bascofinefoods.com/spanish-recipes/porrusalda/",
+        "https://www.centrallecheraasturiana.es/recetas/porrusalda/"
+      ],
+      "required_appearance": "Светлый баскский овощной суп с широкими кольцами лука-порея, кусками картофеля и моркови, а не гладкая вишисуаз.",
+      "forbidden_unlisted_ingredients": true,
+      "visual_source_urls": [],
+      "visual_sources_verified": false,
+      "generated_image_path": null,
+      "generated_image_verified": false,
+      "approved_by_user": false,
+      "photo_direction": "Food editorial close-up of the completed cooked soup in a real ceramic bowl, believable textures from the documented recipe, no raw or absent ingredients on top. Unique composition for this dish.",
+      "status": "PRODUCTION_BRIEF_ONLY_NO_IMAGE_CREATED"
+    },
+    {
+      "id": 37,
+      "cuisine": "Испанская",
+      "title": "Гаспачуэло малагский с рыбой",
+      "recipe_source_urls": [
+        "https://canalcocina.es/receta/gazpachuelo-malagueno",
+        "https://malagagastronomyguide.com/en/gazpachuelo-2/",
+        "https://mercadomalaga.es/en/recipes/fish/gazpachuelo-white-fish-soup/"
+      ],
+      "required_appearance": "Нежный светло-молочный горячий суп с кусочками белой рыбы и картофеля, без сливок, без красной томатной основы.",
+      "forbidden_unlisted_ingredients": true,
+      "visual_source_urls": [],
+      "visual_sources_verified": false,
+      "generated_image_path": null,
+      "generated_image_verified": false,
+      "approved_by_user": false,
+      "photo_direction": "Food editorial close-up of the completed cooked soup in a real ceramic bowl, believable textures from the documented recipe, no raw or absent ingredients on top. Unique composition for this dish.",
+      "status": "PRODUCTION_BRIEF_ONLY_NO_IMAGE_CREATED"
+    },
+    {
+      "id": 38,
+      "cuisine": "Испанская",
+      "title": "Сопа де пикадильо",
+      "recipe_source_urls": [
+        "https://www.spain.info/en/recipe/sopa-picadillo/",
+        "https://visitsouthernspain.com/picadillo-soup-recipe/",
+        "https://canalcocina.es/receta/sopa-picadillo-puchero-andaluz"
+      ],
+      "required_appearance": "Ясный золотистый куриный бульон с мелкой лапшой, кусочками курицы, хамона и яйца; не густой крем.",
+      "forbidden_unlisted_ingredients": true,
+      "visual_source_urls": [],
+      "visual_sources_verified": false,
+      "generated_image_path": null,
+      "generated_image_verified": false,
+      "approved_by_user": false,
+      "photo_direction": "Food editorial close-up of the completed cooked soup in a real ceramic bowl, believable textures from the documented recipe, no raw or absent ingredients on top. Unique composition for this dish.",
+      "status": "PRODUCTION_BRIEF_ONLY_NO_IMAGE_CREATED"
+    },
+    {
+      "id": 39,
+      "cuisine": "Испанская",
+      "title": "Эскуделья каталонская",
+      "recipe_source_urls": [
+        "https://www.spain.info/en/recipe/escudella-carn-olla-catalan-stew/",
+        "https://www.directoalpaladar.com/recetas-de-legumbres-y-verduras/receta-escudella-i-carn-dolla-reconfortante-plato-cuchara-catalan",
+        "https://canalsalut.gencat.cat/ca/detalls/article/escudella-carn-olla"
+      ],
+      "required_appearance": "Золотистый бульон с крупной пастой галетс; мясные и овощные компоненты по традиции лежат на отдельном блюде, не свалены горой в суп.",
+      "forbidden_unlisted_ingredients": true,
+      "visual_source_urls": [],
+      "visual_sources_verified": false,
+      "generated_image_path": null,
+      "generated_image_verified": false,
+      "approved_by_user": false,
+      "photo_direction": "Food editorial close-up of the completed cooked soup in a real ceramic bowl, believable textures from the documented recipe, no raw or absent ingredients on top. Unique composition for this dish.",
+      "status": "PRODUCTION_BRIEF_ONLY_NO_IMAGE_CREATED"
+    },
+    {
+      "id": 40,
+      "cuisine": "Испанская",
+      "title": "Порра антекерана",
+      "recipe_source_urls": [
+        "https://turismo.antequera.es/gastronomy/porra-antequerana/",
+        "https://www.recetasderechupete.com/porra-antequerana-receta-andaluza/13456/",
+        "https://vanavondkoken.nl/en/recipes/porra-antequerana"
+      ],
+      "required_appearance": "Очень густая холодная кораллово-красная томатная эмульсия, немножко яйца и тунца; отличается от сальморехо зелёным перцем.",
+      "forbidden_unlisted_ingredients": true,
+      "visual_source_urls": [],
+      "visual_sources_verified": false,
+      "generated_image_path": null,
+      "generated_image_verified": false,
+      "approved_by_user": false,
+      "photo_direction": "Food editorial close-up of the completed cooked soup in a real ceramic bowl, believable textures from the documented recipe, no raw or absent ingredients on top. Unique composition for this dish.",
+      "status": "PRODUCTION_BRIEF_ONLY_NO_IMAGE_CREATED"
+    },
+    {
+      "id": 41,
+      "cuisine": "Турецкая",
+      "title": "Мерджимек чорбасы, турецкий чечевичный суп",
+      "recipe_source_urls": [
+        "https://www.themediterraneandish.com/turkish-lentil-soup/",
+        "https://www.lentils.org/recipe/mercimek-corbasi-turkish-lentil-soup/",
+        "https://mirasfood.com/en/recipes/classic-turkish-lentil-soup?l=en"
+      ],
+      "required_appearance": "Однородный золотисто-оранжевый суп-пюре с небольшими красноватыми пятнами масла и мяты; без целой чечевицы.",
+      "forbidden_unlisted_ingredients": true,
+      "visual_source_urls": [],
+      "visual_sources_verified": false,
+      "generated_image_path": null,
+      "generated_image_verified": false,
+      "approved_by_user": false,
+      "photo_direction": "Food editorial close-up of the completed cooked soup in a real ceramic bowl, believable textures from the documented recipe, no raw or absent ingredients on top. Unique composition for this dish.",
+      "status": "PRODUCTION_BRIEF_ONLY_NO_IMAGE_CREATED"
+    },
+    {
+      "id": 42,
+      "cuisine": "Турецкая",
+      "title": "Эзогелин с булгуром",
+      "recipe_source_urls": [
+        "https://dietitiansaustralia.org.au/recipes/ezogelin-corbasi-turkish-spicy-red-lentil-soup",
+        "https://gidavesaglik.net/en/ezogelin-soup-ezo-the-bride-soup-recipe/",
+        "https://mayana.com.tr/en/recipes/ezogelin-soup-recipe/"
+      ],
+      "required_appearance": "Тёмно-оранжевый слегка зернистый суп с едва заметной текстурой круп и мелкими частицами мяты; не гладкий крем.",
+      "forbidden_unlisted_ingredients": true,
+      "visual_source_urls": [],
+      "visual_sources_verified": false,
+      "generated_image_path": null,
+      "generated_image_verified": false,
+      "approved_by_user": false,
+      "photo_direction": "Food editorial close-up of the completed cooked soup in a real ceramic bowl, believable textures from the documented recipe, no raw or absent ingredients on top. Unique composition for this dish.",
+      "status": "PRODUCTION_BRIEF_ONLY_NO_IMAGE_CREATED"
+    },
+    {
+      "id": 43,
+      "cuisine": "Турецкая",
+      "title": "Яйла чорбасы с йогуртом",
+      "recipe_source_urls": [
+        "https://www.yayla.de/en/recipes/1",
+        "https://www.epicurious.com/recipes/food/views/yayla-corbasi-373289",
+        "https://forkin.io/recipes/yayla-corbasi-turkish-yogurt-soup"
+      ],
+      "required_appearance": "Белый кремоватый суп с отдельными зёрнами риса и зелёными следами сушёной мяты в масле; никакого сыра.",
+      "forbidden_unlisted_ingredients": true,
+      "visual_source_urls": [],
+      "visual_sources_verified": false,
+      "generated_image_path": null,
+      "generated_image_verified": false,
+      "approved_by_user": false,
+      "photo_direction": "Food editorial close-up of the completed cooked soup in a real ceramic bowl, believable textures from the documented recipe, no raw or absent ingredients on top. Unique composition for this dish.",
+      "status": "PRODUCTION_BRIEF_ONLY_NO_IMAGE_CREATED"
+    },
+    {
+      "id": 44,
+      "cuisine": "Турецкая",
+      "title": "Тархана чорбасы",
+      "recipe_source_urls": [
+        "https://www.ktb.gov.tr/EN-99042/tarhana-soup.html",
+        "https://www.kulturportali.gov.tr/turkiye/aksaray/neyenir/tarhana-corbasi",
+        "https://app.ckbk.com/recipe/nevi83904c01s001ss001r002/tarhana-soup"
+      ],
+      "required_appearance": "Насыщенный кирпично-оранжевый кисловатый суп однородной средней густоты; без целой лапши и сырого йогурта.",
+      "forbidden_unlisted_ingredients": true,
+      "visual_source_urls": [],
+      "visual_sources_verified": false,
+      "generated_image_path": null,
+      "generated_image_verified": false,
+      "approved_by_user": false,
+      "photo_direction": "Food editorial close-up of the completed cooked soup in a real ceramic bowl, believable textures from the documented recipe, no raw or absent ingredients on top. Unique composition for this dish.",
+      "status": "PRODUCTION_BRIEF_ONLY_NO_IMAGE_CREATED"
+    },
+    {
+      "id": 45,
+      "cuisine": "Турецкая",
+      "title": "Ишкембе чорбасы из рубца",
+      "recipe_source_urls": [
+        "https://www.ktb.gov.tr/EN-99044/tripe-soup.html",
+        "https://zaffaron.com/recipe/tripe-soup-iskembe-corbasi",
+        "https://cookwitherica.com/2018/02/15/iskembe-corbasi-turkish-tripe-soup/"
+      ],
+      "required_appearance": "Светлый слегка мутный бульон с очень тонкими мягкими полосками рубца, уксус с чесноком в маленькой пиале; не куски сырого субпродукта.",
+      "forbidden_unlisted_ingredients": true,
+      "visual_source_urls": [],
+      "visual_sources_verified": false,
+      "generated_image_path": null,
+      "generated_image_verified": false,
+      "approved_by_user": false,
+      "photo_direction": "Food editorial close-up of the completed cooked soup in a real ceramic bowl, believable textures from the documented recipe, no raw or absent ingredients on top. Unique composition for this dish.",
+      "status": "PRODUCTION_BRIEF_ONLY_NO_IMAGE_CREATED"
+    },
+    {
+      "id": 46,
+      "cuisine": "Турецкая",
+      "title": "Келле пача, суп из головы и ножек",
+      "recipe_source_urls": [
+        "https://www.lezzet.com.tr/yemek-tarifleri/corbalar/corba-tarifleri/kelle-paca-corbasi",
+        "https://yemek.com/tarif/kelle-paca-corbasi/",
+        "https://zaffaron.com/recipe/kelle-paca"
+      ],
+      "required_appearance": "Золотистый плотный желатиновый бульон с мелкими мягкими кусочками мяса, без целых костей, голов и ног в тарелке.",
+      "forbidden_unlisted_ingredients": true,
+      "visual_source_urls": [],
+      "visual_sources_verified": false,
+      "generated_image_path": null,
+      "generated_image_verified": false,
+      "approved_by_user": false,
+      "photo_direction": "Food editorial close-up of the completed cooked soup in a real ceramic bowl, believable textures from the documented recipe, no raw or absent ingredients on top. Unique composition for this dish.",
+      "status": "PRODUCTION_BRIEF_ONLY_NO_IMAGE_CREATED"
+    },
+    {
+      "id": 47,
+      "cuisine": "Турецкая",
+      "title": "Тербиели кёфте, суп с фрикадельками",
+      "recipe_source_urls": [
+        "https://www.lezzet.com.tr/yemek-tarifleri/corbalar/corba-tarifleri/terbiyeli-kofte-corbasi",
+        "https://www.ktb.gov.tr/EN-98960/meat-balls-with-egg---lemon-sauce.html",
+        "https://yemek.com/tarif/eksili-terbiyeli-kofteli-corba/"
+      ],
+      "required_appearance": "Светлый суп с равномерными маленькими мясными фрикадельками, кубиками моркови и нежной йогуртовой основой, не томатный суп.",
+      "forbidden_unlisted_ingredients": true,
+      "visual_source_urls": [],
+      "visual_sources_verified": false,
+      "generated_image_path": null,
+      "generated_image_verified": false,
+      "approved_by_user": false,
+      "photo_direction": "Food editorial close-up of the completed cooked soup in a real ceramic bowl, believable textures from the documented recipe, no raw or absent ingredients on top. Unique composition for this dish.",
+      "status": "PRODUCTION_BRIEF_ONLY_NO_IMAGE_CREATED"
+    },
+    {
+      "id": 48,
+      "cuisine": "Турецкая",
+      "title": "Дююн чорбасы, свадебный суп",
+      "recipe_source_urls": [
+        "https://www.ktb.gov.tr/EN-99047/wedding-soup.html",
+        "https://www.epicurious.com/recipes/food/views/dugun-corbasi-373298",
+        "https://www.lezzet.com.tr/yemek-tarifleri/corbalar/corba-tarifleri/dugun-corbasi-tarifi"
+      ],
+      "required_appearance": "Светло-кремовый бульон с тонкими волокнами баранины и красными разводами перечного масла.",
+      "forbidden_unlisted_ingredients": true,
+      "visual_source_urls": [],
+      "visual_sources_verified": false,
+      "generated_image_path": null,
+      "generated_image_verified": false,
+      "approved_by_user": false,
+      "photo_direction": "Food editorial close-up of the completed cooked soup in a real ceramic bowl, believable textures from the documented recipe, no raw or absent ingredients on top. Unique composition for this dish.",
+      "status": "PRODUCTION_BRIEF_ONLY_NO_IMAGE_CREATED"
+    },
+    {
+      "id": 49,
+      "cuisine": "Турецкая",
+      "title": "Эриште чорбасы, суп с домашней лапшой",
+      "recipe_source_urls": [
+        "https://www.lezzet.com.tr/yemek-tarifleri/corbalar/corba-tarifleri/eriste-corbasi-tarifi",
+        "https://taribu.com.tr/tr/tarifler/eriste-corbasi-1",
+        "https://www.ktb.gov.tr/EN-99038/soup-with-home-made-noodles.html"
+      ],
+      "required_appearance": "Красноватый бульон с заметными короткими полосками домашней плоской лапши, без йогуртовой белой основы; не путать с тутмач.",
+      "forbidden_unlisted_ingredients": true,
+      "visual_source_urls": [],
+      "visual_sources_verified": false,
+      "generated_image_path": null,
+      "generated_image_verified": false,
+      "approved_by_user": false,
+      "photo_direction": "Food editorial close-up of the completed cooked soup in a real ceramic bowl, believable textures from the documented recipe, no raw or absent ingredients on top. Unique composition for this dish.",
+      "status": "PRODUCTION_BRIEF_ONLY_NO_IMAGE_CREATED"
+    },
+    {
+      "id": 50,
+      "cuisine": "Турецкая",
+      "title": "Тутмач чорбасы с зелёной чечевицей",
+      "recipe_source_urls": [
+        "https://www.ktb.gov.tr/EN-99024/green-lentil---noodle-soup.html",
+        "https://www.lezzet.com.tr/yemek-tarifleri/corbalar/corba-tarifleri/tutmac-corbasi-tarifi",
+        "https://yemek.com/tarif/geleneksel-tutmac-corbasi/"
+      ],
+      "required_appearance": "Светлая йогуртовая похлёбка с зелёной чечевицей и короткой лапшой, сверху немного масла с мятой; не пюре.",
+      "forbidden_unlisted_ingredients": true,
+      "visual_source_urls": [],
+      "visual_sources_verified": false,
+      "generated_image_path": null,
+      "generated_image_verified": false,
+      "approved_by_user": false,
+      "photo_direction": "Food editorial close-up of the completed cooked soup in a real ceramic bowl, believable textures from the documented recipe, no raw or absent ingredients on top. Unique composition for this dish.",
+      "status": "PRODUCTION_BRIEF_ONLY_NO_IMAGE_CREATED"
+    },
+    {
+      "id": 51,
+      "cuisine": "Японская",
+      "title": "Мисо-суп с тофу и вакаме",
+      "recipe_source_urls": [
+        "https://www.justonecookbook.com/homemade-miso-soup/",
+        "https://www.kikkoman.com/en/cookbook/recipe/00000040.html",
+        "https://web-japan.org/kidsweb/cook/misoshiru/"
+      ],
+      "required_appearance": "Полупрозрачный золотисто-бежевый бульон, небольшие белые кубики тофу, тонкие тёмно-зелёные вакаме и немного лука; без пасты.",
+      "forbidden_unlisted_ingredients": true,
+      "visual_source_urls": [],
+      "visual_sources_verified": false,
+      "generated_image_path": null,
+      "generated_image_verified": false,
+      "approved_by_user": false,
+      "photo_direction": "Food editorial close-up of the completed cooked soup in a real ceramic bowl, believable textures from the documented recipe, no raw or absent ingredients on top. Unique composition for this dish.",
+      "status": "PRODUCTION_BRIEF_ONLY_NO_IMAGE_CREATED"
+    },
+    {
+      "id": 52,
+      "cuisine": "Японская",
+      "title": "Сёю-рамен",
+      "recipe_source_urls": [
+        "https://www.justonecookbook.com/shoyu-ramen/",
+        "https://japanesecookbook.com/recipes/shoyu-ramen/",
+        "https://www.chopstickchronicles.com/shoyu-ramen/"
+      ],
+      "required_appearance": "Прозрачный янтарно-коричневый соевый бульон с тонкой пшеничной лапшой и слайсами свинины; не молочный тонкоцу.",
+      "forbidden_unlisted_ingredients": true,
+      "visual_source_urls": [],
+      "visual_sources_verified": false,
+      "generated_image_path": null,
+      "generated_image_verified": false,
+      "approved_by_user": false,
+      "photo_direction": "Food editorial close-up of the completed cooked soup in a real ceramic bowl, believable textures from the documented recipe, no raw or absent ingredients on top. Unique composition for this dish.",
+      "status": "PRODUCTION_BRIEF_ONLY_NO_IMAGE_CREATED"
+    },
+    {
+      "id": 53,
+      "cuisine": "Японская",
+      "title": "Мисо-рамен",
+      "recipe_source_urls": [
+        "https://www.justonecookbook.com/homemade-chashu-miso-ramen/",
+        "https://japanesecooking101.com/miso-ramen-recipe/",
+        "https://www.bbcgoodfood.com/recipes/miso-ramen"
+      ],
+      "required_appearance": "Насыщенный непрозрачный рыже-коричневый мисо-бульон, пшеничная лапша и небольшая горка фарша, кукуруза и зелёные ростки; не тонкоцу.",
+      "forbidden_unlisted_ingredients": true,
+      "visual_source_urls": [],
+      "visual_sources_verified": false,
+      "generated_image_path": null,
+      "generated_image_verified": false,
+      "approved_by_user": false,
+      "photo_direction": "Food editorial close-up of the completed cooked soup in a real ceramic bowl, believable textures from the documented recipe, no raw or absent ingredients on top. Unique composition for this dish.",
+      "status": "PRODUCTION_BRIEF_ONLY_NO_IMAGE_CREATED"
+    },
+    {
+      "id": 54,
+      "cuisine": "Японская",
+      "title": "Тонкоцу-рамен",
+      "recipe_source_urls": [
+        "https://www.justonecookbook.com/easy-tonkotsu-ramen-recipe/",
+        "https://www.epicurious.com/recipes/food/views/tonkotsu-ramen",
+        "https://www.thekitchn.com/tonkotsu-ramen-recipe-23636995"
+      ],
+      "required_appearance": "Густой беловато-непрозрачный свиной бульон с лапшой, тонкими ломтиками чашу и немного лука; не прозрачная куриная основа.",
+      "forbidden_unlisted_ingredients": true,
+      "visual_source_urls": [],
+      "visual_sources_verified": false,
+      "generated_image_path": null,
+      "generated_image_verified": false,
+      "approved_by_user": false,
+      "photo_direction": "Food editorial close-up of the completed cooked soup in a real ceramic bowl, believable textures from the documented recipe, no raw or absent ingredients on top. Unique composition for this dish.",
+      "status": "PRODUCTION_BRIEF_ONLY_NO_IMAGE_CREATED"
+    },
+    {
+      "id": 55,
+      "cuisine": "Японская",
+      "title": "Тондзиру со свининой",
+      "recipe_source_urls": [
+        "https://www.justonecookbook.com/tonjiru/",
+        "https://japan.recipetineats.com/tonjiru-pork-and-vegetable-miso-soup/",
+        "https://recipin.jp/en/recipes/tonjiru"
+      ],
+      "required_appearance": "Коричневатый мисо-бульон с широкими ломтиками свинины, разноцветными корнеплодами и кубиками тофу; не пюре.",
+      "forbidden_unlisted_ingredients": true,
+      "visual_source_urls": [],
+      "visual_sources_verified": false,
+      "generated_image_path": null,
+      "generated_image_verified": false,
+      "approved_by_user": false,
+      "photo_direction": "Food editorial close-up of the completed cooked soup in a real ceramic bowl, believable textures from the documented recipe, no raw or absent ingredients on top. Unique composition for this dish.",
+      "status": "PRODUCTION_BRIEF_ONLY_NO_IMAGE_CREATED"
+    },
+    {
+      "id": 56,
+      "cuisine": "Японская",
+      "title": "Кэнтиндзиру с овощами и тофу",
+      "recipe_source_urls": [
+        "https://www.justonecookbook.com/kenchinjiru/",
+        "https://www.kikkoman.com/en/culture/foodforum/fundamentals-101/37-3.html",
+        "https://www.maff.go.jp/e/policies/market/k_ryouri/search_menu/6349/index.html"
+      ],
+      "required_appearance": "Светло-коричневый почти прозрачный бульон с разноцветными корнеплодами, неправильными кусочками тофу и грибами; без мяса.",
+      "forbidden_unlisted_ingredients": true,
+      "visual_source_urls": [],
+      "visual_sources_verified": false,
+      "generated_image_path": null,
+      "generated_image_verified": false,
+      "approved_by_user": false,
+      "photo_direction": "Food editorial close-up of the completed cooked soup in a real ceramic bowl, believable textures from the documented recipe, no raw or absent ingredients on top. Unique composition for this dish.",
+      "status": "PRODUCTION_BRIEF_ONLY_NO_IMAGE_CREATED"
+    },
+    {
+      "id": 57,
+      "cuisine": "Японская",
+      "title": "Одзони с рисовыми лепёшками",
+      "recipe_source_urls": [
+        "https://www.justonecookbook.com/ozoni/",
+        "https://www.maff.go.jp/e/policies/market/k_ryouri/search_menu/2449/index.html",
+        "https://www.kikkoman.com/en/culture/foodforum/recipe/traditional-37-4.html"
+      ],
+      "required_appearance": "Прозрачный светло-золотистый новогодний суп с мягкими белыми рисовыми лепёшками, кусочками курицы и яркой зеленью; не рамен.",
+      "forbidden_unlisted_ingredients": true,
+      "visual_source_urls": [],
+      "visual_sources_verified": false,
+      "generated_image_path": null,
+      "generated_image_verified": false,
+      "approved_by_user": false,
+      "photo_direction": "Food editorial close-up of the completed cooked soup in a real ceramic bowl, believable textures from the documented recipe, no raw or absent ingredients on top. Unique composition for this dish.",
+      "status": "PRODUCTION_BRIEF_ONLY_NO_IMAGE_CREATED"
+    },
+    {
+      "id": 58,
+      "cuisine": "Японская",
+      "title": "Имони с таро и говядиной",
+      "recipe_source_urls": [
+        "https://www.maff.go.jp/e/policies/market/k_ryouri/search_menu/553/index.html",
+        "https://recipin.jp/en/recipes/imoni",
+        "https://www.fun-japan.jp/en/articles/13204"
+      ],
+      "required_appearance": "Прозрачный коричневатый соевый бульон, округлые кусочки таро, тонкие говяжьи ломтики и крупные кольца лука, без картофеля вместо таро.",
+      "forbidden_unlisted_ingredients": true,
+      "visual_source_urls": [],
+      "visual_sources_verified": false,
+      "generated_image_path": null,
+      "generated_image_verified": false,
+      "approved_by_user": false,
+      "photo_direction": "Food editorial close-up of the completed cooked soup in a real ceramic bowl, believable textures from the documented recipe, no raw or absent ingredients on top. Unique composition for this dish.",
+      "status": "PRODUCTION_BRIEF_ONLY_NO_IMAGE_CREATED"
+    },
+    {
+      "id": 59,
+      "cuisine": "Японская",
+      "title": "Какэ-соба в бульоне даси",
+      "recipe_source_urls": [
+        "https://www.justonecookbook.com/soba-noodle-soup/",
+        "https://kamadasoysauce.com/recipe/list/76",
+        "https://justhungry.com/2003/12/toshikoshi_soba.html"
+      ],
+      "required_appearance": "Прозрачный коричневый бульон, тонкие серо-коричневые гречневые нити и немного лука; без яиц и огромных темпура.",
+      "forbidden_unlisted_ingredients": true,
+      "visual_source_urls": [],
+      "visual_sources_verified": false,
+      "generated_image_path": null,
+      "generated_image_verified": false,
+      "approved_by_user": false,
+      "photo_direction": "Food editorial close-up of the completed cooked soup in a real ceramic bowl, believable textures from the documented recipe, no raw or absent ingredients on top. Unique composition for this dish.",
+      "status": "PRODUCTION_BRIEF_ONLY_NO_IMAGE_CREATED"
+    },
+    {
+      "id": 60,
+      "cuisine": "Японская",
+      "title": "Хиядзиру, холодный суп с мисо",
+      "recipe_source_urls": [
+        "https://www.maff.go.jp/e/policies/market/k_ryouri/search_menu/4019/index.html",
+        "https://recipin.jp/en/recipes/hiyajiru",
+        "https://kyoudo-ryouri.com/en/food/3334.html"
+      ],
+      "required_appearance": "Холодный коричневатый мисо-бульон с огурцом, хлопьями рыбы, кусочками тофу поверх риса, без горячей лапши.",
+      "forbidden_unlisted_ingredients": true,
+      "visual_source_urls": [],
+      "visual_sources_verified": false,
+      "generated_image_path": null,
+      "generated_image_verified": false,
+      "approved_by_user": false,
+      "photo_direction": "Food editorial close-up of the completed cooked soup in a real ceramic bowl, believable textures from the documented recipe, no raw or absent ingredients on top. Unique composition for this dish.",
+      "status": "PRODUCTION_BRIEF_ONLY_NO_IMAGE_CREATED"
+    },
+    {
+      "id": 61,
+      "cuisine": "Корейская",
+      "title": "Юккэджан с говядиной",
+      "recipe_source_urls": [
+        "https://www.maangchi.com/recipe/yukgaejang",
+        "https://www.koreanbapsang.com/yukgaejang-spicy-beef-soup-vegetables/",
+        "https://mykoreankitchen.com/yukgaejang-spicy-beef-soup/"
+      ],
+      "required_appearance": "Ярко-красный слегка маслянистый бульон, длинные нити говядины, зелёный лук и ростки, а не густое пюре.",
+      "forbidden_unlisted_ingredients": true,
+      "visual_source_urls": [],
+      "visual_sources_verified": false,
+      "generated_image_path": null,
+      "generated_image_verified": false,
+      "approved_by_user": false,
+      "photo_direction": "Food editorial close-up of the completed cooked soup in a real ceramic bowl, believable textures from the documented recipe, no raw or absent ingredients on top. Unique composition for this dish.",
+      "status": "PRODUCTION_BRIEF_ONLY_NO_IMAGE_CREATED"
+    },
+    {
+      "id": 62,
+      "cuisine": "Корейская",
+      "title": "Самгетхан с женьшенем и курицей",
+      "recipe_source_urls": [
+        "https://www.maangchi.com/recipe/samgyetang",
+        "https://mykoreankitchen.com/samgyetang-korean-ginseng-chicken-soup/",
+        "https://www.koreanbapsang.com/samgyetang/"
+      ],
+      "required_appearance": "Светлый почти прозрачный бульон и небольшая целая готовая курица с рисом внутри, без сырого корня и яркой овощной зажарки сверху.",
+      "forbidden_unlisted_ingredients": true,
+      "visual_source_urls": [],
+      "visual_sources_verified": false,
+      "generated_image_path": null,
+      "generated_image_verified": false,
+      "approved_by_user": false,
+      "photo_direction": "Food editorial close-up of the completed cooked soup in a real ceramic bowl, believable textures from the documented recipe, no raw or absent ingredients on top. Unique composition for this dish.",
+      "status": "PRODUCTION_BRIEF_ONLY_NO_IMAGE_CREATED"
+    },
+    {
+      "id": 63,
+      "cuisine": "Корейская",
+      "title": "Соллонтхан на костном бульоне",
+      "recipe_source_urls": [
+        "https://www.maangchi.com/recipe/seolleongtang",
+        "https://www.koreanbapsang.com/seolleongtang-beef-bone-soup/",
+        "https://www.beyondkimchee.com/seolleongtang-ox-bone-soup/"
+      ],
+      "required_appearance": "Молочно-белый полностью непрозрачный костный бульон, светлые ломтики говядины и зелёный лук, никакого красного чили.",
+      "forbidden_unlisted_ingredients": true,
+      "visual_source_urls": [],
+      "visual_sources_verified": false,
+      "generated_image_path": null,
+      "generated_image_verified": false,
+      "approved_by_user": false,
+      "photo_direction": "Food editorial close-up of the completed cooked soup in a real ceramic bowl, believable textures from the documented recipe, no raw or absent ingredients on top. Unique composition for this dish.",
+      "status": "PRODUCTION_BRIEF_ONLY_NO_IMAGE_CREATED"
+    },
+    {
+      "id": 64,
+      "cuisine": "Корейская",
+      "title": "Кальбитхан с говяжьими рёбрами",
+      "recipe_source_urls": [
+        "https://www.maangchi.com/recipe/galbitang",
+        "https://www.koreanbapsang.com/galbitang-beef-short-rib-soup/",
+        "https://mykoreankitchen.com/galbitang-beef-short-rib-soup/"
+      ],
+      "required_appearance": "Прозрачный янтарный бульон с большими говяжьими рёбрами на кости, дайконом и зелёным луком; не молочный соллонтхан.",
+      "forbidden_unlisted_ingredients": true,
+      "visual_source_urls": [],
+      "visual_sources_verified": false,
+      "generated_image_path": null,
+      "generated_image_verified": false,
+      "approved_by_user": false,
+      "photo_direction": "Food editorial close-up of the completed cooked soup in a real ceramic bowl, believable textures from the documented recipe, no raw or absent ingredients on top. Unique composition for this dish.",
+      "status": "PRODUCTION_BRIEF_ONLY_NO_IMAGE_CREATED"
+    },
+    {
+      "id": 65,
+      "cuisine": "Корейская",
+      "title": "Миёккук с морскими водорослями",
+      "recipe_source_urls": [
+        "https://www.koreanbapsang.com/miyeok-guk-beef-seaweed-soup/",
+        "https://mykoreankitchen.com/korean-seaweed-soup-miyeok-guk/",
+        "https://www.beyondkimchee.com/beef-seaweed-soup/"
+      ],
+      "required_appearance": "Тёмно-оливковый суп с большим количеством мягких длинных водорослей и небольшими кусочками говядины; не зелёное пюре.",
+      "forbidden_unlisted_ingredients": true,
+      "visual_source_urls": [],
+      "visual_sources_verified": false,
+      "generated_image_path": null,
+      "generated_image_verified": false,
+      "approved_by_user": false,
+      "photo_direction": "Food editorial close-up of the completed cooked soup in a real ceramic bowl, believable textures from the documented recipe, no raw or absent ingredients on top. Unique composition for this dish.",
+      "status": "PRODUCTION_BRIEF_ONLY_NO_IMAGE_CREATED"
+    },
+    {
+      "id": 66,
+      "cuisine": "Корейская",
+      "title": "Мандугук с пельменями",
+      "recipe_source_urls": [
+        "https://www.maangchi.com/recipe/mandu-guk",
+        "https://www.koreanbapsang.com/manduguk-korean-dumpling-soup/",
+        "https://mykoreankitchen.com/manduguk-korean-dumpling-soup/"
+      ],
+      "required_appearance": "Светлый прозрачный суп с крупными пельменями и тонкими яичными лентами; не жареные пельмени и не густая каша.",
+      "forbidden_unlisted_ingredients": true,
+      "visual_source_urls": [],
+      "visual_sources_verified": false,
+      "generated_image_path": null,
+      "generated_image_verified": false,
+      "approved_by_user": false,
+      "photo_direction": "Food editorial close-up of the completed cooked soup in a real ceramic bowl, believable textures from the documented recipe, no raw or absent ingredients on top. Unique composition for this dish.",
+      "status": "PRODUCTION_BRIEF_ONLY_NO_IMAGE_CREATED"
+    },
+    {
+      "id": 67,
+      "cuisine": "Корейская",
+      "title": "Кимчиччигэ со свининой",
+      "recipe_source_urls": [
+        "https://www.maangchi.com/recipe/kimchi-jjigae",
+        "https://www.koreanbapsang.com/kimchi-jjigae-kimchi-stew/",
+        "https://www.beyondkimchee.com/kimchi-jjigae/"
+      ],
+      "required_appearance": "Ярко-красное густое кипящее рагу с длинными мягкими кусками кимчи, пластинами тофу и свининой; не крем-суп.",
+      "forbidden_unlisted_ingredients": true,
+      "visual_source_urls": [],
+      "visual_sources_verified": false,
+      "generated_image_path": null,
+      "generated_image_verified": false,
+      "approved_by_user": false,
+      "photo_direction": "Food editorial close-up of the completed cooked soup in a real ceramic bowl, believable textures from the documented recipe, no raw or absent ingredients on top. Unique composition for this dish.",
+      "status": "PRODUCTION_BRIEF_ONLY_NO_IMAGE_CREATED"
+    },
+    {
+      "id": 68,
+      "cuisine": "Корейская",
+      "title": "Конд-намульгук с ростками сои",
+      "recipe_source_urls": [
+        "https://www.maangchi.com/recipe/an-maeun-kongnamulguk",
+        "https://www.koreanbapsang.com/kongnamul-guk-soybean-sprout-soup/",
+        "https://mykoreankitchen.com/bean-sprout-soup-kongnamul-guk/"
+      ],
+      "required_appearance": "Почти прозрачный светлый бульон, много светлых хрустящих ростков с жёлтыми головками и немного зелёного лука.",
+      "forbidden_unlisted_ingredients": true,
+      "visual_source_urls": [],
+      "visual_sources_verified": false,
+      "generated_image_path": null,
+      "generated_image_verified": false,
+      "approved_by_user": false,
+      "photo_direction": "Food editorial close-up of the completed cooked soup in a real ceramic bowl, believable textures from the documented recipe, no raw or absent ingredients on top. Unique composition for this dish.",
+      "status": "PRODUCTION_BRIEF_ONLY_NO_IMAGE_CREATED"
+    },
+    {
+      "id": 69,
+      "cuisine": "Корейская",
+      "title": "Камджатхан со свиными косточками",
+      "recipe_source_urls": [
+        "https://www.maangchi.com/recipe/gamjatang",
+        "https://www.koreanbapsang.com/gamjatang-spicy-pork-bone-stew/",
+        "https://seonkyounglongest.com/gamjatang/"
+      ],
+      "required_appearance": "Насыщенное красновато-коричневое густое рагу с заметными свиными костями, картофелем, капустной зеленью и листьями периллы.",
+      "forbidden_unlisted_ingredients": true,
+      "visual_source_urls": [],
+      "visual_sources_verified": false,
+      "generated_image_path": null,
+      "generated_image_verified": false,
+      "approved_by_user": false,
+      "photo_direction": "Food editorial close-up of the completed cooked soup in a real ceramic bowl, believable textures from the documented recipe, no raw or absent ingredients on top. Unique composition for this dish.",
+      "status": "PRODUCTION_BRIEF_ONLY_NO_IMAGE_CREATED"
+    },
+    {
+      "id": 70,
+      "cuisine": "Корейская",
+      "title": "Твенджан-ччигэ с соевой пастой",
+      "recipe_source_urls": [
+        "https://www.maangchi.com/recipe/doenjang-jjigae",
+        "https://www.koreanbapsang.com/doenjang-jjigae-korean-soy-bean-paste/",
+        "https://www.beyondkimchee.com/doenjang-jjigae/"
+      ],
+      "required_appearance": "Густой мутный коричнево-жёлтый бульон, крупные куски тофу, цуккини, картофель и грибы; это ччигэ, а не жидкий мисо-суп.",
+      "forbidden_unlisted_ingredients": true,
+      "visual_source_urls": [],
+      "visual_sources_verified": false,
+      "generated_image_path": null,
+      "generated_image_verified": false,
+      "approved_by_user": false,
+      "photo_direction": "Food editorial close-up of the completed cooked soup in a real ceramic bowl, believable textures from the documented recipe, no raw or absent ingredients on top. Unique composition for this dish.",
+      "status": "PRODUCTION_BRIEF_ONLY_NO_IMAGE_CREATED"
+    },
+    {
+      "id": 71,
+      "cuisine": "Мексиканская",
+      "title": "Посоле рохо со свининой",
+      "recipe_source_urls": [
+        "https://muybuenoblog.com/pozole-rojo/",
+        "https://patijinich.com/es/pozole-rojo/",
+        "https://www.rickbayless.com/recipe/slow-cooker-red-chile-pozole/"
+      ],
+      "required_appearance": "Рубиново-красный бульон с крупной разбухшей белой кукурузой и свининой, тонкой свежей капустой и редисом.",
+      "forbidden_unlisted_ingredients": true,
+      "visual_source_urls": [],
+      "visual_sources_verified": false,
+      "generated_image_path": null,
+      "generated_image_verified": false,
+      "approved_by_user": false,
+      "photo_direction": "Food editorial close-up of the completed cooked soup in a real ceramic bowl, believable textures from the documented recipe, no raw or absent ingredients on top. Unique composition for this dish.",
+      "status": "PRODUCTION_BRIEF_ONLY_NO_IMAGE_CREATED"
+    },
+    {
+      "id": 72,
+      "cuisine": "Мексиканская",
+      "title": "Посоле верде с курицей",
+      "recipe_source_urls": [
+        "https://muybuenoblog.com/chicken-pozole-verde/",
+        "https://patijinich.com/you_know_you_want_it_green_pozole/",
+        "https://www.isabeleats.com/chicken-pozole-verde/"
+      ],
+      "required_appearance": "Насыщенный зелёный бульон с крупными белыми зернами хомини и кусочками курицы, без красного перца.",
+      "forbidden_unlisted_ingredients": true,
+      "visual_source_urls": [],
+      "visual_sources_verified": false,
+      "generated_image_path": null,
+      "generated_image_verified": false,
+      "approved_by_user": false,
+      "photo_direction": "Food editorial close-up of the completed cooked soup in a real ceramic bowl, believable textures from the documented recipe, no raw or absent ingredients on top. Unique composition for this dish.",
+      "status": "PRODUCTION_BRIEF_ONLY_NO_IMAGE_CREATED"
+    },
+    {
+      "id": 73,
+      "cuisine": "Мексиканская",
+      "title": "Сопа де тортилья",
+      "recipe_source_urls": [
+        "https://www.rickbayless.com/recipe/tortilla-soup/",
+        "https://patijinich.com/es/sopa-de-tortilla/",
+        "https://www.mexicoinmykitchen.com/tortilla-soup-recipe/"
+      ],
+      "required_appearance": "Красный томатно-перечный бульон, сверху тонкие хрустящие полоски тортильи, немного авокадо и крошка сыра.",
+      "forbidden_unlisted_ingredients": true,
+      "visual_source_urls": [],
+      "visual_sources_verified": false,
+      "generated_image_path": null,
+      "generated_image_verified": false,
+      "approved_by_user": false,
+      "photo_direction": "Food editorial close-up of the completed cooked soup in a real ceramic bowl, believable textures from the documented recipe, no raw or absent ingredients on top. Unique composition for this dish.",
+      "status": "PRODUCTION_BRIEF_ONLY_NO_IMAGE_CREATED"
+    },
+    {
+      "id": 74,
+      "cuisine": "Мексиканская",
+      "title": "Кальдо тлальпеньо с курицей и нутом",
+      "recipe_source_urls": [
+        "https://www.mexicoinmykitchen.com/caldo-tlalpeno-recipe/",
+        "https://www.kiwilimon.com/receta/sopas/caldo-tlalpeno",
+        "https://www.recetasnestle.com.mx/recetas/caldo-tlalpeno"
+      ],
+      "required_appearance": "Золотисто-красноватый суп с нутом, курицей, морковью, зелёной фасолью, небольшой порцией авокадо и заметным чипотле.",
+      "forbidden_unlisted_ingredients": true,
+      "visual_source_urls": [],
+      "visual_sources_verified": false,
+      "generated_image_path": null,
+      "generated_image_verified": false,
+      "approved_by_user": false,
+      "photo_direction": "Food editorial close-up of the completed cooked soup in a real ceramic bowl, believable textures from the documented recipe, no raw or absent ingredients on top. Unique composition for this dish.",
+      "status": "PRODUCTION_BRIEF_ONLY_NO_IMAGE_CREATED"
+    },
+    {
+      "id": 75,
+      "cuisine": "Мексиканская",
+      "title": "Сопа де фидео",
+      "recipe_source_urls": [
+        "https://www.mexicoinmykitchen.com/sopa-de-fideos-mexican-noodle-soup/",
+        "https://www.saveur.com/article/Recipes/Mexico-Noodle-Soup/",
+        "https://www.isabeleats.com/sopa-de-fideo/"
+      ],
+      "required_appearance": "Красноватый жидкий томатный бульон с очень тонкими короткими нитями вермишели, не густая паста под соусом.",
+      "forbidden_unlisted_ingredients": true,
+      "visual_source_urls": [],
+      "visual_sources_verified": false,
+      "generated_image_path": null,
+      "generated_image_verified": false,
+      "approved_by_user": false,
+      "photo_direction": "Food editorial close-up of the completed cooked soup in a real ceramic bowl, believable textures from the documented recipe, no raw or absent ingredients on top. Unique composition for this dish.",
+      "status": "PRODUCTION_BRIEF_ONLY_NO_IMAGE_CREATED"
+    },
+    {
+      "id": 76,
+      "cuisine": "Мексиканская",
+      "title": "Сопа де лима с курицей",
+      "recipe_source_urls": [
+        "https://www.rickbayless.com/recipe/sopa-de-lima-clasica/",
+        "https://patijinich.com/lima-soup/",
+        "https://yucatantoday.com/en/blog/recipe-sopa-de-lima"
+      ],
+      "required_appearance": "Светло-янтарный цитрусовый суп, кусочки курицы и овощей, сверху хрустящие полоски тортильи; не густой красный суп.",
+      "forbidden_unlisted_ingredients": true,
+      "visual_source_urls": [],
+      "visual_sources_verified": false,
+      "generated_image_path": null,
+      "generated_image_verified": false,
+      "approved_by_user": false,
+      "photo_direction": "Food editorial close-up of the completed cooked soup in a real ceramic bowl, believable textures from the documented recipe, no raw or absent ingredients on top. Unique composition for this dish.",
+      "status": "PRODUCTION_BRIEF_ONLY_NO_IMAGE_CREATED"
+    },
+    {
+      "id": 77,
+      "cuisine": "Мексиканская",
+      "title": "Кальдо де рес с говядиной",
+      "recipe_source_urls": [
+        "https://www.food.com/recipe/caldo-de-res-a-mexican-beef-vegetable-soup-223546",
+        "https://www.muybuenoblog.com/caldo-de-res/",
+        "https://www.isabeleats.com/caldo-de-res/"
+      ],
+      "required_appearance": "Прозрачный золотистый бульон, очень крупные куски мяса на кости и овощей, половинка кукурузного початка; не пюре.",
+      "forbidden_unlisted_ingredients": true,
+      "visual_source_urls": [],
+      "visual_sources_verified": false,
+      "generated_image_path": null,
+      "generated_image_verified": false,
+      "approved_by_user": false,
+      "photo_direction": "Food editorial close-up of the completed cooked soup in a real ceramic bowl, believable textures from the documented recipe, no raw or absent ingredients on top. Unique composition for this dish.",
+      "status": "PRODUCTION_BRIEF_ONLY_NO_IMAGE_CREATED"
+    },
+    {
+      "id": 78,
+      "cuisine": "Мексиканская",
+      "title": "Кальдо де альбондигас",
+      "recipe_source_urls": [
+        "https://www.mexicoinmykitchen.com/mexican-meatball-soup-recipe/",
+        "https://www.isabeleats.com/albondigas-soup/",
+        "https://www.onceuponachef.com/recipes/albondigas-soup-mexican-meatball-soup.html"
+      ],
+      "required_appearance": "Красновато-золотистый бульон с отдельными круглыми фрикадельками, тонкими овощами и зеленью; рис заметен внутри готовых мясных шариков.",
+      "forbidden_unlisted_ingredients": true,
+      "visual_source_urls": [],
+      "visual_sources_verified": false,
+      "generated_image_path": null,
+      "generated_image_verified": false,
+      "approved_by_user": false,
+      "photo_direction": "Food editorial close-up of the completed cooked soup in a real ceramic bowl, believable textures from the documented recipe, no raw or absent ingredients on top. Unique composition for this dish.",
+      "status": "PRODUCTION_BRIEF_ONLY_NO_IMAGE_CREATED"
+    },
+    {
+      "id": 79,
+      "cuisine": "Мексиканская",
+      "title": "Сопа тараска из фасоли",
+      "recipe_source_urls": [
+        "https://patijinich.com/tarascan-soup/",
+        "https://www.pbs.org/food/recipes/sopa-tarasca",
+        "https://soupwiki.com/soups/sopa-tarasca/"
+      ],
+      "required_appearance": "Густой кирпично-красный фасолево-томатный суп, небольшая белая струйка крема, немного сыра и тортильи, не крупные бобы в прозрачном бульоне.",
+      "forbidden_unlisted_ingredients": true,
+      "visual_source_urls": [],
+      "visual_sources_verified": false,
+      "generated_image_path": null,
+      "generated_image_verified": false,
+      "approved_by_user": false,
+      "photo_direction": "Food editorial close-up of the completed cooked soup in a real ceramic bowl, believable textures from the documented recipe, no raw or absent ingredients on top. Unique composition for this dish.",
+      "status": "PRODUCTION_BRIEF_ONLY_NO_IMAGE_CREATED"
+    },
+    {
+      "id": 80,
+      "cuisine": "Мексиканская",
+      "title": "Чильпачоле с крабом",
+      "recipe_source_urls": [
+        "https://laroussecocina.mx/receta/chilpachole-de-jaiba/",
+        "https://www.kiwilimon.com/receta/sopas/caldos/chilpachole-de-jaiba",
+        "https://www.recetasnestle.com.mx/recetas/chilpachole-jaiba"
+      ],
+      "required_appearance": "Густой насыщенно-красный суп с заметными хлопьями крабового мяса, без целых панцирей и без сливок.",
+      "forbidden_unlisted_ingredients": true,
+      "visual_source_urls": [],
+      "visual_sources_verified": false,
+      "generated_image_path": null,
+      "generated_image_verified": false,
+      "approved_by_user": false,
+      "photo_direction": "Food editorial close-up of the completed cooked soup in a real ceramic bowl, believable textures from the documented recipe, no raw or absent ingredients on top. Unique composition for this dish.",
+      "status": "PRODUCTION_BRIEF_ONLY_NO_IMAGE_CREATED"
+    },
+    {
+      "id": 81,
+      "cuisine": "Вьетнамская",
+      "title": "Фо бо с говядиной",
+      "recipe_source_urls": [
+        "https://www.foodnetwork.com/recipes/beef-noodle-soup-with-rice-noodles-pho-bo-2105722",
+        "https://vickypham.com/blog/vietnamese-beef-noodle-soup-pho-bo/",
+        "https://www.recipetineats.com/vietnamese-pho-recipe/"
+      ],
+      "required_appearance": "Прозрачный тёмно-золотистый бульон, широкая рисовая лапша и тонкие ломтики говядины.",
+      "forbidden_unlisted_ingredients": true,
+      "visual_source_urls": [],
+      "visual_sources_verified": false,
+      "generated_image_path": null,
+      "generated_image_verified": false,
+      "approved_by_user": false,
+      "photo_direction": "Food editorial close-up of the completed cooked soup in a real ceramic bowl, believable textures from the documented recipe, no raw or absent ingredients on top. Unique composition for this dish.",
+      "status": "PRODUCTION_BRIEF_ONLY_NO_IMAGE_CREATED"
+    },
+    {
+      "id": 82,
+      "cuisine": "Вьетнамская",
+      "title": "Фо га с курицей",
+      "recipe_source_urls": [
+        "https://www.hungryhuy.com/chicken-pho-recipe/",
+        "https://vickypham.com/blog/vietnamese-chicken-noodle-soup-pho-ga/",
+        "https://www.recipetineats.com/vietnamese-chicken-pho-soup-pho-ga/"
+      ],
+      "required_appearance": "Светлый прозрачный куриный бульон, широкая лапша и нежные волокна курицы.",
+      "forbidden_unlisted_ingredients": true,
+      "visual_source_urls": [],
+      "visual_sources_verified": false,
+      "generated_image_path": null,
+      "generated_image_verified": false,
+      "approved_by_user": false,
+      "photo_direction": "Food editorial close-up of the completed cooked soup in a real ceramic bowl, believable textures from the documented recipe, no raw or absent ingredients on top. Unique composition for this dish.",
+      "status": "PRODUCTION_BRIEF_ONLY_NO_IMAGE_CREATED"
+    },
+    {
+      "id": 83,
+      "cuisine": "Вьетнамская",
+      "title": "Бун бо Хюэ",
+      "recipe_source_urls": [
+        "https://www.hungryhuy.com/bun-bo-hue-recipe/",
+        "https://vickypham.com/blog/vietnamese-spicy-beef-noodle-soup-bun-bo-hue/",
+        "https://www.greatbritishchefs.com/recipes/bun-bo-hue-recipe"
+      ],
+      "required_appearance": "Красный бульон, толстая круглая рисовая лапша, говядина и свинина; без тонкой лапши фо.",
+      "forbidden_unlisted_ingredients": true,
+      "visual_source_urls": [],
+      "visual_sources_verified": false,
+      "generated_image_path": null,
+      "generated_image_verified": false,
+      "approved_by_user": false,
+      "photo_direction": "Food editorial close-up of the completed cooked soup in a real ceramic bowl, believable textures from the documented recipe, no raw or absent ingredients on top. Unique composition for this dish.",
+      "status": "PRODUCTION_BRIEF_ONLY_NO_IMAGE_CREATED"
+    },
+    {
+      "id": 84,
+      "cuisine": "Вьетнамская",
+      "title": "Бун риеу с крабом",
+      "recipe_source_urls": [
+        "https://www.hungryhuy.com/bun-rieu-recipe/",
+        "https://vickypham.com/blog/bun-rieu-scratch/",
+        "https://asianinspirations.com.au/recipes/vietnamese-crab-noodle-soup-bun-rieu/"
+      ],
+      "required_appearance": "Оранжево-красный бульон с рыхлыми крабовыми сгустками, светлым тофу и рисовой вермишелью.",
+      "forbidden_unlisted_ingredients": true,
+      "visual_source_urls": [],
+      "visual_sources_verified": false,
+      "generated_image_path": null,
+      "generated_image_verified": false,
+      "approved_by_user": false,
+      "photo_direction": "Food editorial close-up of the completed cooked soup in a real ceramic bowl, believable textures from the documented recipe, no raw or absent ingredients on top. Unique composition for this dish.",
+      "status": "PRODUCTION_BRIEF_ONLY_NO_IMAGE_CREATED"
+    },
+    {
+      "id": 85,
+      "cuisine": "Вьетнамская",
+      "title": "Бун тханг по-ханойски",
+      "recipe_source_urls": [
+        "https://www.hungryhuy.com/bun-thang-vietnamese-hanoi-soup/",
+        "https://vickypham.com/blog/northern-vietnam-hanoi-noodle-soup-pork-chicken-shrimp-bun-thang/",
+        "https://ang-cooks.com/post/bun-thang/"
+      ],
+      "required_appearance": "Аккуратные тонкие разноцветные полоски сверху белой лапши в золотистом бульоне.",
+      "forbidden_unlisted_ingredients": true,
+      "visual_source_urls": [],
+      "visual_sources_verified": false,
+      "generated_image_path": null,
+      "generated_image_verified": false,
+      "approved_by_user": false,
+      "photo_direction": "Food editorial close-up of the completed cooked soup in a real ceramic bowl, believable textures from the documented recipe, no raw or absent ingredients on top. Unique composition for this dish.",
+      "status": "PRODUCTION_BRIEF_ONLY_NO_IMAGE_CREATED"
+    },
+    {
+      "id": 86,
+      "cuisine": "Вьетнамская",
+      "title": "Бун ок с улитками",
+      "recipe_source_urls": [
+        "https://vickypham.com/blog/vietnamese-escargot-noodle-soup-bun-oc/",
+        "https://vnexpress.net/doi-song-cooking-bun-oc-ha-noi-theo-loi-cu-4785234.html",
+        "https://www.dienmayxanh.com/vao-bep/cach-nau-bun-oc-doc-mung-thom-ngon-thanh-mat-de-lam-ngay-tai-08482"
+      ],
+      "required_appearance": "Розоватый бульон, белая тонкая лапша, небольшие улитки и дольки томатов.",
+      "forbidden_unlisted_ingredients": true,
+      "visual_source_urls": [],
+      "visual_sources_verified": false,
+      "generated_image_path": null,
+      "generated_image_verified": false,
+      "approved_by_user": false,
+      "photo_direction": "Food editorial close-up of the completed cooked soup in a real ceramic bowl, believable textures from the documented recipe, no raw or absent ingredients on top. Unique composition for this dish.",
+      "status": "PRODUCTION_BRIEF_ONLY_NO_IMAGE_CREATED"
+    },
+    {
+      "id": 87,
+      "cuisine": "Вьетнамская",
+      "title": "Ху тьеу со свининой и креветками",
+      "recipe_source_urls": [
+        "https://vickypham.com/blog/vietnamese-pork-seafood-noodle-soup-hu-tieu/",
+        "https://www.vietworldkitchen.com/blog/2007/11/hu-tieu-nam-van.html",
+        "https://vietnamesecookbook.com/recipes/hu-tieu/"
+      ],
+      "required_appearance": "Прозрачный светло-золотистый бульон с рисовой лапшой, свининой и розовыми креветками.",
+      "forbidden_unlisted_ingredients": true,
+      "visual_source_urls": [],
+      "visual_sources_verified": false,
+      "generated_image_path": null,
+      "generated_image_verified": false,
+      "approved_by_user": false,
+      "photo_direction": "Food editorial close-up of the completed cooked soup in a real ceramic bowl, believable textures from the documented recipe, no raw or absent ingredients on top. Unique composition for this dish.",
+      "status": "PRODUCTION_BRIEF_ONLY_NO_IMAGE_CREATED"
+    },
+    {
+      "id": 88,
+      "cuisine": "Вьетнамская",
+      "title": "Бань кань с густой лапшой",
+      "recipe_source_urls": [
+        "https://www.hungryhuy.com/banh-canh-gio-heo/",
+        "https://vickypham.com/blog/banh-canh-suon-heo-vietnamese-pork-rib-noodle-soup-large-batch/",
+        "https://vnifood.com/recipe/how-to-make-banh-canh-tom-thit/"
+      ],
+      "required_appearance": "Слегка вязкий бульон с толстой белой лапшой, свиными рёбрами и креветками.",
+      "forbidden_unlisted_ingredients": true,
+      "visual_source_urls": [],
+      "visual_sources_verified": false,
+      "generated_image_path": null,
+      "generated_image_verified": false,
+      "approved_by_user": false,
+      "photo_direction": "Food editorial close-up of the completed cooked soup in a real ceramic bowl, believable textures from the documented recipe, no raw or absent ingredients on top. Unique composition for this dish.",
+      "status": "PRODUCTION_BRIEF_ONLY_NO_IMAGE_CREATED"
+    },
+    {
+      "id": 89,
+      "cuisine": "Вьетнамская",
+      "title": "Кань чуа с рыбой и тамариндом",
+      "recipe_source_urls": [
+        "https://www.saveur.com/article/recipes/classic-sour-fish-soup/",
+        "https://vickypham.com/blog/vietnamese-sour-catfish-soup-canh-chua/",
+        "https://www.sbs.com.au/food/the-cook-up-with-adam-liaw/recipe/canh-chua-ca-vietnamese-sour-fish-soup/5itdhzdfp"
+      ],
+      "required_appearance": "Прозрачный кисло-сладкий бульон с рыбой, томатами, ананасом, бамией и ростками.",
+      "forbidden_unlisted_ingredients": true,
+      "visual_source_urls": [],
+      "visual_sources_verified": false,
+      "generated_image_path": null,
+      "generated_image_verified": false,
+      "approved_by_user": false,
+      "photo_direction": "Food editorial close-up of the completed cooked soup in a real ceramic bowl, believable textures from the documented recipe, no raw or absent ingredients on top. Unique composition for this dish.",
+      "status": "PRODUCTION_BRIEF_ONLY_NO_IMAGE_CREATED"
+    },
+    {
+      "id": 90,
+      "cuisine": "Вьетнамская",
+      "title": "Кань кхо куа с фаршированной горькой дыней",
+      "recipe_source_urls": [
+        "https://www.hungryhuy.com/bitter-melon-soup-canh-kho-qua/",
+        "https://delightfulplate.com/vietnamese-bitter-melon-soup-canh-kho-qua/",
+        "https://vickypham.com/blog/stuffed-bitter-melon-soup/"
+      ],
+      "required_appearance": "Прозрачный бульон с крупными зелёными кольцами горькой дыни, заполненными готовым фаршем.",
+      "forbidden_unlisted_ingredients": true,
+      "visual_source_urls": [],
+      "visual_sources_verified": false,
+      "generated_image_path": null,
+      "generated_image_verified": false,
+      "approved_by_user": false,
+      "photo_direction": "Food editorial close-up of the completed cooked soup in a real ceramic bowl, believable textures from the documented recipe, no raw or absent ingredients on top. Unique composition for this dish.",
+      "status": "PRODUCTION_BRIEF_ONLY_NO_IMAGE_CREATED"
+    },
+    {
+      "id": 91,
+      "cuisine": "Китайская",
+      "title": "Суп с вонтонами",
+      "recipe_source_urls": [
+        "https://thewoksoflife.com/shanghai-wonton-soup/",
+        "https://omnivorescookbook.com/wonton-soup/",
+        "https://www.justonecookbook.com/shrimp-pork-wonton/"
+      ],
+      "required_appearance": "Прозрачный бледно-золотой бульон с полупрозрачными мешочками вонтонов и небольшой зеленью бок-чой.",
+      "forbidden_unlisted_ingredients": true,
+      "visual_source_urls": [],
+      "visual_sources_verified": false,
+      "generated_image_path": null,
+      "generated_image_verified": false,
+      "approved_by_user": false,
+      "photo_direction": "Food editorial close-up of the completed cooked soup in a real ceramic bowl, believable textures from the documented recipe, no raw or absent ingredients on top. Unique composition for this dish.",
+      "status": "PRODUCTION_BRIEF_ONLY_NO_IMAGE_CREATED"
+    },
+    {
+      "id": 92,
+      "cuisine": "Китайская",
+      "title": "Кисло-острый суп",
+      "recipe_source_urls": [
+        "https://thewoksoflife.com/hot-sour-soup/",
+        "https://omnivorescookbook.com/authentic-hot-and-sour-soup/",
+        "https://www.madewithlau.com/recipes/hot-sour-soup"
+      ],
+      "required_appearance": "Тёмный слегка густой бульон с тонкими полосками тофу и грибов, яйцом-паутинкой; не красный томатный суп.",
+      "forbidden_unlisted_ingredients": true,
+      "visual_source_urls": [],
+      "visual_sources_verified": false,
+      "generated_image_path": null,
+      "generated_image_verified": false,
+      "approved_by_user": false,
+      "photo_direction": "Food editorial close-up of the completed cooked soup in a real ceramic bowl, believable textures from the documented recipe, no raw or absent ingredients on top. Unique composition for this dish.",
+      "status": "PRODUCTION_BRIEF_ONLY_NO_IMAGE_CREATED"
+    },
+    {
+      "id": 93,
+      "cuisine": "Китайская",
+      "title": "Суп с яичными хлопьями",
+      "recipe_source_urls": [
+        "https://thewoksoflife.com/egg-drop-soup/",
+        "https://omnivorescookbook.com/chinese-egg-drop-soup/",
+        "https://www.madewithlau.com/recipes/egg-drop-soup"
+      ],
+      "required_appearance": "Светло-жёлтый почти прозрачный суп с длинными шелковистыми нитями яйца, без овощных крупных кубиков.",
+      "forbidden_unlisted_ingredients": true,
+      "visual_source_urls": [],
+      "visual_sources_verified": false,
+      "generated_image_path": null,
+      "generated_image_verified": false,
+      "approved_by_user": false,
+      "photo_direction": "Food editorial close-up of the completed cooked soup in a real ceramic bowl, believable textures from the documented recipe, no raw or absent ingredients on top. Unique composition for this dish.",
+      "status": "PRODUCTION_BRIEF_ONLY_NO_IMAGE_CREATED"
+    },
+    {
+      "id": 94,
+      "cuisine": "Китайская",
+      "title": "Суп с зимней дыней",
+      "recipe_source_urls": [
+        "https://thewoksoflife.com/winter-melon-soup-pork-ribs/",
+        "https://dailycookingquest.com/winter-melon-soup.html",
+        "https://www.chinasichuanfood.com/winter-melon-soup/"
+      ],
+      "required_appearance": "Прозрачный лёгкий бульон, почти прозрачные мягкие кубики восковой дыни, свиные рёбрышки и немного зелёного лука.",
+      "forbidden_unlisted_ingredients": true,
+      "visual_source_urls": [],
+      "visual_sources_verified": false,
+      "generated_image_path": null,
+      "generated_image_verified": false,
+      "approved_by_user": false,
+      "photo_direction": "Food editorial close-up of the completed cooked soup in a real ceramic bowl, believable textures from the documented recipe, no raw or absent ingredients on top. Unique composition for this dish.",
+      "status": "PRODUCTION_BRIEF_ONLY_NO_IMAGE_CREATED"
+    },
+    {
+      "id": 95,
+      "cuisine": "Китайская",
+      "title": "Кукурузный суп по-кантонски",
+      "recipe_source_urls": [
+        "https://www.madewithlau.com/recipes/chicken-corn-soup",
+        "https://thewoksoflife.com/chicken-corn-egg-drop-soup/",
+        "https://omnivorescookbook.com/chinese-corn-soup/"
+      ],
+      "required_appearance": "Нежно-жёлтый слегка густой суп, отдельные зёрна кукурузы и тонкие нити яйца; не гладкое пюре из кукурузы.",
+      "forbidden_unlisted_ingredients": true,
+      "visual_source_urls": [],
+      "visual_sources_verified": false,
+      "generated_image_path": null,
+      "generated_image_verified": false,
+      "approved_by_user": false,
+      "photo_direction": "Food editorial close-up of the completed cooked soup in a real ceramic bowl, believable textures from the documented recipe, no raw or absent ingredients on top. Unique composition for this dish.",
+      "status": "PRODUCTION_BRIEF_ONLY_NO_IMAGE_CREATED"
+    },
+    {
+      "id": 96,
+      "cuisine": "Китайская",
+      "title": "Суаньцайюй с рыбой",
+      "recipe_source_urls": [
+        "https://omnivorescookbook.com/suan-cai-yu/",
+        "https://www.chinasichuanfood.com/szechuan-fish-suan-cai-yu/",
+        "https://www.redhousespice.com/suan-cai-yu/"
+      ],
+      "required_appearance": "Светло-золотистый кислый бульон, крупные пласты белой рыбы и тонкая горчичная квашеная зелень; не томатный и не сливочный.",
+      "forbidden_unlisted_ingredients": true,
+      "visual_source_urls": [],
+      "visual_sources_verified": false,
+      "generated_image_path": null,
+      "generated_image_verified": false,
+      "approved_by_user": false,
+      "photo_direction": "Food editorial close-up of the completed cooked soup in a real ceramic bowl, believable textures from the documented recipe, no raw or absent ingredients on top. Unique composition for this dish.",
+      "status": "PRODUCTION_BRIEF_ONLY_NO_IMAGE_CREATED"
+    },
+    {
+      "id": 97,
+      "cuisine": "Китайская",
+      "title": "Хулатхан по-хэнаньски с говядиной и белым перцем",
+      "recipe_source_urls": [
+        "https://fabulousfusionfood.com/recipes/misc-chinese-hot-pepper-soup",
+        "https://www.kitchentomytable.com/view_recipe_data.php?id=10221",
+        "https://chinesecookingdemystified.substack.com/p/hot-pepper-soup"
+      ],
+      "required_appearance": "очень густой тёмно-коричневый перечный бульон с кусочками мяса, пористым пшеничным глютеном, стеклянной лапшой, древесными грибами и арахисом. Это не китайский кисло-острый суп с тофу и бамбуком.",
+      "forbidden_unlisted_ingredients": true,
+      "visual_source_urls": [],
+      "visual_sources_verified": false,
+      "generated_image_path": null,
+      "generated_image_verified": false,
+      "approved_by_user": false,
+      "photo_direction": "Food editorial close-up of the completed cooked soup in a real ceramic bowl, believable textures from the documented recipe, no raw or absent ingredients on top. Unique composition for this dish.",
+      "status": "PRODUCTION_BRIEF_ONLY_NO_IMAGE_CREATED"
+    },
+    {
+      "id": 98,
+      "cuisine": "Китайская",
+      "title": "Янроу паомо с бараниной и лепёшкой",
+      "recipe_source_urls": [
+        "https://www.xiachufang.com/recipe/37634/",
+        "https://hongkitchen.org/recipes/yangrou-paomo",
+        "https://thingsasian.com/node/1915.html"
+      ],
+      "required_appearance": "Плотная светло-коричневая похлёбка с множеством маленьких размокших кусочков лепёшки, бараниной и стеклянной лапшой.",
+      "forbidden_unlisted_ingredients": true,
+      "visual_source_urls": [],
+      "visual_sources_verified": false,
+      "generated_image_path": null,
+      "generated_image_verified": false,
+      "approved_by_user": false,
+      "photo_direction": "Food editorial close-up of the completed cooked soup in a real ceramic bowl, believable textures from the documented recipe, no raw or absent ingredients on top. Unique composition for this dish.",
+      "status": "PRODUCTION_BRIEF_ONLY_NO_IMAGE_CREATED"
+    },
+    {
+      "id": 99,
+      "cuisine": "Китайская",
+      "title": "Лосунтан, шанхайский томатный суп",
+      "recipe_source_urls": [
+        "https://thewoksoflife.com/red-vegetable-soup-shanghai-luo-song-tang/",
+        "https://www.madewithlau.com/recipes/cantonese-borscht-soup",
+        "https://www.osmancho.com/en/recipes/oz-siresinde-mal-eti-sorbasi-luosong-tang"
+      ],
+      "required_appearance": "Красно-оранжевая шанхайская овощная похлёбка с капустой, картофелем, морковью и говядиной; не русский борщ со свёклой.",
+      "forbidden_unlisted_ingredients": true,
+      "visual_source_urls": [],
+      "visual_sources_verified": false,
+      "generated_image_path": null,
+      "generated_image_verified": false,
+      "approved_by_user": false,
+      "photo_direction": "Food editorial close-up of the completed cooked soup in a real ceramic bowl, believable textures from the documented recipe, no raw or absent ingredients on top. Unique composition for this dish.",
+      "status": "PRODUCTION_BRIEF_ONLY_NO_IMAGE_CREATED"
+    },
+    {
+      "id": 100,
+      "cuisine": "Китайская",
+      "title": "Суп с водяным крессом и свиными рёбрами",
+      "recipe_source_urls": [
+        "https://thewoksoflife.com/chinese-watercress-soup-pork/",
+        "https://theburningkitchen.com/watercress-pork-rib-soup-recipe/",
+        "https://souperdiaries.com/watercress-with-pork-ribs-soup/"
+      ],
+      "required_appearance": "Светлый янтарный бульон, длинная мягкая тёмно-зелёная зелень водяного кресса и свиные рёбра; не шпинатный крем-суп.",
+      "forbidden_unlisted_ingredients": true,
+      "visual_source_urls": [],
+      "visual_sources_verified": false,
+      "generated_image_path": null,
+      "generated_image_verified": false,
+      "approved_by_user": false,
+      "photo_direction": "Food editorial close-up of the completed cooked soup in a real ceramic bowl, believable textures from the documented recipe, no raw or absent ingredients on top. Unique composition for this dish.",
+      "status": "PRODUCTION_BRIEF_ONLY_NO_IMAGE_CREATED"
+    }
+  ]
+}
