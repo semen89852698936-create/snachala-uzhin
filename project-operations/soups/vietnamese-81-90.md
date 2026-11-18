@@ -254,7 +254,7 @@
 **Источники для проверки:**
 1. https://www.hungryhuy.com/bitter-melon-soup-canh-kho-qua/
 2. https://delightfulplate.com/vietnamese-bitter-melon-soup-canh-kho-qua/
-3. https://vickypham.com/blog/stuffed-bitter-melon-soup/
+3. https://getvanvan.com/blogs/recipes/canh-kh%E1%BB%95-qua-bitter-melon-soup
 
 **Различия и редакционное решение:** Третий URL требует открытия, саму горькую дыню нельзя заменить огурцом.
 
