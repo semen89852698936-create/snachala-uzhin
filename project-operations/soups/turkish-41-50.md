@@ -70,7 +70,7 @@
 **Вид готового блюда:** Белый кремоватый суп с отдельными зёрнами риса и зелёными следами сушёной мяты в масле; никакого сыра.
 
 **Три независимых рецептурных источника:**
-1. https://www.yayla.de/en/recipes/1
+1. https://www.ktb.gov.tr/EN-99046/yogurt-soup.html
 2. https://www.epicurious.com/recipes/food/views/yayla-corbasi-373289
 3. https://forkin.io/recipes/yayla-corbasi-turkish-yogurt-soup
 
@@ -98,7 +98,7 @@
 **Три независимых рецептурных источника:**
 1. https://www.ktb.gov.tr/EN-99042/tarhana-soup.html
 2. https://www.kulturportali.gov.tr/turkiye/aksaray/neyenir/tarhana-corbasi
-3. https://app.ckbk.com/recipe/nevi83904c01s001ss001r002/tarhana-soup
+3. https://www.gurmion.com/en/recipes/tarhana-soup
 
 **Различия вариантов и выбор редакции:** Обязателен сам продукт тархана, заменить его смесью муки и йогурта нельзя без изменения названия блюда.
 
