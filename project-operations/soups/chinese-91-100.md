@@ -200,7 +200,7 @@
 **Внешний вид:** Плотная светло-коричневая похлёбка с множеством маленьких размокших кусочков лепёшки, бараниной и стеклянной лапшой.
 
 **Источники для дальнейшей сверки:**
-1. https://www.xiachufang.com/recipe/37634/
+1. https://www.flavorandfortune.com/ffdataaccess/recipe.php?ID=1165
 2. https://hongkitchen.org/recipes/yangrou-paomo
 3. https://thingsasian.com/node/1915.html
 
