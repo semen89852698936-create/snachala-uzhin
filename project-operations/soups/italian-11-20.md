@@ -19,7 +19,7 @@
 
 **Три рецептурных источника:**
 1. https://www.bbcgoodfood.com/recipes/classic-minestrone-soup
-2. https://www.lacucinaitaliana.com/italian-food/hacks/the-best-minestrone-soup
+2. https://www.lacucinaitaliana.it/ricetta/primi/minestrone-di-verdure/
 3. https://www.greatbritishchefs.com/recipes/minestrone-soup-recipe
 
 **Различия и редакционное решение:** Сезонный состав овощей меняется по источникам; для сайта выбран простой вариант с фасолью и пастой, а не генуэзский с песто.
@@ -45,8 +45,8 @@
 
 **Три рецептурных источника:**
 1. https://www.giallozafferano.com/recipes/Ribollita-Tuscan-soup.html
-2. https://www.lacucinaitaliana.it/ricetta/primi/ribollita/
-3. https://cucinaregionaleitaliana.it/portfolio-items/ribollita/
+2. https://www.cucchiaio.it/ricetta/ricetta-ribollita-semplice/
+3. https://www.visittuscany.com/en/recipes/ribollita-recipe/
 
 **Различия и редакционное решение:** Рецепт имеет региональную официально зарегистрированную версию; повторный разогрев важен, время без замачивания сухой фасоли.
 
