@@ -5,6 +5,10 @@
 const fs=require('node:fs'),path=require('node:path');
 const dir=__dirname, data=JSON.parse(fs.readFileSync(path.join(dir,'WORLD_100_RECIPES.json'),'utf8'));
 if(data.recipes.length!==100) throw Error('Expected exactly 100 recipes');
+const briefs=JSON.parse(fs.readFileSync(path.join(dir,'PHOTO_PRODUCTION_BRIEFS_100.json'),'utf8')).specifications;
+if(briefs.length!==100)throw Error('Missing unique photo briefs');
+const photoMap=new Map(briefs.map(b=>[b.id,b]));
+for(const r of data.recipes){if(!photoMap.has(r.id)||photoMap.get(r.id).title!==r.title)throw Error('Photo brief mismatch '+r.id)}
 const esc=s=>String(s??'').replace(/[&<>"']/g,ch=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[ch]));
 const menu=[...new Set(data.recipes.map(x=>x.country_cuisine))];
 const cards=data.recipes.map(x=>{
@@ -12,7 +16,7 @@ const links=x.recipe_sources.map((url,i)=>'<a href="'+esc(url)+'" rel="noopener 
 return '<article class="recipe" id="recipe-'+x.id+'" data-search="'+esc((x.title+' '+x.country_cuisine+' '+x.ingredients_text).toLowerCase())+'">'+
 '<div class="eyebrow">'+esc(x.country_cuisine)+' <span>№ '+x.id+'</span></div>'+
 '<h2>'+esc(x.title)+'</h2><p class="portion">На двоих · Редакционная версия, не утверждена</p>'+
-'<div class="photo-notice">Фотография для этой карточки ещё не прошла проверку.</div>'+
+'<div class="photo-notice"><strong>Требования к будущей фотографии:</strong> '+esc(photoMap.get(x.id).required_appearance)+'<br><small>Изображение для публикации не создано и не утверждено.</small></div>'+
 '<h3>Продукты</h3><ul>'+x.ingredient_items.map(i=>'<li>'+esc(i)+'</li>').join('')+'</ul>'+
 '<h3>Готовим</h3><ol>'+x.steps.map(i=>'<li>'+esc(i)+'</li>').join('')+'</ol>'+
 '<h3>Рецептурные источники</h3><div class="links">'+links+'</div>'+
