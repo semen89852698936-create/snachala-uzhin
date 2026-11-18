@@ -150,7 +150,7 @@
 **Источники для дальнейшей сверки:**
 1. https://omnivorescookbook.com/suan-cai-yu/
 2. https://www.chinasichuanfood.com/szechuan-fish-suan-cai-yu/
-3. https://www.redhousespice.com/suan-cai-yu/
+3. https://redhousespice.com/suan-cai-yu/
 
 **Отличия региональных вариантов и выбор редакции:** Нужна именно квашеная горчичная зелень, обычная русская квашеная капуста не равноценна.
 
@@ -175,7 +175,7 @@
 
 **Три независимых рецептурных источника:**
 1. https://fabulousfusionfood.com/recipes/misc-chinese-hot-pepper-soup
-2. https://www.kitchentomytable.com/view_recipe_data.php?id=10221
+2. https://amuse-media.com/en/recipes/hulatang-recipe-henan-pepper-soup
 3. https://chinesecookingdemystified.substack.com/p/hot-pepper-soup
 
 **Различия и оговорки:** аутентичная техника может включать замешивание теста, вымывание клейковины и применение полученного крахмала; для домашней версии на двоих используем готовый пшеничный глютен и отдельный крахмал. Сохранены ключевые элементы хэнаньской версии: говядина, перечный насыщенный бульон, глютен и лапша.
