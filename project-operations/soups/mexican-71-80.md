@@ -18,7 +18,7 @@
 **Внешний вид:** Рубиново-красный бульон с крупной разбухшей белой кукурузой и свининой, тонкой свежей капустой и редисом.
 
 **Рецептурные источники для проверки:**
-1. https://www.mexicoinmykitchen.com/red-pozole-rojo/
+1. https://muybuenoblog.com/pozole-rojo/
 2. https://patijinich.com/es/pozole-rojo/
 3. https://www.rickbayless.com/recipe/slow-cooker-red-chile-pozole/
 
@@ -44,7 +44,7 @@
 **Внешний вид:** Насыщенный зелёный бульон с крупными белыми зернами хомини и кусочками курицы, без красного перца.
 
 **Рецептурные источники для проверки:**
-1. https://www.mexicoinmykitchen.com/green-pozole-soup-guerrero-style/
+1. https://muybuenoblog.com/chicken-pozole-verde/
 2. https://patijinich.com/you_know_you_want_it_green_pozole/
 3. https://www.isabeleats.com/chicken-pozole-verde/
 
@@ -124,7 +124,7 @@
 **Рецептурные источники для проверки:**
 1. https://www.mexicoinmykitchen.com/sopa-de-fideos-mexican-noodle-soup/
 2. https://www.saveur.com/article/Recipes/Mexico-Noodle-Soup/
-3. https://www.alecooks.com/how-to-make-sopa-de-fideo-mexican-fideo-soup/
+3. https://www.isabeleats.com/sopa-de-fideo/
 
 **Редакционное сравнение:** В отличие от супа с обычной пастой, сухую вермишель сначала подрумянивают в масле.
 
@@ -174,7 +174,7 @@
 **Внешний вид:** Прозрачный золотистый бульон, очень крупные куски мяса на кости и овощей, половинка кукурузного початка; не пюре.
 
 **Рецептурные источники для проверки:**
-1. https://www.mexicoinmykitchen.com/caldo-de-res-mexican-beef-soup/
+1. https://www.food.com/recipe/caldo-de-res-a-mexican-beef-vegetable-soup-223546
 2. https://www.muybuenoblog.com/caldo-de-res/
 3. https://www.isabeleats.com/caldo-de-res/
 
