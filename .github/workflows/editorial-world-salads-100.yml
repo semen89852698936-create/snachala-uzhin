@@ -4,6 +4,7 @@ on:
     paths:
       - 'data/editorial/salads/**'
       - 'scripts/check-world-salads-100.cjs'
+      - 'scripts/check-world-salads-release-readiness.cjs'
       - '.github/workflows/editorial-world-salads-100.yml'
   workflow_dispatch:
 jobs:
@@ -19,3 +20,5 @@ jobs:
           node-version: '20'
       - name: Check 100 editorial cards
         run: node scripts/check-world-salads-100.cjs
+      - name: Report publication readiness (non-blocking staging gate)
+        run: node scripts/check-world-salads-release-readiness.cjs
