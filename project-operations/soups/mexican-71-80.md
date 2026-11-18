@@ -123,7 +123,7 @@
 
 **Рецептурные источники для проверки:**
 1. https://www.mexicoinmykitchen.com/sopa-de-fideos-mexican-noodle-soup/
-2. https://patijinich.com/sopa-de-fideo/
+2. https://www.saveur.com/article/Recipes/Mexico-Noodle-Soup/
 3. https://www.simplyrecipes.com/sopa-de-fideo-recipe-5222067
 
 **Редакционное сравнение:** В отличие от супа с обычной пастой, сухую вермишель сначала подрумянивают в масле.
@@ -227,8 +227,8 @@
 
 **Рецептурные источники для проверки:**
 1. https://patijinich.com/tarascan-soup/
-2. https://www.mexicoinmykitchen.com/sopa-tarasca-michoacan-style-bean-soup/
-3. https://www.muybuenoblog.com/sopa-tarasca/
+2. https://www.pbs.org/food/recipes/sopa-tarasca
+3. https://www.mexicanrecipes.me/TarascanSoup.htm
 
 **Редакционное сравнение:** Тараска традиционно строится на фасоли, томатах и хрустящих тортильях. URL второго источника требует подтверждения.
 
