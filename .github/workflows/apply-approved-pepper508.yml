@@ -1,0 +1,56 @@
+name: Apply approved pepper photo 508
+on:
+  push:
+    branches: [release/approved-pepper-508-20261118]
+    paths:
+      - photo-import/0508-collection-vegetables-10-08.webp
+permissions:
+  contents: write
+jobs:
+  replace-approved-image:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - name: Validate and install exactly one approved WebP
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          import hashlib, re, shutil
+          src = Path('photo-import/0508-collection-vegetables-10-08.webp')
+          dst = Path('assets/recipes-ai/0508-collection-vegetables-10-08.webp')
+          register = Path('photo-library/ai-recipe-photo-map.json')
+          assert src.is_file(), 'Required WebP was not uploaded'
+          binary = src.read_bytes()
+          assert len(binary) >= 20000, 'Unreasonably small WebP; refuse replacement'
+          assert binary[:4] == b'RIFF' and binary[8:12] == b'WEBP', 'Uploaded file is not WebP'
+          sha = hashlib.sha1(binary).hexdigest()
+          assert dst.is_file() and register.is_file()
+          registry = register.read_text(encoding='utf-8')
+          pos = registry.index('"n": 508,')
+          end = registry.index('\n    }', pos)
+          entry = registry[pos:end]
+          assert '"recipe_id": "collection-vegetables-10-08"' in entry
+          assert '"path": "/assets/recipes-ai/0508-collection-vegetables-10-08.webp"' in entry
+          replaced_sha, a = re.subn(r'("sha": ")[a-f0-9]{40}',lambda m: m.group(1)+sha,entry)
+          replaced_size, b = re.subn(r'("bytes": )\d+',lambda m: m.group(1)+str(len(binary)),replaced_sha)
+          assert a == 1 and b == 1
+          shutil.copyfile(src, dst)
+          register.write_text(registry[:pos]+replaced_size+registry[end:],encoding='utf-8')
+          assert hashlib.sha1(dst.read_bytes()).hexdigest() == sha
+          print(f"Recipe 508 installed: {len(binary)} bytes, SHA1 {sha}")
+          PY
+      - name: Verify change scope
+        run: |
+          git diff --check
+          expected="$(printf '%s\n' 'assets/recipes-ai/0508-collection-vegetables-10-08.webp' 'photo-library/ai-recipe-photo-map.json')"
+          test "$(git diff --name-only | sort)" = "$expected"
+      - name: Commit updated photo and mapping
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add assets/recipes-ai/0508-collection-vegetables-10-08.webp photo-library/ai-recipe-photo-map.json
+          git commit -m 'photos(vegetables): publish owner-approved pepper with mustard and honey #508'
+          git push
