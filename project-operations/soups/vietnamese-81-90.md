@@ -18,8 +18,8 @@
 **Внешний вид:** Прозрачный тёмно-золотистый бульон, широкая рисовая лапша и тонкие ломтики говядины.
 
 **Источники для проверки:**
-1. https://www.hungryhuy.com/pho-recipe/
-2. https://vickypham.com/blog/authentic-vietnamese-beef-pho-noodle-soup/
+1. https://www.foodnetwork.com/recipes/beef-noodle-soup-with-rice-noodles-pho-bo-2105722
+2. https://vickypham.com/blog/vietnamese-beef-noodle-soup-pho-bo/
 3. https://theravenouscouple.com/2018/08/pho-bo-recipe-tips-and-techniques.html
 
 **Различия и редакционное решение:** Обязательны обожжённый лук и имбирь, прозрачный мясной бульон; URL отдельных источников требует точного подтверждения.
@@ -45,7 +45,7 @@
 
 **Источники для проверки:**
 1. https://www.hungryhuy.com/chicken-pho-recipe/
-2. https://vickypham.com/blog/instant-pot-pho-ga-vietnamese-chicken-noodle-soup/
+2. https://vickypham.com/blog/vietnamese-chicken-noodle-soup-pho-ga/
 3. https://www.seriouseats.com/pho-ga-vietnamese-chicken-noodle-soup-recipe
 
 **Различия и редакционное решение:** Куриный фо имеет менее плотный бульон и короче варится, чем фо бо.
@@ -175,7 +175,7 @@
 
 **Источники для проверки:**
 1. https://vickypham.com/blog/vietnamese-pork-seafood-noodle-soup-hu-tieu/
-2. https://www.hungryhuy.com/hu-tieu-recipe/
+2. https://www.vietworldkitchen.com/blog/2007/11/hu-tieu-nam-van.html
 3. https://www.vietnamesefood.com.vn/vietnamese-recipes/vietnamese-noodle-recipes/hu-tieu-nam-vang-recipe.html
 
 **Различия и редакционное решение:** Второй и третий URL требуют обязательной проверки открытием; до неё нельзя отметить независимое подтверждение.
@@ -227,8 +227,8 @@
 
 **Источники для проверки:**
 1. https://theravenouscouple.com/2012/08/canh-chua-vietnamese-sour-tamarind-soup.html
-2. https://vickypham.com/blog/vietnamese-sweet-and-sour-fish-soup-canh-chua-ca/
-3. https://www.hungryhuy.com/canh-chua-recipe/
+2. https://vickypham.com/blog/vietnamese-sour-catfish-soup-canh-chua/
+3. https://www.sbs.com.au/food/the-cook-up-with-adam-liaw/recipe/canh-chua-ca-vietnamese-sour-fish-soup/5itdhzdfp
 
 **Различия и редакционное решение:** Третий URL требует проверки. Ананас и тамаринд отличают блюдо от обычной ухи.
 
@@ -254,7 +254,7 @@
 **Источники для проверки:**
 1. https://www.hungryhuy.com/bitter-melon-soup-canh-kho-qua/
 2. https://delightfulplate.com/vietnamese-bitter-melon-soup-canh-kho-qua/
-3. https://vickypham.com/blog/vietnamese-stuffed-bitter-melon-soup-canh-kho-qua-nhoi-thit/
+3. https://vickypham.com/blog/stuffed-bitter-melon-soup/
 
 **Различия и редакционное решение:** Третий URL требует открытия, саму горькую дыню нельзя заменить огурцом.
 
