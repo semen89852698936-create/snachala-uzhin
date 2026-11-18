@@ -1131,10 +1131,10 @@
         "stage": "editorial_research",
         "sources": [
           "https://www.lacucinaitaliana.it/ricetta/antipasti/caprese/",
-          "https://www.cucchiaio.it/ricetta/insalata-caprese/",
+          "https://www.cucchiaio.it/ricetta/ricetta-caprese/",
           "https://blog.giallozafferano.it/studentiaifornelli/insalata-caprese-ricetta/"
         ],
-        "note": "Ингредиенты и техника сверены с региональной рецептурой; количества пересчитаны для двоих."
+        "note": "Ингредиенты и техника сверены с региональной рецептурой; количества пересчитаны для двоих.\nPrevious Cucchiaio /insalata-caprese currently contains zucchini, pumpkin seeds and bread; new page /ricetta-caprese matches mozzarella tomato basil, inspected 2026-11-19."
       },
       "photo": null,
       "imagePublishingBlocked": true,
@@ -1237,11 +1237,11 @@
       "sourceReview": {
         "stage": "editorial_research",
         "sources": [
-          "https://www.lacucinaitaliana.it/ricetta/contorni/panzanella/",
+          "https://www.lacucinaitaliana.it/ricetta/antipasti/panzanella-ricetta-classica/",
           "https://www.cucchiaio.it/ricetta/panzanella/",
           "https://blog.giallozafferano.it/pierobenigni/panzanella-toscana/"
         ],
-        "note": "Ингредиенты и техника сверены с региональной рецептурой; количества пересчитаны для двоих."
+        "note": "Ингредиенты и техника сверены с региональной рецептурой; количества пересчитаны для двоих.\nFormer La Cucina Italiana contorni/panzanella returned error. New La Cucina Italiana classical Panzanella page opened and lists bread, tomato, cucumber, basil, onion, vinegar. Its longer soak (~40–45 min) differs from our quick 5-minute soak: recipe remains shorter author interpretation and requires explicit label."
       },
       "photo": null,
       "imagePublishingBlocked": true,
@@ -1447,9 +1447,9 @@
         "sources": [
           "https://www.cucchiaio.it/ricetta/ricetta-insalata-di-polpo-con-patate/",
           "https://blog.giallozafferano.it/lemieloverie/ricetta-insalata-di-polpo-e-patate/",
-          "https://www.ilcuoreinpentola.it/ricette/antipasti/insalata-di-polpo-e-patate/"
+          "https://www.ilcuoreinpentola.it/ricette/ricette-delle-feste/insalata-di-polpo-e-patate/"
         ],
-        "note": "Подтверждено в трёх итальянских источниках: осьминог варится до мягкости и подаётся с отварным картофелем, лимоном, петрушкой и маслом."
+        "note": "Подтверждено в трёх итальянских источниках: осьминог варится до мягкости и подаётся с отварным картофелем, лимоном, петрушкой и маслом.\nFormer Il Cuore in Pentola antipasti path unavailable; new page opens and documents octopus potatoes parsley lemon oil."
       },
       "photo": null,
       "imagePublishingBlocked": true,
@@ -1548,9 +1548,9 @@
         "sources": [
           "https://www.lacucinaitaliana.it/ricetta/insalata-finocchi-arance-olive-nere/",
           "https://www.cucchiaio.it/ricetta/insalata-di-finocchi-e-arance/",
-          "https://www.giallozafferano.it/ricerca-ricette/insalata+finocchi+arance/"
+          "https://blog.giallozafferano.it/incucinaconmara/insalata-di-finocchi-arance-e-olive-nere/"
         ],
-        "note": "Ингредиенты и техника сверены с региональной рецептурой; количества пересчитаны для двоих."
+        "note": "Ингредиенты и техника сверены с региональной рецептурой; количества пересчитаны для двоих.\nFormer Giallozafferano search-results page not valid independent recipe; replaced with directly accessible Italian recipe fennel oranges black olives."
       },
       "photo": null,
       "imagePublishingBlocked": true,
