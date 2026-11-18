@@ -932,8 +932,8 @@
       "reviewStatus": "editorial_draft_requires_source_by_source_signoff",
       "researchLeads": [
         {
-          "url": "https://hazirbak.com/tarifler/salatalar-ve-mezeler",
-          "status": "source_to_crosscheck_not_three_source_verified"
+          "url": "https://vidarbergum.com/recipe/turkish-shepherd-salad-coban-salatasi/",
+          "status": "regional_recipe_reference_full_three_source_verification_pending"
         }
       ]
     },
@@ -2377,7 +2377,13 @@
       "warn": "Проверь аллергены и сроки хранения продуктов; соблюдай безопасную термообработку.",
       "photoBrief": "Изобразить только готовые компоненты блюда «Стручковая фасоль с лимоном» в соответствии с точной технологией, без постороннего декора и сырой еды, которая должна быть приготовлена.",
       "photoStatus": "pending_separate_photo",
-      "reviewStatus": "editorial_draft_requires_source_by_source_signoff"
+      "reviewStatus": "editorial_draft_requires_source_by_source_signoff",
+      "researchLeads": [
+        {
+          "url": "https://www.food.com/recipe/salatah-el-loobyea-lebanese-green-bean-salad-434359",
+          "status": "regional_recipe_reference_full_three_source_verification_pending"
+        }
+      ]
     },
     {
       "id": "world-salad-07-08",
