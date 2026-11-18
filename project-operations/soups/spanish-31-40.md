@@ -18,7 +18,7 @@
 **Как выглядит готовое блюдо:** Красная текучая томатная эмульсия, без густого хлебного крема; несколько мелких кубиков огурца и перца допустимы, не горка украшений.
 
 **Три независимых источника:**
-1. https://www.dia.es/recetas/receta/gazpacho-andaluz
+1. https://www.recetasderechupete.com/gazpacho-andaluz-una-receta-con-la-alegria-de-la-huerta-el-tomate/5701/
 2. https://www.elcorteingles.es/supermercado/recetas/gazpacho-andaluz-tradicional/
 3. https://www.foodnetwork.com/recipes/gazpacho-andaluz-recipe-1940356
 
@@ -97,7 +97,7 @@
 
 **Три независимых источника:**
 1. https://www.turismocastillalamancha.es/es/enogastronomia/raiz-culinaria/recetas/sopa-de-ajo-o-sopa-castellana
-2. https://www.dia.es/recetas/receta/sopa-de-ajo-castellana
+2. https://www.directoalpaladar.com/recetas-de-sopas-y-cremas/como-hacer-sopa-ajo-receta-sopa-castellana-tradicional/amp
 3. https://www.rtve.es/television/20230810/sopa-castellana-receta-origen-semana-santa/2453763.shtml
 
 **Сопоставление:** Яйцо и ветчина опциональны в старых бедных вариантах, но в современной подаче уместны.
@@ -150,7 +150,7 @@
 **Три независимых источника:**
 1. https://www.spain.info/en/recipe/porrusalda/
 2. https://www.bascofinefoods.com/spanish-recipes/porrusalda/
-3. https://www.dia.es/recetas/receta/porrusalda
+3. https://www.centrallecheraasturiana.es/recetas/porrusalda/
 
 **Сопоставление:** В источниках встречается тыква, но в базовой повседневной версии её можно опустить.
 
@@ -227,7 +227,7 @@
 
 **Три независимых источника:**
 1. https://www.spain.info/en/recipe/escudella-carn-olla-catalan-stew/
-2. https://www.dia.es/recetas/receta/escudella-catalana
+2. https://www.directoalpaladar.com/recetas-de-legumbres-y-verduras/receta-escudella-i-carn-dolla-reconfortante-plato-cuchara-catalan
 3. https://canalsalut.gencat.cat/ca/detalls/article/escudella-carn-olla
 
 **Сопоставление:** Эскуделья это первое блюдо из бульона, а carn d'olla мясное продолжение; время зависит от сухого нута.
@@ -253,7 +253,7 @@
 
 **Три независимых источника:**
 1. https://turismo.antequera.es/gastronomy/porra-antequerana/
-2. https://www.dia.es/recetas/receta/porra-antequerana-tradicional
+2. https://www.recetasderechupete.com/porra-antequerana-receta-andaluza/13456/
 3. https://vanavondkoken.nl/en/recipes/porra-antequerana
 
 **Сопоставление:** Зелёный перец является отличительным ингредиентом порры, но пропорции хлеба и масла в семьях меняются.
