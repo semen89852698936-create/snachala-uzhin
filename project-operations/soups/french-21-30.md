@@ -174,7 +174,7 @@
 **Как выглядит готовый суп:** Белый или оттенка слоновой кости шелковистый крем-суп, несколько небольших сваренных соцветий, никакой сырой капусты.
 
 **Независимые рецептурные источники:**
-1. https://www.foodnetwork.com/recipes/cauliflower-soup-creme-du-barry-recipe-1938087
+1. https://frenchcookingacademy.squarespace.com/recipes/potage-dubarry
 2. https://www.abc.net.au/news/2008-07-16/cream-of-cauliflower-soup/8929406
 3. https://www.toquata.fr/rcp-files/recette/creme-dubarry
 
