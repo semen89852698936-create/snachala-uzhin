@@ -228,7 +228,7 @@
 **Рецептурные источники для проверки:**
 1. https://patijinich.com/tarascan-soup/
 2. https://www.pbs.org/food/recipes/sopa-tarasca
-3. https://www.mexicanrecipes.me/TarascanSoup.htm
+3. https://soupwiki.com/soups/sopa-tarasca/
 
 **Редакционное сравнение:** Тараска традиционно строится на фасоли, томатах и хрустящих тортильях. URL второго источника требует подтверждения.
 
