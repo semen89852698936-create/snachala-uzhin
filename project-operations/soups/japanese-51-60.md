@@ -45,7 +45,7 @@
 
 **Ссылки для рецептурной сверки:**
 1. https://www.justonecookbook.com/shoyu-ramen/
-2. https://japanesecookbook.com/recipes/shoyu-ramen/
+2. https://japanesecooking101.com/ramen-recipe/
 3. https://www.chopstickchronicles.com/shoyu-ramen/
 
 **Различия и оговорки:** Третья рецептурная публикация — отдельная разработка Shoyu Ramen на Chopstick Chronicles с курино-соевым бульоном. Физическая готовка чашу не включена во время сборки.
@@ -254,7 +254,7 @@
 **Ссылки для рецептурной сверки:**
 1. https://www.maff.go.jp/e/policies/market/k_ryouri/search_menu/4019/index.html
 2. https://recipin.jp/en/recipes/hiyajiru
-3. https://kyoudo-ryouri.com/en/food/3334.html
+3. https://www.justonecookbook.com/cold-miso-soup/
 
 **Различия и оговорки:** Это местное блюдо Миядзаки, подаваемое на холодном рисе, а не просто обычный мисо-суп из холодильника.
 
