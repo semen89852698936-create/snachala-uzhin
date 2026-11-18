@@ -97,8 +97,8 @@
 
 **Рецептурные источники для проверки:**
 1. https://laroussecocina.mx/receta/caldo-tlalpeno/
-2. https://www.kiwilimon.com/receta/sopas/caldo-tlalpeno
-3. https://www.recetasnestle.com.mx/recetas/caldo-tlalpeno
+2. https://www.casademexico.es/noticia/receta/caldo-tlalpeno/
+3. https://canalcocina.es/receta/caldo-tlalpeno
 
 **Редакционное сравнение:** Чипотле и нут отличают кальдо тлальпеньо от обычного куриного супа. Указанные источники требуют финальной URL-проверки.
 
@@ -200,7 +200,7 @@
 **Внешний вид:** Красновато-золотистый бульон с отдельными круглыми фрикадельками, тонкими овощами и зеленью; рис заметен внутри готовых мясных шариков.
 
 **Рецептурные источники для проверки:**
-1. https://www.mexicoinmykitchen.com/mexican-meatball-soup-recipe/
+1. https://www.goodnes.com/maggi/recipes/albondigas-soup/
 2. https://www.isabeleats.com/albondigas-soup/
 3. https://www.onceuponachef.com/recipes/albondigas-soup-mexican-meatball-soup.html
 
@@ -228,7 +228,7 @@
 **Рецептурные источники для проверки:**
 1. https://patijinich.com/tarascan-soup/
 2. https://www.pbs.org/food/recipes/sopa-tarasca
-3. https://soupwiki.com/soups/sopa-tarasca/
+3. https://reto2024.gastro.org.mx/mexiterran/sopa-tarasca-michoacan-52
 
 **Редакционное сравнение:** Тараска традиционно строится на фасоли, томатах и хрустящих тортильях. URL второго источника требует подтверждения.
 
@@ -253,8 +253,8 @@
 
 **Рецептурные источники для проверки:**
 1. https://laroussecocina.mx/receta/chilpachole-de-jaiba/
-2. https://www.kiwilimon.com/receta/sopas/caldos/chilpachole-de-jaiba
-3. https://www.recetasnestle.com.mx/recetas/chilpachole-jaiba
+2. https://www.casademexico.es/noticia/receta/chilpachole-de-jaiba/
+3. https://elgourmet.com/recetas/chilpachole-de-jaiba/
 
 **Редакционное сравнение:** Кукурузная маса служит природным загустителем, а не пшеничная мука; чили допускается умеренный.
 
