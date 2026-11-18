@@ -227,7 +227,7 @@
 
 **Ссылки для рецептурной сверки:**
 1. https://www.justonecookbook.com/soba-noodle-soup/
-2. https://www.kikkoman.com/en/cookbook/glossary/soba.html
+2. https://kamadasoysauce.com/recipe/list/76
 3. https://www.japancentre.com/en/recipe/1613-kake-soba-hot-soba-noodle-soup
 
 **Различия и оговорки:** Kikkoman дает энциклопедическое пояснение, а не самостоятельный подробный рецепт: для соблюдения трёх рецептурных источников эта карточка требует дополнительной внешней замены третьей ссылки при повторной проверке.
