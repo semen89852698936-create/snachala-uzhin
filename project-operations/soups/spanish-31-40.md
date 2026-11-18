@@ -175,7 +175,7 @@
 
 **Три независимых источника:**
 1. https://canalcocina.es/receta/gazpachuelo-malagueno
-2. https://paradores.es/es/blog/las-recetas-de-paradores-gazpachuelo-malagueno
+2. https://malagagastronomyguide.com/en/gazpachuelo-2/
 3. https://mercadomalaga.es/en/recipes/fish/gazpachuelo-white-fish-soup/
 
 **Сопоставление:** Майонез эмульгируют отдельно, вводят вне огня; это принципиально не холодный гаспачо.
