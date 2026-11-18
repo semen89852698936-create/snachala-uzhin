@@ -530,12 +530,12 @@
         },
         {
           "title": "Отвари",
-          "detail": "Гобо и соломку моркови вари 5–7 минут до мягкости с сопротивлением, затем остуди.",
+          "detail": "Сначала отдельно отвари соломку моркови около 1 минуты, затем отдельно соломку гобо 2–5 минут до упругой мягкости, хорошенько обсуши.",
           "timer": 0
         },
         {
           "title": "Сделай соус",
-          "detail": "Разотри кунжут с майонезом, сахаром и соевым соусом.",
+          "detail": "Горячий гобо приправь рисовым уксусом, соевым соусом и сахаром, полностью остуди. Кунжут разотри в ступке, соедини с японским майонезом.",
           "timer": 0
         },
         {
@@ -555,11 +555,11 @@
       "sourceReview": {
         "stage": "editorial_research",
         "sources": [
+          "https://www.justonecookbook.com/gobo-salad-japanese-burdock-root-salad/",
           "https://www.kikkoman.com/en/cookbook/recipe/00000988.html",
-          "https://www.justonecookbook.com/burdock-root-salad/",
           "https://www.chopstickchronicles.com/gobo-salad/"
         ],
-        "note": "Источники, техника и 2 порции; для части блюд современная японская кухня"
+        "note": "Исправлена ссылка на Just One Cookbook и отдельная варка моркови и лопуха; сверка с действительными рецептами Just One Cookbook и Kikkoman."
       }
     },
     {
@@ -931,11 +931,11 @@
       "sourceReview": {
         "stage": "editorial_research",
         "sources": [
-          "https://yokoskitchen.com/cold-soba-noodle-salad/",
-          "https://www.kitchenpantri.com/recipes/soba-noodle-salad/index.html",
-          "https://www.justonecookbook.com/soba-noodle-salad/"
+          "https://japanesecooking101.com/soba-noodle-salad-recipe/",
+          "https://yutaka.london/recipes/sides/soba-noodle/",
+          "https://www.kikkoman.co.uk/food-service/recipes/detail/cold-soba-noodle-salad-with-sesame-dressing"
         ],
-        "note": "Источники, техника и 2 порции; для части блюд современная японская кухня"
+        "note": "Проверены японская рецептура и Yutaka с холодной промывкой соба, кунжутным соусом и свежими овощами."
       }
     }
   ]
