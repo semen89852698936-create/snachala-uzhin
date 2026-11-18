@@ -46,7 +46,7 @@
 **Рецептурные источники для проверки:**
 1. https://www.mexicoinmykitchen.com/green-pozole-soup-guerrero-style/
 2. https://patijinich.com/you_know_you_want_it_green_pozole/
-3. https://www.seriouseats.com/one-pot-pozole-verde-de-pollo-green-mexican-hominy-chicken-soup-recipe
+3. https://www.isabeleats.com/chicken-pozole-verde/
 
 **Редакционное сравнение:** В мексиканских регионах встречаются свиная и куриная версии; выбрана куриная, но не заменена кукуруза.
 
@@ -124,7 +124,7 @@
 **Рецептурные источники для проверки:**
 1. https://www.mexicoinmykitchen.com/sopa-de-fideos-mexican-noodle-soup/
 2. https://www.saveur.com/article/Recipes/Mexico-Noodle-Soup/
-3. https://www.simplyrecipes.com/sopa-de-fideo-recipe-5222067
+3. https://www.alecooks.com/how-to-make-sopa-de-fideo-mexican-fideo-soup/
 
 **Редакционное сравнение:** В отличие от супа с обычной пастой, сухую вермишель сначала подрумянивают в масле.
 
@@ -150,7 +150,7 @@
 **Рецептурные источники для проверки:**
 1. https://www.rickbayless.com/recipe/sopa-de-lima-clasica/
 2. https://patijinich.com/lima-soup/
-3. https://www.seriouseats.com/sopa-de-lima-yucatan-style-lime-soup-recipe
+3. https://yucatantoday.com/en/blog/recipe-sopa-de-lima
 
 **Редакционное сравнение:** Юкатанская лима ароматнее привычного лайма; здесь обычный лайм как доступная адаптация, отмечено в названии карточки.
 
@@ -202,7 +202,7 @@
 **Рецептурные источники для проверки:**
 1. https://www.mexicoinmykitchen.com/mexican-meatball-soup-recipe/
 2. https://www.isabeleats.com/albondigas-soup/
-3. https://www.muybuenoblog.com/albondigas-soup/
+3. https://www.simplyrecipes.com/recipes/albondigas_soup/
 
 **Редакционное сравнение:** Крупа добавляется в фарш, а не только в кастрюлю.
 
