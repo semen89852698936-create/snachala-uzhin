@@ -33,13 +33,13 @@ for(const [fname,start,end,cuisine] of chunks){
     const sec=file.slice(head[i].index,head[i+1]?.index??file.length);
     const links=[...sec.matchAll(/https:\/\/[^\s)\]<>]+/g)].map(m=>m[0].replace(/[.,;:]$/,''));
     const hosts=new Set(links.map(url=>url.slice(8).split('/')[0].replace(/^www\./,'')));
-    const numbered=[...sec.matchAll(/(?:^|\n)\s*\d+\.\s+\S/g)].length;
+    const cookingBody=sec.split(/\*\*(?:Для фотографии|Фото:|Внешний вид:|Как выглядит|Вид готового|Точный вид|Источники|Независимые рецептурные источники)/i)[0];\n    const numbered=[...cookingBody.matchAll(/(?:^|\\s)[1-9]\\d?\\.\\s+\\S/g)].length;
     if(no!==start+i)errors.push(fname+': wrong number '+no+' expected '+(start+i));
     if(links.length<3)errors.push('#'+no+': fewer than 3 source URLs');
     if(hosts.size<3)errors.push('#'+no+': fewer than 3 unique source domains');
     if(numbered<5)errors.push('#'+no+': fewer than 5 numbered cooking steps');
     if(!/На двоих|на двоих|2 порц/i.test(sec) && !/на двоих|На двоих/i.test(file.slice(0,head[0].index)))errors.push('#'+no+': no 2-portion mark');
-    if(!/ингредиент|понадобит|Что нужно|Что понадобится/i.test(sec))errors.push('#'+no+': no ingredient section');
+    if(!/ингредиент|понадобит|Что нужно|Что понадобится|Продукты/i.test(sec))errors.push('#'+no+': no ingredient section');
     if(!/внешн|фото|выгляд|вид блюда|вид готов/i.test(sec))errors.push('#'+no+': no appearance guidance');
     if(sec.length<650)errors.push('#'+no+': unusually short recipe');
     rows.push({number:no,cuisine,file:fname,steps:numbered,source_domains:hosts.size,source_urls:links.length,structural_check:'PASS',independent_page_review:'PENDING',multiple_photo_review:'PENDING',individual_photo:'PENDING',user_approval:'PENDING'});
