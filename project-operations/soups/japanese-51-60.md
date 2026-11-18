@@ -227,7 +227,7 @@
 
 **Ссылки для рецептурной сверки:**
 1. https://www.justonecookbook.com/soba-noodle-soup/
-2. https://kamadasoysauce.com/recipe/list/76
+2. https://1mal1japan.de/en/rezepte/kake-soba-soup-with-buckwheat-noodles-in-a-light-broth/
 3. https://justhungry.com/2003/12/toshikoshi_soba.html
 
 **Различия и оговорки:** Третий источник Japan Centre описывает самостоятельную рецептуру горячего какэ-соба; второй источник Kamada даёт альтернативный вариант заправки. Сверять концентрацию даси и соли по вкусу.
