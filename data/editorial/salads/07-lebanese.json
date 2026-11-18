@@ -586,10 +586,10 @@
         "stage": "editorial_research",
         "sources": [
           "https://periandsons.com/recipe.php?p=Lebanese+Potato+Salad+%28Salatet+Batata%29",
-          "https://www.talasoubra.com/lebanese-potato-salad",
-          "https://www.simplyleb.com/recipe/lebanese-potato-salad/"
+          "https://thelittleferrarokitchen.com/lebanese-potato-salad-with-sumac/",
+          "https://www.talasoubra.com/lebanese-potato-salad"
         ],
-        "note": "Фактическое соотношение ингредиентов на две порции, финальная проверка редактора требуется"
+        "note": "Ливанский картофельный салат с петрушкой, мятой, луком, лимоном, маслом, в источниках встречается сумах."
       }
     },
     {
@@ -638,6 +638,12 @@
           "amount": 0,
           "unit": "по вкусу",
           "group": "Основное"
+        },
+        {
+          "name": "Лук красный",
+          "amount": 40,
+          "unit": "г",
+          "group": "Основное"
         }
       ],
       "steps": [
@@ -653,12 +659,12 @@
         },
         {
           "title": "Разотри соус",
-          "detail": "Чеснок мелко натри, смешай с соком лимона и оливковым маслом.",
+          "detail": "Чеснок мелко натри, красный лук нарежь тонкими перьями, смешай с соком лимона и оливковым маслом.",
           "timer": 0
         },
         {
           "title": "Соедини",
-          "detail": "Заправь тёплую фасоль соусом, добавь мелко нарезанную петрушку, подавай слегка тёплой.",
+          "detail": "Заправь тёплую или остывшую фасоль соусом с луком, добавь мелко нарезанную петрушку и подай слегка тёплой или прохладной.",
           "timer": 0
         }
       ],
@@ -668,16 +674,16 @@
       "tags": [
         "Ливанская кухня"
       ],
-      "photoBrief": "Ярко-зелёные приготовленные стручки, немного мелкой петрушки и масляный блеск; не лубие би зейт с томатным соусом.",
+      "photoBrief": "Ярко-зелёные приготовленные стручки фасоли, немного прозрачных тонких перьев красного лука и очень мелкой петрушки, масляный блеск, никаких томатов и крупных кусков чеснока.",
       "photoStatus": "awaiting_original_photo_approval",
       "sourceReview": {
         "stage": "editorial_research",
         "sources": [
-          "https://bakukitchen.com/loubieh-bzeit/",
-          "https://www.tasteofbeirut.com/green-beans-with-lemon-and-garlic/",
-          "https://www.simplyleb.com/recipe/green-beans-with-lemon/"
+          "https://www.food.com/recipe/salatah-el-loobyea-lebanese-green-bean-salad-434359",
+          "https://www.astray.com/recipes/?show=Lebanese+green+bean+salad",
+          "https://abouteating.com/2020/08/06/comfort-food-from-lebanon/"
         ],
-        "note": "Фактическое соотношение ингредиентов на две порции, финальная проверка редактора требуется"
+        "note": "Удалена ссылка на иной рецепт loubieh bzeit (тушение фасоли с томатами); заменена на три источника холодного салата из зелёной фасоли с лимоном."
       }
     },
     {
@@ -892,12 +898,6 @@
           "group": "Основное"
         },
         {
-          "name": "Помидоры",
-          "amount": 130,
-          "unit": "г",
-          "group": "Основное"
-        },
-        {
           "name": "Лимонный сок",
           "amount": 30,
           "unit": "мл",
@@ -924,7 +924,7 @@
         },
         {
           "title": "Нарежь",
-          "detail": "Свежие помидоры нарежь мелким кубиком, молодой лук тонкими перьями.",
+          "detail": "Молодой лук нарежь очень тонкими перьями, присоли и слегка разотри, чтобы смягчить остроту; в этом варианте томаты не используются.",
           "timer": 0
         },
         {
@@ -934,7 +934,7 @@
         },
         {
           "title": "Соедини",
-          "detail": "Осторожно перемешай зелёный тимьян, томаты и лук с заправкой и подавай сразу.",
+          "detail": "Смешай свежий зелёный тимьян с мягким луком и лимонной заправкой, подай сразу, не заменяя свежие листья сухой смесью заатар.",
           "timer": 0
         }
       ],
@@ -944,16 +944,16 @@
       "tags": [
         "Ливанская кухня"
       ],
-      "photoBrief": "Небольшие мягкие свежие зелёные листья заатара, тонкий белый молодой лук и мелко нарезанные томаты в масле. Не сухая приправа и не букет древесных веток.",
+      "photoBrief": "Небольшая миска со свежими мягкими маленькими листиками заатара-тимьяна и тончайшими перьями молодого лука, лимонно-оливковый блеск. Без томатов и сухой приправы заатар.",
       "photoStatus": "awaiting_original_photo_approval",
       "sourceReview": {
         "stage": "editorial_research",
         "sources": [
-          "https://easylebanesefood.online/lebanese-zaatar-salad/",
-          "https://lebanesegarlicsauce.com/salatit-zaatar-akhdar-fresh-thyme-salad/",
-          "https://yourlebanon.com/salads/"
+          "https://yourlebanon.com/recipe/salatat-za3tar/",
+          "https://www.discoverlebanon.com/en/recipes/green_thyme_salad.php",
+          "https://lebanesegarlicsauce.com/salatit-zaatar-akhdar-fresh-thyme-salad/"
         ],
-        "note": "Фактическое соотношение ингредиентов на две порции, финальная проверка редактора требуется"
+        "note": "Следуем lebanese green thyme salad (zaatar akhdar): листья, лук, лимон, оливковое масло; помидоры убраны как нестандартная добавка."
       }
     }
   ]
