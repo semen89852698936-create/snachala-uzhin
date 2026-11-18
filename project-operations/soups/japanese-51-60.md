@@ -123,7 +123,7 @@
 
 **Ссылки для рецептурной сверки:**
 1. https://www.justonecookbook.com/tonjiru/
-2. https://www.japancentre.com/en/recipe/81-tonjiru-pork-soup
+2. https://japan.recipetineats.com/tonjiru-pork-and-vegetable-miso-soup/
 3. https://recipin.jp/en/recipes/tonjiru
 
 **Различия и оговорки:** Тондзиру содержит свинину в отличие от буддийского кэнтиндзиру; мисо в конце.
@@ -228,7 +228,7 @@
 **Ссылки для рецептурной сверки:**
 1. https://www.justonecookbook.com/soba-noodle-soup/
 2. https://kamadasoysauce.com/recipe/list/76
-3. https://www.japancentre.com/en/recipe/1613-kake-soba-hot-soba-noodle-soup
+3. https://justhungry.com/2003/12/toshikoshi_soba.html
 
 **Различия и оговорки:** Третий источник Japan Centre описывает самостоятельную рецептуру горячего какэ-соба; второй источник Kamada даёт альтернативный вариант заправки. Сверять концентрацию даси и соли по вкусу.
 
