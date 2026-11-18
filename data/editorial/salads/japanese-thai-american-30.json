@@ -1313,7 +1313,13 @@
       "warn": "Проверь аллергены и безопасную готовность мяса, рыбы, яиц и морепродуктов; не держи готовые салаты без охлаждения.",
       "photoBrief": "Самостоятельная реальная фотография только приготовленного блюда «Нам ток с говядиной» с ингредиентами рецепта, без случайного украшения.",
       "photoStatus": "pending_separate_photo",
-      "reviewStatus": "editorial_draft_requires_source_by_source_signoff"
+      "reviewStatus": "editorial_draft_requires_source_by_source_signoff",
+      "researchLeads": [
+        {
+          "url": "https://hot-thai-kitchen.com/nam-tok-neua/",
+          "status": "recipe_reference_further_sources_required"
+        }
+      ]
     },
     {
       "id": "world-salad-09-05",
@@ -2837,7 +2843,13 @@
       "warn": "Проверь аллергены и безопасную готовность мяса, рыбы, яиц и морепродуктов; не держи готовые салаты без охлаждения.",
       "photoBrief": "Самостоятельная реальная фотография только приготовленного блюда «Брокколи с беконом» с ингредиентами рецепта, без случайного украшения.",
       "photoStatus": "pending_separate_photo",
-      "reviewStatus": "editorial_draft_requires_source_by_source_signoff"
+      "reviewStatus": "editorial_draft_requires_source_by_source_signoff",
+      "researchLeads": [
+        {
+          "url": "https://www.foodnetwork.com/recipes/food-network-kitchen/broccoli-salad-with-bacon-9428954",
+          "status": "recipe_reference_further_sources_required"
+        }
+      ]
     },
     {
       "id": "world-salad-10-10",
