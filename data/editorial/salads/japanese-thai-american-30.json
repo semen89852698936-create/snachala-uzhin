@@ -81,7 +81,13 @@
       "warn": "Проверь аллергены и безопасную готовность мяса, рыбы, яиц и морепродуктов; не держи готовые салаты без охлаждения.",
       "photoBrief": "Самостоятельная реальная фотография только приготовленного блюда «Суномоно с огурцами» с ингредиентами рецепта, без случайного украшения.",
       "photoStatus": "pending_separate_photo",
-      "reviewStatus": "editorial_draft_requires_source_by_source_signoff"
+      "reviewStatus": "editorial_draft_requires_source_by_source_signoff",
+      "researchLeads": [
+        {
+          "url": "https://www.justonecookbook.com/sunomono-with-cucumber-and-wakame/",
+          "status": "recipe_reference_not_three_source_approved"
+        }
+      ]
     },
     {
       "id": "world-salad-08-02",
@@ -161,7 +167,13 @@
       "warn": "Проверь аллергены и безопасную готовность мяса, рыбы, яиц и морепродуктов; не держи готовые салаты без охлаждения.",
       "photoBrief": "Самостоятельная реальная фотография только приготовленного блюда «Вакаме с кунжутом» с ингредиентами рецепта, без случайного украшения.",
       "photoStatus": "pending_separate_photo",
-      "reviewStatus": "editorial_draft_requires_source_by_source_signoff"
+      "reviewStatus": "editorial_draft_requires_source_by_source_signoff",
+      "researchLeads": [
+        {
+          "url": "https://www.justonecookbook.com/spiralized-cucumber-salad/",
+          "status": "recipe_reference_not_three_source_approved"
+        }
+      ]
     },
     {
       "id": "world-salad-08-03",
@@ -235,7 +247,13 @@
       "warn": "Проверь аллергены и безопасную готовность мяса, рыбы, яиц и морепродуктов; не держи готовые салаты без охлаждения.",
       "photoBrief": "Самостоятельная реальная фотография только приготовленного блюда «Гома-аэ из шпината» с ингредиентами рецепта, без случайного украшения.",
       "photoStatus": "pending_separate_photo",
-      "reviewStatus": "editorial_draft_requires_source_by_source_signoff"
+      "reviewStatus": "editorial_draft_requires_source_by_source_signoff",
+      "researchLeads": [
+        {
+          "url": "https://www.justonecookbook.com/spinach-with-sesame-sauce/",
+          "status": "recipe_reference_not_three_source_approved"
+        }
+      ]
     },
     {
       "id": "world-salad-08-04",
@@ -321,7 +339,13 @@
       "warn": "Проверь аллергены и безопасную готовность мяса, рыбы, яиц и морепродуктов; не держи готовые салаты без охлаждения.",
       "photoBrief": "Самостоятельная реальная фотография только приготовленного блюда «Японский картофельный салат» с ингредиентами рецепта, без случайного украшения.",
       "photoStatus": "pending_separate_photo",
-      "reviewStatus": "editorial_draft_requires_source_by_source_signoff"
+      "reviewStatus": "editorial_draft_requires_source_by_source_signoff",
+      "researchLeads": [
+        {
+          "url": "https://www.justonecookbook.com/japanese-potato-salad/",
+          "status": "recipe_reference_not_three_source_approved"
+        }
+      ]
     },
     {
       "id": "world-salad-08-05",
@@ -419,7 +443,13 @@
       "warn": "Проверь аллергены и безопасную готовность мяса, рыбы, яиц и морепродуктов; не держи готовые салаты без охлаждения.",
       "photoBrief": "Самостоятельная реальная фотография только приготовленного блюда «Харусаме с прозрачной лапшой» с ингредиентами рецепта, без случайного украшения.",
       "photoStatus": "pending_separate_photo",
-      "reviewStatus": "editorial_draft_requires_source_by_source_signoff"
+      "reviewStatus": "editorial_draft_requires_source_by_source_signoff",
+      "researchLeads": [
+        {
+          "url": "https://www.justonecookbook.com/harusame-salad/",
+          "status": "recipe_reference_not_three_source_approved"
+        }
+      ]
     },
     {
       "id": "world-salad-08-06",
@@ -511,6 +541,12 @@
           "url": "https://www.justonecookbook.com/gobo-salad-japanese-burdock-root-salad/",
           "note": "Classic gobo salad, not kinpira vegetable saute."
         }
+      ],
+      "researchLeads": [
+        {
+          "url": "https://www.justonecookbook.com/gobo-salad-japanese-burdock-root-salad/",
+          "status": "recipe_reference_not_three_source_approved"
+        }
       ]
     },
     {
@@ -591,7 +627,13 @@
       "warn": "Проверь аллергены и безопасную готовность мяса, рыбы, яиц и морепродуктов; не держи готовые салаты без охлаждения.",
       "photoBrief": "Самостоятельная реальная фотография только приготовленного блюда «Сира-аэ с тофу и стручковой фасолью» с ингредиентами рецепта, без случайного украшения.",
       "photoStatus": "pending_separate_photo",
-      "reviewStatus": "editorial_draft_requires_source_by_source_signoff"
+      "reviewStatus": "editorial_draft_requires_source_by_source_signoff",
+      "researchLeads": [
+        {
+          "url": "https://www.justonecookbook.com/green-bean-shiraae/",
+          "status": "recipe_reference_not_three_source_approved"
+        }
+      ]
     },
     {
       "id": "world-salad-08-08",
@@ -671,7 +713,13 @@
       "warn": "Проверь аллергены и безопасную готовность мяса, рыбы, яиц и морепродуктов; не держи готовые салаты без охлаждения.",
       "photoBrief": "Самостоятельная реальная фотография только приготовленного блюда «Кабоча с тыквой» с ингредиентами рецепта, без случайного украшения.",
       "photoStatus": "pending_separate_photo",
-      "reviewStatus": "editorial_draft_requires_source_by_source_signoff"
+      "reviewStatus": "editorial_draft_requires_source_by_source_signoff",
+      "researchLeads": [
+        {
+          "url": "https://www.justonecookbook.com/kabocha-salad/",
+          "status": "recipe_reference_not_three_source_approved"
+        }
+      ]
     },
     {
       "id": "world-salad-08-09",
@@ -684,6 +732,12 @@
       "emoji": "🥗",
       "description": "Самостоятельный рецепт японская кухни для двоих",
       "ingredients": [
+        {
+          "name": "Салатный микс",
+          "amount": 120,
+          "unit": "г",
+          "group": "Основное"
+        },
         {
           "name": "Тофу шёлковый",
           "amount": 300,
@@ -723,7 +777,7 @@
         },
         {
           "title": "Приготовь основу",
-          "detail": "Раздели на две порции крупными ровными блоками",
+          "detail": "Вымой и обсуши салатный микс; раздели тофу на две порции крупными ровными блоками и положи поверх зелени.",
           "timer": 0
         },
         {
@@ -743,9 +797,15 @@
       ],
       "equipment": "Нож, доска, салатник и посуда для готовки",
       "warn": "Проверь аллергены и безопасную готовность мяса, рыбы, яиц и морепродуктов; не держи готовые салаты без охлаждения.",
-      "photoBrief": "Самостоятельная реальная фотография только приготовленного блюда «Тофу с кунжутным понзу» с ингредиентами рецепта, без случайного украшения.",
+      "photoBrief": "Свежие листья салата, сверху крупные холодные куски шёлкового тофу, немного зелёного лука, имбиря и кунжута; понзу в тонкой заправке.",
       "photoStatus": "pending_separate_photo",
-      "reviewStatus": "editorial_draft_requires_source_by_source_signoff"
+      "reviewStatus": "editorial_draft_requires_source_by_source_signoff",
+      "researchLeads": [
+        {
+          "url": "https://www.justonecookbook.com/tofu-salad-with-sesame-ponzu-dressing/",
+          "status": "recipe_reference_not_three_source_approved"
+        }
+      ]
     },
     {
       "id": "world-salad-08-10",
@@ -837,7 +897,13 @@
       "warn": "Проверь аллергены и безопасную готовность мяса, рыбы, яиц и морепродуктов; не держи готовые салаты без охлаждения.",
       "photoBrief": "Самостоятельная реальная фотография только приготовленного блюда «Салат с лапшой соба» с ингредиентами рецепта, без случайного украшения.",
       "photoStatus": "pending_separate_photo",
-      "reviewStatus": "editorial_draft_requires_source_by_source_signoff"
+      "reviewStatus": "editorial_draft_requires_source_by_source_signoff",
+      "researchLeads": [
+        {
+          "url": "https://www.kikkoman.co.uk/food-service/recipes/detail/cold-soba-noodle-salad-with-sesame-dressing",
+          "status": "recipe_reference_not_three_source_approved"
+        }
+      ]
     },
     {
       "id": "world-salad-09-01",
@@ -941,7 +1007,13 @@
       "warn": "Проверь аллергены и безопасную готовность мяса, рыбы, яиц и морепродуктов; не держи готовые салаты без охлаждения.",
       "photoBrief": "Самостоятельная реальная фотография только приготовленного блюда «Сом там из зелёной папайи» с ингредиентами рецепта, без случайного украшения.",
       "photoStatus": "pending_separate_photo",
-      "reviewStatus": "editorial_draft_requires_source_by_source_signoff"
+      "reviewStatus": "editorial_draft_requires_source_by_source_signoff",
+      "researchLeads": [
+        {
+          "url": "https://hot-thai-kitchen.com/papaya-salad-v3/",
+          "status": "recipe_reference_not_three_source_approved"
+        }
+      ]
     },
     {
       "id": "world-salad-09-02",
@@ -1045,7 +1117,13 @@
       "warn": "Проверь аллергены и безопасную готовность мяса, рыбы, яиц и морепродуктов; не держи готовые салаты без охлаждения.",
       "photoBrief": "Самостоятельная реальная фотография только приготовленного блюда «Ям вун сен с фунчозой» с ингредиентами рецепта, без случайного украшения.",
       "photoStatus": "pending_separate_photo",
-      "reviewStatus": "editorial_draft_requires_source_by_source_signoff"
+      "reviewStatus": "editorial_draft_requires_source_by_source_signoff",
+      "researchLeads": [
+        {
+          "url": "https://hot-thai-kitchen.com/glass-noodle-salad-v2/",
+          "status": "recipe_reference_not_three_source_approved"
+        }
+      ]
     },
     {
       "id": "world-salad-09-03",
@@ -1137,7 +1215,13 @@
       "warn": "Проверь аллергены и безопасную готовность мяса, рыбы, яиц и морепродуктов; не держи готовые салаты без охлаждения.",
       "photoBrief": "Самостоятельная реальная фотография только приготовленного блюда «Ларб му со свининой» с ингредиентами рецепта, без случайного украшения.",
       "photoStatus": "pending_separate_photo",
-      "reviewStatus": "editorial_draft_requires_source_by_source_signoff"
+      "reviewStatus": "editorial_draft_requires_source_by_source_signoff",
+      "researchLeads": [
+        {
+          "url": "https://hot-thai-kitchen.com/laab-moo/",
+          "status": "recipe_reference_not_three_source_approved"
+        }
+      ]
     },
     {
       "id": "world-salad-09-04",
@@ -1327,7 +1411,13 @@
       "warn": "Проверь аллергены и безопасную готовность мяса, рыбы, яиц и морепродуктов; не держи готовые салаты без охлаждения.",
       "photoBrief": "Самостоятельная реальная фотография только приготовленного блюда «Ям сом-о с помело» с ингредиентами рецепта, без случайного украшения.",
       "photoStatus": "pending_separate_photo",
-      "reviewStatus": "editorial_draft_requires_source_by_source_signoff"
+      "reviewStatus": "editorial_draft_requires_source_by_source_signoff",
+      "researchLeads": [
+        {
+          "url": "https://hot-thai-kitchen.com/yum-som-o/",
+          "status": "recipe_reference_not_three_source_approved"
+        }
+      ]
     },
     {
       "id": "world-salad-09-06",
@@ -1425,7 +1515,13 @@
       "warn": "Проверь аллергены и безопасную готовность мяса, рыбы, яиц и морепродуктов; не держи готовые салаты без охлаждения.",
       "photoBrief": "Самостоятельная реальная фотография только приготовленного блюда «Ям туа пу с крылатой фасолью» с ингредиентами рецепта, без случайного украшения.",
       "photoStatus": "pending_separate_photo",
-      "reviewStatus": "editorial_draft_requires_source_by_source_signoff"
+      "reviewStatus": "editorial_draft_requires_source_by_source_signoff",
+      "researchLeads": [
+        {
+          "url": "https://hot-thai-kitchen.com/wing-bean-salad/",
+          "status": "recipe_reference_not_three_source_approved"
+        }
+      ]
     },
     {
       "id": "world-salad-09-07",
@@ -1523,7 +1619,13 @@
       "warn": "Проверь аллергены и безопасную готовность мяса, рыбы, яиц и морепродуктов; не держи готовые салаты без охлаждения.",
       "photoBrief": "Самостоятельная реальная фотография только приготовленного блюда «Ям пла дук фу с хрустящей рыбой» с ингредиентами рецепта, без случайного украшения.",
       "photoStatus": "pending_separate_photo",
-      "reviewStatus": "editorial_draft_requires_source_by_source_signoff"
+      "reviewStatus": "editorial_draft_requires_source_by_source_signoff",
+      "researchLeads": [
+        {
+          "url": "https://hot-thai-kitchen.com/yum-pla-duk-foo/",
+          "status": "recipe_reference_not_three_source_approved"
+        }
+      ]
     },
     {
       "id": "world-salad-09-08",
@@ -1627,7 +1729,13 @@
       "warn": "Проверь аллергены и безопасную готовность мяса, рыбы, яиц и морепродуктов; не держи готовые салаты без охлаждения.",
       "photoBrief": "Самостоятельная реальная фотография только приготовленного блюда «Ям кай дао с жареным яйцом» с ингредиентами рецепта, без случайного украшения.",
       "photoStatus": "pending_separate_photo",
-      "reviewStatus": "editorial_draft_requires_source_by_source_signoff"
+      "reviewStatus": "editorial_draft_requires_source_by_source_signoff",
+      "researchLeads": [
+        {
+          "url": "https://hot-thai-kitchen.com/fried-egg-salad/",
+          "status": "recipe_reference_not_three_source_approved"
+        }
+      ]
     },
     {
       "id": "world-salad-09-09",
@@ -1719,7 +1827,13 @@
       "warn": "Проверь аллергены и безопасную готовность мяса, рыбы, яиц и морепродуктов; не держи готовые салаты без охлаждения.",
       "photoBrief": "Самостоятельная реальная фотография только приготовленного блюда «Ям мамуанг с зелёным манго» с ингредиентами рецепта, без случайного украшения.",
       "photoStatus": "pending_separate_photo",
-      "reviewStatus": "editorial_draft_requires_source_by_source_signoff"
+      "reviewStatus": "editorial_draft_requires_source_by_source_signoff",
+      "researchLeads": [
+        {
+          "url": "https://www.thaicookbook.tv/thai-recipes/salads/green-mango-salad-with-fresh-shrimp/",
+          "status": "recipe_reference_not_three_source_approved"
+        }
+      ]
     },
     {
       "id": "world-salad-09-10",
@@ -1835,6 +1949,12 @@
           "url": "https://hot-thai-kitchen.com/kao-yum/",
           "note": "Southern Thai khao yam traditionally uses sweet-salty nam budu dressing."
         }
+      ],
+      "researchLeads": [
+        {
+          "url": "https://hot-thai-kitchen.com/kao-yum/",
+          "status": "recipe_reference_not_three_source_approved"
+        }
       ]
     },
     {
@@ -1933,7 +2053,13 @@
       "warn": "Проверь аллергены и безопасную готовность мяса, рыбы, яиц и морепродуктов; не держи готовые салаты без охлаждения.",
       "photoBrief": "Самостоятельная реальная фотография только приготовленного блюда «Кобб с курицей и авокадо» с ингредиентами рецепта, без случайного украшения.",
       "photoStatus": "pending_separate_photo",
-      "reviewStatus": "editorial_draft_requires_source_by_source_signoff"
+      "reviewStatus": "editorial_draft_requires_source_by_source_signoff",
+      "researchLeads": [
+        {
+          "url": "https://www.foodnetwork.com/recipes/food-network-kitchen/cobb-salad-recipe-2011573",
+          "status": "recipe_reference_not_three_source_approved"
+        }
+      ]
     },
     {
       "id": "world-salad-10-02",
@@ -2019,7 +2145,13 @@
       "warn": "Проверь аллергены и безопасную готовность мяса, рыбы, яиц и морепродуктов; не держи готовые салаты без охлаждения.",
       "photoBrief": "Самостоятельная реальная фотография только приготовленного блюда «Вальдорф с яблоком и сельдереем» с ингредиентами рецепта, без случайного украшения.",
       "photoStatus": "pending_separate_photo",
-      "reviewStatus": "editorial_draft_requires_source_by_source_signoff"
+      "reviewStatus": "editorial_draft_requires_source_by_source_signoff",
+      "researchLeads": [
+        {
+          "url": "https://www.thekitchn.com/waldorf-salad-recipe-23215387",
+          "status": "recipe_reference_not_three_source_approved"
+        }
+      ]
     },
     {
       "id": "world-salad-10-03",
@@ -2117,7 +2249,13 @@
       "warn": "Проверь аллергены и безопасную готовность мяса, рыбы, яиц и морепродуктов; не держи готовые салаты без охлаждения.",
       "photoBrief": "Самостоятельная реальная фотография только приготовленного блюда «Шеф-салат с ветчиной и сыром» с ингредиентами рецепта, без случайного украшения.",
       "photoStatus": "pending_separate_photo",
-      "reviewStatus": "editorial_draft_requires_source_by_source_signoff"
+      "reviewStatus": "editorial_draft_requires_source_by_source_signoff",
+      "researchLeads": [
+        {
+          "url": "https://www.foodnetwork.com/recipes/food-network-kitchen/chefs-salad-recipe-2011625",
+          "status": "recipe_reference_not_three_source_approved"
+        }
+      ]
     },
     {
       "id": "world-salad-10-04",
@@ -2209,7 +2347,13 @@
       "warn": "Проверь аллергены и безопасную готовность мяса, рыбы, яиц и морепродуктов; не держи готовые салаты без охлаждения.",
       "photoBrief": "Самостоятельная реальная фотография только приготовленного блюда «Ведж с айсбергом и голубым сыром» с ингредиентами рецепта, без случайного украшения.",
       "photoStatus": "pending_separate_photo",
-      "reviewStatus": "editorial_draft_requires_source_by_source_signoff"
+      "reviewStatus": "editorial_draft_requires_source_by_source_signoff",
+      "researchLeads": [
+        {
+          "url": "https://www.foodnetwork.com/recipes/wedge-salad-with-crispy-bacon-and-blue-cheese-dressing-5352721",
+          "status": "recipe_reference_not_three_source_approved"
+        }
+      ]
     },
     {
       "id": "world-salad-10-05",
@@ -2295,7 +2439,13 @@
       "warn": "Проверь аллергены и безопасную готовность мяса, рыбы, яиц и морепродуктов; не держи готовые салаты без охлаждения.",
       "photoBrief": "Самостоятельная реальная фотография только приготовленного блюда «Коул-слоу» с ингредиентами рецепта, без случайного украшения.",
       "photoStatus": "pending_separate_photo",
-      "reviewStatus": "editorial_draft_requires_source_by_source_signoff"
+      "reviewStatus": "editorial_draft_requires_source_by_source_signoff",
+      "researchLeads": [
+        {
+          "url": "https://www.bonappetit.com/recipe/classic-coleslaw",
+          "status": "recipe_reference_not_three_source_approved"
+        }
+      ]
     },
     {
       "id": "world-salad-10-06",
@@ -2387,7 +2537,13 @@
       "warn": "Проверь аллергены и безопасную готовность мяса, рыбы, яиц и морепродуктов; не держи готовые салаты без охлаждения.",
       "photoBrief": "Самостоятельная реальная фотография только приготовленного блюда «Макаронный салат» с ингредиентами рецепта, без случайного украшения.",
       "photoStatus": "pending_separate_photo",
-      "reviewStatus": "editorial_draft_requires_source_by_source_signoff"
+      "reviewStatus": "editorial_draft_requires_source_by_source_signoff",
+      "researchLeads": [
+        {
+          "url": "https://www.foodnetwork.com/recipes/food-network-kitchen/american-macaroni-salad-recipe-2011554",
+          "status": "recipe_reference_not_three_source_approved"
+        }
+      ]
     },
     {
       "id": "world-salad-10-07",
@@ -2479,7 +2635,13 @@
       "warn": "Проверь аллергены и безопасную готовность мяса, рыбы, яиц и морепродуктов; не держи готовые салаты без охлаждения.",
       "photoBrief": "Самостоятельная реальная фотография только приготовленного блюда «Американский картофельный салат» с ингредиентами рецепта, без случайного украшения.",
       "photoStatus": "pending_separate_photo",
-      "reviewStatus": "editorial_draft_requires_source_by_source_signoff"
+      "reviewStatus": "editorial_draft_requires_source_by_source_signoff",
+      "researchLeads": [
+        {
+          "url": "https://www.foodnetwork.com/recipes/food-network-kitchen/classic-american-potato-salad-3721396",
+          "status": "recipe_reference_not_three_source_approved"
+        }
+      ]
     },
     {
       "id": "world-salad-10-08",
@@ -2577,7 +2739,13 @@
       "warn": "Проверь аллергены и безопасную готовность мяса, рыбы, яиц и морепродуктов; не держи готовые салаты без охлаждения.",
       "photoBrief": "Самостоятельная реальная фотография только приготовленного блюда «Семислойный салат» с ингредиентами рецепта, без случайного украшения.",
       "photoStatus": "pending_separate_photo",
-      "reviewStatus": "editorial_draft_requires_source_by_source_signoff"
+      "reviewStatus": "editorial_draft_requires_source_by_source_signoff",
+      "researchLeads": [
+        {
+          "url": "https://www.thekitchn.com/old-school-practicality-the-se-89814",
+          "status": "recipe_reference_not_three_source_approved"
+        }
+      ]
     },
     {
       "id": "world-salad-10-09",
@@ -2773,7 +2941,13 @@
       "warn": "Проверь аллергены и безопасную готовность мяса, рыбы, яиц и морепродуктов; не держи готовые салаты без охлаждения.",
       "photoBrief": "Самостоятельная реальная фотография только приготовленного блюда «Луи с креветками» с ингредиентами рецепта, без случайного украшения.",
       "photoStatus": "pending_separate_photo",
-      "reviewStatus": "editorial_draft_requires_source_by_source_signoff"
+      "reviewStatus": "editorial_draft_requires_source_by_source_signoff",
+      "researchLeads": [
+        {
+          "url": "https://www.foodnetwork.com/recipes/shrimp-louie-salad-11880824",
+          "status": "recipe_reference_not_three_source_approved"
+        }
+      ]
     }
   ]
 }
