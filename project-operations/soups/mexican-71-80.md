@@ -72,7 +72,7 @@
 **Рецептурные источники для проверки:**
 1. https://www.rickbayless.com/recipe/tortilla-soup/
 2. https://patijinich.com/es/sopa-de-tortilla/
-3. https://www.mexicoinmykitchen.com/tortilla-soup-recipe/
+3. https://laroussecocina.mx/receta/sopa-de-tortilla/
 
 **Редакционное сравнение:** Тортильи должны оставаться хрустящими при подаче, не готовь их заранее в супе.
 
@@ -96,7 +96,7 @@
 **Внешний вид:** Золотисто-красноватый суп с нутом, курицей, морковью, зелёной фасолью, небольшой порцией авокадо и заметным чипотле.
 
 **Рецептурные источники для проверки:**
-1. https://www.mexicoinmykitchen.com/caldo-tlalpeno-recipe/
+1. https://laroussecocina.mx/receta/caldo-tlalpeno/
 2. https://www.kiwilimon.com/receta/sopas/caldo-tlalpeno
 3. https://www.recetasnestle.com.mx/recetas/caldo-tlalpeno
 
@@ -122,7 +122,7 @@
 **Внешний вид:** Красноватый жидкий томатный бульон с очень тонкими короткими нитями вермишели, не густая паста под соусом.
 
 **Рецептурные источники для проверки:**
-1. https://www.mexicoinmykitchen.com/sopa-de-fideos-mexican-noodle-soup/
+1. https://www.foodandwine.com/sopa-de-fideo-8769015
 2. https://www.saveur.com/article/Recipes/Mexico-Noodle-Soup/
 3. https://www.isabeleats.com/sopa-de-fideo/
 
