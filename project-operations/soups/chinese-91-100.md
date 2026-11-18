@@ -97,7 +97,7 @@
 
 **Источники для дальнейшей сверки:**
 1. https://thewoksoflife.com/winter-melon-soup-pork-ribs/
-2. https://simplechinesefood.com/recipe/winter-melon-pork-ribs-soup-203356
+2. https://dailycookingquest.com/winter-melon-soup.html
 3. https://www.chinasichuanfood.com/winter-melon-soup/
 
 **Отличия региональных вариантов и выбор редакции:** Зимняя дыня это Benincasa hispida, не обычная сладкая дыня.
