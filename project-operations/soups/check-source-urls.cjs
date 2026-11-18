@@ -25,8 +25,8 @@ const ct=r.headers.get('content-type')||'';
 let body='';
 if(/html|text/i.test(ct)) body=(await r.text()).slice(0,160000);
 const title=(body.match(/<title[^>]*>([\s\S]*?)<\/title>/i)||[])[1]||'';
-const status=r.status, blocking=/captcha|verify you are human|access denied|just a moment|cloudflare|robot|request blocked/i.test((title+' '+body.slice(0,4000)).toLowerCase());
-return {...item,http_status:status,final_url:r.url,title:norm(title).slice(0,160),bytes:body.length,verdict:status===404||status===410?'NOT_FOUND':blocking||status===403||status===429?'ACCESS_BLOCKED':status>=500?'SERVER_ERROR':r.ok&&body.length>300?'FETCHED_UNREVIEWED':r.ok?'EMPTY_OR_NONHTML':'HTTP_ERROR'};
+const status=r.status, blocking=/captcha|verify you are human|access denied|just a moment|ddos.guard|request blocked/i.test(title.toLowerCase()) || (body.length<10000 && /verify you are human|access denied|captcha|cloudflare/i.test(body.slice(0,2500)));
+return {...item,http_status:status,final_url:r.url,title:norm(title).slice(0,160),bytes:body.length,has_recipe_schema:/recipeIngredient|recipeInstructions|wprm-recipe|tasty-recipes|recipe_card|recipe-card/i.test(body),verdict:status===404||status===410?'NOT_FOUND':blocking||status===403||status===429?'ACCESS_BLOCKED':status>=500?'SERVER_ERROR':r.ok&&body.length>300?'FETCHED_UNREVIEWED':r.ok?'EMPTY_OR_NONHTML':'HTTP_ERROR'};
 }catch(e){return {...item,http_status:null,title:'',verdict:e.name==='AbortError'?'TIMEOUT':'NETWORK_ERROR',error:String(e).slice(0,140)}}finally{clearTimeout(t)}
 }
 const results=Array(jobs.length);let next=0;const workers=Array.from({length:14},async()=>{while(next<jobs.length){const i=next++; results[i]=await check(jobs[i]);}});
