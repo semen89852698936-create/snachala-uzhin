@@ -124,7 +124,7 @@
 **Три независимых рецептурных источника:**
 1. https://www.ktb.gov.tr/EN-99044/tripe-soup.html
 2. https://zaffaron.com/recipe/tripe-soup-iskembe-corbasi
-3. https://www.turkish-cuisine.org/ingredients-7/ingredients-used-in-turkish-cuisine-66/historical-development-1/republic-period-177/ingredients-7/ingredients-unique-to-turkish-cuisine-68/recipes-5/soups-108.html
+3. https://cookwitherica.com/2018/02/15/iskembe-corbasi-turkish-tripe-soup/
 
 **Различия вариантов и выбор редакции:** Есть кислые и молочные версии, выбран мягкий суп с рубцом и отдельным чесночным уксусом.
 
