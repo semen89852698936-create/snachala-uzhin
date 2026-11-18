@@ -455,11 +455,11 @@
       "sourceReview": {
         "stage": "editorial_research",
         "sources": [
-          "https://www.dia.es/recetas/receta/empedrat",
-          "https://www.catalunya.com/es/continguts/article/empedrada-26-1-1",
-          "https://www.cocinatelotu.es/receta/empedrat-catalan-de-alubias-y-bacalao-496"
+          "https://www.catalunya.com/en/continguts/article/empedrat-26-1-1",
+          "https://www.gastroteca.cat/en/receptes/empedrat/",
+          "https://www.dia.es/recetas/receta/empedrat"
         ],
-        "note": "Пропорции пересчитаны для двух порций"
+        "note": "Empedrat подтверждён официальным Catalunya.com и Corpus de la Cuina Catalana на Gastroteca: отварная белая фасоль, вымоченная треска, томаты, лук, оливки, масло."
       }
     },
     {
@@ -667,11 +667,11 @@
       "sourceReview": {
         "stage": "editorial_research",
         "sources": [
-          "https://www.viladecans.cat/ca/recepta-esqueixada-de-bacalla",
-          "https://www.mercatdelmasnou.cat/esqueixada-de-bacalla/",
+          "https://www.spain.info/es/receta/esqueixada-bacalao/",
+          "https://www.viladecans.cat/es/recepta-esqueixada-de-bacalla",
           "https://www.bonviveur.es/recetas/esqueixada-de-bacalao"
         ],
-        "note": "Пропорции пересчитаны для двух порций"
+        "note": "Классическая esqueixada соответствует испанскому туристическому порталу и муниципальному рецепту Viladecans; треску разрывают на волокна, подают с сырой нарезкой овощей."
       }
     },
     {
