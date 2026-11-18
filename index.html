@@ -1493,7 +1493,7 @@ function renderRecipes(){
  $('pantryControls').hidden=!state.pantryMode;
  $('pantrySummary').textContent=matches?((matches.length&&!matches.some(entry=>entry.available===parts.length)?'Рецептов со всеми введёнными продуктами пока нет. Ниже варианты с частью продуктов. · ':'')+'Можно приготовить: '+matches.filter(entry=>!entry.missing.length&&entry.available===parts.length).length+' · Не хватает 1–2 продуктов: '+matches.filter(entry=>entry.missing.length>0).length):'Введи продукты через запятую. Мы покажем, что можно приготовить и что докупить.';
  $('resultCount').textContent=countLabel(items.length,['рецепт','рецепта','рецептов']);
- const more=$('loadMoreRecipes');more.hidden=items.length<=visibleLimit;more.textContent='Показать ещё '+Math.min(PAGE_SIZE,Math.max(0,items.length-visibleLimit))+' рецептов ↓';
+ const more=$('loadMoreRecipes');more.hidden=items.length<=visibleLimit;more.textContent='Показать ещё '+countLabel(Math.min(PAGE_SIZE,Math.max(0,items.length-visibleLimit)),['рецепт','рецепта','рецептов'])+' ↓';
  $('emptyState').hidden=items.length>0;
  $('recipeGrid').innerHTML=items.slice(0,visibleLimit).map((r,index)=>{
    const missing=missingById.get(r.id),isPantry=Boolean(matches);
