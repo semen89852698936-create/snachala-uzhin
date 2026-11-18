@@ -19,6 +19,14 @@ jobs:
         run: node project-operations/soups/verify-world-json.cjs
       - name: Cross-check Markdown references and compiled structured recipe data
         run: node project-operations/soups/verify-world-consistency.cjs
+      - name: Build standalone 100-soup editorial preview
+        run: node project-operations/soups/build-world-100.cjs
+      - name: Upload the 100-soup HTML preview
+        uses: actions/upload-artifact@v4
+        with:
+          name: world-100-soups-editorial-preview
+          path: project-operations/soups/dist/index.html
+          if-no-files-found: error
       - name: Upload structural QA report (does not verify URLs or photos)
         if: always()
         uses: actions/upload-artifact@v4
