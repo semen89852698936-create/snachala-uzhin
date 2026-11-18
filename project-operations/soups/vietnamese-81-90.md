@@ -18,7 +18,7 @@
 **Внешний вид:** Прозрачный тёмно-золотистый бульон, широкая рисовая лапша и тонкие ломтики говядины.
 
 **Источники для проверки:**
-1. https://www.foodnetwork.com/recipes/beef-noodle-soup-with-rice-noodles-pho-bo-2105722
+1. https://archive.jamesbeard.org/recipes/pho-bo-beef-noodle-soup
 2. https://vickypham.com/blog/vietnamese-beef-noodle-soup-pho-bo/
 3. https://www.recipetineats.com/vietnamese-pho-recipe/
 
