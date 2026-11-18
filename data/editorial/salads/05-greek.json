@@ -508,6 +508,12 @@
           "amount": 2,
           "unit": "г",
           "group": "Основное"
+        },
+        {
+          "name": "Укроп свежий",
+          "amount": 10,
+          "unit": "г",
+          "group": "Основное"
         }
       ],
       "steps": [
@@ -518,7 +524,7 @@
         },
         {
           "title": "Нарежь",
-          "detail": "Очисти картофель и нарежь крупными кубиками, лук тонкими полукольцами, петрушку мелко.",
+          "detail": "Красный лук нарежь очень тонкими полукольцами, свежую петрушку и укроп мелко поруби, зелёный лук нарежь кольцами.",
           "timer": 0
         },
         {
@@ -528,7 +534,7 @@
         },
         {
           "title": "Заправь тёплым",
-          "detail": "Перемешай ещё тёплый картофель с зеленью и соусом, дай 5 минут впитать вкус.",
+          "detail": "Ещё тёплый картофель осторожно смешай с луком, рублеными укропом и петрушкой и лимонно-оливковой заправкой. Дай 5 минут впитать вкус, подай без майонеза.",
           "timer": 0
         }
       ],
@@ -543,11 +549,11 @@
       "sourceReview": {
         "stage": "editorial_research",
         "sources": [
-          "https://akispetretzikis.com/en/recipe/patatosalata",
-          "https://www.dianekochilas.com/potato-salad-greek-style/",
-          "https://www.olivetomato.com/greek-potato-salad/"
+          "https://tarasmulticulturaltable.com/patatosalata-herby-potato-salad/",
+          "https://www.athensfoodonfoot.com/recipes/greek-lemon-herb-potato-salad-patatosalata/",
+          "https://www.epikouria.com/recipes/patatosalata/"
         ],
-        "note": "Технология и состав адаптированы для двух порций"
+        "note": "Три рецепта Greek patatosalata без майонеза, с зеленью, луком, лимоном и оливковым маслом; добавлен укроп, подтвержденный рецептурными источниками."
       }
     },
     {
