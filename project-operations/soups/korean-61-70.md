@@ -72,7 +72,7 @@
 **Три внешних рецептурных источника:**
 1. https://www.maangchi.com/recipe/seolleongtang
 2. https://www.koreanbapsang.com/seolleongtang-beef-bone-soup/
-3. https://www.beyondkimchee.com/easy-seolleongtang-ox-bone-soup/
+3. https://www.beyondkimchee.com/seolleongtang-ox-bone-soup/
 
 **Рецептурные различия:** Насыщенный цвет возникает от долгой варки костей, молоко и сливки не используются.
 
@@ -124,7 +124,7 @@
 **Три внешних рецептурных источника:**
 1. https://www.koreanbapsang.com/miyeok-guk-beef-seaweed-soup/
 2. https://mykoreankitchen.com/korean-seaweed-soup-miyeok-guk/
-3. https://www.beyondkimchee.com/korean-seaweed-soup-miyeokguk/
+3. https://www.beyondkimchee.com/beef-seaweed-soup/
 
 **Рецептурные различия:** Количество сухих водорослей небольшое, после замачивания они сильно увеличиваются.
 
@@ -176,7 +176,7 @@
 **Три внешних рецептурных источника:**
 1. https://www.maangchi.com/recipe/kimchi-jjigae
 2. https://www.koreanbapsang.com/kimchi-jjigae-kimchi-stew/
-3. https://www.beyondkimchee.com/kimchi-jjigae-with-pork/
+3. https://www.beyondkimchee.com/kimchi-jjigae/
 
 **Рецептурные различия:** Кимчи желательно зрелое кислое; свежая капуста не даст нужной основы.
 
@@ -228,7 +228,7 @@
 **Три внешних рецептурных источника:**
 1. https://www.maangchi.com/recipe/gamjatang
 2. https://www.koreanbapsang.com/gamjatang-spicy-pork-bone-stew/
-3. https://www.beyondkimchee.com/gamjatang-korean-pork-bone-soup/
+3. https://seonkyounglongest.com/gamjatang/
 
 **Рецептурные различия:** Базовый вкус дают именно свиные кости и листья периллы. Последний URL требует перепроверки, поскольку в поиске подтверждена только категория.
 
@@ -253,7 +253,7 @@
 
 **Три внешних рецептурных источника:**
 1. https://www.maangchi.com/recipe/doenjang-jjigae
-2. https://www.koreanbapsang.com/doenjang-jjigae-korean-soy-bean-paste-stew/
+2. https://www.koreanbapsang.com/doenjang-jjigae-korean-soy-bean-paste/
 3. https://www.beyondkimchee.com/doenjang-jjigae/
 
 **Рецептурные различия:** Твенджан темнее и грубее японского мисо; не заменять без маркировки адаптации.
