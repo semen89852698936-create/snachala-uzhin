@@ -20,7 +20,7 @@
 **Источники для дальнейшей сверки:**
 1. https://thewoksoflife.com/shanghai-wonton-soup/
 2. https://omnivorescookbook.com/wonton-soup/
-3. https://www.madewithlau.com/recipes/wonton-soup
+3. https://www.justonecookbook.com/shrimp-pork-wonton/
 
 **Отличия региональных вариантов и выбор редакции:** Вонтоны отвариваются отдельно для прозрачности бульона; начинка полностью готова, когда перестаёт быть розовой.
 
@@ -97,7 +97,7 @@
 
 **Источники для дальнейшей сверки:**
 1. https://thewoksoflife.com/winter-melon-soup-pork-ribs/
-2. https://omnivorescookbook.com/winter-melon-soup/
+2. https://haoweirecipes.com/en/recipes/winter-melon-soup
 3. https://www.chinasichuanfood.com/winter-melon-soup/
 
 **Отличия региональных вариантов и выбор редакции:** Зимняя дыня это Benincasa hispida, не обычная сладкая дыня.
@@ -124,7 +124,7 @@
 **Источники для дальнейшей сверки:**
 1. https://www.madewithlau.com/recipes/chicken-corn-soup
 2. https://thewoksoflife.com/chicken-corn-egg-drop-soup/
-3. https://omnivorescookbook.com/chicken-corn-soup/
+3. https://omnivorescookbook.com/chinese-corn-soup/
 
 **Отличия региональных вариантов и выбор редакции:** Кантонская версия часто готовится с яйцом и курицей, но кукуруза остаётся видимой.
 
@@ -228,7 +228,7 @@
 **Источники для дальнейшей сверки:**
 1. https://thewoksoflife.com/red-vegetable-soup-shanghai-luo-song-tang/
 2. https://www.madewithlau.com/recipes/cantonese-borscht-soup
-3. https://www.chinasichuanfood.com/luo-song-tang/
+3. https://www.osmancho.com/en/recipes/oz-siresinde-mal-eti-sorbasi-luosong-tang
 
 **Отличия региональных вариантов и выбор редакции:** Лосунтан имеет европейское происхождение, но китайскую переработанную технологию без свёклы. Третий URL требует проверки.
 
@@ -254,7 +254,7 @@
 **Источники для дальнейшей сверки:**
 1. https://thewoksoflife.com/chinese-watercress-soup-pork/
 2. https://www.chinasichuanfood.com/watercress-soup/
-3. https://www.madewithlau.com/recipes/watercress-soup
+3. https://souperdiaries.com/watercress-with-pork-ribs-soup/
 
 **Отличия региональных вариантов и выбор редакции:** Третий URL нуждается в подтверждении. Важна долгокипящая кантонская технология и настоящий водяной кресс.
 
