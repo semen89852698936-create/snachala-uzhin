@@ -15,6 +15,8 @@ jobs:
           node-version: '22'
       - name: Validate 100 recipe cards, portions, steps and distinct source domains
         run: node project-operations/soups/verify-world-100.cjs
+      - name: Validate compiled JSON assembly of 100 recipes
+        run: node project-operations/soups/verify-world-json.cjs
       - name: Upload structural QA report (does not verify URLs or photos)
         if: always()
         uses: actions/upload-artifact@v4
