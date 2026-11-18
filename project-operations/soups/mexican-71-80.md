@@ -202,7 +202,7 @@
 **Рецептурные источники для проверки:**
 1. https://www.mexicoinmykitchen.com/mexican-meatball-soup-recipe/
 2. https://www.isabeleats.com/albondigas-soup/
-3. https://www.simplyrecipes.com/recipes/albondigas_soup/
+3. https://www.onceuponachef.com/recipes/albondigas-soup-mexican-meatball-soup.html
 
 **Редакционное сравнение:** Крупа добавляется в фарш, а не только в кастрюлю.
 
