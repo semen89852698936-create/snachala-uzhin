@@ -95,7 +95,13 @@
       "warn": "Готовое блюдо хранить охлаждённым и учитывать аллергены используемых продуктов.",
       "photoBrief": "Ровные кубики картофеля, моркови, варёной колбасы, огурцов и яйца, целый горошек, тонкая майонезная связка",
       "photoStatus": "pending_separate_photo",
-      "reviewStatus": "editorial_draft_requires_source_by_source_signoff"
+      "reviewStatus": "editorial_draft_requires_source_by_source_signoff",
+      "researchLeads": [
+        {
+          "url": "https://www.gastronom.ru/recipe/42768/salat-olive-s-doktorskoj-kolbasoj",
+          "status": "first_culinary_reference_further_checks_required"
+        }
+      ]
     },
     {
       "id": "world-salad-ru-002",
@@ -192,7 +198,13 @@
       "warn": "Готовое блюдо хранить охлаждённым и учитывать аллергены используемых продуктов.",
       "photoBrief": "Бордовые кубики свёклы, отдельные кубики картофеля и моркови, капуста и зелёный горошек",
       "photoStatus": "pending_separate_photo",
-      "reviewStatus": "editorial_draft_requires_source_by_source_signoff"
+      "reviewStatus": "editorial_draft_requires_source_by_source_signoff",
+      "researchLeads": [
+        {
+          "url": "https://gderecept.ru/salaty/vinegret-s-kvashenoy-kapustoy/",
+          "status": "first_culinary_reference_further_checks_required"
+        }
+      ]
     },
     {
       "id": "world-salad-ru-003",
@@ -283,7 +295,13 @@
       "warn": "Готовое блюдо хранить охлаждённым и учитывать аллергены используемых продуктов.",
       "photoBrief": "Чёткая невысокая слоистая порция, сверху свекольная шуба, внутри рыба, картофель, морковь",
       "photoStatus": "pending_separate_photo",
-      "reviewStatus": "editorial_draft_requires_source_by_source_signoff"
+      "reviewStatus": "editorial_draft_requires_source_by_source_signoff",
+      "researchLeads": [
+        {
+          "url": "https://www.saveur.com/article/Recipes/Herring-Under-a-Fur-Coat/",
+          "status": "first_culinary_reference_further_checks_required"
+        }
+      ]
     },
     {
       "id": "world-salad-ru-004",
@@ -368,7 +386,13 @@
       "warn": "Готовое блюдо хранить охлаждённым и учитывать аллергены используемых продуктов.",
       "photoBrief": "Невысокий слоёный салат с воздушной мелкой золотистой желтковой крошкой, без целых яиц",
       "photoStatus": "pending_separate_photo",
-      "reviewStatus": "editorial_draft_requires_source_by_source_signoff"
+      "reviewStatus": "editorial_draft_requires_source_by_source_signoff",
+      "researchLeads": [
+        {
+          "url": "https://openkitchen.eda.yandex/article/dishes/recipes/kak-prigotovit-salat-mimoza-s-sayroy-klassicheskiy-retsept",
+          "status": "first_culinary_reference_further_checks_required"
+        }
+      ]
     },
     {
       "id": "world-salad-ru-005",
@@ -459,7 +483,13 @@
       "warn": "Курица должна достичь 74 °C в центре, салат хранить охлаждённым.",
       "photoBrief": "Кубики отварной курицы, картофеля, моркови, яйца, огурца и горошка с тонкой заправкой",
       "photoStatus": "pending_separate_photo",
-      "reviewStatus": "editorial_draft_requires_source_by_source_signoff"
+      "reviewStatus": "editorial_draft_requires_source_by_source_signoff",
+      "researchLeads": [
+        {
+          "url": "https://ru-kitchen.ru/blog/appetizers/EnwDuxgNA3W11c-stolichny-capital-salad",
+          "status": "first_culinary_reference_further_checks_required"
+        }
+      ]
     },
     {
       "id": "world-salad-ru-006",
@@ -538,7 +568,13 @@
       "warn": "Готовое блюдо хранить охлаждённым и учитывать аллергены используемых продуктов.",
       "photoBrief": "Кусочки крабовых палочек, желтая кукуруза, зеленые кубики огурца и варёное яйцо, без риса",
       "photoStatus": "pending_separate_photo",
-      "reviewStatus": "editorial_draft_requires_source_by_source_signoff"
+      "reviewStatus": "editorial_draft_requires_source_by_source_signoff",
+      "researchLeads": [
+        {
+          "url": "https://www.svcs.bg/en/catalogs/recipes/crab-stick-salad",
+          "status": "first_culinary_reference_further_checks_required"
+        }
+      ]
     },
     {
       "id": "world-salad-ru-007",
@@ -611,7 +647,13 @@
       "warn": "Готовое блюдо хранить охлаждённым и учитывать аллергены используемых продуктов.",
       "photoBrief": "Золотистые хлопья печени трески, кубики варёного яйца и мелко порубленный зелёный лук",
       "photoStatus": "pending_separate_photo",
-      "reviewStatus": "editorial_draft_requires_source_by_source_signoff"
+      "reviewStatus": "editorial_draft_requires_source_by_source_signoff",
+      "researchLeads": [
+        {
+          "url": "https://skilletsandpots.com/cod-liver-salad/",
+          "status": "first_culinary_reference_further_checks_required"
+        }
+      ]
     },
     {
       "id": "world-salad-ru-008",
@@ -690,7 +732,13 @@
       "warn": "Готовое блюдо хранить охлаждённым и учитывать аллергены используемых продуктов.",
       "photoBrief": "Тонкие красно-белые кружочки редиса, кусочки сваренного яйца, укроп и белая сметана",
       "photoStatus": "pending_separate_photo",
-      "reviewStatus": "editorial_draft_requires_source_by_source_signoff"
+      "reviewStatus": "editorial_draft_requires_source_by_source_signoff",
+      "researchLeads": [
+        {
+          "url": "https://rud.ua/en/consumer/recipe/salaty-i-zakusky/salad-radish/",
+          "status": "first_culinary_reference_further_checks_required"
+        }
+      ]
     },
     {
       "id": "world-salad-ru-009",
@@ -769,7 +817,13 @@
       "warn": "Готовое блюдо хранить охлаждённым и учитывать аллергены используемых продуктов.",
       "photoBrief": "Рубиновая тертая свёкла, мелкие кусочки чернослива и дробленых орехов, без цельных долек чеснока",
       "photoStatus": "pending_separate_photo",
-      "reviewStatus": "editorial_draft_requires_source_by_source_signoff"
+      "reviewStatus": "editorial_draft_requires_source_by_source_signoff",
+      "researchLeads": [
+        {
+          "url": "https://www.food.com/recipe/beet-walnut-and-prune-salad-333699",
+          "status": "first_culinary_reference_further_checks_required"
+        }
+      ]
     },
     {
       "id": "world-salad-ru-010",
@@ -854,7 +908,13 @@
       "warn": "Используй только безопасно заготовленные съедобные солёные грибы.",
       "photoBrief": "Крупные ломтики варёного картофеля с небольшими солёными грибами и прозрачной масляной заправкой",
       "photoStatus": "pending_separate_photo",
-      "reviewStatus": "editorial_draft_requires_source_by_source_signoff"
+      "reviewStatus": "editorial_draft_requires_source_by_source_signoff",
+      "researchLeads": [
+        {
+          "url": "https://www.russia-ic.net/view/culture_art/traditions/recipes/salads/",
+          "status": "first_culinary_reference_further_checks_required"
+        }
+      ]
     }
   ]
 }
