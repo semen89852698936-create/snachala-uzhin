@@ -148,7 +148,7 @@
 **Как выглядит готовый суп:** Светлый чесночный бульон, слегка непрозрачный от яйца; тонкие хлопья, хлеб сбоку, не целая головка чеснока в миске.
 
 **Независимые рецептурные источники:**
-1. https://www.lemonde.fr/les-recettes-du-monde/article/2020/09/25/le-tourin-a-l-ail-la-recette-d-alice-quillet_6053587_5324493.html
+1. https://cuisine.journaldesfemmes.fr/recette/342517-tourin-a-l-ail
 2. https://www.marieclaire.fr/cuisine/tourin-a-l-ail%2C1195808.asp
 3. https://www.marmiton.org/recettes/recette_tourin-a-l-ail_13014.aspx
 
