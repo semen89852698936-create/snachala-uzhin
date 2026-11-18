@@ -1974,7 +1974,14 @@
       "photoBrief": "Фотография готового блюда «Андалузская пипиррана»: показывать только ингредиенты рецепта после описанной тепловой обработки, без целых зубчиков чеснока и случайного декора.",
       "photoStatus": "pending_separate_photo",
       "reviewStatus": "editorial_draft_requires_source_by_source_signoff",
-      "researchLeads": "Directo al Paladar / Bon Viveur / Recetas de Rechupete"
+      "researchLeads": "Directo al Paladar / Bon Viveur / Recetas de Rechupete",
+      "sourceEvidence": [
+        {
+          "url": "https://www.laespanolaaceites.com/recetas/pipirrana-de-jaen-receta/",
+          "checkedOn": "2026-11-19",
+          "note": "Regional recipe source, recipe quantities adjusted to two portions."
+        }
+      ]
     },
     {
       "id": "world-salad-04-02",
@@ -2050,7 +2057,14 @@
       "photoBrief": "Фотография готового блюда «Эсгарраэт с печёным перцем и треской»: показывать только ингредиенты рецепта после описанной тепловой обработки, без целых зубчиков чеснока и случайного декора.",
       "photoStatus": "pending_separate_photo",
       "reviewStatus": "editorial_draft_requires_source_by_source_signoff",
-      "researchLeads": "Directo al Paladar / Bon Viveur / Recetas de Rechupete"
+      "researchLeads": "Directo al Paladar / Bon Viveur / Recetas de Rechupete",
+      "sourceEvidence": [
+        {
+          "url": "https://www.rtve.es/television/20210519/receta-esgarraet-cocina-valenciana-tradicional/2091100.shtml",
+          "checkedOn": "2026-11-19",
+          "note": "Regional recipe source, recipe quantities adjusted to two portions."
+        }
+      ]
     },
     {
       "id": "world-salad-04-03",
@@ -2126,7 +2140,14 @@
       "photoBrief": "Фотография готового блюда «Майоркский тремпо»: показывать только ингредиенты рецепта после описанной тепловой обработки, без целых зубчиков чеснока и случайного декора.",
       "photoStatus": "pending_separate_photo",
       "reviewStatus": "editorial_draft_requires_source_by_source_signoff",
-      "researchLeads": "Directo al Paladar / Bon Viveur / Recetas de Rechupete"
+      "researchLeads": "Directo al Paladar / Bon Viveur / Recetas de Rechupete",
+      "sourceEvidence": [
+        {
+          "url": "https://elpais.com/gastronomia/recetas/2018/07/11/receta/1531307233_747294.html",
+          "checkedOn": "2026-11-19",
+          "note": "Regional recipe source, recipe quantities adjusted to two portions."
+        }
+      ]
     },
     {
       "id": "world-salad-04-04",
@@ -2208,7 +2229,14 @@
       "photoBrief": "Фотография готового блюда «Ремохон с апельсином и треской»: показывать только ингредиенты рецепта после описанной тепловой обработки, без целых зубчиков чеснока и случайного декора.",
       "photoStatus": "pending_separate_photo",
       "reviewStatus": "editorial_draft_requires_source_by_source_signoff",
-      "researchLeads": "Directo al Paladar / Bon Viveur / Recetas de Rechupete"
+      "researchLeads": "Directo al Paladar / Bon Viveur / Recetas de Rechupete",
+      "sourceEvidence": [
+        {
+          "url": "https://calendariodetemporada.es/receta/remojon-granadino/",
+          "checkedOn": "2026-11-19",
+          "note": "Regional recipe source, recipe quantities adjusted to two portions."
+        }
+      ]
     },
     {
       "id": "world-salad-04-05",
@@ -2296,7 +2324,14 @@
       "photoBrief": "Фотография готового блюда «Эмпедрат с фасолью»: показывать только ингредиенты рецепта после описанной тепловой обработки, без целых зубчиков чеснока и случайного декора.",
       "photoStatus": "pending_separate_photo",
       "reviewStatus": "editorial_draft_requires_source_by_source_signoff",
-      "researchLeads": "Directo al Paladar / Bon Viveur / Recetas de Rechupete"
+      "researchLeads": "Directo al Paladar / Bon Viveur / Recetas de Rechupete",
+      "sourceEvidence": [
+        {
+          "url": "https://www.catalunya.com/es/continguts/article/empedrada-26-1-1",
+          "checkedOn": "2026-11-19",
+          "note": "Regional recipe source, recipe quantities adjusted to two portions."
+        }
+      ]
     },
     {
       "id": "world-salad-04-06",
@@ -2408,7 +2443,14 @@
       "photoBrief": "Фотография готового блюда «Каталонский шатó с ореховым соусом»: показывать только ингредиенты рецепта после описанной тепловой обработки, без целых зубчиков чеснока и случайного декора.",
       "photoStatus": "pending_separate_photo",
       "reviewStatus": "editorial_draft_requires_source_by_source_signoff",
-      "researchLeads": "Directo al Paladar / Bon Viveur / Recetas de Rechupete"
+      "researchLeads": "Directo al Paladar / Bon Viveur / Recetas de Rechupete",
+      "sourceEvidence": [
+        {
+          "url": "https://elpais.com/gastronomia/el-comidista/2025-11-10/ensalada-xato-la-receta-tradicional-que-saca-lo-mejor-de-la-escarola.html",
+          "checkedOn": "2026-11-19",
+          "note": "Regional recipe source, recipe quantities adjusted to two portions."
+        }
+      ]
     },
     {
       "id": "world-salad-04-07",
@@ -2499,6 +2541,11 @@
         {
           "url": "https://www.fao.org/flw-in-fish-value-chains/resources/articles/detail/fish-salting-101-what-you-need-to-know/en",
           "note": "Salted fish preservation and safe handling."
+        },
+        {
+          "url": "https://www.spain.info/es/receta/esqueixada-bacalao/",
+          "checkedOn": "2026-11-19",
+          "note": "Regional recipe source, recipe quantities adjusted to two portions."
         }
       ]
     },
@@ -2594,7 +2641,14 @@
       "photoBrief": "Фотография готового блюда «Деревенский картофельный салат»: показывать только ингредиенты рецепта после описанной тепловой обработки, без целых зубчиков чеснока и случайного декора.",
       "photoStatus": "pending_separate_photo",
       "reviewStatus": "editorial_draft_requires_source_by_source_signoff",
-      "researchLeads": "Directo al Paladar / Bon Viveur / Recetas de Rechupete"
+      "researchLeads": "Directo al Paladar / Bon Viveur / Recetas de Rechupete",
+      "sourceEvidence": [
+        {
+          "url": "https://recetivo.com/recetas/ensalada-campera",
+          "checkedOn": "2026-11-19",
+          "note": "Regional recipe source, recipe quantities adjusted to two portions."
+        }
+      ]
     },
     {
       "id": "world-salad-04-09",
@@ -2676,7 +2730,14 @@
       "photoBrief": "Фотография готового блюда «Мурсийский салат из томатов»: показывать только ингредиенты рецепта после описанной тепловой обработки, без целых зубчиков чеснока и случайного декора.",
       "photoStatus": "pending_separate_photo",
       "reviewStatus": "editorial_draft_requires_source_by_source_signoff",
-      "researchLeads": "Directo al Paladar / Bon Viveur / Recetas de Rechupete"
+      "researchLeads": "Directo al Paladar / Bon Viveur / Recetas de Rechupete",
+      "sourceEvidence": [
+        {
+          "url": "https://sms.carm.es/ricsmur/bitstream/handle/123456789/1049/dieta.mediterranea.pdf?isAllowed=y&sequence=1",
+          "checkedOn": "2026-11-19",
+          "note": "Regional recipe source, recipe quantities adjusted to two portions."
+        }
+      ]
     },
     {
       "id": "world-salad-04-10",
