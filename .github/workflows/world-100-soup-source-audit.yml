@@ -1,0 +1,25 @@
+name: World 100 Soup Source Availability Audit
+on:
+  pull_request:
+    paths:
+      - 'project-operations/soups/check-source-urls.cjs'
+      - '.github/workflows/world-100-soup-source-audit.yml'
+  workflow_dispatch:
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Check the 300 source URLs and report confidence limitations
+        run: node project-operations/soups/check-source-urls.cjs
+      - name: Upload live URL report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: world-100-soup-source-url-report
+          path: project-operations/soups/WORLD_100_SOURCE_URL_REPORT.json
+          if-no-files-found: ignore
