@@ -1,0 +1,21 @@
+name: Editorial World Salads 100
+on:
+  pull_request:
+    paths:
+      - 'data/editorial/salads/**'
+      - 'scripts/check-world-salads-100.cjs'
+      - '.github/workflows/editorial-world-salads-100.yml'
+  workflow_dispatch:
+jobs:
+  verify-salads:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - name: Check 100 editorial cards
+        run: node scripts/check-world-salads-100.cjs
