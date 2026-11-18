@@ -20,7 +20,7 @@
 **Источники для проверки:**
 1. https://www.foodnetwork.com/recipes/beef-noodle-soup-with-rice-noodles-pho-bo-2105722
 2. https://vickypham.com/blog/vietnamese-beef-noodle-soup-pho-bo/
-3. https://theravenouscouple.com/2018/08/pho-bo-recipe-tips-and-techniques.html
+3. https://www.recipetineats.com/vietnamese-pho-recipe/
 
 **Различия и редакционное решение:** Обязательны обожжённый лук и имбирь, прозрачный мясной бульон; URL отдельных источников требует точного подтверждения.
 
@@ -46,7 +46,7 @@
 **Источники для проверки:**
 1. https://www.hungryhuy.com/chicken-pho-recipe/
 2. https://vickypham.com/blog/vietnamese-chicken-noodle-soup-pho-ga/
-3. https://www.seriouseats.com/pho-ga-vietnamese-chicken-noodle-soup-recipe
+3. https://www.recipetineats.com/vietnamese-chicken-pho-soup-pho-ga/
 
 **Различия и редакционное решение:** Куриный фо имеет менее плотный бульон и короче варится, чем фо бо.
 
@@ -71,8 +71,8 @@
 
 **Источники для проверки:**
 1. https://www.hungryhuy.com/bun-bo-hue-recipe/
-2. https://theravenouscouple.com/2011/12/bun-bo-hue-recipe.html
-3. https://www.seriouseats.com/bun-bo-hue-vietnamese-spicy-beef-noodle-soup-recipe
+2. https://vickypham.com/blog/vietnamese-spicy-beef-noodle-soup-bun-bo-hue/
+3. https://www.greatbritishchefs.com/recipes/bun-bo-hue-recipe
 
 **Различия и редакционное решение:** Лемонграсс и ферментированная креветочная паста обязательны для характерного вкуса.
 
@@ -124,7 +124,7 @@
 **Источники для проверки:**
 1. https://www.hungryhuy.com/bun-thang-vietnamese-hanoi-soup/
 2. https://vickypham.com/blog/northern-vietnam-hanoi-noodle-soup-pork-chicken-shrimp-bun-thang/
-3. https://theravenouscouple.com/2009/07/bun-thang-vermicelli-soup-with-chicken-egg-pork.html
+3. https://ang-cooks.com/post/bun-thang/
 
 **Различия и редакционное решение:** Тончайшая нарезка является частью индивидуальности блюда.
 
@@ -226,7 +226,7 @@
 **Внешний вид:** Прозрачный кисло-сладкий бульон с рыбой, томатами, ананасом, бамией и ростками.
 
 **Источники для проверки:**
-1. https://theravenouscouple.com/2012/08/canh-chua-vietnamese-sour-tamarind-soup.html
+1. https://www.saveur.com/article/recipes/classic-sour-fish-soup/
 2. https://vickypham.com/blog/vietnamese-sour-catfish-soup-canh-chua/
 3. https://www.sbs.com.au/food/the-cook-up-with-adam-liaw/recipe/canh-chua-ca-vietnamese-sour-fish-soup/5itdhzdfp
 
