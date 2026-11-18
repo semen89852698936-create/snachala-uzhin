@@ -10,7 +10,8 @@
   "notes": [
     "Все 100 карточек собраны в отдельном редакционном файле, сайт и утвержденные фотографии остаются без изменений.",
     "У каждой карточки три ссылки на независимые кулинарные источники; сами ссылки ещё требуют полной проверки на доступность и соответствие.",
-    "Фотографии требуют отдельного производства и приёмки. Никакая фотография из старого каталога не присваивается чужому рецепту."
+    "Фотографии требуют отдельного производства и приёмки. Никакая фотография из старого каталога не присваивается чужому рецепту.",
+    "19.11.2026 пользователь единым решением утвердил все 100 рецептов и фото-ТЗ. Это не подтверждает наличие оригинальных фотографий, независимую проверку всех источников или готовность к публикации."
   ],
   "recipes": [
     {
@@ -121,11 +122,15 @@
           "https://www.russianfood.com/recipes/recipe.php?rid=129213",
           "https://food.ru/recipes/89267-klassicheskii-olive-s-kolbasoi"
         ],
-        "note": "Независимые рецептуры; точные пропорции адаптированы на двоих.",
-        "reviewNote": "Ссылки на 3 независимых домена сохранены; требуется предметная проверка каждого открытого источника. Непроверенное не выдавать за утверждённое."
+        "note": "Независимые рецептуры; точные пропорции адаптированы на двоих."
       },
       "photo": null,
-      "imagePublishingBlocked": true
+      "imagePublishingBlocked": true,
+      "editorialApproval": {
+        "status": "approved_by_user",
+        "scope": "all_100_recipe_cards_and_photo_briefs",
+        "note": "Пользователь 19.11.2026 утвердил все 100 рецептурных карточек сразу. Одобрение относится к текстам рецептов и техническим заданиям; оригинальные фотографии отсутствуют и отдельно не одобрены. Независимая проверка источников ещё требуется."
+      }
     },
     {
       "id": "world-salad-ru-002",
@@ -341,11 +346,15 @@
           "https://receptoriya.ru/recept/seledka-pod-shuboy/",
           "https://ryboedov.ru/recipes/seld/seld-pod-shuboy/"
         ],
-        "note": "Независимые рецептуры; точные пропорции адаптированы на двоих.",
-        "reviewNote": "Ссылки на 3 независимых домена сохранены; требуется предметная проверка каждого открытого источника. Непроверенное не выдавать за утверждённое."
+        "note": "Независимые рецептуры; точные пропорции адаптированы на двоих."
       },
       "photo": null,
-      "imagePublishingBlocked": true
+      "imagePublishingBlocked": true,
+      "editorialApproval": {
+        "status": "approved_by_user",
+        "scope": "all_100_recipe_cards_and_photo_briefs",
+        "note": "Пользователь 19.11.2026 утвердил все 100 рецептурных карточек сразу. Одобрение относится к текстам рецептов и техническим заданиям; оригинальные фотографии отсутствуют и отдельно не одобрены. Независимая проверка источников ещё требуется."
+      }
     },
     {
       "id": "world-salad-ru-004",
@@ -437,11 +446,15 @@
           "https://openkitchen.eda.yandex/article/dishes/recipes/salat-mimoza-s-kartoshkoy-i-rybnymi-konservami",
           "https://www.tvcook.ru/old/recipes/salaty/salat-mimoza/salat-mimoza.html"
         ],
-        "note": "Независимые рецептуры; точные пропорции адаптированы на двоих.",
-        "reviewNote": "Ссылки на 3 независимых домена сохранены; требуется предметная проверка каждого открытого источника. Непроверенное не выдавать за утверждённое."
+        "note": "Независимые рецептуры; точные пропорции адаптированы на двоих."
       },
       "photo": null,
-      "imagePublishingBlocked": true
+      "imagePublishingBlocked": true,
+      "editorialApproval": {
+        "status": "approved_by_user",
+        "scope": "all_100_recipe_cards_and_photo_briefs",
+        "note": "Пользователь 19.11.2026 утвердил все 100 рецептурных карточек сразу. Одобрение относится к текстам рецептов и техническим заданиям; оригинальные фотографии отсутствуют и отдельно не одобрены. Независимая проверка источников ещё требуется."
+      }
     },
     {
       "id": "world-salad-ru-005",
@@ -551,11 +564,15 @@
           "https://www.russianfood.com/recipes/recipe.php?rid=8474",
           "https://food.ru/recipes/162893-salat-stolichnyi-klassicheskii-s-kuricei"
         ],
-        "note": "Независимые рецептуры; точные пропорции адаптированы на двоих.",
-        "reviewNote": "Ссылки на 3 независимых домена сохранены; требуется предметная проверка каждого открытого источника. Непроверенное не выдавать за утверждённое."
+        "note": "Независимые рецептуры; точные пропорции адаптированы на двоих."
       },
       "photo": null,
-      "imagePublishingBlocked": true
+      "imagePublishingBlocked": true,
+      "editorialApproval": {
+        "status": "approved_by_user",
+        "scope": "all_100_recipe_cards_and_photo_briefs",
+        "note": "Пользователь 19.11.2026 утвердил все 100 рецептурных карточек сразу. Одобрение относится к текстам рецептов и техническим заданиям; оригинальные фотографии отсутствуют и отдельно не одобрены. Независимая проверка источников ещё требуется."
+      }
     },
     {
       "id": "world-salad-ru-006",
@@ -642,11 +659,15 @@
           "https://food.ru/recipes/249051-krabovyi-salat-s-kukuruzoi-ogurtsom-i-iaitsom-1744014839",
           "https://eda.rambler.ru/recepty/salaty/krabovyy-salat-s-kukuruzoy-i-yaycom-188215/amp"
         ],
-        "note": "Независимые рецептуры; точные пропорции адаптированы на двоих.",
-        "reviewNote": "Ссылки на 3 независимых домена сохранены; требуется предметная проверка каждого открытого источника. Непроверенное не выдавать за утверждённое."
+        "note": "Независимые рецептуры; точные пропорции адаптированы на двоих."
       },
       "photo": null,
-      "imagePublishingBlocked": true
+      "imagePublishingBlocked": true,
+      "editorialApproval": {
+        "status": "approved_by_user",
+        "scope": "all_100_recipe_cards_and_photo_briefs",
+        "note": "Пользователь 19.11.2026 утвердил все 100 рецептурных карточек сразу. Одобрение относится к текстам рецептов и техническим заданиям; оригинальные фотографии отсутствуют и отдельно не одобрены. Независимая проверка источников ещё требуется."
+      }
     },
     {
       "id": "world-salad-ru-007",
@@ -727,11 +748,15 @@
           "https://www.edimdoma.ru/retsepty/42976-salat-zakuska-iz-pecheni-treski",
           "https://receptoriya.ru/recept/salat-s-pechenyu-treski/"
         ],
-        "note": "Независимые рецептуры; точные пропорции адаптированы на двоих.",
-        "reviewNote": "Ссылки на 3 независимых домена сохранены; требуется предметная проверка каждого открытого источника. Непроверенное не выдавать за утверждённое."
+        "note": "Независимые рецептуры; точные пропорции адаптированы на двоих."
       },
       "photo": null,
-      "imagePublishingBlocked": true
+      "imagePublishingBlocked": true,
+      "editorialApproval": {
+        "status": "approved_by_user",
+        "scope": "all_100_recipe_cards_and_photo_briefs",
+        "note": "Пользователь 19.11.2026 утвердил все 100 рецептурных карточек сразу. Одобрение относится к текстам рецептов и техническим заданиям; оригинальные фотографии отсутствуют и отдельно не одобрены. Независимая проверка источников ещё требуется."
+      }
     },
     {
       "id": "world-salad-ru-008",
@@ -824,11 +849,15 @@
           "https://www.gastronom.ru/recipe/62746/salat-rediska-s-iaitsom",
           "https://www.iamcook.ru/showrecipe/25208"
         ],
-        "note": "Независимые рецептуры; точные пропорции адаптированы на двоих.",
-        "reviewNote": "Ссылки на 3 независимых домена сохранены; требуется предметная проверка каждого открытого источника. Непроверенное не выдавать за утверждённое."
+        "note": "Независимые рецептуры; точные пропорции адаптированы на двоих."
       },
       "photo": null,
-      "imagePublishingBlocked": true
+      "imagePublishingBlocked": true,
+      "editorialApproval": {
+        "status": "approved_by_user",
+        "scope": "all_100_recipe_cards_and_photo_briefs",
+        "note": "Пользователь 19.11.2026 утвердил все 100 рецептурных карточек сразу. Одобрение относится к текстам рецептов и техническим заданиям; оригинальные фотографии отсутствуют и отдельно не одобрены. Независимая проверка источников ещё требуется."
+      }
     },
     {
       "id": "world-salad-ru-009",
@@ -915,11 +944,15 @@
           "https://www.maggi.ru/recipes/salat-iz-svekly-s-chernoslivom",
           "https://nyamkin.ru/recipes/salat-so-svekloy-chernoslivom-i-greckim-orehom"
         ],
-        "note": "Независимые рецептуры; точные пропорции адаптированы на двоих.",
-        "reviewNote": "Ссылки на 3 независимых домена сохранены; требуется предметная проверка каждого открытого источника. Непроверенное не выдавать за утверждённое."
+        "note": "Независимые рецептуры; точные пропорции адаптированы на двоих."
       },
       "photo": null,
-      "imagePublishingBlocked": true
+      "imagePublishingBlocked": true,
+      "editorialApproval": {
+        "status": "approved_by_user",
+        "scope": "all_100_recipe_cards_and_photo_briefs",
+        "note": "Пользователь 19.11.2026 утвердил все 100 рецептурных карточек сразу. Одобрение относится к текстам рецептов и техническим заданиям; оригинальные фотографии отсутствуют и отдельно не одобрены. Независимая проверка источников ещё требуется."
+      }
     },
     {
       "id": "world-salad-ru-010",
@@ -1012,11 +1045,15 @@
           "https://www.ideaport.ru/salaty/salaty-gribnye/kartofelnyy-salat-s-solenymi-gribami/",
           "https://www.russianfood.com/recipes/recipe.php?rid=77122"
         ],
-        "note": "Независимые рецептуры; точные пропорции адаптированы на двоих.",
-        "reviewNote": "Ссылки на 3 независимых домена сохранены; требуется предметная проверка каждого открытого источника. Непроверенное не выдавать за утверждённое."
+        "note": "Независимые рецептуры; точные пропорции адаптированы на двоих."
       },
       "photo": null,
-      "imagePublishingBlocked": true
+      "imagePublishingBlocked": true,
+      "editorialApproval": {
+        "status": "approved_by_user",
+        "scope": "all_100_recipe_cards_and_photo_briefs",
+        "note": "Пользователь 19.11.2026 утвердил все 100 рецептурных карточек сразу. Одобрение относится к текстам рецептов и техническим заданиям; оригинальные фотографии отсутствуют и отдельно не одобрены. Независимая проверка источников ещё требуется."
+      }
     },
     {
       "id": "world-salad-it-001",
@@ -1097,11 +1134,15 @@
           "https://www.cucchiaio.it/ricetta/insalata-caprese/",
           "https://blog.giallozafferano.it/studentiaifornelli/insalata-caprese-ricetta/"
         ],
-        "note": "Ингредиенты и техника сверены с региональной рецептурой; количества пересчитаны для двоих.",
-        "reviewNote": "Ссылки на 3 независимых домена сохранены; требуется предметная проверка каждого открытого источника. Непроверенное не выдавать за утверждённое."
+        "note": "Ингредиенты и техника сверены с региональной рецептурой; количества пересчитаны для двоих."
       },
       "photo": null,
-      "imagePublishingBlocked": true
+      "imagePublishingBlocked": true,
+      "editorialApproval": {
+        "status": "approved_by_user",
+        "scope": "all_100_recipe_cards_and_photo_briefs",
+        "note": "Пользователь 19.11.2026 утвердил все 100 рецептурных карточек сразу. Одобрение относится к текстам рецептов и техническим заданиям; оригинальные фотографии отсутствуют и отдельно не одобрены. Независимая проверка источников ещё требуется."
+      }
     },
     {
       "id": "world-salad-it-002",
@@ -1200,11 +1241,15 @@
           "https://www.cucchiaio.it/ricetta/panzanella/",
           "https://blog.giallozafferano.it/pierobenigni/panzanella-toscana/"
         ],
-        "note": "Ингредиенты и техника сверены с региональной рецептурой; количества пересчитаны для двоих.",
-        "reviewNote": "Ссылки на 3 независимых домена сохранены; требуется предметная проверка каждого открытого источника. Непроверенное не выдавать за утверждённое."
+        "note": "Ингредиенты и техника сверены с региональной рецептурой; количества пересчитаны для двоих."
       },
       "photo": null,
-      "imagePublishingBlocked": true
+      "imagePublishingBlocked": true,
+      "editorialApproval": {
+        "status": "approved_by_user",
+        "scope": "all_100_recipe_cards_and_photo_briefs",
+        "note": "Пользователь 19.11.2026 утвердил все 100 рецептурных карточек сразу. Одобрение относится к текстам рецептов и техническим заданиям; оригинальные фотографии отсутствуют и отдельно не одобрены. Независимая проверка источников ещё требуется."
+      }
     },
     {
       "id": "world-salad-it-003",
@@ -1303,11 +1348,15 @@
           "https://blog.giallozafferano.it/ilchiccodimais/insalata-di-mare/",
           "https://www.lacucinaitaliana.it/ricetta/antipasti/insalata-di-mare/"
         ],
-        "note": "Ингредиенты и техника сверены с региональной рецептурой; количества пересчитаны для двоих.",
-        "reviewNote": "Ссылки на 3 независимых домена сохранены; требуется предметная проверка каждого открытого источника. Непроверенное не выдавать за утверждённое."
+        "note": "Ингредиенты и техника сверены с региональной рецептурой; количества пересчитаны для двоих."
       },
       "photo": null,
-      "imagePublishingBlocked": true
+      "imagePublishingBlocked": true,
+      "editorialApproval": {
+        "status": "approved_by_user",
+        "scope": "all_100_recipe_cards_and_photo_briefs",
+        "note": "Пользователь 19.11.2026 утвердил все 100 рецептурных карточек сразу. Одобрение относится к текстам рецептов и техническим заданиям; оригинальные фотографии отсутствуют и отдельно не одобрены. Независимая проверка источников ещё требуется."
+      }
     },
     {
       "id": "world-salad-it-004",
@@ -1400,11 +1449,15 @@
           "https://blog.giallozafferano.it/lemieloverie/ricetta-insalata-di-polpo-e-patate/",
           "https://www.ilcuoreinpentola.it/ricette/antipasti/insalata-di-polpo-e-patate/"
         ],
-        "note": "Подтверждено в трёх итальянских источниках: осьминог варится до мягкости и подаётся с отварным картофелем, лимоном, петрушкой и маслом.",
-        "reviewNote": "Ссылки на 3 независимых домена сохранены; требуется предметная проверка каждого открытого источника. Непроверенное не выдавать за утверждённое."
+        "note": "Подтверждено в трёх итальянских источниках: осьминог варится до мягкости и подаётся с отварным картофелем, лимоном, петрушкой и маслом."
       },
       "photo": null,
-      "imagePublishingBlocked": true
+      "imagePublishingBlocked": true,
+      "editorialApproval": {
+        "status": "approved_by_user",
+        "scope": "all_100_recipe_cards_and_photo_briefs",
+        "note": "Пользователь 19.11.2026 утвердил все 100 рецептурных карточек сразу. Одобрение относится к текстам рецептов и техническим заданиям; оригинальные фотографии отсутствуют и отдельно не одобрены. Независимая проверка источников ещё требуется."
+      }
     },
     {
       "id": "world-salad-it-005",
@@ -1497,11 +1550,15 @@
           "https://www.cucchiaio.it/ricetta/insalata-di-finocchi-e-arance/",
           "https://www.giallozafferano.it/ricerca-ricette/insalata+finocchi+arance/"
         ],
-        "note": "Ингредиенты и техника сверены с региональной рецептурой; количества пересчитаны для двоих.",
-        "reviewNote": "Ссылки на 3 независимых домена сохранены; требуется предметная проверка каждого открытого источника. Непроверенное не выдавать за утверждённое."
+        "note": "Ингредиенты и техника сверены с региональной рецептурой; количества пересчитаны для двоих."
       },
       "photo": null,
-      "imagePublishingBlocked": true
+      "imagePublishingBlocked": true,
+      "editorialApproval": {
+        "status": "approved_by_user",
+        "scope": "all_100_recipe_cards_and_photo_briefs",
+        "note": "Пользователь 19.11.2026 утвердил все 100 рецептурных карточек сразу. Одобрение относится к текстам рецептов и техническим заданиям; оригинальные фотографии отсутствуют и отдельно не одобрены. Независимая проверка источников ещё требуется."
+      }
     },
     {
       "id": "world-salad-it-006",
@@ -1600,11 +1657,15 @@
           "https://www.lospicchiodaglio.it/ricetta/insalata-di-rinforzo",
           "https://www.galbani.it/ricette/insalata-di-rinforzo"
         ],
-        "note": "Ингредиенты и техника сверены с региональной рецептурой; количества пересчитаны для двоих.",
-        "reviewNote": "Ссылки на 3 независимых домена сохранены; требуется предметная проверка каждого открытого источника. Непроверенное не выдавать за утверждённое."
+        "note": "Ингредиенты и техника сверены с региональной рецептурой; количества пересчитаны для двоих."
       },
       "photo": null,
-      "imagePublishingBlocked": true
+      "imagePublishingBlocked": true,
+      "editorialApproval": {
+        "status": "approved_by_user",
+        "scope": "all_100_recipe_cards_and_photo_briefs",
+        "note": "Пользователь 19.11.2026 утвердил все 100 рецептурных карточек сразу. Одобрение относится к текстам рецептов и техническим заданиям; оригинальные фотографии отсутствуют и отдельно не одобрены. Независимая проверка источников ещё требуется."
+      }
     },
     {
       "id": "world-salad-it-007",
@@ -1691,11 +1752,15 @@
           "https://orto.ch/ricetta/puntarelle-alla-romana/",
           "https://www.cucchiaio.it/ricetta/puntarelle-alla-romana/"
         ],
-        "note": "Ингредиенты и техника сверены с региональной рецептурой; количества пересчитаны для двоих.",
-        "reviewNote": "Ссылки на 3 независимых домена сохранены; требуется предметная проверка каждого открытого источника. Непроверенное не выдавать за утверждённое."
+        "note": "Ингредиенты и техника сверены с региональной рецептурой; количества пересчитаны для двоих."
       },
       "photo": null,
-      "imagePublishingBlocked": true
+      "imagePublishingBlocked": true,
+      "editorialApproval": {
+        "status": "approved_by_user",
+        "scope": "all_100_recipe_cards_and_photo_briefs",
+        "note": "Пользователь 19.11.2026 утвердил все 100 рецептурных карточек сразу. Одобрение относится к текстам рецептов и техническим заданиям; оригинальные фотографии отсутствуют и отдельно не одобрены. Независимая проверка источников ещё требуется."
+      }
     },
     {
       "id": "world-salad-it-008",
@@ -1800,11 +1865,15 @@
           "https://www.cucchiaio.it/ricetta/insalata-di-riso/",
           "https://www.giallozafferano.it/ricerca-ricette/insalata+di+riso/"
         ],
-        "note": "Ингредиенты и техника сверены с региональной рецептурой; количества пересчитаны для двоих.",
-        "reviewNote": "Ссылки на 3 независимых домена сохранены; требуется предметная проверка каждого открытого источника. Непроверенное не выдавать за утверждённое."
+        "note": "Ингредиенты и техника сверены с региональной рецептурой; количества пересчитаны для двоих."
       },
       "photo": null,
-      "imagePublishingBlocked": true
+      "imagePublishingBlocked": true,
+      "editorialApproval": {
+        "status": "approved_by_user",
+        "scope": "all_100_recipe_cards_and_photo_briefs",
+        "note": "Пользователь 19.11.2026 утвердил все 100 рецептурных карточек сразу. Одобрение относится к текстам рецептов и техническим заданиям; оригинальные фотографии отсутствуют и отдельно не одобрены. Независимая проверка источников ещё требуется."
+      }
     },
     {
       "id": "world-salad-it-009",
@@ -1903,11 +1972,15 @@
           "https://blog.giallozafferano.it/allacciateilgrembiule/insalata-di-farro-con-verdure/",
           "https://www.ilclubdellericette.it/ricetta/insalata-di-farro-con-scamorza-pomodorini-e-asparagi"
         ],
-        "note": "Ингредиенты и техника сверены с региональной рецептурой; количества пересчитаны для двоих.",
-        "reviewNote": "Ссылки на 3 независимых домена сохранены; требуется предметная проверка каждого открытого источника. Непроверенное не выдавать за утверждённое."
+        "note": "Ингредиенты и техника сверены с региональной рецептурой; количества пересчитаны для двоих."
       },
       "photo": null,
-      "imagePublishingBlocked": true
+      "imagePublishingBlocked": true,
+      "editorialApproval": {
+        "status": "approved_by_user",
+        "scope": "all_100_recipe_cards_and_photo_briefs",
+        "note": "Пользователь 19.11.2026 утвердил все 100 рецептурных карточек сразу. Одобрение относится к текстам рецептов и техническим заданиям; оригинальные фотографии отсутствуют и отдельно не одобрены. Независимая проверка источников ещё требуется."
+      }
     },
     {
       "id": "world-salad-it-010",
@@ -2000,11 +2073,15 @@
           "https://www.lospicchiodaglio.it/ricetta/insalata-fagioli-spagna-tonno-cipolla",
           "https://www.cucchiaio.it/ricetta/insalata-di-fagioli-e-tonno/"
         ],
-        "note": "Ингредиенты и техника сверены с региональной рецептурой; количества пересчитаны для двоих.",
-        "reviewNote": "Ссылки на 3 независимых домена сохранены; требуется предметная проверка каждого открытого источника. Непроверенное не выдавать за утверждённое."
+        "note": "Ингредиенты и техника сверены с региональной рецептурой; количества пересчитаны для двоих."
       },
       "photo": null,
-      "imagePublishingBlocked": true
+      "imagePublishingBlocked": true,
+      "editorialApproval": {
+        "status": "approved_by_user",
+        "scope": "all_100_recipe_cards_and_photo_briefs",
+        "note": "Пользователь 19.11.2026 утвердил все 100 рецептурных карточек сразу. Одобрение относится к текстам рецептов и техническим заданиям; оригинальные фотографии отсутствуют и отдельно не одобрены. Независимая проверка источников ещё требуется."
+      }
     },
     {
       "id": "world-salad-fr-001",
@@ -2121,11 +2198,15 @@
           "https://provence-alpes-cotedazur.com/que-faire/vin-et-gastronomie/les-recettes-du-sud/la-salade-nicoise/",
           "https://www.academiedugout.fr/recettes/salade-nicoise_8215_2"
         ],
-        "note": "Учтена французская региональная рецептурная традиция",
-        "reviewNote": "Ссылки на 3 независимых домена сохранены; требуется предметная проверка каждого открытого источника. Непроверенное не выдавать за утверждённое."
+        "note": "Учтена французская региональная рецептурная традиция"
       },
       "photo": null,
-      "imagePublishingBlocked": true
+      "imagePublishingBlocked": true,
+      "editorialApproval": {
+        "status": "approved_by_user",
+        "scope": "all_100_recipe_cards_and_photo_briefs",
+        "note": "Пользователь 19.11.2026 утвердил все 100 рецептурных карточек сразу. Одобрение относится к текстам рецептов и техническим заданиям; оригинальные фотографии отсутствуют и отдельно не одобрены. Независимая проверка источников ещё требуется."
+      }
     },
     {
       "id": "world-salad-fr-002",
@@ -2224,11 +2305,15 @@
           "https://www.coursesu.com/coursesu-lyon-chezvous-salade-lyonnaise.html",
           "https://info-lyon.fr/salade-lyonnaise/"
         ],
-        "note": "Учтена французская региональная рецептурная традиция",
-        "reviewNote": "Ссылки на 3 независимых домена сохранены; требуется предметная проверка каждого открытого источника. Непроверенное не выдавать за утверждённое."
+        "note": "Учтена французская региональная рецептурная традиция"
       },
       "photo": null,
-      "imagePublishingBlocked": true
+      "imagePublishingBlocked": true,
+      "editorialApproval": {
+        "status": "approved_by_user",
+        "scope": "all_100_recipe_cards_and_photo_briefs",
+        "note": "Пользователь 19.11.2026 утвердил все 100 рецептурных карточек сразу. Одобрение относится к текстам рецептов и техническим заданиям; оригинальные фотографии отсутствуют и отдельно не одобрены. Независимая проверка источников ещё требуется."
+      }
     },
     {
       "id": "world-salad-fr-003",
@@ -2327,11 +2412,15 @@
           "https://lespepitesduperigord.com/salade-perigourdine/",
           "https://canardgoulu.com/recettes/salade-perigourdine/"
         ],
-        "note": "Учтена французская региональная рецептурная традиция",
-        "reviewNote": "Ссылки на 3 независимых домена сохранены; требуется предметная проверка каждого открытого источника. Непроверенное не выдавать за утверждённое."
+        "note": "Учтена французская региональная рецептурная традиция"
       },
       "photo": null,
-      "imagePublishingBlocked": true
+      "imagePublishingBlocked": true,
+      "editorialApproval": {
+        "status": "approved_by_user",
+        "scope": "all_100_recipe_cards_and_photo_briefs",
+        "note": "Пользователь 19.11.2026 утвердил все 100 рецептурных карточек сразу. Одобрение относится к текстам рецептов и техническим заданиям; оригинальные фотографии отсутствуют и отдельно не одобрены. Независимая проверка источников ещё требуется."
+      }
     },
     {
       "id": "world-salad-fr-004",
@@ -2430,11 +2519,15 @@
           "https://dans-lassiette.aveyron.fr/recette/salade-de-chevre-chaud-au-miel-et-aux-noix",
           "https://ioumi.fr/recettes/salade-de-chevre-chaud.html"
         ],
-        "note": "Учтена французская региональная рецептурная традиция",
-        "reviewNote": "Ссылки на 3 независимых домена сохранены; требуется предметная проверка каждого открытого источника. Непроверенное не выдавать за утверждённое."
+        "note": "Учтена французская региональная рецептурная традиция"
       },
       "photo": null,
-      "imagePublishingBlocked": true
+      "imagePublishingBlocked": true,
+      "editorialApproval": {
+        "status": "approved_by_user",
+        "scope": "all_100_recipe_cards_and_photo_briefs",
+        "note": "Пользователь 19.11.2026 утвердил все 100 рецептурных карточек сразу. Одобрение относится к текстам рецептов и техническим заданиям; оригинальные фотографии отсутствуют и отдельно не одобрены. Независимая проверка источников ещё требуется."
+      }
     },
     {
       "id": "world-salad-fr-005",
@@ -2527,11 +2620,15 @@
           "https://www.atelierdeschefs.fr/recettes/17762/celeri-remoulade/",
           "https://www.aujardin.info/recettes/celeri-remoulade.php"
         ],
-        "note": "Учтена французская региональная рецептурная традиция",
-        "reviewNote": "Ссылки на 3 независимых домена сохранены; требуется предметная проверка каждого открытого источника. Непроверенное не выдавать за утверждённое."
+        "note": "Учтена французская региональная рецептурная традиция"
       },
       "photo": null,
-      "imagePublishingBlocked": true
+      "imagePublishingBlocked": true,
+      "editorialApproval": {
+        "status": "approved_by_user",
+        "scope": "all_100_recipe_cards_and_photo_briefs",
+        "note": "Пользователь 19.11.2026 утвердил все 100 рецептурных карточек сразу. Одобрение относится к текстам рецептов и техническим заданиям; оригинальные фотографии отсутствуют и отдельно не одобрены. Независимая проверка источников ещё требуется."
+      }
     },
     {
       "id": "world-salad-fr-006",
@@ -2624,11 +2721,15 @@
           "https://www.marmiton.org/recettes/recette_carottes-rapees-vinaigrette_12609.aspx",
           "https://www.750g.com/carottes-rapees-r2000.htm"
         ],
-        "note": "Учтена французская региональная рецептурная традиция",
-        "reviewNote": "Ссылки на 3 независимых домена сохранены; требуется предметная проверка каждого открытого источника. Непроверенное не выдавать за утверждённое."
+        "note": "Учтена французская региональная рецептурная традиция"
       },
       "photo": null,
-      "imagePublishingBlocked": true
+      "imagePublishingBlocked": true,
+      "editorialApproval": {
+        "status": "approved_by_user",
+        "scope": "all_100_recipe_cards_and_photo_briefs",
+        "note": "Пользователь 19.11.2026 утвердил все 100 рецептурных карточек сразу. Одобрение относится к текстам рецептов и техническим заданиям; оригинальные фотографии отсутствуют и отдельно не одобрены. Независимая проверка источников ещё требуется."
+      }
     },
     {
       "id": "world-salad-fr-007",
@@ -2727,11 +2828,15 @@
           "https://www.julieandrieu.com/recettes/cuire-une-salade-de-lentilles",
           "https://www.legume-sec.com/portfolio-item/salade-lentilles-vertes-du-puy/"
         ],
-        "note": "Учтена французская региональная рецептурная традиция",
-        "reviewNote": "Ссылки на 3 независимых домена сохранены; требуется предметная проверка каждого открытого источника. Непроверенное не выдавать за утверждённое."
+        "note": "Учтена французская региональная рецептурная традиция"
       },
       "photo": null,
-      "imagePublishingBlocked": true
+      "imagePublishingBlocked": true,
+      "editorialApproval": {
+        "status": "approved_by_user",
+        "scope": "all_100_recipe_cards_and_photo_briefs",
+        "note": "Пользователь 19.11.2026 утвердил все 100 рецептурных карточек сразу. Одобрение относится к текстам рецептов и техническим заданиям; оригинальные фотографии отсутствуют и отдельно не одобрены. Независимая проверка источников ещё требуется."
+      }
     },
     {
       "id": "world-salad-fr-008",
@@ -2830,11 +2935,15 @@
           "https://www.marmiton.org/recettes/recette_salade-de-pommes-de-terre-a-la-francaise_43953.aspx",
           "https://www.academiedugout.fr/recettes/salade-de-pommes-de-terre_12085_2"
         ],
-        "note": "Учтена французская региональная рецептурная традиция",
-        "reviewNote": "Ссылки на 3 независимых домена сохранены; требуется предметная проверка каждого открытого источника. Непроверенное не выдавать за утверждённое."
+        "note": "Учтена французская региональная рецептурная традиция"
       },
       "photo": null,
-      "imagePublishingBlocked": true
+      "imagePublishingBlocked": true,
+      "editorialApproval": {
+        "status": "approved_by_user",
+        "scope": "all_100_recipe_cards_and_photo_briefs",
+        "note": "Пользователь 19.11.2026 утвердил все 100 рецептурных карточек сразу. Одобрение относится к текстам рецептов и техническим заданиям; оригинальные фотографии отсутствуют и отдельно не одобрены. Независимая проверка источников ещё требуется."
+      }
     },
     {
       "id": "world-salad-fr-009",
@@ -2933,11 +3042,15 @@
           "https://goedenlekker.nl/fr/blogs/recettes/salade-cauchoise",
           "https://cuisine-maison-comme-autrefois.blogspot.com/2014/11/recette-de-salade-cauchoise-pommes-de.html"
         ],
-        "note": "Учтена французская региональная рецептурная традиция",
-        "reviewNote": "Ссылки на 3 независимых домена сохранены; требуется предметная проверка каждого открытого источника. Непроверенное не выдавать за утверждённое."
+        "note": "Учтена французская региональная рецептурная традиция"
       },
       "photo": null,
-      "imagePublishingBlocked": true
+      "imagePublishingBlocked": true,
+      "editorialApproval": {
+        "status": "approved_by_user",
+        "scope": "all_100_recipe_cards_and_photo_briefs",
+        "note": "Пользователь 19.11.2026 утвердил все 100 рецептурных карточек сразу. Одобрение относится к текстам рецептов и техническим заданиям; оригинальные фотографии отсутствуют и отдельно не одобрены. Независимая проверка источников ещё требуется."
+      }
     },
     {
       "id": "world-salad-fr-010",
@@ -3030,11 +3143,15 @@
           "https://www.academiedugout.fr/recettes/salade-dendives-noix-et-roquefort-fromage-et-huile_12121_2",
           "https://frigolade.fr/recettes/salade-endives-roquefort-noix/"
         ],
-        "note": "Учтена французская региональная рецептурная традиция",
-        "reviewNote": "Ссылки на 3 независимых домена сохранены; требуется предметная проверка каждого открытого источника. Непроверенное не выдавать за утверждённое."
+        "note": "Учтена французская региональная рецептурная традиция"
       },
       "photo": null,
-      "imagePublishingBlocked": true
+      "imagePublishingBlocked": true,
+      "editorialApproval": {
+        "status": "approved_by_user",
+        "scope": "all_100_recipe_cards_and_photo_briefs",
+        "note": "Пользователь 19.11.2026 утвердил все 100 рецептурных карточек сразу. Одобрение относится к текстам рецептов и техническим заданиям; оригинальные фотографии отсутствуют и отдельно не одобрены. Независимая проверка источников ещё требуется."
+      }
     },
     {
       "id": "world-salad-es-001",
@@ -3133,11 +3250,15 @@
           "https://www.degustajaen.es/recetas/pipirrana-jaen/",
           "https://www.hogarmania.com/cocina/recetas/ensaladas-verduras/pipirrana-jaen-35145.html"
         ],
-        "note": "Пропорции пересчитаны для двух порций",
-        "reviewNote": "Ссылки на 3 независимых домена сохранены; требуется предметная проверка каждого открытого источника. Непроверенное не выдавать за утверждённое."
+        "note": "Пропорции пересчитаны для двух порций"
       },
       "photo": null,
-      "imagePublishingBlocked": true
+      "imagePublishingBlocked": true,
+      "editorialApproval": {
+        "status": "approved_by_user",
+        "scope": "all_100_recipe_cards_and_photo_briefs",
+        "note": "Пользователь 19.11.2026 утвердил все 100 рецептурных карточек сразу. Одобрение относится к текстам рецептов и техническим заданиям; оригинальные фотографии отсутствуют и отдельно не одобрены. Независимая проверка источников ещё требуется."
+      }
     },
     {
       "id": "world-salad-es-002",
@@ -3218,11 +3339,15 @@
           "https://elpais.com/gastronomia/recetas/2019/06/10/receta/1560200573_517283.html",
           "https://www.directoalpaladar.com/recetas-de-pescados-y-mariscos/esgarraet-valenciano-receta-de-semana-santa"
         ],
-        "note": "Пропорции пересчитаны для двух порций",
-        "reviewNote": "Ссылки на 3 независимых домена сохранены; требуется предметная проверка каждого открытого источника. Непроверенное не выдавать за утверждённое."
+        "note": "Пропорции пересчитаны для двух порций"
       },
       "photo": null,
-      "imagePublishingBlocked": true
+      "imagePublishingBlocked": true,
+      "editorialApproval": {
+        "status": "approved_by_user",
+        "scope": "all_100_recipe_cards_and_photo_briefs",
+        "note": "Пользователь 19.11.2026 утвердил все 100 рецептурных карточек сразу. Одобрение относится к текстам рецептов и техническим заданиям; оригинальные фотографии отсутствуют и отдельно не одобрены. Независимая проверка источников ещё требуется."
+      }
     },
     {
       "id": "world-salad-es-003",
@@ -3303,11 +3428,15 @@
           "https://www.recetasmallorquinas.es/2020/05/trampo-mallorquin.html",
           "https://diariodegastronomia.com/trampo-mallorquin-2/"
         ],
-        "note": "Пропорции пересчитаны для двух порций",
-        "reviewNote": "Ссылки на 3 независимых домена сохранены; требуется предметная проверка каждого открытого источника. Непроверенное не выдавать за утверждённое."
+        "note": "Пропорции пересчитаны для двух порций"
       },
       "photo": null,
-      "imagePublishingBlocked": true
+      "imagePublishingBlocked": true,
+      "editorialApproval": {
+        "status": "approved_by_user",
+        "scope": "all_100_recipe_cards_and_photo_briefs",
+        "note": "Пользователь 19.11.2026 утвердил все 100 рецептурных карточек сразу. Одобрение относится к текстам рецептов и техническим заданиям; оригинальные фотографии отсутствуют и отдельно не одобрены. Независимая проверка источников ещё требуется."
+      }
     },
     {
       "id": "world-salad-es-004",
@@ -3400,11 +3529,15 @@
           "https://www.recetassinlactosa.com/remojon-granadino-ensalada-de-naranja/",
           "https://recetasdecocina.elmundo.es/2026/03/remojon-granadino-receta-tradicional-y-casera.html"
         ],
-        "note": "Пропорции пересчитаны для двух порций",
-        "reviewNote": "Ссылки на 3 независимых домена сохранены; требуется предметная проверка каждого открытого источника. Непроверенное не выдавать за утверждённое."
+        "note": "Пропорции пересчитаны для двух порций"
       },
       "photo": null,
-      "imagePublishingBlocked": true
+      "imagePublishingBlocked": true,
+      "editorialApproval": {
+        "status": "approved_by_user",
+        "scope": "all_100_recipe_cards_and_photo_briefs",
+        "note": "Пользователь 19.11.2026 утвердил все 100 рецептурных карточек сразу. Одобрение относится к текстам рецептов и техническим заданиям; оригинальные фотографии отсутствуют и отдельно не одобрены. Независимая проверка источников ещё требуется."
+      }
     },
     {
       "id": "world-salad-es-005",
@@ -3503,11 +3636,15 @@
           "https://www.gastroteca.cat/en/receptes/empedrat/",
           "https://www.dia.es/recetas/receta/empedrat"
         ],
-        "note": "Empedrat подтверждён официальным Catalunya.com и Corpus de la Cuina Catalana на Gastroteca: отварная белая фасоль, вымоченная треска, томаты, лук, оливки, масло.",
-        "reviewNote": "Ссылки на 3 независимых домена сохранены; требуется предметная проверка каждого открытого источника. Непроверенное не выдавать за утверждённое."
+        "note": "Empedrat подтверждён официальным Catalunya.com и Corpus de la Cuina Catalana на Gastroteca: отварная белая фасоль, вымоченная треска, томаты, лук, оливки, масло."
       },
       "photo": null,
-      "imagePublishingBlocked": true
+      "imagePublishingBlocked": true,
+      "editorialApproval": {
+        "status": "approved_by_user",
+        "scope": "all_100_recipe_cards_and_photo_briefs",
+        "note": "Пользователь 19.11.2026 утвердил все 100 рецептурных карточек сразу. Одобрение относится к текстам рецептов и техническим заданиям; оригинальные фотографии отсутствуют и отдельно не одобрены. Независимая проверка источников ещё требуется."
+      }
     },
     {
       "id": "world-salad-es-006",
@@ -3624,11 +3761,15 @@
           "https://www.rtve.es/television/20130826/plantilla-receta-espana-directo/743448.shtml",
           "https://www.cuina.cat/es/recetas/ensalada-xato_10182213_117.html"
         ],
-        "note": "Пропорции пересчитаны для двух порций",
-        "reviewNote": "Ссылки на 3 независимых домена сохранены; требуется предметная проверка каждого открытого источника. Непроверенное не выдавать за утверждённое."
+        "note": "Пропорции пересчитаны для двух порций"
       },
       "photo": null,
-      "imagePublishingBlocked": true
+      "imagePublishingBlocked": true,
+      "editorialApproval": {
+        "status": "approved_by_user",
+        "scope": "all_100_recipe_cards_and_photo_briefs",
+        "note": "Пользователь 19.11.2026 утвердил все 100 рецептурных карточек сразу. Одобрение относится к текстам рецептов и техническим заданиям; оригинальные фотографии отсутствуют и отдельно не одобрены. Независимая проверка источников ещё требуется."
+      }
     },
     {
       "id": "world-salad-es-007",
@@ -3721,11 +3862,15 @@
           "https://www.viladecans.cat/es/recepta-esqueixada-de-bacalla",
           "https://www.bonviveur.es/recetas/esqueixada-de-bacalao"
         ],
-        "note": "Классическая esqueixada соответствует испанскому туристическому порталу и муниципальному рецепту Viladecans; треску разрывают на волокна, подают с сырой нарезкой овощей.",
-        "reviewNote": "Ссылки на 3 независимых домена сохранены; требуется предметная проверка каждого открытого источника. Непроверенное не выдавать за утверждённое."
+        "note": "Классическая esqueixada соответствует испанскому туристическому порталу и муниципальному рецепту Viladecans; треску разрывают на волокна, подают с сырой нарезкой овощей."
       },
       "photo": null,
-      "imagePublishingBlocked": true
+      "imagePublishingBlocked": true,
+      "editorialApproval": {
+        "status": "approved_by_user",
+        "scope": "all_100_recipe_cards_and_photo_briefs",
+        "note": "Пользователь 19.11.2026 утвердил все 100 рецептурных карточек сразу. Одобрение относится к текстам рецептов и техническим заданиям; оригинальные фотографии отсутствуют и отдельно не одобрены. Независимая проверка источников ещё требуется."
+      }
     },
     {
       "id": "world-salad-es-008",
@@ -3830,11 +3975,15 @@
           "https://recetivo.com/recetas/ensalada-campera",
           "https://www.bonviveur.es/recetas/ensalada-campera"
         ],
-        "note": "Пропорции пересчитаны для двух порций",
-        "reviewNote": "Ссылки на 3 независимых домена сохранены; требуется предметная проверка каждого открытого источника. Непроверенное не выдавать за утверждённое."
+        "note": "Пропорции пересчитаны для двух порций"
       },
       "photo": null,
-      "imagePublishingBlocked": true
+      "imagePublishingBlocked": true,
+      "editorialApproval": {
+        "status": "approved_by_user",
+        "scope": "all_100_recipe_cards_and_photo_briefs",
+        "note": "Пользователь 19.11.2026 утвердил все 100 рецептурных карточек сразу. Одобрение относится к текстам рецептов и техническим заданиям; оригинальные фотографии отсутствуют и отдельно не одобрены. Независимая проверка источников ещё требуется."
+      }
     },
     {
       "id": "world-salad-es-009",
@@ -3921,11 +4070,15 @@
           "https://www.directoalpaladar.com/recetas-de-ensaladas/ensalada-murciana-receta",
           "https://www.bonviveur.es/recetas/ensalada-murciana"
         ],
-        "note": "Пропорции пересчитаны для двух порций",
-        "reviewNote": "Ссылки на 3 независимых домена сохранены; требуется предметная проверка каждого открытого источника. Непроверенное не выдавать за утверждённое."
+        "note": "Пропорции пересчитаны для двух порций"
       },
       "photo": null,
-      "imagePublishingBlocked": true
+      "imagePublishingBlocked": true,
+      "editorialApproval": {
+        "status": "approved_by_user",
+        "scope": "all_100_recipe_cards_and_photo_briefs",
+        "note": "Пользователь 19.11.2026 утвердил все 100 рецептурных карточек сразу. Одобрение относится к текстам рецептов и техническим заданиям; оригинальные фотографии отсутствуют и отдельно не одобрены. Независимая проверка источников ещё требуется."
+      }
     },
     {
       "id": "world-salad-es-010",
@@ -4018,11 +4171,15 @@
           "https://menudatierra.eco/receta/ensalada-san-isidro/",
           "https://www.bonviveur.es/recetas/ensalada-de-san-isidro"
         ],
-        "note": "Пропорции пересчитаны для двух порций",
-        "reviewNote": "Ссылки на 3 независимых домена сохранены; требуется предметная проверка каждого открытого источника. Непроверенное не выдавать за утверждённое."
+        "note": "Пропорции пересчитаны для двух порций"
       },
       "photo": null,
-      "imagePublishingBlocked": true
+      "imagePublishingBlocked": true,
+      "editorialApproval": {
+        "status": "approved_by_user",
+        "scope": "all_100_recipe_cards_and_photo_briefs",
+        "note": "Пользователь 19.11.2026 утвердил все 100 рецептурных карточек сразу. Одобрение относится к текстам рецептов и техническим заданиям; оригинальные фотографии отсутствуют и отдельно не одобрены. Независимая проверка источников ещё требуется."
+      }
     },
     {
       "id": "world-salad-gr-001",
@@ -4121,11 +4278,15 @@
           "https://www.olivetomato.com/authentic-greek-salad/",
           "https://www.heartathens.com/food/taste/"
         ],
-        "note": "Технология и состав адаптированы для двух порций",
-        "reviewNote": "Ссылки на 3 независимых домена сохранены; требуется предметная проверка каждого открытого источника. Непроверенное не выдавать за утверждённое."
+        "note": "Технология и состав адаптированы для двух порций"
       },
       "photo": null,
-      "imagePublishingBlocked": true
+      "imagePublishingBlocked": true,
+      "editorialApproval": {
+        "status": "approved_by_user",
+        "scope": "all_100_recipe_cards_and_photo_briefs",
+        "note": "Пользователь 19.11.2026 утвердил все 100 рецептурных карточек сразу. Одобрение относится к текстам рецептов и техническим заданиям; оригинальные фотографии отсутствуют и отдельно не одобрены. Независимая проверка источников ещё требуется."
+      }
     },
     {
       "id": "world-salad-gr-002",
@@ -4212,11 +4373,15 @@
           "https://www.tasteatlas.com/dakos/recipe",
           "https://www.epikouria.com/recipes/dakos/"
         ],
-        "note": "Технология и состав адаптированы для двух порций",
-        "reviewNote": "Ссылки на 3 независимых домена сохранены; требуется предметная проверка каждого открытого источника. Непроверенное не выдавать за утверждённое."
+        "note": "Технология и состав адаптированы для двух порций"
       },
       "photo": null,
-      "imagePublishingBlocked": true
+      "imagePublishingBlocked": true,
+      "editorialApproval": {
+        "status": "approved_by_user",
+        "scope": "all_100_recipe_cards_and_photo_briefs",
+        "note": "Пользователь 19.11.2026 утвердил все 100 рецептурных карточек сразу. Одобрение относится к текстам рецептов и техническим заданиям; оригинальные фотографии отсутствуют и отдельно не одобрены. Независимая проверка источников ещё требуется."
+      }
     },
     {
       "id": "world-salad-gr-003",
@@ -4303,11 +4468,15 @@
           "https://www.kalliopiskitchen.com/recipes/marouli-salata/",
           "https://www.epikouria.com/recipes/maroulosalata/"
         ],
-        "note": "Технология и состав адаптированы для двух порций",
-        "reviewNote": "Ссылки на 3 независимых домена сохранены; требуется предметная проверка каждого открытого источника. Непроверенное не выдавать за утверждённое."
+        "note": "Технология и состав адаптированы для двух порций"
       },
       "photo": null,
-      "imagePublishingBlocked": true
+      "imagePublishingBlocked": true,
+      "editorialApproval": {
+        "status": "approved_by_user",
+        "scope": "all_100_recipe_cards_and_photo_briefs",
+        "note": "Пользователь 19.11.2026 утвердил все 100 рецептурных карточек сразу. Одобрение относится к текстам рецептов и техническим заданиям; оригинальные фотографии отсутствуют и отдельно не одобрены. Независимая проверка источников ещё требуется."
+      }
     },
     {
       "id": "world-salad-gr-004",
@@ -4388,11 +4557,15 @@
           "https://www.poupadou.com/blog/en/recipe-horta-vrasta-greek-boiled-leafy-greens-salad/",
           "https://justrecipes.net/en/recipes/horta-vrasta/"
         ],
-        "note": "Технология и состав адаптированы для двух порций",
-        "reviewNote": "Ссылки на 3 независимых домена сохранены; требуется предметная проверка каждого открытого источника. Непроверенное не выдавать за утверждённое."
+        "note": "Технология и состав адаптированы для двух порций"
       },
       "photo": null,
-      "imagePublishingBlocked": true
+      "imagePublishingBlocked": true,
+      "editorialApproval": {
+        "status": "approved_by_user",
+        "scope": "all_100_recipe_cards_and_photo_briefs",
+        "note": "Пользователь 19.11.2026 утвердил все 100 рецептурных карточек сразу. Одобрение относится к текстам рецептов и техническим заданиям; оригинальные фотографии отсутствуют и отдельно не одобрены. Независимая проверка источников ещё требуется."
+      }
     },
     {
       "id": "world-salad-gr-005",
@@ -4485,11 +4658,15 @@
           "https://www.cyprusfoodmuseum.com/en/sylloges/paradosiakes-syntages/beetroot-salad",
           "https://www.dimitrasdishes.com/greek-beet-yogurt-salad-pantzarosalata/"
         ],
-        "note": "Технология и состав адаптированы для двух порций",
-        "reviewNote": "Ссылки на 3 независимых домена сохранены; требуется предметная проверка каждого открытого источника. Непроверенное не выдавать за утверждённое."
+        "note": "Технология и состав адаптированы для двух порций"
       },
       "photo": null,
-      "imagePublishingBlocked": true
+      "imagePublishingBlocked": true,
+      "editorialApproval": {
+        "status": "approved_by_user",
+        "scope": "all_100_recipe_cards_and_photo_briefs",
+        "note": "Пользователь 19.11.2026 утвердил все 100 рецептурных карточек сразу. Одобрение относится к текстам рецептов и техническим заданиям; оригинальные фотографии отсутствуют и отдельно не одобрены. Независимая проверка источников ещё требуется."
+      }
     },
     {
       "id": "world-salad-gr-006",
@@ -4588,11 +4765,15 @@
           "https://www.athensfoodonfoot.com/recipes/greek-lemon-herb-potato-salad-patatosalata/",
           "https://www.epikouria.com/recipes/patatosalata/"
         ],
-        "note": "Три рецепта Greek patatosalata без майонеза, с зеленью, луком, лимоном и оливковым маслом; добавлен укроп, подтвержденный рецептурными источниками.",
-        "reviewNote": "Ссылки на 3 независимых домена сохранены; требуется предметная проверка каждого открытого источника. Непроверенное не выдавать за утверждённое."
+        "note": "Три рецепта Greek patatosalata без майонеза, с зеленью, луком, лимоном и оливковым маслом; добавлен укроп, подтвержденный рецептурными источниками."
       },
       "photo": null,
-      "imagePublishingBlocked": true
+      "imagePublishingBlocked": true,
+      "editorialApproval": {
+        "status": "approved_by_user",
+        "scope": "all_100_recipe_cards_and_photo_briefs",
+        "note": "Пользователь 19.11.2026 утвердил все 100 рецептурных карточек сразу. Одобрение относится к текстам рецептов и техническим заданиям; оригинальные фотографии отсутствуют и отдельно не одобрены. Независимая проверка источников ещё требуется."
+      }
     },
     {
       "id": "world-salad-gr-007",
@@ -4685,11 +4866,15 @@
           "https://www.jewishfoodsociety.org/recipes/fassolia-piaz-greek-white-bean-salad",
           "https://www.greektastes.com/bean-salad-fasolia-xera-salata/"
         ],
-        "note": "Технология и состав адаптированы для двух порций",
-        "reviewNote": "Ссылки на 3 независимых домена сохранены; требуется предметная проверка каждого открытого источника. Непроверенное не выдавать за утверждённое."
+        "note": "Технология и состав адаптированы для двух порций"
       },
       "photo": null,
-      "imagePublishingBlocked": true
+      "imagePublishingBlocked": true,
+      "editorialApproval": {
+        "status": "approved_by_user",
+        "scope": "all_100_recipe_cards_and_photo_briefs",
+        "note": "Пользователь 19.11.2026 утвердил все 100 рецептурных карточек сразу. Одобрение относится к текстам рецептов и техническим заданиям; оригинальные фотографии отсутствуют и отдельно не одобрены. Независимая проверка источников ещё требуется."
+      }
     },
     {
       "id": "world-salad-gr-008",
@@ -4782,11 +4967,15 @@
           "https://messino.gr/en/recipes/greek-cabbage-and-carrot-salad-politiki-salad/",
           "https://www.monasticrepublic.com/en/recipes/salad/greek-cabbage-salad-politiki"
         ],
-        "note": "Технология и состав адаптированы для двух порций",
-        "reviewNote": "Ссылки на 3 независимых домена сохранены; требуется предметная проверка каждого открытого источника. Непроверенное не выдавать за утверждённое."
+        "note": "Технология и состав адаптированы для двух порций"
       },
       "photo": null,
-      "imagePublishingBlocked": true
+      "imagePublishingBlocked": true,
+      "editorialApproval": {
+        "status": "approved_by_user",
+        "scope": "all_100_recipe_cards_and_photo_briefs",
+        "note": "Пользователь 19.11.2026 утвердил все 100 рецептурных карточек сразу. Одобрение относится к текстам рецептов и техническим заданиям; оригинальные фотографии отсутствуют и отдельно не одобрены. Независимая проверка источников ещё требуется."
+      }
     },
     {
       "id": "world-salad-gr-009",
@@ -4873,11 +5062,15 @@
           "https://www.greekcookingmadeeasy.com/allrecipes/green-beans-salad?rq=green+beans",
           "https://www.epikouria.com/recipes/ampelofasoula/"
         ],
-        "note": "Технология и состав адаптированы для двух порций",
-        "reviewNote": "Ссылки на 3 независимых домена сохранены; требуется предметная проверка каждого открытого источника. Непроверенное не выдавать за утверждённое."
+        "note": "Технология и состав адаптированы для двух порций"
       },
       "photo": null,
-      "imagePublishingBlocked": true
+      "imagePublishingBlocked": true,
+      "editorialApproval": {
+        "status": "approved_by_user",
+        "scope": "all_100_recipe_cards_and_photo_briefs",
+        "note": "Пользователь 19.11.2026 утвердил все 100 рецептурных карточек сразу. Одобрение относится к текстам рецептов и техническим заданиям; оригинальные фотографии отсутствуют и отдельно не одобрены. Независимая проверка источников ещё требуется."
+      }
     },
     {
       "id": "world-salad-gr-010",
@@ -4970,11 +5163,15 @@
           "https://www.greekboston.com/food/black-eyed-pea-salad-recipe/",
           "https://www.dianekochilas.com/mavromatika-salata-black-eyed-pea-salad-mastiha-vinaigrette/"
         ],
-        "note": "Технология и состав адаптированы для двух порций",
-        "reviewNote": "Ссылки на 3 независимых домена сохранены; требуется предметная проверка каждого открытого источника. Непроверенное не выдавать за утверждённое."
+        "note": "Технология и состав адаптированы для двух порций"
       },
       "photo": null,
-      "imagePublishingBlocked": true
+      "imagePublishingBlocked": true,
+      "editorialApproval": {
+        "status": "approved_by_user",
+        "scope": "all_100_recipe_cards_and_photo_briefs",
+        "note": "Пользователь 19.11.2026 утвердил все 100 рецептурных карточек сразу. Одобрение относится к текстам рецептов и техническим заданиям; оригинальные фотографии отсутствуют и отдельно не одобрены. Независимая проверка источников ещё требуется."
+      }
     },
     {
       "id": "world-salad-tr-001",
@@ -5067,11 +5264,15 @@
           "https://www.dimitrasdishes.com/turkish-shepherds-salad/",
           "https://www.unicornsinthekitchen.com/turkish-shepherd-salad-coban-salatasi/"
         ],
-        "note": "Турецкая региональная рецептура, на двоих",
-        "reviewNote": "Ссылки на 3 независимых домена сохранены; требуется предметная проверка каждого открытого источника. Непроверенное не выдавать за утверждённое."
+        "note": "Турецкая региональная рецептура, на двоих"
       },
       "photo": null,
-      "imagePublishingBlocked": true
+      "imagePublishingBlocked": true,
+      "editorialApproval": {
+        "status": "approved_by_user",
+        "scope": "all_100_recipe_cards_and_photo_briefs",
+        "note": "Пользователь 19.11.2026 утвердил все 100 рецептурных карточек сразу. Одобрение относится к текстам рецептов и техническим заданиям; оригинальные фотографии отсутствуют и отдельно не одобрены. Независимая проверка источников ещё требуется."
+      }
     },
     {
       "id": "world-salad-tr-002",
@@ -5170,11 +5371,15 @@
           "https://yemek.com/tarif/gavurdagi/",
           "https://esenler.bel.tr/esenler-kadin/yemek-tarifleri/gavurdagi-salatasi/"
         ],
-        "note": "Турецкая региональная рецептура, на двоих",
-        "reviewNote": "Ссылки на 3 независимых домена сохранены; требуется предметная проверка каждого открытого источника. Непроверенное не выдавать за утверждённое."
+        "note": "Турецкая региональная рецептура, на двоих"
       },
       "photo": null,
-      "imagePublishingBlocked": true
+      "imagePublishingBlocked": true,
+      "editorialApproval": {
+        "status": "approved_by_user",
+        "scope": "all_100_recipe_cards_and_photo_briefs",
+        "note": "Пользователь 19.11.2026 утвердил все 100 рецептурных карточек сразу. Одобрение относится к текстам рецептов и техническим заданиям; оригинальные фотографии отсутствуют и отдельно не одобрены. Независимая проверка источников ещё требуется."
+      }
     },
     {
       "id": "world-salad-tr-003",
@@ -5279,11 +5484,15 @@
           "https://www.seriouseats.com/turkish-bean-salad-piyaz-recipe",
           "https://ozlemsturkishtable.com/2014/06/antalya-style-white-bean-salad-with-tahini-piyaz/"
         ],
-        "note": "Турецкая региональная рецептура, на двоих",
-        "reviewNote": "Ссылки на 3 независимых домена сохранены; требуется предметная проверка каждого открытого источника. Непроверенное не выдавать за утверждённое."
+        "note": "Турецкая региональная рецептура, на двоих"
       },
       "photo": null,
-      "imagePublishingBlocked": true
+      "imagePublishingBlocked": true,
+      "editorialApproval": {
+        "status": "approved_by_user",
+        "scope": "all_100_recipe_cards_and_photo_briefs",
+        "note": "Пользователь 19.11.2026 утвердил все 100 рецептурных карточек сразу. Одобрение относится к текстам рецептов и техническим заданиям; оригинальные фотографии отсутствуют и отдельно не одобрены. Независимая проверка источников ещё требуется."
+      }
     },
     {
       "id": "world-salad-tr-004",
@@ -5394,11 +5603,15 @@
           "https://ekitap.ktb.gov.tr/TR-79919/kisir.html",
           "https://www.themediterraneandish.com/kisir-turkish-bulgur-salad/"
         ],
-        "note": "Турецкая региональная рецептура, на двоих",
-        "reviewNote": "Ссылки на 3 независимых домена сохранены; требуется предметная проверка каждого открытого источника. Непроверенное не выдавать за утверждённое."
+        "note": "Турецкая региональная рецептура, на двоих"
       },
       "photo": null,
-      "imagePublishingBlocked": true
+      "imagePublishingBlocked": true,
+      "editorialApproval": {
+        "status": "approved_by_user",
+        "scope": "all_100_recipe_cards_and_photo_briefs",
+        "note": "Пользователь 19.11.2026 утвердил все 100 рецептурных карточек сразу. Одобрение относится к текстам рецептов и техническим заданиям; оригинальные фотографии отсутствуют и отдельно не одобрены. Независимая проверка источников ещё требуется."
+      }
     },
     {
       "id": "world-salad-tr-005",
@@ -5503,11 +5716,15 @@
           "https://chopped.com/recipe/spicy-ezme-salad-acili-ezme",
           "https://ozlemsturkishtable.com/2010/08/spicy-tomato-salad-acili-ezme/"
         ],
-        "note": "Турецкая региональная рецептура, на двоих",
-        "reviewNote": "Ссылки на 3 независимых домена сохранены; требуется предметная проверка каждого открытого источника. Непроверенное не выдавать за утверждённое."
+        "note": "Турецкая региональная рецептура, на двоих"
       },
       "photo": null,
-      "imagePublishingBlocked": true
+      "imagePublishingBlocked": true,
+      "editorialApproval": {
+        "status": "approved_by_user",
+        "scope": "all_100_recipe_cards_and_photo_briefs",
+        "note": "Пользователь 19.11.2026 утвердил все 100 рецептурных карточек сразу. Одобрение относится к текстам рецептов и техническим заданиям; оригинальные фотографии отсутствуют и отдельно не одобрены. Независимая проверка источников ещё требуется."
+      }
     },
     {
       "id": "world-salad-tr-006",
@@ -5600,11 +5817,15 @@
           "https://www.olivetolive.com/en/news/4/yemek-tarifleri/1020/patlican-salatasi.aspx",
           "https://www.unicornsinthekitchen.com/turkish-eggplant-salad-patlican-salatasi/"
         ],
-        "note": "Турецкая региональная рецептура, на двоих",
-        "reviewNote": "Ссылки на 3 независимых домена сохранены; требуется предметная проверка каждого открытого источника. Непроверенное не выдавать за утверждённое."
+        "note": "Турецкая региональная рецептура, на двоих"
       },
       "photo": null,
-      "imagePublishingBlocked": true
+      "imagePublishingBlocked": true,
+      "editorialApproval": {
+        "status": "approved_by_user",
+        "scope": "all_100_recipe_cards_and_photo_briefs",
+        "note": "Пользователь 19.11.2026 утвердил все 100 рецептурных карточек сразу. Одобрение относится к текстам рецептов и техническим заданиям; оригинальные фотографии отсутствуют и отдельно не одобрены. Независимая проверка источников ещё требуется."
+      }
     },
     {
       "id": "world-salad-tr-007",
@@ -5685,11 +5906,15 @@
           "https://tasteofturkiye.org/en/recipes/yogurtlu-semizotu-purslane-with-garlic-yogurt/",
           "https://ozlemsturkishtable.com/2011/06/yogurtlu-semizotu-purslane-with-garlic-yoghurt/"
         ],
-        "note": "Турецкая региональная рецептура, на двоих",
-        "reviewNote": "Ссылки на 3 независимых домена сохранены; требуется предметная проверка каждого открытого источника. Непроверенное не выдавать за утверждённое."
+        "note": "Турецкая региональная рецептура, на двоих"
       },
       "photo": null,
-      "imagePublishingBlocked": true
+      "imagePublishingBlocked": true,
+      "editorialApproval": {
+        "status": "approved_by_user",
+        "scope": "all_100_recipe_cards_and_photo_briefs",
+        "note": "Пользователь 19.11.2026 утвердил все 100 рецептурных карточек сразу. Одобрение относится к текстам рецептов и техническим заданиям; оригинальные фотографии отсутствуют и отдельно не одобрены. Независимая проверка источников ещё требуется."
+      }
     },
     {
       "id": "world-salad-tr-008",
@@ -5788,11 +6013,15 @@
           "https://www.unicornsinthekitchen.com/turkish-potato-salad/",
           "https://www.giverecipe.com/turkish-potato-salad/"
         ],
-        "note": "Турецкая региональная рецептура, на двоих",
-        "reviewNote": "Ссылки на 3 независимых домена сохранены; требуется предметная проверка каждого открытого источника. Непроверенное не выдавать за утверждённое."
+        "note": "Турецкая региональная рецептура, на двоих"
       },
       "photo": null,
-      "imagePublishingBlocked": true
+      "imagePublishingBlocked": true,
+      "editorialApproval": {
+        "status": "approved_by_user",
+        "scope": "all_100_recipe_cards_and_photo_briefs",
+        "note": "Пользователь 19.11.2026 утвердил все 100 рецептурных карточек сразу. Одобрение относится к текстам рецептов и техническим заданиям; оригинальные фотографии отсутствуют и отдельно не одобрены. Независимая проверка источников ещё требуется."
+      }
     },
     {
       "id": "world-salad-tr-009",
@@ -5873,11 +6102,15 @@
           "https://myturkishkitchen.blogspot.com/2009/10/mor-lahana-salatasi.html",
           "https://jalesturkishdelights.com/mor-lahana-salatasi/"
         ],
-        "note": "Турецкая региональная рецептура, на двоих",
-        "reviewNote": "Ссылки на 3 независимых домена сохранены; требуется предметная проверка каждого открытого источника. Непроверенное не выдавать за утверждённое."
+        "note": "Турецкая региональная рецептура, на двоих"
       },
       "photo": null,
-      "imagePublishingBlocked": true
+      "imagePublishingBlocked": true,
+      "editorialApproval": {
+        "status": "approved_by_user",
+        "scope": "all_100_recipe_cards_and_photo_briefs",
+        "note": "Пользователь 19.11.2026 утвердил все 100 рецептурных карточек сразу. Одобрение относится к текстам рецептов и техническим заданиям; оригинальные фотографии отсутствуют и отдельно не одобрены. Независимая проверка источников ещё требуется."
+      }
     },
     {
       "id": "world-salad-tr-010",
@@ -5964,11 +6197,15 @@
           "https://www.pisirsem.com.tr/en/recipes/havuc-tarator.html",
           "https://jamilghar.com/havuc-tarator/"
         ],
-        "note": "Турецкая региональная рецептура, на двоих",
-        "reviewNote": "Ссылки на 3 независимых домена сохранены; требуется предметная проверка каждого открытого источника. Непроверенное не выдавать за утверждённое."
+        "note": "Турецкая региональная рецептура, на двоих"
       },
       "photo": null,
-      "imagePublishingBlocked": true
+      "imagePublishingBlocked": true,
+      "editorialApproval": {
+        "status": "approved_by_user",
+        "scope": "all_100_recipe_cards_and_photo_briefs",
+        "note": "Пользователь 19.11.2026 утвердил все 100 рецептурных карточек сразу. Одобрение относится к текстам рецептов и техническим заданиям; оригинальные фотографии отсутствуют и отдельно не одобрены. Независимая проверка источников ещё требуется."
+      }
     },
     {
       "id": "world-salad-lb-001",
@@ -6067,11 +6304,15 @@
           "https://sofrabeirut.com/recipes/tabbouleh",
           "https://www.themaadad.com/recipes/authentic-tabbouleh"
         ],
-        "note": "Фактическое соотношение ингредиентов на две порции, финальная проверка редактора требуется",
-        "reviewNote": "Ссылки на 3 независимых домена сохранены; требуется предметная проверка каждого открытого источника. Непроверенное не выдавать за утверждённое."
+        "note": "Фактическое соотношение ингредиентов на две порции, финальная проверка редактора требуется"
       },
       "photo": null,
-      "imagePublishingBlocked": true
+      "imagePublishingBlocked": true,
+      "editorialApproval": {
+        "status": "approved_by_user",
+        "scope": "all_100_recipe_cards_and_photo_briefs",
+        "note": "Пользователь 19.11.2026 утвердил все 100 рецептурных карточек сразу. Одобрение относится к текстам рецептов и техническим заданиям; оригинальные фотографии отсутствуют и отдельно не одобрены. Независимая проверка источников ещё требуется."
+      }
     },
     {
       "id": "world-salad-lb-002",
@@ -6194,11 +6435,15 @@
           "https://www.bonappetit.com/recipe/fattoush-salad",
           "https://sofrabeirut.com/recipes/fattoush"
         ],
-        "note": "Фактическое соотношение ингредиентов на две порции, финальная проверка редактора требуется",
-        "reviewNote": "Ссылки на 3 независимых домена сохранены; требуется предметная проверка каждого открытого источника. Непроверенное не выдавать за утверждённое."
+        "note": "Фактическое соотношение ингредиентов на две порции, финальная проверка редактора требуется"
       },
       "photo": null,
-      "imagePublishingBlocked": true
+      "imagePublishingBlocked": true,
+      "editorialApproval": {
+        "status": "approved_by_user",
+        "scope": "all_100_recipe_cards_and_photo_briefs",
+        "note": "Пользователь 19.11.2026 утвердил все 100 рецептурных карточек сразу. Одобрение относится к текстам рецептов и техническим заданиям; оригинальные фотографии отсутствуют и отдельно не одобрены. Независимая проверка источников ещё требуется."
+      }
     },
     {
       "id": "world-salad-lb-003",
@@ -6291,11 +6536,15 @@
           "https://www.adonisspices.com/directions.php?id=18",
           "https://cookpad.com/eng/recipes/4533354"
         ],
-        "note": "Фактическое соотношение ингредиентов на две порции, финальная проверка редактора требуется",
-        "reviewNote": "Ссылки на 3 независимых домена сохранены; требуется предметная проверка каждого открытого источника. Непроверенное не выдавать за утверждённое."
+        "note": "Фактическое соотношение ингредиентов на две порции, финальная проверка редактора требуется"
       },
       "photo": null,
-      "imagePublishingBlocked": true
+      "imagePublishingBlocked": true,
+      "editorialApproval": {
+        "status": "approved_by_user",
+        "scope": "all_100_recipe_cards_and_photo_briefs",
+        "note": "Пользователь 19.11.2026 утвердил все 100 рецептурных карточек сразу. Одобрение относится к текстам рецептов и техническим заданиям; оригинальные фотографии отсутствуют и отдельно не одобрены. Независимая проверка источников ещё требуется."
+      }
     },
     {
       "id": "world-salad-lb-004",
@@ -6382,11 +6631,15 @@
           "https://www.hungrypaprikas.com/malfouf-salad/",
           "https://www.bylena.com/recipe/1550/Lebanese-Cabbage-Salad-Malfouf-Salad/"
         ],
-        "note": "Фактическое соотношение ингредиентов на две порции, финальная проверка редактора требуется",
-        "reviewNote": "Ссылки на 3 независимых домена сохранены; требуется предметная проверка каждого открытого источника. Непроверенное не выдавать за утверждённое."
+        "note": "Фактическое соотношение ингредиентов на две порции, финальная проверка редактора требуется"
       },
       "photo": null,
-      "imagePublishingBlocked": true
+      "imagePublishingBlocked": true,
+      "editorialApproval": {
+        "status": "approved_by_user",
+        "scope": "all_100_recipe_cards_and_photo_briefs",
+        "note": "Пользователь 19.11.2026 утвердил все 100 рецептурных карточек сразу. Одобрение относится к текстам рецептов и техническим заданиям; оригинальные фотографии отсутствуют и отдельно не одобрены. Независимая проверка источников ещё требуется."
+      }
     },
     {
       "id": "world-salad-lb-005",
@@ -6473,11 +6726,15 @@
           "https://www.simplyleb.com/recipe/lebanese-cucumber-yogurt-salad/",
           "https://www.discoverlebanon.com/en/recipes/cucumber-yogurt-salad.php"
         ],
-        "note": "Фактическое соотношение ингредиентов на две порции, финальная проверка редактора требуется",
-        "reviewNote": "Ссылки на 3 независимых домена сохранены; требуется предметная проверка каждого открытого источника. Непроверенное не выдавать за утверждённое."
+        "note": "Фактическое соотношение ингредиентов на две порции, финальная проверка редактора требуется"
       },
       "photo": null,
-      "imagePublishingBlocked": true
+      "imagePublishingBlocked": true,
+      "editorialApproval": {
+        "status": "approved_by_user",
+        "scope": "all_100_recipe_cards_and_photo_briefs",
+        "note": "Пользователь 19.11.2026 утвердил все 100 рецептурных карточек сразу. Одобрение относится к текстам рецептов и техническим заданиям; оригинальные фотографии отсутствуют и отдельно не одобрены. Независимая проверка источников ещё требуется."
+      }
     },
     {
       "id": "world-salad-lb-006",
@@ -6570,11 +6827,15 @@
           "https://thelittleferrarokitchen.com/lebanese-potato-salad-with-sumac/",
           "https://www.talasoubra.com/lebanese-potato-salad"
         ],
-        "note": "Ливанский картофельный салат с петрушкой, мятой, луком, лимоном, маслом, в источниках встречается сумах.",
-        "reviewNote": "Ссылки на 3 независимых домена сохранены; требуется предметная проверка каждого открытого источника. Непроверенное не выдавать за утверждённое."
+        "note": "Ливанский картофельный салат с петрушкой, мятой, луком, лимоном, маслом, в источниках встречается сумах."
       },
       "photo": null,
-      "imagePublishingBlocked": true
+      "imagePublishingBlocked": true,
+      "editorialApproval": {
+        "status": "approved_by_user",
+        "scope": "all_100_recipe_cards_and_photo_briefs",
+        "note": "Пользователь 19.11.2026 утвердил все 100 рецептурных карточек сразу. Одобрение относится к текстам рецептов и техническим заданиям; оригинальные фотографии отсутствуют и отдельно не одобрены. Независимая проверка источников ещё требуется."
+      }
     },
     {
       "id": "world-salad-lb-007",
@@ -6667,11 +6928,15 @@
           "https://www.astray.com/recipes/?show=Lebanese+green+bean+salad",
           "https://abouteating.com/2020/08/06/comfort-food-from-lebanon/"
         ],
-        "note": "Удалена ссылка на иной рецепт loubieh bzeit (тушение фасоли с томатами); заменена на три источника холодного салата из зелёной фасоли с лимоном.",
-        "reviewNote": "Ссылки на 3 независимых домена сохранены; требуется предметная проверка каждого открытого источника. Непроверенное не выдавать за утверждённое."
+        "note": "Удалена ссылка на иной рецепт loubieh bzeit (тушение фасоли с томатами); заменена на три источника холодного салата из зелёной фасоли с лимоном."
       },
       "photo": null,
-      "imagePublishingBlocked": true
+      "imagePublishingBlocked": true,
+      "editorialApproval": {
+        "status": "approved_by_user",
+        "scope": "all_100_recipe_cards_and_photo_briefs",
+        "note": "Пользователь 19.11.2026 утвердил все 100 рецептурных карточек сразу. Одобрение относится к текстам рецептов и техническим заданиям; оригинальные фотографии отсутствуют и отдельно не одобрены. Независимая проверка источников ещё требуется."
+      }
     },
     {
       "id": "world-salad-lb-008",
@@ -6764,11 +7029,15 @@
           "https://zaatarandzaytoun.com/chickpea-salad/",
           "https://www.tasteofbeirut.com/chickpea-salad/"
         ],
-        "note": "Фактическое соотношение ингредиентов на две порции, финальная проверка редактора требуется",
-        "reviewNote": "Ссылки на 3 независимых домена сохранены; требуется предметная проверка каждого открытого источника. Непроверенное не выдавать за утверждённое."
+        "note": "Фактическое соотношение ингредиентов на две порции, финальная проверка редактора требуется"
       },
       "photo": null,
-      "imagePublishingBlocked": true
+      "imagePublishingBlocked": true,
+      "editorialApproval": {
+        "status": "approved_by_user",
+        "scope": "all_100_recipe_cards_and_photo_briefs",
+        "note": "Пользователь 19.11.2026 утвердил все 100 рецептурных карточек сразу. Одобрение относится к текстам рецептов и техническим заданиям; оригинальные фотографии отсутствуют и отдельно не одобрены. Независимая проверка источников ещё требуется."
+      }
     },
     {
       "id": "world-salad-lb-009",
@@ -6861,11 +7130,15 @@
           "https://www.themediterraneandish.com/arugula-salad/",
           "https://zaatarandzaytoun.com/rocket-salad/"
         ],
-        "note": "Фактическое соотношение ингредиентов на две порции, финальная проверка редактора требуется",
-        "reviewNote": "Ссылки на 3 независимых домена сохранены; требуется предметная проверка каждого открытого источника. Непроверенное не выдавать за утверждённое."
+        "note": "Фактическое соотношение ингредиентов на две порции, финальная проверка редактора требуется"
       },
       "photo": null,
-      "imagePublishingBlocked": true
+      "imagePublishingBlocked": true,
+      "editorialApproval": {
+        "status": "approved_by_user",
+        "scope": "all_100_recipe_cards_and_photo_briefs",
+        "note": "Пользователь 19.11.2026 утвердил все 100 рецептурных карточек сразу. Одобрение относится к текстам рецептов и техническим заданиям; оригинальные фотографии отсутствуют и отдельно не одобрены. Независимая проверка источников ещё требуется."
+      }
     },
     {
       "id": "world-salad-lb-010",
@@ -6946,11 +7219,15 @@
           "https://www.discoverlebanon.com/en/recipes/green_thyme_salad.php",
           "https://lebanesegarlicsauce.com/salatit-zaatar-akhdar-fresh-thyme-salad/"
         ],
-        "note": "Следуем lebanese green thyme salad (zaatar akhdar): листья, лук, лимон, оливковое масло; помидоры убраны как нестандартная добавка.",
-        "reviewNote": "Ссылки на 3 независимых домена сохранены; требуется предметная проверка каждого открытого источника. Непроверенное не выдавать за утверждённое."
+        "note": "Следуем lebanese green thyme salad (zaatar akhdar): листья, лук, лимон, оливковое масло; помидоры убраны как нестандартная добавка."
       },
       "photo": null,
-      "imagePublishingBlocked": true
+      "imagePublishingBlocked": true,
+      "editorialApproval": {
+        "status": "approved_by_user",
+        "scope": "all_100_recipe_cards_and_photo_briefs",
+        "note": "Пользователь 19.11.2026 утвердил все 100 рецептурных карточек сразу. Одобрение относится к текстам рецептов и техническим заданиям; оригинальные фотографии отсутствуют и отдельно не одобрены. Независимая проверка источников ещё требуется."
+      }
     },
     {
       "id": "world-salad-jp-001",
@@ -7037,11 +7314,15 @@
           "https://recipin.jp/en/recipes/sunomono",
           "https://www.mrpantry.com/recipes/sunomono-cucumber-and-wakame-salad"
         ],
-        "note": "Источники, техника и 2 порции; для части блюд современная японская кухня",
-        "reviewNote": "Ссылки на 3 независимых домена сохранены; требуется предметная проверка каждого открытого источника. Непроверенное не выдавать за утверждённое."
+        "note": "Источники, техника и 2 порции; для части блюд современная японская кухня"
       },
       "photo": null,
-      "imagePublishingBlocked": true
+      "imagePublishingBlocked": true,
+      "editorialApproval": {
+        "status": "approved_by_user",
+        "scope": "all_100_recipe_cards_and_photo_briefs",
+        "note": "Пользователь 19.11.2026 утвердил все 100 рецептурных карточек сразу. Одобрение относится к текстам рецептов и техническим заданиям; оригинальные фотографии отсутствуют и отдельно не одобрены. Независимая проверка источников ещё требуется."
+      }
     },
     {
       "id": "world-salad-jp-002",
@@ -7134,11 +7415,15 @@
           "https://norecipes.com/seaweed-salad-recipe/",
           "https://www.forkin.io/recipes/wakame-seaweed-salad-with-sesame-dressing"
         ],
-        "note": "Источники, техника и 2 порции; для части блюд современная японская кухня",
-        "reviewNote": "Ссылки на 3 независимых домена сохранены; требуется предметная проверка каждого открытого источника. Непроверенное не выдавать за утверждённое."
+        "note": "Источники, техника и 2 порции; для части блюд современная японская кухня"
       },
       "photo": null,
-      "imagePublishingBlocked": true
+      "imagePublishingBlocked": true,
+      "editorialApproval": {
+        "status": "approved_by_user",
+        "scope": "all_100_recipe_cards_and_photo_briefs",
+        "note": "Пользователь 19.11.2026 утвердил все 100 рецептурных карточек сразу. Одобрение относится к текстам рецептов и техническим заданиям; оригинальные фотографии отсутствуют и отдельно не одобрены. Независимая проверка источников ещё требуется."
+      }
     },
     {
       "id": "world-salad-jp-003",
@@ -7219,11 +7504,15 @@
           "https://www.theintrepideater.com/japanese-spinach-goma-ae/",
           "https://www.chopstickchronicles.com/spinach-goma-ae/"
         ],
-        "note": "Источники, техника и 2 порции; для части блюд современная японская кухня",
-        "reviewNote": "Ссылки на 3 независимых домена сохранены; требуется предметная проверка каждого открытого источника. Непроверенное не выдавать за утверждённое."
+        "note": "Источники, техника и 2 порции; для части блюд современная японская кухня"
       },
       "photo": null,
-      "imagePublishingBlocked": true
+      "imagePublishingBlocked": true,
+      "editorialApproval": {
+        "status": "approved_by_user",
+        "scope": "all_100_recipe_cards_and_photo_briefs",
+        "note": "Пользователь 19.11.2026 утвердил все 100 рецептурных карточек сразу. Одобрение относится к текстам рецептов и техническим заданиям; оригинальные фотографии отсутствуют и отдельно не одобрены. Независимая проверка источников ещё требуется."
+      }
     },
     {
       "id": "world-salad-jp-004",
@@ -7316,11 +7605,15 @@
           "https://japanesecooking101.com/potato-salad-recipe/",
           "https://www.chopstickchronicles.com/japanese-potato-salad/"
         ],
-        "note": "Источники, техника и 2 порции; для части блюд современная японская кухня",
-        "reviewNote": "Ссылки на 3 независимых домена сохранены; требуется предметная проверка каждого открытого источника. Непроверенное не выдавать за утверждённое."
+        "note": "Источники, техника и 2 порции; для части блюд современная японская кухня"
       },
       "photo": null,
-      "imagePublishingBlocked": true
+      "imagePublishingBlocked": true,
+      "editorialApproval": {
+        "status": "approved_by_user",
+        "scope": "all_100_recipe_cards_and_photo_briefs",
+        "note": "Пользователь 19.11.2026 утвердил все 100 рецептурных карточек сразу. Одобрение относится к текстам рецептов и техническим заданиям; оригинальные фотографии отсутствуют и отдельно не одобрены. Независимая проверка источников ещё требуется."
+      }
     },
     {
       "id": "world-salad-jp-005",
@@ -7425,11 +7718,15 @@
           "https://japan.recipetineats.com/japanese-vermicelli-salad-harusame-salad/",
           "https://japanesecooking101.com/harusame-salad-recipe/"
         ],
-        "note": "Источники, техника и 2 порции; для части блюд современная японская кухня",
-        "reviewNote": "Ссылки на 3 независимых домена сохранены; требуется предметная проверка каждого открытого источника. Непроверенное не выдавать за утверждённое."
+        "note": "Источники, техника и 2 порции; для части блюд современная японская кухня"
       },
       "photo": null,
-      "imagePublishingBlocked": true
+      "imagePublishingBlocked": true,
+      "editorialApproval": {
+        "status": "approved_by_user",
+        "scope": "all_100_recipe_cards_and_photo_briefs",
+        "note": "Пользователь 19.11.2026 утвердил все 100 рецептурных карточек сразу. Одобрение относится к текстам рецептов и техническим заданиям; оригинальные фотографии отсутствуют и отдельно не одобрены. Независимая проверка источников ещё требуется."
+      }
     },
     {
       "id": "world-salad-jp-006",
@@ -7522,11 +7819,15 @@
           "https://www.kikkoman.com/en/cookbook/recipe/00000988.html",
           "https://www.chopstickchronicles.com/gobo-salad/"
         ],
-        "note": "Исправлена ссылка на Just One Cookbook и отдельная варка моркови и лопуха; сверка с действительными рецептами Just One Cookbook и Kikkoman.",
-        "reviewNote": "Ссылки на 3 независимых домена сохранены; требуется предметная проверка каждого открытого источника. Непроверенное не выдавать за утверждённое."
+        "note": "Исправлена ссылка на Just One Cookbook и отдельная варка моркови и лопуха; сверка с действительными рецептами Just One Cookbook и Kikkoman."
       },
       "photo": null,
-      "imagePublishingBlocked": true
+      "imagePublishingBlocked": true,
+      "editorialApproval": {
+        "status": "approved_by_user",
+        "scope": "all_100_recipe_cards_and_photo_briefs",
+        "note": "Пользователь 19.11.2026 утвердил все 100 рецептурных карточек сразу. Одобрение относится к текстам рецептов и техническим заданиям; оригинальные фотографии отсутствуют и отдельно не одобрены. Независимая проверка источников ещё требуется."
+      }
     },
     {
       "id": "world-salad-jp-007",
@@ -7619,11 +7920,15 @@
           "https://www.justonecookbook.com/green-bean-shiraae/",
           "https://japanesecooking101.com/shiraae-recipe/"
         ],
-        "note": "Источники, техника и 2 порции; для части блюд современная японская кухня",
-        "reviewNote": "Ссылки на 3 независимых домена сохранены; требуется предметная проверка каждого открытого источника. Непроверенное не выдавать за утверждённое."
+        "note": "Источники, техника и 2 порции; для части блюд современная японская кухня"
       },
       "photo": null,
-      "imagePublishingBlocked": true
+      "imagePublishingBlocked": true,
+      "editorialApproval": {
+        "status": "approved_by_user",
+        "scope": "all_100_recipe_cards_and_photo_briefs",
+        "note": "Пользователь 19.11.2026 утвердил все 100 рецептурных карточек сразу. Одобрение относится к текстам рецептов и техническим заданиям; оригинальные фотографии отсутствуют и отдельно не одобрены. Независимая проверка источников ещё требуется."
+      }
     },
     {
       "id": "world-salad-jp-008",
@@ -7704,11 +8009,15 @@
           "https://japanesecooking101.com/kabocha-salad/",
           "https://recipin.jp/en/recipes/kabocha-salad"
         ],
-        "note": "Источники, техника и 2 порции; для части блюд современная японская кухня",
-        "reviewNote": "Ссылки на 3 независимых домена сохранены; требуется предметная проверка каждого открытого источника. Непроверенное не выдавать за утверждённое."
+        "note": "Источники, техника и 2 порции; для части блюд современная японская кухня"
       },
       "photo": null,
-      "imagePublishingBlocked": true
+      "imagePublishingBlocked": true,
+      "editorialApproval": {
+        "status": "approved_by_user",
+        "scope": "all_100_recipe_cards_and_photo_briefs",
+        "note": "Пользователь 19.11.2026 утвердил все 100 рецептурных карточек сразу. Одобрение относится к текстам рецептов и техническим заданиям; оригинальные фотографии отсутствуют и отдельно не одобрены. Независимая проверка источников ещё требуется."
+      }
     },
     {
       "id": "world-salad-jp-009",
@@ -7801,11 +8110,15 @@
           "https://www.kikkoman.com/en/cookbook/recipe/00000740.html",
           "https://norecipes.com/japanese-tofu-salad/"
         ],
-        "note": "Источники, техника и 2 порции; для части блюд современная японская кухня",
-        "reviewNote": "Ссылки на 3 независимых домена сохранены; требуется предметная проверка каждого открытого источника. Непроверенное не выдавать за утверждённое."
+        "note": "Источники, техника и 2 порции; для части блюд современная японская кухня"
       },
       "photo": null,
-      "imagePublishingBlocked": true
+      "imagePublishingBlocked": true,
+      "editorialApproval": {
+        "status": "approved_by_user",
+        "scope": "all_100_recipe_cards_and_photo_briefs",
+        "note": "Пользователь 19.11.2026 утвердил все 100 рецептурных карточек сразу. Одобрение относится к текстам рецептов и техническим заданиям; оригинальные фотографии отсутствуют и отдельно не одобрены. Независимая проверка источников ещё требуется."
+      }
     },
     {
       "id": "world-salad-jp-010",
@@ -7910,11 +8223,15 @@
           "https://yutaka.london/recipes/sides/soba-noodle/",
           "https://www.kikkoman.co.uk/food-service/recipes/detail/cold-soba-noodle-salad-with-sesame-dressing"
         ],
-        "note": "Проверены японская рецептура и Yutaka с холодной промывкой соба, кунжутным соусом и свежими овощами.",
-        "reviewNote": "Ссылки на 3 независимых домена сохранены; требуется предметная проверка каждого открытого источника. Непроверенное не выдавать за утверждённое."
+        "note": "Проверены японская рецептура и Yutaka с холодной промывкой соба, кунжутным соусом и свежими овощами."
       },
       "photo": null,
-      "imagePublishingBlocked": true
+      "imagePublishingBlocked": true,
+      "editorialApproval": {
+        "status": "approved_by_user",
+        "scope": "all_100_recipe_cards_and_photo_briefs",
+        "note": "Пользователь 19.11.2026 утвердил все 100 рецептурных карточек сразу. Одобрение относится к текстам рецептов и техническим заданиям; оригинальные фотографии отсутствуют и отдельно не одобрены. Независимая проверка источников ещё требуется."
+      }
     },
     {
       "id": "world-salad-th-001",
@@ -8025,11 +8342,15 @@
           "https://www.marionskitchen.com/som-tum-thai-papaya-salad/",
           "https://www.templeofthai.com/recipes/papaya_salad.php"
         ],
-        "note": "Сверены ThaiTable и Marion's Kitchen, обе содержат сушёные креветки, папайю, арахис, длинную фасоль, соус из лайма, рыбного соуса и сахара; третий домен требует дополнительного полного чтения.",
-        "reviewNote": "Ссылки на 3 независимых домена сохранены; требуется предметная проверка каждого открытого источника. Непроверенное не выдавать за утверждённое."
+        "note": "Сверены ThaiTable и Marion's Kitchen, обе содержат сушёные креветки, папайю, арахис, длинную фасоль, соус из лайма, рыбного соуса и сахара; третий домен требует дополнительного полного чтения."
       },
       "photo": null,
-      "imagePublishingBlocked": true
+      "imagePublishingBlocked": true,
+      "editorialApproval": {
+        "status": "approved_by_user",
+        "scope": "all_100_recipe_cards_and_photo_briefs",
+        "note": "Пользователь 19.11.2026 утвердил все 100 рецептурных карточек сразу. Одобрение относится к текстам рецептов и техническим заданиям; оригинальные фотографии отсутствуют и отдельно не одобрены. Независимая проверка источников ещё требуется."
+      }
     },
     {
       "id": "world-salad-th-002",
@@ -8140,11 +8461,15 @@
           "https://thaidata.uk/recipes/yum-woon-sen/",
           "https://cookpad.com/eng/recipes/15310719"
         ],
-        "note": "Оригинальные тайские вкусы, техника и адаптация на две порции",
-        "reviewNote": "Ссылки на 3 независимых домена сохранены; требуется предметная проверка каждого открытого источника. Непроверенное не выдавать за утверждённое."
+        "note": "Оригинальные тайские вкусы, техника и адаптация на две порции"
       },
       "photo": null,
-      "imagePublishingBlocked": true
+      "imagePublishingBlocked": true,
+      "editorialApproval": {
+        "status": "approved_by_user",
+        "scope": "all_100_recipe_cards_and_photo_briefs",
+        "note": "Пользователь 19.11.2026 утвердил все 100 рецептурных карточек сразу. Одобрение относится к текстам рецептов и техническим заданиям; оригинальные фотографии отсутствуют и отдельно не одобрены. Независимая проверка источников ещё требуется."
+      }
     },
     {
       "id": "world-salad-th-003",
@@ -8243,11 +8568,15 @@
           "https://www.thaicookbook.tv/thai-recipes/salads/larb-moo-spicy-minced-pork-salad/",
           "https://aroymakmak.com/en/recipes/larb-moo"
         ],
-        "note": "Оригинальные тайские вкусы, техника и адаптация на две порции",
-        "reviewNote": "Ссылки на 3 независимых домена сохранены; требуется предметная проверка каждого открытого источника. Непроверенное не выдавать за утверждённое."
+        "note": "Оригинальные тайские вкусы, техника и адаптация на две порции"
       },
       "photo": null,
-      "imagePublishingBlocked": true
+      "imagePublishingBlocked": true,
+      "editorialApproval": {
+        "status": "approved_by_user",
+        "scope": "all_100_recipe_cards_and_photo_briefs",
+        "note": "Пользователь 19.11.2026 утвердил все 100 рецептурных карточек сразу. Одобрение относится к текстам рецептов и техническим заданиям; оригинальные фотографии отсутствуют и отдельно не одобрены. Независимая проверка источников ещё требуется."
+      }
     },
     {
       "id": "world-salad-th-004",
@@ -8346,11 +8675,15 @@
           "https://www.marionskitchen.com/spicy-thai-grilled-beef-salad/",
           "https://usa.lkk.com/en/recipes/thai-style-beef-salad-recipe-nam-tok-neua"
         ],
-        "note": "Оригинальные тайские вкусы, техника и адаптация на две порции",
-        "reviewNote": "Ссылки на 3 независимых домена сохранены; требуется предметная проверка каждого открытого источника. Непроверенное не выдавать за утверждённое."
+        "note": "Оригинальные тайские вкусы, техника и адаптация на две порции"
       },
       "photo": null,
-      "imagePublishingBlocked": true
+      "imagePublishingBlocked": true,
+      "editorialApproval": {
+        "status": "approved_by_user",
+        "scope": "all_100_recipe_cards_and_photo_briefs",
+        "note": "Пользователь 19.11.2026 утвердил все 100 рецептурных карточек сразу. Одобрение относится к текстам рецептов и техническим заданиям; оригинальные фотографии отсутствуют и отдельно не одобрены. Независимая проверка источников ещё требуется."
+      }
     },
     {
       "id": "world-salad-th-005",
@@ -8455,11 +8788,15 @@
           "https://atasteofthai.com/thai-recipes/yam-som-o-pomelo-salad/",
           "https://tastythais.com/thai-pomelo-salad/"
         ],
-        "note": "Оригинальные тайские вкусы, техника и адаптация на две порции",
-        "reviewNote": "Ссылки на 3 независимых домена сохранены; требуется предметная проверка каждого открытого источника. Непроверенное не выдавать за утверждённое."
+        "note": "Оригинальные тайские вкусы, техника и адаптация на две порции"
       },
       "photo": null,
-      "imagePublishingBlocked": true
+      "imagePublishingBlocked": true,
+      "editorialApproval": {
+        "status": "approved_by_user",
+        "scope": "all_100_recipe_cards_and_photo_briefs",
+        "note": "Пользователь 19.11.2026 утвердил все 100 рецептурных карточек сразу. Одобрение относится к текстам рецептов и техническим заданиям; оригинальные фотографии отсутствуют и отдельно не одобрены. Независимая проверка источников ещё требуется."
+      }
     },
     {
       "id": "world-salad-th-006",
@@ -8570,11 +8907,15 @@
           "https://www.realthairecipes.com/recipes/wing-bean-salad/",
           "https://www.clubhouse.ca/en-ca/blogs/thai-kitchen-recipes/wing-bean-salad-yum-tuapu"
         ],
-        "note": "Кокосовая заправка к крылатой фасоли содержит тамаринд, рыбный соус и пасту чили, как в традиционных ям туа пу.",
-        "reviewNote": "Ссылки на 3 независимых домена сохранены; требуется предметная проверка каждого открытого источника. Непроверенное не выдавать за утверждённое."
+        "note": "Кокосовая заправка к крылатой фасоли содержит тамаринд, рыбный соус и пасту чили, как в традиционных ям туа пу."
       },
       "photo": null,
-      "imagePublishingBlocked": true
+      "imagePublishingBlocked": true,
+      "editorialApproval": {
+        "status": "approved_by_user",
+        "scope": "all_100_recipe_cards_and_photo_briefs",
+        "note": "Пользователь 19.11.2026 утвердил все 100 рецептурных карточек сразу. Одобрение относится к текстам рецептов и техническим заданиям; оригинальные фотографии отсутствуют и отдельно не одобрены. Независимая проверка источников ещё требуется."
+      }
     },
     {
       "id": "world-salad-th-007",
@@ -8679,11 +9020,15 @@
           "https://www.pholfoodmafia.com/recipe/crispy-catfish-salad-%E0%B8%A2%E0%B8%B3%E0%B8%9B%E0%B8%A5%E0%B8%B2%E0%B8%94%E0%B8%B8%E0%B8%81%E0%B8%9F%E0%B8%B9/",
           "https://www.food.com/recipe/thai-catfish-salad-yam-pla-dook-foo-31233"
         ],
-        "note": "Подтверждены три рецепта: сом сначала готовят, измельчают в сухую крошку, затем обжаривают до золотистого воздушного диска, рядом подают кислое зелёное манго с лаймово-рыбной заправкой.",
-        "reviewNote": "Ссылки на 3 независимых домена сохранены; требуется предметная проверка каждого открытого источника. Непроверенное не выдавать за утверждённое."
+        "note": "Подтверждены три рецепта: сом сначала готовят, измельчают в сухую крошку, затем обжаривают до золотистого воздушного диска, рядом подают кислое зелёное манго с лаймово-рыбной заправкой."
       },
       "photo": null,
-      "imagePublishingBlocked": true
+      "imagePublishingBlocked": true,
+      "editorialApproval": {
+        "status": "approved_by_user",
+        "scope": "all_100_recipe_cards_and_photo_briefs",
+        "note": "Пользователь 19.11.2026 утвердил все 100 рецептурных карточек сразу. Одобрение относится к текстам рецептов и техническим заданиям; оригинальные фотографии отсутствуют и отдельно не одобрены. Независимая проверка источников ещё требуется."
+      }
     },
     {
       "id": "world-salad-th-008",
@@ -8800,11 +9145,15 @@
           "https://www.australianeggs.org.au/recipes-and-cooking/yum-khai-dao",
           "https://www.kitchenstories.com/en/recipes/thai-fried-egg-salad-yum-khai-dao"
         ],
-        "note": "Прочтены три рецепта: хрустящая жареная яичница, лайм, рыбный соус, сахар, чили, шалот и свежая зелень, с вариациями овощей.",
-        "reviewNote": "Ссылки на 3 независимых домена сохранены; требуется предметная проверка каждого открытого источника. Непроверенное не выдавать за утверждённое."
+        "note": "Прочтены три рецепта: хрустящая жареная яичница, лайм, рыбный соус, сахар, чили, шалот и свежая зелень, с вариациями овощей."
       },
       "photo": null,
-      "imagePublishingBlocked": true
+      "imagePublishingBlocked": true,
+      "editorialApproval": {
+        "status": "approved_by_user",
+        "scope": "all_100_recipe_cards_and_photo_briefs",
+        "note": "Пользователь 19.11.2026 утвердил все 100 рецептурных карточек сразу. Одобрение относится к текстам рецептов и техническим заданиям; оригинальные фотографии отсутствуют и отдельно не одобрены. Независимая проверка источников ещё требуется."
+      }
     },
     {
       "id": "world-salad-th-009",
@@ -8903,11 +9252,15 @@
           "https://www.templeofthai.com/recipes/thai-mango-salad.php",
           "https://praneesthaikitchen.com/2010/07/01/thai-green-mango-salad-recipe-yum-mamuang-goong/"
         ],
-        "note": "Оригинальные тайские вкусы, техника и адаптация на две порции",
-        "reviewNote": "Ссылки на 3 независимых домена сохранены; требуется предметная проверка каждого открытого источника. Непроверенное не выдавать за утверждённое."
+        "note": "Оригинальные тайские вкусы, техника и адаптация на две порции"
       },
       "photo": null,
-      "imagePublishingBlocked": true
+      "imagePublishingBlocked": true,
+      "editorialApproval": {
+        "status": "approved_by_user",
+        "scope": "all_100_recipe_cards_and_photo_briefs",
+        "note": "Пользователь 19.11.2026 утвердил все 100 рецептурных карточек сразу. Одобрение относится к текстам рецептов и техническим заданиям; оригинальные фотографии отсутствуют и отдельно не одобрены. Независимая проверка источников ещё требуется."
+      }
     },
     {
       "id": "world-salad-th-010",
@@ -9024,11 +9377,15 @@
           "https://www.tasteatlas.com/khao-yam/recipe",
           "https://www.thaifoodmaster.com/thai_food_recipes/thai_salads/15425"
         ],
-        "note": "В южнотайском кхао-ям включены сушёные креветки, характерная часть традиционных рецептур.",
-        "reviewNote": "Ссылки на 3 независимых домена сохранены; требуется предметная проверка каждого открытого источника. Непроверенное не выдавать за утверждённое."
+        "note": "В южнотайском кхао-ям включены сушёные креветки, характерная часть традиционных рецептур."
       },
       "photo": null,
-      "imagePublishingBlocked": true
+      "imagePublishingBlocked": true,
+      "editorialApproval": {
+        "status": "approved_by_user",
+        "scope": "all_100_recipe_cards_and_photo_briefs",
+        "note": "Пользователь 19.11.2026 утвердил все 100 рецептурных карточек сразу. Одобрение относится к текстам рецептов и техническим заданиям; оригинальные фотографии отсутствуют и отдельно не одобрены. Независимая проверка источников ещё требуется."
+      }
     },
     {
       "id": "world-salad-us-001",
@@ -9139,11 +9496,15 @@
           "https://www.epicurious.com/recipes/food/views/cobb-salad-11049",
           "https://www.tasteatlas.com/cobb-salad/recipe"
         ],
-        "note": "Рецепт на двоих, самостоятельный американский салат",
-        "reviewNote": "Ссылки на 3 независимых домена сохранены; требуется предметная проверка каждого открытого источника. Непроверенное не выдавать за утверждённое."
+        "note": "Рецепт на двоих, самостоятельный американский салат"
       },
       "photo": null,
-      "imagePublishingBlocked": true
+      "imagePublishingBlocked": true,
+      "editorialApproval": {
+        "status": "approved_by_user",
+        "scope": "all_100_recipe_cards_and_photo_briefs",
+        "note": "Пользователь 19.11.2026 утвердил все 100 рецептурных карточек сразу. Одобрение относится к текстам рецептов и техническим заданиям; оригинальные фотографии отсутствуют и отдельно не одобрены. Независимая проверка источников ещё требуется."
+      }
     },
     {
       "id": "world-salad-us-002",
@@ -9236,11 +9597,15 @@
           "https://www.foodnetwork.com/recipes/waldorf-salad-recipe-1937591",
           "https://www.epicurious.com/recipes/food/views/waldorf-salad-360790"
         ],
-        "note": "Рецепт на двоих, самостоятельный американский салат",
-        "reviewNote": "Ссылки на 3 независимых домена сохранены; требуется предметная проверка каждого открытого источника. Непроверенное не выдавать за утверждённое."
+        "note": "Рецепт на двоих, самостоятельный американский салат"
       },
       "photo": null,
-      "imagePublishingBlocked": true
+      "imagePublishingBlocked": true,
+      "editorialApproval": {
+        "status": "approved_by_user",
+        "scope": "all_100_recipe_cards_and_photo_briefs",
+        "note": "Пользователь 19.11.2026 утвердил все 100 рецептурных карточек сразу. Одобрение относится к текстам рецептов и техническим заданиям; оригинальные фотографии отсутствуют и отдельно не одобрены. Независимая проверка источников ещё требуется."
+      }
     },
     {
       "id": "world-salad-us-003",
@@ -9345,11 +9710,15 @@
           "https://www.epicurious.com/recipes/food/views/chefs-salad-102212",
           "https://www.foodpassport.com/united-states/salads/chef-salad.html"
         ],
-        "note": "Рецепт на двоих, самостоятельный американский салат",
-        "reviewNote": "Ссылки на 3 независимых домена сохранены; требуется предметная проверка каждого открытого источника. Непроверенное не выдавать за утверждённое."
+        "note": "Рецепт на двоих, самостоятельный американский салат"
       },
       "photo": null,
-      "imagePublishingBlocked": true
+      "imagePublishingBlocked": true,
+      "editorialApproval": {
+        "status": "approved_by_user",
+        "scope": "all_100_recipe_cards_and_photo_briefs",
+        "note": "Пользователь 19.11.2026 утвердил все 100 рецептурных карточек сразу. Одобрение относится к текстам рецептов и техническим заданиям; оригинальные фотографии отсутствуют и отдельно не одобрены. Независимая проверка источников ещё требуется."
+      }
     },
     {
       "id": "world-salad-us-004",
@@ -9448,11 +9817,15 @@
           "https://www.marthastewart.com/951402/iceberg-wedges-creamy-blue-cheese-dressing",
           "https://www.thekitchn.com/recipe-iceberg-wedge-salad-240308"
         ],
-        "note": "Рецепт на двоих, самостоятельный американский салат",
-        "reviewNote": "Ссылки на 3 независимых домена сохранены; требуется предметная проверка каждого открытого источника. Непроверенное не выдавать за утверждённое."
+        "note": "Рецепт на двоих, самостоятельный американский салат"
       },
       "photo": null,
-      "imagePublishingBlocked": true
+      "imagePublishingBlocked": true,
+      "editorialApproval": {
+        "status": "approved_by_user",
+        "scope": "all_100_recipe_cards_and_photo_briefs",
+        "note": "Пользователь 19.11.2026 утвердил все 100 рецептурных карточек сразу. Одобрение относится к текстам рецептов и техническим заданиям; оригинальные фотографии отсутствуют и отдельно не одобрены. Независимая проверка источников ещё требуется."
+      }
     },
     {
       "id": "world-salad-us-005",
@@ -9545,11 +9918,15 @@
           "https://www.bbcgoodfood.com/recipes/classic-homemade-coleslaw",
           "https://www.seriouseats.com/creamy-cole-slaw"
         ],
-        "note": "Рецепт на двоих, самостоятельный американский салат",
-        "reviewNote": "Ссылки на 3 независимых домена сохранены; требуется предметная проверка каждого открытого источника. Непроверенное не выдавать за утверждённое."
+        "note": "Рецепт на двоих, самостоятельный американский салат"
       },
       "photo": null,
-      "imagePublishingBlocked": true
+      "imagePublishingBlocked": true,
+      "editorialApproval": {
+        "status": "approved_by_user",
+        "scope": "all_100_recipe_cards_and_photo_briefs",
+        "note": "Пользователь 19.11.2026 утвердил все 100 рецептурных карточек сразу. Одобрение относится к текстам рецептов и техническим заданиям; оригинальные фотографии отсутствуют и отдельно не одобрены. Независимая проверка источников ещё требуется."
+      }
     },
     {
       "id": "world-salad-us-006",
@@ -9648,11 +10025,15 @@
           "https://www.seriouseats.com/classic-macaroni-salad-recipe",
           "https://www.spendwithpennies.com/classic-macaroni-salad/"
         ],
-        "note": "Рецепт на двоих, самостоятельный американский салат",
-        "reviewNote": "Ссылки на 3 независимых домена сохранены; требуется предметная проверка каждого открытого источника. Непроверенное не выдавать за утверждённое."
+        "note": "Рецепт на двоих, самостоятельный американский салат"
       },
       "photo": null,
-      "imagePublishingBlocked": true
+      "imagePublishingBlocked": true,
+      "editorialApproval": {
+        "status": "approved_by_user",
+        "scope": "all_100_recipe_cards_and_photo_briefs",
+        "note": "Пользователь 19.11.2026 утвердил все 100 рецептурных карточек сразу. Одобрение относится к текстам рецептов и техническим заданиям; оригинальные фотографии отсутствуют и отдельно не одобрены. Независимая проверка источников ещё требуется."
+      }
     },
     {
       "id": "world-salad-us-007",
@@ -9751,11 +10132,15 @@
           "https://www.epicurious.com/recipes/food/views/all-american-potato-salad-14176",
           "https://www.spendwithpennies.com/potato-salad-recipe/"
         ],
-        "note": "Рецепт на двоих, самостоятельный американский салат",
-        "reviewNote": "Ссылки на 3 независимых домена сохранены; требуется предметная проверка каждого открытого источника. Непроверенное не выдавать за утверждённое."
+        "note": "Рецепт на двоих, самостоятельный американский салат"
       },
       "photo": null,
-      "imagePublishingBlocked": true
+      "imagePublishingBlocked": true,
+      "editorialApproval": {
+        "status": "approved_by_user",
+        "scope": "all_100_recipe_cards_and_photo_briefs",
+        "note": "Пользователь 19.11.2026 утвердил все 100 рецептурных карточек сразу. Одобрение относится к текстам рецептов и техническим заданиям; оригинальные фотографии отсутствуют и отдельно не одобрены. Независимая проверка источников ещё требуется."
+      }
     },
     {
       "id": "world-salad-us-008",
@@ -9854,11 +10239,15 @@
           "https://www.cooks.com/recipe/pu66z5qg/seven-layer-salad.html",
           "https://www.spendwithpennies.com/7-layer-salad/"
         ],
-        "note": "Рецепт на двоих, самостоятельный американский салат",
-        "reviewNote": "Ссылки на 3 независимых домена сохранены; требуется предметная проверка каждого открытого источника. Непроверенное не выдавать за утверждённое."
+        "note": "Рецепт на двоих, самостоятельный американский салат"
       },
       "photo": null,
-      "imagePublishingBlocked": true
+      "imagePublishingBlocked": true,
+      "editorialApproval": {
+        "status": "approved_by_user",
+        "scope": "all_100_recipe_cards_and_photo_briefs",
+        "note": "Пользователь 19.11.2026 утвердил все 100 рецептурных карточек сразу. Одобрение относится к текстам рецептов и техническим заданиям; оригинальные фотографии отсутствуют и отдельно не одобрены. Независимая проверка источников ещё требуется."
+      }
     },
     {
       "id": "world-salad-us-009",
@@ -9957,11 +10346,15 @@
           "https://www.cooks.com/recipe/733vp9j3/broccoli-bacon-raisin-salad.html",
           "https://www.spendwithpennies.com/broccoli-salad/"
         ],
-        "note": "Рецепт на двоих, самостоятельный американский салат",
-        "reviewNote": "Ссылки на 3 независимых домена сохранены; требуется предметная проверка каждого открытого источника. Непроверенное не выдавать за утверждённое."
+        "note": "Рецепт на двоих, самостоятельный американский салат"
       },
       "photo": null,
-      "imagePublishingBlocked": true
+      "imagePublishingBlocked": true,
+      "editorialApproval": {
+        "status": "approved_by_user",
+        "scope": "all_100_recipe_cards_and_photo_briefs",
+        "note": "Пользователь 19.11.2026 утвердил все 100 рецептурных карточек сразу. Одобрение относится к текстам рецептов и техническим заданиям; оригинальные фотографии отсутствуют и отдельно не одобрены. Независимая проверка источников ещё требуется."
+      }
     },
     {
       "id": "world-salad-us-010",
@@ -10072,11 +10465,16 @@
           "https://texascooppower.com/recipes/shrimp-louis-salad/",
           "https://juneoven.com/pages/recipe-shrimp-louie-803fedc8"
         ],
-        "note": "Рецепт на двоих, самостоятельный американский салат",
-        "reviewNote": "Ссылки на 3 независимых домена сохранены; требуется предметная проверка каждого открытого источника. Непроверенное не выдавать за утверждённое."
+        "note": "Рецепт на двоих, самостоятельный американский салат"
       },
       "photo": null,
-      "imagePublishingBlocked": true
+      "imagePublishingBlocked": true,
+      "editorialApproval": {
+        "status": "approved_by_user",
+        "scope": "all_100_recipe_cards_and_photo_briefs",
+        "note": "Пользователь 19.11.2026 утвердил все 100 рецептурных карточек сразу. Одобрение относится к текстам рецептов и техническим заданиям; оригинальные фотографии отсутствуют и отдельно не одобрены. Независимая проверка источников ещё требуется."
+      }
     }
-  ]
+  ],
+  "editorialApprovalStatus": "ALL_100_RECIPE_CARDS_APPROVED_BY_USER_2026_11_19"
 }
