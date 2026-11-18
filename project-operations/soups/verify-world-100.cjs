@@ -33,7 +33,8 @@ for(const [fname,start,end,cuisine] of chunks){
     const sec=file.slice(head[i].index,head[i+1]?.index??file.length);
     const links=[...sec.matchAll(/https:\/\/[^\s)\]<>]+/g)].map(m=>m[0].replace(/[.,;:]$/,''));
     const hosts=new Set(links.map(url=>url.slice(8).split('/')[0].replace(/^www\./,'')));
-    const cookingBody=sec.split(/\*\*(?:Для фотографии|Фото:|Внешний вид:|Как выглядит|Вид готового|Точный вид|Источники|Независимые рецептурные источники)/i)[0];\n    const numbered=[...cookingBody.matchAll(/(?:^|\\s)[1-9]\\d?\\.\\s+\\S/g)].length;
+    const cookingBody=sec.split(/\*\*(?:Для фотографии|Фото:|Внешний вид:|Как выглядит|Вид готового|Точный вид|Источники|Независимые рецептурные источники)/i)[0];
+    const numbered=[...cookingBody.matchAll(/(?:^|\s)[1-9]\d?\.\s+\S/g)].length;
     if(no!==start+i)errors.push(fname+': wrong number '+no+' expected '+(start+i));
     if(links.length<3)errors.push('#'+no+': fewer than 3 source URLs');
     if(hosts.size<3)errors.push('#'+no+': fewer than 3 unique source domains');
