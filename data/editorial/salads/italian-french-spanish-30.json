@@ -77,7 +77,14 @@
       "photoBrief": "Фотография готового блюда «Капрезе с моцареллой»: показывать только ингредиенты рецепта после описанной тепловой обработки, без целых зубчиков чеснока и случайного декора.",
       "photoStatus": "pending_separate_photo",
       "reviewStatus": "editorial_draft_requires_source_by_source_signoff",
-      "researchLeads": "Italian Food Forever / GialloZafferano / La Cucina Italiana"
+      "researchLeads": "Italian Food Forever / GialloZafferano / La Cucina Italiana",
+      "sourceEvidence": [
+        {
+          "url": "https://www.lacucinaitaliana.it/ricetta/antipasti/caprese/",
+          "checkedOn": "2026-11-19",
+          "note": "Independent cuisine reference; regional variants may differ."
+        }
+      ]
     },
     {
       "id": "world-salad-02-02",
@@ -165,7 +172,14 @@
       "photoBrief": "Фотография готового блюда «Панцанелла с томатами и хлебом»: показывать только ингредиенты рецепта после описанной тепловой обработки, без целых зубчиков чеснока и случайного декора.",
       "photoStatus": "pending_separate_photo",
       "reviewStatus": "editorial_draft_requires_source_by_source_signoff",
-      "researchLeads": "Italian Food Forever / GialloZafferano / La Cucina Italiana"
+      "researchLeads": "Italian Food Forever / GialloZafferano / La Cucina Italiana",
+      "sourceEvidence": [
+        {
+          "url": "https://www.lacucinaitaliana.it/ricetta/antipasti/panzanella-ricetta-classica/",
+          "checkedOn": "2026-11-19",
+          "note": "Independent cuisine reference; regional variants may differ."
+        }
+      ]
     },
     {
       "id": "world-salad-02-03",
@@ -253,7 +267,14 @@
       "photoBrief": "Фотография готового блюда «Инсалата ди маре»: показывать только ингредиенты рецепта после описанной тепловой обработки, без целых зубчиков чеснока и случайного декора.",
       "photoStatus": "pending_separate_photo",
       "reviewStatus": "editorial_draft_requires_source_by_source_signoff",
-      "researchLeads": "Italian Food Forever / GialloZafferano / La Cucina Italiana"
+      "researchLeads": "Italian Food Forever / GialloZafferano / La Cucina Italiana",
+      "sourceEvidence": [
+        {
+          "url": "https://www.lagostina.it/ricette/insalata-di-mare",
+          "checkedOn": "2026-11-19",
+          "note": "Independent cuisine reference; regional variants may differ."
+        }
+      ]
     },
     {
       "id": "world-salad-02-04",
@@ -335,7 +356,14 @@
       "photoBrief": "Фотография готового блюда «Салат с осьминогом»: показывать только ингредиенты рецепта после описанной тепловой обработки, без целых зубчиков чеснока и случайного декора.",
       "photoStatus": "pending_separate_photo",
       "reviewStatus": "editorial_draft_requires_source_by_source_signoff",
-      "researchLeads": "Italian Food Forever / GialloZafferano / La Cucina Italiana"
+      "researchLeads": "Italian Food Forever / GialloZafferano / La Cucina Italiana",
+      "sourceEvidence": [
+        {
+          "url": "https://www.lospicchiodaglio.it/ricetta/insalata-di-polpo-e-patate",
+          "checkedOn": "2026-11-19",
+          "note": "Independent cuisine reference; regional variants may differ."
+        }
+      ]
     },
     {
       "id": "world-salad-02-05",
@@ -411,7 +439,14 @@
       "photoBrief": "Фотография готового блюда «Фенхель с апельсинами»: показывать только ингредиенты рецепта после описанной тепловой обработки, без целых зубчиков чеснока и случайного декора.",
       "photoStatus": "pending_separate_photo",
       "reviewStatus": "editorial_draft_requires_source_by_source_signoff",
-      "researchLeads": "Italian Food Forever / GialloZafferano / La Cucina Italiana"
+      "researchLeads": "Italian Food Forever / GialloZafferano / La Cucina Italiana",
+      "sourceEvidence": [
+        {
+          "url": "https://www.lacucinaitaliana.it/ricetta/insalata-finocchi-arance-olive-nere/",
+          "checkedOn": "2026-11-19",
+          "note": "Independent cuisine reference; regional variants may differ."
+        }
+      ]
     },
     {
       "id": "world-salad-02-06",
@@ -504,6 +539,11 @@
         {
           "url": "https://www.lacucinaitaliana.it/storie/piatti-tipici/insalata-di-rinforzo-2/",
           "note": "Naples Christmas salad: cauliflower, anchovies, capers, olives and pickles."
+        },
+        {
+          "url": "https://www.lacucinaitaliana.it/ricetta/antipasti/insalata-di-rinforzo-la-ricetta-della-vigilia/",
+          "checkedOn": "2026-11-19",
+          "note": "Independent cuisine reference; regional variants may differ."
         }
       ]
     },
@@ -581,7 +621,14 @@
       "photoBrief": "Фотография готового блюда «Римский салат из цикория с анчоусами»: показывать только ингредиенты рецепта после описанной тепловой обработки, без целых зубчиков чеснока и случайного декора.",
       "photoStatus": "pending_separate_photo",
       "reviewStatus": "editorial_draft_requires_source_by_source_signoff",
-      "researchLeads": "Italian Food Forever / GialloZafferano / La Cucina Italiana"
+      "researchLeads": "Italian Food Forever / GialloZafferano / La Cucina Italiana",
+      "sourceEvidence": [
+        {
+          "url": "https://orto.ch/ricetta/puntarelle-alla-romana/",
+          "checkedOn": "2026-11-19",
+          "note": "Independent cuisine reference; regional variants may differ."
+        }
+      ]
     },
     {
       "id": "world-salad-02-08",
@@ -675,7 +722,14 @@
       "photoBrief": "Фотография готового блюда «Итальянский рисовый салат»: показывать только ингредиенты рецепта после описанной тепловой обработки, без целых зубчиков чеснока и случайного декора.",
       "photoStatus": "pending_separate_photo",
       "reviewStatus": "editorial_draft_requires_source_by_source_signoff",
-      "researchLeads": "Italian Food Forever / GialloZafferano / La Cucina Italiana"
+      "researchLeads": "Italian Food Forever / GialloZafferano / La Cucina Italiana",
+      "sourceEvidence": [
+        {
+          "url": "https://blog.giallozafferano.it/nonsolodolcedilorena/ricetta-insalata-di-riso-con-tonno-e-verdure/",
+          "checkedOn": "2026-11-19",
+          "note": "Independent cuisine reference; regional variants may differ."
+        }
+      ]
     },
     {
       "id": "world-salad-02-09",
@@ -763,7 +817,14 @@
       "photoBrief": "Фотография готового блюда «Салат из полбы с овощами»: показывать только ингредиенты рецепта после описанной тепловой обработки, без целых зубчиков чеснока и случайного декора.",
       "photoStatus": "pending_separate_photo",
       "reviewStatus": "editorial_draft_requires_source_by_source_signoff",
-      "researchLeads": "Italian Food Forever / GialloZafferano / La Cucina Italiana"
+      "researchLeads": "Italian Food Forever / GialloZafferano / La Cucina Italiana",
+      "sourceEvidence": [
+        {
+          "url": "https://www.lacucinaitaliana.it/ricetta/primi/insalata-di-farro-con-mozzarelline/",
+          "checkedOn": "2026-11-19",
+          "note": "Independent cuisine reference; regional variants may differ."
+        }
+      ]
     },
     {
       "id": "world-salad-02-10",
@@ -845,93 +906,130 @@
       "photoBrief": "Фотография готового блюда «Белая фасоль с тунцом и луком»: показывать только ингредиенты рецепта после описанной тепловой обработки, без целых зубчиков чеснока и случайного декора.",
       "photoStatus": "pending_separate_photo",
       "reviewStatus": "editorial_draft_requires_source_by_source_signoff",
-      "researchLeads": "Italian Food Forever / GialloZafferano / La Cucina Italiana"
+      "researchLeads": "Italian Food Forever / GialloZafferano / La Cucina Italiana",
+      "sourceEvidence": [
+        {
+          "url": "https://globalcucina.com/it/ricette/insalata-di-tonno-e-fagioli-bianchi",
+          "checkedOn": "2026-11-19",
+          "note": "Independent cuisine reference; regional variants may differ."
+        }
+      ]
     },
     {
       "id": "world-salad-03-01",
       "title": "Нисуаз",
       "category": "salads",
       "cuisine": "Французская",
-      "minutes": 35,
+      "minutes": 30,
       "base": 2,
       "level": "Средне",
       "emoji": "🥗",
-      "description": "Самостоятельный рецепт кухни «Французская» для ужина вдвоём.",
+      "description": "Нисуаз по рецептуре, утверждённой комитетом Cuisine Nissarde: сырые сезонные овощи, тунец, анчоусы, оливки и яйца на широком блюде.",
       "ingredients": [
         {
-          "name": "Тунец консервированный",
-          "amount": 140,
+          "name": "Месклан",
+          "amount": 100,
           "unit": "г",
           "group": "Основное"
         },
         {
-          "name": "Томаты",
-          "amount": 220,
+          "name": "Помидоры",
+          "amount": 230,
           "unit": "г",
           "group": "Основное"
         },
         {
-          "name": "Яйцо",
+          "name": "Молодой лук",
+          "amount": 45,
+          "unit": "г",
+          "group": "Основное"
+        },
+        {
+          "name": "Сельдерей стеблевой сердцевина",
+          "amount": 45,
+          "unit": "г",
+          "group": "Основное"
+        },
+        {
+          "name": "Артишоки молодые",
+          "amount": 100,
+          "unit": "г",
+          "group": "Основное"
+        },
+        {
+          "name": "Перец зелёный",
+          "amount": 65,
+          "unit": "г",
+          "group": "Основное"
+        },
+        {
+          "name": "Редис",
+          "amount": 80,
+          "unit": "г",
+          "group": "Основное"
+        },
+        {
+          "name": "Оливки чёрные нисуаз",
+          "amount": 35,
+          "unit": "г",
+          "group": "Основное"
+        },
+        {
+          "name": "Тунец в оливковом масле",
+          "amount": 120,
+          "unit": "г",
+          "group": "Основное"
+        },
+        {
+          "name": "Анчоусы в соли подготовленные",
+          "amount": 25,
+          "unit": "г",
+          "group": "Основное"
+        },
+        {
+          "name": "Чеснок",
+          "amount": 4,
+          "unit": "г",
+          "group": "Основное"
+        },
+        {
+          "name": "Оливковое масло",
+          "amount": 30,
+          "unit": "мл",
+          "group": "Основное"
+        },
+        {
+          "name": "Яйца",
           "amount": 2,
           "unit": "шт.",
           "group": "Основное"
         },
         {
-          "name": "Оливки нисуаз",
-          "amount": 60,
+          "name": "Базилик",
+          "amount": 8,
           "unit": "г",
-          "group": "Основное"
-        },
-        {
-          "name": "Фасоль стручковая",
-          "amount": 160,
-          "unit": "г",
-          "group": "Основное"
-        },
-        {
-          "name": "Анчоусы",
-          "amount": 30,
-          "unit": "г",
-          "group": "Основное"
-        },
-        {
-          "name": "Салатные листья",
-          "amount": 90,
-          "unit": "г",
-          "group": "Основное"
-        },
-        {
-          "name": "Масло оливковое",
-          "amount": 25,
-          "unit": "мл",
-          "group": "Основное"
-        },
-        {
-          "name": "Уксус винный",
-          "amount": 10,
-          "unit": "мл",
           "group": "Основное"
         }
       ],
       "steps": [
         {
-          "title": "Подготовь продукты",
-          "detail": "Свари яйца вкрутую 9–10 минут, охлади; стручковую фасоль бланшируй до мягкости и охлади",
+          "title": "Подготовь яйца",
+          "detail": "Свари яйца вкрутую около 9 минут, охлади, очисти и разрежь на четвертинки.",
           "timer": 0
         },
         {
-          "title": "Приготовь основу",
-          "detail": "Нарежь помидоры дольками, разложи на тарелке листья салата",
+          "title": "Подготовь овощи",
+          "detail": "Вымой и обсуши месклан, помидоры, молодой лук, сердцевину сельдерея, редис и перец. Тонко нарежь молодой артишок, если он сезонный и пригоден для сырой подачи. Чеснок разрежь и натри им блюдо.",
           "timer": 0
         },
         {
-          "title": "Собери блюдо",
-          "detail": "Отдельными группами размести томаты, фасоль, яйцо, тунец, оливки и анчоусы",
+          "title": "Собери широкое блюдо",
+          "detail": "Разложи месклан на широком блюде, сверху крупные дольки томатов, тонкую зелень, редис, перец, лук, артишок и базилик. Овощи не отваривай и не смешивай в пасту.",
           "timer": 0
         },
         {
-          "title": "Заправь и подай",
-          "detail": "Смешай масло с винным уксусом и полей перед подачей; это современный вариант, не единственный канон Ниццы",
+          "title": "Положи рыбу и заправь",
+          "detail": "Добавь крупные хлопья тунца, четвертинки яйца, анчоусы и оливки Ниццы. Полей оливковым маслом, добавь свежемолотый перец; без картофеля и варёной стручковой фасоли.",
           "timer": 0
         }
       ],
@@ -942,10 +1040,16 @@
       ],
       "equipment": "Нож, доска, салатник; посуда для тепловой обработки по технологии",
       "warn": "Соблюдай условия хранения, безопасность рыбы, морепродуктов и яиц и проверяй аллергены.",
-      "photoBrief": "Фотография готового блюда «Нисуаз»: показывать только ингредиенты рецепта после описанной тепловой обработки, без целых зубчиков чеснока и случайного декора.",
+      "photoBrief": "Официальная нисуаз: широкое плоское блюдо с яркими сырыми томатами, перцем, редисом, зеленью, оливками Ниццы, крупными хлопьями тунца, анчоусами и дольками варёных яиц. Не класть картофель и варёную зелёную фасоль.",
       "photoStatus": "pending_separate_photo",
       "reviewStatus": "editorial_draft_requires_source_by_source_signoff",
-      "researchLeads": "French Cooking Academy / Cuisine Actuelle / 750g"
+      "researchLeads": "French Cooking Academy / Cuisine Actuelle / 750g",
+      "sourceEvidence": [
+        {
+          "url": "https://www.explorenicecotedazur.com/explorer/art-de-vivre/gastronomie-et-terroir/recettes-de-cuisine-nicoise/la-salade-nicoise/",
+          "note": "Official Nice Cuisine Nissarde committee recipe. No cooked beans or potatoes."
+        }
+      ]
     },
     {
       "id": "world-salad-03-02",
@@ -1033,7 +1137,14 @@
       "photoBrief": "Фотография готового блюда «Лионский салат с яйцом пашот»: показывать только ингредиенты рецепта после описанной тепловой обработки, без целых зубчиков чеснока и случайного декора.",
       "photoStatus": "pending_separate_photo",
       "reviewStatus": "editorial_draft_requires_source_by_source_signoff",
-      "researchLeads": "French Cooking Academy / Cuisine Actuelle / 750g"
+      "researchLeads": "French Cooking Academy / Cuisine Actuelle / 750g",
+      "sourceEvidence": [
+        {
+          "url": "https://www.thefrenchcookingacademy.com/recipes/salade-lyonnaise",
+          "checkedOn": "2026-11-19",
+          "note": "Independent cuisine reference; regional variants may differ."
+        }
+      ]
     },
     {
       "id": "world-salad-03-03",
@@ -1228,7 +1339,14 @@
       "photoBrief": "Фотография готового блюда «Салат с тёплым козьим сыром»: показывать только ингредиенты рецепта после описанной тепловой обработки, без целых зубчиков чеснока и случайного декора.",
       "photoStatus": "pending_separate_photo",
       "reviewStatus": "editorial_draft_requires_source_by_source_signoff",
-      "researchLeads": "French Cooking Academy / Cuisine Actuelle / 750g"
+      "researchLeads": "French Cooking Academy / Cuisine Actuelle / 750g",
+      "sourceEvidence": [
+        {
+          "url": "https://www.atelierdeschefs.fr/recettes/13637/salade-de-chevre-chaud/",
+          "checkedOn": "2026-11-19",
+          "note": "Independent cuisine reference; regional variants may differ."
+        }
+      ]
     },
     {
       "id": "world-salad-03-05",
@@ -1304,7 +1422,14 @@
       "photoBrief": "Фотография готового блюда «Сельдерей ремулад»: показывать только ингредиенты рецепта после описанной тепловой обработки, без целых зубчиков чеснока и случайного декора.",
       "photoStatus": "pending_separate_photo",
       "reviewStatus": "editorial_draft_requires_source_by_source_signoff",
-      "researchLeads": "French Cooking Academy / Cuisine Actuelle / 750g"
+      "researchLeads": "French Cooking Academy / Cuisine Actuelle / 750g",
+      "sourceEvidence": [
+        {
+          "url": "https://www.academiedugout.fr/recettes/celeri-remoulade_6519_2",
+          "checkedOn": "2026-11-19",
+          "note": "Independent cuisine reference; regional variants may differ."
+        }
+      ]
     },
     {
       "id": "world-salad-03-06",
@@ -1380,7 +1505,14 @@
       "photoBrief": "Фотография готового блюда «Морковь с винегретной заправкой»: показывать только ингредиенты рецепта после описанной тепловой обработки, без целых зубчиков чеснока и случайного декора.",
       "photoStatus": "pending_separate_photo",
       "reviewStatus": "editorial_draft_requires_source_by_source_signoff",
-      "researchLeads": "French Cooking Academy / Cuisine Actuelle / 750g"
+      "researchLeads": "French Cooking Academy / Cuisine Actuelle / 750g",
+      "sourceEvidence": [
+        {
+          "url": "https://www.atelierdeschefs.fr/recettes/24174/carottes-rapees-vinaigrette-citron-et-cumin/",
+          "checkedOn": "2026-11-19",
+          "note": "Independent cuisine reference; regional variants may differ."
+        }
+      ]
     },
     {
       "id": "world-salad-03-07",
@@ -1468,7 +1600,14 @@
       "photoBrief": "Фотография готового блюда «Салат из чечевицы Ле-Пюи»: показывать только ингредиенты рецепта после описанной тепловой обработки, без целых зубчиков чеснока и случайного декора.",
       "photoStatus": "pending_separate_photo",
       "reviewStatus": "editorial_draft_requires_source_by_source_signoff",
-      "researchLeads": "French Cooking Academy / Cuisine Actuelle / 750g"
+      "researchLeads": "French Cooking Academy / Cuisine Actuelle / 750g",
+      "sourceEvidence": [
+        {
+          "url": "https://www.referentiel-restauration-collective.fr/salade-de-lentilles-du-puy-maison/",
+          "checkedOn": "2026-11-19",
+          "note": "Independent cuisine reference; regional variants may differ."
+        }
+      ]
     },
     {
       "id": "world-salad-03-08",
@@ -1556,7 +1695,14 @@
       "photoBrief": "Фотография готового блюда «Французский картофельный салат»: показывать только ингредиенты рецепта после описанной тепловой обработки, без целых зубчиков чеснока и случайного декора.",
       "photoStatus": "pending_separate_photo",
       "reviewStatus": "editorial_draft_requires_source_by_source_signoff",
-      "researchLeads": "French Cooking Academy / Cuisine Actuelle / 750g"
+      "researchLeads": "French Cooking Academy / Cuisine Actuelle / 750g",
+      "sourceEvidence": [
+        {
+          "url": "https://www.signegourmand.com/recettes/accompagnements/salade-de-pommes-de-terre-francaise",
+          "checkedOn": "2026-11-19",
+          "note": "Independent cuisine reference; regional variants may differ."
+        }
+      ]
     },
     {
       "id": "world-salad-03-09",
@@ -1733,7 +1879,14 @@
       "photoBrief": "Фотография готового блюда «Цикорий с рокфором и орехами»: показывать только ингредиенты рецепта после описанной тепловой обработки, без целых зубчиков чеснока и случайного декора.",
       "photoStatus": "pending_separate_photo",
       "reviewStatus": "editorial_draft_requires_source_by_source_signoff",
-      "researchLeads": "French Cooking Academy / Cuisine Actuelle / 750g"
+      "researchLeads": "French Cooking Academy / Cuisine Actuelle / 750g",
+      "sourceEvidence": [
+        {
+          "url": "https://www.elle.fr/Elle-a-Table/Recettes-de-cuisine/Salade-d-endives-au-roquefort-et-aux-noix-2079532",
+          "checkedOn": "2026-11-19",
+          "note": "Independent cuisine reference; regional variants may differ."
+        }
+      ]
     },
     {
       "id": "world-salad-04-01",
