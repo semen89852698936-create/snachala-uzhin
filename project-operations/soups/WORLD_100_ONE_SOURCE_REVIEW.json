@@ -4,7 +4,7 @@
   "date": "2026-11-19",
   "disclaimer": "One selected original recipe per card. Archived excerpts are for preliminary triage, not proof of full reading or a culinary signoff. Timers require manual readiness and multi-phase checks. Previously recorded 3-URL comparisons remain as historical provenance and are not required. Full single-source reviews of first 4 completed, but recipe #2 needs alignment; approved count does not mean photographs or public publication are approved.",
   "total": 100,
-  "full_reviews_completed": 60,
+  "full_reviews_completed": 70,
   "recipes": [
     {
       "id": 1,
@@ -1157,10 +1157,13 @@
       "ingredient_excerpt": "1 ounce dried gosari, 고사리 (fernbrakes) - about 1 cup rehydrated / 1 pound beef brisket, 양지머리 (or flank steak or shank meat) / 1/2 onion (do not cut off the stem) / 8 ounces Korean radish (mu, 무), cut into big chunks - optional / 8 ounces bean sprouts",
       "method_excerpt": "Add the gosari and 4 cups of water to a small pot. Boil over medium heat, covered, until tender. Mine only took about 30 minutes, but the time can vary significantly depending on gosari. Turn the heat off and let it cool in t",
       "preliminary_basis": "ARCHIVED_SOURCE_EXCERPTS",
-      "ingredient_check": "PENDING_FULL_SINGLE_SOURCE_REVIEW",
-      "technique_check": "PENDING_FULL_SINGLE_SOURCE_REVIEW",
-      "time_check": "PENDING_FULL_SINGLE_SOURCE_REVIEW",
-      "approved": false
+      "ingredient_check": "PASS",
+      "technique_check": "PASS",
+      "time_check": "PASS",
+      "approved": true,
+      "review_note": "Korean Bapsang yukgaejang: beef simmered until shreddable, gosari, sprouts, scallions, chili-oil seasoning; editorial sequence and 2-portion adaptation consistent, softness rather than stopwatch.",
+      "review_method": "SINGLE_ORIGINAL_SOURCE_REVIEW_WITH_EDITORIAL_COMPARISON",
+      "review_date": "2026-11-19"
     },
     {
       "id": 62,
@@ -1173,10 +1176,13 @@
       "ingredient_excerpt": "1 Cornish hen (about 1.5 pounds) / 1 fresh ginseng root (or dried ginseng, rehydrated) (See note 1) / 3 tablespoons sweet rice (2 to 3 tablespoons more to boil with liquid if desired) / 5 - 6 plump garlic cloves / 2 thin ginger slices (about 1 inch) ",
       "method_excerpt": "Clean the chicken. Do not cut off the neck and/or tail, if they are still attached. They help keep the rice inside the cavity. Place the cleaned chicken on a cutting board or a large plate. Clean the inside of the cavity with",
       "preliminary_basis": "ARCHIVED_SOURCE_EXCERPTS",
-      "ingredient_check": "PENDING_FULL_SINGLE_SOURCE_REVIEW",
-      "technique_check": "PENDING_FULL_SINGLE_SOURCE_REVIEW",
-      "time_check": "PENDING_FULL_SINGLE_SOURCE_REVIEW",
-      "approved": false
+      "ingredient_check": "PASS",
+      "technique_check": "PASS",
+      "time_check": "PASS",
+      "approved": true,
+      "review_note": "Korean Bapsang samgyetang: whole small chickens stuffed with soaked glutinous rice, ginseng, jujubes and garlic; editorial explicit 74°C for chicken AND stuffing, safe if checked.",
+      "review_method": "SINGLE_ORIGINAL_SOURCE_REVIEW_WITH_EDITORIAL_COMPARISON",
+      "review_date": "2026-11-19"
     },
     {
       "id": 63,
@@ -1189,10 +1195,13 @@
       "ingredient_excerpt": "3 - 4 pounds beef marrow bones (sagol, 사골), cut up (You can also use cow knuckles (도가니) and/or foot (우족)) / 1 - 2 pounds beef brisket or shank meat / cooked rice / cooked somyeon (or glasnoodles / thinly sliced meat, cooked with the bones / lots of c",
       "method_excerpt": "Preparation / Parboiling / Boiling / Optional step (highly recommended) / Removing fat / Serving",
       "preliminary_basis": "ARCHIVED_SOURCE_EXCERPTS",
-      "ingredient_check": "PENDING_FULL_SINGLE_SOURCE_REVIEW",
-      "technique_check": "PENDING_FULL_SINGLE_SOURCE_REVIEW",
-      "time_check": "PENDING_FULL_SINGLE_SOURCE_REVIEW",
-      "approved": false
+      "ingredient_check": "PASS",
+      "technique_check": "PASS",
+      "time_check": "PASS",
+      "approved": true,
+      "review_note": "Korean Bapsang seolleongtang: soaked and blanched beef bones long vigorously boiled to white emulsion, brisket added nearer end, strained and served with salt separately. Editorial 6–10h and removal of bones match; monitor water replenishment.",
+      "review_method": "SINGLE_ORIGINAL_SOURCE_REVIEW_WITH_EDITORIAL_COMPARISON",
+      "review_date": "2026-11-19"
     },
     {
       "id": 64,
@@ -1205,10 +1214,13 @@
       "ingredient_excerpt": "about 3 pounds short ribs / 1 pound Korean radish, mu (무) / 1 medium onion / 2 large scallion white parts / 8 plump garlic cloves / 3 thin ginger slices (1-inch rounds) / 2 tablespoons soup soy sauce (Use 1 T if your soy sauce is dark) / salt and pep",
       "method_excerpt": "Soak the ribs for 30 minutes in cold water. Drain. / Fill a large pot with enough water to cover the ribs, about 8 cups. Bring water to a boil, and then drop the ribs in. Let it come back to a boil. Continue to boil for 2 to ",
       "preliminary_basis": "ARCHIVED_SOURCE_EXCERPTS",
-      "ingredient_check": "PENDING_FULL_SINGLE_SOURCE_REVIEW",
-      "technique_check": "PENDING_FULL_SINGLE_SOURCE_REVIEW",
-      "time_check": "PENDING_FULL_SINGLE_SOURCE_REVIEW",
-      "approved": false
+      "ingredient_check": "PASS",
+      "technique_check": "PASS",
+      "time_check": "PASS",
+      "approved": true,
+      "review_note": "Korean Bapsang galbitang: soak/blanch beef ribs and gently simmer with radish, aromatics until tender; editorial transparent broth and doneness criteria align.",
+      "review_method": "SINGLE_ORIGINAL_SOURCE_REVIEW_WITH_EDITORIAL_COMPARISON",
+      "review_date": "2026-11-19"
     },
     {
       "id": 65,
@@ -1221,10 +1233,13 @@
       "ingredient_excerpt": "1.5 ounces dried miyeok (yields about 3 cups soaked) / 6 ounces beef (stew meat or brisket) / 2 teaspoons minced garlic / 2 tablespoons soup soy sauce (gukganjang, 국간장) (If unavailable, use 1 T regular soy sauce and season with salt to taste) / 1 tab",
       "method_excerpt": "Soak the dried miyeok per package instructions (usually 10 to 20 min) or until miyeok turns soft and plump. Rinse twice. Drain well, and cut into bite sizes. / Cut the beef into thin bite size pieces. Marinate with 1 tablespo",
       "preliminary_basis": "ARCHIVED_SOURCE_EXCERPTS",
-      "ingredient_check": "PENDING_FULL_SINGLE_SOURCE_REVIEW",
-      "technique_check": "PENDING_FULL_SINGLE_SOURCE_REVIEW",
-      "time_check": "PENDING_FULL_SINGLE_SOURCE_REVIEW",
-      "approved": false
+      "ingredient_check": "PASS",
+      "technique_check": "PASS",
+      "time_check": "PASS",
+      "approved": true,
+      "review_note": "Korean Bapsang miyeok-guk: rehydrated seaweed with seared beef and soy/garlic broth, simmer 20min+; editorial ingredient and stage sequence compatible.",
+      "review_method": "SINGLE_ORIGINAL_SOURCE_REVIEW_WITH_EDITORIAL_COMPARISON",
+      "review_date": "2026-11-19"
     },
     {
       "id": 66,
@@ -1237,10 +1252,13 @@
       "ingredient_excerpt": "10 pieces mandu (dumplings) - adjust to your serving size (See note 1) / 5 cups chicken broth (or other flavorful broth such as beef broth, anchovy broth, vegetable broth, etc.) (See note 2) / 1 tablespoon guk ganjang (soup soy sauce) (or fish sauce ",
       "method_excerpt": "In a medium size pot, add 5 cups of chicken broth (or broth of your choice). (See note below.) Bring it to a boil over medium high heat. / Stir in the garlic, soy sauce, and salt and pepper to taste. Add the mandu pieces, sti",
       "preliminary_basis": "ARCHIVED_SOURCE_EXCERPTS",
-      "ingredient_check": "PENDING_FULL_SINGLE_SOURCE_REVIEW",
-      "technique_check": "PENDING_FULL_SINGLE_SOURCE_REVIEW",
-      "time_check": "PENDING_FULL_SINGLE_SOURCE_REVIEW",
-      "approved": false
+      "ingredient_check": "PASS",
+      "technique_check": "PASS",
+      "time_check": "CONDITIONAL_READINESS",
+      "approved": false,
+      "review_note": "Korean Bapsang manduguk: dumplings cooked in stock, egg ribbons added at end, gim and scallions garnish. Editorial 6–10 min is not a universal time for raw meat filling; verify center safely cooked.",
+      "review_method": "SINGLE_ORIGINAL_SOURCE_REVIEW_WITH_EDITORIAL_COMPARISON",
+      "review_date": "2026-11-19"
     },
     {
       "id": 67,
@@ -1253,10 +1271,13 @@
       "ingredient_excerpt": "2 cups packed bite size kimchi (fully fermented) / 4 ounces fresh pork belly (or other pork meat with some fat or other protein choice) / 1 to 3 teaspoons gochugaru (Korean red chili pepper flakes) ( adjust to taste or omit) / 1 teaspoon minced garli",
       "method_excerpt": "Cut the kimchi into bite size pieces. / Cut the meat into bite sizes. Slice the tofu (about 1/2-inch thick), and roughly chop the scallions. / Heat a small to medium pot with 1 tablespoon of oil. Add the kimchi, pork, red pep",
       "preliminary_basis": "ARCHIVED_SOURCE_EXCERPTS",
-      "ingredient_check": "PENDING_FULL_SINGLE_SOURCE_REVIEW",
-      "technique_check": "PENDING_FULL_SINGLE_SOURCE_REVIEW",
-      "time_check": "PENDING_FULL_SINGLE_SOURCE_REVIEW",
-      "approved": false
+      "ingredient_check": "PASS",
+      "technique_check": "PASS",
+      "time_check": "CONDITIONAL_READINESS",
+      "approved": false,
+      "review_note": "Korean Bapsang kimchi jjigae: well-fermented kimchi plus pork belly sautéed and simmered with broth, tofu later. Editorial timing 20–25min must also deliver fully cooked pork.",
+      "review_method": "SINGLE_ORIGINAL_SOURCE_REVIEW_WITH_EDITORIAL_COMPARISON",
+      "review_date": "2026-11-19"
     },
     {
       "id": 68,
@@ -1269,10 +1290,13 @@
       "ingredient_excerpt": "8 ounce kongnamul (soybean sprouts) / 6 - 8 medium to large size dried anchovies for broth / 1 plump garlic clove (thinly sliced or minced) / 1 scallions (chopped) / salt and pepper - See note / 6 cups of water",
       "method_excerpt": "In a medium size pot, bring 6 cups of water with the anchovies and garlic to a boil, uncovered. Reduce the heat to medium high and boil, uncovered, for 10 minutes. Remove the anchovies and garlic from the broth. / Rinse the s",
       "preliminary_basis": "ARCHIVED_SOURCE_EXCERPTS",
-      "ingredient_check": "PENDING_FULL_SINGLE_SOURCE_REVIEW",
-      "technique_check": "PENDING_FULL_SINGLE_SOURCE_REVIEW",
-      "time_check": "PENDING_FULL_SINGLE_SOURCE_REVIEW",
-      "approved": false
+      "ingredient_check": "PASS",
+      "technique_check": "PASS",
+      "time_check": "PASS",
+      "approved": true,
+      "review_note": "Korean Bapsang kongnamul guk: soybean sprouts simmered in seasoned water/broth with garlic and scallion; editorial covers sprouts 7–8min and keeps lid consistent.",
+      "review_method": "SINGLE_ORIGINAL_SOURCE_REVIEW_WITH_EDITORIAL_COMPARISON",
+      "review_date": "2026-11-19"
     },
     {
       "id": 69,
@@ -1285,10 +1309,13 @@
       "ingredient_excerpt": "2 pounds of pork spine or neck bones / 1/2 small onion / 5 garlic cloves / 4 thin ginger slices (about 1-inch rounds) / 1 scallion white part / 5 to 6 ounces young cabbage, putbaechu, 풋배추 or napa cabbage (1 cup, boiled) / 3 small white potatoes / 6 t",
       "method_excerpt": "Soak the bones for an hour or longer in cold water. Change the water half way through if you can. Drain. / Bring a medium pot of water to a boil. Drop the bones in. Let it come back to a boil. This will take about 7 to 8 minu",
       "preliminary_basis": "ARCHIVED_SOURCE_EXCERPTS",
-      "ingredient_check": "PENDING_FULL_SINGLE_SOURCE_REVIEW",
-      "technique_check": "PENDING_FULL_SINGLE_SOURCE_REVIEW",
-      "time_check": "PENDING_FULL_SINGLE_SOURCE_REVIEW",
-      "approved": false
+      "ingredient_check": "PASS",
+      "technique_check": "PASS",
+      "time_check": "CONDITIONAL_READINESS",
+      "approved": false,
+      "review_note": "Korean Bapsang gamjatang: pork backbone blanched and simmered until soft, potatoes and cabbage added later, perilla and doenjang seasoning. Editorial approximate timings require fully cooked bone meat and soft potato.",
+      "review_method": "SINGLE_ORIGINAL_SOURCE_REVIEW_WITH_EDITORIAL_COMPARISON",
+      "review_date": "2026-11-19"
     },
     {
       "id": 70,
@@ -1301,10 +1328,13 @@
       "ingredient_excerpt": "3 ounces pork (preferably fatty pork) (shoulder, or loin (or beef)) / 9 ounces tofu (dubu, 두부) / 1/2 medium zucchini (4 to 5 ounces) / 2 ounces Korean radish (mu, 무) (and/or 1 small potato, sliced into 1/4-inch thick bite size pieces. ) / 1/4 medium ",
       "method_excerpt": "Cut the tofu and zucchini into about 1-inch cubes. Cut the radish into thin small squares. Thinly slice the onion and pepper. Roughly chop the scallion. Slice the meat into thin strips. / Preheat a small pot with a little bit",
       "preliminary_basis": "ARCHIVED_SOURCE_EXCERPTS",
-      "ingredient_check": "PENDING_FULL_SINGLE_SOURCE_REVIEW",
-      "technique_check": "PENDING_FULL_SINGLE_SOURCE_REVIEW",
-      "time_check": "PENDING_FULL_SINGLE_SOURCE_REVIEW",
-      "approved": false
+      "ingredient_check": "REQUIRES_SOURCE_ALIGNMENT",
+      "technique_check": "REQUIRES_SOURCE_ALIGNMENT",
+      "time_check": "PASS",
+      "approved": false,
+      "review_note": "Korean Bapsang doenjang jjigae offers pork/vegetable and optional seafood variants. Editorial vegetarian dashi tofu/potato/zucchini version is a distinct legitimate variation; chosen linked source focuses on pork, so source may need closer vegetarian variant.",
+      "review_method": "SINGLE_ORIGINAL_SOURCE_REVIEW_WITH_EDITORIAL_COMPARISON",
+      "review_date": "2026-11-19"
     },
     {
       "id": 71,
@@ -1787,6 +1817,6 @@
       "approved": false
     }
   ],
-  "quality_approved": 39,
-  "review_in_progress": 21
+  "quality_approved": 45,
+  "review_in_progress": 25
 }
