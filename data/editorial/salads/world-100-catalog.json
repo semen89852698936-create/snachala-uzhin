@@ -4106,10 +4106,10 @@
         "stage": "editorial_research",
         "sources": [
           "https://www.spain.info/es/receta/mojete-murciano/",
-          "https://www.directoalpaladar.com/recetas-de-ensaladas/ensalada-murciana-receta",
+          "https://www.aceitunastorrent.com/recetas/ensalada-murciana-tradicional-receta-facil-fresca-y-con-tradicion/",
           "https://www.bonviveur.es/recetas/ensalada-murciana"
         ],
-        "note": "Пропорции пересчитаны для двух порций"
+        "note": "Пропорции пересчитаны для двух порций\n2026-11-19: Replaced inaccessible DirectoAlPaladar slug with Murcian olive producer recipe using canned tomato, tuna, eggs, onion, black olives, olive oil."
       },
       "photo": null,
       "imagePublishingBlocked": true,
@@ -4315,9 +4315,9 @@
         "sources": [
           "https://www.dianekochilas.com/greek-salad/",
           "https://www.olivetomato.com/authentic-greek-salad/",
-          "https://akispetretzikis.com/en/recipe/1971/chwriatikh-salata"
+          "https://www.greekboston.com/food/salads/horiatiki-recipe/"
         ],
-        "note": "Технология и состав адаптированы для двух порций\nVerified replacement 2026-11-19: Corrected dead Diane Kochilas URL to explicit traditional Greek salad with feta, vegetables, olive oil, oregano.\nVerified replacement 2026-11-19: Replaced generic HeartAthens tourist landing page with independent Akis Petretzikis horiatiki recipe. Distinct from original Diane and OliveTomato."
+        "note": "Технология и состав адаптированы для двух порций\nVerified replacement 2026-11-19: Corrected dead Diane Kochilas URL to explicit traditional Greek salad with feta, vegetables, olive oil, oregano.\nVerified replacement 2026-11-19: Replaced generic HeartAthens tourist landing page with independent Akis Petretzikis horiatiki recipe. Distinct from original Diane and OliveTomato.\n2026-11-19: Replaced JS-only Akis page, GreekBoston clearly lists fresh tomatoes peppers cucumber onion whole feta olives oregano oil."
       },
       "photo": null,
       "imagePublishingBlocked": true,
@@ -4694,10 +4694,10 @@
         "stage": "editorial_research",
         "sources": [
           "https://akispetretzikis.com/en/recipe/7129/pantzarosalata",
-          "https://www.cyprusfoodmuseum.com/en/sylloges/paradosiakes-syntages/beetroot-salad",
+          "https://www.kalliopiskitchen.com/recipes/pantzarosalata/",
           "https://www.dimitrasdishes.com/greek-beet-yogurt-salad-pantzarosalata/"
         ],
-        "note": "Технология и состав адаптированы для двух порций"
+        "note": "Технология и состав адаптированы для двух порций\n2026-11-19: Replaced blocked Cyprus Food Museum page with Greek recipe using cooked beets garlic yogurt and olive oil. Walnut addition validated independently via Dimitra's Dishes."
       },
       "photo": null,
       "imagePublishingBlocked": true,
@@ -5003,10 +5003,10 @@
         "stage": "editorial_research",
         "sources": [
           "https://akispetretzikis.com/recipe/politikh-salata",
-          "https://messino.gr/en/recipes/greek-cabbage-and-carrot-salad-politiki-salad/",
+          "https://emvolos.gr/cooking-recipes-politiki-salad/",
           "https://www.monasticrepublic.com/en/recipes/salad/greek-cabbage-salad-politiki"
         ],
-        "note": "Технология и состав адаптированы для двух порций"
+        "note": "Технология и состав адаптированы для двух порций\n2026-11-19: Replaced Messino pork-apple-raisin version with Greek chef's traditional cabbage carrot red pepper celery olive oil vinegar, 15 minute refrigeration; Akis variant instead has 1h rest.\n2026-11-19: Akis Greek cabbage Politiki recipe rests 60 minutes, but independent Greek chef on Emvolos explicitly rests 15 minutes; current 15min is an authentic quick variant and timer remains unchanged."
       },
       "photo": null,
       "imagePublishingBlocked": true,
@@ -5099,9 +5099,9 @@
         "sources": [
           "https://www.kalofagas.ca/2008/10/13/warm-green-bean-salad-%CE%B1%CE%BC%CF%80%CE%B5%CE%BB%CE%BF%CF%86%CE%AC%CF%83%CE%BF%CF%85%CE%BB%CE%B1/",
           "https://www.greekcookingmadeeasy.com/allrecipes/green-beans-salad?rq=green+beans",
-          "https://www.epikouria.com/recipes/ampelofasoula/"
+          "https://cookout.skai.gr/recipes/salata-ampelofasoula"
         ],
-        "note": "Технология и состав адаптированы для двух порций"
+        "note": "Технология и состав адаптированы для двух порций\n2026-11-19: Replaced inaccessible Epikouria slug with Greek Cookout recipe of boiled long green beans lemon/olive oil; additions parsley garlic are editorial variant."
       },
       "photo": null,
       "imagePublishingBlocked": true,
@@ -5199,10 +5199,10 @@
         "stage": "editorial_research",
         "sources": [
           "https://akispetretzikis.com/en/recipe/3920/salata-me-mayromatika-fasolia",
-          "https://www.greekboston.com/food/black-eyed-pea-salad-recipe/",
+          "https://theeasterncross.com/fasting-recipes/mavromatika",
           "https://www.dianekochilas.com/mavromatika-salata-black-eyed-pea-salad-mastiha-vinaigrette/"
         ],
-        "note": "Технология и состав адаптированы для двух порций"
+        "note": "Технология и состав адаптированы для двух порций\n2026-11-19: Replaced purslane-and-pomegranate source with Greek fasting recipe containing cooked black-eyed peas, red pepper, parsley, olive oil lemon; uses spring onion instead of red, so editorial variation noted.\n2026-11-19: Sources vary in garnish for Greek black-eyed pea salad: Akis uses tomatoes, other authors use purslane/mastiha or bell pepper. Current vegetable-heavy 20min version assumes beans already cooked; dried beans require substantial extra preparation."
       },
       "photo": null,
       "imagePublishingBlocked": true,
