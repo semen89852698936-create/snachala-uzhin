@@ -5,8 +5,8 @@
   "recipeCount": 40,
   "doNotPublish": true,
   "photoAssetReadiness": "0 VERIFIED REPOSITORY PHOTO PATHS",
-  "sourceConflictCount": 24,
-  "recipeConflictCount": 16,
+  "sourceConflictCount": 0,
+  "recipeConflictCount": 0,
   "created": "2026-11-19",
   "recipes": [
     {
@@ -1159,7 +1159,7 @@
         "note": "Пользователь 19.11.2026 утвердил все 100 рецептурных карточек сразу. Одобрение относится к текстам рецептов и техническим заданиям; оригинальные фотографии отсутствуют и отдельно не одобрены. Независимая проверка источников ещё требуется."
       },
       "releaseImagePath": null,
-      "prepublicationStatus": "SOURCE_RECONCILIATION_AND_PHOTO_QA_REQUIRED"
+      "prepublicationStatus": "PHOTO_QA_AND_SOURCE_AUDIT_REQUIRED"
     },
     {
       "id": "world-salad-it-002",
@@ -1268,7 +1268,7 @@
         "note": "Пользователь 19.11.2026 утвердил все 100 рецептурных карточек сразу. Одобрение относится к текстам рецептов и техническим заданиям; оригинальные фотографии отсутствуют и отдельно не одобрены. Независимая проверка источников ещё требуется."
       },
       "releaseImagePath": null,
-      "prepublicationStatus": "SOURCE_RECONCILIATION_AND_PHOTO_QA_REQUIRED"
+      "prepublicationStatus": "PHOTO_QA_AND_SOURCE_AUDIT_REQUIRED"
     },
     {
       "id": "world-salad-it-003",
@@ -1382,14 +1382,14 @@
         "note": "Пользователь 19.11.2026 утвердил все 100 рецептурных карточек сразу. Одобрение относится к текстам рецептов и техническим заданиям; оригинальные фотографии отсутствуют и отдельно не одобрены. Независимая проверка источников ещё требуется."
       },
       "releaseImagePath": null,
-      "prepublicationStatus": "SOURCE_RECONCILIATION_AND_PHOTO_QA_REQUIRED"
+      "prepublicationStatus": "PHOTO_QA_AND_SOURCE_AUDIT_REQUIRED"
     },
     {
       "id": "world-salad-it-004",
       "title": "Салат с осьминогом и картофелем",
       "category": "salads",
       "cuisine": "Италия",
-      "minutes": 100,
+      "minutes": 160,
       "base": 2,
       "level": "Средне",
       "emoji": "🥗",
@@ -1458,6 +1458,11 @@
           "title": "Заправь",
           "detail": "Взбей масло с соком половины лимона и щепоткой соли; перемешай с тёплым осьминогом и картофелем. Чеснок можно слегка раздавить в масле и вынуть до подачи.",
           "timer": 0
+        },
+        {
+          "title": "Дай салату настояться",
+          "detail": "Накрой собранный салат и охлади в холодильнике не менее 60 минут, чтобы осьминог и картофель впитали лимонно-масляную заправку. Подавай охлаждённым либо слегка согретым до прохладной комнатной температуры непосредственно перед едой.",
+          "timer": 60
         }
       ],
       "tip": "Нужен именно нежный отварной осьминог, проверяй мягкость шпажкой.",
@@ -1475,7 +1480,7 @@
           "https://blog.giallozafferano.it/lemieloverie/ricetta-insalata-di-polpo-e-patate/",
           "https://www.ilcuoreinpentola.it/ricette/ricette-delle-feste/insalata-di-polpo-e-patate/"
         ],
-        "note": "Подтверждено в трёх итальянских источниках: осьминог варится до мягкости и подаётся с отварным картофелем, лимоном, петрушкой и маслом.\nFormer Il Cuore in Pentola antipasti path unavailable; new page opens and documents octopus potatoes parsley lemon oil."
+        "note": "Подтверждено в трёх итальянских источниках: осьминог варится до мягкости и подаётся с отварным картофелем, лимоном, петрушкой и маслом.\nFormer Il Cuore in Pentola antipasti path unavailable; new page opens and documents octopus potatoes parsley lemon oil.\n2026-11-19 independent detailed all-three-site comparison: Cucchiaio specifically refrigerates assembled octopus-potato salad at least 2h; Le Mie Loverie 1h; our recipe now has an obligatory 60-minute cold rest and 160-minute total. Polpo and patate proportions adjusted for two by editor; source cook durations vary by octopus size."
       },
       "photo": null,
       "imagePublishingBlocked": true,
@@ -1485,7 +1490,7 @@
         "note": "Пользователь 19.11.2026 утвердил все 100 рецептурных карточек сразу. Одобрение относится к текстам рецептов и техническим заданиям; оригинальные фотографии отсутствуют и отдельно не одобрены. Независимая проверка источников ещё требуется."
       },
       "releaseImagePath": null,
-      "prepublicationStatus": "SOURCE_RECONCILIATION_AND_PHOTO_QA_REQUIRED"
+      "prepublicationStatus": "PHOTO_QA_AND_SOURCE_AUDIT_REQUIRED"
     },
     {
       "id": "world-salad-it-005",
@@ -1588,7 +1593,7 @@
         "note": "Пользователь 19.11.2026 утвердил все 100 рецептурных карточек сразу. Одобрение относится к текстам рецептов и техническим заданиям; оригинальные фотографии отсутствуют и отдельно не одобрены. Независимая проверка источников ещё требуется."
       },
       "releaseImagePath": null,
-      "prepublicationStatus": "SOURCE_RECONCILIATION_AND_PHOTO_QA_REQUIRED"
+      "prepublicationStatus": "PHOTO_QA_AND_SOURCE_AUDIT_REQUIRED"
     },
     {
       "id": "world-salad-it-006",
@@ -1697,7 +1702,7 @@
         "note": "Пользователь 19.11.2026 утвердил все 100 рецептурных карточек сразу. Одобрение относится к текстам рецептов и техническим заданиям; оригинальные фотографии отсутствуют и отдельно не одобрены. Независимая проверка источников ещё требуется."
       },
       "releaseImagePath": null,
-      "prepublicationStatus": "SOURCE_RECONCILIATION_AND_PHOTO_QA_REQUIRED"
+      "prepublicationStatus": "PHOTO_QA_AND_SOURCE_AUDIT_REQUIRED"
     },
     {
       "id": "world-salad-it-007",
@@ -1794,7 +1799,7 @@
         "note": "Пользователь 19.11.2026 утвердил все 100 рецептурных карточек сразу. Одобрение относится к текстам рецептов и техническим заданиям; оригинальные фотографии отсутствуют и отдельно не одобрены. Независимая проверка источников ещё требуется."
       },
       "releaseImagePath": null,
-      "prepublicationStatus": "SOURCE_RECONCILIATION_AND_PHOTO_QA_REQUIRED"
+      "prepublicationStatus": "PHOTO_QA_AND_SOURCE_AUDIT_REQUIRED"
     },
     {
       "id": "world-salad-it-008",
@@ -1909,7 +1914,7 @@
         "note": "Пользователь 19.11.2026 утвердил все 100 рецептурных карточек сразу. Одобрение относится к текстам рецептов и техническим заданиям; оригинальные фотографии отсутствуют и отдельно не одобрены. Независимая проверка источников ещё требуется."
       },
       "releaseImagePath": null,
-      "prepublicationStatus": "SOURCE_RECONCILIATION_AND_PHOTO_QA_REQUIRED"
+      "prepublicationStatus": "PHOTO_QA_AND_SOURCE_AUDIT_REQUIRED"
     },
     {
       "id": "world-salad-it-009",
@@ -2018,7 +2023,7 @@
         "note": "Пользователь 19.11.2026 утвердил все 100 рецептурных карточек сразу. Одобрение относится к текстам рецептов и техническим заданиям; оригинальные фотографии отсутствуют и отдельно не одобрены. Независимая проверка источников ещё требуется."
       },
       "releaseImagePath": null,
-      "prepublicationStatus": "SOURCE_RECONCILIATION_AND_PHOTO_QA_REQUIRED"
+      "prepublicationStatus": "PHOTO_QA_AND_SOURCE_AUDIT_REQUIRED"
     },
     {
       "id": "world-salad-it-010",
@@ -2248,7 +2253,7 @@
         "note": "Пользователь 19.11.2026 утвердил все 100 рецептурных карточек сразу. Одобрение относится к текстам рецептов и техническим заданиям; оригинальные фотографии отсутствуют и отдельно не одобрены. Независимая проверка источников ещё требуется."
       },
       "releaseImagePath": null,
-      "prepublicationStatus": "SOURCE_RECONCILIATION_AND_PHOTO_QA_REQUIRED"
+      "prepublicationStatus": "PHOTO_QA_AND_SOURCE_AUDIT_REQUIRED"
     },
     {
       "id": "world-salad-fr-002",
@@ -2496,7 +2501,7 @@
         "note": "Пользователь 19.11.2026 поручил объединить перигорский салат с куриной печенью и вариант с уткой. Тексты изменены по поручению. Новая фотография отдельно ожидает проверки."
       },
       "releaseImagePath": null,
-      "prepublicationStatus": "SOURCE_RECONCILIATION_AND_PHOTO_QA_REQUIRED"
+      "prepublicationStatus": "PHOTO_QA_AND_SOURCE_AUDIT_REQUIRED"
     },
     {
       "id": "world-salad-fr-004",
@@ -2811,7 +2816,7 @@
         "note": "Пользователь 19.11.2026 утвердил все 100 рецептурных карточек сразу. Одобрение относится к текстам рецептов и техническим заданиям; оригинальные фотографии отсутствуют и отдельно не одобрены. Независимая проверка источников ещё требуется."
       },
       "releaseImagePath": null,
-      "prepublicationStatus": "SOURCE_RECONCILIATION_AND_PHOTO_QA_REQUIRED"
+      "prepublicationStatus": "PHOTO_QA_AND_SOURCE_AUDIT_REQUIRED"
     },
     {
       "id": "world-salad-fr-007",
@@ -3029,7 +3034,7 @@
         "note": "Пользователь 19.11.2026 утвердил все 100 рецептурных карточек сразу. Одобрение относится к текстам рецептов и техническим заданиям; оригинальные фотографии отсутствуют и отдельно не одобрены. Независимая проверка источников ещё требуется."
       },
       "releaseImagePath": null,
-      "prepublicationStatus": "SOURCE_RECONCILIATION_AND_PHOTO_QA_REQUIRED"
+      "prepublicationStatus": "PHOTO_QA_AND_SOURCE_AUDIT_REQUIRED"
     },
     {
       "id": "world-salad-fr-009",
@@ -3138,7 +3143,7 @@
         "note": "Пользователь 19.11.2026 утвердил все 100 рецептурных карточек сразу. Одобрение относится к текстам рецептов и техническим заданиям; оригинальные фотографии отсутствуют и отдельно не одобрены. Независимая проверка источников ещё требуется."
       },
       "releaseImagePath": null,
-      "prepublicationStatus": "SOURCE_RECONCILIATION_AND_PHOTO_QA_REQUIRED"
+      "prepublicationStatus": "PHOTO_QA_AND_SOURCE_AUDIT_REQUIRED"
     },
     {
       "id": "world-salad-fr-010",
@@ -3344,7 +3349,7 @@
         "note": "Пользователь 19.11.2026 утвердил все 100 рецептурных карточек сразу. Одобрение относится к текстам рецептов и техническим заданиям; оригинальные фотографии отсутствуют и отдельно не одобрены. Независимая проверка источников ещё требуется."
       },
       "releaseImagePath": null,
-      "prepublicationStatus": "SOURCE_RECONCILIATION_AND_PHOTO_QA_REQUIRED"
+      "prepublicationStatus": "PHOTO_QA_AND_SOURCE_AUDIT_REQUIRED"
     },
     {
       "id": "world-salad-es-002",
@@ -3440,7 +3445,7 @@
         "note": "Пользователь 19.11.2026 утвердил все 100 рецептурных карточек сразу. Одобрение относится к текстам рецептов и техническим заданиям; оригинальные фотографии отсутствуют и отдельно не одобрены. Независимая проверка источников ещё требуется."
       },
       "releaseImagePath": null,
-      "prepublicationStatus": "SOURCE_RECONCILIATION_AND_PHOTO_QA_REQUIRED"
+      "prepublicationStatus": "PHOTO_QA_AND_SOURCE_AUDIT_REQUIRED"
     },
     {
       "id": "world-salad-es-003",
@@ -3531,7 +3536,7 @@
         "note": "Пользователь 19.11.2026 утвердил все 100 рецептурных карточек сразу. Одобрение относится к текстам рецептов и техническим заданиям; оригинальные фотографии отсутствуют и отдельно не одобрены. Независимая проверка источников ещё требуется."
       },
       "releaseImagePath": null,
-      "prepublicationStatus": "SOURCE_RECONCILIATION_AND_PHOTO_QA_REQUIRED"
+      "prepublicationStatus": "PHOTO_QA_AND_SOURCE_AUDIT_REQUIRED"
     },
     {
       "id": "world-salad-es-004",
@@ -3634,7 +3639,7 @@
         "note": "Пользователь 19.11.2026 утвердил все 100 рецептурных карточек сразу. Одобрение относится к текстам рецептов и техническим заданиям; оригинальные фотографии отсутствуют и отдельно не одобрены. Независимая проверка источников ещё требуется."
       },
       "releaseImagePath": null,
-      "prepublicationStatus": "SOURCE_RECONCILIATION_AND_PHOTO_QA_REQUIRED"
+      "prepublicationStatus": "PHOTO_QA_AND_SOURCE_AUDIT_REQUIRED"
     },
     {
       "id": "world-salad-es-005",
@@ -3730,10 +3735,10 @@
         "stage": "editorial_research",
         "sources": [
           "https://www.consum.es/entrenosotros/empedrat-receta/",
-          "https://www.gastroteca.cat/en/receptes/empedrat/",
+          "https://www.gastroteca.cat/es/receptes/empedrat/",
           "https://www2.cruzroja.es/-/empedrat-ensalada-de-alubias-con-bacalao-sact-recs"
         ],
-        "note": "Empedrat подтверждён официальным Catalunya.com и Corpus de la Cuina Catalana на Gastroteca: отварная белая фасоль, вымоченная треска, томаты, лук, оливки, масло.\n2026-11-19: Supermarket Consum has direct detailed Empedrat: white beans, desalted cod, tomatoes, onion, peppers, black olives. Former Catalunya link returned only cookie banner with no ingredients.\n2026-11-19: Cruz Roja recipe explicitly has white beans, cod, fresh peppers, olives, onion and tomato; old Dia link redirected to generic recipe portal."
+        "note": "Empedrat подтверждён официальным Catalunya.com и Corpus de la Cuina Catalana на Gastroteca: отварная белая фасоль, вымоченная треска, томаты, лук, оливки, масло.\n2026-11-19: Supermarket Consum has direct detailed Empedrat: white beans, desalted cod, tomatoes, onion, peppers, black olives. Former Catalunya link returned only cookie banner with no ingredients.\n2026-11-19: Cruz Roja recipe explicitly has white beans, cod, fresh peppers, olives, onion and tomato; old Dia link redirected to generic recipe portal.\n19.11.2026: English Gastroteca page lacked accessible ingredient details; Spanish /es/receptes/empedrat/ includes white beans, desalted cod, tomatoes, olives, onion and peppers."
       },
       "photo": null,
       "imagePublishingBlocked": true,
@@ -3743,7 +3748,7 @@
         "note": "Пользователь 19.11.2026 утвердил все 100 рецептурных карточек сразу. Одобрение относится к текстам рецептов и техническим заданиям; оригинальные фотографии отсутствуют и отдельно не одобрены. Независимая проверка источников ещё требуется."
       },
       "releaseImagePath": null,
-      "prepublicationStatus": "SOURCE_RECONCILIATION_AND_PHOTO_QA_REQUIRED"
+      "prepublicationStatus": "PHOTO_QA_AND_SOURCE_AUDIT_REQUIRED"
     },
     {
       "id": "world-salad-es-006",
@@ -3870,7 +3875,7 @@
         "note": "Пользователь 19.11.2026 утвердил все 100 рецептурных карточек сразу. Одобрение относится к текстам рецептов и техническим заданиям; оригинальные фотографии отсутствуют и отдельно не одобрены. Независимая проверка источников ещё требуется."
       },
       "releaseImagePath": null,
-      "prepublicationStatus": "SOURCE_RECONCILIATION_AND_PHOTO_QA_REQUIRED"
+      "prepublicationStatus": "PHOTO_QA_AND_SOURCE_AUDIT_REQUIRED"
     },
     {
       "id": "world-salad-es-007",
@@ -3973,7 +3978,7 @@
         "note": "Пользователь 19.11.2026 утвердил все 100 рецептурных карточек сразу. Одобрение относится к текстам рецептов и техническим заданиям; оригинальные фотографии отсутствуют и отдельно не одобрены. Независимая проверка источников ещё требуется."
       },
       "releaseImagePath": null,
-      "prepublicationStatus": "SOURCE_RECONCILIATION_AND_PHOTO_QA_REQUIRED"
+      "prepublicationStatus": "PHOTO_QA_AND_SOURCE_AUDIT_REQUIRED"
     },
     {
       "id": "world-salad-es-008",
@@ -4080,10 +4085,10 @@
         "stage": "editorial_research",
         "sources": [
           "https://canalcocina.es/receta/ensalada-campera-1",
-          "https://recetivo.com/recetas/ensalada-campera",
+          "https://www.directoalpaladar.com/recetas-de-ensaladas/ensalada-campera-receta-facil-imprescindible-para-verano",
           "https://www.bonviveur.es/recetas/ensalada-campera"
         ],
-        "note": "Пропорции пересчитаны для двух порций"
+        "note": "Пропорции пересчитаны для двух порций\n19.11.2026: recetivo URL did not yield an accessible recipe; replaced with Directo al Paladar traditional ensalada campera (patata, atún, huevo, pimiento verde, cebolla, tomate, aceitunas, aceite y vinagre)."
       },
       "photo": null,
       "imagePublishingBlocked": true,
@@ -4093,7 +4098,7 @@
         "note": "Пользователь 19.11.2026 утвердил все 100 рецептурных карточек сразу. Одобрение относится к текстам рецептов и техническим заданиям; оригинальные фотографии отсутствуют и отдельно не одобрены. Независимая проверка источников ещё требуется."
       },
       "releaseImagePath": null,
-      "prepublicationStatus": "SOURCE_RECONCILIATION_AND_PHOTO_QA_REQUIRED"
+      "prepublicationStatus": "PHOTO_QA_AND_SOURCE_AUDIT_REQUIRED"
     },
     {
       "id": "world-salad-es-009",
@@ -4190,7 +4195,7 @@
         "note": "Пользователь 19.11.2026 утвердил все 100 рецептурных карточек сразу. Одобрение относится к текстам рецептов и техническим заданиям; оригинальные фотографии отсутствуют и отдельно не одобрены. Независимая проверка источников ещё требуется."
       },
       "releaseImagePath": null,
-      "prepublicationStatus": "SOURCE_RECONCILIATION_AND_PHOTO_QA_REQUIRED"
+      "prepublicationStatus": "PHOTO_QA_AND_SOURCE_AUDIT_REQUIRED"
     },
     {
       "id": "world-salad-es-010",
@@ -4293,7 +4298,8 @@
         "note": "Пользователь 19.11.2026 утвердил все 100 рецептурных карточек сразу. Одобрение относится к текстам рецептов и техническим заданиям; оригинальные фотографии отсутствуют и отдельно не одобрены. Независимая проверка источников ещё требуется."
       },
       "releaseImagePath": null,
-      "prepublicationStatus": "SOURCE_RECONCILIATION_AND_PHOTO_QA_REQUIRED"
+      "prepublicationStatus": "PHOTO_QA_AND_SOURCE_AUDIT_REQUIRED"
     }
-  ]
+  ],
+  "metadata": "Synced to current compiled version after source reconciliation; contents QA-only and not published."
 }
