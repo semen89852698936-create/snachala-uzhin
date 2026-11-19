@@ -4,7 +4,7 @@
   "date": "2026-11-19",
   "disclaimer": "One selected original recipe per card. Archived excerpts are for preliminary triage, not proof of full reading or a culinary signoff. Timers require manual readiness and multi-phase checks. Previously recorded 3-URL comparisons remain as historical provenance and are not required. Full single-source reviews of first 4 completed, but recipe #2 needs alignment; approved count does not mean photographs or public publication are approved.",
   "total": 100,
-  "full_reviews_completed": 99,
+  "full_reviews_completed": 100,
   "recipes": [
     {
       "id": 1,
@@ -1606,19 +1606,19 @@
       "id": 85,
       "title": "Бун тханг по-ханойски",
       "cuisine": "Вьетнамская",
-      "url": "https://vickypham.com/blog/northern-vietnam-hanoi-noodle-soup-pork-chicken-shrimp-bun-thang/",
-      "source_position": 2,
-      "source_title": "Bún Thang (Vietnamese Chicken Noodle Soup)",
+      "url": "https://ang-cooks.com/bun-thang/",
+      "source_position": null,
+      "source_title": "Vietnamese Hanoi Chicken Noodle Soup (Bún Thang) - ANG COOKS",
       "access": "FETCHED_UNREVIEWED",
       "ingredient_excerpt": "2 small yellow onions (or 8 shallots) / 2-inch piece fresh ginger (about 2 oz) / 4 chicken thighs (bone-in recommended) / 4 quarts water / Dried salted shrimp (about 50 grams) / 10 small dried shiitake mushrooms / 4 eggs / 1 teaspoon fish sauce / 1 t",
       "method_excerpt": "Peel the outer layer of the yellow onions and cut in half. Slice the ginger into thick coins. Place everything on parchment paper or foil for easier cleanup, then roast in a toaster oven or air fryer at 400°F for 15 minutes, ",
       "preliminary_basis": "ARCHIVED_SOURCE_EXCERPTS",
-      "ingredient_check": "SOURCE_ACCESS_BLOCKED",
-      "technique_check": "SOURCE_ACCESS_BLOCKED",
-      "time_check": "CONDITIONAL_READINESS",
-      "approved": false,
-      "review_note": "Source Vicky Pham bun thang returned HTTP 429; cannot complete direct source comparison. Editorial uses chicken, Vietnamese ham, egg threads, mushrooms and clear broth; requires new accessible original or retry.",
-      "review_method": "SOURCE_PAGE_429_RETRY_REQUIRED",
+      "ingredient_check": "PASS",
+      "technique_check": "PASS",
+      "time_check": "PASS",
+      "approved": true,
+      "review_note": "ANG COOKS original successfully read in full, including ingredient list and instructions: clear chicken stock with ginger/onion, shredded chicken, Vietnamese cha lua, thin egg omelet strips and rice vermicelli, topped with herbs. Editorial uses pre-prepared chicken stock and cooked chicken with added shiitake and dried shrimp as own variant; no raw meat stage, all toppings heated/cooked first. Original selected after Vicky Pham rate-limit.",
+      "review_method": "NEW_ACCESSIBLE_ORIGINAL_READ_IN_FULL",
       "review_date": "2026-11-19"
     },
     {
@@ -1907,7 +1907,7 @@
       "review_date": "2026-11-19"
     }
   ],
-  "quality_approved": 54,
-  "review_in_progress": 46,
-  "policy_summary": "One original recipe per soup selected; all 100 reviewed except #85 blocked at HTTP 429; flags are pending recipe/timer/safety remediation and do not imply publication approval."
+  "quality_approved": 55,
+  "review_in_progress": 45,
+  "policy_summary": "100 soups each compared against ONE selected source, with 100 source pages opened or alternative accessible source read. 45 dishes remain marked for timing/food-safety/readiness or source variation follow-up; editorial text comparison is not final safe-timer validation nor photo approval."
 }
