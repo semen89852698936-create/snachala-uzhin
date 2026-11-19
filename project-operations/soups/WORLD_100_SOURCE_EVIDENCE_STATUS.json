@@ -1,23 +1,24 @@
 {
   "project": "НАШ ВЕЧЕР",
   "branch": "editorial/russian-soups-10-verified-20261119",
-  "source_run": 44429932913,
-  "status": "AUTOMATIC_SOURCE_EVIDENCE_NOT_CULINARY_APPROVAL",
-  "limitations": "HTTP page and machine-readable recipe metadata checks only; recipe correspondence, technique, amounts, cook times and translation differences are not yet independently validated for all 300 sources. Titles and counts are informative, not three-source proof.",
+  "source_run": 44438543042,
+  "status": "AUTOMATIC_SOURCE_EVIDENCE_NOT_FULL_CULINARY_APPROVAL",
+  "limitations": "All 100 recipes have editorial comparisons with 3 sources; 30 sources loaded separately through web browser but GitHub HTTP access failed. Machine access and source excerpts are not a certification of complete source reading. Recipe portions and timing still require final approval.",
   "summary": {
     "source_count": 300,
     "by_verdict": {
-      "FETCHED_UNREVIEWED": 269,
-      "ACCESS_BLOCKED": 26,
-      "SERVER_ERROR": 1,
-      "NETWORK_ERROR": 3,
+      "FETCHED_UNREVIEWED": 270,
+      "ACCESS_BLOCKED": 27,
+      "NETWORK_ERROR": 2,
       "HTTP_ERROR": 1
     },
-    "loaded": 269,
-    "with_ingredient_schema": 136,
-    "recipes_with_three_pages_loaded": 70,
-    "recipes_with_three_recipe_schemas": 9,
-    "recipes_pending_independent_culinary_verification": 100
+    "loaded": 270,
+    "with_ingredient_schema": 139,
+    "recipes_with_three_pages_loaded": 72,
+    "recipes_with_three_recipe_schemas": 10,
+    "recipes_with_documented_source_comparisons": 100,
+    "recipes_with_full_external_culinary_certification": 0,
+    "browser_recovered_sources": 30
   },
   "recipes": [
     {
@@ -25,8 +26,8 @@
       "title": "Борщ с говядиной",
       "cuisine": "Русская",
       "source_pages_loaded": 3,
-      "recipe_schemas_detected": 2,
-      "full_three_source_recipe_review": "PENDING",
+      "recipe_schemas_detected": 3,
+      "full_three_source_recipe_review": "NOT_CERTIFIED",
       "sources": [
         {
           "number": 1,
@@ -35,16 +36,18 @@
           "html_page_title": "классический борщ с говядиной, пошаговый рецепт с фото на 484 ккал",
           "recipe_schema_title": "Классический борщ с говядиной",
           "schema_ingredient_items": 15,
-          "recipe_content_independently_verified": false
+          "recipe_content_independently_verified": false,
+          "web_browser_alternative_access": "NOT_NEEDED"
         },
         {
           "number": 2,
-          "url": "https://openkitchen.eda.yandex/article/dishes/recipes/borsch-po-klassicheskomu-retseptu",
+          "url": "https://food.ru/recipes/188835-vkusnyi-borshch-s-goviadinoi",
           "status": "FETCHED_UNREVIEWED",
-          "html_page_title": "",
-          "recipe_schema_title": "",
-          "schema_ingredient_items": 0,
-          "recipe_content_independently_verified": false
+          "html_page_title": "классический борщ с говядиной – пошаговый рецепт приготовления с фото на 36 калорий за 30 минут",
+          "recipe_schema_title": "Классический борщ с говядиной",
+          "schema_ingredient_items": 15,
+          "recipe_content_independently_verified": false,
+          "web_browser_alternative_access": "NOT_NEEDED"
         },
         {
           "number": 3,
@@ -53,7 +56,8 @@
           "html_page_title": "борщ классический с говядиной — пошаговый рецепт приготовления с фото 2026 | простые и вкусные рецепты в домашних условиях edimdoma.ru",
           "recipe_schema_title": "Борщ классический с говядиной",
           "schema_ingredient_items": 14,
-          "recipe_content_independently_verified": false
+          "recipe_content_independently_verified": false,
+          "web_browser_alternative_access": "NOT_NEEDED"
         }
       ]
     },
@@ -63,7 +67,7 @@
       "cuisine": "Русская",
       "source_pages_loaded": 3,
       "recipe_schemas_detected": 2,
-      "full_three_source_recipe_review": "PENDING",
+      "full_three_source_recipe_review": "NOT_CERTIFIED",
       "sources": [
         {
           "number": 1,
@@ -72,7 +76,8 @@
           "html_page_title": "щи из квашеной капусты с говядиной, пошаговый рецепт с фото",
           "recipe_schema_title": "Щи из квашеной капусты с говядиной",
           "schema_ingredient_items": 10,
-          "recipe_content_independently_verified": false
+          "recipe_content_independently_verified": false,
+          "web_browser_alternative_access": "NOT_NEEDED"
         },
         {
           "number": 2,
@@ -81,7 +86,8 @@
           "html_page_title": "щи из квашеной капусты с говядиной — лайфхакер",
           "recipe_schema_title": "Щи из квашеной капусты с говядиной",
           "schema_ingredient_items": 11,
-          "recipe_content_independently_verified": false
+          "recipe_content_independently_verified": false,
+          "web_browser_alternative_access": "NOT_NEEDED"
         },
         {
           "number": 3,
@@ -90,7 +96,8 @@
           "html_page_title": "������: �� �� ������ ������� � ��������� �� russianfood.com",
           "recipe_schema_title": "",
           "schema_ingredient_items": 0,
-          "recipe_content_independently_verified": false
+          "recipe_content_independently_verified": false,
+          "web_browser_alternative_access": "NOT_NEEDED"
         }
       ]
     },
@@ -100,7 +107,7 @@
       "cuisine": "Русская",
       "source_pages_loaded": 3,
       "recipe_schemas_detected": 1,
-      "full_three_source_recipe_review": "PENDING",
+      "full_three_source_recipe_review": "NOT_CERTIFIED",
       "sources": [
         {
           "number": 1,
@@ -109,7 +116,8 @@
           "html_page_title": "рассольник ленинградский | проект роспотребнадзора «здоровое питание»",
           "recipe_schema_title": "",
           "schema_ingredient_items": 0,
-          "recipe_content_independently_verified": false
+          "recipe_content_independently_verified": false,
+          "web_browser_alternative_access": "NOT_NEEDED"
         },
         {
           "number": 2,
@@ -118,7 +126,8 @@
           "html_page_title": "рассольник ленинградский с перловкой, пошаговый рецепт с фото на 588 ккал",
           "recipe_schema_title": "Рассольник Ленинградский с перловкой",
           "schema_ingredient_items": 15,
-          "recipe_content_independently_verified": false
+          "recipe_content_independently_verified": false,
+          "web_browser_alternative_access": "NOT_NEEDED"
         },
         {
           "number": 3,
@@ -127,7 +136,8 @@
           "html_page_title": "рассольник ленинградский с крупой перловой (ттк2808) технологическая карта",
           "recipe_schema_title": "",
           "schema_ingredient_items": 0,
-          "recipe_content_independently_verified": false
+          "recipe_content_independently_verified": false,
+          "web_browser_alternative_access": "NOT_NEEDED"
         }
       ]
     },
@@ -136,8 +146,8 @@
       "title": "Солянка мясная сборная",
       "cuisine": "Русская",
       "source_pages_loaded": 3,
-      "recipe_schemas_detected": 2,
-      "full_three_source_recipe_review": "PENDING",
+      "recipe_schemas_detected": 3,
+      "full_three_source_recipe_review": "NOT_CERTIFIED",
       "sources": [
         {
           "number": 1,
@@ -146,16 +156,18 @@
           "html_page_title": "солянка сборная мясная классическая, пошаговый рецепт с фото на 262 ккал",
           "recipe_schema_title": "Солянка сборная мясная классическая",
           "schema_ingredient_items": 16,
-          "recipe_content_independently_verified": false
+          "recipe_content_independently_verified": false,
+          "web_browser_alternative_access": "NOT_NEEDED"
         },
         {
           "number": 2,
-          "url": "https://openkitchen.eda.yandex/article/dishes/recipes/solyanka-myasnaya-sbornaya",
+          "url": "https://ecoferma.spb.ru/receipts/solyanka_sbornaya_myasnaya/",
           "status": "FETCHED_UNREVIEWED",
-          "html_page_title": "солянка мясная сборная: пошаговый рецепт с фото и калорийностью. — открытая кухня",
-          "recipe_schema_title": "",
-          "schema_ingredient_items": 0,
-          "recipe_content_independently_verified": false
+          "html_page_title": "солянка мясная сборная: классический рецепт супа пошагово с фото",
+          "recipe_schema_title": "Солянка сборная мясная",
+          "schema_ingredient_items": 20,
+          "recipe_content_independently_verified": false,
+          "web_browser_alternative_access": "NOT_NEEDED"
         },
         {
           "number": 3,
@@ -164,7 +176,8 @@
           "html_page_title": "мясная сборная солянка — классический рецепт с копчёностями и солёными огурцами",
           "recipe_schema_title": "Классическая солянка мясная сборная",
           "schema_ingredient_items": 16,
-          "recipe_content_independently_verified": false
+          "recipe_content_independently_verified": false,
+          "web_browser_alternative_access": "NOT_NEEDED"
         }
       ]
     },
@@ -174,7 +187,7 @@
       "cuisine": "Русская",
       "source_pages_loaded": 3,
       "recipe_schemas_detected": 2,
-      "full_three_source_recipe_review": "PENDING",
+      "full_three_source_recipe_review": "NOT_CERTIFIED",
       "sources": [
         {
           "number": 1,
@@ -183,7 +196,8 @@
           "html_page_title": "уха из судака: рецепт вкусного рыбного супа с картошкой в домашних условиях, калорийность и фото",
           "recipe_schema_title": "",
           "schema_ingredient_items": 0,
-          "recipe_content_independently_verified": false
+          "recipe_content_independently_verified": false,
+          "web_browser_alternative_access": "NOT_NEEDED"
         },
         {
           "number": 2,
@@ -192,7 +206,8 @@
           "html_page_title": "уха из судака: бульон отдельно, мясо в конце | фішхаб",
           "recipe_schema_title": "Уха из судака на голове и хвосте",
           "schema_ingredient_items": 1,
-          "recipe_content_independently_verified": false
+          "recipe_content_independently_verified": false,
+          "web_browser_alternative_access": "NOT_NEEDED"
         },
         {
           "number": 3,
@@ -201,7 +216,8 @@
           "html_page_title": "уха из судака – пошаговый рецепт приготовления с фото",
           "recipe_schema_title": "Уха из судака",
           "schema_ingredient_items": 10,
-          "recipe_content_independently_verified": false
+          "recipe_content_independently_verified": false,
+          "web_browser_alternative_access": "NOT_NEEDED"
         }
       ]
     },
@@ -211,7 +227,7 @@
       "cuisine": "Русская",
       "source_pages_loaded": 3,
       "recipe_schemas_detected": 1,
-      "full_three_source_recipe_review": "PENDING",
+      "full_three_source_recipe_review": "NOT_CERTIFIED",
       "sources": [
         {
           "number": 1,
@@ -220,7 +236,8 @@
           "html_page_title": "окрошка с говядиной на квасе, пошаговый рецепт с фото на 468 ккал",
           "recipe_schema_title": "Окрошка с говядиной на квасе",
           "schema_ingredient_items": 14,
-          "recipe_content_independently_verified": false
+          "recipe_content_independently_verified": false,
+          "web_browser_alternative_access": "NOT_NEEDED"
         },
         {
           "number": 2,
@@ -229,7 +246,8 @@
           "html_page_title": "������: ������� �� ����� �� russianfood.com",
           "recipe_schema_title": "",
           "schema_ingredient_items": 0,
-          "recipe_content_independently_verified": false
+          "recipe_content_independently_verified": false,
+          "web_browser_alternative_access": "NOT_NEEDED"
         },
         {
           "number": 3,
@@ -238,7 +256,8 @@
           "html_page_title": "окрошка на квасе: классический рецепт приготовления в домашних условиях, фото, ингредиенты, количество порций, стоимость",
           "recipe_schema_title": "",
           "schema_ingredient_items": 0,
-          "recipe_content_independently_verified": false
+          "recipe_content_independently_verified": false,
+          "web_browser_alternative_access": "NOT_NEEDED"
         }
       ]
     },
@@ -248,7 +267,7 @@
       "cuisine": "Русская",
       "source_pages_loaded": 2,
       "recipe_schemas_detected": 2,
-      "full_three_source_recipe_review": "PENDING",
+      "full_three_source_recipe_review": "NOT_CERTIFIED",
       "sources": [
         {
           "number": 1,
@@ -257,7 +276,8 @@
           "html_page_title": "зеленые щи с щавелем и яйцом, пошаговый рецепт с фото от автора елена",
           "recipe_schema_title": "Зеленые щи с щавелем и яйцом",
           "schema_ingredient_items": 11,
-          "recipe_content_independently_verified": false
+          "recipe_content_independently_verified": false,
+          "web_browser_alternative_access": "NOT_NEEDED"
         },
         {
           "number": 2,
@@ -266,7 +286,8 @@
           "html_page_title": "403 forbidden",
           "recipe_schema_title": "",
           "schema_ingredient_items": 0,
-          "recipe_content_independently_verified": false
+          "recipe_content_independently_verified": false,
+          "web_browser_alternative_access": "OPENED_SEPARATELY_2026_11_19"
         },
         {
           "number": 3,
@@ -275,7 +296,8 @@
           "html_page_title": "зеленые щи из щавеля – пошаговый рецепт приготовления с фото",
           "recipe_schema_title": "Зеленые щи из щавеля",
           "schema_ingredient_items": 7,
-          "recipe_content_independently_verified": false
+          "recipe_content_independently_verified": false,
+          "web_browser_alternative_access": "NOT_NEEDED"
         }
       ]
     },
@@ -285,7 +307,7 @@
       "cuisine": "Русская",
       "source_pages_loaded": 3,
       "recipe_schemas_detected": 0,
-      "full_three_source_recipe_review": "PENDING",
+      "full_three_source_recipe_review": "NOT_CERTIFIED",
       "sources": [
         {
           "number": 1,
@@ -294,7 +316,8 @@
           "html_page_title": "205) ботвинья. — рецепт елены молоховец",
           "recipe_schema_title": "",
           "schema_ingredient_items": 0,
-          "recipe_content_independently_verified": false
+          "recipe_content_independently_verified": false,
+          "web_browser_alternative_access": "NOT_NEEDED"
         },
         {
           "number": 2,
@@ -303,7 +326,8 @@
           "html_page_title": "ботвинья – как приготовить ботвинью — читать на gastronom.ru",
           "recipe_schema_title": "",
           "schema_ingredient_items": 0,
-          "recipe_content_independently_verified": false
+          "recipe_content_independently_verified": false,
+          "web_browser_alternative_access": "NOT_NEEDED"
         },
         {
           "number": 3,
@@ -312,7 +336,8 @@
           "html_page_title": "ботвинья — классический рецепт холодного супа с рыбой | gadgetchef",
           "recipe_schema_title": "",
           "schema_ingredient_items": 0,
-          "recipe_content_independently_verified": false
+          "recipe_content_independently_verified": false,
+          "web_browser_alternative_access": "NOT_NEEDED"
         }
       ]
     },
@@ -321,8 +346,8 @@
       "title": "Рыбная калья с солёными огурцами",
       "cuisine": "Русская",
       "source_pages_loaded": 3,
-      "recipe_schemas_detected": 1,
-      "full_three_source_recipe_review": "PENDING",
+      "recipe_schemas_detected": 2,
+      "full_three_source_recipe_review": "NOT_CERTIFIED",
       "sources": [
         {
           "number": 1,
@@ -331,16 +356,18 @@
           "html_page_title": "рецепт супа калья",
           "recipe_schema_title": "",
           "schema_ingredient_items": 0,
-          "recipe_content_independently_verified": false
+          "recipe_content_independently_verified": false,
+          "web_browser_alternative_access": "NOT_NEEDED"
         },
         {
           "number": 2,
-          "url": "https://openkitchen.eda.yandex/article/dishes/recipes/kalya",
+          "url": "https://textualchef.com/ru/recipes/fish-kalya/",
           "status": "FETCHED_UNREVIEWED",
-          "html_page_title": "",
-          "recipe_schema_title": "",
-          "schema_ingredient_items": 0,
-          "recipe_content_independently_verified": false
+          "html_page_title": "рецепт: рыбная калья | textual chef",
+          "recipe_schema_title": "Рыбная калья",
+          "schema_ingredient_items": 11,
+          "recipe_content_independently_verified": false,
+          "web_browser_alternative_access": "NOT_NEEDED"
         },
         {
           "number": 3,
@@ -349,7 +376,8 @@
           "html_page_title": "рыбная калья, пошаговый рецепт с фото на 720 ккал",
           "recipe_schema_title": "Рыбная калья",
           "schema_ingredient_items": 17,
-          "recipe_content_independently_verified": false
+          "recipe_content_independently_verified": false,
+          "web_browser_alternative_access": "NOT_NEEDED"
         }
       ]
     },
@@ -359,7 +387,7 @@
       "cuisine": "Русская",
       "source_pages_loaded": 2,
       "recipe_schemas_detected": 1,
-      "full_three_source_recipe_review": "PENDING",
+      "full_three_source_recipe_review": "NOT_CERTIFIED",
       "sources": [
         {
           "number": 1,
@@ -368,7 +396,8 @@
           "html_page_title": "суп из сушеных белых грибов с перловкой, пошаговый рецепт с фото на 174 ккал",
           "recipe_schema_title": "Суп из сушеных белых грибов с перловкой",
           "schema_ingredient_items": 10,
-          "recipe_content_independently_verified": false
+          "recipe_content_independently_verified": false,
+          "web_browser_alternative_access": "NOT_NEEDED"
         },
         {
           "number": 2,
@@ -377,7 +406,8 @@
           "html_page_title": "грибной суп из сушеных грибов с перловкой - пошаговый рецепт с фото на повар.ру",
           "recipe_schema_title": "",
           "schema_ingredient_items": 0,
-          "recipe_content_independently_verified": false
+          "recipe_content_independently_verified": false,
+          "web_browser_alternative_access": "NOT_NEEDED"
         },
         {
           "number": 3,
@@ -386,7 +416,8 @@
           "html_page_title": "just a moment...",
           "recipe_schema_title": "",
           "schema_ingredient_items": 0,
-          "recipe_content_independently_verified": false
+          "recipe_content_independently_verified": false,
+          "web_browser_alternative_access": "OPENED_SEPARATELY_2026_11_19"
         }
       ]
     },
@@ -396,7 +427,7 @@
       "cuisine": "Итальянская",
       "source_pages_loaded": 3,
       "recipe_schemas_detected": 1,
-      "full_three_source_recipe_review": "PENDING",
+      "full_three_source_recipe_review": "NOT_CERTIFIED",
       "sources": [
         {
           "number": 1,
@@ -405,7 +436,8 @@
           "html_page_title": "classic minestrone soup recipe | good food",
           "recipe_schema_title": "",
           "schema_ingredient_items": 0,
-          "recipe_content_independently_verified": false
+          "recipe_content_independently_verified": false,
+          "web_browser_alternative_access": "NOT_NEEDED"
         },
         {
           "number": 2,
@@ -414,7 +446,8 @@
           "html_page_title": "ricetta minestrone di verdure | la cucina italiana",
           "recipe_schema_title": "",
           "schema_ingredient_items": 0,
-          "recipe_content_independently_verified": false
+          "recipe_content_independently_verified": false,
+          "web_browser_alternative_access": "NOT_NEEDED"
         },
         {
           "number": 3,
@@ -423,7 +456,8 @@
           "html_page_title": "minestrone soup recipe - great british chefs",
           "recipe_schema_title": "Minestrone soup with courgettes",
           "schema_ingredient_items": 18,
-          "recipe_content_independently_verified": false
+          "recipe_content_independently_verified": false,
+          "web_browser_alternative_access": "NOT_NEEDED"
         }
       ]
     },
@@ -433,7 +467,7 @@
       "cuisine": "Итальянская",
       "source_pages_loaded": 3,
       "recipe_schemas_detected": 1,
-      "full_three_source_recipe_review": "PENDING",
+      "full_three_source_recipe_review": "NOT_CERTIFIED",
       "sources": [
         {
           "number": 1,
@@ -442,7 +476,8 @@
           "html_page_title": "ribollita - italian recipes by giallozafferano",
           "recipe_schema_title": "",
           "schema_ingredient_items": 0,
-          "recipe_content_independently_verified": false
+          "recipe_content_independently_verified": false,
+          "web_browser_alternative_access": "NOT_NEEDED"
         },
         {
           "number": 2,
@@ -451,7 +486,8 @@
           "html_page_title": "ricetta ribollita semplice - cucchiaio d argento",
           "recipe_schema_title": "Ribollita semplice",
           "schema_ingredient_items": 11,
-          "recipe_content_independently_verified": false
+          "recipe_content_independently_verified": false,
+          "web_browser_alternative_access": "NOT_NEEDED"
         },
         {
           "number": 3,
@@ -460,7 +496,8 @@
           "html_page_title": "ribollita recipe | visit tuscany",
           "recipe_schema_title": "",
           "schema_ingredient_items": 0,
-          "recipe_content_independently_verified": false
+          "recipe_content_independently_verified": false,
+          "web_browser_alternative_access": "NOT_NEEDED"
         }
       ]
     },
@@ -470,7 +507,7 @@
       "cuisine": "Итальянская",
       "source_pages_loaded": 3,
       "recipe_schemas_detected": 2,
-      "full_three_source_recipe_review": "PENDING",
+      "full_three_source_recipe_review": "NOT_CERTIFIED",
       "sources": [
         {
           "number": 1,
@@ -479,7 +516,8 @@
           "html_page_title": "pappa al pomodoro (tuscan tomato and bread soup) - italian recipes by giallozafferano",
           "recipe_schema_title": "",
           "schema_ingredient_items": 0,
-          "recipe_content_independently_verified": false
+          "recipe_content_independently_verified": false,
+          "web_browser_alternative_access": "NOT_NEEDED"
         },
         {
           "number": 2,
@@ -488,7 +526,8 @@
           "html_page_title": "pappa al pomodoro recipe - la cucina italiana",
           "recipe_schema_title": "Pappa al Pomodoro",
           "schema_ingredient_items": 9,
-          "recipe_content_independently_verified": false
+          "recipe_content_independently_verified": false,
+          "web_browser_alternative_access": "NOT_NEEDED"
         },
         {
           "number": 3,
@@ -497,7 +536,8 @@
           "html_page_title": "pappa al pomodoro recipe - great italian chefs",
           "recipe_schema_title": "Pappa al pomodoro",
           "schema_ingredient_items": 10,
-          "recipe_content_independently_verified": false
+          "recipe_content_independently_verified": false,
+          "web_browser_alternative_access": "NOT_NEEDED"
         }
       ]
     },
@@ -507,7 +547,7 @@
       "cuisine": "Итальянская",
       "source_pages_loaded": 3,
       "recipe_schemas_detected": 0,
-      "full_three_source_recipe_review": "PENDING",
+      "full_three_source_recipe_review": "NOT_CERTIFIED",
       "sources": [
         {
           "number": 1,
@@ -516,7 +556,8 @@
           "html_page_title": "stracciatella alla romana - italian recipe",
           "recipe_schema_title": "",
           "schema_ingredient_items": 0,
-          "recipe_content_independently_verified": false
+          "recipe_content_independently_verified": false,
+          "web_browser_alternative_access": "NOT_NEEDED"
         },
         {
           "number": 2,
@@ -525,7 +566,8 @@
           "html_page_title": "homemade stracciatella alla romana: italian egg drop soup - la cucina italiana",
           "recipe_schema_title": "",
           "schema_ingredient_items": 0,
-          "recipe_content_independently_verified": false
+          "recipe_content_independently_verified": false,
+          "web_browser_alternative_access": "NOT_NEEDED"
         },
         {
           "number": 3,
@@ -534,7 +576,8 @@
           "html_page_title": "the roman-style stracciatella | turismo roma",
           "recipe_schema_title": "",
           "schema_ingredient_items": 0,
-          "recipe_content_independently_verified": false
+          "recipe_content_independently_verified": false,
+          "web_browser_alternative_access": "NOT_NEEDED"
         }
       ]
     },
@@ -544,7 +587,7 @@
       "cuisine": "Итальянская",
       "source_pages_loaded": 3,
       "recipe_schemas_detected": 1,
-      "full_three_source_recipe_review": "PENDING",
+      "full_three_source_recipe_review": "NOT_CERTIFIED",
       "sources": [
         {
           "number": 1,
@@ -553,7 +596,8 @@
           "html_page_title": "ricetta pasta e fagioli | la cucina italiana",
           "recipe_schema_title": "",
           "schema_ingredient_items": 0,
-          "recipe_content_independently_verified": false
+          "recipe_content_independently_verified": false,
+          "web_browser_alternative_access": "NOT_NEEDED"
         },
         {
           "number": 2,
@@ -562,7 +606,8 @@
           "html_page_title": "pasta e fagioli recipe – bean and pasta soup - great italian chefs",
           "recipe_schema_title": "Pasta e fagioli – bean and pasta soup",
           "schema_ingredient_items": 12,
-          "recipe_content_independently_verified": false
+          "recipe_content_independently_verified": false,
+          "web_browser_alternative_access": "NOT_NEEDED"
         },
         {
           "number": 3,
@@ -571,7 +616,8 @@
           "html_page_title": "pasta e fagioli | james beard foundation",
           "recipe_schema_title": "Pasta e Fagioli",
           "schema_ingredient_items": 0,
-          "recipe_content_independently_verified": false
+          "recipe_content_independently_verified": false,
+          "web_browser_alternative_access": "NOT_NEEDED"
         }
       ]
     },
@@ -581,7 +627,7 @@
       "cuisine": "Итальянская",
       "source_pages_loaded": 3,
       "recipe_schemas_detected": 1,
-      "full_three_source_recipe_review": "PENDING",
+      "full_three_source_recipe_review": "NOT_CERTIFIED",
       "sources": [
         {
           "number": 1,
@@ -590,7 +636,8 @@
           "html_page_title": "acquacotta recipe - great italian chefs",
           "recipe_schema_title": "Acquacotta",
           "schema_ingredient_items": 14,
-          "recipe_content_independently_verified": false
+          "recipe_content_independently_verified": false,
+          "web_browser_alternative_access": "NOT_NEEDED"
         },
         {
           "number": 2,
@@ -599,7 +646,8 @@
           "html_page_title": "acquacotta | james beard foundation",
           "recipe_schema_title": "Acquacotta",
           "schema_ingredient_items": 0,
-          "recipe_content_independently_verified": false
+          "recipe_content_independently_verified": false,
+          "web_browser_alternative_access": "NOT_NEEDED"
         },
         {
           "number": 3,
@@ -608,7 +656,8 @@
           "html_page_title": "acquacotta originale maremmana - sarà buono davvero?",
           "recipe_schema_title": "",
           "schema_ingredient_items": 0,
-          "recipe_content_independently_verified": false
+          "recipe_content_independently_verified": false,
+          "web_browser_alternative_access": "NOT_NEEDED"
         }
       ]
     },
@@ -618,7 +667,7 @@
       "cuisine": "Итальянская",
       "source_pages_loaded": 3,
       "recipe_schemas_detected": 1,
-      "full_three_source_recipe_review": "PENDING",
+      "full_three_source_recipe_review": "NOT_CERTIFIED",
       "sources": [
         {
           "number": 1,
@@ -627,7 +676,8 @@
           "html_page_title": "tortellini in broth - italian recipes by giallozafferano",
           "recipe_schema_title": "",
           "schema_ingredient_items": 0,
-          "recipe_content_independently_verified": false
+          "recipe_content_independently_verified": false,
+          "web_browser_alternative_access": "NOT_NEEDED"
         },
         {
           "number": 2,
@@ -636,7 +686,8 @@
           "html_page_title": "tortellini in brodo recipe - la cucina italiana",
           "recipe_schema_title": "Tortellini in Brodo",
           "schema_ingredient_items": 19,
-          "recipe_content_independently_verified": false
+          "recipe_content_independently_verified": false,
+          "web_browser_alternative_access": "NOT_NEEDED"
         },
         {
           "number": 3,
@@ -645,7 +696,8 @@
           "html_page_title": "tortellini in broth: the italian recipe - gambero rosso international",
           "recipe_schema_title": "",
           "schema_ingredient_items": 0,
-          "recipe_content_independently_verified": false
+          "recipe_content_independently_verified": false,
+          "web_browser_alternative_access": "NOT_NEEDED"
         }
       ]
     },
@@ -655,7 +707,7 @@
       "cuisine": "Итальянская",
       "source_pages_loaded": 3,
       "recipe_schemas_detected": 1,
-      "full_three_source_recipe_review": "PENDING",
+      "full_three_source_recipe_review": "NOT_CERTIFIED",
       "sources": [
         {
           "number": 1,
@@ -664,7 +716,8 @@
           "html_page_title": "passatelli in broth - italian recipes by giallozafferano",
           "recipe_schema_title": "",
           "schema_ingredient_items": 0,
-          "recipe_content_independently_verified": false
+          "recipe_content_independently_verified": false,
+          "web_browser_alternative_access": "NOT_NEEDED"
         },
         {
           "number": 2,
@@ -673,7 +726,8 @@
           "html_page_title": "ricetta passatelli | la cucina italiana",
           "recipe_schema_title": "",
           "schema_ingredient_items": 0,
-          "recipe_content_independently_verified": false
+          "recipe_content_independently_verified": false,
+          "web_browser_alternative_access": "NOT_NEEDED"
         },
         {
           "number": 3,
@@ -682,7 +736,8 @@
           "html_page_title": "ricetta - passatelli in brodo - le ricette dello spicchio d'aglio",
           "recipe_schema_title": "",
           "schema_ingredient_items": 5,
-          "recipe_content_independently_verified": false
+          "recipe_content_independently_verified": false,
+          "web_browser_alternative_access": "NOT_NEEDED"
         }
       ]
     },
@@ -692,7 +747,7 @@
       "cuisine": "Итальянская",
       "source_pages_loaded": 3,
       "recipe_schemas_detected": 0,
-      "full_three_source_recipe_review": "PENDING",
+      "full_three_source_recipe_review": "NOT_CERTIFIED",
       "sources": [
         {
           "number": 1,
@@ -701,7 +756,8 @@
           "html_page_title": "ricetta mesciua, la zuppa che arriva dal porto di la spezia | la cucina italiana",
           "recipe_schema_title": "",
           "schema_ingredient_items": 0,
-          "recipe_content_independently_verified": false
+          "recipe_content_independently_verified": false,
+          "web_browser_alternative_access": "NOT_NEEDED"
         },
         {
           "number": 2,
@@ -710,7 +766,8 @@
           "html_page_title": "mescciüa - zuppa di legumi e farro (italia) - ricette internazionali",
           "recipe_schema_title": "",
           "schema_ingredient_items": 0,
-          "recipe_content_independently_verified": false
+          "recipe_content_independently_verified": false,
+          "web_browser_alternative_access": "NOT_NEEDED"
         },
         {
           "number": 3,
@@ -719,7 +776,8 @@
           "html_page_title": "mesciua",
           "recipe_schema_title": "",
           "schema_ingredient_items": 0,
-          "recipe_content_independently_verified": false
+          "recipe_content_independently_verified": false,
+          "web_browser_alternative_access": "NOT_NEEDED"
         }
       ]
     },
@@ -729,7 +787,7 @@
       "cuisine": "Итальянская",
       "source_pages_loaded": 3,
       "recipe_schemas_detected": 0,
-      "full_three_source_recipe_review": "PENDING",
+      "full_three_source_recipe_review": "NOT_CERTIFIED",
       "sources": [
         {
           "number": 1,
@@ -738,7 +796,8 @@
           "html_page_title": "cacciucco alla livornese - italian recipes by giallozafferano",
           "recipe_schema_title": "",
           "schema_ingredient_items": 0,
-          "recipe_content_independently_verified": false
+          "recipe_content_independently_verified": false,
+          "web_browser_alternative_access": "NOT_NEEDED"
         },
         {
           "number": 2,
@@ -747,7 +806,8 @@
           "html_page_title": "ricetta cacciucco alla livornese: ricetta originale della zuppa di pesce toscana | la cucina italiana",
           "recipe_schema_title": "",
           "schema_ingredient_items": 0,
-          "recipe_content_independently_verified": false
+          "recipe_content_independently_verified": false,
+          "web_browser_alternative_access": "NOT_NEEDED"
         },
         {
           "number": 3,
@@ -756,7 +816,8 @@
           "html_page_title": "cacciucco alla livornese - ricetta depositata alla camera di commercio e ricetta pro-loco - cucina regionale italiana",
           "recipe_schema_title": "",
           "schema_ingredient_items": 0,
-          "recipe_content_independently_verified": false
+          "recipe_content_independently_verified": false,
+          "web_browser_alternative_access": "NOT_NEEDED"
         }
       ]
     },
@@ -766,7 +827,7 @@
       "cuisine": "Французская",
       "source_pages_loaded": 3,
       "recipe_schemas_detected": 1,
-      "full_three_source_recipe_review": "PENDING",
+      "full_three_source_recipe_review": "NOT_CERTIFIED",
       "sources": [
         {
           "number": 1,
@@ -775,7 +836,8 @@
           "html_page_title": "soupe à l oignon gratinée : la meilleure recette",
           "recipe_schema_title": "Soupe à l'oignon gratinée : la meilleure recette",
           "schema_ingredient_items": 9,
-          "recipe_content_independently_verified": false
+          "recipe_content_independently_verified": false,
+          "web_browser_alternative_access": "NOT_NEEDED"
         },
         {
           "number": 2,
@@ -784,7 +846,8 @@
           "html_page_title": "recette soupe à l’oignon gratinée - 750g.com",
           "recipe_schema_title": "",
           "schema_ingredient_items": 0,
-          "recipe_content_independently_verified": false
+          "recipe_content_independently_verified": false,
+          "web_browser_alternative_access": "NOT_NEEDED"
         },
         {
           "number": 3,
@@ -793,7 +856,8 @@
           "html_page_title": "french onion soup recipe | good food",
           "recipe_schema_title": "",
           "schema_ingredient_items": 0,
-          "recipe_content_independently_verified": false
+          "recipe_content_independently_verified": false,
+          "web_browser_alternative_access": "NOT_NEEDED"
         }
       ]
     },
@@ -803,7 +867,7 @@
       "cuisine": "Французская",
       "source_pages_loaded": 3,
       "recipe_schemas_detected": 2,
-      "full_three_source_recipe_review": "PENDING",
+      "full_three_source_recipe_review": "NOT_CERTIFIED",
       "sources": [
         {
           "number": 1,
@@ -812,7 +876,8 @@
           "html_page_title": "bouillabaisse comme à marseille : la meilleure recette",
           "recipe_schema_title": "Bouillabaisse comme à Marseille : la meilleure recette",
           "schema_ingredient_items": 25,
-          "recipe_content_independently_verified": false
+          "recipe_content_independently_verified": false,
+          "web_browser_alternative_access": "NOT_NEEDED"
         },
         {
           "number": 2,
@@ -821,7 +886,8 @@
           "html_page_title": "recette bouillabaisse marseillaise - 750g.com",
           "recipe_schema_title": "Bouillabaisse marseillaise",
           "schema_ingredient_items": 10,
-          "recipe_content_independently_verified": false
+          "recipe_content_independently_verified": false,
+          "web_browser_alternative_access": "NOT_NEEDED"
         },
         {
           "number": 3,
@@ -830,7 +896,8 @@
           "html_page_title": "la bouillabaisse | office de tourisme de marseille",
           "recipe_schema_title": "",
           "schema_ingredient_items": 0,
-          "recipe_content_independently_verified": false
+          "recipe_content_independently_verified": false,
+          "web_browser_alternative_access": "NOT_NEEDED"
         }
       ]
     },
@@ -838,9 +905,9 @@
       "id": 23,
       "title": "Вишисуаз с луком-пореем",
       "cuisine": "Французская",
-      "source_pages_loaded": 2,
+      "source_pages_loaded": 1,
       "recipe_schemas_detected": 1,
-      "full_three_source_recipe_review": "PENDING",
+      "full_three_source_recipe_review": "NOT_CERTIFIED",
       "sources": [
         {
           "number": 1,
@@ -849,16 +916,18 @@
           "html_page_title": "vichyssoise recipe - great british chefs",
           "recipe_schema_title": "Vichyssoise – chilled leek and potato soup",
           "schema_ingredient_items": 12,
-          "recipe_content_independently_verified": false
+          "recipe_content_independently_verified": false,
+          "web_browser_alternative_access": "NOT_NEEDED"
         },
         {
           "number": 2,
-          "url": "https://www.bbcgoodfood.com/recipes/leek-potato-soup",
-          "status": "FETCHED_UNREVIEWED",
-          "html_page_title": "leek potato soup recipe | good food",
+          "url": "https://www.foodnetwork.com/recipes/creme-vichyssoise-glacee-recipe-1918804",
+          "status": "ACCESS_BLOCKED",
+          "html_page_title": "access denied",
           "recipe_schema_title": "",
           "schema_ingredient_items": 0,
-          "recipe_content_independently_verified": false
+          "recipe_content_independently_verified": false,
+          "web_browser_alternative_access": "OPENED_SEPARATELY_2026_11_19"
         },
         {
           "number": 3,
@@ -867,7 +936,8 @@
           "html_page_title": "attention required! | cloudflare",
           "recipe_schema_title": "",
           "schema_ingredient_items": 0,
-          "recipe_content_independently_verified": false
+          "recipe_content_independently_verified": false,
+          "web_browser_alternative_access": "OPENED_SEPARATELY_2026_11_19"
         }
       ]
     },
@@ -877,7 +947,7 @@
       "cuisine": "Французская",
       "source_pages_loaded": 2,
       "recipe_schemas_detected": 1,
-      "full_three_source_recipe_review": "PENDING",
+      "full_three_source_recipe_review": "NOT_CERTIFIED",
       "sources": [
         {
           "number": 1,
@@ -886,7 +956,8 @@
           "html_page_title": "la garbure : la meilleure recette",
           "recipe_schema_title": "La garbure : la meilleure recette",
           "schema_ingredient_items": 12,
-          "recipe_content_independently_verified": false
+          "recipe_content_independently_verified": false,
+          "web_browser_alternative_access": "NOT_NEEDED"
         },
         {
           "number": 2,
@@ -895,7 +966,8 @@
           "html_page_title": "recette garbure - 750g.com",
           "recipe_schema_title": "",
           "schema_ingredient_items": 0,
-          "recipe_content_independently_verified": false
+          "recipe_content_independently_verified": false,
+          "web_browser_alternative_access": "NOT_NEEDED"
         },
         {
           "number": 3,
@@ -904,7 +976,8 @@
           "html_page_title": "just a moment...",
           "recipe_schema_title": "",
           "schema_ingredient_items": 0,
-          "recipe_content_independently_verified": false
+          "recipe_content_independently_verified": false,
+          "web_browser_alternative_access": "OPENED_SEPARATELY_2026_11_19"
         }
       ]
     },
@@ -914,7 +987,7 @@
       "cuisine": "Французская",
       "source_pages_loaded": 2,
       "recipe_schemas_detected": 1,
-      "full_three_source_recipe_review": "PENDING",
+      "full_three_source_recipe_review": "NOT_CERTIFIED",
       "sources": [
         {
           "number": 1,
@@ -923,7 +996,8 @@
           "html_page_title": "soupe au pistou - l authentique : la meilleure recette",
           "recipe_schema_title": "Soupe au pistou - l'authentique : la meilleure recette",
           "schema_ingredient_items": 14,
-          "recipe_content_independently_verified": false
+          "recipe_content_independently_verified": false,
+          "web_browser_alternative_access": "NOT_NEEDED"
         },
         {
           "number": 2,
@@ -932,7 +1006,8 @@
           "html_page_title": "just a moment...",
           "recipe_schema_title": "",
           "schema_ingredient_items": 0,
-          "recipe_content_independently_verified": false
+          "recipe_content_independently_verified": false,
+          "web_browser_alternative_access": "OPENED_SEPARATELY_2026_11_19"
         },
         {
           "number": 3,
@@ -941,7 +1016,8 @@
           "html_page_title": "la soupe au pistou aix en provence - office de tourisme",
           "recipe_schema_title": "",
           "schema_ingredient_items": 0,
-          "recipe_content_independently_verified": false
+          "recipe_content_independently_verified": false,
+          "web_browser_alternative_access": "NOT_NEEDED"
         }
       ]
     },
@@ -951,7 +1027,7 @@
       "cuisine": "Французская",
       "source_pages_loaded": 3,
       "recipe_schemas_detected": 2,
-      "full_three_source_recipe_review": "PENDING",
+      "full_three_source_recipe_review": "NOT_CERTIFIED",
       "sources": [
         {
           "number": 1,
@@ -960,7 +1036,8 @@
           "html_page_title": "tourin à l ail traditionnel : la recette facile",
           "recipe_schema_title": "Tourin à l'ail traditionnel : la recette facile",
           "schema_ingredient_items": 9,
-          "recipe_content_independently_verified": false
+          "recipe_content_independently_verified": false,
+          "web_browser_alternative_access": "NOT_NEEDED"
         },
         {
           "number": 2,
@@ -969,7 +1046,8 @@
           "html_page_title": "recette soupe tourin l ail - marie claire",
           "recipe_schema_title": "soupe Tourin à l’ail",
           "schema_ingredient_items": 0,
-          "recipe_content_independently_verified": false
+          "recipe_content_independently_verified": false,
+          "web_browser_alternative_access": "NOT_NEEDED"
         },
         {
           "number": 3,
@@ -978,7 +1056,8 @@
           "html_page_title": "tourin à l’ail : la meilleure recette",
           "recipe_schema_title": "Tourin à l’ail : la meilleure recette",
           "schema_ingredient_items": 7,
-          "recipe_content_independently_verified": false
+          "recipe_content_independently_verified": false,
+          "web_browser_alternative_access": "NOT_NEEDED"
         }
       ]
     },
@@ -988,7 +1067,7 @@
       "cuisine": "Французская",
       "source_pages_loaded": 3,
       "recipe_schemas_detected": 1,
-      "full_three_source_recipe_review": "PENDING",
+      "full_three_source_recipe_review": "NOT_CERTIFIED",
       "sources": [
         {
           "number": 1,
@@ -997,7 +1076,8 @@
           "html_page_title": "potage dubarry | french cooking academy",
           "recipe_schema_title": "",
           "schema_ingredient_items": 0,
-          "recipe_content_independently_verified": false
+          "recipe_content_independently_verified": false,
+          "web_browser_alternative_access": "NOT_NEEDED"
         },
         {
           "number": 2,
@@ -1006,7 +1086,8 @@
           "html_page_title": "cream of cauliflower soup - abc news",
           "recipe_schema_title": "",
           "schema_ingredient_items": 0,
-          "recipe_content_independently_verified": false
+          "recipe_content_independently_verified": false,
+          "web_browser_alternative_access": "NOT_NEEDED"
         },
         {
           "number": 3,
@@ -1015,7 +1096,8 @@
           "html_page_title": "creme dubarry",
           "recipe_schema_title": "Creme Dubarry",
           "schema_ingredient_items": 9,
-          "recipe_content_independently_verified": false
+          "recipe_content_independently_verified": false,
+          "web_browser_alternative_access": "NOT_NEEDED"
         }
       ]
     },
@@ -1023,9 +1105,9 @@
       "id": 28,
       "title": "Биск из омара",
       "cuisine": "Французская",
-      "source_pages_loaded": 3,
-      "recipe_schemas_detected": 3,
-      "full_three_source_recipe_review": "PENDING",
+      "source_pages_loaded": 2,
+      "recipe_schemas_detected": 2,
+      "full_three_source_recipe_review": "NOT_CERTIFIED",
       "sources": [
         {
           "number": 1,
@@ -1034,7 +1116,8 @@
           "html_page_title": "bisque de homard maison : la meilleure recette",
           "recipe_schema_title": "Bisque de homard maison : la meilleure recette",
           "schema_ingredient_items": 13,
-          "recipe_content_independently_verified": false
+          "recipe_content_independently_verified": false,
+          "web_browser_alternative_access": "NOT_NEEDED"
         },
         {
           "number": 2,
@@ -1043,16 +1126,18 @@
           "html_page_title": "lobster bisque - alton brown",
           "recipe_schema_title": "AB's Lobster Bisque",
           "schema_ingredient_items": 18,
-          "recipe_content_independently_verified": false
+          "recipe_content_independently_verified": false,
+          "web_browser_alternative_access": "NOT_NEEDED"
         },
         {
           "number": 3,
-          "url": "https://www.gordonramsayrestaurants.com/recipes/lobster-and-cornish-crab-bisque/amp",
-          "status": "FETCHED_UNREVIEWED",
-          "html_page_title": "lobster and cornish crab bisque gordon ramsay restaurants ",
-          "recipe_schema_title": "Lobster and Cornish Crab Bisque",
-          "schema_ingredient_items": 16,
-          "recipe_content_independently_verified": false
+          "url": "https://www.foodnetwork.com/recipes/creamy-lobster-bisque-1963162",
+          "status": "ACCESS_BLOCKED",
+          "html_page_title": "access denied",
+          "recipe_schema_title": "",
+          "schema_ingredient_items": 0,
+          "recipe_content_independently_verified": false,
+          "web_browser_alternative_access": "OPENED_SEPARATELY_2026_11_19"
         }
       ]
     },
@@ -1062,7 +1147,7 @@
       "cuisine": "Французская",
       "source_pages_loaded": 3,
       "recipe_schemas_detected": 1,
-      "full_three_source_recipe_review": "PENDING",
+      "full_three_source_recipe_review": "NOT_CERTIFIED",
       "sources": [
         {
           "number": 1,
@@ -1071,7 +1156,8 @@
           "html_page_title": "bourride, provençal recipe from reboul (la cuisinière provençale, 1909) | lingua nostra",
           "recipe_schema_title": "Bourride",
           "schema_ingredient_items": 10,
-          "recipe_content_independently_verified": false
+          "recipe_content_independently_verified": false,
+          "web_browser_alternative_access": "NOT_NEEDED"
         },
         {
           "number": 2,
@@ -1080,7 +1166,8 @@
           "html_page_title": " bourride | the everyday french chef ",
           "recipe_schema_title": "",
           "schema_ingredient_items": 0,
-          "recipe_content_independently_verified": false
+          "recipe_content_independently_verified": false,
+          "web_browser_alternative_access": "NOT_NEEDED"
         },
         {
           "number": 3,
@@ -1089,7 +1176,8 @@
           "html_page_title": "bourride",
           "recipe_schema_title": "",
           "schema_ingredient_items": 0,
-          "recipe_content_independently_verified": false
+          "recipe_content_independently_verified": false,
+          "web_browser_alternative_access": "NOT_NEEDED"
         }
       ]
     },
@@ -1099,7 +1187,7 @@
       "cuisine": "Французская",
       "source_pages_loaded": 3,
       "recipe_schemas_detected": 3,
-      "full_three_source_recipe_review": "PENDING",
+      "full_three_source_recipe_review": "NOT_CERTIFIED",
       "sources": [
         {
           "number": 1,
@@ -1108,7 +1196,8 @@
           "html_page_title": "potage crécy (french carrot soup) | ricardo",
           "recipe_schema_title": "Potage Crécy (French Carrot Soup)",
           "schema_ingredient_items": 9,
-          "recipe_content_independently_verified": false
+          "recipe_content_independently_verified": false,
+          "web_browser_alternative_access": "NOT_NEEDED"
         },
         {
           "number": 2,
@@ -1117,7 +1206,8 @@
           "html_page_title": "classic french carrot soup (potage crécy) - pardon your french",
           "recipe_schema_title": "Classic French Carrot Soup (Potage Crécy)",
           "schema_ingredient_items": 1,
-          "recipe_content_independently_verified": false
+          "recipe_content_independently_verified": false,
+          "web_browser_alternative_access": "NOT_NEEDED"
         },
         {
           "number": 3,
@@ -1126,7 +1216,8 @@
           "html_page_title": "crécy soup (carrot soup) | taste france magazine",
           "recipe_schema_title": "Crécy Soup (Carrot Soup)",
           "schema_ingredient_items": 10,
-          "recipe_content_independently_verified": false
+          "recipe_content_independently_verified": false,
+          "web_browser_alternative_access": "NOT_NEEDED"
         }
       ]
     },
@@ -1136,7 +1227,7 @@
       "cuisine": "Испанская",
       "source_pages_loaded": 2,
       "recipe_schemas_detected": 1,
-      "full_three_source_recipe_review": "PENDING",
+      "full_three_source_recipe_review": "NOT_CERTIFIED",
       "sources": [
         {
           "number": 1,
@@ -1145,7 +1236,8 @@
           "html_page_title": "gazpacho andaluz casero, la auténtica receta tradicional - de rechupete",
           "recipe_schema_title": "",
           "schema_ingredient_items": 0,
-          "recipe_content_independently_verified": false
+          "recipe_content_independently_verified": false,
+          "web_browser_alternative_access": "NOT_NEEDED"
         },
         {
           "number": 2,
@@ -1154,7 +1246,8 @@
           "html_page_title": "access denied",
           "recipe_schema_title": "",
           "schema_ingredient_items": 0,
-          "recipe_content_independently_verified": false
+          "recipe_content_independently_verified": false,
+          "web_browser_alternative_access": "OPENED_SEPARATELY_2026_11_19"
         },
         {
           "number": 3,
@@ -1163,7 +1256,8 @@
           "html_page_title": "gazpacho tradicional andaluz | goya europa",
           "recipe_schema_title": "Gazpacho tradicional andaluz",
           "schema_ingredient_items": 9,
-          "recipe_content_independently_verified": false
+          "recipe_content_independently_verified": false,
+          "web_browser_alternative_access": "NOT_NEEDED"
         }
       ]
     },
@@ -1171,9 +1265,9 @@
       "id": 32,
       "title": "Сальморехо кордобский",
       "cuisine": "Испанская",
-      "source_pages_loaded": 2,
+      "source_pages_loaded": 3,
       "recipe_schemas_detected": 0,
-      "full_three_source_recipe_review": "PENDING",
+      "full_three_source_recipe_review": "NOT_CERTIFIED",
       "sources": [
         {
           "number": 1,
@@ -1182,16 +1276,18 @@
           "html_page_title": "recipe: salmorejo. spanish cuisine | spain.info",
           "recipe_schema_title": "Salmorejo",
           "schema_ingredient_items": 0,
-          "recipe_content_independently_verified": false
+          "recipe_content_independently_verified": false,
+          "web_browser_alternative_access": "NOT_NEEDED"
         },
         {
           "number": 2,
-          "url": "https://www.ice.edu/blog/salmorejo-cordobes-recipe",
-          "status": "ACCESS_BLOCKED",
-          "html_page_title": "just a moment...",
+          "url": "https://www.rtve.es/television/20230922/receta-salmorejo-cordobes-trucos-secretos-pan-miga/2456481.shtml",
+          "status": "FETCHED_UNREVIEWED",
+          "html_page_title": "receta del auténtico salmorejo cordobés",
           "recipe_schema_title": "",
           "schema_ingredient_items": 0,
-          "recipe_content_independently_verified": false
+          "recipe_content_independently_verified": false,
+          "web_browser_alternative_access": "NOT_NEEDED"
         },
         {
           "number": 3,
@@ -1200,7 +1296,8 @@
           "html_page_title": "salmorejo cordobés recipe | bon appétit",
           "recipe_schema_title": "",
           "schema_ingredient_items": 0,
-          "recipe_content_independently_verified": false
+          "recipe_content_independently_verified": false,
+          "web_browser_alternative_access": "NOT_NEEDED"
         }
       ]
     },
@@ -1210,7 +1307,7 @@
       "cuisine": "Испанская",
       "source_pages_loaded": 3,
       "recipe_schemas_detected": 1,
-      "full_three_source_recipe_review": "PENDING",
+      "full_three_source_recipe_review": "NOT_CERTIFIED",
       "sources": [
         {
           "number": 1,
@@ -1219,7 +1316,8 @@
           "html_page_title": "ajo blanco recipe | good food",
           "recipe_schema_title": "",
           "schema_ingredient_items": 0,
-          "recipe_content_independently_verified": false
+          "recipe_content_independently_verified": false,
+          "web_browser_alternative_access": "NOT_NEEDED"
         },
         {
           "number": 2,
@@ -1228,7 +1326,8 @@
           "html_page_title": "ajo blanco recipe | bon appétit",
           "recipe_schema_title": "",
           "schema_ingredient_items": 0,
-          "recipe_content_independently_verified": false
+          "recipe_content_independently_verified": false,
+          "web_browser_alternative_access": "NOT_NEEDED"
         },
         {
           "number": 3,
@@ -1237,7 +1336,8 @@
           "html_page_title": "david atherton's recipe for ajo blanco | soup | the guardian",
           "recipe_schema_title": "Ajo blanco",
           "schema_ingredient_items": 9,
-          "recipe_content_independently_verified": false
+          "recipe_content_independently_verified": false,
+          "web_browser_alternative_access": "NOT_NEEDED"
         }
       ]
     },
@@ -1247,7 +1347,7 @@
       "cuisine": "Испанская",
       "source_pages_loaded": 3,
       "recipe_schemas_detected": 1,
-      "full_three_source_recipe_review": "PENDING",
+      "full_three_source_recipe_review": "NOT_CERTIFIED",
       "sources": [
         {
           "number": 1,
@@ -1256,7 +1356,8 @@
           "html_page_title": "sopa de ajo o sopa castellana | web oficial de turismo de castilla-la mancha",
           "recipe_schema_title": "Sopa de ajo o sopa castellana",
           "schema_ingredient_items": 0,
-          "recipe_content_independently_verified": false
+          "recipe_content_independently_verified": false,
+          "web_browser_alternative_access": "NOT_NEEDED"
         },
         {
           "number": 2,
@@ -1265,7 +1366,8 @@
           "html_page_title": "sopa de ajo: receta tradicional y fácil de sopa castellana con huevo y pan",
           "recipe_schema_title": "Cómo hacer sopa de ajo: receta de sopa castellana tradicional",
           "schema_ingredient_items": 10,
-          "recipe_content_independently_verified": false
+          "recipe_content_independently_verified": false,
+          "web_browser_alternative_access": "NOT_NEEDED"
         },
         {
           "number": 3,
@@ -1274,7 +1376,8 @@
           "html_page_title": "sopa de ajo o sopa castellana: la receta tradicional",
           "recipe_schema_title": "",
           "schema_ingredient_items": 0,
-          "recipe_content_independently_verified": false
+          "recipe_content_independently_verified": false,
+          "web_browser_alternative_access": "NOT_NEEDED"
         }
       ]
     },
@@ -1284,7 +1387,7 @@
       "cuisine": "Испанская",
       "source_pages_loaded": 3,
       "recipe_schemas_detected": 1,
-      "full_three_source_recipe_review": "PENDING",
+      "full_three_source_recipe_review": "NOT_CERTIFIED",
       "sources": [
         {
           "number": 1,
@@ -1293,7 +1396,8 @@
           "html_page_title": "receta: caldo gallego. cocina española | spain.info",
           "recipe_schema_title": "Caldo gallego",
           "schema_ingredient_items": 0,
-          "recipe_content_independently_verified": false
+          "recipe_content_independently_verified": false,
+          "web_browser_alternative_access": "NOT_NEEDED"
         },
         {
           "number": 2,
@@ -1302,7 +1406,8 @@
           "html_page_title": "caldo gallego, con la receta tradicional de mi abuela - de rechupete",
           "recipe_schema_title": "",
           "schema_ingredient_items": 0,
-          "recipe_content_independently_verified": false
+          "recipe_content_independently_verified": false,
+          "web_browser_alternative_access": "NOT_NEEDED"
         },
         {
           "number": 3,
@@ -1311,7 +1416,8 @@
           "html_page_title": "receta de caldo gallego. receta de cocina fácil, sencilla y deliciosa",
           "recipe_schema_title": "Caldo gallego: receta cocinada a fuego lento y por la que te entrará la morriña",
           "schema_ingredient_items": 8,
-          "recipe_content_independently_verified": false
+          "recipe_content_independently_verified": false,
+          "web_browser_alternative_access": "NOT_NEEDED"
         }
       ]
     },
@@ -1319,9 +1425,9 @@
       "id": 36,
       "title": "Поррусальда с луком-пореем",
       "cuisine": "Испанская",
-      "source_pages_loaded": 2,
-      "recipe_schemas_detected": 0,
-      "full_three_source_recipe_review": "PENDING",
+      "source_pages_loaded": 3,
+      "recipe_schemas_detected": 1,
+      "full_three_source_recipe_review": "NOT_CERTIFIED",
       "sources": [
         {
           "number": 1,
@@ -1330,7 +1436,8 @@
           "html_page_title": "recipe: porrusalda. spanish cuisine | spain.info",
           "recipe_schema_title": "Porrusalda",
           "schema_ingredient_items": 0,
-          "recipe_content_independently_verified": false
+          "recipe_content_independently_verified": false,
+          "web_browser_alternative_access": "NOT_NEEDED"
         },
         {
           "number": 2,
@@ -1339,16 +1446,18 @@
           "html_page_title": "porrusalda recipe | spanish soup recipes | basque country food | basco",
           "recipe_schema_title": "",
           "schema_ingredient_items": 0,
-          "recipe_content_independently_verified": false
+          "recipe_content_independently_verified": false,
+          "web_browser_alternative_access": "NOT_NEEDED"
         },
         {
           "number": 3,
           "url": "https://www.centrallecheraasturiana.es/recetas/porrusalda/",
-          "status": "SERVER_ERROR",
-          "html_page_title": "error 503",
-          "recipe_schema_title": "",
-          "schema_ingredient_items": 0,
-          "recipe_content_independently_verified": false
+          "status": "FETCHED_UNREVIEWED",
+          "html_page_title": "porrusalda tradicional, gastronomía vasca | central lechera asturiana",
+          "recipe_schema_title": "Porrusalda",
+          "schema_ingredient_items": 9,
+          "recipe_content_independently_verified": false,
+          "web_browser_alternative_access": "NOT_NEEDED"
         }
       ]
     },
@@ -1358,7 +1467,7 @@
       "cuisine": "Испанская",
       "source_pages_loaded": 3,
       "recipe_schemas_detected": 0,
-      "full_three_source_recipe_review": "PENDING",
+      "full_three_source_recipe_review": "NOT_CERTIFIED",
       "sources": [
         {
           "number": 1,
@@ -1367,7 +1476,8 @@
           "html_page_title": "gazpachuelo malagueño - begoña tormo - video receta - canal cocina",
           "recipe_schema_title": "",
           "schema_ingredient_items": 0,
-          "recipe_content_independently_verified": false
+          "recipe_content_independently_verified": false,
+          "web_browser_alternative_access": "NOT_NEEDED"
         },
         {
           "number": 2,
@@ -1376,7 +1486,8 @@
           "html_page_title": "gazpachuelo guía gastronómica de málaga",
           "recipe_schema_title": "",
           "schema_ingredient_items": 0,
-          "recipe_content_independently_verified": false
+          "recipe_content_independently_verified": false,
+          "web_browser_alternative_access": "NOT_NEEDED"
         },
         {
           "number": 3,
@@ -1385,7 +1496,8 @@
           "html_page_title": "gazpachuelo - white fish soup - mercado málaga",
           "recipe_schema_title": "",
           "schema_ingredient_items": 0,
-          "recipe_content_independently_verified": false
+          "recipe_content_independently_verified": false,
+          "web_browser_alternative_access": "NOT_NEEDED"
         }
       ]
     },
@@ -1395,7 +1507,7 @@
       "cuisine": "Испанская",
       "source_pages_loaded": 3,
       "recipe_schemas_detected": 1,
-      "full_three_source_recipe_review": "PENDING",
+      "full_three_source_recipe_review": "NOT_CERTIFIED",
       "sources": [
         {
           "number": 1,
@@ -1404,7 +1516,8 @@
           "html_page_title": "recipe: 'sopa de picadillo'. spanish cuisine | spain.info",
           "recipe_schema_title": "'Sopa de picadillo'",
           "schema_ingredient_items": 0,
-          "recipe_content_independently_verified": false
+          "recipe_content_independently_verified": false,
+          "web_browser_alternative_access": "NOT_NEEDED"
         },
         {
           "number": 2,
@@ -1413,7 +1526,8 @@
           "html_page_title": "andalusian picadillo soup recipe - visit southern spain",
           "recipe_schema_title": "Picadillo Soup Recipe",
           "schema_ingredient_items": 8,
-          "recipe_content_independently_verified": false
+          "recipe_content_independently_verified": false,
+          "web_browser_alternative_access": "NOT_NEEDED"
         },
         {
           "number": 3,
@@ -1422,7 +1536,8 @@
           "html_page_title": "sopa de picadillo (puchero andaluz) - - receta - canal cocina",
           "recipe_schema_title": "",
           "schema_ingredient_items": 0,
-          "recipe_content_independently_verified": false
+          "recipe_content_independently_verified": false,
+          "web_browser_alternative_access": "NOT_NEEDED"
         }
       ]
     },
@@ -1432,7 +1547,7 @@
       "cuisine": "Испанская",
       "source_pages_loaded": 3,
       "recipe_schemas_detected": 1,
-      "full_three_source_recipe_review": "PENDING",
+      "full_three_source_recipe_review": "NOT_CERTIFIED",
       "sources": [
         {
           "number": 1,
@@ -1441,7 +1556,8 @@
           "html_page_title": "recipe: escudella i carn d’olla. spanish cuisine | spain.info",
           "recipe_schema_title": "Escudella i carn d’olla",
           "schema_ingredient_items": 0,
-          "recipe_content_independently_verified": false
+          "recipe_content_independently_verified": false,
+          "web_browser_alternative_access": "NOT_NEEDED"
         },
         {
           "number": 2,
@@ -1450,7 +1566,8 @@
           "html_page_title": "escudella i carn d olla o escudella catalana, la mejor receta tradicional fácil",
           "recipe_schema_title": "Receta de escudella i carn d'olla o escudella catalana, el reconfortante cocido catalán",
           "schema_ingredient_items": 21,
-          "recipe_content_independently_verified": false
+          "recipe_content_independently_verified": false,
+          "web_browser_alternative_access": "NOT_NEEDED"
         },
         {
           "number": 3,
@@ -1459,7 +1576,8 @@
           "html_page_title": "escudella i carn d’olla. canal salut",
           "recipe_schema_title": "",
           "schema_ingredient_items": 0,
-          "recipe_content_independently_verified": false
+          "recipe_content_independently_verified": false,
+          "web_browser_alternative_access": "NOT_NEEDED"
         }
       ]
     },
@@ -1469,7 +1587,7 @@
       "cuisine": "Испанская",
       "source_pages_loaded": 3,
       "recipe_schemas_detected": 1,
-      "full_three_source_recipe_review": "PENDING",
+      "full_three_source_recipe_review": "NOT_CERTIFIED",
       "sources": [
         {
           "number": 1,
@@ -1478,7 +1596,8 @@
           "html_page_title": "porra antequerana - turismo antequera",
           "recipe_schema_title": "",
           "schema_ingredient_items": 0,
-          "recipe_content_independently_verified": false
+          "recipe_content_independently_verified": false,
+          "web_browser_alternative_access": "NOT_NEEDED"
         },
         {
           "number": 2,
@@ -1487,7 +1606,8 @@
           "html_page_title": "porra antequerana",
           "recipe_schema_title": "",
           "schema_ingredient_items": 0,
-          "recipe_content_independently_verified": false
+          "recipe_content_independently_verified": false,
+          "web_browser_alternative_access": "NOT_NEEDED"
         },
         {
           "number": 3,
@@ -1496,7 +1616,8 @@
           "html_page_title": "porra antequerana recipe · vanavondkoken",
           "recipe_schema_title": "Porra antequerana",
           "schema_ingredient_items": 10,
-          "recipe_content_independently_verified": false
+          "recipe_content_independently_verified": false,
+          "web_browser_alternative_access": "NOT_NEEDED"
         }
       ]
     },
@@ -1506,7 +1627,7 @@
       "cuisine": "Турецкая",
       "source_pages_loaded": 3,
       "recipe_schemas_detected": 0,
-      "full_three_source_recipe_review": "PENDING",
+      "full_three_source_recipe_review": "NOT_CERTIFIED",
       "sources": [
         {
           "number": 1,
@@ -1515,7 +1636,8 @@
           "html_page_title": "turkish lentil soup (mercimek çorbası) | the mediterranean dish",
           "recipe_schema_title": "",
           "schema_ingredient_items": 0,
-          "recipe_content_independently_verified": false
+          "recipe_content_independently_verified": false,
+          "web_browser_alternative_access": "NOT_NEEDED"
         },
         {
           "number": 2,
@@ -1524,7 +1646,8 @@
           "html_page_title": "mercimek corbasi (turkish lentil soup) lentils.org",
           "recipe_schema_title": "",
           "schema_ingredient_items": 0,
-          "recipe_content_independently_verified": false
+          "recipe_content_independently_verified": false,
+          "web_browser_alternative_access": "NOT_NEEDED"
         },
         {
           "number": 3,
@@ -1533,7 +1656,8 @@
           "html_page_title": "miras food | classic turkish red lentil soup",
           "recipe_schema_title": "",
           "schema_ingredient_items": 0,
-          "recipe_content_independently_verified": false
+          "recipe_content_independently_verified": false,
+          "web_browser_alternative_access": "NOT_NEEDED"
         }
       ]
     },
@@ -1543,7 +1667,7 @@
       "cuisine": "Турецкая",
       "source_pages_loaded": 3,
       "recipe_schemas_detected": 2,
-      "full_three_source_recipe_review": "PENDING",
+      "full_three_source_recipe_review": "NOT_CERTIFIED",
       "sources": [
         {
           "number": 1,
@@ -1552,7 +1676,8 @@
           "html_page_title": "ezogelin çorbası - turkish spicy red lentil soup | dietitians australia",
           "recipe_schema_title": "",
           "schema_ingredient_items": 0,
-          "recipe_content_independently_verified": false
+          "recipe_content_independently_verified": false,
+          "web_browser_alternative_access": "NOT_NEEDED"
         },
         {
           "number": 2,
@@ -1561,7 +1686,8 @@
           "html_page_title": "ezogelin soup (ezo the bride soup) recipe",
           "recipe_schema_title": "Ezogelin Soup (Ezo The Bride Soup)",
           "schema_ingredient_items": 9,
-          "recipe_content_independently_verified": false
+          "recipe_content_independently_verified": false,
+          "web_browser_alternative_access": "NOT_NEEDED"
         },
         {
           "number": 3,
@@ -1570,7 +1696,8 @@
           "html_page_title": "ezogelin soup recipe | turkish red lentil soup",
           "recipe_schema_title": "Ezogelin Soup Recipe",
           "schema_ingredient_items": 17,
-          "recipe_content_independently_verified": false
+          "recipe_content_independently_verified": false,
+          "web_browser_alternative_access": "NOT_NEEDED"
         }
       ]
     },
@@ -1580,7 +1707,7 @@
       "cuisine": "Турецкая",
       "source_pages_loaded": 3,
       "recipe_schemas_detected": 1,
-      "full_three_source_recipe_review": "PENDING",
+      "full_three_source_recipe_review": "NOT_CERTIFIED",
       "sources": [
         {
           "number": 1,
@@ -1589,7 +1716,8 @@
           "html_page_title": " yogurt soup ",
           "recipe_schema_title": "",
           "schema_ingredient_items": 0,
-          "recipe_content_independently_verified": false
+          "recipe_content_independently_verified": false,
+          "web_browser_alternative_access": "NOT_NEEDED"
         },
         {
           "number": 2,
@@ -1598,7 +1726,8 @@
           "html_page_title": "yayla çorbasi recipe | epicurious",
           "recipe_schema_title": "",
           "schema_ingredient_items": 0,
-          "recipe_content_independently_verified": false
+          "recipe_content_independently_verified": false,
+          "web_browser_alternative_access": "NOT_NEEDED"
         },
         {
           "number": 3,
@@ -1607,7 +1736,8 @@
           "html_page_title": "yayla corbasi (turkish yogurt soup) recipe | forkin",
           "recipe_schema_title": "Yayla Corbasi (Turkish Yogurt Soup)",
           "schema_ingredient_items": 10,
-          "recipe_content_independently_verified": false
+          "recipe_content_independently_verified": false,
+          "web_browser_alternative_access": "NOT_NEEDED"
         }
       ]
     },
@@ -1617,7 +1747,7 @@
       "cuisine": "Турецкая",
       "source_pages_loaded": 3,
       "recipe_schemas_detected": 1,
-      "full_three_source_recipe_review": "PENDING",
+      "full_three_source_recipe_review": "NOT_CERTIFIED",
       "sources": [
         {
           "number": 1,
@@ -1626,7 +1756,8 @@
           "html_page_title": " tarhana soup ",
           "recipe_schema_title": "",
           "schema_ingredient_items": 0,
-          "recipe_content_independently_verified": false
+          "recipe_content_independently_verified": false,
+          "web_browser_alternative_access": "NOT_NEEDED"
         },
         {
           "number": 2,
@@ -1635,7 +1766,8 @@
           "html_page_title": " tarhana çorbasi | kültür portalı ",
           "recipe_schema_title": "",
           "schema_ingredient_items": 0,
-          "recipe_content_independently_verified": false
+          "recipe_content_independently_verified": false,
+          "web_browser_alternative_access": "NOT_NEEDED"
         },
         {
           "number": 3,
@@ -1644,7 +1776,8 @@
           "html_page_title": "tarhana soup recipe – traditional turkish fermented soup | gurmion",
           "recipe_schema_title": "Tarhana Soup",
           "schema_ingredient_items": 7,
-          "recipe_content_independently_verified": false
+          "recipe_content_independently_verified": false,
+          "web_browser_alternative_access": "NOT_NEEDED"
         }
       ]
     },
@@ -1654,7 +1787,7 @@
       "cuisine": "Турецкая",
       "source_pages_loaded": 3,
       "recipe_schemas_detected": 1,
-      "full_three_source_recipe_review": "PENDING",
+      "full_three_source_recipe_review": "NOT_CERTIFIED",
       "sources": [
         {
           "number": 1,
@@ -1663,7 +1796,8 @@
           "html_page_title": " tripe soup ",
           "recipe_schema_title": "",
           "schema_ingredient_items": 0,
-          "recipe_content_independently_verified": false
+          "recipe_content_independently_verified": false,
+          "web_browser_alternative_access": "NOT_NEEDED"
         },
         {
           "number": 2,
@@ -1672,7 +1806,8 @@
           "html_page_title": "i̇şkembe çorbası (turkish tripe soup) recipe — zaffaron",
           "recipe_schema_title": "Tripe Soup (İşkembe Çorbası) — Turkish offal soup served with garlicky vinegar",
           "schema_ingredient_items": 15,
-          "recipe_content_independently_verified": false
+          "recipe_content_independently_verified": false,
+          "web_browser_alternative_access": "NOT_NEEDED"
         },
         {
           "number": 3,
@@ -1681,7 +1816,8 @@
           "html_page_title": "i?kembe çorbasi (turkish tripe soup) - cook with erica",
           "recipe_schema_title": "",
           "schema_ingredient_items": 0,
-          "recipe_content_independently_verified": false
+          "recipe_content_independently_verified": false,
+          "web_browser_alternative_access": "NOT_NEEDED"
         }
       ]
     },
@@ -1691,7 +1827,7 @@
       "cuisine": "Турецкая",
       "source_pages_loaded": 3,
       "recipe_schemas_detected": 3,
-      "full_three_source_recipe_review": "PENDING",
+      "full_three_source_recipe_review": "NOT_CERTIFIED",
       "sources": [
         {
           "number": 1,
@@ -1700,7 +1836,8 @@
           "html_page_title": "lezzetli tarifler: kelle pa a orbası tarifi",
           "recipe_schema_title": "Kelle Paça Çorbası",
           "schema_ingredient_items": 8,
-          "recipe_content_independently_verified": false
+          "recipe_content_independently_verified": false,
+          "web_browser_alternative_access": "NOT_NEEDED"
         },
         {
           "number": 2,
@@ -1709,7 +1846,8 @@
           "html_page_title": "evde kelle paça çorbası nasıl yapılır? (resimli) - yemek.com",
           "recipe_schema_title": "Kelle Paça Çorbası",
           "schema_ingredient_items": 11,
-          "recipe_content_independently_verified": false
+          "recipe_content_independently_verified": false,
+          "web_browser_alternative_access": "NOT_NEEDED"
         },
         {
           "number": 3,
@@ -1718,7 +1856,8 @@
           "html_page_title": "authentic turkish kelle paça soup recipe — zaffaron",
           "recipe_schema_title": "Kelle Paça (Kelle Paça) — Turkish Jelatinli et suyunda pişen şifa çorbası",
           "schema_ingredient_items": 17,
-          "recipe_content_independently_verified": false
+          "recipe_content_independently_verified": false,
+          "web_browser_alternative_access": "NOT_NEEDED"
         }
       ]
     },
@@ -1726,9 +1865,9 @@
       "id": 47,
       "title": "Тербиели кёфте, суп с фрикадельками",
       "cuisine": "Турецкая",
-      "source_pages_loaded": 2,
+      "source_pages_loaded": 3,
       "recipe_schemas_detected": 2,
-      "full_three_source_recipe_review": "PENDING",
+      "full_three_source_recipe_review": "NOT_CERTIFIED",
       "sources": [
         {
           "number": 1,
@@ -1737,16 +1876,18 @@
           "html_page_title": "lezzetli tarifler: terbiyeli k fte orbası | lezzet",
           "recipe_schema_title": "Terbiyeli Köfte Çorbası",
           "schema_ingredient_items": 28,
-          "recipe_content_independently_verified": false
+          "recipe_content_independently_verified": false,
+          "web_browser_alternative_access": "NOT_NEEDED"
         },
         {
           "number": 2,
-          "url": "https://prod.kisikatesakademi.com.tr/tarif/terbiyeli-kofteli-corba-tarifi-1720",
-          "status": "NETWORK_ERROR",
-          "html_page_title": "",
+          "url": "https://www.lezizyemeklerim.com/yemek-tarifi/kofteli-terbiyeli-corba/12840",
+          "status": "FETCHED_UNREVIEWED",
+          "html_page_title": "köfteli terbiyeli çorba - leziz yemeklerim",
           "recipe_schema_title": "",
           "schema_ingredient_items": 0,
-          "recipe_content_independently_verified": false
+          "recipe_content_independently_verified": false,
+          "web_browser_alternative_access": "NOT_NEEDED"
         },
         {
           "number": 3,
@@ -1755,7 +1896,8 @@
           "html_page_title": "ekşili terbiyeli köfteli çorba tarifi, nasıl yapılır? - yemek.com",
           "recipe_schema_title": "Ekşili Terbiyeli Köfteli Çorba",
           "schema_ingredient_items": 13,
-          "recipe_content_independently_verified": false
+          "recipe_content_independently_verified": false,
+          "web_browser_alternative_access": "NOT_NEEDED"
         }
       ]
     },
@@ -1765,7 +1907,7 @@
       "cuisine": "Турецкая",
       "source_pages_loaded": 3,
       "recipe_schemas_detected": 1,
-      "full_three_source_recipe_review": "PENDING",
+      "full_three_source_recipe_review": "NOT_CERTIFIED",
       "sources": [
         {
           "number": 1,
@@ -1774,7 +1916,8 @@
           "html_page_title": " wedding soup ",
           "recipe_schema_title": "",
           "schema_ingredient_items": 0,
-          "recipe_content_independently_verified": false
+          "recipe_content_independently_verified": false,
+          "web_browser_alternative_access": "NOT_NEEDED"
         },
         {
           "number": 2,
@@ -1783,7 +1926,8 @@
           "html_page_title": "dügün çorbasi recipe | epicurious",
           "recipe_schema_title": "",
           "schema_ingredient_items": 0,
-          "recipe_content_independently_verified": false
+          "recipe_content_independently_verified": false,
+          "web_browser_alternative_access": "NOT_NEEDED"
         },
         {
           "number": 3,
@@ -1792,7 +1936,8 @@
           "html_page_title": "lezzetli tarifler: d ğ n orbası tarifi | lezzet",
           "recipe_schema_title": "Düğün Çorbası Tarifi",
           "schema_ingredient_items": 21,
-          "recipe_content_independently_verified": false
+          "recipe_content_independently_verified": false,
+          "web_browser_alternative_access": "NOT_NEEDED"
         }
       ]
     },
@@ -1802,7 +1947,7 @@
       "cuisine": "Турецкая",
       "source_pages_loaded": 3,
       "recipe_schemas_detected": 2,
-      "full_three_source_recipe_review": "PENDING",
+      "full_three_source_recipe_review": "NOT_CERTIFIED",
       "sources": [
         {
           "number": 1,
@@ -1811,7 +1956,8 @@
           "html_page_title": "lezzetli tarifler: erişte orbası tarifi | lezzet",
           "recipe_schema_title": "Erişte Çorbası Tarifi",
           "schema_ingredient_items": 24,
-          "recipe_content_independently_verified": false
+          "recipe_content_independently_verified": false,
+          "web_browser_alternative_access": "NOT_NEEDED"
         },
         {
           "number": 2,
@@ -1820,7 +1966,8 @@
           "html_page_title": "erişte çorbası | taribu tarif bulucu",
           "recipe_schema_title": "Erişte Çorbası",
           "schema_ingredient_items": 24,
-          "recipe_content_independently_verified": false
+          "recipe_content_independently_verified": false,
+          "web_browser_alternative_access": "NOT_NEEDED"
         },
         {
           "number": 3,
@@ -1829,7 +1976,8 @@
           "html_page_title": " soup with home-made noodles ",
           "recipe_schema_title": "",
           "schema_ingredient_items": 0,
-          "recipe_content_independently_verified": false
+          "recipe_content_independently_verified": false,
+          "web_browser_alternative_access": "NOT_NEEDED"
         }
       ]
     },
@@ -1839,7 +1987,7 @@
       "cuisine": "Турецкая",
       "source_pages_loaded": 3,
       "recipe_schemas_detected": 2,
-      "full_three_source_recipe_review": "PENDING",
+      "full_three_source_recipe_review": "NOT_CERTIFIED",
       "sources": [
         {
           "number": 1,
@@ -1848,7 +1996,8 @@
           "html_page_title": " green lentil - noodle soup ",
           "recipe_schema_title": "",
           "schema_ingredient_items": 0,
-          "recipe_content_independently_verified": false
+          "recipe_content_independently_verified": false,
+          "web_browser_alternative_access": "NOT_NEEDED"
         },
         {
           "number": 2,
@@ -1857,7 +2006,8 @@
           "html_page_title": "lezzetli tarifler: tutma orbası tarifi | lezzet",
           "recipe_schema_title": "Tutmaç Çorbası Tarifi",
           "schema_ingredient_items": 28,
-          "recipe_content_independently_verified": false
+          "recipe_content_independently_verified": false,
+          "web_browser_alternative_access": "NOT_NEEDED"
         },
         {
           "number": 3,
@@ -1866,7 +2016,8 @@
           "html_page_title": "geleneksel tutmaç çorbası tarifi, nasıl yapılır? - yemek.com",
           "recipe_schema_title": "Geleneksel Tutmaç Çorbası",
           "schema_ingredient_items": 11,
-          "recipe_content_independently_verified": false
+          "recipe_content_independently_verified": false,
+          "web_browser_alternative_access": "NOT_NEEDED"
         }
       ]
     },
@@ -1876,7 +2027,7 @@
       "cuisine": "Японская",
       "source_pages_loaded": 2,
       "recipe_schemas_detected": 1,
-      "full_three_source_recipe_review": "PENDING",
+      "full_three_source_recipe_review": "NOT_CERTIFIED",
       "sources": [
         {
           "number": 1,
@@ -1885,7 +2036,8 @@
           "html_page_title": "homemade miso soup (authentic easy) • just one cookbook",
           "recipe_schema_title": "Homemade Miso Soup with Tofu",
           "schema_ingredient_items": 7,
-          "recipe_content_independently_verified": false
+          "recipe_content_independently_verified": false,
+          "web_browser_alternative_access": "NOT_NEEDED"
         },
         {
           "number": 2,
@@ -1894,7 +2046,8 @@
           "html_page_title": "miso soup - tofu and wakame seaweed recipe | kikkoman corporation",
           "recipe_schema_title": "",
           "schema_ingredient_items": 0,
-          "recipe_content_independently_verified": false
+          "recipe_content_independently_verified": false,
+          "web_browser_alternative_access": "NOT_NEEDED"
         },
         {
           "number": 3,
@@ -1903,7 +2056,8 @@
           "html_page_title": "access denied",
           "recipe_schema_title": "",
           "schema_ingredient_items": 0,
-          "recipe_content_independently_verified": false
+          "recipe_content_independently_verified": false,
+          "web_browser_alternative_access": "OPENED_SEPARATELY_2026_11_19"
         }
       ]
     },
@@ -1913,7 +2067,7 @@
       "cuisine": "Японская",
       "source_pages_loaded": 2,
       "recipe_schemas_detected": 2,
-      "full_three_source_recipe_review": "PENDING",
+      "full_three_source_recipe_review": "NOT_CERTIFIED",
       "sources": [
         {
           "number": 1,
@@ -1922,7 +2076,8 @@
           "html_page_title": "shoyu ramen - recipe from bizentei, tokyo 醤油ラーメン just one cookbook",
           "recipe_schema_title": "Shoyu Ramen (from Bizentei, Tokyo)",
           "schema_ingredient_items": 17,
-          "recipe_content_independently_verified": false
+          "recipe_content_independently_verified": false,
+          "web_browser_alternative_access": "NOT_NEEDED"
         },
         {
           "number": 2,
@@ -1931,7 +2086,8 @@
           "html_page_title": "",
           "recipe_schema_title": "",
           "schema_ingredient_items": 0,
-          "recipe_content_independently_verified": false
+          "recipe_content_independently_verified": false,
+          "web_browser_alternative_access": "OPENED_SEPARATELY_2026_11_19"
         },
         {
           "number": 3,
@@ -1940,7 +2096,8 @@
           "html_page_title": "shoyu ramen 醤油ラーメン - chopstick chronicles",
           "recipe_schema_title": "Shoyu Ramen 醤油ラーメン",
           "schema_ingredient_items": 13,
-          "recipe_content_independently_verified": false
+          "recipe_content_independently_verified": false,
+          "web_browser_alternative_access": "NOT_NEEDED"
         }
       ]
     },
@@ -1950,7 +2107,7 @@
       "cuisine": "Японская",
       "source_pages_loaded": 2,
       "recipe_schemas_detected": 1,
-      "full_three_source_recipe_review": "PENDING",
+      "full_three_source_recipe_review": "NOT_CERTIFIED",
       "sources": [
         {
           "number": 1,
@@ -1959,7 +2116,8 @@
           "html_page_title": "easy miso ramen recipe (30-minute broth) • just one cookbook",
           "recipe_schema_title": "Miso Ramen",
           "schema_ingredient_items": 24,
-          "recipe_content_independently_verified": false
+          "recipe_content_independently_verified": false,
+          "web_browser_alternative_access": "NOT_NEEDED"
         },
         {
           "number": 2,
@@ -1968,7 +2126,8 @@
           "html_page_title": "",
           "recipe_schema_title": "",
           "schema_ingredient_items": 0,
-          "recipe_content_independently_verified": false
+          "recipe_content_independently_verified": false,
+          "web_browser_alternative_access": "OPENED_SEPARATELY_2026_11_19"
         },
         {
           "number": 3,
@@ -1977,7 +2136,8 @@
           "html_page_title": "miso ramen recipe | good food",
           "recipe_schema_title": "",
           "schema_ingredient_items": 0,
-          "recipe_content_independently_verified": false
+          "recipe_content_independently_verified": false,
+          "web_browser_alternative_access": "NOT_NEEDED"
         }
       ]
     },
@@ -1985,9 +2145,9 @@
       "id": 54,
       "title": "Тонкоцу-рамен",
       "cuisine": "Японская",
-      "source_pages_loaded": 3,
-      "recipe_schemas_detected": 2,
-      "full_three_source_recipe_review": "PENDING",
+      "source_pages_loaded": 2,
+      "recipe_schemas_detected": 1,
+      "full_three_source_recipe_review": "NOT_CERTIFIED",
       "sources": [
         {
           "number": 1,
@@ -1996,7 +2156,8 @@
           "html_page_title": "easy tonkotsu ramen recipe 豚骨ラーメン just one cookbook",
           "recipe_schema_title": "Easy Tonkotsu Ramen Recipe",
           "schema_ingredient_items": 26,
-          "recipe_content_independently_verified": false
+          "recipe_content_independently_verified": false,
+          "web_browser_alternative_access": "NOT_NEEDED"
         },
         {
           "number": 2,
@@ -2005,16 +2166,18 @@
           "html_page_title": "tonkotsu ramen recipe | epicurious",
           "recipe_schema_title": "",
           "schema_ingredient_items": 0,
-          "recipe_content_independently_verified": false
+          "recipe_content_independently_verified": false,
+          "web_browser_alternative_access": "NOT_NEEDED"
         },
         {
           "number": 3,
           "url": "https://www.thekitchn.com/tonkotsu-ramen-recipe-23636995",
-          "status": "FETCHED_UNREVIEWED",
-          "html_page_title": "tonkotsu ramen recipe | the kitchn",
-          "recipe_schema_title": "Tonkotsu Ramen",
-          "schema_ingredient_items": 24,
-          "recipe_content_independently_verified": false
+          "status": "ACCESS_BLOCKED",
+          "html_page_title": "access to this page has been denied.",
+          "recipe_schema_title": "",
+          "schema_ingredient_items": 0,
+          "recipe_content_independently_verified": false,
+          "web_browser_alternative_access": "OPENED_SEPARATELY_2026_11_19"
         }
       ]
     },
@@ -2024,7 +2187,7 @@
       "cuisine": "Японская",
       "source_pages_loaded": 3,
       "recipe_schemas_detected": 3,
-      "full_three_source_recipe_review": "PENDING",
+      "full_three_source_recipe_review": "NOT_CERTIFIED",
       "sources": [
         {
           "number": 1,
@@ -2033,7 +2196,8 @@
           "html_page_title": "tonjiru (pork and vegetable miso soup) (video) 豚汁 just one cookbook",
           "recipe_schema_title": "Tonjiru (Pork and Vegetable Miso Soup)",
           "schema_ingredient_items": 17,
-          "recipe_content_independently_verified": false
+          "recipe_content_independently_verified": false,
+          "web_browser_alternative_access": "NOT_NEEDED"
         },
         {
           "number": 2,
@@ -2042,7 +2206,8 @@
           "html_page_title": "tonjiru (pork and vegetable miso soup) - recipetin japan",
           "recipe_schema_title": "Tonjiru (Pork and Vegetable Miso Soup)",
           "schema_ingredient_items": 11,
-          "recipe_content_independently_verified": false
+          "recipe_content_independently_verified": false,
+          "web_browser_alternative_access": "NOT_NEEDED"
         },
         {
           "number": 3,
@@ -2051,7 +2216,8 @@
           "html_page_title": "tonjiru (pork miso soup) recipe | recipin",
           "recipe_schema_title": "Tonjiru (Pork Miso Soup)",
           "schema_ingredient_items": 11,
-          "recipe_content_independently_verified": false
+          "recipe_content_independently_verified": false,
+          "web_browser_alternative_access": "NOT_NEEDED"
         }
       ]
     },
@@ -2061,7 +2227,7 @@
       "cuisine": "Японская",
       "source_pages_loaded": 3,
       "recipe_schemas_detected": 1,
-      "full_three_source_recipe_review": "PENDING",
+      "full_three_source_recipe_review": "NOT_CERTIFIED",
       "sources": [
         {
           "number": 1,
@@ -2070,7 +2236,8 @@
           "html_page_title": "kenchinjiru けんちん汁 • just one cookbook",
           "recipe_schema_title": "Kenchinjiru",
           "schema_ingredient_items": 17,
-          "recipe_content_independently_verified": false
+          "recipe_content_independently_verified": false,
+          "web_browser_alternative_access": "NOT_NEEDED"
         },
         {
           "number": 2,
@@ -2079,7 +2246,8 @@
           "html_page_title": "kenchin-jiru vegetable soup | kikkoman corporation",
           "recipe_schema_title": "",
           "schema_ingredient_items": 0,
-          "recipe_content_independently_verified": false
+          "recipe_content_independently_verified": false,
+          "web_browser_alternative_access": "NOT_NEEDED"
         },
         {
           "number": 3,
@@ -2088,7 +2256,8 @@
           "html_page_title": "kenchin-jiru ｜ our regional cuisines : maff",
           "recipe_schema_title": "",
           "schema_ingredient_items": 0,
-          "recipe_content_independently_verified": false
+          "recipe_content_independently_verified": false,
+          "web_browser_alternative_access": "NOT_NEEDED"
         }
       ]
     },
@@ -2098,7 +2267,7 @@
       "cuisine": "Японская",
       "source_pages_loaded": 3,
       "recipe_schemas_detected": 1,
-      "full_three_source_recipe_review": "PENDING",
+      "full_three_source_recipe_review": "NOT_CERTIFIED",
       "sources": [
         {
           "number": 1,
@@ -2107,7 +2276,8 @@
           "html_page_title": "ozoni - japanese new year mochi soup (お雑煮) • just one cookbook",
           "recipe_schema_title": "Ozoni (Japanese New Year Mochi Soup - Kanto Style)",
           "schema_ingredient_items": 11,
-          "recipe_content_independently_verified": false
+          "recipe_content_independently_verified": false,
+          "web_browser_alternative_access": "NOT_NEEDED"
         },
         {
           "number": 2,
@@ -2116,7 +2286,8 @@
           "html_page_title": "ozoni ｜ our regional cuisines : maff",
           "recipe_schema_title": "",
           "schema_ingredient_items": 0,
-          "recipe_content_independently_verified": false
+          "recipe_content_independently_verified": false,
+          "web_browser_alternative_access": "NOT_NEEDED"
         },
         {
           "number": 3,
@@ -2125,7 +2296,8 @@
           "html_page_title": "zoni japanese new year mochi soup | kikkoman corporation",
           "recipe_schema_title": "",
           "schema_ingredient_items": 0,
-          "recipe_content_independently_verified": false
+          "recipe_content_independently_verified": false,
+          "web_browser_alternative_access": "NOT_NEEDED"
         }
       ]
     },
@@ -2135,7 +2307,7 @@
       "cuisine": "Японская",
       "source_pages_loaded": 3,
       "recipe_schemas_detected": 1,
-      "full_three_source_recipe_review": "PENDING",
+      "full_three_source_recipe_review": "NOT_CERTIFIED",
       "sources": [
         {
           "number": 1,
@@ -2144,7 +2316,8 @@
           "html_page_title": "imoni(taro soup) ｜ our regional cuisines : maff",
           "recipe_schema_title": "",
           "schema_ingredient_items": 0,
-          "recipe_content_independently_verified": false
+          "recipe_content_independently_verified": false,
+          "web_browser_alternative_access": "NOT_NEEDED"
         },
         {
           "number": 2,
@@ -2153,16 +2326,18 @@
           "html_page_title": "imoni (yamagata-style taro and beef soup) recipe | recipin",
           "recipe_schema_title": "Imoni (Yamagata-Style Taro and Beef Soup)",
           "schema_ingredient_items": 13,
-          "recipe_content_independently_verified": false
+          "recipe_content_independently_verified": false,
+          "web_browser_alternative_access": "NOT_NEEDED"
         },
         {
           "number": 3,
-          "url": "https://www.fun-japan.jp/en/articles/13204",
+          "url": "https://www.umamiinfo.com/japaneseumami2/localcuisine/category-01/yamagata/imoni.html",
           "status": "FETCHED_UNREVIEWED",
-          "html_page_title": "japanese local cuisine reproduction series ⑤: yamagata prefecture: imoni",
+          "html_page_title": "imoni | local cuisine in japan and umami | umami information center",
           "recipe_schema_title": "",
           "schema_ingredient_items": 0,
-          "recipe_content_independently_verified": false
+          "recipe_content_independently_verified": false,
+          "web_browser_alternative_access": "NOT_NEEDED"
         }
       ]
     },
@@ -2172,7 +2347,7 @@
       "cuisine": "Японская",
       "source_pages_loaded": 3,
       "recipe_schemas_detected": 1,
-      "full_three_source_recipe_review": "PENDING",
+      "full_three_source_recipe_review": "NOT_CERTIFIED",
       "sources": [
         {
           "number": 1,
@@ -2181,7 +2356,8 @@
           "html_page_title": "soba noodle soup 温かいお蕎麦 • just one cookbook",
           "recipe_schema_title": "Soba Noodle Soup",
           "schema_ingredient_items": 16,
-          "recipe_content_independently_verified": false
+          "recipe_content_independently_verified": false,
+          "web_browser_alternative_access": "NOT_NEEDED"
         },
         {
           "number": 2,
@@ -2190,7 +2366,8 @@
           "html_page_title": "kake soba – light soup with buckwheat noodles » recipe",
           "recipe_schema_title": "",
           "schema_ingredient_items": 0,
-          "recipe_content_independently_verified": false
+          "recipe_content_independently_verified": false,
+          "web_browser_alternative_access": "NOT_NEEDED"
         },
         {
           "number": 3,
@@ -2199,7 +2376,8 @@
           "html_page_title": "kake soba (soba noodle soup) | kamada soy sauce official global online shop",
           "recipe_schema_title": "",
           "schema_ingredient_items": 0,
-          "recipe_content_independently_verified": false
+          "recipe_content_independently_verified": false,
+          "web_browser_alternative_access": "NOT_NEEDED"
         }
       ]
     },
@@ -2209,7 +2387,7 @@
       "cuisine": "Японская",
       "source_pages_loaded": 3,
       "recipe_schemas_detected": 2,
-      "full_three_source_recipe_review": "PENDING",
+      "full_three_source_recipe_review": "NOT_CERTIFIED",
       "sources": [
         {
           "number": 1,
@@ -2218,7 +2396,8 @@
           "html_page_title": "hiyajiru (cold soup) ｜ our regional cuisines : maff",
           "recipe_schema_title": "",
           "schema_ingredient_items": 0,
-          "recipe_content_independently_verified": false
+          "recipe_content_independently_verified": false,
+          "web_browser_alternative_access": "NOT_NEEDED"
         },
         {
           "number": 2,
@@ -2227,7 +2406,8 @@
           "html_page_title": "hiyajiru (cold miso soup over rice) recipe | recipin",
           "recipe_schema_title": "Hiyajiru (Cold Miso Soup over Rice)",
           "schema_ingredient_items": 11,
-          "recipe_content_independently_verified": false
+          "recipe_content_independently_verified": false,
+          "web_browser_alternative_access": "NOT_NEEDED"
         },
         {
           "number": 3,
@@ -2236,7 +2416,8 @@
           "html_page_title": "cold miso soup (hiyajiru) 冷や汁 just one cookbook",
           "recipe_schema_title": "Cold Miso Soup (Hiyajiru)",
           "schema_ingredient_items": 9,
-          "recipe_content_independently_verified": false
+          "recipe_content_independently_verified": false,
+          "web_browser_alternative_access": "NOT_NEEDED"
         }
       ]
     },
@@ -2246,7 +2427,7 @@
       "cuisine": "Корейская",
       "source_pages_loaded": 2,
       "recipe_schemas_detected": 1,
-      "full_three_source_recipe_review": "PENDING",
+      "full_three_source_recipe_review": "NOT_CERTIFIED",
       "sources": [
         {
           "number": 1,
@@ -2255,7 +2436,8 @@
           "html_page_title": "attention required! | cloudflare",
           "recipe_schema_title": "",
           "schema_ingredient_items": 0,
-          "recipe_content_independently_verified": false
+          "recipe_content_independently_verified": false,
+          "web_browser_alternative_access": "OPENED_SEPARATELY_2026_11_19"
         },
         {
           "number": 2,
@@ -2264,7 +2446,8 @@
           "html_page_title": "yukgaejang (spicy beef soup with vegetables) - korean bapsang",
           "recipe_schema_title": "Yukgaejang (Spicy Beef Soup with Vegetables)",
           "schema_ingredient_items": 16,
-          "recipe_content_independently_verified": false
+          "recipe_content_independently_verified": false,
+          "web_browser_alternative_access": "NOT_NEEDED"
         },
         {
           "number": 3,
@@ -2273,7 +2456,8 @@
           "html_page_title": "yukgaejang (spicy beef soup) - my korean kitchen",
           "recipe_schema_title": "",
           "schema_ingredient_items": 0,
-          "recipe_content_independently_verified": false
+          "recipe_content_independently_verified": false,
+          "web_browser_alternative_access": "NOT_NEEDED"
         }
       ]
     },
@@ -2283,7 +2467,7 @@
       "cuisine": "Корейская",
       "source_pages_loaded": 2,
       "recipe_schemas_detected": 1,
-      "full_three_source_recipe_review": "PENDING",
+      "full_three_source_recipe_review": "NOT_CERTIFIED",
       "sources": [
         {
           "number": 1,
@@ -2292,7 +2476,8 @@
           "html_page_title": "attention required! | cloudflare",
           "recipe_schema_title": "",
           "schema_ingredient_items": 0,
-          "recipe_content_independently_verified": false
+          "recipe_content_independently_verified": false,
+          "web_browser_alternative_access": "OPENED_SEPARATELY_2026_11_19"
         },
         {
           "number": 2,
@@ -2301,7 +2486,8 @@
           "html_page_title": "samgyetang (korean ginseng chicken soup) - my korean kitchen",
           "recipe_schema_title": "",
           "schema_ingredient_items": 0,
-          "recipe_content_independently_verified": false
+          "recipe_content_independently_verified": false,
+          "web_browser_alternative_access": "NOT_NEEDED"
         },
         {
           "number": 3,
@@ -2310,7 +2496,8 @@
           "html_page_title": "samgyetang (ginseng chicken soup) - korean bapsang",
           "recipe_schema_title": "Samgyetang (Ginseng Chicken Soup)",
           "schema_ingredient_items": 10,
-          "recipe_content_independently_verified": false
+          "recipe_content_independently_verified": false,
+          "web_browser_alternative_access": "NOT_NEEDED"
         }
       ]
     },
@@ -2320,7 +2507,7 @@
       "cuisine": "Корейская",
       "source_pages_loaded": 2,
       "recipe_schemas_detected": 2,
-      "full_three_source_recipe_review": "PENDING",
+      "full_three_source_recipe_review": "NOT_CERTIFIED",
       "sources": [
         {
           "number": 1,
@@ -2329,7 +2516,8 @@
           "html_page_title": "attention required! | cloudflare",
           "recipe_schema_title": "",
           "schema_ingredient_items": 0,
-          "recipe_content_independently_verified": false
+          "recipe_content_independently_verified": false,
+          "web_browser_alternative_access": "OPENED_SEPARATELY_2026_11_19"
         },
         {
           "number": 2,
@@ -2338,7 +2526,8 @@
           "html_page_title": "seolleongtang (ox bone soup) - korean bapsang",
           "recipe_schema_title": "Seolleongtang (Ox bone soup)",
           "schema_ingredient_items": 7,
-          "recipe_content_independently_verified": false
+          "recipe_content_independently_verified": false,
+          "web_browser_alternative_access": "NOT_NEEDED"
         },
         {
           "number": 3,
@@ -2347,7 +2536,8 @@
           "html_page_title": "easy seolleongtang (ox bone soup) - beyond kimchee",
           "recipe_schema_title": "Seolleongtang (Korean Ox Bone Soup)",
           "schema_ingredient_items": 9,
-          "recipe_content_independently_verified": false
+          "recipe_content_independently_verified": false,
+          "web_browser_alternative_access": "NOT_NEEDED"
         }
       ]
     },
@@ -2357,7 +2547,7 @@
       "cuisine": "Корейская",
       "source_pages_loaded": 2,
       "recipe_schemas_detected": 1,
-      "full_three_source_recipe_review": "PENDING",
+      "full_three_source_recipe_review": "NOT_CERTIFIED",
       "sources": [
         {
           "number": 1,
@@ -2366,7 +2556,8 @@
           "html_page_title": "attention required! | cloudflare",
           "recipe_schema_title": "",
           "schema_ingredient_items": 0,
-          "recipe_content_independently_verified": false
+          "recipe_content_independently_verified": false,
+          "web_browser_alternative_access": "OPENED_SEPARATELY_2026_11_19"
         },
         {
           "number": 2,
@@ -2375,7 +2566,8 @@
           "html_page_title": "galbitang (beef short rib soup) - korean bapsang",
           "recipe_schema_title": "Galbitang (Beef Short Rib Soup)",
           "schema_ingredient_items": 12,
-          "recipe_content_independently_verified": false
+          "recipe_content_independently_verified": false,
+          "web_browser_alternative_access": "NOT_NEEDED"
         },
         {
           "number": 3,
@@ -2384,7 +2576,8 @@
           "html_page_title": "galbitang (beef short rib soup) - my korean kitchen",
           "recipe_schema_title": "",
           "schema_ingredient_items": 0,
-          "recipe_content_independently_verified": false
+          "recipe_content_independently_verified": false,
+          "web_browser_alternative_access": "NOT_NEEDED"
         }
       ]
     },
@@ -2394,7 +2587,7 @@
       "cuisine": "Корейская",
       "source_pages_loaded": 3,
       "recipe_schemas_detected": 2,
-      "full_three_source_recipe_review": "PENDING",
+      "full_three_source_recipe_review": "NOT_CERTIFIED",
       "sources": [
         {
           "number": 1,
@@ -2403,7 +2596,8 @@
           "html_page_title": "miyeok guk (beef seaweed soup) - korean bapsang",
           "recipe_schema_title": "Miyeok Guk (Beef Seaweed Soup)",
           "schema_ingredient_items": 7,
-          "recipe_content_independently_verified": false
+          "recipe_content_independently_verified": false,
+          "web_browser_alternative_access": "NOT_NEEDED"
         },
         {
           "number": 2,
@@ -2412,7 +2606,8 @@
           "html_page_title": "korean seaweed soup (miyeok guk) - my korean kitchen",
           "recipe_schema_title": "",
           "schema_ingredient_items": 0,
-          "recipe_content_independently_verified": false
+          "recipe_content_independently_verified": false,
+          "web_browser_alternative_access": "NOT_NEEDED"
         },
         {
           "number": 3,
@@ -2421,7 +2616,8 @@
           "html_page_title": "korean seaweed soup (miyeokguk with beef) - beyond kimchee",
           "recipe_schema_title": "Korean Seaweed Soup (Miyeokguk)",
           "schema_ingredient_items": 10,
-          "recipe_content_independently_verified": false
+          "recipe_content_independently_verified": false,
+          "web_browser_alternative_access": "NOT_NEEDED"
         }
       ]
     },
@@ -2431,7 +2627,7 @@
       "cuisine": "Корейская",
       "source_pages_loaded": 2,
       "recipe_schemas_detected": 1,
-      "full_three_source_recipe_review": "PENDING",
+      "full_three_source_recipe_review": "NOT_CERTIFIED",
       "sources": [
         {
           "number": 1,
@@ -2440,7 +2636,8 @@
           "html_page_title": "attention required! | cloudflare",
           "recipe_schema_title": "",
           "schema_ingredient_items": 0,
-          "recipe_content_independently_verified": false
+          "recipe_content_independently_verified": false,
+          "web_browser_alternative_access": "OPENED_SEPARATELY_2026_11_19"
         },
         {
           "number": 2,
@@ -2449,7 +2646,8 @@
           "html_page_title": "manduguk (korean dumpling soup) - korean bapsang",
           "recipe_schema_title": "Manduguk (Korean Dumpling Soup)",
           "schema_ingredient_items": 8,
-          "recipe_content_independently_verified": false
+          "recipe_content_independently_verified": false,
+          "web_browser_alternative_access": "NOT_NEEDED"
         },
         {
           "number": 3,
@@ -2458,7 +2656,8 @@
           "html_page_title": "manduguk (korean dumpling soup) - my korean kitchen",
           "recipe_schema_title": "",
           "schema_ingredient_items": 0,
-          "recipe_content_independently_verified": false
+          "recipe_content_independently_verified": false,
+          "web_browser_alternative_access": "NOT_NEEDED"
         }
       ]
     },
@@ -2468,7 +2667,7 @@
       "cuisine": "Корейская",
       "source_pages_loaded": 2,
       "recipe_schemas_detected": 2,
-      "full_three_source_recipe_review": "PENDING",
+      "full_three_source_recipe_review": "NOT_CERTIFIED",
       "sources": [
         {
           "number": 1,
@@ -2477,7 +2676,8 @@
           "html_page_title": "attention required! | cloudflare",
           "recipe_schema_title": "",
           "schema_ingredient_items": 0,
-          "recipe_content_independently_verified": false
+          "recipe_content_independently_verified": false,
+          "web_browser_alternative_access": "OPENED_SEPARATELY_2026_11_19"
         },
         {
           "number": 2,
@@ -2486,7 +2686,8 @@
           "html_page_title": "kimchi jjigae (kimchi stew) - korean bapsang",
           "recipe_schema_title": "Kimchi Jjigae (Kimchi Stew)",
           "schema_ingredient_items": 9,
-          "recipe_content_independently_verified": false
+          "recipe_content_independently_verified": false,
+          "web_browser_alternative_access": "NOT_NEEDED"
         },
         {
           "number": 3,
@@ -2495,7 +2696,8 @@
           "html_page_title": "kimchi jjigae with pork (best korean kimchi stew) | beyond kimchee",
           "recipe_schema_title": "Kimchi Jjigae with Pork (Korean Kimchi Stew)",
           "schema_ingredient_items": 14,
-          "recipe_content_independently_verified": false
+          "recipe_content_independently_verified": false,
+          "web_browser_alternative_access": "NOT_NEEDED"
         }
       ]
     },
@@ -2505,7 +2707,7 @@
       "cuisine": "Корейская",
       "source_pages_loaded": 2,
       "recipe_schemas_detected": 1,
-      "full_three_source_recipe_review": "PENDING",
+      "full_three_source_recipe_review": "NOT_CERTIFIED",
       "sources": [
         {
           "number": 1,
@@ -2514,7 +2716,8 @@
           "html_page_title": "attention required! | cloudflare",
           "recipe_schema_title": "",
           "schema_ingredient_items": 0,
-          "recipe_content_independently_verified": false
+          "recipe_content_independently_verified": false,
+          "web_browser_alternative_access": "OPENED_SEPARATELY_2026_11_19"
         },
         {
           "number": 2,
@@ -2523,7 +2726,8 @@
           "html_page_title": "kongnamul guk (soybean sprout soup) - korean bapsang",
           "recipe_schema_title": "Kongnamul Guk (Soybean Sprout Soup)",
           "schema_ingredient_items": 6,
-          "recipe_content_independently_verified": false
+          "recipe_content_independently_verified": false,
+          "web_browser_alternative_access": "NOT_NEEDED"
         },
         {
           "number": 3,
@@ -2532,7 +2736,8 @@
           "html_page_title": "bean sprout soup (kongnamul guk) - my korean kitchen",
           "recipe_schema_title": "",
           "schema_ingredient_items": 0,
-          "recipe_content_independently_verified": false
+          "recipe_content_independently_verified": false,
+          "web_browser_alternative_access": "NOT_NEEDED"
         }
       ]
     },
@@ -2542,7 +2747,7 @@
       "cuisine": "Корейская",
       "source_pages_loaded": 2,
       "recipe_schemas_detected": 2,
-      "full_three_source_recipe_review": "PENDING",
+      "full_three_source_recipe_review": "NOT_CERTIFIED",
       "sources": [
         {
           "number": 1,
@@ -2551,7 +2756,8 @@
           "html_page_title": "attention required! | cloudflare",
           "recipe_schema_title": "",
           "schema_ingredient_items": 0,
-          "recipe_content_independently_verified": false
+          "recipe_content_independently_verified": false,
+          "web_browser_alternative_access": "OPENED_SEPARATELY_2026_11_19"
         },
         {
           "number": 2,
@@ -2560,7 +2766,8 @@
           "html_page_title": "gamjatang (spicy pork bone stew) - korean bapsang",
           "recipe_schema_title": "Gamjatang (Spicy Pork Bone Stew)",
           "schema_ingredient_items": 16,
-          "recipe_content_independently_verified": false
+          "recipe_content_independently_verified": false,
+          "web_browser_alternative_access": "NOT_NEEDED"
         },
         {
           "number": 3,
@@ -2569,7 +2776,8 @@
           "html_page_title": "gamjatang, korean pork neck bone soup recipe video - seonkyoung longest",
           "recipe_schema_title": "Gamjatang, Korean Pork Neck Bone Soup",
           "schema_ingredient_items": 31,
-          "recipe_content_independently_verified": false
+          "recipe_content_independently_verified": false,
+          "web_browser_alternative_access": "NOT_NEEDED"
         }
       ]
     },
@@ -2579,7 +2787,7 @@
       "cuisine": "Корейская",
       "source_pages_loaded": 2,
       "recipe_schemas_detected": 2,
-      "full_three_source_recipe_review": "PENDING",
+      "full_three_source_recipe_review": "NOT_CERTIFIED",
       "sources": [
         {
           "number": 1,
@@ -2588,7 +2796,8 @@
           "html_page_title": "attention required! | cloudflare",
           "recipe_schema_title": "",
           "schema_ingredient_items": 0,
-          "recipe_content_independently_verified": false
+          "recipe_content_independently_verified": false,
+          "web_browser_alternative_access": "OPENED_SEPARATELY_2026_11_19"
         },
         {
           "number": 2,
@@ -2597,7 +2806,8 @@
           "html_page_title": "doenjang jjigae (soybean paste stew with pork and vegetables) - korean bapsang",
           "recipe_schema_title": "Doenjang Jjigae (Korean Soybean Paste Stew)",
           "schema_ingredient_items": 12,
-          "recipe_content_independently_verified": false
+          "recipe_content_independently_verified": false,
+          "web_browser_alternative_access": "NOT_NEEDED"
         },
         {
           "number": 3,
@@ -2606,7 +2816,8 @@
           "html_page_title": "doenjang jjigae (classic korean soybean paste stew) - beyond kimchee",
           "recipe_schema_title": "Doenjang Jjigae (Rich Korean Soybean Stew)",
           "schema_ingredient_items": 13,
-          "recipe_content_independently_verified": false
+          "recipe_content_independently_verified": false,
+          "web_browser_alternative_access": "NOT_NEEDED"
         }
       ]
     },
@@ -2616,7 +2827,7 @@
       "cuisine": "Мексиканская",
       "source_pages_loaded": 3,
       "recipe_schemas_detected": 1,
-      "full_three_source_recipe_review": "PENDING",
+      "full_three_source_recipe_review": "NOT_CERTIFIED",
       "sources": [
         {
           "number": 1,
@@ -2625,7 +2836,8 @@
           "html_page_title": "red pork and hominy stew (pozole rojo) + video - muy bueno",
           "recipe_schema_title": "",
           "schema_ingredient_items": 0,
-          "recipe_content_independently_verified": false
+          "recipe_content_independently_verified": false,
+          "web_browser_alternative_access": "NOT_NEEDED"
         },
         {
           "number": 2,
@@ -2634,7 +2846,8 @@
           "html_page_title": "pozole rojo - pati jinich en español",
           "recipe_schema_title": "Pozole rojo",
           "schema_ingredient_items": 22,
-          "recipe_content_independently_verified": false
+          "recipe_content_independently_verified": false,
+          "web_browser_alternative_access": "NOT_NEEDED"
         },
         {
           "number": 3,
@@ -2643,7 +2856,8 @@
           "html_page_title": "slow-cooker red chile pozole - rick bayless",
           "recipe_schema_title": "",
           "schema_ingredient_items": 0,
-          "recipe_content_independently_verified": false
+          "recipe_content_independently_verified": false,
+          "web_browser_alternative_access": "NOT_NEEDED"
         }
       ]
     },
@@ -2653,7 +2867,7 @@
       "cuisine": "Мексиканская",
       "source_pages_loaded": 3,
       "recipe_schemas_detected": 2,
-      "full_three_source_recipe_review": "PENDING",
+      "full_three_source_recipe_review": "NOT_CERTIFIED",
       "sources": [
         {
           "number": 1,
@@ -2662,7 +2876,8 @@
           "html_page_title": "chicken pozole verde - muy bueno",
           "recipe_schema_title": "",
           "schema_ingredient_items": 0,
-          "recipe_content_independently_verified": false
+          "recipe_content_independently_verified": false,
+          "web_browser_alternative_access": "NOT_NEEDED"
         },
         {
           "number": 2,
@@ -2671,7 +2886,8 @@
           "html_page_title": "pozole: try it green! - pati jinich",
           "recipe_schema_title": "Green Pozole",
           "schema_ingredient_items": 23,
-          "recipe_content_independently_verified": false
+          "recipe_content_independently_verified": false,
+          "web_browser_alternative_access": "NOT_NEEDED"
         },
         {
           "number": 3,
@@ -2680,7 +2896,8 @@
           "html_page_title": "pozole verde - isabel eats",
           "recipe_schema_title": "Pozole Verde",
           "schema_ingredient_items": 16,
-          "recipe_content_independently_verified": false
+          "recipe_content_independently_verified": false,
+          "web_browser_alternative_access": "NOT_NEEDED"
         }
       ]
     },
@@ -2690,7 +2907,7 @@
       "cuisine": "Мексиканская",
       "source_pages_loaded": 2,
       "recipe_schemas_detected": 1,
-      "full_three_source_recipe_review": "PENDING",
+      "full_three_source_recipe_review": "NOT_CERTIFIED",
       "sources": [
         {
           "number": 1,
@@ -2699,7 +2916,8 @@
           "html_page_title": "tortilla soup - rick bayless",
           "recipe_schema_title": "",
           "schema_ingredient_items": 0,
-          "recipe_content_independently_verified": false
+          "recipe_content_independently_verified": false,
+          "web_browser_alternative_access": "NOT_NEEDED"
         },
         {
           "number": 2,
@@ -2708,7 +2926,8 @@
           "html_page_title": "sopa de tortilla - pati jinich en español",
           "recipe_schema_title": "Sopa de Tortilla",
           "schema_ingredient_items": 14,
-          "recipe_content_independently_verified": false
+          "recipe_content_independently_verified": false,
+          "web_browser_alternative_access": "NOT_NEEDED"
         },
         {
           "number": 3,
@@ -2717,7 +2936,8 @@
           "html_page_title": "just a moment...",
           "recipe_schema_title": "",
           "schema_ingredient_items": 0,
-          "recipe_content_independently_verified": false
+          "recipe_content_independently_verified": false,
+          "web_browser_alternative_access": "OPENED_SEPARATELY_2026_11_19"
         }
       ]
     },
@@ -2727,7 +2947,7 @@
       "cuisine": "Мексиканская",
       "source_pages_loaded": 2,
       "recipe_schemas_detected": 0,
-      "full_three_source_recipe_review": "PENDING",
+      "full_three_source_recipe_review": "NOT_CERTIFIED",
       "sources": [
         {
           "number": 1,
@@ -2736,7 +2956,8 @@
           "html_page_title": "just a moment...",
           "recipe_schema_title": "",
           "schema_ingredient_items": 0,
-          "recipe_content_independently_verified": false
+          "recipe_content_independently_verified": false,
+          "web_browser_alternative_access": "OPENED_SEPARATELY_2026_11_19"
         },
         {
           "number": 2,
@@ -2745,7 +2966,8 @@
           "html_page_title": "caldo tlalpeño tradicional",
           "recipe_schema_title": "",
           "schema_ingredient_items": 0,
-          "recipe_content_independently_verified": false
+          "recipe_content_independently_verified": false,
+          "web_browser_alternative_access": "NOT_NEEDED"
         },
         {
           "number": 3,
@@ -2754,7 +2976,8 @@
           "html_page_title": "caldo tlalpeño - rita sánchez - receta - canal cocina",
           "recipe_schema_title": "",
           "schema_ingredient_items": 0,
-          "recipe_content_independently_verified": false
+          "recipe_content_independently_verified": false,
+          "web_browser_alternative_access": "NOT_NEEDED"
         }
       ]
     },
@@ -2764,7 +2987,7 @@
       "cuisine": "Мексиканская",
       "source_pages_loaded": 1,
       "recipe_schemas_detected": 0,
-      "full_three_source_recipe_review": "PENDING",
+      "full_three_source_recipe_review": "NOT_CERTIFIED",
       "sources": [
         {
           "number": 1,
@@ -2773,7 +2996,8 @@
           "html_page_title": "",
           "recipe_schema_title": "",
           "schema_ingredient_items": 0,
-          "recipe_content_independently_verified": false
+          "recipe_content_independently_verified": false,
+          "web_browser_alternative_access": "OPENED_SEPARATELY_2026_11_19"
         },
         {
           "number": 2,
@@ -2782,7 +3006,8 @@
           "html_page_title": "attention required! | cloudflare",
           "recipe_schema_title": "",
           "schema_ingredient_items": 0,
-          "recipe_content_independently_verified": false
+          "recipe_content_independently_verified": false,
+          "web_browser_alternative_access": "OPENED_SEPARATELY_2026_11_19"
         },
         {
           "number": 3,
@@ -2791,7 +3016,8 @@
           "html_page_title": "sopa de fideo - isabel eats",
           "recipe_schema_title": "",
           "schema_ingredient_items": 0,
-          "recipe_content_independently_verified": false
+          "recipe_content_independently_verified": false,
+          "web_browser_alternative_access": "NOT_NEEDED"
         }
       ]
     },
@@ -2801,7 +3027,7 @@
       "cuisine": "Мексиканская",
       "source_pages_loaded": 3,
       "recipe_schemas_detected": 1,
-      "full_three_source_recipe_review": "PENDING",
+      "full_three_source_recipe_review": "NOT_CERTIFIED",
       "sources": [
         {
           "number": 1,
@@ -2810,7 +3036,8 @@
           "html_page_title": "sopa de lima clasica - rick bayless",
           "recipe_schema_title": "",
           "schema_ingredient_items": 0,
-          "recipe_content_independently_verified": false
+          "recipe_content_independently_verified": false,
+          "web_browser_alternative_access": "NOT_NEEDED"
         },
         {
           "number": 2,
@@ -2819,7 +3046,8 @@
           "html_page_title": "lima soup - pati jinich",
           "recipe_schema_title": "Lima Soup",
           "schema_ingredient_items": 19,
-          "recipe_content_independently_verified": false
+          "recipe_content_independently_verified": false,
+          "web_browser_alternative_access": "NOT_NEEDED"
         },
         {
           "number": 3,
@@ -2828,7 +3056,8 @@
           "html_page_title": "recipe for sopa de lima",
           "recipe_schema_title": "",
           "schema_ingredient_items": 0,
-          "recipe_content_independently_verified": false
+          "recipe_content_independently_verified": false,
+          "web_browser_alternative_access": "NOT_NEEDED"
         }
       ]
     },
@@ -2838,7 +3067,7 @@
       "cuisine": "Мексиканская",
       "source_pages_loaded": 3,
       "recipe_schemas_detected": 0,
-      "full_three_source_recipe_review": "PENDING",
+      "full_three_source_recipe_review": "NOT_CERTIFIED",
       "sources": [
         {
           "number": 1,
@@ -2847,7 +3076,8 @@
           "html_page_title": "caldo de res (a mexican beef -vegetable soup) recipe - food.com",
           "recipe_schema_title": "",
           "schema_ingredient_items": 0,
-          "recipe_content_independently_verified": false
+          "recipe_content_independently_verified": false,
+          "web_browser_alternative_access": "NOT_NEEDED"
         },
         {
           "number": 2,
@@ -2856,7 +3086,8 @@
           "html_page_title": "caldo de res (authentic mexican beef soup) - muy bueno",
           "recipe_schema_title": "",
           "schema_ingredient_items": 0,
-          "recipe_content_independently_verified": false
+          "recipe_content_independently_verified": false,
+          "web_browser_alternative_access": "NOT_NEEDED"
         },
         {
           "number": 3,
@@ -2865,7 +3096,8 @@
           "html_page_title": "caldo de res (mexican beef soup) - isabel eats",
           "recipe_schema_title": "",
           "schema_ingredient_items": 0,
-          "recipe_content_independently_verified": false
+          "recipe_content_independently_verified": false,
+          "web_browser_alternative_access": "NOT_NEEDED"
         }
       ]
     },
@@ -2875,7 +3107,7 @@
       "cuisine": "Мексиканская",
       "source_pages_loaded": 2,
       "recipe_schemas_detected": 1,
-      "full_three_source_recipe_review": "PENDING",
+      "full_three_source_recipe_review": "NOT_CERTIFIED",
       "sources": [
         {
           "number": 1,
@@ -2884,7 +3116,8 @@
           "html_page_title": "this site is temporarily unavailable | nestlé ",
           "recipe_schema_title": "",
           "schema_ingredient_items": 0,
-          "recipe_content_independently_verified": false
+          "recipe_content_independently_verified": false,
+          "web_browser_alternative_access": "OPENED_SEPARATELY_2026_11_19"
         },
         {
           "number": 2,
@@ -2893,7 +3126,8 @@
           "html_page_title": "albondigas soup (mexican meatball soup) - isabel eats",
           "recipe_schema_title": "",
           "schema_ingredient_items": 0,
-          "recipe_content_independently_verified": false
+          "recipe_content_independently_verified": false,
+          "web_browser_alternative_access": "NOT_NEEDED"
         },
         {
           "number": 3,
@@ -2902,7 +3136,8 @@
           "html_page_title": "albondigas soup recipe - once upon a chef",
           "recipe_schema_title": "Albondigas Soup",
           "schema_ingredient_items": 22,
-          "recipe_content_independently_verified": false
+          "recipe_content_independently_verified": false,
+          "web_browser_alternative_access": "NOT_NEEDED"
         }
       ]
     },
@@ -2912,7 +3147,7 @@
       "cuisine": "Мексиканская",
       "source_pages_loaded": 3,
       "recipe_schemas_detected": 2,
-      "full_three_source_recipe_review": "PENDING",
+      "full_three_source_recipe_review": "NOT_CERTIFIED",
       "sources": [
         {
           "number": 1,
@@ -2921,7 +3156,8 @@
           "html_page_title": "tarascan pinto bean and tomato soup - pati jinich",
           "recipe_schema_title": "Tarascan Pinto Bean and Tomato Soup",
           "schema_ingredient_items": 13,
-          "recipe_content_independently_verified": false
+          "recipe_content_independently_verified": false,
+          "web_browser_alternative_access": "NOT_NEEDED"
         },
         {
           "number": 2,
@@ -2930,7 +3166,8 @@
           "html_page_title": "%%title%% recipe | the great american recipe | pbs food",
           "recipe_schema_title": "Sopa Tarasca",
           "schema_ingredient_items": 15,
-          "recipe_content_independently_verified": false
+          "recipe_content_independently_verified": false,
+          "web_browser_alternative_access": "NOT_NEEDED"
         },
         {
           "number": 3,
@@ -2939,7 +3176,8 @@
           "html_page_title": "sopa tarasca (michoacán) | mexiterran | reto 2024 | asociación mexicana de gastroenterología",
           "recipe_schema_title": "",
           "schema_ingredient_items": 0,
-          "recipe_content_independently_verified": false
+          "recipe_content_independently_verified": false,
+          "web_browser_alternative_access": "NOT_NEEDED"
         }
       ]
     },
@@ -2947,18 +3185,19 @@
       "id": 80,
       "title": "Чильпачоле с крабом",
       "cuisine": "Мексиканская",
-      "source_pages_loaded": 2,
-      "recipe_schemas_detected": 1,
-      "full_three_source_recipe_review": "PENDING",
+      "source_pages_loaded": 3,
+      "recipe_schemas_detected": 2,
+      "full_three_source_recipe_review": "NOT_CERTIFIED",
       "sources": [
         {
           "number": 1,
           "url": "https://laroussecocina.mx/receta/chilpachole-de-jaiba/",
-          "status": "ACCESS_BLOCKED",
-          "html_page_title": "just a moment...",
-          "recipe_schema_title": "",
-          "schema_ingredient_items": 0,
-          "recipe_content_independently_verified": false
+          "status": "FETCHED_UNREVIEWED",
+          "html_page_title": "chilpachole de jaiba larousse cocina",
+          "recipe_schema_title": "Chilpachole de jaiba",
+          "schema_ingredient_items": 14,
+          "recipe_content_independently_verified": false,
+          "web_browser_alternative_access": "NOT_NEEDED"
         },
         {
           "number": 2,
@@ -2967,7 +3206,8 @@
           "html_page_title": "chilpachole de jaiba veracruzano",
           "recipe_schema_title": "",
           "schema_ingredient_items": 0,
-          "recipe_content_independently_verified": false
+          "recipe_content_independently_verified": false,
+          "web_browser_alternative_access": "NOT_NEEDED"
         },
         {
           "number": 3,
@@ -2976,7 +3216,8 @@
           "html_page_title": "chilpachole de jaiba",
           "recipe_schema_title": "Chilpachole de jaiba",
           "schema_ingredient_items": 9,
-          "recipe_content_independently_verified": false
+          "recipe_content_independently_verified": false,
+          "web_browser_alternative_access": "NOT_NEEDED"
         }
       ]
     },
@@ -2986,7 +3227,7 @@
       "cuisine": "Вьетнамская",
       "source_pages_loaded": 3,
       "recipe_schemas_detected": 2,
-      "full_three_source_recipe_review": "PENDING",
+      "full_three_source_recipe_review": "NOT_CERTIFIED",
       "sources": [
         {
           "number": 1,
@@ -2995,7 +3236,8 @@
           "html_page_title": " pho bò (beef noodle soup) recipe | james beard foundation ",
           "recipe_schema_title": "",
           "schema_ingredient_items": 0,
-          "recipe_content_independently_verified": false
+          "recipe_content_independently_verified": false,
+          "web_browser_alternative_access": "NOT_NEEDED"
         },
         {
           "number": 2,
@@ -3004,7 +3246,8 @@
           "html_page_title": "vietnamese beef noodle soup (phở bò) - vicky pham",
           "recipe_schema_title": "Vietnamese Beef Noodle Soup (Phở Bò)",
           "schema_ingredient_items": 25,
-          "recipe_content_independently_verified": false
+          "recipe_content_independently_verified": false,
+          "web_browser_alternative_access": "NOT_NEEDED"
         },
         {
           "number": 3,
@@ -3013,7 +3256,8 @@
           "html_page_title": "vietnamese pho recipe - recipetin eats",
           "recipe_schema_title": "Vietnamese Pho recipe",
           "schema_ingredient_items": 24,
-          "recipe_content_independently_verified": false
+          "recipe_content_independently_verified": false,
+          "web_browser_alternative_access": "NOT_NEEDED"
         }
       ]
     },
@@ -3023,7 +3267,7 @@
       "cuisine": "Вьетнамская",
       "source_pages_loaded": 3,
       "recipe_schemas_detected": 2,
-      "full_three_source_recipe_review": "PENDING",
+      "full_three_source_recipe_review": "NOT_CERTIFIED",
       "sources": [
         {
           "number": 1,
@@ -3032,7 +3276,8 @@
           "html_page_title": "chicken phở recipe (authentic vietnamese chicken noodle soup)",
           "recipe_schema_title": "",
           "schema_ingredient_items": 0,
-          "recipe_content_independently_verified": false
+          "recipe_content_independently_verified": false,
+          "web_browser_alternative_access": "NOT_NEEDED"
         },
         {
           "number": 2,
@@ -3041,7 +3286,8 @@
           "html_page_title": "vietnamese chicken noodle soup (phở gà) - vicky pham",
           "recipe_schema_title": "Vietnamese Chicken Noodle Soup (Phở Gà)",
           "schema_ingredient_items": 22,
-          "recipe_content_independently_verified": false
+          "recipe_content_independently_verified": false,
+          "web_browser_alternative_access": "NOT_NEEDED"
         },
         {
           "number": 3,
@@ -3050,7 +3296,8 @@
           "html_page_title": "vietnamese chicken pho soup (pho ga) - recipetin eats",
           "recipe_schema_title": "Vietnamese Chicken Pho soup (Pho Ga)",
           "schema_ingredient_items": 22,
-          "recipe_content_independently_verified": false
+          "recipe_content_independently_verified": false,
+          "web_browser_alternative_access": "NOT_NEEDED"
         }
       ]
     },
@@ -3060,7 +3307,7 @@
       "cuisine": "Вьетнамская",
       "source_pages_loaded": 3,
       "recipe_schemas_detected": 2,
-      "full_three_source_recipe_review": "PENDING",
+      "full_three_source_recipe_review": "NOT_CERTIFIED",
       "sources": [
         {
           "number": 1,
@@ -3069,7 +3316,8 @@
           "html_page_title": "bún bò huế recipe - spicy vietnamese beef pork noodle soup",
           "recipe_schema_title": "",
           "schema_ingredient_items": 0,
-          "recipe_content_independently_verified": false
+          "recipe_content_independently_verified": false,
+          "web_browser_alternative_access": "NOT_NEEDED"
         },
         {
           "number": 2,
@@ -3078,7 +3326,8 @@
           "html_page_title": "vietnamese spicy beef noodle soup (bun bo hue) - vicky pham",
           "recipe_schema_title": "Vietnamese Spicy Beef Noodle Soup (Bun Bo Hue)",
           "schema_ingredient_items": 29,
-          "recipe_content_independently_verified": false
+          "recipe_content_independently_verified": false,
+          "web_browser_alternative_access": "NOT_NEEDED"
         },
         {
           "number": 3,
@@ -3087,7 +3336,8 @@
           "html_page_title": "bún bò huế recipe - great british chefs",
           "recipe_schema_title": "Bún bò Huế",
           "schema_ingredient_items": 26,
-          "recipe_content_independently_verified": false
+          "recipe_content_independently_verified": false,
+          "web_browser_alternative_access": "NOT_NEEDED"
         }
       ]
     },
@@ -3097,7 +3347,7 @@
       "cuisine": "Вьетнамская",
       "source_pages_loaded": 3,
       "recipe_schemas_detected": 1,
-      "full_three_source_recipe_review": "PENDING",
+      "full_three_source_recipe_review": "NOT_CERTIFIED",
       "sources": [
         {
           "number": 1,
@@ -3106,7 +3356,8 @@
           "html_page_title": "bún riêu recipe (vietnamese crab, pork tomato noodle soup)",
           "recipe_schema_title": "",
           "schema_ingredient_items": 0,
-          "recipe_content_independently_verified": false
+          "recipe_content_independently_verified": false,
+          "web_browser_alternative_access": "NOT_NEEDED"
         },
         {
           "number": 2,
@@ -3115,7 +3366,8 @@
           "html_page_title": "vietnamese crab, shrimp, pork tomato noodle soup (bun rieu from scratch) - vicky pham",
           "recipe_schema_title": "Vietnamese Crab, Shrimp, Pork & Tomato Noodle Soup (Bun Rieu from Scratch)",
           "schema_ingredient_items": 26,
-          "recipe_content_independently_verified": false
+          "recipe_content_independently_verified": false,
+          "web_browser_alternative_access": "NOT_NEEDED"
         },
         {
           "number": 3,
@@ -3124,7 +3376,8 @@
           "html_page_title": "vietnamese crab noodle soup (bun rieu) | asian inspirations",
           "recipe_schema_title": "",
           "schema_ingredient_items": 0,
-          "recipe_content_independently_verified": false
+          "recipe_content_independently_verified": false,
+          "web_browser_alternative_access": "NOT_NEEDED"
         }
       ]
     },
@@ -3134,7 +3387,7 @@
       "cuisine": "Вьетнамская",
       "source_pages_loaded": 3,
       "recipe_schemas_detected": 2,
-      "full_three_source_recipe_review": "PENDING",
+      "full_three_source_recipe_review": "NOT_CERTIFIED",
       "sources": [
         {
           "number": 1,
@@ -3143,7 +3396,8 @@
           "html_page_title": "bún thang - vietnamese noodle soup (pork, chicken egg)",
           "recipe_schema_title": "",
           "schema_ingredient_items": 0,
-          "recipe_content_independently_verified": false
+          "recipe_content_independently_verified": false,
+          "web_browser_alternative_access": "NOT_NEEDED"
         },
         {
           "number": 2,
@@ -3152,7 +3406,8 @@
           "html_page_title": "bún thang (vietnamese chicken noodle soup) - vicky pham",
           "recipe_schema_title": "Bún Thang (Vietnamese Chicken Noodle Soup)",
           "schema_ingredient_items": 21,
-          "recipe_content_independently_verified": false
+          "recipe_content_independently_verified": false,
+          "web_browser_alternative_access": "NOT_NEEDED"
         },
         {
           "number": 3,
@@ -3161,7 +3416,8 @@
           "html_page_title": "vietnamese hanoi chicken noodle soup (bún thang) - ang cooks",
           "recipe_schema_title": "Vietnamese Hanoi Chicken Noodle Soup (Bún Thang)",
           "schema_ingredient_items": 15,
-          "recipe_content_independently_verified": false
+          "recipe_content_independently_verified": false,
+          "web_browser_alternative_access": "NOT_NEEDED"
         }
       ]
     },
@@ -3171,7 +3427,7 @@
       "cuisine": "Вьетнамская",
       "source_pages_loaded": 3,
       "recipe_schemas_detected": 1,
-      "full_three_source_recipe_review": "PENDING",
+      "full_three_source_recipe_review": "NOT_CERTIFIED",
       "sources": [
         {
           "number": 1,
@@ -3180,7 +3436,8 @@
           "html_page_title": "vietnamese escargot noodle soup (bun oc) - vicky pham",
           "recipe_schema_title": "",
           "schema_ingredient_items": 0,
-          "recipe_content_independently_verified": false
+          "recipe_content_independently_verified": false,
+          "web_browser_alternative_access": "NOT_NEEDED"
         },
         {
           "number": 2,
@@ -3189,7 +3446,8 @@
           "html_page_title": "cách làm bún ốc hà nội theo lối cũ",
           "recipe_schema_title": "Bún ốc Hà Nội theo lối cũ",
           "schema_ingredient_items": 8,
-          "recipe_content_independently_verified": false
+          "recipe_content_independently_verified": false,
+          "web_browser_alternative_access": "NOT_NEEDED"
         },
         {
           "number": 3,
@@ -3198,7 +3456,8 @@
           "html_page_title": "2 cách nấu bún ốc dọc mùng, bún ốc mọc thơm ngon, thanh mát, dễ làm tại nhà",
           "recipe_schema_title": "",
           "schema_ingredient_items": 0,
-          "recipe_content_independently_verified": false
+          "recipe_content_independently_verified": false,
+          "web_browser_alternative_access": "NOT_NEEDED"
         }
       ]
     },
@@ -3208,7 +3467,7 @@
       "cuisine": "Вьетнамская",
       "source_pages_loaded": 3,
       "recipe_schemas_detected": 3,
-      "full_three_source_recipe_review": "PENDING",
+      "full_three_source_recipe_review": "NOT_CERTIFIED",
       "sources": [
         {
           "number": 1,
@@ -3217,7 +3476,8 @@
           "html_page_title": "vietnamese pork and seafood noodle soup (hu tieu mi) - vicky pham",
           "recipe_schema_title": "Vietnamese Pork and Seafood Noodle Soup (Hu Tieu Mi)",
           "schema_ingredient_items": 25,
-          "recipe_content_independently_verified": false
+          "recipe_content_independently_verified": false,
+          "web_browser_alternative_access": "NOT_NEEDED"
         },
         {
           "number": 2,
@@ -3226,7 +3486,8 @@
           "html_page_title": "hu tieu nam vang (phnom penh noodle soup) recipe - viet world kitchen",
           "recipe_schema_title": "Hu Tieu Nam Vang (Phnom Penh Noodle Soup)",
           "schema_ingredient_items": 23,
-          "recipe_content_independently_verified": false
+          "recipe_content_independently_verified": false,
+          "web_browser_alternative_access": "NOT_NEEDED"
         },
         {
           "number": 3,
@@ -3235,7 +3496,8 @@
           "html_page_title": "hủ tiếu nam vang — vietnamese cookbook",
           "recipe_schema_title": "Hủ Tiếu Nam Vang",
           "schema_ingredient_items": 15,
-          "recipe_content_independently_verified": false
+          "recipe_content_independently_verified": false,
+          "web_browser_alternative_access": "NOT_NEEDED"
         }
       ]
     },
@@ -3245,7 +3507,7 @@
       "cuisine": "Вьетнамская",
       "source_pages_loaded": 3,
       "recipe_schemas_detected": 2,
-      "full_three_source_recipe_review": "PENDING",
+      "full_three_source_recipe_review": "NOT_CERTIFIED",
       "sources": [
         {
           "number": 1,
@@ -3254,7 +3516,8 @@
           "html_page_title": "vietnamese bánh canh giò heo tôm (thick noodles w/ pork shrimp)",
           "recipe_schema_title": "",
           "schema_ingredient_items": 0,
-          "recipe_content_independently_verified": false
+          "recipe_content_independently_verified": false,
+          "web_browser_alternative_access": "NOT_NEEDED"
         },
         {
           "number": 2,
@@ -3263,7 +3526,8 @@
           "html_page_title": "bánh canh sườn heo (vietnamese pork rib noodle soup) – large batch - vicky pham",
           "recipe_schema_title": "Bánh Canh Sườn Heo (Vietnamese Pork Rib Noodle Soup) – Large Batch",
           "schema_ingredient_items": 10,
-          "recipe_content_independently_verified": false
+          "recipe_content_independently_verified": false,
+          "web_browser_alternative_access": "NOT_NEEDED"
         },
         {
           "number": 3,
@@ -3272,7 +3536,8 @@
           "html_page_title": "how to make banh canh tom thit - vnifood",
           "recipe_schema_title": "",
           "schema_ingredient_items": 4,
-          "recipe_content_independently_verified": false
+          "recipe_content_independently_verified": false,
+          "web_browser_alternative_access": "NOT_NEEDED"
         }
       ]
     },
@@ -3282,7 +3547,7 @@
       "cuisine": "Вьетнамская",
       "source_pages_loaded": 2,
       "recipe_schemas_detected": 2,
-      "full_three_source_recipe_review": "PENDING",
+      "full_three_source_recipe_review": "NOT_CERTIFIED",
       "sources": [
         {
           "number": 1,
@@ -3291,7 +3556,8 @@
           "html_page_title": "attention required! | cloudflare",
           "recipe_schema_title": "",
           "schema_ingredient_items": 0,
-          "recipe_content_independently_verified": false
+          "recipe_content_independently_verified": false,
+          "web_browser_alternative_access": "OPENED_SEPARATELY_2026_11_19"
         },
         {
           "number": 2,
@@ -3300,7 +3566,8 @@
           "html_page_title": "vietnamese sweet and sour fish soup (canh chua ca) - vicky pham",
           "recipe_schema_title": "Vietnamese Sweet and Sour Fish Soup (Canh Chua Ca)",
           "schema_ingredient_items": 14,
-          "recipe_content_independently_verified": false
+          "recipe_content_independently_verified": false,
+          "web_browser_alternative_access": "NOT_NEEDED"
         },
         {
           "number": 3,
@@ -3309,7 +3576,8 @@
           "html_page_title": "canh chua cá (vietnamese sour fish soup) recipe | sbs food",
           "recipe_schema_title": "Canh chua cá (Vietnamese sour fish soup)",
           "schema_ingredient_items": 13,
-          "recipe_content_independently_verified": false
+          "recipe_content_independently_verified": false,
+          "web_browser_alternative_access": "NOT_NEEDED"
         }
       ]
     },
@@ -3319,7 +3587,7 @@
       "cuisine": "Вьетнамская",
       "source_pages_loaded": 3,
       "recipe_schemas_detected": 0,
-      "full_three_source_recipe_review": "PENDING",
+      "full_three_source_recipe_review": "NOT_CERTIFIED",
       "sources": [
         {
           "number": 1,
@@ -3328,7 +3596,8 @@
           "html_page_title": "stuffed bitter melon soup (canh khổ qua) - hungry huy",
           "recipe_schema_title": "",
           "schema_ingredient_items": 0,
-          "recipe_content_independently_verified": false
+          "recipe_content_independently_verified": false,
+          "web_browser_alternative_access": "NOT_NEEDED"
         },
         {
           "number": 2,
@@ -3337,16 +3606,18 @@
           "html_page_title": "vietnamese bitter melon soup (canh kho qua) - delightful plate",
           "recipe_schema_title": "",
           "schema_ingredient_items": 0,
-          "recipe_content_independently_verified": false
+          "recipe_content_independently_verified": false,
+          "web_browser_alternative_access": "NOT_NEEDED"
         },
         {
           "number": 3,
           "url": "https://getvanvan.com/blogs/recipes/canh-kh%E1%BB%95-qua-bitter-melon-soup",
           "status": "FETCHED_UNREVIEWED",
-          "html_page_title": "",
+          "html_page_title": "canh khổ qua | bitter melon soup | vietnamese spices | vân vân",
           "recipe_schema_title": "",
           "schema_ingredient_items": 0,
-          "recipe_content_independently_verified": false
+          "recipe_content_independently_verified": false,
+          "web_browser_alternative_access": "NOT_NEEDED"
         }
       ]
     },
@@ -3356,7 +3627,7 @@
       "cuisine": "Китайская",
       "source_pages_loaded": 3,
       "recipe_schemas_detected": 3,
-      "full_three_source_recipe_review": "PENDING",
+      "full_three_source_recipe_review": "NOT_CERTIFIED",
       "sources": [
         {
           "number": 1,
@@ -3365,7 +3636,8 @@
           "html_page_title": "shanghai wonton soup - the woks of life",
           "recipe_schema_title": "Shanghai Wonton Soup",
           "schema_ingredient_items": 18,
-          "recipe_content_independently_verified": false
+          "recipe_content_independently_verified": false,
+          "web_browser_alternative_access": "NOT_NEEDED"
         },
         {
           "number": 2,
@@ -3374,7 +3646,8 @@
           "html_page_title": "wonton soup - omnivore s cookbook",
           "recipe_schema_title": "Wonton Soup",
           "schema_ingredient_items": 17,
-          "recipe_content_independently_verified": false
+          "recipe_content_independently_verified": false,
+          "web_browser_alternative_access": "NOT_NEEDED"
         },
         {
           "number": 3,
@@ -3383,7 +3656,8 @@
           "html_page_title": "wonton soup (video) ワンタンスープ • just one cookbook",
           "recipe_schema_title": "Wonton Soup",
           "schema_ingredient_items": 20,
-          "recipe_content_independently_verified": false
+          "recipe_content_independently_verified": false,
+          "web_browser_alternative_access": "NOT_NEEDED"
         }
       ]
     },
@@ -3393,7 +3667,7 @@
       "cuisine": "Китайская",
       "source_pages_loaded": 3,
       "recipe_schemas_detected": 3,
-      "full_three_source_recipe_review": "PENDING",
+      "full_three_source_recipe_review": "NOT_CERTIFIED",
       "sources": [
         {
           "number": 1,
@@ -3402,7 +3676,8 @@
           "html_page_title": "hot and sour soup: just like the restaurants make it - the woks of life",
           "recipe_schema_title": "Hot and Sour Soup - A Chinese Takeout \"Standard\"",
           "schema_ingredient_items": 24,
-          "recipe_content_independently_verified": false
+          "recipe_content_independently_verified": false,
+          "web_browser_alternative_access": "NOT_NEEDED"
         },
         {
           "number": 2,
@@ -3411,7 +3686,8 @@
           "html_page_title": "authentic hot and sour soup (酸辣汤) - omnivore s cookbook",
           "recipe_schema_title": "Authentic Hot and Sour Soup (酸辣汤)",
           "schema_ingredient_items": 19,
-          "recipe_content_independently_verified": false
+          "recipe_content_independently_verified": false,
+          "web_browser_alternative_access": "NOT_NEEDED"
         },
         {
           "number": 3,
@@ -3420,7 +3696,8 @@
           "html_page_title": "dad s hot sour soup: the chinese restaurant way | made with lau",
           "recipe_schema_title": "Dad's Hot & Sour Soup: The Chinese Restaurant Way",
           "schema_ingredient_items": 22,
-          "recipe_content_independently_verified": false
+          "recipe_content_independently_verified": false,
+          "web_browser_alternative_access": "NOT_NEEDED"
         }
       ]
     },
@@ -3430,7 +3707,7 @@
       "cuisine": "Китайская",
       "source_pages_loaded": 3,
       "recipe_schemas_detected": 3,
-      "full_three_source_recipe_review": "PENDING",
+      "full_three_source_recipe_review": "NOT_CERTIFIED",
       "sources": [
         {
           "number": 1,
@@ -3439,7 +3716,8 @@
           "html_page_title": "egg drop soup: authentic 15-minute recipe | the woks of life",
           "recipe_schema_title": "Egg Drop Soup",
           "schema_ingredient_items": 10,
-          "recipe_content_independently_verified": false
+          "recipe_content_independently_verified": false,
+          "web_browser_alternative_access": "NOT_NEEDED"
         },
         {
           "number": 2,
@@ -3448,7 +3726,8 @@
           "html_page_title": "chinese egg drop soup recipe - omnivore s cookbook",
           "recipe_schema_title": "Chinese Egg Drop Soup",
           "schema_ingredient_items": 9,
-          "recipe_content_independently_verified": false
+          "recipe_content_independently_verified": false,
+          "web_browser_alternative_access": "NOT_NEEDED"
         },
         {
           "number": 3,
@@ -3457,7 +3736,8 @@
           "html_page_title": "dad s egg drop soup: the chinese restaurant way | made with lau",
           "recipe_schema_title": "Dad's Egg Drop Soup: The Chinese Restaurant Way",
           "schema_ingredient_items": 15,
-          "recipe_content_independently_verified": false
+          "recipe_content_independently_verified": false,
+          "web_browser_alternative_access": "NOT_NEEDED"
         }
       ]
     },
@@ -3467,7 +3747,7 @@
       "cuisine": "Китайская",
       "source_pages_loaded": 2,
       "recipe_schemas_detected": 1,
-      "full_three_source_recipe_review": "PENDING",
+      "full_three_source_recipe_review": "NOT_CERTIFIED",
       "sources": [
         {
           "number": 1,
@@ -3476,7 +3756,8 @@
           "html_page_title": "winter melon soup with pork ribs - the woks of life",
           "recipe_schema_title": "Winter Melon Soup with Pork Ribs",
           "schema_ingredient_items": 8,
-          "recipe_content_independently_verified": false
+          "recipe_content_independently_verified": false,
+          "web_browser_alternative_access": "NOT_NEEDED"
         },
         {
           "number": 2,
@@ -3485,7 +3766,8 @@
           "html_page_title": "winter melon soup | daily cooking quest",
           "recipe_schema_title": "",
           "schema_ingredient_items": 0,
-          "recipe_content_independently_verified": false
+          "recipe_content_independently_verified": false,
+          "web_browser_alternative_access": "NOT_NEEDED"
         },
         {
           "number": 3,
@@ -3494,7 +3776,8 @@
           "html_page_title": "security verification",
           "recipe_schema_title": "",
           "schema_ingredient_items": 0,
-          "recipe_content_independently_verified": false
+          "recipe_content_independently_verified": false,
+          "web_browser_alternative_access": "OPENED_SEPARATELY_2026_11_19"
         }
       ]
     },
@@ -3504,7 +3787,7 @@
       "cuisine": "Китайская",
       "source_pages_loaded": 3,
       "recipe_schemas_detected": 3,
-      "full_three_source_recipe_review": "PENDING",
+      "full_three_source_recipe_review": "NOT_CERTIFIED",
       "sources": [
         {
           "number": 1,
@@ -3513,7 +3796,8 @@
           "html_page_title": "dad s chicken corn soup: a chinese chef s secrets | made with lau",
           "recipe_schema_title": "Dad's Chicken Corn Soup: A Chinese Chef's Secrets",
           "schema_ingredient_items": 16,
-          "recipe_content_independently_verified": false
+          "recipe_content_independently_verified": false,
+          "web_browser_alternative_access": "NOT_NEEDED"
         },
         {
           "number": 2,
@@ -3522,7 +3806,8 @@
           "html_page_title": "chicken corn soup (restaurant recipe!) - the woks of life",
           "recipe_schema_title": "Chicken Corn Soup (30-Min Recipe!)",
           "schema_ingredient_items": 16,
-          "recipe_content_independently_verified": false
+          "recipe_content_independently_verified": false,
+          "web_browser_alternative_access": "NOT_NEEDED"
         },
         {
           "number": 3,
@@ -3531,7 +3816,8 @@
           "html_page_title": "chinese corn soup with chicken (鸡蛋玉米羹)",
           "recipe_schema_title": "Chinese Corn Soup with Chicken (鸡蛋玉米羹)",
           "schema_ingredient_items": 13,
-          "recipe_content_independently_verified": false
+          "recipe_content_independently_verified": false,
+          "web_browser_alternative_access": "NOT_NEEDED"
         }
       ]
     },
@@ -3541,7 +3827,7 @@
       "cuisine": "Китайская",
       "source_pages_loaded": 2,
       "recipe_schemas_detected": 1,
-      "full_three_source_recipe_review": "PENDING",
+      "full_three_source_recipe_review": "NOT_CERTIFIED",
       "sources": [
         {
           "number": 1,
@@ -3550,7 +3836,8 @@
           "html_page_title": "suan cai yu (酸菜鱼, sichuan fish with pickled mustard greens) - omnivore s cookbook",
           "recipe_schema_title": "Suan Cai Yu (酸菜鱼, Sichuan Fish with Pickled Mustard Greens)",
           "schema_ingredient_items": 20,
-          "recipe_content_independently_verified": false
+          "recipe_content_independently_verified": false,
+          "web_browser_alternative_access": "NOT_NEEDED"
         },
         {
           "number": 2,
@@ -3559,7 +3846,8 @@
           "html_page_title": "security verification",
           "recipe_schema_title": "",
           "schema_ingredient_items": 0,
-          "recipe_content_independently_verified": false
+          "recipe_content_independently_verified": false,
+          "web_browser_alternative_access": "OPENED_SEPARATELY_2026_11_19"
         },
         {
           "number": 3,
@@ -3568,7 +3856,8 @@
           "html_page_title": "suan cai yu (sichuan fish with sour vegetable, 酸菜鱼) - red house spice",
           "recipe_schema_title": "",
           "schema_ingredient_items": 0,
-          "recipe_content_independently_verified": false
+          "recipe_content_independently_verified": false,
+          "web_browser_alternative_access": "NOT_NEEDED"
         }
       ]
     },
@@ -3578,7 +3867,7 @@
       "cuisine": "Китайская",
       "source_pages_loaded": 2,
       "recipe_schemas_detected": 1,
-      "full_three_source_recipe_review": "PENDING",
+      "full_three_source_recipe_review": "NOT_CERTIFIED",
       "sources": [
         {
           "number": 1,
@@ -3587,7 +3876,8 @@
           "html_page_title": "china recipe for preparing: henan hu la tang (hot pepper soup)",
           "recipe_schema_title": "",
           "schema_ingredient_items": 0,
-          "recipe_content_independently_verified": false
+          "recipe_content_independently_verified": false,
+          "web_browser_alternative_access": "NOT_NEEDED"
         },
         {
           "number": 2,
@@ -3596,7 +3886,8 @@
           "html_page_title": "hulatang recipe: henan's hot and sour pepper soup — amuse.",
           "recipe_schema_title": "Hulatang recipe: Henan's hot and sour pepper soup",
           "schema_ingredient_items": 14,
-          "recipe_content_independently_verified": false
+          "recipe_content_independently_verified": false,
+          "web_browser_alternative_access": "NOT_NEEDED"
         },
         {
           "number": 3,
@@ -3605,7 +3896,8 @@
           "html_page_title": "just a moment...",
           "recipe_schema_title": "",
           "schema_ingredient_items": 0,
-          "recipe_content_independently_verified": false
+          "recipe_content_independently_verified": false,
+          "web_browser_alternative_access": "OPENED_SEPARATELY_2026_11_19"
         }
       ]
     },
@@ -3615,7 +3907,7 @@
       "cuisine": "Китайская",
       "source_pages_loaded": 3,
       "recipe_schemas_detected": 1,
-      "full_three_source_recipe_review": "PENDING",
+      "full_three_source_recipe_review": "NOT_CERTIFIED",
       "sources": [
         {
           "number": 1,
@@ -3624,7 +3916,8 @@
           "html_page_title": "yangrou paomo bread and mutton soup",
           "recipe_schema_title": "",
           "schema_ingredient_items": 0,
-          "recipe_content_independently_verified": false
+          "recipe_content_independently_verified": false,
+          "web_browser_alternative_access": "NOT_NEEDED"
         },
         {
           "number": 2,
@@ -3633,7 +3926,8 @@
           "html_page_title": "yangrou paomo — hóng kitchen",
           "recipe_schema_title": "Yangrou Paomo (Lamb Soup with Bread)",
           "schema_ingredient_items": 11,
-          "recipe_content_independently_verified": false
+          "recipe_content_independently_verified": false,
+          "web_browser_alternative_access": "NOT_NEEDED"
         },
         {
           "number": 3,
@@ -3642,7 +3936,8 @@
           "html_page_title": "recipe: yangrou paomo - bread and mutton soup | thingsasian",
           "recipe_schema_title": "",
           "schema_ingredient_items": 0,
-          "recipe_content_independently_verified": false
+          "recipe_content_independently_verified": false,
+          "web_browser_alternative_access": "NOT_NEEDED"
         }
       ]
     },
@@ -3652,7 +3947,7 @@
       "cuisine": "Китайская",
       "source_pages_loaded": 3,
       "recipe_schemas_detected": 2,
-      "full_three_source_recipe_review": "PENDING",
+      "full_three_source_recipe_review": "NOT_CERTIFIED",
       "sources": [
         {
           "number": 1,
@@ -3661,7 +3956,8 @@
           "html_page_title": "shanghai-style red vegetable soup (罗宋汤 - luo song tang)",
           "recipe_schema_title": "Shanghai-Style Red Vegetable Soup (罗宋汤 - Luo Song Tang)",
           "schema_ingredient_items": 13,
-          "recipe_content_independently_verified": false
+          "recipe_content_independently_verified": false,
+          "web_browser_alternative_access": "NOT_NEEDED"
         },
         {
           "number": 2,
@@ -3670,7 +3966,8 @@
           "html_page_title": "海派西餐经典！这碗德大西餐社的罗宋汤，原来有那么多“秘诀”！_上观新闻",
           "recipe_schema_title": "",
           "schema_ingredient_items": 0,
-          "recipe_content_independently_verified": false
+          "recipe_content_independently_verified": false,
+          "web_browser_alternative_access": "NOT_NEEDED"
         },
         {
           "number": 3,
@@ -3679,7 +3976,8 @@
           "html_page_title": "shanghai beef soup (luosong tang) | osman cho",
           "recipe_schema_title": "Shanghai Beef Soup (Luosong Tang)",
           "schema_ingredient_items": 10,
-          "recipe_content_independently_verified": false
+          "recipe_content_independently_verified": false,
+          "web_browser_alternative_access": "NOT_NEEDED"
         }
       ]
     },
@@ -3689,7 +3987,7 @@
       "cuisine": "Китайская",
       "source_pages_loaded": 3,
       "recipe_schemas_detected": 2,
-      "full_three_source_recipe_review": "PENDING",
+      "full_three_source_recipe_review": "NOT_CERTIFIED",
       "sources": [
         {
           "number": 1,
@@ -3698,7 +3996,8 @@
           "html_page_title": "chinese watercress soup with pork ribs (sai yeung choy tong)",
           "recipe_schema_title": "Chinese Watercress Soup with Pork Ribs (Sai Yeung Choy Tong)",
           "schema_ingredient_items": 7,
-          "recipe_content_independently_verified": false
+          "recipe_content_independently_verified": false,
+          "web_browser_alternative_access": "NOT_NEEDED"
         },
         {
           "number": 2,
@@ -3707,7 +4006,8 @@
           "html_page_title": "chinese watercress and honey date soup (西洋菜汤) recipe - the burning kitchen",
           "recipe_schema_title": "Chinese Watercress Soup with Honey Dates",
           "schema_ingredient_items": 11,
-          "recipe_content_independently_verified": false
+          "recipe_content_independently_verified": false,
+          "web_browser_alternative_access": "NOT_NEEDED"
         },
         {
           "number": 3,
@@ -3716,7 +4016,8 @@
           "html_page_title": "chinese watercress soup recipe (西洋菜汤) - souper diaries",
           "recipe_schema_title": "",
           "schema_ingredient_items": 0,
-          "recipe_content_independently_verified": false
+          "recipe_content_independently_verified": false,
+          "web_browser_alternative_access": "NOT_NEEDED"
         }
       ]
     }
