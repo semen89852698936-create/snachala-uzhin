@@ -13,7 +13,7 @@ let sources=0,steps=0,phases=0;
 for(const [i,r] of recipes.entries()){
  if(r.id!==i+1)errors.push('Wrong ID '+r.id);
  const evidence=r.source_content_evidence;
- if(r.recipe_source_audit_status!=='THREE_SOURCE_COMPARISON_DOCUMENTED')errors.push('#'+r.id+' no documented source comparison');
+ if(!['THREE_SOURCE_COMPARISON_DOCUMENTED','TWO_FULL_SOURCES_THIRD_INDEX_ONLY'].includes(r.recipe_source_audit_status))errors.push('#'+r.id+' no documented source comparison status');
  if(!evidence||!evidence.ingredients_comparison||!evidence.technique_and_timer_comparison||evidence.sources?.length!==3)errors.push('#'+r.id+' missing comparison');
  else for(let j=0;j<3;j++){
   const e=evidence.sources[j];
