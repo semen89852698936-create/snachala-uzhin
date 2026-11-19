@@ -1,0 +1,794 @@
+{
+  "project": "НАШ ВЕЧЕР",
+  "collection": "100 завтраков мира",
+  "country": "Испания",
+  "recipe_count": 10,
+  "is_published": false,
+  "verification_level": "editorial complete draft; recipe-by-recipe culinary source checks pending",
+  "recipes": [
+    {
+      "id": "breakfast-es-31",
+      "collection_number": 31,
+      "country": "Испания",
+      "country_code": "ES",
+      "title": "Тост с томатами и оливковым маслом",
+      "original_name": "Pan con tomate",
+      "servings": 2,
+      "total_min": 12,
+      "ingredients": [
+        {
+          "name": "Хлеб деревенский",
+          "amount": 180,
+          "unit": "г"
+        },
+        {
+          "name": "Помидоры спелые",
+          "amount": 220,
+          "unit": "г"
+        },
+        {
+          "name": "Оливковое масло extra virgin",
+          "amount": 25,
+          "unit": "мл"
+        },
+        {
+          "name": "Чеснок",
+          "amount": 1,
+          "unit": "зубчик"
+        },
+        {
+          "name": "Соль",
+          "amount": 2,
+          "unit": "г"
+        }
+      ],
+      "steps": [
+        {
+          "text": "Нарежь деревенский хлеб 4 ломтями толщиной 1,5 см.",
+          "timer_sec": 0
+        },
+        {
+          "text": "Подсуши на сухой сковороде или гриле 2–3 минуты с каждой стороны до лёгкого хруста.",
+          "timer_sec": 360
+        },
+        {
+          "text": "Разрежь чеснок пополам и слегка натри срезом тёплый хлеб.",
+          "timer_sec": 0
+        },
+        {
+          "text": "Натри мякоть спелых помидоров на крупной тёрке, оставляя кожицу в руке. Посоли и распредели по хлебу.",
+          "timer_sec": 0
+        },
+        {
+          "text": "Полей оливковым маслом и подавай сразу, пока хлеб не размок.",
+          "timer_sec": 0
+        }
+      ],
+      "notes": "Каталонский pa amb tomàquet готовится и натиранием помидора прямо на хлеб; оба подхода уместны.",
+      "source_verification": {
+        "status": "country_cuisine_context_only_recipe_specific_check_pending",
+        "country_reference_url": "https://www.spain.info/es/receta/churros/"
+      },
+      "editorial_status": "complete_draft_pending_culinary_verification",
+      "photo_status": "deferred_by_user",
+      "publication_status": "unpublished"
+    },
+    {
+      "id": "breakfast-es-32",
+      "collection_number": 32,
+      "country": "Испания",
+      "country_code": "ES",
+      "title": "Чуррос с горячим шоколадом",
+      "original_name": "Churros con chocolate",
+      "servings": 2,
+      "total_min": 35,
+      "ingredients": [
+        {
+          "name": "Пшеничная мука",
+          "amount": 150,
+          "unit": "г"
+        },
+        {
+          "name": "Вода",
+          "amount": 170,
+          "unit": "мл"
+        },
+        {
+          "name": "Соль",
+          "amount": 3,
+          "unit": "г"
+        },
+        {
+          "name": "Растительное масло для фритюра",
+          "amount": 550,
+          "unit": "мл"
+        },
+        {
+          "name": "Сахар для посыпки",
+          "amount": 25,
+          "unit": "г"
+        },
+        {
+          "name": "Молоко для напитка",
+          "amount": 260,
+          "unit": "мл"
+        },
+        {
+          "name": "Тёмный шоколад",
+          "amount": 100,
+          "unit": "г"
+        },
+        {
+          "name": "Кукурузный крахмал",
+          "amount": 7,
+          "unit": "г"
+        }
+      ],
+      "steps": [
+        {
+          "text": "Вскипяти воду с солью, сними с огня, разом вмешай муку до плотной однородной массы без сухих комков. Дай тесту немного остыть.",
+          "timer_sec": 300
+        },
+        {
+          "text": "Переложи тесто в прочный кондитерский мешок с широкой звёздчатой насадкой, чтобы у чуррос были рёбра: гладкие толстые цилиндры могут опасно лопаться во фритюре.",
+          "timer_sec": 0
+        },
+        {
+          "text": "Разогрей масло до 175–180 °C. Выдави короткие полоски теста осторожно близко к поверхности масла, отрезая ножницами.",
+          "timer_sec": 0
+        },
+        {
+          "text": "Жарь небольшими партиями 3–5 минут до золотистой корочки и полностью сухой внутренней мякоти, обсуши и посыпь сахаром.",
+          "timer_sec": 300
+        },
+        {
+          "text": "Для шоколада нагрей молоко с шоколадом; вмешай крахмал, предварительно разведённый ложкой холодного молока из общего количества. Провари 2–3 минуты до лёгкого загустения.",
+          "timer_sec": 180
+        }
+      ],
+      "notes": "Впускай тесто во фритюр без воздуха в кондитерском мешке, не используй круглую насадку.",
+      "source_verification": {
+        "status": "country_cuisine_context_only_recipe_specific_check_pending",
+        "country_reference_url": "https://www.spain.info/es/receta/churros/"
+      },
+      "editorial_status": "complete_draft_pending_culinary_verification",
+      "photo_status": "deferred_by_user",
+      "publication_status": "unpublished"
+    },
+    {
+      "id": "breakfast-es-33",
+      "collection_number": 33,
+      "country": "Испания",
+      "country_code": "ES",
+      "title": "Испанская картофельная тортилья",
+      "original_name": "Tortilla de patatas",
+      "servings": 2,
+      "total_min": 45,
+      "ingredients": [
+        {
+          "name": "Картофель",
+          "amount": 400,
+          "unit": "г"
+        },
+        {
+          "name": "Яйца",
+          "amount": 4,
+          "unit": "шт."
+        },
+        {
+          "name": "Лук репчатый",
+          "amount": 90,
+          "unit": "г"
+        },
+        {
+          "name": "Оливковое масло для приготовления",
+          "amount": 100,
+          "unit": "мл"
+        },
+        {
+          "name": "Соль",
+          "amount": 5,
+          "unit": "г"
+        }
+      ],
+      "steps": [
+        {
+          "text": "Нарежь очищенный картофель тонкими ломтиками по 3–4 мм, лук полукольцами.",
+          "timer_sec": 0
+        },
+        {
+          "text": "В сковороде нагрей масло на среднем-низком огне, добавь картофель и лук. Томись 17–20 минут до полной мягкости без хрустящей корочки.",
+          "timer_sec": 1200
+        },
+        {
+          "text": "Шумовкой переложи овощи в дуршлаг, сохрани 15 мл масла. Взбей яйца с солью и осторожно смешай с тёплым картофелем.",
+          "timer_sec": 0
+        },
+        {
+          "text": "Вылей массу в небольшую сковороду диаметром 18 см с сохранённым маслом. Готовь на слабом огне 6–8 минут, пока края схватятся.",
+          "timer_sec": 480
+        },
+        {
+          "text": "Накрой плоской тарелкой, осторожно переверни, верни тортилью в сковороду и готовь ещё 3–5 минут до безопасно готовой середины.",
+          "timer_sec": 300
+        }
+      ],
+      "notes": "Подавай как цельную толстую тортилью, а не омлет с кубиками жареной картошки.",
+      "source_verification": {
+        "status": "country_cuisine_context_only_recipe_specific_check_pending",
+        "country_reference_url": "https://www.spain.info/es/receta/churros/"
+      },
+      "editorial_status": "complete_draft_pending_culinary_verification",
+      "photo_status": "deferred_by_user",
+      "publication_status": "unpublished"
+    },
+    {
+      "id": "breakfast-es-34",
+      "collection_number": 34,
+      "country": "Испания",
+      "country_code": "ES",
+      "title": "Майоркская энсаймада",
+      "original_name": "Ensaimada",
+      "servings": 2,
+      "total_min": 630,
+      "ingredients": [
+        {
+          "name": "Пшеничная мука",
+          "amount": 320,
+          "unit": "г"
+        },
+        {
+          "name": "Вода",
+          "amount": 135,
+          "unit": "мл"
+        },
+        {
+          "name": "Яйцо",
+          "amount": 1,
+          "unit": "шт."
+        },
+        {
+          "name": "Сахар",
+          "amount": 65,
+          "unit": "г"
+        },
+        {
+          "name": "Дрожжи сухие",
+          "amount": 5,
+          "unit": "г"
+        },
+        {
+          "name": "Смалец для растягивания",
+          "amount": 90,
+          "unit": "г"
+        },
+        {
+          "name": "Соль",
+          "amount": 3,
+          "unit": "г"
+        },
+        {
+          "name": "Сахарная пудра",
+          "amount": 20,
+          "unit": "г"
+        }
+      ],
+      "steps": [
+        {
+          "text": "Замеси из муки, воды, яйца, сахара, дрожжей и соли эластичное тесто, вымешивай 12–15 минут.",
+          "timer_sec": 900
+        },
+        {
+          "text": "Оставь тесто накрытым на 70–90 минут, пока оно заметно не поднимется.",
+          "timer_sec": 5400
+        },
+        {
+          "text": "Раздели на 2 части. Каждую раскатай очень тонким длинным прямоугольником, смажь мягким смальцем и растяни края до почти прозрачной толщины.",
+          "timer_sec": 0
+        },
+        {
+          "text": "Сверни пласт в длинный тонкий жгут, уложи свободной спиралью на противень, оставив расстояние между витками.",
+          "timer_sec": 0
+        },
+        {
+          "text": "Оставь расстаиваться 5–8 часов в прохладном месте без пересыхания, пока спирали сильно не увеличатся.",
+          "timer_sec": 28800
+        },
+        {
+          "text": "Выпекай при 180 °C 16–20 минут до золотистости, полностью остуди и присыпь сахарной пудрой.",
+          "timer_sec": 1200
+        }
+      ],
+      "notes": "Для традиционного типа используется смалец; замена маслом даёт другую текстуру.",
+      "source_verification": {
+        "status": "country_cuisine_context_only_recipe_specific_check_pending",
+        "country_reference_url": "https://www.spain.info/es/receta/churros/"
+      },
+      "editorial_status": "complete_draft_pending_culinary_verification",
+      "photo_status": "deferred_by_user",
+      "publication_status": "unpublished"
+    },
+    {
+      "id": "breakfast-es-35",
+      "collection_number": 35,
+      "country": "Испания",
+      "country_code": "ES",
+      "title": "Собаос - кантабрийские кексы",
+      "original_name": "Sobaos pasiegos",
+      "servings": 2,
+      "total_min": 45,
+      "ingredients": [
+        {
+          "name": "Масло сливочное",
+          "amount": 160,
+          "unit": "г"
+        },
+        {
+          "name": "Сахар",
+          "amount": 135,
+          "unit": "г"
+        },
+        {
+          "name": "Яйца",
+          "amount": 2,
+          "unit": "шт."
+        },
+        {
+          "name": "Пшеничная мука",
+          "amount": 160,
+          "unit": "г"
+        },
+        {
+          "name": "Разрыхлитель",
+          "amount": 5,
+          "unit": "г"
+        },
+        {
+          "name": "Лимонная цедра",
+          "amount": 3,
+          "unit": "г"
+        },
+        {
+          "name": "Соль",
+          "amount": 2,
+          "unit": "г"
+        }
+      ],
+      "steps": [
+        {
+          "text": "Согрей масло до мягкости. Взбей с сахаром и солью 3–4 минуты до воздушности.",
+          "timer_sec": 240
+        },
+        {
+          "text": "По одному вмешай яйца, затем лимонную цедру.",
+          "timer_sec": 0
+        },
+        {
+          "text": "Просей муку с разрыхлителем и осторожно вмешай, не взбивая долго.",
+          "timer_sec": 0
+        },
+        {
+          "text": "Распредели по 6 прямоугольным бумажным формочкам для собаос, наполняя на две трети.",
+          "timer_sec": 0
+        },
+        {
+          "text": "Выпекай при 180 °C 18–22 минуты до упругой середины и слегка румяной верхушки. Остуди 10 минут.",
+          "timer_sec": 1320
+        }
+      ],
+      "notes": "Собаос обычно пекут в широких низких бумажных формочках, а не высоких маффинных.",
+      "source_verification": {
+        "status": "country_cuisine_context_only_recipe_specific_check_pending",
+        "country_reference_url": "https://www.spain.info/es/receta/churros/"
+      },
+      "editorial_status": "complete_draft_pending_culinary_verification",
+      "photo_status": "deferred_by_user",
+      "publication_status": "unpublished"
+    },
+    {
+      "id": "breakfast-es-36",
+      "collection_number": 36,
+      "country": "Испания",
+      "country_code": "ES",
+      "title": "Магдаленас - испанские кексы",
+      "original_name": "Magdalenas",
+      "servings": 2,
+      "total_min": 70,
+      "ingredients": [
+        {
+          "name": "Пшеничная мука",
+          "amount": 180,
+          "unit": "г"
+        },
+        {
+          "name": "Яйца",
+          "amount": 2,
+          "unit": "шт."
+        },
+        {
+          "name": "Сахар",
+          "amount": 115,
+          "unit": "г"
+        },
+        {
+          "name": "Молоко",
+          "amount": 55,
+          "unit": "мл"
+        },
+        {
+          "name": "Растительное масло",
+          "amount": 90,
+          "unit": "мл"
+        },
+        {
+          "name": "Разрыхлитель",
+          "amount": 8,
+          "unit": "г"
+        },
+        {
+          "name": "Лимонная цедра",
+          "amount": 4,
+          "unit": "г"
+        },
+        {
+          "name": "Соль",
+          "amount": 2,
+          "unit": "г"
+        }
+      ],
+      "steps": [
+        {
+          "text": "Взбей яйца с сахаром и солью 4–5 минут до пышной светлой пены.",
+          "timer_sec": 300
+        },
+        {
+          "text": "Вмешай масло, молоко, лимонную цедру и затем просеянную муку с разрыхлителем.",
+          "timer_sec": 0
+        },
+        {
+          "text": "Накрой тесто и охлади 25–30 минут; это помогает подняться характерной верхушке.",
+          "timer_sec": 1800
+        },
+        {
+          "text": "Разложи тесто по 6–8 бумажным формочкам, наполняя на три четверти.",
+          "timer_sec": 0
+        },
+        {
+          "text": "Выпекай сначала 5 минут при 210 °C, затем 10–12 минут при 185 °C до сухой шпажки.",
+          "timer_sec": 1020
+        }
+      ],
+      "notes": "Верхушка должна быть слегка куполообразной, без крема.",
+      "source_verification": {
+        "status": "country_cuisine_context_only_recipe_specific_check_pending",
+        "country_reference_url": "https://www.spain.info/es/receta/churros/"
+      },
+      "editorial_status": "complete_draft_pending_culinary_verification",
+      "photo_status": "deferred_by_user",
+      "publication_status": "unpublished"
+    },
+    {
+      "id": "breakfast-es-37",
+      "collection_number": 37,
+      "country": "Испания",
+      "country_code": "ES",
+      "title": "Астурийские тонкие блинчики",
+      "original_name": "Frixuelos",
+      "servings": 2,
+      "total_min": 55,
+      "ingredients": [
+        {
+          "name": "Пшеничная мука",
+          "amount": 140,
+          "unit": "г"
+        },
+        {
+          "name": "Молоко",
+          "amount": 280,
+          "unit": "мл"
+        },
+        {
+          "name": "Яйца",
+          "amount": 2,
+          "unit": "шт."
+        },
+        {
+          "name": "Сахар",
+          "amount": 20,
+          "unit": "г"
+        },
+        {
+          "name": "Соль",
+          "amount": 2,
+          "unit": "г"
+        },
+        {
+          "name": "Лимонная цедра",
+          "amount": 3,
+          "unit": "г"
+        },
+        {
+          "name": "Сливочное масло",
+          "amount": 20,
+          "unit": "г"
+        }
+      ],
+      "steps": [
+        {
+          "text": "Смешай яйца, молоко, сахар, соль и цедру, постепенно вмешай муку до жидкого гладкого теста.",
+          "timer_sec": 0
+        },
+        {
+          "text": "Дай тесту отдохнуть 25 минут, затем при необходимости процеди через сито.",
+          "timer_sec": 1500
+        },
+        {
+          "text": "Смажь разогретую сковороду небольшим количеством масла и налей очень тонкий слой теста.",
+          "timer_sec": 0
+        },
+        {
+          "text": "Жарь около 50 секунд с одной стороны и 20–30 секунд с другой, повтори с оставшимся тестом.",
+          "timer_sec": 80
+        },
+        {
+          "text": "Посыпь готовые фриксуэлос небольшим количеством сахара из указанной нормы, сверни трубочками или треугольниками.",
+          "timer_sec": 0
+        }
+      ],
+      "notes": "Астурийские frixuelos тонкие и гибкие, не толстые блинчики.",
+      "source_verification": {
+        "status": "country_cuisine_context_only_recipe_specific_check_pending",
+        "country_reference_url": "https://www.spain.info/es/receta/churros/"
+      },
+      "editorial_status": "complete_draft_pending_culinary_verification",
+      "photo_status": "deferred_by_user",
+      "publication_status": "unpublished"
+    },
+    {
+      "id": "breakfast-es-38",
+      "collection_number": 38,
+      "country": "Испания",
+      "country_code": "ES",
+      "title": "Мольете с хамоном",
+      "original_name": "Mollete antequerano",
+      "servings": 2,
+      "total_min": 185,
+      "ingredients": [
+        {
+          "name": "Пшеничная мука",
+          "amount": 270,
+          "unit": "г"
+        },
+        {
+          "name": "Вода",
+          "amount": 160,
+          "unit": "мл"
+        },
+        {
+          "name": "Дрожжи сухие",
+          "amount": 4,
+          "unit": "г"
+        },
+        {
+          "name": "Соль",
+          "amount": 5,
+          "unit": "г"
+        },
+        {
+          "name": "Оливковое масло в тесто",
+          "amount": 12,
+          "unit": "мл"
+        },
+        {
+          "name": "Хамон серрано",
+          "amount": 70,
+          "unit": "г"
+        },
+        {
+          "name": "Помидоры",
+          "amount": 150,
+          "unit": "г"
+        },
+        {
+          "name": "Оливковое масло для подачи",
+          "amount": 15,
+          "unit": "мл"
+        }
+      ],
+      "steps": [
+        {
+          "text": "Замеси муку, воду, дрожжи, соль и масло в мягкое тесто 8 минут.",
+          "timer_sec": 480
+        },
+        {
+          "text": "Оставь подниматься 60–75 минут под крышкой.",
+          "timer_sec": 4500
+        },
+        {
+          "text": "Раздели на 4 части, сформуй продолговатые плоские булочки и дай подойти ещё 35–45 минут.",
+          "timer_sec": 2700
+        },
+        {
+          "text": "Присыпь поверхность мукой и выпекай при 200 °C 13–16 минут: мольете должны остаться бледными и мягкими, не пересушенными.",
+          "timer_sec": 960
+        },
+        {
+          "text": "Разрежь булочки, чуть подрумянь срезы, добавь натёртые помидоры, оливковое масло и тонкие ломтики хамона. Подавай сразу.",
+          "timer_sec": 0
+        }
+      ],
+      "notes": "Хамон должен лежать после разогрева хлеба, запекать его вместе с булочками не нужно.",
+      "source_verification": {
+        "status": "country_cuisine_context_only_recipe_specific_check_pending",
+        "country_reference_url": "https://www.spain.info/es/receta/churros/"
+      },
+      "editorial_status": "complete_draft_pending_culinary_verification",
+      "photo_status": "deferred_by_user",
+      "publication_status": "unpublished"
+    },
+    {
+      "id": "breakfast-es-39",
+      "collection_number": 39,
+      "country": "Испания",
+      "country_code": "ES",
+      "title": "Эстремадурские мигас",
+      "original_name": "Migas extremeñas",
+      "servings": 2,
+      "total_min": 30,
+      "ingredients": [
+        {
+          "name": "Черствый деревенский хлеб",
+          "amount": 240,
+          "unit": "г"
+        },
+        {
+          "name": "Вода",
+          "amount": 110,
+          "unit": "мл"
+        },
+        {
+          "name": "Чеснок",
+          "amount": 3,
+          "unit": "зубчик"
+        },
+        {
+          "name": "Чорисо",
+          "amount": 100,
+          "unit": "г"
+        },
+        {
+          "name": "Бекон",
+          "amount": 70,
+          "unit": "г"
+        },
+        {
+          "name": "Оливковое масло",
+          "amount": 30,
+          "unit": "мл"
+        },
+        {
+          "name": "Паприка сладкая",
+          "amount": 4,
+          "unit": "г"
+        },
+        {
+          "name": "Соль",
+          "amount": 2,
+          "unit": "г"
+        }
+      ],
+      "steps": [
+        {
+          "text": "Раскроши черствый хлеб небольшими кусками, равномерно сбрызни водой и накрой полотенцем на 15 минут.",
+          "timer_sec": 900
+        },
+        {
+          "text": "Нарежь чорисо и бекон, слегка раздави очищенный чеснок.",
+          "timer_sec": 0
+        },
+        {
+          "text": "В сковороде разогрей масло, обжарь чеснок, чорисо и бекон 4–5 минут до золотистости, вынь и сохрани жир.",
+          "timer_sec": 300
+        },
+        {
+          "text": "Всыпь влажный хлеб и паприку, жарь на среднем огне 8–10 минут, постоянно перемешивая, пока хлеб не станет отдельными рыхлыми золотистыми крошками.",
+          "timer_sec": 600
+        },
+        {
+          "text": "Верни мясные продукты, прогрей 1–2 минуты и подавай горячими.",
+          "timer_sec": 120
+        }
+      ],
+      "notes": "Мигас нельзя превращать в жареные кубики для салата; важна рыхлая текстура пропитанных хлебных крошек.",
+      "source_verification": {
+        "status": "country_cuisine_context_only_recipe_specific_check_pending",
+        "country_reference_url": "https://www.spain.info/es/receta/churros/"
+      },
+      "editorial_status": "complete_draft_pending_culinary_verification",
+      "photo_status": "deferred_by_user",
+      "publication_status": "unpublished"
+    },
+    {
+      "id": "breakfast-es-40",
+      "collection_number": 40,
+      "country": "Испания",
+      "country_code": "ES",
+      "title": "Йогуртовый бисквит",
+      "original_name": "Bizcocho de yogur",
+      "servings": 2,
+      "total_min": 70,
+      "ingredients": [
+        {
+          "name": "Йогурт натуральный",
+          "amount": 125,
+          "unit": "г"
+        },
+        {
+          "name": "Пшеничная мука",
+          "amount": 210,
+          "unit": "г"
+        },
+        {
+          "name": "Сахар",
+          "amount": 135,
+          "unit": "г"
+        },
+        {
+          "name": "Яйца",
+          "amount": 2,
+          "unit": "шт."
+        },
+        {
+          "name": "Растительное масло",
+          "amount": 75,
+          "unit": "мл"
+        },
+        {
+          "name": "Разрыхлитель",
+          "amount": 10,
+          "unit": "г"
+        },
+        {
+          "name": "Лимонная цедра",
+          "amount": 4,
+          "unit": "г"
+        },
+        {
+          "name": "Соль",
+          "amount": 2,
+          "unit": "г"
+        }
+      ],
+      "steps": [
+        {
+          "text": "Разогрей духовку до 175 °C. Смажь форму диаметром 18 см.",
+          "timer_sec": 0
+        },
+        {
+          "text": "Взбей яйца с сахаром и солью 3 минуты, добавь йогурт, масло и цедру.",
+          "timer_sec": 180
+        },
+        {
+          "text": "Просей муку с разрыхлителем и аккуратно вмешай до исчезновения сухих участков.",
+          "timer_sec": 0
+        },
+        {
+          "text": "Перелей в форму и выпекай 35–40 минут при 175 °C до сухой шпажки.",
+          "timer_sec": 2400
+        },
+        {
+          "text": "Остуди 15 минут в форме и затем на решётке. Подавай ломтиками.",
+          "timer_sec": 900
+        }
+      ],
+      "notes": "Классический домашний йогуртовый бисквит без кремовой пропитки.",
+      "source_verification": {
+        "status": "country_cuisine_context_only_recipe_specific_check_pending",
+        "country_reference_url": "https://www.spain.info/es/receta/churros/"
+      },
+      "editorial_status": "complete_draft_pending_culinary_verification",
+      "photo_status": "deferred_by_user",
+      "publication_status": "unpublished"
+    }
+  ]
+}
