@@ -202,7 +202,7 @@
 **Ссылки для рецептурной сверки:**
 1. https://www.maff.go.jp/e/policies/market/k_ryouri/search_menu/553/index.html
 2. https://recipin.jp/en/recipes/imoni
-3. https://www.fun-japan.jp/en/articles/13204
+3. https://www.umamiinfo.com/japaneseumami2/localcuisine/category-01/yamagata/imoni.html
 
 **Различия и оговорки:** Таро нельзя автоматически заменить картофелем; у морской прибрежной версии имони бывает свинина с мисо, здесь ямагатская говяжья версия.
 
