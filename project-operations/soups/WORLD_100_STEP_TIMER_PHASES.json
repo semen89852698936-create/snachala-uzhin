@@ -13,11 +13,11 @@
   "stats": {
     "recipes": 100,
     "steps": 504,
-    "phases": 294,
-    "timed_steps": 264,
-    "untimed_steps": 240,
-    "multiple_phases": 29,
-    "readiness_steps": 76,
+    "phases": 296,
+    "timed_steps": 265,
+    "untimed_steps": 239,
+    "multiple_phases": 30,
+    "readiness_steps": 75,
     "relative_time_steps": 11
   },
   "recipes": [
@@ -3423,14 +3423,14 @@
         },
         {
           "step": 2,
-          "step_text": "Нарежь лук, морковь и картофель мелко, прогрей лук с маслом 4–5 минут.",
+          "step_text": "Нарежь лук, морковь и картофель мелко. На половине масла прогрей лук 4–5 минут; остальное масло сохрани для мятно-папричной заправки.",
           "phases": [
             {
               "phase": 1,
               "quoted_duration": "4–5 минут",
               "min_seconds": 240,
               "max_seconds": 300,
-              "phase_text": "Нарежь лук, морковь и картофель мелко, прогрей лук с маслом 4–5 минут",
+              "phase_text": "На половине масла прогрей лук 4–5 минут",
               "start_mode": "MANUAL_START_AT_ACTION",
               "timer_approved": false,
               "can_auto_start": false
@@ -3555,21 +3555,21 @@
       "steps": [
         {
           "step": 1,
-          "step_text": "Промой рис, свари его в воде 15–18 минут до мягкости.",
+          "step_text": "Промой рис и вари в воде 15–25 минут в зависимости от сорта, пока зёрна полностью не размягчатся. Проверь рис на вкус, прежде чем добавлять йогуртовую смесь.",
           "phases": [
             {
               "phase": 1,
-              "quoted_duration": "15–18 минут",
+              "quoted_duration": "15–25 минут",
               "min_seconds": 900,
-              "max_seconds": 1080,
-              "phase_text": "Промой рис, свари его в воде 15–18 минут до мягкости",
+              "max_seconds": 1500,
+              "phase_text": "Промой рис и вари в воде 15–25 минут в зависимости от сорта, пока зёрна полностью не размягчатся",
               "start_mode": "MANUAL_START_AT_ACTION",
               "timer_approved": false,
               "can_auto_start": false
             }
           ],
-          "completion_condition": "CHECK_PRODUCT_READINESS",
-          "warning": "Ориентируйся не только на таймер: проверь готовность продукта.",
+          "completion_condition": "FOLLOW_WRITTEN_INSTRUCTION",
+          "warning": null,
           "editorial_status": "EXTRACTED_REQUIRES_CULINARY_CHECK"
         },
         {
@@ -3951,11 +3951,22 @@
         },
         {
           "step": 4,
-          "step_text": "Подлей в заправку горячий бульон по нескольку ложек, затем верни в кастрюлю, постоянно помешивая. Добавь мясо, прогрей на слабом огне до лёгкого загустения, не допускай свёртывания.",
-          "phases": [],
+          "step_text": "Подлей в заправку горячий бульон по нескольку ложек, затем верни в кастрюлю, постоянно помешивая. Добавь мясо и прогрей на слабом огне примерно 2–3 минуты до лёгкого загустения; не допускай бурного кипения и свёртывания.",
+          "phases": [
+            {
+              "phase": 1,
+              "quoted_duration": "2–3 минуты",
+              "min_seconds": 120,
+              "max_seconds": 180,
+              "phase_text": "Добавь мясо и прогрей на слабом огне примерно 2–3 минуты до лёгкого загустения",
+              "start_mode": "MANUAL_START_AT_ACTION",
+              "timer_approved": false,
+              "can_auto_start": false
+            }
+          ],
           "completion_condition": "FOLLOW_WRITTEN_INSTRUCTION",
           "warning": null,
-          "editorial_status": "NO_TIMER_SPECIFIED"
+          "editorial_status": "EXTRACTED_REQUIRES_CULINARY_CHECK"
         },
         {
           "step": 5,
@@ -4053,14 +4064,24 @@
         },
         {
           "step": 2,
-          "step_text": "В кипящем бульоне отвари лапшу 7–10 минут, затем добавь чечевицу.",
+          "step_text": "В кипящем бульоне отвари лапшу 7–10 минут, затем добавь варёную чечевицу и варёный нут, прогрей 3 минуты до горячего состояния.",
           "phases": [
             {
               "phase": 1,
               "quoted_duration": "7–10 минут",
               "min_seconds": 420,
               "max_seconds": 600,
-              "phase_text": "В кипящем бульоне отвари лапшу 7–10 минут, затем добавь чечевицу",
+              "phase_text": "В кипящем бульоне отвари лапшу 7–10 минут, затем добавь варёную чечевицу и варёный нут, прогрей 3 минуты до горячего состояния",
+              "start_mode": "MANUAL_START_AT_ACTION",
+              "timer_approved": false,
+              "can_auto_start": false
+            },
+            {
+              "phase": 2,
+              "quoted_duration": "3 минуты",
+              "min_seconds": 180,
+              "max_seconds": 180,
+              "phase_text": "В кипящем бульоне отвари лапшу 7–10 минут, затем добавь варёную чечевицу и варёный нут, прогрей 3 минуты до горячего состояния",
               "start_mode": "MANUAL_START_AT_ACTION",
               "timer_approved": false,
               "can_auto_start": false
