@@ -3212,12 +3212,6 @@
           "group": "Основное"
         },
         {
-          "name": "Огурец",
-          "amount": 120,
-          "unit": "г",
-          "group": "Основное"
-        },
-        {
           "name": "Яйцо",
           "amount": 1,
           "unit": "шт.",
@@ -3256,7 +3250,7 @@
         },
         {
           "title": "Нарежь",
-          "detail": "Помидоры, огурец и перец нарежь мелко, белок поруби.",
+          "detail": "Помидоры и зелёный перец нарежь мелко, белок поруби.",
           "timer": 0
         },
         {
@@ -3276,7 +3270,7 @@
       "tags": [
         "Испанская кухня"
       ],
-      "photoBrief": "Мелкие кубики красных томатов, зелёного перца, огурца и варёного белка, немного тунца в желтковой эмульсии; не гаспачо.",
+      "photoBrief": "Мелкие кубики красных томатов, зелёного перца и варёного белка, немного тунца в желтковой эмульсии; не гаспачо.",
       "photoStatus": "awaiting_original_photo_approval",
       "sourceReview": {
         "stage": "editorial_research",
@@ -3285,7 +3279,7 @@
           "https://www.degustajaen.es/recetas/pipirrana-jaen/",
           "https://www.hogarmania.com/cocina/recetas/ensaladas-verduras/pipirrana-jaen-35145.html"
         ],
-        "note": "Пропорции пересчитаны для двух порций"
+        "note": "Пропорции пересчитаны для двух порций\n2026-11-19: Canal Cocina Pipirrana de Jaén and official Degusta Jaén omit cucumber; Karlos Arguiñano recipe also includes tomato, green pepper, tuna, egg but not cucumber. The old cucumber ingredient and photo brief reflected a different generalized pipirrana variant. Removed cucumber to match Jaén-specific version."
       },
       "photo": null,
       "imagePublishingBlocked": true,
@@ -3465,10 +3459,10 @@
         "stage": "editorial_research",
         "sources": [
           "https://canalcocina.es/receta/trampo-mallorquin",
-          "https://www.recetasmallorquinas.es/2020/05/trampo-mallorquin.html",
+          "https://elpais.com/gastronomia/recetas/2018/07/11/receta/1531307233_747294.html",
           "https://diariodegastronomia.com/trampo-mallorquin-2/"
         ],
-        "note": "Пропорции пересчитаны для двух порций"
+        "note": "Пропорции пересчитаны для двух порций\n2026-11-19: El Comidista in El País describes classic mallorcan trempó tomato, green pepper, onion, olive oil and optional additions. Original recetasmallorquinas blocked by Google anti-bot."
       },
       "photo": null,
       "imagePublishingBlocked": true,
@@ -3672,11 +3666,11 @@
       "sourceReview": {
         "stage": "editorial_research",
         "sources": [
-          "https://www.catalunya.com/en/continguts/article/empedrat-26-1-1",
+          "https://www.consum.es/entrenosotros/empedrat-receta/",
           "https://www.gastroteca.cat/en/receptes/empedrat/",
-          "https://www.dia.es/recetas/receta/empedrat"
+          "https://www2.cruzroja.es/-/empedrat-ensalada-de-alubias-con-bacalao-sact-recs"
         ],
-        "note": "Empedrat подтверждён официальным Catalunya.com и Corpus de la Cuina Catalana на Gastroteca: отварная белая фасоль, вымоченная треска, томаты, лук, оливки, масло."
+        "note": "Empedrat подтверждён официальным Catalunya.com и Corpus de la Cuina Catalana на Gastroteca: отварная белая фасоль, вымоченная треска, томаты, лук, оливки, масло.\n2026-11-19: Supermarket Consum has direct detailed Empedrat: white beans, desalted cod, tomatoes, onion, peppers, black olives. Former Catalunya link returned only cookie banner with no ingredients.\n2026-11-19: Cruz Roja recipe explicitly has white beans, cod, fresh peppers, olives, onion and tomato; old Dia link redirected to generic recipe portal."
       },
       "photo": null,
       "imagePublishingBlocked": true,
@@ -3691,7 +3685,7 @@
       "title": "Каталонский шатó с ореховым соусом",
       "category": "salads",
       "cuisine": "Испания",
-      "minutes": 55,
+      "minutes": 70,
       "base": 2,
       "level": "Легко",
       "emoji": "🥗",
@@ -3767,8 +3761,8 @@
       "steps": [
         {
           "title": "Приготовь основу соуса",
-          "detail": "Размочи ньору в горячей воде около 15 минут; извлеки мякоть и измельчи её с орехами, чесноком и уксусом.",
-          "timer": 15
+          "detail": "Размочи сухую ньору в горячей воде не менее 30 минут; удали семена, извлеки мякоть и измельчи её с орехами, чесноком и уксусом. Если используешь уже готовую мякоть ньоры из банки, выдержка не нужна.",
+          "timer": 30
         },
         {
           "title": "Добавь масло",
@@ -3801,7 +3795,7 @@
           "https://www.rtve.es/television/20130826/plantilla-receta-espana-directo/743448.shtml",
           "https://www.cuina.cat/es/recetas/ensalada-xato_10182213_117.html"
         ],
-        "note": "Пропорции пересчитаны для двух порций"
+        "note": "Пропорции пересчитаны для двух порций\n2026-11-19: La Vanguardia Xató says 30min hot-water soaking for dried ñora, not previous 15min. Updated timer to 30min and total to 70min."
       },
       "photo": null,
       "imagePublishingBlocked": true,
@@ -3899,10 +3893,10 @@
         "stage": "editorial_research",
         "sources": [
           "https://www.spain.info/es/receta/esqueixada-bacalao/",
-          "https://www.viladecans.cat/es/recepta-esqueixada-de-bacalla",
+          "https://elpais.com/gastronomia/recetas/2023-09-08/esqueixada-la-ensalada-catalana-de-bacalao-y-tomate.html",
           "https://www.directoalpaladar.com/recetas-de-pescados-y-mariscos/esqueixada-bacalao-receta-ensalada-facil-deliciosa-para-dias-verano"
         ],
-        "note": "Классическая esqueixada соответствует испанскому туристическому порталу и муниципальному рецепту Viladecans; треску разрывают на волокна, подают с сырой нарезкой овощей.\n2026-11-19: replaced inaccessible third source with independent Directo al Paladar Esqueixada recipe; it identifies peppers as a permissible variant and shows torn desalinated cod with tomatoes and onion. The exact use of peppers is an editorial Catalan variant, not mandatory for every Esqueixada."
+        "note": "Классическая esqueixada соответствует испанскому туристическому порталу и муниципальному рецепту Viladecans; треску разрывают на волокна, подают с сырой нарезкой овощей.\n2026-11-19: replaced inaccessible third source with independent Directo al Paladar Esqueixada recipe; it identifies peppers as a permissible variant and shows torn desalinated cod with tomatoes and onion. The exact use of peppers is an editorial Catalan variant, not mandatory for every Esqueixada.\n2026-11-19: El País Esqueixada details cod shredded and desalted, tomato and black olives, with peppers and onion optional. Old Viladecans not accessible for audit."
       },
       "photo": null,
       "imagePublishingBlocked": true,
