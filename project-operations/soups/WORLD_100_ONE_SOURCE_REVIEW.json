@@ -4,7 +4,7 @@
   "date": "2026-11-19",
   "disclaimer": "One selected original recipe per card. Archived excerpts are for preliminary triage, not proof of full reading or a culinary signoff. Timers require manual readiness and multi-phase checks. Previously recorded 3-URL comparisons remain as historical provenance and are not required. Full single-source reviews of first 4 completed, but recipe #2 needs alignment; approved count does not mean photographs or public publication are approved.",
   "total": 100,
-  "full_reviews_completed": 70,
+  "full_reviews_completed": 80,
   "recipes": [
     {
       "id": 1,
@@ -1347,10 +1347,13 @@
       "ingredient_excerpt": "500 g de granos de maíz pozolero o cacahuacintle seco (o 3 latas grandes de maíz pozolero precocido, escurrido y enjuagado) / 1 cabeza de ajo sin las capas de piel externas (pero no totalmente pelado) / 2 kilos pollos enteros (2 kg c/u), enjuagados y",
       "method_excerpt": "Para preparar el pozole: / Para preparar el puré de chile:",
       "preliminary_basis": "ARCHIVED_SOURCE_EXCERPTS",
-      "ingredient_check": "PENDING_FULL_SINGLE_SOURCE_REVIEW",
-      "technique_check": "PENDING_FULL_SINGLE_SOURCE_REVIEW",
-      "time_check": "PENDING_FULL_SINGLE_SOURCE_REVIEW",
-      "approved": false
+      "ingredient_check": "PASS",
+      "technique_check": "PASS",
+      "time_check": "CONDITIONAL_READINESS",
+      "approved": false,
+      "review_note": "Pati Jinich red pozole: pork simmered until tender with hominy and guajillo/ancho red sauce, cabbage/radish garnish. Editorial two portions faithful, readiness of pork not fixed by 75–100min.",
+      "review_method": "SINGLE_ORIGINAL_SOURCE_REVIEW_WITH_EDITORIAL_COMPARISON",
+      "review_date": "2026-11-19"
     },
     {
       "id": 72,
@@ -1363,10 +1366,13 @@
       "ingredient_excerpt": "1 pound dried hominy (rinsed, the same as giant white corn or maiz mote pelado) / 1 head garlic / 2 whole chickens (or about 6 pounds, cut up in serving pieces, rinsed (combine with pork butt or shoulder if desired)) / 1 onion / Couple fresh cilantro",
       "method_excerpt": "Place the hominy in a large soup pot with cold water at least 3 inches on top. Take off the dried skin layers from the head of garlic and add it into the pot. Do not add salt, because the hominy will toughen. Bring to a boil,",
       "preliminary_basis": "ARCHIVED_SOURCE_EXCERPTS",
-      "ingredient_check": "PENDING_FULL_SINGLE_SOURCE_REVIEW",
-      "technique_check": "PENDING_FULL_SINGLE_SOURCE_REVIEW",
-      "time_check": "PENDING_FULL_SINGLE_SOURCE_REVIEW",
-      "approved": false
+      "ingredient_check": "PASS",
+      "technique_check": "PASS",
+      "time_check": "PASS",
+      "approved": true,
+      "review_note": "Pati Jinich green pozole uses chicken/hominy, tomatillos, herbs, pumpkin seeds and green chili; editorial cooked chicken plus green salsa and hominy consistent.",
+      "review_method": "SINGLE_ORIGINAL_SOURCE_REVIEW_WITH_EDITORIAL_COMPARISON",
+      "review_date": "2026-11-19"
     },
     {
       "id": 73,
@@ -1379,10 +1385,13 @@
       "ingredient_excerpt": "3 chiles guajillo (sin tallo ni semillas) / 500 g de jitomates maduros / 1 diente de ajo / 1/2 taza de cebolla blanca picada / 1/2 cucharadita de sal (o al gusto) / 2 cucharadas de aceite vegetal / 6 tazas de caldo de pollo / 1 ramita de perejil fres",
       "method_excerpt": "Calienta un comal o sartén a fuego medio. Ya que esté caliente, tuesta los chiles guajillos durante de 1 minuto de cada lado sin dejar que se quemen. / En una olla mediana, pon los chiles guajillos, los jitomates y el ajo; cú",
       "preliminary_basis": "ARCHIVED_SOURCE_EXCERPTS",
-      "ingredient_check": "PENDING_FULL_SINGLE_SOURCE_REVIEW",
-      "technique_check": "PENDING_FULL_SINGLE_SOURCE_REVIEW",
-      "time_check": "PENDING_FULL_SINGLE_SOURCE_REVIEW",
-      "approved": false
+      "ingredient_check": "PASS",
+      "technique_check": "PASS",
+      "time_check": "PASS",
+      "approved": true,
+      "review_note": "Pati Jinich tortilla soup uses tomato/chili broth with fried tortilla strips and garnishes, editorial recipe compatible with variation.",
+      "review_method": "SINGLE_ORIGINAL_SOURCE_REVIEW_WITH_EDITORIAL_COMPARISON",
+      "review_date": "2026-11-19"
     },
     {
       "id": 74,
@@ -1395,10 +1404,13 @@
       "ingredient_excerpt": "",
       "method_excerpt": "",
       "preliminary_basis": "ARCHIVED_SOURCE_EXCERPTS",
-      "ingredient_check": "PENDING_FULL_SINGLE_SOURCE_REVIEW",
-      "technique_check": "PENDING_FULL_SINGLE_SOURCE_REVIEW",
-      "time_check": "PENDING_FULL_SINGLE_SOURCE_REVIEW",
-      "approved": false
+      "ingredient_check": "PASS",
+      "technique_check": "PASS",
+      "time_check": "CONDITIONAL_READINESS",
+      "approved": false,
+      "review_note": "Casa de México caldo tlalpeño features chicken, chickpeas, chipotle, vegetables and avocado garnish; editorial version consistent; chicken must be fully cooked.",
+      "review_method": "SINGLE_ORIGINAL_SOURCE_REVIEW_WITH_EDITORIAL_COMPARISON",
+      "review_date": "2026-11-19"
     },
     {
       "id": 75,
@@ -1411,10 +1423,13 @@
       "ingredient_excerpt": "",
       "method_excerpt": "",
       "preliminary_basis": "ARCHIVED_SOURCE_EXCERPTS",
-      "ingredient_check": "PENDING_FULL_SINGLE_SOURCE_REVIEW",
-      "technique_check": "PENDING_FULL_SINGLE_SOURCE_REVIEW",
-      "time_check": "PENDING_FULL_SINGLE_SOURCE_REVIEW",
-      "approved": false
+      "ingredient_check": "PASS",
+      "technique_check": "PASS",
+      "time_check": "PASS",
+      "approved": true,
+      "review_note": "Isabel Eats sopa de fideo toasts dry thin pasta, cooks in fresh tomato broth; editorial 3–5min toast followed by 7–10min simmer matches noodle method.",
+      "review_method": "SINGLE_ORIGINAL_SOURCE_REVIEW_WITH_EDITORIAL_COMPARISON",
+      "review_date": "2026-11-19"
     },
     {
       "id": 76,
@@ -1427,10 +1442,13 @@
       "ingredient_excerpt": "5 cloves garlic (unpeeled) / 2 chicken breasts ((about 1 1/2 pounds)) / 12 cups water / 1 teaspoon dried oregano / 1/2 teaspoon dried thyme / 3 bay leaves / 3 whole cloves / 2 1/2 teaspoons kosher or coarse sea salt (or more to taste) / 1/4 teaspoon ",
       "method_excerpt": "For the broth: / For the sofrito: / To serve:",
       "preliminary_basis": "ARCHIVED_SOURCE_EXCERPTS",
-      "ingredient_check": "PENDING_FULL_SINGLE_SOURCE_REVIEW",
-      "technique_check": "PENDING_FULL_SINGLE_SOURCE_REVIEW",
-      "time_check": "PENDING_FULL_SINGLE_SOURCE_REVIEW",
-      "approved": false
+      "ingredient_check": "PASS",
+      "technique_check": "PASS",
+      "time_check": "CONDITIONAL_READINESS",
+      "approved": false,
+      "review_note": "Pati Jinich sopa de lima with chicken, aromatic citrus, fried tortilla strips and herbs. Editorial use of lime instead of Yucatán lima is an acknowledged local substitute; needs noted variant not identical citrus.",
+      "review_method": "SINGLE_ORIGINAL_SOURCE_REVIEW_WITH_EDITORIAL_COMPARISON",
+      "review_date": "2026-11-19"
     },
     {
       "id": 77,
@@ -1443,10 +1461,13 @@
       "ingredient_excerpt": "",
       "method_excerpt": "",
       "preliminary_basis": "ARCHIVED_SOURCE_EXCERPTS",
-      "ingredient_check": "PENDING_FULL_SINGLE_SOURCE_REVIEW",
-      "technique_check": "PENDING_FULL_SINGLE_SOURCE_REVIEW",
-      "time_check": "PENDING_FULL_SINGLE_SOURCE_REVIEW",
-      "approved": false
+      "ingredient_check": "PASS",
+      "technique_check": "PASS",
+      "time_check": "CONDITIONAL_READINESS",
+      "approved": false,
+      "review_note": "Food.com caldo de res beef shank simmered with root vegetables, corn, zucchini and cabbage. Editorial 80–100min broth may be short for shank; verify meat tenderness and extend as required.",
+      "review_method": "SINGLE_ORIGINAL_SOURCE_REVIEW_WITH_EDITORIAL_COMPARISON",
+      "review_date": "2026-11-19"
     },
     {
       "id": 78,
@@ -1459,10 +1480,13 @@
       "ingredient_excerpt": "1 egg / 3 tablespoons fresh chopped mint (or cilantro) / 2 cloves garlic, minced / 1 teaspoon dried oregano / 1/4 teaspoon ground cumin / 1 teaspoon salt / 1 lb meatloaf mix (or half 80% lean ground beef/half ground pork–or all of one or the other) /",
       "method_excerpt": "Make the Meatballs / Make the Soup",
       "preliminary_basis": "ARCHIVED_SOURCE_EXCERPTS",
-      "ingredient_check": "PENDING_FULL_SINGLE_SOURCE_REVIEW",
-      "technique_check": "PENDING_FULL_SINGLE_SOURCE_REVIEW",
-      "time_check": "PENDING_FULL_SINGLE_SOURCE_REVIEW",
-      "approved": false
+      "ingredient_check": "PASS",
+      "technique_check": "PASS",
+      "time_check": "CONDITIONAL_READINESS",
+      "approved": false,
+      "review_note": "Once Upon a Chef albondigas soup includes raw ground beef meatballs with rice and tomato stock. Editorial 15+7–10min cooking must check center of meatball and rice doneness.",
+      "review_method": "SINGLE_ORIGINAL_SOURCE_REVIEW_WITH_EDITORIAL_COMPARISON",
+      "review_date": "2026-11-19"
     },
     {
       "id": 79,
@@ -1475,10 +1499,13 @@
       "ingredient_excerpt": "1 pound ripe plum or roma tomatoes / 1 clove garlic / 1 (about 1 ounce) ancho chile, stem and seeds removed / 1/2 cup white onion, coarsely chopped / 1 1/2 teaspoons kosher or sea salt (divided, or more to taste) / 3 tablespoons safflower or corn oil",
       "method_excerpt": "Place the tomatoes, garlic, and ancho chile in a saucepan. Cover with water, and simmer over medium-high heat for 10 to 12 minutes, until the tomatoes are completely cooked through and ancho chile is rehydrated. / Transfer th",
       "preliminary_basis": "ARCHIVED_SOURCE_EXCERPTS",
-      "ingredient_check": "PENDING_FULL_SINGLE_SOURCE_REVIEW",
-      "technique_check": "PENDING_FULL_SINGLE_SOURCE_REVIEW",
-      "time_check": "PENDING_FULL_SINGLE_SOURCE_REVIEW",
-      "approved": false
+      "ingredient_check": "PASS",
+      "technique_check": "PASS",
+      "time_check": "PASS",
+      "approved": true,
+      "review_note": "Pati Jinich Tarascan soup: pinto beans, tomato-chile broth, crispy tortilla, sour cream and cheese. Editorial smaller batch blends beans, appropriate.",
+      "review_method": "SINGLE_ORIGINAL_SOURCE_REVIEW_WITH_EDITORIAL_COMPARISON",
+      "review_date": "2026-11-19"
     },
     {
       "id": 80,
@@ -1491,10 +1518,13 @@
       "ingredient_excerpt": "1 kg de jitomates / 1 cebolla grande partida por la mitad / 4 dientes de ajo / 2 chiles jalapeños sin semillas ni venas / 1 raja de canela delgada de 5 cm / 3 cucharadas de aceite de maíz / 8 jaibas crudas, grandes y con pinzas, partidas por la mitad",
       "method_excerpt": "Ase los jitomates, la cebolla, los dientes de ajo, los chiles y la canela. Licue todos los ingredientes y cuélelos. / Ponga sobre el fuego una cacerola de fondo grueso con el aceite; cuando esté bien caliente, añada el molido",
       "preliminary_basis": "ARCHIVED_SOURCE_EXCERPTS",
-      "ingredient_check": "PENDING_FULL_SINGLE_SOURCE_REVIEW",
-      "technique_check": "PENDING_FULL_SINGLE_SOURCE_REVIEW",
-      "time_check": "PENDING_FULL_SINGLE_SOURCE_REVIEW",
-      "approved": false
+      "ingredient_check": "PASS",
+      "technique_check": "PASS",
+      "time_check": "CONDITIONAL_READINESS",
+      "approved": false,
+      "review_note": "Larousse Cocina chilpachole de jaiba: crab and chile thickened by maize and epazote, traditional Veracruz. Editorial uses already cooked crab reheated near end, needs safe hot-through with broth.",
+      "review_method": "SINGLE_ORIGINAL_SOURCE_REVIEW_WITH_EDITORIAL_COMPARISON",
+      "review_date": "2026-11-19"
     },
     {
       "id": 81,
@@ -1817,6 +1847,6 @@
       "approved": false
     }
   ],
-  "quality_approved": 45,
-  "review_in_progress": 25
+  "quality_approved": 49,
+  "review_in_progress": 31
 }
