@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "checkedAt": "2026-11-19",
+  "batch": "historical-source-candidates-21-23",
+  "source": "photo-library/curated-images.json@main (updatedAt 2026-11-01)",
+  "currentEditorialStatus": "stale-historical-only",
+  "recipes": [
+    {
+      "n": 21,
+      "recipe_id": "collection-meat-01-03",
+      "source_page": "https://www.pexels.com/photo/meal-on-plate-23627781/",
+      "image_file_verified": false,
+      "visual_match_verified": false,
+      "license_currently_verified": false,
+      "owner_approved": false,
+      "reason": "Горчица и мёд не подтверждены; кандидат без файла"
+    },
+    {
+      "n": 22,
+      "recipe_id": "collection-meat-01-04",
+      "source_page": "https://www.pexels.com/photo/grilled-steak-with-rosemary-and-butter-sauce-36617211/",
+      "image_file_verified": false,
+      "visual_match_verified": false,
+      "license_currently_verified": false,
+      "owner_approved": false,
+      "reason": "Паприка не подтверждена; кандидат без файла"
+    },
+    {
+      "n": 23,
+      "recipe_id": "collection-meat-01-05",
+      "source_page": "https://www.pexels.com/photo/tasty-juicy-meat-19671313/",
+      "image_file_verified": false,
+      "visual_match_verified": false,
+      "license_currently_verified": false,
+      "owner_approved": false,
+      "reason": "Базилик не подтверждён; кандидат без файла"
+    }
+  ],
+  "notes": "Не заменять современные утверждённые фотографии историческими кандидатами. Номера исторического реестра не гарантируют совпадения с актуальным каталогом. Ссылки не являются фотографиями или подтверждениями лицензий."
+}
