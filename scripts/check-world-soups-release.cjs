@@ -33,9 +33,12 @@ const expectedTitles=[
 assert.deepEqual(Array.from(soups,x=>x.title),expectedTitles);
 for(const p of ['index.html','full-catalog/index.html']){
  const html=read(p);
- const match=html.match(/<script id="recipeData" type="application\\/json">([\\s\\S]*?)<\\/script>/);
- assert.ok(match, p+': embedded catalog missing');
- const data=JSON.parse(match[1]);
+ const startTag='<script id="recipeData" type="application/json">';
+ const start=html.indexOf(startTag);
+ assert.ok(start>=0,p+': embedded catalog missing');
+ const end=html.indexOf('</script>',start);
+ assert.ok(end>start,p+': embedded catalog not closed');
+ const data=JSON.parse(html.slice(start+startTag.length,end));
  assert.equal(data.length,801,p+': 901 original minus 100 soups must remain');
  assert.equal(data.filter(x=>x.category==='soup').length,0,p+': old soup records still exist');
  assert.equal(new Set(data.map(x=>x.id)).size,data.length,p+': old duplicate ID');
