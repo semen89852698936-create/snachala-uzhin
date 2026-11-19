@@ -1,0 +1,943 @@
+{
+  "project": "НАШ ВЕЧЕР",
+  "country": "Китай",
+  "collection": "100 завтраков мира",
+  "recipe_count": 10,
+  "is_published": false,
+  "verification_level": "complete editorial drafts, individual source review pending",
+  "recipes": [
+    {
+      "id": "breakfast-cn-91",
+      "collection_number": 91,
+      "country": "Китай",
+      "country_code": "CN",
+      "title": "Цзяньбин - уличный блин с начинкой",
+      "original_name": "Jiānbǐng guǒzi",
+      "servings": 2,
+      "total_min": 35,
+      "ingredients": [
+        {
+          "name": "Мука из маша",
+          "amount": 85,
+          "unit": "г"
+        },
+        {
+          "name": "Пшеничная мука",
+          "amount": 45,
+          "unit": "г"
+        },
+        {
+          "name": "Вода",
+          "amount": 245,
+          "unit": "мл"
+        },
+        {
+          "name": "Яйца",
+          "amount": 2,
+          "unit": "шт."
+        },
+        {
+          "name": "Хрустящие полоски жареного теста готовые",
+          "amount": 60,
+          "unit": "г"
+        },
+        {
+          "name": "Зелёный лук",
+          "amount": 35,
+          "unit": "г"
+        },
+        {
+          "name": "Кинза",
+          "amount": 20,
+          "unit": "г"
+        },
+        {
+          "name": "Сладкая бобовая паста тяньмяньцзян",
+          "amount": 35,
+          "unit": "г"
+        },
+        {
+          "name": "Соус чили",
+          "amount": 20,
+          "unit": "г"
+        },
+        {
+          "name": "Растительное масло",
+          "amount": 12,
+          "unit": "мл"
+        },
+        {
+          "name": "Кунжут",
+          "amount": 10,
+          "unit": "г"
+        }
+      ],
+      "steps": [
+        {
+          "text": "Венчиком смешай муку из маша, пшеничную муку и воду до жидкого однородного теста. Оставь на 15 минут.",
+          "timer_sec": 900
+        },
+        {
+          "text": "Очень хорошо разогрей плоскую антипригарную сковороду, смажь тонко маслом. Влей половину теста, сразу распредели скребком в тонкий широкий круг.",
+          "timer_sec": 0
+        },
+        {
+          "text": "Когда блин схватится, разбей на него одно яйцо и быстро размажь тонко по поверхности, посыпь половиной зелёного лука, кунжута и кинзы.",
+          "timer_sec": 120
+        },
+        {
+          "text": "Переверни, нанеси немного сладкой бобовой пасты и чили-соуса, положи хрустящие полоски теста, сложи блин конвертом.",
+          "timer_sec": 90
+        },
+        {
+          "text": "Повтори со второй порцией. Подавай сразу, сохраняя хруст внутри.",
+          "timer_sec": 0
+        }
+      ],
+      "notes": "В настоящем цзяньбине тонкий блин с яйцом обнимает хрустящую начинку; это не толстый омлет.",
+      "source_verification": {
+        "status": "regional_cuisine_source_checked_individual_recipe_pending",
+        "country_reference_url": "https://thewoksoflife.com/shanghai-breakfast-eat-like-local/"
+      },
+      "editorial_status": "complete_draft_pending_culinary_verification",
+      "photo_status": "deferred_by_user",
+      "publication_status": "unpublished"
+    },
+    {
+      "id": "breakfast-cn-92",
+      "collection_number": 92,
+      "country": "Китай",
+      "country_code": "CN",
+      "title": "Баоцзы со свининой",
+      "original_name": "Bāozi",
+      "servings": 2,
+      "total_min": 165,
+      "ingredients": [
+        {
+          "name": "Пшеничная мука",
+          "amount": 270,
+          "unit": "г"
+        },
+        {
+          "name": "Вода тёплая",
+          "amount": 140,
+          "unit": "мл"
+        },
+        {
+          "name": "Сухие дрожжи",
+          "amount": 4,
+          "unit": "г"
+        },
+        {
+          "name": "Сахар",
+          "amount": 15,
+          "unit": "г"
+        },
+        {
+          "name": "Растительное масло в тесто",
+          "amount": 10,
+          "unit": "мл"
+        },
+        {
+          "name": "Свиной фарш",
+          "amount": 210,
+          "unit": "г"
+        },
+        {
+          "name": "Пекинская капуста",
+          "amount": 120,
+          "unit": "г"
+        },
+        {
+          "name": "Имбирь",
+          "amount": 15,
+          "unit": "г"
+        },
+        {
+          "name": "Зелёный лук",
+          "amount": 25,
+          "unit": "г"
+        },
+        {
+          "name": "Соевый соус",
+          "amount": 25,
+          "unit": "мл"
+        },
+        {
+          "name": "Кунжутное масло",
+          "amount": 10,
+          "unit": "мл"
+        },
+        {
+          "name": "Соль",
+          "amount": 3,
+          "unit": "г"
+        }
+      ],
+      "steps": [
+        {
+          "text": "Замеси муку, воду, дрожжи, сахар и 10 мл масла в гладкое тесто 8–10 минут.",
+          "timer_sec": 600
+        },
+        {
+          "text": "Оставь на 60–75 минут до увеличения примерно вдвое.",
+          "timer_sec": 4500
+        },
+        {
+          "text": "Мелко нашинкуй капусту, посоли, через 10 минут отожми. Смешай со свиным фаршем, натёртым имбирём, зелёным луком, соевым соусом и кунжутным маслом.",
+          "timer_sec": 600
+        },
+        {
+          "text": "Раздели тесто на 6 шариков, раскатай круги с чуть более толстой серединой, разложи сырую начинку, собери складками и защипни верх.",
+          "timer_sec": 0
+        },
+        {
+          "text": "Расстой баоцзы на пергаменте 20 минут. Готовь на пару при умеренном кипении 15–18 минут до полной готовности фарша, не менее 71 °C внутри.",
+          "timer_sec": 1080
+        },
+        {
+          "text": "Выключи нагрев, оставь крышку закрытой 3 минуты, чтобы булочки не осели.",
+          "timer_sec": 180
+        }
+      ],
+      "notes": "Баоцзы на пару, не жареные пирожки. Фарш должен полностью приготовиться в центре.",
+      "source_verification": {
+        "status": "regional_cuisine_source_checked_individual_recipe_pending",
+        "country_reference_url": "https://thewoksoflife.com/shanghai-breakfast-eat-like-local/"
+      },
+      "editorial_status": "complete_draft_pending_culinary_verification",
+      "photo_status": "deferred_by_user",
+      "publication_status": "unpublished"
+    },
+    {
+      "id": "breakfast-cn-93",
+      "collection_number": 93,
+      "country": "Китай",
+      "country_code": "CN",
+      "title": "Чжоу - рисовая каша с курицей",
+      "original_name": "Zhōu / Congee",
+      "servings": 2,
+      "total_min": 75,
+      "ingredients": [
+        {
+          "name": "Круглозёрный рис",
+          "amount": 110,
+          "unit": "г"
+        },
+        {
+          "name": "Вода",
+          "amount": 1000,
+          "unit": "мл"
+        },
+        {
+          "name": "Куриное бедро без кости",
+          "amount": 230,
+          "unit": "г"
+        },
+        {
+          "name": "Имбирь",
+          "amount": 25,
+          "unit": "г"
+        },
+        {
+          "name": "Соевый соус",
+          "amount": 15,
+          "unit": "мл"
+        },
+        {
+          "name": "Зелёный лук",
+          "amount": 25,
+          "unit": "г"
+        },
+        {
+          "name": "Кунжутное масло",
+          "amount": 10,
+          "unit": "мл"
+        },
+        {
+          "name": "Соль",
+          "amount": 3,
+          "unit": "г"
+        },
+        {
+          "name": "Белый перец",
+          "amount": 2,
+          "unit": "г"
+        }
+      ],
+      "steps": [
+        {
+          "text": "Промой рис, переложи в кастрюлю с толстым дном, добавь воду и нарезанный тонкими пластинами имбирь.",
+          "timer_sec": 0
+        },
+        {
+          "text": "Доведи до кипения, убавь огонь и вари под неплотной крышкой 35–40 минут, периодически помешивая, пока зёрна не начнут распадаться.",
+          "timer_sec": 2400
+        },
+        {
+          "text": "Нарежь курицу тонкими небольшими кусочками, добавь в кашу и вари ещё 12–15 минут до полной готовности и температуры не ниже 74 °C.",
+          "timer_sec": 900
+        },
+        {
+          "text": "Приправь соевым соусом, солью и белым перцем; по необходимости добавь немного кипятка до жидкой шелковистой консистенции.",
+          "timer_sec": 0
+        },
+        {
+          "text": "Разложи в две миски, полей кунжутным маслом, добавь зелёный лук.",
+          "timer_sec": 0
+        }
+      ],
+      "notes": "Настоящая чжоу должна иметь почти кремовую текстуру разваренного риса, а не отдельные сухие зёрна.",
+      "source_verification": {
+        "status": "regional_cuisine_source_checked_individual_recipe_pending",
+        "country_reference_url": "https://thewoksoflife.com/shanghai-breakfast-eat-like-local/"
+      },
+      "editorial_status": "complete_draft_pending_culinary_verification",
+      "photo_status": "deferred_by_user",
+      "publication_status": "unpublished"
+    },
+    {
+      "id": "breakfast-cn-94",
+      "collection_number": 94,
+      "country": "Китай",
+      "country_code": "CN",
+      "title": "Ютяо с соевым молоком",
+      "original_name": "Yóutiáo + dòujiāng",
+      "servings": 2,
+      "total_min": 85,
+      "ingredients": [
+        {
+          "name": "Пшеничная мука",
+          "amount": 260,
+          "unit": "г"
+        },
+        {
+          "name": "Вода",
+          "amount": 155,
+          "unit": "мл"
+        },
+        {
+          "name": "Яйцо",
+          "amount": 1,
+          "unit": "шт."
+        },
+        {
+          "name": "Разрыхлитель",
+          "amount": 7,
+          "unit": "г"
+        },
+        {
+          "name": "Пищевая сода",
+          "amount": 2,
+          "unit": "г"
+        },
+        {
+          "name": "Соль",
+          "amount": 4,
+          "unit": "г"
+        },
+        {
+          "name": "Растительное масло в тесто",
+          "amount": 15,
+          "unit": "мл"
+        },
+        {
+          "name": "Растительное масло для фритюра",
+          "amount": 550,
+          "unit": "мл"
+        },
+        {
+          "name": "Соевое молоко готовое",
+          "amount": 500,
+          "unit": "мл"
+        },
+        {
+          "name": "Сахар для молока по желанию",
+          "amount": 20,
+          "unit": "г"
+        }
+      ],
+      "steps": [
+        {
+          "text": "Смешай муку с разрыхлителем, содой и солью. Введи воду, яйцо и 15 мл масла, замеси мягкое тесто до гладкости.",
+          "timer_sec": 0
+        },
+        {
+          "text": "Накрой тесто и оставь отдыхать 45 минут, затем раскатай прямоугольником толщиной около 1 см.",
+          "timer_sec": 2700
+        },
+        {
+          "text": "Нарежь длинные полоски шириной 2 см, складывай по две и прижимай посередине палочкой, чтобы они соединились.",
+          "timer_sec": 0
+        },
+        {
+          "text": "Разогрей фритюр до 180 °C. Слегка растяни полоски и опускай в масло осторожно; жарь 3–4 минуты до воздушного золотистого цвета, постоянно поворачивая.",
+          "timer_sec": 240
+        },
+        {
+          "text": "Слей лишнее масло на бумагу. Отдельно нагрей готовое соевое молоко без сильного кипения, при желании добавь сахар.",
+          "timer_sec": 180
+        },
+        {
+          "text": "Подавай хрустящие ютяо с тёплым соевым молоком.",
+          "timer_sec": 0
+        }
+      ],
+      "notes": "Это домашний вариант на разрыхлителе с готовым соевым молоком; в некоторых традиционных рецептах тесто выдерживают ночь.",
+      "source_verification": {
+        "status": "regional_cuisine_source_checked_individual_recipe_pending",
+        "country_reference_url": "https://thewoksoflife.com/shanghai-breakfast-eat-like-local/"
+      },
+      "editorial_status": "complete_draft_pending_culinary_verification",
+      "photo_status": "deferred_by_user",
+      "publication_status": "unpublished"
+    },
+    {
+      "id": "breakfast-cn-95",
+      "collection_number": 95,
+      "country": "Китай",
+      "country_code": "CN",
+      "title": "Цыфаньтуань - рисовый рулет",
+      "original_name": "Cífàntuán",
+      "servings": 2,
+      "total_min": 265,
+      "ingredients": [
+        {
+          "name": "Рис клейкий сухой",
+          "amount": 220,
+          "unit": "г"
+        },
+        {
+          "name": "Вода для замачивания",
+          "amount": 900,
+          "unit": "мл"
+        },
+        {
+          "name": "Ютяо готовые",
+          "amount": 2,
+          "unit": "шт."
+        },
+        {
+          "name": "Свинина сушёная волокнами rou song",
+          "amount": 70,
+          "unit": "г"
+        },
+        {
+          "name": "Овощи солёные чжацай",
+          "amount": 60,
+          "unit": "г"
+        },
+        {
+          "name": "Кунжут",
+          "amount": 15,
+          "unit": "г"
+        },
+        {
+          "name": "Сахар",
+          "amount": 6,
+          "unit": "г"
+        }
+      ],
+      "steps": [
+        {
+          "text": "Промой клейкий рис и замочи минимум на 3 часа, затем отцеди.",
+          "timer_sec": 10800
+        },
+        {
+          "text": "Равномерно разложи рис на ткани в пароварке и готовь на пару 25–30 минут до полностью мягких липких зёрен.",
+          "timer_sec": 1800
+        },
+        {
+          "text": "Нарежь чжацай очень мелко, если они слишком солёные, промой и отожми. Ютяо прогрей в духовке 3 минуты до хруста.",
+          "timer_sec": 180
+        },
+        {
+          "text": "На пищевой плёнке или бамбуковом коврике распредели половину тёплого клейкого риса прямоугольником.",
+          "timer_sec": 0
+        },
+        {
+          "text": "По центру положи ютяо, половину rou song, чжацай, немного кунжута и сахара. Плотно сверни в толстый рисовый рулет.",
+          "timer_sec": 0
+        },
+        {
+          "text": "Повтори со второй порцией, разрежь пополам только перед подачей.",
+          "timer_sec": 0
+        }
+      ],
+      "notes": "Китайский завтрак cи-фань: снаружи липкий рис, внутри хрустящий ютяо и солёные добавки.",
+      "source_verification": {
+        "status": "regional_cuisine_source_checked_individual_recipe_pending",
+        "country_reference_url": "https://thewoksoflife.com/shanghai-breakfast-eat-like-local/"
+      },
+      "editorial_status": "complete_draft_pending_culinary_verification",
+      "photo_status": "deferred_by_user",
+      "publication_status": "unpublished"
+    },
+    {
+      "id": "breakfast-cn-96",
+      "collection_number": 96,
+      "country": "Китай",
+      "country_code": "CN",
+      "title": "Лепёшки с зелёным луком",
+      "original_name": "Cōngyóubǐng",
+      "servings": 2,
+      "total_min": 70,
+      "ingredients": [
+        {
+          "name": "Пшеничная мука",
+          "amount": 250,
+          "unit": "г"
+        },
+        {
+          "name": "Горячая вода 80 °C",
+          "amount": 155,
+          "unit": "мл"
+        },
+        {
+          "name": "Соль",
+          "amount": 5,
+          "unit": "г"
+        },
+        {
+          "name": "Зелёный лук",
+          "amount": 90,
+          "unit": "г"
+        },
+        {
+          "name": "Кунжутное масло",
+          "amount": 25,
+          "unit": "мл"
+        },
+        {
+          "name": "Растительное масло для жарки",
+          "amount": 35,
+          "unit": "мл"
+        }
+      ],
+      "steps": [
+        {
+          "text": "Влей горячую воду в муку с солью, смешай ложкой, немного остуди и вымеси мягкое тесто около 5 минут.",
+          "timer_sec": 300
+        },
+        {
+          "text": "Оставь тесто закрытым на 25–30 минут, чтобы оно стало эластичным.",
+          "timer_sec": 1800
+        },
+        {
+          "text": "Раздели на 4 части, каждую раскатай очень тонко, смажь кунжутным маслом и густо посыпь мелко нарезанным зелёным луком.",
+          "timer_sec": 0
+        },
+        {
+          "text": "Сверни в плотный рулет, затем улиткой, заправь конец и раскатай в круглую лепёшку толщиной 4–5 мм.",
+          "timer_sec": 0
+        },
+        {
+          "text": "Жарь в небольшом количестве растительного масла на среднем огне по 3–4 минуты с каждой стороны до золотистой хрустящей корочки и приготовленных слоёв.",
+          "timer_sec": 480
+        },
+        {
+          "text": "Подавай горячими, разрезав на клинья.",
+          "timer_sec": 0
+        }
+      ],
+      "notes": "Слоистая лепёшка, не оладья с луком, вмешанным в жидкое тесто.",
+      "source_verification": {
+        "status": "regional_cuisine_source_checked_individual_recipe_pending",
+        "country_reference_url": "https://thewoksoflife.com/shanghai-breakfast-eat-like-local/"
+      },
+      "editorial_status": "complete_draft_pending_culinary_verification",
+      "photo_status": "deferred_by_user",
+      "publication_status": "unpublished"
+    },
+    {
+      "id": "breakfast-cn-97",
+      "collection_number": 97,
+      "country": "Китай",
+      "country_code": "CN",
+      "title": "Чёнфан с креветками",
+      "original_name": "Cheung fun",
+      "servings": 2,
+      "total_min": 65,
+      "ingredients": [
+        {
+          "name": "Рисовая мука",
+          "amount": 145,
+          "unit": "г"
+        },
+        {
+          "name": "Крахмал тапиоковый",
+          "amount": 45,
+          "unit": "г"
+        },
+        {
+          "name": "Вода",
+          "amount": 475,
+          "unit": "мл"
+        },
+        {
+          "name": "Креветки очищенные сырые",
+          "amount": 220,
+          "unit": "г"
+        },
+        {
+          "name": "Растительное масло",
+          "amount": 15,
+          "unit": "мл"
+        },
+        {
+          "name": "Соевый соус светлый",
+          "amount": 30,
+          "unit": "мл"
+        },
+        {
+          "name": "Вода для соуса",
+          "amount": 45,
+          "unit": "мл"
+        },
+        {
+          "name": "Сахар",
+          "amount": 12,
+          "unit": "г"
+        },
+        {
+          "name": "Кунжутное масло",
+          "amount": 7,
+          "unit": "мл"
+        },
+        {
+          "name": "Зелёный лук",
+          "amount": 15,
+          "unit": "г"
+        }
+      ],
+      "steps": [
+        {
+          "text": "Смешай рисовую муку, тапиоковый крахмал и воду до жидкого однородного теста, оставь на 15 минут.",
+          "timer_sec": 900
+        },
+        {
+          "text": "Креветки промой, обсуши и нарежь крупными кусочками, проверь отсутствие панцирей и кишечной жилки.",
+          "timer_sec": 0
+        },
+        {
+          "text": "Смажь неглубокий металлический лоток, налей тончайший слой теста, положи сверху несколько кусочков креветок.",
+          "timer_sec": 0
+        },
+        {
+          "text": "Поставь лоток в пароварку над кипящей водой, накрой крышкой и готовь 3–4 минуты до прозрачного упругого листа и полностью приготовленных креветок.",
+          "timer_sec": 240
+        },
+        {
+          "text": "Аккуратно сверни лист рулетом, переложи на блюдо. Повтори, получив 6–8 рисовых рулетиков.",
+          "timer_sec": 0
+        },
+        {
+          "text": "Смешай соевый соус, воду и сахар, прогрей 2 минуты, добавь кунжутное масло. Полей готовые чёнфан и посыпь зелёным луком.",
+          "timer_sec": 120
+        }
+      ],
+      "notes": "Рулетики должны состоять из нежной гладкой паровой рисовой оболочки, начинка из креветок внутри.",
+      "source_verification": {
+        "status": "regional_cuisine_source_checked_individual_recipe_pending",
+        "country_reference_url": "https://thewoksoflife.com/shanghai-breakfast-eat-like-local/"
+      },
+      "editorial_status": "complete_draft_pending_culinary_verification",
+      "photo_status": "deferred_by_user",
+      "publication_status": "unpublished"
+    },
+    {
+      "id": "breakfast-cn-98",
+      "collection_number": 98,
+      "country": "Китай",
+      "country_code": "CN",
+      "title": "Шэнцзянь-бао - жареные булочки",
+      "original_name": "Shēngjiānbāo",
+      "servings": 2,
+      "total_min": 220,
+      "ingredients": [
+        {
+          "name": "Пшеничная мука",
+          "amount": 280,
+          "unit": "г"
+        },
+        {
+          "name": "Вода в тесто",
+          "amount": 150,
+          "unit": "мл"
+        },
+        {
+          "name": "Сухие дрожжи",
+          "amount": 4,
+          "unit": "г"
+        },
+        {
+          "name": "Сахар",
+          "amount": 15,
+          "unit": "г"
+        },
+        {
+          "name": "Свиной фарш",
+          "amount": 210,
+          "unit": "г"
+        },
+        {
+          "name": "Зелёный лук",
+          "amount": 35,
+          "unit": "г"
+        },
+        {
+          "name": "Имбирь",
+          "amount": 15,
+          "unit": "г"
+        },
+        {
+          "name": "Соевый соус",
+          "amount": 20,
+          "unit": "мл"
+        },
+        {
+          "name": "Кунжутное масло",
+          "amount": 12,
+          "unit": "мл"
+        },
+        {
+          "name": "Куриный бульон охлаждённый",
+          "amount": 110,
+          "unit": "мл"
+        },
+        {
+          "name": "Желатин",
+          "amount": 5,
+          "unit": "г"
+        },
+        {
+          "name": "Растительное масло для жарки",
+          "amount": 25,
+          "unit": "мл"
+        },
+        {
+          "name": "Вода для сковороды",
+          "amount": 130,
+          "unit": "мл"
+        },
+        {
+          "name": "Кунжут",
+          "amount": 10,
+          "unit": "г"
+        }
+      ],
+      "steps": [
+        {
+          "text": "Замеси муку, 150 мл тёплой воды, дрожжи и сахар в мягкое тесто. Оставь подниматься примерно 60–75 минут.",
+          "timer_sec": 4500
+        },
+        {
+          "text": "Замочи желатин в части холодного бульона, распусти в остальном нагретом бульоне и охлади до плотного желе минимум 60 минут.",
+          "timer_sec": 3600
+        },
+        {
+          "text": "Смешай свиной фарш с мелко рубленым луком, имбирём, соевым соусом и кунжутным маслом. Холодное желе нарежь маленькими кубиками и добавь к фаршу.",
+          "timer_sec": 0
+        },
+        {
+          "text": "Раздели тесто на 8 кружков, положи начинку в центр, собери складками и очень тщательно защипни. Дай отдохнуть 15 минут.",
+          "timer_sec": 900
+        },
+        {
+          "text": "Нагрей масло в сковороде с крышкой. Уложи булочки швом вверх, обжаривай дно 2–3 минуты до румяной корочки.",
+          "timer_sec": 180
+        },
+        {
+          "text": "Осторожно влей 130 мл воды, сразу накрой крышкой и готовь на пару в сковороде 9–11 минут до готового фарша не ниже 71 °C.",
+          "timer_sec": 660
+        },
+        {
+          "text": "Сними крышку, дай остаткам влаги выпариться за 1–2 минуты, посыпь кунжутом и подай осторожно: внутри очень горячий бульон.",
+          "timer_sec": 120
+        }
+      ],
+      "notes": "Шэнцзянь-бао должны иметь хрустящее жареное дно, мягкую паровую верхушку и сочную начинку.",
+      "source_verification": {
+        "status": "regional_cuisine_source_checked_individual_recipe_pending",
+        "country_reference_url": "https://thewoksoflife.com/shanghai-breakfast-eat-like-local/"
+      },
+      "editorial_status": "complete_draft_pending_culinary_verification",
+      "photo_status": "deferred_by_user",
+      "publication_status": "unpublished"
+    },
+    {
+      "id": "breakfast-cn-99",
+      "collection_number": 99,
+      "country": "Китай",
+      "country_code": "CN",
+      "title": "Уханьская горячая сухая лапша",
+      "original_name": "Règānmiàn",
+      "servings": 2,
+      "total_min": 25,
+      "ingredients": [
+        {
+          "name": "Щелочная пшеничная лапша сухая",
+          "amount": 200,
+          "unit": "г"
+        },
+        {
+          "name": "Кунжутная паста",
+          "amount": 65,
+          "unit": "г"
+        },
+        {
+          "name": "Соевый соус светлый",
+          "amount": 25,
+          "unit": "мл"
+        },
+        {
+          "name": "Кунжутное масло",
+          "amount": 20,
+          "unit": "мл"
+        },
+        {
+          "name": "Маринованная редька",
+          "amount": 65,
+          "unit": "г"
+        },
+        {
+          "name": "Зелёный лук",
+          "amount": 25,
+          "unit": "г"
+        },
+        {
+          "name": "Чили-масло",
+          "amount": 12,
+          "unit": "мл"
+        },
+        {
+          "name": "Рисовый уксус",
+          "amount": 15,
+          "unit": "мл"
+        },
+        {
+          "name": "Вода горячая для соуса",
+          "amount": 55,
+          "unit": "мл"
+        }
+      ],
+      "steps": [
+        {
+          "text": "Отвари щелочную пшеничную лапшу по инструкции, обычно 4–6 минут, до упругого состояния.",
+          "timer_sec": 360
+        },
+        {
+          "text": "Слей воду, сбрызни лапшу половиной кунжутного масла и перемешай, чтобы она не слиплась.",
+          "timer_sec": 0
+        },
+        {
+          "text": "Смешай кунжутную пасту с соевым соусом, оставшимся кунжутным маслом, уксусом, чили-маслом и горячей водой до гладкой текучей консистенции.",
+          "timer_sec": 0
+        },
+        {
+          "text": "Если лапша остыла, быстро прогрей её в кипятке 20–30 секунд и хорошо отцеди.",
+          "timer_sec": 30
+        },
+        {
+          "text": "Разложи лапшу по мискам, добавь кунжутный соус, мелко нарезанную маринованную редьку и зелёный лук. Перемешай прямо перед едой.",
+          "timer_sec": 0
+        }
+      ],
+      "notes": "Название «сухая лапша» означает отсутствие супового бульона; лапша покрыта густым кунжутным соусом.",
+      "source_verification": {
+        "status": "regional_cuisine_source_checked_individual_recipe_pending",
+        "country_reference_url": "https://thewoksoflife.com/shanghai-breakfast-eat-like-local/"
+      },
+      "editorial_status": "complete_draft_pending_culinary_verification",
+      "photo_status": "deferred_by_user",
+      "publication_status": "unpublished"
+    },
+    {
+      "id": "breakfast-cn-100",
+      "collection_number": 100,
+      "country": "Китай",
+      "country_code": "CN",
+      "title": "Солёный доухуа - нежный тофу с приправами",
+      "original_name": "Xián dòuhuā",
+      "servings": 2,
+      "total_min": 20,
+      "ingredients": [
+        {
+          "name": "Тофу шёлковый мягкий готовый",
+          "amount": 420,
+          "unit": "г"
+        },
+        {
+          "name": "Маринованная горчица чжацай",
+          "amount": 55,
+          "unit": "г"
+        },
+        {
+          "name": "Зелёный лук",
+          "amount": 20,
+          "unit": "г"
+        },
+        {
+          "name": "Соевый соус",
+          "amount": 25,
+          "unit": "мл"
+        },
+        {
+          "name": "Рисовый уксус",
+          "amount": 15,
+          "unit": "мл"
+        },
+        {
+          "name": "Чили-масло",
+          "amount": 12,
+          "unit": "мл"
+        },
+        {
+          "name": "Кунжут",
+          "amount": 10,
+          "unit": "г"
+        },
+        {
+          "name": "Сушёные мелкие креветки",
+          "amount": 20,
+          "unit": "г"
+        },
+        {
+          "name": "Вода для прогревания",
+          "amount": 400,
+          "unit": "мл"
+        }
+      ],
+      "steps": [
+        {
+          "text": "Сушёные креветки замочи в горячей воде на 5 минут, слей, быстро прогрей в небольшом количестве кипящей воды ещё 2–3 минуты.",
+          "timer_sec": 480
+        },
+        {
+          "text": "Нарежь маринованную горчицу очень мелко, зелёный лук тонкими колечками.",
+          "timer_sec": 0
+        },
+        {
+          "text": "Шёлковый тофу аккуратно переложи большой ложкой в две жаропрочные миски, сохранив нежные пласты.",
+          "timer_sec": 0
+        },
+        {
+          "text": "Поставь миски в пароварку на 4–5 минут или прогрей тофу в очень горячей воде, не давая ему развалиться.",
+          "timer_sec": 300
+        },
+        {
+          "text": "Смешай соевый соус и уксус, полей тёплый тофу. Добавь чжацай, креветки, чили-масло, кунжут и зелёный лук.",
+          "timer_sec": 0
+        }
+      ],
+      "notes": "Это домашняя сервировка готового мягкого тофу в стиле солёного доухуа; приготовление самого соевого творога из соевого молока здесь не заявлено.",
+      "source_verification": {
+        "status": "regional_cuisine_source_checked_individual_recipe_pending",
+        "country_reference_url": "https://thewoksoflife.com/shanghai-breakfast-eat-like-local/"
+      },
+      "editorial_status": "complete_draft_pending_culinary_verification",
+      "photo_status": "deferred_by_user",
+      "publication_status": "unpublished"
+    }
+  ]
+}
