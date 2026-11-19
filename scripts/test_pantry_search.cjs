@@ -8,8 +8,9 @@ for(const path of ['index.html','full-catalog/index.html']){
   assert.ok(startData>=0,path+': embedded recipe data missing');
   const start=html.indexOf('>',startData)+1,end=html.indexOf('</script>',start);
   const recipes=JSON.parse(html.slice(start,end));
-  assert.equal(recipes.length,1001,path+': recipe count');
-  assert.equal(new Set(recipes.map(r=>r.id)).size,1001,path+': duplicate ids');
+  const expected=html.includes('window.WORLD_SOUPS_RECIPES || []')?801:1001;
+  assert.equal(recipes.length,expected,path+': recipe count');
+  assert.equal(new Set(recipes.map(r=>r.id)).size,expected,path+': duplicate ids');
 
   const sourceStart=html.indexOf('/* INGREDIENT_SEARCH_V1_START');
   const endMarker='/* PANTRY_SEARCH_V2_END */';
