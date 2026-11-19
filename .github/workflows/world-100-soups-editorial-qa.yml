@@ -25,6 +25,8 @@ jobs:
         run: |
           node project-operations/soups/build-world-step-timers.cjs
           git diff --exit-code -- project-operations/soups/WORLD_100_STEP_TIMER_PHASES.json
+      - name: Check all 100 independent-source editorial records and timer signoff boundaries
+        run: node project-operations/soups/verify-world-editorial-evidence.cjs
       - name: Build standalone 100-soup editorial preview
         run: node project-operations/soups/build-world-100.cjs
       - name: Upload the 100-soup HTML preview
