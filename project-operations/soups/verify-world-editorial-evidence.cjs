@@ -5,7 +5,9 @@ const fs=require('node:fs'),path=require('node:path');
 const dir=__dirname;
 const data=JSON.parse(fs.readFileSync(path.join(dir,'WORLD_100_RECIPES.json'),'utf8'));
 const timer=JSON.parse(fs.readFileSync(path.join(dir,'WORLD_100_STEP_TIMER_PHASES.json'),'utf8'));
+const single=JSON.parse(fs.readFileSync(path.join(dir,'WORLD_100_ONE_SOURCE_REVIEW.json'),'utf8'));
 const errors=[];
+if(single.policy!=='ONE_SOURCE_PER_RECIPE'||single.recipes?.length!==100)errors.push('Need 100 selected single-source reviews');
 const recipes=data.recipes;
 if(recipes.length!==100)errors.push('Need 100 recipes');
 if(timer.recipes.length!==100)errors.push('Need 100 timer records');
@@ -13,13 +15,15 @@ let sources=0,steps=0,phases=0;
 for(const [i,r] of recipes.entries()){
  if(r.id!==i+1)errors.push('Wrong ID '+r.id);
  const evidence=r.source_content_evidence;
- if(!['THREE_SOURCE_COMPARISON_DOCUMENTED','TWO_FULL_SOURCES_THIRD_INDEX_ONLY'].includes(r.recipe_source_audit_status))errors.push('#'+r.id+' no documented source comparison status');
+ const selected=single.recipes[i];
+ if(!selected||selected.id!==r.id||!r.recipe_sources.includes(selected.url)||!selected.source_title)errors.push('#'+r.id+' no selected original source');
+ if(selected?.approved && (selected.ingredient_check!=='PASS'||selected.technique_check!=='PASS'||selected.time_check!=='PASS'))errors.push('#'+r.id+' falsely approved');
  if(!evidence||!evidence.ingredients_comparison||!evidence.technique_and_timer_comparison||evidence.sources?.length!==3)errors.push('#'+r.id+' missing comparison');
  else for(let j=0;j<3;j++){
   const e=evidence.sources[j];
   if(!e.url||!e.difference||e.url!==r.recipe_sources[j])errors.push('#'+r.id+' source '+(j+1)+' missing or mismatched');
  }
- if(r.recipe_sources.length!==3||new Set(r.recipe_sources.map(x=>x.split('/')[2].replace(/^www\./,''))).size!==3)errors.push('#'+r.id+' missing independent domains');
+ if(!r.recipe_sources.length)errors.push('#'+r.id+' missing source');
  const t=timer.recipes[i];
  if(!t||t.id!==r.id||t.steps.length!==r.steps.length)errors.push('#'+r.id+' timers missing');
  else for(const [j,s] of r.steps.entries()){
@@ -35,4 +39,4 @@ for(const [i,r] of recipes.entries()){
 }
 if(sources!==300||steps!==504||phases!==timer.stats.phases)errors.push('Unexpected totals '+[sources,steps,phases].join('/'));
 if(errors.length){console.error(errors.join('\n'));process.exit(1)}
-console.log('PASS: 100 recipe comparison records, 300 linked citations, 504 synchronized cooking steps, '+phases+' unapproved timer proposals. Source full-text certification is a separate outstanding step.');
+console.log('PASS: 100 selected single-source records, legacy 300 provenance links, 504 synchronized cooking steps, '+phases+' unapproved timer proposals. Source full-text certification is a separate outstanding step.');
