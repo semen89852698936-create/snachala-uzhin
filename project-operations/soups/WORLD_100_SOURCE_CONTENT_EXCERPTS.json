@@ -1,10 +1,9 @@
 {
   "project": "НАШ ВЕЧЕР",
-  "run_id": 44432634897,
-  "status": "SOURCE_EXCERPT_CAPTURE_NOT_FULL_VALIDATION",
-  "caution": "Titles, small public excerpts and availability are for editorial comparison. The presence of a recipe schema is NOT human verification; all 300 source texts require comparison before accepting 100 recipes.",
-  "source_ref_match_count": 300,
-  "total": 300,
+  "run_id": 44438543042,
+  "status": "300_SOURCE_EXCERPTS_AND_WEB_RECOVERY_NO_FULL_TEXT_CERTIFICATION",
+  "caution": "Public recipe excerpts and HTTP status are a useful QA instrument; comparisons in recipes may rely on excerpts. This does not prove complete independent verification of 300 external publications.",
+  "source_count": 300,
   "records": [
     {
       "id": 1,
@@ -16,19 +15,21 @@
       "ingredient_count": 15,
       "ingredient_excerpt": "Грудинка говяжья на кости / Сало / Лук репчатый / Свекла / Картофель / Морковь / Капуста белокочанная / Чеснок / Петрушка / Томатная паста / Уксус яблочный 6% / Лавровый лист / Сахар-песок / Перец чёрный молотый / Сметана 10% (нежирная)",
       "method_excerpt": "Приготовьте бульон для классического борща. Грудинку положите в&nbsp;кастрюлю объемом 5&nbsp;л, полностью залейте хо­лодной водой, поставьте на средний огонь. Снимите пену, уменьшите огонь, до­бавь­те 1&nbsp;ч. л. соли и&nbsp",
-      "content_review_status": "UNREVIEWED_REQUIRES_MANUAL_CULINARY_COMPARISON"
+      "web_access_note": "GITHUB_FETCHED",
+      "content_review_status": "SOURCE_COMPARISON_RECORDED_FULL_TEXT_NOT_CERTIFIED"
     },
     {
       "id": 1,
       "source_position": 2,
-      "url": "https://openkitchen.eda.yandex/article/dishes/recipes/borsch-po-klassicheskomu-retseptu",
+      "url": "https://food.ru/recipes/188835-vkusnyi-borshch-s-goviadinoi",
       "availability": "FETCHED_UNREVIEWED",
-      "title": "борщ по классическому рецепту: пошаговый рецепт с фото и калорийностью — открытая кухня",
-      "recipe_schema_found": false,
-      "ingredient_count": 0,
-      "ingredient_excerpt": "",
-      "method_excerpt": "",
-      "content_review_status": "UNREVIEWED_REQUIRES_MANUAL_CULINARY_COMPARISON"
+      "title": "Классический борщ с говядиной",
+      "recipe_schema_found": true,
+      "ingredient_count": 15,
+      "ingredient_excerpt": "Говядина 200 г / Белокочанная капуста 150 г / Картофель 120 г / Морковь 70 г / Свекла 200 г / Репчатый лук 60 г / Чеснок 1 зубчик = 5 г / Томатная паста 50 г / Растительное масло 15 мл = 15 г / Лавровый лист 1 шт. = 1 г / Столовый уксус 9% 5 мл = 5 г",
+      "method_excerpt": "Кусок говядины ополосните и обсушите чистым полотенцем. Очистите от кожуры и шелухи, затем помойте картофель, морковь, свеклу, лук и чеснок. Снимите с капусты темные и поврежденные листья, хорошо ее промойте и дайте обсохнуть",
+      "web_access_note": "GITHUB_FETCHED",
+      "content_review_status": "SOURCE_COMPARISON_RECORDED_FULL_TEXT_NOT_CERTIFIED"
     },
     {
       "id": 1,
@@ -40,7 +41,8 @@
       "ingredient_count": 14,
       "ingredient_excerpt": "говядина на кости - 500 г / свекла - 1 шт. / морковь - 1 шт. / картофель - 3 шт. / лук репчатый - 1 шт. / капуста белокочанная - 300 г / томатная паста - 2 ст. л. / соль - по вкусу / перец черный молотый - по вкусу / лавровый лист - 2 шт. / уксус 9% ",
       "method_excerpt": "Бульон. Поместите говядину в кастрюлю с 2 литрами воды и доведите до кипения. Снимите пену, добавьте лавровый лист и немного соли. Варите на слабом огне 1&ndash;1.5 часа. / Подготовка овощей. Свёклу натрите на крупной тёрке, ",
-      "content_review_status": "UNREVIEWED_REQUIRES_MANUAL_CULINARY_COMPARISON"
+      "web_access_note": "GITHUB_FETCHED",
+      "content_review_status": "SOURCE_COMPARISON_RECORDED_FULL_TEXT_NOT_CERTIFIED"
     },
     {
       "id": 2,
@@ -52,7 +54,8 @@
       "ingredient_count": 10,
       "ingredient_excerpt": "1,5–2 кг говяжьих костей с небольшим количеством мяса / 400 г копченой свиной грудинки, можно с косточками / 1,2 кг квашеной капусты (лучше без моркови) / 3 средние луковицы / 1 средняя морковка / 1 средний корень сельдерея / средний пучок петрушки /",
       "method_excerpt": "Для бульона порубить кости на небольшие куски, сложить в кастрюлю, залить 3 л холодной воды, довести до кипения, убавить огонь, снять всю пену. Добавить разрезанную пополам неочищенную 1 луковицу и морковку, лавровый лист, ст",
-      "content_review_status": "UNREVIEWED_REQUIRES_MANUAL_CULINARY_COMPARISON"
+      "web_access_note": "GITHUB_FETCHED",
+      "content_review_status": "SOURCE_COMPARISON_RECORDED_FULL_TEXT_NOT_CERTIFIED"
     },
     {
       "id": 2,
@@ -64,7 +67,8 @@
       "ingredient_count": 11,
       "ingredient_excerpt": "Говядина на кости 800–900 г / Вода 3 300 мл / Лук 2 штуки / Морковь 2 штуки / Квашеная капуста 800–900 г / Масло растительное 2 ст. ложки / Картошка 3–4 штуки / Лаврушка 2 штуки / Соль по вкусу / Перец чёрный молотый по вкусу / Чеснок 3–4 зубчика",
       "method_excerpt": "Говядину залейте прохладной водой, чтобы покрыть полностью. Доведите до кипения, проварите 2–3 минуты и слейте жидкость. Ополосните мясо и кастрюлю. / Залейте говядину тремя литрами прохладной воды. После закипания удалите пе",
-      "content_review_status": "UNREVIEWED_REQUIRES_MANUAL_CULINARY_COMPARISON"
+      "web_access_note": "GITHUB_FETCHED",
+      "content_review_status": "SOURCE_COMPARISON_RECORDED_FULL_TEXT_NOT_CERTIFIED"
     },
     {
       "id": 2,
@@ -76,7 +80,8 @@
       "ingredient_count": 0,
       "ingredient_excerpt": "",
       "method_excerpt": "",
-      "content_review_status": "UNREVIEWED_REQUIRES_MANUAL_CULINARY_COMPARISON"
+      "web_access_note": "GITHUB_FETCHED",
+      "content_review_status": "SOURCE_COMPARISON_RECORDED_FULL_TEXT_NOT_CERTIFIED"
     },
     {
       "id": 3,
@@ -88,7 +93,8 @@
       "ingredient_count": 0,
       "ingredient_excerpt": "",
       "method_excerpt": "",
-      "content_review_status": "UNREVIEWED_REQUIRES_MANUAL_CULINARY_COMPARISON"
+      "web_access_note": "GITHUB_FETCHED",
+      "content_review_status": "SOURCE_COMPARISON_RECORDED_FULL_TEXT_NOT_CERTIFIED"
     },
     {
       "id": 3,
@@ -100,7 +106,8 @@
       "ingredient_count": 15,
       "ingredient_excerpt": "Говядина / Вода / Картофель / Огурец солёный / Лук репчатый / Морковь / Перловая крупа / Масло топлёное / Лавровый лист / Перец чёрный горошек / Соль / Перец чёрный молотый / Сметана 25% (классическая) / Укроп / Петрушка",
       "method_excerpt": "Перловку промойте 5–6 раз и залейте 300 мл горячей воды. Оставьте на 1 час. / Поставьте варить бульон, залив говядину 3-мя литрами воды. / Когда бульон закипит, снимите пену и убавьте огонь до минимального. Варите на медленно",
-      "content_review_status": "UNREVIEWED_REQUIRES_MANUAL_CULINARY_COMPARISON"
+      "web_access_note": "GITHUB_FETCHED",
+      "content_review_status": "SOURCE_COMPARISON_RECORDED_FULL_TEXT_NOT_CERTIFIED"
     },
     {
       "id": 3,
@@ -112,7 +119,8 @@
       "ingredient_count": 0,
       "ingredient_excerpt": "",
       "method_excerpt": "",
-      "content_review_status": "UNREVIEWED_REQUIRES_MANUAL_CULINARY_COMPARISON"
+      "web_access_note": "GITHUB_FETCHED",
+      "content_review_status": "SOURCE_COMPARISON_RECORDED_FULL_TEXT_NOT_CERTIFIED"
     },
     {
       "id": 4,
@@ -124,19 +132,21 @@
       "ingredient_count": 16,
       "ingredient_excerpt": "Говяжьи кости / Говядина / Морковь / Лук репчатый / Масло сливочное / Мука пшеничная / Томатная паста / Огурец солёный / Каперсы / Колбаски охотничьи / Лимонный сок / Лавровый лист / Оливки / Ветчина / Перец чёрный горошек / Сметана 20% (средней жирн",
       "method_excerpt": "Приготовьте бульон для сборной солянки. Мясо и кости промыть, положить в кастрюлю, залить 2 л холодной воды и довести до кипения. Снять пену, добавить очищенные морковь и луковицу, варить 1,5 ч. / Оставшуюся луковицу очистить",
-      "content_review_status": "UNREVIEWED_REQUIRES_MANUAL_CULINARY_COMPARISON"
+      "web_access_note": "GITHUB_FETCHED",
+      "content_review_status": "SOURCE_COMPARISON_RECORDED_FULL_TEXT_NOT_CERTIFIED"
     },
     {
       "id": 4,
       "source_position": 2,
-      "url": "https://openkitchen.eda.yandex/article/dishes/recipes/solyanka-myasnaya-sbornaya",
+      "url": "https://ecoferma.spb.ru/receipts/solyanka_sbornaya_myasnaya/",
       "availability": "FETCHED_UNREVIEWED",
-      "title": "",
-      "recipe_schema_found": false,
-      "ingredient_count": 0,
-      "ingredient_excerpt": "",
-      "method_excerpt": "",
-      "content_review_status": "UNREVIEWED_REQUIRES_MANUAL_CULINARY_COMPARISON"
+      "title": "Солянка сборная мясная",
+      "recipe_schema_found": true,
+      "ingredient_count": 20,
+      "ingredient_excerpt": "Говядина на кости или рёбрышки 700 г / Масло сливочное 30 г / Маслины без косточек 100 г / Сметана для подачи / Вода 3 л / Колбаса копченая 150 г / Ветчина 150 г / Грудинка варено-копченая 150 г / Сосиски 3 шт. / Огурцы соленые 4 шт. / Огуречный расс",
+      "method_excerpt": "Промойте говядину на кости, залейте 3 л холодной воды и доведите до кипения. Снимите пену, убавьте огонь и варите бульон под крышкой полтора часа, пока мясо не станет мягким. За 10 минут до конца положите лавровый лист и пере",
+      "web_access_note": "GITHUB_FETCHED",
+      "content_review_status": "SOURCE_COMPARISON_RECORDED_FULL_TEXT_NOT_CERTIFIED"
     },
     {
       "id": 4,
@@ -148,7 +158,8 @@
       "ingredient_count": 16,
       "ingredient_excerpt": "говядина на кости - 300 г / колбаса копченая - 100 г / ветчина - 100 г / сосиски - 100 г / огурцы соленые - 3 шт. / лук репчатый - 1 шт. / томатная паста - 2 ст. л. / маслины - 10 шт. / лавровый лист - 1 шт. / перец черный горошком - 5 шт. / соль - 1",
       "method_excerpt": "Поместите говядину в кастрюлю, залейте 1,5 л холодной воды и доведите до кипения. Снимите пену, добавьте лавровый лист и перец горошком. Варите на медленном огне около 1,5 часов до готовности мяса. Когда мясо сварится, достан",
-      "content_review_status": "UNREVIEWED_REQUIRES_MANUAL_CULINARY_COMPARISON"
+      "web_access_note": "GITHUB_FETCHED",
+      "content_review_status": "SOURCE_COMPARISON_RECORDED_FULL_TEXT_NOT_CERTIFIED"
     },
     {
       "id": 5,
@@ -160,7 +171,8 @@
       "ingredient_count": 0,
       "ingredient_excerpt": "",
       "method_excerpt": "",
-      "content_review_status": "UNREVIEWED_REQUIRES_MANUAL_CULINARY_COMPARISON"
+      "web_access_note": "GITHUB_FETCHED",
+      "content_review_status": "SOURCE_COMPARISON_RECORDED_FULL_TEXT_NOT_CERTIFIED"
     },
     {
       "id": 5,
@@ -172,7 +184,8 @@
       "ingredient_count": 1,
       "ingredient_excerpt": "Судак — 700 г Картофель — 4 шт. Морковь — 1 шт. Лук репчатый — 1 шт. Корень петрушки — 1 шт. Стебли петрушки — 6 шт. Масло сливочное — 20 г Лист лавровый — 1 шт. Перец душистый горошком — 6 шт. Соль — по вкусу Перец чёрный молотый — по вкусу",
       "method_excerpt": "Собираем всё по списку: рыбу, картофель, морковь, лук, коренья и стебли петрушки, специи. / Чистим судака от чешуи и срезаем плавники — удобнее всего ножницами, они у судака колючие. / Потрошим рыбу, вынимаем внутренности и о",
-      "content_review_status": "UNREVIEWED_REQUIRES_MANUAL_CULINARY_COMPARISON"
+      "web_access_note": "GITHUB_FETCHED",
+      "content_review_status": "SOURCE_COMPARISON_RECORDED_FULL_TEXT_NOT_CERTIFIED"
     },
     {
       "id": 5,
@@ -184,7 +197,8 @@
       "ingredient_count": 10,
       "ingredient_excerpt": "Филе судака 300 г / Картофель 3 шт. = 360 г / Морковь 1 шт. = 100 г / Красный лук 1 шт. = 75 г / Вода 2 л = 2000 г / Лавровый лист 2 шт. = 2 г / Душистый перец горошком 7 шт. = 7 г / Соль по вкусу / Черный перец молотый по вкусу / Зелень по вкусу",
       "method_excerpt": "Проверьте филе судака на наличие косточек, удалите их, если таковые имеются. Ополосните рыбу холодной водой. Очистите картофель, лук и морковь. Зелень помойте. Налейте 2 л воды в небольшую кастрюлю или сотейник и поставьте на",
-      "content_review_status": "UNREVIEWED_REQUIRES_MANUAL_CULINARY_COMPARISON"
+      "web_access_note": "GITHUB_FETCHED",
+      "content_review_status": "SOURCE_COMPARISON_RECORDED_FULL_TEXT_NOT_CERTIFIED"
     },
     {
       "id": 6,
@@ -196,7 +210,8 @@
       "ingredient_count": 14,
       "ingredient_excerpt": "Говядина вареная / Картофель / Огурец / Редис / Лук зелёный / Укроп / Яйцо куриное (вареное вкрутую) / Сметана 10% (нежирная) / Горчица острая / Лимонный сок / Цедра лимона / Квас хлебный / Соль / Перец чёрный молотый",
       "method_excerpt": "Отварную говядину, картофель, огурцы и редис нарежьте кубиками со стороной 5 мм. Зеленый лук и зелень укропа мелко нарежьте. Перемешайте. / Яйца разделите на белок и желток. Белок нарежьте кубиками и добавьте в подготовленную",
-      "content_review_status": "UNREVIEWED_REQUIRES_MANUAL_CULINARY_COMPARISON"
+      "web_access_note": "GITHUB_FETCHED",
+      "content_review_status": "SOURCE_COMPARISON_RECORDED_FULL_TEXT_NOT_CERTIFIED"
     },
     {
       "id": 6,
@@ -208,7 +223,8 @@
       "ingredient_count": 0,
       "ingredient_excerpt": "",
       "method_excerpt": "",
-      "content_review_status": "UNREVIEWED_REQUIRES_MANUAL_CULINARY_COMPARISON"
+      "web_access_note": "GITHUB_FETCHED",
+      "content_review_status": "SOURCE_COMPARISON_RECORDED_FULL_TEXT_NOT_CERTIFIED"
     },
     {
       "id": 6,
@@ -220,7 +236,8 @@
       "ingredient_count": 0,
       "ingredient_excerpt": "",
       "method_excerpt": "",
-      "content_review_status": "UNREVIEWED_REQUIRES_MANUAL_CULINARY_COMPARISON"
+      "web_access_note": "GITHUB_FETCHED",
+      "content_review_status": "SOURCE_COMPARISON_RECORDED_FULL_TEXT_NOT_CERTIFIED"
     },
     {
       "id": 7,
@@ -232,7 +249,8 @@
       "ingredient_count": 11,
       "ingredient_excerpt": "бульон 1,5 л / молодая капуста 1/4 шт. / щавель 1 пучка / шпинат 1 пучка / зеленый лук 0,5 пучка / укроп 1/4 пучка / петрушка 1/4 пучка / Лук репчатый / масло растительное 2 ст.л. / картофель 2 шт. / отварное яйцо (для подачи) 2 шт.",
       "method_excerpt": "Подготовить продукты. Бульон можно использовать овощной или мясной по своему вкусу. / В кастрюлю влить растительное масло и пассеровать измельченный репчатый лук. / Влить к луку небольшое количество бульона и пюрировать смесь",
-      "content_review_status": "UNREVIEWED_REQUIRES_MANUAL_CULINARY_COMPARISON"
+      "web_access_note": "GITHUB_FETCHED",
+      "content_review_status": "SOURCE_COMPARISON_RECORDED_FULL_TEXT_NOT_CERTIFIED"
     },
     {
       "id": 7,
@@ -244,7 +262,8 @@
       "ingredient_count": 0,
       "ingredient_excerpt": "",
       "method_excerpt": "",
-      "content_review_status": "UNREVIEWED_REQUIRES_MANUAL_CULINARY_COMPARISON"
+      "web_access_note": "OPENED_VIA_WEB_TO_BYPASS_AUTOMATION_BLOCK",
+      "content_review_status": "SOURCE_COMPARISON_RECORDED_FULL_TEXT_NOT_CERTIFIED"
     },
     {
       "id": 7,
@@ -256,7 +275,8 @@
       "ingredient_count": 7,
       "ingredient_excerpt": "Картофель 250 г / Щавель 2 пучок = 40 г / Зелень 1 пучок = 30 г / Куриное яйцо 2 шт. = 120 г / Соль по вкусу / Черный перец молотый по вкусу / Лавровый лист 2 шт. = 2 г",
       "method_excerpt": "Подготовьте все ингредиенты. / Картофель очистить и нарезать кубиком. В кипящую подсоленную воду добавить картофель и варить до готовности. / Отдельно отварить яйца до готовности. / Свежий щавель хорошо промыть проточной водо",
-      "content_review_status": "UNREVIEWED_REQUIRES_MANUAL_CULINARY_COMPARISON"
+      "web_access_note": "GITHUB_FETCHED",
+      "content_review_status": "SOURCE_COMPARISON_RECORDED_FULL_TEXT_NOT_CERTIFIED"
     },
     {
       "id": 8,
@@ -268,7 +288,8 @@
       "ingredient_count": 0,
       "ingredient_excerpt": "",
       "method_excerpt": "",
-      "content_review_status": "UNREVIEWED_REQUIRES_MANUAL_CULINARY_COMPARISON"
+      "web_access_note": "GITHUB_FETCHED",
+      "content_review_status": "SOURCE_COMPARISON_RECORDED_FULL_TEXT_NOT_CERTIFIED"
     },
     {
       "id": 8,
@@ -280,7 +301,8 @@
       "ingredient_count": 0,
       "ingredient_excerpt": "",
       "method_excerpt": "",
-      "content_review_status": "UNREVIEWED_REQUIRES_MANUAL_CULINARY_COMPARISON"
+      "web_access_note": "GITHUB_FETCHED",
+      "content_review_status": "SOURCE_COMPARISON_RECORDED_FULL_TEXT_NOT_CERTIFIED"
     },
     {
       "id": 8,
@@ -292,7 +314,8 @@
       "ingredient_count": 0,
       "ingredient_excerpt": "",
       "method_excerpt": "",
-      "content_review_status": "UNREVIEWED_REQUIRES_MANUAL_CULINARY_COMPARISON"
+      "web_access_note": "GITHUB_FETCHED",
+      "content_review_status": "SOURCE_COMPARISON_RECORDED_FULL_TEXT_NOT_CERTIFIED"
     },
     {
       "id": 9,
@@ -304,19 +327,21 @@
       "ingredient_count": 0,
       "ingredient_excerpt": "",
       "method_excerpt": "",
-      "content_review_status": "UNREVIEWED_REQUIRES_MANUAL_CULINARY_COMPARISON"
+      "web_access_note": "GITHUB_FETCHED",
+      "content_review_status": "SOURCE_COMPARISON_RECORDED_FULL_TEXT_NOT_CERTIFIED"
     },
     {
       "id": 9,
       "source_position": 2,
-      "url": "https://openkitchen.eda.yandex/article/dishes/recipes/kalya",
+      "url": "https://textualchef.com/ru/recipes/fish-kalya/",
       "availability": "FETCHED_UNREVIEWED",
-      "title": "",
-      "recipe_schema_found": false,
-      "ingredient_count": 0,
-      "ingredient_excerpt": "",
-      "method_excerpt": "",
-      "content_review_status": "UNREVIEWED_REQUIRES_MANUAL_CULINARY_COMPARISON"
+      "title": "Рыбная калья",
+      "recipe_schema_found": true,
+      "ingredient_count": 11,
+      "ingredient_excerpt": "2 ст. л. растительное масло / 160 г желтый лук, нарезанный кубиками / 130 г морковь, нарезанная кубиками / 240 мл лук-порей, нарезанный ломтиками / 300 г картофель Юкон Голд, нарезанный кубиками / 1,4 л рыбный бульон / 240 мл соленые огурцы с укропом",
+      "method_excerpt": "Разогрейте 2 ст. л. растительное масло в большой кастрюле на среднем огне. / Добавьте 160 г нарезанный кубиками желтый лук, 130 г нарезанная кубиками морковь и 240 мл нарезанный ломтиками лук-порей, готовьте 8 минут до мягкос",
+      "web_access_note": "GITHUB_FETCHED",
+      "content_review_status": "SOURCE_COMPARISON_RECORDED_FULL_TEXT_NOT_CERTIFIED"
     },
     {
       "id": 9,
@@ -328,7 +353,8 @@
       "ingredient_count": 17,
       "ingredient_excerpt": "Рыбный суповой набор / Лосось (филе) / Судак (филе) / Огурец солёный / Огуречный рассол / Лук репчатый / Лимон / Маслины / Оливки / Томатная паста / Сахар-песок / Масло растительное рафинированное / Лавровый лист / Соль / Перец чёрный молотый / Капер",
       "method_excerpt": "Рыбный суповой набор промойте, положите в большую кастрюлю, залейте 2,5 л воды, на сильном огне доведите до кипения. Уменьшите огонь до слабого, немного посолите, варите 1 ч. Процедите бульон. / Очистите соленые огурцы и наре",
-      "content_review_status": "UNREVIEWED_REQUIRES_MANUAL_CULINARY_COMPARISON"
+      "web_access_note": "GITHUB_FETCHED",
+      "content_review_status": "SOURCE_COMPARISON_RECORDED_FULL_TEXT_NOT_CERTIFIED"
     },
     {
       "id": 10,
@@ -340,7 +366,8 @@
       "ingredient_count": 10,
       "ingredient_excerpt": "Грибы белые сушеные / Перловая крупа / Картофель / Морковь / Лук репчатый / Масло растительное рафинированное / Лавровый лист / Соль / Сметана 18% / Укроп",
       "method_excerpt": "Для приготовления супа из сушеных белых грибов с перловкой сухие белые грибы замочите в холодной воде на 20 минут. Затем воду слейте, грибы промойте. Вновь залейте холодной водой и оставьте на 2–3 часа. / Перловую крупу промо",
-      "content_review_status": "UNREVIEWED_REQUIRES_MANUAL_CULINARY_COMPARISON"
+      "web_access_note": "GITHUB_FETCHED",
+      "content_review_status": "SOURCE_COMPARISON_RECORDED_FULL_TEXT_NOT_CERTIFIED"
     },
     {
       "id": 10,
@@ -352,7 +379,8 @@
       "ingredient_count": 0,
       "ingredient_excerpt": "",
       "method_excerpt": "",
-      "content_review_status": "UNREVIEWED_REQUIRES_MANUAL_CULINARY_COMPARISON"
+      "web_access_note": "GITHUB_FETCHED",
+      "content_review_status": "SOURCE_COMPARISON_RECORDED_FULL_TEXT_NOT_CERTIFIED"
     },
     {
       "id": 10,
@@ -364,7 +392,8 @@
       "ingredient_count": 0,
       "ingredient_excerpt": "",
       "method_excerpt": "",
-      "content_review_status": "UNREVIEWED_REQUIRES_MANUAL_CULINARY_COMPARISON"
+      "web_access_note": "OPENED_VIA_WEB_TO_BYPASS_AUTOMATION_BLOCK",
+      "content_review_status": "SOURCE_COMPARISON_RECORDED_FULL_TEXT_NOT_CERTIFIED"
     },
     {
       "id": 11,
@@ -376,7 +405,8 @@
       "ingredient_count": 0,
       "ingredient_excerpt": "",
       "method_excerpt": "",
-      "content_review_status": "UNREVIEWED_REQUIRES_MANUAL_CULINARY_COMPARISON"
+      "web_access_note": "GITHUB_FETCHED",
+      "content_review_status": "SOURCE_COMPARISON_RECORDED_FULL_TEXT_NOT_CERTIFIED"
     },
     {
       "id": 11,
@@ -388,7 +418,8 @@
       "ingredient_count": 0,
       "ingredient_excerpt": "",
       "method_excerpt": "",
-      "content_review_status": "UNREVIEWED_REQUIRES_MANUAL_CULINARY_COMPARISON"
+      "web_access_note": "GITHUB_FETCHED",
+      "content_review_status": "SOURCE_COMPARISON_RECORDED_FULL_TEXT_NOT_CERTIFIED"
     },
     {
       "id": 11,
@@ -400,7 +431,8 @@
       "ingredient_count": 18,
       "ingredient_excerpt": "85g of macaroni pasta / 1 onion, cut into 1cm dice / 1/2 leek, cut into 1cm dice / 1 celery stick, cut into 1cm dice / 2 garlic cloves, sliced / 125g of bacon, cut into 1cm dice / 1 bay leaf / 1 sprig of thyme / 1 tsp tomato purée / 300ml of passata ",
       "method_excerpt": "Place a large saucepan over a medium heat and add oil. Once hot, add the onion, leek and celery and sauté until soft. Add the garlic, bacon, bay leaf and thyme. Again, cook until soft / Add the tomato purée to the pan, stir a",
-      "content_review_status": "UNREVIEWED_REQUIRES_MANUAL_CULINARY_COMPARISON"
+      "web_access_note": "GITHUB_FETCHED",
+      "content_review_status": "SOURCE_COMPARISON_RECORDED_FULL_TEXT_NOT_CERTIFIED"
     },
     {
       "id": 12,
@@ -412,7 +444,8 @@
       "ingredient_count": 0,
       "ingredient_excerpt": "",
       "method_excerpt": "",
-      "content_review_status": "UNREVIEWED_REQUIRES_MANUAL_CULINARY_COMPARISON"
+      "web_access_note": "GITHUB_FETCHED",
+      "content_review_status": "SOURCE_COMPARISON_RECORDED_FULL_TEXT_NOT_CERTIFIED"
     },
     {
       "id": 12,
@@ -424,7 +457,8 @@
       "ingredient_count": 11,
       "ingredient_excerpt": "500 g di fagioli cannellini cotti / 200 g di patate / 200 g di cavolo nero / 150 cavolo verza / 2 carote / 1 cipolla / 1 cucchiaio di concentrato di pomodoro / olio extravergine di oliva / sale / pepe / pane toscano",
       "method_excerpt": "Per preparare la ribollita semplice iniziate dalla pulizia delle verdure. Lavatele accuratamente, pelate le patate e mondate le carote, quindi tagliate entrambe a dadini. In una casseruola capiente fate appassire la cipolla t",
-      "content_review_status": "UNREVIEWED_REQUIRES_MANUAL_CULINARY_COMPARISON"
+      "web_access_note": "GITHUB_FETCHED",
+      "content_review_status": "SOURCE_COMPARISON_RECORDED_FULL_TEXT_NOT_CERTIFIED"
     },
     {
       "id": 12,
@@ -436,7 +470,8 @@
       "ingredient_count": 0,
       "ingredient_excerpt": "",
       "method_excerpt": "",
-      "content_review_status": "UNREVIEWED_REQUIRES_MANUAL_CULINARY_COMPARISON"
+      "web_access_note": "GITHUB_FETCHED",
+      "content_review_status": "SOURCE_COMPARISON_RECORDED_FULL_TEXT_NOT_CERTIFIED"
     },
     {
       "id": 13,
@@ -448,7 +483,8 @@
       "ingredient_count": 0,
       "ingredient_excerpt": "",
       "method_excerpt": "",
-      "content_review_status": "UNREVIEWED_REQUIRES_MANUAL_CULINARY_COMPARISON"
+      "web_access_note": "GITHUB_FETCHED",
+      "content_review_status": "SOURCE_COMPARISON_RECORDED_FULL_TEXT_NOT_CERTIFIED"
     },
     {
       "id": 13,
@@ -460,7 +496,8 @@
       "ingredient_count": 9,
       "ingredient_excerpt": "3 1/3LBS. plum tomatoes / 12OZ. stale Tuscan bread slices / Vegetable broth / Sugar / Garlic / Basil / Extravirgin olive oil / Salt / Pepper",
       "method_excerpt": "With the tip of a knife, cut a cross in the bottoms of the tomatoes and plunge them into boiling water for less than 1 minute, then drain them, peel them and run them through a food mill. / Rub the bread slices with 1 clove g",
-      "content_review_status": "UNREVIEWED_REQUIRES_MANUAL_CULINARY_COMPARISON"
+      "web_access_note": "GITHUB_FETCHED",
+      "content_review_status": "SOURCE_COMPARISON_RECORDED_FULL_TEXT_NOT_CERTIFIED"
     },
     {
       "id": 13,
@@ -472,7 +509,8 @@
       "ingredient_count": 10,
       "ingredient_excerpt": "50ml of olive oil, plus extra for drizzling / 1 large onion, finely diced / 6 garlic cloves, finely chopped / 4 sprigs of basil / 200g of stale bread, crusts removed, torn into chunks / 800g of tinned San Marzano tomatoes, or another very high-qualit",
       "method_excerpt": "Heat the oil in a large saucepan and cook the onion and garlic with a pinch of chilli flakes on a low heat for 15 minutes or until very soft but without colour / Strain the tinned tomatoes over a bowl, reserving the juice. Ad",
-      "content_review_status": "UNREVIEWED_REQUIRES_MANUAL_CULINARY_COMPARISON"
+      "web_access_note": "GITHUB_FETCHED",
+      "content_review_status": "SOURCE_COMPARISON_RECORDED_FULL_TEXT_NOT_CERTIFIED"
     },
     {
       "id": 14,
@@ -484,7 +522,8 @@
       "ingredient_count": 0,
       "ingredient_excerpt": "",
       "method_excerpt": "",
-      "content_review_status": "UNREVIEWED_REQUIRES_MANUAL_CULINARY_COMPARISON"
+      "web_access_note": "GITHUB_FETCHED",
+      "content_review_status": "SOURCE_COMPARISON_RECORDED_FULL_TEXT_NOT_CERTIFIED"
     },
     {
       "id": 14,
@@ -496,7 +535,8 @@
       "ingredient_count": 0,
       "ingredient_excerpt": "",
       "method_excerpt": "",
-      "content_review_status": "UNREVIEWED_REQUIRES_MANUAL_CULINARY_COMPARISON"
+      "web_access_note": "GITHUB_FETCHED",
+      "content_review_status": "SOURCE_COMPARISON_RECORDED_FULL_TEXT_NOT_CERTIFIED"
     },
     {
       "id": 14,
@@ -508,7 +548,8 @@
       "ingredient_count": 0,
       "ingredient_excerpt": "",
       "method_excerpt": "",
-      "content_review_status": "UNREVIEWED_REQUIRES_MANUAL_CULINARY_COMPARISON"
+      "web_access_note": "GITHUB_FETCHED",
+      "content_review_status": "SOURCE_COMPARISON_RECORDED_FULL_TEXT_NOT_CERTIFIED"
     },
     {
       "id": 15,
@@ -520,7 +561,8 @@
       "ingredient_count": 0,
       "ingredient_excerpt": "",
       "method_excerpt": "",
-      "content_review_status": "UNREVIEWED_REQUIRES_MANUAL_CULINARY_COMPARISON"
+      "web_access_note": "GITHUB_FETCHED",
+      "content_review_status": "SOURCE_COMPARISON_RECORDED_FULL_TEXT_NOT_CERTIFIED"
     },
     {
       "id": 15,
@@ -532,7 +574,8 @@
       "ingredient_count": 12,
       "ingredient_excerpt": "500g of dried cannellini beans, soaked overnight, drained and rinsed well / 3 bay leaves / 60ml of extra virgin olive oil / 100g of pancetta, minced / 1 garlic clove, crushed and peeled / 1/4 tsp dried chilli flakes / 1 stick of celery, finely choppe",
       "method_excerpt": "Place the beans and bay leaves in a large pot and cover with plenty of cold water, approximately 3 litres. Bring everything to the boil and cook the beans until just al dente, about 30–40 minutes. Discard the bay leaves, drai",
-      "content_review_status": "UNREVIEWED_REQUIRES_MANUAL_CULINARY_COMPARISON"
+      "web_access_note": "GITHUB_FETCHED",
+      "content_review_status": "SOURCE_COMPARISON_RECORDED_FULL_TEXT_NOT_CERTIFIED"
     },
     {
       "id": 15,
@@ -544,7 +587,8 @@
       "ingredient_count": 0,
       "ingredient_excerpt": "",
       "method_excerpt": "Although pasta e fagioli (“pasta and beans”) is a classic Italian soup, there are as many variations as there are Italian cooks. Sara Jenkins distinguished the version she served at her Italian Luncheon at the Beard House by ",
-      "content_review_status": "UNREVIEWED_REQUIRES_MANUAL_CULINARY_COMPARISON"
+      "web_access_note": "GITHUB_FETCHED",
+      "content_review_status": "SOURCE_COMPARISON_RECORDED_FULL_TEXT_NOT_CERTIFIED"
     },
     {
       "id": 16,
@@ -556,7 +600,8 @@
       "ingredient_count": 14,
       "ingredient_excerpt": "10g of dried porcini mushrooms / olive oil / 1 red onion, diced / 1 celery stick, diced (leaves reserved) / 1 carrot, peeled and diced / 1/2 leek, sliced / 3 garlic cloves, diced / 3 sprigs of basil / 4 tomatoes / 4 cavolo nero leaves, or cabbage or ",
       "method_excerpt": "Begin by rehydrating the dried mushrooms in 200ml boiling water. Leave for 10 minutes or until the mushrooms are soft, then drain (reserving the stock) and roughly chop / Add a good glug of olive oil to to a large heavy-botto",
-      "content_review_status": "UNREVIEWED_REQUIRES_MANUAL_CULINARY_COMPARISON"
+      "web_access_note": "GITHUB_FETCHED",
+      "content_review_status": "SOURCE_COMPARISON_RECORDED_FULL_TEXT_NOT_CERTIFIED"
     },
     {
       "id": 16,
@@ -568,7 +613,8 @@
       "ingredient_count": 0,
       "ingredient_excerpt": "",
       "method_excerpt": "Acquacotta, a humble, traditional Tuscan soup, translates to “cooked water.” April Bloomfield takes it up a notch with the addition of clams and a generous amount of bacon. / 1 cup white wine / 10 quahog or chowder clams / 4 ",
-      "content_review_status": "UNREVIEWED_REQUIRES_MANUAL_CULINARY_COMPARISON"
+      "web_access_note": "GITHUB_FETCHED",
+      "content_review_status": "SOURCE_COMPARISON_RECORDED_FULL_TEXT_NOT_CERTIFIED"
     },
     {
       "id": 16,
@@ -580,7 +626,8 @@
       "ingredient_count": 0,
       "ingredient_excerpt": "",
       "method_excerpt": "",
-      "content_review_status": "UNREVIEWED_REQUIRES_MANUAL_CULINARY_COMPARISON"
+      "web_access_note": "GITHUB_FETCHED",
+      "content_review_status": "SOURCE_COMPARISON_RECORDED_FULL_TEXT_NOT_CERTIFIED"
     },
     {
       "id": 17,
@@ -592,7 +639,8 @@
       "ingredient_count": 0,
       "ingredient_excerpt": "",
       "method_excerpt": "",
-      "content_review_status": "UNREVIEWED_REQUIRES_MANUAL_CULINARY_COMPARISON"
+      "web_access_note": "GITHUB_FETCHED",
+      "content_review_status": "SOURCE_COMPARISON_RECORDED_FULL_TEXT_NOT_CERTIFIED"
     },
     {
       "id": 17,
@@ -604,7 +652,8 @@
       "ingredient_count": 19,
       "ingredient_excerpt": "1/4LB. sliced pork loin / 4OZ. prosciutto crudo (12 slices) / 4OZ. mortadella (12 slices) / 1CUP Parmigiano Reggiano, grated / 1 egg / nutmeg / sage / bay leaf / rosemary / butter / salt / peppercorns /  / For the dough / 4CUPS all-purpose flour / 5 ",
       "method_excerpt": "FOR THE FILLING: Melt a pat of butter in a pan with a few sage leaves, one bay leaf and a rosemary sprig. Sauté the slices of pork on both sides with a pinch of salt and freshly ground pepper until cooked. A liquid will form ",
-      "content_review_status": "UNREVIEWED_REQUIRES_MANUAL_CULINARY_COMPARISON"
+      "web_access_note": "GITHUB_FETCHED",
+      "content_review_status": "SOURCE_COMPARISON_RECORDED_FULL_TEXT_NOT_CERTIFIED"
     },
     {
       "id": 17,
@@ -616,7 +665,8 @@
       "ingredient_count": 0,
       "ingredient_excerpt": "",
       "method_excerpt": "",
-      "content_review_status": "UNREVIEWED_REQUIRES_MANUAL_CULINARY_COMPARISON"
+      "web_access_note": "GITHUB_FETCHED",
+      "content_review_status": "SOURCE_COMPARISON_RECORDED_FULL_TEXT_NOT_CERTIFIED"
     },
     {
       "id": 18,
@@ -628,7 +678,8 @@
       "ingredient_count": 0,
       "ingredient_excerpt": "",
       "method_excerpt": "",
-      "content_review_status": "UNREVIEWED_REQUIRES_MANUAL_CULINARY_COMPARISON"
+      "web_access_note": "GITHUB_FETCHED",
+      "content_review_status": "SOURCE_COMPARISON_RECORDED_FULL_TEXT_NOT_CERTIFIED"
     },
     {
       "id": 18,
@@ -640,7 +691,8 @@
       "ingredient_count": 0,
       "ingredient_excerpt": "",
       "method_excerpt": "",
-      "content_review_status": "UNREVIEWED_REQUIRES_MANUAL_CULINARY_COMPARISON"
+      "web_access_note": "GITHUB_FETCHED",
+      "content_review_status": "SOURCE_COMPARISON_RECORDED_FULL_TEXT_NOT_CERTIFIED"
     },
     {
       "id": 18,
@@ -652,7 +704,8 @@
       "ingredient_count": 5,
       "ingredient_excerpt": "100 g di pane grattugiato / 100 g di Parmigiano Reggiano grattugiato / 2 uova di gallina di medio-grande dimensione / Noce moscata / 500 ml di Brodo di carne",
       "method_excerpt": "In una terrina mescolare il pangrattato&nbsp;con il Parmigiano Reggiano e la noce moscata grattugiata al momento. Fare un foro al centro e sgusciarvi le uova. Impastare gli ingredienti fino a ottenere un composto omogeneo abb",
-      "content_review_status": "UNREVIEWED_REQUIRES_MANUAL_CULINARY_COMPARISON"
+      "web_access_note": "GITHUB_FETCHED",
+      "content_review_status": "SOURCE_COMPARISON_RECORDED_FULL_TEXT_NOT_CERTIFIED"
     },
     {
       "id": 19,
@@ -664,7 +717,8 @@
       "ingredient_count": 0,
       "ingredient_excerpt": "",
       "method_excerpt": "",
-      "content_review_status": "UNREVIEWED_REQUIRES_MANUAL_CULINARY_COMPARISON"
+      "web_access_note": "GITHUB_FETCHED",
+      "content_review_status": "SOURCE_COMPARISON_RECORDED_FULL_TEXT_NOT_CERTIFIED"
     },
     {
       "id": 19,
@@ -676,7 +730,8 @@
       "ingredient_count": 0,
       "ingredient_excerpt": "",
       "method_excerpt": "",
-      "content_review_status": "UNREVIEWED_REQUIRES_MANUAL_CULINARY_COMPARISON"
+      "web_access_note": "GITHUB_FETCHED",
+      "content_review_status": "SOURCE_COMPARISON_RECORDED_FULL_TEXT_NOT_CERTIFIED"
     },
     {
       "id": 19,
@@ -688,7 +743,8 @@
       "ingredient_count": 0,
       "ingredient_excerpt": "",
       "method_excerpt": "",
-      "content_review_status": "UNREVIEWED_REQUIRES_MANUAL_CULINARY_COMPARISON"
+      "web_access_note": "GITHUB_FETCHED",
+      "content_review_status": "SOURCE_COMPARISON_RECORDED_FULL_TEXT_NOT_CERTIFIED"
     },
     {
       "id": 20,
@@ -700,7 +756,8 @@
       "ingredient_count": 0,
       "ingredient_excerpt": "",
       "method_excerpt": "",
-      "content_review_status": "UNREVIEWED_REQUIRES_MANUAL_CULINARY_COMPARISON"
+      "web_access_note": "GITHUB_FETCHED",
+      "content_review_status": "SOURCE_COMPARISON_RECORDED_FULL_TEXT_NOT_CERTIFIED"
     },
     {
       "id": 20,
@@ -712,7 +769,8 @@
       "ingredient_count": 0,
       "ingredient_excerpt": "",
       "method_excerpt": "",
-      "content_review_status": "UNREVIEWED_REQUIRES_MANUAL_CULINARY_COMPARISON"
+      "web_access_note": "GITHUB_FETCHED",
+      "content_review_status": "SOURCE_COMPARISON_RECORDED_FULL_TEXT_NOT_CERTIFIED"
     },
     {
       "id": 20,
@@ -724,7 +782,8 @@
       "ingredient_count": 0,
       "ingredient_excerpt": "",
       "method_excerpt": "",
-      "content_review_status": "UNREVIEWED_REQUIRES_MANUAL_CULINARY_COMPARISON"
+      "web_access_note": "GITHUB_FETCHED",
+      "content_review_status": "SOURCE_COMPARISON_RECORDED_FULL_TEXT_NOT_CERTIFIED"
     },
     {
       "id": 21,
@@ -736,7 +795,8 @@
       "ingredient_count": 9,
       "ingredient_excerpt": "12 oignons moyens / 45 g de beurre / 2 gousses d'ail / 15 g de farine / 1.5 l de bouillons / 1 feuille de laurier / poivre et sel / 6 tranches de pains / 60 g de fromage râpé",
       "method_excerpt": "Préchauffer le gril du four. / Hacher les oignons et les faire fondre dans le beurre durant 15 minutes. / Saupoudrer ensuite de farine et ajouter l'ail. Lorsque la farine a pris de la couleur, verser le bouillon chaud, ajoute",
-      "content_review_status": "UNREVIEWED_REQUIRES_MANUAL_CULINARY_COMPARISON"
+      "web_access_note": "GITHUB_FETCHED",
+      "content_review_status": "SOURCE_COMPARISON_RECORDED_FULL_TEXT_NOT_CERTIFIED"
     },
     {
       "id": 21,
@@ -748,7 +808,8 @@
       "ingredient_count": 0,
       "ingredient_excerpt": "",
       "method_excerpt": "",
-      "content_review_status": "UNREVIEWED_REQUIRES_MANUAL_CULINARY_COMPARISON"
+      "web_access_note": "GITHUB_FETCHED",
+      "content_review_status": "SOURCE_COMPARISON_RECORDED_FULL_TEXT_NOT_CERTIFIED"
     },
     {
       "id": 21,
@@ -760,7 +821,8 @@
       "ingredient_count": 0,
       "ingredient_excerpt": "",
       "method_excerpt": "",
-      "content_review_status": "UNREVIEWED_REQUIRES_MANUAL_CULINARY_COMPARISON"
+      "web_access_note": "GITHUB_FETCHED",
+      "content_review_status": "SOURCE_COMPARISON_RECORDED_FULL_TEXT_NOT_CERTIFIED"
     },
     {
       "id": 22,
@@ -772,7 +834,8 @@
       "ingredient_count": 25,
       "ingredient_excerpt": "600 g de lotte / 600 g de rascasses / 600 g de congre / 600 g de saint-pierre / 600 g de vives / 600 g de grondin rouge / 600 g de cigales de mer ou de langoustines / 10 tomates mûres / 8 oignons moyens / 2 poireaux / 2 bulbes de fenouil / 2 ail / 10",
       "method_excerpt": "Préparer les légumes : / Peler, épépiner et concasser les tomates. Hacher les oignons, écraser l'ail. Emincer les blancs de poireaux. / Mettre tous ces légumes dans une grande marmite. / Vider les poissons, réserver les foies",
-      "content_review_status": "UNREVIEWED_REQUIRES_MANUAL_CULINARY_COMPARISON"
+      "web_access_note": "GITHUB_FETCHED",
+      "content_review_status": "SOURCE_COMPARISON_RECORDED_FULL_TEXT_NOT_CERTIFIED"
     },
     {
       "id": 22,
@@ -784,7 +847,8 @@
       "ingredient_count": 10,
       "ingredient_excerpt": "Sel / Poivre / safran / deux cuillerées d'huile d'olive / trois tomates / 1 fenouil / 2 oignons / 2 gousses d'ail / laurier / 2 kg de poissons de mer à chair ferme(rascasse, grondins, congres...)",
       "method_excerpt": "Dans une cocotte, disposer des morceaux de poissons de mer à cher ferme.Ajouter ensuite, des oignons hachés, de l&#039;ail écrasé, de laurier, du fenouil, deux ou trois tomates concassées.Saler et poivrer.Couvrir le tout d&#0",
-      "content_review_status": "UNREVIEWED_REQUIRES_MANUAL_CULINARY_COMPARISON"
+      "web_access_note": "GITHUB_FETCHED",
+      "content_review_status": "SOURCE_COMPARISON_RECORDED_FULL_TEXT_NOT_CERTIFIED"
     },
     {
       "id": 22,
@@ -796,7 +860,8 @@
       "ingredient_count": 0,
       "ingredient_excerpt": "",
       "method_excerpt": "",
-      "content_review_status": "UNREVIEWED_REQUIRES_MANUAL_CULINARY_COMPARISON"
+      "web_access_note": "GITHUB_FETCHED",
+      "content_review_status": "SOURCE_COMPARISON_RECORDED_FULL_TEXT_NOT_CERTIFIED"
     },
     {
       "id": 23,
@@ -808,7 +873,8 @@
       "ingredient_count": 12,
       "ingredient_excerpt": "50g unsalted butter / 350g leeks, washed and finely sliced / 250g of floury potatoes, peeled, quartered and finely sliced / 600ml vegetable stock / 1 bay leaf / 100g creme fraiche / 100g whole milk, (you may not need it all) / 1 lemon, juiced / ½ bun",
       "method_excerpt": "Slowly cook the leeks in the butter with a pinch of salt over a medium heat until soft, then add the potatoes and cook for a few more minutes, stirring to avoid any colour on the vegetables / Add the stock and bay leaf and co",
-      "content_review_status": "UNREVIEWED_REQUIRES_MANUAL_CULINARY_COMPARISON"
+      "web_access_note": "GITHUB_FETCHED",
+      "content_review_status": "SOURCE_COMPARISON_RECORDED_FULL_TEXT_NOT_CERTIFIED"
     },
     {
       "id": 23,
@@ -820,7 +886,8 @@
       "ingredient_count": 0,
       "ingredient_excerpt": "",
       "method_excerpt": "",
-      "content_review_status": "UNREVIEWED_REQUIRES_MANUAL_CULINARY_COMPARISON"
+      "web_access_note": "OPENED_VIA_WEB_TO_BYPASS_AUTOMATION_BLOCK",
+      "content_review_status": "SOURCE_COMPARISON_RECORDED_FULL_TEXT_NOT_CERTIFIED"
     },
     {
       "id": 23,
@@ -832,7 +899,8 @@
       "ingredient_count": 0,
       "ingredient_excerpt": "",
       "method_excerpt": "",
-      "content_review_status": "UNREVIEWED_REQUIRES_MANUAL_CULINARY_COMPARISON"
+      "web_access_note": "OPENED_VIA_WEB_TO_BYPASS_AUTOMATION_BLOCK",
+      "content_review_status": "SOURCE_COMPARISON_RECORDED_FULL_TEXT_NOT_CERTIFIED"
     },
     {
       "id": 24,
@@ -844,7 +912,8 @@
       "ingredient_count": 12,
       "ingredient_excerpt": "3 pommes de terre / 1 jambon / 3 canard confits (à défaut deux morceaux de lard fumé) / 1 chou / 1 oignon / 1 navet / 3 carottes / 300 g de haricot tarbais si possible, sinon des soissons (gros haricots blancs) / 1 ail entière / poivre / sel / 3 clou",
       "method_excerpt": "Faire tremper les haricots la veille / Blanchir les feuilles de chou. Il sera plus digeste. / Remplir une marmite avec environ 3.5 l d'eau et y déposer la viande. / Quand l'eau de la marmite bout, ajouter les légumes coupés e",
-      "content_review_status": "UNREVIEWED_REQUIRES_MANUAL_CULINARY_COMPARISON"
+      "web_access_note": "GITHUB_FETCHED",
+      "content_review_status": "SOURCE_COMPARISON_RECORDED_FULL_TEXT_NOT_CERTIFIED"
     },
     {
       "id": 24,
@@ -856,7 +925,8 @@
       "ingredient_count": 0,
       "ingredient_excerpt": "",
       "method_excerpt": "",
-      "content_review_status": "UNREVIEWED_REQUIRES_MANUAL_CULINARY_COMPARISON"
+      "web_access_note": "GITHUB_FETCHED",
+      "content_review_status": "SOURCE_COMPARISON_RECORDED_FULL_TEXT_NOT_CERTIFIED"
     },
     {
       "id": 24,
@@ -868,7 +938,8 @@
       "ingredient_count": 0,
       "ingredient_excerpt": "",
       "method_excerpt": "",
-      "content_review_status": "UNREVIEWED_REQUIRES_MANUAL_CULINARY_COMPARISON"
+      "web_access_note": "OPENED_VIA_WEB_TO_BYPASS_AUTOMATION_BLOCK",
+      "content_review_status": "SOURCE_COMPARISON_RECORDED_FULL_TEXT_NOT_CERTIFIED"
     },
     {
       "id": 25,
@@ -880,7 +951,8 @@
       "ingredient_count": 14,
       "ingredient_excerpt": "1 oignon / 2 courgettes / 125 g de haricots coco blancs frais / 125 g de haricots coco rouges frais / 250 g de haricots verts plats frais / 3 pommes de terre / 8 petites poignées de coquillettes / 2 tomates / 3 gousses d'ail frais / 1 bouquet de basi",
       "method_excerpt": "Faire revenir l’oignon coupé fin dans de l’huile d’olive (3-4 min). / Ajouter et faire revenir (3-4 min) les haricots coco blancs, rouges, les haricots plats coupés en tranche de 1,5 cm et les courgettes coupées en 2 dans la ",
-      "content_review_status": "UNREVIEWED_REQUIRES_MANUAL_CULINARY_COMPARISON"
+      "web_access_note": "GITHUB_FETCHED",
+      "content_review_status": "SOURCE_COMPARISON_RECORDED_FULL_TEXT_NOT_CERTIFIED"
     },
     {
       "id": 25,
@@ -892,7 +964,8 @@
       "ingredient_count": 0,
       "ingredient_excerpt": "",
       "method_excerpt": "",
-      "content_review_status": "UNREVIEWED_REQUIRES_MANUAL_CULINARY_COMPARISON"
+      "web_access_note": "OPENED_VIA_WEB_TO_BYPASS_AUTOMATION_BLOCK",
+      "content_review_status": "SOURCE_COMPARISON_RECORDED_FULL_TEXT_NOT_CERTIFIED"
     },
     {
       "id": 25,
@@ -904,7 +977,8 @@
       "ingredient_count": 0,
       "ingredient_excerpt": "",
       "method_excerpt": "",
-      "content_review_status": "UNREVIEWED_REQUIRES_MANUAL_CULINARY_COMPARISON"
+      "web_access_note": "GITHUB_FETCHED",
+      "content_review_status": "SOURCE_COMPARISON_RECORDED_FULL_TEXT_NOT_CERTIFIED"
     },
     {
       "id": 26,
@@ -916,7 +990,8 @@
       "ingredient_count": 9,
       "ingredient_excerpt": "10 à 12 gousse ail (frais de préférence) / 1 c à s graisse d'oie / 1 c à s farine / 1 litre eau / 1 unité oeuf / Quelques goutte vinaigre / sel / poivre / Quelques tranche pain rassis (facultatif)",
       "method_excerpt": "Eplucher les gousses d'ail. Dans une casserole, mettre à fondre à feu très doux la graisse d'oie. Ajouter les gousses d'ail et les laisser lentement blondir toujours à très doux pendant au moins 5 minutes en remuant de temps ",
-      "content_review_status": "UNREVIEWED_REQUIRES_MANUAL_CULINARY_COMPARISON"
+      "web_access_note": "GITHUB_FETCHED",
+      "content_review_status": "SOURCE_COMPARISON_RECORDED_FULL_TEXT_NOT_CERTIFIED"
     },
     {
       "id": 26,
@@ -928,7 +1003,8 @@
       "ingredient_count": 0,
       "ingredient_excerpt": "",
       "method_excerpt": "Pelez les gousses d’ail et les oignons. Hachez l’ail et émincez finement l’oignon séparément. Dans une cocotte, faites fondre la graisse d’oie et mettez les oignons à fondre doucement 3 ou 4 min. Ajoutez l’ail et mélangez pen",
-      "content_review_status": "UNREVIEWED_REQUIRES_MANUAL_CULINARY_COMPARISON"
+      "web_access_note": "GITHUB_FETCHED",
+      "content_review_status": "SOURCE_COMPARISON_RECORDED_FULL_TEXT_NOT_CERTIFIED"
     },
     {
       "id": 26,
@@ -940,7 +1016,8 @@
       "ingredient_count": 7,
       "ingredient_excerpt": "1 ail / 1 oeuf / 1 l d'eau / 1 cuillère de canard / d'huile / 1 cuillère de farine / 1 filet de vinaigre",
       "method_excerpt": "Peler la tête d’ail et mettre les gousses à blondir (à peine) dans la graisse de canard ou l’huile chaude. / Ajouter très vite la farine, bien mélanger et verser l’eau. / Quand l’eau bout, casser l'œuf en gardant le blanc à p",
-      "content_review_status": "UNREVIEWED_REQUIRES_MANUAL_CULINARY_COMPARISON"
+      "web_access_note": "GITHUB_FETCHED",
+      "content_review_status": "SOURCE_COMPARISON_RECORDED_FULL_TEXT_NOT_CERTIFIED"
     },
     {
       "id": 27,
@@ -952,7 +1029,8 @@
       "ingredient_count": 0,
       "ingredient_excerpt": "",
       "method_excerpt": "",
-      "content_review_status": "UNREVIEWED_REQUIRES_MANUAL_CULINARY_COMPARISON"
+      "web_access_note": "GITHUB_FETCHED",
+      "content_review_status": "SOURCE_COMPARISON_RECORDED_FULL_TEXT_NOT_CERTIFIED"
     },
     {
       "id": 27,
@@ -964,7 +1042,8 @@
       "ingredient_count": 0,
       "ingredient_excerpt": "",
       "method_excerpt": "",
-      "content_review_status": "UNREVIEWED_REQUIRES_MANUAL_CULINARY_COMPARISON"
+      "web_access_note": "GITHUB_FETCHED",
+      "content_review_status": "SOURCE_COMPARISON_RECORDED_FULL_TEXT_NOT_CERTIFIED"
     },
     {
       "id": 27,
@@ -976,7 +1055,8 @@
       "ingredient_count": 9,
       "ingredient_excerpt": "1 Chou-fleur moyen / 1 Blanc de poireaux / 40 g Riz rincé a l’eau froide / 50 g Beurre / 3 Cas Crème fraiche entière / 2 Jaunes d'œufs / Sel et poivre / 1.5 litre Eau ou bouillon de volaille maison / 100 g Sommités de chou-fleur pour la garniture",
       "method_excerpt": "Émincer finement le blanc de poireaux. Nettoyer le chou-fleur et le diviser en petits bouquets. / Prélevez 100 g de sommités, ce sont les extrémités de bouquets d’environ la taille d’un pois chiche, pour la garniture. / Faite",
-      "content_review_status": "UNREVIEWED_REQUIRES_MANUAL_CULINARY_COMPARISON"
+      "web_access_note": "GITHUB_FETCHED",
+      "content_review_status": "SOURCE_COMPARISON_RECORDED_FULL_TEXT_NOT_CERTIFIED"
     },
     {
       "id": 28,
@@ -988,7 +1068,8 @@
       "ingredient_count": 13,
       "ingredient_excerpt": "500 g de homards (têtes, pinces, pattes, anneaux, queue) / 1 blanc de poireau / 1 oignon / 1 petite boîte de concentré de tomates / 80 g de farine / 3 gousses d'ail / 1 l de fumet de poisson / 40 cl de vin blanc sec / 10 cl de pineau des charentes / ",
       "method_excerpt": "Concassez les carcasses de homards et faites-les revenir avec de l'huile d'olive pendant 5 bonnes minutes à feu vif. Rajoutez le blanc de poireau et l'oignon émincés et faites revenir 5 bonnes minutes de plus. / Saupoudrez av",
-      "content_review_status": "UNREVIEWED_REQUIRES_MANUAL_CULINARY_COMPARISON"
+      "web_access_note": "GITHUB_FETCHED",
+      "content_review_status": "SOURCE_COMPARISON_RECORDED_FULL_TEXT_NOT_CERTIFIED"
     },
     {
       "id": 28,
@@ -1000,7 +1081,8 @@
       "ingredient_count": 18,
       "ingredient_excerpt": "The shells of 2 lobsters, raw or cooked (about 1 pound) / 5 sprigs thyme / 5 sprigs tarragon / 5 sprigs parsley / 4 tablespoons room temperature unsalted butter, divided / 1 large carrot, peeled and chopped / 1 large white onion, peeled and chopped /",
       "method_excerpt": "Place the lobster shells in a gallon-size zip top bag and seal tightly, pushing out any air. Pound the shells with a heavy object such as a rolling pin or meat mallet until crushed into small pieces. Set aside. Make a bundle ",
-      "content_review_status": "UNREVIEWED_REQUIRES_MANUAL_CULINARY_COMPARISON"
+      "web_access_note": "GITHUB_FETCHED",
+      "content_review_status": "SOURCE_COMPARISON_RECORDED_FULL_TEXT_NOT_CERTIFIED"
     },
     {
       "id": 28,
@@ -1012,7 +1094,8 @@
       "ingredient_count": 0,
       "ingredient_excerpt": "",
       "method_excerpt": "",
-      "content_review_status": "UNREVIEWED_REQUIRES_MANUAL_CULINARY_COMPARISON"
+      "web_access_note": "OPENED_VIA_WEB_TO_BYPASS_AUTOMATION_BLOCK",
+      "content_review_status": "SOURCE_COMPARISON_RECORDED_FULL_TEXT_NOT_CERTIFIED"
     },
     {
       "id": 29,
@@ -1024,7 +1107,8 @@
       "ingredient_count": 10,
       "ingredient_excerpt": "half a monkfish / a sea bass / half a whiting / a sliced onion / thyme, fennel, bay leaf / a sprig of orange peel / salt and pepper / about ten slices of bread a centimetre thick / aioli: 2 tablespoons per person / 1 egg yolk per guest",
       "method_excerpt": "Cut the fish into sections, put them into a saucepan with the onion and the aromatics, moisten a little more than to cover, season and let cook for about ten minutes. / Cut the slices of bread and arrange them in a deep dish ",
-      "content_review_status": "UNREVIEWED_REQUIRES_MANUAL_CULINARY_COMPARISON"
+      "web_access_note": "GITHUB_FETCHED",
+      "content_review_status": "SOURCE_COMPARISON_RECORDED_FULL_TEXT_NOT_CERTIFIED"
     },
     {
       "id": 29,
@@ -1036,7 +1120,8 @@
       "ingredient_count": 0,
       "ingredient_excerpt": "",
       "method_excerpt": "",
-      "content_review_status": "UNREVIEWED_REQUIRES_MANUAL_CULINARY_COMPARISON"
+      "web_access_note": "GITHUB_FETCHED",
+      "content_review_status": "SOURCE_COMPARISON_RECORDED_FULL_TEXT_NOT_CERTIFIED"
     },
     {
       "id": 29,
@@ -1048,7 +1133,8 @@
       "ingredient_count": 0,
       "ingredient_excerpt": "",
       "method_excerpt": "",
-      "content_review_status": "UNREVIEWED_REQUIRES_MANUAL_CULINARY_COMPARISON"
+      "web_access_note": "GITHUB_FETCHED",
+      "content_review_status": "SOURCE_COMPARISON_RECORDED_FULL_TEXT_NOT_CERTIFIED"
     },
     {
       "id": 30,
@@ -1060,7 +1146,8 @@
       "ingredient_count": 9,
       "ingredient_excerpt": "1 onion, chopped / 2 garlic cloves, chopped / 2 tbsp butter / 4 cups (520 g) carrots, peeled and cut into rounds / 1 large potato, peeled and cut into large dice / 5 cups (1.25 litres) vegetable or chicken broth (see note) / 2 slices white or whole w",
       "method_excerpt": "Soup / Croutons",
-      "content_review_status": "UNREVIEWED_REQUIRES_MANUAL_CULINARY_COMPARISON"
+      "web_access_note": "GITHUB_FETCHED",
+      "content_review_status": "SOURCE_COMPARISON_RECORDED_FULL_TEXT_NOT_CERTIFIED"
     },
     {
       "id": 30,
@@ -1072,7 +1159,8 @@
       "ingredient_count": 1,
       "ingredient_excerpt": "2 tbsp (28g) butter, unsalted2 garlic cloves, peeled and diced1 medium onion, peeled and diced1.3 lbs (600g) carrots, diced4 cups (1L) low-sodium vegetable stock1/2 cup (100g) rice¼ cup (75g) crème fraiche or heavy cream (35% m.f)1 tbsp fresh parsley",
       "method_excerpt": "Step 1 -&nbsp;In a large pot (ideally heavy bottom), melt the butter over medium heat and cook the onion and garlic for 2-3 minutes, until soft and translucent but not caramelized yet.&nbsp; / Step 2 -&nbsp;Add the carrots, s",
-      "content_review_status": "UNREVIEWED_REQUIRES_MANUAL_CULINARY_COMPARISON"
+      "web_access_note": "GITHUB_FETCHED",
+      "content_review_status": "SOURCE_COMPARISON_RECORDED_FULL_TEXT_NOT_CERTIFIED"
     },
     {
       "id": 30,
@@ -1084,7 +1172,8 @@
       "ingredient_count": 10,
       "ingredient_excerpt": "750.00 g (diced) French Carrots / 1.00 tbsp Olive oil / 1.00 peeled and sliced Medium onion / 2.00 peeled and chopped Garlic cloves / 1.00 L (preferably low-sodium) Vegetable stock / 100.00 g Rice / 2.00 tbsp Heavy cream / 1.00 tbsp (chopped) Fresh p",
       "method_excerpt": "Heat olive oil over medium heat in a large pot. Add the onion and garlic, and sauté for 2–3 minutes until translucent. / Add the diced carrots, stir, and let them sweat for 5 minutes. / Add the uncooked rice and mix well with",
-      "content_review_status": "UNREVIEWED_REQUIRES_MANUAL_CULINARY_COMPARISON"
+      "web_access_note": "GITHUB_FETCHED",
+      "content_review_status": "SOURCE_COMPARISON_RECORDED_FULL_TEXT_NOT_CERTIFIED"
     },
     {
       "id": 31,
@@ -1096,7 +1185,8 @@
       "ingredient_count": 0,
       "ingredient_excerpt": "",
       "method_excerpt": "",
-      "content_review_status": "UNREVIEWED_REQUIRES_MANUAL_CULINARY_COMPARISON"
+      "web_access_note": "GITHUB_FETCHED",
+      "content_review_status": "SOURCE_COMPARISON_RECORDED_FULL_TEXT_NOT_CERTIFIED"
     },
     {
       "id": 31,
@@ -1108,7 +1198,8 @@
       "ingredient_count": 0,
       "ingredient_excerpt": "",
       "method_excerpt": "",
-      "content_review_status": "UNREVIEWED_REQUIRES_MANUAL_CULINARY_COMPARISON"
+      "web_access_note": "OPENED_VIA_WEB_TO_BYPASS_AUTOMATION_BLOCK",
+      "content_review_status": "SOURCE_COMPARISON_RECORDED_FULL_TEXT_NOT_CERTIFIED"
     },
     {
       "id": 31,
@@ -1120,7 +1211,8 @@
       "ingredient_count": 9,
       "ingredient_excerpt": "1 kg de tomates de pera maduros / 1 pimiento verde / 1 pepino mediano / 1 diente de ajo / 50 ml de Aceite de oliva premium Único / 30 ml de vinagre de Jeréz / 1 cucharadita de sal / 400 ml de agua / 50 gr de pan",
       "method_excerpt": "Lavamos bien todas las verduras y troceamos los tomates, el pimiento, el pepino y el diente de ajo. Para que el pepino no amargue es importante retirarle los extremos y al ajo quitarle la semilla. Una vez que tenemos todas la",
-      "content_review_status": "UNREVIEWED_REQUIRES_MANUAL_CULINARY_COMPARISON"
+      "web_access_note": "GITHUB_FETCHED",
+      "content_review_status": "SOURCE_COMPARISON_RECORDED_FULL_TEXT_NOT_CERTIFIED"
     },
     {
       "id": 32,
@@ -1132,19 +1224,21 @@
       "ingredient_count": 0,
       "ingredient_excerpt": "",
       "method_excerpt": "Wash the tomatoes, blend them and strain them to remove the skin and seeds. Add the bread (before this, leave to soak in water or in the blended tomatoes), extra virgin olive oil, garlic and salt, and blend again.",
-      "content_review_status": "UNREVIEWED_REQUIRES_MANUAL_CULINARY_COMPARISON"
+      "web_access_note": "GITHUB_FETCHED",
+      "content_review_status": "SOURCE_COMPARISON_RECORDED_FULL_TEXT_NOT_CERTIFIED"
     },
     {
       "id": 32,
       "source_position": 2,
-      "url": "https://www.ice.edu/blog/salmorejo-cordobes-recipe",
-      "availability": "ACCESS_BLOCKED",
-      "title": "just a moment...",
+      "url": "https://www.rtve.es/television/20230922/receta-salmorejo-cordobes-trucos-secretos-pan-miga/2456481.shtml",
+      "availability": "FETCHED_UNREVIEWED",
+      "title": "receta del auténtico salmorejo cordobés",
       "recipe_schema_found": false,
       "ingredient_count": 0,
       "ingredient_excerpt": "",
       "method_excerpt": "",
-      "content_review_status": "UNREVIEWED_REQUIRES_MANUAL_CULINARY_COMPARISON"
+      "web_access_note": "GITHUB_FETCHED",
+      "content_review_status": "SOURCE_COMPARISON_RECORDED_FULL_TEXT_NOT_CERTIFIED"
     },
     {
       "id": 32,
@@ -1156,7 +1250,8 @@
       "ingredient_count": 0,
       "ingredient_excerpt": "",
       "method_excerpt": "",
-      "content_review_status": "UNREVIEWED_REQUIRES_MANUAL_CULINARY_COMPARISON"
+      "web_access_note": "GITHUB_FETCHED",
+      "content_review_status": "SOURCE_COMPARISON_RECORDED_FULL_TEXT_NOT_CERTIFIED"
     },
     {
       "id": 33,
@@ -1168,7 +1263,8 @@
       "ingredient_count": 0,
       "ingredient_excerpt": "",
       "method_excerpt": "",
-      "content_review_status": "UNREVIEWED_REQUIRES_MANUAL_CULINARY_COMPARISON"
+      "web_access_note": "GITHUB_FETCHED",
+      "content_review_status": "SOURCE_COMPARISON_RECORDED_FULL_TEXT_NOT_CERTIFIED"
     },
     {
       "id": 33,
@@ -1180,7 +1276,8 @@
       "ingredient_count": 0,
       "ingredient_excerpt": "",
       "method_excerpt": "",
-      "content_review_status": "UNREVIEWED_REQUIRES_MANUAL_CULINARY_COMPARISON"
+      "web_access_note": "GITHUB_FETCHED",
+      "content_review_status": "SOURCE_COMPARISON_RECORDED_FULL_TEXT_NOT_CERTIFIED"
     },
     {
       "id": 33,
@@ -1192,7 +1289,8 @@
       "ingredient_count": 9,
       "ingredient_excerpt": "50.0g stale slightly white bread (crusts off) / 300.0ml water / 100.0g blanched almonds (frozen) / 60.0ml olive oil / 50.0g cucumber peeled / 1.0 crushed garlic clove / 30.0g granny smith apple peeled / 1.0tbsp sherry vinegar / 0.5tsp salt",
       "method_excerpt": "Soak the bread in the cold water for 15 minutes. Remove the almonds from the freezer, and put in a blender with the olive oil and garlic, and blend until smooth. / Next, tip the bread and water into the blender along with the",
-      "content_review_status": "UNREVIEWED_REQUIRES_MANUAL_CULINARY_COMPARISON"
+      "web_access_note": "GITHUB_FETCHED",
+      "content_review_status": "SOURCE_COMPARISON_RECORDED_FULL_TEXT_NOT_CERTIFIED"
     },
     {
       "id": 34,
@@ -1204,7 +1302,8 @@
       "ingredient_count": 0,
       "ingredient_excerpt": "",
       "method_excerpt": "Elaboración Se pelan y filetean los ajos. No es necesario cortarlos muy finos, ya que deben aportar aroma y ayudar a emulsionar el aceite con el caldo. En una cazuela amplia se calienta el aceite de oliva y se añaden los ajos",
-      "content_review_status": "UNREVIEWED_REQUIRES_MANUAL_CULINARY_COMPARISON"
+      "web_access_note": "GITHUB_FETCHED",
+      "content_review_status": "SOURCE_COMPARISON_RECORDED_FULL_TEXT_NOT_CERTIFIED"
     },
     {
       "id": 34,
@@ -1216,7 +1315,8 @@
       "ingredient_count": 10,
       "ingredient_excerpt": "4count Diente de ajo / 8count Pan de hogaza / 1 Pimentón dulce / 1 Chorizo fresco / 75g Jamón ibérico / 1 Pimentón picante / 500ml Caldo de carne / 2 Huevo / Aceite de oliva virgen extra / Sal",
       "method_excerpt": "En una cazuela amplia freír los panes en aceite hasta que estén dorados y reservar. En la misma cazuela **sofreír el chorizo desmigado y el jamón picado,** reservar. Laminar el ajo y sofreírlo a fuego suave 2-3 min. **Agregar",
-      "content_review_status": "UNREVIEWED_REQUIRES_MANUAL_CULINARY_COMPARISON"
+      "web_access_note": "GITHUB_FETCHED",
+      "content_review_status": "SOURCE_COMPARISON_RECORDED_FULL_TEXT_NOT_CERTIFIED"
     },
     {
       "id": 34,
@@ -1228,7 +1328,8 @@
       "ingredient_count": 0,
       "ingredient_excerpt": "",
       "method_excerpt": "",
-      "content_review_status": "UNREVIEWED_REQUIRES_MANUAL_CULINARY_COMPARISON"
+      "web_access_note": "GITHUB_FETCHED",
+      "content_review_status": "SOURCE_COMPARISON_RECORDED_FULL_TEXT_NOT_CERTIFIED"
     },
     {
       "id": 35,
@@ -1240,7 +1341,8 @@
       "ingredient_count": 0,
       "ingredient_excerpt": "",
       "method_excerpt": "Poner las alubias a remojo durante 13 horas. Cortar las patatas en trocitos pequeños. Poner al fuego dos ollas con agua, y en una de ellas echar los hueso y las alubias con sal al gusto. Cuando estén medio cocidas, quitarles ",
-      "content_review_status": "UNREVIEWED_REQUIRES_MANUAL_CULINARY_COMPARISON"
+      "web_access_note": "GITHUB_FETCHED",
+      "content_review_status": "SOURCE_COMPARISON_RECORDED_FULL_TEXT_NOT_CERTIFIED"
     },
     {
       "id": 35,
@@ -1252,7 +1354,8 @@
       "ingredient_count": 0,
       "ingredient_excerpt": "",
       "method_excerpt": "",
-      "content_review_status": "UNREVIEWED_REQUIRES_MANUAL_CULINARY_COMPARISON"
+      "web_access_note": "GITHUB_FETCHED",
+      "content_review_status": "SOURCE_COMPARISON_RECORDED_FULL_TEXT_NOT_CERTIFIED"
     },
     {
       "id": 35,
@@ -1264,7 +1367,8 @@
       "ingredient_count": 8,
       "ingredient_excerpt": "150g Habas / 500g Patata / 500g Grelos / 1count Hueso de espinazo de cerdo / 250g Lacón / 2count Chorizo fresco / 50g Unto / Sal",
       "method_excerpt": "Poner en remojo las habas la noche anterior y el lacón si es salado, en remojo en agua. En una olla grande y alta echar dos litros de agua con un poco de sal y poner a cocer las habas con la carne durante una hora y media o h",
-      "content_review_status": "UNREVIEWED_REQUIRES_MANUAL_CULINARY_COMPARISON"
+      "web_access_note": "GITHUB_FETCHED",
+      "content_review_status": "SOURCE_COMPARISON_RECORDED_FULL_TEXT_NOT_CERTIFIED"
     },
     {
       "id": 36,
@@ -1276,7 +1380,8 @@
       "ingredient_count": 0,
       "ingredient_excerpt": "",
       "method_excerpt": "Clean and chop the leeks and put them in a cooking pot on the heat when the water starts to boil. Keep it boiling for another 10 minutes. Then add the potatoes cut into medium-sized pieces and the chopped pumpkin and leave to",
-      "content_review_status": "UNREVIEWED_REQUIRES_MANUAL_CULINARY_COMPARISON"
+      "web_access_note": "GITHUB_FETCHED",
+      "content_review_status": "SOURCE_COMPARISON_RECORDED_FULL_TEXT_NOT_CERTIFIED"
     },
     {
       "id": 36,
@@ -1288,7 +1393,8 @@
       "ingredient_count": 0,
       "ingredient_excerpt": "",
       "method_excerpt": "",
-      "content_review_status": "UNREVIEWED_REQUIRES_MANUAL_CULINARY_COMPARISON"
+      "web_access_note": "GITHUB_FETCHED",
+      "content_review_status": "SOURCE_COMPARISON_RECORDED_FULL_TEXT_NOT_CERTIFIED"
     },
     {
       "id": 36,
@@ -1300,7 +1406,8 @@
       "ingredient_count": 9,
       "ingredient_excerpt": "6 puerros / 1 ramita de apio / 3 patatas medianas / 2 cebolletas / 3 zanahorias medianas / Sal / Aceite de Oliva Virgen Extra / Perejil fresco / Caldo casero o agua",
       "method_excerpt": "Empezamos por limpiar bien los puerros, sacándoles las raíces, la hoja más exterior y lavándolos bien, especialmente la parte verde, que vamos a aprovechar. Para esto puedes hacer dos cortes longitudinales y enfrentados en la",
-      "content_review_status": "UNREVIEWED_REQUIRES_MANUAL_CULINARY_COMPARISON"
+      "web_access_note": "GITHUB_FETCHED",
+      "content_review_status": "SOURCE_COMPARISON_RECORDED_FULL_TEXT_NOT_CERTIFIED"
     },
     {
       "id": 37,
@@ -1312,7 +1419,8 @@
       "ingredient_count": 0,
       "ingredient_excerpt": "",
       "method_excerpt": "",
-      "content_review_status": "UNREVIEWED_REQUIRES_MANUAL_CULINARY_COMPARISON"
+      "web_access_note": "GITHUB_FETCHED",
+      "content_review_status": "SOURCE_COMPARISON_RECORDED_FULL_TEXT_NOT_CERTIFIED"
     },
     {
       "id": 37,
@@ -1324,7 +1432,8 @@
       "ingredient_count": 0,
       "ingredient_excerpt": "",
       "method_excerpt": "",
-      "content_review_status": "UNREVIEWED_REQUIRES_MANUAL_CULINARY_COMPARISON"
+      "web_access_note": "GITHUB_FETCHED",
+      "content_review_status": "SOURCE_COMPARISON_RECORDED_FULL_TEXT_NOT_CERTIFIED"
     },
     {
       "id": 37,
@@ -1336,7 +1445,8 @@
       "ingredient_count": 0,
       "ingredient_excerpt": "",
       "method_excerpt": "",
-      "content_review_status": "UNREVIEWED_REQUIRES_MANUAL_CULINARY_COMPARISON"
+      "web_access_note": "GITHUB_FETCHED",
+      "content_review_status": "SOURCE_COMPARISON_RECORDED_FULL_TEXT_NOT_CERTIFIED"
     },
     {
       "id": 38,
@@ -1348,7 +1458,8 @@
       "ingredient_count": 0,
       "ingredient_excerpt": "",
       "method_excerpt": "Heat 3 litres of water in a cooking pot and add the hen, bones, soaked chickpeas; the peeled and chopped potatoes; half the peeled and chopped onion; the sliced carrots and the rest of the cleaned vegetables, cut into large p",
-      "content_review_status": "UNREVIEWED_REQUIRES_MANUAL_CULINARY_COMPARISON"
+      "web_access_note": "GITHUB_FETCHED",
+      "content_review_status": "SOURCE_COMPARISON_RECORDED_FULL_TEXT_NOT_CERTIFIED"
     },
     {
       "id": 38,
@@ -1360,7 +1471,8 @@
       "ingredient_count": 8,
       "ingredient_excerpt": "1/2 chicken / 2 eggs / 2 carrots / 1 leek / 1 ham bone / 100 gr Spanish Serrano ham / 2 cups (120 gr) soup noodles. / Salt and pepper to taste",
       "method_excerpt": "Peel and wash the carrots. Peel the leek and cut it into two large pieces. Put everything in a pot together with the chopped chicken, the ham bone, and enough water to cover everything. / Cook it all together for at least 1 h",
-      "content_review_status": "UNREVIEWED_REQUIRES_MANUAL_CULINARY_COMPARISON"
+      "web_access_note": "GITHUB_FETCHED",
+      "content_review_status": "SOURCE_COMPARISON_RECORDED_FULL_TEXT_NOT_CERTIFIED"
     },
     {
       "id": 38,
@@ -1372,7 +1484,8 @@
       "ingredient_count": 0,
       "ingredient_excerpt": "",
       "method_excerpt": "",
-      "content_review_status": "UNREVIEWED_REQUIRES_MANUAL_CULINARY_COMPARISON"
+      "web_access_note": "GITHUB_FETCHED",
+      "content_review_status": "SOURCE_COMPARISON_RECORDED_FULL_TEXT_NOT_CERTIFIED"
     },
     {
       "id": 39,
@@ -1384,7 +1497,8 @@
       "ingredient_count": 0,
       "ingredient_excerpt": "",
       "method_excerpt": "Put the hock, the chicken, the bacon, the beef bones, the pig's ear, the cheek and the trotter into a pot, all well covered with water, and place it on the heat After an hour add the salt, the chickpeas, the chopped turnip, c",
-      "content_review_status": "UNREVIEWED_REQUIRES_MANUAL_CULINARY_COMPARISON"
+      "web_access_note": "GITHUB_FETCHED",
+      "content_review_status": "SOURCE_COMPARISON_RECORDED_FULL_TEXT_NOT_CERTIFIED"
     },
     {
       "id": 39,
@@ -1396,7 +1510,8 @@
       "ingredient_count": 21,
       "ingredient_excerpt": "600g Garbanzos / 4 Patata / 4 Zanahoria / 1 Nabo blanco / 700g Morcillo / 1 Oreja de cerdo / 2 Manitas de cerdo / 2 Huesos de espinazo de cerdo salado / 1 Hueso de rodilla de ternera / 1 Hueso o punta de jamón / 400g Carne picada / 100g Tocino / Past",
       "method_excerpt": "La víspera, dejamos los garbanzos en remojo para acortar su cocción. Podemos meter también en el agua los huesos de espinazo de cerdo para quitarles parte de su potencia. Al día siguiente, **escurrimos los garbanzos y los met",
-      "content_review_status": "UNREVIEWED_REQUIRES_MANUAL_CULINARY_COMPARISON"
+      "web_access_note": "GITHUB_FETCHED",
+      "content_review_status": "SOURCE_COMPARISON_RECORDED_FULL_TEXT_NOT_CERTIFIED"
     },
     {
       "id": 39,
@@ -1408,7 +1523,8 @@
       "ingredient_count": 0,
       "ingredient_excerpt": "",
       "method_excerpt": "",
-      "content_review_status": "UNREVIEWED_REQUIRES_MANUAL_CULINARY_COMPARISON"
+      "web_access_note": "GITHUB_FETCHED",
+      "content_review_status": "SOURCE_COMPARISON_RECORDED_FULL_TEXT_NOT_CERTIFIED"
     },
     {
       "id": 40,
@@ -1420,7 +1536,8 @@
       "ingredient_count": 0,
       "ingredient_excerpt": "",
       "method_excerpt": "",
-      "content_review_status": "UNREVIEWED_REQUIRES_MANUAL_CULINARY_COMPARISON"
+      "web_access_note": "GITHUB_FETCHED",
+      "content_review_status": "SOURCE_COMPARISON_RECORDED_FULL_TEXT_NOT_CERTIFIED"
     },
     {
       "id": 40,
@@ -1432,7 +1549,8 @@
       "ingredient_count": 0,
       "ingredient_excerpt": "",
       "method_excerpt": "",
-      "content_review_status": "UNREVIEWED_REQUIRES_MANUAL_CULINARY_COMPARISON"
+      "web_access_note": "GITHUB_FETCHED",
+      "content_review_status": "SOURCE_COMPARISON_RECORDED_FULL_TEXT_NOT_CERTIFIED"
     },
     {
       "id": 40,
@@ -1444,7 +1562,8 @@
       "ingredient_count": 10,
       "ingredient_excerpt": "1 kg ripe tomatoes / 1 green bell pepper / 1 teen garlic / 250 g white bread / 150 ml extra virgin olive oil / 1 el sherry vinegar / 1 tl salt / 2 stuks eggs / 1 blik tuna in olive oil / 50 g serrano ham",
       "method_excerpt": "Wash the tomatoes, remove the stem and cut them into rough pieces. / Halve the bell pepper, remove the seeds and ribs and cut it into pieces. / Peel the garlic and remove the green germ, so the flavor stays mild. / Blend toma",
-      "content_review_status": "UNREVIEWED_REQUIRES_MANUAL_CULINARY_COMPARISON"
+      "web_access_note": "GITHUB_FETCHED",
+      "content_review_status": "SOURCE_COMPARISON_RECORDED_FULL_TEXT_NOT_CERTIFIED"
     },
     {
       "id": 41,
@@ -1456,7 +1575,8 @@
       "ingredient_count": 0,
       "ingredient_excerpt": "",
       "method_excerpt": "",
-      "content_review_status": "UNREVIEWED_REQUIRES_MANUAL_CULINARY_COMPARISON"
+      "web_access_note": "GITHUB_FETCHED",
+      "content_review_status": "SOURCE_COMPARISON_RECORDED_FULL_TEXT_NOT_CERTIFIED"
     },
     {
       "id": 41,
@@ -1468,7 +1588,8 @@
       "ingredient_count": 0,
       "ingredient_excerpt": "",
       "method_excerpt": "",
-      "content_review_status": "UNREVIEWED_REQUIRES_MANUAL_CULINARY_COMPARISON"
+      "web_access_note": "GITHUB_FETCHED",
+      "content_review_status": "SOURCE_COMPARISON_RECORDED_FULL_TEXT_NOT_CERTIFIED"
     },
     {
       "id": 41,
@@ -1480,7 +1601,8 @@
       "ingredient_count": 0,
       "ingredient_excerpt": "",
       "method_excerpt": "",
-      "content_review_status": "UNREVIEWED_REQUIRES_MANUAL_CULINARY_COMPARISON"
+      "web_access_note": "GITHUB_FETCHED",
+      "content_review_status": "SOURCE_COMPARISON_RECORDED_FULL_TEXT_NOT_CERTIFIED"
     },
     {
       "id": 42,
@@ -1492,7 +1614,8 @@
       "ingredient_count": 0,
       "ingredient_excerpt": "",
       "method_excerpt": "",
-      "content_review_status": "UNREVIEWED_REQUIRES_MANUAL_CULINARY_COMPARISON"
+      "web_access_note": "GITHUB_FETCHED",
+      "content_review_status": "SOURCE_COMPARISON_RECORDED_FULL_TEXT_NOT_CERTIFIED"
     },
     {
       "id": 42,
@@ -1504,7 +1627,8 @@
       "ingredient_count": 9,
       "ingredient_excerpt": "2 1/2 cups red lentils / 3 tablespoons rice / 2 tablespoons bulgur, (see what is bulgur?) / 1 medium size onion / 1 tablespoon tomato paste / 1 tablespoon butter / 9 cups hot water (a cup is 200 ml) / 1 teaspoon mint / 1 teaspoon salt",
       "method_excerpt": "Boil 9 cups water in the kettle and put it in a pot. Add 2 1/2 cups of red lentils, which you have washed and drained, to the pot. / Add 3 tablespoons rice, 2 tablespoons bulgur and 1 teaspoon salt to the pot. / Cook for abou",
-      "content_review_status": "UNREVIEWED_REQUIRES_MANUAL_CULINARY_COMPARISON"
+      "web_access_note": "GITHUB_FETCHED",
+      "content_review_status": "SOURCE_COMPARISON_RECORDED_FULL_TEXT_NOT_CERTIFIED"
     },
     {
       "id": 42,
@@ -1516,7 +1640,8 @@
       "ingredient_count": 17,
       "ingredient_excerpt": "200 g red lentils / 40 g fine bulgur / 30 g rice / 1 medium yellow onion (approximately 120 g) / 2 garlic cloves (approximately 6 g) / 2 tablespoons tomato paste (30 g) / 1 tablespoon pepper paste (15 g) / 1 tablespoon flour (10 g) / 20 g butter / 1 ",
       "method_excerpt": "Rinse the lentils, bulgur and rice separately several times with cold water, then drain. Cut the onion into small dice and finely chop the garlic. / Heat the butter and olive oil in a pot. Soften the onion for 4–5 minutes, th",
-      "content_review_status": "UNREVIEWED_REQUIRES_MANUAL_CULINARY_COMPARISON"
+      "web_access_note": "GITHUB_FETCHED",
+      "content_review_status": "SOURCE_COMPARISON_RECORDED_FULL_TEXT_NOT_CERTIFIED"
     },
     {
       "id": 43,
@@ -1528,7 +1653,8 @@
       "ingredient_count": 0,
       "ingredient_excerpt": "",
       "method_excerpt": "",
-      "content_review_status": "UNREVIEWED_REQUIRES_MANUAL_CULINARY_COMPARISON"
+      "web_access_note": "GITHUB_FETCHED",
+      "content_review_status": "SOURCE_COMPARISON_RECORDED_FULL_TEXT_NOT_CERTIFIED"
     },
     {
       "id": 43,
@@ -1540,7 +1666,8 @@
       "ingredient_count": 0,
       "ingredient_excerpt": "",
       "method_excerpt": "",
-      "content_review_status": "UNREVIEWED_REQUIRES_MANUAL_CULINARY_COMPARISON"
+      "web_access_note": "GITHUB_FETCHED",
+      "content_review_status": "SOURCE_COMPARISON_RECORDED_FULL_TEXT_NOT_CERTIFIED"
     },
     {
       "id": 43,
@@ -1552,7 +1679,8 @@
       "ingredient_count": 10,
       "ingredient_excerpt": "500 g plain yogurt / 1 pcs egg yolk / 2 tbsp all-purpose flour / 1 cup water / 6 cup vegetable broth / 0.5 cup rice rinsed / 1 tsp salt / 2 tbsp butter / 1 tbsp dried mint / 0.5 tsp red pepper flakes (optional)",
       "method_excerpt": "Rinse the rice under cold water until the water runs clear, then set aside. / In a large pot, bring the vegetable broth to a boil. / Add the rinsed rice to the boiling broth and reduce the heat to a simmer. / Cook the rice fo",
-      "content_review_status": "UNREVIEWED_REQUIRES_MANUAL_CULINARY_COMPARISON"
+      "web_access_note": "GITHUB_FETCHED",
+      "content_review_status": "SOURCE_COMPARISON_RECORDED_FULL_TEXT_NOT_CERTIFIED"
     },
     {
       "id": 44,
@@ -1564,7 +1692,8 @@
       "ingredient_count": 0,
       "ingredient_excerpt": "",
       "method_excerpt": "",
-      "content_review_status": "UNREVIEWED_REQUIRES_MANUAL_CULINARY_COMPARISON"
+      "web_access_note": "GITHUB_FETCHED",
+      "content_review_status": "SOURCE_COMPARISON_RECORDED_FULL_TEXT_NOT_CERTIFIED"
     },
     {
       "id": 44,
@@ -1576,7 +1705,8 @@
       "ingredient_count": 0,
       "ingredient_excerpt": "",
       "method_excerpt": "",
-      "content_review_status": "UNREVIEWED_REQUIRES_MANUAL_CULINARY_COMPARISON"
+      "web_access_note": "GITHUB_FETCHED",
+      "content_review_status": "SOURCE_COMPARISON_RECORDED_FULL_TEXT_NOT_CERTIFIED"
     },
     {
       "id": 44,
@@ -1588,7 +1718,8 @@
       "ingredient_count": 7,
       "ingredient_excerpt": "4 tbsp tarhana powder / 1 lt water or broth / 1 tbsp tomato paste / 2 tbsp butter / 1 tsp salt / 1 tsp red pepper flakes / 1 tsp dried mint",
       "method_excerpt": "Soak the tarhana powder in 1 cup of cold water for about 30 minutes. / Melt butter in a pot, add tomato paste and sauté. / Add the remaining water and bring to a boil. / Add the soaked tarhana and cook, stirring constantly, u",
-      "content_review_status": "UNREVIEWED_REQUIRES_MANUAL_CULINARY_COMPARISON"
+      "web_access_note": "GITHUB_FETCHED",
+      "content_review_status": "SOURCE_COMPARISON_RECORDED_FULL_TEXT_NOT_CERTIFIED"
     },
     {
       "id": 45,
@@ -1600,7 +1731,8 @@
       "ingredient_count": 0,
       "ingredient_excerpt": "",
       "method_excerpt": "",
-      "content_review_status": "UNREVIEWED_REQUIRES_MANUAL_CULINARY_COMPARISON"
+      "web_access_note": "GITHUB_FETCHED",
+      "content_review_status": "SOURCE_COMPARISON_RECORDED_FULL_TEXT_NOT_CERTIFIED"
     },
     {
       "id": 45,
@@ -1612,7 +1744,8 @@
       "ingredient_count": 15,
       "ingredient_excerpt": "800 g pre-cleaned beef tripe (honeycomb or blanket) (rinsed well and cut into 1 cm strips) / 2000 ml water (plus extra for rinsing) / 1 onion (about 150 g, peeled and halved) / 1 leaf bay leaf / 1 tsp black peppercorns / 2 tsp fine salt (about 12 g) ",
       "method_excerpt": "Rinse the tripe under cold running water for 2 minutes, rubbing the surface to remove any lingering odor. Drain well, then cut into thin 1 cm strips so it heats evenly and feels tender in the soup. / Place the tripe in a pot ",
-      "content_review_status": "UNREVIEWED_REQUIRES_MANUAL_CULINARY_COMPARISON"
+      "web_access_note": "GITHUB_FETCHED",
+      "content_review_status": "SOURCE_COMPARISON_RECORDED_FULL_TEXT_NOT_CERTIFIED"
     },
     {
       "id": 45,
@@ -1624,7 +1757,8 @@
       "ingredient_count": 0,
       "ingredient_excerpt": "",
       "method_excerpt": "",
-      "content_review_status": "UNREVIEWED_REQUIRES_MANUAL_CULINARY_COMPARISON"
+      "web_access_note": "GITHUB_FETCHED",
+      "content_review_status": "SOURCE_COMPARISON_RECORDED_FULL_TEXT_NOT_CERTIFIED"
     },
     {
       "id": 46,
@@ -1636,7 +1770,8 @@
       "ingredient_count": 8,
       "ingredient_excerpt": "500 gram kelle / 500 gram pa&ccedil;a / 1 adet limon suyu / Tuz / 1 tatlı kaşığı sirke / 2 yemek kaşığı zeytinyağı / Pul biber / Sarımsak",
       "method_excerpt": "1. İlk adım kelle ve pa&ccedil;anın &ouml;zenli temizliğiyle başlıyor. / 2. Daha sonra bir d&uuml;d&uuml;kl&uuml; tencerenin i&ccedil;ine birlikte koyun. / 3. Tencereyi doldurana kadar su ekleyin ve etler iyice kemikten ayrıl",
-      "content_review_status": "UNREVIEWED_REQUIRES_MANUAL_CULINARY_COMPARISON"
+      "web_access_note": "GITHUB_FETCHED",
+      "content_review_status": "SOURCE_COMPARISON_RECORDED_FULL_TEXT_NOT_CERTIFIED"
     },
     {
       "id": 46,
@@ -1648,7 +1783,8 @@
       "ingredient_count": 11,
       "ingredient_excerpt": "1 adet kelle ((dana, koyun veya dana)) / 4 adet ayak ((dana, koyun veya dana)) / 1 adet yumurta sarısı / 2 yemek kaşığı un / 1 yemek kaşığı tereyağı / 1 tatlı kaşığı toz kırmızı biber / 1 çay kaşığı tuz (azaltıp arttırılabilir) / 1 yemek kaşığı sirke",
       "method_excerpt": "Kelle paça çorbası için 1 adet kelle ve paçayı suda beklettikten sonra suyunu süzün. Düdüklüye alın. Yaklaşık 1-1,5 saat kadar pişirin. / Haşlanan etleri minik minik doğrayın. Haşlama suyuna etleri alın. / Ayrı bir kasede 1 a",
-      "content_review_status": "UNREVIEWED_REQUIRES_MANUAL_CULINARY_COMPARISON"
+      "web_access_note": "GITHUB_FETCHED",
+      "content_review_status": "SOURCE_COMPARISON_RECORDED_FULL_TEXT_NOT_CERTIFIED"
     },
     {
       "id": 46,
@@ -1660,7 +1796,8 @@
       "ingredient_count": 17,
       "ingredient_excerpt": "1000 g lamb trotters, split and cleaned (ask butcher to scrape and split; remove excess hair) / 800 g lamb head pieces, cleaned (cheek and head meat with bone; omit brains) / 3000 ml water (plus extra hot water as needed) / 150 g onion (1 medium, hal",
       "method_excerpt": "Rinse the lamb trotters and head pieces under cold running water for 2 minutes, scrubbing any residue. Place them in a large pot, cover with cold water, and bring to a full boil for 10 minutes to purge impurities. / Drain the",
-      "content_review_status": "UNREVIEWED_REQUIRES_MANUAL_CULINARY_COMPARISON"
+      "web_access_note": "GITHUB_FETCHED",
+      "content_review_status": "SOURCE_COMPARISON_RECORDED_FULL_TEXT_NOT_CERTIFIED"
     },
     {
       "id": 47,
@@ -1672,7 +1809,8 @@
       "ingredient_count": 28,
       "ingredient_excerpt": "2 yemek kaşığı tereyağı (isteğe g&ouml;re zeytinyağı da kullanılabilir) / 3 adet orta boy havu&ccedil; / 3 adet orta boy patates / 1 su bardağı haşlanmış nohut (kabukları soyulmuş) / 1,5 litre sıcak su / 400 gr orta yağlı kıyma (dana veya kuzu) / 1 a",
       "method_excerpt": "1. &Ouml;ncelikle k&ouml;fte harcını hazırlayın. / 2. Kıyma, rendelenmiş soğan, tuz ve karabiberi bir kaba alıp iyice yoğurun. / 3. Har&ccedil; toparlanmazsa az miktarda ince bulgur ekleyebilirsiniz. / 4. Karışımdan k&uuml;&c",
-      "content_review_status": "UNREVIEWED_REQUIRES_MANUAL_CULINARY_COMPARISON"
+      "web_access_note": "GITHUB_FETCHED",
+      "content_review_status": "SOURCE_COMPARISON_RECORDED_FULL_TEXT_NOT_CERTIFIED"
     },
     {
       "id": 47,
@@ -1684,7 +1822,8 @@
       "ingredient_count": 0,
       "ingredient_excerpt": "",
       "method_excerpt": "",
-      "content_review_status": "UNREVIEWED_REQUIRES_MANUAL_CULINARY_COMPARISON"
+      "web_access_note": "GITHUB_FETCHED",
+      "content_review_status": "SOURCE_COMPARISON_RECORDED_FULL_TEXT_NOT_CERTIFIED"
     },
     {
       "id": 47,
@@ -1696,7 +1835,8 @@
       "ingredient_count": 13,
       "ingredient_excerpt": "1 adet patates / 1 adet havuç / 300 gram kıyma (az yağlı) / 1 çay bardağı pirinç / 1 yemek kaşığı nane / 1 yemek kaşığı kekik / 1 çay kaşığı karabiber / 1 adet limon / 1 adet yumurta / 1 tutam tuz / 1 yemek kaşığı un / 6 su bardağı su / 1 tepeleme ye",
       "method_excerpt": "Bir kapta kıyma, un, pirinç ve baharatları bir arada harmanlıyoruz. Köfte yoğurur gibi yoğuruyoruz. / Daha sonra küçük yuvarlak toplar hazırlıyoruz. Unu bir tepsiye döküp iyice köfteleri una buluyoruz. / Tencereye yağımızı ve",
-      "content_review_status": "UNREVIEWED_REQUIRES_MANUAL_CULINARY_COMPARISON"
+      "web_access_note": "GITHUB_FETCHED",
+      "content_review_status": "SOURCE_COMPARISON_RECORDED_FULL_TEXT_NOT_CERTIFIED"
     },
     {
       "id": 48,
@@ -1708,7 +1848,8 @@
       "ingredient_count": 0,
       "ingredient_excerpt": "",
       "method_excerpt": "",
-      "content_review_status": "UNREVIEWED_REQUIRES_MANUAL_CULINARY_COMPARISON"
+      "web_access_note": "GITHUB_FETCHED",
+      "content_review_status": "SOURCE_COMPARISON_RECORDED_FULL_TEXT_NOT_CERTIFIED"
     },
     {
       "id": 48,
@@ -1720,7 +1861,8 @@
       "ingredient_count": 0,
       "ingredient_excerpt": "",
       "method_excerpt": "",
-      "content_review_status": "UNREVIEWED_REQUIRES_MANUAL_CULINARY_COMPARISON"
+      "web_access_note": "GITHUB_FETCHED",
+      "content_review_status": "SOURCE_COMPARISON_RECORDED_FULL_TEXT_NOT_CERTIFIED"
     },
     {
       "id": 48,
@@ -1732,7 +1874,8 @@
       "ingredient_count": 21,
       "ingredient_excerpt": "1 su bardağı haşlanmış nohut / 500 gram kemikli kuzu gerdan / 6 su bardağı s&uuml;z&uuml;lm&uuml;ş et suyu / 1 &ccedil;ay kaşığı tuz / Yarım &ccedil;ay kaşığı karabiber / Eti haşlamak i&ccedil;in yaklaşık 1,5 litre su / 4 yemek kaşığı yoğurt / 2 yeme",
       "method_excerpt": "1. Kuzu gerdanı d&uuml;d&uuml;kl&uuml; tencereye yerleştirip &uuml;zerine yaklaşık 1,5 litre su ekleyin. / 2. Tencerenizin kapasitesine ve kullanım talimatlarına uygun şekilde kapağını kapatın. / 3. Basın&ccedil; oluştuktan s",
-      "content_review_status": "UNREVIEWED_REQUIRES_MANUAL_CULINARY_COMPARISON"
+      "web_access_note": "GITHUB_FETCHED",
+      "content_review_status": "SOURCE_COMPARISON_RECORDED_FULL_TEXT_NOT_CERTIFIED"
     },
     {
       "id": 49,
@@ -1744,7 +1887,8 @@
       "ingredient_count": 24,
       "ingredient_excerpt": "1 &ccedil;ay bardağı erişte / 1 adet k&uuml;&ccedil;&uuml;k boy soğan (ince doğranmış) / 1 yemek kaşığı domates sal&ccedil;ası / 1 yemek kaşığı un / 1 yemek kaşığı zeytinyağı / 1 litre su / Tuz / 1 yemek kaşığı kuru nane / Tel şehriye / Arpa şehriye ",
       "method_excerpt": "1. Zeytinyağını tencereye alın ve ince doğranmış soğanı ekleyin. / 2. Soğanlar pembeleşene kadar orta ateşte kavurun. / 3. Unu ekleyin ve kokusu &ccedil;ıkana kadar kısa s&uuml;re kavurmaya devam edin. / 4. Domates sal&ccedil",
-      "content_review_status": "UNREVIEWED_REQUIRES_MANUAL_CULINARY_COMPARISON"
+      "web_access_note": "GITHUB_FETCHED",
+      "content_review_status": "SOURCE_COMPARISON_RECORDED_FULL_TEXT_NOT_CERTIFIED"
     },
     {
       "id": 49,
@@ -1756,7 +1900,8 @@
       "ingredient_count": 24,
       "ingredient_excerpt": "1 çay bardağı erişte / 1 adet küçük boy soğan (ince doğranmış) / 1 yemek kaşığı domates salçası / 1 yemek kaşığı un / 1 yemek kaşığı zeytinyağı / 1 litre su / Tuz / 1 yemek kaşığı kuru nane / Tel şehriye / Arpa şehriye / Küçük kesme makarna / 1 diş s",
       "method_excerpt": "Zeytinyağını tencereye alın ve ince doğranmış soğanı ekleyin. / Soğanlar pembeleşene kadar orta ateşte kavurun. / Unu ekleyin ve kokusu çıkana kadar kısa süre kavurmaya devam edin. / Domates salçasını ilave edip karıştırın. /",
-      "content_review_status": "UNREVIEWED_REQUIRES_MANUAL_CULINARY_COMPARISON"
+      "web_access_note": "GITHUB_FETCHED",
+      "content_review_status": "SOURCE_COMPARISON_RECORDED_FULL_TEXT_NOT_CERTIFIED"
     },
     {
       "id": 49,
@@ -1768,7 +1913,8 @@
       "ingredient_count": 0,
       "ingredient_excerpt": "",
       "method_excerpt": "",
-      "content_review_status": "UNREVIEWED_REQUIRES_MANUAL_CULINARY_COMPARISON"
+      "web_access_note": "GITHUB_FETCHED",
+      "content_review_status": "SOURCE_COMPARISON_RECORDED_FULL_TEXT_NOT_CERTIFIED"
     },
     {
       "id": 50,
@@ -1780,7 +1926,8 @@
       "ingredient_count": 0,
       "ingredient_excerpt": "",
       "method_excerpt": "",
-      "content_review_status": "UNREVIEWED_REQUIRES_MANUAL_CULINARY_COMPARISON"
+      "web_access_note": "GITHUB_FETCHED",
+      "content_review_status": "SOURCE_COMPARISON_RECORDED_FULL_TEXT_NOT_CERTIFIED"
     },
     {
       "id": 50,
@@ -1792,7 +1939,8 @@
       "ingredient_count": 28,
       "ingredient_excerpt": "1 su bardağı haşlanmış nohut / 1 su bardağı haşlanmış yeşil mercimek / 1 su bardağı erişte / 1 demet taze nane / 6 su bardağı sıcak su (yaklaşık 1300 ml) / 1 adet kuru soğan / 1 tatlı kaşığı kuru nane / 1 tatlı kaşığı tuz / 1 &ccedil;ay kaşığı pul bi",
       "method_excerpt": "1. İlk olarak derin bir tencereye 6,5 su bardağı suyu koyup kaynamaya bırakın. / 2. Su kaynadığında haşlanmış yeşil mercimek, haşlanmış nohut ve erişteyi ilave edin. / 3. Malzemeleri karıştırarak birlikte pişmeye bırakın. / 4",
-      "content_review_status": "UNREVIEWED_REQUIRES_MANUAL_CULINARY_COMPARISON"
+      "web_access_note": "GITHUB_FETCHED",
+      "content_review_status": "SOURCE_COMPARISON_RECORDED_FULL_TEXT_NOT_CERTIFIED"
     },
     {
       "id": 50,
@@ -1804,7 +1952,8 @@
       "ingredient_count": 11,
       "ingredient_excerpt": "1,5 su bardağı haşlanmış nohut / 1 çay bardağı yeşil mercimek / 1 su bardağı erişte / 6-8 su bardağı su / 4 tepeleme yemek kaşığı süzme yoğurt ((veya 2 su bardağı doğal yoğurt)) / 1 tepeleme yemek kaşığı un / 1 tatlı kaşığı tuz / 1 adet yumurta sarıs",
       "method_excerpt": "Tutmaç çorbası için yeşil mercimeği yarım saat suda bekletip yıkayın ve haşlayın. / Tencereye suyu ekleyin ve kaynamaya başlayınca erişteyi ilave edip pişirmeye bırakın. / Terbiyesi için ayrı bir kapta, yoğurt, yumurta sarısı",
-      "content_review_status": "UNREVIEWED_REQUIRES_MANUAL_CULINARY_COMPARISON"
+      "web_access_note": "GITHUB_FETCHED",
+      "content_review_status": "SOURCE_COMPARISON_RECORDED_FULL_TEXT_NOT_CERTIFIED"
     },
     {
       "id": 51,
@@ -1816,7 +1965,8 @@
       "ingredient_count": 7,
       "ingredient_excerpt": "4 cups water / 1 piece kombu (dried kelp) ((⅓ oz, 10 g per piece; 4 x 4 inches or 10 x 10 cm)) / 1 cup katsuobushi (dried bonito flakes) ((packed; add more for stronger flavor; I used a loosely packed 3 cups in the video)) / 7 oz soft/silken tofu (ki",
       "method_excerpt": "Before we start... If you want to make miso soup in less than 10 minutes, follow my Easy Miso Soup recipe, using a dashi packet or powder.In this recipe, I make Awase Dashi from scratch with kombu and katsuobushi.For vegan/ve",
-      "content_review_status": "UNREVIEWED_REQUIRES_MANUAL_CULINARY_COMPARISON"
+      "web_access_note": "GITHUB_FETCHED",
+      "content_review_status": "SOURCE_COMPARISON_RECORDED_FULL_TEXT_NOT_CERTIFIED"
     },
     {
       "id": 51,
@@ -1828,7 +1978,8 @@
       "ingredient_count": 0,
       "ingredient_excerpt": "",
       "method_excerpt": "",
-      "content_review_status": "UNREVIEWED_REQUIRES_MANUAL_CULINARY_COMPARISON"
+      "web_access_note": "GITHUB_FETCHED",
+      "content_review_status": "SOURCE_COMPARISON_RECORDED_FULL_TEXT_NOT_CERTIFIED"
     },
     {
       "id": 51,
@@ -1840,7 +1991,8 @@
       "ingredient_count": 0,
       "ingredient_excerpt": "",
       "method_excerpt": "",
-      "content_review_status": "UNREVIEWED_REQUIRES_MANUAL_CULINARY_COMPARISON"
+      "web_access_note": "OPENED_VIA_WEB_TO_BYPASS_AUTOMATION_BLOCK",
+      "content_review_status": "SOURCE_COMPARISON_RECORDED_FULL_TEXT_NOT_CERTIFIED"
     },
     {
       "id": 52,
@@ -1852,7 +2004,8 @@
       "ingredient_count": 17,
       "ingredient_excerpt": "12 QT water / 1⅓ lbs pork leg bones / ½ yellow onion ((large; skin on and trimmed of the root)) / 5 cloves garlic ((skin on)) / 1 knob fresh ginger ((skin on, sliced)) / 2 lbs pork belly block / 3.5 oz rendered chicken fat / 2 Tokyo negi (long green ",
       "method_excerpt": "Before You Start... / To Start the Soup Broth and Chashu (at least 6 hours before serving) / To Make the Chashu Sauce / To Add the Chicken Fat to the Broth / To Braise the Chashu (2 Hours) / To Simmer the Soup Broth",
-      "content_review_status": "UNREVIEWED_REQUIRES_MANUAL_CULINARY_COMPARISON"
+      "web_access_note": "GITHUB_FETCHED",
+      "content_review_status": "SOURCE_COMPARISON_RECORDED_FULL_TEXT_NOT_CERTIFIED"
     },
     {
       "id": 52,
@@ -1864,7 +2017,8 @@
       "ingredient_count": 0,
       "ingredient_excerpt": "",
       "method_excerpt": "",
-      "content_review_status": "UNREVIEWED_REQUIRES_MANUAL_CULINARY_COMPARISON"
+      "web_access_note": "OPENED_VIA_WEB_TO_BYPASS_AUTOMATION_BLOCK",
+      "content_review_status": "SOURCE_COMPARISON_RECORDED_FULL_TEXT_NOT_CERTIFIED"
     },
     {
       "id": 52,
@@ -1876,7 +2030,8 @@
       "ingredient_count": 13,
       "ingredient_excerpt": "2½ cups water / 3 tsp torigara soup / 1 clove garlic crushed / 3 slices ginger / 2 inch scallions / 4 tsp soy sauce / 2 potions ramen noodles / 4 cups water for cooking noodles / 2 soft boiled egg (* suggestions only ) / 4-5 Menma bamboo shoots (*sug",
       "method_excerpt": "Boil 2½ cups of water with torigara soup powder, crushed garlic, ginger slices and scallions. / Add soy sauce when it boils and turn the heat off. / Strain the garlic, ginger and scallions, and pour the soup into 2 ramen bowl",
-      "content_review_status": "UNREVIEWED_REQUIRES_MANUAL_CULINARY_COMPARISON"
+      "web_access_note": "GITHUB_FETCHED",
+      "content_review_status": "SOURCE_COMPARISON_RECORDED_FULL_TEXT_NOT_CERTIFIED"
     },
     {
       "id": 53,
@@ -1888,7 +2043,8 @@
       "ingredient_count": 24,
       "ingredient_excerpt": "2 cloves garlic / ½ tsp fresh ginger ((grated)) / 1 shallot / 1 Tbsp toasted white sesame seeds / 1 Tbsp toasted sesame oil / ¼ lb ground pork ((use meat alternatives or chopped mushrooms for vegan/vegetarian)) / 1 tsp doubanjiang (spicy chili bean p",
       "method_excerpt": "Before You Start / To Prepare the Soup Ingredients / To Make the Soup Broth / To Prepare the Ramen Noodles / To Serve / To Store",
-      "content_review_status": "UNREVIEWED_REQUIRES_MANUAL_CULINARY_COMPARISON"
+      "web_access_note": "GITHUB_FETCHED",
+      "content_review_status": "SOURCE_COMPARISON_RECORDED_FULL_TEXT_NOT_CERTIFIED"
     },
     {
       "id": 53,
@@ -1900,7 +2056,8 @@
       "ingredient_count": 0,
       "ingredient_excerpt": "",
       "method_excerpt": "",
-      "content_review_status": "UNREVIEWED_REQUIRES_MANUAL_CULINARY_COMPARISON"
+      "web_access_note": "OPENED_VIA_WEB_TO_BYPASS_AUTOMATION_BLOCK",
+      "content_review_status": "SOURCE_COMPARISON_RECORDED_FULL_TEXT_NOT_CERTIFIED"
     },
     {
       "id": 53,
@@ -1912,7 +2069,8 @@
       "ingredient_count": 0,
       "ingredient_excerpt": "",
       "method_excerpt": "",
-      "content_review_status": "UNREVIEWED_REQUIRES_MANUAL_CULINARY_COMPARISON"
+      "web_access_note": "GITHUB_FETCHED",
+      "content_review_status": "SOURCE_COMPARISON_RECORDED_FULL_TEXT_NOT_CERTIFIED"
     },
     {
       "id": 54,
@@ -1924,7 +2082,8 @@
       "ingredient_count": 26,
       "ingredient_excerpt": "3½ lb pork leg bones / 1.3 lb pork hock with skin ((or use 1 pig foot/trotter)) / 2 QT water / 1 head garlic ((3 oz, 85 g)) / 1 knob fresh ginger ((1 inch, 2.5 cm; skin on)) / 2 cups water / 1 piece kombu (dried kelp) ((6 x 6 inches, 15 x 15 cm per p",
       "method_excerpt": "To Cold Brew the Dashi / To Pressure Cook the Tonkotsu Broth / To Make the Shoyu Tare (Seasoning Sauce) / To Prepare the Hidden Seasonings / To Release the Pressure / To Boil the Broth to a Boil",
-      "content_review_status": "UNREVIEWED_REQUIRES_MANUAL_CULINARY_COMPARISON"
+      "web_access_note": "GITHUB_FETCHED",
+      "content_review_status": "SOURCE_COMPARISON_RECORDED_FULL_TEXT_NOT_CERTIFIED"
     },
     {
       "id": 54,
@@ -1936,7 +2095,8 @@
       "ingredient_count": 0,
       "ingredient_excerpt": "",
       "method_excerpt": "",
-      "content_review_status": "UNREVIEWED_REQUIRES_MANUAL_CULINARY_COMPARISON"
+      "web_access_note": "GITHUB_FETCHED",
+      "content_review_status": "SOURCE_COMPARISON_RECORDED_FULL_TEXT_NOT_CERTIFIED"
     },
     {
       "id": 54,
@@ -1948,7 +2108,8 @@
       "ingredient_count": 0,
       "ingredient_excerpt": "",
       "method_excerpt": "",
-      "content_review_status": "UNREVIEWED_REQUIRES_MANUAL_CULINARY_COMPARISON"
+      "web_access_note": "OPENED_VIA_WEB_TO_BYPASS_AUTOMATION_BLOCK",
+      "content_review_status": "SOURCE_COMPARISON_RECORDED_FULL_TEXT_NOT_CERTIFIED"
     },
     {
       "id": 55,
@@ -1960,7 +2121,8 @@
       "ingredient_count": 17,
       "ingredient_excerpt": "10 oz thinly sliced pork belly / ½ gobo (burdock root) ((3.5 oz, 100 g)) / 3 taro (satoimo) ((8 oz, 230 g)) / 1 yellow onion ((6 oz, 170 g)) / 2½ inches daikon radish ((8.8 oz, 250 g)) / 4 inches carrot ((4.2 oz, 120 g)) / ½ block konnyaku (konjac) (",
       "method_excerpt": "Before You Start / To Prepare the Ingredients / To Cook the Tonjiru / To Finish the Soup / To Serve / To Store",
-      "content_review_status": "UNREVIEWED_REQUIRES_MANUAL_CULINARY_COMPARISON"
+      "web_access_note": "GITHUB_FETCHED",
+      "content_review_status": "SOURCE_COMPARISON_RECORDED_FULL_TEXT_NOT_CERTIFIED"
     },
     {
       "id": 55,
@@ -1972,7 +2134,8 @@
       "ingredient_count": 11,
       "ingredient_excerpt": "150g (5.3oz) pork belly (, thinly sliced, cut into bite size pieces (note 1)) / 600ml (20.3oz) dashi stock ((note 2)) / 2 tbsp miso ((note 3)) / 100g (3.5oz) daikon ((white radish), quartered and sliced 7mm thick) / 100g (3.5oz) carrots (, halved and",
       "method_excerpt": "Heat a saucepan with a dash of oil (not in ingredients, note 8) and sauté pork over high heat until the surface of the pork is cooked. / Add all the vegetables except shallots to the pan and sauté until the surface of the veg",
-      "content_review_status": "UNREVIEWED_REQUIRES_MANUAL_CULINARY_COMPARISON"
+      "web_access_note": "GITHUB_FETCHED",
+      "content_review_status": "SOURCE_COMPARISON_RECORDED_FULL_TEXT_NOT_CERTIFIED"
     },
     {
       "id": 55,
@@ -1984,7 +2147,8 @@
       "ingredient_count": 11,
       "ingredient_excerpt": "Thinly sliced pork belly 150g / Daikon radish 5 cm (about 200 g) / Carrot 1/2 (about 80 g) / Burdock root (gobo) 1/3 (about 50 g) / Japanese leek (naganegi) 1/2 / Konnyaku (konjac jelly) 1/2 block (about 100 g) / Miso 3–4 tbsp / Dashi granules (Japan",
       "method_excerpt": "Peel the daikon and cut into quarter-rounds 5 mm thick (cut rounds into 4)。Cut the carrot into quarter-rounds 5 mm thick too (no need to peel)。Scrub the burdock with a brush, cut into thin diagonal slices, soak in water for 5",
-      "content_review_status": "UNREVIEWED_REQUIRES_MANUAL_CULINARY_COMPARISON"
+      "web_access_note": "GITHUB_FETCHED",
+      "content_review_status": "SOURCE_COMPARISON_RECORDED_FULL_TEXT_NOT_CERTIFIED"
     },
     {
       "id": 56,
@@ -1996,7 +2160,8 @@
       "ingredient_count": 17,
       "ingredient_excerpt": "1 piece kombu (dried kelp) ((4 x 4 inches, 10 x 10 cm per piece)) / 5 cups water ((for the kombu)) / 3 dried shiitake mushrooms / 1 cup water ((for the shiitake)) / 7 oz firm tofu ((½ 14-oz block)) / ½ package konnyaku (konjac) ((4.6 oz, 130 g)) / 7 ",
       "method_excerpt": "Gather all the ingredients. / To Prepare the Ingredients / To Cook the Kenchinjiru / To Serve / To Store",
-      "content_review_status": "UNREVIEWED_REQUIRES_MANUAL_CULINARY_COMPARISON"
+      "web_access_note": "GITHUB_FETCHED",
+      "content_review_status": "SOURCE_COMPARISON_RECORDED_FULL_TEXT_NOT_CERTIFIED"
     },
     {
       "id": 56,
@@ -2008,7 +2173,8 @@
       "ingredient_count": 0,
       "ingredient_excerpt": "",
       "method_excerpt": "",
-      "content_review_status": "UNREVIEWED_REQUIRES_MANUAL_CULINARY_COMPARISON"
+      "web_access_note": "GITHUB_FETCHED",
+      "content_review_status": "SOURCE_COMPARISON_RECORDED_FULL_TEXT_NOT_CERTIFIED"
     },
     {
       "id": 56,
@@ -2020,7 +2186,8 @@
       "ingredient_count": 0,
       "ingredient_excerpt": "",
       "method_excerpt": "",
-      "content_review_status": "UNREVIEWED_REQUIRES_MANUAL_CULINARY_COMPARISON"
+      "web_access_note": "GITHUB_FETCHED",
+      "content_review_status": "SOURCE_COMPARISON_RECORDED_FULL_TEXT_NOT_CERTIFIED"
     },
     {
       "id": 57,
@@ -2032,7 +2199,8 @@
       "ingredient_count": 11,
       "ingredient_excerpt": "1 chicken thigh / ¼ tsp Diamond Crystal kosher salt (use half the amount or the same weight for table salt) ((for the chicken)) / 1 Tbsp sake ((for the chicken)) / 4 stalks komatsuna ((3.5 oz, 100 g; or use spinach)) / yuzu zest ((optional)) / 4 spri",
       "method_excerpt": "Before You Start: Please note that this recipe calls for homemade dashi that takes a minimum of 20 minutes to make. Please see my recipe for How to Make Dashi. If you don‘t have time to make this Japanese soup stock from scra",
-      "content_review_status": "UNREVIEWED_REQUIRES_MANUAL_CULINARY_COMPARISON"
+      "web_access_note": "GITHUB_FETCHED",
+      "content_review_status": "SOURCE_COMPARISON_RECORDED_FULL_TEXT_NOT_CERTIFIED"
     },
     {
       "id": 57,
@@ -2044,7 +2212,8 @@
       "ingredient_count": 0,
       "ingredient_excerpt": "",
       "method_excerpt": "",
-      "content_review_status": "UNREVIEWED_REQUIRES_MANUAL_CULINARY_COMPARISON"
+      "web_access_note": "GITHUB_FETCHED",
+      "content_review_status": "SOURCE_COMPARISON_RECORDED_FULL_TEXT_NOT_CERTIFIED"
     },
     {
       "id": 57,
@@ -2056,7 +2225,8 @@
       "ingredient_count": 0,
       "ingredient_excerpt": "",
       "method_excerpt": "",
-      "content_review_status": "UNREVIEWED_REQUIRES_MANUAL_CULINARY_COMPARISON"
+      "web_access_note": "GITHUB_FETCHED",
+      "content_review_status": "SOURCE_COMPARISON_RECORDED_FULL_TEXT_NOT_CERTIFIED"
     },
     {
       "id": 58,
@@ -2068,7 +2238,8 @@
       "ingredient_count": 0,
       "ingredient_excerpt": "",
       "method_excerpt": "",
-      "content_review_status": "UNREVIEWED_REQUIRES_MANUAL_CULINARY_COMPARISON"
+      "web_access_note": "GITHUB_FETCHED",
+      "content_review_status": "SOURCE_COMPARISON_RECORDED_FULL_TEXT_NOT_CERTIFIED"
     },
     {
       "id": 58,
@@ -2080,19 +2251,21 @@
       "ingredient_count": 13,
       "ingredient_excerpt": "Thinly sliced beef (komagire) 250g / Taro (satoimo) 6–8 (about 500 g) / Japanese leek (naganegi) 1 stalk / Maitake mushrooms 1 pack (about 100 g) / Konnyaku (labeled \"no pre-boiling needed\") 1 (about 250 g) / Dashi granules (Japanese soup stock) 1 ts",
       "method_excerpt": "Wash the taro in water to remove dirt, then wipe the surface dry with a paper towel or cloth (they slip when wet)。If your hands get itchy, wear plastic gloves。Put one on the cutting board and cut a little off the top and bott",
-      "content_review_status": "UNREVIEWED_REQUIRES_MANUAL_CULINARY_COMPARISON"
+      "web_access_note": "GITHUB_FETCHED",
+      "content_review_status": "SOURCE_COMPARISON_RECORDED_FULL_TEXT_NOT_CERTIFIED"
     },
     {
       "id": 58,
       "source_position": 3,
-      "url": "https://www.fun-japan.jp/en/articles/13204",
+      "url": "https://www.umamiinfo.com/japaneseumami2/localcuisine/category-01/yamagata/imoni.html",
       "availability": "FETCHED_UNREVIEWED",
-      "title": "japanese local cuisine reproduction series ⑤: yamagata prefecture: imoni",
+      "title": "imoni | local cuisine in japan and umami | umami information center",
       "recipe_schema_found": false,
       "ingredient_count": 0,
       "ingredient_excerpt": "",
       "method_excerpt": "",
-      "content_review_status": "UNREVIEWED_REQUIRES_MANUAL_CULINARY_COMPARISON"
+      "web_access_note": "GITHUB_FETCHED",
+      "content_review_status": "SOURCE_COMPARISON_RECORDED_FULL_TEXT_NOT_CERTIFIED"
     },
     {
       "id": 59,
@@ -2104,7 +2277,8 @@
       "ingredient_count": 16,
       "ingredient_excerpt": "3 cups water / 1 piece kombu (dried kelp) ((10 g, 4 x 4 inches, 10 x 10 cm per piece)) / 1 cup katsuobushi (dried bonito flakes) / 1 Tbsp sake / 2 Tbsp mirin / 2 Tbsp soy sauce / 1 tsp Diamond Crystal kosher salt (use half the amount or the same weig",
       "method_excerpt": "To Make the Soba Broth from Scratch (without mentsuyu) / To Prepare the Toppings / To Cook the Soba Noodles / To Assemble / To Store / To Make the Quick Soba Broth (with Concentrated Mentsuyu; Optional)",
-      "content_review_status": "UNREVIEWED_REQUIRES_MANUAL_CULINARY_COMPARISON"
+      "web_access_note": "GITHUB_FETCHED",
+      "content_review_status": "SOURCE_COMPARISON_RECORDED_FULL_TEXT_NOT_CERTIFIED"
     },
     {
       "id": 59,
@@ -2116,7 +2290,8 @@
       "ingredient_count": 0,
       "ingredient_excerpt": "",
       "method_excerpt": "",
-      "content_review_status": "UNREVIEWED_REQUIRES_MANUAL_CULINARY_COMPARISON"
+      "web_access_note": "GITHUB_FETCHED",
+      "content_review_status": "SOURCE_COMPARISON_RECORDED_FULL_TEXT_NOT_CERTIFIED"
     },
     {
       "id": 59,
@@ -2128,7 +2303,8 @@
       "ingredient_count": 0,
       "ingredient_excerpt": "",
       "method_excerpt": "",
-      "content_review_status": "UNREVIEWED_REQUIRES_MANUAL_CULINARY_COMPARISON"
+      "web_access_note": "GITHUB_FETCHED",
+      "content_review_status": "SOURCE_COMPARISON_RECORDED_FULL_TEXT_NOT_CERTIFIED"
     },
     {
       "id": 60,
@@ -2140,7 +2316,8 @@
       "ingredient_count": 0,
       "ingredient_excerpt": "",
       "method_excerpt": "",
-      "content_review_status": "UNREVIEWED_REQUIRES_MANUAL_CULINARY_COMPARISON"
+      "web_access_note": "GITHUB_FETCHED",
+      "content_review_status": "SOURCE_COMPARISON_RECORDED_FULL_TEXT_NOT_CERTIFIED"
     },
     {
       "id": 60,
@@ -2152,7 +2329,8 @@
       "ingredient_count": 11,
       "ingredient_excerpt": "Dried horse mackerel (aji no himono) 1 / Firm tofu 1/2 block (150 g) / Cucumbers 1 stalk / Shiso leaves (ooba) 4 fillets / Ground white sesame seeds 2 tbsp / Cold water 400ml / Ice 6–8 / Miso 2 1/2 tbsp / Salt 1/4 tsp / Cooked rice 2 bowls (about 300",
       "method_excerpt": "Line a frying pan with the sheet and lay the dried fish on it flesh side down。Cook on medium heat for about 4 minutes。Turn over with a spatula and cook the skin side for 3–4 minutes。 / When the fish is cool enough to touch, r",
-      "content_review_status": "UNREVIEWED_REQUIRES_MANUAL_CULINARY_COMPARISON"
+      "web_access_note": "GITHUB_FETCHED",
+      "content_review_status": "SOURCE_COMPARISON_RECORDED_FULL_TEXT_NOT_CERTIFIED"
     },
     {
       "id": 60,
@@ -2164,7 +2342,8 @@
       "ingredient_count": 9,
       "ingredient_excerpt": "2½ cups water / 1 dashi packet / 4 Tbsp miso / 2 Tbsp toasted white sesame seeds / 4 oz Japanese or Persian cucumber / ¼ tsp Diamond Crystal kosher salt (use half the amount or the same weight for table salt) / 10 shiso leaves (perilla/ooba) ((or use",
       "method_excerpt": "Gather all the ingredients. / To Make the Dashi (Japanese Soup Stock) / To Prepare the Sesame and Miso / To Prepare the Ingredients / To Assemble and Serve the Soup / To Store",
-      "content_review_status": "UNREVIEWED_REQUIRES_MANUAL_CULINARY_COMPARISON"
+      "web_access_note": "GITHUB_FETCHED",
+      "content_review_status": "SOURCE_COMPARISON_RECORDED_FULL_TEXT_NOT_CERTIFIED"
     },
     {
       "id": 61,
@@ -2176,7 +2355,8 @@
       "ingredient_count": 0,
       "ingredient_excerpt": "",
       "method_excerpt": "",
-      "content_review_status": "UNREVIEWED_REQUIRES_MANUAL_CULINARY_COMPARISON"
+      "web_access_note": "OPENED_VIA_WEB_TO_BYPASS_AUTOMATION_BLOCK",
+      "content_review_status": "SOURCE_COMPARISON_RECORDED_FULL_TEXT_NOT_CERTIFIED"
     },
     {
       "id": 61,
@@ -2188,7 +2368,8 @@
       "ingredient_count": 16,
       "ingredient_excerpt": "1 ounce dried gosari, 고사리 (fernbrakes) - about 1 cup rehydrated / 1 pound beef brisket, 양지머리 (or flank steak or shank meat) / 1/2 onion (do not cut off the stem) / 8 ounces Korean radish (mu, 무), cut into big chunks - optional / 8 ounces bean sprouts",
       "method_excerpt": "Add the gosari and 4 cups of water to a small pot. Boil over medium heat, covered, until tender. Mine only took about 30 minutes, but the time can vary significantly depending on gosari. Turn the heat off and let it cool in t",
-      "content_review_status": "UNREVIEWED_REQUIRES_MANUAL_CULINARY_COMPARISON"
+      "web_access_note": "GITHUB_FETCHED",
+      "content_review_status": "SOURCE_COMPARISON_RECORDED_FULL_TEXT_NOT_CERTIFIED"
     },
     {
       "id": 61,
@@ -2200,7 +2381,8 @@
       "ingredient_count": 0,
       "ingredient_excerpt": "",
       "method_excerpt": "",
-      "content_review_status": "UNREVIEWED_REQUIRES_MANUAL_CULINARY_COMPARISON"
+      "web_access_note": "GITHUB_FETCHED",
+      "content_review_status": "SOURCE_COMPARISON_RECORDED_FULL_TEXT_NOT_CERTIFIED"
     },
     {
       "id": 62,
@@ -2212,7 +2394,8 @@
       "ingredient_count": 0,
       "ingredient_excerpt": "",
       "method_excerpt": "",
-      "content_review_status": "UNREVIEWED_REQUIRES_MANUAL_CULINARY_COMPARISON"
+      "web_access_note": "OPENED_VIA_WEB_TO_BYPASS_AUTOMATION_BLOCK",
+      "content_review_status": "SOURCE_COMPARISON_RECORDED_FULL_TEXT_NOT_CERTIFIED"
     },
     {
       "id": 62,
@@ -2224,7 +2407,8 @@
       "ingredient_count": 0,
       "ingredient_excerpt": "",
       "method_excerpt": "",
-      "content_review_status": "UNREVIEWED_REQUIRES_MANUAL_CULINARY_COMPARISON"
+      "web_access_note": "GITHUB_FETCHED",
+      "content_review_status": "SOURCE_COMPARISON_RECORDED_FULL_TEXT_NOT_CERTIFIED"
     },
     {
       "id": 62,
@@ -2236,7 +2420,8 @@
       "ingredient_count": 10,
       "ingredient_excerpt": "1 Cornish hen (about 1.5 pounds) / 1 fresh ginseng root (or dried ginseng, rehydrated) (See note 1) / 3 tablespoons sweet rice (2 to 3 tablespoons more to boil with liquid if desired) / 5 - 6 plump garlic cloves / 2 thin ginger slices (about 1 inch) ",
       "method_excerpt": "Clean the chicken. Do not cut off the neck and/or tail, if they are still attached. They help keep the rice inside the cavity. Place the cleaned chicken on a cutting board or a large plate. Clean the inside of the cavity with",
-      "content_review_status": "UNREVIEWED_REQUIRES_MANUAL_CULINARY_COMPARISON"
+      "web_access_note": "GITHUB_FETCHED",
+      "content_review_status": "SOURCE_COMPARISON_RECORDED_FULL_TEXT_NOT_CERTIFIED"
     },
     {
       "id": 63,
@@ -2248,7 +2433,8 @@
       "ingredient_count": 0,
       "ingredient_excerpt": "",
       "method_excerpt": "",
-      "content_review_status": "UNREVIEWED_REQUIRES_MANUAL_CULINARY_COMPARISON"
+      "web_access_note": "OPENED_VIA_WEB_TO_BYPASS_AUTOMATION_BLOCK",
+      "content_review_status": "SOURCE_COMPARISON_RECORDED_FULL_TEXT_NOT_CERTIFIED"
     },
     {
       "id": 63,
@@ -2260,7 +2446,8 @@
       "ingredient_count": 7,
       "ingredient_excerpt": "3 - 4 pounds beef marrow bones (sagol, 사골), cut up (You can also use cow knuckles (도가니) and/or foot (우족)) / 1 - 2 pounds beef brisket or shank meat / cooked rice / cooked somyeon (or glasnoodles / thinly sliced meat, cooked with the bones / lots of c",
       "method_excerpt": "Preparation / Parboiling / Boiling / Optional step (highly recommended) / Removing fat / Serving",
-      "content_review_status": "UNREVIEWED_REQUIRES_MANUAL_CULINARY_COMPARISON"
+      "web_access_note": "GITHUB_FETCHED",
+      "content_review_status": "SOURCE_COMPARISON_RECORDED_FULL_TEXT_NOT_CERTIFIED"
     },
     {
       "id": 63,
@@ -2272,7 +2459,8 @@
       "ingredient_count": 9,
       "ingredient_excerpt": "3-1/2 lb (1.5 kg) beef marrow bones (sagol) / 3-1/2 lb (1.5 kg) assorted bones (or knuckle bones) / 1 lb (450 g) beef brisket (optional) / water (3 liter (3/4 gallon) per batch) / cooked rice / cooked somyeon noodles / chopped green onion / thinly sl",
       "method_excerpt": "For parboiling / First batch / Second and third batch / Skimming fat / Optional beef brisket / Serving",
-      "content_review_status": "UNREVIEWED_REQUIRES_MANUAL_CULINARY_COMPARISON"
+      "web_access_note": "GITHUB_FETCHED",
+      "content_review_status": "SOURCE_COMPARISON_RECORDED_FULL_TEXT_NOT_CERTIFIED"
     },
     {
       "id": 64,
@@ -2284,7 +2472,8 @@
       "ingredient_count": 0,
       "ingredient_excerpt": "",
       "method_excerpt": "",
-      "content_review_status": "UNREVIEWED_REQUIRES_MANUAL_CULINARY_COMPARISON"
+      "web_access_note": "OPENED_VIA_WEB_TO_BYPASS_AUTOMATION_BLOCK",
+      "content_review_status": "SOURCE_COMPARISON_RECORDED_FULL_TEXT_NOT_CERTIFIED"
     },
     {
       "id": 64,
@@ -2296,7 +2485,8 @@
       "ingredient_count": 12,
       "ingredient_excerpt": "about 3 pounds short ribs / 1 pound Korean radish, mu (무) / 1 medium onion / 2 large scallion white parts / 8 plump garlic cloves / 3 thin ginger slices (1-inch rounds) / 2 tablespoons soup soy sauce (Use 1 T if your soy sauce is dark) / salt and pep",
       "method_excerpt": "Soak the ribs for 30 minutes in cold water. Drain. / Fill a large pot with enough water to cover the ribs, about 8 cups. Bring water to a boil, and then drop the ribs in. Let it come back to a boil. Continue to boil for 2 to ",
-      "content_review_status": "UNREVIEWED_REQUIRES_MANUAL_CULINARY_COMPARISON"
+      "web_access_note": "GITHUB_FETCHED",
+      "content_review_status": "SOURCE_COMPARISON_RECORDED_FULL_TEXT_NOT_CERTIFIED"
     },
     {
       "id": 64,
@@ -2308,7 +2498,8 @@
       "ingredient_count": 0,
       "ingredient_excerpt": "",
       "method_excerpt": "",
-      "content_review_status": "UNREVIEWED_REQUIRES_MANUAL_CULINARY_COMPARISON"
+      "web_access_note": "GITHUB_FETCHED",
+      "content_review_status": "SOURCE_COMPARISON_RECORDED_FULL_TEXT_NOT_CERTIFIED"
     },
     {
       "id": 65,
@@ -2320,7 +2511,8 @@
       "ingredient_count": 7,
       "ingredient_excerpt": "1.5 ounces dried miyeok (yields about 3 cups soaked) / 6 ounces beef (stew meat or brisket) / 2 teaspoons minced garlic / 2 tablespoons soup soy sauce (gukganjang, 국간장) (If unavailable, use 1 T regular soy sauce and season with salt to taste) / 1 tab",
       "method_excerpt": "Soak the dried miyeok per package instructions (usually 10 to 20 min) or until miyeok turns soft and plump. Rinse twice. Drain well, and cut into bite sizes. / Cut the beef into thin bite size pieces. Marinate with 1 tablespo",
-      "content_review_status": "UNREVIEWED_REQUIRES_MANUAL_CULINARY_COMPARISON"
+      "web_access_note": "GITHUB_FETCHED",
+      "content_review_status": "SOURCE_COMPARISON_RECORDED_FULL_TEXT_NOT_CERTIFIED"
     },
     {
       "id": 65,
@@ -2332,7 +2524,8 @@
       "ingredient_count": 0,
       "ingredient_excerpt": "",
       "method_excerpt": "",
-      "content_review_status": "UNREVIEWED_REQUIRES_MANUAL_CULINARY_COMPARISON"
+      "web_access_note": "GITHUB_FETCHED",
+      "content_review_status": "SOURCE_COMPARISON_RECORDED_FULL_TEXT_NOT_CERTIFIED"
     },
     {
       "id": 65,
@@ -2344,7 +2537,8 @@
       "ingredient_count": 10,
       "ingredient_excerpt": "1 oz (30 g) dried seaweed (miyeok) / 1/2 tbsp (7 ml) oil / 1 tbsp (15 ml) sesame oil / 1/2 (about 50 g) small onion (minced) / 2/3 lb (300 g) beef (stew meat, small pieces) / 2 cloves garlic (finely minced) / 2 tbsp (30 ml) Korean soup soy sauce (guk",
       "method_excerpt": "Soak seaweed in cold water for 10-15 mins, then drain and slice. / Heat oil and sesame oil in a soup pot over medium-low heat. Add minced onion and stir-fry for 30 seconds. Add the beef and cook until no longer pink. Add the ",
-      "content_review_status": "UNREVIEWED_REQUIRES_MANUAL_CULINARY_COMPARISON"
+      "web_access_note": "GITHUB_FETCHED",
+      "content_review_status": "SOURCE_COMPARISON_RECORDED_FULL_TEXT_NOT_CERTIFIED"
     },
     {
       "id": 66,
@@ -2356,7 +2550,8 @@
       "ingredient_count": 0,
       "ingredient_excerpt": "",
       "method_excerpt": "",
-      "content_review_status": "UNREVIEWED_REQUIRES_MANUAL_CULINARY_COMPARISON"
+      "web_access_note": "OPENED_VIA_WEB_TO_BYPASS_AUTOMATION_BLOCK",
+      "content_review_status": "SOURCE_COMPARISON_RECORDED_FULL_TEXT_NOT_CERTIFIED"
     },
     {
       "id": 66,
@@ -2368,7 +2563,8 @@
       "ingredient_count": 8,
       "ingredient_excerpt": "10 pieces mandu (dumplings) - adjust to your serving size (See note 1) / 5 cups chicken broth (or other flavorful broth such as beef broth, anchovy broth, vegetable broth, etc.) (See note 2) / 1 tablespoon guk ganjang (soup soy sauce) (or fish sauce ",
       "method_excerpt": "In a medium size pot, add 5 cups of chicken broth (or broth of your choice). (See note below.) Bring it to a boil over medium high heat. / Stir in the garlic, soy sauce, and salt and pepper to taste. Add the mandu pieces, sti",
-      "content_review_status": "UNREVIEWED_REQUIRES_MANUAL_CULINARY_COMPARISON"
+      "web_access_note": "GITHUB_FETCHED",
+      "content_review_status": "SOURCE_COMPARISON_RECORDED_FULL_TEXT_NOT_CERTIFIED"
     },
     {
       "id": 66,
@@ -2380,7 +2576,8 @@
       "ingredient_count": 0,
       "ingredient_excerpt": "",
       "method_excerpt": "",
-      "content_review_status": "UNREVIEWED_REQUIRES_MANUAL_CULINARY_COMPARISON"
+      "web_access_note": "GITHUB_FETCHED",
+      "content_review_status": "SOURCE_COMPARISON_RECORDED_FULL_TEXT_NOT_CERTIFIED"
     },
     {
       "id": 67,
@@ -2392,7 +2589,8 @@
       "ingredient_count": 0,
       "ingredient_excerpt": "",
       "method_excerpt": "",
-      "content_review_status": "UNREVIEWED_REQUIRES_MANUAL_CULINARY_COMPARISON"
+      "web_access_note": "OPENED_VIA_WEB_TO_BYPASS_AUTOMATION_BLOCK",
+      "content_review_status": "SOURCE_COMPARISON_RECORDED_FULL_TEXT_NOT_CERTIFIED"
     },
     {
       "id": 67,
@@ -2404,7 +2602,8 @@
       "ingredient_count": 9,
       "ingredient_excerpt": "2 cups packed bite size kimchi (fully fermented) / 4 ounces fresh pork belly (or other pork meat with some fat or other protein choice) / 1 to 3 teaspoons gochugaru (Korean red chili pepper flakes) ( adjust to taste or omit) / 1 teaspoon minced garli",
       "method_excerpt": "Cut the kimchi into bite size pieces. / Cut the meat into bite sizes. Slice the tofu (about 1/2-inch thick), and roughly chop the scallions. / Heat a small to medium pot with 1 tablespoon of oil. Add the kimchi, pork, red pep",
-      "content_review_status": "UNREVIEWED_REQUIRES_MANUAL_CULINARY_COMPARISON"
+      "web_access_note": "GITHUB_FETCHED",
+      "content_review_status": "SOURCE_COMPARISON_RECORDED_FULL_TEXT_NOT_CERTIFIED"
     },
     {
       "id": 67,
@@ -2416,7 +2615,8 @@
       "ingredient_count": 14,
       "ingredient_excerpt": "1 tbsp (15 ml) oil / 1/2 lb (225 g) pork belly (sliced ) / 1/2 medium onion (sliced) / 2 cloves garlic (finely minced) / 1 tbsp Korean chili flakes (gochugaru) / 1 lb (450 g) sour kimchi (sliced) / 4 tbsp (60 ml) kimchi juice / 2 1/2 cup (600 ml) wat",
       "method_excerpt": "Cook the pork: Heat oil in a pot over medium-high heat. Add the pork belly slices and cook until fully browned. Add onion and garlic, and sauté for 1 minute. Sprinkle in the gochugaru and toss to coat everything evenly. / Add",
-      "content_review_status": "UNREVIEWED_REQUIRES_MANUAL_CULINARY_COMPARISON"
+      "web_access_note": "GITHUB_FETCHED",
+      "content_review_status": "SOURCE_COMPARISON_RECORDED_FULL_TEXT_NOT_CERTIFIED"
     },
     {
       "id": 68,
@@ -2428,7 +2628,8 @@
       "ingredient_count": 0,
       "ingredient_excerpt": "",
       "method_excerpt": "",
-      "content_review_status": "UNREVIEWED_REQUIRES_MANUAL_CULINARY_COMPARISON"
+      "web_access_note": "OPENED_VIA_WEB_TO_BYPASS_AUTOMATION_BLOCK",
+      "content_review_status": "SOURCE_COMPARISON_RECORDED_FULL_TEXT_NOT_CERTIFIED"
     },
     {
       "id": 68,
@@ -2440,7 +2641,8 @@
       "ingredient_count": 6,
       "ingredient_excerpt": "8 ounce kongnamul (soybean sprouts) / 6 - 8 medium to large size dried anchovies for broth / 1 plump garlic clove (thinly sliced or minced) / 1 scallions (chopped) / salt and pepper - See note / 6 cups of water",
       "method_excerpt": "In a medium size pot, bring 6 cups of water with the anchovies and garlic to a boil, uncovered. Reduce the heat to medium high and boil, uncovered, for 10 minutes. Remove the anchovies and garlic from the broth. / Rinse the s",
-      "content_review_status": "UNREVIEWED_REQUIRES_MANUAL_CULINARY_COMPARISON"
+      "web_access_note": "GITHUB_FETCHED",
+      "content_review_status": "SOURCE_COMPARISON_RECORDED_FULL_TEXT_NOT_CERTIFIED"
     },
     {
       "id": 68,
@@ -2452,7 +2654,8 @@
       "ingredient_count": 0,
       "ingredient_excerpt": "",
       "method_excerpt": "",
-      "content_review_status": "UNREVIEWED_REQUIRES_MANUAL_CULINARY_COMPARISON"
+      "web_access_note": "GITHUB_FETCHED",
+      "content_review_status": "SOURCE_COMPARISON_RECORDED_FULL_TEXT_NOT_CERTIFIED"
     },
     {
       "id": 69,
@@ -2464,7 +2667,8 @@
       "ingredient_count": 0,
       "ingredient_excerpt": "",
       "method_excerpt": "",
-      "content_review_status": "UNREVIEWED_REQUIRES_MANUAL_CULINARY_COMPARISON"
+      "web_access_note": "OPENED_VIA_WEB_TO_BYPASS_AUTOMATION_BLOCK",
+      "content_review_status": "SOURCE_COMPARISON_RECORDED_FULL_TEXT_NOT_CERTIFIED"
     },
     {
       "id": 69,
@@ -2476,7 +2680,8 @@
       "ingredient_count": 16,
       "ingredient_excerpt": "2 pounds of pork spine or neck bones / 1/2 small onion / 5 garlic cloves / 4 thin ginger slices (about 1-inch rounds) / 1 scallion white part / 5 to 6 ounces young cabbage, putbaechu, 풋배추 or napa cabbage (1 cup, boiled) / 3 small white potatoes / 6 t",
       "method_excerpt": "Soak the bones for an hour or longer in cold water. Change the water half way through if you can. Drain. / Bring a medium pot of water to a boil. Drop the bones in. Let it come back to a boil. This will take about 7 to 8 minu",
-      "content_review_status": "UNREVIEWED_REQUIRES_MANUAL_CULINARY_COMPARISON"
+      "web_access_note": "GITHUB_FETCHED",
+      "content_review_status": "SOURCE_COMPARISON_RECORDED_FULL_TEXT_NOT_CERTIFIED"
     },
     {
       "id": 69,
@@ -2488,7 +2693,8 @@
       "ingredient_count": 31,
       "ingredient_excerpt": "15 green outer napa cabbage leaves / 2 1/2 lb pork neck bone or baby back ribs / 2 lb yukon gold potato, peeled, large ones are cut in halves and small ones are leave as whole. / 1/3 cup wild sesame seeds / 1 bay leaf / 4 to 5 ginger slices / 2 green",
       "method_excerpt": "Blench napa cabbage leaves in salted boiling water until soften, about 2 minutes. Remove from water and drain. Set aside. / In same salted boiling water, place pork neck bones and bring back to boil. It will take about 5 to 8",
-      "content_review_status": "UNREVIEWED_REQUIRES_MANUAL_CULINARY_COMPARISON"
+      "web_access_note": "GITHUB_FETCHED",
+      "content_review_status": "SOURCE_COMPARISON_RECORDED_FULL_TEXT_NOT_CERTIFIED"
     },
     {
       "id": 70,
@@ -2500,7 +2706,8 @@
       "ingredient_count": 0,
       "ingredient_excerpt": "",
       "method_excerpt": "",
-      "content_review_status": "UNREVIEWED_REQUIRES_MANUAL_CULINARY_COMPARISON"
+      "web_access_note": "OPENED_VIA_WEB_TO_BYPASS_AUTOMATION_BLOCK",
+      "content_review_status": "SOURCE_COMPARISON_RECORDED_FULL_TEXT_NOT_CERTIFIED"
     },
     {
       "id": 70,
@@ -2512,7 +2719,8 @@
       "ingredient_count": 12,
       "ingredient_excerpt": "3 ounces pork (preferably fatty pork) (shoulder, or loin (or beef)) / 9 ounces tofu (dubu, 두부) / 1/2 medium zucchini (4 to 5 ounces) / 2 ounces Korean radish (mu, 무) (and/or 1 small potato, sliced into 1/4-inch thick bite size pieces. ) / 1/4 medium ",
       "method_excerpt": "Cut the tofu and zucchini into about 1-inch cubes. Cut the radish into thin small squares. Thinly slice the onion and pepper. Roughly chop the scallion. Slice the meat into thin strips. / Preheat a small pot with a little bit",
-      "content_review_status": "UNREVIEWED_REQUIRES_MANUAL_CULINARY_COMPARISON"
+      "web_access_note": "GITHUB_FETCHED",
+      "content_review_status": "SOURCE_COMPARISON_RECORDED_FULL_TEXT_NOT_CERTIFIED"
     },
     {
       "id": 70,
@@ -2524,7 +2732,8 @@
       "ingredient_count": 13,
       "ingredient_excerpt": "2 cups (480 ml) rice water (see note below) / 5 large dried anchovy (deveined) / 1 piece dried sea kelp (dashima) / 2 heaping tbsp (30 g) Korean soybean paste (doenjang) / 1 tsp (5 g) Korean chili paste (gochujang) / 1/2 (about 50 g) small onion (cho",
       "method_excerpt": "To make the anchovy stock, combine rice starch water, dried anchovy, and sea kelp (dashima) in a stone pot or soup pot and bring to boil. Reduce the heat to low and simmer for 3-4 minutes. Discard the anchovies and sea kelp. ",
-      "content_review_status": "UNREVIEWED_REQUIRES_MANUAL_CULINARY_COMPARISON"
+      "web_access_note": "GITHUB_FETCHED",
+      "content_review_status": "SOURCE_COMPARISON_RECORDED_FULL_TEXT_NOT_CERTIFIED"
     },
     {
       "id": 71,
@@ -2536,7 +2745,8 @@
       "ingredient_count": 0,
       "ingredient_excerpt": "",
       "method_excerpt": "",
-      "content_review_status": "UNREVIEWED_REQUIRES_MANUAL_CULINARY_COMPARISON"
+      "web_access_note": "GITHUB_FETCHED",
+      "content_review_status": "SOURCE_COMPARISON_RECORDED_FULL_TEXT_NOT_CERTIFIED"
     },
     {
       "id": 71,
@@ -2548,7 +2758,8 @@
       "ingredient_count": 22,
       "ingredient_excerpt": "500 g de granos de maíz pozolero o cacahuacintle seco (o 3 latas grandes de maíz pozolero precocido, escurrido y enjuagado) / 1 cabeza de ajo sin las capas de piel externas (pero no totalmente pelado) / 2 kilos pollos enteros (2 kg c/u), enjuagados y",
       "method_excerpt": "Para preparar el pozole: / Para preparar el puré de chile:",
-      "content_review_status": "UNREVIEWED_REQUIRES_MANUAL_CULINARY_COMPARISON"
+      "web_access_note": "GITHUB_FETCHED",
+      "content_review_status": "SOURCE_COMPARISON_RECORDED_FULL_TEXT_NOT_CERTIFIED"
     },
     {
       "id": 71,
@@ -2560,7 +2771,8 @@
       "ingredient_count": 0,
       "ingredient_excerpt": "",
       "method_excerpt": "",
-      "content_review_status": "UNREVIEWED_REQUIRES_MANUAL_CULINARY_COMPARISON"
+      "web_access_note": "GITHUB_FETCHED",
+      "content_review_status": "SOURCE_COMPARISON_RECORDED_FULL_TEXT_NOT_CERTIFIED"
     },
     {
       "id": 72,
@@ -2572,7 +2784,8 @@
       "ingredient_count": 0,
       "ingredient_excerpt": "",
       "method_excerpt": "",
-      "content_review_status": "UNREVIEWED_REQUIRES_MANUAL_CULINARY_COMPARISON"
+      "web_access_note": "GITHUB_FETCHED",
+      "content_review_status": "SOURCE_COMPARISON_RECORDED_FULL_TEXT_NOT_CERTIFIED"
     },
     {
       "id": 72,
@@ -2584,7 +2797,8 @@
       "ingredient_count": 23,
       "ingredient_excerpt": "1 pound dried hominy (rinsed, the same as giant white corn or maiz mote pelado) / 1 head garlic / 2 whole chickens (or about 6 pounds, cut up in serving pieces, rinsed (combine with pork butt or shoulder if desired)) / 1 onion / Couple fresh cilantro",
       "method_excerpt": "Place the hominy in a large soup pot with cold water at least 3 inches on top. Take off the dried skin layers from the head of garlic and add it into the pot. Do not add salt, because the hominy will toughen. Bring to a boil,",
-      "content_review_status": "UNREVIEWED_REQUIRES_MANUAL_CULINARY_COMPARISON"
+      "web_access_note": "GITHUB_FETCHED",
+      "content_review_status": "SOURCE_COMPARISON_RECORDED_FULL_TEXT_NOT_CERTIFIED"
     },
     {
       "id": 72,
@@ -2596,7 +2810,8 @@
       "ingredient_count": 16,
       "ingredient_excerpt": "2 pounds boneless skinless chicken thighs / 1 pound tomatillos, (husked and rinsed) / 1 large white onion, (roughly chopped) / 3 jalapeño peppers, (halved (seeds removed if you don't want it spicy)) / 2 cloves garlic / 1 tablespoon Mexican oregano / ",
       "method_excerpt": "Add the chicken thighs, tomatillos, onion, jalapeños, garlic, oregano, salt, and broth to a large pot or Dutch oven. Bring to a boil over high heat, reduce heat to low, cover partially, and simmer for 40 minutes until chicken",
-      "content_review_status": "UNREVIEWED_REQUIRES_MANUAL_CULINARY_COMPARISON"
+      "web_access_note": "GITHUB_FETCHED",
+      "content_review_status": "SOURCE_COMPARISON_RECORDED_FULL_TEXT_NOT_CERTIFIED"
     },
     {
       "id": 73,
@@ -2608,7 +2823,8 @@
       "ingredient_count": 0,
       "ingredient_excerpt": "",
       "method_excerpt": "",
-      "content_review_status": "UNREVIEWED_REQUIRES_MANUAL_CULINARY_COMPARISON"
+      "web_access_note": "GITHUB_FETCHED",
+      "content_review_status": "SOURCE_COMPARISON_RECORDED_FULL_TEXT_NOT_CERTIFIED"
     },
     {
       "id": 73,
@@ -2620,7 +2836,8 @@
       "ingredient_count": 14,
       "ingredient_excerpt": "3 chiles guajillo (sin tallo ni semillas) / 500 g de jitomates maduros / 1 diente de ajo / 1/2 taza de cebolla blanca picada / 1/2 cucharadita de sal (o al gusto) / 2 cucharadas de aceite vegetal / 6 tazas de caldo de pollo / 1 ramita de perejil fres",
       "method_excerpt": "Calienta un comal o sartén a fuego medio. Ya que esté caliente, tuesta los chiles guajillos durante de 1 minuto de cada lado sin dejar que se quemen. / En una olla mediana, pon los chiles guajillos, los jitomates y el ajo; cú",
-      "content_review_status": "UNREVIEWED_REQUIRES_MANUAL_CULINARY_COMPARISON"
+      "web_access_note": "GITHUB_FETCHED",
+      "content_review_status": "SOURCE_COMPARISON_RECORDED_FULL_TEXT_NOT_CERTIFIED"
     },
     {
       "id": 73,
@@ -2632,7 +2849,8 @@
       "ingredient_count": 0,
       "ingredient_excerpt": "",
       "method_excerpt": "",
-      "content_review_status": "UNREVIEWED_REQUIRES_MANUAL_CULINARY_COMPARISON"
+      "web_access_note": "OPENED_VIA_WEB_TO_BYPASS_AUTOMATION_BLOCK",
+      "content_review_status": "SOURCE_COMPARISON_RECORDED_FULL_TEXT_NOT_CERTIFIED"
     },
     {
       "id": 74,
@@ -2644,7 +2862,8 @@
       "ingredient_count": 0,
       "ingredient_excerpt": "",
       "method_excerpt": "",
-      "content_review_status": "UNREVIEWED_REQUIRES_MANUAL_CULINARY_COMPARISON"
+      "web_access_note": "OPENED_VIA_WEB_TO_BYPASS_AUTOMATION_BLOCK",
+      "content_review_status": "SOURCE_COMPARISON_RECORDED_FULL_TEXT_NOT_CERTIFIED"
     },
     {
       "id": 74,
@@ -2656,7 +2875,8 @@
       "ingredient_count": 0,
       "ingredient_excerpt": "",
       "method_excerpt": "",
-      "content_review_status": "UNREVIEWED_REQUIRES_MANUAL_CULINARY_COMPARISON"
+      "web_access_note": "GITHUB_FETCHED",
+      "content_review_status": "SOURCE_COMPARISON_RECORDED_FULL_TEXT_NOT_CERTIFIED"
     },
     {
       "id": 74,
@@ -2668,7 +2888,8 @@
       "ingredient_count": 0,
       "ingredient_excerpt": "",
       "method_excerpt": "",
-      "content_review_status": "UNREVIEWED_REQUIRES_MANUAL_CULINARY_COMPARISON"
+      "web_access_note": "GITHUB_FETCHED",
+      "content_review_status": "SOURCE_COMPARISON_RECORDED_FULL_TEXT_NOT_CERTIFIED"
     },
     {
       "id": 75,
@@ -2680,7 +2901,8 @@
       "ingredient_count": 0,
       "ingredient_excerpt": "",
       "method_excerpt": "",
-      "content_review_status": "UNREVIEWED_REQUIRES_MANUAL_CULINARY_COMPARISON"
+      "web_access_note": "OPENED_VIA_WEB_TO_BYPASS_AUTOMATION_BLOCK",
+      "content_review_status": "SOURCE_COMPARISON_RECORDED_FULL_TEXT_NOT_CERTIFIED"
     },
     {
       "id": 75,
@@ -2692,7 +2914,8 @@
       "ingredient_count": 0,
       "ingredient_excerpt": "",
       "method_excerpt": "",
-      "content_review_status": "UNREVIEWED_REQUIRES_MANUAL_CULINARY_COMPARISON"
+      "web_access_note": "OPENED_VIA_WEB_TO_BYPASS_AUTOMATION_BLOCK",
+      "content_review_status": "SOURCE_COMPARISON_RECORDED_FULL_TEXT_NOT_CERTIFIED"
     },
     {
       "id": 75,
@@ -2704,7 +2927,8 @@
       "ingredient_count": 0,
       "ingredient_excerpt": "",
       "method_excerpt": "",
-      "content_review_status": "UNREVIEWED_REQUIRES_MANUAL_CULINARY_COMPARISON"
+      "web_access_note": "GITHUB_FETCHED",
+      "content_review_status": "SOURCE_COMPARISON_RECORDED_FULL_TEXT_NOT_CERTIFIED"
     },
     {
       "id": 76,
@@ -2716,7 +2940,8 @@
       "ingredient_count": 0,
       "ingredient_excerpt": "",
       "method_excerpt": "",
-      "content_review_status": "UNREVIEWED_REQUIRES_MANUAL_CULINARY_COMPARISON"
+      "web_access_note": "GITHUB_FETCHED",
+      "content_review_status": "SOURCE_COMPARISON_RECORDED_FULL_TEXT_NOT_CERTIFIED"
     },
     {
       "id": 76,
@@ -2728,7 +2953,8 @@
       "ingredient_count": 19,
       "ingredient_excerpt": "5 cloves garlic (unpeeled) / 2 chicken breasts ((about 1 1/2 pounds)) / 12 cups water / 1 teaspoon dried oregano / 1/2 teaspoon dried thyme / 3 bay leaves / 3 whole cloves / 2 1/2 teaspoons kosher or coarse sea salt (or more to taste) / 1/4 teaspoon ",
       "method_excerpt": "For the broth: / For the sofrito: / To serve:",
-      "content_review_status": "UNREVIEWED_REQUIRES_MANUAL_CULINARY_COMPARISON"
+      "web_access_note": "GITHUB_FETCHED",
+      "content_review_status": "SOURCE_COMPARISON_RECORDED_FULL_TEXT_NOT_CERTIFIED"
     },
     {
       "id": 76,
@@ -2740,7 +2966,8 @@
       "ingredient_count": 0,
       "ingredient_excerpt": "",
       "method_excerpt": "",
-      "content_review_status": "UNREVIEWED_REQUIRES_MANUAL_CULINARY_COMPARISON"
+      "web_access_note": "GITHUB_FETCHED",
+      "content_review_status": "SOURCE_COMPARISON_RECORDED_FULL_TEXT_NOT_CERTIFIED"
     },
     {
       "id": 77,
@@ -2752,7 +2979,8 @@
       "ingredient_count": 0,
       "ingredient_excerpt": "",
       "method_excerpt": "",
-      "content_review_status": "UNREVIEWED_REQUIRES_MANUAL_CULINARY_COMPARISON"
+      "web_access_note": "GITHUB_FETCHED",
+      "content_review_status": "SOURCE_COMPARISON_RECORDED_FULL_TEXT_NOT_CERTIFIED"
     },
     {
       "id": 77,
@@ -2764,7 +2992,8 @@
       "ingredient_count": 0,
       "ingredient_excerpt": "",
       "method_excerpt": "",
-      "content_review_status": "UNREVIEWED_REQUIRES_MANUAL_CULINARY_COMPARISON"
+      "web_access_note": "GITHUB_FETCHED",
+      "content_review_status": "SOURCE_COMPARISON_RECORDED_FULL_TEXT_NOT_CERTIFIED"
     },
     {
       "id": 77,
@@ -2776,7 +3005,8 @@
       "ingredient_count": 0,
       "ingredient_excerpt": "",
       "method_excerpt": "",
-      "content_review_status": "UNREVIEWED_REQUIRES_MANUAL_CULINARY_COMPARISON"
+      "web_access_note": "GITHUB_FETCHED",
+      "content_review_status": "SOURCE_COMPARISON_RECORDED_FULL_TEXT_NOT_CERTIFIED"
     },
     {
       "id": 78,
@@ -2788,7 +3018,8 @@
       "ingredient_count": 0,
       "ingredient_excerpt": "",
       "method_excerpt": "",
-      "content_review_status": "UNREVIEWED_REQUIRES_MANUAL_CULINARY_COMPARISON"
+      "web_access_note": "OPENED_VIA_WEB_TO_BYPASS_AUTOMATION_BLOCK",
+      "content_review_status": "SOURCE_COMPARISON_RECORDED_FULL_TEXT_NOT_CERTIFIED"
     },
     {
       "id": 78,
@@ -2800,7 +3031,8 @@
       "ingredient_count": 0,
       "ingredient_excerpt": "",
       "method_excerpt": "",
-      "content_review_status": "UNREVIEWED_REQUIRES_MANUAL_CULINARY_COMPARISON"
+      "web_access_note": "GITHUB_FETCHED",
+      "content_review_status": "SOURCE_COMPARISON_RECORDED_FULL_TEXT_NOT_CERTIFIED"
     },
     {
       "id": 78,
@@ -2812,7 +3044,8 @@
       "ingredient_count": 22,
       "ingredient_excerpt": "1 egg / 3 tablespoons fresh chopped mint (or cilantro) / 2 cloves garlic, minced / 1 teaspoon dried oregano / 1/4 teaspoon ground cumin / 1 teaspoon salt / 1 lb meatloaf mix (or half 80% lean ground beef/half ground pork–or all of one or the other) /",
       "method_excerpt": "Make the Meatballs / Make the Soup",
-      "content_review_status": "UNREVIEWED_REQUIRES_MANUAL_CULINARY_COMPARISON"
+      "web_access_note": "GITHUB_FETCHED",
+      "content_review_status": "SOURCE_COMPARISON_RECORDED_FULL_TEXT_NOT_CERTIFIED"
     },
     {
       "id": 79,
@@ -2824,7 +3057,8 @@
       "ingredient_count": 13,
       "ingredient_excerpt": "1 pound ripe plum or roma tomatoes / 1 clove garlic / 1 (about 1 ounce) ancho chile, stem and seeds removed / 1/2 cup white onion, coarsely chopped / 1 1/2 teaspoons kosher or sea salt (divided, or more to taste) / 3 tablespoons safflower or corn oil",
       "method_excerpt": "Place the tomatoes, garlic, and ancho chile in a saucepan. Cover with water, and simmer over medium-high heat for 10 to 12 minutes, until the tomatoes are completely cooked through and ancho chile is rehydrated. / Transfer th",
-      "content_review_status": "UNREVIEWED_REQUIRES_MANUAL_CULINARY_COMPARISON"
+      "web_access_note": "GITHUB_FETCHED",
+      "content_review_status": "SOURCE_COMPARISON_RECORDED_FULL_TEXT_NOT_CERTIFIED"
     },
     {
       "id": 79,
@@ -2836,7 +3070,8 @@
       "ingredient_count": 15,
       "ingredient_excerpt": "3 Roma tomatoes / ½ medium white onion / 2 garlic cloves, peeled / 4 ancho peppers / 3 cups chicken broth, divided / 4 teaspoons salt, plus more to taste / 1 cup vegetable oil, divided / 2 teaspoons dried Mexican oregano / 2 (16-ounce) cans no-salt-a",
       "method_excerpt": "",
-      "content_review_status": "UNREVIEWED_REQUIRES_MANUAL_CULINARY_COMPARISON"
+      "web_access_note": "GITHUB_FETCHED",
+      "content_review_status": "SOURCE_COMPARISON_RECORDED_FULL_TEXT_NOT_CERTIFIED"
     },
     {
       "id": 79,
@@ -2848,19 +3083,21 @@
       "ingredient_count": 0,
       "ingredient_excerpt": "",
       "method_excerpt": "",
-      "content_review_status": "UNREVIEWED_REQUIRES_MANUAL_CULINARY_COMPARISON"
+      "web_access_note": "GITHUB_FETCHED",
+      "content_review_status": "SOURCE_COMPARISON_RECORDED_FULL_TEXT_NOT_CERTIFIED"
     },
     {
       "id": 80,
       "source_position": 1,
       "url": "https://laroussecocina.mx/receta/chilpachole-de-jaiba/",
-      "availability": "ACCESS_BLOCKED",
-      "title": "just a moment...",
-      "recipe_schema_found": false,
-      "ingredient_count": 0,
-      "ingredient_excerpt": "",
-      "method_excerpt": "",
-      "content_review_status": "UNREVIEWED_REQUIRES_MANUAL_CULINARY_COMPARISON"
+      "availability": "FETCHED_UNREVIEWED",
+      "title": "Chilpachole de jaiba",
+      "recipe_schema_found": true,
+      "ingredient_count": 14,
+      "ingredient_excerpt": "1 kg de jitomates / 1 cebolla grande partida por la mitad / 4 dientes de ajo / 2 chiles jalapeños sin semillas ni venas / 1 raja de canela delgada de 5 cm / 3 cucharadas de aceite de maíz / 8 jaibas crudas, grandes y con pinzas, partidas por la mitad",
+      "method_excerpt": "Ase los jitomates, la cebolla, los dientes de ajo, los chiles y la canela. Licue todos los ingredientes y cuélelos. / Ponga sobre el fuego una cacerola de fondo grueso con el aceite; cuando esté bien caliente, añada el molido",
+      "web_access_note": "GITHUB_FETCHED",
+      "content_review_status": "SOURCE_COMPARISON_RECORDED_FULL_TEXT_NOT_CERTIFIED"
     },
     {
       "id": 80,
@@ -2872,7 +3109,8 @@
       "ingredient_count": 0,
       "ingredient_excerpt": "",
       "method_excerpt": "",
-      "content_review_status": "UNREVIEWED_REQUIRES_MANUAL_CULINARY_COMPARISON"
+      "web_access_note": "GITHUB_FETCHED",
+      "content_review_status": "SOURCE_COMPARISON_RECORDED_FULL_TEXT_NOT_CERTIFIED"
     },
     {
       "id": 80,
@@ -2884,7 +3122,8 @@
       "ingredient_count": 9,
       "ingredient_excerpt": "Cebolla ½ Unidades / Ajo 2 Dientes / Jaiba 3 Unidaddes / Jitomate 3 Unidades / Chile chipotle adobado 3 Unidades / Epazote 5 Hojas / Masa De Maíz 50 g / Pulpa de Jaiba 250 g / Sal Cantidad necesaria",
       "method_excerpt": "- En una cazuela sofreír media cebolla troceada, un diente de ajo, las jaibas, jitomates, añadir los chiles chipotles, agregar agua y las hojas de epazote, hervir / - Licuar el guiso de la cazuela, incluyendo las jaibas, cola",
-      "content_review_status": "UNREVIEWED_REQUIRES_MANUAL_CULINARY_COMPARISON"
+      "web_access_note": "GITHUB_FETCHED",
+      "content_review_status": "SOURCE_COMPARISON_RECORDED_FULL_TEXT_NOT_CERTIFIED"
     },
     {
       "id": 81,
@@ -2896,7 +3135,8 @@
       "ingredient_count": 0,
       "ingredient_excerpt": "",
       "method_excerpt": "",
-      "content_review_status": "UNREVIEWED_REQUIRES_MANUAL_CULINARY_COMPARISON"
+      "web_access_note": "GITHUB_FETCHED",
+      "content_review_status": "SOURCE_COMPARISON_RECORDED_FULL_TEXT_NOT_CERTIFIED"
     },
     {
       "id": 81,
@@ -2908,7 +3148,8 @@
       "ingredient_count": 25,
       "ingredient_excerpt": "2 lbs beef soup bones (shank/femur marrow bones and knuckles) / 2 lbs beef neck bones (or oxtail) / 2 lbs bone-in beef short rib (or flank, brisket and boneless short rib) / 5 quarts water / 2 yellow onions (can sub with shallots or a combination of ",
       "method_excerpt": "Add soup bones (2 lbs), beef neck bones (2 lbs), and bone-in beef short rib (2 lbs) to a large pot (at least 8-quart capacity). No need to parboil meat. Add water to cover and bring it to a boil (about 15 minutes). Boil for a",
-      "content_review_status": "UNREVIEWED_REQUIRES_MANUAL_CULINARY_COMPARISON"
+      "web_access_note": "GITHUB_FETCHED",
+      "content_review_status": "SOURCE_COMPARISON_RECORDED_FULL_TEXT_NOT_CERTIFIED"
     },
     {
       "id": 81,
@@ -2920,7 +3161,8 @@
       "ingredient_count": 24,
       "ingredient_excerpt": "2 large onions (, halved) / 150g / 5oz ginger (, sliced down the centre) / 10 star anise / 4 cinnamon quills / 4 cardamon pods / 3 cloves ((the spice cloves!)) / 1.5 tbsp coriander seeds / 1.5kg / 3lb beef brisket / 1kg / 2lb meaty beef bones / 1kg /",
       "method_excerpt": "Aromatics / Remove impurities: / Broth: / Assemble:",
-      "content_review_status": "UNREVIEWED_REQUIRES_MANUAL_CULINARY_COMPARISON"
+      "web_access_note": "GITHUB_FETCHED",
+      "content_review_status": "SOURCE_COMPARISON_RECORDED_FULL_TEXT_NOT_CERTIFIED"
     },
     {
       "id": 82,
@@ -2932,7 +3174,8 @@
       "ingredient_count": 0,
       "ingredient_excerpt": "",
       "method_excerpt": "",
-      "content_review_status": "UNREVIEWED_REQUIRES_MANUAL_CULINARY_COMPARISON"
+      "web_access_note": "GITHUB_FETCHED",
+      "content_review_status": "SOURCE_COMPARISON_RECORDED_FULL_TEXT_NOT_CERTIFIED"
     },
     {
       "id": 82,
@@ -2944,7 +3187,8 @@
       "ingredient_count": 22,
       "ingredient_excerpt": "One whole chicken (about 4 lbs) / 4 quarts water / 2-inch ginger (unpeeled) / 2 yellow onions or 8 large shallots (peeled) / 2 stalks green onions / 1 small bunch fresh cilantro / 2 tablespoons dried coriander seeds / 1 Chinese cinnamon (optional) / ",
       "method_excerpt": "Place the ginger and shallots on a baking tray and roast in a toaster oven or air fryer at 400°F for about 15 minutes, or until lightly charred and fragrant. In a small dry frying pan, toast the pho spices over medium heat fo",
-      "content_review_status": "UNREVIEWED_REQUIRES_MANUAL_CULINARY_COMPARISON"
+      "web_access_note": "GITHUB_FETCHED",
+      "content_review_status": "SOURCE_COMPARISON_RECORDED_FULL_TEXT_NOT_CERTIFIED"
     },
     {
       "id": 82,
@@ -2956,7 +3200,8 @@
       "ingredient_count": 22,
       "ingredient_excerpt": "1 tbsp oil (, vegetable or canola (or other plain oil)) / 2 onions (, halved (skin on fine)) / 5cm/ 2&quot; piece of ginger (, sliced 0.75cm / 1/3\" thick (unpeeled)) / 2 litres / 2 quarts water / 1.5 kg / 3 lb chicken thighs, bone in skin on ((Note 1",
       "method_excerpt": "BROTH: / ASSEMBLING:",
-      "content_review_status": "UNREVIEWED_REQUIRES_MANUAL_CULINARY_COMPARISON"
+      "web_access_note": "GITHUB_FETCHED",
+      "content_review_status": "SOURCE_COMPARISON_RECORDED_FULL_TEXT_NOT_CERTIFIED"
     },
     {
       "id": 83,
@@ -2968,7 +3213,8 @@
       "ingredient_count": 0,
       "ingredient_excerpt": "",
       "method_excerpt": "",
-      "content_review_status": "UNREVIEWED_REQUIRES_MANUAL_CULINARY_COMPARISON"
+      "web_access_note": "GITHUB_FETCHED",
+      "content_review_status": "SOURCE_COMPARISON_RECORDED_FULL_TEXT_NOT_CERTIFIED"
     },
     {
       "id": 83,
@@ -2980,7 +3226,8 @@
       "ingredient_count": 29,
       "ingredient_excerpt": "3 lbs pork and/or beef bones (hocks/feet and/or knuckles in small chunks) / 1 lb boneless pork shank / 1 1/2 lbs beef brisket or beef banana shank / 1/2 lb beef tendon (optional) / 6 quarts water / 4 large lemongrass stalks / 10 shallots or 1 large y",
       "method_excerpt": "Add the bones and meat to a large stockpot and cover them with water. Bring the pot to a boil. Once it reaches a rolling boil, allow it to cook for about 5 minutes or until the impurities float to the surface. Turn off the he",
-      "content_review_status": "UNREVIEWED_REQUIRES_MANUAL_CULINARY_COMPARISON"
+      "web_access_note": "GITHUB_FETCHED",
+      "content_review_status": "SOURCE_COMPARISON_RECORDED_FULL_TEXT_NOT_CERTIFIED"
     },
     {
       "id": 83,
@@ -2992,7 +3239,8 @@
       "ingredient_count": 26,
       "ingredient_excerpt": "2kg pork rib bones / 2kg beef marrow bone / 12l water / 700g of pork belly / 700g of beef shin / 40g of salt / 40g of sugar / 10 lemongrass sticks / 1/4 fresh pineapple, halved / 1 onion, halved / 175ml of rapeseed oil / 3 tsp dried achiote seeds / 2",
       "method_excerpt": "In a large 21l stock pot, add the pork and beef bones and cover fully with water. Bring the water to the boil and part cook the bones, this will clean the bones and help keep the stock clear / Once boiled, empty the bones int",
-      "content_review_status": "UNREVIEWED_REQUIRES_MANUAL_CULINARY_COMPARISON"
+      "web_access_note": "GITHUB_FETCHED",
+      "content_review_status": "SOURCE_COMPARISON_RECORDED_FULL_TEXT_NOT_CERTIFIED"
     },
     {
       "id": 84,
@@ -3004,7 +3252,8 @@
       "ingredient_count": 0,
       "ingredient_excerpt": "",
       "method_excerpt": "",
-      "content_review_status": "UNREVIEWED_REQUIRES_MANUAL_CULINARY_COMPARISON"
+      "web_access_note": "GITHUB_FETCHED",
+      "content_review_status": "SOURCE_COMPARISON_RECORDED_FULL_TEXT_NOT_CERTIFIED"
     },
     {
       "id": 84,
@@ -3016,7 +3265,8 @@
       "ingredient_count": 26,
       "ingredient_excerpt": "2 lbs pork hock chunks / 10 large shrimp/prawns with heads / 3 tablespoons vegetable oil (divided) / 2-inch ginger (leave unpeeled; slice into thick coins) / 4 large shallots (peel and slice into thick wedges) / 5 garlic cloves (peel and slice) / 3 ¾",
       "method_excerpt": "Fill a 5-quart stock pot half way with water and bring the pot to a boil. Add ginger slices and a third of the sliced shallots. Let the pot simmer for 5 minutes until shallots and ginger release their aroma. Add pork hocks. B",
-      "content_review_status": "UNREVIEWED_REQUIRES_MANUAL_CULINARY_COMPARISON"
+      "web_access_note": "GITHUB_FETCHED",
+      "content_review_status": "SOURCE_COMPARISON_RECORDED_FULL_TEXT_NOT_CERTIFIED"
     },
     {
       "id": 84,
@@ -3028,7 +3278,8 @@
       "ingredient_count": 0,
       "ingredient_excerpt": "",
       "method_excerpt": "",
-      "content_review_status": "UNREVIEWED_REQUIRES_MANUAL_CULINARY_COMPARISON"
+      "web_access_note": "GITHUB_FETCHED",
+      "content_review_status": "SOURCE_COMPARISON_RECORDED_FULL_TEXT_NOT_CERTIFIED"
     },
     {
       "id": 85,
@@ -3040,7 +3291,8 @@
       "ingredient_count": 0,
       "ingredient_excerpt": "",
       "method_excerpt": "",
-      "content_review_status": "UNREVIEWED_REQUIRES_MANUAL_CULINARY_COMPARISON"
+      "web_access_note": "GITHUB_FETCHED",
+      "content_review_status": "SOURCE_COMPARISON_RECORDED_FULL_TEXT_NOT_CERTIFIED"
     },
     {
       "id": 85,
@@ -3052,7 +3304,8 @@
       "ingredient_count": 21,
       "ingredient_excerpt": "2 small yellow onions (or 8 shallots) / 2-inch piece fresh ginger (about 2 oz) / 4 chicken thighs (bone-in recommended) / 4 quarts water / Dried salted shrimp (about 50 grams) / 10 small dried shiitake mushrooms / 4 eggs / 1 teaspoon fish sauce / 1 t",
       "method_excerpt": "Peel the outer layer of the yellow onions and cut in half. Slice the ginger into thick coins. Place everything on parchment paper or foil for easier cleanup, then roast in a toaster oven or air fryer at 400°F for 15 minutes, ",
-      "content_review_status": "UNREVIEWED_REQUIRES_MANUAL_CULINARY_COMPARISON"
+      "web_access_note": "GITHUB_FETCHED",
+      "content_review_status": "SOURCE_COMPARISON_RECORDED_FULL_TEXT_NOT_CERTIFIED"
     },
     {
       "id": 85,
@@ -3064,7 +3317,8 @@
       "ingredient_count": 15,
       "ingredient_excerpt": "1.5 lb chicken thigh (skin and bones less) / 2.0 lb chicken bones / 1 tbsp salt / 1 medium rock sugar / 1 whole medium white onion (skin removed) / 1 medium ginger (skin removed, sliced) / 1-2 tbsp fish sauce / 1 tbsp chicken bouillon / 1 medium bloc",
       "method_excerpt": "In a large 6 qt pot, add chicken bones, chicken thigh, rock sugar, salt, ginger, and the white onion. Fill water until the meat is fully covered and bring to boil over high heat. / Once boiling, remove the impurities and foam",
-      "content_review_status": "UNREVIEWED_REQUIRES_MANUAL_CULINARY_COMPARISON"
+      "web_access_note": "GITHUB_FETCHED",
+      "content_review_status": "SOURCE_COMPARISON_RECORDED_FULL_TEXT_NOT_CERTIFIED"
     },
     {
       "id": 86,
@@ -3076,7 +3330,8 @@
       "ingredient_count": 0,
       "ingredient_excerpt": "",
       "method_excerpt": "",
-      "content_review_status": "UNREVIEWED_REQUIRES_MANUAL_CULINARY_COMPARISON"
+      "web_access_note": "GITHUB_FETCHED",
+      "content_review_status": "SOURCE_COMPARISON_RECORDED_FULL_TEXT_NOT_CERTIFIED"
     },
     {
       "id": 86,
@@ -3088,7 +3343,8 @@
       "ingredient_count": 8,
       "ingredient_excerpt": "2 kg ốc nhồi ta / 2 kg ốc vặn hoặc 1 kg xương hom nấu nước dùng (tùy chọn) / 4 củ hành khô / 4 quả cà chua / Gia vị: Muối hạt, mắm truyền thống, mắm tôm, ớt bột, giẫm bỗng nếp / Rau ghém: Xà lách, tía tô, kinh giới, hoa chuối, thân chuối, hành hoa...",
       "method_excerpt": "Chọn và sơ chế ốc: Chọn mua ốc nhồi ta với dấu hiệu nhận biết như vỏ mỏng, miệng đầy, trôn nhọn và cầm lên nặng tay. Để khử bùn nhớt, theo sách dạy nấu ăn&nbsp;do Tân Dân thư quán xuất bản năm 1930 nên ngâm nước vo gạo sạch í",
-      "content_review_status": "UNREVIEWED_REQUIRES_MANUAL_CULINARY_COMPARISON"
+      "web_access_note": "GITHUB_FETCHED",
+      "content_review_status": "SOURCE_COMPARISON_RECORDED_FULL_TEXT_NOT_CERTIFIED"
     },
     {
       "id": 86,
@@ -3100,7 +3356,8 @@
       "ingredient_count": 0,
       "ingredient_excerpt": "",
       "method_excerpt": "",
-      "content_review_status": "UNREVIEWED_REQUIRES_MANUAL_CULINARY_COMPARISON"
+      "web_access_note": "GITHUB_FETCHED",
+      "content_review_status": "SOURCE_COMPARISON_RECORDED_FULL_TEXT_NOT_CERTIFIED"
     },
     {
       "id": 87,
@@ -3112,7 +3369,8 @@
       "ingredient_count": 25,
       "ingredient_excerpt": "3 lbs pork neckbones / 3 liters water / ¼ cup dried shrimp / 1 small dried squid / 1 small daikon / 1 yellow onion / 1 tablespoon plus 1 teaspoon sea salt / 1 tablespoon chicken bouillon powder / 1 tablespoon plus 2 teaspoons granulated white sugar /",
       "method_excerpt": "This will keep the broth clear. To a large stock pot, add pork bones. Fill the pot with water to cover the bones then bring it to a boil. Boil the bones for about 8 minutes or until foam floats to the top. Place a colander in",
-      "content_review_status": "UNREVIEWED_REQUIRES_MANUAL_CULINARY_COMPARISON"
+      "web_access_note": "GITHUB_FETCHED",
+      "content_review_status": "SOURCE_COMPARISON_RECORDED_FULL_TEXT_NOT_CERTIFIED"
     },
     {
       "id": 87,
@@ -3124,7 +3382,8 @@
       "ingredient_count": 23,
       "ingredient_excerpt": "6 pounds pork bones (neck, spine, or leg, in 2-inch pieces) / 5 quarts water / 3 medium dried squid ((2 ounces total), quickly rinsed) / 1/3 cup dried shrimp / 1 large yellow onion (peeled and quartered) / 1- inch chunk yellow/golden rock sugar ((abo",
       "method_excerpt": "Make the broth: In a stockpot (8 to 12-quart) over high heat, bring the bones and water to a boil. Use a large spoon or ladle to skim any scum that rises to the top. Add the remaining ingredients. Once the broth returns to a ",
-      "content_review_status": "UNREVIEWED_REQUIRES_MANUAL_CULINARY_COMPARISON"
+      "web_access_note": "GITHUB_FETCHED",
+      "content_review_status": "SOURCE_COMPARISON_RECORDED_FULL_TEXT_NOT_CERTIFIED"
     },
     {
       "id": 87,
@@ -3136,7 +3395,8 @@
       "ingredient_count": 15,
       "ingredient_excerpt": "1.5 kg pork bones / 30 g dried shrimp / 1 dried squid / 1 daikon radish / 1 yellow onion / 20 g rock sugar / 45 ml fish sauce / 4 L water / 600 g hủ tiếu noodles / 250 g ground pork / 300 g pork loin / 18 quail eggs / 300 g shrimp / 6 garlic cloves /",
       "method_excerpt": "Cover the bones with cold water, bring to a hard boil for three minutes, then drain, rinse the bones, and scrub the pot. Ten minutes of fuss now is the difference between a clear broth and a grey one. / Return the bones to th",
-      "content_review_status": "UNREVIEWED_REQUIRES_MANUAL_CULINARY_COMPARISON"
+      "web_access_note": "GITHUB_FETCHED",
+      "content_review_status": "SOURCE_COMPARISON_RECORDED_FULL_TEXT_NOT_CERTIFIED"
     },
     {
       "id": 88,
@@ -3148,7 +3408,8 @@
       "ingredient_count": 0,
       "ingredient_excerpt": "",
       "method_excerpt": "",
-      "content_review_status": "UNREVIEWED_REQUIRES_MANUAL_CULINARY_COMPARISON"
+      "web_access_note": "GITHUB_FETCHED",
+      "content_review_status": "SOURCE_COMPARISON_RECORDED_FULL_TEXT_NOT_CERTIFIED"
     },
     {
       "id": 88,
@@ -3160,7 +3421,8 @@
       "ingredient_count": 10,
       "ingredient_excerpt": "4-5 lbs pork spare ribs (cut inbetween bones into individual ribs) / 4 yellow onions (peel and cut slits into them) / 7 quarts water / 1/4 cup fine ground sea salt (lightly packed) / 1/4 cup pork bouillon powder (can sub with chicken bouillon or mush",
       "method_excerpt": "This step is typical for Vietnamese home cooks to achieve a clear broth. Place the large pork spare ribs into a large stockpot. Fill with just enough water to cover the meat. Bring to a rolling boil and let it boil vigorously",
-      "content_review_status": "UNREVIEWED_REQUIRES_MANUAL_CULINARY_COMPARISON"
+      "web_access_note": "GITHUB_FETCHED",
+      "content_review_status": "SOURCE_COMPARISON_RECORDED_FULL_TEXT_NOT_CERTIFIED"
     },
     {
       "id": 88,
@@ -3172,7 +3434,8 @@
       "ingredient_count": 4,
       "ingredient_excerpt": "noodle / banh canh / pork bones / shrimp shells",
       "method_excerpt": "Clean the Pork Bones: Rinse 1 kg of pork bones under cold water. Place them in a large pot and cover with water. Bring to a boil and let it cook for 5 minutes. Drain and rinse the bones to remove impurities. Prepare Aromatics",
-      "content_review_status": "UNREVIEWED_REQUIRES_MANUAL_CULINARY_COMPARISON"
+      "web_access_note": "GITHUB_FETCHED",
+      "content_review_status": "SOURCE_COMPARISON_RECORDED_FULL_TEXT_NOT_CERTIFIED"
     },
     {
       "id": 89,
@@ -3184,7 +3447,8 @@
       "ingredient_count": 0,
       "ingredient_excerpt": "",
       "method_excerpt": "",
-      "content_review_status": "UNREVIEWED_REQUIRES_MANUAL_CULINARY_COMPARISON"
+      "web_access_note": "OPENED_VIA_WEB_TO_BYPASS_AUTOMATION_BLOCK",
+      "content_review_status": "SOURCE_COMPARISON_RECORDED_FULL_TEXT_NOT_CERTIFIED"
     },
     {
       "id": 89,
@@ -3196,7 +3460,8 @@
       "ingredient_count": 14,
       "ingredient_excerpt": "1 lb fish (catfish and salmon preferred) / 2 tablespoons vegetable oil (or other neutral oil of your choice) / 5 large garlic cloves (peel and finely mince) / 4 cups water / 2 teaspoons fish sauce / 3 tablespoons granulated white sugar / 1 tablespoon",
       "method_excerpt": "Rinse under cold water, then slice into 1-inch steaks, keeping the backbone and skin attached. / Heat oil in a medium pot. Add garlic and pan-fry until golden brown, tossing occasionally for even cooking. Remove half of the g",
-      "content_review_status": "UNREVIEWED_REQUIRES_MANUAL_CULINARY_COMPARISON"
+      "web_access_note": "GITHUB_FETCHED",
+      "content_review_status": "SOURCE_COMPARISON_RECORDED_FULL_TEXT_NOT_CERTIFIED"
     },
     {
       "id": 89,
@@ -3208,7 +3473,8 @@
       "ingredient_count": 13,
       "ingredient_excerpt": "2 tbsp tamarind pulp / 2 tbsp vegetable oil / 4 garlic cloves, roughly chopped / 400 g basa fillets, cut into 4 pieces / 1 tbsp fish sauce / 2 tbsp sugar / Salt / 2 tomatoes, cut into wedges / 8 okra, trimmed and halved on an angle, or elephant ear (",
       "method_excerpt": "In a medium bowl, soak the tamarind pulp in about ½ a cup of boiling water. Stand for 10 minutes, then when cool enough to handle, massage the pulp into the water to dissolve the pulp from the seeds. / Heat a medium saucepan ",
-      "content_review_status": "UNREVIEWED_REQUIRES_MANUAL_CULINARY_COMPARISON"
+      "web_access_note": "GITHUB_FETCHED",
+      "content_review_status": "SOURCE_COMPARISON_RECORDED_FULL_TEXT_NOT_CERTIFIED"
     },
     {
       "id": 90,
@@ -3220,7 +3486,8 @@
       "ingredient_count": 0,
       "ingredient_excerpt": "",
       "method_excerpt": "",
-      "content_review_status": "UNREVIEWED_REQUIRES_MANUAL_CULINARY_COMPARISON"
+      "web_access_note": "GITHUB_FETCHED",
+      "content_review_status": "SOURCE_COMPARISON_RECORDED_FULL_TEXT_NOT_CERTIFIED"
     },
     {
       "id": 90,
@@ -3232,19 +3499,21 @@
       "ingredient_count": 0,
       "ingredient_excerpt": "",
       "method_excerpt": "",
-      "content_review_status": "UNREVIEWED_REQUIRES_MANUAL_CULINARY_COMPARISON"
+      "web_access_note": "GITHUB_FETCHED",
+      "content_review_status": "SOURCE_COMPARISON_RECORDED_FULL_TEXT_NOT_CERTIFIED"
     },
     {
       "id": 90,
       "source_position": 3,
       "url": "https://getvanvan.com/blogs/recipes/canh-kh%E1%BB%95-qua-bitter-melon-soup",
       "availability": "FETCHED_UNREVIEWED",
-      "title": "",
+      "title": "canh khổ qua | bitter melon soup | vietnamese spices | vân vân",
       "recipe_schema_found": false,
       "ingredient_count": 0,
       "ingredient_excerpt": "",
       "method_excerpt": "",
-      "content_review_status": "UNREVIEWED_REQUIRES_MANUAL_CULINARY_COMPARISON"
+      "web_access_note": "GITHUB_FETCHED",
+      "content_review_status": "SOURCE_COMPARISON_RECORDED_FULL_TEXT_NOT_CERTIFIED"
     },
     {
       "id": 91,
@@ -3256,7 +3525,8 @@
       "ingredient_count": 18,
       "ingredient_excerpt": "1½ pound chicken bones ((680g)) / 1½ pound pork bones ((680g)) / 9 cups water ((2 liters)) / 2 slices ginger / Salt ((to taste)) / 1/2 pound ground pork ((225g)) / 1/4 teaspoon salt / 2 teaspoons shaoxing wine / 2 teaspoons light soy sauce / 1/4 teas",
       "method_excerpt": "Making the stock: / In a soup pot, bring all the ingredients to a boil, scooping away any impurities (i.e. foam, etc.) that float to the top. Simmer at your burner’s lowest setting for at least 3-4 hours. A slow simmer makes ",
-      "content_review_status": "UNREVIEWED_REQUIRES_MANUAL_CULINARY_COMPARISON"
+      "web_access_note": "GITHUB_FETCHED",
+      "content_review_status": "SOURCE_COMPARISON_RECORDED_FULL_TEXT_NOT_CERTIFIED"
     },
     {
       "id": 91,
@@ -3268,7 +3538,8 @@
       "ingredient_count": 17,
       "ingredient_excerpt": "1 package wonton wrappers / 1/2 lb ground lean pork / 1/2 lb peeled and deveined shrimp (diced) / 1 tablespoon finely minced ginger / 2 green onions (, thinly sliced) / 1 tablespoon light soy sauce / 2 tablespoons Shaoxing wine ((or dry sherry)) / 1/",
       "method_excerpt": "Mix the filling: Combine the ground pork, shrimp, ginger, green onion, soy sauce, Shaoxing wine, salt, and sesame oil in a large bowl. Mix with a spatula or a pair of chopsticks until the ingredients are evenly combined and t",
-      "content_review_status": "UNREVIEWED_REQUIRES_MANUAL_CULINARY_COMPARISON"
+      "web_access_note": "GITHUB_FETCHED",
+      "content_review_status": "SOURCE_COMPARISON_RECORDED_FULL_TEXT_NOT_CERTIFIED"
     },
     {
       "id": 91,
@@ -3280,7 +3551,8 @@
       "ingredient_count": 20,
       "ingredient_excerpt": "6 cups chicken stock/broth ((Asian-style preferred; see Notes)) / 1 green onion/scallion / 1 tsp toasted sesame oil / 1 tsp Diamond Crystal kosher salt (use half the amount or the same weight for table salt) ((to taste)) / ¼ tsp ground white pepper (",
       "method_excerpt": "Gather all the ingredients. / To Make the Soup / To Make the Filling / To Fold the Wontons / To Freeze for Later (optional) / To Cook the Wontons",
-      "content_review_status": "UNREVIEWED_REQUIRES_MANUAL_CULINARY_COMPARISON"
+      "web_access_note": "GITHUB_FETCHED",
+      "content_review_status": "SOURCE_COMPARISON_RECORDED_FULL_TEXT_NOT_CERTIFIED"
     },
     {
       "id": 92,
@@ -3292,7 +3564,8 @@
       "ingredient_count": 24,
       "ingredient_excerpt": "4 oz. pork shoulder ((finely julienned)) / 1 tablespoon water / Pinch of salt / 2 teaspoons vegetable oil / 1 teaspoon cornstarch / 1 to 2 dried red chili peppers ((optional)) / 0.3 ounce dried lily flower ((rehydrated, ½ cup after rehydrating)) / 0.",
       "method_excerpt": "Prepare your pork: / Prepare your dry ingredients: / Prepare the tofu and the rest of the ingredients: / Assemble the soup: / Adjust seasoning:",
-      "content_review_status": "UNREVIEWED_REQUIRES_MANUAL_CULINARY_COMPARISON"
+      "web_access_note": "GITHUB_FETCHED",
+      "content_review_status": "SOURCE_COMPARISON_RECORDED_FULL_TEXT_NOT_CERTIFIED"
     },
     {
       "id": 92,
@@ -3304,7 +3577,8 @@
       "ingredient_count": 19,
       "ingredient_excerpt": "4 dried shiitake mushrooms / 1/4 cup dried woodear mushrooms / 1 handful dried lily flowers / 1/2 lb pork loin (or chicken breast) (, cut into thin strips) / 1/2 tablespoon Shaoxing wine / 1/4 teaspoon salt / 1/2 tablespoon cornstarch / 2 teaspoons m",
       "method_excerpt": "Rehydrate dried ingredients: Gently rinse dried shiitake mushrooms, dried wood ear mushrooms, and lily flowers with tap water. Soak each of them with 2 cups warm water (*Footnote 5) in three big bowls. Rehydrate for 30 minute",
-      "content_review_status": "UNREVIEWED_REQUIRES_MANUAL_CULINARY_COMPARISON"
+      "web_access_note": "GITHUB_FETCHED",
+      "content_review_status": "SOURCE_COMPARISON_RECORDED_FULL_TEXT_NOT_CERTIFIED"
     },
     {
       "id": 92,
@@ -3316,7 +3590,8 @@
       "ingredient_count": 22,
       "ingredient_excerpt": "2 tomato / 2 oz carrot / 2 oz seafood mushroom / 2 oz king oyster mushroom / 3 piece shiitake mushroom / 0.25 oz dried wood ear mushroom / 2 egg / 1 oz red bell pepper / 2 piece green onion / 2 piece dried chili peppers / 14 oz tofu / 5 cup water / 2",
       "method_excerpt": "Wash all the vegetables, and then chop them: seafood mushrooms: cut away the roots, and cut the stems in half king oyster mushrooms: cut in little strips. My dad only uses about half of one for this recipe, but feel free to u",
-      "content_review_status": "UNREVIEWED_REQUIRES_MANUAL_CULINARY_COMPARISON"
+      "web_access_note": "GITHUB_FETCHED",
+      "content_review_status": "SOURCE_COMPARISON_RECORDED_FULL_TEXT_NOT_CERTIFIED"
     },
     {
       "id": 93,
@@ -3328,7 +3603,8 @@
       "ingredient_count": 10,
       "ingredient_excerpt": "4 cups chicken stock ((about 1 liter, organic or homemade preferred!)) / 1/2 teaspoon sesame oil / 3/4 teaspoon salt / 1/8 teaspoon sugar / 1/8 teaspoon white pepper / 1/2 teaspoon turmeric ((Or 5 drops yellow food coloring. Optional, but if you want",
       "method_excerpt": "Bring the chicken stock to a simmer in a medium soup pot. Stir in the sesame oil, salt, sugar, white pepper, and MSG (if using). Add in the turmeric or 5 drops of yellow food coloring, if using. This will give the soup that r",
-      "content_review_status": "UNREVIEWED_REQUIRES_MANUAL_CULINARY_COMPARISON"
+      "web_access_note": "GITHUB_FETCHED",
+      "content_review_status": "SOURCE_COMPARISON_RECORDED_FULL_TEXT_NOT_CERTIFIED"
     },
     {
       "id": 93,
@@ -3340,7 +3616,8 @@
       "ingredient_count": 9,
       "ingredient_excerpt": "4 cups chicken broth / 2 green onions (, sliced, white and green parts separated) / 2 slices ginger / 2 tablespoons cornstarch ((*Footnote 1)) / 1 teaspoon chicken bouillon powder (, or 3/4 teaspoon salt (*Footnote 2)) / 1/4 teaspoon white pepper pow",
       "method_excerpt": "Combine the chicken broth, the white part of the green onion and ginger in a small pot. Cook over high heat until brought to a boil. Turn to low heat and let the soup reduce to a simmer. / Combine cornstarch, chicken bouillon",
-      "content_review_status": "UNREVIEWED_REQUIRES_MANUAL_CULINARY_COMPARISON"
+      "web_access_note": "GITHUB_FETCHED",
+      "content_review_status": "SOURCE_COMPARISON_RECORDED_FULL_TEXT_NOT_CERTIFIED"
     },
     {
       "id": 93,
@@ -3352,7 +3629,8 @@
       "ingredient_count": 15,
       "ingredient_excerpt": "5 oz shrimp / 0.25 tsp white pepper / 1 tsp cornstarch / 3 oz carrot / 8 oz soft tofu / 4 large egg / 1 tbsp water / 1 can chicken broth / 6 cup water / 0.75 tsp salt / 0.25 tsp white pepper / 0.5 tsp oil / 1 tsp sugar / 5 tbsp potato starch / 7 tbsp",
       "method_excerpt": "Peel the shrimp. To easily remove the shell off, first twist off the tail. Then, hook a finger under the remaining shell and pull it straight off. Make sure to remove the legs as well if they don’t come off when you pull the ",
-      "content_review_status": "UNREVIEWED_REQUIRES_MANUAL_CULINARY_COMPARISON"
+      "web_access_note": "GITHUB_FETCHED",
+      "content_review_status": "SOURCE_COMPARISON_RECORDED_FULL_TEXT_NOT_CERTIFIED"
     },
     {
       "id": 94,
@@ -3364,7 +3642,8 @@
       "ingredient_count": 8,
       "ingredient_excerpt": "2 pounds pork ribs or pork rib tips ((cut into 1-2-inch/2.5-5cm pieces)) / 5 slices ginger ((⅛-inch thick and smashed)) / 9 cups water ((plus more for soaking and blanching the ribs)) / 1 1/2 pounds winter melon / 1 1/4 teaspoon sea salt ((plus more ",
       "method_excerpt": "Soak the ribs in a bowl of cold water for 1 hour to get rid of blood and impurities. Drain. If you are strapped for time, this step isn’t strictly necessary, as you’ll be blanching them also in the next step. / Add the ribs t",
-      "content_review_status": "UNREVIEWED_REQUIRES_MANUAL_CULINARY_COMPARISON"
+      "web_access_note": "GITHUB_FETCHED",
+      "content_review_status": "SOURCE_COMPARISON_RECORDED_FULL_TEXT_NOT_CERTIFIED"
     },
     {
       "id": 94,
@@ -3376,7 +3655,8 @@
       "ingredient_count": 0,
       "ingredient_excerpt": "",
       "method_excerpt": "",
-      "content_review_status": "UNREVIEWED_REQUIRES_MANUAL_CULINARY_COMPARISON"
+      "web_access_note": "GITHUB_FETCHED",
+      "content_review_status": "SOURCE_COMPARISON_RECORDED_FULL_TEXT_NOT_CERTIFIED"
     },
     {
       "id": 94,
@@ -3388,7 +3668,8 @@
       "ingredient_count": 0,
       "ingredient_excerpt": "",
       "method_excerpt": "",
-      "content_review_status": "UNREVIEWED_REQUIRES_MANUAL_CULINARY_COMPARISON"
+      "web_access_note": "OPENED_VIA_WEB_TO_BYPASS_AUTOMATION_BLOCK",
+      "content_review_status": "SOURCE_COMPARISON_RECORDED_FULL_TEXT_NOT_CERTIFIED"
     },
     {
       "id": 95,
@@ -3400,7 +3681,8 @@
       "ingredient_count": 16,
       "ingredient_excerpt": "3 oz chicken breast / 4 cup water, for boiling / 0.5 carrot / 8 oz unsweetened corn / 8 oz water, for corn blend / 1 egg / 1 tsp cornstarch / 0.5 tsp salt / 1 tbsp water / 6 tsp cornstarch / 2 tbsp water / 1 tsp salt / 0.5 tsp chicken powder / 1 tsp ",
       "method_excerpt": "Cut and dice the chicken breast into small pieces. In my dad's soup, the chicken is so tiny and tender that I forget he even adds it. Once diced, place the chicken into a small bowl for mixing. Add the cornstarch, salt, and w",
-      "content_review_status": "UNREVIEWED_REQUIRES_MANUAL_CULINARY_COMPARISON"
+      "web_access_note": "GITHUB_FETCHED",
+      "content_review_status": "SOURCE_COMPARISON_RECORDED_FULL_TEXT_NOT_CERTIFIED"
     },
     {
       "id": 95,
@@ -3412,7 +3694,8 @@
       "ingredient_count": 16,
       "ingredient_excerpt": "4 ounces boneless skinless chicken breast ((or thighs; cut into very small cubes/finely chopped)) / 1 tablespoon water / 1 teaspoon cornstarch / 1 teaspoon oyster sauce / 1½ cups sweet corn kernels ((fresh or frozen)) / 5 cups chicken stock / ½ teasp",
       "method_excerpt": "Marinate the chicken with the water, 1 teaspoon cornstarch, and the oyster sauce. Mix until the liquid is absorbed into the chicken. Set aside. / Finely mince ½ cup of the corn kernels and set aside. Add the chicken stock, mi",
-      "content_review_status": "UNREVIEWED_REQUIRES_MANUAL_CULINARY_COMPARISON"
+      "web_access_note": "GITHUB_FETCHED",
+      "content_review_status": "SOURCE_COMPARISON_RECORDED_FULL_TEXT_NOT_CERTIFIED"
     },
     {
       "id": 95,
@@ -3424,7 +3707,8 @@
       "ingredient_count": 13,
       "ingredient_excerpt": "1/2 lb ground chicken ((or ground turkey)) / 1 teaspoon salt (, divided (or to taste)) / 2 teaspoons Shaoxing wine ((or dry sherry)) / 2 tablespoons cornstarch (, divided) / 1 tablespoon peanut oil ((or vegetable oil)) / 1 large slice ginger / 4 cups",
       "method_excerpt": "Combine the ground chicken, 1/2 teaspoon salt, Shaoxing wine and 1 teaspoon of the cornstarch in a small bowl. Mix well and let marinate while preparing the other ingredients. / Heat the oil in a big pot until warm. Add groun",
-      "content_review_status": "UNREVIEWED_REQUIRES_MANUAL_CULINARY_COMPARISON"
+      "web_access_note": "GITHUB_FETCHED",
+      "content_review_status": "SOURCE_COMPARISON_RECORDED_FULL_TEXT_NOT_CERTIFIED"
     },
     {
       "id": 96,
@@ -3436,7 +3720,8 @@
       "ingredient_count": 20,
       "ingredient_excerpt": "1 lb (450 g) catfish filets ((*Footnote 1)) / 1 egg white / 1/2 teaspoon sea salt / 1 tablespoon cornstarch / 1/4 teaspoon white pepper / 1/3 cup dried chili pepper / 4 green onions (, white part sliced into 1/2” (1 cm) pieces, green part thinly slic",
       "method_excerpt": "To marinate the fish / To cook the fish / Finish up the toppings",
-      "content_review_status": "UNREVIEWED_REQUIRES_MANUAL_CULINARY_COMPARISON"
+      "web_access_note": "GITHUB_FETCHED",
+      "content_review_status": "SOURCE_COMPARISON_RECORDED_FULL_TEXT_NOT_CERTIFIED"
     },
     {
       "id": 96,
@@ -3448,7 +3733,8 @@
       "ingredient_count": 0,
       "ingredient_excerpt": "",
       "method_excerpt": "",
-      "content_review_status": "UNREVIEWED_REQUIRES_MANUAL_CULINARY_COMPARISON"
+      "web_access_note": "OPENED_VIA_WEB_TO_BYPASS_AUTOMATION_BLOCK",
+      "content_review_status": "SOURCE_COMPARISON_RECORDED_FULL_TEXT_NOT_CERTIFIED"
     },
     {
       "id": 96,
@@ -3460,7 +3746,8 @@
       "ingredient_count": 0,
       "ingredient_excerpt": "",
       "method_excerpt": "",
-      "content_review_status": "UNREVIEWED_REQUIRES_MANUAL_CULINARY_COMPARISON"
+      "web_access_note": "GITHUB_FETCHED",
+      "content_review_status": "SOURCE_COMPARISON_RECORDED_FULL_TEXT_NOT_CERTIFIED"
     },
     {
       "id": 97,
@@ -3472,7 +3759,8 @@
       "ingredient_count": 0,
       "ingredient_excerpt": "",
       "method_excerpt": "",
-      "content_review_status": "UNREVIEWED_REQUIRES_MANUAL_CULINARY_COMPARISON"
+      "web_access_note": "GITHUB_FETCHED",
+      "content_review_status": "SOURCE_COMPARISON_RECORDED_FULL_TEXT_NOT_CERTIFIED"
     },
     {
       "id": 97,
@@ -3484,7 +3772,8 @@
       "ingredient_count": 14,
       "ingredient_excerpt": "200g beef flank steak, thinly sliced against the grain / 2 tbsp light soy sauce, plus 1 tbsp for the broth / 1 tbsp Shaoxing wine / 3 tsp cornstarch, divided / 1.2 litres beef stock / 100g firm tofu, cut into thin strips / 15g dried wood ear mushroom",
       "method_excerpt": "Toss the beef with 2 tbsp soy sauce, the Shaoxing wine and 1 tsp cornstarch, then set aside for 15 minutes. The starch coats the meat so it stays silky in the hot broth instead of toughening. / Bring the stock to a simmer in ",
-      "content_review_status": "UNREVIEWED_REQUIRES_MANUAL_CULINARY_COMPARISON"
+      "web_access_note": "GITHUB_FETCHED",
+      "content_review_status": "SOURCE_COMPARISON_RECORDED_FULL_TEXT_NOT_CERTIFIED"
     },
     {
       "id": 97,
@@ -3496,7 +3785,8 @@
       "ingredient_count": 0,
       "ingredient_excerpt": "",
       "method_excerpt": "",
-      "content_review_status": "UNREVIEWED_REQUIRES_MANUAL_CULINARY_COMPARISON"
+      "web_access_note": "OPENED_VIA_WEB_TO_BYPASS_AUTOMATION_BLOCK",
+      "content_review_status": "SOURCE_COMPARISON_RECORDED_FULL_TEXT_NOT_CERTIFIED"
     },
     {
       "id": 98,
@@ -3508,7 +3798,8 @@
       "ingredient_count": 0,
       "ingredient_excerpt": "",
       "method_excerpt": "",
-      "content_review_status": "UNREVIEWED_REQUIRES_MANUAL_CULINARY_COMPARISON"
+      "web_access_note": "GITHUB_FETCHED",
+      "content_review_status": "SOURCE_COMPARISON_RECORDED_FULL_TEXT_NOT_CERTIFIED"
     },
     {
       "id": 98,
@@ -3520,7 +3811,8 @@
       "ingredient_count": 11,
       "ingredient_excerpt": "1 kg lamb leg or shoulder, on the bone, in 2–3 pieces; 500 g lamb bones (or the marrow's richer argument) / 1 piece ginger (50 g), smashed; 8 cloves garlic / 1 cinnamon stick, 2 star anise, 1 tsp (2 g) Sichuan peppercorns, 1 tsp (3 g) fennel seed — t",
       "method_excerpt": "The broth's long patience — 2 hours at the rolling milky simmer. The blanched lamb and bones in the clean pot with the ginger, garlic, wine and the spice bundle, covered with the fresh water — brought to the rolling simmer (t",
-      "content_review_status": "UNREVIEWED_REQUIRES_MANUAL_CULINARY_COMPARISON"
+      "web_access_note": "GITHUB_FETCHED",
+      "content_review_status": "SOURCE_COMPARISON_RECORDED_FULL_TEXT_NOT_CERTIFIED"
     },
     {
       "id": 98,
@@ -3532,7 +3824,8 @@
       "ingredient_count": 0,
       "ingredient_excerpt": "",
       "method_excerpt": "",
-      "content_review_status": "UNREVIEWED_REQUIRES_MANUAL_CULINARY_COMPARISON"
+      "web_access_note": "GITHUB_FETCHED",
+      "content_review_status": "SOURCE_COMPARISON_RECORDED_FULL_TEXT_NOT_CERTIFIED"
     },
     {
       "id": 99,
@@ -3544,7 +3837,8 @@
       "ingredient_count": 13,
       "ingredient_excerpt": "2 pounds oxtails / 2 tablespoons vegetable oil / 2 large onions / 6 cloves garlic / 3 small tomatoes ((about 12 ounces/340g, roughly chopped)) / 2 tablespoons tomato paste / 10 cups water ((2.4L)) / 2 large carrots ((about 12 ounces/340g, cut into la",
       "method_excerpt": "Rinse 2 pounds of oxtails and pat them very dry. Heat 2 tablespoons of oil in a thick-bottomed soup pot over medium heat to brown the oxtails. / Brown the oxtails lightly on both sides. While that’s happening, slice 2 large o",
-      "content_review_status": "UNREVIEWED_REQUIRES_MANUAL_CULINARY_COMPARISON"
+      "web_access_note": "GITHUB_FETCHED",
+      "content_review_status": "SOURCE_COMPARISON_RECORDED_FULL_TEXT_NOT_CERTIFIED"
     },
     {
       "id": 99,
@@ -3556,7 +3850,8 @@
       "ingredient_count": 0,
       "ingredient_excerpt": "",
       "method_excerpt": "",
-      "content_review_status": "UNREVIEWED_REQUIRES_MANUAL_CULINARY_COMPARISON"
+      "web_access_note": "GITHUB_FETCHED",
+      "content_review_status": "SOURCE_COMPARISON_RECORDED_FULL_TEXT_NOT_CERTIFIED"
     },
     {
       "id": 99,
@@ -3568,7 +3863,8 @@
       "ingredient_count": 10,
       "ingredient_excerpt": "Beef 500-800 g / Cabbage 1 pc (large) / Canned peeled tomatoes 600 g / Fresh tomatoes 2 pcs / Carrot 1 pc / Celery 2 stalks / Onion 1 pc / Potatoes 2 pcs / Butter 1 tbsp / Salt and black pepper",
       "method_excerpt": "Cut the beef into pieces and brown in a heavy-bottomed pot in its own fat or a bit of vegetable oil. Meat should be at room temperature so it browns instead of releasing too much liquid. / Once browned, remove the beef and li",
-      "content_review_status": "UNREVIEWED_REQUIRES_MANUAL_CULINARY_COMPARISON"
+      "web_access_note": "GITHUB_FETCHED",
+      "content_review_status": "SOURCE_COMPARISON_RECORDED_FULL_TEXT_NOT_CERTIFIED"
     },
     {
       "id": 100,
@@ -3580,7 +3876,8 @@
       "ingredient_count": 7,
       "ingredient_excerpt": "1½ pounds pork rib tips or ribs ((cut into 2- to 3-inch pieces)) / 5 slices ginger ((⅛-inch thick and smashed)) / 8 cups water / 1 to 2 bunches of watercress ((per your personal preference; each bunch is about 8 ounces)) / 1¼ teaspoon sea salt ((or t",
       "method_excerpt": "First, blanch the ribs. In a large pot, bring 6 cups of water to a boil. Add the pork ribs. Bring the water back up to a simmer, and after 2 minutes, turn off the heat. Drain and wash the ribs clean under running water. This ",
-      "content_review_status": "UNREVIEWED_REQUIRES_MANUAL_CULINARY_COMPARISON"
+      "web_access_note": "GITHUB_FETCHED",
+      "content_review_status": "SOURCE_COMPARISON_RECORDED_FULL_TEXT_NOT_CERTIFIED"
     },
     {
       "id": 100,
@@ -3592,7 +3889,8 @@
       "ingredient_count": 11,
       "ingredient_excerpt": "2 Bundles Watercress / 600 gm Pork Bones (chopped into bite sized) / 2 carcasses Chicken Bones / 2-4 Chicken Feet (optional) / 200 ml Water (for blanching the bones) / 0.5 TBsp Sweet Almonds (Nan Xing) / 0.5 TBsp Bitter Almonds (Bei Xing) / 2-3 Honey",
       "method_excerpt": "PREPARATION METHOD / COOKING METHOD",
-      "content_review_status": "UNREVIEWED_REQUIRES_MANUAL_CULINARY_COMPARISON"
+      "web_access_note": "GITHUB_FETCHED",
+      "content_review_status": "SOURCE_COMPARISON_RECORDED_FULL_TEXT_NOT_CERTIFIED"
     },
     {
       "id": 100,
@@ -3604,7 +3902,8 @@
       "ingredient_count": 0,
       "ingredient_excerpt": "",
       "method_excerpt": "",
-      "content_review_status": "UNREVIEWED_REQUIRES_MANUAL_CULINARY_COMPARISON"
+      "web_access_note": "GITHUB_FETCHED",
+      "content_review_status": "SOURCE_COMPARISON_RECORDED_FULL_TEXT_NOT_CERTIFIED"
     }
   ]
 }
