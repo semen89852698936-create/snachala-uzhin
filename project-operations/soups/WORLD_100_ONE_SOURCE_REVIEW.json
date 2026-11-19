@@ -2,9 +2,9 @@
   "project": "НАШ ВЕЧЕР",
   "policy": "ONE_SOURCE_PER_RECIPE",
   "date": "2026-11-19",
-  "disclaimer": "One selected original recipe per card. Archived excerpts are for preliminary triage, not proof of full reading or a culinary signoff. Timers require manual readiness and multi-phase checks. Previously recorded 3-URL comparisons remain as historical provenance and are not required.",
+  "disclaimer": "One selected original recipe per card. Archived excerpts are for preliminary triage, not proof of full reading or a culinary signoff. Timers require manual readiness and multi-phase checks. Previously recorded 3-URL comparisons remain as historical provenance and are not required. Full single-source reviews of first 4 completed, but recipe #2 needs alignment; approved count does not mean photographs or public publication are approved.",
   "total": 100,
-  "full_reviews_completed": 0,
+  "full_reviews_completed": 4,
   "recipes": [
     {
       "id": 1,
@@ -17,10 +17,13 @@
       "ingredient_excerpt": "Грудинка говяжья на кости / Сало / Лук репчатый / Свекла / Картофель / Морковь / Капуста белокочанная / Чеснок / Петрушка / Томатная паста / Уксус яблочный 6% / Лавровый лист / Сахар-песок / Перец чёрный молотый / Сметана 10% (нежирная)",
       "method_excerpt": "Приготовьте бульон для классического борща. Грудинку положите в&nbsp;кастрюлю объемом 5&nbsp;л, полностью залейте хо­лодной водой, поставьте на средний огонь. Снимите пену, уменьшите огонь, до­бавь­те 1&nbsp;ч. л. соли и&nbsp",
       "preliminary_basis": "ARCHIVED_SOURCE_EXCERPTS",
-      "ingredient_check": "PENDING_FULL_SINGLE_SOURCE_REVIEW",
-      "technique_check": "PENDING_FULL_SINGLE_SOURCE_REVIEW",
-      "time_check": "PENDING_FULL_SINGLE_SOURCE_REVIEW",
-      "approved": false
+      "ingredient_check": "PASS",
+      "technique_check": "PASS",
+      "time_check": "PASS",
+      "approved": true,
+      "review_method": "ORIGINAL_RECIPE_PAGE_READ_AND_COMPARED_WITH_EDITORIAL_STEPS",
+      "review_date": "2026-11-19",
+      "review_note": "Gastronom 8 portions: beef brisket, lard, apple cider vinegar, sugar; 1.5h broth. Editorial two-portion version substitutes vegetable oil and lemon juice (not attributed to source) and 80-100min broth. Multi-phase timers remain manual, readiness conditional."
     },
     {
       "id": 2,
@@ -33,10 +36,13 @@
       "ingredient_excerpt": "1,5–2 кг говяжьих костей с небольшим количеством мяса / 400 г копченой свиной грудинки, можно с косточками / 1,2 кг квашеной капусты (лучше без моркови) / 3 средние луковицы / 1 средняя морковка / 1 средний корень сельдерея / средний пучок петрушки /",
       "method_excerpt": "Для бульона порубить кости на небольшие куски, сложить в кастрюлю, залить 3 л холодной воды, довести до кипения, убавить огонь, снять всю пену. Добавить разрезанную пополам неочищенную 1 луковицу и морковку, лавровый лист, ст",
       "preliminary_basis": "ARCHIVED_SOURCE_EXCERPTS",
-      "ingredient_check": "PENDING_FULL_SINGLE_SOURCE_REVIEW",
-      "technique_check": "PENDING_FULL_SINGLE_SOURCE_REVIEW",
-      "time_check": "PENDING_FULL_SINGLE_SOURCE_REVIEW",
-      "approved": false
+      "ingredient_check": "REQUIRES_RECIPE_ALIGNMENT",
+      "technique_check": "REQUIRES_RECIPE_ALIGNMENT",
+      "time_check": "REQUIRES_RECIPE_ALIGNMENT",
+      "approved": false,
+      "review_method": "ORIGINAL_RECIPE_PAGE_READ_AND_COMPARED_WITH_EDITORIAL_STEPS",
+      "review_date": "2026-11-19",
+      "review_note": "Gastronom original uses beef bones AND smoked pork brisket, celery, tomato and 2.5h bone stock plus 2h cabbage braise in oven at 140C. Editorial recipe uses only beef, potatoes, 80-100min stock, cabbage 30-40min. This is a different simplified variation; cannot pass as source-faithful without explicit editorial adaptation or choosing closer single source."
     },
     {
       "id": 3,
@@ -49,10 +55,13 @@
       "ingredient_excerpt": "Говядина / Вода / Картофель / Огурец солёный / Лук репчатый / Морковь / Перловая крупа / Масло топлёное / Лавровый лист / Перец чёрный горошек / Соль / Перец чёрный молотый / Сметана 25% (классическая) / Укроп / Петрушка",
       "method_excerpt": "Перловку промойте 5–6 раз и залейте 300 мл горячей воды. Оставьте на 1 час. / Поставьте варить бульон, залив говядину 3-мя литрами воды. / Когда бульон закипит, снимите пену и убавьте огонь до минимального. Варите на медленно",
       "preliminary_basis": "ARCHIVED_SOURCE_EXCERPTS",
-      "ingredient_check": "PENDING_FULL_SINGLE_SOURCE_REVIEW",
-      "technique_check": "PENDING_FULL_SINGLE_SOURCE_REVIEW",
-      "time_check": "PENDING_FULL_SINGLE_SOURCE_REVIEW",
-      "approved": false
+      "ingredient_check": "PASS",
+      "technique_check": "PASS",
+      "time_check": "PASS",
+      "approved": true,
+      "review_method": "ORIGINAL_RECIPE_PAGE_READ_AND_COMPARED_WITH_EDITORIAL_STEPS",
+      "review_date": "2026-11-19",
+      "review_note": "Gastronom uses 1.2kg beef, 3L water, 100g barley per 6; soak barley 1h then cook in beef broth. Editorial two-serving version uses pre-made broth and separately cooked barley; conscious quicker adaptation. Potato 10min then pickle sauté 5-7min; rest 10-12min. Timer only on actual stage, no automatic startup."
     },
     {
       "id": 4,
@@ -65,10 +74,13 @@
       "ingredient_excerpt": "Говяжьи кости / Говядина / Морковь / Лук репчатый / Масло сливочное / Мука пшеничная / Томатная паста / Огурец солёный / Каперсы / Колбаски охотничьи / Лимонный сок / Лавровый лист / Оливки / Ветчина / Перец чёрный горошек / Сметана 20% (средней жирн",
       "method_excerpt": "Приготовьте бульон для сборной солянки. Мясо и кости промыть, положить в кастрюлю, залить 2 л холодной воды и довести до кипения. Снять пену, добавить очищенные морковь и луковицу, варить 1,5 ч. / Оставшуюся луковицу очистить",
       "preliminary_basis": "ARCHIVED_SOURCE_EXCERPTS",
-      "ingredient_check": "PENDING_FULL_SINGLE_SOURCE_REVIEW",
-      "technique_check": "PENDING_FULL_SINGLE_SOURCE_REVIEW",
-      "time_check": "PENDING_FULL_SINGLE_SOURCE_REVIEW",
-      "approved": false
+      "ingredient_check": "PASS",
+      "technique_check": "PASS",
+      "time_check": "PASS",
+      "approved": true,
+      "review_method": "ORIGINAL_RECIPE_PAGE_READ_AND_COMPARED_WITH_EDITORIAL_STEPS",
+      "review_date": "2026-11-19",
+      "review_note": "Gastronom uses beef/bones, smoked meat, salted cucumber, tomato, capers, olives, lemon, sour cream; 1.5h broth and 10min final simmer. Editorial 2-serving version substitutes cold cuts, omits flour and carrot, uses 80-100min broth, adds separate staged sauté; acceptable adapted cooking method. Salt only after tasting."
     },
     {
       "id": 5,
@@ -1606,5 +1618,7 @@
       "time_check": "PENDING_FULL_SINGLE_SOURCE_REVIEW",
       "approved": false
     }
-  ]
+  ],
+  "quality_approved": 3,
+  "review_in_progress": 1
 }
