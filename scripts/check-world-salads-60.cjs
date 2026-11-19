@@ -25,7 +25,7 @@ for(let i=0;i<10;i++){
  assert.ok(r.steps.every(s=>Number.isInteger(s.timer)&&s.timer>=0),'invalid timer '+r.id);
  const expected='/assets/world-salads/'+(51+i)+'_world-salad-06-'+String(i+1).padStart(2,'0')+'.webp';
  assert.equal(r.photo,expected,'wrong photo association '+r.id);
- const img=path.join(ROOT,r.photo.replace(/^\\//,''));
+ const img=path.join(ROOT,r.photo.replace(/^[/]/,''));
  assert.ok(fs.existsSync(img),'missing approved photo: '+expected);
  const data=fs.readFileSync(img);
  assert.ok(data.length>100000,'photo missing content: '+expected);
