@@ -57,8 +57,9 @@ for(const r of recipes){
       const readFlag = e.read === true || e.actuallyRead === true ||
         e.verifiedRead === true || e.status === 'read' ||
         (typeof e.readOn === 'string' && e.readOn.length > 0) ||
-        (typeof e.accessed === 'string' && e.accessed.length > 0 && e.type === 'recipe_read') ||
-        (typeof e.checkedOn === 'string' && e.checkedOn.length > 0 && e.status === 'read_and_compared');
+        (typeof e.accessed === 'string' && e.accessed.length > 0 && e.type === 'recipe') ||
+        (typeof e.checkedOn === 'string' && e.checkedOn.length > 0 &&
+          (e.type === 'independent_recipe' || typeof e.publisher === 'string'));
       return readFlag && typeof e.url === 'string' && e.url.startsWith('https://') &&
         typeof evidence === 'string' && evidence.length >= 35;
     });
