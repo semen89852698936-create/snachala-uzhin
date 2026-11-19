@@ -1,0 +1,784 @@
+{
+  "project": "НАШ ВЕЧЕР",
+  "country": "Турция",
+  "collection": "100 завтраков мира",
+  "recipe_count": 10,
+  "is_published": false,
+  "verification_level": "editorial draft, all individual recipes require culinary verification",
+  "recipes": [
+    {
+      "id": "breakfast-tr-41",
+      "collection_number": 41,
+      "country": "Турция",
+      "country_code": "TR",
+      "title": "Менемен",
+      "original_name": "Menemen",
+      "servings": 2,
+      "total_min": 25,
+      "ingredients": [
+        {
+          "name": "Яйца",
+          "amount": 4,
+          "unit": "шт."
+        },
+        {
+          "name": "Помидоры спелые",
+          "amount": 300,
+          "unit": "г"
+        },
+        {
+          "name": "Перец зелёный длинный",
+          "amount": 130,
+          "unit": "г"
+        },
+        {
+          "name": "Оливковое масло",
+          "amount": 25,
+          "unit": "мл"
+        },
+        {
+          "name": "Сливочное масло",
+          "amount": 15,
+          "unit": "г"
+        },
+        {
+          "name": "Соль",
+          "amount": 4,
+          "unit": "г"
+        },
+        {
+          "name": "Хлопья острого перца",
+          "amount": 2,
+          "unit": "г"
+        }
+      ],
+      "steps": [
+        {
+          "text": "Очисти помидоры от грубой кожицы и нарежь мелкими кубиками. Зелёный перец нарежь тонкими кольцами.",
+          "timer_sec": 0
+        },
+        {
+          "text": "Нагрей оливковое и сливочное масла, обжарь перец 4–5 минут до размягчения.",
+          "timer_sec": 300
+        },
+        {
+          "text": "Добавь помидоры и соль, готовь 7–9 минут на среднем огне, пока лишний сок выпарится.",
+          "timer_sec": 540
+        },
+        {
+          "text": "Вбей яйца и осторожно перемешай с томатами лишь несколько раз, чтобы получились мягкие крупные сгустки.",
+          "timer_sec": 0
+        },
+        {
+          "text": "Готовь ещё 2–3 минуты до полного схватывания белка; снимай с огня, пока масса остаётся сочной. Посыпь острым перцем.",
+          "timer_sec": 180
+        }
+      ],
+      "notes": "Менемен не должен быть сухой яичницей или шакшукой с отдельными целыми желтками.",
+      "source_verification": {
+        "status": "national_breakfast_tradition_checked_individual_technique_pending",
+        "country_reference_url": "https://gastronomy.goturkiye.com/turkish-breakfast"
+      },
+      "editorial_status": "complete_draft_pending_culinary_verification",
+      "photo_status": "deferred_by_user",
+      "publication_status": "unpublished"
+    },
+    {
+      "id": "breakfast-tr-42",
+      "collection_number": 42,
+      "country": "Турция",
+      "country_code": "TR",
+      "title": "Чылбыр - яйца с йогуртом",
+      "original_name": "Çılbır",
+      "servings": 2,
+      "total_min": 25,
+      "ingredients": [
+        {
+          "name": "Яйца",
+          "amount": 4,
+          "unit": "шт."
+        },
+        {
+          "name": "Густой натуральный йогурт",
+          "amount": 250,
+          "unit": "г"
+        },
+        {
+          "name": "Чеснок",
+          "amount": 1,
+          "unit": "зубчик"
+        },
+        {
+          "name": "Сливочное масло",
+          "amount": 40,
+          "unit": "г"
+        },
+        {
+          "name": "Хлопья алеппского перца",
+          "amount": 4,
+          "unit": "г"
+        },
+        {
+          "name": "Уксус столовый 5%",
+          "amount": 15,
+          "unit": "мл"
+        },
+        {
+          "name": "Соль",
+          "amount": 3,
+          "unit": "г"
+        },
+        {
+          "name": "Укроп",
+          "amount": 8,
+          "unit": "г"
+        }
+      ],
+      "steps": [
+        {
+          "text": "Достань йогурт заранее на 15 минут, смешай с натёртым чесноком и солью, разложи на две тёплые тарелки.",
+          "timer_sec": 900
+        },
+        {
+          "text": "В широкой кастрюле нагрей воду до лёгкого кипения без бурления, влей уксус.",
+          "timer_sec": 0
+        },
+        {
+          "text": "Каждое яйцо разбей в чашку и аккуратно опусти в воду; готовь партиями по 3–4 минуты до полностью схватившегося белка. Желток по желанию доведи до плотности.",
+          "timer_sec": 240
+        },
+        {
+          "text": "В маленьком сотейнике растопи масло, прогрей в нём хлопья перца 30–45 секунд, не допуская подгорания.",
+          "timer_sec": 45
+        },
+        {
+          "text": "Выложи обсушенные яйца на йогурт, полей пряным маслом и посыпь укропом.",
+          "timer_sec": 0
+        }
+      ],
+      "notes": "Для детей, беременных и людей с ослабленным иммунитетом яйца готовь до плотного желтка.",
+      "source_verification": {
+        "status": "national_breakfast_tradition_checked_individual_technique_pending",
+        "country_reference_url": "https://gastronomy.goturkiye.com/turkish-breakfast"
+      },
+      "editorial_status": "complete_draft_pending_culinary_verification",
+      "photo_status": "deferred_by_user",
+      "publication_status": "unpublished"
+    },
+    {
+      "id": "breakfast-tr-43",
+      "collection_number": 43,
+      "country": "Турция",
+      "country_code": "TR",
+      "title": "Яйца с суджуком",
+      "original_name": "Sucuklu yumurta",
+      "servings": 2,
+      "total_min": 15,
+      "ingredients": [
+        {
+          "name": "Яйца",
+          "amount": 4,
+          "unit": "шт."
+        },
+        {
+          "name": "Турецкий суджук",
+          "amount": 110,
+          "unit": "г"
+        },
+        {
+          "name": "Сливочное масло",
+          "amount": 15,
+          "unit": "г"
+        },
+        {
+          "name": "Помидоры",
+          "amount": 100,
+          "unit": "г"
+        },
+        {
+          "name": "Чёрный перец",
+          "amount": 1,
+          "unit": "г"
+        }
+      ],
+      "steps": [
+        {
+          "text": "Сними оболочку с суджука и нарежь тонкими кружочками толщиной 3–4 мм.",
+          "timer_sec": 0
+        },
+        {
+          "text": "Растопи масло в сковороде, обжарь суджук 2–3 минуты, чтобы он выделил пряный жир и подрумянился.",
+          "timer_sec": 180
+        },
+        {
+          "text": "Добавь нарезанные помидоры и готовь 2 минуты, чтобы они слегка размягчились.",
+          "timer_sec": 120
+        },
+        {
+          "text": "Разбей яйца между кружочками суджука, накрой крышкой и готовь 3–5 минут до полного схватывания белков.",
+          "timer_sec": 300
+        },
+        {
+          "text": "Посыпь перцем и подавай прямо в сковороде с хлебом при желании.",
+          "timer_sec": 0
+        }
+      ],
+      "notes": "Суджук жарят до добавления яиц; дополнительно солить обычно не требуется.",
+      "source_verification": {
+        "status": "national_breakfast_tradition_checked_individual_technique_pending",
+        "country_reference_url": "https://gastronomy.goturkiye.com/turkish-breakfast"
+      },
+      "editorial_status": "complete_draft_pending_culinary_verification",
+      "photo_status": "deferred_by_user",
+      "publication_status": "unpublished"
+    },
+    {
+      "id": "breakfast-tr-44",
+      "collection_number": 44,
+      "country": "Турция",
+      "country_code": "TR",
+      "title": "Куймак - кукурузная каша с сыром",
+      "original_name": "Kuymak / Mıhlama",
+      "servings": 2,
+      "total_min": 20,
+      "ingredients": [
+        {
+          "name": "Кукурузная мука мелкого помола",
+          "amount": 65,
+          "unit": "г"
+        },
+        {
+          "name": "Сливочное масло",
+          "amount": 60,
+          "unit": "г"
+        },
+        {
+          "name": "Вода",
+          "amount": 200,
+          "unit": "мл"
+        },
+        {
+          "name": "Сыр турецкий колот или молодой тянущийся",
+          "amount": 170,
+          "unit": "г"
+        },
+        {
+          "name": "Соль",
+          "amount": 2,
+          "unit": "г"
+        }
+      ],
+      "steps": [
+        {
+          "text": "Нагрей небольшую сковороду с толстым дном и растопи сливочное масло, не допуская сильного потемнения.",
+          "timer_sec": 0
+        },
+        {
+          "text": "Всыпь кукурузную муку и обжаривай на слабом огне 3–4 минуты, постоянно помешивая до лёгкого орехового запаха.",
+          "timer_sec": 240
+        },
+        {
+          "text": "Постепенно влей горячую воду и быстро размешай без комков. Готовь 4–5 минут до густой каши.",
+          "timer_sec": 300
+        },
+        {
+          "text": "Добавь тёртый сыр и прогревай на слабом огне 2–4 минуты без энергичного перемешивания до длинных тянущихся нитей.",
+          "timer_sec": 240
+        },
+        {
+          "text": "Подавай немедленно горячим в сковороде, пока сыр тянется.",
+          "timer_sec": 0
+        }
+      ],
+      "notes": "Для аутентичного результата важен сыр, хорошо плавящийся длинными нитями, а не творог или фета.",
+      "source_verification": {
+        "status": "national_breakfast_tradition_checked_individual_technique_pending",
+        "country_reference_url": "https://gastronomy.goturkiye.com/turkish-breakfast"
+      },
+      "editorial_status": "complete_draft_pending_culinary_verification",
+      "photo_status": "deferred_by_user",
+      "publication_status": "unpublished"
+    },
+    {
+      "id": "breakfast-tr-45",
+      "collection_number": 45,
+      "country": "Турция",
+      "country_code": "TR",
+      "title": "Гёзлеме со шпинатом и сыром",
+      "original_name": "Gözleme",
+      "servings": 2,
+      "total_min": 70,
+      "ingredients": [
+        {
+          "name": "Пшеничная мука",
+          "amount": 260,
+          "unit": "г"
+        },
+        {
+          "name": "Тёплая вода",
+          "amount": 145,
+          "unit": "мл"
+        },
+        {
+          "name": "Оливковое масло",
+          "amount": 20,
+          "unit": "мл"
+        },
+        {
+          "name": "Соль",
+          "amount": 4,
+          "unit": "г"
+        },
+        {
+          "name": "Шпинат свежий",
+          "amount": 170,
+          "unit": "г"
+        },
+        {
+          "name": "Белый рассольный сыр",
+          "amount": 140,
+          "unit": "г"
+        },
+        {
+          "name": "Лук репчатый",
+          "amount": 60,
+          "unit": "г"
+        },
+        {
+          "name": "Масло сливочное для подачи",
+          "amount": 15,
+          "unit": "г"
+        }
+      ],
+      "steps": [
+        {
+          "text": "Замеси муку, воду, масло и соль в упругое тесто 7–8 минут. Накрой и дай отдохнуть 25 минут.",
+          "timer_sec": 1500
+        },
+        {
+          "text": "Мелко нарежь лук, пассеруй 3 минуты. Добавь нарезанный шпинат и прогрей 2 минуты до увядания. Остуди, отожми воду, смешай с крошеным сыром.",
+          "timer_sec": 300
+        },
+        {
+          "text": "Раздели тесто на 4 части, раскатай каждую максимально тонко в круг.",
+          "timer_sec": 0
+        },
+        {
+          "text": "На половину лепёшки распредели четверть начинки, накрой второй половиной и прижми края, выгони лишний воздух.",
+          "timer_sec": 0
+        },
+        {
+          "text": "Жарь на сухой хорошо прогретой сковороде по 3–4 минуты с каждой стороны, пока не появятся коричневые пятна и тесто не приготовится.",
+          "timer_sec": 480
+        },
+        {
+          "text": "Слегка смажь готовые гёзлеме сливочным маслом и подавай горячими.",
+          "timer_sec": 0
+        }
+      ],
+      "notes": "Это очень тонкая закрытая лепёшка с начинкой, не толстый пирог.",
+      "source_verification": {
+        "status": "national_breakfast_tradition_checked_individual_technique_pending",
+        "country_reference_url": "https://gastronomy.goturkiye.com/turkish-breakfast"
+      },
+      "editorial_status": "complete_draft_pending_culinary_verification",
+      "photo_status": "deferred_by_user",
+      "publication_status": "unpublished"
+    },
+    {
+      "id": "breakfast-tr-46",
+      "collection_number": 46,
+      "country": "Турция",
+      "country_code": "TR",
+      "title": "Симит с кунжутом",
+      "original_name": "Simit",
+      "servings": 2,
+      "total_min": 150,
+      "ingredients": [
+        {
+          "name": "Пшеничная мука",
+          "amount": 300,
+          "unit": "г"
+        },
+        {
+          "name": "Вода",
+          "amount": 165,
+          "unit": "мл"
+        },
+        {
+          "name": "Сухие дрожжи",
+          "amount": 4,
+          "unit": "г"
+        },
+        {
+          "name": "Сахар",
+          "amount": 8,
+          "unit": "г"
+        },
+        {
+          "name": "Соль",
+          "amount": 5,
+          "unit": "г"
+        },
+        {
+          "name": "Масло растительное",
+          "amount": 15,
+          "unit": "мл"
+        },
+        {
+          "name": "Виноградный пекмез",
+          "amount": 35,
+          "unit": "г"
+        },
+        {
+          "name": "Вода для пекмеза",
+          "amount": 70,
+          "unit": "мл"
+        },
+        {
+          "name": "Кунжут",
+          "amount": 95,
+          "unit": "г"
+        }
+      ],
+      "steps": [
+        {
+          "text": "Замеси из муки, воды, дрожжей, сахара, соли и масла гладкое тесто 8 минут.",
+          "timer_sec": 480
+        },
+        {
+          "text": "Дай подойти около 60 минут до заметного увеличения объёма.",
+          "timer_sec": 3600
+        },
+        {
+          "text": "Раздели на 4 части. Из каждой сделай два длинных жгута, переплети их и сомкни в кольцо.",
+          "timer_sec": 0
+        },
+        {
+          "text": "Разведи пекмез 70 мл воды. Окуни кольца сначала в сироп, затем густо обваляй в кунжуте.",
+          "timer_sec": 0
+        },
+        {
+          "text": "Дай расстояться 20–25 минут. Выпекай при 220 °C 15–18 минут до глубокого румяного цвета.",
+          "timer_sec": 1500
+        }
+      ],
+      "notes": "Для хрустящей корочки нужен пекмез и много кунжута.",
+      "source_verification": {
+        "status": "national_breakfast_tradition_checked_individual_technique_pending",
+        "country_reference_url": "https://gastronomy.goturkiye.com/turkish-breakfast"
+      },
+      "editorial_status": "complete_draft_pending_culinary_verification",
+      "photo_status": "deferred_by_user",
+      "publication_status": "unpublished"
+    },
+    {
+      "id": "breakfast-tr-47",
+      "collection_number": 47,
+      "country": "Турция",
+      "country_code": "TR",
+      "title": "Пышные лепёшки пиши",
+      "original_name": "Pişi",
+      "servings": 2,
+      "total_min": 125,
+      "ingredients": [
+        {
+          "name": "Пшеничная мука",
+          "amount": 260,
+          "unit": "г"
+        },
+        {
+          "name": "Тёплая вода",
+          "amount": 145,
+          "unit": "мл"
+        },
+        {
+          "name": "Сухие дрожжи",
+          "amount": 4,
+          "unit": "г"
+        },
+        {
+          "name": "Сахар",
+          "amount": 8,
+          "unit": "г"
+        },
+        {
+          "name": "Соль",
+          "amount": 4,
+          "unit": "г"
+        },
+        {
+          "name": "Растительное масло для жарки",
+          "amount": 450,
+          "unit": "мл"
+        }
+      ],
+      "steps": [
+        {
+          "text": "Смешай тёплую воду с дрожжами и сахаром. Добавь муку и соль, замеси мягкое тесто 7 минут.",
+          "timer_sec": 420
+        },
+        {
+          "text": "Оставь в миске под крышкой примерно на 60 минут, пока тесто не увеличится вдвое.",
+          "timer_sec": 3600
+        },
+        {
+          "text": "Раскатай до 1–1,5 см и нарежь на 8 небольших ромбов или кружков, дай отдохнуть 15 минут.",
+          "timer_sec": 900
+        },
+        {
+          "text": "Нагрей масло до 170–175 °C. Жарь лепёшки по 1,5–2 минуты с каждой стороны до золотистого цвета и готовой середины.",
+          "timer_sec": 240
+        },
+        {
+          "text": "Переложи на бумагу для удаления лишнего масла и подавай тёплыми.",
+          "timer_sec": 0
+        }
+      ],
+      "notes": "Не перегревай масло, иначе середина останется сырой.",
+      "source_verification": {
+        "status": "national_breakfast_tradition_checked_individual_technique_pending",
+        "country_reference_url": "https://gastronomy.goturkiye.com/turkish-breakfast"
+      },
+      "editorial_status": "complete_draft_pending_culinary_verification",
+      "photo_status": "deferred_by_user",
+      "publication_status": "unpublished"
+    },
+    {
+      "id": "breakfast-tr-48",
+      "collection_number": 48,
+      "country": "Турция",
+      "country_code": "TR",
+      "title": "Су-бёрек с сыром",
+      "original_name": "Su böreği",
+      "servings": 2,
+      "total_min": 135,
+      "ingredients": [
+        {
+          "name": "Пшеничная мука",
+          "amount": 260,
+          "unit": "г"
+        },
+        {
+          "name": "Яйца",
+          "amount": 2,
+          "unit": "шт."
+        },
+        {
+          "name": "Вода",
+          "amount": 55,
+          "unit": "мл"
+        },
+        {
+          "name": "Соль",
+          "amount": 4,
+          "unit": "г"
+        },
+        {
+          "name": "Сыр белый рассольный",
+          "amount": 180,
+          "unit": "г"
+        },
+        {
+          "name": "Петрушка",
+          "amount": 15,
+          "unit": "г"
+        },
+        {
+          "name": "Сливочное масло",
+          "amount": 85,
+          "unit": "г"
+        }
+      ],
+      "steps": [
+        {
+          "text": "Замеси тугое тесто из муки, яиц, воды и соли, вымешивай 8 минут, оставь под крышкой на 30 минут.",
+          "timer_sec": 1800
+        },
+        {
+          "text": "Раздели на 6 шариков и раскатай очень тонкие пласты по размеру формы 18×22 см.",
+          "timer_sec": 0
+        },
+        {
+          "text": "Вскипяти большую кастрюлю воды. По одному отвари 5 пластов по 30–45 секунд, окуни в холодную воду и обсуши на полотенце; один пласт оставь сырым для дна.",
+          "timer_sec": 225
+        },
+        {
+          "text": "Смажь форму маслом, уложи сырой нижний пласт, затем отваренные пласты складками, промазывая растопленным маслом. В середине положи сыр с петрушкой.",
+          "timer_sec": 0
+        },
+        {
+          "text": "Накрой последним пластом, смажь маслом. Выпекай при 190 °C 30–35 минут до золотистой корочки и пропечённых слоёв.",
+          "timer_sec": 2100
+        }
+      ],
+      "notes": "В традиционном su böreği часть листов теста именно отваривают; это не обычный бёрек из покупного фило.",
+      "source_verification": {
+        "status": "national_breakfast_tradition_checked_individual_technique_pending",
+        "country_reference_url": "https://gastronomy.goturkiye.com/turkish-breakfast"
+      },
+      "editorial_status": "complete_draft_pending_culinary_verification",
+      "photo_status": "deferred_by_user",
+      "publication_status": "unpublished"
+    },
+    {
+      "id": "breakfast-tr-49",
+      "collection_number": 49,
+      "country": "Турция",
+      "country_code": "TR",
+      "title": "Погача с сыром",
+      "original_name": "Peynirli poğaça",
+      "servings": 2,
+      "total_min": 110,
+      "ingredients": [
+        {
+          "name": "Пшеничная мука",
+          "amount": 260,
+          "unit": "г"
+        },
+        {
+          "name": "Йогурт натуральный",
+          "amount": 95,
+          "unit": "г"
+        },
+        {
+          "name": "Растительное масло",
+          "amount": 55,
+          "unit": "мл"
+        },
+        {
+          "name": "Яйцо для теста",
+          "amount": 1,
+          "unit": "шт."
+        },
+        {
+          "name": "Разрыхлитель",
+          "amount": 10,
+          "unit": "г"
+        },
+        {
+          "name": "Соль",
+          "amount": 4,
+          "unit": "г"
+        },
+        {
+          "name": "Белый сыр",
+          "amount": 130,
+          "unit": "г"
+        },
+        {
+          "name": "Петрушка",
+          "amount": 10,
+          "unit": "г"
+        },
+        {
+          "name": "Желток для смазывания",
+          "amount": 1,
+          "unit": "шт."
+        },
+        {
+          "name": "Кунжут",
+          "amount": 12,
+          "unit": "г"
+        }
+      ],
+      "steps": [
+        {
+          "text": "Смешай йогурт, масло и яйцо, всыпь муку с разрыхлителем и солью, быстро замеси мягкое тесто.",
+          "timer_sec": 0
+        },
+        {
+          "text": "Смешай раскрошенный сыр с мелко нарезанной петрушкой.",
+          "timer_sec": 0
+        },
+        {
+          "text": "Раздели тесто на 6 частей, расплющи каждую, положи сыр и защипни в форме полумесяца.",
+          "timer_sec": 0
+        },
+        {
+          "text": "Переложи на противень, смажь желтком, посыпь кунжутом.",
+          "timer_sec": 0
+        },
+        {
+          "text": "Выпекай при 185 °C 22–26 минут до готовой румяной оболочки; остуди 10 минут.",
+          "timer_sec": 1560
+        }
+      ],
+      "notes": "Это быстрая версия pogaca на разрыхлителе, а не дрожжевая версия; указывать это в карточке.",
+      "source_verification": {
+        "status": "national_breakfast_tradition_checked_individual_technique_pending",
+        "country_reference_url": "https://gastronomy.goturkiye.com/turkish-breakfast"
+      },
+      "editorial_status": "complete_draft_pending_culinary_verification",
+      "photo_status": "deferred_by_user",
+      "publication_status": "unpublished"
+    },
+    {
+      "id": "breakfast-tr-50",
+      "collection_number": 50,
+      "country": "Турция",
+      "country_code": "TR",
+      "title": "Муртуга - завтрак из Вана",
+      "original_name": "Murtuğa",
+      "servings": 2,
+      "total_min": 15,
+      "ingredients": [
+        {
+          "name": "Яйца",
+          "amount": 3,
+          "unit": "шт."
+        },
+        {
+          "name": "Пшеничная мука",
+          "amount": 70,
+          "unit": "г"
+        },
+        {
+          "name": "Сливочное масло",
+          "amount": 65,
+          "unit": "г"
+        },
+        {
+          "name": "Соль",
+          "amount": 3,
+          "unit": "г"
+        },
+        {
+          "name": "Чёрный перец",
+          "amount": 1,
+          "unit": "г"
+        }
+      ],
+      "steps": [
+        {
+          "text": "Растопи сливочное масло на сковороде на среднем-слабом огне.",
+          "timer_sec": 0
+        },
+        {
+          "text": "Всыпь муку и помешивай 4–6 минут, пока она не станет светло-золотистой, без сырых комков и запаха сырой муки.",
+          "timer_sec": 360
+        },
+        {
+          "text": "Отдельно взбей яйца с солью и перцем до однородности.",
+          "timer_sec": 0
+        },
+        {
+          "text": "Влей яйца в обжаренную муку, непрерывно перемешивая лопаткой, чтобы образовалась неоднородная рассыпчатая яично-мучная масса.",
+          "timer_sec": 0
+        },
+        {
+          "text": "Готовь 2–3 минуты до полного схватывания яиц и подавай сразу.",
+          "timer_sec": 180
+        }
+      ],
+      "notes": "Ванская муртуга отличается от омлета: мука должна быть предварительно обжарена в масле.",
+      "source_verification": {
+        "status": "national_breakfast_tradition_checked_individual_technique_pending",
+        "country_reference_url": "https://gastronomy.goturkiye.com/turkish-breakfast"
+      },
+      "editorial_status": "complete_draft_pending_culinary_verification",
+      "photo_status": "deferred_by_user",
+      "publication_status": "unpublished"
+    }
+  ]
+}
