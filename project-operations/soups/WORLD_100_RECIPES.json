@@ -45,7 +45,7 @@
         "соль, чёрный перец",
         "сметана 40 г и укроп для подачи."
       ],
-      "recipe_source_audit_status": "THREE_INDEPENDENT_RECIPE_TEXTS_COMPARED",
+      "recipe_source_audit_status": "THREE_SOURCE_COMPARISON_DOCUMENTED",
       "visual_audit_status": "PENDING",
       "photo_status": "PENDING_USER_APPROVAL",
       "source_content_evidence": {
@@ -66,8 +66,10 @@
             "url": "https://www.edimdoma.ru/retsepty/155389-borsch-klassicheskiy-s-govyadinoy",
             "difference": "Мясо на кости, предварительная свекольная обжарка, 1–1,5 часа бульона"
           }
-        ]
-      }
+        ],
+        "verification_scope": "Comparison of available recipe texts, accessible pages and extracted source evidence; full independent human reading of every one of 300 URLs not certified where source blocked or unavailable. Not a recipe made in a kitchen."
+      },
+      "editorial_publication_gate": "HOLD_FOR_FINAL_SOURCE_AND_TIMER_APPROVAL"
     },
     {
       "id": 2,
@@ -105,7 +107,7 @@
         "соль, перец",
         "сметана 40 г для подачи."
       ],
-      "recipe_source_audit_status": "THREE_INDEPENDENT_RECIPE_TEXTS_COMPARED",
+      "recipe_source_audit_status": "THREE_SOURCE_COMPARISON_DOCUMENTED",
       "visual_audit_status": "PENDING",
       "photo_status": "PENDING_USER_APPROVAL",
       "source_content_evidence": {
@@ -126,8 +128,10 @@
             "url": "https://www.russianfood.com/recipes/recipe.php?rid=160150",
             "difference": "Другой баланс тушёной капусты, мясного бульона и овощей"
           }
-        ]
-      }
+        ],
+        "verification_scope": "Comparison of available recipe texts, accessible pages and extracted source evidence; full independent human reading of every one of 300 URLs not certified where source blocked or unavailable. Not a recipe made in a kitchen."
+      },
+      "editorial_publication_gate": "HOLD_FOR_FINAL_SOURCE_AND_TIMER_APPROVAL"
     },
     {
       "id": 3,
@@ -165,7 +169,7 @@
         "немного огуречного рассола по вкусу, соль и перец",
         "сметана 40 г и укроп для подачи."
       ],
-      "recipe_source_audit_status": "THREE_INDEPENDENT_RECIPE_TEXTS_COMPARED",
+      "recipe_source_audit_status": "THREE_SOURCE_COMPARISON_DOCUMENTED",
       "visual_audit_status": "PENDING",
       "photo_status": "PENDING_USER_APPROVAL",
       "source_content_evidence": {
@@ -186,8 +190,10 @@
             "url": "https://tekhnolog.com/2018/07/18/rassolnik-leningradskij-s-krupoj-perlovoj-ttk2808/",
             "difference": "Технологическая карта с раздельной обработкой овощей и крупы"
           }
-        ]
-      }
+        ],
+        "verification_scope": "Comparison of available recipe texts, accessible pages and extracted source evidence; full independent human reading of every one of 300 URLs not certified where source blocked or unavailable. Not a recipe made in a kitchen."
+      },
+      "editorial_publication_gate": "HOLD_FOR_FINAL_SOURCE_AND_TIMER_APPROVAL"
     },
     {
       "id": 4,
@@ -229,7 +235,7 @@
         "Чёрный перец, лавровый лист — по вкусу",
         "Соль — только после пробы, огурцы и мясное ассорти уже солёные"
       ],
-      "recipe_source_audit_status": "THREE_INDEPENDENT_RECIPE_TEXTS_COMPARED",
+      "recipe_source_audit_status": "THREE_SOURCE_COMPARISON_DOCUMENTED",
       "visual_audit_status": "PENDING",
       "photo_status": "PENDING_USER_APPROVAL",
       "source_content_evidence": {
@@ -250,8 +256,10 @@
             "url": "https://www.edimdoma.ru/retsepty/154036-klassicheskaya-solyanka-myasnaya-sbornaya",
             "difference": "Едим Дома: томатная заправка, маслины, лимон и сметана"
           }
-        ]
-      }
+        ],
+        "verification_scope": "Comparison of available recipe texts, accessible pages and extracted source evidence; full independent human reading of every one of 300 URLs not certified where source blocked or unavailable. Not a recipe made in a kitchen."
+      },
+      "editorial_publication_gate": "HOLD_FOR_FINAL_SOURCE_AND_TIMER_APPROVAL"
     },
     {
       "id": 5,
@@ -286,7 +294,7 @@
         "укроп 8 г",
         "соль."
       ],
-      "recipe_source_audit_status": "THREE_INDEPENDENT_RECIPE_TEXTS_COMPARED",
+      "recipe_source_audit_status": "THREE_SOURCE_COMPARISON_DOCUMENTED",
       "visual_audit_status": "PENDING",
       "photo_status": "PENDING_USER_APPROVAL",
       "source_content_evidence": {
@@ -307,8 +315,10 @@
             "url": "https://food.ru/recipes/62485-uha-iz-sudaka",
             "difference": "Классический вариант ухи из судака на овощном бульоне"
           }
-        ]
-      }
+        ],
+        "verification_scope": "Comparison of available recipe texts, accessible pages and extracted source evidence; full independent human reading of every one of 300 URLs not certified where source blocked or unavailable. Not a recipe made in a kitchen."
+      },
+      "editorial_publication_gate": "HOLD_FOR_FINAL_SOURCE_AND_TIMER_APPROVAL"
     },
     {
       "id": 6,
@@ -345,7 +355,7 @@
         "горчица 1 ч. л. по желанию",
         "соль."
       ],
-      "recipe_source_audit_status": "THREE_INDEPENDENT_RECIPE_TEXTS_COMPARED",
+      "recipe_source_audit_status": "THREE_SOURCE_COMPARISON_DOCUMENTED",
       "visual_audit_status": "PENDING",
       "photo_status": "PENDING_USER_APPROVAL",
       "source_content_evidence": {
@@ -366,8 +376,10 @@
             "url": "https://t-j.ru/oh-baby/",
             "difference": "Квасная окрошка с ветчиной из индейки, не строго говяжий вариант"
           }
-        ]
-      }
+        ],
+        "verification_scope": "Comparison of available recipe texts, accessible pages and extracted source evidence; full independent human reading of every one of 300 URLs not certified where source blocked or unavailable. Not a recipe made in a kitchen."
+      },
+      "editorial_publication_gate": "HOLD_FOR_FINAL_SOURCE_AND_TIMER_APPROVAL"
     },
     {
       "id": 7,
@@ -403,7 +415,7 @@
         "сметана 40 г",
         "соль и чёрный перец."
       ],
-      "recipe_source_audit_status": "THREE_INDEPENDENT_RECIPE_TEXTS_COMPARED",
+      "recipe_source_audit_status": "THREE_SOURCE_COMPARISON_DOCUMENTED",
       "visual_audit_status": "PENDING",
       "photo_status": "PENDING_USER_APPROVAL",
       "source_content_evidence": {
@@ -424,8 +436,10 @@
             "url": "https://food.ru/recipes/145640-zelionye-shchi-iz-shchavelia-1657935052",
             "difference": "Простая щавелевая версия с коротким прогревом зелени"
           }
-        ]
-      }
+        ],
+        "verification_scope": "Comparison of available recipe texts, accessible pages and extracted source evidence; full independent human reading of every one of 300 URLs not certified where source blocked or unavailable. Not a recipe made in a kitchen."
+      },
+      "editorial_publication_gate": "HOLD_FOR_FINAL_SOURCE_AND_TIMER_APPROVAL"
     },
     {
       "id": 8,
@@ -462,7 +476,7 @@
         "хрен 1/2 ч. л. по желанию",
         "соль; лёд отдельно."
       ],
-      "recipe_source_audit_status": "THREE_INDEPENDENT_RECIPE_TEXTS_COMPARED",
+      "recipe_source_audit_status": "THREE_SOURCE_COMPARISON_DOCUMENTED",
       "visual_audit_status": "PENDING",
       "photo_status": "PENDING_USER_APPROVAL",
       "source_content_evidence": {
@@ -483,8 +497,10 @@
             "url": "https://gadgetchef.ru/blog/retsepty/luchshe-okroshki-kholodnyy-sup-botvinya-russkaya-kukhnya/",
             "difference": "Современная адаптация холодного супа с рыбой"
           }
-        ]
-      }
+        ],
+        "verification_scope": "Comparison of available recipe texts, accessible pages and extracted source evidence; full independent human reading of every one of 300 URLs not certified where source blocked or unavailable. Not a recipe made in a kitchen."
+      },
+      "editorial_publication_gate": "HOLD_FOR_FINAL_SOURCE_AND_TIMER_APPROVAL"
     },
     {
       "id": 9,
@@ -522,7 +538,7 @@
         "укроп 6 г",
         "соль после добавления рассола."
       ],
-      "recipe_source_audit_status": "THREE_INDEPENDENT_RECIPE_TEXTS_COMPARED",
+      "recipe_source_audit_status": "THREE_SOURCE_COMPARISON_DOCUMENTED",
       "visual_audit_status": "PENDING",
       "photo_status": "PENDING_USER_APPROVAL",
       "source_content_evidence": {
@@ -543,8 +559,10 @@
             "url": "https://www.gastronom.ru/recipe/35241/rybnaja-kalja",
             "difference": "Gastronom: рыба и рассол, более сложная схема бульона и дополнительные маслины"
           }
-        ]
-      }
+        ],
+        "verification_scope": "Comparison of available recipe texts, accessible pages and extracted source evidence; full independent human reading of every one of 300 URLs not certified where source blocked or unavailable. Not a recipe made in a kitchen."
+      },
+      "editorial_publication_gate": "HOLD_FOR_FINAL_SOURCE_AND_TIMER_APPROVAL"
     },
     {
       "id": 10,
@@ -579,7 +597,7 @@
         "соль",
         "перец и укроп по вкусу."
       ],
-      "recipe_source_audit_status": "THREE_INDEPENDENT_RECIPE_TEXTS_COMPARED",
+      "recipe_source_audit_status": "THREE_SOURCE_COMPARISON_DOCUMENTED",
       "visual_audit_status": "PENDING",
       "photo_status": "PENDING_USER_APPROVAL",
       "source_content_evidence": {
@@ -600,8 +618,10 @@
             "url": "https://kashevar.com/ru/recipes/mushroom-soup-pearl-barley",
             "difference": "Белорусская региональная версия с грибным бульоном и перловкой"
           }
-        ]
-      }
+        ],
+        "verification_scope": "Comparison of available recipe texts, accessible pages and extracted source evidence; full independent human reading of every one of 300 URLs not certified where source blocked or unavailable. Not a recipe made in a kitchen."
+      },
+      "editorial_publication_gate": "HOLD_FOR_FINAL_SOURCE_AND_TIMER_APPROVAL"
     },
     {
       "id": 11,
@@ -638,7 +658,7 @@
         "оливковое масло 20 мл",
         "базилик и соль."
       ],
-      "recipe_source_audit_status": "THREE_INDEPENDENT_RECIPE_TEXTS_COMPARED",
+      "recipe_source_audit_status": "THREE_SOURCE_COMPARISON_DOCUMENTED",
       "visual_audit_status": "PENDING",
       "photo_status": "PENDING_USER_APPROVAL",
       "source_content_evidence": {
@@ -659,8 +679,10 @@
             "url": "https://www.greatbritishchefs.com/recipes/minestrone-soup-recipe",
             "difference": "Овощная версия с цуккини и фасолью"
           }
-        ]
-      }
+        ],
+        "verification_scope": "Comparison of available recipe texts, accessible pages and extracted source evidence; full independent human reading of every one of 300 URLs not certified where source blocked or unavailable. Not a recipe made in a kitchen."
+      },
+      "editorial_publication_gate": "HOLD_FOR_FINAL_SOURCE_AND_TIMER_APPROVAL"
     },
     {
       "id": 12,
@@ -697,7 +719,7 @@
         "масло оливковое 25 мл",
         "тимьян, соль и перец."
       ],
-      "recipe_source_audit_status": "THREE_INDEPENDENT_RECIPE_TEXTS_COMPARED",
+      "recipe_source_audit_status": "THREE_SOURCE_COMPARISON_DOCUMENTED",
       "visual_audit_status": "PENDING",
       "photo_status": "PENDING_USER_APPROVAL",
       "source_content_evidence": {
@@ -718,8 +740,10 @@
             "url": "https://www.visittuscany.com/en/recipes/ribollita-recipe/",
             "difference": "Региональная тосканская технология густой хлебной похлёбки"
           }
-        ]
-      }
+        ],
+        "verification_scope": "Comparison of available recipe texts, accessible pages and extracted source evidence; full independent human reading of every one of 300 URLs not certified where source blocked or unavailable. Not a recipe made in a kitchen."
+      },
+      "editorial_publication_gate": "HOLD_FOR_FINAL_SOURCE_AND_TIMER_APPROVAL"
     },
     {
       "id": 13,
@@ -752,7 +776,7 @@
         "базилик 10 г",
         "соль."
       ],
-      "recipe_source_audit_status": "THREE_INDEPENDENT_RECIPE_TEXTS_COMPARED",
+      "recipe_source_audit_status": "THREE_SOURCE_COMPARISON_DOCUMENTED",
       "visual_audit_status": "PENDING",
       "photo_status": "PENDING_USER_APPROVAL",
       "source_content_evidence": {
@@ -773,8 +797,10 @@
             "url": "https://www.greatitalianchefs.com/recipes/pappa-al-pomodoro-recipe",
             "difference": "Ресторанная вариация тосканского густого хлебного супа"
           }
-        ]
-      }
+        ],
+        "verification_scope": "Comparison of available recipe texts, accessible pages and extracted source evidence; full independent human reading of every one of 300 URLs not certified where source blocked or unavailable. Not a recipe made in a kitchen."
+      },
+      "editorial_publication_gate": "HOLD_FOR_FINAL_SOURCE_AND_TIMER_APPROVAL"
     },
     {
       "id": 14,
@@ -806,7 +832,7 @@
         "мускатный орех щепотка",
         "перец, соль."
       ],
-      "recipe_source_audit_status": "THREE_INDEPENDENT_RECIPE_TEXTS_COMPARED",
+      "recipe_source_audit_status": "THREE_SOURCE_COMPARISON_DOCUMENTED",
       "visual_audit_status": "PENDING",
       "photo_status": "PENDING_USER_APPROVAL",
       "source_content_evidence": {
@@ -827,8 +853,10 @@
             "url": "https://www.turismoroma.it/en/page/roman-style-stracciatella",
             "difference": "Официальная римская региональная версия супа"
           }
-        ]
-      }
+        ],
+        "verification_scope": "Comparison of available recipe texts, accessible pages and extracted source evidence; full independent human reading of every one of 300 URLs not certified where source blocked or unavailable. Not a recipe made in a kitchen."
+      },
+      "editorial_publication_gate": "HOLD_FOR_FINAL_SOURCE_AND_TIMER_APPROVAL"
     },
     {
       "id": 15,
@@ -865,7 +893,7 @@
         "розмарин",
         "соль, перец."
       ],
-      "recipe_source_audit_status": "THREE_INDEPENDENT_RECIPE_TEXTS_COMPARED",
+      "recipe_source_audit_status": "THREE_SOURCE_COMPARISON_DOCUMENTED",
       "visual_audit_status": "PENDING",
       "photo_status": "PENDING_USER_APPROVAL",
       "source_content_evidence": {
@@ -886,8 +914,10 @@
             "url": "https://www.jamesbeard.org/recipes/pasta-e-fagioli",
             "difference": "Отдельная американско-итальянская рецептура с иной текстурой и приправами"
           }
-        ]
-      }
+        ],
+        "verification_scope": "Comparison of available recipe texts, accessible pages and extracted source evidence; full independent human reading of every one of 300 URLs not certified where source blocked or unavailable. Not a recipe made in a kitchen."
+      },
+      "editorial_publication_gate": "HOLD_FOR_FINAL_SOURCE_AND_TIMER_APPROVAL"
     },
     {
       "id": 16,
@@ -923,7 +953,7 @@
         "оливковое масло 25 мл",
         "базилик, соль, перец."
       ],
-      "recipe_source_audit_status": "THREE_INDEPENDENT_RECIPE_TEXTS_COMPARED",
+      "recipe_source_audit_status": "THREE_SOURCE_COMPARISON_DOCUMENTED",
       "visual_audit_status": "PENDING",
       "photo_status": "PENDING_USER_APPROVAL",
       "source_content_evidence": {
@@ -944,8 +974,10 @@
             "url": "https://blog.giallozafferano.it/sarabuonodavvero/ricetta-acquacotta-originale-maremmana/",
             "difference": "Маремманская версия с томатами, луком и хлебом"
           }
-        ]
-      }
+        ],
+        "verification_scope": "Comparison of available recipe texts, accessible pages and extracted source evidence; full independent human reading of every one of 300 URLs not certified where source blocked or unavailable. Not a recipe made in a kitchen."
+      },
+      "editorial_publication_gate": "HOLD_FOR_FINAL_SOURCE_AND_TIMER_APPROVAL"
     },
     {
       "id": 17,
@@ -981,7 +1013,7 @@
         "крепкий бульон из курицы и говядины 850 мл",
         "соль."
       ],
-      "recipe_source_audit_status": "THREE_INDEPENDENT_RECIPE_TEXTS_COMPARED",
+      "recipe_source_audit_status": "THREE_SOURCE_COMPARISON_DOCUMENTED",
       "visual_audit_status": "PENDING",
       "photo_status": "PENDING_USER_APPROVAL",
       "source_content_evidence": {
@@ -1002,8 +1034,10 @@
             "url": "https://www.gamberorossointernational.com/news/tortellini-in-broth-the-boxing-day-dish-of-santo-stefano/",
             "difference": "Традиционная эмильянская технология и подача в крепком бульоне"
           }
-        ]
-      }
+        ],
+        "verification_scope": "Comparison of available recipe texts, accessible pages and extracted source evidence; full independent human reading of every one of 300 URLs not certified where source blocked or unavailable. Not a recipe made in a kitchen."
+      },
+      "editorial_publication_gate": "HOLD_FOR_FINAL_SOURCE_AND_TIMER_APPROVAL"
     },
     {
       "id": 18,
@@ -1036,7 +1070,7 @@
         "крепкий мясной или куриный бульон 850 мл",
         "соль."
       ],
-      "recipe_source_audit_status": "THREE_INDEPENDENT_RECIPE_TEXTS_COMPARED",
+      "recipe_source_audit_status": "THREE_SOURCE_COMPARISON_DOCUMENTED",
       "visual_audit_status": "PENDING",
       "photo_status": "PENDING_USER_APPROVAL",
       "source_content_evidence": {
@@ -1057,8 +1091,10 @@
             "url": "https://www.lospicchiodaglio.it/ricetta/passatelli",
             "difference": "Без мозговой кости, пресс и бульон, порции на двоих"
           }
-        ]
-      }
+        ],
+        "verification_scope": "Comparison of available recipe texts, accessible pages and extracted source evidence; full independent human reading of every one of 300 URLs not certified where source blocked or unavailable. Not a recipe made in a kitchen."
+      },
+      "editorial_publication_gate": "HOLD_FOR_FINAL_SOURCE_AND_TIMER_APPROVAL"
     },
     {
       "id": 19,
@@ -1090,7 +1126,7 @@
         "оливковое масло 25 мл",
         "соль, свежемолотый перец."
       ],
-      "recipe_source_audit_status": "THREE_INDEPENDENT_RECIPE_TEXTS_COMPARED",
+      "recipe_source_audit_status": "THREE_SOURCE_COMPARISON_DOCUMENTED",
       "visual_audit_status": "PENDING",
       "photo_status": "PENDING_USER_APPROVAL",
       "source_content_evidence": {
@@ -1111,8 +1147,10 @@
             "url": "https://lamialiguria.it/en/2024/09/mesciua/",
             "difference": "Региональная история La Spezia и простая подача с оливковым маслом"
           }
-        ]
-      }
+        ],
+        "verification_scope": "Comparison of available recipe texts, accessible pages and extracted source evidence; full independent human reading of every one of 300 URLs not certified where source blocked or unavailable. Not a recipe made in a kitchen."
+      },
+      "editorial_publication_gate": "HOLD_FOR_FINAL_SOURCE_AND_TIMER_APPROVAL"
     },
     {
       "id": 20,
@@ -1151,7 +1189,7 @@
         "хлеб 2 ломтика",
         "петрушка."
       ],
-      "recipe_source_audit_status": "THREE_INDEPENDENT_RECIPE_TEXTS_COMPARED",
+      "recipe_source_audit_status": "THREE_SOURCE_COMPARISON_DOCUMENTED",
       "visual_audit_status": "PENDING",
       "photo_status": "PENDING_USER_APPROVAL",
       "source_content_evidence": {
@@ -1172,8 +1210,10 @@
             "url": "https://cucinaregionaleitaliana.it/portfolio-items/cacciucco-alla-livornese/",
             "difference": "Региональная кодифицированная рецептура с несколькими сортами рыбы"
           }
-        ]
-      }
+        ],
+        "verification_scope": "Comparison of available recipe texts, accessible pages and extracted source evidence; full independent human reading of every one of 300 URLs not certified where source blocked or unavailable. Not a recipe made in a kitchen."
+      },
+      "editorial_publication_gate": "HOLD_FOR_FINAL_SOURCE_AND_TIMER_APPROVAL"
     },
     {
       "id": 21,
@@ -1209,7 +1249,7 @@
         "лавровый лист",
         "соль, перец."
       ],
-      "recipe_source_audit_status": "THREE_INDEPENDENT_RECIPE_TEXTS_COMPARED",
+      "recipe_source_audit_status": "THREE_SOURCE_COMPARISON_DOCUMENTED",
       "visual_audit_status": "PENDING",
       "photo_status": "PENDING_USER_APPROVAL",
       "source_content_evidence": {
@@ -1230,8 +1270,10 @@
             "url": "https://www.bbcgoodfood.com/recipes/french-onion-soup",
             "difference": "Вино, лук, грюйер и багет, около 55 минут общей готовки"
           }
-        ]
-      }
+        ],
+        "verification_scope": "Comparison of available recipe texts, accessible pages and extracted source evidence; full independent human reading of every one of 300 URLs not certified where source blocked or unavailable. Not a recipe made in a kitchen."
+      },
+      "editorial_publication_gate": "HOLD_FOR_FINAL_SOURCE_AND_TIMER_APPROVAL"
     },
     {
       "id": 22,
@@ -1271,7 +1313,7 @@
         "для руя: майонез 50 г, чеснок, чили, щепоть шафрана",
         "тосты."
       ],
-      "recipe_source_audit_status": "THREE_INDEPENDENT_RECIPE_TEXTS_COMPARED",
+      "recipe_source_audit_status": "THREE_SOURCE_COMPARISON_DOCUMENTED",
       "visual_audit_status": "PENDING",
       "photo_status": "PENDING_USER_APPROVAL",
       "source_content_evidence": {
@@ -1292,8 +1334,10 @@
             "url": "https://www.marseille-tourisme.com/decouvrez-marseille/gastronomie/specialitees-culinaires-marseillaises/la-bouillabaisse/",
             "difference": "Марсельское туристическое представление о видах рыбы и традиционной подаче"
           }
-        ]
-      }
+        ],
+        "verification_scope": "Comparison of available recipe texts, accessible pages and extracted source evidence; full independent human reading of every one of 300 URLs not certified where source blocked or unavailable. Not a recipe made in a kitchen."
+      },
+      "editorial_publication_gate": "HOLD_FOR_FINAL_SOURCE_AND_TIMER_APPROVAL"
     },
     {
       "id": 23,
@@ -1325,7 +1369,7 @@
         "сливки 20% 150 мл",
         "соль, белый перец, шнитт-лук 5 г."
       ],
-      "recipe_source_audit_status": "THREE_INDEPENDENT_RECIPE_TEXTS_COMPARED",
+      "recipe_source_audit_status": "THREE_SOURCE_COMPARISON_DOCUMENTED",
       "visual_audit_status": "PENDING",
       "photo_status": "PENDING_USER_APPROVAL",
       "source_content_evidence": {
@@ -1346,8 +1390,10 @@
             "url": "https://www.saveur.com/article/recipes/vichyssoise/",
             "difference": "Больше времени на овощи, охлаждение от 2 часов; классическая версия Луи Диа"
           }
-        ]
-      }
+        ],
+        "verification_scope": "Comparison of available recipe texts, accessible pages and extracted source evidence; full independent human reading of every one of 300 URLs not certified where source blocked or unavailable. Not a recipe made in a kitchen."
+      },
+      "editorial_publication_gate": "HOLD_FOR_FINAL_SOURCE_AND_TIMER_APPROVAL"
     },
     {
       "id": 24,
@@ -1383,7 +1429,7 @@
         "вода/бульон 900 мл",
         "лавр, соль, перец."
       ],
-      "recipe_source_audit_status": "THREE_INDEPENDENT_RECIPE_TEXTS_COMPARED",
+      "recipe_source_audit_status": "THREE_SOURCE_COMPARISON_DOCUMENTED",
       "visual_audit_status": "PENDING",
       "photo_status": "PENDING_USER_APPROVAL",
       "source_content_evidence": {
@@ -1404,8 +1450,10 @@
             "url": "https://www.coursesu.com/p/garbure/Recette_0129.html",
             "difference": "Конфи утки, сухая фасоль и капуста, около 3 часов на готовку"
           }
-        ]
-      }
+        ],
+        "verification_scope": "Comparison of available recipe texts, accessible pages and extracted source evidence; full independent human reading of every one of 300 URLs not certified where source blocked or unavailable. Not a recipe made in a kitchen."
+      },
+      "editorial_publication_gate": "HOLD_FOR_FINAL_SOURCE_AND_TIMER_APPROVAL"
     },
     {
       "id": 25,
@@ -1444,7 +1492,7 @@
         "пармезан 30 г",
         "соль."
       ],
-      "recipe_source_audit_status": "THREE_INDEPENDENT_RECIPE_TEXTS_COMPARED",
+      "recipe_source_audit_status": "THREE_SOURCE_COMPARISON_DOCUMENTED",
       "visual_audit_status": "PENDING",
       "photo_status": "PENDING_USER_APPROVAL",
       "source_content_evidence": {
@@ -1465,8 +1513,10 @@
             "url": "https://www.aixenprovencetourism.com/gastronomie/recettes-de-cuisine-provencale/recette-de-la-soupe-au-pistou/",
             "difference": "Региональная подача овощей с писту"
           }
-        ]
-      }
+        ],
+        "verification_scope": "Comparison of available recipe texts, accessible pages and extracted source evidence; full independent human reading of every one of 300 URLs not certified where source blocked or unavailable. Not a recipe made in a kitchen."
+      },
+      "editorial_publication_gate": "HOLD_FOR_FINAL_SOURCE_AND_TIMER_APPROVAL"
     },
     {
       "id": 26,
@@ -1501,7 +1551,7 @@
         "тимьян",
         "соль, перец."
       ],
-      "recipe_source_audit_status": "THREE_INDEPENDENT_RECIPE_TEXTS_COMPARED",
+      "recipe_source_audit_status": "THREE_SOURCE_COMPARISON_DOCUMENTED",
       "visual_audit_status": "PENDING",
       "photo_status": "PENDING_USER_APPROVAL",
       "source_content_evidence": {
@@ -1522,8 +1572,10 @@
             "url": "https://www.marmiton.org/recettes/recette_tourin-a-l-ail_13014.aspx",
             "difference": "Упрощённая версия с яйцом, водой, уксусом и чесноком"
           }
-        ]
-      }
+        ],
+        "verification_scope": "Comparison of available recipe texts, accessible pages and extracted source evidence; full independent human reading of every one of 300 URLs not certified where source blocked or unavailable. Not a recipe made in a kitchen."
+      },
+      "editorial_publication_gate": "HOLD_FOR_FINAL_SOURCE_AND_TIMER_APPROVAL"
     },
     {
       "id": 27,
@@ -1557,7 +1609,7 @@
         "соль, белый перец",
         "мускат щепотка."
       ],
-      "recipe_source_audit_status": "THREE_INDEPENDENT_RECIPE_TEXTS_COMPARED",
+      "recipe_source_audit_status": "THREE_SOURCE_COMPARISON_DOCUMENTED",
       "visual_audit_status": "PENDING",
       "photo_status": "PENDING_USER_APPROVAL",
       "source_content_evidence": {
@@ -1578,8 +1630,10 @@
             "url": "https://www.toquata.fr/rcp-files/recette/creme-dubarry",
             "difference": "Французский мягкий пюрированный суп Дюбарри"
           }
-        ]
-      }
+        ],
+        "verification_scope": "Comparison of available recipe texts, accessible pages and extracted source evidence; full independent human reading of every one of 300 URLs not certified where source blocked or unavailable. Not a recipe made in a kitchen."
+      },
+      "editorial_publication_gate": "HOLD_FOR_FINAL_SOURCE_AND_TIMER_APPROVAL"
     },
     {
       "id": 28,
@@ -1617,7 +1671,7 @@
         "сливочное масло 20 г",
         "паприка, лавр, соль."
       ],
-      "recipe_source_audit_status": "THREE_INDEPENDENT_RECIPE_TEXTS_COMPARED",
+      "recipe_source_audit_status": "THREE_SOURCE_COMPARISON_DOCUMENTED",
       "visual_audit_status": "PENDING",
       "photo_status": "PENDING_USER_APPROVAL",
       "source_content_evidence": {
@@ -1638,8 +1692,10 @@
             "url": "https://www.foodnetwork.com/recipes/creamy-lobster-bisque-1963162",
             "difference": "Сливки и мясо омара подаются отдельно, более долгое извлечение аромата из панцирей"
           }
-        ]
-      }
+        ],
+        "verification_scope": "Comparison of available recipe texts, accessible pages and extracted source evidence; full independent human reading of every one of 300 URLs not certified where source blocked or unavailable. Not a recipe made in a kitchen."
+      },
+      "editorial_publication_gate": "HOLD_FOR_FINAL_SOURCE_AND_TIMER_APPROVAL"
     },
     {
       "id": 29,
@@ -1676,7 +1732,7 @@
         "хлеб 2 ломтика",
         "соль, перец."
       ],
-      "recipe_source_audit_status": "THREE_INDEPENDENT_RECIPE_TEXTS_COMPARED",
+      "recipe_source_audit_status": "THREE_SOURCE_COMPARISON_DOCUMENTED",
       "visual_audit_status": "PENDING",
       "photo_status": "PENDING_USER_APPROVAL",
       "source_content_evidence": {
@@ -1697,8 +1753,10 @@
             "url": "https://ifthatsdinnerivehadit.com/bourride/",
             "difference": "Современный вариант с пореем, фенхелем, картофелем и рыбой"
           }
-        ]
-      }
+        ],
+        "verification_scope": "Comparison of available recipe texts, accessible pages and extracted source evidence; full independent human reading of every one of 300 URLs not certified where source blocked or unavailable. Not a recipe made in a kitchen."
+      },
+      "editorial_publication_gate": "HOLD_FOR_FINAL_SOURCE_AND_TIMER_APPROVAL"
     },
     {
       "id": 30,
@@ -1732,7 +1790,7 @@
         "соль, белый перец",
         "шнитт-лук немного."
       ],
-      "recipe_source_audit_status": "THREE_INDEPENDENT_RECIPE_TEXTS_COMPARED",
+      "recipe_source_audit_status": "THREE_SOURCE_COMPARISON_DOCUMENTED",
       "visual_audit_status": "PENDING",
       "photo_status": "PENDING_USER_APPROVAL",
       "source_content_evidence": {
@@ -1753,8 +1811,10 @@
             "url": "https://www.tastefrance.com/recipes/revisited-french-classics/crecy-soup-carrot-soup",
             "difference": "Современная французская морковная версия с рисом и сливками"
           }
-        ]
-      }
+        ],
+        "verification_scope": "Comparison of available recipe texts, accessible pages and extracted source evidence; full independent human reading of every one of 300 URLs not certified where source blocked or unavailable. Not a recipe made in a kitchen."
+      },
+      "editorial_publication_gate": "HOLD_FOR_FINAL_SOURCE_AND_TIMER_APPROVAL"
     },
     {
       "id": 31,
@@ -1789,7 +1849,7 @@
         "холодная вода 80–130 мл",
         "соль."
       ],
-      "recipe_source_audit_status": "THREE_INDEPENDENT_RECIPE_TEXTS_COMPARED",
+      "recipe_source_audit_status": "THREE_SOURCE_COMPARISON_DOCUMENTED",
       "visual_audit_status": "PENDING",
       "photo_status": "PENDING_USER_APPROVAL",
       "source_content_evidence": {
@@ -1810,8 +1870,10 @@
             "url": "https://goya.es/recetas/gazpacho-tradicional-andaluz",
             "difference": "Овощной суп с чесноком, маслом и уксусом"
           }
-        ]
-      }
+        ],
+        "verification_scope": "Comparison of available recipe texts, accessible pages and extracted source evidence; full independent human reading of every one of 300 URLs not certified where source blocked or unavailable. Not a recipe made in a kitchen."
+      },
+      "editorial_publication_gate": "HOLD_FOR_FINAL_SOURCE_AND_TIMER_APPROVAL"
     },
     {
       "id": 32,
@@ -1844,7 +1906,7 @@
         "яйцо 1 шт.",
         "хамон серрано 40 г."
       ],
-      "recipe_source_audit_status": "THREE_INDEPENDENT_RECIPE_TEXTS_COMPARED",
+      "recipe_source_audit_status": "THREE_SOURCE_COMPARISON_DOCUMENTED",
       "visual_audit_status": "PENDING",
       "photo_status": "PENDING_USER_APPROVAL",
       "source_content_evidence": {
@@ -1865,8 +1927,10 @@
             "url": "https://www.bonappetit.com/recipe/salmorejo-cordob-s",
             "difference": "Bon Appétit допускает вариации пропорций томата, хлеба и чеснока"
           }
-        ]
-      }
+        ],
+        "verification_scope": "Comparison of available recipe texts, accessible pages and extracted source evidence; full independent human reading of every one of 300 URLs not certified where source blocked or unavailable. Not a recipe made in a kitchen."
+      },
+      "editorial_publication_gate": "HOLD_FOR_FINAL_SOURCE_AND_TIMER_APPROVAL"
     },
     {
       "id": 33,
@@ -1900,7 +1964,7 @@
         "соль",
         "белый виноград 10 ягод для подачи."
       ],
-      "recipe_source_audit_status": "THREE_INDEPENDENT_RECIPE_TEXTS_COMPARED",
+      "recipe_source_audit_status": "THREE_SOURCE_COMPARISON_DOCUMENTED",
       "visual_audit_status": "PENDING",
       "photo_status": "PENDING_USER_APPROVAL",
       "source_content_evidence": {
@@ -1921,8 +1985,10 @@
             "url": "https://www.theguardian.com/food/2020/jun/10/david-athertons-recipe-for-ajo-blanco-cold-soup-andalucian-classic",
             "difference": "Холодный миндальный суп с чесноком и хлебом"
           }
-        ]
-      }
+        ],
+        "verification_scope": "Comparison of available recipe texts, accessible pages and extracted source evidence; full independent human reading of every one of 300 URLs not certified where source blocked or unavailable. Not a recipe made in a kitchen."
+      },
+      "editorial_publication_gate": "HOLD_FOR_FINAL_SOURCE_AND_TIMER_APPROVAL"
     },
     {
       "id": 34,
@@ -1956,7 +2022,7 @@
         "хамон 50 г (по желанию)",
         "соль."
       ],
-      "recipe_source_audit_status": "THREE_INDEPENDENT_RECIPE_TEXTS_COMPARED",
+      "recipe_source_audit_status": "THREE_SOURCE_COMPARISON_DOCUMENTED",
       "visual_audit_status": "PENDING",
       "photo_status": "PENDING_USER_APPROVAL",
       "source_content_evidence": {
@@ -1977,8 +2043,10 @@
             "url": "https://www.rtve.es/television/20230810/sopa-castellana-receta-origen-semana-santa/2453763.shtml",
             "difference": "RTVE домашний способ sopa castellana с яйцом"
           }
-        ]
-      }
+        ],
+        "verification_scope": "Comparison of available recipe texts, accessible pages and extracted source evidence; full independent human reading of every one of 300 URLs not certified where source blocked or unavailable. Not a recipe made in a kitchen."
+      },
+      "editorial_publication_gate": "HOLD_FOR_FINAL_SOURCE_AND_TIMER_APPROVAL"
     },
     {
       "id": 35,
@@ -2011,7 +2079,7 @@
         "вода 1 л",
         "соль, по необходимости."
       ],
-      "recipe_source_audit_status": "THREE_INDEPENDENT_RECIPE_TEXTS_COMPARED",
+      "recipe_source_audit_status": "THREE_SOURCE_COMPARISON_DOCUMENTED",
       "visual_audit_status": "PENDING",
       "photo_status": "PENDING_USER_APPROVAL",
       "source_content_evidence": {
@@ -2032,8 +2100,10 @@
             "url": "https://www.directoalpaladar.com/recetas-de-legumbres-y-verduras/receta-de-caldo-gallego-cocinado-a-fuego-lento",
             "difference": "Традиционная томлёная похлёбка, варка бобов до мягкости"
           }
-        ]
-      }
+        ],
+        "verification_scope": "Comparison of available recipe texts, accessible pages and extracted source evidence; full independent human reading of every one of 300 URLs not certified where source blocked or unavailable. Not a recipe made in a kitchen."
+      },
+      "editorial_publication_gate": "HOLD_FOR_FINAL_SOURCE_AND_TIMER_APPROVAL"
     },
     {
       "id": 36,
@@ -2066,7 +2136,7 @@
         "соль",
         "петрушка немного."
       ],
-      "recipe_source_audit_status": "THREE_INDEPENDENT_RECIPE_TEXTS_COMPARED",
+      "recipe_source_audit_status": "THREE_SOURCE_COMPARISON_DOCUMENTED",
       "visual_audit_status": "PENDING",
       "photo_status": "PENDING_USER_APPROVAL",
       "source_content_evidence": {
@@ -2087,8 +2157,10 @@
             "url": "https://www.centrallecheraasturiana.es/recetas/porrusalda/",
             "difference": "Овощной суп, бульон предварительно приготовлен, около 35 минут"
           }
-        ]
-      }
+        ],
+        "verification_scope": "Comparison of available recipe texts, accessible pages and extracted source evidence; full independent human reading of every one of 300 URLs not certified where source blocked or unavailable. Not a recipe made in a kitchen."
+      },
+      "editorial_publication_gate": "HOLD_FOR_FINAL_SOURCE_AND_TIMER_APPROVAL"
     },
     {
       "id": 37,
@@ -2121,7 +2193,7 @@
         "лимон 1 ч. л. сока",
         "соль."
       ],
-      "recipe_source_audit_status": "THREE_INDEPENDENT_RECIPE_TEXTS_COMPARED",
+      "recipe_source_audit_status": "THREE_SOURCE_COMPARISON_DOCUMENTED",
       "visual_audit_status": "PENDING",
       "photo_status": "PENDING_USER_APPROVAL",
       "source_content_evidence": {
@@ -2142,8 +2214,10 @@
             "url": "https://mercadomalaga.es/en/recipes/fish/gazpachuelo-white-fish-soup/",
             "difference": "Рыбный бульон из отходов, картофель, белая рыба и креветки, майонез"
           }
-        ]
-      }
+        ],
+        "verification_scope": "Comparison of available recipe texts, accessible pages and extracted source evidence; full independent human reading of every one of 300 URLs not certified where source blocked or unavailable. Not a recipe made in a kitchen."
+      },
+      "editorial_publication_gate": "HOLD_FOR_FINAL_SOURCE_AND_TIMER_APPROVAL"
     },
     {
       "id": 38,
@@ -2178,7 +2252,7 @@
         "мята свежая несколько листьев",
         "соль."
       ],
-      "recipe_source_audit_status": "THREE_INDEPENDENT_RECIPE_TEXTS_COMPARED",
+      "recipe_source_audit_status": "THREE_SOURCE_COMPARISON_DOCUMENTED",
       "visual_audit_status": "PENDING",
       "photo_status": "PENDING_USER_APPROVAL",
       "source_content_evidence": {
@@ -2199,8 +2273,10 @@
             "url": "https://canalcocina.es/receta/sopa-picadillo-puchero-andaluz",
             "difference": "Puchero с более сложной мясной основой"
           }
-        ]
-      }
+        ],
+        "verification_scope": "Comparison of available recipe texts, accessible pages and extracted source evidence; full independent human reading of every one of 300 URLs not certified where source blocked or unavailable. Not a recipe made in a kitchen."
+      },
+      "editorial_publication_gate": "HOLD_FOR_FINAL_SOURCE_AND_TIMER_APPROVAL"
     },
     {
       "id": 39,
@@ -2238,7 +2314,7 @@
         "вода 1,6 л",
         "соль."
       ],
-      "recipe_source_audit_status": "THREE_INDEPENDENT_RECIPE_TEXTS_COMPARED",
+      "recipe_source_audit_status": "THREE_SOURCE_COMPARISON_DOCUMENTED",
       "visual_audit_status": "PENDING",
       "photo_status": "PENDING_USER_APPROVAL",
       "source_content_evidence": {
@@ -2259,8 +2335,10 @@
             "url": "https://canalsalut.gencat.cat/ca/detalls/article/escudella-carn-olla",
             "difference": "Региональный официальный способ подачи супа и мяса отдельно"
           }
-        ]
-      }
+        ],
+        "verification_scope": "Comparison of available recipe texts, accessible pages and extracted source evidence; full independent human reading of every one of 300 URLs not certified where source blocked or unavailable. Not a recipe made in a kitchen."
+      },
+      "editorial_publication_gate": "HOLD_FOR_FINAL_SOURCE_AND_TIMER_APPROVAL"
     },
     {
       "id": 40,
@@ -2295,7 +2373,7 @@
         "яйцо варёное 1 шт.",
         "консервированный тунец 50 г, по желанию."
       ],
-      "recipe_source_audit_status": "THREE_INDEPENDENT_RECIPE_TEXTS_COMPARED",
+      "recipe_source_audit_status": "THREE_SOURCE_COMPARISON_DOCUMENTED",
       "visual_audit_status": "PENDING",
       "photo_status": "PENDING_USER_APPROVAL",
       "source_content_evidence": {
@@ -2316,8 +2394,10 @@
             "url": "https://vanavondkoken.nl/en/recipes/porra-antequerana",
             "difference": "Домашняя порра с хлебом и маслом, охлаждение"
           }
-        ]
-      }
+        ],
+        "verification_scope": "Comparison of available recipe texts, accessible pages and extracted source evidence; full independent human reading of every one of 300 URLs not certified where source blocked or unavailable. Not a recipe made in a kitchen."
+      },
+      "editorial_publication_gate": "HOLD_FOR_FINAL_SOURCE_AND_TIMER_APPROVAL"
     },
     {
       "id": 41,
@@ -2354,7 +2434,7 @@
         "лимон 1/2 шт.",
         "соль."
       ],
-      "recipe_source_audit_status": "THREE_INDEPENDENT_RECIPE_TEXTS_COMPARED",
+      "recipe_source_audit_status": "THREE_SOURCE_COMPARISON_DOCUMENTED",
       "visual_audit_status": "PENDING",
       "photo_status": "PENDING_USER_APPROVAL",
       "source_content_evidence": {
@@ -2375,8 +2455,10 @@
             "url": "https://mirasfood.com/en/recipes/classic-turkish-lentil-soup?l=en",
             "difference": "Mediterranean Dish: традиционный кремовый турецкий чечевичный суп с лимоном и пряностями"
           }
-        ]
-      }
+        ],
+        "verification_scope": "Comparison of available recipe texts, accessible pages and extracted source evidence; full independent human reading of every one of 300 URLs not certified where source blocked or unavailable. Not a recipe made in a kitchen."
+      },
+      "editorial_publication_gate": "HOLD_FOR_FINAL_SOURCE_AND_TIMER_APPROVAL"
     },
     {
       "id": 42,
@@ -2412,7 +2494,7 @@
         "сушёная мята 1 ч. л.",
         "паприка и соль."
       ],
-      "recipe_source_audit_status": "THREE_INDEPENDENT_RECIPE_TEXTS_COMPARED",
+      "recipe_source_audit_status": "THREE_SOURCE_COMPARISON_DOCUMENTED",
       "visual_audit_status": "PENDING",
       "photo_status": "PENDING_USER_APPROVAL",
       "source_content_evidence": {
@@ -2433,8 +2515,10 @@
             "url": "https://mayana.com.tr/en/recipes/ezogelin-soup-recipe/",
             "difference": "Mayana: традиционный Ezogelin с тремя крупами, мяту вводят в конце"
           }
-        ]
-      }
+        ],
+        "verification_scope": "Comparison of available recipe texts, accessible pages and extracted source evidence; full independent human reading of every one of 300 URLs not certified where source blocked or unavailable. Not a recipe made in a kitchen."
+      },
+      "editorial_publication_gate": "HOLD_FOR_FINAL_SOURCE_AND_TIMER_APPROVAL"
     },
     {
       "id": 43,
@@ -2468,7 +2552,7 @@
         "сушёная мята 1 ч. л.",
         "соль."
       ],
-      "recipe_source_audit_status": "THREE_INDEPENDENT_RECIPE_TEXTS_COMPARED",
+      "recipe_source_audit_status": "THREE_SOURCE_COMPARISON_DOCUMENTED",
       "visual_audit_status": "PENDING",
       "photo_status": "PENDING_USER_APPROVAL",
       "source_content_evidence": {
@@ -2489,8 +2573,10 @@
             "url": "https://forkin.io/recipes/yayla-corbasi-turkish-yogurt-soup",
             "difference": "Forkin: йогуртовая база и постепенная темперировка горячей водой"
           }
-        ]
-      }
+        ],
+        "verification_scope": "Comparison of available recipe texts, accessible pages and extracted source evidence; full independent human reading of every one of 300 URLs not certified where source blocked or unavailable. Not a recipe made in a kitchen."
+      },
+      "editorial_publication_gate": "HOLD_FOR_FINAL_SOURCE_AND_TIMER_APPROVAL"
     },
     {
       "id": 44,
@@ -2523,7 +2609,7 @@
         "паприка 1/2 ч. л.",
         "соль по необходимости."
       ],
-      "recipe_source_audit_status": "THREE_INDEPENDENT_RECIPE_TEXTS_COMPARED",
+      "recipe_source_audit_status": "THREE_SOURCE_COMPARISON_DOCUMENTED",
       "visual_audit_status": "PENDING",
       "photo_status": "PENDING_USER_APPROVAL",
       "source_content_evidence": {
@@ -2544,8 +2630,10 @@
             "url": "https://www.gurmion.com/en/recipes/tarhana-soup",
             "difference": "Gurmion: домашняя сухая тархана, вода и масло"
           }
-        ]
-      }
+        ],
+        "verification_scope": "Comparison of available recipe texts, accessible pages and extracted source evidence; full independent human reading of every one of 300 URLs not certified where source blocked or unavailable. Not a recipe made in a kitchen."
+      },
+      "editorial_publication_gate": "HOLD_FOR_FINAL_SOURCE_AND_TIMER_APPROVAL"
     },
     {
       "id": 45,
@@ -2580,7 +2668,7 @@
         "винный уксус 25 мл",
         "соль, хлопья перца."
       ],
-      "recipe_source_audit_status": "THREE_INDEPENDENT_RECIPE_TEXTS_COMPARED",
+      "recipe_source_audit_status": "THREE_SOURCE_COMPARISON_DOCUMENTED",
       "visual_audit_status": "PENDING",
       "photo_status": "PENDING_USER_APPROVAL",
       "source_content_evidence": {
@@ -2601,8 +2689,10 @@
             "url": "https://cookwitherica.com/2018/02/15/iskembe-corbasi-turkish-tripe-soup/",
             "difference": "Cook With Erica: рубец долго варится, уксусная острая заправка на стол"
           }
-        ]
-      }
+        ],
+        "verification_scope": "Comparison of available recipe texts, accessible pages and extracted source evidence; full independent human reading of every one of 300 URLs not certified where source blocked or unavailable. Not a recipe made in a kitchen."
+      },
+      "editorial_publication_gate": "HOLD_FOR_FINAL_SOURCE_AND_TIMER_APPROVAL"
     },
     {
       "id": 46,
@@ -2636,7 +2726,7 @@
         "уксус 20 мл",
         "соль, перец."
       ],
-      "recipe_source_audit_status": "THREE_INDEPENDENT_RECIPE_TEXTS_COMPARED",
+      "recipe_source_audit_status": "THREE_SOURCE_COMPARISON_DOCUMENTED",
       "visual_audit_status": "PENDING",
       "photo_status": "PENDING_USER_APPROVAL",
       "source_content_evidence": {
@@ -2657,8 +2747,10 @@
             "url": "https://zaffaron.com/recipe/kelle-paca",
             "difference": "Zaffaron: прозрачный мясной бульон и факультативная заправка"
           }
-        ]
-      }
+        ],
+        "verification_scope": "Comparison of available recipe texts, accessible pages and extracted source evidence; full independent human reading of every one of 300 URLs not certified where source blocked or unavailable. Not a recipe made in a kitchen."
+      },
+      "editorial_publication_gate": "HOLD_FOR_FINAL_SOURCE_AND_TIMER_APPROVAL"
     },
     {
       "id": 47,
@@ -2695,7 +2787,7 @@
         "соль, перец",
         "петрушка."
       ],
-      "recipe_source_audit_status": "THREE_INDEPENDENT_RECIPE_TEXTS_COMPARED",
+      "recipe_source_audit_status": "THREE_SOURCE_COMPARISON_DOCUMENTED",
       "visual_audit_status": "PENDING",
       "photo_status": "PENDING_USER_APPROVAL",
       "source_content_evidence": {
@@ -2716,8 +2808,10 @@
             "url": "https://yemek.com/tarif/eksili-terbiyeli-kofteli-corba/",
             "difference": "Yemek.com: рис в фрикадельках, лимонно-яичная заправка"
           }
-        ]
-      }
+        ],
+        "verification_scope": "Comparison of available recipe texts, accessible pages and extracted source evidence; full independent human reading of every one of 300 URLs not certified where source blocked or unavailable. Not a recipe made in a kitchen."
+      },
+      "editorial_publication_gate": "HOLD_FOR_FINAL_SOURCE_AND_TIMER_APPROVAL"
     },
     {
       "id": 48,
@@ -2752,7 +2846,7 @@
         "сладкая паприка 1 ч. л.",
         "соль, перец."
       ],
-      "recipe_source_audit_status": "THREE_INDEPENDENT_RECIPE_TEXTS_COMPARED",
+      "recipe_source_audit_status": "THREE_SOURCE_COMPARISON_DOCUMENTED",
       "visual_audit_status": "PENDING",
       "photo_status": "PENDING_USER_APPROVAL",
       "source_content_evidence": {
@@ -2773,8 +2867,10 @@
             "url": "https://www.lezzet.com.tr/yemek-tarifleri/corbalar/corba-tarifleri/dugun-corbasi-tarifi",
             "difference": "Lezzet: домашний düğün çorbası с мякотью баранины и красным маслом"
           }
-        ]
-      }
+        ],
+        "verification_scope": "Comparison of available recipe texts, accessible pages and extracted source evidence; full independent human reading of every one of 300 URLs not certified where source blocked or unavailable. Not a recipe made in a kitchen."
+      },
+      "editorial_publication_gate": "HOLD_FOR_FINAL_SOURCE_AND_TIMER_APPROVAL"
     },
     {
       "id": 49,
@@ -2808,7 +2904,7 @@
         "паприка 1/2 ч. л.",
         "соль, перец."
       ],
-      "recipe_source_audit_status": "THREE_INDEPENDENT_RECIPE_TEXTS_COMPARED",
+      "recipe_source_audit_status": "THREE_SOURCE_COMPARISON_DOCUMENTED",
       "visual_audit_status": "PENDING",
       "photo_status": "PENDING_USER_APPROVAL",
       "source_content_evidence": {
@@ -2829,8 +2925,10 @@
             "url": "https://www.ktb.gov.tr/EN-99038/soup-with-home-made-noodles.html",
             "difference": "Министерство: отдельное изготовление домашней лапши, региональная версия"
           }
-        ]
-      }
+        ],
+        "verification_scope": "Comparison of available recipe texts, accessible pages and extracted source evidence; full independent human reading of every one of 300 URLs not certified where source blocked or unavailable. Not a recipe made in a kitchen."
+      },
+      "editorial_publication_gate": "HOLD_FOR_FINAL_SOURCE_AND_TIMER_APPROVAL"
     },
     {
       "id": 50,
@@ -2866,7 +2964,7 @@
         "сушёная мята 1 ч. л.",
         "соль."
       ],
-      "recipe_source_audit_status": "THREE_INDEPENDENT_RECIPE_TEXTS_COMPARED",
+      "recipe_source_audit_status": "THREE_SOURCE_COMPARISON_DOCUMENTED",
       "visual_audit_status": "PENDING",
       "photo_status": "PENDING_USER_APPROVAL",
       "source_content_evidence": {
@@ -2887,8 +2985,10 @@
             "url": "https://yemek.com/tarif/geleneksel-tutmac-corbasi/",
             "difference": "Yemek.com: домашняя вариация с мятой и йогуртом"
           }
-        ]
-      }
+        ],
+        "verification_scope": "Comparison of available recipe texts, accessible pages and extracted source evidence; full independent human reading of every one of 300 URLs not certified where source blocked or unavailable. Not a recipe made in a kitchen."
+      },
+      "editorial_publication_gate": "HOLD_FOR_FINAL_SOURCE_AND_TIMER_APPROVAL"
     },
     {
       "id": 51,
@@ -2921,7 +3021,7 @@
         "светлая мисо-паста 45 г",
         "зелёный лук 15 г."
       ],
-      "recipe_source_audit_status": "THREE_INDEPENDENT_RECIPE_TEXTS_COMPARED",
+      "recipe_source_audit_status": "THREE_SOURCE_COMPARISON_DOCUMENTED",
       "visual_audit_status": "PENDING",
       "photo_status": "PENDING_USER_APPROVAL",
       "source_content_evidence": {
@@ -2942,8 +3042,10 @@
             "url": "https://web-japan.org/kidsweb/cook/misoshiru/",
             "difference": "Японский государственный источник с тофу и супом мисосиру"
           }
-        ]
-      }
+        ],
+        "verification_scope": "Comparison of available recipe texts, accessible pages and extracted source evidence; full independent human reading of every one of 300 URLs not certified where source blocked or unavailable. Not a recipe made in a kitchen."
+      },
+      "editorial_publication_gate": "HOLD_FOR_FINAL_SOURCE_AND_TIMER_APPROVAL"
     },
     {
       "id": 52,
@@ -2979,7 +3081,7 @@
         "зелёный лук 20 г",
         "кунжутное масло 8 мл."
       ],
-      "recipe_source_audit_status": "THREE_INDEPENDENT_RECIPE_TEXTS_COMPARED",
+      "recipe_source_audit_status": "THREE_SOURCE_COMPARISON_DOCUMENTED",
       "visual_audit_status": "PENDING",
       "photo_status": "PENDING_USER_APPROVAL",
       "source_content_evidence": {
@@ -3000,8 +3102,10 @@
             "url": "https://www.chopstickchronicles.com/shoyu-ramen/",
             "difference": "Японский шою с отдельным соевым тарэ и лапшой"
           }
-        ]
-      }
+        ],
+        "verification_scope": "Comparison of available recipe texts, accessible pages and extracted source evidence; full independent human reading of every one of 300 URLs not certified where source blocked or unavailable. Not a recipe made in a kitchen."
+      },
+      "editorial_publication_gate": "HOLD_FOR_FINAL_SOURCE_AND_TIMER_APPROVAL"
     },
     {
       "id": 53,
@@ -3039,7 +3143,7 @@
         "зелёный лук 15 г",
         "чили по вкусу."
       ],
-      "recipe_source_audit_status": "THREE_INDEPENDENT_RECIPE_TEXTS_COMPARED",
+      "recipe_source_audit_status": "THREE_SOURCE_COMPARISON_DOCUMENTED",
       "visual_audit_status": "PENDING",
       "photo_status": "PENDING_USER_APPROVAL",
       "source_content_evidence": {
@@ -3060,8 +3164,10 @@
             "url": "https://www.bbcgoodfood.com/recipes/miso-ramen",
             "difference": "Веганский мисо-рамен с копчёным тофу и соба, не мясная версия"
           }
-        ]
-      }
+        ],
+        "verification_scope": "Comparison of available recipe texts, accessible pages and extracted source evidence; full independent human reading of every one of 300 URLs not certified where source blocked or unavailable. Not a recipe made in a kitchen."
+      },
+      "editorial_publication_gate": "HOLD_FOR_FINAL_SOURCE_AND_TIMER_APPROVAL"
     },
     {
       "id": 54,
@@ -3097,7 +3203,7 @@
         "зелёный лук 20 г",
         "древесные грибы кикурагэ 25 г готовых."
       ],
-      "recipe_source_audit_status": "THREE_INDEPENDENT_RECIPE_TEXTS_COMPARED",
+      "recipe_source_audit_status": "THREE_SOURCE_COMPARISON_DOCUMENTED",
       "visual_audit_status": "PENDING",
       "photo_status": "PENDING_USER_APPROVAL",
       "source_content_evidence": {
@@ -3118,8 +3224,10 @@
             "url": "https://www.thekitchn.com/tonkotsu-ramen-recipe-23636995",
             "difference": "Долгое кипячение свиных костей с тясю и лапшой"
           }
-        ]
-      }
+        ],
+        "verification_scope": "Comparison of available recipe texts, accessible pages and extracted source evidence; full independent human reading of every one of 300 URLs not certified where source blocked or unavailable. Not a recipe made in a kitchen."
+      },
+      "editorial_publication_gate": "HOLD_FOR_FINAL_SOURCE_AND_TIMER_APPROVAL"
     },
     {
       "id": 55,
@@ -3155,7 +3263,7 @@
         "кунжутное масло 10 мл",
         "зелёный лук 15 г."
       ],
-      "recipe_source_audit_status": "THREE_INDEPENDENT_RECIPE_TEXTS_COMPARED",
+      "recipe_source_audit_status": "THREE_SOURCE_COMPARISON_DOCUMENTED",
       "visual_audit_status": "PENDING",
       "photo_status": "PENDING_USER_APPROVAL",
       "source_content_evidence": {
@@ -3176,8 +3284,10 @@
             "url": "https://recipin.jp/en/recipes/tonjiru",
             "difference": "Быстрый семейный тондзиру с конняку и 40 минутами всего"
           }
-        ]
-      }
+        ],
+        "verification_scope": "Comparison of available recipe texts, accessible pages and extracted source evidence; full independent human reading of every one of 300 URLs not certified where source blocked or unavailable. Not a recipe made in a kitchen."
+      },
+      "editorial_publication_gate": "HOLD_FOR_FINAL_SOURCE_AND_TIMER_APPROVAL"
     },
     {
       "id": 56,
@@ -3214,7 +3324,7 @@
         "кунжутное масло 15 мл",
         "зелёный лук."
       ],
-      "recipe_source_audit_status": "THREE_INDEPENDENT_RECIPE_TEXTS_COMPARED",
+      "recipe_source_audit_status": "THREE_SOURCE_COMPARISON_DOCUMENTED",
       "visual_audit_status": "PENDING",
       "photo_status": "PENDING_USER_APPROVAL",
       "source_content_evidence": {
@@ -3235,8 +3345,10 @@
             "url": "https://www.maff.go.jp/e/policies/market/k_ryouri/search_menu/6349/index.html",
             "difference": "MAFF региональная версия Kenchin-jiru"
           }
-        ]
-      }
+        ],
+        "verification_scope": "Comparison of available recipe texts, accessible pages and extracted source evidence; full independent human reading of every one of 300 URLs not certified where source blocked or unavailable. Not a recipe made in a kitchen."
+      },
+      "editorial_publication_gate": "HOLD_FOR_FINAL_SOURCE_AND_TIMER_APPROVAL"
     },
     {
       "id": 57,
@@ -3271,7 +3383,7 @@
         "саке 15 мл",
         "соль."
       ],
-      "recipe_source_audit_status": "THREE_INDEPENDENT_RECIPE_TEXTS_COMPARED",
+      "recipe_source_audit_status": "THREE_SOURCE_COMPARISON_DOCUMENTED",
       "visual_audit_status": "PENDING",
       "photo_status": "PENDING_USER_APPROVAL",
       "source_content_evidence": {
@@ -3292,8 +3404,10 @@
             "url": "https://www.kikkoman.com/en/culture/foodforum/recipe/traditional-37-4.html",
             "difference": "Kikkoman: Канто с шиитаке, камабоко и креветками"
           }
-        ]
-      }
+        ],
+        "verification_scope": "Comparison of available recipe texts, accessible pages and extracted source evidence; full independent human reading of every one of 300 URLs not certified where source blocked or unavailable. Not a recipe made in a kitchen."
+      },
+      "editorial_publication_gate": "HOLD_FOR_FINAL_SOURCE_AND_TIMER_APPROVAL"
     },
     {
       "id": 58,
@@ -3329,7 +3443,7 @@
         "сахар 15 г",
         "соль после пробы."
       ],
-      "recipe_source_audit_status": "THREE_INDEPENDENT_RECIPE_TEXTS_COMPARED",
+      "recipe_source_audit_status": "THREE_SOURCE_COMPARISON_DOCUMENTED",
       "visual_audit_status": "PENDING",
       "photo_status": "PENDING_USER_APPROVAL",
       "source_content_evidence": {
@@ -3350,8 +3464,10 @@
             "url": "https://www.umamiinfo.com/japaneseumami2/localcuisine/category-01/yamagata/imoni.html",
             "difference": "Umami Information Center: региональный мясной суп из таро"
           }
-        ]
-      }
+        ],
+        "verification_scope": "Comparison of available recipe texts, accessible pages and extracted source evidence; full independent human reading of every one of 300 URLs not certified where source blocked or unavailable. Not a recipe made in a kitchen."
+      },
+      "editorial_publication_gate": "HOLD_FOR_FINAL_SOURCE_AND_TIMER_APPROVAL"
     },
     {
       "id": 59,
@@ -3384,7 +3500,7 @@
         "зелёный лук 20 г",
         "нори небольшая полоска по желанию."
       ],
-      "recipe_source_audit_status": "THREE_INDEPENDENT_RECIPE_TEXTS_COMPARED",
+      "recipe_source_audit_status": "THREE_SOURCE_COMPARISON_DOCUMENTED",
       "visual_audit_status": "PENDING",
       "photo_status": "PENDING_USER_APPROVAL",
       "source_content_evidence": {
@@ -3405,8 +3521,10 @@
             "url": "https://kamadasoysauce.com/recipe/list/76",
             "difference": "Kamada: соевый соус с даси, упрощённый вариант"
           }
-        ]
-      }
+        ],
+        "verification_scope": "Comparison of available recipe texts, accessible pages and extracted source evidence; full independent human reading of every one of 300 URLs not certified where source blocked or unavailable. Not a recipe made in a kitchen."
+      },
+      "editorial_publication_gate": "HOLD_FOR_FINAL_SOURCE_AND_TIMER_APPROVAL"
     },
     {
       "id": 60,
@@ -3441,7 +3559,7 @@
         "рис отварной холодный 300 г",
         "соль после пробы."
       ],
-      "recipe_source_audit_status": "THREE_INDEPENDENT_RECIPE_TEXTS_COMPARED",
+      "recipe_source_audit_status": "THREE_SOURCE_COMPARISON_DOCUMENTED",
       "visual_audit_status": "PENDING",
       "photo_status": "PENDING_USER_APPROVAL",
       "source_content_evidence": {
@@ -3462,8 +3580,10 @@
             "url": "https://www.justonecookbook.com/cold-miso-soup/",
             "difference": "JOC: холодный суп с рыбой, кунжутом, мисо и огурцом"
           }
-        ]
-      }
+        ],
+        "verification_scope": "Comparison of available recipe texts, accessible pages and extracted source evidence; full independent human reading of every one of 300 URLs not certified where source blocked or unavailable. Not a recipe made in a kitchen."
+      },
+      "editorial_publication_gate": "HOLD_FOR_FINAL_SOURCE_AND_TIMER_APPROVAL"
     },
     {
       "id": 61,
@@ -3500,7 +3620,7 @@
         "чеснок 2 зубчика",
         "соль."
       ],
-      "recipe_source_audit_status": "THREE_INDEPENDENT_RECIPE_TEXTS_COMPARED",
+      "recipe_source_audit_status": "THREE_SOURCE_COMPARISON_DOCUMENTED",
       "visual_audit_status": "PENDING",
       "photo_status": "PENDING_USER_APPROVAL",
       "source_content_evidence": {
@@ -3521,8 +3641,10 @@
             "url": "https://mykoreankitchen.com/yukgaejang-spicy-beef-soup/",
             "difference": "My Korean Kitchen: отдельная перечная заправка с кунжутным маслом"
           }
-        ]
-      }
+        ],
+        "verification_scope": "Comparison of available recipe texts, accessible pages and extracted source evidence; full independent human reading of every one of 300 URLs not certified where source blocked or unavailable. Not a recipe made in a kitchen."
+      },
+      "editorial_publication_gate": "HOLD_FOR_FINAL_SOURCE_AND_TIMER_APPROVAL"
     },
     {
       "id": 62,
@@ -3556,7 +3678,7 @@
         "вода 1,5 л",
         "соль и перец отдельно."
       ],
-      "recipe_source_audit_status": "THREE_INDEPENDENT_RECIPE_TEXTS_COMPARED",
+      "recipe_source_audit_status": "THREE_SOURCE_COMPARISON_DOCUMENTED",
       "visual_audit_status": "PENDING",
       "photo_status": "PENDING_USER_APPROVAL",
       "source_content_evidence": {
@@ -3577,8 +3699,10 @@
             "url": "https://www.koreanbapsang.com/samgyetang/",
             "difference": "Korean Bapsang: целая маленькая птица, длинная варка до мягкости"
           }
-        ]
-      }
+        ],
+        "verification_scope": "Comparison of available recipe texts, accessible pages and extracted source evidence; full independent human reading of every one of 300 URLs not certified where source blocked or unavailable. Not a recipe made in a kitchen."
+      },
+      "editorial_publication_gate": "HOLD_FOR_FINAL_SOURCE_AND_TIMER_APPROVAL"
     },
     {
       "id": 63,
@@ -3611,7 +3735,7 @@
         "рис варёный для подачи 250 г",
         "соль и перец отдельно."
       ],
-      "recipe_source_audit_status": "THREE_INDEPENDENT_RECIPE_TEXTS_COMPARED",
+      "recipe_source_audit_status": "THREE_SOURCE_COMPARISON_DOCUMENTED",
       "visual_audit_status": "PENDING",
       "photo_status": "PENDING_USER_APPROVAL",
       "source_content_evidence": {
@@ -3632,8 +3756,10 @@
             "url": "https://www.beyondkimchee.com/seolleongtang-ox-bone-soup/",
             "difference": "Beyond Kimchee: современная скороварка вместо длительной обычной варки"
           }
-        ]
-      }
+        ],
+        "verification_scope": "Comparison of available recipe texts, accessible pages and extracted source evidence; full independent human reading of every one of 300 URLs not certified where source blocked or unavailable. Not a recipe made in a kitchen."
+      },
+      "editorial_publication_gate": "HOLD_FOR_FINAL_SOURCE_AND_TIMER_APPROVAL"
     },
     {
       "id": 64,
@@ -3668,7 +3794,7 @@
         "соль, перец",
         "по желанию стеклянная лапша 50 г."
       ],
-      "recipe_source_audit_status": "THREE_INDEPENDENT_RECIPE_TEXTS_COMPARED",
+      "recipe_source_audit_status": "THREE_SOURCE_COMPARISON_DOCUMENTED",
       "visual_audit_status": "PENDING",
       "photo_status": "PENDING_USER_APPROVAL",
       "source_content_evidence": {
@@ -3689,8 +3815,10 @@
             "url": "https://mykoreankitchen.com/galbitang-beef-short-rib-soup/",
             "difference": "My Korean Kitchen: рёбра более часа, овощи и лапша"
           }
-        ]
-      }
+        ],
+        "verification_scope": "Comparison of available recipe texts, accessible pages and extracted source evidence; full independent human reading of every one of 300 URLs not certified where source blocked or unavailable. Not a recipe made in a kitchen."
+      },
+      "editorial_publication_gate": "HOLD_FOR_FINAL_SOURCE_AND_TIMER_APPROVAL"
     },
     {
       "id": 65,
@@ -3723,7 +3851,7 @@
         "корейский суповой соевый соус 25 мл",
         "соль."
       ],
-      "recipe_source_audit_status": "THREE_INDEPENDENT_RECIPE_TEXTS_COMPARED",
+      "recipe_source_audit_status": "THREE_SOURCE_COMPARISON_DOCUMENTED",
       "visual_audit_status": "PENDING",
       "photo_status": "PENDING_USER_APPROVAL",
       "source_content_evidence": {
@@ -3744,8 +3872,10 @@
             "url": "https://www.beyondkimchee.com/beef-seaweed-soup/",
             "difference": "Beyond Kimchee: рисовая вода, говядина и миёк"
           }
-        ]
-      }
+        ],
+        "verification_scope": "Comparison of available recipe texts, accessible pages and extracted source evidence; full independent human reading of every one of 300 URLs not certified where source blocked or unavailable. Not a recipe made in a kitchen."
+      },
+      "editorial_publication_gate": "HOLD_FOR_FINAL_SOURCE_AND_TIMER_APPROVAL"
     },
     {
       "id": 66,
@@ -3778,7 +3908,7 @@
         "нори гим 1 лист (по желанию)",
         "соль и перец."
       ],
-      "recipe_source_audit_status": "THREE_INDEPENDENT_RECIPE_TEXTS_COMPARED",
+      "recipe_source_audit_status": "THREE_SOURCE_COMPARISON_DOCUMENTED",
       "visual_audit_status": "PENDING",
       "photo_status": "PENDING_USER_APPROVAL",
       "source_content_evidence": {
@@ -3799,8 +3929,10 @@
             "url": "https://mykoreankitchen.com/manduguk-korean-dumpling-soup/",
             "difference": "My Korean Kitchen: лёгкий мандугук с яйцом и gim"
           }
-        ]
-      }
+        ],
+        "verification_scope": "Comparison of available recipe texts, accessible pages and extracted source evidence; full independent human reading of every one of 300 URLs not certified where source blocked or unavailable. Not a recipe made in a kitchen."
+      },
+      "editorial_publication_gate": "HOLD_FOR_FINAL_SOURCE_AND_TIMER_APPROVAL"
     },
     {
       "id": 67,
@@ -3834,7 +3966,7 @@
         "корейский соевый соус 10 мл",
         "зелёный лук 20 г."
       ],
-      "recipe_source_audit_status": "THREE_INDEPENDENT_RECIPE_TEXTS_COMPARED",
+      "recipe_source_audit_status": "THREE_SOURCE_COMPARISON_DOCUMENTED",
       "visual_audit_status": "PENDING",
       "photo_status": "PENDING_USER_APPROVAL",
       "source_content_evidence": {
@@ -3855,8 +3987,10 @@
             "url": "https://www.beyondkimchee.com/kimchi-jjigae/",
             "difference": "Beyond Kimchee: рисовая вода и более короткое тушение, готово примерно за 40 минут"
           }
-        ]
-      }
+        ],
+        "verification_scope": "Comparison of available recipe texts, accessible pages and extracted source evidence; full independent human reading of every one of 300 URLs not certified where source blocked or unavailable. Not a recipe made in a kitchen."
+      },
+      "editorial_publication_gate": "HOLD_FOR_FINAL_SOURCE_AND_TIMER_APPROVAL"
     },
     {
       "id": 68,
@@ -3890,7 +4024,7 @@
         "соль",
         "свежий красный перец по желанию."
       ],
-      "recipe_source_audit_status": "THREE_INDEPENDENT_RECIPE_TEXTS_COMPARED",
+      "recipe_source_audit_status": "THREE_SOURCE_COMPARISON_DOCUMENTED",
       "visual_audit_status": "PENDING",
       "photo_status": "PENDING_USER_APPROVAL",
       "source_content_evidence": {
@@ -3911,8 +4045,10 @@
             "url": "https://mykoreankitchen.com/bean-sprout-soup-kongnamul-guk/",
             "difference": "My Korean Kitchen: ростки, чеснок и легкая заправка"
           }
-        ]
-      }
+        ],
+        "verification_scope": "Comparison of available recipe texts, accessible pages and extracted source evidence; full independent human reading of every one of 300 URLs not certified where source blocked or unavailable. Not a recipe made in a kitchen."
+      },
+      "editorial_publication_gate": "HOLD_FOR_FINAL_SOURCE_AND_TIMER_APPROVAL"
     },
     {
       "id": 69,
@@ -3948,7 +4084,7 @@
         "рыбный соус 10 мл",
         "вода 1,5 л."
       ],
-      "recipe_source_audit_status": "THREE_INDEPENDENT_RECIPE_TEXTS_COMPARED",
+      "recipe_source_audit_status": "THREE_SOURCE_COMPARISON_DOCUMENTED",
       "visual_audit_status": "PENDING",
       "photo_status": "PENDING_USER_APPROVAL",
       "source_content_evidence": {
@@ -3969,8 +4105,10 @@
             "url": "https://seonkyounglongest.com/gamjatang/",
             "difference": "Seonkyoung Longest: шейные кости, морковь, картофель и перилла"
           }
-        ]
-      }
+        ],
+        "verification_scope": "Comparison of available recipe texts, accessible pages and extracted source evidence; full independent human reading of every one of 300 URLs not certified where source blocked or unavailable. Not a recipe made in a kitchen."
+      },
+      "editorial_publication_gate": "HOLD_FOR_FINAL_SOURCE_AND_TIMER_APPROVAL"
     },
     {
       "id": 70,
@@ -4007,7 +4145,7 @@
         "чеснок 1 зубчик",
         "зелёный острый перец немного."
       ],
-      "recipe_source_audit_status": "THREE_INDEPENDENT_RECIPE_TEXTS_COMPARED",
+      "recipe_source_audit_status": "THREE_SOURCE_COMPARISON_DOCUMENTED",
       "visual_audit_status": "PENDING",
       "photo_status": "PENDING_USER_APPROVAL",
       "source_content_evidence": {
@@ -4028,8 +4166,10 @@
             "url": "https://www.beyondkimchee.com/doenjang-jjigae/",
             "difference": "Beyond Kimchee: рисовая вода, твенджан, овощи, ~20 минут"
           }
-        ]
-      }
+        ],
+        "verification_scope": "Comparison of available recipe texts, accessible pages and extracted source evidence; full independent human reading of every one of 300 URLs not certified where source blocked or unavailable. Not a recipe made in a kitchen."
+      },
+      "editorial_publication_gate": "HOLD_FOR_FINAL_SOURCE_AND_TIMER_APPROVAL"
     },
     {
       "id": 71,
@@ -4065,7 +4205,7 @@
         "соль",
         "для подачи редис 70 г, капуста 80 г, лайм."
       ],
-      "recipe_source_audit_status": "THREE_INDEPENDENT_RECIPE_TEXTS_COMPARED",
+      "recipe_source_audit_status": "THREE_SOURCE_COMPARISON_DOCUMENTED",
       "visual_audit_status": "PENDING",
       "photo_status": "PENDING_USER_APPROVAL",
       "source_content_evidence": {
@@ -4086,8 +4226,10 @@
             "url": "https://www.rickbayless.com/recipe/slow-cooker-red-chile-pozole/",
             "difference": "Rick Bayless: медленно сваренная свинина и хомини, традиционные гарниры"
           }
-        ]
-      }
+        ],
+        "verification_scope": "Comparison of available recipe texts, accessible pages and extracted source evidence; full independent human reading of every one of 300 URLs not certified where source blocked or unavailable. Not a recipe made in a kitchen."
+      },
+      "editorial_publication_gate": "HOLD_FOR_FINAL_SOURCE_AND_TIMER_APPROVAL"
     },
     {
       "id": 72,
@@ -4124,7 +4266,7 @@
         "масло 15 мл",
         "соль, лайм."
       ],
-      "recipe_source_audit_status": "THREE_INDEPENDENT_RECIPE_TEXTS_COMPARED",
+      "recipe_source_audit_status": "THREE_SOURCE_COMPARISON_DOCUMENTED",
       "visual_audit_status": "PENDING",
       "photo_status": "PENDING_USER_APPROVAL",
       "source_content_evidence": {
@@ -4145,8 +4287,10 @@
             "url": "https://www.isabeleats.com/chicken-pozole-verde/",
             "difference": "Isabel Eats: куриное посоле с томатильо и чили, зелёная основа"
           }
-        ]
-      }
+        ],
+        "verification_scope": "Comparison of available recipe texts, accessible pages and extracted source evidence; full independent human reading of every one of 300 URLs not certified where source blocked or unavailable. Not a recipe made in a kitchen."
+      },
+      "editorial_publication_gate": "HOLD_FOR_FINAL_SOURCE_AND_TIMER_APPROVAL"
     },
     {
       "id": 73,
@@ -4182,7 +4326,7 @@
         "сыр кесо фреско 55 г",
         "соль, кинза."
       ],
-      "recipe_source_audit_status": "THREE_INDEPENDENT_RECIPE_TEXTS_COMPARED",
+      "recipe_source_audit_status": "THREE_SOURCE_COMPARISON_DOCUMENTED",
       "visual_audit_status": "PENDING",
       "photo_status": "PENDING_USER_APPROVAL",
       "source_content_evidence": {
@@ -4203,8 +4347,10 @@
             "url": "https://laroussecocina.mx/receta/sopa-de-tortilla/",
             "difference": "Larousse: sopa de tortilla традиционной центральномексиканской кухни"
           }
-        ]
-      }
+        ],
+        "verification_scope": "Comparison of available recipe texts, accessible pages and extracted source evidence; full independent human reading of every one of 300 URLs not certified where source blocked or unavailable. Not a recipe made in a kitchen."
+      },
+      "editorial_publication_gate": "HOLD_FOR_FINAL_SOURCE_AND_TIMER_APPROVAL"
     },
     {
       "id": 74,
@@ -4242,7 +4388,7 @@
         "эпасоте немного",
         "соль."
       ],
-      "recipe_source_audit_status": "THREE_INDEPENDENT_RECIPE_TEXTS_COMPARED",
+      "recipe_source_audit_status": "THREE_SOURCE_COMPARISON_DOCUMENTED",
       "visual_audit_status": "PENDING",
       "photo_status": "PENDING_USER_APPROVAL",
       "source_content_evidence": {
@@ -4263,8 +4409,10 @@
             "url": "https://canalcocina.es/receta/caldo-tlalpeno",
             "difference": "Canal Cocina: домашняя версия с куриным мясом, нутом и овощами"
           }
-        ]
-      }
+        ],
+        "verification_scope": "Comparison of available recipe texts, accessible pages and extracted source evidence; full independent human reading of every one of 300 URLs not certified where source blocked or unavailable. Not a recipe made in a kitchen."
+      },
+      "editorial_publication_gate": "HOLD_FOR_FINAL_SOURCE_AND_TIMER_APPROVAL"
     },
     {
       "id": 75,
@@ -4298,7 +4446,7 @@
         "соль",
         "кинза немного."
       ],
-      "recipe_source_audit_status": "THREE_INDEPENDENT_RECIPE_TEXTS_COMPARED",
+      "recipe_source_audit_status": "THREE_SOURCE_COMPARISON_DOCUMENTED",
       "visual_audit_status": "PENDING",
       "photo_status": "PENDING_USER_APPROVAL",
       "source_content_evidence": {
@@ -4319,8 +4467,10 @@
             "url": "https://www.isabeleats.com/sopa-de-fideo/",
             "difference": "Isabel Eats: 3–4 минуты обжарки сухой вермишели, доваривание в бульоне"
           }
-        ]
-      }
+        ],
+        "verification_scope": "Comparison of available recipe texts, accessible pages and extracted source evidence; full independent human reading of every one of 300 URLs not certified where source blocked or unavailable. Not a recipe made in a kitchen."
+      },
+      "editorial_publication_gate": "HOLD_FOR_FINAL_SOURCE_AND_TIMER_APPROVAL"
     },
     {
       "id": 76,
@@ -4357,7 +4507,7 @@
         "орегано",
         "соль, кинза."
       ],
-      "recipe_source_audit_status": "THREE_INDEPENDENT_RECIPE_TEXTS_COMPARED",
+      "recipe_source_audit_status": "THREE_SOURCE_COMPARISON_DOCUMENTED",
       "visual_audit_status": "PENDING",
       "photo_status": "PENDING_USER_APPROVAL",
       "source_content_evidence": {
@@ -4378,8 +4528,10 @@
             "url": "https://yucatantoday.com/en/blog/recipe-sopa-de-lima",
             "difference": "Yucatán Today: региональная юкатанская версия с цитрусовым ароматом"
           }
-        ]
-      }
+        ],
+        "verification_scope": "Comparison of available recipe texts, accessible pages and extracted source evidence; full independent human reading of every one of 300 URLs not certified where source blocked or unavailable. Not a recipe made in a kitchen."
+      },
+      "editorial_publication_gate": "HOLD_FOR_FINAL_SOURCE_AND_TIMER_APPROVAL"
     },
     {
       "id": 77,
@@ -4415,7 +4567,7 @@
         "лук 70 г",
         "соль, кинза, лайм."
       ],
-      "recipe_source_audit_status": "THREE_INDEPENDENT_RECIPE_TEXTS_COMPARED",
+      "recipe_source_audit_status": "THREE_SOURCE_COMPARISON_DOCUMENTED",
       "visual_audit_status": "PENDING",
       "photo_status": "PENDING_USER_APPROVAL",
       "source_content_evidence": {
@@ -4436,8 +4588,10 @@
             "url": "https://www.isabeleats.com/caldo-de-res/",
             "difference": "Isabel Eats: говяжий бульон, чайт, кабачки, кукуруза, картофель и морковь"
           }
-        ]
-      }
+        ],
+        "verification_scope": "Comparison of available recipe texts, accessible pages and extracted source evidence; full independent human reading of every one of 300 URLs not certified where source blocked or unavailable. Not a recipe made in a kitchen."
+      },
+      "editorial_publication_gate": "HOLD_FOR_FINAL_SOURCE_AND_TIMER_APPROVAL"
     },
     {
       "id": 78,
@@ -4475,7 +4629,7 @@
         "чеснок 1 зубчик",
         "соль, перец."
       ],
-      "recipe_source_audit_status": "THREE_INDEPENDENT_RECIPE_TEXTS_COMPARED",
+      "recipe_source_audit_status": "THREE_SOURCE_COMPARISON_DOCUMENTED",
       "visual_audit_status": "PENDING",
       "photo_status": "PENDING_USER_APPROVAL",
       "source_content_evidence": {
@@ -4496,8 +4650,10 @@
             "url": "https://www.onceuponachef.com/recipes/albondigas-soup-mexican-meatball-soup.html",
             "difference": "Once Upon a Chef: мексиканский суп с рисовыми фрикадельками и овощами"
           }
-        ]
-      }
+        ],
+        "verification_scope": "Comparison of available recipe texts, accessible pages and extracted source evidence; full independent human reading of every one of 300 URLs not certified where source blocked or unavailable. Not a recipe made in a kitchen."
+      },
+      "editorial_publication_gate": "HOLD_FOR_FINAL_SOURCE_AND_TIMER_APPROVAL"
     },
     {
       "id": 79,
@@ -4534,7 +4690,7 @@
         "кукурузная тортилья 2 шт.",
         "соль."
       ],
-      "recipe_source_audit_status": "THREE_INDEPENDENT_RECIPE_TEXTS_COMPARED",
+      "recipe_source_audit_status": "THREE_SOURCE_COMPARISON_DOCUMENTED",
       "visual_audit_status": "PENDING",
       "photo_status": "PENDING_USER_APPROVAL",
       "source_content_evidence": {
@@ -4555,8 +4711,10 @@
             "url": "https://reto2024.gastro.org.mx/mexiterran/sopa-tarasca-michoacan-52",
             "difference": "Gastro.org.mx: региональная мичоаканская sopa tarasca"
           }
-        ]
-      }
+        ],
+        "verification_scope": "Comparison of available recipe texts, accessible pages and extracted source evidence; full independent human reading of every one of 300 URLs not certified where source blocked or unavailable. Not a recipe made in a kitchen."
+      },
+      "editorial_publication_gate": "HOLD_FOR_FINAL_SOURCE_AND_TIMER_APPROVAL"
     },
     {
       "id": 80,
@@ -4593,7 +4751,7 @@
         "масло 15 мл",
         "соль."
       ],
-      "recipe_source_audit_status": "THREE_INDEPENDENT_RECIPE_TEXTS_COMPARED",
+      "recipe_source_audit_status": "THREE_SOURCE_COMPARISON_DOCUMENTED",
       "visual_audit_status": "PENDING",
       "photo_status": "PENDING_USER_APPROVAL",
       "source_content_evidence": {
@@ -4614,8 +4772,10 @@
             "url": "https://elgourmet.com/recetas/chilpachole-de-jaiba/",
             "difference": "El Gourmet: современная версия с густой кукурузной основой"
           }
-        ]
-      }
+        ],
+        "verification_scope": "Comparison of available recipe texts, accessible pages and extracted source evidence; full independent human reading of every one of 300 URLs not certified where source blocked or unavailable. Not a recipe made in a kitchen."
+      },
+      "editorial_publication_gate": "HOLD_FOR_FINAL_SOURCE_AND_TIMER_APPROVAL"
     },
     {
       "id": 81,
@@ -4654,7 +4814,7 @@
         "сахар 10 г",
         "зелёный лук, кинза, базилик, лайм."
       ],
-      "recipe_source_audit_status": "THREE_INDEPENDENT_RECIPE_TEXTS_COMPARED",
+      "recipe_source_audit_status": "THREE_SOURCE_COMPARISON_DOCUMENTED",
       "visual_audit_status": "PENDING",
       "photo_status": "PENDING_USER_APPROVAL",
       "source_content_evidence": {
@@ -4675,8 +4835,10 @@
             "url": "https://www.recipetineats.com/vietnamese-pho-recipe/",
             "difference": "RecipeTin Eats: сочетание костей и грудинки, обожжённые овощи и специи"
           }
-        ]
-      }
+        ],
+        "verification_scope": "Comparison of available recipe texts, accessible pages and extracted source evidence; full independent human reading of every one of 300 URLs not certified where source blocked or unavailable. Not a recipe made in a kitchen."
+      },
+      "editorial_publication_gate": "HOLD_FOR_FINAL_SOURCE_AND_TIMER_APPROVAL"
     },
     {
       "id": 82,
@@ -4712,7 +4874,7 @@
         "рисовая лапша 200 г",
         "зелёный лук, кинза, лайм."
       ],
-      "recipe_source_audit_status": "THREE_INDEPENDENT_RECIPE_TEXTS_COMPARED",
+      "recipe_source_audit_status": "THREE_SOURCE_COMPARISON_DOCUMENTED",
       "visual_audit_status": "PENDING",
       "photo_status": "PENDING_USER_APPROVAL",
       "source_content_evidence": {
@@ -4733,8 +4895,10 @@
             "url": "https://www.recipetineats.com/vietnamese-chicken-pho-soup-pho-ga/",
             "difference": "RecipeTin Eats: прозрачный куриный бульон, обожжённые ароматические овощи"
           }
-        ]
-      }
+        ],
+        "verification_scope": "Comparison of available recipe texts, accessible pages and extracted source evidence; full independent human reading of every one of 300 URLs not certified where source blocked or unavailable. Not a recipe made in a kitchen."
+      },
+      "editorial_publication_gate": "HOLD_FOR_FINAL_SOURCE_AND_TIMER_APPROVAL"
     },
     {
       "id": 83,
@@ -4772,7 +4936,7 @@
         "вода 1,5 л",
         "рыбный соус 20 мл."
       ],
-      "recipe_source_audit_status": "THREE_INDEPENDENT_RECIPE_TEXTS_COMPARED",
+      "recipe_source_audit_status": "THREE_SOURCE_COMPARISON_DOCUMENTED",
       "visual_audit_status": "PENDING",
       "photo_status": "PENDING_USER_APPROVAL",
       "source_content_evidence": {
@@ -4793,8 +4957,10 @@
             "url": "https://www.greatbritishchefs.com/recipes/bun-bo-hue-recipe",
             "difference": "Great British Chefs: лемонграссовый бульон и острый ароматический соус"
           }
-        ]
-      }
+        ],
+        "verification_scope": "Comparison of available recipe texts, accessible pages and extracted source evidence; full independent human reading of every one of 300 URLs not certified where source blocked or unavailable. Not a recipe made in a kitchen."
+      },
+      "editorial_publication_gate": "HOLD_FOR_FINAL_SOURCE_AND_TIMER_APPROVAL"
     },
     {
       "id": 84,
@@ -4830,7 +4996,7 @@
         "креветочная паста 1 ч. л.",
         "рыбный соус 15 мл."
       ],
-      "recipe_source_audit_status": "THREE_INDEPENDENT_RECIPE_TEXTS_COMPARED",
+      "recipe_source_audit_status": "THREE_SOURCE_COMPARISON_DOCUMENTED",
       "visual_audit_status": "PENDING",
       "photo_status": "PENDING_USER_APPROVAL",
       "source_content_evidence": {
@@ -4851,8 +5017,10 @@
             "url": "https://asianinspirations.com.au/recipes/vietnamese-crab-noodle-soup-bun-rieu/",
             "difference": "Asian Inspirations: вариант вьетнамского крабового супа с тофу и томатами"
           }
-        ]
-      }
+        ],
+        "verification_scope": "Comparison of available recipe texts, accessible pages and extracted source evidence; full independent human reading of every one of 300 URLs not certified where source blocked or unavailable. Not a recipe made in a kitchen."
+      },
+      "editorial_publication_gate": "HOLD_FOR_FINAL_SOURCE_AND_TIMER_APPROVAL"
     },
     {
       "id": 85,
@@ -4887,7 +5055,7 @@
         "рыбный соус 15 мл",
         "зелёный лук, кинза."
       ],
-      "recipe_source_audit_status": "THREE_INDEPENDENT_RECIPE_TEXTS_COMPARED",
+      "recipe_source_audit_status": "THREE_SOURCE_COMPARISON_DOCUMENTED",
       "visual_audit_status": "PENDING",
       "photo_status": "PENDING_USER_APPROVAL",
       "source_content_evidence": {
@@ -4908,8 +5076,10 @@
             "url": "https://ang-cooks.com/post/bun-thang/",
             "difference": "Ang Cooks: наваристый лёгкий бульон и аккуратные тонкие полоски ингредиентов"
           }
-        ]
-      }
+        ],
+        "verification_scope": "Comparison of available recipe texts, accessible pages and extracted source evidence; full independent human reading of every one of 300 URLs not certified where source blocked or unavailable. Not a recipe made in a kitchen."
+      },
+      "editorial_publication_gate": "HOLD_FOR_FINAL_SOURCE_AND_TIMER_APPROVAL"
     },
     {
       "id": 86,
@@ -4944,7 +5114,7 @@
         "растительное масло 10 мл",
         "чили и зелень."
       ],
-      "recipe_source_audit_status": "THREE_INDEPENDENT_RECIPE_TEXTS_COMPARED",
+      "recipe_source_audit_status": "THREE_SOURCE_COMPARISON_DOCUMENTED",
       "visual_audit_status": "PENDING",
       "photo_status": "PENDING_USER_APPROVAL",
       "source_content_evidence": {
@@ -4965,8 +5135,10 @@
             "url": "https://www.dienmayxanh.com/vao-bep/cach-nau-bun-oc-doc-mung-thom-ngon-thanh-mat-de-lam-ngay-tai-08482",
             "difference": "Dien May Xanh: варианты с улитками, лапшой и региональными добавками"
           }
-        ]
-      }
+        ],
+        "verification_scope": "Comparison of available recipe texts, accessible pages and extracted source evidence; full independent human reading of every one of 300 URLs not certified where source blocked or unavailable. Not a recipe made in a kitchen."
+      },
+      "editorial_publication_gate": "HOLD_FOR_FINAL_SOURCE_AND_TIMER_APPROVAL"
     },
     {
       "id": 87,
@@ -5002,7 +5174,7 @@
         "ростки сои 90 г",
         "зелень."
       ],
-      "recipe_source_audit_status": "THREE_INDEPENDENT_RECIPE_TEXTS_COMPARED",
+      "recipe_source_audit_status": "THREE_SOURCE_COMPARISON_DOCUMENTED",
       "visual_audit_status": "PENDING",
       "photo_status": "PENDING_USER_APPROVAL",
       "source_content_evidence": {
@@ -5023,8 +5195,10 @@
             "url": "https://vietnamesecookbook.com/recipes/hu-tieu/",
             "difference": "Vietnamese Cookbook: ху тьеу с рисовой лапшой и мясо-морепродуктовой подачей"
           }
-        ]
-      }
+        ],
+        "verification_scope": "Comparison of available recipe texts, accessible pages and extracted source evidence; full independent human reading of every one of 300 URLs not certified where source blocked or unavailable. Not a recipe made in a kitchen."
+      },
+      "editorial_publication_gate": "HOLD_FOR_FINAL_SOURCE_AND_TIMER_APPROVAL"
     },
     {
       "id": 88,
@@ -5058,7 +5232,7 @@
         "рыбный соус 20 мл",
         "зелёный лук."
       ],
-      "recipe_source_audit_status": "THREE_INDEPENDENT_RECIPE_TEXTS_COMPARED",
+      "recipe_source_audit_status": "THREE_SOURCE_COMPARISON_DOCUMENTED",
       "visual_audit_status": "PENDING",
       "photo_status": "PENDING_USER_APPROVAL",
       "source_content_evidence": {
@@ -5079,8 +5253,10 @@
             "url": "https://vnifood.com/recipe/how-to-make-banh-canh-tom-thit/",
             "difference": "VniFood: вариант бань кань с креветками и свининой"
           }
-        ]
-      }
+        ],
+        "verification_scope": "Comparison of available recipe texts, accessible pages and extracted source evidence; full independent human reading of every one of 300 URLs not certified where source blocked or unavailable. Not a recipe made in a kitchen."
+      },
+      "editorial_publication_gate": "HOLD_FOR_FINAL_SOURCE_AND_TIMER_APPROVAL"
     },
     {
       "id": 89,
@@ -5117,7 +5293,7 @@
         "сахар 8 г",
         "чеснок 1 зубчик."
       ],
-      "recipe_source_audit_status": "THREE_INDEPENDENT_RECIPE_TEXTS_COMPARED",
+      "recipe_source_audit_status": "THREE_SOURCE_COMPARISON_DOCUMENTED",
       "visual_audit_status": "PENDING",
       "photo_status": "PENDING_USER_APPROVAL",
       "source_content_evidence": {
@@ -5138,8 +5314,10 @@
             "url": "https://www.sbs.com.au/food/the-cook-up-with-adam-liaw/recipe/canh-chua-ca-vietnamese-sour-fish-soup/5itdhzdfp",
             "difference": "SBS: вьетнамский canh chua с рыбным соусом и ананасом"
           }
-        ]
-      }
+        ],
+        "verification_scope": "Comparison of available recipe texts, accessible pages and extracted source evidence; full independent human reading of every one of 300 URLs not certified where source blocked or unavailable. Not a recipe made in a kitchen."
+      },
+      "editorial_publication_gate": "HOLD_FOR_FINAL_SOURCE_AND_TIMER_APPROVAL"
     },
     {
       "id": 90,
@@ -5173,7 +5351,7 @@
         "бульон 850 мл",
         "зелёный лук, перец."
       ],
-      "recipe_source_audit_status": "THREE_INDEPENDENT_RECIPE_TEXTS_COMPARED",
+      "recipe_source_audit_status": "THREE_SOURCE_COMPARISON_DOCUMENTED",
       "visual_audit_status": "PENDING",
       "photo_status": "PENDING_USER_APPROVAL",
       "source_content_evidence": {
@@ -5194,8 +5372,10 @@
             "url": "https://getvanvan.com/blogs/recipes/canh-kh%E1%BB%95-qua-bitter-melon-soup",
             "difference": "Van Van: традиционный вьетнамский canh khổ qua, горькая дыня с фаршем"
           }
-        ]
-      }
+        ],
+        "verification_scope": "Comparison of available recipe texts, accessible pages and extracted source evidence; full independent human reading of every one of 300 URLs not certified where source blocked or unavailable. Not a recipe made in a kitchen."
+      },
+      "editorial_publication_gate": "HOLD_FOR_FINAL_SOURCE_AND_TIMER_APPROVAL"
     },
     {
       "id": 91,
@@ -5231,7 +5411,7 @@
         "бок-чой 120 г",
         "соль."
       ],
-      "recipe_source_audit_status": "THREE_INDEPENDENT_RECIPE_TEXTS_COMPARED",
+      "recipe_source_audit_status": "THREE_SOURCE_COMPARISON_DOCUMENTED",
       "visual_audit_status": "PENDING",
       "photo_status": "PENDING_USER_APPROVAL",
       "source_content_evidence": {
@@ -5252,8 +5432,10 @@
             "url": "https://www.justonecookbook.com/shrimp-pork-wonton/",
             "difference": "Свинина + креветки и прозрачный бульон, иное соотношение обёрток"
           }
-        ]
-      }
+        ],
+        "verification_scope": "Comparison of available recipe texts, accessible pages and extracted source evidence; full independent human reading of every one of 300 URLs not certified where source blocked or unavailable. Not a recipe made in a kitchen."
+      },
+      "editorial_publication_gate": "HOLD_FOR_FINAL_SOURCE_AND_TIMER_APPROVAL"
     },
     {
       "id": 92,
@@ -5290,7 +5472,7 @@
         "кукурузный крахмал 20 г",
         "кунжутное масло 5 мл."
       ],
-      "recipe_source_audit_status": "THREE_INDEPENDENT_RECIPE_TEXTS_COMPARED",
+      "recipe_source_audit_status": "THREE_SOURCE_COMPARISON_DOCUMENTED",
       "visual_audit_status": "PENDING",
       "photo_status": "PENDING_USER_APPROVAL",
       "source_content_evidence": {
@@ -5311,8 +5493,10 @@
             "url": "https://www.madewithlau.com/recipes/hot-sour-soup",
             "difference": "Без мяса, больше овощей, уксус и белый перец"
           }
-        ]
-      }
+        ],
+        "verification_scope": "Comparison of available recipe texts, accessible pages and extracted source evidence; full independent human reading of every one of 300 URLs not certified where source blocked or unavailable. Not a recipe made in a kitchen."
+      },
+      "editorial_publication_gate": "HOLD_FOR_FINAL_SOURCE_AND_TIMER_APPROVAL"
     },
     {
       "id": 93,
@@ -5346,7 +5530,7 @@
         "зелёный лук 20 г",
         "соль."
       ],
-      "recipe_source_audit_status": "THREE_INDEPENDENT_RECIPE_TEXTS_COMPARED",
+      "recipe_source_audit_status": "THREE_SOURCE_COMPARISON_DOCUMENTED",
       "visual_audit_status": "PENDING",
       "photo_status": "PENDING_USER_APPROVAL",
       "source_content_evidence": {
@@ -5367,8 +5551,10 @@
             "url": "https://www.madewithlau.com/recipes/egg-drop-soup",
             "difference": "Ресторанная усложнённая версия с морепродуктами и тофу"
           }
-        ]
-      }
+        ],
+        "verification_scope": "Comparison of available recipe texts, accessible pages and extracted source evidence; full independent human reading of every one of 300 URLs not certified where source blocked or unavailable. Not a recipe made in a kitchen."
+      },
+      "editorial_publication_gate": "HOLD_FOR_FINAL_SOURCE_AND_TIMER_APPROVAL"
     },
     {
       "id": 94,
@@ -5402,7 +5588,7 @@
         "белый перец",
         "зелёный лук 15 г."
       ],
-      "recipe_source_audit_status": "THREE_INDEPENDENT_RECIPE_TEXTS_COMPARED",
+      "recipe_source_audit_status": "THREE_SOURCE_COMPARISON_DOCUMENTED",
       "visual_audit_status": "PENDING",
       "photo_status": "PENDING_USER_APPROVAL",
       "source_content_evidence": {
@@ -5423,8 +5609,10 @@
             "url": "https://www.chinasichuanfood.com/winter-melon-soup/",
             "difference": "Способ 40 минут рёбра плюс 20 минут дыня, близок к редакционной карточке"
           }
-        ]
-      }
+        ],
+        "verification_scope": "Comparison of available recipe texts, accessible pages and extracted source evidence; full independent human reading of every one of 300 URLs not certified where source blocked or unavailable. Not a recipe made in a kitchen."
+      },
+      "editorial_publication_gate": "HOLD_FOR_FINAL_SOURCE_AND_TIMER_APPROVAL"
     },
     {
       "id": 95,
@@ -5458,7 +5646,7 @@
         "соль",
         "зелёный лук 10 г."
       ],
-      "recipe_source_audit_status": "THREE_INDEPENDENT_RECIPE_TEXTS_COMPARED",
+      "recipe_source_audit_status": "THREE_SOURCE_COMPARISON_DOCUMENTED",
       "visual_audit_status": "PENDING",
       "photo_status": "PENDING_USER_APPROVAL",
       "source_content_evidence": {
@@ -5479,8 +5667,10 @@
             "url": "https://omnivorescookbook.com/chinese-corn-soup/",
             "difference": "Фарш из курицы и дополнительные ароматические компоненты"
           }
-        ]
-      }
+        ],
+        "verification_scope": "Comparison of available recipe texts, accessible pages and extracted source evidence; full independent human reading of every one of 300 URLs not certified where source blocked or unavailable. Not a recipe made in a kitchen."
+      },
+      "editorial_publication_gate": "HOLD_FOR_FINAL_SOURCE_AND_TIMER_APPROVAL"
     },
     {
       "id": 96,
@@ -5517,7 +5707,7 @@
         "картофельный крахмал 10 г",
         "зелёный лук."
       ],
-      "recipe_source_audit_status": "THREE_INDEPENDENT_RECIPE_TEXTS_COMPARED",
+      "recipe_source_audit_status": "THREE_SOURCE_COMPARISON_DOCUMENTED",
       "visual_audit_status": "PENDING",
       "photo_status": "PENDING_USER_APPROVAL",
       "source_content_evidence": {
@@ -5538,8 +5728,10 @@
             "url": "https://redhousespice.com/suan-cai-yu/",
             "difference": "Более короткая техника 10-минутного приготовления и альтернативные виды рыбы"
           }
-        ]
-      }
+        ],
+        "verification_scope": "Comparison of available recipe texts, accessible pages and extracted source evidence; full independent human reading of every one of 300 URLs not certified where source blocked or unavailable. Not a recipe made in a kitchen."
+      },
+      "editorial_publication_gate": "HOLD_FOR_FINAL_SOURCE_AND_TIMER_APPROVAL"
     },
     {
       "id": 97,
@@ -5578,7 +5770,7 @@
         "соевый соус 15 мл",
         "зелёный лук 15 г."
       ],
-      "recipe_source_audit_status": "THREE_INDEPENDENT_RECIPE_TEXTS_COMPARED",
+      "recipe_source_audit_status": "THREE_SOURCE_COMPARISON_DOCUMENTED",
       "visual_audit_status": "PENDING",
       "photo_status": "PENDING_USER_APPROVAL",
       "source_content_evidence": {
@@ -5599,8 +5791,10 @@
             "url": "https://chinesecookingdemystified.substack.com/p/hot-pepper-soup",
             "difference": "Классический длительный костный бульон, собственный глютен и 13 специй"
           }
-        ]
-      }
+        ],
+        "verification_scope": "Comparison of available recipe texts, accessible pages and extracted source evidence; full independent human reading of every one of 300 URLs not certified where source blocked or unavailable. Not a recipe made in a kitchen."
+      },
+      "editorial_publication_gate": "HOLD_FOR_FINAL_SOURCE_AND_TIMER_APPROVAL"
     },
     {
       "id": 98,
@@ -5638,7 +5832,7 @@
         "соль",
         "маринованный чеснок для подачи отдельно."
       ],
-      "recipe_source_audit_status": "THREE_INDEPENDENT_RECIPE_TEXTS_COMPARED",
+      "recipe_source_audit_status": "THREE_SOURCE_COMPARISON_DOCUMENTED",
       "visual_audit_status": "PENDING",
       "photo_status": "PENDING_USER_APPROVAL",
       "source_content_evidence": {
@@ -5659,8 +5853,10 @@
             "url": "https://thingsasian.com/node/1915.html",
             "difference": "Домашняя версия разорванной лепёшки с бараньим бульоном"
           }
-        ]
-      }
+        ],
+        "verification_scope": "Comparison of available recipe texts, accessible pages and extracted source evidence; full independent human reading of every one of 300 URLs not certified where source blocked or unavailable. Not a recipe made in a kitchen."
+      },
+      "editorial_publication_gate": "HOLD_FOR_FINAL_SOURCE_AND_TIMER_APPROVAL"
     },
     {
       "id": 99,
@@ -5697,7 +5893,7 @@
         "масло 15 мл",
         "соль, перец."
       ],
-      "recipe_source_audit_status": "THREE_INDEPENDENT_RECIPE_TEXTS_COMPARED",
+      "recipe_source_audit_status": "THREE_SOURCE_COMPARISON_DOCUMENTED",
       "visual_audit_status": "PENDING",
       "photo_status": "PENDING_USER_APPROVAL",
       "source_content_evidence": {
@@ -5718,8 +5914,10 @@
             "url": "https://www.osmancho.com/en/recipes/oz-siresinde-mal-eti-sorbasi-luosong-tang",
             "difference": "Тушение в собственном соку, без добавленной воды"
           }
-        ]
-      }
+        ],
+        "verification_scope": "Comparison of available recipe texts, accessible pages and extracted source evidence; full independent human reading of every one of 300 URLs not certified where source blocked or unavailable. Not a recipe made in a kitchen."
+      },
+      "editorial_publication_gate": "HOLD_FOR_FINAL_SOURCE_AND_TIMER_APPROVAL"
     },
     {
       "id": 100,
@@ -5751,7 +5949,7 @@
         "имбирь 15 г",
         "соль."
       ],
-      "recipe_source_audit_status": "THREE_INDEPENDENT_RECIPE_TEXTS_COMPARED",
+      "recipe_source_audit_status": "THREE_SOURCE_COMPARISON_DOCUMENTED",
       "visual_audit_status": "PENDING",
       "photo_status": "PENDING_USER_APPROVAL",
       "source_content_evidence": {
@@ -5772,8 +5970,10 @@
             "url": "https://souperdiaries.com/watercress-with-pork-ribs-soup/",
             "difference": "Водяной кресс со свиными рёбрами, длительное томление"
           }
-        ]
-      }
+        ],
+        "verification_scope": "Comparison of available recipe texts, accessible pages and extracted source evidence; full independent human reading of every one of 300 URLs not certified where source blocked or unavailable. Not a recipe made in a kitchen."
+      },
+      "editorial_publication_gate": "HOLD_FOR_FINAL_SOURCE_AND_TIMER_APPROVAL"
     }
   ]
 }
