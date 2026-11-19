@@ -21,6 +21,10 @@ jobs:
         run: node project-operations/soups/verify-world-consistency.cjs
       - name: Verify all 100 step texts match their Markdown manuscripts
         run: node project-operations/soups/verify-world-step-parity.cjs
+      - name: Validate 504 step timer phases and prevent drift
+        run: |
+          node project-operations/soups/build-world-step-timers.cjs
+          git diff --exit-code -- project-operations/soups/WORLD_100_STEP_TIMER_PHASES.json
       - name: Build standalone 100-soup editorial preview
         run: node project-operations/soups/build-world-100.cjs
       - name: Upload the 100-soup HTML preview
