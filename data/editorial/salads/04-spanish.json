@@ -28,12 +28,6 @@
           "group": "Основное"
         },
         {
-          "name": "Огурец",
-          "amount": 120,
-          "unit": "г",
-          "group": "Основное"
-        },
-        {
           "name": "Яйцо",
           "amount": 1,
           "unit": "шт.",
@@ -68,11 +62,11 @@
         {
           "title": "Свари яйцо",
           "detail": "Отвари яйцо вкрутую 9–10 минут, остуди; раздели белок и желток.",
-          "timer": 0
+          "timer": 10
         },
         {
           "title": "Нарежь",
-          "detail": "Помидоры, огурец и перец нарежь мелко, белок поруби.",
+          "detail": "Помидоры и зелёный перец нарежь мелко, белок поруби.",
           "timer": 0
         },
         {
@@ -86,13 +80,13 @@
           "timer": 0
         }
       ],
-      "tip": "Сохраняй традиционный состав и размер нарезки, не добавляй случайные украшения.",
-      "warn": "Готовый салат с яйцом или рыбой охлаждай и не держи долго при комнатной температуре.",
+      "tip": "Для соуса пипирраны отдельно разотри сваренный желток с чесноком и маслом: овощи останутся кубиками, а заправка получится густой.",
+      "warn": "Аллергены в составе: яйца, рыба.",
       "equipment": "Нож, доска, миска и необходимые для приготовления приборы",
       "tags": [
         "Испанская кухня"
       ],
-      "photoBrief": "Мелкие кубики красных томатов, зелёного перца, огурца и варёного белка, немного тунца в желтковой эмульсии; не гаспачо.",
+      "photoBrief": "Мелкие кубики красных томатов, зелёного перца и варёного белка, немного тунца в желтковой эмульсии; не гаспачо.",
       "photoStatus": "awaiting_original_photo_approval",
       "sourceReview": {
         "stage": "editorial_research",
@@ -101,7 +95,7 @@
           "https://www.degustajaen.es/recetas/pipirrana-jaen/",
           "https://www.hogarmania.com/cocina/recetas/ensaladas-verduras/pipirrana-jaen-35145.html"
         ],
-        "note": "Пропорции пересчитаны для двух порций"
+        "note": "Пропорции пересчитаны для двух порций\n2026-11-19: Canal Cocina Pipirrana de Jaén and official Degusta Jaén omit cucumber; Karlos Arguiñano recipe also includes tomato, green pepper, tuna, egg but not cucumber. The old cucumber ingredient and photo brief reflected a different generalized pipirrana variant. Removed cucumber to match Jaén-specific version."
       },
       "editorialApproval": {
         "status": "approved_by_user",
@@ -154,8 +148,13 @@
       "steps": [
         {
           "title": "Запеки перцы",
-          "detail": "Запекай сладкие перцы 25–30 минут при 220 °C до пятен на кожице, накрой на 10 минут, очисти.",
-          "timer": 0
+          "detail": "Запекай сладкие перцы при 220 °C 25–30 минут до тёмных пятен на кожице и мягкости.",
+          "timer": 30
+        },
+        {
+          "title": "Пропарь и очисти",
+          "detail": "Переложи горячие перцы в миску, накрой на 10 минут, затем сними кожицу, удалив семена.",
+          "timer": 10
         },
         {
           "title": "Раздели",
@@ -170,11 +169,11 @@
         {
           "title": "Заправь",
           "detail": "Смешай перец, треску, мелко натёртый чеснок и масло. Дай охладиться и настояться 20 минут.",
-          "timer": 0
+          "timer": 20
         }
       ],
-      "tip": "Сохраняй традиционный состав и размер нарезки, не добавляй случайные украшения.",
-      "warn": "Содержит рыбу; солёную треску используй только безопасно приготовленную и готовую к употреблению.",
+      "tip": "Снимай кожицу с перца после короткого отдыха под крышкой и разрывай мякоть руками на длинные полоски.",
+      "warn": "Аллергены в составе: рыба. Используй только правильно подготовленную и пригодную для холодной подачи вымоченную треску.",
       "equipment": "Нож, доска, миска и необходимые для приготовления приборы",
       "tags": [
         "Испанская кухня"
@@ -257,11 +256,11 @@
         {
           "title": "Дай раскрыться",
           "detail": "Оставь на 5 минут, подай сразу, пока овощи ещё хрустят.",
-          "timer": 0
+          "timer": 5
         }
       ],
-      "tip": "Сохраняй традиционный состав и размер нарезки, не добавляй случайные украшения.",
-      "warn": "Готовый салат с яйцом или рыбой охлаждай и не держи долго при комнатной температуре.",
+      "tip": "Тремпо хорош мелкой ровной нарезкой и спелыми томатами; смешай его непосредственно перед подачей, чтобы овощи не пустили слишком много сока.",
+      "warn": "Тщательно промой овощи и зелень; заправляй салат непосредственно перед подачей.",
       "equipment": "Нож, доска, миска и необходимые для приготовления приборы",
       "tags": [
         "Испанская кухня"
@@ -272,10 +271,10 @@
         "stage": "editorial_research",
         "sources": [
           "https://canalcocina.es/receta/trampo-mallorquin",
-          "https://www.recetasmallorquinas.es/2020/05/trampo-mallorquin.html",
+          "https://elpais.com/gastronomia/recetas/2018/07/11/receta/1531307233_747294.html",
           "https://diariodegastronomia.com/trampo-mallorquin-2/"
         ],
-        "note": "Пропорции пересчитаны для двух порций"
+        "note": "Пропорции пересчитаны для двух порций\n2026-11-19: El Comidista in El País describes classic mallorcan trempó tomato, green pepper, onion, olive oil and optional additions. Original recetasmallorquinas blocked by Google anti-bot."
       },
       "editorialApproval": {
         "status": "approved_by_user",
@@ -345,8 +344,8 @@
         },
         {
           "title": "Свари яйцо",
-          "detail": "Отвари вкрутую 9–10 минут и нарежь дольками.",
-          "timer": 0
+          "detail": "Отвари яйцо вкрутую за 9–10 минут, охлади и нарежь дольками.",
+          "timer": 10
         },
         {
           "title": "Подготовь апельсин",
@@ -359,8 +358,8 @@
           "timer": 0
         }
       ],
-      "tip": "Сохраняй традиционный состав и размер нарезки, не добавляй случайные украшения.",
-      "warn": "Содержит рыбу; солёную треску используй только безопасно приготовленную и готовую к употреблению.",
+      "tip": "У апельсина вырежи дольки без белых плёнок: с солёной треской они дадут чистый, не горький вкус.",
+      "warn": "Аллергены в составе: яйца, рыба. Используй только правильно подготовленную и пригодную для холодной подачи вымоченную треску.",
       "equipment": "Нож, доска, миска и необходимые для приготовления приборы",
       "tags": [
         "Испанская кухня"
@@ -460,12 +459,12 @@
         },
         {
           "title": "Соедини",
-          "detail": "Бережно смешай фасоль, треску и овощи, полей маслом с уксусом. Охлади перед подачей.",
-          "timer": 0
+          "detail": "Бережно смешай фасоль, треску и овощи, полей маслом с уксусом. Охлади в холодильнике 10 минут перед подачей.",
+          "timer": 10
         }
       ],
-      "tip": "Сохраняй традиционный состав и размер нарезки, не добавляй случайные украшения.",
-      "warn": "Готовый салат с яйцом или рыбой охлаждай и не держи долго при комнатной температуре.",
+      "tip": "Фасоль для эмпедрата тщательно обсуши, а треску раздели на хлопья; перемешивай лопаткой, чтобы сохранить форму бобов.",
+      "warn": "Аллергены в составе: рыба. Используй только правильно подготовленную и пригодную для холодной подачи вымоченную треску.",
       "equipment": "Нож, доска, миска и необходимые для приготовления приборы",
       "tags": [
         "Испанская кухня"
@@ -475,11 +474,11 @@
       "sourceReview": {
         "stage": "editorial_research",
         "sources": [
-          "https://www.catalunya.com/en/continguts/article/empedrat-26-1-1",
+          "https://www.consum.es/entrenosotros/empedrat-receta/",
           "https://www.gastroteca.cat/en/receptes/empedrat/",
-          "https://www.dia.es/recetas/receta/empedrat"
+          "https://www2.cruzroja.es/-/empedrat-ensalada-de-alubias-con-bacalao-sact-recs"
         ],
-        "note": "Empedrat подтверждён официальным Catalunya.com и Corpus de la Cuina Catalana на Gastroteca: отварная белая фасоль, вымоченная треска, томаты, лук, оливки, масло."
+        "note": "Empedrat подтверждён официальным Catalunya.com и Corpus de la Cuina Catalana на Gastroteca: отварная белая фасоль, вымоченная треска, томаты, лук, оливки, масло.\n2026-11-19: Supermarket Consum has direct detailed Empedrat: white beans, desalted cod, tomatoes, onion, peppers, black olives. Former Catalunya link returned only cookie banner with no ingredients.\n2026-11-19: Cruz Roja recipe explicitly has white beans, cod, fresh peppers, olives, onion and tomato; old Dia link redirected to generic recipe portal."
       },
       "editorialApproval": {
         "status": "approved_by_user",
@@ -492,7 +491,7 @@
       "title": "Каталонский шатó с ореховым соусом",
       "category": "salads",
       "cuisine": "Испания",
-      "minutes": 55,
+      "minutes": 70,
       "base": 2,
       "level": "Легко",
       "emoji": "🥗",
@@ -568,8 +567,8 @@
       "steps": [
         {
           "title": "Приготовь основу соуса",
-          "detail": "Размочи ньору в горячей воде около 15 минут; извлеки мякоть и измельчи её с орехами, чесноком и уксусом.",
-          "timer": 0
+          "detail": "Размочи сухую ньору в горячей воде не менее 30 минут; удали семена, извлеки мякоть и измельчи её с орехами, чесноком и уксусом. Если используешь уже готовую мякоть ньоры из банки, выдержка не нужна.",
+          "timer": 30
         },
         {
           "title": "Добавь масло",
@@ -587,8 +586,8 @@
           "timer": 0
         }
       ],
-      "tip": "Сохраняй традиционный состав и размер нарезки, не добавляй случайные украшения.",
-      "warn": "Содержит рыбу; солёную треску используй только безопасно приготовленную и готовую к употреблению.",
+      "tip": "В соусе шатó именно ньора, орехи и анчоусы создают узнаваемый вкус; сначала разотри их до однородной пасты.",
+      "warn": "Аллергены в составе: рыба, орехи. Используй только правильно подготовленную и пригодную для холодной подачи вымоченную треску.",
       "equipment": "Нож, доска, миска и необходимые для приготовления приборы",
       "tags": [
         "Испанская кухня"
@@ -602,7 +601,7 @@
           "https://www.rtve.es/television/20130826/plantilla-receta-espana-directo/743448.shtml",
           "https://www.cuina.cat/es/recetas/ensalada-xato_10182213_117.html"
         ],
-        "note": "Пропорции пересчитаны для двух порций"
+        "note": "Пропорции пересчитаны для двух порций\n2026-11-19: La Vanguardia Xató says 30min hot-water soaking for dried ñora, not previous 15min. Updated timer to 30min and total to 70min."
       },
       "editorialApproval": {
         "status": "approved_by_user",
@@ -683,11 +682,11 @@
         {
           "title": "Заправь",
           "detail": "Полей оливковым маслом, дай 10 минут настояться в холодильнике, попробуй на соль.",
-          "timer": 0
+          "timer": 10
         }
       ],
-      "tip": "Сохраняй традиционный состав и размер нарезки, не добавляй случайные украшения.",
-      "warn": "Содержит рыбу; солёную треску используй только безопасно приготовленную и готовую к употреблению.",
+      "tip": "Для эскейшады треску не режут кубиками, а разрывают пальцами на тонкие волокна, отсюда и название блюда.",
+      "warn": "Аллергены в составе: рыба. Используй только правильно подготовленную и пригодную для холодной подачи вымоченную треску.",
       "equipment": "Нож, доска, миска и необходимые для приготовления приборы",
       "tags": [
         "Испанская кухня"
@@ -698,10 +697,10 @@
         "stage": "editorial_research",
         "sources": [
           "https://www.spain.info/es/receta/esqueixada-bacalao/",
-          "https://www.viladecans.cat/es/recepta-esqueixada-de-bacalla",
-          "https://www.bonviveur.es/recetas/esqueixada-de-bacalao"
+          "https://elpais.com/gastronomia/recetas/2023-09-08/esqueixada-la-ensalada-catalana-de-bacalao-y-tomate.html",
+          "https://www.directoalpaladar.com/recetas-de-pescados-y-mariscos/esqueixada-bacalao-receta-ensalada-facil-deliciosa-para-dias-verano"
         ],
-        "note": "Классическая esqueixada соответствует испанскому туристическому порталу и муниципальному рецепту Viladecans; треску разрывают на волокна, подают с сырой нарезкой овощей."
+        "note": "Классическая esqueixada соответствует испанскому туристическому порталу и муниципальному рецепту Viladecans; треску разрывают на волокна, подают с сырой нарезкой овощей.\n2026-11-19: replaced inaccessible third source with independent Directo al Paladar Esqueixada recipe; it identifies peppers as a permissible variant and shows torn desalinated cod with tomatoes and onion. The exact use of peppers is an editorial Catalan variant, not mandatory for every Esqueixada.\n2026-11-19: El País Esqueixada details cod shredded and desalted, tomato and black olives, with peppers and onion optional. Old Viladecans not accessible for audit."
       },
       "editorialApproval": {
         "status": "approved_by_user",
@@ -777,9 +776,14 @@
       ],
       "steps": [
         {
-          "title": "Свари продукты",
-          "detail": "Картофель до мягкости 20–25 минут, яйца вкрутую 9–10 минут, затем остуди и очисти.",
-          "timer": 0
+          "title": "Отвари картофель",
+          "detail": "Отвари картофель в кожуре до мягкости за 20–25 минут, остуди и очисти.",
+          "timer": 25
+        },
+        {
+          "title": "Отвари яйца",
+          "detail": "Отвари яйца вкрутую за 9–10 минут, охлади и очисти.",
+          "timer": 10
         },
         {
           "title": "Нарежь овощи",
@@ -797,8 +801,8 @@
           "timer": 0
         }
       ],
-      "tip": "Сохраняй традиционный состав и размер нарезки, не добавляй случайные украшения.",
-      "warn": "Готовый салат с яйцом или рыбой охлаждай и не держи долго при комнатной температуре.",
+      "tip": "Картофель для ensalada campera должен держать форму: не переваривай и заправляй уже нарезанные тёплые ломтики.",
+      "warn": "Аллергены в составе: яйца, рыба.",
       "equipment": "Нож, доска, миска и необходимые для приготовления приборы",
       "tags": [
         "Испанская кухня"
@@ -872,7 +876,7 @@
         {
           "title": "Свари яйца",
           "detail": "Отвари яйца вкрутую 9–10 минут, остуди и нарежь на четвертинки.",
-          "timer": 0
+          "timer": 10
         },
         {
           "title": "Подготовь томаты",
@@ -887,11 +891,11 @@
         {
           "title": "Заправь",
           "detail": "Соедини томаты, лук, тунец и чёрные оливки с маслом, дай 10 минут настояться, укрась дольками яиц.",
-          "timer": 0
+          "timer": 10
         }
       ],
-      "tip": "Сохраняй традиционный состав и размер нарезки, не добавляй случайные украшения.",
-      "warn": "Готовый салат с яйцом или рыбой охлаждай и не держи долго при комнатной температуре.",
+      "tip": "Для мурсийского салата используй качественные очищенные консервированные томаты, а не свежую томатную сальсу.",
+      "warn": "Аллергены в составе: яйца, рыба.",
       "equipment": "Нож, доска, миска и необходимые для приготовления приборы",
       "tags": [
         "Испанская кухня"
@@ -902,10 +906,10 @@
         "stage": "editorial_research",
         "sources": [
           "https://www.spain.info/es/receta/mojete-murciano/",
-          "https://www.directoalpaladar.com/recetas-de-ensaladas/ensalada-murciana-receta",
+          "https://www.aceitunastorrent.com/recetas/ensalada-murciana-tradicional-receta-facil-fresca-y-con-tradicion/",
           "https://www.bonviveur.es/recetas/ensalada-murciana"
         ],
-        "note": "Пропорции пересчитаны для двух порций"
+        "note": "Пропорции пересчитаны для двух порций\n2026-11-19: Replaced inaccessible DirectoAlPaladar slug with Murcian olive producer recipe using canned tomato, tuna, eggs, onion, black olives, olive oil."
       },
       "editorialApproval": {
         "status": "approved_by_user",
@@ -971,7 +975,7 @@
         {
           "title": "Свари яйца",
           "detail": "Отвари яйца вкрутую 9–10 минут, остуди и разрежь дольками.",
-          "timer": 0
+          "timer": 10
         },
         {
           "title": "Подготовь листья",
@@ -989,8 +993,8 @@
           "timer": 0
         }
       ],
-      "tip": "Сохраняй традиционный состав и размер нарезки, не добавляй случайные украшения.",
-      "warn": "Готовый салат с яйцом или рыбой охлаждай и не держи долго при комнатной температуре.",
+      "tip": "Листья латука перед сборкой полностью обсуши, иначе масло с уксусом останется на дне салатницы.",
+      "warn": "Аллергены в составе: яйца, рыба.",
       "equipment": "Нож, доска, миска и необходимые для приготовления приборы",
       "tags": [
         "Испанская кухня"
