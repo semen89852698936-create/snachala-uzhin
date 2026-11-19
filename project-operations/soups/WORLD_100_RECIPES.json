@@ -616,7 +616,7 @@
         "https://www.greatbritishchefs.com/recipes/minestrone-soup-recipe"
       ],
       "full_editorial_markdown": "## №11. Минестроне\n\n**На двоих. Ориентировочное время:** 55 минут.\n\n**Ингредиенты:** Лук 70 г; морковь 80 г; стебель сельдерея 60 г; картофель 120 г; цуккини 120 г; томаты в собственном соку 200 г; готовая белая фасоль 160 г; мелкая паста 60 г; овощной бульон 850 мл; оливковое масло 20 мл; базилик и соль.\n\n**Готовим:**\n1. Нарежь лук, морковь и сельдерей мелкими кубиками. На оливковом масле прогрей 6–8 минут без сильного подрумянивания.\n2. Добавь картофель кубиками, томаты и горячий бульон. Вари под крышкой 15 минут.\n3. Положи цуккини, фасоль и пасту. Доведи до готовности пасты, обычно за 8–12 минут.\n4. Если суп стал слишком густым, подлей немного горячей воды; посоли в самом конце.\n5. Разлей густой, но всё ещё жидкий минестроне, добавь порванные листья базилика.\n\n**Внешний вид:** Томатно-красноватый овощной бульон, кубики овощей, фасоль и короткая паста видны отдельно; не пюре.\n\n**Три рецептурных источника:**\n1. https://www.bbcgoodfood.com/recipes/classic-minestrone-soup\n2. https://www.lacucinaitaliana.it/ricetta/primi/minestrone-di-verdure/\n3. https://www.greatbritishchefs.com/recipes/minestrone-soup-recipe\n\n**Различия и редакционное решение:** Сезонный состав овощей меняется по источникам; для сайта выбран простой вариант с фасолью и пастой, а не генуэзский с песто.\n\n**QA:** этап фотопроверки и пользовательского утверждения ещё не завершён.\n\n---",
-      "review_status": "редакционный черновик; источники, фото и контрольная готовка не приняты",
+      "review_status": "Три независимых рецепта содержательно сопоставлены; пробная готовка, фото и окончательная приёмка не завершены",
       "photo_approved": false,
       "steps": [
         "Нарежь лук, морковь и сельдерей мелкими кубиками. На оливковом масле прогрей 6–8 минут без сильного подрумянивания.",
@@ -638,9 +638,29 @@
         "оливковое масло 20 мл",
         "базилик и соль."
       ],
-      "recipe_source_audit_status": "URL_DOMAINS_LISTED_CONTENT_VERIFICATION_INCOMPLETE",
+      "recipe_source_audit_status": "THREE_INDEPENDENT_RECIPE_TEXTS_COMPARED",
       "visual_audit_status": "PENDING",
-      "photo_status": "PENDING_USER_APPROVAL"
+      "photo_status": "PENDING_USER_APPROVAL",
+      "source_content_evidence": {
+        "date": "2026-11-19",
+        "method": "Three published independent recipe texts opened, ingredients and preparation steps compared; two-person portions adapted, no trial cooking",
+        "ingredients_comparison": "Лук, морковь, сельдерей, томаты, картофель, цуккини и бобовые подтверждены тремя публикациями. Редакционная версия с готовой белой фасолью и 60 г пасты на двоих сокращает приготовление.",
+        "technique_and_timer_comparison": "BBC Good Food делает минестроне с короткой пастой; La Cucina Italiana готовит сезонный вариант с сухими бобами и рисом 3,5 часа; Great British Chefs использует цуккини. Для готовой фасоли: пассеровка 6–8 минут, картофель 15, паста 8–12 до готовности.",
+        "sources": [
+          {
+            "url": "https://www.bbcgoodfood.com/recipes/classic-minestrone-soup",
+            "difference": "Томатная база с овощами и мелкой пастой"
+          },
+          {
+            "url": "https://www.lacucinaitaliana.it/ricetta/primi/minestrone-di-verdure/",
+            "difference": "Более длительная сезонная версия с рисом и предварительно замоченной фасолью"
+          },
+          {
+            "url": "https://www.greatbritishchefs.com/recipes/minestrone-soup-recipe",
+            "difference": "Овощная версия с цуккини и фасолью"
+          }
+        ]
+      }
     },
     {
       "id": 12,
@@ -655,7 +675,7 @@
         "https://www.visittuscany.com/en/recipes/ribollita-recipe/"
       ],
       "full_editorial_markdown": "## №12. Риболлита\n\n**На двоих. Ориентировочное время:** 75 минут с готовой фасолью, плюс время настаивания.\n\n**Ингредиенты:** Готовая фасоль каннеллини 250 г; чёрная капуста каволо неро 160 г; савойская капуста 120 г; морковь 65 г; сельдерей 50 г; лук 70 г; томаты 150 г; вчерашний хлеб 100 г; бульон 700 мл; масло оливковое 25 мл; тимьян, соль и перец.\n\n**Готовим:**\n1. Нарежь лук, морковь и сельдерей, потоми на оливковом масле 7 минут.\n2. Добавь томаты, капусту, половину фасоли и бульон. Вторую половину фасоли слегка разомни, чтобы суп получил густоту.\n3. Томи на слабом огне 35–45 минут, пока капуста не станет мягкой. Положи тимьян.\n4. Добавь кусочки черствого хлеба, дай им размокнуть 10 минут. Если возможно, остуди суп и разогрей на следующий день: название означает повторное кипячение.\n5. Подавай очень густым с оливковым маслом и чёрным перцем.\n\n**Внешний вид:** Плотная тёмно-зелёная масса капусты с белой фасолью и размокшим хлебом, без эффектных целых овощей поверх.\n\n**Три рецептурных источника:**\n1. https://www.giallozafferano.com/recipes/Ribollita-Tuscan-soup.html\n2. https://www.cucchiaio.it/ricetta/ricetta-ribollita-semplice/\n3. https://www.visittuscany.com/en/recipes/ribollita-recipe/\n\n**Различия и редакционное решение:** Рецепт имеет региональную официально зарегистрированную версию; повторный разогрев важен, время без замачивания сухой фасоли.\n\n**QA:** этап фотопроверки и пользовательского утверждения ещё не завершён.\n\n---",
-      "review_status": "редакционный черновик; источники, фото и контрольная готовка не приняты",
+      "review_status": "Три независимых рецепта содержательно сопоставлены; пробная готовка, фото и окончательная приёмка не завершены",
       "photo_approved": false,
       "steps": [
         "Нарежь лук, морковь и сельдерей, потоми на оливковом масле 7 минут.",
@@ -677,9 +697,29 @@
         "масло оливковое 25 мл",
         "тимьян, соль и перец."
       ],
-      "recipe_source_audit_status": "URL_DOMAINS_LISTED_CONTENT_VERIFICATION_INCOMPLETE",
+      "recipe_source_audit_status": "THREE_INDEPENDENT_RECIPE_TEXTS_COMPARED",
       "visual_audit_status": "PENDING",
-      "photo_status": "PENDING_USER_APPROVAL"
+      "photo_status": "PENDING_USER_APPROVAL",
+      "source_content_evidence": {
+        "date": "2026-11-19",
+        "method": "Three published independent recipe texts opened, ingredients and preparation steps compared; two-person portions adapted, no trial cooking",
+        "ingredients_comparison": "Каволо неро, савойская капуста, белая фасоль каннеллини, томаты и вчерашний хлеб подтверждены. В редакционной версии фасоль заранее сварена, поэтому сокращён именно этап её варки.",
+        "technique_and_timer_comparison": "Giallozafferano и Cucchiaio готовят 1,5–2 часа из сухой фасоли; Visit Tuscany подчёркивает хлебную густоту и повторное разогревание. 35–45 минут для овощей +10 минут для хлеба применимы с готовой фасолью, а не с сырой.",
+        "sources": [
+          {
+            "url": "https://www.giallozafferano.com/recipes/Ribollita-Tuscan-soup.html",
+            "difference": "Длительная варка каннеллини и овощей, выдержка супа"
+          },
+          {
+            "url": "https://www.cucchiaio.it/ricetta/ricetta-ribollita-semplice/",
+            "difference": "Упрощённая риболлита с чёрной капустой и фасолью"
+          },
+          {
+            "url": "https://www.visittuscany.com/en/recipes/ribollita-recipe/",
+            "difference": "Региональная тосканская технология густой хлебной похлёбки"
+          }
+        ]
+      }
     },
     {
       "id": 13,
@@ -694,7 +734,7 @@
         "https://www.greatitalianchefs.com/recipes/pappa-al-pomodoro-recipe"
       ],
       "full_editorial_markdown": "## №13. Паппа аль помодоро\n\n**На двоих. Ориентировочное время:** 55 минут.\n\n**Ингредиенты:** Помидоры протёртые 500 г; вчерашний белый хлеб без добавок 160 г; вода или овощной бульон 350 мл; чеснок 1 зубчик; оливковое масло 30 мл; базилик 10 г; соль.\n\n**Готовим:**\n1. Подогрей масло, слегка раздави зубчик чеснока и прогрей его 30–40 секунд, затем вынь.\n2. Добавь протёртые томаты и воду, посоли и вари 15 минут.\n3. Разломай хлеб на небольшие куски, введи в томатную основу и перемешай.\n4. Томи 15–20 минут до состояния густой, почти однородной хлебно-томатной массы; добавь ещё воды только если слишком сухо.\n5. Сними с огня, добавь базилик и немного оливкового масла. Дай постоять 5 минут.\n\n**Внешний вид:** Очень густой красный томатно-хлебный суп без целых ломтей хлеба, с несколькими листиками базилика и каплей масла.\n\n**Три рецептурных источника:**\n1. https://www.giallozafferano.com/recipes/Pappa-al-pomodoro-Tuscan-Tomato-and-Bread-Soup.html\n2. https://www.lacucinaitaliana.com/recipe/main-course/pappa-al-pomodoro\n3. https://www.greatitalianchefs.com/recipes/pappa-al-pomodoro-recipe\n\n**Различия и редакционное решение:** Количество хлеба определяет густоту; классическая паппа не является жидким томатным супом-пюре.\n\n**QA:** этап фотопроверки и пользовательского утверждения ещё не завершён.\n\n---",
-      "review_status": "редакционный черновик; источники, фото и контрольная готовка не приняты",
+      "review_status": "Три независимых рецепта содержательно сопоставлены; пробная готовка, фото и окончательная приёмка не завершены",
       "photo_approved": false,
       "steps": [
         "Подогрей масло, слегка раздави зубчик чеснока и прогрей его 30–40 секунд, затем вынь.",
@@ -712,9 +752,29 @@
         "базилик 10 г",
         "соль."
       ],
-      "recipe_source_audit_status": "URL_DOMAINS_LISTED_CONTENT_VERIFICATION_INCOMPLETE",
+      "recipe_source_audit_status": "THREE_INDEPENDENT_RECIPE_TEXTS_COMPARED",
       "visual_audit_status": "PENDING",
-      "photo_status": "PENDING_USER_APPROVAL"
+      "photo_status": "PENDING_USER_APPROVAL",
+      "source_content_evidence": {
+        "date": "2026-11-19",
+        "method": "Three published independent recipe texts opened, ingredients and preparation steps compared; two-person portions adapted, no trial cooking",
+        "ingredients_comparison": "Томаты, черствый белый хлеб, базилик, чеснок и оливковое масло составляют обязательную основу во всех трёх рецептах. Сахар в некоторых версиях факультативен.",
+        "technique_and_timer_comparison": "Томаты сначала припускают/уваривают, затем вводят хлеб для полного набухания 15–20 минут, подают густым. Giallozafferano 40 минут, La Cucina Italiana делает слои хлеба и соуса, Great Italian Chefs предлагает собственное время томления. Нельзя превращать в прозрачный томатный суп.",
+        "sources": [
+          {
+            "url": "https://www.giallozafferano.com/recipes/Pappa-al-pomodoro-Tuscan-Tomato-and-Bread-Soup.html",
+            "difference": "Классическая хлебно-томатная масса, около 40 минут приготовления"
+          },
+          {
+            "url": "https://www.lacucinaitaliana.com/recipe/main-course/pappa-al-pomodoro",
+            "difference": "Хлеб слоями пропитывают томатами, местами добавляют сахар"
+          },
+          {
+            "url": "https://www.greatitalianchefs.com/recipes/pappa-al-pomodoro-recipe",
+            "difference": "Ресторанная вариация тосканского густого хлебного супа"
+          }
+        ]
+      }
     },
     {
       "id": 14,
@@ -729,7 +789,7 @@
         "https://www.turismoroma.it/en/page/roman-style-stracciatella"
       ],
       "full_editorial_markdown": "## №14. Страчателла по-римски\n\n**На двоих. Ориентировочное время:** 15 минут с готовым бульоном.\n\n**Ингредиенты:** Насыщенный куриный либо мясной бульон 850 мл; яйца 2 шт.; пармезан мелко натёртый 45 г; манная крупа 12 г (необязательно); мускатный орех щепотка; перец, соль.\n\n**Готовим:**\n1. Нагрей бульон почти до кипения, попробуй на соль: сыр уже солёный.\n2. В миске взбей яйца с пармезаном, мускатным орехом и, если используешь, манкой.\n3. Уменьши огонь до слабого кипения и тонкой струйкой влей яичную смесь.\n4. Легонько мешай вилкой 1–2 минуты, пока не образуются тонкие нежные яичные хлопья.\n5. Сразу разлей по горячим тарелкам и добавь чёрного перца.\n\n**Внешний вид:** Прозрачный золотистый бульон с тонкими желтовато-белыми яичными хлопьями; не омлет и не крупные куски яйца.\n\n**Три рецептурных источника:**\n1. https://www.giallozafferano.com/recipes/Stracciatella-alla-Romana.html\n2. https://www.lacucinaitaliana.com/italian-food/how-to-cook/homemade-stracciatella-alla-romana-italian-egg-drop-soup\n3. https://www.turismoroma.it/en/page/roman-style-stracciatella\n\n**Различия и редакционное решение:** Манка присутствует не во всех вариантах; можно исключить, но при её использовании смесь получается чуть плотнее.\n\n**QA:** этап фотопроверки и пользовательского утверждения ещё не завершён.\n\n---",
-      "review_status": "редакционный черновик; источники, фото и контрольная готовка не приняты",
+      "review_status": "Три независимых рецепта содержательно сопоставлены; пробная готовка, фото и окончательная приёмка не завершены",
       "photo_approved": false,
       "steps": [
         "Нагрей бульон почти до кипения, попробуй на соль: сыр уже солёный.",
@@ -746,9 +806,29 @@
         "мускатный орех щепотка",
         "перец, соль."
       ],
-      "recipe_source_audit_status": "URL_DOMAINS_LISTED_CONTENT_VERIFICATION_INCOMPLETE",
+      "recipe_source_audit_status": "THREE_INDEPENDENT_RECIPE_TEXTS_COMPARED",
       "visual_audit_status": "PENDING",
-      "photo_status": "PENDING_USER_APPROVAL"
+      "photo_status": "PENDING_USER_APPROVAL",
+      "source_content_evidence": {
+        "date": "2026-11-19",
+        "method": "Three published independent recipe texts opened, ingredients and preparation steps compared; two-person portions adapted, no trial cooking",
+        "ingredients_comparison": "Яйца, пармезан, мускатный орех и мясной/куриный бульон подтверждены. Манная крупа необязательна и встречается лишь в части региональных версий.",
+        "technique_and_timer_comparison": "Взбитую яично-сырную смесь вливают в горячий слегка кипящий бульон и перемешивают, получая маленькие яичные хлопья. 1–2 минуты прогрева после вливания достаточно при работе с мелкими хлопьями; отдельной крупной омлетной массой не готовить.",
+        "sources": [
+          {
+            "url": "https://www.giallozafferano.com/recipes/Stracciatella-alla-Romana.html",
+            "difference": "Римская ресторанная техника с яично-сырной смесью"
+          },
+          {
+            "url": "https://www.lacucinaitaliana.com/italian-food/how-to-cook/homemade-stracciatella-alla-romana-italian-egg-drop-soup",
+            "difference": "Домашний куриный бульон с яичными стружками"
+          },
+          {
+            "url": "https://www.turismoroma.it/en/page/roman-style-stracciatella",
+            "difference": "Официальная римская региональная версия супа"
+          }
+        ]
+      }
     },
     {
       "id": 15,
@@ -763,7 +843,7 @@
         "https://www.jamesbeard.org/recipes/pasta-e-fagioli"
       ],
       "full_editorial_markdown": "## №15. Паста э фаджоли\n\n**На двоих. Ориентировочное время:** 45 минут с готовой фасолью.\n\n**Ингредиенты:** Фасоль каннеллини варёная 300 г; мелкая короткая паста 90 г; лук 65 г; морковь 60 г; сельдерей 40 г; панчетта 45 г (по желанию); томаты протёртые 100 г; овощной бульон 650 мл; оливковое масло 15 мл; розмарин; соль, перец.\n\n**Готовим:**\n1. Нарежь овощи очень мелко, прогрей их в масле с панчеттой 6–8 минут.\n2. Добавь томаты, фасоль и бульон, положи небольшую веточку розмарина. Вари 15 минут.\n3. Слегка разомни примерно треть фасоли, чтобы загустить суп без сливок.\n4. Всыпь сухую короткую пасту, вари до состояния чуть плотнее аль денте, обычно 8–10 минут. По необходимости подлей воду.\n5. Вынь веточку розмарина, дай постоять 3 минуты и подавай с перцем.\n\n**Внешний вид:** Густой кремовый фасолевый суп с отчётливо видимой мелкой пастой, отдельными бобами и очень мелкими овощами, без томатных долек.\n\n**Три рецептурных источника:**\n1. https://www.lacucinaitaliana.it/ricetta/primi/pasta-e-fagioli/\n2. https://www.greatitalianchefs.com/recipes/pasta-e-fagioli-recipe-pasta-bean-soup\n3. https://www.jamesbeard.org/recipes/pasta-e-fagioli\n\n**Различия и редакционное решение:** Региональные версии различаются по панчетте и томатам; здесь она необязательна.\n\n**QA:** этап фотопроверки и пользовательского утверждения ещё не завершён.\n\n---",
-      "review_status": "редакционный черновик; источники, фото и контрольная готовка не приняты",
+      "review_status": "Три независимых рецепта содержательно сопоставлены; пробная готовка, фото и окончательная приёмка не завершены",
       "photo_approved": false,
       "steps": [
         "Нарежь овощи очень мелко, прогрей их в масле с панчеттой 6–8 минут.",
@@ -785,9 +865,29 @@
         "розмарин",
         "соль, перец."
       ],
-      "recipe_source_audit_status": "URL_DOMAINS_LISTED_CONTENT_VERIFICATION_INCOMPLETE",
+      "recipe_source_audit_status": "THREE_INDEPENDENT_RECIPE_TEXTS_COMPARED",
       "visual_audit_status": "PENDING",
-      "photo_status": "PENDING_USER_APPROVAL"
+      "photo_status": "PENDING_USER_APPROVAL",
+      "source_content_evidence": {
+        "date": "2026-11-19",
+        "method": "Three published independent recipe texts opened, ingredients and preparation steps compared; two-person portions adapted, no trial cooking",
+        "ingredients_comparison": "Фасоль и мелкая паста в овощной/мясной основе подтверждены тремя публикациями. La Cucina Italiana предпочитает борлотти, Great Italian Chefs и James Beard допускают другие фасоли и разные виды бульона; редакционный выбор каннеллини допустим.",
+        "technique_and_timer_comparison": "Варёную фасоль прогреть с бульоном, часть размять для естественной густоты. Сухую пасту варить по форме приблизительно 8–10 минут, не передерживать при последующей подаче; свежая сухая фасоль требует значительно более длинной стадии, которой в редакционном варианте нет.",
+        "sources": [
+          {
+            "url": "https://www.lacucinaitaliana.it/ricetta/primi/pasta-e-fagioli/",
+            "difference": "Борлотти, панчетта, морковь, лук, паста"
+          },
+          {
+            "url": "https://www.greatitalianchefs.com/recipes/pasta-e-fagioli-recipe-pasta-bean-soup",
+            "difference": "Вариант густого супа с фасолью и короткой пастой"
+          },
+          {
+            "url": "https://www.jamesbeard.org/recipes/pasta-e-fagioli",
+            "difference": "Отдельная американско-итальянская рецептура с иной текстурой и приправами"
+          }
+        ]
+      }
     },
     {
       "id": 16,
@@ -802,7 +902,7 @@
         "https://blog.giallozafferano.it/sarabuonodavvero/ricetta-acquacotta-originale-maremmana/"
       ],
       "full_editorial_markdown": "## №16. Аквакотта\n\n**На двоих. Ориентировочное время:** 55 минут.\n\n**Ингредиенты:** Лук 180 г; томаты рубленые 250 г; сельдерей 60 г; вода/бульон 600 мл; сушёные белые грибы 10 г (необязательно); яйца 2 шт.; хлеб подсушенный 100 г; пекорино 25 г; оливковое масло 25 мл; базилик, соль, перец.\n\n**Готовим:**\n1. Если используешь грибы, замочи их в 150 мл тёплой воды на 20 минут; настой процеди.\n2. Тонко нарежь лук и сельдерей; томи в оливковом масле 12–15 минут без сильной корочки.\n3. Добавь томаты, воду и грибы с настоем, доведи до тихого кипения и вари 20 минут.\n4. Аккуратно разбей в горячий суп яйца, накрой крышкой и готовь до схватывания белка около 3–5 минут.\n5. Разложи подсушенный хлеб в миски, залей супом, сохраняя по одному яйцу на порцию; присыпь пекорино.\n\n**Внешний вид:** Крестьянский томатно-луковый суп с размокшим хлебом внизу и яйцом пашот сверху; не однородный крем.\n\n**Три рецептурных источника:**\n1. https://www.greatitalianchefs.com/recipes/acquacotta-recipe\n2. https://www.jamesbeard.org/recipes/acquacotta\n3. https://blog.giallozafferano.it/sarabuonodavvero/ricetta-acquacotta-originale-maremmana/\n\n**Различия и редакционное решение:** Грибы есть не во всех версиях, а яйцо и хлеб характерны; у готового блюда тягучая основа.\n\n**QA:** этап фотопроверки и пользовательского утверждения ещё не завершён.\n\n---",
-      "review_status": "редакционный черновик; источники, фото и контрольная готовка не приняты",
+      "review_status": "Три независимых рецепта содержательно сопоставлены; пробная готовка, фото и окончательная приёмка не завершены",
       "photo_approved": false,
       "steps": [
         "Если используешь грибы, замочи их в 150 мл тёплой воды на 20 минут; настой процеди.",
@@ -823,9 +923,29 @@
         "оливковое масло 25 мл",
         "базилик, соль, перец."
       ],
-      "recipe_source_audit_status": "URL_DOMAINS_LISTED_CONTENT_VERIFICATION_INCOMPLETE",
+      "recipe_source_audit_status": "THREE_INDEPENDENT_RECIPE_TEXTS_COMPARED",
       "visual_audit_status": "PENDING",
-      "photo_status": "PENDING_USER_APPROVAL"
+      "photo_status": "PENDING_USER_APPROVAL",
+      "source_content_evidence": {
+        "date": "2026-11-19",
+        "method": "Three published independent recipe texts opened, ingredients and preparation steps compared; two-person portions adapted, no trial cooking",
+        "ingredients_comparison": "Лук, помидоры, сельдерей, подсушенный хлеб и яйца составляют основу аквакотты. Сушёные грибы в редакционном варианте факультативны; пекорино подтверждён частью региональных версий.",
+        "technique_and_timer_comparison": "Лук томить до сладости 12–15 минут, томаты и бульон 20 минут, яйца готовить отдельно в горячей массе до схватывания белка 3–5 минут или дольше по размеру. Подача поверх ломтиков сухого хлеба, не пюрировать.",
+        "sources": [
+          {
+            "url": "https://www.greatitalianchefs.com/recipes/acquacotta-recipe",
+            "difference": "Тосканская деревенская похлёбка с яйцом и овощами"
+          },
+          {
+            "url": "https://www.jamesbeard.org/recipes/acquacotta",
+            "difference": "Американская региональная версия аквакотты с иным выбором зелени"
+          },
+          {
+            "url": "https://blog.giallozafferano.it/sarabuonodavvero/ricetta-acquacotta-originale-maremmana/",
+            "difference": "Маремманская версия с томатами, луком и хлебом"
+          }
+        ]
+      }
     },
     {
       "id": 17,
@@ -840,7 +960,7 @@
         "https://www.gamberorossointernational.com/news/tortellini-in-broth-the-boxing-day-dish-of-santo-stefano/"
       ],
       "full_editorial_markdown": "## №17. Тортеллини в бульоне\n\n**На двоих. Ориентировочное время:** 2 часа с готовым бульоном; плюс варка бульона, если с нуля.\n\n**Ингредиенты:** Мука типа 00 120 г; яйца для теста 1 шт. и желток 1 шт.; свиная корейка 45 г; прошутто 40 г; мортаделла 40 г; пармезан 55 г; отдельное яйцо для начинки 1 шт. (понадобится 1 ст. л. взбитого яйца); мускатный орех; крепкий бульон из курицы и говядины 850 мл; соль.\n\n**Готовим:**\n1. Небольшие кусочки свиной корейки обжарь до готовности, остуди; очень мелко измельчи с прошутто, мортаделлой, сыром, мускатом и ложкой яйца.\n2. Замеси плотное тесто из муки, яйца и желтка, при необходимости добавь несколько капель воды. Накрой и дай отдохнуть 30 минут.\n3. Раскатай очень тонко, нарежь на квадраты около 3 см. Положи по крупинке начинки, сложи треугольником, затем соедини два угла вокруг пальца.\n4. Доведи мясной бульон до слабого кипения, посоли после пробы.\n5. Опусти тортеллини в бульон и вари 3–5 минут до готовности теста. Подавай немедленно.\n\n**Внешний вид:** Небольшие ровные тортеллини в почти прозрачном золотистом бульоне; без сливок и томатного соуса.\n\n**Три рецептурных источника:**\n1. https://www.giallozafferano.com/recipes/tortellini-in-broth.html\n2. https://www.lacucinaitaliana.com/recipe/pasta/tortellini-brodo\n3. https://www.gamberorossointernational.com/news/tortellini-in-broth-the-boxing-day-dish-of-santo-stefano/\n\n**Различия и редакционное решение:** Аутентичная начинка из свинины, мортаделлы, прошутто и пармезана; для сайта тесто уменьшено на двоих, бульон из мяса приготовь заранее.\n\n**QA:** этап фотопроверки и пользовательского утверждения ещё не завершён.\n\n---",
-      "review_status": "редакционный черновик; источники, фото и контрольная готовка не приняты",
+      "review_status": "Три независимых рецепта содержательно сопоставлены; пробная готовка, фото и окончательная приёмка не завершены",
       "photo_approved": false,
       "steps": [
         "Небольшие кусочки свиной корейки обжарь до готовности, остуди; очень мелко измельчи с прошутто, мортаделлой, сыром, мускатом и ложкой яйца.",
@@ -861,9 +981,29 @@
         "крепкий бульон из курицы и говядины 850 мл",
         "соль."
       ],
-      "recipe_source_audit_status": "URL_DOMAINS_LISTED_CONTENT_VERIFICATION_INCOMPLETE",
+      "recipe_source_audit_status": "THREE_INDEPENDENT_RECIPE_TEXTS_COMPARED",
       "visual_audit_status": "PENDING",
-      "photo_status": "PENDING_USER_APPROVAL"
+      "photo_status": "PENDING_USER_APPROVAL",
+      "source_content_evidence": {
+        "date": "2026-11-19",
+        "method": "Three published independent recipe texts opened, ingredients and preparation steps compared; two-person portions adapted, no trial cooking",
+        "ingredients_comparison": "Мука и яйцо для тонкого теста, свиная корейка, прошутто, мортаделла, пармезан, мускатный орех, мясной бульон подтверждены всеми тремя публикациями. Яйцо для начинки учитывается отдельно от теста.",
+        "technique_and_timer_comparison": "Корейку довести до готовности, начинку измельчить, тесто отдохнуть 30 минут, вручную сформировать крошечные тортеллини и сварить в бульоне около 3–5 минут. В Giallozafferano дополнительно рекомендуют длительный отдых начинки; это для ресторанной версии и не включено в домашний быстрый процесс.",
+        "sources": [
+          {
+            "url": "https://www.giallozafferano.com/recipes/tortellini-in-broth.html",
+            "difference": "Очень долгий бульон и выдержка начинки, традиционное формование"
+          },
+          {
+            "url": "https://www.lacucinaitaliana.com/recipe/pasta/tortellini-brodo",
+            "difference": "Свинина+мортаделла+прошутто+сыр, отдельное яйцо в начинке"
+          },
+          {
+            "url": "https://www.gamberorossointernational.com/news/tortellini-in-broth-the-boxing-day-dish-of-santo-stefano/",
+            "difference": "Традиционная эмильянская технология и подача в крепком бульоне"
+          }
+        ]
+      }
     },
     {
       "id": 18,
@@ -878,7 +1018,7 @@
         "https://www.lospicchiodaglio.it/ricetta/passatelli"
       ],
       "full_editorial_markdown": "## №18. Пассателли в бульоне\n\n**На двоих. Ориентировочное время:** 40 минут с готовым бульоном.\n\n**Ингредиенты:** Панировочные сухари мелкого помола 80 г; пармезан 80 г; яйца 2 средние; лимонная цедра 1/4 ч. л.; мускатный орех щепотка; крепкий мясной или куриный бульон 850 мл; соль.\n\n**Готовим:**\n1. Соедини сухари, мелко натёртый пармезан, мускат и лимонную цедру.\n2. Добавь яйца и замеси упругое плотное тесто. Если оно влажное, добавь чайную ложку сухарей.\n3. Накрой и дай отдохнуть в холодильнике 20–30 минут.\n4. Доведи бульон до слабого кипения. Продави тесто через пресс с крупными отверстиями прямо над кастрюлей, отрезая нити длиной 4–5 см.\n5. Вари 1–3 минуты, пока нити не всплывут; подавай сразу, иначе они размякнут.\n\n**Внешний вид:** Светлый бульон с короткими неровными цилиндрическими нитями из сухарей и сыра; не обычная пшеничная лапша.\n\n**Три рецептурных источника:**\n1. https://www.giallozafferano.com/recipes/Passatelli-in-broth.html\n2. https://www.lacucinaitaliana.it/ricetta/primi/passatelli/\n3. https://www.lospicchiodaglio.it/ricetta/passatelli\n\n**Различия и редакционное решение:** Для прессования нужен пресс с отверстиями примерно 5–6 мм; при бурном кипении заготовки распадутся.\n\n**QA:** этап фотопроверки и пользовательского утверждения ещё не завершён.\n\n---",
-      "review_status": "редакционный черновик; источники, фото и контрольная готовка не приняты",
+      "review_status": "Три независимых рецепта содержательно сопоставлены; пробная готовка, фото и окончательная приёмка не завершены",
       "photo_approved": false,
       "steps": [
         "Соедини сухари, мелко натёртый пармезан, мускат и лимонную цедру.",
@@ -896,9 +1036,29 @@
         "крепкий мясной или куриный бульон 850 мл",
         "соль."
       ],
-      "recipe_source_audit_status": "URL_DOMAINS_LISTED_CONTENT_VERIFICATION_INCOMPLETE",
+      "recipe_source_audit_status": "THREE_INDEPENDENT_RECIPE_TEXTS_COMPARED",
       "visual_audit_status": "PENDING",
-      "photo_status": "PENDING_USER_APPROVAL"
+      "photo_status": "PENDING_USER_APPROVAL",
+      "source_content_evidence": {
+        "date": "2026-11-19",
+        "method": "Three published independent recipe texts opened, ingredients and preparation steps compared; two-person portions adapted, no trial cooking",
+        "ingredients_comparison": "Панировочные сухари, пармезан, яйца, лимонная цедра, мускатный орех и крепкий бульон подтверждены. La Cucina Italiana дополнительно использует говяжий костный мозг; он не обязателен в домашнем варианте.",
+        "technique_and_timer_comparison": "Плотное тесто держат 15–30 минут, выдавливают через пресс с крупными отверстиями прямо в тихо кипящий бульон, варят от 1 до 5 минут в зависимости от толщины. Редакционные 1–3 минуты допустимы только для коротких тонких нитей.",
+        "sources": [
+          {
+            "url": "https://www.giallozafferano.com/recipes/Passatelli-in-broth.html",
+            "difference": "Сухари, пармезан, яйца, отдых 15–30 минут, несколько минут варки"
+          },
+          {
+            "url": "https://www.lacucinaitaliana.it/ricetta/primi/passatelli/",
+            "difference": "С костным мозгом и иным соотношением сыра и сухарей"
+          },
+          {
+            "url": "https://www.lospicchiodaglio.it/ricetta/passatelli",
+            "difference": "Без мозговой кости, пресс и бульон, порции на двоих"
+          }
+        ]
+      }
     },
     {
       "id": 19,
@@ -913,7 +1073,7 @@
         "https://lamialiguria.it/en/2024/09/mesciua/"
       ],
       "full_editorial_markdown": "## №19. Месчуа с бобовыми и полбой\n\n**На двоих. Ориентировочное время:** 2 часа 45 минут плюс замачивание сухих продуктов.\n\n**Ингредиенты:** Сухой нут 100 г; сухая фасоль каннеллини 100 г; полба (фарро) 65 г; вода для варки 1,2–1,5 л; оливковое масло 25 мл; соль, свежемолотый перец.\n\n**Готовим:**\n1. Замочи нут и фасоль в разных мисках на 12 часов; полбу замочи отдельно согласно инструкции на упаковке.\n2. Слей воду и промой. Нут, фасоль и полбу отвари в отдельных кастрюлях до мягкости: нут обычно 90–120 минут, фасоль примерно 60–90 минут, полбу по указаниям на упаковке (в зависимости от сорта и обработки). Проверяй готовность каждого продукта, а не только время.\n3. Соедини продукты с частью воды от варки, чтобы получилось около 800–900 мл густого супа.\n4. Прогрей вместе 10–15 минут, попробуй на соль. Не измельчай бобы блендером.\n5. Подавай с хорошим оливковым маслом и свежемолотым чёрным перцем.\n\n**Внешний вид:** Простая бледно-золотистая зерновая похлёбка с отчётливыми нутом, белой фасолью и полбой; без помидоров и ярких декоративных трав.\n\n**Три рецептурных источника:**\n1. https://www.lacucinaitaliana.it/ricetta/primi/mesciua/\n2. https://blog.giallozafferano.it/ricetteinternazionali/ricette-italiane/mescciua/\n3. https://lamialiguria.it/en/2024/09/mesciua/\n\n**Различия и редакционное решение:** Ключевой момент: разные бобовые требуют разной продолжительности варки. Для сушёного нута 2 часа ориентировочны, проверяй мягкость.\n\n**QA:** этап фотопроверки и пользовательского утверждения ещё не завершён.\n\n---",
-      "review_status": "редакционный черновик; источники, фото и контрольная готовка не приняты",
+      "review_status": "Три независимых рецепта содержательно сопоставлены; пробная готовка, фото и окончательная приёмка не завершены",
       "photo_approved": false,
       "steps": [
         "Замочи нут и фасоль в разных мисках на 12 часов; полбу замочи отдельно согласно инструкции на упаковке.",
@@ -930,9 +1090,29 @@
         "оливковое масло 25 мл",
         "соль, свежемолотый перец."
       ],
-      "recipe_source_audit_status": "URL_DOMAINS_LISTED_CONTENT_VERIFICATION_INCOMPLETE",
+      "recipe_source_audit_status": "THREE_INDEPENDENT_RECIPE_TEXTS_COMPARED",
       "visual_audit_status": "PENDING",
-      "photo_status": "PENDING_USER_APPROVAL"
+      "photo_status": "PENDING_USER_APPROVAL",
+      "source_content_evidence": {
+        "date": "2026-11-19",
+        "method": "Three published independent recipe texts opened, ingredients and preparation steps compared; two-person portions adapted, no trial cooking",
+        "ingredients_comparison": "Нут, сухая фасоль и фарро/полба с оливковым маслом подтверждены региональными описаниями Лигурии и итальянскими рецептами; это не обычный овощной суп.",
+        "technique_and_timer_comparison": "Бобовые замачивают заранее; нут, фасоль и полбу варят отдельно по фактической мягкости, а не одновременно по универсальному таймеру, затем объединяют, прогревают около 10–15 минут и подают без пюрирования. Это уже исправлено в исходном рецепте.",
+        "sources": [
+          {
+            "url": "https://www.lacucinaitaliana.it/ricetta/primi/mesciua/",
+            "difference": "Лигурийская смесь бобовых и зёрен"
+          },
+          {
+            "url": "https://blog.giallozafferano.it/ricetteinternazionali/ricette-italiane/mescciua/",
+            "difference": "Сухой нут, фасоль и фарро с раздельным замачиванием"
+          },
+          {
+            "url": "https://lamialiguria.it/en/2024/09/mesciua/",
+            "difference": "Региональная история La Spezia и простая подача с оливковым маслом"
+          }
+        ]
+      }
     },
     {
       "id": 20,
@@ -947,7 +1127,7 @@
         "https://cucinaregionaleitaliana.it/portfolio-items/cacciucco-alla-livornese/"
       ],
       "full_editorial_markdown": "## №20. Качукко по-ливорнски\n\n**На двоих. Ориентировочное время:** 1 час 40 минут.\n\n**Ингредиенты:** Смесь белой морской рыбы (например, морской чёрт) 250 г; кальмар очищенный 140 г; мидии в раковинах 300 г; креветки 160 г; томаты рубленые 280 г; белое сухое вино 90 мл; чеснок 2 зубчика; лук 60 г; оливковое масло 30 мл; чили по вкусу; рыбный бульон 450 мл; хлеб 2 ломтика; петрушка.\n\n**Готовим:**\n1. Промой мидии и удали открытые, которые не закрываются при постукивании, и повреждённые. Кальмар нарежь кольцами, рыбу крупными кусками.\n2. В сотейнике на масле прогрей мелко нарезанный лук и чеснок 5 минут, добавь чили и кальмара, готовь ещё 5 минут.\n3. Влей вино, дай выпариться алкоголю 2 минуты, добавь томаты и рыбный бульон; туши кальмара 25–35 минут до мягкости.\n4. Добавь рыбу на 8 минут, затем мидии и креветки; готовь под крышкой, пока мидии не откроются и креветки не станут непрозрачными, около 5 минут. Неоткрывшиеся мидии выбрось.\n5. Слегка подсуши хлеб. Выложи его в глубокие миски и налей сверху густой рыбный суп. Добавь петрушку.\n\n**Внешний вид:** Насыщенная тёмно-красная томатная рыбная похлёбка с кусками рыбы, кальмаром, мидиями, креветками и хлебом, без пасты.\n\n**Три рецептурных источника:**\n1. https://www.giallozafferano.com/recipes/cacciucco-alla-livornese.html\n2. https://www.lacucinaitaliana.it/ricetta/secondi/caciucco-la-ricetta-tradizionale/\n3. https://cucinaregionaleitaliana.it/portfolio-items/cacciucco-alla-livornese/\n\n**Различия и редакционное решение:** Разные варианты используют не менее пяти видов морских продуктов и разные томатные основы; версия адаптирована под ужин на двоих. Не путать с простым рыбным супом.\n\n**QA:** этап фотопроверки и пользовательского утверждения ещё не завершён.",
-      "review_status": "редакционный черновик; источники, фото и контрольная готовка не приняты",
+      "review_status": "Три независимых рецепта содержательно сопоставлены; пробная готовка, фото и окончательная приёмка не завершены",
       "photo_approved": false,
       "steps": [
         "Промой мидии и удали открытые, которые не закрываются при постукивании, и повреждённые. Кальмар нарежь кольцами, рыбу крупными кусками.",
@@ -971,9 +1151,29 @@
         "хлеб 2 ломтика",
         "петрушка."
       ],
-      "recipe_source_audit_status": "URL_DOMAINS_LISTED_CONTENT_VERIFICATION_INCOMPLETE",
+      "recipe_source_audit_status": "THREE_INDEPENDENT_RECIPE_TEXTS_COMPARED",
       "visual_audit_status": "PENDING",
-      "photo_status": "PENDING_USER_APPROVAL"
+      "photo_status": "PENDING_USER_APPROVAL",
+      "source_content_evidence": {
+        "date": "2026-11-19",
+        "method": "Three published independent recipe texts opened, ingredients and preparation steps compared; two-person portions adapted, no trial cooking",
+        "ingredients_comparison": "Несколько видов морской рыбы и морепродуктов, кальмар, мидии, креветки, томаты, вино, чеснок и хлеб подтверждены тремя публикациями. Набор рыбы может меняться по местному улову.",
+        "technique_and_timer_comparison": "Сначала более жёсткий кальмар в томатном бульоне 25–35 минут до мягкости; после этого плотная рыба, а нежная рыба и ракушки в конце. Длительность зависит от вида, мидии не должны быть повреждёнными; перед подачей нераскрывшиеся после варки удаляют, если нельзя подтвердить готовность. Оригинальные публикации могут требовать до 2 часов из-за большего набора.",
+        "sources": [
+          {
+            "url": "https://www.giallozafferano.com/recipes/cacciucco-alla-livornese.html",
+            "difference": "Ливорнский насыщенный рыбный суп, длительный бульон"
+          },
+          {
+            "url": "https://www.lacucinaitaliana.it/ricetta/secondi/caciucco-la-ricetta-tradizionale/",
+            "difference": "Традиционная тосканская версия с томатами и разными рыбами"
+          },
+          {
+            "url": "https://cucinaregionaleitaliana.it/portfolio-items/cacciucco-alla-livornese/",
+            "difference": "Региональная кодифицированная рецептура с несколькими сортами рыбы"
+          }
+        ]
+      }
     },
     {
       "id": 21,
