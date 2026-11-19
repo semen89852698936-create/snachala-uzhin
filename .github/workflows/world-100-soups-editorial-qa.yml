@@ -19,6 +19,8 @@ jobs:
         run: node project-operations/soups/verify-world-json.cjs
       - name: Cross-check Markdown references and compiled structured recipe data
         run: node project-operations/soups/verify-world-consistency.cjs
+      - name: Verify all 100 step texts match their Markdown manuscripts
+        run: node project-operations/soups/verify-world-step-parity.cjs
       - name: Build standalone 100-soup editorial preview
         run: node project-operations/soups/build-world-100.cjs
       - name: Upload the 100-soup HTML preview
