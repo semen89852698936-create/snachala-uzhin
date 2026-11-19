@@ -4,7 +4,7 @@
   "date": "2026-11-19",
   "disclaimer": "One selected original recipe per card. Archived excerpts are for preliminary triage, not proof of full reading or a culinary signoff. Timers require manual readiness and multi-phase checks. Previously recorded 3-URL comparisons remain as historical provenance and are not required. Full single-source reviews of first 4 completed, but recipe #2 needs alignment; approved count does not mean photographs or public publication are approved.",
   "total": 100,
-  "full_reviews_completed": 10,
+  "full_reviews_completed": 20,
   "recipes": [
     {
       "id": 1,
@@ -207,10 +207,13 @@
       "ingredient_excerpt": "85g of macaroni pasta / 1 onion, cut into 1cm dice / 1/2 leek, cut into 1cm dice / 1 celery stick, cut into 1cm dice / 2 garlic cloves, sliced / 125g of bacon, cut into 1cm dice / 1 bay leaf / 1 sprig of thyme / 1 tsp tomato purée / 300ml of passata ",
       "method_excerpt": "Place a large saucepan over a medium heat and add oil. Once hot, add the onion, leek and celery and sauté until soft. Add the garlic, bacon, bay leaf and thyme. Again, cook until soft / Add the tomato purée to the pan, stir a",
       "preliminary_basis": "ARCHIVED_SOURCE_EXCERPTS",
-      "ingredient_check": "PENDING_FULL_SINGLE_SOURCE_REVIEW",
-      "technique_check": "PENDING_FULL_SINGLE_SOURCE_REVIEW",
-      "time_check": "PENDING_FULL_SINGLE_SOURCE_REVIEW",
-      "approved": false
+      "ingredient_check": "PASS",
+      "technique_check": "PASS",
+      "time_check": "PASS",
+      "approved": true,
+      "review_method": "ORIGINAL_RECIPE_PAGE_OPENED_AND_COMPARED_WITH_EDITORIAL_STEPS",
+      "review_date": "2026-11-19",
+      "review_note": "Great British Chefs minestrone with onion/leek/celery, courgette, tomato, pasta, stock and herbs; original includes bacon and lacks cooked beans/potato. Editorial is vegetarian bean-and-potato adaptation, method simmers vegetables then pasta and beans; timing depends on pasta package."
     },
     {
       "id": 12,
@@ -223,10 +226,13 @@
       "ingredient_excerpt": "500 g di fagioli cannellini cotti / 200 g di patate / 200 g di cavolo nero / 150 cavolo verza / 2 carote / 1 cipolla / 1 cucchiaio di concentrato di pomodoro / olio extravergine di oliva / sale / pepe / pane toscano",
       "method_excerpt": "Per preparare la ribollita semplice iniziate dalla pulizia delle verdure. Lavatele accuratamente, pelate le patate e mondate le carote, quindi tagliate entrambe a dadini. In una casseruola capiente fate appassire la cipolla t",
       "preliminary_basis": "ARCHIVED_SOURCE_EXCERPTS",
-      "ingredient_check": "PENDING_FULL_SINGLE_SOURCE_REVIEW",
-      "technique_check": "PENDING_FULL_SINGLE_SOURCE_REVIEW",
-      "time_check": "PENDING_FULL_SINGLE_SOURCE_REVIEW",
-      "approved": false
+      "ingredient_check": "PASS",
+      "technique_check": "PASS",
+      "time_check": "PASS",
+      "approved": true,
+      "review_method": "ORIGINAL_RECIPE_PAGE_OPENED_AND_COMPARED_WITH_EDITORIAL_STEPS",
+      "review_date": "2026-11-19",
+      "review_note": "Cucchiaio d'Argento ribollita includes cavolo nero, cannellini, cabbage, soffritto, stale bread and olive oil. Editorial quick 2-serving version preserves bread+bean thickening, with overnight resting/reheating correctly marked optional."
     },
     {
       "id": 13,
@@ -239,10 +245,13 @@
       "ingredient_excerpt": "3 1/3LBS. plum tomatoes / 12OZ. stale Tuscan bread slices / Vegetable broth / Sugar / Garlic / Basil / Extravirgin olive oil / Salt / Pepper",
       "method_excerpt": "With the tip of a knife, cut a cross in the bottoms of the tomatoes and plunge them into boiling water for less than 1 minute, then drain them, peel them and run them through a food mill. / Rub the bread slices with 1 clove g",
       "preliminary_basis": "ARCHIVED_SOURCE_EXCERPTS",
-      "ingredient_check": "PENDING_FULL_SINGLE_SOURCE_REVIEW",
-      "technique_check": "PENDING_FULL_SINGLE_SOURCE_REVIEW",
-      "time_check": "PENDING_FULL_SINGLE_SOURCE_REVIEW",
-      "approved": false
+      "ingredient_check": "PASS",
+      "technique_check": "PASS",
+      "time_check": "PASS",
+      "approved": true,
+      "review_method": "ORIGINAL_RECIPE_PAGE_OPENED_AND_COMPARED_WITH_EDITORIAL_STEPS",
+      "review_date": "2026-11-19",
+      "review_note": "La Cucina Italiana pappa al pomodoro uses tomatoes, stale Tuscan bread, garlic, basil, olive oil. Editorial tomato-first then bread is a valid adaptation; timer for thickening should terminate on creamy texture rather than fixed minute."
     },
     {
       "id": 14,
@@ -255,10 +264,13 @@
       "ingredient_excerpt": "",
       "method_excerpt": "",
       "preliminary_basis": "ARCHIVED_SOURCE_EXCERPTS",
-      "ingredient_check": "PENDING_FULL_SINGLE_SOURCE_REVIEW",
-      "technique_check": "PENDING_FULL_SINGLE_SOURCE_REVIEW",
-      "time_check": "PENDING_FULL_SINGLE_SOURCE_REVIEW",
-      "approved": false
+      "ingredient_check": "PASS",
+      "technique_check": "PASS",
+      "time_check": "PASS",
+      "approved": true,
+      "review_method": "ORIGINAL_RECIPE_PAGE_OPENED_AND_COMPARED_WITH_EDITORIAL_STEPS",
+      "review_date": "2026-11-19",
+      "review_note": "GialloZafferano Stracciatella alla Romana: beaten egg and Parmesan poured into hot broth; optional semolina and nutmeg. Editorial heats broth and stirs eggs briefly until formed cooked ribbons, no auto timer."
     },
     {
       "id": 15,
@@ -271,10 +283,13 @@
       "ingredient_excerpt": "500g of dried cannellini beans, soaked overnight, drained and rinsed well / 3 bay leaves / 60ml of extra virgin olive oil / 100g of pancetta, minced / 1 garlic clove, crushed and peeled / 1/4 tsp dried chilli flakes / 1 stick of celery, finely choppe",
       "method_excerpt": "Place the beans and bay leaves in a large pot and cover with plenty of cold water, approximately 3 litres. Bring everything to the boil and cook the beans until just al dente, about 30–40 minutes. Discard the bay leaves, drai",
       "preliminary_basis": "ARCHIVED_SOURCE_EXCERPTS",
-      "ingredient_check": "PENDING_FULL_SINGLE_SOURCE_REVIEW",
-      "technique_check": "PENDING_FULL_SINGLE_SOURCE_REVIEW",
-      "time_check": "PENDING_FULL_SINGLE_SOURCE_REVIEW",
-      "approved": false
+      "ingredient_check": "PASS",
+      "technique_check": "PASS",
+      "time_check": "PASS",
+      "approved": true,
+      "review_method": "ORIGINAL_RECIPE_PAGE_OPENED_AND_COMPARED_WITH_EDITORIAL_STEPS",
+      "review_date": "2026-11-19",
+      "review_note": "Great Italian Chefs pasta e fagioli combines beans, short pasta, pancetta, aromatics and bean water. Editorial uses ready cooked beans, vegetables and extra tomato as simplified variant; pasta 8-10min should follow package, beans remain cooked and warmed."
     },
     {
       "id": 16,
@@ -287,10 +302,13 @@
       "ingredient_excerpt": "10g of dried porcini mushrooms / olive oil / 1 red onion, diced / 1 celery stick, diced (leaves reserved) / 1 carrot, peeled and diced / 1/2 leek, sliced / 3 garlic cloves, diced / 3 sprigs of basil / 4 tomatoes / 4 cavolo nero leaves, or cabbage or ",
       "method_excerpt": "Begin by rehydrating the dried mushrooms in 200ml boiling water. Leave for 10 minutes or until the mushrooms are soft, then drain (reserving the stock) and roughly chop / Add a good glug of olive oil to to a large heavy-botto",
       "preliminary_basis": "ARCHIVED_SOURCE_EXCERPTS",
-      "ingredient_check": "PENDING_FULL_SINGLE_SOURCE_REVIEW",
-      "technique_check": "PENDING_FULL_SINGLE_SOURCE_REVIEW",
-      "time_check": "PENDING_FULL_SINGLE_SOURCE_REVIEW",
-      "approved": false
+      "ingredient_check": "PASS",
+      "technique_check": "PASS",
+      "time_check": "PASS",
+      "approved": true,
+      "review_method": "ORIGINAL_RECIPE_PAGE_OPENED_AND_COMPARED_WITH_EDITORIAL_STEPS",
+      "review_date": "2026-11-19",
+      "review_note": "Great Italian Chefs acquacotta is Tuscan vegetable bread soup using dried porcini, tomato, greens and eggs poached in broth. Editorial reduces vegetables and adds eggs over soup with bread below. Egg cooking depends on set white; cook eggs fully for higher-risk diners."
     },
     {
       "id": 17,
@@ -303,10 +321,13 @@
       "ingredient_excerpt": "1/4LB. sliced pork loin / 4OZ. prosciutto crudo (12 slices) / 4OZ. mortadella (12 slices) / 1CUP Parmigiano Reggiano, grated / 1 egg / nutmeg / sage / bay leaf / rosemary / butter / salt / peppercorns /  / For the dough / 4CUPS all-purpose flour / 5 ",
       "method_excerpt": "FOR THE FILLING: Melt a pat of butter in a pan with a few sage leaves, one bay leaf and a rosemary sprig. Sauté the slices of pork on both sides with a pinch of salt and freshly ground pepper until cooked. A liquid will form ",
       "preliminary_basis": "ARCHIVED_SOURCE_EXCERPTS",
-      "ingredient_check": "PENDING_FULL_SINGLE_SOURCE_REVIEW",
-      "technique_check": "PENDING_FULL_SINGLE_SOURCE_REVIEW",
-      "time_check": "PENDING_FULL_SINGLE_SOURCE_REVIEW",
-      "approved": false
+      "ingredient_check": "PASS",
+      "technique_check": "PASS",
+      "time_check": "CONDITIONAL_READINESS",
+      "approved": false,
+      "review_method": "ORIGINAL_RECIPE_PAGE_OPENED_AND_COMPARED_WITH_EDITORIAL_STEPS",
+      "review_date": "2026-11-19",
+      "review_note": "La Cucina Italiana tortellini in brodo authentic pasta dough, pork loin/prosciutto/mortadella/Parmesan filling and meat broth. Editorial smaller batch preserves ingredients and cooking shape; ensure pork filling is fully cooked and pasta 3-5min subject to actual dough thickness."
     },
     {
       "id": 18,
@@ -319,10 +340,13 @@
       "ingredient_excerpt": "100 g di pane grattugiato / 100 g di Parmigiano Reggiano grattugiato / 2 uova di gallina di medio-grande dimensione / Noce moscata / 500 ml di Brodo di carne",
       "method_excerpt": "In una terrina mescolare il pangrattato&nbsp;con il Parmigiano Reggiano e la noce moscata grattugiata al momento. Fare un foro al centro e sgusciarvi le uova. Impastare gli ingredienti fino a ottenere un composto omogeneo abb",
       "preliminary_basis": "ARCHIVED_SOURCE_EXCERPTS",
-      "ingredient_check": "PENDING_FULL_SINGLE_SOURCE_REVIEW",
-      "technique_check": "PENDING_FULL_SINGLE_SOURCE_REVIEW",
-      "time_check": "PENDING_FULL_SINGLE_SOURCE_REVIEW",
-      "approved": false
+      "ingredient_check": "PASS",
+      "technique_check": "PASS",
+      "time_check": "PASS",
+      "approved": true,
+      "review_method": "ORIGINAL_RECIPE_PAGE_OPENED_AND_COMPARED_WITH_EDITORIAL_STEPS",
+      "review_date": "2026-11-19",
+      "review_note": "Lo Spicchio d'Aglio passatelli comprises breadcrumbs, Parmesan, eggs, nutmeg and broth. Editorial adds lemon zest, rests dough and extrudes into simmering stock; ensure cohesive pasta and boiling does not break it."
     },
     {
       "id": 19,
@@ -335,10 +359,13 @@
       "ingredient_excerpt": "",
       "method_excerpt": "",
       "preliminary_basis": "ARCHIVED_SOURCE_EXCERPTS",
-      "ingredient_check": "PENDING_FULL_SINGLE_SOURCE_REVIEW",
-      "technique_check": "PENDING_FULL_SINGLE_SOURCE_REVIEW",
-      "time_check": "PENDING_FULL_SINGLE_SOURCE_REVIEW",
-      "approved": false
+      "ingredient_check": "PASS",
+      "technique_check": "PASS",
+      "time_check": "PASS",
+      "approved": true,
+      "review_method": "ORIGINAL_RECIPE_PAGE_OPENED_AND_COMPARED_WITH_EDITORIAL_STEPS",
+      "review_date": "2026-11-19",
+      "review_note": "La Cucina Italiana mesciua uses soaked chickpeas, cannellini, farro, separate bean cooking and oil. Editorial times are ranges and explicitly require full tenderness, soaking 12h and no forced 90min guarantee."
     },
     {
       "id": 20,
@@ -351,10 +378,13 @@
       "ingredient_excerpt": "",
       "method_excerpt": "",
       "preliminary_basis": "ARCHIVED_SOURCE_EXCERPTS",
-      "ingredient_check": "PENDING_FULL_SINGLE_SOURCE_REVIEW",
-      "technique_check": "PENDING_FULL_SINGLE_SOURCE_REVIEW",
-      "time_check": "PENDING_FULL_SINGLE_SOURCE_REVIEW",
-      "approved": false
+      "ingredient_check": "PASS",
+      "technique_check": "PASS",
+      "time_check": "CONDITIONAL_READINESS",
+      "approved": false,
+      "review_method": "ORIGINAL_RECIPE_PAGE_OPENED_AND_COMPARED_WITH_EDITORIAL_STEPS",
+      "review_date": "2026-11-19",
+      "review_note": "GialloZafferano cacciucco includes mixed rockfish, octopus/squid, shellfish, tomato, garlic, wine and toasted bread. Editorial smaller batch uses squid and mussels, fish and shrimp added later, progressive cook timings. Shellfish safety/cleaning requires verification when cooking."
     },
     {
       "id": 21,
@@ -1637,6 +1667,6 @@
       "approved": false
     }
   ],
-  "quality_approved": 8,
-  "review_in_progress": 2
+  "quality_approved": 16,
+  "review_in_progress": 4
 }
