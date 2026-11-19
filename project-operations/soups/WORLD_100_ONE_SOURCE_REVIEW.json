@@ -99,7 +99,9 @@
       "approved": false,
       "review_note": "Fishub source uses fish stock from head/tail 30min, then vegetables and fish. Editorial 25-30min fish-stock stage and 5-8min fish fillet stage, unlike up-to-20min on source. Need explicit fillet-thickness/readiness check (opaque/flakes, 63C center where possible) before timer signoff.",
       "review_method": "ORIGINAL_RECIPE_PAGE_READ_AND_COMPARED_WITH_EDITORIAL_STEPS",
-      "review_date": "2026-11-19"
+      "review_date": "2026-11-19",
+      "remediation_status": "CANONICAL_RECIPE_CORRECTED",
+      "remediation_step": 4
     },
     {
       "id": 6,
@@ -175,7 +177,9 @@
       "approved": false,
       "review_note": "TextualChef original fish kalya has salmon, pickles, pickle brine, vegetables and fish broth; editorial omits potato and leek, reduces fish and volume for two. Source simmers salmon 5-7min until 63C internal; editorial 6-8min plus another 3-5min after brine, which may OVERCOOK fish. Move brine addition earlier or decrease fish heat exposure, then repeat timer review.",
       "review_method": "ORIGINAL_RECIPE_PAGE_READ_AND_COMPARED_WITH_EDITORIAL_STEPS",
-      "review_date": "2026-11-19"
+      "review_date": "2026-11-19",
+      "remediation_status": "CANONICAL_RECIPE_CORRECTED",
+      "remediation_step": 5
     },
     {
       "id": 10,
@@ -327,7 +331,9 @@
       "approved": false,
       "review_method": "ORIGINAL_RECIPE_PAGE_OPENED_AND_COMPARED_WITH_EDITORIAL_STEPS",
       "review_date": "2026-11-19",
-      "review_note": "La Cucina Italiana tortellini in brodo authentic pasta dough, pork loin/prosciutto/mortadella/Parmesan filling and meat broth. Editorial smaller batch preserves ingredients and cooking shape; ensure pork filling is fully cooked and pasta 3-5min subject to actual dough thickness."
+      "review_note": "La Cucina Italiana tortellini in brodo authentic pasta dough, pork loin/prosciutto/mortadella/Parmesan filling and meat broth. Editorial smaller batch preserves ingredients and cooking shape; ensure pork filling is fully cooked and pasta 3-5min subject to actual dough thickness.",
+      "remediation_status": "CANONICAL_RECIPE_CORRECTED",
+      "remediation_step": 1
     },
     {
       "id": 18,
@@ -384,7 +390,9 @@
       "approved": false,
       "review_method": "ORIGINAL_RECIPE_PAGE_OPENED_AND_COMPARED_WITH_EDITORIAL_STEPS",
       "review_date": "2026-11-19",
-      "review_note": "GialloZafferano cacciucco includes mixed rockfish, octopus/squid, shellfish, tomato, garlic, wine and toasted bread. Editorial smaller batch uses squid and mussels, fish and shrimp added later, progressive cook timings. Shellfish safety/cleaning requires verification when cooking."
+      "review_note": "GialloZafferano cacciucco includes mixed rockfish, octopus/squid, shellfish, tomato, garlic, wine and toasted bread. Editorial smaller batch uses squid and mussels, fish and shrimp added later, progressive cook timings. Shellfish safety/cleaning requires verification when cooking.",
+      "remediation_status": "CANONICAL_RECIPE_CORRECTED",
+      "remediation_step": 4
     },
     {
       "id": 21,
@@ -422,7 +430,9 @@
       "approved": false,
       "review_note": "Marmiton Marseille bouillabaisse includes several fish, aromatic vegetables, saffron, long stock and rouille. Editorial 2-person simplified fish soup uses shellfish and prepared fish stock; shellfish and fish cooking stages need readiness and food-safety checks.",
       "review_method": "ORIGINAL_RECIPE_PAGE_OPENED_AND_COMPARED_WITH_EDITORIAL_STEPS",
-      "review_date": "2026-11-19"
+      "review_date": "2026-11-19",
+      "remediation_status": "CANONICAL_RECIPE_CORRECTED",
+      "remediation_step": 4
     },
     {
       "id": 23,
@@ -441,7 +451,9 @@
       "approved": false,
       "review_note": "Great British Chefs vichyssoise uses potato/leek, butter, stock and dairy, puréed and served cold. Editorial preserves essential method and includes prompt refrigeration; verify safe rapid cooling after warm blending.",
       "review_method": "ORIGINAL_RECIPE_PAGE_OPENED_AND_COMPARED_WITH_EDITORIAL_STEPS",
-      "review_date": "2026-11-19"
+      "review_date": "2026-11-19",
+      "remediation_status": "CANONICAL_RECIPE_CORRECTED",
+      "remediation_step": 5
     },
     {
       "id": 24,
@@ -498,7 +510,9 @@
       "approved": false,
       "review_note": "Journal des Femmes tourin à l'ail garlic soup contains garlic, bread, egg and vinegar. Editorial temperatures are low to avoid curdling, but raw egg mixture with 1-2min under-boil must meet egg safety standard; add temperature/readiness condition.",
       "review_method": "ORIGINAL_RECIPE_PAGE_OPENED_AND_COMPARED_WITH_EDITORIAL_STEPS",
-      "review_date": "2026-11-19"
+      "review_date": "2026-11-19",
+      "remediation_status": "CANONICAL_RECIPE_CORRECTED",
+      "remediation_step": 3
     },
     {
       "id": 27,
@@ -555,7 +569,9 @@
       "approved": false,
       "review_note": "Reboul 1909 bourride fish broth with garlic aioli emulsified into sauce. Editorial tempers extra egg yolk and turns off heat, but raw egg yolk/aioli needs pasteurized egg or heat-safe process; mark food-safety revision.",
       "review_method": "ORIGINAL_RECIPE_PAGE_OPENED_AND_COMPARED_WITH_EDITORIAL_STEPS",
-      "review_date": "2026-11-19"
+      "review_date": "2026-11-19",
+      "remediation_status": "CANONICAL_RECIPE_CORRECTED",
+      "remediation_step": 3
     },
     {
       "id": 30,
@@ -650,7 +666,9 @@
       "approved": false,
       "review_note": "Directo al Paladar sopa de ajo uses garlic/paprika/stale bread and eggs; 3-4min poached egg stage may leave undercooked center, add doneness criterion for vulnerable users.",
       "review_method": "ORIGINAL_RECIPE_PAGE_OPENED_AND_COMPARED_WITH_EDITORIAL_STEPS",
-      "review_date": "2026-11-19"
+      "review_date": "2026-11-19",
+      "remediation_status": "CANONICAL_RECIPE_CORRECTED",
+      "remediation_step": 5
     },
     {
       "id": 35,
@@ -707,7 +725,9 @@
       "approved": false,
       "review_note": "Canal Cocina gazpachuelo fish/potato/broth with mayonnaise emulsion. Editorial uses pasteurized mayonnaise and no further boiling, good; seafood must be properly cooked rather than trusting 5-7min alone.",
       "review_method": "ORIGINAL_RECIPE_PAGE_OPENED_AND_COMPARED_WITH_EDITORIAL_STEPS",
-      "review_date": "2026-11-19"
+      "review_date": "2026-11-19",
+      "remediation_status": "CANONICAL_RECIPE_CORRECTED",
+      "remediation_step": 2
     },
     {
       "id": 38,
@@ -745,7 +765,9 @@
       "approved": false,
       "review_note": "Directo al Paladar escudella soup and carn d'olla combines meat bones, chickpeas, vegetables, pilota and galets. Editorial soaked chickpeas and raw pork pilota need full tenderness and safe cooking; no fixed time guarantee.",
       "review_method": "ORIGINAL_RECIPE_PAGE_OPENED_AND_COMPARED_WITH_EDITORIAL_STEPS",
-      "review_date": "2026-11-19"
+      "review_date": "2026-11-19",
+      "remediation_status": "CANONICAL_RECIPE_CORRECTED",
+      "remediation_step": 4
     },
     {
       "id": 40,
@@ -821,7 +843,9 @@
       "approved": false,
       "review_note": "Forkin yayla soup uses yogurt, rice, egg yolk, flour, mint butter; editorial has one whole egg and tempers in warm rice broth then heats without boiling. Ensure egg mixture safe and rice tender.",
       "review_method": "ORIGINAL_RECIPE_PAGE_OPENED_AND_COMPARED_WITH_EDITORIAL_STEPS",
-      "review_date": "2026-11-19"
+      "review_date": "2026-11-19",
+      "remediation_status": "CANONICAL_RECIPE_CORRECTED",
+      "remediation_step": 2
     },
     {
       "id": 44,
@@ -859,7 +883,9 @@
       "approved": false,
       "review_note": "Zaffaron iskembe tripe soup contains cleansed tripe with long simmer and garlic-vinegar, enriched by dairy/egg. Editorial raw tripe handling and 2-3h simmer until genuinely tender plus egg tempering require explicit safety assurance.",
       "review_method": "ORIGINAL_RECIPE_PAGE_OPENED_AND_COMPARED_WITH_EDITORIAL_STEPS",
-      "review_date": "2026-11-19"
+      "review_date": "2026-11-19",
+      "remediation_status": "CANONICAL_RECIPE_CORRECTED",
+      "remediation_step": 4
     },
     {
       "id": 46,
@@ -878,7 +904,9 @@
       "approved": false,
       "review_note": "Lezzet kelle paça offal soup uses sheep head/feet, long broth extraction and garlic-vinegar. Editorial uses cleaned cuts for 3-4h and manually removes bones; do not accept on timer alone and ensure completely cooked meat.",
       "review_method": "ORIGINAL_RECIPE_PAGE_OPENED_AND_COMPARED_WITH_EDITORIAL_STEPS",
-      "review_date": "2026-11-19"
+      "review_date": "2026-11-19",
+      "remediation_status": "CANONICAL_RECIPE_CORRECTED",
+      "remediation_step": 2
     },
     {
       "id": 47,
@@ -897,7 +925,9 @@
       "approved": false,
       "review_note": "Lezzet terbiyeli köfte yogurt-thickened meatball soup contains ground-meat balls, rice, egg/yogurt seasoning. Editorial meatballs simmer 20-25min, but center must reach safe meat cooking temperature; temper egg separately.",
       "review_method": "ORIGINAL_RECIPE_PAGE_OPENED_AND_COMPARED_WITH_EDITORIAL_STEPS",
-      "review_date": "2026-11-19"
+      "review_date": "2026-11-19",
+      "remediation_status": "CANONICAL_RECIPE_CORRECTED",
+      "remediation_step": 3
     },
     {
       "id": 48,
@@ -916,7 +946,9 @@
       "approved": false,
       "review_note": "Lezzet düğün çorbası lamb broth, yogurt/egg/lemon thickening and pepper-butter topping. Editorial lamb neck 75-90min must become tender and sauce must reach safe egg temperature without curdling.",
       "review_method": "ORIGINAL_RECIPE_PAGE_OPENED_AND_COMPARED_WITH_EDITORIAL_STEPS",
-      "review_date": "2026-11-19"
+      "review_date": "2026-11-19",
+      "remediation_status": "CANONICAL_RECIPE_CORRECTED",
+      "remediation_step": 4
     },
     {
       "id": 49,
@@ -954,7 +986,9 @@
       "approved": false,
       "review_note": "Lezzet tutmaç soup contains yogurt-thickened noodle soup and cooked pulses. Editorial cooked lentils and chickpeas are warmed, raw yolk blended into yogurt; egg heating needs verified safety criterion.",
       "review_method": "ORIGINAL_RECIPE_PAGE_OPENED_AND_COMPARED_WITH_EDITORIAL_STEPS",
-      "review_date": "2026-11-19"
+      "review_date": "2026-11-19",
+      "remediation_status": "CANONICAL_RECIPE_CORRECTED",
+      "remediation_step": 3
     },
     {
       "id": 51,
@@ -1011,7 +1045,9 @@
       "approved": false,
       "review_note": "Just One Cookbook miso ramen broth and miso with cooked ground pork/chashu and vegetables. Editorial fresh pork mince fried 6-8min plus 10min broth, must verify it is fully cooked; bean sprouts blanched.",
       "review_method": "ORIGINAL_RECIPE_PAGE_OPENED_AND_COMPARED_WITH_EDITORIAL_STEPS",
-      "review_date": "2026-11-19"
+      "review_date": "2026-11-19",
+      "remediation_status": "CANONICAL_RECIPE_CORRECTED",
+      "remediation_step": 1
     },
     {
       "id": 54,
@@ -1030,7 +1066,9 @@
       "approved": false,
       "review_note": "Just One Cookbook Easy Tonkotsu page explicitly says traditional tonkotsu requires 8-12h rapid pork bone boil, but its featured recipe uses 5h pressure cooker shortcut. Editorial uses cited traditional long stovetop approach, not the featured Instant Pot method. Maintain rolling boil and safe water top-up, no bone grinding; provenance caveat.",
       "review_method": "ORIGINAL_RECIPE_PAGE_OPENED_AND_COMPARED_WITH_EDITORIAL_STEPS",
-      "review_date": "2026-11-19"
+      "review_date": "2026-11-19",
+      "remediation_status": "CANONICAL_RECIPE_CORRECTED",
+      "remediation_step": 2
     },
     {
       "id": 55,
@@ -1087,7 +1125,9 @@
       "approved": false,
       "review_note": "Just One Cookbook ozoni New Year soup with mochi, dashi, chicken, vegetables and greens. Editorial cooks chicken through and toasts mochi; mochi is sticky and can be choking hazard, needs small bites warning when served.",
       "review_method": "ORIGINAL_RECIPE_PAGE_OPENED_AND_COMPARED_WITH_EDITORIAL_STEPS",
-      "review_date": "2026-11-19"
+      "review_date": "2026-11-19",
+      "remediation_status": "CANONICAL_RECIPE_CORRECTED",
+      "remediation_step": 2
     },
     {
       "id": 58,
@@ -1144,7 +1184,9 @@
       "approved": false,
       "review_note": "Recipin hiyajiru cold miso soup includes cooked dried fish, sesame, tofu, cucumber, shiso over cold rice; editorial uses cooked fish, miso and cold rice. Cook fish completely and refrigerate promptly before serving.",
       "review_method": "ORIGINAL_RECIPE_PAGE_OPENED_AND_COMPARED_WITH_EDITORIAL_STEPS",
-      "review_date": "2026-11-19"
+      "review_date": "2026-11-19",
+      "remediation_status": "CANONICAL_RECIPE_CORRECTED",
+      "remediation_step": 1
     },
     {
       "id": 61,
@@ -1258,7 +1300,9 @@
       "approved": false,
       "review_note": "Korean Bapsang manduguk: dumplings cooked in stock, egg ribbons added at end, gim and scallions garnish. Editorial 6–10 min is not a universal time for raw meat filling; verify center safely cooked.",
       "review_method": "SINGLE_ORIGINAL_SOURCE_REVIEW_WITH_EDITORIAL_COMPARISON",
-      "review_date": "2026-11-19"
+      "review_date": "2026-11-19",
+      "remediation_status": "CANONICAL_RECIPE_CORRECTED",
+      "remediation_step": 2
     },
     {
       "id": 67,
@@ -1277,7 +1321,9 @@
       "approved": false,
       "review_note": "Korean Bapsang kimchi jjigae: well-fermented kimchi plus pork belly sautéed and simmered with broth, tofu later. Editorial timing 20–25min must also deliver fully cooked pork.",
       "review_method": "SINGLE_ORIGINAL_SOURCE_REVIEW_WITH_EDITORIAL_COMPARISON",
-      "review_date": "2026-11-19"
+      "review_date": "2026-11-19",
+      "remediation_status": "CANONICAL_RECIPE_CORRECTED",
+      "remediation_step": 4
     },
     {
       "id": 68,
@@ -1315,7 +1361,9 @@
       "approved": false,
       "review_note": "Korean Bapsang gamjatang: pork backbone blanched and simmered until soft, potatoes and cabbage added later, perilla and doenjang seasoning. Editorial approximate timings require fully cooked bone meat and soft potato.",
       "review_method": "SINGLE_ORIGINAL_SOURCE_REVIEW_WITH_EDITORIAL_COMPARISON",
-      "review_date": "2026-11-19"
+      "review_date": "2026-11-19",
+      "remediation_status": "CANONICAL_RECIPE_CORRECTED",
+      "remediation_step": 2
     },
     {
       "id": 70,
@@ -1334,7 +1382,9 @@
       "approved": false,
       "review_note": "Korean Bapsang doenjang jjigae offers pork/vegetable and optional seafood variants. Editorial vegetarian dashi tofu/potato/zucchini version is a distinct legitimate variation; chosen linked source focuses on pork, so source may need closer vegetarian variant.",
       "review_method": "SINGLE_ORIGINAL_SOURCE_REVIEW_WITH_EDITORIAL_COMPARISON",
-      "review_date": "2026-11-19"
+      "review_date": "2026-11-19",
+      "remediation_status": "CANONICAL_RECIPE_CORRECTED",
+      "remediation_step": 3
     },
     {
       "id": 71,
