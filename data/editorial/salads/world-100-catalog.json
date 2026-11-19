@@ -1755,9 +1755,9 @@
         "sources": [
           "https://www.lacucinaitaliana.it/ricetta/secondi/insalata-di-puntarelle/",
           "https://orto.ch/ricetta/puntarelle-alla-romana/",
-          "https://www.cucchiaio.it/ricetta/puntarelle-alla-romana/"
+          "https://www.cucchiaio.it/ricetta/ricetta-insalata-puntarelle/"
         ],
-        "note": "Ингредиенты и техника сверены с региональной рецептурой; количества пересчитаны для двоих."
+        "note": "Ингредиенты и техника сверены с региональной рецептурой; количества пересчитаны для двоих.\nVerified replacement 2026-11-19: Corrected URL; Cucchiaio recipe explicitly describes raw puntarelle with anchovy-garlic dressing; 1h optional rest versus 20–30min in editorial card."
       },
       "photo": null,
       "imagePublishingBlocked": true,
@@ -1867,10 +1867,10 @@
         "stage": "editorial_research",
         "sources": [
           "https://www.lacucinaitaliana.it/ricetta/piatti-unici/insalata-di-riso-classica/",
-          "https://www.cucchiaio.it/ricetta/insalata-di-riso/",
-          "https://www.giallozafferano.it/ricerca-ricette/insalata+di+riso/"
+          "https://www.cucchiaio.it/ricetta/ricetta-insalata-riso/",
+          "https://ricette.giallozafferano.it/Insalata-di-riso-classica.html"
         ],
-        "note": "Ингредиенты и техника сверены с региональной рецептурой; количества пересчитаны для двоих."
+        "note": "Ингредиенты и техника сверены с региональной рецептурой; количества пересчитаны для двоих.\nVerified replacement 2026-11-19: Cucchiaio URL corrected; tuna, tomato, olives and boiled rice confirmed; editorial peas, corn and mozzarella are optional variation not identical source ingredients.\nVerified replacement 2026-11-19: Replaced generic recipe search page with direct GialloZafferano rice salad containing rice, peas, peppers, tomato, tuna, olives; mozzarella and corn are editorial variation."
       },
       "photo": null,
       "imagePublishingBlocked": true,
@@ -4319,11 +4319,11 @@
       "sourceReview": {
         "stage": "editorial_research",
         "sources": [
-          "https://www.dianekochilas.com/greek-village-salad-horiatiki/",
+          "https://www.dianekochilas.com/greek-salad/",
           "https://www.olivetomato.com/authentic-greek-salad/",
-          "https://www.heartathens.com/food/taste/"
+          "https://akispetretzikis.com/en/recipe/1971/chwriatikh-salata"
         ],
-        "note": "Технология и состав адаптированы для двух порций"
+        "note": "Технология и состав адаптированы для двух порций\nVerified replacement 2026-11-19: Corrected dead Diane Kochilas URL to explicit traditional Greek salad with feta, vegetables, olive oil, oregano.\nVerified replacement 2026-11-19: Replaced generic HeartAthens tourist landing page with independent Akis Petretzikis horiatiki recipe. Distinct from original Diane and OliveTomato."
       },
       "photo": null,
       "imagePublishingBlocked": true,
@@ -5306,10 +5306,10 @@
         "stage": "editorial_research",
         "sources": [
           "https://www.ktb.gov.tr/EN-99014/shepherds-salad.html",
-          "https://www.dimitrasdishes.com/turkish-shepherds-salad/",
-          "https://www.unicornsinthekitchen.com/turkish-shepherd-salad-coban-salatasi/"
+          "https://www.splendidtable.org/story/2019/04/29/shepherds-salad",
+          "https://www.unicornsinthekitchen.com/coban-salatasi/"
         ],
-        "note": "Турецкая региональная рецептура, на двоих"
+        "note": "Турецкая региональная рецептура, на двоих\nVerified replacement 2026-11-19: Replaced broken Dimitra’s Dishes URL with Musa Dağdeviren’s book recipe Shepherds Salad; tomatoes, pepper, onion, cucumber and herbs, olive oil variant.\nVerified replacement 2026-11-19: Corrected Unicorns in Kitchen dead slug to /coban-salatasi/, which includes tomato, cucumber, onion, pepper, lemon and olive oil."
       },
       "photo": null,
       "imagePublishingBlocked": true,
@@ -5412,11 +5412,11 @@
       "sourceReview": {
         "stage": "editorial_research",
         "sources": [
-          "https://prod.kisikatesakademi.com.tr/tarif/gavurdagi-salatasi-tarifi-1317",
+          "https://tasteofturkiye.org/tr/recipes/gavurdagi-salatasi/",
           "https://yemek.com/tarif/gavurdagi/",
           "https://esenler.bel.tr/esenler-kadin/yemek-tarifleri/gavurdagi-salatasi/"
         ],
-        "note": "Турецкая региональная рецептура, на двоих"
+        "note": "Турецкая региональная рецептура, на двоих\nVerified replacement 2026-11-19: Original kısıkates server 502 replaced by live Turkish Gavurdagi recipe containing tomatoes, onion, walnuts, parsley, olive oil, pomegranate molasses and sumac. Reference rests 30min; our quick variant serves immediately, explain this is editorial short version."
       },
       "photo": null,
       "imagePublishingBlocked": true,
@@ -5526,10 +5526,10 @@
         "stage": "editorial_research",
         "sources": [
           "https://www.turktarim.gov.tr/Haber/1037/antalyalilarin-kirmizi-cizgisi-antalya-piyazi",
-          "https://www.seriouseats.com/turkish-bean-salad-piyaz-recipe",
+          "https://thehappyfoodie.co.uk/recipes/tahinli-fasulye-piyaz-antalya-style-bean-salad-with-tahini-sauce/",
           "https://ozlemsturkishtable.com/2014/06/antalya-style-white-bean-salad-with-tahini-piyaz/"
         ],
-        "note": "Турецкая региональная рецептура, на двоих"
+        "note": "Турецкая региональная рецептура, на двоих\nVerified replacement 2026-11-19: SeriousEats slug missing; replaced with Özlem Warren recipe on Penguin site. Confirms Antalya white bean tahini sauce tomato onion parsley lemon, variant may add olives instead of boiled egg."
       },
       "photo": null,
       "imagePublishingBlocked": true,
@@ -8527,11 +8527,11 @@
       "sourceReview": {
         "stage": "editorial_research",
         "sources": [
-          "https://services.epicurious.com/recipes/food/views/yum-woon-sen-thai-glass-noodle-salad",
+          "https://www.marionskitchen.com/thai-glass-noodle-salad-yum-woon-sen/",
           "https://thaidata.uk/recipes/yum-woon-sen/",
           "https://cookpad.com/eng/recipes/15310719"
         ],
-        "note": "Оригинальные тайские вкусы, техника и адаптация на две порции"
+        "note": "Оригинальные тайские вкусы, техника и адаптация на две порции\nVerified replacement 2026-11-19: Epicurious services subdomain returned 502; Marion's Kitchen direct page matches glass noodle, pork mince, prawns and Thai lime-fish-sauce dressing."
       },
       "photo": null,
       "imagePublishingBlocked": true,
