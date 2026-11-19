@@ -1,0 +1,897 @@
+{
+  "project": "НАШ ВЕЧЕР",
+  "collection": "100 завтраков мира",
+  "country": "Италия",
+  "recipe_count": 10,
+  "is_published": false,
+  "verification_level": "editorial draft; no physical trials; individual recipe sources not yet fully checked",
+  "recipes": [
+    {
+      "id": "breakfast-it-11",
+      "collection_number": 11,
+      "country": "Италия",
+      "country_code": "IT",
+      "title": "Корнетто",
+      "original_name": "Cornetto",
+      "servings": 2,
+      "total_min": 600,
+      "ingredients": [
+        {
+          "name": "Пшеничная мука",
+          "amount": 300,
+          "unit": "г"
+        },
+        {
+          "name": "Молоко",
+          "amount": 135,
+          "unit": "мл"
+        },
+        {
+          "name": "Яйцо",
+          "amount": 1,
+          "unit": "шт."
+        },
+        {
+          "name": "Сахар",
+          "amount": 45,
+          "unit": "г"
+        },
+        {
+          "name": "Сухие дрожжи",
+          "amount": 4,
+          "unit": "г"
+        },
+        {
+          "name": "Сливочное масло для слоёв",
+          "amount": 125,
+          "unit": "г"
+        },
+        {
+          "name": "Сливочное масло в тесто",
+          "amount": 20,
+          "unit": "г"
+        },
+        {
+          "name": "Соль",
+          "amount": 4,
+          "unit": "г"
+        }
+      ],
+      "steps": [
+        {
+          "text": "Замеси муку, тёплое молоко, яйцо, сахар, дрожжи, соль и 20 г мягкого масла до гладкого теста, 8 минут.",
+          "timer_sec": 480
+        },
+        {
+          "text": "Накрой тесто и дай подняться при комнатной температуре около 60 минут; затем охлади 30 минут.",
+          "timer_sec": 5400
+        },
+        {
+          "text": "Раскатай холодное тесто прямоугольником. Распредели пласт холодного масла по половине, накрой второй половиной, защипни края.",
+          "timer_sec": 0
+        },
+        {
+          "text": "Раскатай и сложи втрое; охлади 30 минут. Повтори складывание ещё два раза, каждый раз охлаждая по 30 минут.",
+          "timer_sec": 5400
+        },
+        {
+          "text": "Раскатай до 4 мм, нарежь 6 длинных треугольников, сверни от основания к вершине, выгни полумесяцем.",
+          "timer_sec": 0
+        },
+        {
+          "text": "Дай сформованным корнетто подняться 90–120 минут до заметной воздушности, не перегревая масло. Смажь молоком.",
+          "timer_sec": 7200
+        },
+        {
+          "text": "Выпекай при 190 °C около 16–19 минут до румяной слоистой корочки. Остуди 10 минут.",
+          "timer_sec": 1140
+        }
+      ],
+      "notes": "Получится 6 небольших корнетто на двоих. Масло нельзя растапливать при раскатке; длительная расстойка обязательна.",
+      "source_verification": {
+        "status": "country_tradition_reference_only_individual_recipe_requires_check",
+        "country_reference_url": "https://www.italia.it/en/italy/things-to-do/traditional-italian-breakfast-in-6-italian-cities"
+      },
+      "editorial_status": "complete_draft_pending_culinary_verification",
+      "photo_status": "deferred_by_user",
+      "publication_status": "unpublished"
+    },
+    {
+      "id": "breakfast-it-12",
+      "collection_number": 12,
+      "country": "Италия",
+      "country_code": "IT",
+      "title": "Маритоццо со взбитыми сливками",
+      "original_name": "Maritozzo",
+      "servings": 2,
+      "total_min": 215,
+      "ingredients": [
+        {
+          "name": "Пшеничная мука",
+          "amount": 260,
+          "unit": "г"
+        },
+        {
+          "name": "Молоко",
+          "amount": 120,
+          "unit": "мл"
+        },
+        {
+          "name": "Яйцо",
+          "amount": 1,
+          "unit": "шт."
+        },
+        {
+          "name": "Сахар для теста",
+          "amount": 40,
+          "unit": "г"
+        },
+        {
+          "name": "Сухие дрожжи",
+          "amount": 4,
+          "unit": "г"
+        },
+        {
+          "name": "Сливочное масло",
+          "amount": 35,
+          "unit": "г"
+        },
+        {
+          "name": "Апельсиновая цедра",
+          "amount": 4,
+          "unit": "г"
+        },
+        {
+          "name": "Соль",
+          "amount": 3,
+          "unit": "г"
+        },
+        {
+          "name": "Сливки 33%",
+          "amount": 220,
+          "unit": "мл"
+        },
+        {
+          "name": "Сахарная пудра",
+          "amount": 25,
+          "unit": "г"
+        }
+      ],
+      "steps": [
+        {
+          "text": "Смешай тёплое молоко, дрожжи, муку, яйцо, сахар, цедру и соль. Вымешивай 6 минут, затем вмешай масло.",
+          "timer_sec": 600
+        },
+        {
+          "text": "Оставь тесто под крышкой в тепле на 70–90 минут, пока объём не удвоится.",
+          "timer_sec": 5400
+        },
+        {
+          "text": "Раздели тесто на 4 части, придай форму продолговатых гладких булочек. Оставь ещё на 40–50 минут.",
+          "timer_sec": 3000
+        },
+        {
+          "text": "Выпекай при 180 °C 17–20 минут до золотистой корочки; полностью остуди около 30 минут.",
+          "timer_sec": 1200
+        },
+        {
+          "text": "Холодные сливки взбей с пудрой до устойчивых мягких пиков. Надрежь каждую булочку вдоль, не прорезая насквозь, наполни сливками.",
+          "timer_sec": 0
+        }
+      ],
+      "notes": "Сливки добавлять только после полного остывания булочек, иначе они растают.",
+      "source_verification": {
+        "status": "country_tradition_reference_only_individual_recipe_requires_check",
+        "country_reference_url": "https://www.italia.it/en/italy/things-to-do/traditional-italian-breakfast-in-6-italian-cities"
+      },
+      "editorial_status": "complete_draft_pending_culinary_verification",
+      "photo_status": "deferred_by_user",
+      "publication_status": "unpublished"
+    },
+    {
+      "id": "breakfast-it-13",
+      "collection_number": 13,
+      "country": "Италия",
+      "country_code": "IT",
+      "title": "Сфольятелла ричча с рикоттой",
+      "original_name": "Sfogliatella riccia",
+      "servings": 2,
+      "total_min": 780,
+      "ingredients": [
+        {
+          "name": "Пшеничная мука",
+          "amount": 320,
+          "unit": "г"
+        },
+        {
+          "name": "Вода",
+          "amount": 140,
+          "unit": "мл"
+        },
+        {
+          "name": "Соль",
+          "amount": 4,
+          "unit": "г"
+        },
+        {
+          "name": "Смалец или мягкое сливочное масло для слоёв",
+          "amount": 125,
+          "unit": "г"
+        },
+        {
+          "name": "Рикотта",
+          "amount": 200,
+          "unit": "г"
+        },
+        {
+          "name": "Манная крупа",
+          "amount": 55,
+          "unit": "г"
+        },
+        {
+          "name": "Молоко",
+          "amount": 140,
+          "unit": "мл"
+        },
+        {
+          "name": "Сахар",
+          "amount": 75,
+          "unit": "г"
+        },
+        {
+          "name": "Цукаты апельсиновые",
+          "amount": 35,
+          "unit": "г"
+        },
+        {
+          "name": "Корица",
+          "amount": 2,
+          "unit": "г"
+        }
+      ],
+      "steps": [
+        {
+          "text": "Замеси очень тугое тесто из муки, воды и соли. Оставь закрытым на 60 минут.",
+          "timer_sec": 3600
+        },
+        {
+          "text": "Раскатай тесто как можно тоньше, постепенно смазывая мягким смальцем или маслом, и сверни в очень плотный длинный рулет.",
+          "timer_sec": 0
+        },
+        {
+          "text": "Заверни рулет и убери в холодильник минимум на 6 часов, лучше на ночь.",
+          "timer_sec": 21600
+        },
+        {
+          "text": "Свари густую манку в молоке за 4–5 минут, остуди; смешай с рикоттой, сахаром, мелко рублеными цукатами и корицей.",
+          "timer_sec": 300
+        },
+        {
+          "text": "Нарежь охлаждённый рулет на 6 кружков по 2 см; каждый аккуратно раздвинь пальцами от центра, образуя конус из видимых концентрических слоёв.",
+          "timer_sec": 0
+        },
+        {
+          "text": "Наполни каждый конус 1–2 ложками начинки, аккуратно сомкни открытый край, не сплющивая наружные слои.",
+          "timer_sec": 0
+        },
+        {
+          "text": "Выпекай при 200 °C 25–30 минут до хорошо раскрытых золотистых слоёв. Перед подачей остуди 15 минут.",
+          "timer_sec": 1800
+        }
+      ],
+      "notes": "Очень трудоёмкий неаполитанский десерт: без отдыха холодного рулета характерное расслоение не получится.",
+      "source_verification": {
+        "status": "country_tradition_reference_only_individual_recipe_requires_check",
+        "country_reference_url": "https://www.italia.it/en/italy/things-to-do/traditional-italian-breakfast-in-6-italian-cities"
+      },
+      "editorial_status": "complete_draft_pending_culinary_verification",
+      "photo_status": "deferred_by_user",
+      "publication_status": "unpublished"
+    },
+    {
+      "id": "breakfast-it-14",
+      "collection_number": 14,
+      "country": "Италия",
+      "country_code": "IT",
+      "title": "Сицилийская гранита с бриошью",
+      "original_name": "Granita con brioche",
+      "servings": 2,
+      "total_min": 490,
+      "ingredients": [
+        {
+          "name": "Вода для граниты",
+          "amount": 250,
+          "unit": "мл"
+        },
+        {
+          "name": "Сахар для граниты",
+          "amount": 85,
+          "unit": "г"
+        },
+        {
+          "name": "Лимонный сок",
+          "amount": 100,
+          "unit": "мл"
+        },
+        {
+          "name": "Пшеничная мука для бриоши",
+          "amount": 240,
+          "unit": "г"
+        },
+        {
+          "name": "Молоко",
+          "amount": 85,
+          "unit": "мл"
+        },
+        {
+          "name": "Яйца",
+          "amount": 2,
+          "unit": "шт."
+        },
+        {
+          "name": "Сахар для теста",
+          "amount": 35,
+          "unit": "г"
+        },
+        {
+          "name": "Сухие дрожжи",
+          "amount": 4,
+          "unit": "г"
+        },
+        {
+          "name": "Сливочное масло",
+          "amount": 50,
+          "unit": "г"
+        },
+        {
+          "name": "Соль",
+          "amount": 3,
+          "unit": "г"
+        }
+      ],
+      "steps": [
+        {
+          "text": "Раствори сахар для граниты в тёплой воде, остуди, смешай с лимонным соком. Перелей в широкую ёмкость.",
+          "timer_sec": 0
+        },
+        {
+          "text": "Замораживай 4–5 часов, каждые 30–40 минут рыхли вилкой, чтобы получились мелкие ледяные кристаллы, а не монолит.",
+          "timer_sec": 18000
+        },
+        {
+          "text": "Для бриоши замеси муку, молоко, яйца, сахар, дрожжи, соль и масло до эластичного теста.",
+          "timer_sec": 600
+        },
+        {
+          "text": "Оставь тесто подниматься 75 минут, раздели на 4 булочки, сформуй маленький круглый «пучок» сверху и расстой ещё 40 минут.",
+          "timer_sec": 6900
+        },
+        {
+          "text": "Выпекай бриоши при 180 °C 18–22 минуты до румяности. Подавай тёплыми рядом с двумя чашами лимонной граниты.",
+          "timer_sec": 1320
+        }
+      ],
+      "notes": "Подача традиционно контрастная: ледяная гранита и нежная бриошь. Заморозка может идти параллельно приготовлению теста.",
+      "source_verification": {
+        "status": "country_tradition_reference_only_individual_recipe_requires_check",
+        "country_reference_url": "https://www.italia.it/en/italy/things-to-do/traditional-italian-breakfast-in-6-italian-cities"
+      },
+      "editorial_status": "complete_draft_pending_culinary_verification",
+      "photo_status": "deferred_by_user",
+      "publication_status": "unpublished"
+    },
+    {
+      "id": "breakfast-it-15",
+      "collection_number": 15,
+      "country": "Италия",
+      "country_code": "IT",
+      "title": "Бомболони с заварным кремом",
+      "original_name": "Bomboloni alla crema",
+      "servings": 2,
+      "total_min": 190,
+      "ingredients": [
+        {
+          "name": "Пшеничная мука",
+          "amount": 280,
+          "unit": "г"
+        },
+        {
+          "name": "Молоко в тесто",
+          "amount": 115,
+          "unit": "мл"
+        },
+        {
+          "name": "Яйцо",
+          "amount": 1,
+          "unit": "шт."
+        },
+        {
+          "name": "Сахар в тесто",
+          "amount": 35,
+          "unit": "г"
+        },
+        {
+          "name": "Сухие дрожжи",
+          "amount": 5,
+          "unit": "г"
+        },
+        {
+          "name": "Сливочное масло",
+          "amount": 35,
+          "unit": "г"
+        },
+        {
+          "name": "Соль",
+          "amount": 3,
+          "unit": "г"
+        },
+        {
+          "name": "Молоко для крема",
+          "amount": 230,
+          "unit": "мл"
+        },
+        {
+          "name": "Желтки для крема",
+          "amount": 2,
+          "unit": "шт."
+        },
+        {
+          "name": "Сахар для крема",
+          "amount": 45,
+          "unit": "г"
+        },
+        {
+          "name": "Кукурузный крахмал",
+          "amount": 18,
+          "unit": "г"
+        },
+        {
+          "name": "Растительное масло для фритюра",
+          "amount": 600,
+          "unit": "мл"
+        }
+      ],
+      "steps": [
+        {
+          "text": "Замеси муку, тёплое молоко, дрожжи, яйцо, сахар, соль и масло. Вымешивай 8 минут.",
+          "timer_sec": 480
+        },
+        {
+          "text": "Оставь подниматься 60–75 минут. Раскатай до 1,5 см, вырежи 6 кружков и дай им подняться ещё 35–45 минут.",
+          "timer_sec": 7200
+        },
+        {
+          "text": "Для крема разотри желтки с сахаром и крахмалом, влей тёплое молоко и вари на слабом огне 3–5 минут до густоты. Охлади под плёнкой.",
+          "timer_sec": 300
+        },
+        {
+          "text": "Нагрей фритюр до 170–175 °C. Жарь пончики по 2 минуты с каждой стороны небольшими партиями до полной готовности, поддерживая температуру.",
+          "timer_sec": 240
+        },
+        {
+          "text": "Обсуши пончики на бумаге. В остывших бомболони сделай отверстие и отсади холодный крем кондитерским мешком.",
+          "timer_sec": 0
+        }
+      ],
+      "notes": "Температура фритюра обязательна: слишком горячее масло обожжёт поверхность при сыром центре.",
+      "source_verification": {
+        "status": "country_tradition_reference_only_individual_recipe_requires_check",
+        "country_reference_url": "https://www.italia.it/en/italy/things-to-do/traditional-italian-breakfast-in-6-italian-cities"
+      },
+      "editorial_status": "complete_draft_pending_culinary_verification",
+      "photo_status": "deferred_by_user",
+      "publication_status": "unpublished"
+    },
+    {
+      "id": "breakfast-it-16",
+      "collection_number": 16,
+      "country": "Италия",
+      "country_code": "IT",
+      "title": "Кростата с джемом",
+      "original_name": "Crostata di marmellata",
+      "servings": 2,
+      "total_min": 105,
+      "ingredients": [
+        {
+          "name": "Пшеничная мука",
+          "amount": 200,
+          "unit": "г"
+        },
+        {
+          "name": "Сливочное масло",
+          "amount": 100,
+          "unit": "г"
+        },
+        {
+          "name": "Сахар",
+          "amount": 65,
+          "unit": "г"
+        },
+        {
+          "name": "Яйцо",
+          "amount": 1,
+          "unit": "шт."
+        },
+        {
+          "name": "Разрыхлитель",
+          "amount": 3,
+          "unit": "г"
+        },
+        {
+          "name": "Соль",
+          "amount": 2,
+          "unit": "г"
+        },
+        {
+          "name": "Абрикосовый джем",
+          "amount": 180,
+          "unit": "г"
+        }
+      ],
+      "steps": [
+        {
+          "text": "Разотри холодное масло с мукой и разрыхлителем до мелкой крошки. Быстро вмешай сахар, яйцо и соль.",
+          "timer_sec": 0
+        },
+        {
+          "text": "Собери тесто в диск, заверни и охлади 30 минут.",
+          "timer_sec": 1800
+        },
+        {
+          "text": "Отдели четверть теста для полосок. Остальное раскатай и выложи в форму диаметром 18 см, сформируй невысокий бортик.",
+          "timer_sec": 0
+        },
+        {
+          "text": "Распредели джем по тесту, сверху уложи решётку из тонких полосок оставшегося теста.",
+          "timer_sec": 0
+        },
+        {
+          "text": "Выпекай при 180 °C 30–35 минут до золотистых краёв. Остуди не менее 20 минут, прежде чем резать.",
+          "timer_sec": 2100
+        }
+      ],
+      "notes": "Выход 4 небольшие порции; на завтрак для двоих останется запас.",
+      "source_verification": {
+        "status": "country_tradition_reference_only_individual_recipe_requires_check",
+        "country_reference_url": "https://www.italia.it/en/italy/things-to-do/traditional-italian-breakfast-in-6-italian-cities"
+      },
+      "editorial_status": "complete_draft_pending_culinary_verification",
+      "photo_status": "deferred_by_user",
+      "publication_status": "unpublished"
+    },
+    {
+      "id": "breakfast-it-17",
+      "collection_number": 17,
+      "country": "Италия",
+      "country_code": "IT",
+      "title": "Пастиччотто с заварным кремом",
+      "original_name": "Pasticciotto leccese",
+      "servings": 2,
+      "total_min": 160,
+      "ingredients": [
+        {
+          "name": "Пшеничная мука",
+          "amount": 220,
+          "unit": "г"
+        },
+        {
+          "name": "Сливочное масло",
+          "amount": 110,
+          "unit": "г"
+        },
+        {
+          "name": "Сахар для теста",
+          "amount": 75,
+          "unit": "г"
+        },
+        {
+          "name": "Яйцо для теста",
+          "amount": 1,
+          "unit": "шт."
+        },
+        {
+          "name": "Молоко для крема",
+          "amount": 220,
+          "unit": "мл"
+        },
+        {
+          "name": "Желтки",
+          "amount": 2,
+          "unit": "шт."
+        },
+        {
+          "name": "Сахар для крема",
+          "amount": 45,
+          "unit": "г"
+        },
+        {
+          "name": "Кукурузный крахмал",
+          "amount": 18,
+          "unit": "г"
+        },
+        {
+          "name": "Ванильный сахар",
+          "amount": 5,
+          "unit": "г"
+        }
+      ],
+      "steps": [
+        {
+          "text": "Разотри масло с мукой и сахаром, добавь яйцо; быстро собери песочное тесто. Охлади 35 минут.",
+          "timer_sec": 2100
+        },
+        {
+          "text": "Для крема взбей желтки с сахаром и крахмалом, влей горячее молоко, верни в сотейник и готовь 4–5 минут до загустения, остуди.",
+          "timer_sec": 300
+        },
+        {
+          "text": "Раздели тесто на 8 частей. Выстели тонким тестом 4 овальные или небольшие круглые формочки, наполни холодным кремом, закрой тестом и защипни края.",
+          "timer_sec": 0
+        },
+        {
+          "text": "Сделай маленькие проколы сверху, смажь поверхность молоком. Выпекай при 185 °C 25–30 минут до золотистой корочки.",
+          "timer_sec": 1800
+        },
+        {
+          "text": "Подожди 15 минут до подачи: горячий крем внутри может обжечь.",
+          "timer_sec": 900
+        }
+      ],
+      "notes": "Крем обязан быть внутри закрытого песочного пирожного, не открытый тарт.",
+      "source_verification": {
+        "status": "country_tradition_reference_only_individual_recipe_requires_check",
+        "country_reference_url": "https://www.italia.it/en/italy/things-to-do/traditional-italian-breakfast-in-6-italian-cities"
+      },
+      "editorial_status": "complete_draft_pending_culinary_verification",
+      "photo_status": "deferred_by_user",
+      "publication_status": "unpublished"
+    },
+    {
+      "id": "breakfast-it-18",
+      "collection_number": 18,
+      "country": "Италия",
+      "country_code": "IT",
+      "title": "Генуэзская фокачча",
+      "original_name": "Focaccia genovese",
+      "servings": 2,
+      "total_min": 180,
+      "ingredients": [
+        {
+          "name": "Пшеничная мука",
+          "amount": 300,
+          "unit": "г"
+        },
+        {
+          "name": "Вода",
+          "amount": 190,
+          "unit": "мл"
+        },
+        {
+          "name": "Сухие дрожжи",
+          "amount": 4,
+          "unit": "г"
+        },
+        {
+          "name": "Сахар",
+          "amount": 5,
+          "unit": "г"
+        },
+        {
+          "name": "Соль в тесто",
+          "amount": 6,
+          "unit": "г"
+        },
+        {
+          "name": "Оливковое масло в тесто",
+          "amount": 20,
+          "unit": "мл"
+        },
+        {
+          "name": "Оливковое масло для формы и верха",
+          "amount": 35,
+          "unit": "мл"
+        },
+        {
+          "name": "Вода для эмульсии",
+          "amount": 25,
+          "unit": "мл"
+        },
+        {
+          "name": "Соль для эмульсии",
+          "amount": 3,
+          "unit": "г"
+        }
+      ],
+      "steps": [
+        {
+          "text": "Соедини муку, воду, дрожжи, сахар, соль и 20 мл масла. Вымешивай 8 минут до гладкого, довольно мягкого теста.",
+          "timer_sec": 480
+        },
+        {
+          "text": "Оставь тесто в смазанной миске на 60–75 минут до увеличения.",
+          "timer_sec": 4500
+        },
+        {
+          "text": "Переложи на противень примерно 20×25 см, смазанный маслом, аккуратно растяни тесто. Дай отдохнуть 25 минут и растяни до краёв.",
+          "timer_sec": 1500
+        },
+        {
+          "text": "Смешай 25 мл воды, 35 мл масла и 3 г соли. Надави пальцами множество глубоких ямок в тесте, полей эмульсией.",
+          "timer_sec": 0
+        },
+        {
+          "text": "Оставь ещё на 25 минут. Выпекай при 220 °C 17–20 минут до уверенной золотистости.",
+          "timer_sec": 1200
+        }
+      ],
+      "notes": "Настоящая генуэзская фокачча без целых зубчиков чеснока или крупных кусков сыра.",
+      "source_verification": {
+        "status": "country_tradition_reference_only_individual_recipe_requires_check",
+        "country_reference_url": "https://www.italia.it/en/italy/things-to-do/traditional-italian-breakfast-in-6-italian-cities"
+      },
+      "editorial_status": "complete_draft_pending_culinary_verification",
+      "photo_status": "deferred_by_user",
+      "publication_status": "unpublished"
+    },
+    {
+      "id": "breakfast-it-19",
+      "collection_number": 19,
+      "country": "Италия",
+      "country_code": "IT",
+      "title": "Печенье бискотти для утреннего кофе",
+      "original_name": "Biscotti da inzuppo",
+      "servings": 2,
+      "total_min": 55,
+      "ingredients": [
+        {
+          "name": "Пшеничная мука",
+          "amount": 250,
+          "unit": "г"
+        },
+        {
+          "name": "Яйца",
+          "amount": 2,
+          "unit": "шт."
+        },
+        {
+          "name": "Сахар",
+          "amount": 80,
+          "unit": "г"
+        },
+        {
+          "name": "Молоко",
+          "amount": 35,
+          "unit": "мл"
+        },
+        {
+          "name": "Растительное масло без запаха",
+          "amount": 40,
+          "unit": "мл"
+        },
+        {
+          "name": "Разрыхлитель",
+          "amount": 7,
+          "unit": "г"
+        },
+        {
+          "name": "Цедра лимона",
+          "amount": 4,
+          "unit": "г"
+        },
+        {
+          "name": "Соль",
+          "amount": 2,
+          "unit": "г"
+        }
+      ],
+      "steps": [
+        {
+          "text": "Смешай яйца с сахаром, молоком, маслом, цедрой и солью до однородности.",
+          "timer_sec": 0
+        },
+        {
+          "text": "Всыпь муку с разрыхлителем, быстро замеси мягкое тесто, которое держит форму. Если липнет, дай постоять 10 минут.",
+          "timer_sec": 600
+        },
+        {
+          "text": "Сформуй 10 коротких толстых палочек, разложи с зазорами на противне.",
+          "timer_sec": 0
+        },
+        {
+          "text": "Выпекай при 180 °C 15–18 минут до лёгкого румянца и сухой поверхности. Остуди 10 минут.",
+          "timer_sec": 1080
+        }
+      ],
+      "notes": "Это мягкое домашнее печенье для макания в кофе, а не дважды запечённые твёрдые тосканские кантуччи.",
+      "source_verification": {
+        "status": "country_tradition_reference_only_individual_recipe_requires_check",
+        "country_reference_url": "https://www.italia.it/en/italy/things-to-do/traditional-italian-breakfast-in-6-italian-cities"
+      },
+      "editorial_status": "complete_draft_pending_culinary_verification",
+      "photo_status": "deferred_by_user",
+      "publication_status": "unpublished"
+    },
+    {
+      "id": "breakfast-it-20",
+      "collection_number": 20,
+      "country": "Италия",
+      "country_code": "IT",
+      "title": "Чамбеллоне - домашний пирог-кольцо",
+      "original_name": "Ciambellone",
+      "servings": 2,
+      "total_min": 75,
+      "ingredients": [
+        {
+          "name": "Пшеничная мука",
+          "amount": 240,
+          "unit": "г"
+        },
+        {
+          "name": "Яйца",
+          "amount": 2,
+          "unit": "шт."
+        },
+        {
+          "name": "Сахар",
+          "amount": 115,
+          "unit": "г"
+        },
+        {
+          "name": "Молоко",
+          "amount": 110,
+          "unit": "мл"
+        },
+        {
+          "name": "Растительное масло",
+          "amount": 80,
+          "unit": "мл"
+        },
+        {
+          "name": "Разрыхлитель",
+          "amount": 10,
+          "unit": "г"
+        },
+        {
+          "name": "Лимонная цедра",
+          "amount": 5,
+          "unit": "г"
+        },
+        {
+          "name": "Соль",
+          "amount": 2,
+          "unit": "г"
+        }
+      ],
+      "steps": [
+        {
+          "text": "Разогрей духовку до 175 °C. Смажь кольцевую форму диаметром 18–20 см и присыпь мукой.",
+          "timer_sec": 0
+        },
+        {
+          "text": "Взбей яйца с сахаром и солью 3–4 минуты до светлой пышной массы. Добавь масло, молоко и цедру.",
+          "timer_sec": 240
+        },
+        {
+          "text": "Просей муку с разрыхлителем. Аккуратно вмешай лопаткой, не оставляя комков.",
+          "timer_sec": 0
+        },
+        {
+          "text": "Перелей тесто в форму, заполняя не больше двух третей. Выпекай 35–42 минуты до сухой деревянной шпажки.",
+          "timer_sec": 2520
+        },
+        {
+          "text": "Остуди 15 минут в форме, затем аккуратно переверни на решётку. Нарежь 2 ломтика на завтрак, остальное сохрани.",
+          "timer_sec": 900
+        }
+      ],
+      "notes": "Это итальянский домашний бисквит-кольцо без кремовой начинки.",
+      "source_verification": {
+        "status": "country_tradition_reference_only_individual_recipe_requires_check",
+        "country_reference_url": "https://www.italia.it/en/italy/things-to-do/traditional-italian-breakfast-in-6-italian-cities"
+      },
+      "editorial_status": "complete_draft_pending_culinary_verification",
+      "photo_status": "deferred_by_user",
+      "publication_status": "unpublished"
+    }
+  ]
+}
