@@ -1,0 +1,249 @@
+{
+  "date": "2026-11-19",
+  "context": "PREPUBLICATION_FIRST_40",
+  "comparedFiles": [
+    "data/editorial/salads/01-russian.json",
+    "data/editorial/salads/02-italian.json",
+    "data/editorial/salads/03-french.json",
+    "data/editorial/salads/04-spanish.json"
+  ],
+  "canonicalCompared": "data/editorial/salads/world-100-catalog.json",
+  "differingCards": 24,
+  "structuralDifferences": 16,
+  "differences": [
+    {
+      "number": 11,
+      "id": "world-salad-it-001",
+      "fields": [
+        "steps",
+        "sourceReview"
+      ],
+      "structuralRecipeDifference": true
+    },
+    {
+      "number": 12,
+      "id": "world-salad-it-002",
+      "fields": [
+        "minutes",
+        "description",
+        "steps",
+        "sourceReview"
+      ],
+      "structuralRecipeDifference": true
+    },
+    {
+      "number": 13,
+      "id": "world-salad-it-003",
+      "fields": [
+        "steps"
+      ],
+      "structuralRecipeDifference": true
+    },
+    {
+      "number": 14,
+      "id": "world-salad-it-004",
+      "fields": [
+        "sourceReview"
+      ],
+      "structuralRecipeDifference": false
+    },
+    {
+      "number": 15,
+      "id": "world-salad-it-005",
+      "fields": [
+        "sourceReview"
+      ],
+      "structuralRecipeDifference": false
+    },
+    {
+      "number": 16,
+      "id": "world-salad-it-006",
+      "fields": [
+        "tip",
+        "sourceReview"
+      ],
+      "structuralRecipeDifference": true
+    },
+    {
+      "number": 17,
+      "id": "world-salad-it-007",
+      "fields": [
+        "minutes",
+        "steps",
+        "sourceReview"
+      ],
+      "structuralRecipeDifference": true
+    },
+    {
+      "number": 18,
+      "id": "world-salad-it-008",
+      "fields": [
+        "sourceReview"
+      ],
+      "structuralRecipeDifference": false
+    },
+    {
+      "number": 19,
+      "id": "world-salad-it-009",
+      "fields": [
+        "sourceReview"
+      ],
+      "structuralRecipeDifference": false
+    },
+    {
+      "number": 21,
+      "id": "world-salad-fr-001",
+      "fields": [
+        "sourceReview"
+      ],
+      "structuralRecipeDifference": false
+    },
+    {
+      "number": 23,
+      "id": "world-salad-fr-003",
+      "fields": [
+        "sourceReview"
+      ],
+      "structuralRecipeDifference": false
+    },
+    {
+      "number": 26,
+      "id": "world-salad-fr-006",
+      "fields": [
+        "sourceReview"
+      ],
+      "structuralRecipeDifference": false
+    },
+    {
+      "number": 28,
+      "id": "world-salad-fr-008",
+      "fields": [
+        "sourceReview"
+      ],
+      "structuralRecipeDifference": false
+    },
+    {
+      "number": 29,
+      "id": "world-salad-fr-009",
+      "fields": [
+        "ingredients",
+        "steps",
+        "tip",
+        "photoBrief",
+        "sourceReview"
+      ],
+      "structuralRecipeDifference": true
+    },
+    {
+      "number": 31,
+      "id": "world-salad-es-001",
+      "fields": [
+        "ingredients",
+        "steps",
+        "tip",
+        "warn",
+        "photoBrief",
+        "sourceReview"
+      ],
+      "structuralRecipeDifference": true
+    },
+    {
+      "number": 32,
+      "id": "world-salad-es-002",
+      "fields": [
+        "steps",
+        "tip",
+        "warn"
+      ],
+      "structuralRecipeDifference": true
+    },
+    {
+      "number": 33,
+      "id": "world-salad-es-003",
+      "fields": [
+        "steps",
+        "tip",
+        "warn",
+        "sourceReview"
+      ],
+      "structuralRecipeDifference": true
+    },
+    {
+      "number": 34,
+      "id": "world-salad-es-004",
+      "fields": [
+        "steps",
+        "tip",
+        "warn"
+      ],
+      "structuralRecipeDifference": true
+    },
+    {
+      "number": 35,
+      "id": "world-salad-es-005",
+      "fields": [
+        "steps",
+        "tip",
+        "warn",
+        "sourceReview"
+      ],
+      "structuralRecipeDifference": true
+    },
+    {
+      "number": 36,
+      "id": "world-salad-es-006",
+      "fields": [
+        "minutes",
+        "steps",
+        "tip",
+        "warn",
+        "sourceReview"
+      ],
+      "structuralRecipeDifference": true
+    },
+    {
+      "number": 37,
+      "id": "world-salad-es-007",
+      "fields": [
+        "steps",
+        "tip",
+        "warn",
+        "sourceReview"
+      ],
+      "structuralRecipeDifference": true
+    },
+    {
+      "number": 38,
+      "id": "world-salad-es-008",
+      "fields": [
+        "steps",
+        "tip",
+        "warn"
+      ],
+      "structuralRecipeDifference": true
+    },
+    {
+      "number": 39,
+      "id": "world-salad-es-009",
+      "fields": [
+        "steps",
+        "tip",
+        "warn",
+        "sourceReview"
+      ],
+      "structuralRecipeDifference": true
+    },
+    {
+      "number": 40,
+      "id": "world-salad-es-010",
+      "fields": [
+        "steps",
+        "tip",
+        "warn"
+      ],
+      "structuralRecipeDifference": true
+    }
+  ],
+  "releaseBlocked": true,
+  "note": "Не выбирать молча более новую или правильную редакцию, источник может быть правлен параллельным заданием. Сопоставить изменения и синхронизировать после содержательной проверки."
+}
