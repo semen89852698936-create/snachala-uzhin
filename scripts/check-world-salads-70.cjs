@@ -1,0 +1,43 @@
+// Release gate for НАШ ВЕЧЕР: 70 world salads; first 60 immutable; 10 exact user-approved photos.
+'use strict';
+const fs = require('node:fs');
+const path = require('node:path');
+const crypto = require('node:crypto');
+const vm = require('node:vm');
+const assert = require('node:assert/strict');
+const root = path.join(__dirname, '..');
+const read = p => fs.readFileSync(path.join(root,p),'utf8');
+const first60 = JSON.parse(read('data/world-salads-60-for-site.json'));
+const all70 = JSON.parse(read('data/world-salads-70-for-site.json'));
+assert.equal(first60.length, 60);
+assert.equal(all70.length, 70);
+assert.deepEqual(all70.slice(0,60),first60,'Approved salads 1–60 were modified');
+assert.equal(new Set(all70.map(r=>r.id)).size,70,'Duplicate ID');
+const expectedNames=["Табуле с петрушкой и булгуром","Фаттуш с хрустящей питой","Рахеб из печёных баклажанов","Малфуф с капустой и лимоном","Огурцы с йогуртом и мятой","Ливанский картофельный салат","Стручковая фасоль с лимоном","Салат из нута с зеленью","Салат из рукколы с сумахом","Свежий зелёный тимьян с луком"];
+const expectedSha256=["6f1d6d48348300365f456d7d9d614f8eac4314307592955f91ea8176a5a38dea","c4cfeb4a1470b0b249efe02686474762cf389edc0597bcf65e5114dd3d52e654","bfe21841c6a954b34d9a0253c4b37dd0399a70385661d50d4151cbd3cc6a3633","9b2c0218cb2ce6be337e498ef49c8dcff3374fef331d3dd082b41d98d22f64dd","a38f09901be1073633b0bd8bbb0c2f1c6e13c62452fb7e46025ae47d886c3a42","36c9aa46f81c2faec2af7afefa0ec4789cc040110c1f870d5d79219f96d3b50c","6f45065e4e8fac286a62a945a4439cc77bc76dfacfa4a930b50ee0bde0e795a9","97ba5301b2095ca62cd2d44eddff54dc16a539ac2f196c6250b47f608cd50140","2d3fa24f163e026e3e590bd47915559b0232c851b0f3822cb1ccb8d953c7f8c0","57f6f036ac7dcaf5178b25f16d71fc45f1b0f629a12920dd205902290991877f"];
+for (let i=0;i<10;i++) {
+  const r=all70[i+60];
+  const n=61+i;
+  assert.equal(r.id,'world-salad-07-'+String(i+1).padStart(2,'0'));
+  assert.equal(r.title,expectedNames[i]);
+  assert.equal(r.cuisine,'Ливанская');
+  assert.equal(r.base,2);
+  assert.ok(r.ingredients?.length>0 && r.steps?.length===4,'Invalid recipe '+n);
+  assert.ok(r.steps.every(s=>Number.isInteger(s.timer)&&s.timer>=0),'Invalid timer '+n);
+  const p='/assets/world-salads/'+n+'_world-salad-07-'+String(i+1).padStart(2,'0')+'.webp';
+  assert.equal(r.photo,p,'Invalid photo URL #'+n);
+  const local=path.join(root,p.replace(/^[/]/,''));
+  assert.ok(fs.existsSync(local),'Missing approved photo #'+n);
+  const buf=fs.readFileSync(local);
+  assert.ok(buf.length>100000,'Photo too small #'+n);
+  assert.equal(buf.toString('ascii',0,4),'RIFF');
+  assert.equal(buf.toString('ascii',8,12),'WEBP');
+  assert.equal(crypto.createHash('sha256').update(buf).digest('hex'),expectedSha256[i],'Wrong or replaced approved photo #'+n);
+}
+const sandbox={window:{}};
+vm.runInNewContext(read('assets/world-salads-40.js'),sandbox);
+const active=sandbox.window.WORLD_SALADS_RECIPES;
+assert.equal(active?.length,70,'The site script does not expose 70 salads');
+for (let i=0;i<70;i++) assert.equal(active[i].id,all70[i].id,'Site catalog mismatch #'+(i+1));
+for (const html of ['index.html','full-catalog/index.html']) assert.ok(read(html).includes('world-salads-40.js'),'Salads loader missing from '+html);
+console.log('PASS: 70 salads; first 60 intact; 10 exact approved Lebanese WebPs; timers and loaders valid');
