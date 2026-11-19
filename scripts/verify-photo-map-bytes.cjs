@@ -17,7 +17,7 @@ for(let i=0;i<photos.length;i++){
  const content=fs.readFileSync(path.join(root,p.path.slice(1)));
  if(content.length!==p.bytes)throw Error("byte count mismatch #"+p.n+" "+p.path);
  if(content.toString("ascii",0,4)!=="RIFF"||content.toString("ascii",8,12)!=="WEBP"||content.readUInt32LE(4)+8!==content.length)throw Error("invalid RIFF WebP #"+p.n);
- const sha=crypto.createHash("sha1").update(Buffer.from("blob "+content.length+"\\0")).update(content).digest("hex");
+ const sha=crypto.createHash("sha1").update(Buffer.from("blob "+content.length+String.fromCharCode(0))).update(content).digest("hex");
  if(sha!==p.sha)throw Error("incorrect Git blob hash #"+p.n+" "+p.path);
  if(seenHashes.has(sha))throw Error("duplicate image content #"+p.n);
  seenHashes.add(sha);
