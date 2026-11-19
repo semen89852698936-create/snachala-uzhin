@@ -6,23 +6,8 @@
   "approvedRecipes": 40,
   "originalCountOfConflictingCards": 24,
   "originalStructuralConflicts": 16,
-  "currentDifferences": [
-    {
-      "n": 35,
-      "id": "world-salad-es-005",
-      "fields": [
-        "sourceReview"
-      ]
-    },
-    {
-      "n": 38,
-      "id": "world-salad-es-008",
-      "fields": [
-        "sourceReview"
-      ]
-    }
-  ],
-  "completed": false,
+  "currentDifferences": [],
+  "completed": true,
   "decision": "Use edited compiled editorial variants for 24 affected recipes, synchronize source 10-recipe batches; require source re-audit if later edited.",
   "verifiedExamples": [
     {
@@ -71,5 +56,8 @@
     "40 original photo files must be individually verified & installed",
     "source audit of all 40 recipes not independently completed",
     "staging UI and deployed build not smoke-tested"
-  ]
+  ],
+  "reconciledAt": "2026-11-19",
+  "branch": "release-candidate/first-40-salads-20261119",
+  "evidence": "Compared source card, compiled card and isolated staging JSON over id/title/minutes/description/ingredients/steps/tip/warn/photoBrief/sourceReview. Detailed independent web source audit remains separate."
 }
