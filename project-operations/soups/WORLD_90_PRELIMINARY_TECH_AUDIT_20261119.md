@@ -9,7 +9,7 @@
 ## Предметные замечания и независимые источники
 
 - **№19 Месчуа.** Состав нут + каннеллини + полба подтверждён региональным источником La Mia Liguria и La Cucina Italiana. Температура, замачивание и сроки варки зависят от сорта. https://lamialiguria.it/en/2024/09/mesciua/ ; https://www.lacucinaitaliana.it/ricetta/primi/mesciua/ .
-- **№54 Тонкоцу-рамен.** Способ длительного активного кипячения свиных костей 8–12 часов согласуется с Just One Cookbook и Joshua Weissman. В строке ингредиентов опечатка «чашу готовая свинина»: требуется «готовая свинина тясю (chashu)». https://www.justonecookbook.com/easy-tonkotsu-ramen-recipe/ ; https://www.joshuaweissman.com/recipes/best-tonkotsu-ramen-recipe .
+- **№54 Тонкоцу-рамен.** Способ длительного активного кипячения свиных костей 8–12 часов согласуется с Just One Cookbook и Joshua Weissman. Опечатка «чашу готовая свинина» исправлена на «готовая свинина тясю (chashu)» в исходной Markdown-карточке и собранном JSON (коммит 19ed8b6). https://www.justonecookbook.com/easy-tonkotsu-ramen-recipe/ ; https://www.joshuaweissman.com/recipes/best-tonkotsu-ramen-recipe .
 - **№98 Янроу паомо.** Источники Flavor and Fortune и ThingsAsian описывают заливку измельчённого хлеба в миске; другие рецепты кратко проваривают хлеб с лапшой в бульоне. Оба подхода встречаются, но надо явно выбрать один и обеспечить пропитывание хлеба. https://www.flavorandfortune.com/ffdataaccess/recipe.php?ID=1165 ; https://thingsasian.com/node/1915.html ; https://www.nationaldishrecipes.com/national-dish-china-yangrou-paomo-recipe/ .
 - **№99 Лосунтан.** The Woks of Life описывает шанхайский вариант с говяжьим хвостом, варкой в общей кастрюле с овощами; Made With Lau описывает гонконгский вариант со свиными рёбрами. Разные региональные варианты не должны автоматически считаться тремя идентичными рецептами. https://thewoksoflife.com/red-vegetable-soup-shanghai-luo-song-tang/ ; https://www.madewithlau.com/recipes/cantonese-borscht-soup .
 
@@ -257,7 +257,7 @@
 ### №54. Тонкоцу-рамен
 
 - Шаги без числового времени: 1, 2, 3, 4, 5
-- Опечатка в ингредиентах: «чашу готовая свинина», должно быть «свинина тясю (chashu), уже готовая».
+- Исправлено в ветке: ингредиент «готовая свинина тясю (chashu) 150 г».
 - Дальше: прочитать каждый из 3 исходных рецептов; проверить состав и граммовки на 2 порции; согласовать длительность и состояние готовности; отдельно проверить визуальный эталон и фото. Ссылки: https://www.justonecookbook.com/easy-tonkotsu-ramen-recipe/ | https://www.epicurious.com/recipes/food/views/tonkotsu-ramen | https://www.thekitchn.com/tonkotsu-ramen-recipe-23636995
 
 ### №55. Тондзиру со свининой
