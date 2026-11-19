@@ -1,0 +1,5971 @@
+{
+  "collection": "НАШ ВЕЧЕР. 100 супов",
+  "status": "CANDIDATE_TIMER_AUDIT_NOT_APPROVED",
+  "note": "This is an extraction of stated time durations from 504 steps, NOT an end-to-end cooked/verified timer plan. A step can include separate soaking, simmering, and seasoning phases. Never automatically set a single timer for a multi-duration step. Readiness checks take precedence over time. Source comparisons remain pending.",
+  "stats": {
+    "steps": 504,
+    "numeric": 264,
+    "nonNumeric": 240,
+    "multi": 28,
+    "condition": 90
+  },
+  "recipes": [
+    {
+      "id": 1,
+      "title": "Борщ с говядиной",
+      "cuisine": "Русская",
+      "step_timings": [
+        {
+          "step": 1,
+          "time_candidates": [
+            {
+              "min_seconds": 4800,
+              "max_seconds": 6000,
+              "phrase": "80–100 минут"
+            }
+          ],
+          "requires_readiness_check": true,
+          "mode": "CANDIDATE_DURATION_NOT_APPROVED",
+          "no_auto_timer_reason": null
+        },
+        {
+          "step": 2,
+          "time_candidates": [],
+          "requires_readiness_check": true,
+          "mode": "MANUAL_OR_UNTIMED",
+          "no_auto_timer_reason": "No numeric duration stated; may be preparation or plating"
+        },
+        {
+          "step": 3,
+          "time_candidates": [
+            {
+              "min_seconds": 300,
+              "max_seconds": 420,
+              "phrase": "5–7 минут"
+            },
+            {
+              "min_seconds": 900,
+              "max_seconds": 1200,
+              "phrase": "15–20 минут"
+            }
+          ],
+          "requires_readiness_check": false,
+          "mode": "REQUIRES_HUMAN_SEQUENCE_REVIEW",
+          "no_auto_timer_reason": null
+        },
+        {
+          "step": 4,
+          "time_candidates": [
+            {
+              "min_seconds": 480,
+              "max_seconds": 480,
+              "phrase": "8 минут"
+            },
+            {
+              "min_seconds": 420,
+              "max_seconds": 600,
+              "phrase": "7–10 минут"
+            }
+          ],
+          "requires_readiness_check": true,
+          "mode": "REQUIRES_HUMAN_SEQUENCE_REVIEW",
+          "no_auto_timer_reason": null
+        },
+        {
+          "step": 5,
+          "time_candidates": [
+            {
+              "min_seconds": 300,
+              "max_seconds": 300,
+              "phrase": "5 минут"
+            }
+          ],
+          "requires_readiness_check": false,
+          "mode": "CANDIDATE_DURATION_NOT_APPROVED",
+          "no_auto_timer_reason": null
+        },
+        {
+          "step": 6,
+          "time_candidates": [
+            {
+              "min_seconds": 900,
+              "max_seconds": 1200,
+              "phrase": "15–20 минут"
+            }
+          ],
+          "requires_readiness_check": false,
+          "mode": "CANDIDATE_DURATION_NOT_APPROVED",
+          "no_auto_timer_reason": null
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Щи из квашеной капусты с говядиной",
+      "cuisine": "Русская",
+      "step_timings": [
+        {
+          "step": 1,
+          "time_candidates": [
+            {
+              "min_seconds": 4800,
+              "max_seconds": 6000,
+              "phrase": "80–100 минут"
+            }
+          ],
+          "requires_readiness_check": false,
+          "mode": "CANDIDATE_DURATION_NOT_APPROVED",
+          "no_auto_timer_reason": null
+        },
+        {
+          "step": 2,
+          "time_candidates": [],
+          "requires_readiness_check": false,
+          "mode": "MANUAL_OR_UNTIMED",
+          "no_auto_timer_reason": "No numeric duration stated; may be preparation or plating"
+        },
+        {
+          "step": 3,
+          "time_candidates": [
+            {
+              "min_seconds": 300,
+              "max_seconds": 300,
+              "phrase": "5 минут"
+            },
+            {
+              "min_seconds": 1800,
+              "max_seconds": 2400,
+              "phrase": "30–40 минут"
+            }
+          ],
+          "requires_readiness_check": false,
+          "mode": "REQUIRES_HUMAN_SEQUENCE_REVIEW",
+          "no_auto_timer_reason": null
+        },
+        {
+          "step": 4,
+          "time_candidates": [
+            {
+              "min_seconds": 720,
+              "max_seconds": 900,
+              "phrase": "12–15 минут"
+            }
+          ],
+          "requires_readiness_check": true,
+          "mode": "CANDIDATE_DURATION_NOT_APPROVED",
+          "no_auto_timer_reason": null
+        },
+        {
+          "step": 5,
+          "time_candidates": [
+            {
+              "min_seconds": 600,
+              "max_seconds": 900,
+              "phrase": "10–15 минут"
+            },
+            {
+              "min_seconds": 600,
+              "max_seconds": 600,
+              "phrase": "10 минут"
+            }
+          ],
+          "requires_readiness_check": false,
+          "mode": "REQUIRES_HUMAN_SEQUENCE_REVIEW",
+          "no_auto_timer_reason": null
+        },
+        {
+          "step": 6,
+          "time_candidates": [],
+          "requires_readiness_check": false,
+          "mode": "MANUAL_OR_UNTIMED",
+          "no_auto_timer_reason": "No numeric duration stated; may be preparation or plating"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Рассольник ленинградский",
+      "cuisine": "Русская",
+      "step_timings": [
+        {
+          "step": 1,
+          "time_candidates": [
+            {
+              "min_seconds": 2400,
+              "max_seconds": 3600,
+              "phrase": "40–60 минут"
+            }
+          ],
+          "requires_readiness_check": true,
+          "mode": "CANDIDATE_DURATION_NOT_APPROVED",
+          "no_auto_timer_reason": null
+        },
+        {
+          "step": 2,
+          "time_candidates": [],
+          "requires_readiness_check": false,
+          "mode": "MANUAL_OR_UNTIMED",
+          "no_auto_timer_reason": "No numeric duration stated; may be preparation or plating"
+        },
+        {
+          "step": 3,
+          "time_candidates": [
+            {
+              "min_seconds": 300,
+              "max_seconds": 420,
+              "phrase": "5–7 минут"
+            },
+            {
+              "min_seconds": 600,
+              "max_seconds": 900,
+              "phrase": "10–15 минут"
+            }
+          ],
+          "requires_readiness_check": false,
+          "mode": "REQUIRES_HUMAN_SEQUENCE_REVIEW",
+          "no_auto_timer_reason": null
+        },
+        {
+          "step": 4,
+          "time_candidates": [
+            {
+              "min_seconds": 480,
+              "max_seconds": 600,
+              "phrase": "8–10 минут"
+            },
+            {
+              "min_seconds": 300,
+              "max_seconds": 420,
+              "phrase": "5–7 минут"
+            }
+          ],
+          "requires_readiness_check": true,
+          "mode": "REQUIRES_HUMAN_SEQUENCE_REVIEW",
+          "no_auto_timer_reason": null
+        },
+        {
+          "step": 5,
+          "time_candidates": [
+            {
+              "min_seconds": 600,
+              "max_seconds": 600,
+              "phrase": "10 минут"
+            }
+          ],
+          "requires_readiness_check": false,
+          "mode": "CANDIDATE_DURATION_NOT_APPROVED",
+          "no_auto_timer_reason": null
+        },
+        {
+          "step": 6,
+          "time_candidates": [],
+          "requires_readiness_check": false,
+          "mode": "MANUAL_OR_UNTIMED",
+          "no_auto_timer_reason": "No numeric duration stated; may be preparation or plating"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "title": "Солянка мясная сборная",
+      "cuisine": "Русская",
+      "step_timings": [
+        {
+          "step": 1,
+          "time_candidates": [
+            {
+              "min_seconds": 4800,
+              "max_seconds": 6000,
+              "phrase": "80–100 минут"
+            }
+          ],
+          "requires_readiness_check": true,
+          "mode": "CANDIDATE_DURATION_NOT_APPROVED",
+          "no_auto_timer_reason": null
+        },
+        {
+          "step": 2,
+          "time_candidates": [],
+          "requires_readiness_check": false,
+          "mode": "MANUAL_OR_UNTIMED",
+          "no_auto_timer_reason": "No numeric duration stated; may be preparation or plating"
+        },
+        {
+          "step": 3,
+          "time_candidates": [
+            {
+              "min_seconds": 300,
+              "max_seconds": 300,
+              "phrase": "5 минут"
+            },
+            {
+              "min_seconds": 120,
+              "max_seconds": 120,
+              "phrase": "2 минуты"
+            },
+            {
+              "min_seconds": 600,
+              "max_seconds": 600,
+              "phrase": "10 минут"
+            }
+          ],
+          "requires_readiness_check": false,
+          "mode": "REQUIRES_HUMAN_SEQUENCE_REVIEW",
+          "no_auto_timer_reason": null
+        },
+        {
+          "step": 4,
+          "time_candidates": [
+            {
+              "min_seconds": 420,
+              "max_seconds": 600,
+              "phrase": "7–10 минут"
+            }
+          ],
+          "requires_readiness_check": false,
+          "mode": "CANDIDATE_DURATION_NOT_APPROVED",
+          "no_auto_timer_reason": null
+        },
+        {
+          "step": 5,
+          "time_candidates": [
+            {
+              "min_seconds": 120,
+              "max_seconds": 120,
+              "phrase": "2 минуты"
+            },
+            {
+              "min_seconds": 600,
+              "max_seconds": 600,
+              "phrase": "10 минут"
+            }
+          ],
+          "requires_readiness_check": false,
+          "mode": "REQUIRES_HUMAN_SEQUENCE_REVIEW",
+          "no_auto_timer_reason": null
+        },
+        {
+          "step": 6,
+          "time_candidates": [],
+          "requires_readiness_check": false,
+          "mode": "MANUAL_OR_UNTIMED",
+          "no_auto_timer_reason": "No numeric duration stated; may be preparation or plating"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "title": "Уха из судака",
+      "cuisine": "Русская",
+      "step_timings": [
+        {
+          "step": 1,
+          "time_candidates": [],
+          "requires_readiness_check": false,
+          "mode": "MANUAL_OR_UNTIMED",
+          "no_auto_timer_reason": "No numeric duration stated; may be preparation or plating"
+        },
+        {
+          "step": 2,
+          "time_candidates": [
+            {
+              "min_seconds": 1500,
+              "max_seconds": 1800,
+              "phrase": "25–30 минут"
+            }
+          ],
+          "requires_readiness_check": false,
+          "mode": "CANDIDATE_DURATION_NOT_APPROVED",
+          "no_auto_timer_reason": null
+        },
+        {
+          "step": 3,
+          "time_candidates": [
+            {
+              "min_seconds": 720,
+              "max_seconds": 900,
+              "phrase": "12–15 минут"
+            }
+          ],
+          "requires_readiness_check": false,
+          "mode": "CANDIDATE_DURATION_NOT_APPROVED",
+          "no_auto_timer_reason": null
+        },
+        {
+          "step": 4,
+          "time_candidates": [
+            {
+              "min_seconds": 300,
+              "max_seconds": 480,
+              "phrase": "5–8 минут"
+            }
+          ],
+          "requires_readiness_check": true,
+          "mode": "CANDIDATE_DURATION_NOT_APPROVED",
+          "no_auto_timer_reason": null
+        },
+        {
+          "step": 5,
+          "time_candidates": [
+            {
+              "min_seconds": 300,
+              "max_seconds": 300,
+              "phrase": "5 минут"
+            }
+          ],
+          "requires_readiness_check": false,
+          "mode": "CANDIDATE_DURATION_NOT_APPROVED",
+          "no_auto_timer_reason": null
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "title": "Окрошка на квасе с говядиной",
+      "cuisine": "Русская",
+      "step_timings": [
+        {
+          "step": 1,
+          "time_candidates": [],
+          "requires_readiness_check": true,
+          "mode": "MANUAL_OR_UNTIMED",
+          "no_auto_timer_reason": "No numeric duration stated; may be preparation or plating"
+        },
+        {
+          "step": 2,
+          "time_candidates": [],
+          "requires_readiness_check": false,
+          "mode": "MANUAL_OR_UNTIMED",
+          "no_auto_timer_reason": "No numeric duration stated; may be preparation or plating"
+        },
+        {
+          "step": 3,
+          "time_candidates": [],
+          "requires_readiness_check": false,
+          "mode": "MANUAL_OR_UNTIMED",
+          "no_auto_timer_reason": "No numeric duration stated; may be preparation or plating"
+        },
+        {
+          "step": 4,
+          "time_candidates": [],
+          "requires_readiness_check": false,
+          "mode": "MANUAL_OR_UNTIMED",
+          "no_auto_timer_reason": "No numeric duration stated; may be preparation or plating"
+        },
+        {
+          "step": 5,
+          "time_candidates": [],
+          "requires_readiness_check": false,
+          "mode": "MANUAL_OR_UNTIMED",
+          "no_auto_timer_reason": "No numeric duration stated; may be preparation or plating"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "title": "Зелёные щи со щавелем и яйцом",
+      "cuisine": "Русская",
+      "step_timings": [
+        {
+          "step": 1,
+          "time_candidates": [],
+          "requires_readiness_check": false,
+          "mode": "MANUAL_OR_UNTIMED",
+          "no_auto_timer_reason": "No numeric duration stated; may be preparation or plating"
+        },
+        {
+          "step": 2,
+          "time_candidates": [
+            {
+              "min_seconds": 720,
+              "max_seconds": 720,
+              "phrase": "12 минут"
+            }
+          ],
+          "requires_readiness_check": false,
+          "mode": "CANDIDATE_DURATION_NOT_APPROVED",
+          "no_auto_timer_reason": null
+        },
+        {
+          "step": 3,
+          "time_candidates": [
+            {
+              "min_seconds": 300,
+              "max_seconds": 360,
+              "phrase": "5–6 минут"
+            }
+          ],
+          "requires_readiness_check": true,
+          "mode": "CANDIDATE_DURATION_NOT_APPROVED",
+          "no_auto_timer_reason": null
+        },
+        {
+          "step": 4,
+          "time_candidates": [
+            {
+              "min_seconds": 120,
+              "max_seconds": 180,
+              "phrase": "2–3 минуты"
+            }
+          ],
+          "requires_readiness_check": false,
+          "mode": "CANDIDATE_DURATION_NOT_APPROVED",
+          "no_auto_timer_reason": null
+        },
+        {
+          "step": 5,
+          "time_candidates": [],
+          "requires_readiness_check": false,
+          "mode": "MANUAL_OR_UNTIMED",
+          "no_auto_timer_reason": "No numeric duration stated; may be preparation or plating"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "title": "Ботвинья с рыбой и квасом",
+      "cuisine": "Русская",
+      "step_timings": [
+        {
+          "step": 1,
+          "time_candidates": [
+            {
+              "min_seconds": 480,
+              "max_seconds": 600,
+              "phrase": "8–10 минут"
+            }
+          ],
+          "requires_readiness_check": true,
+          "mode": "CANDIDATE_DURATION_NOT_APPROVED",
+          "no_auto_timer_reason": null
+        },
+        {
+          "step": 2,
+          "time_candidates": [
+            {
+              "min_seconds": 120,
+              "max_seconds": 180,
+              "phrase": "2–3 минуты"
+            },
+            {
+              "min_seconds": 30,
+              "max_seconds": 60,
+              "phrase": "30–60 секунд"
+            }
+          ],
+          "requires_readiness_check": false,
+          "mode": "REQUIRES_HUMAN_SEQUENCE_REVIEW",
+          "no_auto_timer_reason": null
+        },
+        {
+          "step": 3,
+          "time_candidates": [],
+          "requires_readiness_check": false,
+          "mode": "MANUAL_OR_UNTIMED",
+          "no_auto_timer_reason": "No numeric duration stated; may be preparation or plating"
+        },
+        {
+          "step": 4,
+          "time_candidates": [],
+          "requires_readiness_check": false,
+          "mode": "MANUAL_OR_UNTIMED",
+          "no_auto_timer_reason": "No numeric duration stated; may be preparation or plating"
+        },
+        {
+          "step": 5,
+          "time_candidates": [],
+          "requires_readiness_check": false,
+          "mode": "MANUAL_OR_UNTIMED",
+          "no_auto_timer_reason": "No numeric duration stated; may be preparation or plating"
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "title": "Рыбная калья с солёными огурцами",
+      "cuisine": "Русская",
+      "step_timings": [
+        {
+          "step": 1,
+          "time_candidates": [
+            {
+              "min_seconds": 1200,
+              "max_seconds": 1500,
+              "phrase": "20–25 минут"
+            }
+          ],
+          "requires_readiness_check": false,
+          "mode": "CANDIDATE_DURATION_NOT_APPROVED",
+          "no_auto_timer_reason": null
+        },
+        {
+          "step": 2,
+          "time_candidates": [],
+          "requires_readiness_check": false,
+          "mode": "MANUAL_OR_UNTIMED",
+          "no_auto_timer_reason": "No numeric duration stated; may be preparation or plating"
+        },
+        {
+          "step": 3,
+          "time_candidates": [
+            {
+              "min_seconds": 600,
+              "max_seconds": 600,
+              "phrase": "10 минут"
+            }
+          ],
+          "requires_readiness_check": false,
+          "mode": "CANDIDATE_DURATION_NOT_APPROVED",
+          "no_auto_timer_reason": null
+        },
+        {
+          "step": 4,
+          "time_candidates": [
+            {
+              "min_seconds": 360,
+              "max_seconds": 480,
+              "phrase": "6–8 минут"
+            }
+          ],
+          "requires_readiness_check": false,
+          "mode": "CANDIDATE_DURATION_NOT_APPROVED",
+          "no_auto_timer_reason": null
+        },
+        {
+          "step": 5,
+          "time_candidates": [
+            {
+              "min_seconds": 180,
+              "max_seconds": 300,
+              "phrase": "3–5 минут"
+            },
+            {
+              "min_seconds": 300,
+              "max_seconds": 300,
+              "phrase": "5 минут"
+            }
+          ],
+          "requires_readiness_check": false,
+          "mode": "REQUIRES_HUMAN_SEQUENCE_REVIEW",
+          "no_auto_timer_reason": null
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "title": "Грибная похлёбка с перловкой",
+      "cuisine": "Русская",
+      "step_timings": [
+        {
+          "step": 1,
+          "time_candidates": [
+            {
+              "min_seconds": 7200,
+              "max_seconds": 10800,
+              "phrase": "2–3 часа"
+            }
+          ],
+          "requires_readiness_check": false,
+          "mode": "CANDIDATE_DURATION_NOT_APPROVED",
+          "no_auto_timer_reason": null
+        },
+        {
+          "step": 2,
+          "time_candidates": [
+            {
+              "min_seconds": 2100,
+              "max_seconds": 3000,
+              "phrase": "35–50 минут"
+            }
+          ],
+          "requires_readiness_check": true,
+          "mode": "CANDIDATE_DURATION_NOT_APPROVED",
+          "no_auto_timer_reason": null
+        },
+        {
+          "step": 3,
+          "time_candidates": [
+            {
+              "min_seconds": 300,
+              "max_seconds": 300,
+              "phrase": "5 минут"
+            }
+          ],
+          "requires_readiness_check": false,
+          "mode": "CANDIDATE_DURATION_NOT_APPROVED",
+          "no_auto_timer_reason": null
+        },
+        {
+          "step": 4,
+          "time_candidates": [
+            {
+              "min_seconds": 720,
+              "max_seconds": 720,
+              "phrase": "12 минут"
+            }
+          ],
+          "requires_readiness_check": false,
+          "mode": "CANDIDATE_DURATION_NOT_APPROVED",
+          "no_auto_timer_reason": null
+        },
+        {
+          "step": 5,
+          "time_candidates": [
+            {
+              "min_seconds": 480,
+              "max_seconds": 720,
+              "phrase": "8–12 минут"
+            }
+          ],
+          "requires_readiness_check": false,
+          "mode": "CANDIDATE_DURATION_NOT_APPROVED",
+          "no_auto_timer_reason": null
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "title": "Минестроне",
+      "cuisine": "Итальянская",
+      "step_timings": [
+        {
+          "step": 1,
+          "time_candidates": [
+            {
+              "min_seconds": 360,
+              "max_seconds": 480,
+              "phrase": "6–8 минут"
+            }
+          ],
+          "requires_readiness_check": false,
+          "mode": "CANDIDATE_DURATION_NOT_APPROVED",
+          "no_auto_timer_reason": null
+        },
+        {
+          "step": 2,
+          "time_candidates": [
+            {
+              "min_seconds": 900,
+              "max_seconds": 900,
+              "phrase": "15 минут"
+            }
+          ],
+          "requires_readiness_check": false,
+          "mode": "CANDIDATE_DURATION_NOT_APPROVED",
+          "no_auto_timer_reason": null
+        },
+        {
+          "step": 3,
+          "time_candidates": [
+            {
+              "min_seconds": 480,
+              "max_seconds": 720,
+              "phrase": "8–12 минут"
+            }
+          ],
+          "requires_readiness_check": true,
+          "mode": "CANDIDATE_DURATION_NOT_APPROVED",
+          "no_auto_timer_reason": null
+        },
+        {
+          "step": 4,
+          "time_candidates": [],
+          "requires_readiness_check": false,
+          "mode": "MANUAL_OR_UNTIMED",
+          "no_auto_timer_reason": "No numeric duration stated; may be preparation or plating"
+        },
+        {
+          "step": 5,
+          "time_candidates": [],
+          "requires_readiness_check": false,
+          "mode": "MANUAL_OR_UNTIMED",
+          "no_auto_timer_reason": "No numeric duration stated; may be preparation or plating"
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "title": "Риболлита",
+      "cuisine": "Итальянская",
+      "step_timings": [
+        {
+          "step": 1,
+          "time_candidates": [
+            {
+              "min_seconds": 420,
+              "max_seconds": 420,
+              "phrase": "7 минут"
+            }
+          ],
+          "requires_readiness_check": false,
+          "mode": "CANDIDATE_DURATION_NOT_APPROVED",
+          "no_auto_timer_reason": null
+        },
+        {
+          "step": 2,
+          "time_candidates": [],
+          "requires_readiness_check": false,
+          "mode": "MANUAL_OR_UNTIMED",
+          "no_auto_timer_reason": "No numeric duration stated; may be preparation or plating"
+        },
+        {
+          "step": 3,
+          "time_candidates": [
+            {
+              "min_seconds": 2100,
+              "max_seconds": 2700,
+              "phrase": "35–45 минут"
+            }
+          ],
+          "requires_readiness_check": true,
+          "mode": "CANDIDATE_DURATION_NOT_APPROVED",
+          "no_auto_timer_reason": null
+        },
+        {
+          "step": 4,
+          "time_candidates": [
+            {
+              "min_seconds": 600,
+              "max_seconds": 600,
+              "phrase": "10 минут"
+            }
+          ],
+          "requires_readiness_check": false,
+          "mode": "CANDIDATE_DURATION_NOT_APPROVED",
+          "no_auto_timer_reason": null
+        },
+        {
+          "step": 5,
+          "time_candidates": [],
+          "requires_readiness_check": false,
+          "mode": "MANUAL_OR_UNTIMED",
+          "no_auto_timer_reason": "No numeric duration stated; may be preparation or plating"
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "title": "Паппа аль помодоро",
+      "cuisine": "Итальянская",
+      "step_timings": [
+        {
+          "step": 1,
+          "time_candidates": [
+            {
+              "min_seconds": 30,
+              "max_seconds": 40,
+              "phrase": "30–40 секунд"
+            }
+          ],
+          "requires_readiness_check": false,
+          "mode": "CANDIDATE_DURATION_NOT_APPROVED",
+          "no_auto_timer_reason": null
+        },
+        {
+          "step": 2,
+          "time_candidates": [
+            {
+              "min_seconds": 900,
+              "max_seconds": 900,
+              "phrase": "15 минут"
+            }
+          ],
+          "requires_readiness_check": false,
+          "mode": "CANDIDATE_DURATION_NOT_APPROVED",
+          "no_auto_timer_reason": null
+        },
+        {
+          "step": 3,
+          "time_candidates": [],
+          "requires_readiness_check": false,
+          "mode": "MANUAL_OR_UNTIMED",
+          "no_auto_timer_reason": "No numeric duration stated; may be preparation or plating"
+        },
+        {
+          "step": 4,
+          "time_candidates": [
+            {
+              "min_seconds": 900,
+              "max_seconds": 1200,
+              "phrase": "15–20 минут"
+            }
+          ],
+          "requires_readiness_check": false,
+          "mode": "CANDIDATE_DURATION_NOT_APPROVED",
+          "no_auto_timer_reason": null
+        },
+        {
+          "step": 5,
+          "time_candidates": [
+            {
+              "min_seconds": 300,
+              "max_seconds": 300,
+              "phrase": "5 минут"
+            }
+          ],
+          "requires_readiness_check": false,
+          "mode": "CANDIDATE_DURATION_NOT_APPROVED",
+          "no_auto_timer_reason": null
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "title": "Страчателла по-римски",
+      "cuisine": "Итальянская",
+      "step_timings": [
+        {
+          "step": 1,
+          "time_candidates": [],
+          "requires_readiness_check": false,
+          "mode": "MANUAL_OR_UNTIMED",
+          "no_auto_timer_reason": "No numeric duration stated; may be preparation or plating"
+        },
+        {
+          "step": 2,
+          "time_candidates": [],
+          "requires_readiness_check": false,
+          "mode": "MANUAL_OR_UNTIMED",
+          "no_auto_timer_reason": "No numeric duration stated; may be preparation or plating"
+        },
+        {
+          "step": 3,
+          "time_candidates": [],
+          "requires_readiness_check": false,
+          "mode": "MANUAL_OR_UNTIMED",
+          "no_auto_timer_reason": "No numeric duration stated; may be preparation or plating"
+        },
+        {
+          "step": 4,
+          "time_candidates": [
+            {
+              "min_seconds": 60,
+              "max_seconds": 120,
+              "phrase": "1–2 минуты"
+            }
+          ],
+          "requires_readiness_check": true,
+          "mode": "CANDIDATE_DURATION_NOT_APPROVED",
+          "no_auto_timer_reason": null
+        },
+        {
+          "step": 5,
+          "time_candidates": [],
+          "requires_readiness_check": false,
+          "mode": "MANUAL_OR_UNTIMED",
+          "no_auto_timer_reason": "No numeric duration stated; may be preparation or plating"
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "title": "Паста э фаджоли",
+      "cuisine": "Итальянская",
+      "step_timings": [
+        {
+          "step": 1,
+          "time_candidates": [
+            {
+              "min_seconds": 360,
+              "max_seconds": 480,
+              "phrase": "6–8 минут"
+            }
+          ],
+          "requires_readiness_check": false,
+          "mode": "CANDIDATE_DURATION_NOT_APPROVED",
+          "no_auto_timer_reason": null
+        },
+        {
+          "step": 2,
+          "time_candidates": [
+            {
+              "min_seconds": 900,
+              "max_seconds": 900,
+              "phrase": "15 минут"
+            }
+          ],
+          "requires_readiness_check": false,
+          "mode": "CANDIDATE_DURATION_NOT_APPROVED",
+          "no_auto_timer_reason": null
+        },
+        {
+          "step": 3,
+          "time_candidates": [],
+          "requires_readiness_check": false,
+          "mode": "MANUAL_OR_UNTIMED",
+          "no_auto_timer_reason": "No numeric duration stated; may be preparation or plating"
+        },
+        {
+          "step": 4,
+          "time_candidates": [
+            {
+              "min_seconds": 480,
+              "max_seconds": 600,
+              "phrase": "8–10 минут"
+            }
+          ],
+          "requires_readiness_check": false,
+          "mode": "CANDIDATE_DURATION_NOT_APPROVED",
+          "no_auto_timer_reason": null
+        },
+        {
+          "step": 5,
+          "time_candidates": [
+            {
+              "min_seconds": 180,
+              "max_seconds": 180,
+              "phrase": "3 минуты"
+            }
+          ],
+          "requires_readiness_check": false,
+          "mode": "CANDIDATE_DURATION_NOT_APPROVED",
+          "no_auto_timer_reason": null
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "title": "Аквакотта",
+      "cuisine": "Итальянская",
+      "step_timings": [
+        {
+          "step": 1,
+          "time_candidates": [
+            {
+              "min_seconds": 1200,
+              "max_seconds": 1200,
+              "phrase": "20 минут"
+            }
+          ],
+          "requires_readiness_check": false,
+          "mode": "CANDIDATE_DURATION_NOT_APPROVED",
+          "no_auto_timer_reason": null
+        },
+        {
+          "step": 2,
+          "time_candidates": [
+            {
+              "min_seconds": 720,
+              "max_seconds": 900,
+              "phrase": "12–15 минут"
+            }
+          ],
+          "requires_readiness_check": false,
+          "mode": "CANDIDATE_DURATION_NOT_APPROVED",
+          "no_auto_timer_reason": null
+        },
+        {
+          "step": 3,
+          "time_candidates": [
+            {
+              "min_seconds": 1200,
+              "max_seconds": 1200,
+              "phrase": "20 минут"
+            }
+          ],
+          "requires_readiness_check": false,
+          "mode": "CANDIDATE_DURATION_NOT_APPROVED",
+          "no_auto_timer_reason": null
+        },
+        {
+          "step": 4,
+          "time_candidates": [
+            {
+              "min_seconds": 180,
+              "max_seconds": 300,
+              "phrase": "3–5 минут"
+            }
+          ],
+          "requires_readiness_check": true,
+          "mode": "CANDIDATE_DURATION_NOT_APPROVED",
+          "no_auto_timer_reason": null
+        },
+        {
+          "step": 5,
+          "time_candidates": [],
+          "requires_readiness_check": false,
+          "mode": "MANUAL_OR_UNTIMED",
+          "no_auto_timer_reason": "No numeric duration stated; may be preparation or plating"
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "title": "Тортеллини в бульоне",
+      "cuisine": "Итальянская",
+      "step_timings": [
+        {
+          "step": 1,
+          "time_candidates": [],
+          "requires_readiness_check": true,
+          "mode": "MANUAL_OR_UNTIMED",
+          "no_auto_timer_reason": "No numeric duration stated; may be preparation or plating"
+        },
+        {
+          "step": 2,
+          "time_candidates": [
+            {
+              "min_seconds": 1800,
+              "max_seconds": 1800,
+              "phrase": "30 минут"
+            }
+          ],
+          "requires_readiness_check": false,
+          "mode": "CANDIDATE_DURATION_NOT_APPROVED",
+          "no_auto_timer_reason": null
+        },
+        {
+          "step": 3,
+          "time_candidates": [],
+          "requires_readiness_check": false,
+          "mode": "MANUAL_OR_UNTIMED",
+          "no_auto_timer_reason": "No numeric duration stated; may be preparation or plating"
+        },
+        {
+          "step": 4,
+          "time_candidates": [],
+          "requires_readiness_check": false,
+          "mode": "MANUAL_OR_UNTIMED",
+          "no_auto_timer_reason": "No numeric duration stated; may be preparation or plating"
+        },
+        {
+          "step": 5,
+          "time_candidates": [
+            {
+              "min_seconds": 180,
+              "max_seconds": 300,
+              "phrase": "3–5 минут"
+            }
+          ],
+          "requires_readiness_check": true,
+          "mode": "CANDIDATE_DURATION_NOT_APPROVED",
+          "no_auto_timer_reason": null
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "title": "Пассателли в бульоне",
+      "cuisine": "Итальянская",
+      "step_timings": [
+        {
+          "step": 1,
+          "time_candidates": [],
+          "requires_readiness_check": false,
+          "mode": "MANUAL_OR_UNTIMED",
+          "no_auto_timer_reason": "No numeric duration stated; may be preparation or plating"
+        },
+        {
+          "step": 2,
+          "time_candidates": [],
+          "requires_readiness_check": false,
+          "mode": "MANUAL_OR_UNTIMED",
+          "no_auto_timer_reason": "No numeric duration stated; may be preparation or plating"
+        },
+        {
+          "step": 3,
+          "time_candidates": [
+            {
+              "min_seconds": 1200,
+              "max_seconds": 1800,
+              "phrase": "20–30 минут"
+            }
+          ],
+          "requires_readiness_check": false,
+          "mode": "CANDIDATE_DURATION_NOT_APPROVED",
+          "no_auto_timer_reason": null
+        },
+        {
+          "step": 4,
+          "time_candidates": [],
+          "requires_readiness_check": false,
+          "mode": "MANUAL_OR_UNTIMED",
+          "no_auto_timer_reason": "No numeric duration stated; may be preparation or plating"
+        },
+        {
+          "step": 5,
+          "time_candidates": [
+            {
+              "min_seconds": 60,
+              "max_seconds": 180,
+              "phrase": "1–3 минуты"
+            }
+          ],
+          "requires_readiness_check": true,
+          "mode": "CANDIDATE_DURATION_NOT_APPROVED",
+          "no_auto_timer_reason": null
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "title": "Месчуа с бобовыми и полбой",
+      "cuisine": "Итальянская",
+      "step_timings": [
+        {
+          "step": 1,
+          "time_candidates": [
+            {
+              "min_seconds": 43200,
+              "max_seconds": 43200,
+              "phrase": "12 часов"
+            }
+          ],
+          "requires_readiness_check": true,
+          "mode": "CANDIDATE_DURATION_NOT_APPROVED",
+          "no_auto_timer_reason": null
+        },
+        {
+          "step": 2,
+          "time_candidates": [
+            {
+              "min_seconds": 5400,
+              "max_seconds": 7200,
+              "phrase": "90–120 минут"
+            },
+            {
+              "min_seconds": 3600,
+              "max_seconds": 5400,
+              "phrase": "60–90 минут"
+            }
+          ],
+          "requires_readiness_check": true,
+          "mode": "REQUIRES_HUMAN_SEQUENCE_REVIEW",
+          "no_auto_timer_reason": null
+        },
+        {
+          "step": 3,
+          "time_candidates": [],
+          "requires_readiness_check": false,
+          "mode": "MANUAL_OR_UNTIMED",
+          "no_auto_timer_reason": "No numeric duration stated; may be preparation or plating"
+        },
+        {
+          "step": 4,
+          "time_candidates": [
+            {
+              "min_seconds": 600,
+              "max_seconds": 900,
+              "phrase": "10–15 минут"
+            }
+          ],
+          "requires_readiness_check": false,
+          "mode": "CANDIDATE_DURATION_NOT_APPROVED",
+          "no_auto_timer_reason": null
+        },
+        {
+          "step": 5,
+          "time_candidates": [],
+          "requires_readiness_check": false,
+          "mode": "MANUAL_OR_UNTIMED",
+          "no_auto_timer_reason": "No numeric duration stated; may be preparation or plating"
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "title": "Качукко по-ливорнски",
+      "cuisine": "Итальянская",
+      "step_timings": [
+        {
+          "step": 1,
+          "time_candidates": [],
+          "requires_readiness_check": false,
+          "mode": "MANUAL_OR_UNTIMED",
+          "no_auto_timer_reason": "No numeric duration stated; may be preparation or plating"
+        },
+        {
+          "step": 2,
+          "time_candidates": [
+            {
+              "min_seconds": 300,
+              "max_seconds": 300,
+              "phrase": "5 минут"
+            },
+            {
+              "min_seconds": 300,
+              "max_seconds": 300,
+              "phrase": "5 минут"
+            }
+          ],
+          "requires_readiness_check": false,
+          "mode": "REQUIRES_HUMAN_SEQUENCE_REVIEW",
+          "no_auto_timer_reason": null
+        },
+        {
+          "step": 3,
+          "time_candidates": [
+            {
+              "min_seconds": 120,
+              "max_seconds": 120,
+              "phrase": "2 минуты"
+            },
+            {
+              "min_seconds": 1500,
+              "max_seconds": 2100,
+              "phrase": "25–35 минут"
+            }
+          ],
+          "requires_readiness_check": true,
+          "mode": "REQUIRES_HUMAN_SEQUENCE_REVIEW",
+          "no_auto_timer_reason": null
+        },
+        {
+          "step": 4,
+          "time_candidates": [
+            {
+              "min_seconds": 480,
+              "max_seconds": 480,
+              "phrase": "8 минут"
+            },
+            {
+              "min_seconds": 300,
+              "max_seconds": 300,
+              "phrase": "5 минут"
+            }
+          ],
+          "requires_readiness_check": true,
+          "mode": "REQUIRES_HUMAN_SEQUENCE_REVIEW",
+          "no_auto_timer_reason": null
+        },
+        {
+          "step": 5,
+          "time_candidates": [],
+          "requires_readiness_check": false,
+          "mode": "MANUAL_OR_UNTIMED",
+          "no_auto_timer_reason": "No numeric duration stated; may be preparation or plating"
+        }
+      ]
+    },
+    {
+      "id": 21,
+      "title": "Французский луковый суп",
+      "cuisine": "Французская",
+      "step_timings": [
+        {
+          "step": 1,
+          "time_candidates": [
+            {
+              "min_seconds": 2100,
+              "max_seconds": 2700,
+              "phrase": "35–45 минут"
+            }
+          ],
+          "requires_readiness_check": false,
+          "mode": "CANDIDATE_DURATION_NOT_APPROVED",
+          "no_auto_timer_reason": null
+        },
+        {
+          "step": 2,
+          "time_candidates": [
+            {
+              "min_seconds": 180,
+              "max_seconds": 180,
+              "phrase": "3 минуты"
+            }
+          ],
+          "requires_readiness_check": false,
+          "mode": "CANDIDATE_DURATION_NOT_APPROVED",
+          "no_auto_timer_reason": null
+        },
+        {
+          "step": 3,
+          "time_candidates": [
+            {
+              "min_seconds": 900,
+              "max_seconds": 900,
+              "phrase": "15 минут"
+            }
+          ],
+          "requires_readiness_check": false,
+          "mode": "CANDIDATE_DURATION_NOT_APPROVED",
+          "no_auto_timer_reason": null
+        },
+        {
+          "step": 4,
+          "time_candidates": [],
+          "requires_readiness_check": false,
+          "mode": "MANUAL_OR_UNTIMED",
+          "no_auto_timer_reason": "No numeric duration stated; may be preparation or plating"
+        },
+        {
+          "step": 5,
+          "time_candidates": [
+            {
+              "min_seconds": 180,
+              "max_seconds": 300,
+              "phrase": "3–5 минут"
+            }
+          ],
+          "requires_readiness_check": false,
+          "mode": "CANDIDATE_DURATION_NOT_APPROVED",
+          "no_auto_timer_reason": null
+        }
+      ]
+    },
+    {
+      "id": 22,
+      "title": "Буйабес по-марсельски",
+      "cuisine": "Французская",
+      "step_timings": [
+        {
+          "step": 1,
+          "time_candidates": [],
+          "requires_readiness_check": false,
+          "mode": "MANUAL_OR_UNTIMED",
+          "no_auto_timer_reason": "No numeric duration stated; may be preparation or plating"
+        },
+        {
+          "step": 2,
+          "time_candidates": [
+            {
+              "min_seconds": 480,
+              "max_seconds": 480,
+              "phrase": "8 минут"
+            }
+          ],
+          "requires_readiness_check": false,
+          "mode": "CANDIDATE_DURATION_NOT_APPROVED",
+          "no_auto_timer_reason": null
+        },
+        {
+          "step": 3,
+          "time_candidates": [
+            {
+              "min_seconds": 1500,
+              "max_seconds": 1800,
+              "phrase": "25–30 минут"
+            },
+            {
+              "min_seconds": 480,
+              "max_seconds": 480,
+              "phrase": "8 минут"
+            }
+          ],
+          "requires_readiness_check": false,
+          "mode": "REQUIRES_HUMAN_SEQUENCE_REVIEW",
+          "no_auto_timer_reason": null
+        },
+        {
+          "step": 4,
+          "time_candidates": [],
+          "requires_readiness_check": false,
+          "mode": "MANUAL_OR_UNTIMED",
+          "no_auto_timer_reason": "No numeric duration stated; may be preparation or plating"
+        },
+        {
+          "step": 5,
+          "time_candidates": [],
+          "requires_readiness_check": false,
+          "mode": "MANUAL_OR_UNTIMED",
+          "no_auto_timer_reason": "No numeric duration stated; may be preparation or plating"
+        }
+      ]
+    },
+    {
+      "id": 23,
+      "title": "Вишисуаз с луком-пореем",
+      "cuisine": "Французская",
+      "step_timings": [
+        {
+          "step": 1,
+          "time_candidates": [],
+          "requires_readiness_check": false,
+          "mode": "MANUAL_OR_UNTIMED",
+          "no_auto_timer_reason": "No numeric duration stated; may be preparation or plating"
+        },
+        {
+          "step": 2,
+          "time_candidates": [
+            {
+              "min_seconds": 420,
+              "max_seconds": 480,
+              "phrase": "7–8 минут"
+            }
+          ],
+          "requires_readiness_check": false,
+          "mode": "CANDIDATE_DURATION_NOT_APPROVED",
+          "no_auto_timer_reason": null
+        },
+        {
+          "step": 3,
+          "time_candidates": [
+            {
+              "min_seconds": 1200,
+              "max_seconds": 1200,
+              "phrase": "20 минут"
+            }
+          ],
+          "requires_readiness_check": false,
+          "mode": "CANDIDATE_DURATION_NOT_APPROVED",
+          "no_auto_timer_reason": null
+        },
+        {
+          "step": 4,
+          "time_candidates": [],
+          "requires_readiness_check": false,
+          "mode": "MANUAL_OR_UNTIMED",
+          "no_auto_timer_reason": "No numeric duration stated; may be preparation or plating"
+        },
+        {
+          "step": 5,
+          "time_candidates": [
+            {
+              "min_seconds": 7200,
+              "max_seconds": 7200,
+              "phrase": "2 часа"
+            }
+          ],
+          "requires_readiness_check": false,
+          "mode": "CANDIDATE_DURATION_NOT_APPROVED",
+          "no_auto_timer_reason": null
+        }
+      ]
+    },
+    {
+      "id": 24,
+      "title": "Гарбур с фасолью и капустой",
+      "cuisine": "Французская",
+      "step_timings": [
+        {
+          "step": 1,
+          "time_candidates": [],
+          "requires_readiness_check": false,
+          "mode": "MANUAL_OR_UNTIMED",
+          "no_auto_timer_reason": "No numeric duration stated; may be preparation or plating"
+        },
+        {
+          "step": 2,
+          "time_candidates": [
+            {
+              "min_seconds": 480,
+              "max_seconds": 480,
+              "phrase": "8 минут"
+            }
+          ],
+          "requires_readiness_check": false,
+          "mode": "CANDIDATE_DURATION_NOT_APPROVED",
+          "no_auto_timer_reason": null
+        },
+        {
+          "step": 3,
+          "time_candidates": [
+            {
+              "min_seconds": 1200,
+              "max_seconds": 1200,
+              "phrase": "20 минут"
+            }
+          ],
+          "requires_readiness_check": false,
+          "mode": "CANDIDATE_DURATION_NOT_APPROVED",
+          "no_auto_timer_reason": null
+        },
+        {
+          "step": 4,
+          "time_candidates": [
+            {
+              "min_seconds": 1500,
+              "max_seconds": 2100,
+              "phrase": "25–35 минут"
+            }
+          ],
+          "requires_readiness_check": true,
+          "mode": "CANDIDATE_DURATION_NOT_APPROVED",
+          "no_auto_timer_reason": null
+        },
+        {
+          "step": 5,
+          "time_candidates": [
+            {
+              "min_seconds": 480,
+              "max_seconds": 600,
+              "phrase": "8–10 минут"
+            }
+          ],
+          "requires_readiness_check": false,
+          "mode": "CANDIDATE_DURATION_NOT_APPROVED",
+          "no_auto_timer_reason": null
+        }
+      ]
+    },
+    {
+      "id": 25,
+      "title": "Провансальский суп о писту",
+      "cuisine": "Французская",
+      "step_timings": [
+        {
+          "step": 1,
+          "time_candidates": [],
+          "requires_readiness_check": false,
+          "mode": "MANUAL_OR_UNTIMED",
+          "no_auto_timer_reason": "No numeric duration stated; may be preparation or plating"
+        },
+        {
+          "step": 2,
+          "time_candidates": [
+            {
+              "min_seconds": 600,
+              "max_seconds": 600,
+              "phrase": "10 минут"
+            }
+          ],
+          "requires_readiness_check": false,
+          "mode": "CANDIDATE_DURATION_NOT_APPROVED",
+          "no_auto_timer_reason": null
+        },
+        {
+          "step": 3,
+          "time_candidates": [
+            {
+              "min_seconds": 600,
+              "max_seconds": 600,
+              "phrase": "10 минут"
+            }
+          ],
+          "requires_readiness_check": true,
+          "mode": "CANDIDATE_DURATION_NOT_APPROVED",
+          "no_auto_timer_reason": null
+        },
+        {
+          "step": 4,
+          "time_candidates": [],
+          "requires_readiness_check": false,
+          "mode": "MANUAL_OR_UNTIMED",
+          "no_auto_timer_reason": "No numeric duration stated; may be preparation or plating"
+        },
+        {
+          "step": 5,
+          "time_candidates": [],
+          "requires_readiness_check": false,
+          "mode": "MANUAL_OR_UNTIMED",
+          "no_auto_timer_reason": "No numeric duration stated; may be preparation or plating"
+        }
+      ]
+    },
+    {
+      "id": 26,
+      "title": "Турен с чесноком",
+      "cuisine": "Французская",
+      "step_timings": [
+        {
+          "step": 1,
+          "time_candidates": [
+            {
+              "min_seconds": 180,
+              "max_seconds": 300,
+              "phrase": "3–5 минут"
+            }
+          ],
+          "requires_readiness_check": false,
+          "mode": "CANDIDATE_DURATION_NOT_APPROVED",
+          "no_auto_timer_reason": null
+        },
+        {
+          "step": 2,
+          "time_candidates": [
+            {
+              "min_seconds": 900,
+              "max_seconds": 900,
+              "phrase": "15 минут"
+            }
+          ],
+          "requires_readiness_check": false,
+          "mode": "CANDIDATE_DURATION_NOT_APPROVED",
+          "no_auto_timer_reason": null
+        },
+        {
+          "step": 3,
+          "time_candidates": [],
+          "requires_readiness_check": false,
+          "mode": "MANUAL_OR_UNTIMED",
+          "no_auto_timer_reason": "No numeric duration stated; may be preparation or plating"
+        },
+        {
+          "step": 4,
+          "time_candidates": [
+            {
+              "min_seconds": 60,
+              "max_seconds": 120,
+              "phrase": "1–2 минуты"
+            }
+          ],
+          "requires_readiness_check": false,
+          "mode": "CANDIDATE_DURATION_NOT_APPROVED",
+          "no_auto_timer_reason": null
+        },
+        {
+          "step": 5,
+          "time_candidates": [],
+          "requires_readiness_check": false,
+          "mode": "MANUAL_OR_UNTIMED",
+          "no_auto_timer_reason": "No numeric duration stated; may be preparation or plating"
+        }
+      ]
+    },
+    {
+      "id": 27,
+      "title": "Крем-суп Дюбарри из цветной капусты",
+      "cuisine": "Французская",
+      "step_timings": [
+        {
+          "step": 1,
+          "time_candidates": [],
+          "requires_readiness_check": true,
+          "mode": "MANUAL_OR_UNTIMED",
+          "no_auto_timer_reason": "No numeric duration stated; may be preparation or plating"
+        },
+        {
+          "step": 2,
+          "time_candidates": [
+            {
+              "min_seconds": 300,
+              "max_seconds": 300,
+              "phrase": "5 минут"
+            }
+          ],
+          "requires_readiness_check": false,
+          "mode": "CANDIDATE_DURATION_NOT_APPROVED",
+          "no_auto_timer_reason": null
+        },
+        {
+          "step": 3,
+          "time_candidates": [
+            {
+              "min_seconds": 60,
+              "max_seconds": 60,
+              "phrase": "1 минуту"
+            }
+          ],
+          "requires_readiness_check": false,
+          "mode": "CANDIDATE_DURATION_NOT_APPROVED",
+          "no_auto_timer_reason": null
+        },
+        {
+          "step": 4,
+          "time_candidates": [
+            {
+              "min_seconds": 1080,
+              "max_seconds": 1320,
+              "phrase": "18–22 минуты"
+            }
+          ],
+          "requires_readiness_check": false,
+          "mode": "CANDIDATE_DURATION_NOT_APPROVED",
+          "no_auto_timer_reason": null
+        },
+        {
+          "step": 5,
+          "time_candidates": [],
+          "requires_readiness_check": false,
+          "mode": "MANUAL_OR_UNTIMED",
+          "no_auto_timer_reason": "No numeric duration stated; may be preparation or plating"
+        }
+      ]
+    },
+    {
+      "id": 28,
+      "title": "Биск из омара",
+      "cuisine": "Французская",
+      "step_timings": [
+        {
+          "step": 1,
+          "time_candidates": [],
+          "requires_readiness_check": false,
+          "mode": "MANUAL_OR_UNTIMED",
+          "no_auto_timer_reason": "No numeric duration stated; may be preparation or plating"
+        },
+        {
+          "step": 2,
+          "time_candidates": [
+            {
+              "min_seconds": 300,
+              "max_seconds": 360,
+              "phrase": "5–6 минут"
+            }
+          ],
+          "requires_readiness_check": false,
+          "mode": "CANDIDATE_DURATION_NOT_APPROVED",
+          "no_auto_timer_reason": null
+        },
+        {
+          "step": 3,
+          "time_candidates": [
+            {
+              "min_seconds": 2100,
+              "max_seconds": 2400,
+              "phrase": "35–40 минут"
+            }
+          ],
+          "requires_readiness_check": false,
+          "mode": "CANDIDATE_DURATION_NOT_APPROVED",
+          "no_auto_timer_reason": null
+        },
+        {
+          "step": 4,
+          "time_candidates": [],
+          "requires_readiness_check": false,
+          "mode": "MANUAL_OR_UNTIMED",
+          "no_auto_timer_reason": "No numeric duration stated; may be preparation or plating"
+        },
+        {
+          "step": 5,
+          "time_candidates": [],
+          "requires_readiness_check": false,
+          "mode": "MANUAL_OR_UNTIMED",
+          "no_auto_timer_reason": "No numeric duration stated; may be preparation or plating"
+        }
+      ]
+    },
+    {
+      "id": 29,
+      "title": "Буррид с рыбой и айоли",
+      "cuisine": "Французская",
+      "step_timings": [
+        {
+          "step": 1,
+          "time_candidates": [
+            {
+              "min_seconds": 360,
+              "max_seconds": 480,
+              "phrase": "6–8 минут"
+            }
+          ],
+          "requires_readiness_check": false,
+          "mode": "CANDIDATE_DURATION_NOT_APPROVED",
+          "no_auto_timer_reason": null
+        },
+        {
+          "step": 2,
+          "time_candidates": [
+            {
+              "min_seconds": 900,
+              "max_seconds": 900,
+              "phrase": "15 минут"
+            },
+            {
+              "min_seconds": 360,
+              "max_seconds": 480,
+              "phrase": "6–8 минут"
+            }
+          ],
+          "requires_readiness_check": false,
+          "mode": "REQUIRES_HUMAN_SEQUENCE_REVIEW",
+          "no_auto_timer_reason": null
+        },
+        {
+          "step": 3,
+          "time_candidates": [],
+          "requires_readiness_check": false,
+          "mode": "MANUAL_OR_UNTIMED",
+          "no_auto_timer_reason": "No numeric duration stated; may be preparation or plating"
+        },
+        {
+          "step": 4,
+          "time_candidates": [],
+          "requires_readiness_check": false,
+          "mode": "MANUAL_OR_UNTIMED",
+          "no_auto_timer_reason": "No numeric duration stated; may be preparation or plating"
+        },
+        {
+          "step": 5,
+          "time_candidates": [],
+          "requires_readiness_check": false,
+          "mode": "MANUAL_OR_UNTIMED",
+          "no_auto_timer_reason": "No numeric duration stated; may be preparation or plating"
+        }
+      ]
+    },
+    {
+      "id": 30,
+      "title": "Потаж Креси из моркови",
+      "cuisine": "Французская",
+      "step_timings": [
+        {
+          "step": 1,
+          "time_candidates": [],
+          "requires_readiness_check": false,
+          "mode": "MANUAL_OR_UNTIMED",
+          "no_auto_timer_reason": "No numeric duration stated; may be preparation or plating"
+        },
+        {
+          "step": 2,
+          "time_candidates": [
+            {
+              "min_seconds": 300,
+              "max_seconds": 300,
+              "phrase": "5 минут"
+            },
+            {
+              "min_seconds": 300,
+              "max_seconds": 300,
+              "phrase": "5 минут"
+            }
+          ],
+          "requires_readiness_check": false,
+          "mode": "REQUIRES_HUMAN_SEQUENCE_REVIEW",
+          "no_auto_timer_reason": null
+        },
+        {
+          "step": 3,
+          "time_candidates": [
+            {
+              "min_seconds": 1200,
+              "max_seconds": 1500,
+              "phrase": "20–25 минут"
+            }
+          ],
+          "requires_readiness_check": false,
+          "mode": "CANDIDATE_DURATION_NOT_APPROVED",
+          "no_auto_timer_reason": null
+        },
+        {
+          "step": 4,
+          "time_candidates": [],
+          "requires_readiness_check": false,
+          "mode": "MANUAL_OR_UNTIMED",
+          "no_auto_timer_reason": "No numeric duration stated; may be preparation or plating"
+        },
+        {
+          "step": 5,
+          "time_candidates": [],
+          "requires_readiness_check": false,
+          "mode": "MANUAL_OR_UNTIMED",
+          "no_auto_timer_reason": "No numeric duration stated; may be preparation or plating"
+        }
+      ]
+    },
+    {
+      "id": 31,
+      "title": "Гаспачо андалузский",
+      "cuisine": "Испанская",
+      "step_timings": [
+        {
+          "step": 1,
+          "time_candidates": [
+            {
+              "min_seconds": 300,
+              "max_seconds": 300,
+              "phrase": "5 минут"
+            }
+          ],
+          "requires_readiness_check": false,
+          "mode": "CANDIDATE_DURATION_NOT_APPROVED",
+          "no_auto_timer_reason": null
+        },
+        {
+          "step": 2,
+          "time_candidates": [],
+          "requires_readiness_check": false,
+          "mode": "MANUAL_OR_UNTIMED",
+          "no_auto_timer_reason": "No numeric duration stated; may be preparation or plating"
+        },
+        {
+          "step": 3,
+          "time_candidates": [],
+          "requires_readiness_check": false,
+          "mode": "MANUAL_OR_UNTIMED",
+          "no_auto_timer_reason": "No numeric duration stated; may be preparation or plating"
+        },
+        {
+          "step": 4,
+          "time_candidates": [],
+          "requires_readiness_check": false,
+          "mode": "MANUAL_OR_UNTIMED",
+          "no_auto_timer_reason": "No numeric duration stated; may be preparation or plating"
+        },
+        {
+          "step": 5,
+          "time_candidates": [],
+          "requires_readiness_check": false,
+          "mode": "MANUAL_OR_UNTIMED",
+          "no_auto_timer_reason": "No numeric duration stated; may be preparation or plating"
+        }
+      ]
+    },
+    {
+      "id": 32,
+      "title": "Сальморехо кордобский",
+      "cuisine": "Испанская",
+      "step_timings": [
+        {
+          "step": 1,
+          "time_candidates": [
+            {
+              "min_seconds": 540,
+              "max_seconds": 600,
+              "phrase": "9–10 минут"
+            }
+          ],
+          "requires_readiness_check": false,
+          "mode": "CANDIDATE_DURATION_NOT_APPROVED",
+          "no_auto_timer_reason": null
+        },
+        {
+          "step": 2,
+          "time_candidates": [],
+          "requires_readiness_check": false,
+          "mode": "MANUAL_OR_UNTIMED",
+          "no_auto_timer_reason": "No numeric duration stated; may be preparation or plating"
+        },
+        {
+          "step": 3,
+          "time_candidates": [
+            {
+              "min_seconds": 600,
+              "max_seconds": 600,
+              "phrase": "10 минут"
+            }
+          ],
+          "requires_readiness_check": false,
+          "mode": "CANDIDATE_DURATION_NOT_APPROVED",
+          "no_auto_timer_reason": null
+        },
+        {
+          "step": 4,
+          "time_candidates": [],
+          "requires_readiness_check": false,
+          "mode": "MANUAL_OR_UNTIMED",
+          "no_auto_timer_reason": "No numeric duration stated; may be preparation or plating"
+        },
+        {
+          "step": 5,
+          "time_candidates": [],
+          "requires_readiness_check": false,
+          "mode": "MANUAL_OR_UNTIMED",
+          "no_auto_timer_reason": "No numeric duration stated; may be preparation or plating"
+        }
+      ]
+    },
+    {
+      "id": 33,
+      "title": "Ахобланко с миндалём",
+      "cuisine": "Испанская",
+      "step_timings": [
+        {
+          "step": 1,
+          "time_candidates": [
+            {
+              "min_seconds": 1800,
+              "max_seconds": 1800,
+              "phrase": "30 минут"
+            }
+          ],
+          "requires_readiness_check": false,
+          "mode": "CANDIDATE_DURATION_NOT_APPROVED",
+          "no_auto_timer_reason": null
+        },
+        {
+          "step": 2,
+          "time_candidates": [],
+          "requires_readiness_check": false,
+          "mode": "MANUAL_OR_UNTIMED",
+          "no_auto_timer_reason": "No numeric duration stated; may be preparation or plating"
+        },
+        {
+          "step": 3,
+          "time_candidates": [],
+          "requires_readiness_check": false,
+          "mode": "MANUAL_OR_UNTIMED",
+          "no_auto_timer_reason": "No numeric duration stated; may be preparation or plating"
+        },
+        {
+          "step": 4,
+          "time_candidates": [
+            {
+              "min_seconds": 3600,
+              "max_seconds": 7200,
+              "phrase": "1–2 часа"
+            }
+          ],
+          "requires_readiness_check": false,
+          "mode": "CANDIDATE_DURATION_NOT_APPROVED",
+          "no_auto_timer_reason": null
+        },
+        {
+          "step": 5,
+          "time_candidates": [],
+          "requires_readiness_check": false,
+          "mode": "MANUAL_OR_UNTIMED",
+          "no_auto_timer_reason": "No numeric duration stated; may be preparation or plating"
+        }
+      ]
+    },
+    {
+      "id": 34,
+      "title": "Сопа де ахо, кастильский чесночный суп",
+      "cuisine": "Испанская",
+      "step_timings": [
+        {
+          "step": 1,
+          "time_candidates": [],
+          "requires_readiness_check": false,
+          "mode": "MANUAL_OR_UNTIMED",
+          "no_auto_timer_reason": "No numeric duration stated; may be preparation or plating"
+        },
+        {
+          "step": 2,
+          "time_candidates": [
+            {
+              "min_seconds": 120,
+              "max_seconds": 120,
+              "phrase": "2 минуты"
+            }
+          ],
+          "requires_readiness_check": false,
+          "mode": "CANDIDATE_DURATION_NOT_APPROVED",
+          "no_auto_timer_reason": null
+        },
+        {
+          "step": 3,
+          "time_candidates": [],
+          "requires_readiness_check": false,
+          "mode": "MANUAL_OR_UNTIMED",
+          "no_auto_timer_reason": "No numeric duration stated; may be preparation or plating"
+        },
+        {
+          "step": 4,
+          "time_candidates": [
+            {
+              "min_seconds": 720,
+              "max_seconds": 900,
+              "phrase": "12–15 минут"
+            }
+          ],
+          "requires_readiness_check": false,
+          "mode": "CANDIDATE_DURATION_NOT_APPROVED",
+          "no_auto_timer_reason": null
+        },
+        {
+          "step": 5,
+          "time_candidates": [
+            {
+              "min_seconds": 180,
+              "max_seconds": 240,
+              "phrase": "3–4 минуты"
+            }
+          ],
+          "requires_readiness_check": true,
+          "mode": "CANDIDATE_DURATION_NOT_APPROVED",
+          "no_auto_timer_reason": null
+        }
+      ]
+    },
+    {
+      "id": 35,
+      "title": "Кальдо гальего",
+      "cuisine": "Испанская",
+      "step_timings": [
+        {
+          "step": 1,
+          "time_candidates": [
+            {
+              "min_seconds": 2700,
+              "max_seconds": 3600,
+              "phrase": "45–60 минут"
+            }
+          ],
+          "requires_readiness_check": true,
+          "mode": "CANDIDATE_DURATION_NOT_APPROVED",
+          "no_auto_timer_reason": null
+        },
+        {
+          "step": 2,
+          "time_candidates": [],
+          "requires_readiness_check": false,
+          "mode": "MANUAL_OR_UNTIMED",
+          "no_auto_timer_reason": "No numeric duration stated; may be preparation or plating"
+        },
+        {
+          "step": 3,
+          "time_candidates": [
+            {
+              "min_seconds": 900,
+              "max_seconds": 900,
+              "phrase": "15 минут"
+            }
+          ],
+          "requires_readiness_check": false,
+          "mode": "CANDIDATE_DURATION_NOT_APPROVED",
+          "no_auto_timer_reason": null
+        },
+        {
+          "step": 4,
+          "time_candidates": [
+            {
+              "min_seconds": 900,
+              "max_seconds": 1200,
+              "phrase": "15–20 минут"
+            }
+          ],
+          "requires_readiness_check": true,
+          "mode": "CANDIDATE_DURATION_NOT_APPROVED",
+          "no_auto_timer_reason": null
+        },
+        {
+          "step": 5,
+          "time_candidates": [],
+          "requires_readiness_check": false,
+          "mode": "MANUAL_OR_UNTIMED",
+          "no_auto_timer_reason": "No numeric duration stated; may be preparation or plating"
+        }
+      ]
+    },
+    {
+      "id": 36,
+      "title": "Поррусальда с луком-пореем",
+      "cuisine": "Испанская",
+      "step_timings": [
+        {
+          "step": 1,
+          "time_candidates": [],
+          "requires_readiness_check": false,
+          "mode": "MANUAL_OR_UNTIMED",
+          "no_auto_timer_reason": "No numeric duration stated; may be preparation or plating"
+        },
+        {
+          "step": 2,
+          "time_candidates": [],
+          "requires_readiness_check": false,
+          "mode": "MANUAL_OR_UNTIMED",
+          "no_auto_timer_reason": "No numeric duration stated; may be preparation or plating"
+        },
+        {
+          "step": 3,
+          "time_candidates": [
+            {
+              "min_seconds": 360,
+              "max_seconds": 480,
+              "phrase": "6–8 минут"
+            }
+          ],
+          "requires_readiness_check": false,
+          "mode": "CANDIDATE_DURATION_NOT_APPROVED",
+          "no_auto_timer_reason": null
+        },
+        {
+          "step": 4,
+          "time_candidates": [
+            {
+              "min_seconds": 1200,
+              "max_seconds": 1500,
+              "phrase": "20–25 минут"
+            }
+          ],
+          "requires_readiness_check": false,
+          "mode": "CANDIDATE_DURATION_NOT_APPROVED",
+          "no_auto_timer_reason": null
+        },
+        {
+          "step": 5,
+          "time_candidates": [],
+          "requires_readiness_check": false,
+          "mode": "MANUAL_OR_UNTIMED",
+          "no_auto_timer_reason": "No numeric duration stated; may be preparation or plating"
+        }
+      ]
+    },
+    {
+      "id": 37,
+      "title": "Гаспачуэло малагский с рыбой",
+      "cuisine": "Испанская",
+      "step_timings": [
+        {
+          "step": 1,
+          "time_candidates": [
+            {
+              "min_seconds": 720,
+              "max_seconds": 900,
+              "phrase": "12–15 минут"
+            }
+          ],
+          "requires_readiness_check": true,
+          "mode": "CANDIDATE_DURATION_NOT_APPROVED",
+          "no_auto_timer_reason": null
+        },
+        {
+          "step": 2,
+          "time_candidates": [
+            {
+              "min_seconds": 300,
+              "max_seconds": 420,
+              "phrase": "5–7 минут"
+            }
+          ],
+          "requires_readiness_check": true,
+          "mode": "CANDIDATE_DURATION_NOT_APPROVED",
+          "no_auto_timer_reason": null
+        },
+        {
+          "step": 3,
+          "time_candidates": [],
+          "requires_readiness_check": false,
+          "mode": "MANUAL_OR_UNTIMED",
+          "no_auto_timer_reason": "No numeric duration stated; may be preparation or plating"
+        },
+        {
+          "step": 4,
+          "time_candidates": [],
+          "requires_readiness_check": true,
+          "mode": "MANUAL_OR_UNTIMED",
+          "no_auto_timer_reason": "No numeric duration stated; may be preparation or plating"
+        },
+        {
+          "step": 5,
+          "time_candidates": [],
+          "requires_readiness_check": false,
+          "mode": "MANUAL_OR_UNTIMED",
+          "no_auto_timer_reason": "No numeric duration stated; may be preparation or plating"
+        }
+      ]
+    },
+    {
+      "id": 38,
+      "title": "Сопа де пикадильо",
+      "cuisine": "Испанская",
+      "step_timings": [
+        {
+          "step": 1,
+          "time_candidates": [
+            {
+              "min_seconds": 2700,
+              "max_seconds": 2700,
+              "phrase": "45 минут"
+            }
+          ],
+          "requires_readiness_check": false,
+          "mode": "CANDIDATE_DURATION_NOT_APPROVED",
+          "no_auto_timer_reason": null
+        },
+        {
+          "step": 2,
+          "time_candidates": [
+            {
+              "min_seconds": 540,
+              "max_seconds": 600,
+              "phrase": "9–10 минут"
+            }
+          ],
+          "requires_readiness_check": false,
+          "mode": "CANDIDATE_DURATION_NOT_APPROVED",
+          "no_auto_timer_reason": null
+        },
+        {
+          "step": 3,
+          "time_candidates": [
+            {
+              "min_seconds": 180,
+              "max_seconds": 360,
+              "phrase": "3–6 минут"
+            }
+          ],
+          "requires_readiness_check": true,
+          "mode": "CANDIDATE_DURATION_NOT_APPROVED",
+          "no_auto_timer_reason": null
+        },
+        {
+          "step": 4,
+          "time_candidates": [
+            {
+              "min_seconds": 120,
+              "max_seconds": 120,
+              "phrase": "2 минуты"
+            }
+          ],
+          "requires_readiness_check": false,
+          "mode": "CANDIDATE_DURATION_NOT_APPROVED",
+          "no_auto_timer_reason": null
+        },
+        {
+          "step": 5,
+          "time_candidates": [],
+          "requires_readiness_check": false,
+          "mode": "MANUAL_OR_UNTIMED",
+          "no_auto_timer_reason": "No numeric duration stated; may be preparation or plating"
+        }
+      ]
+    },
+    {
+      "id": 39,
+      "title": "Эскуделья каталонская",
+      "cuisine": "Испанская",
+      "step_timings": [
+        {
+          "step": 1,
+          "time_candidates": [
+            {
+              "min_seconds": 3600,
+              "max_seconds": 3600,
+              "phrase": "60 минут"
+            }
+          ],
+          "requires_readiness_check": false,
+          "mode": "CANDIDATE_DURATION_NOT_APPROVED",
+          "no_auto_timer_reason": null
+        },
+        {
+          "step": 2,
+          "time_candidates": [
+            {
+              "min_seconds": 2400,
+              "max_seconds": 3600,
+              "phrase": "40–60 минут"
+            }
+          ],
+          "requires_readiness_check": false,
+          "mode": "CANDIDATE_DURATION_NOT_APPROVED",
+          "no_auto_timer_reason": null
+        },
+        {
+          "step": 3,
+          "time_candidates": [],
+          "requires_readiness_check": false,
+          "mode": "MANUAL_OR_UNTIMED",
+          "no_auto_timer_reason": "No numeric duration stated; may be preparation or plating"
+        },
+        {
+          "step": 4,
+          "time_candidates": [
+            {
+              "min_seconds": 1500,
+              "max_seconds": 1800,
+              "phrase": "25–30 минут"
+            }
+          ],
+          "requires_readiness_check": true,
+          "mode": "CANDIDATE_DURATION_NOT_APPROVED",
+          "no_auto_timer_reason": null
+        },
+        {
+          "step": 5,
+          "time_candidates": [],
+          "requires_readiness_check": false,
+          "mode": "MANUAL_OR_UNTIMED",
+          "no_auto_timer_reason": "No numeric duration stated; may be preparation or plating"
+        }
+      ]
+    },
+    {
+      "id": 40,
+      "title": "Порра антекерана",
+      "cuisine": "Испанская",
+      "step_timings": [
+        {
+          "step": 1,
+          "time_candidates": [],
+          "requires_readiness_check": false,
+          "mode": "MANUAL_OR_UNTIMED",
+          "no_auto_timer_reason": "No numeric duration stated; may be preparation or plating"
+        },
+        {
+          "step": 2,
+          "time_candidates": [],
+          "requires_readiness_check": false,
+          "mode": "MANUAL_OR_UNTIMED",
+          "no_auto_timer_reason": "No numeric duration stated; may be preparation or plating"
+        },
+        {
+          "step": 3,
+          "time_candidates": [
+            {
+              "min_seconds": 600,
+              "max_seconds": 600,
+              "phrase": "10 минут"
+            }
+          ],
+          "requires_readiness_check": false,
+          "mode": "CANDIDATE_DURATION_NOT_APPROVED",
+          "no_auto_timer_reason": null
+        },
+        {
+          "step": 4,
+          "time_candidates": [],
+          "requires_readiness_check": false,
+          "mode": "MANUAL_OR_UNTIMED",
+          "no_auto_timer_reason": "No numeric duration stated; may be preparation or plating"
+        },
+        {
+          "step": 5,
+          "time_candidates": [],
+          "requires_readiness_check": false,
+          "mode": "MANUAL_OR_UNTIMED",
+          "no_auto_timer_reason": "No numeric duration stated; may be preparation or plating"
+        }
+      ]
+    },
+    {
+      "id": 41,
+      "title": "Мерджимек чорбасы, турецкий чечевичный суп",
+      "cuisine": "Турецкая",
+      "step_timings": [
+        {
+          "step": 1,
+          "time_candidates": [],
+          "requires_readiness_check": true,
+          "mode": "MANUAL_OR_UNTIMED",
+          "no_auto_timer_reason": "No numeric duration stated; may be preparation or plating"
+        },
+        {
+          "step": 2,
+          "time_candidates": [
+            {
+              "min_seconds": 240,
+              "max_seconds": 300,
+              "phrase": "4–5 минут"
+            }
+          ],
+          "requires_readiness_check": false,
+          "mode": "CANDIDATE_DURATION_NOT_APPROVED",
+          "no_auto_timer_reason": null
+        },
+        {
+          "step": 3,
+          "time_candidates": [
+            {
+              "min_seconds": 1200,
+              "max_seconds": 1500,
+              "phrase": "20–25 минут"
+            }
+          ],
+          "requires_readiness_check": true,
+          "mode": "CANDIDATE_DURATION_NOT_APPROVED",
+          "no_auto_timer_reason": null
+        },
+        {
+          "step": 4,
+          "time_candidates": [],
+          "requires_readiness_check": false,
+          "mode": "MANUAL_OR_UNTIMED",
+          "no_auto_timer_reason": "No numeric duration stated; may be preparation or plating"
+        },
+        {
+          "step": 5,
+          "time_candidates": [],
+          "requires_readiness_check": false,
+          "mode": "MANUAL_OR_UNTIMED",
+          "no_auto_timer_reason": "No numeric duration stated; may be preparation or plating"
+        }
+      ]
+    },
+    {
+      "id": 42,
+      "title": "Эзогелин с булгуром",
+      "cuisine": "Турецкая",
+      "step_timings": [
+        {
+          "step": 1,
+          "time_candidates": [],
+          "requires_readiness_check": false,
+          "mode": "MANUAL_OR_UNTIMED",
+          "no_auto_timer_reason": "No numeric duration stated; may be preparation or plating"
+        },
+        {
+          "step": 2,
+          "time_candidates": [
+            {
+              "min_seconds": 360,
+              "max_seconds": 360,
+              "phrase": "6 минут"
+            }
+          ],
+          "requires_readiness_check": false,
+          "mode": "CANDIDATE_DURATION_NOT_APPROVED",
+          "no_auto_timer_reason": null
+        },
+        {
+          "step": 3,
+          "time_candidates": [
+            {
+              "min_seconds": 1500,
+              "max_seconds": 1800,
+              "phrase": "25–30 минут"
+            }
+          ],
+          "requires_readiness_check": false,
+          "mode": "CANDIDATE_DURATION_NOT_APPROVED",
+          "no_auto_timer_reason": null
+        },
+        {
+          "step": 4,
+          "time_candidates": [],
+          "requires_readiness_check": false,
+          "mode": "MANUAL_OR_UNTIMED",
+          "no_auto_timer_reason": "No numeric duration stated; may be preparation or plating"
+        },
+        {
+          "step": 5,
+          "time_candidates": [],
+          "requires_readiness_check": false,
+          "mode": "MANUAL_OR_UNTIMED",
+          "no_auto_timer_reason": "No numeric duration stated; may be preparation or plating"
+        }
+      ]
+    },
+    {
+      "id": 43,
+      "title": "Яйла чорбасы с йогуртом",
+      "cuisine": "Турецкая",
+      "step_timings": [
+        {
+          "step": 1,
+          "time_candidates": [
+            {
+              "min_seconds": 900,
+              "max_seconds": 1080,
+              "phrase": "15–18 минут"
+            }
+          ],
+          "requires_readiness_check": true,
+          "mode": "CANDIDATE_DURATION_NOT_APPROVED",
+          "no_auto_timer_reason": null
+        },
+        {
+          "step": 2,
+          "time_candidates": [],
+          "requires_readiness_check": false,
+          "mode": "MANUAL_OR_UNTIMED",
+          "no_auto_timer_reason": "No numeric duration stated; may be preparation or plating"
+        },
+        {
+          "step": 3,
+          "time_candidates": [],
+          "requires_readiness_check": false,
+          "mode": "MANUAL_OR_UNTIMED",
+          "no_auto_timer_reason": "No numeric duration stated; may be preparation or plating"
+        },
+        {
+          "step": 4,
+          "time_candidates": [
+            {
+              "min_seconds": 240,
+              "max_seconds": 360,
+              "phrase": "4–6 минут"
+            }
+          ],
+          "requires_readiness_check": false,
+          "mode": "CANDIDATE_DURATION_NOT_APPROVED",
+          "no_auto_timer_reason": null
+        },
+        {
+          "step": 5,
+          "time_candidates": [],
+          "requires_readiness_check": false,
+          "mode": "MANUAL_OR_UNTIMED",
+          "no_auto_timer_reason": "No numeric duration stated; may be preparation or plating"
+        }
+      ]
+    },
+    {
+      "id": 44,
+      "title": "Тархана чорбасы",
+      "cuisine": "Турецкая",
+      "step_timings": [
+        {
+          "step": 1,
+          "time_candidates": [
+            {
+              "min_seconds": 600,
+              "max_seconds": 900,
+              "phrase": "10–15 минут"
+            }
+          ],
+          "requires_readiness_check": false,
+          "mode": "CANDIDATE_DURATION_NOT_APPROVED",
+          "no_auto_timer_reason": null
+        },
+        {
+          "step": 2,
+          "time_candidates": [
+            {
+              "min_seconds": 30,
+              "max_seconds": 30,
+              "phrase": "30 секунд"
+            }
+          ],
+          "requires_readiness_check": false,
+          "mode": "CANDIDATE_DURATION_NOT_APPROVED",
+          "no_auto_timer_reason": null
+        },
+        {
+          "step": 3,
+          "time_candidates": [],
+          "requires_readiness_check": false,
+          "mode": "MANUAL_OR_UNTIMED",
+          "no_auto_timer_reason": "No numeric duration stated; may be preparation or plating"
+        },
+        {
+          "step": 4,
+          "time_candidates": [
+            {
+              "min_seconds": 600,
+              "max_seconds": 900,
+              "phrase": "10–15 минут"
+            }
+          ],
+          "requires_readiness_check": true,
+          "mode": "CANDIDATE_DURATION_NOT_APPROVED",
+          "no_auto_timer_reason": null
+        },
+        {
+          "step": 5,
+          "time_candidates": [],
+          "requires_readiness_check": false,
+          "mode": "MANUAL_OR_UNTIMED",
+          "no_auto_timer_reason": "No numeric duration stated; may be preparation or plating"
+        }
+      ]
+    },
+    {
+      "id": 45,
+      "title": "Ишкембе чорбасы из рубца",
+      "cuisine": "Турецкая",
+      "step_timings": [
+        {
+          "step": 1,
+          "time_candidates": [
+            {
+              "min_seconds": 7200,
+              "max_seconds": 10800,
+              "phrase": "2–3 часа"
+            }
+          ],
+          "requires_readiness_check": false,
+          "mode": "CANDIDATE_DURATION_NOT_APPROVED",
+          "no_auto_timer_reason": null
+        },
+        {
+          "step": 2,
+          "time_candidates": [],
+          "requires_readiness_check": false,
+          "mode": "MANUAL_OR_UNTIMED",
+          "no_auto_timer_reason": "No numeric duration stated; may be preparation or plating"
+        },
+        {
+          "step": 3,
+          "time_candidates": [],
+          "requires_readiness_check": false,
+          "mode": "MANUAL_OR_UNTIMED",
+          "no_auto_timer_reason": "No numeric duration stated; may be preparation or plating"
+        },
+        {
+          "step": 4,
+          "time_candidates": [],
+          "requires_readiness_check": false,
+          "mode": "MANUAL_OR_UNTIMED",
+          "no_auto_timer_reason": "No numeric duration stated; may be preparation or plating"
+        },
+        {
+          "step": 5,
+          "time_candidates": [],
+          "requires_readiness_check": false,
+          "mode": "MANUAL_OR_UNTIMED",
+          "no_auto_timer_reason": "No numeric duration stated; may be preparation or plating"
+        }
+      ]
+    },
+    {
+      "id": 46,
+      "title": "Келле пача, суп из головы и ножек",
+      "cuisine": "Турецкая",
+      "step_timings": [
+        {
+          "step": 1,
+          "time_candidates": [],
+          "requires_readiness_check": false,
+          "mode": "MANUAL_OR_UNTIMED",
+          "no_auto_timer_reason": "No numeric duration stated; may be preparation or plating"
+        },
+        {
+          "step": 2,
+          "time_candidates": [
+            {
+              "min_seconds": 10800,
+              "max_seconds": 14400,
+              "phrase": "3–4 часа"
+            }
+          ],
+          "requires_readiness_check": false,
+          "mode": "CANDIDATE_DURATION_NOT_APPROVED",
+          "no_auto_timer_reason": null
+        },
+        {
+          "step": 3,
+          "time_candidates": [],
+          "requires_readiness_check": false,
+          "mode": "MANUAL_OR_UNTIMED",
+          "no_auto_timer_reason": "No numeric duration stated; may be preparation or plating"
+        },
+        {
+          "step": 4,
+          "time_candidates": [
+            {
+              "min_seconds": 300,
+              "max_seconds": 300,
+              "phrase": "5 минут"
+            }
+          ],
+          "requires_readiness_check": false,
+          "mode": "CANDIDATE_DURATION_NOT_APPROVED",
+          "no_auto_timer_reason": null
+        },
+        {
+          "step": 5,
+          "time_candidates": [],
+          "requires_readiness_check": false,
+          "mode": "MANUAL_OR_UNTIMED",
+          "no_auto_timer_reason": "No numeric duration stated; may be preparation or plating"
+        }
+      ]
+    },
+    {
+      "id": 47,
+      "title": "Тербиели кёфте, суп с фрикадельками",
+      "cuisine": "Турецкая",
+      "step_timings": [
+        {
+          "step": 1,
+          "time_candidates": [],
+          "requires_readiness_check": false,
+          "mode": "MANUAL_OR_UNTIMED",
+          "no_auto_timer_reason": "No numeric duration stated; may be preparation or plating"
+        },
+        {
+          "step": 2,
+          "time_candidates": [
+            {
+              "min_seconds": 300,
+              "max_seconds": 300,
+              "phrase": "5 минут"
+            }
+          ],
+          "requires_readiness_check": false,
+          "mode": "CANDIDATE_DURATION_NOT_APPROVED",
+          "no_auto_timer_reason": null
+        },
+        {
+          "step": 3,
+          "time_candidates": [
+            {
+              "min_seconds": 1200,
+              "max_seconds": 1500,
+              "phrase": "20–25 минут"
+            }
+          ],
+          "requires_readiness_check": true,
+          "mode": "CANDIDATE_DURATION_NOT_APPROVED",
+          "no_auto_timer_reason": null
+        },
+        {
+          "step": 4,
+          "time_candidates": [],
+          "requires_readiness_check": false,
+          "mode": "MANUAL_OR_UNTIMED",
+          "no_auto_timer_reason": "No numeric duration stated; may be preparation or plating"
+        },
+        {
+          "step": 5,
+          "time_candidates": [
+            {
+              "min_seconds": 120,
+              "max_seconds": 180,
+              "phrase": "2–3 минуты"
+            }
+          ],
+          "requires_readiness_check": false,
+          "mode": "CANDIDATE_DURATION_NOT_APPROVED",
+          "no_auto_timer_reason": null
+        }
+      ]
+    },
+    {
+      "id": 48,
+      "title": "Дююн чорбасы, свадебный суп",
+      "cuisine": "Турецкая",
+      "step_timings": [
+        {
+          "step": 1,
+          "time_candidates": [
+            {
+              "min_seconds": 4500,
+              "max_seconds": 5400,
+              "phrase": "75–90 минут"
+            }
+          ],
+          "requires_readiness_check": true,
+          "mode": "CANDIDATE_DURATION_NOT_APPROVED",
+          "no_auto_timer_reason": null
+        },
+        {
+          "step": 2,
+          "time_candidates": [],
+          "requires_readiness_check": false,
+          "mode": "MANUAL_OR_UNTIMED",
+          "no_auto_timer_reason": "No numeric duration stated; may be preparation or plating"
+        },
+        {
+          "step": 3,
+          "time_candidates": [],
+          "requires_readiness_check": false,
+          "mode": "MANUAL_OR_UNTIMED",
+          "no_auto_timer_reason": "No numeric duration stated; may be preparation or plating"
+        },
+        {
+          "step": 4,
+          "time_candidates": [],
+          "requires_readiness_check": false,
+          "mode": "MANUAL_OR_UNTIMED",
+          "no_auto_timer_reason": "No numeric duration stated; may be preparation or plating"
+        },
+        {
+          "step": 5,
+          "time_candidates": [],
+          "requires_readiness_check": false,
+          "mode": "MANUAL_OR_UNTIMED",
+          "no_auto_timer_reason": "No numeric duration stated; may be preparation or plating"
+        }
+      ]
+    },
+    {
+      "id": 49,
+      "title": "Эриште чорбасы, суп с домашней лапшой",
+      "cuisine": "Турецкая",
+      "step_timings": [
+        {
+          "step": 1,
+          "time_candidates": [
+            {
+              "min_seconds": 300,
+              "max_seconds": 300,
+              "phrase": "5 минут"
+            }
+          ],
+          "requires_readiness_check": true,
+          "mode": "CANDIDATE_DURATION_NOT_APPROVED",
+          "no_auto_timer_reason": null
+        },
+        {
+          "step": 2,
+          "time_candidates": [],
+          "requires_readiness_check": false,
+          "mode": "MANUAL_OR_UNTIMED",
+          "no_auto_timer_reason": "No numeric duration stated; may be preparation or plating"
+        },
+        {
+          "step": 3,
+          "time_candidates": [],
+          "requires_readiness_check": false,
+          "mode": "MANUAL_OR_UNTIMED",
+          "no_auto_timer_reason": "No numeric duration stated; may be preparation or plating"
+        },
+        {
+          "step": 4,
+          "time_candidates": [
+            {
+              "min_seconds": 480,
+              "max_seconds": 720,
+              "phrase": "8–12 минут"
+            }
+          ],
+          "requires_readiness_check": true,
+          "mode": "CANDIDATE_DURATION_NOT_APPROVED",
+          "no_auto_timer_reason": null
+        },
+        {
+          "step": 5,
+          "time_candidates": [],
+          "requires_readiness_check": true,
+          "mode": "MANUAL_OR_UNTIMED",
+          "no_auto_timer_reason": "No numeric duration stated; may be preparation or plating"
+        }
+      ]
+    },
+    {
+      "id": 50,
+      "title": "Тутмач чорбасы с зелёной чечевицей",
+      "cuisine": "Турецкая",
+      "step_timings": [
+        {
+          "step": 1,
+          "time_candidates": [],
+          "requires_readiness_check": true,
+          "mode": "MANUAL_OR_UNTIMED",
+          "no_auto_timer_reason": "No numeric duration stated; may be preparation or plating"
+        },
+        {
+          "step": 2,
+          "time_candidates": [
+            {
+              "min_seconds": 420,
+              "max_seconds": 600,
+              "phrase": "7–10 минут"
+            }
+          ],
+          "requires_readiness_check": false,
+          "mode": "CANDIDATE_DURATION_NOT_APPROVED",
+          "no_auto_timer_reason": null
+        },
+        {
+          "step": 3,
+          "time_candidates": [],
+          "requires_readiness_check": false,
+          "mode": "MANUAL_OR_UNTIMED",
+          "no_auto_timer_reason": "No numeric duration stated; may be preparation or plating"
+        },
+        {
+          "step": 4,
+          "time_candidates": [],
+          "requires_readiness_check": false,
+          "mode": "MANUAL_OR_UNTIMED",
+          "no_auto_timer_reason": "No numeric duration stated; may be preparation or plating"
+        },
+        {
+          "step": 5,
+          "time_candidates": [],
+          "requires_readiness_check": false,
+          "mode": "MANUAL_OR_UNTIMED",
+          "no_auto_timer_reason": "No numeric duration stated; may be preparation or plating"
+        }
+      ]
+    },
+    {
+      "id": 51,
+      "title": "Мисо-суп с тофу и вакаме",
+      "cuisine": "Японская",
+      "step_timings": [
+        {
+          "step": 1,
+          "time_candidates": [
+            {
+              "min_seconds": 180,
+              "max_seconds": 180,
+              "phrase": "3 минуты"
+            }
+          ],
+          "requires_readiness_check": false,
+          "mode": "CANDIDATE_DURATION_NOT_APPROVED",
+          "no_auto_timer_reason": null
+        },
+        {
+          "step": 2,
+          "time_candidates": [
+            {
+              "min_seconds": 300,
+              "max_seconds": 300,
+              "phrase": "5 минут"
+            }
+          ],
+          "requires_readiness_check": false,
+          "mode": "CANDIDATE_DURATION_NOT_APPROVED",
+          "no_auto_timer_reason": null
+        },
+        {
+          "step": 3,
+          "time_candidates": [
+            {
+              "min_seconds": 120,
+              "max_seconds": 120,
+              "phrase": "2 минуты"
+            }
+          ],
+          "requires_readiness_check": false,
+          "mode": "CANDIDATE_DURATION_NOT_APPROVED",
+          "no_auto_timer_reason": null
+        },
+        {
+          "step": 4,
+          "time_candidates": [],
+          "requires_readiness_check": false,
+          "mode": "MANUAL_OR_UNTIMED",
+          "no_auto_timer_reason": "No numeric duration stated; may be preparation or plating"
+        },
+        {
+          "step": 5,
+          "time_candidates": [],
+          "requires_readiness_check": false,
+          "mode": "MANUAL_OR_UNTIMED",
+          "no_auto_timer_reason": "No numeric duration stated; may be preparation or plating"
+        }
+      ]
+    },
+    {
+      "id": 52,
+      "title": "Сёю-рамен",
+      "cuisine": "Японская",
+      "step_timings": [
+        {
+          "step": 1,
+          "time_candidates": [
+            {
+              "min_seconds": 120,
+              "max_seconds": 120,
+              "phrase": "2 минуты"
+            }
+          ],
+          "requires_readiness_check": false,
+          "mode": "CANDIDATE_DURATION_NOT_APPROVED",
+          "no_auto_timer_reason": null
+        },
+        {
+          "step": 2,
+          "time_candidates": [],
+          "requires_readiness_check": false,
+          "mode": "MANUAL_OR_UNTIMED",
+          "no_auto_timer_reason": "No numeric duration stated; may be preparation or plating"
+        },
+        {
+          "step": 3,
+          "time_candidates": [],
+          "requires_readiness_check": false,
+          "mode": "MANUAL_OR_UNTIMED",
+          "no_auto_timer_reason": "No numeric duration stated; may be preparation or plating"
+        },
+        {
+          "step": 4,
+          "time_candidates": [],
+          "requires_readiness_check": true,
+          "mode": "MANUAL_OR_UNTIMED",
+          "no_auto_timer_reason": "No numeric duration stated; may be preparation or plating"
+        },
+        {
+          "step": 5,
+          "time_candidates": [],
+          "requires_readiness_check": false,
+          "mode": "MANUAL_OR_UNTIMED",
+          "no_auto_timer_reason": "No numeric duration stated; may be preparation or plating"
+        }
+      ]
+    },
+    {
+      "id": 53,
+      "title": "Мисо-рамен",
+      "cuisine": "Японская",
+      "step_timings": [
+        {
+          "step": 1,
+          "time_candidates": [
+            {
+              "min_seconds": 360,
+              "max_seconds": 480,
+              "phrase": "6–8 минут"
+            }
+          ],
+          "requires_readiness_check": true,
+          "mode": "CANDIDATE_DURATION_NOT_APPROVED",
+          "no_auto_timer_reason": null
+        },
+        {
+          "step": 2,
+          "time_candidates": [
+            {
+              "min_seconds": 600,
+              "max_seconds": 600,
+              "phrase": "10 минут"
+            }
+          ],
+          "requires_readiness_check": false,
+          "mode": "CANDIDATE_DURATION_NOT_APPROVED",
+          "no_auto_timer_reason": null
+        },
+        {
+          "step": 3,
+          "time_candidates": [],
+          "requires_readiness_check": false,
+          "mode": "MANUAL_OR_UNTIMED",
+          "no_auto_timer_reason": "No numeric duration stated; may be preparation or plating"
+        },
+        {
+          "step": 4,
+          "time_candidates": [
+            {
+              "min_seconds": 60,
+              "max_seconds": 60,
+              "phrase": "1 минуту"
+            }
+          ],
+          "requires_readiness_check": false,
+          "mode": "CANDIDATE_DURATION_NOT_APPROVED",
+          "no_auto_timer_reason": null
+        },
+        {
+          "step": 5,
+          "time_candidates": [],
+          "requires_readiness_check": false,
+          "mode": "MANUAL_OR_UNTIMED",
+          "no_auto_timer_reason": "No numeric duration stated; may be preparation or plating"
+        }
+      ]
+    },
+    {
+      "id": 54,
+      "title": "Тонкоцу-рамен",
+      "cuisine": "Японская",
+      "step_timings": [
+        {
+          "step": 1,
+          "time_candidates": [
+            {
+              "min_seconds": 300,
+              "max_seconds": 300,
+              "phrase": "5 минут"
+            }
+          ],
+          "requires_readiness_check": false,
+          "mode": "CANDIDATE_DURATION_NOT_APPROVED",
+          "no_auto_timer_reason": null
+        },
+        {
+          "step": 2,
+          "time_candidates": [
+            {
+              "min_seconds": 28800,
+              "max_seconds": 43200,
+              "phrase": "8–12 часов"
+            }
+          ],
+          "requires_readiness_check": false,
+          "mode": "CANDIDATE_DURATION_NOT_APPROVED",
+          "no_auto_timer_reason": null
+        },
+        {
+          "step": 3,
+          "time_candidates": [
+            {
+              "min_seconds": 3600,
+              "max_seconds": 3600,
+              "phrase": "60 минут"
+            }
+          ],
+          "requires_readiness_check": false,
+          "mode": "CANDIDATE_DURATION_NOT_APPROVED",
+          "no_auto_timer_reason": null
+        },
+        {
+          "step": 4,
+          "time_candidates": [],
+          "requires_readiness_check": false,
+          "mode": "MANUAL_OR_UNTIMED",
+          "no_auto_timer_reason": "No numeric duration stated; may be preparation or plating"
+        },
+        {
+          "step": 5,
+          "time_candidates": [],
+          "requires_readiness_check": false,
+          "mode": "MANUAL_OR_UNTIMED",
+          "no_auto_timer_reason": "No numeric duration stated; may be preparation or plating"
+        }
+      ]
+    },
+    {
+      "id": 55,
+      "title": "Тондзиру со свининой",
+      "cuisine": "Японская",
+      "step_timings": [
+        {
+          "step": 1,
+          "time_candidates": [],
+          "requires_readiness_check": false,
+          "mode": "MANUAL_OR_UNTIMED",
+          "no_auto_timer_reason": "No numeric duration stated; may be preparation or plating"
+        },
+        {
+          "step": 2,
+          "time_candidates": [
+            {
+              "min_seconds": 240,
+              "max_seconds": 240,
+              "phrase": "4 минуты"
+            }
+          ],
+          "requires_readiness_check": false,
+          "mode": "CANDIDATE_DURATION_NOT_APPROVED",
+          "no_auto_timer_reason": null
+        },
+        {
+          "step": 3,
+          "time_candidates": [
+            {
+              "min_seconds": 1080,
+              "max_seconds": 1320,
+              "phrase": "18–22 минуты"
+            }
+          ],
+          "requires_readiness_check": true,
+          "mode": "CANDIDATE_DURATION_NOT_APPROVED",
+          "no_auto_timer_reason": null
+        },
+        {
+          "step": 4,
+          "time_candidates": [],
+          "requires_readiness_check": false,
+          "mode": "MANUAL_OR_UNTIMED",
+          "no_auto_timer_reason": "No numeric duration stated; may be preparation or plating"
+        },
+        {
+          "step": 5,
+          "time_candidates": [],
+          "requires_readiness_check": false,
+          "mode": "MANUAL_OR_UNTIMED",
+          "no_auto_timer_reason": "No numeric duration stated; may be preparation or plating"
+        }
+      ]
+    },
+    {
+      "id": 56,
+      "title": "Кэнтиндзиру с овощами и тофу",
+      "cuisine": "Японская",
+      "step_timings": [
+        {
+          "step": 1,
+          "time_candidates": [],
+          "requires_readiness_check": false,
+          "mode": "MANUAL_OR_UNTIMED",
+          "no_auto_timer_reason": "No numeric duration stated; may be preparation or plating"
+        },
+        {
+          "step": 2,
+          "time_candidates": [],
+          "requires_readiness_check": false,
+          "mode": "MANUAL_OR_UNTIMED",
+          "no_auto_timer_reason": "No numeric duration stated; may be preparation or plating"
+        },
+        {
+          "step": 3,
+          "time_candidates": [
+            {
+              "min_seconds": 300,
+              "max_seconds": 420,
+              "phrase": "5–7 минут"
+            }
+          ],
+          "requires_readiness_check": false,
+          "mode": "CANDIDATE_DURATION_NOT_APPROVED",
+          "no_auto_timer_reason": null
+        },
+        {
+          "step": 4,
+          "time_candidates": [
+            {
+              "min_seconds": 900,
+              "max_seconds": 1200,
+              "phrase": "15–20 минут"
+            }
+          ],
+          "requires_readiness_check": true,
+          "mode": "CANDIDATE_DURATION_NOT_APPROVED",
+          "no_auto_timer_reason": null
+        },
+        {
+          "step": 5,
+          "time_candidates": [],
+          "requires_readiness_check": false,
+          "mode": "MANUAL_OR_UNTIMED",
+          "no_auto_timer_reason": "No numeric duration stated; may be preparation or plating"
+        }
+      ]
+    },
+    {
+      "id": 57,
+      "title": "Одзони с рисовыми лепёшками",
+      "cuisine": "Японская",
+      "step_timings": [
+        {
+          "step": 1,
+          "time_candidates": [],
+          "requires_readiness_check": false,
+          "mode": "MANUAL_OR_UNTIMED",
+          "no_auto_timer_reason": "No numeric duration stated; may be preparation or plating"
+        },
+        {
+          "step": 2,
+          "time_candidates": [
+            {
+              "min_seconds": 720,
+              "max_seconds": 900,
+              "phrase": "12–15 минут"
+            }
+          ],
+          "requires_readiness_check": true,
+          "mode": "CANDIDATE_DURATION_NOT_APPROVED",
+          "no_auto_timer_reason": null
+        },
+        {
+          "step": 3,
+          "time_candidates": [],
+          "requires_readiness_check": false,
+          "mode": "MANUAL_OR_UNTIMED",
+          "no_auto_timer_reason": "No numeric duration stated; may be preparation or plating"
+        },
+        {
+          "step": 4,
+          "time_candidates": [],
+          "requires_readiness_check": true,
+          "mode": "MANUAL_OR_UNTIMED",
+          "no_auto_timer_reason": "No numeric duration stated; may be preparation or plating"
+        },
+        {
+          "step": 5,
+          "time_candidates": [],
+          "requires_readiness_check": false,
+          "mode": "MANUAL_OR_UNTIMED",
+          "no_auto_timer_reason": "No numeric duration stated; may be preparation or plating"
+        }
+      ]
+    },
+    {
+      "id": 58,
+      "title": "Имони с таро и говядиной",
+      "cuisine": "Японская",
+      "step_timings": [
+        {
+          "step": 1,
+          "time_candidates": [],
+          "requires_readiness_check": false,
+          "mode": "MANUAL_OR_UNTIMED",
+          "no_auto_timer_reason": "No numeric duration stated; may be preparation or plating"
+        },
+        {
+          "step": 2,
+          "time_candidates": [
+            {
+              "min_seconds": 900,
+              "max_seconds": 1200,
+              "phrase": "15–20 минут"
+            }
+          ],
+          "requires_readiness_check": true,
+          "mode": "CANDIDATE_DURATION_NOT_APPROVED",
+          "no_auto_timer_reason": null
+        },
+        {
+          "step": 3,
+          "time_candidates": [],
+          "requires_readiness_check": false,
+          "mode": "MANUAL_OR_UNTIMED",
+          "no_auto_timer_reason": "No numeric duration stated; may be preparation or plating"
+        },
+        {
+          "step": 4,
+          "time_candidates": [
+            {
+              "min_seconds": 600,
+              "max_seconds": 900,
+              "phrase": "10–15 минут"
+            }
+          ],
+          "requires_readiness_check": true,
+          "mode": "CANDIDATE_DURATION_NOT_APPROVED",
+          "no_auto_timer_reason": null
+        },
+        {
+          "step": 5,
+          "time_candidates": [
+            {
+              "min_seconds": 180,
+              "max_seconds": 240,
+              "phrase": "3–4 минуты"
+            }
+          ],
+          "requires_readiness_check": false,
+          "mode": "CANDIDATE_DURATION_NOT_APPROVED",
+          "no_auto_timer_reason": null
+        }
+      ]
+    },
+    {
+      "id": 59,
+      "title": "Какэ-соба в бульоне даси",
+      "cuisine": "Японская",
+      "step_timings": [
+        {
+          "step": 1,
+          "time_candidates": [
+            {
+              "min_seconds": 120,
+              "max_seconds": 120,
+              "phrase": "2 минуты"
+            }
+          ],
+          "requires_readiness_check": false,
+          "mode": "CANDIDATE_DURATION_NOT_APPROVED",
+          "no_auto_timer_reason": null
+        },
+        {
+          "step": 2,
+          "time_candidates": [
+            {
+              "min_seconds": 240,
+              "max_seconds": 360,
+              "phrase": "4–6 минут"
+            }
+          ],
+          "requires_readiness_check": true,
+          "mode": "CANDIDATE_DURATION_NOT_APPROVED",
+          "no_auto_timer_reason": null
+        },
+        {
+          "step": 3,
+          "time_candidates": [],
+          "requires_readiness_check": false,
+          "mode": "MANUAL_OR_UNTIMED",
+          "no_auto_timer_reason": "No numeric duration stated; may be preparation or plating"
+        },
+        {
+          "step": 4,
+          "time_candidates": [],
+          "requires_readiness_check": false,
+          "mode": "MANUAL_OR_UNTIMED",
+          "no_auto_timer_reason": "No numeric duration stated; may be preparation or plating"
+        },
+        {
+          "step": 5,
+          "time_candidates": [],
+          "requires_readiness_check": false,
+          "mode": "MANUAL_OR_UNTIMED",
+          "no_auto_timer_reason": "No numeric duration stated; may be preparation or plating"
+        }
+      ]
+    },
+    {
+      "id": 60,
+      "title": "Хиядзиру, холодный суп с мисо",
+      "cuisine": "Японская",
+      "step_timings": [
+        {
+          "step": 1,
+          "time_candidates": [],
+          "requires_readiness_check": true,
+          "mode": "MANUAL_OR_UNTIMED",
+          "no_auto_timer_reason": "No numeric duration stated; may be preparation or plating"
+        },
+        {
+          "step": 2,
+          "time_candidates": [
+            {
+              "min_seconds": 60,
+              "max_seconds": 120,
+              "phrase": "1–2 минуты"
+            }
+          ],
+          "requires_readiness_check": false,
+          "mode": "CANDIDATE_DURATION_NOT_APPROVED",
+          "no_auto_timer_reason": null
+        },
+        {
+          "step": 3,
+          "time_candidates": [],
+          "requires_readiness_check": false,
+          "mode": "MANUAL_OR_UNTIMED",
+          "no_auto_timer_reason": "No numeric duration stated; may be preparation or plating"
+        },
+        {
+          "step": 4,
+          "time_candidates": [],
+          "requires_readiness_check": false,
+          "mode": "MANUAL_OR_UNTIMED",
+          "no_auto_timer_reason": "No numeric duration stated; may be preparation or plating"
+        },
+        {
+          "step": 5,
+          "time_candidates": [],
+          "requires_readiness_check": false,
+          "mode": "MANUAL_OR_UNTIMED",
+          "no_auto_timer_reason": "No numeric duration stated; may be preparation or plating"
+        }
+      ]
+    },
+    {
+      "id": 61,
+      "title": "Юккэджан с говядиной",
+      "cuisine": "Корейская",
+      "step_timings": [
+        {
+          "step": 1,
+          "time_candidates": [
+            {
+              "min_seconds": 4200,
+              "max_seconds": 5400,
+              "phrase": "70–90 минут"
+            }
+          ],
+          "requires_readiness_check": true,
+          "mode": "CANDIDATE_DURATION_NOT_APPROVED",
+          "no_auto_timer_reason": null
+        },
+        {
+          "step": 2,
+          "time_candidates": [],
+          "requires_readiness_check": false,
+          "mode": "MANUAL_OR_UNTIMED",
+          "no_auto_timer_reason": "No numeric duration stated; may be preparation or plating"
+        },
+        {
+          "step": 3,
+          "time_candidates": [
+            {
+              "min_seconds": 60,
+              "max_seconds": 60,
+              "phrase": "1 минуту"
+            }
+          ],
+          "requires_readiness_check": false,
+          "mode": "CANDIDATE_DURATION_NOT_APPROVED",
+          "no_auto_timer_reason": null
+        },
+        {
+          "step": 4,
+          "time_candidates": [
+            {
+              "min_seconds": 900,
+              "max_seconds": 1200,
+              "phrase": "15–20 минут"
+            },
+            {
+              "min_seconds": 180,
+              "max_seconds": 300,
+              "phrase": "3–5 минут"
+            }
+          ],
+          "requires_readiness_check": false,
+          "mode": "REQUIRES_HUMAN_SEQUENCE_REVIEW",
+          "no_auto_timer_reason": null
+        },
+        {
+          "step": 5,
+          "time_candidates": [],
+          "requires_readiness_check": false,
+          "mode": "MANUAL_OR_UNTIMED",
+          "no_auto_timer_reason": "No numeric duration stated; may be preparation or plating"
+        }
+      ]
+    },
+    {
+      "id": 62,
+      "title": "Самгетхан с женьшенем и курицей",
+      "cuisine": "Корейская",
+      "step_timings": [
+        {
+          "step": 1,
+          "time_candidates": [
+            {
+              "min_seconds": 3600,
+              "max_seconds": 3600,
+              "phrase": "1 час"
+            }
+          ],
+          "requires_readiness_check": false,
+          "mode": "CANDIDATE_DURATION_NOT_APPROVED",
+          "no_auto_timer_reason": null
+        },
+        {
+          "step": 2,
+          "time_candidates": [],
+          "requires_readiness_check": false,
+          "mode": "MANUAL_OR_UNTIMED",
+          "no_auto_timer_reason": "No numeric duration stated; may be preparation or plating"
+        },
+        {
+          "step": 3,
+          "time_candidates": [],
+          "requires_readiness_check": false,
+          "mode": "MANUAL_OR_UNTIMED",
+          "no_auto_timer_reason": "No numeric duration stated; may be preparation or plating"
+        },
+        {
+          "step": 4,
+          "time_candidates": [
+            {
+              "min_seconds": 3900,
+              "max_seconds": 4800,
+              "phrase": "65–80 минут"
+            }
+          ],
+          "requires_readiness_check": true,
+          "mode": "CANDIDATE_DURATION_NOT_APPROVED",
+          "no_auto_timer_reason": null
+        },
+        {
+          "step": 5,
+          "time_candidates": [],
+          "requires_readiness_check": false,
+          "mode": "MANUAL_OR_UNTIMED",
+          "no_auto_timer_reason": "No numeric duration stated; may be preparation or plating"
+        }
+      ]
+    },
+    {
+      "id": 63,
+      "title": "Соллонтхан на костном бульоне",
+      "cuisine": "Корейская",
+      "step_timings": [
+        {
+          "step": 1,
+          "time_candidates": [
+            {
+              "min_seconds": 7200,
+              "max_seconds": 7200,
+              "phrase": "2 часа"
+            },
+            {
+              "min_seconds": 600,
+              "max_seconds": 600,
+              "phrase": "10 минут"
+            }
+          ],
+          "requires_readiness_check": false,
+          "mode": "REQUIRES_HUMAN_SEQUENCE_REVIEW",
+          "no_auto_timer_reason": null
+        },
+        {
+          "step": 2,
+          "time_candidates": [
+            {
+              "min_seconds": 21600,
+              "max_seconds": 36000,
+              "phrase": "6–10 часов"
+            }
+          ],
+          "requires_readiness_check": false,
+          "mode": "CANDIDATE_DURATION_NOT_APPROVED",
+          "no_auto_timer_reason": null
+        },
+        {
+          "step": 3,
+          "time_candidates": [
+            {
+              "min_seconds": 5400,
+              "max_seconds": 7200,
+              "phrase": "1,5–2 часа"
+            }
+          ],
+          "requires_readiness_check": true,
+          "mode": "CANDIDATE_DURATION_NOT_APPROVED",
+          "no_auto_timer_reason": null
+        },
+        {
+          "step": 4,
+          "time_candidates": [],
+          "requires_readiness_check": false,
+          "mode": "MANUAL_OR_UNTIMED",
+          "no_auto_timer_reason": "No numeric duration stated; may be preparation or plating"
+        },
+        {
+          "step": 5,
+          "time_candidates": [],
+          "requires_readiness_check": false,
+          "mode": "MANUAL_OR_UNTIMED",
+          "no_auto_timer_reason": "No numeric duration stated; may be preparation or plating"
+        }
+      ]
+    },
+    {
+      "id": 64,
+      "title": "Кальбитхан с говяжьими рёбрами",
+      "cuisine": "Корейская",
+      "step_timings": [
+        {
+          "step": 1,
+          "time_candidates": [
+            {
+              "min_seconds": 2400,
+              "max_seconds": 2400,
+              "phrase": "40 минут"
+            }
+          ],
+          "requires_readiness_check": false,
+          "mode": "CANDIDATE_DURATION_NOT_APPROVED",
+          "no_auto_timer_reason": null
+        },
+        {
+          "step": 2,
+          "time_candidates": [
+            {
+              "min_seconds": 4800,
+              "max_seconds": 6000,
+              "phrase": "80–100 минут"
+            }
+          ],
+          "requires_readiness_check": false,
+          "mode": "CANDIDATE_DURATION_NOT_APPROVED",
+          "no_auto_timer_reason": null
+        },
+        {
+          "step": 3,
+          "time_candidates": [
+            {
+              "min_seconds": 1200,
+              "max_seconds": 1500,
+              "phrase": "20–25 минут"
+            }
+          ],
+          "requires_readiness_check": true,
+          "mode": "CANDIDATE_DURATION_NOT_APPROVED",
+          "no_auto_timer_reason": null
+        },
+        {
+          "step": 4,
+          "time_candidates": [],
+          "requires_readiness_check": false,
+          "mode": "MANUAL_OR_UNTIMED",
+          "no_auto_timer_reason": "No numeric duration stated; may be preparation or plating"
+        },
+        {
+          "step": 5,
+          "time_candidates": [],
+          "requires_readiness_check": false,
+          "mode": "MANUAL_OR_UNTIMED",
+          "no_auto_timer_reason": "No numeric duration stated; may be preparation or plating"
+        }
+      ]
+    },
+    {
+      "id": 65,
+      "title": "Миёккук с морскими водорослями",
+      "cuisine": "Корейская",
+      "step_timings": [
+        {
+          "step": 1,
+          "time_candidates": [
+            {
+              "min_seconds": 900,
+              "max_seconds": 1200,
+              "phrase": "15–20 минут"
+            }
+          ],
+          "requires_readiness_check": false,
+          "mode": "CANDIDATE_DURATION_NOT_APPROVED",
+          "no_auto_timer_reason": null
+        },
+        {
+          "step": 2,
+          "time_candidates": [
+            {
+              "min_seconds": 180,
+              "max_seconds": 180,
+              "phrase": "3 минуты"
+            }
+          ],
+          "requires_readiness_check": false,
+          "mode": "CANDIDATE_DURATION_NOT_APPROVED",
+          "no_auto_timer_reason": null
+        },
+        {
+          "step": 3,
+          "time_candidates": [
+            {
+              "min_seconds": 180,
+              "max_seconds": 240,
+              "phrase": "3–4 минуты"
+            }
+          ],
+          "requires_readiness_check": false,
+          "mode": "CANDIDATE_DURATION_NOT_APPROVED",
+          "no_auto_timer_reason": null
+        },
+        {
+          "step": 4,
+          "time_candidates": [
+            {
+              "min_seconds": 1200,
+              "max_seconds": 1500,
+              "phrase": "20–25 минут"
+            }
+          ],
+          "requires_readiness_check": true,
+          "mode": "CANDIDATE_DURATION_NOT_APPROVED",
+          "no_auto_timer_reason": null
+        },
+        {
+          "step": 5,
+          "time_candidates": [],
+          "requires_readiness_check": false,
+          "mode": "MANUAL_OR_UNTIMED",
+          "no_auto_timer_reason": "No numeric duration stated; may be preparation or plating"
+        }
+      ]
+    },
+    {
+      "id": 66,
+      "title": "Мандугук с пельменями",
+      "cuisine": "Корейская",
+      "step_timings": [
+        {
+          "step": 1,
+          "time_candidates": [],
+          "requires_readiness_check": false,
+          "mode": "MANUAL_OR_UNTIMED",
+          "no_auto_timer_reason": "No numeric duration stated; may be preparation or plating"
+        },
+        {
+          "step": 2,
+          "time_candidates": [
+            {
+              "min_seconds": 360,
+              "max_seconds": 600,
+              "phrase": "6–10 минут"
+            }
+          ],
+          "requires_readiness_check": true,
+          "mode": "CANDIDATE_DURATION_NOT_APPROVED",
+          "no_auto_timer_reason": null
+        },
+        {
+          "step": 3,
+          "time_candidates": [
+            {
+              "min_seconds": 20,
+              "max_seconds": 20,
+              "phrase": "20 секунд"
+            }
+          ],
+          "requires_readiness_check": false,
+          "mode": "CANDIDATE_DURATION_NOT_APPROVED",
+          "no_auto_timer_reason": null
+        },
+        {
+          "step": 4,
+          "time_candidates": [],
+          "requires_readiness_check": false,
+          "mode": "MANUAL_OR_UNTIMED",
+          "no_auto_timer_reason": "No numeric duration stated; may be preparation or plating"
+        },
+        {
+          "step": 5,
+          "time_candidates": [],
+          "requires_readiness_check": false,
+          "mode": "MANUAL_OR_UNTIMED",
+          "no_auto_timer_reason": "No numeric duration stated; may be preparation or plating"
+        }
+      ]
+    },
+    {
+      "id": 67,
+      "title": "Кимчиччигэ со свининой",
+      "cuisine": "Корейская",
+      "step_timings": [
+        {
+          "step": 1,
+          "time_candidates": [],
+          "requires_readiness_check": false,
+          "mode": "MANUAL_OR_UNTIMED",
+          "no_auto_timer_reason": "No numeric duration stated; may be preparation or plating"
+        },
+        {
+          "step": 2,
+          "time_candidates": [
+            {
+              "min_seconds": 300,
+              "max_seconds": 360,
+              "phrase": "5–6 минут"
+            }
+          ],
+          "requires_readiness_check": false,
+          "mode": "CANDIDATE_DURATION_NOT_APPROVED",
+          "no_auto_timer_reason": null
+        },
+        {
+          "step": 3,
+          "time_candidates": [
+            {
+              "min_seconds": 300,
+              "max_seconds": 300,
+              "phrase": "5 минут"
+            }
+          ],
+          "requires_readiness_check": false,
+          "mode": "CANDIDATE_DURATION_NOT_APPROVED",
+          "no_auto_timer_reason": null
+        },
+        {
+          "step": 4,
+          "time_candidates": [
+            {
+              "min_seconds": 1200,
+              "max_seconds": 1500,
+              "phrase": "20–25 минут"
+            }
+          ],
+          "requires_readiness_check": true,
+          "mode": "CANDIDATE_DURATION_NOT_APPROVED",
+          "no_auto_timer_reason": null
+        },
+        {
+          "step": 5,
+          "time_candidates": [
+            {
+              "min_seconds": 300,
+              "max_seconds": 300,
+              "phrase": "5 минут"
+            }
+          ],
+          "requires_readiness_check": false,
+          "mode": "CANDIDATE_DURATION_NOT_APPROVED",
+          "no_auto_timer_reason": null
+        }
+      ]
+    },
+    {
+      "id": 68,
+      "title": "Конд-намульгук с ростками сои",
+      "cuisine": "Корейская",
+      "step_timings": [
+        {
+          "step": 1,
+          "time_candidates": [],
+          "requires_readiness_check": false,
+          "mode": "MANUAL_OR_UNTIMED",
+          "no_auto_timer_reason": "No numeric duration stated; may be preparation or plating"
+        },
+        {
+          "step": 2,
+          "time_candidates": [
+            {
+              "min_seconds": 420,
+              "max_seconds": 420,
+              "phrase": "7 минут"
+            }
+          ],
+          "requires_readiness_check": false,
+          "mode": "CANDIDATE_DURATION_NOT_APPROVED",
+          "no_auto_timer_reason": null
+        },
+        {
+          "step": 3,
+          "time_candidates": [
+            {
+              "min_seconds": 420,
+              "max_seconds": 480,
+              "phrase": "7–8 минут"
+            }
+          ],
+          "requires_readiness_check": true,
+          "mode": "CANDIDATE_DURATION_NOT_APPROVED",
+          "no_auto_timer_reason": null
+        },
+        {
+          "step": 4,
+          "time_candidates": [
+            {
+              "min_seconds": 60,
+              "max_seconds": 120,
+              "phrase": "1–2 минуты"
+            }
+          ],
+          "requires_readiness_check": false,
+          "mode": "CANDIDATE_DURATION_NOT_APPROVED",
+          "no_auto_timer_reason": null
+        },
+        {
+          "step": 5,
+          "time_candidates": [],
+          "requires_readiness_check": false,
+          "mode": "MANUAL_OR_UNTIMED",
+          "no_auto_timer_reason": "No numeric duration stated; may be preparation or plating"
+        }
+      ]
+    },
+    {
+      "id": 69,
+      "title": "Камджатхан со свиными косточками",
+      "cuisine": "Корейская",
+      "step_timings": [
+        {
+          "step": 1,
+          "time_candidates": [
+            {
+              "min_seconds": 480,
+              "max_seconds": 480,
+              "phrase": "8 минут"
+            }
+          ],
+          "requires_readiness_check": false,
+          "mode": "CANDIDATE_DURATION_NOT_APPROVED",
+          "no_auto_timer_reason": null
+        },
+        {
+          "step": 2,
+          "time_candidates": [
+            {
+              "min_seconds": 4800,
+              "max_seconds": 6000,
+              "phrase": "80–100 минут"
+            }
+          ],
+          "requires_readiness_check": true,
+          "mode": "CANDIDATE_DURATION_NOT_APPROVED",
+          "no_auto_timer_reason": null
+        },
+        {
+          "step": 3,
+          "time_candidates": [],
+          "requires_readiness_check": false,
+          "mode": "MANUAL_OR_UNTIMED",
+          "no_auto_timer_reason": "No numeric duration stated; may be preparation or plating"
+        },
+        {
+          "step": 4,
+          "time_candidates": [
+            {
+              "min_seconds": 1200,
+              "max_seconds": 1500,
+              "phrase": "20–25 минут"
+            }
+          ],
+          "requires_readiness_check": true,
+          "mode": "CANDIDATE_DURATION_NOT_APPROVED",
+          "no_auto_timer_reason": null
+        },
+        {
+          "step": 5,
+          "time_candidates": [
+            {
+              "min_seconds": 180,
+              "max_seconds": 180,
+              "phrase": "3 минуты"
+            }
+          ],
+          "requires_readiness_check": false,
+          "mode": "CANDIDATE_DURATION_NOT_APPROVED",
+          "no_auto_timer_reason": null
+        }
+      ]
+    },
+    {
+      "id": 70,
+      "title": "Твенджан-ччигэ с соевой пастой",
+      "cuisine": "Корейская",
+      "step_timings": [
+        {
+          "step": 1,
+          "time_candidates": [
+            {
+              "min_seconds": 720,
+              "max_seconds": 900,
+              "phrase": "12–15 минут"
+            }
+          ],
+          "requires_readiness_check": false,
+          "mode": "CANDIDATE_DURATION_NOT_APPROVED",
+          "no_auto_timer_reason": null
+        },
+        {
+          "step": 2,
+          "time_candidates": [
+            {
+              "min_seconds": 420,
+              "max_seconds": 480,
+              "phrase": "7–8 минут"
+            }
+          ],
+          "requires_readiness_check": false,
+          "mode": "CANDIDATE_DURATION_NOT_APPROVED",
+          "no_auto_timer_reason": null
+        },
+        {
+          "step": 3,
+          "time_candidates": [],
+          "requires_readiness_check": false,
+          "mode": "MANUAL_OR_UNTIMED",
+          "no_auto_timer_reason": "No numeric duration stated; may be preparation or plating"
+        },
+        {
+          "step": 4,
+          "time_candidates": [
+            {
+              "min_seconds": 480,
+              "max_seconds": 600,
+              "phrase": "8–10 минут"
+            },
+            {
+              "min_seconds": 180,
+              "max_seconds": 240,
+              "phrase": "3–4 минуты"
+            }
+          ],
+          "requires_readiness_check": true,
+          "mode": "REQUIRES_HUMAN_SEQUENCE_REVIEW",
+          "no_auto_timer_reason": null
+        },
+        {
+          "step": 5,
+          "time_candidates": [],
+          "requires_readiness_check": false,
+          "mode": "MANUAL_OR_UNTIMED",
+          "no_auto_timer_reason": "No numeric duration stated; may be preparation or plating"
+        }
+      ]
+    },
+    {
+      "id": 71,
+      "title": "Посоле рохо со свининой",
+      "cuisine": "Мексиканская",
+      "step_timings": [
+        {
+          "step": 1,
+          "time_candidates": [
+            {
+              "min_seconds": 4500,
+              "max_seconds": 6000,
+              "phrase": "75–100 минут"
+            }
+          ],
+          "requires_readiness_check": true,
+          "mode": "CANDIDATE_DURATION_NOT_APPROVED",
+          "no_auto_timer_reason": null
+        },
+        {
+          "step": 2,
+          "time_candidates": [
+            {
+              "min_seconds": 900,
+              "max_seconds": 900,
+              "phrase": "15 минут"
+            }
+          ],
+          "requires_readiness_check": false,
+          "mode": "CANDIDATE_DURATION_NOT_APPROVED",
+          "no_auto_timer_reason": null
+        },
+        {
+          "step": 3,
+          "time_candidates": [],
+          "requires_readiness_check": false,
+          "mode": "MANUAL_OR_UNTIMED",
+          "no_auto_timer_reason": "No numeric duration stated; may be preparation or plating"
+        },
+        {
+          "step": 4,
+          "time_candidates": [
+            {
+              "min_seconds": 1500,
+              "max_seconds": 1800,
+              "phrase": "25–30 минут"
+            }
+          ],
+          "requires_readiness_check": false,
+          "mode": "CANDIDATE_DURATION_NOT_APPROVED",
+          "no_auto_timer_reason": null
+        },
+        {
+          "step": 5,
+          "time_candidates": [],
+          "requires_readiness_check": false,
+          "mode": "MANUAL_OR_UNTIMED",
+          "no_auto_timer_reason": "No numeric duration stated; may be preparation or plating"
+        }
+      ]
+    },
+    {
+      "id": 72,
+      "title": "Посоле верде с курицей",
+      "cuisine": "Мексиканская",
+      "step_timings": [
+        {
+          "step": 1,
+          "time_candidates": [
+            {
+              "min_seconds": 2100,
+              "max_seconds": 2700,
+              "phrase": "35–45 минут"
+            }
+          ],
+          "requires_readiness_check": false,
+          "mode": "CANDIDATE_DURATION_NOT_APPROVED",
+          "no_auto_timer_reason": null
+        },
+        {
+          "step": 2,
+          "time_candidates": [],
+          "requires_readiness_check": true,
+          "mode": "MANUAL_OR_UNTIMED",
+          "no_auto_timer_reason": "No numeric duration stated; may be preparation or plating"
+        },
+        {
+          "step": 3,
+          "time_candidates": [
+            {
+              "min_seconds": 300,
+              "max_seconds": 300,
+              "phrase": "5 минут"
+            }
+          ],
+          "requires_readiness_check": false,
+          "mode": "CANDIDATE_DURATION_NOT_APPROVED",
+          "no_auto_timer_reason": null
+        },
+        {
+          "step": 4,
+          "time_candidates": [
+            {
+              "min_seconds": 1200,
+              "max_seconds": 1500,
+              "phrase": "20–25 минут"
+            }
+          ],
+          "requires_readiness_check": false,
+          "mode": "CANDIDATE_DURATION_NOT_APPROVED",
+          "no_auto_timer_reason": null
+        },
+        {
+          "step": 5,
+          "time_candidates": [],
+          "requires_readiness_check": false,
+          "mode": "MANUAL_OR_UNTIMED",
+          "no_auto_timer_reason": "No numeric duration stated; may be preparation or plating"
+        }
+      ]
+    },
+    {
+      "id": 73,
+      "title": "Сопа де тортилья",
+      "cuisine": "Мексиканская",
+      "step_timings": [
+        {
+          "step": 1,
+          "time_candidates": [],
+          "requires_readiness_check": false,
+          "mode": "MANUAL_OR_UNTIMED",
+          "no_auto_timer_reason": "No numeric duration stated; may be preparation or plating"
+        },
+        {
+          "step": 2,
+          "time_candidates": [
+            {
+              "min_seconds": 20,
+              "max_seconds": 20,
+              "phrase": "20 секунд"
+            },
+            {
+              "min_seconds": 600,
+              "max_seconds": 600,
+              "phrase": "10 минут"
+            }
+          ],
+          "requires_readiness_check": false,
+          "mode": "REQUIRES_HUMAN_SEQUENCE_REVIEW",
+          "no_auto_timer_reason": null
+        },
+        {
+          "step": 3,
+          "time_candidates": [
+            {
+              "min_seconds": 480,
+              "max_seconds": 600,
+              "phrase": "8–10 минут"
+            }
+          ],
+          "requires_readiness_check": false,
+          "mode": "CANDIDATE_DURATION_NOT_APPROVED",
+          "no_auto_timer_reason": null
+        },
+        {
+          "step": 4,
+          "time_candidates": [
+            {
+              "min_seconds": 900,
+              "max_seconds": 900,
+              "phrase": "15 минут"
+            }
+          ],
+          "requires_readiness_check": false,
+          "mode": "CANDIDATE_DURATION_NOT_APPROVED",
+          "no_auto_timer_reason": null
+        },
+        {
+          "step": 5,
+          "time_candidates": [],
+          "requires_readiness_check": false,
+          "mode": "MANUAL_OR_UNTIMED",
+          "no_auto_timer_reason": "No numeric duration stated; may be preparation or plating"
+        }
+      ]
+    },
+    {
+      "id": 74,
+      "title": "Кальдо тлальпеньо с курицей и нутом",
+      "cuisine": "Мексиканская",
+      "step_timings": [
+        {
+          "step": 1,
+          "time_candidates": [
+            {
+              "min_seconds": 1800,
+              "max_seconds": 2400,
+              "phrase": "30–40 минут"
+            }
+          ],
+          "requires_readiness_check": true,
+          "mode": "CANDIDATE_DURATION_NOT_APPROVED",
+          "no_auto_timer_reason": null
+        },
+        {
+          "step": 2,
+          "time_candidates": [],
+          "requires_readiness_check": false,
+          "mode": "MANUAL_OR_UNTIMED",
+          "no_auto_timer_reason": "No numeric duration stated; may be preparation or plating"
+        },
+        {
+          "step": 3,
+          "time_candidates": [
+            {
+              "min_seconds": 480,
+              "max_seconds": 480,
+              "phrase": "8 минут"
+            },
+            {
+              "min_seconds": 480,
+              "max_seconds": 600,
+              "phrase": "8–10 минут"
+            }
+          ],
+          "requires_readiness_check": false,
+          "mode": "REQUIRES_HUMAN_SEQUENCE_REVIEW",
+          "no_auto_timer_reason": null
+        },
+        {
+          "step": 4,
+          "time_candidates": [
+            {
+              "min_seconds": 180,
+              "max_seconds": 180,
+              "phrase": "3 минуты"
+            }
+          ],
+          "requires_readiness_check": false,
+          "mode": "CANDIDATE_DURATION_NOT_APPROVED",
+          "no_auto_timer_reason": null
+        },
+        {
+          "step": 5,
+          "time_candidates": [],
+          "requires_readiness_check": false,
+          "mode": "MANUAL_OR_UNTIMED",
+          "no_auto_timer_reason": "No numeric duration stated; may be preparation or plating"
+        }
+      ]
+    },
+    {
+      "id": 75,
+      "title": "Сопа де фидео",
+      "cuisine": "Мексиканская",
+      "step_timings": [
+        {
+          "step": 1,
+          "time_candidates": [],
+          "requires_readiness_check": false,
+          "mode": "MANUAL_OR_UNTIMED",
+          "no_auto_timer_reason": "No numeric duration stated; may be preparation or plating"
+        },
+        {
+          "step": 2,
+          "time_candidates": [
+            {
+              "min_seconds": 180,
+              "max_seconds": 300,
+              "phrase": "3–5 минут"
+            }
+          ],
+          "requires_readiness_check": true,
+          "mode": "CANDIDATE_DURATION_NOT_APPROVED",
+          "no_auto_timer_reason": null
+        },
+        {
+          "step": 3,
+          "time_candidates": [
+            {
+              "min_seconds": 300,
+              "max_seconds": 300,
+              "phrase": "5 минут"
+            }
+          ],
+          "requires_readiness_check": false,
+          "mode": "CANDIDATE_DURATION_NOT_APPROVED",
+          "no_auto_timer_reason": null
+        },
+        {
+          "step": 4,
+          "time_candidates": [
+            {
+              "min_seconds": 420,
+              "max_seconds": 600,
+              "phrase": "7–10 минут"
+            }
+          ],
+          "requires_readiness_check": true,
+          "mode": "CANDIDATE_DURATION_NOT_APPROVED",
+          "no_auto_timer_reason": null
+        },
+        {
+          "step": 5,
+          "time_candidates": [],
+          "requires_readiness_check": false,
+          "mode": "MANUAL_OR_UNTIMED",
+          "no_auto_timer_reason": "No numeric duration stated; may be preparation or plating"
+        }
+      ]
+    },
+    {
+      "id": 76,
+      "title": "Сопа де лима с курицей",
+      "cuisine": "Мексиканская",
+      "step_timings": [
+        {
+          "step": 1,
+          "time_candidates": [
+            {
+              "min_seconds": 2400,
+              "max_seconds": 2400,
+              "phrase": "40 минут"
+            }
+          ],
+          "requires_readiness_check": true,
+          "mode": "CANDIDATE_DURATION_NOT_APPROVED",
+          "no_auto_timer_reason": null
+        },
+        {
+          "step": 2,
+          "time_candidates": [
+            {
+              "min_seconds": 360,
+              "max_seconds": 480,
+              "phrase": "6–8 минут"
+            }
+          ],
+          "requires_readiness_check": false,
+          "mode": "CANDIDATE_DURATION_NOT_APPROVED",
+          "no_auto_timer_reason": null
+        },
+        {
+          "step": 3,
+          "time_candidates": [
+            {
+              "min_seconds": 600,
+              "max_seconds": 600,
+              "phrase": "10 минут"
+            }
+          ],
+          "requires_readiness_check": false,
+          "mode": "CANDIDATE_DURATION_NOT_APPROVED",
+          "no_auto_timer_reason": null
+        },
+        {
+          "step": 4,
+          "time_candidates": [],
+          "requires_readiness_check": false,
+          "mode": "MANUAL_OR_UNTIMED",
+          "no_auto_timer_reason": "No numeric duration stated; may be preparation or plating"
+        },
+        {
+          "step": 5,
+          "time_candidates": [],
+          "requires_readiness_check": false,
+          "mode": "MANUAL_OR_UNTIMED",
+          "no_auto_timer_reason": "No numeric duration stated; may be preparation or plating"
+        }
+      ]
+    },
+    {
+      "id": 77,
+      "title": "Кальдо де рес с говядиной",
+      "cuisine": "Мексиканская",
+      "step_timings": [
+        {
+          "step": 1,
+          "time_candidates": [
+            {
+              "min_seconds": 4800,
+              "max_seconds": 6000,
+              "phrase": "80–100 минут"
+            }
+          ],
+          "requires_readiness_check": true,
+          "mode": "CANDIDATE_DURATION_NOT_APPROVED",
+          "no_auto_timer_reason": null
+        },
+        {
+          "step": 2,
+          "time_candidates": [
+            {
+              "min_seconds": 600,
+              "max_seconds": 600,
+              "phrase": "10 минут"
+            }
+          ],
+          "requires_readiness_check": false,
+          "mode": "CANDIDATE_DURATION_NOT_APPROVED",
+          "no_auto_timer_reason": null
+        },
+        {
+          "step": 3,
+          "time_candidates": [
+            {
+              "min_seconds": 720,
+              "max_seconds": 720,
+              "phrase": "12 минут"
+            }
+          ],
+          "requires_readiness_check": false,
+          "mode": "CANDIDATE_DURATION_NOT_APPROVED",
+          "no_auto_timer_reason": null
+        },
+        {
+          "step": 4,
+          "time_candidates": [
+            {
+              "min_seconds": 480,
+              "max_seconds": 600,
+              "phrase": "8–10 минут"
+            }
+          ],
+          "requires_readiness_check": true,
+          "mode": "CANDIDATE_DURATION_NOT_APPROVED",
+          "no_auto_timer_reason": null
+        },
+        {
+          "step": 5,
+          "time_candidates": [],
+          "requires_readiness_check": false,
+          "mode": "MANUAL_OR_UNTIMED",
+          "no_auto_timer_reason": "No numeric duration stated; may be preparation or plating"
+        }
+      ]
+    },
+    {
+      "id": 78,
+      "title": "Кальдо де альбондигас",
+      "cuisine": "Мексиканская",
+      "step_timings": [
+        {
+          "step": 1,
+          "time_candidates": [],
+          "requires_readiness_check": false,
+          "mode": "MANUAL_OR_UNTIMED",
+          "no_auto_timer_reason": "No numeric duration stated; may be preparation or plating"
+        },
+        {
+          "step": 2,
+          "time_candidates": [
+            {
+              "min_seconds": 300,
+              "max_seconds": 300,
+              "phrase": "5 минут"
+            }
+          ],
+          "requires_readiness_check": false,
+          "mode": "CANDIDATE_DURATION_NOT_APPROVED",
+          "no_auto_timer_reason": null
+        },
+        {
+          "step": 3,
+          "time_candidates": [
+            {
+              "min_seconds": 480,
+              "max_seconds": 480,
+              "phrase": "8 минут"
+            }
+          ],
+          "requires_readiness_check": false,
+          "mode": "CANDIDATE_DURATION_NOT_APPROVED",
+          "no_auto_timer_reason": null
+        },
+        {
+          "step": 4,
+          "time_candidates": [
+            {
+              "min_seconds": 900,
+              "max_seconds": 900,
+              "phrase": "15 минут"
+            },
+            {
+              "min_seconds": 420,
+              "max_seconds": 600,
+              "phrase": "7–10 минут"
+            }
+          ],
+          "requires_readiness_check": true,
+          "mode": "REQUIRES_HUMAN_SEQUENCE_REVIEW",
+          "no_auto_timer_reason": null
+        },
+        {
+          "step": 5,
+          "time_candidates": [],
+          "requires_readiness_check": false,
+          "mode": "MANUAL_OR_UNTIMED",
+          "no_auto_timer_reason": "No numeric duration stated; may be preparation or plating"
+        }
+      ]
+    },
+    {
+      "id": 79,
+      "title": "Сопа тараска из фасоли",
+      "cuisine": "Мексиканская",
+      "step_timings": [
+        {
+          "step": 1,
+          "time_candidates": [],
+          "requires_readiness_check": false,
+          "mode": "MANUAL_OR_UNTIMED",
+          "no_auto_timer_reason": "No numeric duration stated; may be preparation or plating"
+        },
+        {
+          "step": 2,
+          "time_candidates": [
+            {
+              "min_seconds": 600,
+              "max_seconds": 600,
+              "phrase": "10 минут"
+            }
+          ],
+          "requires_readiness_check": false,
+          "mode": "CANDIDATE_DURATION_NOT_APPROVED",
+          "no_auto_timer_reason": null
+        },
+        {
+          "step": 3,
+          "time_candidates": [
+            {
+              "min_seconds": 360,
+              "max_seconds": 360,
+              "phrase": "6 минут"
+            }
+          ],
+          "requires_readiness_check": false,
+          "mode": "CANDIDATE_DURATION_NOT_APPROVED",
+          "no_auto_timer_reason": null
+        },
+        {
+          "step": 4,
+          "time_candidates": [
+            {
+              "min_seconds": 720,
+              "max_seconds": 900,
+              "phrase": "12–15 минут"
+            }
+          ],
+          "requires_readiness_check": false,
+          "mode": "CANDIDATE_DURATION_NOT_APPROVED",
+          "no_auto_timer_reason": null
+        },
+        {
+          "step": 5,
+          "time_candidates": [],
+          "requires_readiness_check": false,
+          "mode": "MANUAL_OR_UNTIMED",
+          "no_auto_timer_reason": "No numeric duration stated; may be preparation or plating"
+        }
+      ]
+    },
+    {
+      "id": 80,
+      "title": "Чильпачоле с крабом",
+      "cuisine": "Мексиканская",
+      "step_timings": [
+        {
+          "step": 1,
+          "time_candidates": [
+            {
+              "min_seconds": 600,
+              "max_seconds": 600,
+              "phrase": "10 минут"
+            }
+          ],
+          "requires_readiness_check": false,
+          "mode": "CANDIDATE_DURATION_NOT_APPROVED",
+          "no_auto_timer_reason": null
+        },
+        {
+          "step": 2,
+          "time_candidates": [],
+          "requires_readiness_check": false,
+          "mode": "MANUAL_OR_UNTIMED",
+          "no_auto_timer_reason": "No numeric duration stated; may be preparation or plating"
+        },
+        {
+          "step": 3,
+          "time_candidates": [
+            {
+              "min_seconds": 360,
+              "max_seconds": 480,
+              "phrase": "6–8 минут"
+            }
+          ],
+          "requires_readiness_check": false,
+          "mode": "CANDIDATE_DURATION_NOT_APPROVED",
+          "no_auto_timer_reason": null
+        },
+        {
+          "step": 4,
+          "time_candidates": [
+            {
+              "min_seconds": 480,
+              "max_seconds": 480,
+              "phrase": "8 минут"
+            }
+          ],
+          "requires_readiness_check": false,
+          "mode": "CANDIDATE_DURATION_NOT_APPROVED",
+          "no_auto_timer_reason": null
+        },
+        {
+          "step": 5,
+          "time_candidates": [
+            {
+              "min_seconds": 180,
+              "max_seconds": 240,
+              "phrase": "3–4 минуты"
+            }
+          ],
+          "requires_readiness_check": false,
+          "mode": "CANDIDATE_DURATION_NOT_APPROVED",
+          "no_auto_timer_reason": null
+        }
+      ]
+    },
+    {
+      "id": 81,
+      "title": "Фо бо с говядиной",
+      "cuisine": "Вьетнамская",
+      "step_timings": [
+        {
+          "step": 1,
+          "time_candidates": [],
+          "requires_readiness_check": false,
+          "mode": "MANUAL_OR_UNTIMED",
+          "no_auto_timer_reason": "No numeric duration stated; may be preparation or plating"
+        },
+        {
+          "step": 2,
+          "time_candidates": [
+            {
+              "min_seconds": 480,
+              "max_seconds": 480,
+              "phrase": "8 минут"
+            },
+            {
+              "min_seconds": 9000,
+              "max_seconds": 10800,
+              "phrase": "2,5–3 часа"
+            }
+          ],
+          "requires_readiness_check": false,
+          "mode": "REQUIRES_HUMAN_SEQUENCE_REVIEW",
+          "no_auto_timer_reason": null
+        },
+        {
+          "step": 3,
+          "time_candidates": [
+            {
+              "min_seconds": 2700,
+              "max_seconds": 2700,
+              "phrase": "45 минут"
+            }
+          ],
+          "requires_readiness_check": false,
+          "mode": "CANDIDATE_DURATION_NOT_APPROVED",
+          "no_auto_timer_reason": null
+        },
+        {
+          "step": 4,
+          "time_candidates": [],
+          "requires_readiness_check": false,
+          "mode": "MANUAL_OR_UNTIMED",
+          "no_auto_timer_reason": "No numeric duration stated; may be preparation or plating"
+        },
+        {
+          "step": 5,
+          "time_candidates": [
+            {
+              "min_seconds": 30,
+              "max_seconds": 60,
+              "phrase": "30–60 секунд"
+            }
+          ],
+          "requires_readiness_check": false,
+          "mode": "CANDIDATE_DURATION_NOT_APPROVED",
+          "no_auto_timer_reason": null
+        }
+      ]
+    },
+    {
+      "id": 82,
+      "title": "Фо га с курицей",
+      "cuisine": "Вьетнамская",
+      "step_timings": [
+        {
+          "step": 1,
+          "time_candidates": [],
+          "requires_readiness_check": false,
+          "mode": "MANUAL_OR_UNTIMED",
+          "no_auto_timer_reason": "No numeric duration stated; may be preparation or plating"
+        },
+        {
+          "step": 2,
+          "time_candidates": [],
+          "requires_readiness_check": false,
+          "mode": "MANUAL_OR_UNTIMED",
+          "no_auto_timer_reason": "No numeric duration stated; may be preparation or plating"
+        },
+        {
+          "step": 3,
+          "time_candidates": [
+            {
+              "min_seconds": 3000,
+              "max_seconds": 3600,
+              "phrase": "50–60 минут"
+            }
+          ],
+          "requires_readiness_check": true,
+          "mode": "CANDIDATE_DURATION_NOT_APPROVED",
+          "no_auto_timer_reason": null
+        },
+        {
+          "step": 4,
+          "time_candidates": [],
+          "requires_readiness_check": false,
+          "mode": "MANUAL_OR_UNTIMED",
+          "no_auto_timer_reason": "No numeric duration stated; may be preparation or plating"
+        },
+        {
+          "step": 5,
+          "time_candidates": [],
+          "requires_readiness_check": false,
+          "mode": "MANUAL_OR_UNTIMED",
+          "no_auto_timer_reason": "No numeric duration stated; may be preparation or plating"
+        }
+      ]
+    },
+    {
+      "id": 83,
+      "title": "Бун бо Хюэ",
+      "cuisine": "Вьетнамская",
+      "step_timings": [
+        {
+          "step": 1,
+          "time_candidates": [
+            {
+              "min_seconds": 300,
+              "max_seconds": 300,
+              "phrase": "5 минут"
+            }
+          ],
+          "requires_readiness_check": false,
+          "mode": "CANDIDATE_DURATION_NOT_APPROVED",
+          "no_auto_timer_reason": null
+        },
+        {
+          "step": 2,
+          "time_candidates": [
+            {
+              "min_seconds": 5400,
+              "max_seconds": 7200,
+              "phrase": "1,5–2 часа"
+            }
+          ],
+          "requires_readiness_check": true,
+          "mode": "CANDIDATE_DURATION_NOT_APPROVED",
+          "no_auto_timer_reason": null
+        },
+        {
+          "step": 3,
+          "time_candidates": [],
+          "requires_readiness_check": false,
+          "mode": "MANUAL_OR_UNTIMED",
+          "no_auto_timer_reason": "No numeric duration stated; may be preparation or plating"
+        },
+        {
+          "step": 4,
+          "time_candidates": [],
+          "requires_readiness_check": false,
+          "mode": "MANUAL_OR_UNTIMED",
+          "no_auto_timer_reason": "No numeric duration stated; may be preparation or plating"
+        },
+        {
+          "step": 5,
+          "time_candidates": [],
+          "requires_readiness_check": false,
+          "mode": "MANUAL_OR_UNTIMED",
+          "no_auto_timer_reason": "No numeric duration stated; may be preparation or plating"
+        }
+      ]
+    },
+    {
+      "id": 84,
+      "title": "Бун риеу с крабом",
+      "cuisine": "Вьетнамская",
+      "step_timings": [
+        {
+          "step": 1,
+          "time_candidates": [],
+          "requires_readiness_check": false,
+          "mode": "MANUAL_OR_UNTIMED",
+          "no_auto_timer_reason": "No numeric duration stated; may be preparation or plating"
+        },
+        {
+          "step": 2,
+          "time_candidates": [
+            {
+              "min_seconds": 480,
+              "max_seconds": 480,
+              "phrase": "8 минут"
+            }
+          ],
+          "requires_readiness_check": false,
+          "mode": "CANDIDATE_DURATION_NOT_APPROVED",
+          "no_auto_timer_reason": null
+        },
+        {
+          "step": 3,
+          "time_candidates": [
+            {
+              "min_seconds": 600,
+              "max_seconds": 720,
+              "phrase": "10–12 минут"
+            }
+          ],
+          "requires_readiness_check": false,
+          "mode": "CANDIDATE_DURATION_NOT_APPROVED",
+          "no_auto_timer_reason": null
+        },
+        {
+          "step": 4,
+          "time_candidates": [
+            {
+              "min_seconds": 300,
+              "max_seconds": 300,
+              "phrase": "5 минут"
+            }
+          ],
+          "requires_readiness_check": false,
+          "mode": "CANDIDATE_DURATION_NOT_APPROVED",
+          "no_auto_timer_reason": null
+        },
+        {
+          "step": 5,
+          "time_candidates": [],
+          "requires_readiness_check": false,
+          "mode": "MANUAL_OR_UNTIMED",
+          "no_auto_timer_reason": "No numeric duration stated; may be preparation or plating"
+        }
+      ]
+    },
+    {
+      "id": 85,
+      "title": "Бун тханг по-ханойски",
+      "cuisine": "Вьетнамская",
+      "step_timings": [
+        {
+          "step": 1,
+          "time_candidates": [
+            {
+              "min_seconds": 1200,
+              "max_seconds": 1200,
+              "phrase": "20 минут"
+            }
+          ],
+          "requires_readiness_check": false,
+          "mode": "CANDIDATE_DURATION_NOT_APPROVED",
+          "no_auto_timer_reason": null
+        },
+        {
+          "step": 2,
+          "time_candidates": [
+            {
+              "min_seconds": 900,
+              "max_seconds": 900,
+              "phrase": "15 минут"
+            }
+          ],
+          "requires_readiness_check": false,
+          "mode": "CANDIDATE_DURATION_NOT_APPROVED",
+          "no_auto_timer_reason": null
+        },
+        {
+          "step": 3,
+          "time_candidates": [],
+          "requires_readiness_check": false,
+          "mode": "MANUAL_OR_UNTIMED",
+          "no_auto_timer_reason": "No numeric duration stated; may be preparation or plating"
+        },
+        {
+          "step": 4,
+          "time_candidates": [],
+          "requires_readiness_check": false,
+          "mode": "MANUAL_OR_UNTIMED",
+          "no_auto_timer_reason": "No numeric duration stated; may be preparation or plating"
+        },
+        {
+          "step": 5,
+          "time_candidates": [],
+          "requires_readiness_check": false,
+          "mode": "MANUAL_OR_UNTIMED",
+          "no_auto_timer_reason": "No numeric duration stated; may be preparation or plating"
+        }
+      ]
+    },
+    {
+      "id": 86,
+      "title": "Бун ок с улитками",
+      "cuisine": "Вьетнамская",
+      "step_timings": [
+        {
+          "step": 1,
+          "time_candidates": [],
+          "requires_readiness_check": false,
+          "mode": "MANUAL_OR_UNTIMED",
+          "no_auto_timer_reason": "No numeric duration stated; may be preparation or plating"
+        },
+        {
+          "step": 2,
+          "time_candidates": [
+            {
+              "min_seconds": 360,
+              "max_seconds": 360,
+              "phrase": "6 минут"
+            }
+          ],
+          "requires_readiness_check": false,
+          "mode": "CANDIDATE_DURATION_NOT_APPROVED",
+          "no_auto_timer_reason": null
+        },
+        {
+          "step": 3,
+          "time_candidates": [
+            {
+              "min_seconds": 720,
+              "max_seconds": 720,
+              "phrase": "12 минут"
+            }
+          ],
+          "requires_readiness_check": false,
+          "mode": "CANDIDATE_DURATION_NOT_APPROVED",
+          "no_auto_timer_reason": null
+        },
+        {
+          "step": 4,
+          "time_candidates": [
+            {
+              "min_seconds": 180,
+              "max_seconds": 300,
+              "phrase": "3–5 минут"
+            }
+          ],
+          "requires_readiness_check": false,
+          "mode": "CANDIDATE_DURATION_NOT_APPROVED",
+          "no_auto_timer_reason": null
+        },
+        {
+          "step": 5,
+          "time_candidates": [],
+          "requires_readiness_check": false,
+          "mode": "MANUAL_OR_UNTIMED",
+          "no_auto_timer_reason": "No numeric duration stated; may be preparation or plating"
+        }
+      ]
+    },
+    {
+      "id": 87,
+      "title": "Ху тьеу со свининой и креветками",
+      "cuisine": "Вьетнамская",
+      "step_timings": [
+        {
+          "step": 1,
+          "time_candidates": [
+            {
+              "min_seconds": 300,
+              "max_seconds": 300,
+              "phrase": "5 минут"
+            }
+          ],
+          "requires_readiness_check": false,
+          "mode": "CANDIDATE_DURATION_NOT_APPROVED",
+          "no_auto_timer_reason": null
+        },
+        {
+          "step": 2,
+          "time_candidates": [
+            {
+              "min_seconds": 3900,
+              "max_seconds": 4800,
+              "phrase": "65–80 минут"
+            },
+            {
+              "min_seconds": 900,
+              "max_seconds": 900,
+              "phrase": "15 минут"
+            }
+          ],
+          "requires_readiness_check": false,
+          "mode": "REQUIRES_HUMAN_SEQUENCE_REVIEW",
+          "no_auto_timer_reason": null
+        },
+        {
+          "step": 3,
+          "time_candidates": [
+            {
+              "min_seconds": 120,
+              "max_seconds": 180,
+              "phrase": "2–3 минуты"
+            }
+          ],
+          "requires_readiness_check": false,
+          "mode": "CANDIDATE_DURATION_NOT_APPROVED",
+          "no_auto_timer_reason": null
+        },
+        {
+          "step": 4,
+          "time_candidates": [],
+          "requires_readiness_check": false,
+          "mode": "MANUAL_OR_UNTIMED",
+          "no_auto_timer_reason": "No numeric duration stated; may be preparation or plating"
+        },
+        {
+          "step": 5,
+          "time_candidates": [],
+          "requires_readiness_check": false,
+          "mode": "MANUAL_OR_UNTIMED",
+          "no_auto_timer_reason": "No numeric duration stated; may be preparation or plating"
+        }
+      ]
+    },
+    {
+      "id": 88,
+      "title": "Бань кань с густой лапшой",
+      "cuisine": "Вьетнамская",
+      "step_timings": [
+        {
+          "step": 1,
+          "time_candidates": [
+            {
+              "min_seconds": 300,
+              "max_seconds": 300,
+              "phrase": "5 минут"
+            }
+          ],
+          "requires_readiness_check": false,
+          "mode": "CANDIDATE_DURATION_NOT_APPROVED",
+          "no_auto_timer_reason": null
+        },
+        {
+          "step": 2,
+          "time_candidates": [
+            {
+              "min_seconds": 3000,
+              "max_seconds": 3600,
+              "phrase": "50–60 минут"
+            }
+          ],
+          "requires_readiness_check": true,
+          "mode": "CANDIDATE_DURATION_NOT_APPROVED",
+          "no_auto_timer_reason": null
+        },
+        {
+          "step": 3,
+          "time_candidates": [],
+          "requires_readiness_check": false,
+          "mode": "MANUAL_OR_UNTIMED",
+          "no_auto_timer_reason": "No numeric duration stated; may be preparation or plating"
+        },
+        {
+          "step": 4,
+          "time_candidates": [
+            {
+              "min_seconds": 120,
+              "max_seconds": 180,
+              "phrase": "2–3 минуты"
+            }
+          ],
+          "requires_readiness_check": true,
+          "mode": "CANDIDATE_DURATION_NOT_APPROVED",
+          "no_auto_timer_reason": null
+        },
+        {
+          "step": 5,
+          "time_candidates": [],
+          "requires_readiness_check": false,
+          "mode": "MANUAL_OR_UNTIMED",
+          "no_auto_timer_reason": "No numeric duration stated; may be preparation or plating"
+        }
+      ]
+    },
+    {
+      "id": 89,
+      "title": "Кань чуа с рыбой и тамариндом",
+      "cuisine": "Вьетнамская",
+      "step_timings": [
+        {
+          "step": 1,
+          "time_candidates": [],
+          "requires_readiness_check": false,
+          "mode": "MANUAL_OR_UNTIMED",
+          "no_auto_timer_reason": "No numeric duration stated; may be preparation or plating"
+        },
+        {
+          "step": 2,
+          "time_candidates": [],
+          "requires_readiness_check": false,
+          "mode": "MANUAL_OR_UNTIMED",
+          "no_auto_timer_reason": "No numeric duration stated; may be preparation or plating"
+        },
+        {
+          "step": 3,
+          "time_candidates": [
+            {
+              "min_seconds": 420,
+              "max_seconds": 420,
+              "phrase": "7 минут"
+            }
+          ],
+          "requires_readiness_check": false,
+          "mode": "CANDIDATE_DURATION_NOT_APPROVED",
+          "no_auto_timer_reason": null
+        },
+        {
+          "step": 4,
+          "time_candidates": [
+            {
+              "min_seconds": 360,
+              "max_seconds": 480,
+              "phrase": "6–8 минут"
+            },
+            {
+              "min_seconds": 180,
+              "max_seconds": 240,
+              "phrase": "3–4 минуты"
+            }
+          ],
+          "requires_readiness_check": true,
+          "mode": "REQUIRES_HUMAN_SEQUENCE_REVIEW",
+          "no_auto_timer_reason": null
+        },
+        {
+          "step": 5,
+          "time_candidates": [],
+          "requires_readiness_check": false,
+          "mode": "MANUAL_OR_UNTIMED",
+          "no_auto_timer_reason": "No numeric duration stated; may be preparation or plating"
+        }
+      ]
+    },
+    {
+      "id": 90,
+      "title": "Кань кхо куа с фаршированной горькой дыней",
+      "cuisine": "Вьетнамская",
+      "step_timings": [
+        {
+          "step": 1,
+          "time_candidates": [
+            {
+              "min_seconds": 900,
+              "max_seconds": 900,
+              "phrase": "15 минут"
+            }
+          ],
+          "requires_readiness_check": false,
+          "mode": "CANDIDATE_DURATION_NOT_APPROVED",
+          "no_auto_timer_reason": null
+        },
+        {
+          "step": 2,
+          "time_candidates": [],
+          "requires_readiness_check": false,
+          "mode": "MANUAL_OR_UNTIMED",
+          "no_auto_timer_reason": "No numeric duration stated; may be preparation or plating"
+        },
+        {
+          "step": 3,
+          "time_candidates": [
+            {
+              "min_seconds": 10800,
+              "max_seconds": 14400,
+              "phrase": "3–4 час"
+            }
+          ],
+          "requires_readiness_check": false,
+          "mode": "CANDIDATE_DURATION_NOT_APPROVED",
+          "no_auto_timer_reason": null
+        },
+        {
+          "step": 4,
+          "time_candidates": [
+            {
+              "min_seconds": 2100,
+              "max_seconds": 2700,
+              "phrase": "35–45 минут"
+            }
+          ],
+          "requires_readiness_check": true,
+          "mode": "CANDIDATE_DURATION_NOT_APPROVED",
+          "no_auto_timer_reason": null
+        },
+        {
+          "step": 5,
+          "time_candidates": [],
+          "requires_readiness_check": false,
+          "mode": "MANUAL_OR_UNTIMED",
+          "no_auto_timer_reason": "No numeric duration stated; may be preparation or plating"
+        }
+      ]
+    },
+    {
+      "id": 91,
+      "title": "Суп с вонтонами",
+      "cuisine": "Китайская",
+      "step_timings": [
+        {
+          "step": 1,
+          "time_candidates": [],
+          "requires_readiness_check": false,
+          "mode": "MANUAL_OR_UNTIMED",
+          "no_auto_timer_reason": "No numeric duration stated; may be preparation or plating"
+        },
+        {
+          "step": 2,
+          "time_candidates": [],
+          "requires_readiness_check": false,
+          "mode": "MANUAL_OR_UNTIMED",
+          "no_auto_timer_reason": "No numeric duration stated; may be preparation or plating"
+        },
+        {
+          "step": 3,
+          "time_candidates": [
+            {
+              "min_seconds": 240,
+              "max_seconds": 360,
+              "phrase": "4–6 минут"
+            }
+          ],
+          "requires_readiness_check": true,
+          "mode": "CANDIDATE_DURATION_NOT_APPROVED",
+          "no_auto_timer_reason": null
+        },
+        {
+          "step": 4,
+          "time_candidates": [
+            {
+              "min_seconds": 120,
+              "max_seconds": 180,
+              "phrase": "2–3 минуты"
+            }
+          ],
+          "requires_readiness_check": false,
+          "mode": "CANDIDATE_DURATION_NOT_APPROVED",
+          "no_auto_timer_reason": null
+        },
+        {
+          "step": 5,
+          "time_candidates": [],
+          "requires_readiness_check": false,
+          "mode": "MANUAL_OR_UNTIMED",
+          "no_auto_timer_reason": "No numeric duration stated; may be preparation or plating"
+        }
+      ]
+    },
+    {
+      "id": 92,
+      "title": "Кисло-острый суп",
+      "cuisine": "Китайская",
+      "step_timings": [
+        {
+          "step": 1,
+          "time_candidates": [],
+          "requires_readiness_check": false,
+          "mode": "MANUAL_OR_UNTIMED",
+          "no_auto_timer_reason": "No numeric duration stated; may be preparation or plating"
+        },
+        {
+          "step": 2,
+          "time_candidates": [
+            {
+              "min_seconds": 480,
+              "max_seconds": 480,
+              "phrase": "8 минут"
+            }
+          ],
+          "requires_readiness_check": false,
+          "mode": "CANDIDATE_DURATION_NOT_APPROVED",
+          "no_auto_timer_reason": null
+        },
+        {
+          "step": 3,
+          "time_candidates": [],
+          "requires_readiness_check": false,
+          "mode": "MANUAL_OR_UNTIMED",
+          "no_auto_timer_reason": "No numeric duration stated; may be preparation or plating"
+        },
+        {
+          "step": 4,
+          "time_candidates": [],
+          "requires_readiness_check": false,
+          "mode": "MANUAL_OR_UNTIMED",
+          "no_auto_timer_reason": "No numeric duration stated; may be preparation or plating"
+        },
+        {
+          "step": 5,
+          "time_candidates": [],
+          "requires_readiness_check": false,
+          "mode": "MANUAL_OR_UNTIMED",
+          "no_auto_timer_reason": "No numeric duration stated; may be preparation or plating"
+        }
+      ]
+    },
+    {
+      "id": 93,
+      "title": "Суп с яичными хлопьями",
+      "cuisine": "Китайская",
+      "step_timings": [
+        {
+          "step": 1,
+          "time_candidates": [],
+          "requires_readiness_check": false,
+          "mode": "MANUAL_OR_UNTIMED",
+          "no_auto_timer_reason": "No numeric duration stated; may be preparation or plating"
+        },
+        {
+          "step": 2,
+          "time_candidates": [],
+          "requires_readiness_check": true,
+          "mode": "MANUAL_OR_UNTIMED",
+          "no_auto_timer_reason": "No numeric duration stated; may be preparation or plating"
+        },
+        {
+          "step": 3,
+          "time_candidates": [],
+          "requires_readiness_check": false,
+          "mode": "MANUAL_OR_UNTIMED",
+          "no_auto_timer_reason": "No numeric duration stated; may be preparation or plating"
+        },
+        {
+          "step": 4,
+          "time_candidates": [],
+          "requires_readiness_check": false,
+          "mode": "MANUAL_OR_UNTIMED",
+          "no_auto_timer_reason": "No numeric duration stated; may be preparation or plating"
+        },
+        {
+          "step": 5,
+          "time_candidates": [],
+          "requires_readiness_check": false,
+          "mode": "MANUAL_OR_UNTIMED",
+          "no_auto_timer_reason": "No numeric duration stated; may be preparation or plating"
+        }
+      ]
+    },
+    {
+      "id": 94,
+      "title": "Суп с зимней дыней",
+      "cuisine": "Китайская",
+      "step_timings": [
+        {
+          "step": 1,
+          "time_candidates": [
+            {
+              "min_seconds": 300,
+              "max_seconds": 300,
+              "phrase": "5 минут"
+            }
+          ],
+          "requires_readiness_check": false,
+          "mode": "CANDIDATE_DURATION_NOT_APPROVED",
+          "no_auto_timer_reason": null
+        },
+        {
+          "step": 2,
+          "time_candidates": [
+            {
+              "min_seconds": 2400,
+              "max_seconds": 2400,
+              "phrase": "40 минут"
+            }
+          ],
+          "requires_readiness_check": true,
+          "mode": "CANDIDATE_DURATION_NOT_APPROVED",
+          "no_auto_timer_reason": null
+        },
+        {
+          "step": 3,
+          "time_candidates": [],
+          "requires_readiness_check": false,
+          "mode": "MANUAL_OR_UNTIMED",
+          "no_auto_timer_reason": "No numeric duration stated; may be preparation or plating"
+        },
+        {
+          "step": 4,
+          "time_candidates": [
+            {
+              "min_seconds": 900,
+              "max_seconds": 1200,
+              "phrase": "15–20 минут"
+            }
+          ],
+          "requires_readiness_check": true,
+          "mode": "CANDIDATE_DURATION_NOT_APPROVED",
+          "no_auto_timer_reason": null
+        },
+        {
+          "step": 5,
+          "time_candidates": [],
+          "requires_readiness_check": false,
+          "mode": "MANUAL_OR_UNTIMED",
+          "no_auto_timer_reason": "No numeric duration stated; may be preparation or plating"
+        }
+      ]
+    },
+    {
+      "id": 95,
+      "title": "Кукурузный суп по-кантонски",
+      "cuisine": "Китайская",
+      "step_timings": [
+        {
+          "step": 1,
+          "time_candidates": [
+            {
+              "min_seconds": 420,
+              "max_seconds": 480,
+              "phrase": "7–8 минут"
+            }
+          ],
+          "requires_readiness_check": false,
+          "mode": "CANDIDATE_DURATION_NOT_APPROVED",
+          "no_auto_timer_reason": null
+        },
+        {
+          "step": 2,
+          "time_candidates": [],
+          "requires_readiness_check": false,
+          "mode": "MANUAL_OR_UNTIMED",
+          "no_auto_timer_reason": "No numeric duration stated; may be preparation or plating"
+        },
+        {
+          "step": 3,
+          "time_candidates": [
+            {
+              "min_seconds": 180,
+              "max_seconds": 180,
+              "phrase": "3 минуты"
+            }
+          ],
+          "requires_readiness_check": false,
+          "mode": "CANDIDATE_DURATION_NOT_APPROVED",
+          "no_auto_timer_reason": null
+        },
+        {
+          "step": 4,
+          "time_candidates": [],
+          "requires_readiness_check": false,
+          "mode": "MANUAL_OR_UNTIMED",
+          "no_auto_timer_reason": "No numeric duration stated; may be preparation or plating"
+        },
+        {
+          "step": 5,
+          "time_candidates": [],
+          "requires_readiness_check": false,
+          "mode": "MANUAL_OR_UNTIMED",
+          "no_auto_timer_reason": "No numeric duration stated; may be preparation or plating"
+        }
+      ]
+    },
+    {
+      "id": 96,
+      "title": "Суаньцайюй с рыбой",
+      "cuisine": "Китайская",
+      "step_timings": [
+        {
+          "step": 1,
+          "time_candidates": [],
+          "requires_readiness_check": false,
+          "mode": "MANUAL_OR_UNTIMED",
+          "no_auto_timer_reason": "No numeric duration stated; may be preparation or plating"
+        },
+        {
+          "step": 2,
+          "time_candidates": [],
+          "requires_readiness_check": false,
+          "mode": "MANUAL_OR_UNTIMED",
+          "no_auto_timer_reason": "No numeric duration stated; may be preparation or plating"
+        },
+        {
+          "step": 3,
+          "time_candidates": [
+            {
+              "min_seconds": 240,
+              "max_seconds": 300,
+              "phrase": "4–5 минут"
+            }
+          ],
+          "requires_readiness_check": false,
+          "mode": "CANDIDATE_DURATION_NOT_APPROVED",
+          "no_auto_timer_reason": null
+        },
+        {
+          "step": 4,
+          "time_candidates": [
+            {
+              "min_seconds": 720,
+              "max_seconds": 720,
+              "phrase": "12 минут"
+            },
+            {
+              "min_seconds": 180,
+              "max_seconds": 300,
+              "phrase": "3–5 минут"
+            }
+          ],
+          "requires_readiness_check": false,
+          "mode": "REQUIRES_HUMAN_SEQUENCE_REVIEW",
+          "no_auto_timer_reason": null
+        },
+        {
+          "step": 5,
+          "time_candidates": [],
+          "requires_readiness_check": false,
+          "mode": "MANUAL_OR_UNTIMED",
+          "no_auto_timer_reason": "No numeric duration stated; may be preparation or plating"
+        }
+      ]
+    },
+    {
+      "id": 97,
+      "title": "Хулатхан по-хэнаньски с говядиной и белым перцем",
+      "cuisine": "Китайская",
+      "step_timings": [
+        {
+          "step": 1,
+          "time_candidates": [
+            {
+              "min_seconds": 4800,
+              "max_seconds": 6000,
+              "phrase": "80–100 минут"
+            }
+          ],
+          "requires_readiness_check": true,
+          "mode": "CANDIDATE_DURATION_NOT_APPROVED",
+          "no_auto_timer_reason": null
+        },
+        {
+          "step": 2,
+          "time_candidates": [
+            {
+              "min_seconds": 1200,
+              "max_seconds": 1200,
+              "phrase": "20 минут"
+            }
+          ],
+          "requires_readiness_check": true,
+          "mode": "CANDIDATE_DURATION_NOT_APPROVED",
+          "no_auto_timer_reason": null
+        },
+        {
+          "step": 3,
+          "time_candidates": [
+            {
+              "min_seconds": 480,
+              "max_seconds": 480,
+              "phrase": "8 минут"
+            }
+          ],
+          "requires_readiness_check": false,
+          "mode": "CANDIDATE_DURATION_NOT_APPROVED",
+          "no_auto_timer_reason": null
+        },
+        {
+          "step": 4,
+          "time_candidates": [
+            {
+              "min_seconds": 180,
+              "max_seconds": 300,
+              "phrase": "3–5 минут"
+            },
+            {
+              "min_seconds": 120,
+              "max_seconds": 180,
+              "phrase": "2–3 минуты"
+            }
+          ],
+          "requires_readiness_check": false,
+          "mode": "REQUIRES_HUMAN_SEQUENCE_REVIEW",
+          "no_auto_timer_reason": null
+        },
+        {
+          "step": 5,
+          "time_candidates": [],
+          "requires_readiness_check": false,
+          "mode": "MANUAL_OR_UNTIMED",
+          "no_auto_timer_reason": "No numeric duration stated; may be preparation or plating"
+        }
+      ]
+    },
+    {
+      "id": 98,
+      "title": "Янроу паомо с бараниной и лепёшкой",
+      "cuisine": "Китайская",
+      "step_timings": [
+        {
+          "step": 1,
+          "time_candidates": [
+            {
+              "min_seconds": 9000,
+              "max_seconds": 10800,
+              "phrase": "2,5–3 часа"
+            }
+          ],
+          "requires_readiness_check": true,
+          "mode": "CANDIDATE_DURATION_NOT_APPROVED",
+          "no_auto_timer_reason": null
+        },
+        {
+          "step": 2,
+          "time_candidates": [],
+          "requires_readiness_check": false,
+          "mode": "MANUAL_OR_UNTIMED",
+          "no_auto_timer_reason": "No numeric duration stated; may be preparation or plating"
+        },
+        {
+          "step": 3,
+          "time_candidates": [],
+          "requires_readiness_check": false,
+          "mode": "MANUAL_OR_UNTIMED",
+          "no_auto_timer_reason": "No numeric duration stated; may be preparation or plating"
+        },
+        {
+          "step": 4,
+          "time_candidates": [
+            {
+              "min_seconds": 300,
+              "max_seconds": 420,
+              "phrase": "5–7 минут"
+            }
+          ],
+          "requires_readiness_check": false,
+          "mode": "CANDIDATE_DURATION_NOT_APPROVED",
+          "no_auto_timer_reason": null
+        },
+        {
+          "step": 5,
+          "time_candidates": [],
+          "requires_readiness_check": false,
+          "mode": "MANUAL_OR_UNTIMED",
+          "no_auto_timer_reason": "No numeric duration stated; may be preparation or plating"
+        }
+      ]
+    },
+    {
+      "id": 99,
+      "title": "Лосунтан, шанхайский томатный суп",
+      "cuisine": "Китайская",
+      "step_timings": [
+        {
+          "step": 1,
+          "time_candidates": [
+            {
+              "min_seconds": 4500,
+              "max_seconds": 5400,
+              "phrase": "75–90 минут"
+            }
+          ],
+          "requires_readiness_check": true,
+          "mode": "CANDIDATE_DURATION_NOT_APPROVED",
+          "no_auto_timer_reason": null
+        },
+        {
+          "step": 2,
+          "time_candidates": [
+            {
+              "min_seconds": 360,
+              "max_seconds": 360,
+              "phrase": "6 минут"
+            }
+          ],
+          "requires_readiness_check": false,
+          "mode": "CANDIDATE_DURATION_NOT_APPROVED",
+          "no_auto_timer_reason": null
+        },
+        {
+          "step": 3,
+          "time_candidates": [],
+          "requires_readiness_check": false,
+          "mode": "MANUAL_OR_UNTIMED",
+          "no_auto_timer_reason": "No numeric duration stated; may be preparation or plating"
+        },
+        {
+          "step": 4,
+          "time_candidates": [
+            {
+              "min_seconds": 1500,
+              "max_seconds": 1800,
+              "phrase": "25–30 минут"
+            }
+          ],
+          "requires_readiness_check": true,
+          "mode": "CANDIDATE_DURATION_NOT_APPROVED",
+          "no_auto_timer_reason": null
+        },
+        {
+          "step": 5,
+          "time_candidates": [],
+          "requires_readiness_check": false,
+          "mode": "MANUAL_OR_UNTIMED",
+          "no_auto_timer_reason": "No numeric duration stated; may be preparation or plating"
+        }
+      ]
+    },
+    {
+      "id": 100,
+      "title": "Суп с водяным крессом и свиными рёбрами",
+      "cuisine": "Китайская",
+      "step_timings": [
+        {
+          "step": 1,
+          "time_candidates": [],
+          "requires_readiness_check": false,
+          "mode": "MANUAL_OR_UNTIMED",
+          "no_auto_timer_reason": "No numeric duration stated; may be preparation or plating"
+        },
+        {
+          "step": 2,
+          "time_candidates": [
+            {
+              "min_seconds": 300,
+              "max_seconds": 300,
+              "phrase": "5 минут"
+            }
+          ],
+          "requires_readiness_check": false,
+          "mode": "CANDIDATE_DURATION_NOT_APPROVED",
+          "no_auto_timer_reason": null
+        },
+        {
+          "step": 3,
+          "time_candidates": [
+            {
+              "min_seconds": 4800,
+              "max_seconds": 5400,
+              "phrase": "80–90 минут"
+            }
+          ],
+          "requires_readiness_check": false,
+          "mode": "CANDIDATE_DURATION_NOT_APPROVED",
+          "no_auto_timer_reason": null
+        },
+        {
+          "step": 4,
+          "time_candidates": [
+            {
+              "min_seconds": 1200,
+              "max_seconds": 1500,
+              "phrase": "20–25 минут"
+            }
+          ],
+          "requires_readiness_check": true,
+          "mode": "CANDIDATE_DURATION_NOT_APPROVED",
+          "no_auto_timer_reason": null
+        },
+        {
+          "step": 5,
+          "time_candidates": [],
+          "requires_readiness_check": false,
+          "mode": "MANUAL_OR_UNTIMED",
+          "no_auto_timer_reason": "No numeric duration stated; may be preparation or plating"
+        }
+      ]
+    }
+  ]
+}
