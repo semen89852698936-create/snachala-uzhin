@@ -4,7 +4,7 @@
   "date": "2026-11-19",
   "disclaimer": "One selected original recipe per card. Archived excerpts are for preliminary triage, not proof of full reading or a culinary signoff. Timers require manual readiness and multi-phase checks. Previously recorded 3-URL comparisons remain as historical provenance and are not required. Full single-source reviews of first 4 completed, but recipe #2 needs alignment; approved count does not mean photographs or public publication are approved.",
   "total": 100,
-  "full_reviews_completed": 40,
+  "full_reviews_completed": 50,
   "recipes": [
     {
       "id": 1,
@@ -777,10 +777,13 @@
       "ingredient_excerpt": "",
       "method_excerpt": "",
       "preliminary_basis": "ARCHIVED_SOURCE_EXCERPTS",
-      "ingredient_check": "PENDING_FULL_SINGLE_SOURCE_REVIEW",
-      "technique_check": "PENDING_FULL_SINGLE_SOURCE_REVIEW",
-      "time_check": "PENDING_FULL_SINGLE_SOURCE_REVIEW",
-      "approved": false
+      "ingredient_check": "PASS",
+      "technique_check": "PASS",
+      "time_check": "PASS",
+      "approved": true,
+      "review_note": "Mediterranean Dish Turkish mercimek çorbası uses red lentils, onion, carrots, potato/aromatics, tomato or pepper paste, mint and lemon; editorial cooks all until tender then purées, red lentil 20-25min.",
+      "review_method": "ORIGINAL_RECIPE_PAGE_OPENED_AND_COMPARED_WITH_EDITORIAL_STEPS",
+      "review_date": "2026-11-19"
     },
     {
       "id": 42,
@@ -793,10 +796,13 @@
       "ingredient_excerpt": "2 1/2 cups red lentils / 3 tablespoons rice / 2 tablespoons bulgur, (see what is bulgur?) / 1 medium size onion / 1 tablespoon tomato paste / 1 tablespoon butter / 9 cups hot water (a cup is 200 ml) / 1 teaspoon mint / 1 teaspoon salt",
       "method_excerpt": "Boil 9 cups water in the kettle and put it in a pot. Add 2 1/2 cups of red lentils, which you have washed and drained, to the pot. / Add 3 tablespoons rice, 2 tablespoons bulgur and 1 teaspoon salt to the pot. / Cook for abou",
       "preliminary_basis": "ARCHIVED_SOURCE_EXCERPTS",
-      "ingredient_check": "PENDING_FULL_SINGLE_SOURCE_REVIEW",
-      "technique_check": "PENDING_FULL_SINGLE_SOURCE_REVIEW",
-      "time_check": "PENDING_FULL_SINGLE_SOURCE_REVIEW",
-      "approved": false
+      "ingredient_check": "PASS",
+      "technique_check": "PASS",
+      "time_check": "PASS",
+      "approved": true,
+      "review_note": "GidaVeSaglik ezogelin uses red lentils, rice, bulgur, onion, tomato paste, dried mint. Editorial also uses pepper paste/paprika and cooks 25-30min until soft, consistent.",
+      "review_method": "ORIGINAL_RECIPE_PAGE_OPENED_AND_COMPARED_WITH_EDITORIAL_STEPS",
+      "review_date": "2026-11-19"
     },
     {
       "id": 43,
@@ -809,10 +815,13 @@
       "ingredient_excerpt": "500 g plain yogurt / 1 pcs egg yolk / 2 tbsp all-purpose flour / 1 cup water / 6 cup vegetable broth / 0.5 cup rice rinsed / 1 tsp salt / 2 tbsp butter / 1 tbsp dried mint / 0.5 tsp red pepper flakes (optional)",
       "method_excerpt": "Rinse the rice under cold water until the water runs clear, then set aside. / In a large pot, bring the vegetable broth to a boil. / Add the rinsed rice to the boiling broth and reduce the heat to a simmer. / Cook the rice fo",
       "preliminary_basis": "ARCHIVED_SOURCE_EXCERPTS",
-      "ingredient_check": "PENDING_FULL_SINGLE_SOURCE_REVIEW",
-      "technique_check": "PENDING_FULL_SINGLE_SOURCE_REVIEW",
-      "time_check": "PENDING_FULL_SINGLE_SOURCE_REVIEW",
-      "approved": false
+      "ingredient_check": "PASS",
+      "technique_check": "PASS",
+      "time_check": "CONDITIONAL_READINESS",
+      "approved": false,
+      "review_note": "Forkin yayla soup uses yogurt, rice, egg yolk, flour, mint butter; editorial has one whole egg and tempers in warm rice broth then heats without boiling. Ensure egg mixture safe and rice tender.",
+      "review_method": "ORIGINAL_RECIPE_PAGE_OPENED_AND_COMPARED_WITH_EDITORIAL_STEPS",
+      "review_date": "2026-11-19"
     },
     {
       "id": 44,
@@ -825,10 +834,13 @@
       "ingredient_excerpt": "4 tbsp tarhana powder / 1 lt water or broth / 1 tbsp tomato paste / 2 tbsp butter / 1 tsp salt / 1 tsp red pepper flakes / 1 tsp dried mint",
       "method_excerpt": "Soak the tarhana powder in 1 cup of cold water for about 30 minutes. / Melt butter in a pot, add tomato paste and sauté. / Add the remaining water and bring to a boil. / Add the soaked tarhana and cook, stirring constantly, u",
       "preliminary_basis": "ARCHIVED_SOURCE_EXCERPTS",
-      "ingredient_check": "PENDING_FULL_SINGLE_SOURCE_REVIEW",
-      "technique_check": "PENDING_FULL_SINGLE_SOURCE_REVIEW",
-      "time_check": "PENDING_FULL_SINGLE_SOURCE_REVIEW",
-      "approved": false
+      "ingredient_check": "PASS",
+      "technique_check": "PASS",
+      "time_check": "PASS",
+      "approved": true,
+      "review_note": "Gurmion tarhana soup uses dry fermented tarhana, broth, tomato paste, butter, mint and pepper; editorial rehydrates dry mix first and cooks 10-15min until smooth.",
+      "review_method": "ORIGINAL_RECIPE_PAGE_OPENED_AND_COMPARED_WITH_EDITORIAL_STEPS",
+      "review_date": "2026-11-19"
     },
     {
       "id": 45,
@@ -841,10 +853,13 @@
       "ingredient_excerpt": "800 g pre-cleaned beef tripe (honeycomb or blanket) (rinsed well and cut into 1 cm strips) / 2000 ml water (plus extra for rinsing) / 1 onion (about 150 g, peeled and halved) / 1 leaf bay leaf / 1 tsp black peppercorns / 2 tsp fine salt (about 12 g) ",
       "method_excerpt": "Rinse the tripe under cold running water for 2 minutes, rubbing the surface to remove any lingering odor. Drain well, then cut into thin 1 cm strips so it heats evenly and feels tender in the soup. / Place the tripe in a pot ",
       "preliminary_basis": "ARCHIVED_SOURCE_EXCERPTS",
-      "ingredient_check": "PENDING_FULL_SINGLE_SOURCE_REVIEW",
-      "technique_check": "PENDING_FULL_SINGLE_SOURCE_REVIEW",
-      "time_check": "PENDING_FULL_SINGLE_SOURCE_REVIEW",
-      "approved": false
+      "ingredient_check": "PASS",
+      "technique_check": "PASS",
+      "time_check": "CONDITIONAL_READINESS",
+      "approved": false,
+      "review_note": "Zaffaron iskembe tripe soup contains cleansed tripe with long simmer and garlic-vinegar, enriched by dairy/egg. Editorial raw tripe handling and 2-3h simmer until genuinely tender plus egg tempering require explicit safety assurance.",
+      "review_method": "ORIGINAL_RECIPE_PAGE_OPENED_AND_COMPARED_WITH_EDITORIAL_STEPS",
+      "review_date": "2026-11-19"
     },
     {
       "id": 46,
@@ -857,10 +872,13 @@
       "ingredient_excerpt": "500 gram kelle / 500 gram pa&ccedil;a / 1 adet limon suyu / Tuz / 1 tatlı kaşığı sirke / 2 yemek kaşığı zeytinyağı / Pul biber / Sarımsak",
       "method_excerpt": "1. İlk adım kelle ve pa&ccedil;anın &ouml;zenli temizliğiyle başlıyor. / 2. Daha sonra bir d&uuml;d&uuml;kl&uuml; tencerenin i&ccedil;ine birlikte koyun. / 3. Tencereyi doldurana kadar su ekleyin ve etler iyice kemikten ayrıl",
       "preliminary_basis": "ARCHIVED_SOURCE_EXCERPTS",
-      "ingredient_check": "PENDING_FULL_SINGLE_SOURCE_REVIEW",
-      "technique_check": "PENDING_FULL_SINGLE_SOURCE_REVIEW",
-      "time_check": "PENDING_FULL_SINGLE_SOURCE_REVIEW",
-      "approved": false
+      "ingredient_check": "PASS",
+      "technique_check": "PASS",
+      "time_check": "CONDITIONAL_READINESS",
+      "approved": false,
+      "review_note": "Lezzet kelle paça offal soup uses sheep head/feet, long broth extraction and garlic-vinegar. Editorial uses cleaned cuts for 3-4h and manually removes bones; do not accept on timer alone and ensure completely cooked meat.",
+      "review_method": "ORIGINAL_RECIPE_PAGE_OPENED_AND_COMPARED_WITH_EDITORIAL_STEPS",
+      "review_date": "2026-11-19"
     },
     {
       "id": 47,
@@ -873,10 +891,13 @@
       "ingredient_excerpt": "2 yemek kaşığı tereyağı (isteğe g&ouml;re zeytinyağı da kullanılabilir) / 3 adet orta boy havu&ccedil; / 3 adet orta boy patates / 1 su bardağı haşlanmış nohut (kabukları soyulmuş) / 1,5 litre sıcak su / 400 gr orta yağlı kıyma (dana veya kuzu) / 1 a",
       "method_excerpt": "1. &Ouml;ncelikle k&ouml;fte harcını hazırlayın. / 2. Kıyma, rendelenmiş soğan, tuz ve karabiberi bir kaba alıp iyice yoğurun. / 3. Har&ccedil; toparlanmazsa az miktarda ince bulgur ekleyebilirsiniz. / 4. Karışımdan k&uuml;&c",
       "preliminary_basis": "ARCHIVED_SOURCE_EXCERPTS",
-      "ingredient_check": "PENDING_FULL_SINGLE_SOURCE_REVIEW",
-      "technique_check": "PENDING_FULL_SINGLE_SOURCE_REVIEW",
-      "time_check": "PENDING_FULL_SINGLE_SOURCE_REVIEW",
-      "approved": false
+      "ingredient_check": "PASS",
+      "technique_check": "PASS",
+      "time_check": "CONDITIONAL_READINESS",
+      "approved": false,
+      "review_note": "Lezzet terbiyeli köfte yogurt-thickened meatball soup contains ground-meat balls, rice, egg/yogurt seasoning. Editorial meatballs simmer 20-25min, but center must reach safe meat cooking temperature; temper egg separately.",
+      "review_method": "ORIGINAL_RECIPE_PAGE_OPENED_AND_COMPARED_WITH_EDITORIAL_STEPS",
+      "review_date": "2026-11-19"
     },
     {
       "id": 48,
@@ -889,10 +910,13 @@
       "ingredient_excerpt": "1 su bardağı haşlanmış nohut / 500 gram kemikli kuzu gerdan / 6 su bardağı s&uuml;z&uuml;lm&uuml;ş et suyu / 1 &ccedil;ay kaşığı tuz / Yarım &ccedil;ay kaşığı karabiber / Eti haşlamak i&ccedil;in yaklaşık 1,5 litre su / 4 yemek kaşığı yoğurt / 2 yeme",
       "method_excerpt": "1. Kuzu gerdanı d&uuml;d&uuml;kl&uuml; tencereye yerleştirip &uuml;zerine yaklaşık 1,5 litre su ekleyin. / 2. Tencerenizin kapasitesine ve kullanım talimatlarına uygun şekilde kapağını kapatın. / 3. Basın&ccedil; oluştuktan s",
       "preliminary_basis": "ARCHIVED_SOURCE_EXCERPTS",
-      "ingredient_check": "PENDING_FULL_SINGLE_SOURCE_REVIEW",
-      "technique_check": "PENDING_FULL_SINGLE_SOURCE_REVIEW",
-      "time_check": "PENDING_FULL_SINGLE_SOURCE_REVIEW",
-      "approved": false
+      "ingredient_check": "PASS",
+      "technique_check": "PASS",
+      "time_check": "CONDITIONAL_READINESS",
+      "approved": false,
+      "review_note": "Lezzet düğün çorbası lamb broth, yogurt/egg/lemon thickening and pepper-butter topping. Editorial lamb neck 75-90min must become tender and sauce must reach safe egg temperature without curdling.",
+      "review_method": "ORIGINAL_RECIPE_PAGE_OPENED_AND_COMPARED_WITH_EDITORIAL_STEPS",
+      "review_date": "2026-11-19"
     },
     {
       "id": 49,
@@ -905,10 +929,13 @@
       "ingredient_excerpt": "1 &ccedil;ay bardağı erişte / 1 adet k&uuml;&ccedil;&uuml;k boy soğan (ince doğranmış) / 1 yemek kaşığı domates sal&ccedil;ası / 1 yemek kaşığı un / 1 yemek kaşığı zeytinyağı / 1 litre su / Tuz / 1 yemek kaşığı kuru nane / Tel şehriye / Arpa şehriye ",
       "method_excerpt": "1. Zeytinyağını tencereye alın ve ince doğranmış soğanı ekleyin. / 2. Soğanlar pembeleşene kadar orta ateşte kavurun. / 3. Unu ekleyin ve kokusu &ccedil;ıkana kadar kısa s&uuml;re kavurmaya devam edin. / 4. Domates sal&ccedil",
       "preliminary_basis": "ARCHIVED_SOURCE_EXCERPTS",
-      "ingredient_check": "PENDING_FULL_SINGLE_SOURCE_REVIEW",
-      "technique_check": "PENDING_FULL_SINGLE_SOURCE_REVIEW",
-      "time_check": "PENDING_FULL_SINGLE_SOURCE_REVIEW",
-      "approved": false
+      "ingredient_check": "PASS",
+      "technique_check": "PASS",
+      "time_check": "PASS",
+      "approved": true,
+      "review_note": "Lezzet erişte soup uses Turkish flat noodles, onion/tomato/pepper paste and mint. Editorial pasta 8-12min according to thickness, remove before overcooking.",
+      "review_method": "ORIGINAL_RECIPE_PAGE_OPENED_AND_COMPARED_WITH_EDITORIAL_STEPS",
+      "review_date": "2026-11-19"
     },
     {
       "id": 50,
@@ -921,10 +948,13 @@
       "ingredient_excerpt": "1 su bardağı haşlanmış nohut / 1 su bardağı haşlanmış yeşil mercimek / 1 su bardağı erişte / 1 demet taze nane / 6 su bardağı sıcak su (yaklaşık 1300 ml) / 1 adet kuru soğan / 1 tatlı kaşığı kuru nane / 1 tatlı kaşığı tuz / 1 &ccedil;ay kaşığı pul bi",
       "method_excerpt": "1. İlk olarak derin bir tencereye 6,5 su bardağı suyu koyup kaynamaya bırakın. / 2. Su kaynadığında haşlanmış yeşil mercimek, haşlanmış nohut ve erişteyi ilave edin. / 3. Malzemeleri karıştırarak birlikte pişmeye bırakın. / 4",
       "preliminary_basis": "ARCHIVED_SOURCE_EXCERPTS",
-      "ingredient_check": "PENDING_FULL_SINGLE_SOURCE_REVIEW",
-      "technique_check": "PENDING_FULL_SINGLE_SOURCE_REVIEW",
-      "time_check": "PENDING_FULL_SINGLE_SOURCE_REVIEW",
-      "approved": false
+      "ingredient_check": "PASS",
+      "technique_check": "PASS",
+      "time_check": "CONDITIONAL_READINESS",
+      "approved": false,
+      "review_note": "Lezzet tutmaç soup contains yogurt-thickened noodle soup and cooked pulses. Editorial cooked lentils and chickpeas are warmed, raw yolk blended into yogurt; egg heating needs verified safety criterion.",
+      "review_method": "ORIGINAL_RECIPE_PAGE_OPENED_AND_COMPARED_WITH_EDITORIAL_STEPS",
+      "review_date": "2026-11-19"
     },
     {
       "id": 51,
@@ -1727,6 +1757,6 @@
       "approved": false
     }
   ],
-  "quality_approved": 29,
-  "review_in_progress": 11
+  "quality_approved": 33,
+  "review_in_progress": 17
 }
