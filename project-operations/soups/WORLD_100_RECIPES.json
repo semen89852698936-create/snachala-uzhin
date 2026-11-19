@@ -4630,7 +4630,7 @@
         "https://www.recipetineats.com/vietnamese-pho-recipe/"
       ],
       "full_editorial_markdown": "## №81. Фо бо с говядиной\n\n**На двоих. Время:** 3 часа 30 минут.\n\n**Ингредиенты:** Говяжьи кости 900 г; грудинка 250 г; вырезка 120 г; рисовая лапша 220 г; вода 2 л; лук 130 г; имбирь 45 г; бадьян 2 шт.; корица палочка; гвоздика 3 шт.; рыбный соус 25 мл; сахар 10 г; зелёный лук, кинза, базилик, лайм.\n\n**Приготовление:**\n1. Обожги половинки лука и разрезанный имбирь на сухой сковороде. Пряности прогрей отдельно.\n2. Кости бланшируй 8 минут, промой, залей чистой водой и вари с грудинкой 2,5–3 часа на слабом огне.\n3. Добавь лук, имбирь и пряности за последние 45 минут, процеди бульон. Грудинку нарежь тонко.\n4. Рисовую лапшу отвари отдельно, разложи по мискам с готовой грудинкой. Сырую вырезку оставь отдельно до заключительной тепловой обработки.\n5. Очень тонкие ломтики вырезки опусти в активно кипящий бульон на 30–60 секунд или дольше, до нужной степени готовности; затем разложи по мискам. Залей горячим бульоном и подай с зеленью. Для полностью приготовленной говядины не ограничивайся одним таймером, проверяй готовность.\n\n**Внешний вид:** Прозрачный тёмно-золотистый бульон, широкая рисовая лапша и тонкие ломтики говядины.\n\n**Источники для проверки:**\n1. https://archive.jamesbeard.org/recipes/pho-bo-beef-noodle-soup\n2. https://vickypham.com/blog/vietnamese-beef-noodle-soup-pho-bo/\n3. https://www.recipetineats.com/vietnamese-pho-recipe/\n\n**Различия и редакционное решение:** Обязательны обожжённый лук и имбирь, прозрачный мясной бульон; URL отдельных источников требует точного подтверждения.\n\n**Визуальное подтверждение:** пока отсутствует.\n\n---",
-      "review_status": "редакционный черновик; источники, фото и контрольная готовка не приняты",
+      "review_status": "Три независимых рецепта содержательно сопоставлены; пробная готовка, фото и окончательная приёмка не завершены",
       "photo_approved": false,
       "steps": [
         "Обожги половинки лука и разрезанный имбирь на сухой сковороде. Пряности прогрей отдельно.",
@@ -4654,9 +4654,29 @@
         "сахар 10 г",
         "зелёный лук, кинза, базилик, лайм."
       ],
-      "recipe_source_audit_status": "URL_DOMAINS_LISTED_CONTENT_VERIFICATION_INCOMPLETE",
+      "recipe_source_audit_status": "THREE_INDEPENDENT_RECIPE_TEXTS_COMPARED",
       "visual_audit_status": "PENDING",
-      "photo_status": "PENDING_USER_APPROVAL"
+      "photo_status": "PENDING_USER_APPROVAL",
+      "source_content_evidence": {
+        "date": "2026-11-19",
+        "method": "Culinary source comparison for identity, base ingredients, cooking stages and timers; quantities adapted to two servings; original publication recipe variants noted",
+        "ingredients_comparison": "Говяжьи кости, грудинка, тонкая вырезка, рисовая лапша, обожжённые лук и имбирь, бадьян, корица и рыбный соус подтверждены James Beard, Vicky Pham и RecipeTin Eats. Редакционные 900 г костей и 2 л воды - уменьшение на двоих.",
+        "technique_and_timer_comparison": "Кости бланшировать, затем варить при слабом кипении 2,5–3 часа, пряности и обожжённые ароматические овощи добавить в последние 45 минут. Лапшу варить отдельно, тонкую вырезку бланшировать в кипящем бульоне непосредственно перед подачей; для полной готовности не ограничиваться только 30–60 секундами.",
+        "sources": [
+          {
+            "url": "https://archive.jamesbeard.org/recipes/pho-bo-beef-noodle-soup",
+            "difference": "James Beard/Charles Phan: обжаренный лук и имбирь, кости, грудинка и сырой тонкий стейк"
+          },
+          {
+            "url": "https://vickypham.com/blog/vietnamese-beef-noodle-soup-pho-bo/",
+            "difference": "Vicky Pham: длительное томление костей, корица и бадьян, прозрачный бульон"
+          },
+          {
+            "url": "https://www.recipetineats.com/vietnamese-pho-recipe/",
+            "difference": "RecipeTin Eats: сочетание костей и грудинки, обожжённые овощи и специи"
+          }
+        ]
+      }
     },
     {
       "id": 82,
@@ -4671,7 +4691,7 @@
         "https://www.recipetineats.com/vietnamese-chicken-pho-soup-pho-ga/"
       ],
       "full_editorial_markdown": "## №82. Фо га с курицей\n\n**На двоих. Время:** 90 минут.\n\n**Ингредиенты:** Курица на кости 650 г; вода 1,5 л; лук 100 г; имбирь 35 г; кориандр семена 1 ч. л.; бадьян 1 шт.; рыбный соус 20 мл; сахар 5 г; рисовая лапша 200 г; зелёный лук, кинза, лайм.\n\n**Приготовление:**\n1. Обожги лук и имбирь на сухой сковороде.\n2. Залей курицу холодной водой, после закипания сними пену, добавь лук, имбирь и пряности.\n3. Томи 50–60 минут до готовности курицы, достань, отдели мясо от костей; процеди бульон.\n4. Заправь бульон рыбным соусом и сахаром, отвари рисовую лапшу отдельно.\n5. Разложи лапшу и тонкие волокна курицы в миски, залей горячим бульоном, добавь зелёный лук и кинзу.\n\n**Внешний вид:** Светлый прозрачный куриный бульон, широкая лапша и нежные волокна курицы.\n\n**Источники для проверки:**\n1. https://www.hungryhuy.com/chicken-pho-recipe/\n2. https://vickypham.com/blog/vietnamese-chicken-noodle-soup-pho-ga/\n3. https://www.recipetineats.com/vietnamese-chicken-pho-soup-pho-ga/\n\n**Различия и редакционное решение:** Куриный фо имеет менее плотный бульон и короче варится, чем фо бо.\n\n**Визуальное подтверждение:** пока отсутствует.\n\n---",
-      "review_status": "редакционный черновик; источники, фото и контрольная готовка не приняты",
+      "review_status": "Три независимых рецепта содержательно сопоставлены; пробная готовка, фото и окончательная приёмка не завершены",
       "photo_approved": false,
       "steps": [
         "Обожги лук и имбирь на сухой сковороде.",
@@ -4692,9 +4712,29 @@
         "рисовая лапша 200 г",
         "зелёный лук, кинза, лайм."
       ],
-      "recipe_source_audit_status": "URL_DOMAINS_LISTED_CONTENT_VERIFICATION_INCOMPLETE",
+      "recipe_source_audit_status": "THREE_INDEPENDENT_RECIPE_TEXTS_COMPARED",
       "visual_audit_status": "PENDING",
-      "photo_status": "PENDING_USER_APPROVAL"
+      "photo_status": "PENDING_USER_APPROVAL",
+      "source_content_evidence": {
+        "date": "2026-11-19",
+        "method": "Culinary source comparison for identity, base ingredients, cooking stages and timers; quantities adapted to two servings; original publication recipe variants noted",
+        "ingredients_comparison": "Курица на кости, рисовая лапша, обожжённые лук и имбирь, кориандр, бадьян и рыбный соус подтверждены Hungry Huy, Vicky Pham, RecipeTin Eats; степень пряности варьирует.",
+        "technique_and_timer_comparison": "Курицу варить на слабом огне до готовности и мягкости, ориентир 50–60 минут для 650 г мяса с костями; затем отделить мясо и процедить бульон. Лапшу готовить отдельно, заливать горячим прозрачным бульоном и добавлять зелень уже в миске.",
+        "sources": [
+          {
+            "url": "https://www.hungryhuy.com/chicken-pho-recipe/",
+            "difference": "Hungry Huy: курица в ароматном бульоне, рисовая лапша, рыбий соус"
+          },
+          {
+            "url": "https://vickypham.com/blog/vietnamese-chicken-noodle-soup-pho-ga/",
+            "difference": "Vicky Pham: лук, имбирь, целая курица, пряности и лапша"
+          },
+          {
+            "url": "https://www.recipetineats.com/vietnamese-chicken-pho-soup-pho-ga/",
+            "difference": "RecipeTin Eats: прозрачный куриный бульон, обожжённые ароматические овощи"
+          }
+        ]
+      }
     },
     {
       "id": 83,
@@ -4709,7 +4749,7 @@
         "https://www.greatbritishchefs.com/recipes/bun-bo-hue-recipe"
       ],
       "full_editorial_markdown": "## №83. Бун бо Хюэ\n\n**На двоих. Время:** 3 часа.\n\n**Ингредиенты:** Говяжья голяшка 400 г; свиная рулька 350 г; толстая рисовая вермишель бун 240 г; лемонграсс 3 стебля; паста ферментированных креветок мам руок 15 г; вьетнамские хлопья чили 15 г; аннато 1 ч. л.; чеснок 2 зубчика; лук 90 г; растительное масло 15 мл; вода 1,5 л; рыбный соус 20 мл.\n\n**Приготовление:**\n1. Бланшируй мясо и кости 5 минут, промой, залей свежей водой с раздавленным лемонграссом и луком.\n2. Вари говядину и свинину 1,5–2 часа до мягкости, достань и процеди бульон.\n3. Разведи мам руок тёплой водой, дай осесть, добавь процеженную жидкость понемногу.\n4. Быстро прогрей чеснок, чили и аннато в масле до ярко-красного масла, введи в бульон.\n5. Отвари толстую рисовую лапшу отдельно; разложи вместе с мясом и залей красно-оранжевым бульоном.\n\n**Внешний вид:** Красный бульон, толстая круглая рисовая лапша, говядина и свинина; без тонкой лапши фо.\n\n**Источники для проверки:**\n1. https://www.hungryhuy.com/bun-bo-hue-recipe/\n2. https://vickypham.com/blog/vietnamese-spicy-beef-noodle-soup-bun-bo-hue/\n3. https://www.greatbritishchefs.com/recipes/bun-bo-hue-recipe\n\n**Различия и редакционное решение:** Лемонграсс и ферментированная креветочная паста обязательны для характерного вкуса.\n\n**Визуальное подтверждение:** пока отсутствует.\n\n---",
-      "review_status": "редакционный черновик; источники, фото и контрольная готовка не приняты",
+      "review_status": "Три независимых рецепта содержательно сопоставлены; пробная готовка, фото и окончательная приёмка не завершены",
       "photo_approved": false,
       "steps": [
         "Бланшируй мясо и кости 5 минут, промой, залей свежей водой с раздавленным лемонграссом и луком.",
@@ -4732,9 +4772,29 @@
         "вода 1,5 л",
         "рыбный соус 20 мл."
       ],
-      "recipe_source_audit_status": "URL_DOMAINS_LISTED_CONTENT_VERIFICATION_INCOMPLETE",
+      "recipe_source_audit_status": "THREE_INDEPENDENT_RECIPE_TEXTS_COMPARED",
       "visual_audit_status": "PENDING",
-      "photo_status": "PENDING_USER_APPROVAL"
+      "photo_status": "PENDING_USER_APPROVAL",
+      "source_content_evidence": {
+        "date": "2026-11-19",
+        "method": "Culinary source comparison for identity, base ingredients, cooking stages and timers; quantities adapted to two servings; original publication recipe variants noted",
+        "ingredients_comparison": "Говяжья голяшка, свиная рулька, толстая рисовая лапша, лемонграсс, ферментированная креветочная паста мам руок, аннато и чили соответствуют Hungry Huy, Vicky Pham, Great British Chefs.",
+        "technique_and_timer_comparison": "Бланшировать мясо и варить с лемонграссом 1,5–2 часа до мягкости, креветочную пасту сначала развести и дать осадку выпасть, красное масло с чесноком и чили готовить отдельно. Толстую лапшу доварить отдельно перед заливкой. У Vicky Pham варка часто дольше и присутствуют дополнительные мясные компоненты.",
+        "sources": [
+          {
+            "url": "https://www.hungryhuy.com/bun-bo-hue-recipe/",
+            "difference": "Hungry Huy: бульон из говядины и свинины, лемонграсс и мам руок"
+          },
+          {
+            "url": "https://vickypham.com/blog/vietnamese-spicy-beef-noodle-soup-bun-bo-hue/",
+            "difference": "Vicky Pham: шейка/рулька, толстая лапша и аннатовое масло"
+          },
+          {
+            "url": "https://www.greatbritishchefs.com/recipes/bun-bo-hue-recipe",
+            "difference": "Great British Chefs: лемонграссовый бульон и острый ароматический соус"
+          }
+        ]
+      }
     },
     {
       "id": 84,
@@ -4749,7 +4809,7 @@
         "https://asianinspirations.com.au/recipes/vietnamese-crab-noodle-soup-bun-rieu/"
       ],
       "full_editorial_markdown": "## №84. Бун риеу с крабом\n\n**На двоих. Время:** 90 минут.\n\n**Ингредиенты:** Готовое крабовое мясо 150 г; свиной фарш 120 г; яйца 1 шт.; креветки 90 г; томаты 300 г; тофу 130 г; рисовая вермишель 200 г; свиной бульон 1 л; креветочная паста 1 ч. л.; рыбный соус 15 мл.\n\n**Приготовление:**\n1. Смешай краба, фарш, измельчённые креветки и яйцо до мягкой массы, слегка посоли.\n2. Прогрей нарезанные томаты 8 минут и добавь в горячий бульон.\n3. Кусочками опусти крабовую смесь со свиным фаршем в тихо кипящий бульон. Вари 10–12 минут или дольше, до полной готовности фарша в центре каждого комочка.\n4. Добавь тофу и рыбный соус, готовь ещё 5 минут, проверь на соль.\n5. Рисовую вермишель отвари отдельно, разложи с крабовыми комочками и томатами, залей супом.\n\n**Внешний вид:** Оранжево-красный бульон с рыхлыми крабовыми сгустками, светлым тофу и рисовой вермишелью.\n\n**Источники для проверки:**\n1. https://www.hungryhuy.com/bun-rieu-recipe/\n2. https://vickypham.com/blog/bun-rieu-scratch/\n3. https://asianinspirations.com.au/recipes/vietnamese-crab-noodle-soup-bun-rieu/\n\n**Различия и редакционное решение:** Риеу мягче фрикаделек, не нужно делать твёрдые круглые мясные шарики.\n\n**Визуальное подтверждение:** пока отсутствует.\n\n---",
-      "review_status": "редакционный черновик; источники, фото и контрольная готовка не приняты",
+      "review_status": "Три независимых рецепта содержательно сопоставлены; пробная готовка, фото и окончательная приёмка не завершены",
       "photo_approved": false,
       "steps": [
         "Смешай краба, фарш, измельчённые креветки и яйцо до мягкой массы, слегка посоли.",
@@ -4770,9 +4830,29 @@
         "креветочная паста 1 ч. л.",
         "рыбный соус 15 мл."
       ],
-      "recipe_source_audit_status": "URL_DOMAINS_LISTED_CONTENT_VERIFICATION_INCOMPLETE",
+      "recipe_source_audit_status": "THREE_INDEPENDENT_RECIPE_TEXTS_COMPARED",
       "visual_audit_status": "PENDING",
-      "photo_status": "PENDING_USER_APPROVAL"
+      "photo_status": "PENDING_USER_APPROVAL",
+      "source_content_evidence": {
+        "date": "2026-11-19",
+        "method": "Culinary source comparison for identity, base ingredients, cooking stages and timers; quantities adapted to two servings; original publication recipe variants noted",
+        "ingredients_comparison": "Краб, свиной фарш, креветки, яйцо, томаты, тофу, ферментированная креветочная паста и рисовая вермишель подтверждены Hungry Huy и Vicky Pham; Asian Inspirations использует иное соотношение морепродуктов.",
+        "technique_and_timer_comparison": "Влажную начинку риеу опускать кусочками в горячий, но не бурно кипящий бульон, доводить до полной готовности свинины около 10–12 минут в зависимости от размеров. Тофу и томаты добавляются в суп, вермишель варят отдельно.",
+        "sources": [
+          {
+            "url": "https://www.hungryhuy.com/bun-rieu-recipe/",
+            "difference": "Hungry Huy: крабово-свиные риеу, томат и тофу, креветочная паста"
+          },
+          {
+            "url": "https://vickypham.com/blog/bun-rieu-scratch/",
+            "difference": "Vicky Pham: краб, креветки, свинина, яйцо и красноватый бульон"
+          },
+          {
+            "url": "https://asianinspirations.com.au/recipes/vietnamese-crab-noodle-soup-bun-rieu/",
+            "difference": "Asian Inspirations: вариант вьетнамского крабового супа с тофу и томатами"
+          }
+        ]
+      }
     },
     {
       "id": 85,
@@ -4787,7 +4867,7 @@
         "https://ang-cooks.com/post/bun-thang/"
       ],
       "full_editorial_markdown": "## №85. Бун тханг по-ханойски\n\n**На двоих. Время:** 80 минут.\n\n**Ингредиенты:** Куриный бульон 900 мл; приготовленное куриное филе 180 г; ча луа вьетнамская ветчина 100 г; тонкая рисовая вермишель 200 г; яйца 2 шт.; сушёные шиитаке 20 г; сушёные креветки 15 г; рыбный соус 15 мл; зелёный лук, кинза.\n\n**Приготовление:**\n1. Замочи шиитаке и креветки на 20 минут; грибы порежь соломкой.\n2. Прогрей грибы и креветки в бульоне 15 минут, затем процеди при необходимости.\n3. Приготовь из яиц очень тонкий омлет, остуди и нарежь тонкими нитями.\n4. Курицу и ча луа нарежь очень тонкой соломкой, рисовую вермишель отвари отдельно.\n5. Разложи лапшу и аккуратными полосками курицу, ветчину, яйцо и грибы; залей прозрачным бульоном.\n\n**Внешний вид:** Аккуратные тонкие разноцветные полоски сверху белой лапши в золотистом бульоне.\n\n**Источники для проверки:**\n1. https://www.hungryhuy.com/bun-thang-vietnamese-hanoi-soup/\n2. https://vickypham.com/blog/northern-vietnam-hanoi-noodle-soup-pork-chicken-shrimp-bun-thang/\n3. https://ang-cooks.com/post/bun-thang/\n\n**Различия и редакционное решение:** Тончайшая нарезка является частью индивидуальности блюда.\n\n**Визуальное подтверждение:** пока отсутствует.\n\n---",
-      "review_status": "редакционный черновик; источники, фото и контрольная готовка не приняты",
+      "review_status": "Три независимых рецепта содержательно сопоставлены; пробная готовка, фото и окончательная приёмка не завершены",
       "photo_approved": false,
       "steps": [
         "Замочи шиитаке и креветки на 20 минут; грибы порежь соломкой.",
@@ -4807,9 +4887,29 @@
         "рыбный соус 15 мл",
         "зелёный лук, кинза."
       ],
-      "recipe_source_audit_status": "URL_DOMAINS_LISTED_CONTENT_VERIFICATION_INCOMPLETE",
+      "recipe_source_audit_status": "THREE_INDEPENDENT_RECIPE_TEXTS_COMPARED",
       "visual_audit_status": "PENDING",
-      "photo_status": "PENDING_USER_APPROVAL"
+      "photo_status": "PENDING_USER_APPROVAL",
+      "source_content_evidence": {
+        "date": "2026-11-19",
+        "method": "Culinary source comparison for identity, base ingredients, cooking stages and timers; quantities adapted to two servings; original publication recipe variants noted",
+        "ingredients_comparison": "Куриное филе, вьетнамская ветчина ча луа, тонкая рисовая вермишель, тончайший яичный омлет, шиитаке и сушёные креветки характерны для бун тханга Ханоя у Hungry Huy, Vicky Pham и Ang Cooks.",
+        "technique_and_timer_comparison": "Дольше всего готовится прозрачный куриный бульон, в редакции он заранее готов. Грибы и креветки прогревают 15 минут, яйцо жарят отдельно тончайшим слоем и нарезают нитями. Полоски курицы, яйца и ветчины выкладывают отдельно сегментами, не смешивая заранее.",
+        "sources": [
+          {
+            "url": "https://www.hungryhuy.com/bun-thang-vietnamese-hanoi-soup/",
+            "difference": "Hungry Huy: хонойский бун тханг с яичными лентами и прозрачным бульоном"
+          },
+          {
+            "url": "https://vickypham.com/blog/northern-vietnam-hanoi-noodle-soup-pork-chicken-shrimp-bun-thang/",
+            "difference": "Vicky Pham: курица, ветчина, сушёные креветки и грибы"
+          },
+          {
+            "url": "https://ang-cooks.com/post/bun-thang/",
+            "difference": "Ang Cooks: наваристый лёгкий бульон и аккуратные тонкие полоски ингредиентов"
+          }
+        ]
+      }
     },
     {
       "id": 86,
@@ -4824,7 +4924,7 @@
         "https://www.dienmayxanh.com/vao-bep/cach-nau-bun-oc-doc-mung-thom-ngon-thanh-mat-de-lam-ngay-tai-08482"
       ],
       "full_editorial_markdown": "## №86. Бун ок с улитками\n\n**На двоих. Время:** 80 минут с готовыми улитками.\n\n**Ингредиенты:** Пищевые улитки очищенные и уже термически обработанные 220 г; рисовая вермишель 200 г; томаты 280 г; бульон 900 мл; рыбный соус 20 мл; уксус рисовый бонг 30 мл; шалот 60 г; растительное масло 10 мл; чили и зелень.\n\n**Приготовление:**\n1. Используй только пищевых улиток промышленной подготовки, не самостоятельно собранных.\n2. Томаты нарежь, шалот измельчи, прогрей с небольшим количеством масла 6 минут.\n3. Влей бульон, добавь рыбный соус, вари 12 минут; уксус добавь в конце до лёгкой кислинки.\n4. Готовых улиток прогрей в бульоне 3–5 минут, не переваривай.\n5. Отвари вермишель отдельно и залей томатно-розовым бульоном с улитками, добавь зелень.\n\n**Внешний вид:** Розоватый бульон, белая тонкая лапша, небольшие улитки и дольки томатов.\n\n**Источники для проверки:**\n1. https://vickypham.com/blog/vietnamese-escargot-noodle-soup-bun-oc/\n2. https://vnexpress.net/doi-song-cooking-bun-oc-ha-noi-theo-loi-cu-4785234.html\n3. https://www.dienmayxanh.com/vao-bep/cach-nau-bun-oc-doc-mung-thom-ngon-thanh-mat-de-lam-ngay-tai-08482\n\n**Различия и редакционное решение:** Источники разнятся по добавлению тофу и иной зелени; выбран простой оригинальный вариант с улитками.\n\n**Визуальное подтверждение:** пока отсутствует.\n\n---",
-      "review_status": "редакционный черновик; источники, фото и контрольная готовка не приняты",
+      "review_status": "Три независимых рецепта содержательно сопоставлены; пробная готовка, фото и окончательная приёмка не завершены",
       "photo_approved": false,
       "steps": [
         "Используй только пищевых улиток промышленной подготовки, не самостоятельно собранных.",
@@ -4844,9 +4944,29 @@
         "растительное масло 10 мл",
         "чили и зелень."
       ],
-      "recipe_source_audit_status": "URL_DOMAINS_LISTED_CONTENT_VERIFICATION_INCOMPLETE",
+      "recipe_source_audit_status": "THREE_INDEPENDENT_RECIPE_TEXTS_COMPARED",
       "visual_audit_status": "PENDING",
-      "photo_status": "PENDING_USER_APPROVAL"
+      "photo_status": "PENDING_USER_APPROVAL",
+      "source_content_evidence": {
+        "date": "2026-11-19",
+        "method": "Culinary source comparison for identity, base ingredients, cooking stages and timers; quantities adapted to two servings; original publication recipe variants noted",
+        "ingredients_comparison": "Подготовленные пищевые улитки, томаты, бульон, ферментированный рисовый уксус, шалот и рисовая вермишель подтверждены Vicky Pham, VnExpress, Dien May Xanh, хотя региональные варианты используют дополнительные травы и свиные части.",
+        "technique_and_timer_comparison": "Использовать исключительно предварительно очищенных и термически приготовленных пищевых улиток, прогревать их 3–5 минут, не пытаться приготовить сырых неизвестных улиток по этому короткому таймеру. Кислый томатный бульон собирается отдельно, лапша добавляется в тарелку.",
+        "sources": [
+          {
+            "url": "https://vickypham.com/blog/vietnamese-escargot-noodle-soup-bun-oc/",
+            "difference": "Vicky Pham: бун ок на томатном кисленьком бульоне с пищевыми улитками"
+          },
+          {
+            "url": "https://vnexpress.net/doi-song-cooking-bun-oc-ha-noi-theo-loi-cu-4785234.html",
+            "difference": "VnExpress: традиционный старый ханойский суп с рисовым уксусом"
+          },
+          {
+            "url": "https://www.dienmayxanh.com/vao-bep/cach-nau-bun-oc-doc-mung-thom-ngon-thanh-mat-de-lam-ngay-tai-08482",
+            "difference": "Dien May Xanh: варианты с улитками, лапшой и региональными добавками"
+          }
+        ]
+      }
     },
     {
       "id": 87,
@@ -4861,7 +4981,7 @@
         "https://vietnamesecookbook.com/recipes/hu-tieu/"
       ],
       "full_editorial_markdown": "## №87. Ху тьеу со свининой и креветками\n\n**На двоих. Время:** 110 минут.\n\n**Ингредиенты:** Свиные кости 450 г; свинина 160 г; очищенные креветки 160 г; рисовая лапша ху тьеу 200 г; дайкон 120 г; сушёные креветки 20 г; лук 80 г; рыбный соус 20 мл; ростки сои 90 г; зелень.\n\n**Приготовление:**\n1. Бланшируй кости 5 минут, промой и снова залей 1,3 л свежей воды, положи дайкон и лук.\n2. Вари 65–80 минут до чистого насыщенного бульона, сухие креветки добавь за 15 минут до конца.\n3. Свиную вырезку полностью приготовь в бульоне, креветки опусти на 2–3 минуты.\n4. Рисовую лапшу ху тьеу отвари отдельно, разложи по мискам.\n5. Положи сверху мясо и креветки, залей горячим бульоном, добавь бланшированные ростки и зелень.\n\n**Внешний вид:** Прозрачный светло-золотистый бульон с рисовой лапшой, свининой и розовыми креветками.\n\n**Источники для проверки:**\n1. https://vickypham.com/blog/vietnamese-pork-seafood-noodle-soup-hu-tieu/\n2. https://www.vietworldkitchen.com/blog/2007/11/hu-tieu-nam-van.html\n3. https://vietnamesecookbook.com/recipes/hu-tieu/\n\n**Различия и редакционное решение:** Второй и третий URL требуют обязательной проверки открытием; до неё нельзя отметить независимое подтверждение.\n\n**Визуальное подтверждение:** пока отсутствует.\n\n---",
-      "review_status": "редакционный черновик; источники, фото и контрольная готовка не приняты",
+      "review_status": "Три независимых рецепта содержательно сопоставлены; пробная готовка, фото и окончательная приёмка не завершены",
       "photo_approved": false,
       "steps": [
         "Бланшируй кости 5 минут, промой и снова залей 1,3 л свежей воды, положи дайкон и лук.",
@@ -4882,9 +5002,29 @@
         "ростки сои 90 г",
         "зелень."
       ],
-      "recipe_source_audit_status": "URL_DOMAINS_LISTED_CONTENT_VERIFICATION_INCOMPLETE",
+      "recipe_source_audit_status": "THREE_INDEPENDENT_RECIPE_TEXTS_COMPARED",
       "visual_audit_status": "PENDING",
-      "photo_status": "PENDING_USER_APPROVAL"
+      "photo_status": "PENDING_USER_APPROVAL",
+      "source_content_evidence": {
+        "date": "2026-11-19",
+        "method": "Culinary source comparison for identity, base ingredients, cooking stages and timers; quantities adapted to two servings; original publication recipe variants noted",
+        "ingredients_comparison": "Свиные кости, тонко нарезанная свинина, креветки, рисовая лапша ху тьеу, сушёные креветки, дайкон, рыбий соус и бульон подтверждены Vicky Pham, Viet World Kitchen и Vietnamese Cookbook.",
+        "technique_and_timer_comparison": "Бульон из свиных костей томить 65–80 минут до достаточной насыщенности, отдельно довести до готовности свиные ломтики, креветки вводить на 2–3 минуты при соответствующем размере. Лапшу варить отдельно, бланшированные ростки сои добавлять при подаче.",
+        "sources": [
+          {
+            "url": "https://vickypham.com/blog/vietnamese-pork-seafood-noodle-soup-hu-tieu/",
+            "difference": "Vicky Pham: свиной бульон с сушёными креветками, дайконом и ху тьеу"
+          },
+          {
+            "url": "https://www.vietworldkitchen.com/blog/2007/11/hu-tieu-nam-van.html",
+            "difference": "Viet World Kitchen: ху тьеу Нам Ванг с креветками и свининой"
+          },
+          {
+            "url": "https://vietnamesecookbook.com/recipes/hu-tieu/",
+            "difference": "Vietnamese Cookbook: ху тьеу с рисовой лапшой и мясо-морепродуктовой подачей"
+          }
+        ]
+      }
     },
     {
       "id": 88,
@@ -4899,7 +5039,7 @@
         "https://vnifood.com/recipe/how-to-make-banh-canh-tom-thit/"
       ],
       "full_editorial_markdown": "## №88. Бань кань с густой лапшой\n\n**На двоих. Время:** 90 минут.\n\n**Ингредиенты:** Свиные рёбрышки 420 г; креветки 160 г; лапша бань кань из рисовой/тапиоковой муки 260 г; лук 75 г; дайкон 100 г; вода 1,2 л; рыбный соус 20 мл; зелёный лук.\n\n**Приготовление:**\n1. Бланшируй рёбра 5 минут, промой и залей чистой водой.\n2. Положи лук и дайкон, томи 50–60 минут до мягкости мяса.\n3. Процеди бульон при необходимости, верни свинину и приправь рыбным соусом.\n4. Добавь толстую лапшу бань кань, вари по упаковке; за последние 2–3 минуты добавь креветки.\n5. Подавай сразу с зелёным луком: лапша делает бульон слегка вязким.\n\n**Внешний вид:** Слегка вязкий бульон с толстой белой лапшой, свиными рёбрами и креветками.\n\n**Источники для проверки:**\n1. https://www.hungryhuy.com/banh-canh-gio-heo/\n2. https://vickypham.com/blog/banh-canh-suon-heo-vietnamese-pork-rib-noodle-soup-large-batch/\n3. https://vnifood.com/recipe/how-to-make-banh-canh-tom-thit/\n\n**Различия и редакционное решение:** Третий URL нуждается в подтверждении; бань кань нельзя заменять тонкой вермишелью.\n\n**Визуальное подтверждение:** пока отсутствует.\n\n---",
-      "review_status": "редакционный черновик; источники, фото и контрольная готовка не приняты",
+      "review_status": "Три независимых рецепта содержательно сопоставлены; пробная готовка, фото и окончательная приёмка не завершены",
       "photo_approved": false,
       "steps": [
         "Бланшируй рёбра 5 минут, промой и залей чистой водой.",
@@ -4918,9 +5058,29 @@
         "рыбный соус 20 мл",
         "зелёный лук."
       ],
-      "recipe_source_audit_status": "URL_DOMAINS_LISTED_CONTENT_VERIFICATION_INCOMPLETE",
+      "recipe_source_audit_status": "THREE_INDEPENDENT_RECIPE_TEXTS_COMPARED",
       "visual_audit_status": "PENDING",
-      "photo_status": "PENDING_USER_APPROVAL"
+      "photo_status": "PENDING_USER_APPROVAL",
+      "source_content_evidence": {
+        "date": "2026-11-19",
+        "method": "Culinary source comparison for identity, base ingredients, cooking stages and timers; quantities adapted to two servings; original publication recipe variants noted",
+        "ingredients_comparison": "Толстая лапша бань кань на основе рисовой или тапиоковой муки, свиные рёбра и креветки соответствуют Hungry Huy, Vicky Pham, VniFood. У некоторых источников вместо рёбер есть свиная ножка или краб.",
+        "technique_and_timer_comparison": "Бульон из рёбер варить до мягкости 50–60 минут или дольше, затем лапшу готовить согласно упаковке в том же бульоне, креветки ввести лишь за последние 2–3 минуты. Частично растворяющийся крахмал лапши естественно загущает суп; не требуется отдельная мука.",
+        "sources": [
+          {
+            "url": "https://www.hungryhuy.com/banh-canh-gio-heo/",
+            "difference": "Hungry Huy: бань кань со свиной ножкой, толстая лапша"
+          },
+          {
+            "url": "https://vickypham.com/blog/banh-canh-suon-heo-vietnamese-pork-rib-noodle-soup-large-batch/",
+            "difference": "Vicky Pham: бульон из свиных рёбер и бань кань, крупные куски мяса"
+          },
+          {
+            "url": "https://vnifood.com/recipe/how-to-make-banh-canh-tom-thit/",
+            "difference": "VniFood: вариант бань кань с креветками и свининой"
+          }
+        ]
+      }
     },
     {
       "id": 89,
@@ -4935,7 +5095,7 @@
         "https://www.sbs.com.au/food/the-cook-up-with-adam-liaw/recipe/canh-chua-ca-vietnamese-sour-fish-soup/5itdhzdfp"
       ],
       "full_editorial_markdown": "## №89. Кань чуа с рыбой и тамариндом\n\n**На двоих. Время:** 45 минут.\n\n**Ингредиенты:** Плотная белая рыба 350 г; тамариндовая паста 30 г; ананас 100 г; томаты 160 г; бамия 110 г; ростки сои 100 г; зелень 20 г; вода 850 мл; рыбный соус 20 мл; сахар 8 г; чеснок 1 зубчик.\n\n**Приготовление:**\n1. Проверь рыбу на кости, нарежь крупными кусками. Томаты и ананас порежь.\n2. Разведи тамаринд в тёплой воде, процеди остатки семян и волокон.\n3. В кипящую воду добавь томаты, ананас и мелко натёртый чеснок на 7 минут, затем тамаринд и рыбный соус.\n4. Положи рыбу на 6–8 минут до готовности, бамию и ростки на последние 3–4 минуты.\n5. Попробуй кислый бульон, добавь немного сахара и зелень, разлей в миски.\n\n**Внешний вид:** Прозрачный кисло-сладкий бульон с рыбой, томатами, ананасом, бамией и ростками.\n\n**Источники для проверки:**\n1. https://www.saveur.com/article/recipes/classic-sour-fish-soup/\n2. https://vickypham.com/blog/vietnamese-sour-catfish-soup-canh-chua/\n3. https://www.sbs.com.au/food/the-cook-up-with-adam-liaw/recipe/canh-chua-ca-vietnamese-sour-fish-soup/5itdhzdfp\n\n**Различия и редакционное решение:** Третий URL требует проверки. Ананас и тамаринд отличают блюдо от обычной ухи.\n\n**Визуальное подтверждение:** пока отсутствует.\n\n---",
-      "review_status": "редакционный черновик; источники, фото и контрольная готовка не приняты",
+      "review_status": "Три независимых рецепта содержательно сопоставлены; пробная готовка, фото и окончательная приёмка не завершены",
       "photo_approved": false,
       "steps": [
         "Проверь рыбу на кости, нарежь крупными кусками. Томаты и ананас порежь.",
@@ -4957,9 +5117,29 @@
         "сахар 8 г",
         "чеснок 1 зубчик."
       ],
-      "recipe_source_audit_status": "URL_DOMAINS_LISTED_CONTENT_VERIFICATION_INCOMPLETE",
+      "recipe_source_audit_status": "THREE_INDEPENDENT_RECIPE_TEXTS_COMPARED",
       "visual_audit_status": "PENDING",
-      "photo_status": "PENDING_USER_APPROVAL"
+      "photo_status": "PENDING_USER_APPROVAL",
+      "source_content_evidence": {
+        "date": "2026-11-19",
+        "method": "Culinary source comparison for identity, base ingredients, cooking stages and timers; quantities adapted to two servings; original publication recipe variants noted",
+        "ingredients_comparison": "Тамаринд, ананас, томаты, бамия, ростки сои, рыба и рыбный соус подтверждены Saveur, Vicky Pham, SBS. В части вьетнамских версий используется рыба с костями, редакционный вариант с проверенным филе проще для пользователя.",
+        "technique_and_timer_comparison": "Фрукты и томаты прогреть в бульоне 7 минут, рыбу варить примерно 6–8 минут до готовности по толщине, бамию и ростки добавить последние 3–4 минуты. Кислотность тамаринда и сахар вводить по вкусу, зелень после нагрева.",
+        "sources": [
+          {
+            "url": "https://www.saveur.com/article/recipes/classic-sour-fish-soup/",
+            "difference": "Saveur: кислый рыбный суп с тамариндом и свежими овощами"
+          },
+          {
+            "url": "https://vickypham.com/blog/vietnamese-sour-catfish-soup-canh-chua/",
+            "difference": "Vicky Pham: ананас, бамия, томаты, ростки, рыба и баланс сладко-кислого"
+          },
+          {
+            "url": "https://www.sbs.com.au/food/the-cook-up-with-adam-liaw/recipe/canh-chua-ca-vietnamese-sour-fish-soup/5itdhzdfp",
+            "difference": "SBS: вьетнамский canh chua с рыбным соусом и ананасом"
+          }
+        ]
+      }
     },
     {
       "id": 90,
@@ -4974,7 +5154,7 @@
         "https://getvanvan.com/blogs/recipes/canh-kh%E1%BB%95-qua-bitter-melon-soup"
       ],
       "full_editorial_markdown": "## №90. Кань кхо куа с фаршированной горькой дыней\n\n**На двоих. Время:** 65 минут.\n\n**Ингредиенты:** Момордика 2 плода около 450 г; свиной фарш 240 г; стеклянная лапша 25 г; древесные грибы 10 г; шалот 35 г; рыбный соус 20 мл; бульон 850 мл; зелёный лук, перец.\n\n**Приготовление:**\n1. Замочи стеклянную лапшу и сушёные грибы по отдельности на 15 минут, нарежь.\n2. Смешай фарш с лапшой, грибами, шалотом и небольшим количеством рыбного соуса.\n3. Разрежь дыню на 3–4 части, удали семена, наполни фаршем не плотно.\n4. Положи в слабо кипящий бульон, вари 35–45 минут до полной готовности мясной начинки и мягкости дыни.\n5. Добавь рыбный соус и зелёный лук, разлей с кусками нафаршированной момордики.\n\n**Внешний вид:** Прозрачный бульон с крупными зелёными кольцами горькой дыни, заполненными готовым фаршем.\n\n**Источники для проверки:**\n1. https://www.hungryhuy.com/bitter-melon-soup-canh-kho-qua/\n2. https://delightfulplate.com/vietnamese-bitter-melon-soup-canh-kho-qua/\n3. https://getvanvan.com/blogs/recipes/canh-kh%E1%BB%95-qua-bitter-melon-soup\n\n**Различия и редакционное решение:** Третий URL требует открытия, саму горькую дыню нельзя заменить огурцом.\n\n**Визуальное подтверждение:** пока отсутствует.",
-      "review_status": "редакционный черновик; источники, фото и контрольная готовка не приняты",
+      "review_status": "Три независимых рецепта содержательно сопоставлены; пробная готовка, фото и окончательная приёмка не завершены",
       "photo_approved": false,
       "steps": [
         "Замочи стеклянную лапшу и сушёные грибы по отдельности на 15 минут, нарежь.",
@@ -4993,9 +5173,29 @@
         "бульон 850 мл",
         "зелёный лук, перец."
       ],
-      "recipe_source_audit_status": "URL_DOMAINS_LISTED_CONTENT_VERIFICATION_INCOMPLETE",
+      "recipe_source_audit_status": "THREE_INDEPENDENT_RECIPE_TEXTS_COMPARED",
       "visual_audit_status": "PENDING",
-      "photo_status": "PENDING_USER_APPROVAL"
+      "photo_status": "PENDING_USER_APPROVAL",
+      "source_content_evidence": {
+        "date": "2026-11-19",
+        "method": "Culinary source comparison for identity, base ingredients, cooking stages and timers; quantities adapted to two servings; original publication recipe variants noted",
+        "ingredients_comparison": "Горькая дыня момордика, свиной фарш, стеклянная лапша, древесные грибы, шалот и рыбный соус характерны для canh khổ qua у Hungry Huy, Delightful Plate и Van Van.",
+        "technique_and_timer_comparison": "Фаршем с лапшой и грибами начинить куски дыни неплотно, поскольку лапша впитывает влагу, томить 35–45 минут или до мягкости дыни и полной готовности начинки. Food Network для более крупных кусков рекомендует 45–55 минут, следовательно время нельзя считать универсальным.",
+        "sources": [
+          {
+            "url": "https://www.hungryhuy.com/bitter-melon-soup-canh-kho-qua/",
+            "difference": "Hungry Huy: фаршированные половинки горькой дыни с фаршем и лапшой"
+          },
+          {
+            "url": "https://delightfulplate.com/vietnamese-bitter-melon-soup-canh-kho-qua/",
+            "difference": "Delightful Plate: свиной фарш, грибы, лапша и мягкий солёный бульон"
+          },
+          {
+            "url": "https://getvanvan.com/blogs/recipes/canh-kh%E1%BB%95-qua-bitter-melon-soup",
+            "difference": "Van Van: традиционный вьетнамский canh khổ qua, горькая дыня с фаршем"
+          }
+        ]
+      }
     },
     {
       "id": 91,
