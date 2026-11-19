@@ -1,12 +1,12 @@
 {
   "collection": "НАШ ВЕЧЕР. 100 супов",
   "status": "CANDIDATE_TIMER_AUDIT_NOT_APPROVED",
-  "note": "This is an extraction of stated time durations from 504 steps, NOT an end-to-end cooked/verified timer plan. A step can include separate soaking, simmering, and seasoning phases. Never automatically set a single timer for a multi-duration step. Readiness checks take precedence over time. Source comparisons remain pending.",
+  "note": "This extracts time durations from every soup cooking step; it is not a final checked cooking timer. A step can have multiple phases. For multi-duration steps do not automatically choose a single countdown. Readiness checks prevail over fixed minutes.",
   "stats": {
     "steps": 504,
     "numeric": 264,
     "nonNumeric": 240,
-    "multi": 28,
+    "multi": 29,
     "condition": 90
   },
   "recipes": [
@@ -5829,13 +5829,18 @@
           "step": 4,
           "time_candidates": [
             {
-              "min_seconds": 300,
-              "max_seconds": 420,
-              "phrase": "5–7 минут"
+              "min_seconds": 180,
+              "max_seconds": 300,
+              "phrase": "3–5 минут"
+            },
+            {
+              "min_seconds": 60,
+              "max_seconds": 120,
+              "phrase": "1–2 минуты"
             }
           ],
           "requires_readiness_check": false,
-          "mode": "CANDIDATE_DURATION_NOT_APPROVED",
+          "mode": "REQUIRES_HUMAN_SEQUENCE_REVIEW",
           "no_auto_timer_reason": null
         },
         {
