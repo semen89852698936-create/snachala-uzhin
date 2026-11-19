@@ -311,7 +311,7 @@
       "title": "Салат с осьминогом и картофелем",
       "category": "salads",
       "cuisine": "Италия",
-      "minutes": 100,
+      "minutes": 160,
       "base": 2,
       "level": "Средне",
       "emoji": "🥗",
@@ -380,6 +380,11 @@
           "title": "Заправь",
           "detail": "Взбей масло с соком половины лимона и щепоткой соли; перемешай с тёплым осьминогом и картофелем. Чеснок можно слегка раздавить в масле и вынуть до подачи.",
           "timer": 0
+        },
+        {
+          "title": "Дай салату настояться",
+          "detail": "Накрой собранный салат и охлади в холодильнике не менее 60 минут, чтобы осьминог и картофель впитали лимонно-масляную заправку. Подавай охлаждённым либо слегка согретым до прохладной комнатной температуры непосредственно перед едой.",
+          "timer": 60
         }
       ],
       "tip": "Нужен именно нежный отварной осьминог, проверяй мягкость шпажкой.",
@@ -397,7 +402,7 @@
           "https://blog.giallozafferano.it/lemieloverie/ricetta-insalata-di-polpo-e-patate/",
           "https://www.ilcuoreinpentola.it/ricette/ricette-delle-feste/insalata-di-polpo-e-patate/"
         ],
-        "note": "Подтверждено в трёх итальянских источниках: осьминог варится до мягкости и подаётся с отварным картофелем, лимоном, петрушкой и маслом.\nFormer Il Cuore in Pentola antipasti path unavailable; new page opens and documents octopus potatoes parsley lemon oil."
+        "note": "Подтверждено в трёх итальянских источниках: осьминог варится до мягкости и подаётся с отварным картофелем, лимоном, петрушкой и маслом.\nFormer Il Cuore in Pentola antipasti path unavailable; new page opens and documents octopus potatoes parsley lemon oil.\n2026-11-19 independent detailed all-three-site comparison: Cucchiaio specifically refrigerates assembled octopus-potato salad at least 2h; Le Mie Loverie 1h; our recipe now has an obligatory 60-minute cold rest and 160-minute total. Polpo and patate proportions adjusted for two by editor; source cook durations vary by octopus size."
       },
       "editorialApproval": {
         "status": "approved_by_user",
