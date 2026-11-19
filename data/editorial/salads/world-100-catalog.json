@@ -2444,10 +2444,10 @@
         "stage": "editorial_research",
         "sources": [
           "https://www.pays-bergerac-tourisme.com/fr/deguster/les-recettes/salade-perigourdine",
-          "https://noixduperigord.com/fr/les-recettes/entrees/salade-perigourdine",
+          "https://www.noixduperigord.com/fr/les-recettes/entrees/salade-perigourdine",
           "https://www.marmiton.org/recettes/recette_salade-perigourdine-aux-foies-de-volaille_37573.aspx"
         ],
-        "note": "Авторская комбинация двух региональных вариантов: салат с куриной печенью подтверждает туристическая организация Bergerac, а вариант с уткой и магре описан ассоциацией Noix du Périgord. Не выдавать сочетание за единственную каноническую рецептуру."
+        "note": "Авторская комбинация двух региональных вариантов: салат с куриной печенью подтверждает туристическая организация Bergerac, а вариант с уткой и магре описан ассоциацией Noix du Périgord. Не выдавать сочетание за единственную каноническую рецептуру.\nSource check 2026-11-19: Correct canonical www domain; live recipe has smoked duck magret plus confit duck gizzards, walnut, potato, foie gras and strawberries, NOT chicken liver. Our chicken liver + magret is expressly an editorial mixed variation, not exact original."
       },
       "photo": null,
       "imagePublishingBlocked": true,
@@ -5324,7 +5324,7 @@
       "title": "Гавурдагы с томатами и орехами",
       "category": "salads",
       "cuisine": "Турция",
-      "minutes": 20,
+      "minutes": 50,
       "base": 2,
       "level": "Легко",
       "emoji": "🥗",
@@ -5397,8 +5397,13 @@
         },
         {
           "title": "Заправь",
-          "detail": "Смешай гранатовый соус с маслом и сумахом, добавь овощи, сверху немного ореховой крошки.",
+          "detail": "Соедини гранатовый соус с маслом и сумахом, перемешай с овощами и большей частью ореховой крошки, оставив немного орехов для подачи.",
           "timer": 0
+        },
+        {
+          "title": "Дай вкусам соединиться",
+          "detail": "Накрой миску и дай овощам с гранатовой заправкой настояться в холодильнике 30 минут. Перед подачей посыпь мелко рублеными орехами, чтобы они сохранили фактуру.",
+          "timer": 30
         }
       ],
       "tip": "Орехи для гавурдагы измельчай ножом, оставляя мелкую фактуру; гранатовый соус добавляй понемногу.",
@@ -5416,7 +5421,7 @@
           "https://yemek.com/tarif/gavurdagi/",
           "https://esenler.bel.tr/esenler-kadin/yemek-tarifleri/gavurdagi-salatasi/"
         ],
-        "note": "Турецкая региональная рецептура, на двоих\nVerified replacement 2026-11-19: Original kısıkates server 502 replaced by live Turkish Gavurdagi recipe containing tomatoes, onion, walnuts, parsley, olive oil, pomegranate molasses and sumac. Reference rests 30min; our quick variant serves immediately, explain this is editorial short version."
+        "note": "Турецкая региональная рецептура, на двоих\nVerified replacement 2026-11-19: Original kısıkates server 502 replaced by live Turkish Gavurdagi recipe containing tomatoes, onion, walnuts, parsley, olive oil, pomegranate molasses and sumac. Reference rests 30min; our quick variant serves immediately, explain this is editorial short version.\nTiming verification 2026-11-19: Taste of Türkiye specifies 30-minute rest for traditional Gavurdağı (15 min prep, 30 rest). Editorial card now has that waiting step and total 50 min including cutting."
       },
       "photo": null,
       "imagePublishingBlocked": true,
@@ -7171,11 +7176,11 @@
       "sourceReview": {
         "stage": "editorial_research",
         "sources": [
-          "https://cookpad.com/eng/recipes/4577968",
-          "https://www.themediterraneandish.com/arugula-salad/",
-          "https://zaatarandzaytoun.com/rocket-salad/"
+          "https://www.food.com/recipe/jarjeer-arugula-salad-436995",
+          "https://eathealthyandcheap.com/recipes/salatet-jarjir-arugula-sumac-salad/",
+          "https://www.fufuskitchen.com/salatat-jarjeer-middle-eastern-arugula-salad/"
         ],
-        "note": "Фактическое соотношение ингредиентов на две порции, финальная проверка редактора требуется"
+        "note": "Фактическое соотношение ингредиентов на две порции, финальная проверка редактора требуется\nSource check 2026-11-19: Replaced original Cookpad recipe containing fresh thyme not present in our salad. This Jarjeer reference confirms raw arugula, tomato, onion, lemon and sumac.\nSource check 2026-11-19: Second independent jarjeer variant confirms arugula, tomatoes, red onions, sumac, lemon but omits oil and includes walnuts and pomegranate. Our editorial recipe is the simpler olive-oil dressing version.\nSource check 2026-11-19: Third independent jarjeer source confirms fresh arugula, lemon, red onion, sumac and olive oil; adds walnuts, not obligatory in editorial variation."
       },
       "photo": null,
       "imagePublishingBlocked": true,
@@ -7564,7 +7569,7 @@
       "title": "Японский картофельный салат",
       "category": "salads",
       "cuisine": "Япония",
-      "minutes": 55,
+      "minutes": 80,
       "base": 2,
       "level": "Легко",
       "emoji": "🥗",
@@ -7759,7 +7764,7 @@
         }
       ],
       "tip": "Харусаме после варки промой холодной водой и хорошо обсуши, тогда заправка не станет разбавленной.",
-      "warn": "Аллергены в составе: яйца, соя, кунжут. Обычный соевый соус может содержать пшеницу; проверь состав конкретной марки лапши и соуса.",
+      "warn": "Аллергены в составе: яйца, соя, кунжут. Соевый соус обычно содержит пшеницу; проверь состав лапши и соуса.",
       "equipment": "Нож, доска, миска и кастрюля",
       "tags": [
         "Японская кухня"
@@ -8711,7 +8716,7 @@
       "steps": [
         {
           "title": "Обжарь говядину",
-          "detail": "Обсуши стейк и обжарь примерно по 3–5 минут с каждой стороны на горячей сковороде до нужной степени готовности; проверь термометром, время зависит от толщины.",
+          "detail": "Обсуши стейк и обжарь примерно по 3–5 минут с каждой стороны на горячей сковороде. Для безопасной подачи цельного говяжьего стейка температура внутри не ниже 63 °C, затем обязательный отдых не менее 3 минут; проверяй термометром, а не только таймером.",
           "timer": 10
         },
         {
@@ -8736,7 +8741,7 @@
         }
       ],
       "tip": "Нам ток отличается именно ароматом жареной говядины и кхао кхуа: не подменяй стейк варёным мясом.",
-      "warn": "Аллергены в составе: рыба.",
+      "warn": "Аллергены в составе: рыба. Цельный говяжий стейк: минимум 63 °C внутри и отдых не менее 3 минут.",
       "equipment": "Нож, доска, ступка, кастрюля и миска",
       "tags": [
         "Тайская кухня"
@@ -10125,7 +10130,7 @@
       "title": "Американский картофельный салат",
       "category": "salads",
       "cuisine": "США",
-      "minutes": 60,
+      "minutes": 80,
       "base": 2,
       "level": "Средне",
       "emoji": "🥗",
