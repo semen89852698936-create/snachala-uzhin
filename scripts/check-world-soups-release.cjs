@@ -47,6 +47,7 @@ for(const p of ['index.html','full-catalog/index.html']){
  assert.ok(html.includes("{id:'soup',name:'Супы',emoji:'🍲',photo:'/assets/world-soups/01.webp'}"),p+': soup tile wrong');
  console.log('HTML PASS',p,'remaining core records:',data.length,'new soups:',soups.length);
 }
+if(process.argv.includes('--content-only')){console.log('CONTENT QA PASS: ten Russian soups and both HTML catalog variants; photo import pending.');process.exit(0);}
 const expectedImageSHA={
  9:'a7780cff27a1f595e4da06563d21f25caea31354335e9f4f5ff58d3079edbba9',
  10:'906333ac681b09f64afbeb2909db3c9168c81db384e890c535b916f70069def3'
