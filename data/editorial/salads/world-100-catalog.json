@@ -2200,10 +2200,10 @@
         "stage": "editorial_research",
         "sources": [
           "https://www.explorenicecotedazur.com/explorer/art-de-vivre/gastronomie-et-terroir/recettes-de-cuisine-nicoise/la-salade-nicoise/",
-          "https://provence-alpes-cotedazur.com/que-faire/vin-et-gastronomie/les-recettes-du-sud/la-salade-nicoise/",
-          "https://www.academiedugout.fr/recettes/salade-nicoise_8215_2"
+          "https://www.nice-cooking.com/fr/salade-nicoise/",
+          "https://www.allodocteurs.fr/la-recette-traditionnelle-de-la-salade-nicoise-37721.html"
         ],
-        "note": "Учтена французская региональная рецептурная традиция"
+        "note": "Учтена французская региональная рецептурная традиция\n2026-11-19: Replaced source with site returning 403 in audit with Nice Cooking direct historical commentary recipe: raw tomatoes peppers radishes eggs tuna anchovy olives oil, no potatoes or boiled green beans.\n2026-11-19: Replaced inaccessible Académie page with chef Julia Sedefdjian's authentic Niçoise published by Allo Docteurs: only raw vegetables, eggs, tuna, anchovies, olive and basil, no potato or cooked green beans."
       },
       "photo": null,
       "imagePublishingBlocked": true,
@@ -2753,10 +2753,10 @@
         "stage": "editorial_research",
         "sources": [
           "https://www.sainsburysmagazine.co.uk/recipes/mains/french-carrot-salad",
-          "https://www.marmiton.org/recettes/recette_carottes-rapees-vinaigrette_12609.aspx",
-          "https://www.750g.com/carottes-rapees-r2000.htm"
+          "https://cantines.nice.fr/actualite/la-recette-du-chef-ratatouille-les-carottes-rapees-a-la-vinaigrette-moutardee",
+          "https://www.marieclaire.fr/cuisine/carottes-rapees-toutes-simples%2C1521578.asp"
         ],
-        "note": "Сверено 19.11.2026: Sainsbury's Magazine подтверждает морковь, дижонскую горчицу, белый винный уксус, оливковое масло и петрушку, а также способ эмульгирования; несоответствующая первая ссылка заменена."
+        "note": "Сверено 19.11.2026: Sainsbury's Magazine подтверждает морковь, дижонскую горчицу, белый винный уксус, оливковое масло и петрушку, а также способ эмульгирования; несоответствующая первая ссылка заменена.\n2026-11-19: Replaced unavailable Marmiton link with school chef's mustard-Dijon grated carrot vinaigrette with parsley option.\n2026-11-19: Replaced unavailable 750g link with Marie Claire grated carrot vinaigrette, mustard lemon/wine vinegar and parsley."
       },
       "photo": null,
       "imagePublishingBlocked": true,
@@ -2967,10 +2967,10 @@
         "stage": "editorial_research",
         "sources": [
           "https://frigolade.fr/recettes/salade-de-pommes-de-terre/",
-          "https://www.marmiton.org/recettes/recette_salade-de-pommes-de-terre-a-la-francaise_43953.aspx",
-          "https://www.academiedugout.fr/recettes/salade-de-pommes-de-terre_12085_2"
+          "https://ioumi.fr/recettes/salade-de-pommes-de-terre-nouvelles-aux-herbes.html",
+          "https://cuisinezavecdjouza.fr/salade-pommes-de-terre-aux-herbes/"
         ],
-        "note": "Учтена французская региональная рецептурная традиция"
+        "note": "Учтена французская региональная рецептурная традиция\n2026-11-19: Replaced inaccessible Marmiton link with ioumi herb potato salad with shallot and mustard oil vinegar.\n2026-11-19: Replaced inaccessible Académie reference with French herbal potato salad: warm potato with vinegar, mustard, shallot and parsley, no mayonnaise."
       },
       "photo": null,
       "imagePublishingBlocked": true,
