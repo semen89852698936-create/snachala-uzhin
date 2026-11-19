@@ -175,7 +175,7 @@
 
 **Три независимых рецептурных источника:**
 1. https://www.lezzet.com.tr/yemek-tarifleri/corbalar/corba-tarifleri/terbiyeli-kofte-corbasi
-2. https://www.ktb.gov.tr/EN-98960/meat-balls-with-egg---lemon-sauce.html
+2. https://prod.kisikatesakademi.com.tr/tarif/terbiyeli-kofteli-corba-tarifi-1720
 3. https://yemek.com/tarif/eksili-terbiyeli-kofteli-corba/
 
 **Различия вариантов и выбор редакции:** Турецкое terbiye означает заправку яйцом/кислотой; мясо и рис должны готовиться до ввода заправки.
