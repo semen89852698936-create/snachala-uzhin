@@ -4,7 +4,7 @@
   "date": "2026-11-19",
   "disclaimer": "One selected original recipe per card. Archived excerpts are for preliminary triage, not proof of full reading or a culinary signoff. Timers require manual readiness and multi-phase checks. Previously recorded 3-URL comparisons remain as historical provenance and are not required. Full single-source reviews of first 4 completed, but recipe #2 needs alignment; approved count does not mean photographs or public publication are approved.",
   "total": 100,
-  "full_reviews_completed": 89,
+  "full_reviews_completed": 99,
   "recipes": [
     {
       "id": 1,
@@ -1727,10 +1727,13 @@
       "ingredient_excerpt": "1½ pound chicken bones ((680g)) / 1½ pound pork bones ((680g)) / 9 cups water ((2 liters)) / 2 slices ginger / Salt ((to taste)) / 1/2 pound ground pork ((225g)) / 1/4 teaspoon salt / 2 teaspoons shaoxing wine / 2 teaspoons light soy sauce / 1/4 teas",
       "method_excerpt": "Making the stock: / In a soup pot, bring all the ingredients to a boil, scooping away any impurities (i.e. foam, etc.) that float to the top. Simmer at your burner’s lowest setting for at least 3-4 hours. A slow simmer makes ",
       "preliminary_basis": "ARCHIVED_SOURCE_EXCERPTS",
-      "ingredient_check": "PENDING_FULL_SINGLE_SOURCE_REVIEW",
-      "technique_check": "PENDING_FULL_SINGLE_SOURCE_REVIEW",
-      "time_check": "PENDING_FULL_SINGLE_SOURCE_REVIEW",
-      "approved": false
+      "ingredient_check": "PASS",
+      "technique_check": "PASS",
+      "time_check": "CONDITIONAL_READINESS",
+      "approved": false,
+      "review_note": "Woks of Life Shanghai wonton soup uses shrimp/pork filling folded in wrappers, boiled separately and served in clear broth. Editorial 4–6min for raw pork center must be readiness checked.",
+      "review_method": "SINGLE_ORIGINAL_SOURCE_REVIEW_WITH_EDITORIAL_COMPARISON",
+      "review_date": "2026-11-19"
     },
     {
       "id": 92,
@@ -1743,10 +1746,13 @@
       "ingredient_excerpt": "4 oz. pork shoulder ((finely julienned)) / 1 tablespoon water / Pinch of salt / 2 teaspoons vegetable oil / 1 teaspoon cornstarch / 1 to 2 dried red chili peppers ((optional)) / 0.3 ounce dried lily flower ((rehydrated, ½ cup after rehydrating)) / 0.",
       "method_excerpt": "Prepare your pork: / Prepare your dry ingredients: / Prepare the tofu and the rest of the ingredients: / Assemble the soup: / Adjust seasoning:",
       "preliminary_basis": "ARCHIVED_SOURCE_EXCERPTS",
-      "ingredient_check": "PENDING_FULL_SINGLE_SOURCE_REVIEW",
-      "technique_check": "PENDING_FULL_SINGLE_SOURCE_REVIEW",
-      "time_check": "PENDING_FULL_SINGLE_SOURCE_REVIEW",
-      "approved": false
+      "ingredient_check": "PASS",
+      "technique_check": "PASS",
+      "time_check": "PASS",
+      "approved": true,
+      "review_note": "Woks of Life hot-and-sour soup uses tofu, wood-ear mushrooms, bamboo, soy, vinegar, white pepper and cornstarch, egg ribbons; editorial vinegar added off heat remains reasonable variation.",
+      "review_method": "SINGLE_ORIGINAL_SOURCE_REVIEW_WITH_EDITORIAL_COMPARISON",
+      "review_date": "2026-11-19"
     },
     {
       "id": 93,
@@ -1759,10 +1765,13 @@
       "ingredient_excerpt": "4 cups chicken stock ((about 1 liter, organic or homemade preferred!)) / 1/2 teaspoon sesame oil / 3/4 teaspoon salt / 1/8 teaspoon sugar / 1/8 teaspoon white pepper / 1/2 teaspoon turmeric ((Or 5 drops yellow food coloring. Optional, but if you want",
       "method_excerpt": "Bring the chicken stock to a simmer in a medium soup pot. Stir in the sesame oil, salt, sugar, white pepper, and MSG (if using). Add in the turmeric or 5 drops of yellow food coloring, if using. This will give the soup that r",
       "preliminary_basis": "ARCHIVED_SOURCE_EXCERPTS",
-      "ingredient_check": "PENDING_FULL_SINGLE_SOURCE_REVIEW",
-      "technique_check": "PENDING_FULL_SINGLE_SOURCE_REVIEW",
-      "time_check": "PENDING_FULL_SINGLE_SOURCE_REVIEW",
-      "approved": false
+      "ingredient_check": "PASS",
+      "technique_check": "PASS",
+      "time_check": "CONDITIONAL_READINESS",
+      "approved": false,
+      "review_note": "Woks of Life egg drop soup blends slurry into broth before egg ribbons and sesame/scallion finish. Editorial method correct; verify egg fully coagulated before serving.",
+      "review_method": "SINGLE_ORIGINAL_SOURCE_REVIEW_WITH_EDITORIAL_COMPARISON",
+      "review_date": "2026-11-19"
     },
     {
       "id": 94,
@@ -1775,10 +1784,13 @@
       "ingredient_excerpt": "2 pounds pork ribs or pork rib tips ((cut into 1-2-inch/2.5-5cm pieces)) / 5 slices ginger ((⅛-inch thick and smashed)) / 9 cups water ((plus more for soaking and blanching the ribs)) / 1 1/2 pounds winter melon / 1 1/4 teaspoon sea salt ((plus more ",
       "method_excerpt": "Soak the ribs in a bowl of cold water for 1 hour to get rid of blood and impurities. Drain. If you are strapped for time, this step isn’t strictly necessary, as you’ll be blanching them also in the next step. / Add the ribs t",
       "preliminary_basis": "ARCHIVED_SOURCE_EXCERPTS",
-      "ingredient_check": "PENDING_FULL_SINGLE_SOURCE_REVIEW",
-      "technique_check": "PENDING_FULL_SINGLE_SOURCE_REVIEW",
-      "time_check": "PENDING_FULL_SINGLE_SOURCE_REVIEW",
-      "approved": false
+      "ingredient_check": "PASS",
+      "technique_check": "PASS",
+      "time_check": "CONDITIONAL_READINESS",
+      "approved": false,
+      "review_note": "Woks of Life winter melon soup with pork ribs cooks blanched ribs in broth and winter melon until translucent. Editorial ribs 40min may be short for tender meat; verify readiness.",
+      "review_method": "SINGLE_ORIGINAL_SOURCE_REVIEW_WITH_EDITORIAL_COMPARISON",
+      "review_date": "2026-11-19"
     },
     {
       "id": 95,
@@ -1791,10 +1803,13 @@
       "ingredient_excerpt": "3 oz chicken breast / 4 cup water, for boiling / 0.5 carrot / 8 oz unsweetened corn / 8 oz water, for corn blend / 1 egg / 1 tsp cornstarch / 0.5 tsp salt / 1 tbsp water / 6 tsp cornstarch / 2 tbsp water / 1 tsp salt / 0.5 tsp chicken powder / 1 tsp ",
       "method_excerpt": "Cut and dice the chicken breast into small pieces. In my dad's soup, the chicken is so tiny and tender that I forget he even adds it. Once diced, place the chicken into a small bowl for mixing. Add the cornstarch, salt, and w",
       "preliminary_basis": "ARCHIVED_SOURCE_EXCERPTS",
-      "ingredient_check": "PENDING_FULL_SINGLE_SOURCE_REVIEW",
-      "technique_check": "PENDING_FULL_SINGLE_SOURCE_REVIEW",
-      "time_check": "PENDING_FULL_SINGLE_SOURCE_REVIEW",
-      "approved": false
+      "ingredient_check": "PASS",
+      "technique_check": "PASS",
+      "time_check": "PASS",
+      "approved": true,
+      "review_note": "Made With Lau chicken corn soup uses chicken, sweet corn, egg and starch to make silky Cantonese soup. Editorial uses pre-cooked chicken, acceptable adaptation, egg added into simmering broth.",
+      "review_method": "SINGLE_ORIGINAL_SOURCE_REVIEW_WITH_EDITORIAL_COMPARISON",
+      "review_date": "2026-11-19"
     },
     {
       "id": 96,
@@ -1807,10 +1822,13 @@
       "ingredient_excerpt": "1 lb (450 g) catfish filets ((*Footnote 1)) / 1 egg white / 1/2 teaspoon sea salt / 1 tablespoon cornstarch / 1/4 teaspoon white pepper / 1/3 cup dried chili pepper / 4 green onions (, white part sliced into 1/2” (1 cm) pieces, green part thinly slic",
       "method_excerpt": "To marinate the fish / To cook the fish / Finish up the toppings",
       "preliminary_basis": "ARCHIVED_SOURCE_EXCERPTS",
-      "ingredient_check": "PENDING_FULL_SINGLE_SOURCE_REVIEW",
-      "technique_check": "PENDING_FULL_SINGLE_SOURCE_REVIEW",
-      "time_check": "PENDING_FULL_SINGLE_SOURCE_REVIEW",
-      "approved": false
+      "ingredient_check": "PASS",
+      "technique_check": "PASS",
+      "time_check": "CONDITIONAL_READINESS",
+      "approved": false,
+      "review_note": "Omnivore's Cookbook suan cai yu uses thin marinated fish fillets, pickled mustard greens, chilies and fragrant oil. Editorial short 3–5min fish stage must end based on cooked center, not fixed minutes.",
+      "review_method": "SINGLE_ORIGINAL_SOURCE_REVIEW_WITH_EDITORIAL_COMPARISON",
+      "review_date": "2026-11-19"
     },
     {
       "id": 97,
@@ -1823,10 +1841,13 @@
       "ingredient_excerpt": "200g beef flank steak, thinly sliced against the grain / 2 tbsp light soy sauce, plus 1 tbsp for the broth / 1 tbsp Shaoxing wine / 3 tsp cornstarch, divided / 1.2 litres beef stock / 100g firm tofu, cut into thin strips / 15g dried wood ear mushroom",
       "method_excerpt": "Toss the beef with 2 tbsp soy sauce, the Shaoxing wine and 1 tsp cornstarch, then set aside for 15 minutes. The starch coats the meat so it stays silky in the hot broth instead of toughening. / Bring the stock to a simmer in ",
       "preliminary_basis": "ARCHIVED_SOURCE_EXCERPTS",
-      "ingredient_check": "PENDING_FULL_SINGLE_SOURCE_REVIEW",
-      "technique_check": "PENDING_FULL_SINGLE_SOURCE_REVIEW",
-      "time_check": "PENDING_FULL_SINGLE_SOURCE_REVIEW",
-      "approved": false
+      "ingredient_check": "PASS",
+      "technique_check": "PASS",
+      "time_check": "CONDITIONAL_READINESS",
+      "approved": false,
+      "review_note": "AMUSE Henan hulatang uses beef, gluten, wood ear, daylily, vermicelli and white pepper-black vinegar thickening; editorial recipe closely follows. Warning: ensure dried daylily rehydrated and fully cooked.",
+      "review_method": "SINGLE_ORIGINAL_SOURCE_REVIEW_WITH_EDITORIAL_COMPARISON",
+      "review_date": "2026-11-19"
     },
     {
       "id": 98,
@@ -1839,10 +1860,13 @@
       "ingredient_excerpt": "1 kg lamb leg or shoulder, on the bone, in 2–3 pieces; 500 g lamb bones (or the marrow's richer argument) / 1 piece ginger (50 g), smashed; 8 cloves garlic / 1 cinnamon stick, 2 star anise, 1 tsp (2 g) Sichuan peppercorns, 1 tsp (3 g) fennel seed — t",
       "method_excerpt": "The broth's long patience — 2 hours at the rolling milky simmer. The blanched lamb and bones in the clean pot with the ginger, garlic, wine and the spice bundle, covered with the fresh water — brought to the rolling simmer (t",
       "preliminary_basis": "ARCHIVED_SOURCE_EXCERPTS",
-      "ingredient_check": "PENDING_FULL_SINGLE_SOURCE_REVIEW",
-      "technique_check": "PENDING_FULL_SINGLE_SOURCE_REVIEW",
-      "time_check": "PENDING_FULL_SINGLE_SOURCE_REVIEW",
-      "approved": false
+      "ingredient_check": "PASS",
+      "technique_check": "PASS",
+      "time_check": "PASS",
+      "approved": true,
+      "review_note": "Hóng Kitchen yangrou paomo lamb broth, hand-torn hard bread soaked in soup with vermicelli; editorial 2-3h lamb cook and bread pieces compatible, readiness before serving.",
+      "review_method": "SINGLE_ORIGINAL_SOURCE_REVIEW_WITH_EDITORIAL_COMPARISON",
+      "review_date": "2026-11-19"
     },
     {
       "id": 99,
@@ -1855,10 +1879,13 @@
       "ingredient_excerpt": "2 pounds oxtails / 2 tablespoons vegetable oil / 2 large onions / 6 cloves garlic / 3 small tomatoes ((about 12 ounces/340g, roughly chopped)) / 2 tablespoons tomato paste / 10 cups water ((2.4L)) / 2 large carrots ((about 12 ounces/340g, cut into la",
       "method_excerpt": "Rinse 2 pounds of oxtails and pat them very dry. Heat 2 tablespoons of oil in a thick-bottomed soup pot over medium heat to brown the oxtails. / Brown the oxtails lightly on both sides. While that’s happening, slice 2 large o",
       "preliminary_basis": "ARCHIVED_SOURCE_EXCERPTS",
-      "ingredient_check": "PENDING_FULL_SINGLE_SOURCE_REVIEW",
-      "technique_check": "PENDING_FULL_SINGLE_SOURCE_REVIEW",
-      "time_check": "PENDING_FULL_SINGLE_SOURCE_REVIEW",
-      "approved": false
+      "ingredient_check": "PASS",
+      "technique_check": "PASS",
+      "time_check": "CONDITIONAL_READINESS",
+      "approved": false,
+      "review_note": "Woks of Life Shanghai luo song tang tomato-cabbage potato beef soup (Russian-inspired Shanghai variation); editorial uses oxtail which may take longer than 75–90min to soften, check actual tenderness.",
+      "review_method": "SINGLE_ORIGINAL_SOURCE_REVIEW_WITH_EDITORIAL_COMPARISON",
+      "review_date": "2026-11-19"
     },
     {
       "id": 100,
@@ -1871,12 +1898,16 @@
       "ingredient_excerpt": "1½ pounds pork rib tips or ribs ((cut into 2- to 3-inch pieces)) / 5 slices ginger ((⅛-inch thick and smashed)) / 8 cups water / 1 to 2 bunches of watercress ((per your personal preference; each bunch is about 8 ounces)) / 1¼ teaspoon sea salt ((or t",
       "method_excerpt": "First, blanch the ribs. In a large pot, bring 6 cups of water to a boil. Add the pork ribs. Bring the water back up to a simmer, and after 2 minutes, turn off the heat. Drain and wash the ribs clean under running water. This ",
       "preliminary_basis": "ARCHIVED_SOURCE_EXCERPTS",
-      "ingredient_check": "PENDING_FULL_SINGLE_SOURCE_REVIEW",
-      "technique_check": "PENDING_FULL_SINGLE_SOURCE_REVIEW",
-      "time_check": "PENDING_FULL_SINGLE_SOURCE_REVIEW",
-      "approved": false
+      "ingredient_check": "PASS",
+      "technique_check": "PASS",
+      "time_check": "CONDITIONAL_READINESS",
+      "approved": false,
+      "review_note": "Woks of Life Cantonese watercress and pork rib soup uses blanched ribs, red dates and fresh watercress long simmer; editorial sequence with greens near end reasonable, ensure pork cooked to tenderness.",
+      "review_method": "SINGLE_ORIGINAL_SOURCE_REVIEW_WITH_EDITORIAL_COMPARISON",
+      "review_date": "2026-11-19"
     }
   ],
-  "quality_approved": 51,
-  "review_in_progress": 39
+  "quality_approved": 54,
+  "review_in_progress": 46,
+  "policy_summary": "One original recipe per soup selected; all 100 reviewed except #85 blocked at HTTP 429; flags are pending recipe/timer/safety remediation and do not imply publication approval."
 }
