@@ -1,0 +1,4931 @@
+{
+  "schema": "our-evening-photo-baseline-v1",
+  "project": "НАШ ВЕЧЕР",
+  "source_deployment": "dpl_EpUgV9BugX52wcrXkxfLUNWZ32VK",
+  "source_commit": "271188c2fb1471ab4c96393be596bee259251d35",
+  "public_url": "https://snachala-uzhin-preview.vercel.app/",
+  "snapshot_date": "2026-11-19",
+  "caution": "Inventory is an exact version snapshot, NOT proof all images are visually correct. Locks protect only documented approved versions. Do not auto-replace or reapprove items based on this snapshot.",
+  "inventory": [
+    {
+      "path": "assets/recipes-ai/0001-lemon-spinach-pasta.webp",
+      "sha": "43d095530d9df19606475970c07984fb13705e63"
+    },
+    {
+      "path": "assets/recipes-ai/0002-tomato-basil-pasta.webp",
+      "sha": "d262df4cf34a560beb2cf67b3b7e4c503d919d4f"
+    },
+    {
+      "path": "assets/recipes-ai/0003-pepper-steak.webp",
+      "sha": "739ebd7447f3f98f154f9c483cca0de4868c1794"
+    },
+    {
+      "path": "assets/recipes-ai/0004-meatballs.webp",
+      "sha": "b40a256478acd2cbe338a6c7d2a120304f7d3250"
+    },
+    {
+      "path": "assets/recipes-ai/0005-salmon-lemon.webp",
+      "sha": "0377931da4e8e9b7b37af9fbfe29a9e0d6f5587b"
+    },
+    {
+      "path": "assets/recipes-ai/0006-med-fish.webp",
+      "sha": "3f81081c840ef0aa42cb48c0181aab1b0cd47c34"
+    },
+    {
+      "path": "assets/recipes-ai/0007-ratatouille.webp",
+      "sha": "6b8aeff609e6f4ca2b3f936e5444e32d42f8b7ca"
+    },
+    {
+      "path": "assets/recipes-ai/0008-chickpeas.webp",
+      "sha": "2d15db7385aec85e17cf13329863239d26e41da3"
+    },
+    {
+      "path": "assets/recipes-ai/0009-focaccia.webp",
+      "sha": "5568d1a0646aa66c30f64339f29353ab95caeb89"
+    },
+    {
+      "path": "assets/recipes-ai/0010-pancakes.webp",
+      "sha": "367bd80873ecb2d261af0d35936f225d086ad04a"
+    },
+    {
+      "path": "assets/recipes-ai/0011-tomato-soup.webp",
+      "sha": "a91473a9e29b9afe5aef18b2cc47127d104f7275"
+    },
+    {
+      "path": "assets/recipes-ai/0012-ramen.webp",
+      "sha": "3ba84d1e422b1596fbda44d430455f100075fd61"
+    },
+    {
+      "path": "assets/recipes-ai/0013-chocolate-cake.webp",
+      "sha": "ab06cdae7fed38cc3843c659ba6babbdc18c137a"
+    },
+    {
+      "path": "assets/recipes-ai/0014-baked-apples.webp",
+      "sha": "149e2b8a0ceb70227bdcd7e8936ed1fdabdf2eb7"
+    },
+    {
+      "path": "assets/recipes-ai/0015-chicken-lemon-approved-no-wedges.webp",
+      "sha": "97b255296512b1c8522ed3e3b76638e729851f60"
+    },
+    {
+      "path": "assets/recipes-ai/0015-chicken-lemon.webp",
+      "sha": "a2d408f471edaa06e31dac663d3a0475fe6fea7c"
+    },
+    {
+      "path": "assets/recipes-ai/0016-turkey-cutlets.webp",
+      "sha": "1910d0b25d4393e934ef45a9791e3ac353beb1f7"
+    },
+    {
+      "path": "assets/recipes-ai/0017-greek-salad.webp",
+      "sha": "ecd5550a9e54ae76c401a1a566daa18440355155"
+    },
+    {
+      "path": "assets/recipes-ai/0018-tabbouleh.webp",
+      "sha": "e81c1ccf104192b367b7159e4b412aa095ec2446"
+    },
+    {
+      "path": "assets/recipes-ai/0019-shakshuka-regen-20261105.webp",
+      "sha": "acb6a8f5c73adba1ce50dc6594d0c05c94d1873c"
+    },
+    {
+      "path": "assets/recipes-ai/0019-shakshuka.webp",
+      "sha": "a3909398b6665f16f8dd637edcb1823737569f80"
+    },
+    {
+      "path": "assets/recipes-ai/0020-syrniki.webp",
+      "sha": "67107fb663d9ab49fdf0e3a50b20053dc1bf5018"
+    },
+    {
+      "path": "assets/recipes-ai/0021-collection-meat-01-03-regen.webp",
+      "sha": "597e3bf9ddf9cbb684a17933d596fa5dbe265349"
+    },
+    {
+      "path": "assets/recipes-ai/0021-collection-meat-01-03.webp",
+      "sha": "68120e358811672ffa7bc2ba955d57ef0145c1cb"
+    },
+    {
+      "path": "assets/recipes-ai/0022-collection-meat-01-04-regen.webp",
+      "sha": "47553f78028a451dabbc67ad0e7b197db2835bff"
+    },
+    {
+      "path": "assets/recipes-ai/0022-collection-meat-01-04.webp",
+      "sha": "96b2d554470ae11b38a4eebe3225ca65dfd46d23"
+    },
+    {
+      "path": "assets/recipes-ai/0023-collection-meat-01-05-regen.webp",
+      "sha": "dfd7987767ea9ff1433f40aaab1c9ea2324340c7"
+    },
+    {
+      "path": "assets/recipes-ai/0023-collection-meat-01-05.webp",
+      "sha": "e26db2da52f0bc6c04badf00a80483d116bf4872"
+    },
+    {
+      "path": "assets/recipes-ai/0024-collection-meat-01-06-regen.webp",
+      "sha": "ba4038eaf61657036fcb14711a7c929f7115bbc1"
+    },
+    {
+      "path": "assets/recipes-ai/0024-collection-meat-01-06.webp",
+      "sha": "4bd73cf4e9c137c4fd0ac70abc92664baa5dbc21"
+    },
+    {
+      "path": "assets/recipes-ai/0025-collection-meat-01-07.webp",
+      "sha": "b2ceb7427658c2bdb29ec817e12701b934360abc"
+    },
+    {
+      "path": "assets/recipes-ai/0026-collection-meat-01-08-regen.webp",
+      "sha": "579772403290048089ca0f41ff7ba3afebed1e96"
+    },
+    {
+      "path": "assets/recipes-ai/0026-collection-meat-01-08.webp",
+      "sha": "80efbf488cda7af4a4594223799308333203695d"
+    },
+    {
+      "path": "assets/recipes-ai/0027-collection-meat-01-09-plating-20261103.webp",
+      "sha": "ff7fd5b442570bb9170415329ba4d33f5a783426"
+    },
+    {
+      "path": "assets/recipes-ai/0027-collection-meat-01-09-regen.webp",
+      "sha": "4ab8c219eb25dbe5b993f932c15d63389d877310"
+    },
+    {
+      "path": "assets/recipes-ai/0027-collection-meat-01-09.webp",
+      "sha": "ff7fd5b442570bb9170415329ba4d33f5a783426"
+    },
+    {
+      "path": "assets/recipes-ai/0028-collection-meat-01-10-plating-20261103.webp",
+      "sha": "9335e6d801af693db0d2b6156d04c342069949cf"
+    },
+    {
+      "path": "assets/recipes-ai/0028-collection-meat-01-10-regen.webp",
+      "sha": "b160df1b870932e59e02fc73e9dca0d17864e2cc"
+    },
+    {
+      "path": "assets/recipes-ai/0028-collection-meat-01-10.webp",
+      "sha": "b76517712c434f799db7ff6dfc0f6a2ed73969af"
+    },
+    {
+      "path": "assets/recipes-ai/0029-collection-meat-02-01.webp",
+      "sha": "346e06b578dbb81872434a1ffb3596d5a2e29f1b"
+    },
+    {
+      "path": "assets/recipes-ai/0030-collection-meat-02-02-regen.webp",
+      "sha": "d5cfeb4da729269591139b7770b7396e4afad396"
+    },
+    {
+      "path": "assets/recipes-ai/0030-collection-meat-02-02.webp",
+      "sha": "c0f33e03956defa5a540713358c6cf88b4f59542"
+    },
+    {
+      "path": "assets/recipes-ai/0031-collection-meat-02-03-regen.webp",
+      "sha": "d7d0b30ec8adc9d1af1f3af11c43819e03b6e391"
+    },
+    {
+      "path": "assets/recipes-ai/0031-collection-meat-02-03.webp",
+      "sha": "aaca928c29410ecce0bf0aefdafdf6be8ae8c276"
+    },
+    {
+      "path": "assets/recipes-ai/0032-collection-meat-02-04-plating-20261103.webp",
+      "sha": "b440073a7c0008b4cc700bfd515d89d4d4f13e49"
+    },
+    {
+      "path": "assets/recipes-ai/0032-collection-meat-02-04.webp",
+      "sha": "b440073a7c0008b4cc700bfd515d89d4d4f13e49"
+    },
+    {
+      "path": "assets/recipes-ai/0033-collection-meat-02-05-regen.webp",
+      "sha": "3fa491dce74dbe09ff6f2c5887cd54e55173a0af"
+    },
+    {
+      "path": "assets/recipes-ai/0033-collection-meat-02-05.webp",
+      "sha": "02585da67f240e752a3c7c38530cf870c5f8341d"
+    },
+    {
+      "path": "assets/recipes-ai/0034-collection-meat-02-06-regen.webp",
+      "sha": "fa655ce82b1e26a163f8d5491ec83bc62e8f2274"
+    },
+    {
+      "path": "assets/recipes-ai/0034-collection-meat-02-06.webp",
+      "sha": "581b6ef31ad92594e1ad9bb28296f35595cd31c4"
+    },
+    {
+      "path": "assets/recipes-ai/0035-collection-meat-02-07.webp",
+      "sha": "974c27c4e02dddb4f16c69007e3b0f4bfea1ee56"
+    },
+    {
+      "path": "assets/recipes-ai/0036-collection-meat-02-08-regen.webp",
+      "sha": "892ea54131c4078ed6d5b4991d0de444c614a2bd"
+    },
+    {
+      "path": "assets/recipes-ai/0036-collection-meat-02-08.webp",
+      "sha": "c89f94b1f32ab1bbe0d2071d09d310982de4b02b"
+    },
+    {
+      "path": "assets/recipes-ai/0037-collection-meat-02-09-plating-20261103.webp",
+      "sha": "a2c0bcdab7d6e5735e2f5a8224e11d0be79f8240"
+    },
+    {
+      "path": "assets/recipes-ai/0037-collection-meat-02-09.webp",
+      "sha": "a2c0bcdab7d6e5735e2f5a8224e11d0be79f8240"
+    },
+    {
+      "path": "assets/recipes-ai/0038-collection-meat-02-10.webp",
+      "sha": "9511ec3cd193dadaeee2be1e3bd2b0eae5174e28"
+    },
+    {
+      "path": "assets/recipes-ai/0039-collection-meat-03-01.webp",
+      "sha": "a1ff0bda1779a1d5ac41a59855ee0fa3919e78e7"
+    },
+    {
+      "path": "assets/recipes-ai/0040-collection-meat-03-02.webp",
+      "sha": "dae24a50f9dff60d93a0e72fbff7138c87ae4a32"
+    },
+    {
+      "path": "assets/recipes-ai/0041-collection-meat-03-03-regen.webp",
+      "sha": "9334ff6b11e9fd1c59d81b04edc8dc06ff517491"
+    },
+    {
+      "path": "assets/recipes-ai/0041-collection-meat-03-03.webp",
+      "sha": "2a255d4324863eff605d7b9653ed1213ffa2bb85"
+    },
+    {
+      "path": "assets/recipes-ai/0042-collection-meat-03-04.webp",
+      "sha": "f6db703bd943cc5b77a02a38a2c58129992c84e2"
+    },
+    {
+      "path": "assets/recipes-ai/0043-collection-meat-03-05.webp",
+      "sha": "89225c0d38f743da15de309dffaafdb6e3feb63b"
+    },
+    {
+      "path": "assets/recipes-ai/0044-collection-meat-03-06-regen.webp",
+      "sha": "6a7ed1cd1accc2143b15c855683700cf51becfb3"
+    },
+    {
+      "path": "assets/recipes-ai/0044-collection-meat-03-06.webp",
+      "sha": "58e4fe8a90b5d9fd711c1994945cfc6edf43d09c"
+    },
+    {
+      "path": "assets/recipes-ai/0045-collection-meat-03-07.webp",
+      "sha": "5cd124074a878c0e332a981eabcd2081b86afd1f"
+    },
+    {
+      "path": "assets/recipes-ai/0046-collection-meat-03-08.webp",
+      "sha": "78f9dfd0b8a3181d79de4dabca462ef5ee50b186"
+    },
+    {
+      "path": "assets/recipes-ai/0047-collection-meat-03-09.webp",
+      "sha": "125e0b184eb949e96ba727bd6f1cc1ca29a4e8a5"
+    },
+    {
+      "path": "assets/recipes-ai/0048-collection-meat-03-10.webp",
+      "sha": "63d9bf79716f93f08791aa9120de38a935f720ef"
+    },
+    {
+      "path": "assets/recipes-ai/0049-collection-meat-04-01.webp",
+      "sha": "aff0d8e7937371d42561c331d81eccf80efc5efa"
+    },
+    {
+      "path": "assets/recipes-ai/0050-collection-meat-04-02.webp",
+      "sha": "551c2d188089aa456a121ebe4cfc7337d1b10041"
+    },
+    {
+      "path": "assets/recipes-ai/0051-collection-meat-04-03.webp",
+      "sha": "6d05d3da7c1c5a591606e96a972e1e4c64242167"
+    },
+    {
+      "path": "assets/recipes-ai/0052-collection-meat-04-04.webp",
+      "sha": "953b37e303199f545a6272120d5c27334e78f9c1"
+    },
+    {
+      "path": "assets/recipes-ai/0053-collection-meat-04-05.webp",
+      "sha": "db3eef80fe038aba2dc5ecf6501616cddcdfc02f"
+    },
+    {
+      "path": "assets/recipes-ai/0054-collection-meat-04-06.webp",
+      "sha": "19accc4ef402d5170f241f618c7c40cc8da36726"
+    },
+    {
+      "path": "assets/recipes-ai/0055-collection-meat-04-07.webp",
+      "sha": "2899d8a5fc6700b6d4136db0379c23c24803ed36"
+    },
+    {
+      "path": "assets/recipes-ai/0056-collection-meat-04-08.webp",
+      "sha": "2d7c9f3f5be18c5be132179d979a1a587e345f5c"
+    },
+    {
+      "path": "assets/recipes-ai/0057-collection-meat-04-09.webp",
+      "sha": "3ed487925cab4ca7b8da7f57be6203920c092b22"
+    },
+    {
+      "path": "assets/recipes-ai/0058-collection-meat-04-10.webp",
+      "sha": "d0168be1069b51dc923fc462d4b2c9d8dde4e858"
+    },
+    {
+      "path": "assets/recipes-ai/0059-collection-meat-05-01.webp",
+      "sha": "e2b13392b55f15166f30b180f224521804b0f796"
+    },
+    {
+      "path": "assets/recipes-ai/0060-collection-meat-05-02.webp",
+      "sha": "fee3b2dd155434fa9f2774931a7fa1f62354d4a1"
+    },
+    {
+      "path": "assets/recipes-ai/0061-collection-meat-05-03.webp",
+      "sha": "5ec87538fd97a84bcb09c87cc41852622dcc3a24"
+    },
+    {
+      "path": "assets/recipes-ai/0062-collection-meat-05-04.webp",
+      "sha": "c34c4d6768df64c4af28ca2e276a8f5513ca1c3c"
+    },
+    {
+      "path": "assets/recipes-ai/0063-collection-meat-05-05.webp",
+      "sha": "5c81a233fd80c5c6d1ade6c7bda80b6c3f6af993"
+    },
+    {
+      "path": "assets/recipes-ai/0064-collection-meat-05-06.webp",
+      "sha": "625cb10771d9edd244fd83ca43eac2c5d1b35fcb"
+    },
+    {
+      "path": "assets/recipes-ai/0065-collection-meat-05-07.webp",
+      "sha": "24d316b6830684a9cbeeb48123a86f3be3a8e015"
+    },
+    {
+      "path": "assets/recipes-ai/0066-collection-meat-05-08.webp",
+      "sha": "4dbfbbf643abf2cfe5689382603569137d7e8527"
+    },
+    {
+      "path": "assets/recipes-ai/0067-collection-meat-05-09-approved-20261115.webp",
+      "sha": "765f445e78cec60634dd2cf40bc6ec1635e99171"
+    },
+    {
+      "path": "assets/recipes-ai/0067-collection-meat-05-09.webp",
+      "sha": "765f445e78cec60634dd2cf40bc6ec1635e99171"
+    },
+    {
+      "path": "assets/recipes-ai/0068-collection-meat-05-10.webp",
+      "sha": "0d4708285ad4a442fe60103861e541ec083dc20d"
+    },
+    {
+      "path": "assets/recipes-ai/0069-collection-meat-06-01.webp",
+      "sha": "eaf0752f8182230b2e0c68a2f32332410e6431fc"
+    },
+    {
+      "path": "assets/recipes-ai/0070-collection-meat-06-02.webp",
+      "sha": "b0f907329dbc9858012313368cfb7cdca4dd183f"
+    },
+    {
+      "path": "assets/recipes-ai/0071-collection-meat-06-03.webp",
+      "sha": "aff6d0edb07be9c5c5cc90e1b5389f582f6852bb"
+    },
+    {
+      "path": "assets/recipes-ai/0072-collection-meat-06-04.webp",
+      "sha": "22d1a8ebf8b902fea6d2ad9ab035f892209f5b97"
+    },
+    {
+      "path": "assets/recipes-ai/0073-collection-meat-06-05.webp",
+      "sha": "d223b3f5893b61a89325d948da80778708a53ebe"
+    },
+    {
+      "path": "assets/recipes-ai/0074-collection-meat-06-06.webp",
+      "sha": "e0ee92c9e71b06c064ec659cfa3c6e9d36a9caa0"
+    },
+    {
+      "path": "assets/recipes-ai/0075-collection-meat-06-07.webp",
+      "sha": "8c456a41a4b9eae70c2df4897aba2b0c1fb73318"
+    },
+    {
+      "path": "assets/recipes-ai/0076-collection-meat-06-08.webp",
+      "sha": "f088488f6451dcb9fa50cdc5302a9584b04a5a06"
+    },
+    {
+      "path": "assets/recipes-ai/0077-collection-meat-06-09.webp",
+      "sha": "bfeb73cd7101ba4e4c4cd11ffcff5b1e22bad990"
+    },
+    {
+      "path": "assets/recipes-ai/0078-collection-meat-06-10.webp",
+      "sha": "985f395b6549b2132434fe23f2251e97feb61c3e"
+    },
+    {
+      "path": "assets/recipes-ai/0079-collection-meat-07-01.webp",
+      "sha": "95bcbb185e45c59e4ce212b5634e836a15c37af2"
+    },
+    {
+      "path": "assets/recipes-ai/0080-collection-meat-07-02.webp",
+      "sha": "d453168d6f9044f6be0aaa9f0625fa7d1cea1757"
+    },
+    {
+      "path": "assets/recipes-ai/0081-collection-meat-07-03.webp",
+      "sha": "01059dbdc2543dbeea705412764ec2cd9b5732f5"
+    },
+    {
+      "path": "assets/recipes-ai/0082-collection-meat-07-04.webp",
+      "sha": "b51e93ecce774b489ff56b7cba3ee85fb266ead0"
+    },
+    {
+      "path": "assets/recipes-ai/0083-collection-meat-07-05.webp",
+      "sha": "6556d11e26aa557fda2f95ea9110d6f3acfa4b46"
+    },
+    {
+      "path": "assets/recipes-ai/0084-collection-meat-07-06.webp",
+      "sha": "b7bd3c3e91560aa9dd91d3c81d9cf5a8b8c49008"
+    },
+    {
+      "path": "assets/recipes-ai/0085-collection-meat-07-07.webp",
+      "sha": "d9c18db9fa3f0ab642011258b630a5caa544b1e0"
+    },
+    {
+      "path": "assets/recipes-ai/0086-collection-meat-07-08.webp",
+      "sha": "ab56a76d9d1cd51d09207cabdc1ceb12204b7ee8"
+    },
+    {
+      "path": "assets/recipes-ai/0087-collection-meat-07-09.webp",
+      "sha": "d26491bf21b798d80db112c7f7717f18640724d9"
+    },
+    {
+      "path": "assets/recipes-ai/0088-collection-meat-07-10.webp",
+      "sha": "5ac00313cb446ab17d2e4cac40d7e6b78bc2cf40"
+    },
+    {
+      "path": "assets/recipes-ai/0089-collection-meat-08-01.webp",
+      "sha": "af01e81925dfeccd73905ca427315724961ac77f"
+    },
+    {
+      "path": "assets/recipes-ai/0090-collection-meat-08-02.webp",
+      "sha": "6b796f83282d02860508d0061841d5bc1994a702"
+    },
+    {
+      "path": "assets/recipes-ai/0091-collection-meat-08-03.webp",
+      "sha": "31958a10ec8d8c1ed8470100085bb38af8d23903"
+    },
+    {
+      "path": "assets/recipes-ai/0092-collection-meat-08-04.webp",
+      "sha": "a92f83711c7217d98917b7b35f8a7e41426f4a46"
+    },
+    {
+      "path": "assets/recipes-ai/0093-collection-meat-08-05.webp",
+      "sha": "49b591e8f5ad427cc71628fb72a53e2b1312631c"
+    },
+    {
+      "path": "assets/recipes-ai/0094-collection-meat-08-06.webp",
+      "sha": "7fe534d66155c17b5be462cf7ce89e5d33d0dc5a"
+    },
+    {
+      "path": "assets/recipes-ai/0095-collection-meat-08-07.webp",
+      "sha": "4a6d665e9628305c11a79248bc569d83f182742b"
+    },
+    {
+      "path": "assets/recipes-ai/0096-collection-meat-08-08.webp",
+      "sha": "596076a538e2d943479fdbbb5fe21713514a67fd"
+    },
+    {
+      "path": "assets/recipes-ai/0097-collection-meat-08-09.webp",
+      "sha": "0310e5c21fd5e4aabbf18b78011de679f23d0838"
+    },
+    {
+      "path": "assets/recipes-ai/0098-collection-meat-08-10.webp",
+      "sha": "918ad9cef3135935437afbd2e226b6b8dd11b88e"
+    },
+    {
+      "path": "assets/recipes-ai/0099-collection-meat-09-01.webp",
+      "sha": "d6d3315abe073e146e56cb59aa7e1b8d6e0248a4"
+    },
+    {
+      "path": "assets/recipes-ai/0100-collection-meat-09-02.webp",
+      "sha": "a4aea06351de7d3935f237e73b2e836257283a13"
+    },
+    {
+      "path": "assets/recipes-ai/0101-collection-meat-09-03.webp",
+      "sha": "15271e9ac229512a15276a6c9c1055b6f69e11cf"
+    },
+    {
+      "path": "assets/recipes-ai/0102-collection-meat-09-04.webp",
+      "sha": "78f9774ef0798b464d42e20d3fad887991a4dd04"
+    },
+    {
+      "path": "assets/recipes-ai/0103-collection-meat-09-05.webp",
+      "sha": "e9c6e62fc092c3d5ca4679022d42de0bcccb9a8d"
+    },
+    {
+      "path": "assets/recipes-ai/0104-collection-meat-09-06.webp",
+      "sha": "8352a5f23487a43b5de4cafd41d5382c5aacb3df"
+    },
+    {
+      "path": "assets/recipes-ai/0105-collection-meat-09-07.webp",
+      "sha": "0000447a6ea31de1875d9dc9c31696c2a2f4028e"
+    },
+    {
+      "path": "assets/recipes-ai/0106-collection-meat-09-08.webp",
+      "sha": "f511e077c4da00426d8661fd695585fd39be0366"
+    },
+    {
+      "path": "assets/recipes-ai/0107-collection-meat-09-09.webp",
+      "sha": "5cf71761bd36b8ca71f3a1c7fa4b6ea6da25e201"
+    },
+    {
+      "path": "assets/recipes-ai/0108-collection-meat-09-10.webp",
+      "sha": "8be6eebbbaa656719116f54fce435b64b8ac92ee"
+    },
+    {
+      "path": "assets/recipes-ai/0109-collection-meat-10-01.webp",
+      "sha": "90186a0fd5c1ee3d9371e0cee93cffb922b35e0d"
+    },
+    {
+      "path": "assets/recipes-ai/0110-collection-meat-10-02.webp",
+      "sha": "5b6f78583b90766ca4b72100759754e212c1f5a9"
+    },
+    {
+      "path": "assets/recipes-ai/0111-collection-meat-10-03.webp",
+      "sha": "30385c045662099b61406bd076bd6cc094f74955"
+    },
+    {
+      "path": "assets/recipes-ai/0112-collection-meat-10-04.webp",
+      "sha": "ca5d5ae3cf4e4cc5255015645a00f7bb7e47b9dd"
+    },
+    {
+      "path": "assets/recipes-ai/0113-collection-meat-10-05.webp",
+      "sha": "bf7dba19785ebfa27ed960a0f671ca002666b12d"
+    },
+    {
+      "path": "assets/recipes-ai/0114-collection-meat-10-06.webp",
+      "sha": "73f54d526de7f0a0b06821fa51974726574ae57d"
+    },
+    {
+      "path": "assets/recipes-ai/0115-collection-meat-10-07.webp",
+      "sha": "8d4a3345ad71496961b1851055afa80e5b323c9e"
+    },
+    {
+      "path": "assets/recipes-ai/0116-collection-meat-10-08.webp",
+      "sha": "89024d230c6172cba997c79d58ceab8001ab094e"
+    },
+    {
+      "path": "assets/recipes-ai/0117-collection-meat-10-09-plating-20261103.webp",
+      "sha": "02635eebe91bba07232a608c58c16d032da4439b"
+    },
+    {
+      "path": "assets/recipes-ai/0117-collection-meat-10-09.webp",
+      "sha": "66f24a03a8ed0d9daf5863bb638de4c3c8272e78"
+    },
+    {
+      "path": "assets/recipes-ai/0118-collection-meat-10-10-plating-20261103.webp",
+      "sha": "138ae60b95d3bae714fd1d55445383c269cd78af"
+    },
+    {
+      "path": "assets/recipes-ai/0118-collection-meat-10-10.webp",
+      "sha": "138ae60b95d3bae714fd1d55445383c269cd78af"
+    },
+    {
+      "path": "assets/recipes-ai/0119-collection-poultry-01-03-approved-no-citrus-wedges.webp",
+      "sha": "ecc8a406a7ce10fbfc9d44f9e01549ce75833096"
+    },
+    {
+      "path": "assets/recipes-ai/0119-collection-poultry-01-03.webp",
+      "sha": "b4f4523887afd0e384b3653ecea89217adb5f047"
+    },
+    {
+      "path": "assets/recipes-ai/0120-collection-poultry-01-04.webp",
+      "sha": "861c0b6384eb2ade4eea5c843b117da053703b65"
+    },
+    {
+      "path": "assets/recipes-ai/0121-collection-poultry-01-05.webp",
+      "sha": "736616d61cc45ed05598d017bf655fca70c8af5f"
+    },
+    {
+      "path": "assets/recipes-ai/0122-collection-poultry-01-06-approved-no-ginger.webp",
+      "sha": "9c7d6cedd36fa7e7c1edd7d1c8d3dd686be749f6"
+    },
+    {
+      "path": "assets/recipes-ai/0122-collection-poultry-01-06.webp",
+      "sha": "6f687b0b65b9a42dee64cb85843c81094ee9b41f"
+    },
+    {
+      "path": "assets/recipes-ai/0123-collection-poultry-01-07.webp",
+      "sha": "473a6e2b9088336b77027e395aade01ca54e6e98"
+    },
+    {
+      "path": "assets/recipes-ai/0124-collection-poultry-01-08.webp",
+      "sha": "a2a8d5a0ca47c2b59909a1cbd89401166d4c5101"
+    },
+    {
+      "path": "assets/recipes-ai/0125-collection-poultry-01-09-approved-no-whole-garlic.webp",
+      "sha": "0035fcce7d2c55745291c3c11fda3ec71584e212"
+    },
+    {
+      "path": "assets/recipes-ai/0125-collection-poultry-01-09.webp",
+      "sha": "9a76339118911f95ccc60ab91ac50cb132f5863a"
+    },
+    {
+      "path": "assets/recipes-ai/0126-collection-poultry-01-10.webp",
+      "sha": "0b1bfabff32cb09f9efa967d7bcbbbf139ff7767"
+    },
+    {
+      "path": "assets/recipes-ai/0127-collection-poultry-02-01-approved-no-lemon-wedges.webp",
+      "sha": "ffcfb15ec99ce0d90d670f9c83beeb0e6783dc34"
+    },
+    {
+      "path": "assets/recipes-ai/0127-collection-poultry-02-01.webp",
+      "sha": "56f0b12581d55716d6d63685e69bec325fa8b34b"
+    },
+    {
+      "path": "assets/recipes-ai/0128-collection-poultry-02-02-approved-honey-mustard.webp",
+      "sha": "59225ad9560f91ca6811fb012f12844e8fbcb171"
+    },
+    {
+      "path": "assets/recipes-ai/0128-collection-poultry-02-02.webp",
+      "sha": "c3c989efb38192156c9718dbc33d8755d2615f1d"
+    },
+    {
+      "path": "assets/recipes-ai/0129-collection-poultry-02-03-approved-no-citrus-no-coconut.webp",
+      "sha": "763d8b1d1b93294988739cad57297493ab9494b0"
+    },
+    {
+      "path": "assets/recipes-ai/0129-collection-poultry-02-03.webp",
+      "sha": "e96719a4f5cb130d49625ba2272532d6bd94c80d"
+    },
+    {
+      "path": "assets/recipes-ai/0130-collection-poultry-02-04.webp",
+      "sha": "84db0cfcd37d17844355f35483dd787cf090cdce"
+    },
+    {
+      "path": "assets/recipes-ai/0131-collection-poultry-02-05.webp",
+      "sha": "72d30caa7c1f9c89ca56cc8025d236bda7ee5134"
+    },
+    {
+      "path": "assets/recipes-ai/0132-collection-poultry-02-06-approved-no-ginger.webp",
+      "sha": "b72e36905c233dd6f63566af2b65104788159da1"
+    },
+    {
+      "path": "assets/recipes-ai/0132-collection-poultry-02-06.webp",
+      "sha": "b83f5b2a6c304cd9a33fe2b65bb64e18c6fd12c6"
+    },
+    {
+      "path": "assets/recipes-ai/0133-collection-poultry-02-07.webp",
+      "sha": "09e71eca7669d999779183d75e42b586653b9d4d"
+    },
+    {
+      "path": "assets/recipes-ai/0134-collection-poultry-02-08.webp",
+      "sha": "f25dd44b1678f71682bfe238c0e500b4f6698d10"
+    },
+    {
+      "path": "assets/recipes-ai/0135-collection-poultry-02-09-approved-no-whole-garlic.webp",
+      "sha": "26876442942153206f003d10ea64d625aa9e50af"
+    },
+    {
+      "path": "assets/recipes-ai/0135-collection-poultry-02-09.webp",
+      "sha": "9a8a41e034881f3b88bfe24a74e52396822d6ae7"
+    },
+    {
+      "path": "assets/recipes-ai/0136-collection-poultry-02-10-approved-no-orange-wedges.webp",
+      "sha": "d62d0704617952f7125c9d0ff545f34c6832178c"
+    },
+    {
+      "path": "assets/recipes-ai/0136-collection-poultry-02-10.webp",
+      "sha": "a726cd144924068ff0b994dcf81abf048a5a1a6c"
+    },
+    {
+      "path": "assets/recipes-ai/0137-collection-poultry-03-01-approved-no-lemon-wedges.webp",
+      "sha": "c2dcd75899bc9f59b975619a332dcd5b359605ac"
+    },
+    {
+      "path": "assets/recipes-ai/0137-collection-poultry-03-01.webp",
+      "sha": "28e2e91ea58b95f716b7796275f25099e7d0dec7"
+    },
+    {
+      "path": "assets/recipes-ai/0138-collection-poultry-03-02-approved-honey-mustard.webp",
+      "sha": "44c3d369a85506cb7b5464fdeda955976bb2f0a5"
+    },
+    {
+      "path": "assets/recipes-ai/0138-collection-poultry-03-02.webp",
+      "sha": "ef08b3570818eb814433a9de51cdcda3fe1c7705"
+    },
+    {
+      "path": "assets/recipes-ai/0139-collection-poultry-03-03-approved-no-lime-coconut.webp",
+      "sha": "dc0507d896aa0e6db797a87c8ee6ba355097b14c"
+    },
+    {
+      "path": "assets/recipes-ai/0139-collection-poultry-03-03.webp",
+      "sha": "258aa55b5ccfae9d89fa9e026fe1c87d240c30ed"
+    },
+    {
+      "path": "assets/recipes-ai/0140-collection-poultry-03-04-approved-paprika-sweet-pepper.webp",
+      "sha": "fe562dfd6cba921d29cb61a63e78a5aa73c32d85"
+    },
+    {
+      "path": "assets/recipes-ai/0140-collection-poultry-03-04.webp",
+      "sha": "515bd121e2319cdad609d88d6484c2087d63d23f"
+    },
+    {
+      "path": "assets/recipes-ai/0141-collection-poultry-03-05-approved-tomatoes-oregano.webp",
+      "sha": "f3e59587b1114e3cfc98a8a18f26759dde502434"
+    },
+    {
+      "path": "assets/recipes-ai/0141-collection-poultry-03-05.webp",
+      "sha": "5798389ff2c32564c1739a529357444f53bca525"
+    },
+    {
+      "path": "assets/recipes-ai/0142-collection-poultry-03-06-approved-no-whole-ginger.webp",
+      "sha": "d4042878eda6d6ac902e1aedbdb36dc7fb3940a1"
+    },
+    {
+      "path": "assets/recipes-ai/0142-collection-poultry-03-06.webp",
+      "sha": "244b1447da83e833785605d03031da549cc612fa"
+    },
+    {
+      "path": "assets/recipes-ai/0143-collection-poultry-03-07-approved-mushrooms-cream.webp",
+      "sha": "d5655a6f307654a47a108850bbd1555700d7b10c"
+    },
+    {
+      "path": "assets/recipes-ai/0143-collection-poultry-03-07.webp",
+      "sha": "59562215a362afe59aff6e096848f409ee8c83fe"
+    },
+    {
+      "path": "assets/recipes-ai/0144-collection-poultry-03-08-approved-pesto-sundried-tomatoes.webp",
+      "sha": "a2bc32a355b580960cd3dd05e0e7d6d3266976c1"
+    },
+    {
+      "path": "assets/recipes-ai/0144-collection-poultry-03-08.webp",
+      "sha": "5e5c892aa19d04910288ed56b5fa26875fa0e0d9"
+    },
+    {
+      "path": "assets/recipes-ai/0145-collection-poultry-03-09-approved-no-whole-garlic.webp",
+      "sha": "a19a98a5ebf908258a500227eec1f7d327241199"
+    },
+    {
+      "path": "assets/recipes-ai/0145-collection-poultry-03-09.webp",
+      "sha": "eac659d2e4358a66ebfec6170f2cd379c4c09274"
+    },
+    {
+      "path": "assets/recipes-ai/0146-collection-poultry-03-10-approved-orange-thyme.webp",
+      "sha": "6b646043e4de3de254a56d0ed39b7ef8f6c5313a"
+    },
+    {
+      "path": "assets/recipes-ai/0146-collection-poultry-03-10.webp",
+      "sha": "294a4e915018fe401ab86a74ec47445441898880"
+    },
+    {
+      "path": "assets/recipes-ai/0147-collection-poultry-04-01-approved.webp",
+      "sha": "b4a3fb3721829ac306c688d7dc5f8dda25885626"
+    },
+    {
+      "path": "assets/recipes-ai/0147-collection-poultry-04-01-no-eggs-regen.webp",
+      "sha": "06dc4be7fa74df096a57e048b78e9b3e63e95d13"
+    },
+    {
+      "path": "assets/recipes-ai/0147-collection-poultry-04-01.webp",
+      "sha": "761ec5e23344f2fbdf3663e24e288c292eb8cb6d"
+    },
+    {
+      "path": "assets/recipes-ai/0148-collection-poultry-04-02-approved.webp",
+      "sha": "1b4ea59e70896865fa38c4f377cb39aac68e9aa4"
+    },
+    {
+      "path": "assets/recipes-ai/0148-collection-poultry-04-02-no-eggs-regen.webp",
+      "sha": "605c76d0c1dd3f1b7098551c31d5c539b8f9320b"
+    },
+    {
+      "path": "assets/recipes-ai/0148-collection-poultry-04-02.webp",
+      "sha": "5c2314420d71bf04113ea9649bcf2cd77a833e6e"
+    },
+    {
+      "path": "assets/recipes-ai/0149-collection-poultry-04-03-approved.webp",
+      "sha": "650a82b756e41a3a67767dc2a5f86244d2902562"
+    },
+    {
+      "path": "assets/recipes-ai/0149-collection-poultry-04-03-no-eggs-regen.webp",
+      "sha": "f6756da4b68a112bfc8b17657f291e4b8d2ed410"
+    },
+    {
+      "path": "assets/recipes-ai/0149-collection-poultry-04-03.webp",
+      "sha": "1715214176e3b9159171224fcf4b1d4e0b778e2c"
+    },
+    {
+      "path": "assets/recipes-ai/0150-collection-poultry-04-04-approved.webp",
+      "sha": "65da0884487c7fdd58035d6140cca08f3c8e68a4"
+    },
+    {
+      "path": "assets/recipes-ai/0150-collection-poultry-04-04-no-eggs-regen.webp",
+      "sha": "f32bea1becaf7d5c96442e7edc1be7e848c3ad03"
+    },
+    {
+      "path": "assets/recipes-ai/0150-collection-poultry-04-04.webp",
+      "sha": "b9939ba1df45216524795a903729e827a88dbc59"
+    },
+    {
+      "path": "assets/recipes-ai/0151-collection-poultry-04-05-approved.webp",
+      "sha": "71bd314579482c027683a30348f66836fcb457bc"
+    },
+    {
+      "path": "assets/recipes-ai/0151-collection-poultry-04-05-no-eggs-regen.webp",
+      "sha": "eef5b4af3148ddc80cb76f1d77f369decaa3ccad"
+    },
+    {
+      "path": "assets/recipes-ai/0151-collection-poultry-04-05.webp",
+      "sha": "442a881193d4fba45c092740b51c63d64a852411"
+    },
+    {
+      "path": "assets/recipes-ai/0152-collection-poultry-04-06-approved.webp",
+      "sha": "e4689b823d0de285331ada9a3262c61fbe7726dd"
+    },
+    {
+      "path": "assets/recipes-ai/0152-collection-poultry-04-06-no-eggs-regen.webp",
+      "sha": "72621c1dafc803ac5c6e7b989dfa22b00cbbb418"
+    },
+    {
+      "path": "assets/recipes-ai/0152-collection-poultry-04-06.webp",
+      "sha": "0ce5b12ed8dee5b656e82117a8a55785fb2772b2"
+    },
+    {
+      "path": "assets/recipes-ai/0153-collection-poultry-04-07-approved.webp",
+      "sha": "ab8bbf6eebec70fa41c5f00d274e45930a054fd3"
+    },
+    {
+      "path": "assets/recipes-ai/0153-collection-poultry-04-07-no-eggs-regen.webp",
+      "sha": "bffe4c9d7302bfbc0097e306ff55a8d7680b099b"
+    },
+    {
+      "path": "assets/recipes-ai/0153-collection-poultry-04-07.webp",
+      "sha": "e5d9e20464a5436fd884688fba4b0fbaa8fccb77"
+    },
+    {
+      "path": "assets/recipes-ai/0154-collection-poultry-04-08-approved.webp",
+      "sha": "bbae82257887c669ba3108ae7c0195c8a882dace"
+    },
+    {
+      "path": "assets/recipes-ai/0154-collection-poultry-04-08-no-eggs-regen.webp",
+      "sha": "53a8bbdf1eadb07ffcd0e79d3e5189808723e30f"
+    },
+    {
+      "path": "assets/recipes-ai/0154-collection-poultry-04-08.webp",
+      "sha": "aa60f2d74b1839dd6ef99758edc3a144f42b6a52"
+    },
+    {
+      "path": "assets/recipes-ai/0155-collection-poultry-04-09-approved.webp",
+      "sha": "3f5c4f1774b119bde01236199a5c1bb3619e7744"
+    },
+    {
+      "path": "assets/recipes-ai/0155-collection-poultry-04-09-no-eggs-regen.webp",
+      "sha": "260eaeb39b03f13d1b31802205024feb1fc14438"
+    },
+    {
+      "path": "assets/recipes-ai/0155-collection-poultry-04-09.webp",
+      "sha": "722f7efd8a988234e29f07e2e434c028786f4827"
+    },
+    {
+      "path": "assets/recipes-ai/0156-collection-poultry-04-10-approved.webp",
+      "sha": "dcebd3c4317dd333c2ee3f0c415762e97cb8bb35"
+    },
+    {
+      "path": "assets/recipes-ai/0156-collection-poultry-04-10-no-eggs-regen.webp",
+      "sha": "8d756ad57e5a4eac008521e41230bf5fdcaa83b1"
+    },
+    {
+      "path": "assets/recipes-ai/0156-collection-poultry-04-10.webp",
+      "sha": "d931e2c5edaba61fa248088827863beef7baabba"
+    },
+    {
+      "path": "assets/recipes-ai/0157-collection-poultry-05-01-approved.webp",
+      "sha": "04456334a6208b927b9cd361f49695e670a4766e"
+    },
+    {
+      "path": "assets/recipes-ai/0157-collection-poultry-05-01.webp",
+      "sha": "99cbc77b402adc34ae56564160b7e40d62846da2"
+    },
+    {
+      "path": "assets/recipes-ai/0158-collection-poultry-05-02-approved.webp",
+      "sha": "73b326e133394dc01a1a11e3f4880c9ca9d46232"
+    },
+    {
+      "path": "assets/recipes-ai/0158-collection-poultry-05-02.webp",
+      "sha": "a68da05ad25a0415b692df17a477fecb367bf671"
+    },
+    {
+      "path": "assets/recipes-ai/0159-collection-poultry-05-03-approved.webp",
+      "sha": "da9e29daff8d30111d6858386e0ff43ad60eb633"
+    },
+    {
+      "path": "assets/recipes-ai/0159-collection-poultry-05-03.webp",
+      "sha": "eb09f65f4fc99e30880a68849ca0c616315d3b59"
+    },
+    {
+      "path": "assets/recipes-ai/0160-collection-poultry-05-04-approved.webp",
+      "sha": "8aeb27640edc7b4a64d12bcd2e89b4f1e2ef53e2"
+    },
+    {
+      "path": "assets/recipes-ai/0160-collection-poultry-05-04.webp",
+      "sha": "3b7ec41262475e37dc99d984df73ffc88f895c26"
+    },
+    {
+      "path": "assets/recipes-ai/0161-collection-poultry-05-05-approved.webp",
+      "sha": "8f1713b947805edffa1a238694eab8dc37e48064"
+    },
+    {
+      "path": "assets/recipes-ai/0161-collection-poultry-05-05.webp",
+      "sha": "c481baf6c875d5cb63b5bc469066ed9ee23f2f4b"
+    },
+    {
+      "path": "assets/recipes-ai/0162-collection-poultry-05-06-approved.webp",
+      "sha": "1a799fe1798c585df8ad8abfcfb9cf2f1f0be335"
+    },
+    {
+      "path": "assets/recipes-ai/0162-collection-poultry-05-06.webp",
+      "sha": "bad99de1d870a647d771a1073d24e5f3da94aacb"
+    },
+    {
+      "path": "assets/recipes-ai/0163-collection-poultry-05-07-approved.webp",
+      "sha": "f617ee05a2d8fa5b7bdf372d11b6d2ad72854ff4"
+    },
+    {
+      "path": "assets/recipes-ai/0163-collection-poultry-05-07.webp",
+      "sha": "3860ede0487fd91a957ee7eb888b170fa5150292"
+    },
+    {
+      "path": "assets/recipes-ai/0164-collection-poultry-05-08-approved.webp",
+      "sha": "2e28625eac10a5d7f273bbbaf090f77710920959"
+    },
+    {
+      "path": "assets/recipes-ai/0164-collection-poultry-05-08.webp",
+      "sha": "abf7bd3af80460f5976d4be707bd97ff5d9f52ff"
+    },
+    {
+      "path": "assets/recipes-ai/0165-collection-poultry-05-09-approved.webp",
+      "sha": "8fba0d84214903476e7568d557638cd3d35b7bf9"
+    },
+    {
+      "path": "assets/recipes-ai/0165-collection-poultry-05-09.webp",
+      "sha": "8a8021fcd215b61572ab8f86828aace6cb95e57b"
+    },
+    {
+      "path": "assets/recipes-ai/0166-collection-poultry-05-10-approved.webp",
+      "sha": "bfeb71b893e23ec48a59f91c152e9d6c6e82549a"
+    },
+    {
+      "path": "assets/recipes-ai/0166-collection-poultry-05-10.webp",
+      "sha": "7d8a9618a9ab27ca88e87a86c984f9b327c12c97"
+    },
+    {
+      "path": "assets/recipes-ai/0167-collection-poultry-06-01-approved.webp",
+      "sha": "6e585d405d75e0ce14766bc5bc31ba333e66b9de"
+    },
+    {
+      "path": "assets/recipes-ai/0167-collection-poultry-06-01.webp",
+      "sha": "096c33f7af758bd73374b3f205b15625130af657"
+    },
+    {
+      "path": "assets/recipes-ai/0168-collection-poultry-06-02-approved.webp",
+      "sha": "1781dfe772d982d809e5f62820509249c7c43640"
+    },
+    {
+      "path": "assets/recipes-ai/0168-collection-poultry-06-02-no-eggs-regen.webp",
+      "sha": "6da2e9382e2995131f73555805e78c7a516c98a3"
+    },
+    {
+      "path": "assets/recipes-ai/0168-collection-poultry-06-02.webp",
+      "sha": "970ca9072d26fcd2f99fa17a26f3f00130ac6027"
+    },
+    {
+      "path": "assets/recipes-ai/0169-collection-poultry-06-03-approved.webp",
+      "sha": "988cbf9b523ca217382458f25f84af77ff792493"
+    },
+    {
+      "path": "assets/recipes-ai/0169-collection-poultry-06-03-no-eggs-regen.webp",
+      "sha": "4e8352b565e4687355b47517722bc758af221fd2"
+    },
+    {
+      "path": "assets/recipes-ai/0169-collection-poultry-06-03.webp",
+      "sha": "4bc30f5bb18d721fbcd23d2e3bf6fcf34852c710"
+    },
+    {
+      "path": "assets/recipes-ai/0170-collection-poultry-06-04-approved.webp",
+      "sha": "7be2849617ffa8bcce32c3853e8674c0cf5291ca"
+    },
+    {
+      "path": "assets/recipes-ai/0170-collection-poultry-06-04.webp",
+      "sha": "9120c8a6f350ea9528e8b17a62abdd1d2990a962"
+    },
+    {
+      "path": "assets/recipes-ai/0171-collection-poultry-06-05-approved.webp",
+      "sha": "07a0fad96c87e46bfeb714933ff84a7d4dfeabe4"
+    },
+    {
+      "path": "assets/recipes-ai/0171-collection-poultry-06-05.webp",
+      "sha": "34a57dc061ab577b0e639e35c118445774a96442"
+    },
+    {
+      "path": "assets/recipes-ai/0172-collection-poultry-06-06-approved.webp",
+      "sha": "1c82e7265a6bb44597b815368f63b20f87fe3ac8"
+    },
+    {
+      "path": "assets/recipes-ai/0172-collection-poultry-06-06.webp",
+      "sha": "59b72db4b14451a13fe1b2f6e9017d213bbbd7b1"
+    },
+    {
+      "path": "assets/recipes-ai/0173-collection-poultry-06-07-approved.webp",
+      "sha": "84556b2fc87b504801319971ab276a6363fe057d"
+    },
+    {
+      "path": "assets/recipes-ai/0173-collection-poultry-06-07-no-eggs-regen.webp",
+      "sha": "54846b0b4d3102a317cbfddae1bca86251172637"
+    },
+    {
+      "path": "assets/recipes-ai/0173-collection-poultry-06-07.webp",
+      "sha": "0cd0134dc82cdcb1ab42f435bfc406b0382818be"
+    },
+    {
+      "path": "assets/recipes-ai/0174-collection-poultry-06-08-approved.webp",
+      "sha": "3710bb50f233ab75e0e5d11412395fc140513ddf"
+    },
+    {
+      "path": "assets/recipes-ai/0174-collection-poultry-06-08.webp",
+      "sha": "63ab6b00c1dc05c61702a98cf362fa4797eeb195"
+    },
+    {
+      "path": "assets/recipes-ai/0175-collection-poultry-06-09-approved.webp",
+      "sha": "f9bbae6a0a128d0513fa005ab5ca9bc14710f525"
+    },
+    {
+      "path": "assets/recipes-ai/0175-collection-poultry-06-09.webp",
+      "sha": "cd4b0b552ada055e4c8949ca5c1fc72a0befc05e"
+    },
+    {
+      "path": "assets/recipes-ai/0176-collection-poultry-06-10-approved.webp",
+      "sha": "9e499019e237110f468db75f7a4d77a7a7ad7dc8"
+    },
+    {
+      "path": "assets/recipes-ai/0176-collection-poultry-06-10-no-eggs-regen.webp",
+      "sha": "d4295b2881c7551d0b5dfb2fa87aa21f09289980"
+    },
+    {
+      "path": "assets/recipes-ai/0176-collection-poultry-06-10.webp",
+      "sha": "474c36af5a61abe2c377caec8ec295ee4e964834"
+    },
+    {
+      "path": "assets/recipes-ai/0177-collection-poultry-07-01-approved.webp",
+      "sha": "ae10591536d8ed89d1e7b2d4ad3d9e0d9045f8de"
+    },
+    {
+      "path": "assets/recipes-ai/0177-collection-poultry-07-01.webp",
+      "sha": "3935834ad657b2c511cd2af99f97a11d60584388"
+    },
+    {
+      "path": "assets/recipes-ai/0178-collection-poultry-07-02-approved.webp",
+      "sha": "484d63decbd71ef502104ebb03260aed5fbc35e1"
+    },
+    {
+      "path": "assets/recipes-ai/0178-collection-poultry-07-02.webp",
+      "sha": "7e17e1e2e9297a499b092af8cbce1cebf8e8803c"
+    },
+    {
+      "path": "assets/recipes-ai/0179-collection-poultry-07-03-approved.webp",
+      "sha": "468184cc0270b0edad0e445668e12b06d0a42019"
+    },
+    {
+      "path": "assets/recipes-ai/0179-collection-poultry-07-03.webp",
+      "sha": "453fd46c19e6acc813252242be72053721fe40d1"
+    },
+    {
+      "path": "assets/recipes-ai/0180-collection-poultry-07-04-approved.webp",
+      "sha": "3a4b37c79cb26d02cf8ba744bd6c037f946d8964"
+    },
+    {
+      "path": "assets/recipes-ai/0180-collection-poultry-07-04.webp",
+      "sha": "f076c405c6e3377dac57ea113024ea11d767534b"
+    },
+    {
+      "path": "assets/recipes-ai/0181-collection-poultry-07-05-approved.webp",
+      "sha": "29ff2a6820196f47defea1dd767150f784731bd2"
+    },
+    {
+      "path": "assets/recipes-ai/0181-collection-poultry-07-05.webp",
+      "sha": "9cf61842d8c1ea0898579c5188669f768ef62e8c"
+    },
+    {
+      "path": "assets/recipes-ai/0182-collection-poultry-07-06-approved.webp",
+      "sha": "2384cc55f7ffef847f15ae24f14437b935574637"
+    },
+    {
+      "path": "assets/recipes-ai/0182-collection-poultry-07-06.webp",
+      "sha": "a0d58d3fba525cc9fd84a722e796eed17e46ff51"
+    },
+    {
+      "path": "assets/recipes-ai/0183-collection-poultry-07-07-approved.webp",
+      "sha": "47287df33fb810531f18dffbfbbbe0bac66eef15"
+    },
+    {
+      "path": "assets/recipes-ai/0183-collection-poultry-07-07.webp",
+      "sha": "94f449f40e829b4c2bad38d07152724394d796f2"
+    },
+    {
+      "path": "assets/recipes-ai/0184-collection-poultry-07-08-approved.webp",
+      "sha": "e813857fe70da7be3475da8d4827e6dd12f9add4"
+    },
+    {
+      "path": "assets/recipes-ai/0184-collection-poultry-07-08.webp",
+      "sha": "c3931dc014be19a6f50aac7b97058f69fdf0d250"
+    },
+    {
+      "path": "assets/recipes-ai/0185-collection-poultry-07-09-approved.webp",
+      "sha": "48093999455fd60b2b86415da01281c6e8b506a7"
+    },
+    {
+      "path": "assets/recipes-ai/0185-collection-poultry-07-09.webp",
+      "sha": "6b5776575dd7b1f1dc42aec53cf47253bdf2b8d3"
+    },
+    {
+      "path": "assets/recipes-ai/0186-collection-poultry-07-10-approved.webp",
+      "sha": "e2a17dab3afbeb776f09d19b5a4f6d04426d2a11"
+    },
+    {
+      "path": "assets/recipes-ai/0186-collection-poultry-07-10.webp",
+      "sha": "fe79928658aae7bbcd8509205976a05876c8e62d"
+    },
+    {
+      "path": "assets/recipes-ai/0187-collection-poultry-08-01-approved.webp",
+      "sha": "fc0eba2b4e8c8ca1eba20f13c925f70657bd85d8"
+    },
+    {
+      "path": "assets/recipes-ai/0187-collection-poultry-08-01.webp",
+      "sha": "a6418a244dc92af9e6e8271653f95abf19d73598"
+    },
+    {
+      "path": "assets/recipes-ai/0188-collection-poultry-08-02-approved.webp",
+      "sha": "434bf977d415d1e0b3c0547f648320ce0fdfb359"
+    },
+    {
+      "path": "assets/recipes-ai/0188-collection-poultry-08-02.webp",
+      "sha": "96ab3f6e63f4099736d437e9601af148b2a5c6a0"
+    },
+    {
+      "path": "assets/recipes-ai/0189-collection-poultry-08-03-approved.webp",
+      "sha": "3494ff4f841145496b7b098135a19ddb19ed708e"
+    },
+    {
+      "path": "assets/recipes-ai/0189-collection-poultry-08-03.webp",
+      "sha": "e82bda46f9409bc2347bf974f4de9e6d5384d4d8"
+    },
+    {
+      "path": "assets/recipes-ai/0190-collection-poultry-08-04-approved.webp",
+      "sha": "faa6cba3875950b1171bb8e1bb58a73f0613edd7"
+    },
+    {
+      "path": "assets/recipes-ai/0190-collection-poultry-08-04.webp",
+      "sha": "1b7e531bc17c7d1bc8ee3d5d67f351ee29b21432"
+    },
+    {
+      "path": "assets/recipes-ai/0191-collection-poultry-08-05-approved.webp",
+      "sha": "b08fd439dd96f2fe5c4a183724099a8eef7e7696"
+    },
+    {
+      "path": "assets/recipes-ai/0191-collection-poultry-08-05.webp",
+      "sha": "bf221f125f49442562a3dcbe04ed8bf265a63c90"
+    },
+    {
+      "path": "assets/recipes-ai/0192-collection-poultry-08-06-approved.webp",
+      "sha": "de276bc62373440290eeba74ecc687142b867ae0"
+    },
+    {
+      "path": "assets/recipes-ai/0192-collection-poultry-08-06.webp",
+      "sha": "7af1faac1431be1147cf93238f33f1de0fe1de2c"
+    },
+    {
+      "path": "assets/recipes-ai/0193-collection-poultry-08-07-approved.webp",
+      "sha": "59b6bd36665baef18ad255ce86df3c66d78f14dd"
+    },
+    {
+      "path": "assets/recipes-ai/0193-collection-poultry-08-07.webp",
+      "sha": "3ac7c2def9b588c2c035d1e5ec6431050b48bb00"
+    },
+    {
+      "path": "assets/recipes-ai/0194-collection-poultry-08-08-approved.webp",
+      "sha": "981d7c2237e06ddd0048bee627534c1bfcf1bc40"
+    },
+    {
+      "path": "assets/recipes-ai/0194-collection-poultry-08-08.webp",
+      "sha": "5272074273728d05a5983a2d05db49610cd1333c"
+    },
+    {
+      "path": "assets/recipes-ai/0195-collection-poultry-08-09-approved.webp",
+      "sha": "27a83dddeb8885ac21ba3f5aad85931929e51b40"
+    },
+    {
+      "path": "assets/recipes-ai/0195-collection-poultry-08-09.webp",
+      "sha": "18a6ddd2356a920f9d6984b73cbf0a34bd78b22c"
+    },
+    {
+      "path": "assets/recipes-ai/0196-collection-poultry-08-10-approved.webp",
+      "sha": "738a6713adca7225d99d222dc0148b89e885150d"
+    },
+    {
+      "path": "assets/recipes-ai/0196-collection-poultry-08-10.webp",
+      "sha": "f25e104f52826bcf1c16fb14a507793c99d34980"
+    },
+    {
+      "path": "assets/recipes-ai/0197-collection-poultry-09-01-approved.webp",
+      "sha": "2f797a88fffecff226177e7e1d777f9553ba03b0"
+    },
+    {
+      "path": "assets/recipes-ai/0197-collection-poultry-09-01.webp",
+      "sha": "dd91aca29f959242fb8fcf9bd024dedd36028cba"
+    },
+    {
+      "path": "assets/recipes-ai/0198-collection-poultry-09-02-approved.webp",
+      "sha": "e958a64228fdeba0228269ed53ee4001eb4988fe"
+    },
+    {
+      "path": "assets/recipes-ai/0198-collection-poultry-09-02.webp",
+      "sha": "42e9f7e67bfd64be14b168c9a26da1901d8698a4"
+    },
+    {
+      "path": "assets/recipes-ai/0199-collection-poultry-09-03-approved.webp",
+      "sha": "85b0a7799e5729cd9fb6a7132ae58ddc6ae61fc6"
+    },
+    {
+      "path": "assets/recipes-ai/0199-collection-poultry-09-03.webp",
+      "sha": "5a28c7e1bef8694144d990662cb5d86d8f63a932"
+    },
+    {
+      "path": "assets/recipes-ai/0200-collection-poultry-09-04-approved.webp",
+      "sha": "cd0a156c89b83aa8c7ac3a56081660c37c333f0c"
+    },
+    {
+      "path": "assets/recipes-ai/0200-collection-poultry-09-04.webp",
+      "sha": "dfa1d1b180f902d06ef8f4c422937a2e95e4398d"
+    },
+    {
+      "path": "assets/recipes-ai/0201-collection-poultry-09-05-approved.webp",
+      "sha": "ea82c8f2b44f8bee925cf7d75d84f1a3d87ff01b"
+    },
+    {
+      "path": "assets/recipes-ai/0201-collection-poultry-09-05.webp",
+      "sha": "8fa22099d2d49784ff09fd431b0867429bfa2501"
+    },
+    {
+      "path": "assets/recipes-ai/0202-collection-poultry-09-06-approved.webp",
+      "sha": "716cba8c72cdb162a44b726078e85763feb28cef"
+    },
+    {
+      "path": "assets/recipes-ai/0202-collection-poultry-09-06.webp",
+      "sha": "4f35687930dcab44157ab1ca8dcfb88911dacf3a"
+    },
+    {
+      "path": "assets/recipes-ai/0203-collection-poultry-09-07-approved.webp",
+      "sha": "614712246cd06f199b65e0032fc98b5d74041796"
+    },
+    {
+      "path": "assets/recipes-ai/0203-collection-poultry-09-07.webp",
+      "sha": "c7991c52d80cbad6b2c31617e4d07ae17f31fcdb"
+    },
+    {
+      "path": "assets/recipes-ai/0204-collection-poultry-09-08-approved.webp",
+      "sha": "76c3ce379aaaf3caee4db3f0023b5f3e31a08a99"
+    },
+    {
+      "path": "assets/recipes-ai/0204-collection-poultry-09-08.webp",
+      "sha": "d14244bb1fff7fddf85e6fae52b5e9adbbca0857"
+    },
+    {
+      "path": "assets/recipes-ai/0205-collection-poultry-09-09-approved.webp",
+      "sha": "44c254835ab68d3b34b2fb667103c5edaeadb9dc"
+    },
+    {
+      "path": "assets/recipes-ai/0205-collection-poultry-09-09.webp",
+      "sha": "8b33162c3c3e848dbdd1f393a5c0917790ab1254"
+    },
+    {
+      "path": "assets/recipes-ai/0206-collection-poultry-09-10-approved.webp",
+      "sha": "07fc53ad1593f644974107260c2c0187b128f805"
+    },
+    {
+      "path": "assets/recipes-ai/0206-collection-poultry-09-10.webp",
+      "sha": "afcbc611ea01bd82e5d49bf9f9a4c2557bd02fbe"
+    },
+    {
+      "path": "assets/recipes-ai/0207-collection-poultry-10-01-approved.webp",
+      "sha": "f382d05d668d1e148136d7f8cc2f00e75f54a3ef"
+    },
+    {
+      "path": "assets/recipes-ai/0207-collection-poultry-10-01.webp",
+      "sha": "4279ee496fd9123062f688f1da5338c9ace09dfd"
+    },
+    {
+      "path": "assets/recipes-ai/0208-collection-poultry-10-02-approved.webp",
+      "sha": "7d4d7322198582ccec12cfebbf7a280aeec110ff"
+    },
+    {
+      "path": "assets/recipes-ai/0208-collection-poultry-10-02.webp",
+      "sha": "c58059beb917991db61856337169b08f7b0954a2"
+    },
+    {
+      "path": "assets/recipes-ai/0209-collection-poultry-10-03-approved.webp",
+      "sha": "3285632f571818333707cf5a36e42998978bbdfc"
+    },
+    {
+      "path": "assets/recipes-ai/0209-collection-poultry-10-03.webp",
+      "sha": "367ad1df3564398eda6839c337506829f02c4bfd"
+    },
+    {
+      "path": "assets/recipes-ai/0210-collection-poultry-10-04-approved.webp",
+      "sha": "d2508b037ba077ffe1d7a874ce13a35b7985edf3"
+    },
+    {
+      "path": "assets/recipes-ai/0210-collection-poultry-10-04.webp",
+      "sha": "041a5304856ba44d77531aae87d0cc7067c7532a"
+    },
+    {
+      "path": "assets/recipes-ai/0211-collection-poultry-10-05-approved.webp",
+      "sha": "3de2ad038de17d61842c22b221cfbc016a17e2a3"
+    },
+    {
+      "path": "assets/recipes-ai/0211-collection-poultry-10-05.webp",
+      "sha": "fd0810f6ca8a6d1a88078351e011ab3117b872e6"
+    },
+    {
+      "path": "assets/recipes-ai/0212-collection-poultry-10-06-approved.webp",
+      "sha": "3bfa340fc22f42567e8dde5afced99595f5c9cac"
+    },
+    {
+      "path": "assets/recipes-ai/0212-collection-poultry-10-06.webp",
+      "sha": "7eaa3bf7776fcf40f3b85fa93bc10d788478e8e0"
+    },
+    {
+      "path": "assets/recipes-ai/0213-collection-poultry-10-07-approved.webp",
+      "sha": "66fd1eac75c14e2a4cd6db7fe9961e268a90f0e0"
+    },
+    {
+      "path": "assets/recipes-ai/0213-collection-poultry-10-07.webp",
+      "sha": "ca47f11b6f6444fc404671258b63f18ab0a3c082"
+    },
+    {
+      "path": "assets/recipes-ai/0214-collection-poultry-10-08-approved.webp",
+      "sha": "f728079d5c77576aba31a706d6f5d0865916df7e"
+    },
+    {
+      "path": "assets/recipes-ai/0214-collection-poultry-10-08.webp",
+      "sha": "0b85ae26439b8214ed082395e92bdd56d60fb694"
+    },
+    {
+      "path": "assets/recipes-ai/0215-collection-poultry-10-09-approved.webp",
+      "sha": "81c4f1af2910208b76e37b38c04a925a29203ccb"
+    },
+    {
+      "path": "assets/recipes-ai/0215-collection-poultry-10-09.webp",
+      "sha": "4019464a8718f3420609e40d33214621914113b3"
+    },
+    {
+      "path": "assets/recipes-ai/0216-collection-poultry-10-10-approved.webp",
+      "sha": "d7e4ff04e2521630a67a0bab24d592417620098f"
+    },
+    {
+      "path": "assets/recipes-ai/0216-collection-poultry-10-10.webp",
+      "sha": "a84ca66db0caa7d70c4b54c4bb17c8d4d3b54999"
+    },
+    {
+      "path": "assets/recipes-ai/0217-collection-fish-01-03.webp",
+      "sha": "30f4d4f3a5e18d5628b9c170b66402ce3d432f6e"
+    },
+    {
+      "path": "assets/recipes-ai/0218-collection-fish-01-04.webp",
+      "sha": "4718fc52252c57656e4595ad1acda34f725562f7"
+    },
+    {
+      "path": "assets/recipes-ai/0219-collection-fish-01-05.webp",
+      "sha": "e76aafcb767bffc59f51a7afccfb8ae33b92cc79"
+    },
+    {
+      "path": "assets/recipes-ai/0220-collection-fish-01-06.webp",
+      "sha": "936c6631328f83a87beb381706d9a90ae09f0fa2"
+    },
+    {
+      "path": "assets/recipes-ai/0221-collection-fish-01-07.webp",
+      "sha": "733b040f581096b936077ce63107472d6d773362"
+    },
+    {
+      "path": "assets/recipes-ai/0222-collection-fish-01-08.webp",
+      "sha": "e6cd6d7dfedba7969672b5a8cdf0d1efe40818ec"
+    },
+    {
+      "path": "assets/recipes-ai/0223-collection-fish-01-09.webp",
+      "sha": "ae49e0ed4200a16006d9f80767744cd86f9f040c"
+    },
+    {
+      "path": "assets/recipes-ai/0224-collection-fish-01-10.webp",
+      "sha": "c0e1a2e80dccb6bdbabcc9cf8ae84f7a2b3772f5"
+    },
+    {
+      "path": "assets/recipes-ai/0225-collection-fish-02-01.webp",
+      "sha": "f327b933161c6dcd48bad81987da599089342afa"
+    },
+    {
+      "path": "assets/recipes-ai/0226-collection-fish-02-02.webp",
+      "sha": "1a2eb3637fc58a9bd6e3907da9f11ac661b421de"
+    },
+    {
+      "path": "assets/recipes-ai/0227-collection-fish-02-03.webp",
+      "sha": "fb0eb025c1e2f81de391e924e87144720430c467"
+    },
+    {
+      "path": "assets/recipes-ai/0228-collection-fish-02-04.webp",
+      "sha": "e8f253be57a58dbf86dd61ebae949f2858829586"
+    },
+    {
+      "path": "assets/recipes-ai/0229-collection-fish-02-05.webp",
+      "sha": "5b806bcd5d9a64a2fe83968ef6f9936ae754e8c2"
+    },
+    {
+      "path": "assets/recipes-ai/0230-collection-fish-02-06.webp",
+      "sha": "837a29fdf04270e15ab2cf12e01cafa1a713ff3b"
+    },
+    {
+      "path": "assets/recipes-ai/0231-collection-fish-02-07.webp",
+      "sha": "4a9fe34e93f802b5ce98b84d42f5252bbd3e66d3"
+    },
+    {
+      "path": "assets/recipes-ai/0232-collection-fish-02-08.webp",
+      "sha": "eb8e59ed901dfc3abf80bfdda6fed57ba0e8c621"
+    },
+    {
+      "path": "assets/recipes-ai/0233-collection-fish-02-09.webp",
+      "sha": "c567f9a43eb89479690fc7c5644cef9afa549416"
+    },
+    {
+      "path": "assets/recipes-ai/0234-collection-fish-02-10.webp",
+      "sha": "88f4e74305e68beb432c0668e41fcda1378697cc"
+    },
+    {
+      "path": "assets/recipes-ai/0235-collection-fish-03-01.webp",
+      "sha": "47ba12ac592020d88dfd750633918c2a32eb3196"
+    },
+    {
+      "path": "assets/recipes-ai/0236-collection-fish-03-02.webp",
+      "sha": "1265a277ea4d4eab8dc682811a45c641e66de4c2"
+    },
+    {
+      "path": "assets/recipes-ai/0237-collection-fish-03-03.webp",
+      "sha": "523c7264041993051dcba419cbfd914374021042"
+    },
+    {
+      "path": "assets/recipes-ai/0238-collection-fish-03-04.webp",
+      "sha": "ba65bbeb1bc9ed7984ec4bffe963ad0edaa63422"
+    },
+    {
+      "path": "assets/recipes-ai/0239-collection-fish-03-05.webp",
+      "sha": "9bc11553bfe017dc723ddd2007191a4f909e8dfa"
+    },
+    {
+      "path": "assets/recipes-ai/0240-collection-fish-03-06.webp",
+      "sha": "77a2e04707911a5bd71fa7187ff6c469d2887c81"
+    },
+    {
+      "path": "assets/recipes-ai/0241-collection-fish-03-07.webp",
+      "sha": "b9a6a4b78f36f3447382d7da32ee994312bb49ad"
+    },
+    {
+      "path": "assets/recipes-ai/0242-collection-fish-03-08.webp",
+      "sha": "978a2a5ff1d0dfe2bff1c36f87a4225b127aa159"
+    },
+    {
+      "path": "assets/recipes-ai/0243-collection-fish-03-09.webp",
+      "sha": "089d4905525664e7d16e2d6b8f0dd7252c1f3139"
+    },
+    {
+      "path": "assets/recipes-ai/0244-collection-fish-03-10.webp",
+      "sha": "0b2797f56f0d9de81d385d16c092a657360f25c0"
+    },
+    {
+      "path": "assets/recipes-ai/0245-collection-fish-04-01.webp",
+      "sha": "b6245a790f39fc93e73c0ad1e9865b4838166912"
+    },
+    {
+      "path": "assets/recipes-ai/0246-collection-fish-04-02.webp",
+      "sha": "d4cbe3a0fdca2b6b5a14b91648b59fecd2ee7dd9"
+    },
+    {
+      "path": "assets/recipes-ai/0247-collection-fish-04-03.webp",
+      "sha": "0652eaee954451084590b0c24beef88a8946df0c"
+    },
+    {
+      "path": "assets/recipes-ai/0248-collection-fish-04-04.webp",
+      "sha": "12c40d393fe1963f4412df5adf332a91dc414fc8"
+    },
+    {
+      "path": "assets/recipes-ai/0249-collection-fish-04-05.webp",
+      "sha": "9aa4584b0cc00e75dc462cc24e9f2f9a241d7873"
+    },
+    {
+      "path": "assets/recipes-ai/0250-collection-fish-04-06.webp",
+      "sha": "0d01804d932f1bcf255eacfa785422962e279966"
+    },
+    {
+      "path": "assets/recipes-ai/0251-collection-fish-04-07.webp",
+      "sha": "1e600cbcdc64cb64594728993e52a0bf92490082"
+    },
+    {
+      "path": "assets/recipes-ai/0252-collection-fish-04-08.webp",
+      "sha": "9c702043c97ec575e987efbb9f296e506ef5397b"
+    },
+    {
+      "path": "assets/recipes-ai/0253-collection-fish-04-09.webp",
+      "sha": "ff67116bebb3cdd095ea0e855cd239015fd86968"
+    },
+    {
+      "path": "assets/recipes-ai/0254-collection-fish-04-10.webp",
+      "sha": "0b57123995fb0b5bf16ead5068577c5d3a66efdb"
+    },
+    {
+      "path": "assets/recipes-ai/0255-collection-fish-05-01.webp",
+      "sha": "2e1df65327be5e4bcab8a67e0e5b3ceba7595a7d"
+    },
+    {
+      "path": "assets/recipes-ai/0256-collection-fish-05-02.webp",
+      "sha": "b5a029e81e8a0d25ed361b853f794a1fb37c7c4f"
+    },
+    {
+      "path": "assets/recipes-ai/0257-collection-fish-05-03.webp",
+      "sha": "678388bee7b5d590ad6b9583c4e889e342a05616"
+    },
+    {
+      "path": "assets/recipes-ai/0258-collection-fish-05-04.webp",
+      "sha": "e9b5aa1c04ac27fa5d5de1f0152eed2740801a2a"
+    },
+    {
+      "path": "assets/recipes-ai/0259-collection-fish-05-05.webp",
+      "sha": "fb5bd42f57c5a059b374b1184154d2c99e58e557"
+    },
+    {
+      "path": "assets/recipes-ai/0260-collection-fish-05-06.webp",
+      "sha": "6ebd4959e6d7028082a62498995a0cd99b12afdc"
+    },
+    {
+      "path": "assets/recipes-ai/0261-collection-fish-05-07.webp",
+      "sha": "ba63f4016b1dab6e28a8a79fc475230a33257b09"
+    },
+    {
+      "path": "assets/recipes-ai/0262-collection-fish-05-08.webp",
+      "sha": "1f6982500f6ea95d7f079f1f0597d402b99843e9"
+    },
+    {
+      "path": "assets/recipes-ai/0263-collection-fish-05-09.webp",
+      "sha": "4b8d78677bfdd8f92dce4823c815fcd250b4477f"
+    },
+    {
+      "path": "assets/recipes-ai/0264-collection-fish-05-10.webp",
+      "sha": "1ded854fba021ae98d3feb4f847cc4d6cba27114"
+    },
+    {
+      "path": "assets/recipes-ai/0265-collection-fish-06-01.webp",
+      "sha": "0ecf82b2ab36d993f70b1b281c56e7498adf952f"
+    },
+    {
+      "path": "assets/recipes-ai/0266-collection-fish-06-02.webp",
+      "sha": "e8c5ab0f8c131a3c08147df6c189db10cbb36110"
+    },
+    {
+      "path": "assets/recipes-ai/0267-collection-fish-06-03.webp",
+      "sha": "4a588dd694b4c9a1da984589ed8fe025df1a5572"
+    },
+    {
+      "path": "assets/recipes-ai/0268-collection-fish-06-04.webp",
+      "sha": "74274395f28cafe593e19a91fafac77447922e9b"
+    },
+    {
+      "path": "assets/recipes-ai/0269-collection-fish-06-05.webp",
+      "sha": "883b9bc0d604ef39d82fd6f69da9b52ea0686683"
+    },
+    {
+      "path": "assets/recipes-ai/0270-collection-fish-06-06.webp",
+      "sha": "5b21e6484debc89efe97ccc5a2dbbcb10e5d1fb4"
+    },
+    {
+      "path": "assets/recipes-ai/0271-collection-fish-06-07.webp",
+      "sha": "b3bfedcb1e5b78463cb7a172987b92b76eacd8bb"
+    },
+    {
+      "path": "assets/recipes-ai/0272-collection-fish-06-08.webp",
+      "sha": "0edfe0591c513b1b302846126d1eabd0f4331f84"
+    },
+    {
+      "path": "assets/recipes-ai/0273-collection-fish-06-09.webp",
+      "sha": "713361bad1b9fe93d048ae0784b62ad07f5a6e21"
+    },
+    {
+      "path": "assets/recipes-ai/0274-collection-fish-06-10.webp",
+      "sha": "86c047ae04bca33b050fafc4a0481db104eb72e1"
+    },
+    {
+      "path": "assets/recipes-ai/0275-collection-fish-07-01.webp",
+      "sha": "08435dfe90d7cf1915e5eb53615b0122abea7ff3"
+    },
+    {
+      "path": "assets/recipes-ai/0276-collection-fish-07-02.webp",
+      "sha": "0c0e1f0df17fc5acaee109d547da08481d86ec05"
+    },
+    {
+      "path": "assets/recipes-ai/0277-collection-fish-07-03.webp",
+      "sha": "1aeb9fba901d08f9a7842d175918be9d5fbb81fe"
+    },
+    {
+      "path": "assets/recipes-ai/0278-collection-fish-07-04.webp",
+      "sha": "8246ee2ec7beb6354891eada252f803c83b3d17c"
+    },
+    {
+      "path": "assets/recipes-ai/0279-collection-fish-07-05.webp",
+      "sha": "fd7adf581223170e43cb54e3104f451b10940558"
+    },
+    {
+      "path": "assets/recipes-ai/0280-collection-fish-07-06.webp",
+      "sha": "361dc2f68040a4492a12527dc2758ed546d470be"
+    },
+    {
+      "path": "assets/recipes-ai/0281-collection-fish-07-07.webp",
+      "sha": "75bc4f0112ee1e5e3e59cc13d170d7febdc88aa5"
+    },
+    {
+      "path": "assets/recipes-ai/0282-collection-fish-07-08.webp",
+      "sha": "d513b675e8149a101e602e6ef1df8fa5309e0d9a"
+    },
+    {
+      "path": "assets/recipes-ai/0283-collection-fish-07-09.webp",
+      "sha": "37d473d84ab461769aca3cc934fd72796e2eec43"
+    },
+    {
+      "path": "assets/recipes-ai/0284-collection-fish-07-10.webp",
+      "sha": "f15ac6d53654bb7dc5f89cfd1d6dd3256b0ea313"
+    },
+    {
+      "path": "assets/recipes-ai/0285-collection-fish-08-01.webp",
+      "sha": "5b2fa815cac4272f5438bea041c2fa4b6ad8f172"
+    },
+    {
+      "path": "assets/recipes-ai/0286-collection-fish-08-02.webp",
+      "sha": "565d9988271d6bffa09995ff3e4d25d3b5b3018f"
+    },
+    {
+      "path": "assets/recipes-ai/0287-collection-fish-08-03.webp",
+      "sha": "3e5904b8b32ffd83a2883a0bd2f061dc75235126"
+    },
+    {
+      "path": "assets/recipes-ai/0288-collection-fish-08-04.webp",
+      "sha": "1503f0ac1cb5a25efe8779631bb6d728b5aeb0bb"
+    },
+    {
+      "path": "assets/recipes-ai/0289-collection-fish-08-05.webp",
+      "sha": "5fa8216c3f1df049802f66160cc2078039eeced1"
+    },
+    {
+      "path": "assets/recipes-ai/0290-collection-fish-08-06.webp",
+      "sha": "6cfd32f2a015a168b0b34ec8b249ffab6f4fc267"
+    },
+    {
+      "path": "assets/recipes-ai/0291-collection-fish-08-07.webp",
+      "sha": "2478f4d1fdc3e892a99c65ab4da9fe27e0371f5f"
+    },
+    {
+      "path": "assets/recipes-ai/0292-collection-fish-08-08.webp",
+      "sha": "90b038882b158fd5d8df6521f5b1c5e20112078a"
+    },
+    {
+      "path": "assets/recipes-ai/0293-collection-fish-08-09.webp",
+      "sha": "8b7e494c21f0f9a1cbedcb2b8410cd51918c824f"
+    },
+    {
+      "path": "assets/recipes-ai/0294-collection-fish-08-10.webp",
+      "sha": "25c3e13e8ddac7be447c03d0820020b41598aca6"
+    },
+    {
+      "path": "assets/recipes-ai/0295-collection-fish-09-01.webp",
+      "sha": "7d290808b6f9e5c70f802a81502c8dda939a1f0c"
+    },
+    {
+      "path": "assets/recipes-ai/0296-collection-fish-09-02.webp",
+      "sha": "1cb50d5e1add11882ca2f5e24bfca981abc3430e"
+    },
+    {
+      "path": "assets/recipes-ai/0297-collection-fish-09-03.webp",
+      "sha": "6b5f247cf26a059ecfdbaedb5f4017723d1d91dd"
+    },
+    {
+      "path": "assets/recipes-ai/0298-collection-fish-09-04.webp",
+      "sha": "3913d14ecb784aa1ed8c970dd58cd230d00717db"
+    },
+    {
+      "path": "assets/recipes-ai/0299-collection-fish-09-05.webp",
+      "sha": "8cafa80940c8332cc77bca84e64727a35ed3b302"
+    },
+    {
+      "path": "assets/recipes-ai/0300-collection-fish-09-06.webp",
+      "sha": "9396ec261b314b8bb8e3650b2279e598f4eba842"
+    },
+    {
+      "path": "assets/recipes-ai/0301-collection-fish-09-07.webp",
+      "sha": "a8d475e750c42b4a9f37749c6ac2c5dbe26d2081"
+    },
+    {
+      "path": "assets/recipes-ai/0302-collection-fish-09-08.webp",
+      "sha": "b44887dc7b36707f551c30e25b2920903546ab54"
+    },
+    {
+      "path": "assets/recipes-ai/0303-collection-fish-09-09.webp",
+      "sha": "2b845a517ae4d8889a251553c32d16d995cec2f1"
+    },
+    {
+      "path": "assets/recipes-ai/0304-collection-fish-09-10.webp",
+      "sha": "b6bccb9207aa2d7cd2d38ef25a764788c61615f7"
+    },
+    {
+      "path": "assets/recipes-ai/0305-collection-fish-10-01.webp",
+      "sha": "c1dd5eba60b288f1311978b4baa1f31c70a51d6b"
+    },
+    {
+      "path": "assets/recipes-ai/0306-collection-fish-10-02.webp",
+      "sha": "7a9308d8418d2c42c1f90c8a9fdb68132b1b73b9"
+    },
+    {
+      "path": "assets/recipes-ai/0307-collection-fish-10-03.webp",
+      "sha": "371ea490963566a06a05de94e9706821a2da8d99"
+    },
+    {
+      "path": "assets/recipes-ai/0308-collection-fish-10-04.webp",
+      "sha": "8a72de744729474d206e862aaf037d48ad2884f5"
+    },
+    {
+      "path": "assets/recipes-ai/0309-collection-fish-10-05.webp",
+      "sha": "977992721e4017740b3d837d6de12df7fe5b5af7"
+    },
+    {
+      "path": "assets/recipes-ai/0310-collection-fish-10-06.webp",
+      "sha": "95d31e2d8cc2dcb76b4f0a93afa3c6811bf63aba"
+    },
+    {
+      "path": "assets/recipes-ai/0311-collection-fish-10-07.webp",
+      "sha": "5a1674b95307ea626028563c73d12bea4f1df39a"
+    },
+    {
+      "path": "assets/recipes-ai/0312-collection-fish-10-08.webp",
+      "sha": "e558fcbd25f8083fcde0f7ad95b760ddd88a2f69"
+    },
+    {
+      "path": "assets/recipes-ai/0313-collection-fish-10-09.webp",
+      "sha": "f53371a97e80dbbe6a64685030106cfb6e3af86f"
+    },
+    {
+      "path": "assets/recipes-ai/0314-collection-fish-10-10.webp",
+      "sha": "e5bd61b2c621c8f473458545d81dccc3f454379f"
+    },
+    {
+      "path": "assets/recipes-ai/0315-collection-pasta-01-03.webp",
+      "sha": "3d1acca33bd21121979c2b5b5d8f2f491d7067ad"
+    },
+    {
+      "path": "assets/recipes-ai/0316-collection-pasta-01-04.webp",
+      "sha": "06eb16c9e03d70e283c38dca035f8c364ab6b6e2"
+    },
+    {
+      "path": "assets/recipes-ai/0317-collection-pasta-01-05.webp",
+      "sha": "8749a9c8971aa811eada896e98445abf8754cc86"
+    },
+    {
+      "path": "assets/recipes-ai/0318-collection-pasta-01-06.webp",
+      "sha": "9534991fc2724496778a8b291cf93c8ea1dc305e"
+    },
+    {
+      "path": "assets/recipes-ai/0319-collection-pasta-01-07.webp",
+      "sha": "7453c13def45de2ea32280ea68b2076d53bf4003"
+    },
+    {
+      "path": "assets/recipes-ai/0320-collection-pasta-01-08.webp",
+      "sha": "de90d18734e4fc531322c954ebc58e4ccc6239c2"
+    },
+    {
+      "path": "assets/recipes-ai/0321-collection-pasta-01-09.webp",
+      "sha": "27e8a91ba07548296c116ab9ffde9c5ac54aff50"
+    },
+    {
+      "path": "assets/recipes-ai/0322-collection-pasta-01-10.webp",
+      "sha": "66b086addf05820f58f4c82ed8ecce3985f1987e"
+    },
+    {
+      "path": "assets/recipes-ai/0323-collection-pasta-02-01.webp",
+      "sha": "168fa84c42130a01a8274a13616b205f21169560"
+    },
+    {
+      "path": "assets/recipes-ai/0324-collection-pasta-02-02.webp",
+      "sha": "8db35302126f40ce82d3385e77b191b0a21d85da"
+    },
+    {
+      "path": "assets/recipes-ai/0325-collection-pasta-02-03.webp",
+      "sha": "a20ec257af2e7b2bbe90a89e174eb5aca7b477f9"
+    },
+    {
+      "path": "assets/recipes-ai/0326-collection-pasta-02-04.webp",
+      "sha": "4c1ebe9603d1d5aa23d9cca6b516a86ac0286474"
+    },
+    {
+      "path": "assets/recipes-ai/0327-collection-pasta-02-05.webp",
+      "sha": "54034742b20a0fe0331d1ab26df41b13ae81ae8f"
+    },
+    {
+      "path": "assets/recipes-ai/0328-collection-pasta-02-06.webp",
+      "sha": "be6eb70dc0554bde03633aa57dfc3cc112e5bec7"
+    },
+    {
+      "path": "assets/recipes-ai/0329-collection-pasta-02-07.webp",
+      "sha": "109ac4a598580f069f95a4aba769e516d40988bd"
+    },
+    {
+      "path": "assets/recipes-ai/0330-collection-pasta-02-08.webp",
+      "sha": "3a35fb7930733fe1ed30a36d9e1519fa6563318a"
+    },
+    {
+      "path": "assets/recipes-ai/0331-collection-pasta-02-09.webp",
+      "sha": "559501d1aab0f31653223315bbe3be92074854a0"
+    },
+    {
+      "path": "assets/recipes-ai/0332-collection-pasta-02-10.webp",
+      "sha": "765ffa2a92f9c1f9cf6062a3483aba815f12ac0d"
+    },
+    {
+      "path": "assets/recipes-ai/0333-collection-pasta-03-01.webp",
+      "sha": "d6dcacb814e52dc88c760f57396448ef5065c4f4"
+    },
+    {
+      "path": "assets/recipes-ai/0334-collection-pasta-03-02.webp",
+      "sha": "5b0349234a86e602f571305f8eeac13570f1033c"
+    },
+    {
+      "path": "assets/recipes-ai/0335-collection-pasta-03-03.webp",
+      "sha": "d355e847a696d2a0c1c0c8b6523245fb844cbdc0"
+    },
+    {
+      "path": "assets/recipes-ai/0336-collection-pasta-03-04.webp",
+      "sha": "374a4857aca9e47a3fa4a9323f9d27ff39432fd9"
+    },
+    {
+      "path": "assets/recipes-ai/0337-collection-pasta-03-05.webp",
+      "sha": "a8ab8f11f9eb7597d3635979cc88634955e1d23b"
+    },
+    {
+      "path": "assets/recipes-ai/0338-collection-pasta-03-06.webp",
+      "sha": "fe7dd667248d83fc52cb73cb4c737fd56bc37493"
+    },
+    {
+      "path": "assets/recipes-ai/0339-collection-pasta-03-07.webp",
+      "sha": "f0564cbe6f3d2c5c1f65c370c836aec1d4d39de7"
+    },
+    {
+      "path": "assets/recipes-ai/0340-collection-pasta-03-08.webp",
+      "sha": "c37c01ec64490cf9161e6618a91db06f30c7207f"
+    },
+    {
+      "path": "assets/recipes-ai/0341-collection-pasta-03-09.webp",
+      "sha": "6a90d2240819781a9d24ba8efb0eabef1cf4251e"
+    },
+    {
+      "path": "assets/recipes-ai/0342-collection-pasta-03-10.webp",
+      "sha": "cdbce74b9656df733043c392f74673aab3868a54"
+    },
+    {
+      "path": "assets/recipes-ai/0343-collection-pasta-04-01.webp",
+      "sha": "b040b0467d253b7638d60c762b51c27a82bafe5e"
+    },
+    {
+      "path": "assets/recipes-ai/0344-collection-pasta-04-02.webp",
+      "sha": "74d967447310ff73dbda1d933ab5f3731f74c410"
+    },
+    {
+      "path": "assets/recipes-ai/0345-collection-pasta-04-03.webp",
+      "sha": "74fbc3935789faa1f37818d53d9c7f12aa072ce1"
+    },
+    {
+      "path": "assets/recipes-ai/0346-collection-pasta-04-04.webp",
+      "sha": "201e1bcd1ac044055d34b872f55602324db19cf4"
+    },
+    {
+      "path": "assets/recipes-ai/0347-collection-pasta-04-05.webp",
+      "sha": "8a95e18dbd9578a5481fa33bee37d4b565bbea69"
+    },
+    {
+      "path": "assets/recipes-ai/0348-collection-pasta-04-06.webp",
+      "sha": "7f2ccaeae730672792471edbb0783bd24740590d"
+    },
+    {
+      "path": "assets/recipes-ai/0349-collection-pasta-04-07.webp",
+      "sha": "3ffec5492a00aac59d4613df51cc41f453c28bca"
+    },
+    {
+      "path": "assets/recipes-ai/0350-collection-pasta-04-08.webp",
+      "sha": "f83926f079ad2a309306f7e2522249e240ecf39d"
+    },
+    {
+      "path": "assets/recipes-ai/0351-collection-pasta-04-09.webp",
+      "sha": "75e471e00ba4928a93c65853f302fc39dfd00a04"
+    },
+    {
+      "path": "assets/recipes-ai/0352-collection-pasta-04-10.webp",
+      "sha": "4f5873df801d706ee95cd72cf97ed9246c8b2c86"
+    },
+    {
+      "path": "assets/recipes-ai/0353-collection-pasta-05-01.webp",
+      "sha": "c5fc88b9e8b53eeef3b8c3305a1d431acc2517b7"
+    },
+    {
+      "path": "assets/recipes-ai/0354-collection-pasta-05-02.webp",
+      "sha": "435c5b3ab9f2d784949b9cf7fe169fd15c20d91e"
+    },
+    {
+      "path": "assets/recipes-ai/0355-collection-pasta-05-03.webp",
+      "sha": "2cef9af161e037927d9469022b0cd60f59889890"
+    },
+    {
+      "path": "assets/recipes-ai/0356-collection-pasta-05-04.webp",
+      "sha": "64220e60e7a12bc377597ca53ee129c2d1380fc5"
+    },
+    {
+      "path": "assets/recipes-ai/0357-collection-pasta-05-05.webp",
+      "sha": "bd558710587e28e3ff09e9aaeec4579671091913"
+    },
+    {
+      "path": "assets/recipes-ai/0358-collection-pasta-05-06.webp",
+      "sha": "1c2a2a1c766e37d5b4d3b2cf88446b3e4303fa37"
+    },
+    {
+      "path": "assets/recipes-ai/0359-collection-pasta-05-07.webp",
+      "sha": "61b899373b5b4a9ed63b20ccddc4e79edfc67faa"
+    },
+    {
+      "path": "assets/recipes-ai/0360-collection-pasta-05-08.webp",
+      "sha": "d8770b906da666dc02103f9e171803e6989706a1"
+    },
+    {
+      "path": "assets/recipes-ai/0361-collection-pasta-05-09.webp",
+      "sha": "358a62698fa4752ce859e39487fba48f0d6f837a"
+    },
+    {
+      "path": "assets/recipes-ai/0362-collection-pasta-05-10.webp",
+      "sha": "43bf060f685b2ea57d4c7c8636fd01f5e9c94e74"
+    },
+    {
+      "path": "assets/recipes-ai/0363-collection-pasta-06-01.webp",
+      "sha": "0e90661f3c73ebf42d18b72cfdd3637c76ba9d21"
+    },
+    {
+      "path": "assets/recipes-ai/0364-collection-pasta-06-02.webp",
+      "sha": "f6b01d6e7ffcddd2d08cee52f884ba1fea43c811"
+    },
+    {
+      "path": "assets/recipes-ai/0365-collection-pasta-06-03.webp",
+      "sha": "a132ebd83ef77a1ab9d1ae07c7a57ae865a706e2"
+    },
+    {
+      "path": "assets/recipes-ai/0366-collection-pasta-06-04.webp",
+      "sha": "1a4947dac429385badab952c6488f1f839ad4549"
+    },
+    {
+      "path": "assets/recipes-ai/0367-collection-pasta-06-05.webp",
+      "sha": "20dcafdd29510c05c5abac9e9c35aea63497b866"
+    },
+    {
+      "path": "assets/recipes-ai/0368-collection-pasta-06-06.webp",
+      "sha": "f8de47da028206c62c91220c1f9947187041c197"
+    },
+    {
+      "path": "assets/recipes-ai/0369-collection-pasta-06-07.webp",
+      "sha": "0d931a90e53e5497a368b4cf4c0a2f55fd5dab94"
+    },
+    {
+      "path": "assets/recipes-ai/0370-collection-pasta-06-08.webp",
+      "sha": "037113f820196e4be72554f68d36eaa6df2570f7"
+    },
+    {
+      "path": "assets/recipes-ai/0371-collection-pasta-06-09.webp",
+      "sha": "eb62e569fba98eb887dee6d6fd52671276449102"
+    },
+    {
+      "path": "assets/recipes-ai/0372-collection-pasta-06-10.webp",
+      "sha": "1604383451239f4790ecba90239697e7c7e7e32b"
+    },
+    {
+      "path": "assets/recipes-ai/0373-collection-pasta-07-01.webp",
+      "sha": "72b0af09b83d01c5e40fd3d002103df11890a427"
+    },
+    {
+      "path": "assets/recipes-ai/0374-collection-pasta-07-02.webp",
+      "sha": "9cfa7a58b79b453660a8c16a30b56137f134580f"
+    },
+    {
+      "path": "assets/recipes-ai/0375-collection-pasta-07-03.webp",
+      "sha": "288a2df4f196b029a932f909a84c9b6c06bf4cd1"
+    },
+    {
+      "path": "assets/recipes-ai/0376-collection-pasta-07-04.webp",
+      "sha": "8655d60e5d451bfb742fc78118a483d0e4f584b5"
+    },
+    {
+      "path": "assets/recipes-ai/0377-collection-pasta-07-05.webp",
+      "sha": "07a0852e575eedb511aebc67ba6f2e4f51eb48ff"
+    },
+    {
+      "path": "assets/recipes-ai/0378-collection-pasta-07-06.webp",
+      "sha": "e6a1fa7ae7b783b8273e7c95478c54e1143d10c0"
+    },
+    {
+      "path": "assets/recipes-ai/0379-collection-pasta-07-07.webp",
+      "sha": "b22b0304958d774b465a531efd3ef7bc591f6c99"
+    },
+    {
+      "path": "assets/recipes-ai/0380-collection-pasta-07-08.webp",
+      "sha": "36d68e07e5fee207369a33f0b109bd654d94bcc4"
+    },
+    {
+      "path": "assets/recipes-ai/0381-collection-pasta-07-09.webp",
+      "sha": "dca9587441473e6e006d4b1b0fadc1516ed85624"
+    },
+    {
+      "path": "assets/recipes-ai/0382-collection-pasta-07-10.webp",
+      "sha": "f19f8830915e9124e779478f670ba35dd5cfdf52"
+    },
+    {
+      "path": "assets/recipes-ai/0383-collection-pasta-08-01.webp",
+      "sha": "70ce54c725c53905c56daf69c6040e200dfeb85a"
+    },
+    {
+      "path": "assets/recipes-ai/0384-collection-pasta-08-02.webp",
+      "sha": "b144b00361bde082614aa0abc556e466e93225f4"
+    },
+    {
+      "path": "assets/recipes-ai/0385-collection-pasta-08-03.webp",
+      "sha": "b8a076adf79bacb8d8571deaba52c294f22af76f"
+    },
+    {
+      "path": "assets/recipes-ai/0386-collection-pasta-08-04.webp",
+      "sha": "62d0172d9d712fce1b63b6fa73830c65fb54bd7d"
+    },
+    {
+      "path": "assets/recipes-ai/0387-collection-pasta-08-05.webp",
+      "sha": "f192853eb099803f619ed182813f955c6a119a67"
+    },
+    {
+      "path": "assets/recipes-ai/0388-collection-pasta-08-06.webp",
+      "sha": "191a323f43255ce219d62087700954ab6390b2c3"
+    },
+    {
+      "path": "assets/recipes-ai/0389-collection-pasta-08-07.webp",
+      "sha": "6ffe09bc7b1eeedfcc3c4a73d504e95f10c159aa"
+    },
+    {
+      "path": "assets/recipes-ai/0390-collection-pasta-08-08.webp",
+      "sha": "1a6011af9ecb3f15aecadfed9887ecb722fa8966"
+    },
+    {
+      "path": "assets/recipes-ai/0391-collection-pasta-08-09.webp",
+      "sha": "7852170c7901e70f5240a5d584758dbb413d047a"
+    },
+    {
+      "path": "assets/recipes-ai/0392-collection-pasta-08-10.webp",
+      "sha": "1ec0e7114daeaf625ef1f7073af08cc63034669b"
+    },
+    {
+      "path": "assets/recipes-ai/0393-collection-pasta-09-01.webp",
+      "sha": "6e5337f691c514b16cd248ac37229e9ba72d727a"
+    },
+    {
+      "path": "assets/recipes-ai/0394-collection-pasta-09-02.webp",
+      "sha": "84c1b5447f1cb36281c057e81ba95d8a387d0fda"
+    },
+    {
+      "path": "assets/recipes-ai/0395-collection-pasta-09-03.webp",
+      "sha": "89f6d9fa49b93e382c7d72c9aaf7aa07e8746a93"
+    },
+    {
+      "path": "assets/recipes-ai/0396-collection-pasta-09-04.webp",
+      "sha": "e55b8fc4a475d3c1938011e015e39e18a3089569"
+    },
+    {
+      "path": "assets/recipes-ai/0397-collection-pasta-09-05.webp",
+      "sha": "7fbc238d54dd28ef577f47b3e77fedc5459537a2"
+    },
+    {
+      "path": "assets/recipes-ai/0398-collection-pasta-09-06.webp",
+      "sha": "85b36837b077fd2986de3b35833a8db9020b6237"
+    },
+    {
+      "path": "assets/recipes-ai/0399-collection-pasta-09-07.webp",
+      "sha": "9a8169ceed31ebdcf20ec213ac07ba8630942678"
+    },
+    {
+      "path": "assets/recipes-ai/0400-collection-pasta-09-08.webp",
+      "sha": "1579939b12edb82fdda8f2bc1c49f3eb2bf62377"
+    },
+    {
+      "path": "assets/recipes-ai/0401-collection-pasta-09-09.webp",
+      "sha": "dafb56ac6b43b579d2cf0f543af7efaac28f170d"
+    },
+    {
+      "path": "assets/recipes-ai/0402-collection-pasta-09-10.webp",
+      "sha": "9c2e9a582ecb0a7ed09bccb81ebdc33c3f2dae1d"
+    },
+    {
+      "path": "assets/recipes-ai/0403-collection-pasta-10-01.webp",
+      "sha": "ecc5f788cf07eb4864283002b843143a52c3315b"
+    },
+    {
+      "path": "assets/recipes-ai/0404-collection-pasta-10-02.webp",
+      "sha": "0f3ab9bf679276ef8e51d1bf3d61441025866baf"
+    },
+    {
+      "path": "assets/recipes-ai/0405-collection-pasta-10-03.webp",
+      "sha": "456f6315f9f71ae29b9106c3188f3beb45c45b32"
+    },
+    {
+      "path": "assets/recipes-ai/0406-collection-pasta-10-04.webp",
+      "sha": "d7f7da369e2b11bfe5a7089160a214491621f8fe"
+    },
+    {
+      "path": "assets/recipes-ai/0407-collection-pasta-10-05.webp",
+      "sha": "f242d724f31063a764d4161b3e6bfacb3e891986"
+    },
+    {
+      "path": "assets/recipes-ai/0408-collection-pasta-10-06.webp",
+      "sha": "0e6d9dd8c1cca3e1ff83fc481e5cf43950d07503"
+    },
+    {
+      "path": "assets/recipes-ai/0409-collection-pasta-10-07.webp",
+      "sha": "d7fe574ef55d9055b87dfffb99c5012af5818247"
+    },
+    {
+      "path": "assets/recipes-ai/0410-collection-pasta-10-08.webp",
+      "sha": "2c721bef09c203fbc066af726ae1e9689a1d1870"
+    },
+    {
+      "path": "assets/recipes-ai/0411-collection-pasta-10-09.webp",
+      "sha": "743fdf15088a2fad6c4437ca3ff387ed8e4d744e"
+    },
+    {
+      "path": "assets/recipes-ai/0412-collection-pasta-10-10.webp",
+      "sha": "9fd234adfead6d4c01cdcb01cbb1748cea80c401"
+    },
+    {
+      "path": "assets/recipes-ai/0413-collection-vegetables-01-03.webp",
+      "sha": "a16b6f3198a14cdd649c88a441194f03ea37daad"
+    },
+    {
+      "path": "assets/recipes-ai/0414-collection-vegetables-01-04.webp",
+      "sha": "bbddc7054977ce2c2a4fea922cac516a18a040b5"
+    },
+    {
+      "path": "assets/recipes-ai/0415-collection-vegetables-01-05.webp",
+      "sha": "767886575e7e011251d1ead417eef698f83c8f37"
+    },
+    {
+      "path": "assets/recipes-ai/0416-collection-vegetables-01-06.webp",
+      "sha": "89efa92f5d423b0b07e49cd55b6c8ab965b3384f"
+    },
+    {
+      "path": "assets/recipes-ai/0417-collection-vegetables-01-07.webp",
+      "sha": "6314b5dd778ca04ac85d613751eb577322808e11"
+    },
+    {
+      "path": "assets/recipes-ai/0418-collection-vegetables-01-08.webp",
+      "sha": "860bfd6aa0ec7813e49fad7aa1eddbd909f98c4a"
+    },
+    {
+      "path": "assets/recipes-ai/0419-collection-vegetables-01-09.webp",
+      "sha": "b9d5fd1ab6d62090df3fb1cf00a58d40ac09af3f"
+    },
+    {
+      "path": "assets/recipes-ai/0420-collection-vegetables-01-10.webp",
+      "sha": "c817723be6cc26ba7e57e5fa345f74150c80b78b"
+    },
+    {
+      "path": "assets/recipes-ai/0421-collection-vegetables-02-01.webp",
+      "sha": "06f9cacb6d2b8ed56a50b9cd9826d72f4acca6a7"
+    },
+    {
+      "path": "assets/recipes-ai/0422-collection-vegetables-02-02.webp",
+      "sha": "f98f44a3dd5e5ad464a2dfad17290e55f3570efb"
+    },
+    {
+      "path": "assets/recipes-ai/0423-collection-vegetables-02-03.webp",
+      "sha": "ffa23fce27d6c855a118e68108262ee35a733f2d"
+    },
+    {
+      "path": "assets/recipes-ai/0424-collection-vegetables-02-04.webp",
+      "sha": "9f2901386566031fce663f44f6157670909eadd9"
+    },
+    {
+      "path": "assets/recipes-ai/0425-collection-vegetables-02-05.webp",
+      "sha": "d1c6cb7a759406d17f33b88d9bdab872d6edbc21"
+    },
+    {
+      "path": "assets/recipes-ai/0426-collection-vegetables-02-06.webp",
+      "sha": "25f62378b5582ef5ec43668a378c605fc7e6fc09"
+    },
+    {
+      "path": "assets/recipes-ai/0427-collection-vegetables-02-07.webp",
+      "sha": "fb86c4539fb52c764a70ab694490219addab65b9"
+    },
+    {
+      "path": "assets/recipes-ai/0428-collection-vegetables-02-08.webp",
+      "sha": "5e819387a907fa30459d1db83212e437a5bd4568"
+    },
+    {
+      "path": "assets/recipes-ai/0429-collection-vegetables-02-09.webp",
+      "sha": "c35f6cd0b1ece0a5bde48dde1830412a8621836d"
+    },
+    {
+      "path": "assets/recipes-ai/0430-collection-vegetables-02-10.webp",
+      "sha": "cbf34719699b98de7b4ebb5ae699f8349f2e28ff"
+    },
+    {
+      "path": "assets/recipes-ai/0431-collection-vegetables-03-01.webp",
+      "sha": "0d7014be38e56910a377a14b85817aa3f8a3df4b"
+    },
+    {
+      "path": "assets/recipes-ai/0432-collection-vegetables-03-02.webp",
+      "sha": "f5b5527014f4d7f7276c67a71e9a9ad3c5bfd8ea"
+    },
+    {
+      "path": "assets/recipes-ai/0433-collection-vegetables-03-03.webp",
+      "sha": "8da77d437c7ffa8b62660b742fa92f3b94f1bd94"
+    },
+    {
+      "path": "assets/recipes-ai/0434-collection-vegetables-03-04.webp",
+      "sha": "d1a0d0bff8d75f48208adf0be297870a875ac88c"
+    },
+    {
+      "path": "assets/recipes-ai/0435-collection-vegetables-03-05.webp",
+      "sha": "58f23371551f0e8c7ed7e9e27047993867a8486b"
+    },
+    {
+      "path": "assets/recipes-ai/0436-collection-vegetables-03-06.webp",
+      "sha": "3973f49887780d977d1b63f42d37206a795ac79c"
+    },
+    {
+      "path": "assets/recipes-ai/0437-collection-vegetables-03-07.webp",
+      "sha": "325d75c1bd1b02835830c04cbac4773cd5c1e111"
+    },
+    {
+      "path": "assets/recipes-ai/0438-collection-vegetables-03-08.webp",
+      "sha": "9f074f0249ac9da9116c3549f201bb5edb847d49"
+    },
+    {
+      "path": "assets/recipes-ai/0439-collection-vegetables-03-09.webp",
+      "sha": "f21f730f18d0b898d9eb417f4980736ef19a8b3c"
+    },
+    {
+      "path": "assets/recipes-ai/0440-collection-vegetables-03-10.webp",
+      "sha": "2acef2dd5770ec839c3b06e3a42fe5f4d7e2c6ce"
+    },
+    {
+      "path": "assets/recipes-ai/0441-collection-vegetables-04-01.webp",
+      "sha": "fb9eb61960c73f3786f0a3dac86bbc7444861280"
+    },
+    {
+      "path": "assets/recipes-ai/0442-collection-vegetables-04-02.webp",
+      "sha": "9b7d963107af80bda6e9bf38eae5357e731f9416"
+    },
+    {
+      "path": "assets/recipes-ai/0443-collection-vegetables-04-03.webp",
+      "sha": "65326c9b14e2f4038528a4347a416026cbb9bed4"
+    },
+    {
+      "path": "assets/recipes-ai/0444-collection-vegetables-04-04.webp",
+      "sha": "3d5ba831d721b505b0c4a0d5f1480232685fdcfd"
+    },
+    {
+      "path": "assets/recipes-ai/0445-collection-vegetables-04-05.webp",
+      "sha": "3813906184a2abcc6266cb85749f6d7f0cf72ee8"
+    },
+    {
+      "path": "assets/recipes-ai/0446-collection-vegetables-04-06.webp",
+      "sha": "e251a48baf7a546c8fa437efb6afd39817b248d6"
+    },
+    {
+      "path": "assets/recipes-ai/0447-collection-vegetables-04-07.webp",
+      "sha": "43784f8ba2c1ec70dfee91ba1f69418c8b61343a"
+    },
+    {
+      "path": "assets/recipes-ai/0448-collection-vegetables-04-08.webp",
+      "sha": "6ab689c90b95d0281ad8ad84cad16b2186026d2e"
+    },
+    {
+      "path": "assets/recipes-ai/0449-collection-vegetables-04-09.webp",
+      "sha": "fa1b238efec7ab75c79be497a421db274717b820"
+    },
+    {
+      "path": "assets/recipes-ai/0450-collection-vegetables-04-10.webp",
+      "sha": "cb56f86763ee6aeb19bd66d23c525828c9b85ee4"
+    },
+    {
+      "path": "assets/recipes-ai/0451-collection-vegetables-05-01.webp",
+      "sha": "952e1a768f8077995019e99dc7ffc0d27091ca26"
+    },
+    {
+      "path": "assets/recipes-ai/0452-collection-vegetables-05-02.webp",
+      "sha": "b3db5fe614af7b8af4dc14540d31ee8ff2b7951b"
+    },
+    {
+      "path": "assets/recipes-ai/0453-collection-vegetables-05-03.webp",
+      "sha": "723ca2d69c6faaec2ad8d704a7e8b82e9857fe17"
+    },
+    {
+      "path": "assets/recipes-ai/0454-collection-vegetables-05-04.webp",
+      "sha": "d1c310efc23ed8e04103ba6eba86a1782498872d"
+    },
+    {
+      "path": "assets/recipes-ai/0455-collection-vegetables-05-05.webp",
+      "sha": "e50ab09671be0d49078ab259df03ee575f93ece4"
+    },
+    {
+      "path": "assets/recipes-ai/0456-collection-vegetables-05-06.webp",
+      "sha": "80af9220d03d8667a07e752e9ad79045330fd539"
+    },
+    {
+      "path": "assets/recipes-ai/0457-collection-vegetables-05-07.webp",
+      "sha": "19672b287792d1391df22af857216c81e99ca66c"
+    },
+    {
+      "path": "assets/recipes-ai/0458-collection-vegetables-05-08.webp",
+      "sha": "9b9ca82333a1a945cfecb2d658d9955bf496159d"
+    },
+    {
+      "path": "assets/recipes-ai/0459-collection-vegetables-05-09.webp",
+      "sha": "7c17c18ef5c8b941afd0a633ef923738be29e893"
+    },
+    {
+      "path": "assets/recipes-ai/0460-collection-vegetables-05-10.webp",
+      "sha": "095d0dab3486ad5cae731ea16718a4578cdc89b8"
+    },
+    {
+      "path": "assets/recipes-ai/0461-collection-vegetables-06-01.webp",
+      "sha": "75ade1123c0f9258b987eecf16f6357a9ce9beec"
+    },
+    {
+      "path": "assets/recipes-ai/0462-collection-vegetables-06-02.webp",
+      "sha": "6769e52a4a0b46471030bf40d4c4d8f234b02536"
+    },
+    {
+      "path": "assets/recipes-ai/0463-collection-vegetables-06-03.webp",
+      "sha": "e1356ca40bea9078171e607fbd58ad67e8924c57"
+    },
+    {
+      "path": "assets/recipes-ai/0464-collection-vegetables-06-04.webp",
+      "sha": "94b660bfeb21bd5528d6d46c6da7879ebab87ad8"
+    },
+    {
+      "path": "assets/recipes-ai/0465-collection-vegetables-06-05.webp",
+      "sha": "9c520800a4bded8bd2e3c113cfca31683530081b"
+    },
+    {
+      "path": "assets/recipes-ai/0466-collection-vegetables-06-06.webp",
+      "sha": "e6ab702af160e20483fa79becbcdfcc38aa99326"
+    },
+    {
+      "path": "assets/recipes-ai/0467-collection-vegetables-06-07.webp",
+      "sha": "6e8f459fe8de632dfb7919ed19d07c27afa16451"
+    },
+    {
+      "path": "assets/recipes-ai/0468-collection-vegetables-06-08.webp",
+      "sha": "66997dd1f2106ca049464366cc227a285bd6cc7b"
+    },
+    {
+      "path": "assets/recipes-ai/0469-collection-vegetables-06-09.webp",
+      "sha": "fd161991bbffd3bd3c1fe9ef77814694640feb40"
+    },
+    {
+      "path": "assets/recipes-ai/0470-collection-vegetables-06-10.webp",
+      "sha": "9a1e830346153c09383f56c19a41ae73d573bdad"
+    },
+    {
+      "path": "assets/recipes-ai/0471-collection-vegetables-07-01.webp",
+      "sha": "5c41fc8ab57839e26b11bb5eb30d34c5f7214aeb"
+    },
+    {
+      "path": "assets/recipes-ai/0472-collection-vegetables-07-02.webp",
+      "sha": "6b3bfc23b2823a9f5c3c14a0fe71114f8cdb8a75"
+    },
+    {
+      "path": "assets/recipes-ai/0473-collection-vegetables-07-03.webp",
+      "sha": "a85a1030daaca9abfb838afc44a15096d03f7164"
+    },
+    {
+      "path": "assets/recipes-ai/0474-collection-vegetables-07-04.webp",
+      "sha": "02e80da4f43309cb43e0d787574ba9ae0f21fa73"
+    },
+    {
+      "path": "assets/recipes-ai/0475-collection-vegetables-07-05.webp",
+      "sha": "ce3dc593445859c43c28b4e9a67247bf0260a83f"
+    },
+    {
+      "path": "assets/recipes-ai/0476-collection-vegetables-07-06.webp",
+      "sha": "134a1c7b611648da66fd496d9061430151862a96"
+    },
+    {
+      "path": "assets/recipes-ai/0477-collection-vegetables-07-07.webp",
+      "sha": "538dcbe3db091246fe8c73c1191054fcbeeb1747"
+    },
+    {
+      "path": "assets/recipes-ai/0478-collection-vegetables-07-08.webp",
+      "sha": "5c3f48c7100512dea887a20354699068e973f829"
+    },
+    {
+      "path": "assets/recipes-ai/0479-collection-vegetables-07-09.webp",
+      "sha": "c1988b970036c97e231a17d0b3877d59ce2ab333"
+    },
+    {
+      "path": "assets/recipes-ai/0480-collection-vegetables-07-10.webp",
+      "sha": "6dfd3c41fa8fba42a2819b2a8775247efcc73b03"
+    },
+    {
+      "path": "assets/recipes-ai/0481-collection-vegetables-08-01.webp",
+      "sha": "3c5bc22fd7735d65b7e56ebedf4c37af5f09df49"
+    },
+    {
+      "path": "assets/recipes-ai/0482-collection-vegetables-08-02.webp",
+      "sha": "791fe3c3fbdd64193d0438decabcf69bccb54e54"
+    },
+    {
+      "path": "assets/recipes-ai/0483-collection-vegetables-08-03.webp",
+      "sha": "9a543c86833e09a92cc996d5ec1f0ff2db4ab166"
+    },
+    {
+      "path": "assets/recipes-ai/0484-collection-vegetables-08-04.webp",
+      "sha": "0f89983b05e92f169bb0e576cbbe7499455db890"
+    },
+    {
+      "path": "assets/recipes-ai/0485-collection-vegetables-08-05.webp",
+      "sha": "d19becfec4f1ddb0555c4c5aa9f64cae43ebfa17"
+    },
+    {
+      "path": "assets/recipes-ai/0486-collection-vegetables-08-06.webp",
+      "sha": "079fdbf45507c82ee90d8fa2aaf19250e695dffb"
+    },
+    {
+      "path": "assets/recipes-ai/0487-collection-vegetables-08-07.webp",
+      "sha": "28cc8045134433b6efaeda9e21a8087f5fc3d17d"
+    },
+    {
+      "path": "assets/recipes-ai/0488-collection-vegetables-08-08.webp",
+      "sha": "b38a635358ea666bbd0af253d2a29cb0cbf6f221"
+    },
+    {
+      "path": "assets/recipes-ai/0489-collection-vegetables-08-09.webp",
+      "sha": "0985992515e614975ebd1de3922ed02961f7af6c"
+    },
+    {
+      "path": "assets/recipes-ai/0490-collection-vegetables-08-10.webp",
+      "sha": "3b5723919a6bb86fb80df51fb7cb8d9cd4d4bdec"
+    },
+    {
+      "path": "assets/recipes-ai/0491-collection-vegetables-09-01.webp",
+      "sha": "b05dcb7bb231e77da72fb5200210403db2aa7839"
+    },
+    {
+      "path": "assets/recipes-ai/0492-collection-vegetables-09-02.webp",
+      "sha": "a58fb50c34261be953a6db5c972cc73ae42bb91d"
+    },
+    {
+      "path": "assets/recipes-ai/0493-collection-vegetables-09-03.webp",
+      "sha": "7d35f0e7b6bcf70686546002ecee11cb052fd95f"
+    },
+    {
+      "path": "assets/recipes-ai/0494-collection-vegetables-09-04.webp",
+      "sha": "615f043a82be4925c3ade7fae5d1ee3237a286c3"
+    },
+    {
+      "path": "assets/recipes-ai/0495-collection-vegetables-09-05.webp",
+      "sha": "07ffab8a9b96461c12383a2b26f6ab765265cf69"
+    },
+    {
+      "path": "assets/recipes-ai/0496-collection-vegetables-09-06.webp",
+      "sha": "176a82f91556949a46ce7db4da6e320c2e58603f"
+    },
+    {
+      "path": "assets/recipes-ai/0497-collection-vegetables-09-07.webp",
+      "sha": "e1ce76b99e079c72b166b5fd02a84ba4ba61b05d"
+    },
+    {
+      "path": "assets/recipes-ai/0498-collection-vegetables-09-08.webp",
+      "sha": "896e1d8ac5c2b376cd0956b08a24e1839b348e4f"
+    },
+    {
+      "path": "assets/recipes-ai/0499-collection-vegetables-09-09.webp",
+      "sha": "167429bec2aae483b09e2f747dd124a4aa9b659f"
+    },
+    {
+      "path": "assets/recipes-ai/0500-collection-vegetables-09-10.webp",
+      "sha": "06b3ac150486006d3b92aeeb38bdb3a5b57d652e"
+    },
+    {
+      "path": "assets/recipes-ai/0501-collection-vegetables-10-01.webp",
+      "sha": "cb7855354e2bd280e285a50fd1cedce12c26e98f"
+    },
+    {
+      "path": "assets/recipes-ai/0502-collection-vegetables-10-02.webp",
+      "sha": "61856de39f976537c1d8e37f80db5a7cbaaecf0a"
+    },
+    {
+      "path": "assets/recipes-ai/0503-collection-vegetables-10-03.webp",
+      "sha": "1814b539bc580d145f135a903b14116829372945"
+    },
+    {
+      "path": "assets/recipes-ai/0504-collection-vegetables-10-04.webp",
+      "sha": "ea40b20d48971a658f438193fd9398d463776101"
+    },
+    {
+      "path": "assets/recipes-ai/0505-collection-vegetables-10-05.webp",
+      "sha": "a4da1f1aa36270fcd5ab746ed76127db2ac1ea33"
+    },
+    {
+      "path": "assets/recipes-ai/0506-collection-vegetables-10-06.webp",
+      "sha": "5c66cf06e794288ddf4c6c6da4387649a58fdb67"
+    },
+    {
+      "path": "assets/recipes-ai/0507-collection-vegetables-10-07.webp",
+      "sha": "9cff13e14fcb0c305761215c5b3b80c86224dd72"
+    },
+    {
+      "path": "assets/recipes-ai/0508-collection-vegetables-10-08.webp",
+      "sha": "d1b10532e5422ae66cb751a2350b0250cb5d7d49"
+    },
+    {
+      "path": "assets/recipes-ai/0509-collection-vegetables-10-09.webp",
+      "sha": "75b1f89c6658c069219d1a800c4c6cf1e60cb9f1"
+    },
+    {
+      "path": "assets/recipes-ai/0510-collection-vegetables-10-10.webp",
+      "sha": "2aadab0047f966642493c077ef28b0fbd1966855"
+    },
+    {
+      "path": "assets/recipes-ai/0511-collection-soup-01-03.webp",
+      "sha": "e7f442eac278eb24ecd47237fd3b62d717da09bc"
+    },
+    {
+      "path": "assets/recipes-ai/0512-collection-soup-01-04.webp",
+      "sha": "4b7207ab6e9c3a4c6f122ba3cce65c941802bf7a"
+    },
+    {
+      "path": "assets/recipes-ai/0513-collection-soup-01-05.webp",
+      "sha": "0ea8042ad93e6232d657b241e1946663ca9e3bef"
+    },
+    {
+      "path": "assets/recipes-ai/0514-collection-soup-01-06.webp",
+      "sha": "c2422804acd1365aa8bc026f65c87edb82ec22c6"
+    },
+    {
+      "path": "assets/recipes-ai/0515-collection-soup-01-07.webp",
+      "sha": "a772af648cd947bc9f42e6977de30e876b937e07"
+    },
+    {
+      "path": "assets/recipes-ai/0516-collection-soup-01-08.webp",
+      "sha": "37302a287f28392b8887c4fcfba607014413cdb2"
+    },
+    {
+      "path": "assets/recipes-ai/0517-collection-soup-01-09.webp",
+      "sha": "1ff14e4c62fe565e1e259f7d1c32d7f31b52790e"
+    },
+    {
+      "path": "assets/recipes-ai/0518-collection-soup-01-10.webp",
+      "sha": "01bedccf870c39badb92a0057dc2ef5df920308f"
+    },
+    {
+      "path": "assets/recipes-ai/0519-collection-soup-02-01.webp",
+      "sha": "8b69177fb3332ff39e4a344d39cdfccc79e3b973"
+    },
+    {
+      "path": "assets/recipes-ai/0520-collection-soup-02-02.webp",
+      "sha": "621584afef719a77cc9e8fda4d72b9111469320d"
+    },
+    {
+      "path": "assets/recipes-ai/0521-collection-soup-02-03.webp",
+      "sha": "2a35a2122e4b95a603ae1ac06281d2cc73fc7a8b"
+    },
+    {
+      "path": "assets/recipes-ai/0522-collection-soup-02-04.webp",
+      "sha": "589c93cef68b18c6823328096ae8e9a47c6bb482"
+    },
+    {
+      "path": "assets/recipes-ai/0523-collection-soup-02-05.webp",
+      "sha": "d36763f1efcf35455afe60e36d97632035b45ba8"
+    },
+    {
+      "path": "assets/recipes-ai/0524-collection-soup-02-06.webp",
+      "sha": "a6f1da0a5741c76303644f0f35bbdb27875ceb32"
+    },
+    {
+      "path": "assets/recipes-ai/0525-collection-soup-02-07.webp",
+      "sha": "b99918c5d802dd1df94a55fdcc882f493a0e8402"
+    },
+    {
+      "path": "assets/recipes-ai/0526-collection-soup-02-08.webp",
+      "sha": "e090dfb04ac670069aa323a9c46dbdc7f2d7ce04"
+    },
+    {
+      "path": "assets/recipes-ai/0527-collection-soup-02-09.webp",
+      "sha": "b79454f652eedc822d50c4d26687c497abbd3d99"
+    },
+    {
+      "path": "assets/recipes-ai/0528-collection-soup-02-10.webp",
+      "sha": "c2f75d651bb9507f605a31b04a91b988f529b73f"
+    },
+    {
+      "path": "assets/recipes-ai/0529-collection-soup-03-01.webp",
+      "sha": "de4e0299c3fb0a7a102831c0276c07614f7fdfaa"
+    },
+    {
+      "path": "assets/recipes-ai/0530-collection-soup-03-02.webp",
+      "sha": "82f6c2715fb8b259f6fcd61442be6650e9f478e6"
+    },
+    {
+      "path": "assets/recipes-ai/0531-collection-soup-03-03.webp",
+      "sha": "03595205601378093a36a41f36e4aed9c5183aef"
+    },
+    {
+      "path": "assets/recipes-ai/0532-collection-soup-03-04.webp",
+      "sha": "8c8f3f6c3ef9726c3edc1fbe6c7dd681c12dfc35"
+    },
+    {
+      "path": "assets/recipes-ai/0533-collection-soup-03-05.webp",
+      "sha": "1d188efe8157a6722c8c6d46222d6cffd899541d"
+    },
+    {
+      "path": "assets/recipes-ai/0534-collection-soup-03-06.webp",
+      "sha": "765e0a120fbee1d7620521f2c31eeaf887fc71bb"
+    },
+    {
+      "path": "assets/recipes-ai/0535-collection-soup-03-07.webp",
+      "sha": "2a2fc2be543b711685b121e96247ad5b450087ab"
+    },
+    {
+      "path": "assets/recipes-ai/0536-collection-soup-03-08.webp",
+      "sha": "b8083a06622e3e9775e0c51d3bbf13b333d21238"
+    },
+    {
+      "path": "assets/recipes-ai/0537-collection-soup-03-09.webp",
+      "sha": "ae80c31b31988e7b75c0a4d0cdba26fe04450bda"
+    },
+    {
+      "path": "assets/recipes-ai/0538-collection-soup-03-10.webp",
+      "sha": "c73c75f98c081195890332f0e30c5ea88ba23029"
+    },
+    {
+      "path": "assets/recipes-ai/0539-collection-soup-04-01.webp",
+      "sha": "d2629f6f97e90c4246ad5f156205dacdded38503"
+    },
+    {
+      "path": "assets/recipes-ai/0540-collection-soup-04-02.webp",
+      "sha": "076e9af21cc1eb77e3b0e5985f26caca45db5784"
+    },
+    {
+      "path": "assets/recipes-ai/0541-collection-soup-04-03.webp",
+      "sha": "545e7d439d6544cbbad6fc76748ab909ca078710"
+    },
+    {
+      "path": "assets/recipes-ai/0542-collection-soup-04-04.webp",
+      "sha": "b489c177d29bbd210f47a5a22caa2c697c77bf84"
+    },
+    {
+      "path": "assets/recipes-ai/0543-collection-soup-04-05.webp",
+      "sha": "e764d9dda398bfda8a2747de42e5f73111fd3f97"
+    },
+    {
+      "path": "assets/recipes-ai/0544-collection-soup-04-06.webp",
+      "sha": "e870406a0ad03dfe73ce12f930d6ec5a420814f4"
+    },
+    {
+      "path": "assets/recipes-ai/0545-collection-soup-04-07.webp",
+      "sha": "53a621a3082df1b942cc3c08a2d65e4052fb0b82"
+    },
+    {
+      "path": "assets/recipes-ai/0546-collection-soup-04-08.webp",
+      "sha": "5e3c9ef3a498622f25ed91611c28957df878b798"
+    },
+    {
+      "path": "assets/recipes-ai/0547-collection-soup-04-09.webp",
+      "sha": "01c28731e54a2938e9958e3d62e1dcc84fc65762"
+    },
+    {
+      "path": "assets/recipes-ai/0548-collection-soup-04-10.webp",
+      "sha": "28ddc5c34c5403b6ae03bc10fa9a90cb38e35197"
+    },
+    {
+      "path": "assets/recipes-ai/0549-collection-soup-05-01.webp",
+      "sha": "fe88591f2228cc30a65b93eafea296d02112e3c0"
+    },
+    {
+      "path": "assets/recipes-ai/0550-collection-soup-05-02.webp",
+      "sha": "1da9f9ace54f39f1ad9370faa955cc7c1f810ee2"
+    },
+    {
+      "path": "assets/recipes-ai/0551-collection-soup-05-03.webp",
+      "sha": "8186065371602ce9817f1aef91d650d9cf3f549e"
+    },
+    {
+      "path": "assets/recipes-ai/0552-collection-soup-05-04.webp",
+      "sha": "16de5422b6246460c901968c7cae0b181bfc885e"
+    },
+    {
+      "path": "assets/recipes-ai/0553-collection-soup-05-05.webp",
+      "sha": "49b5c947b2b3b4c9ed50e79ee192ad284f8d5ebd"
+    },
+    {
+      "path": "assets/recipes-ai/0554-collection-soup-05-06.webp",
+      "sha": "88e78906b5b515bd820797bf97977c583c8c83da"
+    },
+    {
+      "path": "assets/recipes-ai/0555-collection-soup-05-07.webp",
+      "sha": "d78351de16c629165354129d23894bbd54f553f5"
+    },
+    {
+      "path": "assets/recipes-ai/0556-collection-soup-05-08.webp",
+      "sha": "3e7df0c800056e574dabe39473653a7ed3894d8b"
+    },
+    {
+      "path": "assets/recipes-ai/0557-collection-soup-05-09.webp",
+      "sha": "700252acc3d927b0667e9219108004b9c2258ee9"
+    },
+    {
+      "path": "assets/recipes-ai/0558-collection-soup-05-10.webp",
+      "sha": "4e22dd9560c5f11b004af74c1d257bb5ddb602e0"
+    },
+    {
+      "path": "assets/recipes-ai/0559-collection-soup-06-01.webp",
+      "sha": "74f56c44d42d4ff63987ed51d0ca2a86eb4015a8"
+    },
+    {
+      "path": "assets/recipes-ai/0560-collection-soup-06-02.webp",
+      "sha": "7bacc7008201059f58fd16c18b77df928ccfa765"
+    },
+    {
+      "path": "assets/recipes-ai/0561-collection-soup-06-03.webp",
+      "sha": "dafc687ae3ac32a8950851f7adb2bfa546d4f578"
+    },
+    {
+      "path": "assets/recipes-ai/0562-collection-soup-06-04.webp",
+      "sha": "5b21806c75341807ffba01494c6c6113ec9f3d67"
+    },
+    {
+      "path": "assets/recipes-ai/0563-collection-soup-06-05.webp",
+      "sha": "df1c8d18d170b445c56f6140e4613897d4aadb9e"
+    },
+    {
+      "path": "assets/recipes-ai/0564-collection-soup-06-06.webp",
+      "sha": "e30d997d785e07000ca451ada7a210fad7fd39e6"
+    },
+    {
+      "path": "assets/recipes-ai/0565-collection-soup-06-07.webp",
+      "sha": "68cff8cf1b0535a4b860c999beaf07782588958f"
+    },
+    {
+      "path": "assets/recipes-ai/0566-collection-soup-06-08.webp",
+      "sha": "6c214cad078e0b26317ed841091271f403844d42"
+    },
+    {
+      "path": "assets/recipes-ai/0567-collection-soup-06-09.webp",
+      "sha": "b6c2d6d079e7aa0e8d78a971e34d5ffc631d68bd"
+    },
+    {
+      "path": "assets/recipes-ai/0568-collection-soup-06-10.webp",
+      "sha": "500fac1f663b358d7cb57dde75936ec8eb105c6d"
+    },
+    {
+      "path": "assets/recipes-ai/0569-collection-soup-07-01.webp",
+      "sha": "dcc965ec9dd2115e90b5830a9707750561684596"
+    },
+    {
+      "path": "assets/recipes-ai/0570-collection-soup-07-02.webp",
+      "sha": "87700fae6a0f3e67132f2de86f3265b28553919f"
+    },
+    {
+      "path": "assets/recipes-ai/0571-collection-soup-07-03.webp",
+      "sha": "da3c93629e2cb46a3fec5555f01c0f2c70ed5bb0"
+    },
+    {
+      "path": "assets/recipes-ai/0572-collection-soup-07-04.webp",
+      "sha": "68bd37ea1d2243a01bf3c1adf4c6162f63654b64"
+    },
+    {
+      "path": "assets/recipes-ai/0573-collection-soup-07-05.webp",
+      "sha": "86fae50abb8557304ca19741e1d5adab6df5dd02"
+    },
+    {
+      "path": "assets/recipes-ai/0574-collection-soup-07-06.webp",
+      "sha": "4749fed466f929556d2ac6af73911076d2ad6f5c"
+    },
+    {
+      "path": "assets/recipes-ai/0575-collection-soup-07-07.webp",
+      "sha": "425a851e4fd6e90523a58ed62071081d237a94c8"
+    },
+    {
+      "path": "assets/recipes-ai/0576-collection-soup-07-08.webp",
+      "sha": "a932fa03cde2f2308af999132ff11cf28667190e"
+    },
+    {
+      "path": "assets/recipes-ai/0577-collection-soup-07-09.webp",
+      "sha": "d6e571dd35c59ab3b7c6a90d96583a311b075eab"
+    },
+    {
+      "path": "assets/recipes-ai/0578-collection-soup-07-10.webp",
+      "sha": "ec5e1b32e098d1ea5af9ab23d972ce9ad885952e"
+    },
+    {
+      "path": "assets/recipes-ai/0579-collection-soup-08-01.webp",
+      "sha": "91feb1807caa9c78c74a6118df0644db39d5bc28"
+    },
+    {
+      "path": "assets/recipes-ai/0580-collection-soup-08-02.webp",
+      "sha": "1f2b93d232b52fa1a2a840c6b5b9ae8f006cefcf"
+    },
+    {
+      "path": "assets/recipes-ai/0581-collection-soup-08-03.webp",
+      "sha": "73b76e52133106655c8ed74f30f51f21025565d5"
+    },
+    {
+      "path": "assets/recipes-ai/0582-collection-soup-08-04.webp",
+      "sha": "4a9d7cf5f591a583e285975d9b2b88079e04d1ee"
+    },
+    {
+      "path": "assets/recipes-ai/0583-collection-soup-08-05.webp",
+      "sha": "5091515d4d8772dfe1c51340e4ac19db658b5f4d"
+    },
+    {
+      "path": "assets/recipes-ai/0584-collection-soup-08-06.webp",
+      "sha": "887da408e43010eb1c59a402b6af0d75a106b4ca"
+    },
+    {
+      "path": "assets/recipes-ai/0585-collection-soup-08-07.webp",
+      "sha": "a90bf5a5f405a27183ea2749da6bd332a4d1bb08"
+    },
+    {
+      "path": "assets/recipes-ai/0586-collection-soup-08-08.webp",
+      "sha": "cb46ff21f6d95a24d59bd95432ca5d1b84e13830"
+    },
+    {
+      "path": "assets/recipes-ai/0587-collection-soup-08-09.webp",
+      "sha": "16e4d2c67c3279df345c22d9ac082f37ccd45519"
+    },
+    {
+      "path": "assets/recipes-ai/0588-collection-soup-08-10.webp",
+      "sha": "95d59580892402e388861e2df5674bc5e9af0584"
+    },
+    {
+      "path": "assets/recipes-ai/0589-collection-soup-09-01.webp",
+      "sha": "2e338a8fa2467a0c5e7e6be3bbe9cbc3fcf107a5"
+    },
+    {
+      "path": "assets/recipes-ai/0590-collection-soup-09-02.webp",
+      "sha": "f346d94f164c52590dc1eb823640ea0b7424291e"
+    },
+    {
+      "path": "assets/recipes-ai/0591-collection-soup-09-03.webp",
+      "sha": "a7a403dc2c5b4c754dc142eb6a09da716ec2476b"
+    },
+    {
+      "path": "assets/recipes-ai/0592-collection-soup-09-04.webp",
+      "sha": "fd7bcb39e2f7189825f89946005828452a76fd4e"
+    },
+    {
+      "path": "assets/recipes-ai/0593-collection-soup-09-05.webp",
+      "sha": "99712cbd09abce115fad6f6d415990153a55fbe0"
+    },
+    {
+      "path": "assets/recipes-ai/0594-collection-soup-09-06.webp",
+      "sha": "c5ccef2b70cb728ff670b697f649e91fd754c8de"
+    },
+    {
+      "path": "assets/recipes-ai/0595-collection-soup-09-07.webp",
+      "sha": "5724cffdb1e10a39e28a528cbe9dce50f10cc555"
+    },
+    {
+      "path": "assets/recipes-ai/0596-collection-soup-09-08.webp",
+      "sha": "361ae07534e3b34375ac86dc726927da764ca671"
+    },
+    {
+      "path": "assets/recipes-ai/0597-collection-soup-09-09.webp",
+      "sha": "e6e7435b771b3fd6457b173bc6ba15c8ec4dd5c3"
+    },
+    {
+      "path": "assets/recipes-ai/0598-collection-soup-09-10.webp",
+      "sha": "6e1ae6c869ddcc9cf83ecd7135341a78a0af91ae"
+    },
+    {
+      "path": "assets/recipes-ai/0599-collection-soup-10-01.webp",
+      "sha": "31a723841f052038e2bb0093b4fee18a05f959fb"
+    },
+    {
+      "path": "assets/recipes-ai/0600-collection-soup-10-02.webp",
+      "sha": "f0fd27c8badccd57298143e3012f7d26c59889c6"
+    },
+    {
+      "path": "assets/recipes-ai/0601-collection-soup-10-03.webp",
+      "sha": "71430777a9571a69e768526ff2364ad653301438"
+    },
+    {
+      "path": "assets/recipes-ai/0602-collection-soup-10-04.webp",
+      "sha": "96f58204fa9847637452e3f0c2f7211d537dd378"
+    },
+    {
+      "path": "assets/recipes-ai/0603-collection-soup-10-05.webp",
+      "sha": "df553db5b97a8b12413e6b8272d6d7684f5d0805"
+    },
+    {
+      "path": "assets/recipes-ai/0604-collection-soup-10-06.webp",
+      "sha": "fbab4e7ac65cc95fc4f7b4441cf73d0c0cc908cb"
+    },
+    {
+      "path": "assets/recipes-ai/0605-collection-soup-10-07.webp",
+      "sha": "009ca7101b14cd72274057a4a8c94981124dadfd"
+    },
+    {
+      "path": "assets/recipes-ai/0606-collection-soup-10-08.webp",
+      "sha": "328a06f9a3062ed1daaa1bb7b37a40bae498235c"
+    },
+    {
+      "path": "assets/recipes-ai/0607-collection-soup-10-09.webp",
+      "sha": "2cbe29fd293d3d8c1b889dc8888e25d5a58cd29f"
+    },
+    {
+      "path": "assets/recipes-ai/0608-collection-soup-10-10.webp",
+      "sha": "f5422b44166fba8fc6017e138db44ef18e4f417a"
+    },
+    {
+      "path": "assets/recipes-ai/0609-collection-salads-01-03.webp",
+      "sha": "320716669e2ae8764a3c176a27c598eae4010301"
+    },
+    {
+      "path": "assets/recipes-ai/0610-collection-salads-01-04.webp",
+      "sha": "33f879aa784f5c8aaaa86094eeea72d19073793b"
+    },
+    {
+      "path": "assets/recipes-ai/0611-collection-salads-01-05.webp",
+      "sha": "2a0f46e0ca60ec69a4bdd26fab05842d9b879472"
+    },
+    {
+      "path": "assets/recipes-ai/0612-collection-salads-01-06.webp",
+      "sha": "9dfcc97ee72d723dcaca9cde99106b2c8692fce7"
+    },
+    {
+      "path": "assets/recipes-ai/0613-collection-salads-01-07.webp",
+      "sha": "d5f7266d99334cc2a80bfda10933fedda2f5c0e5"
+    },
+    {
+      "path": "assets/recipes-ai/0614-collection-salads-01-08.webp",
+      "sha": "ff12b378a8c294e80a82bee8f4ed9134b5494955"
+    },
+    {
+      "path": "assets/recipes-ai/0615-collection-salads-01-09.webp",
+      "sha": "baa52420af1c48a0b02adb90c2c0127079e46761"
+    },
+    {
+      "path": "assets/recipes-ai/0616-collection-salads-01-10.webp",
+      "sha": "260b8c09c1b2368a9f94edf8b693eab83f8ef46c"
+    },
+    {
+      "path": "assets/recipes-ai/0617-collection-salads-02-01.webp",
+      "sha": "8a59984763b5b4935405bc6aad368d4422a7ba7c"
+    },
+    {
+      "path": "assets/recipes-ai/0618-collection-salads-02-02.webp",
+      "sha": "b2fbcef0c7a1cbdc2b1d07475ebc26c0029e664b"
+    },
+    {
+      "path": "assets/recipes-ai/0619-collection-salads-02-03.webp",
+      "sha": "9f97fc5f5b63fcdc7257d62689eff3dc9ba8d938"
+    },
+    {
+      "path": "assets/recipes-ai/0620-collection-salads-02-04.webp",
+      "sha": "1754494c65f710519dc0668ff3473d4a5b2bec9b"
+    },
+    {
+      "path": "assets/recipes-ai/0621-collection-salads-02-05.webp",
+      "sha": "934a1e15c0f77c3cb35a716c86c29ad8f0e71049"
+    },
+    {
+      "path": "assets/recipes-ai/0622-collection-salads-02-06.webp",
+      "sha": "8996c632dd917f15f012f8b29f19fcbf7a6ef8c6"
+    },
+    {
+      "path": "assets/recipes-ai/0623-collection-salads-02-07.webp",
+      "sha": "e0c2a94fa384150fb3ad7337a9dca3f36913f34a"
+    },
+    {
+      "path": "assets/recipes-ai/0624-collection-salads-02-08.webp",
+      "sha": "8afb96b3e10383e9c808a363a5d6edf452c41c9b"
+    },
+    {
+      "path": "assets/recipes-ai/0625-collection-salads-02-09.webp",
+      "sha": "8288f58bfd7a961282136ca2af14bd4909c26987"
+    },
+    {
+      "path": "assets/recipes-ai/0626-collection-salads-02-10.webp",
+      "sha": "a80c41ae00750ec8796421c5ea4b60e3626d7227"
+    },
+    {
+      "path": "assets/recipes-ai/0627-collection-salads-03-01.webp",
+      "sha": "b50b708c94d7638ea78f2402cc6f412bc55e4bc0"
+    },
+    {
+      "path": "assets/recipes-ai/0628-collection-salads-03-02.webp",
+      "sha": "43f537a0df783458fa896997a5ad195882830de9"
+    },
+    {
+      "path": "assets/recipes-ai/0629-collection-salads-03-03.webp",
+      "sha": "4cdda037994feff79b857e1bfefc8f7a1f3427fe"
+    },
+    {
+      "path": "assets/recipes-ai/0630-collection-salads-03-04.webp",
+      "sha": "9a05002187538a07fac8587c419be445e50010df"
+    },
+    {
+      "path": "assets/recipes-ai/0631-collection-salads-03-05.webp",
+      "sha": "ffeb66741ffc431142b1ade9bceaac386dad9fcf"
+    },
+    {
+      "path": "assets/recipes-ai/0632-collection-salads-03-06.webp",
+      "sha": "fae2c161daae95aa319a915d1db7548890e1b532"
+    },
+    {
+      "path": "assets/recipes-ai/0633-collection-salads-03-07.webp",
+      "sha": "0d8e2600bec73290897824170e90de88eafe39fe"
+    },
+    {
+      "path": "assets/recipes-ai/0634-collection-salads-03-08.webp",
+      "sha": "d5aae3b996e12062e79a8d3c510702ddbb97a9e2"
+    },
+    {
+      "path": "assets/recipes-ai/0635-collection-salads-03-09.webp",
+      "sha": "194d42b99da0751ecb17eb2706499f3b0209a3ad"
+    },
+    {
+      "path": "assets/recipes-ai/0636-collection-salads-03-10.webp",
+      "sha": "9f72c5fed045e3c096421b32a7c71a27f5d2604f"
+    },
+    {
+      "path": "assets/recipes-ai/0637-collection-salads-04-01.webp",
+      "sha": "db162fedec069b15372ac878302f71e926460208"
+    },
+    {
+      "path": "assets/recipes-ai/0638-collection-salads-04-02.webp",
+      "sha": "a2160423a95147bd317ae6914e516ff822e8b78f"
+    },
+    {
+      "path": "assets/recipes-ai/0639-collection-salads-04-03.webp",
+      "sha": "175d8f0d34c0a7e1600fed2e8b026f4ba7c7b4b6"
+    },
+    {
+      "path": "assets/recipes-ai/0640-collection-salads-04-04.webp",
+      "sha": "e58667421b7045623e699823a35e1deb47219b40"
+    },
+    {
+      "path": "assets/recipes-ai/0641-collection-salads-04-05.webp",
+      "sha": "0a7e2029633d94630dcbdbb6867ae5a92e4d6c35"
+    },
+    {
+      "path": "assets/recipes-ai/0642-collection-salads-04-06.webp",
+      "sha": "96c122416648e3fa52226cedc2e08907bbf41896"
+    },
+    {
+      "path": "assets/recipes-ai/0643-collection-salads-04-07.webp",
+      "sha": "a47a13b632ff24810d68d82533ea6749f69f1e47"
+    },
+    {
+      "path": "assets/recipes-ai/0644-collection-salads-04-08.webp",
+      "sha": "a21526803be9b7d6626e9bb374088bc37f7ba7bc"
+    },
+    {
+      "path": "assets/recipes-ai/0645-collection-salads-04-09.webp",
+      "sha": "a427a6fa3f7889595b929411fef9ae281ac24a28"
+    },
+    {
+      "path": "assets/recipes-ai/0646-collection-salads-04-10.webp",
+      "sha": "720056ab92d7802d4175d568ad087aa2104eea0b"
+    },
+    {
+      "path": "assets/recipes-ai/0647-collection-salads-05-01.webp",
+      "sha": "e44020cf2c8376b7acec1a54742029a6b47b7f29"
+    },
+    {
+      "path": "assets/recipes-ai/0648-collection-salads-05-02.webp",
+      "sha": "e36431e15d73439eeaf614defad2b113e03007df"
+    },
+    {
+      "path": "assets/recipes-ai/0649-collection-salads-05-03.webp",
+      "sha": "b452c5de8e08ec5b1ae85fff632be011693b3764"
+    },
+    {
+      "path": "assets/recipes-ai/0650-collection-salads-05-04.webp",
+      "sha": "57666407bffbd70a8bc94df45ac98c1b573f6290"
+    },
+    {
+      "path": "assets/recipes-ai/0651-collection-salads-05-05.webp",
+      "sha": "9925060c2915493b0f6fb93b38a665a58bf4dca6"
+    },
+    {
+      "path": "assets/recipes-ai/0652-collection-salads-05-06.webp",
+      "sha": "bbec696f42379086e46070a6cc963d9919fce048"
+    },
+    {
+      "path": "assets/recipes-ai/0653-collection-salads-05-07.webp",
+      "sha": "4ceccc35d3bbf26411b2a5417d81e8c84f9a4080"
+    },
+    {
+      "path": "assets/recipes-ai/0654-collection-salads-05-08.webp",
+      "sha": "d85de234d2e3c0871309e66ad3dec65c17f010b5"
+    },
+    {
+      "path": "assets/recipes-ai/0655-collection-salads-05-09.webp",
+      "sha": "bb7e991f9ac7683893acb6137eb702ba88d4e9d7"
+    },
+    {
+      "path": "assets/recipes-ai/0656-collection-salads-05-10.webp",
+      "sha": "f934664df1b55accd3b67e8d5537c253254ee52d"
+    },
+    {
+      "path": "assets/recipes-ai/0657-collection-salads-06-01.webp",
+      "sha": "227926e9257308fc1e7c6ee0afe6fd96633ef3cc"
+    },
+    {
+      "path": "assets/recipes-ai/0658-collection-salads-06-02.webp",
+      "sha": "0469db6a376b949316fc7d58cefbc4d184f076a4"
+    },
+    {
+      "path": "assets/recipes-ai/0659-collection-salads-06-03.webp",
+      "sha": "e153d9e1f8dd7093dd048184ceee4963e6aa0bd4"
+    },
+    {
+      "path": "assets/recipes-ai/0660-collection-salads-06-04.webp",
+      "sha": "78499a792839f1550b05069b21cbcf3a233fe386"
+    },
+    {
+      "path": "assets/recipes-ai/0661-collection-salads-06-05.webp",
+      "sha": "cd35e6589023697fd9ac681fc5137102d6fd62e4"
+    },
+    {
+      "path": "assets/recipes-ai/0662-collection-salads-06-06.webp",
+      "sha": "320392f6e6cdb8e8f07f7af597b516e3b8d3a2c0"
+    },
+    {
+      "path": "assets/recipes-ai/0663-collection-salads-06-07.webp",
+      "sha": "665129f53608d207548f9494a529474fe60bf654"
+    },
+    {
+      "path": "assets/recipes-ai/0664-collection-salads-06-08.webp",
+      "sha": "9e97905cfe756639e28784456ebd69a275333fed"
+    },
+    {
+      "path": "assets/recipes-ai/0665-collection-salads-06-09.webp",
+      "sha": "23c2ead869a0e2bbd3a897cfd5d8906b04432339"
+    },
+    {
+      "path": "assets/recipes-ai/0666-collection-salads-06-10.webp",
+      "sha": "d3f1e4a4c8f959688986cc87c35d6652442e163e"
+    },
+    {
+      "path": "assets/recipes-ai/0667-collection-salads-07-01.webp",
+      "sha": "3694ca8b0cf4dce26db29d0de35a56e56f32a770"
+    },
+    {
+      "path": "assets/recipes-ai/0668-collection-salads-07-02.webp",
+      "sha": "5f8a3d0d478631119f858a43f5aad47cf68012d0"
+    },
+    {
+      "path": "assets/recipes-ai/0669-collection-salads-07-03.webp",
+      "sha": "e415d8731c01b40e9aa4628a783fe3c8306b1a35"
+    },
+    {
+      "path": "assets/recipes-ai/0670-collection-salads-07-04.webp",
+      "sha": "1e138a972390176188272a429e6f0b0ea6d9de44"
+    },
+    {
+      "path": "assets/recipes-ai/0671-collection-salads-07-05.webp",
+      "sha": "aa87c42c12eff78e3168fbae3b3e0623802d8a47"
+    },
+    {
+      "path": "assets/recipes-ai/0672-collection-salads-07-06.webp",
+      "sha": "f5a1b450dc0e60abd959f77a19c6da4afc9187bb"
+    },
+    {
+      "path": "assets/recipes-ai/0673-collection-salads-07-07.webp",
+      "sha": "0d896c2f229d3f83410bd699e98b3f855d6a0936"
+    },
+    {
+      "path": "assets/recipes-ai/0674-collection-salads-07-08.webp",
+      "sha": "b5f68fcc99b36d0328c74468c158a22f8347ccfe"
+    },
+    {
+      "path": "assets/recipes-ai/0675-collection-salads-07-09.webp",
+      "sha": "a371b0612f36d1b97731976142fdcef2cb43ec9e"
+    },
+    {
+      "path": "assets/recipes-ai/0676-collection-salads-07-10.webp",
+      "sha": "d57e22c3335f1de9aa608e7edd85f36efcd54f4e"
+    },
+    {
+      "path": "assets/recipes-ai/0677-collection-salads-08-01.webp",
+      "sha": "c9634c3590d09e4a55750ce7a67db78f3dd34f26"
+    },
+    {
+      "path": "assets/recipes-ai/0678-collection-salads-08-02.webp",
+      "sha": "04468bcd0ce79eb7660b74e85072e6e4f3af95ef"
+    },
+    {
+      "path": "assets/recipes-ai/0679-collection-salads-08-03.webp",
+      "sha": "077e0821cf943ad6eeea27bd6e0d031946524b69"
+    },
+    {
+      "path": "assets/recipes-ai/0680-collection-salads-08-04.webp",
+      "sha": "bf2cdca784e92db657838ccfaa17468abd4b93c9"
+    },
+    {
+      "path": "assets/recipes-ai/0681-collection-salads-08-05.webp",
+      "sha": "b019589b23cdabe2113c1610712efe9a80190209"
+    },
+    {
+      "path": "assets/recipes-ai/0682-collection-salads-08-06.webp",
+      "sha": "bf7c6126b33791794fb90e3065f2421b75077dab"
+    },
+    {
+      "path": "assets/recipes-ai/0683-collection-salads-08-07.webp",
+      "sha": "02bd23c0ad5791df81b8e0ae732384af8e9086ca"
+    },
+    {
+      "path": "assets/recipes-ai/0684-collection-salads-08-08.webp",
+      "sha": "474c796721e285b8226747b5a0a7b9f3e838e5ce"
+    },
+    {
+      "path": "assets/recipes-ai/0685-collection-salads-08-09.webp",
+      "sha": "649e83b06bb1ddd8443e6bf5a16706fd269e311f"
+    },
+    {
+      "path": "assets/recipes-ai/0686-collection-salads-08-10.webp",
+      "sha": "bee7ab386d4cdea81008ce216e36073f3a215c5b"
+    },
+    {
+      "path": "assets/recipes-ai/0687-collection-salads-09-01.webp",
+      "sha": "3cde163e5eb401fd4c81c8b8f34069cd93954466"
+    },
+    {
+      "path": "assets/recipes-ai/0688-collection-salads-09-02.webp",
+      "sha": "f5893f8b8038ef6dd8dfffe13cb7f6ed43c7967a"
+    },
+    {
+      "path": "assets/recipes-ai/0689-collection-salads-09-03.webp",
+      "sha": "190d78845be04af727dbc38e676432fabb0dadfa"
+    },
+    {
+      "path": "assets/recipes-ai/0690-collection-salads-09-04.webp",
+      "sha": "f77b13182b5b40b761bbd043a8a1e5ad673bb5d7"
+    },
+    {
+      "path": "assets/recipes-ai/0691-collection-salads-09-05.webp",
+      "sha": "3b655971c58b9150c90a37409c1284a4a184ce07"
+    },
+    {
+      "path": "assets/recipes-ai/0692-collection-salads-09-06.webp",
+      "sha": "13071323a854b0a496c8ffddcaa3044f400bbacf"
+    },
+    {
+      "path": "assets/recipes-ai/0693-collection-salads-09-07.webp",
+      "sha": "d1a82bdc90b8299b48eb6b56f818196cb85d4340"
+    },
+    {
+      "path": "assets/recipes-ai/0694-collection-salads-09-08.webp",
+      "sha": "586d62ed597a662ea155bfa8df001a261d5b596a"
+    },
+    {
+      "path": "assets/recipes-ai/0695-collection-salads-09-09.webp",
+      "sha": "002374bfd5a2c86b7bf6a7fbfb21cdfe32b22dca"
+    },
+    {
+      "path": "assets/recipes-ai/0696-collection-salads-09-10.webp",
+      "sha": "99acd5a1f6b6638b1d67b999a0121eb9fe14caca"
+    },
+    {
+      "path": "assets/recipes-ai/0697-collection-salads-10-01.webp",
+      "sha": "6ebf17aed062bf347d70b2ef7dcb32c40e20e7fb"
+    },
+    {
+      "path": "assets/recipes-ai/0698-collection-salads-10-02.webp",
+      "sha": "baf9c17ebde4eee27cff1bfd759aff13506abe45"
+    },
+    {
+      "path": "assets/recipes-ai/0699-collection-salads-10-03.webp",
+      "sha": "6ed9af725f11c29e49895670a2f15064309a55c4"
+    },
+    {
+      "path": "assets/recipes-ai/0700-collection-salads-10-04.webp",
+      "sha": "9d7386c6be2f3c08165c6d44a4b156b05bd520b3"
+    },
+    {
+      "path": "assets/recipes-ai/0701-collection-salads-10-05.webp",
+      "sha": "60f34cdcd4fad2d045a49e42947d335135cca242"
+    },
+    {
+      "path": "assets/recipes-ai/0702-collection-salads-10-06.webp",
+      "sha": "eb96b67db9dc6be5e64e266f91194d1b73f1d78b"
+    },
+    {
+      "path": "assets/recipes-ai/0703-collection-salads-10-07.webp",
+      "sha": "414ce1496a3e3f6d07a4d59ec0bb7a010c50bb36"
+    },
+    {
+      "path": "assets/recipes-ai/0704-collection-salads-10-08.webp",
+      "sha": "92189533b8d7072d4c5de2a59698a8506c360330"
+    },
+    {
+      "path": "assets/recipes-ai/0705-collection-salads-10-09.webp",
+      "sha": "1410ca376f7d812ca618d1a9ac28a2fa9e1ca048"
+    },
+    {
+      "path": "assets/recipes-ai/0706-collection-salads-10-10.webp",
+      "sha": "6784cf4d0556ec1951ceb094b6c7fd4c279b3cd0"
+    },
+    {
+      "path": "assets/recipes-ai/0707-collection-pastry-01-03-no-eggs.webp",
+      "sha": "faaab6a40e13317f21fe38f4bdaee6dff7db7f7b"
+    },
+    {
+      "path": "assets/recipes-ai/0708-collection-pastry-01-04-no-eggs.webp",
+      "sha": "d83d2800d7bae67162b3d020f1d8304c5f86d3df"
+    },
+    {
+      "path": "assets/recipes-ai/0709-collection-pastry-01-05-no-eggs.webp",
+      "sha": "3685417f377faaa6de748a9bef4be3664bb40e6d"
+    },
+    {
+      "path": "assets/recipes-ai/0710-collection-pastry-01-06-no-eggs.webp",
+      "sha": "fa005ef8518f4d7560ee9aee426fa6166ccb951f"
+    },
+    {
+      "path": "assets/recipes-ai/0711-collection-pastry-01-07-no-eggs.webp",
+      "sha": "7cd51a139787a43a48a11d342204072e74b62961"
+    },
+    {
+      "path": "assets/recipes-ai/0712-collection-pastry-01-08.webp",
+      "sha": "3d1e6d365186ee503f2fdc175e208691da878fe4"
+    },
+    {
+      "path": "assets/recipes-ai/0713-collection-pastry-01-09-no-eggs.webp",
+      "sha": "8dd1b9a883a4a687f5558b13631870c39fb7f3c1"
+    },
+    {
+      "path": "assets/recipes-ai/0714-collection-pastry-01-10-no-eggs.webp",
+      "sha": "ca37d8627206ac69fd35a479801c495d902e06e1"
+    },
+    {
+      "path": "assets/recipes-ai/0715-collection-pastry-02-01-no-eggs.webp",
+      "sha": "235bfba64e7ba7030f8f3087a88fffc55f9fdb25"
+    },
+    {
+      "path": "assets/recipes-ai/0716-collection-pastry-02-02-no-eggs.webp",
+      "sha": "a2173ae7f43e9714ed0979988539e7eda5b021e2"
+    },
+    {
+      "path": "assets/recipes-ai/0717-collection-pastry-02-03.webp",
+      "sha": "33f46516da96204aa3b5693a685acf53f3de4437"
+    },
+    {
+      "path": "assets/recipes-ai/0718-collection-pastry-02-04-no-eggs.webp",
+      "sha": "9ab96fc384edb1ea1831a3c334ad6e8f49f05ec3"
+    },
+    {
+      "path": "assets/recipes-ai/0719-collection-pastry-02-05-no-eggs.webp",
+      "sha": "fc3d89cd756fe8ad7bac0087f087745acb02e686"
+    },
+    {
+      "path": "assets/recipes-ai/0720-collection-pastry-02-06.webp",
+      "sha": "8962ce4113cb6fb2ad9a4b6658ab40d4fdc3ccb1"
+    },
+    {
+      "path": "assets/recipes-ai/0721-collection-pastry-02-07-no-eggs.webp",
+      "sha": "08d2318a6da4c5927544f0fffb2809da221627b7"
+    },
+    {
+      "path": "assets/recipes-ai/0722-collection-pastry-02-08.webp",
+      "sha": "a98242e4e33afee9cd720153df32997b3de1d212"
+    },
+    {
+      "path": "assets/recipes-ai/0723-collection-pastry-02-09.webp",
+      "sha": "9662ce11cff6ccbb355de4e350e90628e507c62c"
+    },
+    {
+      "path": "assets/recipes-ai/0724-collection-pastry-02-10-no-eggs.webp",
+      "sha": "b6a4cc0d67d4f0a85fdb03da74542334941a22f5"
+    },
+    {
+      "path": "assets/recipes-ai/0725-collection-pastry-03-01-no-eggs.webp",
+      "sha": "ca4e4c26e2c46a42b718bd8170fd939446f3360f"
+    },
+    {
+      "path": "assets/recipes-ai/0726-collection-pastry-03-02.webp",
+      "sha": "9deb20cf1c0229bc09cd4478e84d6331beebf2f5"
+    },
+    {
+      "path": "assets/recipes-ai/0727-collection-pastry-03-03-no-eggs.webp",
+      "sha": "b9843d20fcf1cfbfc6ee7cfadf394fdcc70f9747"
+    },
+    {
+      "path": "assets/recipes-ai/0728-collection-pastry-03-04-no-eggs.webp",
+      "sha": "c375444cf3d18b17015f420068de9105b4d068bf"
+    },
+    {
+      "path": "assets/recipes-ai/0729-collection-pastry-03-05-no-eggs.webp",
+      "sha": "f214ac295e5824d37d9ae4373153329be7e9b6a1"
+    },
+    {
+      "path": "assets/recipes-ai/0730-collection-pastry-03-06.webp",
+      "sha": "a6775e7cfbd205d891545936204eecce4eab0cbe"
+    },
+    {
+      "path": "assets/recipes-ai/0731-collection-pastry-03-07.webp",
+      "sha": "0dcc94ac979f9694cbc094694fc4c28518f53ffd"
+    },
+    {
+      "path": "assets/recipes-ai/0732-collection-pastry-03-08.webp",
+      "sha": "95d9b99101bdd1afc09fa276a7bec1c4d5cb029a"
+    },
+    {
+      "path": "assets/recipes-ai/0733-collection-pastry-03-09.webp",
+      "sha": "cfedf6806b0a45e9d6d76dc3a341e39f82668cbb"
+    },
+    {
+      "path": "assets/recipes-ai/0734-collection-pastry-03-10-no-eggs.webp",
+      "sha": "132c52ec5ac4a496f3bb65a4a0486cda2c2cfff5"
+    },
+    {
+      "path": "assets/recipes-ai/0735-collection-pastry-04-01-no-eggs.webp",
+      "sha": "d10275bd3dd5918a6287b88ef180cecebcd4337a"
+    },
+    {
+      "path": "assets/recipes-ai/0736-collection-pastry-04-02-no-eggs.webp",
+      "sha": "ea18371c4b6f7ea9e2cb363c8aef0d5d231d44f0"
+    },
+    {
+      "path": "assets/recipes-ai/0737-collection-pastry-04-03-no-eggs.webp",
+      "sha": "591233bfc9c740daad6244eced6969b795b2fc45"
+    },
+    {
+      "path": "assets/recipes-ai/0738-collection-pastry-04-04-no-eggs.webp",
+      "sha": "181a630e6f2ba0cad219f2497411828e0fc12ee8"
+    },
+    {
+      "path": "assets/recipes-ai/0739-collection-pastry-04-05-no-eggs.webp",
+      "sha": "cfd98c4e3c4f786e4faf664182fc190186fd4cd0"
+    },
+    {
+      "path": "assets/recipes-ai/0740-collection-pastry-04-06.webp",
+      "sha": "4a8bb91e60fcae4824bc44d749821b88e875f431"
+    },
+    {
+      "path": "assets/recipes-ai/0741-collection-pastry-04-07-no-eggs.webp",
+      "sha": "30d10583f10ea2e5745ba15d90642eb97aef2a27"
+    },
+    {
+      "path": "assets/recipes-ai/0742-collection-pastry-04-08.webp",
+      "sha": "f5d62165c5ebada6d9edaa3c3420c757e8ea8eeb"
+    },
+    {
+      "path": "assets/recipes-ai/0743-collection-pastry-04-09.webp",
+      "sha": "921ffcfbcf0e482c42e2a1ae80194a6a6951fcbf"
+    },
+    {
+      "path": "assets/recipes-ai/0744-collection-pastry-04-10-no-eggs.webp",
+      "sha": "141671c6ca4931e29e1295e1e4a1a5f453153b86"
+    },
+    {
+      "path": "assets/recipes-ai/0745-collection-pastry-05-01-no-eggs.webp",
+      "sha": "35d50bc80ef9c18a2441dc409fe3f7212a71c9e5"
+    },
+    {
+      "path": "assets/recipes-ai/0746-collection-pastry-05-02.webp",
+      "sha": "f804f40a8be35f01ce18418d87d15121f41e8434"
+    },
+    {
+      "path": "assets/recipes-ai/0747-collection-pastry-05-03-no-eggs.webp",
+      "sha": "564e85045408aeacd511dc1cbf7da80ad0643ec7"
+    },
+    {
+      "path": "assets/recipes-ai/0748-collection-pastry-05-04.webp",
+      "sha": "eba23b11782e54a4d421800ebf58411b2e60fc47"
+    },
+    {
+      "path": "assets/recipes-ai/0749-collection-pastry-05-05-no-eggs.webp",
+      "sha": "81a39eb37afd7c5a330adde8a4a210c3e75b503f"
+    },
+    {
+      "path": "assets/recipes-ai/0750-collection-pastry-05-06.webp",
+      "sha": "d6d5d9cc8362d51cbd859fdd3842ae03769679cc"
+    },
+    {
+      "path": "assets/recipes-ai/0751-collection-pastry-05-07-no-eggs.webp",
+      "sha": "984986d54efa5758d5e1f017cadd9a47c41d093d"
+    },
+    {
+      "path": "assets/recipes-ai/0752-collection-pastry-05-08.webp",
+      "sha": "ca15548028be811861b73e83e49d034969ce748c"
+    },
+    {
+      "path": "assets/recipes-ai/0753-collection-pastry-05-09.webp",
+      "sha": "d49599d8588d18933e2a64a3fcd44da03b7dbe5d"
+    },
+    {
+      "path": "assets/recipes-ai/0754-collection-pastry-05-10-no-eggs.webp",
+      "sha": "2e0560c1d2ce2f41de295d021797de28dc6b9891"
+    },
+    {
+      "path": "assets/recipes-ai/0755-collection-pastry-06-01.webp",
+      "sha": "0b16a6fec863bc87b4fca472fb4d4f8bb5b083fb"
+    },
+    {
+      "path": "assets/recipes-ai/0756-collection-pastry-06-02.webp",
+      "sha": "ec4d3da793bef31208cb63b9fa902b8d33b753ae"
+    },
+    {
+      "path": "assets/recipes-ai/0757-collection-pastry-06-03.webp",
+      "sha": "8dd3ad95a0a55e33c3372365d186c86093522c26"
+    },
+    {
+      "path": "assets/recipes-ai/0758-collection-pastry-06-04.webp",
+      "sha": "ca1e4ba216eb129dd7f590cc5cad4bb8fe3afb43"
+    },
+    {
+      "path": "assets/recipes-ai/0759-collection-pastry-06-05.webp",
+      "sha": "096a295724814b9f742e23d54726ffb8b3f05485"
+    },
+    {
+      "path": "assets/recipes-ai/0760-collection-pastry-06-06.webp",
+      "sha": "bc16fe1987eda4c8b152bf15f0001635c484552c"
+    },
+    {
+      "path": "assets/recipes-ai/0761-collection-pastry-06-07.webp",
+      "sha": "52188f8b1b975101f5bf0c0b74618534eb59f646"
+    },
+    {
+      "path": "assets/recipes-ai/0762-collection-pastry-06-08.webp",
+      "sha": "ac7a9743ffcd8b1676a0298ccfa84e4b388618e4"
+    },
+    {
+      "path": "assets/recipes-ai/0763-collection-pastry-06-09.webp",
+      "sha": "56af7e77c24de089075807e9ece7372a2e02d5ec"
+    },
+    {
+      "path": "assets/recipes-ai/0764-collection-pastry-06-10.webp",
+      "sha": "6c0bb9aac08a23e9b981ccc9bfd16fc4ca56e87d"
+    },
+    {
+      "path": "assets/recipes-ai/0765-collection-pastry-07-01-no-eggs.webp",
+      "sha": "c2e0631be96b70ad67c8f9eb6b8b010b22a558ca"
+    },
+    {
+      "path": "assets/recipes-ai/0766-collection-pastry-07-02.webp",
+      "sha": "278c3f58e8ae3d180344cbe5472bb765f8315e53"
+    },
+    {
+      "path": "assets/recipes-ai/0767-collection-pastry-07-03-no-eggs.webp",
+      "sha": "5de542fece6b3a4d1b8c7d3dfc4828996956f998"
+    },
+    {
+      "path": "assets/recipes-ai/0768-collection-pastry-07-04.webp",
+      "sha": "4261b8bcb7aa24edcbc035bcf12f23f9cacda09c"
+    },
+    {
+      "path": "assets/recipes-ai/0769-collection-pastry-07-05.webp",
+      "sha": "a28b6ae21604398ed0b3407c9f8764547ad1048f"
+    },
+    {
+      "path": "assets/recipes-ai/0770-collection-pastry-07-06.webp",
+      "sha": "d8b6bff61cd8ece71fd38710415002a734cfd98f"
+    },
+    {
+      "path": "assets/recipes-ai/0771-collection-pastry-07-07.webp",
+      "sha": "85f8f5609afe6ba8a87e86cda5da236ebb0a794e"
+    },
+    {
+      "path": "assets/recipes-ai/0772-collection-pastry-07-08-no-eggs.webp",
+      "sha": "28601b2fe110c89f1662287bd5f8580309e03c65"
+    },
+    {
+      "path": "assets/recipes-ai/0773-collection-pastry-07-09.webp",
+      "sha": "f71f8081ff292389c4c90bc492f41eb4cde4ab30"
+    },
+    {
+      "path": "assets/recipes-ai/0774-collection-pastry-07-10.webp",
+      "sha": "f29d992d6beffd45af1128a3a22b5ea71422a114"
+    },
+    {
+      "path": "assets/recipes-ai/0775-collection-pastry-08-01.webp",
+      "sha": "388065f7c8a2210b914e56e730cfcb6a032dc564"
+    },
+    {
+      "path": "assets/recipes-ai/0776-collection-pastry-08-02.webp",
+      "sha": "9c39dd610b34e2f0ac02168a5becd2776101b535"
+    },
+    {
+      "path": "assets/recipes-ai/0777-collection-pastry-08-03.webp",
+      "sha": "e2038735e33a31cc2b2af2e1914ce204e085e11c"
+    },
+    {
+      "path": "assets/recipes-ai/0778-collection-pastry-08-04.webp",
+      "sha": "88955bf354ceb625480b714ff5e7f4ed9c6585e0"
+    },
+    {
+      "path": "assets/recipes-ai/0779-collection-pastry-08-05.webp",
+      "sha": "d80b02fc7b8f5875fe7318f686d771d8908ca079"
+    },
+    {
+      "path": "assets/recipes-ai/0780-collection-pastry-08-06.webp",
+      "sha": "0724b6f6bcbe251fab6e3261f165834d75b0c5b6"
+    },
+    {
+      "path": "assets/recipes-ai/0781-collection-pastry-08-07.webp",
+      "sha": "a6027cc3a8de1621c125611a27a1cf9943b4383a"
+    },
+    {
+      "path": "assets/recipes-ai/0782-collection-pastry-08-08-no-eggs.webp",
+      "sha": "56ef6110ba56f1a74b149022f8d8cef3fcb56986"
+    },
+    {
+      "path": "assets/recipes-ai/0783-collection-pastry-08-09.webp",
+      "sha": "4e046282843fd0beaf1e24d0bed8ffd904787574"
+    },
+    {
+      "path": "assets/recipes-ai/0784-collection-pastry-08-10.webp",
+      "sha": "67e3b9e1ca9d4a24f433be305d2df7c0aa09a2cc"
+    },
+    {
+      "path": "assets/recipes-ai/0785-collection-pastry-09-01-no-eggs.webp",
+      "sha": "f7bc717cbdd35ac7ee4268422fd6a6760dfac136"
+    },
+    {
+      "path": "assets/recipes-ai/0786-collection-pastry-09-02-no-eggs.webp",
+      "sha": "4248dc8d2e0f7be3973e3f8ab805191a21693698"
+    },
+    {
+      "path": "assets/recipes-ai/0787-collection-pastry-09-03.webp",
+      "sha": "db8198638204701d0dda2c02c30cbad1135bf161"
+    },
+    {
+      "path": "assets/recipes-ai/0788-collection-pastry-09-04-no-eggs.webp",
+      "sha": "9c01726522f857d1bb1f9da314117f6df32ab74f"
+    },
+    {
+      "path": "assets/recipes-ai/0789-collection-pastry-09-05.webp",
+      "sha": "a86c9ab59167d3eeddcc8556da56099662e1aed4"
+    },
+    {
+      "path": "assets/recipes-ai/0790-collection-pastry-09-06.webp",
+      "sha": "921dd5041efe779d2693ec2d98d3fae45bf2450a"
+    },
+    {
+      "path": "assets/recipes-ai/0791-collection-pastry-09-07.webp",
+      "sha": "d45e7d488a0d7b19f40f9a46d8cfee94871d1da8"
+    },
+    {
+      "path": "assets/recipes-ai/0792-collection-pastry-09-08-no-eggs.webp",
+      "sha": "07d6f2336c9568f2f463a6533bbc116502962c59"
+    },
+    {
+      "path": "assets/recipes-ai/0793-collection-pastry-09-09.webp",
+      "sha": "1ccbad28cd24689ea8e4467d4b5a639b35aee92d"
+    },
+    {
+      "path": "assets/recipes-ai/0794-collection-pastry-09-10-no-eggs.webp",
+      "sha": "d83fdf31fb890503d3616ae55ddba9511875774d"
+    },
+    {
+      "path": "assets/recipes-ai/0795-collection-pastry-10-01.webp",
+      "sha": "6ba1fa73afa9159d9c0865176f46b89ff9a36ed9"
+    },
+    {
+      "path": "assets/recipes-ai/0796-collection-pastry-10-02-no-eggs.webp",
+      "sha": "f07b4817841da82525a75124d08889d338f8a2c9"
+    },
+    {
+      "path": "assets/recipes-ai/0797-collection-pastry-10-03.webp",
+      "sha": "e1fab08f441a8325a93acfc6f8579e5876c922dd"
+    },
+    {
+      "path": "assets/recipes-ai/0798-collection-pastry-10-04-no-eggs.webp",
+      "sha": "40dfdc80fefad34718158619cde96e473c711127"
+    },
+    {
+      "path": "assets/recipes-ai/0799-collection-pastry-10-05.webp",
+      "sha": "de604531123e45e8dfc325472d32d72412504032"
+    },
+    {
+      "path": "assets/recipes-ai/0800-collection-pastry-10-06.webp",
+      "sha": "2a83ba6499e1905240565b93d742ef6cecd35c53"
+    },
+    {
+      "path": "assets/recipes-ai/0801-collection-pastry-10-07.webp",
+      "sha": "88556c583833bacdacaeed0089bf8fb850a8dd42"
+    },
+    {
+      "path": "assets/recipes-ai/0802-collection-pastry-10-08-no-eggs.webp",
+      "sha": "74ae0fea7dd201079457f0f018dfe63edcbf466d"
+    },
+    {
+      "path": "assets/recipes-ai/0803-collection-pastry-10-09.webp",
+      "sha": "76c912fc5257ef85c7b415e3bdaa7dbf87542937"
+    },
+    {
+      "path": "assets/recipes-ai/0804-collection-pastry-10-10.webp",
+      "sha": "756d2deb7a33a2231a282abd1d3ac1fd96c1641b"
+    },
+    {
+      "path": "assets/recipes-ai/0805-collection-dessert-01-03.webp",
+      "sha": "4e66b5e79fbe46914e9b5860034e39034df42828"
+    },
+    {
+      "path": "assets/recipes-ai/0806-collection-dessert-01-04.webp",
+      "sha": "95beaf7bedde90fa61aec9b949327b20da936ec9"
+    },
+    {
+      "path": "assets/recipes-ai/0807-collection-dessert-01-05.webp",
+      "sha": "8e61cbc81ae5c7a6862670345ee51de7b6bba28b"
+    },
+    {
+      "path": "assets/recipes-ai/0808-collection-dessert-01-06.webp",
+      "sha": "f163eff3a0290511225e5c789b3c911e1bfa2dc6"
+    },
+    {
+      "path": "assets/recipes-ai/0809-collection-dessert-01-07.webp",
+      "sha": "2c0857f612b3611ea53248c3c0807927dd94fb61"
+    },
+    {
+      "path": "assets/recipes-ai/0810-collection-dessert-01-08.webp",
+      "sha": "0e9b89967cdd2b7cd2346a7e606f6838e1a711c1"
+    },
+    {
+      "path": "assets/recipes-ai/0811-collection-dessert-01-09.webp",
+      "sha": "68db9f44fa31e172c10552eb0d539253d4c49ccf"
+    },
+    {
+      "path": "assets/recipes-ai/0812-collection-dessert-01-10.webp",
+      "sha": "c720cf0ed3beff26f66182f59806c2dd469563c9"
+    },
+    {
+      "path": "assets/recipes-ai/0813-collection-dessert-02-01.webp",
+      "sha": "c513edeb7a43a7ead63f42f433ff40da23ae8dba"
+    },
+    {
+      "path": "assets/recipes-ai/0814-collection-dessert-02-02.webp",
+      "sha": "fc3331e7a5df2ca94527c7b4c3210b570e7dd11f"
+    },
+    {
+      "path": "assets/recipes-ai/0815-collection-dessert-02-03.webp",
+      "sha": "b4c8b7204a3f4ecbbcb8718812abf50c0ef789ed"
+    },
+    {
+      "path": "assets/recipes-ai/0816-collection-dessert-02-04.webp",
+      "sha": "ebfacbe38a7b20d2ea21d0f480024f57b015a1e5"
+    },
+    {
+      "path": "assets/recipes-ai/0817-collection-dessert-02-05.webp",
+      "sha": "e10fe9c72f3f25d2e9405be093822e36fe7441f9"
+    },
+    {
+      "path": "assets/recipes-ai/0818-collection-dessert-02-06.webp",
+      "sha": "bc8e64c9eee07117ca122746f4812ed948241697"
+    },
+    {
+      "path": "assets/recipes-ai/0819-collection-dessert-02-07.webp",
+      "sha": "ef5b082f353f163e67e082994a3c8eb9d24350a4"
+    },
+    {
+      "path": "assets/recipes-ai/0820-collection-dessert-02-08.webp",
+      "sha": "a9faa659ded775ac20e875b3ceda204ed3cadba2"
+    },
+    {
+      "path": "assets/recipes-ai/0821-collection-dessert-02-09.webp",
+      "sha": "30fab29a759f1976e53de773d631ce934843ebcf"
+    },
+    {
+      "path": "assets/recipes-ai/0822-collection-dessert-02-10.webp",
+      "sha": "3d02e477df67fd37bba4f362da1857e2a9fe851a"
+    },
+    {
+      "path": "assets/recipes-ai/0823-collection-dessert-03-01.webp",
+      "sha": "b91a6ea7ab4ef1f9b2f821f408f4e83e43f1e1d8"
+    },
+    {
+      "path": "assets/recipes-ai/0824-collection-dessert-03-02.webp",
+      "sha": "d43799d552803b44a27418f0ce7f9b01eff3b805"
+    },
+    {
+      "path": "assets/recipes-ai/0825-collection-dessert-03-03.webp",
+      "sha": "67e244df48e898c7d7c7409bdbeaa91e005fbc54"
+    },
+    {
+      "path": "assets/recipes-ai/0826-collection-dessert-03-04.webp",
+      "sha": "40a28f1bd4e43e7f3ba75a950fa787c8b5afd1b5"
+    },
+    {
+      "path": "assets/recipes-ai/0827-collection-dessert-03-05.webp",
+      "sha": "bd5c48a29e92472733f76235c62080d7cb9eb965"
+    },
+    {
+      "path": "assets/recipes-ai/0828-collection-dessert-03-06.webp",
+      "sha": "4a03942d44e5ac40900d31e3b382b96f4e4041b2"
+    },
+    {
+      "path": "assets/recipes-ai/0829-collection-dessert-03-07.webp",
+      "sha": "d18dc23d1bdf1a80834181f15fb71498d06490a5"
+    },
+    {
+      "path": "assets/recipes-ai/0830-collection-dessert-03-08.webp",
+      "sha": "d3fe929cb32d3c7e521e72f3007c2490ccaf0695"
+    },
+    {
+      "path": "assets/recipes-ai/0831-collection-dessert-03-09.webp",
+      "sha": "8d84341eaa464aaa098b5696e7b2b835ababde3c"
+    },
+    {
+      "path": "assets/recipes-ai/0832-collection-dessert-03-10.webp",
+      "sha": "fbb4331222e42480df450d3c6112c8e0685f2d7f"
+    },
+    {
+      "path": "assets/recipes-ai/0833-collection-dessert-04-01.webp",
+      "sha": "3676bca80599f58d68e333608e660d07afbe9b51"
+    },
+    {
+      "path": "assets/recipes-ai/0834-collection-dessert-04-02.webp",
+      "sha": "30ae80f2b8ebab12f8b148d94ef0a5c9793b34a5"
+    },
+    {
+      "path": "assets/recipes-ai/0835-collection-dessert-04-03.webp",
+      "sha": "257f8d55c5a068a501c9bee890945ea336e1e149"
+    },
+    {
+      "path": "assets/recipes-ai/0836-collection-dessert-04-04.webp",
+      "sha": "cc36a63d705d1dca16955d62d2bfca3264740231"
+    },
+    {
+      "path": "assets/recipes-ai/0837-collection-dessert-04-05.webp",
+      "sha": "363c5d5b371855a86278ba08e55c349c85d3b9f9"
+    },
+    {
+      "path": "assets/recipes-ai/0838-collection-dessert-04-06.webp",
+      "sha": "7d4cecd1f5bb813d8efb8f60f82245eb0679fb7d"
+    },
+    {
+      "path": "assets/recipes-ai/0839-collection-dessert-04-07.webp",
+      "sha": "e2e14f0598c021bd96da6bd3f12b14883b7c0619"
+    },
+    {
+      "path": "assets/recipes-ai/0840-collection-dessert-04-08.webp",
+      "sha": "5ef6d4ace9dbdce7c944ade36940d0cc9bb780a8"
+    },
+    {
+      "path": "assets/recipes-ai/0841-collection-dessert-04-09.webp",
+      "sha": "c5bb9d788e6b1717b360e9511a6d4d7c0384d012"
+    },
+    {
+      "path": "assets/recipes-ai/0842-collection-dessert-04-10.webp",
+      "sha": "ecdeef34fae9c745e57a69ac3450b33f1fefe8ce"
+    },
+    {
+      "path": "assets/recipes-ai/0843-collection-dessert-05-01.webp",
+      "sha": "0d6a21755d0d6ee0c57b02950c4b398f5b394ca6"
+    },
+    {
+      "path": "assets/recipes-ai/0844-collection-dessert-05-02.webp",
+      "sha": "ee9c0793167ff925d476da7d81ce6a0ff3219dc1"
+    },
+    {
+      "path": "assets/recipes-ai/0845-collection-dessert-05-03.webp",
+      "sha": "06c0033c141447b0abcba37af632db892f366dd2"
+    },
+    {
+      "path": "assets/recipes-ai/0846-collection-dessert-05-04.webp",
+      "sha": "72b6504206bb3cd95b5ca2cfe172f23931a254c4"
+    },
+    {
+      "path": "assets/recipes-ai/0847-collection-dessert-05-05.webp",
+      "sha": "e15c31342daebab9301004c6d975194fd6b89e1d"
+    },
+    {
+      "path": "assets/recipes-ai/0848-collection-dessert-05-06.webp",
+      "sha": "41fdc0d7093687ff1bc1eb9320e1bbb7d9b72acb"
+    },
+    {
+      "path": "assets/recipes-ai/0849-collection-dessert-05-07.webp",
+      "sha": "becfbf19f473a12fba67f80917bf8c191269224b"
+    },
+    {
+      "path": "assets/recipes-ai/0850-collection-dessert-05-08.webp",
+      "sha": "33e58fa6af8baed11fa6592e49d1225be8b8c680"
+    },
+    {
+      "path": "assets/recipes-ai/0851-collection-dessert-05-09.webp",
+      "sha": "89478806e76dc4d45f7924ae72db5d73a3d89fee"
+    },
+    {
+      "path": "assets/recipes-ai/0852-collection-dessert-05-10.webp",
+      "sha": "4d800c1bacfc242de8c600cdeea907452eae34d5"
+    },
+    {
+      "path": "assets/recipes-ai/0853-collection-dessert-06-01.webp",
+      "sha": "96b96cd11908ba7a37bf430c4a368f2c347611df"
+    },
+    {
+      "path": "assets/recipes-ai/0854-collection-dessert-06-02.webp",
+      "sha": "1895a756e74dfa6a587969c7d3bb2e497f8b5b5e"
+    },
+    {
+      "path": "assets/recipes-ai/0855-collection-dessert-06-03.webp",
+      "sha": "4b7d8d0ba1ee52355c4ef1459cd627dae0fa7b09"
+    },
+    {
+      "path": "assets/recipes-ai/0856-collection-dessert-06-04.webp",
+      "sha": "c90d263b6aa1da1296050dac213c1cd0bdeeff8c"
+    },
+    {
+      "path": "assets/recipes-ai/0857-collection-dessert-06-05.webp",
+      "sha": "ea3e0b64db61c953a02940a6d35c47738afa2295"
+    },
+    {
+      "path": "assets/recipes-ai/0858-collection-dessert-06-06.webp",
+      "sha": "edd28d6afc794ce553bacad0488596d154ebdf1b"
+    },
+    {
+      "path": "assets/recipes-ai/0859-collection-dessert-06-07.webp",
+      "sha": "f99240bad268b063596b2c7dd5b9706dd7b764a4"
+    },
+    {
+      "path": "assets/recipes-ai/0860-collection-dessert-06-08.webp",
+      "sha": "801b64c6ef908a08afab86a5e7450d3ea3d40cb1"
+    },
+    {
+      "path": "assets/recipes-ai/0861-collection-dessert-06-09.webp",
+      "sha": "82c53582a8b95100b7e74d87b286c60049b2d3ca"
+    },
+    {
+      "path": "assets/recipes-ai/0862-collection-dessert-06-10.webp",
+      "sha": "d3c64cc33ada23a851a7694eef334c7289121c67"
+    },
+    {
+      "path": "assets/recipes-ai/0863-collection-dessert-07-01.webp",
+      "sha": "5b4136472fb2e7fe98eaef57b1c202dffcde1aa0"
+    },
+    {
+      "path": "assets/recipes-ai/0864-collection-dessert-07-02.webp",
+      "sha": "207f540c1118bb6ac7b032dd2d5b4cb4854dc183"
+    },
+    {
+      "path": "assets/recipes-ai/0865-collection-dessert-07-03.webp",
+      "sha": "0f7b351cf6ab86639ce7270f95ed190b24f0d89d"
+    },
+    {
+      "path": "assets/recipes-ai/0866-collection-dessert-07-04.webp",
+      "sha": "d14c3362aa1716964d0d8fd3a40c1b39cad2ce9a"
+    },
+    {
+      "path": "assets/recipes-ai/0867-collection-dessert-07-05.webp",
+      "sha": "dc67abe625cfe76b85e80d7f967742e27a36fb83"
+    },
+    {
+      "path": "assets/recipes-ai/0868-collection-dessert-07-06.webp",
+      "sha": "a2d81bafc365d10749cac392a15eb1faa6ea4b24"
+    },
+    {
+      "path": "assets/recipes-ai/0869-collection-dessert-07-07.webp",
+      "sha": "5df7889dbf11b33430117ceaa87a39219dc5b5f3"
+    },
+    {
+      "path": "assets/recipes-ai/0870-collection-dessert-07-08.webp",
+      "sha": "f873bb521ae2da59c330117d89c80c3816ae2880"
+    },
+    {
+      "path": "assets/recipes-ai/0871-collection-dessert-07-09.webp",
+      "sha": "9c54b6c6d177a425ca3bc0c15f95203898479528"
+    },
+    {
+      "path": "assets/recipes-ai/0872-collection-dessert-07-10.webp",
+      "sha": "247a316aac8f0f4dd06d4c198ac833d3e477bb13"
+    },
+    {
+      "path": "assets/recipes-ai/0873-collection-dessert-08-01.webp",
+      "sha": "2a60b4a60abc01af19690aead94a5f2abed7c814"
+    },
+    {
+      "path": "assets/recipes-ai/0874-collection-dessert-08-02.webp",
+      "sha": "864057716eecdb8e43cbb1bfd7c1f88dc076c550"
+    }
+  ],
+  "approved_locks": [
+    {
+      "category": "pasta",
+      "recipe_number": 1,
+      "path": "assets/recipes-ai/0001-lemon-spinach-pasta.webp",
+      "sha": "43d095530d9df19606475970c07984fb13705e63",
+      "provenance": "23 approved pasta images published 2026-11-17"
+    },
+    {
+      "category": "pasta",
+      "recipe_number": 2,
+      "path": "assets/recipes-ai/0002-tomato-basil-pasta.webp",
+      "sha": "d262df4cf34a560beb2cf67b3b7e4c503d919d4f",
+      "provenance": "23 approved pasta images published 2026-11-17"
+    },
+    {
+      "category": "pasta",
+      "recipe_number": 315,
+      "path": "assets/recipes-ai/0315-collection-pasta-01-03.webp",
+      "sha": "3d1acca33bd21121979c2b5b5d8f2f491d7067ad",
+      "provenance": "23 approved pasta images published 2026-11-17"
+    },
+    {
+      "category": "pasta",
+      "recipe_number": 316,
+      "path": "assets/recipes-ai/0316-collection-pasta-01-04.webp",
+      "sha": "06eb16c9e03d70e283c38dca035f8c364ab6b6e2",
+      "provenance": "23 approved pasta images published 2026-11-17"
+    },
+    {
+      "category": "pasta",
+      "recipe_number": 319,
+      "path": "assets/recipes-ai/0319-collection-pasta-01-07.webp",
+      "sha": "7453c13def45de2ea32280ea68b2076d53bf4003",
+      "provenance": "23 approved pasta images published 2026-11-17"
+    },
+    {
+      "category": "pasta",
+      "recipe_number": 320,
+      "path": "assets/recipes-ai/0320-collection-pasta-01-08.webp",
+      "sha": "de90d18734e4fc531322c954ebc58e4ccc6239c2",
+      "provenance": "23 approved pasta images published 2026-11-17"
+    },
+    {
+      "category": "pasta",
+      "recipe_number": 321,
+      "path": "assets/recipes-ai/0321-collection-pasta-01-09.webp",
+      "sha": "27e8a91ba07548296c116ab9ffde9c5ac54aff50",
+      "provenance": "23 approved pasta images published 2026-11-17"
+    },
+    {
+      "category": "pasta",
+      "recipe_number": 322,
+      "path": "assets/recipes-ai/0322-collection-pasta-01-10.webp",
+      "sha": "66b086addf05820f58f4c82ed8ecce3985f1987e",
+      "provenance": "23 approved pasta images published 2026-11-17"
+    },
+    {
+      "category": "pasta",
+      "recipe_number": 324,
+      "path": "assets/recipes-ai/0324-collection-pasta-02-02.webp",
+      "sha": "8db35302126f40ce82d3385e77b191b0a21d85da",
+      "provenance": "23 approved pasta images published 2026-11-17"
+    },
+    {
+      "category": "pasta",
+      "recipe_number": 325,
+      "path": "assets/recipes-ai/0325-collection-pasta-02-03.webp",
+      "sha": "a20ec257af2e7b2bbe90a89e174eb5aca7b477f9",
+      "provenance": "23 approved pasta images published 2026-11-17"
+    },
+    {
+      "category": "pasta",
+      "recipe_number": 326,
+      "path": "assets/recipes-ai/0326-collection-pasta-02-04.webp",
+      "sha": "4c1ebe9603d1d5aa23d9cca6b516a86ac0286474",
+      "provenance": "23 approved pasta images published 2026-11-17"
+    },
+    {
+      "category": "pasta",
+      "recipe_number": 327,
+      "path": "assets/recipes-ai/0327-collection-pasta-02-05.webp",
+      "sha": "54034742b20a0fe0331d1ab26df41b13ae81ae8f",
+      "provenance": "23 approved pasta images published 2026-11-17"
+    },
+    {
+      "category": "pasta",
+      "recipe_number": 329,
+      "path": "assets/recipes-ai/0329-collection-pasta-02-07.webp",
+      "sha": "109ac4a598580f069f95a4aba769e516d40988bd",
+      "provenance": "23 approved pasta images published 2026-11-17"
+    },
+    {
+      "category": "pasta",
+      "recipe_number": 331,
+      "path": "assets/recipes-ai/0331-collection-pasta-02-09.webp",
+      "sha": "559501d1aab0f31653223315bbe3be92074854a0",
+      "provenance": "23 approved pasta images published 2026-11-17"
+    },
+    {
+      "category": "pasta",
+      "recipe_number": 332,
+      "path": "assets/recipes-ai/0332-collection-pasta-02-10.webp",
+      "sha": "765ffa2a92f9c1f9cf6062a3483aba815f12ac0d",
+      "provenance": "23 approved pasta images published 2026-11-17"
+    },
+    {
+      "category": "pasta",
+      "recipe_number": 337,
+      "path": "assets/recipes-ai/0337-collection-pasta-03-05.webp",
+      "sha": "a8ab8f11f9eb7597d3635979cc88634955e1d23b",
+      "provenance": "53 preserved approved pasta images 25-77 from 2026-11-16"
+    },
+    {
+      "category": "pasta",
+      "recipe_number": 338,
+      "path": "assets/recipes-ai/0338-collection-pasta-03-06.webp",
+      "sha": "fe7dd667248d83fc52cb73cb4c737fd56bc37493",
+      "provenance": "53 preserved approved pasta images 25-77 from 2026-11-16"
+    },
+    {
+      "category": "pasta",
+      "recipe_number": 339,
+      "path": "assets/recipes-ai/0339-collection-pasta-03-07.webp",
+      "sha": "f0564cbe6f3d2c5c1f65c370c836aec1d4d39de7",
+      "provenance": "53 preserved approved pasta images 25-77 from 2026-11-16"
+    },
+    {
+      "category": "pasta",
+      "recipe_number": 340,
+      "path": "assets/recipes-ai/0340-collection-pasta-03-08.webp",
+      "sha": "c37c01ec64490cf9161e6618a91db06f30c7207f",
+      "provenance": "53 preserved approved pasta images 25-77 from 2026-11-16"
+    },
+    {
+      "category": "pasta",
+      "recipe_number": 341,
+      "path": "assets/recipes-ai/0341-collection-pasta-03-09.webp",
+      "sha": "6a90d2240819781a9d24ba8efb0eabef1cf4251e",
+      "provenance": "53 preserved approved pasta images 25-77 from 2026-11-16"
+    },
+    {
+      "category": "pasta",
+      "recipe_number": 342,
+      "path": "assets/recipes-ai/0342-collection-pasta-03-10.webp",
+      "sha": "cdbce74b9656df733043c392f74673aab3868a54",
+      "provenance": "53 preserved approved pasta images 25-77 from 2026-11-16"
+    },
+    {
+      "category": "pasta",
+      "recipe_number": 343,
+      "path": "assets/recipes-ai/0343-collection-pasta-04-01.webp",
+      "sha": "b040b0467d253b7638d60c762b51c27a82bafe5e",
+      "provenance": "53 preserved approved pasta images 25-77 from 2026-11-16"
+    },
+    {
+      "category": "pasta",
+      "recipe_number": 344,
+      "path": "assets/recipes-ai/0344-collection-pasta-04-02.webp",
+      "sha": "74d967447310ff73dbda1d933ab5f3731f74c410",
+      "provenance": "53 preserved approved pasta images 25-77 from 2026-11-16"
+    },
+    {
+      "category": "pasta",
+      "recipe_number": 345,
+      "path": "assets/recipes-ai/0345-collection-pasta-04-03.webp",
+      "sha": "74fbc3935789faa1f37818d53d9c7f12aa072ce1",
+      "provenance": "53 preserved approved pasta images 25-77 from 2026-11-16"
+    },
+    {
+      "category": "pasta",
+      "recipe_number": 346,
+      "path": "assets/recipes-ai/0346-collection-pasta-04-04.webp",
+      "sha": "201e1bcd1ac044055d34b872f55602324db19cf4",
+      "provenance": "53 preserved approved pasta images 25-77 from 2026-11-16"
+    },
+    {
+      "category": "pasta",
+      "recipe_number": 347,
+      "path": "assets/recipes-ai/0347-collection-pasta-04-05.webp",
+      "sha": "8a95e18dbd9578a5481fa33bee37d4b565bbea69",
+      "provenance": "53 preserved approved pasta images 25-77 from 2026-11-16"
+    },
+    {
+      "category": "pasta",
+      "recipe_number": 348,
+      "path": "assets/recipes-ai/0348-collection-pasta-04-06.webp",
+      "sha": "7f2ccaeae730672792471edbb0783bd24740590d",
+      "provenance": "53 preserved approved pasta images 25-77 from 2026-11-16"
+    },
+    {
+      "category": "pasta",
+      "recipe_number": 349,
+      "path": "assets/recipes-ai/0349-collection-pasta-04-07.webp",
+      "sha": "3ffec5492a00aac59d4613df51cc41f453c28bca",
+      "provenance": "53 preserved approved pasta images 25-77 from 2026-11-16"
+    },
+    {
+      "category": "pasta",
+      "recipe_number": 350,
+      "path": "assets/recipes-ai/0350-collection-pasta-04-08.webp",
+      "sha": "f83926f079ad2a309306f7e2522249e240ecf39d",
+      "provenance": "53 preserved approved pasta images 25-77 from 2026-11-16"
+    },
+    {
+      "category": "pasta",
+      "recipe_number": 351,
+      "path": "assets/recipes-ai/0351-collection-pasta-04-09.webp",
+      "sha": "75e471e00ba4928a93c65853f302fc39dfd00a04",
+      "provenance": "53 preserved approved pasta images 25-77 from 2026-11-16"
+    },
+    {
+      "category": "pasta",
+      "recipe_number": 352,
+      "path": "assets/recipes-ai/0352-collection-pasta-04-10.webp",
+      "sha": "4f5873df801d706ee95cd72cf97ed9246c8b2c86",
+      "provenance": "53 preserved approved pasta images 25-77 from 2026-11-16"
+    },
+    {
+      "category": "pasta",
+      "recipe_number": 353,
+      "path": "assets/recipes-ai/0353-collection-pasta-05-01.webp",
+      "sha": "c5fc88b9e8b53eeef3b8c3305a1d431acc2517b7",
+      "provenance": "53 preserved approved pasta images 25-77 from 2026-11-16"
+    },
+    {
+      "category": "pasta",
+      "recipe_number": 354,
+      "path": "assets/recipes-ai/0354-collection-pasta-05-02.webp",
+      "sha": "435c5b3ab9f2d784949b9cf7fe169fd15c20d91e",
+      "provenance": "53 preserved approved pasta images 25-77 from 2026-11-16"
+    },
+    {
+      "category": "pasta",
+      "recipe_number": 355,
+      "path": "assets/recipes-ai/0355-collection-pasta-05-03.webp",
+      "sha": "2cef9af161e037927d9469022b0cd60f59889890",
+      "provenance": "53 preserved approved pasta images 25-77 from 2026-11-16"
+    },
+    {
+      "category": "pasta",
+      "recipe_number": 356,
+      "path": "assets/recipes-ai/0356-collection-pasta-05-04.webp",
+      "sha": "64220e60e7a12bc377597ca53ee129c2d1380fc5",
+      "provenance": "53 preserved approved pasta images 25-77 from 2026-11-16"
+    },
+    {
+      "category": "pasta",
+      "recipe_number": 357,
+      "path": "assets/recipes-ai/0357-collection-pasta-05-05.webp",
+      "sha": "bd558710587e28e3ff09e9aaeec4579671091913",
+      "provenance": "53 preserved approved pasta images 25-77 from 2026-11-16"
+    },
+    {
+      "category": "pasta",
+      "recipe_number": 358,
+      "path": "assets/recipes-ai/0358-collection-pasta-05-06.webp",
+      "sha": "1c2a2a1c766e37d5b4d3b2cf88446b3e4303fa37",
+      "provenance": "53 preserved approved pasta images 25-77 from 2026-11-16"
+    },
+    {
+      "category": "pasta",
+      "recipe_number": 359,
+      "path": "assets/recipes-ai/0359-collection-pasta-05-07.webp",
+      "sha": "61b899373b5b4a9ed63b20ccddc4e79edfc67faa",
+      "provenance": "53 preserved approved pasta images 25-77 from 2026-11-16"
+    },
+    {
+      "category": "pasta",
+      "recipe_number": 360,
+      "path": "assets/recipes-ai/0360-collection-pasta-05-08.webp",
+      "sha": "d8770b906da666dc02103f9e171803e6989706a1",
+      "provenance": "53 preserved approved pasta images 25-77 from 2026-11-16"
+    },
+    {
+      "category": "pasta",
+      "recipe_number": 361,
+      "path": "assets/recipes-ai/0361-collection-pasta-05-09.webp",
+      "sha": "358a62698fa4752ce859e39487fba48f0d6f837a",
+      "provenance": "53 preserved approved pasta images 25-77 from 2026-11-16"
+    },
+    {
+      "category": "pasta",
+      "recipe_number": 362,
+      "path": "assets/recipes-ai/0362-collection-pasta-05-10.webp",
+      "sha": "43bf060f685b2ea57d4c7c8636fd01f5e9c94e74",
+      "provenance": "53 preserved approved pasta images 25-77 from 2026-11-16"
+    },
+    {
+      "category": "pasta",
+      "recipe_number": 363,
+      "path": "assets/recipes-ai/0363-collection-pasta-06-01.webp",
+      "sha": "0e90661f3c73ebf42d18b72cfdd3637c76ba9d21",
+      "provenance": "53 preserved approved pasta images 25-77 from 2026-11-16"
+    },
+    {
+      "category": "pasta",
+      "recipe_number": 364,
+      "path": "assets/recipes-ai/0364-collection-pasta-06-02.webp",
+      "sha": "f6b01d6e7ffcddd2d08cee52f884ba1fea43c811",
+      "provenance": "23 approved pasta images published 2026-11-17"
+    },
+    {
+      "category": "pasta",
+      "recipe_number": 365,
+      "path": "assets/recipes-ai/0365-collection-pasta-06-03.webp",
+      "sha": "a132ebd83ef77a1ab9d1ae07c7a57ae865a706e2",
+      "provenance": "53 preserved approved pasta images 25-77 from 2026-11-16"
+    },
+    {
+      "category": "pasta",
+      "recipe_number": 366,
+      "path": "assets/recipes-ai/0366-collection-pasta-06-04.webp",
+      "sha": "1a4947dac429385badab952c6488f1f839ad4549",
+      "provenance": "53 preserved approved pasta images 25-77 from 2026-11-16"
+    },
+    {
+      "category": "pasta",
+      "recipe_number": 367,
+      "path": "assets/recipes-ai/0367-collection-pasta-06-05.webp",
+      "sha": "20dcafdd29510c05c5abac9e9c35aea63497b866",
+      "provenance": "53 preserved approved pasta images 25-77 from 2026-11-16"
+    },
+    {
+      "category": "pasta",
+      "recipe_number": 368,
+      "path": "assets/recipes-ai/0368-collection-pasta-06-06.webp",
+      "sha": "f8de47da028206c62c91220c1f9947187041c197",
+      "provenance": "23 approved pasta images published 2026-11-17"
+    },
+    {
+      "category": "pasta",
+      "recipe_number": 369,
+      "path": "assets/recipes-ai/0369-collection-pasta-06-07.webp",
+      "sha": "0d931a90e53e5497a368b4cf4c0a2f55fd5dab94",
+      "provenance": "23 approved pasta images published 2026-11-17"
+    },
+    {
+      "category": "pasta",
+      "recipe_number": 370,
+      "path": "assets/recipes-ai/0370-collection-pasta-06-08.webp",
+      "sha": "037113f820196e4be72554f68d36eaa6df2570f7",
+      "provenance": "53 preserved approved pasta images 25-77 from 2026-11-16"
+    },
+    {
+      "category": "pasta",
+      "recipe_number": 371,
+      "path": "assets/recipes-ai/0371-collection-pasta-06-09.webp",
+      "sha": "eb62e569fba98eb887dee6d6fd52671276449102",
+      "provenance": "23 approved pasta images published 2026-11-17"
+    },
+    {
+      "category": "pasta",
+      "recipe_number": 372,
+      "path": "assets/recipes-ai/0372-collection-pasta-06-10.webp",
+      "sha": "1604383451239f4790ecba90239697e7c7e7e32b",
+      "provenance": "23 approved pasta images published 2026-11-17"
+    },
+    {
+      "category": "pasta",
+      "recipe_number": 373,
+      "path": "assets/recipes-ai/0373-collection-pasta-07-01.webp",
+      "sha": "72b0af09b83d01c5e40fd3d002103df11890a427",
+      "provenance": "53 preserved approved pasta images 25-77 from 2026-11-16"
+    },
+    {
+      "category": "pasta",
+      "recipe_number": 374,
+      "path": "assets/recipes-ai/0374-collection-pasta-07-02.webp",
+      "sha": "9cfa7a58b79b453660a8c16a30b56137f134580f",
+      "provenance": "53 preserved approved pasta images 25-77 from 2026-11-16"
+    },
+    {
+      "category": "pasta",
+      "recipe_number": 375,
+      "path": "assets/recipes-ai/0375-collection-pasta-07-03.webp",
+      "sha": "288a2df4f196b029a932f909a84c9b6c06bf4cd1",
+      "provenance": "53 preserved approved pasta images 25-77 from 2026-11-16"
+    },
+    {
+      "category": "pasta",
+      "recipe_number": 376,
+      "path": "assets/recipes-ai/0376-collection-pasta-07-04.webp",
+      "sha": "8655d60e5d451bfb742fc78118a483d0e4f584b5",
+      "provenance": "53 preserved approved pasta images 25-77 from 2026-11-16"
+    },
+    {
+      "category": "pasta",
+      "recipe_number": 377,
+      "path": "assets/recipes-ai/0377-collection-pasta-07-05.webp",
+      "sha": "07a0852e575eedb511aebc67ba6f2e4f51eb48ff",
+      "provenance": "53 preserved approved pasta images 25-77 from 2026-11-16"
+    },
+    {
+      "category": "pasta",
+      "recipe_number": 378,
+      "path": "assets/recipes-ai/0378-collection-pasta-07-06.webp",
+      "sha": "e6a1fa7ae7b783b8273e7c95478c54e1143d10c0",
+      "provenance": "53 preserved approved pasta images 25-77 from 2026-11-16"
+    },
+    {
+      "category": "pasta",
+      "recipe_number": 379,
+      "path": "assets/recipes-ai/0379-collection-pasta-07-07.webp",
+      "sha": "b22b0304958d774b465a531efd3ef7bc591f6c99",
+      "provenance": "53 preserved approved pasta images 25-77 from 2026-11-16"
+    },
+    {
+      "category": "pasta",
+      "recipe_number": 380,
+      "path": "assets/recipes-ai/0380-collection-pasta-07-08.webp",
+      "sha": "36d68e07e5fee207369a33f0b109bd654d94bcc4",
+      "provenance": "53 preserved approved pasta images 25-77 from 2026-11-16"
+    },
+    {
+      "category": "pasta",
+      "recipe_number": 381,
+      "path": "assets/recipes-ai/0381-collection-pasta-07-09.webp",
+      "sha": "dca9587441473e6e006d4b1b0fadc1516ed85624",
+      "provenance": "53 preserved approved pasta images 25-77 from 2026-11-16"
+    },
+    {
+      "category": "pasta",
+      "recipe_number": 382,
+      "path": "assets/recipes-ai/0382-collection-pasta-07-10.webp",
+      "sha": "f19f8830915e9124e779478f670ba35dd5cfdf52",
+      "provenance": "53 preserved approved pasta images 25-77 from 2026-11-16"
+    },
+    {
+      "category": "pasta",
+      "recipe_number": 383,
+      "path": "assets/recipes-ai/0383-collection-pasta-08-01.webp",
+      "sha": "70ce54c725c53905c56daf69c6040e200dfeb85a",
+      "provenance": "53 preserved approved pasta images 25-77 from 2026-11-16"
+    },
+    {
+      "category": "pasta",
+      "recipe_number": 384,
+      "path": "assets/recipes-ai/0384-collection-pasta-08-02.webp",
+      "sha": "b144b00361bde082614aa0abc556e466e93225f4",
+      "provenance": "53 preserved approved pasta images 25-77 from 2026-11-16"
+    },
+    {
+      "category": "pasta",
+      "recipe_number": 385,
+      "path": "assets/recipes-ai/0385-collection-pasta-08-03.webp",
+      "sha": "b8a076adf79bacb8d8571deaba52c294f22af76f",
+      "provenance": "53 preserved approved pasta images 25-77 from 2026-11-16"
+    },
+    {
+      "category": "pasta",
+      "recipe_number": 386,
+      "path": "assets/recipes-ai/0386-collection-pasta-08-04.webp",
+      "sha": "62d0172d9d712fce1b63b6fa73830c65fb54bd7d",
+      "provenance": "53 preserved approved pasta images 25-77 from 2026-11-16"
+    },
+    {
+      "category": "pasta",
+      "recipe_number": 387,
+      "path": "assets/recipes-ai/0387-collection-pasta-08-05.webp",
+      "sha": "f192853eb099803f619ed182813f955c6a119a67",
+      "provenance": "53 preserved approved pasta images 25-77 from 2026-11-16"
+    },
+    {
+      "category": "pasta",
+      "recipe_number": 388,
+      "path": "assets/recipes-ai/0388-collection-pasta-08-06.webp",
+      "sha": "191a323f43255ce219d62087700954ab6390b2c3",
+      "provenance": "53 preserved approved pasta images 25-77 from 2026-11-16"
+    },
+    {
+      "category": "pasta",
+      "recipe_number": 389,
+      "path": "assets/recipes-ai/0389-collection-pasta-08-07.webp",
+      "sha": "6ffe09bc7b1eeedfcc3c4a73d504e95f10c159aa",
+      "provenance": "53 preserved approved pasta images 25-77 from 2026-11-16"
+    },
+    {
+      "category": "pasta",
+      "recipe_number": 390,
+      "path": "assets/recipes-ai/0390-collection-pasta-08-08.webp",
+      "sha": "1a6011af9ecb3f15aecadfed9887ecb722fa8966",
+      "provenance": "23 approved pasta images published 2026-11-17"
+    },
+    {
+      "category": "pasta",
+      "recipe_number": 391,
+      "path": "assets/recipes-ai/0391-collection-pasta-08-09.webp",
+      "sha": "7852170c7901e70f5240a5d584758dbb413d047a",
+      "provenance": "23 approved pasta images published 2026-11-17"
+    },
+    {
+      "category": "pasta",
+      "recipe_number": 392,
+      "path": "assets/recipes-ai/0392-collection-pasta-08-10.webp",
+      "sha": "1ec0e7114daeaf625ef1f7073af08cc63034669b",
+      "provenance": "23 approved pasta images published 2026-11-17"
+    },
+    {
+      "category": "fish",
+      "recipe_number": 5,
+      "path": "assets/recipes-ai/0005-salmon-lemon.webp",
+      "sha": "0377931da4e8e9b7b37af9fbfe29a9e0d6f5587b",
+      "provenance": "57 approved fish photos published 2026-11-16"
+    },
+    {
+      "category": "fish",
+      "recipe_number": 217,
+      "path": "assets/recipes-ai/0217-collection-fish-01-03.webp",
+      "sha": "30f4d4f3a5e18d5628b9c170b66402ce3d432f6e",
+      "provenance": "57 approved fish photos published 2026-11-16"
+    },
+    {
+      "category": "fish",
+      "recipe_number": 218,
+      "path": "assets/recipes-ai/0218-collection-fish-01-04.webp",
+      "sha": "4718fc52252c57656e4595ad1acda34f725562f7",
+      "provenance": "57 approved fish photos published 2026-11-16"
+    },
+    {
+      "category": "fish",
+      "recipe_number": 219,
+      "path": "assets/recipes-ai/0219-collection-fish-01-05.webp",
+      "sha": "e76aafcb767bffc59f51a7afccfb8ae33b92cc79",
+      "provenance": "57 approved fish photos published 2026-11-16"
+    },
+    {
+      "category": "fish",
+      "recipe_number": 220,
+      "path": "assets/recipes-ai/0220-collection-fish-01-06.webp",
+      "sha": "936c6631328f83a87beb381706d9a90ae09f0fa2",
+      "provenance": "57 approved fish photos published 2026-11-16"
+    },
+    {
+      "category": "fish",
+      "recipe_number": 221,
+      "path": "assets/recipes-ai/0221-collection-fish-01-07.webp",
+      "sha": "733b040f581096b936077ce63107472d6d773362",
+      "provenance": "57 approved fish photos published 2026-11-16"
+    },
+    {
+      "category": "fish",
+      "recipe_number": 222,
+      "path": "assets/recipes-ai/0222-collection-fish-01-08.webp",
+      "sha": "e6cd6d7dfedba7969672b5a8cdf0d1efe40818ec",
+      "provenance": "57 approved fish photos published 2026-11-16"
+    },
+    {
+      "category": "fish",
+      "recipe_number": 223,
+      "path": "assets/recipes-ai/0223-collection-fish-01-09.webp",
+      "sha": "ae49e0ed4200a16006d9f80767744cd86f9f040c",
+      "provenance": "57 approved fish photos published 2026-11-16"
+    },
+    {
+      "category": "fish",
+      "recipe_number": 224,
+      "path": "assets/recipes-ai/0224-collection-fish-01-10.webp",
+      "sha": "c0e1a2e80dccb6bdbabcc9cf8ae84f7a2b3772f5",
+      "provenance": "57 approved fish photos published 2026-11-16"
+    },
+    {
+      "category": "fish",
+      "recipe_number": 226,
+      "path": "assets/recipes-ai/0226-collection-fish-02-02.webp",
+      "sha": "1a2eb3637fc58a9bd6e3907da9f11ac661b421de",
+      "provenance": "57 approved fish photos published 2026-11-16"
+    },
+    {
+      "category": "fish",
+      "recipe_number": 228,
+      "path": "assets/recipes-ai/0228-collection-fish-02-04.webp",
+      "sha": "e8f253be57a58dbf86dd61ebae949f2858829586",
+      "provenance": "57 approved fish photos published 2026-11-16"
+    },
+    {
+      "category": "fish",
+      "recipe_number": 230,
+      "path": "assets/recipes-ai/0230-collection-fish-02-06.webp",
+      "sha": "837a29fdf04270e15ab2cf12e01cafa1a713ff3b",
+      "provenance": "57 approved fish photos published 2026-11-16"
+    },
+    {
+      "category": "fish",
+      "recipe_number": 231,
+      "path": "assets/recipes-ai/0231-collection-fish-02-07.webp",
+      "sha": "4a9fe34e93f802b5ce98b84d42f5252bbd3e66d3",
+      "provenance": "57 approved fish photos published 2026-11-16"
+    },
+    {
+      "category": "fish",
+      "recipe_number": 232,
+      "path": "assets/recipes-ai/0232-collection-fish-02-08.webp",
+      "sha": "eb8e59ed901dfc3abf80bfdda6fed57ba0e8c621",
+      "provenance": "57 approved fish photos published 2026-11-16"
+    },
+    {
+      "category": "fish",
+      "recipe_number": 234,
+      "path": "assets/recipes-ai/0234-collection-fish-02-10.webp",
+      "sha": "88f4e74305e68beb432c0668e41fcda1378697cc",
+      "provenance": "57 approved fish photos published 2026-11-16"
+    },
+    {
+      "category": "fish",
+      "recipe_number": 235,
+      "path": "assets/recipes-ai/0235-collection-fish-03-01.webp",
+      "sha": "47ba12ac592020d88dfd750633918c2a32eb3196",
+      "provenance": "57 approved fish photos published 2026-11-16"
+    },
+    {
+      "category": "fish",
+      "recipe_number": 236,
+      "path": "assets/recipes-ai/0236-collection-fish-03-02.webp",
+      "sha": "1265a277ea4d4eab8dc682811a45c641e66de4c2",
+      "provenance": "57 approved fish photos published 2026-11-16"
+    },
+    {
+      "category": "fish",
+      "recipe_number": 237,
+      "path": "assets/recipes-ai/0237-collection-fish-03-03.webp",
+      "sha": "523c7264041993051dcba419cbfd914374021042",
+      "provenance": "57 approved fish photos published 2026-11-16"
+    },
+    {
+      "category": "fish",
+      "recipe_number": 238,
+      "path": "assets/recipes-ai/0238-collection-fish-03-04.webp",
+      "sha": "ba65bbeb1bc9ed7984ec4bffe963ad0edaa63422",
+      "provenance": "57 approved fish photos published 2026-11-16"
+    },
+    {
+      "category": "fish",
+      "recipe_number": 240,
+      "path": "assets/recipes-ai/0240-collection-fish-03-06.webp",
+      "sha": "77a2e04707911a5bd71fa7187ff6c469d2887c81",
+      "provenance": "57 approved fish photos published 2026-11-16"
+    },
+    {
+      "category": "fish",
+      "recipe_number": 241,
+      "path": "assets/recipes-ai/0241-collection-fish-03-07.webp",
+      "sha": "b9a6a4b78f36f3447382d7da32ee994312bb49ad",
+      "provenance": "57 approved fish photos published 2026-11-16"
+    },
+    {
+      "category": "fish",
+      "recipe_number": 242,
+      "path": "assets/recipes-ai/0242-collection-fish-03-08.webp",
+      "sha": "978a2a5ff1d0dfe2bff1c36f87a4225b127aa159",
+      "provenance": "57 approved fish photos published 2026-11-16"
+    },
+    {
+      "category": "fish",
+      "recipe_number": 243,
+      "path": "assets/recipes-ai/0243-collection-fish-03-09.webp",
+      "sha": "089d4905525664e7d16e2d6b8f0dd7252c1f3139",
+      "provenance": "57 approved fish photos published 2026-11-16"
+    },
+    {
+      "category": "fish",
+      "recipe_number": 244,
+      "path": "assets/recipes-ai/0244-collection-fish-03-10.webp",
+      "sha": "0b2797f56f0d9de81d385d16c092a657360f25c0",
+      "provenance": "57 approved fish photos published 2026-11-16"
+    },
+    {
+      "category": "fish",
+      "recipe_number": 246,
+      "path": "assets/recipes-ai/0246-collection-fish-04-02.webp",
+      "sha": "d4cbe3a0fdca2b6b5a14b91648b59fecd2ee7dd9",
+      "provenance": "57 approved fish photos published 2026-11-16"
+    },
+    {
+      "category": "fish",
+      "recipe_number": 247,
+      "path": "assets/recipes-ai/0247-collection-fish-04-03.webp",
+      "sha": "0652eaee954451084590b0c24beef88a8946df0c",
+      "provenance": "57 approved fish photos published 2026-11-16"
+    },
+    {
+      "category": "fish",
+      "recipe_number": 248,
+      "path": "assets/recipes-ai/0248-collection-fish-04-04.webp",
+      "sha": "12c40d393fe1963f4412df5adf332a91dc414fc8",
+      "provenance": "57 approved fish photos published 2026-11-16"
+    },
+    {
+      "category": "fish",
+      "recipe_number": 250,
+      "path": "assets/recipes-ai/0250-collection-fish-04-06.webp",
+      "sha": "0d01804d932f1bcf255eacfa785422962e279966",
+      "provenance": "57 approved fish photos published 2026-11-16"
+    },
+    {
+      "category": "fish",
+      "recipe_number": 251,
+      "path": "assets/recipes-ai/0251-collection-fish-04-07.webp",
+      "sha": "1e600cbcdc64cb64594728993e52a0bf92490082",
+      "provenance": "57 approved fish photos published 2026-11-16"
+    },
+    {
+      "category": "fish",
+      "recipe_number": 254,
+      "path": "assets/recipes-ai/0254-collection-fish-04-10.webp",
+      "sha": "0b57123995fb0b5bf16ead5068577c5d3a66efdb",
+      "provenance": "57 approved fish photos published 2026-11-16"
+    },
+    {
+      "category": "fish",
+      "recipe_number": 256,
+      "path": "assets/recipes-ai/0256-collection-fish-05-02.webp",
+      "sha": "b5a029e81e8a0d25ed361b853f794a1fb37c7c4f",
+      "provenance": "57 approved fish photos published 2026-11-16"
+    },
+    {
+      "category": "fish",
+      "recipe_number": 258,
+      "path": "assets/recipes-ai/0258-collection-fish-05-04.webp",
+      "sha": "e9b5aa1c04ac27fa5d5de1f0152eed2740801a2a",
+      "provenance": "57 approved fish photos published 2026-11-16"
+    },
+    {
+      "category": "fish",
+      "recipe_number": 261,
+      "path": "assets/recipes-ai/0261-collection-fish-05-07.webp",
+      "sha": "ba63f4016b1dab6e28a8a79fc475230a33257b09",
+      "provenance": "57 approved fish photos published 2026-11-16"
+    },
+    {
+      "category": "fish",
+      "recipe_number": 265,
+      "path": "assets/recipes-ai/0265-collection-fish-06-01.webp",
+      "sha": "0ecf82b2ab36d993f70b1b281c56e7498adf952f",
+      "provenance": "57 approved fish photos published 2026-11-16"
+    },
+    {
+      "category": "fish",
+      "recipe_number": 266,
+      "path": "assets/recipes-ai/0266-collection-fish-06-02.webp",
+      "sha": "e8c5ab0f8c131a3c08147df6c189db10cbb36110",
+      "provenance": "57 approved fish photos published 2026-11-16"
+    },
+    {
+      "category": "fish",
+      "recipe_number": 267,
+      "path": "assets/recipes-ai/0267-collection-fish-06-03.webp",
+      "sha": "4a588dd694b4c9a1da984589ed8fe025df1a5572",
+      "provenance": "57 approved fish photos published 2026-11-16"
+    },
+    {
+      "category": "fish",
+      "recipe_number": 268,
+      "path": "assets/recipes-ai/0268-collection-fish-06-04.webp",
+      "sha": "74274395f28cafe593e19a91fafac77447922e9b",
+      "provenance": "57 approved fish photos published 2026-11-16"
+    },
+    {
+      "category": "fish",
+      "recipe_number": 270,
+      "path": "assets/recipes-ai/0270-collection-fish-06-06.webp",
+      "sha": "5b21e6484debc89efe97ccc5a2dbbcb10e5d1fb4",
+      "provenance": "57 approved fish photos published 2026-11-16"
+    },
+    {
+      "category": "fish",
+      "recipe_number": 271,
+      "path": "assets/recipes-ai/0271-collection-fish-06-07.webp",
+      "sha": "b3bfedcb1e5b78463cb7a172987b92b76eacd8bb",
+      "provenance": "57 approved fish photos published 2026-11-16"
+    },
+    {
+      "category": "fish",
+      "recipe_number": 274,
+      "path": "assets/recipes-ai/0274-collection-fish-06-10.webp",
+      "sha": "86c047ae04bca33b050fafc4a0481db104eb72e1",
+      "provenance": "57 approved fish photos published 2026-11-16"
+    },
+    {
+      "category": "fish",
+      "recipe_number": 281,
+      "path": "assets/recipes-ai/0281-collection-fish-07-07.webp",
+      "sha": "75bc4f0112ee1e5e3e59cc13d170d7febdc88aa5",
+      "provenance": "57 approved fish photos published 2026-11-16"
+    },
+    {
+      "category": "fish",
+      "recipe_number": 282,
+      "path": "assets/recipes-ai/0282-collection-fish-07-08.webp",
+      "sha": "d513b675e8149a101e602e6ef1df8fa5309e0d9a",
+      "provenance": "57 approved fish photos published 2026-11-16"
+    },
+    {
+      "category": "fish",
+      "recipe_number": 285,
+      "path": "assets/recipes-ai/0285-collection-fish-08-01.webp",
+      "sha": "5b2fa815cac4272f5438bea041c2fa4b6ad8f172",
+      "provenance": "57 approved fish photos published 2026-11-16"
+    },
+    {
+      "category": "fish",
+      "recipe_number": 286,
+      "path": "assets/recipes-ai/0286-collection-fish-08-02.webp",
+      "sha": "565d9988271d6bffa09995ff3e4d25d3b5b3018f",
+      "provenance": "57 approved fish photos published 2026-11-16"
+    },
+    {
+      "category": "fish",
+      "recipe_number": 287,
+      "path": "assets/recipes-ai/0287-collection-fish-08-03.webp",
+      "sha": "3e5904b8b32ffd83a2883a0bd2f061dc75235126",
+      "provenance": "57 approved fish photos published 2026-11-16"
+    },
+    {
+      "category": "fish",
+      "recipe_number": 288,
+      "path": "assets/recipes-ai/0288-collection-fish-08-04.webp",
+      "sha": "1503f0ac1cb5a25efe8779631bb6d728b5aeb0bb",
+      "provenance": "57 approved fish photos published 2026-11-16"
+    },
+    {
+      "category": "fish",
+      "recipe_number": 289,
+      "path": "assets/recipes-ai/0289-collection-fish-08-05.webp",
+      "sha": "5fa8216c3f1df049802f66160cc2078039eeced1",
+      "provenance": "57 approved fish photos published 2026-11-16"
+    },
+    {
+      "category": "fish",
+      "recipe_number": 290,
+      "path": "assets/recipes-ai/0290-collection-fish-08-06.webp",
+      "sha": "6cfd32f2a015a168b0b34ec8b249ffab6f4fc267",
+      "provenance": "57 approved fish photos published 2026-11-16"
+    },
+    {
+      "category": "fish",
+      "recipe_number": 291,
+      "path": "assets/recipes-ai/0291-collection-fish-08-07.webp",
+      "sha": "2478f4d1fdc3e892a99c65ab4da9fe27e0371f5f",
+      "provenance": "57 approved fish photos published 2026-11-16"
+    },
+    {
+      "category": "fish",
+      "recipe_number": 292,
+      "path": "assets/recipes-ai/0292-collection-fish-08-08.webp",
+      "sha": "90b038882b158fd5d8df6521f5b1c5e20112078a",
+      "provenance": "57 approved fish photos published 2026-11-16"
+    },
+    {
+      "category": "fish",
+      "recipe_number": 293,
+      "path": "assets/recipes-ai/0293-collection-fish-08-09.webp",
+      "sha": "8b7e494c21f0f9a1cbedcb2b8410cd51918c824f",
+      "provenance": "57 approved fish photos published 2026-11-16"
+    },
+    {
+      "category": "fish",
+      "recipe_number": 294,
+      "path": "assets/recipes-ai/0294-collection-fish-08-10.webp",
+      "sha": "25c3e13e8ddac7be447c03d0820020b41598aca6",
+      "provenance": "57 approved fish photos published 2026-11-16"
+    },
+    {
+      "category": "fish",
+      "recipe_number": 300,
+      "path": "assets/recipes-ai/0300-collection-fish-09-06.webp",
+      "sha": "9396ec261b314b8bb8e3650b2279e598f4eba842",
+      "provenance": "57 approved fish photos published 2026-11-16"
+    },
+    {
+      "category": "fish",
+      "recipe_number": 301,
+      "path": "assets/recipes-ai/0301-collection-fish-09-07.webp",
+      "sha": "a8d475e750c42b4a9f37749c6ac2c5dbe26d2081",
+      "provenance": "57 approved fish photos published 2026-11-16"
+    },
+    {
+      "category": "fish",
+      "recipe_number": 302,
+      "path": "assets/recipes-ai/0302-collection-fish-09-08.webp",
+      "sha": "b44887dc7b36707f551c30e25b2920903546ab54",
+      "provenance": "57 approved fish photos published 2026-11-16"
+    },
+    {
+      "category": "fish",
+      "recipe_number": 307,
+      "path": "assets/recipes-ai/0307-collection-fish-10-03.webp",
+      "sha": "371ea490963566a06a05de94e9706821a2da8d99",
+      "provenance": "57 approved fish photos published 2026-11-16"
+    },
+    {
+      "category": "fish",
+      "recipe_number": 311,
+      "path": "assets/recipes-ai/0311-collection-fish-10-07.webp",
+      "sha": "5a1674b95307ea626028563c73d12bea4f1df39a",
+      "provenance": "57 approved fish photos published 2026-11-16"
+    }
+  ],
+  "review_flags": [
+    {
+      "category": "pasta",
+      "recipe_numbers": [
+        333,
+        334,
+        335,
+        336
+      ],
+      "reason": "Historical archive shows pasta shape mismatch, whole garlic, lemon and/or large cheese fragments; these four previously approved images were not confidently archived or published."
+    },
+    {
+      "category": "pasta",
+      "recipe_numbers": "Other 43 original photographs require per-card visual review; excluded recipes #78/#82 have explicit do-not-replace history.",
+      "reason": "The zip archive 2026-11-17 explicitly says 75 source photos are not a verified approved set."
+    },
+    {
+      "category": "all",
+      "recipe_numbers": null,
+      "reason": "Photo map is stale; photo-library/ai-recipe-photo-map.json cannot be used as a trustworthy image canonicalizer without reconciliation."
+    }
+  ]
+}
