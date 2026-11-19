@@ -5,6 +5,8 @@ on:
       - ops/photo-baseline-lock-20261119
     paths:
       - 'scripts/verify-approved-photo-baseline.cjs'
+      - 'scripts/verify-photo-map-bytes.cjs'
+      - 'photo-library/ai-recipe-photo-map.json'
       - 'project-operations/APPROVED_PHOTO_BASELINE_20261119.json'
       - 'assets/recipes-ai/**'
       - '.github/workflows/approved-photo-baseline.yml'
@@ -22,5 +24,5 @@ jobs:
           node-version: '22'
       - name: Verify owner-approved image bytes
         run: node scripts/verify-approved-photo-baseline.cjs
-      - name: Check 1001 recipe photo links
-        run: python3 scripts/verify-1001-photo-links.py
+      - name: Check actual 1001 catalog photo files and hashes
+        run: node scripts/verify-photo-map-bytes.cjs
