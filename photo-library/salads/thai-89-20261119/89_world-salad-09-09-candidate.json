@@ -9,6 +9,8 @@
   "bytes": 166880,
   "width": 1536,
   "height": 1024,
-  "status": "generated_candidate_pending_user_approval",
-  "published": false
+  "status": "approved_by_user",
+  "published": false,
+  "approved_for_publication": true,
+  "approval_note": "User explicitly approved the displayed image /mnt/data/НАШ_ВЕЧЕР_САЛАТ_89_ЯМ_МАМУАНГ.png, visually identical to this exact v1 candidate. Keep original v1; reject v2-v4 for publication."
 }
