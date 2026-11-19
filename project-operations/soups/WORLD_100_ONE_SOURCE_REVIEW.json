@@ -4,7 +4,7 @@
   "date": "2026-11-19",
   "disclaimer": "One selected original recipe per card. Archived excerpts are for preliminary triage, not proof of full reading or a culinary signoff. Timers require manual readiness and multi-phase checks. Previously recorded 3-URL comparisons remain as historical provenance and are not required. Full single-source reviews of first 4 completed, but recipe #2 needs alignment; approved count does not mean photographs or public publication are approved.",
   "total": 100,
-  "full_reviews_completed": 30,
+  "full_reviews_completed": 40,
   "recipes": [
     {
       "id": 1,
@@ -587,10 +587,13 @@
       "ingredient_excerpt": "1 kg de tomates de pera maduros / 1 pimiento verde / 1 pepino mediano / 1 diente de ajo / 50 ml de Aceite de oliva premium Único / 30 ml de vinagre de Jeréz / 1 cucharadita de sal / 400 ml de agua / 50 gr de pan",
       "method_excerpt": "Lavamos bien todas las verduras y troceamos los tomates, el pimiento, el pepino y el diente de ajo. Para que el pepino no amargue es importante retirarle los extremos y al ajo quitarle la semilla. Una vez que tenemos todas la",
       "preliminary_basis": "ARCHIVED_SOURCE_EXCERPTS",
-      "ingredient_check": "PENDING_FULL_SINGLE_SOURCE_REVIEW",
-      "technique_check": "PENDING_FULL_SINGLE_SOURCE_REVIEW",
-      "time_check": "PENDING_FULL_SINGLE_SOURCE_REVIEW",
-      "approved": false
+      "ingredient_check": "PASS",
+      "technique_check": "PASS",
+      "time_check": "PASS",
+      "approved": true,
+      "review_note": "GOYA Andalusian gazpacho uses ripe tomato, cucumber, peppers, garlic, bread, olive oil and vinegar, cold blended. Editorial two servings uses balanced puree/emulsion and refrigerates for at least 1h.",
+      "review_method": "ORIGINAL_RECIPE_PAGE_OPENED_AND_COMPARED_WITH_EDITORIAL_STEPS",
+      "review_date": "2026-11-19"
     },
     {
       "id": 32,
@@ -603,10 +606,13 @@
       "ingredient_excerpt": "",
       "method_excerpt": "Wash the tomatoes, blend them and strain them to remove the skin and seeds. Add the bread (before this, leave to soak in water or in the blended tomatoes), extra virgin olive oil, garlic and salt, and blend again.",
       "preliminary_basis": "ARCHIVED_SOURCE_EXCERPTS",
-      "ingredient_check": "PENDING_FULL_SINGLE_SOURCE_REVIEW",
-      "technique_check": "PENDING_FULL_SINGLE_SOURCE_REVIEW",
-      "time_check": "PENDING_FULL_SINGLE_SOURCE_REVIEW",
-      "approved": false
+      "ingredient_check": "PASS",
+      "technique_check": "PASS",
+      "time_check": "PASS",
+      "approved": true,
+      "review_note": "Spain.info official salmorejo contains tomatoes, bread, olive oil, garlic and egg/ham garnish; editorial uses traditional dense chilled emulsion, 9-10min hard egg.",
+      "review_method": "ORIGINAL_RECIPE_PAGE_OPENED_AND_COMPARED_WITH_EDITORIAL_STEPS",
+      "review_date": "2026-11-19"
     },
     {
       "id": 33,
@@ -619,10 +625,13 @@
       "ingredient_excerpt": "50.0g stale slightly white bread (crusts off) / 300.0ml water / 100.0g blanched almonds (frozen) / 60.0ml olive oil / 50.0g cucumber peeled / 1.0 crushed garlic clove / 30.0g granny smith apple peeled / 1.0tbsp sherry vinegar / 0.5tsp salt",
       "method_excerpt": "Soak the bread in the cold water for 15 minutes. Remove the almonds from the freezer, and put in a blender with the olive oil and garlic, and blend until smooth. / Next, tip the bread and water into the blender along with the",
       "preliminary_basis": "ARCHIVED_SOURCE_EXCERPTS",
-      "ingredient_check": "PENDING_FULL_SINGLE_SOURCE_REVIEW",
-      "technique_check": "PENDING_FULL_SINGLE_SOURCE_REVIEW",
-      "time_check": "PENDING_FULL_SINGLE_SOURCE_REVIEW",
-      "approved": false
+      "ingredient_check": "PASS",
+      "technique_check": "PASS",
+      "time_check": "PASS",
+      "approved": true,
+      "review_note": "Guardian ajo blanco is blended almond/garlic/bread cold soup with olive oil and vinegar; editorial uses seedless grapes separately, chills fully. Ingredient roles align.",
+      "review_method": "ORIGINAL_RECIPE_PAGE_OPENED_AND_COMPARED_WITH_EDITORIAL_STEPS",
+      "review_date": "2026-11-19"
     },
     {
       "id": 34,
@@ -635,10 +644,13 @@
       "ingredient_excerpt": "4count Diente de ajo / 8count Pan de hogaza / 1 Pimentón dulce / 1 Chorizo fresco / 75g Jamón ibérico / 1 Pimentón picante / 500ml Caldo de carne / 2 Huevo / Aceite de oliva virgen extra / Sal",
       "method_excerpt": "En una cazuela amplia freír los panes en aceite hasta que estén dorados y reservar. En la misma cazuela **sofreír el chorizo desmigado y el jamón picado,** reservar. Laminar el ajo y sofreírlo a fuego suave 2-3 min. **Agregar",
       "preliminary_basis": "ARCHIVED_SOURCE_EXCERPTS",
-      "ingredient_check": "PENDING_FULL_SINGLE_SOURCE_REVIEW",
-      "technique_check": "PENDING_FULL_SINGLE_SOURCE_REVIEW",
-      "time_check": "PENDING_FULL_SINGLE_SOURCE_REVIEW",
-      "approved": false
+      "ingredient_check": "PASS",
+      "technique_check": "PASS",
+      "time_check": "CONDITIONAL_READINESS",
+      "approved": false,
+      "review_note": "Directo al Paladar sopa de ajo uses garlic/paprika/stale bread and eggs; 3-4min poached egg stage may leave undercooked center, add doneness criterion for vulnerable users.",
+      "review_method": "ORIGINAL_RECIPE_PAGE_OPENED_AND_COMPARED_WITH_EDITORIAL_STEPS",
+      "review_date": "2026-11-19"
     },
     {
       "id": 35,
@@ -651,10 +663,13 @@
       "ingredient_excerpt": "150g Habas / 500g Patata / 500g Grelos / 1count Hueso de espinazo de cerdo / 250g Lacón / 2count Chorizo fresco / 50g Unto / Sal",
       "method_excerpt": "Poner en remojo las habas la noche anterior y el lacón si es salado, en remojo en agua. En una olla grande y alta echar dos litros de agua con un poco de sal y poner a cocer las habas con la carne durante una hora y media o h",
       "preliminary_basis": "ARCHIVED_SOURCE_EXCERPTS",
-      "ingredient_check": "PENDING_FULL_SINGLE_SOURCE_REVIEW",
-      "technique_check": "PENDING_FULL_SINGLE_SOURCE_REVIEW",
-      "time_check": "PENDING_FULL_SINGLE_SOURCE_REVIEW",
-      "approved": false
+      "ingredient_check": "PASS",
+      "technique_check": "PASS",
+      "time_check": "PASS",
+      "approved": true,
+      "review_note": "Directo al Paladar caldo gallego requires slow pork stock, potato, legumes and greens; editorial cooked beans and smoked pork/chorizo simplify while keeping long 45-60min pork stage until fully cooked.",
+      "review_method": "ORIGINAL_RECIPE_PAGE_OPENED_AND_COMPARED_WITH_EDITORIAL_STEPS",
+      "review_date": "2026-11-19"
     },
     {
       "id": 36,
@@ -667,10 +682,13 @@
       "ingredient_excerpt": "6 puerros / 1 ramita de apio / 3 patatas medianas / 2 cebolletas / 3 zanahorias medianas / Sal / Aceite de Oliva Virgen Extra / Perejil fresco / Caldo casero o agua",
       "method_excerpt": "Empezamos por limpiar bien los puerros, sacándoles las raíces, la hoja más exterior y lavándolos bien, especialmente la parte verde, que vamos a aprovechar. Para esto puedes hacer dos cortes longitudinales y enfrentados en la",
       "preliminary_basis": "ARCHIVED_SOURCE_EXCERPTS",
-      "ingredient_check": "PENDING_FULL_SINGLE_SOURCE_REVIEW",
-      "technique_check": "PENDING_FULL_SINGLE_SOURCE_REVIEW",
-      "time_check": "PENDING_FULL_SINGLE_SOURCE_REVIEW",
-      "approved": false
+      "ingredient_check": "PASS",
+      "technique_check": "PASS",
+      "time_check": "PASS",
+      "approved": true,
+      "review_note": "Central Lechera Asturiana porrusalda emphasizes leek, potato, carrot, broth, cooked in one pot. Editorial saute 6-8min then 20-25min until potato tender, consistent.",
+      "review_method": "ORIGINAL_RECIPE_PAGE_OPENED_AND_COMPARED_WITH_EDITORIAL_STEPS",
+      "review_date": "2026-11-19"
     },
     {
       "id": 37,
@@ -683,10 +701,13 @@
       "ingredient_excerpt": "",
       "method_excerpt": "",
       "preliminary_basis": "ARCHIVED_SOURCE_EXCERPTS",
-      "ingredient_check": "PENDING_FULL_SINGLE_SOURCE_REVIEW",
-      "technique_check": "PENDING_FULL_SINGLE_SOURCE_REVIEW",
-      "time_check": "PENDING_FULL_SINGLE_SOURCE_REVIEW",
-      "approved": false
+      "ingredient_check": "PASS",
+      "technique_check": "PASS",
+      "time_check": "CONDITIONAL_READINESS",
+      "approved": false,
+      "review_note": "Canal Cocina gazpachuelo fish/potato/broth with mayonnaise emulsion. Editorial uses pasteurized mayonnaise and no further boiling, good; seafood must be properly cooked rather than trusting 5-7min alone.",
+      "review_method": "ORIGINAL_RECIPE_PAGE_OPENED_AND_COMPARED_WITH_EDITORIAL_STEPS",
+      "review_date": "2026-11-19"
     },
     {
       "id": 38,
@@ -699,10 +720,13 @@
       "ingredient_excerpt": "1/2 chicken / 2 eggs / 2 carrots / 1 leek / 1 ham bone / 100 gr Spanish Serrano ham / 2 cups (120 gr) soup noodles. / Salt and pepper to taste",
       "method_excerpt": "Peel and wash the carrots. Peel the leek and cut it into two large pieces. Put everything in a pot together with the chopped chicken, the ham bone, and enough water to cover everything. / Cook it all together for at least 1 h",
       "preliminary_basis": "ARCHIVED_SOURCE_EXCERPTS",
-      "ingredient_check": "PENDING_FULL_SINGLE_SOURCE_REVIEW",
-      "technique_check": "PENDING_FULL_SINGLE_SOURCE_REVIEW",
-      "time_check": "PENDING_FULL_SINGLE_SOURCE_REVIEW",
-      "approved": false
+      "ingredient_check": "PASS",
+      "technique_check": "PASS",
+      "time_check": "PASS",
+      "approved": true,
+      "review_note": "Visit Southern Spain sopa de picadillo chicken broth, serrano ham, boiled eggs, fine noodles, mint. Editorial smaller batch keeps key ingredients and stepwise cook.",
+      "review_method": "ORIGINAL_RECIPE_PAGE_OPENED_AND_COMPARED_WITH_EDITORIAL_STEPS",
+      "review_date": "2026-11-19"
     },
     {
       "id": 39,
@@ -715,10 +739,13 @@
       "ingredient_excerpt": "600g Garbanzos / 4 Patata / 4 Zanahoria / 1 Nabo blanco / 700g Morcillo / 1 Oreja de cerdo / 2 Manitas de cerdo / 2 Huesos de espinazo de cerdo salado / 1 Hueso de rodilla de ternera / 1 Hueso o punta de jamón / 400g Carne picada / 100g Tocino / Past",
       "method_excerpt": "La víspera, dejamos los garbanzos en remojo para acortar su cocción. Podemos meter también en el agua los huesos de espinazo de cerdo para quitarles parte de su potencia. Al día siguiente, **escurrimos los garbanzos y los met",
       "preliminary_basis": "ARCHIVED_SOURCE_EXCERPTS",
-      "ingredient_check": "PENDING_FULL_SINGLE_SOURCE_REVIEW",
-      "technique_check": "PENDING_FULL_SINGLE_SOURCE_REVIEW",
-      "time_check": "PENDING_FULL_SINGLE_SOURCE_REVIEW",
-      "approved": false
+      "ingredient_check": "PASS",
+      "technique_check": "PASS",
+      "time_check": "CONDITIONAL_READINESS",
+      "approved": false,
+      "review_note": "Directo al Paladar escudella soup and carn d'olla combines meat bones, chickpeas, vegetables, pilota and galets. Editorial soaked chickpeas and raw pork pilota need full tenderness and safe cooking; no fixed time guarantee.",
+      "review_method": "ORIGINAL_RECIPE_PAGE_OPENED_AND_COMPARED_WITH_EDITORIAL_STEPS",
+      "review_date": "2026-11-19"
     },
     {
       "id": 40,
@@ -731,10 +758,13 @@
       "ingredient_excerpt": "1 kg ripe tomatoes / 1 green bell pepper / 1 teen garlic / 250 g white bread / 150 ml extra virgin olive oil / 1 el sherry vinegar / 1 tl salt / 2 stuks eggs / 1 blik tuna in olive oil / 50 g serrano ham",
       "method_excerpt": "Wash the tomatoes, remove the stem and cut them into rough pieces. / Halve the bell pepper, remove the seeds and ribs and cut it into pieces. / Peel the garlic and remove the green germ, so the flavor stays mild. / Blend toma",
       "preliminary_basis": "ARCHIVED_SOURCE_EXCERPTS",
-      "ingredient_check": "PENDING_FULL_SINGLE_SOURCE_REVIEW",
-      "technique_check": "PENDING_FULL_SINGLE_SOURCE_REVIEW",
-      "time_check": "PENDING_FULL_SINGLE_SOURCE_REVIEW",
-      "approved": false
+      "ingredient_check": "PASS",
+      "technique_check": "PASS",
+      "time_check": "PASS",
+      "approved": true,
+      "review_note": "Vanavondkoken porra antequerana dense cold tomato bread pepper olive oil emulsion with boiled egg and optional tuna. Editorial two-serving quantity and refrigeration retain cold presentation.",
+      "review_method": "ORIGINAL_RECIPE_PAGE_OPENED_AND_COMPARED_WITH_EDITORIAL_STEPS",
+      "review_date": "2026-11-19"
     },
     {
       "id": 41,
@@ -1697,6 +1727,6 @@
       "approved": false
     }
   ],
-  "quality_approved": 22,
-  "review_in_progress": 8
+  "quality_approved": 29,
+  "review_in_progress": 11
 }
