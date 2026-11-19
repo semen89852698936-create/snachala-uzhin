@@ -8723,3 +8723,60 @@ html body #homeView .du-bonus .bonus-inner > a#bonusRecipe:focus-visible {
   margin-left: 0 !important;
   margin-right: 0 !important;
 }
+
+/* CATALOG_TWO_ROWS_CONTENT_WIDTH_FIX_20261119 */
+/* Preserve the approved 7+6 order. Give Meat less space and Fish enough
+   space for its full label without moving either row outside the board. */
+#homeView #catalog #categoryFilters:has(> .category-filter-row) {
+  display:flex!important;
+  flex-direction:column!important;
+  align-items:stretch!important;
+  justify-content:flex-start!important;
+  gap:12px!important;
+  min-width:0!important;
+  max-width:100%!important;
+  overflow-x:auto!important;
+}
+#homeView #catalog #categoryFilters > .category-filter-row {
+  display:grid!important;
+  width:100%!important;
+  min-width:0!important;
+  max-width:100%!important;
+  justify-content:stretch;
+  align-items:stretch;
+  gap:8px!important;
+}
+#homeView #catalog #categoryFilters > .category-filter-row:first-child {
+  grid-template-columns:minmax(0,4fr) minmax(0,4fr) minmax(0,4fr) minmax(0,3fr) minmax(0,4fr) minmax(0,7fr) minmax(0,4fr);
+}
+#homeView #catalog #categoryFilters > .category-filter-row:nth-child(2) {
+  grid-template-columns:5fr 4fr 6fr 4fr 5fr 6fr;
+}
+#homeView #catalog #categoryFilters > .category-filter-row > .chip {
+  width:100%!important;
+  min-width:0!important;
+  max-width:100%!important;
+  box-sizing:border-box!important;
+  white-space:normal!important;
+  overflow-wrap:normal!important;
+  text-align:center!important;
+  padding-inline:8px!important;
+  line-height:1.22!important;
+}
+#homeView #catalog #categoryFilters > .category-filter-row > .chip[data-filter="meat"] {
+  padding-inline:6px!important;
+}
+#homeView #catalog #categoryFilters > .category-filter-row > .chip[data-filter="fish"] {
+  font-size:clamp(14px,1.05vw,18px)!important;
+  padding-inline:10px!important;
+}
+@media(max-width:1050px){
+  #homeView #catalog #categoryFilters > .category-filter-row {
+    width:max-content!important;
+    min-width:900px!important;
+    max-width:none!important;
+  }
+  #homeView #catalog #categoryFilters > .category-filter-row > .chip {
+    white-space:nowrap!important;
+  }
+}
