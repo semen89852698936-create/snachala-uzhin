@@ -1647,7 +1647,7 @@
           "timer": 20
         }
       ],
-      "tip": "Классическая рождественская закуска Неаполя, с уксусными добавками.",
+      "tip": "Традиционное неаполитанское «ринфорцо» вкуснее после ночи в холодильнике: 20 минут выдержки достаточно лишь для быстрой подачи. Для настоящего рождественского варианта приготовь накануне.",
       "warn": "Содержит рыбу, каперсы и оливки солёные; соль добавлять после пробы.",
       "tags": [
         "Итальянская кухня"
@@ -1662,7 +1662,7 @@
           "https://www.lospicchiodaglio.it/ricetta/insalata-di-rinforzo",
           "https://www.galbani.it/ricette/insalata-di-rinforzo"
         ],
-        "note": "Ингредиенты и техника сверены с региональной рецептурой; количества пересчитаны для двоих."
+        "note": "Ингредиенты и техника сверены с региональной рецептурой; количества пересчитаны для двоих.\n2026-11-19: Lospicchiodaglio specifies >= one day refrigerated rest and La Cucina Italiana notes better flavour next day. Editorial 65-minute version is a fast option; tip now clearly states overnight recommended for traditional taste."
       },
       "photo": null,
       "imagePublishingBlocked": true,
@@ -1677,7 +1677,7 @@
       "title": "Римские пунтарелле с анчоусами",
       "category": "salads",
       "cuisine": "Италия",
-      "minutes": 30,
+      "minutes": 75,
       "base": 2,
       "level": "Легко",
       "emoji": "🥗",
@@ -1728,8 +1728,8 @@
         },
         {
           "title": "Завей в холодной воде",
-          "detail": "Положи полоски в ледяную воду на 20–30 минут, они станут хрустящими и слегка закрутятся; затем тщательно обсуши.",
-          "timer": 25
+          "detail": "Положи тонкие полоски пунтарелле в ледяную воду на 60 минут до хруста и закручивания; если побеги очень горчат, оставь ещё дольше, вплоть до 2–3 часов. Затем тщательно обсуши.",
+          "timer": 60
         },
         {
           "title": "Сделай соус",
@@ -1757,7 +1757,7 @@
           "https://orto.ch/ricetta/puntarelle-alla-romana/",
           "https://www.cucchiaio.it/ricetta/ricetta-insalata-puntarelle/"
         ],
-        "note": "Ингредиенты и техника сверены с региональной рецептурой; количества пересчитаны для двоих.\nVerified replacement 2026-11-19: Corrected URL; Cucchiaio recipe explicitly describes raw puntarelle with anchovy-garlic dressing; 1h optional rest versus 20–30min in editorial card."
+        "note": "Ингредиенты и техника сверены с региональной рецептурой; количества пересчитаны для двоих.\nVerified replacement 2026-11-19: Corrected URL; Cucchiaio recipe explicitly describes raw puntarelle with anchovy-garlic dressing; 1h optional rest versus 20–30min in editorial card.\n2026-11-19 crosscheck all three sources: La Cucina Italiana and Cucchiaio recommend roughly 1 hour in iced water; Orto.ch allows 2–3h. Prior 25min soak understated the traditional technique; 60min countdown and 75min total added."
       },
       "photo": null,
       "imagePublishingBlocked": true,
