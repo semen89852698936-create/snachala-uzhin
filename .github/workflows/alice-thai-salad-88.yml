@@ -43,3 +43,12 @@ jobs:
           YANDEX_FOLDER_ID: ${{ secrets.YANDEX_FOLDER_ID || 'b1g00u8p0k5nl98v8nre' }}
           PHOTO_COST_APPROVED: 'true'
         run: python scripts/alice-thai-salad-88.py --execute
+      - name: Attach already generated candidate for visual review
+        uses: actions/upload-artifact@v4
+        with:
+          name: thai-salad-88-alice-candidate
+          path: |
+            photo-library/salads/thai-88-20261119/88_world-salad-09-08-candidate.webp
+            photo-library/salads/thai-88-20261119/88_world-salad-09-08-candidate.json
+          if-no-files-found: error
+          retention-days: 30
