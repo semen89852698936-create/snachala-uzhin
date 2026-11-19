@@ -24,11 +24,15 @@
       "textApprovedByUser": true,
       "threeSourceUrlsPresent": true,
       "sourceAuditCompleted": false,
-      "imageCandidateOrigin": "standalone_candidate_local_not_uploaded",
+      "imageCandidateOrigin": "fullsize_candidate",
       "photoInRepository": false,
       "photoVerifiedForRecipe": false,
       "photoPath": null,
-      "readyForPublish": false
+      "readyForPublish": false,
+      "sourceVsManifestAligned": true,
+      "photoAssetFinalized": false,
+      "photoQaIssue": null,
+      "newImageCandidateNotPublished": false
     },
     {
       "number": 2,
@@ -38,11 +42,15 @@
       "textApprovedByUser": true,
       "threeSourceUrlsPresent": true,
       "sourceAuditCompleted": false,
-      "imageCandidateOrigin": "standalone_candidate_local_not_uploaded",
+      "imageCandidateOrigin": "fullsize_candidate",
       "photoInRepository": false,
       "photoVerifiedForRecipe": false,
       "photoPath": null,
-      "readyForPublish": false
+      "readyForPublish": false,
+      "sourceVsManifestAligned": true,
+      "photoAssetFinalized": false,
+      "photoQaIssue": null,
+      "newImageCandidateNotPublished": false
     },
     {
       "number": 3,
@@ -52,11 +60,15 @@
       "textApprovedByUser": true,
       "threeSourceUrlsPresent": true,
       "sourceAuditCompleted": false,
-      "imageCandidateOrigin": "standalone_candidate_local_not_uploaded",
+      "imageCandidateOrigin": "fullsize_candidate",
       "photoInRepository": false,
       "photoVerifiedForRecipe": false,
       "photoPath": null,
-      "readyForPublish": false
+      "readyForPublish": false,
+      "sourceVsManifestAligned": true,
+      "photoAssetFinalized": false,
+      "photoQaIssue": null,
+      "newImageCandidateNotPublished": false
     },
     {
       "number": 4,
@@ -66,11 +78,15 @@
       "textApprovedByUser": true,
       "threeSourceUrlsPresent": true,
       "sourceAuditCompleted": false,
-      "imageCandidateOrigin": "standalone_candidate_local_not_uploaded",
+      "imageCandidateOrigin": "fullsize_candidate",
       "photoInRepository": false,
       "photoVerifiedForRecipe": false,
       "photoPath": null,
-      "readyForPublish": false
+      "readyForPublish": false,
+      "sourceVsManifestAligned": true,
+      "photoAssetFinalized": false,
+      "photoQaIssue": null,
+      "newImageCandidateNotPublished": false
     },
     {
       "number": 5,
@@ -80,11 +96,15 @@
       "textApprovedByUser": true,
       "threeSourceUrlsPresent": true,
       "sourceAuditCompleted": false,
-      "imageCandidateOrigin": "standalone_candidate_local_not_uploaded",
+      "imageCandidateOrigin": "fullsize_candidate",
       "photoInRepository": false,
       "photoVerifiedForRecipe": false,
       "photoPath": null,
-      "readyForPublish": false
+      "readyForPublish": false,
+      "sourceVsManifestAligned": true,
+      "photoAssetFinalized": false,
+      "photoQaIssue": null,
+      "newImageCandidateNotPublished": false
     },
     {
       "number": 6,
@@ -94,11 +114,15 @@
       "textApprovedByUser": true,
       "threeSourceUrlsPresent": true,
       "sourceAuditCompleted": false,
-      "imageCandidateOrigin": "standalone_candidate_local_not_uploaded",
+      "imageCandidateOrigin": "fullsize_candidate",
       "photoInRepository": false,
       "photoVerifiedForRecipe": false,
       "photoPath": null,
-      "readyForPublish": false
+      "readyForPublish": false,
+      "sourceVsManifestAligned": true,
+      "photoAssetFinalized": false,
+      "photoQaIssue": null,
+      "newImageCandidateNotPublished": false
     },
     {
       "number": 7,
@@ -108,11 +132,15 @@
       "textApprovedByUser": true,
       "threeSourceUrlsPresent": true,
       "sourceAuditCompleted": false,
-      "imageCandidateOrigin": "low_resolution_collage_crop",
+      "imageCandidateOrigin": "lowres_collage_crop",
       "photoInRepository": false,
       "photoVerifiedForRecipe": false,
       "photoPath": null,
-      "readyForPublish": false
+      "readyForPublish": false,
+      "sourceVsManifestAligned": true,
+      "photoAssetFinalized": false,
+      "photoQaIssue": "Verify cod-liver visual; photographed filling resembles flaked tuna",
+      "newImageCandidateNotPublished": false
     },
     {
       "number": 8,
@@ -122,11 +150,15 @@
       "textApprovedByUser": true,
       "threeSourceUrlsPresent": true,
       "sourceAuditCompleted": false,
-      "imageCandidateOrigin": "low_resolution_collage_crop",
+      "imageCandidateOrigin": "lowres_collage_crop",
       "photoInRepository": false,
       "photoVerifiedForRecipe": false,
       "photoPath": null,
-      "readyForPublish": false
+      "readyForPublish": false,
+      "sourceVsManifestAligned": true,
+      "photoAssetFinalized": false,
+      "photoQaIssue": null,
+      "newImageCandidateNotPublished": false
     },
     {
       "number": 9,
@@ -136,11 +168,15 @@
       "textApprovedByUser": true,
       "threeSourceUrlsPresent": true,
       "sourceAuditCompleted": false,
-      "imageCandidateOrigin": "low_resolution_collage_crop",
+      "imageCandidateOrigin": "lowres_collage_crop",
       "photoInRepository": false,
       "photoVerifiedForRecipe": false,
       "photoPath": null,
-      "readyForPublish": false
+      "readyForPublish": false,
+      "sourceVsManifestAligned": true,
+      "photoAssetFinalized": false,
+      "photoQaIssue": "Large walnut halves; styling needs checking",
+      "newImageCandidateNotPublished": false
     },
     {
       "number": 10,
@@ -150,11 +186,15 @@
       "textApprovedByUser": true,
       "threeSourceUrlsPresent": true,
       "sourceAuditCompleted": false,
-      "imageCandidateOrigin": "low_resolution_collage_crop",
+      "imageCandidateOrigin": "lowres_collage_crop",
       "photoInRepository": false,
       "photoVerifiedForRecipe": false,
       "photoPath": null,
-      "readyForPublish": false
+      "readyForPublish": false,
+      "sourceVsManifestAligned": true,
+      "photoAssetFinalized": false,
+      "photoQaIssue": null,
+      "newImageCandidateNotPublished": false
     },
     {
       "number": 11,
@@ -164,11 +204,15 @@
       "textApprovedByUser": true,
       "threeSourceUrlsPresent": true,
       "sourceAuditCompleted": false,
-      "imageCandidateOrigin": "low_resolution_collage_crop",
+      "imageCandidateOrigin": "lowres_collage_crop",
       "photoInRepository": false,
       "photoVerifiedForRecipe": false,
       "photoPath": null,
-      "readyForPublish": false
+      "readyForPublish": false,
+      "sourceVsManifestAligned": true,
+      "photoAssetFinalized": false,
+      "photoQaIssue": null,
+      "newImageCandidateNotPublished": false
     },
     {
       "number": 12,
@@ -178,11 +222,15 @@
       "textApprovedByUser": true,
       "threeSourceUrlsPresent": true,
       "sourceAuditCompleted": false,
-      "imageCandidateOrigin": "low_resolution_collage_crop",
+      "imageCandidateOrigin": "lowres_collage_crop",
       "photoInRepository": false,
       "photoVerifiedForRecipe": false,
       "photoPath": null,
-      "readyForPublish": false
+      "readyForPublish": false,
+      "sourceVsManifestAligned": true,
+      "photoAssetFinalized": false,
+      "photoQaIssue": null,
+      "newImageCandidateNotPublished": false
     },
     {
       "number": 13,
@@ -192,11 +240,15 @@
       "textApprovedByUser": true,
       "threeSourceUrlsPresent": true,
       "sourceAuditCompleted": false,
-      "imageCandidateOrigin": "low_resolution_collage_crop",
+      "imageCandidateOrigin": "lowres_collage_crop",
       "photoInRepository": false,
       "photoVerifiedForRecipe": false,
       "photoPath": null,
-      "readyForPublish": false
+      "readyForPublish": false,
+      "sourceVsManifestAligned": true,
+      "photoAssetFinalized": false,
+      "photoQaIssue": null,
+      "newImageCandidateNotPublished": false
     },
     {
       "number": 14,
@@ -206,11 +258,15 @@
       "textApprovedByUser": true,
       "threeSourceUrlsPresent": true,
       "sourceAuditCompleted": false,
-      "imageCandidateOrigin": "low_resolution_collage_crop",
+      "imageCandidateOrigin": "lowres_collage_crop",
       "photoInRepository": false,
       "photoVerifiedForRecipe": false,
       "photoPath": null,
-      "readyForPublish": false
+      "readyForPublish": false,
+      "sourceVsManifestAligned": true,
+      "photoAssetFinalized": false,
+      "photoQaIssue": null,
+      "newImageCandidateNotPublished": false
     },
     {
       "number": 15,
@@ -220,11 +276,15 @@
       "textApprovedByUser": true,
       "threeSourceUrlsPresent": true,
       "sourceAuditCompleted": false,
-      "imageCandidateOrigin": "low_resolution_collage_crop",
+      "imageCandidateOrigin": "lowres_collage_crop",
       "photoInRepository": false,
       "photoVerifiedForRecipe": false,
       "photoPath": null,
-      "readyForPublish": false
+      "readyForPublish": false,
+      "sourceVsManifestAligned": true,
+      "photoAssetFinalized": false,
+      "photoQaIssue": null,
+      "newImageCandidateNotPublished": false
     },
     {
       "number": 16,
@@ -234,11 +294,15 @@
       "textApprovedByUser": true,
       "threeSourceUrlsPresent": true,
       "sourceAuditCompleted": false,
-      "imageCandidateOrigin": "low_resolution_collage_crop",
+      "imageCandidateOrigin": "lowres_collage_crop",
       "photoInRepository": false,
       "photoVerifiedForRecipe": false,
       "photoPath": null,
-      "readyForPublish": false
+      "readyForPublish": false,
+      "sourceVsManifestAligned": true,
+      "photoAssetFinalized": false,
+      "photoQaIssue": null,
+      "newImageCandidateNotPublished": false
     },
     {
       "number": 17,
@@ -248,11 +312,15 @@
       "textApprovedByUser": true,
       "threeSourceUrlsPresent": true,
       "sourceAuditCompleted": false,
-      "imageCandidateOrigin": "low_resolution_collage_crop",
+      "imageCandidateOrigin": "lowres_collage_crop",
       "photoInRepository": false,
       "photoVerifiedForRecipe": false,
       "photoPath": null,
-      "readyForPublish": false
+      "readyForPublish": false,
+      "sourceVsManifestAligned": true,
+      "photoAssetFinalized": false,
+      "photoQaIssue": "Verify that greens are puntarelle and not another vegetable",
+      "newImageCandidateNotPublished": false
     },
     {
       "number": 18,
@@ -262,11 +330,15 @@
       "textApprovedByUser": true,
       "threeSourceUrlsPresent": true,
       "sourceAuditCompleted": false,
-      "imageCandidateOrigin": "low_resolution_collage_crop",
+      "imageCandidateOrigin": "lowres_collage_crop",
       "photoInRepository": false,
       "photoVerifiedForRecipe": false,
       "photoPath": null,
-      "readyForPublish": false
+      "readyForPublish": false,
+      "sourceVsManifestAligned": true,
+      "photoAssetFinalized": false,
+      "photoQaIssue": null,
+      "newImageCandidateNotPublished": false
     },
     {
       "number": 19,
@@ -276,11 +348,15 @@
       "textApprovedByUser": true,
       "threeSourceUrlsPresent": true,
       "sourceAuditCompleted": false,
-      "imageCandidateOrigin": "low_resolution_collage_crop",
+      "imageCandidateOrigin": "lowres_collage_crop",
       "photoInRepository": false,
       "photoVerifiedForRecipe": false,
       "photoPath": null,
-      "readyForPublish": false
+      "readyForPublish": false,
+      "sourceVsManifestAligned": true,
+      "photoAssetFinalized": false,
+      "photoQaIssue": null,
+      "newImageCandidateNotPublished": false
     },
     {
       "number": 20,
@@ -290,11 +366,15 @@
       "textApprovedByUser": true,
       "threeSourceUrlsPresent": true,
       "sourceAuditCompleted": false,
-      "imageCandidateOrigin": "low_resolution_collage_crop",
+      "imageCandidateOrigin": "lowres_collage_crop",
       "photoInRepository": false,
       "photoVerifiedForRecipe": false,
       "photoPath": null,
-      "readyForPublish": false
+      "readyForPublish": false,
+      "sourceVsManifestAligned": true,
+      "photoAssetFinalized": false,
+      "photoQaIssue": null,
+      "newImageCandidateNotPublished": false
     },
     {
       "number": 21,
@@ -304,11 +384,15 @@
       "textApprovedByUser": true,
       "threeSourceUrlsPresent": true,
       "sourceAuditCompleted": false,
-      "imageCandidateOrigin": "standalone_candidate_local_not_uploaded",
+      "imageCandidateOrigin": "fullsize_candidate",
       "photoInRepository": false,
       "photoVerifiedForRecipe": false,
       "photoPath": null,
-      "readyForPublish": false
+      "readyForPublish": false,
+      "sourceVsManifestAligned": true,
+      "photoAssetFinalized": false,
+      "photoQaIssue": null,
+      "newImageCandidateNotPublished": false
     },
     {
       "number": 22,
@@ -318,11 +402,15 @@
       "textApprovedByUser": true,
       "threeSourceUrlsPresent": true,
       "sourceAuditCompleted": false,
-      "imageCandidateOrigin": "standalone_candidate_local_not_uploaded",
+      "imageCandidateOrigin": "fullsize_candidate",
       "photoInRepository": false,
       "photoVerifiedForRecipe": false,
       "photoPath": null,
-      "readyForPublish": false
+      "readyForPublish": false,
+      "sourceVsManifestAligned": true,
+      "photoAssetFinalized": false,
+      "photoQaIssue": null,
+      "newImageCandidateNotPublished": false
     },
     {
       "number": 23,
@@ -332,11 +420,15 @@
       "textApprovedByUser": true,
       "threeSourceUrlsPresent": true,
       "sourceAuditCompleted": false,
-      "imageCandidateOrigin": "standalone_candidate_local_not_uploaded",
+      "imageCandidateOrigin": "fullsize_candidate",
       "photoInRepository": false,
       "photoVerifiedForRecipe": false,
       "photoPath": null,
-      "readyForPublish": false
+      "readyForPublish": false,
+      "sourceVsManifestAligned": true,
+      "photoAssetFinalized": false,
+      "photoQaIssue": null,
+      "newImageCandidateNotPublished": false
     },
     {
       "number": 24,
@@ -346,11 +438,15 @@
       "textApprovedByUser": true,
       "threeSourceUrlsPresent": true,
       "sourceAuditCompleted": false,
-      "imageCandidateOrigin": "low_resolution_collage_crop",
+      "imageCandidateOrigin": "lowres_collage_crop",
       "photoInRepository": false,
       "photoVerifiedForRecipe": false,
       "photoPath": null,
-      "readyForPublish": false
+      "readyForPublish": false,
+      "sourceVsManifestAligned": true,
+      "photoAssetFinalized": false,
+      "photoQaIssue": null,
+      "newImageCandidateNotPublished": false
     },
     {
       "number": 25,
@@ -360,11 +456,15 @@
       "textApprovedByUser": true,
       "threeSourceUrlsPresent": true,
       "sourceAuditCompleted": false,
-      "imageCandidateOrigin": "standalone_candidate_local_not_uploaded",
+      "imageCandidateOrigin": "fullsize_candidate",
       "photoInRepository": false,
       "photoVerifiedForRecipe": false,
       "photoPath": null,
-      "readyForPublish": false
+      "readyForPublish": false,
+      "sourceVsManifestAligned": true,
+      "photoAssetFinalized": false,
+      "photoQaIssue": null,
+      "newImageCandidateNotPublished": false
     },
     {
       "number": 26,
@@ -374,11 +474,15 @@
       "textApprovedByUser": true,
       "threeSourceUrlsPresent": true,
       "sourceAuditCompleted": false,
-      "imageCandidateOrigin": "low_resolution_collage_crop",
+      "imageCandidateOrigin": "lowres_collage_crop",
       "photoInRepository": false,
       "photoVerifiedForRecipe": false,
       "photoPath": null,
-      "readyForPublish": false
+      "readyForPublish": false,
+      "sourceVsManifestAligned": true,
+      "photoAssetFinalized": false,
+      "photoQaIssue": "Visible walnuts not present in grated-carrot ingredients",
+      "newImageCandidateNotPublished": false
     },
     {
       "number": 27,
@@ -388,11 +492,15 @@
       "textApprovedByUser": true,
       "threeSourceUrlsPresent": true,
       "sourceAuditCompleted": false,
-      "imageCandidateOrigin": "low_resolution_collage_crop",
+      "imageCandidateOrigin": "lowres_collage_crop",
       "photoInRepository": false,
       "photoVerifiedForRecipe": false,
       "photoPath": null,
-      "readyForPublish": false
+      "readyForPublish": false,
+      "sourceVsManifestAligned": true,
+      "photoAssetFinalized": false,
+      "photoQaIssue": null,
+      "newImageCandidateNotPublished": false
     },
     {
       "number": 28,
@@ -402,11 +510,15 @@
       "textApprovedByUser": true,
       "threeSourceUrlsPresent": true,
       "sourceAuditCompleted": false,
-      "imageCandidateOrigin": "low_resolution_collage_crop",
+      "imageCandidateOrigin": "lowres_collage_crop",
       "photoInRepository": false,
       "photoVerifiedForRecipe": false,
       "photoPath": null,
-      "readyForPublish": false
+      "readyForPublish": false,
+      "sourceVsManifestAligned": true,
+      "photoAssetFinalized": false,
+      "photoQaIssue": null,
+      "newImageCandidateNotPublished": false
     },
     {
       "number": 29,
@@ -416,11 +528,15 @@
       "textApprovedByUser": true,
       "threeSourceUrlsPresent": true,
       "sourceAuditCompleted": false,
-      "imageCandidateOrigin": "low_resolution_collage_crop",
+      "imageCandidateOrigin": "lowres_collage_crop",
       "photoInRepository": false,
       "photoVerifiedForRecipe": false,
       "photoPath": null,
-      "readyForPublish": false
+      "readyForPublish": false,
+      "sourceVsManifestAligned": true,
+      "photoAssetFinalized": false,
+      "photoQaIssue": "Possible capers/pickles not present in Cauchoise ingredients",
+      "newImageCandidateNotPublished": false
     },
     {
       "number": 30,
@@ -430,11 +546,15 @@
       "textApprovedByUser": true,
       "threeSourceUrlsPresent": true,
       "sourceAuditCompleted": false,
-      "imageCandidateOrigin": "low_resolution_collage_crop",
+      "imageCandidateOrigin": "lowres_collage_crop",
       "photoInRepository": false,
       "photoVerifiedForRecipe": false,
       "photoPath": null,
-      "readyForPublish": false
+      "readyForPublish": false,
+      "sourceVsManifestAligned": true,
+      "photoAssetFinalized": false,
+      "photoQaIssue": null,
+      "newImageCandidateNotPublished": false
     },
     {
       "number": 31,
@@ -444,11 +564,15 @@
       "textApprovedByUser": true,
       "threeSourceUrlsPresent": true,
       "sourceAuditCompleted": false,
-      "imageCandidateOrigin": "standalone_candidate_local_not_uploaded",
+      "imageCandidateOrigin": "fullsize_candidate",
       "photoInRepository": false,
       "photoVerifiedForRecipe": false,
       "photoPath": null,
-      "readyForPublish": false
+      "readyForPublish": false,
+      "sourceVsManifestAligned": true,
+      "photoAssetFinalized": false,
+      "photoQaIssue": "Wrong: egg and tuna not visible on photographed pipirrana",
+      "newImageCandidateNotPublished": false
     },
     {
       "number": 32,
@@ -458,11 +582,15 @@
       "textApprovedByUser": true,
       "threeSourceUrlsPresent": true,
       "sourceAuditCompleted": false,
-      "imageCandidateOrigin": "standalone_candidate_local_not_uploaded",
+      "imageCandidateOrigin": "fullsize_candidate",
       "photoInRepository": false,
       "photoVerifiedForRecipe": false,
       "photoPath": null,
-      "readyForPublish": false
+      "readyForPublish": false,
+      "sourceVsManifestAligned": true,
+      "photoAssetFinalized": false,
+      "photoQaIssue": null,
+      "newImageCandidateNotPublished": false
     },
     {
       "number": 33,
@@ -472,11 +600,15 @@
       "textApprovedByUser": true,
       "threeSourceUrlsPresent": true,
       "sourceAuditCompleted": false,
-      "imageCandidateOrigin": "standalone_candidate_local_not_uploaded",
+      "imageCandidateOrigin": "fullsize_candidate",
       "photoInRepository": false,
       "photoVerifiedForRecipe": false,
       "photoPath": null,
-      "readyForPublish": false
+      "readyForPublish": false,
+      "sourceVsManifestAligned": true,
+      "photoAssetFinalized": false,
+      "photoQaIssue": "Wrong original: photo has potato, egg and tuna; new matching full-size candidate generated LOCALLY 2026-11-19 but not transferred to GitHub",
+      "newImageCandidateNotPublished": true
     },
     {
       "number": 34,
@@ -486,11 +618,15 @@
       "textApprovedByUser": true,
       "threeSourceUrlsPresent": true,
       "sourceAuditCompleted": false,
-      "imageCandidateOrigin": "standalone_candidate_local_not_uploaded",
+      "imageCandidateOrigin": "fullsize_candidate",
       "photoInRepository": false,
       "photoVerifiedForRecipe": false,
       "photoPath": null,
-      "readyForPublish": false
+      "readyForPublish": false,
+      "sourceVsManifestAligned": true,
+      "photoAssetFinalized": false,
+      "photoQaIssue": null,
+      "newImageCandidateNotPublished": false
     },
     {
       "number": 35,
@@ -500,11 +636,15 @@
       "textApprovedByUser": true,
       "threeSourceUrlsPresent": true,
       "sourceAuditCompleted": false,
-      "imageCandidateOrigin": "standalone_candidate_local_not_uploaded",
+      "imageCandidateOrigin": "fullsize_candidate",
       "photoInRepository": false,
       "photoVerifiedForRecipe": false,
       "photoPath": null,
-      "readyForPublish": false
+      "readyForPublish": false,
+      "sourceVsManifestAligned": true,
+      "photoAssetFinalized": false,
+      "photoQaIssue": null,
+      "newImageCandidateNotPublished": false
     },
     {
       "number": 36,
@@ -514,11 +654,15 @@
       "textApprovedByUser": true,
       "threeSourceUrlsPresent": true,
       "sourceAuditCompleted": false,
-      "imageCandidateOrigin": "standalone_candidate_local_not_uploaded",
+      "imageCandidateOrigin": "fullsize_candidate",
       "photoInRepository": false,
       "photoVerifiedForRecipe": false,
       "photoPath": null,
-      "readyForPublish": false
+      "readyForPublish": false,
+      "sourceVsManifestAligned": true,
+      "photoAssetFinalized": false,
+      "photoQaIssue": null,
+      "newImageCandidateNotPublished": false
     },
     {
       "number": 37,
@@ -528,11 +672,15 @@
       "textApprovedByUser": true,
       "threeSourceUrlsPresent": true,
       "sourceAuditCompleted": false,
-      "imageCandidateOrigin": "standalone_candidate_local_not_uploaded",
+      "imageCandidateOrigin": "fullsize_candidate",
       "photoInRepository": false,
       "photoVerifiedForRecipe": false,
       "photoPath": null,
-      "readyForPublish": false
+      "readyForPublish": false,
+      "sourceVsManifestAligned": true,
+      "photoAssetFinalized": false,
+      "photoQaIssue": null,
+      "newImageCandidateNotPublished": false
     },
     {
       "number": 38,
@@ -542,11 +690,15 @@
       "textApprovedByUser": true,
       "threeSourceUrlsPresent": true,
       "sourceAuditCompleted": false,
-      "imageCandidateOrigin": "standalone_candidate_local_not_uploaded",
+      "imageCandidateOrigin": "fullsize_candidate",
       "photoInRepository": false,
       "photoVerifiedForRecipe": false,
       "photoPath": null,
-      "readyForPublish": false
+      "readyForPublish": false,
+      "sourceVsManifestAligned": true,
+      "photoAssetFinalized": false,
+      "photoQaIssue": "Wrong/unclear: required potato and egg not discernible",
+      "newImageCandidateNotPublished": false
     },
     {
       "number": 39,
@@ -556,11 +708,15 @@
       "textApprovedByUser": true,
       "threeSourceUrlsPresent": true,
       "sourceAuditCompleted": false,
-      "imageCandidateOrigin": "standalone_candidate_local_not_uploaded",
+      "imageCandidateOrigin": "fullsize_candidate",
       "photoInRepository": false,
       "photoVerifiedForRecipe": false,
       "photoPath": null,
-      "readyForPublish": false
+      "readyForPublish": false,
+      "sourceVsManifestAligned": true,
+      "photoAssetFinalized": false,
+      "photoQaIssue": null,
+      "newImageCandidateNotPublished": false
     },
     {
       "number": 40,
@@ -570,11 +726,19 @@
       "textApprovedByUser": true,
       "threeSourceUrlsPresent": true,
       "sourceAuditCompleted": false,
-      "imageCandidateOrigin": "standalone_candidate_local_not_uploaded",
+      "imageCandidateOrigin": "fullsize_candidate",
       "photoInRepository": false,
       "photoVerifiedForRecipe": false,
       "photoPath": null,
-      "readyForPublish": false
+      "readyForPublish": false,
+      "sourceVsManifestAligned": true,
+      "photoAssetFinalized": false,
+      "photoQaIssue": null,
+      "newImageCandidateNotPublished": false
     }
-  ]
+  ],
+  "reconciliationStatus": "40_SOURCE_AND_COMPILED_CARDS_ALIGNED_IN_ISOLATED_BRANCH",
+  "recipeConflicts": 0,
+  "imageAuditStatus": "20_FULLSIZE_ORIGINAL_CANDIDATES_20_LOWRES_CROPS_1_NEW_REPLACEMENT_CANDIDATE_NOT_IN_GITHUB",
+  "notes": "Photo content QA flagged 7,9,17,26,29,31,33,38. #33 has one newly generated original candidate (not imported to GitHub); approved historical visuals remain untouched."
 }
