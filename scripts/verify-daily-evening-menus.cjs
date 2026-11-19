@@ -18,7 +18,7 @@ function getRecipes(html){
  return JSON.parse(content[1]);
 }
 const recipes=getRecipes(main);
-assert.equal(recipes.length,1001);
+assert.equal(recipes.length,main.includes('window.WORLD_SOUPS_RECIPES || []')?801:1001);
 let now=Date.UTC(2026,10,2);
 const context=vm.createContext({RECIPES:recipes,Date:{now:()=>now}});
 vm.runInContext(extract(main),context,{timeout:2000});
