@@ -1,0 +1,1435 @@
+{
+  "project": "НАШ ВЕЧЕР",
+  "date": "2026-11-19",
+  "policy": "ONE_SOURCE_PER_RECIPE",
+  "audit_kind": "AUTOMATED_PRELIMINARY_SCREENING_NOT_CULINARY_APPROVAL",
+  "counts": {
+    "total": 100,
+    "approved": 4,
+    "with_usable_excerpts": 83,
+    "incomplete_excerpt": 17,
+    "step_count": 504,
+    "timer_phases": 296
+  },
+  "entries": [
+    {
+      "id": 1,
+      "title": "Борщ с говядиной",
+      "source": "https://www.gastronom.ru/recipe/26598/klassicheskij-borsch-s-govjadinoj",
+      "source_excerpt_ingredient_items": 15,
+      "method_excerpt_chars": 225,
+      "source_excerpt_precheck": "EXCERPT_PRESENT",
+      "editorial_steps": 6,
+      "timer_phases": 7,
+      "full_single_source_approved": true,
+      "warnings": []
+    },
+    {
+      "id": 2,
+      "title": "Щи из квашеной капусты с говядиной",
+      "source": "https://lifehacker.ru/recipe/shhi-iz-kvashenoj-kapusty-s-govyadinoj/",
+      "source_excerpt_ingredient_items": 7,
+      "method_excerpt_chars": 225,
+      "source_excerpt_precheck": "EXCERPT_PRESENT",
+      "editorial_steps": 6,
+      "timer_phases": 6,
+      "full_single_source_approved": true,
+      "warnings": []
+    },
+    {
+      "id": 3,
+      "title": "Рассольник ленинградский",
+      "source": "https://www.gastronom.ru/recipe/56666/rassolnik-leningradskij-s-perlovkoj",
+      "source_excerpt_ingredient_items": 15,
+      "method_excerpt_chars": 225,
+      "source_excerpt_precheck": "EXCERPT_PRESENT",
+      "editorial_steps": 6,
+      "timer_phases": 6,
+      "full_single_source_approved": true,
+      "warnings": []
+    },
+    {
+      "id": 4,
+      "title": "Солянка мясная сборная",
+      "source": "https://www.gastronom.ru/recipe/12299/solyanka-sbornaya-myasnaya",
+      "source_excerpt_ingredient_items": 16,
+      "method_excerpt_chars": 225,
+      "source_excerpt_precheck": "EXCERPT_PRESENT",
+      "editorial_steps": 6,
+      "timer_phases": 7,
+      "full_single_source_approved": true,
+      "warnings": []
+    },
+    {
+      "id": 5,
+      "title": "Уха из судака",
+      "source": "https://fishub.info/ru/receptu/supi-ta-bulion/uxa-iz-sudaka-na-golove-i-xvoste",
+      "source_excerpt_ingredient_items": 1,
+      "method_excerpt_chars": 225,
+      "source_excerpt_precheck": "EXCERPT_INCOMPLETE",
+      "editorial_steps": 5,
+      "timer_phases": 4,
+      "full_single_source_approved": false,
+      "warnings": [
+        "INGREDIENT_EXCERPT_TOO_SHORT",
+        "INDEPENDENT_FULL_REVIEW_PENDING"
+      ]
+    },
+    {
+      "id": 6,
+      "title": "Окрошка на квасе с говядиной",
+      "source": "https://www.gastronom.ru/recipe/35504/okroshka-mjasnaja",
+      "source_excerpt_ingredient_items": 14,
+      "method_excerpt_chars": 225,
+      "source_excerpt_precheck": "EXCERPT_PRESENT",
+      "editorial_steps": 5,
+      "timer_phases": 0,
+      "full_single_source_approved": false,
+      "warnings": [
+        "INDEPENDENT_FULL_REVIEW_PENDING"
+      ]
+    },
+    {
+      "id": 7,
+      "title": "Зелёные щи со щавелем и яйцом",
+      "source": "https://www.gastronom.ru/recipe/49499/zelenye-shchi-s-shchavelem-i-yajcom",
+      "source_excerpt_ingredient_items": 14,
+      "method_excerpt_chars": 225,
+      "source_excerpt_precheck": "EXCERPT_PRESENT",
+      "editorial_steps": 5,
+      "timer_phases": 3,
+      "full_single_source_approved": false,
+      "warnings": [
+        "INDEPENDENT_FULL_REVIEW_PENDING"
+      ]
+    },
+    {
+      "id": 8,
+      "title": "Ботвинья с рыбой и квасом",
+      "source": "https://molohovetc.ru/k_supy_kholodnye/205_botvinja/",
+      "source_excerpt_ingredient_items": 0,
+      "method_excerpt_chars": 0,
+      "source_excerpt_precheck": "EXCERPT_INCOMPLETE",
+      "editorial_steps": 5,
+      "timer_phases": 3,
+      "full_single_source_approved": false,
+      "warnings": [
+        "METHOD_EXCERPT_TOO_SHORT",
+        "INGREDIENT_EXCERPT_TOO_SHORT",
+        "INDEPENDENT_FULL_REVIEW_PENDING"
+      ]
+    },
+    {
+      "id": 9,
+      "title": "Рыбная калья с солёными огурцами",
+      "source": "https://textualchef.com/ru/recipes/fish-kalya/",
+      "source_excerpt_ingredient_items": 7,
+      "method_excerpt_chars": 225,
+      "source_excerpt_precheck": "EXCERPT_PRESENT",
+      "editorial_steps": 5,
+      "timer_phases": 5,
+      "full_single_source_approved": false,
+      "warnings": [
+        "INDEPENDENT_FULL_REVIEW_PENDING"
+      ]
+    },
+    {
+      "id": 10,
+      "title": "Грибная похлёбка с перловкой",
+      "source": "https://www.gastronom.ru/recipe/56689/sup-iz-sushenyh-belyh-gribov-s-perlovkoj",
+      "source_excerpt_ingredient_items": 10,
+      "method_excerpt_chars": 225,
+      "source_excerpt_precheck": "EXCERPT_PRESENT",
+      "editorial_steps": 5,
+      "timer_phases": 5,
+      "full_single_source_approved": false,
+      "warnings": [
+        "INDEPENDENT_FULL_REVIEW_PENDING"
+      ]
+    },
+    {
+      "id": 11,
+      "title": "Минестроне",
+      "source": "https://www.greatbritishchefs.com/recipes/minestrone-soup-recipe",
+      "source_excerpt_ingredient_items": 11,
+      "method_excerpt_chars": 225,
+      "source_excerpt_precheck": "EXCERPT_PRESENT",
+      "editorial_steps": 5,
+      "timer_phases": 3,
+      "full_single_source_approved": false,
+      "warnings": [
+        "INDEPENDENT_FULL_REVIEW_PENDING"
+      ]
+    },
+    {
+      "id": 12,
+      "title": "Риболлита",
+      "source": "https://www.cucchiaio.it/ricetta/ricetta-ribollita-semplice/",
+      "source_excerpt_ingredient_items": 11,
+      "method_excerpt_chars": 225,
+      "source_excerpt_precheck": "EXCERPT_PRESENT",
+      "editorial_steps": 5,
+      "timer_phases": 3,
+      "full_single_source_approved": false,
+      "warnings": [
+        "INDEPENDENT_FULL_REVIEW_PENDING"
+      ]
+    },
+    {
+      "id": 13,
+      "title": "Паппа аль помодоро",
+      "source": "https://www.lacucinaitaliana.com/recipe/main-course/pappa-al-pomodoro",
+      "source_excerpt_ingredient_items": 10,
+      "method_excerpt_chars": 225,
+      "source_excerpt_precheck": "EXCERPT_PRESENT",
+      "editorial_steps": 5,
+      "timer_phases": 4,
+      "full_single_source_approved": false,
+      "warnings": [
+        "INDEPENDENT_FULL_REVIEW_PENDING"
+      ]
+    },
+    {
+      "id": 14,
+      "title": "Страчателла по-римски",
+      "source": "https://www.giallozafferano.com/recipes/Stracciatella-alla-Romana.html",
+      "source_excerpt_ingredient_items": 0,
+      "method_excerpt_chars": 0,
+      "source_excerpt_precheck": "EXCERPT_INCOMPLETE",
+      "editorial_steps": 5,
+      "timer_phases": 1,
+      "full_single_source_approved": false,
+      "warnings": [
+        "METHOD_EXCERPT_TOO_SHORT",
+        "INGREDIENT_EXCERPT_TOO_SHORT",
+        "INDEPENDENT_FULL_REVIEW_PENDING"
+      ]
+    },
+    {
+      "id": 15,
+      "title": "Паста э фаджоли",
+      "source": "https://www.greatitalianchefs.com/recipes/pasta-e-fagioli-recipe-pasta-bean-soup",
+      "source_excerpt_ingredient_items": 8,
+      "method_excerpt_chars": 225,
+      "source_excerpt_precheck": "EXCERPT_PRESENT",
+      "editorial_steps": 5,
+      "timer_phases": 4,
+      "full_single_source_approved": false,
+      "warnings": [
+        "INDEPENDENT_FULL_REVIEW_PENDING"
+      ]
+    },
+    {
+      "id": 16,
+      "title": "Аквакотта",
+      "source": "https://www.greatitalianchefs.com/recipes/acquacotta-recipe",
+      "source_excerpt_ingredient_items": 11,
+      "method_excerpt_chars": 225,
+      "source_excerpt_precheck": "EXCERPT_PRESENT",
+      "editorial_steps": 5,
+      "timer_phases": 4,
+      "full_single_source_approved": false,
+      "warnings": [
+        "INDEPENDENT_FULL_REVIEW_PENDING"
+      ]
+    },
+    {
+      "id": 17,
+      "title": "Тортеллини в бульоне",
+      "source": "https://www.lacucinaitaliana.com/recipe/pasta/tortellini-brodo",
+      "source_excerpt_ingredient_items": 16,
+      "method_excerpt_chars": 225,
+      "source_excerpt_precheck": "EXCERPT_PRESENT",
+      "editorial_steps": 5,
+      "timer_phases": 2,
+      "full_single_source_approved": false,
+      "warnings": [
+        "INDEPENDENT_FULL_REVIEW_PENDING"
+      ]
+    },
+    {
+      "id": 18,
+      "title": "Пассателли в бульоне",
+      "source": "https://www.lospicchiodaglio.it/ricetta/passatelli",
+      "source_excerpt_ingredient_items": 5,
+      "method_excerpt_chars": 225,
+      "source_excerpt_precheck": "EXCERPT_PRESENT",
+      "editorial_steps": 5,
+      "timer_phases": 2,
+      "full_single_source_approved": false,
+      "warnings": [
+        "INDEPENDENT_FULL_REVIEW_PENDING"
+      ]
+    },
+    {
+      "id": 19,
+      "title": "Месчуа с бобовыми и полбой",
+      "source": "https://www.lacucinaitaliana.it/ricetta/primi/mesciua/",
+      "source_excerpt_ingredient_items": 0,
+      "method_excerpt_chars": 0,
+      "source_excerpt_precheck": "EXCERPT_INCOMPLETE",
+      "editorial_steps": 5,
+      "timer_phases": 4,
+      "full_single_source_approved": false,
+      "warnings": [
+        "METHOD_EXCERPT_TOO_SHORT",
+        "INGREDIENT_EXCERPT_TOO_SHORT",
+        "INDEPENDENT_FULL_REVIEW_PENDING"
+      ]
+    },
+    {
+      "id": 20,
+      "title": "Качукко по-ливорнски",
+      "source": "https://www.giallozafferano.com/recipes/cacciucco-alla-livornese.html",
+      "source_excerpt_ingredient_items": 0,
+      "method_excerpt_chars": 0,
+      "source_excerpt_precheck": "EXCERPT_INCOMPLETE",
+      "editorial_steps": 5,
+      "timer_phases": 6,
+      "full_single_source_approved": false,
+      "warnings": [
+        "METHOD_EXCERPT_TOO_SHORT",
+        "INGREDIENT_EXCERPT_TOO_SHORT",
+        "INDEPENDENT_FULL_REVIEW_PENDING"
+      ]
+    },
+    {
+      "id": 21,
+      "title": "Французский луковый суп",
+      "source": "https://www.marmiton.org/recettes/recette_soupe-a-l-oignon-gratinee_20864.aspx",
+      "source_excerpt_ingredient_items": 9,
+      "method_excerpt_chars": 225,
+      "source_excerpt_precheck": "EXCERPT_PRESENT",
+      "editorial_steps": 5,
+      "timer_phases": 4,
+      "full_single_source_approved": false,
+      "warnings": [
+        "INDEPENDENT_FULL_REVIEW_PENDING"
+      ]
+    },
+    {
+      "id": 22,
+      "title": "Буйабес по-марсельски",
+      "source": "https://www.marmiton.org/recettes/recette_bouillabaisse-comme-a-marseille_23522.aspx",
+      "source_excerpt_ingredient_items": 13,
+      "method_excerpt_chars": 225,
+      "source_excerpt_precheck": "EXCERPT_PRESENT",
+      "editorial_steps": 5,
+      "timer_phases": 3,
+      "full_single_source_approved": false,
+      "warnings": [
+        "INDEPENDENT_FULL_REVIEW_PENDING"
+      ]
+    },
+    {
+      "id": 23,
+      "title": "Вишисуаз с луком-пореем",
+      "source": "https://www.greatbritishchefs.com/recipes/vichyssoise-recipe",
+      "source_excerpt_ingredient_items": 9,
+      "method_excerpt_chars": 225,
+      "source_excerpt_precheck": "EXCERPT_PRESENT",
+      "editorial_steps": 5,
+      "timer_phases": 3,
+      "full_single_source_approved": false,
+      "warnings": [
+        "INDEPENDENT_FULL_REVIEW_PENDING"
+      ]
+    },
+    {
+      "id": 24,
+      "title": "Гарбур с фасолью и капустой",
+      "source": "https://www.marmiton.org/recettes/recette_la-garbure_41669.aspx",
+      "source_excerpt_ingredient_items": 12,
+      "method_excerpt_chars": 225,
+      "source_excerpt_precheck": "EXCERPT_PRESENT",
+      "editorial_steps": 5,
+      "timer_phases": 4,
+      "full_single_source_approved": false,
+      "warnings": [
+        "INDEPENDENT_FULL_REVIEW_PENDING"
+      ]
+    },
+    {
+      "id": 25,
+      "title": "Провансальский суп о писту",
+      "source": "https://www.marmiton.org/recettes/recette_soupe-au-pistou-l-authentique_72887.aspx",
+      "source_excerpt_ingredient_items": 10,
+      "method_excerpt_chars": 225,
+      "source_excerpt_precheck": "EXCERPT_PRESENT",
+      "editorial_steps": 5,
+      "timer_phases": 2,
+      "full_single_source_approved": false,
+      "warnings": [
+        "INDEPENDENT_FULL_REVIEW_PENDING"
+      ]
+    },
+    {
+      "id": 26,
+      "title": "Турен с чесноком",
+      "source": "https://cuisine.journaldesfemmes.fr/recette/342517-tourin-a-l-ail",
+      "source_excerpt_ingredient_items": 9,
+      "method_excerpt_chars": 225,
+      "source_excerpt_precheck": "EXCERPT_PRESENT",
+      "editorial_steps": 5,
+      "timer_phases": 3,
+      "full_single_source_approved": false,
+      "warnings": [
+        "INDEPENDENT_FULL_REVIEW_PENDING"
+      ]
+    },
+    {
+      "id": 27,
+      "title": "Крем-суп Дюбарри из цветной капусты",
+      "source": "https://www.toquata.fr/rcp-files/recette/creme-dubarry",
+      "source_excerpt_ingredient_items": 9,
+      "method_excerpt_chars": 225,
+      "source_excerpt_precheck": "EXCERPT_PRESENT",
+      "editorial_steps": 5,
+      "timer_phases": 3,
+      "full_single_source_approved": false,
+      "warnings": [
+        "INDEPENDENT_FULL_REVIEW_PENDING"
+      ]
+    },
+    {
+      "id": 28,
+      "title": "Биск из омара",
+      "source": "https://www.marmiton.org/recettes/recette_bisque-de-homard-maison_65708.aspx",
+      "source_excerpt_ingredient_items": 9,
+      "method_excerpt_chars": 225,
+      "source_excerpt_precheck": "EXCERPT_PRESENT",
+      "editorial_steps": 5,
+      "timer_phases": 2,
+      "full_single_source_approved": false,
+      "warnings": [
+        "INDEPENDENT_FULL_REVIEW_PENDING"
+      ]
+    },
+    {
+      "id": 29,
+      "title": "Буррид с рыбой и айоли",
+      "source": "https://linguanostra.org/en/provencal-resources/recettes-provencales/bourride",
+      "source_excerpt_ingredient_items": 10,
+      "method_excerpt_chars": 225,
+      "source_excerpt_precheck": "EXCERPT_PRESENT",
+      "editorial_steps": 5,
+      "timer_phases": 3,
+      "full_single_source_approved": false,
+      "warnings": [
+        "INDEPENDENT_FULL_REVIEW_PENDING"
+      ]
+    },
+    {
+      "id": 30,
+      "title": "Потаж Креси из моркови",
+      "source": "https://www.pardonyourfrench.com/classic-french-carrot-soup-potage-crecy/",
+      "source_excerpt_ingredient_items": 2,
+      "method_excerpt_chars": 225,
+      "source_excerpt_precheck": "EXCERPT_INCOMPLETE",
+      "editorial_steps": 5,
+      "timer_phases": 3,
+      "full_single_source_approved": false,
+      "warnings": [
+        "INGREDIENT_EXCERPT_TOO_SHORT",
+        "INDEPENDENT_FULL_REVIEW_PENDING"
+      ]
+    },
+    {
+      "id": 31,
+      "title": "Гаспачо андалузский",
+      "source": "https://goya.es/recetas/gazpacho-tradicional-andaluz",
+      "source_excerpt_ingredient_items": 9,
+      "method_excerpt_chars": 225,
+      "source_excerpt_precheck": "EXCERPT_PRESENT",
+      "editorial_steps": 5,
+      "timer_phases": 1,
+      "full_single_source_approved": false,
+      "warnings": [
+        "INDEPENDENT_FULL_REVIEW_PENDING"
+      ]
+    },
+    {
+      "id": 32,
+      "title": "Сальморехо кордобский",
+      "source": "https://www.spain.info/en/recipe/salmorejo/",
+      "source_excerpt_ingredient_items": 0,
+      "method_excerpt_chars": 213,
+      "source_excerpt_precheck": "EXCERPT_INCOMPLETE",
+      "editorial_steps": 5,
+      "timer_phases": 2,
+      "full_single_source_approved": false,
+      "warnings": [
+        "INGREDIENT_EXCERPT_TOO_SHORT",
+        "INDEPENDENT_FULL_REVIEW_PENDING"
+      ]
+    },
+    {
+      "id": 33,
+      "title": "Ахобланко с миндалём",
+      "source": "https://www.theguardian.com/food/2020/jun/10/david-athertons-recipe-for-ajo-blanco-cold-soup-andalucian-classic",
+      "source_excerpt_ingredient_items": 9,
+      "method_excerpt_chars": 225,
+      "source_excerpt_precheck": "EXCERPT_PRESENT",
+      "editorial_steps": 5,
+      "timer_phases": 2,
+      "full_single_source_approved": false,
+      "warnings": [
+        "INDEPENDENT_FULL_REVIEW_PENDING"
+      ]
+    },
+    {
+      "id": 34,
+      "title": "Сопа де ахо, кастильский чесночный суп",
+      "source": "https://www.directoalpaladar.com/recetas-de-sopas-y-cremas/como-hacer-sopa-ajo-receta-sopa-castellana-tradicional/amp",
+      "source_excerpt_ingredient_items": 10,
+      "method_excerpt_chars": 225,
+      "source_excerpt_precheck": "EXCERPT_PRESENT",
+      "editorial_steps": 5,
+      "timer_phases": 3,
+      "full_single_source_approved": false,
+      "warnings": [
+        "INDEPENDENT_FULL_REVIEW_PENDING"
+      ]
+    },
+    {
+      "id": 35,
+      "title": "Кальдо гальего",
+      "source": "https://www.directoalpaladar.com/recetas-de-legumbres-y-verduras/receta-de-caldo-gallego-cocinado-a-fuego-lento",
+      "source_excerpt_ingredient_items": 8,
+      "method_excerpt_chars": 225,
+      "source_excerpt_precheck": "EXCERPT_PRESENT",
+      "editorial_steps": 5,
+      "timer_phases": 3,
+      "full_single_source_approved": false,
+      "warnings": [
+        "INDEPENDENT_FULL_REVIEW_PENDING"
+      ]
+    },
+    {
+      "id": 36,
+      "title": "Поррусальда с луком-пореем",
+      "source": "https://www.centrallecheraasturiana.es/recetas/porrusalda/",
+      "source_excerpt_ingredient_items": 9,
+      "method_excerpt_chars": 225,
+      "source_excerpt_precheck": "EXCERPT_PRESENT",
+      "editorial_steps": 5,
+      "timer_phases": 2,
+      "full_single_source_approved": false,
+      "warnings": [
+        "INDEPENDENT_FULL_REVIEW_PENDING"
+      ]
+    },
+    {
+      "id": 37,
+      "title": "Гаспачуэло малагский с рыбой",
+      "source": "https://canalcocina.es/receta/gazpachuelo-malagueno",
+      "source_excerpt_ingredient_items": 0,
+      "method_excerpt_chars": 0,
+      "source_excerpt_precheck": "EXCERPT_INCOMPLETE",
+      "editorial_steps": 5,
+      "timer_phases": 2,
+      "full_single_source_approved": false,
+      "warnings": [
+        "METHOD_EXCERPT_TOO_SHORT",
+        "INGREDIENT_EXCERPT_TOO_SHORT",
+        "INDEPENDENT_FULL_REVIEW_PENDING"
+      ]
+    },
+    {
+      "id": 38,
+      "title": "Сопа де пикадильо",
+      "source": "https://visitsouthernspain.com/picadillo-soup-recipe/",
+      "source_excerpt_ingredient_items": 9,
+      "method_excerpt_chars": 225,
+      "source_excerpt_precheck": "EXCERPT_PRESENT",
+      "editorial_steps": 5,
+      "timer_phases": 4,
+      "full_single_source_approved": false,
+      "warnings": [
+        "INDEPENDENT_FULL_REVIEW_PENDING"
+      ]
+    },
+    {
+      "id": 39,
+      "title": "Эскуделья каталонская",
+      "source": "https://www.directoalpaladar.com/recetas-de-legumbres-y-verduras/receta-escudella-i-carn-dolla-reconfortante-plato-cuchara-catalan",
+      "source_excerpt_ingredient_items": 13,
+      "method_excerpt_chars": 225,
+      "source_excerpt_precheck": "EXCERPT_PRESENT",
+      "editorial_steps": 5,
+      "timer_phases": 3,
+      "full_single_source_approved": false,
+      "warnings": [
+        "INDEPENDENT_FULL_REVIEW_PENDING"
+      ]
+    },
+    {
+      "id": 40,
+      "title": "Порра антекерана",
+      "source": "https://vanavondkoken.nl/en/recipes/porra-antequerana",
+      "source_excerpt_ingredient_items": 10,
+      "method_excerpt_chars": 225,
+      "source_excerpt_precheck": "EXCERPT_PRESENT",
+      "editorial_steps": 5,
+      "timer_phases": 1,
+      "full_single_source_approved": false,
+      "warnings": [
+        "INDEPENDENT_FULL_REVIEW_PENDING"
+      ]
+    },
+    {
+      "id": 41,
+      "title": "Мерджимек чорбасы, турецкий чечевичный суп",
+      "source": "https://www.themediterraneandish.com/turkish-lentil-soup/",
+      "source_excerpt_ingredient_items": 0,
+      "method_excerpt_chars": 0,
+      "source_excerpt_precheck": "EXCERPT_INCOMPLETE",
+      "editorial_steps": 5,
+      "timer_phases": 2,
+      "full_single_source_approved": false,
+      "warnings": [
+        "METHOD_EXCERPT_TOO_SHORT",
+        "INGREDIENT_EXCERPT_TOO_SHORT",
+        "INDEPENDENT_FULL_REVIEW_PENDING"
+      ]
+    },
+    {
+      "id": 42,
+      "title": "Эзогелин с булгуром",
+      "source": "https://gidavesaglik.net/en/ezogelin-soup-ezo-the-bride-soup-recipe/",
+      "source_excerpt_ingredient_items": 10,
+      "method_excerpt_chars": 225,
+      "source_excerpt_precheck": "EXCERPT_PRESENT",
+      "editorial_steps": 5,
+      "timer_phases": 2,
+      "full_single_source_approved": false,
+      "warnings": [
+        "INDEPENDENT_FULL_REVIEW_PENDING"
+      ]
+    },
+    {
+      "id": 43,
+      "title": "Яйла чорбасы с йогуртом",
+      "source": "https://forkin.io/recipes/yayla-corbasi-turkish-yogurt-soup",
+      "source_excerpt_ingredient_items": 10,
+      "method_excerpt_chars": 225,
+      "source_excerpt_precheck": "EXCERPT_PRESENT",
+      "editorial_steps": 5,
+      "timer_phases": 2,
+      "full_single_source_approved": false,
+      "warnings": [
+        "INDEPENDENT_FULL_REVIEW_PENDING"
+      ]
+    },
+    {
+      "id": 44,
+      "title": "Тархана чорбасы",
+      "source": "https://www.gurmion.com/en/recipes/tarhana-soup",
+      "source_excerpt_ingredient_items": 7,
+      "method_excerpt_chars": 225,
+      "source_excerpt_precheck": "EXCERPT_PRESENT",
+      "editorial_steps": 5,
+      "timer_phases": 3,
+      "full_single_source_approved": false,
+      "warnings": [
+        "INDEPENDENT_FULL_REVIEW_PENDING"
+      ]
+    },
+    {
+      "id": 45,
+      "title": "Ишкембе чорбасы из рубца",
+      "source": "https://zaffaron.com/recipe/tripe-soup-iskembe-corbasi",
+      "source_excerpt_ingredient_items": 6,
+      "method_excerpt_chars": 225,
+      "source_excerpt_precheck": "EXCERPT_PRESENT",
+      "editorial_steps": 5,
+      "timer_phases": 1,
+      "full_single_source_approved": false,
+      "warnings": [
+        "INDEPENDENT_FULL_REVIEW_PENDING"
+      ]
+    },
+    {
+      "id": 46,
+      "title": "Келле пача, суп из головы и ножек",
+      "source": "https://www.lezzet.com.tr/yemek-tarifleri/corbalar/corba-tarifleri/kelle-paca-corbasi",
+      "source_excerpt_ingredient_items": 8,
+      "method_excerpt_chars": 226,
+      "source_excerpt_precheck": "EXCERPT_PRESENT",
+      "editorial_steps": 5,
+      "timer_phases": 2,
+      "full_single_source_approved": false,
+      "warnings": [
+        "INDEPENDENT_FULL_REVIEW_PENDING"
+      ]
+    },
+    {
+      "id": 47,
+      "title": "Тербиели кёфте, суп с фрикадельками",
+      "source": "https://www.lezzet.com.tr/yemek-tarifleri/corbalar/corba-tarifleri/terbiyeli-kofte-corbasi",
+      "source_excerpt_ingredient_items": 7,
+      "method_excerpt_chars": 225,
+      "source_excerpt_precheck": "EXCERPT_PRESENT",
+      "editorial_steps": 5,
+      "timer_phases": 3,
+      "full_single_source_approved": false,
+      "warnings": [
+        "INDEPENDENT_FULL_REVIEW_PENDING"
+      ]
+    },
+    {
+      "id": 48,
+      "title": "Дююн чорбасы, свадебный суп",
+      "source": "https://www.lezzet.com.tr/yemek-tarifleri/corbalar/corba-tarifleri/dugun-corbasi-tarifi",
+      "source_excerpt_ingredient_items": 8,
+      "method_excerpt_chars": 225,
+      "source_excerpt_precheck": "EXCERPT_PRESENT",
+      "editorial_steps": 5,
+      "timer_phases": 2,
+      "full_single_source_approved": false,
+      "warnings": [
+        "INDEPENDENT_FULL_REVIEW_PENDING"
+      ]
+    },
+    {
+      "id": 49,
+      "title": "Эриште чорбасы, суп с домашней лапшой",
+      "source": "https://www.lezzet.com.tr/yemek-tarifleri/corbalar/corba-tarifleri/eriste-corbasi-tarifi",
+      "source_excerpt_ingredient_items": 10,
+      "method_excerpt_chars": 225,
+      "source_excerpt_precheck": "EXCERPT_PRESENT",
+      "editorial_steps": 5,
+      "timer_phases": 2,
+      "full_single_source_approved": false,
+      "warnings": [
+        "INDEPENDENT_FULL_REVIEW_PENDING"
+      ]
+    },
+    {
+      "id": 50,
+      "title": "Тутмач чорбасы с зелёной чечевицей",
+      "source": "https://www.lezzet.com.tr/yemek-tarifleri/corbalar/corba-tarifleri/tutmac-corbasi-tarifi",
+      "source_excerpt_ingredient_items": 9,
+      "method_excerpt_chars": 226,
+      "source_excerpt_precheck": "EXCERPT_PRESENT",
+      "editorial_steps": 5,
+      "timer_phases": 2,
+      "full_single_source_approved": false,
+      "warnings": [
+        "INDEPENDENT_FULL_REVIEW_PENDING"
+      ]
+    },
+    {
+      "id": 51,
+      "title": "Мисо-суп с тофу и вакаме",
+      "source": "https://www.justonecookbook.com/homemade-miso-soup/",
+      "source_excerpt_ingredient_items": 5,
+      "method_excerpt_chars": 225,
+      "source_excerpt_precheck": "EXCERPT_PRESENT",
+      "editorial_steps": 5,
+      "timer_phases": 3,
+      "full_single_source_approved": false,
+      "warnings": [
+        "INDEPENDENT_FULL_REVIEW_PENDING"
+      ]
+    },
+    {
+      "id": 52,
+      "title": "Сёю-рамен",
+      "source": "https://www.justonecookbook.com/shoyu-ramen/",
+      "source_excerpt_ingredient_items": 8,
+      "method_excerpt_chars": 215,
+      "source_excerpt_precheck": "EXCERPT_PRESENT",
+      "editorial_steps": 5,
+      "timer_phases": 1,
+      "full_single_source_approved": false,
+      "warnings": [
+        "INDEPENDENT_FULL_REVIEW_PENDING"
+      ]
+    },
+    {
+      "id": 53,
+      "title": "Мисо-рамен",
+      "source": "https://www.justonecookbook.com/homemade-chashu-miso-ramen/",
+      "source_excerpt_ingredient_items": 8,
+      "method_excerpt_chars": 128,
+      "source_excerpt_precheck": "EXCERPT_PRESENT",
+      "editorial_steps": 5,
+      "timer_phases": 3,
+      "full_single_source_approved": false,
+      "warnings": [
+        "INDEPENDENT_FULL_REVIEW_PENDING"
+      ]
+    },
+    {
+      "id": 54,
+      "title": "Тонкоцу-рамен",
+      "source": "https://www.justonecookbook.com/easy-tonkotsu-ramen-recipe/",
+      "source_excerpt_ingredient_items": 8,
+      "method_excerpt_chars": 194,
+      "source_excerpt_precheck": "EXCERPT_PRESENT",
+      "editorial_steps": 5,
+      "timer_phases": 3,
+      "full_single_source_approved": false,
+      "warnings": [
+        "INDEPENDENT_FULL_REVIEW_PENDING"
+      ]
+    },
+    {
+      "id": 55,
+      "title": "Тондзиру со свининой",
+      "source": "https://www.justonecookbook.com/tonjiru/",
+      "source_excerpt_ingredient_items": 7,
+      "method_excerpt_chars": 110,
+      "source_excerpt_precheck": "EXCERPT_PRESENT",
+      "editorial_steps": 5,
+      "timer_phases": 2,
+      "full_single_source_approved": false,
+      "warnings": [
+        "INDEPENDENT_FULL_REVIEW_PENDING"
+      ]
+    },
+    {
+      "id": 56,
+      "title": "Кэнтиндзиру с овощами и тофу",
+      "source": "https://www.justonecookbook.com/kenchinjiru/",
+      "source_excerpt_ingredient_items": 7,
+      "method_excerpt_chars": 104,
+      "source_excerpt_precheck": "EXCERPT_PRESENT",
+      "editorial_steps": 5,
+      "timer_phases": 2,
+      "full_single_source_approved": false,
+      "warnings": [
+        "INDEPENDENT_FULL_REVIEW_PENDING"
+      ]
+    },
+    {
+      "id": 57,
+      "title": "Одзони с рисовыми лепёшками",
+      "source": "https://www.justonecookbook.com/ozoni/",
+      "source_excerpt_ingredient_items": 6,
+      "method_excerpt_chars": 225,
+      "source_excerpt_precheck": "EXCERPT_PRESENT",
+      "editorial_steps": 5,
+      "timer_phases": 1,
+      "full_single_source_approved": false,
+      "warnings": [
+        "INDEPENDENT_FULL_REVIEW_PENDING"
+      ]
+    },
+    {
+      "id": 58,
+      "title": "Имони с таро и говядиной",
+      "source": "https://recipin.jp/en/recipes/imoni",
+      "source_excerpt_ingredient_items": 6,
+      "method_excerpt_chars": 225,
+      "source_excerpt_precheck": "EXCERPT_PRESENT",
+      "editorial_steps": 5,
+      "timer_phases": 3,
+      "full_single_source_approved": false,
+      "warnings": [
+        "INDEPENDENT_FULL_REVIEW_PENDING"
+      ]
+    },
+    {
+      "id": 59,
+      "title": "Какэ-соба в бульоне даси",
+      "source": "https://www.justonecookbook.com/soba-noodle-soup/",
+      "source_excerpt_ingredient_items": 7,
+      "method_excerpt_chars": 202,
+      "source_excerpt_precheck": "EXCERPT_PRESENT",
+      "editorial_steps": 5,
+      "timer_phases": 2,
+      "full_single_source_approved": false,
+      "warnings": [
+        "INDEPENDENT_FULL_REVIEW_PENDING"
+      ]
+    },
+    {
+      "id": 60,
+      "title": "Хиядзиру, холодный суп с мисо",
+      "source": "https://recipin.jp/en/recipes/hiyajiru",
+      "source_excerpt_ingredient_items": 13,
+      "method_excerpt_chars": 225,
+      "source_excerpt_precheck": "EXCERPT_PRESENT",
+      "editorial_steps": 5,
+      "timer_phases": 1,
+      "full_single_source_approved": false,
+      "warnings": [
+        "INDEPENDENT_FULL_REVIEW_PENDING"
+      ]
+    },
+    {
+      "id": 61,
+      "title": "Юккэджан с говядиной",
+      "source": "https://www.koreanbapsang.com/yukgaejang-spicy-beef-soup-vegetables/",
+      "source_excerpt_ingredient_items": 6,
+      "method_excerpt_chars": 225,
+      "source_excerpt_precheck": "EXCERPT_PRESENT",
+      "editorial_steps": 5,
+      "timer_phases": 4,
+      "full_single_source_approved": false,
+      "warnings": [
+        "INDEPENDENT_FULL_REVIEW_PENDING"
+      ]
+    },
+    {
+      "id": 62,
+      "title": "Самгетхан с женьшенем и курицей",
+      "source": "https://www.koreanbapsang.com/samgyetang/",
+      "source_excerpt_ingredient_items": 5,
+      "method_excerpt_chars": 225,
+      "source_excerpt_precheck": "EXCERPT_PRESENT",
+      "editorial_steps": 5,
+      "timer_phases": 2,
+      "full_single_source_approved": false,
+      "warnings": [
+        "INDEPENDENT_FULL_REVIEW_PENDING"
+      ]
+    },
+    {
+      "id": 63,
+      "title": "Соллонтхан на костном бульоне",
+      "source": "https://www.koreanbapsang.com/seolleongtang-beef-bone-soup/",
+      "source_excerpt_ingredient_items": 7,
+      "method_excerpt_chars": 96,
+      "source_excerpt_precheck": "EXCERPT_PRESENT",
+      "editorial_steps": 5,
+      "timer_phases": 4,
+      "full_single_source_approved": false,
+      "warnings": [
+        "INDEPENDENT_FULL_REVIEW_PENDING"
+      ]
+    },
+    {
+      "id": 64,
+      "title": "Кальбитхан с говяжьими рёбрами",
+      "source": "https://www.koreanbapsang.com/galbitang-beef-short-rib-soup/",
+      "source_excerpt_ingredient_items": 8,
+      "method_excerpt_chars": 225,
+      "source_excerpt_precheck": "EXCERPT_PRESENT",
+      "editorial_steps": 5,
+      "timer_phases": 3,
+      "full_single_source_approved": false,
+      "warnings": [
+        "INDEPENDENT_FULL_REVIEW_PENDING"
+      ]
+    },
+    {
+      "id": 65,
+      "title": "Миёккук с морскими водорослями",
+      "source": "https://www.koreanbapsang.com/miyeok-guk-beef-seaweed-soup/",
+      "source_excerpt_ingredient_items": 5,
+      "method_excerpt_chars": 225,
+      "source_excerpt_precheck": "EXCERPT_PRESENT",
+      "editorial_steps": 5,
+      "timer_phases": 4,
+      "full_single_source_approved": false,
+      "warnings": [
+        "INDEPENDENT_FULL_REVIEW_PENDING"
+      ]
+    },
+    {
+      "id": 66,
+      "title": "Мандугук с пельменями",
+      "source": "https://www.koreanbapsang.com/manduguk-korean-dumpling-soup/",
+      "source_excerpt_ingredient_items": 3,
+      "method_excerpt_chars": 225,
+      "source_excerpt_precheck": "EXCERPT_PRESENT",
+      "editorial_steps": 5,
+      "timer_phases": 2,
+      "full_single_source_approved": false,
+      "warnings": [
+        "INDEPENDENT_FULL_REVIEW_PENDING"
+      ]
+    },
+    {
+      "id": 67,
+      "title": "Кимчиччигэ со свининой",
+      "source": "https://www.koreanbapsang.com/kimchi-jjigae-kimchi-stew/",
+      "source_excerpt_ingredient_items": 4,
+      "method_excerpt_chars": 225,
+      "source_excerpt_precheck": "EXCERPT_PRESENT",
+      "editorial_steps": 5,
+      "timer_phases": 4,
+      "full_single_source_approved": false,
+      "warnings": [
+        "INDEPENDENT_FULL_REVIEW_PENDING"
+      ]
+    },
+    {
+      "id": 68,
+      "title": "Конд-намульгук с ростками сои",
+      "source": "https://www.koreanbapsang.com/kongnamul-guk-soybean-sprout-soup/",
+      "source_excerpt_ingredient_items": 6,
+      "method_excerpt_chars": 225,
+      "source_excerpt_precheck": "EXCERPT_PRESENT",
+      "editorial_steps": 5,
+      "timer_phases": 3,
+      "full_single_source_approved": false,
+      "warnings": [
+        "INDEPENDENT_FULL_REVIEW_PENDING"
+      ]
+    },
+    {
+      "id": 69,
+      "title": "Камджатхан со свиными косточками",
+      "source": "https://www.koreanbapsang.com/gamjatang-spicy-pork-bone-stew/",
+      "source_excerpt_ingredient_items": 9,
+      "method_excerpt_chars": 225,
+      "source_excerpt_precheck": "EXCERPT_PRESENT",
+      "editorial_steps": 5,
+      "timer_phases": 4,
+      "full_single_source_approved": false,
+      "warnings": [
+        "INDEPENDENT_FULL_REVIEW_PENDING"
+      ]
+    },
+    {
+      "id": 70,
+      "title": "Твенджан-ччигэ с соевой пастой",
+      "source": "https://www.koreanbapsang.com/doenjang-jjigae-korean-soy-bean-paste/",
+      "source_excerpt_ingredient_items": 9,
+      "method_excerpt_chars": 225,
+      "source_excerpt_precheck": "EXCERPT_PRESENT",
+      "editorial_steps": 5,
+      "timer_phases": 4,
+      "full_single_source_approved": false,
+      "warnings": [
+        "INDEPENDENT_FULL_REVIEW_PENDING"
+      ]
+    },
+    {
+      "id": 71,
+      "title": "Посоле рохо со свининой",
+      "source": "https://patijinich.com/es/pozole-rojo/",
+      "source_excerpt_ingredient_items": 4,
+      "method_excerpt_chars": 58,
+      "source_excerpt_precheck": "EXCERPT_INCOMPLETE",
+      "editorial_steps": 5,
+      "timer_phases": 3,
+      "full_single_source_approved": false,
+      "warnings": [
+        "METHOD_EXCERPT_TOO_SHORT",
+        "INDEPENDENT_FULL_REVIEW_PENDING"
+      ]
+    },
+    {
+      "id": 72,
+      "title": "Посоле верде с курицей",
+      "source": "https://patijinich.com/you_know_you_want_it_green_pozole/",
+      "source_excerpt_ingredient_items": 5,
+      "method_excerpt_chars": 225,
+      "source_excerpt_precheck": "EXCERPT_PRESENT",
+      "editorial_steps": 5,
+      "timer_phases": 3,
+      "full_single_source_approved": false,
+      "warnings": [
+        "INDEPENDENT_FULL_REVIEW_PENDING"
+      ]
+    },
+    {
+      "id": 73,
+      "title": "Сопа де тортилья",
+      "source": "https://patijinich.com/es/sopa-de-tortilla/",
+      "source_excerpt_ingredient_items": 10,
+      "method_excerpt_chars": 225,
+      "source_excerpt_precheck": "EXCERPT_PRESENT",
+      "editorial_steps": 5,
+      "timer_phases": 4,
+      "full_single_source_approved": false,
+      "warnings": [
+        "INDEPENDENT_FULL_REVIEW_PENDING"
+      ]
+    },
+    {
+      "id": 74,
+      "title": "Кальдо тлальпеньо с курицей и нутом",
+      "source": "https://www.casademexico.es/noticia/receta/caldo-tlalpeno/",
+      "source_excerpt_ingredient_items": 0,
+      "method_excerpt_chars": 0,
+      "source_excerpt_precheck": "EXCERPT_INCOMPLETE",
+      "editorial_steps": 5,
+      "timer_phases": 4,
+      "full_single_source_approved": false,
+      "warnings": [
+        "METHOD_EXCERPT_TOO_SHORT",
+        "INGREDIENT_EXCERPT_TOO_SHORT",
+        "INDEPENDENT_FULL_REVIEW_PENDING"
+      ]
+    },
+    {
+      "id": 75,
+      "title": "Сопа де фидео",
+      "source": "https://www.isabeleats.com/sopa-de-fideo/",
+      "source_excerpt_ingredient_items": 0,
+      "method_excerpt_chars": 0,
+      "source_excerpt_precheck": "EXCERPT_INCOMPLETE",
+      "editorial_steps": 5,
+      "timer_phases": 3,
+      "full_single_source_approved": false,
+      "warnings": [
+        "METHOD_EXCERPT_TOO_SHORT",
+        "INGREDIENT_EXCERPT_TOO_SHORT",
+        "INDEPENDENT_FULL_REVIEW_PENDING"
+      ]
+    },
+    {
+      "id": 76,
+      "title": "Сопа де лима с курицей",
+      "source": "https://patijinich.com/lima-soup/",
+      "source_excerpt_ingredient_items": 13,
+      "method_excerpt_chars": 45,
+      "source_excerpt_precheck": "EXCERPT_INCOMPLETE",
+      "editorial_steps": 5,
+      "timer_phases": 3,
+      "full_single_source_approved": false,
+      "warnings": [
+        "METHOD_EXCERPT_TOO_SHORT",
+        "INDEPENDENT_FULL_REVIEW_PENDING"
+      ]
+    },
+    {
+      "id": 77,
+      "title": "Кальдо де рес с говядиной",
+      "source": "https://www.food.com/recipe/caldo-de-res-a-mexican-beef-vegetable-soup-223546",
+      "source_excerpt_ingredient_items": 0,
+      "method_excerpt_chars": 0,
+      "source_excerpt_precheck": "EXCERPT_INCOMPLETE",
+      "editorial_steps": 5,
+      "timer_phases": 4,
+      "full_single_source_approved": false,
+      "warnings": [
+        "METHOD_EXCERPT_TOO_SHORT",
+        "INGREDIENT_EXCERPT_TOO_SHORT",
+        "INDEPENDENT_FULL_REVIEW_PENDING"
+      ]
+    },
+    {
+      "id": 78,
+      "title": "Кальдо де альбондигас",
+      "source": "https://www.onceuponachef.com/recipes/albondigas-soup-mexican-meatball-soup.html",
+      "source_excerpt_ingredient_items": 9,
+      "method_excerpt_chars": 34,
+      "source_excerpt_precheck": "EXCERPT_INCOMPLETE",
+      "editorial_steps": 5,
+      "timer_phases": 4,
+      "full_single_source_approved": false,
+      "warnings": [
+        "METHOD_EXCERPT_TOO_SHORT",
+        "INDEPENDENT_FULL_REVIEW_PENDING"
+      ]
+    },
+    {
+      "id": 79,
+      "title": "Сопа тараска из фасоли",
+      "source": "https://patijinich.com/tarascan-soup/",
+      "source_excerpt_ingredient_items": 8,
+      "method_excerpt_chars": 225,
+      "source_excerpt_precheck": "EXCERPT_PRESENT",
+      "editorial_steps": 5,
+      "timer_phases": 3,
+      "full_single_source_approved": false,
+      "warnings": [
+        "INDEPENDENT_FULL_REVIEW_PENDING"
+      ]
+    },
+    {
+      "id": 80,
+      "title": "Чильпачоле с крабом",
+      "source": "https://laroussecocina.mx/receta/chilpachole-de-jaiba/",
+      "source_excerpt_ingredient_items": 7,
+      "method_excerpt_chars": 225,
+      "source_excerpt_precheck": "EXCERPT_PRESENT",
+      "editorial_steps": 5,
+      "timer_phases": 4,
+      "full_single_source_approved": false,
+      "warnings": [
+        "INDEPENDENT_FULL_REVIEW_PENDING"
+      ]
+    },
+    {
+      "id": 81,
+      "title": "Фо бо с говядиной",
+      "source": "https://vickypham.com/blog/vietnamese-beef-noodle-soup-pho-bo/",
+      "source_excerpt_ingredient_items": 6,
+      "method_excerpt_chars": 225,
+      "source_excerpt_precheck": "EXCERPT_PRESENT",
+      "editorial_steps": 5,
+      "timer_phases": 4,
+      "full_single_source_approved": false,
+      "warnings": [
+        "INDEPENDENT_FULL_REVIEW_PENDING"
+      ]
+    },
+    {
+      "id": 82,
+      "title": "Фо га с курицей",
+      "source": "https://vickypham.com/blog/vietnamese-chicken-noodle-soup-pho-ga/",
+      "source_excerpt_ingredient_items": 8,
+      "method_excerpt_chars": 225,
+      "source_excerpt_precheck": "EXCERPT_PRESENT",
+      "editorial_steps": 5,
+      "timer_phases": 1,
+      "full_single_source_approved": false,
+      "warnings": [
+        "INDEPENDENT_FULL_REVIEW_PENDING"
+      ]
+    },
+    {
+      "id": 83,
+      "title": "Бун бо Хюэ",
+      "source": "https://vickypham.com/blog/vietnamese-spicy-beef-noodle-soup-bun-bo-hue/",
+      "source_excerpt_ingredient_items": 12,
+      "method_excerpt_chars": 225,
+      "source_excerpt_precheck": "EXCERPT_PRESENT",
+      "editorial_steps": 5,
+      "timer_phases": 2,
+      "full_single_source_approved": false,
+      "warnings": [
+        "INDEPENDENT_FULL_REVIEW_PENDING"
+      ]
+    },
+    {
+      "id": 84,
+      "title": "Бун риеу с крабом",
+      "source": "https://vickypham.com/blog/bun-rieu-scratch/",
+      "source_excerpt_ingredient_items": 8,
+      "method_excerpt_chars": 225,
+      "source_excerpt_precheck": "EXCERPT_PRESENT",
+      "editorial_steps": 5,
+      "timer_phases": 3,
+      "full_single_source_approved": false,
+      "warnings": [
+        "INDEPENDENT_FULL_REVIEW_PENDING"
+      ]
+    },
+    {
+      "id": 85,
+      "title": "Бун тханг по-ханойски",
+      "source": "https://vickypham.com/blog/northern-vietnam-hanoi-noodle-soup-pork-chicken-shrimp-bun-thang/",
+      "source_excerpt_ingredient_items": 9,
+      "method_excerpt_chars": 225,
+      "source_excerpt_precheck": "EXCERPT_PRESENT",
+      "editorial_steps": 5,
+      "timer_phases": 2,
+      "full_single_source_approved": false,
+      "warnings": [
+        "INDEPENDENT_FULL_REVIEW_PENDING"
+      ]
+    },
+    {
+      "id": 86,
+      "title": "Бун ок с улитками",
+      "source": "https://vnexpress.net/doi-song-cooking-bun-oc-ha-noi-theo-loi-cu-4785234.html",
+      "source_excerpt_ingredient_items": 6,
+      "method_excerpt_chars": 225,
+      "source_excerpt_precheck": "EXCERPT_PRESENT",
+      "editorial_steps": 5,
+      "timer_phases": 3,
+      "full_single_source_approved": false,
+      "warnings": [
+        "INDEPENDENT_FULL_REVIEW_PENDING"
+      ]
+    },
+    {
+      "id": 87,
+      "title": "Ху тьеу со свининой и креветками",
+      "source": "https://vickypham.com/blog/vietnamese-pork-seafood-noodle-soup-hu-tieu/",
+      "source_excerpt_ingredient_items": 9,
+      "method_excerpt_chars": 225,
+      "source_excerpt_precheck": "EXCERPT_PRESENT",
+      "editorial_steps": 5,
+      "timer_phases": 4,
+      "full_single_source_approved": false,
+      "warnings": [
+        "INDEPENDENT_FULL_REVIEW_PENDING"
+      ]
+    },
+    {
+      "id": 88,
+      "title": "Бань кань с густой лапшой",
+      "source": "https://vickypham.com/blog/banh-canh-suon-heo-vietnamese-pork-rib-noodle-soup-large-batch/",
+      "source_excerpt_ingredient_items": 7,
+      "method_excerpt_chars": 225,
+      "source_excerpt_precheck": "EXCERPT_PRESENT",
+      "editorial_steps": 5,
+      "timer_phases": 3,
+      "full_single_source_approved": false,
+      "warnings": [
+        "INDEPENDENT_FULL_REVIEW_PENDING"
+      ]
+    },
+    {
+      "id": 89,
+      "title": "Кань чуа с рыбой и тамариндом",
+      "source": "https://vickypham.com/blog/vietnamese-sour-catfish-soup-canh-chua/",
+      "source_excerpt_ingredient_items": 7,
+      "method_excerpt_chars": 225,
+      "source_excerpt_precheck": "EXCERPT_PRESENT",
+      "editorial_steps": 5,
+      "timer_phases": 3,
+      "full_single_source_approved": false,
+      "warnings": [
+        "INDEPENDENT_FULL_REVIEW_PENDING"
+      ]
+    },
+    {
+      "id": 90,
+      "title": "Кань кхо куа с фаршированной горькой дыней",
+      "source": "https://www.hungryhuy.com/bitter-melon-soup-canh-kho-qua/",
+      "source_excerpt_ingredient_items": 0,
+      "method_excerpt_chars": 0,
+      "source_excerpt_precheck": "EXCERPT_INCOMPLETE",
+      "editorial_steps": 5,
+      "timer_phases": 3,
+      "full_single_source_approved": false,
+      "warnings": [
+        "METHOD_EXCERPT_TOO_SHORT",
+        "INGREDIENT_EXCERPT_TOO_SHORT",
+        "INDEPENDENT_FULL_REVIEW_PENDING"
+      ]
+    },
+    {
+      "id": 91,
+      "title": "Суп с вонтонами",
+      "source": "https://thewoksoflife.com/shanghai-wonton-soup/",
+      "source_excerpt_ingredient_items": 13,
+      "method_excerpt_chars": 225,
+      "source_excerpt_precheck": "EXCERPT_PRESENT",
+      "editorial_steps": 5,
+      "timer_phases": 2,
+      "full_single_source_approved": false,
+      "warnings": [
+        "INDEPENDENT_FULL_REVIEW_PENDING"
+      ]
+    },
+    {
+      "id": 92,
+      "title": "Кисло-острый суп",
+      "source": "https://thewoksoflife.com/hot-sour-soup/",
+      "source_excerpt_ingredient_items": 8,
+      "method_excerpt_chars": 143,
+      "source_excerpt_precheck": "EXCERPT_PRESENT",
+      "editorial_steps": 5,
+      "timer_phases": 1,
+      "full_single_source_approved": false,
+      "warnings": [
+        "INDEPENDENT_FULL_REVIEW_PENDING"
+      ]
+    },
+    {
+      "id": 93,
+      "title": "Суп с яичными хлопьями",
+      "source": "https://thewoksoflife.com/egg-drop-soup/",
+      "source_excerpt_ingredient_items": 11,
+      "method_excerpt_chars": 225,
+      "source_excerpt_precheck": "EXCERPT_PRESENT",
+      "editorial_steps": 5,
+      "timer_phases": 0,
+      "full_single_source_approved": false,
+      "warnings": [
+        "INDEPENDENT_FULL_REVIEW_PENDING"
+      ]
+    },
+    {
+      "id": 94,
+      "title": "Суп с зимней дыней",
+      "source": "https://thewoksoflife.com/winter-melon-soup-pork-ribs/",
+      "source_excerpt_ingredient_items": 8,
+      "method_excerpt_chars": 225,
+      "source_excerpt_precheck": "EXCERPT_PRESENT",
+      "editorial_steps": 5,
+      "timer_phases": 3,
+      "full_single_source_approved": false,
+      "warnings": [
+        "INDEPENDENT_FULL_REVIEW_PENDING"
+      ]
+    },
+    {
+      "id": 95,
+      "title": "Кукурузный суп по-кантонски",
+      "source": "https://www.madewithlau.com/recipes/chicken-corn-soup",
+      "source_excerpt_ingredient_items": 14,
+      "method_excerpt_chars": 225,
+      "source_excerpt_precheck": "EXCERPT_PRESENT",
+      "editorial_steps": 5,
+      "timer_phases": 2,
+      "full_single_source_approved": false,
+      "warnings": [
+        "INDEPENDENT_FULL_REVIEW_PENDING"
+      ]
+    },
+    {
+      "id": 96,
+      "title": "Суаньцайюй с рыбой",
+      "source": "https://omnivorescookbook.com/suan-cai-yu/",
+      "source_excerpt_ingredient_items": 11,
+      "method_excerpt_chars": 64,
+      "source_excerpt_precheck": "EXCERPT_INCOMPLETE",
+      "editorial_steps": 5,
+      "timer_phases": 3,
+      "full_single_source_approved": false,
+      "warnings": [
+        "METHOD_EXCERPT_TOO_SHORT",
+        "INDEPENDENT_FULL_REVIEW_PENDING"
+      ]
+    },
+    {
+      "id": 97,
+      "title": "Хулатхан по-хэнаньски с говядиной и белым перцем",
+      "source": "https://amuse-media.com/en/recipes/hulatang-recipe-henan-pepper-soup",
+      "source_excerpt_ingredient_items": 7,
+      "method_excerpt_chars": 225,
+      "source_excerpt_precheck": "EXCERPT_PRESENT",
+      "editorial_steps": 5,
+      "timer_phases": 5,
+      "full_single_source_approved": false,
+      "warnings": [
+        "INDEPENDENT_FULL_REVIEW_PENDING"
+      ]
+    },
+    {
+      "id": 98,
+      "title": "Янроу паомо с бараниной и лепёшкой",
+      "source": "https://hongkitchen.org/recipes/yangrou-paomo",
+      "source_excerpt_ingredient_items": 3,
+      "method_excerpt_chars": 225,
+      "source_excerpt_precheck": "EXCERPT_PRESENT",
+      "editorial_steps": 5,
+      "timer_phases": 3,
+      "full_single_source_approved": false,
+      "warnings": [
+        "INDEPENDENT_FULL_REVIEW_PENDING"
+      ]
+    },
+    {
+      "id": 99,
+      "title": "Лосунтан, шанхайский томатный суп",
+      "source": "https://thewoksoflife.com/red-vegetable-soup-shanghai-luo-song-tang/",
+      "source_excerpt_ingredient_items": 10,
+      "method_excerpt_chars": 225,
+      "source_excerpt_precheck": "EXCERPT_PRESENT",
+      "editorial_steps": 5,
+      "timer_phases": 3,
+      "full_single_source_approved": false,
+      "warnings": [
+        "INDEPENDENT_FULL_REVIEW_PENDING"
+      ]
+    },
+    {
+      "id": 100,
+      "title": "Суп с водяным крессом и свиными рёбрами",
+      "source": "https://thewoksoflife.com/chinese-watercress-soup-pork/",
+      "source_excerpt_ingredient_items": 5,
+      "method_excerpt_chars": 225,
+      "source_excerpt_precheck": "EXCERPT_PRESENT",
+      "editorial_steps": 5,
+      "timer_phases": 3,
+      "full_single_source_approved": false,
+      "warnings": [
+        "INDEPENDENT_FULL_REVIEW_PENDING"
+      ]
+    }
+  ]
+}
