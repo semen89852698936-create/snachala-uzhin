@@ -1,0 +1,803 @@
+{
+  "project": "НАШ ВЕЧЕР",
+  "collection": "100 завтраков мира",
+  "country": "Франция",
+  "recipe_count": 10,
+  "is_published": false,
+  "verification_level": "editorial complete drafts, individual culinary validation pending",
+  "recipes": [
+    {
+      "id": "breakfast-fr-21",
+      "collection_number": 21,
+      "country": "Франция",
+      "country_code": "FR",
+      "title": "Круассан с маслом",
+      "original_name": "Croissant au beurre",
+      "servings": 2,
+      "total_min": 720,
+      "ingredients": [
+        {
+          "name": "Мука пшеничная",
+          "amount": 300,
+          "unit": "г"
+        },
+        {
+          "name": "Молоко",
+          "amount": 130,
+          "unit": "мл"
+        },
+        {
+          "name": "Вода",
+          "amount": 55,
+          "unit": "мл"
+        },
+        {
+          "name": "Сахар",
+          "amount": 35,
+          "unit": "г"
+        },
+        {
+          "name": "Дрожжи сухие",
+          "amount": 5,
+          "unit": "г"
+        },
+        {
+          "name": "Соль",
+          "amount": 6,
+          "unit": "г"
+        },
+        {
+          "name": "Масло сливочное для слоения",
+          "amount": 160,
+          "unit": "г"
+        },
+        {
+          "name": "Масло в тесто",
+          "amount": 20,
+          "unit": "г"
+        },
+        {
+          "name": "Яйцо для смазывания",
+          "amount": 1,
+          "unit": "шт."
+        }
+      ],
+      "steps": [
+        {
+          "text": "Замеси муку, молоко, воду, сахар, дрожжи и соль 5 минут, вмешай 20 г масла. Накрой и охлади тесто 60 минут.",
+          "timer_sec": 3600
+        },
+        {
+          "text": "Расплющи 160 г холодного масла между листами пергамента в квадрат 15×15 см, охлади вместе с тестом.",
+          "timer_sec": 0
+        },
+        {
+          "text": "Раскатай тесто прямоугольником, заверни масляный квадрат внутрь без щелей. Раскатай и сложи втрое, охлади 35 минут.",
+          "timer_sec": 2100
+        },
+        {
+          "text": "Повтори раскатывание и складывание втрое ещё два раза с охлаждением по 35 минут, не допуская вытекания масла.",
+          "timer_sec": 4200
+        },
+        {
+          "text": "Раскатай тесто до 3–4 мм, нарежь 6 вытянутых треугольников, сверни круассаны от основания, уложи концом вниз.",
+          "timer_sec": 0
+        },
+        {
+          "text": "Оставь расстаиваться 2–3 часа при 24–26 °C до заметного увеличения и дрожащей воздушной структуры; смажь яйцом.",
+          "timer_sec": 10800
+        },
+        {
+          "text": "Выпекай сначала 10 минут при 200 °C, затем 9–12 минут при 180 °C до равномерной коричнево-золотистой корочки. Остуди на решётке.",
+          "timer_sec": 1320
+        }
+      ],
+      "notes": "Не заменять круассан обычной булочкой. Масло для слоения должно оставаться пластичным и холодным.",
+      "source_verification": {
+        "status": "regional_tradition_checked_individual_recipe_unverified",
+        "country_reference_url": "https://www.france.fr/fr/article/petit-dejeuner-francaise/"
+      },
+      "editorial_status": "complete_draft_pending_culinary_verification",
+      "photo_status": "deferred_by_user",
+      "publication_status": "unpublished"
+    },
+    {
+      "id": "breakfast-fr-22",
+      "collection_number": 22,
+      "country": "Франция",
+      "country_code": "FR",
+      "title": "Слойка с шоколадом",
+      "original_name": "Pain au chocolat",
+      "servings": 2,
+      "total_min": 720,
+      "ingredients": [
+        {
+          "name": "Мука пшеничная",
+          "amount": 300,
+          "unit": "г"
+        },
+        {
+          "name": "Молоко",
+          "amount": 140,
+          "unit": "мл"
+        },
+        {
+          "name": "Вода",
+          "amount": 45,
+          "unit": "мл"
+        },
+        {
+          "name": "Сахар",
+          "amount": 35,
+          "unit": "г"
+        },
+        {
+          "name": "Соль",
+          "amount": 6,
+          "unit": "г"
+        },
+        {
+          "name": "Дрожжи сухие",
+          "amount": 5,
+          "unit": "г"
+        },
+        {
+          "name": "Масло сливочное для слоения",
+          "amount": 170,
+          "unit": "г"
+        },
+        {
+          "name": "Шоколад тёмный в палочках",
+          "amount": 80,
+          "unit": "г"
+        },
+        {
+          "name": "Яйцо для смазывания",
+          "amount": 1,
+          "unit": "шт."
+        }
+      ],
+      "steps": [
+        {
+          "text": "Замеси муку, молоко, воду, дрожжи, сахар и соль в гладкое тесто. Охлади 60 минут.",
+          "timer_sec": 3600
+        },
+        {
+          "text": "Заверни пласт холодного масла в раскатанное тесто. Раскатай, сложи втрое и охлади 35 минут.",
+          "timer_sec": 2100
+        },
+        {
+          "text": "Повтори ещё два тура раскатки и складывания с охлаждением между ними по 35 минут.",
+          "timer_sec": 4200
+        },
+        {
+          "text": "Раскатай пласт толщиной около 4 мм и нарежь 6 прямоугольников 8×12 см. На каждый положи по две шоколадные палочки, сверни плотным рулетом.",
+          "timer_sec": 0
+        },
+        {
+          "text": "Оставь на противне подниматься 2–3 часа при 24–26 °C, смажь слегка взбитым яйцом, не заливая срезы.",
+          "timer_sec": 10800
+        },
+        {
+          "text": "Выпекай при 190 °C 18–22 минуты до румяного слоистого теста. Дай остыть 10 минут.",
+          "timer_sec": 1320
+        }
+      ],
+      "notes": "Шоколад должен быть внутри двух завитков слоёного дрожжевого теста, а не заливкой сверху.",
+      "source_verification": {
+        "status": "regional_tradition_checked_individual_recipe_unverified",
+        "country_reference_url": "https://www.france.fr/fr/article/petit-dejeuner-francaise/"
+      },
+      "editorial_status": "complete_draft_pending_culinary_verification",
+      "photo_status": "deferred_by_user",
+      "publication_status": "unpublished"
+    },
+    {
+      "id": "breakfast-fr-23",
+      "collection_number": 23,
+      "country": "Франция",
+      "country_code": "FR",
+      "title": "Слойка-улитка с изюмом",
+      "original_name": "Pain aux raisins",
+      "servings": 2,
+      "total_min": 630,
+      "ingredients": [
+        {
+          "name": "Мука пшеничная",
+          "amount": 250,
+          "unit": "г"
+        },
+        {
+          "name": "Молоко для теста",
+          "amount": 110,
+          "unit": "мл"
+        },
+        {
+          "name": "Сахар для теста",
+          "amount": 25,
+          "unit": "г"
+        },
+        {
+          "name": "Дрожжи сухие",
+          "amount": 4,
+          "unit": "г"
+        },
+        {
+          "name": "Соль",
+          "amount": 4,
+          "unit": "г"
+        },
+        {
+          "name": "Масло сливочное для слоения",
+          "amount": 125,
+          "unit": "г"
+        },
+        {
+          "name": "Молоко для крема",
+          "amount": 180,
+          "unit": "мл"
+        },
+        {
+          "name": "Яичный желток",
+          "amount": 1,
+          "unit": "шт."
+        },
+        {
+          "name": "Сахар для крема",
+          "amount": 35,
+          "unit": "г"
+        },
+        {
+          "name": "Крахмал кукурузный",
+          "amount": 15,
+          "unit": "г"
+        },
+        {
+          "name": "Изюм",
+          "amount": 65,
+          "unit": "г"
+        }
+      ],
+      "steps": [
+        {
+          "text": "Замеси тесто из муки, 110 мл молока, дрожжей, 25 г сахара и соли. Охлади 40 минут.",
+          "timer_sec": 2400
+        },
+        {
+          "text": "Вложи холодный пласт масла, сложи тесто втрое и охлади 30 минут. Повтори ещё два складывания с охлаждением по 30 минут.",
+          "timer_sec": 5400
+        },
+        {
+          "text": "Свари крем: смешай желток, сахар и крахмал, влей горячее молоко и прогрей 3–4 минуты до загустения. Остуди.",
+          "timer_sec": 240
+        },
+        {
+          "text": "Замочи изюм в горячей воде на 10 минут и обсуши. Раскатай тесто до 4 мм, смажь кремом, рассыпь изюм и сверни рулет.",
+          "timer_sec": 600
+        },
+        {
+          "text": "Нарежь 6 улиток толщиной около 3 см. Разложи на противне с зазором, дай подняться 90–120 минут.",
+          "timer_sec": 7200
+        },
+        {
+          "text": "Выпекай при 190 °C 18–23 минуты. Крем должен схватиться, а слои стать золотистыми.",
+          "timer_sec": 1380
+        }
+      ],
+      "notes": "Крем и изюм находятся между слоями спирали, а не просто посыпаны на поверхности.",
+      "source_verification": {
+        "status": "regional_tradition_checked_individual_recipe_unverified",
+        "country_reference_url": "https://www.france.fr/fr/article/petit-dejeuner-francaise/"
+      },
+      "editorial_status": "complete_draft_pending_culinary_verification",
+      "photo_status": "deferred_by_user",
+      "publication_status": "unpublished"
+    },
+    {
+      "id": "breakfast-fr-24",
+      "collection_number": 24,
+      "country": "Франция",
+      "country_code": "FR",
+      "title": "Французская бриошь",
+      "original_name": "Brioche",
+      "servings": 2,
+      "total_min": 510,
+      "ingredients": [
+        {
+          "name": "Мука пшеничная",
+          "amount": 260,
+          "unit": "г"
+        },
+        {
+          "name": "Яйца",
+          "amount": 2,
+          "unit": "шт."
+        },
+        {
+          "name": "Молоко",
+          "amount": 45,
+          "unit": "мл"
+        },
+        {
+          "name": "Сахар",
+          "amount": 35,
+          "unit": "г"
+        },
+        {
+          "name": "Дрожжи сухие",
+          "amount": 5,
+          "unit": "г"
+        },
+        {
+          "name": "Соль",
+          "amount": 5,
+          "unit": "г"
+        },
+        {
+          "name": "Масло сливочное",
+          "amount": 125,
+          "unit": "г"
+        },
+        {
+          "name": "Желток для смазывания",
+          "amount": 1,
+          "unit": "шт."
+        }
+      ],
+      "steps": [
+        {
+          "text": "Соедини муку, яйца, молоко, дрожжи, сахар и соль. Вымешивай 8 минут до эластичности.",
+          "timer_sec": 480
+        },
+        {
+          "text": "Порциями вмешай мягкое масло за 8–10 минут, пока тесто не станет гладким и тягучим.",
+          "timer_sec": 600
+        },
+        {
+          "text": "Оставь на 60 минут при комнатной температуре, затем плотно накрой и охлади минимум 4 часа.",
+          "timer_sec": 14400
+        },
+        {
+          "text": "Раздели тесто на 6 шариков, уложи в маленькую смазанную форму и дай подняться 90–120 минут.",
+          "timer_sec": 7200
+        },
+        {
+          "text": "Смажь желтком. Выпекай при 180 °C примерно 25–30 минут до румяной поверхности и пропечённой середины. Остуди 20 минут.",
+          "timer_sec": 1800
+        }
+      ],
+      "notes": "Нужно длительное холодное созревание масляного теста, иначе оно будет липким и тяжёлым.",
+      "source_verification": {
+        "status": "regional_tradition_checked_individual_recipe_unverified",
+        "country_reference_url": "https://www.france.fr/fr/article/petit-dejeuner-francaise/"
+      },
+      "editorial_status": "complete_draft_pending_culinary_verification",
+      "photo_status": "deferred_by_user",
+      "publication_status": "unpublished"
+    },
+    {
+      "id": "breakfast-fr-25",
+      "collection_number": 25,
+      "country": "Франция",
+      "country_code": "FR",
+      "title": "Тартин с маслом и джемом",
+      "original_name": "Tartine beurrée",
+      "servings": 2,
+      "total_min": 10,
+      "ingredients": [
+        {
+          "name": "Хлеб французский багет",
+          "amount": 160,
+          "unit": "г"
+        },
+        {
+          "name": "Сливочное масло мягкое",
+          "amount": 30,
+          "unit": "г"
+        },
+        {
+          "name": "Абрикосовый или клубничный джем",
+          "amount": 50,
+          "unit": "г"
+        }
+      ],
+      "steps": [
+        {
+          "text": "Нарежь багет вдоль на две половинки либо на четыре длинных ломтика.",
+          "timer_sec": 0
+        },
+        {
+          "text": "По желанию слегка подсуши хлеб в духовке при 180 °C 3–4 минуты, но не пересушивай мякиш.",
+          "timer_sec": 240
+        },
+        {
+          "text": "Дай хлебу остыть одну минуту и тонко распредели мягкое сливочное масло.",
+          "timer_sec": 60
+        },
+        {
+          "text": "Нанеси джем поверх масла и подай сразу к кофе или чаю.",
+          "timer_sec": 0
+        }
+      ],
+      "notes": "Для тартина нужен хлеб с хрустящей коркой и мягким мякишем, не толстый французский тост в яйце.",
+      "source_verification": {
+        "status": "regional_tradition_checked_individual_recipe_unverified",
+        "country_reference_url": "https://www.france.fr/fr/article/petit-dejeuner-francaise/"
+      },
+      "editorial_status": "complete_draft_pending_culinary_verification",
+      "photo_status": "deferred_by_user",
+      "publication_status": "unpublished"
+    },
+    {
+      "id": "breakfast-fr-26",
+      "collection_number": 26,
+      "country": "Франция",
+      "country_code": "FR",
+      "title": "Сладкие гренки по-французски",
+      "original_name": "Pain perdu",
+      "servings": 2,
+      "total_min": 20,
+      "ingredients": [
+        {
+          "name": "Черствый белый хлеб",
+          "amount": 180,
+          "unit": "г"
+        },
+        {
+          "name": "Молоко",
+          "amount": 140,
+          "unit": "мл"
+        },
+        {
+          "name": "Яйца",
+          "amount": 2,
+          "unit": "шт."
+        },
+        {
+          "name": "Сахар",
+          "amount": 25,
+          "unit": "г"
+        },
+        {
+          "name": "Ванильный сахар",
+          "amount": 5,
+          "unit": "г"
+        },
+        {
+          "name": "Сливочное масло",
+          "amount": 25,
+          "unit": "г"
+        },
+        {
+          "name": "Корица",
+          "amount": 2,
+          "unit": "г"
+        }
+      ],
+      "steps": [
+        {
+          "text": "Нарежь черствый хлеб 4 ломтиками толщиной 2–2,5 см.",
+          "timer_sec": 0
+        },
+        {
+          "text": "Взбей яйца с молоком, сахаром, ванильным сахаром и корицей.",
+          "timer_sec": 0
+        },
+        {
+          "text": "Погрузи хлеб в смесь на 20–40 секунд с каждой стороны: мякиш должен пропитаться, но не расползтись.",
+          "timer_sec": 80
+        },
+        {
+          "text": "Нагрей масло на умеренном огне и обжарь ломтики по 2–3 минуты с каждой стороны, пока яичная смесь полностью не схватится.",
+          "timer_sec": 360
+        },
+        {
+          "text": "Разложи по две гренки на тарелку, подавай тёплыми.",
+          "timer_sec": 0
+        }
+      ],
+      "notes": "Важно использовать подсохший хлеб, иначе гренки получатся рыхлыми.",
+      "source_verification": {
+        "status": "regional_tradition_checked_individual_recipe_unverified",
+        "country_reference_url": "https://www.france.fr/fr/article/petit-dejeuner-francaise/"
+      },
+      "editorial_status": "complete_draft_pending_culinary_verification",
+      "photo_status": "deferred_by_user",
+      "publication_status": "unpublished"
+    },
+    {
+      "id": "breakfast-fr-27",
+      "collection_number": 27,
+      "country": "Франция",
+      "country_code": "FR",
+      "title": "Бретонские блинчики с сахаром",
+      "original_name": "Crêpes sucrées",
+      "servings": 2,
+      "total_min": 55,
+      "ingredients": [
+        {
+          "name": "Мука пшеничная",
+          "amount": 130,
+          "unit": "г"
+        },
+        {
+          "name": "Молоко",
+          "amount": 300,
+          "unit": "мл"
+        },
+        {
+          "name": "Яйца",
+          "amount": 2,
+          "unit": "шт."
+        },
+        {
+          "name": "Сахар",
+          "amount": 20,
+          "unit": "г"
+        },
+        {
+          "name": "Масло сливочное растопленное",
+          "amount": 25,
+          "unit": "г"
+        },
+        {
+          "name": "Соль",
+          "amount": 2,
+          "unit": "г"
+        },
+        {
+          "name": "Масло для сковороды",
+          "amount": 8,
+          "unit": "г"
+        }
+      ],
+      "steps": [
+        {
+          "text": "Взбей яйца с молоком, сахаром и солью. Вмешай муку без комочков, добавь растопленное охлаждённое масло.",
+          "timer_sec": 0
+        },
+        {
+          "text": "Оставь жидкое тесто на 25–30 минут, чтобы клейковина расслабилась.",
+          "timer_sec": 1800
+        },
+        {
+          "text": "Хорошо разогрей блинную сковороду, смажь тонким слоем масла. Налей немного теста и быстро распредели в тонкий круг.",
+          "timer_sec": 0
+        },
+        {
+          "text": "Жарь около 50 секунд, переверни и готовь ещё 20–30 секунд. Повтори, получив 8–10 тонких блинов.",
+          "timer_sec": 80
+        },
+        {
+          "text": "Сложи блинчики треугольниками и при желании присыпь щепоткой сахара из указанного количества.",
+          "timer_sec": 0
+        }
+      ],
+      "notes": "Это сладкие crêpes из пшеничной муки, не гречневые солёные galettes.",
+      "source_verification": {
+        "status": "regional_tradition_checked_individual_recipe_unverified",
+        "country_reference_url": "https://www.france.fr/fr/article/petit-dejeuner-francaise/"
+      },
+      "editorial_status": "complete_draft_pending_culinary_verification",
+      "photo_status": "deferred_by_user",
+      "publication_status": "unpublished"
+    },
+    {
+      "id": "breakfast-fr-28",
+      "collection_number": 28,
+      "country": "Франция",
+      "country_code": "FR",
+      "title": "Бретонский слоёный пирог",
+      "original_name": "Kouign-amann",
+      "servings": 2,
+      "total_min": 320,
+      "ingredients": [
+        {
+          "name": "Мука пшеничная",
+          "amount": 270,
+          "unit": "г"
+        },
+        {
+          "name": "Вода",
+          "amount": 160,
+          "unit": "мл"
+        },
+        {
+          "name": "Дрожжи сухие",
+          "amount": 4,
+          "unit": "г"
+        },
+        {
+          "name": "Соль",
+          "amount": 5,
+          "unit": "г"
+        },
+        {
+          "name": "Масло сливочное для слоёв",
+          "amount": 170,
+          "unit": "г"
+        },
+        {
+          "name": "Сахар",
+          "amount": 170,
+          "unit": "г"
+        }
+      ],
+      "steps": [
+        {
+          "text": "Замеси муку, воду, дрожжи и соль. Накрой и оставь на 60 минут до увеличения объёма.",
+          "timer_sec": 3600
+        },
+        {
+          "text": "Раскатай тесто прямоугольником. Положи в центр пласт холодного масла, заверни краями и раскатай.",
+          "timer_sec": 0
+        },
+        {
+          "text": "Посыпь третью сахара, сложи втрое и охлади 20 минут. Повтори ещё два раза, добавляя остатки сахара; работай быстро, чтобы масло не таяло.",
+          "timer_sec": 3600
+        },
+        {
+          "text": "Переложи тесто в смазанную форму диаметром 18–20 см, загни края к центру и слегка прижми. Дай отдохнуть 20 минут.",
+          "timer_sec": 1200
+        },
+        {
+          "text": "Выпекай при 190 °C 35–40 минут до насыщенной карамельной корки. Осторожно вынь из формы пока карамель пластична, дай остыть 20 минут.",
+          "timer_sec": 2400
+        }
+      ],
+      "notes": "При работе с горячей карамелью легко обжечься. Нужен сахар между слоями и хрустящая поверхность.",
+      "source_verification": {
+        "status": "regional_tradition_checked_individual_recipe_unverified",
+        "country_reference_url": "https://www.france.fr/fr/article/petit-dejeuner-francaise/"
+      },
+      "editorial_status": "complete_draft_pending_culinary_verification",
+      "photo_status": "deferred_by_user",
+      "publication_status": "unpublished"
+    },
+    {
+      "id": "breakfast-fr-29",
+      "collection_number": 29,
+      "country": "Франция",
+      "country_code": "FR",
+      "title": "Нормандская рисовая каша в духовке",
+      "original_name": "Teurgoule",
+      "servings": 2,
+      "total_min": 300,
+      "ingredients": [
+        {
+          "name": "Круглозёрный рис",
+          "amount": 90,
+          "unit": "г"
+        },
+        {
+          "name": "Молоко цельное",
+          "amount": 900,
+          "unit": "мл"
+        },
+        {
+          "name": "Сахар",
+          "amount": 65,
+          "unit": "г"
+        },
+        {
+          "name": "Молотая корица",
+          "amount": 3,
+          "unit": "г"
+        },
+        {
+          "name": "Соль",
+          "amount": 2,
+          "unit": "г"
+        },
+        {
+          "name": "Сливочное масло для формы",
+          "amount": 8,
+          "unit": "г"
+        }
+      ],
+      "steps": [
+        {
+          "text": "Разогрей духовку до 140 °C. Смажь глубокую керамическую форму объёмом 1,2 л маслом.",
+          "timer_sec": 0
+        },
+        {
+          "text": "Всыпь сухой рис на дно формы, добавь сахар, корицу и соль. Влей холодное молоко и размешай.",
+          "timer_sec": 0
+        },
+        {
+          "text": "Поставь форму на противень в духовку. Готовь без перемешивания 3,5–4,5 часа до появления тёмно-золотистой корочки и мягкого кремового риса.",
+          "timer_sec": 16200
+        },
+        {
+          "text": "Дай каше отдохнуть 20 минут. Разложи по двум глубоким мискам, не убирая всю запечённую корочку.",
+          "timer_sec": 1200
+        }
+      ],
+      "notes": "Это долго запекаемый десертный завтрак, а не быстрая рисовая каша на плите.",
+      "source_verification": {
+        "status": "regional_tradition_checked_individual_recipe_unverified",
+        "country_reference_url": "https://www.france.fr/fr/article/petit-dejeuner-francaise/"
+      },
+      "editorial_status": "complete_draft_pending_culinary_verification",
+      "photo_status": "deferred_by_user",
+      "publication_status": "unpublished"
+    },
+    {
+      "id": "breakfast-fr-30",
+      "collection_number": 30,
+      "country": "Франция",
+      "country_code": "FR",
+      "title": "Слойка с яблоком",
+      "original_name": "Chausson aux pommes",
+      "servings": 2,
+      "total_min": 65,
+      "ingredients": [
+        {
+          "name": "Слоёное бездрожжевое тесто готовое",
+          "amount": 300,
+          "unit": "г"
+        },
+        {
+          "name": "Яблоки очищенные",
+          "amount": 300,
+          "unit": "г"
+        },
+        {
+          "name": "Сахар",
+          "amount": 35,
+          "unit": "г"
+        },
+        {
+          "name": "Сливочное масло",
+          "amount": 15,
+          "unit": "г"
+        },
+        {
+          "name": "Корица",
+          "amount": 2,
+          "unit": "г"
+        },
+        {
+          "name": "Лимонный сок",
+          "amount": 10,
+          "unit": "мл"
+        },
+        {
+          "name": "Яйцо для смазывания",
+          "amount": 1,
+          "unit": "шт."
+        }
+      ],
+      "steps": [
+        {
+          "text": "Нарежь яблоки небольшими кубиками. Туши с маслом, сахаром, корицей и лимонным соком 10–12 минут до мягкой густой начинки; полностью остуди.",
+          "timer_sec": 720
+        },
+        {
+          "text": "Раскатай охлаждённое слоёное тесто до 3 мм и вырежи 4 круга диаметром 13–14 см.",
+          "timer_sec": 0
+        },
+        {
+          "text": "Положи начинку на половину круга, оставь сухой край 1,5 см. Сложи полумесяцем, тщательно защипни и надрежь верх для выхода пара.",
+          "timer_sec": 0
+        },
+        {
+          "text": "Смажь верх яйцом, не заливая швы. Выпекай при 200 °C 20–25 минут до уверенной золотистой слоистости.",
+          "timer_sec": 1500
+        },
+        {
+          "text": "Дай остыть 10 минут: яблочная начинка долго удерживает жар.",
+          "timer_sec": 600
+        }
+      ],
+      "notes": "Использование готового натурального слоёного теста заявлено открыто; начинка приготовлена полностью.",
+      "source_verification": {
+        "status": "regional_tradition_checked_individual_recipe_unverified",
+        "country_reference_url": "https://www.france.fr/fr/article/petit-dejeuner-francaise/"
+      },
+      "editorial_status": "complete_draft_pending_culinary_verification",
+      "photo_status": "deferred_by_user",
+      "publication_status": "unpublished"
+    }
+  ]
+}
