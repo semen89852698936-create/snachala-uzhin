@@ -44,9 +44,20 @@ for(const r of recipes){
   }
   assert.ok(typeof r.photoBrief==='string'&&r.photoBrief.length>=30,'Photo brief: '+r.id);
   assert.equal(r.photoStatus,'pending_separate_photo','Photos are NOT approved or published: '+r.id);
-  assert.equal(r.reviewStatus,'editorial_draft_requires_source_by_source_signoff',
-    'Do not claim verified source signoff: '+r.id);
+  const verified = r.reviewStatus === 'verified_three_independent_recipe_sources_editorial_not_approved';
+  const draft = r.reviewStatus === 'editorial_draft_requires_source_by_source_signoff';
+  assert.ok(verified || draft, 'Unexpected editorial review status: '+r.id);
+  if (verified) {
+    assert.ok(Array.isArray(r.sourceEvidence) && r.sourceEvidence.length >= 3,
+      'Verified card needs three source records: '+r.id);
+    const read = r.sourceEvidence.filter(e => e.status === 'read' &&
+      typeof e.url === 'string' && /^https:\\/\\//.test(e.url) &&
+      typeof e.evidence === 'string' && e.evidence.length >= 35);
+    assert.ok(read.length >= 3, 'Verified card needs three read sources with evidence: '+r.id);
+    assert.equal(new Set(read.map(e => new URL(e.url).hostname.replace(/^www\\./,''))).size >= 3,
+      true, 'Verified sources must have three distinct publisher domains: '+r.id);
+  }
   assert.equal(r.photo,undefined,'Never reuse an old unrelated photo: '+r.id);
 }
 console.log('PASS: 100 distinct salads, 10 cuisines x 10, two servings, step/ingredient schema, staging only.');
-console.log('NOTE: culinary source-by-source review, original photos and published-site integration remain pending.');
+console.log('NOTE: structural source evidence checks do not independently verify URLs or culinary correctness. Original photos and publication remain pending.');
