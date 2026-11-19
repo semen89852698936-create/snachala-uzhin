@@ -1,0 +1,41 @@
+name: Verify 10 owner-approved Russian soups on current live release
+on:
+  push:
+    branches:
+      - release/nash-vecher-russian-soups-10-live-20261119
+    paths:
+      - .github/workflows/qa-russian-soups-live.yml
+      - scripts/check-world-soups-release.cjs
+      - assets/world-soups-10.js
+      - assets/world-soups/**
+      - index.html
+      - full-catalog/index.html
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  soup-parity:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020
+        with:
+          node-version: '24'
+      - name: Validate full soup catalog and image mapping
+        run: node scripts/check-world-soups-release.cjs
+      - name: Parse JavaScript and verify 10 soup photographs are genuine 1200px WebP
+        run: |
+          node --check assets/world-soups-10.js
+          python3 - <<'PY'
+          import struct
+          from pathlib import Path
+          for n in range(1,11):
+              b=(Path('assets/world-soups')/f'{n:02}.webp').read_bytes()
+              assert b[:4]==b'RIFF' and b[8:12]==b'WEBP', n
+              assert 20000<len(b)<1000000, (n,len(b))
+              assert b[12:16] in (b'VP8 ',b'VP8L',b'VP8X'), (n,b[12:16])
+              print(n, 'WEBP',len(b),'bytes')
+          PY
