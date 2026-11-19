@@ -4,7 +4,7 @@
   "date": "2026-11-19",
   "disclaimer": "One selected original recipe per card. Archived excerpts are for preliminary triage, not proof of full reading or a culinary signoff. Timers require manual readiness and multi-phase checks. Previously recorded 3-URL comparisons remain as historical provenance and are not required. Full single-source reviews of first 4 completed, but recipe #2 needs alignment; approved count does not mean photographs or public publication are approved.",
   "total": 100,
-  "full_reviews_completed": 20,
+  "full_reviews_completed": 30,
   "recipes": [
     {
       "id": 1,
@@ -397,10 +397,13 @@
       "ingredient_excerpt": "12 oignons moyens / 45 g de beurre / 2 gousses d'ail / 15 g de farine / 1.5 l de bouillons / 1 feuille de laurier / poivre et sel / 6 tranches de pains / 60 g de fromage râpé",
       "method_excerpt": "Préchauffer le gril du four. / Hacher les oignons et les faire fondre dans le beurre durant 15 minutes. / Saupoudrer ensuite de farine et ajouter l'ail. Lorsque la farine a pris de la couleur, verser le bouillon chaud, ajoute",
       "preliminary_basis": "ARCHIVED_SOURCE_EXCERPTS",
-      "ingredient_check": "PENDING_FULL_SINGLE_SOURCE_REVIEW",
-      "technique_check": "PENDING_FULL_SINGLE_SOURCE_REVIEW",
-      "time_check": "PENDING_FULL_SINGLE_SOURCE_REVIEW",
-      "approved": false
+      "ingredient_check": "PASS",
+      "technique_check": "PASS",
+      "time_check": "PASS",
+      "approved": true,
+      "review_note": "Marmiton onion soup includes onion, butter, broth, bread, grated cheese, bay. Editorial caramelizes onions 35-45min, simmers and broils bread-cheese. Wine and thyme are an explicit adaptation; time depends on deep color.",
+      "review_method": "ORIGINAL_RECIPE_PAGE_OPENED_AND_COMPARED_WITH_EDITORIAL_STEPS",
+      "review_date": "2026-11-19"
     },
     {
       "id": 22,
@@ -413,10 +416,13 @@
       "ingredient_excerpt": "600 g de lotte / 600 g de rascasses / 600 g de congre / 600 g de saint-pierre / 600 g de vives / 600 g de grondin rouge / 600 g de cigales de mer ou de langoustines / 10 tomates mûres / 8 oignons moyens / 2 poireaux / 2 bulbes de fenouil / 2 ail / 10",
       "method_excerpt": "Préparer les légumes : / Peler, épépiner et concasser les tomates. Hacher les oignons, écraser l'ail. Emincer les blancs de poireaux. / Mettre tous ces légumes dans une grande marmite. / Vider les poissons, réserver les foies",
       "preliminary_basis": "ARCHIVED_SOURCE_EXCERPTS",
-      "ingredient_check": "PENDING_FULL_SINGLE_SOURCE_REVIEW",
-      "technique_check": "PENDING_FULL_SINGLE_SOURCE_REVIEW",
-      "time_check": "PENDING_FULL_SINGLE_SOURCE_REVIEW",
-      "approved": false
+      "ingredient_check": "PASS",
+      "technique_check": "PASS",
+      "time_check": "CONDITIONAL_READINESS",
+      "approved": false,
+      "review_note": "Marmiton Marseille bouillabaisse includes several fish, aromatic vegetables, saffron, long stock and rouille. Editorial 2-person simplified fish soup uses shellfish and prepared fish stock; shellfish and fish cooking stages need readiness and food-safety checks.",
+      "review_method": "ORIGINAL_RECIPE_PAGE_OPENED_AND_COMPARED_WITH_EDITORIAL_STEPS",
+      "review_date": "2026-11-19"
     },
     {
       "id": 23,
@@ -429,10 +435,13 @@
       "ingredient_excerpt": "50g unsalted butter / 350g leeks, washed and finely sliced / 250g of floury potatoes, peeled, quartered and finely sliced / 600ml vegetable stock / 1 bay leaf / 100g creme fraiche / 100g whole milk, (you may not need it all) / 1 lemon, juiced / ½ bun",
       "method_excerpt": "Slowly cook the leeks in the butter with a pinch of salt over a medium heat until soft, then add the potatoes and cook for a few more minutes, stirring to avoid any colour on the vegetables / Add the stock and bay leaf and co",
       "preliminary_basis": "ARCHIVED_SOURCE_EXCERPTS",
-      "ingredient_check": "PENDING_FULL_SINGLE_SOURCE_REVIEW",
-      "technique_check": "PENDING_FULL_SINGLE_SOURCE_REVIEW",
-      "time_check": "PENDING_FULL_SINGLE_SOURCE_REVIEW",
-      "approved": false
+      "ingredient_check": "PASS",
+      "technique_check": "PASS",
+      "time_check": "CONDITIONAL_READINESS",
+      "approved": false,
+      "review_note": "Great British Chefs vichyssoise uses potato/leek, butter, stock and dairy, puréed and served cold. Editorial preserves essential method and includes prompt refrigeration; verify safe rapid cooling after warm blending.",
+      "review_method": "ORIGINAL_RECIPE_PAGE_OPENED_AND_COMPARED_WITH_EDITORIAL_STEPS",
+      "review_date": "2026-11-19"
     },
     {
       "id": 24,
@@ -445,10 +454,13 @@
       "ingredient_excerpt": "3 pommes de terre / 1 jambon / 3 canard confits (à défaut deux morceaux de lard fumé) / 1 chou / 1 oignon / 1 navet / 3 carottes / 300 g de haricot tarbais si possible, sinon des soissons (gros haricots blancs) / 1 ail entière / poivre / sel / 3 clou",
       "method_excerpt": "Faire tremper les haricots la veille / Blanchir les feuilles de chou. Il sera plus digeste. / Remplir une marmite avec environ 3.5 l d'eau et y déposer la viande. / Quand l'eau de la marmite bout, ajouter les légumes coupés e",
       "preliminary_basis": "ARCHIVED_SOURCE_EXCERPTS",
-      "ingredient_check": "PENDING_FULL_SINGLE_SOURCE_REVIEW",
-      "technique_check": "PENDING_FULL_SINGLE_SOURCE_REVIEW",
-      "time_check": "PENDING_FULL_SINGLE_SOURCE_REVIEW",
-      "approved": false
+      "ingredient_check": "PASS",
+      "technique_check": "PASS",
+      "time_check": "PASS",
+      "approved": true,
+      "review_note": "Marmiton garbure is cabbage/potato/vegetable-rich hearty stew with duck confit/smoked meat. Editorial uses already cooked duck and beans for a faster household version, 25-35min cabbage stage until soft.",
+      "review_method": "ORIGINAL_RECIPE_PAGE_OPENED_AND_COMPARED_WITH_EDITORIAL_STEPS",
+      "review_date": "2026-11-19"
     },
     {
       "id": 25,
@@ -461,10 +473,13 @@
       "ingredient_excerpt": "1 oignon / 2 courgettes / 125 g de haricots coco blancs frais / 125 g de haricots coco rouges frais / 250 g de haricots verts plats frais / 3 pommes de terre / 8 petites poignées de coquillettes / 2 tomates / 3 gousses d'ail frais / 1 bouquet de basi",
       "method_excerpt": "Faire revenir l’oignon coupé fin dans de l’huile d’olive (3-4 min). / Ajouter et faire revenir (3-4 min) les haricots coco blancs, rouges, les haricots plats coupés en tranche de 1,5 cm et les courgettes coupées en 2 dans la ",
       "preliminary_basis": "ARCHIVED_SOURCE_EXCERPTS",
-      "ingredient_check": "PENDING_FULL_SINGLE_SOURCE_REVIEW",
-      "technique_check": "PENDING_FULL_SINGLE_SOURCE_REVIEW",
-      "time_check": "PENDING_FULL_SINGLE_SOURCE_REVIEW",
-      "approved": false
+      "ingredient_check": "PASS",
+      "technique_check": "PASS",
+      "time_check": "PASS",
+      "approved": true,
+      "review_note": "Marmiton soupe au pistou contains fresh beans, courgette, tomato, pasta, basil garlic olive oil. Editorial pre-cooked beans reduce simmer time; do not boil pistou after adding.",
+      "review_method": "ORIGINAL_RECIPE_PAGE_OPENED_AND_COMPARED_WITH_EDITORIAL_STEPS",
+      "review_date": "2026-11-19"
     },
     {
       "id": 26,
@@ -477,10 +492,13 @@
       "ingredient_excerpt": "10 à 12 gousse ail (frais de préférence) / 1 c à s graisse d'oie / 1 c à s farine / 1 litre eau / 1 unité oeuf / Quelques goutte vinaigre / sel / poivre / Quelques tranche pain rassis (facultatif)",
       "method_excerpt": "Eplucher les gousses d'ail. Dans une casserole, mettre à fondre à feu très doux la graisse d'oie. Ajouter les gousses d'ail et les laisser lentement blondir toujours à très doux pendant au moins 5 minutes en remuant de temps ",
       "preliminary_basis": "ARCHIVED_SOURCE_EXCERPTS",
-      "ingredient_check": "PENDING_FULL_SINGLE_SOURCE_REVIEW",
-      "technique_check": "PENDING_FULL_SINGLE_SOURCE_REVIEW",
-      "time_check": "PENDING_FULL_SINGLE_SOURCE_REVIEW",
-      "approved": false
+      "ingredient_check": "PASS",
+      "technique_check": "PASS",
+      "time_check": "CONDITIONAL_READINESS",
+      "approved": false,
+      "review_note": "Journal des Femmes tourin à l'ail garlic soup contains garlic, bread, egg and vinegar. Editorial temperatures are low to avoid curdling, but raw egg mixture with 1-2min under-boil must meet egg safety standard; add temperature/readiness condition.",
+      "review_method": "ORIGINAL_RECIPE_PAGE_OPENED_AND_COMPARED_WITH_EDITORIAL_STEPS",
+      "review_date": "2026-11-19"
     },
     {
       "id": 27,
@@ -493,10 +511,13 @@
       "ingredient_excerpt": "1 Chou-fleur moyen / 1 Blanc de poireaux / 40 g Riz rincé a l’eau froide / 50 g Beurre / 3 Cas Crème fraiche entière / 2 Jaunes d'œufs / Sel et poivre / 1.5 litre Eau ou bouillon de volaille maison / 100 g Sommités de chou-fleur pour la garniture",
       "method_excerpt": "Émincer finement le blanc de poireaux. Nettoyer le chou-fleur et le diviser en petits bouquets. / Prélevez 100 g de sommités, ce sont les extrémités de bouquets d’environ la taille d’un pois chiche, pour la garniture. / Faite",
       "preliminary_basis": "ARCHIVED_SOURCE_EXCERPTS",
-      "ingredient_check": "PENDING_FULL_SINGLE_SOURCE_REVIEW",
-      "technique_check": "PENDING_FULL_SINGLE_SOURCE_REVIEW",
-      "time_check": "PENDING_FULL_SINGLE_SOURCE_REVIEW",
-      "approved": false
+      "ingredient_check": "PASS",
+      "technique_check": "PASS",
+      "time_check": "PASS",
+      "approved": true,
+      "review_note": "Toquata creme Dubarry uses cauliflower, butter, stock/cream and smooth texture. Editorial flour and leek enriched variant is a conventional velouté; cook cauliflower through until tender before puréeing.",
+      "review_method": "ORIGINAL_RECIPE_PAGE_OPENED_AND_COMPARED_WITH_EDITORIAL_STEPS",
+      "review_date": "2026-11-19"
     },
     {
       "id": 28,
@@ -509,10 +530,13 @@
       "ingredient_excerpt": "500 g de homards (têtes, pinces, pattes, anneaux, queue) / 1 blanc de poireau / 1 oignon / 1 petite boîte de concentré de tomates / 80 g de farine / 3 gousses d'ail / 1 l de fumet de poisson / 40 cl de vin blanc sec / 10 cl de pineau des charentes / ",
       "method_excerpt": "Concassez les carcasses de homards et faites-les revenir avec de l'huile d'olive pendant 5 bonnes minutes à feu vif. Rajoutez le blanc de poireau et l'oignon émincés et faites revenir 5 bonnes minutes de plus. / Saupoudrez av",
       "preliminary_basis": "ARCHIVED_SOURCE_EXCERPTS",
-      "ingredient_check": "PENDING_FULL_SINGLE_SOURCE_REVIEW",
-      "technique_check": "PENDING_FULL_SINGLE_SOURCE_REVIEW",
-      "time_check": "PENDING_FULL_SINGLE_SOURCE_REVIEW",
-      "approved": false
+      "ingredient_check": "PASS",
+      "technique_check": "PASS",
+      "time_check": "PASS",
+      "approved": true,
+      "review_note": "Marmiton lobster bisque prepares lobster shells and vegetable aromatics, tomato and thickened stock. Editorial uses pre-cooked lobster, crushed shells extracted and completely filtered; no household-blender grinding of shells. Timings conditional.",
+      "review_method": "ORIGINAL_RECIPE_PAGE_OPENED_AND_COMPARED_WITH_EDITORIAL_STEPS",
+      "review_date": "2026-11-19"
     },
     {
       "id": 29,
@@ -525,10 +549,13 @@
       "ingredient_excerpt": "half a monkfish / a sea bass / half a whiting / a sliced onion / thyme, fennel, bay leaf / a sprig of orange peel / salt and pepper / about ten slices of bread a centimetre thick / aioli: 2 tablespoons per person / 1 egg yolk per guest",
       "method_excerpt": "Cut the fish into sections, put them into a saucepan with the onion and the aromatics, moisten a little more than to cover, season and let cook for about ten minutes. / Cut the slices of bread and arrange them in a deep dish ",
       "preliminary_basis": "ARCHIVED_SOURCE_EXCERPTS",
-      "ingredient_check": "PENDING_FULL_SINGLE_SOURCE_REVIEW",
-      "technique_check": "PENDING_FULL_SINGLE_SOURCE_REVIEW",
-      "time_check": "PENDING_FULL_SINGLE_SOURCE_REVIEW",
-      "approved": false
+      "ingredient_check": "PASS",
+      "technique_check": "PASS",
+      "time_check": "CONDITIONAL_READINESS",
+      "approved": false,
+      "review_note": "Reboul 1909 bourride fish broth with garlic aioli emulsified into sauce. Editorial tempers extra egg yolk and turns off heat, but raw egg yolk/aioli needs pasteurized egg or heat-safe process; mark food-safety revision.",
+      "review_method": "ORIGINAL_RECIPE_PAGE_OPENED_AND_COMPARED_WITH_EDITORIAL_STEPS",
+      "review_date": "2026-11-19"
     },
     {
       "id": 30,
@@ -541,10 +568,13 @@
       "ingredient_excerpt": "2 tbsp (28g) butter, unsalted2 garlic cloves, peeled and diced1 medium onion, peeled and diced1.3 lbs (600g) carrots, diced4 cups (1L) low-sodium vegetable stock1/2 cup (100g) rice¼ cup (75g) crème fraiche or heavy cream (35% m.f)1 tbsp fresh parsley",
       "method_excerpt": "Step 1 -&nbsp;In a large pot (ideally heavy bottom), melt the butter over medium heat and cook the onion and garlic for 2-3 minutes, until soft and translucent but not caramelized yet.&nbsp; / Step 2 -&nbsp;Add the carrots, s",
       "preliminary_basis": "ARCHIVED_SOURCE_EXCERPTS",
-      "ingredient_check": "PENDING_FULL_SINGLE_SOURCE_REVIEW",
-      "technique_check": "PENDING_FULL_SINGLE_SOURCE_REVIEW",
-      "time_check": "PENDING_FULL_SINGLE_SOURCE_REVIEW",
-      "approved": false
+      "ingredient_check": "PASS",
+      "technique_check": "PASS",
+      "time_check": "PASS",
+      "approved": true,
+      "review_note": "Pardon Your French Potage Crécy uses carrots, rice, stock and crème fraîche. Editorial allows rice or potato, uses cream and blends completely; exact rice doneness before blending.",
+      "review_method": "ORIGINAL_RECIPE_PAGE_OPENED_AND_COMPARED_WITH_EDITORIAL_STEPS",
+      "review_date": "2026-11-19"
     },
     {
       "id": 31,
@@ -1667,6 +1697,6 @@
       "approved": false
     }
   ],
-  "quality_approved": 16,
-  "review_in_progress": 4
+  "quality_approved": 22,
+  "review_in_progress": 8
 }
