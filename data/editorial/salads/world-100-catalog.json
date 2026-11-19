@@ -9586,11 +9586,11 @@
       "sourceReview": {
         "stage": "editorial_research",
         "sources": [
-          "https://www.foodnetwork.com/recipes/the-original-cobb-salad-recipe-2203741",
+          "https://www.thekitchn.com/cobb-salad-22903049",
           "https://www.epicurious.com/recipes/food/views/cobb-salad-11049",
           "https://www.tasteatlas.com/cobb-salad/recipe"
         ],
-        "note": "Рецепт на двоих, самостоятельный американский салат"
+        "note": "Рецепт на двоих, самостоятельный американский салат\n2026-11-19 independent review: Food Network redirects by region and cannot independently verify full content; The Kitchn direct Cobb recipe confirms chicken bacon egg avocado tomato blue cheese and composed plating."
       },
       "photo": null,
       "imagePublishingBlocked": true,
@@ -9688,10 +9688,10 @@
         "stage": "editorial_research",
         "sources": [
           "https://www.bbcgoodfood.com/recipes/waldorf-salad",
-          "https://www.foodnetwork.com/recipes/waldorf-salad-recipe-1937591",
+          "https://www.thekitchn.com/waldorf-salad-recipe-23215387",
           "https://www.epicurious.com/recipes/food/views/waldorf-salad-360790"
         ],
-        "note": "Рецепт на двоих, самостоятельный американский салат"
+        "note": "Рецепт на двоих, самостоятельный американский салат\n2026-11-19 independent review: Food Network redirects by region; The Kitchn directly confirms apples grapes celery walnuts creamy mayo lemon dressing, optional lettuce."
       },
       "photo": null,
       "imagePublishingBlocked": true,
@@ -10008,11 +10008,11 @@
       "sourceReview": {
         "stage": "editorial_research",
         "sources": [
-          "https://www.foodnetwork.com/recipes/food-network-kitchen/coleslaw-recipe-1944448",
+          "https://www.bonappetit.com/recipe/classic-coleslaw",
           "https://www.bbcgoodfood.com/recipes/classic-homemade-coleslaw",
           "https://www.seriouseats.com/creamy-cole-slaw"
         ],
-        "note": "Рецепт на двоих, самостоятельный американский салат"
+        "note": "Рецепт на двоих, самостоятельный американский салат\n2026-11-19 independent review: Food Network redirects by region; Bon Appétit direct classic coleslaw confirms shredded cabbage carrot mayonnaise apple cider vinegar sweetness, source adds optional extra ingredients."
       },
       "photo": null,
       "imagePublishingBlocked": true,
@@ -10027,7 +10027,7 @@
       "title": "Американский макаронный салат",
       "category": "salads",
       "cuisine": "США",
-      "minutes": 50,
+      "minutes": 90,
       "base": 2,
       "level": "Легко",
       "emoji": "🥗",
@@ -10100,8 +10100,8 @@
         },
         {
           "title": "Соедини",
-          "detail": "Перемешай холодные макароны с овощами и заправкой, охлади в холодильнике не менее 20 минут.",
-          "timer": 20
+          "detail": "Перемешай охлаждённые макароны с овощами и майонезно-горчичной заправкой. Накрой и выдержи в холодильнике не менее 60 минут для развития вкуса; перед подачей ещё раз перемешай.",
+          "timer": 60
         }
       ],
       "tip": "Макароны для американского салата отвари до готовности, полностью охлади и только потом смешай с майонезом.",
@@ -10115,11 +10115,11 @@
       "sourceReview": {
         "stage": "editorial_research",
         "sources": [
-          "https://www.foodnetwork.com/recipes/food-network-kitchen/american-macaroni-salad-recipe-2012642",
-          "https://www.seriouseats.com/classic-macaroni-salad-recipe",
+          "https://www.allrecipes.com/recipe/81108/classic-macaroni-salad/",
+          "https://www.thekitchn.com/macaroni-salad-recipe-23027437",
           "https://www.spendwithpennies.com/classic-macaroni-salad/"
         ],
-        "note": "Рецепт на двоих, самостоятельный американский салат"
+        "note": "Рецепт на двоих, самостоятельный американский салат\n2026-11-19 independent review: Food Network inaccessible; Allrecipes Test Kitchen confirms elbow macaroni celery onion bell pepper carrot and sweet tangy dressing. Bell pepper/carrot extra compared to our pickle version.\n2026-11-19 independent review: Original Serious Eats URL inaccessible; The Kitchn classic picnic macaroni confirms noodles mayonnaise celery red onion vinegar with vegetables; source adds bell pepper.\n2026-11-19: Spend With Pennies 1h chill, The Kitchn longer chill common; previous 20min too short to reflect standard picnic macaroni style. Set 60min explicit countdown and total90m."
       },
       "photo": null,
       "imagePublishingBlocked": true,
@@ -10227,11 +10227,11 @@
       "sourceReview": {
         "stage": "editorial_research",
         "sources": [
-          "https://www.foodnetwork.com/recipes/food-network-kitchen/classic-american-potato-salad-3721396",
+          "https://www.allrecipes.com/recipe/76992/classic-american-style-potato-salad/",
           "https://www.epicurious.com/recipes/food/views/all-american-potato-salad-14176",
-          "https://www.spendwithpennies.com/potato-salad-recipe/"
+          "https://www.spendwithpennies.com/classic-potato-salad/"
         ],
-        "note": "Рецепт на двоих, самостоятельный американский салат"
+        "note": "Рецепт на двоих, самостоятельный американский салат\n2026-11-19 independent review: Food Network inaccessible; test-kitchen classic American potato salad confirms waxy potatoes eggs celery pickles onion mayo mustard and vinegar.\n2026-11-19 independent review: Old Spend With Pennies slug unavailable; new direct tested classic potato salad confirms eggs celery pickles mayo vinegar mustard; longer chill suggested."
       },
       "photo": null,
       "imagePublishingBlocked": true,
@@ -10323,7 +10323,7 @@
           "timer": 30
         }
       ],
-      "tip": "Семь слоёв выкладывай в прозрачную чашу и не перемешивай: видимый срез здесь часть подачи.",
+      "tip": "Семь слоёв выкладывай в прозрачную чашу и не перемешивай: видимый срез здесь часть подачи. Для классического праздничного варианта источники рекомендуют готовить за 4 часа или с вечера; текущая выдержка 30 минут - быстрая домашняя версия.",
       "warn": "Аллергены в составе: молочные продукты, яйца (в обычном майонезе).",
       "equipment": "Нож, доска, миска и необходимая посуда",
       "tags": [
@@ -10336,9 +10336,9 @@
         "sources": [
           "https://www.thekitchn.com/old-school-practicality-the-se-89814",
           "https://www.cooks.com/recipe/pu66z5qg/seven-layer-salad.html",
-          "https://www.spendwithpennies.com/7-layer-salad/"
+          "https://www.spendwithpennies.com/layered-salad/"
         ],
-        "note": "Рецепт на двоих, самостоятельный американский салат"
+        "note": "Рецепт на двоих, самостоятельный американский салат\n2026-11-19 independent review: Old Spend With Pennies /7-layer-salad URL missing; /layered-salad/ is the live authoritative recipe, confirms layer structure with lettuce peas tomatoes onion eggs cheese bacon mayo; source recommends 4h chilling vs our quick 30min."
       },
       "photo": null,
       "imagePublishingBlocked": true,
@@ -10441,11 +10441,11 @@
       "sourceReview": {
         "stage": "editorial_research",
         "sources": [
-          "https://www.foodnetwork.com/recipes/trisha-yearwood/broccoli-salad-2065359",
+          "https://foodhero.org/recipes/broccoli-raisin-salad",
           "https://www.cooks.com/recipe/733vp9j3/broccoli-bacon-raisin-salad.html",
           "https://www.spendwithpennies.com/broccoli-salad/"
         ],
-        "note": "Рецепт на двоих, самостоятельный американский салат"
+        "note": "Рецепт на двоих, самостоятельный американский салат\n2026-11-19 independent review: Food Network inaccessible; Oregon State University Extension Food Hero recipe directly and precisely matches broccoli raisin red onion sunflower seeds bacon mayonnaise sugar vinegar."
       },
       "photo": null,
       "imagePublishingBlocked": true,
