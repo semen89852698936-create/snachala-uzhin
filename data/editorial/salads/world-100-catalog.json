@@ -5644,10 +5644,10 @@
         "stage": "editorial_research",
         "sources": [
           "https://www.ktb.gov.tr/EN-99000/bulgur-salad-kisir.html",
-          "https://ekitap.ktb.gov.tr/TR-79919/kisir.html",
-          "https://www.themediterraneandish.com/kisir-turkish-bulgur-salad/"
+          "https://vidarbergum.com/recipe/kisir-spicy-turkish-bulgur-wheat-salad/",
+          "https://foodish.anumuseum.org.il/en/recipe/kisir-turkish-bulgur-meze/"
         ],
-        "note": "Турецкая региональная рецептура, на двоих"
+        "note": "Турецкая региональная рецептура, на двоих\nIndependent review 2026-11-19: Original official e-kitap link yielded only site navigation, not a readable Kısır recipe; changed to detailed Kisir recipe with fine bulgur pepper paste tomato paste parsley lemon pomegranate.\nIndependent review 2026-11-19: Original MediterraneanDish URL inaccessible; replaced with Museum of Jewish People food heritage recipe of Kisir with bulgur tomato paste parsley and pomegranate."
       },
       "photo": null,
       "imagePublishingBlocked": true,
@@ -5757,10 +5757,10 @@
         "stage": "editorial_research",
         "sources": [
           "https://www.sekaigohan.com/en/recipes/middle-east/turkey/ezme",
-          "https://chopped.com/recipe/spicy-ezme-salad-acili-ezme",
-          "https://ozlemsturkishtable.com/2010/08/spicy-tomato-salad-acili-ezme/"
+          "https://tasteofturkiye.org/en/recipes/acili-ezme/",
+          "https://www.linsfood.com/turkish-acili-ezme/"
         ],
-        "note": "Турецкая региональная рецептура, на двоих"
+        "note": "Турецкая региональная рецептура, на двоих\nIndependent review 2026-11-19: Original Ozlem URL inaccessible; replaced with Lin's Food chef recipe of Acılı Ezme with tomatoes, peppers, parsley, sumac pomegranate molasses.\nIndependent review 2026-11-19: Chopped.com recipe variant contains green peppers mint etc, replaced with Turkish first-hand recipe matching our tomato pepper parsley sumac pomegranate chilli."
       },
       "photo": null,
       "imagePublishingBlocked": true,
@@ -5859,9 +5859,9 @@
         "sources": [
           "https://www.ktb.gov.tr/EN-99133/eggplant-salad.html",
           "https://www.olivetolive.com/en/news/4/yemek-tarifleri/1020/patlican-salatasi.aspx",
-          "https://www.unicornsinthekitchen.com/turkish-eggplant-salad-patlican-salatasi/"
+          "https://www.giverecipe.com/turkish-eggplant-salad-recipe/"
         ],
-        "note": "Турецкая региональная рецептура, на двоих"
+        "note": "Турецкая региональная рецептура, на двоих\nIndependent review 2026-11-19: Original Unicorns in Kitchen dead slug; Give Recipe describes roasted eggplant, tomatoes, garlic, lemon olive oil herbs."
       },
       "photo": null,
       "imagePublishingBlocked": true,
@@ -5948,9 +5948,9 @@
         "sources": [
           "https://www.ktb.gov.tr/EN-99011/purslane-salad-with-yogurt.html",
           "https://tasteofturkiye.org/en/recipes/yogurtlu-semizotu-purslane-with-garlic-yogurt/",
-          "https://ozlemsturkishtable.com/2011/06/yogurtlu-semizotu-purslane-with-garlic-yoghurt/"
+          "https://www.pisirsem.com.tr/en/recipes/yogurtlu-semizotu.html"
         ],
-        "note": "Турецкая региональная рецептура, на двоих"
+        "note": "Турецкая региональная рецептура, на двоих\nIndependent review 2026-11-19: Original Ozlem wrong slug inaccessible; Pişirsem recipe directly confirms raw purslane yogurt garlic."
       },
       "photo": null,
       "imagePublishingBlocked": true,
@@ -6054,10 +6054,10 @@
         "stage": "editorial_research",
         "sources": [
           "https://yemek.com/tarif/patates-salatasi/",
-          "https://www.unicornsinthekitchen.com/turkish-potato-salad/",
+          "https://tasteofturkiye.org/en/recipes/patates-salatasi/",
           "https://www.giverecipe.com/turkish-potato-salad/"
         ],
-        "note": "Турецкая региональная рецептура, на двоих"
+        "note": "Турецкая региональная рецептура, на двоих\nIndependent review 2026-11-19: Original Unicorns in Kitchen URL inaccessible; Taste of Türkiye verifies cooked potatoes, parsley, green onion, lemon, sumac and oil. Some carrot/lettuce are extra optional."
       },
       "photo": null,
       "imagePublishingBlocked": true,
@@ -6143,10 +6143,10 @@
         "stage": "editorial_research",
         "sources": [
           "https://www.foodandtravel.love/recipes/rotkohlsalat-krmz-lahana-salatas/",
-          "https://myturkishkitchen.blogspot.com/2009/10/mor-lahana-salatasi.html",
-          "https://jalesturkishdelights.com/mor-lahana-salatasi/"
+          "https://www.fairiescuisine.com/all-recipes/red-cabbage-salad",
+          "https://myturkishrecipes.com/turkish-red-cabbage-salad-kirmizi-lahana-salatasi"
         ],
-        "note": "Турецкая региональная рецептура, на двоих"
+        "note": "Турецкая региональная рецептура, на двоих\nIndependent review 2026-11-19: Original blogspot was blocked by anti-bot; Fairies Cuisine describes raw red cabbage massaged with salt and vinegar, dressed olive oil.\nIndependent review 2026-11-19: Jale's recipe has carrots+corn not in ours, replaced with authentic red cabbage lemon oil vinegar version."
       },
       "photo": null,
       "imagePublishingBlocked": true,
@@ -6161,7 +6161,7 @@
       "title": "Морковь с чесночным йогуртом (хавуч таратор)",
       "category": "salads",
       "cuisine": "Турция",
-      "minutes": 35,
+      "minutes": 45,
       "base": 2,
       "level": "Легко",
       "emoji": "🥗",
@@ -6224,6 +6224,11 @@
           "title": "Собери",
           "detail": "Смешай остывшую морковь с йогуртом, добавь мелко рубленые орехи, сбрызни остатком масла.",
           "timer": 0
+        },
+        {
+          "title": "Выдержи и охлади",
+          "detail": "Переложи морковь в чесночный йогурт, накрой и оставь в холодильнике на 10 минут, чтобы вкусы соединились. Подавай прохладным.",
+          "timer": 10
         }
       ],
       "tip": "Морковь для хавуч таратора сначала обжарь и полностью охлади, только потом смешивай с чесночным йогуртом.",
@@ -6241,7 +6246,7 @@
           "https://www.pisirsem.com.tr/en/recipes/havuc-tarator.html",
           "https://jamilghar.com/havuc-tarator/"
         ],
-        "note": "Турецкая региональная рецептура, на двоих"
+        "note": "Турецкая региональная рецептура, на двоих\nPişirsem has a 10-minute rest for havuç tarator, and Taste of Türkiye 30 minutes; our recipe now has explicit 10-minute resting countdown and total 45 minutes. This remains a quicker variant."
       },
       "photo": null,
       "imagePublishingBlocked": true,
