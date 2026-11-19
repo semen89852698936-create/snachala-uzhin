@@ -3,6 +3,7 @@ on:
   pull_request:
     paths:
       - 'project-operations/soups/check-source-urls.cjs'
+      - 'project-operations/soups/WORLD_100_ONE_SOURCE_REVIEW.json'
       - '.github/workflows/world-100-soup-source-audit.yml'
   workflow_dispatch:
 jobs:
@@ -14,7 +15,7 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
-      - name: Check the 300 source URLs and report confidence limitations
+      - name: Check the 100 selected source URLs and report access limitations
         run: node project-operations/soups/check-source-urls.cjs
       - name: Upload live URL report
         if: always()
