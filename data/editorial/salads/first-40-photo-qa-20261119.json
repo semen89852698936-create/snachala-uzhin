@@ -1,0 +1,445 @@
+{
+  "date": "2026-11-19",
+  "branch": "release-candidate/first-40-salads-20261119",
+  "status": "PHOTO_QA_INCOMPLETE_RELEASE_BLOCKED",
+  "scope": "40 dishes, four cuisines, exactly 40 stable IDs",
+  "counts": {
+    "approvedPhotoVisuals": 40,
+    "fullsizeOriginalCandidatesLocal": 20,
+    "lowResolutionCropsLocal": 20,
+    "newFullsizeCandidateLocallyCreated": 1,
+    "localPhotoQAFlags": 8,
+    "imagesInGitHub": 0,
+    "publishReady": 0
+  },
+  "recovery": {
+    "recipeNumber": 33,
+    "name": "Майоркский тремпо",
+    "newCandidate": "New 1536x1024 original, visually checked for tomatoes, green pepper, onion, olive oil; exists only in current ChatGPT local archive, pending publication asset transfer",
+    "oldCandidateRejected": true
+  },
+  "flaggedNumbers": [
+    7,
+    9,
+    17,
+    26,
+    29,
+    31,
+    33,
+    38
+  ],
+  "checksPerformed": [
+    "Contact sheet visual review for each of 40 local photo candidates",
+    "Original dimensions / SHA256 registry for 40 files",
+    "ZIP integrity check",
+    "One new full-size photo candidate generation for #33"
+  ],
+  "pending": [
+    "20 collage crops need standalone high-resolution replacement",
+    "Additional #7 #9 #17 #26 #29 #31 #38 ingredient-content fixes or visual confirmation",
+    "Upload and bind all 40 validated image assets to correct recipe IDs",
+    "Run live desktop/mobile UI and GitHub CI; independent culinary audits not complete"
+  ],
+  "items": [
+    {
+      "n": 1,
+      "id": "world-salad-ru-001",
+      "title": "Оливье с докторской колбасой",
+      "imageFormat": "original_candidate",
+      "contentIssue": null,
+      "ready": false,
+      "storedInGitHub": false,
+      "visualApprovedHistorically": true
+    },
+    {
+      "n": 2,
+      "id": "world-salad-ru-002",
+      "title": "Винегрет с квашеной капустой",
+      "imageFormat": "original_candidate",
+      "contentIssue": null,
+      "ready": false,
+      "storedInGitHub": false,
+      "visualApprovedHistorically": true
+    },
+    {
+      "n": 3,
+      "id": "world-salad-ru-003",
+      "title": "Сельдь под шубой",
+      "imageFormat": "original_candidate",
+      "contentIssue": null,
+      "ready": false,
+      "storedInGitHub": false,
+      "visualApprovedHistorically": true
+    },
+    {
+      "n": 4,
+      "id": "world-salad-ru-004",
+      "title": "Мимоза с консервированной рыбой",
+      "imageFormat": "original_candidate",
+      "contentIssue": null,
+      "ready": false,
+      "storedInGitHub": false,
+      "visualApprovedHistorically": true
+    },
+    {
+      "n": 5,
+      "id": "world-salad-ru-005",
+      "title": "Столичный с курицей",
+      "imageFormat": "original_candidate",
+      "contentIssue": null,
+      "ready": false,
+      "storedInGitHub": false,
+      "visualApprovedHistorically": true
+    },
+    {
+      "n": 6,
+      "id": "world-salad-ru-006",
+      "title": "Крабовый с кукурузой и огурцом",
+      "imageFormat": "original_candidate",
+      "contentIssue": null,
+      "ready": false,
+      "storedInGitHub": false,
+      "visualApprovedHistorically": true
+    },
+    {
+      "n": 7,
+      "id": "world-salad-ru-007",
+      "title": "Салат из печени трески с яйцом",
+      "imageFormat": "cropped_preview",
+      "contentIssue": "Verify cod-liver visual; photographed filling resembles flaked tuna",
+      "ready": false,
+      "storedInGitHub": false,
+      "visualApprovedHistorically": true
+    },
+    {
+      "n": 8,
+      "id": "world-salad-ru-008",
+      "title": "Редис с яйцом и сметаной",
+      "imageFormat": "cropped_preview",
+      "contentIssue": null,
+      "ready": false,
+      "storedInGitHub": false,
+      "visualApprovedHistorically": true
+    },
+    {
+      "n": 9,
+      "id": "world-salad-ru-009",
+      "title": "Свёкла с черносливом и орехами",
+      "imageFormat": "cropped_preview",
+      "contentIssue": "Large walnut halves; styling needs checking",
+      "ready": false,
+      "storedInGitHub": false,
+      "visualApprovedHistorically": true
+    },
+    {
+      "n": 10,
+      "id": "world-salad-ru-010",
+      "title": "Картофельный салат с солёными грибами",
+      "imageFormat": "cropped_preview",
+      "contentIssue": null,
+      "ready": false,
+      "storedInGitHub": false,
+      "visualApprovedHistorically": true
+    },
+    {
+      "n": 11,
+      "id": "world-salad-it-001",
+      "title": "Капрезе с моцареллой",
+      "imageFormat": "cropped_preview",
+      "contentIssue": null,
+      "ready": false,
+      "storedInGitHub": false,
+      "visualApprovedHistorically": true
+    },
+    {
+      "n": 12,
+      "id": "world-salad-it-002",
+      "title": "Панцанелла с томатами и хлебом",
+      "imageFormat": "cropped_preview",
+      "contentIssue": null,
+      "ready": false,
+      "storedInGitHub": false,
+      "visualApprovedHistorically": true
+    },
+    {
+      "n": 13,
+      "id": "world-salad-it-003",
+      "title": "Инсалата ди маре с морепродуктами",
+      "imageFormat": "cropped_preview",
+      "contentIssue": null,
+      "ready": false,
+      "storedInGitHub": false,
+      "visualApprovedHistorically": true
+    },
+    {
+      "n": 14,
+      "id": "world-salad-it-004",
+      "title": "Салат с осьминогом и картофелем",
+      "imageFormat": "cropped_preview",
+      "contentIssue": null,
+      "ready": false,
+      "storedInGitHub": false,
+      "visualApprovedHistorically": true
+    },
+    {
+      "n": 15,
+      "id": "world-salad-it-005",
+      "title": "Фенхель с апельсинами по-сицилийски",
+      "imageFormat": "cropped_preview",
+      "contentIssue": null,
+      "ready": false,
+      "storedInGitHub": false,
+      "visualApprovedHistorically": true
+    },
+    {
+      "n": 16,
+      "id": "world-salad-it-006",
+      "title": "Неаполитанский салат «Ринфорцо»",
+      "imageFormat": "cropped_preview",
+      "contentIssue": null,
+      "ready": false,
+      "storedInGitHub": false,
+      "visualApprovedHistorically": true
+    },
+    {
+      "n": 17,
+      "id": "world-salad-it-007",
+      "title": "Римские пунтарелле с анчоусами",
+      "imageFormat": "cropped_preview",
+      "contentIssue": "Verify that greens are puntarelle and not another vegetable",
+      "ready": false,
+      "storedInGitHub": false,
+      "visualApprovedHistorically": true
+    },
+    {
+      "n": 18,
+      "id": "world-salad-it-008",
+      "title": "Итальянский рисовый салат",
+      "imageFormat": "cropped_preview",
+      "contentIssue": null,
+      "ready": false,
+      "storedInGitHub": false,
+      "visualApprovedHistorically": true
+    },
+    {
+      "n": 19,
+      "id": "world-salad-it-009",
+      "title": "Салат из полбы с овощами",
+      "imageFormat": "cropped_preview",
+      "contentIssue": null,
+      "ready": false,
+      "storedInGitHub": false,
+      "visualApprovedHistorically": true
+    },
+    {
+      "n": 20,
+      "id": "world-salad-it-010",
+      "title": "Белая фасоль с тунцом и луком",
+      "imageFormat": "cropped_preview",
+      "contentIssue": null,
+      "ready": false,
+      "storedInGitHub": false,
+      "visualApprovedHistorically": true
+    },
+    {
+      "n": 21,
+      "id": "world-salad-fr-001",
+      "title": "Нисуаз, традиционный салат Ниццы",
+      "imageFormat": "original_candidate",
+      "contentIssue": null,
+      "ready": false,
+      "storedInGitHub": false,
+      "visualApprovedHistorically": true
+    },
+    {
+      "n": 22,
+      "id": "world-salad-fr-002",
+      "title": "Лионский салат с яйцом пашот",
+      "imageFormat": "original_candidate",
+      "contentIssue": null,
+      "ready": false,
+      "storedInGitHub": false,
+      "visualApprovedHistorically": true
+    },
+    {
+      "n": 23,
+      "id": "world-salad-fr-003",
+      "title": "Перигорский салат с уткой и куриной печенью",
+      "imageFormat": "original_candidate",
+      "contentIssue": null,
+      "ready": false,
+      "storedInGitHub": false,
+      "visualApprovedHistorically": true
+    },
+    {
+      "n": 24,
+      "id": "world-salad-fr-004",
+      "title": "Салат с тёплым козьим сыром",
+      "imageFormat": "cropped_preview",
+      "contentIssue": null,
+      "ready": false,
+      "storedInGitHub": false,
+      "visualApprovedHistorically": true
+    },
+    {
+      "n": 25,
+      "id": "world-salad-fr-005",
+      "title": "Сельдерей ремулад",
+      "imageFormat": "original_candidate",
+      "contentIssue": null,
+      "ready": false,
+      "storedInGitHub": false,
+      "visualApprovedHistorically": true
+    },
+    {
+      "n": 26,
+      "id": "world-salad-fr-006",
+      "title": "Морковь с французской винегретной заправкой",
+      "imageFormat": "cropped_preview",
+      "contentIssue": "Visible walnuts not present in grated-carrot ingredients",
+      "ready": false,
+      "storedInGitHub": false,
+      "visualApprovedHistorically": true
+    },
+    {
+      "n": 27,
+      "id": "world-salad-fr-007",
+      "title": "Салат из зелёной чечевицы Ле-Пюи",
+      "imageFormat": "cropped_preview",
+      "contentIssue": null,
+      "ready": false,
+      "storedInGitHub": false,
+      "visualApprovedHistorically": true
+    },
+    {
+      "n": 28,
+      "id": "world-salad-fr-008",
+      "title": "Французский картофельный салат",
+      "imageFormat": "cropped_preview",
+      "contentIssue": null,
+      "ready": false,
+      "storedInGitHub": false,
+      "visualApprovedHistorically": true
+    },
+    {
+      "n": 29,
+      "id": "world-salad-fr-009",
+      "title": "Нормандский салат «Кошуаз»",
+      "imageFormat": "cropped_preview",
+      "contentIssue": "Possible capers/pickles not present in Cauchoise ingredients",
+      "ready": false,
+      "storedInGitHub": false,
+      "visualApprovedHistorically": true
+    },
+    {
+      "n": 30,
+      "id": "world-salad-fr-010",
+      "title": "Цикорий с рокфором и грецкими орехами",
+      "imageFormat": "cropped_preview",
+      "contentIssue": null,
+      "ready": false,
+      "storedInGitHub": false,
+      "visualApprovedHistorically": true
+    },
+    {
+      "n": 31,
+      "id": "world-salad-es-001",
+      "title": "Пипиррана из Хаэна",
+      "imageFormat": "original_candidate",
+      "contentIssue": "Wrong: egg and tuna not visible on photographed pipirrana",
+      "ready": false,
+      "storedInGitHub": false,
+      "visualApprovedHistorically": true
+    },
+    {
+      "n": 32,
+      "id": "world-salad-es-002",
+      "title": "Эсгарраэт с печёным перцем и треской",
+      "imageFormat": "original_candidate",
+      "contentIssue": null,
+      "ready": false,
+      "storedInGitHub": false,
+      "visualApprovedHistorically": true
+    },
+    {
+      "n": 33,
+      "id": "world-salad-es-003",
+      "title": "Майоркский тремпо",
+      "imageFormat": "original_candidate",
+      "contentIssue": "Wrong original: photo has potato, egg and tuna; new matching full-size candidate generated LOCALLY 2026-11-19 but not transferred to GitHub",
+      "ready": false,
+      "storedInGitHub": false,
+      "visualApprovedHistorically": true
+    },
+    {
+      "n": 34,
+      "id": "world-salad-es-004",
+      "title": "Ремохон с апельсином и треской",
+      "imageFormat": "original_candidate",
+      "contentIssue": null,
+      "ready": false,
+      "storedInGitHub": false,
+      "visualApprovedHistorically": true
+    },
+    {
+      "n": 35,
+      "id": "world-salad-es-005",
+      "title": "Эмпедрат с фасолью",
+      "imageFormat": "original_candidate",
+      "contentIssue": null,
+      "ready": false,
+      "storedInGitHub": false,
+      "visualApprovedHistorically": true
+    },
+    {
+      "n": 36,
+      "id": "world-salad-es-006",
+      "title": "Каталонский шатó с ореховым соусом",
+      "imageFormat": "original_candidate",
+      "contentIssue": null,
+      "ready": false,
+      "storedInGitHub": false,
+      "visualApprovedHistorically": true
+    },
+    {
+      "n": 37,
+      "id": "world-salad-es-007",
+      "title": "Эскейшада из солёной трески",
+      "imageFormat": "original_candidate",
+      "contentIssue": null,
+      "ready": false,
+      "storedInGitHub": false,
+      "visualApprovedHistorically": true
+    },
+    {
+      "n": 38,
+      "id": "world-salad-es-008",
+      "title": "Испанский деревенский картофельный салат",
+      "imageFormat": "original_candidate",
+      "contentIssue": "Wrong/unclear: required potato and egg not discernible",
+      "ready": false,
+      "storedInGitHub": false,
+      "visualApprovedHistorically": true
+    },
+    {
+      "n": 39,
+      "id": "world-salad-es-009",
+      "title": "Мурсийский салат из томатов",
+      "imageFormat": "original_candidate",
+      "contentIssue": null,
+      "ready": false,
+      "storedInGitHub": false,
+      "visualApprovedHistorically": true
+    },
+    {
+      "n": 40,
+      "id": "world-salad-es-010",
+      "title": "Мадридский салат Сан-Исидро",
+      "imageFormat": "original_candidate",
+      "contentIssue": null,
+      "ready": false,
+      "storedInGitHub": false,
+      "visualApprovedHistorically": true
+    }
+  ]
+}
