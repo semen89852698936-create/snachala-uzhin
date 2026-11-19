@@ -5,7 +5,7 @@ const fs=require('node:fs'),path=require('node:path');
 const base=__dirname;
 const recipes=JSON.parse(fs.readFileSync(path.join(base,'WORLD_100_RECIPES.json'),'utf8')).recipes;
 const timer=JSON.parse(fs.readFileSync(path.join(base,'WORLD_100_STEP_TIMER_PHASES.json'),'utf8'));
-const expr=/(\\d+(?:[.,]\\d+)?)(?:\\s*[–-]\\s*(\\d+(?:[.,]\\d+)?))?\\s*(секунд(?:ы|у)?|минут(?:ы|у)?|мин\\.?|час(?:а|ов)?)/gi;
+const expr=/(\d+(?:[.,]\d+)?)(?:\s*[–-]\s*(\d+(?:[.,]\d+)?))?\s*(секунд(?:ы|у)?|минут(?:ы|у)?|мин\.?|час(?:а|ов)?)/gi;
 const seconds=(x,unit)=>Math.round(Number(x.replace(',','.'))*(unit.startsWith('час')?3600:unit.startsWith('сек')?1:60));
 const errors=[];let phases=0,steps=0;
 if(recipes.length!==100||timer.recipes.length!==100)errors.push('100 recipes required');
@@ -24,5 +24,5 @@ for(const [i,r] of recipes.entries()){
  }
 }
 if(steps!==504||phases!==296||timer.stats.phases!==296)errors.push('Expected 504 steps and 296 phases');
-if(errors.length){console.error(errors.join('\\n'));process.exit(1)}
+if(errors.length){console.error(errors.join('\n'));process.exit(1)}
 console.log('PASS: 100 recipes, 504 steps, 296 approved manual countdown reminders, zero automatic starts/transitions. A timer is not proof of food safety.');
