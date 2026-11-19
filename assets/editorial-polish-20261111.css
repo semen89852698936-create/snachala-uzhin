@@ -1741,3 +1741,21 @@ body.du-evening-mode #eveningContinuation > .du-story-dinner .du-story-dinner-ph
 body.du-evening-mode #music .du-music-heading .du-section-heading > p {
   font-size: 27px !important;
 }
+
+/* SALADS_ONLY_RECIPE_PHOTO_BANDS_20261119
+ * Owner-approved editorial refinement: replace green framing bands around
+ * LARGE recipe photos of the world-salads category only.
+ * Preserve the complete photo: never change object-fit, crop, dimensions,
+ * image pixels, adjacent recipe steps, buttons, text or other categories.
+ * Soft paper padding masks inherited green letterboxing; narrow wine rules
+ * echo the magazine design instead of introducing a new color.
+ */
+#recipeDetail .recipe-intro-photo:has(> img.food-photo[src*="world-salads/"]),
+#recipeDetail .recipe-intro-photo[style*="world-salads/"] {
+  background: #f5eee6 !important;
+  border-top: 2px solid #713449 !important;
+  border-bottom: 2px solid #713449 !important;
+  border-left: 0 !important;
+  border-right: 0 !important;
+  box-shadow: none !important;
+}
