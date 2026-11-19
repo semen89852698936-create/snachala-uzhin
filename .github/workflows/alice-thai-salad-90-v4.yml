@@ -1,0 +1,54 @@
+name: Alice AI ART 3.0 - Thai salad 90, fourth unpublished photo v4
+on:
+  push:
+    branches:
+      - photo-production/alice-thai-salad-90-20261119
+    paths:
+      - scripts/alice-thai-salad-90-v4.py
+      - .github/workflows/alice-thai-salad-90-v4.yml
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: alice-thai-salad-90-v4-one-shot
+  cancel-in-progress: false
+jobs:
+  photo-90:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: photo-production/alice-thai-salad-90-20261119
+          persist-credentials: true
+          fetch-depth: 0
+      - uses: actions/checkout@v4
+        with:
+          repository: semen89852698936-create/snachala-uzhin
+          ref: photo-production/yandex-ai-art-1001
+          path: _photo_source
+          sparse-checkout: |
+            photo-pipeline
+          sparse-checkout-cone-mode: false
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: python -m pip install 'Pillow>=10,<13'
+      - name: Validate exact Thai salad #90 prompt without paid request
+        run: python scripts/alice-thai-salad-90-v4.py
+      - name: Generate exactly one unpublished candidate through Alice AI ART 3.0
+        env:
+          YANDEX_API_KEY: ${{ secrets.YANDEX_API_KEY }}
+          YANDEX_FOLDER_ID: ${{ secrets.YANDEX_FOLDER_ID || 'b1g00u8p0k5nl98v8nre' }}
+          PHOTO_COST_APPROVED: 'true'
+        run: python scripts/alice-thai-salad-90-v4.py --execute
+      - name: Attach already generated candidate for visual review
+        uses: actions/upload-artifact@v4
+        with:
+          name: thai-salad-90-alice-candidate-v4
+          path: |
+            photo-library/salads/thai-90-20261119/*v4.webp
+            photo-library/salads/thai-90-20261119/*v4.json
+          if-no-files-found: error
+          retention-days: 30
