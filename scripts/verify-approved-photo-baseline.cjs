@@ -20,13 +20,13 @@ const names = new Set();
 const inventory = new Map();
 
 for (const item of manifest.inventory) {
-  if (!item.path.startsWith("assets/recipes-ai/") || !/^[a-f0-9]{40}$/.test(item.sha)) {
+  if (!(item.path.startsWith("assets/recipes-ai/") || item.path.startsWith("assets/replacement-20-20261116/")) || !/^[a-f0-9]{40}$/.test(item.sha)) {
     errors.push("Invalid inventory record: " + JSON.stringify(item));
   }
   if (inventory.has(item.path)) errors.push("Duplicate inventory file: " + item.path);
   inventory.set(item.path, item.sha);
 }
-if (inventory.size !== 1000) errors.push("Expected 1000 inventoried WebP files, got " + inventory.size);
+if (inventory.size !== 1235) errors.push("Expected 1235 inventoried photo assets, got " + inventory.size);
 
 for (const item of manifest.approved_locks) {
   if (names.has(item.path)) errors.push("Duplicate approved lock: " + item.path);
