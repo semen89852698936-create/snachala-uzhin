@@ -27,7 +27,7 @@ for(const [i,r] of recipes.entries()){
    if(t.steps[j].step_text!==s)errors.push('#'+r.id+' step '+(j+1)+' timer drift');
    for(const phase of t.steps[j].phases){
      phases++;
-     if(phase.timer_approved!==false||phase.can_auto_start!==false)errors.push('#'+r.id+' timer approved without editorial signoff');
+     if(phase.timer_approved!==true||phase.approval_scope!=='MANUAL_COUNTDOWN_REMINDER_ONLY'||phase.can_auto_start!==false||phase.can_auto_advance!==false)errors.push('#'+r.id+' invalid manually approved timer');
      if(phase.min_seconds<=0||phase.max_seconds<phase.min_seconds)errors.push('#'+r.id+' invalid timer range');
    }
  }
@@ -35,4 +35,4 @@ for(const [i,r] of recipes.entries()){
 }
 if(steps!==504||phases!==timer.stats.phases)errors.push('Unexpected totals '+[sources,steps,phases].join('/'));
 if(errors.length){console.error(errors.join('\n'));process.exit(1)}
-console.log('PASS: 100 selected single-source records, 504 synchronized cooking steps, '+phases+' unapproved timer proposals. Source full-text certification is a separate outstanding step.');
+console.log('PASS: 100 selected single-source records, 504 synchronized cooking steps, '+phases+' approved manual timer reminders. Source full-text certification is a separate outstanding step.');
