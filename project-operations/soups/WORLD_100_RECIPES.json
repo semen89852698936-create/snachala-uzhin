@@ -45,14 +45,14 @@
         "соль, чёрный перец",
         "сметана 40 г и укроп для подачи."
       ],
-      "recipe_source_audit_status": "THREE_SOURCE_COMPARISON_DOCUMENTED",
+      "recipe_source_audit_status": "TWO_FULL_SOURCES_THIRD_INDEX_ONLY",
       "visual_audit_status": "PENDING",
       "photo_status": "PENDING_USER_APPROVAL",
       "source_content_evidence": {
         "date": "2026-11-19",
-        "method": "Compared three separately accessible recipe publications and key recipe methods and ingredient lists; quantities editorially adapted to two",
+        "method": "Directly read ingredient lists and cooking methods on Gastronom and Food.ru; EdimDoma direct access returned HTTP 403, so only indexed search excerpts were available. Quantities editorially adapted for two.",
         "ingredients_comparison": "Говядина, свёкла, капуста, картофель, лук, морковь и томатная паста есть в трёх русских рецептах. Редакционные 350 г мяса на кости, 160 г свёклы и 1,3 л воды рассчитаны на двоих.",
-        "technique_and_timer_comparison": "Говяжий бульон варится до мягкости мяса; свёкла готовится с томатом и кислотой отдельно, вводится после капусты и картофеля. Рецептуры источников расходятся в длительности бульона (от 40 до 90+ минут) и овощной пассеровки; в карточке 80–100 минут и физическая готовность.",
+        "technique_and_timer_comparison": "Gastronom simmers beef brisket 1.5 h, uses lard and separate beet frying with vinegar and sugar. Food.ru simmers smaller beef portion approximately 35–40 min until ready, with vinegar and beet/tomato sauté. Editorial recipe uses 80–100 min until beef is tender, vegetable oil instead of lard, and 5 ml lemon juice as an editorial acid substitution; lemon is NOT specified by Food.ru. Two distinct timed cooking phases in step 3 and step 4 must be started independently. EdimDoma full method not verified due HTTP 403.",
         "sources": [
           {
             "url": "https://www.gastronom.ru/recipe/26598/klassicheskij-borsch-s-govjadinoj",
@@ -60,14 +60,14 @@
           },
           {
             "url": "https://food.ru/recipes/188835-vkusnyi-borshch-s-goviadinoi",
-            "difference": "Food.ru готовит 35–40 минут для меньшего куска, лимонный сок вместо уксуса допустим"
+            "difference": "Food.ru uses 5 ml of 9% table vinegar (NOT lemon juice), 200 g beef and 1.4 l water; cooks broth approximately 35–40 minutes until beef is ready, with total time shown as 1 h 50 min."
           },
           {
             "url": "https://www.edimdoma.ru/retsepty/155389-borsch-klassicheskiy-s-govyadinoy",
-            "difference": "Мясо на кости, предварительная свекольная обжарка, 1–1,5 часа бульона"
+            "difference": "EdimDoma indexed text shows beef on bone, vegetables, vinegar and sugar; site returned HTTP 403 for direct reading, so detailed technique and timings remain unverified."
           }
         ],
-        "verification_scope": "Comparison of available recipe texts, accessible pages and extracted source evidence; full independent human reading of every one of 300 URLs not certified where source blocked or unavailable. Not a recipe made in a kitchen."
+        "verification_scope": "Two full source pages independently read on 2026-11-19. Third (EdimDoma) only search-index excerpts because direct page HTTP 403. Three-source FULL verification still pending; not physically kitchen-tested."
       },
       "editorial_publication_gate": "HOLD_FOR_FINAL_SOURCE_AND_TIMER_APPROVAL"
     },
