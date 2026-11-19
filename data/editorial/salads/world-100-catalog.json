@@ -1149,11 +1149,11 @@
       "title": "Панцанелла с томатами и хлебом",
       "category": "salads",
       "cuisine": "Италия",
-      "minutes": 30,
+      "minutes": 100,
       "base": 2,
       "level": "Легко",
       "emoji": "🥗",
-      "description": "Вчерашний хлеб впитывает сок спелых помидоров. Из простых продуктов получается настоящий тосканский летний салат.",
+      "description": "Тосканский летний салат, где вчерашний хлеб должен пропитаться соком спелых помидоров. Ему нужно время на размягчение и настаивание, зато вкус становится цельным.",
       "ingredients": [
         {
           "name": "Чёрствый тосканский пшеничный хлеб",
@@ -1207,8 +1207,8 @@
       "steps": [
         {
           "title": "Размочи хлеб",
-          "detail": "Куски вчерашнего хлеба быстро сбрызни водой и дай размякнуть около 5 минут: они не должны превратиться в кашу.",
-          "timer": 5
+          "detail": "Черствый тосканский хлеб разломай на крупные куски, замочи в холодной воде на 15–20 минут, пока корочка не станет податливой. Затем аккуратно отожми в чистом полотенце: хлеб должен оставаться влажным, но не водянистым.",
+          "timer": 20
         },
         {
           "title": "Нарежь",
@@ -1221,9 +1221,9 @@
           "timer": 0
         },
         {
-          "title": "Дай настояться",
-          "detail": "Оставь при прохладной комнатной температуре на 10 минут, затем подай: хлеб впитает томатный сок.",
-          "timer": 10
+          "title": "Дай настояться в холодильнике",
+          "detail": "Накрой миску и оставь панцанеллу на 60 минут в холодильнике, затем осторожно перемешай перед подачей. Так хлеб впитает томатный сок и заправку.",
+          "timer": 60
         }
       ],
       "tip": "Хлеб именно размоченный черствый, не обжаренные крутоны.",
@@ -1241,7 +1241,7 @@
           "https://www.cucchiaio.it/ricetta/panzanella/",
           "https://blog.giallozafferano.it/pierobenigni/panzanella-toscana/"
         ],
-        "note": "Ингредиенты и техника сверены с региональной рецептурой; количества пересчитаны для двоих.\nFormer La Cucina Italiana contorni/panzanella returned error. New La Cucina Italiana classical Panzanella page opened and lists bread, tomato, cucumber, basil, onion, vinegar. Its longer soak (~40–45 min) differs from our quick 5-minute soak: recipe remains shorter author interpretation and requires explicit label."
+        "note": "Ингредиенты и техника сверены с региональной рецептурой; количества пересчитаны для двоих.\nFormer La Cucina Italiana contorni/panzanella returned error. New La Cucina Italiana classical Panzanella page opened and lists bread, tomato, cucumber, basil, onion, vinegar. Its longer soak (~40–45 min) differs from our quick 5-minute soak: recipe remains shorter author interpretation and requires explicit label.\nThree-source crosscheck 2026-11-19: Cucchiaio specifies 20–30min bread soak and a longer 2h rest; Piero Benigni requires at least 1h refrigerated rest; La Cucina Italiana emphasizes correct bread soaking. Prior 5+10 minute quick version was inconsistent with these traditional methods. Corrected to 20min soak + 60min chilled rest; 100min total."
       },
       "photo": null,
       "imagePublishingBlocked": true,
