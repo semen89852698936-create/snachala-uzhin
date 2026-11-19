@@ -1,0 +1,765 @@
+{
+  "project": "НАШ ВЕЧЕР",
+  "country": "Япония",
+  "collection": "100 завтраков мира",
+  "recipe_count": 10,
+  "is_published": false,
+  "verification_level": "complete editorial drafts; further culinary QA pending",
+  "recipes": [
+    {
+      "id": "breakfast-jp-51",
+      "collection_number": 51,
+      "country": "Япония",
+      "country_code": "JP",
+      "title": "Японский завтрак с жареным лососем",
+      "original_name": "Shake no shioyaki teishoku",
+      "servings": 2,
+      "total_min": 40,
+      "ingredients": [
+        {
+          "name": "Филе лосося без костей",
+          "amount": 260,
+          "unit": "г"
+        },
+        {
+          "name": "Рис японский сухой",
+          "amount": 140,
+          "unit": "г"
+        },
+        {
+          "name": "Вода для риса",
+          "amount": 170,
+          "unit": "мл"
+        },
+        {
+          "name": "Соль для рыбы",
+          "amount": 3,
+          "unit": "г"
+        },
+        {
+          "name": "Соевый соус",
+          "amount": 12,
+          "unit": "мл"
+        },
+        {
+          "name": "Огурец для подачи",
+          "amount": 120,
+          "unit": "г"
+        },
+        {
+          "name": "Рисовый уксус",
+          "amount": 10,
+          "unit": "мл"
+        },
+        {
+          "name": "Сахар",
+          "amount": 4,
+          "unit": "г"
+        }
+      ],
+      "steps": [
+        {
+          "text": "Промой рис 4–5 раз, залей 170 мл воды, оставь на 15 минут.",
+          "timer_sec": 900
+        },
+        {
+          "text": "Накрой крышкой, доведи до кипения и вари на минимальном огне 12 минут, затем дай постоять закрытым 10 минут.",
+          "timer_sec": 1320
+        },
+        {
+          "text": "Посоли рыбу с обеих сторон, оставь на 10 минут, затем обсуши. Нарежь огурец тонко и смешай с уксусом и сахаром.",
+          "timer_sec": 600
+        },
+        {
+          "text": "Обжарь лосося на гриле или сковороде по 4–5 минут с каждой стороны в зависимости от толщины до полной готовности и внутренней температуры около 63 °C.",
+          "timer_sec": 600
+        },
+        {
+          "text": "Подай каждому рис, кусок рыбы и огурец; соевый соус предложи отдельно.",
+          "timer_sec": 0
+        }
+      ],
+      "notes": "Это компактный вариант японского утреннего набора; суп мисо можно подать отдельно, но в ингредиенты не включён.",
+      "source_verification": {
+        "status": "tradition_source_checked_recipe_specific_validation_pending",
+        "country_reference_url": "https://www.justonecookbook.com/traditional-japanese-breakfast-at-home/"
+      },
+      "editorial_status": "complete_draft_pending_culinary_verification",
+      "photo_status": "deferred_by_user",
+      "publication_status": "unpublished"
+    },
+    {
+      "id": "breakfast-jp-52",
+      "collection_number": 52,
+      "country": "Япония",
+      "country_code": "JP",
+      "title": "Тамагояки - рулет из омлета",
+      "original_name": "Tamagoyaki",
+      "servings": 2,
+      "total_min": 20,
+      "ingredients": [
+        {
+          "name": "Яйца",
+          "amount": 4,
+          "unit": "шт."
+        },
+        {
+          "name": "Бульон даси",
+          "amount": 45,
+          "unit": "мл"
+        },
+        {
+          "name": "Сахар",
+          "amount": 12,
+          "unit": "г"
+        },
+        {
+          "name": "Соевый соус",
+          "amount": 10,
+          "unit": "мл"
+        },
+        {
+          "name": "Растительное масло",
+          "amount": 12,
+          "unit": "мл"
+        },
+        {
+          "name": "Соль",
+          "amount": 1,
+          "unit": "г"
+        }
+      ],
+      "steps": [
+        {
+          "text": "Взбей яйца с даси, сахаром, соевым соусом и солью без сильного вспенивания, процеди.",
+          "timer_sec": 0
+        },
+        {
+          "text": "Нагрей прямоугольную или маленькую антипригарную сковороду на умеренном огне, смажь тонким слоем масла.",
+          "timer_sec": 0
+        },
+        {
+          "text": "Влей тонкий слой яичной смеси, когда он почти схватится, сверни от дальнего края к себе.",
+          "timer_sec": 90
+        },
+        {
+          "text": "Подвинь рулет к краю, вновь смажь сковороду и налей следующий слой, приподнимая рулет. Повтори 4–5 раз.",
+          "timer_sec": 360
+        },
+        {
+          "text": "Слегка придай рулету форму лопаткой, готовь до полного схватывания яиц, нарежь на 6–8 кусочков.",
+          "timer_sec": 120
+        }
+      ],
+      "notes": "Не готовить одним толстым омлетом, характерное послойное сворачивание обязательно.",
+      "source_verification": {
+        "status": "tradition_source_checked_recipe_specific_validation_pending",
+        "country_reference_url": "https://www.justonecookbook.com/traditional-japanese-breakfast-at-home/"
+      },
+      "editorial_status": "complete_draft_pending_culinary_verification",
+      "photo_status": "deferred_by_user",
+      "publication_status": "unpublished"
+    },
+    {
+      "id": "breakfast-jp-53",
+      "collection_number": 53,
+      "country": "Япония",
+      "country_code": "JP",
+      "title": "Онигири с начинкой",
+      "original_name": "Onigiri",
+      "servings": 2,
+      "total_min": 50,
+      "ingredients": [
+        {
+          "name": "Рис японский круглозёрный сухой",
+          "amount": 180,
+          "unit": "г"
+        },
+        {
+          "name": "Вода",
+          "amount": 225,
+          "unit": "мл"
+        },
+        {
+          "name": "Консервированный тунец в собственном соку",
+          "amount": 100,
+          "unit": "г"
+        },
+        {
+          "name": "Японский майонез",
+          "amount": 28,
+          "unit": "г"
+        },
+        {
+          "name": "Нори листы",
+          "amount": 2,
+          "unit": "шт."
+        },
+        {
+          "name": "Соль",
+          "amount": 3,
+          "unit": "г"
+        }
+      ],
+      "steps": [
+        {
+          "text": "Промой рис до почти прозрачной воды. Замочи в 225 мл воды на 15 минут.",
+          "timer_sec": 900
+        },
+        {
+          "text": "Вари под крышкой 12 минут после закипания и оставь под крышкой ещё 10 минут.",
+          "timer_sec": 1320
+        },
+        {
+          "text": "Слей сок из тунца, смешай рыбу с майонезом. Разрежь нори на 4 полоски.",
+          "timer_sec": 0
+        },
+        {
+          "text": "Смочи руки водой с солью. Раздели тёплый рис на 4 части, в центр каждой положи начинку и аккуратно сожми в плотный треугольник.",
+          "timer_sec": 0
+        },
+        {
+          "text": "Оберни полоской нори непосредственно перед подачей, чтобы водоросли оставались хрустящими.",
+          "timer_sec": 0
+        }
+      ],
+      "notes": "Рис только японский клейкий короткозёрный; при комнатной температуре готовый рис долго не хранить.",
+      "source_verification": {
+        "status": "tradition_source_checked_recipe_specific_validation_pending",
+        "country_reference_url": "https://www.justonecookbook.com/traditional-japanese-breakfast-at-home/"
+      },
+      "editorial_status": "complete_draft_pending_culinary_verification",
+      "photo_status": "deferred_by_user",
+      "publication_status": "unpublished"
+    },
+    {
+      "id": "breakfast-jp-54",
+      "collection_number": 54,
+      "country": "Япония",
+      "country_code": "JP",
+      "title": "Окаю - рисовая каша",
+      "original_name": "Okayu",
+      "servings": 2,
+      "total_min": 55,
+      "ingredients": [
+        {
+          "name": "Рис японский сухой",
+          "amount": 100,
+          "unit": "г"
+        },
+        {
+          "name": "Вода",
+          "amount": 700,
+          "unit": "мл"
+        },
+        {
+          "name": "Соль",
+          "amount": 3,
+          "unit": "г"
+        },
+        {
+          "name": "Зелёный лук",
+          "amount": 12,
+          "unit": "г"
+        },
+        {
+          "name": "Маринованная слива умэбоси",
+          "amount": 2,
+          "unit": "шт."
+        }
+      ],
+      "steps": [
+        {
+          "text": "Промой рис до чистой воды, переложи в кастрюлю с толстым дном и залей 700 мл воды.",
+          "timer_sec": 0
+        },
+        {
+          "text": "Доведи до кипения, затем убавь огонь до минимального, оставь крышку слегка приоткрытой.",
+          "timer_sec": 0
+        },
+        {
+          "text": "Вари 30–40 минут почти без помешивания, до очень мягких рисовых зёрен и густого отвара.",
+          "timer_sec": 2400
+        },
+        {
+          "text": "Добавь соль, оставь на 5 минут под крышкой.",
+          "timer_sec": 300
+        },
+        {
+          "text": "Разложи в две миски и подай с мелко нарезанным зелёным луком и по одной умэбоси.",
+          "timer_sec": 0
+        }
+      ],
+      "notes": "Японская окаю более жидкая, чем обычная каша из сухого риса.",
+      "source_verification": {
+        "status": "tradition_source_checked_recipe_specific_validation_pending",
+        "country_reference_url": "https://www.justonecookbook.com/traditional-japanese-breakfast-at-home/"
+      },
+      "editorial_status": "complete_draft_pending_culinary_verification",
+      "photo_status": "deferred_by_user",
+      "publication_status": "unpublished"
+    },
+    {
+      "id": "breakfast-jp-55",
+      "collection_number": 55,
+      "country": "Япония",
+      "country_code": "JP",
+      "title": "Отядзукэ - рис с чаем и приправами",
+      "original_name": "Ochazuke",
+      "servings": 2,
+      "total_min": 20,
+      "ingredients": [
+        {
+          "name": "Рис японский готовый",
+          "amount": 300,
+          "unit": "г"
+        },
+        {
+          "name": "Зелёный чай сэнтя",
+          "amount": 400,
+          "unit": "мл"
+        },
+        {
+          "name": "Готовый запечённый лосось",
+          "amount": 100,
+          "unit": "г"
+        },
+        {
+          "name": "Нори",
+          "amount": 1,
+          "unit": "лист"
+        },
+        {
+          "name": "Кунжут",
+          "amount": 12,
+          "unit": "г"
+        },
+        {
+          "name": "Зелёный лук",
+          "amount": 15,
+          "unit": "г"
+        },
+        {
+          "name": "Соевый соус",
+          "amount": 10,
+          "unit": "мл"
+        }
+      ],
+      "steps": [
+        {
+          "text": "Свари чай сэнтя крепостью по инструкции упаковки; не кипяти листья в кастрюле, иначе напиток станет горьким.",
+          "timer_sec": 180
+        },
+        {
+          "text": "Если рис холодный, тщательно разогрей его до горячего состояния, затем разложи по двум мискам.",
+          "timer_sec": 180
+        },
+        {
+          "text": "Разбери полностью приготовленного лосося на небольшие хлопья и положи поверх риса.",
+          "timer_sec": 0
+        },
+        {
+          "text": "Добавь тонко нарезанный нори, кунжут и зелёный лук, влей немного соевого соуса.",
+          "timer_sec": 0
+        },
+        {
+          "text": "Непосредственно перед подачей залей горячим чаем и ешь сразу.",
+          "timer_sec": 0
+        }
+      ],
+      "notes": "Традиционный быстрый способ использует уже приготовленный рис и рыбу; их приготовление не включено в заявленные 20 минут.",
+      "source_verification": {
+        "status": "tradition_source_checked_recipe_specific_validation_pending",
+        "country_reference_url": "https://www.justonecookbook.com/traditional-japanese-breakfast-at-home/"
+      },
+      "editorial_status": "complete_draft_pending_culinary_verification",
+      "photo_status": "deferred_by_user",
+      "publication_status": "unpublished"
+    },
+    {
+      "id": "breakfast-jp-56",
+      "collection_number": 56,
+      "country": "Япония",
+      "country_code": "JP",
+      "title": "Рис с натто",
+      "original_name": "Natto gohan",
+      "servings": 2,
+      "total_min": 25,
+      "ingredients": [
+        {
+          "name": "Рис японский сухой",
+          "amount": 150,
+          "unit": "г"
+        },
+        {
+          "name": "Вода",
+          "amount": 190,
+          "unit": "мл"
+        },
+        {
+          "name": "Натто готовый",
+          "amount": 100,
+          "unit": "г"
+        },
+        {
+          "name": "Соевый соус",
+          "amount": 12,
+          "unit": "мл"
+        },
+        {
+          "name": "Горчица караси",
+          "amount": 6,
+          "unit": "г"
+        },
+        {
+          "name": "Зелёный лук",
+          "amount": 15,
+          "unit": "г"
+        },
+        {
+          "name": "Нори",
+          "amount": 1,
+          "unit": "лист"
+        }
+      ],
+      "steps": [
+        {
+          "text": "Промой рис, замочи на 10 минут в 190 мл воды.",
+          "timer_sec": 600
+        },
+        {
+          "text": "Вари рис под крышкой 12 минут после закипания, затем дай настояться 10 минут.",
+          "timer_sec": 1320
+        },
+        {
+          "text": "Смешай натто с соевым соусом и караси, активно размешивай палочками 30–60 секунд до тягучих нитей.",
+          "timer_sec": 60
+        },
+        {
+          "text": "Разложи горячий рис по мискам, сверху положи натто, зелёный лук и полоски нори.",
+          "timer_sec": 0
+        }
+      ],
+      "notes": "Натто продаётся ферментированным и готовым к употреблению. Если используется замороженный натто, разморозь по инструкции, не кипяти.",
+      "source_verification": {
+        "status": "tradition_source_checked_recipe_specific_validation_pending",
+        "country_reference_url": "https://www.justonecookbook.com/traditional-japanese-breakfast-at-home/"
+      },
+      "editorial_status": "complete_draft_pending_culinary_verification",
+      "photo_status": "deferred_by_user",
+      "publication_status": "unpublished"
+    },
+    {
+      "id": "breakfast-jp-57",
+      "collection_number": 57,
+      "country": "Япония",
+      "country_code": "JP",
+      "title": "Тамаго-сандо - сэндвич с яйцом",
+      "original_name": "Tamago sando",
+      "servings": 2,
+      "total_min": 30,
+      "ingredients": [
+        {
+          "name": "Яйца",
+          "amount": 4,
+          "unit": "шт."
+        },
+        {
+          "name": "Белый японский хлеб сёкупан",
+          "amount": 160,
+          "unit": "г"
+        },
+        {
+          "name": "Японский майонез",
+          "amount": 65,
+          "unit": "г"
+        },
+        {
+          "name": "Сливочное масло",
+          "amount": 15,
+          "unit": "г"
+        },
+        {
+          "name": "Соль",
+          "amount": 2,
+          "unit": "г"
+        },
+        {
+          "name": "Сахар",
+          "amount": 3,
+          "unit": "г"
+        },
+        {
+          "name": "Чёрный перец",
+          "amount": 1,
+          "unit": "г"
+        }
+      ],
+      "steps": [
+        {
+          "text": "Положи яйца в холодную воду, доведи до кипения и вари 9–10 минут для полностью схватившегося желтка.",
+          "timer_sec": 600
+        },
+        {
+          "text": "Переложи в холодную воду на 5 минут, очисти и разомни вилкой в неоднородную крошку.",
+          "timer_sec": 300
+        },
+        {
+          "text": "Смешай яйца с майонезом, солью, сахаром и перцем до кремовой, но не жидкой начинки.",
+          "timer_sec": 0
+        },
+        {
+          "text": "Срежь корочки с хлеба при желании, тонко смажь маслом, распредели яичную массу по двум ломтикам, накрой оставшимися.",
+          "timer_sec": 0
+        },
+        {
+          "text": "Заверни сэндвичи в пергамент на 5 минут, затем разрежь ровными половинками.",
+          "timer_sec": 300
+        }
+      ],
+      "notes": "Японский сэндвич мягкий, не обжаренный и не с жидким яйцом.",
+      "source_verification": {
+        "status": "tradition_source_checked_recipe_specific_validation_pending",
+        "country_reference_url": "https://www.justonecookbook.com/traditional-japanese-breakfast-at-home/"
+      },
+      "editorial_status": "complete_draft_pending_culinary_verification",
+      "photo_status": "deferred_by_user",
+      "publication_status": "unpublished"
+    },
+    {
+      "id": "breakfast-jp-58",
+      "collection_number": 58,
+      "country": "Япония",
+      "country_code": "JP",
+      "title": "Дзосуй с яйцом",
+      "original_name": "Zōsui",
+      "servings": 2,
+      "total_min": 25,
+      "ingredients": [
+        {
+          "name": "Рис готовый",
+          "amount": 260,
+          "unit": "г"
+        },
+        {
+          "name": "Бульон даси",
+          "amount": 500,
+          "unit": "мл"
+        },
+        {
+          "name": "Яйца",
+          "amount": 2,
+          "unit": "шт."
+        },
+        {
+          "name": "Шиитаке",
+          "amount": 70,
+          "unit": "г"
+        },
+        {
+          "name": "Морковь",
+          "amount": 60,
+          "unit": "г"
+        },
+        {
+          "name": "Соевый соус",
+          "amount": 12,
+          "unit": "мл"
+        },
+        {
+          "name": "Соль",
+          "amount": 2,
+          "unit": "г"
+        },
+        {
+          "name": "Зелёный лук",
+          "amount": 15,
+          "unit": "г"
+        }
+      ],
+      "steps": [
+        {
+          "text": "Нарежь шиитаке тонкими пластинами, морковь мелкими полосками.",
+          "timer_sec": 0
+        },
+        {
+          "text": "Вскипяти даси, добавь морковь и грибы, вари 5–6 минут до мягкости.",
+          "timer_sec": 360
+        },
+        {
+          "text": "Промой готовый рис под холодной водой, чтобы удалить часть поверхностного крахмала, и добавь в бульон.",
+          "timer_sec": 0
+        },
+        {
+          "text": "Влей соевый соус, готовь ещё 4 минуты. Тонкой струёй влей взбитые яйца, не перемешивай 40 секунд, затем выключи огонь.",
+          "timer_sec": 280
+        },
+        {
+          "text": "Убедись, что яйца полностью схватились. Разложи по мискам, посыпь зелёным луком.",
+          "timer_sec": 0
+        }
+      ],
+      "notes": "В отличие от окаю, дзосуй готовится из уже сваренного риса в бульоне.",
+      "source_verification": {
+        "status": "tradition_source_checked_recipe_specific_validation_pending",
+        "country_reference_url": "https://www.justonecookbook.com/traditional-japanese-breakfast-at-home/"
+      },
+      "editorial_status": "complete_draft_pending_culinary_verification",
+      "photo_status": "deferred_by_user",
+      "publication_status": "unpublished"
+    },
+    {
+      "id": "breakfast-jp-59",
+      "collection_number": 59,
+      "country": "Япония",
+      "country_code": "JP",
+      "title": "Мисо-суп с тофу и вакаме",
+      "original_name": "Miso shiru",
+      "servings": 2,
+      "total_min": 15,
+      "ingredients": [
+        {
+          "name": "Бульон даси",
+          "amount": 550,
+          "unit": "мл"
+        },
+        {
+          "name": "Мисо-паста",
+          "amount": 42,
+          "unit": "г"
+        },
+        {
+          "name": "Тофу мягкий",
+          "amount": 160,
+          "unit": "г"
+        },
+        {
+          "name": "Сушёные водоросли вакаме",
+          "amount": 5,
+          "unit": "г"
+        },
+        {
+          "name": "Зелёный лук",
+          "amount": 20,
+          "unit": "г"
+        }
+      ],
+      "steps": [
+        {
+          "text": "Замочи сухие вакаме на 5 минут в холодной воде, затем слей её.",
+          "timer_sec": 300
+        },
+        {
+          "text": "Нагрей даси до небольшого кипения. Нарежь тофу кубиками по 1,5 см.",
+          "timer_sec": 0
+        },
+        {
+          "text": "Добавь тофу и водоросли, прогрей 2–3 минуты на небольшом огне.",
+          "timer_sec": 180
+        },
+        {
+          "text": "Положи мисо в отдельную чашку, размешай с половником горячего бульона до однородности и верни в кастрюлю.",
+          "timer_sec": 0
+        },
+        {
+          "text": "После добавления мисо не кипяти суп. Добавь зелёный лук и подай сразу.",
+          "timer_sec": 0
+        }
+      ],
+      "notes": "Мисо нельзя варить после растворения: вкус и аромат становятся грубее.",
+      "source_verification": {
+        "status": "tradition_source_checked_recipe_specific_validation_pending",
+        "country_reference_url": "https://www.justonecookbook.com/traditional-japanese-breakfast-at-home/"
+      },
+      "editorial_status": "complete_draft_pending_culinary_verification",
+      "photo_status": "deferred_by_user",
+      "publication_status": "unpublished"
+    },
+    {
+      "id": "breakfast-jp-60",
+      "collection_number": 60,
+      "country": "Япония",
+      "country_code": "JP",
+      "title": "Японские пышные панкейки",
+      "original_name": "Japanese soufflé pancakes",
+      "servings": 2,
+      "total_min": 35,
+      "ingredients": [
+        {
+          "name": "Яйца",
+          "amount": 2,
+          "unit": "шт."
+        },
+        {
+          "name": "Пшеничная мука",
+          "amount": 45,
+          "unit": "г"
+        },
+        {
+          "name": "Молоко",
+          "amount": 35,
+          "unit": "мл"
+        },
+        {
+          "name": "Сахар",
+          "amount": 35,
+          "unit": "г"
+        },
+        {
+          "name": "Разрыхлитель",
+          "amount": 3,
+          "unit": "г"
+        },
+        {
+          "name": "Лимонный сок",
+          "amount": 3,
+          "unit": "мл"
+        },
+        {
+          "name": "Масло для сковороды",
+          "amount": 8,
+          "unit": "мл"
+        },
+        {
+          "name": "Вода для пара",
+          "amount": 30,
+          "unit": "мл"
+        }
+      ],
+      "steps": [
+        {
+          "text": "Раздели яйца. Желтки взбей с молоком, затем вмешай муку и разрыхлитель до гладкости.",
+          "timer_sec": 0
+        },
+        {
+          "text": "Белки взбей с лимонным соком, постепенно всыпая сахар, до устойчивых глянцевых пиков.",
+          "timer_sec": 0
+        },
+        {
+          "text": "Осторожно соедини белки и желтковую смесь в три приёма, сохранив воздушность.",
+          "timer_sec": 0
+        },
+        {
+          "text": "Слегка смажь антипригарную сковороду, выложи тесто четырьмя высокими горками. Влей воду между ними, не на тесто.",
+          "timer_sec": 0
+        },
+        {
+          "text": "Готовь под крышкой на минимальном огне 5–6 минут, очень осторожно переверни и готовь ещё 5–6 минут до полной готовности середины.",
+          "timer_sec": 720
+        },
+        {
+          "text": "Подавай сразу, пока панкейки не осели.",
+          "timer_sec": 0
+        }
+      ],
+      "notes": "Это современный японский вариант: без устойчиво взбитых белков характерная высота не получится.",
+      "source_verification": {
+        "status": "tradition_source_checked_recipe_specific_validation_pending",
+        "country_reference_url": "https://www.justonecookbook.com/traditional-japanese-breakfast-at-home/"
+      },
+      "editorial_status": "complete_draft_pending_culinary_verification",
+      "photo_status": "deferred_by_user",
+      "publication_status": "unpublished"
+    }
+  ]
+}
