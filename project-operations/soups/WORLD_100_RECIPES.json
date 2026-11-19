@@ -2332,7 +2332,7 @@
         "https://mirasfood.com/en/recipes/classic-turkish-lentil-soup?l=en"
       ],
       "full_editorial_markdown": "## №41. Мерджимек чорбасы, турецкий чечевичный суп\n\n**На двоих. Время:** 40 минут.\n\n**Ингредиенты:** Чечевица красная 160 г; лук 80 г; морковь 80 г; картофель 100 г; вода 850 мл; масло 20 г; томатная паста 10 г по желанию; сушёная мята 1/2 ч. л.; паприка 1/2 ч. л.; лимон 1/2 шт.; соль.\n\n**Пошаговое приготовление:**\n1. Промой красную чечевицу, пока вода не станет почти прозрачной.\n2. Нарежь лук, морковь и картофель мелко, прогрей лук с маслом 4–5 минут.\n3. Добавь овощи, чечевицу и воду, вари 20–25 минут, пока всё не разварится.\n4. Пробей блендером до гладкого крема, посоли. При необходимости добавь горячую воду.\n5. В маленьком ковшике распусти немного масла с паприкой и сушёной мятой; полей суп. Лимон подай отдельно.\n\n**Вид готового блюда:** Однородный золотисто-оранжевый суп-пюре с небольшими красноватыми пятнами масла и мяты; без целой чечевицы.\n\n**Три независимых рецептурных источника:**\n1. https://www.themediterraneandish.com/turkish-lentil-soup/\n2. https://www.lentils.org/recipe/mercimek-corbasi-turkish-lentil-soup/\n3. https://mirasfood.com/en/recipes/classic-turkish-lentil-soup?l=en\n\n**Различия вариантов и выбор редакции:** Обычный мерджимек отличается от эзогелина отсутствием булгура и риса.\n\n**Визуальное подтверждение отдельными фото-источниками:** ожидает проведения.\n\n---",
-      "review_status": "редакционный черновик; источники, фото и контрольная готовка не приняты",
+      "review_status": "Три независимых рецепта содержательно сопоставлены; пробная готовка, фото и окончательная приёмка не завершены",
       "photo_approved": false,
       "steps": [
         "Промой красную чечевицу, пока вода не станет почти прозрачной.",
@@ -2354,9 +2354,29 @@
         "лимон 1/2 шт.",
         "соль."
       ],
-      "recipe_source_audit_status": "URL_DOMAINS_LISTED_CONTENT_VERIFICATION_INCOMPLETE",
+      "recipe_source_audit_status": "THREE_INDEPENDENT_RECIPE_TEXTS_COMPARED",
       "visual_audit_status": "PENDING",
-      "photo_status": "PENDING_USER_APPROVAL"
+      "photo_status": "PENDING_USER_APPROVAL",
+      "source_content_evidence": {
+        "date": "2026-11-19",
+        "method": "Comparison of three separately published culinary texts with preparation and ingredient differences; portions adapted to two",
+        "ingredients_comparison": "Красная чечевица, лук, морковь, картофель, томатная паста по желанию, лимон и перечная масляная заправка подтверждены независимыми публикациями. В Miras нет картофеля, а Lentils.org готовит 20 порций; редакционная граммовка рассчитана на двоих.",
+        "technique_and_timer_comparison": "Красную чечевицу варят с овощами до полного размягчения 20–25 минут, затем измельчают в гладкий крем, масло с мятой/паприкой кладут отдельно. Соответствует 20 минутам Lentils.org и 30 минутам Miras.",
+        "sources": [
+          {
+            "url": "https://www.themediterraneandish.com/turkish-lentil-soup/",
+            "difference": "Mediterranean Dish: домашний красный чечевичный суп с морковью и лимоном"
+          },
+          {
+            "url": "https://www.lentils.org/recipe/mercimek-corbasi-turkish-lentil-soup/",
+            "difference": "Lentils.org: 20 больших порций, картофель и сельдерей, варка 15–20 минут"
+          },
+          {
+            "url": "https://mirasfood.com/en/recipes/classic-turkish-lentil-soup?l=en",
+            "difference": "Miras: вегетарианский суп без картофеля, около 30 минут"
+          }
+        ]
+      }
     },
     {
       "id": 42,
@@ -2371,7 +2391,7 @@
         "https://mayana.com.tr/en/recipes/ezogelin-soup-recipe/"
       ],
       "full_editorial_markdown": "## №42. Эзогелин с булгуром\n\n**На двоих. Время:** 50 минут.\n\n**Ингредиенты:** Красная чечевица 110 г; булгур мелкий 25 г; рис 20 г; лук 75 г; томатная паста 20 г; перечная паста 10 г; вода или бульон 850 мл; масло 20 г; сушёная мята 1 ч. л.; паприка и соль.\n\n**Пошаговое приготовление:**\n1. Промой чечевицу, булгур и рис в отдельных ситах.\n2. Мелко нарежь лук, прогрей в масле за 6 минут; вмешай томатную и перечную пасту, прогрей ещё минуту.\n3. Добавь крупы и горячий бульон, вари при слабом кипении 25–30 минут до полного размягчения.\n4. При необходимости слегка пробей погружным блендером, сохранив часть текстуры булгура и риса.\n5. Добавь сушёную мяту и паприку, прогрей минуту. Подавай с лимоном.\n\n**Вид готового блюда:** Тёмно-оранжевый слегка зернистый суп с едва заметной текстурой круп и мелкими частицами мяты; не гладкий крем.\n\n**Три независимых рецептурных источника:**\n1. https://dietitiansaustralia.org.au/recipes/ezogelin-corbasi-turkish-spicy-red-lentil-soup\n2. https://gidavesaglik.net/en/ezogelin-soup-ezo-the-bride-soup-recipe/\n3. https://mayana.com.tr/en/recipes/ezogelin-soup-recipe/\n\n**Различия вариантов и выбор редакции:** Варианты отличаются рисом, он используется в одной из распространённых версий. Не путать с простым мерджимеком.\n\n**Визуальное подтверждение отдельными фото-источниками:** ожидает проведения.\n\n---",
-      "review_status": "редакционный черновик; источники, фото и контрольная готовка не приняты",
+      "review_status": "Три независимых рецепта содержательно сопоставлены; пробная готовка, фото и окончательная приёмка не завершены",
       "photo_approved": false,
       "steps": [
         "Промой чечевицу, булгур и рис в отдельных ситах.",
@@ -2392,9 +2412,29 @@
         "сушёная мята 1 ч. л.",
         "паприка и соль."
       ],
-      "recipe_source_audit_status": "URL_DOMAINS_LISTED_CONTENT_VERIFICATION_INCOMPLETE",
+      "recipe_source_audit_status": "THREE_INDEPENDENT_RECIPE_TEXTS_COMPARED",
       "visual_audit_status": "PENDING",
-      "photo_status": "PENDING_USER_APPROVAL"
+      "photo_status": "PENDING_USER_APPROVAL",
+      "source_content_evidence": {
+        "date": "2026-11-19",
+        "method": "Comparison of three separately published culinary texts with preparation and ingredient differences; portions adapted to two",
+        "ingredients_comparison": "Красная чечевица, булгур, рис, лук, томатная паста, мята и паприка подтверждены тремя источниками. Перечная паста - допустимая добавка в выбранной турецкой версии.",
+        "technique_and_timer_comparison": "Сначала обжарить лук с томатной и перечной пастой, затем всыпать чечевицу, булгур и рис и варить до разваривания около 25–30 минут. Dietitians Australia использует отдельные стадии и около 40 минут, Food and Health добавляет ингредиенты в кипяток сразу; Mayana готовит мягкую густую консистенцию.",
+        "sources": [
+          {
+            "url": "https://dietitiansaustralia.org.au/recipes/ezogelin-corbasi-turkish-spicy-red-lentil-soup",
+            "difference": "Dietitians Australia: 4–6 порций, длительная варка риса и булгура"
+          },
+          {
+            "url": "https://gidavesaglik.net/en/ezogelin-soup-ezo-the-bride-soup-recipe/",
+            "difference": "Food & Health: 2,5 чашки чечевицы на 6 порций, рис и булгур вместе"
+          },
+          {
+            "url": "https://mayana.com.tr/en/recipes/ezogelin-soup-recipe/",
+            "difference": "Mayana: домашняя пряная версия, мята и томат"
+          }
+        ]
+      }
     },
     {
       "id": 43,
@@ -2409,7 +2449,7 @@
         "https://forkin.io/recipes/yayla-corbasi-turkish-yogurt-soup"
       ],
       "full_editorial_markdown": "## №43. Яйла чорбасы с йогуртом\n\n**На двоих. Время:** 35 минут.\n\n**Ингредиенты:** Йогурт натуральный 250 г; рис сухой 65 г; вода 800 мл; яйцо 1 шт.; мука 15 г; масло сливочное 25 г; сушёная мята 1 ч. л.; соль.\n\n**Пошаговое приготовление:**\n1. Промой рис, свари его в воде 15–18 минут до мягкости.\n2. В отдельной миске взбей йогурт, яйцо и муку до однородности без комков.\n3. Возьми пару половников тёплого рисового отвара и постепенно вмешай их в йогуртовую смесь для выравнивания температуры.\n4. Введи смесь в кастрюлю при постоянном помешивании, осторожно прогрей 4–6 минут до лёгкого загустения без активного кипения.\n5. Растопи масло с сушёной мятой и добавь на каждую порцию.\n\n**Вид готового блюда:** Белый кремоватый суп с отдельными зёрнами риса и зелёными следами сушёной мяты в масле; никакого сыра.\n\n**Три независимых рецептурных источника:**\n1. https://www.ktb.gov.tr/EN-99046/yogurt-soup.html\n2. https://www.epicurious.com/recipes/food/views/yayla-corbasi-373289\n3. https://forkin.io/recipes/yayla-corbasi-turkish-yogurt-soup\n\n**Различия вариантов и выбор редакции:** Главный риск: свернувшийся йогурт; обязательно темперирование.\n\n**Визуальное подтверждение отдельными фото-источниками:** ожидает проведения.\n\n---",
-      "review_status": "редакционный черновик; источники, фото и контрольная готовка не приняты",
+      "review_status": "Три независимых рецепта содержательно сопоставлены; пробная готовка, фото и окончательная приёмка не завершены",
       "photo_approved": false,
       "steps": [
         "Промой рис, свари его в воде 15–18 минут до мягкости.",
@@ -2428,9 +2468,29 @@
         "сушёная мята 1 ч. л.",
         "соль."
       ],
-      "recipe_source_audit_status": "URL_DOMAINS_LISTED_CONTENT_VERIFICATION_INCOMPLETE",
+      "recipe_source_audit_status": "THREE_INDEPENDENT_RECIPE_TEXTS_COMPARED",
       "visual_audit_status": "PENDING",
-      "photo_status": "PENDING_USER_APPROVAL"
+      "photo_status": "PENDING_USER_APPROVAL",
+      "source_content_evidence": {
+        "date": "2026-11-19",
+        "method": "Comparison of three separately published culinary texts with preparation and ingredient differences; portions adapted to two",
+        "ingredients_comparison": "Натуральный йогурт, рис, яйцо/желток, мука, сливочное масло и сушёная мята присутствуют в трех независимых версиях. В KTB используется целое яйцо, Epicurious только желтки, Forkin только желток.",
+        "technique_and_timer_comparison": "Рис варить до мягкости; заправку взбить из йогурта, яйца и муки, темперировать горячей жидкостью и осторожно прогреть 4–6 минут без бурного кипения. Epicurious предпочитает отдельную варку риса, KTB варит прямо в бульоне, редакция оставляет рис в супе.",
+        "sources": [
+          {
+            "url": "https://www.ktb.gov.tr/EN-99046/yogurt-soup.html",
+            "difference": "Официальная турецкая рецептура, рис с йогуртом и целым яйцом"
+          },
+          {
+            "url": "https://www.epicurious.com/recipes/food/views/yayla-corbasi-373289",
+            "difference": "Йогуртовая заправка на желтках, рис отдельно для сохранения текстуры"
+          },
+          {
+            "url": "https://forkin.io/recipes/yayla-corbasi-turkish-yogurt-soup",
+            "difference": "Йогуртовый суп с желтком, мукой и мятой, 45 минут всего"
+          }
+        ]
+      }
     },
     {
       "id": 44,
@@ -2445,7 +2505,7 @@
         "https://www.gurmion.com/en/recipes/tarhana-soup"
       ],
       "full_editorial_markdown": "## №44. Тархана чорбасы\n\n**На двоих. Время:** 30 минут с готовой сухой тарханой.\n\n**Ингредиенты:** Сухая ферментированная тархана 70 г; вода 750 мл; масло 20 г; томатная паста 10 г; сушёная мята 1/2 ч. л.; паприка 1/2 ч. л.; соль по необходимости.\n\n**Пошаговое приготовление:**\n1. Разотри сухую тархану с 180 мл холодной воды и оставь на 10–15 минут, чтобы разбухла.\n2. В кастрюле прогрей сливочное масло, добавь томатную пасту и паприку на 30 секунд.\n3. Постепенно влей оставшуюся воду и разбухшую тархану, постоянно размешивая венчиком.\n4. Вари 10–15 минут на слабом огне, пока крупинки не разойдутся и суп не станет однородным.\n5. Добавь сушёную мяту, проверь на соль, подавай горячим.\n\n**Вид готового блюда:** Насыщенный кирпично-оранжевый кисловатый суп однородной средней густоты; без целой лапши и сырого йогурта.\n\n**Три независимых рецептурных источника:**\n1. https://www.ktb.gov.tr/EN-99042/tarhana-soup.html\n2. https://www.kulturportali.gov.tr/turkiye/aksaray/neyenir/tarhana-corbasi\n3. https://www.gurmion.com/en/recipes/tarhana-soup\n\n**Различия вариантов и выбор редакции:** Обязателен сам продукт тархана, заменить его смесью муки и йогурта нельзя без изменения названия блюда.\n\n**Визуальное подтверждение отдельными фото-источниками:** ожидает проведения.\n\n---",
-      "review_status": "редакционный черновик; источники, фото и контрольная готовка не приняты",
+      "review_status": "Три независимых рецепта содержательно сопоставлены; пробная готовка, фото и окончательная приёмка не завершены",
       "photo_approved": false,
       "steps": [
         "Разотри сухую тархану с 180 мл холодной воды и оставь на 10–15 минут, чтобы разбухла.",
@@ -2463,9 +2523,29 @@
         "паприка 1/2 ч. л.",
         "соль по необходимости."
       ],
-      "recipe_source_audit_status": "URL_DOMAINS_LISTED_CONTENT_VERIFICATION_INCOMPLETE",
+      "recipe_source_audit_status": "THREE_INDEPENDENT_RECIPE_TEXTS_COMPARED",
       "visual_audit_status": "PENDING",
-      "photo_status": "PENDING_USER_APPROVAL"
+      "photo_status": "PENDING_USER_APPROVAL",
+      "source_content_evidence": {
+        "date": "2026-11-19",
+        "method": "Comparison of three separately published culinary texts with preparation and ingredient differences; portions adapted to two",
+        "ingredients_comparison": "Доля сухой ферментированной тарханы, воды, масла, мяты и паприки подтверждена. KTB не содержит томатную пасту, Gurmion добавляет пасту и предварительное набухание; Aksaray готовит с чесноком.",
+        "technique_and_timer_comparison": "Тархану предварительно размешать холодной водой 10–15 минут, влить в горячую основу при перемешивании и проварить 10–15 минут до однородной консистенции. Региональная Аксарайская тархана может быть в кусках, поэтому время определяется фактическим размоканием, а не фиксированными 15 минутами.",
+        "sources": [
+          {
+            "url": "https://www.ktb.gov.tr/EN-99042/tarhana-soup.html",
+            "difference": "Официальная сухая порошковая тархана с маслом и мятой"
+          },
+          {
+            "url": "https://www.kulturportali.gov.tr/turkiye/aksaray/neyenir/tarhana-corbasi",
+            "difference": "Региональная Аксарайская тархана с кусками и чесноком"
+          },
+          {
+            "url": "https://www.gurmion.com/en/recipes/tarhana-soup",
+            "difference": "Тархана, томатная паста, масло, предварительное замачивание"
+          }
+        ]
+      }
     },
     {
       "id": 45,
@@ -2480,7 +2560,7 @@
         "https://cookwitherica.com/2018/02/15/iskembe-corbasi-turkish-tripe-soup/"
       ],
       "full_editorial_markdown": "## №45. Ишкембе чорбасы из рубца\n\n**На двоих. Время:** 3 часа (с предварительно очищенным рубцом).\n\n**Ингредиенты:** Рубец говяжий очищенный 450 г; вода 1,3 л; мука 25 г; масло сливочное 25 г; йогурт 80 г; яйцо 1 желток; чеснок 2 зубчика; винный уксус 25 мл; соль, хлопья перца.\n\n**Пошаговое приготовление:**\n1. Промой предварительно очищенный рубец; вари в воде при слабом кипении 2–3 часа до полной мягкости, снимая пену. Сырое неочищенное сырьё не используй.\n2. Достань рубец, нарежь мелкой соломкой; бульон процеди.\n3. В кастрюле прогрей муку на сливочном масле минуту, влей бульон частями, помешивая венчиком.\n4. Смешай йогурт с желтком и парой ложек тёплого бульона, введи при слабом нагреве; добавь рубец и прогрей, не кипяти после яичной заправки.\n5. Измельчи чеснок и смешай с уксусом, подавай соус отдельно. По желанию добавь немного масла с красным перцем.\n\n**Вид готового блюда:** Светлый слегка мутный бульон с очень тонкими мягкими полосками рубца, уксус с чесноком в маленькой пиале; не куски сырого субпродукта.\n\n**Три независимых рецептурных источника:**\n1. https://www.ktb.gov.tr/EN-99044/tripe-soup.html\n2. https://zaffaron.com/recipe/tripe-soup-iskembe-corbasi\n3. https://cookwitherica.com/2018/02/15/iskembe-corbasi-turkish-tripe-soup/\n\n**Различия вариантов и выбор редакции:** Есть кислые и молочные версии, выбран мягкий суп с рубцом и отдельным чесночным уксусом.\n\n**Визуальное подтверждение отдельными фото-источниками:** ожидает проведения.\n\n---",
-      "review_status": "редакционный черновик; источники, фото и контрольная готовка не приняты",
+      "review_status": "Три независимых рецепта содержательно сопоставлены; пробная готовка, фото и окончательная приёмка не завершены",
       "photo_approved": false,
       "steps": [
         "Промой предварительно очищенный рубец; вари в воде при слабом кипении 2–3 часа до полной мягкости, снимая пену. Сырое неочищенное сырьё не используй.",
@@ -2500,9 +2580,29 @@
         "винный уксус 25 мл",
         "соль, хлопья перца."
       ],
-      "recipe_source_audit_status": "URL_DOMAINS_LISTED_CONTENT_VERIFICATION_INCOMPLETE",
+      "recipe_source_audit_status": "THREE_INDEPENDENT_RECIPE_TEXTS_COMPARED",
       "visual_audit_status": "PENDING",
-      "photo_status": "PENDING_USER_APPROVAL"
+      "photo_status": "PENDING_USER_APPROVAL",
+      "source_content_evidence": {
+        "date": "2026-11-19",
+        "method": "Comparison of three separately published culinary texts with preparation and ingredient differences; portions adapted to two",
+        "ingredients_comparison": "Очищенный говяжий рубец, вода, мука, сливочное масло и чесночный уксусный соус подтверждены тремя публикациями. Йогурт и яичный желток есть не во всех версиях, это редакционный выбор густой основы.",
+        "technique_and_timer_comparison": "Рубец отварить до полной мягкости 2–3 часа, а если уже готовый предварительно сваренный - значительно меньше; отдельно муку прогреть в масле, ввести бульон, затем темперировать молочно-яичную заправку без кипения. Кислый чесночный соус подавать отдельно.",
+        "sources": [
+          {
+            "url": "https://www.ktb.gov.tr/EN-99044/tripe-soup.html",
+            "difference": "KTB: предварительно отваренный рубец 300 г и мучная основа, быстрее"
+          },
+          {
+            "url": "https://zaffaron.com/recipe/tripe-soup-iskembe-corbasi",
+            "difference": "Zaffaron: сырой очищенный рубец на 120 минут, желтково-йогуртовая заправка"
+          },
+          {
+            "url": "https://cookwitherica.com/2018/02/15/iskembe-corbasi-turkish-tripe-soup/",
+            "difference": "Cook With Erica: густой рубцовый суп с чесночным уксусом и кайенским перцем"
+          }
+        ]
+      }
     },
     {
       "id": 46,
@@ -2517,7 +2617,7 @@
         "https://zaffaron.com/recipe/kelle-paca"
       ],
       "full_editorial_markdown": "## №46. Келле пача, суп из головы и ножек\n\n**На двоих. Время:** 4–5 часов (с предварительно очищенными продуктами).\n\n**Ингредиенты:** Бараньи ножки предварительно очищенные 2 шт.; мясо из головы барана предварительно очищенное 250 г; вода 1,5 л; мука 20 г по желанию; яйцо 1 желток по желанию; чеснок 2 зубчика; уксус 20 мл; соль, перец.\n\n**Пошаговое приготовление:**\n1. Используй только полностью очищенные мясные продукты из надёжного магазина. Промой ножки и мясо головы.\n2. Залей водой, после закипания сними пену, вари на минимальном огне 3–4 часа до размягчения соединительной ткани и мяса.\n3. Достань ножки и мясо. Удали кости, хрящи и любые несъедобные части; съедобное мясо нарежь небольшими кусочками, процеди бульон.\n4. Верни мясо в бульон. Для более густой версии разотри муку в небольшом количестве холодной воды, введи и провари 5 минут. Если используешь желток, темперируй отдельно и не кипяти после добавления.\n5. Подавай очень горячим с чесноком, растёртым с уксусом, но соус добавляй по вкусу.\n\n**Вид готового блюда:** Золотистый плотный желатиновый бульон с мелкими мягкими кусочками мяса, без целых костей, голов и ног в тарелке.\n\n**Три независимых рецептурных источника:**\n1. https://www.lezzet.com.tr/yemek-tarifleri/corbalar/corba-tarifleri/kelle-paca-corbasi\n2. https://yemek.com/tarif/kelle-paca-corbasi/\n3. https://zaffaron.com/recipe/kelle-paca\n\n**Различия вариантов и выбор редакции:** Келле пача отличен от ишкембе: здесь мясо с головы и ног, а не желудок/рубец. Время варки ориентировочно.\n\n**Визуальное подтверждение отдельными фото-источниками:** ожидает проведения.\n\n---",
-      "review_status": "редакционный черновик; источники, фото и контрольная готовка не приняты",
+      "review_status": "Три независимых рецепта содержательно сопоставлены; пробная готовка, фото и окончательная приёмка не завершены",
       "photo_approved": false,
       "steps": [
         "Используй только полностью очищенные мясные продукты из надёжного магазина. Промой ножки и мясо головы.",
@@ -2536,9 +2636,29 @@
         "уксус 20 мл",
         "соль, перец."
       ],
-      "recipe_source_audit_status": "URL_DOMAINS_LISTED_CONTENT_VERIFICATION_INCOMPLETE",
+      "recipe_source_audit_status": "THREE_INDEPENDENT_RECIPE_TEXTS_COMPARED",
       "visual_audit_status": "PENDING",
-      "photo_status": "PENDING_USER_APPROVAL"
+      "photo_status": "PENDING_USER_APPROVAL",
+      "source_content_evidence": {
+        "date": "2026-11-19",
+        "method": "Comparison of three separately published culinary texts with preparation and ingredient differences; portions adapted to two",
+        "ingredients_comparison": "Предварительно очищенные бараньи ножки и мясо головы, вода, чеснок, уксус, специи соответствуют турецким рецептам. Загуститель мука и желток факультативны.",
+        "technique_and_timer_comparison": "Головы и ножки долго варят при слабом кипении 3–4 часа, затем удаляют все кости и твёрдые части, мясо возвращают в процеженный бульон. По Lezzet, Yemek.com и Zaffaron чеснок с уксусом подают отдельно; пищевую безопасность отварных субпродуктов контролируют фактической мягкостью.",
+        "sources": [
+          {
+            "url": "https://www.lezzet.com.tr/yemek-tarifleri/corbalar/corba-tarifleri/kelle-paca-corbasi",
+            "difference": "Lezzet: традиционная суповая основа из головы и ножек"
+          },
+          {
+            "url": "https://yemek.com/tarif/kelle-paca-corbasi/",
+            "difference": "Yemek.com: более длительная варка бараньих субпродуктов"
+          },
+          {
+            "url": "https://zaffaron.com/recipe/kelle-paca",
+            "difference": "Zaffaron: 240 минут варки и чесночный уксусный соус"
+          }
+        ]
+      }
     },
     {
       "id": 47,
@@ -2612,7 +2732,7 @@
         "https://www.lezzet.com.tr/yemek-tarifleri/corbalar/corba-tarifleri/dugun-corbasi-tarifi"
       ],
       "full_editorial_markdown": "## №48. Дююн чорбасы, свадебный суп\n\n**На двоих. Время:** 110 минут.\n\n**Ингредиенты:** Баранья шея на кости 380 г; вода 1,15 л; йогурт 125 г; яйцо 1 желток; мука 20 г; лимонный сок 15 мл; сливочное масло 25 г; сладкая паприка 1 ч. л.; соль, перец.\n\n**Пошаговое приготовление:**\n1. Залей баранину холодной водой, после закипания сними пену и вари 75–90 минут до мягкости мяса.\n2. Вынь мясо, отдели от костей и разбери на маленькие волокна. Бульон процеди.\n3. Смешай йогурт, желток, муку и сок лимона, тщательно взбей.\n4. Подлей в заправку горячий бульон по нескольку ложек, затем верни в кастрюлю, постоянно помешивая. Добавь мясо, прогрей на слабом огне до лёгкого загустения, не допускай свёртывания.\n5. Распусти масло с паприкой и полей готовый суп.\n\n**Вид готового блюда:** Светло-кремовый бульон с тонкими волокнами баранины и красными разводами перечного масла.\n\n**Три независимых рецептурных источника:**\n1. https://www.ktb.gov.tr/EN-99047/wedding-soup.html\n2. https://www.epicurious.com/recipes/food/views/dugun-corbasi-373298\n3. https://www.lezzet.com.tr/yemek-tarifleri/corbalar/corba-tarifleri/dugun-corbasi-tarifi\n\n**Различия вариантов и выбор редакции:** В некоторых вариантах есть нут и молоко, но баранина с кислой заправкой и перечное масло являются узнаваемой основой.\n\n**Визуальное подтверждение отдельными фото-источниками:** ожидает проведения.\n\n---",
-      "review_status": "редакционный черновик; источники, фото и контрольная готовка не приняты",
+      "review_status": "Три независимых рецепта содержательно сопоставлены; пробная готовка, фото и окончательная приёмка не завершены",
       "photo_approved": false,
       "steps": [
         "Залей баранину холодной водой, после закипания сними пену и вари 75–90 минут до мягкости мяса.",
@@ -2632,9 +2752,29 @@
         "сладкая паприка 1 ч. л.",
         "соль, перец."
       ],
-      "recipe_source_audit_status": "URL_DOMAINS_LISTED_CONTENT_VERIFICATION_INCOMPLETE",
+      "recipe_source_audit_status": "THREE_INDEPENDENT_RECIPE_TEXTS_COMPARED",
       "visual_audit_status": "PENDING",
-      "photo_status": "PENDING_USER_APPROVAL"
+      "photo_status": "PENDING_USER_APPROVAL",
+      "source_content_evidence": {
+        "date": "2026-11-19",
+        "method": "Comparison of three separately published culinary texts with preparation and ingredient differences; portions adapted to two",
+        "ingredients_comparison": "Баранина на кости, мясной бульон, яйцо/желток, мука, лимон, сливочное масло и паприка подтверждены всеми тремя рецептурами, но в версиях KTB и Epicurious вместо йогурта преобладает ру/яичный лимон.",
+        "technique_and_timer_comparison": "Мясо варится до мягкости 75–90 минут, затем темперированная яично-лимонная смесь с мукой и йогуртом добавляется после снятия огня и слегка прогревается. Epicurious дает 1,5–2 часа для больших кусков и связывает бульон мучной заправкой, Lezzet включает йогурт и нут.",
+        "sources": [
+          {
+            "url": "https://www.ktb.gov.tr/EN-99047/wedding-soup.html",
+            "difference": "KTB: баранина с яйцом, мукой, лимоном"
+          },
+          {
+            "url": "https://www.epicurious.com/recipes/food/views/dugun-corbasi-373298",
+            "difference": "Epicurious: баранина 1,5–2 часа, мучное ру и яично-лимонная заправка"
+          },
+          {
+            "url": "https://www.lezzet.com.tr/yemek-tarifleri/corbalar/corba-tarifleri/dugun-corbasi-tarifi",
+            "difference": "Lezzet: йогуртовый вариант с нутом и паприкой"
+          }
+        ]
+      }
     },
     {
       "id": 49,
@@ -2649,7 +2789,7 @@
         "https://www.ktb.gov.tr/EN-99038/soup-with-home-made-noodles.html"
       ],
       "full_editorial_markdown": "## №49. Эриште чорбасы, суп с домашней лапшой\n\n**На двоих. Время:** 35 минут с готовой лапшой.\n\n**Ингредиенты:** Домашняя турецкая лапша эриште 110 г; лук 70 г; томатная паста 25 г; бульон 800 мл; сливочное масло 20 г; сушёная мята 1/2 ч. л.; паприка 1/2 ч. л.; соль, перец.\n\n**Пошаговое приготовление:**\n1. Мелко нарежь лук, растопи масло и прогрей лук 5 минут до мягкости.\n2. Добавь томатную пасту, размешай и прогрей минуту, не поджаривай до чёрного.\n3. Влей бульон, доведи до кипения, посоли после пробы.\n4. Всыпь домашнюю лапшу, вари до мягкости согласно толщине 8–12 минут.\n5. Сними с огня, добавь сушёную мяту и паприку, подавай, пока лапша не разбухла.\n\n**Вид готового блюда:** Красноватый бульон с заметными короткими полосками домашней плоской лапши, без йогуртовой белой основы; не путать с тутмач.\n\n**Три независимых рецептурных источника:**\n1. https://www.lezzet.com.tr/yemek-tarifleri/corbalar/corba-tarifleri/eriste-corbasi-tarifi\n2. https://taribu.com.tr/tr/tarifler/eriste-corbasi-1\n3. https://www.ktb.gov.tr/EN-99038/soup-with-home-made-noodles.html\n\n**Различия вариантов и выбор редакции:** Базовые турецкие супы с эриште отличаются по составу; выбран распространённый томатный вариант, в третьем источнике аналогичное использование домашней лапши.\n\n**Визуальное подтверждение отдельными фото-источниками:** ожидает проведения.\n\n---",
-      "review_status": "редакционный черновик; источники, фото и контрольная готовка не приняты",
+      "review_status": "Три независимых рецепта содержательно сопоставлены; пробная готовка, фото и окончательная приёмка не завершены",
       "photo_approved": false,
       "steps": [
         "Мелко нарежь лук, растопи масло и прогрей лук 5 минут до мягкости.",
@@ -2668,9 +2808,29 @@
         "паприка 1/2 ч. л.",
         "соль, перец."
       ],
-      "recipe_source_audit_status": "URL_DOMAINS_LISTED_CONTENT_VERIFICATION_INCOMPLETE",
+      "recipe_source_audit_status": "THREE_INDEPENDENT_RECIPE_TEXTS_COMPARED",
       "visual_audit_status": "PENDING",
-      "photo_status": "PENDING_USER_APPROVAL"
+      "photo_status": "PENDING_USER_APPROVAL",
+      "source_content_evidence": {
+        "date": "2026-11-19",
+        "method": "Comparison of three separately published culinary texts with preparation and ingredient differences; portions adapted to two",
+        "ingredients_comparison": "Домашняя турецкая лапша эриште, лук, томатная паста, сливочное масло, мята и бульон подтверждены тремя версиями. KTB готовит лапшу из муки вручную, редакция берёт готовую домашнюю.",
+        "technique_and_timer_comparison": "Лук прогреть в масле, затем томатную пасту, добавить бульон, лапшу варить до мягкости 8–12 минут по толщине, мяту после выключения огня. Lezzet предлагает простой рецепт; Taribu больше вариантов мелкой лапши, KTB вручную замешивает тесто, что в нашей версии вынесено за скобки.",
+        "sources": [
+          {
+            "url": "https://www.lezzet.com.tr/yemek-tarifleri/corbalar/corba-tarifleri/eriste-corbasi-tarifi",
+            "difference": "Lezzet: лук, томатная паста и лапша с мятой"
+          },
+          {
+            "url": "https://taribu.com.tr/tr/tarifler/eriste-corbasi-1",
+            "difference": "Taribu: мука в загуститель, оливковое масло вместо сливочного"
+          },
+          {
+            "url": "https://www.ktb.gov.tr/EN-99038/soup-with-home-made-noodles.html",
+            "difference": "KTB: домашняя нарезка лапши и длительная подготовка теста"
+          }
+        ]
+      }
     },
     {
       "id": 50,
@@ -2685,7 +2845,7 @@
         "https://yemek.com/tarif/geleneksel-tutmac-corbasi/"
       ],
       "full_editorial_markdown": "## №50. Тутмач чорбасы с зелёной чечевицей\n\n**На двоих. Время:** 45 минут с готовой чечевицей.\n\n**Ингредиенты:** Зелёная чечевица варёная 150 г; нут варёный 100 г; домашняя плоская лапша 80 г; йогурт натуральный 200 г; яйцо 1 желток; мука 15 г; вода/бульон 750 мл; сливочное масло 20 г; сушёная мята 1 ч. л.; соль.\n\n**Пошаговое приготовление:**\n1. Используй 150 г уже сваренной зелёной чечевицы: промой, если она консервированная, и дай стечь жидкости.\n2. В кипящем бульоне отвари лапшу 7–10 минут, затем добавь варёную чечевицу и варёный нут, прогрей 3 минуты до горячего состояния.\n3. В отдельной миске взбей йогурт, желток и муку, постепенно смешай с несколькими половниками тёплого бульона.\n4. Верни заправку в кастрюлю при постоянном помешивании и прогрей без бурного кипения.\n5. Растопи сливочное масло с сушёной мятой, добавь на тарелки перед подачей.\n\n**Вид готового блюда:** Светлая йогуртовая похлёбка с зелёной чечевицей и короткой лапшой, сверху немного масла с мятой; не пюре.\n\n**Три независимых рецептурных источника:**\n1. https://www.ktb.gov.tr/EN-99024/green-lentil---noodle-soup.html\n2. https://www.lezzet.com.tr/yemek-tarifleri/corbalar/corba-tarifleri/tutmac-corbasi-tarifi\n3. https://yemek.com/tarif/geleneksel-tutmac-corbasi/\n\n**Различия вариантов и выбор редакции:** Тутмач отличается от просто эриште сочетанием бобовых, лапши и часто йогуртовой заправки.\n\n**Визуальное подтверждение отдельными фото-источниками:** ожидает проведения.",
-      "review_status": "редакционный черновик; источники, фото и контрольная готовка не приняты",
+      "review_status": "Три независимых рецепта содержательно сопоставлены; пробная готовка, фото и окончательная приёмка не завершены",
       "photo_approved": false,
       "steps": [
         "Используй 150 г уже сваренной зелёной чечевицы: промой, если она консервированная, и дай стечь жидкости.",
@@ -2706,9 +2866,29 @@
         "сушёная мята 1 ч. л.",
         "соль."
       ],
-      "recipe_source_audit_status": "URL_DOMAINS_LISTED_CONTENT_VERIFICATION_INCOMPLETE",
+      "recipe_source_audit_status": "THREE_INDEPENDENT_RECIPE_TEXTS_COMPARED",
       "visual_audit_status": "PENDING",
-      "photo_status": "PENDING_USER_APPROVAL"
+      "photo_status": "PENDING_USER_APPROVAL",
+      "source_content_evidence": {
+        "date": "2026-11-19",
+        "method": "Comparison of three separately published culinary texts with preparation and ingredient differences; portions adapted to two",
+        "ingredients_comparison": "Зелёная чечевица, лапша эриште, йогурт, желток, мука, сливочное масло, мята подтверждены. Lezzet и Yemek.com добавляют варёный нут; по сверке нут 100 г на двоих внесён в карточку.",
+        "technique_and_timer_comparison": "Чечевицу и нут берут готовыми, варят только лапшу 7–10 минут, затем прогревают бобовые 3 минуты. Йогуртово-яичный соус темперируют и вводят при слабом огне, подают с мятным маслом. В KTB самостоятельное приготовление теста и отваривание сырых бобов удлиняют рецепт.",
+        "sources": [
+          {
+            "url": "https://www.ktb.gov.tr/EN-99024/green-lentil---noodle-soup.html",
+            "difference": "KTB Tutmaç Aşı: домашнее тесто, чечевица и йогурт с чесноком"
+          },
+          {
+            "url": "https://www.lezzet.com.tr/yemek-tarifleri/corbalar/corba-tarifleri/tutmac-corbasi-tarifi",
+            "difference": "Lezzet: нут, чечевица и лапша, заправка из йогурта"
+          },
+          {
+            "url": "https://yemek.com/tarif/geleneksel-tutmac-corbasi/",
+            "difference": "Yemek.com: нут, чечевица, лапша и желток, совет не перегревать"
+          }
+        ]
+      }
     },
     {
       "id": 51,
