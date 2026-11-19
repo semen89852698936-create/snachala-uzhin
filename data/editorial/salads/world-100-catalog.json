@@ -3672,10 +3672,10 @@
         "stage": "editorial_research",
         "sources": [
           "https://www.consum.es/entrenosotros/empedrat-receta/",
-          "https://www.gastroteca.cat/en/receptes/empedrat/",
+          "https://www.gastroteca.cat/es/receptes/empedrat/",
           "https://www2.cruzroja.es/-/empedrat-ensalada-de-alubias-con-bacalao-sact-recs"
         ],
-        "note": "Empedrat подтверждён официальным Catalunya.com и Corpus de la Cuina Catalana на Gastroteca: отварная белая фасоль, вымоченная треска, томаты, лук, оливки, масло.\n2026-11-19: Supermarket Consum has direct detailed Empedrat: white beans, desalted cod, tomatoes, onion, peppers, black olives. Former Catalunya link returned only cookie banner with no ingredients.\n2026-11-19: Cruz Roja recipe explicitly has white beans, cod, fresh peppers, olives, onion and tomato; old Dia link redirected to generic recipe portal."
+        "note": "Empedrat подтверждён официальным Catalunya.com и Corpus de la Cuina Catalana на Gastroteca: отварная белая фасоль, вымоченная треска, томаты, лук, оливки, масло.\n2026-11-19: Supermarket Consum has direct detailed Empedrat: white beans, desalted cod, tomatoes, onion, peppers, black olives. Former Catalunya link returned only cookie banner with no ingredients.\n2026-11-19: Cruz Roja recipe explicitly has white beans, cod, fresh peppers, olives, onion and tomato; old Dia link redirected to generic recipe portal.\n19.11.2026: English Gastroteca page lacked accessible ingredient details; Spanish /es/receptes/empedrat/ includes white beans, desalted cod, tomatoes, olives, onion and peppers."
       },
       "photo": null,
       "imagePublishingBlocked": true,
@@ -4016,10 +4016,10 @@
         "stage": "editorial_research",
         "sources": [
           "https://canalcocina.es/receta/ensalada-campera-1",
-          "https://recetivo.com/recetas/ensalada-campera",
+          "https://www.directoalpaladar.com/recetas-de-ensaladas/ensalada-campera-receta-facil-imprescindible-para-verano",
           "https://www.bonviveur.es/recetas/ensalada-campera"
         ],
-        "note": "Пропорции пересчитаны для двух порций"
+        "note": "Пропорции пересчитаны для двух порций\n19.11.2026: recetivo URL did not yield an accessible recipe; replaced with Directo al Paladar traditional ensalada campera (patata, atún, huevo, pimiento verde, cebolla, tomate, aceitunas, aceite y vinagre)."
       },
       "photo": null,
       "imagePublishingBlocked": true,
