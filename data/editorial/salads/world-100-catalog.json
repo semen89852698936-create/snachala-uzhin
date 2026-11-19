@@ -6585,7 +6585,7 @@
           "https://www.adonisspices.com/directions.php?id=18",
           "https://cookpad.com/eng/recipes/4533354"
         ],
-        "note": "Фактическое соотношение ингредиентов на две порции, финальная проверка редактора требуется"
+        "note": "Фактическое соотношение ингредиентов на две порции, финальная проверка редактора требуется\n2026-11-19: Zaatar and Zaytoun and Adonis Spice both include roasted eggplant and fresh vegetables; cucumber and mint are optional regional additions omitted in our parsley/tomato/onion version."
       },
       "photo": null,
       "imagePublishingBlocked": true,
@@ -6873,10 +6873,10 @@
         "stage": "editorial_research",
         "sources": [
           "https://periandsons.com/recipe.php?p=Lebanese+Potato+Salad+%28Salatet+Batata%29",
-          "https://thelittleferrarokitchen.com/lebanese-potato-salad-with-sumac/",
-          "https://www.talasoubra.com/lebanese-potato-salad"
+          "https://maureenabood.com/lebanese-potato-salad-with-scallions-and-mint/",
+          "https://www.julietaboulie.com/sittos-batata-salata"
         ],
-        "note": "Ливанский картофельный салат с петрушкой, мятой, луком, лимоном, маслом, в источниках встречается сумах."
+        "note": "Ливанский картофельный салат с петрушкой, мятой, луком, лимоном, маслом, в источниках встречается сумах.\n2026-11-19 independent review: Replaced inaccessible Ferraro blog with Maureen Abood's Lebanese potato salad: potatoes, scallions, mint, lemon and olive oil, mayonnaise-free.\n2026-11-19 independent review: Replaced dead Tala Soubra URL with Julie Taboulie's Lebanese grandmother salad: cooked potato herbs, green onion, lemon, olive oil, no mayo."
       },
       "photo": null,
       "imagePublishingBlocked": true,
@@ -6975,9 +6975,9 @@
         "sources": [
           "https://www.food.com/recipe/salatah-el-loobyea-lebanese-green-bean-salad-434359",
           "https://www.astray.com/recipes/?show=Lebanese+green+bean+salad",
-          "https://abouteating.com/2020/08/06/comfort-food-from-lebanon/"
+          "https://www.food.com/recipe/lebanese-green-bean-salad-172357"
         ],
-        "note": "Удалена ссылка на иной рецепт loubieh bzeit (тушение фасоли с томатами); заменена на три источника холодного салата из зелёной фасоли с лимоном."
+        "note": "Удалена ссылка на иной рецепт loubieh bzeit (тушение фасоли с томатами); заменена на три источника холодного салата из зелёной фасоли с лимоном.\n2026-11-19 independent review: Replaced general Lebanon comfort food overview with recipe of boiled green beans, lemon, parsley, garlic, onion and olive oil.\n2026-11-19: Astray older magazine recipe chills 2h; our version is served warm or slightly chilled immediately. Same green bean garlic lemon parsley base, time is author fast variation."
       },
       "photo": null,
       "imagePublishingBlocked": true,
@@ -7074,11 +7074,11 @@
       "sourceReview": {
         "stage": "editorial_research",
         "sources": [
-          "https://eeina.com/en/recipes/chickpea-parsley-salad.html",
-          "https://zaatarandzaytoun.com/chickpea-salad/",
-          "https://www.tasteofbeirut.com/chickpea-salad/"
+          "https://thelemonbowl.com/lebanese-chopped-salad-with-chickpeas/",
+          "https://www.thekitchn.com/recipe-chickpea-salad-with-onion-sumac-and-lemon-recipes-from-the-kitchn-194190",
+          "https://www.washingtonpost.com/recipes/chickpea-salad-sumac-onions/"
         ],
-        "note": "Фактическое соотношение ингредиентов на две порции, финальная проверка редактора требуется"
+        "note": "Фактическое соотношение ингредиентов на две порции, финальная проверка редактора требуется\n2026-11-19 independent review: EEINA first source contained tahini unlike our lemon-oil dressing; replaced with Lebanese chopped salad and chickpeas with lemon oil and fresh herbs, variants have additional vegetables.\n2026-11-19 independent review: ZaatarandZaytoun old page inaccessible; The Kitchn confirms chickpeas parsley, lemon, olive oil and sumac, uses red not green onion.\n2026-11-19 independent review: Taste of Beirut third page inaccessible; Washington Post confirms chickpea sumac parsley lemon oil, red onion instead of green onion."
       },
       "photo": null,
       "imagePublishingBlocked": true,
