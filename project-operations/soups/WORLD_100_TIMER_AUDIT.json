@@ -1,7 +1,7 @@
 {
   "collection": "НАШ ВЕЧЕР. 100 супов",
   "status": "CANDIDATE_TIMER_AUDIT_NOT_APPROVED",
-  "note": "This extracts time durations from every soup cooking step; it is not a final checked cooking timer. A step can have multiple phases. For multi-duration steps do not automatically choose a single countdown. Readiness checks prevail over fixed minutes.",
+  "note": "Timer candidates extracted from 504 textual steps; NOT a checked end-to-end cooking plan. Multi-duration and doneness checks need explicit editorial decisions.",
   "stats": {
     "steps": 504,
     "numeric": 264,
@@ -2986,7 +2986,7 @@
         {
           "step": 1,
           "time_candidates": [],
-          "requires_readiness_check": true,
+          "requires_readiness_check": false,
           "mode": "MANUAL_OR_UNTIMED",
           "no_auto_timer_reason": "No numeric duration stated; may be preparation or plating"
         },
@@ -3678,7 +3678,7 @@
               "phrase": "65–80 минут"
             }
           ],
-          "requires_readiness_check": true,
+          "requires_readiness_check": false,
           "mode": "CANDIDATE_DURATION_NOT_APPROVED",
           "no_auto_timer_reason": null
         },
@@ -4879,7 +4879,7 @@
               "phrase": "30–60 секунд"
             }
           ],
-          "requires_readiness_check": false,
+          "requires_readiness_check": true,
           "mode": "CANDIDATE_DURATION_NOT_APPROVED",
           "no_auto_timer_reason": null
         }
@@ -5021,7 +5021,7 @@
               "phrase": "10–12 минут"
             }
           ],
-          "requires_readiness_check": false,
+          "requires_readiness_check": true,
           "mode": "CANDIDATE_DURATION_NOT_APPROVED",
           "no_auto_timer_reason": null
         },
