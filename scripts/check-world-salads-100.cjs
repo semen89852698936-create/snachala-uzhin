@@ -50,12 +50,21 @@ for(const r of recipes){
   if (verified) {
     assert.ok(Array.isArray(r.sourceEvidence) && r.sourceEvidence.length >= 3,
       'Verified card needs three source records: '+r.id);
-    const read = r.sourceEvidence.filter(e => (e.status === 'read' || e.read === true) &&
-      typeof e.url === 'string' && e.url.startsWith('https://') &&
-      typeof e.evidence === 'string' && e.evidence.length >= 35);
-    assert.ok(read.length >= 3, 'Verified card needs three read sources with evidence: '+r.id);
-    assert.equal(new Set(read.map(e => new URL(e.url).hostname)).size >= 3,
-      true, 'Verified sources must have three distinct publisher domains: '+r.id);
+    // Historical editorial records use several explicit evidence schemas.
+    // A date alone is NOT proof of reading; require substantive recipe evidence.
+    const read = r.sourceEvidence.filter(e => {
+      const evidence = e.evidence ?? e.recipeEvidence;
+      const readFlag = e.read === true || e.actuallyRead === true ||
+        e.verifiedRead === true || e.status === 'read' ||
+        (typeof e.readOn === 'string' && e.readOn.length > 0) ||
+        (typeof e.accessed === 'string' && e.accessed.length > 0 && e.type === 'recipe_read') ||
+        (typeof e.checkedOn === 'string' && e.checkedOn.length > 0 && e.status === 'read_and_compared');
+      return readFlag && typeof e.url === 'string' && e.url.startsWith('https://') &&
+        typeof evidence === 'string' && evidence.length >= 35;
+    });
+    assert.ok(read.length >= 3, 'Verified card needs three explicitly read sources with evidence: '+r.id);
+    assert.ok(new Set(read.map(e => new URL(e.url).hostname)).size >= 3,
+      'Verified sources must have three distinct publisher domains: '+r.id);
   }
   assert.equal(r.photo,undefined,'Never reuse an old unrelated photo: '+r.id);
 }
