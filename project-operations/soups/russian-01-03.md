@@ -24,7 +24,7 @@
 
 **Три независимых рецептурных источника:**
 - https://www.gastronom.ru/recipe/26598/klassicheskij-borsch-s-govjadinoj
-- https://openkitchen.eda.yandex/article/dishes/recipes/borsch-po-klassicheskomu-retseptu
+- https://food.ru/recipes/188835-vkusnyi-borshch-s-goviadinoi
 - https://www.edimdoma.ru/retsepty/155389-borsch-klassicheskiy-s-govyadinoy
 
 **Визуальные ориентиры:** фото к трём рецептам выше; https://kubnews.ru/panorama/2026/01/11/borshch-s-govyadinoy-stal-nasyshchennee-i-yarche-dobavila-uksus-i-sakhar-v-zapravku-i-tsvet-poluchil/ . Отличия в подаче не являются основанием автоматически менять рецепт.
