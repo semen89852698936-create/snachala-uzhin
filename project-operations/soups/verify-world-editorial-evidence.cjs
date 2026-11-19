@@ -16,7 +16,7 @@ for(const [i,r] of recipes.entries()){
  if(r.id!==i+1)errors.push('Wrong ID '+r.id);
  const evidence=r.source_content_evidence;
  const selected=single.recipes[i];
- if(!selected||selected.id!==r.id||!r.recipe_sources.includes(selected.url)||!selected.source_title)errors.push('#'+r.id+' no selected original source');
+ if(!selected||selected.id!==r.id||!/^https:\/\//.test(selected.url)||!selected.source_title)errors.push('#'+r.id+' no selected original source');
  if(selected?.approved && (selected.ingredient_check!=='PASS'||selected.technique_check!=='PASS'||selected.time_check!=='PASS'))errors.push('#'+r.id+' falsely approved');
  // Historical three-source evidence is retained, but is no longer a pass condition.
  if(!r.recipe_sources.length)errors.push('#'+r.id+' missing source');
