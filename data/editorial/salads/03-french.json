@@ -116,10 +116,10 @@
         "stage": "editorial_research",
         "sources": [
           "https://www.explorenicecotedazur.com/explorer/art-de-vivre/gastronomie-et-terroir/recettes-de-cuisine-nicoise/la-salade-nicoise/",
-          "https://provence-alpes-cotedazur.com/que-faire/vin-et-gastronomie/les-recettes-du-sud/la-salade-nicoise/",
-          "https://www.academiedugout.fr/recettes/salade-nicoise_8215_2"
+          "https://www.nice-cooking.com/fr/salade-nicoise/",
+          "https://www.allodocteurs.fr/la-recette-traditionnelle-de-la-salade-nicoise-37721.html"
         ],
-        "note": "Учтена французская региональная рецептурная традиция"
+        "note": "Учтена французская региональная рецептурная традиция\n2026-11-19: Replaced source with site returning 403 in audit with Nice Cooking direct historical commentary recipe: raw tomatoes peppers radishes eggs tuna anchovy olives oil, no potatoes or boiled green beans.\n2026-11-19: Replaced inaccessible Académie page with chef Julia Sedefdjian's authentic Niçoise published by Allo Docteurs: only raw vegetables, eggs, tuna, anchovies, olive and basil, no potato or cooked green beans."
       },
       "editorialApproval": {
         "status": "approved_by_user",
@@ -356,10 +356,10 @@
         "stage": "editorial_research",
         "sources": [
           "https://www.pays-bergerac-tourisme.com/fr/deguster/les-recettes/salade-perigourdine",
-          "https://noixduperigord.com/fr/les-recettes/entrees/salade-perigourdine",
+          "https://www.noixduperigord.com/fr/les-recettes/entrees/salade-perigourdine",
           "https://www.marmiton.org/recettes/recette_salade-perigourdine-aux-foies-de-volaille_37573.aspx"
         ],
-        "note": "Авторская комбинация двух региональных вариантов: салат с куриной печенью подтверждает туристическая организация Bergerac, а вариант с уткой и магре описан ассоциацией Noix du Périgord. Не выдавать сочетание за единственную каноническую рецептуру."
+        "note": "Авторская комбинация двух региональных вариантов: салат с куриной печенью подтверждает туристическая организация Bergerac, а вариант с уткой и магре описан ассоциацией Noix du Périgord. Не выдавать сочетание за единственную каноническую рецептуру.\nSource check 2026-11-19: Correct canonical www domain; live recipe has smoked duck magret plus confit duck gizzards, walnut, potato, foie gras and strawberries, NOT chicken liver. Our chicken liver + magret is expressly an editorial mixed variation, not exact original."
       },
       "editorialApproval": {
         "status": "approved_by_user",
@@ -658,11 +658,11 @@
       "sourceReview": {
         "stage": "editorial_research",
         "sources": [
-          "https://sain-delicieux.fr/recettes/salade-de-carottes-rapees/",
-          "https://www.marmiton.org/recettes/recette_carottes-rapees-vinaigrette_12609.aspx",
-          "https://www.750g.com/carottes-rapees-r2000.htm"
+          "https://www.sainsburysmagazine.co.uk/recipes/mains/french-carrot-salad",
+          "https://cantines.nice.fr/actualite/la-recette-du-chef-ratatouille-les-carottes-rapees-a-la-vinaigrette-moutardee",
+          "https://www.marieclaire.fr/cuisine/carottes-rapees-toutes-simples%2C1521578.asp"
         ],
-        "note": "Учтена французская региональная рецептурная традиция"
+        "note": "Сверено 19.11.2026: Sainsbury's Magazine подтверждает морковь, дижонскую горчицу, белый винный уксус, оливковое масло и петрушку, а также способ эмульгирования; несоответствующая первая ссылка заменена.\n2026-11-19: Replaced unavailable Marmiton link with school chef's mustard-Dijon grated carrot vinaigrette with parsley option.\n2026-11-19: Replaced unavailable 750g link with Marie Claire grated carrot vinaigrette, mustard lemon/wine vinegar and parsley."
       },
       "editorialApproval": {
         "status": "approved_by_user",
@@ -869,10 +869,10 @@
         "stage": "editorial_research",
         "sources": [
           "https://frigolade.fr/recettes/salade-de-pommes-de-terre/",
-          "https://www.marmiton.org/recettes/recette_salade-de-pommes-de-terre-a-la-francaise_43953.aspx",
-          "https://www.academiedugout.fr/recettes/salade-de-pommes-de-terre_12085_2"
+          "https://ioumi.fr/recettes/salade-de-pommes-de-terre-nouvelles-aux-herbes.html",
+          "https://cuisinezavecdjouza.fr/salade-pommes-de-terre-aux-herbes/"
         ],
-        "note": "Учтена французская региональная рецептурная традиция"
+        "note": "Учтена французская региональная рецептурная традиция\n2026-11-19: Replaced inaccessible Marmiton link with ioumi herb potato salad with shallot and mustard oil vinegar.\n2026-11-19: Replaced inaccessible Académie reference with French herbal potato salad: warm potato with vinegar, mustard, shallot and parsley, no mayonnaise."
       },
       "editorialApproval": {
         "status": "approved_by_user",
@@ -904,7 +904,7 @@
           "group": "Основное"
         },
         {
-          "name": "Корень сельдерея",
+          "name": "Сельдерей черешковый",
           "amount": 150,
           "unit": "г",
           "group": "Основное"
@@ -948,7 +948,7 @@
         },
         {
           "title": "Подготовь сельдерей",
-          "detail": "Очисти корень сельдерея и натри тонкой соломкой, сразу сбрызни яблочным уксусом.",
+          "detail": "Черешки сельдерея промой, при необходимости удали грубые волокна и нарежь тонкими полукружьями; сбрызни яблочным уксусом.",
           "timer": 0
         },
         {
@@ -958,17 +958,17 @@
         },
         {
           "title": "Заправь",
-          "detail": "Смешай крем-фреш и горчицу, аккуратно соединить с картофелем, сельдереем, ветчиной и яблоком; слегка охлади, попробуй на соль и подай.",
+          "detail": "Смешай крем-фреш и горчицу, аккуратно соедини с картофелем, сельдереем, ветчиной и яблоком; слегка охлади, попробуй на соль и подай.",
           "timer": 15
         }
       ],
-      "tip": "Правильное французское название salade cauchoise, специалитет Нормандии.",
+      "tip": "В классическом салате cauchoise используют нежные черешки сельдерея, не корень. Картофель заправляй, пока он слегка тёплый.",
       "warn": "Сельдерей, молочные продукты и возможная горчица аллергены.",
       "equipment": "Нож, доска, миска, кастрюля и сковорода при необходимости",
       "tags": [
         "Французская кухня"
       ],
-      "photoBrief": "Сливочный салат из кусочков варёного картофеля, тонкого светлого корня сельдерея и розовой ветчины, немного яблока; белая сметанно-сливочная заправка. Не салат нисуаз.",
+      "photoBrief": "Сливочный салат из кусочков варёного картофеля, тонко нарезанных светлых черешков сельдерея и розовой ветчины, немного яблока; белая сметанно-сливочная заправка. Не салат нисуаз.",
       "photoStatus": "awaiting_original_photo_approval",
       "sourceReview": {
         "stage": "editorial_research",
@@ -977,7 +977,7 @@
           "https://goedenlekker.nl/fr/blogs/recettes/salade-cauchoise",
           "https://cuisine-maison-comme-autrefois.blogspot.com/2014/11/recette-de-salade-cauchoise-pommes-de.html"
         ],
-        "note": "Учтена французская региональная рецептурная традиция"
+        "note": "Независимая сверка 19.11.2026: Produits de Région и Goed en Lekker прямо указывают черешковый сельдерей; исправлены ингредиент, техника нарезки и фото-ТЗ. Яблоко оставлено как возможная авторская вариация, не обязательный классический ингредиент."
       },
       "editorialApproval": {
         "status": "approved_by_user",
