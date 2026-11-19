@@ -1,15 +1,12 @@
 {
   "name": "НАШ ВЕЧЕР: первые 40 национальных салатов",
   "date": "2026-11-19",
-  "stage": "STAGING_MEDIA_NOT_UPLOADED",
+  "stage": "APPROVED_ORIGINALS_AWAITING_BINARY_UPLOAD",
   "source": "release-candidate/first-40-salads-20261119",
   "publicSiteTouched": false,
   "approvedPhotos": 40,
   "verifiedMediaInGit": 0,
-  "mediaContentReviewPending": [
-    31,
-    38
-  ],
+  "mediaContentReviewPending": [],
   "files": [
     {
       "number": 1,
@@ -257,7 +254,7 @@
       "photo": "/assets/world-salads/31_world-salad-es-001.webp",
       "visualApproved": true,
       "inGit": false,
-      "contentReviewNeeded": true
+      "contentReviewNeeded": false
     },
     {
       "number": 32,
@@ -313,7 +310,7 @@
       "photo": "/assets/world-salads/38_world-salad-es-008.webp",
       "visualApproved": true,
       "inGit": false,
-      "contentReviewNeeded": true
+      "contentReviewNeeded": false
     },
     {
       "number": 39,
@@ -331,5 +328,6 @@
       "inGit": false,
       "contentReviewNeeded": false
     }
-  ]
+  ],
+  "userDecision": "2026-11-19: publish original photos 31 and 38 unchanged"
 }
