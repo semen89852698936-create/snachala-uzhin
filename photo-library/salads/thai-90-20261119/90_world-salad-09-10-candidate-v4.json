@@ -9,6 +9,8 @@
   "bytes": 228448,
   "width": 1536,
   "height": 1024,
-  "status": "generated_candidate_pending_user_approval",
-  "published": false
+  "status": "approved_by_user",
+  "published": false,
+  "approved_for_publication": true,
+  "approval_note": "User approved the displayed photo for Thai salad #90. Preserve exact v4 candidate image and its SHA-256; do not replace with v1-v3."
 }
