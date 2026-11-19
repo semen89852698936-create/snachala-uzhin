@@ -4,7 +4,7 @@
   "date": "2026-11-19",
   "disclaimer": "One selected original recipe per card. Archived excerpts are for preliminary triage, not proof of full reading or a culinary signoff. Timers require manual readiness and multi-phase checks. Previously recorded 3-URL comparisons remain as historical provenance and are not required. Full single-source reviews of first 4 completed, but recipe #2 needs alignment; approved count does not mean photographs or public publication are approved.",
   "total": 100,
-  "full_reviews_completed": 80,
+  "full_reviews_completed": 89,
   "recipes": [
     {
       "id": 1,
@@ -1537,10 +1537,13 @@
       "ingredient_excerpt": "2 lbs beef soup bones (shank/femur marrow bones and knuckles) / 2 lbs beef neck bones (or oxtail) / 2 lbs bone-in beef short rib (or flank, brisket and boneless short rib) / 5 quarts water / 2 yellow onions (can sub with shallots or a combination of ",
       "method_excerpt": "Add soup bones (2 lbs), beef neck bones (2 lbs), and bone-in beef short rib (2 lbs) to a large pot (at least 8-quart capacity). No need to parboil meat. Add water to cover and bring it to a boil (about 15 minutes). Boil for a",
       "preliminary_basis": "ARCHIVED_SOURCE_EXCERPTS",
-      "ingredient_check": "PENDING_FULL_SINGLE_SOURCE_REVIEW",
-      "technique_check": "PENDING_FULL_SINGLE_SOURCE_REVIEW",
-      "time_check": "PENDING_FULL_SINGLE_SOURCE_REVIEW",
-      "approved": false
+      "ingredient_check": "PASS",
+      "technique_check": "PASS",
+      "time_check": "CONDITIONAL_READINESS",
+      "approved": false,
+      "review_note": "Vicky Pham pho bo charred onion/ginger, blanched beef bones with brisket, star anise, cinnamon and rice noodles. Editorial separates raw thin-sliced beef and cooks in boiling broth 30–60s or until done; requires individual readiness check.",
+      "review_method": "SINGLE_ORIGINAL_SOURCE_REVIEW_WITH_EDITORIAL_COMPARISON",
+      "review_date": "2026-11-19"
     },
     {
       "id": 82,
@@ -1553,10 +1556,13 @@
       "ingredient_excerpt": "One whole chicken (about 4 lbs) / 4 quarts water / 2-inch ginger (unpeeled) / 2 yellow onions or 8 large shallots (peeled) / 2 stalks green onions / 1 small bunch fresh cilantro / 2 tablespoons dried coriander seeds / 1 Chinese cinnamon (optional) / ",
       "method_excerpt": "Place the ginger and shallots on a baking tray and roast in a toaster oven or air fryer at 400°F for about 15 minutes, or until lightly charred and fragrant. In a small dry frying pan, toast the pho spices over medium heat fo",
       "preliminary_basis": "ARCHIVED_SOURCE_EXCERPTS",
-      "ingredient_check": "PENDING_FULL_SINGLE_SOURCE_REVIEW",
-      "technique_check": "PENDING_FULL_SINGLE_SOURCE_REVIEW",
-      "time_check": "PENDING_FULL_SINGLE_SOURCE_REVIEW",
-      "approved": false
+      "ingredient_check": "PASS",
+      "technique_check": "PASS",
+      "time_check": "CONDITIONAL_READINESS",
+      "approved": false,
+      "review_note": "Vicky Pham pho ga chicken broth with charred ginger/onion, spices, rice noodles. Editorial 50-60min chicken simmer then shred and serve, ensure safe center doneness.",
+      "review_method": "SINGLE_ORIGINAL_SOURCE_REVIEW_WITH_EDITORIAL_COMPARISON",
+      "review_date": "2026-11-19"
     },
     {
       "id": 83,
@@ -1569,10 +1575,13 @@
       "ingredient_excerpt": "3 lbs pork and/or beef bones (hocks/feet and/or knuckles in small chunks) / 1 lb boneless pork shank / 1 1/2 lbs beef brisket or beef banana shank / 1/2 lb beef tendon (optional) / 6 quarts water / 4 large lemongrass stalks / 10 shallots or 1 large y",
       "method_excerpt": "Add the bones and meat to a large stockpot and cover them with water. Bring the pot to a boil. Once it reaches a rolling boil, allow it to cook for about 5 minutes or until the impurities float to the surface. Turn off the he",
       "preliminary_basis": "ARCHIVED_SOURCE_EXCERPTS",
-      "ingredient_check": "PENDING_FULL_SINGLE_SOURCE_REVIEW",
-      "technique_check": "PENDING_FULL_SINGLE_SOURCE_REVIEW",
-      "time_check": "PENDING_FULL_SINGLE_SOURCE_REVIEW",
-      "approved": false
+      "ingredient_check": "PASS",
+      "technique_check": "PASS",
+      "time_check": "PASS",
+      "approved": true,
+      "review_note": "Vicky Pham bun bo Hue uses beef/pork simmer with lemongrass, shrimp paste and chili-annatto oil, thick rice noodles; editorial matches major ingredients, meat cooked until tender.",
+      "review_method": "SINGLE_ORIGINAL_SOURCE_REVIEW_WITH_EDITORIAL_COMPARISON",
+      "review_date": "2026-11-19"
     },
     {
       "id": 84,
@@ -1585,10 +1594,13 @@
       "ingredient_excerpt": "2 lbs pork hock chunks / 10 large shrimp/prawns with heads / 3 tablespoons vegetable oil (divided) / 2-inch ginger (leave unpeeled; slice into thick coins) / 4 large shallots (peel and slice into thick wedges) / 5 garlic cloves (peel and slice) / 3 ¾",
       "method_excerpt": "Fill a 5-quart stock pot half way with water and bring the pot to a boil. Add ginger slices and a third of the sliced shallots. Let the pot simmer for 5 minutes until shallots and ginger release their aroma. Add pork hocks. B",
       "preliminary_basis": "ARCHIVED_SOURCE_EXCERPTS",
-      "ingredient_check": "PENDING_FULL_SINGLE_SOURCE_REVIEW",
-      "technique_check": "PENDING_FULL_SINGLE_SOURCE_REVIEW",
-      "time_check": "PENDING_FULL_SINGLE_SOURCE_REVIEW",
-      "approved": false
+      "ingredient_check": "PASS",
+      "technique_check": "PASS",
+      "time_check": "CONDITIONAL_READINESS",
+      "approved": false,
+      "review_note": "Vicky Pham bun rieu crab-shrimp-pork-and-tomato soup has egg-bound seafood-meat cakes and tofu, rice vermicelli; editorial needs center doneness of pork and shellfish cakes.",
+      "review_method": "SINGLE_ORIGINAL_SOURCE_REVIEW_WITH_EDITORIAL_COMPARISON",
+      "review_date": "2026-11-19"
     },
     {
       "id": 85,
@@ -1601,10 +1613,13 @@
       "ingredient_excerpt": "2 small yellow onions (or 8 shallots) / 2-inch piece fresh ginger (about 2 oz) / 4 chicken thighs (bone-in recommended) / 4 quarts water / Dried salted shrimp (about 50 grams) / 10 small dried shiitake mushrooms / 4 eggs / 1 teaspoon fish sauce / 1 t",
       "method_excerpt": "Peel the outer layer of the yellow onions and cut in half. Slice the ginger into thick coins. Place everything on parchment paper or foil for easier cleanup, then roast in a toaster oven or air fryer at 400°F for 15 minutes, ",
       "preliminary_basis": "ARCHIVED_SOURCE_EXCERPTS",
-      "ingredient_check": "PENDING_FULL_SINGLE_SOURCE_REVIEW",
-      "technique_check": "PENDING_FULL_SINGLE_SOURCE_REVIEW",
-      "time_check": "PENDING_FULL_SINGLE_SOURCE_REVIEW",
-      "approved": false
+      "ingredient_check": "SOURCE_ACCESS_BLOCKED",
+      "technique_check": "SOURCE_ACCESS_BLOCKED",
+      "time_check": "CONDITIONAL_READINESS",
+      "approved": false,
+      "review_note": "Source Vicky Pham bun thang returned HTTP 429; cannot complete direct source comparison. Editorial uses chicken, Vietnamese ham, egg threads, mushrooms and clear broth; requires new accessible original or retry.",
+      "review_method": "SOURCE_PAGE_429_RETRY_REQUIRED",
+      "review_date": "2026-11-19"
     },
     {
       "id": 86,
@@ -1617,10 +1632,13 @@
       "ingredient_excerpt": "2 kg ốc nhồi ta / 2 kg ốc vặn hoặc 1 kg xương hom nấu nước dùng (tùy chọn) / 4 củ hành khô / 4 quả cà chua / Gia vị: Muối hạt, mắm truyền thống, mắm tôm, ớt bột, giẫm bỗng nếp / Rau ghém: Xà lách, tía tô, kinh giới, hoa chuối, thân chuối, hành hoa...",
       "method_excerpt": "Chọn và sơ chế ốc: Chọn mua ốc nhồi ta với dấu hiệu nhận biết như vỏ mỏng, miệng đầy, trôn nhọn và cầm lên nặng tay. Để khử bùn nhớt, theo sách dạy nấu ăn&nbsp;do Tân Dân thư quán xuất bản năm 1930 nên ngâm nước vo gạo sạch í",
       "preliminary_basis": "ARCHIVED_SOURCE_EXCERPTS",
-      "ingredient_check": "PENDING_FULL_SINGLE_SOURCE_REVIEW",
-      "technique_check": "PENDING_FULL_SINGLE_SOURCE_REVIEW",
-      "time_check": "PENDING_FULL_SINGLE_SOURCE_REVIEW",
-      "approved": false
+      "ingredient_check": "PASS",
+      "technique_check": "PASS",
+      "time_check": "PASS",
+      "approved": true,
+      "review_note": "VnExpress bun oc Hanoi traditional uses food-grade snails, sour pink tomato broth, rice vermicelli and herbs; editorial requires PRE-COOKED snails and heats briefly, not equivalent to cooking raw snails.",
+      "review_method": "SINGLE_ORIGINAL_SOURCE_REVIEW_WITH_EDITORIAL_COMPARISON",
+      "review_date": "2026-11-19"
     },
     {
       "id": 87,
@@ -1633,10 +1651,13 @@
       "ingredient_excerpt": "3 lbs pork neckbones / 3 liters water / ¼ cup dried shrimp / 1 small dried squid / 1 small daikon / 1 yellow onion / 1 tablespoon plus 1 teaspoon sea salt / 1 tablespoon chicken bouillon powder / 1 tablespoon plus 2 teaspoons granulated white sugar /",
       "method_excerpt": "This will keep the broth clear. To a large stock pot, add pork bones. Fill the pot with water to cover the bones then bring it to a boil. Boil the bones for about 8 minutes or until foam floats to the top. Place a colander in",
       "preliminary_basis": "ARCHIVED_SOURCE_EXCERPTS",
-      "ingredient_check": "PENDING_FULL_SINGLE_SOURCE_REVIEW",
-      "technique_check": "PENDING_FULL_SINGLE_SOURCE_REVIEW",
-      "time_check": "PENDING_FULL_SINGLE_SOURCE_REVIEW",
-      "approved": false
+      "ingredient_check": "PASS",
+      "technique_check": "PASS",
+      "time_check": "CONDITIONAL_READINESS",
+      "approved": false,
+      "review_note": "Vicky Pham hu tieu mi uses pork bones, shrimp, pork and noodle soup with daikon and dried shrimp; editorial uses rice noodles (source also describes egg noodle variant), shrimp and pork must be safely cooked.",
+      "review_method": "SINGLE_ORIGINAL_SOURCE_REVIEW_WITH_EDITORIAL_COMPARISON",
+      "review_date": "2026-11-19"
     },
     {
       "id": 88,
@@ -1649,10 +1670,13 @@
       "ingredient_excerpt": "4-5 lbs pork spare ribs (cut inbetween bones into individual ribs) / 4 yellow onions (peel and cut slits into them) / 7 quarts water / 1/4 cup fine ground sea salt (lightly packed) / 1/4 cup pork bouillon powder (can sub with chicken bouillon or mush",
       "method_excerpt": "This step is typical for Vietnamese home cooks to achieve a clear broth. Place the large pork spare ribs into a large stockpot. Fill with just enough water to cover the meat. Bring to a rolling boil and let it boil vigorously",
       "preliminary_basis": "ARCHIVED_SOURCE_EXCERPTS",
-      "ingredient_check": "PENDING_FULL_SINGLE_SOURCE_REVIEW",
-      "technique_check": "PENDING_FULL_SINGLE_SOURCE_REVIEW",
-      "time_check": "PENDING_FULL_SINGLE_SOURCE_REVIEW",
-      "approved": false
+      "ingredient_check": "PASS",
+      "technique_check": "PASS",
+      "time_check": "CONDITIONAL_READINESS",
+      "approved": false,
+      "review_note": "Vicky Pham banh canh suon heo pork ribs and chewy thick tapioca/rice noodles, shrimp additions variant; editorial long rib broth and separate shrimp stage, check pork meat and shrimp cooked.",
+      "review_method": "SINGLE_ORIGINAL_SOURCE_REVIEW_WITH_EDITORIAL_COMPARISON",
+      "review_date": "2026-11-19"
     },
     {
       "id": 89,
@@ -1665,10 +1689,13 @@
       "ingredient_excerpt": "1 lb fish (catfish and salmon preferred) / 2 tablespoons vegetable oil (or other neutral oil of your choice) / 5 large garlic cloves (peel and finely mince) / 4 cups water / 2 teaspoons fish sauce / 3 tablespoons granulated white sugar / 1 tablespoon",
       "method_excerpt": "Rinse under cold water, then slice into 1-inch steaks, keeping the backbone and skin attached. / Heat oil in a medium pot. Add garlic and pan-fry until golden brown, tossing occasionally for even cooking. Remove half of the g",
       "preliminary_basis": "ARCHIVED_SOURCE_EXCERPTS",
-      "ingredient_check": "PENDING_FULL_SINGLE_SOURCE_REVIEW",
-      "technique_check": "PENDING_FULL_SINGLE_SOURCE_REVIEW",
-      "time_check": "PENDING_FULL_SINGLE_SOURCE_REVIEW",
-      "approved": false
+      "ingredient_check": "PASS",
+      "technique_check": "PASS",
+      "time_check": "CONDITIONAL_READINESS",
+      "approved": false,
+      "review_note": "Vicky Pham canh chua fish with tamarind, tomato, pineapple, okra and sprouts; editorial 6-8min fish and 3-4min vegetables must include fish doneness check.",
+      "review_method": "SINGLE_ORIGINAL_SOURCE_REVIEW_WITH_EDITORIAL_COMPARISON",
+      "review_date": "2026-11-19"
     },
     {
       "id": 90,
@@ -1681,10 +1708,13 @@
       "ingredient_excerpt": "",
       "method_excerpt": "",
       "preliminary_basis": "ARCHIVED_SOURCE_EXCERPTS",
-      "ingredient_check": "PENDING_FULL_SINGLE_SOURCE_REVIEW",
-      "technique_check": "PENDING_FULL_SINGLE_SOURCE_REVIEW",
-      "time_check": "PENDING_FULL_SINGLE_SOURCE_REVIEW",
-      "approved": false
+      "ingredient_check": "PASS",
+      "technique_check": "PASS",
+      "time_check": "CONDITIONAL_READINESS",
+      "approved": false,
+      "review_note": "Hungry Huy canh kho qua stuffed bitter melon with pork, glass noodles and black fungus in broth; editorial method comparable, center of raw pork stuffing needs verified safe cooking beyond 35–45min.",
+      "review_method": "SINGLE_ORIGINAL_SOURCE_REVIEW_WITH_EDITORIAL_COMPARISON",
+      "review_date": "2026-11-19"
     },
     {
       "id": 91,
@@ -1847,6 +1877,6 @@
       "approved": false
     }
   ],
-  "quality_approved": 49,
-  "review_in_progress": 31
+  "quality_approved": 51,
+  "review_in_progress": 39
 }
