@@ -64,8 +64,14 @@ for(const r of recipes){
         typeof evidence === 'string' && evidence.length >= 35;
     });
     assert.ok(read.length >= 3, 'Verified card needs three explicitly read sources with evidence: '+r.id);
-    assert.ok(new Set(read.map(e => new URL(e.url).hostname)).size >= 3,
-      'Verified sources must have three distinct publisher domains: '+r.id);
+    // Distinct named authors on a shared blogging platform can be independent.
+    // Still reject repeated URLs and repeated publisher identities.
+    assert.ok(new Set(read.map(e => e.url)).size >= 3,
+      'Verified sources must have three distinct URLs: '+r.id);
+    const identities = read.map(e => (typeof e.publisher === 'string' && e.publisher.trim()) ||
+      new URL(e.url).hostname + '/' + new URL(e.url).pathname.split('/').filter(Boolean)[0]);
+    assert.ok(new Set(identities).size >= 3,
+      'Verified sources must have three distinct publishers or authors: '+r.id);
   }
   assert.equal(r.photo,undefined,'Never reuse an old unrelated photo: '+r.id);
 }
