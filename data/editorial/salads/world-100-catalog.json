@@ -7551,9 +7551,9 @@
         "sources": [
           "https://www.justonecookbook.com/spinach-with-sesame-sauce/",
           "https://www.theintrepideater.com/japanese-spinach-goma-ae/",
-          "https://www.chopstickchronicles.com/spinach-goma-ae/"
+          "https://www.chopstickchronicles.com/goma-ae/"
         ],
-        "note": "Источники, техника и 2 порции; для части блюд современная японская кухня"
+        "note": "Источники, техника и 2 порции; для части блюд современная японская кухня\n2026-11-19: Replaced failed Chopstick Chronicles spinach-goma-ae URL with actual Goma-ae recipe documenting spinach, roasted sesame, soy sauce, sugar and short blanch."
       },
       "photo": null,
       "imagePublishingBlocked": true,
@@ -7985,11 +7985,11 @@
       "sourceReview": {
         "stage": "editorial_research",
         "sources": [
-          "https://www.kikkoman.com/en/cookbook/recipe/00000305.html",
+          "https://www.shinagawa-japanese-cooking.com/post/japanese-tofu-sesame-salad-%E7%99%BD%E5%92%8C%E3%81%88",
           "https://www.justonecookbook.com/green-bean-shiraae/",
-          "https://japanesecooking101.com/shiraae-recipe/"
+          "https://japan.recipetineats.com/green-beans-with-tofu-dressing-shira-ae/"
         ],
-        "note": "Источники, техника и 2 порции; для части блюд современная японская кухня"
+        "note": "Источники, техника и 2 порции; для части блюд современная японская кухня\n2026-11-19: Former Kikkoman source for generic vegetables tofu with dried shiitake, mismatched green bean carrot salad. Shinagawa Japanese Cooking specifies tofu sesame and blanched carrots and beans.\n2026-11-19: Replaced failed JapaneseCooking101 URL with Japanese cook Yumiko's genuine green beans tofu sesame miso dressing."
       },
       "photo": null,
       "imagePublishingBlocked": true,
@@ -8176,10 +8176,10 @@
         "stage": "editorial_research",
         "sources": [
           "https://www.justonecookbook.com/tofu-salad-with-sesame-ponzu-dressing/",
-          "https://www.kikkoman.com/en/cookbook/recipe/00000740.html",
-          "https://norecipes.com/japanese-tofu-salad/"
+          "https://shizuokagourmet.com/2009/06/26/tofu-recipe-tofu-and-wakame-seaweed-salad/",
+          "https://www.kikkoman.com/en/cookbook/recipe/00000740.html"
         ],
-        "note": "Источники, техника и 2 порции; для части блюд современная японская кухня"
+        "note": "Источники, техника и 2 порции; для части блюд современная японская кухня\n2026-11-19: Replaced generic Kikkoman soy tofu salad without ponzu and wakame with Japanese food blogger's ponzu-wakame-tofu salad.\n2026-11-19: Swapped to Kikkoman tofu salad as third source: confirms tofu lettuce tomato and soy-seasoning but does not independently confirm sesame ponzu; editorial adaptation explicitly noted."
       },
       "photo": null,
       "imagePublishingBlocked": true,
