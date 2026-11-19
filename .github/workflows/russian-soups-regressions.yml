@@ -1,0 +1,40 @@
+name: Russian soup catalog regression checks
+on:
+  push:
+    branches:
+      - release/nash-vecher-russian-soups-10-20261119
+    paths:
+      - .github/workflows/russian-soups-regressions.yml
+      - scripts/test_catalog_parity.cjs
+      - scripts/test_catalog_parity_negative.cjs
+      - scripts/test_ingredient_search.cjs
+      - scripts/test_pantry_search.cjs
+      - scripts/verify-daily-evening-menus.cjs
+      - scripts/test_approved_shakshuka_photo.py
+      - scripts/test_unified_editorial.cjs
+      - assets/world-soups-10.js
+      - index.html
+      - full-catalog/index.html
+permissions:
+  contents: read
+jobs:
+  static-regressions:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020
+        with:
+          node-version: '22'
+      - name: Check replacement data and both catalog variants
+        run: node scripts/check-world-soups-release.cjs --content-only
+      - name: Catalog parity
+        run: node scripts/test_catalog_parity.cjs && node scripts/test_catalog_parity_negative.cjs
+      - name: Search and pantry regression
+        run: node scripts/test_ingredient_search.cjs && node scripts/test_pantry_search.cjs
+      - name: Dinner plans and visual stylesheet regression
+        run: node scripts/verify-daily-evening-menus.cjs && node scripts/test_unified_editorial.cjs
+      - name: Owner-approved shakshuka preserved
+        run: python3 scripts/test_approved_shakshuka_photo.py
