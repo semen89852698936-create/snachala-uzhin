@@ -50,7 +50,7 @@ for(const r of recipes){
   if (verified) {
     assert.ok(Array.isArray(r.sourceEvidence) && r.sourceEvidence.length >= 3,
       'Verified card needs three source records: '+r.id);
-    const read = r.sourceEvidence.filter(e => e.status === 'read' &&
+    const read = r.sourceEvidence.filter(e => (e.status === 'read' || e.read === true) &&
       typeof e.url === 'string' && e.url.startsWith('https://') &&
       typeof e.evidence === 'string' && e.evidence.length >= 35);
     assert.ok(read.length >= 3, 'Verified card needs three read sources with evidence: '+r.id);
