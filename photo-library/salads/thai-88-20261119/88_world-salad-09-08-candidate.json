@@ -9,6 +9,7 @@
   "bytes": 175584,
   "width": 1536,
   "height": 1024,
-  "status": "generated_candidate_pending_user_approval",
+  "status": "approved_by_user",
+  "approved_for_publication": true,
   "published": false
 }
