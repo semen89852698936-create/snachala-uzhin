@@ -3478,7 +3478,7 @@
         "https://mykoreankitchen.com/yukgaejang-spicy-beef-soup/"
       ],
       "full_editorial_markdown": "## №61. Юккэджан с говядиной\n\n**На двоих. Время:** 2 часа.\n\n**Ингредиенты:** Говяжья грудинка 350 г; вода 1,4 л; корейский папоротник госари готовый 100 г; ростки маша 120 г; зелёный лук 100 г; дайкон 100 г; соевый соус для супа 25 мл; кочукару 15 г; кунжутное масло 20 мл; чеснок 2 зубчика; соль.\n\n**Как готовить:**\n1. Залей говядину холодной водой и вари при слабом кипении 70–90 минут до мягкости, снимая пену.\n2. Достань мясо, разорви вилками на длинные волокна, бульон процеди.\n3. Смешай перец кочукару, кунжутное масло, чеснок и соевый соус; быстро прогрей 1 минуту на слабом огне, чтобы перец не подгорел.\n4. Добавь говядину, бульон, папоротник, дайкон и ростки. Вари 15–20 минут, затем положи крупно нарезанный зелёный лук на 3–5 минут.\n5. Посоли после пробы. Подавай насыщенный красный суп с видимыми длинными волокнами мяса и зеленью.\n\n**Внешний вид:** Ярко-красный слегка маслянистый бульон, длинные нити говядины, зелёный лук и ростки, а не густое пюре.\n\n**Три внешних рецептурных источника:**\n1. https://www.maangchi.com/recipe/yukgaejang\n2. https://www.koreanbapsang.com/yukgaejang-spicy-beef-soup-vegetables/\n3. https://mykoreankitchen.com/yukgaejang-spicy-beef-soup/\n\n**Рецептурные различия:** Папоротник используют не во всех адаптациях, но он важен для традиционной текстуры.\n\n**Фото:** нужна независимая визуальная проверка.\n\n---",
-      "review_status": "редакционный черновик; источники, фото и контрольная готовка не приняты",
+      "review_status": "Три независимых рецепта содержательно сопоставлены; пробная готовка, фото и окончательная приёмка не завершены",
       "photo_approved": false,
       "steps": [
         "Залей говядину холодной водой и вари при слабом кипении 70–90 минут до мягкости, снимая пену.",
@@ -3500,9 +3500,29 @@
         "чеснок 2 зубчика",
         "соль."
       ],
-      "recipe_source_audit_status": "URL_DOMAINS_LISTED_CONTENT_VERIFICATION_INCOMPLETE",
+      "recipe_source_audit_status": "THREE_INDEPENDENT_RECIPE_TEXTS_COMPARED",
       "visual_audit_status": "PENDING",
-      "photo_status": "PENDING_USER_APPROVAL"
+      "photo_status": "PENDING_USER_APPROVAL",
+      "source_content_evidence": {
+        "date": "2026-11-19",
+        "method": "Read three different Korean cooking publications, compared recipe-specific ingredients and sequence/times, 2-serving adaptation",
+        "ingredients_comparison": "Говяжья грудинка, отвар из говядины, корейский папоротник госари, ростки, дайкон и зелёный лук, кочукару, чеснок и кунжутное масло совпадают с тремя самостоятельными рецептами. Говядина 350 г и готовый госари 100 г на двоих, редактировано.",
+        "technique_and_timer_comparison": "Мясо варить до мягкости 70–90 минут; разобрать на волокна, чили и масло кратко прогреть без обугливания; с бульоном и готовым папоротником варить 15–20 минут. MAANGCHI иногда варит больше 2 часов, Korean Bapsang использует другой набор грибов.",
+        "sources": [
+          {
+            "url": "https://www.maangchi.com/recipe/yukgaejang",
+            "difference": "Maangchi: богатая версия с большим количеством госари, долгой варкой мяса"
+          },
+          {
+            "url": "https://www.koreanbapsang.com/yukgaejang-spicy-beef-soup-vegetables/",
+            "difference": "Korean Bapsang: корейская классика со ростками, большим количеством лука и госари"
+          },
+          {
+            "url": "https://mykoreankitchen.com/yukgaejang-spicy-beef-soup/",
+            "difference": "My Korean Kitchen: отдельная перечная заправка с кунжутным маслом"
+          }
+        ]
+      }
     },
     {
       "id": 62,
@@ -3517,7 +3537,7 @@
         "https://www.koreanbapsang.com/samgyetang/"
       ],
       "full_editorial_markdown": "## №62. Самгетхан с женьшенем и курицей\n\n**На двоих. Время:** 100 минут.\n\n**Ингредиенты:** Две небольшие корнишон-курицы по 450–550 г; рис клейкий 90 г; сушёный корень женьшеня для готовки 2 небольших шт.; сушёные плоды ююбы 4 шт.; чеснок 6 зубчиков (в начинке, не на поверхности); зелёный лук 20 г; вода 1,5 л; соль и перец отдельно.\n\n**Как готовить:**\n1. Замочи клейкий рис на 1 час и откинь. Проверь, чтобы курицы были полностью очищены от потрохов.\n2. В каждую курицу положи половину риса, женьшеня, ююбы и чеснока; не утрамбовывай слишком плотно, рис увеличится.\n3. Скрепи отверстие зубочисткой или кулинарной нитью. Положи обе птицы в кастрюлю и залей водой.\n4. Доведи до кипения, сними пену и вари на умеренно слабом огне около 65–80 минут. Проверь пищевым термометром: в самой толстой части курицы и в центре рисовой начинки должно быть не менее 74 °C; при необходимости вари дольше.\n5. Разложи по одной курице в глубокие миски с бульоном, добавь зелёный лук. Соль и перец подай отдельно.\n\n**Внешний вид:** Светлый почти прозрачный бульон и небольшая целая готовая курица с рисом внутри, без сырого корня и яркой овощной зажарки сверху.\n\n**Три внешних рецептурных источника:**\n1. https://www.maangchi.com/recipe/samgyetang\n2. https://mykoreankitchen.com/samgyetang-korean-ginseng-chicken-soup/\n3. https://www.koreanbapsang.com/samgyetang/\n\n**Рецептурные различия:** Самгетхан требует маленькую целую курицу, женьшень и клейкий рис; не подменять обычным куриным супом.\n\n**Фото:** нужна независимая визуальная проверка.\n\n---",
-      "review_status": "редакционный черновик; источники, фото и контрольная готовка не приняты",
+      "review_status": "Три независимых рецепта содержательно сопоставлены; пробная готовка, фото и окончательная приёмка не завершены",
       "photo_approved": false,
       "steps": [
         "Замочи клейкий рис на 1 час и откинь. Проверь, чтобы курицы были полностью очищены от потрохов.",
@@ -3536,9 +3556,29 @@
         "вода 1,5 л",
         "соль и перец отдельно."
       ],
-      "recipe_source_audit_status": "URL_DOMAINS_LISTED_CONTENT_VERIFICATION_INCOMPLETE",
+      "recipe_source_audit_status": "THREE_INDEPENDENT_RECIPE_TEXTS_COMPARED",
       "visual_audit_status": "PENDING",
-      "photo_status": "PENDING_USER_APPROVAL"
+      "photo_status": "PENDING_USER_APPROVAL",
+      "source_content_evidence": {
+        "date": "2026-11-19",
+        "method": "Read three different Korean cooking publications, compared recipe-specific ingredients and sequence/times, 2-serving adaptation",
+        "ingredients_comparison": "Небольшая целая курица, клейкий рис, женьшень, ююбы, чеснок и вода подтверждены Maangchi, Korean Bapsang, My Korean Kitchen. По одной маленькой птице на человека.",
+        "technique_and_timer_comparison": "Клейкий рис замочить 1 час, частично наполнить полость птицы, чтобы рис мог разбухнуть, варить до полной готовности 65–80 минут, 74°C в центре самой толстой части курицы и рисовой начинки. Maangchi допускает 1 час, Korean Bapsang 50+ минут, размер птиц меняет время.",
+        "sources": [
+          {
+            "url": "https://www.maangchi.com/recipe/samgyetang",
+            "difference": "Maangchi: молодая курица с рисом, женьшенем, чесноком и ююбами"
+          },
+          {
+            "url": "https://mykoreankitchen.com/samgyetang-korean-ginseng-chicken-soup/",
+            "difference": "My Korean Kitchen: рис, женьшень и дополнительные ароматические коренья"
+          },
+          {
+            "url": "https://www.koreanbapsang.com/samgyetang/",
+            "difference": "Korean Bapsang: целая маленькая птица, длинная варка до мягкости"
+          }
+        ]
+      }
     },
     {
       "id": 63,
@@ -3553,7 +3593,7 @@
         "https://www.beyondkimchee.com/seolleongtang-ox-bone-soup/"
       ],
       "full_editorial_markdown": "## №63. Соллонтхан на костном бульоне\n\n**На двоих. Время:** 8–12 часов.\n\n**Ингредиенты:** Говяжьи мозговые и суставные кости 1,6 кг; говяжья грудинка 250 г; вода для замачивания; чистая вода 3 л с доливом; зелёный лук 25 г; рис варёный для подачи 250 г; соль и перец отдельно.\n\n**Как готовить:**\n1. Замочи кости в холодной воде на 2 часа, меняя воду; быстро бланшируй 10 минут и тщательно промой.\n2. Залей кости свежей водой, доведи до активного кипения, вари 6–10 часов, доливая горячую воду по мере испарения; бульон должен стать молочно-белым.\n3. За 1,5–2 часа до конца добавь грудинку и доведи до мягкости. Вынь мясо, нарежь тонко.\n4. Процеди бульон сквозь сито, убери кости, разлей по горячим мискам, положи мясо.\n5. Подавай с рисом и зелёным луком; каждый досаливает суп сам.\n\n**Внешний вид:** Молочно-белый полностью непрозрачный костный бульон, светлые ломтики говядины и зелёный лук, никакого красного чили.\n\n**Три внешних рецептурных источника:**\n1. https://www.maangchi.com/recipe/seolleongtang\n2. https://www.koreanbapsang.com/seolleongtang-beef-bone-soup/\n3. https://www.beyondkimchee.com/seolleongtang-ox-bone-soup/\n\n**Рецептурные различия:** Насыщенный цвет возникает от долгой варки костей, молоко и сливки не используются.\n\n**Фото:** нужна независимая визуальная проверка.\n\n---",
-      "review_status": "редакционный черновик; источники, фото и контрольная готовка не приняты",
+      "review_status": "Три независимых рецепта содержательно сопоставлены; пробная готовка, фото и окончательная приёмка не завершены",
       "photo_approved": false,
       "steps": [
         "Замочи кости в холодной воде на 2 часа, меняя воду; быстро бланшируй 10 минут и тщательно промой.",
@@ -3571,9 +3611,29 @@
         "рис варёный для подачи 250 г",
         "соль и перец отдельно."
       ],
-      "recipe_source_audit_status": "URL_DOMAINS_LISTED_CONTENT_VERIFICATION_INCOMPLETE",
+      "recipe_source_audit_status": "THREE_INDEPENDENT_RECIPE_TEXTS_COMPARED",
       "visual_audit_status": "PENDING",
-      "photo_status": "PENDING_USER_APPROVAL"
+      "photo_status": "PENDING_USER_APPROVAL",
+      "source_content_evidence": {
+        "date": "2026-11-19",
+        "method": "Read three different Korean cooking publications, compared recipe-specific ingredients and sequence/times, 2-serving adaptation",
+        "ingredients_comparison": "Говяжьи суставные и мозговые кости, грудинка, вода и лук на подачу - ядро соллонтхана. Maangchi добавляет дайкон, не обязательный в редакционном варианте.",
+        "technique_and_timer_comparison": "Кости замочить 2 часа, бланшировать, долго активно варить 6–10 часов до белой эмульсии. Грудинку добавить за последние 1,5–2 часа, а рис готовый подавать отдельно. Beyond Kimchee использует Instant Pot, время из скороварки не переносить на обычную кастрюлю.",
+        "sources": [
+          {
+            "url": "https://www.maangchi.com/recipe/seolleongtang",
+            "difference": "Maangchi: светлый костный бульон с дайконом и грудинкой, долгое кипячение"
+          },
+          {
+            "url": "https://www.koreanbapsang.com/seolleongtang-beef-bone-soup/",
+            "difference": "Korean Bapsang: многочасовое кипячение костей и белый бульон"
+          },
+          {
+            "url": "https://www.beyondkimchee.com/seolleongtang-ox-bone-soup/",
+            "difference": "Beyond Kimchee: современная скороварка вместо длительной обычной варки"
+          }
+        ]
+      }
     },
     {
       "id": 64,
@@ -3588,7 +3648,7 @@
         "https://mykoreankitchen.com/galbitang-beef-short-rib-soup/"
       ],
       "full_editorial_markdown": "## №64. Кальбитхан с говяжьими рёбрами\n\n**На двоих. Время:** 2 часа 30 минут.\n\n**Ингредиенты:** Говяжьи короткие рёбра 650 г; вода 1,6 л; дайкон 200 г; лук 75 г; чеснок 3 зубчика; зелёный лук 20 г; соевый соус для супа 20 мл; соль, перец; по желанию стеклянная лапша 50 г.\n\n**Как готовить:**\n1. Замочи говяжьи рёбра в холодной воде 40 минут, смени воду, коротко бланшируй и промой.\n2. Залей рёбра свежей водой, положи лук и несколько зубчиков чеснока для аромата, вари при слабом кипении 80–100 минут.\n3. Добавь крупные куски дайкона и вари ещё 20–25 минут до мягкости корнеплода и мяса. Достань варёный лук и чеснок.\n4. Если используешь стеклянную лапшу, отвари её отдельно и разложи по мискам.\n5. Разлей прозрачный горячий бульон с рёбрами и дайконом, добавь соевый соус, соль и зелёный лук.\n\n**Внешний вид:** Прозрачный янтарный бульон с большими говяжьими рёбрами на кости, дайконом и зелёным луком; не молочный соллонтхан.\n\n**Три внешних рецептурных источника:**\n1. https://www.maangchi.com/recipe/galbitang\n2. https://www.koreanbapsang.com/galbitang-beef-short-rib-soup/\n3. https://mykoreankitchen.com/galbitang-beef-short-rib-soup/\n\n**Рецептурные различия:** Кальбитхан готовят на коротких рёбрах и долго томят для нежности, не измельчать мясо в пюре.\n\n**Фото:** нужна независимая визуальная проверка.\n\n---",
-      "review_status": "редакционный черновик; источники, фото и контрольная готовка не приняты",
+      "review_status": "Три независимых рецепта содержательно сопоставлены; пробная готовка, фото и окончательная приёмка не завершены",
       "photo_approved": false,
       "steps": [
         "Замочи говяжьи рёбра в холодной воде 40 минут, смени воду, коротко бланшируй и промой.",
@@ -3608,9 +3668,29 @@
         "соль, перец",
         "по желанию стеклянная лапша 50 г."
       ],
-      "recipe_source_audit_status": "URL_DOMAINS_LISTED_CONTENT_VERIFICATION_INCOMPLETE",
+      "recipe_source_audit_status": "THREE_INDEPENDENT_RECIPE_TEXTS_COMPARED",
       "visual_audit_status": "PENDING",
-      "photo_status": "PENDING_USER_APPROVAL"
+      "photo_status": "PENDING_USER_APPROVAL",
+      "source_content_evidence": {
+        "date": "2026-11-19",
+        "method": "Read three different Korean cooking publications, compared recipe-specific ingredients and sequence/times, 2-serving adaptation",
+        "ingredients_comparison": "Короткие говяжьи рёбра, дайкон, лук, чеснок, суповой соевый соус и зеленый лук подтверждены тремя корейскими рецептами. Стеклянная лапша дополнительна и готовится отдельно.",
+        "technique_and_timer_comparison": "Рёбра предварительно вымочить/бланшировать, варить на слабом огне 80–100 минут, затем добавить дайкон 20–25 минут; проверка мягкости мяса обязательна. Maangchi делает пряный и непряный варианты, редакционная версия прозрачная без острого перца.",
+        "sources": [
+          {
+            "url": "https://www.maangchi.com/recipe/galbitang",
+            "difference": "Maangchi: два варианта, базовый без остроты и пряный"
+          },
+          {
+            "url": "https://www.koreanbapsang.com/galbitang-beef-short-rib-soup/",
+            "difference": "Korean Bapsang: прозрачный бульон из рёбер, дайкона и лука"
+          },
+          {
+            "url": "https://mykoreankitchen.com/galbitang-beef-short-rib-soup/",
+            "difference": "My Korean Kitchen: рёбра более часа, овощи и лапша"
+          }
+        ]
+      }
     },
     {
       "id": 65,
@@ -3625,7 +3705,7 @@
         "https://www.beyondkimchee.com/beef-seaweed-soup/"
       ],
       "full_editorial_markdown": "## №65. Миёккук с морскими водорослями\n\n**На двоих. Время:** 35 минут + замачивание.\n\n**Ингредиенты:** Сушёные вакаме/миёк 22 г; говяжья грудинка тонкими ломтиками 180 г; вода 1 л; кунжутное масло 15 мл; чеснок 1 зубчик; корейский суповой соевый соус 25 мл; соль.\n\n**Как готовить:**\n1. Замочи водоросли в холодной воде на 15–20 минут, промой, отожми и нарежь короткими полосками.\n2. Нарежь говядину тонкими кусочками и быстро прогрей с кунжутным маслом 3 минуты.\n3. Добавь водоросли, обжаривай вместе 3–4 минуты, перемешивая.\n4. Влей воду, добавь соевый соус и вари при среднем слабом кипении 20–25 минут, пока бульон не станет насыщенным.\n5. Добавь очень мелко нарезанный чеснок, попробуй на соль. Подавай без картофеля и перца.\n\n**Внешний вид:** Тёмно-оливковый суп с большим количеством мягких длинных водорослей и небольшими кусочками говядины; не зелёное пюре.\n\n**Три внешних рецептурных источника:**\n1. https://www.koreanbapsang.com/miyeok-guk-beef-seaweed-soup/\n2. https://mykoreankitchen.com/korean-seaweed-soup-miyeok-guk/\n3. https://www.beyondkimchee.com/beef-seaweed-soup/\n\n**Рецептурные различия:** Количество сухих водорослей небольшое, после замачивания они сильно увеличиваются.\n\n**Фото:** нужна независимая визуальная проверка.\n\n---",
-      "review_status": "редакционный черновик; источники, фото и контрольная готовка не приняты",
+      "review_status": "Три независимых рецепта содержательно сопоставлены; пробная готовка, фото и окончательная приёмка не завершены",
       "photo_approved": false,
       "steps": [
         "Замочи водоросли в холодной воде на 15–20 минут, промой, отожми и нарежь короткими полосками.",
@@ -3643,9 +3723,29 @@
         "корейский суповой соевый соус 25 мл",
         "соль."
       ],
-      "recipe_source_audit_status": "URL_DOMAINS_LISTED_CONTENT_VERIFICATION_INCOMPLETE",
+      "recipe_source_audit_status": "THREE_INDEPENDENT_RECIPE_TEXTS_COMPARED",
       "visual_audit_status": "PENDING",
-      "photo_status": "PENDING_USER_APPROVAL"
+      "photo_status": "PENDING_USER_APPROVAL",
+      "source_content_evidence": {
+        "date": "2026-11-19",
+        "method": "Read three different Korean cooking publications, compared recipe-specific ingredients and sequence/times, 2-serving adaptation",
+        "ingredients_comparison": "Сушёные морские водоросли миёк/вакаме, говядина, кунжутное масло, суповой соевый соус и чеснок подтверждены тремя источниками. В Beyond Kimchee используется рисовая вода вместо обычной.",
+        "technique_and_timer_comparison": "Водоросли замочить 15–20 минут, говядину и размоченные водоросли отдельно обжарить/прогреть в кунжутном масле, залить водой и варить 20–25 минут до насыщенности. Вегетарианские и морепродуктовые варианты существую, но здесь с говядиной.",
+        "sources": [
+          {
+            "url": "https://www.koreanbapsang.com/miyeok-guk-beef-seaweed-soup/",
+            "difference": "Korean Bapsang: миёк, говядина и соевый соус"
+          },
+          {
+            "url": "https://mykoreankitchen.com/korean-seaweed-soup-miyeok-guk/",
+            "difference": "My Korean Kitchen: традиционный суп с говядиной либо морепродуктами"
+          },
+          {
+            "url": "https://www.beyondkimchee.com/beef-seaweed-soup/",
+            "difference": "Beyond Kimchee: рисовая вода, говядина и миёк"
+          }
+        ]
+      }
     },
     {
       "id": 66,
@@ -3660,7 +3760,7 @@
         "https://mykoreankitchen.com/manduguk-korean-dumpling-soup/"
       ],
       "full_editorial_markdown": "## №66. Мандугук с пельменями\n\n**На двоих. Время:** 35 минут с готовыми манду.\n\n**Ингредиенты:** Крупные корейские пельмени манду 8 шт. (примерно 320 г); говяжий либо анчоусный бульон 900 мл; яйцо 1 шт.; зелёный лук 20 г; соевый соус для супа 15 мл; нори гим 1 лист (по желанию); соль и перец.\n\n**Как готовить:**\n1. Нагрей бульон до кипения, приправь небольшим количеством соевого соуса.\n2. Положи сырые или замороженные манду и вари при небольшом кипении 6–10 минут, ориентируясь на размер, до полной готовности начинки.\n3. Взбей яйцо и тонкой струйкой влей по поверхности, не мешай первые 20 секунд, чтобы вышли тонкие ленточки.\n4. Добавь зелёный лук, прогрей минуту и попробуй на соль.\n5. Разлей с четырьмя манду на порцию и посыпь небольшим количеством нарезанного гим.\n\n**Внешний вид:** Светлый прозрачный суп с крупными пельменями и тонкими яичными лентами; не жареные пельмени и не густая каша.\n\n**Три внешних рецептурных источника:**\n1. https://www.maangchi.com/recipe/mandu-guk\n2. https://www.koreanbapsang.com/manduguk-korean-dumpling-soup/\n3. https://mykoreankitchen.com/manduguk-korean-dumpling-soup/\n\n**Рецептурные различия:** Манду содержат мясную/овощную начинку, проверяй готовность начинки, не только теста.\n\n**Фото:** нужна независимая визуальная проверка.\n\n---",
-      "review_status": "редакционный черновик; источники, фото и контрольная готовка не приняты",
+      "review_status": "Три независимых рецепта содержательно сопоставлены; пробная готовка, фото и окончательная приёмка не завершены",
       "photo_approved": false,
       "steps": [
         "Нагрей бульон до кипения, приправь небольшим количеством соевого соуса.",
@@ -3678,9 +3778,29 @@
         "нори гим 1 лист (по желанию)",
         "соль и перец."
       ],
-      "recipe_source_audit_status": "URL_DOMAINS_LISTED_CONTENT_VERIFICATION_INCOMPLETE",
+      "recipe_source_audit_status": "THREE_INDEPENDENT_RECIPE_TEXTS_COMPARED",
       "visual_audit_status": "PENDING",
-      "photo_status": "PENDING_USER_APPROVAL"
+      "photo_status": "PENDING_USER_APPROVAL",
+      "source_content_evidence": {
+        "date": "2026-11-19",
+        "method": "Read three different Korean cooking publications, compared recipe-specific ingredients and sequence/times, 2-serving adaptation",
+        "ingredients_comparison": "8 корейских пельменей манду, бульон, яйцо, зелёный лук, соевый соус и гим - традиционный базовый вариант. Наполнение манду по источникам разное, поэтому готовое тесто/начинка на 320 г - редакционное допущение.",
+        "technique_and_timer_comparison": "Манду в кипящий бульон 6–10 минут в зависимости от размера/заморозки до полной готовности мяса внутри; яйцо вливать тонкой струйкой в конце, зеленый лук до подачи. Maangchi использует домашние пельмени с креветками, Korean Bapsang допускает магазинные.",
+        "sources": [
+          {
+            "url": "https://www.maangchi.com/recipe/mandu-guk",
+            "difference": "Maangchi: домашние манду в насыщенном говяжьем бульоне"
+          },
+          {
+            "url": "https://www.koreanbapsang.com/manduguk-korean-dumpling-soup/",
+            "difference": "Korean Bapsang: допускает готовые магазинные манду и разные бульоны"
+          },
+          {
+            "url": "https://mykoreankitchen.com/manduguk-korean-dumpling-soup/",
+            "difference": "My Korean Kitchen: лёгкий мандугук с яйцом и gim"
+          }
+        ]
+      }
     },
     {
       "id": 67,
@@ -3695,7 +3815,7 @@
         "https://www.beyondkimchee.com/kimchi-jjigae/"
       ],
       "full_editorial_markdown": "## №67. Кимчиччигэ со свининой\n\n**На двоих. Время:** 45 минут.\n\n**Ингредиенты:** Кимчи хорошо ферментированное 280 г плюс сок 70 мл; свиная грудинка 190 г; тофу 180 г; лук 75 г; вода либо анчоусный бульон 550 мл; кочукару 10 г; корейский соевый соус 10 мл; зелёный лук 20 г.\n\n**Как готовить:**\n1. Нарежь свинину небольшими ломтиками, кимчи и лук крупными кусками.\n2. В небольшой толстостенной кастрюле обжарь свинину 5–6 минут, чтобы вытопился жир.\n3. Добавь кимчи, прогрей вместе 5 минут, затем влей сок кимчи и бульон.\n4. Добавь кочукару, туши при небольшом кипении 20–25 минут до мягкости мяса и кимчи.\n5. Положи крупные ломтики тофу, прогрей ещё 5 минут, сверху посыпь луком.\n\n**Внешний вид:** Ярко-красное густое кипящее рагу с длинными мягкими кусками кимчи, пластинами тофу и свининой; не крем-суп.\n\n**Три внешних рецептурных источника:**\n1. https://www.maangchi.com/recipe/kimchi-jjigae\n2. https://www.koreanbapsang.com/kimchi-jjigae-kimchi-stew/\n3. https://www.beyondkimchee.com/kimchi-jjigae/\n\n**Рецептурные различия:** Кимчи желательно зрелое кислое; свежая капуста не даст нужной основы.\n\n**Фото:** нужна независимая визуальная проверка.\n\n---",
-      "review_status": "редакционный черновик; источники, фото и контрольная готовка не приняты",
+      "review_status": "Три независимых рецепта содержательно сопоставлены; пробная готовка, фото и окончательная приёмка не завершены",
       "photo_approved": false,
       "steps": [
         "Нарежь свинину небольшими ломтиками, кимчи и лук крупными кусками.",
@@ -3714,9 +3834,29 @@
         "корейский соевый соус 10 мл",
         "зелёный лук 20 г."
       ],
-      "recipe_source_audit_status": "URL_DOMAINS_LISTED_CONTENT_VERIFICATION_INCOMPLETE",
+      "recipe_source_audit_status": "THREE_INDEPENDENT_RECIPE_TEXTS_COMPARED",
       "visual_audit_status": "PENDING",
-      "photo_status": "PENDING_USER_APPROVAL"
+      "photo_status": "PENDING_USER_APPROVAL",
+      "source_content_evidence": {
+        "date": "2026-11-19",
+        "method": "Read three different Korean cooking publications, compared recipe-specific ingredients and sequence/times, 2-serving adaptation",
+        "ingredients_comparison": "Кимчи глубокой ферментации, сок кимчи, свиная грудинка, тофу, лук, кочукару и бульон совпадают с тремя источниками. Количество жидкости небольшое: это густое ччигэ, не прозрачный суп.",
+        "technique_and_timer_comparison": "Сначала обжарить свинину 5–6 минут и ферментированное кимчи ещё 5, добавить бульон и тушить 20–25 минут до мягкости свинины, тофу за последние 5 минут. Maangchi предпочитает хорошо ферментированное кислое кимчи, корейские вариации меняют бульон и время.",
+        "sources": [
+          {
+            "url": "https://www.maangchi.com/recipe/kimchi-jjigae",
+            "difference": "Maangchi: полностью ферментированное кимчи, свинина, тофу"
+          },
+          {
+            "url": "https://www.koreanbapsang.com/kimchi-jjigae-kimchi-stew/",
+            "difference": "Korean Bapsang: кислое кимчи с жирной свининой"
+          },
+          {
+            "url": "https://www.beyondkimchee.com/kimchi-jjigae/",
+            "difference": "Beyond Kimchee: рисовая вода и более короткое тушение, готово примерно за 40 минут"
+          }
+        ]
+      }
     },
     {
       "id": 68,
@@ -3731,7 +3871,7 @@
         "https://mykoreankitchen.com/bean-sprout-soup-kongnamul-guk/"
       ],
       "full_editorial_markdown": "## №68. Конд-намульгук с ростками сои\n\n**На двоих. Время:** 25 минут.\n\n**Ингредиенты:** Ростки сои с жёлтыми головками 300 г; вода или анчоусный бульон 850 мл; дайкон 100 г; зелёный лук 20 г; чеснок 1 зубчик; соевый соус для супа 15 мл; соль; свежий красный перец по желанию.\n\n**Как готовить:**\n1. Перебери ростки, тщательно промой и проверь, чтобы в них не осталось оболочек.\n2. Вскипяти бульон с тонко нарезанным дайконом и провари 7 минут.\n3. Положи ростки, накрой крышкой и вари 7–8 минут до готовности ростков, не снимай крышку постоянно.\n4. Добавь мелко нарезанный чеснок, соевый соус и зелёный лук на 1–2 минуты.\n5. Разлей лёгкий бульон с большим количеством ростков; по желанию добавь тонкие кольца свежего перца.\n\n**Внешний вид:** Почти прозрачный светлый бульон, много светлых хрустящих ростков с жёлтыми головками и немного зелёного лука.\n\n**Три внешних рецептурных источника:**\n1. https://www.maangchi.com/recipe/an-maeun-kongnamulguk\n2. https://www.koreanbapsang.com/kongnamul-guk-soybean-sprout-soup/\n3. https://mykoreankitchen.com/bean-sprout-soup-kongnamul-guk/\n\n**Рецептурные различия:** Базовая версия может быть совсем не острой; не путать с кимчи-ростковым супом.\n\n**Фото:** нужна независимая визуальная проверка.\n\n---",
-      "review_status": "редакционный черновик; источники, фото и контрольная готовка не приняты",
+      "review_status": "Три независимых рецепта содержательно сопоставлены; пробная готовка, фото и окончательная приёмка не завершены",
       "photo_approved": false,
       "steps": [
         "Перебери ростки, тщательно промой и проверь, чтобы в них не осталось оболочек.",
@@ -3750,9 +3890,29 @@
         "соль",
         "свежий красный перец по желанию."
       ],
-      "recipe_source_audit_status": "URL_DOMAINS_LISTED_CONTENT_VERIFICATION_INCOMPLETE",
+      "recipe_source_audit_status": "THREE_INDEPENDENT_RECIPE_TEXTS_COMPARED",
       "visual_audit_status": "PENDING",
-      "photo_status": "PENDING_USER_APPROVAL"
+      "photo_status": "PENDING_USER_APPROVAL",
+      "source_content_evidence": {
+        "date": "2026-11-19",
+        "method": "Read three different Korean cooking publications, compared recipe-specific ingredients and sequence/times, 2-serving adaptation",
+        "ingredients_comparison": "Ростки сои с желтыми головками, вода/анчоусный бульон, чеснок, зеленый лук и суповой соевый соус соответствуют трем публикациям. Дайкон - редакционная добавка, а чили факультативен.",
+        "technique_and_timer_comparison": "В кипящий бульон добавлять тщательно промытые ростки и готовить 7–8 минут до полной готовности, не держать ростки сырыми. Maangchi публикует острую и неострую версии. Korean Bapsang отдельно объясняет, как варить под крышкой или без, чтобы избежать нежелательного аромата.",
+        "sources": [
+          {
+            "url": "https://www.maangchi.com/recipe/an-maeun-kongnamulguk",
+            "difference": "Maangchi: неострый повседневный суп с ростками"
+          },
+          {
+            "url": "https://www.koreanbapsang.com/kongnamul-guk-soybean-sprout-soup/",
+            "difference": "Korean Bapsang: советы по варке ростков и анчоусному бульону"
+          },
+          {
+            "url": "https://mykoreankitchen.com/bean-sprout-soup-kongnamul-guk/",
+            "difference": "My Korean Kitchen: ростки, чеснок и легкая заправка"
+          }
+        ]
+      }
     },
     {
       "id": 69,
@@ -3767,7 +3927,7 @@
         "https://seonkyounglongest.com/gamjatang/"
       ],
       "full_editorial_markdown": "## №69. Камджатхан со свиными косточками\n\n**На двоих. Время:** 2 часа 30 минут.\n\n**Ингредиенты:** Свиные шейные/позвоночные кости с мясом 850 г; картофель 250 г; пекинская капуста 200 г; листья периллы 20 г; соевая паста твенджан 25 г; кочукару 20 г; чеснок 3 зубчика; имбирь 10 г; рыбный соус 10 мл; вода 1,5 л.\n\n**Как готовить:**\n1. Замочи кости в холодной воде на час, бланшируй 8 минут, затем тщательно промой.\n2. Влей свежую воду, добавь кости и имбирь, томи 80–100 минут, пока мясо почти не отстанет от костей.\n3. Бланшируй капусту и отожми; смешай кочукару, твенджан, чеснок и рыбный соус с небольшим количеством бульона.\n4. Добавь картофель, капусту и заправку, вари ещё 20–25 минут до мягкости картофеля.\n5. Добавь листья периллы и провари 3 минуты, подавай с крупными костями, которые удобно есть руками или приборами.\n\n**Внешний вид:** Насыщенное красновато-коричневое густое рагу с заметными свиными костями, картофелем, капустной зеленью и листьями периллы.\n\n**Три внешних рецептурных источника:**\n1. https://www.maangchi.com/recipe/gamjatang\n2. https://www.koreanbapsang.com/gamjatang-spicy-pork-bone-stew/\n3. https://seonkyounglongest.com/gamjatang/\n\n**Рецептурные различия:** Базовый вкус дают именно свиные кости и листья периллы. Последний URL требует перепроверки, поскольку в поиске подтверждена только категория.\n\n**Фото:** нужна независимая визуальная проверка.\n\n---",
-      "review_status": "редакционный черновик; источники, фото и контрольная готовка не приняты",
+      "review_status": "Три независимых рецепта содержательно сопоставлены; пробная готовка, фото и окончательная приёмка не завершены",
       "photo_approved": false,
       "steps": [
         "Замочи кости в холодной воде на час, бланшируй 8 минут, затем тщательно промой.",
@@ -3788,9 +3948,29 @@
         "рыбный соус 10 мл",
         "вода 1,5 л."
       ],
-      "recipe_source_audit_status": "URL_DOMAINS_LISTED_CONTENT_VERIFICATION_INCOMPLETE",
+      "recipe_source_audit_status": "THREE_INDEPENDENT_RECIPE_TEXTS_COMPARED",
       "visual_audit_status": "PENDING",
-      "photo_status": "PENDING_USER_APPROVAL"
+      "photo_status": "PENDING_USER_APPROVAL",
+      "source_content_evidence": {
+        "date": "2026-11-19",
+        "method": "Read three different Korean cooking publications, compared recipe-specific ingredients and sequence/times, 2-serving adaptation",
+        "ingredients_comparison": "Свиные шейные/позвоночные кости, картофель, капуста, листья периллы, паста твенджан, кочукару, чеснок и имбирь подтверждены всеми тремя рецептами. Нет необходимости заменять кости бескостным мясом.",
+        "technique_and_timer_comparison": "Кости вымачивают и бланшируют 8 минут, долго томят 80–100 минут до мягкости мяса, затем добавляют картофель и капусту 20–25 минут; периллу в конце 3 минуты. Maangchi варит дольше с более крупными костями, так что готовность важнее таймера.",
+        "sources": [
+          {
+            "url": "https://www.maangchi.com/recipe/gamjatang",
+            "difference": "Maangchi: свиные кости, овощи, капуста и острая паста"
+          },
+          {
+            "url": "https://www.koreanbapsang.com/gamjatang-spicy-pork-bone-stew/",
+            "difference": "Korean Bapsang: свиные кости, зелень, perilla и картофель"
+          },
+          {
+            "url": "https://seonkyounglongest.com/gamjatang/",
+            "difference": "Seonkyoung Longest: шейные кости, морковь, картофель и перилла"
+          }
+        ]
+      }
     },
     {
       "id": 70,
@@ -3805,7 +3985,7 @@
         "https://www.beyondkimchee.com/doenjang-jjigae/"
       ],
       "full_editorial_markdown": "## №70. Твенджан-ччигэ с соевой пастой\n\n**На двоих. Время:** 35 минут.\n\n**Ингредиенты:** Твенджан корейская паста 60 г; мягкий тофу 180 г; цуккини 140 г; картофель 120 г; лук 70 г; шиитаке 70 г; сушёные анчоусы для бульона 10 г; комбу 5 г; вода 750 мл; чеснок 1 зубчик; зелёный острый перец немного.\n\n**Как готовить:**\n1. Приготовь анчоусный бульон с комбу за 12–15 минут, процеди и убери твёрдые ингредиенты.\n2. Добавь картофель кубиками и лук, вари 7–8 минут.\n3. Разотри твенджан с небольшим количеством бульона и введи в кастрюлю, затем добавь цуккини и грибы.\n4. Томи 8–10 минут до мягкости овощей, положи кубики тофу и чеснок, прогрей ещё 3–4 минуты.\n5. Подавай горячим, с несколькими тонкими колечками перца, отдельно от риса.\n\n**Внешний вид:** Густой мутный коричнево-жёлтый бульон, крупные куски тофу, цуккини, картофель и грибы; это ччигэ, а не жидкий мисо-суп.\n\n**Три внешних рецептурных источника:**\n1. https://www.maangchi.com/recipe/doenjang-jjigae\n2. https://www.koreanbapsang.com/doenjang-jjigae-korean-soy-bean-paste/\n3. https://www.beyondkimchee.com/doenjang-jjigae/\n\n**Рецептурные различия:** Твенджан темнее и грубее японского мисо; не заменять без маркировки адаптации.\n\n**Фото:** нужна независимая визуальная проверка.",
-      "review_status": "редакционный черновик; источники, фото и контрольная готовка не приняты",
+      "review_status": "Три независимых рецепта содержательно сопоставлены; пробная готовка, фото и окончательная приёмка не завершены",
       "photo_approved": false,
       "steps": [
         "Приготовь анчоусный бульон с комбу за 12–15 минут, процеди и убери твёрдые ингредиенты.",
@@ -3827,9 +4007,29 @@
         "чеснок 1 зубчик",
         "зелёный острый перец немного."
       ],
-      "recipe_source_audit_status": "URL_DOMAINS_LISTED_CONTENT_VERIFICATION_INCOMPLETE",
+      "recipe_source_audit_status": "THREE_INDEPENDENT_RECIPE_TEXTS_COMPARED",
       "visual_audit_status": "PENDING",
-      "photo_status": "PENDING_USER_APPROVAL"
+      "photo_status": "PENDING_USER_APPROVAL",
+      "source_content_evidence": {
+        "date": "2026-11-19",
+        "method": "Read three different Korean cooking publications, compared recipe-specific ingredients and sequence/times, 2-serving adaptation",
+        "ingredients_comparison": "Кореяская ферментированная соевая паста твенджан, тофу, цуккини, грибы, лук, картофель, анчоусный даси и чили - допустимый домашний набор. Korean Bapsang может готовить со свининой, Maangchi с креветками, в редакции основа овощная.",
+        "technique_and_timer_comparison": "Анчоусы и комбу для бульона 12–15 минут, картофель и лук 7–8, затем твенджан, цуккини и грибы 8–10, тофу 3–4 минуты. Это густая солёная похлёбка, солить только после пробы ферментированной пасты.",
+        "sources": [
+          {
+            "url": "https://www.maangchi.com/recipe/doenjang-jjigae",
+            "difference": "Maangchi: креветки/анчоусы и твенджан в супе"
+          },
+          {
+            "url": "https://www.koreanbapsang.com/doenjang-jjigae-korean-soy-bean-paste/",
+            "difference": "Korean Bapsang: вариант со свининой, цуккини и тофу"
+          },
+          {
+            "url": "https://www.beyondkimchee.com/doenjang-jjigae/",
+            "difference": "Beyond Kimchee: рисовая вода, твенджан, овощи, ~20 минут"
+          }
+        ]
+      }
     },
     {
       "id": 71,
