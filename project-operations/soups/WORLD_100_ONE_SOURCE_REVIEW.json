@@ -1403,7 +1403,9 @@
       "approved": false,
       "review_note": "Pati Jinich red pozole: pork simmered until tender with hominy and guajillo/ancho red sauce, cabbage/radish garnish. Editorial two portions faithful, readiness of pork not fixed by 75–100min.",
       "review_method": "SINGLE_ORIGINAL_SOURCE_REVIEW_WITH_EDITORIAL_COMPARISON",
-      "review_date": "2026-11-19"
+      "review_date": "2026-11-19",
+      "remediation_status": "CANONICAL_RECIPE_CORRECTED",
+      "remediation_step": 1
     },
     {
       "id": 72,
@@ -1460,7 +1462,9 @@
       "approved": false,
       "review_note": "Casa de México caldo tlalpeño features chicken, chickpeas, chipotle, vegetables and avocado garnish; editorial version consistent; chicken must be fully cooked.",
       "review_method": "SINGLE_ORIGINAL_SOURCE_REVIEW_WITH_EDITORIAL_COMPARISON",
-      "review_date": "2026-11-19"
+      "review_date": "2026-11-19",
+      "remediation_status": "CANONICAL_RECIPE_CORRECTED",
+      "remediation_step": 1
     },
     {
       "id": 75,
@@ -1498,7 +1502,9 @@
       "approved": false,
       "review_note": "Pati Jinich sopa de lima with chicken, aromatic citrus, fried tortilla strips and herbs. Editorial use of lime instead of Yucatán lima is an acknowledged local substitute; needs noted variant not identical citrus.",
       "review_method": "SINGLE_ORIGINAL_SOURCE_REVIEW_WITH_EDITORIAL_COMPARISON",
-      "review_date": "2026-11-19"
+      "review_date": "2026-11-19",
+      "remediation_status": "CANONICAL_RECIPE_CORRECTED",
+      "remediation_step": 5
     },
     {
       "id": 77,
@@ -1517,7 +1523,9 @@
       "approved": false,
       "review_note": "Food.com caldo de res beef shank simmered with root vegetables, corn, zucchini and cabbage. Editorial 80–100min broth may be short for shank; verify meat tenderness and extend as required.",
       "review_method": "SINGLE_ORIGINAL_SOURCE_REVIEW_WITH_EDITORIAL_COMPARISON",
-      "review_date": "2026-11-19"
+      "review_date": "2026-11-19",
+      "remediation_status": "CANONICAL_RECIPE_CORRECTED",
+      "remediation_step": 1
     },
     {
       "id": 78,
@@ -1536,7 +1544,9 @@
       "approved": false,
       "review_note": "Once Upon a Chef albondigas soup includes raw ground beef meatballs with rice and tomato stock. Editorial 15+7–10min cooking must check center of meatball and rice doneness.",
       "review_method": "SINGLE_ORIGINAL_SOURCE_REVIEW_WITH_EDITORIAL_COMPARISON",
-      "review_date": "2026-11-19"
+      "review_date": "2026-11-19",
+      "remediation_status": "CANONICAL_RECIPE_CORRECTED",
+      "remediation_step": 4
     },
     {
       "id": 79,
@@ -1574,7 +1584,9 @@
       "approved": false,
       "review_note": "Larousse Cocina chilpachole de jaiba: crab and chile thickened by maize and epazote, traditional Veracruz. Editorial uses already cooked crab reheated near end, needs safe hot-through with broth.",
       "review_method": "SINGLE_ORIGINAL_SOURCE_REVIEW_WITH_EDITORIAL_COMPARISON",
-      "review_date": "2026-11-19"
+      "review_date": "2026-11-19",
+      "remediation_status": "CANONICAL_RECIPE_CORRECTED",
+      "remediation_step": 5
     },
     {
       "id": 81,
@@ -1593,7 +1605,9 @@
       "approved": false,
       "review_note": "Vicky Pham pho bo charred onion/ginger, blanched beef bones with brisket, star anise, cinnamon and rice noodles. Editorial separates raw thin-sliced beef and cooks in boiling broth 30–60s or until done; requires individual readiness check.",
       "review_method": "SINGLE_ORIGINAL_SOURCE_REVIEW_WITH_EDITORIAL_COMPARISON",
-      "review_date": "2026-11-19"
+      "review_date": "2026-11-19",
+      "remediation_status": "CANONICAL_RECIPE_CORRECTED",
+      "remediation_step": 5
     },
     {
       "id": 82,
@@ -1612,7 +1626,9 @@
       "approved": false,
       "review_note": "Vicky Pham pho ga chicken broth with charred ginger/onion, spices, rice noodles. Editorial 50-60min chicken simmer then shred and serve, ensure safe center doneness.",
       "review_method": "SINGLE_ORIGINAL_SOURCE_REVIEW_WITH_EDITORIAL_COMPARISON",
-      "review_date": "2026-11-19"
+      "review_date": "2026-11-19",
+      "remediation_status": "CANONICAL_RECIPE_CORRECTED",
+      "remediation_step": 3
     },
     {
       "id": 83,
@@ -1650,7 +1666,9 @@
       "approved": false,
       "review_note": "Vicky Pham bun rieu crab-shrimp-pork-and-tomato soup has egg-bound seafood-meat cakes and tofu, rice vermicelli; editorial needs center doneness of pork and shellfish cakes.",
       "review_method": "SINGLE_ORIGINAL_SOURCE_REVIEW_WITH_EDITORIAL_COMPARISON",
-      "review_date": "2026-11-19"
+      "review_date": "2026-11-19",
+      "remediation_status": "CANONICAL_RECIPE_CORRECTED",
+      "remediation_step": 3
     },
     {
       "id": 85,
@@ -1707,7 +1725,9 @@
       "approved": false,
       "review_note": "Vicky Pham hu tieu mi uses pork bones, shrimp, pork and noodle soup with daikon and dried shrimp; editorial uses rice noodles (source also describes egg noodle variant), shrimp and pork must be safely cooked.",
       "review_method": "SINGLE_ORIGINAL_SOURCE_REVIEW_WITH_EDITORIAL_COMPARISON",
-      "review_date": "2026-11-19"
+      "review_date": "2026-11-19",
+      "remediation_status": "CANONICAL_RECIPE_CORRECTED",
+      "remediation_step": 3
     },
     {
       "id": 88,
@@ -1726,7 +1746,9 @@
       "approved": false,
       "review_note": "Vicky Pham banh canh suon heo pork ribs and chewy thick tapioca/rice noodles, shrimp additions variant; editorial long rib broth and separate shrimp stage, check pork meat and shrimp cooked.",
       "review_method": "SINGLE_ORIGINAL_SOURCE_REVIEW_WITH_EDITORIAL_COMPARISON",
-      "review_date": "2026-11-19"
+      "review_date": "2026-11-19",
+      "remediation_status": "CANONICAL_RECIPE_CORRECTED",
+      "remediation_step": 4
     },
     {
       "id": 89,
@@ -1745,7 +1767,9 @@
       "approved": false,
       "review_note": "Vicky Pham canh chua fish with tamarind, tomato, pineapple, okra and sprouts; editorial 6-8min fish and 3-4min vegetables must include fish doneness check.",
       "review_method": "SINGLE_ORIGINAL_SOURCE_REVIEW_WITH_EDITORIAL_COMPARISON",
-      "review_date": "2026-11-19"
+      "review_date": "2026-11-19",
+      "remediation_status": "CANONICAL_RECIPE_CORRECTED",
+      "remediation_step": 4
     },
     {
       "id": 90,
@@ -1764,7 +1788,9 @@
       "approved": false,
       "review_note": "Hungry Huy canh kho qua stuffed bitter melon with pork, glass noodles and black fungus in broth; editorial method comparable, center of raw pork stuffing needs verified safe cooking beyond 35–45min.",
       "review_method": "SINGLE_ORIGINAL_SOURCE_REVIEW_WITH_EDITORIAL_COMPARISON",
-      "review_date": "2026-11-19"
+      "review_date": "2026-11-19",
+      "remediation_status": "CANONICAL_RECIPE_CORRECTED",
+      "remediation_step": 4
     },
     {
       "id": 91,
@@ -1783,7 +1809,9 @@
       "approved": false,
       "review_note": "Woks of Life Shanghai wonton soup uses shrimp/pork filling folded in wrappers, boiled separately and served in clear broth. Editorial 4–6min for raw pork center must be readiness checked.",
       "review_method": "SINGLE_ORIGINAL_SOURCE_REVIEW_WITH_EDITORIAL_COMPARISON",
-      "review_date": "2026-11-19"
+      "review_date": "2026-11-19",
+      "remediation_status": "CANONICAL_RECIPE_CORRECTED",
+      "remediation_step": 3
     },
     {
       "id": 92,
@@ -1821,7 +1849,9 @@
       "approved": false,
       "review_note": "Woks of Life egg drop soup blends slurry into broth before egg ribbons and sesame/scallion finish. Editorial method correct; verify egg fully coagulated before serving.",
       "review_method": "SINGLE_ORIGINAL_SOURCE_REVIEW_WITH_EDITORIAL_COMPARISON",
-      "review_date": "2026-11-19"
+      "review_date": "2026-11-19",
+      "remediation_status": "CANONICAL_RECIPE_CORRECTED",
+      "remediation_step": 4
     },
     {
       "id": 94,
@@ -1840,7 +1870,9 @@
       "approved": false,
       "review_note": "Woks of Life winter melon soup with pork ribs cooks blanched ribs in broth and winter melon until translucent. Editorial ribs 40min may be short for tender meat; verify readiness.",
       "review_method": "SINGLE_ORIGINAL_SOURCE_REVIEW_WITH_EDITORIAL_COMPARISON",
-      "review_date": "2026-11-19"
+      "review_date": "2026-11-19",
+      "remediation_status": "CANONICAL_RECIPE_CORRECTED",
+      "remediation_step": 2
     },
     {
       "id": 95,
@@ -1878,7 +1910,9 @@
       "approved": false,
       "review_note": "Omnivore's Cookbook suan cai yu uses thin marinated fish fillets, pickled mustard greens, chilies and fragrant oil. Editorial short 3–5min fish stage must end based on cooked center, not fixed minutes.",
       "review_method": "SINGLE_ORIGINAL_SOURCE_REVIEW_WITH_EDITORIAL_COMPARISON",
-      "review_date": "2026-11-19"
+      "review_date": "2026-11-19",
+      "remediation_status": "CANONICAL_RECIPE_CORRECTED",
+      "remediation_step": 4
     },
     {
       "id": 97,
@@ -1897,7 +1931,9 @@
       "approved": false,
       "review_note": "AMUSE Henan hulatang uses beef, gluten, wood ear, daylily, vermicelli and white pepper-black vinegar thickening; editorial recipe closely follows. Warning: ensure dried daylily rehydrated and fully cooked.",
       "review_method": "SINGLE_ORIGINAL_SOURCE_REVIEW_WITH_EDITORIAL_COMPARISON",
-      "review_date": "2026-11-19"
+      "review_date": "2026-11-19",
+      "remediation_status": "CANONICAL_RECIPE_CORRECTED",
+      "remediation_step": 3
     },
     {
       "id": 98,
@@ -1935,7 +1971,9 @@
       "approved": false,
       "review_note": "Woks of Life Shanghai luo song tang tomato-cabbage potato beef soup (Russian-inspired Shanghai variation); editorial uses oxtail which may take longer than 75–90min to soften, check actual tenderness.",
       "review_method": "SINGLE_ORIGINAL_SOURCE_REVIEW_WITH_EDITORIAL_COMPARISON",
-      "review_date": "2026-11-19"
+      "review_date": "2026-11-19",
+      "remediation_status": "CANONICAL_RECIPE_CORRECTED",
+      "remediation_step": 1
     },
     {
       "id": 100,
@@ -1954,7 +1992,9 @@
       "approved": false,
       "review_note": "Woks of Life Cantonese watercress and pork rib soup uses blanched ribs, red dates and fresh watercress long simmer; editorial sequence with greens near end reasonable, ensure pork cooked to tenderness.",
       "review_method": "SINGLE_ORIGINAL_SOURCE_REVIEW_WITH_EDITORIAL_COMPARISON",
-      "review_date": "2026-11-19"
+      "review_date": "2026-11-19",
+      "remediation_status": "CANONICAL_RECIPE_CORRECTED",
+      "remediation_step": 3
     }
   ],
   "quality_approved": 55,
