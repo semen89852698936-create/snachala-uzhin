@@ -1,0 +1,859 @@
+{
+  "project": "НАШ ВЕЧЕР",
+  "country": "Мексика",
+  "collection": "100 завтраков мира",
+  "recipe_count": 10,
+  "is_published": false,
+  "verification_level": "complete editorial draft; recipe-level source validation pending",
+  "recipes": [
+    {
+      "id": "breakfast-mx-71",
+      "collection_number": 71,
+      "country": "Мексика",
+      "country_code": "MX",
+      "title": "Уэвос ранчерос - яйца на тортильях",
+      "original_name": "Huevos rancheros",
+      "servings": 2,
+      "total_min": 35,
+      "ingredients": [
+        {
+          "name": "Яйца",
+          "amount": 4,
+          "unit": "шт."
+        },
+        {
+          "name": "Кукурузные тортильи",
+          "amount": 4,
+          "unit": "шт."
+        },
+        {
+          "name": "Помидоры",
+          "amount": 300,
+          "unit": "г"
+        },
+        {
+          "name": "Лук репчатый",
+          "amount": 75,
+          "unit": "г"
+        },
+        {
+          "name": "Перец халапеньо",
+          "amount": 20,
+          "unit": "г"
+        },
+        {
+          "name": "Чеснок",
+          "amount": 1,
+          "unit": "зубчик"
+        },
+        {
+          "name": "Красная фасоль готовая",
+          "amount": 160,
+          "unit": "г"
+        },
+        {
+          "name": "Растительное масло",
+          "amount": 25,
+          "unit": "мл"
+        },
+        {
+          "name": "Соль",
+          "amount": 3,
+          "unit": "г"
+        }
+      ],
+      "steps": [
+        {
+          "text": "Измельчи помидоры, половину лука, халапеньо и чеснок, прогрей в сотейнике с 10 мл масла 10–12 минут до густой красной сальсы.",
+          "timer_sec": 720
+        },
+        {
+          "text": "Оставшийся лук мелко поруби, прогрей вместе с готовой фасолью 3–4 минуты, слегка разомни вилкой.",
+          "timer_sec": 240
+        },
+        {
+          "text": "На сковороде с небольшим количеством масла прогрей каждую тортилью по 20–30 секунд с каждой стороны.",
+          "timer_sec": 60
+        },
+        {
+          "text": "На оставшемся масле приготовь 4 яйца так, чтобы белок полностью схватился. Для безопасной подачи желтки тоже можно довести до плотности.",
+          "timer_sec": 300
+        },
+        {
+          "text": "Положи на каждую тортилью фасоль, сверху яйцо и тёплую томатную сальсу. Подавай сразу по две тортильи на порцию.",
+          "timer_sec": 0
+        }
+      ],
+      "notes": "Сальса должна быть приготовлена, а не состоять из сырых крупных кубиков помидоров.",
+      "source_verification": {
+        "status": "national_breakfast_collection_checked_recipe_specific_validation_pending",
+        "country_reference_url": "https://www.mexicoinmykitchen.com/breakfast/"
+      },
+      "editorial_status": "complete_draft_pending_culinary_verification",
+      "photo_status": "deferred_by_user",
+      "publication_status": "unpublished"
+    },
+    {
+      "id": "breakfast-mx-72",
+      "collection_number": 72,
+      "country": "Мексика",
+      "country_code": "MX",
+      "title": "Чилакилес с красным соусом",
+      "original_name": "Chilaquiles rojos",
+      "servings": 2,
+      "total_min": 35,
+      "ingredients": [
+        {
+          "name": "Кукурузные тортильи",
+          "amount": 6,
+          "unit": "шт."
+        },
+        {
+          "name": "Помидоры",
+          "amount": 350,
+          "unit": "г"
+        },
+        {
+          "name": "Перец гуахильо сушёный",
+          "amount": 2,
+          "unit": "шт."
+        },
+        {
+          "name": "Лук",
+          "amount": 60,
+          "unit": "г"
+        },
+        {
+          "name": "Чеснок",
+          "amount": 1,
+          "unit": "зубчик"
+        },
+        {
+          "name": "Растительное масло",
+          "amount": 35,
+          "unit": "мл"
+        },
+        {
+          "name": "Мексиканский свежий сыр",
+          "amount": 90,
+          "unit": "г"
+        },
+        {
+          "name": "Сметана",
+          "amount": 60,
+          "unit": "г"
+        },
+        {
+          "name": "Соль",
+          "amount": 3,
+          "unit": "г"
+        }
+      ],
+      "steps": [
+        {
+          "text": "Удалите плодоножки и семена у сушёных перцев, залей горячей водой на 10 минут. Нарежь тортильи треугольниками.",
+          "timer_sec": 600
+        },
+        {
+          "text": "Смешай блендером размягчённый перец, помидоры, лук и чеснок с небольшим количеством воды, протри через сито при желании.",
+          "timer_sec": 0
+        },
+        {
+          "text": "Прогрей соус в сотейнике с 10 мл масла 8–10 минут, пока он не станет ярко-красным и достаточно густым; посоли.",
+          "timer_sec": 600
+        },
+        {
+          "text": "Оставшееся масло нагрей на сковороде, обжарь кусочки тортильи небольшими партиями 1–2 минуты до хруста, обсуши.",
+          "timer_sec": 120
+        },
+        {
+          "text": "Перед подачей перемешай хрустящие тортильи с горячим соусом всего 30–60 секунд, чтобы часть текстуры сохранилась. Посыпь сыром и добавь сметану.",
+          "timer_sec": 60
+        }
+      ],
+      "notes": "Традиционные чилакилес отличаются от начос: тортильи прогреваются в сальсе.",
+      "source_verification": {
+        "status": "national_breakfast_collection_checked_recipe_specific_validation_pending",
+        "country_reference_url": "https://www.mexicoinmykitchen.com/breakfast/"
+      },
+      "editorial_status": "complete_draft_pending_culinary_verification",
+      "photo_status": "deferred_by_user",
+      "publication_status": "unpublished"
+    },
+    {
+      "id": "breakfast-mx-73",
+      "collection_number": 73,
+      "country": "Мексика",
+      "country_code": "MX",
+      "title": "Яйца по-мексикански",
+      "original_name": "Huevos a la mexicana",
+      "servings": 2,
+      "total_min": 20,
+      "ingredients": [
+        {
+          "name": "Яйца",
+          "amount": 4,
+          "unit": "шт."
+        },
+        {
+          "name": "Помидоры",
+          "amount": 200,
+          "unit": "г"
+        },
+        {
+          "name": "Лук белый",
+          "amount": 70,
+          "unit": "г"
+        },
+        {
+          "name": "Перец халапеньо",
+          "amount": 20,
+          "unit": "г"
+        },
+        {
+          "name": "Растительное масло",
+          "amount": 20,
+          "unit": "мл"
+        },
+        {
+          "name": "Соль",
+          "amount": 3,
+          "unit": "г"
+        },
+        {
+          "name": "Кинза",
+          "amount": 10,
+          "unit": "г"
+        }
+      ],
+      "steps": [
+        {
+          "text": "Нарежь помидоры, лук и перец мелкими кубиками; по желанию удали семена халапеньо.",
+          "timer_sec": 0
+        },
+        {
+          "text": "Разогрей масло, обжаривай лук с перцем 3–4 минуты до мягкости.",
+          "timer_sec": 240
+        },
+        {
+          "text": "Добавь помидоры и туши 4–5 минут, чтобы лишний сок выпарился.",
+          "timer_sec": 300
+        },
+        {
+          "text": "Взбей яйца с солью и влей к овощам, готовь 2–3 минуты на умеренном огне, аккуратно помешивая до полного схватывания.",
+          "timer_sec": 180
+        },
+        {
+          "text": "Посыпь кинзой и подавай немедленно.",
+          "timer_sec": 0
+        }
+      ],
+      "notes": "Цвета помидора, лука и зелёного перца отражают цвета мексиканского флага.",
+      "source_verification": {
+        "status": "national_breakfast_collection_checked_recipe_specific_validation_pending",
+        "country_reference_url": "https://www.mexicoinmykitchen.com/breakfast/"
+      },
+      "editorial_status": "complete_draft_pending_culinary_verification",
+      "photo_status": "deferred_by_user",
+      "publication_status": "unpublished"
+    },
+    {
+      "id": "breakfast-mx-74",
+      "collection_number": 74,
+      "country": "Мексика",
+      "country_code": "MX",
+      "title": "Мольетес с фасолью и сыром",
+      "original_name": "Molletes",
+      "servings": 2,
+      "total_min": 25,
+      "ingredients": [
+        {
+          "name": "Мексиканские булочки болильо",
+          "amount": 2,
+          "unit": "шт."
+        },
+        {
+          "name": "Фасоль пинто готовая",
+          "amount": 230,
+          "unit": "г"
+        },
+        {
+          "name": "Оахакский сыр или моцарелла",
+          "amount": 130,
+          "unit": "г"
+        },
+        {
+          "name": "Помидоры",
+          "amount": 120,
+          "unit": "г"
+        },
+        {
+          "name": "Лук",
+          "amount": 40,
+          "unit": "г"
+        },
+        {
+          "name": "Халапеньо",
+          "amount": 15,
+          "unit": "г"
+        },
+        {
+          "name": "Растительное масло",
+          "amount": 10,
+          "unit": "мл"
+        },
+        {
+          "name": "Соль",
+          "amount": 3,
+          "unit": "г"
+        },
+        {
+          "name": "Кинза",
+          "amount": 10,
+          "unit": "г"
+        }
+      ],
+      "steps": [
+        {
+          "text": "Разрежь болильо вдоль, каждую половину слегка подсуши в духовке при 190 °C 3–4 минуты.",
+          "timer_sec": 240
+        },
+        {
+          "text": "Разомни фасоль с ложкой воды и маслом, прогрей на сковороде 4–5 минут до густой пасты.",
+          "timer_sec": 300
+        },
+        {
+          "text": "Распредели фасоль на четырёх половинках булочек, посыпь натёртым сыром.",
+          "timer_sec": 0
+        },
+        {
+          "text": "Запекай под грилем при 200 °C около 5–7 минут, пока сыр полностью не расплавится.",
+          "timer_sec": 420
+        },
+        {
+          "text": "Смешай мелко нарезанные помидоры, лук, халапеньо, кинзу и соль. Подавай пико-де-гайо отдельно или сверху горячих мольетес.",
+          "timer_sec": 0
+        }
+      ],
+      "notes": "Это открытые мексиканские булочки с пастой из фасоли и плавленым сыром, не закрытый сэндвич.",
+      "source_verification": {
+        "status": "national_breakfast_collection_checked_recipe_specific_validation_pending",
+        "country_reference_url": "https://www.mexicoinmykitchen.com/breakfast/"
+      },
+      "editorial_status": "complete_draft_pending_culinary_verification",
+      "photo_status": "deferred_by_user",
+      "publication_status": "unpublished"
+    },
+    {
+      "id": "breakfast-mx-75",
+      "collection_number": 75,
+      "country": "Мексика",
+      "country_code": "MX",
+      "title": "Энфрихоладас с фасолевым соусом",
+      "original_name": "Enfrijoladas",
+      "servings": 2,
+      "total_min": 35,
+      "ingredients": [
+        {
+          "name": "Кукурузные тортильи",
+          "amount": 6,
+          "unit": "шт."
+        },
+        {
+          "name": "Фасоль чёрная готовая",
+          "amount": 300,
+          "unit": "г"
+        },
+        {
+          "name": "Фасолевый отвар или вода",
+          "amount": 250,
+          "unit": "мл"
+        },
+        {
+          "name": "Лук",
+          "amount": 75,
+          "unit": "г"
+        },
+        {
+          "name": "Чеснок",
+          "amount": 1,
+          "unit": "зубчик"
+        },
+        {
+          "name": "Свежий мексиканский сыр",
+          "amount": 130,
+          "unit": "г"
+        },
+        {
+          "name": "Сметана",
+          "amount": 60,
+          "unit": "г"
+        },
+        {
+          "name": "Растительное масло",
+          "amount": 20,
+          "unit": "мл"
+        },
+        {
+          "name": "Соль",
+          "amount": 3,
+          "unit": "г"
+        }
+      ],
+      "steps": [
+        {
+          "text": "Обжарь 50 г лука с чесноком на 10 мл масла 3 минуты до мягкости.",
+          "timer_sec": 180
+        },
+        {
+          "text": "Добавь готовую фасоль и отвар, прогрей 5 минут; пробей блендером до гладкого соуса, посоли. Соус должен свободно стекать с ложки.",
+          "timer_sec": 300
+        },
+        {
+          "text": "Быстро прогрей тортильи на сковороде с оставшимся маслом по 20–30 секунд, чтобы они стали гибкими.",
+          "timer_sec": 60
+        },
+        {
+          "text": "Окуни каждую тортилью в горячий фасолевый соус, положи внутрь немного раскрошенного сыра и сложи пополам.",
+          "timer_sec": 0
+        },
+        {
+          "text": "Разложи по три штуки на тарелку, полей остатком соуса, добавь сметану, сыр и оставшийся мелко нарезанный лук.",
+          "timer_sec": 0
+        }
+      ],
+      "notes": "Энфрихоладас покрывают фасолевым соусом, а не томатной сальсой.",
+      "source_verification": {
+        "status": "national_breakfast_collection_checked_recipe_specific_validation_pending",
+        "country_reference_url": "https://www.mexicoinmykitchen.com/breakfast/"
+      },
+      "editorial_status": "complete_draft_pending_culinary_verification",
+      "photo_status": "deferred_by_user",
+      "publication_status": "unpublished"
+    },
+    {
+      "id": "breakfast-mx-76",
+      "collection_number": 76,
+      "country": "Мексика",
+      "country_code": "MX",
+      "title": "Яйца по-мотуленьски",
+      "original_name": "Huevos motuleños",
+      "servings": 2,
+      "total_min": 45,
+      "ingredients": [
+        {
+          "name": "Яйца",
+          "amount": 4,
+          "unit": "шт."
+        },
+        {
+          "name": "Кукурузные тортильи",
+          "amount": 4,
+          "unit": "шт."
+        },
+        {
+          "name": "Чёрная фасоль готовая",
+          "amount": 180,
+          "unit": "г"
+        },
+        {
+          "name": "Помидоры",
+          "amount": 260,
+          "unit": "г"
+        },
+        {
+          "name": "Лук",
+          "amount": 70,
+          "unit": "г"
+        },
+        {
+          "name": "Горошек зелёный",
+          "amount": 70,
+          "unit": "г"
+        },
+        {
+          "name": "Ветчина",
+          "amount": 80,
+          "unit": "г"
+        },
+        {
+          "name": "Плантан спелый",
+          "amount": 1,
+          "unit": "шт."
+        },
+        {
+          "name": "Свежий сыр",
+          "amount": 70,
+          "unit": "г"
+        },
+        {
+          "name": "Растительное масло",
+          "amount": 30,
+          "unit": "мл"
+        },
+        {
+          "name": "Соль",
+          "amount": 3,
+          "unit": "г"
+        }
+      ],
+      "steps": [
+        {
+          "text": "Приготовь густую томатную сальсу: обжарь лук, добавь помидоры и туши 10 минут; в конце добавь горошек и нарезанную ветчину, прогрей ещё 3 минуты.",
+          "timer_sec": 780
+        },
+        {
+          "text": "Разомни подогретую фасоль в густую пасту, добавив немного воды.",
+          "timer_sec": 0
+        },
+        {
+          "text": "Нарежь спелый плантан ломтиками и обжарь 3–4 минуты с каждой стороны до золотистой корочки.",
+          "timer_sec": 480
+        },
+        {
+          "text": "Прогрей тортильи и обжарь яйца по одному до полностью схватившихся белков.",
+          "timer_sec": 300
+        },
+        {
+          "text": "На каждую тортилью нанеси фасоль, положи яйцо, добавь красную сальсу с горошком и ветчиной, посыпь сыром. Подай с жареным плантаном сбоку.",
+          "timer_sec": 0
+        }
+      ],
+      "notes": "Юкатанская подача включает бобы, красный соус, горошек, ветчину и жареный плантан, а не просто яйца с помидорами.",
+      "source_verification": {
+        "status": "national_breakfast_collection_checked_recipe_specific_validation_pending",
+        "country_reference_url": "https://www.mexicoinmykitchen.com/breakfast/"
+      },
+      "editorial_status": "complete_draft_pending_culinary_verification",
+      "photo_status": "deferred_by_user",
+      "publication_status": "unpublished"
+    },
+    {
+      "id": "breakfast-mx-77",
+      "collection_number": 77,
+      "country": "Мексика",
+      "country_code": "MX",
+      "title": "Тамалес с перцем и сыром",
+      "original_name": "Tamales de rajas con queso",
+      "servings": 2,
+      "total_min": 170,
+      "ingredients": [
+        {
+          "name": "Кукурузная мука маса-харина",
+          "amount": 250,
+          "unit": "г"
+        },
+        {
+          "name": "Тёплый овощной бульон",
+          "amount": 300,
+          "unit": "мл"
+        },
+        {
+          "name": "Смалец или растительный жир",
+          "amount": 80,
+          "unit": "г"
+        },
+        {
+          "name": "Разрыхлитель",
+          "amount": 5,
+          "unit": "г"
+        },
+        {
+          "name": "Соль",
+          "amount": 5,
+          "unit": "г"
+        },
+        {
+          "name": "Перец поблано",
+          "amount": 180,
+          "unit": "г"
+        },
+        {
+          "name": "Сыр оахака или моцарелла",
+          "amount": 140,
+          "unit": "г"
+        },
+        {
+          "name": "Кукурузные обёртки сухие",
+          "amount": 8,
+          "unit": "шт."
+        }
+      ],
+      "steps": [
+        {
+          "text": "Замочи сухие кукурузные обёртки в горячей воде на 30 минут, чтобы они стали гибкими.",
+          "timer_sec": 1800
+        },
+        {
+          "text": "Запеки перец поблано под грилем 8–10 минут до пузырей на кожице, положи в закрытую миску на 10 минут, очисти, нарежь полосками.",
+          "timer_sec": 1200
+        },
+        {
+          "text": "Взбей жир до воздушности, смешай с маса-хариной, разрыхлителем и солью. Порциями влей тёплый бульон до мягкой пластичной массы.",
+          "timer_sec": 0
+        },
+        {
+          "text": "На каждую обёртку распредели по 2–3 ложки массы, оставив края свободными. В центр положи поблано и сыр, сложи конвертом.",
+          "timer_sec": 0
+        },
+        {
+          "text": "Уложи 8 тамалес вертикально в пароварку открытым краем вверх. Готовь под крышкой при устойчивом паре 60–75 минут.",
+          "timer_sec": 4500
+        },
+        {
+          "text": "Проверь один тамаль: тесто должно легко отделяться от обёртки и не быть липко-сырым. Дай постоять 10 минут.",
+          "timer_sec": 600
+        }
+      ],
+      "notes": "Использовать именно маса-харину из никстамализованной кукурузы; обычная кукурузная мука не подходит.",
+      "source_verification": {
+        "status": "national_breakfast_collection_checked_recipe_specific_validation_pending",
+        "country_reference_url": "https://www.mexicoinmykitchen.com/breakfast/"
+      },
+      "editorial_status": "complete_draft_pending_culinary_verification",
+      "photo_status": "deferred_by_user",
+      "publication_status": "unpublished"
+    },
+    {
+      "id": "breakfast-mx-78",
+      "collection_number": 78,
+      "country": "Мексика",
+      "country_code": "MX",
+      "title": "Мачака с яйцом",
+      "original_name": "Machaca con huevo",
+      "servings": 2,
+      "total_min": 25,
+      "ingredients": [
+        {
+          "name": "Сушёная измельчённая говядина мачака",
+          "amount": 100,
+          "unit": "г"
+        },
+        {
+          "name": "Яйца",
+          "amount": 4,
+          "unit": "шт."
+        },
+        {
+          "name": "Помидоры",
+          "amount": 130,
+          "unit": "г"
+        },
+        {
+          "name": "Лук",
+          "amount": 75,
+          "unit": "г"
+        },
+        {
+          "name": "Зелёный перец",
+          "amount": 65,
+          "unit": "г"
+        },
+        {
+          "name": "Растительное масло",
+          "amount": 20,
+          "unit": "мл"
+        },
+        {
+          "name": "Вода",
+          "amount": 80,
+          "unit": "мл"
+        },
+        {
+          "name": "Соль",
+          "amount": 1,
+          "unit": "г"
+        }
+      ],
+      "steps": [
+        {
+          "text": "Если мачака очень сухая и солёная, залей её тёплой водой на 5 минут, отожми и попробуй на соль.",
+          "timer_sec": 300
+        },
+        {
+          "text": "Нарежь лук, перец и помидоры мелкими кубиками.",
+          "timer_sec": 0
+        },
+        {
+          "text": "Обжарь лук с перцем 3–4 минуты, добавь мясо и готовь ещё 3 минуты.",
+          "timer_sec": 420
+        },
+        {
+          "text": "Добавь помидоры, прогрей 3–4 минуты, пока они немного размягчатся.",
+          "timer_sec": 240
+        },
+        {
+          "text": "Влей взбитые яйца, медленно перемешивай 2–3 минуты до полной готовности. Соль добавляй только после пробы, сушёное мясо уже солёное.",
+          "timer_sec": 180
+        }
+      ],
+      "notes": "Мачака делается из высушенной и размочаленной говядины, не из обычного сырого фарша.",
+      "source_verification": {
+        "status": "national_breakfast_collection_checked_recipe_specific_validation_pending",
+        "country_reference_url": "https://www.mexicoinmykitchen.com/breakfast/"
+      },
+      "editorial_status": "complete_draft_pending_culinary_verification",
+      "photo_status": "deferred_by_user",
+      "publication_status": "unpublished"
+    },
+    {
+      "id": "breakfast-mx-79",
+      "collection_number": 79,
+      "country": "Мексика",
+      "country_code": "MX",
+      "title": "Тлакойос с фасолью",
+      "original_name": "Tlacoyos de frijol",
+      "servings": 2,
+      "total_min": 65,
+      "ingredients": [
+        {
+          "name": "Маса-харина из голубой кукурузы",
+          "amount": 250,
+          "unit": "г"
+        },
+        {
+          "name": "Тёплая вода",
+          "amount": 325,
+          "unit": "мл"
+        },
+        {
+          "name": "Соль",
+          "amount": 4,
+          "unit": "г"
+        },
+        {
+          "name": "Фасоль чёрная готовая размятая",
+          "amount": 175,
+          "unit": "г"
+        },
+        {
+          "name": "Сальса верде готовая",
+          "amount": 120,
+          "unit": "г"
+        },
+        {
+          "name": "Свежий мексиканский сыр",
+          "amount": 70,
+          "unit": "г"
+        },
+        {
+          "name": "Лук",
+          "amount": 40,
+          "unit": "г"
+        },
+        {
+          "name": "Растительное масло",
+          "amount": 12,
+          "unit": "мл"
+        }
+      ],
+      "steps": [
+        {
+          "text": "Смешай маса-харину с солью, постепенно добавь воду. Вымеси тесто до мягкой глины без трещин, накрой и дай постоять 15 минут.",
+          "timer_sec": 900
+        },
+        {
+          "text": "Раздели тесто на 6 шариков. Расплющи каждый, положи ложку густой фасолевой пасты по центру, защипни.",
+          "timer_sec": 0
+        },
+        {
+          "text": "Снова расплющи в длинный овальный треугольный tlacoyo толщиной около 1 см; начинка должна остаться внутри.",
+          "timer_sec": 0
+        },
+        {
+          "text": "Жарь на сухой горячей комале или сковороде 4–5 минут с каждой стороны до готовой маса, затем слегка смажь маслом.",
+          "timer_sec": 600
+        },
+        {
+          "text": "Подавай горячими с сальсой верде, крошеным сыром и мелко нарезанным луком.",
+          "timer_sec": 0
+        }
+      ],
+      "notes": "Тлакойос толще тортильи, начинка из фасоли внутри, а не сверху.",
+      "source_verification": {
+        "status": "national_breakfast_collection_checked_recipe_specific_validation_pending",
+        "country_reference_url": "https://www.mexicoinmykitchen.com/breakfast/"
+      },
+      "editorial_status": "complete_draft_pending_culinary_verification",
+      "photo_status": "deferred_by_user",
+      "publication_status": "unpublished"
+    },
+    {
+      "id": "breakfast-mx-80",
+      "collection_number": 80,
+      "country": "Мексика",
+      "country_code": "MX",
+      "title": "Гордитас де ната - сладкие лепёшки",
+      "original_name": "Gorditas de nata",
+      "servings": 2,
+      "total_min": 45,
+      "ingredients": [
+        {
+          "name": "Пшеничная мука",
+          "amount": 250,
+          "unit": "г"
+        },
+        {
+          "name": "Густые сливки ната",
+          "amount": 160,
+          "unit": "г"
+        },
+        {
+          "name": "Яйцо",
+          "amount": 1,
+          "unit": "шт."
+        },
+        {
+          "name": "Сахар",
+          "amount": 75,
+          "unit": "г"
+        },
+        {
+          "name": "Разрыхлитель",
+          "amount": 7,
+          "unit": "г"
+        },
+        {
+          "name": "Соль",
+          "amount": 2,
+          "unit": "г"
+        },
+        {
+          "name": "Ванильный сахар",
+          "amount": 5,
+          "unit": "г"
+        }
+      ],
+      "steps": [
+        {
+          "text": "Взбей яйцо с сахаром, сливками, солью и ванильным сахаром до однородности.",
+          "timer_sec": 0
+        },
+        {
+          "text": "Вмешай муку с разрыхлителем. Замеси мягкое нелипкое тесто, накрой и дай отдохнуть 15 минут.",
+          "timer_sec": 900
+        },
+        {
+          "text": "Раскатай до 1–1,5 см, вырежи 8 небольших круглых лепёшек.",
+          "timer_sec": 0
+        },
+        {
+          "text": "Прогрей сухую сковороду на слабом огне, выпекай лепёшки 4–5 минут с каждой стороны до лёгких коричневых пятен и полностью готовой середины.",
+          "timer_sec": 600
+        },
+        {
+          "text": "Подавай тёплыми; без глазури и сладкого сиропа.",
+          "timer_sec": 0
+        }
+      ],
+      "notes": "Gorditas de nata - сладкие сливочные лепёшки, не кукурузные гордитас с мясной начинкой.",
+      "source_verification": {
+        "status": "national_breakfast_collection_checked_recipe_specific_validation_pending",
+        "country_reference_url": "https://www.mexicoinmykitchen.com/breakfast/"
+      },
+      "editorial_status": "complete_draft_pending_culinary_verification",
+      "photo_status": "deferred_by_user",
+      "publication_status": "unpublished"
+    }
+  ]
+}
