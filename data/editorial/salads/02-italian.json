@@ -50,7 +50,7 @@
         {
           "title": "Подготовь продукты",
           "detail": "Моцареллу достань за 15 минут, слей рассол и обсуши. Вымой и обсуши томаты и базилик.",
-          "timer": 0
+          "timer": 15
         },
         {
           "title": "Нарежь",
@@ -80,10 +80,10 @@
         "stage": "editorial_research",
         "sources": [
           "https://www.lacucinaitaliana.it/ricetta/antipasti/caprese/",
-          "https://www.cucchiaio.it/ricetta/insalata-caprese/",
+          "https://www.cucchiaio.it/ricetta/ricetta-caprese/",
           "https://blog.giallozafferano.it/studentiaifornelli/insalata-caprese-ricetta/"
         ],
-        "note": "Ингредиенты и техника сверены с региональной рецептурой; количества пересчитаны для двоих."
+        "note": "Ингредиенты и техника сверены с региональной рецептурой; количества пересчитаны для двоих.\nPrevious Cucchiaio /insalata-caprese currently contains zucchini, pumpkin seeds and bread; new page /ricetta-caprese matches mozzarella tomato basil, inspected 2026-11-19."
       },
       "editorialApproval": {
         "status": "approved_by_user",
@@ -96,11 +96,11 @@
       "title": "Панцанелла с томатами и хлебом",
       "category": "salads",
       "cuisine": "Италия",
-      "minutes": 30,
+      "minutes": 100,
       "base": 2,
       "level": "Легко",
       "emoji": "🥗",
-      "description": "Вчерашний хлеб впитывает сок спелых помидоров. Из простых продуктов получается настоящий тосканский летний салат.",
+      "description": "Тосканский летний салат, где вчерашний хлеб должен пропитаться соком спелых помидоров. Ему нужно время на размягчение и настаивание, зато вкус становится цельным.",
       "ingredients": [
         {
           "name": "Чёрствый тосканский пшеничный хлеб",
@@ -154,8 +154,8 @@
       "steps": [
         {
           "title": "Размочи хлеб",
-          "detail": "Куски вчерашнего хлеба быстро сбрызни водой и дай размякнуть около 5 минут: они не должны превратиться в кашу.",
-          "timer": 5
+          "detail": "Черствый тосканский хлеб разломай на крупные куски, замочи в холодной воде на 15–20 минут, пока корочка не станет податливой. Затем аккуратно отожми в чистом полотенце: хлеб должен оставаться влажным, но не водянистым.",
+          "timer": 20
         },
         {
           "title": "Нарежь",
@@ -168,9 +168,9 @@
           "timer": 0
         },
         {
-          "title": "Дай настояться",
-          "detail": "Оставь при прохладной комнатной температуре на 10 минут, затем подай: хлеб впитает томатный сок.",
-          "timer": 10
+          "title": "Дай настояться в холодильнике",
+          "detail": "Накрой миску и оставь панцанеллу на 60 минут в холодильнике, затем осторожно перемешай перед подачей. Так хлеб впитает томатный сок и заправку.",
+          "timer": 60
         }
       ],
       "tip": "Хлеб именно размоченный черствый, не обжаренные крутоны.",
@@ -184,11 +184,11 @@
       "sourceReview": {
         "stage": "editorial_research",
         "sources": [
-          "https://www.lacucinaitaliana.it/ricetta/contorni/panzanella/",
+          "https://www.lacucinaitaliana.it/ricetta/antipasti/panzanella-ricetta-classica/",
           "https://www.cucchiaio.it/ricetta/panzanella/",
           "https://blog.giallozafferano.it/pierobenigni/panzanella-toscana/"
         ],
-        "note": "Ингредиенты и техника сверены с региональной рецептурой; количества пересчитаны для двоих."
+        "note": "Ингредиенты и техника сверены с региональной рецептурой; количества пересчитаны для двоих.\nFormer La Cucina Italiana contorni/panzanella returned error. New La Cucina Italiana classical Panzanella page opened and lists bread, tomato, cucumber, basil, onion, vinegar. Its longer soak (~40–45 min) differs from our quick 5-minute soak: recipe remains shorter author interpretation and requires explicit label.\nThree-source crosscheck 2026-11-19: Cucchiaio specifies 20–30min bread soak and a longer 2h rest; Piero Benigni requires at least 1h refrigerated rest; La Cucina Italiana emphasizes correct bread soaking. Prior 5+10 minute quick version was inconsistent with these traditional methods. Corrected to 20min soak + 60min chilled rest; 100min total."
       },
       "editorialApproval": {
         "status": "approved_by_user",
@@ -268,8 +268,13 @@
           "timer": 7
         },
         {
-          "title": "Отвари отдельно",
-          "detail": "Кальмаров опусти в слабокипящую воду на 2–3 минуты, креветки вари до непрозрачности и полной готовности 2–4 минуты; точное время зависит от размера.",
+          "title": "Отвари кальмаров",
+          "detail": "Кальмаров опусти в слабокипящую воду на 2–3 минуты до полной готовности, затем быстро откинь на сито.",
+          "timer": 3
+        },
+        {
+          "title": "Отвари креветки",
+          "detail": "Креветки вари отдельно 2–4 минуты до непрозрачности и полной готовности; время зависит от размера.",
           "timer": 4
         },
         {
@@ -390,9 +395,9 @@
         "sources": [
           "https://www.cucchiaio.it/ricetta/ricetta-insalata-di-polpo-con-patate/",
           "https://blog.giallozafferano.it/lemieloverie/ricetta-insalata-di-polpo-e-patate/",
-          "https://www.ilcuoreinpentola.it/ricette/antipasti/insalata-di-polpo-e-patate/"
+          "https://www.ilcuoreinpentola.it/ricette/ricette-delle-feste/insalata-di-polpo-e-patate/"
         ],
-        "note": "Подтверждено в трёх итальянских источниках: осьминог варится до мягкости и подаётся с отварным картофелем, лимоном, петрушкой и маслом."
+        "note": "Подтверждено в трёх итальянских источниках: осьминог варится до мягкости и подаётся с отварным картофелем, лимоном, петрушкой и маслом.\nFormer Il Cuore in Pentola antipasti path unavailable; new page opens and documents octopus potatoes parsley lemon oil."
       },
       "editorialApproval": {
         "status": "approved_by_user",
@@ -489,9 +494,9 @@
         "sources": [
           "https://www.lacucinaitaliana.it/ricetta/insalata-finocchi-arance-olive-nere/",
           "https://www.cucchiaio.it/ricetta/insalata-di-finocchi-e-arance/",
-          "https://www.giallozafferano.it/ricerca-ricette/insalata+finocchi+arance/"
+          "https://blog.giallozafferano.it/incucinaconmara/insalata-di-finocchi-arance-e-olive-nere/"
         ],
-        "note": "Ингредиенты и техника сверены с региональной рецептурой; количества пересчитаны для двоих."
+        "note": "Ингредиенты и техника сверены с региональной рецептурой; количества пересчитаны для двоих.\nFormer Giallozafferano search-results page not valid independent recipe; replaced with directly accessible Italian recipe fennel oranges black olives."
       },
       "editorialApproval": {
         "status": "approved_by_user",
@@ -581,7 +586,7 @@
           "timer": 20
         }
       ],
-      "tip": "Классическая рождественская закуска Неаполя, с уксусными добавками.",
+      "tip": "Традиционное неаполитанское «ринфорцо» вкуснее после ночи в холодильнике: 20 минут выдержки достаточно лишь для быстрой подачи. Для настоящего рождественского варианта приготовь накануне.",
       "warn": "Содержит рыбу, каперсы и оливки солёные; соль добавлять после пробы.",
       "tags": [
         "Итальянская кухня"
@@ -594,9 +599,9 @@
         "sources": [
           "https://www.lacucinaitaliana.it/ricetta/antipasti/insalata-di-rinforzo-la-ricetta-della-vigilia/",
           "https://www.lospicchiodaglio.it/ricetta/insalata-di-rinforzo",
-          "https://www.galbani.it/ricette/insalata-di-rinforzo"
+          "https://www.napoli-turistica.com/insalata-di-rinforzo-il-contorno-napoletano-delle-feste/"
         ],
-        "note": "Ингредиенты и техника сверены с региональной рецептурой; количества пересчитаны для двоих."
+        "note": "Ингредиенты и техника сверены с региональной рецептурой; количества пересчитаны для двоих.\n2026-11-19: Lospicchiodaglio specifies >= one day refrigerated rest and La Cucina Italiana notes better flavour next day. Editorial 65-minute version is a fast option; tip now clearly states overnight recommended for traditional taste.\n2026-11-19: replaced Galbani variant with unrelated sliced turkey (julienne di tacchino), with Napoli Turistica account of traditional cavolfiore, papaccelle, anchovies, olives, capers, vinegar, and overnight rest; direct source read."
       },
       "editorialApproval": {
         "status": "approved_by_user",
@@ -609,7 +614,7 @@
       "title": "Римские пунтарелле с анчоусами",
       "category": "salads",
       "cuisine": "Италия",
-      "minutes": 30,
+      "minutes": 75,
       "base": 2,
       "level": "Легко",
       "emoji": "🥗",
@@ -660,8 +665,8 @@
         },
         {
           "title": "Завей в холодной воде",
-          "detail": "Положи полоски в ледяную воду на 20–30 минут, они станут хрустящими и слегка закрутятся; затем тщательно обсуши.",
-          "timer": 25
+          "detail": "Положи тонкие полоски пунтарелле в ледяную воду на 60 минут до хруста и закручивания; если побеги очень горчат, оставь ещё дольше, вплоть до 2–3 часов. Затем тщательно обсуши.",
+          "timer": 60
         },
         {
           "title": "Сделай соус",
@@ -687,9 +692,9 @@
         "sources": [
           "https://www.lacucinaitaliana.it/ricetta/secondi/insalata-di-puntarelle/",
           "https://orto.ch/ricetta/puntarelle-alla-romana/",
-          "https://www.cucchiaio.it/ricetta/puntarelle-alla-romana/"
+          "https://www.cucchiaio.it/ricetta/ricetta-insalata-puntarelle/"
         ],
-        "note": "Ингредиенты и техника сверены с региональной рецептурой; количества пересчитаны для двоих."
+        "note": "Ингредиенты и техника сверены с региональной рецептурой; количества пересчитаны для двоих.\nVerified replacement 2026-11-19: Corrected URL; Cucchiaio recipe explicitly describes raw puntarelle with anchovy-garlic dressing; 1h optional rest versus 20–30min in editorial card.\n2026-11-19 crosscheck all three sources: La Cucina Italiana and Cucchiaio recommend roughly 1 hour in iced water; Orto.ch allows 2–3h. Prior 25min soak understated the traditional technique; 60min countdown and 75min total added."
       },
       "editorialApproval": {
         "status": "approved_by_user",
@@ -797,10 +802,10 @@
         "stage": "editorial_research",
         "sources": [
           "https://www.lacucinaitaliana.it/ricetta/piatti-unici/insalata-di-riso-classica/",
-          "https://www.cucchiaio.it/ricetta/insalata-di-riso/",
-          "https://www.giallozafferano.it/ricerca-ricette/insalata+di+riso/"
+          "https://www.cucchiaio.it/ricetta/ricetta-insalata-riso/",
+          "https://ricette.giallozafferano.it/Insalata-di-riso-classica.html"
         ],
-        "note": "Ингредиенты и техника сверены с региональной рецептурой; количества пересчитаны для двоих."
+        "note": "Ингредиенты и техника сверены с региональной рецептурой; количества пересчитаны для двоих.\nVerified replacement 2026-11-19: Cucchiaio URL corrected; tuna, tomato, olives and boiled rice confirmed; editorial peas, corn and mozzarella are optional variation not identical source ingredients.\nVerified replacement 2026-11-19: Replaced generic recipe search page with direct GialloZafferano rice salad containing rice, peas, peppers, tomato, tuna, olives; mozzarella and corn are editorial variation."
       },
       "editorialApproval": {
         "status": "approved_by_user",
@@ -901,11 +906,11 @@
       "sourceReview": {
         "stage": "editorial_research",
         "sources": [
-          "https://www.lacucinaitaliana.it/ricetta/primi/insalata-di-farro/",
+          "https://crai.it/ricette/insalata-di-farro",
           "https://blog.giallozafferano.it/allacciateilgrembiule/insalata-di-farro-con-verdure/",
-          "https://www.ilclubdellericette.it/ricetta/insalata-di-farro-con-scamorza-pomodorini-e-asparagi"
+          "https://www.basilicosecco.com/insalata-di-farro-con-verdure/"
         ],
-        "note": "Ингредиенты и техника сверены с региональной рецептурой; количества пересчитаны для двоих."
+        "note": "Сверено 19.11.2026: исходная ссылка La Cucina Italiana вела на вариант с нутом, не на этот состав. Заменена на CRAI: фарро, кабачки, перец, томаты и базилик присутствуют. CRAI также добавляет другие ингредиенты: наш рецепт самостоятельная овощная вариация.\n2026-11-19: replaced third asparagus/scamorza farro variant with Basilico Secco insalata di farro con verdure: farro, bell pepper, zucchini, cherry tomatoes, olive oil, basil for two servings. Source simmers vegetables far longer (20min vs our 7–9min pan saute) and cooks farro 40min vs our 20–35 per package; our version is shorter editorial interpretation, explicitly note."
       },
       "editorialApproval": {
         "status": "approved_by_user",
