@@ -1,0 +1,1057 @@
+{
+  "project": "НАШ ВЕЧЕР",
+  "country": "Вьетнам",
+  "collection": "100 завтраков мира",
+  "recipe_count": 10,
+  "is_published": false,
+  "verification_level": "recipe drafts pending safety and source-by-source checks including organ-meat handling",
+  "recipes": [
+    {
+      "id": "breakfast-vn-81",
+      "collection_number": 81,
+      "country": "Вьетнам",
+      "country_code": "VN",
+      "title": "Фо-бо - суп с говядиной",
+      "original_name": "Phở bò",
+      "servings": 2,
+      "total_min": 240,
+      "ingredients": [
+        {
+          "name": "Говяжьи кости для бульона",
+          "amount": 800,
+          "unit": "г"
+        },
+        {
+          "name": "Говяжья грудинка",
+          "amount": 220,
+          "unit": "г"
+        },
+        {
+          "name": "Тонко нарезанная говядина",
+          "amount": 120,
+          "unit": "г"
+        },
+        {
+          "name": "Рисовая лапша фо сухая",
+          "amount": 180,
+          "unit": "г"
+        },
+        {
+          "name": "Лук репчатый",
+          "amount": 180,
+          "unit": "г"
+        },
+        {
+          "name": "Имбирь свежий",
+          "amount": 55,
+          "unit": "г"
+        },
+        {
+          "name": "Бадьян",
+          "amount": 2,
+          "unit": "звёздочка"
+        },
+        {
+          "name": "Корица палочка",
+          "amount": 1,
+          "unit": "шт."
+        },
+        {
+          "name": "Гвоздика",
+          "amount": 3,
+          "unit": "шт."
+        },
+        {
+          "name": "Рыбный соус",
+          "amount": 25,
+          "unit": "мл"
+        },
+        {
+          "name": "Сахар",
+          "amount": 10,
+          "unit": "г"
+        },
+        {
+          "name": "Вода",
+          "amount": 2200,
+          "unit": "мл"
+        },
+        {
+          "name": "Зелёный лук",
+          "amount": 25,
+          "unit": "г"
+        },
+        {
+          "name": "Кинза",
+          "amount": 20,
+          "unit": "г"
+        },
+        {
+          "name": "Лайм",
+          "amount": 1,
+          "unit": "шт."
+        }
+      ],
+      "steps": [
+        {
+          "text": "Промой кости, сложи в кастрюлю, залей водой и доведи до бурного кипения. Через 5 минут слей воду, промой кости и кастрюлю, чтобы бульон получился прозрачным.",
+          "timer_sec": 300
+        },
+        {
+          "text": "Разрежь лук и имбирь, подрумянь срезы на сухой сковороде 5 минут; бадьян, корицу и гвоздику прогрей минуту на сухой сковороде.",
+          "timer_sec": 360
+        },
+        {
+          "text": "Верни кости в чистую кастрюлю, добавь 2,2 л свежей воды, лук, имбирь, специи и грудинку. Томись при едва заметном кипении 2,5–3 часа, снимая пену.",
+          "timer_sec": 10800
+        },
+        {
+          "text": "Через 60–90 минут проверь грудинку, когда станет мягкой, вынь и охлади; остальное продолжай варить. Процеди готовый бульон, приправь рыбным соусом и сахаром.",
+          "timer_sec": 0
+        },
+        {
+          "text": "Приготовь сухую рисовую лапшу по упаковке, обычно 5–7 минут, промой и раздели в две большие миски.",
+          "timer_sec": 420
+        },
+        {
+          "text": "Нарежь сваренную грудинку, а сырую говядину очень тонко. Для безопасной подачи провари сырые ломтики в кипящем бульоне до полной готовности, затем разложи мясо с лапшой.",
+          "timer_sec": 120
+        },
+        {
+          "text": "Залей всё очень горячим процеженным бульоном. Добавь зелёный лук, кинзу и дольку лайма.",
+          "timer_sec": 0
+        }
+      ],
+      "notes": "Не сокращать бульон до десятиминутной имитации: вкус фо формируется длительной варкой костей и обугленных ароматических овощей.",
+      "source_verification": {
+        "status": "cuisine_tradition_checked_individual_recipe_proofing_pending",
+        "country_reference_url": "https://vietnam.travel/things-to-do/21-must-try-vietnamese-dishes/"
+      },
+      "editorial_status": "complete_draft_pending_culinary_verification",
+      "photo_status": "deferred_by_user",
+      "publication_status": "unpublished"
+    },
+    {
+      "id": "breakfast-vn-82",
+      "collection_number": 82,
+      "country": "Вьетнам",
+      "country_code": "VN",
+      "title": "Фо-га - суп с курицей",
+      "original_name": "Phở gà",
+      "servings": 2,
+      "total_min": 130,
+      "ingredients": [
+        {
+          "name": "Курица на кости",
+          "amount": 850,
+          "unit": "г"
+        },
+        {
+          "name": "Рисовая лапша фо сухая",
+          "amount": 180,
+          "unit": "г"
+        },
+        {
+          "name": "Вода",
+          "amount": 2200,
+          "unit": "мл"
+        },
+        {
+          "name": "Лук репчатый",
+          "amount": 160,
+          "unit": "г"
+        },
+        {
+          "name": "Имбирь",
+          "amount": 50,
+          "unit": "г"
+        },
+        {
+          "name": "Кориандр семена",
+          "amount": 5,
+          "unit": "г"
+        },
+        {
+          "name": "Бадьян",
+          "amount": 1,
+          "unit": "звёздочка"
+        },
+        {
+          "name": "Рыбный соус",
+          "amount": 25,
+          "unit": "мл"
+        },
+        {
+          "name": "Сахар",
+          "amount": 8,
+          "unit": "г"
+        },
+        {
+          "name": "Зелёный лук",
+          "amount": 25,
+          "unit": "г"
+        },
+        {
+          "name": "Кинза",
+          "amount": 20,
+          "unit": "г"
+        },
+        {
+          "name": "Лайм",
+          "amount": 1,
+          "unit": "шт."
+        }
+      ],
+      "steps": [
+        {
+          "text": "Разрежь лук и имбирь пополам, подрумянь на сухой сковороде около 5 минут. Специи слегка прогрей.",
+          "timer_sec": 300
+        },
+        {
+          "text": "Положи курицу в кастрюлю, залей холодной водой, добавь лук, имбирь и специи. Доведи до кипения, сними пену и томи на слабом огне 35–45 минут.",
+          "timer_sec": 2700
+        },
+        {
+          "text": "Проверь курицу: внутренняя температура самой толстой части должна быть не ниже 74 °C. Вынь мясо, отдели от костей и нарежь полосками.",
+          "timer_sec": 0
+        },
+        {
+          "text": "Верни кости в бульон и вари ещё 30–40 минут. Затем процеди, приправь рыбным соусом и сахаром.",
+          "timer_sec": 2400
+        },
+        {
+          "text": "Подготовь лапшу по инструкции, обычно 5–7 минут; разложи по двум большим мискам вместе с курицей.",
+          "timer_sec": 420
+        },
+        {
+          "text": "Залей кипящим бульоном, посыпь зелёным луком и кинзой, предложи лайм.",
+          "timer_sec": 0
+        }
+      ],
+      "notes": "Для чистого куриного фо не использовать говяжьи кости или тяжёлую смесь пряностей как для фо-бо.",
+      "source_verification": {
+        "status": "cuisine_tradition_checked_individual_recipe_proofing_pending",
+        "country_reference_url": "https://vietnam.travel/things-to-do/21-must-try-vietnamese-dishes/"
+      },
+      "editorial_status": "complete_draft_pending_culinary_verification",
+      "photo_status": "deferred_by_user",
+      "publication_status": "unpublished"
+    },
+    {
+      "id": "breakfast-vn-83",
+      "collection_number": 83,
+      "country": "Вьетнам",
+      "country_code": "VN",
+      "title": "Бань-ми с яйцом",
+      "original_name": "Bánh mì ốp la",
+      "servings": 2,
+      "total_min": 40,
+      "ingredients": [
+        {
+          "name": "Вьетнамские небольшие багеты",
+          "amount": 2,
+          "unit": "шт."
+        },
+        {
+          "name": "Яйца",
+          "amount": 4,
+          "unit": "шт."
+        },
+        {
+          "name": "Морковь",
+          "amount": 100,
+          "unit": "г"
+        },
+        {
+          "name": "Дайкон",
+          "amount": 100,
+          "unit": "г"
+        },
+        {
+          "name": "Рисовый уксус",
+          "amount": 55,
+          "unit": "мл"
+        },
+        {
+          "name": "Сахар",
+          "amount": 25,
+          "unit": "г"
+        },
+        {
+          "name": "Соль",
+          "amount": 3,
+          "unit": "г"
+        },
+        {
+          "name": "Огурец",
+          "amount": 100,
+          "unit": "г"
+        },
+        {
+          "name": "Кинза",
+          "amount": 20,
+          "unit": "г"
+        },
+        {
+          "name": "Майонез",
+          "amount": 35,
+          "unit": "г"
+        },
+        {
+          "name": "Растительное масло",
+          "amount": 12,
+          "unit": "мл"
+        },
+        {
+          "name": "Чили",
+          "amount": 8,
+          "unit": "г"
+        }
+      ],
+      "steps": [
+        {
+          "text": "Натри морковь и дайкон соломкой, смешай с уксусом, сахаром и половиной соли, оставь мариноваться на 20–25 минут.",
+          "timer_sec": 1500
+        },
+        {
+          "text": "Разрежь багеты вдоль, не разрезая до конца, слегка прогрей в духовке 3 минуты при 180 °C.",
+          "timer_sec": 180
+        },
+        {
+          "text": "Нарежь огурец длинными тонкими ломтиками, кинзу промой и обсуши.",
+          "timer_sec": 0
+        },
+        {
+          "text": "Приготовь на небольшом количестве масла 4 яйца до полностью схватившегося белка, сохрани форму желтков по желанию.",
+          "timer_sec": 300
+        },
+        {
+          "text": "Смажь багеты майонезом, положи яйца, огурец, отжатые маринованные овощи, кинзу и чили. Подавай сразу.",
+          "timer_sec": 0
+        }
+      ],
+      "notes": "Внутри должны быть готовые яйца, хрустящий багет и маринованная морковь с дайконом.",
+      "source_verification": {
+        "status": "cuisine_tradition_checked_individual_recipe_proofing_pending",
+        "country_reference_url": "https://vietnam.travel/things-to-do/21-must-try-vietnamese-dishes/"
+      },
+      "editorial_status": "complete_draft_pending_culinary_verification",
+      "photo_status": "deferred_by_user",
+      "publication_status": "unpublished"
+    },
+    {
+      "id": "breakfast-vn-84",
+      "collection_number": 84,
+      "country": "Вьетнам",
+      "country_code": "VN",
+      "title": "Бань-куон - рисовые рулетики",
+      "original_name": "Bánh cuốn",
+      "servings": 2,
+      "total_min": 75,
+      "ingredients": [
+        {
+          "name": "Рисовая мука",
+          "amount": 180,
+          "unit": "г"
+        },
+        {
+          "name": "Тапиоковый крахмал",
+          "amount": 45,
+          "unit": "г"
+        },
+        {
+          "name": "Вода для теста",
+          "amount": 600,
+          "unit": "мл"
+        },
+        {
+          "name": "Свиной фарш",
+          "amount": 180,
+          "unit": "г"
+        },
+        {
+          "name": "Грибы древесные муэр сухие",
+          "amount": 12,
+          "unit": "г"
+        },
+        {
+          "name": "Лук шалот",
+          "amount": 65,
+          "unit": "г"
+        },
+        {
+          "name": "Растительное масло",
+          "amount": 25,
+          "unit": "мл"
+        },
+        {
+          "name": "Рыбный соус",
+          "amount": 35,
+          "unit": "мл"
+        },
+        {
+          "name": "Вода для соуса",
+          "amount": 80,
+          "unit": "мл"
+        },
+        {
+          "name": "Сахар",
+          "amount": 15,
+          "unit": "г"
+        },
+        {
+          "name": "Лайм сок",
+          "amount": 20,
+          "unit": "мл"
+        },
+        {
+          "name": "Чеснок",
+          "amount": 1,
+          "unit": "зубчик"
+        }
+      ],
+      "steps": [
+        {
+          "text": "Замочи муэр в тёплой воде на 20 минут, промой, мелко наруби; измельчи шалот.",
+          "timer_sec": 1200
+        },
+        {
+          "text": "Смешай рисовую муку и тапиоковый крахмал с 600 мл воды и щепоткой соли, дай тесту постоять 20 минут и снова перемешай.",
+          "timer_sec": 1200
+        },
+        {
+          "text": "Обжарь шалот и грибы 3 минуты, добавь свиной фарш, готовь 6–8 минут до полной готовности и отсутствия розовой середины.",
+          "timer_sec": 480
+        },
+        {
+          "text": "Слегка смажь антипригарную сковороду, налей очень тонкий слой жидкого теста, накрой крышкой и готовь 45–60 секунд до прозрачной готовой плёнки.",
+          "timer_sec": 60
+        },
+        {
+          "text": "Аккуратно перенеси лист на смазанную поверхность, положи немного начинки и сверни рулетиком. Повтори, получив 8–10 штук.",
+          "timer_sec": 0
+        },
+        {
+          "text": "Смешай рыбный соус, воду, сахар, лайм и натёртый чеснок. Подавай готовые рулетики с соусом отдельно.",
+          "timer_sec": 0
+        }
+      ],
+      "notes": "Адаптация домашнего приготовления: тонкие рисовые листы готовятся под крышкой на сковороде, а не на профессиональной паровой ткани.",
+      "source_verification": {
+        "status": "cuisine_tradition_checked_individual_recipe_proofing_pending",
+        "country_reference_url": "https://vietnam.travel/things-to-do/21-must-try-vietnamese-dishes/"
+      },
+      "editorial_status": "complete_draft_pending_culinary_verification",
+      "photo_status": "deferred_by_user",
+      "publication_status": "unpublished"
+    },
+    {
+      "id": "breakfast-vn-85",
+      "collection_number": 85,
+      "country": "Вьетнам",
+      "country_code": "VN",
+      "title": "Сой-сео - клейкий рис с машем",
+      "original_name": "Xôi xéo",
+      "servings": 2,
+      "total_min": 340,
+      "ingredients": [
+        {
+          "name": "Клейкий рис сухой",
+          "amount": 220,
+          "unit": "г"
+        },
+        {
+          "name": "Маш жёлтый очищенный",
+          "amount": 110,
+          "unit": "г"
+        },
+        {
+          "name": "Лук шалот",
+          "amount": 110,
+          "unit": "г"
+        },
+        {
+          "name": "Растительное масло",
+          "amount": 45,
+          "unit": "мл"
+        },
+        {
+          "name": "Куркума молотая",
+          "amount": 3,
+          "unit": "г"
+        },
+        {
+          "name": "Соль",
+          "amount": 4,
+          "unit": "г"
+        },
+        {
+          "name": "Вода для замачивания",
+          "amount": 1200,
+          "unit": "мл"
+        }
+      ],
+      "steps": [
+        {
+          "text": "Промой клейкий рис, замочи в холодной воде с куркумой минимум на 4 часа; маш замочи отдельно на 2 часа.",
+          "timer_sec": 14400
+        },
+        {
+          "text": "Откинь рис, посоли и готовь на пару 25–30 минут до мягких отдельных липких зёрен.",
+          "timer_sec": 1800
+        },
+        {
+          "text": "Маш отцеди, готовь на пару 20–25 минут до полной мягкости. Разомни горячий маш в пасту, сформуй два плотных шарика.",
+          "timer_sec": 1500
+        },
+        {
+          "text": "Шалот нарежь очень тонко, обжарь в масле 6–8 минут на умеренном огне до золотистости, вынь на бумагу.",
+          "timer_sec": 480
+        },
+        {
+          "text": "Разложи рис по мискам, сверху натри отваренный маш крупной стружкой, добавь жареный шалот и немного ароматного масла.",
+          "timer_sec": 0
+        }
+      ],
+      "notes": "Традиционная структура: жёлтый липкий рис, мягкий маш и хрустящий жареный шалот.",
+      "source_verification": {
+        "status": "cuisine_tradition_checked_individual_recipe_proofing_pending",
+        "country_reference_url": "https://vietnam.travel/things-to-do/21-must-try-vietnamese-dishes/"
+      },
+      "editorial_status": "complete_draft_pending_culinary_verification",
+      "photo_status": "deferred_by_user",
+      "publication_status": "unpublished"
+    },
+    {
+      "id": "breakfast-vn-86",
+      "collection_number": 86,
+      "country": "Вьетнам",
+      "country_code": "VN",
+      "title": "Чао-лонг - рисовая каша с субпродуктами",
+      "original_name": "Cháo lòng",
+      "servings": 2,
+      "total_min": 115,
+      "ingredients": [
+        {
+          "name": "Рис круглозёрный сухой",
+          "amount": 110,
+          "unit": "г"
+        },
+        {
+          "name": "Вода",
+          "amount": 1100,
+          "unit": "мл"
+        },
+        {
+          "name": "Свиное сердце очищенное",
+          "amount": 160,
+          "unit": "г"
+        },
+        {
+          "name": "Свиная печень",
+          "amount": 150,
+          "unit": "г"
+        },
+        {
+          "name": "Свиная кишка предварительно очищенная",
+          "amount": 120,
+          "unit": "г"
+        },
+        {
+          "name": "Имбирь",
+          "amount": 30,
+          "unit": "г"
+        },
+        {
+          "name": "Рыбный соус",
+          "amount": 25,
+          "unit": "мл"
+        },
+        {
+          "name": "Лук зелёный",
+          "amount": 25,
+          "unit": "г"
+        },
+        {
+          "name": "Кинза",
+          "amount": 20,
+          "unit": "г"
+        },
+        {
+          "name": "Чёрный перец",
+          "amount": 2,
+          "unit": "г"
+        },
+        {
+          "name": "Соль",
+          "amount": 4,
+          "unit": "г"
+        }
+      ],
+      "steps": [
+        {
+          "text": "Кишку выверни, тщательно промой проточной водой и солью, затем ополосни. Субпродукты держи охлаждёнными до варки и разделяй сырые и готовые доски.",
+          "timer_sec": 0
+        },
+        {
+          "text": "Сердце и очищенную кишку положи в отдельную кастрюлю, залей водой, доведи до кипения, слей первую воду и снова залей чистой.",
+          "timer_sec": 300
+        },
+        {
+          "text": "Вари сердце и кишку при умеренном кипении 50–70 минут до мягкости. Печень добавь отдельно ближе к концу и приготовь полностью, до внутренней температуры не ниже 71 °C.",
+          "timer_sec": 4200
+        },
+        {
+          "text": "Промой рис, положи в 1,1 л воды с имбирём и вари 35–45 минут, периодически помешивая, до разваренной каши.",
+          "timer_sec": 2700
+        },
+        {
+          "text": "Нарежь приготовленные субпродукты небольшими кусочками, добавь к рисовой каше, прогрей 3–4 минуты, приправь рыбным соусом и солью.",
+          "timer_sec": 240
+        },
+        {
+          "text": "Разложи по мискам, посыпь зелёным луком, кинзой и чёрным перцем.",
+          "timer_sec": 0
+        }
+      ],
+      "notes": "Сложное блюдо с субпродуктами. Перед публикацией требуется отдельная санитарная и технологическая проверка по правилам безопасной подготовки кишечника; не считать рецепт утверждённым.",
+      "source_verification": {
+        "status": "cuisine_tradition_checked_individual_recipe_proofing_pending",
+        "country_reference_url": "https://vietnam.travel/things-to-do/21-must-try-vietnamese-dishes/"
+      },
+      "editorial_status": "complete_draft_pending_culinary_verification",
+      "photo_status": "deferred_by_user",
+      "publication_status": "unpublished"
+    },
+    {
+      "id": "breakfast-vn-87",
+      "collection_number": 87,
+      "country": "Вьетнам",
+      "country_code": "VN",
+      "title": "Бун-риэу - суп с крабовой пастой",
+      "original_name": "Bún riêu",
+      "servings": 2,
+      "total_min": 95,
+      "ingredients": [
+        {
+          "name": "Рисовая вермишель бун сухая",
+          "amount": 180,
+          "unit": "г"
+        },
+        {
+          "name": "Крабовое мясо готовое",
+          "amount": 150,
+          "unit": "г"
+        },
+        {
+          "name": "Свиной фарш",
+          "amount": 120,
+          "unit": "г"
+        },
+        {
+          "name": "Яйцо",
+          "amount": 1,
+          "unit": "шт."
+        },
+        {
+          "name": "Помидоры",
+          "amount": 280,
+          "unit": "г"
+        },
+        {
+          "name": "Тофу плотный",
+          "amount": 150,
+          "unit": "г"
+        },
+        {
+          "name": "Бульон мясной",
+          "amount": 1000,
+          "unit": "мл"
+        },
+        {
+          "name": "Рыбный соус",
+          "amount": 25,
+          "unit": "мл"
+        },
+        {
+          "name": "Паста креветочная ферментированная",
+          "amount": 8,
+          "unit": "г"
+        },
+        {
+          "name": "Тамариндовая паста",
+          "amount": 20,
+          "unit": "г"
+        },
+        {
+          "name": "Зелёный лук",
+          "amount": 25,
+          "unit": "г"
+        },
+        {
+          "name": "Мята",
+          "amount": 15,
+          "unit": "г"
+        },
+        {
+          "name": "Растительное масло",
+          "amount": 15,
+          "unit": "мл"
+        }
+      ],
+      "steps": [
+        {
+          "text": "Смешай крабовое мясо с сырым свиным фаршем и яйцом до вязкой массы; держи смесь охлаждённой.",
+          "timer_sec": 0
+        },
+        {
+          "text": "Нарежь помидоры дольками, тофу кубиками. Обжарь помидоры на масле 5–6 минут до мягкости.",
+          "timer_sec": 360
+        },
+        {
+          "text": "Вскипяти бульон с помидорами, тамариндом и креветочной пастой, провари 10 минут.",
+          "timer_sec": 600
+        },
+        {
+          "text": "Опускай крабово-мясную смесь небольшими порциями в слабо кипящий бульон; готовь 10–12 минут до полной готовности свиного фарша.",
+          "timer_sec": 720
+        },
+        {
+          "text": "Добавь тофу, рыбный соус, прогрей ещё 4 минуты. Отдельно приготовь рисовую вермишель по инструкции и раздели в две миски.",
+          "timer_sec": 300
+        },
+        {
+          "text": "Залей горячим бульоном с крабовыми фрикадельками, добавь зелёный лук и мяту.",
+          "timer_sec": 0
+        }
+      ],
+      "notes": "Риэу включает крабово-мясные мягкие сгустки, а не только красный томатный суп.",
+      "source_verification": {
+        "status": "cuisine_tradition_checked_individual_recipe_proofing_pending",
+        "country_reference_url": "https://vietnam.travel/things-to-do/21-must-try-vietnamese-dishes/"
+      },
+      "editorial_status": "complete_draft_pending_culinary_verification",
+      "photo_status": "deferred_by_user",
+      "publication_status": "unpublished"
+    },
+    {
+      "id": "breakfast-vn-88",
+      "collection_number": 88,
+      "country": "Вьетнам",
+      "country_code": "VN",
+      "title": "Бун-бо Хюэ - пряный суп с говядиной",
+      "original_name": "Bún bò Huế",
+      "servings": 2,
+      "total_min": 225,
+      "ingredients": [
+        {
+          "name": "Говяжьи кости",
+          "amount": 650,
+          "unit": "г"
+        },
+        {
+          "name": "Говяжья голяшка",
+          "amount": 320,
+          "unit": "г"
+        },
+        {
+          "name": "Свинина на кости",
+          "amount": 250,
+          "unit": "г"
+        },
+        {
+          "name": "Рисовая лапша бун толстая сухая",
+          "amount": 180,
+          "unit": "г"
+        },
+        {
+          "name": "Лемонграсс",
+          "amount": 3,
+          "unit": "стебель"
+        },
+        {
+          "name": "Лук",
+          "amount": 160,
+          "unit": "г"
+        },
+        {
+          "name": "Имбирь",
+          "amount": 35,
+          "unit": "г"
+        },
+        {
+          "name": "Рыбный соус",
+          "amount": 30,
+          "unit": "мл"
+        },
+        {
+          "name": "Ферментированная креветочная паста",
+          "amount": 12,
+          "unit": "г"
+        },
+        {
+          "name": "Аннато масло",
+          "amount": 20,
+          "unit": "мл"
+        },
+        {
+          "name": "Острый перец",
+          "amount": 8,
+          "unit": "г"
+        },
+        {
+          "name": "Вода",
+          "amount": 2000,
+          "unit": "мл"
+        },
+        {
+          "name": "Зелёный лук",
+          "amount": 25,
+          "unit": "г"
+        },
+        {
+          "name": "Лайм",
+          "amount": 1,
+          "unit": "шт."
+        }
+      ],
+      "steps": [
+        {
+          "text": "Промой кости и мясо, бланшируй в кипящей воде 5 минут, слей, промой ещё раз.",
+          "timer_sec": 300
+        },
+        {
+          "text": "Раздави стебли лемонграсса, нарежь лук крупно. Сложи кости, говядину, свинину, лук и лемонграсс в кастрюлю с 2 л чистой воды.",
+          "timer_sec": 0
+        },
+        {
+          "text": "Вари при тихом кипении 2,5–3 часа, снимая пену. Готовое мясо вынь по мере мягкости и нарежь тонкими ломтиками.",
+          "timer_sec": 10800
+        },
+        {
+          "text": "Процеди бульон, добавь разведённую в небольшом количестве бульона креветочную пасту, рыбный соус и аннато масло с чили; прокипяти 5 минут.",
+          "timer_sec": 300
+        },
+        {
+          "text": "Приготовь толстую рисовую вермишель по инструкции, обычно 7–10 минут. Разложи по большим мискам вместе с мясом.",
+          "timer_sec": 600
+        },
+        {
+          "text": "Залей бульоном и подавай с зелёным луком и лаймом.",
+          "timer_sec": 0
+        }
+      ],
+      "notes": "Не путать с фо: здесь выраженный лемонграсс, ферментированная креветочная паста, толстая круглая лапша и пряное аннато масло.",
+      "source_verification": {
+        "status": "cuisine_tradition_checked_individual_recipe_proofing_pending",
+        "country_reference_url": "https://vietnam.travel/things-to-do/21-must-try-vietnamese-dishes/"
+      },
+      "editorial_status": "complete_draft_pending_culinary_verification",
+      "photo_status": "deferred_by_user",
+      "publication_status": "unpublished"
+    },
+    {
+      "id": "breakfast-vn-89",
+      "collection_number": 89,
+      "country": "Вьетнам",
+      "country_code": "VN",
+      "title": "Бань-дзо - рисовый пирожок на пару",
+      "original_name": "Bánh giò",
+      "servings": 2,
+      "total_min": 115,
+      "ingredients": [
+        {
+          "name": "Рисовая мука",
+          "amount": 180,
+          "unit": "г"
+        },
+        {
+          "name": "Тапиоковый крахмал",
+          "amount": 35,
+          "unit": "г"
+        },
+        {
+          "name": "Куриный или свиной бульон",
+          "amount": 630,
+          "unit": "мл"
+        },
+        {
+          "name": "Свиной фарш",
+          "amount": 190,
+          "unit": "г"
+        },
+        {
+          "name": "Грибы муэр сухие",
+          "amount": 12,
+          "unit": "г"
+        },
+        {
+          "name": "Лук шалот",
+          "amount": 80,
+          "unit": "г"
+        },
+        {
+          "name": "Рыбный соус",
+          "amount": 20,
+          "unit": "мл"
+        },
+        {
+          "name": "Растительное масло",
+          "amount": 15,
+          "unit": "мл"
+        },
+        {
+          "name": "Банановые листья для заворачивания",
+          "amount": 6,
+          "unit": "шт."
+        },
+        {
+          "name": "Чёрный перец",
+          "amount": 2,
+          "unit": "г"
+        }
+      ],
+      "steps": [
+        {
+          "text": "Замочи муэр на 20 минут, промой и мелко наруби. Банановые листья прогрей над паром, чтобы стали мягкими и не рвались.",
+          "timer_sec": 1200
+        },
+        {
+          "text": "Обжарь шалот на масле 3 минуты, добавь фарш и грибы, готовь 8–10 минут до полной готовности, приправь рыбным соусом и перцем.",
+          "timer_sec": 600
+        },
+        {
+          "text": "Смешай рисовую муку и крахмал с холодным бульоном. На слабом огне непрерывно мешай 8–10 минут до густой блестящей пасты без сырой мучной смеси.",
+          "timer_sec": 600
+        },
+        {
+          "text": "Сложи каждый банановый лист в конус. Положи слой горячей рисовой массы, ложку мясной начинки и закрой рисовой массой, затем заверни края.",
+          "timer_sec": 0
+        },
+        {
+          "text": "Поставь 6 пакетов в пароварку швом вверх. Готовь на пару 30–35 минут, чтобы крахмальная оболочка полностью стабилизировалась.",
+          "timer_sec": 2100
+        },
+        {
+          "text": "Дай постоять 10 минут. Раскрывай листья перед едой, не ешь их.",
+          "timer_sec": 600
+        }
+      ],
+      "notes": "Бань-дзо имеет мягкую рисовую оболочку и мясную начинку, готовится в банановых листьях.",
+      "source_verification": {
+        "status": "cuisine_tradition_checked_individual_recipe_proofing_pending",
+        "country_reference_url": "https://vietnam.travel/things-to-do/21-must-try-vietnamese-dishes/"
+      },
+      "editorial_status": "complete_draft_pending_culinary_verification",
+      "photo_status": "deferred_by_user",
+      "publication_status": "unpublished"
+    },
+    {
+      "id": "breakfast-vn-90",
+      "collection_number": 90,
+      "country": "Вьетнам",
+      "country_code": "VN",
+      "title": "Ком-там со свининой на гриле",
+      "original_name": "Cơm tấm sườn nướng",
+      "servings": 2,
+      "total_min": 90,
+      "ingredients": [
+        {
+          "name": "Битый рис сухой",
+          "amount": 170,
+          "unit": "г"
+        },
+        {
+          "name": "Вода для риса",
+          "amount": 230,
+          "unit": "мл"
+        },
+        {
+          "name": "Свинина корейка без кости",
+          "amount": 320,
+          "unit": "г"
+        },
+        {
+          "name": "Рыбный соус для маринада",
+          "amount": 25,
+          "unit": "мл"
+        },
+        {
+          "name": "Сахар",
+          "amount": 25,
+          "unit": "г"
+        },
+        {
+          "name": "Лемонграсс",
+          "amount": 2,
+          "unit": "стебель"
+        },
+        {
+          "name": "Чеснок",
+          "amount": 2,
+          "unit": "зубчик"
+        },
+        {
+          "name": "Растительное масло",
+          "amount": 15,
+          "unit": "мл"
+        },
+        {
+          "name": "Огурец",
+          "amount": 100,
+          "unit": "г"
+        },
+        {
+          "name": "Морковь",
+          "amount": 70,
+          "unit": "г"
+        },
+        {
+          "name": "Дайкон",
+          "amount": 70,
+          "unit": "г"
+        },
+        {
+          "name": "Уксус рисовый",
+          "amount": 35,
+          "unit": "мл"
+        },
+        {
+          "name": "Сахар для маринада овощей",
+          "amount": 15,
+          "unit": "г"
+        }
+      ],
+      "steps": [
+        {
+          "text": "Смешай рыбный соус, 25 г сахара, мелко рубленый лемонграсс, чеснок и масло. Натрите свинину и оставь в холодильнике на 30 минут.",
+          "timer_sec": 1800
+        },
+        {
+          "text": "Нарежь морковь и дайкон соломкой, смешай с уксусом и оставшимися 15 г сахара, оставь на 20 минут.",
+          "timer_sec": 1200
+        },
+        {
+          "text": "Промой битый рис, залей 230 мл воды, вари под крышкой после закипания 13–15 минут, затем дай настояться 10 минут.",
+          "timer_sec": 1500
+        },
+        {
+          "text": "Разогрей гриль или гриль-сковороду. Готовь свинину по 4–6 минут с каждой стороны с поправкой на толщину до внутренней температуры не ниже 63 °C; дай мясу отдохнуть 3 минуты.",
+          "timer_sec": 720
+        },
+        {
+          "text": "Разложи рис по двум тарелкам, добавь порезанную готовую свинину, огурец и отжатые маринованные овощи.",
+          "timer_sec": 0
+        }
+      ],
+      "notes": "Для ком-там нужен битый рис, а свинина должна иметь карамелизованную поверхность без горелых кусков чеснока.",
+      "source_verification": {
+        "status": "cuisine_tradition_checked_individual_recipe_proofing_pending",
+        "country_reference_url": "https://vietnam.travel/things-to-do/21-must-try-vietnamese-dishes/"
+      },
+      "editorial_status": "complete_draft_pending_culinary_verification",
+      "photo_status": "deferred_by_user",
+      "publication_status": "unpublished"
+    }
+  ]
+}
