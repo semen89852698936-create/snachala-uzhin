@@ -1,329 +1,939 @@
-# Аудит 90 салатов: три источника на карточку и шаговые таймеры
+# НАШ ВЕЧЕР: содержательная сверка 90 салатов по 270 источникам и таймеры
 
-**Дата:** 19.11.2026  
-**Репозиторий:** `semen89852698936-create/snachala-uzhin`  
-**Ветка:** `editorial/100-world-salads-20261119`  
-**Источник данных:** `data/editorial/salads/world-100-catalog.json`  
-**Статус:** `PARTIAL_INDEPENDENT_CONTENT_AUDIT / TIMER_REPAIRS_VERIFIED / STAGING_ONLY`
+Дата: **19 ноября 2026 года**. Репозиторий: `semen89852698936-create/snachala-uzhin`. Ветка: `editorial/100-world-salads-20261119`. Каталог: `data/editorial/salads/world-100-catalog.json`.
 
-## Реальный объём проверки
+## Статус проверки: РЕДАКЦИОННАЯ РАБОТА, НЕ ПОЛНЫЙ SOURCES_PASS
 
-- Обработано 90 карточек №11–100, подготовлен поимённый реестр всех 270 заявленных источников. Каждый рецепт содержит три разных домена, а URL уникальны.
-- По нескольким источникам проведена подробная текстовая сверка рецептуры и технологии, в том числе с заменой явно неподходящих ссылок. В таблице ниже **28 источников имеют документированные предметные замечания/сверки; 242 источников требуют подробной проверки**. Наличие ссылки, её открытие, название рецепта и общая кулинарная схожесть **не равны** полной независимой проверке всех количеств и шагов.
-- Пока нельзя заявлять `270/270 PASS`, а также не следует выдавать 90/90 рецептов за подтверждённые тремя источниками каждый. Это **не завершённая содержательная приёмка всех 270 страниц**.
-- Остальные источники перечислены ниже с честным статусом `REVIEW_REQUIRED`; не удалять этот маркер до фактического чтения каждого источника, сравнения состава/обработки и фиксации противоречий.
+- В каталоге **90 карточек** №11–100, в реестре **270 URL** (по 3 уникальных домена на карточку), реальные страницы и поисковые выдачи в ходе аудита просматривались/проверялись, некоторые оказались недоступными и заменены на конкретные рецепты. **Не утверждать, что все 270 исходных страниц прочитаны и полностью сопоставлены:** часть ресурсов защищена от автоматического доступа, часть дает вариативные рецептуры. Даже доступ к странице не доказывает совпадение каждой граммовки.
+- Документирована конкретная содержательная сверка ключевой рецептуры/технологии для **109 отдельных источников**, остальные **161** отмечены как не закрытые полной индивидуальной сверкой. Даже «содержательная сверка основы» не доказывает точных граммовок и не дает полного источникового PASS.
+- Для каждого из 90 блюд ниже есть предметный кулинарный вывод по текущей карточке, но этот вывод **не равен** независимому чтению каждого из трёх сайтов.
+- В рамках этого этапа исправлены заведомо ошибочные ссылки и источники не того блюда, расхождения в ингредиентах №29 и №31, чрезмерно короткие выдержки №12 и №17 и многие минуты приготовления.
+- Исторические утверждения о «100 утвержденных карточках» сохраняются, но не следует путать пользовательское утверждение рецептов с техническим источниковым QA.
 
-## Проверенные исправления, варианты и первичные выводы
+## Проверка пошаговых таймеров
 
-1. №11 Caprese: исправлен неверный URL стороннего овощного салата.
-2. №12 Panzanella: исправлен недоступный URL; текущая рецептура - ускоренная адаптация, а не точное время традиционного настоя.
-3. №14 Octopus and potatoes: заменена устаревшая ссылка.
-4. №15 Sicilian fennel/orange: ссылка поисковой выдачи заменена конкретным рецептом.
-5. №17 Roman puntarelle: источник Cucchiaio заменён на реальный рецепт с анчоусной заправкой.
-6. №18 Italian rice: две ссылки заменены на прямые рецепты, в рецептуре каталога есть авторские добавления.
-7. №19 Farro: прежний источник описывал другой набор ингредиентов; новый подтверждает базовый состав.
-8. №23 Périgord: источники расходятся по типу птицы и субпродуктов; наша куриная печень с магре - авторская вариация.
-9. №26 Carottes râpées: заменён источник дижонской морковной винегретной заправки.
-10. №29 Cauchoise: корень сельдерея заменён на черешковый, обновлены шаги и фото-ТЗ.
-11. №37 Esqueixada: источник Bon Viveur недоступен; заменён на Directo al Paladar и задокументированы необязательные перцы.
-12. №41 Horiatiki: заменена мёртвая ссылка Diane и общая туристическая страница на два конкретных рецепта.
-13. №51 Çoban: две ссылки исправлены с проверкой ингредиентов.
-14. №52 Gavurdağı: 30-минутное настаивание внесено в шаги по источнику; увеличено общее время до 50 минут.
-15. №53 Antalya piyaz: недействительная ссылка Serious Eats заменена рецептом Özlem Warren на Penguin.
-16. №69 Lebanese arugula: три прежних ссылки заменены на рецепты Jarjeer с лимоном, сумахом и луком.
-17. №74 Japanese potato salad: общее время 80 минут сопоставлено с Just One Cookbook.
-18. №82 Yum Woon Sen: неоткрываемый поддомен Epicurious заменён Marion's Kitchen.
-19. №84 Nam Tok steak: указана минимальная температура 63°C и отдых по FoodSafety.gov.
-20. №87 Crispy catfish: разделены запекание/сушка/жарка, прописан термометр 63°C, общий план 60 минут.
-21. №97 American potato salad: общее время увеличено до 80 минут, чтобы покрыть независимые процессы и охлаждение.
+- **375 шагов**, из них **118** с ненулевым таймером; **13** полностью ручных салатов не требуют отсчёта времени.
+- Ранее 74 карточки имели полностью нулевые таймеры; все обязательные явно указанные промежутки варки/запекания/настаивания в нынешнем каталоге имеют отсчёт. Два условных варианта, где время указано как «при желании/если требуется», не включаются в обязательный запуск: №20 замачивание лука и №81 замачивание креветок.
+- Временные процессы готовки нескольких ингредиентов разделены по шагам, чтобы таймер для одного не подменял другой. **Ни одна из 90 карточек не имеет суммы последовательных таймеров больше заявленного общего времени**.
+- Таймеры в рецептах с мясом, рыбой или птицей служат лишь ориентирами; безопасную готовность подтверждает термометр. Для свиного фарша минимум 71 °C, для курицы и печени птицы 74 °C, для рыбы и цельных стейков 63 °C; после приготовления цельному стейку дать отдых не менее 3 минут. См.: https://www.foodsafety.gov/food-safety-charts/safe-minimum-internal-temperatures.
+- 13 безтаймерных (только ручные стадии) рецептов: №15 «Фенхель с апельсинами по-сицилийски», №20 «Белая фасоль с тунцом и луком», №30 «Цикорий с рокфором и грецкими орехами», №41 «Хорьятики, классический греческий», №42 «Критский дакос», №43 «Марулосалата с укропом», №51 «Чобан салатасы, пастуший», №57 «Портулак с чесночным йогуртом», №69 «Салат из рукколы с сумахом», №70 «Свежий зелёный тимьян с луком», №79 «Тофу с кунжутным понзу», №81 «Сом там из зелёной папайи», №92 «Вальдорф с яблоком и сельдереем».
 
-## Пошаговые таймеры
+## Кулинарные выводы и время по каждому из 90 рецептов
 
-- Всего 90 рецептов, 374 шагов, 117 шагов с положительным таймером.
-- Полностью без отсчёта: 13 салатов с ручной обработкой (без обязательных интервалов). №15 «Фенхель с апельсинами по-сицилийски»; №20 «Белая фасоль с тунцом и луком»; №30 «Цикорий с рокфором и грецкими орехами»; №41 «Хорьятики, классический греческий»; №42 «Критский дакос»; №43 «Марулосалата с укропом»; №51 «Чобан салатасы, пастуший»; №57 «Портулак с чесночным йогуртом»; №69 «Салат из рукколы с сумахом»; №70 «Свежий зелёный тимьян с луком»; №79 «Тофу с кунжутным понзу»; №81 «Сом там из зелёной папайи»; №92 «Вальдорф с яблоком и сельдереем».
-- Все обязательные отрезки времени, **явно** указанные в инструкциях, имеют таймер; два необязательных замачивания (№20 лук и №81 сушёные креветки) оставлены условными, 0 для этапа без обязательного обратного отсчёта.
-- Ни один рецепт не имеет суммы последовательных шаговых таймеров больше своего общего указанного времени.
-- Вместо фиктивных таймеров для нарезки и смешивания в интерфейсе сохранён 0. Таймер для мяса/рыбы ориентировочный: окончательная готовность проверяется термометром/визуальным состоянием; Фарш свиной: 71°C; курица/печень птицы: 74°C; рыба и цельный стейк: 63°C, стейк требует отдыха 3 минуты. Официальный источник: https://www.foodsafety.gov/food-safety-charts/safe-minimum-internal-temperatures.
+### 11. Капрезе с моцареллой
 
-## Реестр источников: три ссылки на каждую из 90 карточек
+Капрезе: только спелые помидоры, моцарелла, базилик и оливковое масло. Без дополнительных хлеба, тыквенных семечек или овощной смеси.
 
-Статусы: `SUBSTANTIVELY_COMPARED` = предметно сопоставлены ключевые ингредиенты/техника и зафиксировано конкретное замечание. **Не означает дословное совпадение** или проверку каждой дозировки. `REVIEW_REQUIRED` = источник заявлен, но полной предметной сверки не задокументировано. Все URL приведены с точными адресами из текущей редакционной ветки.
+Время карточки: **15 мин**. Шаги: 1) «Подготовь продукты»: 15 мин; 2) «Нарежь»: без отсчёта; 3) «Уложи»: без отсчёта; 4) «Приправь»: без отсчёта.
 
-| № | Рецепт | Источник | Ссылка | Статус | Предметный результат/долг |
-|---:|---|---:|---|---|---|
-| 11 | Капрезе с моцареллой | 1 | [Источник](https://www.lacucinaitaliana.it/ricetta/antipasti/caprese/) | REVIEW_REQUIRED | Нет документального подтверждения подробной сверки ингредиентов и технологии с этой страницей; не считать APPROVED |
-| 11 | Капрезе с моцареллой | 2 | [Источник](https://www.cucchiaio.it/ricetta/ricetta-caprese/) | SUBSTANTIVELY_COMPARED | Caprese: mozzarella, tomatoes, basil, olive oil; corrected from different mixed salad |
-| 11 | Капрезе с моцареллой | 3 | [Источник](https://blog.giallozafferano.it/studentiaifornelli/insalata-caprese-ricetta/) | REVIEW_REQUIRED | Нет документального подтверждения подробной сверки ингредиентов и технологии с этой страницей; не считать APPROVED |
-| 12 | Панцанелла с томатами и хлебом | 1 | [Источник](https://www.lacucinaitaliana.it/ricetta/antipasti/panzanella-ricetta-classica/) | SUBSTANTIVELY_COMPARED | Tuscan panzanella: stale bread and tomatoes; longer rest than editorial quick version |
-| 12 | Панцанелла с томатами и хлебом | 2 | [Источник](https://www.cucchiaio.it/ricetta/panzanella/) | REVIEW_REQUIRED | Нет документального подтверждения подробной сверки ингредиентов и технологии с этой страницей; не считать APPROVED |
-| 12 | Панцанелла с томатами и хлебом | 3 | [Источник](https://blog.giallozafferano.it/pierobenigni/panzanella-toscana/) | REVIEW_REQUIRED | Нет документального подтверждения подробной сверки ингредиентов и технологии с этой страницей; не считать APPROVED |
-| 13 | Инсалата ди маре с морепродуктами | 1 | [Источник](https://www.cucchiaio.it/ricetta/insalata-di-mare/) | REVIEW_REQUIRED | Нет документального подтверждения подробной сверки ингредиентов и технологии с этой страницей; не считать APPROVED |
-| 13 | Инсалата ди маре с морепродуктами | 2 | [Источник](https://blog.giallozafferano.it/ilchiccodimais/insalata-di-mare/) | REVIEW_REQUIRED | Нет документального подтверждения подробной сверки ингредиентов и технологии с этой страницей; не считать APPROVED |
-| 13 | Инсалата ди маре с морепродуктами | 3 | [Источник](https://www.lacucinaitaliana.it/ricetta/antipasti/insalata-di-mare/) | REVIEW_REQUIRED | Нет документального подтверждения подробной сверки ингредиентов и технологии с этой страницей; не считать APPROVED |
-| 14 | Салат с осьминогом и картофелем | 1 | [Источник](https://www.cucchiaio.it/ricetta/ricetta-insalata-di-polpo-con-patate/) | REVIEW_REQUIRED | Нет документального подтверждения подробной сверки ингредиентов и технологии с этой страницей; не считать APPROVED |
-| 14 | Салат с осьминогом и картофелем | 2 | [Источник](https://blog.giallozafferano.it/lemieloverie/ricetta-insalata-di-polpo-e-patate/) | REVIEW_REQUIRED | Нет документального подтверждения подробной сверки ингредиентов и технологии с этой страницей; не считать APPROVED |
-| 14 | Салат с осьминогом и картофелем | 3 | [Источник](https://www.ilcuoreinpentola.it/ricette/ricette-delle-feste/insalata-di-polpo-e-patate/) | SUBSTANTIVELY_COMPARED | Polpo e patate: boiled octopus, potatoes, lemon, parsley |
-| 15 | Фенхель с апельсинами по-сицилийски | 1 | [Источник](https://www.lacucinaitaliana.it/ricetta/insalata-finocchi-arance-olive-nere/) | REVIEW_REQUIRED | Нет документального подтверждения подробной сверки ингредиентов и технологии с этой страницей; не считать APPROVED |
-| 15 | Фенхель с апельсинами по-сицилийски | 2 | [Источник](https://www.cucchiaio.it/ricetta/insalata-di-finocchi-e-arance/) | REVIEW_REQUIRED | Нет документального подтверждения подробной сверки ингредиентов и технологии с этой страницей; не считать APPROVED |
-| 15 | Фенхель с апельсинами по-сицилийски | 3 | [Источник](https://blog.giallozafferano.it/incucinaconmara/insalata-di-finocchi-arance-e-olive-nere/) | SUBSTANTIVELY_COMPARED | Fennel-orange-black olive salad direct recipe; replaces a search page |
-| 16 | Неаполитанский салат «Ринфорцо» | 1 | [Источник](https://www.lacucinaitaliana.it/ricetta/antipasti/insalata-di-rinforzo-la-ricetta-della-vigilia/) | REVIEW_REQUIRED | Нет документального подтверждения подробной сверки ингредиентов и технологии с этой страницей; не считать APPROVED |
-| 16 | Неаполитанский салат «Ринфорцо» | 2 | [Источник](https://www.lospicchiodaglio.it/ricetta/insalata-di-rinforzo) | REVIEW_REQUIRED | Нет документального подтверждения подробной сверки ингредиентов и технологии с этой страницей; не считать APPROVED |
-| 16 | Неаполитанский салат «Ринфорцо» | 3 | [Источник](https://www.galbani.it/ricette/insalata-di-rinforzo) | REVIEW_REQUIRED | Нет документального подтверждения подробной сверки ингредиентов и технологии с этой страницей; не считать APPROVED |
-| 17 | Римские пунтарелле с анчоусами | 1 | [Источник](https://www.lacucinaitaliana.it/ricetta/secondi/insalata-di-puntarelle/) | REVIEW_REQUIRED | Нет документального подтверждения подробной сверки ингредиентов и технологии с этой страницей; не считать APPROVED |
-| 17 | Римские пунтарелле с анчоусами | 2 | [Источник](https://orto.ch/ricetta/puntarelle-alla-romana/) | REVIEW_REQUIRED | Нет документального подтверждения подробной сверки ингредиентов и технологии с этой страницей; не считать APPROVED |
-| 17 | Римские пунтарелле с анчоусами | 3 | [Источник](https://www.cucchiaio.it/ricetta/ricetta-insalata-puntarelle/) | SUBSTANTIVELY_COMPARED | Puntarelle raw chicory with anchovy-garlic dressing; original URL broken |
-| 18 | Итальянский рисовый салат | 1 | [Источник](https://www.lacucinaitaliana.it/ricetta/piatti-unici/insalata-di-riso-classica/) | REVIEW_REQUIRED | Нет документального подтверждения подробной сверки ингредиентов и технологии с этой страницей; не считать APPROVED |
-| 18 | Итальянский рисовый салат | 2 | [Источник](https://www.cucchiaio.it/ricetta/ricetta-insalata-riso/) | SUBSTANTIVELY_COMPARED | Boiled rice with tuna, tomatoes, olives; editorial vegetables/cheese differ |
-| 18 | Итальянский рисовый салат | 3 | [Источник](https://ricette.giallozafferano.it/Insalata-di-riso-classica.html) | SUBSTANTIVELY_COMPARED | Rice salad with peas/tuna/tomato/olive; mozzarella and corn are variation |
-| 19 | Салат из полбы с овощами | 1 | [Источник](https://crai.it/ricette/insalata-di-farro) | SUBSTANTIVELY_COMPARED | Crai farro with vegetables; editorial variant simplifies the additions |
-| 19 | Салат из полбы с овощами | 2 | [Источник](https://blog.giallozafferano.it/allacciateilgrembiule/insalata-di-farro-con-verdure/) | REVIEW_REQUIRED | Нет документального подтверждения подробной сверки ингредиентов и технологии с этой страницей; не считать APPROVED |
-| 19 | Салат из полбы с овощами | 3 | [Источник](https://www.ilclubdellericette.it/ricetta/insalata-di-farro-con-scamorza-pomodorini-e-asparagi) | REVIEW_REQUIRED | Нет документального подтверждения подробной сверки ингредиентов и технологии с этой страницей; не считать APPROVED |
-| 20 | Белая фасоль с тунцом и луком | 1 | [Источник](https://www.ilcuoreinpentola.it/ricette/piatti-unici/insalata-di-tonno-e-fagioli/) | REVIEW_REQUIRED | Нет документального подтверждения подробной сверки ингредиентов и технологии с этой страницей; не считать APPROVED |
-| 20 | Белая фасоль с тунцом и луком | 2 | [Источник](https://www.lospicchiodaglio.it/ricetta/insalata-fagioli-spagna-tonno-cipolla) | REVIEW_REQUIRED | Нет документального подтверждения подробной сверки ингредиентов и технологии с этой страницей; не считать APPROVED |
-| 20 | Белая фасоль с тунцом и луком | 3 | [Источник](https://www.cucchiaio.it/ricetta/insalata-di-fagioli-e-tonno/) | REVIEW_REQUIRED | Нет документального подтверждения подробной сверки ингредиентов и технологии с этой страницей; не считать APPROVED |
-| 21 | Нисуаз, традиционный салат Ниццы | 1 | [Источник](https://www.explorenicecotedazur.com/explorer/art-de-vivre/gastronomie-et-terroir/recettes-de-cuisine-nicoise/la-salade-nicoise/) | REVIEW_REQUIRED | Нет документального подтверждения подробной сверки ингредиентов и технологии с этой страницей; не считать APPROVED |
-| 21 | Нисуаз, традиционный салат Ниццы | 2 | [Источник](https://provence-alpes-cotedazur.com/que-faire/vin-et-gastronomie/les-recettes-du-sud/la-salade-nicoise/) | REVIEW_REQUIRED | Нет документального подтверждения подробной сверки ингредиентов и технологии с этой страницей; не считать APPROVED |
-| 21 | Нисуаз, традиционный салат Ниццы | 3 | [Источник](https://www.academiedugout.fr/recettes/salade-nicoise_8215_2) | REVIEW_REQUIRED | Нет документального подтверждения подробной сверки ингредиентов и технологии с этой страницей; не считать APPROVED |
-| 22 | Лионский салат с яйцом пашот | 1 | [Источник](https://ioumi.fr/recettes/salade-lyonnaise.html) | REVIEW_REQUIRED | Нет документального подтверждения подробной сверки ингредиентов и технологии с этой страницей; не считать APPROVED |
-| 22 | Лионский салат с яйцом пашот | 2 | [Источник](https://www.coursesu.com/coursesu-lyon-chezvous-salade-lyonnaise.html) | REVIEW_REQUIRED | Нет документального подтверждения подробной сверки ингредиентов и технологии с этой страницей; не считать APPROVED |
-| 22 | Лионский салат с яйцом пашот | 3 | [Источник](https://info-lyon.fr/salade-lyonnaise/) | REVIEW_REQUIRED | Нет документального подтверждения подробной сверки ингредиентов и технологии с этой страницей; не считать APPROVED |
-| 23 | Перигорский салат с уткой и куриной печенью | 1 | [Источник](https://www.pays-bergerac-tourisme.com/fr/deguster/les-recettes/salade-perigourdine) | REVIEW_REQUIRED | Нет документального подтверждения подробной сверки ингредиентов и технологии с этой страницей; не считать APPROVED |
-| 23 | Перигорский салат с уткой и куриной печенью | 2 | [Источник](https://www.noixduperigord.com/fr/les-recettes/entrees/salade-perigourdine) | SUBSTANTIVELY_COMPARED | Regional salad uses magret and gizzards, NOT our chicken-liver version; flagged author variation |
-| 23 | Перигорский салат с уткой и куриной печенью | 3 | [Источник](https://www.marmiton.org/recettes/recette_salade-perigourdine-aux-foies-de-volaille_37573.aspx) | REVIEW_REQUIRED | Нет документального подтверждения подробной сверки ингредиентов и технологии с этой страницей; не считать APPROVED |
-| 24 | Салат с тёплым козьим сыром | 1 | [Источник](https://www.atelierdeschefs.fr/recettes/32479/la-salade-de-chevre-chaud-au-miel/) | REVIEW_REQUIRED | Нет документального подтверждения подробной сверки ингредиентов и технологии с этой страницей; не считать APPROVED |
-| 24 | Салат с тёплым козьим сыром | 2 | [Источник](https://dans-lassiette.aveyron.fr/recette/salade-de-chevre-chaud-au-miel-et-aux-noix) | REVIEW_REQUIRED | Нет документального подтверждения подробной сверки ингредиентов и технологии с этой страницей; не считать APPROVED |
-| 24 | Салат с тёплым козьим сыром | 3 | [Источник](https://ioumi.fr/recettes/salade-de-chevre-chaud.html) | REVIEW_REQUIRED | Нет документального подтверждения подробной сверки ингредиентов и технологии с этой страницей; не считать APPROVED |
-| 25 | Сельдерей ремулад | 1 | [Источник](https://www.academiedugout.fr/recettes/celeri-remoulade_6519_2) | REVIEW_REQUIRED | Нет документального подтверждения подробной сверки ингредиентов и технологии с этой страницей; не считать APPROVED |
-| 25 | Сельдерей ремулад | 2 | [Источник](https://www.atelierdeschefs.fr/recettes/17762/celeri-remoulade/) | REVIEW_REQUIRED | Нет документального подтверждения подробной сверки ингредиентов и технологии с этой страницей; не считать APPROVED |
-| 25 | Сельдерей ремулад | 3 | [Источник](https://www.aujardin.info/recettes/celeri-remoulade.php) | REVIEW_REQUIRED | Нет документального подтверждения подробной сверки ингредиентов и технологии с этой страницей; не считать APPROVED |
-| 26 | Морковь с французской винегретной заправкой | 1 | [Источник](https://www.sainsburysmagazine.co.uk/recipes/mains/french-carrot-salad) | SUBSTANTIVELY_COMPARED | French grated carrots, Dijon vinaigrette and parsley |
-| 26 | Морковь с французской винегретной заправкой | 2 | [Источник](https://www.marmiton.org/recettes/recette_carottes-rapees-vinaigrette_12609.aspx) | REVIEW_REQUIRED | Нет документального подтверждения подробной сверки ингредиентов и технологии с этой страницей; не считать APPROVED |
-| 26 | Морковь с французской винегретной заправкой | 3 | [Источник](https://www.750g.com/carottes-rapees-r2000.htm) | REVIEW_REQUIRED | Нет документального подтверждения подробной сверки ингредиентов и технологии с этой страницей; не считать APPROVED |
-| 27 | Салат из зелёной чечевицы Ле-Пюи | 1 | [Источник](https://www.cuisinealafrancaise.com/fr/recettes/aperitif-et-entrees/salades-et-crudites/salade-de-lentilles-vertes-du-puy.html) | REVIEW_REQUIRED | Нет документального подтверждения подробной сверки ингредиентов и технологии с этой страницей; не считать APPROVED |
-| 27 | Салат из зелёной чечевицы Ле-Пюи | 2 | [Источник](https://www.julieandrieu.com/recettes/cuire-une-salade-de-lentilles) | REVIEW_REQUIRED | Нет документального подтверждения подробной сверки ингредиентов и технологии с этой страницей; не считать APPROVED |
-| 27 | Салат из зелёной чечевицы Ле-Пюи | 3 | [Источник](https://www.legume-sec.com/portfolio-item/salade-lentilles-vertes-du-puy/) | REVIEW_REQUIRED | Нет документального подтверждения подробной сверки ингредиентов и технологии с этой страницей; не считать APPROVED |
-| 28 | Французский картофельный салат | 1 | [Источник](https://frigolade.fr/recettes/salade-de-pommes-de-terre/) | REVIEW_REQUIRED | Нет документального подтверждения подробной сверки ингредиентов и технологии с этой страницей; не считать APPROVED |
-| 28 | Французский картофельный салат | 2 | [Источник](https://www.marmiton.org/recettes/recette_salade-de-pommes-de-terre-a-la-francaise_43953.aspx) | REVIEW_REQUIRED | Нет документального подтверждения подробной сверки ингредиентов и технологии с этой страницей; не считать APPROVED |
-| 28 | Французский картофельный салат | 3 | [Источник](https://www.academiedugout.fr/recettes/salade-de-pommes-de-terre_12085_2) | REVIEW_REQUIRED | Нет документального подтверждения подробной сверки ингредиентов и технологии с этой страницей; не считать APPROVED |
-| 29 | Нормандский салат «Кошуаз» | 1 | [Источник](https://www.produitsderegion.fr/magazine/recettes-regionales/la-salade-cauchoise) | SUBSTANTIVELY_COMPARED | Salade cauchoise with stalk celery; corrected former root-celery error |
-| 29 | Нормандский салат «Кошуаз» | 2 | [Источник](https://goedenlekker.nl/fr/blogs/recettes/salade-cauchoise) | SUBSTANTIVELY_COMPARED | Cauchoise confirms celery stalks, potato and ham |
-| 29 | Нормандский салат «Кошуаз» | 3 | [Источник](https://cuisine-maison-comme-autrefois.blogspot.com/2014/11/recette-de-salade-cauchoise-pommes-de.html) | REVIEW_REQUIRED | Нет документального подтверждения подробной сверки ингредиентов и технологии с этой страницей; не считать APPROVED |
-| 30 | Цикорий с рокфором и грецкими орехами | 1 | [Источник](https://www.leroux.com/recettes/salade-endive-roquefort-noix-avec-sa-vinaigrette-a-la-chicoree/) | REVIEW_REQUIRED | Нет документального подтверждения подробной сверки ингредиентов и технологии с этой страницей; не считать APPROVED |
-| 30 | Цикорий с рокфором и грецкими орехами | 2 | [Источник](https://www.academiedugout.fr/recettes/salade-dendives-noix-et-roquefort-fromage-et-huile_12121_2) | REVIEW_REQUIRED | Нет документального подтверждения подробной сверки ингредиентов и технологии с этой страницей; не считать APPROVED |
-| 30 | Цикорий с рокфором и грецкими орехами | 3 | [Источник](https://frigolade.fr/recettes/salade-endives-roquefort-noix/) | REVIEW_REQUIRED | Нет документального подтверждения подробной сверки ингредиентов и технологии с этой страницей; не считать APPROVED |
-| 31 | Пипиррана из Хаэна | 1 | [Источник](https://canalcocina.es/receta/pipirrana-de-jaen) | REVIEW_REQUIRED | Нет документального подтверждения подробной сверки ингредиентов и технологии с этой страницей; не считать APPROVED |
-| 31 | Пипиррана из Хаэна | 2 | [Источник](https://www.degustajaen.es/recetas/pipirrana-jaen/) | REVIEW_REQUIRED | Нет документального подтверждения подробной сверки ингредиентов и технологии с этой страницей; не считать APPROVED |
-| 31 | Пипиррана из Хаэна | 3 | [Источник](https://www.hogarmania.com/cocina/recetas/ensaladas-verduras/pipirrana-jaen-35145.html) | REVIEW_REQUIRED | Нет документального подтверждения подробной сверки ингредиентов и технологии с этой страницей; не считать APPROVED |
-| 32 | Эсгарраэт с печёным перцем и треской | 1 | [Источник](https://www.rtve.es/television/20210519/receta-esgarraet-cocina-valenciana-tradicional/2091100.shtml) | REVIEW_REQUIRED | Нет документального подтверждения подробной сверки ингредиентов и технологии с этой страницей; не считать APPROVED |
-| 32 | Эсгарраэт с печёным перцем и треской | 2 | [Источник](https://elpais.com/gastronomia/recetas/2019/06/10/receta/1560200573_517283.html) | REVIEW_REQUIRED | Нет документального подтверждения подробной сверки ингредиентов и технологии с этой страницей; не считать APPROVED |
-| 32 | Эсгарраэт с печёным перцем и треской | 3 | [Источник](https://www.directoalpaladar.com/recetas-de-pescados-y-mariscos/esgarraet-valenciano-receta-de-semana-santa) | REVIEW_REQUIRED | Нет документального подтверждения подробной сверки ингредиентов и технологии с этой страницей; не считать APPROVED |
-| 33 | Майоркский тремпо | 1 | [Источник](https://canalcocina.es/receta/trampo-mallorquin) | REVIEW_REQUIRED | Нет документального подтверждения подробной сверки ингредиентов и технологии с этой страницей; не считать APPROVED |
-| 33 | Майоркский тремпо | 2 | [Источник](https://www.recetasmallorquinas.es/2020/05/trampo-mallorquin.html) | REVIEW_REQUIRED | Нет документального подтверждения подробной сверки ингредиентов и технологии с этой страницей; не считать APPROVED |
-| 33 | Майоркский тремпо | 3 | [Источник](https://diariodegastronomia.com/trampo-mallorquin-2/) | REVIEW_REQUIRED | Нет документального подтверждения подробной сверки ингредиентов и технологии с этой страницей; не считать APPROVED |
-| 34 | Ремохон с апельсином и треской | 1 | [Источник](https://www.rtve.es/television/20190722/receta-remojon-granadino-dani-garcia/1975863.shtml) | REVIEW_REQUIRED | Нет документального подтверждения подробной сверки ингредиентов и технологии с этой страницей; не считать APPROVED |
-| 34 | Ремохон с апельсином и треской | 2 | [Источник](https://www.recetassinlactosa.com/remojon-granadino-ensalada-de-naranja/) | REVIEW_REQUIRED | Нет документального подтверждения подробной сверки ингредиентов и технологии с этой страницей; не считать APPROVED |
-| 34 | Ремохон с апельсином и треской | 3 | [Источник](https://recetasdecocina.elmundo.es/2026/03/remojon-granadino-receta-tradicional-y-casera.html) | REVIEW_REQUIRED | Нет документального подтверждения подробной сверки ингредиентов и технологии с этой страницей; не считать APPROVED |
-| 35 | Эмпедрат с фасолью | 1 | [Источник](https://www.catalunya.com/en/continguts/article/empedrat-26-1-1) | REVIEW_REQUIRED | Нет документального подтверждения подробной сверки ингредиентов и технологии с этой страницей; не считать APPROVED |
-| 35 | Эмпедрат с фасолью | 2 | [Источник](https://www.gastroteca.cat/en/receptes/empedrat/) | REVIEW_REQUIRED | Нет документального подтверждения подробной сверки ингредиентов и технологии с этой страницей; не считать APPROVED |
-| 35 | Эмпедрат с фасолью | 3 | [Источник](https://www.dia.es/recetas/receta/empedrat) | REVIEW_REQUIRED | Нет документального подтверждения подробной сверки ингредиентов и технологии с этой страницей; не считать APPROVED |
-| 36 | Каталонский шатó с ореховым соусом | 1 | [Источник](https://www.lavanguardia.com/comer/recetas/20220609/8325712/ensalada-xato-receta-platos-tipicos-cocina-catalana.html) | REVIEW_REQUIRED | Нет документального подтверждения подробной сверки ингредиентов и технологии с этой страницей; не считать APPROVED |
-| 36 | Каталонский шатó с ореховым соусом | 2 | [Источник](https://www.rtve.es/television/20130826/plantilla-receta-espana-directo/743448.shtml) | REVIEW_REQUIRED | Нет документального подтверждения подробной сверки ингредиентов и технологии с этой страницей; не считать APPROVED |
-| 36 | Каталонский шатó с ореховым соусом | 3 | [Источник](https://www.cuina.cat/es/recetas/ensalada-xato_10182213_117.html) | REVIEW_REQUIRED | Нет документального подтверждения подробной сверки ингредиентов и технологии с этой страницей; не считать APPROVED |
-| 37 | Эскейшада из солёной трески | 1 | [Источник](https://www.spain.info/es/receta/esqueixada-bacalao/) | REVIEW_REQUIRED | Нет документального подтверждения подробной сверки ингредиентов и технологии с этой страницей; не считать APPROVED |
-| 37 | Эскейшада из солёной трески | 2 | [Источник](https://www.viladecans.cat/es/recepta-esqueixada-de-bacalla) | REVIEW_REQUIRED | Нет документального подтверждения подробной сверки ингредиентов и технологии с этой страницей; не считать APPROVED |
-| 37 | Эскейшада из солёной трески | 3 | [Источник](https://www.directoalpaladar.com/recetas-de-pescados-y-mariscos/esqueixada-bacalao-receta-ensalada-facil-deliciosa-para-dias-verano) | SUBSTANTIVELY_COMPARED | Esqueixada shredded desalted cod; peppers explicitly optional variant |
-| 38 | Испанский деревенский картофельный салат | 1 | [Источник](https://canalcocina.es/receta/ensalada-campera-1) | REVIEW_REQUIRED | Нет документального подтверждения подробной сверки ингредиентов и технологии с этой страницей; не считать APPROVED |
-| 38 | Испанский деревенский картофельный салат | 2 | [Источник](https://recetivo.com/recetas/ensalada-campera) | REVIEW_REQUIRED | Нет документального подтверждения подробной сверки ингредиентов и технологии с этой страницей; не считать APPROVED |
-| 38 | Испанский деревенский картофельный салат | 3 | [Источник](https://www.bonviveur.es/recetas/ensalada-campera) | REVIEW_REQUIRED | Нет документального подтверждения подробной сверки ингредиентов и технологии с этой страницей; не считать APPROVED |
-| 39 | Мурсийский салат из томатов | 1 | [Источник](https://www.spain.info/es/receta/mojete-murciano/) | REVIEW_REQUIRED | Нет документального подтверждения подробной сверки ингредиентов и технологии с этой страницей; не считать APPROVED |
-| 39 | Мурсийский салат из томатов | 2 | [Источник](https://www.directoalpaladar.com/recetas-de-ensaladas/ensalada-murciana-receta) | REVIEW_REQUIRED | Нет документального подтверждения подробной сверки ингредиентов и технологии с этой страницей; не считать APPROVED |
-| 39 | Мурсийский салат из томатов | 3 | [Источник](https://www.bonviveur.es/recetas/ensalada-murciana) | REVIEW_REQUIRED | Нет документального подтверждения подробной сверки ингредиентов и технологии с этой страницей; не считать APPROVED |
-| 40 | Мадридский салат Сан-Исидро | 1 | [Источник](https://www.spain.info/es/receta/ensalada-san-isidro/) | REVIEW_REQUIRED | Нет документального подтверждения подробной сверки ингредиентов и технологии с этой страницей; не считать APPROVED |
-| 40 | Мадридский салат Сан-Исидро | 2 | [Источник](https://menudatierra.eco/receta/ensalada-san-isidro/) | REVIEW_REQUIRED | Нет документального подтверждения подробной сверки ингредиентов и технологии с этой страницей; не считать APPROVED |
-| 40 | Мадридский салат Сан-Исидро | 3 | [Источник](https://www.bonviveur.es/recetas/ensalada-de-san-isidro) | REVIEW_REQUIRED | Нет документального подтверждения подробной сверки ингредиентов и технологии с этой страницей; не считать APPROVED |
-| 41 | Хорьятики, классический греческий | 1 | [Источник](https://www.dianekochilas.com/greek-salad/) | SUBSTANTIVELY_COMPARED | Greek salad with slab of feta and raw vegetables; corrected obsolete URL |
-| 41 | Хорьятики, классический греческий | 2 | [Источник](https://www.olivetomato.com/authentic-greek-salad/) | REVIEW_REQUIRED | Нет документального подтверждения подробной сверки ингредиентов и технологии с этой страницей; не считать APPROVED |
-| 41 | Хорьятики, классический греческий | 3 | [Источник](https://akispetretzikis.com/en/recipe/1971/chwriatikh-salata) | SUBSTANTIVELY_COMPARED | Independent authentic Greek Horiatiki recipe, not generic travel page |
-| 42 | Критский дакос | 1 | [Источник](https://www.argiro.gr/en/recipe/dakos-salad/) | REVIEW_REQUIRED | Нет документального подтверждения подробной сверки ингредиентов и технологии с этой страницей; не считать APPROVED |
-| 42 | Критский дакос | 2 | [Источник](https://www.tasteatlas.com/dakos/recipe) | REVIEW_REQUIRED | Нет документального подтверждения подробной сверки ингредиентов и технологии с этой страницей; не считать APPROVED |
-| 42 | Критский дакос | 3 | [Источник](https://www.epikouria.com/recipes/dakos/) | REVIEW_REQUIRED | Нет документального подтверждения подробной сверки ингредиентов и технологии с этой страницей; не считать APPROVED |
-| 43 | Марулосалата с укропом | 1 | [Источник](https://www.dianekochilas.com/greek-lettuce-salad-maroulosalata/) | REVIEW_REQUIRED | Нет документального подтверждения подробной сверки ингредиентов и технологии с этой страницей; не считать APPROVED |
-| 43 | Марулосалата с укропом | 2 | [Источник](https://www.kalliopiskitchen.com/recipes/marouli-salata/) | REVIEW_REQUIRED | Нет документального подтверждения подробной сверки ингредиентов и технологии с этой страницей; не считать APPROVED |
-| 43 | Марулосалата с укропом | 3 | [Источник](https://www.epikouria.com/recipes/maroulosalata/) | REVIEW_REQUIRED | Нет документального подтверждения подробной сверки ингредиентов и технологии с этой страницей; не считать APPROVED |
-| 44 | Хорта, салат из отварной зелени | 1 | [Источник](https://www.epikouria.com/recipes/horta-vrasta/) | REVIEW_REQUIRED | Нет документального подтверждения подробной сверки ингредиентов и технологии с этой страницей; не считать APPROVED |
-| 44 | Хорта, салат из отварной зелени | 2 | [Источник](https://www.poupadou.com/blog/en/recipe-horta-vrasta-greek-boiled-leafy-greens-salad/) | REVIEW_REQUIRED | Нет документального подтверждения подробной сверки ингредиентов и технологии с этой страницей; не считать APPROVED |
-| 44 | Хорта, салат из отварной зелени | 3 | [Источник](https://justrecipes.net/en/recipes/horta-vrasta/) | REVIEW_REQUIRED | Нет документального подтверждения подробной сверки ингредиентов и технологии с этой страницей; не считать APPROVED |
-| 45 | Панцаросалата из свёклы | 1 | [Источник](https://akispetretzikis.com/en/recipe/7129/pantzarosalata) | REVIEW_REQUIRED | Нет документального подтверждения подробной сверки ингредиентов и технологии с этой страницей; не считать APPROVED |
-| 45 | Панцаросалата из свёклы | 2 | [Источник](https://www.cyprusfoodmuseum.com/en/sylloges/paradosiakes-syntages/beetroot-salad) | REVIEW_REQUIRED | Нет документального подтверждения подробной сверки ингредиентов и технологии с этой страницей; не считать APPROVED |
-| 45 | Панцаросалата из свёклы | 3 | [Источник](https://www.dimitrasdishes.com/greek-beet-yogurt-salad-pantzarosalata/) | REVIEW_REQUIRED | Нет документального подтверждения подробной сверки ингредиентов и технологии с этой страницей; не считать APPROVED |
-| 46 | Греческий картофельный салат | 1 | [Источник](https://tarasmulticulturaltable.com/patatosalata-herby-potato-salad/) | REVIEW_REQUIRED | Нет документального подтверждения подробной сверки ингредиентов и технологии с этой страницей; не считать APPROVED |
-| 46 | Греческий картофельный салат | 2 | [Источник](https://www.athensfoodonfoot.com/recipes/greek-lemon-herb-potato-salad-patatosalata/) | REVIEW_REQUIRED | Нет документального подтверждения подробной сверки ингредиентов и технологии с этой страницей; не считать APPROVED |
-| 46 | Греческий картофельный салат | 3 | [Источник](https://www.epikouria.com/recipes/patatosalata/) | REVIEW_REQUIRED | Нет документального подтверждения подробной сверки ингредиентов и технологии с этой страницей; не считать APPROVED |
-| 47 | Фасолия салата с белой фасолью | 1 | [Источник](https://www.cyprusfoodmuseum.com/en/sylloges/paradosiakes-syntages/white-beans-salad) | REVIEW_REQUIRED | Нет документального подтверждения подробной сверки ингредиентов и технологии с этой страницей; не считать APPROVED |
-| 47 | Фасолия салата с белой фасолью | 2 | [Источник](https://www.jewishfoodsociety.org/recipes/fassolia-piaz-greek-white-bean-salad) | REVIEW_REQUIRED | Нет документального подтверждения подробной сверки ингредиентов и технологии с этой страницей; не считать APPROVED |
-| 47 | Фасолия салата с белой фасолью | 3 | [Источник](https://www.greektastes.com/bean-salad-fasolia-xera-salata/) | REVIEW_REQUIRED | Нет документального подтверждения подробной сверки ингредиентов и технологии с этой страницей; не считать APPROVED |
-| 48 | Политики салата из капусты | 1 | [Источник](https://akispetretzikis.com/recipe/politikh-salata) | REVIEW_REQUIRED | Нет документального подтверждения подробной сверки ингредиентов и технологии с этой страницей; не считать APPROVED |
-| 48 | Политики салата из капусты | 2 | [Источник](https://messino.gr/en/recipes/greek-cabbage-and-carrot-salad-politiki-salad/) | REVIEW_REQUIRED | Нет документального подтверждения подробной сверки ингредиентов и технологии с этой страницей; не считать APPROVED |
-| 48 | Политики салата из капусты | 3 | [Источник](https://www.monasticrepublic.com/en/recipes/salad/greek-cabbage-salad-politiki) | REVIEW_REQUIRED | Нет документального подтверждения подробной сверки ингредиентов и технологии с этой страницей; не считать APPROVED |
-| 49 | Ампелофасула из стручковой фасоли | 1 | [Источник](https://www.kalofagas.ca/2008/10/13/warm-green-bean-salad-%CE%B1%CE%BC%CF%80%CE%B5%CE%BB%CE%BF%CF%86%CE%AC%CF%83%CE%BF%CF%85%CE%BB%CE%B1/) | REVIEW_REQUIRED | Нет документального подтверждения подробной сверки ингредиентов и технологии с этой страницей; не считать APPROVED |
-| 49 | Ампелофасула из стручковой фасоли | 2 | [Источник](https://www.greekcookingmadeeasy.com/allrecipes/green-beans-salad?rq=green+beans) | REVIEW_REQUIRED | Нет документального подтверждения подробной сверки ингредиентов и технологии с этой страницей; не считать APPROVED |
-| 49 | Ампелофасула из стручковой фасоли | 3 | [Источник](https://www.epikouria.com/recipes/ampelofasoula/) | REVIEW_REQUIRED | Нет документального подтверждения подробной сверки ингредиентов и технологии с этой страницей; не считать APPROVED |
-| 50 | Салат из черноглазой фасоли | 1 | [Источник](https://akispetretzikis.com/en/recipe/3920/salata-me-mayromatika-fasolia) | REVIEW_REQUIRED | Нет документального подтверждения подробной сверки ингредиентов и технологии с этой страницей; не считать APPROVED |
-| 50 | Салат из черноглазой фасоли | 2 | [Источник](https://www.greekboston.com/food/black-eyed-pea-salad-recipe/) | REVIEW_REQUIRED | Нет документального подтверждения подробной сверки ингредиентов и технологии с этой страницей; не считать APPROVED |
-| 50 | Салат из черноглазой фасоли | 3 | [Источник](https://www.dianekochilas.com/mavromatika-salata-black-eyed-pea-salad-mastiha-vinaigrette/) | REVIEW_REQUIRED | Нет документального подтверждения подробной сверки ингредиентов и технологии с этой страницей; не считать APPROVED |
-| 51 | Чобан салатасы, пастуший | 1 | [Источник](https://www.ktb.gov.tr/EN-99014/shepherds-salad.html) | REVIEW_REQUIRED | Нет документального подтверждения подробной сверки ингредиентов и технологии с этой страницей; не считать APPROVED |
-| 51 | Чобан салатасы, пастуший | 2 | [Источник](https://www.splendidtable.org/story/2019/04/29/shepherds-salad) | SUBSTANTIVELY_COMPARED | Musa Dagdeviren Shepherd’s salad tomato onion pepper cucumber |
-| 51 | Чобан салатасы, пастуший | 3 | [Источник](https://www.unicornsinthekitchen.com/coban-salatasi/) | SUBSTANTIVELY_COMPARED | Çoban Salatası tomato cucumber onion pepper with lemon oil |
-| 52 | Гавурдагы с томатами и орехами | 1 | [Источник](https://tasteofturkiye.org/tr/recipes/gavurdagi-salatasi/) | SUBSTANTIVELY_COMPARED | Gavurdağı with pomegranate, walnuts, tomatoes, sumac; 30-minute rest adopted |
-| 52 | Гавурдагы с томатами и орехами | 2 | [Источник](https://yemek.com/tarif/gavurdagi/) | REVIEW_REQUIRED | Нет документального подтверждения подробной сверки ингредиентов и технологии с этой страницей; не считать APPROVED |
-| 52 | Гавурдагы с томатами и орехами | 3 | [Источник](https://esenler.bel.tr/esenler-kadin/yemek-tarifleri/gavurdagi-salatasi/) | REVIEW_REQUIRED | Нет документального подтверждения подробной сверки ингредиентов и технологии с этой страницей; не считать APPROVED |
-| 53 | Пияз по-анталийски из белой фасоли | 1 | [Источник](https://www.turktarim.gov.tr/Haber/1037/antalyalilarin-kirmizi-cizgisi-antalya-piyazi) | REVIEW_REQUIRED | Нет документального подтверждения подробной сверки ингредиентов и технологии с этой страницей; не считать APPROVED |
-| 53 | Пияз по-анталийски из белой фасоли | 2 | [Источник](https://thehappyfoodie.co.uk/recipes/tahinli-fasulye-piyaz-antalya-style-bean-salad-with-tahini-sauce/) | SUBSTANTIVELY_COMPARED | Özlem Warren Antalya Piyaz with tahini lemon bean sauce; egg is alternative garnish |
-| 53 | Пияз по-анталийски из белой фасоли | 3 | [Источник](https://ozlemsturkishtable.com/2014/06/antalya-style-white-bean-salad-with-tahini-piyaz/) | REVIEW_REQUIRED | Нет документального подтверждения подробной сверки ингредиентов и технологии с этой страницей; не считать APPROVED |
-| 54 | Кысыр с булгуром | 1 | [Источник](https://www.ktb.gov.tr/EN-99000/bulgur-salad-kisir.html) | REVIEW_REQUIRED | Нет документального подтверждения подробной сверки ингредиентов и технологии с этой страницей; не считать APPROVED |
-| 54 | Кысыр с булгуром | 2 | [Источник](https://ekitap.ktb.gov.tr/TR-79919/kisir.html) | REVIEW_REQUIRED | Нет документального подтверждения подробной сверки ингредиентов и технологии с этой страницей; не считать APPROVED |
-| 54 | Кысыр с булгуром | 3 | [Источник](https://www.themediterraneandish.com/kisir-turkish-bulgur-salad/) | REVIEW_REQUIRED | Нет документального подтверждения подробной сверки ингредиентов и технологии с этой страницей; не считать APPROVED |
-| 55 | Аджылы эзме, острый овощной | 1 | [Источник](https://www.sekaigohan.com/en/recipes/middle-east/turkey/ezme) | REVIEW_REQUIRED | Нет документального подтверждения подробной сверки ингредиентов и технологии с этой страницей; не считать APPROVED |
-| 55 | Аджылы эзме, острый овощной | 2 | [Источник](https://chopped.com/recipe/spicy-ezme-salad-acili-ezme) | REVIEW_REQUIRED | Нет документального подтверждения подробной сверки ингредиентов и технологии с этой страницей; не считать APPROVED |
-| 55 | Аджылы эзме, острый овощной | 3 | [Источник](https://ozlemsturkishtable.com/2010/08/spicy-tomato-salad-acili-ezme/) | REVIEW_REQUIRED | Нет документального подтверждения подробной сверки ингредиентов и технологии с этой страницей; не считать APPROVED |
-| 56 | Патлыджан салатасы из баклажанов | 1 | [Источник](https://www.ktb.gov.tr/EN-99133/eggplant-salad.html) | REVIEW_REQUIRED | Нет документального подтверждения подробной сверки ингредиентов и технологии с этой страницей; не считать APPROVED |
-| 56 | Патлыджан салатасы из баклажанов | 2 | [Источник](https://www.olivetolive.com/en/news/4/yemek-tarifleri/1020/patlican-salatasi.aspx) | REVIEW_REQUIRED | Нет документального подтверждения подробной сверки ингредиентов и технологии с этой страницей; не считать APPROVED |
-| 56 | Патлыджан салатасы из баклажанов | 3 | [Источник](https://www.unicornsinthekitchen.com/turkish-eggplant-salad-patlican-salatasi/) | REVIEW_REQUIRED | Нет документального подтверждения подробной сверки ингредиентов и технологии с этой страницей; не считать APPROVED |
-| 57 | Портулак с чесночным йогуртом | 1 | [Источник](https://www.ktb.gov.tr/EN-99011/purslane-salad-with-yogurt.html) | REVIEW_REQUIRED | Нет документального подтверждения подробной сверки ингредиентов и технологии с этой страницей; не считать APPROVED |
-| 57 | Портулак с чесночным йогуртом | 2 | [Источник](https://tasteofturkiye.org/en/recipes/yogurtlu-semizotu-purslane-with-garlic-yogurt/) | REVIEW_REQUIRED | Нет документального подтверждения подробной сверки ингредиентов и технологии с этой страницей; не считать APPROVED |
-| 57 | Портулак с чесночным йогуртом | 3 | [Источник](https://ozlemsturkishtable.com/2011/06/yogurtlu-semizotu-purslane-with-garlic-yoghurt/) | REVIEW_REQUIRED | Нет документального подтверждения подробной сверки ингредиентов и технологии с этой страницей; не считать APPROVED |
-| 58 | Турецкий картофельный салат | 1 | [Источник](https://yemek.com/tarif/patates-salatasi/) | REVIEW_REQUIRED | Нет документального подтверждения подробной сверки ингредиентов и технологии с этой страницей; не считать APPROVED |
-| 58 | Турецкий картофельный салат | 2 | [Источник](https://www.unicornsinthekitchen.com/turkish-potato-salad/) | REVIEW_REQUIRED | Нет документального подтверждения подробной сверки ингредиентов и технологии с этой страницей; не считать APPROVED |
-| 58 | Турецкий картофельный салат | 3 | [Источник](https://www.giverecipe.com/turkish-potato-salad/) | REVIEW_REQUIRED | Нет документального подтверждения подробной сверки ингредиентов и технологии с этой страницей; не считать APPROVED |
-| 59 | Красная капуста с лимоном | 1 | [Источник](https://www.foodandtravel.love/recipes/rotkohlsalat-krmz-lahana-salatas/) | REVIEW_REQUIRED | Нет документального подтверждения подробной сверки ингредиентов и технологии с этой страницей; не считать APPROVED |
-| 59 | Красная капуста с лимоном | 2 | [Источник](https://myturkishkitchen.blogspot.com/2009/10/mor-lahana-salatasi.html) | REVIEW_REQUIRED | Нет документального подтверждения подробной сверки ингредиентов и технологии с этой страницей; не считать APPROVED |
-| 59 | Красная капуста с лимоном | 3 | [Источник](https://jalesturkishdelights.com/mor-lahana-salatasi/) | REVIEW_REQUIRED | Нет документального подтверждения подробной сверки ингредиентов и технологии с этой страницей; не считать APPROVED |
-| 60 | Морковь с чесночным йогуртом (хавуч таратор) | 1 | [Источник](https://tasteofturkiye.org/en/recipes/havuc-tarator/) | REVIEW_REQUIRED | Нет документального подтверждения подробной сверки ингредиентов и технологии с этой страницей; не считать APPROVED |
-| 60 | Морковь с чесночным йогуртом (хавуч таратор) | 2 | [Источник](https://www.pisirsem.com.tr/en/recipes/havuc-tarator.html) | REVIEW_REQUIRED | Нет документального подтверждения подробной сверки ингредиентов и технологии с этой страницей; не считать APPROVED |
-| 60 | Морковь с чесночным йогуртом (хавуч таратор) | 3 | [Источник](https://jamilghar.com/havuc-tarator/) | REVIEW_REQUIRED | Нет документального подтверждения подробной сверки ингредиентов и технологии с этой страницей; не считать APPROVED |
-| 61 | Табуле с петрушкой и булгуром | 1 | [Источник](https://mamaslebanesekitchen.com/salads/authentic-lebanese-tabbouleh-recipe/) | REVIEW_REQUIRED | Нет документального подтверждения подробной сверки ингредиентов и технологии с этой страницей; не считать APPROVED |
-| 61 | Табуле с петрушкой и булгуром | 2 | [Источник](https://sofrabeirut.com/recipes/tabbouleh) | REVIEW_REQUIRED | Нет документального подтверждения подробной сверки ингредиентов и технологии с этой страницей; не считать APPROVED |
-| 61 | Табуле с петрушкой и булгуром | 3 | [Источник](https://www.themaadad.com/recipes/authentic-tabbouleh) | REVIEW_REQUIRED | Нет документального подтверждения подробной сверки ингредиентов и технологии с этой страницей; не считать APPROVED |
-| 62 | Фаттуш с хрустящей питой | 1 | [Источник](https://www.talasoubra.com/fattoush) | REVIEW_REQUIRED | Нет документального подтверждения подробной сверки ингредиентов и технологии с этой страницей; не считать APPROVED |
-| 62 | Фаттуш с хрустящей питой | 2 | [Источник](https://www.bonappetit.com/recipe/fattoush-salad) | REVIEW_REQUIRED | Нет документального подтверждения подробной сверки ингредиентов и технологии с этой страницей; не считать APPROVED |
-| 62 | Фаттуш с хрустящей питой | 3 | [Источник](https://sofrabeirut.com/recipes/fattoush) | REVIEW_REQUIRED | Нет документального подтверждения подробной сверки ингредиентов и технологии с этой страницей; не считать APPROVED |
-| 63 | Рахеб из печёных баклажанов | 1 | [Источник](https://zaatarandzaytoun.com/eggplant-salad/) | REVIEW_REQUIRED | Нет документального подтверждения подробной сверки ингредиентов и технологии с этой страницей; не считать APPROVED |
-| 63 | Рахеб из печёных баклажанов | 2 | [Источник](https://www.adonisspices.com/directions.php?id=18) | REVIEW_REQUIRED | Нет документального подтверждения подробной сверки ингредиентов и технологии с этой страницей; не считать APPROVED |
-| 63 | Рахеб из печёных баклажанов | 3 | [Источник](https://cookpad.com/eng/recipes/4533354) | REVIEW_REQUIRED | Нет документального подтверждения подробной сверки ингредиентов и технологии с этой страницей; не считать APPROVED |
-| 64 | Малфуф с капустой и лимоном | 1 | [Источник](https://yourlebanon.com/recipe/malfouf/) | REVIEW_REQUIRED | Нет документального подтверждения подробной сверки ингредиентов и технологии с этой страницей; не считать APPROVED |
-| 64 | Малфуф с капустой и лимоном | 2 | [Источник](https://www.hungrypaprikas.com/malfouf-salad/) | REVIEW_REQUIRED | Нет документального подтверждения подробной сверки ингредиентов и технологии с этой страницей; не считать APPROVED |
-| 64 | Малфуф с капустой и лимоном | 3 | [Источник](https://www.bylena.com/recipe/1550/Lebanese-Cabbage-Salad-Malfouf-Salad/) | REVIEW_REQUIRED | Нет документального подтверждения подробной сверки ингредиентов и технологии с этой страницей; не считать APPROVED |
-| 65 | Огурцы с йогуртом и мятой | 1 | [Источник](https://www.sbs.com.au/food/recipe/yoghurt-and-cucumber-salad-salatit-laban-wa-khyar/bpxvniset) | REVIEW_REQUIRED | Нет документального подтверждения подробной сверки ингредиентов и технологии с этой страницей; не считать APPROVED |
-| 65 | Огурцы с йогуртом и мятой | 2 | [Источник](https://www.simplyleb.com/recipe/lebanese-cucumber-yogurt-salad/) | REVIEW_REQUIRED | Нет документального подтверждения подробной сверки ингредиентов и технологии с этой страницей; не считать APPROVED |
-| 65 | Огурцы с йогуртом и мятой | 3 | [Источник](https://www.discoverlebanon.com/en/recipes/cucumber-yogurt-salad.php) | REVIEW_REQUIRED | Нет документального подтверждения подробной сверки ингредиентов и технологии с этой страницей; не считать APPROVED |
-| 66 | Ливанский картофельный салат | 1 | [Источник](https://periandsons.com/recipe.php?p=Lebanese+Potato+Salad+%28Salatet+Batata%29) | REVIEW_REQUIRED | Нет документального подтверждения подробной сверки ингредиентов и технологии с этой страницей; не считать APPROVED |
-| 66 | Ливанский картофельный салат | 2 | [Источник](https://thelittleferrarokitchen.com/lebanese-potato-salad-with-sumac/) | REVIEW_REQUIRED | Нет документального подтверждения подробной сверки ингредиентов и технологии с этой страницей; не считать APPROVED |
-| 66 | Ливанский картофельный салат | 3 | [Источник](https://www.talasoubra.com/lebanese-potato-salad) | REVIEW_REQUIRED | Нет документального подтверждения подробной сверки ингредиентов и технологии с этой страницей; не считать APPROVED |
-| 67 | Стручковая фасоль с лимоном | 1 | [Источник](https://www.food.com/recipe/salatah-el-loobyea-lebanese-green-bean-salad-434359) | REVIEW_REQUIRED | Нет документального подтверждения подробной сверки ингредиентов и технологии с этой страницей; не считать APPROVED |
-| 67 | Стручковая фасоль с лимоном | 2 | [Источник](https://www.astray.com/recipes/?show=Lebanese+green+bean+salad) | REVIEW_REQUIRED | Нет документального подтверждения подробной сверки ингредиентов и технологии с этой страницей; не считать APPROVED |
-| 67 | Стручковая фасоль с лимоном | 3 | [Источник](https://abouteating.com/2020/08/06/comfort-food-from-lebanon/) | REVIEW_REQUIRED | Нет документального подтверждения подробной сверки ингредиентов и технологии с этой страницей; не считать APPROVED |
-| 68 | Салат из нута с зеленью | 1 | [Источник](https://eeina.com/en/recipes/chickpea-parsley-salad.html) | REVIEW_REQUIRED | Нет документального подтверждения подробной сверки ингредиентов и технологии с этой страницей; не считать APPROVED |
-| 68 | Салат из нута с зеленью | 2 | [Источник](https://zaatarandzaytoun.com/chickpea-salad/) | REVIEW_REQUIRED | Нет документального подтверждения подробной сверки ингредиентов и технологии с этой страницей; не считать APPROVED |
-| 68 | Салат из нута с зеленью | 3 | [Источник](https://www.tasteofbeirut.com/chickpea-salad/) | REVIEW_REQUIRED | Нет документального подтверждения подробной сверки ингредиентов и технологии с этой страницей; не считать APPROVED |
-| 69 | Салат из рукколы с сумахом | 1 | [Источник](https://www.food.com/recipe/jarjeer-arugula-salad-436995) | SUBSTANTIVELY_COMPARED | Jarjeer salad includes rocket, lemon, sumac, tomato, onion |
-| 69 | Салат из рукколы с сумахом | 2 | [Источник](https://eathealthyandcheap.com/recipes/salatet-jarjir-arugula-sumac-salad/) | SUBSTANTIVELY_COMPARED | Levantine arugula and sumac salad; includes pomegranate/walnuts not in our editorial variant |
-| 69 | Салат из рукколы с сумахом | 3 | [Источник](https://www.fufuskitchen.com/salatat-jarjeer-middle-eastern-arugula-salad/) | SUBSTANTIVELY_COMPARED | Arugula onion lemon sumac olive oil salad; walnut optional in source |
-| 70 | Свежий зелёный тимьян с луком | 1 | [Источник](https://yourlebanon.com/recipe/salatat-za3tar/) | REVIEW_REQUIRED | Нет документального подтверждения подробной сверки ингредиентов и технологии с этой страницей; не считать APPROVED |
-| 70 | Свежий зелёный тимьян с луком | 2 | [Источник](https://www.discoverlebanon.com/en/recipes/green_thyme_salad.php) | REVIEW_REQUIRED | Нет документального подтверждения подробной сверки ингредиентов и технологии с этой страницей; не считать APPROVED |
-| 70 | Свежий зелёный тимьян с луком | 3 | [Источник](https://lebanesegarlicsauce.com/salatit-zaatar-akhdar-fresh-thyme-salad/) | REVIEW_REQUIRED | Нет документального подтверждения подробной сверки ингредиентов и технологии с этой страницей; не считать APPROVED |
-| 71 | Суномоно с огурцами | 1 | [Источник](https://www.justonecookbook.com/sunomono-with-cucumber-and-wakame/) | REVIEW_REQUIRED | Нет документального подтверждения подробной сверки ингредиентов и технологии с этой страницей; не считать APPROVED |
-| 71 | Суномоно с огурцами | 2 | [Источник](https://recipin.jp/en/recipes/sunomono) | REVIEW_REQUIRED | Нет документального подтверждения подробной сверки ингредиентов и технологии с этой страницей; не считать APPROVED |
-| 71 | Суномоно с огурцами | 3 | [Источник](https://www.mrpantry.com/recipes/sunomono-cucumber-and-wakame-salad) | REVIEW_REQUIRED | Нет документального подтверждения подробной сверки ингредиентов и технологии с этой страницей; не считать APPROVED |
-| 72 | Вакаме с кунжутом | 1 | [Источник](https://www.kikkoman.com/en/cookbook/recipe/00000939.html) | REVIEW_REQUIRED | Нет документального подтверждения подробной сверки ингредиентов и технологии с этой страницей; не считать APPROVED |
-| 72 | Вакаме с кунжутом | 2 | [Источник](https://norecipes.com/seaweed-salad-recipe/) | REVIEW_REQUIRED | Нет документального подтверждения подробной сверки ингредиентов и технологии с этой страницей; не считать APPROVED |
-| 72 | Вакаме с кунжутом | 3 | [Источник](https://www.forkin.io/recipes/wakame-seaweed-salad-with-sesame-dressing) | REVIEW_REQUIRED | Нет документального подтверждения подробной сверки ингредиентов и технологии с этой страницей; не считать APPROVED |
-| 73 | Гома-аэ из шпината | 1 | [Источник](https://www.justonecookbook.com/spinach-with-sesame-sauce/) | REVIEW_REQUIRED | Нет документального подтверждения подробной сверки ингредиентов и технологии с этой страницей; не считать APPROVED |
-| 73 | Гома-аэ из шпината | 2 | [Источник](https://www.theintrepideater.com/japanese-spinach-goma-ae/) | REVIEW_REQUIRED | Нет документального подтверждения подробной сверки ингредиентов и технологии с этой страницей; не считать APPROVED |
-| 73 | Гома-аэ из шпината | 3 | [Источник](https://www.chopstickchronicles.com/spinach-goma-ae/) | REVIEW_REQUIRED | Нет документального подтверждения подробной сверки ингредиентов и технологии с этой страницей; не считать APPROVED |
-| 74 | Японский картофельный салат | 1 | [Источник](https://www.justonecookbook.com/japanese-potato-salad/) | SUBSTANTIVELY_COMPARED | Japanese potato salad with mashed potatoes, mayonnaise, carrot cucumber and rest; 80 min published |
-| 74 | Японский картофельный салат | 2 | [Источник](https://japanesecooking101.com/potato-salad-recipe/) | REVIEW_REQUIRED | Нет документального подтверждения подробной сверки ингредиентов и технологии с этой страницей; не считать APPROVED |
-| 74 | Японский картофельный салат | 3 | [Источник](https://www.chopstickchronicles.com/japanese-potato-salad/) | REVIEW_REQUIRED | Нет документального подтверждения подробной сверки ингредиентов и технологии с этой страницей; не считать APPROVED |
-| 75 | Харусаме с прозрачной лапшой | 1 | [Источник](https://www.justonecookbook.com/harusame-salad/) | REVIEW_REQUIRED | Нет документального подтверждения подробной сверки ингредиентов и технологии с этой страницей; не считать APPROVED |
-| 75 | Харусаме с прозрачной лапшой | 2 | [Источник](https://japan.recipetineats.com/japanese-vermicelli-salad-harusame-salad/) | REVIEW_REQUIRED | Нет документального подтверждения подробной сверки ингредиентов и технологии с этой страницей; не считать APPROVED |
-| 75 | Харусаме с прозрачной лапшой | 3 | [Источник](https://japanesecooking101.com/harusame-salad-recipe/) | REVIEW_REQUIRED | Нет документального подтверждения подробной сверки ингредиентов и технологии с этой страницей; не считать APPROVED |
-| 76 | Салат гобо из корня лопуха | 1 | [Источник](https://www.justonecookbook.com/gobo-salad-japanese-burdock-root-salad/) | REVIEW_REQUIRED | Нет документального подтверждения подробной сверки ингредиентов и технологии с этой страницей; не считать APPROVED |
-| 76 | Салат гобо из корня лопуха | 2 | [Источник](https://www.kikkoman.com/en/cookbook/recipe/00000988.html) | REVIEW_REQUIRED | Нет документального подтверждения подробной сверки ингредиентов и технологии с этой страницей; не считать APPROVED |
-| 76 | Салат гобо из корня лопуха | 3 | [Источник](https://www.chopstickchronicles.com/gobo-salad/) | REVIEW_REQUIRED | Нет документального подтверждения подробной сверки ингредиентов и технологии с этой страницей; не считать APPROVED |
-| 77 | Сира-аэ с тофу и стручковой фасолью | 1 | [Источник](https://www.kikkoman.com/en/cookbook/recipe/00000305.html) | REVIEW_REQUIRED | Нет документального подтверждения подробной сверки ингредиентов и технологии с этой страницей; не считать APPROVED |
-| 77 | Сира-аэ с тофу и стручковой фасолью | 2 | [Источник](https://www.justonecookbook.com/green-bean-shiraae/) | REVIEW_REQUIRED | Нет документального подтверждения подробной сверки ингредиентов и технологии с этой страницей; не считать APPROVED |
-| 77 | Сира-аэ с тофу и стручковой фасолью | 3 | [Источник](https://japanesecooking101.com/shiraae-recipe/) | REVIEW_REQUIRED | Нет документального подтверждения подробной сверки ингредиентов и технологии с этой страницей; не считать APPROVED |
-| 78 | Кабоча, салат из японской тыквы | 1 | [Источник](https://www.justonecookbook.com/kabocha-salad/) | REVIEW_REQUIRED | Нет документального подтверждения подробной сверки ингредиентов и технологии с этой страницей; не считать APPROVED |
-| 78 | Кабоча, салат из японской тыквы | 2 | [Источник](https://japanesecooking101.com/kabocha-salad/) | REVIEW_REQUIRED | Нет документального подтверждения подробной сверки ингредиентов и технологии с этой страницей; не считать APPROVED |
-| 78 | Кабоча, салат из японской тыквы | 3 | [Источник](https://recipin.jp/en/recipes/kabocha-salad) | REVIEW_REQUIRED | Нет документального подтверждения подробной сверки ингредиентов и технологии с этой страницей; не считать APPROVED |
-| 79 | Тофу с кунжутным понзу | 1 | [Источник](https://www.justonecookbook.com/tofu-salad-with-sesame-ponzu-dressing/) | REVIEW_REQUIRED | Нет документального подтверждения подробной сверки ингредиентов и технологии с этой страницей; не считать APPROVED |
-| 79 | Тофу с кунжутным понзу | 2 | [Источник](https://www.kikkoman.com/en/cookbook/recipe/00000740.html) | REVIEW_REQUIRED | Нет документального подтверждения подробной сверки ингредиентов и технологии с этой страницей; не считать APPROVED |
-| 79 | Тофу с кунжутным понзу | 3 | [Источник](https://norecipes.com/japanese-tofu-salad/) | REVIEW_REQUIRED | Нет документального подтверждения подробной сверки ингредиентов и технологии с этой страницей; не считать APPROVED |
-| 80 | Салат с холодной лапшой соба | 1 | [Источник](https://japanesecooking101.com/soba-noodle-salad-recipe/) | REVIEW_REQUIRED | Нет документального подтверждения подробной сверки ингредиентов и технологии с этой страницей; не считать APPROVED |
-| 80 | Салат с холодной лапшой соба | 2 | [Источник](https://yutaka.london/recipes/sides/soba-noodle/) | REVIEW_REQUIRED | Нет документального подтверждения подробной сверки ингредиентов и технологии с этой страницей; не считать APPROVED |
-| 80 | Салат с холодной лапшой соба | 3 | [Источник](https://www.kikkoman.co.uk/food-service/recipes/detail/cold-soba-noodle-salad-with-sesame-dressing) | REVIEW_REQUIRED | Нет документального подтверждения подробной сверки ингредиентов и технологии с этой страницей; не считать APPROVED |
-| 81 | Сом там из зелёной папайи | 1 | [Источник](https://www.thaitable.com/recipes/green-papaya-salad) | REVIEW_REQUIRED | Нет документального подтверждения подробной сверки ингредиентов и технологии с этой страницей; не считать APPROVED |
-| 81 | Сом там из зелёной папайи | 2 | [Источник](https://www.marionskitchen.com/som-tum-thai-papaya-salad/) | REVIEW_REQUIRED | Нет документального подтверждения подробной сверки ингредиентов и технологии с этой страницей; не считать APPROVED |
-| 81 | Сом там из зелёной папайи | 3 | [Источник](https://www.templeofthai.com/recipes/papaya_salad.php) | REVIEW_REQUIRED | Нет документального подтверждения подробной сверки ингредиентов и технологии с этой страницей; не считать APPROVED |
-| 82 | Ям вун сен с фунчозой | 1 | [Источник](https://www.marionskitchen.com/thai-glass-noodle-salad-yum-woon-sen/) | SUBSTANTIVELY_COMPARED | Thai glass noodle salad with pork mince, prawns, lime fish sauce |
-| 82 | Ям вун сен с фунчозой | 2 | [Источник](https://thaidata.uk/recipes/yum-woon-sen/) | REVIEW_REQUIRED | Нет документального подтверждения подробной сверки ингредиентов и технологии с этой страницей; не считать APPROVED |
-| 82 | Ям вун сен с фунчозой | 3 | [Источник](https://cookpad.com/eng/recipes/15310719) | REVIEW_REQUIRED | Нет документального подтверждения подробной сверки ингредиентов и технологии с этой страницей; не считать APPROVED |
-| 83 | Ларб му со свининой | 1 | [Источник](https://www.templeofthai.com/recipes/laab-moo.php) | REVIEW_REQUIRED | Нет документального подтверждения подробной сверки ингредиентов и технологии с этой страницей; не считать APPROVED |
-| 83 | Ларб му со свининой | 2 | [Источник](https://www.thaicookbook.tv/thai-recipes/salads/larb-moo-spicy-minced-pork-salad/) | REVIEW_REQUIRED | Нет документального подтверждения подробной сверки ингредиентов и технологии с этой страницей; не считать APPROVED |
-| 83 | Ларб му со свининой | 3 | [Источник](https://aroymakmak.com/en/recipes/larb-moo) | REVIEW_REQUIRED | Нет документального подтверждения подробной сверки ингредиентов и технологии с этой страницей; не считать APPROVED |
-| 84 | Нам ток с говядиной | 1 | [Источник](https://hot-thai-kitchen.com/nam-tok-neua/) | REVIEW_REQUIRED | Нет документального подтверждения подробной сверки ингредиентов и технологии с этой страницей; не считать APPROVED |
-| 84 | Нам ток с говядиной | 2 | [Источник](https://www.marionskitchen.com/spicy-thai-grilled-beef-salad/) | REVIEW_REQUIRED | Нет документального подтверждения подробной сверки ингредиентов и технологии с этой страницей; не считать APPROVED |
-| 84 | Нам ток с говядиной | 3 | [Источник](https://usa.lkk.com/en/recipes/thai-style-beef-salad-recipe-nam-tok-neua) | REVIEW_REQUIRED | Нет документального подтверждения подробной сверки ингредиентов и технологии с этой страницей; не считать APPROVED |
-| 85 | Ям сом-о с помело | 1 | [Источник](https://www.kikkoman.eu/recipes/detail/yum-som-o-thai-pomelo-and-prawn-salad) | REVIEW_REQUIRED | Нет документального подтверждения подробной сверки ингредиентов и технологии с этой страницей; не считать APPROVED |
-| 85 | Ям сом-о с помело | 2 | [Источник](https://atasteofthai.com/thai-recipes/yam-som-o-pomelo-salad/) | REVIEW_REQUIRED | Нет документального подтверждения подробной сверки ингредиентов и технологии с этой страницей; не считать APPROVED |
-| 85 | Ям сом-о с помело | 3 | [Источник](https://tastythais.com/thai-pomelo-salad/) | REVIEW_REQUIRED | Нет документального подтверждения подробной сверки ингредиентов и технологии с этой страницей; не считать APPROVED |
-| 86 | Ям туа пу с крылатой фасолью | 1 | [Источник](https://hot-thai-kitchen.com/wing-bean-salad/) | REVIEW_REQUIRED | Нет документального подтверждения подробной сверки ингредиентов и технологии с этой страницей; не считать APPROVED |
-| 86 | Ям туа пу с крылатой фасолью | 2 | [Источник](https://www.realthairecipes.com/recipes/wing-bean-salad/) | REVIEW_REQUIRED | Нет документального подтверждения подробной сверки ингредиентов и технологии с этой страницей; не считать APPROVED |
-| 86 | Ям туа пу с крылатой фасолью | 3 | [Источник](https://www.clubhouse.ca/en-ca/blogs/thai-kitchen-recipes/wing-bean-salad-yum-tuapu) | REVIEW_REQUIRED | Нет документального подтверждения подробной сверки ингредиентов и технологии с этой страницей; не считать APPROVED |
-| 87 | Ям пла дук фу с хрустящей рыбой | 1 | [Источник](https://www.thaitable.com/recipes/crispy-catfish-green-mango-salad) | SUBSTANTIVELY_COMPARED | ThaiTable crispy catfish: pre-baking optional before frying; mango |
-| 87 | Ям пла дук фу с хрустящей рыбой | 2 | [Источник](https://www.pholfoodmafia.com/recipe/crispy-catfish-salad-%E0%B8%A2%E0%B8%B3%E0%B8%9B%E0%B8%A5%E0%B8%B2%E0%B8%94%E0%B8%B8%E0%B8%81%E0%B8%9F%E0%B8%B9/) | SUBSTANTIVELY_COMPARED | PholFoodMafia crispy catfish: grilled fish, drying and frying with green mango |
-| 87 | Ям пла дук фу с хрустящей рыбой | 3 | [Источник](https://www.food.com/recipe/thai-catfish-salad-yam-pla-dook-foo-31233) | SUBSTANTIVELY_COMPARED | Food.com crispy catfish: steamed fish before frying with green mango |
-| 88 | Ям кай дао с жареным яйцом | 1 | [Источник](https://feastthailand.com/food/yam-khai-dao/) | REVIEW_REQUIRED | Нет документального подтверждения подробной сверки ингредиентов и технологии с этой страницей; не считать APPROVED |
-| 88 | Ям кай дао с жареным яйцом | 2 | [Источник](https://www.australianeggs.org.au/recipes-and-cooking/yum-khai-dao) | REVIEW_REQUIRED | Нет документального подтверждения подробной сверки ингредиентов и технологии с этой страницей; не считать APPROVED |
-| 88 | Ям кай дао с жареным яйцом | 3 | [Источник](https://www.kitchenstories.com/en/recipes/thai-fried-egg-salad-yum-khai-dao) | REVIEW_REQUIRED | Нет документального подтверждения подробной сверки ингредиентов и технологии с этой страницей; не считать APPROVED |
-| 89 | Ям мамуанг с зелёным манго | 1 | [Источник](https://www.thaicookbook.tv/thai-recipes/salads/green-mango-salad-with-fresh-shrimp/) | REVIEW_REQUIRED | Нет документального подтверждения подробной сверки ингредиентов и технологии с этой страницей; не считать APPROVED |
-| 89 | Ям мамуанг с зелёным манго | 2 | [Источник](https://www.templeofthai.com/recipes/thai-mango-salad.php) | REVIEW_REQUIRED | Нет документального подтверждения подробной сверки ингредиентов и технологии с этой страницей; не считать APPROVED |
-| 89 | Ям мамуанг с зелёным манго | 3 | [Источник](https://praneesthaikitchen.com/2010/07/01/thai-green-mango-salad-recipe-yum-mamuang-goong/) | REVIEW_REQUIRED | Нет документального подтверждения подробной сверки ингредиентов и технологии с этой страницей; не считать APPROVED |
-| 90 | Кхао ям с рисом и травами | 1 | [Источник](https://thaidata.uk/recipes/khao-yam/) | REVIEW_REQUIRED | Нет документального подтверждения подробной сверки ингредиентов и технологии с этой страницей; не считать APPROVED |
-| 90 | Кхао ям с рисом и травами | 2 | [Источник](https://www.tasteatlas.com/khao-yam/recipe) | REVIEW_REQUIRED | Нет документального подтверждения подробной сверки ингредиентов и технологии с этой страницей; не считать APPROVED |
-| 90 | Кхао ям с рисом и травами | 3 | [Источник](https://www.thaifoodmaster.com/thai_food_recipes/thai_salads/15425) | REVIEW_REQUIRED | Нет документального подтверждения подробной сверки ингредиентов и технологии с этой страницей; не считать APPROVED |
-| 91 | Кобб с курицей и авокадо | 1 | [Источник](https://www.foodnetwork.com/recipes/the-original-cobb-salad-recipe-2203741) | REVIEW_REQUIRED | Нет документального подтверждения подробной сверки ингредиентов и технологии с этой страницей; не считать APPROVED |
-| 91 | Кобб с курицей и авокадо | 2 | [Источник](https://www.epicurious.com/recipes/food/views/cobb-salad-11049) | REVIEW_REQUIRED | Нет документального подтверждения подробной сверки ингредиентов и технологии с этой страницей; не считать APPROVED |
-| 91 | Кобб с курицей и авокадо | 3 | [Источник](https://www.tasteatlas.com/cobb-salad/recipe) | SUBSTANTIVELY_COMPARED | TasteAtlas Cobb history and main ingredients chicken bacon tomato avocado egg Roquefort |
-| 92 | Вальдорф с яблоком и сельдереем | 1 | [Источник](https://www.bbcgoodfood.com/recipes/waldorf-salad) | REVIEW_REQUIRED | Нет документального подтверждения подробной сверки ингредиентов и технологии с этой страницей; не считать APPROVED |
-| 92 | Вальдорф с яблоком и сельдереем | 2 | [Источник](https://www.foodnetwork.com/recipes/waldorf-salad-recipe-1937591) | REVIEW_REQUIRED | Нет документального подтверждения подробной сверки ингредиентов и технологии с этой страницей; не считать APPROVED |
-| 92 | Вальдорф с яблоком и сельдереем | 3 | [Источник](https://www.epicurious.com/recipes/food/views/waldorf-salad-360790) | REVIEW_REQUIRED | Нет документального подтверждения подробной сверки ингредиентов и технологии с этой страницей; не считать APPROVED |
-| 93 | Шеф-салат с ветчиной и сыром | 1 | [Источник](https://www.foodnetwork.com/recipes/food-network-kitchen/chefs-salad-recipe-2011625) | REVIEW_REQUIRED | Нет документального подтверждения подробной сверки ингредиентов и технологии с этой страницей; не считать APPROVED |
-| 93 | Шеф-салат с ветчиной и сыром | 2 | [Источник](https://www.epicurious.com/recipes/food/views/chefs-salad-102212) | REVIEW_REQUIRED | Нет документального подтверждения подробной сверки ингредиентов и технологии с этой страницей; не считать APPROVED |
-| 93 | Шеф-салат с ветчиной и сыром | 3 | [Источник](https://www.foodpassport.com/united-states/salads/chef-salad.html) | REVIEW_REQUIRED | Нет документального подтверждения подробной сверки ингредиентов и технологии с этой страницей; не считать APPROVED |
-| 94 | Ведж с айсбергом и голубым сыром | 1 | [Источник](https://www.epicurious.com/recipes/food/views/iceberg-wedge-salad-with-warm-bacon-and-blue-cheese-dressing-51132380) | REVIEW_REQUIRED | Нет документального подтверждения подробной сверки ингредиентов и технологии с этой страницей; не считать APPROVED |
-| 94 | Ведж с айсбергом и голубым сыром | 2 | [Источник](https://www.marthastewart.com/951402/iceberg-wedges-creamy-blue-cheese-dressing) | REVIEW_REQUIRED | Нет документального подтверждения подробной сверки ингредиентов и технологии с этой страницей; не считать APPROVED |
-| 94 | Ведж с айсбергом и голубым сыром | 3 | [Источник](https://www.thekitchn.com/recipe-iceberg-wedge-salad-240308) | REVIEW_REQUIRED | Нет документального подтверждения подробной сверки ингредиентов и технологии с этой страницей; не считать APPROVED |
-| 95 | Коул-слоу из капусты | 1 | [Источник](https://www.foodnetwork.com/recipes/food-network-kitchen/coleslaw-recipe-1944448) | REVIEW_REQUIRED | Нет документального подтверждения подробной сверки ингредиентов и технологии с этой страницей; не считать APPROVED |
-| 95 | Коул-слоу из капусты | 2 | [Источник](https://www.bbcgoodfood.com/recipes/classic-homemade-coleslaw) | REVIEW_REQUIRED | Нет документального подтверждения подробной сверки ингредиентов и технологии с этой страницей; не считать APPROVED |
-| 95 | Коул-слоу из капусты | 3 | [Источник](https://www.seriouseats.com/creamy-cole-slaw) | REVIEW_REQUIRED | Нет документального подтверждения подробной сверки ингредиентов и технологии с этой страницей; не считать APPROVED |
-| 96 | Американский макаронный салат | 1 | [Источник](https://www.foodnetwork.com/recipes/food-network-kitchen/american-macaroni-salad-recipe-2012642) | REVIEW_REQUIRED | Нет документального подтверждения подробной сверки ингредиентов и технологии с этой страницей; не считать APPROVED |
-| 96 | Американский макаронный салат | 2 | [Источник](https://www.seriouseats.com/classic-macaroni-salad-recipe) | REVIEW_REQUIRED | Нет документального подтверждения подробной сверки ингредиентов и технологии с этой страницей; не считать APPROVED |
-| 96 | Американский макаронный салат | 3 | [Источник](https://www.spendwithpennies.com/classic-macaroni-salad/) | REVIEW_REQUIRED | Нет документального подтверждения подробной сверки ингредиентов и технологии с этой страницей; не считать APPROVED |
-| 97 | Американский картофельный салат | 1 | [Источник](https://www.foodnetwork.com/recipes/food-network-kitchen/classic-american-potato-salad-3721396) | REVIEW_REQUIRED | Нет документального подтверждения подробной сверки ингредиентов и технологии с этой страницей; не считать APPROVED |
-| 97 | Американский картофельный салат | 2 | [Источник](https://www.epicurious.com/recipes/food/views/all-american-potato-salad-14176) | REVIEW_REQUIRED | Нет документального подтверждения подробной сверки ингредиентов и технологии с этой страницей; не считать APPROVED |
-| 97 | Американский картофельный салат | 3 | [Источник](https://www.spendwithpennies.com/potato-salad-recipe/) | REVIEW_REQUIRED | Нет документального подтверждения подробной сверки ингредиентов и технологии с этой страницей; не считать APPROVED |
-| 98 | Семислойный салат | 1 | [Источник](https://www.thekitchn.com/old-school-practicality-the-se-89814) | REVIEW_REQUIRED | Нет документального подтверждения подробной сверки ингредиентов и технологии с этой страницей; не считать APPROVED |
-| 98 | Семислойный салат | 2 | [Источник](https://www.cooks.com/recipe/pu66z5qg/seven-layer-salad.html) | REVIEW_REQUIRED | Нет документального подтверждения подробной сверки ингредиентов и технологии с этой страницей; не считать APPROVED |
-| 98 | Семислойный салат | 3 | [Источник](https://www.spendwithpennies.com/7-layer-salad/) | REVIEW_REQUIRED | Нет документального подтверждения подробной сверки ингредиентов и технологии с этой страницей; не считать APPROVED |
-| 99 | Брокколи с беконом | 1 | [Источник](https://www.foodnetwork.com/recipes/trisha-yearwood/broccoli-salad-2065359) | REVIEW_REQUIRED | Нет документального подтверждения подробной сверки ингредиентов и технологии с этой страницей; не считать APPROVED |
-| 99 | Брокколи с беконом | 2 | [Источник](https://www.cooks.com/recipe/733vp9j3/broccoli-bacon-raisin-salad.html) | REVIEW_REQUIRED | Нет документального подтверждения подробной сверки ингредиентов и технологии с этой страницей; не считать APPROVED |
-| 99 | Брокколи с беконом | 3 | [Источник](https://www.spendwithpennies.com/broccoli-salad/) | REVIEW_REQUIRED | Нет документального подтверждения подробной сверки ингредиентов и технологии с этой страницей; не считать APPROVED |
-| 100 | Луи с креветками | 1 | [Источник](https://www.foodnetwork.com/recipes/shrimp-louie-salad-11880824) | REVIEW_REQUIRED | Нет документального подтверждения подробной сверки ингредиентов и технологии с этой страницей; не считать APPROVED |
-| 100 | Луи с креветками | 2 | [Источник](https://texascooppower.com/recipes/shrimp-louis-salad/) | REVIEW_REQUIRED | Нет документального подтверждения подробной сверки ингредиентов и технологии с этой страницей; не считать APPROVED |
-| 100 | Луи с креветками | 3 | [Источник](https://juneoven.com/pages/recipe-shrimp-louie-803fedc8) | REVIEW_REQUIRED | Нет документального подтверждения подробной сверки ингредиентов и технологии с этой страницей; не считать APPROVED |
 
-## Ограничения и следующий критерий готовности
+### 12. Панцанелла с томатами и хлебом
 
-Чтобы присвоить всему каталогу `SOURCES_PASS`, по каждому источнику в 270 строках требуется сохранить проверенные состав, технологию, место расхождения, отличия авторской версии и окончательный вердикт с датой доступа. Сейчас такого доказательства по большинству ссылок нет. Это редакционный реестр и выполненные конкретные исправления, а не сертификат полной проверки.
+Панцанелла: черствый хлеб не должен быть сухими крутонами; после замачивания 20 минут выдержка с овощами 60 минут. У источников длительность варьируется.
 
-Публичная эталонная сборка и фотографии **не изменены**. Этот файл создан в редакционной ветке. Вторая независимая задача для публикации: фактические одобренные полноразмерные изображения и сборка сайта.
+Время карточки: **100 мин**. Шаги: 1) «Размочи хлеб»: 20 мин; 2) «Нарежь»: без отсчёта; 3) «Собери»: без отсчёта; 4) «Дай настояться в холодильнике»: 60 мин.
+
+
+### 13. Инсалата ди маре с морепродуктами
+
+Инсалата ди маре: мидии, кальмары и креветки готовить раздельно; охлаждение, лимонная заправка и отсутствие сырых морепродуктов обязательны.
+
+Время карточки: **65 мин**. Шаги: 1) «Подготовь морепродукты»: без отсчёта; 2) «Приготовь мидии»: 7 мин; 3) «Отвари кальмаров»: 3 мин; 4) «Отвари креветки»: 4 мин; 5) «Смешай»: без отсчёта.
+
+
+### 14. Салат с осьминогом и картофелем
+
+Осьминог и картофель: осьминог отварен до мягкости, картофель отдельно, масло с лимоном и петрушкой; время осьминога зависит от размера.
+
+Время карточки: **100 мин**. Шаги: 1) «Отвари осьминога»: 50 мин; 2) «Свари картофель»: 25 мин; 3) «Нарежь»: без отсчёта; 4) «Заправь»: без отсчёта.
+
+
+### 15. Фенхель с апельсинами по-сицилийски
+
+Фенхель с апельсинами: сырая тонкая нарезка клубней, апельсин, черные оливки, масло; источник поисковой выдачи заменен рецептом.
+
+Время карточки: **20 мин**. Шаги: 1) «Подготовь фенхель»: без отсчёта; 2) «Очисти апельсины»: без отсчёта; 3) «Нарежь лук»: без отсчёта; 4) «Соедини»: без отсчёта.
+
+
+### 16. Неаполитанский салат «Ринфорцо»
+
+Ринфорцо: рождественская неаполитанская версия с цветной капустой, перцами papaccelle, оливками, каперсами и анчоусами; накануне вкус лучше.
+
+Время карточки: **65 мин**. Шаги: 1) «Отвари капусту»: 8 мин; 2) «Подготовь добавки»: без отсчёта; 3) «Соедини»: без отсчёта; 4) «Заправь и дай настояться»: 20 мин.
+
+
+### 17. Римские пунтарелле с анчоусами
+
+Пунтарелле: центральные побеги цикория, анчоусный соус, ледяная вода около часа для скручивания листьев; сорт не заменять обычным латуком.
+
+Время карточки: **75 мин**. Шаги: 1) «Нарежь пунтарелле»: без отсчёта; 2) «Завей в холодной воде»: 60 мин; 3) «Сделай соус»: без отсчёта; 4) «Заправь»: без отсчёта.
+
+
+### 18. Итальянский рисовый салат
+
+Итальянский рисовый салат: отдельно сваренный охлажденный рис с тунцом, овощами и оливками. Сыр, кукуруза и горошек отличаются между версиями.
+
+Время карточки: **55 мин**. Шаги: 1) «Свари рис»: 15 мин; 2) «Быстро охлади»: без отсчёта; 3) «Подготовь добавки»: без отсчёта; 4) «Смешай»: без отсчёта.
+
+
+### 19. Салат из полбы с овощами
+
+Фарро с овощами: сухая полба/фарро, томаты, цукини и перец; оригинальные рецепты различаются сыром, тунцом, баклажанами и временем.
+
+Время карточки: **55 мин**. Шаги: 1) «Свари фарро»: 30 мин; 2) «Обжарь овощи»: 8 мин; 3) «Подготовь свежие продукты»: без отсчёта; 4) «Собери»: без отсчёта.
+
+
+### 20. Белая фасоль с тунцом и луком
+
+Фасоль с тунцом: готовые белые бобы, тунец, лук, петрушка и масло с лимоном; фасоль без жидкости и без долгой варки.
+
+Время карточки: **15 мин**. Шаги: 1) «Подготовь фасоль»: без отсчёта; 2) «Нарежь лук»: без отсчёта; 3) «Раздели тунца»: без отсчёта; 4) «Соедини»: без отсчёта.
+
+
+### 21. Нисуаз, традиционный салат Ниццы
+
+Нисуаз: в традиционной версии Ниццы сырые овощи, тунец/анчоусы, оливки и яйца; без вареного картофеля и фасоли.
+
+Время карточки: **30 мин**. Шаги: 1) «Свари яйца»: 10 мин; 2) «Подготовь сырые овощи»: без отсчёта; 3) «Собери»: без отсчёта; 4) «Приправь»: без отсчёта.
+
+
+### 22. Лионский салат с яйцом пашот
+
+Лионский салат: фризе, лардоны, поджаренные крутоны, яйцо пашот и винегрет. По готовности яйца ориентироваться на степень паширования.
+
+Время карточки: **25 мин**. Шаги: 1) «Подготовь листья»: без отсчёта; 2) «Подрумянь»: 7 мин; 3) «Свари пашот»: 4 мин; 4) «Заправь и подай»: без отсчёта.
+
+
+### 23. Перигорский салат с уткой и куриной печенью
+
+Перигорский: в источниках разные сочетания магре, утиных желудочков и печени; куриная печень плюс магре в нашей карточке авторская комбинация.
+
+Время карточки: **35 мин**. Шаги: 1) «Подготовь салат»: без отсчёта; 2) «Приготовь куриную печень»: 9 мин; 3) «Смешай заправку»: без отсчёта; 4) «Собери и подай»: без отсчёта.
+
+
+### 24. Салат с тёплым козьим сыром
+
+Тёплый козий сыр: запечённый сыр на багете, зелень, орехи и мёд; подавать сразу, пока сыр горячий.
+
+Время карточки: **25 мин**. Шаги: 1) «Подготовь листья»: без отсчёта; 2) «Сделай тосты»: 7 мин; 3) «Взбей соус»: без отсчёта; 4) «Собери»: без отсчёта.
+
+
+### 25. Сельдерей ремулад
+
+Сельдерей ремулад: именно сырой корень, тонкая соломка с горчично-майонезной заправкой; не путать с черешками в Кошуазе.
+
+Время карточки: **25 мин**. Шаги: 1) «Смешай заправку»: без отсчёта; 2) «Натри сельдерей»: без отсчёта; 3) «Соедини сразу»: без отсчёта; 4) «Охлади»: 15 мин.
+
+
+### 26. Морковь с французской винегретной заправкой
+
+Французская морковь: свежая тертая морковь, горчица, винный уксус, масло и петрушка, заправка эмульгирована.
+
+Время карточки: **15 мин**. Шаги: 1) «Очисти морковь»: без отсчёта; 2) «Смешай заправку»: без отсчёта; 3) «Соедини»: без отсчёта; 4) «Дай немного постоять»: 8 мин.
+
+
+### 27. Салат из зелёной чечевицы Ле-Пюи
+
+Чечевица Ле-Пюи: варёные целые зелёные зёрна, шалот и винегрет; не доводить крупу до каши.
+
+Время карточки: **45 мин**. Шаги: 1) «Свари чечевицу»: 25 мин; 2) «Подготовь основу»: без отсчёта; 3) «Сделай винегрет»: без отсчёта; 4) «Соедини тёплым»: без отсчёта.
+
+
+### 28. Французский картофельный салат
+
+Французский картофельный салат: тёплый восковой картофель, шалот, горчично-винный винегрет и зелень, без майонеза.
+
+Время карточки: **45 мин**. Шаги: 1) «Свари картофель»: 25 мин; 2) «Нарежь тёплым»: без отсчёта; 3) «Сделай соус»: без отсчёта; 4) «Заправь»: без отсчёта.
+
+
+### 29. Нормандский салат «Кошуаз»
+
+Кошуаз: черешковый сельдерей, картофель, ветчина, сливочная заправка; корневой сельдерей в исходном варианте заменён.
+
+Время карточки: **55 мин**. Шаги: 1) «Свари картофель»: 25 мин; 2) «Подготовь сельдерей»: без отсчёта; 3) «Нарежь остальное»: без отсчёта; 4) «Заправь»: 15 мин.
+
+
+### 30. Цикорий с рокфором и грецкими орехами
+
+Цикорий и рокфор: сырые листья эндивия, рокфор, орехи, яблоко; горечь эндивия и орехи сохраняют текстуру.
+
+Время карточки: **15 мин**. Шаги: 1) «Подготовь цикорий»: без отсчёта; 2) «Подготовь добавки»: без отсчёта; 3) «Смешай соус»: без отсчёта; 4) «Собери»: без отсчёта.
+
+
+### 31. Пипиррана из Хаэна
+
+Пипиррана из Хаэна: томаты, зелёный перец, вареный желток-эмульсия, тунец, белок; огурец из обобщённой версии удалён.
+
+Время карточки: **25 мин**. Шаги: 1) «Свари яйцо»: 10 мин; 2) «Нарежь»: без отсчёта; 3) «Разотри соус»: без отсчёта; 4) «Собери»: без отсчёта.
+
+
+### 32. Эсгарраэт с печёным перцем и треской
+
+Эсгарраэт: длинные полосы запечённого красного перца, готовая десолированная треска, масло и чеснок.
+
+Время карточки: **75 мин**. Шаги: 1) «Запеки перцы»: 30 мин; 2) «Пропарь и очисти»: 10 мин; 3) «Раздели»: без отсчёта; 4) «Подготовь рыбу»: без отсчёта; 5) «Заправь»: 20 мин.
+
+
+### 33. Майоркский тремпо
+
+Тремпо Майорки: свежие мелкие кубики помидоров, зеленого перца и сладкого лука с оливковым маслом; не варить.
+
+Время карточки: **20 мин**. Шаги: 1) «Нарежь томаты»: без отсчёта; 2) «Подготовь остальные овощи»: без отсчёта; 3) «Заправь»: без отсчёта; 4) «Дай раскрыться»: 5 мин.
+
+
+### 34. Ремохон с апельсином и треской
+
+Ремохон: апельсины и готовая вымоченная солёная треска, яйца, лук, оливки.
+
+Время карточки: **45 мин**. Шаги: 1) «Подготовь треску»: без отсчёта; 2) «Свари яйцо»: 10 мин; 3) «Подготовь апельсин»: без отсчёта; 4) «Соедини»: без отсчёта.
+
+
+### 35. Эмпедрат с фасолью
+
+Эмпедрат: белая фасоль, вымоченная готовая треска и мелкие овощи; фасоль должна сохранить форму.
+
+Время карточки: **25 мин**. Шаги: 1) «Обсуши фасоль»: без отсчёта; 2) «Подготовь треску»: без отсчёта; 3) «Нарежь»: без отсчёта; 4) «Соедини»: 10 мин.
+
+
+### 36. Каталонский шатó с ореховым соусом
+
+Шатó: эскариоль и рыба с густым ореховым соусом ñora; сухую ньору замачивать 30 минут.
+
+Время карточки: **70 мин**. Шаги: 1) «Приготовь основу соуса»: 30 мин; 2) «Добавь масло»: без отсчёта; 3) «Подготовь салат»: без отсчёта; 4) «Собери»: без отсчёта.
+
+
+### 37. Эскейшада из солёной трески
+
+Эскейшада: десолированную треску разрывают волокнами; томаты, лук и перцы (региональный вариант), оливковое масло.
+
+Время карточки: **25 мин**. Шаги: 1) «Подготовь рыбу»: без отсчёта; 2) «Нарежь овощи»: без отсчёта; 3) «Собери»: без отсчёта; 4) «Заправь»: 10 мин.
+
+
+### 38. Испанский деревенский картофельный салат
+
+Ensalada campera: варёный картофель, яйца, тунец, томаты, перец, оливки, кислый масляный винегрет.
+
+Время карточки: **45 мин**. Шаги: 1) «Отвари картофель»: 25 мин; 2) «Отвари яйца»: 10 мин; 3) «Нарежь овощи»: без отсчёта; 4) «Добавь тунца»: без отсчёта; 5) «Заправь»: без отсчёта.
+
+
+### 39. Мурсийский салат из томатов
+
+Мурсийский mojete: консервированные очищенные томаты, яйцо, тунец, лук, чёрные оливки.
+
+Время карточки: **30 мин**. Шаги: 1) «Свари яйца»: 10 мин; 2) «Подготовь томаты»: без отсчёта; 3) «Нарежь»: без отсчёта; 4) «Заправь»: 10 мин.
+
+
+### 40. Мадридский салат Сан-Исидро
+
+Сан-Исидро: весенний листовой салат с яйцом, тунцом, маслом и винным уксусом.
+
+Время карточки: **35 мин**. Шаги: 1) «Свари яйца»: 10 мин; 2) «Подготовь листья»: без отсчёта; 3) «Собери»: без отсчёта; 4) «Заправь»: без отсчёта.
+
+
+### 41. Хорьятики, классический греческий
+
+Хорьятики: овощи крупно, оливки, крупный ломтик феты, орегано и оливковое масло; без листового салата.
+
+Время карточки: **15 мин**. Шаги: 1) «Нарежь томаты»: без отсчёта; 2) «Подготовь остальные овощи»: без отсчёта; 3) «Собери»: без отсчёта; 4) «Доведи вкус»: без отсчёта.
+
+
+### 42. Критский дакос
+
+Критский дакос: размягчённый ячменный сухарь, натёртый томат и свежая мизитра; не хлебная крошка.
+
+Время карточки: **20 мин**. Шаги: 1) «Подготовь сухари»: без отсчёта; 2) «Натри томаты»: без отсчёта; 3) «Собери»: без отсчёта; 4) «Заверши»: без отсчёта.
+
+
+### 43. Марулосалата с укропом
+
+Марулосалата: тонкая нарезка ромен, много укропа и зелёного лука, лимонная заправка непосредственно перед подачей.
+
+Время карточки: **15 мин**. Шаги: 1) «Нашинкуй ромэн»: без отсчёта; 2) «Нарежь зелень»: без отсчёта; 3) «Смешай соус»: без отсчёта; 4) «Заправь»: без отсчёта.
+
+
+### 44. Хорта, салат из отварной зелени
+
+Хорта: заведомо съедобная зелень отварена и хорошо отцежена; лимон и масло по готовой зелени.
+
+Время карточки: **30 мин**. Шаги: 1) «Подготовь безопасную зелень»: без отсчёта; 2) «Отвари»: 8 мин; 3) «Слей»: без отсчёта; 4) «Заправь»: без отсчёта.
+
+
+### 45. Панцаросалата из свёклы
+
+Панцаросалата: варёная свёкла с чесноком, йогуртом и дроблёными орехами; возможна масляная версия без йогурта.
+
+Время карточки: **75 мин**. Шаги: 1) «Свари свёклу»: 55 мин; 2) «Нарежь»: без отсчёта; 3) «Смешай заправку»: без отсчёта; 4) «Заверши»: без отсчёта.
+
+
+### 46. Греческий картофельный салат
+
+Patatosalata: варёный картофель, лимон, масло, зелень и лук; на тёплом картофеле вкус ярче.
+
+Время карточки: **45 мин**. Шаги: 1) «Свари картофель»: 25 мин; 2) «Нарежь»: без отсчёта; 3) «Смешай соус»: без отсчёта; 4) «Заправь тёплым»: 5 мин.
+
+
+### 47. Фасолия салата с белой фасолью
+
+Греческая белая фасоль: полностью приготовленные целые бобы, лимон, петрушка и красный лук.
+
+Время карточки: **20 мин**. Шаги: 1) «Промой фасоль»: без отсчёта; 2) «Подготовь лук»: без отсчёта; 3) «Смешай заправку»: без отсчёта; 4) «Соедини»: 10 мин.
+
+
+### 48. Политики салата из капусты
+
+Политики: нашинкованная капуста, морковь, перец, сельдерей, уксус; выдержка 15 минут есть у одного источника, 60 у другого.
+
+Время карточки: **25 мин**. Шаги: 1) «Тонко нашинкуй капусту»: без отсчёта; 2) «Подготовь овощи»: без отсчёта; 3) «Смешай маринад»: без отсчёта; 4) «Дай настояться»: 15 мин.
+
+
+### 49. Ампелофасула из стручковой фасоли
+
+Ампелофасула: длинная стручковая фасоль отварена до мягкости с сопротивлением, затем заправлена лимоном и маслом.
+
+Время карточки: **30 мин**. Шаги: 1) «Подготовь фасоль»: без отсчёта; 2) «Отвари»: 9 мин; 3) «Смешай соус»: без отсчёта; 4) «Заправь»: без отсчёта.
+
+
+### 50. Салат из черноглазой фасоли
+
+Черноглазая фасоль: бобы целые, с мелкими овощами, зеленью, лимоном и оливковым маслом.
+
+Время карточки: **20 мин**. Шаги: 1) «Подготовь бобы»: без отсчёта; 2) «Подготовь овощи»: без отсчёта; 3) «Смешай соус»: без отсчёта; 4) «Заправь»: 10 мин.
+
+
+### 51. Чобан салатасы, пастуший
+
+Чобан: турецкий пастуший, равномерная мелкая нарезка томата огурца перца лука и петрушки, лимон с маслом.
+
+Время карточки: **15 мин**. Шаги: 1) «Подготовь овощи»: без отсчёта; 2) «Нарежь»: без отсчёта; 3) «Добавь зелень»: без отсчёта; 4) «Заправь»: без отсчёта.
+
+
+### 52. Гавурдагы с томатами и орехами
+
+Гавурдагы: томаты, грецкие орехи, гранатовый соус, сумах; по источнику введено 30 минут настаивания.
+
+Время карточки: **50 мин**. Шаги: 1) «Нарежь томаты»: без отсчёта; 2) «Подготовь лук»: без отсчёта; 3) «Добавь орехи»: без отсчёта; 4) «Заправь»: без отсчёта; 5) «Дай вкусам соединиться»: 30 мин.
+
+
+### 53. Пияз по-анталийски из белой фасоли
+
+Анталийский piyaz: белая фасоль с тахини и лимоном; яйцо часто как гарнир, орехов и майонеза нет.
+
+Время карточки: **25 мин**. Шаги: 1) «Подготовь фасоль»: без отсчёта; 2) «Сделай тахинный соус»: без отсчёта; 3) «Свари яйцо»: 10 мин; 4) «Собери»: без отсчёта.
+
+
+### 54. Кысыр с булгуром
+
+Кысыр: мелкий булгур набухает в воде, пасты из томата/перца, много зелени, гранатовый соус и лимон.
+
+Время карточки: **35 мин**. Шаги: 1) «Запарь булгур»: 15 мин; 2) «Подготовь пасты»: 1 мин; 3) «Нарежь зелень»: без отсчёта; 4) «Соедини»: без отсчёта.
+
+
+### 55. Аджылы эзме, острый овощной
+
+Аджылы эзме: не жидкое пюре, мелкая рубка томата, перца, чили и зелени с гранатовым соусом.
+
+Время карточки: **20 мин**. Шаги: 1) «Мелко нарежь»: без отсчёта; 2) «Убери влагу»: 2 мин; 3) «Сделай приправу»: без отсчёта; 4) «Заверши»: без отсчёта.
+
+
+### 56. Патлыджан салатасы из баклажанов
+
+Патлыджан салатасы: баклажан запечён до дымной мягкости, с томатами, чесноком, перцем и лимоном.
+
+Время карточки: **65 мин**. Шаги: 1) «Обугли баклажаны»: 35 мин; 2) «Очисти»: без отсчёта; 3) «Подготовь овощи»: без отсчёта; 4) «Заправь»: без отсчёта.
+
+
+### 57. Портулак с чесночным йогуртом
+
+Семизоту с йогуртом: молодой портулак сырой, тщательно вымыт и обсушен, с чесночным густым йогуртом.
+
+Время карточки: **15 мин**. Шаги: 1) «Промой портулак»: без отсчёта; 2) «Смешай соус»: без отсчёта; 3) «Соедини»: без отсчёта; 4) «Подай»: без отсчёта.
+
+
+### 58. Турецкий картофельный салат
+
+Турецкий картофельный салат: картофель, сумах, лимон, петрушка и зелёный лук, без майонеза.
+
+Время карточки: **45 мин**. Шаги: 1) «Отвари картофель»: 25 мин; 2) «Нарежь»: без отсчёта; 3) «Смешай специи»: без отсчёта; 4) «Соедини»: без отсчёта.
+
+
+### 59. Красная капуста с лимоном
+
+Красная капуста: тонкая соломка массируется с лимоном и солью, вкус масляно-кислый; варить не надо.
+
+Время карточки: **25 мин**. Шаги: 1) «Нашинкуй»: без отсчёта; 2) «Посоли и разомни»: 4 мин; 3) «Добавь уксус»: без отсчёта; 4) «Дай постоять»: 10 мин.
+
+
+### 60. Морковь с чесночным йогуртом (хавуч таратор)
+
+Хавуч таратор: морковь сначала мягко жарится и остывает, затем йогурт с чесноком; введён 10-минутный холодный отдых.
+
+Время карточки: **45 мин**. Шаги: 1) «Натри морковь»: без отсчёта; 2) «Обжарь»: 9 мин; 3) «Сделай соус»: без отсчёта; 4) «Собери»: без отсчёта; 5) «Выдержи и охлади»: 10 мин.
+
+
+### 61. Табуле с петрушкой и булгуром
+
+Ливанский табуле: зелени существенно больше булгура, помидор и лук мелко, лимон с маслом.
+
+Время карточки: **35 мин**. Шаги: 1) «Подготовь булгур»: 15 мин; 2) «Наруби зелень»: без отсчёта; 3) «Нарежь томаты»: без отсчёта; 4) «Смешай»: без отсчёта.
+
+
+### 62. Фаттуш с хрустящей питой
+
+Фаттуш: овощи и зелень плюс поджаренная пита только в самом конце, сумах и гранатовый соус.
+
+Время карточки: **30 мин**. Шаги: 1) «Сделай питу хрустящей»: 8 мин; 2) «Нарежь овощи»: без отсчёта; 3) «Смешай заправку»: без отсчёта; 4) «Заправь»: без отсчёта.
+
+
+### 63. Рахеб из печёных баклажанов
+
+Рахеб: печёный дымный баклажан остаётся кусочками, смешивается с томатом, луком и зеленью.
+
+Время карточки: **60 мин**. Шаги: 1) «Запеки баклажаны»: 35 мин; 2) «Очисти»: без отсчёта; 3) «Нарежь свежее»: без отсчёта; 4) «Заправь»: без отсчёта.
+
+
+### 64. Малфуф с капустой и лимоном
+
+Малфуф: сырой тонко шинкованный белокочанный салат с чесноком, лимоном и мятой.
+
+Время карточки: **20 мин**. Шаги: 1) «Нашинкуй»: без отсчёта; 2) «Разомни»: без отсчёта; 3) «Разотри заправку»: без отсчёта; 4) «Собери»: 5 мин.
+
+
+### 65. Огурцы с йогуртом и мятой
+
+Лабан ва хияр: свежий огурец, йогурт, мята и чеснок, чуть разбавить водой лишь при необходимости.
+
+Время карточки: **15 мин**. Шаги: 1) «Подготовь огурец»: без отсчёта; 2) «Сделай основу»: без отсчёта; 3) «Добавь мяту»: без отсчёта; 4) «Охлади»: 5 мин.
+
+
+### 66. Ливанский картофельный салат
+
+Ливанский картофельный: картофель с зелёным луком, мятой, петрушкой, лимоном, оливковым маслом.
+
+Время карточки: **45 мин**. Шаги: 1) «Свари картофель»: 25 мин; 2) «Нарежь много зелени»: без отсчёта; 3) «Сделай соус»: без отсчёта; 4) «Соедини»: без отсчёта.
+
+
+### 67. Стручковая фасоль с лимоном
+
+Ливанская зелёная фасоль: бланшированная фасоль, чеснок, лимон, красный лук, петрушка и масло.
+
+Время карточки: **35 мин**. Шаги: 1) «Подготовь стручки»: без отсчёта; 2) «Отвари до готовности»: 9 мин; 3) «Разотри соус»: без отсчёта; 4) «Соедини»: без отсчёта.
+
+
+### 68. Салат из нута с зеленью
+
+Ливанский нут: полностью сваренные бобы, лимон, масло и зелень; в источниках разные виды лука и овощи.
+
+Время карточки: **20 мин**. Шаги: 1) «Промой нут»: без отсчёта; 2) «Нарежь»: без отсчёта; 3) «Смешай заправку»: без отсчёта; 4) «Соедини»: 10 мин.
+
+
+### 69. Салат из рукколы с сумахом
+
+Жаржир: свежая руккола, красный лук, томат, сумах и лимон с маслом; орехи/гранат бывают вариацией.
+
+Время карточки: **15 мин**. Шаги: 1) «Подготовь зелень»: без отсчёта; 2) «Нарежь»: без отсчёта; 3) «Смешай соус»: без отсчёта; 4) «Собери»: без отсчёта.
+
+
+### 70. Свежий зелёный тимьян с луком
+
+Зелёный тимьян: только свежая пищевая зелень заатара, а не сухая смесь специй; лук, масло и лимон.
+
+Время карточки: **15 мин**. Шаги: 1) «Отдели зелень»: без отсчёта; 2) «Нарежь»: без отсчёта; 3) «Заправь»: без отсчёта; 4) «Соедини»: без отсчёта.
+
+
+### 71. Суномоно с огурцами
+
+Суномоно: огурец отжимают, вакаме размачивают, рисовый уксус подслащивают, подают прохладным.
+
+Время карточки: **25 мин**. Шаги: 1) «Нарежь»: 5 мин; 2) «Размочи»: 5 мин; 3) «Смешай соус»: без отсчёта; 4) «Собери»: без отсчёта.
+
+
+### 72. Вакаме с кунжутом
+
+Вакаме: сушёные водоросли размочены, кунжут, рисовый уксус, соевый соус и кунжутное масло.
+
+Время карточки: **20 мин**. Шаги: 1) «Размочи»: 5 мин; 2) «Разотри кунжут»: без отсчёта; 3) «Смешай соус»: без отсчёта; 4) «Заправь»: без отсчёта.
+
+
+### 73. Гома-аэ из шпината
+
+Гома-аэ: шпинат коротко бланшируют, отжимают и смешивают с густым тёртым кунжутно-соевым соусом.
+
+Время карточки: **20 мин**. Шаги: 1) «Промой»: без отсчёта; 2) «Бланшируй»: 1 мин; 3) «Сделай пасту»: без отсчёта; 4) «Соедини»: без отсчёта.
+
+
+### 74. Японский картофельный салат
+
+Японский картофельный: часть картофеля размята, огурец отжат, яйцо, морковь, ветчина и японский майонез.
+
+Время карточки: **80 мин**. Шаги: 1) «Отвари картофель»: 25 мин; 2) «Отвари морковь»: 15 мин; 3) «Отвари яйцо»: 10 мин; 4) «Разомни»: без отсчёта; 5) «Подготовь добавки»: без отсчёта; 6) «Собери»: 15 мин.
+
+
+### 75. Харусаме с прозрачной лапшой
+
+Харусаме: прозрачную лапшу готовят по упаковке, охлаждают и заправляют кисло-сладким соусом.
+
+Время карточки: **35 мин**. Шаги: 1) «Приготовь лапшу»: 4 мин; 2) «Нарежь тонко»: без отсчёта; 3) «Сделай омлет»: 2 мин; 4) «Заправь»: без отсчёта.
+
+
+### 76. Салат гобо из корня лопуха
+
+Гобо: корень лопуха, морковь, кунжут и японский майонез; корни отвариваются до упругости.
+
+Время карточки: **40 мин**. Шаги: 1) «Подготовь гобо»: 5 мин; 2) «Отвари морковь»: 1 мин; 3) «Отвари гобо»: 5 мин; 4) «Сделай соус»: без отсчёта; 5) «Заправь»: без отсчёта.
+
+
+### 77. Сира-аэ с тофу и стручковой фасолью
+
+Сира-аэ: отжатый тофу с кунжутом и мисо обволакивает бланшированную фасоль и морковь.
+
+Время карточки: **35 мин**. Шаги: 1) «Отожми тофу»: 15 мин; 2) «Отвари фасоль»: 7 мин; 3) «Отвари морковь»: 3 мин; 4) «Приготовь заправку»: без отсчёта; 5) «Собери»: без отсчёта.
+
+
+### 78. Кабоча, салат из японской тыквы
+
+Кабоча: тыква сварена на пару и слегка размята, не жидкое пюре, с огурцом, луком и японским майонезом.
+
+Время карточки: **45 мин**. Шаги: 1) «Разделай»: без отсчёта; 2) «Приготовь»: 15 мин; 3) «Подготовь огурец»: без отсчёта; 4) «Соедини»: без отсчёта.
+
+
+### 79. Тофу с кунжутным понзу
+
+Тофу и понзу: мягкий шелковый тофу, вакаме, салат, кунжутная кислая заправка; источники отличаются по овощам.
+
+Время карточки: **15 мин**. Шаги: 1) «Осуши тофу»: без отсчёта; 2) «Подготовь зелень»: без отсчёта; 3) «Сделай соус»: без отсчёта; 4) «Собери»: без отсчёта.
+
+
+### 80. Салат с холодной лапшой соба
+
+Соба: гречневую лапшу отваривают, промывают холодной водой и соединяют с овощной соломкой и кунжутной заправкой.
+
+Время карточки: **35 мин**. Шаги: 1) «Свари соба»: 6 мин; 2) «Нарежь овощи»: без отсчёта; 3) «Взбей соус»: без отсчёта; 4) «Собери»: без отсчёта.
+
+
+### 81. Сом там из зелёной папайи
+
+Сом там: именно зеленая папайя, длинная фасоль, помидор, арахис, сушеные креветки, рыбный соус, лайм и ступка.
+
+Время карточки: **25 мин**. Шаги: 1) «Настругай папайю»: без отсчёта; 2) «Разотри приправы»: без отсчёта; 3) «Добавь овощи»: без отсчёта; 4) «Соедини»: без отсчёта.
+
+
+### 82. Ям вун сен с фунчозой
+
+Ям вун сен: стеклянная лапша, полностью приготовленный свиной фарш и креветки, лайм, рыбный соус, чили.
+
+Время карточки: **35 мин**. Шаги: 1) «Приготовь свинину»: 7 мин; 2) «Отвари креветки»: 4 мин; 3) «Свари лапшу»: 4 мин; 4) «Сделай ям»: без отсчёта; 5) «Собери»: без отсчёта.
+
+
+### 83. Ларб му со свининой
+
+Ларб му: готовый свиной фарш 71°C, жареная рисовая мука, лайм, мята, шалот, рыбный соус.
+
+Время карточки: **25 мин**. Шаги: 1) «Приготовь фарш»: 8 мин; 2) «Нарежь зелень»: без отсчёта; 3) «Смешай соус»: без отсчёта; 4) «Заверши»: без отсчёта.
+
+
+### 84. Нам ток с говядиной
+
+Нам ток: гриль-говядина, рисовый жареный порошок, мята, шалот, лайм; цельный стейк 63°C и отдых.
+
+Время карточки: **40 мин**. Шаги: 1) «Обжарь говядину»: 10 мин; 2) «Дай мясу отдохнуть»: 5 мин; 3) «Нарежь»: без отсчёта; 4) «Сделай заправку»: без отсчёта; 5) «Собери»: без отсчёта.
+
+
+### 85. Ям сом-о с помело
+
+Помело ям: очищенная от мембран мякоть, готовые креветки, орехи, кокос, лайм и рыбный соус.
+
+Время карточки: **35 мин**. Шаги: 1) «Подготовь помело»: без отсчёта; 2) «Приготовь креветки»: 4 мин; 3) «Обжарь сухое»: без отсчёта; 4) «Собери»: без отсчёта.
+
+
+### 86. Ям туа пу с крылатой фасолью
+
+Крылатая фасоль ям: бланшированные ребристые бобы, креветки, кокосовые сливки, арахис, острый соус.
+
+Время карточки: **45 мин**. Шаги: 1) «Отвари фасоль»: 3 мин; 2) «Отвари креветки»: 4 мин; 3) «Прогрей кокосовые сливки»: 2 мин; 4) «Сделай соус»: 2 мин; 5) «Собери»: без отсчёта.
+
+
+### 87. Ям пла дук фу с хрустящей рыбой
+
+Ям пла дук фу: приготовленная и высушенная мякоть сома жарится в воздушный хруст, манго-салат отдельно.
+
+Время карточки: **60 мин**. Шаги: 1) «Запеки сома до полной готовности»: 20 мин; 2) «Разбери и подсуши мякоть»: 10 мин; 3) «Приготовь фритюр»: 4 мин; 4) «Сделай манговый ям»: без отсчёта; 5) «Подай»: без отсчёта.
+
+
+### 88. Ям кай дао с жареным яйцом
+
+Ям кай дао: жареное до хруста яйцо, кислый рыбно-лаймовый соус с овощами, подача сразу.
+
+Время карточки: **25 мин**. Шаги: 1) «Поджарь яйца»: 3 мин; 2) «Нарежь»: без отсчёта; 3) «Сделай соус»: без отсчёта; 4) «Соедини»: без отсчёта.
+
+
+### 89. Ям мамуанг с зелёным манго
+
+Ям мамуанг: твёрдое кислое зелёное манго, приготовленные креветки, арахис, шалот и острый рыбно-лаймовый соус.
+
+Время карточки: **25 мин**. Шаги: 1) «Настругай манго»: без отсчёта; 2) «Приготовь креветки»: 4 мин; 3) «Подготовь добавки»: без отсчёта; 4) «Смешай»: без отсчёта.
+
+
+### 90. Кхао ям с рисом и травами
+
+Кхао ям: варёный рис, нарезанные травы и овощи, кокос, сушёные креветки и традиционный nam budu.
+
+Время карточки: **60 мин**. Шаги: 1) «Свари рис»: 15 мин; 2) «Подготовь зелень»: без отсчёта; 3) «Поджарь кокос»: без отсчёта; 4) «Собери»: без отсчёта.
+
+
+### 91. Кобб с курицей и авокадо
+
+Кобб: полосами на листьях отдельно курица, бекон, яйцо, сыр с плесенью, авокадо и томат.
+
+Время карточки: **45 мин**. Шаги: 1) «Приготовь курицу»: 12 мин; 2) «Свари яйца»: 10 мин; 3) «Обжарь бекон»: 7 мин; 4) «Нарежь»: без отсчёта; 5) «Собери полосами»: без отсчёта.
+
+
+### 92. Вальдорф с яблоком и сельдереем
+
+Вальдорф: яблоки, сельдерей, орехи, виноград и майонезная заправка, классический исходный вариант был проще.
+
+Время карточки: **20 мин**. Шаги: 1) «Нарежь яблоки»: без отсчёта; 2) «Подготовь сельдерей»: без отсчёта; 3) «Добавь орехи»: без отсчёта; 4) «Заправь»: без отсчёта.
+
+
+### 93. Шеф-салат с ветчиной и сыром
+
+Шеф-салат: ветчина, готовая индейка, швейцарский сыр, яйцо и овощи с винегретом, полосками.
+
+Время карточки: **30 мин**. Шаги: 1) «Свари яйца»: 10 мин; 2) «Нарежь полосками»: без отсчёта; 3) «Подготовь зелень»: без отсчёта; 4) «Собери»: без отсчёта.
+
+
+### 94. Ведж с айсбергом и голубым сыром
+
+Ведж: крупный клин салата айсберг под сырной кремовой заправкой с жареным беконом и помидором.
+
+Время карточки: **20 мин**. Шаги: 1) «Подготовь айсберг»: без отсчёта; 2) «Приготовь бекон»: 7 мин; 3) «Сделай заправку»: без отсчёта; 4) «Собери»: без отсчёта.
+
+
+### 95. Коул-слоу из капусты
+
+Коул-слоу: мелкая сырая капуста и морковь с майонезом, яблочным уксусом, горчицей и небольшим сахаром.
+
+Время карточки: **25 мин**. Шаги: 1) «Нашинкуй»: без отсчёта; 2) «Смешай соус»: без отсчёта; 3) «Заправь»: без отсчёта; 4) «Охлади»: 15 мин.
+
+
+### 96. Американский макаронный салат
+
+Американский макаронный: локти, сельдерей, лук, маринованные огурцы, майонез, горчица и уксус, холодный отдых 60мин.
+
+Время карточки: **90 мин**. Шаги: 1) «Отвари макароны»: 10 мин; 2) «Нарежь овощи»: без отсчёта; 3) «Сделай заправку»: без отсчёта; 4) «Соедини»: 60 мин.
+
+
+### 97. Американский картофельный салат
+
+Американский картофельный: восковой картофель, яйца, сельдерей, огурцы, майонез и горчица, холодная выдержка.
+
+Время карточки: **80 мин**. Шаги: 1) «Отвари картофель»: 25 мин; 2) «Отвари яйца»: 10 мин; 3) «Нарежь»: без отсчёта; 4) «Смешай соус»: без отсчёта; 5) «Заправь»: 30 мин.
+
+
+### 98. Семислойный салат
+
+Семислойный: листовой салат, горошек, красный лук, томат, чеддер, заправка, бекон; 30мин быстрый вариант, классика 4+ч.
+
+Время карточки: **55 мин**. Шаги: 1) «Подготовь продукты»: без отсчёта; 2) «Приготовь бекон»: 7 мин; 3) «Уложи семь слоёв»: без отсчёта; 4) «Охлади»: 30 мин.
+
+
+### 99. Брокколи с беконом
+
+Брокколи и бекон: сырая мелко нарезанная брокколи с изюмом, семечками, красным луком и майонезной заправкой.
+
+Время карточки: **25 мин**. Шаги: 1) «Подготовь брокколи»: 1 мин; 2) «Обжарь бекон»: 7 мин; 3) «Смешай соус»: без отсчёта; 4) «Заправь»: без отсчёта.
+
+
+### 100. Луи с креветками
+
+Креветки Луи: готовые креветки, салат айсберг, яйца, томат, огурец, авокадо и розовая майонезная заправка.
+
+Время карточки: **40 мин**. Шаги: 1) «Приготовь креветки»: 4 мин; 2) «Свари яйца»: 10 мин; 3) «Смешай Луи-соус»: без отсчёта; 4) «Собери»: без отсчёта.
+
+
+
+## Индивидуальный реестр 270 источников
+
+`СОДЕРЖАТЕЛЬНАЯ СВЕРКА ОСНОВЫ` означает конкретное подтверждение базовых ингредиентов, техники или расхождения с источником, зафиксированное в ходе этой проверки; **это не утверждение точности всех граммовок**. `НЕ ЗАКРЫТО ПОЛНОЙ СВЕРКОЙ` означает отсутствие достаточного протокола независимого сопоставления полного текста конкретной страницы. Действующие исправленные адреса взяты из последнего JSON.
+
+| № | Источник | URL | Статус | Конкретный результат / оставшаяся задача |
+|---:|---:|---|---|---|
+| 11 | 1 | [Рецепт](https://www.lacucinaitaliana.it/ricetta/antipasti/caprese/) | НЕ ЗАКРЫТО ПОЛНОЙ СВЕРКОЙ | Ссылку включили в аудит; требуется документировать точное совпадение ингредиентов, метода, времени и пропорций по полному тексту страницы. |
+| 11 | 2 | [Рецепт](https://www.cucchiaio.it/ricetta/ricetta-caprese/) | СОДЕРЖАТЕЛЬНАЯ СВЕРКА ОСНОВЫ | Уточнён классический капрезе без хлеба и добавок. |
+| 11 | 3 | [Рецепт](https://blog.giallozafferano.it/studentiaifornelli/insalata-caprese-ricetta/) | НЕ ЗАКРЫТО ПОЛНОЙ СВЕРКОЙ | Ссылку включили в аудит; требуется документировать точное совпадение ингредиентов, метода, времени и пропорций по полному тексту страницы. |
+| 12 | 1 | [Рецепт](https://www.lacucinaitaliana.it/ricetta/antipasti/panzanella-ricetta-classica/) | СОДЕРЖАТЕЛЬНАЯ СВЕРКА ОСНОВЫ | Тосканский хлеб и овощи; расхождение с короткой выдержкой исправлено. |
+| 12 | 2 | [Рецепт](https://www.cucchiaio.it/ricetta/panzanella/) | СОДЕРЖАТЕЛЬНАЯ СВЕРКА ОСНОВЫ | Длительное настаивание хлеба в соке овощей, вариант времени. |
+| 12 | 3 | [Рецепт](https://blog.giallozafferano.it/pierobenigni/panzanella-toscana/) | СОДЕРЖАТЕЛЬНАЯ СВЕРКА ОСНОВЫ | Настаивание не менее часа; наш таймер 60 минут. |
+| 13 | 1 | [Рецепт](https://www.cucchiaio.it/ricetta/insalata-di-mare/) | НЕ ЗАКРЫТО ПОЛНОЙ СВЕРКОЙ | Ссылку включили в аудит; требуется документировать точное совпадение ингредиентов, метода, времени и пропорций по полному тексту страницы. |
+| 13 | 2 | [Рецепт](https://blog.giallozafferano.it/ilchiccodimais/insalata-di-mare/) | НЕ ЗАКРЫТО ПОЛНОЙ СВЕРКОЙ | Ссылку включили в аудит; требуется документировать точное совпадение ингредиентов, метода, времени и пропорций по полному тексту страницы. |
+| 13 | 3 | [Рецепт](https://www.lacucinaitaliana.it/ricetta/antipasti/insalata-di-mare/) | НЕ ЗАКРЫТО ПОЛНОЙ СВЕРКОЙ | Ссылку включили в аудит; требуется документировать точное совпадение ингредиентов, метода, времени и пропорций по полному тексту страницы. |
+| 14 | 1 | [Рецепт](https://www.cucchiaio.it/ricetta/ricetta-insalata-di-polpo-con-patate/) | НЕ ЗАКРЫТО ПОЛНОЙ СВЕРКОЙ | Ссылку включили в аудит; требуется документировать точное совпадение ингредиентов, метода, времени и пропорций по полному тексту страницы. |
+| 14 | 2 | [Рецепт](https://blog.giallozafferano.it/lemieloverie/ricetta-insalata-di-polpo-e-patate/) | НЕ ЗАКРЫТО ПОЛНОЙ СВЕРКОЙ | Ссылку включили в аудит; требуется документировать точное совпадение ингредиентов, метода, времени и пропорций по полному тексту страницы. |
+| 14 | 3 | [Рецепт](https://www.ilcuoreinpentola.it/ricette/ricette-delle-feste/insalata-di-polpo-e-patate/) | СОДЕРЖАТЕЛЬНАЯ СВЕРКА ОСНОВЫ | Отварной осьминог, картофель, петрушка и лимон. |
+| 15 | 1 | [Рецепт](https://www.lacucinaitaliana.it/ricetta/insalata-finocchi-arance-olive-nere/) | НЕ ЗАКРЫТО ПОЛНОЙ СВЕРКОЙ | Ссылку включили в аудит; требуется документировать точное совпадение ингредиентов, метода, времени и пропорций по полному тексту страницы. |
+| 15 | 2 | [Рецепт](https://www.cucchiaio.it/ricetta/insalata-di-finocchi-e-arance/) | НЕ ЗАКРЫТО ПОЛНОЙ СВЕРКОЙ | Ссылку включили в аудит; требуется документировать точное совпадение ингредиентов, метода, времени и пропорций по полному тексту страницы. |
+| 15 | 3 | [Рецепт](https://blog.giallozafferano.it/incucinaconmara/insalata-di-finocchi-arance-e-olive-nere/) | СОДЕРЖАТЕЛЬНАЯ СВЕРКА ОСНОВЫ | Прямой рецепт фенхеля, апельсина и чёрных оливок. |
+| 16 | 1 | [Рецепт](https://www.lacucinaitaliana.it/ricetta/antipasti/insalata-di-rinforzo-la-ricetta-della-vigilia/) | НЕ ЗАКРЫТО ПОЛНОЙ СВЕРКОЙ | Ссылку включили в аудит; требуется документировать точное совпадение ингредиентов, метода, времени и пропорций по полному тексту страницы. |
+| 16 | 2 | [Рецепт](https://www.lospicchiodaglio.it/ricetta/insalata-di-rinforzo) | НЕ ЗАКРЫТО ПОЛНОЙ СВЕРКОЙ | Ссылку включили в аудит; требуется документировать точное совпадение ингредиентов, метода, времени и пропорций по полному тексту страницы. |
+| 16 | 3 | [Рецепт](https://www.napoli-turistica.com/insalata-di-rinforzo-il-contorno-napoletano-delle-feste/) | СОДЕРЖАТЕЛЬНАЯ СВЕРКА ОСНОВЫ | Неаполитанские рождественские продукты и ночная выдержка, вместо посторонней индейки. |
+| 17 | 1 | [Рецепт](https://www.lacucinaitaliana.it/ricetta/secondi/insalata-di-puntarelle/) | НЕ ЗАКРЫТО ПОЛНОЙ СВЕРКОЙ | Ссылку включили в аудит; требуется документировать точное совпадение ингредиентов, метода, времени и пропорций по полному тексту страницы. |
+| 17 | 2 | [Рецепт](https://orto.ch/ricetta/puntarelle-alla-romana/) | НЕ ЗАКРЫТО ПОЛНОЙ СВЕРКОЙ | Ссылку включили в аудит; требуется документировать точное совпадение ингредиентов, метода, времени и пропорций по полному тексту страницы. |
+| 17 | 3 | [Рецепт](https://www.cucchiaio.it/ricetta/ricetta-insalata-puntarelle/) | СОДЕРЖАТЕЛЬНАЯ СВЕРКА ОСНОВЫ | Пунтарелле с анчоусами; час в ледяной воде. |
+| 18 | 1 | [Рецепт](https://www.lacucinaitaliana.it/ricetta/piatti-unici/insalata-di-riso-classica/) | НЕ ЗАКРЫТО ПОЛНОЙ СВЕРКОЙ | Ссылку включили в аудит; требуется документировать точное совпадение ингредиентов, метода, времени и пропорций по полному тексту страницы. |
+| 18 | 2 | [Рецепт](https://www.cucchiaio.it/ricetta/ricetta-insalata-riso/) | СОДЕРЖАТЕЛЬНАЯ СВЕРКА ОСНОВЫ | Рис с тунцом/оливками и овощами, некоторые добавки отличаются. |
+| 18 | 3 | [Рецепт](https://ricette.giallozafferano.it/Insalata-di-riso-classica.html) | СОДЕРЖАТЕЛЬНАЯ СВЕРКА ОСНОВЫ | Рисовый салат, горошек, тунец, томаты; моцарелла и кукуруза необязательны. |
+| 19 | 1 | [Рецепт](https://crai.it/ricette/insalata-di-farro) | СОДЕРЖАТЕЛЬНАЯ СВЕРКА ОСНОВЫ | Фарро и овощи; авторская вариация состава. |
+| 19 | 2 | [Рецепт](https://blog.giallozafferano.it/allacciateilgrembiule/insalata-di-farro-con-verdure/) | НЕ ЗАКРЫТО ПОЛНОЙ СВЕРКОЙ | Ссылку включили в аудит; требуется документировать точное совпадение ингредиентов, метода, времени и пропорций по полному тексту страницы. |
+| 19 | 3 | [Рецепт](https://www.basilicosecco.com/insalata-di-farro-con-verdure/) | СОДЕРЖАТЕЛЬНАЯ СВЕРКА ОСНОВЫ | Фарро, кабачок, перец, томат, базилик; источник готовит овощи дольше. |
+| 20 | 1 | [Рецепт](https://www.ilcuoreinpentola.it/ricette/piatti-unici/insalata-di-tonno-e-fagioli/) | НЕ ЗАКРЫТО ПОЛНОЙ СВЕРКОЙ | Ссылку включили в аудит; требуется документировать точное совпадение ингредиентов, метода, времени и пропорций по полному тексту страницы. |
+| 20 | 2 | [Рецепт](https://www.lospicchiodaglio.it/ricetta/insalata-fagioli-spagna-tonno-cipolla) | НЕ ЗАКРЫТО ПОЛНОЙ СВЕРКОЙ | Ссылку включили в аудит; требуется документировать точное совпадение ингредиентов, метода, времени и пропорций по полному тексту страницы. |
+| 20 | 3 | [Рецепт](https://www.cucchiaio.it/ricetta/insalata-di-fagioli-e-tonno/) | НЕ ЗАКРЫТО ПОЛНОЙ СВЕРКОЙ | Ссылку включили в аудит; требуется документировать точное совпадение ингредиентов, метода, времени и пропорций по полному тексту страницы. |
+| 21 | 1 | [Рецепт](https://www.explorenicecotedazur.com/explorer/art-de-vivre/gastronomie-et-terroir/recettes-de-cuisine-nicoise/la-salade-nicoise/) | НЕ ЗАКРЫТО ПОЛНОЙ СВЕРКОЙ | Ссылку включили в аудит; требуется документировать точное совпадение ингредиентов, метода, времени и пропорций по полному тексту страницы. |
+| 21 | 2 | [Рецепт](https://www.nice-cooking.com/fr/salade-nicoise/) | СОДЕРЖАТЕЛЬНАЯ СВЕРКА ОСНОВЫ | Традиционный Нисуаз без вареного картофеля, только сырые овощи. |
+| 21 | 3 | [Рецепт](https://www.allodocteurs.fr/la-recette-traditionnelle-de-la-salade-nicoise-37721.html) | СОДЕРЖАТЕЛЬНАЯ СВЕРКА ОСНОВЫ | Нисуаз от шефа: сырые овощи, яйца, рыба и оливки. |
+| 22 | 1 | [Рецепт](https://ioumi.fr/recettes/salade-lyonnaise.html) | НЕ ЗАКРЫТО ПОЛНОЙ СВЕРКОЙ | Ссылку включили в аудит; требуется документировать точное совпадение ингредиентов, метода, времени и пропорций по полному тексту страницы. |
+| 22 | 2 | [Рецепт](https://www.coursesu.com/coursesu-lyon-chezvous-salade-lyonnaise.html) | НЕ ЗАКРЫТО ПОЛНОЙ СВЕРКОЙ | Ссылку включили в аудит; требуется документировать точное совпадение ингредиентов, метода, времени и пропорций по полному тексту страницы. |
+| 22 | 3 | [Рецепт](https://info-lyon.fr/salade-lyonnaise/) | НЕ ЗАКРЫТО ПОЛНОЙ СВЕРКОЙ | Ссылку включили в аудит; требуется документировать точное совпадение ингредиентов, метода, времени и пропорций по полному тексту страницы. |
+| 23 | 1 | [Рецепт](https://www.pays-bergerac-tourisme.com/fr/deguster/les-recettes/salade-perigourdine) | НЕ ЗАКРЫТО ПОЛНОЙ СВЕРКОЙ | Ссылку включили в аудит; требуется документировать точное совпадение ингредиентов, метода, времени и пропорций по полному тексту страницы. |
+| 23 | 2 | [Рецепт](https://www.noixduperigord.com/fr/les-recettes/entrees/salade-perigourdine) | СОДЕРЖАТЕЛЬНАЯ СВЕРКА ОСНОВЫ | Магре и утиные желудочки, отличия от нашей куриной печени документированы. |
+| 23 | 3 | [Рецепт](https://www.marmiton.org/recettes/recette_salade-perigourdine-aux-foies-de-volaille_37573.aspx) | НЕ ЗАКРЫТО ПОЛНОЙ СВЕРКОЙ | Ссылку включили в аудит; требуется документировать точное совпадение ингредиентов, метода, времени и пропорций по полному тексту страницы. |
+| 24 | 1 | [Рецепт](https://www.atelierdeschefs.fr/recettes/32479/la-salade-de-chevre-chaud-au-miel/) | НЕ ЗАКРЫТО ПОЛНОЙ СВЕРКОЙ | Ссылку включили в аудит; требуется документировать точное совпадение ингредиентов, метода, времени и пропорций по полному тексту страницы. |
+| 24 | 2 | [Рецепт](https://dans-lassiette.aveyron.fr/recette/salade-de-chevre-chaud-au-miel-et-aux-noix) | НЕ ЗАКРЫТО ПОЛНОЙ СВЕРКОЙ | Ссылку включили в аудит; требуется документировать точное совпадение ингредиентов, метода, времени и пропорций по полному тексту страницы. |
+| 24 | 3 | [Рецепт](https://ioumi.fr/recettes/salade-de-chevre-chaud.html) | НЕ ЗАКРЫТО ПОЛНОЙ СВЕРКОЙ | Ссылку включили в аудит; требуется документировать точное совпадение ингредиентов, метода, времени и пропорций по полному тексту страницы. |
+| 25 | 1 | [Рецепт](https://www.academiedugout.fr/recettes/celeri-remoulade_6519_2) | НЕ ЗАКРЫТО ПОЛНОЙ СВЕРКОЙ | Ссылку включили в аудит; требуется документировать точное совпадение ингредиентов, метода, времени и пропорций по полному тексту страницы. |
+| 25 | 2 | [Рецепт](https://www.atelierdeschefs.fr/recettes/17762/celeri-remoulade/) | НЕ ЗАКРЫТО ПОЛНОЙ СВЕРКОЙ | Ссылку включили в аудит; требуется документировать точное совпадение ингредиентов, метода, времени и пропорций по полному тексту страницы. |
+| 25 | 3 | [Рецепт](https://www.aujardin.info/recettes/celeri-remoulade.php) | НЕ ЗАКРЫТО ПОЛНОЙ СВЕРКОЙ | Ссылку включили в аудит; требуется документировать точное совпадение ингредиентов, метода, времени и пропорций по полному тексту страницы. |
+| 26 | 1 | [Рецепт](https://www.sainsburysmagazine.co.uk/recipes/mains/french-carrot-salad) | СОДЕРЖАТЕЛЬНАЯ СВЕРКА ОСНОВЫ | Морковь и дижонский винегрет. |
+| 26 | 2 | [Рецепт](https://cantines.nice.fr/actualite/la-recette-du-chef-ratatouille-les-carottes-rapees-a-la-vinaigrette-moutardee) | СОДЕРЖАТЕЛЬНАЯ СВЕРКА ОСНОВЫ | Морковь с горчичным винегретом и петрушкой. |
+| 26 | 3 | [Рецепт](https://www.marieclaire.fr/cuisine/carottes-rapees-toutes-simples%2C1521578.asp) | СОДЕРЖАТЕЛЬНАЯ СВЕРКА ОСНОВЫ | Натёртая морковь и винная заправка. |
+| 27 | 1 | [Рецепт](https://www.cuisinealafrancaise.com/fr/recettes/aperitif-et-entrees/salades-et-crudites/salade-de-lentilles-vertes-du-puy.html) | НЕ ЗАКРЫТО ПОЛНОЙ СВЕРКОЙ | Ссылку включили в аудит; требуется документировать точное совпадение ингредиентов, метода, времени и пропорций по полному тексту страницы. |
+| 27 | 2 | [Рецепт](https://www.julieandrieu.com/recettes/cuire-une-salade-de-lentilles) | НЕ ЗАКРЫТО ПОЛНОЙ СВЕРКОЙ | Ссылку включили в аудит; требуется документировать точное совпадение ингредиентов, метода, времени и пропорций по полному тексту страницы. |
+| 27 | 3 | [Рецепт](https://www.legume-sec.com/portfolio-item/salade-lentilles-vertes-du-puy/) | НЕ ЗАКРЫТО ПОЛНОЙ СВЕРКОЙ | Ссылку включили в аудит; требуется документировать точное совпадение ингредиентов, метода, времени и пропорций по полному тексту страницы. |
+| 28 | 1 | [Рецепт](https://frigolade.fr/recettes/salade-de-pommes-de-terre/) | НЕ ЗАКРЫТО ПОЛНОЙ СВЕРКОЙ | Ссылку включили в аудит; требуется документировать точное совпадение ингредиентов, метода, времени и пропорций по полному тексту страницы. |
+| 28 | 2 | [Рецепт](https://ioumi.fr/recettes/salade-de-pommes-de-terre-nouvelles-aux-herbes.html) | СОДЕРЖАТЕЛЬНАЯ СВЕРКА ОСНОВЫ | Тёплый картофель с горчицей и зеленью, без майонеза. |
+| 28 | 3 | [Рецепт](https://cuisinezavecdjouza.fr/salade-pommes-de-terre-aux-herbes/) | СОДЕРЖАТЕЛЬНАЯ СВЕРКА ОСНОВЫ | Картофельный салат с травами и уксусом. |
+| 29 | 1 | [Рецепт](https://www.produitsderegion.fr/magazine/recettes-regionales/la-salade-cauchoise) | СОДЕРЖАТЕЛЬНАЯ СВЕРКА ОСНОВЫ | Кошуаз с черешками сельдерея, не корнем. |
+| 29 | 2 | [Рецепт](https://goedenlekker.nl/fr/blogs/recettes/salade-cauchoise) | СОДЕРЖАТЕЛЬНАЯ СВЕРКА ОСНОВЫ | Региональная версия картофель/ветчина/стебли сельдерея. |
+| 29 | 3 | [Рецепт](https://cuisine-maison-comme-autrefois.blogspot.com/2014/11/recette-de-salade-cauchoise-pommes-de.html) | НЕ ЗАКРЫТО ПОЛНОЙ СВЕРКОЙ | Ссылку включили в аудит; требуется документировать точное совпадение ингредиентов, метода, времени и пропорций по полному тексту страницы. |
+| 30 | 1 | [Рецепт](https://www.leroux.com/recettes/salade-endive-roquefort-noix-avec-sa-vinaigrette-a-la-chicoree/) | НЕ ЗАКРЫТО ПОЛНОЙ СВЕРКОЙ | Ссылку включили в аудит; требуется документировать точное совпадение ингредиентов, метода, времени и пропорций по полному тексту страницы. |
+| 30 | 2 | [Рецепт](https://www.academiedugout.fr/recettes/salade-dendives-noix-et-roquefort-fromage-et-huile_12121_2) | НЕ ЗАКРЫТО ПОЛНОЙ СВЕРКОЙ | Ссылку включили в аудит; требуется документировать точное совпадение ингредиентов, метода, времени и пропорций по полному тексту страницы. |
+| 30 | 3 | [Рецепт](https://frigolade.fr/recettes/salade-endives-roquefort-noix/) | НЕ ЗАКРЫТО ПОЛНОЙ СВЕРКОЙ | Ссылку включили в аудит; требуется документировать точное совпадение ингредиентов, метода, времени и пропорций по полному тексту страницы. |
+| 31 | 1 | [Рецепт](https://canalcocina.es/receta/pipirrana-de-jaen) | СОДЕРЖАТЕЛЬНАЯ СВЕРКА ОСНОВЫ | В Jaén-версии огурец не является обязательным. |
+| 31 | 2 | [Рецепт](https://www.degustajaen.es/recetas/pipirrana-jaen/) | СОДЕРЖАТЕЛЬНАЯ СВЕРКА ОСНОВЫ | Пипиррана из Хаэна без огурца, с эмульсией желтка. |
+| 31 | 3 | [Рецепт](https://www.hogarmania.com/cocina/recetas/ensaladas-verduras/pipirrana-jaen-35145.html) | СОДЕРЖАТЕЛЬНАЯ СВЕРКА ОСНОВЫ | Вариант Хаэна с яйцом и тунцом, огурца нет. |
+| 32 | 1 | [Рецепт](https://www.rtve.es/television/20210519/receta-esgarraet-cocina-valenciana-tradicional/2091100.shtml) | НЕ ЗАКРЫТО ПОЛНОЙ СВЕРКОЙ | Ссылку включили в аудит; требуется документировать точное совпадение ингредиентов, метода, времени и пропорций по полному тексту страницы. |
+| 32 | 2 | [Рецепт](https://elpais.com/gastronomia/recetas/2019/06/10/receta/1560200573_517283.html) | НЕ ЗАКРЫТО ПОЛНОЙ СВЕРКОЙ | Ссылку включили в аудит; требуется документировать точное совпадение ингредиентов, метода, времени и пропорций по полному тексту страницы. |
+| 32 | 3 | [Рецепт](https://www.directoalpaladar.com/recetas-de-pescados-y-mariscos/esgarraet-valenciano-receta-de-semana-santa) | НЕ ЗАКРЫТО ПОЛНОЙ СВЕРКОЙ | Ссылку включили в аудит; требуется документировать точное совпадение ингредиентов, метода, времени и пропорций по полному тексту страницы. |
+| 33 | 1 | [Рецепт](https://canalcocina.es/receta/trampo-mallorquin) | НЕ ЗАКРЫТО ПОЛНОЙ СВЕРКОЙ | Ссылку включили в аудит; требуется документировать точное совпадение ингредиентов, метода, времени и пропорций по полному тексту страницы. |
+| 33 | 2 | [Рецепт](https://elpais.com/gastronomia/recetas/2018/07/11/receta/1531307233_747294.html) | СОДЕРЖАТЕЛЬНАЯ СВЕРКА ОСНОВЫ | Майоркский тремпо: томаты, перец, лук, масло. |
+| 33 | 3 | [Рецепт](https://diariodegastronomia.com/trampo-mallorquin-2/) | НЕ ЗАКРЫТО ПОЛНОЙ СВЕРКОЙ | Ссылку включили в аудит; требуется документировать точное совпадение ингредиентов, метода, времени и пропорций по полному тексту страницы. |
+| 34 | 1 | [Рецепт](https://www.rtve.es/television/20190722/receta-remojon-granadino-dani-garcia/1975863.shtml) | НЕ ЗАКРЫТО ПОЛНОЙ СВЕРКОЙ | Ссылку включили в аудит; требуется документировать точное совпадение ингредиентов, метода, времени и пропорций по полному тексту страницы. |
+| 34 | 2 | [Рецепт](https://www.recetassinlactosa.com/remojon-granadino-ensalada-de-naranja/) | НЕ ЗАКРЫТО ПОЛНОЙ СВЕРКОЙ | Ссылку включили в аудит; требуется документировать точное совпадение ингредиентов, метода, времени и пропорций по полному тексту страницы. |
+| 34 | 3 | [Рецепт](https://recetasdecocina.elmundo.es/2026/03/remojon-granadino-receta-tradicional-y-casera.html) | НЕ ЗАКРЫТО ПОЛНОЙ СВЕРКОЙ | Ссылку включили в аудит; требуется документировать точное совпадение ингредиентов, метода, времени и пропорций по полному тексту страницы. |
+| 35 | 1 | [Рецепт](https://www.consum.es/entrenosotros/empedrat-receta/) | СОДЕРЖАТЕЛЬНАЯ СВЕРКА ОСНОВЫ | Эмпедрат: белая фасоль с треской и овощами. |
+| 35 | 2 | [Рецепт](https://www.gastroteca.cat/en/receptes/empedrat/) | НЕ ЗАКРЫТО ПОЛНОЙ СВЕРКОЙ | Ссылку включили в аудит; требуется документировать точное совпадение ингредиентов, метода, времени и пропорций по полному тексту страницы. |
+| 35 | 3 | [Рецепт](https://www2.cruzroja.es/-/empedrat-ensalada-de-alubias-con-bacalao-sact-recs) | СОДЕРЖАТЕЛЬНАЯ СВЕРКА ОСНОВЫ | Треска, фасоль, перцы, лук, томаты. |
+| 36 | 1 | [Рецепт](https://www.lavanguardia.com/comer/recetas/20220609/8325712/ensalada-xato-receta-platos-tipicos-cocina-catalana.html) | СОДЕРЖАТЕЛЬНАЯ СВЕРКА ОСНОВЫ | Сушеную ñora размачивают 30 минут. |
+| 36 | 2 | [Рецепт](https://www.rtve.es/television/20130826/plantilla-receta-espana-directo/743448.shtml) | НЕ ЗАКРЫТО ПОЛНОЙ СВЕРКОЙ | Ссылку включили в аудит; требуется документировать точное совпадение ингредиентов, метода, времени и пропорций по полному тексту страницы. |
+| 36 | 3 | [Рецепт](https://www.cuina.cat/es/recetas/ensalada-xato_10182213_117.html) | НЕ ЗАКРЫТО ПОЛНОЙ СВЕРКОЙ | Ссылку включили в аудит; требуется документировать точное совпадение ингредиентов, метода, времени и пропорций по полному тексту страницы. |
+| 37 | 1 | [Рецепт](https://www.spain.info/es/receta/esqueixada-bacalao/) | НЕ ЗАКРЫТО ПОЛНОЙ СВЕРКОЙ | Ссылку включили в аудит; требуется документировать точное совпадение ингредиентов, метода, времени и пропорций по полному тексту страницы. |
+| 37 | 2 | [Рецепт](https://elpais.com/gastronomia/recetas/2023-09-08/esqueixada-la-ensalada-catalana-de-bacalao-y-tomate.html) | СОДЕРЖАТЕЛЬНАЯ СВЕРКА ОСНОВЫ | Разорванная треска и томат, перец возможен как вариация. |
+| 37 | 3 | [Рецепт](https://www.directoalpaladar.com/recetas-de-pescados-y-mariscos/esqueixada-bacalao-receta-ensalada-facil-deliciosa-para-dias-verano) | СОДЕРЖАТЕЛЬНАЯ СВЕРКА ОСНОВЫ | Перцы в эскейшаде возможны, треску разрывают вручную. |
+| 38 | 1 | [Рецепт](https://canalcocina.es/receta/ensalada-campera-1) | НЕ ЗАКРЫТО ПОЛНОЙ СВЕРКОЙ | Ссылку включили в аудит; требуется документировать точное совпадение ингредиентов, метода, времени и пропорций по полному тексту страницы. |
+| 38 | 2 | [Рецепт](https://recetivo.com/recetas/ensalada-campera) | НЕ ЗАКРЫТО ПОЛНОЙ СВЕРКОЙ | Ссылку включили в аудит; требуется документировать точное совпадение ингредиентов, метода, времени и пропорций по полному тексту страницы. |
+| 38 | 3 | [Рецепт](https://www.bonviveur.es/recetas/ensalada-campera) | НЕ ЗАКРЫТО ПОЛНОЙ СВЕРКОЙ | Ссылку включили в аудит; требуется документировать точное совпадение ингредиентов, метода, времени и пропорций по полному тексту страницы. |
+| 39 | 1 | [Рецепт](https://www.spain.info/es/receta/mojete-murciano/) | НЕ ЗАКРЫТО ПОЛНОЙ СВЕРКОЙ | Ссылку включили в аудит; требуется документировать точное совпадение ингредиентов, метода, времени и пропорций по полному тексту страницы. |
+| 39 | 2 | [Рецепт](https://www.aceitunastorrent.com/recetas/ensalada-murciana-tradicional-receta-facil-fresca-y-con-tradicion/) | НЕ ЗАКРЫТО ПОЛНОЙ СВЕРКОЙ | Ссылку включили в аудит; требуется документировать точное совпадение ингредиентов, метода, времени и пропорций по полному тексту страницы. |
+| 39 | 3 | [Рецепт](https://www.bonviveur.es/recetas/ensalada-murciana) | НЕ ЗАКРЫТО ПОЛНОЙ СВЕРКОЙ | Ссылку включили в аудит; требуется документировать точное совпадение ингредиентов, метода, времени и пропорций по полному тексту страницы. |
+| 40 | 1 | [Рецепт](https://www.spain.info/es/receta/ensalada-san-isidro/) | НЕ ЗАКРЫТО ПОЛНОЙ СВЕРКОЙ | Ссылку включили в аудит; требуется документировать точное совпадение ингредиентов, метода, времени и пропорций по полному тексту страницы. |
+| 40 | 2 | [Рецепт](https://menudatierra.eco/receta/ensalada-san-isidro/) | НЕ ЗАКРЫТО ПОЛНОЙ СВЕРКОЙ | Ссылку включили в аудит; требуется документировать точное совпадение ингредиентов, метода, времени и пропорций по полному тексту страницы. |
+| 40 | 3 | [Рецепт](https://www.bonviveur.es/recetas/ensalada-de-san-isidro) | НЕ ЗАКРЫТО ПОЛНОЙ СВЕРКОЙ | Ссылку включили в аудит; требуется документировать точное совпадение ингредиентов, метода, времени и пропорций по полному тексту страницы. |
+| 41 | 1 | [Рецепт](https://www.dianekochilas.com/greek-salad/) | СОДЕРЖАТЕЛЬНАЯ СВЕРКА ОСНОВЫ | Классический греческий с цельным ломтиком феты. |
+| 41 | 2 | [Рецепт](https://www.olivetomato.com/authentic-greek-salad/) | НЕ ЗАКРЫТО ПОЛНОЙ СВЕРКОЙ | Ссылку включили в аудит; требуется документировать точное совпадение ингредиентов, метода, времени и пропорций по полному тексту страницы. |
+| 41 | 3 | [Рецепт](https://www.greekboston.com/food/salads/horiatiki-recipe/) | СОДЕРЖАТЕЛЬНАЯ СВЕРКА ОСНОВЫ | Греческий хориатики с сырыми овощами и фетой. |
+| 42 | 1 | [Рецепт](https://www.argiro.gr/en/recipe/dakos-salad/) | НЕ ЗАКРЫТО ПОЛНОЙ СВЕРКОЙ | Ссылку включили в аудит; требуется документировать точное совпадение ингредиентов, метода, времени и пропорций по полному тексту страницы. |
+| 42 | 2 | [Рецепт](https://www.tasteatlas.com/dakos/recipe) | НЕ ЗАКРЫТО ПОЛНОЙ СВЕРКОЙ | Ссылку включили в аудит; требуется документировать точное совпадение ингредиентов, метода, времени и пропорций по полному тексту страницы. |
+| 42 | 3 | [Рецепт](https://www.epikouria.com/recipes/dakos/) | НЕ ЗАКРЫТО ПОЛНОЙ СВЕРКОЙ | Ссылку включили в аудит; требуется документировать точное совпадение ингредиентов, метода, времени и пропорций по полному тексту страницы. |
+| 43 | 1 | [Рецепт](https://www.dianekochilas.com/greek-lettuce-salad-maroulosalata/) | НЕ ЗАКРЫТО ПОЛНОЙ СВЕРКОЙ | Ссылку включили в аудит; требуется документировать точное совпадение ингредиентов, метода, времени и пропорций по полному тексту страницы. |
+| 43 | 2 | [Рецепт](https://www.kalliopiskitchen.com/recipes/marouli-salata/) | НЕ ЗАКРЫТО ПОЛНОЙ СВЕРКОЙ | Ссылку включили в аудит; требуется документировать точное совпадение ингредиентов, метода, времени и пропорций по полному тексту страницы. |
+| 43 | 3 | [Рецепт](https://www.epikouria.com/recipes/maroulosalata/) | НЕ ЗАКРЫТО ПОЛНОЙ СВЕРКОЙ | Ссылку включили в аудит; требуется документировать точное совпадение ингредиентов, метода, времени и пропорций по полному тексту страницы. |
+| 44 | 1 | [Рецепт](https://www.epikouria.com/recipes/horta-vrasta/) | НЕ ЗАКРЫТО ПОЛНОЙ СВЕРКОЙ | Ссылку включили в аудит; требуется документировать точное совпадение ингредиентов, метода, времени и пропорций по полному тексту страницы. |
+| 44 | 2 | [Рецепт](https://www.poupadou.com/blog/en/recipe-horta-vrasta-greek-boiled-leafy-greens-salad/) | НЕ ЗАКРЫТО ПОЛНОЙ СВЕРКОЙ | Ссылку включили в аудит; требуется документировать точное совпадение ингредиентов, метода, времени и пропорций по полному тексту страницы. |
+| 44 | 3 | [Рецепт](https://justrecipes.net/en/recipes/horta-vrasta/) | НЕ ЗАКРЫТО ПОЛНОЙ СВЕРКОЙ | Ссылку включили в аудит; требуется документировать точное совпадение ингредиентов, метода, времени и пропорций по полному тексту страницы. |
+| 45 | 1 | [Рецепт](https://akispetretzikis.com/en/recipe/7129/pantzarosalata) | НЕ ЗАКРЫТО ПОЛНОЙ СВЕРКОЙ | Ссылку включили в аудит; требуется документировать точное совпадение ингредиентов, метода, времени и пропорций по полному тексту страницы. |
+| 45 | 2 | [Рецепт](https://www.kalliopiskitchen.com/recipes/pantzarosalata/) | СОДЕРЖАТЕЛЬНАЯ СВЕРКА ОСНОВЫ | Свёкла с йогуртом и чесноком, грецкие орехи как дополнение. |
+| 45 | 3 | [Рецепт](https://www.dimitrasdishes.com/greek-beet-yogurt-salad-pantzarosalata/) | НЕ ЗАКРЫТО ПОЛНОЙ СВЕРКОЙ | Ссылку включили в аудит; требуется документировать точное совпадение ингредиентов, метода, времени и пропорций по полному тексту страницы. |
+| 46 | 1 | [Рецепт](https://tarasmulticulturaltable.com/patatosalata-herby-potato-salad/) | НЕ ЗАКРЫТО ПОЛНОЙ СВЕРКОЙ | Ссылку включили в аудит; требуется документировать точное совпадение ингредиентов, метода, времени и пропорций по полному тексту страницы. |
+| 46 | 2 | [Рецепт](https://www.athensfoodonfoot.com/recipes/greek-lemon-herb-potato-salad-patatosalata/) | НЕ ЗАКРЫТО ПОЛНОЙ СВЕРКОЙ | Ссылку включили в аудит; требуется документировать точное совпадение ингредиентов, метода, времени и пропорций по полному тексту страницы. |
+| 46 | 3 | [Рецепт](https://www.epikouria.com/recipes/patatosalata/) | НЕ ЗАКРЫТО ПОЛНОЙ СВЕРКОЙ | Ссылку включили в аудит; требуется документировать точное совпадение ингредиентов, метода, времени и пропорций по полному тексту страницы. |
+| 47 | 1 | [Рецепт](https://www.cyprusfoodmuseum.com/en/sylloges/paradosiakes-syntages/white-beans-salad) | НЕ ЗАКРЫТО ПОЛНОЙ СВЕРКОЙ | Ссылку включили в аудит; требуется документировать точное совпадение ингредиентов, метода, времени и пропорций по полному тексту страницы. |
+| 47 | 2 | [Рецепт](https://www.jewishfoodsociety.org/recipes/fassolia-piaz-greek-white-bean-salad) | НЕ ЗАКРЫТО ПОЛНОЙ СВЕРКОЙ | Ссылку включили в аудит; требуется документировать точное совпадение ингредиентов, метода, времени и пропорций по полному тексту страницы. |
+| 47 | 3 | [Рецепт](https://www.greektastes.com/bean-salad-fasolia-xera-salata/) | НЕ ЗАКРЫТО ПОЛНОЙ СВЕРКОЙ | Ссылку включили в аудит; требуется документировать точное совпадение ингредиентов, метода, времени и пропорций по полному тексту страницы. |
+| 48 | 1 | [Рецепт](https://akispetretzikis.com/recipe/politikh-salata) | НЕ ЗАКРЫТО ПОЛНОЙ СВЕРКОЙ | Ссылку включили в аудит; требуется документировать точное совпадение ингредиентов, метода, времени и пропорций по полному тексту страницы. |
+| 48 | 2 | [Рецепт](https://emvolos.gr/cooking-recipes-politiki-salad/) | СОДЕРЖАТЕЛЬНАЯ СВЕРКА ОСНОВЫ | Политики: 15-минутная выдержка допустима. |
+| 48 | 3 | [Рецепт](https://www.monasticrepublic.com/en/recipes/salad/greek-cabbage-salad-politiki) | НЕ ЗАКРЫТО ПОЛНОЙ СВЕРКОЙ | Ссылку включили в аудит; требуется документировать точное совпадение ингредиентов, метода, времени и пропорций по полному тексту страницы. |
+| 49 | 1 | [Рецепт](https://www.kalofagas.ca/2008/10/13/warm-green-bean-salad-%CE%B1%CE%BC%CF%80%CE%B5%CE%BB%CE%BF%CF%86%CE%AC%CF%83%CE%BF%CF%85%CE%BB%CE%B1/) | НЕ ЗАКРЫТО ПОЛНОЙ СВЕРКОЙ | Ссылку включили в аудит; требуется документировать точное совпадение ингредиентов, метода, времени и пропорций по полному тексту страницы. |
+| 49 | 2 | [Рецепт](https://www.greekcookingmadeeasy.com/allrecipes/green-beans-salad?rq=green+beans) | НЕ ЗАКРЫТО ПОЛНОЙ СВЕРКОЙ | Ссылку включили в аудит; требуется документировать точное совпадение ингредиентов, метода, времени и пропорций по полному тексту страницы. |
+| 49 | 3 | [Рецепт](https://cookout.skai.gr/recipes/salata-ampelofasoula) | СОДЕРЖАТЕЛЬНАЯ СВЕРКА ОСНОВЫ | Варёная длинная фасоль и лимонная заправка. |
+| 50 | 1 | [Рецепт](https://akispetretzikis.com/en/recipe/3920/salata-me-mayromatika-fasolia) | НЕ ЗАКРЫТО ПОЛНОЙ СВЕРКОЙ | Ссылку включили в аудит; требуется документировать точное совпадение ингредиентов, метода, времени и пропорций по полному тексту страницы. |
+| 50 | 2 | [Рецепт](https://theeasterncross.com/fasting-recipes/mavromatika) | СОДЕРЖАТЕЛЬНАЯ СВЕРКА ОСНОВЫ | Черноглазая фасоль с овощами и лимоном. |
+| 50 | 3 | [Рецепт](https://www.dianekochilas.com/mavromatika-salata-black-eyed-pea-salad-mastiha-vinaigrette/) | НЕ ЗАКРЫТО ПОЛНОЙ СВЕРКОЙ | Ссылку включили в аудит; требуется документировать точное совпадение ингредиентов, метода, времени и пропорций по полному тексту страницы. |
+| 51 | 1 | [Рецепт](https://www.ktb.gov.tr/EN-99014/shepherds-salad.html) | НЕ ЗАКРЫТО ПОЛНОЙ СВЕРКОЙ | Ссылку включили в аудит; требуется документировать точное совпадение ингредиентов, метода, времени и пропорций по полному тексту страницы. |
+| 51 | 2 | [Рецепт](https://www.splendidtable.org/story/2019/04/29/shepherds-salad) | СОДЕРЖАТЕЛЬНАЯ СВЕРКА ОСНОВЫ | Пастуший салат с мелкой нарезкой свежих овощей. |
+| 51 | 3 | [Рецепт](https://www.unicornsinthekitchen.com/coban-salatasi/) | СОДЕРЖАТЕЛЬНАЯ СВЕРКА ОСНОВЫ | Чобан: томаты, огурец, перец, лук, масло/лимон. |
+| 52 | 1 | [Рецепт](https://tasteofturkiye.org/tr/recipes/gavurdagi-salatasi/) | СОДЕРЖАТЕЛЬНАЯ СВЕРКА ОСНОВЫ | Гавурдагы с гранатовым соусом, орехами, выдержка 30 минут. |
+| 52 | 2 | [Рецепт](https://yemek.com/tarif/gavurdagi/) | НЕ ЗАКРЫТО ПОЛНОЙ СВЕРКОЙ | Ссылку включили в аудит; требуется документировать точное совпадение ингредиентов, метода, времени и пропорций по полному тексту страницы. |
+| 52 | 3 | [Рецепт](https://esenler.bel.tr/esenler-kadin/yemek-tarifleri/gavurdagi-salatasi/) | НЕ ЗАКРЫТО ПОЛНОЙ СВЕРКОЙ | Ссылку включили в аудит; требуется документировать точное совпадение ингредиентов, метода, времени и пропорций по полному тексту страницы. |
+| 53 | 1 | [Рецепт](https://www.turktarim.gov.tr/Haber/1037/antalyalilarin-kirmizi-cizgisi-antalya-piyazi) | НЕ ЗАКРЫТО ПОЛНОЙ СВЕРКОЙ | Ссылку включили в аудит; требуется документировать точное совпадение ингредиентов, метода, времени и пропорций по полному тексту страницы. |
+| 53 | 2 | [Рецепт](https://thehappyfoodie.co.uk/recipes/tahinli-fasulye-piyaz-antalya-style-bean-salad-with-tahini-sauce/) | СОДЕРЖАТЕЛЬНАЯ СВЕРКА ОСНОВЫ | Анталийский пияз с тахини, лимоном и фасолью. |
+| 53 | 3 | [Рецепт](https://ozlemsturkishtable.com/2014/06/antalya-style-white-bean-salad-with-tahini-piyaz/) | НЕ ЗАКРЫТО ПОЛНОЙ СВЕРКОЙ | Ссылку включили в аудит; требуется документировать точное совпадение ингредиентов, метода, времени и пропорций по полному тексту страницы. |
+| 54 | 1 | [Рецепт](https://www.ktb.gov.tr/EN-99000/bulgur-salad-kisir.html) | НЕ ЗАКРЫТО ПОЛНОЙ СВЕРКОЙ | Ссылку включили в аудит; требуется документировать точное совпадение ингредиентов, метода, времени и пропорций по полному тексту страницы. |
+| 54 | 2 | [Рецепт](https://vidarbergum.com/recipe/kisir-spicy-turkish-bulgur-wheat-salad/) | СОДЕРЖАТЕЛЬНАЯ СВЕРКА ОСНОВЫ | Кысыр из мелкого булгура, перечной/томатной паст и зелени. |
+| 54 | 3 | [Рецепт](https://foodish.anumuseum.org.il/en/recipe/kisir-turkish-bulgur-meze/) | СОДЕРЖАТЕЛЬНАЯ СВЕРКА ОСНОВЫ | Кысыр по традиции с петрушкой и гранатовым соусом. |
+| 55 | 1 | [Рецепт](https://www.sekaigohan.com/en/recipes/middle-east/turkey/ezme) | НЕ ЗАКРЫТО ПОЛНОЙ СВЕРКОЙ | Ссылку включили в аудит; требуется документировать точное совпадение ингредиентов, метода, времени и пропорций по полному тексту страницы. |
+| 55 | 2 | [Рецепт](https://tasteofturkiye.org/en/recipes/acili-ezme/) | СОДЕРЖАТЕЛЬНАЯ СВЕРКА ОСНОВЫ | Эзме: мелко рубленые овощи, острый соус с сумахом. |
+| 55 | 3 | [Рецепт](https://www.linsfood.com/turkish-acili-ezme/) | СОДЕРЖАТЕЛЬНАЯ СВЕРКА ОСНОВЫ | Эзме с томатом, перцем, гранатом. |
+| 56 | 1 | [Рецепт](https://www.ktb.gov.tr/EN-99133/eggplant-salad.html) | НЕ ЗАКРЫТО ПОЛНОЙ СВЕРКОЙ | Ссылку включили в аудит; требуется документировать точное совпадение ингредиентов, метода, времени и пропорций по полному тексту страницы. |
+| 56 | 2 | [Рецепт](https://www.olivetolive.com/en/news/4/yemek-tarifleri/1020/patlican-salatasi.aspx) | НЕ ЗАКРЫТО ПОЛНОЙ СВЕРКОЙ | Ссылку включили в аудит; требуется документировать точное совпадение ингредиентов, метода, времени и пропорций по полному тексту страницы. |
+| 56 | 3 | [Рецепт](https://www.giverecipe.com/turkish-eggplant-salad-recipe/) | СОДЕРЖАТЕЛЬНАЯ СВЕРКА ОСНОВЫ | Турецкий печёный баклажан с томатами, чесноком и лимоном. |
+| 57 | 1 | [Рецепт](https://www.ktb.gov.tr/EN-99011/purslane-salad-with-yogurt.html) | НЕ ЗАКРЫТО ПОЛНОЙ СВЕРКОЙ | Ссылку включили в аудит; требуется документировать точное совпадение ингредиентов, метода, времени и пропорций по полному тексту страницы. |
+| 57 | 2 | [Рецепт](https://tasteofturkiye.org/en/recipes/yogurtlu-semizotu-purslane-with-garlic-yogurt/) | НЕ ЗАКРЫТО ПОЛНОЙ СВЕРКОЙ | Ссылку включили в аудит; требуется документировать точное совпадение ингредиентов, метода, времени и пропорций по полному тексту страницы. |
+| 57 | 3 | [Рецепт](https://www.pisirsem.com.tr/en/recipes/yogurtlu-semizotu.html) | СОДЕРЖАТЕЛЬНАЯ СВЕРКА ОСНОВЫ | Сырой портулак с чесночным йогуртом. |
+| 58 | 1 | [Рецепт](https://yemek.com/tarif/patates-salatasi/) | НЕ ЗАКРЫТО ПОЛНОЙ СВЕРКОЙ | Ссылку включили в аудит; требуется документировать точное совпадение ингредиентов, метода, времени и пропорций по полному тексту страницы. |
+| 58 | 2 | [Рецепт](https://tasteofturkiye.org/en/recipes/patates-salatasi/) | СОДЕРЖАТЕЛЬНАЯ СВЕРКА ОСНОВЫ | Картофель с лимоном, сумаком, зеленью. |
+| 58 | 3 | [Рецепт](https://www.giverecipe.com/turkish-potato-salad/) | НЕ ЗАКРЫТО ПОЛНОЙ СВЕРКОЙ | Ссылку включили в аудит; требуется документировать точное совпадение ингредиентов, метода, времени и пропорций по полному тексту страницы. |
+| 59 | 1 | [Рецепт](https://www.foodandtravel.love/recipes/rotkohlsalat-krmz-lahana-salatas/) | НЕ ЗАКРЫТО ПОЛНОЙ СВЕРКОЙ | Ссылку включили в аудит; требуется документировать точное совпадение ингредиентов, метода, времени и пропорций по полному тексту страницы. |
+| 59 | 2 | [Рецепт](https://www.fairiescuisine.com/all-recipes/red-cabbage-salad) | СОДЕРЖАТЕЛЬНАЯ СВЕРКА ОСНОВЫ | Массаж красной капусты с солью и кислотой. |
+| 59 | 3 | [Рецепт](https://myturkishrecipes.com/turkish-red-cabbage-salad-kirmizi-lahana-salatasi) | СОДЕРЖАТЕЛЬНАЯ СВЕРКА ОСНОВЫ | Красная капуста, масло и лимон, без варки. |
+| 60 | 1 | [Рецепт](https://tasteofturkiye.org/en/recipes/havuc-tarator/) | СОДЕРЖАТЕЛЬНАЯ СВЕРКА ОСНОВЫ | Морковь обжаривают перед смешиванием с чесночным йогуртом. |
+| 60 | 2 | [Рецепт](https://www.pisirsem.com.tr/en/recipes/havuc-tarator.html) | СОДЕРЖАТЕЛЬНАЯ СВЕРКА ОСНОВЫ | Хавуч таратор, охлаждение 10 минут. |
+| 60 | 3 | [Рецепт](https://jamilghar.com/havuc-tarator/) | НЕ ЗАКРЫТО ПОЛНОЙ СВЕРКОЙ | Ссылку включили в аудит; требуется документировать точное совпадение ингредиентов, метода, времени и пропорций по полному тексту страницы. |
+| 61 | 1 | [Рецепт](https://mamaslebanesekitchen.com/salads/authentic-lebanese-tabbouleh-recipe/) | НЕ ЗАКРЫТО ПОЛНОЙ СВЕРКОЙ | Ссылку включили в аудит; требуется документировать точное совпадение ингредиентов, метода, времени и пропорций по полному тексту страницы. |
+| 61 | 2 | [Рецепт](https://sofrabeirut.com/recipes/tabbouleh) | НЕ ЗАКРЫТО ПОЛНОЙ СВЕРКОЙ | Ссылку включили в аудит; требуется документировать точное совпадение ингредиентов, метода, времени и пропорций по полному тексту страницы. |
+| 61 | 3 | [Рецепт](https://www.themaadad.com/recipes/authentic-tabbouleh) | НЕ ЗАКРЫТО ПОЛНОЙ СВЕРКОЙ | Ссылку включили в аудит; требуется документировать точное совпадение ингредиентов, метода, времени и пропорций по полному тексту страницы. |
+| 62 | 1 | [Рецепт](https://www.talasoubra.com/fattoush) | НЕ ЗАКРЫТО ПОЛНОЙ СВЕРКОЙ | Ссылку включили в аудит; требуется документировать точное совпадение ингредиентов, метода, времени и пропорций по полному тексту страницы. |
+| 62 | 2 | [Рецепт](https://www.bonappetit.com/recipe/fattoush-salad) | НЕ ЗАКРЫТО ПОЛНОЙ СВЕРКОЙ | Ссылку включили в аудит; требуется документировать точное совпадение ингредиентов, метода, времени и пропорций по полному тексту страницы. |
+| 62 | 3 | [Рецепт](https://sofrabeirut.com/recipes/fattoush) | НЕ ЗАКРЫТО ПОЛНОЙ СВЕРКОЙ | Ссылку включили в аудит; требуется документировать точное совпадение ингредиентов, метода, времени и пропорций по полному тексту страницы. |
+| 63 | 1 | [Рецепт](https://zaatarandzaytoun.com/eggplant-salad/) | НЕ ЗАКРЫТО ПОЛНОЙ СВЕРКОЙ | Ссылку включили в аудит; требуется документировать точное совпадение ингредиентов, метода, времени и пропорций по полному тексту страницы. |
+| 63 | 2 | [Рецепт](https://www.adonisspices.com/directions.php?id=18) | НЕ ЗАКРЫТО ПОЛНОЙ СВЕРКОЙ | Ссылку включили в аудит; требуется документировать точное совпадение ингредиентов, метода, времени и пропорций по полному тексту страницы. |
+| 63 | 3 | [Рецепт](https://cookpad.com/eng/recipes/4533354) | НЕ ЗАКРЫТО ПОЛНОЙ СВЕРКОЙ | Ссылку включили в аудит; требуется документировать точное совпадение ингредиентов, метода, времени и пропорций по полному тексту страницы. |
+| 64 | 1 | [Рецепт](https://yourlebanon.com/recipe/malfouf/) | НЕ ЗАКРЫТО ПОЛНОЙ СВЕРКОЙ | Ссылку включили в аудит; требуется документировать точное совпадение ингредиентов, метода, времени и пропорций по полному тексту страницы. |
+| 64 | 2 | [Рецепт](https://www.hungrypaprikas.com/malfouf-salad/) | НЕ ЗАКРЫТО ПОЛНОЙ СВЕРКОЙ | Ссылку включили в аудит; требуется документировать точное совпадение ингредиентов, метода, времени и пропорций по полному тексту страницы. |
+| 64 | 3 | [Рецепт](https://www.bylena.com/recipe/1550/Lebanese-Cabbage-Salad-Malfouf-Salad/) | НЕ ЗАКРЫТО ПОЛНОЙ СВЕРКОЙ | Ссылку включили в аудит; требуется документировать точное совпадение ингредиентов, метода, времени и пропорций по полному тексту страницы. |
+| 65 | 1 | [Рецепт](https://www.sbs.com.au/food/recipe/yoghurt-and-cucumber-salad-salatit-laban-wa-khyar/bpxvniset) | НЕ ЗАКРЫТО ПОЛНОЙ СВЕРКОЙ | Ссылку включили в аудит; требуется документировать точное совпадение ингредиентов, метода, времени и пропорций по полному тексту страницы. |
+| 65 | 2 | [Рецепт](https://www.simplyleb.com/recipe/lebanese-cucumber-yogurt-salad/) | НЕ ЗАКРЫТО ПОЛНОЙ СВЕРКОЙ | Ссылку включили в аудит; требуется документировать точное совпадение ингредиентов, метода, времени и пропорций по полному тексту страницы. |
+| 65 | 3 | [Рецепт](https://www.discoverlebanon.com/en/recipes/cucumber-yogurt-salad.php) | НЕ ЗАКРЫТО ПОЛНОЙ СВЕРКОЙ | Ссылку включили в аудит; требуется документировать точное совпадение ингредиентов, метода, времени и пропорций по полному тексту страницы. |
+| 66 | 1 | [Рецепт](https://periandsons.com/recipe.php?p=Lebanese+Potato+Salad+%28Salatet+Batata%29) | НЕ ЗАКРЫТО ПОЛНОЙ СВЕРКОЙ | Ссылку включили в аудит; требуется документировать точное совпадение ингредиентов, метода, времени и пропорций по полному тексту страницы. |
+| 66 | 2 | [Рецепт](https://maureenabood.com/lebanese-potato-salad-with-scallions-and-mint/) | СОДЕРЖАТЕЛЬНАЯ СВЕРКА ОСНОВЫ | Ливанский картофель с зелёным луком, мятой, лимоном. |
+| 66 | 3 | [Рецепт](https://www.julietaboulie.com/sittos-batata-salata) | СОДЕРЖАТЕЛЬНАЯ СВЕРКА ОСНОВЫ | Картофельный салат без майонеза, лимон и зелень. |
+| 67 | 1 | [Рецепт](https://www.food.com/recipe/salatah-el-loobyea-lebanese-green-bean-salad-434359) | НЕ ЗАКРЫТО ПОЛНОЙ СВЕРКОЙ | Ссылку включили в аудит; требуется документировать точное совпадение ингредиентов, метода, времени и пропорций по полному тексту страницы. |
+| 67 | 2 | [Рецепт](https://www.astray.com/recipes/?show=Lebanese+green+bean+salad) | НЕ ЗАКРЫТО ПОЛНОЙ СВЕРКОЙ | Ссылку включили в аудит; требуется документировать точное совпадение ингредиентов, метода, времени и пропорций по полному тексту страницы. |
+| 67 | 3 | [Рецепт](https://abouteating.com/2020/08/06/comfort-food-from-lebanon/) | СОДЕРЖАТЕЛЬНАЯ СВЕРКА ОСНОВЫ | Домашний ливанский салат из варёной зелёной фасоли. |
+| 68 | 1 | [Рецепт](https://thelemonbowl.com/lebanese-chopped-salad-with-chickpeas/) | СОДЕРЖАТЕЛЬНАЯ СВЕРКА ОСНОВЫ | Ливанский нут с нарезанными овощами, лимоном и зеленью. |
+| 68 | 2 | [Рецепт](https://www.thekitchn.com/recipe-chickpea-salad-with-onion-sumac-and-lemon-recipes-from-the-kitchn-194190) | СОДЕРЖАТЕЛЬНАЯ СВЕРКА ОСНОВЫ | Нут с лимоном, сумаком и луком. |
+| 68 | 3 | [Рецепт](https://www.washingtonpost.com/recipes/chickpea-salad-sumac-onions/) | СОДЕРЖАТЕЛЬНАЯ СВЕРКА ОСНОВЫ | Нут с сумахом, зеленью и маслом. |
+| 69 | 1 | [Рецепт](https://www.food.com/recipe/jarjeer-arugula-salad-436995) | СОДЕРЖАТЕЛЬНАЯ СВЕРКА ОСНОВЫ | Руккола, сумак, томат и лук. |
+| 69 | 2 | [Рецепт](https://eathealthyandcheap.com/recipes/salatet-jarjir-arugula-sumac-salad/) | СОДЕРЖАТЕЛЬНАЯ СВЕРКА ОСНОВЫ | Вариант с гранатом и орехами, отсутствуют в нашей версии. |
+| 69 | 3 | [Рецепт](https://www.fufuskitchen.com/salatat-jarjeer-middle-eastern-arugula-salad/) | СОДЕРЖАТЕЛЬНАЯ СВЕРКА ОСНОВЫ | Руккола, сумах, лимон, лук и масло. |
+| 70 | 1 | [Рецепт](https://yourlebanon.com/recipe/salatat-za3tar/) | НЕ ЗАКРЫТО ПОЛНОЙ СВЕРКОЙ | Ссылку включили в аудит; требуется документировать точное совпадение ингредиентов, метода, времени и пропорций по полному тексту страницы. |
+| 70 | 2 | [Рецепт](https://www.discoverlebanon.com/en/recipes/green_thyme_salad.php) | НЕ ЗАКРЫТО ПОЛНОЙ СВЕРКОЙ | Ссылку включили в аудит; требуется документировать точное совпадение ингредиентов, метода, времени и пропорций по полному тексту страницы. |
+| 70 | 3 | [Рецепт](https://lebanesegarlicsauce.com/salatit-zaatar-akhdar-fresh-thyme-salad/) | НЕ ЗАКРЫТО ПОЛНОЙ СВЕРКОЙ | Ссылку включили в аудит; требуется документировать точное совпадение ингредиентов, метода, времени и пропорций по полному тексту страницы. |
+| 71 | 1 | [Рецепт](https://www.justonecookbook.com/sunomono-with-cucumber-and-wakame/) | НЕ ЗАКРЫТО ПОЛНОЙ СВЕРКОЙ | Ссылку включили в аудит; требуется документировать точное совпадение ингредиентов, метода, времени и пропорций по полному тексту страницы. |
+| 71 | 2 | [Рецепт](https://recipin.jp/en/recipes/sunomono) | НЕ ЗАКРЫТО ПОЛНОЙ СВЕРКОЙ | Ссылку включили в аудит; требуется документировать точное совпадение ингредиентов, метода, времени и пропорций по полному тексту страницы. |
+| 71 | 3 | [Рецепт](https://www.mrpantry.com/recipes/sunomono-cucumber-and-wakame-salad) | НЕ ЗАКРЫТО ПОЛНОЙ СВЕРКОЙ | Ссылку включили в аудит; требуется документировать точное совпадение ингредиентов, метода, времени и пропорций по полному тексту страницы. |
+| 72 | 1 | [Рецепт](https://www.kikkoman.com/en/cookbook/recipe/00000939.html) | НЕ ЗАКРЫТО ПОЛНОЙ СВЕРКОЙ | Ссылку включили в аудит; требуется документировать точное совпадение ингредиентов, метода, времени и пропорций по полному тексту страницы. |
+| 72 | 2 | [Рецепт](https://norecipes.com/seaweed-salad-recipe/) | НЕ ЗАКРЫТО ПОЛНОЙ СВЕРКОЙ | Ссылку включили в аудит; требуется документировать точное совпадение ингредиентов, метода, времени и пропорций по полному тексту страницы. |
+| 72 | 3 | [Рецепт](https://www.forkin.io/recipes/wakame-seaweed-salad-with-sesame-dressing) | НЕ ЗАКРЫТО ПОЛНОЙ СВЕРКОЙ | Ссылку включили в аудит; требуется документировать точное совпадение ингредиентов, метода, времени и пропорций по полному тексту страницы. |
+| 73 | 1 | [Рецепт](https://www.justonecookbook.com/spinach-with-sesame-sauce/) | НЕ ЗАКРЫТО ПОЛНОЙ СВЕРКОЙ | Ссылку включили в аудит; требуется документировать точное совпадение ингредиентов, метода, времени и пропорций по полному тексту страницы. |
+| 73 | 2 | [Рецепт](https://www.theintrepideater.com/japanese-spinach-goma-ae/) | НЕ ЗАКРЫТО ПОЛНОЙ СВЕРКОЙ | Ссылку включили в аудит; требуется документировать точное совпадение ингредиентов, метода, времени и пропорций по полному тексту страницы. |
+| 73 | 3 | [Рецепт](https://www.chopstickchronicles.com/goma-ae/) | СОДЕРЖАТЕЛЬНАЯ СВЕРКА ОСНОВЫ | Гома-аэ шпинат с кунжутом, короткая варка. |
+| 74 | 1 | [Рецепт](https://www.justonecookbook.com/japanese-potato-salad/) | СОДЕРЖАТЕЛЬНАЯ СВЕРКА ОСНОВЫ | Картофельный японский с майонезом, яйцом, огурцом, морковью. |
+| 74 | 2 | [Рецепт](https://japanesecooking101.com/potato-salad-recipe/) | НЕ ЗАКРЫТО ПОЛНОЙ СВЕРКОЙ | Ссылку включили в аудит; требуется документировать точное совпадение ингредиентов, метода, времени и пропорций по полному тексту страницы. |
+| 74 | 3 | [Рецепт](https://www.chopstickchronicles.com/japanese-potato-salad/) | НЕ ЗАКРЫТО ПОЛНОЙ СВЕРКОЙ | Ссылку включили в аудит; требуется документировать точное совпадение ингредиентов, метода, времени и пропорций по полному тексту страницы. |
+| 75 | 1 | [Рецепт](https://www.justonecookbook.com/harusame-salad/) | НЕ ЗАКРЫТО ПОЛНОЙ СВЕРКОЙ | Ссылку включили в аудит; требуется документировать точное совпадение ингредиентов, метода, времени и пропорций по полному тексту страницы. |
+| 75 | 2 | [Рецепт](https://japan.recipetineats.com/japanese-vermicelli-salad-harusame-salad/) | НЕ ЗАКРЫТО ПОЛНОЙ СВЕРКОЙ | Ссылку включили в аудит; требуется документировать точное совпадение ингредиентов, метода, времени и пропорций по полному тексту страницы. |
+| 75 | 3 | [Рецепт](https://japanesecooking101.com/harusame-salad-recipe/) | НЕ ЗАКРЫТО ПОЛНОЙ СВЕРКОЙ | Ссылку включили в аудит; требуется документировать точное совпадение ингредиентов, метода, времени и пропорций по полному тексту страницы. |
+| 76 | 1 | [Рецепт](https://www.justonecookbook.com/gobo-salad-japanese-burdock-root-salad/) | НЕ ЗАКРЫТО ПОЛНОЙ СВЕРКОЙ | Ссылку включили в аудит; требуется документировать точное совпадение ингредиентов, метода, времени и пропорций по полному тексту страницы. |
+| 76 | 2 | [Рецепт](https://www.kikkoman.com/en/cookbook/recipe/00000988.html) | НЕ ЗАКРЫТО ПОЛНОЙ СВЕРКОЙ | Ссылку включили в аудит; требуется документировать точное совпадение ингредиентов, метода, времени и пропорций по полному тексту страницы. |
+| 76 | 3 | [Рецепт](https://recipin.jp/en/recipes/gobo-salad) | СОДЕРЖАТЕЛЬНАЯ СВЕРКА ОСНОВЫ | Гобо с отварной морковью, кунжутом и майонезом. |
+| 77 | 1 | [Рецепт](https://www.shinagawa-japanese-cooking.com/post/japanese-tofu-sesame-salad-%E7%99%BD%E5%92%8C%E3%81%88) | СОДЕРЖАТЕЛЬНАЯ СВЕРКА ОСНОВЫ | Сира-аэ на тофу, моркови, фасоли и кунжуте. |
+| 77 | 2 | [Рецепт](https://www.justonecookbook.com/green-bean-shiraae/) | НЕ ЗАКРЫТО ПОЛНОЙ СВЕРКОЙ | Ссылку включили в аудит; требуется документировать точное совпадение ингредиентов, метода, времени и пропорций по полному тексту страницы. |
+| 77 | 3 | [Рецепт](https://japan.recipetineats.com/green-beans-with-tofu-dressing-shira-ae/) | СОДЕРЖАТЕЛЬНАЯ СВЕРКА ОСНОВЫ | Стручковая фасоль в мисо-кунжутном тофу. |
+| 78 | 1 | [Рецепт](https://www.justonecookbook.com/kabocha-salad/) | НЕ ЗАКРЫТО ПОЛНОЙ СВЕРКОЙ | Ссылку включили в аудит; требуется документировать точное совпадение ингредиентов, метода, времени и пропорций по полному тексту страницы. |
+| 78 | 2 | [Рецепт](https://japanesecooking101.com/kabocha-salad/) | НЕ ЗАКРЫТО ПОЛНОЙ СВЕРКОЙ | Ссылку включили в аудит; требуется документировать точное совпадение ингредиентов, метода, времени и пропорций по полному тексту страницы. |
+| 78 | 3 | [Рецепт](https://recipin.jp/en/recipes/kabocha-salad) | НЕ ЗАКРЫТО ПОЛНОЙ СВЕРКОЙ | Ссылку включили в аудит; требуется документировать точное совпадение ингредиентов, метода, времени и пропорций по полному тексту страницы. |
+| 79 | 1 | [Рецепт](https://www.justonecookbook.com/tofu-salad-with-sesame-ponzu-dressing/) | НЕ ЗАКРЫТО ПОЛНОЙ СВЕРКОЙ | Ссылку включили в аудит; требуется документировать точное совпадение ингредиентов, метода, времени и пропорций по полному тексту страницы. |
+| 79 | 2 | [Рецепт](https://shizuokagourmet.com/2009/06/26/tofu-recipe-tofu-and-wakame-seaweed-salad/) | СОДЕРЖАТЕЛЬНАЯ СВЕРКА ОСНОВЫ | Тофу, вакаме, кислый соус понзу. |
+| 79 | 3 | [Рецепт](https://www.kikkoman.com/en/cookbook/recipe/00000740.html) | СОДЕРЖАТЕЛЬНАЯ СВЕРКА ОСНОВЫ | Общий тофу-салат, понзу не полностью подтверждается. |
+| 80 | 1 | [Рецепт](https://japanesecooking101.com/soba-noodle-salad-recipe/) | НЕ ЗАКРЫТО ПОЛНОЙ СВЕРКОЙ | Ссылку включили в аудит; требуется документировать точное совпадение ингредиентов, метода, времени и пропорций по полному тексту страницы. |
+| 80 | 2 | [Рецепт](https://yutaka.london/recipes/sides/soba-noodle/) | НЕ ЗАКРЫТО ПОЛНОЙ СВЕРКОЙ | Ссылку включили в аудит; требуется документировать точное совпадение ингредиентов, метода, времени и пропорций по полному тексту страницы. |
+| 80 | 3 | [Рецепт](https://www.kikkoman.co.uk/food-service/recipes/detail/cold-soba-noodle-salad-with-sesame-dressing) | НЕ ЗАКРЫТО ПОЛНОЙ СВЕРКОЙ | Ссылку включили в аудит; требуется документировать точное совпадение ингредиентов, метода, времени и пропорций по полному тексту страницы. |
+| 81 | 1 | [Рецепт](https://www.thaitable.com/recipes/green-papaya-salad) | НЕ ЗАКРЫТО ПОЛНОЙ СВЕРКОЙ | Ссылку включили в аудит; требуется документировать точное совпадение ингредиентов, метода, времени и пропорций по полному тексту страницы. |
+| 81 | 2 | [Рецепт](https://www.marionskitchen.com/som-tum-thai-papaya-salad/) | НЕ ЗАКРЫТО ПОЛНОЙ СВЕРКОЙ | Ссылку включили в аудит; требуется документировать точное совпадение ингредиентов, метода, времени и пропорций по полному тексту страницы. |
+| 81 | 3 | [Рецепт](https://guide.michelin.com/th/en/article/dining-in/how-to-make-som-tum-thai-papaya-salad-like-a-michelin-restaurant) | СОДЕРЖАТЕЛЬНАЯ СВЕРКА ОСНОВЫ | Сом-там со свежей зеленой папайей, фасолью, арахисом, сушёными креветками. |
+| 82 | 1 | [Рецепт](https://www.marionskitchen.com/thai-glass-noodle-salad-yum-woon-sen/) | СОДЕРЖАТЕЛЬНАЯ СВЕРКА ОСНОВЫ | Фунчоза с фаршем, креветками, лаймом и рыбным соусом. |
+| 82 | 2 | [Рецепт](https://thaidata.uk/recipes/yum-woon-sen/) | НЕ ЗАКРЫТО ПОЛНОЙ СВЕРКОЙ | Ссылку включили в аудит; требуется документировать точное совпадение ингредиентов, метода, времени и пропорций по полному тексту страницы. |
+| 82 | 3 | [Рецепт](https://cookpad.com/eng/recipes/15310719) | НЕ ЗАКРЫТО ПОЛНОЙ СВЕРКОЙ | Ссылку включили в аудит; требуется документировать точное совпадение ингредиентов, метода, времени и пропорций по полному тексту страницы. |
+| 83 | 1 | [Рецепт](https://www.mrpantry.com/recipes/larb-moo-thai-pork-salad) | СОДЕРЖАТЕЛЬНАЯ СВЕРКА ОСНОВЫ | Ларб со свининой, рисовой крошкой, мятой и лаймом. |
+| 83 | 2 | [Рецепт](https://www.thaicookbook.tv/thai-recipes/salads/larb-moo-spicy-minced-pork-salad/) | НЕ ЗАКРЫТО ПОЛНОЙ СВЕРКОЙ | Ссылку включили в аудит; требуется документировать точное совпадение ингредиентов, метода, времени и пропорций по полному тексту страницы. |
+| 83 | 3 | [Рецепт](https://aroymakmak.com/en/recipes/larb-moo) | НЕ ЗАКРЫТО ПОЛНОЙ СВЕРКОЙ | Ссылку включили в аудит; требуется документировать точное совпадение ингредиентов, метода, времени и пропорций по полному тексту страницы. |
+| 84 | 1 | [Рецепт](https://us.maejum.com/blogs/recipes/nam-tok-neua) | СОДЕРЖАТЕЛЬНАЯ СВЕРКА ОСНОВЫ | Нам ток с говядиной, кхао-кхуа и зеленью. |
+| 84 | 2 | [Рецепт](https://www.marionskitchen.com/spicy-thai-grilled-beef-salad/) | НЕ ЗАКРЫТО ПОЛНОЙ СВЕРКОЙ | Ссылку включили в аудит; требуется документировать точное совпадение ингредиентов, метода, времени и пропорций по полному тексту страницы. |
+| 84 | 3 | [Рецепт](https://usa.lkk.com/en/recipes/thai-style-beef-salad-recipe-nam-tok-neua) | НЕ ЗАКРЫТО ПОЛНОЙ СВЕРКОЙ | Ссылку включили в аудит; требуется документировать точное совпадение ингредиентов, метода, времени и пропорций по полному тексту страницы. |
+| 85 | 1 | [Рецепт](https://www.kikkoman.eu/recipes/detail/yum-som-o-thai-pomelo-and-prawn-salad) | НЕ ЗАКРЫТО ПОЛНОЙ СВЕРКОЙ | Ссылку включили в аудит; требуется документировать точное совпадение ингредиентов, метода, времени и пропорций по полному тексту страницы. |
+| 85 | 2 | [Рецепт](https://atasteofthai.com/thai-recipes/yam-som-o-pomelo-salad/) | НЕ ЗАКРЫТО ПОЛНОЙ СВЕРКОЙ | Ссылку включили в аудит; требуется документировать точное совпадение ингредиентов, метода, времени и пропорций по полному тексту страницы. |
+| 85 | 3 | [Рецепт](https://tastythais.com/thai-pomelo-salad/) | НЕ ЗАКРЫТО ПОЛНОЙ СВЕРКОЙ | Ссылку включили в аудит; требуется документировать точное совпадение ингредиентов, метода, времени и пропорций по полному тексту страницы. |
+| 86 | 1 | [Рецепт](https://sekaigohan.com/en/recipes/southeast-asia/thailand/wing-bean-salad) | СОДЕРЖАТЕЛЬНАЯ СВЕРКА ОСНОВЫ | Крылатая фасоль, креветки, кокос и арахис, яйцо как вариант источника. |
+| 86 | 2 | [Рецепт](https://www.realthairecipes.com/recipes/wing-bean-salad/) | НЕ ЗАКРЫТО ПОЛНОЙ СВЕРКОЙ | Ссылку включили в аудит; требуется документировать точное совпадение ингредиентов, метода, времени и пропорций по полному тексту страницы. |
+| 86 | 3 | [Рецепт](https://www.clubhouse.ca/en-ca/blogs/thai-kitchen-recipes/wing-bean-salad-yum-tuapu) | НЕ ЗАКРЫТО ПОЛНОЙ СВЕРКОЙ | Ссылку включили в аудит; требуется документировать точное совпадение ингредиентов, метода, времени и пропорций по полному тексту страницы. |
+| 87 | 1 | [Рецепт](https://www.thaitable.com/recipes/crispy-catfish-green-mango-salad) | СОДЕРЖАТЕЛЬНАЯ СВЕРКА ОСНОВЫ | Пушистый хрустящий сом с зелёным манго. |
+| 87 | 2 | [Рецепт](https://www.pholfoodmafia.com/recipe/crispy-catfish-salad-%E0%B8%A2%E0%B8%B3%E0%B8%9B%E0%B8%A5%E0%B8%B2%E0%B8%94%E0%B8%B8%E0%B8%81%E0%B8%9F%E0%B8%B9/) | СОДЕРЖАТЕЛЬНАЯ СВЕРКА ОСНОВЫ | Перед фритюром используется приготовленная и высушенная рыба. |
+| 87 | 3 | [Рецепт](https://www.food.com/recipe/thai-catfish-salad-yam-pla-dook-foo-31233) | СОДЕРЖАТЕЛЬНАЯ СВЕРКА ОСНОВЫ | Сом, зелёное манго и кислый рыбный соус. |
+| 88 | 1 | [Рецепт](https://feastthailand.com/food/yam-khai-dao/) | НЕ ЗАКРЫТО ПОЛНОЙ СВЕРКОЙ | Ссылку включили в аудит; требуется документировать точное совпадение ингредиентов, метода, времени и пропорций по полному тексту страницы. |
+| 88 | 2 | [Рецепт](https://www.lucywaverman.com/recipes/yam-khai-dao-crispy-fried-egg-salad) | СОДЕРЖАТЕЛЬНАЯ СВЕРКА ОСНОВЫ | Жареные до хруста яйца с чили и лаймом. |
+| 88 | 3 | [Рецепт](https://www.kitchenstories.com/en/recipes/thai-fried-egg-salad-yum-khai-dao) | НЕ ЗАКРЫТО ПОЛНОЙ СВЕРКОЙ | Ссылку включили в аудит; требуется документировать точное совпадение ингредиентов, метода, времени и пропорций по полному тексту страницы. |
+| 89 | 1 | [Рецепт](https://www.thaicookbook.tv/thai-recipes/salads/green-mango-salad-with-fresh-shrimp/) | НЕ ЗАКРЫТО ПОЛНОЙ СВЕРКОЙ | Ссылку включили в аудит; требуется документировать точное совпадение ингредиентов, метода, времени и пропорций по полному тексту страницы. |
+| 89 | 2 | [Рецепт](https://www.bbcgoodfood.com/recipes/green-mango-salad-prawns) | СОДЕРЖАТЕЛЬНАЯ СВЕРКА ОСНОВЫ | Зелёное манго, креветки, лайм и чили. |
+| 89 | 3 | [Рецепт](https://praneesthaikitchen.com/2010/07/01/thai-green-mango-salad-recipe-yum-mamuang-goong/) | НЕ ЗАКРЫТО ПОЛНОЙ СВЕРКОЙ | Ссылку включили в аудит; требуется документировать точное совпадение ингредиентов, метода, времени и пропорций по полному тексту страницы. |
+| 90 | 1 | [Рецепт](https://thaidata.uk/recipes/khao-yam/) | НЕ ЗАКРЫТО ПОЛНОЙ СВЕРКОЙ | Ссылку включили в аудит; требуется документировать точное совпадение ингредиентов, метода, времени и пропорций по полному тексту страницы. |
+| 90 | 2 | [Рецепт](https://schoolofwok.co.uk/tips-and-recipes/thai-rice-salad) | СОДЕРЖАТЕЛЬНАЯ СВЕРКА ОСНОВЫ | Рис с зеленью, кокосом, креветками и ферментированным рыбным соусом. |
+| 90 | 3 | [Рецепт](https://www.splendidtable.org/story/2024/08/30/a-simple-thaistyle-rice-salad-khaao-yam) | СОДЕРЖАТЕЛЬНАЯ СВЕРКА ОСНОВЫ | Южнотайский салат с рисом, зеленью, кокосом и сушёными морепродуктами. |
+| 91 | 1 | [Рецепт](https://www.thekitchn.com/cobb-salad-22903049) | СОДЕРЖАТЕЛЬНАЯ СВЕРКА ОСНОВЫ | Кобб: разложенные рядами яйца, курица, бекон, авокадо, голубой сыр. |
+| 91 | 2 | [Рецепт](https://www.epicurious.com/recipes/food/views/cobb-salad-11049) | СОДЕРЖАТЕЛЬНАЯ СВЕРКА ОСНОВЫ | Кобб по Epicurious, классическая структура. |
+| 91 | 3 | [Рецепт](https://www.tasteatlas.com/cobb-salad/recipe) | СОДЕРЖАТЕЛЬНАЯ СВЕРКА ОСНОВЫ | Кобб по TasteAtlas: курица, яйцо, бекон и рокфор. |
+| 92 | 1 | [Рецепт](https://www.bbcgoodfood.com/recipes/waldorf-salad) | СОДЕРЖАТЕЛЬНАЯ СВЕРКА ОСНОВЫ | Waldorf по BBC, яблоки, сельдерей, грецкие орехи и виноград. |
+| 92 | 2 | [Рецепт](https://www.thekitchn.com/waldorf-salad-recipe-23215387) | СОДЕРЖАТЕЛЬНАЯ СВЕРКА ОСНОВЫ | Waldorf по Kitchn, яблоки, орехи, сельдерей, виноград. |
+| 92 | 3 | [Рецепт](https://www.epicurious.com/recipes/food/views/waldorf-salad-360790) | СОДЕРЖАТЕЛЬНАЯ СВЕРКА ОСНОВЫ | Waldorf по Epicurious, фруктово-ореховая майонезная заправка. |
+| 93 | 1 | [Рецепт](https://www.foodnetwork.com/recipes/food-network-kitchen/chefs-salad-recipe-2011625) | НЕ ЗАКРЫТО ПОЛНОЙ СВЕРКОЙ | Ссылку включили в аудит; требуется документировать точное совпадение ингредиентов, метода, времени и пропорций по полному тексту страницы. |
+| 93 | 2 | [Рецепт](https://www.epicurious.com/recipes/food/views/chefs-salad-102212) | СОДЕРЖАТЕЛЬНАЯ СВЕРКА ОСНОВЫ | Chef's salad, ветчина, индейка, сыр и яйцо. |
+| 93 | 3 | [Рецепт](https://www.foodpassport.com/united-states/salads/chef-salad.html) | СОДЕРЖАТЕЛЬНАЯ СВЕРКА ОСНОВЫ | Американский chef salad, мясная и сырная нарезка, овощи. |
+| 94 | 1 | [Рецепт](https://www.epicurious.com/recipes/food/views/iceberg-wedge-salad-with-warm-bacon-and-blue-cheese-dressing-51132380) | СОДЕРЖАТЕЛЬНАЯ СВЕРКА ОСНОВЫ | Клин айсберга с беконом и голубым сыром. |
+| 94 | 2 | [Рецепт](https://www.marthastewart.com/951402/iceberg-wedges-creamy-blue-cheese-dressing) | СОДЕРЖАТЕЛЬНАЯ СВЕРКА ОСНОВЫ | Wedge по Martha Stewart, салат и соус голубого сыра. |
+| 94 | 3 | [Рецепт](https://www.thekitchn.com/recipe-iceberg-wedge-salad-240308) | СОДЕРЖАТЕЛЬНАЯ СВЕРКА ОСНОВЫ | Wedge по Kitchn, сырный соус и бекон. |
+| 95 | 1 | [Рецепт](https://www.bonappetit.com/recipe/classic-coleslaw) | СОДЕРЖАТЕЛЬНАЯ СВЕРКА ОСНОВЫ | Коулслоу по Bon Appetit, капуста, морковь, майонез, уксус. |
+| 95 | 2 | [Рецепт](https://www.bbcgoodfood.com/recipes/classic-homemade-coleslaw) | СОДЕРЖАТЕЛЬНАЯ СВЕРКА ОСНОВЫ | Коулслоу по BBC, нашинкованная капуста с заправкой. |
+| 95 | 3 | [Рецепт](https://www.seriouseats.com/creamy-cole-slaw) | СОДЕРЖАТЕЛЬНАЯ СВЕРКА ОСНОВЫ | Коулслоу по Serious Eats; соление капусты как необязательный прием. |
+| 96 | 1 | [Рецепт](https://www.allrecipes.com/recipe/81108/classic-macaroni-salad/) | СОДЕРЖАТЕЛЬНАЯ СВЕРКА ОСНОВЫ | Тестовая классика Allrecipes, макароны-локти и овощи, 4+ч отдых источника. |
+| 96 | 2 | [Рецепт](https://www.thekitchn.com/macaroni-salad-recipe-23027437) | СОДЕРЖАТЕЛЬНАЯ СВЕРКА ОСНОВЫ | Классика Kitchn с майонезом, овощами и охлаждением. |
+| 96 | 3 | [Рецепт](https://www.spendwithpennies.com/classic-macaroni-salad/) | СОДЕРЖАТЕЛЬНАЯ СВЕРКА ОСНОВЫ | SpendWithPennies, как минимум час в холодильнике. |
+| 97 | 1 | [Рецепт](https://www.allrecipes.com/recipe/76992/classic-american-style-potato-salad/) | СОДЕРЖАТЕЛЬНАЯ СВЕРКА ОСНОВЫ | Allrecipes, классика картофель/яйцо/майонез/горчица. |
+| 97 | 2 | [Рецепт](https://www.epicurious.com/recipes/food/views/all-american-potato-salad-14176) | СОДЕРЖАТЕЛЬНАЯ СВЕРКА ОСНОВЫ | Epicurious, картофельный салат с яйцами, сельдереем. |
+| 97 | 3 | [Рецепт](https://www.spendwithpennies.com/classic-potato-salad/) | СОДЕРЖАТЕЛЬНАЯ СВЕРКА ОСНОВЫ | SpendWithPennies, картофель, яйца и сливочная заправка. |
+| 98 | 1 | [Рецепт](https://www.thekitchn.com/old-school-practicality-the-se-89814) | СОДЕРЖАТЕЛЬНАЯ СВЕРКА ОСНОВЫ | The Kitchn, слои можно изменять; основа салат, горошек, майонез, сыр, бекон. |
+| 98 | 2 | [Рецепт](https://www.cooks.com/recipe/pu66z5qg/seven-layer-salad.html) | СОДЕРЖАТЕЛЬНАЯ СВЕРКА ОСНОВЫ | Cooks.com, классический семислойный салат. |
+| 98 | 3 | [Рецепт](https://www.spendwithpennies.com/layered-salad/) | СОДЕРЖАТЕЛЬНАЯ СВЕРКА ОСНОВЫ | SpendWithPennies, 4-часовая выдержка, наш 30-минутный вариант ускоренный. |
+| 99 | 1 | [Рецепт](https://foodhero.org/recipes/broccoli-raisin-salad) | СОДЕРЖАТЕЛЬНАЯ СВЕРКА ОСНОВЫ | Oregon State University: брокколи, изюм, семечки, бекон, майонез. |
+| 99 | 2 | [Рецепт](https://www.cooks.com/recipe/733vp9j3/broccoli-bacon-raisin-salad.html) | СОДЕРЖАТЕЛЬНАЯ СВЕРКА ОСНОВЫ | Cooks.com: брокколи, бекон и изюм. |
+| 99 | 3 | [Рецепт](https://www.spendwithpennies.com/broccoli-salad/) | СОДЕРЖАТЕЛЬНАЯ СВЕРКА ОСНОВЫ | SpendWithPennies: клюква вместо изюма, взаимозаменяемые сухофрукты. |
+| 100 | 1 | [Рецепт](https://www.allrecipes.com/recipe/16413/crab-and-shrimp-louis/) | СОДЕРЖАТЕЛЬНАЯ СВЕРКА ОСНОВЫ | Allrecipes: классический Луи допускает только креветки без краба, соус майонез/томат. |
+| 100 | 2 | [Рецепт](https://texascooppower.com/recipes/shrimp-louis-salad/) | СОДЕРЖАТЕЛЬНАЯ СВЕРКА ОСНОВЫ | Texas Co-op Power: shrimp Louis, овощи и розовая заправка. |
+| 100 | 3 | [Рецепт](https://juneoven.com/pages/recipe-shrimp-louie-803fedc8) | СОДЕРЖАТЕЛЬНАЯ СВЕРКА ОСНОВЫ | June Oven: Shrimp Louie с яйцом, авокадо, салатом и майонезным соусом. |
+
+## Что не готово к публикации
+
+1. Для источников с пометкой «НЕ ЗАКРЫТО ПОЛНОЙ СВЕРКОЙ» открыть полный рецепт и сравнить ингредиенты, пропорции на двоих, последовательность, температуру, время, а не только заголовок. Для источников «СОДЕРЖАТЕЛЬНАЯ СВЕРКА ОСНОВЫ» дополнительно проверить каждую спорную дозировку и второстепенную технологическую деталь.
+2. Проверить фотографии, относящиеся именно к новым 90 блюдам; пока `photo:null` и `awaiting_original_photo_approval` у карточек.
+3. Проверить сборку после интеграции; JSON находится только в редакционной ветке и **не изменяет эталонный сайт**.
+
+## Ограничения
+
+**Не присваивать `SOURCES_PASS`, `CULINARY_FULLY_APPROVED` или `READY_TO_PUBLISH` на основании этого документа.** Это фактологический журнал выполненного и оставшегося аудита, а не подтверждение полной независимой проверки 270 страниц.
