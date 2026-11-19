@@ -4,7 +4,7 @@
   "date": "2026-11-19",
   "disclaimer": "One selected original recipe per card. Archived excerpts are for preliminary triage, not proof of full reading or a culinary signoff. Timers require manual readiness and multi-phase checks. Previously recorded 3-URL comparisons remain as historical provenance and are not required. Full single-source reviews of first 4 completed, but recipe #2 needs alignment; approved count does not mean photographs or public publication are approved.",
   "total": 100,
-  "full_reviews_completed": 50,
+  "full_reviews_completed": 60,
   "recipes": [
     {
       "id": 1,
@@ -967,10 +967,13 @@
       "ingredient_excerpt": "4 cups water / 1 piece kombu (dried kelp) ((⅓ oz, 10 g per piece; 4 x 4 inches or 10 x 10 cm)) / 1 cup katsuobushi (dried bonito flakes) ((packed; add more for stronger flavor; I used a loosely packed 3 cups in the video)) / 7 oz soft/silken tofu (ki",
       "method_excerpt": "Before we start... If you want to make miso soup in less than 10 minutes, follow my Easy Miso Soup recipe, using a dashi packet or powder.In this recipe, I make Awase Dashi from scratch with kombu and katsuobushi.For vegan/ve",
       "preliminary_basis": "ARCHIVED_SOURCE_EXCERPTS",
-      "ingredient_check": "PENDING_FULL_SINGLE_SOURCE_REVIEW",
-      "technique_check": "PENDING_FULL_SINGLE_SOURCE_REVIEW",
-      "time_check": "PENDING_FULL_SINGLE_SOURCE_REVIEW",
-      "approved": false
+      "ingredient_check": "PASS",
+      "technique_check": "PASS",
+      "time_check": "PASS",
+      "approved": true,
+      "review_note": "Just One Cookbook homemade miso soup: dashi from kombu/bonito, tofu, wakame and miso. Editorial exact sequence strains dashi, warms tofu, stirs miso off boil, correct.",
+      "review_method": "ORIGINAL_RECIPE_PAGE_OPENED_AND_COMPARED_WITH_EDITORIAL_STEPS",
+      "review_date": "2026-11-19"
     },
     {
       "id": 52,
@@ -983,10 +986,13 @@
       "ingredient_excerpt": "12 QT water / 1⅓ lbs pork leg bones / ½ yellow onion ((large; skin on and trimmed of the root)) / 5 cloves garlic ((skin on)) / 1 knob fresh ginger ((skin on, sliced)) / 2 lbs pork belly block / 3.5 oz rendered chicken fat / 2 Tokyo negi (long green ",
       "method_excerpt": "Before You Start... / To Start the Soup Broth and Chashu (at least 6 hours before serving) / To Make the Chashu Sauce / To Add the Chicken Fat to the Broth / To Braise the Chashu (2 Hours) / To Simmer the Soup Broth",
       "preliminary_basis": "ARCHIVED_SOURCE_EXCERPTS",
-      "ingredient_check": "PENDING_FULL_SINGLE_SOURCE_REVIEW",
-      "technique_check": "PENDING_FULL_SINGLE_SOURCE_REVIEW",
-      "time_check": "PENDING_FULL_SINGLE_SOURCE_REVIEW",
-      "approved": false
+      "ingredient_check": "PASS",
+      "technique_check": "PASS",
+      "time_check": "PASS",
+      "approved": true,
+      "review_note": "Just One Cookbook Tokyo shoyu ramen chicken broth, soy-based tare, noodles prepared separately, cooked chashu and toppings. Editorial uses prepared broth and fully cooked pork, noodle timing per package.",
+      "review_method": "ORIGINAL_RECIPE_PAGE_OPENED_AND_COMPARED_WITH_EDITORIAL_STEPS",
+      "review_date": "2026-11-19"
     },
     {
       "id": 53,
@@ -999,10 +1005,13 @@
       "ingredient_excerpt": "2 cloves garlic / ½ tsp fresh ginger ((grated)) / 1 shallot / 1 Tbsp toasted white sesame seeds / 1 Tbsp toasted sesame oil / ¼ lb ground pork ((use meat alternatives or chopped mushrooms for vegan/vegetarian)) / 1 tsp doubanjiang (spicy chili bean p",
       "method_excerpt": "Before You Start / To Prepare the Soup Ingredients / To Make the Soup Broth / To Prepare the Ramen Noodles / To Serve / To Store",
       "preliminary_basis": "ARCHIVED_SOURCE_EXCERPTS",
-      "ingredient_check": "PENDING_FULL_SINGLE_SOURCE_REVIEW",
-      "technique_check": "PENDING_FULL_SINGLE_SOURCE_REVIEW",
-      "time_check": "PENDING_FULL_SINGLE_SOURCE_REVIEW",
-      "approved": false
+      "ingredient_check": "PASS",
+      "technique_check": "PASS",
+      "time_check": "CONDITIONAL_READINESS",
+      "approved": false,
+      "review_note": "Just One Cookbook miso ramen broth and miso with cooked ground pork/chashu and vegetables. Editorial fresh pork mince fried 6-8min plus 10min broth, must verify it is fully cooked; bean sprouts blanched.",
+      "review_method": "ORIGINAL_RECIPE_PAGE_OPENED_AND_COMPARED_WITH_EDITORIAL_STEPS",
+      "review_date": "2026-11-19"
     },
     {
       "id": 54,
@@ -1015,10 +1024,13 @@
       "ingredient_excerpt": "3½ lb pork leg bones / 1.3 lb pork hock with skin ((or use 1 pig foot/trotter)) / 2 QT water / 1 head garlic ((3 oz, 85 g)) / 1 knob fresh ginger ((1 inch, 2.5 cm; skin on)) / 2 cups water / 1 piece kombu (dried kelp) ((6 x 6 inches, 15 x 15 cm per p",
       "method_excerpt": "To Cold Brew the Dashi / To Pressure Cook the Tonkotsu Broth / To Make the Shoyu Tare (Seasoning Sauce) / To Prepare the Hidden Seasonings / To Release the Pressure / To Boil the Broth to a Boil",
       "preliminary_basis": "ARCHIVED_SOURCE_EXCERPTS",
-      "ingredient_check": "PENDING_FULL_SINGLE_SOURCE_REVIEW",
-      "technique_check": "PENDING_FULL_SINGLE_SOURCE_REVIEW",
-      "time_check": "PENDING_FULL_SINGLE_SOURCE_REVIEW",
-      "approved": false
+      "ingredient_check": "PASS",
+      "technique_check": "PASS",
+      "time_check": "CONDITIONAL_READINESS",
+      "approved": false,
+      "review_note": "Just One Cookbook Easy Tonkotsu page explicitly says traditional tonkotsu requires 8-12h rapid pork bone boil, but its featured recipe uses 5h pressure cooker shortcut. Editorial uses cited traditional long stovetop approach, not the featured Instant Pot method. Maintain rolling boil and safe water top-up, no bone grinding; provenance caveat.",
+      "review_method": "ORIGINAL_RECIPE_PAGE_OPENED_AND_COMPARED_WITH_EDITORIAL_STEPS",
+      "review_date": "2026-11-19"
     },
     {
       "id": 55,
@@ -1031,10 +1043,13 @@
       "ingredient_excerpt": "10 oz thinly sliced pork belly / ½ gobo (burdock root) ((3.5 oz, 100 g)) / 3 taro (satoimo) ((8 oz, 230 g)) / 1 yellow onion ((6 oz, 170 g)) / 2½ inches daikon radish ((8.8 oz, 250 g)) / 4 inches carrot ((4.2 oz, 120 g)) / ½ block konnyaku (konjac) (",
       "method_excerpt": "Before You Start / To Prepare the Ingredients / To Cook the Tonjiru / To Finish the Soup / To Serve / To Store",
       "preliminary_basis": "ARCHIVED_SOURCE_EXCERPTS",
-      "ingredient_check": "PENDING_FULL_SINGLE_SOURCE_REVIEW",
-      "technique_check": "PENDING_FULL_SINGLE_SOURCE_REVIEW",
-      "time_check": "PENDING_FULL_SINGLE_SOURCE_REVIEW",
-      "approved": false
+      "ingredient_check": "PASS",
+      "technique_check": "PASS",
+      "time_check": "PASS",
+      "approved": true,
+      "review_note": "Just One Cookbook tonjiru uses pork belly, daikon, carrots/roots, miso and dashi, warm pork through and miso off the boil. Editorial uses comparable variant.",
+      "review_method": "ORIGINAL_RECIPE_PAGE_OPENED_AND_COMPARED_WITH_EDITORIAL_STEPS",
+      "review_date": "2026-11-19"
     },
     {
       "id": 56,
@@ -1047,10 +1062,13 @@
       "ingredient_excerpt": "1 piece kombu (dried kelp) ((4 x 4 inches, 10 x 10 cm per piece)) / 5 cups water ((for the kombu)) / 3 dried shiitake mushrooms / 1 cup water ((for the shiitake)) / 7 oz firm tofu ((½ 14-oz block)) / ½ package konnyaku (konjac) ((4.6 oz, 130 g)) / 7 ",
       "method_excerpt": "Gather all the ingredients. / To Prepare the Ingredients / To Cook the Kenchinjiru / To Serve / To Store",
       "preliminary_basis": "ARCHIVED_SOURCE_EXCERPTS",
-      "ingredient_check": "PENDING_FULL_SINGLE_SOURCE_REVIEW",
-      "technique_check": "PENDING_FULL_SINGLE_SOURCE_REVIEW",
-      "time_check": "PENDING_FULL_SINGLE_SOURCE_REVIEW",
-      "approved": false
+      "ingredient_check": "PASS",
+      "technique_check": "PASS",
+      "time_check": "PASS",
+      "approved": true,
+      "review_note": "Just One Cookbook kenchinjiru is root vegetables, tofu and mushrooms in plant dashi, stir-fried then gently cooked, matching editorial approach.",
+      "review_method": "ORIGINAL_RECIPE_PAGE_OPENED_AND_COMPARED_WITH_EDITORIAL_STEPS",
+      "review_date": "2026-11-19"
     },
     {
       "id": 57,
@@ -1063,10 +1081,13 @@
       "ingredient_excerpt": "1 chicken thigh / ¼ tsp Diamond Crystal kosher salt (use half the amount or the same weight for table salt) ((for the chicken)) / 1 Tbsp sake ((for the chicken)) / 4 stalks komatsuna ((3.5 oz, 100 g; or use spinach)) / yuzu zest ((optional)) / 4 spri",
       "method_excerpt": "Before You Start: Please note that this recipe calls for homemade dashi that takes a minimum of 20 minutes to make. Please see my recipe for How to Make Dashi. If you don‘t have time to make this Japanese soup stock from scra",
       "preliminary_basis": "ARCHIVED_SOURCE_EXCERPTS",
-      "ingredient_check": "PENDING_FULL_SINGLE_SOURCE_REVIEW",
-      "technique_check": "PENDING_FULL_SINGLE_SOURCE_REVIEW",
-      "time_check": "PENDING_FULL_SINGLE_SOURCE_REVIEW",
-      "approved": false
+      "ingredient_check": "PASS",
+      "technique_check": "PASS",
+      "time_check": "CONDITIONAL_READINESS",
+      "approved": false,
+      "review_note": "Just One Cookbook ozoni New Year soup with mochi, dashi, chicken, vegetables and greens. Editorial cooks chicken through and toasts mochi; mochi is sticky and can be choking hazard, needs small bites warning when served.",
+      "review_method": "ORIGINAL_RECIPE_PAGE_OPENED_AND_COMPARED_WITH_EDITORIAL_STEPS",
+      "review_date": "2026-11-19"
     },
     {
       "id": 58,
@@ -1079,10 +1100,13 @@
       "ingredient_excerpt": "Thinly sliced beef (komagire) 250g / Taro (satoimo) 6–8 (about 500 g) / Japanese leek (naganegi) 1 stalk / Maitake mushrooms 1 pack (about 100 g) / Konnyaku (labeled \"no pre-boiling needed\") 1 (about 250 g) / Dashi granules (Japanese soup stock) 1 ts",
       "method_excerpt": "Wash the taro in water to remove dirt, then wipe the surface dry with a paper towel or cloth (they slip when wet)。If your hands get itchy, wear plastic gloves。Put one on the cutting board and cut a little off the top and bott",
       "preliminary_basis": "ARCHIVED_SOURCE_EXCERPTS",
-      "ingredient_check": "PENDING_FULL_SINGLE_SOURCE_REVIEW",
-      "technique_check": "PENDING_FULL_SINGLE_SOURCE_REVIEW",
-      "time_check": "PENDING_FULL_SINGLE_SOURCE_REVIEW",
-      "approved": false
+      "ingredient_check": "PASS",
+      "technique_check": "PASS",
+      "time_check": "PASS",
+      "approved": true,
+      "review_note": "Recipin imoni contains taro, sliced beef, konnyaku, Japanese leek and soy-sugar dashi; editorial cooks taro until soft, adds beef later to avoid toughness.",
+      "review_method": "ORIGINAL_RECIPE_PAGE_OPENED_AND_COMPARED_WITH_EDITORIAL_STEPS",
+      "review_date": "2026-11-19"
     },
     {
       "id": 59,
@@ -1095,10 +1119,13 @@
       "ingredient_excerpt": "3 cups water / 1 piece kombu (dried kelp) ((10 g, 4 x 4 inches, 10 x 10 cm per piece)) / 1 cup katsuobushi (dried bonito flakes) / 1 Tbsp sake / 2 Tbsp mirin / 2 Tbsp soy sauce / 1 tsp Diamond Crystal kosher salt (use half the amount or the same weig",
       "method_excerpt": "To Make the Soba Broth from Scratch (without mentsuyu) / To Prepare the Toppings / To Cook the Soba Noodles / To Assemble / To Store / To Make the Quick Soba Broth (with Concentrated Mentsuyu; Optional)",
       "preliminary_basis": "ARCHIVED_SOURCE_EXCERPTS",
-      "ingredient_check": "PENDING_FULL_SINGLE_SOURCE_REVIEW",
-      "technique_check": "PENDING_FULL_SINGLE_SOURCE_REVIEW",
-      "time_check": "PENDING_FULL_SINGLE_SOURCE_REVIEW",
-      "approved": false
+      "ingredient_check": "PASS",
+      "technique_check": "PASS",
+      "time_check": "PASS",
+      "approved": true,
+      "review_note": "Just One Cookbook soba noodle soup uses soba cooked in separate water and hot dashi, mirin and soy; rinse noodles and serve promptly, correct.",
+      "review_method": "ORIGINAL_RECIPE_PAGE_OPENED_AND_COMPARED_WITH_EDITORIAL_STEPS",
+      "review_date": "2026-11-19"
     },
     {
       "id": 60,
@@ -1111,10 +1138,13 @@
       "ingredient_excerpt": "Dried horse mackerel (aji no himono) 1 / Firm tofu 1/2 block (150 g) / Cucumbers 1 stalk / Shiso leaves (ooba) 4 fillets / Ground white sesame seeds 2 tbsp / Cold water 400ml / Ice 6–8 / Miso 2 1/2 tbsp / Salt 1/4 tsp / Cooked rice 2 bowls (about 300",
       "method_excerpt": "Line a frying pan with the sheet and lay the dried fish on it flesh side down。Cook on medium heat for about 4 minutes。Turn over with a spatula and cook the skin side for 3–4 minutes。 / When the fish is cool enough to touch, r",
       "preliminary_basis": "ARCHIVED_SOURCE_EXCERPTS",
-      "ingredient_check": "PENDING_FULL_SINGLE_SOURCE_REVIEW",
-      "technique_check": "PENDING_FULL_SINGLE_SOURCE_REVIEW",
-      "time_check": "PENDING_FULL_SINGLE_SOURCE_REVIEW",
-      "approved": false
+      "ingredient_check": "PASS",
+      "technique_check": "PASS",
+      "time_check": "CONDITIONAL_READINESS",
+      "approved": false,
+      "review_note": "Recipin hiyajiru cold miso soup includes cooked dried fish, sesame, tofu, cucumber, shiso over cold rice; editorial uses cooked fish, miso and cold rice. Cook fish completely and refrigerate promptly before serving.",
+      "review_method": "ORIGINAL_RECIPE_PAGE_OPENED_AND_COMPARED_WITH_EDITORIAL_STEPS",
+      "review_date": "2026-11-19"
     },
     {
       "id": 61,
@@ -1757,6 +1787,6 @@
       "approved": false
     }
   ],
-  "quality_approved": 33,
-  "review_in_progress": 17
+  "quality_approved": 39,
+  "review_in_progress": 21
 }
