@@ -1,0 +1,770 @@
+{
+  "project": "НАШ ВЕЧЕР",
+  "country": "Корея",
+  "collection": "100 завтраков мира",
+  "recipe_count": 10,
+  "is_published": false,
+  "verification_level": "recipe draft, individual recipe editorial source crosscheck pending",
+  "recipes": [
+    {
+      "id": "breakfast-kr-61",
+      "collection_number": 61,
+      "country": "Корея",
+      "country_code": "KR",
+      "title": "Керан-ччим - нежный паровой омлет",
+      "original_name": "Gyeran-jjim",
+      "servings": 2,
+      "total_min": 25,
+      "ingredients": [
+        {
+          "name": "Яйца",
+          "amount": 4,
+          "unit": "шт."
+        },
+        {
+          "name": "Вода или анчоусный бульон",
+          "amount": 180,
+          "unit": "мл"
+        },
+        {
+          "name": "Зелёный лук",
+          "amount": 20,
+          "unit": "г"
+        },
+        {
+          "name": "Соль",
+          "amount": 3,
+          "unit": "г"
+        },
+        {
+          "name": "Кунжутное масло",
+          "amount": 5,
+          "unit": "мл"
+        }
+      ],
+      "steps": [
+        {
+          "text": "Взбей яйца с водой и солью до однородности, не образуя густой пены.",
+          "timer_sec": 0
+        },
+        {
+          "text": "Процеди смесь через сито в небольшую жаропрочную миску или корейский керамический горшочек.",
+          "timer_sec": 0
+        },
+        {
+          "text": "Поставь миску в пароварку над слабокипящей водой, накрой крышкой. Готовь 12–15 минут, не допуская сильного бурления.",
+          "timer_sec": 900
+        },
+        {
+          "text": "Проверь центр: он должен мягко дрожать, но не быть жидким. При необходимости прогрей ещё 2–3 минуты.",
+          "timer_sec": 180
+        },
+        {
+          "text": "Посыпь зелёным луком, добавь кунжутное масло и подай горячим.",
+          "timer_sec": 0
+        }
+      ],
+      "notes": "Нежная паровая текстура, без корочки жареного омлета.",
+      "source_verification": {
+        "status": "regional_culinary_reference_checked_individual_recipe_requires_final_check",
+        "country_reference_url": "https://www.maangchi.com/recipes/porridge"
+      },
+      "editorial_status": "complete_draft_pending_culinary_verification",
+      "photo_status": "deferred_by_user",
+      "publication_status": "unpublished"
+    },
+    {
+      "id": "breakfast-kr-62",
+      "collection_number": 62,
+      "country": "Корея",
+      "country_code": "KR",
+      "title": "Керан-мари - омлетный рулет",
+      "original_name": "Gyeran-mari",
+      "servings": 2,
+      "total_min": 20,
+      "ingredients": [
+        {
+          "name": "Яйца",
+          "amount": 4,
+          "unit": "шт."
+        },
+        {
+          "name": "Морковь",
+          "amount": 50,
+          "unit": "г"
+        },
+        {
+          "name": "Зелёный лук",
+          "amount": 25,
+          "unit": "г"
+        },
+        {
+          "name": "Молоко",
+          "amount": 25,
+          "unit": "мл"
+        },
+        {
+          "name": "Соль",
+          "amount": 3,
+          "unit": "г"
+        },
+        {
+          "name": "Растительное масло",
+          "amount": 15,
+          "unit": "мл"
+        }
+      ],
+      "steps": [
+        {
+          "text": "Морковь и зелёный лук нарежь очень мелко, чтобы рулет не рвался.",
+          "timer_sec": 0
+        },
+        {
+          "text": "Взбей яйца с молоком и солью, добавь овощи.",
+          "timer_sec": 0
+        },
+        {
+          "text": "Смажь небольшую сковороду тонким слоем масла. Влей четверть смеси; когда слой почти схватится, сверни рулетом.",
+          "timer_sec": 120
+        },
+        {
+          "text": "Сдвинь рулет к краю и влей следующую порцию яиц под его край. Повтори ещё 2–3 раза до конца смеси.",
+          "timer_sec": 360
+        },
+        {
+          "text": "Прогрей рулет до полной готовности яиц, немного остуди и нарежь ломтиками по 1,5 см.",
+          "timer_sec": 120
+        }
+      ],
+      "notes": "Это слоёный свёрнутый омлет с овощами внутри, не яичница с гарниром.",
+      "source_verification": {
+        "status": "regional_culinary_reference_checked_individual_recipe_requires_final_check",
+        "country_reference_url": "https://www.maangchi.com/recipes/porridge"
+      },
+      "editorial_status": "complete_draft_pending_culinary_verification",
+      "photo_status": "deferred_by_user",
+      "publication_status": "unpublished"
+    },
+    {
+      "id": "breakfast-kr-63",
+      "collection_number": 63,
+      "country": "Корея",
+      "country_code": "KR",
+      "title": "Керан-пап - рис с яйцом",
+      "original_name": "Gyeran-bap",
+      "servings": 2,
+      "total_min": 15,
+      "ingredients": [
+        {
+          "name": "Рис варёный горячий",
+          "amount": 320,
+          "unit": "г"
+        },
+        {
+          "name": "Яйца",
+          "amount": 2,
+          "unit": "шт."
+        },
+        {
+          "name": "Сливочное масло",
+          "amount": 20,
+          "unit": "г"
+        },
+        {
+          "name": "Соевый соус",
+          "amount": 18,
+          "unit": "мл"
+        },
+        {
+          "name": "Кунжутное масло",
+          "amount": 8,
+          "unit": "мл"
+        },
+        {
+          "name": "Зелёный лук",
+          "amount": 15,
+          "unit": "г"
+        },
+        {
+          "name": "Кунжут",
+          "amount": 10,
+          "unit": "г"
+        }
+      ],
+      "steps": [
+        {
+          "text": "Полностью разогрей уже сваренный рис и раздели между двумя мисками.",
+          "timer_sec": 180
+        },
+        {
+          "text": "На небольшой сковороде растопи половину сливочного масла, приготовь яйца до полностью схватившегося белка; желтки доведи до желаемой безопасной степени готовности.",
+          "timer_sec": 240
+        },
+        {
+          "text": "Положи по яйцу на рис, добавь оставшееся сливочное масло, соевый соус и кунжутное масло.",
+          "timer_sec": 0
+        },
+        {
+          "text": "Посыпь зелёным луком и кунжутом, перемешай непосредственно перед едой.",
+          "timer_sec": 0
+        }
+      ],
+      "notes": "Время 15 минут подразумевает уже приготовленный рис.",
+      "source_verification": {
+        "status": "regional_culinary_reference_checked_individual_recipe_requires_final_check",
+        "country_reference_url": "https://www.maangchi.com/recipes/porridge"
+      },
+      "editorial_status": "complete_draft_pending_culinary_verification",
+      "photo_status": "deferred_by_user",
+      "publication_status": "unpublished"
+    },
+    {
+      "id": "breakfast-kr-64",
+      "collection_number": 64,
+      "country": "Корея",
+      "country_code": "KR",
+      "title": "Коннамуль-кукпап - суп с проростками и рисом",
+      "original_name": "Kongnamul-gukbap",
+      "servings": 2,
+      "total_min": 30,
+      "ingredients": [
+        {
+          "name": "Соевые проростки",
+          "amount": 240,
+          "unit": "г"
+        },
+        {
+          "name": "Готовый рис",
+          "amount": 250,
+          "unit": "г"
+        },
+        {
+          "name": "Бульон анчоусный",
+          "amount": 750,
+          "unit": "мл"
+        },
+        {
+          "name": "Чеснок",
+          "amount": 2,
+          "unit": "зубчик"
+        },
+        {
+          "name": "Зелёный лук",
+          "amount": 25,
+          "unit": "г"
+        },
+        {
+          "name": "Соевый соус для супа",
+          "amount": 18,
+          "unit": "мл"
+        },
+        {
+          "name": "Соль",
+          "amount": 3,
+          "unit": "г"
+        },
+        {
+          "name": "Острый перец",
+          "amount": 5,
+          "unit": "г"
+        }
+      ],
+      "steps": [
+        {
+          "text": "Промой соевые проростки, отбрось увядшие. Чеснок и зелёный лук мелко нарежь.",
+          "timer_sec": 0
+        },
+        {
+          "text": "Доведи анчоусный бульон до кипения, добавь проростки и чеснок. Вари под крышкой 7–8 минут, чтобы убрать сырой вкус проростков.",
+          "timer_sec": 480
+        },
+        {
+          "text": "Приправь соевым соусом и солью, добавь острый перец по вкусу.",
+          "timer_sec": 0
+        },
+        {
+          "text": "Разогрей готовый рис, положи по порции в две глубокие миски, залей кипящим бульоном с проростками.",
+          "timer_sec": 180
+        },
+        {
+          "text": "Добавь зелёный лук и подавай очень горячим.",
+          "timer_sec": 0
+        }
+      ],
+      "notes": "Соевые проростки должны быть полноценно приготовлены. Не заменять их сырыми побегами в тарелке.",
+      "source_verification": {
+        "status": "regional_culinary_reference_checked_individual_recipe_requires_final_check",
+        "country_reference_url": "https://www.maangchi.com/recipes/porridge"
+      },
+      "editorial_status": "complete_draft_pending_culinary_verification",
+      "photo_status": "deferred_by_user",
+      "publication_status": "unpublished"
+    },
+    {
+      "id": "breakfast-kr-65",
+      "collection_number": 65,
+      "country": "Корея",
+      "country_code": "KR",
+      "title": "Чонбок-чук - рисовая каша с морепродуктами",
+      "original_name": "Jeonbok-juk",
+      "servings": 2,
+      "total_min": 75,
+      "ingredients": [
+        {
+          "name": "Морское ушко очищенное",
+          "amount": 160,
+          "unit": "г"
+        },
+        {
+          "name": "Круглозёрный рис",
+          "amount": 110,
+          "unit": "г"
+        },
+        {
+          "name": "Вода",
+          "amount": 800,
+          "unit": "мл"
+        },
+        {
+          "name": "Кунжутное масло",
+          "amount": 18,
+          "unit": "мл"
+        },
+        {
+          "name": "Морковь",
+          "amount": 55,
+          "unit": "г"
+        },
+        {
+          "name": "Соевый соус",
+          "amount": 12,
+          "unit": "мл"
+        },
+        {
+          "name": "Соль",
+          "amount": 3,
+          "unit": "г"
+        },
+        {
+          "name": "Зелёный лук",
+          "amount": 15,
+          "unit": "г"
+        }
+      ],
+      "steps": [
+        {
+          "text": "Рис промой и замочи на 25–30 минут. Морское ушко тщательно очисти, удали внутренности и нарежь очень тонко.",
+          "timer_sec": 1800
+        },
+        {
+          "text": "Морковь нарежь мелким кубиком. Нагрей кунжутное масло, быстро обжарь кусочки морского ушка 1–2 минуты.",
+          "timer_sec": 120
+        },
+        {
+          "text": "Добавь отцеженный рис и морковь, помешивай около 2 минут, чтобы рис стал слегка прозрачным.",
+          "timer_sec": 120
+        },
+        {
+          "text": "Влей 800 мл воды, доведи до кипения, убавь огонь и вари 25–35 минут до очень мягкой рисовой каши, часто помешивая.",
+          "timer_sec": 2100
+        },
+        {
+          "text": "Приправь соевым соусом и солью, прогрей морепродукт до полной готовности, подавай с зелёным луком.",
+          "timer_sec": 0
+        }
+      ],
+      "notes": "Jeonbok означает морское ушко, его нельзя без переименования подменять креветками или мидиями.",
+      "source_verification": {
+        "status": "regional_culinary_reference_checked_individual_recipe_requires_final_check",
+        "country_reference_url": "https://www.maangchi.com/recipes/porridge"
+      },
+      "editorial_status": "complete_draft_pending_culinary_verification",
+      "photo_status": "deferred_by_user",
+      "publication_status": "unpublished"
+    },
+    {
+      "id": "breakfast-kr-66",
+      "collection_number": 66,
+      "country": "Корея",
+      "country_code": "KR",
+      "title": "Хобак-чук - тыквенная каша",
+      "original_name": "Hobak-juk",
+      "servings": 2,
+      "total_min": 45,
+      "ingredients": [
+        {
+          "name": "Тыква сладкая очищенная",
+          "amount": 450,
+          "unit": "г"
+        },
+        {
+          "name": "Вода",
+          "amount": 430,
+          "unit": "мл"
+        },
+        {
+          "name": "Мука клейкого риса",
+          "amount": 55,
+          "unit": "г"
+        },
+        {
+          "name": "Вода холодная для муки",
+          "amount": 100,
+          "unit": "мл"
+        },
+        {
+          "name": "Сахар",
+          "amount": 25,
+          "unit": "г"
+        },
+        {
+          "name": "Соль",
+          "amount": 2,
+          "unit": "г"
+        }
+      ],
+      "steps": [
+        {
+          "text": "Тыкву нарежь кубиками по 2 см, сложи в кастрюлю с 430 мл воды.",
+          "timer_sec": 0
+        },
+        {
+          "text": "Доведи до кипения и вари 18–22 минуты под крышкой до полной мягкости тыквы.",
+          "timer_sec": 1320
+        },
+        {
+          "text": "Разомни или пробей блендером до однородного густого пюре.",
+          "timer_sec": 0
+        },
+        {
+          "text": "Разведи муку клейкого риса холодной водой до состояния однородной суспензии.",
+          "timer_sec": 0
+        },
+        {
+          "text": "Тонкой струйкой влей суспензию в горячую тыкву, постоянно перемешивая. Вари 5–7 минут, чтобы не осталось сырого мучного вкуса.",
+          "timer_sec": 420
+        },
+        {
+          "text": "Добавь сахар и соль, разложи тягучую оранжевую кашу в две миски.",
+          "timer_sec": 0
+        }
+      ],
+      "notes": "Мука нужна именно из клейкого риса, не обычная рисовая.",
+      "source_verification": {
+        "status": "regional_culinary_reference_checked_individual_recipe_requires_final_check",
+        "country_reference_url": "https://www.maangchi.com/recipes/porridge"
+      },
+      "editorial_status": "complete_draft_pending_culinary_verification",
+      "photo_status": "deferred_by_user",
+      "publication_status": "unpublished"
+    },
+    {
+      "id": "breakfast-kr-67",
+      "collection_number": 67,
+      "country": "Корея",
+      "country_code": "KR",
+      "title": "Нурунджи - рисовая каша из подрумяненного риса",
+      "original_name": "Nurungji",
+      "servings": 2,
+      "total_min": 35,
+      "ingredients": [
+        {
+          "name": "Рис отварной охлаждённый",
+          "amount": 300,
+          "unit": "г"
+        },
+        {
+          "name": "Вода",
+          "amount": 650,
+          "unit": "мл"
+        },
+        {
+          "name": "Соль",
+          "amount": 2,
+          "unit": "г"
+        }
+      ],
+      "steps": [
+        {
+          "text": "Возьми уже сваренный и быстро охлаждённый рис. Разомни тонким слоем 3–4 мм на сухой антипригарной сковороде.",
+          "timer_sec": 0
+        },
+        {
+          "text": "Нагревай на среднем-слабом огне 12–15 минут, пока снизу не образуется ровная золотисто-коричневая хрустящая корочка. Не допускай чёрного нагара.",
+          "timer_sec": 900
+        },
+        {
+          "text": "Остуди подрумяненный пласт пару минут и разломи на небольшие кусочки.",
+          "timer_sec": 120
+        },
+        {
+          "text": "Залей водой, доведи до кипения и вари 10–12 минут, пока хрустящие кусочки размягчатся и получится ароматная рисовая каша.",
+          "timer_sec": 720
+        },
+        {
+          "text": "Слегка посоли при желании и подавай горячей.",
+          "timer_sec": 0
+        }
+      ],
+      "notes": "Нурунджи делают из поджаренного уже сваренного риса, а не из сухой крупы.",
+      "source_verification": {
+        "status": "regional_culinary_reference_checked_individual_recipe_requires_final_check",
+        "country_reference_url": "https://www.maangchi.com/recipes/porridge"
+      },
+      "editorial_status": "complete_draft_pending_culinary_verification",
+      "photo_status": "deferred_by_user",
+      "publication_status": "unpublished"
+    },
+    {
+      "id": "breakfast-kr-68",
+      "collection_number": 68,
+      "country": "Корея",
+      "country_code": "KR",
+      "title": "Кимчи-поккымпап - жареный рис",
+      "original_name": "Kimchi-bokkeumbap",
+      "servings": 2,
+      "total_min": 20,
+      "ingredients": [
+        {
+          "name": "Рис отварной охлаждённый",
+          "amount": 320,
+          "unit": "г"
+        },
+        {
+          "name": "Кимчи ферментированная",
+          "amount": 180,
+          "unit": "г"
+        },
+        {
+          "name": "Лук репчатый",
+          "amount": 65,
+          "unit": "г"
+        },
+        {
+          "name": "Растительное масло",
+          "amount": 20,
+          "unit": "мл"
+        },
+        {
+          "name": "Кочуджан",
+          "amount": 18,
+          "unit": "г"
+        },
+        {
+          "name": "Соевый соус",
+          "amount": 12,
+          "unit": "мл"
+        },
+        {
+          "name": "Яйца",
+          "amount": 2,
+          "unit": "шт."
+        },
+        {
+          "name": "Кунжутное масло",
+          "amount": 8,
+          "unit": "мл"
+        }
+      ],
+      "steps": [
+        {
+          "text": "Отожми из кимчи лишний сок, нарежь мелкими кусочками; лук измельчи.",
+          "timer_sec": 0
+        },
+        {
+          "text": "Нагрей масло, обжарь лук 2–3 минуты, добавь кимчи и готовь ещё 3–4 минуты до карамелизации краёв.",
+          "timer_sec": 420
+        },
+        {
+          "text": "Вмешай кочуджан и рис. Жарь 4–5 минут, часто перемешивая, пока весь рис не станет равномерно горячим.",
+          "timer_sec": 300
+        },
+        {
+          "text": "Добавь соевый соус и кунжутное масло. Отдельно поджарь два яйца до полной готовности белков.",
+          "timer_sec": 240
+        },
+        {
+          "text": "Разложи жареный рис в две миски и положи по яйцу сверху.",
+          "timer_sec": 0
+        }
+      ],
+      "notes": "Для этого блюда подходит остывший правильно хранившийся рис. Не использовать рис, простоявший ночь при комнатной температуре.",
+      "source_verification": {
+        "status": "regional_culinary_reference_checked_individual_recipe_requires_final_check",
+        "country_reference_url": "https://www.maangchi.com/recipes/porridge"
+      },
+      "editorial_status": "complete_draft_pending_culinary_verification",
+      "photo_status": "deferred_by_user",
+      "publication_status": "unpublished"
+    },
+    {
+      "id": "breakfast-kr-69",
+      "collection_number": 69,
+      "country": "Корея",
+      "country_code": "KR",
+      "title": "Хвантхэ-кук - суп из сушёного минтая",
+      "original_name": "Hwangtae-guk",
+      "servings": 2,
+      "total_min": 35,
+      "ingredients": [
+        {
+          "name": "Сушёный минтай полосками без костей",
+          "amount": 75,
+          "unit": "г"
+        },
+        {
+          "name": "Редька дайкон",
+          "amount": 170,
+          "unit": "г"
+        },
+        {
+          "name": "Тофу",
+          "amount": 120,
+          "unit": "г"
+        },
+        {
+          "name": "Вода",
+          "amount": 850,
+          "unit": "мл"
+        },
+        {
+          "name": "Яйцо",
+          "amount": 1,
+          "unit": "шт."
+        },
+        {
+          "name": "Кунжутное масло",
+          "amount": 15,
+          "unit": "мл"
+        },
+        {
+          "name": "Чеснок",
+          "amount": 2,
+          "unit": "зубчик"
+        },
+        {
+          "name": "Зелёный лук",
+          "amount": 20,
+          "unit": "г"
+        },
+        {
+          "name": "Соевый соус для супа",
+          "amount": 15,
+          "unit": "мл"
+        }
+      ],
+      "steps": [
+        {
+          "text": "Промой сушёный минтай и замочи в холодной воде на 5–7 минут, затем аккуратно отожми. Проверь отсутствие костей.",
+          "timer_sec": 420
+        },
+        {
+          "text": "Дайкон нарежь тонкими брусочками, чеснок измельчи.",
+          "timer_sec": 0
+        },
+        {
+          "text": "Нагрей кунжутное масло, обжарь минтай с дайконом 2–3 минуты до появления аромата.",
+          "timer_sec": 180
+        },
+        {
+          "text": "Влей воду, доведи до кипения и вари на слабом огне 15–18 минут до мягкости дайкона и рыбы.",
+          "timer_sec": 1080
+        },
+        {
+          "text": "Добавь тофу, чеснок и соевый соус, прогрей 3 минуты. Влей взбитое яйцо, готовь до полного схватывания, добавь зелёный лук.",
+          "timer_sec": 180
+        }
+      ],
+      "notes": "Используется сушёный минтай (hwangtae), а не сырая треска.",
+      "source_verification": {
+        "status": "regional_culinary_reference_checked_individual_recipe_requires_final_check",
+        "country_reference_url": "https://www.maangchi.com/recipes/porridge"
+      },
+      "editorial_status": "complete_draft_pending_culinary_verification",
+      "photo_status": "deferred_by_user",
+      "publication_status": "unpublished"
+    },
+    {
+      "id": "breakfast-kr-70",
+      "collection_number": 70,
+      "country": "Корея",
+      "country_code": "KR",
+      "title": "Керан-ппан - яичные булочки",
+      "original_name": "Gyeran-ppang",
+      "servings": 2,
+      "total_min": 40,
+      "ingredients": [
+        {
+          "name": "Пшеничная мука",
+          "amount": 125,
+          "unit": "г"
+        },
+        {
+          "name": "Молоко",
+          "amount": 120,
+          "unit": "мл"
+        },
+        {
+          "name": "Яйцо для теста",
+          "amount": 1,
+          "unit": "шт."
+        },
+        {
+          "name": "Яйца для середины",
+          "amount": 4,
+          "unit": "шт."
+        },
+        {
+          "name": "Сахар",
+          "amount": 20,
+          "unit": "г"
+        },
+        {
+          "name": "Разрыхлитель",
+          "amount": 6,
+          "unit": "г"
+        },
+        {
+          "name": "Соль",
+          "amount": 3,
+          "unit": "г"
+        },
+        {
+          "name": "Растительное масло для форм",
+          "amount": 10,
+          "unit": "мл"
+        }
+      ],
+      "steps": [
+        {
+          "text": "Разогрей духовку до 180 °C. Смажь четыре глубокие порционные формы маслом.",
+          "timer_sec": 0
+        },
+        {
+          "text": "Смешай муку, разрыхлитель, сахар и соль. Отдельно взбей молоко и одно яйцо, соединяя с сухой смесью до гладкого теста.",
+          "timer_sec": 0
+        },
+        {
+          "text": "Разлей тесто по формам примерно на треть высоты.",
+          "timer_sec": 0
+        },
+        {
+          "text": "В каждую форму аккуратно разбей одно яйцо поверх теста, не перемешивая.",
+          "timer_sec": 0
+        },
+        {
+          "text": "Выпекай при 180 °C 18–23 минуты, пока тесто не поднимется и яйцо полностью не приготовится. Подай по две булочки на человека.",
+          "timer_sec": 1380
+        }
+      ],
+      "notes": "Яйцо должно запекаться прямо внутри верхней части булочки, не добавляться сырым при подаче.",
+      "source_verification": {
+        "status": "regional_culinary_reference_checked_individual_recipe_requires_final_check",
+        "country_reference_url": "https://www.maangchi.com/recipes/porridge"
+      },
+      "editorial_status": "complete_draft_pending_culinary_verification",
+      "photo_status": "deferred_by_user",
+      "publication_status": "unpublished"
+    }
+  ]
+}
