@@ -4,7 +4,7 @@
   "date": "2026-11-19",
   "disclaimer": "One selected original recipe per card. Archived excerpts are for preliminary triage, not proof of full reading or a culinary signoff. Timers require manual readiness and multi-phase checks. Previously recorded 3-URL comparisons remain as historical provenance and are not required. Full single-source reviews of first 4 completed, but recipe #2 needs alignment; approved count does not mean photographs or public publication are approved.",
   "total": 100,
-  "full_reviews_completed": 4,
+  "full_reviews_completed": 10,
   "recipes": [
     {
       "id": 1,
@@ -93,10 +93,13 @@
       "ingredient_excerpt": "Судак — 700 г Картофель — 4 шт. Морковь — 1 шт. Лук репчатый — 1 шт. Корень петрушки — 1 шт. Стебли петрушки — 6 шт. Масло сливочное — 20 г Лист лавровый — 1 шт. Перец душистый горошком — 6 шт. Соль — по вкусу Перец чёрный молотый — по вкусу",
       "method_excerpt": "Собираем всё по списку: рыбу, картофель, морковь, лук, коренья и стебли петрушки, специи. / Чистим судака от чешуи и срезаем плавники — удобнее всего ножницами, они у судака колючие. / Потрошим рыбу, вынимаем внутренности и о",
       "preliminary_basis": "ARCHIVED_SOURCE_EXCERPTS",
-      "ingredient_check": "PENDING_FULL_SINGLE_SOURCE_REVIEW",
-      "technique_check": "PENDING_FULL_SINGLE_SOURCE_REVIEW",
-      "time_check": "PENDING_FULL_SINGLE_SOURCE_REVIEW",
-      "approved": false
+      "ingredient_check": "PASS",
+      "technique_check": "PASS",
+      "time_check": "CONDITIONAL_READINESS",
+      "approved": false,
+      "review_note": "Fishub source uses fish stock from head/tail 30min, then vegetables and fish. Editorial 25-30min fish-stock stage and 5-8min fish fillet stage, unlike up-to-20min on source. Need explicit fillet-thickness/readiness check (opaque/flakes, 63C center where possible) before timer signoff.",
+      "review_method": "ORIGINAL_RECIPE_PAGE_READ_AND_COMPARED_WITH_EDITORIAL_STEPS",
+      "review_date": "2026-11-19"
     },
     {
       "id": 6,
@@ -109,26 +112,32 @@
       "ingredient_excerpt": "Говядина вареная / Картофель / Огурец / Редис / Лук зелёный / Укроп / Яйцо куриное (вареное вкрутую) / Сметана 10% (нежирная) / Горчица острая / Лимонный сок / Цедра лимона / Квас хлебный / Соль / Перец чёрный молотый",
       "method_excerpt": "Отварную говядину, картофель, огурцы и редис нарежьте кубиками со стороной 5 мм. Зеленый лук и зелень укропа мелко нарежьте. Перемешайте. / Яйца разделите на белок и желток. Белок нарежьте кубиками и добавьте в подготовленную",
       "preliminary_basis": "ARCHIVED_SOURCE_EXCERPTS",
-      "ingredient_check": "PENDING_FULL_SINGLE_SOURCE_REVIEW",
-      "technique_check": "PENDING_FULL_SINGLE_SOURCE_REVIEW",
-      "time_check": "PENDING_FULL_SINGLE_SOURCE_REVIEW",
-      "approved": false
+      "ingredient_check": "PASS",
+      "technique_check": "PASS",
+      "time_check": "PASS",
+      "approved": true,
+      "review_note": "Gastronom original uses pre-cooked beef, potato, egg, radish, cucumber, kvass, greens, mustard, sour cream, plus optional lemon; 4 portions. Editorial 2 portions omits citrus and mixes rather than whisking yolks into dressing. No active cooking timer; potatoes and eggs are pre-boiled and must be cooked to readiness.",
+      "review_method": "ORIGINAL_RECIPE_PAGE_READ_AND_COMPARED_WITH_EDITORIAL_STEPS",
+      "review_date": "2026-11-19"
     },
     {
       "id": 7,
       "title": "Зелёные щи со щавелем и яйцом",
       "cuisine": "Русская",
-      "url": "https://www.gastronom.ru/recipe/49499/zelenye-shchi-s-shchavelem-i-yajcom",
-      "source_position": 1,
-      "source_title": "Зеленые щи с щавелем и яйцом",
+      "url": "https://vkusvill.ru/media/recipes/zelenye-shchi.html",
+      "source_position": 2,
+      "source_title": "Зелёные щи — ВкусВилл",
       "access": "FETCHED_UNREVIEWED",
       "ingredient_excerpt": "бульон 1,5 л / молодая капуста 1/4 шт. / щавель 1 пучка / шпинат 1 пучка / зеленый лук 0,5 пучка / укроп 1/4 пучка / петрушка 1/4 пучка / Лук репчатый / масло растительное 2 ст.л. / картофель 2 шт. / отварное яйцо (для подачи) 2 шт.",
       "method_excerpt": "Подготовить продукты. Бульон можно использовать овощной или мясной по своему вкусу. / В кастрюлю влить растительное масло и пассеровать измельченный репчатый лук. / Влить к луку небольшое количество бульона и пюрировать смесь",
       "preliminary_basis": "ARCHIVED_SOURCE_EXCERPTS",
-      "ingredient_check": "PENDING_FULL_SINGLE_SOURCE_REVIEW",
-      "technique_check": "PENDING_FULL_SINGLE_SOURCE_REVIEW",
-      "time_check": "PENDING_FULL_SINGLE_SOURCE_REVIEW",
-      "approved": false
+      "ingredient_check": "PASS",
+      "technique_check": "PASS",
+      "time_check": "PASS",
+      "approved": true,
+      "review_note": "VkusVill original uses broth, sorrel with nettle, potatoes, onion, carrot and cooked egg with cream for serving; editorial uses only sorrel, an accepted simpler green shchi variation, with added 2-3min greens heating. 50min original includes preparation; timing for potato is condition-based.",
+      "review_method": "ORIGINAL_RECIPE_PAGE_READ_AND_COMPARED_WITH_EDITORIAL_STEPS",
+      "review_date": "2026-11-19"
     },
     {
       "id": 8,
@@ -141,10 +150,13 @@
       "ingredient_excerpt": "",
       "method_excerpt": "",
       "preliminary_basis": "ARCHIVED_SOURCE_EXCERPTS",
-      "ingredient_check": "PENDING_FULL_SINGLE_SOURCE_REVIEW",
-      "technique_check": "PENDING_FULL_SINGLE_SOURCE_REVIEW",
-      "time_check": "PENDING_FULL_SINGLE_SOURCE_REVIEW",
-      "approved": false
+      "ingredient_check": "PASS",
+      "technique_check": "PASS",
+      "time_check": "PASS",
+      "approved": true,
+      "review_note": "1901 Molokhovets botvinya uses sorrel, cucumber, spring onion, kvass, mustard/horseradish, cold served separately boiled fish. Editorial adapts with beet tops and spinach and white kvass on two servings; historically grounded cold assembly, fish is cooked separately until opaque/flaky. Historical measures and alcohol suggestions were not carried over.",
+      "review_method": "ORIGINAL_RECIPE_PAGE_READ_AND_COMPARED_WITH_EDITORIAL_STEPS",
+      "review_date": "2026-11-19"
     },
     {
       "id": 9,
@@ -157,10 +169,13 @@
       "ingredient_excerpt": "2 ст. л. растительное масло / 160 г желтый лук, нарезанный кубиками / 130 г морковь, нарезанная кубиками / 240 мл лук-порей, нарезанный ломтиками / 300 г картофель Юкон Голд, нарезанный кубиками / 1,4 л рыбный бульон / 240 мл соленые огурцы с укропом",
       "method_excerpt": "Разогрейте 2 ст. л. растительное масло в большой кастрюле на среднем огне. / Добавьте 160 г нарезанный кубиками желтый лук, 130 г нарезанная кубиками морковь и 240 мл нарезанный ломтиками лук-порей, готовьте 8 минут до мягкос",
       "preliminary_basis": "ARCHIVED_SOURCE_EXCERPTS",
-      "ingredient_check": "PENDING_FULL_SINGLE_SOURCE_REVIEW",
-      "technique_check": "PENDING_FULL_SINGLE_SOURCE_REVIEW",
-      "time_check": "PENDING_FULL_SINGLE_SOURCE_REVIEW",
-      "approved": false
+      "ingredient_check": "PASS",
+      "technique_check": "PASS",
+      "time_check": "CONDITIONAL_READINESS",
+      "approved": false,
+      "review_note": "TextualChef original fish kalya has salmon, pickles, pickle brine, vegetables and fish broth; editorial omits potato and leek, reduces fish and volume for two. Source simmers salmon 5-7min until 63C internal; editorial 6-8min plus another 3-5min after brine, which may OVERCOOK fish. Move brine addition earlier or decrease fish heat exposure, then repeat timer review.",
+      "review_method": "ORIGINAL_RECIPE_PAGE_READ_AND_COMPARED_WITH_EDITORIAL_STEPS",
+      "review_date": "2026-11-19"
     },
     {
       "id": 10,
@@ -173,10 +188,13 @@
       "ingredient_excerpt": "Грибы белые сушеные / Перловая крупа / Картофель / Морковь / Лук репчатый / Масло растительное рафинированное / Лавровый лист / Соль / Сметана 18% / Укроп",
       "method_excerpt": "Для приготовления супа из сушеных белых грибов с перловкой сухие белые грибы замочите в холодной воде на 20 минут. Затем воду слейте, грибы промойте. Вновь залейте холодной водой и оставьте на 2–3 часа. / Перловую крупу промо",
       "preliminary_basis": "ARCHIVED_SOURCE_EXCERPTS",
-      "ingredient_check": "PENDING_FULL_SINGLE_SOURCE_REVIEW",
-      "technique_check": "PENDING_FULL_SINGLE_SOURCE_REVIEW",
-      "time_check": "PENDING_FULL_SINGLE_SOURCE_REVIEW",
-      "approved": false
+      "ingredient_check": "PASS",
+      "technique_check": "PASS",
+      "time_check": "PASS",
+      "approved": true,
+      "review_note": "Gastronom original dried porcini, barley, potato, carrot, onion; soak mushrooms and barley, separately cook grains. Editorial two-serving variant soaks mushrooms 2-3h, cooks barley separately, then combines until soft; timings conditional on grain and potato readiness.",
+      "review_method": "ORIGINAL_RECIPE_PAGE_READ_AND_COMPARED_WITH_EDITORIAL_STEPS",
+      "review_date": "2026-11-19"
     },
     {
       "id": 11,
@@ -1619,6 +1637,6 @@
       "approved": false
     }
   ],
-  "quality_approved": 4,
-  "review_in_progress": 0
+  "quality_approved": 8,
+  "review_in_progress": 2
 }
