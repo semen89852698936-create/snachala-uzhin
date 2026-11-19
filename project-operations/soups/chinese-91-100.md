@@ -227,7 +227,7 @@
 
 **Источники для дальнейшей сверки:**
 1. https://thewoksoflife.com/red-vegetable-soup-shanghai-luo-song-tang/
-2. https://www.madewithlau.com/recipes/cantonese-borscht-soup
+2. https://www.jfdaily.com/sgh/detail?id=1712719
 3. https://www.osmancho.com/en/recipes/oz-siresinde-mal-eti-sorbasi-luosong-tang
 
 **Отличия региональных вариантов и выбор редакции:** Лосунтан имеет европейское происхождение, но китайскую переработанную технологию без свёклы. Третий URL требует проверки.
