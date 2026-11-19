@@ -1769,7 +1769,7 @@
         "https://goya.es/recetas/gazpacho-tradicional-andaluz"
       ],
       "full_editorial_markdown": "## №31. Гаспачо андалузский\n\n**На двоих. Время:** 20 минут + охлаждение.\n\n**Что понадобится:** Спелые томаты 650 г; огурец 100 г; зелёный сладкий перец 75 г; белый хлеб без корки 50 г; оливковое масло 35 мл; винный уксус 12 мл; чеснок 1/2 зубчика; холодная вода 80–130 мл; соль.\n\n**Готовим:**\n1. Замочи хлеб на 5 минут в небольшом количестве холодной воды, отожми.\n2. Нарежь томаты, очищенный огурец и зелёный перец; положи в чашу блендера с хлебом и чесноком.\n3. Пробей до однородности, добавь уксус и соль, постепенно влей масло, чтобы суп стал слегка эмульгированным.\n4. Протри через сито, при необходимости разбавь холодной водой.\n5. Убери в холодильник минимум на час. Подавай холодным, по желанию с очень мелко нарезанными овощами отдельно.\n\n**Как выглядит готовое блюдо:** Красная текучая томатная эмульсия, без густого хлебного крема; несколько мелких кубиков огурца и перца допустимы, не горка украшений.\n\n**Три независимых источника:**\n1. https://www.recetasderechupete.com/gazpacho-andaluz-una-receta-con-la-alegria-de-la-huerta-el-tomate/5701/\n2. https://www.elcorteingles.es/supermercado/recetas/gazpacho-andaluz-tradicional/\n3. https://goya.es/recetas/gazpacho-tradicional-andaluz\n\n**Сопоставление:** Гаспачо жиже сальморехо; хлеб может присутствовать, но в небольшом количестве.\n\n**Статус фото:** визуальная приёмка и утверждение не проведены.\n\n---",
-      "review_status": "редакционный черновик; источники, фото и контрольная готовка не приняты",
+      "review_status": "Три независимых рецепта содержательно сопоставлены; пробная готовка, фото и окончательная приёмка не завершены",
       "photo_approved": false,
       "steps": [
         "Замочи хлеб на 5 минут в небольшом количестве холодной воды, отожми.",
@@ -1789,9 +1789,29 @@
         "холодная вода 80–130 мл",
         "соль."
       ],
-      "recipe_source_audit_status": "URL_DOMAINS_LISTED_CONTENT_VERIFICATION_INCOMPLETE",
+      "recipe_source_audit_status": "THREE_INDEPENDENT_RECIPE_TEXTS_COMPARED",
       "visual_audit_status": "PENDING",
-      "photo_status": "PENDING_USER_APPROVAL"
+      "photo_status": "PENDING_USER_APPROVAL",
+      "source_content_evidence": {
+        "date": "2026-11-19",
+        "method": "Three separate original recipe publications inspected; compared ingredients and method and independently adapted servings to two",
+        "ingredients_comparison": "Томаты, огурец, зелёный перец, белый хлеб, оливковое масло, чеснок и уксус подтверждены тремя испанскими вариантами. 650 г спелых томатов и 50 г хлеба на двоих дают лёгкий питьевой суп.",
+        "technique_and_timer_comparison": "Ингредиенты пробивают блендером с хлебом, постепенно эмульгируют масло, охлаждают минимум час. De Rechupete позволяет больше хлеба и воды, El Corte Inglés использует максимально спелые томаты, Goya традиционную основу. Не подогревать.",
+        "sources": [
+          {
+            "url": "https://www.recetasderechupete.com/gazpacho-andaluz-una-receta-con-la-alegria-de-la-huerta-el-tomate/5701/",
+            "difference": "Хлеб+масло+томат, вариативное количество воды"
+          },
+          {
+            "url": "https://www.elcorteingles.es/supermercado/recetas/gazpacho-andaluz-tradicional/",
+            "difference": "Традиционный андалузский холодный гаспачо с перцем и огурцом"
+          },
+          {
+            "url": "https://goya.es/recetas/gazpacho-tradicional-andaluz",
+            "difference": "Овощной суп с чесноком, маслом и уксусом"
+          }
+        ]
+      }
     },
     {
       "id": 32,
@@ -1806,7 +1826,7 @@
         "https://www.bonappetit.com/recipe/salmorejo-cordob-s"
       ],
       "full_editorial_markdown": "## №32. Сальморехо кордобский\n\n**На двоих. Время:** 20 минут + охлаждение.\n\n**Что понадобится:** Томаты 600 г; вчерашний белый хлеб 120 г; оливковое масло 60 мл; чеснок 1/2 зубчика; соль 5 г; яйцо 1 шт.; хамон серрано 40 г.\n\n**Готовим:**\n1. Отвари яйцо вкрутую 9–10 минут после закипания, охлади и нарежь.\n2. Разрежь спелые томаты, пробей до гладкости и протри через сито при желании.\n3. Добавь мякиш хлеба и дай ему пропитаться томатом 10 минут.\n4. Снова пробей с чесноком и солью; тонкой струйкой вливай оливковое масло до густой шелковистой эмульсии.\n5. Охлади. Разлей по мискам и добавь немного рубленого варёного яйца и хамона.\n\n**Как выглядит готовое блюдо:** Насыщенно-коралловая, почти пюреобразная густая холодная масса с маленькой щепоткой яйца и хамона; не жидкий гаспачо.\n\n**Три независимых источника:**\n1. https://www.spain.info/en/recipe/salmorejo/\n2. https://www.rtve.es/television/20230922/receta-salmorejo-cordobes-trucos-secretos-pan-miga/2456481.shtml\n3. https://www.bonappetit.com/recipe/salmorejo-cordob-s\n\n**Сопоставление:** Традиционная эмульсия на хлебе и масле, без сливок.\n\n**Статус фото:** визуальная приёмка и утверждение не проведены.\n\n---",
-      "review_status": "редакционный черновик; источники, фото и контрольная готовка не приняты",
+      "review_status": "Три независимых рецепта содержательно сопоставлены; пробная готовка, фото и окончательная приёмка не завершены",
       "photo_approved": false,
       "steps": [
         "Отвари яйцо вкрутую 9–10 минут после закипания, охлади и нарежь.",
@@ -1824,9 +1844,29 @@
         "яйцо 1 шт.",
         "хамон серрано 40 г."
       ],
-      "recipe_source_audit_status": "URL_DOMAINS_LISTED_CONTENT_VERIFICATION_INCOMPLETE",
+      "recipe_source_audit_status": "THREE_INDEPENDENT_RECIPE_TEXTS_COMPARED",
       "visual_audit_status": "PENDING",
-      "photo_status": "PENDING_USER_APPROVAL"
+      "photo_status": "PENDING_USER_APPROVAL",
+      "source_content_evidence": {
+        "date": "2026-11-19",
+        "method": "Three separate original recipe publications inspected; compared ingredients and method and independently adapted servings to two",
+        "ingredients_comparison": "Томаты, хлеб, чеснок, оливковое масло, соль и подача с варёным яйцом и хамоном подтверждены Spain.info, RTVE и Bon Appétit. Нет зелёного перца и сельдерея, отличающих ненужную вариацию от классики.",
+        "technique_and_timer_comparison": "Протёртые томаты пропитывают хлеб, масло эмульгируют при взбивании, охлаждают, яйцо готовят вкрутую отдельно. На двоих 600 г томата, 120 г хлеба и 60 мл масла дают характерную плотную текстуру, в отличие от гаспачо.",
+        "sources": [
+          {
+            "url": "https://www.spain.info/en/recipe/salmorejo/",
+            "difference": "Испанский официальный рецепт кордобского сальморехо"
+          },
+          {
+            "url": "https://www.rtve.es/television/20230922/receta-salmorejo-cordobes-trucos-secretos-pan-miga/2456481.shtml",
+            "difference": "RTVE: хлеб и помидоры пюрируют с маслом, охлаждают, хамон и яйцо сверху"
+          },
+          {
+            "url": "https://www.bonappetit.com/recipe/salmorejo-cordob-s",
+            "difference": "Bon Appétit допускает вариации пропорций томата, хлеба и чеснока"
+          }
+        ]
+      }
     },
     {
       "id": 33,
@@ -1841,7 +1881,7 @@
         "https://www.theguardian.com/food/2020/jun/10/david-athertons-recipe-for-ajo-blanco-cold-soup-andalucian-classic"
       ],
       "full_editorial_markdown": "## №33. Ахобланко с миндалём\n\n**На двоих. Время:** 15 минут + охлаждение.\n\n**Что понадобится:** Миндаль очищенный 130 г; белый хлеб без корки 70 г; холодная вода 500 мл; чеснок 1/2 зубчика; оливковое масло 40 мл; хересный уксус 12 мл; соль; белый виноград 10 ягод для подачи.\n\n**Готовим:**\n1. Замочи миндаль в холодной воде на 30 минут, хлеб размочи в небольшом количестве воды.\n2. Переложи миндаль, хлеб, чеснок и часть воды в блендер, пробей до максимально гладкой массы.\n3. Добавь уксус и соль, тонкой струйкой введи масло, затем оставшуюся воду.\n4. Протри суп через мелкое сито, полностью охлади 1–2 часа.\n5. Разлей по мискам и добавь несколько половинок виноградин без косточек.\n\n**Как выглядит готовое блюдо:** Белый холодный миндальный суп, абсолютно гладкий, несколько виноградин; без помидоров и зелёного гороха.\n\n**Три независимых источника:**\n1. https://www.bbcgoodfood.com/recipes/ajo-blanco\n2. https://www.bonappetit.com/recipe/ajo-blanco\n3. https://www.theguardian.com/food/2020/jun/10/david-athertons-recipe-for-ajo-blanco-cold-soup-andalucian-classic\n\n**Сопоставление:** Соотношение хлеба и миндаля отличается; выбран достаточно лёгкий вариант с миндальным вкусом.\n\n**Статус фото:** визуальная приёмка и утверждение не проведены.\n\n---",
-      "review_status": "редакционный черновик; источники, фото и контрольная готовка не приняты",
+      "review_status": "Три независимых рецепта содержательно сопоставлены; пробная готовка, фото и окончательная приёмка не завершены",
       "photo_approved": false,
       "steps": [
         "Замочи миндаль в холодной воде на 30 минут, хлеб размочи в небольшом количестве воды.",
@@ -1860,9 +1900,29 @@
         "соль",
         "белый виноград 10 ягод для подачи."
       ],
-      "recipe_source_audit_status": "URL_DOMAINS_LISTED_CONTENT_VERIFICATION_INCOMPLETE",
+      "recipe_source_audit_status": "THREE_INDEPENDENT_RECIPE_TEXTS_COMPARED",
       "visual_audit_status": "PENDING",
-      "photo_status": "PENDING_USER_APPROVAL"
+      "photo_status": "PENDING_USER_APPROVAL",
+      "source_content_evidence": {
+        "date": "2026-11-19",
+        "method": "Three separate original recipe publications inspected; compared ingredients and method and independently adapted servings to two",
+        "ingredients_comparison": "Основа из бланшированного миндаля, белого хлеба, чеснока, оливкового масла, уксуса и холодной воды согласуется со всеми тремя публикациями. Виноград присутствует в Bon Appétit, другие источники допускают альтернативный гарнир.",
+        "technique_and_timer_comparison": "Миндаль с размоченным хлебом измельчают до гладкости, масло вводят для эмульсии, охлаждают до подачи. BBC Good Food охлаждает около часа, Guardian рекомендует холодные ингредиенты; вариант Bon Appétit с яблоком и молоком отличается, их в редакции нет.",
+        "sources": [
+          {
+            "url": "https://www.bbcgoodfood.com/recipes/ajo-blanco",
+            "difference": "Простой постный миндальный суп, хлеб размочить 10 минут, 1 час охлаждения"
+          },
+          {
+            "url": "https://www.bonappetit.com/recipe/ajo-blanco",
+            "difference": "Добавлены яблоко, молоко и виноград; вариант не повторяем"
+          },
+          {
+            "url": "https://www.theguardian.com/food/2020/jun/10/david-athertons-recipe-for-ajo-blanco-cold-soup-andalucian-classic",
+            "difference": "Холодный миндальный суп с чесноком и хлебом"
+          }
+        ]
+      }
     },
     {
       "id": 34,
@@ -1877,7 +1937,7 @@
         "https://www.rtve.es/television/20230810/sopa-castellana-receta-origen-semana-santa/2453763.shtml"
       ],
       "full_editorial_markdown": "## №34. Сопа де ахо, кастильский чесночный суп\n\n**На двоих. Время:** 35 минут.\n\n**Что понадобится:** Хлеб вчерашний 100 г; чеснок 5 зубчиков; сладкая паприка 1 ч. л.; яйца 2 шт.; вода либо мясной бульон 800 мл; оливковое масло 25 мл; хамон 50 г (по желанию); соль.\n\n**Готовим:**\n1. Нарежь хлеб ломтиками, чеснок тонкими пластинками.\n2. Подогрей оливковое масло, на низком огне прогрей чеснок 2 минуты до едва золотистого цвета.\n3. Добавь паприку, быстро перемешай и сразу влей бульон, чтобы паприка не подгорела.\n4. Положи хлеб и, если используешь, немного хамона, вари 12–15 минут до размягчения хлеба.\n5. Аккуратно разбей в суп два яйца, накрой на 3–4 минуты до схватывания белка. Подавай горячим.\n\n**Как выглядит готовое блюдо:** Золотисто-красноватый бульон с разварившимся хлебом и яйцом, без огромных целых чесночных головок.\n\n**Три независимых источника:**\n1. https://www.turismocastillalamancha.es/es/enogastronomia/raiz-culinaria/recetas/sopa-de-ajo-o-sopa-castellana\n2. https://www.directoalpaladar.com/recetas-de-sopas-y-cremas/como-hacer-sopa-ajo-receta-sopa-castellana-tradicional/amp\n3. https://www.rtve.es/television/20230810/sopa-castellana-receta-origen-semana-santa/2453763.shtml\n\n**Сопоставление:** Яйцо и ветчина опциональны в старых бедных вариантах, но в современной подаче уместны.\n\n**Статус фото:** визуальная приёмка и утверждение не проведены.\n\n---",
-      "review_status": "редакционный черновик; источники, фото и контрольная готовка не приняты",
+      "review_status": "Три независимых рецепта содержательно сопоставлены; пробная готовка, фото и окончательная приёмка не завершены",
       "photo_approved": false,
       "steps": [
         "Нарежь хлеб ломтиками, чеснок тонкими пластинками.",
@@ -1896,9 +1956,29 @@
         "хамон 50 г (по желанию)",
         "соль."
       ],
-      "recipe_source_audit_status": "URL_DOMAINS_LISTED_CONTENT_VERIFICATION_INCOMPLETE",
+      "recipe_source_audit_status": "THREE_INDEPENDENT_RECIPE_TEXTS_COMPARED",
       "visual_audit_status": "PENDING",
-      "photo_status": "PENDING_USER_APPROVAL"
+      "photo_status": "PENDING_USER_APPROVAL",
+      "source_content_evidence": {
+        "date": "2026-11-19",
+        "method": "Three separate original recipe publications inspected; compared ingredients and method and independently adapted servings to two",
+        "ingredients_comparison": "Вчерашний хлеб, чеснок, сладкая паприка, оливковое масло, горячий бульон и яйца подтверждены туризмом Кастилии, Directo al Paladar и RTVE. Хамон факультативен.",
+        "technique_and_timer_comparison": "Чеснок слегка прогреть без сильного подрумянивания, паприку добавлять перед бульоном, чтобы не сгорела, хлеб размочить 12–15 минут, яйца вводить в конце и готовить до схватывания. Directo al Paladar в ряде вариантов отдельно поджаривает хлеб.",
+        "sources": [
+          {
+            "url": "https://www.turismocastillalamancha.es/es/enogastronomia/raiz-culinaria/recetas/sopa-de-ajo-o-sopa-castellana",
+            "difference": "Региональный кастильский суп на хлебе и чесноке"
+          },
+          {
+            "url": "https://www.directoalpaladar.com/recetas-de-sopas-y-cremas/como-hacer-sopa-ajo-receta-sopa-castellana-tradicional/amp",
+            "difference": "Хлеб, чеснок, паприка, хамон/яйцо и горячий бульон"
+          },
+          {
+            "url": "https://www.rtve.es/television/20230810/sopa-castellana-receta-origen-semana-santa/2453763.shtml",
+            "difference": "RTVE домашний способ sopa castellana с яйцом"
+          }
+        ]
+      }
     },
     {
       "id": 35,
@@ -1913,7 +1993,7 @@
         "https://www.directoalpaladar.com/recetas-de-legumbres-y-verduras/receta-de-caldo-gallego-cocinado-a-fuego-lento"
       ],
       "full_editorial_markdown": "## №35. Кальдо гальего\n\n**На двоих. Время:** 100 минут с готовой фасолью.\n\n**Что понадобится:** Белая фасоль варёная 200 г; картофель 220 г; листовая капуста либо ботва репы 200 г; копчёный свиной окорок 180 г; чоризо 70 г; вода 1 л; соль, по необходимости.\n\n**Готовим:**\n1. Залей свинину водой, доведи до кипения и вари на слабом огне 45–60 минут до мягкости. Убери пену.\n2. Промой капустную зелень, удали жёсткие жилки, нарежь короткими полосками.\n3. Добавь картофель, нарезанный неровными кусками, и чоризо; вари 15 минут.\n4. Добавь готовую фасоль и зелень, томи ещё 15–20 минут до мягкости зелени. Часть картофеля можно размять о стенку для густоты.\n5. Достань свинину, нарежь и верни в суп; проверь соль, подавай горячим.\n\n**Как выглядит готовое блюдо:** Почти бесцветный/слегка золотистый бульон с белой фасолью, мягкой зеленью, картофелем и ломтиками чоризо; не томатный суп.\n\n**Три независимых источника:**\n1. https://www.spain.info/es/receta/caldo-gallego/\n2. https://www.recetasderechupete.com/caldo-gallego-receta-tradicional-gallega/4365/\n3. https://www.directoalpaladar.com/recetas-de-legumbres-y-verduras/receta-de-caldo-gallego-cocinado-a-fuego-lento\n\n**Сопоставление:** Свинина и чоризо зависят от региона; основа здесь фасоль, картофель и листья репы либо капуста.\n\n**Статус фото:** визуальная приёмка и утверждение не проведены.\n\n---",
-      "review_status": "редакционный черновик; источники, фото и контрольная готовка не приняты",
+      "review_status": "Три независимых рецепта содержательно сопоставлены; пробная готовка, фото и окончательная приёмка не завершены",
       "photo_approved": false,
       "steps": [
         "Залей свинину водой, доведи до кипения и вари на слабом огне 45–60 минут до мягкости. Убери пену.",
@@ -1931,9 +2011,29 @@
         "вода 1 л",
         "соль, по необходимости."
       ],
-      "recipe_source_audit_status": "URL_DOMAINS_LISTED_CONTENT_VERIFICATION_INCOMPLETE",
+      "recipe_source_audit_status": "THREE_INDEPENDENT_RECIPE_TEXTS_COMPARED",
       "visual_audit_status": "PENDING",
-      "photo_status": "PENDING_USER_APPROVAL"
+      "photo_status": "PENDING_USER_APPROVAL",
+      "source_content_evidence": {
+        "date": "2026-11-19",
+        "method": "Three separate original recipe publications inspected; compared ingredients and method and independently adapted servings to two",
+        "ingredients_comparison": "Белая фасоль, картофель, галисийская листовая зелень, свинина и чоризо составляют основу. В редакционной версии варёная фасоль и готовое копчёное мясо, поэтому время меньше, чем в национальном рецепте с сухими бобами.",
+        "technique_and_timer_comparison": "Сначала прогреть/разварить копчёное мясо в воде 45–60 минут, затем картофель, чоризо, готовая фасоль и зелень на последние 15–20. Spain.info и De Rechupete также описывают мясо и бобы, Directo al Paladar варит традиционную основу значительно дольше. Не класть сырую сухую фасоль в этот короткий рецепт.",
+        "sources": [
+          {
+            "url": "https://www.spain.info/es/receta/caldo-gallego/",
+            "difference": "Официальный галисийский овощной мясной caldo"
+          },
+          {
+            "url": "https://www.recetasderechupete.com/caldo-gallego-receta-tradicional-gallega/4365/",
+            "difference": "Сухие бобы и длительная варка с солёным свиным мясом"
+          },
+          {
+            "url": "https://www.directoalpaladar.com/recetas-de-legumbres-y-verduras/receta-de-caldo-gallego-cocinado-a-fuego-lento",
+            "difference": "Традиционная томлёная похлёбка, варка бобов до мягкости"
+          }
+        ]
+      }
     },
     {
       "id": 36,
@@ -1948,7 +2048,7 @@
         "https://www.centrallecheraasturiana.es/recetas/porrusalda/"
       ],
       "full_editorial_markdown": "## №36. Поррусальда с луком-пореем\n\n**На двоих. Время:** 45 минут.\n\n**Что понадобится:** Лук-порей 350 г; картофель 300 г; морковь 100 г; овощной бульон 850 мл; оливковое масло 25 мл; соль; петрушка немного.\n\n**Готовим:**\n1. Промой порей между слоями и нарежь белую и светло-зелёную части широкими кольцами.\n2. Картофель очисти и разломи ножом на неровные куски, морковь нарежь кружками.\n3. В кастрюле прогрей порей и морковь с маслом 6–8 минут, не зажаривая.\n4. Добавь картофель и бульон, вари при тихом кипении 20–25 минут до размягчения картофеля.\n5. Посоли после пробы и подавай с небольшим количеством зелени, не измельчая в пюре.\n\n**Как выглядит готовое блюдо:** Светлый баскский овощной суп с широкими кольцами лука-порея, кусками картофеля и моркови, а не гладкая вишисуаз.\n\n**Три независимых источника:**\n1. https://www.spain.info/en/recipe/porrusalda/\n2. https://www.bascofinefoods.com/spanish-recipes/porrusalda/\n3. https://www.centrallecheraasturiana.es/recetas/porrusalda/\n\n**Сопоставление:** В источниках встречается тыква, но в базовой повседневной версии её можно опустить.\n\n**Статус фото:** визуальная приёмка и утверждение не проведены.\n\n---",
-      "review_status": "редакционный черновик; источники, фото и контрольная готовка не приняты",
+      "review_status": "Три независимых рецепта содержательно сопоставлены; пробная готовка, фото и окончательная приёмка не завершены",
       "photo_approved": false,
       "steps": [
         "Промой порей между слоями и нарежь белую и светло-зелёную части широкими кольцами.",
@@ -1966,9 +2066,29 @@
         "соль",
         "петрушка немного."
       ],
-      "recipe_source_audit_status": "URL_DOMAINS_LISTED_CONTENT_VERIFICATION_INCOMPLETE",
+      "recipe_source_audit_status": "THREE_INDEPENDENT_RECIPE_TEXTS_COMPARED",
       "visual_audit_status": "PENDING",
-      "photo_status": "PENDING_USER_APPROVAL"
+      "photo_status": "PENDING_USER_APPROVAL",
+      "source_content_evidence": {
+        "date": "2026-11-19",
+        "method": "Three separate original recipe publications inspected; compared ingredients and method and independently adapted servings to two",
+        "ingredients_comparison": "Лук-порей, картофель, морковь, бульон и оливковое масло подтверждены Spain.info, Basco и Central Lechera. Basco использует рыбный бульон и треску в альтернативной версии; в редакционной овощной трески нет.",
+        "technique_and_timer_comparison": "Порей тщательно промыть, припустить с морковью без зажаривания, картофель варить до мягкости 20–25 минут. Central Lechera указывает около 35 минут всего, Basco богаче по ингредиентам, Spain.info базовый суп из порея.",
+        "sources": [
+          {
+            "url": "https://www.spain.info/en/recipe/porrusalda/",
+            "difference": "Порей и картофель, классическая овощная porrusalda"
+          },
+          {
+            "url": "https://www.bascofinefoods.com/spanish-recipes/porrusalda/",
+            "difference": "Вариант с дополнительной солёной треской и большим количеством овощей"
+          },
+          {
+            "url": "https://www.centrallecheraasturiana.es/recetas/porrusalda/",
+            "difference": "Овощной суп, бульон предварительно приготовлен, около 35 минут"
+          }
+        ]
+      }
     },
     {
       "id": 37,
@@ -1983,7 +2103,7 @@
         "https://mercadomalaga.es/en/recipes/fish/gazpachuelo-white-fish-soup/"
       ],
       "full_editorial_markdown": "## №37. Гаспачуэло малагский с рыбой\n\n**На двоих. Время:** 50 минут.\n\n**Что понадобится:** Белая рыба без костей 280 г; картофель 170 г; креветки очищенные 100 г; рыбный бульон 700 мл; готовый майонез из пастеризованных яиц 90 г; лимон 1 ч. л. сока; соль.\n\n**Готовим:**\n1. В кипящем рыбном бульоне вари картофель кубиками 12–15 минут, пока он почти не размягчится.\n2. Добавь рыбу кусками и креветки, томи ещё 5–7 минут до готовности морепродуктов, не допускай активного кипения.\n3. Отлей в отдельную миску 100 мл тёплого бульона, немного остуди.\n4. Взбей майонез с тёплым, но не горячим бульоном, понемногу добавляя ещё жидкость, пока не получится однородная заправка.\n5. Сними суп с огня и вмешай заправку. После этого НЕ кипяти, иначе она свернётся. Добавь пару капель лимона.\n\n**Как выглядит готовое блюдо:** Нежный светло-молочный горячий суп с кусочками белой рыбы и картофеля, без сливок, без красной томатной основы.\n\n**Три независимых источника:**\n1. https://canalcocina.es/receta/gazpachuelo-malagueno\n2. https://malagagastronomyguide.com/en/gazpachuelo-2/\n3. https://mercadomalaga.es/en/recipes/fish/gazpachuelo-white-fish-soup/\n\n**Сопоставление:** Майонез эмульгируют отдельно, вводят вне огня; это принципиально не холодный гаспачо.\n\n**Статус фото:** визуальная приёмка и утверждение не проведены.\n\n---",
-      "review_status": "редакционный черновик; источники, фото и контрольная готовка не приняты",
+      "review_status": "Три независимых рецепта содержательно сопоставлены; пробная готовка, фото и окончательная приёмка не завершены",
       "photo_approved": false,
       "steps": [
         "В кипящем рыбном бульоне вари картофель кубиками 12–15 минут, пока он почти не размягчится.",
@@ -2001,9 +2121,29 @@
         "лимон 1 ч. л. сока",
         "соль."
       ],
-      "recipe_source_audit_status": "URL_DOMAINS_LISTED_CONTENT_VERIFICATION_INCOMPLETE",
+      "recipe_source_audit_status": "THREE_INDEPENDENT_RECIPE_TEXTS_COMPARED",
       "visual_audit_status": "PENDING",
-      "photo_status": "PENDING_USER_APPROVAL"
+      "photo_status": "PENDING_USER_APPROVAL",
+      "source_content_evidence": {
+        "date": "2026-11-19",
+        "method": "Three separate original recipe publications inspected; compared ingredients and method and independently adapted servings to two",
+        "ingredients_comparison": "Рыба, картофель, креветки, рыбный бульон и разбавленный майонезный соус подтверждены тремя публикациями. Malaga Gastronomy Guide подчёркивает, что изначально это суп рыбаков; майонез обязателен в выбранном варианте.",
+        "technique_and_timer_comparison": "Картофель варить 12–15 минут, рыбу и креветки добавить ближе к концу на 5–7 минут до готовности, затем после снятия с огня постепенно ввести темперированный майонез. Mercado Malaga рекомендует 2 минуты для мелких креветок, значит интервал зависит от толщины рыбы; не кипятить после заправки.",
+        "sources": [
+          {
+            "url": "https://canalcocina.es/receta/gazpachuelo-malagueno",
+            "difference": "Малагский майонезный рыбный суп, пропорции изменены"
+          },
+          {
+            "url": "https://malagagastronomyguide.com/en/gazpachuelo-2/",
+            "difference": "Гастрономическая история Малаги, рыба, картофель и майонез"
+          },
+          {
+            "url": "https://mercadomalaga.es/en/recipes/fish/gazpachuelo-white-fish-soup/",
+            "difference": "Рыбный бульон из отходов, картофель, белая рыба и креветки, майонез"
+          }
+        ]
+      }
     },
     {
       "id": 38,
@@ -2018,7 +2158,7 @@
         "https://canalcocina.es/receta/sopa-picadillo-puchero-andaluz"
       ],
       "full_editorial_markdown": "## №38. Сопа де пикадильо\n\n**На двоих. Время:** 70 минут с готовым бульоном быстрее.\n\n**Что понадобится:** Курица на кости 400 г; вода 1,2 л; хамон серрано 50 г; яйца 2 шт.; тонкая вермишель 60 г; морковь 70 г; лук 70 г; мята свежая несколько листьев; соль.\n\n**Готовим:**\n1. Свари из курицы, лука и моркови бульон, снимая пену, около 45 минут. Процеди и отдели куриное мясо от костей.\n2. Отвари яйца вкрутую 9–10 минут, очисти и мелко нарежь.\n3. Верни процеженный бульон на огонь, добавь вермишель и вари по упаковке 3–6 минут.\n4. Мелко нарежь курицу и хамон; положи в бульон на 2 минуты, попробуй на соль.\n5. Разлей по тарелкам, добавь рубленое варёное яйцо и совсем немного свежей мяты.\n\n**Как выглядит готовое блюдо:** Ясный золотистый куриный бульон с мелкой лапшой, кусочками курицы, хамона и яйца; не густой крем.\n\n**Три независимых источника:**\n1. https://www.spain.info/en/recipe/sopa-picadillo/\n2. https://visitsouthernspain.com/picadillo-soup-recipe/\n3. https://canalcocina.es/receta/sopa-picadillo-puchero-andaluz\n\n**Сопоставление:** В некоторых рецептах есть рис вместо вермишели и нут, выбрана лапша для вечернего варианта.\n\n**Статус фото:** визуальная приёмка и утверждение не проведены.\n\n---",
-      "review_status": "редакционный черновик; источники, фото и контрольная готовка не приняты",
+      "review_status": "Три независимых рецепта содержательно сопоставлены; пробная готовка, фото и окончательная приёмка не завершены",
       "photo_approved": false,
       "steps": [
         "Свари из курицы, лука и моркови бульон, снимая пену, около 45 минут. Процеди и отдели куриное мясо от костей.",
@@ -2038,9 +2178,29 @@
         "мята свежая несколько листьев",
         "соль."
       ],
-      "recipe_source_audit_status": "URL_DOMAINS_LISTED_CONTENT_VERIFICATION_INCOMPLETE",
+      "recipe_source_audit_status": "THREE_INDEPENDENT_RECIPE_TEXTS_COMPARED",
       "visual_audit_status": "PENDING",
-      "photo_status": "PENDING_USER_APPROVAL"
+      "photo_status": "PENDING_USER_APPROVAL",
+      "source_content_evidence": {
+        "date": "2026-11-19",
+        "method": "Three separate original recipe publications inspected; compared ingredients and method and independently adapted servings to two",
+        "ingredients_comparison": "Куриный бульон, курица, тонкая вермишель, яйцо и хамон серрано подтверждены тремя версиями. Морковь и лук для бульона, немного мяты для подачи - редакционная адаптация.",
+        "technique_and_timer_comparison": "Куриный бульон варить около 45 минут, яйца вкрутую 9–10 минут, вермишель 3–6 минут по упаковке, мясо и хамон прогреть в готовом бульоне. Canal Cocina делает более долгий андалузский пучеро, но рецепт с готовым бульоном существенно быстрее.",
+        "sources": [
+          {
+            "url": "https://www.spain.info/en/recipe/sopa-picadillo/",
+            "difference": "Официальный sopa picadillo на курином бульоне"
+          },
+          {
+            "url": "https://visitsouthernspain.com/picadillo-soup-recipe/",
+            "difference": "Андалузский вариант с ham и яйцом, вермишель"
+          },
+          {
+            "url": "https://canalcocina.es/receta/sopa-picadillo-puchero-andaluz",
+            "difference": "Puchero с более сложной мясной основой"
+          }
+        ]
+      }
     },
     {
       "id": 39,
@@ -2055,7 +2215,7 @@
         "https://canalsalut.gencat.cat/ca/detalls/article/escudella-carn-olla"
       ],
       "full_editorial_markdown": "## №39. Эскуделья каталонская\n\n**На двоих. Время:** 2 часа 45 минут с замоченным нутом.\n\n**Что понадобится:** Говядина для бульона 250 г; куриное бедро 1 шт.; небольшая свиная кость 1 шт.; нут замоченный 100 г; картофель 160 г; морковь 80 г; капуста 120 г; лук 70 г; крупные макароны галетс 90 г; для мясной фрикадельки: свиной фарш 100 г, немного хлебного мякиша и петрушки; вода 1,6 л; соль.\n\n**Готовим:**\n1. Замочи нут заранее на ночь. Залей кости, говядину и курицу водой; после закипания сними пену, вари 60 минут.\n2. Добавь нут, вари ещё 40–60 минут до почти полной мягкости, при необходимости доливая горячую воду.\n3. Смешай фарш с хлебным мякишем и петрушкой, слепи одну вытянутую фрикадельку-пилоту.\n4. Добавь овощи и пилоту в бульон, вари около 25–30 минут до готовности. Вынь мясо, нут и овощи и держи в тепле.\n5. В процеженном бульоне свари галетс по инструкции; подавай суп с пастой, а мясо, пилоту, нут и овощи отдельно или рядом.\n\n**Как выглядит готовое блюдо:** Золотистый бульон с крупной пастой галетс; мясные и овощные компоненты по традиции лежат на отдельном блюде, не свалены горой в суп.\n\n**Три независимых источника:**\n1. https://www.spain.info/en/recipe/escudella-carn-olla-catalan-stew/\n2. https://www.directoalpaladar.com/recetas-de-legumbres-y-verduras/receta-escudella-i-carn-dolla-reconfortante-plato-cuchara-catalan\n3. https://canalsalut.gencat.cat/ca/detalls/article/escudella-carn-olla\n\n**Сопоставление:** Эскуделья это первое блюдо из бульона, а carn d'olla мясное продолжение; время зависит от сухого нута.\n\n**Статус фото:** визуальная приёмка и утверждение не проведены.\n\n---",
-      "review_status": "редакционный черновик; источники, фото и контрольная готовка не приняты",
+      "review_status": "Три независимых рецепта содержательно сопоставлены; пробная готовка, фото и окончательная приёмка не завершены",
       "photo_approved": false,
       "steps": [
         "Замочи нут заранее на ночь. Залей кости, говядину и курицу водой; после закипания сними пену, вари 60 минут.",
@@ -2078,9 +2238,29 @@
         "вода 1,6 л",
         "соль."
       ],
-      "recipe_source_audit_status": "URL_DOMAINS_LISTED_CONTENT_VERIFICATION_INCOMPLETE",
+      "recipe_source_audit_status": "THREE_INDEPENDENT_RECIPE_TEXTS_COMPARED",
       "visual_audit_status": "PENDING",
-      "photo_status": "PENDING_USER_APPROVAL"
+      "photo_status": "PENDING_USER_APPROVAL",
+      "source_content_evidence": {
+        "date": "2026-11-19",
+        "method": "Three separate original recipe publications inspected; compared ingredients and method and independently adapted servings to two",
+        "ingredients_comparison": "Говядина, курица, свиные кости, замоченный нут, картофель, морковь, капуста, фарш для пилоты и галетс подтверждены тремя каталонскими источниками. На двоих используются небольшие количества, но базовый бульон сохраняет несколько видов мяса.",
+        "technique_and_timer_comparison": "Нут замачивать с вечера, мясо варить с костями час и больше, добавить нут ещё на 40–60 минут до мягкости, пилоту и овощи на 25–30 минут, пасту варить в процеженном бульоне. Официальные каталонские версии могут томиться намного дольше; готовность нута и мяса обязательна.",
+        "sources": [
+          {
+            "url": "https://www.spain.info/en/recipe/escudella-carn-olla-catalan-stew/",
+            "difference": "Национальный escudella с pilota и галетс"
+          },
+          {
+            "url": "https://www.directoalpaladar.com/recetas-de-legumbres-y-verduras/receta-escudella-i-carn-dolla-reconfortante-plato-cuchara-catalan",
+            "difference": "Каталонское праздничное блюдо с мясом и нутом"
+          },
+          {
+            "url": "https://canalsalut.gencat.cat/ca/detalls/article/escudella-carn-olla",
+            "difference": "Региональный официальный способ подачи супа и мяса отдельно"
+          }
+        ]
+      }
     },
     {
       "id": 40,
@@ -2095,7 +2275,7 @@
         "https://vanavondkoken.nl/en/recipes/porra-antequerana"
       ],
       "full_editorial_markdown": "## №40. Порра антекерана\n\n**На двоих. Время:** 20 минут + охлаждение.\n\n**Что понадобится:** Томаты 550 г; зелёный сладкий перец 90 г; белый хлеб без корки 130 г; оливковое масло 55 мл; чеснок 1/2 зубчика; винный уксус 8 мл; соль; яйцо варёное 1 шт.; консервированный тунец 50 г, по желанию.\n\n**Готовим:**\n1. Отвари яйцо вкрутую, остуди и мелко нарежь.\n2. Нарежь томаты и перец, измельчи в блендере до густого пюре.\n3. Добавь хлеб и чеснок, оставь на 10 минут для пропитывания.\n4. Снова пробей, медленно добавляя масло и уксус, посоли по вкусу.\n5. Охлади не менее часа и подавай очень густым, с небольшим количеством варёного яйца и тунца.\n\n**Как выглядит готовое блюдо:** Очень густая холодная кораллово-красная томатная эмульсия, немножко яйца и тунца; отличается от сальморехо зелёным перцем.\n\n**Три независимых источника:**\n1. https://turismo.antequera.es/gastronomy/porra-antequerana/\n2. https://www.recetasderechupete.com/porra-antequerana-receta-andaluza/13456/\n3. https://vanavondkoken.nl/en/recipes/porra-antequerana\n\n**Сопоставление:** Зелёный перец является отличительным ингредиентом порры, но пропорции хлеба и масла в семьях меняются.\n\n**Статус фото:** визуальная приёмка и утверждение не проведены.",
-      "review_status": "редакционный черновик; источники, фото и контрольная готовка не приняты",
+      "review_status": "Три независимых рецепта содержательно сопоставлены; пробная готовка, фото и окончательная приёмка не завершены",
       "photo_approved": false,
       "steps": [
         "Отвари яйцо вкрутую, остуди и мелко нарежь.",
@@ -2115,9 +2295,29 @@
         "яйцо варёное 1 шт.",
         "консервированный тунец 50 г, по желанию."
       ],
-      "recipe_source_audit_status": "URL_DOMAINS_LISTED_CONTENT_VERIFICATION_INCOMPLETE",
+      "recipe_source_audit_status": "THREE_INDEPENDENT_RECIPE_TEXTS_COMPARED",
       "visual_audit_status": "PENDING",
-      "photo_status": "PENDING_USER_APPROVAL"
+      "photo_status": "PENDING_USER_APPROVAL",
+      "source_content_evidence": {
+        "date": "2026-11-19",
+        "method": "Three separate original recipe publications inspected; compared ingredients and method and independently adapted servings to two",
+        "ingredients_comparison": "Томаты, зелёный перец, хлеб, чеснок, оливковое масло подтверждены туризмом Антекеры и двумя рецептами; яйцо и тунец - традиционный гарнир, не замешиваются в пюре.",
+        "technique_and_timer_comparison": "Хлеб пропитать томатным пюре около 10 минут, измельчить вместе с перцем и чесноком, масло постепенно эмульгировать и полностью охладить минимум час. По сравнению с гаспачо порра должна быть густой, по сравнению с сальморехо - содержать зелёный перец.",
+        "sources": [
+          {
+            "url": "https://turismo.antequera.es/gastronomy/porra-antequerana/",
+            "difference": "Туризм Антекеры: густой томатно-хлебный суп с зелёным перцем"
+          },
+          {
+            "url": "https://www.recetasderechupete.com/porra-antequerana-receta-andaluza/13456/",
+            "difference": "Приготовление и подача с яйцом и тунцом"
+          },
+          {
+            "url": "https://vanavondkoken.nl/en/recipes/porra-antequerana",
+            "difference": "Домашняя порра с хлебом и маслом, охлаждение"
+          }
+        ]
+      }
     },
     {
       "id": 41,
