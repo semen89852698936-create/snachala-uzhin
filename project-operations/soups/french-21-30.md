@@ -71,7 +71,7 @@
 
 **Независимые рецептурные источники:**
 1. https://www.greatbritishchefs.com/recipes/vichyssoise-recipe
-2. https://www.bbcgoodfood.com/recipes/leek-potato-soup
+2. https://www.foodnetwork.com/recipes/creme-vichyssoise-glacee-recipe-1918804
 3. https://www.saveur.com/article/recipes/vichyssoise/
 
 **Сопоставление и редакционное решение:** Суп имеет французское название, но вопрос происхождения связан с нью-йоркской ресторанной историей. Здесь холодная версия.
@@ -202,7 +202,7 @@
 **Независимые рецептурные источники:**
 1. https://www.marmiton.org/recettes/recette_bisque-de-homard-maison_65708.aspx
 2. https://altonbrown.com/recipes/lobster-bisque/
-3. https://www.gordonramsayrestaurants.com/recipes/lobster-and-cornish-crab-bisque/amp
+3. https://www.foodnetwork.com/recipes/creamy-lobster-bisque-1963162
 
 **Сопоставление и редакционное решение:** Биск строится на вкусе панцирей, которые после варки удаляют; измельчать их без профессионального оборудования нельзя.
 
