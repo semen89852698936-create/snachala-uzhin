@@ -45,7 +45,7 @@
 
 **Три независимых источника:**
 1. https://www.spain.info/en/recipe/salmorejo/
-2. https://www.ice.edu/blog/salmorejo-cordobes-recipe
+2. https://www.rtve.es/television/20230922/receta-salmorejo-cordobes-trucos-secretos-pan-miga/2456481.shtml
 3. https://www.bonappetit.com/recipe/salmorejo-cordob-s
 
 **Сопоставление:** Традиционная эмульсия на хлебе и масле, без сливок.
