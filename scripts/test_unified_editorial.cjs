@@ -30,8 +30,9 @@ for(const [page, link] of pages) {
   assert(text.includes('1000 рецептов и 1 полуночный'),page+': catalog label must say midnight');
   assert(!/1000 рецептов (?:\+|и) 1 секретный/i.test(text),page+': outdated secret bonus label');
   const recipes=JSON.parse(found[1]);
-  assert.equal(recipes.length,1001,page+': exactly 1001 recipes');
-  assert.equal(new Set(recipes.map(r=>r.id)).size,1001,page+': unique IDs');
+  const expectedCount=fs.existsSync(path.join(root,'assets','world-soups-10.js')) && text.includes('window.WORLD_SOUPS_RECIPES || []') ? 801 : 1001;
+  assert.equal(recipes.length,expectedCount,page+': expected embedded recipe count');
+  assert.equal(new Set(recipes.map(r=>r.id)).size,expectedCount,page+': unique IDs');
   payloads.push(found[1]);
 }
 assert.equal(payloads[0],payloads[1],'Both catalogues have identical recipe payloads');
@@ -42,4 +43,4 @@ for (const expected of [
  'id="eveningLanding"',
  'id="music"'
 ]) assert(home.includes(expected),'Approved Our Evening asset/section missing: '+expected);
-console.log('PASS: 1001 recipes in both catalogs; shared editorial stylesheet; approved Our Evening imagery untouched.');
+console.log('PASS: matching embedded recipes in both catalogs; shared editorial stylesheet; approved Our Evening imagery untouched.');

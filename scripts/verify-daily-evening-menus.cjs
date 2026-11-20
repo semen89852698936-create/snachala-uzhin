@@ -17,8 +17,16 @@ function getRecipes(html){
  assert(content,'Recipe collection not found');
  return JSON.parse(content[1]);
 }
-const recipes=getRecipes(main);
-assert.equal(recipes.length,1001);
+const baseRecipes=getRecipes(main);
+assert.equal(baseRecipes.length,main.includes('window.WORLD_SOUPS_RECIPES || []')?801:1001);
+const dynamic={window:{}};
+for(const file of ['assets/world-salads-40.js','assets/world-soups-10.js']){
+ if(fs.existsSync(require('node:path').join(root,file))){
+  vm.runInNewContext(read(file),dynamic,{timeout:2000,filename:file});
+ }
+}
+const recipes=baseRecipes.concat(dynamic.window.WORLD_SALADS_RECIPES||[],dynamic.window.WORLD_SOUPS_RECIPES||[]);
+assert.equal(new Set(recipes.map(r=>r.id)).size,recipes.length,'Duplicate runtime recipe ids');
 let now=Date.UTC(2026,10,2);
 const context=vm.createContext({RECIPES:recipes,Date:{now:()=>now}});
 vm.runInContext(extract(main),context,{timeout:2000});

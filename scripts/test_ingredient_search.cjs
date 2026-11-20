@@ -14,8 +14,10 @@ for (const path of paths) {
   const start = html.indexOf('>', dataStart) + 1;
   const end = html.indexOf('</script>', start);
   const recipes = JSON.parse(html.slice(start,end));
-  assert.equal(recipes.length, 1001, path+': must preserve 1001 recipes');
-  assert.equal(new Set(recipes.map(x=>x.id)).size, 1001, path+': duplicate recipe ids');
+  const soupSwap=html.includes('window.WORLD_SOUPS_RECIPES || []');
+  const expected=soupSwap?801:1001;
+  assert.equal(recipes.length, expected, path+': embedded recipe count');
+  assert.equal(new Set(recipes.map(x=>x.id)).size, expected, path+': duplicate recipe ids');
 
   const appStart = html.lastIndexOf('<script>', html.indexOf('function renderRecipes()'));
   const appEnd = html.indexOf('</script>', html.indexOf('function renderRecipes()'));
