@@ -1,0 +1,260 @@
+{
+  "project": "НАШ ВЕЧЕР",
+  "date": "2026-11-19",
+  "github_actions_source_run": 44438194615,
+  "status": "ALTERNATE_WEB_ACCESS_CONFIRMED_NOT_FULL_TEXT_CERTIFICATION",
+  "result": {
+    "total_sources": 300,
+    "github_actions_loaded": 270,
+    "github_actions_restricted_or_error": 30,
+    "alternative_web_opened": 30,
+    "distinct_sources_not_yet_fully_read": 300
+  },
+  "notes": [
+    "These 30 source pages failed GitHub Actions HTTP fetch but were independently opened through web search during editorial verification.",
+    "Browser access confirms the pages are available for reading; it does not establish that every ingredient and every instruction has been completely verified against the recipe.",
+    "Keep original reputable sources instead of replacing them simply because GitHub Actions cannot fetch them."
+  ],
+  "restored_sources": [
+    {
+      "recipe_id": 7,
+      "source_number": 2,
+      "url": "https://vkusvill.ru/media/recipes/zelenye-shchi.html",
+      "github_actions_access": "BLOCKED_OR_FAILED",
+      "web_page_opened": "YES",
+      "full_ingredient_and_method_validation": "NOT_CERTIFIED"
+    },
+    {
+      "recipe_id": 10,
+      "source_number": 3,
+      "url": "https://kashevar.com/ru/recipes/mushroom-soup-pearl-barley",
+      "github_actions_access": "BLOCKED_OR_FAILED",
+      "web_page_opened": "YES",
+      "full_ingredient_and_method_validation": "NOT_CERTIFIED"
+    },
+    {
+      "recipe_id": 23,
+      "source_number": 2,
+      "url": "https://www.foodnetwork.com/recipes/creme-vichyssoise-glacee-recipe-1918804",
+      "github_actions_access": "BLOCKED_OR_FAILED",
+      "web_page_opened": "YES",
+      "full_ingredient_and_method_validation": "NOT_CERTIFIED"
+    },
+    {
+      "recipe_id": 23,
+      "source_number": 3,
+      "url": "https://www.saveur.com/article/recipes/vichyssoise/",
+      "github_actions_access": "BLOCKED_OR_FAILED",
+      "web_page_opened": "YES",
+      "full_ingredient_and_method_validation": "NOT_CERTIFIED"
+    },
+    {
+      "recipe_id": 24,
+      "source_number": 3,
+      "url": "https://www.coursesu.com/p/garbure/Recette_0129.html",
+      "github_actions_access": "BLOCKED_OR_FAILED",
+      "web_page_opened": "YES",
+      "full_ingredient_and_method_validation": "NOT_CERTIFIED"
+    },
+    {
+      "recipe_id": 25,
+      "source_number": 2,
+      "url": "https://linguanostra.org/ressources-provencales/recettes-provencales/soupe-au-pistou",
+      "github_actions_access": "BLOCKED_OR_FAILED",
+      "web_page_opened": "YES",
+      "full_ingredient_and_method_validation": "NOT_CERTIFIED"
+    },
+    {
+      "recipe_id": 28,
+      "source_number": 3,
+      "url": "https://www.foodnetwork.com/recipes/creamy-lobster-bisque-1963162",
+      "github_actions_access": "BLOCKED_OR_FAILED",
+      "web_page_opened": "YES",
+      "full_ingredient_and_method_validation": "NOT_CERTIFIED"
+    },
+    {
+      "recipe_id": 31,
+      "source_number": 2,
+      "url": "https://www.elcorteingles.es/supermercado/recetas/gazpacho-andaluz-tradicional/",
+      "github_actions_access": "BLOCKED_OR_FAILED",
+      "web_page_opened": "YES",
+      "full_ingredient_and_method_validation": "NOT_CERTIFIED"
+    },
+    {
+      "recipe_id": 51,
+      "source_number": 3,
+      "url": "https://web-japan.org/kidsweb/cook/misoshiru/",
+      "github_actions_access": "BLOCKED_OR_FAILED",
+      "web_page_opened": "YES",
+      "full_ingredient_and_method_validation": "NOT_CERTIFIED"
+    },
+    {
+      "recipe_id": 52,
+      "source_number": 2,
+      "url": "https://japanesecooking101.com/ramen-recipe/",
+      "github_actions_access": "BLOCKED_OR_FAILED",
+      "web_page_opened": "YES",
+      "full_ingredient_and_method_validation": "NOT_CERTIFIED"
+    },
+    {
+      "recipe_id": 53,
+      "source_number": 2,
+      "url": "https://japanesecooking101.com/miso-ramen-recipe/",
+      "github_actions_access": "BLOCKED_OR_FAILED",
+      "web_page_opened": "YES",
+      "full_ingredient_and_method_validation": "NOT_CERTIFIED"
+    },
+    {
+      "recipe_id": 54,
+      "source_number": 3,
+      "url": "https://www.thekitchn.com/tonkotsu-ramen-recipe-23636995",
+      "github_actions_access": "BLOCKED_OR_FAILED",
+      "web_page_opened": "YES",
+      "full_ingredient_and_method_validation": "NOT_CERTIFIED"
+    },
+    {
+      "recipe_id": 61,
+      "source_number": 1,
+      "url": "https://www.maangchi.com/recipe/yukgaejang",
+      "github_actions_access": "BLOCKED_OR_FAILED",
+      "web_page_opened": "YES",
+      "full_ingredient_and_method_validation": "NOT_CERTIFIED"
+    },
+    {
+      "recipe_id": 62,
+      "source_number": 1,
+      "url": "https://www.maangchi.com/recipe/samgyetang",
+      "github_actions_access": "BLOCKED_OR_FAILED",
+      "web_page_opened": "YES",
+      "full_ingredient_and_method_validation": "NOT_CERTIFIED"
+    },
+    {
+      "recipe_id": 63,
+      "source_number": 1,
+      "url": "https://www.maangchi.com/recipe/seolleongtang",
+      "github_actions_access": "BLOCKED_OR_FAILED",
+      "web_page_opened": "YES",
+      "full_ingredient_and_method_validation": "NOT_CERTIFIED"
+    },
+    {
+      "recipe_id": 64,
+      "source_number": 1,
+      "url": "https://www.maangchi.com/recipe/galbitang",
+      "github_actions_access": "BLOCKED_OR_FAILED",
+      "web_page_opened": "YES",
+      "full_ingredient_and_method_validation": "NOT_CERTIFIED"
+    },
+    {
+      "recipe_id": 66,
+      "source_number": 1,
+      "url": "https://www.maangchi.com/recipe/mandu-guk",
+      "github_actions_access": "BLOCKED_OR_FAILED",
+      "web_page_opened": "YES",
+      "full_ingredient_and_method_validation": "NOT_CERTIFIED"
+    },
+    {
+      "recipe_id": 67,
+      "source_number": 1,
+      "url": "https://www.maangchi.com/recipe/kimchi-jjigae",
+      "github_actions_access": "BLOCKED_OR_FAILED",
+      "web_page_opened": "YES",
+      "full_ingredient_and_method_validation": "NOT_CERTIFIED"
+    },
+    {
+      "recipe_id": 68,
+      "source_number": 1,
+      "url": "https://www.maangchi.com/recipe/an-maeun-kongnamulguk",
+      "github_actions_access": "BLOCKED_OR_FAILED",
+      "web_page_opened": "YES",
+      "full_ingredient_and_method_validation": "NOT_CERTIFIED"
+    },
+    {
+      "recipe_id": 69,
+      "source_number": 1,
+      "url": "https://www.maangchi.com/recipe/gamjatang",
+      "github_actions_access": "BLOCKED_OR_FAILED",
+      "web_page_opened": "YES",
+      "full_ingredient_and_method_validation": "NOT_CERTIFIED"
+    },
+    {
+      "recipe_id": 70,
+      "source_number": 1,
+      "url": "https://www.maangchi.com/recipe/doenjang-jjigae",
+      "github_actions_access": "BLOCKED_OR_FAILED",
+      "web_page_opened": "YES",
+      "full_ingredient_and_method_validation": "NOT_CERTIFIED"
+    },
+    {
+      "recipe_id": 73,
+      "source_number": 3,
+      "url": "https://laroussecocina.mx/receta/sopa-de-tortilla/",
+      "github_actions_access": "BLOCKED_OR_FAILED",
+      "web_page_opened": "YES",
+      "full_ingredient_and_method_validation": "NOT_CERTIFIED"
+    },
+    {
+      "recipe_id": 74,
+      "source_number": 1,
+      "url": "https://laroussecocina.mx/receta/caldo-tlalpeno/",
+      "github_actions_access": "BLOCKED_OR_FAILED",
+      "web_page_opened": "YES",
+      "full_ingredient_and_method_validation": "NOT_CERTIFIED"
+    },
+    {
+      "recipe_id": 75,
+      "source_number": 1,
+      "url": "https://www.foodandwine.com/sopa-de-fideo-8769015",
+      "github_actions_access": "BLOCKED_OR_FAILED",
+      "web_page_opened": "YES",
+      "full_ingredient_and_method_validation": "NOT_CERTIFIED"
+    },
+    {
+      "recipe_id": 75,
+      "source_number": 2,
+      "url": "https://www.saveur.com/article/Recipes/Mexico-Noodle-Soup/",
+      "github_actions_access": "BLOCKED_OR_FAILED",
+      "web_page_opened": "YES",
+      "full_ingredient_and_method_validation": "NOT_CERTIFIED"
+    },
+    {
+      "recipe_id": 78,
+      "source_number": 1,
+      "url": "https://www.goodnes.com/maggi/recipes/albondigas-soup/",
+      "github_actions_access": "BLOCKED_OR_FAILED",
+      "web_page_opened": "YES",
+      "full_ingredient_and_method_validation": "NOT_CERTIFIED"
+    },
+    {
+      "recipe_id": 89,
+      "source_number": 1,
+      "url": "https://www.saveur.com/article/recipes/classic-sour-fish-soup/",
+      "github_actions_access": "BLOCKED_OR_FAILED",
+      "web_page_opened": "YES",
+      "full_ingredient_and_method_validation": "NOT_CERTIFIED"
+    },
+    {
+      "recipe_id": 94,
+      "source_number": 3,
+      "url": "https://www.chinasichuanfood.com/winter-melon-soup/",
+      "github_actions_access": "BLOCKED_OR_FAILED",
+      "web_page_opened": "YES",
+      "full_ingredient_and_method_validation": "NOT_CERTIFIED"
+    },
+    {
+      "recipe_id": 96,
+      "source_number": 2,
+      "url": "https://www.chinasichuanfood.com/szechuan-fish-suan-cai-yu/",
+      "github_actions_access": "BLOCKED_OR_FAILED",
+      "web_page_opened": "YES",
+      "full_ingredient_and_method_validation": "NOT_CERTIFIED"
+    },
+    {
+      "recipe_id": 97,
+      "source_number": 3,
+      "url": "https://chinesecookingdemystified.substack.com/p/hot-pepper-soup",
+      "github_actions_access": "BLOCKED_OR_FAILED",
+      "web_page_opened": "YES",
+      "full_ingredient_and_method_validation": "NOT_CERTIFIED"
+    }
+  ]
+}
