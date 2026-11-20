@@ -483,15 +483,15 @@
       "title": "Панцаросалата",
       "category": "salads",
       "cuisine": "Греческая",
-      "minutes": 70,
+      "minutes": 85,
       "base": 2,
       "level": "Средне",
       "emoji": "🥗",
-      "description": "Самостоятельное блюдо греческая кухни на двоих",
+      "description": "Греческая панцаросалата: мягкая свёкла ломтиками, чеснок, красный винный уксус и оливковое масло. Простая версия без йогурта, на двоих.",
       "ingredients": [
         {
-          "name": "Свёкла",
-          "amount": 400,
+          "name": "Свёкла целая, в кожуре",
+          "amount": 450,
           "unit": "г",
           "group": "Основное"
         },
@@ -499,47 +499,53 @@
           "name": "Чеснок",
           "amount": 5,
           "unit": "г",
-          "group": "Основное"
+          "group": "Заправка"
         },
         {
-          "name": "Оливковое масло",
-          "amount": 25,
+          "name": "Оливковое масло extra virgin",
+          "amount": 30,
           "unit": "мл",
-          "group": "Основное"
+          "group": "Заправка"
         },
         {
-          "name": "Уксус винный",
+          "name": "Уксус красный винный",
           "amount": 15,
           "unit": "мл",
-          "group": "Основное"
+          "group": "Заправка"
         },
         {
-          "name": "Петрушка",
-          "amount": 10,
+          "name": "Петрушка свежая (по желанию)",
+          "amount": 8,
           "unit": "г",
-          "group": "Основное"
+          "group": "Подача"
+        },
+        {
+          "name": "Соль",
+          "amount": 1,
+          "unit": "г",
+          "group": "Заправка"
         }
       ],
       "steps": [
         {
-          "title": "Подготовь ингредиенты",
-          "detail": "Свёклу тщательно вымой и отвари в кожуре до мягкости или запеки при 190 °C в фольге до готовности",
+          "title": "Вымой и свари свёклу",
+          "detail": "Тщательно отмой свёклу от земли, оставь кожуру и небольшие кончики стеблей. Залей водой, доведи до кипения и вари при умеренном кипении 35–60 минут в зависимости от размера до свободного входа ножа в центр. Время проверяй по мягкости, не только по таймеру.",
+          "timer": 2700
+        },
+        {
+          "title": "Остуди, очисти и нарежь",
+          "detail": "Слей воду, дай свёкле остыть до безопасной для рук температуры, сними кожицу и нарежь ломтиками около 7–10 мм. Используй чистую доску и нож.",
+          "timer": 600
+        },
+        {
+          "title": "Смешай заправку",
+          "detail": "Мелко натри чеснок. Взбей оливковое масло, красный винный уксус, чеснок и немного соли. Полей свёклу и бережно перемешай.",
           "timer": 0
         },
         {
-          "title": "Приготовь основу",
-          "detail": "Полностью остуди свёклу, очисти и нарежь небольшими ломтиками",
-          "timer": 0
-        },
-        {
-          "title": "Собери салат",
-          "detail": "Очень мелко поруби чеснок и петрушку",
-          "timer": 0
-        },
-        {
-          "title": "Заправь и подай",
-          "detail": "Соедини оливковое масло с уксусом, чесноком и петрушкой, заправь свёклу и охлади 10 минут",
-          "timer": 0
+          "title": "Охлади и подай",
+          "detail": "Накрой и поставь в холодильник на 20–30 минут, чтобы вкус раскрылся. Разложи по двум тарелкам и по желанию посыпь мелко рубленной петрушкой. Подавай охлаждённой как мезе.",
+          "timer": 1500
         }
       ],
       "tags": [
@@ -547,15 +553,35 @@
         "100 салатов"
       ],
       "equipment": "Нож, доска, салатник и необходимая посуда",
-      "warn": "Проверь аллергены и сроки хранения продуктов; соблюдай безопасную термообработку.",
-      "photoBrief": "Изобразить только готовые компоненты блюда «Панцаросалата» в соответствии с точной технологией, без постороннего декора и сырой еды, которая должна быть приготовлена.",
+      "warn": "Тщательно мой корнеплоды от земли; готовую свёклу и салат охлаждай без длительного хранения при комнатной температуре. Храни закрытым в холодильнике при ≤4 °C. В выбранной версии нет молочных продуктов и орехов, но проверяй состав покупных ингредиентов.",
+      "photoBrief": "Одна реалистичная фотография готовой греческой панцаросалаты: целиком видимая керамическая тарелка под ракурсом 3/4, аккуратные насыщенно-бордовые ломтики полностью приготовленной свёклы с лёгким блеском оливкового масла и винного уксуса, немного мелко нарубленной петрушки. Без йогурта, орехов, целых зубчиков чеснока, сырых корнеплодов и лишнего декора.",
       "photoStatus": "pending_separate_photo",
-      "reviewStatus": "editorial_draft_requires_source_by_source_signoff",
-      "researchLeads": [
+      "reviewStatus": "verified_three_independent_recipe_sources_editorial_not_approved",
+      "researchLeads": "GreekTastes / CookTheGreekWay / Epikouria: opened and read 2026-11-20; Epikouria documents alternate yogurt version and oil-vinegar variant",
+      "sourceEvidence": [
         {
-          "url": "https://www.kalliopiskitchen.com/recipes/pantzarosalata/",
-          "status": "source_to_crosscheck_not_three_source_verified"
+          "url": "https://www.greektastes.com/pantzarosalata-beetroot-salad/",
+          "status": "opened_full_recipe_verified",
+          "evidence": "Ingredients: 1 kg beetroot, garlic, parsley, olive oil 4–5 tbsp, vinegar 1–2 tbsp, optional capers. Method: boil whole 60–90 min until tender, peel, slice, dress; hot or cold. Leaves/capers are optional to this selected simpler version."
+        },
+        {
+          "url": "https://cookthegreekway.com/2026/11/02/traditional-greek-beetroot-salad-pantzarosalata-recipe/",
+          "status": "opened_full_recipe_verified",
+          "evidence": "Four servings: 800 g–1 kg beetroot, 2–3 cloves garlic, 60 ml olive oil, 30 ml red wine vinegar. Simmer unpeeled 35–50 min to fork-tender, peel and slice, refrigerate dressed 30–60 min. Scaled approximately by half for two."
+        },
+        {
+          "url": "https://www.epikouria.com/recipes/pantzarosalata/",
+          "status": "opened_full_recipe_verified_variant",
+          "evidence": "Full four-serving yogurt recipe: 600 g beetroot, 250 g Greek yogurt, garlic, 45 ml oil, 20 ml wine vinegar; simmer 35–45 min. Explicitly documents a distinct traditional oil-and-vinegar version of sliced cooked beets without yogurt, supporting the selected non-creamy presentation."
         }
+      ],
+      "sourceDifferences": [
+        "GreekTastes cooks whole beets 60–90 min; CookTheGreekWay 35–50 min; choose tenderness endpoint, range depends on size.",
+        "GreekTastes includes beet greens and capers; omit from this minimal version.",
+        "Epikouria main recipe is yogurt-based with grated beets, but independently describes oil-and-vinegar sliced version.",
+        "CookTheGreekWay recommends 30–60 min refrigerated rest; use 20–30 min practical serving rest.",
+        "CookTheGreekWay ratios for four are approximately halved for two.",
+        "Parsley is optional in CookTheGreekWay and present in GreekTastes; keep optional."
       ]
     },
     {
