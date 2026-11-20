@@ -1,0 +1,75 @@
+{
+  "date": "2026-11-19",
+  "batch": "first_40_world_salads",
+  "sourceCount": 40,
+  "compiledCount": 40,
+  "approvedRecipes": 40,
+  "originalCountOfConflictingCards": 24,
+  "originalStructuralConflicts": 16,
+  "currentDifferences": [
+    {
+      "n": 35,
+      "id": "world-salad-es-005",
+      "fields": [
+        "sourceReview"
+      ]
+    },
+    {
+      "n": 38,
+      "id": "world-salad-es-008",
+      "fields": [
+        "sourceReview"
+      ]
+    }
+  ],
+  "completed": false,
+  "decision": "Use edited compiled editorial variants for 24 affected recipes, synchronize source 10-recipe batches; require source re-audit if later edited.",
+  "verifiedExamples": [
+    {
+      "id": "world-salad-fr-009",
+      "decision": "celery stalk rather than root",
+      "references": [
+        "https://chefsimon.com/gourmets/cuisine-maison-d-autrefois-comme-grand-mere/recettes/salade-cauchoise-pommes-de-terre-cresson-jambon",
+        "https://goedenlekker.nl/fr/blogs/recettes/salade-cauchoise"
+      ]
+    },
+    {
+      "id": "world-salad-es-001",
+      "decision": "Jaén variant without cucumber; other variants exist",
+      "references": [
+        "https://www.aedn.es/pipirrana-de-jaen-receta-tradicional-ingredientes-y-preparacion/",
+        "https://jaenparaisointerior.es/recetas/pipirrana"
+      ]
+    },
+    {
+      "id": "world-salad-it-002",
+      "decision": "20min soak/60min rest",
+      "references": [
+        "https://www.eataly.com/recipes/panzanella-recipe.html",
+        "https://organictuscany.org/recipes/panzanella/"
+      ]
+    },
+    {
+      "id": "world-salad-it-007",
+      "decision": "60min ice water",
+      "references": [
+        "https://www.greatbritishchefs.com/recipes/punatrelle-alla-romana-recipe",
+        "https://wellspentmarket.com/blogs/recipes/puntarelle-alla-romana"
+      ]
+    },
+    {
+      "id": "world-salad-es-006",
+      "decision": "30min ñora soak",
+      "references": [
+        "https://www.rtve.es/television/20130826/plantilla-receta-espana-directo/743448.shtml",
+        "https://51encocinas.com/ensalada-xato/"
+      ]
+    }
+  ],
+  "reconciledNotEquivalentToFullVerification": true,
+  "remainingBlocks": [
+    "40 original photo files must be individually verified & installed",
+    "source audit of all 40 recipes not independently completed",
+    "staging UI and deployed build not smoke-tested"
+  ]
+}

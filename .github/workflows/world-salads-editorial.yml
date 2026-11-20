@@ -1,0 +1,29 @@
+name: World salads editorial QA
+on:
+  push:
+    branches:
+      - editorial/100-world-salads-20261119
+    paths:
+      - 'data/editorial/salads/**'
+      - 'scripts/test-world-salads-editorial.cjs'
+      - '.github/workflows/world-salads-editorial.yml'
+  pull_request:
+    paths:
+      - 'data/editorial/salads/**'
+      - 'scripts/test-world-salads-editorial.cjs'
+      - '.github/workflows/world-salads-editorial.yml'
+  workflow_dispatch:
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Check script syntax
+        run: node --check scripts/test-world-salads-editorial.cjs
+      - name: Validate 100 recipe cards and their compiled manifest
+        run: node scripts/test-world-salads-editorial.cjs
