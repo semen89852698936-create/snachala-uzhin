@@ -1,0 +1,65 @@
+{
+  "date": "2026-11-20",
+  "scope": "independent evening control; no production changes",
+  "registry": {
+    "active": [
+      "snachala-uzhin",
+      "moi-granitsy"
+    ],
+    "updatedAt": "2026-11-01"
+  },
+  "mainLatestObserved": {
+    "snachala_uzhin": "a7705bd9c940a1cc4250917f0fd122aefc111280",
+    "moi_granitsy": "6c0fac72f5e894b7693092a6ba0ec6380ad8c153"
+  },
+  "deployments": {
+    "snachala_uzhin_preview": {
+      "sha": "a9332c1a5854ee82d7411dc716c0119acc3dddcb",
+      "state": "READY",
+      "target": null
+    },
+    "snachala_uzhin_git": {
+      "sha": "a7705bd9c940a1cc4250917f0fd122aefc111280",
+      "state": "READY",
+      "target": "production"
+    },
+    "moi_granitsy": {
+      "sha": "6c0fac72f5e894b7693092a6ba0ec6380ad8c153",
+      "state": "READY",
+      "target": "production"
+    }
+  },
+  "photoLibrary": {
+    "historicalSummaryDate": "2026-11-01",
+    "curatedCandidates": 10,
+    "curatedDownloaded": 0,
+    "curatedVisuallyApproved": 0,
+    "curatedPublicationApproved": 0,
+    "createdThisRun": 0,
+    "visuallyVerifiedThisRun": 0,
+    "legallyVerifiedThisRun": 0,
+    "ownerApprovedThisRun": 0,
+    "remainingOf1001": "unknown; historical registers cannot establish current approvals",
+    "csvRegistry": "404 in main and operations/persistent-state-and-data-plan-20261102",
+    "candidate30": {
+      "recipe": "Свиная вырезка в духовке с грибами и розмарином",
+      "source": "https://www.pexels.com/photo/chicken-meat-dish-792027/",
+      "observedPageDescription": "Delicious pork tenderloin garnished with rosemary, served with roasted potatoes and fresh salad.",
+      "observedAuthor": "Roger Cziwerny",
+      "observedLicenseLabel": "Free",
+      "sourcePageVerified": "2026-11-20",
+      "finding": "Despite URL chicken-meat-dish, source identifies pork tenderloin. Mushrooms are not confirmed; candidate cannot be approved for this recipe.",
+      "imageDownloaded": false,
+      "visualReview": false,
+      "licenseTermsFullyVerified": false,
+      "approval": false
+    }
+  },
+  "checks": {
+    "candidate30SourceText": "verified live",
+    "fiveLocalUnitTests": "passed (experimental checker not committed, overlapping existing PR #272)",
+    "pr12Status": "not verified; do not assume merged",
+    "publicAlias": "not resolved to SHA"
+  },
+  "next": "Compare approved current AI image for recipe #30 against the live catalog before any replacement; do not change existing approved images."
+}
