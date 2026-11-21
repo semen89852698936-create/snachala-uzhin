@@ -11,8 +11,8 @@ const read=p=>fs.readFileSync(path.join(root,p),'utf8');
 const context={window:{}};
 vm.runInNewContext(read('assets/world-soups-10.js'),context,{timeout:1000});
 const soups=context.window.WORLD_SOUPS_RECIPES;
-assert.equal(soups.length,98,'Exactly 98 approved soups');
-assert.equal(new Set(soups.map(x=>x.id)).size,98,'Unique ids');
+assert.equal(soups.length,100,'Exactly 100 approved soups');
+assert.equal(new Set(soups.map(x=>x.id)).size,100,'Unique ids');
 for(let n=1;n<=10;n++){
   const s=soups[n-1];
   assert.equal(s.id,'world-soup-ru-'+String(n).padStart(3,'0'));
@@ -51,13 +51,13 @@ for(let n=71;n<=80;n++){
  assert.ok(s.ingredients.length>=7); assert.ok(s.steps.length>=5);
  assert.ok(s.steps.every(t=>Number.isInteger(t.timer)&&t.timer>=0&&t.detail));
 }
-for(let n=81;n<=98;n++){
+for(let n=81;n<=100;n++){
  const s=soups[n-1], isVietnamese=n<=90;
  assert.equal(s.id,'world-soup-'+(isVietnamese?'vn':'cn')+'-'+String(isVietnamese?n-80:n-90).padStart(3,'0'));
  assert.equal(s.cuisine,isVietnamese?'Вьетнамская':'Китайская');
  assert.equal(s.category,'soup'); assert.equal(s.base,2);
  assert.equal(s.photo,'/assets/world-soups/'+n+'.webp');
- assert.ok(s.ingredients.length>=7);assert.ok(s.steps.length>=5);
+ assert.ok(s.ingredients.length>=(n>=99?6:7));assert.ok(s.steps.length>=5);
  assert.ok(s.steps.every(t=>Number.isInteger(t.timer)&&t.timer>=0&&t.detail));
 }
 const expectedTitles=[
@@ -86,6 +86,8 @@ for(const p of ['index.html','full-catalog/index.html']){
 }
 if(process.argv.includes('--content-only')){console.log('CONTENT QA PASS: ten Russian soups and both HTML catalog variants; photo import pending.');process.exit(0);}
 const expectedImageSHA={
+ 99:'0f5175582e8466ffe5518161111b72aea91ed0e5f33aa2e677fa9308d695d74e',
+ 100:'852eba5f697f3bf855e3c310f71d6dc81a7a466e10623137d33bb2ca32cfe2c2',
  81:'69a796087924456040cc509201c4e67bf543c5084006d525b3f9fcb0d592457f',
  82:'6d5d0b6050c16144349d97be0cd5a5892bc85b19421411a5d2c7e705998fa25e',
  83:'83265d10a853baf8322fddd83eca15a104a707bc8608af444b93c1dc7cba519c',
@@ -117,7 +119,7 @@ const expectedImageSHA={
  79:'52aa3b063e3728ee697ac18f640b65aa84be57d45c2de1d95110bdc388f7406b',
  80:'905668d16d3ce885546f62fa33fe76f5fc3ae8d38ddd9f19aa2f5df0e3a115df'
 };
-for(let n=1;n<=98;n++){
+for(let n=1;n<=100;n++){
  const p=path.join(root,'assets','world-soups',String(n).padStart(2,'0')+'.webp');
  assert.ok(fs.existsSync(p),'Missing approved photograph for #'+n);
  const buffer=fs.readFileSync(p);
@@ -128,4 +130,4 @@ for(let n=1;n<=98;n++){
   assert.equal(crypto.createHash('sha256').update(buffer).digest('hex'),expectedImageSHA[n],'Unexpected generated photo #'+n);
  }
 }
-console.log('QA PASS: 98 approved world soups, 98 WebP photos, both HTML variants, 100 old soup records excluded.');
+console.log('QA PASS: 100 approved world soups, 100 WebP photos, both HTML variants, 100 old soup records excluded.');

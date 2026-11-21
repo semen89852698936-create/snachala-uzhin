@@ -1,0 +1,34 @@
+{
+  "project": "НАШ ВЕЧЕР",
+  "section": "Супы",
+  "status": "OWNER_APPROVED_FOR_RELEASE",
+  "releaseDate": "2026-11-21",
+  "baseCommit": "f438719bb4fac6acc9822c31d0d92ceee2e61978",
+  "images": [
+    {
+      "n": 99,
+      "title": "Лосунтан, шанхайский томатный суп",
+      "path": "assets/world-soups/99.webp",
+      "sourcePath": "photo-library/soups/candidates/099/alice-v1/99-luosongtang-alice-v1.webp",
+      "photoGitBlobSha": "a463c150e2b32349edc42e7746a3ecc60abe4b1e",
+      "sha256": "0f5175582e8466ffe5518161111b72aea91ed0e5f33aa2e677fa9308d695d74e",
+      "bytes": 114818,
+      "ownerApproved": true,
+      "sourceModel": "aliceai-image-art-3.0",
+      "sourceVersion": 1
+    },
+    {
+      "n": 100,
+      "title": "Суп с водяным крессом и свиными рёбрами",
+      "path": "assets/world-soups/100.webp",
+      "sourcePath": "photo-library/soups/candidates/100/alice-v4/100-watercress-pork-ribs-alice-v4.webp",
+      "photoGitBlobSha": "c2a52b8bc00c254e31f13b5f44e8a5179bc17877",
+      "sha256": "852eba5f697f3bf855e3c310f71d6dc81a7a466e10623137d33bb2ca32cfe2c2",
+      "bytes": 95916,
+      "ownerApproved": true,
+      "sourceModel": "aliceai-image-art-3.0",
+      "sourceVersion": 4
+    }
+  ],
+  "note": "These two owner-approved photographs and matching recipe cards only; no design or other categories modified."
+}
