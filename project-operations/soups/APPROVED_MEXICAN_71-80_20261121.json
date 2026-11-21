@@ -1,0 +1,112 @@
+{
+  "project": "НАШ ВЕЧЕР",
+  "batch": "Мексиканские супы №71–80",
+  "status": "OWNER_APPROVED_FOR_RELEASE",
+  "date": "2026-11-21",
+  "base_ref": "release/approved-korean-soups-61-70-staging-20261121",
+  "editorial_ref": "editorial/russian-soups-10-verified-20261119",
+  "editorial_recipe_blob_sha": "98da19de4003120d1722b719868f365546c5ac44",
+  "timer_blob_sha": "4ef12f0c1b996dab1f6a01ad659c1c9ace6a11be",
+  "recipes": [
+    {
+      "n": 71,
+      "title": "Посоле рохо со свининой",
+      "recipe_id": "world-soup-mx-001",
+      "photo_path": "/assets/world-soups/71.webp",
+      "photo_git_blob_sha": "3421a910953d1e41862a33806a30a7e564e8aa4d",
+      "photo_sha256": "503dbcf42d55a2040b7d69e5b226d19791225071c2a2d0b068308fa48db51040",
+      "photo_bytes": 345296,
+      "owner_approved": true
+    },
+    {
+      "n": 72,
+      "title": "Посоле верде с курицей",
+      "recipe_id": "world-soup-mx-002",
+      "photo_path": "/assets/world-soups/72.webp",
+      "photo_git_blob_sha": "8d4fbfcae816866181aaad08e30adc5508fd7db2",
+      "photo_sha256": "2ded2bc30f7b8c42f536a0b8cac83bf4ce34032adf97803e73fde638b09ba08c",
+      "photo_bytes": 258358,
+      "owner_approved": true
+    },
+    {
+      "n": 73,
+      "title": "Сопа де тортилья",
+      "recipe_id": "world-soup-mx-003",
+      "photo_path": "/assets/world-soups/73.webp",
+      "photo_git_blob_sha": "a4522000ecc0d313227f3038ec4b0412358c8a2e",
+      "photo_sha256": "4520e6e1dfface14f60cae24ace4439f79bdd607cebb04172cb740ab11dbbd1a",
+      "photo_bytes": 339164,
+      "owner_approved": true
+    },
+    {
+      "n": 74,
+      "title": "Кальдо тлальпеньо с курицей и нутом",
+      "recipe_id": "world-soup-mx-004",
+      "photo_path": "/assets/world-soups/74.webp",
+      "photo_git_blob_sha": "5b98abecbef4a122d9f9c0dfebf49455703466b7",
+      "photo_sha256": "ae44375b50a6d4890439f3c2caf1b62d228a8f8a0fa17a0fdb29e10de26d9fbb",
+      "photo_bytes": 329160,
+      "owner_approved": true
+    },
+    {
+      "n": 75,
+      "title": "Сопа де фидео",
+      "recipe_id": "world-soup-mx-005",
+      "photo_path": "/assets/world-soups/75.webp",
+      "photo_git_blob_sha": "e9b33e93ff009365615481fa10b885628ed9b031",
+      "photo_sha256": "9b3ba1f3e3ea2f2ebf62266910c0ad5634b1b9aface2219473f4bc42d5d4fd2e",
+      "photo_bytes": 323674,
+      "owner_approved": true
+    },
+    {
+      "n": 76,
+      "title": "Сопа де лима с курицей",
+      "recipe_id": "world-soup-mx-006",
+      "photo_path": "/assets/world-soups/76.webp",
+      "photo_git_blob_sha": "05f7a0222fe3aafa6a2e264fab590bc50e9ad364",
+      "photo_sha256": "e6e75a6be880c8c3b04f6390662d51b69484c042a4f7d1b7636e3c5c4dd937b0",
+      "photo_bytes": 347106,
+      "owner_approved": true
+    },
+    {
+      "n": 77,
+      "title": "Кальдо де рес с говядиной",
+      "recipe_id": "world-soup-mx-007",
+      "photo_path": "/assets/world-soups/77.webp",
+      "photo_git_blob_sha": "f6fbb033daebe61070e0641dbbeb61c74845441f",
+      "photo_sha256": "ca33924edccdc8ef9b583fb1a5896a8eecb3edf79653794355ed951aed312a88",
+      "photo_bytes": 293162,
+      "owner_approved": true
+    },
+    {
+      "n": 78,
+      "title": "Кальдо де альбондигас",
+      "recipe_id": "world-soup-mx-008",
+      "photo_path": "/assets/world-soups/78.webp",
+      "photo_git_blob_sha": "23dcb3c5fbbdf557c7ff898b101336f0f94ee1d2",
+      "photo_sha256": "36ad8d6dfb933f75f13ef7de934b5ecef9859abfdd1563fc5905a5418021d92d",
+      "photo_bytes": 361682,
+      "owner_approved": true
+    },
+    {
+      "n": 79,
+      "title": "Сопа тараска из фасоли",
+      "recipe_id": "world-soup-mx-009",
+      "photo_path": "/assets/world-soups/79.webp",
+      "photo_git_blob_sha": "6042fbf432649b65d3bc7fca140673d8cab705d9",
+      "photo_sha256": "52aa3b063e3728ee697ac18f640b65aa84be57d45c2de1d95110bdc388f7406b",
+      "photo_bytes": 339172,
+      "owner_approved": true
+    },
+    {
+      "n": 80,
+      "title": "Чильпачоле с крабом",
+      "recipe_id": "world-soup-mx-010",
+      "photo_path": "/assets/world-soups/80.webp",
+      "photo_git_blob_sha": "b28d3e86d945b9698830ee1fae57bfdf59066bbc",
+      "photo_sha256": "905668d16d3ce885546f62fa33fe76f5fc3ae8d38ddd9f19aa2f5df0e3a115df",
+      "photo_bytes": 361386,
+      "owner_approved": true
+    }
+  ]
+}
