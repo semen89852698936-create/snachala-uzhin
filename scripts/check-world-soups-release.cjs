@@ -11,8 +11,8 @@ const read=p=>fs.readFileSync(path.join(root,p),'utf8');
 const context={window:{}};
 vm.runInNewContext(read('assets/world-soups-10.js'),context,{timeout:1000});
 const soups=context.window.WORLD_SOUPS_RECIPES;
-assert.equal(soups.length,80,'Exactly 80 approved soups');
-assert.equal(new Set(soups.map(x=>x.id)).size,80,'Unique ids');
+assert.equal(soups.length,98,'Exactly 98 approved soups');
+assert.equal(new Set(soups.map(x=>x.id)).size,98,'Unique ids');
 for(let n=1;n<=10;n++){
   const s=soups[n-1];
   assert.equal(s.id,'world-soup-ru-'+String(n).padStart(3,'0'));
@@ -51,6 +51,15 @@ for(let n=71;n<=80;n++){
  assert.ok(s.ingredients.length>=7); assert.ok(s.steps.length>=5);
  assert.ok(s.steps.every(t=>Number.isInteger(t.timer)&&t.timer>=0&&t.detail));
 }
+for(let n=81;n<=98;n++){
+ const s=soups[n-1], isVietnamese=n<=90;
+ assert.equal(s.id,'world-soup-'+(isVietnamese?'vn':'cn')+'-'+String(isVietnamese?n-80:n-90).padStart(3,'0'));
+ assert.equal(s.cuisine,isVietnamese?'Вьетнамская':'Китайская');
+ assert.equal(s.category,'soup'); assert.equal(s.base,2);
+ assert.equal(s.photo,'/assets/world-soups/'+n+'.webp');
+ assert.ok(s.ingredients.length>=7);assert.ok(s.steps.length>=5);
+ assert.ok(s.steps.every(t=>Number.isInteger(t.timer)&&t.timer>=0&&t.detail));
+}
 const expectedTitles=[
  'Борщ с говядиной','Щи из квашеной капусты с говядиной',
  'Рассольник ленинградский','Солянка мясная сборная','Уха из судака',
@@ -77,6 +86,24 @@ for(const p of ['index.html','full-catalog/index.html']){
 }
 if(process.argv.includes('--content-only')){console.log('CONTENT QA PASS: ten Russian soups and both HTML catalog variants; photo import pending.');process.exit(0);}
 const expectedImageSHA={
+ 81:'69a796087924456040cc509201c4e67bf543c5084006d525b3f9fcb0d592457f',
+ 82:'6d5d0b6050c16144349d97be0cd5a5892bc85b19421411a5d2c7e705998fa25e',
+ 83:'83265d10a853baf8322fddd83eca15a104a707bc8608af444b93c1dc7cba519c',
+ 84:'08681635045a307f070dccc16789b5b85a3e7fdb3471f8cbcae8d9ec600c5f8a',
+ 85:'f19374b9e43f69405320168196d48126be7a07eb650d6f12abd5196a0cad090e',
+ 86:'3b03efb25272c8bc06d45e650c51dcf5ec97cd744b1715f07b28ef73b9944c9f',
+ 87:'c914ccbd585bb0d1d06fa24214d7ae7d5a181bc9f7f1af72030f1d3751f8b2a8',
+ 88:'b44e2d7d34d1015fd1499653abe972f8e69f370171a2cf63aff7945627ef65ce',
+ 89:'d991873259c6b84177f2ec2ac38acf5addd64fd75a9610f3cfe936c4495a9f0a',
+ 90:'50a15436a40df0a5174bb58f87c1cb2a702d35cc7116e2a2996d83f3d5265b4f',
+ 91:'caa18650ec35bc7577e2bb70f1426c8b83a743a3cb920872777ad3c4ad3b8a93',
+ 92:'ab95947d2c4f23f2bd3ffe22d07f58b03476d352379394096f7a0a714f774cb6',
+ 93:'2e57ae959dfead4f50d4ce0f060bd4d82bb8b91d6b3c57cf1f1292d27520dca9',
+ 94:'aeffb488e5c6801dc2511ee540d6839ce2c742d8a30f7da47f973ef49df2acdb',
+ 95:'b34839907baedee51044337ee838e9c3faf4155dfddb561789fc028786f50825',
+ 96:'2fe529873474ac31e8e5af33f00bdad4bd7f46526185c88388987f6ba9e5d477',
+ 97:'f1ce08ee2cb2358d3a34a70b0209983577830ddff8ee31a8f330c1e0283242f5',
+ 98:'3f12636c3a6bd9b3984743fe755c11ce8481a1547c84208ca9df548d0cc46e3e',
  9:'a7780cff27a1f595e4da06563d21f25caea31354335e9f4f5ff58d3079edbba9',
  10:'906333ac681b09f64afbeb2909db3c9168c81db384e890c535b916f70069def3',
  71:'503dbcf42d55a2040b7d69e5b226d19791225071c2a2d0b068308fa48db51040',
@@ -90,7 +117,7 @@ const expectedImageSHA={
  79:'52aa3b063e3728ee697ac18f640b65aa84be57d45c2de1d95110bdc388f7406b',
  80:'905668d16d3ce885546f62fa33fe76f5fc3ae8d38ddd9f19aa2f5df0e3a115df'
 };
-for(let n=1;n<=80;n++){
+for(let n=1;n<=98;n++){
  const p=path.join(root,'assets','world-soups',String(n).padStart(2,'0')+'.webp');
  assert.ok(fs.existsSync(p),'Missing approved photograph for #'+n);
  const buffer=fs.readFileSync(p);
@@ -101,4 +128,4 @@ for(let n=1;n<=80;n++){
   assert.equal(crypto.createHash('sha256').update(buffer).digest('hex'),expectedImageSHA[n],'Unexpected generated photo #'+n);
  }
 }
-console.log('QA PASS: 80 approved world soups, 80 WebP photos, both HTML variants, 100 old soup records excluded.');
+console.log('QA PASS: 98 approved world soups, 98 WebP photos, both HTML variants, 100 old soup records excluded.');

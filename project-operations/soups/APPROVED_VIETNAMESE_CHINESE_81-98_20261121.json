@@ -1,0 +1,199 @@
+{
+  "project": "НАШ ВЕЧЕР",
+  "date": "2026-11-21",
+  "batch": "Вьетнамские №81–90 + китайские №91–98",
+  "approval": "18 photos explicitly approved by owner",
+  "scope": {
+    "from": 81,
+    "to": 98,
+    "excluded": [
+      99,
+      100
+    ]
+  },
+  "based_on": "878dc10021e6d7cd368d76ca22c4d0ce7eb1f984",
+  "source_recipe_branch": "editorial/russian-soups-10-verified-20261119",
+  "status": "staged_for_preview_before_alias_assignment",
+  "images": [
+    {
+      "n": 81,
+      "title": "Фо бо с говядиной",
+      "recipe_id": "world-soup-vn-001",
+      "path": "assets/world-soups/81.webp",
+      "git_blob_sha": "5c8286a63725ce41c0fa2b52117a433abedc6565",
+      "sha256": "69a796087924456040cc509201c4e67bf543c5084006d525b3f9fcb0d592457f",
+      "bytes": 265866,
+      "owner_approved": true
+    },
+    {
+      "n": 82,
+      "title": "Фо га с курицей",
+      "recipe_id": "world-soup-vn-002",
+      "path": "assets/world-soups/82.webp",
+      "git_blob_sha": "ef16c8bd0ad55e555e3e70f7bbb623433726f8fc",
+      "sha256": "6d5d0b6050c16144349d97be0cd5a5892bc85b19421411a5d2c7e705998fa25e",
+      "bytes": 232666,
+      "owner_approved": true
+    },
+    {
+      "n": 83,
+      "title": "Бун бо Хюэ",
+      "recipe_id": "world-soup-vn-003",
+      "path": "assets/world-soups/83.webp",
+      "git_blob_sha": "1541227dccfd5fab62f7a4941af378f75b1728fb",
+      "sha256": "83265d10a853baf8322fddd83eca15a104a707bc8608af444b93c1dc7cba519c",
+      "bytes": 236126,
+      "owner_approved": true
+    },
+    {
+      "n": 84,
+      "title": "Бун риеу с крабом",
+      "recipe_id": "world-soup-vn-004",
+      "path": "assets/world-soups/84.webp",
+      "git_blob_sha": "2931af1e475d2ba4681cafc66cdf5b424c87c94a",
+      "sha256": "08681635045a307f070dccc16789b5b85a3e7fdb3471f8cbcae8d9ec600c5f8a",
+      "bytes": 248414,
+      "owner_approved": true
+    },
+    {
+      "n": 85,
+      "title": "Бун тханг по-ханойски",
+      "recipe_id": "world-soup-vn-005",
+      "path": "assets/world-soups/85.webp",
+      "git_blob_sha": "672724d9a062e97da3a251efc91fc1448be66b91",
+      "sha256": "f19374b9e43f69405320168196d48126be7a07eb650d6f12abd5196a0cad090e",
+      "bytes": 224448,
+      "owner_approved": true
+    },
+    {
+      "n": 86,
+      "title": "Бун ок с улитками",
+      "recipe_id": "world-soup-vn-006",
+      "path": "assets/world-soups/86.webp",
+      "git_blob_sha": "445425f4b120b94f92e17070575bc0b233fc29d6",
+      "sha256": "3b03efb25272c8bc06d45e650c51dcf5ec97cd744b1715f07b28ef73b9944c9f",
+      "bytes": 217716,
+      "owner_approved": true
+    },
+    {
+      "n": 87,
+      "title": "Ху тьеу со свининой и креветками",
+      "recipe_id": "world-soup-vn-007",
+      "path": "assets/world-soups/87.webp",
+      "git_blob_sha": "6cebb1657bb7d6e1a79c1867b993d2632831996a",
+      "sha256": "c914ccbd585bb0d1d06fa24214d7ae7d5a181bc9f7f1af72030f1d3751f8b2a8",
+      "bytes": 210424,
+      "owner_approved": true
+    },
+    {
+      "n": 88,
+      "title": "Бань кань с густой лапшой",
+      "recipe_id": "world-soup-vn-008",
+      "path": "assets/world-soups/88.webp",
+      "git_blob_sha": "d09feccd5a310e158e81f3b6c9c930157752a9df",
+      "sha256": "b44e2d7d34d1015fd1499653abe972f8e69f370171a2cf63aff7945627ef65ce",
+      "bytes": 203108,
+      "owner_approved": true
+    },
+    {
+      "n": 89,
+      "title": "Кань чуа с рыбой и тамариндом",
+      "recipe_id": "world-soup-vn-009",
+      "path": "assets/world-soups/89.webp",
+      "git_blob_sha": "50698139374091d0475d56ffa3d11996dd09ddee",
+      "sha256": "d991873259c6b84177f2ec2ac38acf5addd64fd75a9610f3cfe936c4495a9f0a",
+      "bytes": 217788,
+      "owner_approved": true
+    },
+    {
+      "n": 90,
+      "title": "Кань кхо куа с фаршированной горькой дыней",
+      "recipe_id": "world-soup-vn-010",
+      "path": "assets/world-soups/90.webp",
+      "git_blob_sha": "c42c8c0ce06a5c2595edc91899af4db4ff9bfdb7",
+      "sha256": "50a15436a40df0a5174bb58f87c1cb2a702d35cc7116e2a2996d83f3d5265b4f",
+      "bytes": 216788,
+      "owner_approved": true
+    },
+    {
+      "n": 91,
+      "title": "Суп с вонтонами",
+      "recipe_id": "world-soup-cn-001",
+      "path": "assets/world-soups/91.webp",
+      "git_blob_sha": "050f074bfd6c021b5d5992786bdf29f0440792b9",
+      "sha256": "caa18650ec35bc7577e2bb70f1426c8b83a743a3cb920872777ad3c4ad3b8a93",
+      "bytes": 203494,
+      "owner_approved": true
+    },
+    {
+      "n": 92,
+      "title": "Кисло-острый суп",
+      "recipe_id": "world-soup-cn-002",
+      "path": "assets/world-soups/92.webp",
+      "git_blob_sha": "f2c36005864e6e15265b8ef531a4c31154dfe5df",
+      "sha256": "ab95947d2c4f23f2bd3ffe22d07f58b03476d352379394096f7a0a714f774cb6",
+      "bytes": 243628,
+      "owner_approved": true
+    },
+    {
+      "n": 93,
+      "title": "Суп с яичными хлопьями",
+      "recipe_id": "world-soup-cn-003",
+      "path": "assets/world-soups/93.webp",
+      "git_blob_sha": "73126ab8dc15a916ec6dc8eed8016bcbed9db0aa",
+      "sha256": "2e57ae959dfead4f50d4ce0f060bd4d82bb8b91d6b3c57cf1f1292d27520dca9",
+      "bytes": 205932,
+      "owner_approved": true
+    },
+    {
+      "n": 94,
+      "title": "Суп с зимней дыней",
+      "recipe_id": "world-soup-cn-004",
+      "path": "assets/world-soups/94.webp",
+      "git_blob_sha": "ba5e4a48fd57ae0d367a9d36d34aec34a8eff5ff",
+      "sha256": "aeffb488e5c6801dc2511ee540d6839ce2c742d8a30f7da47f973ef49df2acdb",
+      "bytes": 192840,
+      "owner_approved": true
+    },
+    {
+      "n": 95,
+      "title": "Кукурузный суп по-кантонски",
+      "recipe_id": "world-soup-cn-005",
+      "path": "assets/world-soups/95.webp",
+      "git_blob_sha": "6dd8e71c1778a61c24bb0565c731a53149addd91",
+      "sha256": "b34839907baedee51044337ee838e9c3faf4155dfddb561789fc028786f50825",
+      "bytes": 184130,
+      "owner_approved": true
+    },
+    {
+      "n": 96,
+      "title": "Суаньцайюй с рыбой",
+      "recipe_id": "world-soup-cn-006",
+      "path": "assets/world-soups/96.webp",
+      "git_blob_sha": "9b381e2f0750d707bcd8c4d0fd133cc4036144df",
+      "sha256": "2fe529873474ac31e8e5af33f00bdad4bd7f46526185c88388987f6ba9e5d477",
+      "bytes": 228702,
+      "owner_approved": true
+    },
+    {
+      "n": 97,
+      "title": "Хулатхан по-хэнаньски с говядиной и белым перцем",
+      "recipe_id": "world-soup-cn-007",
+      "path": "assets/world-soups/97.webp",
+      "git_blob_sha": "7eefba98dc4d75e230ec0e5667138a8e9c5885ac",
+      "sha256": "f1ce08ee2cb2358d3a34a70b0209983577830ddff8ee31a8f330c1e0283242f5",
+      "bytes": 253772,
+      "owner_approved": true
+    },
+    {
+      "n": 98,
+      "title": "Янроу паомо с бараниной и лепёшкой",
+      "recipe_id": "world-soup-cn-008",
+      "path": "assets/world-soups/98.webp",
+      "git_blob_sha": "756e3b7585c7bb71c972e9939aace11719cd6b8a",
+      "sha256": "3f12636c3a6bd9b3984743fe755c11ce8481a1547c84208ca9df548d0cc46e3e",
+      "bytes": 265406,
+      "owner_approved": true
+    }
+  ]
+}
