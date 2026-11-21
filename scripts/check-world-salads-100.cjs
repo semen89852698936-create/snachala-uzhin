@@ -1,0 +1,79 @@
+#!/usr/bin/env node
+'use strict';
+const fs = require('node:fs');
+const path = require('node:path');
+const assert = require('node:assert/strict');
+const base = path.resolve(__dirname, '..', 'data', 'editorial', 'salads');
+const files = [
+  'russian-first-10.json',
+  'italian-french-spanish-30.json',
+  'greek-turkish-lebanese-30.json',
+  'japanese-thai-american-30.json',
+];
+const docs = files.map(file => JSON.parse(fs.readFileSync(path.join(base,file),'utf8')));
+const recipes = docs.flatMap(d => d.recipes);
+const countries = [
+  'Русская и советская кухня', 'Итальянская', 'Французская',
+  'Испанская', 'Греческая', 'Турецкая',
+  'Ливанская', 'Японская', 'Тайская', 'Американская'
+];
+assert.equal(recipes.length,100,'Exactly 100 salads required');
+assert.deepEqual(docs.map(d=>d.recipes.length),[10,30,30,30]);
+assert.equal(new Set(recipes.map(r=>r.id)).size,100,'Recipe IDs must be unique');
+assert.equal(new Set(recipes.map(r=>r.title.toLowerCase())).size,100,'Recipe titles must be unique');
+for(const [idx,country] of countries.entries()){
+  const group = recipes.slice(idx*10,(idx+1)*10);
+  assert.equal(group.length,10);
+  for(const r of group) assert.equal(r.cuisine,country,'Wrong cuisine grouping for '+r.title);
+}
+for(const r of recipes){
+  assert.equal(r.category,'salads',r.id);
+  assert.equal(r.base,2,'All recipes must serve two: '+r.id);
+  assert.ok(Number.isFinite(r.minutes)&&r.minutes>=10&&r.minutes<=300,'Time: '+r.id);
+  assert.ok(Array.isArray(r.ingredients)&&r.ingredients.length>=4,'Ingredients: '+r.id);
+  for(const i of r.ingredients){
+    assert.ok(typeof i.name==='string'&&i.name.trim().length>=2,'Ingredient name: '+r.id);
+    assert.ok(Number.isFinite(i.amount)&&i.amount>=0,'Ingredient amount: '+r.id);
+    assert.ok(typeof i.unit==='string'&&i.unit.length>0,'Ingredient unit: '+r.id);
+  }
+  assert.ok(Array.isArray(r.steps)&&r.steps.length>=4,'Steps: '+r.id);
+  for(const step of r.steps){
+    assert.ok(typeof step.title==='string'&&step.title.length>0,'Step title: '+r.id);
+    assert.ok(typeof step.detail==='string'&&step.detail.length>=24,'Step description: '+r.id);
+    assert.ok(Number.isFinite(step.timer)&&step.timer>=0,'Step timer: '+r.id);
+  }
+  assert.ok(typeof r.photoBrief==='string'&&r.photoBrief.length>=30,'Photo brief: '+r.id);
+  assert.equal(r.photoStatus,'pending_separate_photo','Photos are NOT approved or published: '+r.id);
+  const verified = r.reviewStatus === 'verified_three_independent_recipe_sources_editorial_not_approved';
+  const draft = r.reviewStatus === 'editorial_draft_requires_source_by_source_signoff';
+  assert.ok(verified || draft, 'Unexpected editorial review status: '+r.id);
+  if (verified) {
+    assert.ok(Array.isArray(r.sourceEvidence) && r.sourceEvidence.length >= 3,
+      'Verified card needs three source records: '+r.id);
+    // Historical editorial records use several explicit evidence schemas.
+    // A date alone is NOT proof of reading; require substantive recipe evidence.
+    const read = r.sourceEvidence.filter(e => {
+      const evidence = e.evidence ?? e.recipeEvidence;
+      const readFlag = e.read === true || e.actuallyRead === true ||
+        e.verifiedRead === true || e.status === 'read' ||
+        (typeof e.readOn === 'string' && e.readOn.length > 0) ||
+        (typeof e.accessed === 'string' && e.accessed.length > 0 && e.type === 'recipe') ||
+        (typeof e.checkedOn === 'string' && e.checkedOn.length > 0 &&
+          (e.type === 'independent_recipe' || typeof e.publisher === 'string'));
+      return readFlag && typeof e.url === 'string' && e.url.startsWith('https://') &&
+        typeof evidence === 'string' && evidence.length >= 35;
+    });
+    assert.ok(read.length >= 3, 'Verified card needs three explicitly read sources with evidence: '+r.id);
+    // Distinct named authors on a shared blogging platform can be independent.
+    // Still reject repeated URLs and repeated publisher identities.
+    assert.ok(new Set(read.map(e => e.url)).size >= 3,
+      'Verified sources must have three distinct URLs: '+r.id);
+    const identities = read.map(e => (typeof e.publisher === 'string' && e.publisher.trim()) ||
+      new URL(e.url).hostname + '/' + new URL(e.url).pathname.split('/').filter(Boolean)[0]);
+    assert.ok(new Set(identities).size >= 3,
+      'Verified sources must have three distinct publishers or authors: '+r.id);
+  }
+  assert.equal(r.photo,undefined,'Never reuse an old unrelated photo: '+r.id);
+}
+console.log('PASS: 100 distinct salads, 10 cuisines x 10, two servings, step/ingredient schema, staging only.');
+console.log('NOTE: structural source evidence checks do not independently verify URLs or culinary correctness. Original photos and publication remain pending.');
