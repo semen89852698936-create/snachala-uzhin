@@ -2502,74 +2502,92 @@
       "title": "Табуле с петрушкой и булгуром",
       "category": "salads",
       "cuisine": "Ливанская",
-      "minutes": 30,
+      "minutes": 40,
       "base": 2,
       "level": "Средне",
       "emoji": "🥗",
-      "description": "Самостоятельное блюдо ливанская кухни на двоих",
+      "description": "Ливанский табуле на двоих: прежде всего много мелко рубленной петрушки и свежей мяты, немного булгура №1, спелые помидоры, зелёный лук, лимон и оливковое масло. Подавай сразу, с листьями ромэна.",
       "ingredients": [
         {
-          "name": "Петрушка",
+          "name": "Петрушка свежая, листья и нежные стебли",
           "amount": 150,
           "unit": "г",
           "group": "Основное"
         },
         {
-          "name": "Булгур мелкий",
-          "amount": 45,
-          "unit": "г",
-          "group": "Основное"
-        },
-        {
-          "name": "Помидоры",
-          "amount": 180,
-          "unit": "г",
-          "group": "Основное"
-        },
-        {
-          "name": "Мята свежая",
+          "name": "Мята свежая, листья",
           "amount": 15,
           "unit": "г",
           "group": "Основное"
         },
         {
-          "name": "Зелёный лук",
-          "amount": 40,
+          "name": "Булгур очень мелкий №1, не требующий варки",
+          "amount": 18,
           "unit": "г",
           "group": "Основное"
         },
         {
-          "name": "Лимон",
-          "amount": 1,
-          "unit": "шт.",
+          "name": "Помидоры спелые плотные",
+          "amount": 180,
+          "unit": "г",
           "group": "Основное"
         },
         {
-          "name": "Оливковое масло",
+          "name": "Лук зелёный",
+          "amount": 35,
+          "unit": "г",
+          "group": "Основное"
+        },
+        {
+          "name": "Сок лимона свежевыжатый",
           "amount": 30,
           "unit": "мл",
+          "group": "Основное"
+        },
+        {
+          "name": "Оливковое масло extra virgin",
+          "amount": 30,
+          "unit": "мл",
+          "group": "Основное"
+        },
+        {
+          "name": "Соль",
+          "amount": 2,
+          "unit": "г",
+          "group": "Основное"
+        },
+        {
+          "name": "Перец чёрный молотый",
+          "amount": 0.3,
+          "unit": "г",
+          "group": "Основное"
+        },
+        {
+          "name": "Листья салата ромэн для подачи",
+          "amount": 40,
+          "unit": "г",
           "group": "Основное"
         }
       ],
       "steps": [
         {
-          "title": "Подготовь ингредиенты",
-          "detail": "Мелкий булгур промой и замочи до мягкости, при необходимости слей жидкость",
+          "title": "Подготовь булгур",
+          "detail": "Проверь упаковку: нужен очень мелкий предварительно обработанный булгур №1, который можно размочить без варки. Промой, слей воду, смешай с лимонным соком и частью масла; оставь на 20 минут до мягкости. Если производитель требует варки, следуй инструкции и полностью охлади крупу.",
+          "timer": 1200
+        },
+        {
+          "title": "Промой и обсуши зелень",
+          "detail": "Тщательно промой петрушку, мяту и ромэн под проточной водой, затем обсуши. Удали жёсткие стебли, очень мелко наруби зелень острым ножом, не превращая в пасту.",
           "timer": 0
         },
         {
-          "title": "Приготовь основу",
-          "detail": "Петрушку и мяту тщательно обсуши, удали толстые стебли и очень мелко поруби",
+          "title": "Нарежь овощи",
+          "detail": "Вымой помидоры и зелёный лук. Помидоры нарежь мелкими кубиками; если очень сочные, удали часть семян и жидкости. Лук нарежь тонко. Смешай овощи с зеленью и размягчённым булгуром.",
           "timer": 0
         },
         {
-          "title": "Собери салат",
-          "detail": "Помидоры и зелёный лук нарежь мелкими кубиками",
-          "timer": 0
-        },
-        {
-          "title": "Заправь и подай",
-          "detail": "Соедини травы с помидорами и небольшим количеством булгура, заправь лимонным соком и маслом; зелень должна преобладать",
+          "title": "Заправь непосредственно перед подачей",
+          "detail": "Добавь оставшееся оливковое масло, соль и немного перца, попробуй и отрегулируй кислоту. Подавай сразу с вымытыми обсушенными листьями ромэна, которыми удобно зачерпывать табуле.",
           "timer": 0
         }
       ],
@@ -2578,15 +2596,44 @@
         "100 салатов"
       ],
       "equipment": "Нож, доска, салатник и необходимая посуда",
-      "warn": "Проверь аллергены и сроки хранения продуктов; соблюдай безопасную термообработку.",
-      "photoBrief": "Изобразить только готовые компоненты блюда «Табуле с петрушкой и булгуром» в соответствии с точной технологией, без постороннего декора и сырой еды, которая должна быть приготовлена.",
+      "warn": "Аллерген: пшеница (глютен) в булгуре. Используй только пищевую зелень, тщательно промывай и обсушивай её; булгур размягчай по инструкции производителя. Не оставляй готовый салат надолго при комнатной температуре; храни охлаждённым, предпочтительно ешь свежим.",
+      "photoBrief": "Одна реалистичная фотография готового ливанского табуле: преобладающая масса очень мелко рубленной ярко-зелёной петрушки, немного мяты, мелкие красные кубики помидоров, тонко нарезанный зелёный лук, редкие крупинки мелкого мягкого булгура, лёгкий блеск лимонно-оливковой заправки. Салат в одной керамической тарелке целиком, ракурс 3/4, сбоку допустимы только листья ромэна для подачи. Без лимонных долек, сырых зубчиков чеснока, чужих блюд и лишнего декора.",
       "photoStatus": "pending_separate_photo",
-      "reviewStatus": "editorial_draft_requires_source_by_source_signoff",
+      "reviewStatus": "verified_three_independent_sources",
       "researchLeads": [
         {
           "url": "https://maureenabood.com/lebanese-tabbouleh-salad-recipe/",
           "status": "source_to_crosscheck_not_three_source_verified"
         }
+      ],
+      "sourceEvidence": [
+        {
+          "url": "https://maureenabood.com/lebanese-tabbouleh-salad-recipe/",
+          "author": "Maureen Abood",
+          "checkedDate": "2026-11-21",
+          "evidence": "Recipe card: 6 servings, 1/4 cup fine bulgur, 3 bunches parsley, 20 mint leaves, 1 tomato, 5 scallions, lemon and olive oil; notes say bulgur softens ~15 min without cooking, dry parsley thoroughly, serve with romaine."
+        },
+        {
+          "url": "https://feelgoodfoodie.net/recipe/traditional-lebanese-tabbouleh-salad/",
+          "author": "Yumna Jawad",
+          "checkedDate": "2026-11-21",
+          "evidence": "Recipe card: 6 servings, 1/4 cup #1 bulgur, 3 bunches parsley, 2 tomatoes, 2 scallions, 1/4 cup mint; bulgur absorbs lemon-oil dressing 20-30 min; mix just before serving."
+        },
+        {
+          "url": "https://sofrabeirut.com/recipes/tabbouleh",
+          "author": "SOFRA Beirut",
+          "checkedDate": "2026-11-21",
+          "evidence": "6 servings: 300g parsley, 30g mint, 3 tbsp fine bulgur, 3 tomatoes, 4 scallions, 4 tbsp each lemon juice and oil; soak bulgur 15 min, drain tomatoes, hand-chop herbs, serve on romaine."
+        }
+      ],
+      "sourceDifferences": [
+        "Abood uses 1 tomato per six servings; Jawad uses 2; SOFRA uses 3. Two-person version uses 180 g firm tomato with optional draining.",
+        "Abood and Jawad use curly parsley; SOFRA uses flat-leaf. Either edible parsley works; chop finely and dry thoroughly.",
+        "Abood specifies ~15 min softening, Jawad 20-30 min in dressing, SOFRA 15 min cold-water soaking. Chosen 20 min in lemon dressing with texture check.",
+        "SOFRA includes allspice; Abood includes dried mint; Jawad uses only salt and pepper. Optional spices omitted from base recipe.",
+        "Source bulgur amounts vary in measurement and herb ratio; chosen 18g to keep parsley dominant.",
+        "SOFRA and Abood emphasize romaine leaf scoops; Jawad permits serving as a side or light meal.",
+        "Total source prep times range 20-40 minutes; chosen 40 minutes including soaking and manual chopping."
       ]
     },
     {
