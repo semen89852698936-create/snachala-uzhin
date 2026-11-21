@@ -11,8 +11,8 @@ const read=p=>fs.readFileSync(path.join(root,p),'utf8');
 const context={window:{}};
 vm.runInNewContext(read('assets/world-soups-10.js'),context,{timeout:1000});
 const soups=context.window.WORLD_SOUPS_RECIPES;
-assert.equal(soups.length,60,'Exactly 60 approved soups');
-assert.equal(new Set(soups.map(x=>x.id)).size,60,'Unique ids');
+assert.equal(soups.length,70,'Exactly 70 approved soups');
+assert.equal(new Set(soups.map(x=>x.id)).size,70,'Unique ids');
 for(let n=1;n<=10;n++){
   const s=soups[n-1];
   assert.equal(s.id,'world-soup-ru-'+String(n).padStart(3,'0'));
@@ -29,6 +29,15 @@ for(let n=51;n<=60;n++){
  const s=soups[n-1];
  assert.equal(s.id,'world-soup-jp-'+String(n-50).padStart(3,'0'));
  assert.equal(s.category,'soup'); assert.equal(s.cuisine,'Японская'); assert.equal(s.base,2);
+ assert.equal(s.photo,'/assets/world-soups/'+n+'.webp');
+ assert.ok(s.ingredients.length>=7); assert.ok(s.steps.length>=5);
+ assert.ok(s.steps.every(t=>Number.isInteger(t.timer)&&t.timer>=0&&t.detail));
+}
+// Korean soups 61–70 are owner-approved and the prior 60 soups are immutable.
+for(let n=61;n<=70;n++){
+ const s=soups[n-1];
+ assert.equal(s.id,'world-soup-kr-'+String(n-60).padStart(3,'0'));
+ assert.equal(s.category,'soup'); assert.equal(s.cuisine,'Корейская'); assert.equal(s.base,2);
  assert.equal(s.photo,'/assets/world-soups/'+n+'.webp');
  assert.ok(s.ingredients.length>=7); assert.ok(s.steps.length>=5);
  assert.ok(s.steps.every(t=>Number.isInteger(t.timer)&&t.timer>=0&&t.detail));
@@ -62,7 +71,7 @@ const expectedImageSHA={
  9:'a7780cff27a1f595e4da06563d21f25caea31354335e9f4f5ff58d3079edbba9',
  10:'906333ac681b09f64afbeb2909db3c9168c81db384e890c535b916f70069def3'
 };
-for(let n=1;n<=60;n++){
+for(let n=1;n<=70;n++){
  const p=path.join(root,'assets','world-soups',String(n).padStart(2,'0')+'.webp');
  assert.ok(fs.existsSync(p),'Missing approved photograph for #'+n);
  const buffer=fs.readFileSync(p);
@@ -73,4 +82,4 @@ for(let n=1;n<=60;n++){
   assert.equal(crypto.createHash('sha256').update(buffer).digest('hex'),expectedImageSHA[n],'Unexpected generated photo #'+n);
  }
 }
-console.log('QA PASS: 60 approved world soups, 60 WebP photos, both HTML variants, 100 old soup records excluded.');
+console.log('QA PASS: 70 approved world soups, 70 WebP photos, both HTML variants, 100 old soup records excluded.');

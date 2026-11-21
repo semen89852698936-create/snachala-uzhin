@@ -1,0 +1,112 @@
+{
+  "project": "НАШ ВЕЧЕР",
+  "batch": "Корейские супы №61–70",
+  "status": "OWNER_APPROVED_PHOTOS_STAGED_FOR_RELEASE",
+  "date": "2026-11-21",
+  "base_commit_sha": "9606974d6371b23632a770df4e910b022ca48a34",
+  "editorial_ref": "editorial/russian-soups-10-verified-20261119",
+  "editorial_recipe_blob_sha": "98da19de4003120d1722b719868f365546c5ac44",
+  "timer_blob_sha": "4ef12f0c1b996dab1f6a01ad659c1c9ace6a11be",
+  "recipes": [
+    {
+      "n": 61,
+      "title": "Юккэджан с говядиной",
+      "recipe_id": "world-soup-kr-001",
+      "photo_path": "/assets/world-soups/61.webp",
+      "photo_git_blob_sha": "70bff730ed33cac29af1c7cca2fbef38747f6b27",
+      "photo_bytes": 229348,
+      "photo_sha256": "2730270132e1889764a6c872a2eba3aa2483ed8c17903dbe5dc3536d26ed6c57",
+      "owner_approved": true
+    },
+    {
+      "n": 62,
+      "title": "Самгетхан с женьшенем и курицей",
+      "recipe_id": "world-soup-kr-002",
+      "photo_path": "/assets/world-soups/62.webp",
+      "photo_git_blob_sha": "a427d768dfca070a51383bc406a4c57011fdf56a",
+      "photo_bytes": 225014,
+      "photo_sha256": "be42f58cac916309d589da0b2ce046f77aa42caa40989d37c591c484ec6dc77a",
+      "owner_approved": true
+    },
+    {
+      "n": 63,
+      "title": "Соллонтхан на костном бульоне",
+      "recipe_id": "world-soup-kr-003",
+      "photo_path": "/assets/world-soups/63.webp",
+      "photo_git_blob_sha": "5ffc19fb094c187833d295267220313c8e767dd5",
+      "photo_bytes": 222498,
+      "photo_sha256": "0b8fa5b8e1d1c482db7b08df0a3164c63bda952e161fe192e4a46ac93b292769",
+      "owner_approved": true
+    },
+    {
+      "n": 64,
+      "title": "Кальбитхан с говяжьими рёбрами",
+      "recipe_id": "world-soup-kr-004",
+      "photo_path": "/assets/world-soups/64.webp",
+      "photo_git_blob_sha": "c6125f44e7010d1aba7cb0f2ccd143830c17d5ed",
+      "photo_bytes": 236874,
+      "photo_sha256": "48510f3ef06ef48d558ed1fb623f8801342411cdb1ef27606a50bf314d7c0f84",
+      "owner_approved": true
+    },
+    {
+      "n": 65,
+      "title": "Миёккук с морскими водорослями",
+      "recipe_id": "world-soup-kr-005",
+      "photo_path": "/assets/world-soups/65.webp",
+      "photo_git_blob_sha": "ee31a4d6f98fd1946f54847b5538d67ffe303302",
+      "photo_bytes": 234916,
+      "photo_sha256": "201215c104247491202c7e53201c9480b079f4b022d8bebedf3489ecc9fc932e",
+      "owner_approved": true
+    },
+    {
+      "n": 66,
+      "title": "Мандугук с пельменями",
+      "recipe_id": "world-soup-kr-006",
+      "photo_path": "/assets/world-soups/66.webp",
+      "photo_git_blob_sha": "e76fc5dcec0ed112d9361a863dee783ec008bd24",
+      "photo_bytes": 190184,
+      "photo_sha256": "3a41a8182c66acaff1854b7e606a845bc95685db0465da163c52d2c1f30a4668",
+      "owner_approved": true
+    },
+    {
+      "n": 67,
+      "title": "Кимчиччигэ со свининой",
+      "recipe_id": "world-soup-kr-007",
+      "photo_path": "/assets/world-soups/67.webp",
+      "photo_git_blob_sha": "855b576f180c069f7ae41ae0dbe2d8087fd61637",
+      "photo_bytes": 258638,
+      "photo_sha256": "32c1cadb82cd1d5143a21f83964068d76b19ceacb848ac47cd1ed2f55a92e45a",
+      "owner_approved": true
+    },
+    {
+      "n": 68,
+      "title": "Коннамульгук с ростками сои",
+      "recipe_id": "world-soup-kr-008",
+      "photo_path": "/assets/world-soups/68.webp",
+      "photo_git_blob_sha": "a96ba09053e7f57b6f12dc7ded3c9941880bf3a6",
+      "photo_bytes": 174384,
+      "photo_sha256": "56b0ffc74dcde146fc32d6b18e1d1ff7ccfe7794c2b06ab795699002a2278280",
+      "owner_approved": true
+    },
+    {
+      "n": 69,
+      "title": "Камджатхан со свиными косточками",
+      "recipe_id": "world-soup-kr-009",
+      "photo_path": "/assets/world-soups/69.webp",
+      "photo_git_blob_sha": "5dd795157a5f74fddf20651331eb4c2095cede2a",
+      "photo_bytes": 301288,
+      "photo_sha256": "f6c809974c81f2e12f08383349dbdb0341a26d80ddf7d9b011e3ef420f281c49",
+      "owner_approved": true
+    },
+    {
+      "n": 70,
+      "title": "Твенджан-ччигэ с соевой пастой",
+      "recipe_id": "world-soup-kr-010",
+      "photo_path": "/assets/world-soups/70.webp",
+      "photo_git_blob_sha": "5724102e283ba3aa8bdf413d306c8283734613a8",
+      "photo_bytes": 206566,
+      "photo_sha256": "8120f034ac8c40cdd9eafb41b6ea59d939d3c06d37c76c47766a4c6ea33f3ee0",
+      "owner_approved": true
+    }
+  ]
+}
