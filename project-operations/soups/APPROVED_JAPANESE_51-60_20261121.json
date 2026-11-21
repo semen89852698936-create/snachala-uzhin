@@ -1,0 +1,112 @@
+{
+  "project": "НАШ ВЕЧЕР",
+  "batch": "Японские супы №51–60",
+  "status": "OWNER_APPROVED_PHOTOS_STAGED_FOR_RELEASE",
+  "date": "2026-11-21",
+  "base_ref": "release/approved-turkish-soups-41-50-staging-20261121",
+  "editorial_ref": "editorial/russian-soups-10-verified-20261119",
+  "editorial_recipe_blob_sha": "98da19de4003120d1722b719868f365546c5ac44",
+  "timer_blob_sha": "4ef12f0c1b996dab1f6a01ad659c1c9ace6a11be",
+  "recipes": [
+    {
+      "n": 51,
+      "title": "Мисо-суп с тофу и вакаме",
+      "recipe_id": "world-soup-jp-001",
+      "photo_path": "/assets/world-soups/51.webp",
+      "photo_git_blob_sha": "100eb9e570717d600fc3b9df5b0ccbcf7239adbb",
+      "photo_sha256": "65ad01c0889b316060d38230d373272de932f737c3f7341177fb3b22a585ec56",
+      "photo_bytes": 246664,
+      "owner_approved": true
+    },
+    {
+      "n": 52,
+      "title": "Сёю-рамен",
+      "recipe_id": "world-soup-jp-002",
+      "photo_path": "/assets/world-soups/52.webp",
+      "photo_git_blob_sha": "865e9204be13e7926967afa4af7c57c952509593",
+      "photo_sha256": "60daa09fa35e6fcb3f097c6bbdecdb64b1a08aa68ab626b03da00ec289e9d812",
+      "photo_bytes": 227336,
+      "owner_approved": true
+    },
+    {
+      "n": 53,
+      "title": "Мисо-рамен",
+      "recipe_id": "world-soup-jp-003",
+      "photo_path": "/assets/world-soups/53.webp",
+      "photo_git_blob_sha": "4f91ae750499018cc630c067d0c8d672d808a893",
+      "photo_sha256": "88abded27c22f12a3e3f3758b2a1aaf84d9b6af10b4a5d7e52392579e4e4d91c",
+      "photo_bytes": 342512,
+      "owner_approved": true
+    },
+    {
+      "n": 54,
+      "title": "Тонкоцу-рамен",
+      "recipe_id": "world-soup-jp-004",
+      "photo_path": "/assets/world-soups/54.webp",
+      "photo_git_blob_sha": "8d010558424060d6c1ec9864961caa2092ed7514",
+      "photo_sha256": "bf3144016f7be176f3aa6f4a53a6988c3a451b3627666ff21fabea51d4b2a70e",
+      "photo_bytes": 315716,
+      "owner_approved": true
+    },
+    {
+      "n": 55,
+      "title": "Тондзиру со свининой",
+      "recipe_id": "world-soup-jp-005",
+      "photo_path": "/assets/world-soups/55.webp",
+      "photo_git_blob_sha": "b11033c4a22e3234c344d6c5416acf8f1d828c9a",
+      "photo_sha256": "e4d356509805116b15abe227415ff001f4dfc40accf1d4a763d979ab5f59fba8",
+      "photo_bytes": 170268,
+      "owner_approved": true
+    },
+    {
+      "n": 56,
+      "title": "Кэнтиндзиру с овощами и тофу",
+      "recipe_id": "world-soup-jp-006",
+      "photo_path": "/assets/world-soups/56.webp",
+      "photo_git_blob_sha": "8a5de0c8dc0477e7738aa6fe2b06b5b0330f9c34",
+      "photo_sha256": "f50005b63a36a52c3c4c62790df3c7c71f6adab1a601ed39130e0dfc5c8e6781",
+      "photo_bytes": 275480,
+      "owner_approved": true
+    },
+    {
+      "n": 57,
+      "title": "Одзони с рисовыми лепёшками",
+      "recipe_id": "world-soup-jp-007",
+      "photo_path": "/assets/world-soups/57.webp",
+      "photo_git_blob_sha": "6dd750b2736ea836611547c2187cdeacea61c033",
+      "photo_sha256": "56145620243c1ab6bd0e6cd3114ba5c37a6b0cca941a3a5ef098a970df5ece52",
+      "photo_bytes": 156916,
+      "owner_approved": true
+    },
+    {
+      "n": 58,
+      "title": "Имони с таро и говядиной",
+      "recipe_id": "world-soup-jp-008",
+      "photo_path": "/assets/world-soups/58.webp",
+      "photo_git_blob_sha": "5dc9879a506e52e4c66d87e664cf55d80757e153",
+      "photo_sha256": "50abf5fbf1d4378a80e5a1120f3eeefc09093505e0a05ba07f4782404bee1c2c",
+      "photo_bytes": 253124,
+      "owner_approved": true
+    },
+    {
+      "n": 59,
+      "title": "Какэ-соба в бульоне даси",
+      "recipe_id": "world-soup-jp-009",
+      "photo_path": "/assets/world-soups/59.webp",
+      "photo_git_blob_sha": "59a3bdfdfcaf50d0984d320cbee878f64b2d5681",
+      "photo_sha256": "40be155a5a402b2bc2964bdd6d1a84fbbed9ccb894f4bb97009acaaf160f11a3",
+      "photo_bytes": 208832,
+      "owner_approved": true
+    },
+    {
+      "n": 60,
+      "title": "Хиядзиру, холодный суп с мисо",
+      "recipe_id": "world-soup-jp-010",
+      "photo_path": "/assets/world-soups/60.webp",
+      "photo_git_blob_sha": "447a70f960181e46e000361f790381eec356dca5",
+      "photo_sha256": "ff5c6154aeeed62fe36efc1c8caeff525d85d42391ca86f052015b7be91180c5",
+      "photo_bytes": 244582,
+      "owner_approved": true
+    }
+  ]
+}
